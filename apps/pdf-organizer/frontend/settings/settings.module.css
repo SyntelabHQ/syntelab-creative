@@ -1,0 +1,271 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.heading {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.note {
+  margin: 0 0 8px;
+  color: var(--sc-muted);
+}
+
+.rows {
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 8px 16px;
+  padding-block: 12px;
+  padding-inline: 16px 8px;
+}
+
+.row + .row {
+  border-block-start: 1px solid var(--sc-border);
+}
+
+/* A wide control (a list of choices, a long field) goes under its label. */
+.row[data-wide='true'] {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.row[data-wide='true'] .rowControl {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  padding-inline-end: 8px;
+}
+
+.rowText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.rowLabel {
+  font-weight: 500;
+}
+
+.rowHint {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.rowControl {
+  min-width: 0;
+}
+
+/* Hidden, not removed, while there is nothing to revert: the controls stay lined up. */
+.revert:disabled {
+  visibility: hidden;
+}
+
+.select,
+.text {
+  min-height: var(--sc-control-height);
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.text {
+  width: 100%;
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 13px;
+}
+
+.nameField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.example {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.switch {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--sc-accent);
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding-inline: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.tool[aria-pressed='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.resetAll {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+}
+
+.resetAll p {
+  flex: 1 1 280px;
+  margin: 0;
+  color: var(--sc-muted);
+}
+
+.withUnit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--sc-muted);
+}
+
+.withUnit input {
+  width: 96px;
+}
+
+/* The keys, two columns of "what it does — the keys". */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 0 32px;
+  margin: 0;
+  padding-block: 4px;
+  padding-inline: 16px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.keyRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 38px;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.keyRow dt {
+  min-width: 0;
+}
+
+.keyRow dd {
+  flex: none;
+  margin: 0;
+}
+
+.keys kbd {
+  padding-block: 2px;
+  padding-inline: 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface-2);
+  font: inherit;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.keys + .keys {
+  margin-block-start: 10px;
+}
+
+.keyEdit {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* The keys of a command: a click, then the new keys. */
+.keyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 96px;
+  min-height: 30px;
+  padding-block: 0;
+  padding-inline: 8px;
+  border: 1px solid transparent;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  font: inherit;
+  font-size: 13px;
+  text-align: end;
+  cursor: pointer;
+}
+
+.keyButton:hover {
+  border-color: var(--sc-border);
+}
+
+.keyButton[data-listening='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+  color: var(--sc-text);
+}
+
+.keysFoot {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1 / -1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 10px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+/* The arrow of a list: drawn here, a little in from the edge, where the system puts it right against it. */
+select.select {
+  padding-inline-end: 34px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1.4 1.2 6 5.8l4.6-4.6' fill='none' stroke='%23808891' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px 8px;
+}
+
+select.select:dir(rtl) {
+  background-position: left 12px center;
+}

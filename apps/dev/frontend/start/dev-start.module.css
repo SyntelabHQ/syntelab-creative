@@ -1,0 +1,309 @@
+/* The first page of Dev: every tool, under its menu. In the letters of the program. */
+.page {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  background: var(--sc-bg);
+  font-family: var(--sc-font, system-ui);
+  font-size: 14px;
+  text-align: start;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 1040px;
+  margin-inline: auto;
+  padding: 28px 28px 40px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* The box anything is pasted into: what it is, is told, and the tools that fit are offered. */
+.paste {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-l);
+  background: var(--sc-surface);
+}
+
+.pasteHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--sc-muted);
+}
+
+.pasteTitle {
+  color: var(--sc-text);
+  font-weight: 600;
+}
+
+.pasteBox {
+  min-height: 72px;
+  padding: 10px 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-bg);
+  color: var(--sc-text);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 13px;
+  resize: vertical;
+}
+
+.pasteBox:disabled {
+  cursor: default;
+}
+
+.finder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-inline: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-muted);
+}
+
+.finder:focus-within {
+  border-color: var(--sc-accent);
+}
+
+.finder input {
+  flex: 1;
+  min-width: 0;
+  min-height: 38px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  outline: none;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.count {
+  padding: 1px 7px;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface-2);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* A tool: its icon in the colour of the app, its name, and what it does in a few words. */
+.card {
+  position: relative;
+  display: flex;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.card:hover:not([data-later='true']) {
+  border-color: var(--sc-accent);
+}
+
+.card[data-later='true'] {
+  border-style: dashed;
+  opacity: 0.6;
+}
+
+.open {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+  padding-block: 10px;
+  padding-inline: 12px 30px;
+  border: 0;
+  border-radius: inherit;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.open:disabled {
+  cursor: default;
+}
+
+.icon {
+  display: grid;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: var(--sc-radius-s);
+  background: color-mix(in srgb, var(--dev-color, #e91e63) 14%, var(--sc-surface));
+  color: var(--dev-color, #e91e63);
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.name {
+  font-weight: 600;
+}
+
+/* What the tool does, on two lines at most. */
+.about {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--sc-muted);
+  font-size: 12px;
+  line-height: 1.35;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+/* Pins the tool: shown on the card it is on, and always on a pinned one. */
+.pin {
+  position: absolute;
+  inset-block-start: 6px;
+  inset-inline-end: 6px;
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--sc-muted);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.card:hover .pin,
+.pin:focus-visible,
+.pin[aria-pressed='true'] {
+  opacity: 1;
+}
+
+.pin:hover {
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+}
+
+.pin[aria-pressed='true'] {
+  color: var(--dev-color, #e91e63);
+}
+
+.none {
+  margin: 0;
+  color: var(--sc-muted);
+}
+
+/* What was pasted, told: what it looks like, and the tools that work on such a thing. */
+.clear {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-inline-start: auto;
+  min-height: 24px;
+  padding: 0 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.guesses {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.guess {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.looks {
+  min-width: 190px;
+  color: var(--sc-text);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.guess:last-child .looks {
+  color: var(--sc-muted);
+  font-weight: 400;
+}
+
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.offer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.offer:hover {
+  border-color: var(--sc-accent);
+}
+
+.guess:first-child .offer:first-child {
+  border-color: var(--sc-accent);
+}

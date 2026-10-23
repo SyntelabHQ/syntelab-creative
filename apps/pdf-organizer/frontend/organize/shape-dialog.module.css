@@ -1,0 +1,130 @@
+/* Shared by the windows that change the shape of pages: crop and resize. */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lead {
+  margin: 0;
+  color: var(--sc-muted);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.legend {
+  padding: 0;
+  font-weight: 600;
+}
+
+.select {
+  min-height: var(--sc-control-height);
+  padding-inline: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+}
+
+.scope {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.choice input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--sc-accent);
+}
+
+.number {
+  min-height: 34px;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.customSize {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: start;
+  gap: 8px 16px;
+}
+
+/* Where the page lies on its sheet: nine places. */
+.placeRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+
+.placeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 20px);
+  gap: 3px;
+  padding: 4px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+}
+
+.placeCell {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface-2);
+  cursor: pointer;
+}
+
+.placeCell[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent);
+}
+
+.placeNote {
+  flex: 1 1 200px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+/* The arrow of a list: drawn here, a little in from the edge, where the system puts it right against it. */
+select.select {
+  padding-inline-end: 34px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1.4 1.2 6 5.8l4.6-4.6' fill='none' stroke='%23808891' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px 8px;
+}
+
+select.select:dir(rtl) {
+  background-position: left 12px center;
+}

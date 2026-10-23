@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Kif issib triqtek",
+      "topics": [
+        {
+          "id": "start",
+          "title": "L-ewwel paġna",
+          "body": [
+            "Tab ta' Dev tinfetaħ fl-ewwel paġna, fejn hemm l-għodod kollha, miġbura bħal fil-menus: Kodifika, Data, Ġenera, Eżamina, Netwerk.",
+            {
+              "points": [
+                "Ikteb f'\"Fittex għodda\" biex tnaqqas il-lista.",
+                "Il-pin fuq għodda jżommha fuq nett, taħt Ippinjati.",
+                "Għodda tinfetaħ fl-istess tab; Fajl → L-għodod kollha jeħdok lura fl-ewwel paġna. Fl-Issettjar tista' tagħżel li kull għodda tinfetaħ f'tab għaliha, u li tab ġdida tinfetaħ fuq l-aħħar għodda użata."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Waħħal kwalunkwe ħaġa",
+          "body": [
+            "Il-kaxxa fuq nett tal-ewwel paġna tieħu kull ma twaħħal u tgħid x'jidher li hu: token, ċertifikat, JSON, UUIDs, timbri tal-ħin, skedi cron, URLs, XML jew HTML, SQL, Base64, checksum, tabella, YAML.",
+            "Taħt kull suppożizzjoni hemm l-għodod li jaħdmu fuq ħaġa bħal din, l-aktar adattata l-ewwel. Ikklikkja waħda: tinfetaħ bit-test diġà fiha u mħaddma.",
+            {
+              "note": "Dak li twaħħal jibqa' fil-kaxxa sakemm tbattalha jew tagħlaq it-tab. Qatt ma jinkiteb fuq id-diska."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Kif inhi mqassma għodda",
+          "body": [
+            "Il-biċċa l-kbira tal-għodod għandhom l-istess qafas: l-għażliet f'linja fuq nett, id-dħul fuq naħa, il-ħruġ fuq l-oħra, u linja fil-qiegħ li tgħid x'ġara.",
+            {
+              "points": [
+                "Ir-riżultat jerġa’ jsir kull meta jinbidel id-dħul jew għażla, u jintwera fil-ħruġ; \"Jitħaddem waħdu\" fil-linja tal-għażliet jgħid dan. Huma biss test twil wisq biex jitħaddem ma’ kull tasta, jew fajl akbar minn 128 MB, li jistennew il-buttuna Ħaddem, li mbagħad tidher. Ctrl+Enter iħaddem l-għodda f’kull ħin.",
+                "Riżultat li mhux test (stampa dekodifikata minn Base64, gzip) jintwera bħala dehra: stampa kif inhi, kull ħaġa oħra bit-tip, id-daqs u l-ewwel bytes tagħha. Ikkopja mbagħad jikkopjah bħala Base64, u stampa tista’ tiġi kkopjata bħala stampa. L-istess jgħodd għal fajl tad-dħul li mhux test.",
+                "Iftaħ fajl, Waħħal u Battal jinsabu fuq id-dħul; Ikkopja u Issejvja f’fajl fuq il-ħruġ. Fajl jista’ wkoll jitwaddab fuq id-dħul.",
+                "Dak li hemm ħażin fid-dħul jingħad bil-kliem, bil-linja u l-kolonna tiegħu, u jiġi mmarkat fl-editur.",
+                "Il-menu Ara jpoġġi ż-żewġ pannelli ħdejn xulxin jew wieħed taħt l-ieħor, juri n-numri tal-linji u jkisser il-linji twal; il-linja bejn il-pannelli tista’ tiġi mkaxkra.",
+                "L-għażliet li tagħżel jiġu mfakkra għad-darba li jmiss. Dak li tikteb le."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Aħraq, u x'jinżamm",
+          "body": [
+            "Aħraq, fil-qiegħ fuq il-lemin ta’ kull għodda, ibattalha mill-ewwel: id-dħul, ir-riżultat, kull ma nkiteb fil-kaxxi tagħha, u dak li l-edituri tagħha jistgħu jreġġgħu lura.",
+            "Dev iżomm biss l-issettjar tiegħu, l-għodod li ppinjajt, l-isem tal-aħħar għodda użata u l-għażliet ta’ kull għodda. Xejn minn dak li tikteb, twaħħal, tiftaħ jew tagħmel f’għodda ma jinkiteb fuq id-diska, f’log jew f’lista ta’ affarijiet reċenti. L-inqas minn kollox is-sigrieti: ċwievet, frażijiet sigrieti, tokens u l-headers ta’ talba jgħixu fit-tab u mkien iżjed.",
+            "Ħaġa waħda tistenna fuq id-diska għal ftit żmien: ir-riżultat ta’ fajl, u riżultat li mhux test, jinkitbu f’folder tal-programm innifsu biex ikunu jistgħu jintwerew u mbagħad jiġu ssejvjati. Kull wieħed jitħassar meta riżultat ieħor jieħu postu, meta taħraq jew tagħlaq l-għodda, u fi kwalunkwe każ meta Dev jerġa’ jibda."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Fajls ta' kull daqs",
+          "body": [
+            "M’hemm l-ebda limitu fuq id-daqs ta’ fajl. Fajl żgħir biżżejjed biex jintwera (sa 16 MB) jitpoġġa fl-editur. Wieħed akbar, jew wieħed li mhux test, jibqa’ fuq id-diska: jintwera l-bidu tiegħu (jew dehra), l-għodda taqrah minn fejn jinsab, u r-riżultat tiegħu jintwera bħal dak ta’ test. Imbagħad Issejvja f’fajl jikkopja r-riżultat fejn tagħżel int.",
+            {
+              "points": [
+                "Xogħol twil juri karta b'kemm wasal u buttuna Waqqaf.",
+                "Fajl li huwa test f'kodifikazzjoni oħra minbarra UTF-8 (UTF-16, Windows-1252 u bħalhom) jinqara bħala test meta jkun żgħir biżżejjed biex jintwera, u tingħad il-kodifikazzjoni. Dak li tissejvja minn Dev huwa UTF-8.",
+                "Fajl imwaddab fuq għodda jinfetaħ bħal b’Iftaħ fajl. Fejn it-tieqa ma tistax tgħid fejn jinsab, jiġi aċċettat sa 16 MB, bħallikieku twaħħal."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Ħafna fajls u folders sħaħ",
+          "body": [
+            "Fejn għodda għandha \"Aħdem fuq: Test / Fajls\", Fajls iħaddimha fuq ħafna fajls f'daqqa.",
+            {
+              "steps": [
+                "Żid fajls, jew folder (bil-folders ta’ taħtu, jekk tħalli dik l-għażla mixgħula).",
+                "Kull fajl jinqara darba hekk kif jiżdied u jingħad jekk l-għodda taċċettahx.",
+                "Agħżel fejn imorru r-riżultati: ħdejn kull fajl b’isem ġdid, f’folder (filwaqt li jinżammu l-folders), jew fuq il-fajls infushom, li jistaqsik darba oħra. Hash jista’ wkoll sempliċement juri r-riżultati fil-lista.",
+                "Ikklikkja fajl fil-lista biex tara r-riżultat tiegħu biss taħt l-għażliet, qabel ma jinkiteb xejn.",
+                "Ħaddem. Fajl li fih problema ma jwaqqafx lill-oħrajn; kull wieħed jgħid kif ħareġ."
+              ]
+            },
+            {
+              "note": "Riżultat qatt ma jaqa' fuq fajl li diġà jeżisti, sakemm ma titlobx int."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Il-menu tal-klikk il-lemin ta' Windows Explorer",
+          "body": [
+            "Ixgħlu fl-Issettjar tal-programm, taħt Windows Explorer. Kollox jinġabar taħt linja waħda, \"Syntelab Creative\"; fuq Windows 11 jinsab taħt \"Uri aktar għażliet\".",
+            {
+              "points": [
+                "Iftaħ f'Syntelab Dev: fuq it-tipi ta' fajls li taqra xi għodda (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz u bħalhom). Il-fajl jinfetaħ fl-għodda tat-tip tiegħu.",
+                "Checksums: fuq kwalunkwe fajl jew folder. Id-digests jiġu elenkati, kull wieħed ħdejn il-fajl tiegħu, u xejn ma jinkiteb.",
+                "Wiri hex: fuq kwalunkwe fajl.",
+                "Qabbel: żewġ fajls imorru fiż-żewġ naħat ta' Diff; żewġ folders fit-tqabbil tal-folders."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kodifika",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Jibdel il-bytes f'Base64 u lura. Il-kodifika tieħu kwalunkwe fajl; id-dekodifika tagħti lura l-bytes, murija meta jkunu test u ssejvjati f'fajl meta ma jkunux.",
+            {
+              "points": [
+                "Alfabett: dak standard, jew dak għall-URLs (- u _).",
+                "Mili b'=, u linji ta' 64, 76 jew kwalunkwe numru ta' karattri.",
+                "Id-dekodifika taċċetta ż-żewġ alfabetti, bil-mili jew mingħajru, u tgħid fejn hemm karattru ħażin."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Kodifika / dekodifika ta' URL",
+          "body": [
+            "Kodifika b'perċentwali, kif jiktibha l-browsers: parti minn indirizz (kull ma mhuwiex ittra sempliċi jiġi kkodifikat), indirizz sħiħ (is-sinjali tiegħu jinżammu), jew formola (+ għal spazju).",
+            "Id-dekodifika tgħid fejn % mhuwiex segwit minn żewġ ċifri eżadeċimali."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Entitajiet HTML",
+          "body": [
+            "Jikteb is-sinjali li HTML u XML iżommu għalihom (&, <, >, virgoletti) bħala entitajiet, u jaqra l-entitajiet lura: bl-isem, b'numru deċimali jew b'numru eżadeċimali. L-ismijiet huma dawk tal-istandard HTML.",
+            "\"Ukoll kull karattru li mhuwiex ASCII\" jikteb ukoll l-ittri b'aċċenti u alfabetti oħra bħala entitajiet."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Dekodifikatur JWT",
+          "body": [
+            "Janalizza JSON Web Token: il-header u l-payload tiegħu bħala JSON, u l-claims tiegħu bil-kliem (min ħarġu, suġġett, udjenza, meta jiskadi, b'\"skada\" jew \"għadu ma skadiex\").",
+            "Agħti s-sigriet biex tivverifika firma magħmula b'sigriet maqsum (HS256, HS384, HS512). Firem magħmula b'ċavetta privata (RS, ES, PS) ma jiġux ivverifikati.",
+            {
+              "note": "It-token u s-sigriet jibqgħu fit-tab: xejn ma jintbagħat imkien biex jiġi dekodifikat token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Jikteb test bħala string ta' lingwa (JSON, JavaScript, C, C++, Java u bħalhom) bil-virgoletti, il-qabżiet tal-linja u sinjali oħra tiegħu b'escape, u jaqra string bħal dan lura."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Jikkompressa u jiddekompressa gzip, fajl ta' kwalunkwe daqs hekk kif jinqara. Il-livell imur mill-aktar mgħaġġel għall-iżgħar; ir-riżultat ta' test jista' jingħata bħala Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Bażijiet tan-numri",
+          "body": [
+            "Jesprimi numri sħaħ, wieħed f'kull linja, f'binarju, ottali, deċimali u eżadeċimali, u f'bażi oħra li tagħżel int, sa 36. Numru m'għandux daqs massimu.",
+            {
+              "points": [
+                "Il-bażi ta' numru tingħaraf minn kif inhu miktub: 0x għall-eżadeċimali, 0b għall-binarju, 0o għall-ottali, ittri għall-eżadeċimali, inkella deċimali. Jew agħżel il-bażi li fiha jinqara kollox.",
+                "L-ispazji, is-sing ta' taħt (_) u l-appostrofi bejn iċ-ċifri jiġu injorati: 1_000_000.",
+                "Numru negattiv jingħata wkoll kif iżommuh il-kompjuters (komplement ta’ tnejn), fl-iżgħar fost 8, 16, 32, 64 bits u l-bqija li jesgħuh."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Formatter tal-JSON",
+          "body": [
+            "Jifformattja, jikkompatta u jivvalida JSON, u jurih bħala siġra. Dokument ta' kwalunkwe daqs jinqara bħala fluss.",
+            {
+              "points": [
+                "Indentazzjoni b'2 jew 4 spazji, tab, jew kwalunkwe numru ta' spazji.",
+                "Aktar għażliet: ordna ċ-ċwievet, listi qosra f'linja waħda, l-ispazju wara ż-żewġ punti, kif jispiċċaw il-linji, qabża tal-linja fl-aħħar, karattri mhux ASCII bħala \\uXXXX.",
+                "Il-qari permissiv jaċċetta kummenti (// u /* */) u virgoli fl-aħħar, u jikteb JSON strett.",
+                "Bidliet: neħħi n-nulls, neħħi l-valuri vojta u bħalhom, f'passata waħda.",
+                "Is-siġra tiftaħ livell kull darba u ssib test fiċ-ċwievet u fil-valuri."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Iħaddem mistoqsija JSONPath (RFC 9535) fuq dokument: $.store.book[?@.price < 10].title. Ir-riżultat huwa l-valuri misjuba, il-mogħdijiet lejhom, jew it-tnejn.",
+            "Mistoqsija ħażina tiġi indikata bil-post fejn tiżbalja."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Validatur tal-JSON Schema",
+          "body": [
+            "Jivverifika dokument skont JSON Schema (abbozzi 4 sa 2020-12). L-iskema tmur fil-pannell taħt id-dħul. Kull ħaġa li ma taqbilx tiġi elenkata b'fejn tinsab u bir-regola li tikser.",
+            "Fuq ħafna fajls, kull wieħed jiġi vverifikat skont l-istess skema. $ref lejn fajl ieħor jew lejn indirizz ma jiġix segwit."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Ġeneratur tal-iskema u JSON → TypeScript",
+          "body": [
+            "Minn kampjun ta' JSON, il-ġeneratur tal-iskema jikteb JSON Schema li jaqbel miegħu, u JSON → TypeScript jikteb id-dikjarazzjonijiet tat-tip tiegħu (interfaces jew types, esportati jew le, readonly jew le, taħt isem li tagħti int)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Jibdel YAML f'JSON u JSON f'YAML. YAML jinqara skont l-iskema core tiegħu, bl-anchors u l-merges segwiti; dak li hu ħażin jingħad bil-post tiegħu."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Jibdel tabella f'JSON u lura. Is-separatur jingħaraf mill-ewwel ringiela, jew jintgħażel (virgola, punt u virgola, tab, pajp); l-ewwel ringiela tista' tkun l-intestatura; in-numri u true / false jistgħu jiġu magħrufa.",
+            "\"Tabella\" turi s-CSV f'ringieli u kolonni, fajl ta' kwalunkwe daqs."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Formatter tal-XML / HTML",
+          "body": [
+            "Jifformattja, jikkompatta u jivverifika XML u HTML. XML jinqara b'mod strett: tag li qatt ma jingħalaq jingħad bil-post tiegħu. HTML jinqara bit-tolleranza li jagħtuh il-browsers."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Formatter tal-SQL",
+          "body": [
+            "Iqassam struzzjoni, klawżola f'kull linja, jew ipoġġiha f'linja waħda; il-kliem ewlieni b'ittri kbar, b'ittri żgħar jew kif miktub. Ma jitlob l-ebda djalett u ma jivverifikax xi tfisser struzzjoni."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Iqabbel żewġ testi linja b'linja, żewġ dokumenti JSON skont x'jgħidu, jew żewġ folders fajl b'fajl. L-ewwel wieħed imur fid-dħul, it-tieni fil-pannell ta' taħtu.",
+            {
+              "points": [
+                "Ħdejn xulxin jimmarka l-kliem li nbidel ġewwa linja; Unifikat huwa patch kif jiktbu diff -u.",
+                "Injora l-ittri kbar u żgħar, l-ispazji vojta, il-linji vojta, iċ-ċifri jew il-punteġġjatura.",
+                "Għal JSON, l-ordni taċ-ċwievet u t-tqassim ma jagħmlux differenza; ir-riżultat jista' jkun JSON Patch (RFC 6902).",
+                "Folders: liema fajls għandu wieħed biss, liema huma l-istess, liema huma differenti; Qabbel fuq ringiela jiftaħ il-par bħala testi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Dehra tal-Markdown",
+          "body": [
+            "Juri l-Markdown kif se jidher, u jagħti l-HTML tiegħu biex tikkopjah jew tissejvjah: CommonMark b'tabelli, kitba maqtugħa, listi ta' kompiti u noti ta' qiegħ il-paġna.",
+            {
+              "points": [
+                "L-HTML miktub ġewwa l-Markdown jintwera bħala test, mhux imħaddem.",
+                "Stampa li kienet tinġieb min-netwerk ma tinġabx: id-deskrizzjoni u l-indirizz tagħha jintwerew minflokha. Stampa inkluża fit-test (data:) tintwera.",
+                "Link li tikklikkja jinfetaħ fil-browser tas-sistema."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ġenera",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Jagħmel UUIDs tal-verżjonijiet 1, 3, 4, 5, 6 u 7 (RFC 9562), kemm titlob, miktuba bis-sing, sempliċi, bħala URN jew bejn parentesi graffa. \"Analizza\" jgħid il-verżjoni ta' kull UUID u l-ħin jew l-isem li fih."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 u SHA-512 ta' test jew fajl, diversi f'daqqa, miktuba bħala hex jew Base64. Fajl ta' kwalunkwe daqs jiġi hashed hekk kif jinqara.",
+            {
+              "points": [
+                "Qabbel ma': waħħal checksum, jew il-linja ta' fajl .sha256; jingħad jekk jaqbilx jew le.",
+                "Ċavetta HMAC: id-digests isiru HMACs b'dik iċ-ċavetta.",
+                "Kull linja għaliha: digest wieħed għal kull linja tat-test.",
+                "Fajls: id-digests jiġu elenkati ħdejn il-fajls tagħhom; Ikkopja kollox jagħtihom kif jiktibhom sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Passwords u sigrieti",
+          "body": [
+            "Jagħmel passwords bit-tipi ta’ karattri li tagħżel, frażijiet sigrieti ta’ kliem, u bytes bl-addoċċ bħala hex jew Base64, min-numri bl-addoċċ tas-sistema operattiva. Kull wieħed jgħid kemm-il bit ta’ entropija għandu. Ladarba tkun saret xi ħaġa, jekk tbiddel għażla terġa’ ssir.",
+            "Frażi sigrieta hija kliem meħud mil-lista twila ta' kliem tal-Electronic Frontier Foundation (7776 kelma Ingliża), kull waħda probabbli daqs l-oħrajn: sitt kelmiet huma madwar 77 bit."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Ċwievet u ċertifikati",
+          "body": [
+            "Ħames affarijiet, magħżula fuq nett:",
+            {
+              "points": [
+                "Ċavetta ġdida: RSA, EC P-256 / P-384 / P-521 jew Ed25519, mogħtija f'kull forma li jaċċettaw il-programmi (PKCS #8, il-forma l-qadima, OpenSSH; iċ-ċavetta pubblika bħala PEM u bħala l-linja għal authorized_keys), imsakkra bi frażi sigrieta jekk tagħti waħda.",
+                "Talba għal ċertifikat: CSR għal ċavetta ġdida jew għal waħda li twaħħal, bis-suġġett u bl-ismijiet l-oħra tagħha (SAN).",
+                "Ċertifikat iffirmat minnu nnifsu: l-istess, iffirmat biċ-ċavetta tiegħu stess, għal numru ta' jiem; \"Jista' jiffirma ċertifikati oħra\" jagħmlu awtorità tiegħek.",
+                "Iffirma bis-CA tiegħek: waħħal talba, iċ-ċertifikat tal-awtorità tiegħek u ċ-ċavetta tagħha; tieħu ċ-ċertifikat iffirmat u l-awtorità warajh.",
+                "Aqra u kkonverti: waħħal jew iftaħ kwalunkwe ħaġa (PEM, DER, ċavetta OpenSSH, fajl .pfx jew .p12, imsakkar jew le). Jgħid x'sab u jekk iċ-ċavetta hijiex dik taċ-ċertifikat, u jikteb kull ħaġa fil-forom l-oħra. Ċavetta u ċ-ċertifikat tagħha jistgħu jiġu ssejvjati flimkien bħala .pfx."
+              ]
+            },
+            {
+              "note": "Kollox isir fuq dan il-kompjuter. Ċavetta tibqa' fit-tab sakemm tagħfas Aħraq, u mkien iżjed sakemm ma tissejvjahiex."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Eżamina",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Ittestjar tar-regex",
+          "body": [
+            "Jipprova espressjoni regolari ta' JavaScript fuq test: it-tqabbiliet bil-gruppi u l-postijiet tagħhom, jew it-test bit-tqabbiliet mibdula. Il-flags huma g, i, m, s, u, y.",
+            "Il-pattern jitħaddem separat mit-tieqa, u wieħed li jdum aktar minn 20 sekonda jitwaqqaf."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Spjegazzjoni tal-cron",
+          "body": [
+            "Jgħid bil-kliem xi tfisser skeda u meta titħaddem: crontab (ħames oqsma, sitta bis-sekondi, sebgħa b'sena), Quartz, AWS EventBridge cron() u rate(), u systemd OnCalendar. Skeda waħda f'kull linja.",
+            {
+              "points": [
+                "It-tħaddimiet li jmiss, u dawk ta’ qabel meta titlobhom, fiż-żona tal-ħin li tagħżel.",
+                "Il-jiem tal-ġimgħa jiġu nnumerati minn 0 għall-Ħadd, jew minn 1 kif jinnumerahom Quartz, kif tagħżel int. Linja b’sekondi li fiha wkoll sena, L, W jew # hija ta’ Quartz, u tinqara bil-mod ta’ Quartz waħedha.",
+                "L-istess skeda fil-forom l-oħra, biex tikkopjaha jew iżżidha mad-dħul.",
+                "Il-bennej jagħmel skeda billi tagħżel kull qasam; \"Ibdel fil-bennej\" idaħħal fih skeda miktuba."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Timbru tal-ħin Unix",
+          "body": [
+            "Jaqra mumenti, wieħed f’kull linja: sekondi, millisekondi, mikrosekondi jew nanosekondi mill-1970, jew data miktuba bil-modi tas-soltu (ISO 8601, kif jiktbuha l-email u HTTP, kif jiktibha Git). Kull wieħed jingħad fiż-żona tal-ħin li tagħżel, f’UTC, u bħala kull tip ta’ timbru tal-ħin."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Analizzatur tal-URL",
+          "body": [
+            "Jaqsam URL fil-partijiet tiegħu kif jaqrawh il-browsers: skema, utent, host (bil-forma Unicode tiegħu meta jkun miktub f'punycode), port, mogħdija, kull parametru tal-query dekodifikat, u l-framment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Dekodifikatur taċ-ċertifikati",
+          "body": [
+            "Jaqra ċertifikati X.509 minn PEM jew DER u jgħid kull ma fihom: suġġett, min ħarġu, validità, l-ismijiet li għalihom huwa, iċ-ċavetta tiegħu, l-estensjonijiet u l-marki tas-saba' tiegħu.",
+            "Jaqra; ma jiġġudikax jekk ċertifikat għandux jiġi fdat. Għaċ-ċertifikat li juri sit, u jekk dan il-kompjuter jafdahx, uża Netwerk → Ċertifikat ta' sit."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Wiri hex",
+          "body": [
+            "Juri l-bytes ta' fajl ta' kwalunkwe daqs, jew ta' test imwaħħal: il-pożizzjoni ta' kull ringiela, il-bytes, u l-istess bytes bħala karattri.",
+            {
+              "points": [
+                "Mur għal pożizzjoni miktuba bħala 0x1F4, 1F4h jew 500.",
+                "Fittex bytes (DE AD BE EF) jew test (UTF-8, jew UTF-16 fiż-żewġ ordnijiet), 'il quddiem u lura.",
+                "Ikklikkja byte: il-ġenb juri x'hemm hemmhekk bħala numri ta' kull daqs, fiż-żewġ ordnijiet tal-bytes, bħala karattru u bħala ħin.",
+                "Agħżel billi tkaxkar, b'Shift jew bit-tasti tal-vleġeġ; ikkopja l-għażla bħala hex, bħala kodiċi, bħala Base64 jew bħala test, jew issejvjaha f'fajl."
+              ]
+            },
+            {
+              "note": "Iħares biss: xejn ma jinbidel fil-fajl."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Netwerk",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Fejn imorru l-għodod tan-netwerk",
+          "body": [
+            "Dawn l-erba' għodod huma l-unika parti ta' Dev li tmur online, u jmorru fejn tindikalhom int.",
+            {
+              "points": [
+                "Jiġi kkuntattjat biss l-indirizz li tikteb, u biss meta tagħfas il-buttuna. Qatt fl-isfond.",
+                "Dak li jintbagħat huwa dak li ktibt. L-unika ħaġa li tiżdied ma' talba hija User-Agent li huwa l-istess għal kulħadd (\"Syntelab Creative\"), sakemm ma tagħtix tiegħek.",
+                "Ma jinżammux cookies, ma jintbagħat xejn dwarek jew dwar il-kompjuter, u xejn minn dak li jinkiteb ma jinżamm."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Klijent HTTP",
+          "body": [
+            "Jibgħat talba waħda miktuba bl-idejn: metodu, indirizz, headers (wieħed f'kull linja: Isem: valur) u korp, ittajpjat jew meħud minn fajl ta' kwalunkwe daqs.",
+            {
+              "points": [
+                "It-tweġiba: in-numru tagħha, kemm damet (b’kollox, u sal-ewwel byte), id-daqs tagħha, il-headers tagħha, u l-korp tagħha, ikkulurit skont it-tip tiegħu u rranġat meta jkun JSON. Korp li mhux test (stampa, PDF) jintwera kif inhu, u jiġi ssejvjat kif wasal.",
+                "Segwi r-ridirezzjonijiet, jew ara l-ewwel tweġiba kif inhi. L-indirizzi li minnhom intbagħtet it-talba 'l quddiem jiġu elenkati.",
+                "Ivverifika ċ-ċertifikat skont dak li jafda dan il-kompjuter; itfih biss għal servers tiegħek.",
+                "\"Ibgħat, it-tweġiba f'fajl\" jikteb korp ta' kwalunkwe daqs dritt fuq id-diska, bil-progress u Waqqaf.",
+                "\"Ikkopja bħala curl\" jagħti l-istess talba bħala kmand."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Tfittxija DNS",
+          "body": [
+            "Jistaqsi lil server tal-ismijiet għar-rekords ta' isem: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, diversi f'daqqa. Indirizz jagħti l-isem tiegħu (PTR).",
+            "Il-mistoqsija tmur lis-server tal-ismijiet li l-kompjuter huwa ssettjat li juża, lil wieħed pubbliku (1.1.1.1, 8.8.8.8, 9.9.9.9), lil resolver fuq HTTPS (Cloudflare, Google), jew lil wieħed li tikteb int."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Verifika tal-portijiet",
+          "body": [
+            "Jgħid jekk il-portijiet ta' host jaċċettawx konnessjonijiet TCP: wieħed, diversi, jew firxa sal-65 535 kollha (22, 80, 443, 8000-8100). Kull wieħed huwa miftuħ, magħluq, jew mingħajr tweġiba fil-ħin li tagħti.",
+            {
+              "note": "Ipprova biss hosts li huma tiegħek, jew li għandek permess tittestja."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Ċertifikat ta' sit",
+          "body": [
+            "Juri ċ-ċertifikati li jagħti sit meta ssir konnessjoni sigura: għal min huma, min iffirmahom, kemm fadal jiem, jekk dan il-kompjuter jafdahomx u għaliex le, il-verżjoni ta' TLS u ċ-ċifra. Isir biss il-handshake: ma tintbagħat l-ebda talba.",
+            {
+              "points": [
+                "Ikteb example.com, example.com:8443 jew indirizz tal-web.",
+                "Is-servers tal-email u FTP jibdew mingħajr kriptaġġ u jintalbu jgħaddu għal TLS (STARTTLS): magħżul skont il-port (25, 587, 143, 110, 21) jew bl-idejn.",
+                "\"Kollox\" juri dak kollu li jgħidu ċ-ċertifikati; \"PEM\" jagħtihom biex tikkopjahom jew tissejvjahom."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Issettjar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "L-issettjar ta' Dev",
+          "body": [
+            "Fajl → Issettjar jiftaħ l-Issettjar tal-programm fil-parti ta' Dev.",
+            {
+              "points": [
+                "Iftaħ kull għodda f'tab għaliha, jew fit-tab li fiha tintgħażel.",
+                "Iftaħ tab ġdida fuq l-aħħar għodda użata, jew fuq l-ewwel paġna.",
+                "Erġa' poġġi l-għażliet ta' kull għodda, u l-pins, kif jiġu mal-programm."
+              ]
+            },
+            "Il-menu tal-klikk il-lemin ta' Windows Explorer, il-lingwa, it-tema u t-tasti jinsabu fl-Issettjar tal-programm kollu."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Dwar Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Dwar Dev",
+          "body": [
+            "Dev hija l-app ta' Syntelab Creative għall-iżviluppaturi: għodod li jikkodifikaw u jiddekodifikaw, jifformattjaw u jivverifikaw, jibdlu forma ta' data f'oħra, u janalizzaw dak li huwa diffiċli biex jinqara kif inhu.",
+            "Kollox isir fuq dan il-kompjuter. Xejn minn dak li tikteb, twaħħal jew tiftaħ f'għodda ma jinżamm jew jintbagħat imkien. M'hemm l-ebda limitu fuq id-daqs jew in-numru tal-fajls: il-limiti huma l-memorja u d-diska tal-kompjuter.",
+            "Hija ġdida u għadha qed tinbena. Fejn ma tlaħħaqx max-xogħol tiegħek, għidilna permezz ta' Għajnuna → Rispons."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "B'xiex hija mibnija Dev",
+          "body": [
+            {
+              "points": [
+                "L-edituri: CodeMirror, https://codemirror.net . Liċenzja MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Il-qari u t-tlewwin tal-JSON fl-edituri: @codemirror/lang-json, https://github.com/codemirror/lang-json , ma' @codemirror/language u @lezer/highlight. Liċenzja MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Il-qari u t-tlewwin ta' YAML, XML, HTML u SQL fl-edituri: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (ma' @codemirror/lang-css u @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Liċenzja MIT. Copyright (C) 2018-2024 by Marijn Haverbeke and others.",
+                "Il-verifika ta' dokument skont JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Liċenzja MIT. Copyright (c) 2020-2026 Dmitry Dygalo. Huwa mibni mingħajr il-parti tan-netwerk tiegħu: Dev qatt ma jġib skema minn barra.",
+                "Il-patterns ta' JSONPath (match u search): regex, https://github.com/rust-lang/regex . Liċenzja MIT jew Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "Il-qari ta' YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Liċenzja MIT jew Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Il-kitba ta' YAML issir minn Dev innifsu.",
+                "It-tqabbil ta' żewġ testi (Diff): similar, https://github.com/mitsuhiko/similar . Liċenzja Apache-2.0. Awturi: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Liċenzja MIT jew Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Id-digests tal-għodda Hash u tal-firma ta’ token: sha2, sha1 u md-5, https://github.com/RustCrypto/hashes . Liċenzja MIT jew Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, u l-iżviluppaturi ta’ RustCrypto.",
+                "Dati, ħinijiet u żoni tal-ħin (Timbru tal-ħin Unix, Spjegazzjoni tal-cron): jiff, https://github.com/BurntSushi/jiff , biż-żoni tal-ħin tad-database IANA. Liċenzja Unlicense jew MIT. Copyright (c) 2015 Andrew Gallant.",
+                "L-analiżi ta' URL: url u idna, https://github.com/servo/rust-url . Liċenzja MIT jew Apache-2.0. Copyright (c) 2013-2025 The rust-url developers.",
+                "Il-qari ta' ċertifikati X.509: x509-parser, https://github.com/rusticata/x509-parser . Liċenzja MIT jew Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "L-ittestjar tar-regex iħaddem l-espressjonijiet regolari ta' JavaScript, fil-magna tal-WebView li biha jinpinġa l-programm (Microsoft Edge WebView2 fuq Windows); ma tiżdied l-ebda librerija għal dan.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Liċenzja MIT jew Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton and contributors.",
+                "UUIDs: uuid, https://github.com/uuid-rs/uuid . Liċenzja Apache-2.0 jew MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Bytes bl-addoċċ għall-passwords, is-sigrieti u l-UUIDs, mis-sistema operattiva: getrandom, https://github.com/rust-random/getrandom . Liċenzja MIT jew Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Ċwievet u firem RSA: rsa, https://github.com/RustCrypto/RSA , ma' num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Liċenzja MIT jew Apache-2.0. Copyright (c) RustCrypto Developers and dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Ċwievet u firem tal-kurvi NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , ma' ecdsa, elliptic-curve u crypto-bigint li jeħtieġu. Liċenzja Apache-2.0 jew MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Ċwievet u firem Ed25519: ed25519-dalek u curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Liċenzja BSD 3-Clause. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft and Henry de Valence. All rights reserved.",
+                "Il-forom li fihom jinkitbu ċwievet, talbiet u ċertifikati (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER u PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Liċenzja Apache-2.0 jew MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Fajls taċ-ċwievet OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , ma' bcrypt-pbkdf, aes, ctr, chacha20 u ċ-ċifri u l-hashes l-oħra ta' RustCrypto li jeħtieġ is-sakkar ta' ċavetta ( https://github.com/RustCrypto ). Liċenzja Apache-2.0 jew MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Fajls PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , ma' pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 u scrypt ta' RustCrypto li jeħtieġ. Liċenzja MIT jew Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "In-numri bl-addoċċ li minnhom isiru ċ-ċwievet, meħuda mis-sistema operattiva: rand_core, https://github.com/rust-random/rand . Liċenzja MIT jew Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "Il-klijent HTTP: ureq, https://github.com/algesten/ureq . Liċenzja MIT jew Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Il-konnessjonijiet siguri (TLS) tal-klijent HTTP u ta' \"Ċertifikat ta' sit\": rustls, https://github.com/rustls/rustls , liċenzja Apache-2.0, ISC jew MIT, Copyright (c) 2016 Joseph Birr-Pixton; ma' rustls-webpki, https://github.com/rustls/webpki , liċenzja ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , liċenzji Apache-2.0 u ISC; webpki-roots, https://github.com/rustls/webpki-roots , liċenzja CDLA-Permissive-2.0.",
+                "Jekk dan il-kompjuter jafdax ċertifikat: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Liċenzja MIT jew Apache-2.0. Copyright (c) 2022 1Password.",
+                "Il-qari tal-Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Liċenzja MIT. Copyright 2015 Google Inc. All rights reserved.",
+                "Il-qari ta' fajls miktuba b'kodifikazzjonijiet oħra minbarra UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , liċenzja Apache-2.0 jew MIT (b'BSD-3-Clause għad-data tiegħu), Copyright Mozilla Foundation; u chardetng, https://github.com/hsivonen/chardetng , liċenzja Apache-2.0 jew MIT, Copyright Mozilla Foundation.",
+                "Il-kliem tal-frażijiet sigrieti: l-EFF Large Wordlist for Passphrases, https://www.eff.org/dice , tal-Electronic Frontier Foundation, użata taħt il-liċenzja Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Il-lista tintuża kif inhi.",
+                "Il-ftuħ ta' ċwievet imsakkra bil-mod il-qadim ta' OpenSSL: aes, cbc u des ta' RustCrypto, https://github.com/RustCrypto . Liċenzja MIT jew Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "Miktuba għal Dev, mingħajr librerija: it-tfittxija DNS (mistoqsijiet miktuba u tweġibiet moqrija kif jgħid RFC 1035) u l-verifika tal-portijiet.",
+                "Miktuba għal Dev, mingħajr librerija: il-qari u l-kitba ta' JSON bħala fluss, JSONPath (RFC 9535), Base64, il-kodifika b'perċentwali, ir-referenzi tal-karattri HTML (l-ismijiet tagħhom huma dawk tal-istandard HTML, https://html.spec.whatwg.org ), l-escapes tal-strings, il-qari ta' JSON Web Tokens, il-kitba ta' YAML, CSV fiż-żewġ direzzjonijiet, il-qari tal-iskedi cron, il-formatter tal-XML u tal-HTML, u l-formatter tal-SQL."
+              ]
+            },
+            "Dak li jaqsam mal-bqija tal-programm jinsab taħt \"Dwar Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "X'għadu ma jistax jagħmel Dev",
+          "body": [
+            {
+              "points": [
+                "Il-firma ta' token tiġi vverifikata biss meta tkun saret b'sigriet maqsum (HS256, HS384, HS512).",
+                "Il-validatur tal-JSON Schema jgħid x'ma jaqbilx bl-Ingliż, kif tagħmel il-librerija tiegħu, u ma jsegwix $ref lejn fajl jew indirizz ieħor.",
+                "Il-formatter tal-SQL ma jitlob l-ebda djalett u ma jivverifikax xi tfisser struzzjoni: jgħid biss dwar string jew kumment li qatt ma jispiċċa.",
+                "YAML, u JSON li jsir YAML jew CSV, jinżammu sħaħ fil-memorja waqt li jinbidlu; CSV li jsir JSON, XML, HTML u SQL jiġu pproċessati hekk kif jinqraw, ikun x'ikun id-daqs tagħhom.",
+                "It-tabella li fiha jintwera s-CSV hija għall-qari biss: xejn ma jinkiteb fiha, u għalissa xejn ma jiġi kkopjat minnha.",
+                "Diff iżomm sittax-il byte għal kull linja taż-żewġ fajls, mhux il-fajls infushom; żewġ dokumenti JSON jinżammu sħaħ, għax jinkitbu mill-ġdid qabel ma jitqabblu.",
+                "Medda ta' linji li fiha xejn mhu preżenti eżatt darba fiż-żewġ naħat titqabbel sa fejn jippermetti sekonda: id-differenzi murija huma veri, għalkemm mhux dejjem l-inqas possibbli.",
+                "Diff ma jqabbilx kif jispiċċaw il-linji (CRLF jew LF).",
+                "Żewġ folders jitqabblu skont il-bytes tal-fajls tagħhom; il-fajls jitqabblu bl-ismijiet tagħhom, ittra b'ittra.",
+                "Dak li jgħidu l-għodod ta' Eżamina huwa JSON, bl-ismijiet tiegħu bl-Ingliż.",
+                "L-ittestjar tar-regex iħaddem l-espressjonijiet regolari ta' JavaScript, mhux PCRE u lanqas dawk ta' Rust; jaħdem fuq test li jista' jintwera, mhux fuq fajl miżmum fuq id-diska; pattern li jdum aktar minn 20 sekonda jitwaqqaf.",
+                "Id-dekodifikatur taċ-ċertifikati jaqra ċertifikat u ma jivverifikax jekk għandux jiġi fdat: la l-katina tiegħu, la l-firma tiegħu, u lanqas jekk ġiex revokat.",
+                "Fajl li huwa test f'kodifikazzjoni oħra minbarra UTF-8 jinqara meta jkun żgħir biżżejjed biex jintwera; wieħed akbar minn hekk, ipproċessat mid-diska, irid ikun UTF-8.",
+                "Fajl imwaddab fuq għodda jiġi aċċettat sa 16 MB; it-tieqa ma tingħatax il-post fuq id-diska ta' fajl imwaddab, għalhekk wieħed akbar jinfetaħ b'Iftaħ fajl.",
+                "Il-frażijiet sigrieti jsiru minn kliem Ingliż biss.",
+                "Spjegazzjoni tal-cron: il-bennej jagħmel skedi crontab (ħames oqsma, jew sitta bis-sekondi); skeda b'L, W, # jew ? ma tistax tiddaħħal fih. Il-ħinijiet ta' AWS rate() ma jistgħux jingħadu, għax tingħadd minn meta saret ir-regola tagħha. Minn systemd jinqraw l-avvenimenti tal-kalendarju komuni; mhux frazzjonijiet ta' sekonda jew listi ta' jiem magħduda mit-tmiem tax-xahar.",
+                "Il-wiri hex iħares biss: xejn ma jinbidel fil-fajl. Il-kolonna tat-test turi ASCII jew l-ittri tal-Ewropa tal-Punent, mhux alfabetti oħra; jiġu mfittxija bytes jew test, mhux patterns.",
+                "Ċwievet u ċertifikati: iċ-ċwievet huma RSA, il-kurvi P-256, P-384 u P-521, u Ed25519; oħrajn (DSA, secp256k1, X25519) ma jinqrawx. Ċavetta msakkra bil-mod il-qadim ta' OpenSSL tinfetaħ meta ċ-ċifra tagħha tkun AES jew 3DES. Fajl .pfx fih ċavetta waħda maċ-ċertifikati tagħha. Il-ħolqien ta' ċavetta RSA kbira ħafna jieħu ż-żmien u ma jistax jitwaqqaf f'nofs triq. Il-librerija li toħloq iċ-ċwievet RSA għandha dgħufija magħrufa kontra attakkant li jista' jkejjel il-ħin ta' ħafna firem fuq netwerk (RUSTSEC-2023-0071): hawn iċ-ċwievet isiru u jinkitbu fuq il-kompjuter tiegħek, u xejn ma jiġi ffirmat għal ħaddieħor.",
+                "Klijent HTTP: HTTP/1.1 (mhux HTTP/2 jew 3); ma jinżammux cookies bejn it-talbiet; formoli ta' diversi partijiet (multipart) ma jinbnewx għalik; tweġiba akbar minn 16 MB, jew waħda li mhijiex test, tinkiteb f'fajl billi terġa' tibgħat it-talba.",
+                "It-tfittxija DNS turi l-firem (DNSSEC) u ma tivverifikahomx. Il-verifika tal-portijiet tipprova TCP biss: port UDP li ma jwieġibx ma jistax jiġi distint minn wieħed magħluq. Ċertifikat ta' sit ma jistaqsix jekk ċertifikat ġiex revokat.",
+                "Il-menu tal-klikk il-lemin huwa għal Windows Explorer; fuq Windows 11 l-entrati tiegħu jinsabu taħt \"Uri aktar għażliet\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

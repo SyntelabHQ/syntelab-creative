@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Orientacija",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Prva stran",
+          "body": [
+            "Zavihek Dev se odpre na prvi strani, kjer so vsa orodja, razvrščena kot v menijih: Kodiraj, Podatki, Generiraj, Preveri, Omrežje.",
+            {
+              "points": [
+                "Vpišite besedilo v polje \"Poišči orodje\", da zožite seznam.",
+                "Žebljiček na orodju ga obdrži na vrhu, pod \"Pripeta\".",
+                "Orodje se odpre v istem zavihku; Datoteka → Vsa orodja vas vrne na prvo stran. V Nastavitvah lahko nastavite, da se vsako orodje odpre v lastnem zavihku in da se nov zavihek odpre z nazadnje uporabljenim orodjem."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Prilepi karkoli",
+          "body": [
+            "Polje na vrhu prve strani sprejme vse, kar prilepite, in pove, na kaj je videti podobno: žeton, certifikat, JSON, UUID-ji, časovni žigi, urniki cron, URL-ji, XML ali HTML, SQL, Base64, kontrolna vsota, tabela, YAML.",
+            "Pod vsakim ugibanjem so orodja, ki delujejo s takšno vsebino, najprimernejša prva. Kliknite eno: odpre se z že vstavljenim besedilom in se zažene.",
+            {
+              "note": "Vse, kar prilepite, ostane v polju, dokler ga ne počistite ali zaprete zavihka. Podatki nikoli niso zapisani na disk."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Postavitev orodja",
+          "body": [
+            "Večina orodij ima enak okvir: možnosti v vrstici na vrhu, vnos na eni strani, izhod na drugi in vrstica na dnu, ki pove, kaj se je zgodilo.",
+            {
+              "points": [
+                "Rezultat se ustvari znova ob vsaki spremembi vnosa ali možnosti in se prikaže v izhodu; to pove „Zažene se samo“ v vrstici možnosti. Le besedilo, ki je predolgo za zagon ob vsaki tipki, ali datoteka, večja od 128 MB, čaka na gumb Zaženi, ki se takrat prikaže. Ctrl+Enter zažene orodje kadar koli.",
+                "Rezultat, ki ni besedilo (slika, dekodirana iz Base64, gzip), je prikazan kot predogled: slika takšna, kot je, vse drugo po vrsti, velikosti in prvih bajtih. Kopiraj ga takrat kopira kot Base64, sliko pa je mogoče kopirati kot sliko. Enako velja za vhodno datoteko, ki ni besedilo.",
+                "Nad vnosom so možnosti Odpri datoteko, Prilepi in Počisti; nad izhodom pa Kopiraj in Shrani v datoteko. Datoteko lahko spustite tudi neposredno v vnos.",
+                "Kaj je narobe z vnosom, je opisano z besedami, z vrstico in stolpcem, ter označeno v urejevalniku.",
+                "Meni Pogled postavi podokni drugo ob drugo ali eno pod drugo, prikaže številke vrstic in prelomi dolge vrstice; črto med podoknoma lahko povlečete.",
+                "Izbrane možnosti se zapomnijo za naslednjič. Vpisano besedilo pa ne."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Uniči in kaj se ohrani",
+          "body": [
+            "Uniči v spodnjem desnem kotu vsakega orodja ga takoj izprazni: vnos, rezultat, vse, kar je vpisano v njegova polja, in tisto, kar bi lahko njegovi urejevalniki razveljavili.",
+            "Dev ohrani le svoje nastavitve, orodja, ki ste jih pripeli, ime nazadnje uporabljenega orodja in možnosti vsakega orodja. Nič, kar v orodju vpišete, prilepite, odprete ali ustvarite, se ne zapiše na disk, v dnevnik ali na seznam nedavnih elementov. Še najmanj skrivnosti: ključi, geselske fraze, žetoni in glave zahteve živijo v zavihku in nikjer drugje.",
+            "Ena stvar nekaj časa počaka na disku: rezultat datoteke in rezultat, ki ni besedilo, se zapišeta v lastno mapo programa, da ju je mogoče prikazati in nato shraniti. Vsak se izbriše, ko njegovo mesto zavzame drug rezultat, ko orodje uničite ali zaprete, in v vsakem primeru ob naslednjem zagonu programa Dev."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Datoteke poljubne velikosti",
+          "body": [
+            "Velikost datoteke ni omejena. Datoteka, ki je dovolj majhna za prikaz (do 16 MB), se naloži v urejevalnik. Večja ali taka, ki ni besedilo, ostane na disku: prikaže se njen začetek (ali predogled), orodje jo bere tam, kjer je, njen rezultat pa se prikaže kot pri besedilu. Shrani v datoteko nato kopira rezultat tja, kamor izberete.",
+            {
+              "points": [
+                "Pri dolgotrajnem delu se prikaže kartica z napredkom in gumbom Ustavi.",
+                "Datoteka z besedilom v drugem kodiranju kot UTF-8 (UTF-16, Windows-1252 in podobno) se prebere kot besedilo, če je dovolj majhna za prikaz, kodiranje pa se navede. Kar shranite iz Dev, je v UTF-8.",
+                "Datoteka, spuščena na orodje, se odpre kot z Odpri datoteko. Kjer okno ne more ugotoviti, kje je, se sprejme do 16 MB, kot bi jo prilepili."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Veliko datotek in celotne mape",
+          "body": [
+            "Kjer ima orodje izbiro \"Obdelaj: Besedilo / Datoteke\", ga Datoteke zaženejo na veliko datotekah naenkrat.",
+            {
+              "steps": [
+                "Dodajte datoteke ali mapo (skupaj s podmapami, če to pustite vklopljeno).",
+                "Vsaka datoteka se ob dodajanju prebere enkrat in izveste, ali jo orodje sprejme.",
+                "Izberite, kam gredo rezultati: poleg vsake datoteke pod novim imenom, v mapo (z ohranjeno strukturo map) ali čez same datoteke, kar vas še enkrat vpraša. Zgoščevanje lahko rezultate tudi le prikaže na seznamu.",
+                "Kliknite datoteko na seznamu, da pod izbirami vidite le njen rezultat, še preden se karkoli zapiše.",
+                "Zaženite. Datoteka z napako ne ustavi ostalih; za vsako je navedeno, kako se je končalo."
+              ]
+            },
+            {
+              "note": "Rezultat se nikoli ne zapisuje čez obstoječo datoteko, razen če to zahtevate."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Meni desnega klika v Raziskovalcu Windows",
+          "body": [
+            "Vklopite ga v Nastavitvah programa, pod Raziskovalec Windows. Vse je zbrano pod eno vrstico \"Syntelab Creative\"; v Windows 11 je pod \"Pokaži več možnosti\".",
+            {
+              "points": [
+                "Odpri v Syntelab Dev: na vrstah datotek, ki jih bere katero od orodij (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz in podobne). Datoteka se odpre v orodju za njeno vrsto.",
+                "Kontrolne vsote: na kateri koli datoteki ali mapi. Povzetki so navedeni, vsak ob svoji datoteki, in nič se ne zapiše.",
+                "Hex prikaz: za katero koli datoteko.",
+                "Primerjaj: dve datoteki gresta na obe strani orodja Diff; dve mapi v primerjavo map."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kodiranje",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Pretvori bajte v Base64 in obratno. Kodiranje sprejme katero koli datoteko; dekodiranje vrne bajte, ki se prikažejo, če gre za besedilo, ali se shranijo v datoteko, če ne.",
+            {
+              "points": [
+                "Abeceda: standardna ali tista za URL-je (- in _).",
+                "Zapolnitev z = ter vrstice po 64, 76 ali poljubno število znakov.",
+                "Dekodiranje sprejme obe abecedi, z zapolnitvijo ali brez nje, in pove, kje je znak napačen."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Kodiranje / dekodiranje URL",
+          "body": [
+            "Odstotno kodiranje, kot ga zapisujejo brskalniki: del naslova (kodira se vse, kar ni navadna črka), celoten naslov (njegovi lastni znaki se ohranijo) ali obrazec (+ za presledek).",
+            "Dekodiranje pove, kje za znakom % ne sledita dve šestnajstiški števki."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML entitete",
+          "body": [
+            "Znake, ki si jih HTML in XML pridržujeta zase (&, <, >, narekovaji), zapiše kot entitete in entitete prebere nazaj: po imenu, po desetiškem ali po šestnajstiškem številu. Imena so tista iz standarda HTML.",
+            "\"Tudi vsak znak, ki ni ASCII\" kot entitete zapiše tudi črke s strešicami in drugimi znamenji ter druge abecede."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT dekoder",
+          "body": [
+            "Razčleni JSON Web Token: njegovo glavo in vsebino (payload) kot JSON ter njegove trditve (claims) z besedami (izdajalec, subjekt, občinstvo, kdaj poteče, z oznako \"poteklo\" ali \"še ni poteklo\").",
+            "Vnesite skrivnost, da preverite podpis, ustvarjen s skupno skrivnostjo (HS256, HS384, HS512). Podpisi, ustvarjeni z zasebnim ključem (RS, ES, PS), se ne preverjajo.",
+            {
+              "note": "Žeton in skrivnost ostaneta v zavihku: za dekodiranje žetona se nič nikamor ne pošlje."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Dodajanje / odstranjevanje ubežnih znakov",
+          "body": [
+            "Zapiše besedilo kot niz nekega jezika (JSON, JavaScript, C, C++, Java in podobni), pri čemer narekovaje, prelome vrstic in druge znake zapiše kot ubežna zaporedja, in tak niz prebere nazaj."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Stiska in razpakira gzip, datoteko poljubne velikosti sproti med branjem. Stopnja sega od najhitrejše do najmanjše; rezultat iz besedila je lahko podan kot Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Številski sestavi",
+          "body": [
+            "Izpiše cela števila, eno v vsaki vrstici, v dvojiškem, osmiškem, desetiškem in šestnajstiškem sestavu ter v še eni osnovi po vaši izbiri, do 36. Število nima največje velikosti.",
+            {
+              "points": [
+                "Osnova števila se prepozna po zapisu: 0x za šestnajstiško, 0b za dvojiško, 0o za osmiško, črke za šestnajstiško, sicer desetiško. Lahko pa izberete osnovo, v kateri se bere vse.",
+                "Presledki, podčrtaji in opuščaji med števkami se preskočijo: 1_000_000.",
+                "Negativno število je podano tudi tako, kot ga hranijo računalniki (dvojiški komplement), v najmanjši od velikosti 8, 16, 32, 64 bitov in tako naprej, v katero se prilega."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Podatki",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON oblikovalnik",
+          "body": [
+            "Oblikuje, minificira in preverja JSON ter ga prikaže kot drevo. Dokument poljubne velikosti se bere kot tok.",
+            {
+              "points": [
+                "Zamik z 2 ali 4 presledki, tabulatorjem ali poljubnim številom presledkov.",
+                "Več možnosti: razvrščanje ključev, kratki seznami v eni vrstici, presledek za dvopičjem, kako se končajo vrstice, prelom vrstice na koncu, znaki, ki niso ASCII, kot \\uXXXX.",
+                "Sproščeno branje sprejme komentarje (// in /* */) in vejice na koncu, zapiše pa strogi JSON.",
+                "Spremembe: odstranitev null vrednosti, odstranitev praznih vrednosti in podobno, v enem prehodu.",
+                "Drevo se odpira po eno raven naenkrat in išče besedilo v ključih in vrednostih."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Izvede poizvedbo JSONPath (RFC 9535) na dokumentu: $.store.book[?@.price < 10].title. Rezultat so najdene vrednosti, poti do njih ali oboje.",
+            "Pri napačni poizvedbi je navedeno mesto, kjer gre narobe."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Preverjalnik JSON Schema",
+          "body": [
+            "Preveri dokument glede na JSON Schema (osnutki od 4 do 2020-12). Shema gre v podokno pod vnosom. Vse, kar ne ustreza, je navedeno skupaj z mestom in pravilom, ki ga krši.",
+            "Pri več datotekah se vsaka preveri glede na isto shemo. Sklicu $ref na drugo datoteko ali naslov se ne sledi."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Generator shem in JSON v TypeScript",
+          "body": [
+            "Iz vzorca JSON generator shem zapiše JSON Schema, ki ji vzorec ustreza, JSON → TypeScript pa zapiše deklaracije njegovega tipa (vmesnike ali tipe, izvožene ali ne, readonly ali ne, pod imenom, ki ga določite)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Pretvori YAML v JSON in JSON v YAML. YAML se bere po njegovi osnovni shemi (core schema), pri čemer se sledi sidrom in združitvam; napake so navedene z mestom."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Pretvori tabelo v JSON in nazaj. Ločilo se prepozna iz prve vrstice ali izbere (vejica, podpičje, tabulator, navpičnica); prva vrstica je lahko glava; števila in true / false se lahko prepoznajo.",
+            "\"Tabela\" prikaže CSV v vrsticah in stolpcih, ne glede na velikost datoteke."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Oblikovalnik XML / HTML",
+          "body": [
+            "Oblikuje, minificira in preverja XML in HTML. XML se bere strogo: oznaka, ki ni nikoli zaprta, je navedena z mestom. HTML se bere tako prizanesljivo kot v brskalnikih."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Oblikovalnik SQL",
+          "body": [
+            "Stavek razporedi tako, da je vsaka klavzula v svoji vrstici, ali ga postavi v eno vrstico; ključne besede z velikimi črkami, z malimi ali kot so zapisane. Ne zahteva narečja SQL in ne preverja, kaj stavek pomeni."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Primerja dve besedili vrstico za vrstico, dva dokumenta JSON po vsebini ali dve mapi datoteko za datoteko. Prvo gre v vnos, drugo v podokno pod njim.",
+            {
+              "points": [
+                "Stran ob strani označi spremenjene besede znotraj vrstice; Poenoteno je popravek, kot ga zapiše diff -u.",
+                "Prezrete so lahko velike in male črke, presledki, prazne vrstice, števke ali ločila.",
+                "Pri JSON-u vrstni red ključev in postavitev nista razlika; rezultat je lahko JSON Patch (RFC 6902).",
+                "Mape: katere datoteke ima le ena, katere so enake, katere se razlikujejo; Primerjaj v vrstici odpre par kot besedili."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Predogled Markdown",
+          "body": [
+            "Prikaže Markdown tako, kot bo videti, in poda njegov HTML za kopiranje ali shranjevanje: CommonMark s tabelami, prečrtanim besedilom, seznami opravil in sprotnimi opombami.",
+            {
+              "points": [
+                "HTML, vpisan v Markdown, se prikaže kot besedilo in se ne izvede.",
+                "Slika, ki bi jo bilo treba pridobiti iz omrežja, se ne pridobi: na njenem mestu sta prikazana njen opis in naslov. Slika, vključena v besedilo (data:), je prikazana.",
+                "Povezava, ki jo kliknete, se odpre v sistemskem brskalniku."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Generiraj",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Ustvari UUID-je različic 1, 3, 4, 5, 6 in 7 (RFC 9562), kolikor jih želite, zapisane z vezaji, navadno, kot URN ali v zavitih oklepajih. \"Razčleni\" pove različico vsakega UUID-ja ter čas ali ime v njem."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Zgoščevanje",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 in SHA-512 besedila ali datoteke, več hkrati, zapisano kot hex ali Base64. Datoteka poljubne velikosti se zgošča sproti med branjem.",
+            {
+              "points": [
+                "Preveri proti: prilepite kontrolno vsoto ali vrstico iz datoteke .sha256; izveste, ali se ujema ali ne.",
+                "HMAC ključ: povzetki postanejo HMAC-i s tem ključem.",
+                "Vsaka vrstica posebej: en povzetek za vsako vrstico besedila.",
+                "Datoteke: povzetki so navedeni ob svojih datotekah; Kopiraj vse jih poda tako, kot jih zapiše sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Gesla in skrivnosti",
+          "body": [
+            "Ustvari gesla iz vrst znakov, ki jih izberete, geselske fraze iz besed in naključne bajte kot hex ali Base64, iz naključnih števil operacijskega sistema. Za vsako je navedeno, koliko bitov entropije ima. Ko je nekaj ustvarjeno, sprememba možnosti to ustvari znova.",
+            "Geselska fraza so besede, izžrebane z dolgega seznama besed Electronic Frontier Foundation (7776 angleških besed), vsaka enako verjetna: šest besed je približno 77 bitov."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Ključi in certifikati",
+          "body": [
+            "Pet dejanj, ki jih izberete na vrhu:",
+            {
+              "points": [
+                "Nov ključ: RSA, EC P-256 / P-384 / P-521 ali Ed25519, v vseh oblikah, ki jih sprejemajo programi (PKCS #8, starejša oblika, OpenSSH; javni ključ kot PEM in kot vrstica za authorized_keys), zaklenjen z geselsko frazo, če jo podate.",
+                "Zahteva za certifikat: CSR za nov ključ ali za ključ, ki ga prilepite, z njegovim subjektom in drugimi imeni (SAN).",
+                "Samopodpisan certifikat: enako, podpisano z lastnim ključem, za izbrano število dni; \"Lahko podpiše druge certifikate\" ga naredi za vašega lastnega izdajatelja.",
+                "Podpiši z lastnim CA: prilepite zahtevo, certifikat svojega izdajatelja in njegov ključ; dobite podpisani certifikat, za njim pa izdajatelja.",
+                "Preberi in pretvori: prilepite ali odprite karkoli (PEM, DER, ključ OpenSSH, datoteko .pfx ali .p12, zaklenjeno ali ne). Pove, kaj je našel in ali ključ pripada certifikatu, ter vsako stvar zapiše v drugih oblikah. Ključ in njegov certifikat lahko shranite skupaj kot .pfx."
+              ]
+            },
+            {
+              "note": "Vse se ustvari na tem računalniku. Ključ je v zavihku do Uniči in nikjer drugje, razen če ga shranite."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preveri",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Preizkuševalec regex",
+          "body": [
+            "Preizkusi regularni izraz jezika JavaScript na besedilu: ujemanja z njihovimi skupinami in mesti ali besedilo z zamenjanimi ujemanji. Zastavice so g, i, m, s, u, y.",
+            "Vzorec teče ločeno od okna, in če teče dlje kot 20 sekund, se prekine."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Razlaga cron",
+          "body": [
+            "Z besedami pove, kaj urnik pomeni in kdaj se zažene: crontab (pet polj, šest s sekundami, sedem z letom), Quartz, AWS EventBridge cron() in rate() ter systemd OnCalendar. En urnik na vrstico.",
+            {
+              "points": [
+                "Naslednji zagoni in na zahtevo tudi prejšnji, v časovnem pasu, ki ga izberete.",
+                "Dnevi v tednu so oštevilčeni od 0 za nedeljo ali od 1, kot jih šteje Quartz, po vaši izbiri. Vrstica s sekundami, ki ima tudi leto, L, W ali #, je Quartzova in se sama prebere na način Quartz.",
+                "Isti urnik v drugih oblikah, za kopiranje ali dodajanje v vnos.",
+                "Graditelj sestavi urnik z izbiro vsakega polja; \"Spremeni v graditelju\" vanj prevzame vpisani urnik."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix časovni žig",
+          "body": [
+            "Bere trenutke, enega na vrstico: sekunde, milisekunde, mikrosekunde ali nanosekunde od leta 1970 ali datum, zapisan na običajne načine (ISO 8601, kot ga zapišeta e-pošta in HTTP, kot ga zapiše Git). Vsak je prikazan v izbranem časovnem pasu, v UTC in kot vse vrste časovnih žigov."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Razčlenjevalec URL",
+          "body": [
+            "Razčleni URL tako, kot ga berejo brskalniki: shema, uporabnik, gostitelj (z obliko Unicode, če je zapisan v punycode), vrata, pot, vsak dekodirani parameter poizvedbe in fragment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Dekoder certifikata",
+          "body": [
+            "Bere certifikate X.509 iz PEM ali DER in pove vse, kar je v njih: subjekt, izdajatelja, veljavnost, imena, za katera velja, ključ, razširitve in prstne odtise.",
+            "Orodje le bere; ne presoja, ali je certifikatu mogoče zaupati. Za certifikat, ki ga prikaže spletno mesto, in za to, ali mu ta računalnik zaupa, uporabite Omrežje → Certifikat spletnega mesta."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Pregledovalnik hex",
+          "body": [
+            "Prikaže bajte datoteke poljubne velikosti ali prilepljenega besedila: položaj vsake vrstice, bajte in iste bajte kot znake.",
+            {
+              "points": [
+                "Pojdite na položaj, zapisan kot 0x1F4, 1F4h ali 500.",
+                "Iščite bajte (DE AD BE EF) ali besedilo (UTF-8 ali UTF-16 v katerem koli vrstnem redu bajtov), naprej in nazaj.",
+                "Kliknite bajt: ob strani se prikaže, kaj je tam, kot števila vseh velikosti, v obeh vrstnih redih bajtov, kot znak in kot čas.",
+                "Izbirajte z vlečenjem, s tipko Shift ali s puščičnimi tipkami; izbor kopirajte kot hex, kot kodo, kot Base64 ali kot besedilo ali ga shranite v datoteko."
+              ]
+            },
+            {
+              "note": "Orodje le prikazuje: v datoteki se nič ne spremeni."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Omrežje",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Kam dostopajo omrežna orodja",
+          "body": [
+            "Ta štiri orodja so edini del Dev, ki gre na splet, in gredo tja, kamor jih usmerite.",
+            {
+              "points": [
+                "Kontaktiran je le naslov, ki ga vpišete, in to samo, ko pritisnete gumb. Nikoli v ozadju.",
+                "Pošlje se to, kar ste napisali. Zahtevi se doda le User-Agent, ki je za vse enak (\"Syntelab Creative\"), razen če podate svojega.",
+                "Piškotki se ne hranijo, nič o vas ali računalniku se ne pošlje in nič vpisanega se ne shrani."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Odjemalec HTTP",
+          "body": [
+            "Pošlje eno ročno napisano zahtevo: metodo, naslov, glave (ena na vrstico: Ime: vrednost) in telo, vpisano ali vzeto iz datoteke poljubne velikosti.",
+            {
+              "points": [
+                "Odgovor: njegova koda, koliko časa je trajal (skupaj in do prvega bajta), velikost, glave in telo, obarvano glede na vrsto in oblikovano, če gre za JSON. Telo, ki ni besedilo (slika, PDF), je prikazano takšno, kot je, in shranjeno takšno, kot je prispelo.",
+                "Sledi preusmeritvam ali si oglejte prvi odgovor takšen, kot je. Naslovi, s katerih je bila zahteva preusmerjena, so navedeni.",
+                "Preveri certifikat glede na to, čemur ta računalnik zaupa; izklopite to le za svoje strežnike.",
+                "\"Pošlji, odgovor v datoteko\" zapiše telo poljubne velikosti neposredno na disk, s prikazom napredka in gumbom Ustavi.",
+                "\"Kopiraj kot curl\" poda isto zahtevo v obliki ukaza."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS iskanje",
+          "body": [
+            "Imenski strežnik vpraša za zapise imena: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, več hkrati. Naslov vrne svoje ime (PTR).",
+            "Vprašanje gre imenskemu strežniku, ki ga računalnik uporablja, javnemu (1.1.1.1, 8.8.8.8, 9.9.9.9), razreševalniku prek HTTPS (Cloudflare, Google) ali tistemu, ki ga vpišete."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Preverjanje vrat",
+          "body": [
+            "Pove, ali vrata gostitelja sprejemajo povezave TCP: ena, več ali razpon do vseh 65 535 (22, 80, 443, 8000-8100). Vsaka vrata so odprta, zaprta ali brez odgovora v času, ki ga določite.",
+            {
+              "note": "Preverjajte le gostitelje, ki so vaši ali ki jih smete testirati."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Certifikat spletnega mesta",
+          "body": [
+            "Prikaže certifikate, ki jih spletno mesto poda ob vzpostavitvi varne povezave: za koga so, kdo jih je podpisal, koliko dni še velja, ali jim ta računalnik zaupa in zakaj ne, različico TLS in šifro. Izvede se le rokovanje (handshake): nobena zahteva ni poslana.",
+            {
+              "points": [
+                "Vpišite example.com, example.com:8443 ali spletni naslov.",
+                "Poštni strežniki in FTP začnejo nešifrirano in so pozvani, naj preidejo na TLS (STARTTLS): izbrano po vratih (25, 587, 143, 110, 21) ali ročno.",
+                "\"Vse\" prikaže vse, kar piše v certifikatih; \"PEM\" jih poda za kopiranje ali shranjevanje."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nastavitve",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Nastavitve Dev",
+          "body": [
+            "Datoteka → Nastavitve odpre Nastavitve programa na delu za Dev.",
+            {
+              "points": [
+                "Vsako orodje odprite v lastnem zavihku ali v zavihku, v katerem je izbrano.",
+                "Nov zavihek odprite z nazadnje uporabljenim orodjem ali na prvi strani.",
+                "Ponastavite možnosti vsakega orodja in pripenjanja na privzete vrednosti programa."
+              ]
+            },
+            "Meni desnega klika v Raziskovalcu Windows, jezik, tema in tipke so v splošnih Nastavitvah programa."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O Dev",
+          "body": [
+            "Dev je aplikacija Syntelab Creative za razvijalce: orodja, ki kodirajo in dekodirajo, oblikujejo in preverjajo, pretvarjajo eno obliko podatkov v drugo in razčlenijo tisto, kar je takšno, kot je, težko berljivo.",
+            "Vse se izvede na tem računalniku. Nič, kar v orodju vpišete, prilepite ali odprete, se ne shrani ali kamor koli pošlje. Velikost in število datotek nista omejena: meji sta pomnilnik in disk računalnika.",
+            "Aplikacija je nova in še nastaja. Če pri vašem delu česa ne zmore, nam to sporočite prek Pomoč → Povratne informacije."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "S čim je narejen Dev",
+          "body": [
+            {
+              "points": [
+                "Urejevalniki: CodeMirror, https://codemirror.net . Licenca MIT. Copyright (C) 2018-2021 Marijn Haverbeke in drugi.",
+                "Branje in barvanje JSON v urejevalnikih: @codemirror/lang-json, https://github.com/codemirror/lang-json , z @codemirror/language in @lezer/highlight. Licenca MIT. Copyright (C) 2018-2021 Marijn Haverbeke in drugi.",
+                "Branje in barvanje YAML, XML, HTML in SQL v urejevalnikih: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (z @codemirror/lang-css in @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Licenca MIT. Copyright (C) 2018-2024 Marijn Haverbeke in drugi.",
+                "Preverjanje dokumenta glede na JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Licenca MIT. Copyright (c) 2020-2026 Dmitry Dygalo. Zgrajen je brez omrežnega dela: Dev nikoli ne pridobi sheme.",
+                "Vzorci JSONPath (ujemanje in iskanje): regex, https://github.com/rust-lang/regex . MIT ali Apache-2.0 licenca. Copyright (c) 2014 The Rust Project Developers.",
+                "Branje YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Licenca MIT ali Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. YAML zapiše Dev sam.",
+                "Primerjava dveh besedil (Diff): similar, https://github.com/mitsuhiko/similar . Apache-2.0 licenca. Avtorji: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . MIT ali Apache-2.0 licenca. Copyright (c) 2014-2026 Alex Crichton.",
+                "Povzetki orodja Zgoščevanje in podpisa žetona: sha2, sha1 in md-5, https://github.com/RustCrypto/hashes . MIT ali Apache-2.0 licenca. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation in razvijalci RustCrypto.",
+                "Datumi, časi in časovni pasovi (Unix časovni žig, Razlaga cron): jiff, https://github.com/BurntSushi/jiff , s časovnimi pasovi iz baze podatkov IANA. Unlicense ali MIT licenca. Copyright (c) 2015 Andrew Gallant.",
+                "Razčlenitev URL-ja: url in idna, https://github.com/servo/rust-url . MIT ali Apache-2.0 licenca. Copyright (c) 2013-2025 The rust-url developers.",
+                "Branje X.509 certifikatov: x509-parser, https://github.com/rusticata/x509-parser . MIT ali Apache-2.0 licenca. Copyright (c) 2017 Pierre Chifflier.",
+                "Preizkuševalec regex izvede regularne izraze JavaScripta v WebView pogonu, s katerim program riše (Microsoft Edge WebView2 na Windowsu); zanj ni dodane nobene knjižnice.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Licenca MIT ali Apache-2.0. Avtorska pravica (c) 2018 Sam Rijs, Alex Crichton in sodelavci.",
+                "UUID-ji: uuid, https://github.com/uuid-rs/uuid . Licenca Apache-2.0 ali MIT. Avtorska pravica (c) 2014 The Rust Project Developers, avtorska pravica (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Naključni bajti za gesla, skrivnosti in UUID-je iz operacijskega sistema: getrandom, https://github.com/rust-random/getrandom . Licenca MIT ali Apache-2.0. Avtorska pravica (c) 2018-2025 The rust-random Project Developers, avtorska pravica (c) 2014 The Rust Project Developers.",
+                "RSA ključi in podpisi: rsa, https://github.com/RustCrypto/RSA , z num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Licenca MIT ali Apache-2.0. Avtorska pravica (c) RustCrypto Developers in dignifiedquire; avtorska pravica (c) 2014 The Rust Project Developers.",
+                "Ključi in podpisi NIST krivin (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , z ecdsa, elliptic-curve in crypto-bigint, ki jih potrebujejo. Licenca Apache-2.0 ali MIT. Avtorska pravica (c) 2020-2023 RustCrypto Developers.",
+                "Ed25519 ključi in podpisi: ed25519-dalek in curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Licenca BSD 3-Clause. Avtorska pravica (c) 2017-2019 isis agora lovecruft; avtorska pravica (c) 2016-2021 isis agora lovecruft in Henry de Valence. Vse pravice pridržane.",
+                "Oblike, v katerih so zapisani ključi, zahteve in certifikati (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER in PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Licenca Apache-2.0 ali MIT. Avtorska pravica (c) 2020-2023 The RustCrypto Project Developers.",
+                "Datoteke ključev OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , z bcrypt-pbkdf, aes, ctr, chacha20 in drugimi šifrirnimi in zgoščevalnimi funkcijami RustCrypto, ki so potrebne za zaklepanje ključa ( https://github.com/RustCrypto ). Licenca Apache-2.0 ali MIT. Avtorske pravice (c) 2021-2024 razvijalci projekta RustCrypto.",
+                "Datoteke PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , s pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 in scrypt iz RustCrypto, ki so potrebni. Licenca MIT ali Apache-2.0. Avtorske pravice (c) Dmitry Pankratov; Avtorske pravice (c) razvijalci projekta RustCrypto.",
+                "Naključna števila, iz katerih nastanejo ključi, se pridobijo iz operacijskega sistema: rand_core, https://github.com/rust-random/rand . Licenca MIT ali Apache-2.0. Avtorske pravice 2018 razvijalci projekta Rand, Avtorske pravice (c) 2014 razvijalci projekta Rust.",
+                "Odjemalec HTTP: ureq, https://github.com/algesten/ureq . Licenca MIT ali Apache-2.0. Avtorske pravice (c) 2019 Martin Algesten.",
+                "Varni povezavi (TLS) odjemalca HTTP in \"Certifikata spletnega mesta\": rustls, https://github.com/rustls/rustls , licenca Apache-2.0, ISC ali MIT, Avtorske pravice (c) 2016 Joseph Birr-Pixton; z rustls-webpki, https://github.com/rustls/webpki , licenca ISC, Avtorske pravice 2015 Brian Smith; ring, https://github.com/briansmith/ring , licenci Apache-2.0 in ISC; webpki-roots, https://github.com/rustls/webpki-roots , licenca CDLA-Permissive-2.0.",
+                "Preverjanje, ali ta računalnik zaupa certifikatu: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Licenca MIT ali Apache-2.0. Avtorske pravice (c) 2022 1Password.",
+                "Branje Markdowna: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Licenca MIT. Avtorske pravice 2015 Google Inc. Vse pravice pridržane.",
+                "Branje datotek, napisanih v drugih kodiranjih kot UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , licenca Apache-2.0 ali MIT (z BSD-3-Clause za podatke), Copyright Mozilla Foundation; ter chardetng, https://github.com/hsivonen/chardetng , licenca Apache-2.0 ali MIT, Copyright Mozilla Foundation.",
+                "Besede za geselske fraze: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , Electronic Frontier Foundation, uporabljeno pod licenco Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Seznam je uporabljen v izvirni obliki.",
+                "Odpiranje ključev, zaklenjenih na star način OpenSSL: aes, cbc in des iz RustCrypto, https://github.com/RustCrypto . Licenca MIT ali Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "Napisano za Dev, brez knjižnice: iskanje DNS (vprašanja zapisana in odgovori prebrani tako, kot določa RFC 1035) in preverjanje vrat.",
+                "Napisano za Dev, brez knjižnice: branje in pisanje JSON-a kot toka, JSONPath (RFC 9535), Base64, odstotno kodiranje, sklici na znake HTML (njihova imena so iz standarda HTML, https://html.spec.whatwg.org ), ubežna zaporedja v nizih, branje JSON Web Tokenov, pisanje YAML-a, CSV v obe smeri, branje urnikov cron, oblikovalnik XML in HTML ter oblikovalnik SQL."
+              ]
+            },
+            "To, kar deli z ostalim programom, je navedeno pod \"O Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Česa Dev še ne zmore",
+          "body": [
+            {
+              "points": [
+                "Podpis žetona se preveri le, če je bil ustvarjen s skupno skrivnostjo (HS256, HS384, HS512).",
+                "Preverjalnik JSON Schema pove, kaj ne ustreza, v angleščini, tako kot njegova knjižnica, in ne sledi sklicu $ref na drugo datoteko ali naslov.",
+                "Oblikovalnik SQL ne zahteva narečja in ne preverja, kaj stavek pomeni: opozori le na niz ali komentar, ki se nikoli ne konča.",
+                "YAML ter JSON, ki postane YAML ali CSV, sta med pretvorbo v celoti v pomnilniku; CSV, ki postane JSON, ter XML, HTML in SQL se obdelujejo sproti med branjem, ne glede na velikost.",
+                "Tabela, v kateri si ogledujete CSV, je samo za branje: vanjo ni mogoče nič vpisati in iz nje še ni mogoče nič kopirati.",
+                "Diff za vsako vrstico obeh datotek hrani šestnajst bajtov, ne samih datotek; dva dokumenta JSON sta v pomnilniku v celoti, saj se pred primerjavo na novo zapišeta.",
+                "Odsek vrstic, v katerem ni nobene vrstice, ki bi jo obe strani imeli natanko enkrat, se primerja tako dobro, kot dopušča ena sekunda: navedene razlike so resnične, čeprav ne vedno najmanjše.",
+                "Diff ne primerja, kako se vrstice končajo (CRLF ali LF).",
+                "Dve mapi se primerjata po bajtih njunih datotek; datoteke se ujemajo po imenih, črko za črko.",
+                "Kar sporočijo orodja v meniju Preveri, je JSON z imeni v angleščini.",
+                "Preizkuševalec regex izvaja regularne izraze jezika JavaScript, ne PCRE in ne tistih iz jezika Rust; deluje na besedilu, ki ga je mogoče prikazati, ne na datoteki na disku; vzorec, ki teče dlje kot 20 sekund, se prekine.",
+                "Dekoder certifikata prebere certifikat in ne preverja, ali mu je mogoče zaupati: ne njegove verige, ne podpisa in ne tega, ali je bil preklican.",
+                "Datoteka z besedilom v drugem kodiranju kot UTF-8 se prebere, če je dovolj majhna za prikaz; večja, ki se obdeluje z diska, mora biti v UTF-8.",
+                "Datoteka, spuščena na orodje, se sprejme do 16 MB; okno ne izve, kje na disku je spuščena datoteka, zato večjo odprite z Odpri datoteko.",
+                "Geselske fraze so sestavljene le iz angleških besed.",
+                "Razlaga cron: graditelj sestavlja urnike crontab (pet polj ali šest s sekundami); urnika z L, W, # ali ? ni mogoče prevzeti vanj. Časov AWS rate() ni mogoče določiti, saj se štejejo od trenutka, ko je bilo pravilo ustvarjeno. Pri systemd se berejo običajni koledarski dogodki; deli sekunde in seznami dni, šteti od konca meseca, ne.",
+                "Pregledovalnik hex le prikazuje: v datoteki se nič ne spremeni. Stolpec besedila prikazuje ASCII ali zahodnoevropske črke, ne drugih abeced; iščejo se bajti ali besedilo, ne vzorci.",
+                "Ključi in certifikati: ključi so RSA, krivulje P-256, P-384 in P-521 ter Ed25519; drugi (DSA, secp256k1, X25519) se ne berejo. Ključ, zaklenjen na stari način OpenSSL, se odpre, če je njegova šifra AES ali 3DES. Datoteka .pfx vsebuje en ključ z njegovimi certifikati. Ustvarjanje zelo velikega ključa RSA traja nekaj časa in ga ni mogoče ustaviti na polovici. Knjižnica, ki ustvarja ključe RSA, ima znano šibkost pred napadalcem, ki lahko prek omrežja meri čas številnih podpisov (RUSTSEC-2023-0071): tukaj se ključi ustvarijo in zapišejo na vašem računalniku in nič se ne podpisuje za nikogar drugega.",
+                "Odjemalec HTTP: HTTP/1.1 (ne HTTP/2 ali 3); piškotki se med zahtevami ne hranijo; obrazcev iz več delov (multipart) ne sestavi namesto vas; odgovor, večji od 16 MB, ali odgovor, ki ni besedilo, se zapiše v datoteko s ponovnim pošiljanjem zahteve.",
+                "Iskanje DNS prikaže podpise (DNSSEC), a jih ne preverja. Preverjanje vrat preizkuša le TCP: vrat UDP, ki molčijo, ni mogoče ločiti od zaprtih. Certifikat spletnega mesta ne preverja, ali je bil certifikat preklican.",
+                "Meni desnega klika je namenjen Raziskovalcu Windows; v Windows 11 so njegovi vnosi pod \"Pokaži več možnosti\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

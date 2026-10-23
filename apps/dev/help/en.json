@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Finding your way",
+      "topics": [
+        {
+          "id": "start",
+          "title": "The first page",
+          "body": [
+            "A Dev tab opens on the first page, where every tool is, grouped as in the menus: Encode, Data, Generate, Inspect, Network.",
+            {
+              "points": [
+                "Type in \"Find a tool\" to narrow the list.",
+                "The pin on a tool keeps it at the top, under Pinned.",
+                "A tool opens in the same tab; File → All tools goes back to the first page. In Settings you can have each tool open in a tab of its own, and a new tab open on the tool used last."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Paste anything",
+          "body": [
+            "The box at the top of the first page takes whatever you paste and says what it looks like: a token, a certificate, JSON, UUIDs, timestamps, cron schedules, URLs, XML or HTML, SQL, Base64, a checksum, a table, YAML.",
+            "Under each guess are the tools that work on such a thing, the best fit first. Click one: it opens with the text already in it and run.",
+            {
+              "note": "What you paste stays in the box until you clear it or close the tab. It is never written to disk."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "How a tool is laid out",
+          "body": [
+            "Most tools have the same frame: the options in a line at the top, the input on one side, the output on the other, and a line at the bottom that says what happened.",
+            {
+              "points": [
+                "The result is made again whenever the input or an option changes, and shown in the output; \"Runs by itself\" in the line of options says so. Only a text too long to run at every key, or a file larger than 128 MB, waits for the Run button, which shows then. Ctrl+Enter runs the tool at any time.",
+                "A result that is not text (a picture decoded from Base64, gzip) is shown as a preview: a picture as it is, anything else by its kind, its size and its first bytes. Copy then copies it as Base64, and a picture can be copied as a picture. So is an input file that is not text.",
+                "Open a file, Paste and Clear are over the input; Copy and Save to a file over the output. A file can also be dropped on the input.",
+                "What is wrong with the input is said in words, with its line and column, and marked in the editor.",
+                "The View menu puts the two panes side by side or one under the other, shows line numbers and wraps long lines; the line between the panes can be dragged.",
+                "The options you choose are remembered for the next time. What you type is not."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Burn, and what is kept",
+          "body": [
+            "Burn, at the bottom right of every tool, empties it at once: the input, the result, anything typed in its boxes, and what its editors could undo.",
+            "Dev keeps only its settings, the tools you pinned, the name of the tool used last and the options of each tool. Nothing you type, paste, open or make in a tool is written to disk, to a log or to a list of recent things. Secrets least of all: keys, passphrases, tokens and the headers of a request live in the tab and nowhere else.",
+            "One thing waits on disk for a while: the result of a file, and a result that is not text, are written to a folder of the program’s own so they can be shown and then saved. Each is deleted when another result takes its place, when you burn the tool or close it, and in any case when Dev starts again."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Files of any size",
+          "body": [
+            "There is no limit put on the size of a file. A file small enough to be shown (up to 16 MB) is put in the editor. A larger one, or one that is not text, stays on disk: its start (or a preview) is shown, the tool reads it from where it is, and its result is shown as for a text. Save to a file then copies the result where you choose.",
+            {
+              "points": [
+                "Long work shows a card with how far it has got and a Stop button.",
+                "A file that is text in another encoding than UTF-8 (UTF-16, Windows-1252 and the like) is read as text when it is small enough to be shown, and the encoding is said. What you save from Dev is UTF-8.",
+                "A file dropped on a tool is opened as with Open a file. Where the window cannot tell where it is, it is taken up to 16 MB, as if pasted."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Many files and whole folders",
+          "body": [
+            "Where a tool has \"Work on: Text / Files\", Files runs it on many files in one go.",
+            {
+              "steps": [
+                "Add files, or a folder (with the folders under it, if you leave that on).",
+                "Each file is read once as it is added and told whether the tool takes it.",
+                "Choose where the results go: beside each file under a new name, into a folder (keeping the folders), or over the files themselves, which asks you once more. Hash can also just show the results in the list.",
+                "Click a file in the list to see its result alone under the choices, before anything is written.",
+                "Run. A file that is wrong does not stop the others; each says how it came out."
+              ]
+            },
+            {
+              "note": "A result never lands on a file that is already there unless you ask for that."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "The right-click menu of Windows Explorer",
+          "body": [
+            "Turn it on in the Settings of the program, under Windows Explorer. Everything is gathered under one line, \"Syntelab Creative\"; on Windows 11 it is under \"Show more options\".",
+            {
+              "points": [
+                "Open in Syntelab Dev: on the kinds of files a tool reads (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz and the like). The file opens in the tool for its kind.",
+                "Checksums: on any file or folder. The digests are listed, each beside its file, and nothing is written.",
+                "Hex view: on any file.",
+                "Compare: two files go into the two sides of Diff; two folders into the comparison of folders."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Encode",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Turns bytes into Base64 and back. Encoding takes any file; decoding gives back the bytes, shown when they are text and saved to a file when they are not.",
+            {
+              "points": [
+                "Alphabet: the standard one, or the one for URLs (- and _).",
+                "Fill with =, and lines of 64, 76 or any number of letters.",
+                "Decoding takes both alphabets, with or without the filling, and says where a letter is wrong."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL encode / decode",
+          "body": [
+            "Percent-encoding, as browsers write it: a part of an address (everything that is not a plain letter is encoded), a whole address (its own signs are kept), or a form (+ for a space).",
+            "Decoding says where a % is not followed by two hexadecimal digits."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML entities",
+          "body": [
+            "Writes the signs HTML and XML keep for themselves (&, <, >, quotes) as entities, and reads entities back: by name, by decimal number or by hexadecimal number. The names are those of the HTML standard.",
+            "\"Every letter that is not ASCII too\" writes accented letters and other alphabets as entities as well."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT decoder",
+          "body": [
+            "Takes a JSON Web Token apart: its header and its payload as JSON, and its claims in words (issuer, subject, audience, when it expires, with \"expired\" or \"not expired yet\").",
+            "Give the secret to check a signature made with a shared secret (HS256, HS384, HS512). Signatures made with a private key (RS, ES, PS) are not checked.",
+            {
+              "note": "The token and the secret stay in the tab: nothing is sent anywhere to decode a token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Writes a text as a string of a language (JSON, JavaScript, C, C++, Java and the like) with its quotes, line breaks and other signs escaped, and reads such a string back."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Compresses and decompresses gzip, a file of any size as it is read. The level goes from fastest to smallest; the result of a text can be given as Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Number bases",
+          "body": [
+            "Tells whole numbers, one on each line, in binary, octal, decimal and hexadecimal, and in one more base of your choosing, up to 36. A number has no largest size.",
+            {
+              "points": [
+                "The base of a number is told from how it is written: 0x for hexadecimal, 0b for binary, 0o for octal, letters for hexadecimal, decimal otherwise. Or choose the base everything is read in.",
+                "Spaces, underscores and apostrophes between digits are passed over: 1_000_000.",
+                "A negative number is also given as computers keep it (two’s complement), in the smallest of 8, 16, 32, 64 bits and so on that holds it."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON formatter",
+          "body": [
+            "Formats, minifies and validates JSON, and shows it as a tree. A document of any size is read as a stream.",
+            {
+              "points": [
+                "Indent with 2 or 4 spaces, a tab, or any number of spaces.",
+                "More options: sort keys, short lists on one line, the space after the colon, how lines end, a line break at the end, non-ASCII letters as \\uXXXX.",
+                "Lenient reading takes comments (// and /* */) and trailing commas, and writes strict JSON.",
+                "Changes: drop nulls, drop empty values and the like, in one pass.",
+                "The tree opens a level at a time and finds a text in keys and values."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Runs a JSONPath query (RFC 9535) on a document: $.store.book[?@.price < 10].title. The result is the values found, the paths to them, or both.",
+            "A query that is wrong is said with the place it goes wrong at."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema validator",
+          "body": [
+            "Checks a document against a JSON Schema (drafts 4 to 2020-12). The schema goes in the pane under the input. Each thing that does not fit is listed with where it is and the rule it breaks.",
+            "On many files, each is checked against the same schema. A $ref to another file or to an address is not followed."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Schema generator and JSON to TypeScript",
+          "body": [
+            "From a sample of JSON, the schema generator writes a JSON Schema it fits, and JSON to TypeScript writes the declarations of its type (interfaces or types, exported or not, readonly or not, under a name you give)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Turns YAML into JSON and JSON into YAML. YAML is read by its core schema, with anchors and merges followed; what is wrong is said with its place."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Turns a table into JSON and back. The separator is told from the first row, or chosen (comma, semicolon, tab, pipe); the first row may be the header; numbers and true / false may be detected.",
+            "\"Table\" shows the CSV in rows and columns, a file of any size."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML / HTML formatter",
+          "body": [
+            "Formats, minifies and checks XML and HTML. XML is read strictly: a tag that is never closed is said with its place. HTML is read as browsers forgive it."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL formatter",
+          "body": [
+            "Lays a statement out, a clause to a line, or puts it on one line; keywords in capitals, in small letters or as written. It asks for no dialect and does not check what a statement means."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Compares two texts line by line, two JSON documents by what they say, or two folders file by file. The first goes in the input, the second in the pane under it.",
+            {
+              "points": [
+                "Side by side marks the words that changed inside a line; Unified is a patch as diff -u writes it.",
+                "Ignore case, whitespace, empty lines, digits or punctuation.",
+                "For JSON, the order of keys and the layout are no difference; the result can be a JSON Patch (RFC 6902).",
+                "Folders: which files only one has, which are the same, which differ; Compare on a row opens the pair as texts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdown preview",
+          "body": [
+            "Shows Markdown as it will look, and gives its HTML to copy or save: CommonMark with tables, strikethrough, task lists and footnotes.",
+            {
+              "points": [
+                "HTML typed inside the Markdown is shown as text, not run.",
+                "A picture that would be fetched from the network is not fetched: its description and address are shown in its place. A picture carried in the text (data:) is shown.",
+                "A link you click opens in the browser of the system."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Generate",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Makes UUIDs of versions 1, 3, 4, 5, 6 and 7 (RFC 9562), as many as you ask for, written with hyphens, plain, as a URN or in braces. \"Take apart\" tells the version of each UUID and the time or the name inside it."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 and SHA-512 of a text or a file, several at once, written as hex or Base64. A file of any size is hashed as it is read.",
+            {
+              "points": [
+                "Check against: paste a checksum, or the line of a .sha256 file; it is told to match or not.",
+                "HMAC key: the digests become HMACs with that key.",
+                "Each line apart: one digest for each line of the text.",
+                "Files: the digests are listed beside their files; Copy all gives them as sha256sum writes them."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Passwords and secrets",
+          "body": [
+            "Makes passwords of the kinds of letters you choose, passphrases of words, and random bytes as hex or Base64, from the random numbers of the operating system. Each says how many bits of entropy it has. Once something is made, changing an option makes it again.",
+            "A passphrase is words drawn from the long word list of the Electronic Frontier Foundation (7776 English words), each as likely as the others: six words are about 77 bits."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Keys and certificates",
+          "body": [
+            "Five things, chosen at the top:",
+            {
+              "points": [
+                "New key: RSA, EC P-256 / P-384 / P-521 or Ed25519, given in every form programs take (PKCS #8, the older form, OpenSSH; the public key as PEM and as the line for authorized_keys), locked with a passphrase if you give one.",
+                "Certificate request: a CSR for a new key or one you paste, with its subject and its other names (SAN).",
+                "Self-signed certificate: the same, signed with its own key, for so many days; \"It may sign other certificates\" makes it an authority of your own.",
+                "Sign with your own CA: paste a request, the certificate of your authority and its key; you get the signed certificate and the authority after it.",
+                "Read and convert: paste or open anything (PEM, DER, an OpenSSH key, a .pfx or .p12 file, locked or not). It says what it found and whether the key is the one of the certificate, and writes each thing in the other forms. A key and its certificate can be saved together as a .pfx."
+              ]
+            },
+            {
+              "note": "Everything is made on this computer. A key is in the tab until Burn, and nowhere else unless you save it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inspect",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Regex tester",
+          "body": [
+            "Tries a regular expression of JavaScript on a text: the matches with their groups and places, or the text with the matches replaced. The flags are g, i, m, s, u, y.",
+            "The pattern runs apart from the window, and one that runs longer than 20 seconds is ended."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron explain",
+          "body": [
+            "Says in words what a schedule means and when it runs: crontab (five fields, six with seconds, seven with a year), Quartz, AWS EventBridge cron() and rate(), and systemd OnCalendar. One schedule to a line.",
+            {
+              "points": [
+                "The next runs, and the previous ones when asked, in the time zone you choose.",
+                "Days of the week are numbered from 0 for Sunday, or from 1 as Quartz numbers them, as you choose. A line with seconds that also has a year, L, W or # is of Quartz, and is read the Quartz way by itself.",
+                "The same schedule in the other forms, to copy or to add to the input.",
+                "The builder makes a schedule by choosing each field; \"Change in the builder\" takes a typed schedule up in it."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix timestamp",
+          "body": [
+            "Reads moments, one to a line: seconds, milliseconds, microseconds or nanoseconds since 1970, or a date written in the usual ways (ISO 8601, as mail and HTTP write it, as Git writes it). Each is told in the time zone you choose, in UTC, and as every kind of timestamp."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL parser",
+          "body": [
+            "Takes a URL apart as browsers read it: scheme, user, host (with its Unicode form when it is written in punycode), port, path, each parameter of the query decoded, and the fragment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Certificate decoder",
+          "body": [
+            "Reads X.509 certificates from PEM or DER and tells everything in them: subject, issuer, validity, the names it is for, its key, its extensions and its fingerprints.",
+            "It reads; it does not judge whether a certificate is to be trusted. For the certificate a site shows, and whether this computer trusts it, use Network → Certificate of a site."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Hex viewer",
+          "body": [
+            "Shows the bytes of a file of any size, or of a pasted text: the position of each row, the bytes, and the same bytes as letters.",
+            {
+              "points": [
+                "Go to a position written as 0x1F4, 1F4h or 500.",
+                "Find bytes (DE AD BE EF) or a text (UTF-8, or UTF-16 either way round), forward and back.",
+                "Click a byte: the side shows what is there as numbers of every size, in either byte order, as a character and as a time.",
+                "Select with a drag, Shift or the arrow keys; copy the selection as hex, as code, as Base64 or as text, or save it to a file."
+              ]
+            },
+            {
+              "note": "It only looks: nothing is changed in the file."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Network",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Where the network tools go",
+          "body": [
+            "These four tools are the only part of Dev that goes online, and they go where you point them.",
+            {
+              "points": [
+                "Only the address you type is contacted, and only when you press the button. Never in the background.",
+                "What is sent is what you wrote. The only thing added to a request is a User-Agent that is the same for everyone (\"Syntelab Creative\"), unless you give your own.",
+                "No cookies are kept, nothing about you or the computer is sent, and nothing typed is kept."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP client",
+          "body": [
+            "Sends one request written by hand: method, address, headers (one to a line: Name: value) and a body, typed or taken from a file of any size.",
+            {
+              "points": [
+                "The answer: its number, how long it took (in all, and to the first byte), its size, its headers, and its body, coloured by its kind and laid out when it is JSON. A body that is not text (a picture, a PDF) is shown as it is, and saved as it came.",
+                "Follow redirects, or see the first answer as it is. The addresses a request was sent on from are listed.",
+                "Check the certificate against what this computer trusts; turn it off only for servers of your own.",
+                "\"Send, answer to a file\" writes a body of any size straight to disk, with progress and Stop.",
+                "\"Copy as curl\" gives the same request as a command."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS lookup",
+          "body": [
+            "Asks a name server for the records of a name: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, several at once. An address gives its name (PTR).",
+            "The question goes to the name server the computer is set to use, to a public one (1.1.1.1, 8.8.8.8, 9.9.9.9), to a resolver over HTTPS (Cloudflare, Google), or to one you type."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Port check",
+          "body": [
+            "Tells whether ports of a host take TCP connections: one, several, or a range up to all 65 535 (22, 80, 443, 8000-8100). Each is open, closed, or without an answer in the time you give.",
+            {
+              "note": "Try only hosts that are yours, or that you may test."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Certificate of a site",
+          "body": [
+            "Shows the certificates a site gives when a secure connection is made: whom they are for, who signed them, how many days are left, whether this computer trusts them and why not, the version of TLS and the cipher. Only the handshake is done: no request is sent.",
+            {
+              "points": [
+                "Write example.com, example.com:8443 or a web address.",
+                "Mail servers and FTP begin in the clear and are asked to go over to TLS (STARTTLS): chosen by the port (25, 587, 143, 110, 21) or by hand.",
+                "\"Everything\" shows all that the certificates say; \"PEM\" gives them to copy or save."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Settings",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "The settings of Dev",
+          "body": [
+            "File → Settings opens the Settings of the program at the part of Dev.",
+            {
+              "points": [
+                "Open each tool in a tab of its own, or in the tab it is chosen in.",
+                "Open a new tab on the tool used last, or on the first page.",
+                "Put back the options of every tool, and the pins, as the program ships."
+              ]
+            },
+            "The right-click menu of Windows Explorer, the language, the theme and the keys are in the Settings of the program as a whole."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "About Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "About Dev",
+          "body": [
+            "Dev is the app of Syntelab Creative for developers: tools that encode and decode, format and check, turn one form of data into another, and take apart what is hard to read as it is.",
+            "Everything is done on this computer. Nothing you type, paste or open in a tool is kept or sent anywhere. There is no limit put on the size or the number of files: the limits are the memory and the disk of the computer.",
+            "It is new and still being built. Where it falls short for your work, tell us through Help → Feedback."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "What Dev is built with",
+          "body": [
+            {
+              "points": [
+                "The editors: CodeMirror, https://codemirror.net . MIT licence. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Reading and colouring JSON in the editors: @codemirror/lang-json, https://github.com/codemirror/lang-json , with @codemirror/language and @lezer/highlight. MIT licence. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Reading and colouring YAML, XML, HTML and SQL in the editors: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (with @codemirror/lang-css and @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . MIT licence. Copyright (C) 2018-2024 by Marijn Haverbeke and others.",
+                "Checking a document against a JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . MIT licence. Copyright (c) 2020-2026 Dmitry Dygalo. It is built without its network part: Dev never fetches a schema.",
+                "The patterns of JSONPath (match and search): regex, https://github.com/rust-lang/regex . MIT or Apache-2.0 licence. Copyright (c) 2014 The Rust Project Developers.",
+                "Reading YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . MIT or Apache-2.0 licence. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Writing YAML is done by Dev itself.",
+                "Comparing two texts (Diff): similar, https://github.com/mitsuhiko/similar . Apache-2.0 licence. Authors: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . MIT or Apache-2.0 licence. Copyright (c) 2014-2026 Alex Crichton.",
+                "The digests of the Hash tool and of a token’s signature: sha2, sha1 and md-5, https://github.com/RustCrypto/hashes . MIT or Apache-2.0 licence. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, and the RustCrypto developers.",
+                "Dates, times and time zones (Unix timestamp, Cron explain): jiff, https://github.com/BurntSushi/jiff , with the time zones of the IANA database. Unlicense or MIT licence. Copyright (c) 2015 Andrew Gallant.",
+                "Taking a URL apart: url and idna, https://github.com/servo/rust-url . MIT or Apache-2.0 licence. Copyright (c) 2013-2025 The rust-url developers.",
+                "Reading X.509 certificates: x509-parser, https://github.com/rusticata/x509-parser . MIT or Apache-2.0 licence. Copyright (c) 2017 Pierre Chifflier.",
+                "The regex tester runs the regular expressions of JavaScript, in the engine of the WebView the program draws with (Microsoft Edge WebView2 on Windows); no library is added for it.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . MIT or Apache-2.0 licence. Copyright (c) 2018 Sam Rijs, Alex Crichton and contributors.",
+                "UUIDs: uuid, https://github.com/uuid-rs/uuid . Apache-2.0 or MIT licence. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Random bytes for passwords, secrets and UUIDs, from the operating system: getrandom, https://github.com/rust-random/getrandom . MIT or Apache-2.0 licence. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "RSA keys and signatures: rsa, https://github.com/RustCrypto/RSA , with num-bigint-dig, https://github.com/dignifiedquire/num-bigint . MIT or Apache-2.0 licence. Copyright (c) RustCrypto Developers and dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Keys and signatures of the NIST curves (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , with ecdsa, elliptic-curve and crypto-bigint that they need. Apache-2.0 or MIT licence. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Ed25519 keys and signatures: ed25519-dalek and curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . BSD 3-Clause licence. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft and Henry de Valence. All rights reserved.",
+                "The forms keys, requests and certificates are written in (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER and PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Apache-2.0 or MIT licence. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "OpenSSH key files: ssh-key, https://github.com/RustCrypto/SSH , with bcrypt-pbkdf, aes, ctr, chacha20 and the other ciphers and hashes of RustCrypto that locking a key needs ( https://github.com/RustCrypto ). Apache-2.0 or MIT licence. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "PKCS #12 files (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , with pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 and scrypt of RustCrypto that it needs. MIT or Apache-2.0 licence. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "The random numbers keys are made from, taken from the operating system: rand_core, https://github.com/rust-random/rand . MIT or Apache-2.0 licence. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "The HTTP client: ureq, https://github.com/algesten/ureq . MIT or Apache-2.0 licence. Copyright (c) 2019 Martin Algesten.",
+                "Secure connections (TLS) of the HTTP client and of \"Certificate of a site\": rustls, https://github.com/rustls/rustls , Apache-2.0, ISC or MIT licence, Copyright (c) 2016 Joseph Birr-Pixton; with rustls-webpki, https://github.com/rustls/webpki , ISC licence, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , Apache-2.0 and ISC licences; webpki-roots, https://github.com/rustls/webpki-roots , CDLA-Permissive-2.0 licence.",
+                "Whether this computer trusts a certificate: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . MIT or Apache-2.0 licence. Copyright (c) 2022 1Password.",
+                "Reading Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . MIT licence. Copyright 2015 Google Inc. All rights reserved.",
+                "Reading files written in other encodings than UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , Apache-2.0 or MIT licence (with BSD-3-Clause for its data), Copyright Mozilla Foundation; and chardetng, https://github.com/hsivonen/chardetng , Apache-2.0 or MIT licence, Copyright Mozilla Foundation.",
+                "The words of passphrases: the EFF Large Wordlist for Passphrases, https://www.eff.org/dice , by the Electronic Frontier Foundation, used under the Creative Commons Attribution 3.0 United States licence ( https://creativecommons.org/licenses/by/3.0/us/ ). The list is used as it is.",
+                "Opening keys locked the old way of OpenSSL: aes, cbc and des of RustCrypto, https://github.com/RustCrypto . MIT or Apache-2.0 licence. Copyright (c) RustCrypto Developers.",
+                "Written for Dev, with no library: the DNS lookup (questions written and answers read as RFC 1035 has them) and the port check.",
+                "Written for Dev, with no library: reading and writing JSON as a stream, JSONPath (RFC 9535), Base64, percent-encoding, HTML character references (their names are those of the HTML standard, https://html.spec.whatwg.org ), string escapes, reading JSON Web Tokens, writing YAML, CSV both ways, reading cron schedules, the XML and HTML formatter, and the SQL formatter."
+              ]
+            },
+            "What it shares with the rest of the program is under \"About Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "What Dev cannot do yet",
+          "body": [
+            {
+              "points": [
+                "The signature of a token is checked only when it was made with a shared secret (HS256, HS384, HS512).",
+                "The JSON Schema validator says what does not fit in English, as its library does, and does not follow a $ref to another file or address.",
+                "The SQL formatter asks for no dialect and does not check what a statement means: it tells only of a string or a comment that never ends.",
+                "YAML, and JSON that becomes YAML or CSV, are held whole in memory while they are turned; CSV that becomes JSON, XML, HTML and SQL are worked on as they are read, whatever their size.",
+                "The table CSV is looked at in is read only: nothing is typed in it, and nothing is copied from it yet.",
+                "Diff keeps sixteen bytes for each line of the two files, not the files themselves; two JSON documents are held whole, since they are written anew before they are compared.",
+                "A stretch of lines with nothing both sides have exactly once is compared as well as a second allows: the differences told are true, though not always the fewest.",
+                "Diff does not compare how lines end (CRLF or LF).",
+                "Two folders are compared by the bytes of their files; files are matched by their names, letter for letter.",
+                "What the Inspect tools tell is JSON, with its names in English.",
+                "The regex tester runs the regular expressions of JavaScript, not PCRE and not those of Rust; it works on a text that can be shown, not on a file kept on disk; a pattern that runs longer than 20 seconds is ended.",
+                "The certificate decoder reads a certificate and does not check whether it is to be trusted: not its chain, not its signature, not whether it was revoked.",
+                "A file that is text in another encoding than UTF-8 is read when it is small enough to be shown; one larger than that, worked on from disk, must be UTF-8.",
+                "A file dropped on a tool is taken up to 16 MB; the window is not told where a dropped file is on disk, so a larger one is opened with Open a file.",
+                "Passphrases are made of English words only.",
+                "Cron explain: the builder makes crontab schedules (five fields, or six with seconds); a schedule with L, W, # or ? cannot be taken up in it. The times of an AWS rate() cannot be told, since it is counted from when its rule was made. Of systemd, the common calendar events are read; not fractions of a second or lists of days counted from the end of the month.",
+                "Hex viewer only looks: nothing is changed in the file. The column of text shows ASCII or the Western European letters, not other alphabets; bytes or a text are sought, not patterns.",
+                "Keys and certificates: keys are RSA, the curves P-256, P-384 and P-521, and Ed25519; others (DSA, secp256k1, X25519) are not read. A key locked the old way of OpenSSL is opened when its cipher is AES or 3DES. A .pfx file holds one key with its certificates. Making a very large RSA key takes time and cannot be stopped halfway. The library that makes RSA keys has a known weakness to an attacker who can time many signatures over a network (RUSTSEC-2023-0071): here keys are made and written on your computer, and nothing is signed for anyone else.",
+                "HTTP client: HTTP/1.1 (not HTTP/2 or 3); no cookies are kept between requests; forms of several parts (multipart) are not built for you; an answer larger than 16 MB, or one that is not text, is written to a file by sending the request again.",
+                "DNS lookup shows signatures (DNSSEC) and does not check them. Port check tries TCP only: a UDP port that is silent cannot be told from one that is closed. Certificate of a site does not ask whether a certificate was revoked.",
+                "The right-click menu is for Windows Explorer; on Windows 11 its entries are under \"Show more options\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

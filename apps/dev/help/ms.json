@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Mencari jalan anda",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Halaman pertama",
+          "body": [
+            "Tab Dev dibuka pada halaman pertama, di mana setiap alat berada, dikumpulkan seperti dalam menu: Kod, Data, Jana, Periksa, Rangkaian.",
+            {
+              "points": [
+                "Taip dalam \"Cari alatan\" untuk mengecilkan senarai.",
+                "Pin pada alat akan mengekalkannya di bahagian atas, di bawah Disematkan.",
+                "Alat dibuka dalam tab yang sama; Fail → Semua alatan akan kembali ke halaman pertama. Dalam Tetapan, anda boleh menetapkan setiap alat dibuka dalam tab tersendiri, dan tab baharu dibuka pada alat yang digunakan terakhir."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Tampal apa sahaja",
+          "body": [
+            "Kotak di bahagian atas halaman pertama menerima apa sahaja yang anda tampal dan menyatakan jenisnya: token, sijil, JSON, UUID, cap masa, jadual cron, URL, XML atau HTML, SQL, Base64, checksum, jadual, YAML.",
+            "Di bawah setiap tekaan adalah alat yang berfungsi untuk perkara tersebut, dengan padanan terbaik didahulukan. Klik satu: ia akan dibuka dengan teks sudah tersedia di dalamnya dan dijalankan.",
+            {
+              "note": "Apa yang anda tampal akan kekal dalam kotak sehingga anda mengosongkannya atau menutup tab. Ia tidak pernah ditulis ke cakera."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Susun atur alat",
+          "body": [
+            "Kebanyakan alat mempunyai bingkai yang sama: pilihan dalam satu baris di bahagian atas, input di satu sisi, output di sisi lain, dan satu baris di bahagian bawah yang menyatakan apa yang berlaku.",
+            {
+              "points": [
+                "Hasil dijana semula setiap kali input atau sesuatu pilihan berubah, dan dipaparkan dalam output; \"Berjalan sendiri\" dalam baris pilihan menandakannya. Hanya teks yang terlalu panjang untuk dijalankan pada setiap kekunci, atau fail yang lebih besar daripada 128 MB, menunggu butang Jalankan, yang akan muncul pada masa itu. Ctrl+Enter menjalankan alat pada bila-bila masa.",
+                "Hasil yang bukan teks (gambar yang dinyahkod daripada Base64, gzip) dipaparkan sebagai pratonton: gambar dipaparkan seadanya, yang lain mengikut jenis, saiz dan bait pertamanya. Salin kemudian menyalinnya sebagai Base64, dan gambar boleh disalin sebagai gambar. Begitu juga fail input yang bukan teks.",
+                "Buka fail, Tampal dan Kosongkan berada di atas input; Salin dan Simpan ke fail berada di atas output. Fail juga boleh ditarik dan dilepaskan ke dalam input.",
+                "Kesalahan pada input dinyatakan dengan kata-kata, berserta baris dan kolumnya, serta ditandakan dalam editor.",
+                "Menu Lihat meletakkan kedua-dua panel bersebelahan atau satu di bawah yang lain, menunjukkan nombor baris dan membungkus baris yang panjang; garisan antara panel boleh ditarik.",
+                "Pilihan yang anda pilih akan diingati untuk kali seterusnya. Apa yang anda taip tidak akan diingati."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Musnahkan, dan apa yang dikekalkan",
+          "body": [
+            "Musnahkan, di bahagian bawah kanan setiap alat, mengosongkannya serta-merta: input, hasil, apa-apa yang ditaip dalam kotaknya, dan apa yang boleh dibatalkan (undo) oleh editornya.",
+            "Dev hanya menyimpan tetapannya, alat yang anda pin, nama alat yang digunakan kali terakhir dan pilihan bagi setiap alat. Apa-apa yang anda taip, tampal, buka atau hasilkan dalam sesuatu alat tidak ditulis ke cakera, ke log atau ke senarai perkara terkini. Rahsia paling utama: kunci, frasa laluan, token dan pengepala permintaan hanya berada dalam tab dan tidak di tempat lain.",
+            "Satu perkara menunggu di dalam cakera untuk seketika: hasil sesuatu fail, dan hasil yang bukan teks, ditulis ke folder milik program sendiri supaya ia boleh dipaparkan dan kemudian disimpan. Setiap satu dipadamkan apabila hasil lain mengambil tempatnya, apabila anda memusnahkan atau menutup alat itu, dan walau apa pun apabila Dev dimulakan semula."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Fail dalam sebarang saiz",
+          "body": [
+            "Tiada had ditetapkan pada saiz fail. Fail yang cukup kecil untuk dipaparkan (sehingga 16 MB) akan dimasukkan ke dalam editor. Fail yang lebih besar, atau yang bukan teks, kekal di dalam cakera: bahagian permulaannya (atau pratontonnya) dipaparkan, alat membacanya dari lokasi asal, dan hasilnya dipaparkan seperti hasil teks. Simpan ke fail kemudian menyalin hasil itu ke tempat yang anda pilih.",
+            {
+              "points": [
+                "Kerja yang mengambil masa lama akan memaparkan kad yang menunjukkan sejauh mana kemajuannya dan butang Henti.",
+                "Fail teks dalam pengekodan selain UTF-8 (UTF-16, Windows-1252 dan seumpamanya) dibaca sebagai teks apabila ia cukup kecil untuk dipaparkan, dan pengekodannya akan dinyatakan. Apa yang anda simpan daripada Dev adalah UTF-8.",
+                "Fail yang ditarik ke dalam alat dibuka seperti dengan Buka fail. Jika tetingkap tidak dapat mengetahui lokasinya, fail diambil sehingga 16 MB, seolah-olah ditampal."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Banyak fail dan keseluruhan folder",
+          "body": [
+            "Apabila sesuatu alat mempunyai pilihan \"Kerjakan: Teks / Fail\", Fail akan menjalankannya pada banyak fail sekali gus.",
+            {
+              "steps": [
+                "Tambah fail, atau folder (termasuk folder di bawahnya, jika anda membiarkan pilihan itu aktif).",
+                "Setiap fail dibaca sekali semasa ia ditambah dan dimaklumkan sama ada alat tersebut menerimanya.",
+                "Pilih destinasi hasil: bersebelahan setiap fail dengan nama baharu, ke dalam folder (mengekalkan struktur folder), atau menggantikan fail asal, yang akan meminta pengesahan anda sekali lagi. Hash juga boleh memaparkan hasil dalam senarai sahaja.",
+                "Klik fail dalam senarai untuk melihat hasilnya sahaja di bawah pilihan, sebelum apa-apa ditulis.",
+                "Jalankan. Fail yang tidak sah tidak akan menghentikan fail lain; setiap satu akan menyatakan hasilnya."
+              ]
+            },
+            {
+              "note": "Hasil tidak akan menindih fail yang sedia ada melainkan anda memintanya."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Menu klik kanan Windows Explorer",
+          "body": [
+            "Aktifkannya dalam Tetapan program, di bawah Windows Explorer. Semuanya dikumpulkan di bawah satu baris, \"Syntelab Creative\"; pada Windows 11, ia berada di bawah \"Tunjukkan lebih banyak pilihan\".",
+            {
+              "points": [
+                "Buka dalam Syntelab Dev: untuk jenis fail yang dibaca oleh alat (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz dan seumpamanya). Fail akan dibuka dalam alat yang sesuai dengan jenisnya.",
+                "Checksum: pada mana-mana fail atau folder. Ringkasan (digests) disenaraikan, setiap satu bersebelahan failnya, dan tiada apa-apa yang ditulis.",
+                "Paparan Hex: pada mana-mana fail.",
+                "Banding: dua fail dimasukkan ke dalam dua bahagian Diff; dua folder dimasukkan ke dalam perbandingan folder."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kod",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Menukar bait kepada Base64 dan sebaliknya. Pengekodan mengambil mana-mana fail; penyahkodan mengembalikan bait, dipaparkan jika ia adalah teks dan disimpan ke fail jika bukan.",
+            {
+              "points": [
+                "Abjad: abjad standard, atau abjad untuk URL (- dan _).",
+                "Isi dengan =, dan baris 64, 76 atau sebarang jumlah huruf.",
+                "Penyahkodan menerima kedua-dua abjad, dengan atau tanpa pengisian, dan menyatakan di mana huruf yang salah."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Kod / nyahkod URL",
+          "body": [
+            "Pengekodan peratus, seperti yang ditulis oleh pelayar: sebahagian daripada alamat (semua yang bukan huruf biasa dikodkan), keseluruhan alamat (tandanya sendiri dikekalkan), atau borang (+ untuk ruang).",
+            "Penyahkodan menyatakan di mana % tidak diikuti oleh dua digit heksadesimal."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Entiti HTML",
+          "body": [
+            "Menulis tanda yang disimpan oleh HTML dan XML (&, <, >, petikan) sebagai entiti, dan membaca semula entiti: melalui nama, nombor perpuluhan atau nombor heksadesimal. Nama-nama tersebut adalah mengikut standard HTML.",
+            "\"Setiap huruf yang bukan ASCII juga\" menulis huruf beraksen dan abjad lain sebagai entiti juga."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Penyahkod JWT",
+          "body": [
+            "Meleraikan JSON Web Token: pengepala dan muatannya sebagai JSON, dan tuntutannya dalam perkataan (penerbit, subjek, audiens, tarikh luput, dengan \"telah luput\" atau \"belum luput\").",
+            "Berikan rahsia untuk menyemak tandatangan yang dibuat dengan rahsia kongsi (HS256, HS384, HS512). Tandatangan yang dibuat dengan kunci peribadi (RS, ES, PS) tidak disemak.",
+            {
+              "note": "Token dan rahsia kekal dalam tab: tiada apa-apa yang dihantar ke mana-mana untuk menyahkod token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Menulis teks sebagai rentetan bahasa (JSON, JavaScript, C, C++, Java dan seumpamanya) dengan tanda petikan, pemutus baris dan tanda lain yang dilesapkan, dan membaca semula rentetan tersebut."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Memampatkan dan menyahmampat gzip, fail dalam sebarang saiz semasa ia dibaca. Tahap mampatan adalah dari yang terpantas kepada yang terkecil; hasil teks boleh diberikan sebagai Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Asas nombor",
+          "body": [
+            "Menyatakan nombor bulat, satu pada setiap baris, dalam perduaan, oktal, perpuluhan dan heksadesimal, serta dalam satu lagi asas pilihan anda, sehingga 36. Nombor tidak mempunyai had saiz maksimum.",
+            {
+              "points": [
+                "Asas nombor ditentukan daripada cara ia ditulis: 0x untuk heksadesimal, 0b untuk perduaan, 0o untuk oktal, huruf untuk heksadesimal, dan perpuluhan untuk yang lain. Atau pilih asas untuk semua bacaan.",
+                "Ruang kosong, garis bawah dan tanda apostrof di antara digit akan diabaikan: 1_000_000.",
+                "Nombor negatif juga diberikan sebagaimana komputer menyimpannya (pelengkap dua), dalam saiz terkecil antara 8, 16, 32, 64 bit dan seterusnya yang dapat menampungnya."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Pemformat JSON",
+          "body": [
+            "Memformat, mengecilkan (minify) dan mengesahkan JSON, serta memaparkannya sebagai pokok. Dokumen dalam sebarang saiz dibaca sebagai aliran (stream).",
+            {
+              "points": [
+                "Inden dengan 2 atau 4 ruang, satu tab, atau sebarang jumlah ruang.",
+                "Lebih banyak pilihan: isih kunci, senarai pendek pada satu baris, ruang selepas titik bertindih, cara baris berakhir, pemutus baris di hujung, huruf bukan-ASCII sebagai \\uXXXX.",
+                "Pembacaan longgar menerima komen (// dan /* */) dan koma di hujung, serta menulis JSON yang ketat.",
+                "Perubahan: buang nilai null, buang nilai kosong dan seumpamanya, dalam satu langkah.",
+                "Pokok membuka satu tahap pada satu masa dan mencari teks dalam kunci dan nilai."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Menjalankan pertanyaan JSONPath (RFC 9535) pada dokumen: $.store.book[?@.price < 10].title. Hasilnya adalah nilai yang ditemui, laluan kepadanya, atau kedua-duanya.",
+            "Pertanyaan yang salah akan dinyatakan bersama lokasi ralat tersebut."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Pengesah JSON Schema",
+          "body": [
+            "Menyemak dokumen berdasarkan Skema JSON (draf 4 hingga 2020-12). Skema dimasukkan ke dalam panel di bawah input. Setiap perkara yang tidak sepadan akan disenaraikan bersama lokasinya dan peraturan yang dilanggar.",
+            "Bagi banyak fail, setiap satu disemak berdasarkan skema yang sama. $ref ke fail lain atau ke alamat tidak akan diikuti."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Penjana skema dan JSON ke TypeScript",
+          "body": [
+            "Daripada sampel JSON, penjana skema menulis Skema JSON yang sepadan, dan JSON ke TypeScript menulis deklarasi jenisnya (antara muka atau jenis, dieksport atau tidak, readonly atau tidak, di bawah nama yang anda berikan)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Menukar YAML kepada JSON dan JSON kepada YAML. YAML dibaca melalui skema terasnya, dengan sauh (anchors) dan gabungan (merges) diikuti; sebarang ralat akan dinyatakan bersama lokasinya."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Menukar jadual kepada JSON dan sebaliknya. Pemisah ditentukan daripada baris pertama, atau dipilih (koma, titik koma, tab, paip); baris pertama boleh menjadi pengepala; nombor dan true / false boleh dikesan.",
+            "\"Jadual\" menunjukkan CSV dalam baris dan lajur, bagi fail dalam sebarang saiz."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Pemformat XML / HTML",
+          "body": [
+            "Memformat, mengecilkan (minify) dan menyemak XML dan HTML. XML dibaca secara ketat: tag yang tidak ditutup akan dinyatakan bersama lokasinya. HTML dibaca sebagaimana pelayar web menerimanya."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Pemformat SQL",
+          "body": [
+            "Menyusun kenyataan, satu klausa setiap baris, atau meletakkannya dalam satu baris; kata kunci dalam huruf besar, huruf kecil atau seperti yang ditulis. Ia tidak memerlukan dialek dan tidak menyemak maksud kenyataan tersebut."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Membandingkan dua teks baris demi baris, dua dokumen JSON berdasarkan kandungannya, atau dua folder fail demi fail. Teks pertama dimasukkan ke dalam input, teks kedua dalam panel di bawahnya.",
+            {
+              "points": [
+                "Bersebelahan menandakan perkataan yang berubah di dalam satu baris; Unified adalah patch seperti yang ditulis oleh diff -u.",
+                "Abaikan huruf besar/kecil, ruang kosong, baris kosong, digit atau tanda baca.",
+                "Untuk JSON, urutan kunci dan susun atur tidak dianggap sebagai perbezaan; hasilnya boleh menjadi JSON Patch (RFC 6902).",
+                "Folder: fail mana yang hanya ada satu, yang sama, yang berbeza; Bandingkan pada baris membuka pasangan sebagai teks."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Pratonton Markdown",
+          "body": [
+            "Menunjukkan Markdown sebagaimana ia akan kelihatan, dan memberikan HTML untuk disalin atau disimpan: CommonMark dengan jadual, coretan, senarai tugasan dan nota kaki.",
+            {
+              "points": [
+                "HTML yang ditaip di dalam Markdown dipaparkan sebagai teks, bukan dijalankan.",
+                "Gambar yang sepatutnya diambil dari rangkaian tidak akan diambil: keterangan dan alamatnya dipaparkan sebagai ganti. Gambar yang dibawa dalam teks (data:) dipaparkan.",
+                "Pautan yang anda klik akan dibuka dalam pelayar sistem."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jana",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Menghasilkan UUID versi 1, 3, 4, 5, 6 dan 7 (RFC 9562), sebanyak yang anda minta, ditulis dengan tanda sempang, biasa, sebagai URN atau dalam kurungan. \"Asingkan\" memberitahu versi setiap UUID dan masa atau nama di dalamnya."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 dan SHA-512 bagi teks atau fail, beberapa sekali gus, ditulis sebagai hex atau Base64. Fail dalam sebarang saiz di-hash semasa ia dibaca.",
+            {
+              "points": [
+                "Semak terhadap: tampal jumlah semakan, atau baris fail .sha256; ia akan memberitahu sama ada sepadan atau tidak.",
+                "Kunci HMAC: ringkasan menjadi HMAC dengan kunci tersebut.",
+                "Setiap baris berasingan: satu ringkasan untuk setiap baris teks.",
+                "Fail: ringkasan disenaraikan bersebelahan fail mereka; Salin semua memberikannya sebagaimana sha256sum menulisnya."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Kata laluan dan rahsia",
+          "body": [
+            "Menghasilkan kata laluan daripada jenis huruf yang anda pilih, frasa laluan daripada perkataan, dan bait rawak sebagai hex atau Base64, daripada nombor rawak sistem operasi. Setiap satu menyatakan berapa bit entropi yang dimilikinya. Sebaik sahaja sesuatu dihasilkan, menukar pilihan akan menghasilkannya semula.",
+            "Frasa laluan adalah perkataan yang diambil daripada senarai perkataan panjang Electronic Frontier Foundation (7776 perkataan Inggeris), setiap satu mempunyai kemungkinan yang sama: enam perkataan adalah sekitar 77 bit."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Kunci dan sijil",
+          "body": [
+            "Lima perkara, dipilih di bahagian atas:",
+            {
+              "points": [
+                "Kunci baharu: RSA, EC P-256 / P-384 / P-521 atau Ed25519, diberikan dalam setiap bentuk yang diterima program (PKCS #8, bentuk lama, OpenSSH; kunci awam sebagai PEM dan sebagai baris untuk authorized_keys), dikunci dengan frasa laluan jika anda memberikannya.",
+                "Permintaan sijil: CSR untuk kunci baharu atau yang anda tampal, dengan subjek dan nama-nama lain (SAN).",
+                "Sijil tandatangan sendiri: perkara yang sama, ditandatangani dengan kuncinya sendiri, untuk jumlah hari tertentu; \"Ia boleh menandatangani sijil lain\" menjadikannya sebagai pihak berkuasa anda sendiri.",
+                "Tandatangan dengan CA anda sendiri: tampal permintaan, sijil pihak berkuasa anda dan kuncinya; anda akan mendapat sijil yang ditandatangani dan pihak berkuasa selepasnya.",
+                "Baca dan Convert: tampal atau buka apa sahaja (PEM, DER, kunci OpenSSH, fail .pfx atau .p12, dikunci atau tidak). Ia akan menyatakan apa yang ditemui dan sama ada kunci tersebut adalah kunci sijil tersebut, serta menulis setiap perkara dalam bentuk yang lain. Kunci dan sijilnya boleh disimpan bersama sebagai .pfx."
+              ]
+            },
+            {
+              "note": "Semuanya dilakukan pada komputer ini. Kunci berada di dalam tab sehingga Musnahkan, dan tidak di tempat lain melainkan anda menyimpannya."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Periksa",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Penguji Regex",
+          "body": [
+            "Mencuba ungkapan nalar JavaScript pada teks: padanan dengan kumpulan dan kedudukannya, atau teks dengan padanan yang digantikan. Flag yang tersedia ialah g, i, m, s, u, y.",
+            "Corak dijalankan di luar tetingkap, dan corak yang berjalan lebih daripada 20 saat akan dihentikan."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Penjelasan Cron",
+          "body": [
+            "Menyatakan dalam perkataan maksud jadual dan bila ia berjalan: crontab (lima medan, enam dengan saat, tujuh dengan tahun), Quartz, AWS EventBridge cron() dan rate(), serta systemd OnCalendar. Satu jadual bagi satu baris.",
+            {
+              "points": [
+                "Jalanan seterusnya, dan jalanan sebelumnya apabila diminta, dalam zon masa yang anda pilih.",
+                "Hari dalam seminggu dinombor bermula dari 0 untuk Ahad, atau dari 1 seperti penomboran Quartz, mengikut pilihan anda. Baris dengan saat yang juga mempunyai tahun, L, W atau # ialah baris Quartz, dan dibaca mengikut cara Quartz dengan sendirinya.",
+                "Jadual yang sama dalam bentuk lain, untuk disalin atau ditambah ke input.",
+                "Pembina membina jadual dengan memilih setiap medan; \"Tukar dalam pembina\" akan memasukkan jadual yang ditaip ke dalamnya."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Setem masa Unix",
+          "body": [
+            "Membaca saat, satu setiap baris: saat, milisaat, mikrosaat atau nanosaat sejak 1970, atau tarikh yang ditulis dalam cara biasa (ISO 8601, seperti yang ditulis oleh e-mel dan HTTP, seperti yang ditulis oleh Git). Setiap satu dinyatakan dalam zon masa yang anda pilih, dalam UTC, dan sebagai setiap jenis cap masa."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Penghurai URL",
+          "body": [
+            "Meleraikan URL sebagaimana pelayar membacanya: skema, pengguna, hos (dengan bentuk Unicode apabila ia ditulis dalam punycode), port, laluan, setiap parameter pertanyaan yang dinyahkod, dan fragmen."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Penyahkod Sijil",
+          "body": [
+            "Membaca sijil X.509 daripada PEM atau DER dan menyatakan segala-galanya di dalamnya: subjek, pengeluar, kesahan, nama yang ditujui, kuncinya, sambungannya dan cap jarinya.",
+            "Ia membaca; ia tidak menilai sama ada sijil tersebut boleh dipercayai. Untuk sijil yang dipaparkan oleh laman web, dan sama ada komputer ini mempercayainya, gunakan Rangkaian → Sijil Laman Web."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Penampil Hex",
+          "body": [
+            "Memaparkan bait fail dalam sebarang saiz, atau teks yang ditampal: kedudukan setiap baris, bait, dan bait yang sama sebagai huruf.",
+            {
+              "points": [
+                "Pergi ke kedudukan yang ditulis sebagai 0x1F4, 1F4h atau 500.",
+                "Cari bait (DE AD BE EF) atau teks (UTF-8, atau UTF-16 dalam kedua-dua arah), ke hadapan dan ke belakang.",
+                "Klik bait: bahagian sisi menunjukkan apa yang ada sebagai nombor dalam setiap saiz, dalam mana-mana aturan bait, sebagai aksara dan sebagai masa.",
+                "Pilih dengan menyeret, Shift atau kekunci anak panah; salin pilihan sebagai hex, sebagai kod, sebagai Base64 atau sebagai teks, atau simpan ke fail."
+              ]
+            },
+            {
+              "note": "Ia hanya melihat: tiada apa-apa yang diubah dalam fail."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rangkaian",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Tempat alat rangkaian berada",
+          "body": [
+            "Empat alat ini adalah satu-satunya bahagian Dev yang dalam talian, dan ia pergi ke tempat yang anda tujukan.",
+            {
+              "points": [
+                "Hanya alamat yang anda taip sahaja yang dihubungi, dan hanya apabila anda menekan butang. Tidak pernah di latar belakang.",
+                "Apa yang dihantar adalah apa yang anda tulis. Satu-satunya perkara yang ditambah kepada permintaan ialah User-Agent yang sama untuk semua orang (\"Syntelab Creative\"), melainkan anda memberikan User-Agent anda sendiri.",
+                "Tiada kuki disimpan, tiada maklumat tentang anda atau komputer dihantar, dan tiada apa yang ditaip disimpan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Klien HTTP",
+          "body": [
+            "Menghantar satu permintaan yang ditulis secara manual: kaedah, alamat, pengepala (satu setiap baris: Nama: nilai) dan badan, ditaip atau diambil daripada fail dalam sebarang saiz.",
+            {
+              "points": [
+                "Jawapan: nombornya, berapa lama masa yang diambil (keseluruhan, dan sehingga bait pertama), saiznya, pengepalanya, dan badannya, diwarnakan mengikut jenis dan disusun apabila ia adalah JSON. Badan yang bukan teks (gambar, PDF) dipaparkan seadanya, dan disimpan sebagaimana ia diterima.",
+                "Ikuti penghalaan semula, atau lihat jawapan pertama sebagaimana adanya. Alamat yang dihantar permintaan disenaraikan.",
+                "Semak sijil berbanding apa yang dipercayai oleh komputer ini; matikan hanya untuk pelayan anda sendiri.",
+                "\"Hantar, jawapan ke fail\" menulis badan dalam sebarang saiz terus ke cakera, dengan kemajuan dan Berhenti.",
+                "\"Salin sebagai curl\" memberikan permintaan yang sama sebagai arahan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Carian DNS",
+          "body": [
+            "Meminta pelayan nama untuk rekod nama: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, beberapa sekali gus. Alamat memberikan namanya (PTR).",
+            "Soalan dihantar ke pelayan nama yang ditetapkan untuk digunakan oleh komputer, ke pelayan awam (1.1.1.1, 8.8.8.8, 9.9.9.9), ke penyelesai melalui HTTPS (Cloudflare, Google), atau ke pelayan yang anda taip."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Semakan Port",
+          "body": [
+            "Memberitahu sama ada port hos menerima sambungan TCP: satu, beberapa, atau julat sehingga semua 65 535 (22, 80, 443, 8000-8100). Setiap satu adalah terbuka, tertutup, atau tanpa jawapan dalam masa yang anda berikan.",
+            {
+              "note": "Cuba hanya hos yang milik anda, atau yang boleh anda uji."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Sijil Laman Web",
+          "body": [
+            "Menunjukkan sijil yang diberikan oleh laman web apabila sambungan selamat dibuat: untuk siapa ia disediakan, siapa yang menandatanganinya, berapa hari yang tinggal, sama ada komputer ini mempercayainya dan mengapa tidak, versi TLS dan sifer. Hanya jabat tangan (handshake) dilakukan: tiada permintaan dihantar.",
+            {
+              "points": [
+                "Tulis example.com, example.com:8443 atau alamat web.",
+                "Pelayan mel dan FTP bermula dalam bentuk teks biasa dan diminta untuk beralih ke TLS (STARTTLS): dipilih melalui port (25, 587, 143, 110, 21) atau secara manual.",
+                "\"Semua\" menunjukkan semua yang dinyatakan oleh sijil; \"PEM\" memberikannya untuk disalin atau disimpan."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tetapan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Tetapan Dev",
+          "body": [
+            "Fail → Tetapan membuka Tetapan program pada bahagian Dev.",
+            {
+              "points": [
+                "Buka setiap alat dalam tab tersendiri, atau dalam tab yang dipilih.",
+                "Buka tab baharu pada alat yang digunakan terakhir, atau pada halaman pertama.",
+                "Tetapkan semula pilihan setiap alat, dan pin, seperti asal program."
+              ]
+            },
+            "Menu klik kanan Windows Explorer, bahasa, tema dan kekunci berada dalam Tetapan program secara keseluruhan."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Mengenai Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Mengenai Dev",
+          "body": [
+            "Dev ialah aplikasi Syntelab Creative untuk pembangun: alat yang mengekod dan menyahkod, memformat dan menyemak, menukar satu bentuk data kepada bentuk lain, dan mencerakinkan apa yang sukar dibaca dalam bentuk asalnya.",
+            "Segala-galanya dilakukan pada komputer ini. Tiada apa yang anda taip, tampal atau buka dalam alat yang disimpan atau dihantar ke mana-mana. Tiada had diletakkan pada saiz atau bilangan fail: hadnya adalah memori dan cakera komputer.",
+            "Ia adalah baharu dan masih dalam pembinaan. Jika terdapat kekurangan untuk kerja anda, beritahu kami melalui Bantuan → Maklum balas."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Teknologi pembinaan Dev",
+          "body": [
+            {
+              "points": [
+                "Editor: CodeMirror, https://codemirror.net . Lesen MIT. Hak Cipta (C) 2018-2021 oleh Marijn Haverbeke dan lain-lain.",
+                "Pembacaan dan pewarnaan JSON dalam editor: @codemirror/lang-json, https://github.com/codemirror/lang-json , dengan @codemirror/language dan @lezer/highlight. Lesen MIT. Hak Cipta (C) 2018-2021 oleh Marijn Haverbeke dan lain-lain.",
+                "Pembacaan dan pewarnaan YAML, XML, HTML dan SQL dalam editor: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (dengan @codemirror/lang-css dan @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Lesen MIT. Hak Cipta (C) 2018-2024 oleh Marijn Haverbeke dan lain-lain.",
+                "Menyemak dokumen berdasarkan Skema JSON: jsonschema, https://github.com/Stranger6667/jsonschema . Lesen MIT. Hak cipta (c) 2020-2026 Dmitry Dygalo. Ia dibina tanpa bahagian rangkaiannya: Dev tidak pernah mengambil skema.",
+                "Corak JSONPath (padanan dan carian): regex, https://github.com/rust-lang/regex . Lesen MIT atau Apache-2.0. Hak cipta (c) 2014 Pembangun Projek Rust.",
+                "Membaca YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Lesen MIT atau Apache-2.0. Hak cipta (c) 2015 Chen Yuheng, Hak cipta (c) 2023 Ethiraric. Penulisan YAML dilakukan oleh Dev sendiri.",
+                "Membandingkan dua teks (Diff): similar, https://github.com/mitsuhiko/similar . Lesen Apache-2.0. Penulis: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Lesen MIT atau Apache-2.0. Hak cipta (c) 2014-2026 Alex Crichton.",
+                "Ringkasan alat Hash dan tandatangan token: sha2, sha1 dan md-5, https://github.com/RustCrypto/hashes . Lesen MIT atau Apache-2.0. Hak cipta (c) 2006-2009 Graydon Hoare, Hak cipta (c) 2009-2013 Mozilla Foundation, dan pembangun RustCrypto.",
+                "Tarikh, masa dan zon masa (setem masa Unix, penjelasan Cron): jiff, https://github.com/BurntSushi/jiff , dengan zon masa daripada pangkalan data IANA. Lesen Unlicense atau MIT. Hak cipta (c) 2015 Andrew Gallant.",
+                "Melerai URL: url dan idna, https://github.com/servo/rust-url . Lesen MIT atau Apache-2.0. Hak cipta (c) 2013-2025 Pembangun rust-url.",
+                "Membaca sijil X.509: x509-parser, https://github.com/rusticata/x509-parser . Lesen MIT atau Apache-2.0. Hak cipta (c) 2017 Pierre Chifflier.",
+                "Penguji regex menjalankan ungkapan nalar JavaScript, dalam enjin WebView yang digunakan oleh program (Microsoft Edge WebView2 pada Windows); tiada pustaka tambahan digunakan untuk tujuan ini.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Lesen MIT atau Apache-2.0. Hak Cipta (c) 2018 Sam Rijs, Alex Crichton dan penyumbang.",
+                "UUIDs: uuid, https://github.com/uuid-rs/uuid . Lesen Apache-2.0 atau MIT. Hak Cipta (c) 2014 The Rust Project Developers, Hak Cipta (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Bait rawak untuk kata laluan, rahsia dan UUID, daripada sistem operasi: getrandom, https://github.com/rust-random/getrandom . Lesen MIT atau Apache-2.0. Hak Cipta (c) 2018-2025 The rust-random Project Developers, Hak Cipta (c) 2014 The Rust Project Developers.",
+                "Kunci dan tandatangan RSA: rsa, https://github.com/RustCrypto/RSA , dengan num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Lesen MIT atau Apache-2.0. Hak Cipta (c) RustCrypto Developers dan dignifiedquire; Hak Cipta (c) 2014 The Rust Project Developers.",
+                "Kunci dan tandatangan lengkung NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , dengan ecdsa, elliptic-curve dan crypto-bigint yang diperlukan. Lesen Apache-2.0 atau MIT. Hak Cipta (c) 2020-2023 RustCrypto Developers.",
+                "Kunci dan tandatangan Ed25519: ed25519-dalek dan curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Lesen BSD 3-Clause. Hak Cipta (c) 2017-2019 isis agora lovecruft; Hak Cipta (c) 2016-2021 isis agora lovecruft dan Henry de Valence. Hak cipta terpelihara.",
+                "Format kunci, permintaan dan sijil ditulis dalam (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER dan PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Lesen Apache-2.0 atau MIT. Hak Cipta (c) 2020-2023 The RustCrypto Project Developers.",
+                "Fail kunci OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , dengan bcrypt-pbkdf, aes, ctr, chacha20 dan cipher serta hash RustCrypto lain yang diperlukan untuk mengunci kunci ( https://github.com/RustCrypto ). Lesen Apache-2.0 atau MIT. Hak Cipta (c) 2021-2024 Pembangun Projek RustCrypto.",
+                "Fail PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , dengan pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 dan scrypt daripada RustCrypto yang diperlukan. Lesen MIT atau Apache-2.0. Hak Cipta (c) Dmitry Pankratov; Hak Cipta (c) Pembangun Projek RustCrypto.",
+                "Nombor rawak yang digunakan untuk membuat kunci, diambil daripada sistem operasi: rand_core, https://github.com/rust-random/rand . Lesen MIT atau Apache-2.0. Hak Cipta 2018 Pembangun projek Rand, Hak Cipta (c) 2014 Pembangun Projek Rust.",
+                "Klien HTTP: ureq, https://github.com/algesten/ureq . Lesen MIT atau Apache-2.0. Hak Cipta (c) 2019 Martin Algesten.",
+                "Sambungan selamat (TLS) bagi klien HTTP dan \"Sijil Laman Web\": rustls, https://github.com/rustls/rustls , lesen Apache-2.0, ISC atau MIT, Hak Cipta (c) 2016 Joseph Birr-Pixton; dengan rustls-webpki, https://github.com/rustls/webpki , lesen ISC, Hak Cipta 2015 Brian Smith; ring, https://github.com/briansmith/ring , lesen Apache-2.0 dan ISC; webpki-roots, https://github.com/rustls/webpki-roots , lesen CDLA-Permissive-2.0.",
+                "Sama ada komputer ini mempercayai sesuatu sijil: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Lesen MIT atau Apache-2.0. Hak Cipta (c) 2022 1Password.",
+                "Membaca Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Lesen MIT. Hak Cipta 2015 Google Inc. Semua hak terpelihara.",
+                "Membaca fail yang ditulis dalam pengekodan selain UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , lesen Apache-2.0 atau MIT (dengan BSD-3-Clause untuk datanya), Hak Cipta Mozilla Foundation; dan chardetng, https://github.com/hsivonen/chardetng , lesen Apache-2.0 atau MIT, Hak Cipta Mozilla Foundation.",
+                "Perkataan untuk frasa laluan: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , oleh Electronic Frontier Foundation, digunakan di bawah lesen Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Senarai tersebut digunakan seadanya.",
+                "Membuka kunci kunci dengan cara lama OpenSSL: aes, cbc dan des daripada RustCrypto, https://github.com/RustCrypto . Lesen MIT atau Apache-2.0. Hak Cipta (c) Pembangun RustCrypto.",
+                "Ditulis untuk Dev, tanpa perpustakaan: carian DNS (soalan ditulis dan jawapan dibaca mengikut RFC 1035) dan semakan port.",
+                "Ditulis untuk Dev, tanpa perpustakaan: membaca dan menulis JSON sebagai strim, JSONPath (RFC 9535), Base64, pengekodan peratus, rujukan aksara HTML (namanya adalah mengikut piawaian HTML, https://html.spec.whatwg.org ), pelarian rentetan, membaca JSON Web Tokens, menulis YAML, CSV dua hala, membaca jadual cron, pemformat XML dan HTML, serta pemformat SQL."
+              ]
+            },
+            "Apa yang dikongsi dengan bahagian lain program ini ada di bawah \"Tentang Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Apa yang Dev belum boleh lakukan",
+          "body": [
+            {
+              "points": [
+                "Tandatangan token hanya disemak apabila ia dibuat dengan rahsia dikongsi (HS256, HS384, HS512).",
+                "Pengesah JSON Schema menyatakan apa yang tidak sepadan dalam bahasa Inggeris, seperti mana perpustakaannya, dan tidak mengikuti $ref ke fail atau alamat lain.",
+                "Pemformat SQL tidak meminta dialek dan tidak menyemak maksud kenyataan: ia hanya memberitahu tentang rentetan atau komen yang tidak pernah berakhir.",
+                "YAML, dan JSON yang menjadi YAML atau CSV, disimpan sepenuhnya dalam memori semasa ditukar; CSV yang menjadi JSON, XML, HTML dan SQL diproses semasa dibaca, tidak kira saiznya.",
+                "Jadual CSV yang dilihat adalah dalam mod baca sahaja: tiada apa yang ditaip di dalamnya, dan tiada apa yang disalin daripadanya lagi.",
+                "Diff menyimpan enam belas bait bagi setiap baris daripada dua fail tersebut, bukan fail itu sendiri; dua dokumen JSON disimpan sepenuhnya, kerana ia ditulis semula sebelum dibandingkan.",
+                "Satu rentetan baris yang tiada baris muncul tepat sekali di kedua-dua belah dibandingkan sebaik mungkin dalam masa satu saat: perbezaan yang dinyatakan adalah benar, walaupun tidak selalunya yang paling sedikit.",
+                "Diff tidak membandingkan cara baris berakhir (CRLF atau LF).",
+                "Dua folder dibandingkan melalui bait fail-failnya; fail dipadankan mengikut nama mereka, huruf demi huruf.",
+                "Apa yang dinyatakan oleh alat Periksa adalah JSON, dengan namanya dalam bahasa Inggeris.",
+                "Penguji regex menjalankan ungkapan nalar JavaScript, bukan PCRE dan bukan Rust; ia berfungsi pada teks yang boleh dipaparkan, bukan pada fail yang disimpan dalam cakera; corak yang berjalan lebih daripada 20 saat akan dihentikan.",
+                "Dekoder sijil membaca sijil dan tidak menyemak sama ada ia boleh dipercayai: bukan rantaiannya, bukan tandatangannya, dan bukan sama ada ia telah dibatalkan.",
+                "Fail yang merupakan teks dalam pengekodan selain UTF-8 dibaca apabila saiznya cukup kecil untuk dipaparkan; fail yang lebih besar daripada itu, yang diproses dari cakera, mestilah dalam format UTF-8.",
+                "Fail yang ditarik masuk ke dalam alat adalah sehingga 16 MB; tetingkap tidak diberitahu di mana lokasi fail yang ditarik masuk pada cakera, jadi fail yang lebih besar dibuka menggunakan Buka fail.",
+                "Frasa laluan hanya terdiri daripada perkataan bahasa Inggeris.",
+                "Penjelasan Cron: pembina membuat jadual crontab (lima medan, atau enam dengan saat); jadual dengan L, W, # atau ? tidak boleh dimasukkan ke dalamnya. Masa bagi kadar AWS rate() tidak dapat dinyatakan, kerana ia dikira dari masa peraturannya dibuat. Bagi systemd, acara kalendar biasa dibaca; bukan pecahan saat atau senarai hari yang dikira dari akhir bulan.",
+                "Penampil Hex hanya melihat: tiada apa-apa yang diubah dalam fail. Lajur teks menunjukkan ASCII atau huruf Eropah Barat, bukan abjad lain; bait atau teks dicari, bukan corak.",
+                "Kunci dan sijil: kunci adalah RSA, lengkung P-256, P-384 dan P-521, serta Ed25519; yang lain (DSA, secp256k1, X25519) tidak dibaca. Kunci yang dikunci dengan cara lama OpenSSL dibuka apabila sifernya adalah AES atau 3DES. Fail .pfx mengandungi satu kunci bersama sijil-sijilnya. Membuat kunci RSA yang sangat besar mengambil masa dan tidak boleh dihentikan di tengah jalan. Pustaka yang membuat kunci RSA mempunyai kelemahan yang diketahui terhadap penyerang yang boleh mengira masa banyak tandatangan melalui rangkaian (RUSTSEC-2023-0071): di sini kunci dibuat dan ditulis pada komputer anda, dan tiada apa-apa yang ditandatangani untuk orang lain.",
+                "Klien HTTP: HTTP/1.1 (bukan HTTP/2 atau 3); tiada kuki disimpan antara permintaan; borang beberapa bahagian (multipart) tidak dibina untuk anda; jawapan yang lebih besar daripada 16 MB, atau jawapan yang bukan teks, ditulis ke fail dengan menghantar semula permintaan tersebut.",
+                "Carian DNS menunjukkan tandatangan (DNSSEC) dan tidak menyemaknya. Semakan port hanya mencuba TCP: port UDP yang senyap tidak dapat dibezakan daripada port yang tertutup. Sijil laman web tidak bertanya sama ada sijil telah dibatalkan.",
+                "Menu klik kanan adalah untuk Windows Explorer; pada Windows 11 entrinya berada di bawah \"Tunjukkan lebih banyak pilihan\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

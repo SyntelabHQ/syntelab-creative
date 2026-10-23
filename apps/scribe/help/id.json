@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Teks dan berkas",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editor",
+          "body": [
+            "Scribe adalah editor teks biasa dengan alat-alat di sampingnya. Setiap teks memiliki tab sendiri; teks berada di tengah, panel alat di sisi, dan baris informasi di bawahnya.",
+            "Saat dibuka, Scribe terlebih dahulu menanyakan apa yang ingin Anda lakukan: menghitung kata, mencari dan mengganti teks, menghapus duplikat, membandingkan dua teks, mengurutkan baris, membalik teks, atau membuat teks pengisi maupun teks acak. Pilihan akan membuka teks bersama alat yang sesuai di sampingnya; “Teks kosong” membuka teks tanpa alat, sedangkan teks yang terakhir dibuka tercantum di bawah.",
+            {
+              "points": [
+                "Berkas → Teks baru (Ctrl+N) membuat teks kosong.",
+                "Berkas → Buka (Ctrl+O) membuka satu atau beberapa berkas, masing-masing di tab tersendiri. Semua berkas teks dapat dibuka: .txt, .md, .csv, .log, .srt, kode sumber, dan lainnya.",
+                "Sunting → Urungkan (Ctrl+Z) dan Ulangi (Ctrl+Y) menelusuri semua perubahan pada teks; tindakan alat atau resep dihitung sebagai satu langkah.",
+                "Sunting → Cari dan ganti (Ctrl+F) membuka bilah di editor untuk berpindah dari satu hasil ke hasil berikutnya.",
+                "Sunting → Pilih semua (Ctrl+A)."
+              ]
+            },
+            "Baris di bawah teks menunjukkan posisi kursor, jumlah teks yang dipilih, jumlah baris, kata dan karakter, encoding berkas, serta jenis akhiran barisnya.",
+            "Berkas yang diseret ke jendela juga akan terbuka, masing-masing sebagai teks baru dengan nama berkas, encoding, dan akhiran barisnya. Program menerima isi berkas, tetapi tidak mengetahui lokasinya di disk, jadi saat disimpan Anda akan diminta menentukan lokasi. Berkas di atas 64 MB harus dibuka melalui Berkas → Buka.",
+            "Teks baru yang masih kosong menampilkan daftar teks yang terakhir dibuka; klik salah satunya untuk membukanya. “Hapus daftar” mengosongkan daftar tersebut. Daftar hanya disimpan di komputer ini."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Simpan dan Simpan sebagai",
+          "body": [
+            "Perubahan tidak memengaruhi berkas di disk sampai Anda menyimpannya. Titik pada tab menandakan teks memiliki perubahan yang belum disimpan; saat tab seperti itu ditutup, program akan bertanya lebih dahulu.",
+            {
+              "points": [
+                "Simpan (Ctrl+S) menulis teks ke berkasnya. Untuk teks baru, Anda akan diminta menentukan lokasi.",
+                "Simpan sebagai (Ctrl+Shift+S) menulis teks ke berkas baru dan mengganti isi tab dengan berkas tersebut. Semua perubahan masih dapat diurungkan; berkas lama tetap seperti semula."
+              ]
+            },
+            "Berkas ditulis seluruhnya atau tidak sama sekali: jika penulisan gagal, berkas yang sudah ada tetap utuh.",
+            {
+              "note": "Berkas disimpan sesuai cara berkas itu dibuka: dengan encoding dan akhiran baris yang sama. Teks yang diketik di Windows maupun Linux tetap menggunakan format asalnya."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Encoding dan akhiran baris",
+          "body": [
+            "Encoding menentukan cara huruf disimpan sebagai byte. Scribe membaca informasi encoding yang tercantum di berkas dan menebaknya jika tidak tersedia. Kebanyakan berkas saat ini menggunakan UTF-8; berkas lama dari Eropa Tengah sering menggunakan windows-1250.",
+            {
+              "points": [
+                "Jika huruf tampak salah (Ã£ menggantikan ă atau berubah menjadi kotak), pilih Berkas → “Baca ulang dengan encoding lain”, lalu pilih encoding yang digunakan untuk menulis berkas.",
+                "Untuk menyimpan dengan encoding lain, pilih encoding di baris bawah teks, lalu simpan. Jika encoding tersebut tidak dapat menulis karakter dalam teks, Scribe akan menyebutkan karakternya dan tidak menulis berkas.",
+                "Akhiran baris (Windows CRLF, Linux dan macOS LF, Mac lama CR) dapat diubah di tempat yang sama. Scribe memberi tahu jika berkas menggunakan akhiran campuran; saat disimpan, semua baris akan diseragamkan."
+              ]
+            },
+            "Format awal untuk teks baru ditentukan di Pengaturan."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Tampilan teks",
+          "body": [
+            {
+              "points": [
+                "Semua opsi di menu Tampilan berfungsi sebagai sakelar: jika aktif, item ditampilkan; jika nonaktif, item disembunyikan.",
+                "Teks: Lipat baris panjang (Alt+Z)—baris yang lebih panjang daripada jendela dilanjutkan di bawah tanpa mengubah isi teks; Nomor baris; Hasil di samping teks.",
+                "Di samping teks: Alat (Ctrl+T), Resep, Statistik. Panel hanya menampilkan bagian yang diaktifkan; jika semuanya nonaktif, panel tidak muncul.",
+                "Alat yang ditampilkan: setiap grup (cari dan ganti, baris, huruf besar/kecil, pembersihan, penulisan teks) dapat disembunyikan dari panel. Alat yang dipilih dari menu Format atau Alat tetap akan ditampilkan; grup dan bagiannya akan muncul kembali secara otomatis.",
+                "Panah ganda di bagian atas panel melipatnya menjadi bilah tipis di tepi. Setiap bagian tetap dapat dibuka dengan sekali klik; seret tepinya untuk memperlebar atau mempersempit panel.",
+                "Jenis dan ukuran huruf diatur melalui Pengaturan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Berkas sangat besar",
+          "body": [
+            "Berkas di atas 64 MB tidak dimuat ke editor. Berkas akan terbuka di tab yang menampilkan 500 baris setiap kali dan membacanya langsung dari berkas saat Anda berpindah. Berkas berukuran gigabyte dapat dibuka dalam waktu yang diperlukan untuk membacanya sekali.",
+            {
+              "points": [
+                "Gunakan “Halaman sebelumnya” dan “Halaman berikutnya” untuk berpindah; masukkan nomor baris lalu klik “Buka” untuk menuju baris tertentu.",
+                "Cari akan memeriksa seluruh berkas dengan opsi yang sama seperti di tempat lain, lalu mencantumkan lokasi hasilnya. Klik salah satunya untuk menuju baris terkait. Hasil yang banyak ditampilkan bertahap melalui “Cari lagi”.",
+                "“Jalankan resep pada seluruh berkas” menyimpan hasil ke folder pilihan Anda dengan nama yang sama. Berkas itu sendiri tidak diubah.",
+                "“Buka seluruh berkas di editor” tetap memuatnya ke editor agar dapat Anda ubah secara manual. Proses ini mungkin lambat dan memerlukan memori beberapa kali ukuran berkas."
+              ]
+            },
+            {
+              "note": "Berkas dengan dua byte untuk setiap huruf (UTF-16) tidak dapat ditampilkan halaman demi halaman. Resep memuat seluruh berkas ke memori saat dijalankan; batasnya adalah kapasitas memori komputer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alat",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Cara kerja alat",
+          "body": [
+            "Alat-alat tersedia dalam beberapa grup di panel samping teks. Klik alat untuk melihat pilihannya, lalu pilih Terapkan pada teks.",
+            {
+              "points": [
+                "Jika ada teks yang dipilih, alat hanya mengubah pilihan tersebut; jika tidak, alat mengolah seluruh teks. Bagian atas panel menunjukkan cakupannya.",
+                "Di bawah tombol, alat menjelaskan hasilnya: jumlah baris atau lokasi yang diubah.",
+                "Setiap alat dihitung sebagai satu langkah; Urungkan akan membatalkan seluruh langkah tersebut.",
+                "Semua alat juga tersedia melalui menu dan pencarian perintah: alat yang mengubah bentuk teks (baris, huruf besar/kecil, pembersihan) ada di menu Format; alat lainnya ada di menu Alat. Memilih alat dari menu akan membuka panel pada opsi alat tersebut."
+              ]
+            },
+            "Di menu Format, alat yang biasanya memiliki satu pilihan ditampilkan sebagai opsi tersendiri: setiap cara mengubah huruf besar/kecil, jenis tanda kutip, atau membalik teks menjadi perintah yang membuka alat dengan opsi itu sudah dipilih. Jika jendela terlalu sempit untuk menampilkan grup, grup tersebut digantikan satu tombol yang membuka seluruh daftarnya.",
+            "Alat berjalan di komputer ini. Teks tidak dikirim ke mana pun."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Pratinjau hasil sebelum diterapkan",
+          "body": [
+            "Saat alat terbuka, hasil yang akan dibuat ditampilkan di samping teks, dalam panel “Hasil”. Teks tidak berubah sampai Anda memilih Terapkan pada teks. Pratinjau akan diperbarui: ubah opsi atau teks, dan hasilnya dibuat ulang.",
+            {
+              "points": [
+                "Teks dan hasil ditampilkan berdampingan, masing-masing di bawah judul dengan tinggi yang sama agar baris yang bersesuaian sejajar. Keduanya bergulir bersama (klik tombol rantai untuk menonaktifkannya).",
+                "Baris yang akan berubah ditandai; bagian yang berubah diberi warna lebih gelap. Baris yang hanya berpindah dan baris baru memiliki warna masing-masing. Baris yang akan diubah atau dihapus juga ditandai pada teks.",
+                "Di bawah judul ditampilkan ringkasan jumlah perubahan: baris yang diubah, dipindahkan, ditambahkan, atau dihapus; serta jumlah baris dan karakter sebelum maupun sesudahnya.",
+                "Di bawah hasil tercantum baris yang akan dihapus. Klik salah satunya untuk menuju lokasinya di teks.",
+                "Tombol kecil pada panel Hasil: salin, buka sebagai teks baru, bandingkan dengan teks di tab, gulir bersama, pindahkan hasil ke bawah teks, atau sembunyikan hasil. Panel teks memiliki tombol sendiri: urungkan, ulangi, salin, tempel untuk mengganti teks, pilih semua, dan hapus.",
+                "Seret bilah pemisah untuk memberi ruang lebih pada salah satu panel; klik dua kali untuk menyamakan lebarnya kembali."
+              ]
+            },
+            "Setelah diterapkan, panel Hasil menampilkan pesan (“Diterapkan. Teks di sebelah kiri sekarang menampilkan hasilnya.”) dan menawarkan Urungkan serta “Bandingkan dengan teks sebelumnya” untuk melihat perbedaan sebelum dan sesudah. Pratinjau hasil akan muncul kembali setelah teks atau pilihan alat diubah.",
+            {
+              "note": "Tampilan → “Hasil di samping teks” menampilkan atau menyembunyikan panel. Untuk teks sangat panjang (lebih dari dua juta karakter), hasil tidak ditampilkan sebelumnya; terapkan alat lalu gunakan Urungkan untuk membatalkannya."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Ganti semua kecocokan",
+          "body": [
+            "Ganti semua kecocokan sekaligus. Saat Anda mengetik teks yang dicari, Scribe menunjukkan jumlah dan menandai lokasinya dalam teks agar Anda dapat melihat perubahan sebelum menerapkannya.",
+            {
+              "points": [
+                "“Ekspresi reguler”: teks yang dicari berupa pola. Dalam “Ganti dengan”, $1, $2, dan seterusnya mewakili teks yang ditemukan oleh grup pola.",
+                "“Huruf besar/kecil harus cocok”: a dan A dianggap berbeda.",
+                "“Hanya kata utuh”: “kucing” tidak akan ditemukan di dalam “kucingnya”.",
+                "“Pertahankan kapitalisasi teks yang diganti”: mengganti “kucing” dengan “anjing” akan mengubah “Kucing” menjadi “Anjing” dan “KUCING” menjadi “ANJING”."
+              ]
+            },
+            {
+              "points": [
+                "“Pilihan lainnya” → “Isi otomatis…”: teks pengganti dapat memuat penanda yang diisi pada setiap kecocokan. {counter} menghitung 1, 2, 3… ({counter:10} dimulai dari 10, {counter:10:5} bertambah 5); {date} dan {time} menggunakan tanggal dan waktu komputer; {uuid} adalah pengenal; {random} menghasilkan 8 huruf dan angka acak ({random:12} menghasilkan 12 karakter).",
+                "Di bawah teks yang dicari, Scribe juga menunjukkan jumlah baris yang memuat kecocokan dan jumlah teks yang berbeda."
+              ]
+            },
+            "“Ganti beberapa sekaligus” menerapkan daftar pasangan dalam satu langkah. Tulis satu pasangan per baris dengan format: teks yang dicari => teks pengganti. Pasangan dijalankan dari atas ke bawah; setiap pasangan menggunakan hasil pasangan sebelumnya. Jika bagian kedua kosong, teks akan dihapus.",
+            {
+              "note": "Pola tidak dapat membuat program macet: waktu pemrosesan bertambah seiring panjang teks dan tidak lebih cepat daripada itu. Karena alasan ini, pola yang merujuk kembali ke teks yang ditemukan sebelumnya tidak tersedia."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Baris",
+          "body": [
+            {
+              "points": [
+                "Urutkan baris berdasarkan: alfabet sesuai urutan kamus dalam bahasa program atau bahasa pilihan Anda (dalam bahasa Rumania ă berada setelah a; bahasa Swedia menempatkan ä setelah z; bahasa Jerman menempatkannya dekat a); huruf dan angka dengan angka dibandingkan sebagai bilangan (file2 sebelum file10); angka di awal baris; panjang baris; jumlah kata; tanggal di awal baris (05.03.2024, 2024-03-05, dengan atau tanpa waktu); alamat internet; nomor versi (1.2.10 setelah 1.2.9); judul dengan mengabaikan kata sandang di awal; urutan yang Anda tentukan (kecil, sedang, besar); atau tanpa urutan tertentu.",
+                "Baris tanpa nilai untuk diurutkan (tanpa angka atau tanggal, atau nilai yang tidak ada dalam urutan buatan Anda) akan tetap berada di akhir, baik urutan dari terkecil maupun terbesar.",
+                "Pilihan pengurutan lainnya: mulai membandingkan dari kata atau karakter tertentu, atau dari kolom tabel (dengan menentukan bagian pembatas kolom); pertahankan baris pertama sebagai judul; urutkan paragraf, bukan baris; serta rapikan lebih dahulu dengan memangkas spasi, menghapus baris kosong, atau menghapus duplikat.",
+                "Hapus baris duplikat: pertahankan kemunculan pertama, terakhir, atau hapus semua baris berulang (hanya baris yang muncul sekali yang tersisa). Anda dapat mengabaikan perbedaan huruf besar/kecil, spasi di sekitar baris, angka, tanda baca, dan sejumlah karakter di awal atau akhir. Perbandingan dapat menggunakan kolom tertentu atau hanya teks yang cocok dengan pola. Baris kosong dapat dipertahankan, dihapus, atau diringkas seperti baris lainnya.",
+                "Hitung baris berulang: sisakan satu salinan setiap baris dan tulis jumlah kemunculannya di depan. Urutkan dari yang paling sering atau paling jarang muncul, atau pertahankan urutan asal.",
+                "Pertahankan atau buang baris: cari teks pada setiap baris, lalu pertahankan hanya baris yang memuat teks tersebut atau yang tidak memuatnya.",
+                "Balik urutan baris; acak baris.",
+                "Beri nomor pada baris: tentukan nomor awal, pemisah setelah nomor, jumlah nol di depan agar nomornya sejajar, dan apakah baris kosong diberi nomor.",
+                "Baris kosong: hapus semuanya atau sisakan satu jika ada beberapa baris kosong berurutan.",
+                "Gabungkan baris menjadi satu dengan pemisah pilihan Anda; pisahkan menjadi beberapa baris pada setiap koma, titik koma, atau karakter lain. Untuk kolom tempat Anda mengetik pemisah (penomoran, penggabungan, pemisahan, penghitungan), gunakan \t untuk tab karena tombol Tab tidak dapat diketik ke dalam kolom."
+              ]
+            },
+            {
+              "note": "Pilihan yang bergantung pada pilihan lain hanya ditampilkan saat diperlukan, seperti kolom setelah Anda memilih pengurutan berdasarkan kolom. Pilihan yang jarang digunakan tersedia di “Pilihan lainnya”."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Huruf besar/kecil",
+          "body": [
+            "Ubah kapitalisasi: huruf kapital di awal kalimat, kapital di setiap kata, semua huruf kapital, semua huruf kecil, kebalikannya, serta format nama dalam kode: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Kapitalisasi mengikuti aturan setiap aksara, bukan hanya bahasa Inggris.",
+            "Dalam grup Arah, “Balik urutan teks” membalik urutan huruf setiap baris, urutan katanya, atau huruf di setiap kata. “Putar terbalik” membuat teks terbaca dari sisi seberang meja; “Seperti di cermin” juga membalik tanda yang memiliki sisi kiri dan kanan. Huruf dihitung sebagaimana pembaca melihatnya: huruf dengan tanda diakritik tetap dihitung satu."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Pembersihan",
+          "body": [
+            {
+              "points": [
+                "Rapikan spasi: beberapa spasi dijadikan satu; spasi di awal dan akhir baris dihapus.",
+                "Pangkas tepi baris: hapus spasi di kedua ujung, awal, atau akhir.",
+                "Tanda kutip: lurus, Inggris, Rumania, Jerman, atau Prancis.",
+                "Hapus tanda diakritik: ă menjadi a, é menjadi e. Hanya berlaku untuk aksara Latin dan Yunani, tempat huruf tanpa tanda tersebut tetap mewakili huruf yang sama.",
+                "Perbaiki huruf Rumania: ş dan ţ (dengan cedilla, yang diketik oleh keyboard lama) menjadi ș dan ț (dengan koma), yaitu huruf yang digunakan dalam bahasa Rumania.",
+                "Ubah tab menjadi spasi atau spasi menjadi tab dengan menentukan lebar tab.",
+                "Hapus tag HTML: gunakan untuk kode sumber halaman web yang ditempel ke teks. Tag, skrip, dan gaya dihapus; teks yang akan dilihat pembaca dipertahankan. Untuk mengambil halaman dari alamatnya, gunakan alat “Teks halaman web” di bawahnya.",
+                "Teks halaman web: masukkan alamat halaman (example.com/page), lalu pilih “Ambil teks”. Teks yang akan dilihat pembaca ditulis pada posisi kursor tanpa tag, skrip, atau gaya. Ini satu-satunya alat Scribe yang mengakses internet, dan hanya saat Anda memintanya: halaman diambil oleh browser yang terpasang di komputer ini (Microsoft Edge atau Google Chrome), tanpa jendela, cookie, atau sesi masuk Anda; program itu sendiri tidak mengirim apa pun. Halaman yang mengharuskan Anda masuk hanya menampilkan konten yang dapat dilihat orang lain."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Mengembalikan diakritik Rumania",
+          "body": [
+            "Tambahkan kembali ă, â, î, ș, dan ț pada teks bahasa Rumania yang diketik tanpa huruf-huruf tersebut.",
+            {
+              "steps": [
+                "Buka alat ini dalam grup Pembersihan, lalu pilih Terapkan.",
+                "Kata yang hanya memiliki satu bentuk benar akan langsung diperbaiki: “stiu” menjadi “știu”, “informatii” menjadi “informații”.",
+                "Kata yang dapat dibaca dengan beberapa cara (fata, fată, fața, față) dicantumkan di bawah tombol, masing-masing di lokasi kemunculannya. Klik bentuk yang benar.",
+                "Atau centang “Pilih otomatis bentuk yang paling mungkin” sebelum menerapkan. Anda tidak akan diminta memilih; periksa hasilnya setelah itu."
+              ]
+            },
+            "Jika kata-kata di sekitarnya cukup menjelaskan maksud, Scribe akan menentukan bentuknya: “o casa” menjadi “o casă”, “casa mea” tetap, dan “pentru ca” menjadi “pentru că”.",
+            {
+              "note": "Alat ini dibuat khusus untuk Scribe menggunakan daftar kata umum dan akhiran yang selalu memakai diakritik dalam bahasa Rumania. Kata yang tidak dikenal (kata langka atau nama) dibiarkan apa adanya, dan kata yang sudah memakai diakritik tidak diubah. Periksa hasilnya sebelum mengirimkannya."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Menulis teks: pengisi dan acak",
+          "body": [
+            "Alat dalam grup “Buat teks” tidak mengubah teks; alat tersebut menambahkan teks. Hasilnya ditempatkan pada posisi kursor, menggantikan teks yang dipilih.",
+            {
+              "points": [
+                "Teks pengisi: paragraf, kalimat, kata, daftar, judul, atau bagian halaman (judul, paragraf, daftar). Pilih lorem ipsum, bahasa Inggris, Rumania, kosakata perkantoran atau dapur, maupun kata-kata sendiri. Pilihan lainnya: kalimat pendek, sedang, atau panjang; teks biasa, Markdown, HTML, atau JSON; tingkat judul; batas karakter (teks dipotong di akhir kata dan tetap diakhiri sebagai kalimat); serta kata yang dikecualikan.",
+                "Data contoh: nama, alamat email, nomor telepon, alamat jalan, tanggal, atau angka, satu per baris, dari Rumania atau negara berbahasa Inggris. “Baris sesuai pola saya” menyusun baris menggunakan penanda {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid}, dan {row} untuk data yang dibuat—cocok untuk membuat tabel uji dalam sekejap.",
+                "Teks acak: kata sandi (masing-masing setidaknya satu huruf, angka, dan tanda), huruf, angka, heksadesimal, atau pengenal (UUID), dalam satu baris atau banyak baris. Karakter yang mudah tertukar (0 dan O, 1, l, dan I) dapat dikecualikan.",
+                "Seed (di bagian “Pilihan lainnya”) membuat teks pengisi dan data contoh menghasilkan keluaran yang sama untuk angka yang sama; nilai 0 menghasilkan keluaran baru setiap kali."
+              ]
+            },
+            {
+              "note": "Kata sandi dibuat di komputer ini menggunakan generator acak sistem operasi dan tidak dikirim ke mana pun. Alamat email contoh berakhiran example.com, yang tidak menerima email; nomor telepon acak mungkin milik seseorang, jadi jangan meneleponnya."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Resep",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Menyimpan tindakan sebagai resep",
+          "body": [
+            "Resep adalah daftar alat beserta pilihannya, disimpan dengan nama tertentu agar dapat dijalankan kembali dengan sekali klik.",
+            {
+              "steps": [
+                "Terapkan alat yang diinginkan pada teks dengan urutan pilihan Anda.",
+                "Buka “Resep” di bagian atas panel untuk melihat daftar alat yang telah diterapkan.",
+                "Pilih “Simpan sebagai resep”, lalu beri nama.",
+                "Untuk menggunakannya nanti, buka resep dan pilih “Jalankan pada teks”. Semua langkah akan diterapkan; satu kali Urungkan membatalkan semuanya."
+              ]
+            },
+            "Resep disimpan di komputer ini dan tersedia untuk semua teks."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Mengubah resep atau membuat resep baru",
+          "body": [
+            "Pilih “Ubah” pada resep yang terbuka untuk melihat nama dan langkah-langkahnya. Tiap langkah dapat dipindah ke atas atau bawah, dihapus, atau diberi opsi lain; tambahkan alat dari daftar di bawah langkah. Perubahan tidak disimpan sampai Anda memilih “Simpan”.",
+            "“Resep baru” membuat resep kosong yang dapat disusun dengan cara yang sama tanpa terlebih dahulu menerapkan alat pada teks.",
+            {
+              "note": "Alat yang menulis teks (pengisi, acak) tidak dapat dijadikan langkah resep karena resep mengubah teks."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Menjalankan resep pada berkas",
+          "body": [
+            {
+              "steps": [
+                "Buka resep, lalu di bagian “Jalankan pada berkas” tambahkan berkas atau folder (termasuk folder di dalamnya).",
+                "Pilih tujuan hasil: ke folder lain agar berkas sumber tetap seperti semula, atau menimpa berkas sumber.",
+                "Klik Jalankan. Scribe menunjukkan jumlah berkas yang ditulis, yang tidak perlu diubah, serta berkas yang gagal diproses beserta alasannya."
+              ]
+            },
+            "Setiap berkas ditulis menggunakan encoding dan akhiran baris asalnya. Jika hasil disimpan di folder lain, struktur folder tetap dipertahankan dan berkas yang sudah ada tidak pernah ditimpa.",
+            {
+              "note": "Scribe tidak dapat membatalkan tindakan menimpa berkas. Simpan salinan jika berkas tersebut penting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistik, perbandingan, dan folder",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistik",
+          "body": [
+            "Bagian “Statistik” di atas panel menjelaskan isi teks atau pilihan. Tiap bagian dapat dilipat.",
+            {
+              "points": [
+                "Ringkasan: jumlah kata, karakter dengan dan tanpa spasi, kalimat, paragraf, baris, halaman, dan ukuran dalam byte.",
+                "Waktu: perkiraan waktu untuk membaca dalam hati, membacakan, mengetik, dan menulis tangan.",
+                "Kata: jumlah kata yang berbeda beserta proporsinya, jumlah huruf dan suku kata per kata, kata terpanjang dan terpendek, serta jumlah kata menurut panjangnya.",
+                "Kalimat: jumlah kata per kalimat, kalimat pendek, sedang, dan panjang, jumlah pernyataan, pertanyaan, dan seruan, serta kalimat terpanjang dan terpendek.",
+                "Kemudahan membaca: skor 0 (sangat sulit) hingga 100 (sangat mudah), menggunakan rumus yang dirancang untuk bahasa teks. Rumus tersedia untuk bahasa Inggris, Jerman, Spanyol, Prancis, Italia, Belanda, Portugis, dan Rusia. Bahasa lain tidak diberi skor karena rumus dari bahasa berbeda dapat menyesatkan.",
+                "Kata yang paling sering muncul: kata beserta proporsi penggunaannya, serta pasangan dan kelompok tiga kata yang berulang.",
+                "Sisa batas umum: jumlah karakter yang masih tersedia atau sudah terlampaui untuk judul, deskripsi, unggahan singkat, dan lainnya."
+              ]
+            },
+            "Kata dan kalimat dikenali berdasarkan aturan tiap aksara, termasuk bahasa Tionghoa, Jepang, dan Thai yang tidak menggunakan spasi antarkata. Kecepatan membaca, berbicara, mengetik, dan menulis tangan serta jumlah kata per halaman diatur melalui Pengaturan."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Membandingkan dua teks",
+          "body": [
+            {
+              "points": [
+                "Alat → “Bandingkan dengan teks lain”: bandingkan teks di editor dengan teks yang Anda ketik atau tempel.",
+                "Alat → “Bandingkan dengan berkas”: bandingkan teks saat ini di editor dengan berkas pilihan Anda.",
+                "Alat → “Bandingkan dua teks”: tampilkan dua teks yang diketik atau ditempel secara berdampingan.",
+                "Alat → “Bandingkan dua berkas”."
+              ]
+            },
+            "Kedua teks ditampilkan berdampingan. Baris yang hanya ada di teks pertama ditandai sebagai dihapus; baris yang hanya ada di teks kedua ditandai sebagai ditambahkan. Pada baris yang berubah, kata yang berbeda ditandai. Hanya bagian yang berbeda dan beberapa baris di sekitarnya yang ditampilkan; gunakan tombol panah untuk berpindah antarperbedaan.",
+            "Perbedaan huruf besar/kecil, spasi, baris kosong, angka, dan tanda baca dapat diabaikan. “Dalam satu kolom” menampilkan bagian yang dihapus di atas bagian yang ditambahkan, masing-masing dengan tandanya, bukan berdampingan. Di samping jumlahnya, Scribe menunjukkan tingkat kemiripan sebagai proporsi baris yang sama.",
+            "Teks langsung ditampilkan setelah dipilih, bahkan sebelum teks pembanding dipilih. Seret pemisah di antara kedua teks untuk mengatur lebar masing-masing. Saat teks diketik, seret bilah di bawah kotak ke atas atau ke bawah untuk memberi ruang pada kotak teks atau hasil perbandingan. Klik dua kali untuk memulihkan posisi bilah.",
+            "Jika beberapa baris berurutan berubah, setiap baris dipasangkan dengan baris yang paling mirip. Dengan begitu, penambahan atau penghapusan satu baris tidak membuat semua baris sesudahnya tampak berubah.",
+            "“Ketik atau tempel teks” menampilkan kotak di atas setiap kolom. Perbandingan diperbarui saat Anda mengetik; berkas tetap dapat dipilih untuk salah satu sisi."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Mencari dan mengganti dalam folder",
+          "body": [
+            {
+              "steps": [
+                "Alat → “Cari dalam folder” (Ctrl+Shift+F), lalu pilih folder. Folder di dalamnya juga akan dicari.",
+                "Ketik teks yang ingin dicari dengan opsi yang sama seperti “Ganti semua kecocokan”. “Jenis berkas” membatasi pencarian ke ekstensi tertentu (txt, md, csv, dan lainnya).",
+                "Setiap kecocokan ditampilkan beserta barisnya, dikelompokkan menurut berkas. Klik baris untuk membuka berkas di lokasi tersebut.",
+                "Untuk mengganti teks: masukkan teks baru, hilangkan centang pada berkas yang ingin dilewati, lalu pilih “Tulis berkas”."
+              ]
+            },
+            "Tidak ada yang ditulis sebelum Anda memintanya, dan hanya berkas yang masih dicentang yang diubah. Setiap berkas tetap menggunakan encoding dan akhiran baris asalnya.",
+            {
+              "note": "Folder tersembunyi dan folder buatan program (.git, node_modules) dilewati kecuali Anda meminta untuk menyertakannya. Berkas nonteks selalu dilewati."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pengaturan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Pengaturan Scribe",
+          "body": [
+            "Berkas → Pengaturan membuka bagian Scribe di Pengaturan program.",
+            {
+              "points": [
+                "Editor: pilih huruf monospasi atau jenis huruf program, ukurannya, pelipatan baris, nomor baris, serta apakah hasil alat ditampilkan sebelum diterapkan.",
+                "Teks baru: atur akhiran baris dan apakah berkas diawali penanda urutan byte.",
+                "Statistik: atur kecepatan membaca, berbicara, mengetik, dan menulis tangan serta jumlah kata per halaman.",
+                "Tombol pintasan untuk perintah Scribe."
+              ]
+            },
+            "Setiap pengaturan memiliki tombol untuk mengembalikannya ke nilai awal program."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tentang Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tentang Scribe",
+          "body": [
+            "Scribe adalah aplikasi teks dari Syntelab Creative: editor dengan alat di samping teks. Scribe menampilkan pratinjau sebelum perubahan diterapkan, membersihkan dan mengurutkan daftar, mencari serta mengganti teks dalam satu teks atau seluruh folder, membandingkan teks, menganalisis isinya, membuat teks pengisi dan data contoh, serta menyimpan tindakan yang sering digunakan sebagai resep.",
+            "Semua proses dilakukan di komputer ini. Ukuran dan jumlah teks tidak dibatasi; batasnya adalah memori komputer dan kemampuan teknologi saat ini.",
+            "Aplikasi ini masih baru. Jika ada kekurangan saat menangani teks Anda, sampaikan melalui Bantuan → Masukan agar kami tahu hal yang perlu dikembangkan."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Teknologi yang digunakan Scribe",
+          "body": [
+            {
+              "points": [
+                "Editor: CodeMirror.",
+                "Pembacaan dan penulisan encoding: encoding_rs, dengan chardetng untuk menebak encoding berkas yang tidak mencantumkannya.",
+                "Pencarian dan penggantian: pustaka regex Rust dengan pola yang tidak dapat membuat program macet.",
+                "Pengurutan sesuai aturan tiap bahasa serta pencarian kata dan kalimat dalam semua aksara: ICU4X, pustaka Unicode.",
+                "Perbandingan teks: pustaka similar.",
+                "Diakritik Rumania: daftar kata dan aturan yang ditulis khusus untuk Scribe."
+              ]
+            },
+            "Komponen yang digunakan bersama bagian lain program dijelaskan di “Tentang Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Hal yang belum dapat dilakukan Scribe",
+          "body": [
+            {
+              "points": [
+                "Berkas sangat besar dibaca halaman demi halaman dan hanya dapat diubah menggunakan resep. Untuk mengeditnya secara manual, berkas harus dibuka seluruhnya dan memerlukan memori.",
+                "Fitur untuk mengembalikan diakritik Rumania mengenali kata umum; kata langka dan nama dibiarkan seperti yang diketik.",
+                "Pemeriksaan ejaan belum tersedia.",
+                "Scribe tidak mengekstrak teks dari PDF atau dokumen Office; buka dokumen tersebut dengan PDF Organizer.",
+                "Editor tidak mewarnai sintaks kode atau Markdown.",
+                "Berkas yang diseret ke jendela terbuka sebagai teks baru. Program tidak mengetahui lokasi berkas tersebut, jadi saat menyimpan Anda akan diminta menentukan lokasinya."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

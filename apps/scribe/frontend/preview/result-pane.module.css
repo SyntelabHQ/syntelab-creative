@@ -1,0 +1,166 @@
+/* The result beside (or under) the text: its head, the result, the lines taken out. */
+.pane {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  /* Never so narrow that its head has nowhere to stand. */
+  min-width: 170px;
+  min-height: 0;
+  background: var(--sc-surface);
+}
+
+/* Nothing to show: said in the middle of the pane, in the letters of the program. */
+.empty {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 0;
+  padding: 24px;
+  color: var(--sc-muted);
+  font-family: var(--sc-font, system-ui);
+  font-size: 14px;
+  text-align: center;
+}
+
+.empty p {
+  max-width: 340px;
+  margin: 0;
+}
+
+.empty[data-kind='applied'] > svg {
+  color: var(--sc-success);
+}
+
+.empty[data-kind='applied'] p {
+  color: var(--sc-text);
+  font-weight: 600;
+}
+
+.after {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.said {
+  color: var(--sc-muted);
+}
+
+.problem {
+  overflow: hidden;
+  color: var(--sc-danger);
+  text-overflow: ellipsis;
+}
+
+.kind {
+  flex: none;
+  font-weight: 600;
+}
+
+/* Each fact wears the colour its lines are marked with. */
+.fact {
+  flex: none;
+  padding: 1px 8px;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface-2);
+}
+
+.fact[data-fact='changed'] {
+  background: color-mix(in srgb, var(--sc-highlight) 30%, transparent);
+}
+
+.fact[data-fact='moved'] {
+  background: color-mix(in srgb, var(--sc-accent) 18%, transparent);
+}
+
+.fact[data-fact='added'] {
+  background: color-mix(in srgb, var(--sc-success) 24%, transparent);
+}
+
+.fact[data-fact='removed'] {
+  background: color-mix(in srgb, var(--sc-danger) 18%, transparent);
+}
+
+.sizes {
+  margin-inline-start: auto;
+  overflow: hidden;
+  color: var(--sc-muted);
+  text-overflow: ellipsis;
+}
+
+.removed {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  max-height: 34%;
+  border-block-start: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  font-family: var(--sc-font, system-ui);
+  font-size: 13px;
+}
+
+.removedHead {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-weight: 700;
+  text-align: start;
+  cursor: pointer;
+}
+
+.removedList {
+  min-height: 0;
+  margin: 0;
+  padding: 0 8px 8px;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.removedLine {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 3px 6px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.removedLine:hover {
+  background: color-mix(in srgb, var(--sc-danger) 12%, transparent);
+}
+
+.removedNumber {
+  flex: none;
+  min-width: 44px;
+  color: var(--sc-muted);
+  text-align: end;
+}
+
+.removedText {
+  min-width: 0;
+  overflow: hidden;
+  text-decoration: line-through;
+  text-decoration-color: color-mix(in srgb, var(--sc-danger) 60%, transparent);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.more {
+  padding: 4px 6px;
+  color: var(--sc-muted);
+}

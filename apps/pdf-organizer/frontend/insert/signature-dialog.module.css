@@ -1,0 +1,112 @@
+/* How the signature is made: drawn, typed, or from a picture. */
+.sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.source {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--sc-control-height);
+  padding-inline: 16px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.source[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent);
+  color: var(--sc-accent-text);
+}
+
+.typed {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  min-height: var(--sc-control-height);
+  padding-inline: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+
+.row select {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+.color {
+  width: 44px;
+  height: 34px;
+  padding: 2px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  cursor: pointer;
+}
+
+/* The signature as it will look: on white in both themes, like the paper it goes on. */
+.sample {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  padding: 12px 16px;
+  overflow: hidden;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-paper);
+  font-size: 44px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.sample img {
+  max-width: 100%;
+  max-height: 150px;
+}
+
+.sampleEmpty {
+  color: var(--sc-paper-muted);
+  font-size: 15px;
+}
+
+.date {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+
+.date input[type='date'] {
+  min-height: var(--sc-control-height);
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.dateShown {
+  color: var(--sc-muted);
+  font-variant-numeric: tabular-nums;
+}

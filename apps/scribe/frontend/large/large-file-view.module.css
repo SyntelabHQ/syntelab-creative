@@ -1,0 +1,259 @@
+/* A file too large for the editor: what it is and what can be done at the top, a page of it under. */
+.view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: var(--sc-surface);
+  text-align: start;
+}
+
+.waiting {
+  margin: auto;
+  padding: 24px;
+  color: var(--sc-muted);
+  font-size: 15px;
+  text-align: center;
+}
+
+.top {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 20px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.about > svg {
+  flex: none;
+  color: var(--sc-accent);
+}
+
+.about p {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+
+.control {
+  min-height: 34px;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.control:focus {
+  border-color: var(--sc-accent);
+  outline: none;
+}
+
+.row > input[type='text'] {
+  flex: 1 1 240px;
+  min-width: 0;
+}
+
+.flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.flag input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--sc-accent);
+}
+
+.said {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.problem {
+  margin: 0;
+  color: var(--sc-danger);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+/* The page of lines and, beside it, what a search found. */
+.work {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.pager {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 8px 20px;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.where {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.goTo {
+  display: inline-flex;
+  gap: 6px;
+  margin-inline-start: auto;
+}
+
+.goTo input {
+  width: 130px;
+}
+
+/* The lines: written as a text is, in letters of one width, each with its number. */
+.lines {
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 8px 0;
+  overflow: auto;
+  font-family: 'Cascadia Mono', 'Cascadia Code', Consolas, ui-monospace, 'DejaVu Sans Mono', Menlo, monospace;
+  font-size: 14px;
+  line-height: 1.55;
+  list-style: none;
+}
+
+.lines li {
+  display: flex;
+  gap: 14px;
+  padding-inline-end: 16px;
+}
+
+.lines li[data-marked='true'] {
+  background: color-mix(in srgb, var(--sc-highlight) 30%, transparent);
+}
+
+.number {
+  flex: none;
+  min-width: 84px;
+  padding-inline: 14px 10px;
+  border-inline-end: 1px solid var(--sc-border);
+  color: var(--sc-muted);
+  text-align: end;
+  user-select: none;
+}
+
+.line {
+  flex: 1;
+  min-width: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.found {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  min-height: 0;
+  padding: 10px 12px 12px;
+  border-inline-start: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+}
+
+@media (width < 1000px) {
+  .found {
+    width: 260px;
+  }
+}
+
+.foundLead {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.matches {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.match {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 5px 8px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.match:hover {
+  background: var(--sc-surface-2);
+}
+
+.matchLine {
+  flex: none;
+  min-width: 52px;
+  color: var(--sc-muted);
+  text-align: end;
+}
+
+.matchText {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.matchText mark {
+  padding: 0 1px;
+  border-radius: var(--sc-radius-xs);
+  background: color-mix(in srgb, var(--sc-highlight) 45%, transparent);
+  color: inherit;
+}

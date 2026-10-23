@@ -1,0 +1,114 @@
+/* A recipe being changed: its name, its steps, the tool to add, and the way out. */
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.control {
+  min-height: 34px;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.control:focus {
+  border-color: var(--sc-accent);
+  outline: none;
+}
+
+.note {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.problem {
+  margin: 0;
+  padding-inline: 10px;
+  color: var(--sc-danger);
+  font-size: 13px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+}
+
+.step[data-open='true'] {
+  border-color: var(--sc-accent);
+}
+
+.step[data-ready='false'] {
+  border-color: var(--sc-danger);
+}
+
+.stepHead {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding-inline-end: 2px;
+}
+
+.stepName {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 34px;
+  padding: 4px 8px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-weight: 600;
+  text-align: start;
+  cursor: pointer;
+}
+
+/* The place of the step in the recipe. */
+.number {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--sc-surface-2);
+  color: var(--sc-muted);
+  font-size: 12px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4px 10px 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}

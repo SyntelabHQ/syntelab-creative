@@ -1,0 +1,210 @@
+/* Recipes: what was done to this text, then the recipes that are kept. */
+.recipes {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.lead,
+.note {
+  margin: 0 4px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+/* What was applied to this text: set apart, since it is not kept until it is given a name. */
+.applied {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px dashed var(--sc-accent);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.heading {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding-inline-start: 22px;
+}
+
+.steps li {
+  padding-inline-start: 2px;
+}
+
+.stepName {
+  font-weight: 600;
+}
+
+.stepChoices {
+  display: block;
+  color: var(--sc-muted);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.naming {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control {
+  min-height: 34px;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.recipe {
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.recipe[data-open='true'] {
+  border-color: var(--sc-accent);
+}
+
+/* A recipe: its name on a band, so it reads as the level above its steps. */
+.recipeName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 38px;
+  padding: 4px 10px;
+  border: 0;
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+  font: inherit;
+  font-weight: 700;
+  text-align: start;
+  cursor: pointer;
+}
+
+.recipeName:hover,
+.recipe[data-open='true'] > .recipeName {
+  background: var(--sc-accent-soft);
+}
+
+.recipeName bdi {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.count {
+  flex: none;
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 12px 12px;
+}
+
+.files {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-block-start: 10px;
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.filesHeading {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.choice input {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin: 2px 0 0;
+  accent-color: var(--sc-accent);
+}
+
+.folderRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.folder {
+  padding: 6px 10px;
+  overflow: hidden;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+  color: var(--sc-muted);
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.done {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.done p {
+  margin: 0;
+}
+
+.failed {
+  margin: 4px 0 0;
+  padding-inline-start: 18px;
+  color: var(--sc-danger);
+  font-weight: 400;
+}
+
+.warning {
+  margin: 0;
+  color: var(--sc-danger);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Kom i gang",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Hva Syntelab Creative er",
+          "body": [
+            "Syntelab Creative er ett program bestående av apper. Hver app utfører én type arbeid:",
+            {
+              "points": [
+                "PDF Organizer leser, organiserer, redigerer og signerer PDF-dokumenter.",
+                "Scribe er en tekstredigerer med verktøy som renser, sorterer, sammenligner og transformerer tekst.",
+                "Units konverterer mellom enheter: lengde, temperatur, valutaer og mange flere.",
+                "Dev samler verktøy for utviklere: koding og dekoding, formatering og kontroll, samt konvertering av data fra én form til en annen."
+              ]
+            },
+            "Appene deler ett vindu, ett sett med innstillinger og én arbeidsmetode, slik at det du lærer i én app, er det samme i den neste.",
+            {
+              "note": "Alt skjer på din datamaskin. Dokumentene dine blir aldri sendt noen steder, og ingen informasjon om deg eller arbeidet ditt blir samlet inn."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Vinduet",
+          "body": [
+            {
+              "points": [
+                "Linjen på siden: huset fører til Start, deretter kommer appene dine, og nederst finner du nyheter om programmet, Tilbakemelding, Støtte og Innstillinger.",
+                "I en app vil Fil → Gå til Start gå til appens førsteside dersom den har en (Units, Scribe), og Fil → Åpne innstillinger (Ctrl+,) åpner Innstillinger for den aktuelle appen; de andre delene er bare et klikk unna der.",
+                "Fanene øverst: hvert dokument, hver perm eller hvert verktøy du åpner har sin egen fane. En prikk på en fane betyr at den har endringer som ikke er lagret.",
+                "Appens menyer, under fanene: som en menylinje, som et bånd eller som et panel på siden, avhengig av hva du har valgt.",
+                "Resten av vinduet er den aktive fanen."
+              ]
+            },
+            "Hvis du lukker en fane med ulagrede endringer, vil programmet spørre først; det samme gjelder ved lukking av programmet."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Start",
+          "body": [
+            "Start viser appene dine og filene du nylig har åpnet. Klikk på en app for å åpne den; klikk på en nylig fil for å åpne den på nytt.",
+            "Appene kan vises som kort, som ikoner med navn eller som kun ikoner, og kan dras inn i den rekkefølgen du ønsker. Med tastaturet: Alt og piltastene. «Nullstill til standard» setter dem tilbake.",
+            "Hver app har også sin egen snarvei i Start-menyen i Windows, som for eksempel «Syntelab PDF Organizer» eller «Syntelab Units»: den åpner programmet direkte i den appen. Hvis programmet allerede er åpent, åpnes appen som en fane i det."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Åpne filer",
+          "body": [
+            {
+              "points": [
+                "Fra en app: Fil → Åpne, eller Ctrl+O.",
+                "Ved å dra filer fra en mappe og slippe dem i vinduet.",
+                "Fra systemets filbehandler: dobbeltklikk på en fil som programmet er satt til å åpne. I Windows Utforsker finnes også høyreklikkmenyen (se «Høyreklikkmenyen i Windows Utforsker»).",
+                "Fra Start: listen over nylige filer."
+              ]
+            },
+            "Programmet kjører som én kopi. En fil som åpnes fra filbehandleren mens programmet kjører, åpnes som en ny fane i samme vindu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tilpass programmet",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Oppsett: menylinje, bånd eller sidepanel",
+          "body": [
+            "Kommandoene i en app kan vises på tre måter. Det er de samme kommandoene; det er bare plasseringen som varierer.",
+            {
+              "points": [
+                "Klassisk: en menylinje og en verktøylinje.",
+                "Bånd: store knapper i navngitte grupper, én fane for hver meny. Den kan skjules for å gi mer plass til dokumentet.",
+                "Sidepanel: verktøyene i et panel til venstre eller høyre, som kan skjules til ikoner."
+              ]
+            },
+            "Velg oppsett for hver app under Innstillinger → Generelt → Oppsett. En app kan ha sitt eget oppsett, valgt i appens del av Innstillinger eller fra Vis-menyen; den følger da ikke lenger det generelle oppsettet før du velger «Bruk generelt oppsett»."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Innstillinger → Generelt → Tema: Lyst, Mørkt, Lysegrå, Mørkegrå, eller Automatisk, som følger systemets lyse eller mørke innstilling.",
+            "Sidene i et dokument blir aldri farget av temaet: papiret forblir som det er."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Språk",
+          "body": [
+            "Innstillinger → Generelt → Språk. Programmet støtter 62 språk. «Systemspråk» følger språket i systemet ditt. Listen kan søkes i ved å bruke språkets eget navn, navnet på ditt språk eller det engelske navnet.",
+            "Tekst som ennå ikke er oversatt vises på engelsk, aldri som kode."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Faner",
+          "body": [
+            {
+              "points": [
+                "«Behold Start-fanen blant fanene»: når dette er av, vises Start-fanen kun mens Start selv er i forgrunnen; huset i sidefeltet fører alltid tilbake til den.",
+                "Merket på en fane kan være appens ikon eller et enkelt kvadrat i appens farge."
+              ]
+            },
+            "Når det er flere faner enn det er plass til, ruller pilene i endene av linjen gjennom dem, og «Flere faner» viser alle."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Finne frem",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Søke etter en kommando",
+          "body": [
+            "Søkefeltet («Søk etter apper, verktøy og kommandoer») finner enhver kommando i den aktive fanen ved navn, på ditt språk eller på engelsk. Velg et resultat for å kjøre det.",
+            "Kommandoer som er planlagt, men ikke skrevet ennå, vises grået ut i menyene og utelates fra søket."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Tastatursnarveier",
+          "body": [
+            "Tastene for en kommando står ved siden av navnet i menyene og i verktøytipset. De som brukes mest:",
+            {
+              "points": [
+                "Ctrl+O: åpne fil",
+                "Ctrl+S: lagre; Ctrl+Shift+S: lagre som",
+                "Ctrl+P: skriv ut",
+                "Ctrl+Z og Ctrl+Y: angre og gjøre om",
+                "Ctrl+F: finn i dokumentet",
+                "Ctrl+W: lukk fanen",
+                "Ctrl+Tab og Ctrl+Shift+Tab: neste fane og forrige fane",
+                "Ctrl+, (komma): Innstillinger",
+                "F1: denne hjelpen",
+                "Escape: forlat fullskjerm eller lesemodus, eller legg bort verktøyet du holder"
+              ]
+            },
+            "Tastene for programmets egne kommandoer (faner, Innstillinger, Hjelp) endres i Innstillinger → Generelt → Tastatursnarveier; kommandoene for en app endres i appens del av Innstillinger. Klikk på tastene til en kommando, og trykk deretter på de nye."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Bruke denne hjelpen",
+          "body": [
+            "Hjelpen tilhører stedet du åpner den fra. Fra en app ser du kun manualen for den appen og kommandoene for fanen du kom fra. Fra startsiden eller fra Innstillinger ser du «Om» (programmet og hver app, kort oppsummert) og manualen for programmet. Hjelp → Om fører alltid til «Om».",
+            "Innholdet er til venstre; søket over dette søker gjennom alle emner, i titler og i tekst.",
+            "Hjelpen åpnes i en egen fane, slik at du kan gå frem og tilbake mellom den og arbeidet ditt; F1 bringer den frem igjen. Under «Kommandoer for fanen du kom fra» er hver meny i den fanen oppført med hver av sine kommandoer, tastene deres og hva de gjør: åpne Hjelp fra fanen du har et spørsmål om."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Høyreklikkmenyen i Windows Utforsker",
+          "body": [
+            "Innstillinger → Generelt → Windows Utforsker → «Vis Syntelab Creative i høyreklikkmenyen for filer og mapper» legger til oppføringer for filene programmet leser: «Konverter til PDF med PDF Organizer» og «Kombiner filer i PDF Organizer», begge med ikonet til PDF Organizer, og «Syntelab Dev», som åpnes til siden med Sjekksummer, Sammenlign og Hex-visning.",
+            "Disse legges til kun for din bruker, uten administratorrettigheter, og det å slå av bryteren fjerner dem. I Windows 11 ligger de under «Vis flere alternativer». De starter alltid det installerte programmet: hvis det er flyttet eller installert på nytt et annet sted, retter det dem opp når det starter.",
+            {
+              "note": "Ved å velge «Kombiner filer i PDF Organizer» på flere filer åpnes en perm med disse; «Konverter til PDF med PDF Organizer» åpner batch-behandling med disse."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personvern, oppdateringer og kontakt",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Hva som går på nettet, og hva som aldri gjør det",
+          "body": [
+            "Programmet samler ikke inn noe: ingen bruksdata, ingen filnavn, ingen krasjrapporter sendes automatisk.",
+            "Det går kun på nettet i disse tilfellene, hver av dem etter forespørsel fra deg:",
+            {
+              "points": [
+                "Sjekke etter oppdateringer og nyheter (to små filer lest fra syntelab.com), når du ber om det eller, hvis du har tillatt det, når programmet starter; og nedlasting av en ny versjon, kun når du trykker «Oppdater».",
+                "Lagre en nettside som PDF (PDF Organizer) og hente teksten fra en nettside (Scribe), fra adressen du skrev inn.",
+                "En lenke i et dokument som du klikker på: den sendes til nettleseren eller e-postprogrammet ditt.",
+                "Tilbakemelding og Støtte: disse åpner en side på syntelab.com i nettleseren din."
+              ]
+            },
+            "Signering med et sertifikat og kontroll av signaturer gjøres på datamaskinen din, uten å gå på nettet."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Oppdateringer",
+          "body": [
+            "Innstillinger → Generelt → Oppdateringer → «Se etter oppdateringer». Når en nyere versjon eksisterer, forteller et vindu deg hva som er nytt og tilbyr «Oppdater».",
+            "«Oppdater» laster ned den nye versjonen, kontrollerer at den faktisk kommer fra oss (den må være signert med vår nøkkel; alt annet avvises) og installerer den over denne. Innstillingene dine blir bevart og programmet starter på nytt. Ingenting lastes ned før du trykker på knappen.",
+            "Hvis oppdateringen ikke kan installeres på denne måten (en bærbar kopi, en Linux-pakke, ikke noe nettverk), åpner «Last ned» nedlastingssiden i nettleseren din; installer den nye versjonen over denne, så blir innstillingene dine bevart.",
+            "«Se etter oppdateringer og nyheter når programmet starter» kan slås av; ingenting om deg eller datamaskinen din blir sendt uansett."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Tilbakemelding og støtte",
+          "body": [
+            "Hjelp → Tilbakemelding: be om en ny app, en ny funksjon eller en endring, eller rapporter et problem. Hver melding blir lest.",
+            "Hjelp → Støtte: programmet er gratis; dette er stedet hvor du kan bidra til at det kan fortsette."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Om Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Om Syntelab Creative",
+          "body": [
+            "Syntelab Creative er en gratis pakke med apper for daglig arbeid med dokumenter, tekst og data, laget av Syntelab (syntelab.com). Den starter med fire apper: PDF Organizer, Scribe, Units og Dev. Flere vil bli lagt til i det samme vinduet.",
+            {
+              "points": [
+                "Alltid gratis.",
+                "Ingen datainnsamling: ingenting om deg, datamaskinen din eller arbeidet ditt.",
+                "Ingenting holdes tilbake: ingen betalingsversjon, ingen låste funksjoner, ingen begrensninger lagt inn med vilje. De eneste begrensningene er hva dagens teknologi kan gjøre og hva datamaskinen din tåler."
+              ]
+            },
+            "Vi har ingen finansiering. Programmet er laget på vår fritid, så langt den tiden tillater. Vi har full intensjon om å lage programvare av god kvalitet, og det krever tid og tålmodighet: vår tid til å bygge det, og din tålmodighet mens det vokser.",
+            "Det vil bli bedre for hver versjon. Rapporterte problemer blir rettet, og etterspurte funksjoner blir vurdert for hva som kommer neste gang.",
+            {
+              "note": "Dokumentene dine forblir på datamaskinen din. Programmet samler ikke inn informasjon om deg eller arbeidet ditt; se «Hva som går på nettet, og hva som aldri gjør det»."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Hvordan du kan hjelpe",
+          "body": [
+            "Det er tre måter, og hver av dem teller:",
+            {
+              "points": [
+                "Fortell oss hva du mener: Hjelp → Tilbakemelding. Et problem du støtte på, noe som mangler, noe som er vanskeligere enn det burde være. Vi leser hver eneste melding.",
+                "Fortell andre om programmet og hva vi gjør. At flere bruker det betyr mer tilbakemelding, og det er slik vi ser hva som virkelig betyr noe. Det får oss også til å føle at arbeidet vårt blir satt pris på: vårt, og arbeidet til alle som bidrar i prosjektet og vil bidra i det.",
+                "Støtt det økonomisk hvis du kan: Hjelp → Støtt oss. Det gir oss tid til å jobbe med det."
+              ]
+            },
+            "Ingen av disse tingene kreves av deg. Programmet er gratis og vil alltid være gratis, komplett, for alle."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Hva det er bygget med",
+          "body": [
+            "Programmet bygger på arbeidet til mange mennesker. Det alle appene deler:",
+            {
+              "points": [
+                "Vinduet og alt du ser: Tauri, med systemets webvisning (WebView2 på Windows, WebKitGTK på Linux, WKWebView på macOS); skrevet i TypeScript med React.",
+                "Delen som utfører arbeidet: skrevet i Rust.",
+                "Bokstaver og ikoner: Sansation, IBM Plex Sans og Font Awesome Free."
+              ]
+            },
+            "Hva hver app legger til er beskrevet på dens egen side under «Om». Vi er takknemlige overfor menneskene bak disse prosjektene."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Hva det ikke kan gjøre ennå",
+          "body": [
+            "Slik at du vet det før du stoler på det:",
+            {
+              "points": [
+                "Noen tekster venter fortsatt på oversettelse. Inntil da vises de på engelsk, aldri som en kode.",
+                "Høyreklikkmenyen i filbehandleren finnes foreløpig bare i Windows Utforsker.",
+                "Signering med sertifikat fungerer foreløpig på Windows; på Linux og macOS vil dette komme i en senere versjon."
+              ]
+            },
+            "Begrensningene for hver app står på dens egen side under «Om». Hvis en av dem er i veien for deg, fortell oss det via Hjelp → Tilbakemelding: det hjelper oss å avgjøre hva som kommer først."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Hva vi jobber med",
+          "body": [
+            "De fire appene vil fortsette å vokse: det du rapporterer og ber om via Hjelp → Tilbakemelding avgjør mye av hva som kommer først. I tillegg forberedes nye apper. Start viser dem ikke med mindre du vil: merk av for dem i «Vis»-menyen på Start for å se dem der som «Kommer snart»:",
+            {
+              "points": [
+                "Convert: konvertering av filer fra ett format til et annet, blant annet kontordokumenter til PDF og tilbake, uten behov for å installere et annet program. Vi har ennå ikke funnet en åpen teknologi som når den kvaliteten vi ønsker, så den vil bare komme når den ikke skuffer deg; der verktøyene ikke eksisterer, vil vi bygge dem.",
+                "Pixel: verktøy for bilder, som endring av størrelse og komprimering, fjerning av bakgrunn, farger og QR-koder.",
+                "Metadata: se og fjerne skjulte data i bilder, videoer og dokumenter før du deler dem.",
+                "Wizard: tilfeldige velgere og generatorer: et lykkehjul, terninger, myntkast, navn trukket fra en liste."
+              ]
+            },
+            "I appene som allerede er her, jobber vi med det som står oppført på sidene for «Hva det ikke kan gjøre ennå»: for eksempel et pålitelig tidsstempel for signaturer, signering med sertifikat på Linux og macOS, og stavekontroll i Scribe.",
+            "Flere installasjonsvalg vil også følge: Microsoft Store og winget på Windows, Flathub og Snap på Linux.",
+            {
+              "note": "Nyheter for hver versjon finnes under nyhetsknappen i sidefeltet; Innstillinger → Generelt → Oppdateringer sjekker etter en nyere versjon."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Åbning og læsning",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Åbning af et dokument",
+          "body": [
+            "Fil → Åbn (Ctrl+O) åbner en PDF i sin egen fane. \"Åbn flere filer på én gang\" åbner hver valgt fil i sin egen fane.",
+            "Filer, der ikke er PDF’er, kan også åbnes som sider: billeder (PNG, JPEG, TIFF, WebP og mange flere), tekst- og webfiler, e-bøger, XPS og kontordokumenter. Et sådant dokument er endnu ikke gemt nogen steder: \"Gem\" spørger, hvor det skal gemmes.",
+            {
+              "note": "Kontordokumenter (Word, Excel, PowerPoint, OpenDocument) konverteres af Word, Excel eller PowerPoint, eller af LibreOffice, afhængigt af hvad der er installeret på computeren. Uden et af disse kan de ikke åbnes."
+            },
+            "Filer, der trækkes over i en tom fane, samles i en mappe; trækkes de over i et dokument, tilføjes deres sider til dette.",
+            "I Windows kan PDF Organizer være den app, der åbner PDF-filer, når du dobbeltklikker på dem: På startsiden åbner \"Angiv som standard\" Windows-indstillingerne, hvor du vælger Syntelab Creative til PDF-filer."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Visning af sider",
+          "body": [
+            "Vis-menuen bestemmer, hvordan dokumentet vises; intet i denne menu ændrer selve filen.",
+            {
+              "points": [
+                "Zoom: ind, ud, faktisk størrelse, tilpas side, tilpas bredde, tilpas højde. Ctrl og musehjulet zoomer også.",
+                "Sidevisning: én side eller to side om side, med eller uden en forside, og rulning gennem alle sider som ét langt bånd.",
+                "Hjælpelinjer: linealer og et gitter i den enhed, der er valgt i Indstillinger.",
+                "\"Vis miniaturebilleder\": de små sider i siden. Klik på en for at gå til den; dokumentets bogmærker findes i samme panel.",
+                "\"Læsetilstand\" skjuler værktøjerne; \"Fuldskærmstilstand\" skjuler alt undtagen siden. Escape forlader begge tilstande."
+              ]
+            },
+            "Båndet over siderne (hurtigværktøjslinjen) indeholder sidetallet, zoom og de knapper, du har valgt i Indstillinger."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Søgning efter tekst",
+          "body": [
+            "Rediger → Find i dokument (Ctrl+F): skriv et ord eller en frase; de steder, det findes, markeres på siderne, og pilene fører fra den ene til den næste.",
+            {
+              "note": "Et scannet dokument består af billeder af sider og har ingen tekst, der kan findes, før teksten er genkendt: se \"Genkendelse af tekst (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Dokumentegenskaber",
+          "body": [
+            "Fil → Dokumentegenskaber viser, hvad dokumentet siger om sig selv: titel, forfatter, datoerne for hvornår det blev oprettet og ændret, antallet af sider og filstørrelsen."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gemme, udskrive og sende",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Gem og Gem som",
+          "body": [
+            "Intet af det, du gør, ændrer filen på disken, før du gemmer. Indtil da kan hvert trin fortrydes (Ctrl+Z) og gentages (Ctrl+Y).",
+            {
+              "points": [
+                "Gem (Ctrl+S) overskriver dokumentets fil.",
+                "Gem som (Ctrl+Shift+S) skriver det til en ny fil, som derefter overtager fanens plads; den gamle fil forbliver, som den var."
+              ]
+            },
+            "Hvis et andet program har filen åben, kan den ikke overskrives: programmet meddeler dette og beholder dine ændringer, så de kan gemmes under et andet navn.",
+            {
+              "note": "Hvis et ændret dokument gemmes over en fil, der er underskrevet med et certifikat, fjernes underskrifterne. Programmet spørger først og tilbyder \"Gem som ny fil\"; dette spørgsmål kan deaktiveres under Indstillinger → Signaturer."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Oprettelse af en PDF",
+          "body": [
+            "Fil → Opret en PDF opretter et nyt dokument:",
+            {
+              "points": [
+                "fra én fil eller fra flere: kombineret til én PDF, eller én PDF for hver;",
+                "fra en webside på den adresse, du indtaster (siden gemmes med den browser, der er installeret på computeren);",
+                "fra indholdet i udklipsholderen;",
+                "fra tomme sider i den størrelse, du vælger."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Eksportering til et andet format",
+          "body": [
+            "Fil → Eksporter skriver dokumentet i et andet format: Word eller OpenDocument-tekst, almindelig tekst, en webside, XML, billeder af siderne (PNG, JPEG, TIFF, SVG) eller PostScript. For billeder vælger du opløsningen.",
+            "Selve dokumentet forbliver en PDF; eksporten er en ny fil.",
+            {
+              "note": "Tekst kan kun eksporteres, hvor dokumentet indeholder tekst. Genkend først teksten i en scanning."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Udskrivning",
+          "body": [
+            "Fil → Udskriv (Ctrl+P) udskriver dokumentet, som det er arrangeret nu, inklusiv det, du har tegnet på det. Vælg sider, papir, om arkene skal ligge lodret eller vandret, og om siderne skal tilpasses arket eller udskrives i deres faktiske størrelse; derefter beder systemets udskrivningsvindue om printeren.",
+            "Papir, orientering og skalering, som udskrivningsvinduet starter med, er indstillet under Indstillinger → Udskrivning."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Deling",
+          "body": [
+            "Fil → Del sender dokumentet til systemets \"Del\"-vindue: e-mail, en enhed i nærheden og andre apps. Dokumentet deles, som det er nu, med dine ikke-gemte ændringer."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organisering af sider",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Organiser-visningen",
+          "body": [
+            "Organiser → Organiser sider viser hver side i et gitter. Intet ændres på disken, før du gemmer.",
+            {
+              "points": [
+                "Marker: klik på en side; Ctrl+klik tilføjer en, Shift+klik markerer et interval. \"Marker alle sider\", \"Fjern markering\", \"Marker ulige sider\" og \"Marker lige sider\" findes i menuen.",
+                "Flyt: træk de markerede sider til deres nye plads, eller brug \"Flyt til venstre\" og \"Flyt til højre\".",
+                "Drej: \"Markerede: roter til venstre\" og \"Markerede: roter til højre\" drejer de markerede sider; \"Alle sider: roter til venstre\" og \"Alle sider: roter til højre\" drejer hver side.",
+                "Slet: Delete-tasten eller \"Slet sider\". Et dokument skal altid indeholde mindst én side.",
+                "Kopier, klip og indsæt (Ctrl+C, Ctrl+X, Ctrl+V): sider kan indsættes i det samme dokument eller i et andet, der er åbent i programmet.",
+                "Størrelse: skyderen øverst gør siderne større eller mindre; det samme gør Ctrl + musehjul over siderne samt Zoom ind og Zoom ud (Ctrl+= og Ctrl+-). Størrelsen huskes."
+              ]
+            },
+            "De samme kommandoer fungerer uden gitteret, direkte på siden i visningen."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Udtrækning af sider og opdeling af et dokument",
+          "body": [
+            "Organiser → Udtræk sider tager de markerede sider ud som et nyt dokument i sin egen fane, som endnu ikke er gemt. Du kan også få hver side gemt som sin egen fil, og vælge om siderne skal fjernes fra dette dokument.",
+            "Organiser → Opdel dokument gemmer dokumentet som flere mindre filer; dette dokument forbliver, som det er.",
+            "Navnene på de nye dokumenter følger mønstrene i Indstillinger → Navne på nye dokumenter.",
+            {
+              "note": "Signaturer lavet med et certifikat overføres ikke til udtrukne eller opdelte dokumenter: en signatur er kun gyldig for den fil, den blev lavet i."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Indsættelse og udskiftning af sider",
+          "body": [
+            {
+              "points": [
+                "Organiser → Indsæt sider tilføjer sider fra en anden fil (PDF, billede, tekst, office-dokument) efter den valgte side eller til sidst.",
+                "Organiser → Erstat sider indsætter sider fra en anden fil i stedet for de valgte.",
+                "Indsæt → Blank side tilføjer en tom side i samme størrelse som nabosiden."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Beskæring og ændring af sidestørrelse",
+          "body": [
+            "Rediger → Beskær sider klipper kanterne af siderne via marginer, du indtaster eller trækker. Intet fjernes fra filen: siderne viser blot mindre.",
+            "Rediger → Skaler sider placerer sider på en anden arkstørrelse (A4, Letter og andre). Indholdet kan skaleres til at passe eller bevares i sin størrelse og placeres på et af ni steder på det nye ark.",
+            "Begge spørger, hvilke sider: alle, de valgte, et interval, ulige eller lige."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kombinering af filer",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Binderen",
+          "body": [
+            "Kombiner → Ny binder åbner et sted, hvor man kan samle filer og skrive dem som én PDF.",
+            {
+              "steps": [
+                "Tilføj filer med \"Tilføj filer\", eller træk dem ind i binderen. PDF’er, billeder, tekst og office-dokumenter kan blandes.",
+                "Træk kortene i den rækkefølge, du ønsker, eller brug pilene på hvert kort.",
+                "Åbn et kort for at vælge, hvilke af dets sider der skal medtages.",
+                "\"Kombiner filer\" skriver dem i rækkefølge som ét nyt dokument i sin egen fane."
+              ]
+            },
+            "Selve filerne ændres ikke.",
+            "Skyderen øverst gør siderne på kortene større eller mindre; det samme gør Ctrl + musehjul samt Zoom ind og Zoom ud (Ctrl+= og Ctrl+-). Størrelsen huskes."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Skrivning og tegning på sider",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Værktøjerne",
+          "body": [
+            "Tegneværktøjerne åbnes som et panel ved siden af siden, som et gitter af knapper eller som en liste med navne (Indstillinger bestemmer). Med et værktøj i hånden kan du trække eller klikke på siden; Escape lægger værktøjet fra dig.",
+            {
+              "points": [
+                "Tekst: klik og skriv. Skrifttype, størrelse, farve, fed, kursiv og justering findes i panelet.",
+                "Billede: vælg et billede, og træk derefter for at bestemme placering og størrelse.",
+                "Figurer: rektangel, ellipse, linje, pil, flueben, kryds, prik.",
+                "Markering: træk over det, der skal fremhæves; det under markeringen forbliver læsbart."
+              ]
+            },
+            "Med \"Vælg, flyt og skalér\" kan en markering vælges igen: træk i den, træk i hjørnerne, drej den med håndtaget, ændr farverne i panelet eller slet den med Delete-tasten. Markeringer kan kopieres og indsættes, også på andre sider.",
+            "Alt, hvad der er tegnet, skrives i filen, når du gemmer."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Ændring af dokumentets egen tekst og billeder",
+          "body": [
+            "Værktøjet \"Rediger tekst og billeder i dokumentet\" markerer, hvad selve siden indeholder. Klik på en tekstlinje for at omskrive den, eller på et billede for at flytte, skalere, dreje eller slette det.",
+            {
+              "note": "Dette ændrer én linje eller ét billede ad gangen. Afsnit flyder ikke automatisk, når en linje bliver længere, og et billede, der ligger over et andet, vælges sammen med det. Ved større ændringer skal dokumentet redigeres i det program, det blev skrevet i."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Sletning af fortrolige oplysninger",
+          "body": [
+            "Flere værktøjer → Slet fortrolige oplysninger fjerner permanent det, der ikke må læses: træk en sort boks over det på enhver side. Når du gemmer, fjernes teksten og billederne under boksen fra filen og bliver ikke blot dækket.",
+            {
+              "note": "Gem det behandlede dokument under et nyt navn og opbevar originalen et sikkert sted: det, der er slettet, kan ikke føres tilbage."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Vandmærke",
+          "body": [
+            "Rediger → Vandmærke skriver ord eller indsætter et billede på de sider, du vælger: lige eller skråt, på et af ni steder, så stort og svagt som du ønsker. På hver side er det derefter en markering som enhver anden og kan stadig flyttes eller fjernes."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Sidetal, sidehoved og sidefod, Bates-numre",
+          "body": [
+            {
+              "points": [
+                "Rediger → Sidenumre: formatet (1, 1 / 12, Side 1 m.fl.), placeringen og hvilke sider, der skal have et.",
+                "Indsæt → Sidehoved og sidefod: tekst på et af seks steder. Her står {page} for sidetallet, {pages} for det samlede antal sider, {date} for dags dato og {file} for dokumentets navn.",
+                "Indsæt → Bates-nummerering: numre efter hinanden med et ord før eller efter (ABC000123), som det bruges til sagsdokumenter."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Links, bogmærker og vedhæftede filer",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Links",
+          "body": [
+            "Indsæt → Link: træk over det sted, der skal klikkes på, og angiv derefter, hvor det fører hen: en webadresse eller en side i dette dokument.",
+            "Links i et dokument fungerer, mens du læser det: et klik på et link til en side fører dig dertil; en web- eller mailadresse sendes til din browser eller dit mailprogram."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Bogmærker",
+          "body": [
+            "Indsæt → Nyt bogmærke: klik på det sted, det skal føre til, og giv det en titel. Indsæt → Bogmærker åbner listen, hvor et bogmærke kan omdøbes eller fjernes. Ændringerne gemmes, når du gemmer."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Vedhæftede filer",
+          "body": [
+            "Indsæt → Vedhæft fil: vælg en fil og klik der, hvor papirclipsen skal placeres. Du kan give den et navn og en forfatter, farve clipsen, ændre størrelsen og dreje den. Filen bevares inde i PDF'en, når du gemmer.",
+            "Indsæt → Vedhæftede filer viser, hvad dokumentet indeholder; hver fil kan gemmes på disken eller fjernes. Et klik på en papirclips åbner den samme liste."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formularer",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Udfyldelse af en formular",
+          "body": [
+            "Indsæt → Udfyld formular viser dokumentets felter: skriv i tekstfelter, marker afkrydsningsfelter, vælg fra lister. Svarene skrives i filen, når du gemmer."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Oprettelse af en formular",
+          "body": [
+            "Indsæt-menuen tilføjer felter til ethvert dokument: et tekstfelt, et afkrydsningsfelt, radioknapper (hvoraf én kan vælges), en liste at vælge fra og et signaturfelt, der efterlades tomt til en underskriver.",
+            "Træk på siden, hvor feltet skal placeres. Ligesom andre markeringer kan et felt flyttes og ændre størrelse, indtil du gemmer; derefter bliver det en del af formularen."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Signering",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Tilføjelse af en tegnet signatur",
+          "body": [
+            "Underskriv → Tilføj underskrift placerer et billede af en signatur på siden: tegnet her med en pen, du vælger, skrevet med en skrifttype eller taget fra et billede (brug \"Behold kun pennestrøgene\" til et foto af et underskrevet ark). Datoen kan skrives nedenunder.",
+            "Træk den hen på siden, hvor den skal placeres. Signaturer, du har brugt, gemmes på denne computer, så de kan bruges igen.",
+            {
+              "note": "Dette er et billede: det beviser ikke med sikkerhed, hvem der har placeret det der. En signatur, der beviser, hvem der har underskrevet, og at intet er ændret siden da, laves med et certifikat."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Signering med et certifikat",
+          "body": [
+            "Underskriv → Underskriv med certifikat opretter en digital signatur: den angiver, hvem der har underskrevet, og forsegler dokumentet, så enhver efterfølgende ændring vil være synlig.",
+            {
+              "steps": [
+                "Træk området, hvor signaturen skal vises, hen på siden (et vindue angiver dette først; det kan slås fra). For at signere uden at vise noget på siderne, skal du i stedet vælge \"Signer uden at vise det på en side\".",
+                "Vælg certifikatet: et af computerens (et kort eller en token vises blandt dem, når den er i sin læser), eller en .pfx / .p12-fil med tilhørende adgangskode. \"Fortsæt\".",
+                "Vælg signaturens udseende. Under \"Årsag og sted\" kan du skrive, hvorfor og hvor du signerer: disse oplysninger indgår i signaturen og på siden, hvis udseendet viser dem. Marker \"Lås dokumentet efter underskrift\", hvis ingen må signere eller ændre det efter dig. Lad \"Tilføj betroet tid (tidsstempel)\" være markeret, så en tidsstempeltjeneste bekræfter, hvornår du signerede.",
+                "\"Underskriv\", og vælg derefter, hvor den signerede fil skal gemmes. En token vil på dette tidspunkt bede om sin PIN-kode."
+              ]
+            },
+            "Den signerede fil åbnes i stedet for dokumentet. En adgangskode eller en PIN-kode gemmes aldrig af programmet.",
+            {
+              "note": "En kvalificeret signatur er en signatur, der er lavet på denne måde med et kvalificeret certifikat på et kort eller en token. Signeringen sker på din computer; kun tidsstemplet og kontrollen af dit certifikat går online, og de sender hashværdier og certifikatets serienummer, aldrig dokumentet."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Signaturudseender",
+          "body": [
+            "Et udseende bestemmer, hvordan en certifikatsignatur ser ud på siden. Gem flere under dine egne navne: ét til signering på vegne af en virksomhed, ét til signering i eget navn.",
+            {
+              "points": [
+                "Billede: ingen, fra en fil (et stempel, en scannet signatur) eller tegnet her.",
+                "Vist tekst: navn, dato, årsag, sted, hver især med eller uden tilhørende mærkat.",
+                "Egne linjer under navnet, såsom en rolle og en virksomhed.",
+                "\"Standardtekst\" er altid til stede: hvem der underskrev, og hvornår."
+              ]
+            },
+            "I underskriftsvinduet: \"Ny…\", \"Rediger…\", \"Slet\". Den sidst anvendte tilbydes først. Udseendet gemmes på denne computer."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Flere underskrifter og låsning",
+          "body": [
+            "Et dokument kan underskrives af flere personer, én efter én. Åbn den underskrevne fil og underskriv den uden at ændre noget: din underskrift tilføjes til slutningen af filen, og de tidligere forbliver gyldige.",
+            "\"Lås dokumentet efter underskrift\" (fravalgt, medmindre du markerer det) lukker dokumentet: ingen kan underskrive efter dig, og intet mere kan ændres. Det kan ikke fortrydes.",
+            {
+              "note": "Hvis du ændrer et underskrevet dokument, før du underskriver det igen, skal det skrives på ny, og de tidligere underskrifter udelades. Underskriftsvinduet advarer dig: for at bevare dem skal du åbne filen igen og underskrive uden at ændre noget."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Tidsstempler",
+          "body": [
+            "Et tidsstempel er en tidsstempeltjenestes signerede erklæring om, hvornår noget fandtes. Ellers kommer tiden i en signatur fra uret på underskriverens computer, som enhver kan stille; et tidsstempel beviser tidspunktet og gør, at signaturen fortsat kan dokumenteres, efter at certifikatet er udløbet (PAdES B-T).",
+            {
+              "points": [
+                "Signaturer får et, når \"Tilføj betroet tid (tidsstempel)\" er markeret i signeringsvinduet. Under Indstillinger → Signaturer angiver du, om det er markeret fra start, her og i batch-behandling.",
+                "Underskriv → Tilføj tidsstempel giver hele dokumentet sit eget tidsstempel, uden certifikat: det beviser, at dokumentet fandtes, præcis som det er, på det tidspunkt. Det gemmes som en ny fil; filens signaturer forbliver gyldige."
+              ]
+            },
+            "Tjenesten er DigiCerts (http://timestamp.digicert.com), gratis og betroet af Adobe Reader og Windows; en anden kan angives under Indstillinger → Signaturer. Den modtager kun en hashværdi (SHA-256), aldrig dokumentet, og der kræves internetforbindelse. Når en signatur får et tidsstempel, bliver udstederen af dit certifikat også spurgt, om certifikatet stadig er gyldigt, og svaret gemmes i signaturen (langtidsvalidering): Adobe Reader kan så vise signaturen som gyldig, både nu og efter at certifikatet er udløbet.",
+            {
+              "note": "Hvis tidsstempeltjenesten ikke kan nås, bliver intet signeret eller gemt: prøv igen, eller fjern markeringen ved tidsstemplet for at signere uden."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Kontrol af underskrifter",
+          "body": [
+            "Underskriv → Bekræft underskrifter viser alle certifikatudskrifter i filen: hvem der underskrev, hvem der udstedte certifikatet, hvornår, årsag og sted, samt",
+            {
+              "points": [
+                "om dokumentet er uændret siden den underskrift (en anden underskrift tilføjet efterfølgende tæller ikke som en ændring);",
+                "om underskriften låser dokumentet;",
+                "om denne computer stoler på myndigheden bag certifikatet, og om certifikatet er gyldigt i dag;",
+                "tiden bekræftet af dens tidsstempel, og af hvilken tjeneste, hvis den har et. Et tidsstempel for hele dokumentet vises også, med sin egen kontrol."
+              ]
+            },
+            "Kontrollen sker af filen, som den sidst blev gemt, og udføres på denne computer uden at gå online. Et klik på en signatur på en side åbner denne liste ved den. Under hver signatur åbner “Vis certifikat” certifikatets Windows-vindue (dets kæde og alle detaljer; derfra får “Installer certifikat” denne computer til at stole på et certifikat, du kender), og “Valider” spørger certifikatets udsteder online, kun når du trykker på den, om certifikatet er blevet trukket tilbage."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Flere værktøjer",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Tekstgenkendelse (OCR)",
+          "body": [
+            "Flere værktøjer → Genkend tekst (OCR) læser ordene på scannede sider og skriver dem ind i siderne usynligt, så dokumentet kan søges i, og dets tekst kan kopieres og eksporteres. Sidernes udseende ændres ikke.",
+            "Marker kun de sprog, som siderne er skrevet på; sider, der allerede har tekst, lades være.",
+            {
+              "note": "Læsningen udføres af Tesseract-motoren, et gratis program der installeres separat. Uden dette viser vinduet kommandoen til at installere det på Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Gør et dokument mindre",
+          "body": [
+            "Flere værktøjer → Komprimer gemmer dokumentet som en mindre fil ved at give dets fotografier og scanninger færre pixels. Tre styrker; tekst og tegninger forbliver lige så skarpe som før. Et dokument med få billeder vinder lidt."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Sammenligning af to dokumenter",
+          "body": [
+            "Flere værktøjer → Sammenlign dokumenter: vælg en anden PDF. De to vises side om side, side for side, hvor de sider, hvis tekst er forskellig, er markeret, og de linjer, som hver enkelt har alene, er opført."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Batch-behandling: mange filer på én gang",
+          "body": [
+            "Flere værktøjer → Batch-behandling gør de samme ting ved mange filer i en separat fane. Hvert resultat er en ny fil. Hvis resultater ville erstatte filer, der allerede findes i mappen (dine egne filer, når de gemmes i deres egen mappe uden at der tilføjes noget til navnene), bliver du først spurgt, om de skal erstattes eller springes over, eller om du vil annullere. En fil erstattes først, når dens resultat er færdigt; en fil, der er åben (i en fane her eller i et andet program), forbliver uændret og markeres som ikke udført.",
+            {
+              "steps": [
+                "Tilføj filerne til venstre: \"Tilføj filer\", \"Tilføj mappe\" (med mapperne herunder), eller træk dem ind.",
+                "Marker til højre, hvad der skal gøres. Enhver fil bliver i ethvert tilfælde til en PDF; udover det kan du vende sider, genkende tekst, tilføje sidehoved og sidefod, et vandmærke eller sidetal, gøre filer mindre, signere dem med et certifikat eller eksportere dem i et andet format. Tallene viser rækkefølgen.",
+                "Vælg hvad der skal skrives: en fil for hver, eller alt i én PDF (i rækkefølgen af listen), samt mappen hvor resultaterne skal gemmes. Når alle filerne kommer fra én mappe, vælges den mappe for dig, indtil du vælger en anden; ellers er det den mappe, du valgte sidst.",
+                "\"Start\". Hver fil viser, hvordan det gik; kørslen kan stoppes mellem filerne."
+              ]
+            },
+            {
+              "points": [
+                "Opskrifter: \"Gem som opskrift\" gemmer alt det, du har valgt (undtagen filerne og eventuelle adgangskoder) under et navn, så det kan indstilles igen med ét valg.",
+                "\"Behold filernes mapper i resultaterne\" genskaber mappestrukturen for en tilføjet mappe.",
+                "\"Skriv en rapport over kørslen\" efterlader en tekstfil ved siden af resultaterne, der angiver, hvad der blev skrevet, og hvad der slog fejl.",
+                "En PDF, der kun er underskrevet, bevarer sine signaturer; hvis der gøres andet ved den i samme kørsel, skrives den på ny, og signaturerne udelades."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Indstillinger",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Indstillinger for PDF Organizer",
+          "body": [
+            "Fil → Indstillinger (eller Indstillinger i sidebjælken, derefter PDF Organizer). Hver indstilling kan nulstilles enkeltvis eller alle på én gang.",
+            {
+              "points": [
+                "Når et dokument åbnes: hvor stort et dokument der vises, når det åbnes, rulle eller én side ad gangen, om miniaturebilleder skal vises eller ej.",
+                "Enheder, linealer og gitter: enheden (millimeter, tommer, punkter), linealer, gitteret og dets afstand.",
+                "Udskrivning: papiret, orienteringen og skaleringen, som udskrivningsvinduet starter med.",
+                "Hurtigværktøjslinje: hvilke knapper bjælken over siderne skal have.",
+                "Navne på nye dokumenter: mønstre for udtrukne sider, nye dokumenter og den PDF, som batch-behandling samler mange filer i.",
+                "Signaturer: om \"Gem\" skal spørge, før der skrives over en underskrevet fil.",
+                "Tastaturgenveje: klik på tasterne for en kommando, og tryk derefter på de nye."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Om PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Om PDF Organizer",
+          "body": [
+            "PDF Organizer er PDF-appen fra Syntelab Creative: den læser PDF-dokumenter, arrangerer og kombinerer deres sider, skriver og tegner på dem, udfylder og opretter formularer, underskriver med et certifikat og kontrollerer signaturer, og gør det samme ved mange filer på én gang.",
+            "Den er ny, og noget af det, den gør, er et første skridt. Hvor den ikke lever op til dine behov for dine dokumenter, så fortæl os det via Hjælp → Feedback: det er sådan, vi ved, hvad vi skal arbejde på."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Hvad PDF Organizer er bygget med",
+          "body": [
+            {
+              "points": [
+                "Læsning, tegning og skrivning af PDF: MuPDF.",
+                "Tekstgenkendelse (OCR): Tesseract, når det er installeret på computeren.",
+                "Åbning af kontordokumenter: Word, Excel og PowerPoint, eller LibreOffice, alt efter hvad der er installeret.",
+                "Gemme en webside som PDF: browseren installeret på computeren.",
+                "Signering med et certifikat: Windows' certifikattjenester; signaturer skrives som PAdES-standarden foreskriver."
+              ]
+            },
+            "Hvad det deler med resten af programmet, findes under \"Om Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Hvad PDF Organizer endnu ikke kan",
+          "body": [
+            {
+              "points": [
+                "Office-dokumenter åbnes af kontorpakken på computeren; uden Word, Excel, PowerPoint eller LibreOffice kan de ikke åbnes. Vi arbejder på vores egen konverter: se \"Hvad vi arbejder på\".",
+                "Tekstgenkendelse kræver Tesseract-motoren, som skal installeres separat.",
+                "Selve teksten i et dokument ændres én linje ad gangen; afsnit flyder ikke automatisk.",
+                "Billeder trykt i fire farver (CMYK) kan ikke markeres og flyttes.",
+                "“Valider” fortæller, om et certifikat er trukket tilbage i dag, ikke hvornår det blev trukket tilbage.",
+                "Signering med et certifikat fungerer i øjeblikket på Windows; på Linux og macOS vil det komme i en senere version."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

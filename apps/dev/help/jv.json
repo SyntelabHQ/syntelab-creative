@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Golek dalan",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Kaca kapisan",
+          "body": [
+            "Tab Dev mbukak ing kaca kapisan, panggonane kabeh piranti, diklompokake kaya ing menu: Enkode, Data, Gawe, Priksa, Jaringan.",
+            {
+              "points": [
+                "Ketik ing \"Goleki piranti\" kanggo nyuda dhaptar.",
+                "Semat ing sawijining piranti njaga piranti iku ing ndhuwur, ing sangisore Disemat.",
+                "Piranti mbukak ing tab sing padha; Berkas → Kabeh piranti bali menyang kaca kapisan. Ing Setelan sampeyan bisa nggawe saben piranti mbukak ing tab dhewe, lan tab anyar mbukak ing piranti sing pungkasan dienggo."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Tempel apa wae",
+          "body": [
+            "Kothak ing ndhuwur kaca kapisan nampa apa wae sing sampeyan tempel lan ngandhani katone kaya apa: token, sertifikat, JSON, UUID, stempel wektu, jadwal cron, URL, XML utawa HTML, SQL, Base64, checksum, tabel, YAML.",
+            "Ing sangisore saben pambatang ana piranti sing bisa nggarap barang kaya ngono, sing paling cocog dhisik. Klik siji: piranti mbukak karo teks sing wis ana ing njerone lan wis dilakokake.",
+            {
+              "note": "Apa sing sampeyan tempel tetep ana ing kothak nganti sampeyan ngresiki utawa nutup tab. Ora tau ditulis ing disk."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Tata letak piranti",
+          "body": [
+            "Akeh-akehe piranti duwe pigura sing padha: pilihan ing siji baris ing ndhuwur, isian ing sisih siji, asil ing sisih liyane, lan baris ing ngisor sing ngandhani apa sing kedadeyan.",
+            {
+              "points": [
+                "Asil digawe maneh saben isian utawa sawijining pilihan owah, lan dituduhake ing asil; \"Mlaku dhewe\" ing baris pilihan nuduhake iku. Mung teks sing kedawan kanggo dilakokake saben tombol dipencet, utawa berkas sing luwih gedhe tinimbang 128 MB, sing ngenteni tombol Lakokake, sing banjur katon. Ctrl+Enter nglakokake piranti kapan wae.",
+                "Asil sing dudu teks (gambar sing didekode saka Base64, gzip) dituduhake minangka pratayang: gambar kaya apa anane, liyane miturut jinise, ukurane lan byte-byte kapisane. Salin banjur nyalin minangka Base64, lan gambar bisa disalin minangka gambar. Semono uga berkas isian sing dudu teks.",
+                "Bukak berkas, Tempel lan Resiki ana ing ndhuwur isian; Salin lan Simpen menyang berkas ing ndhuwur asil. Berkas uga bisa diseret lan diculake ing isian.",
+                "Apa sing salah ing isian dikandhakake nganggo tembung, karo baris lan kolome, lan ditandhani ing editor.",
+                "Menu Tampilan nata rong panel jejer utawa siji ing ngisor sijine, nuduhake nomer baris lan nglempit baris sing dawa; garis antarane panel bisa diseret.",
+                "Pilihan sing sampeyan pilih dieling kanggo sabanjure. Apa sing sampeyan ketik ora."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Obong, lan apa sing disimpen",
+          "body": [
+            "Obong, ing pojok tengen ngisor saben piranti, ngosongake piranti iku sanalika: isian, asil, apa wae sing diketik ing kothak-kothake, lan apa sing isih bisa diwurungake ing editore.",
+            "Dev mung nyimpen setelane, piranti sing sampeyan semat, jeneng piranti sing pungkasan dienggo lan pilihan saben piranti. Apa wae sing sampeyan ketik, tempel, bukak utawa gawe ing piranti ora ditulis ing disk, ing log utawa ing dhaptar barang anyar. Apa maneh wewadi: kunci, frasa sandhi, token lan header panjaluk mung ana ing tab lan ora ing endi-endi liyane.",
+            "Ana siji sing ngenteni ing disk sawetara wektu: asil saka berkas, lan asil sing dudu teks, ditulis ing folder duweke program dhewe supaya bisa dituduhake banjur disimpen. Saben siji dibusak nalika asil liyane nggenteni panggonane, nalika sampeyan ngobong utawa nutup piranti, lan apa wae kahanane nalika Dev diwiwiti maneh."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Berkas ukuran pira wae",
+          "body": [
+            "Ukuran berkas ora diwatesi. Berkas sing cukup cilik kanggo dituduhake (nganti 16 MB) dilebokake ing editor. Sing luwih gedhe, utawa sing dudu teks, tetep ana ing disk: wiwitane (utawa pratayange) dituduhake, piranti maca saka panggonane, lan asile dituduhake kaya kanggo teks. Simpen menyang berkas banjur nyalin asile menyang panggonan sing sampeyan pilih.",
+            {
+              "points": [
+                "Garapan sing suwe nuduhake kertu karo tekan ngendi lakune lan tombol Mandheg.",
+                "Berkas teks ing enkoding liya saka UTF-8 (UTF-16, Windows-1252 lan sapanunggalane) diwaca minangka teks yen cukup cilik kanggo dituduhake, lan enkodinge dikandhakake. Apa sing sampeyan simpen saka Dev nganggo UTF-8.",
+                "Berkas sing diseret lan diculake ing piranti dibukak kaya nganggo Bukak berkas. Yen jendhela ora bisa ngerti ing endi panggonane, berkas ditampa nganti 16 MB, kaya ditempel."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Akeh berkas lan folder wutuh",
+          "body": [
+            "Yen piranti duwe \"Garap: Teks / Berkas\", Berkas nglakokake piranti iku ing akeh berkas sapisan.",
+            {
+              "steps": [
+                "Tambahake berkas, utawa folder (karo folder-folder ing njerone, yen pilihan iku sampeyan jarake urip).",
+                "Saben berkas diwaca sapisan nalika ditambahake lan dikandhani apa piranti nampa berkas iku.",
+                "Pilih panggonan asile: ing sandhinge saben berkas kanthi jeneng anyar, menyang folder (folder-foldere tetep), utawa nimpa berkas-berkas iku dhewe, sing takon sapisan maneh marang sampeyan. Hash uga bisa mung nuduhake asile ing dhaptar.",
+                "Klik berkas ing dhaptar kanggo ndeleng asile dhewe ing ngisor pilihan-pilihan, sadurunge ana sing ditulis.",
+                "Lakokake. Berkas sing salah ora ngendhegake liyane; saben berkas ngandhani kepiye asile."
+              ]
+            },
+            {
+              "note": "Asil ora tau nimpa berkas sing wis ana kajaba sampeyan njaluk."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Menu klik-tengen Windows Explorer",
+          "body": [
+            "Uripake ing Setelan program, ing Windows Explorer. Kabeh dikumpulake ing siji baris, \"Syntelab Creative\"; ing Windows 11 ana ing \"Show more options\".",
+            {
+              "points": [
+                "Bukak ing Syntelab Dev: ing jinis berkas sing diwaca sawijining piranti (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz lan sapanunggalane). Berkas mbukak ing piranti kanggo jinise.",
+                "Checksum: ing berkas utawa folder apa wae. Digest-e didhaptar, saben siji ing sandhinge berkase, lan ora ana sing ditulis.",
+                "Tampilan hex: ing berkas apa wae.",
+                "Bandhingake: rong berkas mlebu ing rong sisih Diff; rong folder mlebu ing pambandhingan folder."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Enkode",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Ngowahi byte dadi Base64 lan kosok baline. Enkode nampa berkas apa wae; dekode mbalekake byte-byte, dituduhake yen awujud teks lan disimpen menyang berkas yen ora.",
+            {
+              "points": [
+                "Alfabet: sing baku, utawa sing kanggo URL (- lan _).",
+                "Isi nganggo =, lan baris isi 64, 76 utawa pira wae aksara.",
+                "Dekode nampa loro alfabet, nganggo utawa tanpa isen-isen, lan ngandhani ing ngendi ana aksara sing salah."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Enkode / dekode URL",
+          "body": [
+            "Enkode persen, kaya sing ditulis browser: perangan alamat (kabeh sing dudu aksara biasa dienkode), alamat wutuh (tandha-tandhane dhewe dijarake), utawa formulir (+ kanggo spasi).",
+            "Dekode ngandhani ing ngendi tandha % ora diterusake rong digit heksadesimal."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Entitas HTML",
+          "body": [
+            "Nulis tandha-tandha sing dicadhangake HTML lan XML kanggo awake dhewe (&, <, >, tandha petik) minangka entitas, lan maca entitas bali: miturut jeneng, angka desimal utawa angka heksadesimal. Jenenge miturut standar HTML.",
+            "\"Saben aksara sing dudu ASCII uga\" nulis aksara nganggo tandha lan alfabet liyane minangka entitas uga."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Dekoder JWT",
+          "body": [
+            "Ngurai JSON Web Token: header lan payload-e minangka JSON, lan klaim-klaime nganggo tembung (panerbit, subyek, panampa, kapan kadaluwarsa, karo \"wis kadaluwarsa\" utawa \"durung kadaluwarsa\").",
+            "Wenehi wewadine kanggo mriksa tandha tangan sing digawe nganggo wewadi bareng (HS256, HS384, HS512). Tandha tangan sing digawe nganggo kunci pribadi (RS, ES, PS) ora dipriksa.",
+            {
+              "note": "Token lan wewadine tetep ana ing tab: ora ana sing dikirim menyang ngendi-endi kanggo ndekode token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / urai escape",
+          "body": [
+            "Nulis teks minangka string sawijining basa (JSON, JavaScript, C, C++, Java lan sapanunggalane) kanthi tandha petik, ganti baris lan tandha liyane di-escape, lan maca string kaya ngono bali."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Ngompres lan mbukak kompresan gzip, berkas ukuran pira wae nalika diwaca. Tingkate saka paling cepet nganti paling cilik; asil saka teks bisa diwenehake minangka Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Basis angka",
+          "body": [
+            "Nuduhake angka wutuh, siji ing saben baris, ing biner, oktal, desimal lan heksadesimal, lan ing siji basis maneh sing sampeyan pilih, nganti 36. Angka ora duwe ukuran paling gedhe.",
+            {
+              "points": [
+                "Basis sawijining angka dingerteni saka carane ditulis: 0x kanggo heksadesimal, 0b kanggo biner, 0o kanggo oktal, aksara kanggo heksadesimal, liyane desimal. Utawa pilih basis sing dienggo maca kabeh.",
+                "Spasi, garis ngisor lan apostrof ing antarane digit dilewati: 1_000_000.",
+                "Angka negatif uga diwenehake kaya carane komputer nyimpen (komplemen loro), ing ukuran paling cilik saka 8, 16, 32, 64 bit lan sateruse sing bisa nampung."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Panata JSON",
+          "body": [
+            "Nata, ngringkes lan mriksa keabsahan JSON, lan nuduhake minangka wit. Dokumen ukuran pira wae diwaca minangka aliran.",
+            {
+              "points": [
+                "Indentasi nganggo 2 utawa 4 spasi, tab, utawa spasi pira wae.",
+                "Pilihan liyane: urutake kunci, dhaptar cendhak ing siji baris, spasi sawise titik loro, pungkasane baris, ganti baris ing pungkasan, aksara non-ASCII minangka \\uXXXX.",
+                "Maca kanthi luwes nampa komentar (// lan /* */) lan koma ing pungkasan, lan nulis JSON sing ketat.",
+                "Owahan: buwang null, buwang nilai kosong lan sapanunggalane, sapisan lakon.",
+                "Wit mbukak tingkat siji-siji lan nggoleki teks ing kunci lan nilai."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Nglakokake pitakon JSONPath (RFC 9535) ing dokumen: $.store.book[?@.price < 10].title. Asile nilai sing ketemu, dalan menyang nilai-nilai iku, utawa loro-lorone.",
+            "Pitakon sing salah dikandhakake karo panggonan salahe."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Pamriksa JSON Schema",
+          "body": [
+            "Mriksa dokumen miturut JSON Schema (draf 4 nganti 2020-12). Skema dilebokake ing panel ing ngisor isian. Saben bab sing ora cocog didhaptar karo panggonane lan aturan sing dilanggar.",
+            "Ing akeh berkas, saben berkas dipriksa miturut skema sing padha. $ref menyang berkas liya utawa menyang alamat ora diturut."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Panggawe skema lan JSON → TypeScript",
+          "body": [
+            "Saka conto JSON, panggawe skema nulis JSON Schema sing cocog, lan JSON → TypeScript nulis deklarasi tipene (interface utawa type, diekspor utawa ora, readonly utawa ora, kanthi jeneng sing sampeyan wenehake)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Ngowahi YAML dadi JSON lan JSON dadi YAML. YAML diwaca miturut skema inti, anchor lan merge diturut; sing salah dikandhakake karo panggonane."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Ngowahi tabel dadi JSON lan kosok baline. Pamisah dingerteni saka baris kapisan, utawa dipilih (koma, titik koma, tab, garis tegak); baris kapisan bisa dadi sirahan; angka lan true / false bisa dikenali.",
+            "\"Tabel\" nuduhake CSV ing baris lan kolom, berkas ukuran pira wae."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Panata XML / HTML",
+          "body": [
+            "Nata, ngringkes lan mriksa XML lan HTML. XML diwaca kanthi ketat: tag sing ora tau ditutup dikandhakake karo panggonane. HTML diwaca kanthi longgar kaya browser."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Panata SQL",
+          "body": [
+            "Nata pernyataan, siji klausa saben baris, utawa nyelehake ing siji baris; tembung kunci nganggo aksara gedhe, aksara cilik utawa kaya sing ditulis. Ora njaluk dialek lan ora mriksa tegese pernyataan."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Mbandhingake rong teks baris saka baris, rong dokumen JSON miturut isine, utawa rong folder berkas saka berkas. Sing kapisan ing isian, sing kapindho ing panel ing ngisore.",
+            {
+              "points": [
+                "Jejer nandhani tembung sing owah ing njero baris; Gabungan (unified) iku patch kaya sing ditulis diff -u.",
+                "Aja nggatekake aksara gedhe/cilik, spasi, baris kosong, digit utawa tandha waca.",
+                "Kanggo JSON, urutan kunci lan tata letak ora dianggep beda; asile bisa awujud JSON Patch (RFC 6902).",
+                "Folder: berkas endi sing mung ana ing salah siji, endi sing padha, endi sing beda; Bandhingake ing sawijining baris mbukak pasangan iku minangka teks."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Pratayang Markdown",
+          "body": [
+            "Nuduhake Markdown kaya bakal katone, lan menehi HTML-e kanggo disalin utawa disimpen: CommonMark karo tabel, coretan, dhaptar tugas lan cathetan sikil.",
+            {
+              "points": [
+                "HTML sing diketik ing njero Markdown dituduhake minangka teks, ora dilakokake.",
+                "Gambar sing kudune dijupuk saka jaringan ora dijupuk: katrangan lan alamate dituduhake ing panggonane. Gambar sing digawa ing njero teks (data:) dituduhake.",
+                "Pranala sing sampeyan klik mbukak ing browser sistem."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gawe",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Nggawe UUID versi 1, 3, 4, 5, 6 lan 7 (RFC 9562), sakehe sing sampeyan jaluk, ditulis nganggo tandha sambung, polos, minangka URN utawa ing kurung kurawal. \"Urai\" ngandhani versi saben UUID lan wektu utawa jeneng ing njerone."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 lan SHA-512 saka teks utawa berkas, sawetara sapisan, ditulis minangka hex utawa Base64. Berkas ukuran pira wae di-hash nalika diwaca.",
+            {
+              "points": [
+                "Priksa karo: tempel checksum, utawa baris saka berkas .sha256; dikandhani cocog utawa ora.",
+                "Kunci HMAC: digest-e dadi HMAC nganggo kunci iku.",
+                "Saben baris dhewe-dhewe: siji digest kanggo saben baris teks.",
+                "Berkas: digest-e didhaptar ing sandhinge berkase; Salin kabeh menehi kaya sing ditulis sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Tembung sandhi lan wewadi",
+          "body": [
+            "Nggawe tembung sandhi saka jinis aksara sing sampeyan pilih, frasa sandhi saka tembung, lan byte acak minangka hex utawa Base64, saka angka acak sistem operasi. Saben siji ngandhani pira bit entropi sing diduweni. Yen wis ana sing digawe, ngowahi pilihan bakal nggawe maneh.",
+            "Frasa sandhi iku tembung-tembung sing dijupuk saka dhaptar tembung dawa Electronic Frontier Foundation (7776 tembung Inggris), saben tembung padha kemungkinane: enem tembung kira-kira 77 bit."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Kunci lan sertifikat",
+          "body": [
+            "Limang bab, dipilih ing ndhuwur:",
+            {
+              "points": [
+                "Kunci anyar: RSA, EC P-256 / P-384 / P-521 utawa Ed25519, diwenehake ing saben wujud sing ditampa program-program (PKCS #8, wujud lawas, OpenSSH; kunci publik minangka PEM lan minangka baris kanggo authorized_keys), dikunci nganggo frasa sandhi yen sampeyan menehi.",
+                "Panjaluk sertifikat: CSR kanggo kunci anyar utawa kunci sing sampeyan tempel, karo subyek lan jeneng liyane (SAN).",
+                "Sertifikat sing ditandhatangani dhewe: padha, ditandhatangani nganggo kuncine dhewe, kanggo sawetara dina; \"Kena nandhatangani sertifikat liyane\" ndadekake sertifikat iku otoritas duweke sampeyan dhewe.",
+                "Tandhatangani nganggo CA duweke dhewe: tempel panjaluk, sertifikat otoritas sampeyan lan kuncine; sampeyan entuk sertifikat sing wis ditandhatangani lan otoritase ing sawise.",
+                "Waca lan owahi: tempel utawa bukak apa wae (PEM, DER, kunci OpenSSH, berkas .pfx utawa .p12, dikunci utawa ora). Ngandhani apa sing ketemu lan apa kuncine iku kuncine sertifikat, lan nulis saben bab ing wujud liyane. Kunci lan sertifikate bisa disimpen bebarengan minangka .pfx."
+              ]
+            },
+            {
+              "note": "Kabeh digawe ing komputer iki. Kunci ana ing tab nganti Obong, lan ora ana ing endi-endi liyane kajaba sampeyan nyimpen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Priksa",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Panguji regex",
+          "body": [
+            "Njajal ekspresi reguler JavaScript ing teks: sing cocog karo klompok lan panggonane, utawa teks sing wis diganti sing cocog. Tandhane (flag) g, i, m, s, u, y.",
+            "Pola dilakokake kapisah saka jendhela, lan sing mlaku luwih saka 20 detik dimandhegake."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Panjlentrehan cron",
+          "body": [
+            "Ngandhani nganggo tembung tegese jadwal lan kapan dilakokake: crontab (limang kolom, enem nganggo detik, pitu nganggo taun), Quartz, AWS EventBridge cron() lan rate(), lan systemd OnCalendar. Siji jadwal saben baris.",
+            {
+              "points": [
+                "Lakon sabanjure, lan sing sadurunge yen dijaluk, ing zona wektu sing sampeyan pilih.",
+                "Dina ing seminggu dinomeri wiwit 0 kanggo Minggu, utawa wiwit 1 kaya Quartz nomeri, miturut pilihan sampeyan. Baris nganggo detik sing uga ana taun, L, W utawa # iku baris Quartz, lan diwaca kanthi cara Quartz dhewe.",
+                "Jadwal sing padha ing wujud liyane, kanggo disalin utawa ditambahake ing isian.",
+                "Panyusun nggawe jadwal kanthi milih saben kolom; \"Owahi ing panyusun\" nggawa jadwal sing diketik mlebu panyusun."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Stempel wektu Unix",
+          "body": [
+            "Maca titi wanci, siji saben baris: detik, milidetik, mikrodetik utawa nanodetik wiwit 1970, utawa tanggal sing ditulis kanthi cara sing lumrah (ISO 8601, kaya sing ditulis mail lan HTTP, kaya sing ditulis Git). Saben siji dikandhakake ing zona wektu sing sampeyan pilih, ing UTC, lan minangka saben jinis stempel wektu."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Pangurai URL",
+          "body": [
+            "Ngurai URL kaya carane browser maca: skema, pangguna, host (karo wujud Unicode-e yen ditulis nganggo punycode), port, dalan (path), saben parameter query sing wis didekode, lan fragmen."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Dekoder sertifikat",
+          "body": [
+            "Maca sertifikat X.509 saka PEM utawa DER lan nyritakake kabeh isine: subyek, panerbit, masa laku, jeneng-jeneng sing dituju, kuncine, ekstensine lan sidik jarine.",
+            "Mung maca; ora mbiji apa sertifikat kena dipercaya. Kanggo sertifikat sing dituduhake situs, lan apa komputer iki percaya, enggo Jaringan → Sertifikat situs."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Panampil hex",
+          "body": [
+            "Nuduhake byte-byte saka berkas ukuran pira wae, utawa saka teks sing ditempel: posisi saben baris, byte-byte, lan byte sing padha minangka aksara.",
+            {
+              "points": [
+                "Menyang posisi sing ditulis 0x1F4, 1F4h utawa 500.",
+                "Goleki byte (DE AD BE EF) utawa teks (UTF-8, utawa UTF-16 ing urutan endi wae), maju lan mundur.",
+                "Klik byte: sisih pinggir nuduhake isine minangka angka saben ukuran, ing urutan byte endi wae, minangka karakter lan minangka wektu.",
+                "Pilih kanthi nyeret, Shift utawa tombol panah; salin pilihan minangka hex, minangka kode, minangka Base64 utawa minangka teks, utawa simpen menyang berkas."
+              ]
+            },
+            {
+              "note": "Mung ndeleng: ora ana sing diowahi ing berkas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jaringan",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Menyang ngendi piranti jaringan",
+          "body": [
+            "Papat piranti iki mung siji-sijine perangan Dev sing nyambung menyang internet, lan piranti iku menyang ngendi sing sampeyan tuju.",
+            {
+              "points": [
+                "Mung alamat sing sampeyan ketik sing dihubungi, lan mung nalika sampeyan mencet tombol. Ora tau ing latar mburi.",
+                "Sing dikirim iku apa sing sampeyan tulis. Siji-sijine sing ditambahake ing panjaluk yaiku User-Agent sing padha kanggo kabeh wong (\"Syntelab Creative\"), kajaba sampeyan menehi dhewe.",
+                "Ora ana cookie sing disimpen, ora ana bab sampeyan utawa komputer sing dikirim, lan apa wae sing diketik ora disimpen."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Klien HTTP",
+          "body": [
+            "Ngirim siji panjaluk sing ditulis tangan: metodhe, alamat, header (siji saben baris: Jeneng: nilai) lan awak, diketik utawa dijupuk saka berkas ukuran pira wae.",
+            {
+              "points": [
+                "Wangsulane: nomere, suwene (kabeh, lan nganti byte kapisan), ukurane, header-e, lan awake, diwernani miturut jinise lan ditata yen awujud JSON. Awak sing dudu teks (gambar, PDF) dituduhake kaya apa anane, lan disimpen kaya nalika teka.",
+                "Tututi pangalihan, utawa deleng wangsulan kapisan kaya asline. Alamat-alamat sing dilewati panjaluk didhaptar.",
+                "Priksa sertifikat miturut apa sing dipercaya komputer iki; pateni mung kanggo server duweke sampeyan dhewe.",
+                "\"Kirim, wangsulan menyang berkas\" nulis awak ukuran pira wae langsung menyang disk, karo kemajuan lan Mandheg.",
+                "\"Salin minangka curl\" menehi panjaluk sing padha minangka prentah."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Panggolekan DNS",
+          "body": [
+            "Takon marang server jeneng cathetan-cathetan sawijining jeneng: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, sawetara sapisan. Alamat menehi jenenge (PTR).",
+            "Pitakon menyang server jeneng sing disetel dienggo komputer, menyang server umum (1.1.1.1, 8.8.8.8, 9.9.9.9), menyang resolver liwat HTTPS (Cloudflare, Google), utawa menyang server sing sampeyan ketik."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Priksa port",
+          "body": [
+            "Ngandhani apa port-port sawijining host nampa sambungan TCP: siji, sawetara, utawa rentang nganti kabeh 65 535 (22, 80, 443, 8000-8100). Saben port mbukak, tutup, utawa ora ana wangsulan ing wektu sing sampeyan wenehake.",
+            {
+              "note": "Jajal mung host duweke sampeyan, utawa sing kena sampeyan uji."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Sertifikat situs",
+          "body": [
+            "Nuduhake sertifikat sing diwenehake situs nalika sambungan aman digawe: kanggo sapa, sapa sing nandhatangani, kari pira dina, apa komputer iki percaya lan yen ora, kenapa, versi TLS lan cipher-e. Mung salaman (handshake) sing ditindakake: ora ana panjaluk sing dikirim.",
+            {
+              "points": [
+                "Tulisen example.com, example.com:8443 utawa alamat web.",
+                "Server mail lan FTP diwiwiti tanpa enkripsi lan dijaluk pindhah menyang TLS (STARTTLS): dipilih miturut port (25, 587, 143, 110, 21) utawa kanthi tangan.",
+                "\"Kabeh\" nuduhake kabeh sing diandharake sertifikat; \"PEM\" menehi sertifikat kanggo disalin utawa disimpen."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Setelan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Setelan Dev",
+          "body": [
+            "Berkas → Bukak Setelan mbukak Setelan program ing perangan Dev.",
+            {
+              "points": [
+                "Bukak saben piranti ing tab dhewe, utawa ing tab panggonane dipilih.",
+                "Bukak tab anyar ing piranti sing pungkasan dienggo, utawa ing kaca kapisan.",
+                "Balekake pilihan saben piranti, lan sematan, kaya nalika program dikirim."
+              ]
+            },
+            "Menu klik-tengen Windows Explorer, basa, tema lan tombol ana ing Setelan program sakabehe."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Babagan Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Babagan Dev",
+          "body": [
+            "Dev iku aplikasi Syntelab Creative kanggo pangembang: piranti kanggo ngenkode lan ndekode, nata lan mriksa, ngowahi wujud data siji dadi liyane, lan ngurai apa sing angel diwaca kaya asline.",
+            "Kabeh ditindakake ing komputer iki. Apa wae sing sampeyan ketik, tempel utawa bukak ing piranti ora disimpen lan ora dikirim menyang ngendi-endi. Ukuran lan cacahe berkas ora diwatesi: watese mung memori lan disk komputer.",
+            "Aplikasi iki isih anyar lan isih digawe. Yen ana sing kurang kanggo pagawean sampeyan, critakna marang kita liwat Pitulung → Panemu."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Dev digawe nganggo apa",
+          "body": [
+            {
+              "points": [
+                "Editor: CodeMirror, https://codemirror.net . Lisensi MIT. Hak cipta (C) 2018-2021 Marijn Haverbeke lan liyane.",
+                "Maca lan menehi werna JSON ing editor: @codemirror/lang-json, https://github.com/codemirror/lang-json , karo @codemirror/language lan @lezer/highlight. Lisensi MIT. Hak cipta (C) 2018-2021 Marijn Haverbeke lan liyane.",
+                "Maca lan menehi werna YAML, XML, HTML lan SQL ing editor: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (karo @codemirror/lang-css lan @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Lisensi MIT. Hak cipta (C) 2018-2024 Marijn Haverbeke lan liyane.",
+                "Mriksa dokumen miturut JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Lisensi MIT. Hak cipta (c) 2020-2026 Dmitry Dygalo. Digawe tanpa perangan jaringane: Dev ora tau njupuk skema saka jaringan.",
+                "Pola-pola JSONPath (match lan search): regex, https://github.com/rust-lang/regex . Lisensi MIT utawa Apache-2.0. Hak cipta (c) 2014 The Rust Project Developers.",
+                "Maca YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Lisensi MIT utawa Apache-2.0. Hak cipta (c) 2015 Chen Yuheng, Hak cipta (c) 2023 Ethiraric. Nulis YAML ditindakake Dev dhewe.",
+                "Mbandhingake rong teks (Diff): similar, https://github.com/mitsuhiko/similar . Lisensi Apache-2.0. Panganggit: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Lisensi MIT utawa Apache-2.0. Hak cipta (c) 2014-2026 Alex Crichton.",
+                "Digest piranti Hash lan tandha tangan token: sha2, sha1 lan md-5, https://github.com/RustCrypto/hashes . Lisensi MIT utawa Apache-2.0. Hak cipta (c) 2006-2009 Graydon Hoare, Hak cipta (c) 2009-2013 Mozilla Foundation, lan para pangembang RustCrypto.",
+                "Tanggal, wektu lan zona wektu (Stempel wektu Unix, Panjlentrehan cron): jiff, https://github.com/BurntSushi/jiff , karo zona wektu saka basis data IANA. Lisensi Unlicense utawa MIT. Hak cipta (c) 2015 Andrew Gallant.",
+                "Ngurai URL: url lan idna, https://github.com/servo/rust-url . Lisensi MIT utawa Apache-2.0. Hak cipta (c) 2013-2025 The rust-url developers.",
+                "Maca sertifikat X.509: x509-parser, https://github.com/rusticata/x509-parser . Lisensi MIT utawa Apache-2.0. Hak cipta (c) 2017 Pierre Chifflier.",
+                "Panguji regex nglakokake ekspresi reguler JavaScript, ing mesin WebView sing dienggo program kanggo nggambar (Microsoft Edge WebView2 ing Windows); ora ana pustaka sing ditambahake kanggo iki.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Lisensi MIT utawa Apache-2.0. Hak cipta (c) 2018 Sam Rijs, Alex Crichton lan para kontributor.",
+                "UUID: uuid, https://github.com/uuid-rs/uuid . Lisensi Apache-2.0 utawa MIT. Hak cipta (c) 2014 The Rust Project Developers, Hak cipta (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Byte acak kanggo tembung sandhi, wewadi lan UUID, saka sistem operasi: getrandom, https://github.com/rust-random/getrandom . Lisensi MIT utawa Apache-2.0. Hak cipta (c) 2018-2025 The rust-random Project Developers, Hak cipta (c) 2014 The Rust Project Developers.",
+                "Kunci lan tandha tangan RSA: rsa, https://github.com/RustCrypto/RSA , karo num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Lisensi MIT utawa Apache-2.0. Hak cipta (c) RustCrypto Developers lan dignifiedquire; Hak cipta (c) 2014 The Rust Project Developers.",
+                "Kunci lan tandha tangan kurva NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , karo ecdsa, elliptic-curve lan crypto-bigint sing dibutuhake. Lisensi Apache-2.0 utawa MIT. Hak cipta (c) 2020-2023 RustCrypto Developers.",
+                "Kunci lan tandha tangan Ed25519: ed25519-dalek lan curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Lisensi BSD 3-Clause. Hak cipta (c) 2017-2019 isis agora lovecruft; Hak cipta (c) 2016-2021 isis agora lovecruft lan Henry de Valence. Kabeh hak dilindhungi.",
+                "Wujud-wujud sing dienggo nulis kunci, panjaluk lan sertifikat (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER lan PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Lisensi Apache-2.0 utawa MIT. Hak cipta (c) 2020-2023 The RustCrypto Project Developers.",
+                "Berkas kunci OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , karo bcrypt-pbkdf, aes, ctr, chacha20 lan cipher sarta hash RustCrypto liyane sing dibutuhake kanggo ngunci kunci ( https://github.com/RustCrypto ). Lisensi Apache-2.0 utawa MIT. Hak cipta (c) 2021-2024 The RustCrypto Project Developers.",
+                "Berkas PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , karo pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 lan scrypt saka RustCrypto sing dibutuhake. Lisensi MIT utawa Apache-2.0. Hak cipta (c) Dmitry Pankratov; Hak cipta (c) The RustCrypto Project Developers.",
+                "Angka acak sing dienggo nggawe kunci, dijupuk saka sistem operasi: rand_core, https://github.com/rust-random/rand . Lisensi MIT utawa Apache-2.0. Hak cipta 2018 Developers of the Rand project, Hak cipta (c) 2014 The Rust Project Developers.",
+                "Klien HTTP: ureq, https://github.com/algesten/ureq . Lisensi MIT utawa Apache-2.0. Hak cipta (c) 2019 Martin Algesten.",
+                "Sambungan aman (TLS) klien HTTP lan \"Sertifikat situs\": rustls, https://github.com/rustls/rustls , lisensi Apache-2.0, ISC utawa MIT, Hak cipta (c) 2016 Joseph Birr-Pixton; karo rustls-webpki, https://github.com/rustls/webpki , lisensi ISC, Hak cipta 2015 Brian Smith; ring, https://github.com/briansmith/ring , lisensi Apache-2.0 lan ISC; webpki-roots, https://github.com/rustls/webpki-roots , lisensi CDLA-Permissive-2.0.",
+                "Apa komputer iki percaya marang sawijining sertifikat: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Lisensi MIT utawa Apache-2.0. Hak cipta (c) 2022 1Password.",
+                "Maca Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Lisensi MIT. Hak cipta 2015 Google Inc. Kabeh hak dilindhungi.",
+                "Maca berkas sing ditulis nganggo enkoding liya saka UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , lisensi Apache-2.0 utawa MIT (karo BSD-3-Clause kanggo datane), Hak cipta Mozilla Foundation; lan chardetng, https://github.com/hsivonen/chardetng , lisensi Apache-2.0 utawa MIT, Hak cipta Mozilla Foundation.",
+                "Tembung-tembung frasa sandhi: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , saka Electronic Frontier Foundation, dienggo miturut lisensi Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Dhaptar iki dienggo kaya asline.",
+                "Mbukak kunci sing dikunci nganggo cara lawas OpenSSL: aes, cbc lan des saka RustCrypto, https://github.com/RustCrypto . Lisensi MIT utawa Apache-2.0. Hak cipta (c) RustCrypto Developers.",
+                "Ditulis kanggo Dev, tanpa pustaka: panggolekan DNS (pitakon ditulis lan wangsulan diwaca kaya ing RFC 1035) lan priksa port.",
+                "Ditulis kanggo Dev, tanpa pustaka: maca lan nulis JSON minangka aliran, JSONPath (RFC 9535), Base64, enkode persen, referensi karakter HTML (jenenge miturut standar HTML, https://html.spec.whatwg.org ), escape string, maca JSON Web Token, nulis YAML, CSV bolak-balik, maca jadwal cron, panata XML lan HTML, lan panata SQL."
+              ]
+            },
+            "Apa sing dienggo bareng karo program liyane ana ing \"Babagan Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Apa sing durung bisa ditindakake Dev",
+          "body": [
+            {
+              "points": [
+                "Tandha tangan token mung dipriksa yen digawe nganggo wewadi bareng (HS256, HS384, HS512).",
+                "Pamriksa JSON Schema ngandhani apa sing ora cocog nganggo basa Inggris, kaya pustakane, lan ora nuruti $ref menyang berkas utawa alamat liya.",
+                "Panata SQL ora njaluk dialek lan ora mriksa tegese pernyataan: mung ngandhani string utawa komentar sing ora tau rampung.",
+                "YAML, lan JSON sing dadi YAML utawa CSV, disimpen wutuh ing memori nalika diowahi; CSV sing dadi JSON, XML, HTML lan SQL digarap nalika diwaca, pira wae ukurane.",
+                "Tabel kanggo ndeleng CSV mung kena diwaca: ora ana sing bisa diketik ing kono, lan durung ana sing bisa disalin saka kono.",
+                "Diff nyimpen nembelas byte kanggo saben baris saka rong berkas, dudu berkase dhewe; rong dokumen JSON disimpen wutuh, amarga ditulis anyar sadurunge dibandhingake.",
+                "Saperangan baris sing ora ana siji wae sing persis sapisan ing loro sisih dibandhingake sabisane sajrone sadetik: bedane sing dikandhakake bener, nanging ora mesthi sing paling sithik.",
+                "Diff ora mbandhingake pungkasane baris (CRLF utawa LF).",
+                "Rong folder dibandhingake miturut byte-byte berkase; berkas dicocogake miturut jenenge, aksara saka aksara.",
+                "Apa sing dikandhakake piranti Priksa iku JSON, kanthi jeneng-jenenge ing basa Inggris.",
+                "Panguji regex nglakokake ekspresi reguler JavaScript, dudu PCRE lan dudu duweke Rust; nggarap teks sing bisa dituduhake, dudu berkas sing ana ing disk; pola sing mlaku luwih saka 20 detik dimandhegake.",
+                "Dekoder sertifikat maca sertifikat lan ora mriksa apa kena dipercaya: dudu rantene, dudu tandha tangane, dudu apa wis dicabut.",
+                "Berkas teks ing enkoding liya saka UTF-8 diwaca yen cukup cilik kanggo dituduhake; sing luwih gedhe, sing digarap saka disk, kudu UTF-8.",
+                "Berkas sing diseret lan diculake ing piranti ditampa nganti 16 MB; jendhela ora dikandhani ing ngendi berkas iku ana ing disk, dadi sing luwih gedhe dibukak nganggo Bukak berkas.",
+                "Frasa sandhi mung digawe saka tembung basa Inggris.",
+                "Panjlentrehan cron: panyusun nggawe jadwal crontab (limang kolom, utawa enem nganggo detik); jadwal karo L, W, # utawa ? ora bisa digawa mlebu panyusun. Wektu-wektu AWS rate() ora bisa dikandhakake, amarga diitung wiwit aturane digawe. Saka systemd, acara tanggalan sing lumrah diwaca; dudu pecahan detik utawa dhaptar dina sing diitung saka pungkasane sasi.",
+                "Panampil hex mung ndeleng: ora ana sing diowahi ing berkas. Kolom teks nuduhake ASCII utawa aksara Eropa Kulon, dudu alfabet liyane; sing digoleki byte utawa teks, dudu pola.",
+                "Kunci lan sertifikat: kunci sing diwaca RSA, kurva P-256, P-384 lan P-521, lan Ed25519; liyane (DSA, secp256k1, X25519) ora diwaca. Kunci sing dikunci nganggo cara lawas OpenSSL bisa dibukak yen cipher-e AES utawa 3DES. Berkas .pfx isine siji kunci karo sertifikat-sertifikate. Nggawe kunci RSA sing gedhe banget butuh wektu lan ora bisa dimandhegake ing tengah dalan. Pustaka sing nggawe kunci RSA duwe kekirangan sing wis dikenal marang panyerang sing bisa ngukur wektu akeh tandha tangan liwat jaringan (RUSTSEC-2023-0071): ing kene kunci digawe lan ditulis ing komputer sampeyan, lan ora ana sing ditandhatangani kanggo wong liya.",
+                "Klien HTTP: HTTP/1.1 (dudu HTTP/2 utawa 3); ora ana cookie sing disimpen ing antarane panjaluk; formulir sing dumadi saka sawetara perangan (multipart) ora digawekake; wangsulan sing luwih gedhe saka 16 MB, utawa sing dudu teks, ditulis menyang berkas kanthi ngirim panjaluk maneh.",
+                "Panggolekan DNS nuduhake tandha tangan (DNSSEC) lan ora mriksa. Priksa port mung njajal TCP: port UDP sing meneng ora bisa dibedakake karo sing tutup. Sertifikat situs ora takon apa sertifikat wis dicabut.",
+                "Menu klik-tengen kanggo Windows Explorer; ing Windows 11 entri-entrine ana ing \"Show more options\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

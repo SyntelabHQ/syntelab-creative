@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Àwọn ọ̀rọ̀ àti fáìlì",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Olóòtú",
+          "body": [
+            "Scribe jẹ́ olóòtú ọ̀rọ̀ lásán pẹ̀lú àwọn irinṣẹ́ rẹ̀ lẹ́gbẹ̀ẹ́ rẹ̀. Ọ̀rọ̀ kọ̀ọ̀kan ní táàbù kan; ọ̀rọ̀ náà wà ní àárín, pánẹ́lì àwọn irinṣẹ́ ní ẹ̀gbẹ́ rẹ̀, àti ìlà àwọn òkodoro òtítọ́ kan nísàlẹ̀ rẹ̀.",
+            "Nígbà tí a bá ṣí Scribe, ó kọ́kọ́ ń béèrè ohun tí o fẹ́ ṣe: ka àwọn ọ̀rọ̀, wá kí o sì rọ́pò, yọ àwọn tí ó jọra kúrò, fi ọ̀rọ̀ méjì wé ara wọn, to àwọn ìlà lẹ́sẹẹsẹ, yí ọ̀rọ̀ padà sẹ́yìn, kọ ọ̀rọ̀ ìkún ààyè tàbí ọ̀rọ̀ àìròtẹ́lẹ̀. Àṣàyàn kọ̀ọ̀kan ń ṣí ọ̀rọ̀ náà pẹ̀lú irinṣẹ́ rẹ̀ lẹ́gbẹ̀ẹ́ rẹ̀; \"Ọ̀rọ̀ òfo\" ń ṣí ọ̀rọ̀ náà nìkan, a sì ń to àwọn ọ̀rọ̀ tí a ṣí láìpẹ́ sílẹ̀ nísàlẹ̀.",
+            {
+              "points": [
+                "Fáìlì → Ọ̀rọ̀ tuntun (Ctrl+N) ń bẹ̀rẹ̀ ọ̀rọ̀ òfo kan.",
+                "Fáìlì → Ṣí (Ctrl+O) ń ṣí fáìlì kan tàbí púpọ̀, ọ̀kọ̀ọ̀kan nínú táàbù rẹ̀. Fáìlì èyíkéyìí tí ó ní ọ̀rọ̀ ń ṣí: .txt, .md, .csv, .log, .srt, kóòdù orísun àti àwọn míì.",
+                "Àtúnṣe → Dá a padà (Ctrl+Z) àti Tún un ṣe (Ctrl+Y) ń la gbogbo ohun tí a ṣe sí ọ̀rọ̀ náà kọjá, irinṣẹ́ kan tàbí ìlànà kan jẹ́ ìgbésẹ̀ kan.",
+                "Àtúnṣe → Wá kí o sì rọ́pò (Ctrl+F) ń ṣí ìlà kan nínú olóòtú tí ó ń lọ láti ìbámu kan sí èyí tó kàn.",
+                "Àtúnṣe → Yan gbogbo rẹ̀ (Ctrl+A)."
+              ]
+            },
+            "Ìlà tó wà lábẹ́ ọ̀rọ̀ náà ń fi ibi tí atọ́ka ìkọ̀wé wà hàn, iye tí a yàn, iye àwọn ìlà, ọ̀rọ̀ àti àmì-lẹ́tà, ọ̀nà kóòdù fáìlì náà àti bí àwọn ìlà rẹ̀ ṣe ń parí.",
+            "Àwọn fáìlì tí a jù sílẹ̀ sórí fèrèsé náà ń ṣí pẹ̀lú, ọ̀kọ̀ọ̀kan bí ọ̀rọ̀ tuntun pẹ̀lú orúkọ, ọ̀nà kóòdù àti òpin ìlà fáìlì náà. Ètò náà ń gba ohun tí ó wà nínú fáìlì tí a jù sílẹ̀ ṣùgbọ́n kò mọ ibi tí ó wà lórí díìsì, nítorí náà fífi pamọ́ ń béèrè ibi tí a ó fi sí; àwọn fáìlì tí ó ju 64 MB lọ ni a ń ṣí pẹ̀lú Fáìlì → Ṣí.",
+            "Ọ̀rọ̀ tuntun, nígbà tí ó ṣì ṣófo, ń to àwọn ọ̀rọ̀ tí a ṣí láìpẹ́ sílẹ̀: tẹ ọ̀kan láti ṣí i. \"Gbàgbé àtòjọ náà\" ń sọ ọ́ di òfo; orí kọ̀ǹpútà yìí nìkan ni a ń pa àtòjọ náà mọ́ sí."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Fi pamọ́ àti Fi pamọ́ bí",
+          "body": [
+            "Kò sí ohun tí ó ń yí fáìlì orí díìsì padà títí o fi fi pamọ́. Àmì kékeré lórí táàbù ń sọ pé ọ̀rọ̀ náà ní àwọn àyípadà tí kò sí nínú fáìlì rẹ̀, pípa irú táàbù bẹ́ẹ̀ dé sì ń kọ́kọ́ béèrè.",
+            {
+              "points": [
+                "\"Fi pamọ́\" (Ctrl+S) ń kọ ọ̀rọ̀ náà sórí fáìlì rẹ̀. Ọ̀rọ̀ tuntun ń béèrè ibi tí a ó fi sí.",
+                "\"Fi pamọ́ bí\" (Ctrl+Shift+S) ń kọ ọ́ sínú fáìlì tuntun, èyí tí ó ń gba ipò táàbù náà lẹ́yìn náà, pẹ̀lú gbogbo ohun tí a lè dá padà ṣì wà níbẹ̀; fáìlì àtijọ́ ń wà bí ó ṣe wà."
+              ]
+            },
+            "A ń kọ fáìlì lódidi tàbí kí a má kọ ọ́ rárá: tí kíkọ bá kùnà, fáìlì tí ó wà níbẹ̀ ṣì wà níbẹ̀.",
+            {
+              "note": "A ń fi fáìlì pamọ́ bí a ṣe ṣí i: ní ọ̀nà kóòdù kan náà, pẹ̀lú òpin ìlà kan náà. Ọ̀rọ̀ tí a tẹ̀ lórí Windows àti èyí tí a tẹ̀ lórí Linux ń wà bí wọ́n ṣe wà."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Ọ̀nà kóòdù àti òpin ìlà",
+          "body": [
+            "Ọ̀nà kóòdù ni ọ̀nà tí a fi ń pa lẹ́tà mọ́ bí báìtì. Scribe ń ka ohun tí fáìlì náà sọ nípa ara rẹ̀, ó sì ń fojú sùn ún nígbà tí kò bá sọ nǹkan kan. Ọ̀pọ̀ fáìlì òde òní jẹ́ UTF-8; àwọn àtijọ́ láti Àárín Gbùngbùn Europe sábà máa ń jẹ́ windows-1250.",
+            {
+              "points": [
+                "Àwọn lẹ́tà tí ó rí bí ẹni pé wọn kò tọ́ (Ã£ ní ipò ă, tàbí àwọn onígun mẹ́rin): Fáìlì → \"Tún un kà ní ọ̀nà kóòdù míì\", kí o sì yan èyí tí a fi kọ fáìlì náà.",
+                "Láti fi pamọ́ ní ọ̀nà kóòdù míì, yàn án lórí ìlà tó wà lábẹ́ ọ̀rọ̀ náà, lẹ́yìn náà fi pamọ́. Tí ọ̀rọ̀ náà bá ní àwọn lẹ́tà tí ọ̀nà kóòdù yẹn kò lè kọ, Scribe yóò sọ èwo, kò sì ní kọ nǹkan kan.",
+                "Òpin ìlà (Windows CRLF, Linux àti macOS LF, Mac àtijọ́ CR) ni a ń yí padà ní ibi kan náà. A ń sọ pé fáìlì tí ó ní òpin ìlà àdàlù ní wọn; fífi pamọ́ ń fún gbogbo ìlà rẹ̀ ní ọ̀kan náà."
+              ]
+            },
+            "Ohun tí ọ̀rọ̀ tuntun fi ń bẹ̀rẹ̀ ni a ń yàn nínú Ètò."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Bí a ṣe ń fi ọ̀rọ̀ náà hàn",
+          "body": [
+            {
+              "points": [
+                "Gbogbo ohun tó wà nínú àkójọ àṣàyàn Ìfihàn jẹ́ ìyípadà: ní títàn, a ń rí i; ní pípa, a kò rí i.",
+                "Ọ̀rọ̀: Ṣẹ́ àwọn ìlà gígùn (Alt+Z) — ìlà tí ó gùn ju fèrèsé lọ ń bá a lọ nísàlẹ̀, ọ̀rọ̀ náà sì ń pa àwọn ìlà rẹ̀ mọ́; Nọ́ńbà ìlà; Àbájáde lẹ́gbẹ̀ẹ́ ọ̀rọ̀ náà.",
+                "Lẹ́gbẹ̀ẹ́ ọ̀rọ̀ náà: Àwọn irinṣẹ́ (Ctrl+T), Àwọn ìlànà, Ìṣirò. Pánẹ́lì ń fi àwọn apá tí ó wà ní títàn nìkan hàn; tí kò bá sí ọ̀kan ní títàn, kò sí pánẹ́lì.",
+                "Àwọn irinṣẹ́ tí a fi hàn: a lè yọ ẹgbẹ́ irinṣẹ́ kọ̀ọ̀kan (wá kí o sì rọ́pò, àwọn ìlà, lẹ́tà ńlá àti lẹ́tà, ìmọ́tótó, kọ ọ̀rọ̀) kúrò nínú pánẹ́lì. Irinṣẹ́ tí a yàn láti inú àkójọ àṣàyàn Ìṣètò tàbí Àwọn irinṣẹ́ ni a ń fi hàn bákan náà: apá rẹ̀ àti ẹgbẹ́ rẹ̀ ń padà wá fúnra wọn.",
+                "Ọfà ẹ̀ẹ̀mejì lókè pánẹ́lì ń ká a kéré sí ìlà tóóró kan ní etí, láti ibi tí apá rẹ̀ kọ̀ọ̀kan wà ní títẹ̀ kan sí ọ; fa etí rẹ̀ láti mú un fẹ̀ sí i tàbí kí ó dín kù.",
+                "A ń yan àwọn lẹ́tà àti ìwọ̀n wọn nínú Ètò."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Àwọn fáìlì tí ó tóbi púpọ̀",
+          "body": [
+            "A kò fi fáìlì tí ó ju 64 MB lọ sínú olóòtú: ó ń ṣí nínú táàbù kan tí ó ń fi í hàn ní ojú-ewé ìlà 500 lẹ́ẹ̀kan, tí a ń kà láti inú fáìlì bí o ṣe ń lọ. Àwọn fáìlì gígábáìtì ń ṣí lọ́nà yìí ní àkókò tí ó gbà láti la wọ́n kọjá lẹ́ẹ̀kan.",
+            {
+              "points": [
+                "\"Ojú-ewé tó ṣáájú\" àti \"Ojú-ewé tó kàn\" ń rìn kọjá nínú rẹ̀; nọ́ńbà ìlà kan àti \"Lọ\" ń fò sí ìlà èyíkéyìí.",
+                "Wíwá ń wo gbogbo fáìlì náà, pẹ̀lú àwọn àṣàyàn kan náà bí ibòmíì, ó sì ń to àwọn ibi tí ó rí sílẹ̀: tẹ ọ̀kan láti lọ sí ìlà rẹ̀. Àtòjọ gígùn ń wá ní apá-apá, pẹ̀lú \"Wá sí i\".",
+                "\"Mú ìlànà kan ṣiṣẹ́ lórí gbogbo fáìlì náà\" ń kọ àbájáde sínú fódà tí o yàn, lábẹ́ orúkọ kan náà. A kò yí fáìlì náà fúnra rẹ̀ padà níbí láé.",
+                "\"Ṣí odidi rẹ̀ nínú olóòtú\" ń fi í sínú olóòtú bákan náà, láti fi ọwọ́ yí i padà. Ó lè lọ́ra, ó sì nílò ìrántí tí ó pọ̀ ní ìgbà mélòó kan ju ìwọ̀n fáìlì náà lọ."
+              ]
+            },
+            {
+              "note": "A kò lè fi àwọn fáìlì tí a kọ ní báìtì méjì fún lẹ́tà kan (UTF-16) hàn ní ojú-ewé kan lẹ́ẹ̀kan. Ìlànà kan ń mú gbogbo fáìlì náà sínú ìrántí nígbà tí ó ń ṣiṣẹ́: ààlà náà ni ìrántí kọ̀ǹpútà."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Àwọn irinṣẹ́",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Bí àwọn irinṣẹ́ ṣe ń ṣiṣẹ́",
+          "body": [
+            "Àwọn irinṣẹ́ wà nínú pánẹ́lì lẹ́gbẹ̀ẹ́ ọ̀rọ̀ náà, ní ẹgbẹ́-ẹgbẹ́. Tẹ irinṣẹ́ kan láti rí àwọn àṣàyàn rẹ̀, lẹ́yìn náà \"Lò ó lórí ọ̀rọ̀ náà\".",
+            {
+              "points": [
+                "Tí o bá ti yan nǹkan, irinṣẹ́ kan ń yí àṣàyàn náà nìkan padà; tí o kò bá yan nǹkan, gbogbo ọ̀rọ̀ náà. Pánẹ́lì ń sọ èwo, lókè rẹ̀.",
+                "Lábẹ́ bọ́tìnì náà, irinṣẹ́ kan ń sọ ohun tí ó ṣe: iye ìlà tàbí ibi tí ó yí padà.",
+                "Irinṣẹ́ kọ̀ọ̀kan jẹ́ ìgbésẹ̀ kan: \"Dá a padà\" ń dá a padà lódidi.",
+                "Gbogbo irinṣẹ́ tún wà nínú àwọn àkójọ àṣàyàn àti nínú ìwádìí àwọn àṣẹ: àwọn tí ó ń yí ìrísí ọ̀rọ̀ kan padà (àwọn ìlà, lẹ́tà ńlá àti lẹ́tà, ìmọ́tótó) nínú àkójọ àṣàyàn Ìṣètò, àwọn yòókù nínú Àwọn irinṣẹ́. Yíyan ọ̀kan níbẹ̀ ń ṣí pánẹ́lì sí àwọn àṣàyàn rẹ̀."
+              ]
+            },
+            "Nínú àkójọ àṣàyàn Ìṣètò, irinṣẹ́ tí ó jẹ́ àṣàyàn kan ní pàtàkì ni a tò kalẹ̀ bí àwọn àṣàyàn rẹ̀: gbogbo ọ̀nà láti yí lẹ́tà ńlá padà, gbogbo irú àmì àyọlò, gbogbo ọ̀nà láti yí ọ̀rọ̀ padà sẹ́yìn jẹ́ àṣẹ tirẹ̀, èyí tí ó ń ṣí irinṣẹ́ náà pẹ̀lú àṣàyàn yẹn ní yíyàn. Níbi tí fèrèsé bá ti tóóró jù fún ẹgbẹ́ kan, ẹgbẹ́ náà ń di bọ́tìnì kan tí ó ń ṣí gbogbo àtòjọ náà.",
+            "Àwọn irinṣẹ́ ń ṣiṣẹ́ lórí kọ̀ǹpútà yìí. Kò sí ọ̀rọ̀ tí ó ń kúrò níbẹ̀."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Àbájáde, kí o tó lò ó",
+          "body": [
+            "Nígbà tí irinṣẹ́ kan bá ṣí, a ń fi ohun tí yóò fúnni hàn lẹ́gbẹ̀ẹ́ ọ̀rọ̀ náà, nínú pánẹ́lì \"Àbájáde\". Kò sí ohun tí ó ń yí padà nínú ọ̀rọ̀ náà títí o fi yan \"Lò ó lórí ọ̀rọ̀ náà\". Àbájáde ń tẹ̀lé ọ: yí àṣàyàn kan tàbí ọ̀rọ̀ náà padà, a ó sì tún un ṣe.",
+            {
+              "points": [
+                "Ọ̀rọ̀ náà àti àbájáde wà lẹ́gbẹ̀ẹ́ ara wọn, ọ̀kọ̀ọ̀kan lábẹ́ àkọlé tí gíga rẹ̀ dọ́gba, kí àwọn ìlà kan náà lè bẹ̀rẹ̀ ní gíga kan náà; wọ́n ń yí lọ papọ̀ (bọ́tìnì ẹ̀wọ̀n ń pa ìyẹn).",
+                "A ń sàmì sí àwọn ìlà tí yóò yí padà, pẹ̀lú apá ìlà tí ó ń yí padà ní sísàmì tó ṣókùnkùn jù; àwọn ìlà tí yóò kàn yí ipò padà, àti àwọn ìlà tuntun, ọ̀kọ̀ọ̀kan ní àwọ̀ tirẹ̀. A tún ń sàmì sí àwọn ìlà tí a ó yí padà tàbí tí a ó yọ kúrò nínú ọ̀rọ̀ rẹ.",
+                "Lábẹ́ àwọn orúkọ: ohun tí yóò ṣẹlẹ̀ ní nọ́ńbà — àwọn ìlà tí ó yí padà, tí ó yí ipò padà, tuntun, tí a yọ kúrò; àwọn ìlà àti àmì-lẹ́tà ṣáájú àti lẹ́yìn.",
+                "Lábẹ́ àbájáde: àwọn ìlà tí a ó yọ kúrò. Tẹ ọ̀kan láti lọ síbẹ̀ nínú ọ̀rọ̀ náà.",
+                "Àwọn bọ́tìnì kéékèèké ti àbájáde: ṣe ẹ̀dà rẹ̀, ṣí i bí ọ̀rọ̀ tuntun, fi wé ọ̀rọ̀ náà nínú táàbù kan, yí wọn lọ papọ̀, fi àbájáde sábẹ́ ọ̀rọ̀ náà dípò ẹ̀gbẹ́ rẹ̀, bò ó mọ́lẹ̀. Ọ̀rọ̀ náà ní tirẹ̀: dá a padà, tún un ṣe, ṣe ẹ̀dà, lẹ̀ ẹ́ sórí rẹ̀, yan gbogbo rẹ̀, pa á rẹ́.",
+                "Fa ọ̀pá tó wà láàrin méjèèjì láti fún ọ̀kan ní àyè sí i; títẹ̀ lẹ́ẹ̀mejì ń mú wọn dọ́gba lẹ́ẹ̀kan sí i."
+              ]
+            },
+            "Lẹ́yìn \"Lò ó lórí ọ̀rọ̀ náà\", pánẹ́lì Àbájáde ń sọ bẹ́ẹ̀ (\"A ti lò ó. Ọ̀rọ̀ tó wà ní apá òsì ni àbájáde báyìí.\") ó sì ń fúnni ní \"Dá a padà\" àti \"Fi wé bí ó ti wà tẹ́lẹ̀\", èyí tí ó ń ṣí àfiwé kan náà ti ṣáájú àti lẹ́yìn. Ó ń tún fi àbájáde hàn ní kété tí o bá yí ọ̀rọ̀ náà tàbí àṣàyàn irinṣẹ́ náà padà.",
+            {
+              "note": "Ìfihàn → \"Àbájáde lẹ́gbẹ̀ẹ́ ọ̀rọ̀ náà\" ń pa pánẹ́lì náà ó sì ń tàn án. Fún ọ̀rọ̀ tí ó gùn púpọ̀ (ju mílíọ̀nù méjì àmì-lẹ́tà lọ) a kò fi nǹkan kan hàn ṣáájú: lo irinṣẹ́ náà, \"Dá a padà\" yóò sì dá a padà."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Rọ́pò níbi gbogbo",
+          "body": [
+            "Ó ń rọ́pò gbogbo ibi tí a bá ti rí nǹkan kan, lẹ́ẹ̀kan náà. Bí o ṣe ń tẹ ohun tí a ó wá, Scribe ń sọ iye ibi tí a ti rí i, ó sì ń sàmì sí wọn nínú ọ̀rọ̀ náà, kí o lè rí ohun tí yóò yí padà kí o tó lò ó.",
+            {
+              "points": [
+                "\"Regular expression\": ọ̀rọ̀ tí a ó wá jẹ́ àpẹẹrẹ ìwádìí. Nínú \"Fi rọ́pò pẹ̀lú\", $1, $2… dúró fún ohun tí àwọn ẹgbẹ́ inú àpẹẹrẹ náà rí.",
+                "\"Lẹ́tà ńlá ṣe pàtàkì\": a àti A jẹ́ lẹ́tà tí ó yàtọ̀.",
+                "\"Odidi ọ̀rọ̀ nìkan\": a kò rí \"cat\" nínú \"category\".",
+                "\"Pa lẹ́tà ńlá ohun tí a rọ́pò mọ́\": rírọ́pò \"cat\" pẹ̀lú \"dog\" ń sọ \"Cat\" di \"Dog\" àti \"CAT\" di \"DOG\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Àwọn àṣàyàn míì\" → \"Kún…\": ohun tí a fi sí ipò rẹ̀ lè ní àwọn àlàfo tí a ń kún ní ìbámu kọ̀ọ̀kan. {counter} ń ka 1, 2, 3… ({counter:10} ń bẹ̀rẹ̀ ní 10, {counter:10:5} ń lọ sókè ní 5); {date} àti {time} ni ọjọ́ àti wákàtí kọ̀ǹpútà rẹ; {uuid} jẹ́ ìdánimọ̀ kan; {random} jẹ́ lẹ́tà àti díjítì àìròtẹ́lẹ̀ 8 ({random:12} fún 12).",
+                "Lábẹ́ ohun tí o ń wá, Scribe tún ń sọ iye ìlà tí àwọn ìbámu wà àti iye ọ̀rọ̀ tí ó yàtọ̀ tí wọ́n jẹ́."
+              ]
+            },
+            "\"Rọ́pò púpọ̀ lẹ́ẹ̀kan náà\" ń ṣe àtòjọ àwọn méjì-méjì ní ìgbésẹ̀ kan. Kọ méjì-méjì kan sí ìlà kọ̀ọ̀kan, báyìí: ohun tí a ó wá => ohun tí a ó fi sí ipò rẹ̀. A ń ṣe wọ́n láti àkọ́kọ́ dé ìkẹyìn, ọ̀kọ̀ọ̀kan lórí ohun tí èyí tó ṣáájú rẹ̀ fi sílẹ̀; ìdajì kejì tí ó ṣófo ń yọ ọ̀rọ̀ náà kúrò.",
+            {
+              "note": "Àpẹẹrẹ ìwádìí kò lè dí ètò náà lọ́wọ́: àkókò tí ó ń gbà ń pọ̀ sí i pẹ̀lú gígùn ọ̀rọ̀ náà, kò sì yára jù bẹ́ẹ̀ lọ. Nítorí ìdí yẹn, àwọn àpẹẹrẹ ìwádìí tí ó ń wo ẹ̀yìn sí ohun tí wọ́n rí (\\1) kò sí."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Àwọn ìlà",
+          "body": [
+            {
+              "points": [
+                "To àwọn ìlà lẹ́sẹẹsẹ nípa: àwọn lẹ́tà wọn, bí ìwé atúmọ̀ èdè ti ń ṣe, ní èdè ètò náà tàbí èyí tí o yàn (ní èdè Romania ă ń wá lẹ́yìn a; èdè Swídìn ń fi ä sí lẹ́yìn z, Jámánì lẹ́gbẹ̀ẹ́ a); lẹ́tà pẹ̀lú nọ́ńbà bí nọ́ńbà (file2 ṣáájú file10); nọ́ńbà tí ìlà kọ̀ọ̀kan fi bẹ̀rẹ̀; gígùn; iye ọ̀rọ̀; ọjọ́ tí ìlà kọ̀ọ̀kan fi bẹ̀rẹ̀ (05.03.2024, 2024-03-05, pẹ̀lú wákàtí tàbí láìsí); àwọn àdírẹ́sì íntánẹ́ẹ̀tì; nọ́ńbà ẹ̀dà (1.2.10 lẹ́yìn 1.2.9); àwọn àkọlé, níbi tí article ní ìbẹ̀rẹ̀ kò ti ṣe pàtàkì; ètò tí o kọ (kékeré, àárín, ńlá); tàbí láìsí ètò rárá.",
+                "Àwọn ìlà tí kò ní nǹkan tí a lè fi tò wọ́n (kò sí nọ́ńbà, kò sí ọjọ́, iye tí kò sí nínú ètò tí o kọ) ń wà ní òpin, bí ó ti wù kí a to àwọn yòókù: èyí tó kéré jù ní àkọ́kọ́ tàbí èyí tó tóbi jù ní àkọ́kọ́.",
+                "Àwọn àṣàyàn míì fún títò: ṣe àfiwé láti ọ̀rọ̀ kan tàbí àmì-lẹ́tà kan lọ, tàbí òpó kan nínú tábìlì (pẹ̀lú ohun tí ó ń ya àwọn òpó sọ́tọ̀); pa ìlà àkọ́kọ́ mọ́ sí ipò rẹ̀ bí àkọlé; to àwọn ìpínrọ̀ dípò àwọn ìlà; kí o sì kọ́kọ́ tún un ṣe — gé e, yọ àwọn ìlà òfo kúrò, yọ àwọn tí ó jọra kúrò.",
+                "Yọ àwọn ìlà tí ó jọra kúrò: pa èyí àkọ́kọ́ mọ́, èyí tó kẹ́yìn, tàbí kò sí ọ̀kan nínú àwọn ìlà tí ó tún ara wọn ṣe (àwọn tí ó wà lẹ́ẹ̀kan nìkan ló ń wà). A lè fo lẹ́tà ńlá, àwọn àlàfo yí ìlà ká, díjítì, àmì ìpínrọ̀, àti iye àmì-lẹ́tà kan ní ìbẹ̀rẹ̀ tàbí ní òpin, ọ̀kọ̀ọ̀kan; òpó kan nìkan, tàbí ohun tí àpẹẹrẹ ìwádìí kan rí nìkan, lè jẹ́ ohun tí a ń fi wéra. A ń ka àwọn ìlà òfo bí àwọn yòókù, a ń pa wọ́n mọ́, a ń yọ wọ́n kúrò, tàbí a ń sọ wọ́n di ọ̀kan.",
+                "Ka àwọn ìlà tí ó tún ara wọn ṣe: ó ń fi ìlà kọ̀ọ̀kan sílẹ̀ lẹ́ẹ̀kan, pẹ̀lú iye ìgbà tí ó wà níbẹ̀ tí a kọ ṣáájú rẹ̀ — èyí tí ó tún ara rẹ̀ ṣe jù ní àkọ́kọ́, tàbí èyí tó kéré jù, tàbí ní ètò tí wọ́n fi wá.",
+                "Pa àwọn ìlà mọ́ tàbí yọ wọ́n kúrò: ó ń wá nǹkan kan nínú ìlà kọ̀ọ̀kan, ó sì ń pa àwọn ìlà tí ó ní i nìkan mọ́, tàbí àwọn tí kò ní i nìkan.",
+                "Yí ètò àwọn ìlà padà; Da àwọn ìlà pọ̀ láìlétò.",
+                "Fi nọ́ńbà sí àwọn ìlà: nọ́ńbà àkọ́kọ́, ohun tí ó wà lẹ́yìn rẹ̀, òdo níwájú kí àwọn nọ́ńbà lè tò déédé, àwọn ìlà òfo láìsí nọ́ńbà.",
+                "Àwọn ìlà òfo: yọ gbogbo wọn kúrò, tàbí fi ọ̀kan sílẹ̀ níbi tí wọ́n ti pọ̀.",
+                "So àwọn ìlà pọ̀ di ọ̀kan, pẹ̀lú ohun tí o yàn láàrin wọn; Pín in sí ìlà ní gbogbo kọ́mà, sẹ̀míkọ́lọ́ọ̀nù tàbí ohunkóhun míì. Níbikíbi tí a bá ti tẹ ohun tí ó wà láàrin àwọn nǹkan (fífi nọ́ńbà sí, sísopọ̀, pípín, kíkà), \\t dúró fún Tab, èyí tí a kò lè tẹ̀ sínú pápá."
+              ]
+            },
+            {
+              "note": "Àṣàyàn tí ó ṣe pàtàkì pẹ̀lú òmíràn nìkan ni a ń fi hàn nígbà náà nìkan: òpó, ní kété tí o bá ṣe àfiwé nípa òpó kan. Àwọn àṣàyàn tí àwọn ènìyàn díẹ̀ nílò wà lábẹ́ \"Àwọn àṣàyàn míì\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Lẹ́tà ńlá",
+          "body": [
+            "Yí lẹ́tà ńlá padà: bí gbólóhùn, lẹ́tà ńlá ní ìbẹ̀rẹ̀ ọ̀rọ̀ kọ̀ọ̀kan, gbogbo lẹ́tà ńlá, gbogbo lẹ́tà kékeré, lẹ́tà yíyípadà, àti àwọn ọ̀nà tí a fi ń kọ orúkọ nínú kóòdù: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Lẹ́tà ńlá ń tẹ̀lé òfin álífábẹ́ẹ̀tì kọ̀ọ̀kan, kì í ṣe ti Gẹ̀ẹ́sì nìkan.",
+            "Nínú ẹgbẹ́ Ìdarí, \"Yí ọ̀rọ̀ náà padà sẹ́yìn\" ń yí àwọn lẹ́tà ìlà kọ̀ọ̀kan padà sẹ́yìn, tàbí ètò àwọn ọ̀rọ̀ rẹ̀, tàbí àwọn lẹ́tà ọ̀rọ̀ kọ̀ọ̀kan; \"Lódìkejì\" ń kọ ọ́ kí a lè kà á láti òdìkejì tábìlì, \"Bí nínú dígí\" sì tún ń pààrọ̀ àwọn àmì tí ó ní òsì àti ọ̀tún. A ń ka àwọn lẹ́tà bí òǹkàwé ti ń kà wọ́n: lẹ́tà kan pẹ̀lú àwọn àmì rẹ̀ jẹ́ ọ̀kan ṣoṣo."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Ìmọ́tótó",
+          "body": [
+            {
+              "points": [
+                "Ṣe ìmọ́tótó àwọn àlàfo: àlàfo púpọ̀ ń di ọ̀kan; àwọn àlàfo ní òpin ìlà ń lọ.",
+                "Gé òpin àwọn ìlà: ní òpin méjèèjì, ní ìbẹ̀rẹ̀ tàbí ní òpin.",
+                "Àmì àyọlò: tààrà, Gẹ̀ẹ́sì, Romania, Jámánì tàbí Faransé.",
+                "Yọ àwọn àmì ohùn kúrò: ă ń di a, é ń di e. Nínú álífábẹ́ẹ̀tì Látìn àti Gíríìkì nìkan, níbi tí lẹ́tà kan láìsí àmì rẹ̀ ṣì jẹ́ lẹ́tà náà.",
+                "Tún àwọn lẹ́tà Romania ṣe: ş àti ţ (pẹ̀lú cedilla, tí àwọn àtẹ̀wé àtijọ́ ń kọ) ń di ș àti ț (pẹ̀lú kọ́mà), àwọn lẹ́tà tí a fi ń kọ èdè Romania.",
+                "Tab sí àlàfo àti àlàfo sí Tab, pẹ̀lú fífẹ̀ Tab tí o yàn.",
+                "Yọ àwọn tag HTML kúrò: fún orísun ojú-ewé wẹ́ẹ̀bù kan tí a lẹ̀ sínú ọ̀rọ̀ náà. Àwọn tag, script àti style ń lọ; ohun tí òǹkàwé yóò rí ń dúró. Láti mú ojú-ewé kan wá láti àdírẹ́sì rẹ̀, lo irinṣẹ́ tó wà nísàlẹ̀ rẹ̀, \"Ọ̀rọ̀ ojú-ewé wẹ́ẹ̀bù\".",
+                "Ọ̀rọ̀ ojú-ewé wẹ́ẹ̀bù: tẹ àdírẹ́sì ojú-ewé kan (example.com/page) kí o sì yan \"Mú ọ̀rọ̀ náà wá\". A ń kọ ohun tí òǹkàwé yóò rí lórí ojú-ewé yẹn sí ibi tí atọ́ka ìkọ̀wé wà, láìsí tag, script tàbí style. Èyí ni irinṣẹ́ kan ṣoṣo ti Scribe tí ó ń lọ sórí ayélujára, nígbà tí o bá béèrè nìkan: aṣàwákiri tí a fi sórí kọ̀ǹpútà yìí (Microsoft Edge tàbí Google Chrome) ni ó ń mú ojú-ewé náà wá, tí ó ń ṣiṣẹ́ láìsí fèrèsé àti láìsí kúkì tàbí ìwọlé rẹ; ètò náà fúnra rẹ̀ kò fi nǹkan kan ránṣẹ́. Ojú-ewé tí ó nílò kí o wọlé ń fúnni ní ohun tí àlejò yóò rí nìkan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Dídá àwọn àmì ohùn Romania padà",
+          "body": [
+            "Èdè Romania tí a tẹ̀ láìsí ă, â, î, ș, ț ni a ó tún kọ pẹ̀lú wọn.",
+            {
+              "steps": [
+                "Ṣí irinṣẹ́ náà nínú ẹgbẹ́ Ìmọ́tótó kí o sì yan \"Lò ó lórí ọ̀rọ̀ náà\".",
+                "Àwọn ọ̀rọ̀ tí ó ní ọ̀nà tó tọ́ kan ṣoṣo ni a ń yí padà lẹ́sẹ̀kẹsẹ̀: \"stiu\" ń di \"știu\", \"informatii\" ń di \"informații\".",
+                "Àwọn ọ̀rọ̀ tí a lè kà ní ọ̀nà ju ẹyọ kan lọ (fata, fată, fața, față) ni a ń tò sílẹ̀ lábẹ́ bọ́tìnì náà, ọ̀kọ̀ọ̀kan ní ipò rẹ̀ nínú ọ̀rọ̀ náà. Tẹ ọ̀nà tó tọ́ fún ọ̀kọ̀ọ̀kan.",
+                "Tàbí fi àmì sí \"Yan èyí tí ó ṣeé ṣe jù fúnra rẹ̀ níbi tí ọ̀rọ̀ kan bá ní iyèméjì\" kí o tó lò ó: a kò ní béèrè nǹkan kan, ó sì yẹ kí o ka àbájáde náà."
+              ]
+            },
+            "Níbi tí àwọn ọ̀rọ̀ àyíká bá ti tó, Scribe ń pinnu nípa wọn: \"o casa\" ń di \"o casă\", \"casa mea\" ń wà bẹ́ẹ̀, \"pentru ca\" ń di \"pentru că\".",
+            {
+              "note": "A kọ́ èyí fún Scribe láti inú àtòjọ àwọn ọ̀rọ̀ tí ó wọ́pọ̀ àti àwọn ìparí ọ̀rọ̀ tí èdè Romania máa ń kọ pẹ̀lú àmì ohùn nígbà gbogbo. Àwọn ọ̀rọ̀ tí kò mọ̀ (ọ̀rọ̀ tí kò wọ́pọ̀, orúkọ) ń wà bí a ṣe tẹ̀ wọ́n, a kò sì fọwọ́ kan ọ̀rọ̀ tí a ti kọ pẹ̀lú àmì ohùn láé. Ka àbájáde náà kí o tó fi í ránṣẹ́."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Kíkọ ọ̀rọ̀: ìkún ààyè àti àìròtẹ́lẹ̀",
+          "body": [
+            "Àwọn irinṣẹ́ ẹgbẹ́ \"Kọ ọ̀rọ̀\" kò yí nǹkan kan padà: wọ́n ń kọ̀wé. Ohun tí wọ́n ń fúnni ń lọ sí ibi tí atọ́ka ìkọ̀wé wà, ní ipò àṣàyàn náà.",
+            {
+              "points": [
+                "Ọ̀rọ̀ ìkún ààyè: ìpínrọ̀, gbólóhùn, ọ̀rọ̀, àtòjọ, àkọlé, tàbí àwọn apá ojú-ewé kan (àkọlé, ìpínrọ̀, àtòjọ). Ní Látìn àwọn atẹ̀wé (lorem ipsum), Gẹ̀ẹ́sì, Romania, àwọn ọ̀rọ̀ ọ́fíìsì tàbí ti ilé ìdáná, tàbí àwọn ọ̀rọ̀ tìrẹ. Àwọn àṣàyàn míì: gbólóhùn kúkúrú, àárín tàbí gígùn; ọ̀rọ̀ lásán, Markdown, HTML tàbí JSON; ìpele àwọn àkọlé; ààlà ní àmì-lẹ́tà (a ń gé ọ̀rọ̀ náà ní odidi ọ̀rọ̀ kan, ó sì ṣì ń parí bí gbólóhùn); àwọn ọ̀rọ̀ tí a ó fi sílẹ̀.",
+                "Dátà àtọwọ́dá: orúkọ, àdírẹ́sì ímeèlì, nọ́ńbà fóònù, àdírẹ́sì ilé, ọjọ́ tàbí nọ́ńbà, ọ̀kan nínú ìlà kọ̀ọ̀kan, ti Romania tàbí ti àwọn orílẹ̀-èdè tí ń sọ Gẹ̀ẹ́sì. \"Àwọn ìlà ní ìbámu pẹ̀lú àpẹẹrẹ mi\" ń kọ ìlà kọ̀ọ̀kan bí o ṣe sọ, pẹ̀lú {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} àti {row} tí ó dúró fún ohun tí a ṣẹ̀dá — tábìlì láti fi dán nǹkan wò, ní ìṣẹ́jú kan.",
+                "Ọ̀rọ̀ àìròtẹ́lẹ̀: ọ̀rọ̀ aṣínà (lẹ́tà, díjítì àti àmì, ọ̀kan nínú ọ̀kọ̀ọ̀kan ó kéré tán), lẹ́tà, díjítì, hexadecimal tàbí ìdánimọ̀ (UUID), ní ìlà kan tàbí ní ọ̀pọ̀ ìlà. A lè fi àwọn àmì-lẹ́tà tí ó rọrùn láti dàrú (0 àti O, 1, l àti I) sílẹ̀.",
+                "Irúgbìn (lábẹ́ \"Àwọn àṣàyàn míì\") ń mú kí ọ̀rọ̀ ìkún ààyè àti dátà àtọwọ́dá jáde bákan náà ní gbogbo ìgbà fún nọ́ńbà kan náà; 0 ń fúnni ní nǹkan tuntun ní ìgbà kọ̀ọ̀kan."
+              ]
+            },
+            {
+              "note": "A ń ṣẹ̀dá ọ̀rọ̀ aṣínà lórí kọ̀ǹpútà yìí, láti inú àìròtẹ́lẹ̀ ẹ̀rọ ìṣiṣẹ́, a kò sì fi wọ́n ránṣẹ́ sí ibikíbi. Àwọn àdírẹ́sì ímeèlì àtọwọ́dá ń parí pẹ̀lú example.com, níbi tí lẹ́tà kò dé ọ̀dọ̀ ẹnikẹ́ni; nọ́ńbà fóònù tí a ṣe láìròtẹ́lẹ̀ lè jẹ́ ti ẹnìkan, nítorí náà má ṣe pè é."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Àwọn ìlànà",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Pípa ohun tí o ṣe mọ́ bí ìlànà",
+          "body": [
+            "Ìlànà jẹ́ àtòjọ àwọn irinṣẹ́ pẹ̀lú àwọn àṣàyàn wọn, tí a pa mọ́ lábẹ́ orúkọ kan tí a sì ń tún mú ṣiṣẹ́ pẹ̀lú títẹ̀ kan.",
+            {
+              "steps": [
+                "Lo àwọn irinṣẹ́ tí o fẹ́ lórí ọ̀rọ̀ kan, ní ètò tí o fẹ́.",
+                "Ṣí \"Àwọn ìlànà\" lókè pánẹ́lì: a ń to àwọn irinṣẹ́ tí o lò sílẹ̀.",
+                "\"Pa á mọ́ bí ìlànà\", kí o sì fún un ní orúkọ.",
+                "Lẹ́yìn náà, ṣí ìlànà náà kí o sì yan \"Mú un ṣiṣẹ́ lórí ọ̀rọ̀ náà\": a ń ṣe gbogbo ìgbésẹ̀ rẹ̀, \"Dá a padà\" kan ṣoṣo sì ń dá gbogbo wọn padà."
+              ]
+            },
+            "Orí kọ̀ǹpútà yìí ni a ń pa àwọn ìlànà mọ́ sí, wọ́n sì wà nínú gbogbo ọ̀rọ̀."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Yíyí ìlànà kan padà, tàbí ṣíṣẹ̀dá ọ̀kan láti òfo",
+          "body": [
+            "\"Yí i padà\" lórí ìlànà tí ó ṣí ń fi orúkọ rẹ̀ àti àwọn ìgbésẹ̀ rẹ̀ hàn. A lè gbé ìgbésẹ̀ kọ̀ọ̀kan sókè tàbí sísàlẹ̀, yọ ọ́ kúrò, kí a sì fún un ní àṣàyàn míì; a ń fi àwọn irinṣẹ́ kún láti inú àtòjọ tó wà lábẹ́ àwọn ìgbésẹ̀. A kò pa nǹkan kan mọ́ títí di \"Fi pamọ́\".",
+            "\"Ìlànà tuntun\" ń bẹ̀rẹ̀ ọ̀kan láìsí ìgbésẹ̀, láti kó o jọ ní ọ̀nà kan náà láìkọ́kọ́ lo àwọn irinṣẹ́ lórí ọ̀rọ̀ kan.",
+            {
+              "note": "Àwọn irinṣẹ́ tí ó ń kọ ọ̀rọ̀ (ìkún ààyè, àìròtẹ́lẹ̀) kì í ṣe ìgbésẹ̀ ìlànà kan: ìlànà kan ń yí ọ̀rọ̀ padà."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Mímú ìlànà kan ṣiṣẹ́ lórí àwọn fáìlì",
+          "body": [
+            {
+              "steps": [
+                "Ṣí ìlànà náà, àti lábẹ́ \"Mú un ṣiṣẹ́ lórí àwọn fáìlì\", fi àwọn fáìlì tàbí fódà kan kún (pẹ̀lú àwọn fódà tí ó wà nínú rẹ̀).",
+                "Yan ibi tí àwọn àbájáde ń lọ: sínú fódà míì, èyí tí ó ń fi àwọn fáìlì sílẹ̀ bí wọ́n ṣe wà, tàbí sórí àwọn fáìlì náà fúnra wọn.",
+                "Mú un ṣiṣẹ́. Scribe ń sọ iye fáìlì tí a kọ, iye tí kò nílò àyípadà, àti àwọn tí a kò lè ṣe àti ìdí rẹ̀."
+              ]
+            },
+            "A ń kọ fáìlì kọ̀ọ̀kan ní ọ̀nà kóòdù àti pẹ̀lú òpin ìlà tí ó ní. Nínú fódà míì, àwọn fáìlì ń pa àwọn fódà tí wọ́n bá wá mọ́, a kò sì kọ sórí fáìlì tí ó ti wà níbẹ̀ láé.",
+            {
+              "note": "A kò lè dá kíkọ sórí àwọn fáìlì náà fúnra wọn padà láti Scribe. Pa ẹ̀dà kan mọ́ tí wọ́n bá ṣe pàtàkì."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ìṣirò, àfiwé àti fódà",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Ìṣirò",
+          "body": [
+            "\"Ìṣirò\" lókè pánẹ́lì ń sọ ohun tí ọ̀rọ̀ náà, tàbí àṣàyàn náà, ní nínú. Apá kọ̀ọ̀kan ṣeé ká kéré.",
+            {
+              "points": [
+                "Lókè: àwọn ọ̀rọ̀, àmì-lẹ́tà pẹ̀lú àlàfo àti láìsí àlàfo, gbólóhùn, ìpínrọ̀, ìlà, ojú-ewé, àti ìwọ̀n ní báìtì.",
+                "Àkókò: láti kà ní ìdákẹ́jẹ́, láti sọ sókè, láti tẹ̀ ẹ́, àti láti fi ọwọ́ kọ ọ́.",
+                "Àwọn ọ̀rọ̀: iye tí ó yàtọ̀ (àti ìpín wọn nínú gbogbo rẹ̀), lẹ́tà nínú ọ̀rọ̀ kan, sílébù, ọ̀rọ̀ tó gùn jù àti èyí tó kúrú jù, àti iye ọ̀rọ̀ tí ó wà ní gígùn kọ̀ọ̀kan.",
+                "Àwọn gbólóhùn: ọ̀rọ̀ nínú gbólóhùn kan, iye tí ó kúrú, àárín àti gígùn, iye tí ó jẹ́ gbólóhùn ìròyìn, ìbéèrè àti ìyanu, àti èyí tó gùn jù àti èyí tó kúrú jù.",
+                "Ìrọ̀rùn kíkà: máàkì láti 0 (ó ṣòro púpọ̀) sí 100 (ó rọrùn púpọ̀), nípa ìlànà ìṣirò tí a ṣe fún èdè ọ̀rọ̀ náà. Ìlànà ìṣirò wà fún Gẹ̀ẹ́sì, Jámánì, Sípáníìṣì, Faransé, Ítálì, Dọ́ọ̀ṣì, Potogí àti Rọ́ṣíà; èdè tí kò ní ọ̀kan kò ní máàkì, nítorí èyí tí a ṣe fún òmíràn yóò ṣini lọ́nà.",
+                "Ohun tí ó ń sọ jù: àwọn ọ̀rọ̀ tí a lò jù pẹ̀lú ìpín wọn nínú ọ̀rọ̀ náà, àti àwọn ọ̀rọ̀ méjì àti mẹ́ta tí ó ń padà wá papọ̀.",
+                "Àyè nínú àwọn ààlà tí a mọ̀: iye àmì-lẹ́tà tí ó kù, tàbí tí ó pọ̀ jù, fún àkọlé kan, àpèjúwe kan, ìfiránṣẹ́ kúkúrú àti àwọn míì."
+              ]
+            },
+            "A ń rí àwọn ọ̀rọ̀ àti gbólóhùn nípa òfin ìkọ̀wé kọ̀ọ̀kan, nítorí náà a ń ka Ṣáínà, Japan àti Thai, tí kò fi àlàfo sí àárín àwọn ọ̀rọ̀, pẹ̀lú. A ń ṣètò àwọn ìyára tí a fi ń ṣírò àwọn àkókò, àti iye ọ̀rọ̀ tí ó ń kún ojú-ewé kan, nínú Ètò."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Fífi ọ̀rọ̀ méjì wé ara wọn",
+          "body": [
+            {
+              "points": [
+                "Àwọn irinṣẹ́ → \"Fi wé ọ̀rọ̀ míì\": ọ̀rọ̀ inú olóòtú lẹ́gbẹ̀ẹ́ èyí tí o tẹ̀ tàbí tí o lẹ̀.",
+                "Àwọn irinṣẹ́ → \"Fi wé fáìlì kan\": ọ̀rọ̀ inú olóòtú, bí ó ṣe wà báyìí, lẹ́gbẹ̀ẹ́ fáìlì tí o yàn.",
+                "Àwọn irinṣẹ́ → \"Fi ọ̀rọ̀ méjì wé ara wọn\": ọ̀rọ̀ méjì tí a tẹ̀ tàbí lẹ̀ lẹ́gbẹ̀ẹ́ ara wọn.",
+                "Àwọn irinṣẹ́ → \"Fi fáìlì méjì wé ara wọn\"."
+              ]
+            },
+            "A ń fi ọ̀rọ̀ méjèèjì hàn lẹ́gbẹ̀ẹ́ ara wọn. A ń sàmì sí àwọn ìlà tí ó wà nínú àkọ́kọ́ nìkan bí èyí tí a yọ kúrò, àwọn ìlà tí ó wà nínú èkejì nìkan bí èyí tí a fi kún, àti nínú ìlà tí ó yí padà, a ń sàmì sí àwọn ọ̀rọ̀ tí ó yàtọ̀. Ohun tí ó yàtọ̀ nìkan ni a ń fi hàn, pẹ̀lú ìlà díẹ̀ yí i ká; àwọn ọfà ń lọ láti ìyàtọ̀ kan sí èyí tó kàn.",
+            "A lè fo lẹ́tà ńlá, àlàfo, ìlà òfo, nọ́ńbà àti àmì ìpínrọ̀, ọ̀kọ̀ọ̀kan. \"Ní òpó kan\" ń fi ohun tí a yọ kúrò hàn lókè ohun tí a fi kún, ọ̀kọ̀ọ̀kan pẹ̀lú àmì rẹ̀, dípò kí wọ́n wà lẹ́gbẹ̀ẹ́ ara wọn. Lẹ́gbẹ̀ẹ́ àwọn iye, Scribe ń sọ bí ọ̀rọ̀ méjèèjì ṣe jọra tó, bí ìpín àwọn ìlà tí ó jọra.",
+            "A ń fi ọ̀rọ̀ kan hàn ní kété tí a bá yàn án, kí a tó yan èkejì. Fa ọ̀pá tó wà láàrin ọ̀rọ̀ méjèèjì láti fún ọ̀kan ní àyè sí i; nígbà tí a bá ń tẹ àwọn ọ̀rọ̀ náà, a ń fa ọ̀pá tó wà lábẹ́ àwọn àpótí sókè àti sísàlẹ̀ láti fún àwọn àpótí tàbí àfiwé náà ní àyè sí i. Títẹ̀ lẹ́ẹ̀mejì ń dá ọ̀pá kan padà.",
+            "Níbi tí a bá ti yí ọ̀pọ̀ ìlà tí ó tẹ̀lé ara wọn padà, a ń fi ọ̀kọ̀ọ̀kan sí ẹ̀gbẹ́ ìlà tí ó jọ jù, kí ìlà tí a fi kún tàbí tí a yọ kúrò láàrin wọn má baà mú kí gbogbo ìlà lẹ́yìn rẹ̀ dà bí ẹni pé ó yí padà sí èyí tó kàn.",
+            "\"Tẹ̀ tàbí lẹ̀ àwọn ọ̀rọ̀ náà\" ń fi àpótí kan hàn lókè òpó kọ̀ọ̀kan; a ń fi ohun tí o kọ síbẹ̀ wéra bí o ṣe ń kọ ọ́, a sì ṣì lè yan fáìlì kan fún ẹ̀gbẹ́ èyíkéyìí."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Wíwá àti rírọ́pò nínú fódà kan",
+          "body": [
+            {
+              "steps": [
+                "Àwọn irinṣẹ́ → \"Wá nínú fódà kan\" (Ctrl+Shift+F), kí o sì yan fódà náà. A tún ń wá nínú àwọn fódà tí ó wà nínú rẹ̀.",
+                "Tẹ ohun tí a ó wá, pẹ̀lú àwọn àṣàyàn kan náà bí \"Rọ́pò níbi gbogbo\". \"Irú àwọn fáìlì\" ń dín ìwádìí kù sí àwọn ìparí orúkọ kan (txt, md, csv…).",
+                "A ń fi ìbámu kọ̀ọ̀kan hàn nínú ìlà rẹ̀, ní fáìlì-ní-fáìlì. Tẹ ìlà kan láti ṣí fáìlì náà níbẹ̀.",
+                "Láti rọ́pò: tẹ ọ̀rọ̀ tuntun náà, yọ àmì kúrò lára àwọn fáìlì tí a ó fi sílẹ̀, kí o sì yan \"Kọ àwọn fáìlì náà\"."
+              ]
+            },
+            "A kò kọ nǹkan kan títí o fi béèrè, àti nínú àwọn fáìlì tí ó ní àmì nìkan. A ń kọ fáìlì kọ̀ọ̀kan ní ọ̀nà kóòdù àti pẹ̀lú òpin ìlà tí ó ní.",
+            {
+              "note": "A ń fo àwọn fódà tí a fi pamọ́ àti àwọn tí àwọn ètò ń kún (.git, node_modules) àyàfi tí o bá béèrè fún wọn. A ń fo àwọn fáìlì tí kì í ṣe ọ̀rọ̀ nígbà gbogbo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ètò",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Àwọn ètò Scribe",
+          "body": [
+            "Fáìlì → Ètò ń ṣí Ètò ètò náà ní apá Scribe.",
+            {
+              "points": [
+                "Olóòtú: lẹ́tà ti fífẹ̀ kan náà tàbí ti ètò náà fúnra rẹ̀, ìwọ̀n wọn, ṣíṣẹ́ ìlà, nọ́ńbà ìlà, àti bóyá a ó fi àbájáde irinṣẹ́ kan hàn kí a tó lò ó.",
+                "Ọ̀rọ̀ tuntun: bí àwọn ìlà rẹ̀ ṣe ń parí, àti bóyá fáìlì rẹ̀ ń bẹ̀rẹ̀ pẹ̀lú àmì ètò báìtì (BOM).",
+                "Ìṣirò: àwọn ìyára kíkà, sísọ, títẹ̀ àti kíkọ pẹ̀lú ọwọ́, àti iye ọ̀rọ̀ tí ó ń kún ojú-ewé kan.",
+                "Àwọn bọ́tìnì àwọn àṣẹ Scribe."
+              ]
+            },
+            "Ètò kọ̀ọ̀kan ní bọ́tìnì kan tí ó ń dá a padà sí bí ètò náà ṣe dé."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Nípa Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Nípa Scribe",
+          "body": [
+            "Scribe ni áàpù ọ̀rọ̀ ti Syntelab Creative: olóòtú pẹ̀lú àwọn irinṣẹ́ rẹ̀ lẹ́gbẹ̀ẹ́ ọ̀rọ̀ náà. Ó ń fi ohun tí irinṣẹ́ kan yóò ṣe hàn kí ó tó ṣe é, ó ń ṣe ìmọ́tótó àwọn àtòjọ ó sì ń tún wọn tò, ó ń wá ó sì ń rọ́pò nínú ọ̀rọ̀ kan tàbí nínú odidi fódà kan, ó ń fi ọ̀rọ̀ méjì wé ara wọn, ó ń sọ ohun tí ọ̀rọ̀ kan ní nínú, ó ń kọ ọ̀rọ̀ ìkún ààyè àti dátà àtọwọ́dá, ó sì ń pa ohun tí o máa ń ṣe lọ́pọ̀ ìgbà mọ́ bí ìlànà láti tún mú ṣiṣẹ́.",
+            "Orí kọ̀ǹpútà yìí ni a ti ń ṣe gbogbo nǹkan. Kò sí ààlà lórí ìwọ̀n tàbí iye àwọn ọ̀rọ̀: ààlà náà ni ìrántí kọ̀ǹpútà àti ohun tí ìmọ̀ ẹ̀rọ òde òní lè ṣe.",
+            "Ó jẹ́ tuntun. Níbi tí kò bá ti tó fún àwọn ọ̀rọ̀ rẹ, sọ fún wa nípasẹ̀ Ìrànlọ́wọ́ → Èrò rẹ: bẹ́ẹ̀ ni a ṣe ń mọ ohun tí a ó ṣiṣẹ́ lé lórí."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Ohun tí a fi kọ́ Scribe",
+          "body": [
+            {
+              "points": [
+                "Olóòtú: CodeMirror.",
+                "Kíkà àti kíkọ àwọn ọ̀nà kóòdù: encoding_rs, pẹ̀lú chardetng láti fojú sun ọ̀nà kóòdù fáìlì tí kò sọ ọ́.",
+                "Wíwá àti rírọ́pò: library regex ti Rust, tí àwọn àpẹẹrẹ ìwádìí rẹ̀ kò lè dí ètò náà lọ́wọ́.",
+                "Títò lẹ́sẹẹsẹ bí èdè kọ̀ọ̀kan ti ń ṣe, àti wíwá àwọn ọ̀rọ̀ àti gbólóhùn nínú gbogbo ìkọ̀wé: ICU4X, library Unicode.",
+                "Fífi àwọn ọ̀rọ̀ wé ara wọn: library similar.",
+                "Àwọn àmì ohùn Romania: àtòjọ àwọn ọ̀rọ̀ àti òfin tí a kọ fún Scribe."
+              ]
+            },
+            "Ohun tí ó pín pẹ̀lú àwọn apá yòókù ètò náà wà lábẹ́ \"Nípa Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ohun tí Scribe kò tíì lè ṣe",
+          "body": [
+            {
+              "points": [
+                "A ń ka fáìlì tí ó tóbi púpọ̀ ní ojú-ewé kan lẹ́ẹ̀kan, a sì ń yí i padà nípasẹ̀ àwọn ìlànà nìkan; láti fi ọwọ́ yí i padà, a gbọ́dọ̀ ṣí i lódidi, èyí tí ó ń gba ìrántí.",
+                "Dídá àwọn àmì ohùn Romania padà mọ àwọn ọ̀rọ̀ tí ó wọ́pọ̀; àwọn ọ̀rọ̀ tí kò wọ́pọ̀ àti orúkọ ń wà bí a ṣe tẹ̀ wọ́n.",
+                "Kò sí àyẹ̀wò àkọtọ́.",
+                "A kò mú ọ̀rọ̀ jáde láti inú PDF tàbí àwọn ìwé ọ́fíìsì níbí; PDF Organizer ló ń ṣí wọn.",
+                "Olóòtú kò fi àwọ̀ sí kóòdù tàbí Markdown.",
+                "Fáìlì tí a jù sílẹ̀ sórí fèrèsé ń ṣí bí ọ̀rọ̀ tuntun: a kò sọ ibi tí fáìlì náà wà fún ètò náà, nítorí náà fífi pamọ́ ń béèrè ibi tí a ó fi sí."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

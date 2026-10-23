@@ -1,0 +1,15 @@
+{
+  "name": "@syntelab/pdf-organizer-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "dependencies": {
+    "@syntelab/command-registry": "*",
+    "@syntelab/i18n": "*",
+    "@syntelab/shell-api": "*",
+    "@syntelab/ui-kit": "*"
+  }
+}

@@ -1,0 +1,93 @@
+/* A schedule made by choosing: under the input, a row for each field. */
+.builder {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.expression {
+  padding: 2px 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+  color: var(--sc-accent);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fields {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  padding: 10px 16px;
+  overflow-y: auto;
+  font-size: 13px;
+}
+
+.seconds {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--sc-muted);
+}
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+}
+
+.name {
+  min-width: 110px;
+  color: var(--sc-text);
+  font-weight: 600;
+}
+
+.step {
+  width: 64px;
+  min-height: 26px;
+  padding: 0 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+/* The values of a field, each a small button that is on or off. */
+.values {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.value {
+  min-width: 30px;
+  min-height: 24px;
+  padding: 0 6px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  font: inherit;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+
+.values[data-wide='true'] .value {
+  min-width: 44px;
+}
+
+.value[aria-pressed='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent);
+  color: var(--sc-accent-text);
+}

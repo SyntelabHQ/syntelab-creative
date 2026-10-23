@@ -1,0 +1,42 @@
+{
+  "id": "prefixes",
+  "category": "scientific",
+  "icon": "superscript",
+  "base": "base",
+  "startsWith": ["base","kilo","mega"],
+  "decimals": 6,
+  "groups": [
+    { "id": "huge", "color": "#dc2626" },
+    { "id": "large", "color": "#ea580c" },
+    { "id": "medium", "color": "#2563eb" },
+    { "id": "small", "color": "#059669" },
+    { "id": "tiny", "color": "#9333ea" }
+  ],
+  "units": [
+    {"id":"base","symbol":"×1","group":"medium","factor":"1","popular":true},
+    {"id":"quetta","symbol":"Q","group":"huge","factor":"1000000000000000000000000000000","popular":true},
+    {"id":"ronna","symbol":"R","group":"huge","factor":"1000000000000000000000000000","popular":true},
+    {"id":"yotta","symbol":"Y","group":"huge","factor":"1000000000000000000000000","popular":true},
+    {"id":"zetta","symbol":"Z","group":"huge","factor":"1000000000000000000000","popular":true},
+    {"id":"exa","symbol":"E","group":"huge","factor":"1000000000000000000","popular":true},
+    {"id":"peta","symbol":"P","group":"huge","factor":"1000000000000000","popular":true},
+    {"id":"tera","symbol":"T","group":"huge","factor":"1000000000000","popular":true},
+    {"id":"giga","symbol":"G","group":"large","factor":"1000000000","popular":true},
+    {"id":"mega","symbol":"M","group":"large","factor":"1000000","popular":true},
+    {"id":"kilo","symbol":"k","group":"large","factor":"1000","popular":true},
+    {"id":"hecto","symbol":"h","group":"medium","factor":"100","popular":true},
+    {"id":"deka","symbol":"da","group":"medium","factor":"10","popular":true},
+    {"id":"deci","symbol":"d","group":"small","factor":"0.1","popular":true},
+    {"id":"centi","symbol":"c","group":"small","factor":"0.01","popular":true},
+    {"id":"milli","symbol":"m","group":"small","factor":"0.001","popular":true},
+    {"id":"micro","symbol":"µ","group":"small","factor":"0.000001","popular":true},
+    {"id":"nano","symbol":"n","group":"small","factor":"0.000000001","popular":true},
+    {"id":"pico","symbol":"p","group":"tiny","factor":"0.000000000001","popular":true},
+    {"id":"femto","symbol":"f","group":"tiny","factor":"0.000000000000001","popular":true},
+    {"id":"atto","symbol":"a","group":"tiny","factor":"0.000000000000000001","popular":true},
+    {"id":"zepto","symbol":"z","group":"tiny","factor":"0.000000000000000000001","popular":true},
+    {"id":"yocto","symbol":"y","group":"tiny","factor":"0.000000000000000000000001","popular":true},
+    {"id":"ronto","symbol":"r","group":"tiny","factor":"0.000000000000000000000000001","popular":true},
+    {"id":"quecto","symbol":"q","group":"tiny","factor":"0.000000000000000000000000000001","popular":true}
+  ]
+}

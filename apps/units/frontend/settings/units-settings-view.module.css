@@ -1,0 +1,227 @@
+/* Units' own part of Settings: sections of rows, as the other apps have them. */
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.heading {
+  margin: 0 0 2px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.note {
+  margin: 0 0 6px;
+  color: var(--sc-muted);
+}
+
+.rows {
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-block: 12px;
+  padding-inline: 16px 12px;
+}
+
+.row + .row {
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.rowText {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.rowLabel {
+  font-weight: 500;
+}
+
+.rowHint {
+  color: var(--sc-muted);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+/* Over a list that is chosen and searched: which list, and what is sought in it. */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block-end: 2px;
+}
+
+.select {
+  flex: 1 1 200px;
+  min-width: 0;
+  min-height: 32px;
+  padding-inline: 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.finder {
+  display: flex;
+  flex: 1 1 200px;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-muted);
+}
+
+.select:focus-visible,
+.finder:focus-within {
+  border-color: var(--sc-accent);
+  outline: none;
+}
+
+.finder input {
+  flex: 1;
+  min-width: 0;
+  min-height: 30px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  outline: none;
+}
+
+/* A list that may be of hundreds of units: it scrolls in its own frame. */
+.scrolled {
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+/* A unit whose decimals were chosen is told from those that have their own. */
+.row[data-changed='true'] .count {
+  border-color: var(--sc-accent);
+}
+
+.remove:disabled {
+  visibility: hidden;
+}
+
+.switch {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--sc-accent);
+}
+
+.stepper {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 6px;
+}
+
+.step {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.step:hover:not(:disabled) {
+  border-color: var(--sc-accent);
+}
+
+.step:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.count {
+  min-width: 30px;
+  padding: 3px 0;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  text-align: center;
+}
+
+.remove {
+  flex: none;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.remove:hover {
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+}
+
+.remove[data-danger='true']:hover {
+  color: var(--sc-danger);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.told {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.told[data-problem='true'] {
+  color: var(--sc-danger);
+}
+
+.moving {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-block-start: 6px;
+}
+
+.text {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+  font-size: 12px;
+  resize: vertical;
+}

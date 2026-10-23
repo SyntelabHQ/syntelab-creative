@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Orientare",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Prima pagină",
+          "body": [
+            "Un tab Dev se deschide pe prima pagină, unde sunt toate uneltele, grupate ca în meniuri: Codificare, Date, Generare, Inspectare, Rețea.",
+            {
+              "points": [
+                "Scrie în „Caută o unealtă” ca să restrângi lista.",
+                "Pioneza de pe o unealtă o ține sus, la „Fixate”.",
+                "O unealtă se deschide în același tab; Fișier → Toate uneltele duce înapoi la prima pagină. Din Setări poți face ca fiecare unealtă să se deschidă în tabul ei și ca un tab nou să se deschidă pe ultima unealtă folosită."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Lipește orice",
+          "body": [
+            "Caseta de sus de pe prima pagină primește orice lipești și spune cu ce seamănă: un token, un certificat, JSON, UUID-uri, timestamp-uri, programări cron, URL-uri, XML sau HTML, SQL, Base64, o sumă de control, un tabel, YAML.",
+            "Sub fiecare variantă sunt uneltele care lucrează cu așa ceva, cea mai potrivită prima. Dă clic pe una: se deschide cu textul deja în ea și rulat.",
+            {
+              "note": "Ce lipești rămâne în casetă până o golești sau închizi tabul. Nu este scris niciodată pe disc."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Cum este așezată o unealtă",
+          "body": [
+            "Majoritatea uneltelor au același cadru: opțiunile pe un rând sus, intrarea într-o parte, rezultatul în cealaltă și un rând jos care spune ce s-a întâmplat.",
+            {
+              "points": [
+                "Rezultatul se face din nou ori de câte ori se schimbă intrarea sau o opțiune și este arătat la ieșire; „Rulează singur” din rândul de opțiuni spune asta. Doar un text prea lung ca să fie rulat la fiecare tastă sau un fișier mai mare de 128 MB așteaptă butonul Rulează, care apare atunci. Ctrl+Enter rulează unealta oricând.",
+                "Un rezultat care nu este text (o imagine decodată din Base64, gzip) este arătat ca previzualizare: o imagine așa cum este, orice altceva după tip, mărime și primii octeți. Copiază îl copiază atunci ca Base64, iar o imagine poate fi copiată ca imagine. La fel și un fișier de intrare care nu este text.",
+                "Deschide un fișier, Lipește și Golește sunt deasupra intrării; Copiază și Salvează într-un fișier deasupra rezultatului. Un fișier poate fi și tras peste intrare.",
+                "Ce este greșit în intrare este spus în cuvinte, cu rândul și coloana, și marcat în editor.",
+                "Meniul Vizualizare pune cele două panouri alături sau unul sub altul, arată numerele de rând și rupe rândurile lungi; linia dintre panouri poate fi trasă.",
+                "Opțiunile alese sunt reținute pentru data viitoare. Ce tastezi nu este."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Arde și ce se păstrează",
+          "body": [
+            "Arde, în dreapta jos la fiecare unealtă, o golește pe loc: intrarea, rezultatul, tot ce este tastat în casetele ei și ce puteau anula editoarele.",
+            "Dev păstrează doar setările, uneltele fixate, numele ultimei unelte folosite și opțiunile fiecărei unelte. Nimic din ce tastezi, lipești, deschizi sau faci într-o unealtă nu este scris pe disc, într-un jurnal sau într-o listă de elemente recente. Cu atât mai puțin secretele: cheile, frazele de acces, tokenurile și antetele unei cereri există doar în tab.",
+            "Un singur lucru așteaptă o vreme pe disc: rezultatul unui fișier și un rezultat care nu este text sunt scrise într-un dosar al programului, ca să poată fi arătate și apoi salvate. Fiecare este șters când alt rezultat îi ia locul, când arzi unealta sau o închizi și, oricum, când Dev pornește din nou."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Fișiere de orice mărime",
+          "body": [
+            "Nu există o limită pusă pe mărimea unui fișier. Un fișier destul de mic ca să fie afișat (până la 16 MB) este pus în editor. Unul mai mare, sau unul care nu este text, rămâne pe disc: i se arată începutul (sau o previzualizare), unealta îl citește de unde este, iar rezultatul lui este arătat ca pentru un text. Salvează într-un fișier copiază apoi rezultatul unde alegi tu.",
+            {
+              "points": [
+                "Lucrul de durată arată un card cu progresul și un buton Oprește.",
+                "Un fișier care este text în altă codare decât UTF-8 (UTF-16, Windows-1252 și altele) este citit ca text când este destul de mic ca să fie afișat, iar codarea este spusă. Ce salvezi din Dev este UTF-8.",
+                "Un fișier tras peste o unealtă este deschis ca prin Deschide un fișier. Acolo unde fereastra nu poate afla unde se află, este preluat până la 16 MB, ca și cum ar fi lipit."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Multe fișiere și dosare întregi",
+          "body": [
+            "Unde o unealtă are „Lucrează pe: Text / Fișiere”, Fișiere o rulează pe multe fișiere dintr-o dată.",
+            {
+              "steps": [
+                "Adaugă fișiere sau un dosar (cu dosarele de sub el, dacă lași opțiunea pornită).",
+                "Fiecare fișier este citit o dată când este adăugat și se spune dacă unealta îl acceptă.",
+                "Alege unde merg rezultatele: lângă fiecare fișier sub un nume nou, într-un dosar (păstrând dosarele) sau peste fișierele însele, ceea ce te întreabă încă o dată. Hash poate și doar să arate rezultatele în listă.",
+                "Dă clic pe un fișier din listă ca să-i vezi doar rezultatul sub alegeri, înainte să se scrie ceva.",
+                "Rulează. Un fișier greșit nu le oprește pe celelalte; fiecare spune cum a ieșit."
+              ]
+            },
+            {
+              "note": "Un rezultat nu ajunge niciodată peste un fișier existent decât dacă ceri asta."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Meniul de clic-dreapta din Windows Explorer",
+          "body": [
+            "Se pornește din Setările programului, la Windows Explorer. Totul este adunat sub o singură linie, „Syntelab Creative”; pe Windows 11 este sub „Afișați mai multe opțiuni”.",
+            {
+              "points": [
+                "Deschide în Syntelab Dev: pe tipurile de fișiere pe care le citește o unealtă (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz și altele). Fișierul se deschide în unealta potrivită tipului.",
+                "Sume de control: pe orice fișier sau dosar. Sumele sunt listate, fiecare lângă fișierul ei, și nu se scrie nimic.",
+                "Vizualizare hex: pe orice fișier.",
+                "Compară: două fișiere ajung în cele două părți din Diff; două dosare în comparația de dosare."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Codificare",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Transformă octeți în Base64 și înapoi. Codarea acceptă orice fișier; decodarea dă înapoi octeții, afișați când sunt text și salvați într-un fișier când nu sunt.",
+            {
+              "points": [
+                "Alfabet: cel standard sau cel pentru URL-uri (- și _).",
+                "Completare cu = și rânduri de 64, 76 sau orice număr de litere.",
+                "Decodarea acceptă ambele alfabete, cu sau fără completare, și spune unde este o literă greșită."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Codificare / decodificare URL",
+          "body": [
+            "Codarea cu procente, cum o scriu browserele: o parte dintr-o adresă (tot ce nu este literă simplă este codat), o adresă întreagă (semnele ei sunt păstrate) sau un formular (+ pentru spațiu).",
+            "Decodarea spune unde un % nu este urmat de două cifre hexazecimale."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Entități HTML",
+          "body": [
+            "Scrie semnele pe care HTML și XML le păstrează pentru ele (&, <, >, ghilimele) ca entități și citește entitățile înapoi: după nume, număr zecimal sau număr hexazecimal. Numele sunt cele din standardul HTML.",
+            "„Și toate caracterele care nu sunt ASCII” scrie ca entități și literele cu diacritice și celelalte alfabete."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Decodor JWT",
+          "body": [
+            "Desface un JSON Web Token: antetul și conținutul ca JSON și revendicările în cuvinte (emitent, subiect, destinatar, când expiră, cu „expirat” sau „încă neexpirat”).",
+            "Dă secretul ca să verifici o semnătură făcută cu un secret comun (HS256, HS384, HS512). Semnăturile făcute cu o cheie privată (RS, ES, PS) nu sunt verificate.",
+            {
+              "note": "Tokenul și secretul rămân în tab: nimic nu este trimis nicăieri ca să decodezi un token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Scrie un text ca șir al unui limbaj (JSON, JavaScript, C, C++, Java și altele) cu ghilimelele, sfârșiturile de rând și celelalte semne escapate și citește un asemenea șir înapoi."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Comprimă și decomprimă gzip, un fișier de orice mărime pe măsură ce este citit. Nivelul merge de la cel mai rapid la cel mai mic; rezultatul unui text poate fi dat ca Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Baze numerice",
+          "body": [
+            "Spune numere întregi, câte unul pe rând, în binar, octal, zecimal și hexazecimal și într-o bază în plus aleasă de tine, până la 36. Un număr nu are o mărime maximă.",
+            {
+              "points": [
+                "Baza unui număr este dedusă din felul în care este scris: 0x pentru hexazecimal, 0b pentru binar, 0o pentru octal, litere pentru hexazecimal, altfel zecimal. Sau alege baza în care este citit totul.",
+                "Spațiile, liniuțele de subliniere și apostrofurile dintre cifre sunt ignorate: 1_000_000.",
+                "Un număr negativ este dat și cum îl țin calculatoarele (complement față de doi), în cea mai mică dintre mărimile de 8, 16, 32, 64 de biți și așa mai departe care îl cuprinde."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Date",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Formatator JSON",
+          "body": [
+            "Formatează, minifică și validează JSON și îl arată ca arbore. Un document de orice mărime este citit ca flux.",
+            {
+              "points": [
+                "Indentare cu 2 sau 4 spații, tab sau orice număr de spații.",
+                "Mai multe opțiuni: sortarea cheilor, listele scurte pe un rând, spațiul după două puncte, cum se termină rândurile, un sfârșit de rând la final, literele non-ASCII ca \\uXXXX.",
+                "Citirea îngăduitoare acceptă comentarii (// și /* */) și virgule finale și scrie JSON strict.",
+                "Modificări: scoaterea valorilor null, a celor goale și altele, dintr-o singură trecere.",
+                "Arborele se deschide nivel cu nivel și caută un text în chei și valori."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Rulează o interogare JSONPath (RFC 9535) pe un document: $.store.book[?@.price < 10].title. Rezultatul este valorile găsite, căile către ele sau ambele.",
+            "O interogare greșită este semnalată cu locul unde greșește."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Validator JSON Schema",
+          "body": [
+            "Verifică un document față de un JSON Schema (drafturile 4 până la 2020-12). Schema se pune în panoul de sub intrare. Fiecare lucru care nu se potrivește este listat cu locul lui și regula încălcată.",
+            "Pe multe fișiere, fiecare este verificat față de aceeași schemă. Un $ref către alt fișier sau către o adresă nu este urmat."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Generator de schemă și JSON → TypeScript",
+          "body": [
+            "Dintr-un exemplu de JSON, generatorul de schemă scrie un JSON Schema care i se potrivește, iar JSON → TypeScript scrie declarațiile tipului lui (interfețe sau tipuri, exportate sau nu, readonly sau nu, sub un nume dat de tine)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Transformă YAML în JSON și JSON în YAML. YAML este citit după schema lui de bază, cu ancore și fuziuni urmate; ce este greșit este spus cu locul lui."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Transformă un tabel în JSON și înapoi. Separatorul este dedus din primul rând sau ales (virgulă, punct și virgulă, tab, bară); primul rând poate fi antetul; numerele și true / false pot fi detectate.",
+            "„Tabel” arată CSV-ul pe rânduri și coloane, pentru un fișier de orice mărime."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Formatator XML / HTML",
+          "body": [
+            "Formatează, minifică și verifică XML și HTML. XML este citit strict: o etichetă care nu se închide este semnalată cu locul ei. HTML este citit îngăduitor, ca în browsere."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Formatator SQL",
+          "body": [
+            "Aranjează o instrucțiune, câte o clauză pe rând, sau o pune pe un singur rând; cuvintele cheie cu majuscule, cu litere mici sau cum sunt scrise. Nu cere un dialect și nu verifică ce înseamnă instrucțiunea."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Compară două texte rând cu rând, două documente JSON după ce spun sau două dosare fișier cu fișier. Primul se pune în intrare, al doilea în panoul de sub ea.",
+            {
+              "points": [
+                "„Alăturat” marchează cuvintele schimbate într-un rând; „Unificat” este un patch cum îl scrie diff -u.",
+                "Ignoră majusculele, spațiile, rândurile goale, cifrele sau punctuația.",
+                "Pentru JSON, ordinea cheilor și așezarea nu sunt diferențe; rezultatul poate fi un JSON Patch (RFC 6902).",
+                "Dosare: ce fișiere are doar unul, care sunt identice, care diferă; „Compară” pe un rând deschide perechea ca texte."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Previzualizare Markdown",
+          "body": [
+            "Arată Markdown-ul cum va arăta și îi dă HTML-ul de copiat sau salvat: CommonMark cu tabele, text tăiat, liste de sarcini și note de subsol.",
+            {
+              "points": [
+                "HTML-ul tastat în Markdown este arătat ca text, nu executat.",
+                "O imagine care ar trebui adusă de pe rețea nu este adusă: în locul ei apar descrierea și adresa. O imagine purtată în text (data:) este afișată.",
+                "Un link pe care dai clic se deschide în browserul sistemului."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Generare",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Face UUID-uri de versiunile 1, 3, 4, 5, 6 și 7 (RFC 9562), câte ceri, scrise cu cratime, simplu, ca URN sau între acolade. „Analizează” spune versiunea fiecărui UUID și timpul sau numele din el."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 și SHA-512 pentru un text sau un fișier, mai multe deodată, scrise ca hex sau Base64. Un fișier de orice mărime este procesat pe măsură ce este citit.",
+            {
+              "points": [
+                "Verifică față de: lipește o sumă de control sau rândul dintr-un fișier .sha256; se spune dacă se potrivește.",
+                "Cheie HMAC: sumele devin HMAC-uri cu acea cheie.",
+                "Fiecare rând separat: câte o sumă pentru fiecare rând al textului.",
+                "Fișiere: sumele sunt listate lângă fișierele lor; „Copiază tot” le dă cum le scrie sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Parole și secrete",
+          "body": [
+            "Face parole din tipurile de litere alese, fraze de acces din cuvinte și octeți aleatori ca hex sau Base64, din numerele aleatoare ale sistemului de operare. Fiecare spune câți biți de entropie are. Odată ce ceva este făcut, schimbarea unei opțiuni îl face din nou.",
+            "O frază de acces este formată din cuvinte extrase din lista lungă a Electronic Frontier Foundation (7776 de cuvinte englezești), fiecare la fel de probabil: șase cuvinte înseamnă aproximativ 77 de biți."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Chei și certificate",
+          "body": [
+            "Cinci lucruri, alese sus:",
+            {
+              "points": [
+                "Cheie nouă: RSA, EC P-256 / P-384 / P-521 sau Ed25519, dată în toate formele acceptate de programe (PKCS #8, forma veche, OpenSSH; cheia publică în PEM și ca rând pentru authorized_keys), protejată cu o frază de acces dacă dai una.",
+                "Cerere de certificat: un CSR pentru o cheie nouă sau una lipită, cu subiectul și celelalte nume (SAN).",
+                "Certificat autosemnat: la fel, semnat cu propria cheie, pentru un număr de zile; „Poate semna alte certificate” îl face o autoritate proprie.",
+                "Semnează cu propria CA: lipește o cerere, certificatul autorității tale și cheia ei; primești certificatul semnat, urmat de autoritate.",
+                "Citește și convertește: lipește sau deschide orice (PEM, DER, o cheie OpenSSH, un fișier .pfx sau .p12, protejat sau nu). Spune ce a găsit și dacă cheia este cea a certificatului și scrie fiecare lucru în celelalte forme. O cheie și certificatul ei pot fi salvate împreună ca .pfx."
+              ]
+            },
+            {
+              "note": "Totul se face pe acest calculator. O cheie stă în tab până la Arde și nicăieri altundeva, dacă nu o salvezi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inspectare",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Tester regex",
+          "body": [
+            "Încearcă o expresie regulată JavaScript pe un text: potrivirile cu grupurile și locurile lor sau textul cu potrivirile înlocuite. Fanioanele sunt g, i, m, s, u, y.",
+            "Tiparul rulează separat de fereastră, iar unul care durează mai mult de 20 de secunde este oprit."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Explică cron",
+          "body": [
+            "Spune în cuvinte ce înseamnă o programare și când rulează: crontab (cinci câmpuri, șase cu secunde, șapte cu an), Quartz, AWS EventBridge cron() și rate() și systemd OnCalendar. Câte o programare pe rând.",
+            {
+              "points": [
+                "Următoarele rulări și, la cerere, cele anterioare, în fusul orar ales.",
+                "Zilele săptămânii sunt numerotate de la 0 pentru duminică sau de la 1, cum le numerotează Quartz, după cum alegi. Un rând cu secunde care are și an, L, W sau # este de Quartz și este citit singur în felul Quartz.",
+                "Aceeași programare în celelalte forme, de copiat sau de adăugat în intrare.",
+                "Constructorul face o programare alegând fiecare câmp; „Schimbă în constructor” preia în el o programare tastată."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Timestamp Unix",
+          "body": [
+            "Citește momente, câte unul pe rând: secunde, milisecunde, microsecunde sau nanosecunde de la 1970 sau o dată scrisă în felurile obișnuite (ISO 8601, cum o scriu e-mailul și HTTP, cum o scrie Git). Fiecare este spus în fusul orar ales, în UTC și ca fiecare tip de timestamp."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Analizor URL",
+          "body": [
+            "Desface un URL cum îl citesc browserele: schemă, utilizator, gazdă (cu forma Unicode când este scrisă în punycode), port, cale, fiecare parametru al interogării decodat și fragmentul."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Decodor de certificate",
+          "body": [
+            "Citește certificate X.509 din PEM sau DER și spune tot ce conțin: subiect, emitent, valabilitate, numele pentru care sunt, cheia, extensiile și amprentele.",
+            "Doar citește; nu judecă dacă un certificat este de încredere. Pentru certificatul arătat de un site și dacă acest calculator are încredere în el, folosește Rețea → Certificatul unui site."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Vizualizator hex",
+          "body": [
+            "Arată octeții unui fișier de orice mărime sau ai unui text lipit: poziția fiecărui rând, octeții și aceiași octeți ca litere.",
+            {
+              "points": [
+                "Mergi la o poziție scrisă ca 0x1F4, 1F4h sau 500.",
+                "Caută octeți (DE AD BE EF) sau un text (UTF-8 ori UTF-16 în ambele ordini), înainte și înapoi.",
+                "Dă clic pe un octet: panoul lateral arată ce este acolo ca numere de toate mărimile, în ambele ordini de octeți, ca și caracter și ca timp.",
+                "Selectează prin tragere, cu Shift sau cu săgețile; copiază selecția ca hex, cod, Base64 sau text ori salveaz-o într-un fișier."
+              ]
+            },
+            {
+              "note": "Doar privește: nimic nu se schimbă în fișier."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rețea",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Unde merg uneltele de rețea",
+          "body": [
+            "Aceste patru unelte sunt singura parte din Dev care iese online și merg acolo unde le îndrepți tu.",
+            {
+              "points": [
+                "Este contactată doar adresa pe care o scrii și doar când apeși butonul. Niciodată în fundal.",
+                "Se trimite ce ai scris tu. Singurul lucru adăugat unei cereri este un User-Agent identic pentru toți („Syntelab Creative”), dacă nu pui tu altul.",
+                "Nu se păstrează cookie-uri, nu se trimite nimic despre tine sau calculator și nimic din ce tastezi nu este păstrat."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Client HTTP",
+          "body": [
+            "Trimite o cerere scrisă de mână: metodă, adresă, antete (câte unul pe rând: Nume: valoare) și un corp, tastat sau luat dintr-un fișier de orice mărime.",
+            {
+              "points": [
+                "Răspunsul: codul, cât a durat (în total și până la primul octet), mărimea, antetele și corpul, colorat după tip și aranjat când este JSON. Un corp care nu este text (o imagine, un PDF) este arătat așa cum este și salvat așa cum a venit.",
+                "Urmează redirecționările sau vezi primul răspuns așa cum este. Adresele prin care a trecut cererea sunt listate.",
+                "Verifică certificatul față de ce consideră acest calculator de încredere; oprește verificarea doar pentru serverele tale.",
+                "„Trimite, răspunsul într-un fișier” scrie un corp de orice mărime direct pe disc, cu progres și Oprește.",
+                "„Copiază ca curl” dă aceeași cerere ca o comandă."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Căutare DNS",
+          "body": [
+            "Întreabă un server de nume despre înregistrările unui nume: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, mai multe deodată. O adresă IP își dă numele (PTR).",
+            "Întrebarea merge la serverul de nume setat pe calculator, la unul public (1.1.1.1, 8.8.8.8, 9.9.9.9), la un rezolvator prin HTTPS (Cloudflare, Google) sau la unul scris de tine."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Verificare port",
+          "body": [
+            "Spune dacă porturile unei gazde acceptă conexiuni TCP: unul, mai multe sau un interval până la toate cele 65 535 (22, 80, 443, 8000-8100). Fiecare este deschis, închis sau fără răspuns în timpul dat.",
+            {
+              "note": "Încearcă doar gazde care sunt ale tale sau pe care ai voie să le testezi."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Certificatul unui site",
+          "body": [
+            "Arată certificatele date de un site la o conexiune securizată: pentru cine sunt, cine le-a semnat, câte zile mai au, dacă acest calculator are încredere în ele și de ce nu, versiunea TLS și cifrul. Se face doar strângerea de mână: nu se trimite nicio cerere.",
+            {
+              "points": [
+                "Scrie example.com, example.com:8443 sau o adresă web.",
+                "Serverele de e-mail și FTP încep necriptat și li se cere trecerea pe TLS (STARTTLS): ales după port (25, 587, 143, 110, 21) sau manual.",
+                "„Tot” arată tot ce spun certificatele; „PEM” le dă de copiat sau salvat."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Setări",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Setările Dev",
+          "body": [
+            "Fișier → Setări deschide Setările programului la partea Dev.",
+            {
+              "points": [
+                "Deschide fiecare unealtă în tabul ei sau în tabul în care este aleasă.",
+                "Deschide un tab nou pe ultima unealtă folosită sau pe prima pagină.",
+                "Readu opțiunile tuturor uneltelor și fixările la starea inițială a programului."
+              ]
+            },
+            "Meniul de clic-dreapta din Windows Explorer, limba, tema și tastele sunt în Setările programului în ansamblu."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Despre Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Despre Dev",
+          "body": [
+            "Dev este aplicația Syntelab Creative pentru dezvoltatori: unelte care codifică și decodifică, formatează și verifică, transformă o formă de date în alta și desfac ce este greu de citit ca atare.",
+            "Totul se face pe acest calculator. Nimic din ce scrii, lipești sau deschizi într-o unealtă nu este păstrat și nu este trimis nicăieri. Nu există o limită pusă pe mărimea sau numărul fișierelor: limitele sunt memoria și discul calculatorului.",
+            "Este nouă și încă se construiește. Unde nu îți ajunge pentru munca ta, spune-ne prin Ajutor → Feedback."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Cu ce este construit Dev",
+          "body": [
+            {
+              "points": [
+                "Editoarele: CodeMirror, https://codemirror.net . Licență MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Citirea și colorarea JSON-ului în editoare: @codemirror/lang-json, https://github.com/codemirror/lang-json , împreună cu @codemirror/language și @lezer/highlight. Licență MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Citirea și colorarea YAML, XML, HTML și SQL în editoare: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (împreună cu @codemirror/lang-css și @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Licență MIT. Copyright (C) 2018-2024 by Marijn Haverbeke and others.",
+                "Verificarea unui document față de un JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Licență MIT. Copyright (c) 2020-2026 Dmitry Dygalo. Este construită fără partea ei de rețea: Dev nu descarcă niciodată o schemă.",
+                "Tiparele din JSONPath (match și search): regex, https://github.com/rust-lang/regex . Licență MIT sau Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "Citirea YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Licență MIT sau Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Scrierea YAML este făcută de Dev însuși.",
+                "Compararea a două texte (Diff): similar, https://github.com/mitsuhiko/similar . Licență Apache-2.0. Autori: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Licență MIT sau Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Sumele din unealta Hash și cele pentru semnătura unui token: sha2, sha1 și md-5, https://github.com/RustCrypto/hashes . Licență MIT sau Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, și dezvoltatorii RustCrypto.",
+                "Date, ore și fusuri orare (Timestamp Unix, Explică cron): jiff, https://github.com/BurntSushi/jiff , cu fusurile orare din baza de date IANA. Licență Unlicense sau MIT. Copyright (c) 2015 Andrew Gallant.",
+                "Desfacerea unui URL: url și idna, https://github.com/servo/rust-url . Licență MIT sau Apache-2.0. Copyright (c) 2013-2025 The rust-url developers.",
+                "Citirea certificatelor X.509: x509-parser, https://github.com/rusticata/x509-parser . Licență MIT sau Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "Testerul de regex rulează expresiile regulate din JavaScript, în motorul WebView-ului cu care desenează programul (Microsoft Edge WebView2 pe Windows); nu se adaugă nicio bibliotecă pentru el.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Licență MIT sau Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton and contributors.",
+                "UUID-uri: uuid, https://github.com/uuid-rs/uuid . Licență Apache-2.0 sau MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Octeți aleatori pentru parole, secrete și UUID-uri, de la sistemul de operare: getrandom, https://github.com/rust-random/getrandom . Licență MIT sau Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Chei și semnături RSA: rsa, https://github.com/RustCrypto/RSA , cu num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Licență MIT sau Apache-2.0. Copyright (c) RustCrypto Developers și dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Chei și semnături pe curbele NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , cu ecdsa, elliptic-curve și crypto-bigint de care au nevoie. Licență Apache-2.0 sau MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Chei și semnături Ed25519: ed25519-dalek și curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Licență BSD 3-Clause. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft și Henry de Valence. All rights reserved.",
+                "Formele în care sunt scrise cheile, cererile și certificatele (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER și PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Licență Apache-2.0 sau MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Fișierele de chei OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , cu bcrypt-pbkdf, aes, ctr, chacha20 și celelalte cifruri și funcții hash RustCrypto de care are nevoie protejarea unei chei ( https://github.com/RustCrypto ). Licență Apache-2.0 sau MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Fișierele PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , cu pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 și scrypt din RustCrypto de care are nevoie. Licență MIT sau Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Numerele aleatoare din care se fac cheile, luate de la sistemul de operare: rand_core, https://github.com/rust-random/rand . Licență MIT sau Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "Clientul HTTP: ureq, https://github.com/algesten/ureq . Licență MIT sau Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Conexiunile securizate (TLS) ale clientului HTTP și ale uneltei „Certificatul unui site”: rustls, https://github.com/rustls/rustls , licență Apache-2.0, ISC sau MIT, Copyright (c) 2016 Joseph Birr-Pixton; cu rustls-webpki, https://github.com/rustls/webpki , licență ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , licențe Apache-2.0 și ISC; webpki-roots, https://github.com/rustls/webpki-roots , licență CDLA-Permissive-2.0.",
+                "Dacă acest calculator are încredere într-un certificat: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Licență MIT sau Apache-2.0. Copyright (c) 2022 1Password.",
+                "Citirea Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Licență MIT. Copyright 2015 Google Inc. All rights reserved.",
+                "Citirea fișierelor scrise în alte codări decât UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , licență Apache-2.0 sau MIT (cu BSD-3-Clause pentru datele ei), Copyright Mozilla Foundation; și chardetng, https://github.com/hsivonen/chardetng , licență Apache-2.0 sau MIT, Copyright Mozilla Foundation.",
+                "Cuvintele frazelor de acces: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , de Electronic Frontier Foundation, folosită sub licența Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Lista este folosită nemodificată.",
+                "Deschiderea cheilor protejate în felul vechi al OpenSSL: aes, cbc și des din RustCrypto, https://github.com/RustCrypto . Licență MIT sau Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "Scrise pentru Dev, fără bibliotecă: căutarea DNS (întrebări scrise și răspunsuri citite după RFC 1035) și verificarea de porturi.",
+                "Scrise pentru Dev, fără nicio bibliotecă: citirea și scrierea JSON-ului pe flux, JSONPath (RFC 9535), Base64, codarea cu procente, referințele de caractere HTML (numele lor sunt cele din standardul HTML, https://html.spec.whatwg.org ), secvențele de escape, citirea JSON Web Tokenurilor, scrierea YAML, CSV în ambele sensuri, citirea programărilor cron, formatatorul XML și HTML și formatatorul SQL."
+              ]
+            },
+            "Ce împarte cu restul programului este la „Despre Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ce nu poate face încă Dev",
+          "body": [
+            {
+              "points": [
+                "Semnătura unui token este verificată doar când a fost făcută cu un secret comun (HS256, HS384, HS512).",
+                "Validatorul JSON Schema spune în engleză ce nu se potrivește, așa cum o face biblioteca lui, și nu urmează un $ref către alt fișier sau altă adresă.",
+                "Formatatorul SQL nu cere un dialect și nu verifică ce înseamnă o instrucțiune: spune doar despre un șir sau un comentariu care nu se termină.",
+                "YAML, și JSON-ul care devine YAML sau CSV, sunt ținute întregi în memorie cât sunt transformate; CSV-ul care devine JSON, XML, HTML și SQL sunt lucrate pe măsură ce sunt citite, oricât de mari ar fi.",
+                "Tabelul în care este privit CSV-ul este doar pentru citire: nu se scrie în el și încă nu se copiază din el.",
+                "Diff păstrează șaisprezece octeți pentru fiecare rând al celor două fișiere, nu fișierele; două documente JSON sunt ținute întregi, pentru că sunt rescrise înainte de comparare.",
+                "O porțiune de rânduri în care nimic nu apare exact o dată pe ambele părți este comparată cât de bine se poate într-o secundă: diferențele spuse sunt adevărate, dar nu mereu cele mai puține.",
+                "Diff nu compară felul în care se termină rândurile (CRLF sau LF).",
+                "Două dosare sunt comparate după octeții fișierelor; fișierele sunt potrivite după nume, literă cu literă.",
+                "Ce spun uneltele din Inspectare este JSON, cu numele în engleză.",
+                "Testerul de regex rulează expresiile regulate din JavaScript, nu PCRE și nu pe cele din Rust; lucrează pe un text care poate fi afișat, nu pe un fișier ținut pe disc; un tipar care rulează mai mult de 20 de secunde este oprit.",
+                "Decodorul de certificate citește un certificat și nu verifică dacă este de încredere: nici lanțul, nici semnătura, nici dacă a fost revocat.",
+                "Un fișier care este text în altă codare decât UTF-8 este citit când este destul de mic ca să fie afișat; unul mai mare, prelucrat de pe disc, trebuie să fie UTF-8.",
+                "Un fișier tras peste o unealtă este preluat până la 16 MB; fereastra nu află unde este pe disc un fișier tras, deci unul mai mare se deschide cu Deschide un fișier.",
+                "Frazele de acces sunt făcute doar din cuvinte englezești.",
+                "Explică cron: constructorul face programări crontab (cinci câmpuri sau șase cu secunde); o programare cu L, W, # sau ? nu poate fi preluată în el. Orele unui rate() din AWS nu pot fi spuse, pentru că se numără de la crearea regulii. Din systemd sunt citite evenimentele de calendar obișnuite; nu și fracțiunile de secundă sau listele de zile numărate de la sfârșitul lunii.",
+                "Vizualizatorul hex doar privește: nimic nu se schimbă în fișier. Coloana de text arată ASCII sau literele vest-europene, nu alte alfabete; se caută octeți sau un text, nu tipare.",
+                "Chei și certificate: cheile sunt RSA, curbele P-256, P-384 și P-521 și Ed25519; altele (DSA, secp256k1, X25519) nu sunt citite. O cheie protejată în felul vechi al OpenSSL este deschisă când cifrul ei este AES sau 3DES. Un fișier .pfx ține o cheie cu certificatele ei. Generarea unei chei RSA foarte mari durează și nu poate fi oprită la jumătate. Biblioteca ce face chei RSA are o slăbiciune cunoscută față de un atacator care poate cronometra multe semnături prin rețea (RUSTSEC-2023-0071): aici cheile sunt făcute și scrise pe calculatorul tău și nimic nu este semnat pentru altcineva.",
+                "Clientul HTTP: HTTP/1.1 (nu HTTP/2 sau 3); nu se păstrează cookie-uri între cereri; formularele din mai multe părți (multipart) nu sunt construite pentru tine; un răspuns mai mare de 16 MB sau care nu este text se scrie într-un fișier trimițând cererea din nou.",
+                "Căutarea DNS arată semnăturile (DNSSEC) și nu le verifică. Verificarea de porturi încearcă doar TCP: un port UDP care tace nu poate fi deosebit de unul închis. Certificatul unui site nu întreabă dacă un certificat a fost revocat.",
+                "Meniul de clic-dreapta este pentru Windows Explorer; pe Windows 11 intrările lui sunt sub „Afișați mai multe opțiuni”."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

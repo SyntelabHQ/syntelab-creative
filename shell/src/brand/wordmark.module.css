@@ -1,0 +1,17 @@
+.wordmark {
+  margin: 0;
+  font-family: var(--sc-font-brand);
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.company {
+  color: var(--sc-brand);
+}
+
+.wordmark[data-size='small'] {
+  font-size: clamp(18px, 3.4vw, 28px);
+}

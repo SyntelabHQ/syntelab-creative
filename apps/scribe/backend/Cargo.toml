@@ -1,0 +1,42 @@
+[package]
+name = "scribe-backend"
+description = "Scribe: the Rust side of the app."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+# Reads and writes text in the encodings files come in (MIT / Apache-2.0 / BSD-3-Clause).
+encoding_rs = "0.8"
+# Sorts as each language does (ICU4X; Unicode licence).
+icu_collator = "2"
+icu_locale_core = "2"
+# Finds where words and sentences end, in every script (ICU4X; Unicode licence).
+icu_segmenter = "2"
+# Patterns that cannot freeze the program: time grows with the text, never beyond (MIT / Apache-2.0).
+regex = "1"
+# Takes letters apart from their marks (MIT / Apache-2.0).
+unicode-normalization = "0.1"
+# Compares two texts (shared with Dev).
+syntelab-compare = { workspace = true }
+# Tells how the bytes of a text are written (shared with Dev).
+syntelab-encoding = { workspace = true }
+# Random bytes from the operating system, for passwords and filler (MIT / Apache-2.0).
+getrandom = "0.3"
+# Reads the bytes of a file the interface holds only the content of (MIT / Apache-2.0).
+base64 = "0.22"
+# Lays a text out on pages and writes it as a PDF ("Save as" PDF), the same engine as PDF Organizer's (AGPL-3.0).
+# The same features as there: the workspace builds the engine once.
+mupdf = { version = "0.8", default-features = false, features = [
+    "base14-fonts",
+    "img",
+    "html",
+    "system-fonts",
+    "epub",
+    "xps",
+    "cbz",
+    "docx-output",
+] }
+serde = { workspace = true }
+serde_json = { workspace = true }
+syntelab-app-api = { workspace = true }

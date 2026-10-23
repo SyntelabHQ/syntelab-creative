@@ -1,0 +1,145 @@
+/* Shared by the windows that put something on a page. */
+.kinds {
+  display: flex;
+  gap: 4px;
+}
+
+.kind {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 34px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  cursor: pointer;
+}
+
+.kind[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+/* The field to sign in: white in both themes, like the paper it goes on. */
+.pad {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.padCanvas {
+  width: 100%;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background:
+    linear-gradient(var(--sc-paper-line), var(--sc-paper-line)) no-repeat 5% 78% / 90% 1px,
+    var(--sc-paper);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.padHint {
+  position: absolute;
+  inset-block-start: 38%;
+  inset-inline: 0;
+  color: var(--sc-paper-muted);
+  text-align: center;
+  pointer-events: none;
+}
+
+.padTools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.padTools > :last-child {
+  margin-inline-start: auto;
+}
+
+.penColor input {
+  width: 36px;
+  height: 34px;
+  padding: 2px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  cursor: pointer;
+}
+
+.penWidth {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.penWidth input {
+  width: 110px;
+}
+
+/* Shows the line as thick as it will be drawn. */
+.penSample {
+  width: 28px;
+  border-radius: var(--sc-radius-pill);
+}
+
+.saved {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.saved h3 {
+  margin: 0;
+  font-size: inherit;
+}
+
+.savedList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.savedItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-paper);
+}
+
+.savedUse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 56px;
+  padding: 6px;
+  border: 0;
+  border-radius: var(--sc-radius-m);
+  background: none;
+  cursor: pointer;
+}
+
+.savedUse:hover {
+  background: var(--sc-paper-accent-soft);
+}
+
+.savedUse img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.savedItem button:last-child {
+  color: var(--sc-paper-text-soft);
+}
+

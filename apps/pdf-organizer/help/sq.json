@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Hapja dhe leximi",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Hapja e një dokumenti",
+          "body": [
+            "Skedari → Hap (Ctrl+O) hap një PDF në një skedë më vete. \"Hap disa skedarë njëkohësisht…\" hap çdo skedar të zgjedhur në skedën e vet.",
+            "Hapen edhe skedarët që nuk janë PDF, si faqe: fotografi (PNG, JPEG, TIFF, WebP dhe shumë të tjera), skedarë teksti dhe uebi, e-libra, XPS dhe dokumente zyre. Një dokument i tillë nuk është ruajtur ende askund: \"Ruaj\" pyet ku.",
+            {
+              "note": "Dokumentet e zyrës (Word, Excel, PowerPoint, OpenDocument) konvertohen nga Word, Excel ose PowerPoint, ose nga LibreOffice, varësisht se cili është i instaluar në kompjuter. Pa njërin prej tyre, ato nuk mund të hapen."
+            },
+            "Skedarët që lëshohen mbi një skedë bosh mblidhen në një koleksion; kur lëshohen mbi një dokument, faqet e tyre i shtohen atij.",
+            "Në Windows, PDF Organizer mund të jetë aplikacioni që hap skedarët PDF kur klikon dy herë mbi ta: në faqen e tij fillestare, \"Bëje të parazgjedhur\" hap cilësimet e Windows, ku zgjedh Syntelab Creative për skedarët PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Shikimi i faqeve",
+          "body": [
+            "Menyja Pamja përcakton si shfaqet dokumenti; asgjë në të nuk e ndryshon skedarin.",
+            {
+              "points": [
+                "Zmadhimi: zmadho, zvogëlo, madhësia reale, përshtat faqen, përshtat gjerësinë, përshtat lartësinë. Edhe Ctrl me rrotën e mausit zmadhon dhe zvogëlon.",
+                "Shfaqja e faqes: një faqe ose dy krah për krah, me ose pa faqe kopertine, dhe rrëshqitja nëpër të gjitha faqet si një shirit i gjatë.",
+                "Udhëzuesit: vizoret dhe rrjeta, në njësinë e zgjedhur te Cilësimet.",
+                "\"Shfaq miniaturat\": faqet e vogla anash. Klikoni njërën për të shkuar te ajo; faqeshënuesit e dokumentit janë në të njëjtin panel.",
+                "\"Modaliteti i leximit\" fsheh veglat; \"Modaliteti i ekranit të plotë\" fsheh gjithçka përveç faqes. Escape del nga të dyja."
+              ]
+            },
+            "Shiriti mbi faqe (shiriti i shpejtë i mjeteve) ka numrin e faqes, zmadhimin dhe butonat që keni zgjedhur te Cilësimet."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Gjetja e tekstit",
+          "body": [
+            "Redakto → Kërko në dokument (Ctrl+F): shkruani një fjalë ose një frazë; vendet ku gjendet shënohen në faqe, dhe shigjetat kalojnë nga njëri te tjetri.",
+            {
+              "note": "Një dokument i skanuar përbëhet nga imazhe faqesh dhe nuk ka tekst për t'u gjetur derisa teksti i tij të njihet: shihni \"Njohja e tekstit (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Vetitë e dokumentit",
+          "body": [
+            "Skedari → Vetitë e dokumentit tregon çfarë thotë dokumenti për veten: titullin, autorin, datat kur u krijua dhe u ndryshua, numrin e faqeve, madhësinë e skedarit."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ruajtja, printimi dhe dërgimi",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Ruaj dhe Ruaj si",
+          "body": [
+            "Asgjë që bëni nuk e ndryshon skedarin në disk derisa ta ruani. Deri atëherë, çdo hap mund të anulohet (Ctrl+Z) dhe të ribëhet (Ctrl+Y).",
+            {
+              "points": [
+                "Ruaj (Ctrl+S) shkruan dokumentin mbi skedarin e tij.",
+                "Ruaj si (Ctrl+Shift+S) e shkruan në një skedar të ri, i cili pastaj zë vendin e skedës; skedari i vjetër mbetet siç ishte."
+              ]
+            },
+            "Nëse një program tjetër e ka skedarin të hapur, ai nuk mund të mbishkruhet: programi ju njofton dhe i mban ndryshimet tuaja, që t'i ruani me një emër tjetër.",
+            {
+              "note": "Ruajtja e një dokumenti të ndryshuar mbi një skedar të nënshkruar me certifikatë i heq nënshkrimet. Programi pyet fillimisht dhe ofron \"Ruaje si skedar të ri…\"; kjo pyetje mund të çaktivizohet te Cilësimet → Nënshkrimet."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Krijimi i një PDF",
+          "body": [
+            "Skedari → Krijo një PDF… krijon një dokument të ri:",
+            {
+              "points": [
+                "nga një skedar, ose nga disa: të kombinuara në një PDF, ose një PDF për secilin;",
+                "nga një faqe uebi, në adresën që shkruani (faqja ruhet me shfletuesin e instaluar në kompjuter);",
+                "nga ajo që është në kujtesën e fragmenteve;",
+                "nga faqe bosh me madhësinë që zgjidhni."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Eksportimi në një format tjetër",
+          "body": [
+            "Skedari → Eksporto si… e shkruan dokumentin në një format tjetër: tekst Word ose OpenDocument, tekst të thjeshtë, faqe uebi, XML, imazhe të faqeve (PNG, JPEG, TIFF, SVG) ose PostScript. Për imazhet zgjidhni rezolucionin.",
+            "Dokumenti vetë mbetet PDF; eksportimi është një skedar i ri.",
+            {
+              "note": "Teksti mund të eksportohet vetëm aty ku dokumenti ka tekst. Për një skanim, fillimisht bëni njohjen e tekstit."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Printimi",
+          "body": [
+            "Skedari → Printo… (Ctrl+P) printon dokumentin ashtu siç është rregulluar tani, bashkë me atë që keni vizatuar mbi të. Zgjidhni faqet, letrën, nëse fletët qëndrojnë vertikalisht apo horizontalisht, dhe nëse faqet përshtaten me fletën apo printohen në madhësinë e tyre reale; pastaj dritarja e printimit e sistemit kërkon printerin.",
+            "Letra, orientimi dhe shkallëzimi me të cilat hapet dritarja e printimit caktohen te Cilësimet → Printimi."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Ndarja me të tjerët",
+          "body": [
+            "Skedari → Ndaj… ia jep dokumentin dritares \"Ndaj\" të sistemit: email, një pajisje e afërt dhe aplikacione të tjera. Dokumenti ndahet ashtu siç është tani, me ndryshimet tuaja të paruajtura."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organizimi i faqeve",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Pamja Organizo",
+          "body": [
+            "Organizo → Organizo faqet shfaq çdo faqe në një rrjet. Asgjë nuk ndryshon në disk derisa të ruani.",
+            {
+              "points": [
+                "Zgjedhja: klikoni një faqe; Ctrl+klikim shton një faqe, Shift+klikim zgjedh një varg. \"Zgjidh të gjitha faqet\", \"Mos zgjidh asnjë\", \"Zgjidh faqet tek\" dhe \"Zgjidh faqet çifte\" janë në menu.",
+                "Zhvendosja: tërhiqni faqet e zgjedhura në vendin e tyre të ri, ose përdorni \"Lëviz majtas\" dhe \"Lëviz djathtas\".",
+                "Rrotullimi: \"Të përzgjedhurat: rrotullo majtas\" dhe \"Të përzgjedhurat: rrotullo djathtas\" rrotullojnë faqet e zgjedhura; \"Të gjitha faqet: rrotullo majtas\" dhe \"Të gjitha faqet: rrotullo djathtas\" rrotullojnë çdo faqe.",
+                "Fshirja: tasti Delete, ose \"Fshi faqet\". Një dokument mban të paktën një faqe.",
+                "Kopjimi, prerja dhe ngjitja (Ctrl+C, Ctrl+X, Ctrl+V): faqet mund të ngjiten në të njëjtin dokument ose në një tjetër të hapur në program.",
+                "Madhësia: rrëshqitësi lart i bën faqet më të mëdha ose më të vogla; po ashtu edhe Ctrl + rrota e miut mbi faqet, si dhe \"Zmadho\" e \"Zvogëlo\" (Ctrl+= dhe Ctrl+-). Madhësia mbahet mend."
+              ]
+            },
+            "Të njëjtat komanda funksionojnë edhe pa rrjetin, në faqen në pamje."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Nxjerrja e faqeve dhe ndarja e një dokumenti",
+          "body": [
+            "Organizo → Nxirr faqet i nxjerr faqet e zgjedhura si një dokument të ri në skedën e vet, ende të paruajtur. Mund të zgjidhni gjithashtu që çdo faqe të shkruhet si skedar më vete, dhe nëse faqet hiqen nga ky dokument.",
+            "Organizo → Ndarja e dokumentit e shkruan dokumentin si disa skedarë më të vegjël; ky dokument mbetet siç është.",
+            "Emrat e dokumenteve të reja ndjekin modelet në Cilësimet → Emrat e dokumenteve të reja.",
+            {
+              "note": "Nënshkrimet e bëra me certifikatë nuk kalojnë në dokumentet e nxjerra ose të ndara: një nënshkrim vlen vetëm për skedarin ku u bë."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Shtimi dhe zëvendësimi i faqeve",
+          "body": [
+            {
+              "points": [
+                "Organizo → Shto faqe shton faqet e një skedari tjetër (PDF, imazh, tekst, dokument zyre) pas faqes së përzgjedhur, ose në fund.",
+                "Organizo → Zëvendëso faqet vendos faqet e një skedari tjetër në vend të atyre të përzgjedhura.",
+                "Shto → Faqe bosh shton një faqe bosh me madhësinë e faqes fqinje."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Prerja dhe ndryshimi i madhësisë së faqeve",
+          "body": [
+            "Redakto → Prerja e faqeve pret skajet e faqeve, sipas margjinave që shkruani ose tërhiqni. Asgjë nuk hiqet nga skedari: faqet thjesht shfaqin më pak.",
+            "Redakto → Ndryshimi i përmasave të faqeve i vendos faqet në një madhësi tjetër flete (A4, Letter dhe të tjera). Përmbajtja mund të shkallëzohet që të përshtatet ose të mbajë madhësinë e saj, dhe të vendoset në një nga nëntë pozicionet në fletën e re.",
+            "Të dyja pyesin për cilat faqe: të gjitha, të përzgjedhurat, një varg, faqet tek ose çift."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kombinimi i skedarëve",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Koleksioni",
+          "body": [
+            "Kombino → Koleksion i ri hap një vend për të mbledhur skedarë dhe për t’i shkruar si një PDF të vetëm.",
+            {
+              "steps": [
+                "Shtoni skedarë me \"Shto skedarë…\" ose lërini mbi koleksion. PDF-të, imazhet, tekstet dhe dokumentet e zyrës mund të përzihen.",
+                "Tërhiqni kartat në rendin që dëshironi, ose përdorni shigjetat në çdo kartë.",
+                "Hapni një kartë për të zgjedhur se cilat nga faqet e saj do të përfshihen.",
+                "\"Kombinimi i skedarëve\" i shkruan ato, me radhë, si një dokument të ri në skedën e vet."
+              ]
+            },
+            "Vetë skedarët nuk ndryshojnë.",
+            "Rrëshqitësi lart i bën faqet në karta më të mëdha ose më të vogla; po ashtu edhe Ctrl + rrota e miut, si dhe \"Zmadho\" e \"Zvogëlo\" (Ctrl+= dhe Ctrl+-). Madhësia mbahet mend."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Shkrimi dhe vizatimi në faqe",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Mjetet",
+          "body": [
+            "Mjetet e vizatimit hapen si një panel pranë faqes, si një rrjet butonash ose si një listë me emra (Cilësimet përcaktojnë këtë). Me një mjet në dorë, tërhiqni ose klikoni mbi faqe; Escape e heq mjetin.",
+            {
+              "points": [
+                "Tekst: klikoni dhe shkruani. Fonti, madhësia, ngjyra, shkronjat e trasha, të pjerrëta dhe rreshtimi janë në panel.",
+                "Imazhi: zgjidhni një fotografi, pastaj tërhiqni ku do të vendoset dhe sa e madhe do të jetë.",
+                "Format: drejtkëndësh, elips, vijë, shigjetë, shenjë kontrolli, kryq, pikë.",
+                "Theksim: tërhiqni mbi atë që duhet të dallohet; ajo që është poshtë mbetet e lexueshme."
+              ]
+            },
+            "Me \"Zgjidh, zhvendos dhe ndrysho madhësinë\" një shenjë zgjidhet përsëri: tërhiqeni atë, tërhiqni qoshet e saj, rrotullojeni përmes dorezës, ndryshoni ngjyrat e saj në panel, ose fshijeni me tastin Delete. Shenjat mund të kopjohen dhe ngjiten, gjithashtu edhe në faqe të tjera.",
+            "Çdo gjë e vizatuar shkruhet në skedar kur e ruani atë."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Ndryshimi i tekstit dhe imazheve të dokumentit",
+          "body": [
+            "Mjeti \"Redakto tekstin dhe imazhet e dokumentit\" nënvizon atë që ka vetë faqja. Klikoni një rresht teksti për ta rishkruar, ose një imazh për ta zhvendosur, ndryshuar madhësinë, rrotulluar ose fshirë.",
+            {
+              "note": "Kjo ndryshon një rresht ose një imazh në një kohë. Paragrafët nuk rirregullohen kur një rresht bëhet më i gjatë, dhe një imazh që ndodhet mbi një tjetër zgjidhet së bashku me të. Për ndryshime të mëdha, redaktoni dokumentin në programin në të cilin është shkruar."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Heqja e informacionit konfidencial",
+          "body": [
+            "Më shumë vegla → Heqja e informacionit konfidencial heq përfundimisht atë që nuk duhet të lexohet: tërhiqni një kuti të zezë mbi të, në çdo faqe. Kur ruani, teksti dhe imazhet nën kuti hiqen nga skedari, jo thjesht mbulohen.",
+            {
+              "note": "Ruajeni dokumentin nën një emër të ri dhe mbajeni origjinalin diku të sigurt: ajo që është hequr nuk mund të rikthehet."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Filigran",
+          "body": [
+            "Redakto → Filigran shkruan fjalë ose vendos një imazh në faqet që zgjidhni: drejt ose të pjerrët, në një nga nëntë vende, aq i madh dhe aq i zbehtë sa të caktoni. Në çdo faqe ai është pastaj një shenjë si çdo tjetër dhe mund të zhvendoset ose të hiqet."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Numrat e faqeve, kreu dhe fundi i faqes, numërimi Bates",
+          "body": [
+            {
+              "points": [
+                "Redakto → Numrat e faqeve: formati (1, 1 / 12, Faqja 1 dhe të tjerë), vendi dhe cilat faqe marrin numër.",
+                "Shto → Kreu dhe fundi i faqes: tekst në cilindo nga gjashtë vendet. Në të, {page} qëndron për numrin e faqes, {pages} për numrin e faqeve, {date} për datën e sotme dhe {file} për emrin e dokumentit.",
+                "Shto → Numërimi Bates: numra njëri pas tjetrit me një fjalë para ose pas (ABC000123), siç përdoren për dokumentet e një çështjeje."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lidhjet, faqeshënuesit dhe skedarët e bashkëngjitur",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Lidhjet",
+          "body": [
+            "Shto → Lidhje: tërhiqni mbi vendin që duhet të klikohet, pastaj specifikoni ku çon: një adresë uebi, ose një faqe të këtij dokumenti.",
+            "Lidhjet e një dokumenti funksionojnë gjatë leximit: një klikim në një lidhje drejt një faqeje ju çon atje; një adresë uebi ose e-maili i kalon shfletuesit ose programit tuaj të postës."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Faqeshënuesit",
+          "body": [
+            "Shto → Faqeshënues i ri: klikoni vendin ku duhet të çojë dhe jepini një titull. Shto → Faqeshënuesit hap listën, ku një faqeshënues mund të riemërohet ose të hiqet. Ndryshimet shkruhen kur ruani."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Skedarët e bashkëngjitur",
+          "body": [
+            "Shto → Bashkëngjit një skedar: zgjidhni një skedar dhe klikoni ku do të vendoset kapësja e tij. Mund t'i jepni një emër dhe një autor, të ngjyrosni kapësen, ta ndryshoni madhësinë dhe ta rrotulloni. Skedari ruhet brenda PDF-së kur ruani.",
+            "Shto → Skedarët e bashkëngjitur liston atë që mbart dokumenti; çdo skedar mund të ruhet në disk ose të hiqet. Një klikim mbi një kapëse hap të njëjtën listë."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formularët",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Plotësimi i një formulari",
+          "body": [
+            "Shto → Plotësimi i formularit shfaq fushat e dokumentit: shkruani në fushat e tekstit, shënoni kutizat, zgjidhni nga listat. Përgjigjet shkruhen në skedar kur ruani."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Krijimi i një formulari",
+          "body": [
+            "Menyja Shto shton fusha në çdo dokument: një fushë teksti, një kutizë zgjedhjeje, butona radio (nga të cilët mund të zgjidhet vetëm një), një listë zgjedhjeje dhe një fushë nënshkrimi e lënë bosh për nënshkruesin.",
+            "Tërhiqni në faqe aty ku duhet të jetë fusha. Si shenjat e tjera, një fushë mund të zhvendoset dhe t'i ndryshohet madhësia derisa të ruani; pas kësaj ajo bëhet pjesë e formularit."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nënshkrimi",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Shtimi i një nënshkrimi që vizatoni",
+          "body": [
+            "Nënshkruaj → Shtimi i nënshkrimit vendos imazhin e një nënshkrimi në faqe: të vizatuar këtu me një stilolaps që zgjidhni, të shkruar me një font, ose të marrë nga një imazh (me \"Mbaj vetëm vijat e stilolapsit, pa letrën pas tyre\" për një foto të një flete të nënshkruar). Data mund të shkruhet poshtë tij.",
+            "Tërhiqeni në faqen ku duhet të vendoset. Nënshkrimet që keni përdorur ruhen në këtë kompjuter, për t'u përdorur përsëri.",
+            {
+              "note": "Ky është një imazh: nuk thotë asgjë të sigurt për personin që e ka vendosur aty. Një nënshkrim që vërteton kush e ka nënshkruar, dhe që asgjë nuk ka ndryshuar që prej asaj kohe, bëhet me një certifikatë."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Nënshkrimi me certifikatë",
+          "body": [
+            "Nënshkruaj → Nënshkrimi me certifikatë krijon një nënshkrim digjital: ai tregon kush e ka nënshkruar dhe vulos dokumentin, në mënyrë që çdo ndryshim i mëvonshëm të jetë i dukshëm.",
+            {
+              "steps": [
+                "Tërhiqni në faqe zonën ku do të shfaqet nënshkrimi (fillimisht një dritare ju njofton për këtë; ajo mund të çaktivizohet). Për të nënshkruar pa shfaqur asgjë në faqe, zgjidhni në vend të kësaj \"Nënshkruaj pa e shfaqur në faqe\".",
+                "Zgjidhni certifikatën: një nga ato të kompjuterit (një kartë ose një token shfaqet mes tyre sapo vendoset në lexues), ose një skedar .pfx / .p12 bashkë me fjalëkalimin e tij. \"Vazhdo\".",
+                "Zgjidhni pamjen e nënshkrimit. Te \"Arsyeja dhe vendi\" mund të shkruani pse dhe ku nënshkruani: ato përfshihen në nënshkrim, dhe në faqe nëse pamja i shfaq. Shënoni \"Kyçe dokumentin pas nënshkrimit\" nëse askush nuk duhet ta nënshkruajë ose ta ndryshojë pas jush. Lëreni të shënuar \"Shto një kohë të besueshme (vulë kohore)\" që një autoritet të konfirmojë kur keni nënshkruar.",
+                "\"Nënshkruaj\", pastaj zgjidhni ku do të ruhet skedari i nënshkruar. Një token do të kërkojë PIN-in e tij në këtë pikë."
+              ]
+            },
+            "Skedari i nënshkruar hapet në vend të dokumentit. Fjalëkalimi ose PIN-i nuk ruhen kurrë nga programi.",
+            {
+              "note": "Një nënshkrim i kualifikuar është ai që bëhet në këtë mënyrë me një certifikatë të kualifikuar, në kartën ose token-in e saj. Nënshkrimi kryhet në kompjuterin tuaj; vetëm vula kohore dhe kontrolli i certifikatës suaj kalojnë në internet, dhe ato dërgojnë gjurmë digjitale dhe numrin serial të certifikatës, kurrë dokumentin."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Pamjet e nënshkrimit",
+          "body": [
+            "Një pamje përcakton se si duket një nënshkrim me certifikatë në faqe. Ruani disa të tilla me emra të zgjedhur nga ju: një për nënshkrimin në emër të një kompanie, një për nënshkrimin në emrin tuaj.",
+            {
+              "points": [
+                "Fotografi: asnjë, nga një skedar (një vulë, një nënshkrim i skanuar) ose e vizatuar këtu.",
+                "Teksti i shfaqur: emri, data, arsyeja, vendi, secili me ose pa etiketën e tij.",
+                "Rreshta të juajat nën emër, si p.sh. një rol dhe një kompani.",
+                "\"Tekst standard\" është gjithmonë aty: kush e ka nënshkruar dhe kur."
+              ]
+            },
+            "Në dritaren e nënshkrimit: \"E re…\", \"Redakto…\", \"Fshi\". E fundit e përdorur ofrohet e para. Pamjet ruhen në këtë kompjuter."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Disa nënshkrime dhe kyçja",
+          "body": [
+            "Një dokument mund të nënshkruhet nga disa persona, një pas tjetrit. Hapni skedarin e nënshkruar dhe nënshkruajeni pa ndryshuar asgjë: nënshkrimi juaj shtohet në fund të skedarit dhe ato të mëparshmet mbeten të vlefshme.",
+            "\"Kyçe dokumentin pas nënshkrimit\" (joaktiv nëse nuk e shënoni) e mbyll dokumentin: askush nuk mund të nënshkruajë pas jush dhe asgjë më nuk mund të ndryshohet. Ky veprim nuk mund të anulohet.",
+            {
+              "note": "Nëse ndryshoni një dokument të nënshkruar përpara se ta nënshkruani përsëri, ai duhet të shkruhet nga e para dhe nënshkrimet e mëparshme lihen jashtë. Dritarja e nënshkrimit ju paralajmëron: për t'i ruajtur, hapni përsëri skedarin dhe nënshkruajeni pa ndryshuar asgjë."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Vulat kohore",
+          "body": [
+            "Një vulë kohore është fjala e nënshkruar e një autoriteti të vulave kohore për kohën kur ishte diçka. Përndryshe, koha në një nënshkrim vjen nga ora e kompjuterit të nënshkruesit, të cilën mund ta vendosë kushdo; një vulë kohore e provon çastin dhe e mban nënshkrimin të provueshëm edhe pasi të skadojë certifikata (PAdES B-T).",
+            {
+              "points": [
+                "Nënshkrimet marrin një të tillë kur në dritaren e nënshkrimit është shënuar \"Shto një kohë të besueshme (vulë kohore)\". Te Cilësimet → Nënshkrimet përcaktohet nëse fillon i shënuar, këtu dhe në përpunimin në grup.",
+                "Nënshkruaj → Shtimi i vulës kohore i jep të gjithë dokumentit një vulë kohore të vetën, pa certifikatë: provon që dokumenti ishte, saktësisht ashtu siç është, në atë çast. Ruhet si skedar i ri; nënshkrimet që ka skedari mbeten të vlefshme."
+              ]
+            },
+            "Autoriteti është ai i DigiCert (http://timestamp.digicert.com), falas dhe i besuar nga Adobe Reader dhe Windows; një tjetër mund të vendoset te Cilësimet → Nënshkrimet. Ai merr vetëm një gjurmë digjitale (SHA-256), kurrë dokumentin, dhe nevojitet lidhje me internetin. Kur një nënshkrim merr vulë kohore, lëshuesi i certifikatës suaj pyetet gjithashtu nëse certifikata është ende e vlefshme, dhe përgjigjja e tij ruhet në nënshkrim (validim afatgjatë): kështu Adobe Reader mund ta shfaqë nënshkrimin si të vlefshëm, tani dhe pasi të skadojë certifikata.",
+            {
+              "note": "Nëse autoriteti nuk mund të arrihet, asgjë nuk nënshkruhet ose shkruhet: provoni përsëri, ose hiqni shenjën nga vula kohore për të nënshkruar pa të."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Kontrolli i nënshkrimeve",
+          "body": [
+            "Nënshkruaj → Verifikimi i nënshkrimeve liston çdo nënshkrim me certifikatë të skedarit: kush e ka nënshkruar, kush e ka lëshuar certifikatën, kur, arsyeja dhe vendi, dhe",
+            {
+              "points": [
+                "nëse dokumenti është i pandryshuar që nga ai nënshkrim (një nënshkrim tjetër i shtuar më pas nuk konsiderohet si ndryshim);",
+                "nëse nënshkrimi e kyç dokumentin;",
+                "nëse ky kompjuter i beson autoritetit pas certifikatës, dhe nëse certifikata është e vlefshme sot;",
+                "koha e konfirmuar nga vula e tij kohore, dhe nga cili autoritet, kur ka një të tillë. Listohet edhe vula kohore e të gjithë dokumentit, me kontrollin e vet."
+              ]
+            },
+            "Kontrolli bëhet mbi skedarin ashtu siç është ruajtur së fundmi dhe kryhet në këtë kompjuter, pa hyrë në internet. Klikimi mbi një nënshkrim në një faqe e hap këtë listë te ai nënshkrim. Nën çdo nënshkrim, «Shfaq certifikatën» hap dritaren e Windows-it për certifikatën (zinxhirin dhe çdo detaj; prej andej, «Instalo certifikatën» bën që ky kompjuter t’i besojë një certifikate që e njihni), ndërsa «Valido» e pyet në internet lëshuesin e certifikatës, vetëm kur e shtypni, nëse certifikata është tërhequr."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Më shumë vegla",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Njohja e tekstit (OCR)",
+          "body": [
+            "Më shumë vegla → Njohja e tekstit (OCR) lexon fjalët e faqeve të skanuara dhe i shkruan në faqe në mënyrë të padukshme, që dokumenti të mund të kërkohet dhe teksti i tij të kopjohet dhe eksportohet. Pamja e faqeve nuk ndryshon.",
+            "Shënoni vetëm gjuhët në të cilat janë shkruar faqet; faqet që kanë tashmë tekst lihen ashtu siç janë.",
+            {
+              "note": "Leximi kryhet nga motori Tesseract, një program falas i instaluar veçmas. Pa të, dritarja shfaq komandën që e instalon atë në Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Zvogëlimi i një dokumenti",
+          "body": [
+            "Më shumë vegla → Kompresimi e ruan dokumentin si një skedar më të vogël duke u dhënë fotografive dhe skanimeve më pak pikselë. Tre nivele; teksti dhe vizatimet mbeten po aq të qarta sa janë. Një dokument me pak fotografi përfiton pak."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Krahasimi i dy dokumenteve",
+          "body": [
+            "Më shumë vegla → Krahasimi i dokumenteve: zgjidhni një PDF tjetër. Të dy shfaqen krah për krah, faqe pas faqeje, me faqet ku teksti ndryshon të shënuara dhe me rreshtat që ka vetëm secili të listuar."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Përpunimi në grup: shumë skedarë njëherësh",
+          "body": [
+            "Më shumë vegla → Përpunimi në grup kryen të njëjtat veprime për shumë skedarë, në një skedë të vetën. Çdo rezultat është një skedar i ri. Nëse rezultatet do të zinin vendin e skedarëve që janë tashmë në dosje (skedarët tuaj, kur shkojnë në dosjen e tyre pa iu shtuar asgjë emrave), së pari pyeteni nëse doni t’i zëvendësoni, t’i kapërceni apo të anuloni. Një skedar zëvendësohet vetëm pasi rezultati i tij të jetë i plotë; ai që është i hapur (në një skedë këtu ose në një program tjetër) lihet siç është dhe shënohet si i papërfunduar.",
+            {
+              "steps": [
+                "Në të majtë, shtoni skedarët: \"Shto skedarë…\", \"Shto një dosje…\" (me dosjet brenda saj), ose tërhiqini dhe lërini këtu.",
+                "Në të djathtë, shënoni çfarë të bëhet. Çdo skedar bëhet PDF në çdo rast; përveç kësaj mund të rrotulloni faqet, të njihni tekstin, të shtoni kreun dhe fundin e faqes, një filigran ose numrat e faqeve, t'i zvogëloni skedarët, t'i nënshkruani me certifikatë, ose t'i eksportoni në një format tjetër. Numrat tregojnë radhën.",
+                "Zgjidhni çfarë shkruhet: një skedar për secilin, ose gjithçka në një PDF (sipas radhës së listës), dhe dosjen ku shkojnë rezultatet. Kur të gjithë skedarët vijnë nga një dosje, ajo dosje zgjidhet për ju derisa të zgjidhni një tjetër; përndryshe është dosja e fundit që keni zgjedhur.",
+                "\"Fillo\". Çdo skedar tregon si shkoi; ekzekutimi mund të ndalohet mes skedarëve."
+              ]
+            },
+            {
+              "points": [
+                "Recetat: \"Ruaje si recetë…\" ruan gjithçka që zgjodhët (përveç skedarëve dhe çdo fjalëkalimi) nën një emër, për t'u rivendosur me një zgjedhje të vetme.",
+                "\"Ruaj dosjet e skedarëve në rezultate\" rindërton dosjet e një dosjeje të shtuar.",
+                "\"Shkruaj një raport të ekzekutimit\" lë një skedar teksti pranë rezultateve që tregon çfarë u shkrua dhe çfarë dështoi.",
+                "Një PDF që vetëm nënshkruhet i ruan nënshkrimet që ka; nëse në të njëjtin ekzekutim i bëhet edhe diçka tjetër, ai shkruhet nga e para dhe ato lihen jashtë."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cilësimet",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Cilësimet e PDF Organizer",
+          "body": [
+            "Skedari → Cilësimet (ose Cilësimet në shiritin anësor, pastaj PDF Organizer). Çdo cilësim mund të kthehet në parazgjedhje veçmas, ose të gjitha njëherësh.",
+            {
+              "points": [
+                "Kur hapet një dokument: sa i madh shfaqet dokumenti kur hapet, rrëshqitje nëpër faqe ose një faqe në një kohë, miniaturat të shfaqura ose jo.",
+                "Njësitë, vizoret dhe rrjeta: njësia (milimetra, inç, pika), vizoret, rrjeta dhe distanca e saj.",
+                "Printimi: letra, orientimi dhe shkallëzimi me të cilat fillon dritarja e printimit.",
+                "Shirit i shpejtë i mjeteve: cilët butona ka shiriti mbi faqe.",
+                "Emrat e dokumenteve të reja: modelet për faqet e nxjerra, dokumentet e reja dhe PDF-në në të cilën përpunimi në grup mbledh shumë skedarë.",
+                "Nënshkrimet: nëse \"Ruaj\" pyet përpara se të shkruajë mbi një skedar të nënshkruar.",
+                "Shkurtimet e tastierës: klikoni tastet e një komande, pastaj shtypni ato të rejat."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Rreth PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Rreth PDF Organizer",
+          "body": [
+            "PDF Organizer është aplikacioni PDF i Syntelab Creative: ai lexon dokumente PDF, organizon dhe kombinon faqet e tyre, shkruan dhe vizaton në to, plotëson dhe krijon formularë, nënshkruan me certifikatë dhe kontrollon nënshkrimet, dhe i bën të njëjtat gjëra shumë skedarëve njëkohësisht.",
+            "Është i ri, dhe disa nga ato që bën janë hapat e parë. Aty ku nuk mjafton për dokumentet tuaja, na tregoni përmes Ndihmë → Komente: kështu e dimë ku të punojmë."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Me çfarë është ndërtuar PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Leximi, vizatimi dhe shkrimi i PDF: MuPDF.",
+                "Njohja e tekstit (OCR): Tesseract, kur është i instaluar në kompjuter.",
+                "Hapja e dokumenteve të zyrës: Word, Excel dhe PowerPoint, ose LibreOffice, cilido që është i instaluar.",
+                "Ruajtja e një faqeje uebi si PDF: shfletuesi i instaluar në kompjuter.",
+                "Nënshkrimi me certifikatë: shërbimet e certifikatave të Windows; nënshkrimet shkruhen ashtu siç kërkon standardi PAdES."
+              ]
+            },
+            "Ajo që ndan me pjesën tjetër të programit gjendet te \"Rreth Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Çfarë nuk mund të bëjë ende PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Dokumentet e zyrës hapen nga paketa e zyrës në kompjuter; pa Word, Excel, PowerPoint ose LibreOffice ato nuk mund të hapen. Po punojmë për një konvertues tonin: shih \"Për çfarë po punojmë\".",
+                "Njohja e tekstit kërkon motorin Tesseract, të instaluar veçmas.",
+                "Teksti i vetë dokumentit ndryshohet rresht pas rreshti; paragrafët nuk rirregullohen.",
+                "Fotografitë e printuara me katër bojëra (CMYK) nuk mund të zgjidhen për t'u zhvendosur.",
+                "«Valido» tregon nëse një certifikatë është e tërhequr sot, jo kur është tërhequr.",
+                "Nënshkrimi me certifikatë funksionon për momentin në Windows; në Linux dhe macOS do të vijë në një version të mëvonshëm."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

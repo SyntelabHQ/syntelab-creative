@@ -1,0 +1,34 @@
+{
+  "id": "electric-charge",
+  "category": "energy",
+  "icon": "battery-half",
+  "base": "coulomb",
+  "startsWith": ["milliampere-hour","ampere-hour"],
+  "decimals": 3,
+  "groups": [
+    { "id": "si_units", "color": "#2563eb" },
+    { "id": "battery_capacity", "color": "#ea580c" },
+    { "id": "legacy", "color": "#9333ea" }
+  ],
+  "units": [
+    {"id":"coulomb","symbol":"C","group":"si_units","factor":"1","popular":true},
+    {"id":"kilocoulomb","symbol":"kC","group":"si_units","factor":"1000"},
+    {"id":"millicoulomb","symbol":"mC","group":"si_units","factor":"0.001","popular":true},
+    {"id":"microcoulomb","symbol":"µC","group":"si_units","factor":"0.000001","popular":true},
+    {"id":"nanocoulomb","symbol":"nC","group":"si_units","factor":"0.000000001"},
+    {"id":"picocoulomb","symbol":"pC","group":"si_units","factor":"0.000000000001"},
+    {"id":"femtocoulomb","symbol":"fC","group":"si_units","factor":"0.000000000000001"},
+    {"id":"attocoulomb","symbol":"aC","group":"si_units","factor":"0.000000000000000001"},
+    {"id":"kiloampere-hour","symbol":"kAh","group":"battery_capacity","factor":"3600000","popular":true},
+    {"id":"ampere-hour","symbol":"Ah","group":"battery_capacity","factor":"3600","popular":true},
+    {"id":"milliampere-hour","symbol":"mAh","group":"battery_capacity","factor":"3.6","popular":true},
+    {"id":"ampere-minute","symbol":"A·min","group":"battery_capacity","factor":"60"},
+    {"id":"ampere-second","symbol":"A·s","group":"battery_capacity","factor":"1"},
+    {"id":"watt-hour-3.7v","symbol":"Wh","group":"battery_capacity","factor":"972.972972972973","popular":true},
+    {"id":"milliwatt-hour-3.7v","symbol":"mWh","group":"battery_capacity","factor":"0.972972972972973","popular":true,"decimals":1},
+    {"id":"abcoulomb","symbol":"abC","group":"legacy","factor":"10","decimals":2},
+    {"id":"statcoulomb","symbol":"statC","group":"legacy","factor":"0.000000000333564"},
+    {"id":"faraday","symbol":"F","group":"legacy","factor":"96485.33212","popular":true},
+    {"id":"elementary-charge","symbol":"e","group":"legacy","factor":"0.0000000000000000001602176634"}
+  ]
+}

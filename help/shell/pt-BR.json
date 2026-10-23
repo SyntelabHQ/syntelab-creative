@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Primeiros passos",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "O que é o Syntelab Creative",
+          "body": [
+            "O Syntelab Creative é um programa composto por apps. Cada app realiza um tipo de trabalho:",
+            {
+              "points": [
+                "O PDF Organizer lê, organiza, edita e assina documentos PDF.",
+                "O Scribe é um editor de texto com ferramentas que limpam, classificam, comparam e transformam texto.",
+                "O Units converte entre unidades: comprimento, temperatura, moedas e muitas outras.",
+                "O Dev reúne ferramentas para desenvolvedores: codificar e decodificar, formatar e verificar, transformar um formato de dado em outro."
+              ]
+            },
+            "Os apps compartilham a mesma janela, o mesmo conjunto de configurações e a mesma forma de trabalhar, portanto, o que você aprende em um é o mesmo no próximo.",
+            {
+              "note": "Tudo acontece no seu computador. Seus documentos nunca são enviados para lugar nenhum, e nada sobre você ou seu trabalho é coletado."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "A janela",
+          "body": [
+            {
+              "points": [
+                "A barra lateral: a casa leva ao Início, depois vêm os seus apps e, na parte inferior, as novidades do programa, Feedback, Apoiar e Configurações.",
+                "Em um app, Arquivo → Ir para o Início vai para a primeira página daquele app, caso ele possua uma (Units, Scribe), e Arquivo → Abrir Configurações (Ctrl+,) abre as Configurações na parte específica daquele app; as outras partes estão a um clique de distância ali.",
+                "As guias no topo: cada documento, fichário ou ferramenta que você abre tem sua própria guia. Um ponto em uma guia indica que há alterações não salvas.",
+                "Os menus do app, abaixo das guias: como uma barra de menus, como uma faixa de opções ou como um painel lateral, dependendo da sua escolha.",
+                "O restante da janela é a guia ativa."
+              ]
+            },
+            "Fechar uma guia que possui alterações não salvas solicitará a confirmação primeiro; o mesmo ocorre ao fechar o programa."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Início",
+          "body": [
+            "O Início mostra seus apps e os arquivos abertos recentemente. Clique em um app para abri-lo; clique em um arquivo recente para abri-lo novamente.",
+            "Os apps podem ser exibidos como cartões, como ícones com nomes ou apenas como ícones, e podem ser arrastados para a ordem que você preferir. Com o teclado: Alt e as teclas de seta. “Redefinir para o padrão” os coloca de volta.",
+            "Cada app também possui seu próprio atalho no menu Iniciar do Windows, como “Syntelab PDF Organizer” ou “Syntelab Units”: ele abre o programa diretamente naquele app. Se o programa já estiver aberto, o app será aberto nele como uma guia."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Abrindo arquivos",
+          "body": [
+            {
+              "points": [
+                "A partir de um app: Arquivo → Abrir, ou Ctrl+O.",
+                "Arrastando arquivos de uma pasta para a janela.",
+                "A partir do gerenciador de arquivos do seu sistema: clique duas vezes em um arquivo que o programa esteja configurado para abrir. No Explorador de Arquivos do Windows, também existe o menu de clique direito (veja “O menu de clique direito do Explorador de Arquivos do Windows”).",
+                "A partir do Iniciar: a lista de arquivos recentes."
+              ]
+            },
+            "O programa é executado como uma única instância. Um arquivo aberto a partir do gerenciador de arquivos enquanto o programa está em execução abre como uma nova guia na mesma janela."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personalização",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Layout: barra de menus, Faixa de Opções ou painel lateral",
+          "body": [
+            "Os comandos de um app podem ser exibidos de três formas. São os mesmos comandos; apenas a localização difere.",
+            {
+              "points": [
+                "Clássico: uma barra de menus e uma barra de ferramentas.",
+                "Faixa de Opções: botões grandes em grupos nomeados, uma guia para cada menu. Pode ser recolhida para deixar mais espaço para o documento.",
+                "Painel lateral: as ferramentas em um painel à esquerda ou à direita, que pode ser recolhido para ícones."
+              ]
+            },
+            "Escolha o layout de todos os apps em Configurações → Geral → Layout. Um app pode ter seu próprio layout, escolhido em sua parte das Configurações ou em seu menu Exibir; ele deixará de seguir o layout geral até que você escolha “Usar o layout geral”."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Configurações → Geral → Tema: Claro, Escuro, Cinza claro, Cinza escuro ou Automático, que segue a configuração de luz ou escuro do sistema.",
+            "As páginas de um documento nunca são recoloridas pelo tema: o papel permanece como está."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Idioma",
+          "body": [
+            "Configurações → Geral → Idioma. O programa fala 62 idiomas. “Idioma do sistema” segue o idioma do seu sistema. A lista pode ser pesquisada pelo nome do próprio idioma, seu nome no seu idioma ou seu nome em inglês.",
+            "Um texto que ainda não foi traduzido é exibido em inglês, nunca como um código."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Guias",
+          "body": [
+            {
+              "points": [
+                "“Manter a guia Início entre as guias”: quando desativado, a guia Início aparece apenas enquanto o próprio Início está em primeiro plano; a casa na barra lateral sempre leva de volta a ela.",
+                "A marca em uma guia pode ser o ícone do seu app ou um quadrado simples na cor do app."
+              ]
+            },
+            "Quando houver mais guias do que o espaço disponível, as setas nas extremidades da faixa a rolam, e “Mais guias” as lista todas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orientação",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Pesquisar um comando",
+          "body": [
+            "A caixa de pesquisa (“Pesquisar apps, ferramentas e comandos”) encontra qualquer comando da guia em primeiro plano pelo seu nome, no seu idioma ou em inglês. Escolha um resultado para executá-lo.",
+            "Comandos que estão planejados, mas ainda não foram implementados, são exibidos esmaecidos nos menus e são omitidos na pesquisa."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Atalhos de teclado",
+          "body": [
+            "As teclas de um comando são escritas ao lado de seu nome nos menus e em sua dica de ferramenta. As mais utilizadas:",
+            {
+              "points": [
+                "Ctrl+O: abrir um arquivo",
+                "Ctrl+S: salvar; Ctrl+Shift+S: salvar como",
+                "Ctrl+P: imprimir",
+                "Ctrl+Z e Ctrl+Y: desfazer e refazer",
+                "Ctrl+F: localizar no documento",
+                "Ctrl+W: fechar a guia",
+                "Ctrl+Tab e Ctrl+Shift+Tab: próxima guia e guia anterior",
+                "Ctrl+, (vírgula): Configurações",
+                "F1: esta Ajuda",
+                "Escape: sair da tela cheia ou do modo de leitura, ou guardar a ferramenta em mãos"
+              ]
+            },
+            "As teclas dos comandos do próprio programa (guias, Configurações, Ajuda) são alteradas em Configurações → Geral → Atalhos de teclado; as de comandos de um app, na parte de Configurações do respectivo app. Clique nas teclas de um comando e, em seguida, pressione as novas teclas."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Usando esta Ajuda",
+          "body": [
+            "A Ajuda pertence ao local de onde você a abre. A partir de um app, você verá apenas o manual desse app e os comandos da guia de onde você veio. A partir da página inicial ou das Configurações, você verá “Sobre” (o programa e cada app, resumidamente) e o manual do programa. Ajuda → Sobre sempre leva ao “Sobre”.",
+            "O conteúdo fica à esquerda; a pesquisa acima dele busca em todos os tópicos, nos títulos e no texto.",
+            "A Ajuda abre em uma guia própria, para que você possa alternar entre ela e o seu trabalho; F1 a traz para a frente novamente. Em “Comandos da guia de onde você veio”, cada menu daquela guia é listado com seus comandos, teclas e funções: abra a Ajuda a partir da guia sobre a qual você tem uma dúvida."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "O menu de clique direito do Explorador de Arquivos do Windows",
+          "body": [
+            "Configurações → Geral → Explorador de Arquivos do Windows → “Mostrar Syntelab Creative no menu de clique direito de arquivos e pastas” adiciona entradas para os arquivos que o programa lê: “Converter para PDF com o PDF Organizer” e “Combinar arquivos no PDF Organizer”, cada uma com o ícone do PDF Organizer, e “Syntelab Dev”, que abre ao lado com Somas de verificação, Comparar e Visualização hexadecimal.",
+            "Elas são adicionadas apenas para o seu usuário, sem a necessidade de direitos de administrador, e desativar a opção as remove. No Windows 11, elas ficam em “Mostrar mais opções”. Elas sempre iniciam o programa instalado: se ele foi movido ou reinstalado em outro lugar, ele as corrige ao iniciar.",
+            {
+              "note": "Escolher “Combinar arquivos no PDF Organizer” em vários arquivos abre um fichário com eles; “Converter para PDF com o PDF Organizer” abre o processamento em lote com eles."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privacidade, atualizações e contato",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "O que vai para a internet e o que nunca vai",
+          "body": [
+            "O programa não coleta nada: nem dados de uso, nem nomes de arquivos, nem relatórios de erros enviados automaticamente.",
+            "Ele acessa a internet apenas nestes casos, cada um solicitado por você:",
+            {
+              "points": [
+                "Verificação de atualizações e novidades (dois arquivos pequenos lidos de syntelab.com), quando você solicita ou, se você permitiu, quando o programa inicia; e o download de uma nova versão, apenas quando você clica em “Atualizar”.",
+                "Salvar uma página da web como PDF (PDF Organizer) e importar o texto de uma página da web (Scribe), a partir do endereço digitado.",
+                "Um link em um documento no qual você clica: ele é encaminhado para o seu navegador ou programa de e-mail.",
+                "Feedback e Apoiar: eles abrem uma página de syntelab.com no seu navegador."
+              ]
+            },
+            "A assinatura com um certificado e a verificação de assinaturas são feitas no seu computador, sem acessar a internet."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Atualizações",
+          "body": [
+            "Configurações → Geral → Atualizações → “Verificar atualizações”. Quando existir uma versão mais recente, uma janela informará as novidades e oferecerá a opção “Atualizar”.",
+            "“Atualizar” baixa a nova versão, verifica se ela realmente vem de nós (deve estar assinada com nossa chave; qualquer outra coisa é recusada) e a instala sobre esta. Suas configurações são mantidas e o programa reinicia. Nada é baixado até que você clique.",
+            "Se a atualização não puder ser instalada desta forma (uma cópia portátil, um pacote Linux, sem rede), “Baixar” abre a página de download no seu navegador; instale a nova versão sobre esta e suas configurações serão mantidas.",
+            "“Verificar atualizações e novidades ao iniciar o programa” pode ser desativado; nada sobre você ou seu computador é enviado de qualquer maneira."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Feedback e apoio",
+          "body": [
+            "Ajuda → Feedback: solicite um novo app, um novo recurso ou uma alteração, ou relate um problema. Todas as mensagens são lidas.",
+            "Ajuda → Apoiar: o programa é gratuito; aqui é onde você pode ajudar a mantê-lo."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Sobre o Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Sobre o Syntelab Creative",
+          "body": [
+            "O Syntelab Creative é uma suíte gratuita de apps para o trabalho diário com documentos, texto e dados, feita pela Syntelab (syntelab.com). Ela começa com quatro apps: PDF Organizer, Scribe, Units e Dev. Outros se juntarão a eles na mesma janela.",
+            {
+              "points": [
+                "Sempre gratuito.",
+                "Nenhum dado coletado: nada sobre você, seu computador ou seu trabalho.",
+                "Nada é retido: sem versão paga, sem recurso bloqueado, sem limite imposto propositalmente. Os únicos limites são o que a tecnologia atual consegue fazer e o que seu computador consegue suportar."
+              ]
+            },
+            "Não temos financiamento. O programa é feito em nosso tempo livre, tanto quanto esse tempo permite. Temos a total intenção de fazer software de boa qualidade, e isso exige tempo e paciência: a nossa para construí-lo e a sua enquanto ele cresce.",
+            "Ele ficará melhor a cada versão. Problemas relatados são corrigidos e recursos solicitados são avaliados para as próximas etapas.",
+            {
+              "note": "Seus documentos permanecem no seu computador. O programa não coleta nada sobre você ou seu trabalho; veja “O que vai para a internet e o que nunca vai”."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Como você pode ajudar",
+          "body": [
+            "Existem três maneiras, e cada uma delas conta:",
+            {
+              "points": [
+                "Diga-nos o que você acha: Ajuda → Feedback. Um problema que você encontrou, algo que esteja faltando, algo que seja mais difícil do que deveria ser. Lemos todas as mensagens.",
+                "Fale para outras pessoas sobre o programa e sobre o que fazemos. Mais pessoas usando significa mais feedback, e é assim que vemos o que realmente importa. Isso também nos faz sentir que nosso trabalho é valorizado: o nosso e o de todos que participam do projeto e virão a participar.",
+                "Apoie financeiramente, se puder: Ajuda → Apoie-nos. Isso nos compra tempo para trabalhar nele."
+              ]
+            },
+            "Nada disso é exigido de você. O programa é gratuito e será sempre gratuito, completo, para todos."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Com o que foi construído",
+          "body": [
+            "O programa baseia-se no trabalho de muitas pessoas. O que todo app compartilha:",
+            {
+              "points": [
+                "A janela e tudo o que você vê: Tauri, com a visualização web do sistema (WebView2 no Windows, WebKitGTK no Linux, WKWebView no macOS); escrito em TypeScript com React.",
+                "A parte que executa o trabalho: escrita em Rust.",
+                "Letras e ícones: Sansation, IBM Plex Sans e Font Awesome Free."
+              ]
+            },
+            "O que cada app adiciona é mencionado em sua própria página em “Sobre”. Somos gratos às pessoas por trás desses projetos."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "O que ele ainda não consegue fazer",
+          "body": [
+            "Para que você saiba antes de contar com isso:",
+            {
+              "points": [
+                "Alguns textos ainda estão aguardando tradução. Até lá, eles são exibidos em inglês, nunca como um código.",
+                "O menu de clique direito do gerenciador de arquivos está disponível apenas no Windows Explorer por enquanto.",
+                "A assinatura com certificado funciona no Windows por enquanto; no Linux e macOS, isso chegará em uma versão posterior."
+              ]
+            },
+            "Os limites de cada app estão em sua própria página em “Sobre”. Se algum deles for um impedimento para você, avise-nos através de Ajuda → Feedback: isso nos ajuda a decidir o que vem primeiro."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "No que estamos trabalhando",
+          "body": [
+            "Os quatro apps continuarão crescendo: o que você relata e solicita por meio de Ajuda → Feedback decide muito do que vem primeiro. Além deles, novos apps estão sendo preparados. O Início só os mostra se você quiser: marque-os no menu “Exibir” do Início para vê-los lá como “Em breve”:",
+            {
+              "points": [
+                "Convert: conversão de arquivos de um formato para outro, entre eles documentos de escritório para PDF e vice-versa, sem a necessidade de instalar outro programa. Ainda não encontramos uma tecnologia aberta que atinja a qualidade que desejamos, por isso ele chegará apenas quando não for decepcionante; onde as ferramentas não existirem, nós as construiremos.",
+                "Pixel: ferramentas para imagens, como redimensionamento e compressão, remoção de fundo, cores e códigos QR.",
+                "Metadata: visualização e remoção de dados ocultos de fotos, vídeos e documentos, antes de você compartilhá-los.",
+                "Wizard: sorteadores e geradores aleatórios: uma roleta, dados, moeda, nomes sorteados de uma lista."
+              ]
+            },
+            "Nos apps que já estão disponíveis, estamos trabalhando no que as páginas “O que ainda não consegue fazer” listam: por exemplo, um carimbo de tempo confiável para assinaturas, assinatura com certificado no Linux e macOS, e a verificação ortográfica no Scribe.",
+            "Mais opções de instalação também virão: Microsoft Store e winget no Windows, Flathub e Snap no Linux.",
+            {
+              "note": "As novidades de cada versão estão no botão de novidades na barra lateral; Configurações → Geral → Atualizações verifica se há uma versão mais recente."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Konvertēšana",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Konvertētāji",
+          "body": [
+            "Units konvertē vērtības starp mērvienībām: vienu vērtību ātri vai veselas vērtību tabulas uzreiz. Viss tiek aprēķināts jūsu datorā.",
+            "Konvertētāji ir sešās izvēlnēs: Pamata, Kustība un mehānika, Enerģija un jauda, Zinātniskie, Digitālie dati un mediji un Specializēta fizika. Izvēloties konvertētāju, tiek atvērta tā tabula.",
+            {
+              "points": [
+                "Konvertētājs tiek atvērts cilnē, kurā atrodaties. Ja tā tabulā ir vērtības, vispirms jums tiek jautāts: Turpināt (vērtības tiks zaudētas), Atvērt jaunā cilnē vai Atcelt.",
+                "Iestatījumi → Units → „Atvērt katru konvertētāju savā cilnē” tā vietā atver katru izvēlēto konvertētāju jaunā cilnē.",
+                "Fails → Doties uz Sākumu atgriež uz Units pirmo lapu."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Ātrā konversija",
+          "body": [
+            "Units pirmā lapa, Ātrā konversija, konvertē vienu vērtību no vienas mērvienības citā. Izvēlieties konvertētāju, ievadiet vērtību pusē „No” un izvēlieties abas mērvienības: rezultāts ir pusē „Uz”.",
+            {
+              "points": [
+                "Katrā pusē ir uzskaitītas konvertētāja populārās mērvienības un jūsu pašu mērvienības, un tajās var meklēt. Konvertētāja tabulā ir visas mērvienības.",
+                "Poga starp abām pusēm samaina abas mērvienības vietām.",
+                "Grāmatzīme blakus mērvienībai to piesprauž: piespraustās mērvienības ir pirmās abos sarakstos un tabulas mērvienību panelī.",
+                "Poga rezultātā to nokopē; × notīra vērtību.",
+                "„Atvērt tabulā” atver konvertētāja tabulu."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Kā skaitļi tiek lasīti un rakstīti",
+          "body": [
+            "Skaitļus varat ievadīt un ielīmēt tā, kā tos raksta dažādās valstīs: tiek saprasti gan 1,234.56, gan 1.234,56, kā arī atstarpes un apostrofi starp tūkstošiem un 1.5e-3 desmit pakāpei.",
+            "Skaitlis, ko var lasīt divējādi (1,234: tūkstotis vai viens ar nedaudz), tiek lasīts tā, kā skaitļus raksta programmas valodā, un rinda zem tabulas to norāda.",
+            "Rezultāts tiek rakstīts ar tās mērvienības decimālzīmju skaitu, kurā tas tiek iegūts, nevis ar tik cipariem, cik jūs ievadījāt: 5 cm ir 1,97 in. Vērtībai, kas nav nulle, vienmēr tiek rādīti daži nozīmīgi cipari, tāpēc 1 cm ir 0,00001 km un nekad 0,000 km.",
+            "Vērtības, kas ir pārāk lielas vai pārāk mazas, lai tās izlasītu vienā acu uzmetienā, tiek rakstītas ar desmit pakāpi, piemēram, 1,6 × 10⁻³⁵. Skats → Ekstremālās vērtības pilnā garumā tā vietā tās raksta ar visām nullēm.",
+            "Ja mērvienībai šādas vērtības nav (nulles skaņas spiedienam nav decibelu), šūnā tiek rādīta domuzīme."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabula",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Rindas un kolonnas",
+          "body": [
+            "Katra kolonna ir mērvienība, un katra rinda ir vērtība. Šūna, kurā rakstāt, nosaka savu rindu: pārējās kolonnas rāda to pašu vērtību savās mērvienībās. Ievadītā šūna ir parādīta treknrakstā.",
+            "Tas, kas nav skaitlis, tiek saglabāts un parādīts sarkanā krāsā; tā rinda neko nekonvertē, kamēr to neizlabojat.",
+            {
+              "points": [
+                "Lai rediģētu, veiciet dubultklikšķi uz šūnas vai vienkārši sāciet tajā rakstīt. Enter pārvietojas uz leju, Tab — pa labi; bulttaustiņi pārvietojas; Escape atstāj šūnu tādu, kāda tā bija.",
+                "Noklikšķiniet uz stūra (#), lai atlasītu visu tabulu, uz rindas numura, lai atlasītu tā rindu, vai uz virsraksta, lai atlasītu tā kolonnu. Shift+klikšķis atlasa diapazonu, Ctrl+klikšķis pievieno šūnas, atlasīt var arī velkot.",
+                "Home un End pāriet uz rindas pirmo un pēdējo kolonnu; Ctrl+Home — uz tabulas pirmo šūnu, Ctrl+End — uz pēdējo. Ctrl kopā ar bultiņu pāriet uz tabulas malu: pirmo vai pēdējo rindu, pirmo vai pēdējo kolonnu. Page Up un Page Down pārvietojas par vienu ekrānu. Ar Shift katrs no tiem tā vietā paplašina atlasi.",
+                "Vairāku šūnu atlase ir apvilkta ar kontūru no ārpuses; šūna, kurā nonāk ievade, tās iekšpusē paliek neiekrāsota.",
+                "Delete iztukšo atlasītās rindas.",
+                "Rakstot pēdējā rindā, tiek pievienota rinda. Tabulai nav maksimālā apjoma: tā ir tik gara, cik ļauj jūsu datora atmiņa (rinda aizņem 16 baitus, tāpēc 100 miljoni rindu aizņem aptuveni 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Kolonnas un mērvienību panelis",
+          "body": [
+            "Panelī blakus tabulai ir uzskaitītas konvertētāja mērvienības. Tā augšdaļā ir tabulā esošās mērvienības: noklikšķiniet uz kādas, lai izņemtu tās kolonnu. Zem tām ir visas mērvienības: meklējiet pēc nosaukuma vai simbola, filtrējiet pēc grupas vai pēc „Populārie” un noklikšķiniet uz mērvienības, lai pievienotu to kā kolonnu.",
+            "Grāmatzīme blakus mērvienībai to piesprauž kā izlases mērvienību: tā ir pirmā sarakstā un pirmā arī skatā Ātrā konversija.",
+            {
+              "points": [
+                "Kolonnas vienādi sadala tabulas platumu, līdz to virsraksti vairs neietilpst; tad tabulu var ritināt uz sāniem.",
+                "Velciet virsraksta malu, lai mainītu tā kolonnas platumu; veiciet dubultklikšķi uz malas, lai pielāgotu kolonnu tās garākajai vērtībai. Var vilkt arī rindu numuru kolonnu.",
+                "Kolonnas poga ⋮: pārvietojiet kolonnu pa kreisi vai pa labi, piespraudiet to pie kreisās vai labās malas, mainiet tās precizitāti vai noņemiet to.",
+                "Kolonnas precizitāte maina tikai šo kolonnu. „Izmantot šai mērvienībai visur” padara to par mērvienības precizitāti visās tabulās un skatā Ātrā konversija.",
+                "Poga ar divām bultiņām blakus pogām Atsaukt un Atcelt atsaukšanu pielāgo kolonnas tabulai: visi vilktie vai pielāgotie platumi tiek atcelti, un kolonnas atkal vienādi sadala tabulas platumu.",
+                "Paneļa divas augšējās daļas — tabulā esošās mērvienības un „Pievienot mērvienības” (meklēšana un filtri) — var sakļaut, noklikšķinot uz to nosaukumiem, lai sarakstam būtu vairāk vietas."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Atsaukšana, kopēšana, ielīmēšana, importēšana un eksportēšana",
+          "body": [
+            "Joslā virs tabulas ir tās rīki.",
+            {
+              "points": [
+                "Atsaukt un Atcelt atsaukšanu (Ctrl+Z, Ctrl+Y) iet cauri visām tabulas izmaiņām. Ielīmēšana vai importēšana ir viens solis.",
+                "Kopēt (Ctrl+C) kopē visu tabulu vai atlasīto daļu tā, kā to nolasa izklājlapa. „Transponēts” pārvērš rindas par kolonnām.",
+                "Ielīmēt (Ctrl+V) ievieto nokopētās rindas tabulā, sākot no aktīvās šūnas uz leju. Ja pirmajā rindā ir mērvienību virsraksti, kolonnas tiek saskaņotas pēc tiem, un mērvienības, kuru tabulā vēl nav, tiek pievienotas.",
+                "Importēt nolasa Excel darbgrāmatu, CSV vai TSV failu tā satura vietā, kas ir tabulā. „Automātiski noteikt formātu” nosaka veidu pēc faila.",
+                "Eksportēt saglabā tabulu Excel, CSV, TSV vai JSON formātā. Ja pirms decimāldaļas ir komats, CSV tiek rakstīts ar semikoliem, kā to sagaida izklājlapas. Excel lapā ir 1 048 576 rindas: garāka tabula turpinās tās pašas darbgrāmatas nākamajās lapās zem tiem pašiem virsrakstiem.",
+                "Dzēšgumija iztukšo atlasītās rindas; atkritne iztukšo visu tabulu."
+              ]
+            },
+            "Rindā ir viena vērtība. No ielīmētas vai importētas rindas ar vairākām vērtībām tiek ņemta pirmā, un pārējās tiek aprēķinātas no tās.",
+            "Ļoti daudzu rindu ielīmēšana, importēšana, eksportēšana vai kopēšana aizņem laiku. Tad kartīte virs tabulas rāda, cik tālu darbs ir pavirzījies, procentos un rindās, un tajā ir poga Apturēt. Apturēta ielīmēšana vai importēšana atstāj tabulu tādu, kāda tā bija; apturēta eksportēšana neraksta failu.",
+            "Ja datoram rindām vairs nepietiek atmiņas, nekas netiek mainīts, un rinda zem tabulas norāda, cik daudz bija vajadzīgs. Ja rindas ietilpst, bet iepriekšējo tabulu nevar saglabāt blakus tām, jums tiek jautāts, vai turpināt bez atsaukšanas iespējas: šo izmaiņu un iepriekšējās tad vairs nevarēs atsaukt. Pirms jautāšanas, lai atbrīvotu vietu, tiek atmesti vecākie atsaukšanas soļi.",
+            "Tabulas opcijas (zobrats): ko rāda kolonnas virsraksts (Nosaukums (simbols), Nosaukums vai Simbols), vai kopijās un eksportos ir iekļauti virsraksti un rindu numuri, „Sākt šo konvertētāju ar šīm kolonnām” un „Atiestatīt tabulu”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Īpašie konvertētāji",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valūta",
+          "body": [
+            "Valūtām nav fiksēta koeficienta: to vērtība mainās. Valūtu konvertētājs nolasa kursus no diviem bezmaksas pakalpojumiem, kamēr jūs to izmantojat, un tikai tad.",
+            {
+              "points": [
+                "Valstu valūtas: Rates By Exchange Rate API, https://www.exchangerate-api.com . Avotā to kursi mainās reizi dienā un netiek nolasīti biežāk.",
+                "Kriptovalūtas: Powered by CoinGecko, https://www.coingecko.com . To kursi tiek nolasīti, kad konvertētājs tiek atvērts vai atkal nonāk priekšplānā un tā dati ir vecāki par ceturtdaļstundu, kā arī tad, kad nospiežat Atjaunot; nekad pēc taimera."
+              ]
+            },
+            "Tiek pieprasīti tikai kursi. Par jums netiek sūtīts nekas, un nekad netiek sūtītas summas, ko konvertējat.",
+            "Rinda zem tabulas un zem skata Ātrā konversija rezultāta norāda, uz kuru brīdi kursi attiecas. Bez savienojuma tiek izmantoti pēdējie kursi, un tie tiek atzīmēti kā novecojuši. Valūtai, kurai pakalpojumi nesniedz kursu, tiek rādīta domuzīme.",
+            "Iestatījumi → Units → Valūta: „Nolasīt kursus no tīkla” var izslēgt, un tad konvertētājs izmanto pēdējos saglabātos kursus. „Rādīt avotu nosaukumus blakus kursiem” rāda vai paslēpj abu pakalpojumu nosaukumus šajā rindā.",
+            "Kursi ir informatīvi. Nepaļaujieties uz tiem darījumos."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Skaitīšanas sistēma",
+          "body": [
+            "Šī konvertētāja mērvienības ir veselu skaitļu pieraksta veidi: sistēmas ar pamatu no 2 līdz 64, romiešu cipari, sešdesmitnieku sistēma ar koliem (1:30:15), bināri kodēti decimālskaitļi un Greja kods. To vērtības ir teksts: ievadiet FF zem heksadecimālās sistēmas, un pārējās kolonnas rāda 255, 11111111 un tā tālāk.",
+            "Romiešu cipari ir no I līdz MMMCMXCIX (no 1 līdz 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Mērvienības, kas nav vienkāršs koeficients",
+          "body": [
+            "Lielākā daļa mērvienību ir citas mērvienības reizinājums ar koeficientu. Dažas nav, un Units tās konvertē tā, kā tās ir definētas: temperatūras ar to nobīdēm; degvielas patēriņu (litri uz 100 km pret jūdzēm uz galonu); viļņa garumu pret frekvenci; vadītspēju pret pretestību; Bomē, API, Briksa un Plato grādus pret blīvumu; decibelus pret skaņas spiedienu un intensitāti; slīpumu procentos pret tā leņķi.",
+            "Temperatūra un temperatūru starpība nav viens un tas pats: 100 °C ir 212 °F, bet 100 °C starpība ir 180 °F starpība. Grupas „Atšķirība (Δ)” mērvienības konvertē savā starpā; starp tām un temperatūras skalām šūnā tiek rādīta domuzīme."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jūsu pašu mērvienības",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Mērvienības izveide",
+          "body": [
+            "Jebkuram konvertētājam varat pievienot savas mērvienības. Mērvienību panelī izvēlieties „Jauna mērvienība”, piešķiriet tai nosaukumu un simbolu un izsakiet to ar esošu mērvienību.",
+            {
+              "points": [
+                "Koeficients: „1 solis = 0,75 m”. Skalai, kas nesākas no nulles, arī tas, kas tiek pieskaitīts pēc reizināšanas.",
+                "Formula: kā vērtība kļūst par otru mērvienību, ar x vērtības vietā, un formula atpakaļceļam. Piemēram, x * 9 / 5 + 32 un (x - 32) * 5 / 9."
+              ]
+            },
+            "Ievadītais tiek pārbaudīts jau rakstīšanas laikā, un pirms saglabāšanas tiek parādīts, kam ir vienāda jūsu mērvienība. Formulā var izmantot + − × ÷ ^, iekavas, x, pi, e un funkcijas sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos un atan. Formula tiek aprēķināta, bet nekad netiek palaista kā programma.",
+            "Jūsu mērvienības ir uzskaitītas panelī sadaļā „Mani”, kur tās var mainīt un noņemt. Jūsu mērvienību var izteikt ar citu jūsu mērvienību; noņemot mērvienību, tiek noņemtas arī ar to izteiktās.",
+            "Iestatījumi → Units uzskaita jūsu mērvienības visiem konvertētājiem un eksportē un importē tās kā tekstu, ko varat saglabāt vai pārvietot uz citu datoru."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Iestatījumi",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Units iestatījumi",
+          "body": [
+            "Fails → Atvērt iestatījumus atver Units iestatījumus; to pašu dara tabulas opcijas (zobrats tās joslā).",
+            {
+              "points": [
+                "Katra konvertētāja atvēršana savā cilnē vai cilnē, kurā atrodaties.",
+                "Ekstremālās vērtības pilnā garumā, kas tiek rakstīts starp tūkstošiem (10000,000, 10 000,000 vai 10.000,000; nekas, ja vien neizvēlaties citu) un rindas numuri.",
+                "Valūta: vai kursi tiek nolasīti no tīkla un vai blakus tiem tiek nosaukti pakalpojumi.",
+                "Mērvienību precizitāte: izvēlieties konvertētāju (vai „Jūsu mainītās mērvienības”), meklējiet mērvienību un iestatiet tās decimālzīmes ar − un +; bultiņa atjauno mērvienības sākotnējo precizitāti. Kolonnas izvēlnes komanda „Izmantot šai mērvienībai visur” iestata to pašu vērtību.",
+                "Mērvienības, ar kurām sākas tabula: konvertētāji, kuru pirmās kolonnas jūs izvēlējāties, katram ar iespēju atgriezties pie noklusējuma kolonnām.",
+                "Jūsu pašu mērvienības."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Par Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Par Units",
+          "body": [
+            "Units ir Syntelab Creative konvertēšanas lietotne: 38 konvertētāji ar vairāk nekā 1500 mērvienībām, no garuma un temperatūras līdz valūtām un skaitīšanas sistēmām. Vienreiz ievadīta vērtība tiek parādīta katrā vajadzīgajā mērvienībā tabulā, kurā var būt viena vērtība vai miljoniem.",
+            "Skaitļi tiek aprēķināti precīzi, kā daļskaitļi, un noapaļoti tikai tad, kad tie tiek uzrakstīti. Viss notiek šajā datorā; no tīkla tiek nolasīti tikai valūtu kursi, un to var izslēgt.",
+            "Tā ir jauna. Ja jūsu darbam tajā kaut kā pietrūkst, pastāstiet mums, izmantojot Palīdzība → Atsauksmes: tā mēs uzzinām, pie kā strādāt."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Cik rindu ietilpst tabulā: ko mēs izmērījām",
+          "body": [
+            "Tabulai nav fiksēta rindu ierobežojuma: tā ir tik gara, cik ļauj jūsu datora atmiņa. Rinda aizņem 16 baitus, tāpēc 100 miljoni rindu aizņem aptuveni 1,5 GB. Kad atmiņa beidzas, tabula paliek tāda, kāda bija, un programma norāda, cik daudz bija vajadzīgs.",
+            "Mēs to izmērījām ar 50 000 000 rindām, katrā pa vienam skaitlim vienā kolonnā, programmas optimizētajā būvējumā:",
+            {
+              "points": [
+                "50 000 000 rindu ielīmēšana: aptuveni 7 sekundes.",
+                "To importēšana no CSV faila: 12 sekundes.",
+                "To eksportēšana uz CSV failu ar otru, konvertētu kolonnu: aptuveni 3,5 minūtes.",
+                "To eksportēšana uz Excel 48 lapās: 4,3 minūtes."
+              ]
+            },
+            "Izvade aizņem vairāk laika nekā ievade, jo katra rakstāmā šūna vispirms tiek precīzi konvertēta.",
+            {
+              "note": "Dators, kurā notika tests: AMD Ryzen 9 9950X3D (16 kodoli, 32 pavedieni), 64 GB atmiņas, Windows 11 Pro. 2026. gada oktobris. Citā datorā laiki būs citādi; rindas izmērs — ne."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Ar ko Units ir veidota",
+          "body": [
+            {
+              "points": [
+                "Precīzi skaitļi: Rust bibliotēkas num (jebkura lieluma veselu skaitļu daļskaitļi).",
+                "Mērvienības, to koeficienti un grupas: programmas datu faili, pa vienam katram konvertētājam.",
+                "Excel un OpenDocument darbgrāmatu lasīšana: calamine. Excel darbgrāmatu rakstīšana: rust_xlsxwriter.",
+                "Sistēmas starpliktuve ļoti daudzu rindu kopēšanai un ielīmēšanai: arboard.",
+                "Valūtu kursi: ExchangeRate-API un CoinGecko (skatiet „Valūta”)."
+              ]
+            },
+            "Tas, kas tai ir kopīgs ar pārējo programmu, ir aprakstīts sadaļā „Par Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ko Units vēl neprot",
+          "body": [
+            {
+              "points": [
+                "Rindā ir viena vērtība: no ielīmētas rindas ar vairākām vērtībām tiek ņemta pirmā.",
+                "Ļoti daudzu rindu eksportēšana ir lēna (skatiet, ko mēs izmērījām).",
+                "Tas, kas nokopēts starpliktuvē, pirms ielīmēšanas tiek glabāts atmiņā kā viens teksts.",
+                "Valūtu kursi ir tik svaigi, cik tos sniedz abi avoti: valstu valūtām — reizi dienā."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

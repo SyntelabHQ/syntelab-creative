@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Maandishi na faili",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Kihariri",
+          "body": [
+            "Scribe ni kihariri cha maandishi ya kawaida yenye zana zake pembeni. Kila maandishi yana tab; maandishi yapo katikati, jopo la zana liko pembeni, na mstari wa taarifa upo chini yake.",
+            "Scribe inapofunguliwa, kwanza huuliza ungependa kufanya nini: kuhesabu maneno, kutafuta na kubadilisha, kuondoa nakala zinazojirudia, kulinganisha maandishi mawili, kupanga mistari, kugeuza maandishi, kuandika maandishi ya kujaza au ya nasibu. Kila chaguo hufungua maandishi yakiwa na zana husika pembeni; \"Maandishi matupu\" hufungua maandishi pekee, na maandishi yaliyofunguliwa hivi karibuni huorodheshwa chini.",
+            {
+              "points": [
+                "Faili → Maandishi mapya (Ctrl+N) huanzisha maandishi tupu.",
+                "Faili → Fungua (Ctrl+O) hufungua faili moja au nyingi, kila moja katika tab yake. Faili yoyote yenye maandishi hufunguka: .txt, .md, .csv, .log, .srt, msimbo wa programu (source code) na mengineyo.",
+                "Hariri → Rudisha nyuma (Ctrl+Z) na Rudia (Ctrl+Y) hupitia kila kitu kilichofanywa kwenye maandishi, zana au mapishi yakichukuliwa kama hatua moja.",
+                "Hariri → Tafuta na badilisha (Ctrl+F) hufungua upau katika kihariri ambao huenda kutoka kwenye mlio mmoja hadi mwingine.",
+                "Hariri → Chagua zote (Ctrl+A)."
+              ]
+            },
+            "Mstari chini ya maandishi huonyesha kishale (cursor) kilipo, kiasi kilichochaguliwa, idadi ya mistari, maneno na herufi, uandishi (encoding) wa faili na jinsi mistari yake inavyoishia.",
+            "Faili zinazovutwa na kuachwa kwenye dirisha hufunguka pia, kila moja kama maandishi mapya yenye jina la faili, uandishi na mwisho wa mistari. Programu hupata kile kilichomo kwenye faili iliyovutwa lakini siyo mahali ilipo kwenye diski, hivyo kuhifadhi huuliza wapi; faili zenye zaidi ya 64 MB hufunguliwa kwa Faili → Fungua.",
+            "Maandishi mapya, wakati yakiwa tupu, huorodhesha maandishi yaliyofunguliwa hivi karibuni: bofya moja ili kuifungua. \"Futa orodha\" huifuta; orodha huhifadhiwa kwenye kompyuta hii pekee."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Hifadhi na Hifadhi kama",
+          "body": [
+            "Hakuna kinachobadilisha faili kwenye diski hadi uhifadhi. Nukta kwenye tab huonyesha kuwa maandishi yana mabadiliko ambayo hayapo kwenye faili yake, na kufunga tab kama hiyo huuliza kwanza.",
+            {
+              "points": [
+                "Hifadhi (Ctrl+S) huandika maandishi juu ya faili yake. Maandishi mapya huuliza wapi yahifadhiwe.",
+                "Hifadhi kama (Ctrl+Shift+S) huandika kwenye faili jipya, ambalo kisha huchukua nafasi ya tab, huku kila kitu kinachoweza kurudishwa kikiwa bado hapo; faili la zamani hubaki kama lilivyokuwa."
+              ]
+            },
+            "Faili huandikwa kikamilifu au lisandikwe kabisa: ikiwa uandishi utashindwa, faili lililokuwepo bado litakuwepo.",
+            {
+              "note": "Faili huhifadhiwa kama lilivyofunguliwa: katika ucodi uleule, na mwisho wa mistari uleule. Maandishi yaliyoandikwa kwenye Windows na yaliyoandikwa kwenye Linux yote yanabaki kama yalivyokuwa."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Ucodi na mwisho wa mistari",
+          "body": [
+            "Ucodi ni njia ambayo herufi huhifadhiwa kama baiti. Scribe husoma kile faili kinachosema kuhusu lenyewe, na kukisia wakati halisemi kitu. Faili nyingi leo ni UTF-8; za zamani kutoka Ulaya ya Kati mara nyingi ni windows-1250.",
+            {
+              "points": [
+                "Herufi zinazoonekana vibaya (Ã£ badala ya ă, au visanduku): Faili → \"Soma tena kwa ucodi mwingine\", na chagua ule ambao faili liliandikwa nao.",
+                "Ili kuhifadhi kwa ucodi mwingine, uchague kwenye mstari chini ya maandishi, kisha hifadhi. Ikiwa maandishi yana herufi ambazo ucodi huo hauwezi kuandika, Scribe husema ni zipi na haandiki kitu.",
+                "Mwisho wa mistari (Windows CRLF, Linux na macOS LF, Mac ya zamani CR) hubadilishwa mahali hapo hapo. Faili lenye mchanganyiko wa mwisho wa mistari husemwa kuwa linayo; kuhifadhi hufanya mistari yake yote iwe na mwisho sawa."
+              ]
+            },
+            "Kile ambacho maandishi mapya huanza nacho huchaguliwa katika Mipangilio."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Jinsi maandishi yanavyoonyeshwa",
+          "body": [
+            {
+              "points": [
+                "Kila kitu katika menyu ya Tazama ni swichi: ikiwa imewashwa, huonekana; ikiwa imezimwa, haionekani.",
+                "Maandishi: Kunjia mistari mirefu (Alt+Z) — mstari mrefu kuliko dirisha huenda chini, na maandishi yanabaki na mistari yake; Namba za mistari; Matokeo pembeni ya maandishi.",
+                "Pembeni ya maandishi: Zana (Ctrl+T), Mapishi, Takwimu. Paneli huonyesha tu sehemu zilizowashwa; ikiwa hakuna iliyowashwa, hakuna paneli.",
+                "Zana zinazoonyeshwa: kila kikundi cha zana (tafuta na badilisha, mistari, herufi kubwa na ndogo, kusafisha, andika maandishi) kinaweza kuondolewa kwenye paneli. Zana iliyochaguliwa kutoka kwenye menyu ya Muundo au Zana itaonyeshwa vivyo hivyo: sehemu yake na kikundi chake vitarejea vyenyewe.",
+                "Kishale cha mara mbili juu ya paneli huikunjia chini kuwa ukingo, ambapo kila sehemu yake inapatikana kwa mbofyo mmoja; buruta ukingo wake ili kuifanya iwe pana au nyembamba.",
+                "Herufi na ukubwa wake huchaguliwa katika Mipangilio."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Faili kubwa sana",
+          "body": [
+            "Faili yenye zaidi ya 64 MB haiwekwi kwenye mhariri: inafunguka katika tabu inayoonyesha ukurasa wa mistari 500 kwa wakati mmoja, ikisomwa kutoka kwenye faili unapoendelea. Faili za gigabytes hufunguka hivi kwa muda unaotumika kuzipitia mara moja.",
+            {
+              "points": [
+                "\"Ukurasa uliopita\" na \"Ukurasa unaofuata\" husogeza mbele na nyuma; namba ya mstari na \"Nenda\" huruka hadi mstari wowote.",
+                "Tafuta hupita kwenye faili nzima, kwa chaguo zilezile kama kwingineko, na kuorodhesha sehemu zilizopatikana: bofya moja ili kwenda kwenye mstari wake. Orodha ndefu huja sehemu kwa sehemu, kwa kutumia \"Tafuta zaidi\".",
+                "\"Tekeleza mapishi kwenye faili zima\" huandika matokeo kwenye folda unayochagua, kwa jina lile lile. Faili yenyewe haibadilishwi hapa.",
+                "\"Fungua yote kwenye mhariri\" huweka faili hiyo kwenye mhariri vivyo hivyo, ili kuibadilisha kwa mkono. Inaweza kuwa nzito, na inahitaji kumbukumbu ya mara kadhaa ya ukubwa wa faili."
+              ]
+            },
+            {
+              "note": "Faili zilizoandikwa baiti mbili kwa herufi (UTF-16) haziwezi kuonyeshwa ukurasa kwa ukurasa. Mapishi hushikilia faili nzima kwenye kumbukumbu wakati yanapofanya kazi: kikomo ni kumbukumbu ya kompyuta."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Zana",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Jinsi zana zinavyofanya kazi",
+          "body": [
+            "Zana zipo kwenye paneli kando ya maandishi, katika vikundi. Bofya zana ili kuona chaguo zake, kisha Tumia kwenye maandishi.",
+            {
+              "points": [
+                "Kukiwa na kitu kilichochaguliwa, zana hubadilisha tu sehemu hiyo; kukiwa hakuna kitu kilichochaguliwa, hubadilisha maandishi yote. Paneli huonyesha ipi, juu yake.",
+                "Chini ya kitufe, zana huonyesha kile ilichofanya: idadi ya mistari au sehemu zilizobadilishwa.",
+                "Kila zana ni hatua moja: Rudisha nyuma inairudisha nyuma yote.",
+                "Kila zana pia ipo kwenye menyu na kwenye utafutaji wa amri: zile zinazobadilisha muonekano wa maandishi (mistari, herufi kubwa na ndogo, usafishaji) ziko kwenye menyu ya Muundo, zingine ziko kwenye Zana. Kuchagua moja hapo hufungua paneli yenye chaguo zake."
+              ]
+            },
+            "Kwenye menyu ya Muundo, zana ambayo mara nyingi ina chaguo moja huwekwa kama chaguo zake: kila njia ya kubadilisha herufi kubwa, kila aina ya alama za nukuu, kila njia ya kugeuza maandishi ni amri yake yenyewe, ambayo hufungua zana ikiwa na chaguo hilo limechaguliwa. Pale dirisha linapokuwa nyembamba mno kwa ajili ya kikundi, kikundi hicho kinakuwa kitufe kimoja kinachofungua orodha nzima.",
+            "Zana hizi zinafanya kazi kwenye kompyuta hii. Hakuna maandishi yanayotoka nje."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Matokeo, kabla hujatumia",
+          "body": [
+            "Zana ikiwa wazi, kile itakachotoa huonyeshwa kando ya maandishi, kwenye paneli ya \"Matokeo\". Hakuna kinachobadilika kwenye maandishi hadi utakapochagua Tumia kwenye maandishi. Matokeo yanakufuata: badilisha chaguo au maandishi, na yataandaliwa tena.",
+            {
+              "points": [
+                "Maandishi na matokeo vinakaa bega kwa bega, kila kimoja chini ya kichwa cha urefu sawa, hivyo mistari sawa huanzia kwenye urefu sawa; vinashuka chini pamoja (kitufe cha mnyororo huzima hilo).",
+                "Mistari ambayo ingebadilika huwekwa alama, huku sehemu ya mstari inayobadilika ikiwa na rangi nzito zaidi; mistari ambayo ingesogezwa tu, na mistari mipya, kila mmoja ana rangi yake. Mistari ambayo ingebadilishwa au kuondolewa huwekwa alama kwenye maandishi yako pia.",
+                "Chini ya majina: kile ambacho kingetokea kwa namba — mistari iliyobadilishwa, iliyosogezwa, mipya, iliyoondolewa; mistari na herufi kabla na baada.",
+                "Chini ya matokeo: mistari ambayo ingeondolewa. Bofya mmoja ili kwenda kwake kwenye maandishi.",
+                "Vitufe vidogo vya matokeo: nakili, ifungue kama maandishi mapya,ilinganishe na maandishi kwenye tab, shuka chini pamoja, weka matokeo chini ya maandishi badala ya kando yake, ifiche. Maandishi yana vyake: rudisha nyuma, rudia, nakili, bandika juu, chagua yote, futa.",
+                "Buruta mstari kati ya hizi mbili ili kuipa moja nafasi zaidi; kubofya mara mbili huzifanya kuwa sawa tena."
+              ]
+            },
+            "Baada ya Tumia kwenye maandishi, sehemu ya Matokeo inatoa taarifa (\"Imetumika. Maandishi ya upande wa kushoto sasa ndiyo matokeo.\") na kutoa chaguo la Rudisha nyuma na \"Linganisha na jinsi ilivyokuwa\", ambayo hufungua ulinganisho ule ule wa kabla na baada. Inaonyesha matokeo tena mara tu unapobadilisha maandishi au chaguo la zana.",
+            {
+              "note": "Tazama → \"Matokeo pembeni ya maandishi\" huzima au kuwasha sehemu hiyo. Kwa maandishi marefu sana (zaidi ya herufi milioni mbili) hakuna kitu kinachoonyeshwa hapo awali: tumia zana hiyo, na Rudisha nyuma itairudisha."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Badilisha kila mahali",
+          "body": [
+            "Inabadilisha kila mahali kitu kinapopatikana, kwa wakati mmoja. Unapoandika kile cha kutafuta, Scribe inasema katika maeneo mangapi imepatikana na kuyaweka alama kwenye maandishi, ili uone nini kitabadilika kabla ya kutumia.",
+            {
+              "points": [
+                "\"Usemi wa kawaida\": maandishi ya kutafuta ni kiolezo. Katika \"Badilisha kwa\", $1, $2… vinawakilisha kile ambacho makundi ya kiolezo hicho yalipata.",
+                "\"Zingatia herufi kubwa\": a na A ni herufi tofauti.",
+                "\"Maneno kamili pekee\": \"paka\" haitapatikana ndani ya \"mapaka\".",
+                "\"Hifadhi herufi kubwa za kile kinachobadilishwa\": kubadilisha \"paka\" kuwa \"mbwa\" kunageuza \"Paka\" kuwa \"Mbwa\" na \"PAKA\" kuwa \"MBWA\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Machaguo zaidi\" → \"Jaza…\": kile kinachowekwa badala kinaweza kuwa na nafasi zinazojazwa katika kila mlingano. {counter} huhesabu 1, 2, 3… ({counter:10} huanzia 10, {counter:10:5} huongezeka kwa 5); {date} na {time} ni tarehe na saa ya kompyuta yako; {uuid} ni kitambulisho; {random} ni herufi na namba 8 nasibu ({random:12} kwa 12).",
+                "Chini ya kile unachotafuta, Scribe pia inasema katika mistari mingapi milingano hiyo ipo na ni maandishi mangapi tofauti yako."
+              ]
+            },
+            "\"Badilisha nyingi kwa mkupuo mmoja\" hufanya orodha ya jozi katika hatua moja. Andika jozi moja kwa mstari, kama: kile cha kutafuta => kile cha kuweka badala yake. Hufanyika kuanzia ya kwanza hadi ya mwisho, kila moja kwenye kile kilichoachwa na ya awali; nusu ya pili ikiwa tupu huondoa maandishi.",
+            {
+              "note": "Kiolezo hakiwezi kugandisha programu: muda unaotumika huongezeka kulingana na urefu wa maandishi na si zaidi ya hapo. Violezo vinavyorejelea kile vilichopata (\\1) havipatikani kwa sababu hiyo."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Mistari",
+          "body": [
+            {
+              "points": [
+                "Panga mistari kwa: herufi zao, kama kamusi inavyofanya, katika lugha ya programu au ile unayochagua (katika Kirumania ă huja baada ya a; Kiswidi huweka ä baada ya z, Kijerumani kando ya a); herufi zenye namba kama namba (file2 kabla ya file10); namba ambayo kila mstari huanzia; urefu; idadi ya maneno; tarehe ambayo kila mstari huanzia (05.03.2024, 2024-03-05, ikiwa na saa au bila); anwani za mtandao; namba za toleo (1.2.10 baada ya 1.2.9); vichwa, ambapo kiunganishi mwanzoni hakizingatiwi; mpangilio unaoandika (ndogo, ya kati, kubwa); au bila mpangilio kabisa.",
+                "Mistari isiyo na kitu cha kupangwa nayo (haina namba, haina tarehe, thamani ambayo haipo katika mpangilio uliouandika) hubaki mwishoni bila kujali jinsi zingine zilivyopangwa: ndogo kwanza au kubwa kwanza.",
+                "Machaguo zaidi ya kupanga: linganisha kuanzia neno au herufi fulani, au safu moja ya jedwali (kwa sehemu gani za safu); weka mstari wa kwanza mahali pake kama kichwa; panga aya badala ya mistari; na safisha kwanza — kata miongozo, ondoa mistari mitupu, ondoa nakala zinazojirudia.",
+                "Ondoa mistari inayojirudia: weka ya kwanza, ya mwisho, au usibaki na mstari wowote kati ya wale wanaojirudia (ni zile zilizoonekana mara moja tu zinazobaki). Herufi kubwa, nafasi kuzunguka mstari, tarakimu, alama za uakifishaji, na idadi ya herufi mwanzoni au mwishoni zinaweza kupuuzwa; safu moja tu, au kile tu ambacho kiolezo kinapata, kinaweza kuwa ndicho kinacholinganishwa. Mistari mitupu huchukuliwa kama mingine, huhifadhiwa, huondolewa, au huunganishwa.",
+                "Hesabu mistari inayojirudia: huacha kila mstari mara moja, ikiwa na idadi ya mara ulipokuwepo ikiwa imeandikwa mbele yake — inayojirudia zaidi kwanza, au kidogo zaidi, au katika mpangilio zinavyokuja.",
+                "Weka au ondoa mistari: hutafuta kitu katika kila mstari na huweka tu mistari yenye kitu hicho, au ile ambayo haina.",
+                "Geuza mpangilio wa mistari; Changanya mistari.",
+                "Namba mistari: namba ya kwanza, kitu kinachofuata, sifuri mbele ili namba zipangane, mistari mitupu bila namba.",
+                "Mistari mitupu: iondoe yote, au acha mmoja pale ambapo kuna mingi.",
+                "Unganisha mistari kuwa mmoja, ukitumia kile unachochagua kati yake; Gawanya katika mistari katika kila mkoma, nukta mkato au kitu kingine chochote. Popote pale ambapo kitu kinachoweka utofauti kinaandikwa (kunamba, kuunganisha, kugawanya, kuhesabu), \\t inawakilisha tab, ambayo haiwezi kuandikwa kwenye uwanja wa maandishi."
+              ]
+            },
+            {
+              "note": "Chaguo ambalo linaathiri tu likiwa na lingine huonyeshwa wakati huo tu: safu, mara tu unapolinganisha kwa safu. Machaguo ambayo watu wachache wanahitaji yako chini ya \"Machaguo zaidi\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Herufi Kubwa",
+          "body": [
+            "Badilisha herufi kubwa: herufi kubwa mwanzo wa sentensi, kila neno lianze na herufi kubwa, herufi kubwa zote, herufi ndogo zote, kinyume, na njia ambazo majina huandikwa katika kodi: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Herufi kubwa hufuata sheria za kila alfabeti, si ya Kiingereza pekee.",
+            "Katika kikundi cha Mwelekeo, \"Geuza maandishi\" hugeuza herufi za kila mstari, au mpangilio wa maneno yake, au herufi za kila neno; \"Juu chini\" huandika ili yasomwe kutoka ng'ambo ya meza, na \"Kama kwenye kioo\" pia hubadilisha alama zenye upande wa kushoto na kulia. Herufi huhesabiwa kama msomaji anavyozihesabu: herufi ikiwa na alama yake inabaki kuwa moja."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Usafishaji",
+          "body": [
+            {
+              "points": [
+                "Safisha nafasi: nafasi nyingi zinakuwa moja; nafasi mwishoni mwa mistari huondolewa.",
+                "Kata mwisho wa mstari: pande zote mbili, mwanzo au mwishoni.",
+                "Alama za nukuu: za moja kwa moja, za Kiingereza, za Romania, za Kijerumani au za Kifaransa.",
+                "Ondoa alama za herufi (diakritiki): ă inakuwa a, é inakuwa e. Katika alfabeti za Kilatini na Kigiriki pekee, ambapo herufi bila alama yake bado ni herufi hiyo.",
+                "Rekebisha herufi za Kirumania: ş na ţ (zenye cedilla, zilizoandikwa na kibodi za zamani) zinakuwa ș na ț (zenye mkato), herufi ambazo Kirumania huandikwa nazo.",
+                "Badilisha tab kuwa nafasi na nafasi kuwa tab, kwa upana wa tab unaouchagua.",
+                "Ondoa tagi za HTML: kwa ajili ya chanzo cha ukurasa wa wavuti uliowekwa kwenye maandishi. Tagi, hati (script) na mitindo huondolewa; kile ambacho msomaji angeona hubaki. Ili kuleta ukurasa kutoka kwenye anwani yake, tumia zana iliyo chini yake, \"Maandishi ya ukurasa wa wavuti\".",
+                "Maandishi ya ukurasa wa wavuti: andika anwani ya ukurasa (example.com/page) na uchague \"Leta maandishi\". Kile ambacho msomaji angeona kwenye ukurasa huo huandikwa pale kiko kishale (cursor), bila tagi, hati (script) au mitindo. Hii ndiyo zana pekee ya Scribe inayojiunga na mtandao, na ni wakati tu unapoiomba: ukurasa huchukuliwa na kivinjari kilichosakinishwa kwenye kompyuta hii (Microsoft Edge au Google Chrome), kinachofanya kazi bila dirisha na bila kuki au kuingia kwako; programu yenyewe hairumi kitu chochote. Ukurasa unaohitaji uwe umeingia hutoa tu kile ambacho mgeni angeona."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Kurudisha alama za herufi za Kiromania",
+          "body": [
+            "Maandishi ya Kirumania yaliyoandikwa bila ă, â, î, ș, ț yanaandikwa tena kwa kutumia alama hizo.",
+            {
+              "steps": [
+                "Fungua zana katika kikundi cha Usafishaji na uchague Tumia kwenye maandishi.",
+                "Maneno yenye fomu moja sahihi hubadilishwa mara moja: \"stiu\" inakuwa \"știu\", \"informatii\" inakuwa \"informații\".",
+                "Maneno yanayoweza kusomwa kwa njia zaidi ya moja (fata, fată, fața, față) huorodheshwa chini ya kitufe, kila kimoja katika nafasi yake kwenye maandishi. Bofya fomu sahihi kwa kila neno.",
+                "Au weka alama ya vyema kwenye \"Chagua fomu inayowezekana zaidi yenyewe\" kabla ya kutumia: hakuna kitu kinachoulizwa, na matokeo yanapaswa kusomwa ili kuhakiki."
+              ]
+            },
+            "Pale ambapo maneno ya jirani yanatosha, Scribe huamua kupitia hayo: \"o casa\" inakuwa \"o casă\", \"casa mea\" inabaki hivyo hivyo, \"pentru ca\" inakuwa \"pentru că\".",
+            {
+              "note": "Hii imeundwa kwa ajili ya Scribe kutoka kwenye orodha ya maneno ya kawaida na viambishi ambavyo Kiromania huandika kila wakati kwa alama za herufi. Maneno ambayo haiyajui (maneno nadra, majina) hubaki kama yalivyoandikwa, na neno ambalo tayari limeandikwa kwa alama za herufi haliguswi kamwe. Soma matokeo kabla ya kuyatuma."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Kuandika maandishi: ya kujaza na ya nasibu",
+          "body": [
+            "Zana za kikundi cha \"Andika maandishi\" hazibadilishi chochote: zinaandika. Kile zinachotoa huenda pale kiko kishale (cursor), badala ya sehemu iliyochaguliwa.",
+            {
+              "points": [
+                "Maandishi ya kujaza: aya, sentensi, maneno, orodha, vichwa vya habari, au sehemu za ukurasa (kichwa cha habari, aya, orodha). Katika Kilatini cha wachapishaji (lorem ipsum), Kiingereza, Kiromania, maneno ya ofisi au ya jikoni, au maneno yako mwenyewe. Machaguo zaidi: sentensi fupi, za wastani au ndefu; maandishi ya kawaida, Markdown, HTML au JSON; kiwango cha vichwa vya habari; ukomo wa herufi (maandishi hukatwa kwenye neno zima na bado huishia kama sentensi); maneno ya kuacha.",
+                "Data ya kubuni: majina, anwani za barua pepe, namba za simu, anwani za mitaa, tarehe au namba, moja kwa kila mstari, za Romania au za nchi zinazozungumza Kiingereza. \"Mistari kwa kiolezo changu\" huandika kila mstari kama unavyosema, huku {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} na {row} zikiwakilisha kile kinachoundwa — jedwali la kujaribia kitu, baada ya muda mfupi.",
+                "Maandishi ya nasibu: nywila (herufi, tarakimu na alama, angalau moja ya kila aina), herufi, tarakimu, heksadesimali au vitambulisho (UUID), kwenye mstari mmoja au mingi. Herufi zinazoweza kuchanganywa kwa urahisi (0 na O, 1, l na I) zinaweza kuachwa.",
+                "Mbegu (chini ya \"Machaguo zaidi\") hufanya maandishi ya kujaza na data ya kubuni itokee vilevile kila wakati kwa namba ileile; 0 hutoa kitu kipya kila wakati."
+              ]
+            },
+            {
+              "note": "Nywila hutengenezwa kwenye kompyuta hii, kutokana na nasibu ya mfumo wa uendeshaji, na hazitumwi popote. Anwani za barua pepe za kufikirika huishia na example.com, ambapo barua hazifiki kwa mtu yeyote; namba ya simu iliyotengenezwa kwa nasibu inaweza kuwa ya mtu, hivyo usipige."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mapishi",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Kuhifadhi ulichofanya kama mapishi",
+          "body": [
+            "Mapishi ni orodha ya zana pamoja na chaguzi zake, zilizohifadhiwa chini ya jina na zinazoweza kuendeshwa tena kwa mbofyo mmoja.",
+            {
+              "steps": [
+                "Tumia zana unazotaka kwenye maandishi, kwa mpangilio unaotaka.",
+                "Fungua \"Mapishi\" juu ya paneli: zana ulizotumia zimeorodheshwa.",
+                "\"Hifadhi kama mapishi\", na ulipe jina.",
+                "Baadaye, fungua mapishi na uchague \"Tekeleza kwenye maandishi\": hatua zake zote zinatekelezwa, na Rudisha nyuma moja huzirudisha zote."
+              ]
+            },
+            "Mapishi huhifadhiwa kwenye kompyuta hii na yanapatikana katika kila maandishi."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Kubadilisha mapishi, au kutengeneza mapishi mapya",
+          "body": [
+            "\"Badilisha\" kwenye mapishi yaliyofunguliwa huonyesha jina lake na hatua zake. Kila hatua inaweza kusukumwa juu au chini, kuondolewa, na kupewa chaguzi nyingine; zana huongezwa kutoka kwenye orodha chini ya hatua. Hakuna kinachohifadhiwa hadi utakapobofya \"Hifadhi\".",
+            "\"Mapishi mapya\" huanza mapishi yasiyo na hatua, ili yaunganishwe kwa njia ile ile bila kutumia zana kwenye maandishi kwanza.",
+            {
+              "note": "Zana zinazoandika maandishi (ya kujaza, ya nasibu) si hatua za mapishi: mapishi hubadilisha maandishi."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Kuendesha mapishi kwenye faili",
+          "body": [
+            {
+              "steps": [
+                "Fungua mapishi na, chini ya \"Tekeleza kwenye faili\", ongeza faili au folda (pamoja na folda zilizo ndani yake).",
+                "Chagua mahali matokeo yaende: kwenye folda nyingine, ambayo huacha faili kama zilivyo, au juu ya faili zenyewe.",
+                "Endesha. Scribe inasema ni faili ngapi ziliandikwa, ngapi hazikuhitaji mabadiliko, na zipi hazikuweza kufanyika na kwa nini."
+              ]
+            },
+            "Kila faili huandikwa katika ucodi (encoding) na mwisho wa mistari uliokuwa nao. Katika folda nyingine, faili huhifadhi folda zilizo nazo, na faili ambayo tayari ipo haifutwi kamwe.",
+            {
+              "note": "Kuandika juu ya faili zenyewe hakuwezi kurudishwa (undo) kutoka Scribe. Weka nakala ikiwa ni muhimu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Takwimu, kulinganisha na folda",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Takwimu",
+          "body": [
+            "\"Takwimu\" juu ya paneli inaonyesha kile ambacho maandishi, au sehemu iliyochaguliwa, imeundwa nayo. Kila sehemu inaweza kufungwa.",
+            {
+              "points": [
+                "Juu: maneno, herufi zenye na zisizo na nafasi, sentensi, aya, mistari, kurasa, na ukubwa kwa baiti.",
+                "Muda: wa kusoma kimya kimya, wa kutamka kwa sauti, wa kuandika kwa kifaa, na wa kuandika kwa mkono.",
+                "Maneno: mangapi ni tofauti (na sehemu gani ya yote), herufi katika neno, silabi, neno refu zaidi na fupi zaidi, na idadi ya maneno ya kila urefu.",
+                "Sentensi: maneno katika sentensi, mangapi ni mafupi, ya wastani na marefu, mangapi ni maelezo, maswali na mshangao, na refu zaidi na fupi zaidi.",
+                "Urahisi wa kusoma: alama kuanzia 0 (ngumu sana) hadi 100 (rahisi sana), kwa kutumia fomula iliyotengenezwa kwa lugha ya maandishi. Fomula zipo kwa Kiingereza, Kijerumani, Kihispania, Kifaransa, Kiitaliano, Kiholanzi, Kireno na Kirusi; lugha isiyo na fomula haipati alama, kwani fomula ya lugha nyingine ingepotosha.",
+                "Kile kinachosemwa zaidi: maneno yanayotumika zaidi pamoja na sehemu yake katika maandishi, na jozi na makundi ya maneno matatu yanayojirudia.",
+                "Nafasi katika mipaka ya kawaida: herufi ngapi zimebaki, au zimezidi, kwa kichwa cha habari, maelezo, chapisho fupi na mengineyo."
+              ]
+            },
+            "Maneno na sentensi hupatikana kwa sheria za kila maandishi, hivyo Kichina, Kijapani na Thai, ambazo haziweki nafasi kati ya maneno, pia huhesabiwa. Kasi ambayo muda huhesabiwa nayo, na idadi ya maneno yanayounda ukurasa, hupangwa katika Mipangilio."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Kulinganisha maandishi mawili",
+          "body": [
+            {
+              "points": [
+                "Zana → \"Linganisha na maandishi mengine\": maandishi katika mhariri pembeni ya yale unayoyandika au kubandika.",
+                "Zana → \"Linganisha na faili\": maandishi katika mhariri, kama yalivyo sasa, pembeni ya faili unayochagua.",
+                "Zana → \"Linganisha maandishi mawili\": maandishi mawili yaliyoandikwa au kubandikwa upande kwa upande.",
+                "Zana → \"Linganisha faili mbili\"."
+              ]
+            },
+            "Maandishi mawili yanaonyeshwa kando kwa kando. Mistari iliyo kwenye ya kwanza pekee huashiriwa kama iliyoondolewa, mistari iliyo kwenye ya pili pekee kama iliyoongezwa, na katika mstari uliobadilika, maneno yanayotofautiana huashiriwa. Kinachoonyeshwa ni kile kinachotofautiana tu, kikiwa na mistari michache inayokizunguka; mishale huenda kutoka tofauti moja hadi nyingine.",
+            "Herufi kubwa, nafasi, mistari mitupu, namba na alama za uakifishaji zinaweza kurukwa. \"Katika safu moja\" huonyesha kile kilichotoolewa juu ya kile kilichowekwa, kila kimoja kikiwa na alama yake, badala ya kuwa kando kwa kando. Kando ya idadi, Scribe inasema jinsi maandishi mawili yanavyofanana, kama sehemu ya mistari ambayo ni sawa.",
+            "Maandishi huonyeshwa mara tu yanapochaguliwa, kabla ya mengine. Buruta mstari kati ya maandishi mawili ili kumpa mmoja nafasi zaidi; wakati maandishi yanapoandikwa, mstari ulio chini ya sanduku huburutwa juu na chini ili kumpa sanduku au ulinganifu nafasi zaidi. Kubofya mara mbili hurudisha mstari.",
+            "Pale ambapo mistari mingi mfululizo ilibadilishwa, kila mmoja huwekwa kando ya mstari unaofanana nao zaidi, hivyo mstari uliongezwa au kutolewa kati yao haufanyi kila mstari unaofuata uonekane umebadilika kwenda kwenye unaofuata.",
+            "\"Andika au bandika maandishi\" huonyesha sanduku juu ya kila safu; unachoandika hapo hulinganishwa unapoandika, na faili bado inaweza kuchaguliwa kwa upande wowote."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Kutafuta na kubadilisha kwenye folda",
+          "body": [
+            {
+              "steps": [
+                "Zana → \"Tafuta kwenye folda\" (Ctrl+Shift+F), na chagua folda. Folda zilizo chini yake pia hutafutwa.",
+                "Andika unachotafuta, ukitumia machaguo yaleyale kama \"Badilisha kila mahali\". \"Aina za faili\" huweka utafutaji kwenye vionyesho vya mwisho vya faili fulani (txt, md, csv…).",
+                "Kila matokeo huonyeshwa katika mstari wake, faili kwa faili. Bofya mstari ili kufungua faili hapo.",
+                "Ili kubadilisha: andika maandishi mapya, ondoa alama ya vyema kwenye faili unazotaka kuacha, na chagua \"Andika faili\"."
+              ]
+            },
+            "Hakuna kitu kinachoandikwa mpaka utakapoomba, na ni kwenye faili zilizoachwa na alama ya vyema pekee. Kila faili huandikwa katika uandishi (encoding) na kwa mwisho wa mistari uliokuwa nao.",
+            {
+              "note": "Folda zilizofichwa na zile za programu (.git, node_modules) hupita isipokuwa uziombe. Faili ambazo si za maandishi hupita kila wakati."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mipangilio",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Mipangilio ya Scribe",
+          "body": [
+            "Faili → Mipangilio hufungua Mipangilio ya programu katika sehemu ya Scribe.",
+            {
+              "points": [
+                "Kihariri: herufi za upana mmoja au za programu yenyewe, ukubwa wake, mkunjo wa maandishi, namba za mistari, na kama matokeo ya zana yanaonyeshwa kabla hayajatumika.",
+                "Maandishi mapya: jinsi mistari yake inavyoishia, na kama faili lake huanza na alama ya utaratibu wa baiti (byte order mark).",
+                "Takwimu: kasi ya kusoma, kusema, kuandika kwa kibodi na kuandika kwa mkono, na idadi ya maneno yanayounda ukurasa.",
+                "Vifungo vya amri za Scribe."
+              ]
+            },
+            "Kila mpangilio una kifungo kinachoirudisha kama ilivyokuwa wakati programu inavyosambazwa."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Kuhusu Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Kuhusu Scribe",
+          "body": [
+            "Scribe ni programu ya maandishi ya Syntelab Creative: kihariri chenye zana zake kando ya maandishi. Inaonyesha kile zana itakachofanya kabla haijafanya, husafisha na kupanga upya orodha, hutafuta na kubadilisha katika maandishi au katika folda nzima, hailinganisha maandishi mawili, husema maandishi yameundwa na nini, huandika data za kujaza na za kubuni, na huhifadhi unachofanya mara kwa mara kama mapishi ya kuendesha tena.",
+            "Kila kitu hufanyika kwenye kompyuta hii. Hakuna kikomo kilichowekwa kwenye ukubwa au idadi ya maandishi: vikomo ni kumbukumbu ya kompyuta na kile teknolojia ya leo inavyoweza kufanya.",
+            "Ni mpya. Pale inapokosa kwa ajili ya maandishi yako, tujulishe kupitia Msaada → Maoni: ndivyo tunavyojua nini cha kufanyia kazi."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Scribe imejengwa kwa nini",
+          "body": [
+            {
+              "points": [
+                "Kihariri: CodeMirror.",
+                "Kusoma na kuandika usimbo (encodings): encoding_rs, ikiwa na chardetng kukisia usimbo wa faili ambayo hausemi.",
+                "Kutafuta na kubadilisha: maktaba ya regex ya Rust, ambayo mifumo yake haiwezi kugandisha programu.",
+                "Kupanga kama kila lugha inavyofanya, na kutafuta maneno na sentensi katika kila maandishi: ICU4X, maktaba ya Unicode.",
+                "Kulinganisha maandishi: maktaba ya similar.",
+                "Alama za herufi za Kiromania: orodha ya maneno na sheria zilizoandikwa kwa ajili ya Scribe."
+              ]
+            },
+            "Kile kinachoshirikiwa na sehemu nyingine za programu kiko chini ya \"Kuhusu Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Kile ambacho Scribe hakiwezi kufanya bado",
+          "body": [
+            {
+              "points": [
+                "Faili kubwa sana husomwa ukurasa mmoja baada ya mwingine na kubadilishwa tu kupitia mapishi; kulibadilisha kwa mkono kunamaanisha kulifungua lote, jambo ambalo huchukua kumbukumbu.",
+                "Kurudisha alama za kipekee za Kiromania hujua maneno ya kawaida; maneno nadra na majina hubaki kama yalivyoandikwa.",
+                "Hakuna ukaguzi wa tahajia.",
+                "Maandishi hayachukuliwi kutoka kwenye PDF au nyaraka za ofisi hapa; PDF Organizer hufungua hizo.",
+                "Kihariri hakitumii msimbo wa rangi au Markdown.",
+                "Faili linalowekwa kwenye dirisha hufunguka kama maandishi mapya: programu haijulishwa faili lipo wapi, hivyo kuhifadhi huuliza wapi."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

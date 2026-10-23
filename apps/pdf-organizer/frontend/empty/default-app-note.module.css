@@ -1,0 +1,37 @@
+.note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 0 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* The thank-you mark, in the app's color (lighter text on dark themes, where the color is too dark). */
+.mark {
+  display: flex;
+  flex: none;
+  /* As tall as a line of text, so the mark sits in its middle; on a second line it stays by the first. */
+  align-self: flex-start;
+  align-items: center;
+  height: 20px;
+  color: var(--pdf-organizer-color, #7A1F3D);
+}
+
+:root[data-theme='dark'] .mark {
+  color: var(--sc-text);
+}
+
+.button {
+  min-height: 28px;
+  padding-inline: 10px;
+  font-size: 13px;
+}
+
+.problem {
+  flex-basis: 100%;
+  color: var(--sc-danger);
+}

@@ -1,0 +1,252 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.heading {
+  flex: 1;
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Back to cards in the original order; only there once something was changed. */
+.reset {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  padding-inline: 10px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+}
+
+/* Cards, icons with names, or icons only. */
+.views {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+}
+
+.viewButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 26px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.viewButton:hover {
+  color: var(--sc-text);
+}
+
+.viewButton[aria-checked='true'] {
+  background: var(--sc-accent-soft);
+  color: var(--sc-accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.grid[data-view='named-icons'] {
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  gap: 12px;
+}
+
+.grid[data-view='icons'] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* The place of one app; it can be dragged to another place. */
+.place {
+  position: relative;
+  display: flex;
+}
+
+.place[data-dragged='true'] {
+  opacity: 0.45;
+}
+
+.place[data-drop]::before {
+  content: '';
+  position: absolute;
+  inset-block: 4px;
+  width: 4px;
+  border-radius: var(--sc-radius-xs);
+  background: var(--sc-accent);
+}
+
+.place[data-drop='before']::before {
+  inset-inline-start: -10px;
+}
+
+.place[data-drop='after']::before {
+  inset-inline-end: -10px;
+}
+
+/* --- Cards ---------------------------------------------------------------- */
+
+.item {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-l);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  text-align: start;
+}
+
+button.item {
+  cursor: pointer;
+}
+
+/* An app that can be opened answers in its own color. */
+button.item:hover,
+button.item:focus-visible {
+  border-color: var(--app-color, var(--sc-accent));
+  outline-color: var(--app-color, var(--sc-accent));
+}
+
+button.item:hover .open {
+  color: var(--app-color, var(--sc-accent));
+}
+
+/* Too dark to read on a dark surface: there the word keeps the accent. */
+:root[data-theme='dark'] button.item:hover .open {
+  color: var(--sc-accent);
+}
+
+.item[data-pending='true'] {
+  border-style: dashed;
+}
+
+.icon {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--sc-radius-l);
+  background: var(--sc-muted);
+  color: var(--sc-on-color);
+}
+
+.item[data-pending='true'] .icon {
+  background: var(--sc-surface-2);
+  color: var(--app-ink, var(--sc-muted));
+}
+
+.texts {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.description {
+  color: var(--sc-muted);
+}
+
+/* "Open" and "Coming soon" sit at the bottom of the card, in line across a row. */
+.open,
+.badge {
+  margin-block-start: auto;
+  padding-block-start: 8px;
+  font-weight: 500;
+}
+
+.open {
+  color: var(--sc-accent);
+}
+
+.badge {
+  color: var(--sc-muted);
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  padding: 20px;
+  border: 1px dashed var(--sc-border);
+  border-radius: var(--sc-radius-l);
+  color: var(--sc-muted);
+  text-align: center;
+}
+
+/* --- Icons with names ----------------------------------------------------- */
+
+.grid[data-view='named-icons'] .item {
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 8px 10px;
+  text-align: center;
+}
+
+.grid[data-view='named-icons'] .texts {
+  align-items: center;
+}
+
+.grid[data-view='named-icons'] .name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* --- Icons only ----------------------------------------------------------- */
+
+.grid[data-view='icons'] .item {
+  width: auto;
+  padding: 10px;
+}
+
+.tip {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 12px;
+}

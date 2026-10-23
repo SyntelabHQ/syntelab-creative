@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Aloittaminen",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Mikä Syntelab Creative on",
+          "body": [
+            "Syntelab Creative on sovelluksista koostuva ohjelma. Jokainen sovellus on tarkoitettu tietynlaiseen työhön:",
+            {
+              "points": [
+                "PDF Organizer lukee, järjestää, muokkaa ja allekirjoittaa PDF-asiakirjoja.",
+                "Scribe on tekstieditori, jossa on työkaluja tekstin puhdistamiseen, lajitteluun, vertailuun ja muuntamiseen.",
+                "Units muuntaa yksiköitä: pituuksia, lämpötiloja, valuuttoja ja monia muita.",
+                "Dev kokoaa kehittäjille työkaluja: koodaamiseen ja dekoodaukseen, muotoiluun ja tarkistamiseen sekä datan muuntamiseen muodosta toiseen."
+              ]
+            },
+            "Sovellukset jakavat saman ikkunan, asetukset ja toimintatavan, joten yhdessä sovelluksessa oppimasi pätee myös muihin.",
+            {
+              "note": "Kaikki tapahtuu tietokoneellasi. Asiakirjojasi ei koskaan lähetetä minnekään, eikä sinusta tai työstäsi kerätä tietoja."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Ikkuna",
+          "body": [
+            {
+              "points": [
+                "Sivupalkki: talon kuvake vie Aloitukseen, sen jälkeen tulevat sovelluksesi ja alareunassa ovat ohjelman uutiset, Palaute, Tuki ja Asetukset.",
+                "Sovelluksessa Tiedosto → Siirry aloitukseen vie sovelluksen ensimmäiselle sivulle, jos sellainen on (Units, Scribe), ja Tiedosto → Avaa asetukset (Ctrl+,) avaa Asetukset kyseisen sovelluksen osioon; muut osiot ovat sieltä vain yhden klikkauksen päässä.",
+                "Yläreunan välilehdet: jokaisella avaamallasi asiakirjalla, kansiolla tai työkalulla on oma välilehtensä. Välilehden piste kertoo, että siinä on tallentamattomia muutoksia.",
+                "Sovelluksen valikot välilehtien alapuolella: joko valikkopalkkina, nauhana tai sivupaneelina, riippuen valinnastasi.",
+                "Ikkunan loppuosa on aktiivinen välilehti."
+              ]
+            },
+            "Tallentamattomien muutosten sisältävän välilehden sulkeminen kysyy vahvistusta; samoin ohjelman sulkeminen."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Aloitus",
+          "body": [
+            "Aloitus näyttää sovelluksesi ja viimeksi avatut tiedostot. Klikkaa sovellusta avataksesi sen; klikkaa viimeaikaista tiedostoa avataksesi sen uudelleen.",
+            "Sovellukset voidaan näyttää kortteina, kuvakkeina nimillä tai pelkkinä kuvakkeina, ja niitä voi vetää haluttuun järjestykseen. Näppäimistöllä: Alt ja nuolinäppäimet. \"Palauta oletukset\" palauttaa ne alkuperäiseen järjestykseen.",
+            "Jokaisella sovelluksella on myös oma pikakuvake Windowsin Käynnistä-valikossa, kuten \"Syntelab PDF Organizer\" tai \"Syntelab Units\": se avaa ohjelman suoraan kyseiseen sovellukseen. Jos ohjelma on jo auki, sovellus avautuu siinä välilehtenä."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Tiedostojen avaaminen",
+          "body": [
+            {
+              "points": [
+                "Sovelluksesta: Tiedosto → Avaa tai Ctrl+O.",
+                "Raahaamalla tiedostoja kansiosta ikkunaan.",
+                "Järjestelmän tiedostonhallinnasta: kaksoisnapsauta tiedostoa, jonka ohjelma on määritetty avaamaan. Resurssienhallinnassa on myös hiiren kakkospainikkeen valikko (katso \"Resurssienhallinnan hiiren kakkospainikkeen valikko\").",
+                "Aloituksesta: viimeisimpien tiedostojen luettelo."
+              ]
+            },
+            "Ohjelma käynnistyy yhtenä istuntona. Tiedoston avaaminen tiedostonhallinnasta ohjelman ollessa käynnissä avaa sen uutena välilehtenä samaan ikkunaan."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personointi",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Asettelu: valikkopalkki, nauha tai sivupaneeli",
+          "body": [
+            "Sovelluksen komennot voidaan näyttää kolmella tavalla. Komennot ovat samat; vain niiden sijainti vaihtelee.",
+            {
+              "points": [
+                "Klassinen: valikkopalkki ja työkalupalkki.",
+                "Nauha: suuret painikkeet nimetyissä ryhmissä, yksi välilehti jokaista valikkoa kohden. Se voidaan pienentää, jotta asiakirjalle jää enemmän tilaa.",
+                "Sivupaneeli: työkalut vasemmassa tai oikeassa paneelissa, joka voidaan pienentää kuvakkeiksi."
+              ]
+            },
+            "Valitse jokaisen sovelluksen asettelu kohdasta Asetukset → Yleiset → Asettelu. Sovelluksella voi olla oma asettelunsa, joka on valittu sen omista asetuksista tai Näytä-valikosta; tällöin se ei enää noudata yleistä asettelua, kunnes valitset \"Käytä yleistä asettelua\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Teema",
+          "body": [
+            "Asetukset → Yleiset → Teema: Vaalea, Tumma, Vaaleanharmaa, Tummanharmaa tai Automaattinen, joka noudattaa järjestelmän vaaleaa tai tummaa asetusta.",
+            "Asiakirjan sivujen väri ei koskaan muutu teeman mukaan: paperi pysyy sellaisenaan."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Kieli",
+          "body": [
+            "Asetukset → Yleiset → Kieli. Ohjelma tukee 62 kieltä. \"Järjestelmän kieli\" noudattaa järjestelmäsi kieltä. Luetteloa voi hakea kielen omalla nimellä, kielen nimellä omalla kielellään tai englanninkielisellä nimellä.",
+            "Teksti, jota ei ole vielä käännetty, näytetään englanniksi, ei koskaan koodina."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Välilehdet",
+          "body": [
+            {
+              "points": [
+                "\"Pidä Aloitus-välilehti välilehtien joukossa\": kun tämä on pois päältä, Aloitus-välilehti näkyy vain silloin, kun Aloitus itse on edessä; sivupalkin talo-kuvake johtaa aina takaisin siihen.",
+                "Välilehden merkintänä voi olla sovelluksen kuvake tai yksinkertainen neliö sovelluksen värissä."
+              ]
+            },
+            "Kun välilehtiä on enemmän kuin mahtuu, nauhan päissä olevat nuolet vierittävät sitä, ja \"Lisää välilehtiä\" listaa ne kaikki."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Navigointi",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Komennon etsiminen",
+          "body": [
+            "Hakukenttä (\"Hae sovelluksia, työkaluja ja komentoja\") löytää minkä tahansa edessä olevan välilehden komennon sen nimen perusteella omalla kielelläsi tai englanniksi. Valitse tulos suorittaaksesi sen.",
+            "Komennot, jotka on suunniteltu mutta ei vielä toteutettu, näytetään harmaana valikoissa ja ne on jätetty pois hausta."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Pikanäppäimet",
+          "body": [
+            "Komennon näppäimet on merkitty sen nimen viereen valikoissa ja työkaluvihjeessä. Yleisimmät:",
+            {
+              "points": [
+                "Ctrl+O: avaa tiedosto",
+                "Ctrl+S: tallenna; Ctrl+Shift+S: tallenna nimellä",
+                "Ctrl+P: tulosta",
+                "Ctrl+Z ja Ctrl+Y: kumoa ja toista",
+                "Ctrl+F: etsi asiakirjasta",
+                "Ctrl+W: sulje välilehti",
+                "Ctrl+Tab ja Ctrl+Shift+Tab: seuraava ja edellinen välilehti",
+                "Ctrl+, (pilkku): Asetukset",
+                "F1: tämä Ohje",
+                "Escape: poistu koko näytöstä tai lukutilasta tai laske käytössä oleva työkalu"
+              ]
+            },
+            "Ohjelman omien komentojen (välilehdet, Asetukset, Ohje) näppäimet muutetaan kohdasta Asetukset → Yleiset → Pikanäppäimet; sovelluksen komentojen näppäimet sen omassa Asetukset-osiossa. Klikkaa komennon näppäimiä ja paina sitten uusia näppäimiä."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Tämän ohjeen käyttö",
+          "body": [
+            "Ohje riippuu siitä, mistä avaat sen. Sovelluksesta näet vain kyseisen sovelluksen ohjeen ja välilehden komennot, jolta tulit. Aloitussivulta tai Asetuksista näet kohdan \"Tietoa\" (lyhyt kuvaus ohjelmasta ja jokaisesta sovelluksesta) sekä ohjelman ohjeen. Ohje → Tietoa johtaa aina kohtaan \"Tietoa\".",
+            "Sisällysluettelo on vasemmalla; sen yläpuolella oleva haku etsii jokaisesta aiheesta, sekä otsikoista että tekstistä.",
+            "Ohje avautuu omaan välilehteen, jolloin voit liikkua sen ja työsi välillä; F1 tuo sen uudelleen etualalle. Kohdassa \"Alkuperäisen välilehden komennot\" on lueteltu kyseisen välilehden kaikki valikot komentoineen, pikanäppäimineen ja kuvauksineen: avaa Ohje siitä välilehdestä, johon liittyen sinulla on kysymys."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Resurssienhallinnan hiiren kakkospainikkeen valikko",
+          "body": [
+            "Asetukset → Yleiset → Resurssienhallinta → \"Näytä Syntelab Creative tiedostojen ja kansioiden hiiren kakkospainikkeen valikossa\" lisää merkintöjä ohjelman lukemille tiedostoille: \"Muunna PDF-tiedostoksi PDF Organizerilla\" ja \"Yhdistä tiedostot PDF Organizerissa\", kummassakin PDF Organizerin kuvake, sekä \"Syntelab Dev\", joka avautuu sivulle kohdilla Tarkistussummat, Vertaa ja Hex-näkymä.",
+            "Ne lisätään vain käyttäjällesi ilman järjestelmänvalvojan oikeuksia, ja kytkimen kytkeminen pois päältä poistaa ne. Windows 11:ssä ne löytyvät kohdasta \"Näytä lisää vaihtoehtoja\". Ne käynnistävät aina asennetun ohjelman: jos se on siirretty tai asennettu uudelleen muualle, se korjaa ne käynnistyessään.",
+            {
+              "note": "Useiden tiedostojen kohdalla \"Yhdistä tiedostot PDF Organizerissa\" -valinnan tekeminen avaa niistä kansion; \"Muunna PDF-tiedostoksi PDF Organizerilla\" avaa niillä eräajon."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tietosuoja, päivitykset ja yhteystiedot",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Mitä lähetetään verkkoon ja mitä ei",
+          "body": [
+            "Ohjelma ei kerää mitään: ei käyttödataa, ei tiedostonimiä, eikä kaatumisraportteja lähetetä automaattisesti.",
+            "Se yhdistää verkkoon vain seuraavissa tapauksissa, joista jokainen vaatii suostumuksesi:",
+            {
+              "points": [
+                "Päivitysten ja uutisten tarkistus (kaksi pientä tiedostoa luetaan osoitteesta syntelab.com), kun pyydät sitä tai, jos olet sallinut, kun ohjelma käynnistyy; sekä uuden version lataaminen, vain kun painat \"Päivitä\".",
+                "Verkkosivun tallentaminen PDF-muotoon (PDF Organizer) ja verkkosivun tekstin haku (Scribe) kirjoittamastasi osoitteesta.",
+                "Asiakirjan linkki, jota klikkaat: se välitetään selaimellesi tai sähköpostiohjelmallesi.",
+                "Palaute ja tuki: ne avaavat syntelab.com-sivun selaimeesi."
+              ]
+            },
+            "Sertifikaatilla allekirjoittaminen ja allekirjoitusten tarkistaminen tapahtuvat tietokoneellasi ilman verkkoyhteyttä."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Päivitykset",
+          "body": [
+            "Asetukset → Yleiset → Päivitykset → \"Etsi päivityksiä\". Kun uudempi versio on saatavilla, ikkuna kertoo uutuuksista ja tarjoaa \"Päivitä\"-painiketta.",
+            "\"Päivitä\" lataa uuden version, tarkistaa sen olevan peräisin meiltä (sen on oltava allekirjoitettu avaimellamme; kaikki muu hylätään) ja asentaa sen nykyisen päälle. Asetuksesi säilyvät ja ohjelma käynnistyy uudelleen. Mitään ei ladata ennen kuin painat painiketta.",
+            "Jos päivitystä ei voida asentaa tällä tavalla (kannettava kopio, Linux-paketti, ei verkkoyhteyttä), \"Lataa\" avaa lataussivun selaimeesi; asenna uusi versio nykyisen päälle, jolloin asetuksesi säilyvät.",
+            "Asetus \"Tarkista päivitykset ja uutiset ohjelman käynnistyessä\" voidaan kytkeä pois päältä; kumpikaan vaihtoehto ei lähetä tietoja sinusta tai tietokoneestasi."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Palaute ja tuki",
+          "body": [
+            "Ohje → Palaute: pyydä uutta sovellusta, uutta ominaisuutta tai muutosta tai ilmoita ongelmasta. Jokainen viesti luetaan.",
+            "Ohje → Tuki: ohjelma on ilmainen; tästä voit auttaa sitä jatkamaan."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tietoa ohjelmasta Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Tietoa ohjelmasta Syntelab Creative",
+          "body": [
+            "Syntelab Creative on Syntelabin (syntelab.com) kehittämä ilmainen sovelluskokoelma asiakirjojen, tekstin ja datan päivittäiseen käsittelyyn. Se alkaa neljällä sovelluksella: PDF Organizer, Scribe, Units ja Dev. Muita sovelluksia lisätään myöhemmin samaan ikkunaan.",
+            {
+              "points": [
+                "Aina ilmainen.",
+                "Ei tiedonkeruuta: mitään tietoja sinusta, tietokoneestasi tai työnteostasi ei kerätä.",
+                "Ei rajoituksia: ei maksullista versiota, ei lukittuja ominaisuuksia, ei tarkoituksella asetettuja rajoituksia. Ainoat rajoitukset ovat nykyisen teknologian mahdollisuudet ja tietokoneesi tehot."
+              ]
+            },
+            "Meillä ei ole rahoitusta. Ohjelma on tehty vapaa-ajalla niin pitkälle kuin aika on sallinut. Aiomme tehdä korkealaatuista ohjelmistoa, mikä vaatii aikaa ja kärsivällisyyttä: meiltä rakentaessa ja sinulta sen kasvaessa.",
+            "Ohjelma paranee jokaisen version myötä. Ilmoitetut ongelmat korjataan ja pyydettyjä ominaisuuksia punnitaan tulevien päivitysten osalta.",
+            {
+              "note": "Asiakirjasi pysyvät tietokoneellasi. Ohjelma ei kerää tietoja sinusta tai työstäsi; katso kohta \"Mitä lähetetään verkkoon ja mitä ei\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Kuinka voit auttaa",
+          "body": [
+            "On kolme tapaa, ja jokainen niistä on arvokas:",
+            {
+              "points": [
+                "Kerro mielipiteesi: Ohje → Palaute. Ongelma, johon törmäsit, jotain puuttuvaa tai jotain, mikä on vaikeampaa kuin pitäisi. Luemme jokaisen viestin.",
+                "Kerro muille ohjelmasta ja tekemisestämme. Mitä enemmän ihmisiä käyttävät sitä, sitä enemmän saamme palautetta, ja niin näemme, mikä on todella tärkeää. Se saa meidät myös tuntemaan, että työmme on arvostettua: sekä meidän että kaikkien niiden työ, jotka osallistuvat projektiin tai tulevat osallistumaan siihen.",
+                "Tue ohjelmaa rahallisesti, jos voit: Ohje → Tue meitä. Se antaa meille aikaa kehittää sitä."
+              ]
+            },
+            "Mihinkään näistä ei ole velvollisuutta. Ohjelma on ilmainen ja pysyy aina ilmaisena, kokonaisena ja kaikkien saatavilla."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Millä se on rakennettu",
+          "body": [
+            "Ohjelma perustuu monen ihmisen työhön. Kaikkien sovellusten yhteiset osat:",
+            {
+              "points": [
+                "Ikkuna ja kaikki näkemäsi: Tauri ja järjestelmän web-näkymä (WebView2 Windowsissa, WebKitGTK Linuxissa, WKWebView macOS:ssä); kirjoitettu TypeScriptillä ja Reactilla.",
+                "Työskentelyä hoitava osa: kirjoitettu Rustilla.",
+                "Kirjaimet ja kuvakkeet: Sansation, IBM Plex Sans ja Font Awesome Free."
+              ]
+            },
+            "Jokaisen sovelluksen omat lisäykset on mainittu sen omalla sivulla kohdassa \"Tietoa\". Olemme kiitollisia näiden projektien takana oleville ihmisille."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Mitä se ei vielä osaa",
+          "body": [
+            "Jotta tiedät tämän etukäteen:",
+            {
+              "points": [
+                "Osa teksteistä odottaa vielä käännöstä. Siihen asti ne näytetään englanniksi, ei koskaan koodina.",
+                "Tiedostonhallinnan hiiren kakkospainikkeen valikko on tällä hetkellä saatavilla vain Resurssienhallinnassa.",
+                "Sertifikaatilla allekirjoittaminen toimii tällä hetkellä Windowsissa; Linuxiin ja macOS:ään se tulee myöhemmässä versiossa."
+              ]
+            },
+            "Jokaisen sovelluksen rajoitukset on lueteltu sen omalla sivulla kohdassa \"Tietoa\". Jos jokin niistä on esteenä, kerro meille kohdassa Ohje → Palaute: se auttaa meitä päättämään, mikä kehitetään ensin."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Mitä kehitämme",
+          "body": [
+            "Neljä sovellusta tulevat kasvamaan: raportit ja toiveet, jotka lähetät kohdassa Ohje → Palaute, vaikuttavat suuresti siihen, mitä toteutetaan ensin. Niiden lisäksi valmistellaan uusia sovelluksia. Aloitus ei näytä niitä, ellet halua: valitse ne sen \"Näytä\"-valikosta, niin näet ne siellä nimellä \"Tulossa pian\":",
+            {
+              "points": [
+                "Convert: tiedostojen muuntaminen muodosta toiseen, mukaan lukien toimistodokumentit PDF-muotoon ja takaisin, ilman tarvetta asentaa toista ohjelmaa. Emme ole vielä löytäneet avointa teknologiaa, joka vastaisi laatutavoitteitamme, joten se julkaistaan vasta, kun se ei tuota sinulle pettymystä; jos työkaluja ei ole olemassa, rakennamme ne.",
+                "Pixel: työkaluja kuville, kuten koon muuttaminen ja pakkaaminen, taustan poisto, värit ja QR-koodit.",
+                "Metadata: valokuvien, videoiden ja asiakirjojen piilotettujen tietojen tarkastelu ja poistaminen ennen niiden jakamista.",
+                "Wizard: satunnaisia valitsimia ja generaattoreita: onnenpyörä, noppia, kolikonheitto, nimien arvonta listasta."
+              ]
+            },
+            "Jo olemassa olevissa sovelluksissa työskentelemme asioiden parissa, jotka on listattu niiden \"Mitä se ei vielä osaa\" -sivuilla: esimerkiksi luotettu aikaleima allekirjoituksille, sertifikaatilla allekirjoittaminen Linuxissa ja macOS:ssä sekä oikeinkirjoituksen tarkistus Scribe-sovelluksessa.",
+            "Myös asennusvaihtoehtoja tulee lisää: Microsoft Store ja winget Windowsissa, Flathub ja Snap Linuxissa.",
+            {
+              "note": "Jokaisen version uutiset löytyvät sivupalkin uutispainikkeen alta; Asetukset → Yleiset → Päivitykset tarkistaa uudemman version saatavuuden."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

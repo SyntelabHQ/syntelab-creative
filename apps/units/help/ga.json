@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Tiontú",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Na tiontairí",
+          "body": [
+            "Tiontaíonn Units luachanna idir aonaid tomhais: luach amháin go tapa, nó táblaí iomlána luachanna in aon iarracht amháin. Ríomhtar gach rud ar do ríomhaire.",
+            "Tá na tiontairí i sé roghchlár: Bunriachtanais, Gluaisne agus meicnic, Fuinneamh agus cumhacht, Eolaíoch, Digiteach agus meáin, agus Fisic speisialaithe. Nuair a roghnaíonn tú ceann, osclaítear a thábla.",
+            {
+              "points": [
+                "Osclaítear tiontaire sa chluaisín ina bhfuil tú. Má tá luachanna ina thábla, fiafraítear díot ar dtús: Lean ar aghaidh (caillfear na luachanna), Oscail i gcluaisín nua, nó Cuir ar ceal.",
+                "Le Socruithe → Units → \"Oscail gach tiontaire ina chluaisín féin\", osclaítear gach tiontaire a roghnaíonn tú i gcluaisín nua ina ionad sin.",
+                "Le Comhad → Téigh go Tús, téann tú ar ais go dtí an chéad leathanach de Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Tiontú tapa",
+          "body": [
+            "Tiontaíonn an chéad leathanach de Units, Tiontú tapa, luach amháin ó aonad amháin go haonad eile. Roghnaigh tiontaire, clóscríobh an luach ar an taobh \"Ó\", agus roghnaigh an dá aonad: tá an toradh ar an taobh \"Go\".",
+            {
+              "points": [
+                "Liostaíonn gach taobh aonaid choitianta an tiontaire agus d’aonaid féin, le cuardach orthu. Tá gach aonad i dtábla an tiontaire.",
+                "Malartaíonn an cnaipe idir an dá thaobh an dá aonad.",
+                "Prionálann an leabharmharc in aice le haonad é: tagann aonaid phrionáilte ar dtús sa dá liosta agus i bpainéal na n-aonad sa tábla.",
+                "Cóipeálann an cnaipe sa toradh é; glanann an × an luach.",
+                "Osclaíonn \"Oscail sa tábla\" tábla an tiontaire."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Conas a léitear agus a scríobhtar uimhreacha",
+          "body": [
+            "Is féidir leat uimhreacha a chlóscríobh agus a ghreamú mar a scríobhtar iad i dtíortha éagsúla: tuigtear 1,234.56 agus 1.234,56 araon, chomh maith le spásanna agus uaschamóga idir na mílte, agus 1.5e-3 do chumhacht de dheich.",
+            "Uimhir is féidir a léamh ar dhá bhealach (1,234: míle, nó a haon agus beagán), léitear í mar a scríobhann teanga an chláir uimhreacha, agus deir an líne faoin tábla é sin.",
+            "Scríobhtar toradh le deachúlacha an aonaid a mbaineann sé amach, ní le líon na ndigití a chlóscríobh tú: is ionann 5 cm agus 1.97 in. Taispeánann luach nach nialas é cúpla digit a chiallaíonn rud éigin i gcónaí, mar sin is ionann 1 cm agus 0.00001 km, agus ní 0.000 km riamh.",
+            "Scríobhtar luachanna atá rómhór nó róbheag le léamh d’amharc le cumhacht de dheich, mar 1.6 × 10⁻³⁵. Scríobhann Amharc → Luachanna foircneacha ina n-iomláine iad le gach nialas ina ionad sin.",
+            "Nuair nach bhfuil a leithéid de luach ag aonad (níl deicibeil ar bith ag brú fuaime nialasach), taispeánann an chill dais."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "An tábla",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Rónna agus colúin",
+          "body": [
+            "Is aonad é gach colún agus is luach é gach ró. Stiúrann an chill ina gclóscríobhann tú a ró: taispeánann na colúin eile an luach céanna ina n-aonaid féin. Taispeántar an chill chlóscríofa i gcló trom.",
+            "Coinnítear an rud nach uimhir é agus taispeántar i ndearg é; ní thiontaíonn a ró rud ar bith go dtí go gceartaíonn tú é.",
+            {
+              "points": [
+                "Déchliceáil cill, nó tosaigh ag clóscríobh inti, chun í a chur in eagar. Bogann Enter síos, Tab ar dheis; bogann na saigheadeochracha; fágann Escape an chill mar a bhí.",
+                "Cliceáil an cúinne (#) chun an tábla ar fad a roghnú, uimhir ró chun an ró sin a roghnú, teideal chun a cholún a roghnú. Roghnaíonn Shift+cliceáil raon, cuireann Ctrl+cliceáil cealla leis, agus roghnaíonn tarraingt freisin.",
+                "Téann Home agus End go dtí an chéad cholún agus an colún deireanach den ró; Ctrl+Home go dtí an chéad chill den tábla, Ctrl+End go dtí an ceann deireanach. Téann Ctrl le saighead go himeall an tábla: an chéad ró nó an ró deireanach, an chéad cholún nó an colún deireanach. Bogann Page Up agus Page Down scáileán amháin. Le Shift, leathnaíonn gach ceann acu seo an rogha ina ionad sin.",
+                "Tarraingítear imlíne timpeall ar an taobh amuigh de rogha roinnt ceall; fanann an chill a dtéann an clóscríobh chuici gan scáthú laistigh di.",
+                "Folmhaíonn Delete na rónna roghnaithe.",
+                "Cuireann clóscríobh sa ró deireanach ró nua leis. Níl uasmhéid ag tábla: tá sé chomh fada agus a cheadaíonn cuimhne do ríomhaire (tógann ró 16 bheart, mar sin tógann 100 milliún ró thart ar 1.5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Colúin agus painéal na n-aonad",
+          "body": [
+            "Liostaíonn an painéal in aice leis an tábla aonaid an tiontaire. Ag a bharr tá na haonaid atá sa tábla: cliceáil ceann chun a cholún a bhaint amach. Fúthu sin, gach aonad: cuardaigh de réir ainm nó siombaile, scag de réir grúpa nó de réir \"Coitianta\", agus cliceáil aonad chun é a chur leis mar cholún.",
+            "Prionálann an leabharmharc in aice le haonad é mar cheanán: tagann sé ar dtús sa liosta agus bíonn sé ar dtús in Tiontú tapa.",
+            {
+              "points": [
+                "Roinneann na colúin leithead an tábla go cothrom go dtí nach luíonn a dteidil a thuilleadh; ansin scrollaíonn an tábla i leataobh.",
+                "Tarraing imeall teidil chun leithead a cholúin a athrú; déchliceáil an t-imeall chun an colún a chur in oiriúint dá luach is faide. Is féidir colún uimhreacha na rónna a tharraingt freisin.",
+                "Cnaipe ⋮ colúin: bog ar chlé nó ar dheis é, prionáil den imeall clé nó deas é, athraigh a bheachtas, nó bain é.",
+                "Ní athraíonn beachtas colúin ach an colún sin. Déanann \"Úsáid don aonad seo i gach áit\" beachtas an aonaid de, i ngach tábla agus in Tiontú tapa.",
+                "Cuireann an cnaipe le dhá shaighead in aice le Cealaigh agus Athdhéan na colúin in oiriúint don tábla: imíonn gach leithead a tharraing tú nó a chuir tú in oiriúint, agus roinneann na colúin leithead an tábla arís.",
+                "Filltear an dá chuid uachtaracha den phainéal, na haonaid sa tábla agus \"Cuir aonaid leis\" (an cuardach agus na scagairí), le cliceáil ar a n-ainmneacha, ionas go mbeidh níos mó spáis ag an liosta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Cealaigh, cóipeáil, greamaigh, iompórtáil agus easpórtáil",
+          "body": [
+            "Tá uirlisí an tábla sa bharra os a chionn.",
+            {
+              "points": [
+                "Téann Cealaigh agus Athdhéan (Ctrl+Z, Ctrl+Y) trí gach athrú ar an tábla. Is céim amháin é greamú nó iompórtáil.",
+                "Cóipeálann Cóipeáil (Ctrl+C) an tábla ar fad nó an rogha, mar a léann scarbhileog é. Iompaíonn \"Trasuite\" rónna ina gcolúin.",
+                "Cuireann Greamaigh (Ctrl+V) rónna cóipeáilte sa tábla ón gcill ghníomhach síos. Má tá teidil aonad sa chéad ró, meaitseáiltear na colúin leo, agus cuirtear leis aonaid nach bhfuil sa tábla fós.",
+                "Léann Iompórtáil leabhar oibre Excel, comhad CSV nó comhad TSV in áit an ábhair atá sa tábla. Aithníonn \"Aimsigh an fhormáid go huathoibríoch\" an cineál ón gcomhad.",
+                "Scríobhann Easpórtáil an tábla mar Excel, CSV, TSV nó JSON. Le camóg roimh na deachúlacha, scríobhtar CSV le leathstadanna, mar a bhíonn scarbhileoga ag súil leis. Coinníonn bileog Excel 1,048,576 ró: leanann tábla níos faide ar aghaidh ar na bileoga eile den leabhar oibre céanna, faoi na teidil chéanna.",
+                "Folmhaíonn an scriosán na rónna roghnaithe; folmhaíonn an bosca bruscair an tábla ar fad."
+              ]
+            },
+            "Coinníonn ró luach amháin. As ró greamaithe nó iompórtáilte a bhfuil roinnt luachanna ann, glactar leis an gcéad cheann agus ríomhtar na cinn eile uaidh.",
+            "Tógann sé tamall a lán rónna a ghreamú, a iompórtáil, a easpórtáil nó a chóipeáil. Taispeánann cárta os cionn an tábla ansin cé chomh fada is atá an obair, mar chéatadán agus i rónna, le cnaipe Stad. Fágann greamú nó iompórtáil a stoptar an tábla mar a bhí; ní scríobhann easpórtáil a stoptar aon chomhad.",
+            "Nuair nach bhfuil cuimhne fágtha ag an ríomhaire do na rónna, ní athraítear rud ar bith agus deir an líne faoin tábla cé mhéad a bhí de dhíth. Nuair a luíonn na rónna ach nach féidir an tábla mar a bhí a choinneáil lena dtaobh, fiafraítear díot ar mhaith leat leanúint ar aghaidh gan cealú: ansin ní féidir an t-athrú sin, ná na cinn roimhe, a chur ar ceal níos mó. Sula bhfiafraítear, scaoiltear na céimeanna is sine de Cealaigh chun spás a dhéanamh.",
+            "Roghanna tábla (an giar): cad a deir teideal colúin (ainm agus siombail, ainm, nó siombail), an gcuimsíonn cóipeanna agus easpórtálacha na teidil agus uimhreacha na rónna, \"Tosaigh an tiontaire seo leis na colúin seo\", agus \"Athshocraigh an tábla\"."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tiontairí speisialta",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Airgeadra",
+          "body": [
+            "Níl fachtóir seasta ag airgeadraí: athraíonn a luach. Léann an tiontaire airgeadra a rátaí ó dhá sheirbhís saor in aisce fad a úsáideann tú é, agus an t-am sin amháin.",
+            {
+              "points": [
+                "Airgeadraí tíortha: Rates By Exchange Rate API, https://www.exchangerate-api.com . Athraíonn siad uair sa lá ag a bhfoinse, agus ní léitear iad níos minice ná sin.",
+                "Criptea-airgeadraí: Powered by CoinGecko, https://www.coingecko.com . Léitear iad nuair a osclaítear an tiontaire nó nuair a thagann sé chun tosaigh arís agus nuair atá a bhfuil aige níos sine ná ceathrú uaire, agus nuair a bhrúnn tú Athnuaigh; riamh de réir amadóra."
+              ]
+            },
+            "Ní iarrtar ach na rátaí. Ní sheoltar rud ar bith fútsa, agus riamh na méideanna a thiontaíonn tú.",
+            "Deir an líne faoin tábla, agus faoi thoradh Tiontú tapa, cén uair as a bhfuil na rátaí. Gan nasc, úsáidtear na rátaí deireanacha agus marcáiltear iad mar shean. Taispeánann airgeadra nach dtugann na seirbhísí ráta dó dais.",
+            "Socruithe → Units → Airgeadra: is féidir \"Léigh na rátaí ón líonra\" a mhúchadh, agus ansin úsáideann an tiontaire na rátaí deireanacha a choinnigh sé. Taispeánann nó folaíonn \"Ainmnigh na foinsí in aice leis na rátaí\" ainmneacha an dá sheirbhís ar an líne sin.",
+            "Is le haghaidh eolais atá na rátaí. Ná bí ag brath orthu le haghaidh idirbhirt."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Bun uimhire",
+          "body": [
+            "Is bealaí chun slánuimhir a scríobh iad aonaid an tiontaire seo: bunanna ó 2 go 64, uimhreacha Rómhánacha, bonn 60 le idirstadanna (1:30:15), deachúlach códaithe go dénártha agus cód Gray. Is téacs iad a luachanna: clóscríobh FF faoi heicsidheachúlach agus taispeánann na colúin eile 255, 11111111 agus mar sin de.",
+            "Téann uimhreacha Rómhánacha ó I go MMMCMXCIX (1 go 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Aonaid nach fachtóir simplí iad",
+          "body": [
+            "Is fachtóir d’aonad eile iad formhór na n-aonad. Ní amhlaidh do chuid acu, agus tiontaíonn Units iad mar a shainítear iad: teochtaí lena bhfritháireamh; barainneacht breosla (lítir sa 100 km in aghaidh mílte sa ghalún); tonnfhad in aghaidh minicíochta; seoltas in aghaidh friotaíochta; céimeanna Baumé, API, Brix agus Plato in aghaidh dlúis; deicibeil in aghaidh brú agus déine fuaime; fána mar chéatadán in aghaidh a huillinne.",
+            "Ní hionann teocht agus difríocht teochta: is ionann 100 °C agus 212 °F, ach is ionann difríocht 100 °C agus difríocht 180 °F. Tiontaíonn aonaid an ghrúpa \"Difríocht (Δ)\" eatarthu féin; idir iad agus na scálaí teochta taispeánann cill dais."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "D’aonaid féin",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Aonad a dhéanamh",
+          "body": [
+            "Is féidir leat d’aonaid féin a chur le haon tiontaire. I bpainéal na n-aonad, roghnaigh \"Aonad nua\", tabhair ainm agus siombail dó, agus sainigh é le haonad atá ann cheana.",
+            {
+              "points": [
+                "Fachtóir: \"1 coiscéim = 0.75 m\". Do scála nach dtosaíonn ag nialas, freisin an méid a chuirtear leis tar éis iolrú.",
+                "Foirmle: conas a éiríonn an luach ina aonad eile, le x don luach, agus an fhoirmle don bhealach ar ais. Mar shampla x * 9 / 5 + 32 agus (x - 32) * 5 / 9."
+              ]
+            },
+            "Triailtear an méid a chlóscríobhann tú fad atá tú á chlóscríobh, agus taispeántar cé mhéad is fiú aonad amháin de do chuid sula gcoinníonn tú é. Is féidir le foirmle + − × ÷ ^, lúibíní, x, pi, e, agus na feidhmeanna sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos agus atan a úsáid. Ríomhtar í; ní ritear riamh í mar chlár.",
+            "Liostaítear d’aonaid faoi \"Mo chuid féin\" sa phainéal, áit ar féidir iad a athrú agus a bhaint. Is féidir aonad de do chuid a shainiú le haonad eile de do chuid; nuair a bhaintear aonad, baintear na haonaid a shainítear leis.",
+            "Liostaíonn Socruithe → Units d’aonaid i ngach tiontaire, agus easpórtálann agus iompórtálann sé iad mar théacs is féidir leat a choinneáil nó a aistriú chuig ríomhaire eile."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Socruithe",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Socruithe Units",
+          "body": [
+            "Osclaíonn Comhad → Oscail Socruithe socruithe Units; déanann roghanna an tábla (an giar ina bharra) an rud céanna.",
+            {
+              "points": [
+                "Oscail gach tiontaire ina chluaisín féin, nó sa chluaisín ina bhfuil tú.",
+                "Luachanna foircneacha ina n-iomláine, an rud a scríobhtar idir na mílte (10000.000, 10 000.000 nó 10,000.000; faic, mura roghnaíonn tú a mhalairt), agus uimhreacha na rónna.",
+                "Airgeadra: an léitear na rátaí ón líonra, agus an ainmnítear na seirbhísí lena dtaobh.",
+                "Beachtas na n-aonad: roghnaigh tiontaire (nó \"Aonaid a d’athraigh tú\"), cuardaigh aonad, agus socraigh a dheachúlacha le − agus +; tugann an tsaighead ar ais é go dtí beachtas an aonaid féin. Socraíonn \"Úsáid don aonad seo i gach áit\" i roghchlár colúin an luach céanna.",
+                "Aonaid a dtosaíonn tábla leo: na tiontairí ar roghnaigh tú a gcéad cholúin, gach ceann acu le bealach ar ais chuig na colúin a thagann leis.",
+                "D’aonaid féin."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Faoi Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Faoi Units",
+          "body": [
+            "Is é Units aip tiontaithe Syntelab Creative: 38 tiontaire le níos mó ná 1,500 aonad, ó fhad agus teocht go hairgeadraí agus bunanna uimhreacha. Taispeántar luach a chlóscríobhtar uair amháin i ngach aonad a iarrann tú, i dtábla a ghlacann le luach amháin nó leis na milliúin acu.",
+            "Ríomhtar uimhreacha go beacht, mar chodáin, agus ní shlánaítear iad ach nuair a scríobhtar iad. Déantar gach rud ar an ríomhaire seo; ní léitear ón líonra ach rátaí airgeadra, agus is féidir é sin a mhúchadh.",
+            "Tá sé nua. Nuair nach leor é do do chuid oibre, inis dúinn trí Cabhair → Aiseolas: sin mar a bhíonn a fhios againn cad air a n-oibreoimid."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Cé mhéad ró a choinníonn tábla: an rud a thomhaiseamar",
+          "body": [
+            "Níl teorainn sheasta rónna ag tábla: tá sé chomh fada agus a cheadaíonn cuimhne do ríomhaire. Tógann ró 16 bheart, mar sin tógann 100 milliún ró thart ar 1.5 GB. Nuair a ritheann an chuimhne amach, fanann an tábla mar a bhí agus deir an clár cé mhéad a bhí de dhíth.",
+            "Thomhaiseamar é le 50,000,000 ró, uimhir i gcolún amháin i ngach ceann, i leagan optamaithe an chláir:",
+            {
+              "points": [
+                "50,000,000 ró a ghreamú: thart ar 7 soicind.",
+                "Iad a iompórtáil ó chomhad CSV: 12 shoicind.",
+                "Iad a easpórtáil chuig comhad CSV, le dara colún tiontaithe: thart ar 3.5 nóiméad.",
+                "Iad a easpórtáil chuig Excel, ar 48 mbileog: 4.3 nóiméad."
+              ]
+            },
+            "Tógann sé níos faide dul amach ná teacht isteach mar go dtiontaítear gach cill a scríobhtar go beacht ar dtús.",
+            {
+              "note": "An ríomhaire ar ar ritheadh an tástáil: AMD Ryzen 9 9950X3D (16 chroí, 32 snáithe), 64 GB cuimhne, Windows 11 Pro. Deireadh Fómhair 2026. Ar ríomhaire eile beidh na hamanna difriúil; ní bheidh méid an ró."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Cad as a ndéantar Units",
+          "body": [
+            {
+              "points": [
+                "Uimhreacha beachta: leabharlanna num Rust (codáin de shlánuimhreacha d’aon mhéid).",
+                "Na haonaid, a bhfachtóirí agus a ngrúpaí: comhaid sonraí an chláir, ceann do gach tiontaire.",
+                "Leabhair oibre Excel agus OpenDocument a léamh: calamine. Leabhair oibre Excel a scríobh: rust_xlsxwriter.",
+                "Gearrthaisce an chórais, do chóipeanna agus greamuithe a lán rónna: arboard.",
+                "Rátaí airgeadra: ExchangeRate-API agus CoinGecko (féach \"Airgeadra\")."
+              ]
+            },
+            "Tá an méid a roinneann sé leis an gcuid eile den chlár faoi \"Faoi Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "An rud nach féidir le Units a dhéanamh fós",
+          "body": [
+            {
+              "points": [
+                "Coinníonn ró luach amháin: as ró greamaithe le roinnt luachanna, glactar leis an gcéad cheann.",
+                "Bíonn easpórtáil a lán rónna mall (féach an rud a thomhaiseamar).",
+                "Coinnítear an méid a chóipeáiltear chuig an ngearrthaisce i gcuimhne mar théacs amháin sula ngreamaítear é.",
+                "Níl rátaí airgeadra níos úire ná mar a thugann a dhá bhfoinse iad: uair sa lá d’airgeadraí tíortha."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Ag tosú",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Cad is Syntelab Creative ann",
+          "body": [
+            "Is clár amháin é Syntelab Creative atá déanta as aipeanna. Déanann gach aip cineál amháin oibre:",
+            {
+              "points": [
+                "Léann, eagraíonn, cuireann in eagar agus síníonn PDF Organizer doiciméid PDF.",
+                "Is eagarthóir téacs é Scribe le huirlisí a ghlanann, a shórtálann, a chuireann i gcomparáid agus a athraíonn téacs.",
+                "Tiontaíonn Units idir aonaid: fad, teocht, airgeadraí agus go leor eile.",
+                "Bailíonn Dev uirlisí d’fhorbróirí: ionchódú agus díchódú, formáidiú agus seiceáil, foirm amháin sonraí a iompú ina foirm eile."
+              ]
+            },
+            "Roinneann na haipeanna fuinneog amháin, sraith amháin socruithe agus bealach amháin oibre, mar sin is ionann a bhfoghlaimíonn tú in aip amháin agus sa chéad cheann eile.",
+            {
+              "note": "Tarlaíonn gach rud ar do ríomhaire. Ní sheoltar do dhoiciméid áit ar bith, agus ní bhailítear aon rud fút féin ná faoi d’obair."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "An fhuinneog",
+          "body": [
+            {
+              "points": [
+                "An barra ar an taobh: tugann an teach go Tús thú, ansin tagann d’aipeanna, agus ag an mbun nuacht an chláir, Aiseolas, Tacaíocht agus Socruithe.",
+                "In aip, téann Comhad → Téigh go Tús go dtí an chéad leathanach den aip sin má tá ceann aici (Units, Scribe), agus osclaíonn Comhad → Oscail Socruithe (Ctrl+,) Socruithe ag cuid na haipe sin féin; níl na codanna eile ach cliceáil amháin uait ansin.",
+                "Na cluaisíní ag an mbarr: tá a chluaisín féin ag gach doiciméad, ceanglóir nó uirlis a osclaíonn tú. Ciallaíonn ponc ar chluaisín go bhfuil athruithe air nach bhfuil sábháilte.",
+                "Roghchláir na haipe, faoi na cluaisíní: mar bharra roghchláir, mar ribín nó mar phainéal ar an taobh, cibé ceann a roghnaigh tú.",
+                "Is é an cluaisín chun tosaigh an chuid eile den fhuinneog."
+              ]
+            },
+            "Má dhúnann tú cluaisín a bhfuil athruithe gan sábháil air, fiafraítear díot ar dtús; mar an gcéanna nuair a dhúnann tú an clár."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Tús",
+          "body": [
+            "Taispeánann Tús d’aipeanna agus na comhaid a d’oscail tú le déanaí. Cliceáil ar aip chun í a oscailt; cliceáil ar chomhad le déanaí chun é a oscailt arís.",
+            "Is féidir na haipeanna a thaispeáint mar chártaí, mar dheilbhíní le hainmneacha nó mar dheilbhíní amháin, agus iad a tharraingt san ord is maith leat. Leis an méarchlár: Alt agus na heochracha saighde. Cuireann \"Athshocraigh go dtí an réamhshocrú\" ar ais iad.",
+            "Tá a haicearra féin ag gach aip i roghchlár Tosaigh Windows freisin, mar shampla \"Syntelab PDF Organizer\" nó \"Syntelab Units\": osclaíonn sé an clár díreach san aip sin. Má tá an clár oscailte cheana, osclaítear an aip ann mar chluaisín."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Comhaid a oscailt",
+          "body": [
+            {
+              "points": [
+                "Ó aip: Comhad → Oscail, nó Ctrl+O.",
+                "Trí chomhaid a scaoileadh ó fhillteán ar an bhfuinneog.",
+                "Ó bhainisteoir comhad do chórais: cliceáil faoi dhó ar chomhad atá socraithe le hoscailt sa chlár. In Windows Explorer tá an roghchlár deaschliceála ann freisin (féach \"Roghchlár deaschliceála Windows Explorer\").",
+                "Ó Thús: liosta na gcomhad le déanaí."
+              ]
+            },
+            "Ritheann an clár mar chóip amháin. Má osclaítear comhad ón mbainisteoir comhad agus an clár ag rith, osclaítear é mar chluaisín nua san fhuinneog chéanna."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "É a chur in oiriúint duit",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Leagan amach: barra roghchláir, ribín nó painéal taoibh",
+          "body": [
+            "Is féidir orduithe aipe a thaispeáint ar thrí bhealach. Is iad na horduithe céanna iad; níl difear ach san áit a bhfuil siad.",
+            {
+              "points": [
+                "Clasaiceach: barra roghchláir agus barra uirlisí.",
+                "Ribín: cnaipí móra i ngrúpaí ainmnithe, cluaisín amháin do gach roghchlár. Is féidir é a laghdú chun níos mó spáis a fhágáil don doiciméad.",
+                "Painéal taoibh: na huirlisí i bpainéal ar chlé nó ar dheis, ar féidir é a laghdú go deilbhíní."
+              ]
+            },
+            "Roghnaigh leagan amach gach aipe i Socruithe → Ginearálta → Leagan amach. Is féidir leagan amach dá cuid féin a bheith ag aip, roghnaithe ina cuid féin de Shocruithe nó óna roghchlár Amharc; ní leanann sí an leagan amach ginearálta ansin go dtí go roghnaíonn tú \"Úsáid an leagan amach ginearálta\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Téama",
+          "body": [
+            "Socruithe → Ginearálta → Téama: Geal, Dorcha, Liath éadrom, Liath dorcha, nó Uathoibríoch, a leanann socrú geal nó dorcha an chórais.",
+            "Ní athraíonn an téama dath leathanach doiciméid riamh: fanann an páipéar mar atá sé."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Teanga",
+          "body": [
+            "Socruithe → Ginearálta → Teanga. Labhraíonn an clár 62 teanga. Leanann \"Teanga an chórais\" teanga do chórais. Is féidir an liosta a chuardach de réir ainm na teanga ina teanga féin, a hainm i do theanga féin nó a hainm Béarla.",
+            "Taispeántar téacs nach bhfuil aistrithe fós i mBéarla, riamh mar chód."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Cluaisíní",
+          "body": [
+            {
+              "points": [
+                "\"Coinnigh an cluaisín Tús i measc na gcluaisíní\": nuair atá sé múchta, ní thaispeántar an cluaisín Tús ach fad atá Tús féin chun tosaigh; tugann an teach ar an mbarra taoibh ar ais chuige thú i gcónaí.",
+                "Is féidir gurb é deilbhín a aipe an marc ar chluaisín, nó cearnóg shimplí i ndath na haipe."
+              ]
+            },
+            "Nuair atá níos mó cluaisíní ann ná mar a fheileann, scrollaíonn na saigheada ag foircinn an stiall é, agus liostaíonn \"Tuilleadh cluaisíní\" iad go léir."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Do bhealach a aimsiú",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Ordú a chuardach",
+          "body": [
+            "Aimsíonn an bosca cuardaigh (\"Cuardaigh aipeanna, uirlisí agus orduithe\") aon ordú den chluaisín chun tosaigh de réir a ainm, i do theanga féin nó i mBéarla. Roghnaigh toradh chun é a rith.",
+            "Taispeántar orduithe atá beartaithe ach nach bhfuil scríofa fós liathaithe sna roghchláir agus fágtar as an gcuardach iad."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Aicearraí méarchláir",
+          "body": [
+            "Scríobhtar eochracha ordaithe in aice lena ainm sna roghchláir agus ina leid uirlise. Na cinn is mó a úsáidtear:",
+            {
+              "points": [
+                "Ctrl+O: oscail comhad",
+                "Ctrl+S: sábháil; Ctrl+Shift+S: sábháil mar",
+                "Ctrl+P: priontáil",
+                "Ctrl+Z agus Ctrl+Y: cealaigh agus athdhéan",
+                "Ctrl+F: aimsigh sa doiciméad",
+                "Ctrl+W: dún an cluaisín",
+                "Ctrl+Tab agus Ctrl+Shift+Tab: an chéad chluaisín eile agus an ceann roimhe",
+                "Ctrl+, (camóg): Socruithe",
+                "F1: an Chabhair seo",
+                "Escape: fág an lánscáileán nó an mód léitheoireachta, nó leag uait an uirlis atá i do lámh"
+              ]
+            },
+            "Athraítear eochracha orduithe an chláir féin (cluaisíní, Socruithe, Cabhair) i Socruithe → Ginearálta → Aicearraí méarchláir; eochracha orduithe aipe ina cuid féin de Shocruithe. Cliceáil ar eochracha ordaithe, ansin brúigh na cinn nua."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "An Chabhair seo a úsáid",
+          "body": [
+            "Baineann Cabhair leis an áit as a n-osclaíonn tú í. Ó aip ní fheiceann tú ach lámhleabhar na haipe sin agus orduithe an chluaisín as a dtáinig tú. Ón leathanach tosaigh nó ó Shocruithe feiceann tú \"Faoi\" (an clár agus gach aip, go hachomair) agus lámhleabhar an chláir. Tugann Cabhair → Faoi go \"Faoi\" i gcónaí.",
+            "Tá an clár ábhair ar chlé; cuardaíonn an cuardach os a chionn trí gach ábhar, sna teidil agus sa téacs.",
+            "Osclaítear Cabhair ina cluaisín féin, ionas gur féidir leat dul anonn is anall idir í agus d’obair; tugann F1 chun tosaigh arís í. Faoi \"Orduithe an chluaisín as a dtáinig tú\" liostaítear gach roghchlár den chluaisín sin le gach ordú atá ann, a eochracha agus a fheidhm: oscail Cabhair ón gcluaisín a bhfuil ceist agat faoi."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Roghchlár deaschliceála Windows Explorer",
+          "body": [
+            "Cuireann Socruithe → Ginearálta → Windows Explorer → \"Taispeáin Syntelab Creative sa roghchlár deaschliceála do chomhaid agus d’fhillteáin\" iontrálacha leis do na comhaid a léann an clár: \"Tiontaigh go PDF le PDF Organizer\" agus \"Cumaisc comhaid in PDF Organizer\", gach ceann acu le deilbhín PDF Organizer, agus \"Syntelab Dev\", a osclaíonn ar an taobh le Suimeanna seiceála, Cuir i gcomparáid agus Amharc heics.",
+            "Cuirtear leis iad do d’úsáideoir féin amháin, gan cearta riarthóra, agus baintear iad nuair a mhúchtar an lasc. Ar Windows 11 tá siad faoi \"Taispeáin tuilleadh roghanna\". Tosaíonn siad an clár suiteáilte i gcónaí: má bogadh é nó má athshuiteáladh é in áit eile, cuireann sé ina gceart iad nuair a thosaíonn sé.",
+            {
+              "note": "Má roghnaíonn tú \"Cumaisc comhaid in PDF Organizer\" ar roinnt comhad, osclaítear ceanglóir leo; osclaíonn \"Tiontaigh go PDF le PDF Organizer\" próiseáil bhaisc leo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Príobháideachas, nuashonruithe agus teagmháil",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Cad a théann ar líne, agus cad nach dtéann riamh",
+          "body": [
+            "Ní bhailíonn an clár aon rud: gan sonraí úsáide, gan ainmneacha comhad, gan tuairiscí tuairteála a sheoltar uathu féin.",
+            "Ní théann sé ar líne ach sna cásanna seo, gach ceann acu iarrtha agat féin:",
+            {
+              "points": [
+                "Nuashonruithe agus nuacht a lorg (dhá chomhad bheaga léite ó syntelab.com), nuair a iarrann tú é nó, má cheadaigh tú é, nuair a thosaíonn an clár; agus leagan nua a íoslódáil, ach amháin nuair a bhrúnn tú \"Nuashonraigh\".",
+                "Leathanach gréasáin a shábháil mar PDF (PDF Organizer) agus téacs leathanaigh ghréasáin a thabhairt isteach (Scribe), ón seoladh a chlóscríobh tú.",
+                "Nasc i ndoiciméad a gcliceálann tú air: tugtar do do bhrabhsálaí nó do do chlár ríomhphoist é.",
+                "Aiseolas agus Tacaíocht: osclaíonn siad leathanach de chuid syntelab.com i do bhrabhsálaí."
+              ]
+            },
+            "Déantar síniú le teastas agus seiceáil sínithe ar do ríomhaire, gan dul ar líne."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Nuashonruithe",
+          "body": [
+            "Socruithe → Ginearálta → Nuashonruithe → \"Lorg nuashonruithe\". Nuair atá leagan níos nuaí ann, insíonn fuinneog duit cad atá nua agus tairgeann sí \"Nuashonraigh\".",
+            "Íoslódálann \"Nuashonraigh\" an leagan nua, seiceálann sé gur uainne a tháinig sé i ndáiríre (caithfidh sé a bheith sínithe lenár n-eochair; diúltaítear d’aon rud eile) agus suiteálann sé é os cionn an leagain seo. Coinnítear do shocruithe agus atosaíonn an clár. Ní íoslódáiltear aon rud go dtí go mbrúnn tú é.",
+            "Mura féidir an nuashonrú a shuiteáil ar an mbealach seo (cóip iniompartha, pacáiste Linux, gan líonra), osclaíonn \"Íoslódáil\" an leathanach íoslódála i do bhrabhsálaí; suiteáil an leagan nua os cionn an leagain seo agus coinneofar do shocruithe.",
+            "Is féidir \"Lorg nuashonruithe agus nuacht nuair a thosaíonn an clár\" a mhúchadh; ní sheoltar aon rud fút féin ná faoi do ríomhaire cibé acu."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Aiseolas agus tacaíocht",
+          "body": [
+            "Cabhair → Aiseolas: iarr aip nua, gné nua nó athrú, nó tuairiscigh fadhb. Léitear gach teachtaireacht.",
+            "Cabhair → Tacaíocht: tá an clár saor in aisce; seo an áit ar féidir leat cabhrú leis leanúint ar aghaidh."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Faoi Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Faoi Syntelab Creative",
+          "body": [
+            "Is sraith aipeanna saor in aisce é Syntelab Creative don obair laethúil le doiciméid, téacs agus sonraí, déanta ag Syntelab (syntelab.com). Tosaíonn sé le ceithre aip: PDF Organizer, Scribe, Units agus Dev. Tiocfaidh cinn eile leo san fhuinneog chéanna.",
+            {
+              "points": [
+                "Saor in aisce i gcónaí.",
+                "Gan sonraí á mbailiú: faic fút féin, faoi do ríomhaire ná faoi d’obair.",
+                "Faic coinnithe siar: gan leagan íoctha, gan ghné faoi ghlas, gan teorainn curtha ann d’aon ghnó. Is iad na teorainneacha amháin an méid is féidir le teicneolaíocht an lae inniu a dhéanamh agus an méid is féidir le do ríomhaire a iompar."
+              ]
+            },
+            "Níl aon mhaoiniú againn. Déantar an clár inár gcuid ama saor, chomh fada agus a cheadaíonn an t-am sin. Tá sé ar intinn againn go hiomlán bogearraí ar ardchaighdeán a dhéanamh, agus tógann sé sin am agus foighne: ár gcuid ama chun é a thógáil, agus d’fhoighne féin fad atá sé ag fás.",
+            "Beidh sé níos fearr le gach leagan. Ceartaítear fadhbanna a thuairiscítear, agus meastar gnéithe a iarrtar don chéad rud eile.",
+            {
+              "note": "Fanann do dhoiciméid ar do ríomhaire. Ní bhailíonn an clár aon rud fút féin ná faoi d’obair; féach \"Cad a théann ar líne, agus cad nach dtéann riamh\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Conas is féidir leat cabhrú",
+          "body": [
+            "Tá trí bhealach ann, agus is fiú gach ceann acu:",
+            {
+              "points": [
+                "Inis dúinn cad a cheapann tú: Cabhair → Aiseolas. Fadhb a tháinig romhat, rud atá in easnamh, rud atá níos deacra ná mar ba chóir. Léimid gach teachtaireacht.",
+                "Inis do dhaoine eile faoin gclár agus faoina ndéanaimid. Má úsáideann níos mó daoine é, bíonn níos mó aiseolais ann, agus sin mar a fheicimid cad atá tábhachtach i ndáiríre. Cuireann sé in iúl dúinn freisin go bhfuil meas ar ár gcuid oibre: ár gcuid féin, agus obair gach duine a ghlacann páirt sa tionscadal agus a ghlacfaidh páirt ann.",
+                "Tacaigh leis le hairgead, más féidir leat: Cabhair → Tacaigh linn. Ceannaíonn sé am dúinn chun obair air."
+              ]
+            },
+            "Ní iarrtar aon chuid de seo ort. Tá an clár saor in aisce agus beidh sé saor in aisce i gcónaí, iomlán, do chách."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Cad as a ndéantar é",
+          "body": [
+            "Seasann an clár ar obair go leor daoine. An méid a roinneann gach aip:",
+            {
+              "points": [
+                "An fhuinneog agus gach a bhfeiceann tú: Tauri, le hamharc gréasáin an chórais (WebView2 ar Windows, WebKitGTK ar Linux, WKWebView ar macOS); scríofa in TypeScript le React.",
+                "An chuid a dhéanann an obair: scríofa in Rust.",
+                "Litreacha agus deilbhíní: Sansation, IBM Plex Sans agus Font Awesome Free."
+              ]
+            },
+            "Luaitear an méid a chuireann gach aip leis ar a leathanach féin faoi \"Faoi\". Táimid buíoch de na daoine atá taobh thiar de na tionscadail seo."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Cad nach féidir leis a dhéanamh fós",
+          "body": [
+            "Ionas go mbeidh a fhios agat sula mbraitheann tú air:",
+            {
+              "points": [
+                "Tá roinnt téacsanna fós ag fanacht lena n-aistriúchán. Go dtí sin taispeántar i mBéarla iad, riamh mar chód.",
+                "Níl roghchlár deaschliceála an bhainisteora comhad ar fáil ach in Windows Explorer faoi láthair.",
+                "Oibríonn síniú le teastas ar Windows faoi láthair; tiocfaidh sé ar Linux agus macOS i leagan níos déanaí."
+              ]
+            },
+            "Tá teorainneacha gach aipe ar a leathanach féin faoi \"Faoi\". Má tá ceann acu sa bhealach ort, inis dúinn trí Cabhair → Aiseolas: cabhraíonn sé linn cinneadh a dhéanamh faoi cad a thiocfaidh ar dtús."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Cad air a bhfuilimid ag obair",
+          "body": [
+            "Leanfaidh na ceithre aip ag fás: socraíonn a dtuairiscíonn tú agus a n-iarrann tú trí Cabhair → Aiseolas cuid mhór de cad a thiocfaidh ar dtús. Taobh leo, tá aipeanna nua á n-ullmhú. Ní thaispeánann Tús iad mura dteastaíonn sin uait: cuir tic leo ina roghchlár \"Amharc\" chun iad a fheiceáil ansin mar \"Ag teacht go luath\":",
+            {
+              "points": [
+                "Convert: comhaid a thiontú ó fhormáid amháin go formáid eile, ina measc doiciméid oifige go PDF agus ar ais, gan gá le clár eile a shuiteáil. Níor aimsíomar fós teicneolaíocht oscailte a shroicheann an caighdeán atá uainn, mar sin ní thiocfaidh sé go dtí nach gcuirfidh sé díomá ort; san áit nach bhfuil na huirlisí ann, tógfaimid iad.",
+                "Pixel: uirlisí le haghaidh íomhánna, mar athrú méide agus comhbhrú, cúlra a bhaint, dathanna agus cóid QR.",
+                "Metadata: sonraí folaithe grianghraf, físeán agus doiciméad a fheiceáil agus a bhaint, sula roinneann tú iad.",
+                "Wizard: roghnóirí agus gineadóirí randamacha: roth le casadh, díslí, bonn, ainmneacha tarraingthe as liosta."
+              ]
+            },
+            "Sna haipeanna atá anseo cheana táimid ag obair ar a bhfuil liostaithe ar a leathanaigh \"Cad nach féidir leis a dhéanamh fós\": mar shampla stampa ama iontaofa do shínithe, síniú le teastas ar Linux agus macOS, agus seiceálaí litrithe in Scribe.",
+            "Tiocfaidh tuilleadh roghanna suiteála freisin: Microsoft Store agus winget ar Windows, Flathub agus Snap ar Linux.",
+            {
+              "note": "Tá nuacht gach leagain faoin gcnaipe nuachta ar an mbarra taoibh; seiceálann Socruithe → Ginearálta → Nuashonruithe an bhfuil leagan níos nuaí ann."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

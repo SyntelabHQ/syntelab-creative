@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Getting started",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "What Syntelab Creative is",
+          "body": [
+            "Syntelab Creative is one program made of apps. Each app does one kind of work:",
+            {
+              "points": [
+                "PDF Organizer reads, arranges, edits and signs PDF documents.",
+                "Scribe is a text editor with tools that clean, sort, compare and transform text.",
+                "Units converts between units: length, temperature, currencies and many more.",
+                "Dev gathers tools for developers: encode and decode, format and check, turn one form of data into another."
+              ]
+            },
+            "The apps share one window, one set of settings and one way of working, so what you learn in one is the same in the next.",
+            {
+              "note": "Everything happens on your computer. Your documents are never sent anywhere, and nothing about you or your work is collected."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "The window",
+          "body": [
+            {
+              "points": [
+                "The bar on the side: the house leads to Start, then come your apps, and at the bottom the news of the program, Feedback, Support and Settings.",
+                "In an app, File → Go to Start goes to the first page of that app where it has one (Units, Scribe), and File → Open Settings (Ctrl+,) opens Settings at that app's own part; the other parts are a click away there.",
+                "The tabs at the top: every document, binder or tool you open has a tab of its own. A dot on a tab says it has changes that are not saved.",
+                "The menus of the app, under the tabs: as a menu bar, as a ribbon or as a panel on the side, whichever you chose.",
+                "The rest of the window is the tab in front."
+              ]
+            },
+            "Closing a tab that has unsaved changes asks first; so does closing the program."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Start",
+          "body": [
+            "Start shows your apps and the files you opened lately. Click an app to open it; click a recent file to open it again.",
+            "The apps can be shown as cards, as icons with names or as icons only, and dragged into the order you like. With the keyboard: Alt and the arrow keys. \"Reset to default\" puts them back.",
+            "Each app also has its own shortcut in the Start menu of Windows, such as \"Syntelab PDF Organizer\" or \"Syntelab Units\": it opens the program right in that app. If the program is already open, the app opens in it as a tab."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Opening files",
+          "body": [
+            {
+              "points": [
+                "From an app: File → Open, or Ctrl+O.",
+                "By dropping files from a folder onto the window.",
+                "From the file manager of your system: double-click a file the program is set to open. In Windows Explorer there is also the right-click menu (see \"The right-click menu of Windows Explorer\").",
+                "From Start: the list of recent files."
+              ]
+            },
+            "The program runs as one copy. A file opened from the file manager while the program is running opens as a new tab in the same window."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Making it yours",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Layout: menu bar, ribbon or side panel",
+          "body": [
+            "The commands of an app can be shown in three ways. They are the same commands; only where they are differs.",
+            {
+              "points": [
+                "Classic: a menu bar and a toolbar.",
+                "Ribbon: large buttons in named groups, one tab for each menu. It can be collapsed to leave more room for the document.",
+                "Side panel: the tools in a panel on the left or on the right, which can be collapsed to icons."
+              ]
+            },
+            "Choose the layout of every app in Settings → General → Layout. An app can have a layout of its own, chosen in its part of Settings or from its View menu; it then no longer follows the general one until you choose \"Use the general layout\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Theme",
+          "body": [
+            "Settings → General → Theme: Light, Dark, Light gray, Dark gray, or Automatic, which follows the light or dark setting of the system.",
+            "The pages of a document are never recoloured by the theme: paper stays as it is."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Language",
+          "body": [
+            "Settings → General → Language. The program speaks 62 languages. \"System language\" follows the language of your system. The list can be searched by a language's own name, its name in your language or its English name.",
+            "A text that is not translated yet is shown in English, never as a code."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Tabs",
+          "body": [
+            {
+              "points": [
+                "\"Keep the Start tab among the tabs\": when off, the Start tab shows only while Start itself is in front; the house on the side bar always leads back to it.",
+                "The mark on a tab can be the icon of its app or a plain square in the app's colour."
+              ]
+            },
+            "When there are more tabs than fit, the arrows at the ends of the strip scroll it, and \"More tabs\" lists them all."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Finding your way",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Searching for a command",
+          "body": [
+            "The search box (\"Search commands and settings\") finds any command of the tab in front by its name, in your language or in English. Choose a result to run it.",
+            "Commands that are planned but not written yet are shown greyed out in the menus and are left out of the search."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Keyboard shortcuts",
+          "body": [
+            "A command's keys are written beside its name in the menus and in its tooltip. The ones used most:",
+            {
+              "points": [
+                "Ctrl+O: open a file",
+                "Ctrl+S: save; Ctrl+Shift+S: save as",
+                "Ctrl+P: print",
+                "Ctrl+Z and Ctrl+Y: undo and redo",
+                "Ctrl+F: find in the document",
+                "Ctrl+W: close the tab",
+                "Ctrl+Tab and Ctrl+Shift+Tab: the next tab and the one before",
+                "Ctrl+, (comma): Settings",
+                "F1: this Help",
+                "Escape: leave full screen or read mode, or put down the tool in hand"
+              ]
+            },
+            "The keys of the program’s own commands (tabs, Settings, Help) are changed in Settings → General → Keyboard shortcuts; those of an app’s commands in its part of Settings. Click the keys of a command, then press the new ones."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Using this Help",
+          "body": [
+            "Help belongs to where you open it from. From an app you see only the manual of that app and the commands of the tab you came from. From the start page or from Settings you see \"About\" (the program and each app, in short) and the manual of the program. Help → About always leads to \"About\".",
+            "The contents are on the left; the search above them looks through every topic, in titles and in text.",
+            "Help opens in a tab of its own, so you can go back and forth between it and your work; F1 brings it to the front again. Under \"Commands of the tab you came from\" every menu of that tab is listed with each of its commands, its keys and what it does: open Help from the tab you have a question about."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "The right-click menu of Windows Explorer",
+          "body": [
+            "Settings → General → Windows Explorer → \"Show Syntelab Creative in the right-click menu of files and folders\" adds entries for the files the program reads: \"Convert to PDF with PDF Organizer\" and \"Combine files in PDF Organizer\", each with the icon of PDF Organizer, and \"Syntelab Dev\", which opens to the side with Checksums, Compare and Hex view.",
+            "They are added for your user alone, without administrator rights, and turning the switch off removes them. On Windows 11 they are under \"Show more options\". They always start the installed program: if it was moved or reinstalled elsewhere, it puts them right when it starts.",
+            {
+              "note": "Choosing \"Combine files in PDF Organizer\" on several files opens a binder with them; \"Convert to PDF with PDF Organizer\" opens batch processing with them."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privacy, updates and contact",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "What goes online, and what never does",
+          "body": [
+            "The program collects nothing: no usage data, no file names, no crash reports sent by themselves.",
+            "It goes online only in these cases, each one asked for by you:",
+            {
+              "points": [
+                "Checking for updates and news (two small files read from syntelab.com), when you ask or, if you allowed it, when the program starts; and downloading a new version, only when you press \"Update\".",
+                "Saving a web page as a PDF (PDF Organizer) and bringing the text of a web page (Scribe), from the address you typed.",
+                "A link in a document that you click: it is handed to your browser or mail program.",
+                "Feedback and Support: they open a page of syntelab.com in your browser."
+              ]
+            },
+            "Signing with a certificate and checking signatures are done on your computer, without going online."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Updates",
+          "body": [
+            "Settings → General → Updates → \"Check for updates\". When a newer version exists, a window tells you what is new and offers \"Update\".",
+            "\"Update\" downloads the new version, checks that it really comes from us (it must be signed with our key; anything else is refused) and installs it over this one. Your settings are kept and the program starts again. Nothing is downloaded until you press it.",
+            "If the update cannot be installed this way (a portable copy, a Linux package, no network), \"Download\" opens the download page in your browser; install the new version over this one and your settings are kept.",
+            "\"Check for updates and news when the program starts\" can be turned off; nothing about you or your computer is sent either way."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Feedback and support",
+          "body": [
+            "Help → Feedback: ask for a new app, a new feature or a change, or report a problem. Every message is read.",
+            "Help → Support: the program is free; this is where you can help it go on."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "About Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "About Syntelab Creative",
+          "body": [
+            "Syntelab Creative is a free suite of apps for everyday work with documents, text and data, made by Syntelab (syntelab.com). It starts with four apps: PDF Organizer, Scribe, Units and Dev. Others will join them in the same window.",
+            {
+              "points": [
+                "Always free.",
+                "No data collected: nothing about you, your computer or your work.",
+                "Nothing held back: no paid version, no feature locked, no limit put there on purpose. The only limits are what today’s technology can do and what your computer can carry."
+              ]
+            },
+            "We have no funding. The program is made in our free time, as far as that time allows. We fully intend to make software of good quality, and that takes time and patience: ours to build it, and yours while it grows.",
+            "It will get better with every version. Problems that are reported get corrected, and features that are asked for are weighed for what comes next.",
+            {
+              "note": "Your documents stay on your computer. The program collects nothing about you or your work; see \"What goes online, and what never does\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "How you can help",
+          "body": [
+            "There are three ways, and each of them counts:",
+            {
+              "points": [
+                "Tell us what you think: Help → Feedback. A problem you ran into, something that is missing, something that is harder than it should be. We read every message.",
+                "Tell others about the program and what we do. More people using it means more feedback, and that is how we see what really matters. It also makes us feel that our work is appreciated: ours, and that of everyone who takes part in the project and will take part in it.",
+                "Support it with money, if you can: Help → Support us. It buys us time to work on it."
+              ]
+            },
+            "None of this is asked of you. The program is free and will always be free, whole, for everyone."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "What it is built with",
+          "body": [
+            "The program stands on the work of many people. What every app shares:",
+            {
+              "points": [
+                "The window and everything you see: Tauri, with the web view of the system (WebView2 on Windows, WebKitGTK on Linux, WKWebView on macOS); written in TypeScript with React.",
+                "The part that does the work: written in Rust.",
+                "Letters and icons: Sansation, IBM Plex Sans and Font Awesome Free."
+              ]
+            },
+            "What each app adds is said on its own page under \"About\". We are grateful to the people behind these projects."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "What it cannot do yet",
+          "body": [
+            "So that you know before you count on it:",
+            {
+              "points": [
+                "Some texts are still waiting for their translation. Until then they are shown in English, never as a code.",
+                "The right-click menu of the file manager is there only in Windows Explorer for now.",
+                "Signing with a certificate works on Windows for now; on Linux and macOS it will come in a later version."
+              ]
+            },
+            "The limits of each app are on its own page under \"About\". If one of them stands in your way, tell us through Help → Feedback: it helps us decide what comes first."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "What we are working on",
+          "body": [
+            "The four apps will keep growing: what you report and ask for through Help → Feedback decides much of what comes first. Beside them, new apps are being prepared. Start does not show them unless you want to: tick them in its \"View\" menu to see them there as \"Coming soon\":",
+            {
+              "points": [
+                "Convert: converting files from one format to another, among them office documents to PDF and back, without needing another program to be installed. We have not yet found an open technology that reaches the quality we want, so it will come only when it does not disappoint you; where the tools do not exist, we will build them.",
+                "Pixel: tools for images, such as resizing and compressing, removing a background, colours and QR codes.",
+                "Metadata: seeing and removing the hidden data of photos, videos and documents, before you share them.",
+                "Wizard: random pickers and generators: a wheel to spin, dice, a coin, names drawn from a list."
+              ]
+            },
+            "In the apps that are already here we are working on what their \"What it cannot do yet\" pages list: for example a trusted timestamp for signatures, signing with a certificate on Linux and macOS, and a spelling check in Scribe.",
+            "More install choices will follow as well: Microsoft Store and winget on Windows, Flathub and Snap on Linux.",
+            {
+              "note": "News of each version is under the news button on the side bar; Settings → General → Updates checks for a newer version."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

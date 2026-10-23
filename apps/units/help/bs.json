@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Konvertovanje",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Konverteri",
+          "body": [
+            "Units konvertuje vrijednosti između mjernih jedinica: jednu vrijednost brzo ili cijele tabele vrijednosti odjednom. Sve se obračunava na vašem računaru.",
+            "Konverteri se nalaze u šest menija: Osnove, Kretanje i mehanika, Energija i snaga, Naučno, Digitalni i medijski te Specijalizovana fizika. Odabirom jednog otvara se njegova tabela.",
+            {
+              "points": [
+                "Konverter se otvara u kartici u kojoj se nalazite. Ako njegova tabela sadrži vrijednosti, prvo ćete biti pitani: Nastavi (vrijednosti će biti izgubljene), Otvori u novoj kartici ili Otkaži.",
+                "Postavke → Units → „Otvori svaki konverter u zasebnoj kartici“ umjesto toga otvara svaki odabrani konverter u novoj kartici.",
+                "Datoteka → Idi na Početak vraća vas na prvu stranicu aplikacije Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Brza konverzija",
+          "body": [
+            "Prva stranica aplikacije Units, Brza konverzija, konvertuje jednu vrijednost iz jedne jedinice u drugu. Odaberite konverter, upišite vrijednost na strani „Iz“, a zatim odaberite dvije jedinice: rezultat je na strani „U“.",
+            {
+              "points": [
+                "Svaka strana navodi popularne jedinice konvertera i vaše vlastite jedinice, uz pretragu po njima. Tabela konvertera sadrži svaku jedinicu.",
+                "Dugme između dvije strane zamjenjuje dvije jedinice.",
+                "Oznaka pored jedinice je zakačuje: zakačene jedinice dolaze prve u obje liste i u panelu jedinica tabele.",
+                "Dugme u rezultatu kopira ga; × briše vrijednost.",
+                "„Otvori u tabeli“ otvara tabelu konvertera."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Kako se brojevi čitaju i pišu",
+          "body": [
+            "Brojeve možete upisivati i lijepiti onako kako se pišu u različitim zemljama: 1,234.56 i 1.234,56 su oba razumljiva, kao i razmaci i apostrofi između hiljada, te 1.5e-3 za stepen desetice.",
+            "Broj koji se može pročitati na dva načina (1,234: hiljada ili jedan i malo) čita se onako kako jezik programa piše brojeve, a linija ispod tabele to i navodi.",
+            "Rezultat se zapisuje s decimalama jedinice u koju dolazi, a ne s onim brojem znamenki koji ste upisali: 5 cm je 1,97 in. Vrijednost koja nije nula uvijek prikazuje nekoliko znamenki koje nešto znače, tako da je 1 cm = 0,00001 km, a nikada 0,000 km.",
+            "Vrijednosti koje su prevelike ili premale da bi se pročitale na prvi pogled zapisuju se sa stepenom desetice, kao 1,6 × 10⁻³⁵. Pregled → Ekstremne vrijednosti u cijelosti umjesto toga ih zapisuje sa svim nulama.",
+            "Tamo gdje jedinica nema takvu vrijednost (zvučni pritisak od nule nema decibela), ćelija prikazuje crticu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabela",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Redovi i kolone",
+          "body": [
+            "Svaka kolona je jedinica, a svaki red je vrijednost. Ćelija u koju kucate upravlja svojim redom: ostale kolone prikazuju istu vrijednost u svojim jedinicama. Upisana ćelija prikazana je podebljanim slovima.",
+            "Ono što nije broj zadržava se i prikazuje crvenom bojom; taj red ništa ne konvertuje dok to ne ispravite.",
+            {
+              "points": [
+                "Dvostruko kliknite na ćeliju ili jednostavno počnite kucati u njoj da biste je uredili. Enter pomjera nadole, Tab udesno; strelice pomjeraju kursor; Escape ostavlja ćeliju onakvom kakva je bila.",
+                "Kliknite na ugao (#) da odaberete cijelu tabelu, na broj reda da odaberete taj red, na naslov da odaberete kolonu. Shift+klik odabira opseg, Ctrl+klik dodaje ćelije, a prevlačenjem se također vrši odabir.",
+                "Home i End vode do prve i posljednje kolone reda; Ctrl+Home do prve ćelije tabele, Ctrl+End do posljednje. Ctrl sa strelicom ide do ivice tabele: prvog ili posljednjeg reda, prve ili posljednje kolone. Page Up i Page Down pomjeraju ekran. Uz Shift, svaka od ovih komandi proširuje odabir.",
+                "Odabir nekoliko ćelija je istaknut spoljašnjom ivicom; ćelija u kojoj se kuca ostaje neosjenčana unutar odabira.",
+                "Delete prazni odabrane redove.",
+                "Kucanje u posljednjem redu dodaje novi red. Tabela nema maksimalni kapacitet: dugačka je onoliko koliko dopušta memorija vašeg računara (jedan red zauzima 16 bajtova, tako da 100 miliona redova zauzima oko 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Kolone i panel jedinica",
+          "body": [
+            "Panel pored tabele navodi jedinice konvertera. Na vrhu su jedinice koje su u tabeli: kliknite na jednu od njih da uklonite njenu kolonu. Ispod njih su sve jedinice: pretražujte po nazivu ili simbolu, filtrirajte po grupi ili po „Popularno“, i kliknite na jedinicu da biste je dodali kao kolonu.",
+            "Oznaka pored jedinice zakačuje je kao favorit: pojavljuje se prva na listi i prva u Brzoj konverziji.",
+            {
+              "points": [
+                "Kolone ravnomjerno dijele širinu tabele sve dok njihovi naslovi više ne stanu; tada se tabela pomjera horizontalno.",
+                "Povucite ivicu naslova da promijenite širinu kolone; dvaput kliknite na ivicu da prilagodite kolonu njenoj najdužoj vrijednosti. Kolona sa brojevima redova se također može povući.",
+                "Dugme ⋮ kolone: pomjerite je lijevo ili desno, zakačite je za lijevu ili desnu ivicu, promijenite njenu preciznost ili je uklonite.",
+                "Preciznost kolone mijenja samo tu kolonu. „Koristi za ovu jedinicu svuda“ čini je preciznošću jedinice, u svakoj tabeli i u Brzoj konverziji.",
+                "Dugme sa dvije strelice pored „Poništi“ i „Ponovi“ prilagođava kolone tabeli: svaka širina koju ste ručno promijenili ili prilagodili se poništava, a kolone ponovo ravnomjerno dijele širinu tabele.",
+                "Dva gornja dijela panela, jedinice u tabeli i „Dodaj jedinice“ (pretraga i filteri), mogu se sklopiti klikom na njihove nazive, kako bi lista imala više prostora."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Poništavanje, kopiranje, lijepljenje, uvoz i izvoz",
+          "body": [
+            "Traka iznad tabele sadrži njene alate.",
+            {
+              "points": [
+                "„Poništi“ i „Ponovi“ (Ctrl+Z, Ctrl+Y) prolaze kroz svaku izmjenu tabele. Lijepljenje ili uvoz predstavljaju jedan korak.",
+                "„Kopiraj“ (Ctrl+C) kopira cijelu tabelu ili ono što je označeno, onako kako to čita program za tabelarne proračune. „Transponovano“ pretvara redove u kolone.",
+                "„Zalijepi“ (Ctrl+V) ubacuje kopirane redove u tabelu od aktivne ćelije naniže. Ako prvi red sadrži nazive jedinica, kolone se uparuju prema njima, a jedinice koje još nisu u tabeli biće dodane.",
+                "„Uvezi“ čita Excel radnu knjigu, CSV ili TSV datoteku umjesto onoga što tabela sadrži. „Automatsko prepoznavanje formata“ određuje vrstu prema datoteci.",
+                "„Izvezi“ zapisuje tabelu kao Excel, CSV, TSV ili JSON. Ako se zarez koristi kao decimalni znak, CSV se zapisuje sa tačkom i zarezom, kako to očekuju programi za tabele. Excel list sadrži 1.048.576 redova: duža tabela se nastavlja na sljedećim listovima iste radne knjige, pod istim naslovima.",
+                "Gumica prazni odabrane redove; kanta prazni cijelu tabelu."
+              ]
+            },
+            "Red sadrži jednu vrijednost. Od zalijepljenog ili uvezenog reda koji ima više vrijednosti, uzima se prva, a ostale se izračunavaju iz nje.",
+            "Lijepljenje, uvoz, izvoz ili kopiranje veoma velikog broja redova traje neko vrijeme. Kartica iznad tabele tada prikazuje dokle je posao stigao, u procentima i redovima, sa dugmetom „Zaustavi“. Lijepljenje ili uvoz koji je zaustavljen ostavlja tabelu onakvom kakva je bila; izvoz koji je zaustavljen ne zapisuje datoteku.",
+            "Kada računaru ponestane memorije za redove, ništa se ne mijenja, a linija ispod tabele ispisuje koliko je bilo potrebno. Kada redovi stanu, ali se tabela u prethodnom stanju ne može zadržati pored njih, pitat će vas želite li nastaviti bez mogućnosti poništavanja: ta promjena, i one prije nje, tada više ne mogu biti poništene. Prije pitanja, najstariji koraci funkcije Poništi se brišu kako bi se oslobodio prostor.",
+            "Opcije tabele (zupčanik): šta naslov kolone prikazuje (naziv i simbol, naziv ili simbol), da li kopije i izvozi uključuju naslove i brojeve redova, „Započni ovaj konverter sa ovim kolonama“ i „Resetuj tabelu“."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Specijalni konverteri",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valuta",
+          "body": [
+            "Valute nemaju fiksni faktor: vrijednost jedne valute se mijenja. Konverter valuta čita svoje kurseve sa dvije besplatne usluge dok ga koristite, i samo tada.",
+            {
+              "points": [
+                "Valute zemalja: Kursevi preko Exchange Rate API-ja, https://www.exchangerate-api.com . Oni se mijenjaju jednom dnevno na izvoru i ne čitaju češće od toga.",
+                "Kriptovalute: Omogućeno putem CoinGecko-a, https://www.coingecko.com . Čitaju se kada se konverter otvori ili ponovo dođe u prvi plan, a postojeći podaci su stariji od četvrt sata, kao i kada pritisnete „Osvježi“; nikada po tajmeru."
+              ]
+            },
+            "Zahtijevaju se samo kursevi. Nijedan vaš podatak se ne šalje, niti iznosi koje konvertujete.",
+            "Linija ispod tabele, i ispod rezultata Brze konverzije, navodi od kada su kursevi. Bez veze se koriste posljednji kursevi, označeni kao stari. Za valutu za koju usluge ne daju kurs prikazuje se crtica.",
+            "Postavke → Units → Valuta: „Čitaj kurseve s mreže“ se može isključiti, nakon čega konverter koristi posljednje sačuvane kurseve. „Navedi izvore pored kurseva“ prikazuje ili skriva nazive dvije usluge na toj liniji.",
+            "Kursevi služe samo za informaciju. Ne oslanjajte se na njih prilikom transakcija."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Baza brojeva",
+          "body": [
+            "Jedinice ovog konvertera su načini zapisivanja cijelog broja: baze od 2 do 64, rimski brojevi, baza 60 sa dvotačkama (1:30:15), binarno kodirani decimalni broj i Grayov kod. Njihove vrijednosti su tekst: upišite FF ispod heksadecimalnog sistema, a ostale kolone će prikazati 255, 11111111 i tako dalje.",
+            "Rimski brojevi idu od I do MMMCMXCIX (1 do 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Jedinice koje nisu običan faktor",
+          "body": [
+            "Većina jedinica je faktor neke druge jedinice. Neke nisu, a Units ih konvertuje onako kako su definisane: temperature sa njihovim pomakom; potrošnja goriva (litri na 100 km naspram milja po galonu); talasna dužina naspram frekvencije; provodljivost naspram otpora; stepeni Baumé, API, Brix i Plato naspram gustine; decibeli naspram zvučnog pritiska i intenziteta; nagib u procentima naspram njegovog ugla.",
+            "Temperatura i razlika temperature nisu ista stvar: 100 °C je 212 °F, ali razlika od 100 °C je razlika od 180 °F. Jedinice grupe „Razlika (Δ)“ konvertuju se međusobno; između njih i temperaturnih skala ćelija prikazuje crticu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vaše vlastite jedinice",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Kreiranje jedinice",
+          "body": [
+            "Možete dodati vlastite jedinice u bilo koji konverter. U panelu jedinica odaberite „Nova jedinica“, dajte joj naziv i simbol, i definišite je pomoću postojeće jedinice.",
+            {
+              "points": [
+                "Faktor: „1 korak = 0,75 m“. Za skalu koja ne počinje od nule, navedite i vrijednost koja se dodaje nakon množenja.",
+                "Formula: kako vrijednost postaje druga jedinica, koristeći x za vrijednost, i formula za obrnuti postupak. Na primjer x * 9 / 5 + 32 i (x - 32) * 5 / 9."
+              ]
+            },
+            "Ono što kucate provjerava se u hodu, a rezultat vaše jedinice prikazuje se prije nego što je sačuvate. Formula može koristiti + − × ÷ ^, zagrade, x, pi, e, i funkcije sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos i atan. Formula se izračunava, nikada se ne pokreće kao program.",
+            "Vaše jedinice su navedene pod stavkom „Moje“ u panelu, gdje se mogu mijenjati i uklanjati. Vaša jedinica može biti definisana pomoću druge vaše jedinice; uklanjanje jedne jedinice uklanja i one koje su definisane pomoću nje.",
+            "Postavke → Units izlistava vaše jedinice za svaki konverter, te ih izvozi i uvozi kao tekst koji možete sačuvati ili prenijeti na drugi računar."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Postavke",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Postavke aplikacije Units",
+          "body": [
+            "Datoteka → Otvori Postavke otvara postavke aplikacije Units; to čine i opcije tabele (zupčanik u njenoj traci).",
+            {
+              "points": [
+                "Otvaranje svakog konvertera u zasebnoj kartici ili u kartici u kojoj se nalazite.",
+                "Ekstremne vrijednosti u cijelosti, šta se piše između hiljada (10000,000, 10 000,000 ili 10.000,000; ništa, osim ako ne odaberete drugačije) i brojevi redova.",
+                "Valuta: da li se kursevi čitaju sa mreže i da li su nazivi servisa navedeni pored njih.",
+                "Preciznost jedinica: odaberite konverter (ili „Jedinice koje ste promijenili“), potražite jedinicu i postavite njene decimale pomoću − i +; strelica je vraća na vlastitu preciznost jedinice. „Koristi za ovu jedinicu svuda“ u meniju kolone postavlja istu vrijednost.",
+                "Jedinice s kojima tabela počinje: konverteri čije ste prve kolone odabrali, svaki sa mogućnošću povratka na one s kojima dolazi.",
+                "Vaše vlastite jedinice."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O aplikaciji Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O aplikaciji Units",
+          "body": [
+            "Units je aplikacija za konverziju unutar Syntelab Creative: 38 konvertera sa više od 1.500 jedinica, od dužine i temperature do valuta i numeričkih sistema. Vrijednost upisana jednom prikazuje se u svakoj jedinici koju zatražite, u tabeli koja prima jednu vrijednost ili milione njih.",
+            "Brojevi se obrađuju precizno, kao razlomci, i zaokružuju se samo prilikom pisanja. Sve se obavlja na ovom računaru; samo se kursevi valuta čitaju s mreže, što se može isključiti.",
+            "Aplikacija je nova. Tamo gdje vam nedostaje nešto za vaš rad, javite nam putem Pomoć → Povratne informacije: tako znamo na čemu treba raditi."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Koliko redova tabela može sadržavati: šta smo izmjerili",
+          "body": [
+            "Tabela nema fiksni limit redova: dugačka je onoliko koliko dopušta memorija vašeg računara. Jedan red zauzima 16 bajtova, tako da 100 miliona redova zauzima oko 1,5 GB. Kada ponestane memorije, tabela ostaje kakva je bila, a program javlja koliko je memorije bilo potrebno.",
+            "Izmjerili smo to sa 50.000.000 redova, svaki sa brojem u jednoj koloni, u optimizovanoj verziji programa:",
+            {
+              "points": [
+                "Lijepljenje 50.000.000 redova: oko 7 sekundi.",
+                "Uvoz iz CSV datoteke: 12 sekundi.",
+                "Izvoz u CSV datoteku, sa konvertovanom drugom kolonom: oko 3,5 minuta.",
+                "Izvoz u Excel, na 48 listova: 4,3 minuta."
+              ]
+            },
+            "Izvoz traje duže od uvoza jer se svaka ćelija koja se zapisuje prvo precizno konvertuje.",
+            {
+              "note": "Računar na kojem je izvršen test: AMD Ryzen 9 9950X3D (16 jezgara, 32 niti), 64 GB memorije, Windows 11 Pro. Oktobar 2026. Na drugom računaru vremena će biti drugačija; veličina reda neće."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Čime je Units izgrađen",
+          "body": [
+            {
+              "points": [
+                "Precizni brojevi: num biblioteke jezika Rust (razlomci cijelih brojeva bilo koje veličine).",
+                "Jedinice, njihovi faktori i njihove grupe: datoteke podataka programa, jedna za svaki konverter.",
+                "Čitanje Excel i OpenDocument radnih svesaka: calamine. Pisanje Excel radnih svesaka: rust_xlsxwriter.",
+                "Sistemski međuspremnik, za kopiranje i lijepljenje veoma velikog broja redova: arboard.",
+                "Kursevi valuta: ExchangeRate-API i CoinGecko (vidi „Valuta“)."
+              ]
+            },
+            "Ono što dijeli sa ostatkom programa nalazi se pod „O programu Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Šta Units još uvijek ne može",
+          "body": [
+            {
+              "points": [
+                "Red sadrži jednu vrijednost: od zalijepljenog reda sa nekoliko vrijednosti, uzima se prva.",
+                "Izvoz veoma velikog broja redova je spor (vidi šta smo izmjerili).",
+                "Ono što se kopira u međuspremnik čuva se u memoriji kao jedan tekst prije nego što se zalijepi.",
+                "Kursevi valuta su svježi onoliko koliko ih njihova dva izvora daju: jednom dnevno za valute država."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

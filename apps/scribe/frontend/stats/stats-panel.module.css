@@ -1,0 +1,286 @@
+/* What the text is made of: counts first, then what takes more room. */
+.stats {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.scope {
+  margin: 0 4px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Counted before the last change: shown fainter until it is counted again. */
+.body[data-stale='true'] {
+  opacity: 0.55;
+}
+
+.counts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin: 0;
+}
+
+.count {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.count dt {
+  color: var(--sc-muted);
+  font-size: 12px;
+}
+
+.count dd {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.heading {
+  margin: 0;
+  padding: 7px 10px;
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface-2);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-inline: 6px;
+}
+
+.rows > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 4px;
+}
+
+.rows dd {
+  margin: 0;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.bars,
+.sentences {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+  padding: 0 6px;
+  list-style: none;
+}
+
+.bars li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 26px;
+  padding-inline: 8px;
+}
+
+/* How often a word is used, as a bar behind it. */
+.bar {
+  position: absolute;
+  inset-block: 2px;
+  inset-inline-start: 0;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-accent-soft);
+}
+
+.word {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.times {
+  position: relative;
+  flex: none;
+  color: var(--sc-muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.sentences li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 8px;
+  border-inline-start: 2px solid var(--sc-border);
+}
+
+.sentence {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.note {
+  margin: 0 6px;
+  color: var(--sc-muted);
+  font-size: 12px;
+}
+
+/* The name of a part is the way to fold it. */
+button.heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border: 0;
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: start;
+  cursor: pointer;
+}
+
+button.heading:hover,
+button.heading[aria-expanded='true'] {
+  background: var(--sc-accent-soft);
+}
+
+/* A name inside a part: the level under the band. */
+.sub {
+  margin: 6px 6px 0;
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-inline: 6px;
+  font-size: 13px;
+}
+
+.control {
+  min-height: 34px;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+/* How easy the text is to read: the number, what it means, and where it stands from hard to easy. */
+.ease {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 6px;
+}
+
+.easeScore {
+  flex: none;
+  min-width: 48px;
+  font-size: 28px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.easeWords {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.meter {
+  display: block;
+  height: 6px;
+  overflow: hidden;
+  border-radius: var(--sc-radius-pill);
+  background: var(--sc-surface-2);
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-radius: var(--sc-radius-pill);
+  background: var(--sc-accent);
+}
+
+.limits {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0 6px;
+  list-style: none;
+}
+
+.limits li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2px 10px;
+}
+
+.limits .meter {
+  grid-column: 1 / -1;
+}
+
+.limits li[data-state='near'] .meter > span {
+  background: var(--sc-highlight);
+}
+
+.limits li[data-state='over'] .meter > span {
+  background: var(--sc-danger);
+}
+
+.limits li[data-state='over'] .times {
+  color: var(--sc-danger);
+  font-weight: 600;
+}
+
+.limitName {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rows bdi {
+  overflow-wrap: anywhere;
+}

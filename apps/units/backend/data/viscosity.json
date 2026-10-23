@@ -1,0 +1,42 @@
+{
+  "id": "viscosity",
+  "category": "physics",
+  "icon": "droplet",
+  "base": "pascal-second",
+  "startsWith": ["pascal-second","centipoise"],
+  "decimals": 3,
+  "groups": [
+    { "id": "dynamic", "color": "#2563eb" },
+    { "id": "kinematic", "color": "#dc2626" },
+    { "id": "industrial", "color": "#ea580c" }
+  ],
+  "units": [
+    {"id":"pascal-second","symbol":"Pa·s","group":"dynamic","factor":"1","popular":true},
+    {"id":"millipascal-second","symbol":"mPa·s","group":"dynamic","factor":"0.001","popular":true},
+    {"id":"micropascal-second","symbol":"µPa·s","group":"dynamic","factor":"0.000001"},
+    {"id":"poise","symbol":"P","group":"dynamic","factor":"0.1","popular":true},
+    {"id":"centipoise","symbol":"cP","group":"dynamic","factor":"0.001","popular":true,"decimals":1},
+    {"id":"millipoise","symbol":"mP","group":"dynamic","factor":"0.0001"},
+    {"id":"micropoise","symbol":"µP","group":"dynamic","factor":"0.0000001"},
+    {"id":"kg-ms","symbol":"kg/(m·s)","group":"dynamic","factor":"1"},
+    {"id":"g-cms","symbol":"g/(cm·s)","group":"dynamic","factor":"0.1"},
+    {"id":"newton-s-m2","symbol":"N·s/m²","group":"dynamic","factor":"1"},
+    {"id":"lb-fts","symbol":"lb/(ft·s)","group":"dynamic","factor":"1.488164","popular":true},
+    {"id":"lb-fth","symbol":"lb/(ft·h)","group":"dynamic","factor":"0.000413379"},
+    {"id":"lbf-s-ft2","symbol":"lbf·s/ft²","group":"dynamic","factor":"47.88026"},
+    {"id":"lbf-s-in2","symbol":"lbf·s/in²","group":"dynamic","factor":"6894.757"},
+    {"id":"reyn","symbol":"reyn","group":"dynamic","factor":"6894.757","popular":true},
+    {"id":"m2-s","symbol":"m²/s","group":"kinematic","factor":"1","popular":true},
+    {"id":"cm2-s","symbol":"cm²/s","group":"kinematic","factor":"0.0001"},
+    {"id":"mm2-s","symbol":"mm²/s","group":"kinematic","factor":"0.000001","popular":true},
+    {"id":"stokes","symbol":"St","group":"kinematic","factor":"0.0001","popular":true},
+    {"id":"centistokes","symbol":"cSt","group":"kinematic","factor":"0.000001","popular":true,"decimals":1},
+    {"id":"ft2-s","symbol":"ft²/s","group":"kinematic","factor":"0.09290304","popular":true},
+    {"id":"ft2-h","symbol":"ft²/h","group":"kinematic","factor":"0.0000258064"},
+    {"id":"in2-s","symbol":"in²/s","group":"kinematic","factor":"0.00064516"},
+    {"id":"saybolt-universal","symbol":"SUS","group":"industrial","formula":{"kind":"efflux","a":"0.226","b":"195","scale":"1e-6"},"popular":true,"decimals":1},
+    {"id":"saybolt-furol","symbol":"SFS","group":"industrial","formula":{"kind":"efflux","a":"2.24","b":"184","scale":"1e-6"}},
+    {"id":"redwood-1","symbol":"RW1","group":"industrial","formula":{"kind":"efflux","a":"0.26","b":"179","scale":"1e-6"},"popular":true,"decimals":1},
+    {"id":"engler-degree","symbol":"°E","group":"industrial","formula":{"kind":"efflux","a":"7.6","b":"6.0","scale":"1e-6"},"popular":true,"decimals":2}
+  ]
+}

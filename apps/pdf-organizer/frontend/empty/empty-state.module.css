@@ -1,0 +1,69 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 100%;
+  padding: 40px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.hint {
+  margin: 0 0 12px;
+  color: var(--sc-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* "Open" with its arrow: one button to the eye. */
+.split {
+  display: inline-flex;
+  align-items: stretch;
+  gap: 1px;
+}
+
+.splitMain {
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+}
+
+.split > :last-child > button {
+  height: 100%;
+  border-radius: 0 var(--sc-radius-s) var(--sc-radius-s) 0;
+  background: var(--sc-accent);
+  color: var(--sc-on-color);
+}
+
+.split > :last-child > button:hover,
+.split > :last-child > button[aria-expanded='true'] {
+  background: color-mix(in srgb, var(--sc-accent) 86%, #000000);
+  color: var(--sc-on-color);
+}
+
+:global([dir='rtl']) .split > :last-child > button {
+  border-radius: var(--sc-radius-s) 0 0 var(--sc-radius-s);
+}
+
+.dropTip {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.problem {
+  margin: 0;
+  color: var(--sc-danger);
+}

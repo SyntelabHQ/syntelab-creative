@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Arayüzü tanıma",
+      "topics": [
+        {
+          "id": "start",
+          "title": "İlk sayfa",
+          "body": [
+            "Bir Dev sekmesi, tüm araçların menülerdeki gruplara göre sıralandığı ilk sayfada açılır: Kodlama, Veri, Üret, İncele, Ağ.",
+            {
+              "points": [
+                "Listeyi daraltmak için “Araç bul” alanına yazın.",
+                "Bir aracı sabitleyerek Sabitlenenler bölümünün en üstünde tutabilirsiniz.",
+                "Araç aynı sekmede açılır; ilk sayfaya dönmek için Dosya → Tüm araçlar'ı seçin. Ayarlar'dan her aracı kendi sekmesinde açabilir ve yeni sekmenin son kullanılan araçla açılmasını sağlayabilirsiniz."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Her şeyi yapıştırın",
+          "body": [
+            "İlk sayfanın üstündeki kutuya yapıştırdığınız içerik incelenip neye benzediği gösterilir: token, sertifika, JSON, UUID, zaman damgası, cron zamanlaması, URL, XML veya HTML, SQL, Base64, sağlama toplamı, tablo ya da YAML.",
+            "Her tahminin altında, bu içerikle çalışabilecek araçlar en uygun olandan başlayarak listelenir. Birini seçin; araç, metin içine yerleştirilmiş ve çalıştırılmış olarak açılır.",
+            {
+              "note": "Yapıştırdığınız içerik siz silene veya sekmeyi kapatana kadar kutuda kalır. Diske hiçbir zaman yazılmaz."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Bir aracın düzeni",
+          "body": [
+            "Çoğu araç aynı düzene sahiptir: seçenekler üstte bir sırada, girdi bir tarafta, çıktı diğer tarafta ve altta ne olduğunu bildiren bir durum satırı.",
+            {
+              "points": [
+                "Girdi veya bir seçenek her değiştiğinde sonuç yeniden oluşturulur ve çıktıda gösterilir; seçenekler satırındaki “Kendiliğinden çalışır” bunu belirtir. Yalnızca her tuşta çalıştırılamayacak kadar uzun bir metin veya 128 MB’tan büyük bir dosya, o zaman görünen Çalıştır düğmesini bekler. Ctrl+Enter aracı istediğiniz zaman çalıştırır.",
+                "Metin olmayan bir sonuç (Base64’ten çözülmüş bir resim, gzip) önizleme olarak gösterilir: resim olduğu gibi, diğer her şey türü, boyutu ve ilk baytlarıyla. Kopyala bu durumda sonucu Base64 olarak kopyalar; resim, resim olarak da kopyalanabilir. Metin olmayan bir girdi dosyası da aynı şekilde gösterilir.",
+                "Dosya aç, Yapıştır ve Temizle girdi alanının; Kopyala ve Dosyaya kaydet çıktı alanının üstündedir. Dosyayı girdi alanına da sürükleyebilirsiniz.",
+                "Girdideki hata, satır ve sütun numarasıyla açıklanır ve düzenleyicide işaretlenir.",
+                "Görünüm menüsü iki bölmeyi yan yana veya alt alta yerleştirir, satır numaralarını gösterir ve uzun satırları kaydırır. Bölmeler arasındaki çizgiyi sürükleyebilirsiniz.",
+                "Seçtiğiniz seçenekler bir sonraki kullanım için hatırlanır. Yazdıklarınız hatırlanmaz."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Tümünü sil ve neler saklanır",
+          "body": [
+            "Her aracın sağ altındaki Tümünü sil düğmesi aracı hemen boşaltır: girdi, sonuç, kutulara yazılanlar ve düzenleyicilerin geri alabileceği işlemler silinir.",
+            "Dev yalnızca ayarlarınızı, sabitlediğiniz araçları, son kullandığınız aracın adını ve araç seçeneklerini saklar. Araçta yazdığınız, yapıştırdığınız, açtığınız veya oluşturduğunuz hiçbir şey diske, günlüğe ya da son kullanılanlar listesine kaydedilmez. Özellikle gizli bilgiler: anahtarlar, parola ifadeleri, tokenlar ve istek başlıkları yalnızca sekmede bulunur.",
+            "Diskte bir süre bekleyen tek şey vardır: bir dosyanın sonucu ve metin olmayan bir sonuç, gösterilip ardından kaydedilebilmeleri için programın kendi klasörüne yazılır. Her biri, yerini başka bir sonuç aldığında, aracı Tümünü sil ile boşalttığınızda veya kapattığınızda ve her durumda Dev yeniden başladığında silinir."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Her boyutta dosya",
+          "body": [
+            "Dosya boyutuna sınır konmaz. Görüntülenebilecek kadar küçük dosyalar (en fazla 16 MB) düzenleyiciye alınır. Daha büyük dosyalar veya metin olmayan dosyalar diskte kalır: başlangıç kısmı (veya bir önizleme) gösterilir, araç dosyayı bulunduğu yerden okur ve sonucu bir metninki gibi gösterilir. Dosyaya kaydet ardından sonucu seçtiğiniz yere kopyalar.",
+            {
+              "points": [
+                "Uzun süren işlemlerde ilerlemeyi ve Durdur düğmesini gösteren bir kart görünür.",
+                "UTF-8 dışında bir kodlamaya sahip metin dosyaları (UTF-16, Windows-1252 vb.) görüntülenebilecek kadar küçükse metin olarak okunur ve kodlaması belirtilir. Dev'den kaydedilenler UTF-8 olur.",
+                "Araca bırakılan dosya, Dosya aç ile açılmış gibi açılır. Pencere dosyanın nerede olduğunu anlayamazsa, dosyanın en fazla 16 MB’ı yapıştırılmış gibi alınır."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Birden fazla dosya ve klasörler",
+          "body": [
+            "Bir araçta “İşlenecek içerik: Metin / Dosyalar” seçeneği varsa Dosyalar modu, aracı tek seferde çok sayıda dosyada çalıştırır.",
+            {
+              "steps": [
+                "Dosyaları veya bir klasörü ekleyin (bu seçenek açıksa alt klasörler de eklenir).",
+                "Her dosya eklenirken bir kez okunur ve aracın dosyayı destekleyip desteklemediği bildirilir.",
+                "Sonuçların nereye kaydedileceğini seçin: her dosyanın yanına yeni bir adla, klasör yapısını koruyarak başka bir klasöre veya dosyaların üzerine yazarak (bu durumda bir kez daha onay istenir). Özet değeri aracı sonuçları yalnızca listede gösterebilir.",
+                "Hiçbir şey yazılmadan önce, bir dosyanın yalnızca kendi sonucunu seçimlerin altında görmek için listede o dosyaya tıklayın.",
+                "Çalıştır’ı seçin. Bir dosyadaki hata diğerlerini durdurmaz; her dosyanın sonucu ayrı ayrı bildirilir."
+              ]
+            },
+            {
+              "note": "İstemediğiniz sürece sonuç mevcut bir dosyanın üzerine yazılmaz."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Windows Gezgini sağ tıklama menüsü",
+          "body": [
+            "Program Ayarları'nda Windows Gezgini bölümünden etkinleştirin. Tüm seçenekler “Syntelab Creative” başlığı altında toplanır; Windows 11'de “Daha fazla seçenek göster” menüsündedir.",
+            {
+              "points": [
+                "Syntelab Dev'de aç: Aracın okuyabildiği dosya türlerinde (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz vb.). Dosya, türüne uygun araçta açılır.",
+                "Sağlama toplamları: Herhangi bir dosya veya klasörde kullanılabilir. Özetler dosyaların yanında listelenir; hiçbir şey diske yazılmaz.",
+                "Onaltılık görünüm: Herhangi bir dosyada kullanılabilir.",
+                "Karşılaştır: İki dosya Fark aracının iki tarafına, iki klasör ise klasör karşılaştırmasına aktarılır."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kodlama",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Baytları Base64'e, Base64'ü de baytlara dönüştürür. Kodlama her dosyayı kabul eder; çözme işlemi baytları geri verir, metin olanlar gösterilir, diğerleri bir dosyaya kaydedilir.",
+            {
+              "points": [
+                "Alfabe: standart alfabe veya URL'lere uygun olan (- ve _) seçilebilir.",
+                "= ile dolgu ekleyin ve satır uzunluğunu 64, 76 ya da istediğiniz sayıda karakter olarak ayarlayın.",
+                "Çözme işlemi dolgulu veya dolgusuz her iki alfabeyi de kabul eder ve hatalı karakterin yerini bildirir."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL kodlama / çözme",
+          "body": [
+            "Tarayıcıların kullandığı yüzde kodlaması: adresin bir bölümü (düz harf olmayan her şey kodlanır), adresin tamamı (adresin kendi işaretleri korunur) veya form verisi (boşluk için +).",
+            "Bir % işaretinden sonra iki onaltılık rakam gelmiyorsa hatanın yerini bildirir."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML karakter başvuruları",
+          "body": [
+            "HTML ve XML'in özel anlam yüklediği karakterleri (&, <, > ve tırnak işaretleri) varlıklara dönüştürür ve varlıkları ad, ondalık sayı veya onaltılık sayı biçiminden geri çözer. Varlık adları HTML standardındakilerdir.",
+            "“ASCII dışındaki tüm karakterler de” seçeneği aksanlı harfleri ve diğer alfabeleri de karakter başvurusu olarak yazar."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT çözücü",
+          "body": [
+            "JSON Web Token'ı parçalarına ayırır: üst bilgisini ve içeriğini JSON olarak, iddialarını da sözcüklerle gösterir (yayınlayan, konu, hedef kitle, sona erme zamanı; “süresi dolmuş” veya “henüz süresi dolmamış” ifadesiyle).",
+            "Paylaşılan sırla imzalanmış tokenları (HS256, HS384, HS512) denetlemek için sırrı girin. Özel anahtar imzaları (RS, ES, PS) denetlenmez.",
+            {
+              "note": "Token ve sır sekmede kalır; çözme işlemi için hiçbir yere gönderilmez."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Kaçış karakterlerini ekle / kaldır",
+          "body": [
+            "Metni JSON, JavaScript, C, C++ veya Java gibi dillerde kullanılabilecek, özel karakterleri kaçırılmış bir metin dizgesine dönüştürür ve bu tür dizgeleri geri çözer."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Gzip dosyalarını okurken sıkıştırır veya açar; her boyuttaki dosyayla çalışır. Sıkıştırma düzeyini hız veya küçüklük için seçin. Metin sonucu Base64 olarak da verilebilir."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Sayı tabanları",
+          "body": [
+            "Her satırdaki tam sayıları ikilik, sekizlik, onluk ve onaltılık tabanlarda, ayrıca seçeceğiniz 36'ya kadar bir tabanda gösterir. Sayı boyutu sınırlı değildir.",
+            {
+              "points": [
+                "Taban yazımdan anlaşılır: onaltılık için 0x, ikilik için 0b, sekizlik için 0o; onaltılıkta harfler kullanılır, aksi belirtilmedikçe onluk taban kabul edilir. İsterseniz okuma tabanını seçin.",
+                "Rakamlar arasındaki boşluklar, alt çizgiler ve kesme işaretleri yok sayılır: 1_000_000.",
+                "Negatif sayılar, bilgisayar gösterimiyle (ikinin tümleyeni) ve sayıyı tutacak en küçük 8, 16, 32, 64 bitlik biçimde verilir."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Veri",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON biçimlendirici",
+          "body": [
+            "JSON'u biçimlendirir, küçültür, doğrular ve ağaç olarak gösterir. Her boyuttaki belge akış olarak okunur.",
+            {
+              "points": [
+                "Girintiyi 2 veya 4 boşluk, sekme ya da istediğiniz sayıda boşluk olarak ayarlayın.",
+                "Ek seçenekler: anahtarları sıralama, kısa listeleri tek satıra yazma, iki nokta üst üste sonrasındaki boşluk, satır sonu biçimi, sonda satır sonu ve ASCII dışındaki harfleri Unicode kaçış dizileriyle (\\uXXXX) yazma.",
+                "Esnek okuma yorumları (// ve /* */) ve sondaki virgülleri kabul eder; çıktı katı JSON olur.",
+                "Değişiklikler: null değerleri ve boş değerleri tek geçişte kaldırın.",
+                "Ağaç görünümü her seferinde bir düzeyi açar ve anahtarlarla değerlerde arama yapar."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Bir belge üzerinde JSONPath sorgusu çalıştırır (RFC 9535), örneğin $.store.book[?@.price < 10].title. Bulunan değerleri, yollarını veya ikisini birden gösterir.",
+            "Hatalı sorgularda yanlış kısmın yeri bildirilir."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema doğrulayıcı",
+          "body": [
+            "Bir belgeyi JSON Schema'ya (4 ile 2020-12 arasındaki taslaklar) göre denetler. Şemayı girdi alanının altındaki bölmeye yazın. Uymayan her öğe, konumu ve ihlal ettiği kuralla listelenir.",
+            "Birden çok dosyada her dosya aynı şemaya göre denetlenir. Başka bir dosyaya veya adrese yönlendiren $ref izlenmez."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Şema oluşturucu ve JSON'dan TypeScript'e",
+          "body": [
+            "Şema oluşturucu, örnek JSON'dan uygun JSON Schema'yı üretir. JSON'dan TypeScript'e aracı, tür bildirimlerini (arayüz veya tür; dışa aktarılan ya da değil; salt okunur ya da değil; belirttiğiniz adla) oluşturur."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "YAML'ı JSON'a, JSON'u YAML'a dönüştürür. YAML temel şemasıyla okunur; anchor ve birleştirmeler izlenir, hata konumu bildirilir."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Tabloyu JSON'a, JSON'u tabloya dönüştürür. Ayırıcı ilk satırdan algılanır veya seçilir (virgül, noktalı virgül, sekme, dikey çizgi); ilk satır başlık olabilir, sayılar ve true/false otomatik algılanabilir.",
+            "“Tablo” görünümü CSV dosyalarını her boyutta satır ve sütunlarla gösterir."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML / HTML biçimlendirici",
+          "body": [
+            "XML ve HTML'i biçimlendirir, küçültür ve denetler. XML katı biçimde okunur; kapatılmamış etiketin yeri bildirilir. HTML, tarayıcıların tolere ettiği şekilde okunur."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL biçimlendirici",
+          "body": [
+            "İfadeyi her yan tümce ayrı satırda veya tek satırda olacak şekilde düzenler; anahtar sözcükleri büyük harfle, küçük harfle ya da özgün biçimde yazar. SQL lehçesi sormaz ve ifadenin anlamını denetlemez."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Farkları karşılaştır",
+          "body": [
+            "İki metni satır satır, iki JSON belgesini içeriğine göre veya iki klasörü dosya dosya karşılaştırır. İlkini girdi alanına, ikincisini alt bölmeye yerleştirin.",
+            {
+              "points": [
+                "Yan yana görünüm değişen sözcükleri satır içinde işaretler; Birleşik görünüm diff -u biçiminde yama gösterir.",
+                "Büyük/küçük harfleri, boşlukları, boş satırları, rakamları veya noktalama işaretlerini yok sayın.",
+                "JSON'da anahtar sırası ve biçimlendirme fark sayılmaz; sonuç JSON Patch (RFC 6902) olarak da verilebilir.",
+                "Klasörlerde yalnızca birinde bulunan, aynı ve farklı dosyaları gösterir. Bir satırdaki Karşılaştır seçeneği dosya çiftini metin olarak açar."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdown önizlemesi",
+          "body": [
+            "Markdown'ı görüntüleneceği biçimde gösterir ve kopyalanabilir ya da kaydedilebilir HTML üretir. Tabloları, üstü çizili metni, görev listelerini ve dipnotları destekleyen CommonMark kullanılır.",
+            {
+              "points": [
+                "Markdown içine yazılan HTML çalıştırılmaz, metin olarak gösterilir.",
+                "Ağdan alınması gereken görseller indirilmez; yerlerinde açıklamaları ve adresleri gösterilir. Metne gömülü (data:) görseller gösterilir.",
+                "Tıkladığınız bağlantı sistem tarayıcısında açılır."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Üret",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "İstediğiniz sayıda 1, 3, 4, 5, 6 ve 7. sürüm UUID üretir (RFC 9562); tireli, düz, URN veya süslü parantezli biçimlerden birini seçin. “Parçalarına ayır” seçeneği her UUID'nin sürümünü ve içindeki zamanı ya da adı gösterir."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Özet (hash)",
+          "body": [
+            "Metin veya dosya için CRC-32, MD5, SHA-1, SHA-256, SHA-384 ve SHA-512 özetlerini birden çok algoritmayla birlikte hesaplar; sonuçları onaltılık veya Base64 biçiminde verir. Her boyuttaki dosya okunurken özetlenir.",
+            {
+              "points": [
+                "Şununla karşılaştır: sağlama toplamı yapıştırın veya .sha256 dosyasındaki satırı girin; eşleşip eşleşmediği bildirilir.",
+                "HMAC anahtarı: bu anahtarla HMAC özetleri oluşturulur.",
+                "Her satır ayrı: metindeki her satır için bir özet hesaplanır.",
+                "Dosyalar: özetler dosyaların yanında listelenir; Tümünü kopyala, sha256sum biçiminde verir."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Parolalar ve gizli diziler",
+          "body": [
+            "Seçtiğiniz karakter türleriyle parolalar, sözcüklerden parola ifadeleri ve işletim sisteminin rastgele sayılarını kullanarak onaltılık veya Base64 biçiminde rastgele baytlar üretir. Her sonucun entropi bit sayısını gösterir. Bir şey üretildikten sonra bir seçeneği değiştirmek onu yeniden üretir.",
+            "Parola ifadesi, Electronic Frontier Foundation'ın 7.776 İngilizce sözcükten oluşan uzun listesinden seçilen sözcükleri kullanır; her sözcüğün seçilme olasılığı eşittir. Altı sözcük yaklaşık 77 bit entropi sağlar."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Anahtarlar ve sertifikalar",
+          "body": [
+            "Üstten seçebileceğiniz beş işlem:",
+            {
+              "points": [
+                "Yeni anahtar: RSA, EC P-256 / P-384 / P-521 veya Ed25519. PKCS #8, eski biçim, OpenSSH ve authorized_keys satırı dâhil programların kabul ettiği biçimlerde verir; isterseniz parola ifadesiyle kilitler.",
+                "Sertifika isteği: yeni veya yapıştırdığınız anahtar için CSR; konu ve diğer adlar (SAN) dâhil.",
+                "Kendinden imzalı sertifika: aynı bilgilerle kendi anahtarıyla imzalanır ve belirttiğiniz gün sayısı geçerli olur. “Başka sertifikaları imzalayabilir” seçeneği onu kendi sertifika otoriteniz yapar.",
+                "Kendi CA'nızla imzalayın: bir isteği, otoritenizin sertifikasını ve anahtarını yapıştırın; imzalı sertifika ile sertifika zincirini alırsınız.",
+                "Oku ve dönüştür: PEM, DER, OpenSSH anahtarı, .pfx veya .p12 dosyasını, parola korumalı olsun ya da olmasın yapıştırın ya da açın. Bulduklarını ve anahtarın sertifikadaki anahtarla eşleşip eşleşmediğini bildirir; her öğeyi diğer biçimlerde verir. Anahtar ve sertifika birlikte .pfx olarak kaydedilebilir."
+              ]
+            },
+            {
+              "note": "Her şey bu bilgisayarda oluşturulur. Anahtar, Tümünü sil'e basana kadar sekmede kalır; kaydetmediğiniz sürece başka yere yazılmaz."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "İncele",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Düzenli ifade test aracı",
+          "body": [
+            "Metinde JavaScript düzenli ifadesini dener: eşleşmeleri, yakalama gruplarını ve konumlarını gösterir ya da eşleşmeleri değiştirerek metni verir. g, i, m, s, u, y bayraklarını destekler.",
+            "Desen pencereden ayrı çalışır; 20 saniyeden uzun süren işlem sonlandırılır."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron açıklayıcı",
+          "body": [
+            "Zamanlamanın ne anlama geldiğini ve ne zaman çalışacağını açıklar: crontab (beş alan, saniyelerle altı, yılla yedi), Quartz, AWS EventBridge cron() ve rate() ile systemd OnCalendar. Her satıra bir zamanlama yazın.",
+            {
+              "points": [
+                "Seçtiğiniz saat diliminde sonraki çalıştırmaları, isterseniz önceki çalıştırmaları da gösterir.",
+                "Haftanın günleri, seçiminize göre Pazar için 0’dan veya Quartz’ın yaptığı gibi 1’den başlayarak numaralandırılır. Saniye içeren ve ayrıca yıl, L, W veya # bulunan bir satır Quartz satırıdır ve kendiliğinden Quartz’a göre okunur.",
+                "Aynı zamanlamayı kopyalamak veya girdiye eklemek üzere diğer biçimlerde verir.",
+                "Oluşturucu, her alanı seçerek zamanlama kurar; “Oluşturucuda düzenle” yazdığınız zamanlamayı oluşturucuya aktarır."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix zaman damgası",
+          "body": [
+            "Her satırda bir anı okur: 1970’ten bu yana saniye, milisaniye, mikrosaniye veya nanosaniye ya da bilinen biçimlerde yazılmış bir tarih (ISO 8601, e-posta ve HTTP’nin yazdığı gibi, Git’in yazdığı gibi). Her birini seçtiğiniz saat diliminde, UTC’de ve tüm zaman damgası türlerinde gösterir."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL ayrıştırıcı",
+          "body": [
+            "URL'yi tarayıcıların okuduğu gibi parçalara ayırır: şema, kullanıcı, ana bilgisayar (punycode yazımının Unicode karşılığıyla), port, yol, çözülmüş sorgu parametreleri ve parça."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Sertifika çözücü",
+          "body": [
+            "PEM veya DER biçimindeki X.509 sertifikalarını okur ve içindeki tüm bilgileri gösterir: konu, veren, geçerlilik, adlar, anahtar, uzantılar ve parmak izleri.",
+            "Sertifikayı okur; güvenilir olup olmadığına karar vermez. Bir sitenin sunduğu sertifikayı ve bu bilgisayarın ona güvenip güvenmediğini görmek için Ağ → Site sertifikası aracını kullanın."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Hex görüntüleyici",
+          "body": [
+            "Her boyuttaki dosyanın veya yapıştırılan metnin baytlarını gösterir: her satırın konumunu, baytları ve aynı baytların harf karşılıklarını.",
+            {
+              "points": [
+                "0x1F4, 1F4h veya 500 biçiminde yazılmış konuma gidin.",
+                "Baytları (DE AD BE EF) veya metni (UTF-8 ya da iki yönde UTF-16) ileri veya geri arayın.",
+                "Bir bayta tıklayın: yan panelde her boyuttaki sayı olarak, her iki bayt sıralamasında, karakter ve zaman biçiminde gösterilir.",
+                "Sürükleyerek, Shift veya ok tuşlarıyla seçim yapın; seçimi onaltılık, kod, Base64 veya metin olarak kopyalayın ya da dosyaya kaydedin."
+              ]
+            },
+            {
+              "note": "Dosyanın içeriğini yalnızca görüntüler; hiçbir şeyi değiştirmez."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ağ",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Ağ araçlarının çalışma biçimi",
+          "body": [
+            "Dev'de çevrimiçi olan yalnızca bu dört araçtır ve yalnızca belirttiğiniz adreslere gider.",
+            {
+              "points": [
+                "Yalnızca yazdığınız adrese, düğmeye bastığınızda bağlanılır. Arka planda hiçbir bağlantı kurulmaz.",
+                "Gönderilen, yazdığınız içeriktir. İsteğe, siz kendi değerinizi vermediğiniz sürece herkes için aynı olan User-Agent (“Syntelab Creative”) dışında bir şey eklenmez.",
+                "Çerez saklanmaz; sizin veya bilgisayarınız hakkında bilgi gönderilmez, yazdıklarınız da saklanmaz."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP istemcisi",
+          "body": [
+            "Elle yazılmış tek bir istek gönderir: yöntem, adres, başlıklar (her satıra Ad: değer) ve yazdığınız ya da her boyutta dosyadan aldığınız gövde.",
+            {
+              "points": [
+                "Yanıtın durum kodunu, toplam ve ilk bayta kadar geçen süreyi, boyutunu, başlıklarını ve gövdesini gösterir; gövdeyi türüne göre renklendirir, JSON ise biçimlendirir. Metin olmayan bir gövde (bir resim, bir PDF) olduğu gibi gösterilir ve geldiği gibi kaydedilir.",
+                "Yönlendirmeleri izleyin veya ilk yanıtı olduğu gibi görün. İsteğin gönderildiği adresler listelenir.",
+                "Sertifikayı bu bilgisayarın güvendiği sertifikalara göre doğrulayın; bu seçeneği yalnızca kendi sunucularınız için kapatın.",
+                "“Gönder, yanıtı dosyaya kaydet” gövdeyi her boyutta ilerleme göstergesi ve Durdur düğmesiyle doğrudan diske yazar.",
+                "“curl olarak kopyala” aynı isteği komut biçiminde verir."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS sorgusu",
+          "body": [
+            "Bir adın DNS kayıtlarını ad sunucusundan ister: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY veya birden çok kayıt türü. Adres girildiğinde adı (PTR) bulunur.",
+            "Sorgu; bilgisayarın kullanmak üzere ayarlandığı ad sunucusuna, herkese açık bir sunucuya (1.1.1.1, 8.8.8.8, 9.9.9.9), HTTPS üzerinden bir çözümleyiciye (Cloudflare, Google) veya yazdığınız sunucuya gönderilir."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Port denetimi",
+          "body": [
+            "Bir ana bilgisayarın TCP bağlantılarına hangi portlarda yanıt verdiğini bildirir: tek port, birkaç port veya 65.535'e kadar bir aralık (22, 80, 443, 8000-8100). Her port, belirlediğiniz süre içinde açık, kapalı ya da yanıtsız olarak gösterilir.",
+            {
+              "note": "Yalnızca size ait olan veya denetleme izniniz bulunan ana bilgisayarları deneyin."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Site sertifikası",
+          "body": [
+            "Güvenli bağlantı kurulduğunda sitenin sunduğu sertifikaları gösterir: kimin için düzenlendiklerini, kimin imzaladığını, kaç gün geçerli kaldıklarını, bu bilgisayarın onlara güvenip güvenmediğini ve nedenini, TLS sürümünü ve şifre takımını. Yalnızca el sıkışma yapılır; istek gönderilmez.",
+            {
+              "points": [
+                "example.com, example.com:8443 veya bir web adresi yazın.",
+                "E-posta ve FTP sunucularıyla bağlantı önce şifresiz kurulur, ardından TLS'ye geçmeleri istenir (STARTTLS). Portu (25, 587, 143, 110, 21) seçin veya elle belirleyin.",
+                "“Tüm ayrıntılar” sertifikalardaki bütün bilgileri gösterir; “PEM” kopyalayabileceğiniz veya kaydedebileceğiniz biçimde verir."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ayarlar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Dev ayarları",
+          "body": [
+            "Dosya → Ayarlar, program ayarlarının Dev bölümünü açar.",
+            {
+              "points": [
+                "Her aracı kendi sekmesinde veya seçildiği sekmede açın.",
+                "Yeni sekmeyi son kullanılan araçta ya da ilk sayfada açın.",
+                "Tüm araçların seçeneklerini ve sabitlemelerini programın ilk hâline döndürün."
+              ]
+            },
+            "Windows Gezgini sağ tıklama menüsü, dil, tema ve kısayol tuşları programın genel Ayarlar bölümündedir."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Dev hakkında",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Dev hakkında",
+          "body": [
+            "Dev, Syntelab Creative'in geliştiricilere yönelik uygulamasıdır: kodlayan ve çözen, biçimlendiren ve denetleyen, verileri bir biçimden diğerine dönüştüren ve okunması zor içerikleri parçalara ayıran araçlar sunar.",
+            "Her şey bu bilgisayarda yapılır. Araçlara yazdığınız, yapıştırdığınız veya açtığınız hiçbir şey saklanmaz ya da başka bir yere gönderilmez. Dosya boyutu veya sayısı sınırlandırılmaz; sınırlar bilgisayarın belleği ve diskidir.",
+            "Uygulama yenidir ve geliştirilmeye devam etmektedir. İşiniz için yetersiz kaldığı yerleri Yardım → Geri bildirim üzerinden bize iletin."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Dev hangi bileşenlerle oluşturuldu",
+          "body": [
+            {
+              "points": [
+                "Düzenleyiciler: CodeMirror, https://codemirror.net . MIT lisansı. Copyright (C) 2018-2021 Marijn Haverbeke ve diğerleri.",
+                "Düzenleyicilerde JSON okuma ve renklendirme: @codemirror/lang-json, https://github.com/codemirror/lang-json ; @codemirror/language ve @lezer/highlight ile. MIT lisansı. Copyright (C) 2018-2021 Marijn Haverbeke ve diğerleri.",
+                "Düzenleyicilerde YAML, XML, HTML ve SQL okuma ve renklendirme: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (@codemirror/lang-css ve @codemirror/lang-javascript ile); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . MIT lisansı. Copyright (C) 2018-2024 Marijn Haverbeke ve diğerleri.",
+                "Bir belgeyi JSON Schema'ya göre denetleme: jsonschema, https://github.com/Stranger6667/jsonschema . MIT lisansı. Copyright (c) 2020-2026 Dmitry Dygalo. Ağ işlevi olmadan oluşturulmuştur; Dev hiçbir şemayı ağdan almaz.",
+                "JSONPath desen eşleştirme ve arama: regex, https://github.com/rust-lang/regex . MIT veya Apache-2.0 lisansı. Copyright (c) 2014 The Rust Project Developers.",
+                "YAML okuma: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . MIT veya Apache-2.0 lisansı. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. YAML yazımını Dev kendi yapar.",
+                "İki metni karşılaştırma (Fark): similar, https://github.com/mitsuhiko/similar . Apache-2.0 lisansı. Yazarlar: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . MIT veya Apache-2.0 lisansı. Copyright (c) 2014-2026 Alex Crichton.",
+                "Özet değeri aracının özetleri ve token imzaları: sha2, sha1 ve md-5, https://github.com/RustCrypto/hashes . MIT veya Apache-2.0 lisansı. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation ve RustCrypto geliştiricileri.",
+                "Tarih, saat ve saat dilimleri (Unix zaman damgası, Cron açıklayıcı): jiff, https://github.com/BurntSushi/jiff ve IANA veritabanının saat dilimleri. Unlicense veya MIT lisansı. Copyright (c) 2015 Andrew Gallant.",
+                "URL ayrıştırma: url ve idna, https://github.com/servo/rust-url . MIT veya Apache-2.0 lisansı. Copyright (c) 2013-2025 The rust-url developers.",
+                "X.509 sertifikalarını okuma: x509-parser, https://github.com/rusticata/x509-parser . MIT veya Apache-2.0 lisansı. Copyright (c) 2017 Pierre Chifflier.",
+                "Düzenli ifade denetleyicisi, programın arayüzünü oluşturan WebView'ın JavaScript altyapısını kullanır (Windows'ta Microsoft Edge WebView2); ek bir kitaplık kullanılmaz.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . MIT veya Apache-2.0 lisansı. Copyright (c) 2018 Sam Rijs, Alex Crichton ve katkıda bulunanlar.",
+                "UUID'ler: uuid, https://github.com/uuid-rs/uuid . Apache-2.0 veya MIT lisansı. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC ve Hunar Roop Kahlon.",
+                "İşletim sisteminden alınan parola, sır ve UUID'lere yönelik rastgele baytlar: getrandom, https://github.com/rust-random/getrandom . MIT veya Apache-2.0 lisansı. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "RSA anahtarları ve imzaları: rsa, https://github.com/RustCrypto/RSA ; num-bigint-dig, https://github.com/dignifiedquire/num-bigint ile. MIT veya Apache-2.0 lisansı. Copyright (c) RustCrypto Developers ve dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "NIST eğrilerinin (P-256, P-384, P-521) anahtarları ve imzaları: p256, p384, p521, https://github.com/RustCrypto/elliptic-curves ; gerekli ecdsa, elliptic-curve ve crypto-bigint ile. Apache-2.0 veya MIT lisansı. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Ed25519 anahtarları ve imzaları: ed25519-dalek ve curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . BSD 3-Clause lisansı. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft ve Henry de Valence. Tüm hakları saklıdır.",
+                "Anahtarların, isteklerin ve sertifikaların yazıldığı biçimler (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER ve PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Apache-2.0 veya MIT lisansı. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "OpenSSH anahtar dosyaları: ssh-key, https://github.com/RustCrypto/SSH ; bcrypt-pbkdf, aes, ctr, chacha20 ve anahtar kilitlemede gereken diğer RustCrypto şifreleme ve özet bileşenleriyle ( https://github.com/RustCrypto ). Apache-2.0 veya MIT lisansı. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "PKCS #12 dosyaları (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore ; gereken RustCrypto pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 ve scrypt bileşenleriyle. MIT veya Apache-2.0 lisansı. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Anahtarların üretildiği rastgele sayılar işletim sisteminden alınır: rand_core, https://github.com/rust-random/rand . MIT veya Apache-2.0 lisansı. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "HTTP istemcisi: ureq, https://github.com/algesten/ureq . MIT veya Apache-2.0 lisansı. Copyright (c) 2019 Martin Algesten.",
+                "HTTP istemcisinin ve “Site sertifikası” aracının güvenli bağlantıları (TLS): rustls, https://github.com/rustls/rustls , Apache-2.0, ISC veya MIT lisansı, Copyright (c) 2016 Joseph Birr-Pixton; rustls-webpki ile, https://github.com/rustls/webpki , ISC lisansı, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , Apache-2.0 ve ISC lisansları; webpki-roots, https://github.com/rustls/webpki-roots , CDLA-Permissive-2.0 lisansı.",
+                "Bu bilgisayarın sertifikaya güvenip güvenmediğini belirleme: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . MIT veya Apache-2.0 lisansı. Copyright (c) 2022 1Password.",
+                "Markdown okuma: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . MIT lisansı. Copyright 2015 Google Inc. Tüm hakları saklıdır.",
+                "UTF-8 dışındaki kodlamalarda yazılmış dosyaları okuma: encoding_rs, https://github.com/hsivonen/encoding_rs , Apache-2.0 veya MIT lisansı (verileri BSD-3-Clause lisanslıdır); chardetng, https://github.com/hsivonen/chardetng , Apache-2.0 veya MIT lisansı. Copyright Mozilla Foundation.",
+                "Parola ifadelerinde kullanılan sözcükler: Electronic Frontier Foundation'ın EFF Large Wordlist for Passphrases listesi, https://www.eff.org/dice . Creative Commons Attribution 3.0 United States lisansı altında kullanılır ( https://creativecommons.org/licenses/by/3.0/us/ ). Liste değiştirilmeden kullanılır.",
+                "OpenSSL'in eski yöntemiyle kilitlenmiş anahtarları açma: RustCrypto'nun aes, cbc ve des bileşenleri, https://github.com/RustCrypto . MIT veya Apache-2.0 lisansı. Copyright (c) RustCrypto Developers.",
+                "Dev için kitaplık kullanılmadan yazılanlar: DNS sorgusu (sorguların yazımı ve yanıtların RFC 1035'e göre okunması) ve port denetimi.",
+                "Dev için kitaplık kullanılmadan yazılanlar: JSON'u akış olarak okuma ve yazma, JSONPath (RFC 9535), Base64, yüzde kodlama, HTML karakter varlıkları (adları HTML standardındandır, https://html.spec.whatwg.org ), metin kaçışları, JSON Web Token okuma, YAML yazma, iki yönlü CSV, cron zamanlamalarını okuma, XML ve HTML biçimlendirici ile SQL biçimlendirici."
+              ]
+            },
+            "Programın geri kalanıyla paylaştığı bilgiler “Syntelab Creative hakkında” bölümündedir."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Dev henüz neleri yapamıyor",
+          "body": [
+            {
+              "points": [
+                "Token imzası yalnızca paylaşılan sırla oluşturulduğunda denetlenir (HS256, HS384, HS512).",
+                "JSON Schema doğrulayıcı, kitaplığında olduğu gibi uymayan öğeleri İngilizce bildirir ve başka bir dosyaya veya adrese yönlendiren $ref'i izlemez.",
+                "SQL biçimlendirici SQL lehçesi sormaz ve ifadenin anlamını denetlemez; yalnızca bitmeyen dizge veya yorumu bildirir.",
+                "YAML ile YAML'a dönüştürülen JSON veya CSV dönüştürme sırasında bellekte bütünüyle tutulur. JSON'a dönüştürülen CSV, XML, HTML ve SQL ise boyutundan bağımsız olarak okunurken işlenir.",
+                "CSV tablosu salt okunurdur: henüz içine yazılamaz ve içinden kopyalama yapılamaz.",
+                "Fark aracı iki dosyanın her satırı için 16 baytlık bir bölüm tutar, dosyaların tamamını belleğe almaz. İki JSON belgesi ise karşılaştırmadan önce yeniden yazıldıkları için bellekte bütünüyle tutulur.",
+                "Her iki tarafta da tam olarak bir kez bulunan hiçbir satır içermeyen bir satır dizisi, bir saniyenin izin verdiği ölçüde karşılaştırılır. Bildirilen farklar doğrudur ancak her zaman mümkün olan en az sayıda fark olmayabilir.",
+                "Fark aracı satır sonlarını (CRLF veya LF) karşılaştırmaz.",
+                "İki klasör, dosyalarının baytlarına göre karşılaştırılır; dosyalar adları birebir eşleşerek karşılaştırılır.",
+                "İnceleme araçlarının verdiği bilgiler, adları İngilizce olan JSON biçimindedir.",
+                "Düzenli ifade denetleyicisi PCRE veya Rust değil, JavaScript düzenli ifadelerini çalıştırır. Yalnızca görüntülenebilecek metin üzerinde çalışır, diskteki dosyada değil; 20 saniyeden uzun süren desen sonlandırılır.",
+                "Sertifika çözücü sertifikayı okur, ancak güvenilir olup olmadığını denetlemez: sertifika zincirini veya imzasını doğrulamaz, iptal edilip edilmediğini de kontrol etmez.",
+                "UTF-8 dışındaki metin dosyaları yalnızca görüntülenebilecek kadar küçük olduklarında okunur. Diskten işlenen daha büyük dosyaların UTF-8 olması gerekir.",
+                "Araca bırakılan dosyanın en fazla 16 MB'ı alınır. Pencereye dosyanın diskteki konumu bildirilmediğinden daha büyük dosyaları Dosya aç ile açın.",
+                "Parola ifadeleri yalnızca İngilizce sözcüklerden oluşturulur.",
+                "Cron açıklayıcı: oluşturucu crontab zamanlamaları kurar (beş alan veya saniyelerle altı alan); L, W, # ya da ? içeren zamanlamalar oluşturucuya aktarılamaz. AWS rate() zamanlamasının çalışma saatleri, kuralın oluşturulma anına göre hesaplandığından gösterilemez. systemd için yaygın takvim olayları okunur; saniye kesirleri veya ay sonundan geriye sayılan gün listeleri desteklenmez.",
+                "Hex görüntüleyici yalnızca görüntüler; dosyayı değiştirmez. Metin sütununda diğer alfabeler değil, ASCII veya Batı Avrupa harfleri gösterilir. Bayt veya metin aranabilir, desen aranamaz.",
+                "Anahtarlar ve sertifikalar: RSA, P-256, P-384 ve P-521 eğrileri ile Ed25519 anahtarları desteklenir; diğerleri (DSA, secp256k1, X25519) okunmaz. OpenSSL'in eski yöntemiyle kilitlenmiş anahtarlar yalnızca şifreleme AES veya 3DES ise açılır. .pfx dosyası bir anahtar ve onun sertifikalarını içerir. Çok büyük bir RSA anahtarı oluşturmak zaman alabilir ve işlem yarıda durdurulamaz. RSA anahtarı oluşturan kitaplığın, ağ üzerinden çok sayıda imzanın zamanlamasını ölçebilen saldırganlara karşı bilinen bir zayıflığı vardır (RUSTSEC-2023-0071); burada anahtarlar bilgisayarınızda oluşturulup yazılır ve başka biri için imza atılmaz.",
+                "HTTP istemcisi: HTTP/1.1 kullanır (HTTP/2 veya 3 değil); istekler arasında çerez saklamaz; çok parçalı (multipart) formları sizin için oluşturmaz. 16 MB'tan büyük veya metin olmayan yanıtlar için istek yeniden gönderilerek yanıt dosyaya yazılır.",
+                "DNS sorgusu imzaları (DNSSEC) gösterir ancak doğrulamaz. Port denetimi yalnızca TCP'yi dener; yanıt vermeyen UDP portunun kapalı olup olmadığı belirlenemez. Site sertifikası aracı sertifikanın iptal edilip edilmediğini sorgulamaz.",
+                "Sağ tıklama menüsü Windows Gezgini içindir; Windows 11'de seçenekleri “Daha fazla seçenek göster” altında bulabilirsiniz."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+.chooser {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.count {
+  flex: 1 1 140px;
+  font-weight: 600;
+}
+
+.pages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+  max-height: 46vh;
+  padding: 4px;
+  overflow-y: auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  border: 2px solid transparent;
+  border-radius: var(--sc-radius-m);
+  background: none;
+  color: var(--sc-muted);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.page:hover {
+  background: var(--sc-surface-2);
+}
+
+/* A page left out is pale; a page that goes in has the frame. */
+.page[aria-pressed='false'] .picture {
+  opacity: 0.35;
+}
+
+.page[aria-pressed='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+  color: var(--sc-text);
+  font-weight: 600;
+}
+
+.picture {
+  display: block;
+  background: var(--sc-paper);
+  box-shadow: var(--sc-shadow-s);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}

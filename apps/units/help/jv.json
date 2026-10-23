@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Konversi",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Konverter",
+          "body": [
+            "Units ngonversi nilai saka satuan ukur siji menyang liyane: siji nilai kanthi cepet, utawa sakabehe tabel nilai sekaligus. Kabeh diitung ing komputer sampeyan.",
+            "Konverter ana ing nem menu: Dhasar, Obah lan mekanika, Energi lan daya, Ilmiah, Digital lan media, lan Fisika khusus. Yen milih salah sijine, tabele bakal kabukak.",
+            {
+              "points": [
+                "Konverter kabukak ing tab sing lagi sampeyan enggo. Yen tabele wis ana nilaine, sampeyan bakal ditakoni dhisik: Terusake (nilai-nilaine ilang), Bukak ing tab anyar, utawa Batal.",
+                "Setelan → Units → “Bukak saben konverter ing tab dhewe” mbukak saben konverter sing sampeyan pilih ing tab anyar.",
+                "Berkas → Menyang Wiwitan bali menyang kaca kapisan Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Konversi cepet",
+          "body": [
+            "Kaca kapisan Units, Konversi cepet, ngonversi siji nilai saka satuan siji menyang liyane. Pilih konverter, ketik nilaine ing sisih “Saka”, banjur pilih satuan loro-lorone: asile ana ing sisih “Menyang”.",
+            {
+              "points": [
+                "Saben sisih nampilake satuan populer saka konverter kasebut lan satuan gawean sampeyan dhewe, uga panelusuran ing antarane. Tabel konverter ngemot kabeh satuan.",
+                "Tombol ing antarane sisih loro kasebut ngijolake satuan loro-lorone.",
+                "Tetenger ing sandhinge satuan nyematake satuan kasebut: satuan sing disematake tampil paling dhisik ing dhaptar loro-lorone lan ing panel satuan tabel.",
+                "Tombol ing asil nyalin asil kasebut; × mbusak nilaine.",
+                "“Bukak ing tabel” mbukak tabel konverter kasebut."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Kepiye angka diwaca lan ditulis",
+          "body": [
+            "Sampeyan bisa ngetik lan nempel angka kaya ditulis ing negara-negara sing beda: 1,234.56 lan 1.234,56 padha dimangerteni, semono uga spasi lan apostrof ing antarane ewon, lan 1.5e-3 kanggo pangkat sepuluh.",
+            "Angka sing bisa diwaca rong cara (1,234: sewu, utawa siji luwih sithik) diwaca miturut cara basa program nulis angka, lan baris ing sangisore tabel ngandhakake mangkono.",
+            "Asil ditulis nganggo desimal saka satuan tujuane, ora nganggo cacahe digit sing sampeyan ketik: 5 cm iku 1.97 in. Nilai sing dudu nol mesthi nuduhake sawetara digit sing ana tegese, dadi 1 cm iku 0.00001 km lan ora tau 0.000 km.",
+            "Nilai sing kegedhen utawa kecilen kanggo diwaca sakeplasan ditulis nganggo pangkat sepuluh, kaya 1.6 × 10⁻³⁵. Tampilan → Nilai ekstrem lengkap nulis nilai-nilai kasebut kanthi kabeh nole.",
+            "Yen satuan ora duwe nilai kaya mangkono (tekanan swara nol ora duwe desibel), sel nuduhake tandha strip."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabel",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Baris lan kolom",
+          "body": [
+            "Saben kolom iku satuan lan saben baris iku nilai. Sel sing sampeyan ketiki nemtokake barise: kolom liyane nuduhake nilai sing padha ing satuane dhewe-dhewe. Sel sing diketik ditampilake kandel.",
+            "Apa wae sing dudu angka tetep disimpen lan ditampilake abang; barise ora ngonversi apa-apa nganti sampeyan mbenerake.",
+            {
+              "points": [
+                "Klik kaping pindho ing sel, utawa langsung wiwit ngetik ing kono, kanggo nyunting. Enter mudhun, Tab nengen; tombol panah kanggo pindhah; Escape ninggal sel kaya sadurunge.",
+                "Klik pojok (#) kanggo milih kabeh tabel, nomer baris kanggo milih barise, irah-irahan kanggo milih kolome. Shift+klik milih sawijining rentang, Ctrl+klik nambah sel, nyeret uga bisa milih.",
+                "Home lan End menyang kolom kapisan lan pungkasan ing baris; Ctrl+Home menyang sel kapisan tabel, Ctrl+End menyang sing pungkasan. Ctrl karo panah menyang pinggir tabel: baris kapisan utawa pungkasan, kolom kapisan utawa pungkasan. Page Up lan Page Down pindhah sak layar. Nganggo Shift, saben tombol kasebut malah mekarake pilihan.",
+                "Pilihan sawetara sel diwenehi garis ing sisih njabane; sel panggonan ngetik tetep ora diwarnai ing njerone.",
+                "Delete ngosongake baris sing dipilih.",
+                "Ngetik ing baris pungkasan nambah baris. Tabel ora duwe wates isi: dawane sa-oleh-olehe memori komputer sampeyan (siji baris butuh 16 byte, dadi 100 yuta baris butuh kira-kira 1.5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Kolom lan panel satuan",
+          "body": [
+            "Panel ing sandhinge tabel nampilake satuan saka konverter. Ing pucuke ana satuan sing ana ing tabel: klik salah siji kanggo ngetokake kolome. Ing sangisore, kabeh satuan: goleki miturut jeneng utawa simbol, saring miturut klompok utawa miturut “Populer”, banjur klik satuan kanggo nambahake dadi kolom.",
+            "Tetenger ing sandhinge satuan nyematake satuan kasebut minangka favorit: tampil paling dhisik ing dhaptar lan dadi sing kapisan ing Konversi cepet.",
+            {
+              "points": [
+                "Kolom-kolom mbagi jembar tabel padha rata nganti irah-irahane wis ora muat; sawise iku tabel digulung mangiwa-nengen.",
+                "Seret pinggir irah-irahan kanggo ngowahi jembar kolome; klik kaping pindho pinggir kasebut kanggo nyelarasake kolom karo nilai sing paling dawa. Kolom nomer baris uga bisa diseret.",
+                "Tombol ⋮ ing kolom: pindhah mangiwa utawa nengen, semat ing pinggir kiwa utawa tengen, owahi presisine, utawa busak.",
+                "Presisi kolom mung ngowahi kolom kasebut. “Gunakake kanggo satuan iki ing ngendi wae” ndadekake presisi kasebut presisine satuan, ing saben tabel lan ing Konversi cepet.",
+                "Tombol kanthi panah loro ing sandhinge Wurungake lan Baleni nyelarasake kolom karo tabel: kabeh jembar sing diseret utawa diselarasake ilang, lan kolom-kolom mbagi jembar tabel padha rata maneh.",
+                "Rong perangan ndhuwur panel, satuan ing tabel lan “Tambah satuan” (panelusuran lan saringan), bisa dilempit kanthi ngeklik jenenge, supaya dhaptar luwih jembar."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Wurungake, salin, tempel, impor lan ekspor",
+          "body": [
+            "Bilah ing sadhuwure tabel ngemot pirantine.",
+            {
+              "points": [
+                "Wurungake lan Baleni (Ctrl+Z, Ctrl+Y) ngliwati saben owah-owahan tabel. Siji tempelan utawa siji impor iku siji langkah.",
+                "Salin (Ctrl+C) nyalin kabeh tabel utawa sing dipilih, kaya spreadsheet macane. “Dibalik (baris dadi kolom)” ngowahi baris dadi kolom.",
+                "Tempel (Ctrl+V) nglebokake baris sing disalin menyang tabel wiwit sel aktif mudhun. Yen baris kapisan ngemot irah-irahan satuan, kolom-kolom dicocogake miturut irah-irahan kasebut, lan satuan sing durung ana ing tabel ditambahake.",
+                "Impor maca buku kerja Excel, berkas CSV utawa TSV kanggo ngganti isi tabel. “Goleki format kanthi otomatis” ngenali jinise saka berkase.",
+                "Ekspor nulis tabel minangka Excel, CSV, TSV utawa JSON. Yen ana koma sadurunge desimal, CSV ditulis nganggo titik koma, kaya sing dikarepake spreadsheet. Siji lembar Excel ngemot 1,048,576 baris: tabel sing luwih dawa diterusake ing lembar-lembar sabanjure ing buku kerja sing padha, kanthi irah-irahan sing padha.",
+                "Pambusak ngosongake baris sing dipilih; tong sampah ngosongake kabeh tabel."
+              ]
+            },
+            "Siji baris ngemot siji nilai. Saka baris sing ditempel utawa diimpor sing duwe sawetara nilai, sing kapisan dijupuk lan liyane diitung saka iku.",
+            "Baris sing akeh banget butuh wektu kanggo ditempel, diimpor, diekspor utawa disalin. Kertu ing sadhuwure tabel banjur nuduhake sepira adohe pakaryan, ing persen lan ing baris, karo tombol Endhegake. Tempelan utawa impor sing diendhegake ninggal tabel kaya sadurunge; ekspor sing diendhegake ora nulis berkas apa-apa.",
+            "Yen komputer wis ora duwe memori kanggo baris-baris kasebut, ora ana sing diowahi lan baris ing sangisore tabel ngandhakake pira sing dibutuhake. Yen baris-barise muat nanging tabel sing lawas ora bisa disimpen ing sandhinge, sampeyan bakal ditakoni apa arep nerusake tanpa wurungake: owah-owahan kasebut, lan sing sadurunge, banjur ora bisa dibalekake maneh. Sadurunge takon, langkah-langkah Wurungake sing paling lawas diculake supaya ana papan.",
+            "Opsi tabel (gir): apa sing ditulis ing irah-irahan kolom (jeneng lan simbol, jeneng, utawa simbol), apa salinan lan ekspor nyertakake irah-irahan lan nomer baris, “Wiwiti konverter iki nganggo kolom-kolom iki”, lan “Balekake tabel kaya wiwitan”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Konverter khusus",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Mata uang",
+          "body": [
+            "Mata uang ora duwe faktor tetep: regane owah-owahan. Konverter mata uang maca kurs saka rong layanan gratis nalika sampeyan nggunakake, lan mung nalika iku.",
+            {
+              "points": [
+                "Mata uang negara: Rates By Exchange Rate API, https://www.exchangerate-api.com . Kurs iki owah sepisan sedina ing sumbere, lan ora diwaca luwih kerep saka iku.",
+                "Kriptokurensi: Powered by CoinGecko, https://www.coingecko.com . Diwaca nalika konverter dibukak utawa bali ing ngarep lan data sing diduweni luwih lawas saka seprapat jam, lan nalika sampeyan mencet Anyari; ora tau nganggo timer."
+              ]
+            },
+            "Mung kurs sing dijaluk. Ora ana apa-apa babagan sampeyan sing dikirim, lan ora tau jumlah sing sampeyan konversi.",
+            "Baris ing sangisore tabel, lan ing sangisore asil Konversi cepet, ngandhakake wektu kurs kasebut. Tanpa sambungan, kurs pungkasan sing dienggo lan ditandhani wis lawas. Mata uang sing ora diwenehi kurs dening layanan nuduhake tandha strip.",
+            "Setelan → Units → Mata uang: “Maca kurs saka jaringan” bisa dipateni, lan konverter banjur nggunakake kurs pungkasan sing disimpen. “Tampilake jeneng sumber ing sandhinge kurs” nuduhake utawa ndhelikake jeneng layanan loro kasebut ing baris kasebut.",
+            "Kurs iki mung kanggo informasi. Aja gumantung marang kurs iki kanggo transaksi."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Basis angka",
+          "body": [
+            "Satuan ing konverter iki yaiku cara nulis angka wutuh: basis 2 nganti 64, angka Romawi, basis 60 nganggo titik loro (1:30:15), desimal kode biner (BCD) lan kode Gray. Nilaine awujud teks: ketik FF ing heksadesimal lan kolom liyane nuduhake 255, 11111111 lan sapanunggalane.",
+            "Angka Romawi wiwit saka I nganti MMMCMXCIX (1 nganti 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Satuan sing dudu faktor prasaja",
+          "body": [
+            "Akehe satuan iku faktor saka satuan liyane. Ana sing ora, lan Units ngonversi miturut definisine: suhu karo offset-e; konsumsi bahan bakar (liter saben 100 km lawan mil saben galon); dawa gelombang lawan frekuensi; konduktansi lawan resistansi; derajat Baumé, API, Brix lan Plato lawan kapadhetan; desibel lawan tekanan lan intensitas swara; kemiringan ing persen lawan sudute.",
+            "Suhu lan bedane suhu iku ora padha: 100 °C iku 212 °F, nanging beda 100 °C iku beda 180 °F. Satuan ing klompok “Beda (Δ)” ngonversi ing antarane dhewe; ing antarane satuan kasebut lan skala suhu, sel nuduhake tandha strip."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Satuan gawean sampeyan dhewe",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Nggawe satuan",
+          "body": [
+            "Sampeyan bisa nambah satuan gawean dhewe ing konverter apa wae. Ing panel satuan, pilih “Satuan anyar”, wenehi jeneng lan simbol, lan terangna nganggo satuan sing wis ana.",
+            {
+              "points": [
+                "Faktor: “1 langkah = 0.75 m”. Kanggo skala sing ora wiwit saka nol, uga apa sing ditambahake sawise dipingake.",
+                "Rumus: kepiye nilai dadi satuan liyane, nganggo x kanggo nilaine, lan rumus kanggo arah baline. Contone x * 9 / 5 + 32 lan (x - 32) * 5 / 9."
+              ]
+            },
+            "Apa sing sampeyan ketik dicoba sauntara sampeyan ngetik, lan regane siji satuan sampeyan ditampilake sadurunge sampeyan nyimpen. Rumus bisa nganggo + − × ÷ ^, kurung, x, pi, e, lan fungsi sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos lan atan. Rumus iku diitung, ora tau dilakokake minangka program.",
+            "Satuan sampeyan ana ing sangisore “Duwekku” ing panel, ing kono bisa diowahi lan dibusak. Satuan sampeyan bisa diterangake nganggo satuan sampeyan liyane; mbusak satuan uga mbusak satuan sing diterangake nganggo satuan kasebut.",
+            "Setelan → Units nampilake satuan sampeyan saka saben konverter, lan ngekspor lan ngimpor minangka teks sing bisa sampeyan simpen utawa pindhah menyang komputer liya."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Setelan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Setelan Units",
+          "body": [
+            "Berkas → Bukak Setelan mbukak setelan Units; semono uga opsi tabel (gir ing bilahe).",
+            {
+              "points": [
+                "Bukak saben konverter ing tab dhewe, utawa ing tab sing lagi dienggo.",
+                "Nilai ekstrem lengkap, apa sing ditulis ing antarane ewon (10000,000, 10 000,000 utawa 10.000,000; ora ana apa-apa, kajaba sampeyan milih liyane), lan nomer baris.",
+                "Mata uang: apa kurs diwaca saka jaringan, lan apa jeneng layanan ditampilake ing sandhinge.",
+                "Presisi satuan: pilih konverter (utawa “Satuan sing wis sampeyan owahi”), goleki satuan, lan atur desimale nganggo − lan +; panah mbalekake menyang presisi asline satuan kasebut. “Gunakake kanggo satuan iki ing ngendi wae” ing menu kolom ngatur nilai sing padha.",
+                "Satuan wiwitan tabel: konverter sing kolom kapisane wis sampeyan pilih, saben-saben karo cara bali menyang kolom gawan.",
+                "Satuan gawean sampeyan dhewe."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Babagan Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Babagan Units",
+          "body": [
+            "Units iku aplikasi konverter saka Syntelab Creative: 38 konverter kanthi luwih saka 1,500 satuan, saka dawa lan suhu nganti mata uang lan basis angka. Nilai sing diketik sepisan ditampilake ing saben satuan sing sampeyan jaluk, ing tabel sing bisa ngemot siji nilai utawa mayuta-yuta.",
+            "Angka diitung kanthi persis, minangka pecahan, lan mung dibunderake nalika ditulis. Kabeh ditindakake ing komputer iki; mung kurs mata uang sing diwaca saka jaringan, lan iku bisa dipateni.",
+            "Aplikasi iki isih anyar. Yen ana kekurangan kanggo pakaryan sampeyan, kandhani kita liwat Pitulung → Panemu: kanthi mangkono kita ngerti apa sing kudu digarap."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Pira baris sing bisa dimuat tabel: apa sing kita ukur",
+          "body": [
+            "Tabel ora duwe wates baris sing tetep: dawane sa-oleh-olehe memori komputer sampeyan. Siji baris butuh 16 byte, dadi 100 yuta baris butuh kira-kira 1.5 GB. Yen memori entek, tabel tetep kaya sadurunge lan program ngandhakake pira sing dibutuhake.",
+            "Kita ngukur nganggo 50,000,000 baris, saben baris siji angka ing siji kolom, ing build program sing wis dioptimalake:",
+            {
+              "points": [
+                "Nempel 50,000,000 baris: kira-kira 7 detik.",
+                "Ngimpor saka berkas CSV: 12 detik.",
+                "Ngekspor menyang berkas CSV, karo kolom kapindho sing dikonversi: kira-kira 3.5 menit.",
+                "Ngekspor menyang Excel, ing 48 lembar: 4.3 menit."
+              ]
+            },
+            "Ngekspor luwih suwe tinimbang ngimpor amarga saben sel sing ditulis dikonversi kanthi persis dhisik.",
+            {
+              "note": "Komputer sing dienggo uji coba: AMD Ryzen 9 9950X3D (16 inti, 32 thread), memori 64 GB, Windows 11 Pro. Oktober 2026. Ing komputer liya wektune bakal beda; ukuran siji baris ora."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Units digawe nganggo apa",
+          "body": [
+            {
+              "points": [
+                "Angka persis: pustaka num saka Rust (pecahan saka angka wutuh ukuran apa wae).",
+                "Satuan, faktor lan klompoke: berkas data program, siji kanggo saben konverter.",
+                "Maca buku kerja Excel lan OpenDocument: calamine. Nulis buku kerja Excel: rust_xlsxwriter.",
+                "Papan klip sistem, kanggo nyalin lan nempel baris sing akeh banget: arboard.",
+                "Kurs mata uang: ExchangeRate-API lan CoinGecko (deleng “Mata uang”)."
+              ]
+            },
+            "Apa sing dienggo bebarengan karo bagean program liyane ana ing “Babagan Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Apa sing durung bisa ditindakake Units",
+          "body": [
+            {
+              "points": [
+                "Siji baris ngemot siji nilai: saka baris sing ditempel kanthi sawetara nilai, sing kapisan dijupuk.",
+                "Ngekspor baris sing akeh banget iku alon (deleng apa sing kita ukur).",
+                "Apa sing disalin menyang papan klip disimpen ing memori minangka siji teks sadurunge ditempel.",
+                "Kurs mata uang mung saanyar sing diwenehake rong sumbere: sepisan sedina kanggo mata uang negara."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Teksten en bestanden",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "De editor",
+          "body": [
+            "Scribe is een editor voor platte tekst met de hulpmiddelen ernaast. Elke tekst heeft een tabblad; de tekst staat in het midden, het hulpmiddelenpaneel ernaast en een informatieregel eronder.",
+            "Bij het openen vraagt Scribe eerst wat je wilt doen: woorden tellen, zoeken en vervangen, duplicaten verwijderen, twee teksten vergelijken, regels sorteren, tekst omkeren of opvultekst of willekeurige tekst schrijven. Elke keuze opent de tekst met het bijbehorende hulpmiddel ernaast. ‘Een lege tekst’ opent alleen de tekst; onlangs geopende teksten staan eronder.",
+            {
+              "points": [
+                "Bestand → Nieuwe tekst (Ctrl+N) begint een lege tekst.",
+                "Bestand → Openen (Ctrl+O) opent één of meer bestanden, elk in een eigen tabblad. Elk tekstbestand kan worden geopend: .txt, .md, .csv, .log, .srt, broncode en andere.",
+                "Bewerken → Ongedaan maken (Ctrl+Z) en Opnieuw uitvoeren (Ctrl+Y) doorlopen alle tekstbewerkingen. Een hulpmiddel of recept telt als één stap.",
+                "Bewerken → Zoeken en vervangen (Ctrl+F) opent een balk in de editor waarmee je van de ene overeenkomst naar de volgende gaat.",
+                "Bewerken → Alles selecteren (Ctrl+A)."
+              ]
+            },
+            "De regel onder de tekst toont de cursorpositie, de omvang van de selectie, het aantal regels, woorden en tekens, de bestandscodering en de regeleinden.",
+            "Bestanden die je op het venster sleept, worden ook geopend, elk als nieuwe tekst met de naam, codering en regeleinden van het bestand. Het programma ontvangt de inhoud maar niet de schijflocatie, dus bij opslaan wordt een locatie gevraagd. Open bestanden groter dan 64 MB via Bestand → Openen.",
+            "Een nieuwe, lege tekst toont de onlangs geopende teksten: klik erop om er een te openen. ‘De lijst vergeten’ wist de lijst; deze wordt alleen op deze computer bewaard."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Opslaan en Opslaan als",
+          "body": [
+            "Het bestand op schijf verandert pas wanneer je opslaat. Een stip op het tabblad betekent dat de tekst wijzigingen bevat die nog niet in het bestand staan. Bij het sluiten van zo’n tabblad wordt eerst om bevestiging gevraagd.",
+            {
+              "points": [
+                "Opslaan (Ctrl+S) schrijft de tekst over het eigen bestand. Bij een nieuwe tekst wordt een locatie gevraagd.",
+                "Opslaan als (Ctrl+Shift+S) schrijft naar een nieuw bestand, dat vervolgens bij het tabblad hoort. De bewerkingsgeschiedenis blijft behouden en het oude bestand blijft ongewijzigd."
+              ]
+            },
+            "Een bestand wordt volledig geschreven of helemaal niet: als het schrijven mislukt, blijft het bestaande bestand behouden.",
+            {
+              "note": "Een bestand wordt opgeslagen zoals het werd geopend: met dezelfde codering en regeleinden. Tekst uit Windows en tekst uit Linux behouden beide hun oorspronkelijke vorm."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Coderingen en regeleinden",
+          "body": [
+            "Een codering bepaalt hoe letters als bytes worden bewaard. Scribe leest wat het bestand over zichzelf vermeldt en schat de codering als die informatie ontbreekt. De meeste huidige bestanden gebruiken UTF-8; oudere bestanden uit Midden-Europa vaak windows-1250.",
+            {
+              "points": [
+                "Zien letters er verkeerd uit (Ã£ in plaats van ă, of vierkantjes)? Kies Bestand → ‘Opnieuw lezen met een andere codering’ en kies de codering waarin het bestand is geschreven.",
+                "Kies een andere codering op de regel onder de tekst en sla op om het bestand daarin te bewaren. Als de tekst letters bevat die niet in die codering passen, vermeldt Scribe welke en wordt niets geschreven.",
+                "Regeleinden (Windows CRLF, Linux en macOS LF, oude Mac CR) wijzig je op dezelfde plek. Gemengde regeleinden worden gemeld; bij het opslaan krijgen alle regels hetzelfde type."
+              ]
+            },
+            "De begininstellingen voor nieuwe tekst kies je in Instellingen."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Hoe de tekst wordt weergegeven",
+          "body": [
+            {
+              "points": [
+                "Alles in het menu Beeld is een schakelaar: aan betekent zichtbaar, uit betekent verborgen.",
+                "Tekst: Lange regels laten omlopen (Alt+Z) — een regel die langer is dan het venster gaat op de volgende schermregel verder, zonder de tekstregels te wijzigen; Regelnummers; Resultaat naast de tekst.",
+                "Naast de tekst: Hulpmiddelen (Ctrl+T), Recepten, Statistieken. Het paneel toont alleen ingeschakelde onderdelen; als alles uitstaat, verdwijnt het paneel.",
+                "Getoonde hulpmiddelen: elke groep (zoeken en vervangen, regels, hoofdletters en letters, opschonen, tekst schrijven) kan uit het paneel worden weggelaten. Een hulpmiddel uit het menu Opmaak of Hulpmiddelen wordt altijd getoond: het onderdeel en de groep verschijnen vanzelf weer.",
+                "De dubbele pijl bovenaan het paneel klapt het in tot een strook aan de rand, vanwaar elk onderdeel met één klik bereikbaar is. Sleep de rand om het paneel breder of smaller te maken.",
+                "Het lettertype en de lettergrootte kies je in Instellingen."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Zeer grote bestanden",
+          "body": [
+            "Een bestand groter dan 64 MB wordt niet in de editor geladen: het opent in een tabblad dat telkens 500 regels toont, gelezen terwijl je bladert. Bestanden van meerdere gigabytes openen zo in de tijd die nodig is om ze eenmaal te doorlopen.",
+            {
+              "points": [
+                "‘Vorige pagina’ en ‘Volgende pagina’ bladeren door het bestand; met een regelnummer en ‘Ga’ spring je naar elke gewenste regel.",
+                "Zoeken doorzoekt het hele bestand met dezelfde opties als elders en toont de gevonden plaatsen. Klik op een resultaat om naar de regel te gaan. Een lange lijst verschijnt in delen, via ‘Meer zoeken’.",
+                "‘Een recept uitvoeren op het hele bestand’ schrijft het resultaat met dezelfde naam naar een gekozen map. Het oorspronkelijke bestand verandert hier nooit.",
+                "‘Volledig openen in de editor’ laadt het bestand toch in de editor om het handmatig te bewerken. Dit kan langzaam zijn en vereist een veelvoud van de bestandsgrootte aan geheugen."
+              ]
+            },
+            {
+              "note": "Bestanden met twee bytes per letter (UTF-16) kunnen niet per pagina worden getoond. Een recept houdt tijdens de uitvoering het hele bestand in het geheugen: de grens is het computergeheugen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hulpmiddelen",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Hoe hulpmiddelen werken",
+          "body": [
+            "De hulpmiddelen staan in groepen in het paneel naast de tekst. Klik op een hulpmiddel om de opties te zien en kies daarna Toepassen.",
+            {
+              "points": [
+                "Als er iets is geselecteerd, wijzigt het hulpmiddel alleen de selectie; anders de hele tekst. Bovenaan het paneel staat welke van beide geldt.",
+                "Onder de knop vermeldt het hulpmiddel wat het heeft gedaan: hoeveel regels of plaatsen zijn gewijzigd.",
+                "Elk hulpmiddel telt als één stap: Ongedaan maken draait de hele bewerking terug.",
+                "Elk hulpmiddel staat ook in de menu’s en in de opdrachtenzoekfunctie: hulpmiddelen die de tekstvorm wijzigen (regels, hoofdletters en letters, opschonen) staan in Opmaak, de andere in Hulpmiddelen. Een keuze daar opent het paneel bij de opties van het hulpmiddel."
+              ]
+            },
+            "In het menu Opmaak worden hulpmiddelen die vooral om één keuze draaien als afzonderlijke opties getoond: elke hoofdletterbewerking, elk type aanhalingsteken en elke manier om tekst om te keren heeft een eigen opdracht. Deze opent het hulpmiddel met die optie geselecteerd. Als een groep niet in het venster past, wordt deze één knop die de volledige lijst opent.",
+            "De hulpmiddelen werken op deze computer. Er verlaat geen tekst de computer."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Het resultaat vóór het toepassen",
+          "body": [
+            "Terwijl een hulpmiddel open is, zie je het verwachte resultaat naast de tekst in het deelvenster ‘Resultaat’. De tekst verandert pas wanneer je Toepassen kiest. Het resultaat volgt je wijzigingen: als je een optie of de tekst verandert, wordt het opnieuw berekend.",
+            {
+              "points": [
+                "Tekst en resultaat staan naast elkaar met koppen van gelijke hoogte, zodat overeenkomstige regels even hoog beginnen. Ze scrollen samen; de kettingknop schakelt dat uit.",
+                "Regels die zouden veranderen zijn gemarkeerd, met het gewijzigde deel donkerder. Verplaatste en nieuwe regels hebben elk een eigen kleur. Regels die worden gewijzigd of verwijderd, zijn ook in je tekst gemarkeerd.",
+                "Onder de namen zie je de aantallen: gewijzigde, verplaatste, nieuwe en verwijderde regels, plus regels en tekens vóór en na de bewerking.",
+                "Onder het resultaat staan de te verwijderen regels. Klik op een regel om er in de tekst naartoe te gaan.",
+                "De kleine knoppen bij het resultaat: kopiëren, als nieuwe tekst openen, in een tabblad met de tekst vergelijken, samen scrollen, onder in plaats van naast de tekst plaatsen en verbergen. De tekst heeft eigen knoppen: ongedaan maken, opnieuw uitvoeren, kopiëren, vervangen door klembordinhoud, alles selecteren en wissen.",
+                "Sleep de balk ertussen om één kant meer ruimte te geven; dubbelklik om beide weer even groot te maken."
+              ]
+            },
+            "Na Toepassen meldt het resultaatvenster dit (‘Toegepast. De tekst links is nu het resultaat.’) en biedt het Ongedaan maken en ‘Vergelijken met de oorspronkelijke tekst’ aan. Die laatste opent dezelfde vergelijking van vóór en na de bewerking. Zodra je de tekst of een optie wijzigt, verschijnt weer een resultaat.",
+            {
+              "note": "Beeld → ‘Resultaat naast de tekst’ schakelt het deelvenster uit en in. Bij zeer lange tekst (meer dan twee miljoen tekens) verschijnt vooraf geen resultaat: pas het hulpmiddel toe en gebruik Ongedaan maken om terug te keren."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Overal vervangen",
+          "body": [
+            "Vervangt alle overeenkomsten tegelijk. Terwijl je de zoektekst typt, vermeldt Scribe hoeveel overeenkomsten er zijn en markeert deze in de tekst, zodat je vóór het toepassen ziet wat er verandert.",
+            {
+              "points": [
+                "‘Reguliere expressie’: de zoektekst is een patroon. In ‘Vervangen door’ staan $1, $2… voor de tekst die de patroongroepen hebben gevonden.",
+                "‘Hoofdlettergevoelig’: a en A zijn verschillende letters.",
+                "‘Alleen hele woorden’: ‘kat’ wordt niet gevonden binnen ‘katoen’.",
+                "‘Hoofdlettergebruik van de vervangen tekst behouden’: ‘kat’ vervangen door ‘hond’ verandert ‘Kat’ in ‘Hond’ en ‘KAT’ in ‘HOND’."
+              ]
+            },
+            {
+              "points": [
+                "‘Meer keuzes’ → ‘Invullen…’: de vervangtekst kan velden bevatten die bij elke overeenkomst worden ingevuld. {counter} telt 1, 2, 3… ({counter:10} begint bij 10, {counter:10:5} verhoogt telkens met 5); {date} en {time} zijn de datum en tijd van je computer; {uuid} is een identificator; {random} geeft 8 willekeurige letters en cijfers ({random:12} voor 12).",
+                "Onder de zoektekst vermeldt Scribe ook op hoeveel regels de overeenkomsten staan en hoeveel verschillende teksten ze bevatten."
+              ]
+            },
+            "‘Meerdere tegelijk vervangen’ voert een lijst met paren in één stap uit. Schrijf één paar per regel: zoeken naar => vervangen door. Ze worden van boven naar beneden uitgevoerd, elk op het resultaat van het vorige; een lege tweede helft verwijdert de tekst.",
+            {
+              "note": "Een patroon kan het programma niet laten vastlopen: de benodigde tijd groeit hoogstens evenredig met de tekstlengte. Patronen die terugverwijzen naar eerder gevonden tekst (\\1) zijn daarom niet beschikbaar."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Regels",
+          "body": [
+            {
+              "points": [
+                "Sorteer regels op letters zoals in een woordenboek, in de programmataal of een gekozen taal (in het Roemeens komt ă na a; in het Zweeds ä na z, in het Duits naast a); letters met getallen als getallen (file2 vóór file10); het getal aan het begin; lengte; aantal woorden; de begindatum (05.03.2024, 2024-03-05, met of zonder tijd); internetadressen; versienummers (1.2.10 na 1.2.9); titels waarbij een beginlidwoord niet meetelt; een eigen volgorde (small, medium, large); of zonder vaste volgorde.",
+                "Regels zonder bruikbare sorteerwaarde (geen getal, geen datum of een waarde buiten je eigen volgorde) blijven achteraan, zowel bij oplopend als aflopend sorteren.",
+                "Meer sorteeropties: vergelijken vanaf een woord of teken, of op één tabelkolom met een opgegeven scheidingsteken; de eerste regel als kop behouden; alinea’s in plaats van regels sorteren; en eerst opschonen — witruimte aan de randen, lege regels en duplicaten verwijderen.",
+                "Dubbele regels verwijderen: behoud de eerste, de laatste of geen enkele herhaalde regel (alleen unieke regels blijven). Hoofdletters, omliggende spaties, cijfers, leestekens en een aantal tekens aan het begin of einde kunnen afzonderlijk worden genegeerd. Je kunt alleen een kolom of alleen een patroonovereenkomst vergelijken. Lege regels worden als gewone regels behandeld, behouden, verwijderd of samengevoegd.",
+                "Herhaalde regels tellen: behoudt elke regel eenmaal met het aantal voorkomens ervoor — meest voorkomend eerst, minst voorkomend eerst of in de oorspronkelijke volgorde.",
+                "Regels behouden of verwijderen: zoekt iets in elke regel en behoudt alleen regels die het bevatten, of alleen regels die het niet bevatten.",
+                "Regelvolgorde omkeren; Regels door elkaar schudden.",
+                "Regels nummeren: beginnummer, tekst erachter, voorloopnullen voor uitlijning en lege regels zonder nummer.",
+                "Lege regels: verwijder ze allemaal of behoud één regel waar er meerdere staan.",
+                "Regels samenvoegen tot één regel met een gekozen scheidingsteken; splitsen bij elke komma, puntkomma of andere tekst. Waar je een scheidingsteken invoert (nummeren, samenvoegen, splitsen, tellen), staat \\t voor een tab, die niet rechtstreeks in het veld kan worden getypt."
+              ]
+            },
+            {
+              "note": "Een optie die alleen samen met een andere relevant is, verschijnt pas dan: bijvoorbeeld de kolom zodra je op kolom vergelijkt. Minder vaak benodigde opties staan onder ‘Meer keuzes’."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Hoofdletters",
+          "body": [
+            "Hoofdletters wijzigen: hoofdletter aan het begin van de zin, elk woord met een hoofdletter, alles in hoofdletters, alles in kleine letters, omgekeerd en naamnotaties voor code: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Hoofdletters volgen de regels van elk alfabet, niet alleen die van het Engels.",
+            "In de groep Richting keert ‘Tekst omkeren’ de letters van elke regel, de woordvolgorde of de letters van elk woord om. ‘Ondersteboven’ maakt tekst leesbaar vanaf de overkant van de tafel en ‘In spiegelbeeld’ verwisselt ook tekens met een linker- en rechtervorm. Letters worden geteld zoals een lezer ze ziet: een letter met diakritische tekens blijft één letter."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Opschonen",
+          "body": [
+            {
+              "points": [
+                "Spaties opschonen: meerdere spaties worden één; spaties aan de regeleinden verdwijnen.",
+                "Witruimte aan regeleinden verwijderen: aan beide kanten, alleen het begin of alleen het einde.",
+                "Aanhalingstekens: recht, Engels, Roemeens, Duits of Frans.",
+                "Diakritische tekens verwijderen: ă wordt a, é wordt e. Alleen in het Latijnse en Griekse alfabet, waar een letter zonder het teken nog steeds dezelfde letter is.",
+                "Roemeense letters herstellen: ş en ţ (met cedille, van oudere toetsenborden) worden ș en ț (met komma), de juiste Roemeense letters.",
+                "Tabs naar spaties en spaties naar tabs, met een gekozen tabbreedte.",
+                "HTML-tags verwijderen: voor broncode van een webpagina die in de tekst is geplakt. Tags, scripts en stijlen verdwijnen; wat een lezer zou zien blijft over. Gebruik het hulpmiddel eronder, ‘Tekst van een webpagina’, om een pagina via het adres op te halen.",
+                "Tekst van een webpagina: typ het adres (example.com/page) en kies ‘Tekst ophalen’. Wat een lezer op die pagina zou zien, wordt op de cursorpositie ingevoegd, zonder tags, scripts of stijlen. Dit is het enige Scribe-hulpmiddel dat internet gebruikt, en alleen op jouw verzoek: de geïnstalleerde browser (Microsoft Edge of Google Chrome) haalt de pagina op zonder venster, cookies of aanmeldingen; het programma zelf verstuurt niets. Een pagina waarvoor je moet aanmelden geeft alleen wat een onbekende bezoeker zou zien."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Roemeense diakritische tekens herstellen",
+          "body": [
+            "Roemeense tekst zonder ă, â, î, ș, ț krijgt deze tekens terug.",
+            {
+              "steps": [
+                "Open het hulpmiddel in de groep Opschonen en kies Toepassen.",
+                "Woorden met één juiste vorm worden direct gewijzigd: ‘stiu’ wordt ‘știu’, ‘informatii’ wordt ‘informații’.",
+                "Woorden die op meerdere manieren kunnen worden gelezen (fata, fată, fața, față) verschijnen onder de knop, elk met hun plaats in de tekst. Klik voor elk op de juiste vorm.",
+                "Of vink vóór het toepassen ‘Bij twijfel automatisch de waarschijnlijkste vorm kiezen’ aan: er wordt niets gevraagd en je moet het resultaat nalezen."
+              ]
+            },
+            "Als de omliggende woorden voldoende duidelijkheid geven, beslist Scribe op basis daarvan: ‘o casa’ wordt ‘o casă’, ‘casa mea’ blijft behouden, ‘pentru ca’ wordt ‘pentru că’.",
+            {
+              "note": "Dit hulpmiddel is voor Scribe gebouwd op basis van veelgebruikte woorden en uitgangen die het Roemeens altijd met diakritische tekens schrijft. Onbekende woorden (zeldzame woorden, namen) blijven zoals ingevoerd en woorden met bestaande diakritische tekens worden nooit gewijzigd. Lees het resultaat na voordat je het verstuurt."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Tekst schrijven: opvultekst en willekeurige tekst",
+          "body": [
+            "De hulpmiddelen in ‘Tekst schrijven’ veranderen niets: ze schrijven. Het resultaat komt op de cursorpositie, ter vervanging van de selectie.",
+            {
+              "points": [
+                "Opvultekst: alinea’s, zinnen, woorden, lijsten, koppen of paginadelen (een kop, alinea’s, een lijst). In drukkerslatijn (lorem ipsum), Engels, Roemeens, kantoor- of keukenwoorden of eigen woorden. Meer opties: korte, gemiddelde of lange zinnen; platte tekst, Markdown, HTML of JSON; kopniveau; een tekenlimiet (afgekapt op een heel woord en met een afgeronde zin); weg te laten woorden.",
+                "Verzonnen gegevens: namen, e-mailadressen, telefoonnummers, straatadressen, datums of getallen, één per regel, uit Roemenië of Engelstalige landen. ‘Regels volgens mijn patroon’ schrijft elke regel naar wens, met {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} en {row} voor de gegenereerde waarden — snel een tabel om iets mee uit te proberen.",
+                "Willekeurige tekst: wachtwoorden (letters, cijfers en tekens, minstens één van elk), letters, cijfers, hexadecimale tekst of identificatoren (UUID), op één of meerdere regels. Gemakkelijk te verwarren tekens (0 en O, 1, l en I) kunnen worden weggelaten.",
+                "Een startwaarde (onder ‘Meer keuzes’) levert voor hetzelfde getal telkens dezelfde opvultekst en verzonnen gegevens op; 0 geeft telkens iets nieuws."
+              ]
+            },
+            {
+              "note": "Wachtwoorden worden op deze computer gemaakt met de willekeurigheidsbron van het besturingssysteem en nergens naartoe gestuurd. Verzonnen e-mailadressen eindigen op example.com, waar niemand berichten ontvangt; een willekeurig telefoonnummer kan van iemand zijn, dus bel het niet."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recepten",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Bewerkingen als recept bewaren",
+          "body": [
+            "Een recept is een lijst hulpmiddelen met hun instellingen, bewaard onder een naam en opnieuw uit te voeren met één klik.",
+            {
+              "steps": [
+                "Pas de gewenste hulpmiddelen op een tekst toe, in de gewenste volgorde.",
+                "Open ‘Recepten’ bovenaan het paneel: de toegepaste hulpmiddelen staan in een lijst.",
+                "Kies ‘Bewaren als recept’ en geef het een naam.",
+                "Open later het recept en kies ‘Uitvoeren op de tekst’: alle stappen worden uitgevoerd en met één keer Ongedaan maken draai je ze allemaal terug."
+              ]
+            },
+            "Recepten worden op deze computer bewaard en zijn bij elke tekst beschikbaar."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Een recept wijzigen of vanaf nul maken",
+          "body": [
+            "‘Wijzigen’ bij een geopend recept toont de naam en stappen. Je kunt elke stap omhoog of omlaag verplaatsen, verwijderen en andere opties geven. Nieuwe hulpmiddelen voeg je toe vanuit de lijst onder de stappen. Er wordt niets bewaard totdat je ‘Opslaan’ kiest.",
+            "‘Nieuw recept’ begint zonder stappen. Je bouwt het op dezelfde manier op, zonder de hulpmiddelen eerst op tekst toe te passen.",
+            {
+              "note": "Hulpmiddelen die tekst schrijven (opvultekst, willekeurige tekst) zijn geen receptstappen: een recept bewerkt tekst."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Een recept op bestanden uitvoeren",
+          "body": [
+            {
+              "steps": [
+                "Open het recept en voeg onder ‘Uitvoeren op bestanden’ bestanden of een map met submappen toe.",
+                "Kies de bestemming: een andere map, waarbij de oorspronkelijke bestanden behouden blijven, of de bestanden zelf overschrijven.",
+                "Voer het recept uit. Scribe vermeldt hoeveel bestanden zijn geschreven, hoeveel geen wijziging nodig hadden en welke niet konden worden verwerkt, met de reden."
+              ]
+            },
+            "Elk bestand behoudt de oorspronkelijke codering en regeleinden. In een andere map blijft de mappenstructuur behouden en wordt een bestaand bestand nooit overschreven.",
+            {
+              "note": "Bestanden overschrijven kan niet vanuit Scribe ongedaan worden gemaakt. Bewaar een kopie als ze belangrijk zijn."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistieken, vergelijken en mappen",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistieken",
+          "body": [
+            "‘Statistieken’ bovenaan het paneel toont waaruit de tekst of selectie bestaat. Elk onderdeel kan worden ingeklapt.",
+            {
+              "points": [
+                "Bovenaan: woorden, tekens met en zonder spaties, zinnen, alinea’s, regels, pagina’s en grootte in bytes.",
+                "Tijd: stil lezen, hardop uitspreken, typen en met de hand schrijven.",
+                "Woorden: aantal verschillende woorden en hun aandeel, letters per woord, lettergrepen, langste en kortste woord en het aantal woorden per lengte.",
+                "Zinnen: woorden per zin, aantallen korte, gemiddelde en lange zinnen, mededelende zinnen, vragen en uitroepen, plus de langste en kortste zin.",
+                "Leesbaarheid: een score van 0 (zeer moeilijk) tot 100 (zeer gemakkelijk), volgens de formule voor de teksttaal. Er zijn formules voor Engels, Duits, Spaans, Frans, Italiaans, Nederlands, Portugees en Russisch. Een taal zonder formule krijgt geen score, omdat een formule voor een andere taal misleidend zou zijn.",
+                "Meest voorkomende inhoud: de meest gebruikte woorden met hun aandeel in de tekst en terugkerende groepen van twee en drie woorden.",
+                "Ruimte binnen gebruikelijke limieten: hoeveel tekens er over of te veel zijn voor een titel, beschrijving, kort bericht en andere tekstsoorten."
+              ]
+            },
+            "Woorden en zinnen worden herkend volgens de regels van elk schrift. Daardoor worden ook Chinees, Japans en Thai geteld, die geen spaties tussen woorden gebruiken. De snelheden voor de tijdschattingen en het aantal woorden per pagina stel je in bij Instellingen."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Twee teksten vergelijken",
+          "body": [
+            {
+              "points": [
+                "Hulpmiddelen → ‘Met een andere tekst vergelijken’: de editortekst naast een tekst die je typt of plakt.",
+                "Hulpmiddelen → ‘Vergelijken met een bestand’: de huidige editortekst naast een gekozen bestand.",
+                "Hulpmiddelen → ‘Twee teksten vergelijken’: twee teksten die je naast elkaar typt of plakt.",
+                "Hulpmiddelen → ‘Twee bestanden vergelijken’."
+              ]
+            },
+            "De teksten staan naast elkaar. Regels die alleen in de eerste staan, zijn als verwijderd gemarkeerd; regels alleen in de tweede als toegevoegd. In gewijzigde regels zijn de afwijkende woorden gemarkeerd. Alleen verschillen met enkele omliggende regels worden getoond; de pijlen gaan van het ene verschil naar het volgende.",
+            "Hoofdletters, spaties, lege regels, getallen en leestekens kunnen afzonderlijk worden genegeerd. ‘In één kolom’ toont verwijderde tekst boven toegevoegde tekst, elk met een eigen teken, in plaats van naast elkaar. Naast de aantallen vermeldt Scribe de overeenkomst als het aandeel gelijke regels.",
+            "Een tekst verschijnt zodra je deze kiest, ook als de andere nog ontbreekt. Sleep de balk tussen de teksten om één kant meer ruimte te geven. Tijdens het typen kun je de balk onder de invoervakken omhoog of omlaag slepen voor meer ruimte voor de tekst of vergelijking. Dubbelklik om een balk terug te zetten.",
+            "Als meerdere opeenvolgende regels zijn gewijzigd, wordt elke regel naast de meest gelijkende geplaatst. Daardoor lijkt niet elke volgende regel gewijzigd wanneer er tussendoor één regel is toegevoegd of verwijderd.",
+            "‘Typ of plak de teksten’ toont een invoervak boven elke kolom. De inhoud wordt tijdens het typen vergeleken en je kunt voor beide kanten nog steeds een bestand kiezen."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Zoeken en vervangen in een map",
+          "body": [
+            {
+              "steps": [
+                "Hulpmiddelen → ‘Zoeken in een map’ (Ctrl+Shift+F), en kies de map. Submappen worden ook doorzocht.",
+                "Typ de zoektekst met dezelfde opties als bij ‘Overal vervangen’. ‘Bestandstypen’ beperkt het zoeken tot bepaalde extensies (txt, md, csv…).",
+                "Elke overeenkomst wordt in de eigen regel getoond, per bestand. Klik op een regel om het bestand daar te openen.",
+                "Om te vervangen: typ de nieuwe tekst, vink bestanden uit die ongewijzigd moeten blijven en kies ‘De bestanden schrijven’."
+              ]
+            },
+            "Er wordt pas geschreven op jouw verzoek en alleen naar aangevinkte bestanden. Elk bestand behoudt de oorspronkelijke codering en regeleinden.",
+            {
+              "note": "Verborgen mappen en door programma’s gevulde mappen (.git, node_modules) worden overgeslagen tenzij je ze inschakelt. Bestanden die geen tekst bevatten, worden altijd overgeslagen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Instellingen",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "De instellingen van Scribe",
+          "body": [
+            "Bestand → Instellingen opent de programma-instellingen bij het onderdeel Scribe.",
+            {
+              "points": [
+                "De editor: een lettertype met vaste breedte of het programmalettertype, lettergrootte, regelomloop, regelnummers en vooraf tonen van het hulpmiddelresultaat.",
+                "Nieuwe tekst: regeleinden en of het bestand met een bytevolgordemarkering begint.",
+                "Statistieken: snelheden voor lezen, spreken, typen en handschrift, en het aantal woorden per pagina.",
+                "De sneltoetsen van Scribe."
+              ]
+            },
+            "Elke instelling heeft een knop om de standaardwaarde te herstellen."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Over Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Over Scribe",
+          "body": [
+            "Scribe is de tekstapp van Syntelab Creative: een editor met hulpmiddelen naast de tekst. De app toont vooraf wat een hulpmiddel doet, schoont lijsten op en ordent ze, zoekt en vervangt in tekst of een hele map, vergelijkt twee teksten, analyseert de tekstinhoud, schrijft opvultekst en verzonnen gegevens en bewaart veelgebruikte bewerkingen als herhaalbare recepten.",
+            "Alles gebeurt op deze computer. Er is geen opzettelijke limiet aan de grootte of het aantal teksten: de grenzen zijn het computergeheugen en de mogelijkheden van de huidige technologie.",
+            "De app is nieuw. Laat via Help → Feedback weten waar deze voor jouw teksten tekortschiet: zo weten we waaraan we moeten werken."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Waarmee Scribe is gebouwd",
+          "body": [
+            {
+              "points": [
+                "De editor: CodeMirror.",
+                "Coderingen lezen en schrijven: encoding_rs, met chardetng om de codering te schatten wanneer een bestand deze niet vermeldt.",
+                "Zoeken en vervangen: de regex-bibliotheek van Rust, waarvan patronen het programma niet kunnen laten vastlopen.",
+                "Sorteren volgens de taal en woorden en zinnen herkennen in elk schrift: ICU4X, de Unicode-bibliotheek.",
+                "Teksten vergelijken: de bibliotheek similar.",
+                "Roemeense diakritische tekens: een woordenlijst en regels die voor Scribe zijn geschreven."
+              ]
+            },
+            "Wat de app met de rest van het programma deelt, staat onder ‘Over Syntelab Creative’."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Wat Scribe nog niet kan",
+          "body": [
+            {
+              "points": [
+                "Een zeer groot bestand wordt pagina voor pagina gelezen en alleen via recepten gewijzigd. Handmatig bewerken vereist dat je het volledig opent, wat geheugen kost.",
+                "Het herstel van Roemeense diakritische tekens kent veelgebruikte woorden; zeldzame woorden en namen blijven zoals getypt.",
+                "Er is geen spellingcontrole.",
+                "Hier wordt geen tekst uit PDF- of kantoordocumenten gehaald; die open je met PDF Organizer.",
+                "De editor kleurt code of Markdown niet in.",
+                "Een bestand dat je op het venster sleept, opent als nieuwe tekst: het programma ontvangt de bestandslocatie niet, dus bij het opslaan wordt een locatie gevraagd."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

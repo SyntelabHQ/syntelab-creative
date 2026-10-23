@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Başlarken",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Syntelab Creative nedir?",
+          "body": [
+            "Syntelab Creative, uygulamalardan oluşan tek bir programdır. Her uygulama belirli bir iş yapar:",
+            {
+              "points": [
+                "PDF Organizer PDF belgelerini açar, düzenler, değiştirir ve imzalar.",
+                "Scribe, metinleri temizleyen, sıralayan, karşılaştıran ve dönüştüren araçlara sahip bir metin düzenleyicisidir.",
+                "Units uzunluk, sıcaklık, para birimleri ve daha birçok ölçü birimi arasında dönüşüm yapar.",
+                "Dev; geliştiriciler için kodlama ve kod çözme, biçimlendirme ve denetleme, verileri bir biçimden diğerine dönüştürme araçlarını bir araya getirir."
+              ]
+            },
+            "Uygulamalar aynı pencereyi, ayarları ve çalışma biçimini paylaşır; birinde öğrendikleriniz diğerinde de geçerlidir.",
+            {
+              "note": "Her şey bilgisayarınızda gerçekleşir. Belgeleriniz hiçbir yere gönderilmez; sizin veya çalışmalarınız hakkında bilgi toplanmaz."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Pencere",
+          "body": [
+            {
+              "points": [
+                "Yan çubuk: ev simgesi Başlangıç'a götürür; altında uygulamalarınız, en altta program haberleri, Geri bildirim, Destek ve Ayarlar bulunur.",
+                "Bir uygulamada Dosya → Başlangıç sayfasına git, uygulamanın başlangıç sayfası varsa oraya götürür (Units, Scribe). Dosya → Ayarları aç (Ctrl+,), Ayarlar'ın o uygulamaya ait bölümünü açar; diğer bölümlere buradan tek tıkla geçebilirsiniz.",
+                "Üstteki sekmeler: açtığınız her belge, dosya panosu veya araç kendi sekmesinde görünür. Sekmedeki nokta, kaydedilmemiş değişiklikler olduğunu gösterir.",
+                "Sekmelerin altındaki uygulama menüleri; menü çubuğu, şerit veya yan panel biçiminde gösterilebilir. Tercihinizi siz seçersiniz.",
+                "Pencerenin geri kalanında öndeki sekmenin içeriği görünür."
+              ]
+            },
+            "Kaydedilmemiş değişiklikleri olan bir sekmeyi veya programı kapatırken önce kaydetmeniz sorulur."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Başlangıç",
+          "body": [
+            "Başlangıç'ta uygulamalarınız ve en son açtığınız dosyalar gösterilir. Bir uygulamayı açmak için uygulamaya, son dosyalardan birini yeniden açmak için dosyaya tıklayın.",
+            "Uygulamaları kart, adlı simge veya yalnızca simge olarak gösterebilir, istediğiniz sıraya sürükleyebilirsiniz. Klavyeyle sıralamak için Alt ve ok tuşlarını kullanın. ‘Varsayılana sıfırla’ ilk sıraya döndürür.",
+            "Windows Başlat menüsünde her uygulamanın kendi kısayolu da bulunur; örneğin ‘Syntelab PDF Organizer’ veya ‘Syntelab Units’. Kısayol programı doğrudan ilgili uygulamayla açar. Program zaten açıksa uygulama aynı pencerede yeni sekme olarak açılır."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Dosyaları açma",
+          "body": [
+            {
+              "points": [
+                "Bir uygulamadan: Dosya → Aç veya Ctrl+O.",
+                "Dosyaları klasörden pencereye sürükleyip bırakarak.",
+                "Sisteminizin dosya yöneticisinden: programın açabildiği bir dosyaya çift tıklayın. Windows Gezgini'nde sağ tıklama menüsü de kullanılabilir (‘Windows Gezgini sağ tıklama menüsü’ bölümüne bakın).",
+                "Başlangıç'tan: son açılan dosyalar listesinden."
+              ]
+            },
+            "Program tek bir kopya olarak çalışır. Program açıkken dosya yöneticisinden açılan dosya aynı pencerede yeni bir sekme olarak açılır."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kişiselleştirme",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Düzen: menü çubuğu, şerit veya yan panel",
+          "body": [
+            "Bir uygulamanın komutları üç farklı düzende gösterilebilir. Komutlar aynıdır; yalnızca yerleri değişir.",
+            {
+              "points": [
+                "Klasik: menü çubuğu ve araç çubuğu.",
+                "Şerit: adlandırılmış gruplarda büyük düğmeler, her menü için ayrı sekme. Belgeye daha çok yer açmak için şeridi daraltabilirsiniz.",
+                "Yan panel: araçlar sol veya sağ panelde yer alır; panel simgelere kadar daraltılabilir."
+              ]
+            },
+            "Her uygulamanın düzenini Ayarlar → Genel → Düzen bölümünden seçin. Bir uygulamaya özel düzeni, Ayarlar'ın o uygulamaya ait bölümünden veya Görünüm menüsünden belirleyebilirsiniz. Böyle bir seçimden sonra genel düzene dönmek için ‘Genel düzeni kullan’ seçeneğini seçin."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Ayarlar → Genel → Tema: Açık, Koyu, Açık gri, Koyu gri veya sistemin açık/koyu ayarını izleyen Otomatik.",
+            "Tema, belgenin sayfalarının rengini değiştirmez; kâğıt kendi görünümünde kalır."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Dil",
+          "body": [
+            "Ayarlar → Genel → Dil. Program 62 dilde kullanılabilir. ‘Sistem dili’, bilgisayarınızın dilini izler. Listede dilin kendi adıyla, sizin dilinizdeki adıyla veya İngilizce adıyla arama yapabilirsiniz.",
+            "Henüz çevrilmemiş metinler kod olarak değil, İngilizce gösterilir."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Sekmeler",
+          "body": [
+            {
+              "points": [
+                "‘Başlangıç sekmesini sekmeler arasında tut’ kapalıysa Başlangıç sekmesi yalnızca Başlangıç öndeyken görünür; yan çubuktaki ev simgesi her zaman Başlangıç'a götürür.",
+                "Sekme işareti, uygulamanın simgesi veya uygulama renginde düz bir kare olabilir."
+              ]
+            },
+            "Sığandan fazla sekme açık olduğunda şeridin uçlarındaki oklar sekmeleri kaydırır; ‘Diğer sekmeler’ hepsini listeler."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gezinme",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Komut arama",
+          "body": [
+            "Arama kutusu (‘Uygulamaları, araçları ve komutları ara’), öndeki sekmenin komutlarını adlarına göre bulur; kendi dilinizde veya İngilizce arayabilirsiniz. Çalıştırmak için bir sonuca tıklayın.",
+            "Planlanmış ancak henüz yazılmamış komutlar menülerde soluk gösterilir ve arama sonuçlarına eklenmez."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Klavye kısayolları",
+          "body": [
+            "Komutların kısayol tuşları menülerde adlarının yanında ve araç ipuçlarında gösterilir. En sık kullanılanlar:",
+            {
+              "points": [
+                "Ctrl+O: dosya aç",
+                "Ctrl+S: kaydet; Ctrl+Shift+S: farklı kaydet",
+                "Ctrl+P: yazdır",
+                "Ctrl+Z ve Ctrl+Y: geri al ve yinele",
+                "Ctrl+F: belgede bul",
+                "Ctrl+W: sekmeyi kapat",
+                "Ctrl+Tab ve Ctrl+Shift+Tab: sonraki ve önceki sekme",
+                "Ctrl+, (virgül): Ayarlar",
+                "F1: bu Yardım",
+                "Escape: tam ekrandan veya okuma kipinden çık ya da etkin aracı bırak"
+              ]
+            },
+            "Programın kendi komutlarının (sekmeler, Ayarlar, Yardım) kısayolları Ayarlar → Genel → Klavye kısayolları bölümünden, uygulama komutlarınınkiler ise Ayarlar'ın uygulamaya ait bölümünden değiştirilir. Bir komutun tuşlarına tıklayın, ardından yeni tuşlara basın."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Bu Yardımı kullanma",
+          "body": [
+            "Yardım, açtığınız yere göre içerik gösterir. Bir uygulamadan açıldığında yalnızca o uygulamanın kılavuzunu ve geldiğiniz sekmenin komutlarını görürsünüz. Başlangıç sayfasından veya Ayarlar'dan açıldığında ‘Hakkında’ (program ve her uygulama hakkında kısa bilgi) ile program kılavuzu görünür. Yardım → Hakkında her zaman ‘Hakkında’ bölümünü açar.",
+            "İçindekiler soldadır; üstündeki arama tüm konu başlıklarında ve metinlerinde arama yapar.",
+            "Yardım kendi sekmesinde açılır; çalışmanızla Yardım arasında geçiş yapabilirsiniz. F1 Yardım'ı yeniden öne getirir. ‘Önceki sekmenin komutları’ bölümünde o sekmenin tüm menüleri, komutları, kısayolları ve açıklamaları listelenir. Sorunuz olan sekmeden Yardım'ı açın."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Windows Gezgini sağ tıklama menüsü",
+          "body": [
+            "Ayarlar → Genel → Windows Gezgini → ‘Dosya ve klasörlerin sağ tıklama menüsünde Syntelab Creative’i göster’ seçeneği, programın açabildiği dosyalar için şu komutları ekler: her ikisi de PDF Organizer simgesini taşıyan ‘PDF Organizer ile PDF’ye dönüştür’ ve ‘Dosyaları PDF Organizer’da birleştir’ ile yanda Sağlama toplamları, Karşılaştır ve Hex görünümü komutlarıyla açılan ‘Syntelab Dev’.",
+            "Bu komutlar yalnızca sizin kullanıcı hesabınıza eklenir; yönetici izni gerekmez. Seçeneği kapatırsanız kaldırılır. Windows 11’de ‘Daha fazla seçenek göster’ altında bulunurlar. Her zaman yüklü programı başlatırlar: program taşındıysa veya başka bir yere yeniden yüklendiyse, açılırken bunları düzeltir.",
+            {
+              "note": "Birden fazla dosyada ‘Dosyaları PDF Organizer’da birleştir’ komutunu seçmek, dosyaları içeren bir dosya panosu açar; ‘PDF Organizer ile PDF’ye dönüştür’ bu dosyalarla toplu işlemeyi açar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gizlilik, güncellemeler ve iletişim",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Ağa hangi bilgiler gider, hangileri asla gönderilmez",
+          "body": [
+            "Program hiçbir veri toplamaz: kullanım verileri, dosya adları veya kendiliğinden gönderilen çökme raporları yoktur.",
+            "Yalnızca şu durumlarda, her defasında sizin isteğinizle çevrimiçi olur:",
+            {
+              "points": [
+                "Siz istediğinizde veya izin verdiyseniz program başladığında güncellemeleri ve haberleri denetler (syntelab.com'dan iki küçük dosya okunur). Yeni sürüm yalnızca ‘Güncelle’ye bastığınızda indirilir.",
+                "PDF Organizer'da bir web sayfasını PDF olarak kaydederken veya Scribe'da web sayfasının metnini alırken, girdiğiniz adresten içerik alınır.",
+                "Bir belgede tıkladığınız bağlantı tarayıcınıza veya e-posta programınıza iletilir.",
+                "Geri bildirim ve Destek, tarayıcınızda syntelab.com sayfası açar."
+              ]
+            },
+            "Sertifikayla imzalama ve imzaları denetleme bilgisayarınızda yapılır; ağ bağlantısı kullanılmaz."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Güncellemeler",
+          "body": [
+            "Ayarlar → Genel → Güncellemeler → ‘Güncellemeleri denetle’. Yeni sürüm varsa bir pencere yenilikleri açıklar ve ‘Güncelle’ seçeneğini sunar.",
+            "‘Güncelle’ yeni sürümü indirir, gerçekten bizden geldiğini doğrular (anahtarımızla imzalanmış olmalıdır; diğer dosyalar reddedilir) ve mevcut sürümün üzerine kurar. Ayarlarınız korunur ve program yeniden başlar. Siz düğmeye basmadan hiçbir şey indirilmez.",
+            "Güncelleme bu yolla kurulamıyorsa (taşınabilir sürüm, Linux paketi veya ağ bağlantısı yoksa) ‘İndir’ tarayıcınızda indirme sayfasını açar. Yeni sürümü mevcut sürümün üzerine kurun; ayarlarınız korunur.",
+            "‘Program başladığında güncellemeleri ve haberleri denetle’ seçeneğini kapatabilirsiniz. Her iki durumda da sizin veya bilgisayarınız hakkında hiçbir bilgi gönderilmez."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Geri bildirim ve destek",
+          "body": [
+            "Yardım → Geri bildirim: yeni bir uygulama, özellik veya değişiklik isteyin ya da sorun bildirin. Her mesaj okunur.",
+            "Yardım → Destek: program ücretsizdir; burada devam etmesine katkıda bulunabilirsiniz."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Syntelab Creative hakkında",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Syntelab Creative hakkında",
+          "body": [
+            "Syntelab Creative, Syntelab (syntelab.com) tarafından geliştirilen; belgeler, metinler ve verilerle günlük işler için ücretsiz bir uygulama paketidir. Başlangıçta dört uygulama sunar: PDF Organizer, Scribe, Units ve Dev. Aynı pencereye yenileri de eklenecektir.",
+            {
+              "points": [
+                "Her zaman ücretsiz.",
+                "Veri toplanmaz: sizin, bilgisayarınızın veya çalışmalarınızın hakkında hiçbir şey.",
+                "Hiçbir özellik saklı tutulmaz: ücretli sürüm, kilitli özellik veya kasıtlı bir sınır yoktur. Tek sınırlar bugünkü teknolojinin ve bilgisayarınızın kapasitesidir."
+              ]
+            },
+            "Projemiz için dış finansman yok. Programı boş zamanlarımızda, ayırabildiğimiz ölçüde geliştiriyoruz. Kaliteli yazılım üretmekte kararlıyız; bunun için zaman ve sabır gerekir: geliştirmek için bizim, büyümesini beklemek için sizin sabrınız.",
+            "Her sürümle daha iyi olacak. Bildirilen sorunlar düzeltilir; istenen özellikler sonraki çalışmalar için değerlendirilir.",
+            {
+              "note": "Belgeleriniz bilgisayarınızda kalır. Program sizin veya çalışmalarınız hakkında bilgi toplamaz; ‘Ağa hangi bilgiler gider, hangileri asla gönderilmez’ bölümüne bakın."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Nasıl katkıda bulunabilirsiniz",
+          "body": [
+            "Katkı sağlayabileceğiniz üç yol var:",
+            {
+              "points": [
+                "Düşüncelerinizi paylaşın: Yardım → Geri bildirim. Karşılaştığınız bir sorun, eksik bir şey veya olması gerekenden daha zor bir işlem olabilir. Her mesajı okuyoruz.",
+                "Programı ve çalışmalarımızı başkalarına anlatın. Daha fazla kullanıcı daha çok geri bildirim demektir; böylece gerçekten neyin önemli olduğunu anlarız. Bu, çalışmalarımızın değer gördüğünü hissetmemizi de sağlar: hem bizim hem projeye katılan ve katılacak herkesin emeğini.",
+                "İmkânınız varsa maddi destek verin: Yardım → Bizi destekleyin. Bu, program üzerinde çalışmamız için bize zaman kazandırır."
+              ]
+            },
+            "Bunların hiçbirini yapmanız beklenmiyor. Program ücretsizdir ve herkes için tüm özellikleriyle daima ücretsiz kalacaktır."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Hangi teknolojilerle oluşturuldu",
+          "body": [
+            "Program birçok kişinin emeği üzerine kuruludur. Tüm uygulamaların ortak kullandığı bileşenler:",
+            {
+              "points": [
+                "Pencere ve gördüğünüz her şey: sistemin web görünümünü kullanan Tauri (Windows'ta WebView2, Linux'ta WebKitGTK, macOS'ta WKWebView); TypeScript ve React ile yazılmıştır.",
+                "İşlemleri gerçekleştiren bölüm Rust ile yazılmıştır.",
+                "Yazı tipleri ve simgeler: Sansation, IBM Plex Sans ve Font Awesome Free."
+              ]
+            },
+            "Her uygulamanın eklediği teknolojiler, kendi ‘Hakkında’ sayfasında açıklanır. Bu projelerin arkasındaki kişilere teşekkür ederiz."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Henüz neleri yapamıyor",
+          "body": [
+            "Güvenmeden önce bilmeniz gerekenler:",
+            {
+              "points": [
+                "Bazı metinlerin çevirisi henüz tamamlanmadı. O zamana kadar kod olarak değil, İngilizce gösterilir.",
+                "Dosya yöneticisinin sağ tıklama menüsü şimdilik yalnızca Windows Gezgini'nde kullanılabilir.",
+                "Sertifikayla imzalama şimdilik Windows'ta çalışır; Linux ve macOS desteği sonraki bir sürümde gelecek."
+              ]
+            },
+            "Her uygulamanın sınırlamaları kendi ‘Hakkında’ sayfasında listelenir. Bunlardan biri işinizi engelliyorsa Yardım → Geri bildirim üzerinden bize iletin; öncelikleri belirlememize yardımcı olur."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Üzerinde çalıştıklarımız",
+          "body": [
+            "Dört uygulama da gelişmeye devam edecek: Yardım → Geri bildirim üzerinden ilettiğiniz sorunlar ve istekler, öncelikleri büyük ölçüde belirler. Ayrıca yeni uygulamalar hazırlanıyor. Başlangıç, siz istemedikçe bunları göstermez: orada ‘Yakında’ olarak görmek için bunları Başlangıç’ın ‘Görünüm’ menüsünde işaretleyin:",
+            {
+              "points": [
+                "Convert: dosyaları bir biçimden diğerine, örneğin Office belgelerini PDF'ye ve tersine dönüştürme; bunun için başka bir programın kurulu olması gerekmeyecek. Henüz istediğimiz kaliteye ulaşan açık bir teknoloji bulamadık. Bu nedenle uygulama ancak beklentinizi karşılayacağından emin olduğumuzda çıkacak; gerekli araçlar yoksa kendimiz geliştireceğiz.",
+                "Pixel: yeniden boyutlandırma ve sıkıştırma, arka plan kaldırma, renk araçları ve QR kodları gibi görsel araçları.",
+                "Metadata: paylaşmadan önce fotoğraf, video ve belgelerdeki gizli verileri görüntüleme ve kaldırma.",
+                "Wizard: rastgele seçim ve üretim araçları; çark çevirme, zar, yazı tura ve listeden isim çekme."
+              ]
+            },
+            "Mevcut uygulamalarda da ‘Henüz neleri yapamıyor’ sayfalarında listelenen işler üzerinde çalışıyoruz: örneğin imzalar için güvenilir zaman damgası, Linux ve macOS'ta sertifikayla imzalama ve Scribe'da yazım denetimi.",
+            "Daha fazla kurulum yöntemi de eklenecek: Windows'ta Microsoft Store ve winget; Linux'ta Flathub ve Snap.",
+            {
+              "note": "Her sürümün haberlerine yan çubuktaki haber düğmesinden ulaşabilirsiniz. Yeni sürümü denetlemek için Ayarlar → Genel → Güncellemeler'i açın."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

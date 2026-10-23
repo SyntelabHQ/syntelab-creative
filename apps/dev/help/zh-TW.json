@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "快速入門",
+      "topics": [
+        {
+          "id": "start",
+          "title": "首頁",
+          "body": [
+            "首頁會開啟一個 Dev 分頁，其中包含所有工具，並依照選單分組：編碼、資料、產生、檢查、網路。",
+            {
+              "points": [
+                "在「尋找工具」中輸入文字以縮小清單範圍。",
+                "將工具釘選可將其保留在頂部的「已釘選」區域。",
+                "工具會在同一個分頁中開啟；透過「檔案」→「所有工具」可返回首頁。在「設定」中，您可以設定每個工具在獨立分頁中開啟，或在開啟時顯示上次使用的工具分頁。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "貼上任何內容",
+          "body": [
+            "首頁頂部的方塊可接收您貼上的任何內容，並辨識其類型：例如 token、憑證、JSON、UUID、時間戳記、cron 排程、URL、XML 或 HTML、SQL、Base64、校驗碼、表格或 YAML。",
+            "在每個辨識結果下方，會列出適用於該類型的工具，最適合的排在最前面。點擊其中一個工具，它將在載入該文字後自動執行。",
+            {
+              "note": "您貼上的內容會保留在方塊中，直到您清除內容或關閉分頁。內容絕不會寫入磁碟。"
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "工具介面佈局",
+          "body": [
+            "大多數工具具有相同的框架：頂部為選項列，一側為輸入區，另一側為輸出區，底部則有一行顯示執行結果。",
+            {
+              "points": [
+                "每當輸入或選項變更時，結果都會重新產生並顯示在輸出區；選項列中的「自動執行」即表示如此。只有長到無法在每次按鍵時執行的文字，或大於 128 MB 的檔案，才會等待「執行」按鈕，此時該按鈕會出現。可隨時按 Ctrl+Enter 執行工具。",
+                "非文字的結果（例如從 Base64 解碼的圖片、gzip）會以預覽方式顯示：圖片按原樣顯示，其他內容則顯示其類型、大小及開頭位元組。此時「複製」會以 Base64 複製，圖片也可以圖片形式複製。非文字的輸入檔案亦同。",
+                "輸入區上方有「開啟檔案」、「貼上」和「清除」；輸出區上方有「複製」和「儲存至檔案」。您也可以將檔案直接拖放到輸入區。",
+                "輸入內容的錯誤會以文字說明，並標註行號與列號，且在編輯器中標記出來。",
+                "「檢視」選單可將兩個窗格設定為並排或上下排列，顯示行號並自動換行；窗格之間的分割線可以拖動。",
+                "您選擇的選項會被記錄以便下次使用，但輸入的內容則不會。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "全部清除與保留內容",
+          "body": [
+            "每個工具右下角的「全部清除」會立即清空所有內容：包括輸入、結果、方塊中輸入的任何文字，以及編輯器的復原紀錄。",
+            "Dev 僅保留其設定、您釘選的工具、上次使用的工具名稱以及每個工具的選項。您在工具中輸入、貼上、開啟或製作的任何內容都不會寫入磁碟、記錄檔或最近項目清單。機密資訊更是如此：金鑰、密碼、權杖和請求標頭僅存在於分頁中，不會儲存在其他任何地方。",
+            "只有一樣東西會暫時留在磁碟上：檔案的結果以及非文字的結果，會寫入程式專屬的資料夾，以便顯示並於之後儲存。每個結果會在被其他結果取代、您全部清除或關閉工具時刪除，且無論如何都會在 Dev 再次啟動時刪除。"
+          ]
+        },
+        {
+          "id": "files",
+          "title": "任何大小的檔案",
+          "body": [
+            "檔案大小沒有限制。足夠小以供顯示的檔案（最高 16 MB）會被放入編輯器中。較大的檔案或非文字檔案則保留在磁碟上：顯示其開頭（或預覽），工具會從原位置讀取，其結果會像文字一樣顯示。之後「儲存至檔案」會將結果複製到您選擇的位置。",
+            {
+              "points": [
+                "耗時較長的作業會顯示進度卡以及「停止」按鈕。",
+                "若檔案是以非 UTF-8 的其他編碼（如 UTF-16、Windows-1252 等）儲存的文字，且大小足以顯示，則會將其視為文字讀取並告知編碼。從 Dev 儲存的內容均為 UTF-8。",
+                "拖放到工具上的檔案會像使用「開啟檔案」一樣開啟。若視窗無法得知檔案的位置，最高 16 MB 的內容會像貼上一般被處理。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "多個檔案與整個資料夾",
+          "body": [
+            "當工具具有「作業對象：文字 / 檔案」選項時，「檔案」模式可一次對多個檔案執行該工具。",
+            {
+              "steps": [
+                "新增檔案或資料夾（若勾選，則包含其子資料夾）。",
+                "每個檔案在新增時會被讀取一次，並告知該工具是否支援該檔案。",
+                "選擇結果的儲存位置：在每個檔案旁以新名稱儲存、儲存至資料夾（保留資料夾結構），或覆蓋原檔案（系統會再次詢問）。「雜湊」也可以直接在清單中顯示結果。",
+                "在寫入任何內容之前，點選清單中的檔案，即可在選項下方單獨查看其結果。",
+                "執行。錯誤的檔案不會停止其他檔案的處理；每個檔案都會顯示其處理結果。"
+              ]
+            },
+            {
+              "note": "除非您明確要求，否則結果絕不會覆蓋已存在的檔案。"
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Windows 檔案總管的右鍵選單",
+          "body": [
+            "請在程式的「設定」中，於「Windows 檔案總管」下方將其開啟。所有功能都集中在「Syntelab Creative」這一行中；在 Windows 11 上，它位於「顯示更多選項」下方。",
+            {
+              "points": [
+                "在 Syntelab Dev 中開啟：適用於工具可讀取的檔案類型（.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz 等）。檔案將在對應類型的工具中開啟。",
+                "校驗和：適用於任何檔案或資料夾。摘要將列出在每個檔案旁邊，且不會寫入任何內容。",
+                "十六進位檢視：適用於任何檔案。",
+                "比較：兩個檔案將進入「差異比較」的兩側；兩個資料夾則進入資料夾比較。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "編碼",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "將位元組轉換為 Base64 及其反向操作。編碼可處理任何檔案；解碼則還原位元組，若為文字則直接顯示，若非文字則儲存至檔案。",
+            {
+              "points": [
+                "字母表：標準字母表，或適用於 URL 的字母表 (- 和 _)。",
+                "使用 = 填充，且每行可設定為 64、76 或任意數量的字元。",
+                "解碼支援兩種字母表，無論是否包含填充，並會指出錯誤字元的位置。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL 編碼 / 解碼",
+          "body": [
+            "百分比編碼，如同瀏覽器的寫法：位址的一部分（所有非純字母字元均被編碼）、整個位址（保留其專用符號）或表單（使用 + 代表空格）。",
+            "解碼時會指出 % 後方未接兩個十六進位數字的位置。"
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML 實體",
+          "body": [
+            "將 HTML 和 XML 保留的符號（&, <, >, 引號）寫為實體，並將實體還原：可透過名稱、十進位數字或十六進位數字進行。名稱遵循 HTML 標準。",
+            "「所有非 ASCII 字元」選項可將帶有重音的字母和其他字母表同樣寫為實體。"
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT 解碼器",
+          "body": [
+            "解析 JSON Web Token：將其標頭 (header) 和負載 (payload) 顯示為 JSON，並以文字形式顯示其聲明 (claims)（發行者、主體、受眾、過期時間，並標記為「已過期」或「尚未過期」）。",
+            "提供金鑰以檢查使用共用金鑰 (HS256, HS384, HS512) 製作的簽名。使用私鑰 (RS, ES, PS) 製作的簽名則不進行檢查。",
+            {
+              "note": "Token 和金鑰僅保留在分頁中：解碼 Token 時不會將任何內容發送到外部。"
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "轉義 / 反轉義",
+          "body": [
+            "將文字寫作語言（如 JSON、JavaScript、C、C++、Java 等）的字串，並對其引號、換行符號和其他符號進行轉義，並可將此類字串讀回。"
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "在讀取時對任何大小的檔案進行 gzip 壓縮與解壓縮。壓縮等級從最快到最小；文字結果可以以 Base64 格式提供。"
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "進位制",
+          "body": [
+            "將整數（每行一個）以二進位、八進位、十進位和十六進位，以及您選擇的另一個進位制（最高 36 進位）顯示。數字沒有最大限制。",
+            {
+              "points": [
+                "數字的進位制由其寫法決定：0x 為十六進位，0b 為二進位，0o 為八進位，字母為十六進位，其餘為十進位。或者您可以選擇所有內容讀取的進位制。",
+                "數字之間的空格、底線和單引號將被忽略：1_000_000。",
+                "負數也將以電腦儲存的方式（二補數）提供，並使用能容納該數字的最小位元數（如 8、16、32、64 位元等）。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "資料",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON 格式化工具",
+          "body": [
+            "格式化、壓縮並驗證 JSON，並將其以樹狀結構顯示。任何大小的文件都將以串流方式讀取。",
+            {
+              "points": [
+                "使用 2 個或 4 個空格、一個 Tab 鍵或任意數量的空格進行縮排。",
+                "更多選項：排序鍵值、將短列表放在同一行、冒號後的空格、行尾結束符號、末尾換行符號、將非 ASCII 字母表示為 \\uXXXX。",
+                "寬鬆讀取模式可接受註釋（// 和 /* */）和尾隨逗號，並寫出嚴格的 JSON。",
+                "變更：一次性刪除 null 值、刪除空值等。",
+                "樹狀結構一次展開一個層級，並可在鍵和值中搜尋文字。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "在文件中執行 JSONPath 查詢 (RFC 9535)：$.store.book[?@.price < 10].title。結果為找到的值、其路徑或兩者兼有。",
+            "若查詢錯誤，將提示錯誤發生的位置。"
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema 驗證器",
+          "body": [
+            "根據 JSON Schema（草案 4 至 2020-12）檢查文件。Schema 放置在輸入框下方的面板中。所有不符合項目的位置及其違反的規則都將被列出。",
+            "對於多個檔案，每個檔案都將根據相同的 Schema 進行檢查。不會追蹤指向其他檔案或位址的 $ref。"
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Schema 生成器與 JSON 轉 TypeScript",
+          "body": [
+            "根據 JSON 範例，Schema 生成器會寫出符合的 JSON Schema，而 JSON 轉 TypeScript 則會寫出其類型的宣告（介面或類型、是否匯出、是否唯讀，並使用您指定的名稱）。"
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "將 YAML 轉換為 JSON，以及將 JSON 轉換為 YAML。YAML 透過其核心 Schema 讀取，並追蹤錨點 (anchors) 與合併 (merges)；錯誤項將連同其位置一併顯示。"
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "將表格轉換為 JSON 及其反向轉換。分隔符號可從第一行自動偵測或手動選擇（逗號、分號、 Tab、管線符號）；第一行可設為標題列；可偵測數字與 true / false。",
+            "「表格」視圖以行與列顯示 CSV，支援任何大小的檔案。"
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML / HTML 格式化工具",
+          "body": [
+            "格式化、壓縮並檢查 XML 與 HTML。XML 採取嚴格讀取：未關閉的標記將連同其位置一併顯示。HTML 則採取類似瀏覽器的寬鬆讀取方式。"
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL 格式化工具",
+          "body": [
+            "將陳述式重新排版（每個子句一行）或將其縮減為一行；關鍵字可設為大寫、小寫或保持原樣。此工具不要求指定方言，也不會檢查陳述式的語義。"
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "差異比較",
+          "body": [
+            "逐行比較兩個文本、根據內容比較兩個 JSON 文件，或逐檔比較兩個資料夾。第一個項目放入輸入框，第二個項目放入其下方的面板中。",
+            {
+              "points": [
+                "「並排」模式會標記行內變更的單字；「統一」模式則像 diff -u 產生的補丁 (patch) 一樣。",
+                "可忽略大小寫、空白字元、空行、數字或標點符號。",
+                "對於 JSON，鍵的順序與排版不視為差異；結果可以是 JSON Patch (RFC 6902)。",
+                "資料夾：哪些檔案僅存在於其中一個資料夾、哪些相同、哪些不同；點擊列上的「比較」可將該對檔案以文字形式開啟。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdown 預覽",
+          "body": [
+            "顯示 Markdown 渲染後的樣子，並提供其 HTML 以供複製或儲存：支援包含表格、刪除線、工作清單和腳註的 CommonMark。",
+            {
+              "points": [
+                "在 Markdown 中輸入的 HTML 會以文字形式顯示，而不會被執行。",
+                "需要從網路擷取的圖片將不會被擷取：其描述和位址將顯示在原處。內嵌在文字中的圖片 (data:) 則會正常顯示。",
+                "點擊連結將在系統瀏覽器中開啟。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "產生",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "產生版本 1, 3, 4, 5, 6 和 7 (RFC 9562) 的 UUID，數量可自訂，格式可選擇帶連字號、純文字、作為 URN 或放在大括號中。「分解」功能可顯示每個 UUID 的版本及其內含的時間或名稱。"
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "雜湊",
+          "body": [
+            "對文字或檔案計算 CRC-32, MD5, SHA-1, SHA-256, SHA-384 和 SHA-512 雜湊值，可一次處理多個，格式可選擇十六進位或 Base64。任何大小的檔案都會在讀取時進行雜湊計算。",
+            {
+              "points": [
+                "比對：貼上校驗碼或 .sha256 檔案的一行內容；系統將告知是否匹配。",
+                "HMAC 金鑰：摘要將使用該金鑰轉換為 HMAC。",
+                "每行分開：為文字的每一行產生一個摘要。",
+                "檔案：摘要將列在對應檔案旁；「全部複製」將以 sha256sum 的格式輸出。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "密碼與機密",
+          "body": [
+            "使用作業系統的隨機數產生您選擇的字母類型的密碼、由單字組成的密碼短語，以及以十六進位或 Base64 形式表示的隨機位元組。每個結果都會顯示其具有多少位元的熵。產生內容後，變更選項會重新產生。",
+            "密碼短語是從電子前哨基金會 (Electronic Frontier Foundation) 的長單字清單 (7776 個英文單字) 中隨機抽選的，每個單字的機率相同：六個單字約等於 77 位元。"
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "金鑰與憑證",
+          "body": [
+            "在上方選擇以下五項：",
+            {
+              "points": [
+                "新金鑰：RSA、EC P-256 / P-384 / P-521 或 Ed25519，支援程式採用的所有格式（PKCS #8、舊版格式、OpenSSH；PEM 格式的公鑰以及 authorized_keys 的單行格式），若提供密碼則會加密。",
+                "憑證請求：為新金鑰或您貼上的金鑰建立 CSR，包含其主體 (subject) 與其他名稱 (SAN)。",
+                "自簽憑證：同上，但使用其自身金鑰簽署，並設定有效天數；勾選「可用於簽署其他憑證」可將其設為您自己的憑證頒發機構 (CA)。",
+                "使用您自己的 CA 簽署：貼上請求、您的憑證頒發機構憑證及其金鑰；您將獲得簽署後的憑證以及隨後的憑證鏈。",
+                "讀取與 Convert：貼上或開啟任何內容（PEM、DER、OpenSSH 金鑰、.pfx 或 .p12 檔案，無論是否加密）。程式會顯示偵測到的內容以及金鑰是否與憑證匹配，並將每項內容轉換為其他格式。金鑰及其憑證可一起儲存為 .pfx 檔案。"
+              ]
+            },
+            {
+              "note": "所有操作均在本機電腦上完成。金鑰僅存在於分頁中直到執行「全部清除」，除非您將其儲存，否則不會儲存在其他地方。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "檢查",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Regex 測試器",
+          "body": [
+            "在文本上測試 JavaScript 正規表達式：顯示匹配項及其群組與位置，或顯示替換匹配項後的文本。旗標為 g, i, m, s, u, y。",
+            "模式在視窗之外執行，執行時間超過 20 秒的程序將被終止。"
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron 解釋",
+          "body": [
+            "以文字說明排程的含義及其執行時間：支援 crontab（五欄、含秒之六欄、含年之七欄）、Quartz、AWS EventBridge cron() 與 rate()，以及 systemd OnCalendar。每行一個排程。",
+            {
+              "points": [
+                "顯示在您選擇的時區中的下次執行時間，以及要求時顯示的前次執行時間。",
+                "星期可依您的選擇從 0（星期日）開始編號，或像 Quartz 一樣從 1 開始編號。含有秒且同時含有年份、L、W 或 # 的行屬於 Quartz，會自動以 Quartz 的方式讀取。",
+                "將相同排程轉換為其他格式，以便複製或新增至輸入框。",
+                "建構器可透過選擇各個欄位來建立排程；「在建構器中變更」可將輸入的排程載入至建構器中。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix 時間戳記",
+          "body": [
+            "讀取時間點，每行一個：自 1970 年起的秒、毫秒、微秒或奈秒，或以常用方式書寫的日期（ISO 8601、郵件和 HTTP 的寫法、Git 的寫法）。每項時間均以您選擇的時區、UTC 以及各種時間戳格式顯示。"
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL 解析器",
+          "body": [
+            "像瀏覽器讀取 URL 一樣將其拆解：方案 (scheme)、使用者、主機（若以 punycode 書寫則顯示其 Unicode 形式）、連接埠、路徑、每個經過解碼的查詢參數以及片段 (fragment)。"
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "憑證解碼器",
+          "body": [
+            "讀取 PEM 或 DER 格式的 X.509 憑證並顯示其所有內容：主體、發行者、有效期、適用名稱、金鑰、擴充項目及其指紋。",
+            "它僅負責讀取，並不判斷憑證是否可信。若要查看網站顯示的憑證以及此電腦是否信任該憑證，請使用 「網路」→「網站憑證」。"
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "十六進位檢視器",
+          "body": [
+            "顯示任何大小之檔案或貼上文字的位元組：每行的位置、位元組以及對應的字元。",
+            {
+              "points": [
+                "跳轉至以 0x1F4、1F4h 或 500 表示的位置。",
+                "向前或向後搜尋位元組 (DE AD BE EF) 或文字 (UTF-8 或 UTF-16，不分方向)。",
+                "點擊位元組：側邊欄會以各種大小的數字（不分位元組順序）、字元及時間格式顯示該內容。",
+                "透過拖曳、Shift 或方向鍵進行選取；將選取內容複製為十六進位、程式碼、Base64 或文字，或將其儲存至檔案。"
+              ]
+            },
+            {
+              "note": "僅供檢視：不會對檔案進行任何更改。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "網路",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "網路工具說明",
+          "body": [
+            "這四項工具是 Dev 中唯一會連網的部分，且僅會連線至您指定的目標。",
+            {
+              "points": [
+                "僅在您按下按鈕時，才會連線至您輸入的位址。絕不會在背景執行。",
+                "發送的內容即為您所寫的內容。請求中唯一增加的是對所有人均相同的 User-Agent (\"Syntelab Creative\")，除非您自行指定。",
+                "不保留任何 Cookie，不發送任何關於您或電腦的資訊，且不保留任何輸入的內容。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP 用戶端",
+          "body": [
+            "發送手動編寫的單次請求：包含方法、地址、標頭（每行一個：名稱: 值）以及輸入或從任何大小的文件中讀取的正文。",
+            {
+              "points": [
+                "回應：其編號、耗時（總時間及到首個位元組的時間）、大小、標頭及其正文（根據類型著色，且若為 JSON 則會進行排版）。非文字的正文（例如圖片、PDF）會按原樣顯示，並按收到時的原樣儲存。",
+                "跟隨重新定向，或直接查看第一個回應。請求發送經過的地址將會列出。",
+                "根據此電腦信任的內容檢查憑證；僅針對您自己的伺服器關閉此功能。",
+                "「發送，將回應儲存至檔案」會將任何大小的正文直接寫入磁碟，並顯示進度且可停止。",
+                "「複製為 curl」將相同的請求提供為指令。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS 查詢",
+          "body": [
+            "向名稱伺服器查詢名稱的記錄：A、AAAA、CNAME、MX、NS、TXT、SOA、PTR、SRV、CAA、DS、DNSKEY，可一次查詢多項。地址可查詢其名稱 (PTR)。",
+            "查詢可發送到電腦設定使用的名稱伺服器、公共伺服器 (1.1.1.1, 8.8.8.8, 9.9.9.9)、透過 HTTPS 的解析器 (Cloudflare, Google)，或您手動輸入的伺服器。"
+          ]
+        },
+        {
+          "id": "port",
+          "title": "連接埠檢查",
+          "body": [
+            "檢查主機的連接埠是否接受 TCP 連接：單個、多個或範圍最高至 65,535 (例如 22, 80, 443, 8000-8100)。每個連接埠在您設定的時間內會顯示為開啟、關閉或無回應。",
+            {
+              "note": "請僅嘗試您擁有或獲准測試的主機。"
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "網站憑證",
+          "body": [
+            "顯示網站建立安全連接時提供的憑證：對象、簽署者、剩餘天數、此電腦是否信任及其原因、TLS 版本和加密套件。僅執行握手過程：不發送任何請求。",
+            {
+              "points": [
+                "輸入 example.com、example.com:8443 或網址。",
+                "郵件伺服器和 FTP 以明文開始，並被要求切換到 TLS (STARTTLS)：可透過連接埠 (25, 587, 143, 110, 21) 或手動選擇。",
+                "「全部」顯示憑證中的所有內容；「PEM」則提供用於複製或儲存的格式。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "設定",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Dev 的設定",
+          "body": [
+            "檔案 → 設定可開啟程式中 Dev 部分的設定。",
+            {
+              "points": [
+                "將每個工具在獨立分頁中開啟，或在所選的分頁中開啟。",
+                "在上次使用的工具或首頁開啟新分頁。",
+                "將每個工具的選項和固定項目恢復為程式出廠設定。"
+              ]
+            },
+            "Windows 檔案總管的右鍵選單、語言、主題和快捷鍵位於程式的整體設定中。"
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "關於 Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "關於 Dev",
+          "body": [
+            "Dev 是 Syntelab Creative 為開發者提供的應用程式：包含編碼與解碼、格式化與檢查、將一種數據形式轉換為另一種形式，以及解析難以閱讀之內容的工具。",
+            "所有操作均在本機電腦上完成。您在工具中輸入、貼上或開啟的任何內容都不會被儲存或傳送到任何地方。檔案大小或數量沒有限制：限制僅取決於電腦的記憶體和磁碟空間。",
+            "本程式為新產品且仍在開發中。若在您的工作中使用時發現不足之處，請透過說明 → 意見回饋告知我們。"
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Dev 的建構技術",
+          "body": [
+            {
+              "points": [
+                "編輯器：CodeMirror, https://codemirror.net 。MIT 授權。Copyright (C) 2018-2021 by Marijn Haverbeke and others。",
+                "編輯器中的 JSON 讀取與著色：@codemirror/lang-json, https://github.com/codemirror/lang-json ，搭配 @codemirror/language 與 @lezer/highlight。MIT 授權。Copyright (C) 2018-2021 by Marijn Haverbeke and others。",
+                "編輯器中的 YAML, XML, HTML 與 SQL 讀取與著色：@codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (搭配 @codemirror/lang-css 與 @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql 。MIT 授權。Copyright (C) 2018-2024 by Marijn Haverbeke and others。",
+                "使用 JSON Schema 檢查文件：jsonschema, https://github.com/Stranger6667/jsonschema 。MIT 授權。Copyright (c) 2020-2026 Dmitry Dygalo。其構建時不含網路部分：Dev 絕不會擷取 schema。",
+                "JSONPath 的模式（比對與搜尋）：regex, https://github.com/rust-lang/regex 。MIT 或 Apache-2.0 授權。Copyright (c) 2014 The Rust Project Developers。",
+                "讀取 YAML：yaml-rust2, https://github.com/Ethiraric/yaml-rust2 。MIT 或 Apache-2.0 授權。Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric。寫入 YAML 則由 Dev 自身完成。",
+                "比較兩段文字 (差異比較)：similar, https://github.com/mitsuhiko/similar 。Apache-2.0 授權。作者：Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams。",
+                "Gzip：flate2, https://github.com/rust-lang/flate2-rs 。MIT 或 Apache-2.0 授權。Copyright (c) 2014-2026 Alex Crichton。",
+                "「雜湊」工具與權杖簽名的摘要：sha2, sha1 與 md-5, https://github.com/RustCrypto/hashes 。MIT 或 Apache-2.0 授權。Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, 以及 RustCrypto 開發者。",
+                "日期、時間與時區 (Unix 時間戳記, Cron 解釋)：jiff, https://github.com/BurntSushi/jiff ，並使用 IANA 資料庫的時區。Unlicense 或 MIT 授權。Copyright (c) 2015 Andrew Gallant。",
+                "解析 URL：url 與 idna, https://github.com/servo/rust-url 。MIT 或 Apache-2.0 授權。Copyright (c) 2013-2025 The rust-url developers。",
+                "讀取 X.509 憑證：x509-parser, https://github.com/rusticata/x509-parser 。MIT 或 Apache-2.0 授權。Copyright (c) 2017 Pierre Chifflier。",
+                "正規表達式測試器執行的是 JavaScript 的正規表達式，運行於程式所使用的 WebView 引擎中（Windows 上為 Microsoft Edge WebView2）；因此未額外添加相關函式庫。",
+                "CRC-32：crc32fast, https://github.com/srijs/rust-crc32fast 。MIT 或 Apache-2.0 授權。Copyright (c) 2018 Sam Rijs, Alex Crichton and contributors。",
+                "UUIDs：uuid, https://github.com/uuid-rs/uuid 。Apache-2.0 或 MIT 授權。Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon。",
+                "用於密碼、金鑰和 UUID 的隨機位元組（來自作業系統）：getrandom, https://github.com/rust-random/getrandom 。MIT 或 Apache-2.0 授權。Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers。",
+                "RSA 金鑰與簽章：rsa, https://github.com/RustCrypto/RSA ，以及 num-bigint-dig, https://github.com/dignifiedquire/num-bigint 。MIT 或 Apache-2.0 授權。Copyright (c) RustCrypto Developers and dignifiedquire; Copyright (c) 2014 The Rust Project Developers。",
+                "NIST 曲線 (P-256, P-384, P-521) 的金鑰與簽章：p256, p384, p521, https://github.com/RustCrypto/elliptic-curves ，以及其所需的 ecdsa, elliptic-curve 和 crypto-bigint。Apache-2.0 或 MIT 授權。Copyright (c) 2020-2023 RustCrypto Developers。",
+                "Ed25519 金鑰與簽章：ed25519-dalek 和 curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek 。BSD 3-Clause 授權。Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft and Henry de Valence. All rights reserved。",
+                "金鑰、請求和憑證的編寫格式 (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER 和 PEM)：pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats 。Apache-2.0 或 MIT 授權。Copyright (c) 2020-2023 The RustCrypto Project Developers。",
+                "OpenSSH 金鑰檔案：ssh-key, https://github.com/RustCrypto/SSH ，包含 bcrypt-pbkdf, aes, ctr, chacha20 以及鎖定金鑰所需的其他 RustCrypto 密碼與雜湊演算法 ( https://github.com/RustCrypto )。Apache-2.0 或 MIT 授權。Copyright (c) 2021-2024 The RustCrypto Project Developers。",
+                "PKCS #12 檔案 (.pfx, .p12)：p12-keystore, https://github.com/ancwrd1/p12-keystore ，包含其所需的 RustCrypto pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 與 scrypt。MIT 或 Apache-2.0 授權。Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers。",
+                "用於產生金鑰的隨機數，取自作業系統：rand_core, https://github.com/rust-random/rand 。MIT 或 Apache-2.0 授權。Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers。",
+                "HTTP 用戶端：ureq, https://github.com/algesten/ureq 。MIT 或 Apache-2.0 授權。Copyright (c) 2019 Martin Algesten。",
+                "HTTP 用戶端與「網站憑證」的安全連線 (TLS)：rustls, https://github.com/rustls/rustls ，Apache-2.0, ISC 或 MIT 授權，Copyright (c) 2016 Joseph Birr-Pixton；包含 rustls-webpki, https://github.com/rustls/webpki ，ISC 授權，Copyright 2015 Brian Smith；ring, https://github.com/briansmith/ring ，Apache-2.0 與 ISC 授權；webpki-roots, https://github.com/rustls/webpki-roots ，CDLA-Permissive-2.0 授權。",
+                "此電腦是否信任憑證：rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier 。MIT 或 Apache-2.0 授權。Copyright (c) 2022 1Password。",
+                "讀取 Markdown：pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark 。MIT 授權。Copyright 2015 Google Inc. All rights reserved。",
+                "讀取非 UTF-8 編碼的文件：encoding_rs, https://github.com/hsivonen/encoding_rs , Apache-2.0 或 MIT 授權（其數據為 BSD-3-Clause）, Copyright Mozilla Foundation；以及 chardetng, https://github.com/hsivonen/chardetng , Apache-2.0 或 MIT 授權, Copyright Mozilla Foundation。",
+                "密碼短語單字：EFF Large Wordlist for Passphrases, https://www.eff.org/dice , 由電子前沿基金會 (Electronic Frontier Foundation) 提供，根據 Creative Commons Attribution 3.0 United States 授權 ( https://creativecommons.org/licenses/by/3.0/us/ ) 使用。該列表原樣使用。",
+                "以舊版 OpenSSL 方式開啟鎖定的金鑰：RustCrypto 的 aes, cbc 和 des, https://github.com/RustCrypto 。MIT 或 Apache-2.0 授權。Copyright (c) RustCrypto Developers。",
+                "為 Dev 撰寫，未使用函式庫：DNS 查詢（問題撰寫與答案讀取均符合 RFC 1035 規範）以及連接埠檢查。",
+                "為 Dev 撰寫，未使用函式庫：將 JSON 作為串流讀寫、JSONPath (RFC 9535)、Base64、百分比編碼 (percent-encoding)、HTML 字元引用（其名稱遵循 HTML 標準, https://html.spec.whatwg.org ）、字串轉義、讀取 JSON Web Tokens、撰寫 YAML、雙向 CSV、讀取 cron 排程、XML 和 HTML 格式化工具，以及 SQL 格式化工具。"
+              ]
+            },
+            "與程式其餘部分共用的內容請參閱「關於 Syntelab Creative」。"
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Dev 目前尚未支援的功能",
+          "body": [
+            {
+              "points": [
+                "僅在 Token 使用共用金鑰 (HS256, HS384, HS512) 製作時才會檢查其簽名。",
+                "JSON Schema 驗證器會像其函式庫一樣用英文說明不符合之處，且不會追蹤 $ref 到另一個文件或位址。",
+                "SQL 格式化工具不要求指定方言，也不會檢查陳述句的含義：它僅會提示未結束的字串或註釋。",
+                "YAML 以及轉換為 YAML 或 CSV 的 JSON 會在轉換過程中完整地保留在記憶體中；而轉換為 JSON、XML、HTML 和 SQL 的 CSV 則是在讀取時同步處理，無論其大小為何。",
+                "所查看的 CSV 表格為唯讀：無法在其中輸入內容，且尚未能從中複製內容。",
+                "差異比較工具為兩個檔案的每一行保留 16 個位元組，而非保留檔案本身；兩個 JSON 文件會被完整保留，因為在比較之前會重新寫入。",
+                "若一段行中沒有任何在兩側都恰好出現一次的行，會在一秒內盡可能進行比較：顯示的差異是正確的，但不一定是最少的。",
+                "差異比較工具不會比較行尾符號 (CRLF 或 LF)。",
+                "兩個資料夾透過其檔案的位元組進行比較；檔案則逐字根據其名稱進行比對。",
+                "「檢查」工具顯示的內容為 JSON，其名稱以英文呈現。",
+                "正規表達式測試器執行的是 JavaScript 的正規表達式，而非 PCRE 或 Rust 的正規表達式；它處理的是可顯示的文字，而非儲存在磁碟上的檔案；執行時間超過 20 秒的模式將會被終止。",
+                "憑證解碼器會讀取憑證，但不會檢查其是否可信：不檢查其鏈結、簽名或是否已被撤銷。",
+                "編碼非 UTF-8 的文字檔在足夠小能被顯示時會被讀取；若檔案較大且需從磁碟處理，則必須為 UTF-8 編碼。",
+                "拖放到工具上的檔案上限為 16 MB；視窗無法得知拖放檔案在磁碟上的位置，因此較大的檔案請使用「開啟檔案」來開啟。",
+                "密碼僅由英文單字組成。",
+                "Cron 解釋：建構器可建立 crontab 排程（五個欄位，或含秒數的六個欄位）；無法處理包含 L、W、# 或 ? 的排程。由於 AWS rate() 是從規則建立時開始計算，因此無法得知其時間。對於 systemd，僅讀取常見的行事曆事件；不支援毫秒或從月底起算的日期列表。",
+                "十六進位檢視器僅供查看：不會對檔案進行任何更改。文字欄顯示 ASCII 或西歐字母，不支援其他字母表；僅搜尋位元組或文字，不支援模式搜尋。",
+                "金鑰與憑證：金鑰支援 RSA、曲線 P-256、P-384 和 P-521，以及 Ed25519；不讀取其他類型（DSA, secp256k1, X25519）。當加密演算法為 AES 或 3DES 時，可開啟以舊版 OpenSSL 方式鎖定的金鑰。.pfx 檔案包含一組金鑰及其憑證。建立大型 RSA 金鑰需要時間且無法中途停止。建立 RSA 金鑰的函式庫對於能透過網路對多次簽名進行計時攻擊的攻擊者存在已知弱點 (RUSTSEC-2023-0071)：在此金鑰是在您的電腦上建立並寫入，且不會為任何人進行簽名。",
+                "HTTP 用戶端：支援 HTTP/1.1（不支援 HTTP/2 或 3）；請求之間不保留 cookie；不支援自動建立多部分 (multipart) 表單；超過 16 MB 或非文字的回應將透過重新發送請求並寫入檔案來處理。",
+                "DNS 查詢會顯示簽名 (DNSSEC) 但不會驗證。連接埠檢查僅嘗試 TCP：無法區分靜默的 UDP 連接埠與已關閉的連接埠。網站憑證不會檢查憑證是否已被撤銷。",
+                "右鍵選單適用於 Windows 檔案總管；在 Windows 11 中，其項目位於「顯示更多選項」下。"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

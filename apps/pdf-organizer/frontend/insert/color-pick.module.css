@@ -1,0 +1,30 @@
+.colors {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.preset {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 2px solid var(--sc-surface);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--sc-border);
+  cursor: pointer;
+}
+
+.preset[aria-pressed='true'] {
+  box-shadow: 0 0 0 2px var(--sc-accent);
+}
+
+.custom input {
+  width: 34px;
+  height: 28px;
+  padding: 1px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  cursor: pointer;
+}

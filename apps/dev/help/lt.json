@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Navigavimas",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Pirmasis puslapis",
+          "body": [
+            "Dev kortelė atsidaro pirmajame puslapyje, kuriame yra visi įrankiai, sugrupuoti kaip meniu: Koduoti, Duomenys, Generuoti, Tikrinti, Tinklas.",
+            {
+              "points": [
+                "Rašykite laukelyje „Ieškoti įrankio“, kad susiaurintumėte sąrašą.",
+                "Įrankio smeigtukas laiko jį viršuje, skiltyje „Prisegti“.",
+                "Įrankis atsidaro toje pačioje kortelėje; Failas → Visi įrankiai grąžina į pirmąjį puslapį. Nustatymuose galite nustatyti, kad kiekvienas įrankis atsidarytų atskiroje kortelėje, o nauja kortelė atsidarytų su paskutiniu naudotu įrankiu."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Įklijuokite bet ką",
+          "body": [
+            "Laukelis pirmojo puslapio viršuje priima viską, ką įklijuojate, ir pasako, į ką tai panašu: žetonas, sertifikatas, JSON, UUID, laiko žymos, cron tvarkaraščiai, URL, XML ar HTML, SQL, Base64, kontrolinė suma, lentelė, YAML.",
+            "Po kiekvienu spėjimu pateikiami įrankiai, kurie dirba su tokiu dalyku, tinkamiausias pirmas. Spustelėkite vieną: jis atsidaro su jau įdėtu tekstu ir paleidžiamas.",
+            {
+              "note": "Tai, ką įklijuojate, lieka laukelyje, kol jį išvalysite arba uždarysite kortelę. Tai niekada nerašoma į diską."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Įrankio struktūra",
+          "body": [
+            "Dauguma įrankių turi tą patį rėmą: parinktys eilutėje viršuje, įvestis vienoje pusėje, išvestis kitoje, o apačioje eilutė, kuri pasako, kas įvyko.",
+            {
+              "points": [
+                "Rezultatas sukuriamas iš naujo, kai tik pasikeičia įvestis ar parinktis, ir parodomas išvestyje; tai nurodo „Vykdoma savaime“ parinkčių eilutėje. Tik tekstas, per ilgas vykdyti po kiekvieno klavišo paspaudimo, arba didesnis nei 128 MB failas laukia mygtuko „Paleisti“, kuris tada parodomas. Ctrl+Enter paleidžia įrankį bet kada.",
+                "Rezultatas, kuris nėra tekstas (iš Base64 iškoduotas paveikslėlis, gzip), rodomas kaip peržiūra: paveikslėlis toks, koks yra, visa kita – pagal rūšį, dydį ir pirmuosius baitus. Tada „Kopijuoti“ jį nukopijuoja kaip Base64, o paveikslėlį galima nukopijuoti ir kaip paveikslėlį. Taip pat elgiamasi su įvesties failu, kuris nėra tekstas.",
+                "„Atidaryti failą“, „Įklijuoti“ ir „Išvalyti“ yra virš įvesties; „Kopijuoti“ ir „Išsaugoti į failą“ – virš išvesties. Failą taip pat galima nutempti į įvestį.",
+                "Kas negerai įvestyje, pasakoma žodžiais, nurodant eilutę ir stulpelį, ir pažymima redaktoriuje.",
+                "Meniu Vaizdas išdėsto abi skiltis greta arba vieną po kita, rodo eilučių numerius ir laužo ilgas eilutes; liniją tarp skilčių galima vilkti.",
+                "Jūsų pasirinktos parinktys išsaugomos kitam kartui. Įvestas tekstas – ne."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Ištrinti ir kas išsaugoma",
+          "body": [
+            "„Ištrinti“, esantis kiekvieno įrankio apačioje dešinėje, iškart jį ištuština: įvestį, rezultatą, viską, kas įrašyta jo laukeliuose, ir tai, ką jo redaktoriai galėtų atšaukti.",
+            "Dev išsaugo tik savo nustatymus, jūsų prisegtus įrankius, paskutinio naudoto įrankio pavadinimą ir kiekvieno įrankio parinktis. Niekas, ką įrankyje įvedate, įklijuojate, atidarote ar sukuriate, nerašoma į diską, žurnalą ar naujausių elementų sąrašą. Juo labiau paslaptys: raktai, slaptafrazės, žetonai ir užklausos antraštės gyvena kortelėje ir niekur kitur.",
+            "Vienas dalykas kurį laiką lieka diske: failo rezultatas ir rezultatas, kuris nėra tekstas, įrašomi į pačios programos aplanką, kad juos būtų galima parodyti, o paskui išsaugoti. Kiekvienas ištrinamas, kai jo vietą užima kitas rezultatas, kai įrankį ištrinate ar uždarote, ir bet kuriuo atveju, kai Dev paleidžiama iš naujo."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Bet kokio dydžio failai",
+          "body": [
+            "Failo dydžiui ribų nėra. Pakankamai mažas failas, kurį galima parodyti (iki 16 MB), įkeliamas į redaktorių. Didesnis failas arba failas, kuris nėra tekstas, lieka diske: rodoma jo pradžia (arba peržiūra), įrankis jį skaito iš vietos, kur jis yra, o jo rezultatas rodomas kaip ir teksto. Tada „Išsaugoti į failą“ nukopijuoja rezultatą ten, kur pasirinksite.",
+            {
+              "points": [
+                "Ilgas darbas rodo kortelę su pažanga ir mygtuku „Sustabdyti“.",
+                "Failas, kuris yra tekstas kita nei UTF-8 koduote (UTF-16, Windows-1252 ir pan.), skaitomas kaip tekstas, jei jis pakankamai mažas, kad būtų parodytas, ir nurodoma koduotė. Tai, ką išsaugote iš Dev, yra UTF-8.",
+                "Į įrankį nutemptas failas atidaromas kaip per „Atidaryti failą“. Kai langas negali nustatyti, kur failas yra, jis priimamas iki 16 MB, tarsi įklijuotas."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Daug failų ir ištisi aplankai",
+          "body": [
+            "Kai įrankis turi „Dirbti su: Tekstu / Failais“, pasirinkus „Failais“ jis vykdomas daugeliui failų vienu kartu.",
+            {
+              "steps": [
+                "Pridėkite failus arba aplanką (su jo poaplankiais, jei paliksite tai įjungtą).",
+                "Kiekvienas failas perskaitomas vieną kartą jį pridedant ir pasakoma, ar įrankis jį priima.",
+                "Pasirinkite, kur dėti rezultatus: šalia kiekvieno failo nauju pavadinimu, į aplanką (išlaikant aplankų struktūrą) arba ant pačių failų – tada jūsų bus paklausta dar kartą. Maišos reikšmių įrankis gali rezultatus ir tiesiog parodyti sąraše.",
+                "Spustelėkite failą sąraše, kad dar prieš ką nors įrašant po pasirinkimais pamatytumėte tik jo rezultatą.",
+                "Paleiskite. Klaidingas failas nesustabdo kitų; prie kiekvieno nurodoma, kaip jam pavyko."
+              ]
+            },
+            {
+              "note": "Rezultatas niekada neužrašomas ant jau esamo failo, nebent to paprašysite."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Windows failų naršyklės dešiniojo spustelėjimo meniu",
+          "body": [
+            "Įjunkite tai programos nustatymuose, skyriuje „Windows failų naršyklė“. Viskas surinkta po viena eilute „Syntelab Creative“; Windows 11 sistemoje ji yra po „Rodyti daugiau parinkčių“.",
+            {
+              "points": [
+                "Atidaryti Syntelab Dev: failų rūšims, kurias skaito kuris nors įrankis (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz ir pan.). Failas atsidaro jo rūšiai skirtame įrankyje.",
+                "Kontrolinės sumos: bet kuriam failui ar aplankui. Maišos reikšmės išvardijamos, kiekviena šalia savo failo, ir niekas neįrašoma.",
+                "Hex peržiūra: bet kuriam failui.",
+                "Palyginti: du failai patenka į abi Diff puses; du aplankai – į aplankų palyginimą."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kodavimas",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Paverčia baitus Base64 ir atgal. Koduojant priimamas bet koks failas; dekoduojant grąžinami baitai: rodomi, kai jie yra tekstas, ir išsaugomi į failą, kai ne.",
+            {
+              "points": [
+                "Abėcėlė: standartinė arba skirta URL (- ir _).",
+                "Užpildymas simboliu =, eilutės po 64, 76 ar bet kokį kitą raidžių skaičių.",
+                "Dekodavimas palaiko abi abėcėles, su užpildymu arba be jo, ir nurodo, kur raidė yra klaidinga."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL kodavimas / dekodavimas",
+          "body": [
+            "Procentinis kodavimas, kaip jį rašo naršyklės: adreso dalis (koduojama viskas, kas nėra paprasta raidė), visas adresas (jo paties ženklai išlaikomi) arba forma (+ vietoj tarpo).",
+            "Dekoduojant nurodoma, kur po % nėra dviejų šešioliktainių skaitmenų."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML simboliai",
+          "body": [
+            "Užrašo ženklus, kuriuos HTML ir XML pasilieka sau (&, <, >, kabutes), kaip simbolių nuorodas ir skaito jas atgal: pagal pavadinimą, dešimtainį arba šešioliktainį skaičių. Pavadinimai yra iš HTML standarto.",
+            "„Taip pat visos ne ASCII raidės“ kaip nuorodas užrašo ir raides su diakritiniais ženklais bei kitų abėcėlių raides."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT dekoderis",
+          "body": [
+            "Išskaido JSON Web Token: jo antraštę ir turinį kaip JSON, o teiginius – žodžiais (išdavėjas, subjektas, auditorija, kada baigiasi galiojimas, su „galiojimo laikas pasibaigęs“ arba „galiojimo laikas dar nepasibaigęs“).",
+            "Įveskite paslaptį, kad patikrintumėte parašą, sukurtą su bendra paslaptimi (HS256, HS384, HS512). Parašai, sukurti privačiu raktu (RS, ES, PS), netikrinami.",
+            {
+              "note": "Žetonas ir paslaptis lieka kortelėje: norint dekoduoti žetoną, niekas niekur nesiunčiama."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Ekranavimas / ekranavimo panaikinimas",
+          "body": [
+            "Užrašo tekstą kaip kalbos (JSON, JavaScript, C, C++, Java ir pan.) eilutę su ekranuotomis kabutėmis, eilučių lūžiais ir kitais ženklais, ir skaito tokią eilutę atgal."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Suspaudžia ir išskleidžia gzip – bet kokio dydžio failą, jį skaitant. Lygis – nuo „Greičiausias“ iki „Mažiausias“; teksto rezultatą galima gauti kaip Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Skaičiavimo sistemos",
+          "body": [
+            "Pateikia sveikuosius skaičius, po vieną kiekvienoje eilutėje, dvejetaine, aštuntaine, dešimtaine ir šešioliktaine sistemomis bei dar viena jūsų pasirinkta sistema iki 36. Skaičius neturi didžiausio dydžio.",
+            {
+              "points": [
+                "Skaičiaus sistema nustatoma pagal tai, kaip jis parašytas: 0x – šešioliktainė, 0b – dvejetainė, 0o – aštuntainė, raidės – šešioliktainė, kitaip – dešimtainė. Arba pasirinkite sistemą, kuria skaitoma viskas.",
+                "Tarpai, pabraukimo brūkšniai ir apostrofai tarp skaitmenų praleidžiami: 1_000_000.",
+                "Neigiamas skaičius pateikiamas ir taip, kaip jį laiko kompiuteriai (papildomasis kodas), mažiausiu iš 8, 16, 32, 64 ir t. t. bitų, į kurį jis telpa."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Duomenys",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON formatuotojas",
+          "body": [
+            "Formatuoja, mažina ir tikrina JSON, rodo jį kaip medį. Bet kokio dydžio dokumentas skaitomas kaip srautas.",
+            {
+              "points": [
+                "Įtrauka 2 arba 4 tarpais, tabuliacija arba bet kokiu tarpų skaičiumi.",
+                "„Daugiau parinkčių“: raktų rūšiavimas, trumpi sąrašai vienoje eilutėje, tarpas po dvitaškio, kuo baigiasi eilutės, eilutės lūžis pabaigoje, ne ASCII raidės kaip \\uXXXX.",
+                "„Atlaidus skaitymas“ priima komentarus (// ir /* */) ir kablelius pabaigoje, o rašo griežtą JSON.",
+                "Pakeitimai: pašalinti null reikšmes, pašalinti tuščias reikšmes ir pan., vienu ėjimu.",
+                "Medis atsiveria po vieną lygį ir randa tekstą raktuose bei reikšmėse."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Vykdo JSONPath užklausą (RFC 9535) dokumente: $.store.book[?@.price < 10].title. Rezultatas – rastos reikšmės, keliai iki jų arba abu.",
+            "Klaidinga užklausa pranešama nurodant vietą, kurioje ji suklysta."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema validatorius",
+          "body": [
+            "Tikrina dokumentą pagal JSON Schema (juodraščiai nuo 4 iki 2020-12). Schema dedama į skiltį po įvestimi. Kiekvienas neatitikimas išvardijamas nurodant, kur jis yra ir kokią taisyklę pažeidžia.",
+            "Tikrinant daug failų, kiekvienas tikrinamas pagal tą pačią schemą. $ref į kitą failą ar adresą nesekama."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Schemos generatorius ir JSON → TypeScript",
+          "body": [
+            "Iš JSON pavyzdžio schemos generatorius parašo JSON Schema, kurią jis atitinka, o JSON → TypeScript parašo jo tipo deklaracijas (sąsajas arba tipus, eksportuojamus ar ne, readonly ar ne, jūsų nurodytu pavadinimu)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Paverčia YAML į JSON ir JSON į YAML. YAML skaitomas pagal pagrindinę schemą, sekant inkarus ir suliejimus; klaidos nurodomos su jų vieta."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Paverčia lentelę į JSON ir atgal. Skyriklis nustatomas iš pirmosios eilutės arba pasirenkamas (kablelis, kabliataškis, tabuliacija, vertikalus brūkšnys); pirmoji eilutė gali būti antraštė; gali būti atpažįstami skaičiai ir true / false.",
+            "„Lentelė“ rodo CSV eilutėmis ir stulpeliais, bet kokio dydžio failą."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML / HTML formatuotojas",
+          "body": [
+            "Formatuoja, mažina ir tikrina XML bei HTML. XML skaitomas griežtai: niekada neuždaryta žymė nurodoma su jos vieta. HTML skaitomas taip atlaidžiai, kaip naršyklės."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL formatuotojas",
+          "body": [
+            "Išdėsto sakinį po vieną sąlygą eilutėje arba sudeda jį į vieną eilutę; raktiniai žodžiai didžiosiomis, mažosiomis raidėmis arba kaip parašyta. Dialekto neklausia ir netikrina, ką sakinys reiškia."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Lygina du tekstus eilutė po eilutės, du JSON dokumentus pagal turinį arba du aplankus failas po failo. Pirmasis dedamas į įvestį, antrasis – į skiltį po ja.",
+            {
+              "points": [
+                "„Šalia“ pažymi eilutės viduje pasikeitusius žodžius; „Vieningas“ – tai pataisa, kokią rašo diff -u.",
+                "Ignoruoti registrą, tarpus, tuščias eilutes, skaitmenis arba skyrybą.",
+                "JSON atveju raktų tvarka ir išdėstymas nėra skirtumas; rezultatas gali būti JSON Patch (RFC 6902).",
+                "Aplankai: kurie failai yra tik viename, kurie vienodi, kurie skiriasi; „Palyginti“ eilutėje atidaro porą kaip tekstus."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdown peržiūra",
+          "body": [
+            "Rodo Markdown taip, kaip jis atrodys, ir pateikia jo HTML nukopijuoti ar išsaugoti: CommonMark su lentelėmis, perbrauktu tekstu, užduočių sąrašais ir išnašomis.",
+            {
+              "points": [
+                "Markdown tekste įrašytas HTML kodas rodomas kaip tekstas, jis nėra vykdomas.",
+                "Paveikslėlis, kuris būtų parsiųstas iš tinklo, nesiunčiamas: jo vietoje rodomas aprašymas ir adresas. Tekste esantis paveikslėlis (data:) rodomas.",
+                "Spustelėta nuoroda atidaroma sistemos naršyklėje."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Generavimas",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Kuria 1, 3, 4, 5, 6 ir 7 versijų UUID (RFC 9562), tiek, kiek paprašote, su brūkšniais, paprastus, kaip URN arba skliaustuose. „Išskirti“ nurodo kiekvieno UUID versiją ir jame esantį laiką ar pavadinimą."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Maišos reikšmės",
+          "body": [
+            "Teksto ar failo CRC-32, MD5, SHA-1, SHA-256, SHA-384 ir SHA-512, kelios vienu metu, užrašytos kaip hex arba Base64. Bet kokio dydžio failo maišos reikšmė skaičiuojama jį skaitant.",
+            {
+              "points": [
+                "„Patikrinti lyginant su“: įklijuokite kontrolinę sumą arba .sha256 failo eilutę; pasakoma, ar ji sutampa.",
+                "„HMAC raktas“: maišos reikšmės tampa HMAC su tuo raktu.",
+                "„Kiekviena eilutė atskirai“: po vieną maišos reikšmę kiekvienai teksto eilutei.",
+                "Failai: maišos reikšmės išvardijamos šalia jų failų; „Kopijuoti viską“ pateikia jas taip, kaip jas rašo sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Slaptažodžiai ir paslaptys",
+          "body": [
+            "Iš operacinės sistemos atsitiktinių skaičių kuria slaptažodžius iš jūsų pasirinktų rašmenų rūšių, slaptafrazes iš žodžių ir atsitiktinius baitus kaip hex arba Base64. Prie kiekvieno nurodoma, kiek bitų entropijos jis turi. Kai kas nors jau sukurta, pakeitus parinktį sukuriama iš naujo.",
+            "Slaptafrazę sudaro žodžiai, paimti iš ilgojo Electronic Frontier Foundation žodžių sąrašo (7776 angliški žodžiai), kiekvienas tokios pat tikimybės kaip kiti: šeši žodžiai – apie 77 bitai."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Raktai ir sertifikatai",
+          "body": [
+            "Penki veiksmai, pasirenkami viršuje:",
+            {
+              "points": [
+                "„Naujas raktas“: RSA, EC P-256 / P-384 / P-521 arba Ed25519, pateikiamas visomis formomis, kurias priima programos (PKCS #8, senesnė forma, OpenSSH; viešasis raktas kaip PEM ir kaip eilutė authorized_keys failui), užrakintas slaptafraze, jei ją nurodote.",
+                "„Sertifikato užklausa“: CSR naujam raktui arba jūsų įklijuotam, su jo subjektu ir kitais pavadinimais (SAN).",
+                "„Savarankiškai pasirašytas sertifikatas“: tas pats, pasirašytas savo paties raktu, nurodytam dienų skaičiui; „Gali pasirašyti kitus sertifikatus“ paverčia jį jūsų pačių sertifikavimo institucija.",
+                "„Pasirašyti savo CA“: įklijuokite užklausą, savo sertifikavimo institucijos sertifikatą ir jos raktą; gausite pasirašytą sertifikatą, o po jo – sertifikavimo instituciją.",
+                "„Skaityti ir konvertuoti“: įklijuokite arba atidarykite bet ką (PEM, DER, OpenSSH raktą, .pfx ar .p12 failą, užrakintą ar ne). Pasakoma, kas rasta ir ar raktas atitinka sertifikatą, o kiekvienas elementas užrašomas kitomis formomis. Raktą ir jo sertifikatą galima išsaugoti kartu kaip .pfx."
+              ]
+            },
+            {
+              "note": "Viskas sukuriama šiame kompiuteryje. Raktas yra kortelėje iki „Ištrinti“ ir niekur kitur, nebent jį išsaugotumėte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tikrinimas",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Regex testeris",
+          "body": [
+            "Išbando JavaScript reguliarųjį reiškinį tekste: atitikmenys su jų grupėmis ir vietomis arba tekstas su pakeistais atitikmenimis. Vėliavėlės: g, i, m, s, u, y.",
+            "Šablonas vykdomas atskirai nuo lango, o vykdomas ilgiau nei 20 sekundžių nutraukiamas."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron paaiškinimas",
+          "body": [
+            "Žodžiais pasako, ką reiškia tvarkaraštis ir kada jis vykdomas: crontab (penki laukai, šeši su sekundėmis, septyni su metais), Quartz, AWS EventBridge cron() ir rate() bei systemd OnCalendar. Vienas tvarkaraštis eilutėje.",
+            {
+              "points": [
+                "Kiti vykdymai, o paprašius – ir ankstesni, jūsų pasirinktoje laiko zonoje.",
+                "Savaitės dienos numeruojamos nuo 0 (sekmadienis) arba nuo 1, kaip jas numeruoja Quartz, – kaip pasirinksite. Eilutė su sekundėmis, kurioje yra ir metai, L, W arba #, yra Quartz eilutė ir savaime skaitoma Quartz būdu.",
+                "Tas pats tvarkaraštis kitomis formomis, kad būtų galima nukopijuoti arba pridėti į įvestį.",
+                "Konstruktorius sukuria tvarkaraštį pasirenkant kiekvieną lauką; „Keisti konstruktoriuje“ perkelia į jį įvestą tvarkaraštį."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix laiko žyma",
+          "body": [
+            "Skaito akimirkas, po vieną eilutėje: sekundes, milisekundes, mikrosekundes ar nanosekundes nuo 1970 m. arba įprastais būdais užrašytą datą (ISO 8601, kaip rašoma el. laiškuose ir HTTP, kaip rašo Git). Kiekviena pateikiama jūsų pasirinkta laiko zona, UTC ir kaip visų rūšių laiko žymos."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL analizatorius",
+          "body": [
+            "Išskaido URL taip, kaip jį skaito naršyklės: schema, naudotojas, serveris (su Unicode forma, kai jis užrašytas punycode), prievadas, kelias, kiekvienas dekoduotas užklausos parametras ir fragmentas."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Sertifikato dekoderis",
+          "body": [
+            "Skaito X.509 sertifikatus iš PEM arba DER ir pasako viską, kas juose yra: subjektą, išdavėją, galiojimą, pavadinimus, kuriems jis skirtas, jo raktą, plėtinius ir piršto atspaudus.",
+            "Jis tik skaito; jis nesprendžia, ar sertifikatu galima pasitikėti. Svetainės rodomam sertifikatui ir tam, ar šis kompiuteris juo pasitiki, naudokite Tinklas → Svetainės sertifikatas."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Hex peržiūra",
+          "body": [
+            "Rodo bet kokio dydžio failo arba įklijuoto teksto baitus: kiekvienos eilutės poziciją, baitus ir tuos pačius baitus kaip raides.",
+            {
+              "points": [
+                "Pereikite į poziciją, užrašytą kaip 0x1F4, 1F4h arba 500.",
+                "Ieškokite baitų (DE AD BE EF) arba teksto (UTF-8 arba UTF-16 abiem baitų tvarkomis) pirmyn ir atgal.",
+                "Spustelėkite baitą: šone rodoma, kas ten yra, kaip bet kokio dydžio skaičiai, abiem baitų tvarkomis, kaip simbolis ir kaip laikas.",
+                "Pasirinkite vilkdami, su Shift arba rodyklių klavišais; nukopijuokite pasirinkimą kaip hex, kodą, Base64 arba tekstą, arba išsaugokite jį į failą."
+              ]
+            },
+            {
+              "note": "Jis tik žiūri: faile niekas nekeičiama."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tinklas",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Kur jungiasi tinklo įrankiai",
+          "body": [
+            "Šie keturi įrankiai yra vienintelė Dev dalis, kuri jungiasi į internetą, ir jie jungiasi ten, kur nurodote.",
+            {
+              "points": [
+                "Susisiekiama tik su jūsų įvestu adresu ir tik tada, kai paspaudžiate mygtuką. Niekada fone.",
+                "Siunčiama tai, ką parašėte. Vienintelis dalykas, pridedamas prie užklausos, yra visiems vienodas User-Agent („Syntelab Creative“), nebent nurodytumėte savo.",
+                "Slapukai nesaugomi, apie jus ar kompiuterį nieko nesiunčiama, ir niekas, kas įvesta, nesaugoma."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP klientas",
+          "body": [
+            "Siunčia vieną rankomis parašytą užklausą: metodą, adresą, antraštes (po vieną eilutėje: Pavadinimas: reikšmė) ir turinį – įvestą arba paimtą iš bet kokio dydžio failo.",
+            {
+              "points": [
+                "Atsakymas: jo kodas, kiek užtruko (iš viso ir iki pirmojo baito), dydis, antraštės ir turinys, nuspalvintas pagal rūšį ir išdėstytas, kai tai JSON. Turinys, kuris nėra tekstas (paveikslėlis, PDF), rodomas toks, koks yra, ir išsaugomas toks, koks atėjo.",
+                "„Sekti peradresavimus“ arba matyti pirmąjį atsakymą tokį, koks jis yra. Išvardijami adresai, iš kurių užklausa buvo persiųsta.",
+                "„Patikrinti sertifikatą“ pagal tai, kuo šis kompiuteris pasitiki; išjunkite tai tik savo serveriams.",
+                "„Siųsti, atsakymą išsaugoti į failą“ įrašo bet kokio dydžio turinį tiesiai į diską, rodant eigą ir mygtuką „Sustabdyti“.",
+                "„Kopijuoti kaip curl“ pateikia tą pačią užklausą kaip komandą."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS paieška",
+          "body": [
+            "Klausia vardų serverio vardo įrašų: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, kelių vienu metu. Adresas pateikia savo vardą (PTR).",
+            "Klausimas siunčiamas vardų serveriui, kurį kompiuteris nustatytas naudoti, viešajam (1.1.1.1, 8.8.8.8, 9.9.9.9), DNS sprendikliui per HTTPS (Cloudflare, Google) arba jūsų įvestam."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Prievadų patikra",
+          "body": [
+            "Nurodo, ar serverio prievadai priima TCP ryšius: vienas, keli arba intervalas iki visų 65 535 (22, 80, 443, 8000-8100). Kiekvienas yra atviras, uždarytas arba be atsakymo per jūsų nurodytą laiką.",
+            {
+              "note": "Bandykite tik savo serverius arba tuos, kuriuos jums leidžiama testuoti."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Svetainės sertifikatas",
+          "body": [
+            "Rodo sertifikatus, kuriuos svetainė pateikia užmezgant saugų ryšį: kam jie skirti, kas juos pasirašė, kiek dienų liko, ar šis kompiuteris jais pasitiki ir kodėl ne, TLS versiją ir šifrą. Atliekamas tik ryšio suderinimas (handshake): jokia užklausa nesiunčiama.",
+            {
+              "points": [
+                "Įrašykite example.com, example.com:8443 arba žiniatinklio adresą.",
+                "Pašto serveriai ir FTP pradeda nešifruotai, ir jų prašoma pereiti prie TLS (STARTTLS): pasirenkama pagal prievadą (25, 587, 143, 110, 21) arba rankiniu būdu.",
+                "„Visa“ rodo viską, ką sako sertifikatai; „PEM“ pateikia juos nukopijuoti ar išsaugoti."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nustatymai",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Dev nustatymai",
+          "body": [
+            "Failas → Nustatymai atveria programos nustatymus ties Dev dalimi.",
+            {
+              "points": [
+                "Kiekvieną įrankį atidaryti atskiroje kortelėje arba toje kortelėje, kurioje jis pasirinktas.",
+                "Naują kortelę atidaryti su paskutiniu naudotu įrankiu arba pirmajame puslapyje.",
+                "Atkurti visų įrankių parinktis ir prisegimus tokius, kokie buvo pateikiant programą."
+              ]
+            },
+            "Windows failų naršyklės dešiniojo spustelėjimo meniu, kalba, tema ir klavišai yra visos programos nustatymuose."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Apie Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Apie Dev",
+          "body": [
+            "Dev yra Syntelab Creative programėlė kūrėjams: įrankiai, kurie koduoja ir dekoduoja, formatuoja ir tikrina, paverčia vieną duomenų formą kita ir išskaido tai, ką tokį, koks yra, sunku perskaityti.",
+            "Viskas atliekama šiame kompiuteryje. Niekas, ką įrankyje įvedate, įklijuojate ar atidarote, nesaugoma ir niekur nesiunčiama. Failų dydis ar skaičius neribojamas: ribos yra kompiuterio atmintis ir diskas.",
+            "Ji nauja ir vis dar kuriama. Jei jūsų darbui jos kur nors nepakanka, praneškite mums per Pagalba → Atsiliepimai."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Iš ko sukurta Dev",
+          "body": [
+            {
+              "points": [
+                "Redaktoriai: CodeMirror, https://codemirror.net . MIT licencija. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "JSON skaitymas ir spalvinimas redaktoriuose: @codemirror/lang-json, https://github.com/codemirror/lang-json , kartu su @codemirror/language ir @lezer/highlight. MIT licencija. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "YAML, XML, HTML ir SQL skaitymas bei spalvinimas redaktoriuose: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (su @codemirror/lang-css ir @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . MIT licencija. Copyright (C) 2018-2024 by Marijn Haverbeke and others.",
+                "Dokumento tikrinimas pagal JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . MIT licencija. Copyright (c) 2020-2026 Dmitry Dygalo. Ji sukompiliuota be tinklo dalies: Dev niekada neparsisiunčia schemos.",
+                "JSONPath šablonai (match ir search): regex, https://github.com/rust-lang/regex . MIT arba Apache-2.0 licencija. Copyright (c) 2014 The Rust Project Developers.",
+                "YAML skaitymas: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . MIT arba Apache-2.0 licencija. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. YAML rašymą atlieka pats Dev.",
+                "Dviejų tekstų lyginimas (Diff): similar, https://github.com/mitsuhiko/similar . Apache-2.0 licencija. Autoriai: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . MIT arba Apache-2.0 licencija. Copyright (c) 2014-2026 Alex Crichton.",
+                "Maišos reikšmių įrankio ir žetono parašo maišos reikšmės: sha2, sha1 ir md-5, https://github.com/RustCrypto/hashes . MIT arba Apache-2.0 licencija. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation ir RustCrypto kūrėjai.",
+                "Datos, laikai ir laiko zonos (Unix laiko žyma, Cron paaiškinimas): jiff, https://github.com/BurntSushi/jiff , su IANA duomenų bazės laiko zonomis. Unlicense arba MIT licencija. Copyright (c) 2015 Andrew Gallant.",
+                "URL adresų analizė: url ir idna, https://github.com/servo/rust-url . MIT arba Apache-2.0 licencija. Copyright (c) 2013-2025 The rust-url developers.",
+                "X.509 sertifikatų skaitymas: x509-parser, https://github.com/rusticata/x509-parser . MIT arba Apache-2.0 licencija. Copyright (c) 2017 Pierre Chifflier.",
+                "Regex testeris vykdo JavaScript reguliariuosius reiškinius WebView, kuriuo programa piešia, varikliu (Microsoft Edge WebView2 sistemoje Windows); tam nepridedama jokia biblioteka.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . MIT arba Apache-2.0 licencija. Copyright (c) 2018 Sam Rijs, Alex Crichton ir bendraautoriai.",
+                "UUID: uuid, https://github.com/uuid-rs/uuid . Apache-2.0 arba MIT licencija. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Atsitiktiniai baitai slaptažodžiams, paslaptims ir UUID iš operacinės sistemos: getrandom, https://github.com/rust-random/getrandom . MIT arba Apache-2.0 licencija. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "RSA raktai ir parašai: rsa, https://github.com/RustCrypto/RSA , su num-bigint-dig, https://github.com/dignifiedquire/num-bigint . MIT arba Apache-2.0 licencija. Copyright (c) RustCrypto Developers ir dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "NIST kreivių (P-256, P-384, P-521) raktai ir parašai: p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , su jiems reikalingais ecdsa, elliptic-curve ir crypto-bigint. Apache-2.0 arba MIT licencija. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Ed25519 raktai ir parašai: ed25519-dalek ir curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . BSD 3-Clause licencija. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft ir Henry de Valence. Visos teisės saugomos.",
+                "Formos, kuriomis rašomi raktai, užklausos ir sertifikatai (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER ir PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Apache-2.0 arba MIT licencija. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "OpenSSH raktų failai: ssh-key, https://github.com/RustCrypto/SSH , su bcrypt-pbkdf, aes, ctr, chacha20 ir kitais RustCrypto šifrais bei maišos funkcijomis, kurių reikia raktui užrakinti ( https://github.com/RustCrypto ). Apache-2.0 arba MIT licencija. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "PKCS #12 failai (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , su reikiamais RustCrypto pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 ir scrypt. MIT arba Apache-2.0 licencija. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Atsitiktiniai skaičiai, iš kurių kuriami raktai, imami iš operacinės sistemos: rand_core, https://github.com/rust-random/rand . MIT arba Apache-2.0 licencija. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "HTTP klientas: ureq, https://github.com/algesten/ureq . MIT arba Apache-2.0 licencija. Copyright (c) 2019 Martin Algesten.",
+                "Saugūs HTTP kliento ir „Svetainės sertifikato“ ryšiai (TLS): rustls, https://github.com/rustls/rustls , Apache-2.0, ISC arba MIT licencija, Copyright (c) 2016 Joseph Birr-Pixton; su rustls-webpki, https://github.com/rustls/webpki , ISC licencija, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , Apache-2.0 ir ISC licencijos; webpki-roots, https://github.com/rustls/webpki-roots , CDLA-Permissive-2.0 licencija.",
+                "Ar šis kompiuteris pasitiki sertifikatu: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . MIT arba Apache-2.0 licencija. Copyright (c) 2022 1Password.",
+                "Markdown skaitymas: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . MIT licencija. Copyright 2015 Google Inc. Visos teisės saugomos.",
+                "Kitomis nei UTF-8 koduotėmis parašytų failų skaitymas: encoding_rs, https://github.com/hsivonen/encoding_rs , Apache-2.0 arba MIT licencija (jos duomenims – BSD-3-Clause), Copyright Mozilla Foundation; ir chardetng, https://github.com/hsivonen/chardetng , Apache-2.0 arba MIT licencija, Copyright Mozilla Foundation.",
+                "Slaptafrazių žodžiai: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , sudarytas Electronic Frontier Foundation, naudojamas pagal Creative Commons Attribution 3.0 United States licenciją ( https://creativecommons.org/licenses/by/3.0/us/ ). Sąrašas naudojamas nepakeistas.",
+                "Senuoju OpenSSL būdu užrakintų raktų atidarymas: RustCrypto aes, cbc ir des, https://github.com/RustCrypto . MIT arba Apache-2.0 licencija. Copyright (c) RustCrypto Developers.",
+                "Parašyta Dev, be bibliotekos: DNS paieška (klausimai rašomi ir atsakymai skaitomi taip, kaip nurodo RFC 1035) ir prievadų patikra.",
+                "Parašyta Dev, be bibliotekos: JSON skaitymas ir rašymas kaip srauto, JSONPath (RFC 9535), Base64, procentinis kodavimas, HTML simbolių nuorodos (jų pavadinimai – iš HTML standarto, https://html.spec.whatwg.org ), eilučių ekranavimas, JSON Web Token skaitymas, YAML rašymas, CSV abiem kryptimis, cron tvarkaraščių skaitymas, XML ir HTML formatuotojas bei SQL formatuotojas."
+              ]
+            },
+            "Tai, kas bendra su likusia programa, aprašyta skyriuje „Apie Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ko Dev dar negali",
+          "body": [
+            {
+              "points": [
+                "Žetono parašas tikrinamas tik tada, kai jis sukurtas su bendra paslaptimi (HS256, HS384, HS512).",
+                "JSON Schema validatorius neatitikimus nurodo angliškai, kaip ir jo biblioteka, ir neseka $ref į kitą failą ar adresą.",
+                "SQL formatuotojas neklausia dialekto ir netikrina, ką sakinys reiškia: jis praneša tik apie niekada nesibaigiančią eilutę ar komentarą.",
+                "YAML ir JSON, kuris tampa YAML ar CSV, konvertuojant laikomi atmintyje visi; CSV, kuris tampa JSON, XML, HTML ir SQL apdorojami juos skaitant, kad ir kokio dydžio jie būtų.",
+                "Lentelė, kurioje peržiūrimas CSV, skirta tik skaityti: į ją nieko neįvedama ir iš jos kol kas nieko nekopijuojama.",
+                "Diff kiekvienai abiejų failų eilutei laiko po šešiolika baitų, o ne pačius failus; du JSON dokumentai laikomi visi, nes prieš lyginant jie užrašomi iš naujo.",
+                "Eilučių ruožas, kuriame nėra nieko, kas abiejose pusėse būtų lygiai vieną kartą, lyginamas taip gerai, kiek leidžia sekundė: nurodyti skirtumai yra teisingi, nors ne visada mažiausi.",
+                "Diff nepalygina to, kaip baigiasi eilutės (CRLF arba LF).",
+                "Du aplankai lyginami pagal jų failų baitus; failai suporuojami pagal pavadinimus, raidė į raidę.",
+                "Tai, ką pasako Tikrinti įrankiai, yra JSON su pavadinimais anglų kalba.",
+                "Regex testeris vykdo JavaScript reguliariuosius reiškinius, ne PCRE ir ne Rust; jis dirba su tekstu, kurį galima parodyti, o ne su diske laikomu failu; ilgiau nei 20 sekundžių vykdomas šablonas nutraukiamas.",
+                "Sertifikato dekoderis skaito sertifikatą ir netikrina, ar juo galima pasitikėti: nei jo grandinės, nei parašo, nei to, ar jis atšauktas.",
+                "Failas, kuris yra tekstas kita nei UTF-8 koduote, skaitomas, kai jis pakankamai mažas, kad būtų parodytas; didesnis, apdorojamas iš disko, turi būti UTF-8.",
+                "Į įrankį nutemptas failas priimamas iki 16 MB; langui nepasakoma, kur diske yra nutemptas failas, todėl didesnis atidaromas per „Atidaryti failą“.",
+                "Slaptafrazės sudaromos tik iš angliškų žodžių.",
+                "Cron paaiškinimas: konstruktorius kuria crontab tvarkaraščius (penki laukai arba šeši su sekundėmis); tvarkaraščio su L, W, # ar ? į jį perkelti negalima. AWS rate() laikų nustatyti negalima, nes jie skaičiuojami nuo jo taisyklės sukūrimo. Iš systemd skaitomi įprasti kalendoriaus įvykiai, bet ne sekundės dalys ar dienų sąrašai, skaičiuojami nuo mėnesio pabaigos.",
+                "Hex peržiūra tik žiūri: faile niekas nekeičiama. Teksto stulpelis rodo ASCII arba Vakarų Europos raides, ne kitas abėcėles; ieškoma baitų ar teksto, ne šablonų.",
+                "Raktai ir sertifikatai: raktai yra RSA, P-256, P-384 ir P-521 kreivės bei Ed25519; kiti (DSA, secp256k1, X25519) neskaitomi. Senuoju OpenSSL būdu užrakintas raktas atidaromas, kai jo šifras yra AES arba 3DES. .pfx failas turi vieną raktą su jo sertifikatais. Labai didelio RSA rakto kūrimas užtrunka ir jo negalima sustabdyti pusiaukelėje. Biblioteka, kuri kuria RSA raktus, turi žinomą pažeidžiamumą užpuolikui, galinčiam per tinklą matuoti daugelio parašų laiką (RUSTSEC-2023-0071): čia raktai kuriami ir įrašomi jūsų kompiuteryje, ir niekam kitam nieko nepasirašoma.",
+                "HTTP klientas: HTTP/1.1 (ne HTTP/2 ar 3); slapukai tarp užklausų nesaugomi; kelių dalių (multipart) formos už jus nesudaromos; didesnis nei 16 MB arba ne tekstinis atsakymas įrašomas į failą siunčiant užklausą dar kartą.",
+                "DNS paieška rodo parašus (DNSSEC), bet jų netikrina. Prievadų patikra bando tik TCP: tylinčio UDP prievado negalima atskirti nuo uždaryto. Svetainės sertifikatas neklausia, ar sertifikatas buvo atšauktas.",
+                "Dešiniojo spustelėjimo meniu skirtas Windows failų naršyklei; Windows 11 sistemoje jo elementai yra po „Rodyti daugiau parinkčių“."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

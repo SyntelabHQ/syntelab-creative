@@ -1,0 +1,243 @@
+/* The units one side of the smart converter chooses from: a search, then the list. */
+.palette {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-bg);
+  overflow: hidden;
+}
+
+/* Two lists to choose between, over the search: each says how many it holds. */
+.tabs {
+  display: flex;
+  flex: none;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+}
+
+.tab {
+  display: inline-flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 34px;
+  border: 0;
+  border-block-end: 2px solid transparent;
+  background: none;
+  color: var(--sc-muted);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--sc-text);
+}
+
+.tab[aria-selected='true'] {
+  border-block-end-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+  color: var(--sc-text);
+}
+
+.count {
+  min-width: 22px;
+  padding: 1px 6px;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface-2);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+
+.finder {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 10px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+  color: var(--sc-muted);
+}
+
+.finder input {
+  flex: 1;
+  min-width: 0;
+  min-height: 32px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+  outline: none;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  align-content: start;
+  gap: 4px;
+  max-height: 232px;
+  padding: 6px;
+  overflow-y: auto;
+}
+
+.said {
+  grid-column: 1 / -1;
+  margin: 6px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.unit {
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+}
+
+.unit:hover {
+  border-color: var(--sc-accent);
+}
+
+.unit[data-chosen='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.choose {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 30px;
+  padding: 2px 8px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.unit[data-chosen='true'] .choose {
+  font-weight: 600;
+}
+
+.symbol {
+  flex: none;
+  min-width: 30px;
+  font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* One unit to a line: the pin first, then the name, the symbol at the end. */
+.list[data-rows='true'] {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  padding: 0;
+}
+
+.list[data-rows='true'] .unit {
+  border: 0;
+  border-block-end: 1px solid var(--sc-border);
+  border-radius: 0;
+  background: none;
+}
+
+.list[data-rows='true'] .unit:hover {
+  background: var(--sc-surface);
+}
+
+.list[data-rows='true'] .unit[data-chosen='true'] {
+  background: var(--sc-accent-soft);
+}
+
+.list[data-rows='true'] .pin {
+  order: -1;
+  width: 32px;
+}
+
+.list[data-rows='true'] .choose {
+  min-height: 36px;
+  padding-inline: 2px 12px;
+}
+
+.list[data-rows='true'] .name {
+  flex: 1;
+  font-weight: 600;
+}
+
+.list[data-rows='true'] .symbol {
+  order: 1;
+  min-width: 0;
+  text-align: end;
+}
+
+/* The pin: faint until the pointer is on its unit, lit when the unit is pinned. */
+.pin {
+  flex: none;
+  display: grid;
+  width: 24px;
+  place-items: center;
+  border: 0;
+  background: none;
+  color: var(--sc-border);
+  cursor: pointer;
+}
+
+.pin:hover {
+  color: var(--sc-muted);
+}
+
+.pin[aria-pressed='true'] {
+  color: var(--sc-accent);
+}
+
+/* A light bar to scroll with: slim, no arrows, and only as dark as it needs to be seen. */
+.list::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.list::-webkit-scrollbar-track,
+.list::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.list::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: var(--sc-radius-pill);
+  background: color-mix(in srgb, var(--sc-muted) 40%, transparent);
+  background-clip: content-box;
+}
+
+.list:hover::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--sc-muted) 70%, transparent);
+  background-clip: content-box;
+}
+
+.list::-webkit-scrollbar-thumb:hover,
+.list::-webkit-scrollbar-thumb:active {
+  border-width: 1px;
+  background: var(--sc-muted);
+  background-clip: content-box;
+}

@@ -1,0 +1,33 @@
+{
+  "id": "resistance",
+  "category": "energy",
+  "icon": "microchip",
+  "base": "ohm",
+  "startsWith": ["ohm","kiloohm"],
+  "decimals": 3,
+  "groups": [
+    { "id": "si_units", "color": "#2563eb" },
+    { "id": "conductance", "color": "#ea580c" },
+    { "id": "legacy", "color": "#9333ea" }
+  ],
+  "units": [
+    {"id":"ohm","symbol":"Ω","group":"si_units","factor":"1","popular":true},
+    {"id":"teraohm","symbol":"TΩ","group":"si_units","factor":"1000000000000"},
+    {"id":"gigaohm","symbol":"GΩ","group":"si_units","factor":"1000000000"},
+    {"id":"megaohm","symbol":"MΩ","group":"si_units","factor":"1000000","popular":true},
+    {"id":"kiloohm","symbol":"kΩ","group":"si_units","factor":"1000","popular":true},
+    {"id":"milliohm","symbol":"mΩ","group":"si_units","factor":"0.001","popular":true},
+    {"id":"microohm","symbol":"µΩ","group":"si_units","factor":"0.000001"},
+    {"id":"nanoohm","symbol":"nΩ","group":"si_units","factor":"0.000000001"},
+    {"id":"picoohm","symbol":"pΩ","group":"si_units","factor":"0.000000000001"},
+    {"id":"femtoohm","symbol":"fΩ","group":"si_units","factor":"0.000000000000001","decimals":1},
+    {"id":"volt-ampere","symbol":"V/A","group":"si_units","factor":"1"},
+    {"id":"siemens","symbol":"S","group":"conductance","inverse":{"factor":"1"},"popular":true},
+    {"id":"kilosiemens","symbol":"kS","group":"conductance","inverse":{"factor":"1","scale":"1000"}},
+    {"id":"millisiemens","symbol":"mS","group":"conductance","inverse":{"factor":"1","scale":"0.001"},"popular":true},
+    {"id":"microsiemens","symbol":"µS","group":"conductance","inverse":{"factor":"1","scale":"0.000001"}},
+    {"id":"mho","symbol":"℧","group":"conductance","inverse":{"factor":"1"},"decimals":6},
+    {"id":"abohm","symbol":"abΩ","group":"legacy","factor":"0.000000001"},
+    {"id":"statohm","symbol":"statΩ","group":"legacy","factor":"898755178736.8"}
+  ]
+}

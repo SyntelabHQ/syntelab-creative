@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "使用指南",
+      "topics": [
+        {
+          "id": "start",
+          "title": "首页",
+          "body": [
+            "打开 Dev 标签页后会进入首页，所有工具都按菜单分组显示：编码、数据、生成、检查、网络。",
+            {
+              "points": [
+                "在“查找工具”中输入内容，快速筛选列表。",
+                "点击工具旁的图钉，可将其固定在列表顶部的“已固定”下。",
+                "工具会在当前标签页中打开；选择“文件 → 所有工具”可返回首页。在“设置”中，可让每个工具在单独标签页打开，也可设置新标签页默认打开上次使用的工具。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "粘贴任意内容",
+          "body": [
+            "首页顶部的输入框可识别你粘贴的内容类型，例如令牌、证书、JSON、UUID、时间戳、Cron 计划、URL、XML 或 HTML、SQL、Base64、校验和、表格、YAML。",
+            "每种识别结果下方都会列出适用工具，并将最匹配的排在前面。点击工具即可在其中打开文本并运行。",
+            {
+              "note": "粘贴的内容会保留在输入框中，直到你清除内容或关闭标签页；内容不会写入磁盘。"
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "工具窗口布局",
+          "body": [
+            "大多数工具的布局相同：顶部一行是选项，左侧是输入，右侧是输出，底部一行显示处理结果。",
+            {
+              "points": [
+                "每当输入或某个选项发生变化，都会重新生成结果并显示在输出框中；选项栏中的“自动运行”即表示这一点。只有长到无法在每次按键时运行的文本，或大于 128 MB 的文件，才需要等待点击“运行”按钮，此时该按钮会出现。随时可按 Ctrl+Enter 运行工具。",
+                "非文本结果（如从 Base64 解码出的图片、gzip）会以预览形式显示：图片按原样显示，其他内容则显示其类型、大小和开头字节。此时“复制”会将其复制为 Base64，图片还可以作为图片复制。非文本的输入文件也同样以预览形式显示。",
+                "“打开文件”“粘贴”和“清空”位于输入框上方；“复制”和“保存到文件”位于输出框上方。也可以将文件拖到输入框中。",
+                "输入有问题时，编辑器会标出问题位置，并以文字说明行号和列号。",
+                "“视图”菜单可将两个面板并排或上下排列、显示行号并自动换行；拖动面板之间的分隔线即可调整大小。",
+                "所选选项会记住以供下次使用；输入内容不会保留。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "清除与保留的数据",
+          "body": [
+            "点击每个工具右下角的“清除”，即可立即清空输入、结果、文本框中的内容以及编辑器的撤销记录。",
+            "Dev 仅保存设置、已固定的工具、上次使用的工具名称和各工具选项。你在工具中输入、粘贴、打开或生成的内容都不会写入磁盘、日志或最近使用列表。密钥、密码短语、令牌和请求头等机密信息只会留在当前标签页中。",
+            "只有一类内容会在磁盘上暂存一段时间：文件的处理结果以及非文本结果会写入程序自己的文件夹，以便显示并随后保存。每份结果会在被新结果替换、你清除或关闭工具时删除，无论如何都会在 Dev 再次启动时删除。"
+          ]
+        },
+        {
+          "id": "files",
+          "title": "任意大小的文件",
+          "body": [
+            "文件大小不设上限。小到可显示的文件（最多 16 MB）会载入编辑器；更大的文件或非文本文件留在磁盘上，界面会显示文件开头（或预览），工具直接从原位置读取，其结果会像文本结果一样显示。随后可用“保存到文件”将结果复制到你选择的位置。",
+            {
+              "points": [
+                "耗时较长的操作会显示进度卡片和“停止”按钮。",
+                "如果文本文件使用 UTF-8 以外的编码（如 UTF-16、Windows-1252），且文件足够小可显示，Dev 会按文本读取并显示所用编码。Dev 保存的文件均为 UTF-8。",
+                "将文件拖到工具中时，会像使用“打开文件”一样打开。如果窗口无法确定文件所在位置，则最多载入 16 MB（相当于粘贴）。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "多个文件和整个文件夹",
+          "body": [
+            "如果工具提供“处理对象：文本/文件”选项，选择“文件”即可一次处理多个文件。",
+            {
+              "steps": [
+                "添加文件或文件夹（若保留该选项，还会包含其下级文件夹）。",
+                "添加时会读取每个文件一次，并告知该工具是否支持此文件。",
+                "选择结果保存位置：为每个文件另存为新名称、保存到保留原目录结构的文件夹，或覆盖原文件（会再次确认）。哈希工具也可以只在列表中显示结果。",
+                "在写入任何内容之前，点击列表中的某个文件，即可在选项下方单独查看其结果。",
+                "点击“运行”。某个文件出错不会中断其他文件的处理；每个文件都会显示处理结果。"
+              ]
+            },
+            {
+              "note": "除非你明确确认覆盖，否则不会覆盖已有文件。"
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Windows 文件资源管理器右键菜单",
+          "body": [
+            "在程序的“设置”中打开“Windows 文件资源管理器”选项。所有命令会归在“Syntelab Creative”菜单项下；Windows 11 中该菜单位于“显示更多选项”内。",
+            {
+              "points": [
+                "在 Syntelab Dev 中打开：适用于工具支持的文件类型（.json、.yaml、.xml、.html、.sql、.csv、.pem、.crt、.der、.pfx、.key、.csr、.gz 等）。文件会在对应类型的工具中打开。",
+                "校验和：适用于任何文件或文件夹。摘要会与对应文件一起列出，不会写入磁盘。",
+                "十六进制视图：适用于任何文件。",
+                "比较：两个文件会在“差异比较”的左右面板中打开；两个文件夹会进入文件夹比较视图。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "编码",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "在字节与 Base64 之间相互转换。编码支持任何文件；解码会还原字节，文本会直接显示，非文本内容则保存为文件。",
+            {
+              "points": [
+                "字符集：可选标准字符集或 URL 安全字符集（- 和 _）。",
+                "可使用 = 填充，并设置每行字符数为 64、76 或任意值。",
+                "解码支持两种字符集，也支持带或不带填充；如果字符无效，会指出其位置。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL 编码 / 解码",
+          "body": [
+            "按浏览器使用的方式进行百分号编码：编码地址的一部分（所有非普通字母字符都会编码）、完整地址（保留地址中的特殊字符），或表单数据（空格转换为 +）。",
+            "解码时如果 % 后没有跟两个十六进制数字，会指出错误位置。"
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML 实体",
+          "body": [
+            "将 HTML 和 XML 保留的字符（&、<、>、引号）写为实体，并可将实体还原为字符；支持按名称、十进制或十六进制表示。实体名称遵循 HTML 标准。",
+            "选择“也转换所有非 ASCII 字符”后，带重音的字母和其他文字也会转换为实体。"
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT 解码器",
+          "body": [
+            "解析 JSON Web Token：将标头和载荷显示为 JSON，并以文字说明声明信息（签发者、主题、受众、过期时间，以及“已过期”或“尚未过期”）。",
+            "输入密钥可验证使用共享密钥生成的签名（HS256、HS384、HS512）。不会验证使用私钥生成的签名（RS、ES、PS）。",
+            {
+              "note": "令牌和密钥仅保留在当前标签页中；解码令牌时不会向任何地方发送数据。"
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "转义 / 反转义",
+          "body": [
+            "将文本转换为编程语言字符串（如 JSON、JavaScript、C、C++、Java），并转义引号、换行符等字符；也可以将字符串还原为原文。"
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "对 gzip 数据进行压缩或解压，读取任意大小的文件。可选择压缩速度与文件大小的等级；文本结果也可输出为 Base64。"
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "进制转换",
+          "body": [
+            "逐行显示整数的二进制、八进制、十进制和十六进制，并可额外选择一种进制，最高支持 36 进制。数字大小不受限制。",
+            {
+              "points": [
+                "根据数字写法识别进制：十六进制使用 0x，二进制使用 0b，八进制使用 0o；也可根据字母识别十六进制，否则按十进制处理。你也可以指定统一的输入进制。",
+                "会忽略数字之间的空格、下划线和撇号，例如：1_000_000。",
+                "负数也会按计算机的表示方式（二进制补码）显示，并使用可容纳该数值的最小位宽：8、16、32、64 位等。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "数据",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON 格式化工具",
+          "body": [
+            "格式化、压缩并验证 JSON，也可以树状查看。任意大小的文档都会以流方式读取。",
+            {
+              "points": [
+                "缩进可选 2 或 4 个空格、制表符，或任意数量的空格。",
+                "更多选项：排序键、短数组单行显示、冒号后空格、行尾格式、末尾换行，以及将非 ASCII 字符写为 \\uXXXX。",
+                "宽松读取可接受注释（// 和 /* */）和尾随逗号，并输出标准 JSON。",
+                "可在一次处理中进行多项转换，例如删除 null 和空值。",
+                "树视图可逐层展开，并在键和值中搜索文本。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "对文档运行 JSONPath 查询（RFC 9535），例如 $.store.book[?@.price < 10].title。结果可显示匹配值、对应路径或两者。",
+            "查询无效时会指出出错位置。"
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema 验证器",
+          "body": [
+            "根据 JSON Schema（draft 4 到 2020-12）检查文档。将 Schema 放在输入框下方的面板中。每个不符合项都会列出位置和违反的规则。",
+            "批量处理多个文件时，每个文件都使用同一个 Schema 验证。不会跟踪指向其他文件或地址的 $ref。"
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Schema 生成器和 JSON 转 TypeScript",
+          "body": [
+            "输入 JSON 示例，Schema 生成器会生成匹配的 JSON Schema；JSON 转 TypeScript 会生成类型声明（可选 interface 或 type、是否导出、是否只读，并使用你指定的名称）。"
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "在 YAML 与 JSON 之间相互转换。YAML 按核心 Schema 解析，并支持锚点和合并；错误会标出位置。"
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "在表格与 JSON 之间相互转换。可根据首行识别分隔符，也可手动选择逗号、分号、制表符或竖线；首行可作为表头，也可自动识别数字和 true/false。",
+            "“表格”视图会将 CSV 显示为行列形式，支持任意大小的文件。"
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML / HTML 格式化工具",
+          "body": [
+            "格式化、压缩并检查 XML 和 HTML。XML 会严格解析，未闭合的标签会标出位置；HTML 则按浏览器的宽松规则解析。"
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL 格式化工具",
+          "body": [
+            "将语句按子句分行排版，或压缩为一行；关键字可设为大写、小写或保持原样。无需选择 SQL 方言，也不会检查语句含义。"
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "差异比较",
+          "body": [
+            "逐行比较两段文本、按内容比较两个 JSON 文档，或逐个文件比较两个文件夹。第一个对象放在输入框中，第二个放在下方的面板中。",
+            {
+              "points": [
+                "并排视图会标出行内发生变化的词；统一视图会按 diff -u 格式生成补丁。",
+                "可忽略大小写、空白字符、空行、数字或标点。",
+                "比较 JSON 时会忽略键顺序和排版差异；结果可输出为 JSON Patch（RFC 6902）。",
+                "文件夹比较：显示仅存在于其中一侧、完全相同或存在差异的文件；点击某行的“比较”可并排查看两个文本文件。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdown 预览",
+          "body": [
+            "显示 Markdown 的渲染效果，并生成可复制或保存的 HTML；支持含表格、删除线、任务列表和脚注的 CommonMark。",
+            {
+              "points": [
+                "Markdown 中输入的 HTML 会作为文本显示，不会执行。",
+                "不会从网络加载图片，而是显示图片说明和地址；文本中嵌入的图片（data:）会正常显示。",
+                "点击链接会在系统默认浏览器中打开。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "生成",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "可按需生成任意数量的第 1、3、4、5、6 和 7 版 UUID（RFC 9562），并可选择带连字符、纯文本、URN 或大括号格式。“拆分”功能会识别每个 UUID 的版本，以及其中包含的时间或名称。"
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "哈希",
+          "body": [
+            "可计算文本或文件的 CRC-32、MD5、SHA-1、SHA-256、SHA-384 和 SHA-512，支持同时计算多个，并以十六进制或 Base64 显示。任意大小的文件都会在读取时计算哈希。",
+            {
+              "points": [
+                "校验：粘贴校验和或 .sha256 文件中的一行，工具会告知是否匹配。",
+                "HMAC 密钥：使用此密钥生成 HMAC 摘要。",
+                "逐行计算：为文本的每一行分别计算摘要。",
+                "文件：摘要会列在对应文件旁；点击“全部复制”可按 sha256sum 格式复制。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "密码和密钥",
+          "body": [
+            "使用操作系统提供的随机数生成器，生成所选字符类型的密码、单词组成的密码短语，以及十六进制或 Base64 格式的随机字节。每项都会显示其熵位数。生成内容后，更改选项会重新生成。",
+            "密码短语中的单词从电子前沿基金会（EFF）的长词表中随机抽取（7776 个英语单词），每个词被选中的概率相同；六个词约有 77 位熵。"
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "密钥和证书",
+          "body": [
+            "顶部可选择以下五种操作：",
+            {
+              "points": [
+                "新建密钥：生成 RSA、EC P-256/P-384/P-521 或 Ed25519 密钥，并以程序支持的各种格式输出（PKCS #8、旧式格式、OpenSSH；公钥可输出为 PEM 或 authorized_keys 行）。如提供密码短语，也可为密钥加密。",
+                "证书签名请求：为新建或粘贴的密钥生成 CSR，并设置主题及其他名称（SAN）。",
+                "自签名证书：使用密钥为证书自签名，并设置有效天数；启用“允许签发其他证书”后，该证书可用作你自己的证书颁发机构。",
+                "使用自有 CA 签名：粘贴请求、CA 证书及其密钥，即可生成签名后的证书和证书链。",
+                "读取和转换：粘贴或打开任意格式（PEM、DER、OpenSSH 密钥、.pfx 或 .p12 文件，无论是否加密）。工具会识别内容、检查密钥是否与证书匹配，并可转换为其他格式。密钥和证书可以一起保存为 .pfx 文件。"
+              ]
+            },
+            {
+              "note": "所有内容都在此电脑上生成。密钥只会留在当前标签页中，直到点击“清除”；除非你主动保存，否则不会存到其他位置。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "检查",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "正则表达式测试器",
+          "body": [
+            "对文本运行 JavaScript 正则表达式：显示匹配项、捕获组及其位置，也可显示替换匹配内容后的文本。支持标志 g、i、m、s、u、y。",
+            "正则表达式会在独立于窗口的环境中运行；运行超过 20 秒会被终止。"
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron 计划说明",
+          "body": [
+            "以文字说明计划任务的含义和运行时间：crontab（五字段、含秒时六字段、含年份时七字段）、Quartz、AWS EventBridge cron() 和 rate()，以及 systemd OnCalendar。每行输入一个计划。",
+            {
+              "points": [
+                "可按所选时区查看接下来的运行时间；也可选择查看之前的运行时间。",
+                "星期可按你的选择从 0（星期日）开始编号，或像 Quartz 一样从 1 开始编号。带秒且还包含年份、L、W 或 # 的行属于 Quartz 格式，会自动按 Quartz 方式读取。",
+                "显示同一计划的其他格式，方便复制或添加到输入框。",
+                "计划生成器可通过选择各字段来创建计划；点击“在生成器中修改”可将输入的计划载入生成器。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix 时间戳",
+          "body": [
+            "逐行读取时间点：自 1970 年起的秒、毫秒、微秒或纳秒，也可读取常见格式的日期（ISO 8601、邮件和 HTTP 使用的格式、Git 使用的格式）。每个时间点会按所选时区、UTC 以及各种时间戳格式显示。"
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL 解析器",
+          "body": [
+            "按浏览器的规则解析 URL：方案、用户、主机名（包括以 Punycode 表示的 Unicode 形式）、端口、路径、解码后的各个查询参数及片段。"
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "证书解码器",
+          "body": [
+            "读取 PEM 或 DER 格式的 X.509 证书，并显示其中的所有信息：主题、颁发者、有效期、适用名称、公钥、扩展和指纹。",
+            "此工具只读取证书，不会判断证书是否可信。如需查看网站提供的证书及此电脑是否信任它，请使用“网络 → 网站证书”。"
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "十六进制查看器",
+          "body": [
+            "显示任意大小文件或粘贴文本中的字节：每行的位置、字节值，以及对应的字符。",
+            {
+              "points": [
+                "跳转到指定位置，可输入 0x1F4、1F4h 或 500。",
+                "向前或向后查找字节序列（DE AD BE EF）或文本（UTF-8 或任一字节序的 UTF-16）。",
+                "点击某个字节，侧边栏会以各种位宽、两种字节序、字符及时间格式显示其值。",
+                "可通过拖动、Shift 或方向键进行选择；选中内容可复制为十六进制、代码、Base64 或文本，也可保存为文件。"
+              ]
+            },
+            {
+              "note": "此工具只查看文件，不会对其作任何更改。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "网络",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "网络工具的联网范围",
+          "body": [
+            "Dev 中只有这四种工具会联网，并且只会连接到你指定的地址。",
+            {
+              "points": [
+                "只会在你点击按钮时联系你输入的地址，不会在后台联网。",
+                "发送的内容就是你输入的内容。请求中唯一额外添加的是所有用户通用的 User-Agent（“Syntelab Creative”），除非你自行设置。",
+                "不会保存 Cookie，不会发送关于你或此电脑的信息，也不会保留你输入的内容。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP 客户端",
+          "body": [
+            "手动发送单个请求：设置方法、地址、请求头（每行一个，格式为“名称: 值”）和请求正文；正文可直接输入，也可从任意大小的文件读取。",
+            {
+              "points": [
+                "响应信息包括状态码、总耗时和首字节耗时、大小、请求头及正文；正文会按内容类型着色，JSON 也会自动排版。非文本正文（如图片、PDF）会按原样显示，并按收到时的原样保存。",
+                "可选择跟随重定向，或直接查看首个响应。工具会列出请求经过的所有地址。",
+                "可根据此电脑信任的证书验证服务器证书；仅应对自有服务器关闭验证。",
+                "“发送请求并将响应保存到文件”会将任意大小的响应正文直接写入磁盘，并显示进度及“停止”按钮。",
+                "“复制为 curl 命令”可将同一请求转换为命令。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS 查询",
+          "body": [
+            "向名称服务器查询域名记录：A、AAAA、CNAME、MX、NS、TXT、SOA、PTR、SRV、CAA、DS、DNSKEY，也可同时查询多种记录。输入 IP 地址时会通过 PTR 查询域名。",
+            "查询可发送到此电脑配置的名称服务器、公共服务器（1.1.1.1、8.8.8.8、9.9.9.9）、HTTPS DNS 解析器（Cloudflare、Google）或你输入的服务器。"
+          ]
+        },
+        {
+          "id": "port",
+          "title": "端口检查",
+          "body": [
+            "检查主机上的端口是否接受 TCP 连接：可检查一个端口、多个端口，或最多全部 65,535 个端口（例如 22、80、443、8000-8100）。每个端口会显示为开放、关闭，或在指定时间内无响应。",
+            {
+              "note": "仅检查你拥有或获准测试的主机。"
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "网站证书",
+          "body": [
+            "显示网站建立安全连接时提供的证书：证书适用对象、签发者、剩余有效天数、此电脑是否信任及不信任原因、TLS 版本和加密套件。此操作只执行握手，不会发送请求。",
+            {
+              "points": [
+                "输入 example.com、example.com:8443 或完整网址。",
+                "邮件和 FTP 服务器通常先以明文连接，再切换到 TLS（STARTTLS）；可根据端口（25、587、143、110、21）自动选择，也可手动设置。",
+                "“全部信息”显示证书中的所有内容；“PEM”可供复制或保存。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "设置",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Dev 设置",
+          "body": [
+            "文件 → 设置会打开程序设置中的 Dev 部分。",
+            {
+              "points": [
+                "选择在独立标签页或当前选中的标签页中打开每个工具。",
+                "设置新标签页打开上次使用的工具，或打开首页。",
+                "将所有工具的选项和固定项目恢复为程序初始状态。"
+              ]
+            },
+            "Windows 文件资源管理器右键菜单、语言、主题和快捷键可在程序的全局设置中配置。"
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "关于 Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "关于 Dev",
+          "body": [
+            "Dev 是 Syntelab Creative 面向开发者的应用，提供编码与解码、格式化与检查、数据格式转换，以及解析复杂内容等工具。",
+            "所有操作都在此电脑上完成。你在工具中输入、粘贴或打开的内容都不会被保存或发送。文件大小和数量均不设上限，实际限制取决于此电脑的内存和磁盘空间。",
+            "Dev 仍在持续开发中。如果它无法满足你的工作需要，请通过“帮助 → 反馈”告诉我们。"
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Dev 使用的技术",
+          "body": [
+            {
+              "points": [
+                "编辑器：CodeMirror，https://codemirror.net。MIT 许可证。Copyright (C) 2018-2021 Marijn Haverbeke 等。",
+                "编辑器中 JSON 的读取和语法高亮：@codemirror/lang-json，https://github.com/codemirror/lang-json，以及 @codemirror/language 和 @lezer/highlight。MIT 许可证。Copyright (C) 2018-2021 Marijn Haverbeke 等。",
+                "编辑器中 YAML、XML、HTML 和 SQL 的读取及语法高亮：@codemirror/lang-yaml，https://github.com/codemirror/lang-yaml；@codemirror/lang-xml，https://github.com/codemirror/lang-xml；@codemirror/lang-html，https://github.com/codemirror/lang-html（含 @codemirror/lang-css 和 @codemirror/lang-javascript）；@codemirror/lang-sql，https://github.com/codemirror/lang-sql。MIT 许可证。Copyright (C) 2018-2024 Marijn Haverbeke 等。",
+                "根据 JSON Schema 检查文档：jsonschema，https://github.com/Stranger6667/jsonschema。MIT 许可证。Copyright (c) 2020-2026 Dmitry Dygalo。此版本不包含联网功能：Dev 不会获取 Schema。",
+                "JSONPath 的模式匹配和搜索：regex，https://github.com/rust-lang/regex。MIT 或 Apache-2.0 许可证。Copyright (c) 2014 The Rust Project Developers。",
+                "读取 YAML：yaml-rust2，https://github.com/Ethiraric/yaml-rust2。MIT 或 Apache-2.0 许可证。Copyright (c) 2015 Chen Yuheng，Copyright (c) 2023 Ethiraric。YAML 写入功能由 Dev 自行实现。",
+                "比较两段文本（差异比较）：similar，https://github.com/mitsuhiko/similar。Apache-2.0 许可证。作者：Armin Ronacher、Pierre-Étienne Meunier、Brandon Williams。",
+                "Gzip：flate2，https://github.com/rust-lang/flate2-rs。MIT 或 Apache-2.0 许可证。Copyright (c) 2014-2026 Alex Crichton。",
+                "哈希工具和令牌签名摘要：sha2、sha1 和 md-5，https://github.com/RustCrypto/hashes。MIT 或 Apache-2.0 许可证。Copyright (c) 2006-2009 Graydon Hoare、Copyright (c) 2009-2013 Mozilla Foundation，以及 RustCrypto 开发者。",
+                "日期、时间和时区（Unix 时间戳、Cron 计划说明）：jiff，https://github.com/BurntSushi/jiff，并使用 IANA 数据库中的时区。Unlicense 或 MIT 许可证。Copyright (c) 2015 Andrew Gallant。",
+                "解析 URL：url 和 idna，https://github.com/servo/rust-url。MIT 或 Apache-2.0 许可证。Copyright (c) 2013-2025 The rust-url developers。",
+                "读取 X.509 证书：x509-parser，https://github.com/rusticata/x509-parser。MIT 或 Apache-2.0 许可证。Copyright (c) 2017 Pierre Chifflier。",
+                "正则表达式测试器使用程序所用 WebView（Windows 上为 Microsoft Edge WebView2）中的 JavaScript 正则表达式引擎；未额外引入任何库。",
+                "CRC-32：crc32fast，https://github.com/srijs/rust-crc32fast。MIT 或 Apache-2.0 许可证。Copyright (c) 2018 Sam Rijs、Alex Crichton 及贡献者。",
+                "UUID：uuid，https://github.com/uuid-rs/uuid。Apache-2.0 或 MIT 许可证。Copyright (c) 2014 The Rust Project Developers；Copyright (c) 2018 Ashley Mannix、Christopher Armstrong、Dylan DPC、Hunar Roop Kahlon。",
+                "密码、密钥和 UUID 所用随机字节由操作系统生成：getrandom，https://github.com/rust-random/getrandom。MIT 或 Apache-2.0 许可证。Copyright (c) 2018-2025 The rust-random Project Developers；Copyright (c) 2014 The Rust Project Developers。",
+                "RSA 密钥和签名：rsa，https://github.com/RustCrypto/RSA，以及 num-bigint-dig，https://github.com/dignifiedquire/num-bigint。MIT 或 Apache-2.0 许可证。Copyright (c) RustCrypto Developers 和 dignifiedquire；Copyright (c) 2014 The Rust Project Developers。",
+                "NIST 曲线（P-256、P-384、P-521）的密钥和签名：p256、p384、p521，https://github.com/RustCrypto/elliptic-curves，以及所需的 ecdsa、elliptic-curve 和 crypto-bigint。Apache-2.0 或 MIT 许可证。Copyright (c) 2020-2023 RustCrypto Developers。",
+                "Ed25519 密钥和签名：ed25519-dalek 和 curve25519-dalek，https://github.com/dalek-cryptography/curve25519-dalek。BSD 3-Clause 许可证。Copyright (c) 2017-2019 isis agora lovecruft；Copyright (c) 2016-2021 isis agora lovecruft 和 Henry de Valence。保留所有权利。",
+                "密钥、请求和证书所用格式（PKCS #8、PKCS #1、SEC 1、SubjectPublicKeyInfo、X.509、PKCS #10、DER 和 PEM）：pkcs8、pkcs5、pkcs1、sec1、spki、der、x509-cert，https://github.com/RustCrypto/formats。Apache-2.0 或 MIT 许可证。Copyright (c) 2020-2023 The RustCrypto Project Developers。",
+                "OpenSSH 密钥文件：ssh-key，https://github.com/RustCrypto/SSH，以及加密密钥所需的 RustCrypto bcrypt-pbkdf、aes、ctr、chacha20 和其他密码算法与哈希函数（https://github.com/RustCrypto）。Apache-2.0 或 MIT 许可证。Copyright (c) 2021-2024 The RustCrypto Project Developers。",
+                "PKCS #12 文件（.pfx、.p12）：p12-keystore，https://github.com/ancwrd1/p12-keystore，以及所需的 RustCrypto pkcs12、cms、des、rc2、cbc、hmac、pbkdf2 和 scrypt。MIT 或 Apache-2.0 许可证。Copyright (c) Dmitry Pankratov；Copyright (c) The RustCrypto Project Developers。",
+                "用于生成密钥的随机数由操作系统提供：rand_core，https://github.com/rust-random/rand。MIT 或 Apache-2.0 许可证。Copyright 2018 Developers of the Rand project；Copyright (c) 2014 The Rust Project Developers。",
+                "HTTP 客户端：ureq，https://github.com/algesten/ureq。MIT 或 Apache-2.0 许可证。Copyright (c) 2019 Martin Algesten。",
+                "HTTP 客户端和“网站证书”的安全连接（TLS）：rustls，https://github.com/rustls/rustls，Apache-2.0、ISC 或 MIT 许可证，Copyright (c) 2016 Joseph Birr-Pixton；rustls-webpki，https://github.com/rustls/webpki，ISC 许可证，Copyright 2015 Brian Smith；ring，https://github.com/briansmith/ring，Apache-2.0 和 ISC 许可证；webpki-roots，https://github.com/rustls/webpki-roots，CDLA-Permissive-2.0 许可证。",
+                "检查此电脑是否信任证书：rustls-platform-verifier，https://github.com/rustls/rustls-platform-verifier。MIT 或 Apache-2.0 许可证。Copyright (c) 2022 1Password。",
+                "读取 Markdown：pulldown-cmark，https://github.com/pulldown-cmark/pulldown-cmark。MIT 许可证。Copyright 2015 Google Inc. 保留所有权利。",
+                "读取 UTF-8 以外编码的文件：encoding_rs，https://github.com/hsivonen/encoding_rs，Apache-2.0 或 MIT 许可证（其数据采用 BSD-3-Clause 许可证），Copyright Mozilla Foundation；以及 chardetng，https://github.com/hsivonen/chardetng，Apache-2.0 或 MIT 许可证，Copyright Mozilla Foundation。",
+                "密码短语词表：EFF Large Wordlist for Passphrases，https://www.eff.org/dice，由电子前沿基金会提供，依据 Creative Commons Attribution 3.0 United States 许可证（https://creativecommons.org/licenses/by/3.0/us/）使用。词表按原样使用。",
+                "以旧版 OpenSSL 方式加密的密钥：使用 RustCrypto 的 aes、cbc 和 des 解锁，https://github.com/RustCrypto。MIT 或 Apache-2.0 许可证。Copyright (c) RustCrypto Developers。",
+                "Dev 自行实现、未使用外部库：DNS 查询（按 RFC 1035 格式编写查询并读取响应）和端口检查。",
+                "Dev 自行实现、未使用外部库：流式读写 JSON、JSONPath（RFC 9535）、Base64、百分号编码、HTML 字符引用（名称遵循 HTML 标准，https://html.spec.whatwg.org）、字符串转义、读取 JSON Web Token、写入 YAML、双向转换 CSV、读取 Cron 计划，以及 XML/HTML 和 SQL 格式化。"
+              ]
+            },
+            "与程序其他部分共用的技术列于“关于 Syntelab Creative”中。"
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Dev 目前尚不支持的功能",
+          "body": [
+            {
+              "points": [
+                "仅当令牌使用共享密钥（HS256、HS384、HS512）生成时，才会验证其签名。",
+                "JSON Schema 验证器会像其依赖库一样以英语报告不匹配项，也不会跟踪指向其他文件或地址的 $ref。",
+                "SQL 格式化工具无需选择方言，也不会检查语句含义；它只会指出未闭合的字符串或注释。",
+                "转换过程中，YAML 以及转换为 YAML 或 CSV 的 JSON 会整体载入内存。转换为 JSON 的 CSV、XML、HTML 和 SQL 则会在读取时处理，不受文件大小限制。",
+                "用于查看 CSV 表格的视图为只读：目前无法在其中输入内容或复制内容。",
+                "差异比较工具每行最多保留两个文件中各 16 个字节，而不会保留整个文件；两个 JSON 文档会整体载入内存，因为比较前会重新序列化。",
+                "如果一段行中没有任何在两侧都恰好出现一次的行，会在一秒内尽可能进行比较：报告的差异是准确的，但不一定最少。",
+                "差异比较工具不会比较行尾格式（CRLF 或 LF）。",
+                "比较两个文件夹时会按文件字节内容进行比较，并按文件名逐字匹配。",
+                "检查工具输出的内容为 JSON，其中的字段名称为英语。",
+                "正则表达式测试器运行的是 JavaScript 正则表达式，而非 PCRE 或 Rust 正则表达式；它只能处理可显示的文本，不能直接处理磁盘上的文件；运行超过 20 秒的模式会被终止。",
+                "证书解码器只读取证书，不会验证其可信度：不会检查证书链、签名或吊销状态。",
+                "文本文件若使用 UTF-8 以外的编码，只有在文件小到可以显示时才能读取；从磁盘处理更大的文件时，文件必须使用 UTF-8。",
+                "将文件拖到工具中时最多载入 16 MB；窗口无法获知被拖动文件在磁盘上的位置，因此更大的文件请使用“打开文件”。",
+                "密码短语目前仅使用英语单词。",
+                "Cron 计划说明：计划生成器可创建 crontab 计划（五字段，含秒时六字段）；包含 L、W、# 或 ? 的计划无法载入生成器。由于 AWS rate() 从规则创建时开始计时，因此无法推算其运行时间。systemd 仅支持常见日历事件，不支持秒的小数部分，也不支持从月末倒数的日期列表。",
+                "十六进制查看器只查看文件，不会修改文件。文本列显示 ASCII 或西欧字符，不显示其他文字；查找仅支持字节或文本，不支持模式。",
+                "密钥和证书：支持 RSA、P-256、P-384、P-521 曲线和 Ed25519 密钥；不支持读取 DSA、secp256k1、X25519 等其他密钥。只有使用 AES 或 3DES 加密的旧版 OpenSSL 密钥才能打开。一个 .pfx 文件只能包含一个密钥及其证书。生成大型 RSA 密钥需要时间，且无法中途停止。生成 RSA 密钥的库存在一个已知弱点：能够通过网络对大量签名进行计时的攻击者可能利用该弱点（RUSTSEC-2023-0071）。在此应用中，密钥只会在你的电脑上生成并写入本机，不会代他人签名。",
+                "HTTP 客户端：仅支持 HTTP/1.1（不支持 HTTP/2 或 HTTP/3）；请求之间不保留 Cookie；不会自动构造 multipart 表单；对于超过 16 MB 或非文本响应，工具会重新发送请求并将响应写入文件。",
+                "DNS 查询会显示 DNSSEC 签名，但不会验证签名。端口检查只尝试 TCP：无法区分无响应的 UDP 端口与已关闭端口。网站证书工具不会检查证书是否已吊销。",
+                "右键菜单仅适用于 Windows 文件资源管理器；在 Windows 11 中，相关命令位于“显示更多选项”下。"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

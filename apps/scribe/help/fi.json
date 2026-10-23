@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Tekstit ja tiedostot",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editori",
+          "body": [
+            "Scribe on selväkielisen tekstin editori, jonka työkalut sijaitsevat sen vieressä. Jokaisella tekstillä on oma välilehtensä; teksti on keskellä, työkalupaneeli sen sivulla ja tietopalkki sen alla.",
+            "Kun Scribe avataan, se kysyy ensin, mitä haluat tehdä: laskea sanoja, etsiä ja korvata, poistaa kaksoiskappaleet, vertailla kahta tekstiä, järjestää rivejä, kääntää tekstin, kirjoittaa täytetekstiä tai satunnaista tekstiä. Jokainen valinta avaa tekstin ja siihen kuuluvan työkalun; \"Tyhjä teksti\" avaa vain tekstin, ja viimeksi avatut tekstit on lueteltu alla.",
+            {
+              "points": [
+                "Tiedosto → Uusi teksti (Ctrl+N) aloittaa tyhjän tekstin.",
+                "Tiedosto → Avaa (Ctrl+O) avaa yhden tai useamman tiedoston, jokainen omalle välilehdelleen. Mikä tahansa tekstiä sisältävä tiedosto avautuu: .txt, .md, .csv, .log, .srt, lähdekoodi ja muut.",
+                "Muokkaa → Kumoa (Ctrl+Z) ja Toista (Ctrl+Y) käyvät läpi kaikki tekstiin tehdyt muutokset; työkalu tai resepti lasketaan yhdeksi vaiheeksi.",
+                "Muokkaa → Etsi ja korvaa (Ctrl+F) avaa editoriin palkin, joka siirtyy osumasta toiseen.",
+                "Muokkaa → Valitse kaikki (Ctrl+A)."
+              ]
+            },
+            "Tekstin alla oleva rivi näyttää kursorin sijainnin, valitun määrän, rivien, sanojen ja merkkien lukumäärän, tiedoston koodauksen ja rivinvaihtojen tyypin.",
+            "Myös ikkunaan raahatut tiedostot avautuvat, jokainen uutena tekstinä tiedoston nimen, koodauksen ja rivinvaihtojen mukaisesti. Ohjelma tunnistaa rahatun tiedoston sisällön, mutta ei sen sijaintia levyllä, joten tallennus kysyy sijaintia; yli 64 MB kokoiset tiedostot avataan kohdasta Tiedosto → Avaa.",
+            "Uusi teksti listaa viimeksi avatut tekstit niin kauan kuin se on tyhjä: klikkaa yhtä avataksesi sen. \"Tyhjennä luettelo\" tyhjentää sen; luettelo säilytetään vain tällä tietokoneella."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Tallenna ja Tallenna nimellä",
+          "body": [
+            "Tiedosto levyllä ei muutu, ennen kuin tallennat sen. Välilehden piste kertoo, että tekstiin on tehty muutoksia, joita ei ole tallennettu tiedostoon, ja tällaisen välilehden sulkeminen kysyy vahvistusta.",
+            {
+              "points": [
+                "Tallenna (Ctrl+S) kirjoittaa tekstin tiedostoon. Uusi teksti kysyy tallennuspaikkaa.",
+                "Tallenna nimellä (Ctrl+Shift+S) kirjoittaa tiedon uuteen tiedostoon, joka korvaa välilehden, jolloin kaikki peruttavissa olevat toiminnot säilyvät; vanha tiedosto pysyy ennallaan."
+              ]
+            },
+            "Tiedosto kirjoitetaan joko kokonaan tai ei lainkaan: jos kirjoittaminen epäonnistuu, aiempi tiedosto säilyy.",
+            {
+              "note": "Tiedosto tallennetaan samalla tavalla kuin se on avattu: samalla koodauksella ja samoilla rivinvaihdoilla. Windowsilla kirjoitettu teksti ja Linuxilla kirjoitettu teksti säilyttävät alkuperäisen muotonsa."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Koodaukset ja rivinvaihdot",
+          "body": [
+            "Koodaus on tapa, jolla kirjaimet tallennetaan tavuina. Scribe lukee tiedoston omat tiedot koodauksesta ja arvaa sen, jos tietoja ei ole. Useimmat nykyiset tiedostot ovat UTF-8-muodossa; vanhemmat Keski-Euroopasta peräisin olevat tiedostot ovat usein windows-1250-muodossa.",
+            {
+              "points": [
+                "Väärin näkyvät kirjaimet (esim. Ã£ merkin ă sijasta tai neliöt): Tiedosto → \"Lue uudelleen toisella koodauksella\" ja valitse koodaus, jolla tiedosto on kirjoitettu.",
+                "Tallenna toisella koodauksella valitsemalla se tekstin alapuolella olevasta rivistä ja tallentamalla sitten. Jos tekstissä on merkkejä, joita valittu koodaus ei tue, Scribe ilmoittaa tästä eikä kirjoita mitään.",
+                "Rivinvaihdot (Windows CRLF, Linux ja macOS LF, vanha Mac CR) muutetaan samassa paikassa. Tiedostossa voi olla sekaisin eri rivinvaihtoja; tallennus muuttaa kaikki rivinvaihdot samanlaisiksi."
+              ]
+            },
+            "Uuden tekstin aloitusasetukset valitaan Asetuksista."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Tekstin näyttäminen",
+          "body": [
+            {
+              "points": [
+                "Kaikki Näytä-valikon kohdat ovat kytkimiä: kun kohta on päällä, se näkyy; kun se on pois, se ei näy.",
+                "Teksti: Rivitä pitkät rivit (Alt+Z) — ikkunaa pidempi rivi jatkuu alapuolella, mutta tekstin alkuperäiset rivinvaihdot säilyvät; Rivinumerot; Tulos tekstin viereen.",
+                "Tekstin vieressä: Työkalut (Ctrl+T), Reseptit, Tilastot. Paneeli näyttää vain ne osat, jotka ovat päällä; jos mitään ei ole päällä, paneelia ei näytetä.",
+                "Näytettävät työkalut: kukin työkaluryhmä (etsi ja korvaa, viivat, isot ja pienet kirjaimet, puhdistus, kirjoita teksti) voidaan poistaa paneelista. Muotoilu- tai Työkalut-valikosta valittu työkalu näytetään silti: sen osa ja ryhmä palautuvat automaattisesti.",
+                "Paneelin yläreunassa oleva kaksoisnuoli pienentää sen reunalla olevaksi kaistaleeksi, josta jokainen osa on vain yhden klikkauksen päässä; vedä reunasta muuttaaksesi sen leveyttä.",
+                "Kirjaimet ja niiden koko valitaan Asetuksista."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Erittäin suuret tiedostot",
+          "body": [
+            "Yli 64 MB:n tiedostoa ei aseteta editoriin: se avautuu välilehdelle, joka näyttää kerrallaan 500 rivin sivun, jota luetaan tiedostosta edetessäsi. Gigatavujen kokoiset tiedostot avautuvat näin siinä ajassa, joka kuluu niiden kertaalleen läpikäyntiin.",
+            {
+              "points": [
+                "\"Edellinen sivu\" ja \"Seuraava sivu\" liikuttavat tiedostossa; rivinumero ja \"Siirry\" hyppäävät mille tahansa riville.",
+                "Etsi hakee koko tiedostosta samoilla valinnoilla kuin muuallakin ja listaa löydetyt kohdat: klikkaa kohtaa siirtyäksesi kyseiselle riville. Pitkä lista tulee osissa \"Etsi lisää\" -toiminnon avulla.",
+                "\"Suorita resepti koko tiedostoon\" kirjoittaa tuloksen valitsemaasi kansioon samalla nimellä. Itse tiedosto ei tällöin muutu.",
+                "\"Avaa kokonaan editoriin\" asettaa tiedoston editoriin, jotta sitä voidaan muokata käsin. Tämä voi olla hidasta ja vaatii muistia useita kertoja tiedoston koon verran."
+              ]
+            },
+            {
+              "note": "Tiedostoja, joissa on kaksi tavua per merkki (UTF-16), ei voida näyttää sivu kerrallaan. Resepti pitää koko tiedoston muistissa suorituksen ajan: rajoittavana tekijänä on tietokoneen muisti."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Työkalut",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Kuinka työkalut toimivat",
+          "body": [
+            "Työkalut ovat tekstin vieressä olevassa paneelissa ryhmissä. Klikkaa työkalua nähdäksesi sen asetukset ja valitse sitten Käytä.",
+            {
+              "points": [
+                "Kun jotain on valittuna, työkalu muuttaa vain valinnan; kun mitään ei ole valittuna, koko tekstin. Paneelin yläreunassa näkyy, kumpi on kyseessä.",
+                "Painikkeen alapuolella työkalu kertoo, mitä se teki: kuinka monta riviä tai kohtaa se muutti.",
+                "Jokainen työkalu on yksi vaihe: Kumoa peruuttaa sen kokonaan.",
+                "Jokainen työkalu löytyy myös valikoista ja komentojen hausta: tekstin muotoa muuttavat työkalut (rivit, isot kirjaimet ja aakkoset, puhdistus) Muotoilu-valikosta, muut Työkalut-valikosta. Valinta sieltä avaa kyseisen työkalun paneelin ja sen asetukset."
+              ]
+            },
+            "Format-valikossa työkalu, jolla on pääasiassa yksi valinta, on esitetty omina vaihtoehtoinaan: jokainen tapa muuttaa isoja kirjaimia, jokainen lainausmerkkityyppi ja jokainen tapa kääntää teksti on oma komentonsa, joka avaa työkalun kyseisellä valinnalla. Jos ikkuna on liian kapea ryhmälle, ryhmästä tulee yksi painike, joka avaa koko listan.",
+            "Työkalut toimivat tällä tietokoneella. Tekstiä ei lähetetä pois."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Tulos ennen soveltamista",
+          "body": [
+            "Kun työkalu on auki, sen tuottama tulos näkyy tekstin vieressä \"Tulos\"-ruudussa. Tekstissä ei tapahdu muutoksia ennen kuin valitset Käytä tekstiin. Tulos päivittyy automaattisesti: kun muutat valintaa tai tekstiä, tulos luodaan uudelleen.",
+            {
+              "points": [
+                "Teksti ja tulos ovat vierekkäin, kumpikin saman korkuisen otsikon alla, jotta samat rivit alkavat samalta korkeudelta; ne vierittävät yhdessä (ketjupainike poistaa tämän toiminnon).",
+                "Muuttuvat rivit on merkitty, ja rivin muuttuva osa on merkitty tummemmalla; riveillä, jotka vain siirtyvät, ja uusilla riveillä on omat värinsä. Myös tekstissäsi on merkitty rivit, jotka muuttuisivat tai poistettaisiin.",
+                "Nimien alla: mitä tapahtuisi numeroina — muutetut, siirretyt, uudet ja poistetut rivit; rivit ja merkit ennen ja jälkeen.",
+                "Tuloksen alla: rivit, jotka poistettaisiin. Klikkaa riviä siirtyäksesi siihen tekstissä.",
+                "Tuloksen pienet painikkeet: kopioi tulos, avaa se uutena tekstinä, vertaa sitä tekstiin välilehdessä, vieritä yhdessä, sijoita tulos tekstin alle sen sijaan että se olisi vieressä, piilota se. Tekstillä on omat painikkeensa: kumoa, toista, kopioi, liitä päälle, valitse kaikki, tyhjennä.",
+                "Vedä kahden välissä olevaa palkkia antaaksesi toiselle enemmän tilaa; kaksoisnapsautus tekee niistä jälleen yhtä suuret."
+              ]
+            },
+            "Käytä tekstiin -painikkeen jälkeen Tulos-ruudussa lukee \"Käytetty. Vasemmalla oleva teksti on nyt lopputulos.\" ja se tarjoaa Kumoa- ja \"Vertaa alkuperäiseen\" -toiminnot, jotka avaavat saman vertailun ennen ja jälkeen. Se näyttää tuloksen uudelleen heti, kun muutat tekstiä tai työkalun asetusta.",
+            {
+              "note": "Näkymä → \"Tulos tekstin viereen\" kytkee ruudun päälle ja pois. Erittäin pitkän tekstin (yli kaksi miljoonaa merkkiä) kohdalla mitään ei näytetä etukäteen: käytä työkalua, ja Kumoa palauttaa tilanteen."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Korvaa kaikki",
+          "body": [
+            "Korvaa kaikki löytyneet kohdat kerralla. Kun kirjoitat etsittävää tekstiä, Scribe kertoo, kuinka monesta kohdasta se löytyi ja merkitsee ne tekstiin, jotta näet muutokset ennen niiden soveltamista.",
+            {
+              "points": [
+                "\"Säännöllinen ilmaisu\": etsittävä teksti on kuvio. Kohdassa \"Korvaa tekstillä\" $1, $2… tarkoittavat kuvion löytämiä ryhmiä.",
+                "\"Huomioi isot ja pienet kirjaimet\": a ja A ovat eri kirjaimia.",
+                "\"Vain kokonaiset sanat\": sanaa \"kissa\" ei etsitä sanan \"kissanpentu\" sisältä.",
+                "\"Säilytä korvattavan tekstin kirjainkuvio\": sanan \"kissa\" korvaaminen sanalla \"koira\" muuttaa sanan \"Kissa\" muotoon \"Koira\" ja \"KISSA\" muotoon \"KOIRA\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Lisää valintoja\" → \"Täytä…\": korvaava teksti voi sisältää tyhjiä kohtia, jotka täytetään jokaisessa osumassa. {counter} laskee 1, 2, 3… ({counter:10} alkaa luvusta 10, {counter:10:5} kasvaa viidellä); {date} ja {time} ovat tietokoneesi päivämäärä ja kellonaika; {uuid} on tunniste; {random} on 8 satunnaista kirjainta ja numeroa ({random:12} tarkoittaa 12 merkkiä).",
+                "Etsittävän tekstin alapuolella Scribe kertoo myös, kuinka monella rivillä osumat ovat ja kuinka monta erilaista tekstiä niitä on."
+              ]
+            },
+            "\"Korvaa useita kerralla\" suorittaa luettelon pareista yhdessä vaiheessa. Kirjoita yksi pari riville muodossa: etsittävä teksti => korvaava teksti. Ne suoritetaan järjestyksessä ensimmäisestä viimeiseen, ja jokainen vaikuttaa edellisen jättämään tekstiin; tyhjä jälkimmäinen osa poistaa tekstin.",
+            {
+              "note": "Kuvio ei voi jähmettää ohjelmaa: kesto kasvaa tekstin pituuden mukaan, ei nopeammin. Tästä syystä kuviot, jotka viittaavat aiemmin löydettyyn (\\1), eivät ole käytettävissä."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Rivit",
+          "body": [
+            {
+              "points": [
+                "Lajittele rivit seuraavasti: aakkosjärjestyksessä ohjelman kielellä tai valitsemallasi kielellä (romaniassa ă tulee a:n jälkeen; ruotsissa ä on z:n jälkeen, saksassa a:n vieressä); numerot sisältävät kirjaimet numeroina (file2 ennen file10:tä); rivin alussa olevan numeron mukaan; pituuden mukaan; sanamäärän mukaan; rivin alussa olevan päivämäärän mukaan (05.03.2024, 2024-03-05, tunnin kanssa tai ilman); internet-osoitteiden mukaan; versionumeroiden mukaan (1.2.10 jälkeen 1.2.9); otsikoiden mukaan, jolloin alussa oleva artikkeli ei vaikuta; määrittelemäsi järjestyksen mukaan (pieni, keskikokoinen, suuri); tai ilman järjestystä.",
+                "Rivit, joilla ei ole lajitteluperustetta (ei numeroa, ei päivämäärää, arvo ei ole määrittelemässäsi järjestyksessä), jäävät loppuun riippumatta siitä, onko järjestys nouseva vai laskeva.",
+                "Lisää lajitteluvaihtoehtoja: vertaa tietystä sanasta tai merkistä eteenpäin, tai taulukon sarakkeen mukaan (määrittele sarakkeiden osat); pidä ensimmäinen rivi paikallaan otsikkona; lajittele kappaleet rivien sijaan; ja siivoa ensin — poista tyhjät välilyönnit, poista tyhjät rivit, poista kaksoiskappaleet.",
+                "Poista kaksoiskappalerivit: pidä ensimmäinen, viimeinen tai yksikään toistuvista riveistä (vain kerran esiintyvät jäävät). Isot ja pienet kirjaimet, rivin ympärillä olevat välilyönnit, numerot, välimerkit sekä tietty määrä merkkejä alussa tai lopussa voidaan ohittaa; vertailukohteena voidaan käyttää vain saraketta tai vain kuvion löytämää tekstiä. Tyhjät rivit käsitellään kuten muutkin: ne pidetään, poistetaan tai yhdistetään.",
+                "Laske toistuvat rivit: jättää jokainen rivi kerran ja kirjoittaa sen eteen, kuinka monta kertaa se esiintyi — useimmin toistuvat ensin, vähiten toistuvat ensin tai esiintymisjärjestyksessä.",
+                "Säilytä tai poista rivejä: etsii jotakin jokaiselta riviltä ja säilyttää vain ne rivit, joissa se on, tai vain ne, joissa sitä ei ole.",
+                "Käännä rivien järjestys; Sekoita rivit.",
+                "Numeroi rivit: ensimmäinen numero, mitä sen jälkeen tulee, nollat eteen, jotta numerot kohdistuvat, tyhjät rivit ilman numeroa.",
+                "Tyhjät rivit: poista kaikki tai jätä yksi kohtaan, jossa niitä on useita.",
+                "Yhdistä rivit yhdeksi valitsemallasi erottimella; Jaa riveiksi jokaisen pilkun, puolipisteen tai muun merkin kohdalta. Kaikkialla, missä erotin kirjoitetaan (numerointi, yhdistäminen, jakaminen, laskeminen), \\t tarkoittaa sarkainta, jota ei voi kirjoittaa kenttään."
+              ]
+            },
+            {
+              "note": "Valinta, joka on merkityksellinen vain yhdessä toisen kanssa, näytetään vain silloin: sarake, kun vertaat sarakkeen perusteella. Harvemmin tarvittavat valinnat ovat kohdassa \"Lisää valintoja\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Iso- ja pienet kirjaimet",
+          "body": [
+            "Muuta kirjainkuvaa: virkemuoto, jokainen sana isolla alkukirjaimella, kaikki isoilla, kaikki pienillä, käännetty sekä koodauksessa käytetyt nimet: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Iso- ja pienet kirjaimet noudattavat kunkin aakkoston sääntöjä, eivät vain englannin kielen sääntöjä.",
+            "Suunta-ryhmässä \"Käännä teksti\" kääntää jokaisen rivin kirjaimet, sanojen järjestyksen tai jokaisen sanan kirjaimet; \"Ylösalaisin\" kirjoittaa tekstin niin, että se on luettavissa pöydän vastakkaiselta puolelta, ja \"Peilikuvana\" vaihtaa myös merkit, joilla on vasen ja oikea puoli. Kirjaimet lasketaan lukijan tavalla: kirjain merkkeineen pysyy yhtenä."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Siivous",
+          "body": [
+            {
+              "points": [
+                "Siivoa välilyönnit: useat välilyönnit muuttuvat yhdeksi; rivien päissä olevat välilyönnit poistetaan.",
+                "Trimmaa rivien päät: molemmista päistä, alusta tai lopusta.",
+                "Lainausmerkit: suorat, englanninkieliset, romanialaiset, saksalaiset tai ranskalaiset.",
+                "Poista diakriittiset merkit: ă muuttuu a:ksi, é muuttuu e:ksi. Vain latinalaisissa ja kreikkalaisissa aakkosissa, joissa kirjain ilman merkkiä on edelleen sama kirjain.",
+                "Korjaa romaniankieliset kirjaimet: ş ja ţ (cedillalla, kirjoitettu vanhemmilla näppäimistöillä) muuttuvat muotoon ș ja ț (pilkulla), joilla romaniaa kirjoitetaan.",
+                "Sarkaimet välilyönneiksi ja välilyönnit sarkaimiksi valitsemallasi sarkaimesarjalla.",
+                "Poista HTML-tunnisteet: käytetään tekstiin liitettyyn verkkosivun lähdekoodiin. Tunnisteet, skriptit ja tyylit poistetaan; vain lukijalle näkyvä sisältö jää. Sivun tuomiseen osoitteesta käytä sen alla olevaa työkalua \"Verkkosivun teksti\".",
+                "Verkkosivun teksti: kirjoita sivun osoite (example.com/page) ja valitse \"Hae teksti\". Sivulla lukijalle näkyvä sisältö kirjoitetaan kohdakkain kursorin kanssa ilman tunnisteita, skriptejä tai tyylejä. Tämä on ainoa Scribe-työkalu, joka käyttää verkkoa, ja vain pyynnöstäsi: sivu haetaan tälle tietokoneelle asennetulla selaimella (Microsoft Edge tai Google Chrome) ilman ikkunaa sekä evästeitä tai kirjautumisia; ohjelma itse ei lähetä mitään. Sivu, joka vaatii kirjautumisen, antaa vain sen, mitä vieras näkisi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Romaniankielisten diakriittien palauttaminen",
+          "body": [
+            "Ilman ă-, â-, î-, ș- ja ț-kirjaimia kirjoitettu romania kirjoitetaan uudelleen näillä kirjaimilla.",
+            {
+              "steps": [
+                "Avaa työkalu Puhdistus-ryhmästä ja valitse Käytä.",
+                "Sanat, joilla on vain yksi oikea muoto, muutetaan kerralla: \"stiu\" muuttuu muotoon \"știu\", \"informatii\" muuttuu muotoon \"informații\".",
+                "Sanat, jotka voidaan lukea useammalla tavalla (fata, fată, fața, față), luetellaan painikkeen alle kunkin tekstikohdan kohdalla. Napsauta oikeaa muotoa kullekin.",
+                "Tai valitse \"Valitse automaattisesti todennäköisempi muoto\" ennen käyttöä: mitään ei kysytä, ja lopputulos on luettava läpi."
+              ]
+            },
+            "Kun ympäröivät sanat riittävät, Scribe päättää niiden perusteella: \"o casa\" muuttuu muotoon \"o casă\", \"casa mea\" pysyy samana, \"pentru ca\" muuttuu muotoon \"pentru că\".",
+            {
+              "note": "Tämä on rakennettu Scribe-ohjelmaan yleisimpien sanojen ja romanian kielen diakriittisten päätteiden perusteella. Tuntemattomat sanat (harvinaiset sanat, nimet) pysyvät sellaisenaan, eikä jo diakriiteilla kirjoitettuja sanoja muuteta. Lue tulos ennen lähettämistä."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Tekstin kirjoittaminen: täyteteksti ja satunnainen teksti",
+          "body": [
+            "\"Kirjoita tekstiä\" -ryhmän työkalut eivät muuta mitään: ne kirjoittavat. Niiden tuottama teksti sijoittuu kohdoksi, jossa kursori on, tai korvaa valitun tekstin.",
+            {
+              "points": [
+                "Täyteteksti: kappaleita, lauseita, sanoja, listoja, otsikoita tai sivun osia (otsikko, kappaleet, lista). Saatavilla on painajien latinaa (lorem ipsum), englantia, romaniaa, toimisto- tai keittiösanastoa tai omia sanojasi. Lisävalintoja: lyhyitä, keskipitkiä tai pitkiä lauseita; tavallista tekstiä, Markdownia, HTML:ää tai JSONia; otsikkotasot; merkkiraja (teksti katkaistaan kokonaisen sanan kohdalta ja se päättyy silti lauseeseen); poissuljettavat sanat.",
+                "Keksityt tiedot: nimiä, sähköpostiosoitteita, puhelinnumeroita, katuosoitteita, päivämääriä tai numeroita, yksi per rivi, Romanian tai englanninkielisten maiden mukaisesti. \"Rivit oman mallini mukaan\" kirjoittaa jokaisen rivin toiveidesi mukaan, jolloin {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} ja {row} edustavat luotavaa sisältöä — esimerkiksi taulukkoa testaukseen, jota katsomme hetken kuluttua.",
+                "Satunnainen teksti: salasanoja (kirjaimia, numeroita ja merkkejä, vähintään yksi jokaista), kirjaimia, numeroita, heksadesimaaleja tai tunnisteita (UUID), yhdelle tai useammalle riville. Helposti sekoitettavat merkit (0 ja O, 1, l ja I) voidaan jättää pois.",
+                "Siemenarvo (kohdassa \"Lisää valintoja\") varmistaa, että täyteteksti ja keksityt tiedot ovat aina samat samalla numerolla; arvo 0 tuottaa joka kerta jotain uutta."
+              ]
+            },
+            {
+              "note": "Salasanat luodaan tällä tietokoneella käyttöjärjestelmän satunnaisuuden avulla, eikä niitä lähetetä minnekään. Keksityt sähköpostiosoitteet päättyvät osoitteeseen example.com, jonne posti ei kulje kenellekään; satunnaisesti luotu puhelinnumero voi kuulua jollekin, joten älä soita siihen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reseptit",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Tehtyjen toimintojen tallentaminen reseptiksi",
+          "body": [
+            "Resepti on lista työkaluista ja niiden asetuksista, joka tallennetaan nimen alle ja voidaan suorittaa uudelleen yhdellä napsautuksella.",
+            {
+              "steps": [
+                "Käytä tekstiin haluamiasi työkaluja haluamassasi järjestyksessä.",
+                "Avaa paneelin yläreunasta \"Reseptit\": soveltamasi työkalut on lueteltu.",
+                "Valitse \"Tallenna reseptiksi\" ja anna sille nimi.",
+                "Avaa myöhemmin resepti ja valitse \"Suorita tekstissä\": kaikki sen vaiheet suoritetaan, ja yksi Kumoa-toiminto peruuttaa ne kaikki."
+              ]
+            },
+            "Reseptit tallennetaan tälle tietokoneelle, ja ne ovat käytettävissä jokaisen tekstin kohdalla."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Reseptin muuttaminen tai uuden luominen",
+          "body": [
+            "Avatun reseptin kohdalla \"Muuta\" näyttää sen nimen ja vaiheet. Jokaista vaihetta voidaan siirtää ylös tai alas, poistaa tai muuttaa sen asetuksia; työkaluja lisätään vaiheiden alla olevasta luettelosta. Mitään ei tallenneta ennen \"Tallenna\"-painikkeen painamista.",
+            "\"Uusi resepti\" aloittaa tyhjän reseptin, joka kootaan samalla tavalla ilman, että työkaluja tarvitsee ensin soveltaa tekstiin.",
+            {
+              "note": "Tekstiä kirjoittavat työkalut (täyteteksti, satunnainen) eivät ole reseptin vaiheita: resepti muuttaa olemassa olevaa tekstiä."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Reseptin suorittaminen tiedostoissa",
+          "body": [
+            {
+              "steps": [
+                "Avaa resepti ja lisää \"Suorita tiedostoissa\" -kohdan alle tiedostoja tai kansio (myös sen alakansiot).",
+                "Valitse, mihin tulokset tallennetaan: toiseen kansioon, jolloin alkuperäiset tiedostot säilyvät, tai suoraan alkuperäisten tiedostojen päälle.",
+                "Suorita. Scribe kertoo, kuinka monta tiedostoa kirjoitettiin, kuinka moni ei vaatinut muutoksia sekä mitkä tiedostot jäivät tekemättä ja miksi."
+              ]
+            },
+            "Jokainen tiedosto kirjoitetaan samalla koodauksella ja rivinvaihtomerkeillä kuin alkuperäisessä tiedostossa. Toiseen kansioon tallennettaessa tiedostot säilyttävät alkuperäisen kansiorakenteensa, eikä jo olemassa olevaa tiedostoa kirjoiteta koskaan yli.",
+            {
+              "note": "Alkuperäisten tiedostojen päälle kirjoittamista ei voi kumota Scribe-ohjelmassa. Pidä varmuuskopio, jos tiedostot ovat tärkeitä."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tilastot, vertailu ja kansiot",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Tilastot",
+          "body": [
+            "Paneelin yläreunassa oleva \"Tilastot\" kertoo, mistä teksti tai valinta koostuu. Jokainen osa on taitettavissa.",
+            {
+              "points": [
+                "Yläreunassa: sanat, merkit välilyönneillä ja ilman, lauseet, kappaleet, rivit, sivut ja koko tavuina.",
+                "Aika: hiljainen lukeminen, ääneen lukeminen, kirjoittaminen koneella ja käsin kirjoittaminen.",
+                "Sanat: kuinka monta on erilaisia (ja niiden osuus kaikista), kirjaimet sanassa, tavut, pisin ja lyhyin sana sekä sanojen määrä kussakin pituudessa.",
+                "Lauseet: sanat lauseessa, kuinka monta on lyhyitä, keskipitkiä ja pitkiä, kuinka monta on väitteitä, kysymyksiä ja huutomerkkilauseita sekä pisin ja lyhyin lause.",
+                "Luettavuus: pistemäärä välillä 0 (erittäin vaikea) – 100 (erittäin helppo), tekstin kielelle tarkoitetun kaavan mukaan. Kaavat ovat olemassa englannin, saksan, espanjan, ranskan, italian, hollannin, portugalin ja venäjän kielille; kielelle, jolle ei ole kaavaa, ei anneta pistemäärää, koska toiselle kielelle tehty kaava olisi harhaanjohtava.",
+                "Yleisimmät ilmaisut: useimmin käytetyt sanat ja niiden osuus tekstistä sekä toistuvat sanaparit ja kolmen sanan ryhmät.",
+                "Tila tavallisissa rajoissa: kuinka monta merkkiä on jäljellä tai yli otsikolle, kuvaukselle, lyhyelle julkaisulle ja muille."
+              ]
+            },
+            "Sanat ja lauseet tunnistetaan kunkin kirjoitusjärjestelmän sääntöjen mukaan, joten myös kiina, japani ja thai, joissa sanojen välissä ei ole välilyöntejä, lasketaan mukaan. Ajan laskemiseen käytettävät nopeudet ja sivun sanamäärä on määritetty Asetuksista."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Kahden tekstin vertailu",
+          "body": [
+            {
+              "points": [
+                "Työkalut → \"Vertaa toiseen tekstiin\": editorin teksti rinnakkain kirjoittamasi tai liittämäsi tekstin kanssa.",
+                "Työkalut → \"Vertaa tiedostoon\": editorin teksti nykyisellään rinnakkain valitsemasi tiedoston kanssa.",
+                "Työkalut → \"Vertaa kahta tekstiä\": kaksi kirjoitettua tai liitettyä tekstiä rinnakkain.",
+                "Työkalut → \"Vertaa kahta tiedostoa\"."
+              ]
+            },
+            "Kaksi tekstiä näytetään vierekkäin. Vain ensimmäisessä olevat rivit on merkitty poistetuiksi, vain toisessa olevat lisätyiksi, ja muuttuneella rivillä on merkitty eri sanat. Näytetään vain erot ja muutama ympäröivä rivi; nuolet ohjaavat erosta seuraavaan.",
+            "Isojen ja pienten kirjainten, välilyöntien, tyhjien rivien, numeroiden ja välimerkkien voi jättää huomioimatta. \"Yhdessä sarakkeessa\" näytetään poistetut asiat niiden yläpuolella, jotka on lisätty, kumpikin omalla merkinnällään, sen sijaan että ne olisivat vierekkäin. Lukumäärien vieressä Scribe kertoo, kuinka samanlaisia tekstit ovat, laskemalla samojen rivien osuuden.",
+            "Teksti näytetään heti, kun se on valittu, ennen toista tekstiä. Vedä tekstien välistä palkkia antaaksesi toiselle enemmän tilaa; kun tekstejä kirjoitetaan, laatikoiden alla olevaa palkkia vedetään ylös ja alas, jotta laatikoille tai vertailulle tulee enemmän tilaa. Kaksoisnapsautus palauttaa palkin.",
+            "Jos useita rivejä peräkkäin on muutettu, jokainen sijoitetaan sen rivin viereen, jota se eniten muistuttaa, jotta niiden väliin lisätty tai poistettu rivi ei saa jokaista seuraavaa riviä näyttämään muuttuneelta.",
+            "\"Kirjoita tai liitä tekstit\" näyttää laatikon jokaisen sarakkeen yläpuolelle; kirjoittamasi teksti vertaillaan samalla kun kirjoitat, ja kummallekin puolelle voidaan edelleen valita tiedosto."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Etsiminen ja korvaaminen kansiossa",
+          "body": [
+            {
+              "steps": [
+                "Työkalut → \"Etsi kansiosta\" (Ctrl+Shift+F) ja valitse kansio. Myös sen alla olevat alikansiot etsitään.",
+                "Kirjoita etsittävä teksti samoilla valinnoilla kuin \"Korvaa kaikki\". \"Tiedostotyypit\" rajoittaa haun tiettyihin päätteisiin (txt, md, csv…).",
+                "Jokainen osuma näytetään omalla rivillään tiedosto kerrallaan. Napsauta riviä avataksesi tiedoston kyseisestä kohdasta.",
+                "Korvaaminen: kirjoita uusi teksti, poista valinta tiedostoista, joita ei haluta muuttaa, ja valitse \"Kirjoita tiedostot\"."
+              ]
+            },
+            "Mitään ei kirjoiteta ennen kuin pyydät, ja vain valittuihin tiedostoihin. Jokainen tiedosto kirjoitetaan samalla merkistöllä ja rivinvaihtomerkeillä kuin sillä oli alun perin.",
+            {
+              "note": "Piilotetut kansiot ja yleiset ohjelmistokansiot (.git, node_modules) ohitetaan, ellet erikseen pyydä niitä. Ei-tekstitiedostot ohitetaan aina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Asetukset",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Scriben asetukset",
+          "body": [
+            "Tiedosto → Asetukset avaa ohjelman asetukset Scriben osalta.",
+            {
+              "points": [
+                "Editori: tasalevyiset kirjaimet tai ohjelman omat, niiden koko, rivitys, rivinumerot ja se, näytetäänkö työkalun tulos ennen sen soveltamista.",
+                "Uusi teksti: miten rivit päättyvät ja alkaako tiedosto tavujärjestysmerkillä (BOM).",
+                "Tilastot: lukemis-, puhe-, kirjoitus- ja käsinkirjoitusnopeudet sekä se, kuinka monta sanaa muodostaa yhden sivun.",
+                "Scriben komentojen pikanäppäimet."
+              ]
+            },
+            "Jokaisessa asetuksessa on painike, jolla se palautetaan oletusarvoon."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tietoa Scribesta",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tietoa Scribesta",
+          "body": [
+            "Scribe on Syntelab Creativen tekstisovellus: editori, jonka työkalut ovat tekstin vieressä. Se näyttää, mitä työkalu tekisi ennen sen suorittamista, puhdistaa ja järjestää listoja, etsii ja korvaa tekstissä tai koko kansiossa, vertaa kahta tekstiä, analysoi tekstin rakenteen, luo täytetekstiä ja kuvitteellista dataa sekä tallentaa usein käytetyt toiminnot resepteiksi uudelleenajettavaksi.",
+            "Kaikki tapahtuu tällä tietokoneella. Tekstien koolle tai määrälle ei ole asetettu rajoituksia: rajoittavat tekijät ovat tietokoneen muisti ja nykyteknologian mahdollisuudet.",
+            "Ohjelma on uusi. Jos se ei vastaa tarpeitasi, kerro meille kohdasta Ohje → Palaute: niin tiedämme, mitä kehittää."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Scriben tekninen toteutus",
+          "body": [
+            {
+              "points": [
+                "Editori: CodeMirror.",
+                "Merkistökoodausten luku ja kirjoitus: encoding_rs sekä chardetng tiedostojen merkistön arvaamiseen.",
+                "Etsintä ja korvaaminen: Rustin regex-kirjasto, jonka kaavat eivät voi jumiuttaa ohjelmaa.",
+                "Kielikohtainen järjestäminen sekä sanojen ja lauseiden etsiminen kaikilla kirjoitusjärjestelmillä: ICU4X-Unicode-kirjasto.",
+                "Tekstien vertailu: similar-kirjasto.",
+                "Romanian erikoismerkit: Scribelle kirjoitettu sanalista ja säännöt."
+              ]
+            },
+            "Tiedot, jotka se jakaa ohjelman muiden osien kanssa, löytyvät kohdasta \"Tietoa Syntelab Creativesta\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Mitä Scribe ei vielä osaa tehdä",
+          "body": [
+            {
+              "points": [
+                "Erittäin suuri tiedosto luetaan sivu kerrallaan ja sitä voidaan muokata vain reseptien avulla; käsin muokkaaminen tarkoittaa tiedoston avaamista kokonaisuudessaan, mikä kuluttaa muistia.",
+                "Romanian kielimerkkien palauttaminen tunnistaa yleisimmät sanat; harvinaiset sanat ja nimet pysyvät sellaisina kuin ne on kirjoitettu.",
+                "Oikeinkirjoituksen tarkistusta ei ole.",
+                "Tekstiä ei oteta tässä PDF- tai Office-asiakirjoista; PDF Organizer avaa ne.",
+                "Editori ei tue värikoodausta tai Markdownia.",
+                "Ikkunaan raahattu tiedosto avautuu uutena tekstinä: ohjelmalle ei ilmoiteta tiedoston sijaintia, joten tallennusvaiheessa kysytään tallennuspaikkaa."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

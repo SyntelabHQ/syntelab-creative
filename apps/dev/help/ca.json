@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Orientació",
+      "topics": [
+        {
+          "id": "start",
+          "title": "La primera pàgina",
+          "body": [
+            "Una pestanya de Dev s'obre a la primera pàgina, on es troben totes les eines, agrupades com als menús: Codificar, Dades, Generar, Inspectar, Xarxa.",
+            {
+              "points": [
+                "Escriu a \"Cerca una eina\" per filtrar la llista.",
+                "L'agulla d'una eina la manté a dalt de tot, a Fixades.",
+                "Una eina s'obre a la mateixa pestanya; Fitxer → Totes les eines torna a la primera pàgina. A la Configuració pots fer que cada eina s'obri en una pestanya pròpia, i que una pestanya nova s'obri amb l'última eina utilitzada."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Enganxa qualsevol cosa",
+          "body": [
+            "El quadre de la part superior de la primera pàgina accepta qualsevol cosa que enganxis i indica a què s'assembla: un token, un certificat, JSON, UUID, marques de temps, programacions cron, URL, XML o HTML, SQL, Base64, una suma de verificació, una taula, YAML.",
+            "Sota cada suposició apareixen les eines que funcionen amb aquest tipus de dada, començant per la més adequada. Fes clic en una: s'obrirà amb el text ja inserit i s'executarà.",
+            {
+              "note": "El que enganxis es manté al quadre fins que el buidis o tanquis la pestanya. No s'escriu mai al disc."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Estructura d'una eina",
+          "body": [
+            "La majoria d'eines tenen la mateixa estructura: les opcions en una línia a la part superior, l'entrada a un costat, la sortida a l'altre, i una línia a la part inferior que indica què ha passat.",
+            {
+              "points": [
+                "El resultat es torna a generar cada vegada que canvia l’entrada o una opció, i es mostra a la sortida; \"S’executa sol\", a la línia d’opcions, ho indica. Només un text massa llarg per executar-lo a cada tecla, o un fitxer de més de 128 MB, espera el botó Executa, que llavors apareix. Ctrl+Enter executa l’eina en qualsevol moment.",
+                "Un resultat que no és text (una imatge descodificada de Base64, gzip) es mostra com a previsualització: una imatge tal com és, i qualsevol altra cosa pel seu tipus, la seva mida i els seus primers bytes. Llavors Copia el copia com a Base64, i una imatge es pot copiar com a imatge. El mateix passa amb un fitxer d’entrada que no és text.",
+                "Obre un fitxer, Enganxa i Neteja són sobre l’entrada; Copia i Desa en un fitxer, sobre la sortida. També pots deixar anar un fitxer a l’entrada.",
+                "Els errors de l’entrada s’indiquen amb text, amb la seva línia i columna, i es marquen a l’editor.",
+                "El menú Vista posa els dos panells l’un al costat de l’altre o l’un sota l’altre, mostra els números de línia i ajusta les línies llargues; la línia entre els panells es pot arrossegar.",
+                "Les opcions que triis es recorden per a la propera vegada. El que escrius, no."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Crema, i què es conserva",
+          "body": [
+            "Crema, a la part inferior dreta de cada eina, la buida de cop: l’entrada, el resultat, qualsevol cosa escrita als seus quadres i el que els seus editors podrien desfer.",
+            "Dev només conserva la seva configuració, les eines que has fixat, el nom de l’última eina utilitzada i les opcions de cada eina. Res del que escriguis, enganxis, obris o creïs en una eina no s’escriu al disc, en un registre ni en una llista d’elements recents. I encara menys els secrets: les claus, les frases de pas, els tokens i les capçaleres d’una sol·licitud viuen a la pestanya i enlloc més.",
+            "Només una cosa espera al disc una estona: el resultat d’un fitxer, i un resultat que no és text, s’escriuen en una carpeta pròpia del programa perquè es puguin mostrar i després desar. Cadascun s’esborra quan un altre resultat n’ocupa el lloc, quan cremes o tanques l’eina, i en tot cas quan Dev es torna a iniciar."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Fitxers de qualsevol mida",
+          "body": [
+            "No hi ha cap límit en la mida d’un fitxer. Un fitxer prou petit per mostrar-lo (fins a 16 MB) es posa a l’editor. Un de més gran, o un que no és text, es queda al disc: se’n mostra l’inici (o una previsualització), l’eina el llegeix des d’on es troba i el seu resultat es mostra com el d’un text. Llavors Desa en un fitxer copia el resultat on triïs.",
+            {
+              "points": [
+                "Les tasques llargues mostren una targeta amb el progrés i un botó Atura.",
+                "Un fitxer que sigui text en una codificació diferent d'UTF-8 (UTF-16, Windows-1252 i similars) es llegeix com a text quan és prou petit per mostrar-lo, i s'indica la codificació. El que desis des de Dev és UTF-8.",
+                "Un fitxer deixat anar sobre una eina s’obre com amb Obre un fitxer. Quan la finestra no pot saber on es troba, s’accepta fins a 16 MB, com si s’hagués enganxat."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Molts fitxers i carpetes senceres",
+          "body": [
+            "Allà on una eina tingui \"Treballar sobre: Text / Fitxers\", Fitxers l'executa en molts fitxers alhora.",
+            {
+              "steps": [
+                "Afegeix fitxers, o una carpeta (amb les carpetes que conté, si deixes aquesta opció activada).",
+                "Cada fitxer es llegeix una vegada mentre s’afegeix i s’indica si l’eina l’accepta.",
+                "Tria on van els resultats: al costat de cada fitxer amb un nom nou, en una carpeta (mantenint les carpetes) o sobre els mateixos fitxers, cosa que et tornarà a preguntar. Hash també pot mostrar simplement els resultats a la llista.",
+                "Fes clic en un fitxer de la llista per veure’n només el resultat sota les opcions, abans que s’escrigui res.",
+                "Executa. Un fitxer incorrecte no atura els altres; cadascun indica com ha anat."
+              ]
+            },
+            {
+              "note": "Un resultat no es desa mai sobre un fitxer que ja existeix, tret que ho demanis."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "El menú de clic dret de l'Explorador de Windows",
+          "body": [
+            "Activa'l a la Configuració del programa, a Explorador de Windows. Tot està agrupat sota una sola línia, \"Syntelab Creative\"; a Windows 11 és a \"Mostra més opcions\".",
+            {
+              "points": [
+                "Obre amb Syntelab Dev: en els tipus de fitxers que llegeix alguna eina (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz i similars). El fitxer s'obre a l'eina corresponent al seu tipus.",
+                "Sumes de verificació: en qualsevol fitxer o carpeta. Els resums es mostren en una llista, cadascun al costat del seu fitxer, i no s'escriu res.",
+                "Vista hex: en qualsevol fitxer.",
+                "Comparar: dos fitxers van als dos costats de Diff; dues carpetes, a la comparació de carpetes."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Codificar",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Converteix bytes a Base64 i a la inversa. La codificació accepta qualsevol fitxer; la descodificació torna els bytes, que es mostren si són text i es desen en un fitxer si no ho són.",
+            {
+              "points": [
+                "Alfabet: l'estàndard, o el de les URL (- i _).",
+                "Omplir amb =, i línies de 64, 76 o qualsevol nombre de lletres.",
+                "La descodificació accepta tots dos alfabets, amb farciment o sense, i indica on hi ha una lletra incorrecta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Codificar / decodificar URL",
+          "body": [
+            "Codificació percentual, tal com l'escriuen els navegadors: una part d'una adreça (es codifica tot el que no sigui una lletra simple), una adreça completa (se'n conserven els signes propis) o un formulari (+ per a un espai).",
+            "La descodificació indica on un % no va seguit de dos dígits hexadecimals."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Entitats HTML",
+          "body": [
+            "Escriu els signes que HTML i XML reserven per a ells mateixos (&, <, >, cometes) com a entitats, i llegeix les entitats: per nom, per número decimal o per número hexadecimal. Els noms són els de l'estàndard HTML.",
+            "\"Tots els caràcters que no siguin ASCII també\" escriu també com a entitats les lletres accentuades i els altres alfabets."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Decodificador JWT",
+          "body": [
+            "Descompon un JSON Web Token: la capçalera i la càrrega útil com a JSON, i les declaracions en paraules (emissor, subjecte, destinataris, quan caduca, amb \"caducat\" o \"encara no ha caducat\").",
+            "Proporciona el secret per comprovar una signatura feta amb un secret compartit (HS256, HS384, HS512). Les signatures fetes amb una clau privada (RS, ES, PS) no es comproven.",
+            {
+              "note": "El token i el secret es mantenen a la pestanya: no s'envia res a cap lloc per decodificar un token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escapar / desescapar",
+          "body": [
+            "Escriu un text com a cadena d'un llenguatge (JSON, JavaScript, C, C++, Java i similars) amb les seves cometes, salts de línia i altres signes escapats, i torna a llegir aquesta cadena."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Comprimeix i descomprimeix gzip, un fitxer de qualsevol mida a mesura que es llegeix. El nivell va del més ràpid al més petit; el resultat d'un text es pot donar en Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Bases numèriques",
+          "body": [
+            "Mostra nombres enters, un per línia, en binari, octal, decimal i hexadecimal, i en una altra base que triïs, fins a 36. Un nombre no té mida màxima.",
+            {
+              "points": [
+                "La base d'un nombre es dedueix de com està escrit: 0x per a hexadecimal, 0b per a binari, 0o per a octal, lletres per a hexadecimal, i decimal en cas contrari. O bé tria la base en què es llegeix tot.",
+                "Els espais, els guions baixos i els apòstrofs entre dígits s'ignoren: 1_000_000.",
+                "Un nombre negatiu també es mostra tal com el desen els ordinadors (complement a dos), en la mida més petita de 8, 16, 32, 64 bits, etc. que el pugui contenir."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dades",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Formatador de JSON",
+          "body": [
+            "Formata, minifica i valida JSON, i el mostra com un arbre. Un document de qualsevol mida es llegeix com a flux (stream).",
+            {
+              "points": [
+                "Indenta amb 2 o 4 espais, una tabulació o qualsevol nombre d'espais.",
+                "Més opcions: ordenar claus, llistes curtes en una sola línia, l'espai després dels dos punts, com acaben les línies, un salt de línia al final, lletres no ASCII com a \\uXXXX.",
+                "La lectura tolerant accepta comentaris (// i /* */) i comes finals, i escriu JSON estricte.",
+                "Canvis: eliminar nulls, eliminar valors buits i similars, en una sola passada.",
+                "L'arbre s'obre un nivell alhora i permet trobar un text a les claus i els valors."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Executa una consulta JSONPath (RFC 9535) en un document: $.store.book[?@.price < 10].title. El resultat són els valors trobats, els camins cap a ells, o ambdós.",
+            "Si una consulta és incorrecta, s'indica el lloc on s'ha produït l'error."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Validador de JSON Schema",
+          "body": [
+            "Comprova un document amb un JSON Schema (esborranys 4 a 2020-12). L'esquema va al panell sota l'entrada. Cada element que no s'hi ajusta es llista amb la seva ubicació i la regla que infringeix.",
+            "En molts fitxers, cadascun es comprova amb el mateix esquema. No es segueixen els $ref a altres fitxers o a una adreça."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Generador d'esquemes i JSON → TypeScript",
+          "body": [
+            "A partir d'una mostra de JSON, el generador d'esquemes escriu un JSON Schema al qual s'ajusta, i JSON → TypeScript escriu les declaracions del seu tipus (interfícies o tipus, exportats o no, de només lectura o no, amb el nom que indiquis)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Converteix YAML a JSON i JSON a YAML. El YAML es llegeix segons el seu esquema principal, seguint les àncores i les fusions; els errors s'indiquen amb la seva ubicació."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Converteix una taula a JSON i a la inversa. El separador es dedueix de la primera fila o es tria (coma, punt i coma, tabulador, barra vertical); la primera fila pot ser la capçalera; es poden detectar números i valors true / false.",
+            "\"Taula\" mostra el CSV en files i columnes, independentment de la mida del fitxer."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Formatador XML / HTML",
+          "body": [
+            "Formata, minifica i comprova XML i HTML. L'XML es llegeix estrictament: s'indica la ubicació de qualsevol etiqueta que no s'hagi tancat. L'HTML es llegeix tal com ho fan els navegadors, permetent certs errors."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Formatador SQL",
+          "body": [
+            "Distribueix una sentència, una clàusula per línia, o la posa en una sola línia; les paraules clau poden estar en majúscules, minúscules o tal com s'han escrit. No requereix cap dialecte i no comprova el significat de la sentència."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Compara dos textos línia per línia, dos documents JSON pel seu contingut, o dues carpetes fitxer per fitxer. El primer es posa a l'entrada i el segon al panell inferior.",
+            {
+              "points": [
+                "\"Costat a costat\" marca les paraules que han canviat dins d'una línia; \"Unificat\" és un pedaç tal com l'escriu diff -u.",
+                "Ignorar majúscules i minúscules, espais en blanc, línies buides, dígits o puntuació.",
+                "Per al JSON, l'ordre de les claus i la disposició no suposen cap diferència; el resultat pot ser un JSON Patch (RFC 6902).",
+                "Carpetes: quins fitxers només són en una, quins són iguals, quins difereixen; Compara en una fila obre el parell com a textos."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Vista prèvia de Markdown",
+          "body": [
+            "Mostra el Markdown tal com es veurà i en proporciona l'HTML per copiar-lo o desar-lo: CommonMark amb taules, text ratllat, llistes de tasques i notes al peu.",
+            {
+              "points": [
+                "L'HTML escrit dins del Markdown es mostra com a text, no s'executa.",
+                "Una imatge que s'hauria de descarregar de la xarxa no es descarrega: en el seu lloc es mostren la seva descripció i l'adreça. Una imatge inclosa al text (data:) es mostra.",
+                "Un enllaç on facis clic s'obre al navegador del sistema."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Generar",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Crea UUID de les versions 1, 3, 4, 5, 6 i 7 (RFC 9562), tants com vulguis, escrits amb guions, simples, com a URN o entre claus. \"Descompondre\" indica la versió de cada UUID i el temps o el nom que conté."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 i SHA-512 d'un text o d'un fitxer, diversos a la vegada, escrits en hex o Base64. Un fitxer de qualsevol mida es processa mentre es llegeix.",
+            {
+              "points": [
+                "Comprovar amb: enganxa una suma de verificació o la línia d'un fitxer .sha256; s'indicarà si coincideix o no.",
+                "Clau HMAC: els resums es converteixen en HMAC amb aquesta clau.",
+                "Cada línia per separat: un resum per a cada línia del text.",
+                "Fitxers: els resums es llisten al costat dels seus fitxers; Copia-ho tot els dona tal com els escriu sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Contrasenyes i secrets",
+          "body": [
+            "Crea contrasenyes amb els tipus de caràcters que triïs, frases de pas amb paraules i bytes aleatoris en hex o Base64, a partir dels nombres aleatoris del sistema operatiu. Cadascuna indica quants bits d’entropia té. Un cop creat, canviar una opció el torna a crear.",
+            "Una frase de pas són paraules extretes de la llista llarga de paraules de l'Electronic Frontier Foundation (7776 paraules en anglès), cadascuna tan probable com les altres: sis paraules són uns 77 bits."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Claus i certificats",
+          "body": [
+            "Cinc opcions, triades a la part superior:",
+            {
+              "points": [
+                "Clau nova: RSA, EC P-256 / P-384 / P-521 o Ed25519, en qualsevol format que utilitzin els programes (PKCS #8, el format antic, OpenSSH; la clau pública com a PEM i com a línia per a authorized_keys), bloquejada amb una contrasenya si en proporciones una.",
+                "Sol·licitud de certificat: un CSR per a una clau nova o una que enganxis, amb el seu subjecte i els seus altres noms (SAN).",
+                "Certificat autosignat: el mateix, signat amb la seva pròpia clau, durant un nombre determinat de dies; l'opció \"Pot signar altres certificats\" el converteix en una autoritat pròpia.",
+                "Signar amb la teva pròpia CA: enganxa una sol·licitud, el certificat de la teva autoritat i la seva clau; obtindràs el certificat signat i l'autoritat posteriorment.",
+                "Llegir i convertir: enganxa o obre qualsevol cosa (PEM, DER, una clau OpenSSH, un fitxer .pfx o .p12, bloquejat o no). Indica què ha trobat i si la clau és la del certificat, i escriu cada element en els altres formats. Una clau i el seu certificat es poden desar junts com a .pfx."
+              ]
+            },
+            {
+              "note": "Tot es crea en aquest ordinador. Una clau és a la pestanya fins que prems Crema, i enlloc més tret que la desis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inspectar",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Provador de regex",
+          "body": [
+            "Prova una expressió regular de JavaScript en un text: les coincidències amb els seus grups i posicions, o el text amb les coincidències substituïdes. Els indicadors són g, i, m, s, u, y.",
+            "El patró s'executa fora de la finestra, i qualsevol que trigui més de 20 segons s'interromp."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Explicador de Cron",
+          "body": [
+            "Explica amb paraules què significa una programació i quan s'executa: crontab (cinc camps, sis amb segons, set amb un any), Quartz, AWS EventBridge cron() i rate(), i systemd OnCalendar. Una programació per línia.",
+            {
+              "points": [
+                "Les properes execucions, i les anteriors si es sol·liciten, en la zona horària que triis.",
+                "Els dies de la setmana es numeren a partir del 0 per al diumenge, o de l’1 com els numera Quartz, com triïs. Una línia amb segons que també té un any, L, W o # és de Quartz, i es llegeix sola a la manera de Quartz.",
+                "La mateixa programació en els altres formats, per copiar-la o afegir-la a l’entrada.",
+                "El constructor crea una programació triant cada camp; \"Canviar al constructor\" hi carrega una programació escrita."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Marca de temps Unix",
+          "body": [
+            "Llegeix moments, un per línia: segons, mil·lisegons, microsegons o nanosegons des de 1970, o una data escrita de les maneres habituals (ISO 8601, com l’escriuen el correu i l’HTTP, com l’escriu Git). Cadascun s’indica en la zona horària que triïs, en UTC i com a tots els tipus de marca de temps."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Analitzador d'URL",
+          "body": [
+            "Descompon una URL tal com la llegeixen els navegadors: esquema, usuari, host (amb la seva forma Unicode quan està escrit en punycode), port, ruta, cada paràmetre de la consulta descodificat i el fragment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Decodificador de certificats",
+          "body": [
+            "Llegeix certificats X.509 en PEM o DER i mostra tot el que contenen: subjecte, emissor, validesa, els noms per als quals és vàlid, la seva clau, les seves extensions i les seves empremtes digitals.",
+            "Llegeix la informació; no jutja si un certificat és de confiança. Per al certificat que mostra un lloc i per saber si aquest ordinador hi confia, utilitza Xarxa → Certificat d'un lloc."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Visualitzador hex",
+          "body": [
+            "Mostra els bytes d'un fitxer de qualsevol mida, o d'un text enganxat: la posició de cada fila, els bytes i aquests mateixos bytes com a lletres.",
+            {
+              "points": [
+                "Vés a una posició escrita com 0x1F4, 1F4h o 500.",
+                "Cerca bytes (DE AD BE EF) o un text (UTF-8 o UTF-16 en qualsevol sentit), endavant i enrere.",
+                "Fes clic en un byte: el costat mostra què hi ha com a números de qualsevol mida, en tots dos ordres de bytes, com a caràcter i com a hora.",
+                "Selecciona arrossegant, amb Maj o amb les tecles de fletxa; copia la selecció com a hex, com a codi, com a Base64 o com a text, o desa-la en un fitxer."
+              ]
+            },
+            {
+              "note": "Només visualitza: no es canvia res al fitxer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Xarxa",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "On van les eines de xarxa",
+          "body": [
+            "Aquestes quatre eines són l'única part de Dev que es connecta a internet, i van allà on les dirigeixes.",
+            {
+              "points": [
+                "Només es contacta amb l'adreça que escrius, i només quan prems el botó. Mai en segon pla.",
+                "El que s'envia és el que has escrit. L'única cosa que s'afegeix a una sol·licitud és un User-Agent que és el mateix per a tothom (\"Syntelab Creative\"), tret que n'hi posis un de propi.",
+                "No es conserven galetes, no s'envia res sobre tu ni sobre l'ordinador, i no es conserva res del que s'ha escrit."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Client HTTP",
+          "body": [
+            "Envia una sol·licitud escrita a mà: mètode, adreça, capçaleres (una per línia: Nom: valor) i un cos, escrit o pres d'un fitxer de qualsevol mida.",
+            {
+              "points": [
+                "La resposta: el seu número, quant ha trigat (en total i fins al primer byte), la seva mida, les seves capçaleres i el seu cos, amb colors segons el tipus i formatat si és JSON. Un cos que no és text (una imatge, un PDF) es mostra tal com és, i es desa tal com ha arribat.",
+                "Segueix les redireccions o mostra la primera resposta tal com és. Es llisten les adreces des de les quals s'ha reenviat la sol·licitud.",
+                "Comprova el certificat amb el que aquest ordinador considera fiable; desactiva-ho només per a servidors propis.",
+                "\"Enviar, resposta a un fitxer\" escriu un cos de qualsevol mida directament al disc, amb el progrés i el botó Atura.",
+                "\"Copiar com a curl\" dona la mateixa sol·licitud com a ordre."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Consulta DNS",
+          "body": [
+            "Demana a un servidor de noms els registres d'un nom: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, diversos a la vegada. Una adreça proporciona el seu nom (PTR).",
+            "La pregunta s'envia al servidor de noms configurat a l'ordinador, a un de públic (1.1.1.1, 8.8.8.8, 9.9.9.9), a un resolutor via HTTPS (Cloudflare, Google) o a un que escriguis."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Comprovació de ports",
+          "body": [
+            "Indica si els ports d'un host accepten connexions TCP: un, diversos o un rang fins a tots els 65 535 (22, 80, 443, 8000-8100). Cadascun està obert, tancat o sense resposta en el temps indicat.",
+            {
+              "note": "Prova només hosts propis o que tinguis permís per provar."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Certificat d'un lloc",
+          "body": [
+            "Mostra els certificats que un lloc dona quan s'estableix una connexió segura: per a qui són, qui els ha signat, quants dies queden, si aquest ordinador hi confia i per què no, la versió de TLS i el xifratge. Només es fa la negociació (handshake): no s'envia cap sol·licitud.",
+            {
+              "points": [
+                "Escriu example.com, example.com:8443 o una adreça web.",
+                "Els servidors de correu i FTP comencen en clar i se'ls demana que passin a TLS (STARTTLS): triat pel port (25, 587, 143, 110, 21) o manualment.",
+                "\"Tot\" mostra tot el que diuen els certificats; \"PEM\" permet copiar-los o desar-los."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Configuració",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "La configuració de Dev",
+          "body": [
+            "Fitxer → Configuració obre la configuració del programa a la part de Dev.",
+            {
+              "points": [
+                "Obre cada eina en una pestanya pròpia, o a la pestanya on s'ha triat.",
+                "Obre una pestanya nova amb l'última eina utilitzada, o a la primera pàgina.",
+                "Restaura les opcions de cada eina, i les eines fixades, tal com venen de fàbrica."
+              ]
+            },
+            "El menú del clic dret de l'Explorador de Windows, l'idioma, el tema i les tecles es troben a la configuració del programa en el seu conjunt."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Quant a Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Quant a Dev",
+          "body": [
+            "Dev és l'aplicació de Syntelab Creative per a desenvolupadors: eines que codifiquen i descodifiquen, formaten i comproven, converteixen una forma de dades en una altra, i descomponen allò que és difícil de llegir tal com és.",
+            "Tot es fa en aquest ordinador. Res del que escriguis, enganxis o obris en una eina no es conserva ni s'envia enlloc. No hi ha cap límit en la mida ni en el nombre de fitxers: els límits són la memòria i el disc de l'ordinador.",
+            "És nova i encara s'està construint. Allà on no et sigui suficient per a la teva feina, digues-nos-ho a Ajuda → Comentaris."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Amb què s'ha construït Dev",
+          "body": [
+            {
+              "points": [
+                "Els editors: CodeMirror, https://codemirror.net . Llicència MIT. Copyright (C) 2018-2021 per Marijn Haverbeke i altres.",
+                "Lector i coloritzador de JSON als editors: @codemirror/lang-json, https://github.com/codemirror/lang-json , amb @codemirror/language i @lezer/highlight. Llicència MIT. Copyright (C) 2018-2021 per Marijn Haverbeke i altres.",
+                "Lector i coloritzador de YAML, XML, HTML i SQL als editors: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (amb @codemirror/lang-css i @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Llicència MIT. Copyright (C) 2018-2024 per Marijn Haverbeke i altres.",
+                "Comprovació d'un document amb un JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Llicència MIT. Copyright (c) 2020-2026 Dmitry Dygalo. S'ha compilat sense la seva part de xarxa: Dev no descarrega mai cap esquema.",
+                "Els patrons de JSONPath (match i search): regex, https://github.com/rust-lang/regex . Llicència MIT o Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "Lector de YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Llicència MIT o Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. L'escriptura de YAML la fa el propi Dev.",
+                "Comparació de dos textos (Diff): similar, https://github.com/mitsuhiko/similar . Llicència Apache-2.0. Autors: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Llicència MIT o Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Els resums de l’eina Hash i de la signatura d’un token: sha2, sha1 i md-5, https://github.com/RustCrypto/hashes . Llicència MIT o Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, i els desenvolupadors de RustCrypto.",
+                "Dates, hores i zones horàries (Unix timestamp, Cron explain): jiff, https://github.com/BurntSushi/jiff , amb les zones horàries de la base de dades IANA. Llicència Unlicense o MIT. Copyright (c) 2015 Andrew Gallant.",
+                "Descomposició d'una URL: url i idna, https://github.com/servo/rust-url . Llicència MIT o Apache-2.0. Copyright (c) 2013-2025 The rust-url developers.",
+                "Lector de certificats X.509: x509-parser, https://github.com/rusticata/x509-parser . Llicència MIT o Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "El provador de regex executa les expressions regulars de JavaScript, en el motor del WebView amb el qual el programa dibuixa (Microsoft Edge WebView2 a Windows); no s'ha afegit cap biblioteca per a això.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Llicència MIT o Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton i col·laboradors.",
+                "UUIDs: uuid, https://github.com/uuid-rs/uuid . Llicència Apache-2.0 o MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Bytes aleatoris per a contrasenyes, secrets i UUID, del sistema operatiu: getrandom, https://github.com/rust-random/getrandom . Llicència MIT o Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Claus i signatures RSA: rsa, https://github.com/RustCrypto/RSA , amb num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Llicència MIT o Apache-2.0. Copyright (c) RustCrypto Developers i dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Claus i signatures de les corbes NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , amb ecdsa, elliptic-curve i crypto-bigint que necessiten. Llicència Apache-2.0 o MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Claus i signatures Ed25519: ed25519-dalek i curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Llicència BSD 3-Clause. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft i Henry de Valence. Tots els drets reservats.",
+                "Els formats en els quals s'escriuen les claus, sol·licituds i certificats (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER i PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Llicència Apache-2.0 o MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Fitxers de clau OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , amb bcrypt-pbkdf, aes, ctr, chacha20 i els altres xifrats i hashes de RustCrypto que requereix el bloqueig d'una clau ( https://github.com/RustCrypto ). Llicència Apache-2.0 o MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Fitxers PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , amb pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 i scrypt de RustCrypto que necessita. Llicència MIT o Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Els números aleatoris de què es fan les claus, presos del sistema operatiu: rand_core, https://github.com/rust-random/rand . Llicència MIT o Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "El client HTTP: ureq, https://github.com/algesten/ureq . Llicència MIT o Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Connexions segures (TLS) del client HTTP i del \"Certificat d'un lloc\": rustls, https://github.com/rustls/rustls , llicència Apache-2.0, ISC o MIT, Copyright (c) 2016 Joseph Birr-Pixton; amb rustls-webpki, https://github.com/rustls/webpki , llicència ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , llicències Apache-2.0 i ISC; webpki-roots, https://github.com/rustls/webpki-roots , llicència CDLA-Permissive-2.0.",
+                "Si aquest ordinador confia en un certificat: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Llicència MIT o Apache-2.0. Copyright (c) 2022 1Password.",
+                "Lector de Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Llicència MIT. Copyright 2015 Google Inc. Tots els drets reservats.",
+                "Lectura de fitxers escrits en codificacions diferents de UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , llicència Apache-2.0 o MIT (amb BSD-3-Clause per a les seves dades), Copyright Mozilla Foundation; i chardetng, https://github.com/hsivonen/chardetng , llicència Apache-2.0 o MIT, Copyright Mozilla Foundation.",
+                "Les paraules de les frases de pas: l'EFF Large Wordlist for Passphrases, https://www.eff.org/dice , de l'Electronic Frontier Foundation, utilitzada sota la llicència Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). La llista s'utilitza tal com és.",
+                "Obertura de claus bloquejades amb el mètode antic d'OpenSSL: aes, cbc i des de RustCrypto, https://github.com/RustCrypto . Llicència MIT o Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "Escrit per a Dev, sense biblioteca: la cerca de DNS (preguntes escrites i respostes llegides tal com les defineix l'RFC 1035) i la comprovació de ports.",
+                "Escrit per a Dev, sense biblioteca: lectura i escriptura de JSON com a flux, JSONPath (RFC 9535), Base64, codificació percentual, referències de caràcters HTML (els seus noms són els de l'estàndard HTML, https://html.spec.whatwg.org ), seqüències d'escapada de cadenes, lectura de JSON Web Tokens, escriptura de YAML, CSV en tots dos sentits, lectura de programacions cron, el formatador d'XML i HTML, i el formatador de SQL."
+              ]
+            },
+            "El que comparteix amb la resta del programa es troba a \"Quant a Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "El que Dev encara no pot fer",
+          "body": [
+            {
+              "points": [
+                "La signatura d'un token només es comprova quan s'ha fet amb un secret compartit (HS256, HS384, HS512).",
+                "El validador de JSON Schema indica en anglès què no s'hi ajusta, tal com fa la seva biblioteca, i no segueix un $ref a un altre fitxer o adreça.",
+                "El formatador de SQL no demana cap dialecte i no comprova què significa una sentència: només avisa d'una cadena o d'un comentari que no s'acaba mai.",
+                "YAML, i el JSON que es converteix en YAML o CSV, es mantenen completament a la memòria mentre es transformen; el CSV que es converteix en JSON, XML, HTML i SQL es processa a mesura que es llegeix, independentment de la seva mida.",
+                "La taula en què es consulta el CSV és només de lectura: no s'hi escriu res i encara no se'n pot copiar res.",
+                "Diff manté setze bytes per cada línia dels dos fitxers, no els fitxers en si; dos documents JSON es mantenen completament, ja que s'escriuen de nou abans de comparar-los.",
+                "Un tram de línies sense cap línia que totes dues parts tinguin exactament una vegada es compara tant com permet un segon: les diferències indicades són certes, tot i que no sempre les mínimes.",
+                "Diff no compara com acaben les línies (CRLF o LF).",
+                "Dues carpetes es comparen pels bytes dels seus fitxers; els fitxers es correlacionen pels seus noms, lletra per lletra.",
+                "El que indiquen les eines d'Inspectar és JSON, amb els noms en anglès.",
+                "El provador de regex executa les expressions regulars de JavaScript, no PCRE ni les de Rust; treballa sobre un text que es pot mostrar, no sobre un fitxer guardat al disc; un patró que triga més de 20 segons a executar-se s'interromp.",
+                "El descodificador de certificats llegeix un certificat i no comprova si és fiable: ni la seva cadena, ni la seva signatura, ni si ha estat revocat.",
+                "Un fitxer que sigui text en una codificació diferent d'UTF-8 es llegeix quan és prou petit per mostrar-lo; un de més gran, processat des del disc, ha de ser UTF-8.",
+                "Un fitxer deixat anar sobre una eina s'accepta fins a 16 MB; la finestra no sap on és al disc el fitxer deixat anar, per això un de més gran s'obre amb Obre un fitxer.",
+                "Les frases de pas només estan formades per paraules en anglès.",
+                "Explicador de Cron: el constructor crea programacions de crontab (cinc camps, o sis amb segons); no s'hi pot carregar una programació amb L, W, # o ?. No es poden indicar les hores d'un rate() d'AWS, ja que es compta des que es va crear la seva regla. De systemd, es llegeixen els esdeveniments de calendari habituals; no les fraccions de segon ni les llistes de dies comptats des del final del mes.",
+                "El visualitzador hex només mostra: no es canvia res al fitxer. La columna de text mostra ASCII o les lletres d'Europa occidental, no altres alfabets; es busquen bytes o un text, no patrons.",
+                "Claus i certificats: les claus són RSA, les corbes P-256, P-384 i P-521, i Ed25519; no se'n llegeixen d'altres (DSA, secp256k1, X25519). Una clau bloquejada amb el mètode antic d'OpenSSL s'obre quan el seu xifratge és AES o 3DES. Un fitxer .pfx conté una clau amb els seus certificats. Crear una clau RSA molt gran requereix temps i no es pot aturar a mitges. La biblioteca que crea les claus RSA té una debilitat coneguda davant d'un atacant que pugui mesurar el temps de moltes signatures a través d'una xarxa (RUSTSEC-2023-0071): aquí les claus es creen i s'escriuen al teu ordinador, i no es signa res per a ningú més.",
+                "Client HTTP: HTTP/1.1 (no HTTP/2 o 3); no es conserven cookies entre peticions; no es creen formularis de diverses parts (multipart); una resposta superior a 16 MB, o una que no sigui de text, s'escriu en un fitxer tornant a enviar la petició.",
+                "La cerca de DNS mostra signatures (DNSSEC) i no les comprova. La comprovació de ports només intenta TCP: no es pot diferenciar un port UDP silenciós d'un que estigui tancat. El certificat d'un lloc no pregunta si un certificat ha estat revocat.",
+                "El menú del botó dret és per a l'Explorador de Windows; a Windows 11 les seves entrades són a \"Mostra més opcions\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

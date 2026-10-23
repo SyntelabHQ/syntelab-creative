@@ -1,0 +1,119 @@
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.formats {
+  display: flex;
+  flex: 0 0 290px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.groupName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-block-end: 4px;
+  padding-block-end: 4px;
+  padding-inline: 4px;
+  border-block-end: 2px solid var(--sc-accent);
+  color: var(--sc-text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* A dot before each category, in the accent color. */
+.groupName::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--sc-accent);
+  content: '';
+}
+
+.explain {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface-2);
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.format {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 34px;
+  padding-inline: 12px;
+  border: 1px solid transparent;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.format:hover {
+  background: var(--sc-surface-2);
+}
+
+.format[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.ending {
+  color: var(--sc-muted);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 12px;
+}
+
+.detail {
+  display: flex;
+  flex: 1 1 300px;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+}
+
+.heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about,
+.note {
+  margin: 0;
+  color: var(--sc-muted);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.slider {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-variant-numeric: tabular-nums;
+}

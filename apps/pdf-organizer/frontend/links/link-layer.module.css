@@ -1,0 +1,17 @@
+/* A link of the document, over the picture of its page: nothing shows until the pointer is on it. */
+.link {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--sc-radius-xs);
+  background: none;
+  cursor: pointer;
+}
+
+.link:hover,
+.link:focus-visible {
+  border-color: color-mix(in srgb, var(--sc-paper-accent) 70%, transparent);
+  outline: none;
+  background: color-mix(in srgb, var(--sc-paper-accent) 12%, transparent);
+}

@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Rubutu da fayiloli",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editan",
+          "body": [
+            "Scribe edita ne na rubutu kawai (plain text) tare da kayan aikinsa a gefensa. Kowane rubutu yana da tab; rubutun yana tsakiya, faifan kayan aiki a gefensa, da layin bayanai a ƙarƙashinsa.",
+            "Idan aka buɗe Scribe, da farko yana tambayar abin da kake son yi: ƙidaya kalmomi, nemo ka maye gurbi, cire maimaitattu, kwatanta rubutu biyu, jera layuka, juya rubutu, rubuta rubutun cike gurbi ko na bazata. Kowane zaɓi yana buɗe rubutun tare da kayan aikin da ya dace a gefensa; \"Rubutu maras komai\" yana buɗe rubutun shi kaɗai, kuma ana jera rubuce-rubucen da aka buɗe kwanan nan a ƙasa.",
+            {
+              "points": [
+                "Fayil → Sabon rubutu (Ctrl+N) yana fara rubutu maras komai.",
+                "Fayil → Buɗe (Ctrl+O) yana buɗe fayil ɗaya ko fayiloli da yawa, kowanne a tab nasa. Kowane fayil da ke ɗauke da rubutu yana buɗewa: .txt, .md, .csv, .log, .srt, lambar tushe (source code) da sauransu.",
+                "Gyara → Soke (Ctrl+Z) da Maimaita (Ctrl+Y) suna bin duk abin da aka yi wa rubutun, kayan aiki ko dabara suna ƙidayuwa a matsayin mataki ɗaya.",
+                "Gyara → Nemo ka maye gurbi (Ctrl+F) yana buɗe zirin bincike a editan da ke tafiya daga wani abin da aka samu zuwa na gaba.",
+                "Gyara → Zaɓi duka (Ctrl+A)."
+              ]
+            },
+            "Layin da ke ƙarƙashin rubutun yana nuna inda kibiyar rubutu (cursor) take, yawan abin da aka zaɓa, adadin layuka, kalmomi da haruffa, encoding na fayil ɗin da yadda layukansa suke ƙarewa.",
+            "Fayilolin da aka jefa a kan taga ma suna buɗewa, kowanne a matsayin sabon rubutu da sunan fayil ɗin, encoding ɗinsa da ƙarshen layukansa. Shirin yana samun abin da ke cikin fayil ɗin da aka jefa amma ba inda yake a faifai ba, don haka ajiyewa tana tambayar inda; fayilolin da suka fi 64 MB ana buɗe su da Fayil → Buɗe.",
+            "Sabon rubutu, muddin ba shi da komai, yana jera rubuce-rubucen da aka buɗe kwanan nan: danna ɗaya don buɗe shi. \"Manta da jerin\" yana share shi; ana adana jerin a wannan kwamfutar kawai."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Ajiye da Ajiye a matsayin",
+          "body": [
+            "Babu abin da yake canza fayil ɗin a faifai har sai ka ajiye. Ɗigo a kan tab yana nuna cewa rubutun yana da canje-canjen da ba sa cikin fayil ɗinsa, kuma rufe irin wannan tab yana tambaya tukuna.",
+            {
+              "points": [
+                "Ajiye (Ctrl+S) yana rubuta rubutun a kan fayil ɗinsa. Sabon rubutu yana tambayar inda.",
+                "Ajiye a matsayin (Ctrl+Shift+S) yana rubuta shi a sabon fayil, wanda daga nan yake ɗaukar gurbin tab ɗin, tare da duk abin da za a iya sokewa yana nan; tsohon fayil ɗin yana zama yadda yake."
+              ]
+            },
+            "Ana rubuta fayil gaba ɗaya ko ba a rubuta shi kwata-kwata: idan rubutawa ta gaza, fayil ɗin da yake can yana nan har yanzu.",
+            {
+              "note": "Ana ajiye fayil yadda aka buɗe shi: a encoding ɗaya, da ƙarshen layuka iri ɗaya. Rubutun da aka rubuta a Windows da wanda aka rubuta a Linux duka suna zama yadda suke."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Encoding da ƙarshen layuka",
+          "body": [
+            "Encoding ita ce hanyar da ake adana haruffa a matsayin bytes. Scribe yana karanta abin da fayil ɗin ya faɗa game da kansa, kuma yana hasashe idan bai faɗi komai ba. Yawancin fayiloli a yau UTF-8 ne; tsofaffi daga Tsakiyar Turai sau da yawa windows-1250 ne.",
+            {
+              "points": [
+                "Haruffan da suka yi kama ba daidai ba (Ã£ a gurbin ă, ko murabba'ai): Fayil → \"Sake karantawa da wani encoding\", ka zaɓi wanda aka rubuta fayil ɗin da shi.",
+                "Don ajiyewa a wani encoding, zaɓe shi a layin da ke ƙarƙashin rubutun, sannan ka ajiye. Idan rubutun yana da haruffan da wannan encoding ba zai iya rubutawa ba, Scribe yana faɗin wanne kuma ba ya rubuta komai.",
+                "Ana canza ƙarshen layuka (Windows CRLF, Linux da macOS LF, tsohon Mac CR) a wuri ɗaya. Fayil mai ƙarshen layuka gauraye ana faɗin cewa yana da su; ajiyewa tana ba dukkan layukansa iri ɗaya."
+              ]
+            },
+            "Abin da sabon rubutu yake farawa da shi ana zaɓa a Saituna."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Yadda ake nuna rubutun",
+          "body": [
+            {
+              "points": [
+                "Duk abin da ke menu na Kallo makunni ne: a kunne, ana ganinsa; a kashe, ba a ganinsa.",
+                "Rubutu: Naɗe dogayen layuka (Alt+Z) — layin da ya fi taga tsawo yana ci gaba a ƙasa, kuma rubutun yana riƙe layukansa; Lambobin layi; Sakamako a gefen rubutun.",
+                "A gefen rubutun: Kayan aiki (Ctrl+T), Dabaru, Ƙididdiga. Faifan yana nuna sassan da ke a kunne kawai; idan babu ko ɗaya a kunne, babu faifai.",
+                "Kayan aikin da ake nunawa: kowane rukunin kayan aiki (nemo ka maye gurbi, layuka, manyan haruffa da haruffa, tsaftacewa, rubuta rubutu) ana iya cire shi daga faifan. Kayan aikin da aka zaɓa daga menu na Tsarawa ko na Kayan aiki ana nuna shi duk da haka: sashensa da rukuninsa suna dawowa da kansu.",
+                "Kibiya biyu a saman faifan tana naɗe shi zuwa ɗan zirin a gefe, wanda daga gare shi kowane sashensa yana nan da dannawa ɗaya; ja gefensa don faɗaɗa ko taƙaita shi.",
+                "Ana zaɓar haruffa da girmansu a Saituna."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Manyan fayiloli sosai",
+          "body": [
+            "Fayil da ya fi 64 MB ba a sanya shi a editan: yana buɗewa a tab da ke nuna shi shafi na layuka 500 a lokaci ɗaya, ana karanta shi daga fayil ɗin yayin da kake tafiya. Fayiloli na gigabytes suna buɗewa haka a lokacin da ake ɗauka don bi ta cikinsu sau ɗaya.",
+            {
+              "points": [
+                "\"Shafi na baya\" da \"Shafi na gaba\" suna tafiya ta cikinsa; lambar layi da \"Je\" suna tsallakawa zuwa kowane layi.",
+                "Nemo yana bincika dukan fayil ɗin, da zaɓuɓɓuka iri ɗaya da na sauran wurare, kuma yana jera wuraren da ya samu: danna ɗaya don zuwa layinsa. Dogon jeri yana zuwa ɓangare-ɓangare, da \"Nemo ƙarin\".",
+                "\"Gudanar da dabara a kan dukan fayil ɗin\" yana rubuta sakamakon a cikin foldar da ka zaɓa, da suna ɗaya. Ba a taɓa canza fayil ɗin kansa a nan ba.",
+                "\"Buɗe shi duka a cikin edita\" yana sanya shi a editan duk da haka, don canza shi da hannu. Yana iya yin jinkiri, kuma yana buƙatar ƙwaƙwalwa (memory) ninki da yawa na girman fayil ɗin."
+              ]
+            },
+            {
+              "note": "Fayilolin da aka rubuta da bytes biyu a kowane harafi (UTF-16) ba za a iya nuna su shafi-shafi ba. Dabara tana riƙe dukan fayil ɗin a ƙwaƙwalwa yayin da take gudana: iyakar ita ce ƙwaƙwalwar kwamfutar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kayan aiki",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Yadda kayan aiki ke aiki",
+          "body": [
+            "Kayan aikin suna cikin faifan da ke gefen rubutun, a rukuni-rukuni. Danna kayan aiki don ganin zaɓuɓɓukansa, sannan Yi amfani da shi a rubutun.",
+            {
+              "points": [
+                "Idan an zaɓi wani abu, kayan aiki yana canza zaɓin kawai; idan ba a zaɓi komai ba, dukan rubutun. Faifan yana faɗin wanne, a samansa.",
+                "A ƙarƙashin maɓallin, kayan aiki yana faɗin abin da ya yi: layuka ko wurare nawa ya canza.",
+                "Kowane kayan aiki mataki ɗaya ne: Soke yana mayar da shi gaba ɗaya.",
+                "Kowane kayan aiki yana kuma cikin menu da kuma binciken umarni: waɗanda suke canza siffar rubutu (layuka, manyan haruffa da haruffa, tsaftacewa) a menu na Tsarawa, sauran a Kayan aiki. Zaɓar ɗaya a can yana buɗe faifan a zaɓuɓɓukansa."
+              ]
+            },
+            "A menu na Tsarawa, kayan aikin da galibi zaɓi ɗaya ne ana shimfiɗa shi a matsayin zaɓuɓɓukansa: kowace hanyar canza manyan haruffa, kowane irin alamar zance, kowace hanyar juya rubutu umarni ne nasa, wanda yake buɗe kayan aikin da wannan zaɓin a zaɓe. Inda taga ta yi kunkuntar da yawa ga wani rukuni, rukunin yana zama maɓalli ɗaya da ke buɗe dukan jerin.",
+            "Kayan aikin suna gudana a wannan kwamfutar. Babu rubutun da yake barin ta."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Sakamakon, kafin ka yi amfani",
+          "body": [
+            "Yayin da kayan aiki yake buɗe, ana nuna abin da zai bayar a gefen rubutun, a sashen \"Sakamako\". Babu abin da ke canzawa a rubutun har sai ka zaɓi Yi amfani da shi a rubutun. Sakamakon yana bin ka: canza zaɓi ko rubutun, kuma ana sake samar da shi.",
+            {
+              "points": [
+                "Rubutun da sakamakon suna tsaye gefe da gefe, kowanne ƙarƙashin kanu mai tsawo iri ɗaya, don haka layuka iri ɗaya suna farawa a tsawo ɗaya; suna gungurawa tare (maɓallin sarƙa yana kashe hakan).",
+                "Ana yi wa layukan da za su canza alama, tare da ɓangaren layin da ke canzawa a yi masa alama mai duhu; layukan da za su matsa kawai, da sababbin layuka, kowanne yana da launinsa. Ana kuma yi wa layukan da za a canza ko a cire alama a rubutunka.",
+                "A ƙarƙashin sunayen: abin da zai faru a lambobi — layukan da aka canza, aka matsar, sababbi, aka cire; layuka da haruffa kafin da bayan.",
+                "A ƙarƙashin sakamakon: layukan da za a cire. Danna ɗaya don zuwa gare shi a rubutun.",
+                "Ƙananan maɓallan sakamakon: kwafe shi, buɗe shi a matsayin sabon rubutu, kwatanta shi da rubutun a tab, gungura tare, sanya sakamakon a ƙarƙashin rubutun maimakon a gefensa, ɓoye shi. Rubutun yana da nasa: soke, maimaita, kwafi, manna a gurbi, zaɓi duka, share.",
+                "Ja sandar da ke tsakanin biyun don ba wa ɗaya ƙarin fili; danna sau biyu yana sake daidaita su."
+              ]
+            },
+            "Bayan Yi amfani da shi a rubutun, sashen Sakamako yana faɗin haka (\"An yi amfani da shi. Rubutun da ke gefen hagu yanzu shi ne sakamakon.\") kuma yana ba da Soke da \"Kwatanta da yadda yake a baya\", wanda yake buɗe kwatancen kafin da bayan iri ɗaya. Yana sake nuna sakamako da zarar ka canza rubutun ko wani zaɓi na kayan aikin.",
+            {
+              "note": "Kallo → \"Sakamako a gefen rubutun\" yana kashewa da kunna sashen. Don rubutu mai tsawo sosai (fiye da haruffa miliyan biyu) ba a nuna komai tun kafin lokaci: yi amfani da kayan aikin, kuma Soke yana mayar da shi."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Maye gurbi ko'ina",
+          "body": [
+            "Yana maye gurbin kowane wuri da aka samu wani abu, lokaci ɗaya. Yayin da kake rubuta abin da za a nema, Scribe yana faɗin wurare nawa aka samu shi kuma yana yi musu alama a rubutun, don ka ga abin da zai canza kafin ka yi amfani.",
+            {
+              "points": [
+                "\"Tsarin bincike (regular expression)\": rubutun da za a nema tsari ne. A \"Maye gurbi da\", $1, $2… suna nufin abin da rukunan tsarin suka samu.",
+                "\"Manyan haruffa suna da bambanci\": a da A haruffa ne dabam-dabam.",
+                "\"Cikakkun kalmomi kawai\": ba a samun \"cat\" a cikin \"category\".",
+                "\"Kiyaye manyan haruffan abin da aka maye gurbi\": maye gurbin \"cat\" da \"dog\" yana mayar da \"Cat\" zuwa \"Dog\" da \"CAT\" zuwa \"DOG\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Ƙarin zaɓuɓɓuka\" → \"Cika…\": abin da ake sanyawa a gurbi yana iya ɗauke da gurabe da ake cikawa a kowane abin da aka samu. {counter} yana ƙidaya 1, 2, 3… ({counter:10} yana farawa daga 10, {counter:10:5} yana ƙaruwa da 5); {date} da {time} su ne rana da sa'ar kwamfutarka; {uuid} mai gane-shaida ne; {random} haruffa da lambobi 8 ne na bazata ({random:12} don 12).",
+                "A ƙarƙashin abin da kake nema, Scribe yana kuma faɗin layuka nawa abubuwan da aka samu suke a kai da rubutu dabam-dabam nawa suke."
+              ]
+            },
+            "\"Maye gurbi da yawa lokaci ɗaya\" yana yin jerin nau'i-nau'i a mataki ɗaya. Rubuta nau'i ɗaya a kowane layi, kamar haka: abin da za a nema => abin da za a sanya a gurbinsa. Ana yin su daga na farko zuwa na ƙarshe, kowanne a kan abin da na gabansa ya bari; rabi na biyu maras komai yana cire rubutun.",
+            {
+              "note": "Tsari ba zai iya daskarar da shirin ba: lokacin da yake ɗauka yana ƙaruwa tare da tsawon rubutun ba fiye da haka ba. Saboda haka babu tsare-tsaren da ke waiwayar abin da suka samu (\\1)."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Layuka",
+          "body": [
+            {
+              "points": [
+                "Jera layuka bisa: haruffansu, kamar yadda kamus yake yi, a harshen shirin ko wanda ka zaɓa (a Romaniyanci ă yana zuwa bayan a; Swidiyanci yana sanya ä bayan z, Jamusanci a gefen a); haruffa, lambobi a matsayin lambobi (file2 kafin file10); lambar da kowane layi yake farawa da ita; tsawo; yawan kalmomi; kwanan watan da kowane layi yake farawa da shi (05.03.2024, 2024-03-05, da sa'a ko ba tare da ita ba); adireshin intanet; lambobin siga (1.2.10 bayan 1.2.9); taken, inda ma'anar (article) a farko ba ta ƙidayuwa; jerin da kai ka rubuta (ƙarami, matsakaici, babba); ko babu jeri kwata-kwata.",
+                "Layukan da babu abin da za a jera su da shi (babu lamba, babu kwanan wata, ƙimar da ba ta cikin jerin da ka rubuta) suna zama a ƙarshe ko ta wace hanya aka jera sauran: mafi ƙanƙanta a farko ko mafi girma a farko.",
+                "Ƙarin zaɓuɓɓuka don jerawa: kwatanta daga wata kalma ko wani harafi zuwa gaba, ko ginshiƙi ɗaya na tebur (tare da abin da ke raba ginshiƙan); riƙe layin farko a wurinsa a matsayin kanu; jera sakin layi maimakon layuka; da tsaftacewa tukuna — gyara ƙarshe, cire layuka marasa komai, cire maimaitattu.",
+                "Cire layukan da aka maimaita: riƙe na farko, na ƙarshe, ko babu ko ɗaya daga layukan da suke maimaituwa (waɗanda suke can sau ɗaya kawai ne suke zama). Ana iya tsallake manyan haruffa, sarari a kewayen layi, lambobi, alamomin rubutu, da adadin haruffa a farko ko a ƙarshe; ginshiƙi ɗaya kawai, ko abin da wani tsari ya samu kawai, yana iya zama abin da ake kwatantawa. Layuka marasa komai ana ɗaukar su kamar sauran, ana riƙe su, ana cire su, ko ana haɗa su ɗaya.",
+                "Ƙidaya layukan da aka maimaita: yana barin kowane layi sau ɗaya, tare da adadin lokutan da yake can a rubuce a gabansa — mafi maimaituwa a farko, ko mafi ƙaranci, ko a jerin da suke zuwa.",
+                "Riƙe ko cire layuka: yana neman wani abu a kowane layi kuma yana riƙe layukan da suke da shi kawai, ko waɗanda ba su da shi kawai.",
+                "Juya jerin layuka; Gauraya layuka.",
+                "Sanya wa layuka lamba: lambar farko, abin da yake biye da ita, sifili a gaba don lambobi su jeru, layuka marasa komai ba tare da lamba ba.",
+                "Layuka marasa komai: cire su duka, ko bar ɗaya inda suke da yawa.",
+                "Haɗa layuka su zama ɗaya, da abin da ka zaɓa a tsakaninsu; Raba zuwa layuka a kowane waƙafi, waƙafi mai digo ko wani abu dabam. Duk inda ake rubuta abin da ke tsakanin abubuwa (sanya lamba, haɗawa, rabawa, ƙidaya), \\t yana nufin tab, wanda ba za a iya rubuta shi a fili ba."
+              ]
+            },
+            {
+              "note": "Zaɓin da yake da amfani tare da wani kawai ana nuna shi ne a lokacin kawai: ginshiƙin, da zarar ka kwatanta bisa ginshiƙi. Zaɓuɓɓukan da mutane kaɗan suke buƙata suna ƙarƙashin \"Ƙarin zaɓuɓɓuka\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Manyan haruffa",
+          "body": [
+            "Canza manyan haruffa: salon jimla, kowace kalma da babban harafi, duka manyan haruffa, duka ƙananan haruffa, juyayye, da hanyoyin da ake rubuta sunaye a code: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Manyan haruffa suna bin ƙa'idodin kowane baƙaƙe, ba na Turanci kawai ba.",
+            "A rukunin Alƙibla, \"Juya rubutun\" yana juya haruffan kowane layi, ko jerin kalmominsa, ko haruffan kowace kalma; \"Juye sama da ƙasa\" yana rubuta shi don a karanta shi daga ɗayan gefen tebur, kuma \"Kamar a madubi\" yana kuma musanya alamomin da ke da hagu da dama. Ana ƙidaya haruffa yadda mai karatu yake ƙidaya su: harafi tare da alamominsa yana zama ɗaya."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Tsaftacewa",
+          "body": [
+            {
+              "points": [
+                "Tsaftace sarari: sarari da yawa suna zama ɗaya; sarari a ƙarshen layuka yana tafiya.",
+                "Gyara ƙarshen layuka: a ƙarshen biyu, a farko ko a ƙarshe.",
+                "Alamomin zance: madaidaita, na Turanci, na Romaniyanci, na Jamusanci ko na Faransanci.",
+                "Cire alamomin haruffa (diacritics): ă yana zama a, é yana zama e. A baƙaƙen Latin da Girka kawai, inda harafi ba tare da alamarsa ba har yanzu harafin ne.",
+                "Gyara haruffan Romaniyanci: ş da ţ (da cedilla, waɗanda tsofaffin madannai suke rubutawa) suna zama ș da ț (da waƙafi), haruffan da ake rubuta Romaniyanci da su.",
+                "Tab zuwa sarari da sarari zuwa tab, da faɗin tab da ka zaɓa.",
+                "Cire tags na HTML: don tushen shafin yanar gizo da aka manna a cikin rubutun. Tags, scripts da styles suna tafiya; abin da mai karatu zai gani yana zama. Don kawo shafi daga adireshinsa, yi amfani da kayan aikin da ke ƙarƙashinsa, \"Rubutun shafin yanar gizo\".",
+                "Rubutun shafin yanar gizo: rubuta adireshin shafi (example.com/page) ka zaɓi \"Kawo rubutun\". Abin da mai karatu zai gani a wannan shafin ana rubuta shi inda kibiyar rubutu take, ba tare da tags, scripts ko styles ba. Wannan shi ne kaɗai kayan aikin Scribe da ke shiga intanet, kuma sai lokacin da ka nema: burauzar da aka saka a wannan kwamfutar (Microsoft Edge ko Google Chrome) ce take ɗauko shafin, tana gudana ba tare da taga ba kuma ba tare da kukis ɗinka ko shigarka (sign-ins) ba; shirin kansa ba ya aika komai. Shafin da ke buƙatar ka shiga yana ba da abin da baƙo zai gani kawai."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Mayar da alamomin haruffan Romaniyanci",
+          "body": [
+            "Romaniyancin da aka rubuta ba tare da ă, â, î, ș, ț ba ana sake rubuta shi da su.",
+            {
+              "steps": [
+                "Buɗe kayan aikin a rukunin Tsaftacewa ka zaɓi Yi amfani da shi a rubutun.",
+                "Kalmomin da suke da siga ɗaya tak daidai ana canza su nan take: \"stiu\" yana zama \"știu\", \"informatii\" yana zama \"informații\".",
+                "Kalmomin da za a iya karantawa ta hanyoyi fiye da ɗaya (fata, fată, fața, față) ana jera su a ƙarƙashin maɓallin, kowacce a wurinta a rubutun. Danna sigar da ta dace ga kowacce.",
+                "Ko ka sanya alama a \"Zaɓi sigar da ta fi yiwuwa da kansa\" kafin yin amfani: ba a tambayar komai, kuma sai a karanta sakamakon a tsanake."
+              ]
+            },
+            "Inda kalmomin da ke kewaye suka isa, Scribe yana yanke shawara bisa su: \"o casa\" yana zama \"o casă\", \"casa mea\" yana zama yadda yake, \"pentru ca\" yana zama \"pentru că\".",
+            {
+              "note": "An gina wannan don Scribe daga jerin kalmomi na yau da kullum da ƙarshen kalmomin da Romaniyanci kullum yake rubutawa da alamomin haruffa. Kalmomin da bai sani ba (kalmomi da ba a cika amfani da su ba, sunaye) suna zama yadda aka rubuta su, kuma kalmar da aka riga aka rubuta da alamomin haruffa ba a taɓa ta. Karanta sakamakon kafin ka aika shi."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Rubuta rubutu: cike gurbi da na bazata",
+          "body": [
+            "Kayan aikin rukunin \"Rubuta rubutu\" ba sa canza komai: suna rubutawa ne. Abin da suka bayar yana zuwa inda kibiyar rubutu take, a gurbin zaɓin.",
+            {
+              "points": [
+                "Rubutun cike gurbi: sakin layi, jimloli, kalmomi, jeri, kanun labarai, ko sassan shafi (kanu, sakin layi, jeri). A Latinancin masu buga littattafai (lorem ipsum), Turanci, Romaniyanci, kalmomin ofis ko na kicin, ko kalmominka na kanka. Ƙarin zaɓuɓɓuka: gajerun jimloli, matsakaita ko dogaye; rubutu kawai, Markdown, HTML ko JSON; matakin kanun labarai; iyaka a haruffa (ana yanke rubutun a cikakkiyar kalma kuma har yanzu yana ƙarewa a matsayin jimla); kalmomin da za a bari.",
+                "Bayanan ƙirƙira: sunaye, adireshin imel, lambobin waya, adireshin gida, kwanan wata ko lambobi, ɗaya a kowane layi, na Romaniya ko na ƙasashen masu magana da Turanci. \"Layuka bisa tsarina\" yana rubuta kowane layi yadda ka faɗa, tare da {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} da {row} suna nufin abin da aka ƙirƙira — tebur don gwada wani abu a kai, cikin ɗan lokaci.",
+                "Rubutun bazata: kalmomin sirri (haruffa, lambobi da alamomi, aƙalla ɗaya na kowanne), haruffa, lambobi, hexadecimal ko masu gane-shaida (UUID), a layi ɗaya ko a layuka da yawa. Ana iya barin haruffan da ake saurin rikitawa (0 da O, 1, l da I).",
+                "Iri (seed) (ƙarƙashin \"Ƙarin zaɓuɓɓuka\") yana sa rubutun cike gurbi da bayanan ƙirƙira su fito iri ɗaya kowane lokaci don lamba ɗaya; 0 yana ba da sabon abu kowane lokaci."
+              ]
+            },
+            {
+              "note": "Ana ƙirƙirar kalmomin sirri a wannan kwamfutar, daga bazuwar tsarin aiki (operating system), kuma ba a aika su ko'ina. Adireshin imel na ƙirƙira suna ƙarewa da example.com, inda saƙo ba ya isa ga kowa; lambar wayar da aka ƙirƙira ba tare da tsari ba tana iya zama ta wani, don haka kada ka kira ta."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dabaru",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Adana abin da ka yi a matsayin dabara",
+          "body": [
+            "Dabara jerin kayan aiki ne tare da zaɓuɓɓukansu, an adana su da suna kuma ana sake gudanar da su da dannawa ɗaya.",
+            {
+              "steps": [
+                "Yi amfani da kayan aikin da kake so a kan rubutu, a jerin da kake so.",
+                "Buɗe \"Dabaru\" a saman faifan: ana jera kayan aikin da ka yi amfani da su.",
+                "\"Adana a matsayin dabara\", ka ba ta suna.",
+                "Daga baya, buɗe dabarar ka zaɓi \"Gudanar a kan rubutun\": ana yin duk matakanta, kuma Soke ɗaya yana mayar da su duka."
+              ]
+            },
+            "Ana adana dabaru a wannan kwamfutar kuma suna nan a kowane rubutu."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Canza dabara, ko ƙirƙirar ɗaya daga farko",
+          "body": [
+            "\"Canza\" a kan dabarar da ke buɗe yana nuna sunanta da matakanta. Ana iya matsa kowane mataki sama ko ƙasa, cire shi, ko ba shi wasu zaɓuɓɓuka; ana ƙara kayan aiki daga jerin da ke ƙarƙashin matakan. Ba a adana komai har sai \"Ajiye\".",
+            "\"Sabuwar dabara\" tana fara ɗaya babu matakai, don a haɗa ta haka nan ba tare da yin amfani da kayan aikin a kan rubutu tukuna ba.",
+            {
+              "note": "Kayan aikin da ke rubuta rubutu (cike gurbi, bazata) ba matakan dabara ba ne: dabara tana canza rubutu."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Gudanar da dabara a kan fayiloli",
+          "body": [
+            {
+              "steps": [
+                "Buɗe dabarar kuma, ƙarƙashin \"Gudanar a kan fayiloli\", ƙara fayiloli ko folda (tare da foldojin da ke ƙarƙashinta).",
+                "Zaɓi inda sakamakon zai tafi: zuwa wata folda, wadda take barin fayilolin yadda suke, ko a kan fayilolin da kansu.",
+                "Gudanar. Scribe yana faɗin fayiloli nawa aka rubuta, nawa ba su buƙaci canji ba, da waɗanda ba a iya yi ba da dalili."
+              ]
+            },
+            "Ana rubuta kowane fayil a encoding da ƙarshen layukan da yake da su. A wata folda, fayiloli suna riƙe foldojin da suka zo da su, kuma ba a taɓa rubutawa a kan fayil da ke can tuni ba.",
+            {
+              "note": "Rubutawa a kan fayilolin da kansu ba za a iya soke shi daga Scribe ba. Ajiye kwafi idan suna da muhimmanci."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ƙididdiga, kwatanta da foldoji",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Ƙididdiga",
+          "body": [
+            "\"Ƙididdiga\" a saman faifan yana faɗin abin da rubutun, ko zaɓin, ya ƙunsa. Kowane sashe yana naɗewa.",
+            {
+              "points": [
+                "A sama: kalmomi, haruffa da sarari da ba tare da sarari ba, jimloli, sakin layi, layuka, shafuka, da girma a bytes.",
+                "Lokaci: don karantawa a zuci, faɗa da babbar murya, bugawa, da rubutu da hannu.",
+                "Kalmomi: nawa ne dabam-dabam (da kasonsu cikin duka), haruffa a kalma, gaɓoɓin kalma, kalma mafi tsawo da mafi gajarta, da kalmomi nawa ne na kowane tsawo.",
+                "Jimloli: kalmomi a jimla, nawa ne gajeru, matsakaita da dogaye, nawa ne jimlolin bayani, tambayoyi da jimlolin motsin rai, da mafi tsawo da mafi gajarta.",
+                "Sauƙin karantawa: maki daga 0 (mai wuya sosai) zuwa 100 (mai sauƙi sosai), bisa dabarar lissafi da aka yi don harshen rubutun. Akwai dabarun lissafi don Turanci, Jamusanci, Sifaniyanci, Faransanci, Italiyanci, Holanci, Fotugalci da Rashanci; harshen da ba shi da ita ba ya samun maki, domin wadda aka yi don wani harshe za ta ɓatar.",
+                "Abin da ya fi faɗa: kalmomin da aka fi amfani da su tare da kasonsu a rubutun, da kalmomi biyu-biyu da rukunin kalmomi uku da suke maimaituwa.",
+                "Fili a cikin iyakoki na yau da kullum: haruffa nawa suka rage, ko suka wuce, don take, bayani, gajeren saƙo da sauransu."
+              ]
+            },
+            "Ana gano kalmomi da jimloli bisa ƙa'idodin kowane rubutu (script), don haka ana ƙidaya Sinanci, Japananci da Thai ma, waɗanda ba sa sanya sarari tsakanin kalmomi. Saurin da ake lissafa lokutan da shi, da kalmomi nawa suke yin shafi, ana saita su a Saituna."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Kwatanta rubutu biyu",
+          "body": [
+            {
+              "points": [
+                "Kayan aiki → \"Kwatanta da wani rubutu\": rubutun da ke editan a gefen wanda ka rubuta ko ka manna.",
+                "Kayan aiki → \"Kwatanta da fayil\": rubutun da ke editan, yadda yake yanzu, a gefen fayil da ka zaɓa.",
+                "Kayan aiki → \"Kwatanta rubutu biyu\": rubutu biyu da aka rubuta ko aka manna gefe da gefe.",
+                "Kayan aiki → \"Kwatanta fayiloli biyu\"."
+              ]
+            },
+            "Ana nuna rubutun biyu gefe da gefe. Layukan da ke na farko kawai ana yi musu alama a matsayin an cire, layukan da ke na biyu kawai a matsayin an ƙara, kuma a layin da ya canza, ana yi wa kalmomin da suka bambanta alama. Abin da ya bambanta kawai ake nunawa, tare da 'yan layuka a kewaye; kibiyoyin suna tafiya daga wani bambanci zuwa na gaba.",
+            "Ana iya tsallake manyan haruffa, sarari, layuka marasa komai, lambobi da alamomin rubutu. \"A cikin ginshiƙi ɗaya\" yana nuna abin da aka cire a saman abin da aka sanya, kowanne da alamarsa, maimakon gefe da gefe. A gefen ƙididdigar, Scribe yana faɗin yadda rubutun biyu suka yi kama, a matsayin kason layukan da suke iri ɗaya.",
+            "Ana nuna rubutu da zarar an zaɓe shi, kafin a zaɓi ɗayan. Ja sandar da ke tsakanin rubutun biyu don ba wa ɗaya ƙarin fili; yayin da ake rubuta rubutun, ana jan sandar da ke ƙarƙashin akwatunan sama da ƙasa don ba wa akwatunan ko kwatancen ƙarin fili. Danna sau biyu yana mayar da sanda wurinta.",
+            "Inda aka canza layuka da yawa a jere, ana sanya kowanne a gefen layin da ya fi kama da shi, don kada layin da aka ƙara ko aka cire a cikinsu ya sa kowane layi bayansa ya yi kama da an canza shi zuwa na gaba.",
+            "\"Rubuta ko manna rubutun\" yana nuna akwati a saman kowane ginshiƙi; abin da ka rubuta a can ana kwatanta shi yayin da kake rubutawa, kuma har yanzu ana iya zaɓar fayil ga kowane gefe."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Nemo ka maye gurbi a cikin folda",
+          "body": [
+            {
+              "steps": [
+                "Kayan aiki → \"Nemo a cikin folda\" (Ctrl+Shift+F), ka zaɓi foldar. Ana bincika foldojin da ke ƙarƙashinta ma.",
+                "Rubuta abin da za a nema, da zaɓuɓɓuka iri ɗaya da na \"Maye gurbi ko'ina\". \"Irin fayiloli\" yana taƙaita binciken zuwa wasu ƙarshen suna (txt, md, csv…).",
+                "Ana nuna kowane abin da aka samu a layinsa, fayil bayan fayil. Danna layi don buɗe fayil ɗin a can.",
+                "Don maye gurbi: rubuta sabon rubutun, cire alamar zaɓi daga fayilolin da za a bari, ka zaɓi \"Rubuta fayilolin\"."
+              ]
+            },
+            "Ba a rubuta komai har sai ka nema, kuma sai a fayilolin da aka bari da alamar zaɓi kawai. Ana rubuta kowane fayil a encoding da ƙarshen layukan da yake da su.",
+            {
+              "note": "Ana tsallake ɓoyayyun foldoji da waɗanda shirye-shirye suke cikawa (.git, node_modules) sai dai idan ka nemi su. Fayilolin da ba rubutu ba ana tsallake su koyaushe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Saituna",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Saitunan Scribe",
+          "body": [
+            "Fayil → Saituna yana buɗe Saitunan shirin a ɓangaren Scribe.",
+            {
+              "points": [
+                "Editan: haruffa masu faɗi ɗaya ko na shirin kansa, girmansu, naɗe layuka, lambobin layi, da ko ana nuna sakamakon kayan aiki kafin a yi amfani da shi.",
+                "Sabon rubutu: yadda layukansa suke ƙarewa, da ko fayil ɗinsa yana farawa da alamar jerin bytes (BOM).",
+                "Ƙididdiga: saurin karantawa, faɗa, bugawa da rubutu da hannu, da kalmomi nawa suke yin shafi.",
+                "Maɓallan umarnin Scribe."
+              ]
+            },
+            "Kowane saiti yana da maɓalli da ke mayar da shi yadda shirin yake zuwa."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Game da Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Game da Scribe",
+          "body": [
+            "Scribe manhajar rubutu ce ta Syntelab Creative: edita tare da kayan aikinsa a gefen rubutun. Yana nuna abin da kayan aiki zai yi kafin ya yi shi, yana tsaftacewa da sake jera jeri, yana nemo da maye gurbi a rubutu ko a dukan folda, yana kwatanta rubutu biyu, yana faɗin abin da rubutu ya ƙunsa, yana rubuta rubutun cike gurbi da bayanan ƙirƙira, kuma yana adana abin da kake yi akai-akai a matsayin dabaru don sake gudanarwa.",
+            "Ana yin komai a wannan kwamfutar. Babu iyakar da aka sanya wa girma ko yawan rubuce-rubuce: iyakokin su ne ƙwaƙwalwar (memory) kwamfutar da abin da fasahar yau za ta iya yi.",
+            "Sabo ne. Inda ya gaza ga rubuce-rubucenka, faɗa mana ta Taimako → Ra'ayi: haka muke sanin abin da za mu yi aiki a kai."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Abin da aka gina Scribe da shi",
+          "body": [
+            {
+              "points": [
+                "Editan: CodeMirror.",
+                "Karantawa da rubuta encodings: encoding_rs, tare da chardetng don hasashen encoding na fayil da bai faɗe shi ba.",
+                "Nemo da maye gurbi: library na regex na Rust, wanda tsare-tsarensa ba za su iya daskarar da shirin ba.",
+                "Jerawa kamar yadda kowane harshe yake yi, da gano kalmomi da jimloli a kowane rubutu (script): ICU4X, library na Unicode.",
+                "Kwatanta rubutu: library na similar.",
+                "Alamomin haruffan Romaniyanci: jerin kalmomi da ƙa'idodi da aka rubuta don Scribe."
+              ]
+            },
+            "Abin da yake rabawa da sauran shirin yana ƙarƙashin \"Game da Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Abin da Scribe ba zai iya yi ba tukuna",
+          "body": [
+            {
+              "points": [
+                "Babban fayil sosai ana karanta shi shafi-shafi kuma ana canza shi ta dabaru kawai; canza shi da hannu yana nufin buɗe shi duka, wanda yake cin ƙwaƙwalwa.",
+                "Mayar da alamomin haruffan Romaniyanci ya san kalmomin yau da kullum; kalmomin da ba a cika amfani da su ba da sunaye suna zama yadda aka rubuta su.",
+                "Babu duba haruffan kalmomi (spelling).",
+                "Ba a fitar da rubutu daga PDF ko takardun ofis a nan; PDF Organizer ne yake buɗe su.",
+                "Editan ba ya yi wa code ko Markdown launi.",
+                "Fayil da aka jefa a kan taga yana buɗewa a matsayin sabon rubutu: ba a gaya wa shirin inda fayil ɗin yake ba, don haka ajiyewa tana tambayar inda."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

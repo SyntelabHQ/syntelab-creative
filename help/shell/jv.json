@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Miwiti",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Apa iku Syntelab Creative",
+          "body": [
+            "Syntelab Creative iku siji program sing kasusun saka aplikasi. Saben aplikasi nindakake siji jinis gaweyan:",
+            {
+              "points": [
+                "PDF Organizer maca, nata, ngowahi lan menehi tanda tangan dokumen PDF.",
+                "Scribe yaiku editor teks karo piranti kanggo ngresiki, ngurutake, mbandhingake lan ngowahi teks.",
+                "Units ngowahi antarane satuan: dawa, suhu, mata uang lan akeh liyane.",
+                "Dev ngumpulake piranti kanggo pangembang: encode lan decode, format lan priksa, ngowahi siji wujud data dadi wujud liyane."
+              ]
+            },
+            "Aplikasi-aplikasi iki nganggo siji jendhela, siji setelan lan siji cara kerja, dadi apa sing sampeyan sinau ing siji aplikasi padha karo ing aplikasi liyane.",
+            {
+              "note": "Kabeh kelakon ing komputer sampeyan. Dokumen sampeyan ora tau dikirim menyang ngendi wae, lan ora ana apa-apa bab sampeyan utawa gaweyan sampeyan sing diklumpukake."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Jendhela",
+          "body": [
+            {
+              "points": [
+                "Bilah pinggir: omah nggawa menyang Wiwitan, banjur aplikasi sampeyan, lan ing ngisor kabar program, Panemu, Panyengkuyung lan Setelan.",
+                "Ing aplikasi, Berkas → Menyang Wiwitan menyang kaca kapisan aplikasi kasebut yen ana (Units, Scribe), lan Berkas → Bukak Setelan (Ctrl+,) mbukak Setelan ing bagean aplikasi kasebut; bagean liyane mung kari saklik saka kono.",
+                "Tab ing ndhuwur: saben dokumen, bendhel utawa piranti sing sampeyan bukak duwe tab dhewe. Titik ing tab tegese ana owahan sing durung disimpen.",
+                "Menu aplikasi, ing sangisore tab: minangka bilah menu, pita utawa panel ing pinggir, endi wae sing sampeyan pilih.",
+                "Sisane jendhela yaiku tab sing ana ing ngarep."
+              ]
+            },
+            "Nutup tab sing duwe owahan durung disimpen bakal takon dhisik; semono uga nutup program."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Wiwitan",
+          "body": [
+            "Wiwitan nuduhake aplikasi sampeyan lan berkas sing pungkasan sampeyan bukak. Klik aplikasi kanggo mbukak; klik berkas pungkasan kanggo mbukak maneh.",
+            "Aplikasi bisa dituduhake minangka kertu, ikon karo jeneng utawa ikon wae, lan bisa diseret menyang urutan sing sampeyan senengi. Nganggo keyboard: Alt lan tombol panah. \"Balekake kaya wiwitan\" mbalekake kaya asline.",
+            "Saben aplikasi uga duwe pintasan dhewe ing menu Start Windows, kayata \"Syntelab PDF Organizer\" utawa \"Syntelab Units\": iki mbukak program langsung ing aplikasi kasebut. Yen program wis mbukak, aplikasi mbukak ing kono minangka tab."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Mbukak berkas",
+          "body": [
+            {
+              "points": [
+                "Saka aplikasi: Berkas → Bukak, utawa Ctrl+O.",
+                "Kanthi nyeret berkas saka folder lan nyelehake ing jendhela.",
+                "Saka manajer berkas sistem sampeyan: klik kaping pindho berkas sing diatur supaya dibukak dening program. Ing Windows Explorer uga ana menu klik-tengen (deleng \"Menu klik-tengen Windows Explorer\").",
+                "Saka Wiwitan: dhaptar berkas pungkasan."
+              ]
+            },
+            "Program mlaku minangka siji salinan. Berkas sing dibukak saka manajer berkas nalika program lagi mlaku bakal mbukak minangka tab anyar ing jendhela sing padha."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ngatur miturut karep sampeyan",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Tata letak: bilah menu, pita utawa panel pinggir",
+          "body": [
+            "Prentah aplikasi bisa dituduhake kanthi telung cara. Prentahe padha; mung panggonane sing beda.",
+            {
+              "points": [
+                "Klasik: bilah menu lan bilah piranti.",
+                "Pita: tombol gedhe ing klompok sing duwe jeneng, siji tab kanggo saben menu. Bisa diciutake supaya ana papan luwih akeh kanggo dokumen.",
+                "Panel pinggir: piranti ing panel ing kiwa utawa tengen, sing bisa diciutake dadi ikon."
+              ]
+            },
+            "Pilih tata letak kabeh aplikasi ing Setelan → Umum → Tata letak. Aplikasi bisa duwe tata letak dhewe, sing dipilih ing bageane ing Setelan utawa saka menu Tampilan; sabanjure aplikasi iku ora manut tata letak umum maneh nganti sampeyan milih \"Nganggo tata letak umum\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Setelan → Umum → Tema: Padhang, Peteng, Abu-abu padhang, Abu-abu peteng, utawa Otomatis, sing manut setelan padhang utawa peteng saka sistem.",
+            "Kaca dokumen ora tau diowahi wernane dening tema: kertas tetep kaya asline."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Basa",
+          "body": [
+            "Setelan → Umum → Basa. Program iki nganggo 62 basa. \"Basa sistem\" manut basa sistem sampeyan. Dhaptar bisa digoleki nganggo jeneng basa ing basane dhewe, jenenge ing basa sampeyan utawa jeneng Inggrise.",
+            "Teks sing durung diterjemahake dituduhake nganggo basa Inggris, ora tau minangka kode."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Tab",
+          "body": [
+            {
+              "points": [
+                "\"Tetep tampilake tab Wiwitan ing antarane tab\": yen dipateni, tab Wiwitan mung katon nalika Wiwitan dhewe ana ing ngarep; omah ing bilah pinggir tansah nggawa bali mrono.",
+                "Tandha ing tab bisa ikon aplikasine utawa kothak polos nganggo werna aplikasi."
+              ]
+            },
+            "Yen tab luwih akeh tinimbang papane, panah ing pucuk larikan nggulung, lan \"Tab liyane\" nuduhake kabeh."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Golek dalan",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Nggoleki prentah",
+          "body": [
+            "Kothak panggolekan (\"Goleki aplikasi, piranti lan prentah\") nemokake prentah apa wae saka tab ing ngarep miturut jenenge, ing basa sampeyan utawa basa Inggris. Pilih asil kanggo nglakokake.",
+            "Prentah sing wis direncanakake nanging durung ditulis katon abu-abu ing menu lan ora dilebokake ing panggolekan."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Pintasan keyboard",
+          "body": [
+            "Tombol prentah ditulis ing sandhinge jenenge ing menu lan ing katrangan cekake. Sing paling kerep dianggo:",
+            {
+              "points": [
+                "Ctrl+O: bukak berkas",
+                "Ctrl+S: simpen; Ctrl+Shift+S: simpen minangka",
+                "Ctrl+P: cetak",
+                "Ctrl+Z lan Ctrl+Y: wurungake lan baleni",
+                "Ctrl+F: goleki ing dokumen",
+                "Ctrl+W: tutup tab",
+                "Ctrl+Tab lan Ctrl+Shift+Tab: tab sabanjure lan sadurunge",
+                "Ctrl+, (koma): Setelan",
+                "F1: Pitulung iki",
+                "Escape: metu saka layar kebak utawa mode maca, utawa nyelehake piranti sing lagi dicekel"
+              ]
+            },
+            "Tombol prentah program dhewe (tab, Setelan, Pitulung) diowahi ing Setelan → Umum → Pintasan keyboard; tombol prentah aplikasi ing bageane ing Setelan. Klik tombol sawijining prentah, banjur pencet tombol anyar."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Nganggo Pitulung iki",
+          "body": [
+            "Pitulung gumantung saka ngendi sampeyan mbukak. Saka aplikasi sampeyan mung weruh buku pandhuan aplikasi kasebut lan prentah ing tab asal sampeyan. Saka kaca Wiwitan utawa saka Setelan sampeyan weruh \"Babagan\" (program lan saben aplikasi, kanthi ringkes) lan buku pandhuan program. Pitulung → Babagan tansah nggawa menyang \"Babagan\".",
+            "Isi ana ing sisih kiwa; panggolekan ing ndhuwure nggoleki ing saben topik, ing judhul lan ing teks.",
+            "Pitulung mbukak ing tab dhewe, dadi sampeyan bisa bolak-balik antarane Pitulung lan gaweyan sampeyan; F1 nggawa menyang ngarep maneh. Ing \"Prentah ing tab asal sampeyan\" saben menu ing tab kasebut didhaptar karo saben prentahe, tombole lan gunane: bukak Pitulung saka tab sing pengin sampeyan takokake."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Menu klik-tengen Windows Explorer",
+          "body": [
+            "Setelan → Umum → Windows Explorer → \"Tuduhake Syntelab Creative ing menu klik-tengen kanggo berkas lan folder\" nambahake entri kanggo berkas sing diwaca program: \"Owahake dadi PDF nganggo PDF Organizer\" lan \"Gabungake berkas ing PDF Organizer\", saben-saben nganggo ikon PDF Organizer, lan \"Syntelab Dev\", sing kebukak ing sisih kanthi Checksum, Bandhingake lan Tampilan hex.",
+            "Entri iki ditambahake mung kanggo pangguna sampeyan, tanpa hak administrator, lan mateni saklar bakal mbusak. Ing Windows 11 entri iki ana ing \"Show more options\". Entri iki tansah mbukak program sing wis diinstal: yen program dipindhah utawa diinstal maneh ing panggonan liya, program bakal mbenerake entri kasebut nalika diwiwiti.",
+            {
+              "note": "Milih \"Gabungake berkas ing PDF Organizer\" ing sawetara berkas mbukak bendhel isi berkas-berkas kasebut; \"Owahake dadi PDF nganggo PDF Organizer\" mbukak proses massal kanggo berkas-berkas kasebut."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privasi, nganyari lan kontak",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Apa sing mlebu online, lan apa sing ora tau",
+          "body": [
+            "Program ora ngumpulake apa-apa: ora ana data panganggon, ora ana jeneng berkas, ora ana laporan kacilakan sing dikirim dhewe.",
+            "Program mung online ing kahanan iki, saben-saben amarga sampeyan sing njaluk:",
+            {
+              "points": [
+                "Mriksa anyaran lan kabar (rong berkas cilik sing diwaca saka syntelab.com), nalika sampeyan njaluk utawa, yen sampeyan ngidini, nalika program diwiwiti; lan ngundhuh versi anyar, mung nalika sampeyan mencet \"Anyari\".",
+                "Nyimpen kaca web dadi PDF (PDF Organizer) lan njupuk teks saka kaca web (Scribe), saka alamat sing sampeyan ketik.",
+                "Pranala ing dokumen sing sampeyan klik: diterusake menyang browser utawa program email sampeyan.",
+                "Panemu lan Panyengkuyung: mbukak kaca syntelab.com ing browser sampeyan."
+              ]
+            },
+            "Tanda tangan nganggo sertifikat lan mriksa tanda tangan ditindakake ing komputer sampeyan, tanpa online."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Nganyari",
+          "body": [
+            "Setelan → Umum → Nganyari → \"Priksa anyaran\". Yen ana versi sing luwih anyar, jendhela ngandhani apa sing anyar lan nawakake \"Anyari\".",
+            "\"Anyari\" ngundhuh versi anyar, mriksa manawa pancen saka kita (kudu ditandhatangani nganggo kunci kita; liyane ditolak) lan masang ing dhuwur versi iki. Setelan sampeyan tetep lan program miwiti maneh. Ora ana sing diundhuh sadurunge sampeyan mencet.",
+            "Yen anyaran ora bisa dipasang kanthi cara iki (salinan portabel, paket Linux, ora ana jaringan), \"Undhuh\" mbukak kaca undhuhan ing browser sampeyan; pasang versi anyar ing dhuwur versi iki lan setelan sampeyan tetep.",
+            "\"Priksa anyaran lan kabar nalika program diwiwiti\" bisa dipateni; apa wae pilihane, ora ana apa-apa bab sampeyan utawa komputer sampeyan sing dikirim."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Panemu lan panyengkuyung",
+          "body": [
+            "Pitulung → Panemu: njaluk aplikasi anyar, fitur anyar utawa owahan, utawa laporake masalah. Saben pesen diwaca.",
+            "Pitulung → Panyengkuyung: program iki gratis; ing kene sampeyan bisa ngewangi supaya terus lumaku."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Babagan Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Babagan Syntelab Creative",
+          "body": [
+            "Syntelab Creative yaiku kumpulan aplikasi gratis kanggo gaweyan saben dina karo dokumen, teks lan data, digawe dening Syntelab (syntelab.com). Diwiwiti karo papat aplikasi: PDF Organizer, Scribe, Units lan Dev. Liyane bakal nyusul ing jendhela sing padha.",
+            {
+              "points": [
+                "Tansah gratis.",
+                "Ora ana data sing diklumpukake: ora ana apa-apa bab sampeyan, komputer sampeyan utawa gaweyan sampeyan.",
+                "Ora ana sing didhelikake: ora ana versi mbayar, ora ana fitur sing dikunci, ora ana watesan sing disengaja. Watesane mung apa sing bisa ditindakake teknologi saiki lan apa sing kuwat ditanggung komputer sampeyan."
+              ]
+            },
+            "Kita ora duwe dana. Program iki digawe ing wektu luang kita, sakuwate wektu kasebut. Kita pancen niyat nggawe piranti lunak sing apik kualitase, lan iku butuh wektu lan kesabaran: kesabaran kita kanggo mbangun, lan kesabaran sampeyan nalika program iki tuwuh.",
+            "Saben versi bakal luwih apik. Masalah sing dilaporake dibenerake, lan fitur sing dijaluk ditimbang kanggo sabanjure.",
+            {
+              "note": "Dokumen sampeyan tetep ana ing komputer sampeyan. Program ora ngumpulake apa-apa bab sampeyan utawa gaweyan sampeyan; deleng \"Apa sing mlebu online, lan apa sing ora tau\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Kepriye sampeyan bisa ngewangi",
+          "body": [
+            "Ana telung cara, lan saben cara ana ajine:",
+            {
+              "points": [
+                "Critakna panemu sampeyan: Pitulung → Panemu. Masalah sing sampeyan temoni, sing isih kurang, sing luwih angel tinimbang samesthine. Kita maca saben pesen.",
+                "Critakna marang wong liya bab program iki lan apa sing kita tindakake. Luwih akeh wong sing nganggo tegese luwih akeh panemu, lan kanthi mangkono kita weruh apa sing pancen wigati. Iki uga nggawe kita ngrasa yen gaweyan kita diajeni: gaweyan kita, lan gaweyane saben wong sing melu ing proyek iki lan sing bakal melu.",
+                "Sengkuyung nganggo dhuwit, yen sampeyan bisa: Pitulung → Sengkuyung kita. Iki menehi kita wektu kanggo nggarap."
+              ]
+            },
+            "Ora ana siji wae saka iki sing dijaluk saka sampeyan. Program iki gratis lan bakal tansah gratis, wutuh, kanggo kabeh wong."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Digawe nganggo apa",
+          "body": [
+            "Program iki ngadeg ing gaweyane akeh wong. Sing dienggo bebarengan dening kabeh aplikasi:",
+            {
+              "points": [
+                "Jendhela lan kabeh sing sampeyan deleng: Tauri, nganggo web view sistem (WebView2 ing Windows, WebKitGTK ing Linux, WKWebView ing macOS); ditulis nganggo TypeScript karo React.",
+                "Bagean sing nindakake gaweyan: ditulis nganggo Rust.",
+                "Aksara lan ikon: Sansation, IBM Plex Sans lan Font Awesome Free."
+              ]
+            },
+            "Apa sing ditambahake saben aplikasi dicritakake ing kacane dhewe ing \"Babagan\". Kita matur nuwun marang wong-wong ing mburine proyek-proyek iki."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Apa sing durung bisa ditindakake",
+          "body": [
+            "Supaya sampeyan ngerti sadurunge ngandelake:",
+            {
+              "points": [
+                "Sawetara teks isih ngenteni terjemahane. Nganti saiki teks kasebut dituduhake nganggo basa Inggris, ora tau minangka kode.",
+                "Menu klik-tengen manajer berkas saiki mung ana ing Windows Explorer.",
+                "Tanda tangan nganggo sertifikat saiki mung bisa ing Windows; ing Linux lan macOS bakal teka ing versi sabanjure."
+              ]
+            },
+            "Watesan saben aplikasi ana ing kacane dhewe ing \"Babagan\". Yen ana sing ngalang-alangi sampeyan, critakna liwat Pitulung → Panemu: iki ngewangi kita mutusake apa sing digarap dhisik."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Apa sing lagi kita garap",
+          "body": [
+            "Papat aplikasi iki bakal terus tuwuh: apa sing sampeyan laporake lan jaluk liwat Pitulung → Panemu akeh nemtokake apa sing teka dhisik. Saliyane iku, aplikasi anyar lagi disiapake. Wiwitan ora nampilake kajaba sampeyan pengin: centhang ing menu \"Tampilan\" kanggo ndeleng ing kono minangka \"Enggal teka\":",
+            {
+              "points": [
+                "Convert: ngowahi berkas saka siji format menyang format liyane, kalebu dokumen kantor dadi PDF lan sabaliknya, tanpa kudu masang program liya. Kita durung nemokake teknologi terbuka sing tekan kualitas sing dikarepake, mula iki mung bakal teka yen ora nguciwani sampeyan; yen pirantine durung ana, kita bakal nggawe dhewe.",
+                "Pixel: piranti kanggo gambar, kayata ngowahi ukuran lan ngompres, mbusak latar mburi, werna lan kode QR.",
+                "Metadata: ndeleng lan mbusak data sing didhelikake ing foto, video lan dokumen, sadurunge sampeyan bagekake.",
+                "Wizard: pamilih lan panggawe acak: rodha sing diputer, dadu, dhuwit receh, jeneng sing dijupuk saka dhaptar."
+              ]
+            },
+            "Ing aplikasi sing wis ana, kita lagi nggarap apa sing ana ing kaca \"Apa sing durung bisa ditindakake\": contone stempel wektu sing dipercaya kanggo tanda tangan, tanda tangan nganggo sertifikat ing Linux lan macOS, lan pamriksa ejaan ing Scribe.",
+            "Pilihan pemasangan liyane uga bakal nyusul: Microsoft Store lan winget ing Windows, Flathub lan Snap ing Linux.",
+            {
+              "note": "Kabar saben versi ana ing tombol kabar ing bilah pinggir; Setelan → Umum → Nganyari mriksa apa ana versi sing luwih anyar."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

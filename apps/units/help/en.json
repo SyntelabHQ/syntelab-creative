@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Converting",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "The converters",
+          "body": [
+            "Units converts values between units of measure: one value quickly, or whole tables of values at once. Everything is computed on your computer.",
+            "The converters are in six menus: Essentials, Motion and mechanics, Energy and power, Scientific, Digital and media, and Specialized physics. Choosing one opens its table.",
+            {
+              "points": [
+                "A converter opens in the tab you are in. If its table has values, you are asked first: Continue (the values are lost), Open in a new tab, or Cancel.",
+                "Settings → Units → \"Open each converter in a tab of its own\" opens every converter you choose in a new tab instead.",
+                "File → Go to Start goes back to the first page of Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Quick convert",
+          "body": [
+            "The first page of Units, Quick convert, converts one value from a unit to another. Choose a converter, type the value on the \"From\" side, and choose the two units: the result is on the \"To\" side.",
+            {
+              "points": [
+                "Each side lists the popular units of the converter and your own units, with a search over them. The table of the converter has every unit.",
+                "The button between the two sides swaps the two units.",
+                "The bookmark beside a unit pins it: pinned units come first in both lists and in the units panel of the table.",
+                "The button in the result copies it; the × clears the value.",
+                "\"Open in the table\" opens the table of the converter."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "How numbers are read and written",
+          "body": [
+            "You can type and paste numbers as they are written in different countries: 1,234.56 and 1.234,56 are both understood, as are spaces and apostrophes between thousands, and 1.5e-3 for a power of ten.",
+            "A number that can be read two ways (1,234: a thousand, or one and a bit) is read as the language of the program writes numbers, and the line under the table says so.",
+            "A result is written with the decimals of the unit it arrives in, not with as many digits as you typed: 5 cm is 1.97 in. A value that is not zero always shows a few digits that say something, so 1 cm is 0.00001 km and never 0.000 km.",
+            "Values too large or too small to read at a glance are written with a power of ten, as 1.6 × 10⁻³⁵. View → Extreme values in full writes them with every zero instead.",
+            "Where a unit has no such value (a sound pressure of zero has no decibels) the cell shows a dash."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The table",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Rows and columns",
+          "body": [
+            "Every column is a unit and every row a value. The cell you type in drives its row: the other columns show the same value in their units. The typed cell is shown in bold.",
+            "What is not a number is kept and shown in red; its row converts nothing until you put it right.",
+            {
+              "points": [
+                "Double-click a cell, or just start typing on it, to edit. Enter moves down, Tab to the right; the arrow keys move; Escape leaves the cell as it was.",
+                "Click the corner (#) to select the whole table, a row number to select its row, a title to select its column. Shift+click selects a range, Ctrl+click adds cells, dragging selects too.",
+                "Home and End go to the first and the last column of the row; Ctrl+Home to the first cell of the table, Ctrl+End to the last. Ctrl with an arrow goes to the edge of the table: the first or last row, the first or last column. Page Up and Page Down move by a screen. With Shift, each of these stretches the selection instead.",
+                "A selection of several cells is outlined on its outside; the cell typing goes to stays unshaded inside it.",
+                "Delete empties the selected rows.",
+                "Typing in the last row adds a row. A table has no most it holds: it is as long as the memory of your computer allows (a row takes 16 bytes, so 100 million rows take about 1.5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Columns and the units panel",
+          "body": [
+            "The panel beside the table lists the units of the converter. At its top are the units in the table: click one to take its column out. Under them, every unit: search by name or symbol, filter by group or by \"Popular\", and click a unit to add it as a column.",
+            "The bookmark beside a unit pins it as a favourite: it comes first in the list and is first in Quick convert.",
+            {
+              "points": [
+                "Columns share the width of the table equally until their titles no longer fit; then the table scrolls sideways.",
+                "Drag the edge of a title to change the width of its column; double-click the edge to fit the column to its longest value. The column of row numbers can be dragged too.",
+                "The ⋮ button of a column: move it left or right, pin it to the left or right edge, change its precision, or remove it.",
+                "The precision of a column changes that column only. \"Use for this unit everywhere\" makes it the precision of the unit, in every table and in Quick convert.",
+                "The button with two arrows beside Undo and Redo fits the columns to the table: every width you dragged or fitted goes, and the columns share the width of the table again.",
+                "The two upper parts of the panel, the units in the table and \"Add units\" (the search and the filters), fold away with a click on their names, so the list has more room."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Undo, copy, paste, import and export",
+          "body": [
+            "The bar over the table holds its tools.",
+            {
+              "points": [
+                "Undo and Redo (Ctrl+Z, Ctrl+Y) go through every change of the table. A paste or an import is one step.",
+                "Copy (Ctrl+C) copies the whole table or what is selected, as a spreadsheet reads it. \"Transposed\" turns rows into columns.",
+                "Paste (Ctrl+V) puts copied rows into the table from the active cell down. If the first row holds titles of units, the columns are matched by them, and units that are not in the table yet are added.",
+                "Import reads an Excel workbook, a CSV or a TSV file in the place of what the table holds. \"Find the format by itself\" tells the kind by the file.",
+                "Export writes the table as Excel, CSV, TSV or JSON. With a comma before the decimals, CSV is written with semicolons, as spreadsheets expect. A sheet of Excel holds 1,048,576 rows: a longer table goes on on the next sheets of the same workbook, under the same titles.",
+                "The eraser empties the selected rows; the bin empties the whole table."
+              ]
+            },
+            "A row holds one value. Of a pasted or imported row that has several values, the first is taken and the others are computed from it.",
+            "Very many rows take a while to paste, import, export or copy. A card over the table then shows how far the work has got, in percent and in rows, with a Stop button. A paste or an import that is stopped leaves the table as it was; an export that is stopped writes no file.",
+            "When the computer has no memory left for the rows, nothing is changed and the line under the table says how much was needed. When the rows fit but the table as it was could not be kept beside them, you are asked whether to continue without undo: that change, and those before it, can then no longer be taken back. Before asking, the oldest steps of Undo are let go to make room.",
+            "Table options (the gear): what the title of a column says (name and symbol, name, or symbol), whether copies and exports include the titles and the row numbers, \"Start this converter with these columns\", and \"Reset the table\"."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Special converters",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Currency",
+          "body": [
+            "Currencies have no fixed factor: what one is worth changes. The currency converter reads its rates from two free services while you use it, and only then.",
+            {
+              "points": [
+                "Currencies of countries: Rates By Exchange Rate API, https://www.exchangerate-api.com . They change once a day at their source, and are read no more often than that.",
+                "Cryptocurrencies: Powered by CoinGecko, https://www.coingecko.com . They are read when the converter is opened or comes back to the front and what it has is older than a quarter of an hour, and when you press Refresh; never on a timer."
+              ]
+            },
+            "Only the rates are asked for. Nothing about you is sent, and never the amounts you convert.",
+            "The line under the table, and under the result of Quick convert, says when the rates are of. Without a connection the last rates are used and marked as old. A currency the services give no rate for shows a dash.",
+            "Settings → Units → Currency: \"Read the rates from the network\" can be turned off, and the converter then uses the last rates it kept. \"Name the sources beside the rates\" shows or hides the names of the two services on that line.",
+            "The rates are for information. Do not rely on them for a transaction."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Number base",
+          "body": [
+            "The units of this converter are ways of writing a whole number: bases from 2 to 64, Roman numerals, base 60 with colons (1:30:15), binary-coded decimal and Gray code. Their values are text: type FF under hexadecimal and the other columns show 255, 11111111 and so on.",
+            "Roman numerals go from I to MMMCMXCIX (1 to 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Units that are not a plain factor",
+          "body": [
+            "Most units are a factor of another. Some are not, and Units converts them as they are defined: temperatures with their offsets; fuel economy (litres per 100 km against miles per gallon); a wavelength against a frequency; conductance against resistance; degrees Baumé, API, Brix and Plato against density; decibels against sound pressure and intensity; a slope in percent against its angle.",
+            "A temperature and a difference of temperature are not the same thing: 100 °C is 212 °F, but a difference of 100 °C is a difference of 180 °F. The units of the group \"Difference (Δ)\" convert among themselves; between them and the temperature scales a cell shows a dash."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Your own units",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Making a unit",
+          "body": [
+            "You can add units of your own to any converter. In the units panel, choose \"New unit\", give it a name and a symbol, and say it by a unit that exists.",
+            {
+              "points": [
+                "A factor: \"1 pace = 0.75 m\". For a scale that does not start at zero, also what is added after multiplying.",
+                "A formula: how the value becomes the other unit, with x for the value, and the formula for the way back. For example x * 9 / 5 + 32 and (x - 32) * 5 / 9."
+              ]
+            },
+            "What you type is tried as you type it, and what one of your unit comes to is shown before you keep it. A formula can use + − × ÷ ^, brackets, x, pi, e, and the functions sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos and atan. It is worked out, never run as a program.",
+            "Your units are listed under \"Mine\" in the panel, where they can be changed and removed. A unit of yours can be said by another unit of yours; removing a unit removes those said by it.",
+            "Settings → Units lists your units of every converter, and exports and imports them as text you can keep or move to another computer."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Settings",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Settings of Units",
+          "body": [
+            "File → Open Settings opens the settings of Units; so do the options of the table (the gear in its bar).",
+            {
+              "points": [
+                "Open each converter in a tab of its own, or in the tab you are in.",
+                "Extreme values in full, what is written between thousands (10000.000, 10 000.000 or 10,000.000; nothing unless you choose otherwise), and row numbers.",
+                "Currency: whether the rates are read from the network, and whether the services are named beside them.",
+                "Precision of units: choose a converter (or \"Units you changed\"), search for a unit, and set its decimals with − and +; the arrow takes it back to the unit's own. \"Use for this unit everywhere\" in the menu of a column sets the same value.",
+                "Units a table starts with: the converters whose first columns you chose, each with a way back to those it ships with.",
+                "Your own units."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "About Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "About Units",
+          "body": [
+            "Units is the converter app of Syntelab Creative: 38 converters with more than 1,500 units, from length and temperature to currencies and number bases. A value typed once is shown in every unit you ask for, in a table that takes one value or millions of them.",
+            "Numbers are worked out exactly, as fractions, and rounded only when they are written. Everything is done on this computer; only the rates of currencies are read from the network, and that can be turned off.",
+            "It is new. Where it falls short for your work, tell us through Help → Feedback: that is how we know what to work on."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "How many rows a table holds: what we measured",
+          "body": [
+            "A table has no fixed limit of rows: it is as long as the memory of your computer allows. A row takes 16 bytes, so 100 million rows take about 1.5 GB. When the memory runs out, the table stays as it was and the program says how much was needed.",
+            "We measured it with 50,000,000 rows, each a number in one column, in the optimised build of the program:",
+            {
+              "points": [
+                "Pasting 50,000,000 rows: about 7 seconds.",
+                "Importing them from a CSV file: 12 seconds.",
+                "Exporting them to a CSV file, with a second column converted: about 3.5 minutes.",
+                "Exporting them to Excel, on 48 sheets: 4.3 minutes."
+              ]
+            },
+            "Going out takes longer than coming in because every cell that is written is converted exactly first.",
+            {
+              "note": "The computer the test ran on: AMD Ryzen 9 9950X3D (16 cores, 32 threads), 64 GB of memory, Windows 11 Pro. October 2026. On another computer the times will differ; the size of a row will not."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "What Units is built with",
+          "body": [
+            {
+              "points": [
+                "Exact numbers: the num libraries of Rust (fractions of whole numbers of any size).",
+                "The units, their factors and their groups: data files of the program, one for each converter.",
+                "Reading Excel and OpenDocument workbooks: calamine. Writing Excel workbooks: rust_xlsxwriter.",
+                "The clipboard of the system, for copies and pastes of very many rows: arboard.",
+                "The rates of currencies: ExchangeRate-API and CoinGecko (see \"Currency\")."
+              ]
+            },
+            "What it shares with the rest of the program is under \"About Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "What Units cannot do yet",
+          "body": [
+            {
+              "points": [
+                "A row holds one value: of a pasted row with several values, the first is taken.",
+                "Exporting very many rows is slow (see what we measured).",
+                "What is copied to the clipboard is held in memory as one text before it is pasted.",
+                "The rates of currencies are as fresh as their two sources give them: once a day for the currencies of countries."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

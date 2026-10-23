@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Convertir",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Els convertidors",
+          "body": [
+            "Units converteix valors entre unitats de mesura: un valor ràpidament, o taules senceres de valors alhora. Tot es calcula al teu ordinador.",
+            "Els convertidors són en sis menús: Essencials, Moviment i mecànica, Energia i potència, Científic, Digital i multimèdia, i Física especialitzada. En triar-ne un, s'obre la seva taula.",
+            {
+              "points": [
+                "Un convertidor s'obre a la pestanya on ets. Si la seva taula té valors, primer se't pregunta: Continuar (els valors es perden), Obrir en una pestanya nova o Cancel·la.",
+                "Configuració → Units → \"Obre cada convertidor en una pestanya pròpia\" fa que cada convertidor que triïs s'obri en una pestanya nova.",
+                "Fitxer → Ves a l'Inici torna a la primera pàgina de Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Convertir ràpid",
+          "body": [
+            "La primera pàgina de Units, Convertir ràpid, converteix un valor d'una unitat a una altra. Tria un convertidor, escriu el valor al costat \"Des de\" i tria les dues unitats: el resultat és al costat \"A\".",
+            {
+              "points": [
+                "Cada costat mostra les unitats populars del convertidor i les teves pròpies unitats, amb un cercador. La taula del convertidor té totes les unitats.",
+                "El botó entre els dos costats intercanvia les dues unitats.",
+                "El marcador al costat d'una unitat la fixa: les unitats fixades surten primer a totes dues llistes i al panell d'unitats de la taula.",
+                "El botó del resultat el copia; la × neteja el valor.",
+                "\"Obrir a la taula\" obre la taula del convertidor."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Com es llegeixen i s'escriuen els números",
+          "body": [
+            "Pots escriure i enganxar números tal com s'escriuen a diferents països: s'entenen tant 1,234.56 com 1.234,56, així com els espais i els apòstrofs entre milers, i 1.5e-3 per a una potència de deu.",
+            "Un número que es pot llegir de dues maneres (1,234: mil, o una mica més d'u) es llegeix tal com la llengua del programa escriu els números, i la línia sota la taula ho indica.",
+            "El resultat s'escriu amb els decimals de la unitat a la qual arriba, no amb tants dígits com n'has escrit: 5 cm són 1,97 in. Un valor que no és zero sempre mostra uns quants dígits significatius, així que 1 cm són 0,00001 km i mai 0,000 km.",
+            "Els valors massa grans o massa petits per llegir-los d'un cop d'ull s'escriuen amb una potència de deu, com 1,6 × 10⁻³⁵. Vista → Valors extrems complets els escriu amb tots els zeros.",
+            "Quan una unitat no té aquest valor (una pressió sonora de zero no té decibels), la cel·la mostra un guionet."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La taula",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Files i columnes",
+          "body": [
+            "Cada columna és una unitat i cada fila un valor. La cel·la on escrius controla la seva fila: les altres columnes mostren el mateix valor en les seves unitats. La cel·la escrita es mostra en negreta.",
+            "El que no és un número es conserva i es mostra en vermell; la seva fila no converteix res fins que ho corregeixis.",
+            {
+              "points": [
+                "Fes doble clic en una cel·la, o simplement comença a escriure-hi, per editar-la. Enter baixa, Tab va a la dreta; les tecles de fletxa mouen; Escape deixa la cel·la com estava.",
+                "Fes clic a la cantonada (#) per seleccionar tota la taula, al número d'una fila per seleccionar-la, o a un títol per seleccionar-ne la columna. Shift+clic selecciona un rang, Ctrl+clic afegeix cel·les, i arrossegar també selecciona.",
+                "Home i End van a la primera i a l'última columna de la fila; Ctrl+Home a la primera cel·la de la taula, Ctrl+End a l'última. Ctrl amb una fletxa va a la vora de la taula: la primera o l'última fila, la primera o l'última columna. Page Up i Page Down mouen la vista una pantalla. Amb Shift, cadascuna d'aquestes accions amplia la selecció.",
+                "Una selecció de diverses cel·les queda contornejada per fora; la cel·la on va l'escriptura queda sense ombrejar a dins.",
+                "Delete buida les files seleccionades.",
+                "Escriure a l'última fila n'afegeix una de nova. Una taula no té un màxim de files: és tan llarga com permet la memòria del teu ordinador (una fila ocupa 16 bytes, per tant, 100 milions de files ocupen uns 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Columnes i el panell d'unitats",
+          "body": [
+            "El panell al costat de la taula mostra les unitats del convertidor. A dalt hi ha les unitats de la taula: fes clic en una per treure'n la columna. A sota, totes les unitats: cerca per nom o símbol, filtra per grup o per \"Populars\", i fes clic en una unitat per afegir-la com a columna.",
+            "El marcador al costat d'una unitat la fixa com a favorita: surt primer a la llista i primer a Convertir ràpid.",
+            {
+              "points": [
+                "Les columnes es reparteixen l'amplada de la taula equitativament fins que els seus títols ja no caben; llavors la taula es desplaça lateralment.",
+                "Arrossega la vora d'un títol per canviar l'amplada de la seva columna; fes doble clic a la vora per ajustar la columna al seu valor més llarg. La columna dels números de fila també es pot arrossegar.",
+                "El botó ⋮ d'una columna: mou-la a l'esquerra o a la dreta, fixa-la a la vora esquerra o dreta, canvia'n la precisió o elimina-la.",
+                "La precisió d'una columna canvia només aquesta columna. \"Utilitza per a aquesta unitat a tot arreu\" la converteix en la precisió de la unitat, a totes les taules i a Convertir ràpid.",
+                "El botó amb dues fletxes al costat de Desfés i Refés ajusta les columnes a la taula: totes les amplades que has arrossegat o ajustat desapareixen, i les columnes tornen a repartir-se l'amplada de la taula.",
+                "Les dues parts superiors del panell, les unitats de la taula i \"Afegeix unitats\" (la cerca i els filtres), es pleguen fent clic al seu nom, perquè la llista tingui més espai."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Desfer, copiar, enganxar, importar i exportar",
+          "body": [
+            "La barra sobre la taula conté les seves eines.",
+            {
+              "points": [
+                "Desfés i Refés (Ctrl+Z, Ctrl+Y) recorren tots els canvis de la taula. Enganxar o importar és un sol pas.",
+                "Copiar (Ctrl+C) copia tota la taula o la selecció, tal com la llegeix un full de càlcul. \"Transposada\" converteix les files en columnes.",
+                "Enganxa (Ctrl+V) posa les files copiades a la taula des de la cel·la activa cap avall. Si la primera fila conté títols d'unitats, les columnes es fan correspondre per aquests títols, i les unitats que encara no són a la taula s'afegeixen.",
+                "Importar llegeix un llibre d'Excel, un fitxer CSV o un fitxer TSV en lloc del que conté la taula. \"Detectar el format automàticament\" reconeix el tipus pel fitxer.",
+                "Exportar escriu la taula com a Excel, CSV, TSV o JSON. Amb una coma abans dels decimals, el CSV s'escriu amb punts i comes, com esperen els fulls de càlcul. Un full d'Excel admet 1.048.576 files: una taula més llarga continua als fulls següents del mateix llibre, sota els mateixos títols.",
+                "La goma d'esborrar buida les files seleccionades; la paperera buida tota la taula."
+              ]
+            },
+            "Una fila conté un valor. D'una fila enganxada o importada que tingui diversos valors, es pren el primer i els altres es calculen a partir d'ell.",
+            "Enganxar, importar, exportar o copiar moltíssimes files pot trigar una estona. Llavors una targeta sobre la taula mostra fins on ha arribat la feina, en percentatge i en files, amb un botó Aturar. Si atures un enganxament o una importació, la taula queda com estava; si atures una exportació, no s'escriu cap fitxer.",
+            "Quan l'ordinador no té memòria per a les files, no es canvia res i la línia sota la taula indica quanta en calia. Quan les files hi caben però la taula anterior no es pot conservar al seu costat, se't pregunta si vols continuar sense desfer: aquest canvi, i els anteriors, ja no es podran desfer. Abans de preguntar-ho, es deixen anar els passos més antics de Desfés per fer espai.",
+            "Opcions de la taula (l'engranatge): què diu el títol d'una columna (nom i símbol, nom o símbol), si les còpies i exportacions inclouen els títols i els números de fila, \"Inicia aquest convertidor amb aquestes columnes\" i \"Restaurar la taula\"."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Convertidors especials",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Moneda",
+          "body": [
+            "Les monedes no tenen un factor fix: el que valen canvia. El convertidor de monedes llegeix les taxes de dos serveis gratuïts mentre l'utilitzes, i només llavors.",
+            {
+              "points": [
+                "Monedes de països: Rates By Exchange Rate API, https://www.exchangerate-api.com . Canvien una vegada al dia a la font i no es llegeixen més sovint.",
+                "Criptomonedes: Powered by CoinGecko, https://www.coingecko.com . Es llegeixen quan s'obre el convertidor o torna al primer pla i les dades que té tenen més d'un quart d'hora, i quan prems Actualitzar; mai amb un temporitzador."
+              ]
+            },
+            "Només es demanen les taxes. No s'envia res sobre tu, i mai els imports que converteixes.",
+            "La línia sota la taula, i sota el resultat de Convertir ràpid, indica de quan són les taxes. Sense connexió es fan servir les últimes taxes, marcades com a antigues. Una moneda per a la qual els serveis no donen cap taxa mostra un guionet.",
+            "Configuració → Units → Moneda: \"Llegir les taxes des de la xarxa\" es pot desactivar, i aleshores el convertidor fa servir les últimes taxes que ha guardat. \"Mostrar els noms de les fonts al costat de les taxes\" mostra o amaga els noms dels dos serveis en aquesta línia.",
+            "Les taxes són només informatives. No t'hi fiïs per fer una transacció."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Base numèrica",
+          "body": [
+            "Les unitats d'aquest convertidor són maneres d'escriure un nombre enter: bases del 2 al 64, números romans, base 60 amb dos punts (1:30:15), decimal codificat binàriament i codi Gray. Els seus valors són text: escriu FF sota hexadecimal i les altres columnes mostren 255, 11111111, etc.",
+            "Els números romans van des de I fins a MMMCMXCIX (1 a 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Unitats que no són un factor simple",
+          "body": [
+            "La majoria d'unitats són un factor d'una altra. Algunes no ho són, i Units les converteix tal com estan definides: temperatures amb els seus desplaçaments; consum de combustible (litres per 100 km contra milles per galó); una longitud d'ona contra una freqüència; conductància contra resistència; graus Baumé, API, Brix i Plato contra densitat; decibels contra pressió i intensitat sonores; un pendent en percentatge contra el seu angle.",
+            "Una temperatura i una diferència de temperatura no són la mateixa cosa: 100 °C són 212 °F, però una diferència de 100 °C és una diferència de 180 °F. Les unitats del grup \"Diferència (Δ)\" es converteixen entre elles; entre aquestes i les escales de temperatura, la cel·la mostra un guionet."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les teves pròpies unitats",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Crear una unitat",
+          "body": [
+            "Pots afegir unitats pròpies a qualsevol convertidor. Al panell d'unitats, tria \"Nova unitat\", dona-li un nom i un símbol, i defineix-la mitjançant una unitat existent.",
+            {
+              "points": [
+                "Un factor: \"1 pass = 0,75 m\". Per a una escala que no comenci a zero, també què s'afegeix després de multiplicar.",
+                "Una fórmula: com el valor es converteix en l'altra unitat, amb x per al valor, i la fórmula per al camí invers. Per exemple x * 9 / 5 + 32 i (x - 32) * 5 / 9."
+              ]
+            },
+            "El que escrius es prova mentre ho escrius, i abans de conservar-la es mostra a quant equival una de les teves unitats. Una fórmula pot utilitzar + − × ÷ ^, parèntesis, x, pi, e, i les funcions sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos i atan. Es calcula, mai s'executa com a programa.",
+            "Les teves unitats apareixen a \"Meus\" al panell, on es poden canviar i eliminar. Una unitat teva es pot definir per una altra unitat teva; eliminar una unitat elimina també les que s'hi defineixen.",
+            "Configuració → Units mostra les teves unitats de cada convertidor, i les exporta i importa com a text que pots guardar o portar a un altre ordinador."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Configuració",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Configuració de Units",
+          "body": [
+            "Fitxer → Obre la configuració obre la configuració de Units; també ho fan les opcions de la taula (l'engranatge de la seva barra).",
+            {
+              "points": [
+                "Obrir cada convertidor en una pestanya pròpia, o a la pestanya on ets.",
+                "Valors extrems complets, què s’escriu entre milers (10000,000, 10 000,000 o 10.000,000; res, tret que triïs una altra cosa) i números de fila.",
+                "Moneda: si les taxes es llegeixen de la xarxa, i si els serveis s'indiquen al costat.",
+                "Precisió de les unitats: tria un convertidor (o \"Unitats que has canviat\"), cerca una unitat i defineix-ne els decimals amb − i +; la fletxa la torna a la precisió pròpia de la unitat. \"Utilitza per a aquesta unitat a tot arreu\" al menú d'una columna estableix el mateix valor.",
+                "Unitats amb les quals comença una taula: els convertidors dels quals has triat les primeres columnes, cadascun amb una manera de tornar a les unitats que venen amb el convertidor.",
+                "Les teves pròpies unitats."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Quant a Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Quant a Units",
+          "body": [
+            "Units és l'aplicació de conversió de Syntelab Creative: 38 convertidors amb més de 1.500 unitats, des de la longitud i la temperatura fins a les monedes i les bases numèriques. Un valor escrit una vegada es mostra en cada unitat que demanis, en una taula que admet un sol valor o milions.",
+            "Els números es calculen exactament, com a fraccions, i s'arrodoneixen només quan s'escriuen. Tot es fa en aquest ordinador; només les taxes de les monedes es llegeixen de la xarxa, i això es pot desactivar.",
+            "És nou. Allà on no sigui suficient per a la teva feina, digues-nos-ho a través d'Ajuda → Comentaris: així sabem en què hem de treballar."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Quantes files conté una taula: què hem mesurat",
+          "body": [
+            "Una taula no té un límit fix de files: és tan llarga com permet la memòria del teu ordinador. Una fila ocupa 16 bytes, per tant, 100 milions de files ocupen uns 1,5 GB. Quan la memòria s'esgota, la taula es manté tal com estava i el programa indica quanta memòria calia.",
+            "Ho hem mesurat amb 50.000.000 de files, cadascuna amb un número en una columna, en la versió optimitzada del programa:",
+            {
+              "points": [
+                "Enganxar 50.000.000 de files: uns 7 segons.",
+                "Importació des d'un fitxer CSV: 12 segons.",
+                "Exportació a un fitxer CSV, amb una segona columna convertida: uns 3,5 minuts.",
+                "Exportació a Excel, en 48 fulls: 4,3 minuts."
+              ]
+            },
+            "L'exportació triga més que la importació perquè cada cel·la que s'escriu primer es converteix exactament.",
+            {
+              "note": "L'ordinador on s'ha realitzat la prova: AMD Ryzen 9 9950X3D (16 nuclis, 32 fils), 64 GB de memòria, Windows 11 Pro. Octubre de 2026. En un altre ordinador els temps variaran; la mida d'una fila no."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Amb què està construït Units",
+          "body": [
+            {
+              "points": [
+                "Números exactes: les biblioteques num de Rust (fraccions de números enters de qualsevol mida).",
+                "Les unitats, els seus factors i els seus grups: fitxers de dades del programa, un per a cada convertidor.",
+                "Lectura de llibres d'Excel i OpenDocument: calamine. Escriptura de llibres d'Excel: rust_xlsxwriter.",
+                "El porta-retalls del sistema, per a còpies i enganxats de moltes files: arboard.",
+                "Les taxes de les monedes: ExchangeRate-API i CoinGecko (consulta \"Moneda\")."
+              ]
+            },
+            "El que comparteix amb la resta del programa es troba a \"Quant a Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Què encara no pot fer Units",
+          "body": [
+            {
+              "points": [
+                "Una fila conté un valor: d'una fila enganxada amb diversos valors, es pren el primer.",
+                "L'exportació de moltíssimes files és lenta (consulta el que hem mesurat).",
+                "El que es copia al porta-retalls es manté a la memòria com un únic text abans de ser enganxat.",
+                "Les taxes de les monedes són tan recents com les donen les seves dues fonts: un cop al dia per a les monedes dels països."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

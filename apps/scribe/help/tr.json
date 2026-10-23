@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Metinler ve dosyalar",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Düzenleyici",
+          "body": [
+            "Scribe, araçları yanında bulunan bir düz metin düzenleyicisidir. Her metin bir sekmede açılır; metin ortada, araç paneli yanında, bilgi satırı ise altta yer alır.",
+            "Scribe açıldığında önce ne yapmak istediğinizi sorar: sözcükleri saymak, bulup değiştirmek, yinelenenleri kaldırmak, iki metni karşılaştırmak, satırları sıralamak, metni ters çevirmek, örnek veya rastgele metin oluşturmak. Bir seçim yaptığınızda metin ilgili araç yanında açık olarak gelir; ‘Boş metin’ yalnızca metni açar, son açtığınız metinler de aşağıda listelenir.",
+            {
+              "points": [
+                "Dosya → Yeni metin (Ctrl+N) boş bir metin başlatır.",
+                "Dosya → Aç (Ctrl+O) bir veya birkaç dosyayı açar; her biri kendi sekmesinde görünür. Metin içeren her dosya açılabilir: .txt, .md, .csv, .log, .srt, kaynak kodu ve diğerleri.",
+                "Düzenle → Geri al (Ctrl+Z) ve Yinele (Ctrl+Y), metinde yapılan işlemleri adım adım geri alır veya yineler. Araçlar ve tarifler de tek bir adım sayılır.",
+                "Düzenle → Bul ve değiştir (Ctrl+F), düzenleyicide eşleşmeler arasında ilerleyebileceğiniz bir çubuk açar.",
+                "Düzenle → Tümünü seç (Ctrl+A)."
+              ]
+            },
+            "Metnin altındaki satırda imlecin konumu, seçili bölümün uzunluğu, satır, sözcük ve karakter sayıları, dosya kodlaması ve satır sonu biçimi gösterilir.",
+            "Pencereye bırakılan dosyalar da açılır; her biri dosya adı, kodlaması ve satır sonlarıyla yeni bir metin olur. Program bırakılan dosyanın içeriğini alır, ancak diskteki konumunu bilmez; bu yüzden kaydederken konum sorar. 64 MB üzerindeki dosyaları Dosya → Aç ile açın.",
+            "Boş yeni metinde son açılan metinler listelenir; açmak için birine tıklayın. ‘Listeyi temizle’ listeyi boşaltır. Liste yalnızca bu bilgisayarda tutulur."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Kaydet ve Farklı kaydet",
+          "body": [
+            "Kaydetmeden önce diskteki dosya değişmez. Sekmedeki nokta, metinde dosyaya henüz kaydedilmemiş değişiklikler olduğunu gösterir; böyle bir sekmeyi kapatırken önce kaydetmeniz sorulur.",
+            {
+              "points": [
+                "Kaydet (Ctrl+S) metni kendi dosyasının üzerine yazar. Yeni bir metin için konum sorulur.",
+                "Farklı kaydet (Ctrl+Shift+S) metni yeni bir dosyaya yazar; bu dosya sekmenin yerini alır ve geri alınabilir değişiklikler korunur. Eski dosya olduğu gibi kalır."
+              ]
+            },
+            "Dosya ya tamamen yazılır ya da hiç yazılmaz: yazma başarısız olursa mevcut dosya olduğu gibi kalır.",
+            {
+              "note": "Dosya, açıldığı biçimde kaydedilir: aynı kodlama ve aynı satır sonlarıyla. Windows'ta yazılan bir metin Windows biçiminde, Linux'ta yazılan da Linux biçiminde kalır."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodlamalar ve satır sonları",
+          "body": [
+            "Kodlama, harflerin baytlar olarak saklanma biçimidir. Scribe dosyanın kendi biçim bilgisini okur; bilgi yoksa kodlamayı tahmin eder. Günümüzde çoğu dosya UTF-8'dir; Orta Avrupa'daki eski dosyalarda windows-1250 sık görülür.",
+            {
+              "points": [
+                "Harfler bozuk görünüyorsa (ă yerine Ã£ ya da kareler): Dosya → ‘Başka bir kodlamayla yeniden oku’ seçeneğini açın ve dosyanın yazıldığı kodlamayı seçin.",
+                "Başka kodlamayla kaydetmek için metnin altındaki satırdan kodlamayı seçip kaydedin. Metinde o kodlamanın yazamayacağı harfler varsa Scribe hangileri olduğunu bildirir ve dosyaya hiçbir şey yazmaz.",
+                "Satır sonları (Windows CRLF, Linux ve macOS LF, eski Mac CR) aynı yerden değiştirilir. Karışık satır sonları olan dosya bu şekilde belirtilir; kaydedildiğinde tüm satırların sonu aynı olur."
+              ]
+            },
+            "Yeni metinlerin hangi biçimde başlayacağı Ayarlar'dan seçilir."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Metnin görünümü",
+          "body": [
+            {
+              "points": [
+                "Görünüm menüsündeki her seçenek bir anahtardır: açıksa görünür, kapalıysa görünmez.",
+                "Metin: Uzun satırları kaydır (Alt+Z) — pencereye sığmayan satır alttan devam eder, ancak metindeki satır yapısı değişmez; Satır numaraları; Metnin yanında sonuç.",
+                "Metnin yanında: Araçlar (Ctrl+T), Tarifler, İstatistikler. Panelde yalnızca açık olan bölümler görünür; hiçbiri açık değilse panel de görünmez.",
+                "Gösterilen araçlar: araç gruplarını (bul ve değiştir, satırlar, büyük/küçük harf ve harfler, temizleme, metin oluşturma) panelden gizleyebilirsiniz. Biçim veya Araçlar menüsünden seçilen bir araç yine gösterilir; ilgili bölümü ve grubunu kendiliğinden açar.",
+                "Panelin üstündeki çift ok, paneli kenarda dar bir şeride katlar; her bölüme bu şeritten tek tıkla ulaşılır. Genişliği değiştirmek için kenarını sürükleyin.",
+                "Yazı tipini ve boyutunu Ayarlar'dan seçin."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Çok büyük dosyalar",
+          "body": [
+            "64 MB üzerindeki dosyalar düzenleyiciye yüklenmez. Bunun yerine ayrı bir sekmede, her seferinde 500 satırlık sayfalar halinde gösterilir ve siz ilerledikçe diskten okunur. Gigabaytlarca dosya bu şekilde, baştan sona bir kez okuma süresinde açılır.",
+            {
+              "points": [
+                "Önceki sayfa ve Sonraki sayfa ile dosyada ilerleyin; satır numarası girip Git'e basarak istediğiniz satıra atlayın.",
+                "Bul, dosyanın tamamını diğer yerlerdeki seçeneklerle arar ve bulunan konumları listeler. Bir satıra gitmek için sonuca tıklayın. Uzun listeler parça parça yüklenir; devamı için ‘Daha fazla bul’u seçin.",
+                "‘Tüm dosyada tarif çalıştır’ sonucu, seçtiğiniz klasöre aynı adla yazar. Bu işlem kaynak dosyayı hiçbir zaman değiştirmez.",
+                "‘Tümünü düzenleyicide aç’ dosyayı elle değiştirmek üzere düzenleyiciye yükler. İşlem yavaş olabilir ve dosya boyutunun birkaç katı bellek gerektirir."
+              ]
+            },
+            {
+              "note": "Bir harfin iki baytla yazıldığı (UTF-16) dosyalar sayfa sayfa görüntülenemez. Tarif çalışırken dosyanın tamamını bellekte tutar; sınır bilgisayarın belleğidir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Araçlar",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Araçların çalışma biçimi",
+          "body": [
+            "Araçlar, metnin yanındaki panelde gruplar halinde bulunur. Seçeneklerini görmek için araca, ardından Uygula'ya tıklayın.",
+            {
+              "points": [
+                "Bir bölüm seçiliyken araç yalnızca seçimi değiştirir; seçim yoksa metnin tamamında çalışır. Panelin üst kısmında hangisinin kullanılacağı belirtilir.",
+                "Araç, düğmesinin altında ne yaptığını ve kaç satırı veya konumu değiştirdiğini bildirir.",
+                "Her araç tek bir adımdır: Geri al, işlemin tamamını geri alır.",
+                "Her araç menülerde ve komut aramasında da bulunur: metnin biçimini değiştirenler (satırlar, büyük/küçük harf ve harfler, temizleme) Biçim menüsünde, diğerleri Araçlar menüsündedir. Menüden seçilen araç, seçeneklerinin bulunduğu paneli açar."
+              ]
+            },
+            "Biçim menüsünde, çoğunlukla tek seçimden oluşan araçlar seçeneklerine ayrılır: büyük/küçük harf dönüşümlerinin, tırnak işareti türlerinin ve metni ters çevirme yollarının her biri, ilgili seçenek seçiliyken aracı açan ayrı bir komuttur. Pencere bir grubu göstermek için çok darsa grup, listenin tamamını açan tek bir düğmeye dönüşür.",
+            "Araçlar bu bilgisayarda çalışır. Hiçbir metin dışarı gönderilmez."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Uygulamadan önce sonuç",
+          "body": [
+            "Bir araç açıkken oluşturacağı sonuç, metnin yanındaki ‘Sonuç’ bölmesinde gösterilir. Uygula'yı seçene kadar metin değişmez. Seçeneği veya metni değiştirirseniz sonuç yeniden oluşturulur.",
+            {
+              "points": [
+                "Metin ve sonuç yan yana durur; aynı yükseklikte başlıkları olduğundan aynı satırlar aynı hizada başlar. Birlikte kaydırılırlar (zincir düğmesi bu özelliği kapatır).",
+                "Değişecek satırlar işaretlenir; değişen bölüm daha koyu gösterilir. Yalnızca taşınacak ve yeni satırların her biri farklı renkle belirtilir. Değiştirilecek veya silinecek satırlar metnin içinde de işaretlenir.",
+                "Başlıkların altında yapılacak değişiklikler sayıyla gösterilir: değişen, taşınan, eklenen ve silinen satırlar; işlem öncesi ve sonrası satır ve karakter sayıları.",
+                "Sonucun altında silinecek satırlar listelenir. Metinde o satıra gitmek için tıklayın.",
+                "Sonuçtaki küçük düğmeler: sonucu kopyalama, yeni metin olarak açma, bir sekmedeki metinle karşılaştırma, birlikte kaydırma, sonucu yan yerine metnin altında gösterme ve gizleme. Metnin de kendi düğmeleri vardır: geri al, yinele, kopyala, üzerine yapıştır, tümünü seç ve temizle.",
+                "Birine daha çok yer açmak için iki bölüm arasındaki çubuğu sürükleyin; çift tıklayınca genişlikleri eşitlenir."
+              ]
+            },
+            "Uygula'dan sonra Sonuç bölmesi bunu bildirir (‘Uygulandı. Soldaki metin artık sonuçtur.’) ve Geri al ile ‘Önceki hâliyle karşılaştır’ seçeneklerini sunar. Karşılaştırma, önceki ve sonraki hâli gösterir. Metni veya araç seçeneğini değiştirdiğinizde sonuç yeniden oluşturulur.",
+            {
+              "note": "Görünüm → ‘Metnin yanında sonucu göster’ bölmeyi açıp kapatır. Çok uzun metinlerde (iki milyon karakterden fazla) önizleme gösterilmez; aracı uyguladıktan sonra işlemi Geri al ile geri alabilirsiniz."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Her yerde değiştir",
+          "body": [
+            "Bulunan tüm eşleşmeleri tek seferde değiştirir. Aranacak metni yazarken Scribe kaç eşleşme bulunduğunu bildirir ve metinde işaretler; böylece uygulamadan önce nelerin değişeceğini görebilirsiniz.",
+            {
+              "points": [
+                "‘Düzenli ifade’: aranacak metin bir kalıptır. ‘Şununla değiştir’ alanında $1, $2… kalıp gruplarının bulduklarını temsil eder.",
+                "‘Büyük/küçük harf duyarlı’: a ve A farklı harfler sayılır.",
+                "‘Yalnızca tam sözcükler’: ‘kedi’, ‘kediler’ sözcüğünün içinde eşleşmez.",
+                "‘Değiştirilen metnin büyük/küçük harf biçimini koru’: ‘kedi’ yerine ‘köpek’ yazmak ‘Kedi’yi ‘Köpek’e, ‘KEDİ’yi ‘KÖPEK’e dönüştürür."
+              ]
+            },
+            {
+              "points": [
+                "‘Diğer seçenekler’ → ‘Alan ekle…’: her eşleşmede doldurulacak alanlar ekleyebilirsiniz. {counter} 1, 2, 3… diye sayar ({counter:10} sayımı 10'dan başlatır, {counter:10:5} beşer artırır); {date} ve {time} bilgisayarınızın tarih ve saatidir; {uuid} bir tanımlayıcıdır; {random} 8, {random:12} ise 12 rastgele harf ve rakam üretir.",
+                "Arama alanının altında Scribe eşleşmelerin kaç satırda ve kaç farklı metinde bulunduğunu da gösterir."
+              ]
+            },
+            "‘Birden çok eşleşmeyi değiştir’, eşleşme çiftlerinden oluşan bir listeyi tek adımda işler. Her satıra ‘aranan => yerine yazılacak’ biçiminde bir çift girin. Çiftler sırayla, öncekinin bıraktığı metin üzerinde uygulanır; ikinci bölüm boşsa bulunan metin silinir.",
+            {
+              "note": "Kalıp programı kilitleyemez: çalışma süresi metnin uzunluğuyla artar, daha hızlı artmaz. Bu nedenle bulduklarına geri başvuran kalıplar (\\1) kullanılamaz."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Satırlar",
+          "body": [
+            {
+              "points": [
+                "Satırları şuna göre sıralayın: sözcük sırasına göre (programın dilinde veya seçtiğiniz dilde; Rumencede ă, a'dan sonra; İsveççede ä, z'den sonra; Almancada a'nın yanında); rakamları sayı olarak kabul ederek (file2, file10'dan önce); satır başındaki sayıya; uzunluğa; sözcük sayısına; başlangıç tarihine; internet adreslerine; sürüm numaralarına (1.2.10, 1.2.9'dan sonra); baştaki tanımlıkların yok sayıldığı başlıklara; sizin belirlediğiniz sıraya (küçük, orta, büyük) veya sıralamayı kapatarak.",
+                "Sıralanacak bir şeyi olmayan satırlar (sayı yok, tarih yok ya da yazdığınız sırada bulunmayan bir değer) diğerleri hangi yönde sıralanırsa sıralansın sonda kalır: küçükten büyüğe de, büyükten küçüğe de.",
+                "Sıralama seçenekleri: bir sözcükten veya karakterden başlayarak ya da tablonun bir sütununa göre karşılaştırma (sütunun hangi bölümlerinin kullanılacağını seçebilirsiniz); ilk satırı başlık olarak koruma; satır yerine paragraf sıralama; önce düzeltme — kenar boşluklarını kırpma, boş satırları ve yinelenenleri kaldırma.",
+                "Yinelenen satırları kaldır: yinelenen satırlardan ilkini, sonuncusunu veya hiçbirini tutun (yalnızca bir kez geçenler kalır). Karşılaştırırken büyük/küçük harfleri, satır çevresindeki boşlukları, rakamları, noktalama işaretlerini ve satırın başındaki ya da sonundaki karakter sayısını yok sayabilirsiniz. Yalnızca bir sütun veya kalıbın buldukları karşılaştırılabilir. Boş satırlar da diğerleri gibi tutulur, silinir veya teke indirilir.",
+                "Yinelenen satırları say: her satırdan bir tane bırakır ve önüne kaç kez geçtiğini yazar. En sık geçenler, en az geçenler veya ilk görülme sırası seçilebilir.",
+                "Satırları tut veya çıkar: her satırda bir ifade arar; ifadeyi içeren satırları veya içermeyen satırları bırakır.",
+                "Satırların sırasını tersine çevir; Satırları karıştır.",
+                "Satırları numaralandır: başlangıç numarasını, numaradan sonra eklenecek metni, numaraları hizalamak için baştaki sıfırları seçin; boş satırları numarasız bırakabilirsiniz.",
+                "Boş satırlar: tümünü kaldırın veya art arda gelenlerden birini bırakın.",
+                "Satırları seçtiğiniz ayraçla tek satırda birleştirin; virgül, noktalı virgül veya başka bir karakterde satırlara bölün. Numaralandırma, birleştirme, bölme ve sayma alanlarında sekme karakteri yazılamadığı için \\t sekme anlamına gelir."
+              ]
+            },
+            {
+              "note": "Yalnızca başka bir seçimle anlamlı olan seçenekler gerektiğinde gösterilir; örneğin sütuna göre karşılaştırma seçince sütun seçeneği çıkar. Daha az kullanılan seçenekler ‘Diğer seçenekler’ altındadır."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Büyük/küçük harf",
+          "body": [
+            "Harf biçimini değiştir: cümle düzeni, Her Sözcüğün İlk Harfi Büyük, Tümü Büyük, tümü küçük, tersine çevir ve kod adlandırma biçimleri: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Büyük/küçük harf dönüşümü yalnızca İngilizceye göre değil, her alfabenin kurallarına göre yapılır.",
+            "Yön grubundaki ‘Metni ters çevir’, her satırdaki harfleri, sözcük sırasını veya her sözcüğün harflerini tersine çevirir. ‘Baş aşağı’ metni masanın karşı tarafından okunacak biçimde yazar; ‘Aynadaki gibi’ ayrıca sağ ve sol yönü olan işaretleri de değiştirir. Harfler okurun saydığı gibi sayılır: işaretli bir harf tek harftir."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Temizleme",
+          "body": [
+            {
+              "points": [
+                "Boşlukları temizle: art arda gelen boşlukları teke indirir; satır başı ve sonundaki boşlukları kaldırır.",
+                "Satır kenarlarını kırp: her iki uçtaki, yalnızca baştaki veya yalnızca sondaki boşlukları kaldırır.",
+                "Tırnak işaretleri: düz, İngiliz, Rumen, Alman veya Fransız biçimi.",
+                "Aksan işaretlerini kaldır: ă harfi a'ya, é harfi e'ye dönüşür. Yalnızca Latin ve Yunan alfabelerinde uygulanır; çünkü işaretsiz biçimi de aynı harftir.",
+                "Rumen harflerini düzelt: eski klavyelerde kullanılan sedilli ş ve ţ harflerini, Rumencenin yazıldığı virgüllü ș ve ț biçimlerine dönüştürür.",
+                "Sekmeleri boşluğa veya boşlukları sekmeye dönüştürün; sekme genişliğini seçebilirsiniz.",
+                "HTML etiketlerini kaldır: metne yapıştırdığınız web sayfası kaynak kodunu temizler. Etiketler, betikler ve biçemler kaldırılır; okuyucunun göreceği içerik kalır. Bir sayfayı adresinden almak için ‘Web sayfası metni’ aracını kullanın.",
+                "Web sayfası metni: bir sayfanın adresini (example.com/page gibi) yazın ve ‘Metni getir’i seçin. Okuyucunun sayfada göreceği içerik, imlecin bulunduğu yere etiketler, betikler ve biçemler olmadan eklenir. Scribe'ın çevrimiçi olan tek aracı budur ve yalnızca siz istediğinizde çalışır: sayfa bu bilgisayarda kurulu tarayıcıyla (Microsoft Edge veya Google Chrome), pencere açmadan ve çerezlerinizi ya da oturum açma bilgilerinizi kullanmadan alınır; programın kendisi hiçbir şey göndermez. Oturum açma gerektiren sayfalarda yalnızca herkesin görebildiği içerik alınır."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Rumen aksan işaretlerini geri ekleme",
+          "body": [
+            "ă, â, î, ș, ț harfleri olmadan yazılmış Rumence metne bu harfleri geri ekler.",
+            {
+              "steps": [
+                "Temizleme grubundaki aracı açın ve Uygula'yı seçin.",
+                "Tek doğru biçimi olan sözcükler doğrudan düzeltilir: ‘stiu’ → ‘știu’, ‘informatii’ → ‘informații’.",
+                "Birden fazla biçimde okunabilen sözcükler (fata, fată, fața, față) düğmenin altında, metindeki yerleriyle listelenir. Her biri için doğru biçime tıklayın.",
+                "Ya da uygulamadan önce ‘Şüpheli sözcüklerde daha olası biçimi otomatik seç’ seçeneğini işaretleyin: size soru sorulmaz; sonucu gözden geçirmeniz gerekir."
+              ]
+            },
+            "Çevresindeki sözcükler yeterli ipucu verdiğinde Scribe bağlama göre karar verir: ‘o casa’ → ‘o casă’, ‘casa mea’ olduğu gibi kalır, ‘pentru ca’ → ‘pentru că’.",
+            {
+              "note": "Bu araç Scribe için yaygın sözcüklerden ve Rumencede her zaman aksan işaretiyle yazılan eklerden oluşturulmuştur. Tanımadığı sözcükler (nadir sözcükler, özel adlar) yazıldığı gibi bırakılır; aksan işaretleri zaten doğru olan sözcüklere dokunulmaz. Göndermeden önce sonucu gözden geçirin."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Metin oluşturma: dolgu ve rastgele metin",
+          "body": [
+            "‘Metin oluştur’ grubundaki araçlar metni dönüştürmez; yeni metin yazar. Oluşturulan içerik imlecin olduğu yere, seçili bölümün yerine eklenir.",
+            {
+              "points": [
+                "Dolgu metni: paragraf, cümle, sözcük, liste, başlık veya sayfa bölümleri (başlık, paragraflar, liste). Matbaacıların Latince metni (lorem ipsum), İngilizce, Rumence, ofis veya mutfak sözcükleri ya da kendi metniniz. Diğer seçenekler: kısa, orta veya uzun cümleler; düz metin, Markdown, HTML veya JSON; başlık düzeyi; karakter sınırı (metin tam sözcük sonunda kesilir ve cümle olarak biter); çıkarılacak sözcükler.",
+                "Uydurma veriler: Romanya veya İngilizce konuşulan ülkelerden adlar, e-posta ve telefon numaraları, sokak adresleri, tarihler veya sayılar; her satıra bir tane. ‘Örüntüme göre satırlar’ seçilen biçimde her satırı üretir. {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} ve {row}, üretilecek değeri temsil eder; böylece hızlıca test tablosu oluşturabilirsiniz.",
+                "Rastgele metin: her birinden en az bir tane içeren harf, rakam ve işaretlerden parolalar; tek veya çok satırlı harfler, rakamlar, onaltılık değerler ya da tanımlayıcılar (UUID). Karıştırılabilen karakterleri (0 ve O; 1, l ve I) dışarıda bırakabilirsiniz.",
+                "‘Diğer seçenekler’ altındaki başlangıç değeri, dolgu metnini ve uydurma verileri aynı sayı için her seferinde aynı şekilde üretir; 0 ise her seferinde yeni sonuç verir."
+              ]
+            },
+            {
+              "note": "Parolalar bu bilgisayarda, işletim sisteminin rastgelelik kaynağı kullanılarak oluşturulur ve hiçbir yere gönderilmez. Uydurma e-posta adresleri kimsenin posta almadığı example.com ile biter. Rastgele oluşturulan telefon numarası birine ait olabileceğinden aramayın."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tarifler",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Yaptıklarınızı tarif olarak kaydetme",
+          "body": [
+            "Tarif, seçenekleriyle birlikte ad altında saklanan ve tek tıkla yeniden çalıştırılabilen araçlar listesidir.",
+            {
+              "steps": [
+                "İstediğiniz araçları, istediğiniz sırayla metne uygulayın.",
+                "Panelin üst kısmından ‘Tarifler’i açın; uyguladığınız araçlar listelenir.",
+                "‘Tarif olarak sakla’yı seçip bir ad verin.",
+                "Daha sonra tarifi açıp ‘Metinde çalıştır’ı seçin: tüm adımlar uygulanır; tek bir Geri al hepsini geri alır."
+              ]
+            },
+            "Tarifler bu bilgisayarda saklanır ve tüm metinlerde kullanılabilir."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Tarifi değiştirme veya sıfırdan oluşturma",
+          "body": [
+            "Açık tarifteki ‘Değiştir’, tarifi ve adımlarını gösterir. Adımlar yukarı veya aşağı taşınabilir, kaldırılabilir ya da seçenekleri değiştirilebilir. Yeni araçlar adımların altındaki listeden eklenir. ‘Kaydet’ demeden değişiklikler saklanmaz.",
+            "‘Yeni tarif’, adı ve adımları boş bir tarif oluşturur. Araçları önce bir metinde çalıştırmanız gerekmeden aynı şekilde kurabilirsiniz.",
+            {
+              "note": "Metin oluşturan araçlar (dolgu ve rastgele metin) tarif adımı olarak kullanılamaz; tarifler mevcut metni değiştirir."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Tarifi dosyalarda çalıştırma",
+          "body": [
+            {
+              "steps": [
+                "Tarifi açın ve ‘Dosyalarda çalıştır’ bölümünden dosyaları veya bir klasörü (alt klasörleriyle birlikte) ekleyin.",
+                "Sonuçların yazılacağı yeri seçin: dosyaları olduğu gibi bırakan başka bir klasörü veya dosyaların kendisini.",
+                "Çalıştır'a basın. Scribe kaç dosyanın yazıldığını, kaçının değişmeden kaldığını ve hangilerinin neden işlenemediğini bildirir."
+              ]
+            },
+            "Her dosya kendi kodlaması ve satır sonlarıyla yazılır. Başka bir klasöre yazarken dosyaların klasör yapısı korunur ve hedef klasörde zaten bulunan dosyaların üzerine asla yazılmaz.",
+            {
+              "note": "Dosyaların üzerine yazma işlemi Scribe'dan geri alınamaz. Dosyalar önemliyse bir kopyasını saklayın."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "İstatistikler, karşılaştırma ve klasörler",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "İstatistikler",
+          "body": [
+            "Panelin üst kısmındaki ‘İstatistikler’, metnin veya seçimin içeriğini açıklar. Her bölüm daraltılabilir.",
+            {
+              "points": [
+                "Üstte: sözcük sayısı, boşluklu ve boşluksuz karakter sayısı, cümleler, paragraflar, satırlar, sayfalar ve bayt cinsinden boyut.",
+                "Süreler: sessiz okuma, sesli okuma, yazma ve elle yazma için tahmini süre.",
+                "Sözcükler: farklı sözcük sayısı ve toplam içindeki oranları; sözcük başına harf ve hece sayısı; en uzun ve en kısa sözcük; her uzunluktaki sözcüklerin sayısı.",
+                "Cümleler: cümle başına sözcük; kısa, orta ve uzun cümle sayısı; bildirme, soru ve ünlem cümlelerinin sayısı; en uzun ve en kısa cümle.",
+                "Okunabilirlik: metnin diline göre hazırlanmış formülle 0 (çok zor) ile 100 (çok kolay) arasında puan. İngilizce, Almanca, İspanyolca, Fransızca, İtalyanca, Felemenkçe, Portekizce ve Rusça için formül vardır. Diğer dillerde yanıltıcı bir formül kullanmamak için puan gösterilmez.",
+                "En sık kullanılan sözcüklerin metindeki oranı; yinelenen ikili ve üçlü sözcük grupları.",
+                "Yaygın sınırlar için kalan veya aşılan karakter sayısı: başlık, açıklama, kısa gönderi ve benzeri metinler."
+              ]
+            },
+            "Sözcük ve cümle sayımı her yazı sisteminin kurallarına göre yapılır; bu nedenle sözcükleri ayırmak için boşluk kullanmayan Çince, Japonca ve Tayca metinler de sayılabilir. Süre hesaplamalarında kullanılan hızlar ve bir sayfadaki sözcük sayısı Ayarlar'dan belirlenir."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "İki metni karşılaştırma",
+          "body": [
+            {
+              "points": [
+                "Araçlar → ‘Başka bir metinle karşılaştır’: düzenleyicideki metni yazdığınız veya yapıştırdığınız metinle karşılaştırır.",
+                "Araçlar → ‘Bir dosyayla karşılaştır’: düzenleyicideki mevcut metni seçtiğiniz dosyayla karşılaştırır.",
+                "Araçlar → ‘İki metni karşılaştır’: yazdığınız veya yapıştırdığınız iki metni yan yana karşılaştırır.",
+                "Araçlar → ‘İki dosyayı karşılaştır’."
+              ]
+            },
+            "İki metin yan yana gösterilir. Yalnızca ilk metinde bulunan satırlar silinmiş, yalnızca ikincide bulunanlar eklenmiş olarak işaretlenir; değişen satırlarda farklı sözcükler vurgulanır. Çevresindeki birkaç satırla birlikte yalnızca farklılıklar gösterilir; oklarla sıradaki farklılığa geçebilirsiniz.",
+            "Büyük/küçük harfleri, boşlukları, boş satırları, rakamları ve noktalama işaretlerini karşılaştırma dışında bırakabilirsiniz. ‘Tek sütunda’, silinen ve eklenen metni yan yana değil, işaretleriyle alt alta gösterir. Scribe, sayımların yanında iki metindeki aynı satırların oranına göre benzerlik yüzdesini de bildirir.",
+            "Metinlerden biri seçildiğinde diğeri henüz seçilmemiş olsa da hemen gösterilir. Bir metne daha çok yer açmak için ikisinin arasındaki çubuğu sürükleyin. Metin kutularına yazarken kutulara veya karşılaştırmaya daha çok yer vermek için altlarındaki çubuğu yukarı ya da aşağı sürükleyin. Bir çubuğa çift tıklayarak sıfırlayın.",
+            "Arka arkaya birkaç satır değiştiğinde her satır en çok benzediği satırın yanına yerleştirilir. Böylece aradaki bir ekleme veya silme, kendisinden sonraki tüm satırların değişmiş gibi görünmesine yol açmaz.",
+            "‘Metinleri yazın veya yapıştırın’ her sütunun üstünde bir metin kutusu gösterir. Yazdıklarınız anında karşılaştırılır; yine de her iki taraf için bir dosya seçebilirsiniz."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Bir klasörde bulma ve değiştirme",
+          "body": [
+            {
+              "steps": [
+                "Araçlar → ‘Klasörde bul’ (Ctrl+Shift+F) komutunu açın ve klasörü seçin. Alt klasörler de aranır.",
+                "‘Tümünü değiştir’ ile aynı seçenekleri kullanarak aranacak metni yazın. ‘Dosya türleri’ aramayı belirli uzantılarla sınırlar (txt, md, csv…).",
+                "Her eşleşme, dosya dosya kendi satırında gösterilir. Dosyayı o satırda açmak için satıra tıklayın.",
+                "Değiştirmek için yeni metni yazın, dokunulmayacak dosyaların işaretini kaldırın ve ‘Dosyaları yaz’ı seçin."
+              ]
+            },
+            "Siz istemeden hiçbir şey yazılmaz ve yalnızca işaretli dosyalara yazılır. Her dosya kendi kodlaması ve satır sonlarıyla kaydedilir.",
+            {
+              "note": "Gizli klasörler ve programların doldurduğu klasörler (.git, node_modules) siz özellikle istemedikçe atlanır. Metin olmayan dosyalar her zaman atlanır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ayarlar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Scribe ayarları",
+          "body": [
+            "Dosya → Ayarlar, program Ayarları'nın Scribe bölümünü açar.",
+            {
+              "points": [
+                "Düzenleyici: eşit genişlikli veya programın yazı tipi, boyutu, satır kaydırma, satır numaraları ve araç sonucunun uygulanmadan önce gösterilip gösterilmeyeceği.",
+                "Yeni metin: satır sonu biçimi ve dosyanın bayt sırası işaretiyle (BOM) başlayıp başlamayacağı.",
+                "İstatistikler: okuma, sesli söyleme, yazma ve elle yazma hızları; bir sayfadaki sözcük sayısı.",
+                "Scribe komutlarının klavye kısayolları."
+              ]
+            },
+            "Her ayarın, programın varsayılan değerine döndüren bir düğmesi vardır."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Scribe hakkında",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Scribe hakkında",
+          "body": [
+            "Scribe, Syntelab Creative'in metin uygulamasıdır: araçları metnin yanında bulunan bir düzenleyici. Araçların uygulamadan önce ne yapacağını gösterir; listeleri temizleyip yeniden sıralar; metinde veya klasörün tamamında bulup değiştirir; iki metni karşılaştırır; metnin içeriğini analiz eder; dolgu metni ve uydurma veriler oluşturur; sık yaptığınız işlemleri tarif olarak saklayıp yeniden çalıştırır.",
+            "Her şey bu bilgisayarda yapılır. Metinlerin boyutu veya sayısı için belirlenmiş bir sınır yoktur; sınırlar bilgisayarın belleği ve bugünkü teknolojinin yapabilecekleridir.",
+            "Uygulama yenidir. Metinlerinizle ilgili eksik kaldığı noktaları Yardım → Geri bildirim üzerinden bize iletin; geliştireceğimiz konuları böyle belirliyoruz."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Scribe hangi teknolojilerle oluşturuldu",
+          "body": [
+            {
+              "points": [
+                "Düzenleyici: CodeMirror.",
+                "Kodlamaları okuma ve yazma: encoding_rs; dosya kodlamasını tahmin etmek için chardetng.",
+                "Bul ve değiştir: programı kilitleyemeyen kalıplar kullanan Rust regex kütüphanesi.",
+                "Her dilde sıralama, her yazı sisteminde sözcük ve cümle bulma: Unicode kütüphanesi ICU4X.",
+                "Metinleri karşılaştırma: similar kütüphanesi.",
+                "Rumence aksan işaretleri: Scribe için hazırlanmış sözcük listesi ve kurallar."
+              ]
+            },
+            "Programın geri kalanıyla ortak bileşenler ‘Syntelab Creative hakkında’ bölümünde açıklanır."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Scribe henüz neleri yapamıyor",
+          "body": [
+            {
+              "points": [
+                "Çok büyük dosyalar sayfa sayfa okunur ve yalnızca tariflerle değiştirilebilir. Elle düzenlemek için dosyanın tamamı belleğe yüklenir.",
+                "Rumence aksan işaretlerini geri ekleme aracı yaygın sözcükleri tanır; nadir sözcükler ve özel adlar yazıldığı gibi bırakılır.",
+                "Yazım denetimi yoktur.",
+                "PDF veya Office belgelerinden metin burada çıkarılamaz; bunları PDF Organizer açar.",
+                "Düzenleyici kod veya Markdown renklendirmesi yapmaz.",
+                "Pencereye bırakılan dosya yeni metin olarak açılır. Program dosyanın konumunu bilmediğinden kaydederken konum sorar."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

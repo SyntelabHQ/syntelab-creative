@@ -1,0 +1,29 @@
+{
+  "id": "electric-current",
+  "category": "energy",
+  "icon": "bolt-lightning",
+  "base": "ampere",
+  "startsWith": ["ampere","milliampere"],
+  "decimals": 3,
+  "groups": [
+    { "id": "si_units", "color": "#2563eb" },
+    { "id": "common", "color": "#ea580c" },
+    { "id": "legacy", "color": "#9333ea" }
+  ],
+  "units": [
+    {"id":"ampere","symbol":"A","group":"si_units","factor":"1","popular":true},
+    {"id":"megaampere","symbol":"MA","group":"si_units","factor":"1000000"},
+    {"id":"kiloampere","symbol":"kA","group":"si_units","factor":"1000","popular":true},
+    {"id":"milliampere","symbol":"mA","group":"si_units","factor":"0.001","popular":true},
+    {"id":"microampere","symbol":"µA","group":"si_units","factor":"0.000001","popular":true},
+    {"id":"nanoampere","symbol":"nA","group":"si_units","factor":"0.000000001"},
+    {"id":"picoampere","symbol":"pA","group":"si_units","factor":"0.000000000001"},
+    {"id":"femtoampere","symbol":"fA","group":"si_units","factor":"0.000000000000001"},
+    {"id":"attoampere","symbol":"aA","group":"si_units","factor":"0.000000000000000001"},
+    {"id":"coulomb-second","symbol":"C/s","group":"common","factor":"1"},
+    {"id":"watt-volt","symbol":"W/V","group":"common","factor":"1"},
+    {"id":"abampere","symbol":"abA","group":"legacy","factor":"10"},
+    {"id":"statampere","symbol":"statA","group":"legacy","factor":"0.000000000333564"},
+    {"id":"biot","symbol":"Bi","group":"legacy","factor":"10"}
+  ]
+}

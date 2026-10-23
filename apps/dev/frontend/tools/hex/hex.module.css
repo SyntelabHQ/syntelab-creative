@@ -1,0 +1,106 @@
+/* The hex viewer: the bytes, and beside them what is picked and what it says. */
+.body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* A box to type in with its button, kept together in the line of options; Enter in the box presses the button. */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.side {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  width: 320px;
+  min-height: 0;
+  overflow-y: auto;
+  border-inline-start: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+  font-size: 13px;
+}
+
+.note {
+  margin: 0;
+  padding: 14px 16px;
+  color: var(--sc-muted);
+}
+
+.facts,
+.readings {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+}
+
+.facts {
+  padding: 10px 16px;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.facts > div,
+.readings > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.facts dt,
+.readings dt {
+  flex: none;
+  color: var(--sc-muted);
+}
+
+.facts dd,
+.readings dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: var(--sc-text);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  text-align: end;
+  user-select: text;
+}
+
+.readings dd[data-none='true'] {
+  color: var(--sc-muted);
+}
+
+.copying,
+.reads {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 16px;
+}
+
+.copying {
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.buttons {
+  display: flex;
+  gap: 6px;
+}
+
+/* In the narrow side, a choice stands under its name, and its options go on to a second line when they must. */
+.copying > div:first-child,
+.reads > div:first-child {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.side [role='radiogroup'] {
+  flex-wrap: wrap;
+}
+
+.side [role='radio'] {
+  white-space: nowrap;
+}

@@ -1,0 +1,207 @@
+{
+  "id": "pdf-organizer",
+  "version": "0.0.0",
+  "apiVersion": 1,
+  "status": "active",
+  "name": {
+    "en": "PDF Organizer"
+  },
+  "description": {
+    "en": "View, organize, edit and sign PDFs.",
+    "hi": "PDF देखें, व्यवस्थित करें, संपादित करें और हस्ताक्षर करें।",
+    "de": "PDFs anzeigen, organisieren, bearbeiten und signieren.",
+    "zh-CN": "查看、整理、编辑和签署 PDF。",
+    "ro": "Vizualizează, organizează, editează și semnează PDF-uri.",
+    "ar": "اعرض ملفات PDF ونظّمها وحرّرها ووقّعها.",
+    "es": "Visualiza, organiza, edita y firma archivos PDF.",
+    "pt": "Visualize, organize, edite e assine ficheiros PDF.",
+    "id": "Lihat, atur, edit, dan tanda tangani file PDF.",
+    "fr": "Visualisez, organisez, modifiez et signez des fichiers PDF.",
+    "ja": "PDF の表示、整理、編集、署名ができます。",
+    "ru": "Просматривайте, упорядочивайте, редактируйте и подписывайте PDF-файлы.",
+    "ko": "PDF를 보고, 정리하고, 편집하고, 서명합니다.",
+    "tr": "PDF dosyalarını görüntüleyin, düzenleyin, değiştirin ve imzalayın.",
+    "it": "Visualizza, organizza, modifica e firma PDF.",
+    "vi": "Xem, sắp xếp, chỉnh sửa và ký PDF.",
+    "pl": "Wyświetlaj, organizuj, edytuj i podpisuj pliki PDF.",
+    "nl": "PDF’s bekijken, ordenen, bewerken en ondertekenen.",
+    "th": "ดู จัดระเบียบ แก้ไข และลงนาม PDF",
+    "uk": "Перегляд, організація, редагування та підписання PDF.",
+    "el": "Προβολή, οργάνωση, επεξεργασία και υπογραφή PDF.",
+    "cs": "Prohlížejte, organizujte, upravujte a podepisujte PDF.",
+    "sv": "Visa, organisera, redigera och signera PDF:er.",
+    "hu": "PDF-ek megtekintése, rendszerezése, szerkesztése és aláírása.",
+    "fa": "مشاهده، سازماندهی، ویرایش و امضای PDFها.",
+    "pt-BR": "Visualize, organize, edite e assine PDFs.",
+    "zh-TW": "查看、整理、編輯並簽署 PDF。",
+    "sq": "Shihni, organizoni, redaktoni dhe nënshkruani PDF-të.",
+    "am": "PDF-ዎችን ይመልከቱ፣ ያደራጁ፣ ያርሙ እና கையርጉ።",
+    "be": "Прагляд, арганізацыя, рэдагаванне і падпіс PDF.",
+    "bn": "PDF দেখুন, গুছিয়ে রাখুন, এডিট করুন এবং সাইন করুন।",
+    "bs": "Pregledajte, organizujte, uređujte i potpisujte PDF-ove.",
+    "bg": "Преглед, организиране, редактиране и подписване на PDF файлове.",
+    "ca": "Visualitzeu, organitzeu, editeu i signeu PDFs.",
+    "hr": "Pregledajte, organizirajte, uređujte i potpisujte PDF-ove.",
+    "da": "Vis, organiser, rediger og underskriv PDF'er.",
+    "et": "PDF-ide vaatamine, organizeerimine, redigeerimine ja allkirjastamine.",
+    "tl": "Tingnan, i-organisa, i-edit at lagdaan ang mga PDF.",
+    "fi": "Tarkastele, järjestele, muokkaa ja allekirjoita PDF-tiedostoja.",
+    "gu": "PDFs જુઓ, વ્યવસ્થિત કરો, એડિટ કરો અને સાઇન કરો.",
+    "ha": "Gani, tsara, gyara da sa hannu a PDF.",
+    "he": "צפייה, ארגון, עריכה וחתימה על קבצי PDF.",
+    "ga": "Amach an PDF, eagraigh, déan eagras agus sínigh iad.",
+    "jv": "Ndeleng, nata, ngowahi lan nanda-tangani PDF.",
+    "kn": "PDFಗಳನ್ನು ವೀಕ್ಷಿಸಿ, ಆಯೋಜಿಸಿ, ಎಡಿಟ್ ಮಾಡಿ ಮತ್ತು ಸಹಿ ಮಾಡಿ.",
+    "lv": "Skatiet, organizējiet, redizējiet un parakstiet PDF.",
+    "lt": "Peržiūrėkite, organizuokite, redaguokite ir pasirašykite PDF failus.",
+    "mk": "Прегледувајте, организирајте, уредувајте и потпишувајте PDF-и.",
+    "ms": "Lihat, susun, edit dan tandatangan PDF.",
+    "ml": "PDF-കൾ കാണുക, ക്രമീകരിക്കുക, എഡിറ്റ് ചെയ്യുക, ഒപ്പിടുക.",
+    "mt": "Ara, organizza, edita u iffirma PDFs.",
+    "my": "PDF များကို ကြည့်ရှုခြင်း၊ စီစဉ်ခြင်း၊ ပြင်ဆင်ခြင်းနှင့် လက်မှတ်ရေးထိုးခြင်းများ ပြုလုပ်ပါ။",
+    "no": "Vis, organiser, rediger og signer PDF-er.",
+    "pa": "PDFs ਦੇਖੋ, ਸੰਗਠਿਤ ਕਰੋ, ਐਡਿਟ ਕਰੋ ਅਤੇ ਸਾਈਨ ਕਰੋ।",
+    "sr": "Pregledajte, organizujte, uređujte i potpisujte PDF-ove.",
+    "sk": "Zobrazujte, organizujte, upravujte a podpisujte PDF.",
+    "sl": "Ogledajte, organizirajte, uredite in podpišite PDF-je.",
+    "sw": "Tazama, pangilia, hariri na saini PDF.",
+    "ta": "PDF-களைப் பார்க்கவும், ஒழுங்கமைக்கவும், திருத்தவும் மற்றும் கையொப்பமிடவும்.",
+    "te": "PDFలను వీక్షించండి, నిర్వహించండి, సవరించండి మరియు సంతకం చేయండి.",
+    "ur": "PDFs دیکھیں، ترتیب دیں، ایڈٹ کریں اور دستخط کریں۔",
+    "yo": "Wo, tò, ṣàtúnṣe, kí ó sì wọlé orúkọ nínú PDF."
+  },
+  "brand": {
+    "color": "#7A1F3D",
+    "icon": "assets/icon.svg"
+  },
+  "defaultLayout": "ribbon",
+  "fileTypes": [
+    ".pdf"
+  ],
+  "locales": "locales/",
+  "contextMenu": [
+    {
+      "id": "combine-to-pdf",
+      "labelKey": "pdf-organizer.contextMenu.combineToPdf",
+      "fileTypes": [
+        ".pdf",
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".bmp",
+        ".gif",
+        ".tif",
+        ".tiff",
+        ".webp"
+      ]
+    },
+    {
+      "id": "convert-to-pdf",
+      "labelKey": "pdf-organizer.contextMenu.convertToPdf",
+      "fileTypes": [
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".bmp",
+        ".gif",
+        ".tif",
+        ".tiff",
+        ".webp",
+        ".txt",
+        ".html",
+        ".htm",
+        ".docx",
+        ".doc",
+        ".rtf",
+        ".odt",
+        ".xlsx",
+        ".xls",
+        ".ods",
+        ".pptx",
+        ".ppt",
+        ".odp",
+        ".epub",
+        ".xps"
+      ]
+    }
+  ],
+  "addons": [
+    {
+      "id": "ocr",
+      "nameKey": "pdf-organizer.addon.ocr",
+      "status": "later"
+    }
+  ],
+  "search": [
+    {
+      "id": "binder",
+      "labelKey": "pdf-organizer.command.newBinder",
+      "params": {
+        "binder": "1"
+      }
+    },
+    {
+      "id": "batch",
+      "labelKey": "pdf-organizer.command.batch",
+      "params": {
+        "batch": "1"
+      }
+    },
+    {
+      "id": "batch-rotate",
+      "labelKey": "pdf-organizer.batch.kind.rotate",
+      "params": {
+        "batch": "rotate"
+      }
+    },
+    {
+      "id": "batch-ocr",
+      "labelKey": "pdf-organizer.batch.kind.ocr",
+      "params": {
+        "batch": "ocr"
+      }
+    },
+    {
+      "id": "batch-header",
+      "labelKey": "pdf-organizer.batch.kind.header",
+      "params": {
+        "batch": "header"
+      }
+    },
+    {
+      "id": "batch-watermark",
+      "labelKey": "pdf-organizer.batch.kind.watermark",
+      "params": {
+        "batch": "watermark"
+      }
+    },
+    {
+      "id": "batch-numbers",
+      "labelKey": "pdf-organizer.batch.kind.numbers",
+      "params": {
+        "batch": "numbers"
+      }
+    },
+    {
+      "id": "batch-compress",
+      "labelKey": "pdf-organizer.batch.kind.compress",
+      "params": {
+        "batch": "compress"
+      }
+    },
+    {
+      "id": "batch-sign",
+      "labelKey": "pdf-organizer.batch.kind.sign",
+      "params": {
+        "batch": "sign"
+      }
+    },
+    {
+      "id": "batch-export",
+      "labelKey": "pdf-organizer.batch.kind.export",
+      "params": {
+        "batch": "export"
+      }
+    }
+  ]
+}

@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Menemukan alat",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Halaman pertama",
+          "body": [
+            "Tab Dev terbuka pada halaman pertama, tempat semua alat tersedia dan dikelompokkan seperti pada menu: Pengodean, Data, Buat, Periksa, dan Jaringan.",
+            {
+              "points": [
+                "Ketik di “Cari alat” untuk mempersempit daftar.",
+                "Sematkan alat agar tetap berada di bagian atas, di bawah Disematkan.",
+                "Alat terbuka di tab yang sama; Berkas → Semua alat akan kembali ke halaman pertama. Di Pengaturan, Anda dapat membuka setiap alat di tab tersendiri dan mengatur tab baru agar membuka alat yang terakhir digunakan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Tempel apa saja",
+          "body": [
+            "Kotak di bagian atas halaman pertama menerima apa pun yang Anda tempel dan mengenali jenisnya: token, sertifikat, JSON, UUID, stempel waktu, jadwal cron, URL, XML atau HTML, SQL, Base64, checksum, tabel, atau YAML.",
+            "Di bawah setiap dugaan jenis tercantum alat yang dapat menanganinya, dengan yang paling sesuai di urutan pertama. Klik salah satunya: alat akan terbuka dengan teks sudah terisi dan siap dijalankan.",
+            {
+              "note": "Teks yang Anda tempel tetap berada di kotak sampai Anda menghapusnya atau menutup tab. Teks itu tidak pernah ditulis ke disk."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Tata letak alat",
+          "body": [
+            "Sebagian besar alat memiliki tata letak yang sama: opsi berjajar di bagian atas, masukan di satu sisi, keluaran di sisi lain, dan status di bagian bawah yang menjelaskan hasilnya.",
+            {
+              "points": [
+                "Hasil dibuat ulang setiap kali masukan atau opsi berubah, lalu ditampilkan di keluaran; tulisan \"Berjalan otomatis\" di baris opsi menandakan hal ini. Hanya teks yang terlalu panjang untuk dijalankan di setiap ketikan, atau berkas yang lebih besar dari 128 MB, yang menunggu tombol Jalankan, yang saat itu akan muncul. Ctrl+Enter menjalankan alat kapan saja.",
+                "Hasil yang bukan teks (gambar hasil dekode Base64, gzip) ditampilkan sebagai pratinjau: gambar ditampilkan apa adanya, selain itu ditampilkan jenis, ukuran, dan byte pertamanya. Salin kemudian menyalinnya sebagai Base64, dan gambar dapat disalin sebagai gambar. Hal yang sama berlaku untuk berkas masukan yang bukan teks.",
+                "Buka berkas, Tempel, dan Hapus berada di atas masukan; Salin dan Simpan ke berkas berada di atas keluaran. Anda juga dapat menyeret berkas ke masukan.",
+                "Kesalahan pada masukan dijelaskan dengan kata-kata, disertai nomor baris dan kolom, serta ditandai di editor.",
+                "Menu Tampilan menempatkan kedua panel berdampingan atau bertumpuk, menampilkan nomor baris dan membungkus baris panjang; garis pemisah antarpanel dapat diseret.",
+                "Opsi yang Anda pilih akan diingat untuk penggunaan berikutnya. Teks yang Anda ketik tidak disimpan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Hapus semua, dan apa yang disimpan",
+          "body": [
+            "Tombol Hapus semua di kanan bawah setiap alat langsung mengosongkan semuanya: masukan, hasil, teks di kotak, serta riwayat yang dapat dibatalkan oleh editor.",
+            "Dev hanya menyimpan pengaturan, alat yang Anda sematkan, nama alat yang terakhir digunakan, dan opsi tiap alat. Apa pun yang Anda ketik, tempel, buka, atau buat di dalam alat tidak ditulis ke disk, log, ataupun daftar terbaru. Data rahasia pun tidak disimpan: kunci, frasa sandi, token, dan header permintaan hanya berada di tab.",
+            "Ada satu hal yang tersimpan sementara di disk: hasil dari berkas, serta hasil yang bukan teks, ditulis ke folder milik program agar dapat ditampilkan lalu disimpan. Masing-masing dihapus saat hasil lain menggantikannya, saat Anda mengosongkan alat dengan Hapus semua atau menutupnya, dan bagaimanapun juga saat Dev dimulai ulang."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Berkas dalam ukuran apa pun",
+          "body": [
+            "Tidak ada batas ukuran berkas. Berkas yang cukup kecil untuk ditampilkan (hingga 16 MB) dimuat ke editor. Berkas yang lebih besar, atau yang bukan teks, tetap berada di disk: bagian awalnya (atau pratinjaunya) ditampilkan, alat membacanya langsung dari lokasi tersebut, dan hasilnya ditampilkan seperti hasil teks. Simpan ke berkas kemudian menyalin hasilnya ke lokasi pilihan Anda.",
+            {
+              "points": [
+                "Untuk proses yang lama, kartu akan menampilkan progres dan tombol Berhenti.",
+                "Berkas teks dengan encoding selain UTF-8 (seperti UTF-16 atau Windows-1252) akan dibaca sebagai teks jika ukurannya cukup kecil untuk ditampilkan, dan encoding-nya akan diberitahukan. Berkas yang disimpan dari Dev menggunakan UTF-8.",
+                "Berkas yang diseret ke alat dibuka seperti dengan Buka berkas. Jika jendela tidak dapat mengetahui lokasinya, berkas dimuat hingga 16 MB, seperti teks yang ditempel."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Banyak berkas dan seluruh folder",
+          "body": [
+            "Jika alat menyediakan pilihan “Proses: Teks / Berkas”, mode Berkas akan menjalankan alat pada banyak berkas sekaligus.",
+            {
+              "steps": [
+                "Tambahkan berkas atau folder (termasuk folder di dalamnya jika opsi tersebut diaktifkan).",
+                "Setiap berkas dibaca sekali saat ditambahkan, lalu Dev memberi tahu apakah alat dapat memprosesnya.",
+                "Pilih tujuan hasil: di samping tiap berkas dengan nama baru, di dalam folder (dengan mempertahankan susunan folder), atau menimpa berkas sumber—pilihan ini meminta konfirmasi sekali lagi. Alat Hash juga dapat menampilkan hasilnya langsung di daftar.",
+                "Klik berkas di daftar untuk melihat hasilnya saja di bawah pilihan, sebelum ada yang ditulis.",
+                "Klik Jalankan. Berkas yang bermasalah tidak menghentikan pemrosesan berkas lain; status setiap berkas ditampilkan."
+              ]
+            },
+            {
+              "note": "Hasil tidak akan menimpa berkas yang sudah ada kecuali Anda memilihnya."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Menu klik kanan Windows Explorer",
+          "body": [
+            "Aktifkan di Pengaturan program, pada bagian Windows Explorer. Semua perintah dikelompokkan di bawah satu baris, “Syntelab Creative”; di Windows 11, perintah ini berada di bawah “Tampilkan opsi lainnya”.",
+            {
+              "points": [
+                "Buka di Syntelab Dev: tersedia untuk jenis berkas yang dapat dibaca alat (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz, dan sejenisnya). Berkas akan terbuka di alat yang sesuai.",
+                "Checksum: tersedia untuk berkas atau folder apa pun. Nilai digest ditampilkan di samping setiap berkas dan tidak ada yang ditulis ke disk.",
+                "Tampilan heksadesimal: tersedia untuk berkas apa pun.",
+                "Bandingkan: dua berkas akan dibuka di kedua panel Diff; dua folder akan dibuka di alat perbandingan folder."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pengodean",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Alat ini mengubah byte menjadi Base64 dan sebaliknya. Pengodean menerima berkas apa pun; hasil dekode berupa byte, ditampilkan jika berupa teks atau disimpan ke berkas jika bukan teks.",
+            {
+              "points": [
+                "Alfabet: standar atau versi untuk URL (- dan _).",
+                "Tambahkan padding dengan =, lalu pilih panjang baris 64, 76, atau jumlah karakter apa pun.",
+                "Dekode menerima kedua alfabet, dengan atau tanpa padding, dan menunjukkan letak karakter yang salah."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Enkode / dekode URL",
+          "body": [
+            "Pengodean persen seperti yang digunakan browser: bagian alamat (semua karakter selain huruf biasa dikodekan), seluruh alamat (karakter khususnya dipertahankan), atau formulir (+ untuk spasi).",
+            "Dekode menunjukkan letak tanda % yang tidak diikuti dua digit heksadesimal."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Entitas HTML",
+          "body": [
+            "Alat ini mengubah karakter yang dicadangkan oleh HTML dan XML (&, <, >, tanda kutip) menjadi entitas, lalu mengembalikan entitas menjadi karakter: berdasarkan nama, angka desimal, atau angka heksadesimal. Nama entitas mengikuti standar HTML.",
+            "“Termasuk semua karakter non-ASCII” mengubah huruf beraksen dan aksara lain menjadi entitas."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Dekoder JWT",
+          "body": [
+            "Uraikan JSON Web Token: header dan payload ditampilkan sebagai JSON, sedangkan klaim dijelaskan dengan kata-kata (penerbit, subjek, audiens, waktu kedaluwarsa, serta status “kedaluwarsa” atau “belum kedaluwarsa”).",
+            "Masukkan rahasia untuk memeriksa tanda tangan dengan rahasia bersama (HS256, HS384, HS512). Tanda tangan dengan kunci privat (RS, ES, PS) tidak diperiksa.",
+            {
+              "note": "Token dan rahasia tetap berada di tab. Tidak ada data yang dikirim ke mana pun untuk mendekode token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Alat ini mengubah teks menjadi string dalam bahasa pemrograman (JSON, JavaScript, C, C++, Java, dan sejenisnya) dengan karakter escape untuk tanda kutip, baris baru, dan karakter lainnya, lalu dapat mengembalikannya menjadi teks."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Kompres dan dekompres berkas gzip dalam ukuran apa pun sambil membacanya. Pilihan tingkat kompresi berkisar dari tercepat hingga ukuran terkecil; hasil teks dapat ditampilkan sebagai Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Basis bilangan",
+          "body": [
+            "Tampilkan bilangan bulat, satu per baris, dalam biner, oktal, desimal, heksadesimal, dan satu basis tambahan pilihan Anda hingga basis 36. Ukuran bilangan tidak dibatasi.",
+            {
+              "points": [
+                "Basis bilangan dikenali dari penulisannya: 0x untuk heksadesimal, 0b untuk biner, 0o untuk oktal, huruf untuk heksadesimal, dan desimal jika tidak ada penanda. Anda juga dapat memilih basis untuk membaca semua bilangan.",
+                "Spasi, garis bawah, dan apostrof di antara digit diabaikan: 1_000_000.",
+                "Bilangan negatif juga ditampilkan dalam representasi komputer (komplemen dua), menggunakan lebar terkecil yang cukup: 8, 16, 32, 64 bit, dan seterusnya."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Pemformat JSON",
+          "body": [
+            "Format, ringkas, dan validasi JSON, lalu tampilkan sebagai pohon. Dokumen berukuran apa pun dibaca sebagai aliran data.",
+            {
+              "points": [
+                "Atur indentasi dengan 2 atau 4 spasi, tab, atau jumlah spasi pilihan Anda.",
+                "Opsi lainnya: urutkan kunci, tampilkan daftar pendek dalam satu baris, atur spasi setelah titik dua, akhir baris, baris baru di bagian akhir, dan ubah karakter non-ASCII menjadi escape Unicode (\\uXXXX).",
+                "Mode pembacaan longgar menerima komentar (// dan /* */) dan koma di akhir, lalu menghasilkan JSON ketat.",
+                "Terapkan perubahan dalam satu langkah: hapus nilai null, nilai kosong, dan sejenisnya.",
+                "Tampilan pohon membuka satu tingkat setiap kali dan dapat mencari teks dalam kunci maupun nilai."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Jalankan kueri JSONPath (RFC 9535) pada dokumen, misalnya $.store.book[?@.price < 10].title. Hasilnya dapat berupa nilai yang ditemukan, jalurnya, atau keduanya.",
+            "Jika kueri salah, alat ini menunjukkan letak kesalahannya."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Validator JSON Schema",
+          "body": [
+            "Periksa dokumen terhadap JSON Schema (draft 4 hingga 2020-12). Masukkan skema di panel di bawah masukan. Setiap bagian yang tidak sesuai akan dicantumkan bersama lokasinya dan aturan yang dilanggar.",
+            "Dalam mode banyak berkas, setiap berkas diperiksa dengan skema yang sama. Referensi $ref ke berkas lain atau alamat tidak akan diikuti."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Generator skema dan JSON ke TypeScript",
+          "body": [
+            "Dari contoh JSON, generator skema membuat JSON Schema yang sesuai. Alat JSON ke TypeScript membuat deklarasi tipe (interface atau type, diekspor atau tidak, readonly atau tidak) dengan nama pilihan Anda."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Ubah YAML menjadi JSON dan sebaliknya. YAML dibaca menggunakan skema intinya, termasuk anchor dan merge; jika ada kesalahan, lokasinya ditampilkan."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Ubah tabel menjadi JSON dan sebaliknya. Pemisah dideteksi dari baris pertama atau dapat dipilih (koma, titik koma, tab, pipa); baris pertama dapat dijadikan header; angka serta nilai true/false dapat dideteksi.",
+            "Tampilan “Tabel” menampilkan CSV dalam baris dan kolom, termasuk untuk berkas berukuran apa pun."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Pemformat XML / HTML",
+          "body": [
+            "Format, ringkas, dan periksa XML serta HTML. XML dibaca secara ketat: tag yang tidak pernah ditutup akan ditandai beserta lokasinya. HTML dibaca dengan toleransi seperti pada browser."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Pemformat SQL",
+          "body": [
+            "Susun pernyataan dengan setiap klausa di baris tersendiri atau jadikan satu baris; tampilkan kata kunci dalam huruf besar, kecil, atau sesuai penulisan. Dialek tidak perlu dipilih dan makna pernyataan tidak diperiksa."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Bandingkan dua teks baris demi baris, dua dokumen JSON berdasarkan isinya, atau dua folder berkas demi berkas. Masukkan teks pertama di panel masukan dan teks kedua di panel bawahnya.",
+            {
+              "points": [
+                "Mode Berdampingan menandai kata yang berubah di dalam baris; mode Terpadu menghasilkan patch seperti keluaran diff -u.",
+                "Abaikan perbedaan huruf besar/kecil, spasi, baris kosong, angka, atau tanda baca.",
+                "Untuk JSON, urutan kunci dan tata letak tidak dianggap sebagai perbedaan; hasil dapat berupa JSON Patch (RFC 6902).",
+                "Folder: tampilkan berkas yang hanya ada di salah satu folder, yang sama, dan yang berbeda. Klik Bandingkan pada baris untuk membuka pasangan berkas sebagai teks."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Pratinjau Markdown",
+          "body": [
+            "Tampilkan hasil Markdown dan sediakan HTML-nya untuk disalin atau disimpan: CommonMark dengan tabel, teks tercoret, daftar tugas, dan catatan kaki.",
+            {
+              "points": [
+                "HTML yang diketik di dalam Markdown ditampilkan sebagai teks dan tidak dijalankan.",
+                "Gambar yang harus diambil dari jaringan tidak diunduh; deskripsi dan alamatnya ditampilkan sebagai pengganti. Gambar yang disertakan langsung dalam teks (data:) akan ditampilkan.",
+                "Tautan yang Anda klik akan dibuka di browser sistem."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Buat",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Buat UUID versi 1, 3, 4, 5, 6, dan 7 (RFC 9562) sebanyak yang Anda minta, dengan tanda hubung, tanpa pemisah, sebagai URN, atau di dalam kurung kurawal. “Uraikan” menunjukkan versi setiap UUID serta waktu atau nama yang terkandung di dalamnya."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "Hitung CRC-32, MD5, SHA-1, SHA-256, SHA-384, dan SHA-512 dari teks atau berkas, sekaligus, dalam format heksadesimal atau Base64. Berkas berukuran apa pun di-hash sambil dibaca.",
+            {
+              "points": [
+                "Cocokkan dengan: tempel checksum atau baris dari berkas .sha256; alat akan memberi tahu apakah nilainya cocok.",
+                "Kunci HMAC: digest dibuat sebagai HMAC menggunakan kunci tersebut.",
+                "Pisahkan per baris: hitung satu digest untuk setiap baris teks.",
+                "Berkas: digest dicantumkan di samping berkasnya; Salin semua menyalinnya dalam format keluaran sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Kata sandi dan rahasia",
+          "body": [
+            "Buat kata sandi dengan jenis karakter pilihan Anda, frasa sandi dari kata-kata, dan byte acak dalam format heksadesimal atau Base64, menggunakan generator angka acak sistem operasi. Tiap hasil menampilkan jumlah bit entropinya. Setelah sesuatu dibuat, mengubah opsi akan membuatnya ulang.",
+            "Frasa sandi dibuat dari daftar panjang kata Electronic Frontier Foundation (7.776 kata bahasa Inggris), dengan peluang yang sama untuk tiap kata; enam kata menghasilkan sekitar 77 bit."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Kunci dan sertifikat",
+          "body": [
+            "Pilih salah satu dari lima opsi di bagian atas:",
+            {
+              "points": [
+                "Kunci baru: RSA, EC P-256 / P-384 / P-521, atau Ed25519. Kunci dibuat dalam semua format yang digunakan program (PKCS #8, format lama, OpenSSH; kunci publik sebagai PEM dan sebagai baris authorized_keys), lalu dikunci dengan frasa sandi jika Anda memberikannya.",
+                "Permintaan sertifikat: CSR untuk kunci baru atau yang Anda tempelkan, lengkap dengan subjek dan nama alternatifnya (SAN).",
+                "Sertifikat bertanda tangan sendiri: sertifikat yang sama ditandatangani dengan kuncinya sendiri untuk jumlah hari yang ditentukan; “Dapat menandatangani sertifikat lain” menjadikannya otoritas sertifikat milik Anda.",
+                "Tandatangani dengan CA Anda: tempel permintaan, sertifikat otoritas, dan kuncinya; hasilnya adalah sertifikat yang ditandatangani beserta sertifikat otoritasnya.",
+                "Baca dan konversi: tempel atau buka format apa pun (PEM, DER, kunci OpenSSH, berkas .pfx atau .p12, terkunci atau tidak). Alat mengenali isinya, memeriksa apakah kuncinya cocok dengan sertifikat, lalu menulis tiap item dalam format lain. Kunci dan sertifikatnya dapat disimpan bersama sebagai berkas .pfx."
+              ]
+            },
+            {
+              "note": "Semua proses dilakukan di komputer ini. Kunci tetap berada di tab sampai Anda memilih Hapus semua; kunci tidak disimpan di tempat lain kecuali Anda menyimpannya."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Periksa",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Penguji regex",
+          "body": [
+            "Uji ekspresi reguler JavaScript pada teks: tampilkan kecocokan beserta grup dan lokasinya, atau teks setelah kecocokan diganti. Flag yang tersedia: g, i, m, s, u, y.",
+            "Pola dijalankan terpisah dari jendela aplikasi dan dihentikan jika berjalan lebih dari 20 detik."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Penjelasan cron",
+          "body": [
+            "Jelaskan arti jadwal dan waktu pelaksanaannya: crontab (lima kolom, enam dengan detik, tujuh dengan tahun), Quartz, AWS EventBridge cron() dan rate(), serta systemd OnCalendar. Masukkan satu jadwal per baris.",
+            {
+              "points": [
+                "Jadwal berikutnya, serta jadwal sebelumnya jika diminta, ditampilkan dalam zona waktu pilihan Anda.",
+                "Hari dalam minggu dinomori mulai dari 0 untuk Minggu, atau mulai dari 1 seperti penomoran Quartz, sesuai pilihan Anda. Baris dengan detik yang juga memiliki tahun, L, W, atau # adalah baris Quartz, dan otomatis dibaca dengan cara Quartz.",
+                "Tampilkan jadwal yang sama dalam format lain untuk disalin atau ditambahkan ke masukan.",
+                "Pembuat jadwal menyusun jadwal dengan memilih tiap kolom; “Ubah melalui pembuat” akan memuat jadwal yang diketik ke pembuat."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Stempel waktu Unix",
+          "body": [
+            "Baca waktu, satu per baris: detik, milidetik, mikrodetik, atau nanodetik sejak 1970, maupun tanggal dalam format umum (ISO 8601, seperti yang ditulis email dan HTTP, seperti yang ditulis Git). Setiap waktu ditampilkan dalam zona waktu pilihan Anda, UTC, dan semua jenis stempel waktu."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Pengurai URL",
+          "body": [
+            "Uraikan URL seperti browser: skema, pengguna, host (termasuk bentuk Unicode jika ditulis dalam punycode), port, jalur, setiap parameter kueri yang telah didekode, dan fragmen."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Dekoder sertifikat",
+          "body": [
+            "Baca sertifikat X.509 dalam format PEM atau DER dan tampilkan seluruh isinya: subjek, penerbit, masa berlaku, nama yang tercakup, kunci, ekstensi, dan sidik jari.",
+            "Alat ini hanya membaca; alat tidak menilai apakah sertifikat dapat dipercaya. Untuk melihat sertifikat yang ditampilkan situs dan memeriksa apakah komputer ini memercayainya, buka Jaringan → Sertifikat situs."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Penampil heksadesimal",
+          "body": [
+            "Tampilkan byte dari berkas berukuran apa pun atau teks yang ditempel: posisi tiap baris, byte-nya, dan byte yang sama sebagai karakter.",
+            {
+              "points": [
+                "Buka posisi dengan format 0x1F4, 1F4h, atau 500.",
+                "Cari byte (DE AD BE EF) atau teks (UTF-8 atau UTF-16 dengan urutan byte apa pun), maju maupun mundur.",
+                "Klik byte untuk melihat nilainya di panel samping sebagai angka dalam berbagai ukuran, dengan kedua urutan byte, sebagai karakter, dan sebagai waktu.",
+                "Pilih dengan menyeret, menekan Shift, atau menggunakan tombol panah; salin pilihan sebagai heksadesimal, kode, Base64, atau teks, atau simpan ke berkas."
+              ]
+            },
+            {
+              "note": "Alat ini hanya menampilkan isi; berkas tidak diubah."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jaringan",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Tujuan alat jaringan",
+          "body": [
+            "Keempat alat ini adalah satu-satunya bagian Dev yang terhubung ke internet, dan hanya menghubungi alamat yang Anda tentukan.",
+            {
+              "points": [
+                "Hanya alamat yang Anda ketik yang dihubungi, itu pun hanya saat Anda menekan tombol. Tidak pernah berjalan di latar belakang.",
+                "Yang dikirim hanyalah teks yang Anda tulis. Permintaan hanya menambahkan User-Agent yang sama untuk semua orang (“Syntelab Creative”), kecuali jika Anda menentukan sendiri.",
+                "Cookie tidak disimpan, informasi tentang Anda atau komputer tidak dikirim, dan teks yang diketik tidak disimpan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Klien HTTP",
+          "body": [
+            "Kirim satu permintaan yang ditulis secara manual: metode, alamat, header (satu per baris dengan format Nama: nilai), dan isi yang diketik atau diambil dari berkas berukuran apa pun.",
+            {
+              "points": [
+                "Respons menampilkan kode status, waktu yang dibutuhkan (total dan hingga byte pertama), ukuran, header, serta isi yang diberi warna sesuai jenisnya dan diformat jika berupa JSON. Isi yang bukan teks (gambar, PDF) ditampilkan apa adanya, dan disimpan persis seperti saat diterima.",
+                "Ikuti pengalihan atau lihat respons pertama apa adanya. Alamat yang dilalui permintaan juga dicantumkan.",
+                "Periksa sertifikat terhadap daftar kepercayaan komputer ini; nonaktifkan pemeriksaan hanya untuk server milik Anda.",
+                "“Kirim, simpan respons ke berkas” menulis isi berukuran apa pun langsung ke disk, dengan progres dan tombol Berhenti.",
+                "“Salin sebagai curl” menyalin permintaan yang sama sebagai perintah."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Pencarian DNS",
+          "body": [
+            "Minta catatan nama dari server nama: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, atau beberapa sekaligus. Jika diberi alamat, alat mencari namanya (PTR).",
+            "Kueri dikirim ke server nama yang dikonfigurasi komputer, server publik (1.1.1.1, 8.8.8.8, 9.9.9.9), resolver melalui HTTPS (Cloudflare, Google), atau server yang Anda tentukan."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Pemeriksaan port",
+          "body": [
+            "Periksa apakah port pada host menerima koneksi TCP: satu port, beberapa port, atau rentang hingga seluruh 65.535 port (22, 80, 443, 8000–8100). Tiap port berstatus terbuka, tertutup, atau tidak mendapat respons dalam batas waktu yang Anda tentukan.",
+            {
+              "note": "Uji hanya host milik Anda atau host yang izinnya Anda miliki untuk diuji."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Sertifikat situs",
+          "body": [
+            "Tampilkan sertifikat yang diberikan situs saat koneksi aman dibuat: pemilik sertifikat, penandatangan, sisa masa berlaku dalam hari, status kepercayaan komputer ini beserta alasannya, versi TLS, dan cipher. Alat ini hanya melakukan handshake; tidak ada permintaan yang dikirim.",
+            {
+              "points": [
+                "Masukkan example.com, example.com:8443, atau alamat web.",
+                "Server email dan FTP memulai koneksi tanpa enkripsi lalu diminta beralih ke TLS (STARTTLS); pilih portnya (25, 587, 143, 110, 21) atau tentukan secara manual.",
+                "“Semua” menampilkan seluruh informasi sertifikat; “PEM” menyediakan sertifikat untuk disalin atau disimpan."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pengaturan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Pengaturan Dev",
+          "body": [
+            "Buka Berkas → Pengaturan untuk membuka bagian Dev di Pengaturan program.",
+            {
+              "points": [
+                "Buka tiap alat di tab tersendiri atau di tab tempat alat itu dipilih.",
+                "Atur tab baru agar membuka alat yang terakhir digunakan atau halaman pertama.",
+                "Pulihkan opsi semua alat dan pin ke pengaturan awal program."
+              ]
+            },
+            "Menu klik kanan Windows Explorer, bahasa, tema, dan tombol pintasan berada di Pengaturan program secara keseluruhan."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tentang Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tentang Dev",
+          "body": [
+            "Dev adalah aplikasi Syntelab Creative untuk pengembang: alat untuk mengodekan dan mendekode, memformat dan memeriksa, mengubah data dari satu bentuk ke bentuk lain, serta menguraikan data yang sulit dibaca.",
+            "Semua proses dilakukan di komputer ini. Apa pun yang Anda ketik, tempel, atau buka di alat tidak disimpan maupun dikirim ke mana pun. Ukuran dan jumlah berkas tidak dibatasi; batasnya hanya memori dan kapasitas disk komputer.",
+            "Aplikasi ini masih baru dan terus dikembangkan. Jika ada kekurangan yang menghambat pekerjaan Anda, sampaikan melalui Bantuan → Masukan."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Teknologi yang digunakan Dev",
+          "body": [
+            {
+              "points": [
+                "Editor: CodeMirror, https://codemirror.net . Lisensi MIT. Copyright (C) 2018-2021 oleh Marijn Haverbeke dan kontributor lainnya.",
+                "Pembacaan dan pewarnaan JSON di editor: @codemirror/lang-json, https://github.com/codemirror/lang-json , bersama @codemirror/language dan @lezer/highlight. Lisensi MIT. Copyright (C) 2018-2021 oleh Marijn Haverbeke dan kontributor lainnya.",
+                "Pembacaan dan pewarnaan YAML, XML, HTML, dan SQL di editor: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (bersama @codemirror/lang-css dan @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Lisensi MIT. Copyright (C) 2018-2024 oleh Marijn Haverbeke dan kontributor lainnya.",
+                "Pemeriksaan dokumen terhadap JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Lisensi MIT. Copyright (c) 2020-2026 Dmitry Dygalo. Dibangun tanpa bagian jaringannya: Dev tidak pernah mengambil skema dari internet.",
+                "Pola untuk JSONPath (pencocokan dan pencarian): regex, https://github.com/rust-lang/regex . Lisensi MIT atau Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "Pembacaan YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Lisensi MIT atau Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Penulisan YAML dilakukan oleh Dev sendiri.",
+                "Perbandingan dua teks (Diff): similar, https://github.com/mitsuhiko/similar . Lisensi Apache-2.0. Penulis: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Lisensi MIT atau Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Digest untuk alat Hash dan tanda tangan token: sha2, sha1, dan md-5, https://github.com/RustCrypto/hashes . Lisensi MIT atau Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, dan para pengembang RustCrypto.",
+                "Tanggal, waktu, dan zona waktu (Stempel waktu Unix, Penjelasan cron): jiff, https://github.com/BurntSushi/jiff , dengan zona waktu dari basis data IANA. Lisensi Unlicense atau MIT. Copyright (c) 2015 Andrew Gallant.",
+                "Penguraian URL: url dan idna, https://github.com/servo/rust-url . Lisensi MIT atau Apache-2.0. Copyright (c) 2013-2025 para pengembang rust-url.",
+                "Pembacaan sertifikat X.509: x509-parser, https://github.com/rusticata/x509-parser . Lisensi MIT atau Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "Penguji regex menjalankan ekspresi reguler JavaScript menggunakan mesin WebView yang dipakai program (Microsoft Edge WebView2 di Windows); tidak ada pustaka tambahan.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Lisensi MIT atau Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton, dan kontributor.",
+                "UUID: uuid, https://github.com/uuid-rs/uuid . Lisensi Apache-2.0 atau MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Byte acak untuk kata sandi, rahasia, dan UUID dari sistem operasi: getrandom, https://github.com/rust-random/getrandom . Lisensi MIT atau Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Kunci dan tanda tangan RSA: rsa, https://github.com/RustCrypto/RSA , bersama num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Lisensi MIT atau Apache-2.0. Copyright (c) RustCrypto Developers dan dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Kunci dan tanda tangan kurva NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , bersama ecdsa, elliptic-curve, dan crypto-bigint yang dibutuhkannya. Lisensi Apache-2.0 atau MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Kunci dan tanda tangan Ed25519: ed25519-dalek dan curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Lisensi BSD 3-Clause. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft dan Henry de Valence. Hak cipta dilindungi.",
+                "Format kunci, permintaan, dan sertifikat (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER, dan PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Lisensi Apache-2.0 atau MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Berkas kunci OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , bersama bcrypt-pbkdf, aes, ctr, chacha20, serta cipher dan hash RustCrypto lain yang diperlukan untuk mengunci kunci ( https://github.com/RustCrypto ). Lisensi Apache-2.0 atau MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Berkas PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , bersama pkcs12, cms, des, rc2, cbc, hmac, pbkdf2, dan scrypt dari RustCrypto yang dibutuhkannya. Lisensi MIT atau Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Sumber angka acak untuk pembuatan kunci, diambil dari sistem operasi: rand_core, https://github.com/rust-random/rand . Lisensi MIT atau Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "Klien HTTP: ureq, https://github.com/algesten/ureq . Lisensi MIT atau Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Koneksi aman (TLS) untuk klien HTTP dan “Sertifikat situs”: rustls, https://github.com/rustls/rustls , lisensi Apache-2.0, ISC, atau MIT, Copyright (c) 2016 Joseph Birr-Pixton; dengan rustls-webpki, https://github.com/rustls/webpki , lisensi ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , lisensi Apache-2.0 dan ISC; webpki-roots, https://github.com/rustls/webpki-roots , lisensi CDLA-Permissive-2.0.",
+                "Pemeriksaan apakah komputer ini memercayai sertifikat: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Lisensi MIT atau Apache-2.0. Copyright (c) 2022 1Password.",
+                "Pembacaan Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Lisensi MIT. Copyright 2015 Google Inc. All rights reserved.",
+                "Pembacaan berkas dengan encoding selain UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , lisensi Apache-2.0 atau MIT (dengan BSD-3-Clause untuk datanya), Copyright Mozilla Foundation; serta chardetng, https://github.com/hsivonen/chardetng , lisensi Apache-2.0 atau MIT, Copyright Mozilla Foundation.",
+                "Kata untuk frasa sandi: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , oleh Electronic Frontier Foundation, digunakan berdasarkan lisensi Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Daftar digunakan apa adanya.",
+                "Untuk membuka kunci OpenSSL yang dikunci dengan metode lama: aes, cbc, dan des dari RustCrypto, https://github.com/RustCrypto . Lisensi MIT atau Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "Dibuat khusus untuk Dev tanpa pustaka tambahan: pencarian DNS (kueri dan respons mengikuti format RFC 1035) serta pemeriksaan port.",
+                "Dibuat khusus untuk Dev tanpa pustaka tambahan: pembacaan dan penulisan JSON sebagai aliran data, JSONPath (RFC 9535), Base64, pengodean persen, referensi karakter HTML (nama mengikuti standar HTML, https://html.spec.whatwg.org ), escape string, pembacaan JSON Web Token, penulisan YAML, konversi CSV dua arah, pembacaan jadwal cron, serta pemformat XML/HTML dan SQL."
+              ]
+            },
+            "Komponen yang digunakan bersama bagian lain program dijelaskan di “Tentang Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Hal yang belum dapat dilakukan Dev",
+          "body": [
+            {
+              "points": [
+                "Tanda tangan token hanya diperiksa jika dibuat menggunakan rahasia bersama (HS256, HS384, HS512).",
+                "Validator JSON Schema menjelaskan ketidaksesuaian dalam bahasa Inggris, sesuai kemampuan pustakanya, dan tidak mengikuti $ref ke berkas atau alamat lain.",
+                "Pemformat SQL tidak meminta dialek dan tidak memeriksa arti pernyataan; alat hanya mendeteksi string atau komentar yang tidak ditutup.",
+                "YAML serta konversi JSON ke YAML atau CSV disimpan seluruhnya di memori selama diproses. Konversi CSV ke JSON, XML, HTML, dan SQL dilakukan sambil membaca, tanpa batas ukuran berkas.",
+                "Tampilan tabel CSV bersifat hanya baca: Anda belum dapat mengetik atau menyalin data dari tabel tersebut.",
+                "Diff menyimpan 16 byte untuk setiap baris dari kedua berkas, bukan keseluruhan berkas. Dua dokumen JSON disimpan utuh karena keduanya ditulis ulang sebelum dibandingkan.",
+                "Rentang baris yang tidak memiliki satu pun baris yang muncul tepat satu kali di kedua sisi dibandingkan sebaik mungkin dalam satu detik; perbedaan yang ditampilkan akurat, tetapi belum tentu jumlahnya paling sedikit.",
+                "Diff tidak membandingkan akhiran baris (CRLF atau LF).",
+                "Dua folder dibandingkan berdasarkan byte berkasnya; pasangan berkas ditentukan dari nama yang harus sama persis, termasuk hurufnya.",
+                "Hasil dari alat Periksa ditampilkan sebagai JSON dengan nama berbahasa Inggris.",
+                "Penguji regex menjalankan ekspresi reguler JavaScript, bukan PCRE atau regex Rust. Alat bekerja pada teks yang dapat ditampilkan, bukan berkas di disk; pola yang berjalan lebih dari 20 detik akan dihentikan.",
+                "Dekoder sertifikat membaca sertifikat, tetapi tidak memeriksa apakah sertifikat tepercaya: rantai, tanda tangan, dan status pencabutannya tidak diperiksa.",
+                "Berkas teks dengan encoding selain UTF-8 hanya dibaca jika cukup kecil untuk ditampilkan; berkas yang lebih besar dan diproses langsung dari disk harus menggunakan UTF-8.",
+                "Berkas yang diseret ke alat dimuat hingga 16 MB. Jendela aplikasi tidak mengetahui lokasi berkas yang diseret di disk, jadi berkas yang lebih besar harus dibuka dengan perintah Buka berkas.",
+                "Frasa sandi hanya dibuat dari kata-kata bahasa Inggris.",
+                "Penjelasan cron: pembuat jadwal menyusun format crontab (lima kolom atau enam jika menyertakan detik); jadwal yang menggunakan L, W, #, atau ? tidak dapat dimuat ke pembuat. Waktu untuk AWS rate() tidak dapat ditentukan karena dihitung sejak aturan dibuat. systemd dapat membaca peristiwa kalender umum, tetapi bukan pecahan detik atau daftar hari yang dihitung dari akhir bulan.",
+                "Penampil heksadesimal hanya menampilkan isi; berkas tidak diubah. Kolom teks menampilkan ASCII atau karakter Eropa Barat, bukan aksara lain. Pencarian hanya mendukung byte atau teks, bukan pola.",
+                "Kunci dan sertifikat: kunci yang didukung adalah RSA, kurva P-256, P-384, P-521, dan Ed25519; format lain (DSA, secp256k1, X25519) tidak dibaca. Kunci OpenSSL dengan enkripsi lama dapat dibuka jika cipher-nya AES atau 3DES. Berkas .pfx menampung satu kunci beserta sertifikatnya. Pembuatan kunci RSA yang sangat besar membutuhkan waktu dan tidak dapat dihentikan di tengah proses. Pustaka pembuat kunci RSA memiliki kelemahan yang diketahui, yang dapat dimanfaatkan penyerang dengan mengukur waktu banyak tanda tangan melalui jaringan (RUSTSEC-2023-0071). Di sini kunci dibuat dan ditulis di komputer Anda, dan tidak ada tanda tangan yang dibuat untuk pihak lain.",
+                "Klien HTTP: mendukung HTTP/1.1 (bukan HTTP/2 atau 3); cookie tidak disimpan antarpermintaan; formulir multipart tidak dibuat otomatis; respons yang lebih besar dari 16 MB atau bukan teks disimpan ke berkas dengan mengirim ulang permintaan.",
+                "Pencarian DNS menampilkan tanda tangan (DNSSEC), tetapi tidak memeriksanya. Pemeriksaan port hanya mencoba TCP: port UDP yang tidak merespons tidak dapat dibedakan dari port tertutup. Sertifikat situs tidak memeriksa apakah sertifikat telah dicabut.",
+                "Menu klik kanan tersedia untuk Windows Explorer; di Windows 11, perintahnya berada di bawah “Tampilkan opsi lainnya”."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+[package]
+name = "pdf-organizer-backend"
+description = "PDF Organizer: the Rust side of the app."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+# OCR (tesseract), scripting and the other document formats stay off: heavy
+# parts come later as add-ons (docs/decisions/0005).
+# "html" lays out text files and web pages as pages; "system-fonts" lets it
+# use the fonts of the computer for the scripts its own fonts do not have.
+# "epub", "xps" and "cbz" read e-books, XPS documents and comic book archives.
+# "docx-output" writes documents for word processors ("Export").
+mupdf = { version = "0.8", default-features = false, features = [
+    "base14-fonts",
+    "img",
+    "html",
+    "system-fonts",
+    "epub",
+    "xps",
+    "cbz",
+    "docx-output",
+] }
+# Writes the smaller JPEGs of "Compress"; MuPDF reads JPEG but does not write it.
+jpeg-encoder = "0.6"
+serde = { workspace = true }
+# The fingerprints a time stamp is asked for (SHA-256).
+sha2 = "0.10"
+# What a certificate's issuer is asked of it names the issuer by SHA-1 fingerprints, as OCSP does.
+sha1 = "0.10"
+syntelab-office-bridge = { workspace = true }
+syntelab-platform = { workspace = true }
+# Asks a time-stamping authority for a time stamp, when a signature or a document gets one.
+syntelab-net = { workspace = true }
+serde_json = { workspace = true }
+syntelab-app-api = { workspace = true }
+
+[dev-dependencies]
+# The tests look at the colors of drawn pages.
+png = "0.17"

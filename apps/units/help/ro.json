@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Conversia",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Convertoarele",
+          "body": [
+            "Units convertește valori între unități de măsură: o singură valoare, rapid, sau tabele întregi de valori dintr-odată. Totul se calculează pe calculatorul tău.",
+            "Convertoarele sunt în șase meniuri: Esențiale, Mișcare și mecanică, Energie și putere, Științifice, Digital și media și Fizică specializată. Când alegi unul, i se deschide tabelul.",
+            {
+              "points": [
+                "Convertorul se deschide în tabul în care ești. Dacă tabelul are valori, ești întrebat mai întâi: Continuă (valorile se pierd), Deschide în tab nou sau Anulează.",
+                "Setări → Units → „Deschide fiecare convertor într-un tab propriu” deschide fiecare convertor ales într-un tab nou.",
+                "Fișier → Mergi la Start te duce înapoi la prima pagină din Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Conversie rapidă",
+          "body": [
+            "Prima pagină din Units, Conversie rapidă, convertește o valoare dintr-o unitate în alta. Alege un convertor, scrie valoarea în partea „Din” și alege cele două unități: rezultatul apare în partea „În”.",
+            {
+              "points": [
+                "Fiecare parte listează unitățile populare ale convertorului și unitățile tale, cu o căutare peste ele. Tabelul convertorului are toate unitățile.",
+                "Butonul dintre cele două părți inversează cele două unități.",
+                "Semnul de carte de lângă o unitate o fixează: unitățile fixate apar primele în ambele liste și în panoul de unități al tabelului.",
+                "Butonul din rezultat îl copiază; × șterge valoarea.",
+                "„Deschide în tabel” deschide tabelul convertorului."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Cum se citesc și se scriu numerele",
+          "body": [
+            "Poți scrie și lipi numere așa cum se scriu în țări diferite: 1,234.56 și 1.234,56 sunt înțelese amândouă, la fel spațiile și apostrofurile dintre mii și 1.5e-3 pentru o putere a lui zece.",
+            "Un număr care se poate citi în două feluri (1,234: o mie și ceva, sau unu și ceva) este citit așa cum scrie numerele limba programului, iar linia de sub tabel spune acest lucru.",
+            "Un rezultat se scrie cu zecimalele unității în care ajunge, nu cu câte cifre ai scris tu: 5 cm sunt 1,97 in. O valoare diferită de zero arată întotdeauna câteva cifre care spun ceva, deci 1 cm este 0,00001 km și niciodată 0,000 km.",
+            "Valorile prea mari sau prea mici ca să fie citite dintr-o privire se scriu cu o putere a lui zece, ca 1,6 × 10⁻³⁵. Vizualizare → Valori extreme scrise întreg le scrie cu toate zerourile.",
+            "Acolo unde o unitate nu are o astfel de valoare (o presiune acustică zero nu are decibeli), celula arată o liniuță."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabelul",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Rânduri și coloane",
+          "body": [
+            "Fiecare coloană este o unitate și fiecare rând o valoare. Celula în care scrii conduce rândul: celelalte coloane arată aceeași valoare în unitățile lor. Celula scrisă apare îngroșată.",
+            "Ce nu este număr se păstrează și apare cu roșu; rândul lui nu convertește nimic până îl corectezi.",
+            {
+              "points": [
+                "Dublu clic pe o celulă, sau pur și simplu începe să scrii, ca să editezi. Enter coboară, Tab merge la dreapta; săgețile mută selecția; Escape lasă celula cum era.",
+                "Clic pe colț (#) selectează tot tabelul, pe un număr de rând selectează rândul, pe un titlu selectează coloana. Shift+clic selectează un interval, Ctrl+clic adaugă celule, iar tragerea cu mouse-ul selectează și ea.",
+                "Home și End duc la prima și la ultima coloană a rândului; Ctrl+Home la prima celulă a tabelului, Ctrl+End la ultima. Ctrl cu o săgeată duce la marginea tabelului: primul sau ultimul rând, prima sau ultima coloană. Page Up și Page Down mută cu un ecran. Cu Shift, fiecare dintre ele întinde selecția.",
+                "O selecție de mai multe celule are conturul pe exteriorul ei; celula în care se scrie rămâne neumbrită în interior.",
+                "Delete golește rândurile selectate.",
+                "Dacă scrii în ultimul rând, se adaugă un rând. Un tabel nu are un număr maxim de rânduri: este atât de lung cât permite memoria calculatorului tău (un rând ocupă 16 octeți, deci 100 de milioane de rânduri ocupă aproximativ 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Coloanele și panoul de unități",
+          "body": [
+            "Panoul de lângă tabel listează unitățile convertorului. Sus sunt unitățile din tabel: clic pe una îi scoate coloana. Sub ele, toate unitățile: caută după nume sau simbol, filtrează după grup sau după „Populare” și dă clic pe o unitate ca să o adaugi drept coloană.",
+            "Semnul de carte de lângă o unitate o fixează ca favorită: apare prima în listă și este prima în Conversie rapidă.",
+            {
+              "points": [
+                "Coloanele împart egal lățimea tabelului până când titlurile nu mai încap; atunci tabelul se derulează pe orizontală.",
+                "Trage de marginea unui titlu ca să schimbi lățimea coloanei; dublu clic pe margine potrivește coloana după cea mai lungă valoare. Se poate trage și coloana numerelor de rând.",
+                "Butonul ⋮ al unei coloane: mut-o la stânga sau la dreapta, fixeaz-o la marginea stângă sau dreaptă, schimbă-i precizia sau scoate-o.",
+                "Precizia unei coloane schimbă doar acea coloană. „Folosește pentru această unitate peste tot” o face precizia unității, în toate tabelele și în Conversie rapidă.",
+                "Butonul cu două săgeți de lângă Anulează și Refă potrivește coloanele în tabel: lățimile trase sau potrivite de tine dispar, iar coloanele împart din nou lățimea tabelului.",
+                "Cele două părți de sus ale panoului, unitățile din tabel și „Adaugă unități” (căutarea și filtrele), se pliază cu un clic pe numele lor, ca lista să aibă mai mult loc."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Anulare, copiere, lipire, import și export",
+          "body": [
+            "Bara de deasupra tabelului ține uneltele lui.",
+            {
+              "points": [
+                "Anulează și Refă (Ctrl+Z, Ctrl+Y) trec prin fiecare modificare a tabelului. O lipire sau un import este un singur pas.",
+                "Copiază (Ctrl+C) copiază tot tabelul sau ce este selectat, așa cum îl citește un program de calcul tabelar. „Transpus” face din rânduri coloane.",
+                "Lipește (Ctrl+V) pune rândurile copiate în tabel de la celula activă în jos. Dacă primul rând are titluri de unități, coloanele se potrivesc după ele, iar unitățile care nu sunt încă în tabel se adaugă.",
+                "Importă citește un registru Excel, un fișier CSV sau TSV în locul a ceea ce ține tabelul. „Găsește singur formatul” recunoaște felul fișierului.",
+                "Exportă scrie tabelul ca Excel, CSV, TSV sau JSON. Când separatorul zecimal este virgula, CSV se scrie cu punct și virgulă, cum se așteaptă programele de calcul tabelar. O foaie Excel ține 1.048.576 de rânduri: un tabel mai lung continuă pe foile următoare ale aceluiași registru, sub aceleași titluri.",
+                "Radiera golește rândurile selectate; coșul golește tot tabelul."
+              ]
+            },
+            "Un rând ține o singură valoare. Dintr-un rând lipit sau importat care are mai multe valori se ia prima, iar celelalte se calculează din ea.",
+            "Foarte multe rânduri durează un timp la lipire, import, export sau copiere. Peste tabel apare atunci o casetă care arată cât s-a făcut, în procente și în rânduri, cu un buton Oprește. O lipire sau un import oprit lasă tabelul cum era; un export oprit nu scrie niciun fișier.",
+            "Când calculatorul nu mai are memorie pentru rânduri, nu se schimbă nimic, iar linia de sub tabel spune de câtă memorie era nevoie. Când rândurile încap, dar tabelul de dinainte nu mai poate fi păstrat lângă ele, ești întrebat dacă vrei să continui fără anulare: acea schimbare și cele dinaintea ei nu mai pot fi apoi anulate. Înainte de a întreba, se renunță la cei mai vechi pași de anulare ca să se facă loc.",
+            "Opțiunile tabelului (rotița): ce scrie în titlul unei coloane (nume și simbol, nume sau simbol), dacă se includ titlurile și numerele de rând la copiere și export, „Pornește acest convertor cu aceste coloane” și „Resetează tabelul”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Convertoare speciale",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valută",
+          "body": [
+            "Valutele nu au un factor fix: valoarea lor se schimbă. Convertorul de valută își citește cursurile de la două servicii gratuite cât timp îl folosești, și numai atunci.",
+            {
+              "points": [
+                "Valutele țărilor: Rates By Exchange Rate API, https://www.exchangerate-api.com . Se schimbă o dată pe zi la sursă și nu se citesc mai des de atât.",
+                "Criptomonede: Powered by CoinGecko, https://www.coingecko.com . Se citesc când deschizi convertorul sau revii la el și cele pe care le are sunt mai vechi de un sfert de oră, și când apeși Reîmprospătează; niciodată pe un cronometru."
+              ]
+            },
+            "Se cer doar cursurile. Nu se trimite nimic despre tine și niciodată sumele pe care le convertești.",
+            "Linia de sub tabel, și cea de sub rezultatul din Conversie rapidă, spune de când sunt cursurile. Fără conexiune se folosesc ultimele cursuri, marcate ca vechi. O valută pentru care serviciile nu dau curs arată o liniuță.",
+            "Setări → Units → Valută: „Citește cursurile din rețea” se poate opri, iar convertorul folosește atunci ultimele cursuri păstrate. „Numește sursele lângă cursuri” arată sau ascunde numele celor două servicii pe acea linie.",
+            "Cursurile sunt informative. Nu te baza pe ele pentru o tranzacție."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Baze de numerație",
+          "body": [
+            "Unitățile acestui convertor sunt feluri de a scrie un număr întreg: baze de la 2 la 64, cifre romane, baza 60 cu două puncte (1:30:15), zecimal codificat binar și cod Gray. Valorile lor sunt text: scrie FF sub hexazecimal și celelalte coloane arată 255, 11111111 și așa mai departe.",
+            "Cifrele romane merg de la I la MMMCMXCIX (de la 1 la 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Unități care nu sunt un simplu factor",
+          "body": [
+            "Cele mai multe unități sunt un factor al alteia. Unele nu sunt, iar Units le convertește așa cum sunt definite: temperaturile cu decalajele lor; consumul de combustibil (litri la 100 km față de mile pe galon); lungimea de undă față de frecvență; conductanța față de rezistență; gradele Baumé, API, Brix și Plato față de densitate; decibelii față de presiunea și intensitatea acustică; panta în procente față de unghiul ei.",
+            "O temperatură și o diferență de temperatură nu sunt același lucru: 100 °C sunt 212 °F, dar o diferență de 100 °C este o diferență de 180 °F. Unitățile din grupul „Diferență (Δ)” se convertesc între ele; între ele și scările de temperatură celula arată o liniuță."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Unitățile tale",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Crearea unei unități",
+          "body": [
+            "Poți adăuga unități proprii în orice convertor. În panoul de unități alege „Unitate nouă”, dă-i un nume și un simbol și exprim-o printr-o unitate care există.",
+            {
+              "points": [
+                "Un factor: „1 pas = 0,75 m”. Pentru o scară care nu pornește de la zero, și ce se adaugă după înmulțire.",
+                "O formulă: cum devine valoarea cealaltă unitate, cu x pentru valoare, și formula pentru drumul înapoi. De exemplu x * 9 / 5 + 32 și (x - 32) * 5 / 9."
+              ]
+            },
+            "Ce scrii se verifică pe măsură ce scrii, iar cât face o unitate de-a ta se arată înainte să o păstrezi. O formulă poate folosi + − × ÷ ^, paranteze, x, pi, e și funcțiile sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos și atan. Este calculată, niciodată rulată ca program.",
+            "Unitățile tale apar sub „Ale mele” în panou, de unde se pot modifica și șterge. O unitate de-a ta poate fi exprimată printr-o altă unitate de-a ta; ștergerea unei unități le șterge și pe cele exprimate prin ea.",
+            "Setări → Units listează unitățile tale din toate convertoarele și le exportă și importă ca text pe care îl poți păstra sau muta pe alt calculator."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Setări",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Setările Units",
+          "body": [
+            "Fișier → Deschide Setările deschide setările Units; la fel opțiunile tabelului (rotița din bara lui).",
+            {
+              "points": [
+                "Deschide fiecare convertor într-un tab propriu sau în tabul în care ești.",
+                "Valorile extreme scrise complet, ce se scrie între mii (10000,000, 10 000,000 sau 10.000,000; nimic, dacă nu alegi altfel) și numerele de rând.",
+                "Valută: dacă se citesc cursurile din rețea și dacă serviciile sunt numite lângă ele.",
+                "Precizia unităților: alege un convertor (sau „Unitățile schimbate de tine”), caută o unitate și setează-i zecimalele cu − și +; săgeata o duce înapoi la precizia proprie a unității. „Folosește pentru această unitate peste tot” din meniul unei coloane setează aceeași valoare.",
+                "Unitățile cu care pornește un tabel: convertoarele cărora le-ai ales primele coloane, fiecare cu drumul înapoi la cele din program.",
+                "Unitățile tale."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Despre Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Despre Units",
+          "body": [
+            "Units este aplicația de conversii din Syntelab Creative: 38 de convertoare cu peste 1.500 de unități, de la lungime și temperatură până la valute și baze de numerație. O valoare scrisă o singură dată este arătată în toate unitățile pe care le ceri, într-un tabel care ține o valoare sau milioane.",
+            "Numerele se calculează exact, ca fracții, și se rotunjesc doar când sunt scrise. Totul se face pe acest calculator; doar cursurile valutare se citesc din rețea, iar asta se poate opri.",
+            "Aplicația este nouă. Dacă nu-ți ajunge pentru ce lucrezi, spune-ne prin Ajutor → Feedback: așa știm la ce să lucrăm."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Câte rânduri ține un tabel: ce am măsurat",
+          "body": [
+            "Un tabel nu are o limită fixă de rânduri: este atât de lung cât permite memoria calculatorului tău. Un rând ocupă 16 octeți, deci 100 de milioane de rânduri ocupă aproximativ 1,5 GB. Când memoria se termină, tabelul rămâne cum era, iar programul spune de câtă era nevoie.",
+            "Am măsurat cu 50.000.000 de rânduri, fiecare un număr pe o coloană, în varianta optimizată a programului:",
+            {
+              "points": [
+                "Lipirea a 50.000.000 de rânduri: aproximativ 7 secunde.",
+                "Importul lor dintr-un fișier CSV: 12 secunde.",
+                "Exportul lor într-un fișier CSV, cu a doua coloană convertită: aproximativ 3,5 minute.",
+                "Exportul lor în Excel, pe 48 de foi: 4,3 minute."
+              ]
+            },
+            "Scrierea durează mai mult decât citirea pentru că fiecare celulă scrisă este întâi convertită exact.",
+            {
+              "note": "Calculatorul pe care a rulat testul: AMD Ryzen 9 9950X3D (16 nuclee, 32 de fire), 64 GB de memorie, Windows 11 Pro. Octombrie 2026. Pe alt calculator timpii vor fi alții; mărimea unui rând, nu."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Cu ce este construită Units",
+          "body": [
+            {
+              "points": [
+                "Numere exacte: bibliotecile num din Rust (fracții de numere întregi oricât de mari).",
+                "Unitățile, factorii și grupele lor: fișiere de date ale programului, câte unul pentru fiecare convertor.",
+                "Citirea registrelor Excel și OpenDocument: calamine. Scrierea registrelor Excel: rust_xlsxwriter.",
+                "Clipboardul sistemului, pentru copieri și lipiri de foarte multe rânduri: arboard.",
+                "Cursurile valutare: ExchangeRate-API și CoinGecko (vezi „Valută”)."
+              ]
+            },
+            "Ce are în comun cu restul programului este la „Despre Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ce nu poate face încă Units",
+          "body": [
+            {
+              "points": [
+                "Un rând ține o singură valoare: dintr-un rând lipit cu mai multe valori se ia prima.",
+                "Exportul de foarte multe rânduri este lent (vezi ce am măsurat).",
+                "Ce se copiază în clipboard este ținut în memorie ca un singur text înainte de a fi lipit.",
+                "Cursurile valutare sunt atât de proaspete cât le dau cele două surse: o dată pe zi pentru valutele țărilor."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

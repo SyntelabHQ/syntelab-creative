@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Chuyển đổi",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Các bộ chuyển đổi",
+          "body": [
+            "Units chuyển đổi giá trị giữa các đơn vị đo: chuyển nhanh một giá trị hoặc xử lý đồng thời toàn bộ bảng dữ liệu. Mọi phép tính đều thực hiện trên máy tính của bạn.",
+            "Các bộ chuyển đổi nằm trong sáu menu: Cơ bản, Chuyển động và cơ học, Năng lượng và công suất, Khoa học, Kỹ thuật số và đa phương tiện, Vật lý chuyên ngành. Chọn một mục để mở bảng tương ứng.",
+            {
+              "points": [
+                "Bộ chuyển đổi mở trong tab hiện tại. Nếu bảng có dữ liệu, bạn sẽ được hỏi trước: Tiếp tục (xóa dữ liệu), Mở trong tab mới hoặc Hủy.",
+                "Cài đặt → Units → “Mở mỗi bộ chuyển đổi trong tab riêng” sẽ mở mọi bộ chuyển đổi bạn chọn trong tab mới.",
+                "Tệp → Đi tới trang Bắt đầu đưa bạn về trang đầu của Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Chuyển đổi nhanh",
+          "body": [
+            "Trang đầu của Units, Chuyển đổi nhanh, đổi một giá trị từ đơn vị này sang đơn vị khác. Chọn bộ chuyển đổi, nhập giá trị ở phía “Từ” và chọn hai đơn vị; kết quả hiện ở phía “Sang”.",
+            {
+              "points": [
+                "Mỗi bên liệt kê các đơn vị phổ biến của bộ chuyển đổi và đơn vị riêng của bạn; có thể tìm kiếm trong danh sách. Bảng của bộ chuyển đổi có tất cả đơn vị.",
+                "Nút giữa hai bên hoán đổi đơn vị.",
+                "Ghim đơn vị bằng biểu tượng dấu trang; đơn vị đã ghim xuất hiện đầu danh sách và đầu bảng đơn vị.",
+                "Nút ở kết quả sẽ sao chép; × xóa giá trị.",
+                "“Mở trong bảng” mở bảng của bộ chuyển đổi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Cách đọc và viết số",
+          "body": [
+            "Bạn có thể nhập và dán số theo cách viết ở nhiều quốc gia: 1,234.56 và 1.234,56 đều được nhận diện, cũng như dấu cách và dấu nháy đơn để phân tách hàng nghìn, và dạng lũy thừa 1.5e-3.",
+            "Số có thể hiểu theo hai cách (1,234 là một nghìn hoặc một phẩy hai ba bốn) được đọc theo quy ước số của ngôn ngữ chương trình; dòng bên dưới bảng cho biết cách hiểu đó.",
+            "Kết quả được viết theo số chữ số thập phân phù hợp với đơn vị đích, không phải số chữ số bạn nhập: 5 cm = 1,97 in. Giá trị khác 0 luôn hiển thị đủ chữ số có nghĩa, nên 1 cm = 0,00001 km, không bị làm tròn thành 0,000 km.",
+            "Giá trị quá lớn hoặc quá nhỏ để đọc nhanh được viết bằng lũy thừa của mười, như 1,6 × 10⁻³⁵. Xem → Hiển thị đầy đủ giá trị cực lớn và cực nhỏ sẽ hiển thị mọi số 0.",
+            "Nếu đơn vị không có giá trị tương ứng (áp suất âm thanh bằng 0 không có đơn vị decibel), ô sẽ hiển thị dấu gạch ngang."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bảng",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Hàng và cột",
+          "body": [
+            "Mỗi cột là một đơn vị, mỗi dòng là một giá trị. Ô bạn nhập sẽ điều khiển cả dòng: các cột khác hiển thị cùng giá trị theo đơn vị của chúng. Ô đang nhập được in đậm.",
+            "Nội dung không phải số vẫn được giữ và tô đỏ; dòng đó không được chuyển đổi cho đến khi bạn sửa.",
+            {
+              "points": [
+                "Nhấp đúp vào ô hoặc bắt đầu nhập để sửa. Enter di chuyển xuống; Tab sang phải; phím mũi tên di chuyển giữa các ô; Escape khôi phục giá trị ban đầu.",
+                "Nhấp góc (#) để chọn cả bảng, số dòng để chọn dòng, tiêu đề để chọn cột. Shift+nhấp chọn một dải, Ctrl+nhấp thêm ô; cũng có thể kéo để chọn.",
+                "Home và End đến cột đầu/cuối của dòng; Ctrl+Home đến ô đầu tiên của bảng, Ctrl+End đến ô cuối. Ctrl+mũi tên đến mép bảng: dòng đầu/cuối hoặc cột đầu/cuối. Page Up và Page Down cuộn theo màn hình. Giữ Shift để mở rộng vùng chọn.",
+                "Vùng chọn nhiều ô được viền bên ngoài; ô nhập liệu bên trong không tô nền.",
+                "Delete xóa dữ liệu trong các dòng đã chọn.",
+                "Nhập ở dòng cuối sẽ thêm dòng mới. Bảng không giới hạn số dòng ngoài dung lượng bộ nhớ máy tính (mỗi dòng chiếm 16 byte, 100 triệu dòng cần khoảng 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Cột và bảng đơn vị",
+          "body": [
+            "Bảng bên cạnh liệt kê các đơn vị của bộ chuyển đổi. Ở đầu là các đơn vị đang có trong bảng; nhấp vào một đơn vị để xóa cột. Bên dưới là mọi đơn vị: tìm theo tên hoặc ký hiệu, lọc theo nhóm hoặc “Phổ biến”, rồi nhấp để thêm cột.",
+            "Ghim đơn vị bằng biểu tượng dấu trang để đưa lên đầu danh sách và đầu mục Chuyển đổi nhanh.",
+            {
+              "points": [
+                "Các cột chia đều chiều rộng bảng cho đến khi tiêu đề không còn vừa; sau đó có thể cuộn ngang.",
+                "Kéo mép tiêu đề để đổi chiều rộng cột; nhấp đúp vào mép để vừa với giá trị dài nhất. Cũng có thể kéo cột số dòng.",
+                "Nút ⋮ của cột cho phép chuyển trái/phải, ghim vào mép trái/phải, đổi độ chính xác hoặc xóa cột.",
+                "Độ chính xác của cột chỉ ảnh hưởng cột đó. “Dùng độ chính xác này cho đơn vị ở mọi nơi” áp dụng cùng độ chính xác cho đơn vị trong mọi bảng và Chuyển đổi nhanh.",
+                "Nút hai mũi tên cạnh Hoàn tác và Làm lại sẽ vừa các cột theo bảng: mọi chiều rộng đã kéo hoặc chỉnh vừa bị đặt lại và các cột chia đều bảng.",
+                "Có thể thu gọn hai phần đầu bảng (đơn vị trong bảng và “Thêm đơn vị” cùng ô tìm kiếm/bộ lọc) bằng cách nhấp vào tiêu đề để danh sách có thêm chỗ."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Hoàn tác, sao chép, dán, nhập và xuất",
+          "body": [
+            "Thanh phía trên bảng chứa các công cụ.",
+            {
+              "points": [
+                "Hoàn tác và Làm lại (Ctrl+Z, Ctrl+Y) duyệt mọi thay đổi trong bảng. Dán hoặc nhập tệp được tính là một bước.",
+                "Sao chép (Ctrl+C) sao chép toàn bộ bảng hoặc phần chọn theo định dạng bảng tính đọc được. “Đã chuyển vị” đổi dòng thành cột.",
+                "Dán (Ctrl+V) đưa các dòng đã sao chép vào bảng, bắt đầu từ ô hiện hoạt. Nếu dòng đầu là tiêu đề đơn vị, các cột được ghép theo tiêu đề; đơn vị chưa có sẽ được thêm.",
+                "Nhập đọc sổ tính Excel, CSV hoặc TSV thay thế nội dung bảng. “Tự nhận diện định dạng” xác định loại tệp.",
+                "Xuất lưu bảng dưới dạng Excel, CSV, TSV hoặc JSON. Nếu dùng dấu phẩy làm dấu thập phân, CSV sẽ dùng dấu chấm phẩy như bảng tính thường yêu cầu. Một trang tính Excel có tối đa 1.048.576 dòng; bảng dài hơn sẽ tiếp tục ở các trang tính sau trong cùng sổ tính, giữ nguyên tiêu đề.",
+                "Cục tẩy xóa các dòng đã chọn; thùng rác xóa toàn bộ bảng."
+              ]
+            },
+            "Mỗi dòng chỉ chứa một giá trị. Nếu dòng được dán hoặc nhập có nhiều giá trị, giá trị đầu tiên được lấy và các giá trị khác được tính từ đó.",
+            "Dán, nhập, xuất hoặc sao chép nhiều dòng có thể mất thời gian. Khi đó, thẻ phía trên bảng hiển thị tiến độ theo phần trăm và số dòng cùng nút Dừng. Nếu dừng thao tác dán hoặc nhập, bảng được giữ nguyên; nếu dừng xuất thì không tạo tệp.",
+            "Nếu máy tính không còn đủ bộ nhớ cho các dòng, dữ liệu không thay đổi và dòng bên dưới bảng cho biết lượng bộ nhớ cần thiết. Nếu các dòng mới vừa bộ nhớ nhưng không thể giữ cả bảng cũ bên cạnh, chương trình hỏi có tiếp tục mà không thể hoàn tác hay không. Nếu đồng ý, thay đổi đó và các bước trước không thể khôi phục; chương trình sẽ xóa các bước Hoàn tác cũ nhất để giải phóng chỗ trước khi hỏi.",
+            "Tùy chọn bảng (biểu tượng bánh răng): nội dung tiêu đề cột (tên và ký hiệu, chỉ tên hoặc chỉ ký hiệu), có đưa tiêu đề và số dòng vào nội dung sao chép/xuất hay không, “Mở bộ chuyển đổi này với các cột sau” và “Đặt lại bảng”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bộ chuyển đổi đặc biệt",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Tiền tệ",
+          "body": [
+            "Tỷ giá tiền tệ không cố định vì giá trị luôn thay đổi. Bộ chuyển đổi tiền tệ chỉ lấy tỷ giá từ hai dịch vụ miễn phí khi bạn sử dụng.",
+            {
+              "points": [
+                "Tiền tệ quốc gia: Rates By Exchange Rate API, https://www.exchangerate-api.com. Nguồn cập nhật mỗi ngày và ứng dụng không đọc thường xuyên hơn.",
+                "Tiền mã hóa: Powered by CoinGecko, https://www.coingecko.com. Tỷ giá được đọc khi mở bộ chuyển đổi hoặc đưa nó lên trước nếu dữ liệu cũ hơn 15 phút, hoặc khi bạn nhấn Làm mới; không tự động làm mới theo giờ."
+              ]
+            },
+            "Chỉ gửi yêu cầu lấy tỷ giá. Không gửi thông tin về bạn và không gửi số tiền bạn chuyển đổi.",
+            "Dòng bên dưới bảng và kết quả Chuyển đổi nhanh cho biết thời điểm cập nhật tỷ giá. Khi ngoại tuyến, ứng dụng dùng tỷ giá gần nhất đã lưu và đánh dấu là cũ. Tiền tệ không có tỷ giá từ dịch vụ sẽ hiện dấu gạch ngang.",
+            "Cài đặt → Units → Tiền tệ: tắt “Tải tỷ giá từ mạng” để dùng tỷ giá gần nhất đã lưu. “Hiển thị tên nguồn bên cạnh tỷ giá” bật/tắt tên hai dịch vụ trên dòng trạng thái.",
+            "Tỷ giá chỉ dùng để tham khảo. Không dựa vào chúng để thực hiện giao dịch."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Hệ cơ số",
+          "body": [
+            "Đơn vị của bộ chuyển đổi này là cách biểu diễn số nguyên: cơ số từ 2 đến 64, chữ số La Mã, cơ số 60 dùng dấu hai chấm (1:30:15), số thập phân mã hóa nhị phân và mã Gray. Giá trị được xử lý dưới dạng văn bản: nhập FF ở cột thập lục phân thì các cột khác hiển thị 255, 11111111, v.v.",
+            "Số La Mã nằm trong khoảng từ I đến MMMCMXCIX (1 đến 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Đơn vị có quan hệ phi tuyến",
+          "body": [
+            "Phần lớn đơn vị là bội số cố định của nhau, nhưng một số không phải vậy; Units chuyển đổi theo định nghĩa: nhiệt độ có độ lệch; mức tiêu thụ nhiên liệu (lít/100 km và dặm/gallon); bước sóng và tần số; độ dẫn điện và điện trở; độ Baumé, API, Brix và Plato với khối lượng riêng; decibel với áp suất và cường độ âm thanh; độ dốc phần trăm với góc.",
+            "Nhiệt độ và chênh lệch nhiệt độ không giống nhau: 100 °C = 212 °F nhưng chênh lệch 100 °C tương ứng chênh lệch 180 °F. Các đơn vị trong nhóm “Độ chênh lệch (Δ)” chuyển đổi qua lại; giữa nhóm này và các thang nhiệt độ, ô sẽ hiện dấu gạch ngang."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Đơn vị riêng",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Tạo đơn vị",
+          "body": [
+            "Bạn có thể thêm đơn vị riêng vào bất kỳ bộ chuyển đổi nào. Trong bảng đơn vị, chọn “Đơn vị mới”, nhập tên và ký hiệu, rồi xác định đơn vị có sẵn tương ứng.",
+            {
+              "points": [
+                "Hệ số: “1 bước = 0,75 m”. Với thang đo không bắt đầu từ 0, hãy nhập cả độ lệch cần cộng sau khi nhân.",
+                "Công thức: nhập cách chuyển giá trị sang đơn vị kia bằng x để chỉ giá trị, cùng công thức chuyển ngược. Ví dụ: x * 9 / 5 + 32 và (x - 32) * 5 / 9."
+              ]
+            },
+            "Công thức được thử ngay khi bạn nhập và kết quả quy đổi hiện trước khi lưu. Công thức hỗ trợ + − × ÷ ^, dấu ngoặc, x, pi, e và các hàm sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos, atan. Công thức được tính toán, không chạy như chương trình.",
+            "Đơn vị của bạn được liệt kê dưới mục “Của tôi” trong bảng; có thể sửa hoặc xóa. Đơn vị riêng có thể được quy chiếu theo một đơn vị riêng khác; khi xóa đơn vị, các đơn vị dựa vào nó cũng bị xóa.",
+            "Cài đặt → Units liệt kê các đơn vị riêng của mọi bộ chuyển đổi và cho phép xuất/nhập dưới dạng văn bản để lưu hoặc chuyển sang máy tính khác."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cài đặt",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Cài đặt Units",
+          "body": [
+            "Tệp → Mở Cài đặt mở phần cài đặt của Units; cũng có thể mở bằng tùy chọn bảng (biểu tượng bánh răng trên thanh công cụ).",
+            {
+              "points": [
+                "Mở mỗi bộ chuyển đổi trong tab riêng hoặc trong tab hiện tại.",
+                "Hiển thị đầy đủ giá trị cực lớn và cực nhỏ, ký tự giữa các hàng nghìn (10000,000, 10 000,000 hoặc 10.000,000; không có gì, trừ khi bạn chọn khác), và số dòng.",
+                "Tiền tệ: có lấy tỷ giá qua mạng hay không và có hiện tên dịch vụ bên cạnh tỷ giá hay không.",
+                "Độ chính xác của đơn vị: chọn bộ chuyển đổi (hoặc “Các đơn vị bạn đã thay đổi”), tìm đơn vị rồi đặt số chữ số thập phân bằng − và +; mũi tên khôi phục giá trị riêng của đơn vị. “Dùng độ chính xác này cho đơn vị ở mọi nơi” trong menu cột áp dụng cùng giá trị.",
+                "Đơn vị mặc định của bảng: những bộ chuyển đổi có cột đầu tiên do bạn đặt; mỗi bộ chuyển đổi đều có cách khôi phục đơn vị ban đầu.",
+                "Đơn vị riêng."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Giới thiệu Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Giới thiệu Units",
+          "body": [
+            "Units là ứng dụng chuyển đổi của Syntelab Creative: 38 bộ chuyển đổi với hơn 1.500 đơn vị, từ độ dài và nhiệt độ đến tiền tệ và hệ cơ số. Một lần nhập giá trị có thể hiển thị theo mọi đơn vị bạn yêu cầu trong bảng xử lý từ một đến hàng triệu giá trị.",
+            "Các phép tính được thực hiện chính xác dưới dạng phân số và chỉ làm tròn khi hiển thị. Mọi thao tác diễn ra trên máy tính này; chỉ tỷ giá tiền tệ được lấy từ mạng, và có thể tắt tính năng đó.",
+            "Ứng dụng còn mới. Nếu chưa đáp ứng nhu cầu công việc, hãy gửi góp ý qua Trợ giúp → Góp ý để chúng tôi biết cần cải thiện điều gì."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Một bảng chứa được bao nhiêu dòng: kết quả đo",
+          "body": [
+            "Bảng không có giới hạn cố định về số dòng; số dòng phụ thuộc vào bộ nhớ máy tính. Mỗi dòng chiếm 16 byte, vì vậy 100 triệu dòng cần khoảng 1,5 GB. Khi hết bộ nhớ, bảng được giữ nguyên và chương trình cho biết lượng bộ nhớ đã cần.",
+            "Chúng tôi đo hiệu năng với 50.000.000 dòng, mỗi dòng có một giá trị trong một cột, trên bản dựng tối ưu của chương trình:",
+            {
+              "points": [
+                "Dán 50.000.000 dòng: khoảng 7 giây.",
+                "Nhập từ tệp CSV: 12 giây.",
+                "Xuất thành CSV với cột thứ hai được chuyển đổi: khoảng 3,5 phút.",
+                "Xuất thành Excel trên 48 trang tính: 4,3 phút."
+              ]
+            },
+            "Xuất chậm hơn nhập vì mỗi ô cần được chuyển đổi chính xác trước khi ghi.",
+            {
+              "note": "Máy dùng để kiểm tra: AMD Ryzen 9 9950X3D (16 lõi, 32 luồng), RAM 64 GB, Windows 11 Pro. Tháng 10 năm 2026. Thời gian sẽ khác trên máy tính khác; kích thước mỗi dòng thì không."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Units được xây dựng bằng gì",
+          "body": [
+            {
+              "points": [
+                "Số học chính xác: các thư viện num của Rust (phân số với số nguyên có kích thước bất kỳ).",
+                "Đơn vị, hệ số và nhóm: các tệp dữ liệu của chương trình, mỗi bộ chuyển đổi có một tệp.",
+                "Đọc sổ tính Excel và OpenDocument: calamine. Ghi sổ tính Excel: rust_xlsxwriter.",
+                "Bảng nhớ tạm của hệ thống để sao chép và dán số lượng lớn dòng: arboard.",
+                "Tỷ giá tiền tệ: ExchangeRate-API và CoinGecko (xem mục “Tiền tệ”)."
+              ]
+            },
+            "Thông tin về những thành phần được dùng chung với phần còn lại của chương trình có trong mục “Giới thiệu Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Những điều Units chưa làm được",
+          "body": [
+            {
+              "points": [
+                "Tối đa một giá trị trên mỗi dòng: nếu dòng được dán có nhiều giá trị, chỉ giá trị đầu tiên được lấy.",
+                "Xuất số lượng lớn dòng còn chậm (xem số liệu đo).",
+                "Nội dung sao chép được lưu tạm trong bộ nhớ dưới dạng một khối văn bản trước khi dán.",
+                "Tỷ giá tiền tệ cập nhật theo hai nguồn: tiền tệ quốc gia được làm mới mỗi ngày."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

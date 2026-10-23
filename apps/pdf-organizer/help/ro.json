@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Deschidere și citire",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Deschiderea unui document",
+          "body": [
+            "Fișier → Deschide (Ctrl+O) deschide un PDF într-un tab al lui. „Deschide mai multe fișiere deodată” deschide fiecare fișier ales în tabul lui.",
+            "Se deschid și fișiere care nu sunt PDF, ca pagini: imagini (PNG, JPEG, TIFF, WebP și multe altele), fișiere text și web, cărți electronice, XPS și documente Office. Un astfel de document nu este încă salvat nicăieri: „Salvează” întreabă unde.",
+            {
+              "note": "Documentele Office (Word, Excel, PowerPoint, OpenDocument) sunt convertite de Word, Excel sau PowerPoint, ori de LibreOffice, oricare este pe calculator. Fără unul dintre ele nu pot fi deschise."
+            },
+            "Fișierele lăsate peste un tab gol sunt adunate într-un biblioraft; lăsate peste un document, paginile lor îi sunt adăugate.",
+            "Pe Windows, PDF Organizer poate fi aplicația care deschide fișierele PDF când faci dublu clic pe ele: pe pagina sa de start, „Setează ca implicită” deschide setările Windows, unde alegi Syntelab Creative pentru fișierele PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Vizualizarea paginilor",
+          "body": [
+            "Meniul Vizualizare hotărăște cum este arătat documentul; nimic din el nu schimbă fișierul.",
+            {
+              "points": [
+                "Zoom: mărire, micșorare, mărime reală, potrivire la pagină, la lățime, la înălțime. Merge și cu Ctrl și rotița mouse-ului.",
+                "Afișarea paginilor: o pagină sau două alăturate, cu sau fără copertă, și derularea tuturor paginilor ca o singură bandă.",
+                "Ghidaje: rigle și o grilă, în unitatea aleasă în Setări.",
+                "„Arată miniaturile”: paginile mici din lateral. Clic pe una duce la ea; semnele de carte ale documentului sunt în același panou.",
+                "„Mod citire” ascunde uneltele; „Ecran complet” ascunde tot în afară de pagină. Escape iese din amândouă."
+              ]
+            },
+            "Banda de deasupra paginilor (bara rapidă) are numărul paginii, zoomul și butoanele alese în Setări."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Căutarea în text",
+          "body": [
+            "Editare → Caută în document (Ctrl+F): scrie un cuvânt sau o expresie; locurile găsite sunt marcate pe pagini, iar săgețile trec de la unul la următorul.",
+            {
+              "note": "Un document scanat este făcut din imagini de pagini și nu are text de căutat până nu îi este recunoscut textul: vezi „Recunoașterea textului (OCR)”."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Proprietățile documentului",
+          "body": [
+            "Fișier → Proprietățile documentului arată ce spune documentul despre sine: titlu, autor, datele la care a fost făcut și modificat, numărul de pagini, mărimea fișierului."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Salvare, tipărire și trimitere",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Salvează și Salvează ca",
+          "body": [
+            "Nimic din ce faci nu schimbă fișierul de pe disc până nu salvezi. Până atunci, fiecare pas poate fi anulat (Ctrl+Z) și refăcut (Ctrl+Y).",
+            {
+              "points": [
+                "Salvează (Ctrl+S) scrie documentul peste fișierul lui.",
+                "Salvează ca (Ctrl+Shift+S) îl scrie într-un fișier nou, care ia apoi locul tabului; fișierul vechi rămâne cum era."
+              ]
+            },
+            "Dacă alt program are fișierul deschis, nu se poate scrie peste el: programul spune asta și păstrează modificările, ca să le salvezi sub alt nume.",
+            {
+              "note": "Salvarea unui document modificat peste un fișier semnat cu certificat îi scoate semnăturile. Programul întreabă întâi și propune „Salvează ca fișier nou”; întrebarea se poate opri din Setări → Semnături."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Crearea unui PDF",
+          "body": [
+            "Fișier → Creează un PDF face un document nou:",
+            {
+              "points": [
+                "dintr-un fișier sau din mai multe: combinate într-un singur PDF sau câte un PDF pentru fiecare;",
+                "dintr-o pagină web, de la adresa pe care o scrii (pagina este salvată cu browserul instalat pe calculator);",
+                "din ce este în clipboard;",
+                "din pagini goale de mărimea aleasă."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Exportul în alt format",
+          "body": [
+            "Fișier → Exportă scrie documentul în alt format: text Word sau OpenDocument, text simplu, pagină web, XML, imagini ale paginilor (PNG, JPEG, TIFF, SVG) sau PostScript. Pentru imagini alegi rezoluția.",
+            "Documentul rămâne PDF; exportul este un fișier nou.",
+            {
+              "note": "Textul poate fi exportat doar acolo unde documentul are text. La o scanare, recunoaște întâi textul."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Tipărirea",
+          "body": [
+            "Fișier → Tipărește (Ctrl+P) tipărește documentul așa cum este aranjat acum, cu ce ai desenat pe el. Alege paginile, hârtia, dacă foile stau în picioare sau culcate și dacă paginile sunt potrivite pe foaie sau tipărite la mărimea reală; apoi fereastra de tipărire a sistemului cere imprimanta.",
+            "Hârtia, orientarea și scalarea cu care pornește fereastra de tipărire se stabilesc în Setări → Tipărire."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Partajarea",
+          "body": [
+            "Fișier → Partajează predă documentul ferestrei „Partajează” a sistemului: e-mail, un dispozitiv din apropiere și alte aplicații. Documentul este trimis așa cum este acum, cu modificările nesalvate."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organizarea paginilor",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Vederea Organizare",
+          "body": [
+            "Organizare → Organizează paginile arată toate paginile într-o grilă. Nimic nu se schimbă pe disc până nu salvezi.",
+            {
+              "points": [
+                "Selectare: clic pe o pagină; Ctrl+clic adaugă una, Shift+clic ia un șir. „Selectează toate paginile”, „Deselectează tot”, „Selectează paginile impare” și „Selectează paginile pare” sunt în meniu.",
+                "Mutare: trage paginile selectate la locul nou sau folosește „Mută la stânga” și „Mută la dreapta”.",
+                "Rotire: „Selectate: rotește la stânga” și „Selectate: rotește la dreapta” rotesc paginile selectate; „Toate paginile: rotește la stânga” și „Toate paginile: rotește la dreapta” le rotesc pe toate.",
+                "Ștergere: tasta Delete sau „Șterge pagini”. Un document păstrează cel puțin o pagină.",
+                "Copiere, decupare și lipire (Ctrl+C, Ctrl+X, Ctrl+V): paginile pot fi lipite în același document sau în altul deschis în program.",
+                "Dimensiune: glisorul de sus mărește sau micșorează paginile; la fel fac Ctrl + rotița mouse-ului peste pagini și „Mărește” și „Micșorează” (Ctrl+= și Ctrl+-). Dimensiunea este reținută."
+              ]
+            },
+            "Aceleași comenzi merg și fără grilă, pe pagina din față."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Extragerea paginilor și împărțirea unui document",
+          "body": [
+            "Organizare → Extrage pagini scoate paginile selectate ca document nou, în tabul lui, încă nesalvat. Poți cere și ca fiecare pagină să fie scrisă ca fișier separat și poți alege dacă paginile sunt scoase din acest document.",
+            "Organizare → Împarte documentul scrie documentul ca mai multe fișiere mai mici; acest document rămâne cum este.",
+            "Numele documentelor noi urmează modelele din Setări → Numele documentelor noi.",
+            {
+              "note": "Semnăturile făcute cu certificat nu sunt duse în documentele extrase sau împărțite: o semnătură este bună doar pentru fișierul în care a fost făcută."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Inserarea și înlocuirea paginilor",
+          "body": [
+            {
+              "points": [
+                "Organizare → Inserează pagini adaugă paginile altui fișier (PDF, imagine, text, document Office) după pagina selectată sau la sfârșit.",
+                "Organizare → Înlocuiește pagini pune paginile altui fișier în locul celor selectate.",
+                "Inserare → Pagină goală adaugă o pagină goală de mărimea vecinei ei."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Decuparea și redimensionarea paginilor",
+          "body": [
+            "Editare → Decupează paginile taie marginile paginilor, după margini pe care le scrii sau le tragi. Nimic nu este scos din fișier: paginile doar arată mai puțin.",
+            "Editare → Redimensionează paginile pune paginile pe altă mărime de foaie (A4, Letter și altele). Conținutul poate fi scalat ca să încapă sau păstrat la mărimea lui și așezat într-unul din nouă locuri pe foaia nouă.",
+            "Amândouă întreabă pe ce pagini: toate, cele selectate, un interval, impare sau pare."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Combinarea fișierelor",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Biblioraftul",
+          "body": [
+            "Îmbinare → Biblioraft nou deschide un loc în care aduni fișiere ca să le scrii ca un singur PDF.",
+            {
+              "steps": [
+                "Adaugă fișiere cu „Adaugă fișiere” sau lasă-le peste biblioraft. PDF-urile, imaginile, textele și documentele Office pot fi amestecate.",
+                "Trage cardurile în ordinea dorită sau folosește săgețile de pe fiecare card.",
+                "Deschide un card ca să alegi care dintre paginile lui intră.",
+                "„Îmbină fișiere” le scrie, în ordine, ca un singur document nou, în tabul lui."
+              ]
+            },
+            "Fișierele în sine nu sunt modificate.",
+            "Glisorul de sus mărește sau micșorează paginile de pe carduri; la fel fac Ctrl + rotița mouse-ului și „Mărește” și „Micșorează” (Ctrl+= și Ctrl+-). Dimensiunea este reținută."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scris și desenat pe pagini",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Uneltele",
+          "body": [
+            "Uneltele de desen se deschid ca panou lângă pagină, ca grilă de butoane sau ca listă cu nume (se alege din Setări). Cu o unealtă în mână, trage sau dă clic pe pagină; Escape lasă unealta.",
+            {
+              "points": [
+                "Text: clic și scrie. Fontul, mărimea, culoarea, aldin, cursiv și alinierea sunt în panou.",
+                "Imagine: alege o imagine, apoi trage unde vine și cât de mare.",
+                "Forme: dreptunghi, elipsă, linie, săgeată, bifă, cruce, punct.",
+                "Evidențiere: trage peste ce trebuie să iasă în evidență; ce este dedesubt rămâne lizibil."
+              ]
+            },
+            "Cu „Selectează, mută și redimensionează” un semn este luat din nou: îl tragi, îl tragi de colțuri, îl rotești de mâner, îi schimbi culorile din panou sau îl ștergi cu tasta Delete. Semnele pot fi copiate și lipite, și pe alte pagini.",
+            "Tot ce este desenat se scrie în fișier când salvezi."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Modificarea textului și a imaginilor documentului",
+          "body": [
+            "Unealta „Editează textul și imaginile documentului” conturează ce are pagina însăși. Clic pe un rând de text ca să îl rescrii sau pe o imagine ca să o muți, redimensionezi, rotești ori ștergi.",
+            {
+              "note": "Se schimbă câte un rând sau câte o imagine. Paragrafele nu se rearanjează când un rând devine mai lung, iar o imagine aflată peste alta este luată împreună cu ea. Pentru schimbări mari, modifică documentul în programul în care a fost scris."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Ascunderea definitivă a conținutului",
+          "body": [
+            "Alte unelte → Ascunde definitiv scoate definitiv ce nu trebuie citit: trage o casetă neagră peste acel loc, pe orice pagină. La salvare, textul și imaginile de sub casetă sunt scoase din fișier, nu doar acoperite.",
+            {
+              "note": "Salvează documentul sub un nume nou și păstrează originalul într-un loc sigur: ce a fost ascuns definitiv nu mai poate fi adus înapoi."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Filigran",
+          "body": [
+            "Editare → Filigran scrie cuvinte sau pune o imagine pe paginile alese: drept sau înclinat, într-unul din nouă locuri, cât de mare și cât de șters stabilești. Pe fiecare pagină este apoi un semn ca oricare altul și poate fi mutat sau scos."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Numere de pagină, antet și subsol, numere Bates",
+          "body": [
+            {
+              "points": [
+                "Editare → Numere de pagină: formatul (1, 1 / 12, Pagina 1 și altele), locul și paginile care primesc număr.",
+                "Inserare → Antet și subsol: text în oricare din șase locuri. În el, {page} ține locul numărului paginii, {pages} al numărului de pagini, {date} al datei de azi și {file} al numelui documentului.",
+                "Inserare → Numerotare Bates: numere în șir, cu un cuvânt înainte sau după (ABC000123), cum se folosește pentru documentele unui dosar."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Linkuri, semne de carte și fișiere atașate",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Linkuri",
+          "body": [
+            "Inserare → Link: trage peste locul pe care se va da clic, apoi spune unde duce: o adresă web sau o pagină a acestui document.",
+            "Linkurile unui document funcționează cât îl citești: clic pe un link către o pagină duce acolo; o adresă web sau de e-mail este predată browserului sau programului de e-mail."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Semne de carte",
+          "body": [
+            "Inserare → Semn de carte nou: clic pe locul la care trebuie să ducă și dă-i un titlu. Inserare → Semne de carte deschide lista, unde un semn de carte poate fi redenumit sau scos. Schimbările se scriu la salvare."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Fișiere atașate",
+          "body": [
+            "Inserare → Atașează un fișier: alege un fișier și dă clic unde vine agrafa lui. Îi poți da un nume și un autor, poți colora agrafa, o poți redimensiona și roti. Fișierul este păstrat în PDF la salvare.",
+            "Inserare → Fișiere atașate listează ce poartă documentul; fiecare fișier poate fi salvat pe disc sau scos. Clic pe o agrafă deschide aceeași listă."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formulare",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Completarea unui formular",
+          "body": [
+            "Inserare → Completează formularul arată câmpurile documentului: scrie în câmpurile de text, bifează casetele, alege din liste. Răspunsurile se scriu în fișier la salvare."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Crearea unui formular",
+          "body": [
+            "Meniul Inserare adaugă câmpuri oricărui document: câmp de text, casetă de bifat, butoane radio (dintre care se alege unul), listă de ales și câmp de semnătură lăsat gol pentru un semnatar.",
+            "Trage pe pagină unde vine câmpul. Ca și celelalte semne, un câmp poate fi mutat și redimensionat până salvezi; după aceea face parte din formular."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Semnare",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Adăugarea unei semnături desenate",
+          "body": [
+            "Semnare → Adaugă semnătură pune pe pagină imaginea unei semnături: desenată aici cu un stilou ales, scrisă cu un font sau luată dintr-o imagine (cu „Păstrează doar urmele de pix, fără hârtia din fundal” pentru fotografia unei foi semnate). Sub ea se poate scrie data.",
+            "Trage pe pagină unde vine. Semnăturile folosite sunt păstrate pe acest calculator, ca să le folosești din nou.",
+            {
+              "note": "Aceasta este o imagine: nu spune nimic sigur despre cine a pus-o. O semnătură care dovedește cine a semnat și că nimic nu s-a schimbat de atunci se face cu certificat."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Semnarea cu certificat",
+          "body": [
+            "Semnare → Semnează cu certificat face o semnătură digitală: spune cine a semnat și sigilează documentul, astfel încât orice schimbare ulterioară se vede.",
+            {
+              "steps": [
+                "Trage pe pagină zona în care se arată semnătura (o fereastră spune asta mai întâi; se poate opri). Pentru o semnătură care nu apare pe pagini, alege în schimb „Semnează fără să apară pe pagină”.",
+                "Alege certificatul: unul al calculatorului (un card sau un token apare printre ele când este în cititor) sau un fișier .pfx / .p12 cu parola lui. „Continuă”.",
+                "Alege aspectul semnăturii. La „Motiv și loc” poți scrie de ce și unde semnezi: intră în semnătură și pe pagină, dacă aspectul le arată. Bifează „Blochează documentul după semnare” dacă nimeni nu trebuie să mai semneze sau să schimbe ceva după tine. Lasă bifat „Adaugă ora de încredere (marcă temporală)” pentru ca o autoritate să confirme când ai semnat.",
+                "„Semnează”, apoi alege unde se salvează fișierul semnat. Un token își cere PIN-ul în acest moment."
+              ]
+            },
+            "Fișierul semnat se deschide în locul documentului. Programul nu păstrează niciodată o parolă sau un PIN.",
+            {
+              "note": "O semnătură calificată este una făcută astfel cu un certificat calificat, de pe cardul sau tokenul lui. Semnarea se face pe calculatorul tău; doar marca temporală și verificarea certificatului merg online și trimit amprente și numărul de serie al certificatului, niciodată documentul."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Aspecte de semnătură",
+          "body": [
+            "Un aspect spune cum arată pe pagină o semnătură cu certificat. Păstrează mai multe, sub nume proprii: unul pentru semnarea în numele unei societăți, altul pentru semnarea în nume propriu.",
+            {
+              "points": [
+                "Imagine: fără, din fișier (o ștampilă, o semnătură scanată) sau desenată aici.",
+                "Text afișat: nume, dată, motiv, loc, fiecare cu sau fără eticheta lui.",
+                "Rânduri proprii sub nume, de exemplu o funcție și o societate.",
+                "„Text standard” există mereu: cine a semnat și când."
+              ]
+            },
+            "În fereastra de semnare: „Nou…”, „Modifică…”, „Șterge”. Ultimul folosit este propus primul. Aspectele se păstrează pe acest calculator."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Mai multe semnături și blocarea",
+          "body": [
+            "Un document poate fi semnat de mai multe persoane, pe rând. Deschide fișierul semnat și semnează-l fără să schimbi nimic: semnătura ta se adaugă la sfârșitul fișierului, iar cele dinainte rămân valabile.",
+            "„Blochează documentul după semnare” (oprită dacă nu o bifezi) închide documentul: nimeni nu mai poate semna după tine și nimic nu mai poate fi schimbat. Nu se poate reveni.",
+            {
+              "note": "Dacă modifici un document semnat înainte să îl semnezi din nou, el trebuie scris din nou, iar semnăturile dinainte sunt lăsate deoparte. Fereastra de semnare te avertizează: ca să le păstrezi, deschide din nou fișierul și semnează fără să schimbi nimic."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Mărci temporale",
+          "body": [
+            "O marcă temporală este confirmarea semnată a unei autorități de marcare temporală asupra momentului în care exista ceva. Altfel, ora dintr-o semnătură vine din ceasul calculatorului semnatarului, pe care oricine îl poate potrivi; o marcă temporală dovedește momentul și păstrează semnătura dovedibilă și după ce certificatul expiră (PAdES B-T).",
+            {
+              "points": [
+                "Semnăturile primesc una când „Adaugă ora de încredere (marcă temporală)” este bifat în fereastra de semnare. Setări → Semnături stabilește dacă pornește bifat, aici și la procesarea în lot.",
+                "Semnare → Adaugă marcă temporală dă întregului document o marcă temporală proprie, fără certificat: dovedește că documentul era, exact așa cum este, în acel moment. Se salvează ca fișier nou; semnăturile pe care le are fișierul rămân valabile."
+              ]
+            },
+            "Autoritatea este cea de la DigiCert (http://timestamp.digicert.com), gratuită și recunoscută de Adobe Reader și Windows; alta se poate seta în Setări → Semnături. Primește doar o amprentă (SHA-256), niciodată documentul, și este nevoie de conexiune la internet. Când semnătura primește marcă temporală, emitentul certificatului tău este întrebat și dacă certificatul mai este valabil, iar răspunsul lui se păstrează în semnătură (validare pe termen lung): Adobe Reader poate arăta astfel semnătura ca validă, acum și după ce certificatul expiră.",
+            {
+              "note": "Dacă autoritatea nu poate fi contactată, nu se semnează și nu se scrie nimic: încearcă din nou sau debifează marca temporală ca să semnezi fără ea."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Verificarea semnăturilor",
+          "body": [
+            "Semnare → Verifică semnăturile listează fiecare semnătură cu certificat a fișierului: cine a semnat, cine a emis certificatul, când, motivul și locul, precum și",
+            {
+              "points": [
+                "dacă documentul este neschimbat de la acea semnătură (o altă semnătură adăugată ulterior nu se socotește schimbare);",
+                "dacă semnătura blochează documentul;",
+                "dacă acest calculator are încredere în autoritatea din spatele certificatului și dacă certificatul este valabil astăzi;",
+                "ora confirmată de marca ei temporală și de ce autoritate, când are una. Este listată și o marcă temporală a întregului document, cu verificarea ei proprie."
+              ]
+            },
+            "Verificarea este a fișierului așa cum a fost salvat ultima dată și se face pe acest calculator, fără internet. Un clic pe o semnătură din pagină deschide lista la ea. Sub fiecare semnătură, „Arată certificatul” deschide fereastra Windows a certificatului (lanțul și toate detaliile; de acolo, „Instalare certificat” face ca acest calculator să aibă încredere într-un certificat pe care îl cunoști), iar „Validează” întreabă online emitentul certificatului, doar când apeși, dacă certificatul a fost revocat."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alte unelte",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Recunoașterea textului (OCR)",
+          "body": [
+            "Alte unelte → Recunoaște textul (OCR) citește cuvintele paginilor scanate și le scrie în pagini, nevăzut, ca documentul să poată fi căutat, iar textul lui copiat și exportat. Cum arată paginile nu se schimbă.",
+            "Bifează doar limbile în care sunt scrise paginile; paginile care au deja text rămân cum sunt.",
+            {
+              "note": "Citirea o face motorul Tesseract, un program gratuit instalat separat. Fără el, fereastra arată comanda care îl instalează pe Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Micșorarea unui document",
+          "body": [
+            "Alte unelte → Comprimă salvează documentul ca fișier mai mic, dând fotografiilor și scanărilor mai puțini pixeli. Trei trepte; textul și desenele rămân la fel de clare. Un document cu puține imagini câștigă puțin."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Compararea a două documente",
+          "body": [
+            "Alte unelte → Compară documente: alege alt PDF. Cele două sunt arătate alăturat, pagină cu pagină, cu paginile al căror text diferă marcate și cu rândurile pe care le are doar unul dintre ele."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Procesare în lot: multe fișiere deodată",
+          "body": [
+            "Alte unelte → Procesare în lot face aceleași lucruri pe multe fișiere, într-un tab al ei. Fiecare rezultat este un fișier nou. Dacă rezultatele ar lua locul unor fișiere aflate deja în folder (propriile tale fișiere, când merg în folderul lor fără să se adauge nimic la nume), ești întrebat mai întâi dacă vrei să le înlocuiești, să le omiți sau să anulezi. Un fișier este înlocuit doar după ce rezultatul lui este gata; unul deschis (într-un tab aici sau în alt program) este lăsat așa cum este și marcat ca neterminat.",
+            {
+              "steps": [
+                "În stânga, adaugă fișierele: „Adaugă fișiere”, „Adaugă un folder” (cu folderele de sub el) sau trage-le în listă.",
+                "În dreapta, bifează ce se face. Orice fișier devine PDF oricum; pe lângă asta poți roti paginile, recunoaște textul, adăuga antet și subsol, filigran sau numere de pagină, micșora fișierele, le poți semna cu certificat sau scrie în alt format. Numerele arată ordinea.",
+                "Alege ce se scrie: câte un fișier pentru fiecare sau totul într-un singur PDF (în ordinea din listă) și folderul în care merg rezultatele. Când toate fișierele vin din același folder, acel folder este ales pentru tine până alegi altul; altfel, este ultimul folder pe care l-ai ales.",
+                "„Pornește”. Fiecare fișier arată cum a mers; rularea poate fi oprită între fișiere."
+              ]
+            },
+            {
+              "points": [
+                "Rețete: „Salvează ca rețetă” păstrează sub un nume tot ce ai ales (în afară de fișiere și de orice parolă), ca să fie setat din nou dintr-o alegere.",
+                "„Păstrează folderele fișierelor în rezultate” reface folderele unui folder adăugat.",
+                "„Scrie un raport al rulării” lasă lângă rezultate un fișier text care spune ce s-a scris și ce nu a reușit.",
+                "Un PDF care este doar semnat își păstrează semnăturile; dacă i se mai face ceva în aceeași rulare, este scris din nou și ele sunt lăsate deoparte."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Setări",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Setările PDF Organizer",
+          "body": [
+            "Fișier → Setări (sau Setări de pe bara laterală, apoi PDF Organizer). Fiecare setare poate fi pusă la loc separat sau toate deodată.",
+            {
+              "points": [
+                "La deschiderea unui document: cât de mare este arătat un document la deschidere, derulare sau câte o pagină, miniaturi arătate sau nu.",
+                "Unități, rigle și grilă: unitatea (milimetri, inchi, puncte), riglele, grila și pasul ei.",
+                "Tipărire: hârtia, orientarea și scalarea cu care pornește fereastra de tipărire.",
+                "Bara rapidă: ce butoane are banda de deasupra paginilor.",
+                "Numele documentelor noi: modelele pentru paginile extrase, documentele noi și PDF-ul în care procesarea în lot adună mai multe fișiere.",
+                "Semnături: dacă „Salvează” întreabă înainte să scrie peste un fișier semnat.",
+                "Scurtături de tastatură: clic pe tastele unei comenzi, apoi apasă tastele noi."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Despre PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Despre PDF Organizer",
+          "body": [
+            "PDF Organizer este aplicația pentru PDF din Syntelab Creative: citește documente PDF, le aranjează și le combină paginile, scrie și desenează pe ele, completează și creează formulare, semnează cu certificat și verifică semnături și face aceleași lucruri pe multe fișiere deodată.",
+            "Este nou, iar o parte din ce face este un prim pas. Acolo unde nu ajunge pentru documentele tale, spune-ne prin Ajutor → Feedback: așa știm la ce să lucrăm."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Cu ce este construit PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Citirea, desenarea și scrierea PDF: MuPDF.",
+                "Recunoașterea textului (OCR): Tesseract, când este instalat pe calculator.",
+                "Deschiderea documentelor Office: Word, Excel și PowerPoint sau LibreOffice, oricare este instalat.",
+                "Salvarea unei pagini web ca PDF: browserul instalat pe calculator.",
+                "Semnarea cu certificat: serviciile de certificate ale Windows; semnăturile sunt scrise așa cum cere standardul PAdES."
+              ]
+            },
+            "Ce are în comun cu restul programului este la „Despre Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ce nu poate face încă PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Documentele Office sunt deschise de suita Office de pe calculator; fără Word, Excel, PowerPoint sau LibreOffice nu pot fi deschise. La un convertor propriu se lucrează: vezi „La ce lucrăm”.",
+                "Recunoașterea textului are nevoie de motorul Tesseract, instalat separat.",
+                "Textul propriu al unui document se schimbă câte un rând; paragrafele nu se rearanjează.",
+                "Imaginile tipărite în patru cerneluri (CMYK) nu pot fi luate ca să fie mutate.",
+                "„Validează” spune dacă un certificat este revocat azi, nu și când a fost revocat.",
+                "Semnarea cu certificat merge deocamdată pe Windows; pe Linux și macOS va veni într-o versiune următoare."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+[workspace]
+resolver = "2"
+members = [
+    "shell/src-tauri",
+    "crates/syntelab-app-api",
+    "crates/syntelab-apps-manager",
+    "crates/syntelab-compare",
+    "crates/syntelab-encoding",
+    "crates/syntelab-net",
+    "crates/syntelab-office-bridge",
+    "crates/syntelab-platform",
+    "apps/dev/backend",
+    "apps/pdf-organizer/backend",
+    "apps/scribe/backend",
+    "apps/units/backend",
+]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2021"
+license = "AGPL-3.0"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+syntelab-app-api = { path = "crates/syntelab-app-api" }
+syntelab-apps-manager = { path = "crates/syntelab-apps-manager" }
+syntelab-compare = { path = "crates/syntelab-compare" }
+syntelab-encoding = { path = "crates/syntelab-encoding" }
+syntelab-net = { path = "crates/syntelab-net" }
+syntelab-office-bridge = { path = "crates/syntelab-office-bridge" }
+syntelab-platform = { path = "crates/syntelab-platform" }
+
+# MuPDF is always built optimized: drawing pages with an unoptimized engine is
+# several times slower, and its debug build links a different C runtime than
+# the rest of the program on Windows.
+[profile.dev.package.mupdf-sys]
+opt-level = 3
+
+# Making an RSA key is a search among large numbers: unoptimized, a key of 4096 bits takes minutes.
+[profile.dev.package.num-bigint-dig]
+opt-level = 3
+
+[profile.dev.package.rsa]
+opt-level = 3
+
+# Patched copies of dependencies; see third-party/README.md.
+[patch.crates-io]
+mupdf = { path = "third-party/mupdf" }

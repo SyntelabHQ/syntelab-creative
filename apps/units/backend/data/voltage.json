@@ -1,0 +1,29 @@
+{
+  "id": "voltage",
+  "category": "energy",
+  "icon": "plug",
+  "base": "volt",
+  "startsWith": ["volt","kilovolt"],
+  "decimals": 3,
+  "groups": [
+    { "id": "si_units", "color": "#2563eb" },
+    { "id": "common", "color": "#ea580c" },
+    { "id": "legacy", "color": "#9333ea" }
+  ],
+  "units": [
+    {"id":"volt","symbol":"V","group":"si_units","factor":"1","popular":true},
+    {"id":"gigavolt","symbol":"GV","group":"si_units","factor":"1000000000"},
+    {"id":"megavolt","symbol":"MV","group":"si_units","factor":"1000000"},
+    {"id":"kilovolt","symbol":"kV","group":"si_units","factor":"1000","popular":true},
+    {"id":"millivolt","symbol":"mV","group":"si_units","factor":"0.001","popular":true},
+    {"id":"microvolt","symbol":"µV","group":"si_units","factor":"0.000001","popular":true},
+    {"id":"nanovolt","symbol":"nV","group":"si_units","factor":"0.000000001"},
+    {"id":"picovolt","symbol":"pV","group":"si_units","factor":"0.000000000001"},
+    {"id":"femtovolt","symbol":"fV","group":"si_units","factor":"0.000000000000001"},
+    {"id":"attovolt","symbol":"aV","group":"si_units","factor":"0.000000000000000001","decimals":1},
+    {"id":"watt-ampere","symbol":"W/A","group":"common","factor":"1"},
+    {"id":"joule-coulomb","symbol":"J/C","group":"common","factor":"1"},
+    {"id":"abvolt","symbol":"abV","group":"legacy","factor":"0.00000001"},
+    {"id":"statvolt","symbol":"statV","group":"legacy","factor":"299.792458"}
+  ]
+}

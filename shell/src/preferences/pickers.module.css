@@ -1,0 +1,135 @@
+.field {
+  display: flex;
+  flex: 1 1 320px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.label {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pill {
+  min-height: var(--sc-control-height);
+  padding-inline: 18px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pill[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent);
+  color: var(--sc-accent-text);
+}
+
+/* A few choices under one heading: a tick box with its note, a label with its pills. */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.option input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--sc-accent);
+}
+
+.note {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-block-start: 6px;
+}
+
+/* The keys of the program's own commands: what it does, then the keys. */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 0 32px;
+  margin: 0;
+  padding-block: 4px;
+  padding-inline: 16px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.keyRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 38px;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.keyRow dd {
+  flex: none;
+  margin: 0;
+}
+
+.keyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 96px;
+  min-height: 30px;
+  padding-block: 0;
+  padding-inline: 8px;
+  border: 1px solid transparent;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.keyButton:hover {
+  border-color: var(--sc-border);
+}
+
+.keyButton[data-listening='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+  color: var(--sc-text);
+}
+
+.keys kbd {
+  padding-block: 2px;
+  padding-inline: 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+  white-space: nowrap;
+}

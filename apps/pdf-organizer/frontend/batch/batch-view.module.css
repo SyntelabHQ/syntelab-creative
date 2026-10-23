@@ -1,0 +1,628 @@
+/* Batch processing fills its tab: the files on one side, what is done to them on the other, the run at the bottom. */
+.view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: var(--sc-bg);
+  text-align: start;
+}
+
+.columns {
+  display: grid;
+  flex: 1;
+  grid-template-columns: minmax(280px, 2fr) minmax(0, 3fr);
+  min-height: 0;
+}
+
+/* The files: a side of its own, as tall as the tab. */
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  min-height: 0;
+  padding: 20px 20px 16px 24px;
+  border-inline-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+}
+
+.sideHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.count {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* What is done and where the results go: scrolls on its own, beside the files. */
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  min-height: 0;
+  padding: 20px 24px;
+  overflow-y: auto;
+}
+
+@media (width < 900px) {
+  .columns {
+    grid-template-columns: minmax(0, 1fr);
+    overflow-y: auto;
+  }
+
+  .side {
+    border-inline-end: 0;
+    border-block-end: 1px solid var(--sc-border);
+  }
+
+  .details {
+    overflow-y: visible;
+  }
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.heading {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* The recipes: one row above everything they set. */
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+}
+
+.recipeChoice {
+  display: flex;
+  flex: 1 1 280px;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.recipeChoice select {
+  flex: 1;
+  min-width: 0;
+}
+
+.recipeLabel {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.recipeName {
+  display: flex;
+  flex: 1 1 320px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.recipeName input {
+  flex: 1 1 160px;
+  min-width: 0;
+}
+
+/* The things that can be done: a short list to tick from, and the choices of the one picked beside it. */
+.picker {
+  display: grid;
+  grid-template-columns: minmax(200px, 250px) minmax(0, 1fr);
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+}
+
+@media (width < 1100px) {
+  .picker {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+  padding: 6px;
+  border-inline-end: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  list-style: none;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-inline-start: 8px;
+  border-radius: var(--sc-radius-s);
+}
+
+.step[data-shown='true'] {
+  background: var(--sc-accent-soft);
+}
+
+.step:hover:not([data-shown='true']) {
+  background: var(--sc-surface-2);
+}
+
+.step input {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--sc-accent);
+}
+
+.stepName {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 36px;
+  padding: 0 8px 0 0;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.step[data-on='true'] .stepName {
+  font-weight: 600;
+}
+
+.stepName > span:first-of-type {
+  flex: 1;
+  min-width: 0;
+}
+
+.stepDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  padding: 14px 16px 16px;
+}
+
+.stepTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.kindTexts {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.kindName {
+  font-weight: 600;
+}
+
+.kindNote {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.output > svg {
+  flex: none;
+  margin-block-start: 3px;
+}
+
+/* Which of the chosen things is done first, second… */
+.order,
+.position {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-accent);
+  color: var(--sc-on-color);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.position {
+  background: var(--sc-surface-2);
+  color: var(--sc-muted);
+}
+
+
+/* One result for each file, or one for all: side by side. */
+.outputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px;
+}
+
+.output {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 9px 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.output:hover:not(:disabled) {
+  background: var(--sc-surface-2);
+}
+
+.output[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.output:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 12px;
+}
+
+@media (width < 1100px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.folderRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.folder {
+  flex: 1;
+  min-width: 0;
+  min-height: var(--sc-control-height);
+  padding: 9px 12px;
+  overflow: hidden;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-bg);
+  color: var(--sc-muted);
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tip {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+/* The files a run would write over, in the window that asks first. */
+.replaced {
+  margin: 0;
+  padding-inline-start: 20px;
+  overflow-wrap: anywhere;
+}
+
+/* The run: how far it is, and the buttons that start and stop it. */
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  border-block-start: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+}
+
+.progress {
+  display: flex;
+  flex: 1 1 260px;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.bar {
+  width: 100%;
+  height: 8px;
+  accent-color: var(--sc-accent);
+}
+
+.status {
+  margin: 0;
+  font-weight: 600;
+}
+
+.problem {
+  margin: 0;
+  color: var(--sc-danger);
+}
+
+/* The files, one to a row, with how each one went. */
+.files {
+  display: flex;
+  flex: 1 1 200px;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 140px;
+  margin: 0;
+  padding: 6px;
+  overflow-y: auto;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-bg);
+  list-style: none;
+}
+
+.none {
+  margin: auto;
+  padding: 16px;
+  color: var(--sc-muted);
+  text-align: center;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding-inline: 8px 2px;
+  border-radius: var(--sc-radius-s);
+}
+
+.file:hover {
+  background: var(--sc-surface-2);
+}
+
+.state {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  width: 18px;
+  color: var(--sc-muted);
+}
+
+.state[data-state='done'] {
+  color: var(--sc-action-support);
+}
+
+.state[data-state='failed'] {
+  color: var(--sc-danger);
+}
+
+.state[data-state='working'] {
+  animation: turning 1s linear infinite;
+}
+
+@keyframes turning {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .state[data-state='working'] {
+    animation: none;
+  }
+}
+
+.texts {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.said {
+  color: var(--sc-muted);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.said[data-state='failed'] {
+  color: var(--sc-danger);
+}
+
+.remove {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.remove:hover:not(:disabled) {
+  background: var(--sc-surface);
+  color: var(--sc-text);
+}
+
+.remove:disabled {
+  cursor: default;
+  opacity: 0.4;
+}
+
+/* A choice of a step: its name, then what is chosen. */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+}
+
+.row select,
+.row input[type='text'] {
+  flex: 1 1 160px;
+  min-width: 0;
+  max-width: 320px;
+}
+
+.field {
+  min-height: var(--sc-control-height);
+  padding-inline: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+/* The box of the signature, over the page in the preview. */
+.spotOver {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.spotOver[data-disabled='true'] {
+  cursor: default;
+}
+
+.spotBox {
+  cursor: move;
+}
+
+.spotFrame {
+  fill: rgba(0, 123, 255, 0.06);
+  stroke: var(--sc-accent);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 3;
+}
+
+.spotHandle {
+  fill: var(--sc-accent);
+  cursor: nwse-resize;
+}
+
+/* One of the files as the run will leave it, under the list. */
+.preview {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-block-start: 4px;
+}
+
+.previewHead {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.previewName {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.previewName bdi {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file[data-selected='true'] {
+  background: var(--sc-accent-soft);
+}
+
+.pick {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+/* The sheet the place of the signature is chosen on before there are files. */
+.blank {
+  position: relative;
+  background: var(--sc-paper);
+  box-shadow: var(--sc-shadow-s);
+}

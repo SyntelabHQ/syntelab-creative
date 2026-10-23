@@ -1,0 +1,157 @@
+/* A JSON document as a tree that folds, with a box to seek in it. */
+.tree {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 13px;
+}
+
+.seek {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px 6px 16px;
+  border-block-end: 1px solid var(--sc-border);
+  color: var(--sc-muted);
+}
+
+.seek input {
+  flex: 1;
+  min-width: 0;
+  min-height: 26px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  outline: none;
+}
+
+.found {
+  flex: none;
+  font-family: var(--sc-font, system-ui);
+  font-size: 12px;
+}
+
+/* The places a search found: a short list over the tree, each opening the way to its place. */
+.hits {
+  flex: none;
+  max-height: 30%;
+  margin: 0;
+  padding: 4px 0;
+  overflow-y: auto;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  list-style: none;
+}
+
+.hit {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  padding: 3px 16px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.hit:hover,
+.hit[aria-current='true'] {
+  background: var(--sc-surface-2);
+}
+
+.list {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.note {
+  margin: 0;
+  padding: 16px;
+  color: var(--sc-muted);
+  font-family: var(--sc-font, system-ui);
+}
+
+/* A row of the tree: each stands at its own place in a list as tall as all the rows together. */
+.row,
+.more {
+  position: absolute;
+  inset-inline: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  padding-inline-end: 12px;
+  white-space: nowrap;
+}
+
+.row[aria-expanded] {
+  cursor: pointer;
+}
+
+.row:hover {
+  background: color-mix(in srgb, var(--sc-surface-2) 60%, transparent);
+}
+
+.row[data-marked='true'] {
+  background: color-mix(in srgb, var(--sc-highlight) 22%, transparent);
+}
+
+.fold {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  width: 12px;
+  color: var(--sc-muted);
+}
+
+.key {
+  flex: none;
+  color: var(--sc-accent);
+}
+
+.key::after {
+  color: var(--sc-muted);
+  content: ':';
+}
+
+.value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.value[data-kind='object'],
+.value[data-kind='array'],
+.value[data-kind='null'] {
+  color: var(--sc-muted);
+}
+
+.value[data-kind='string'] {
+  color: color-mix(in srgb, var(--sc-action-support) 70%, var(--sc-text));
+}
+
+.value[data-kind='number'],
+.value[data-kind='boolean'] {
+  color: color-mix(in srgb, var(--sc-action-changelog-hover) 75%, var(--sc-text));
+}
+
+.more {
+  border: 0;
+  background: none;
+  color: var(--sc-accent);
+  font-family: var(--sc-font, system-ui);
+  font-size: 12px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.more:hover {
+  text-decoration: underline;
+}

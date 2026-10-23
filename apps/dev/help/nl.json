@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Je weg vinden",
+      "topics": [
+        {
+          "id": "start",
+          "title": "De eerste pagina",
+          "body": [
+            "Een Dev-tabblad opent op de eerste pagina, met alle hulpmiddelen gegroepeerd zoals in de menu’s: Coderen, Gegevens, Genereren, Inspecteren en Netwerk.",
+            {
+              "points": [
+                "Typ in ‘Een hulpmiddel zoeken’ om de lijst te beperken.",
+                "De punaise op een hulpmiddel houdt het bovenaan onder ‘Vastgemaakt’.",
+                "Een hulpmiddel opent in hetzelfde tabblad; Bestand → Alle hulpmiddelen gaat terug naar de eerste pagina. In Instellingen kun je elk hulpmiddel in een eigen tabblad laten openen en een nieuw tabblad met het laatst gebruikte hulpmiddel laten beginnen."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Alles plakken",
+          "body": [
+            "Het vak bovenaan de eerste pagina accepteert alles wat je plakt en geeft aan waarop het lijkt: een token, certificaat, JSON, UUID’s, tijdstempels, cron-schema’s, URL’s, XML of HTML, SQL, Base64, een controlesom, tabel of YAML.",
+            "Onder elke herkenning staan passende hulpmiddelen, met de beste keuze eerst. Klik erop: het hulpmiddel opent met de tekst al ingevuld en verwerkt.",
+            {
+              "note": "Geplakte inhoud blijft in het vak totdat je het wist of het tabblad sluit. Deze wordt nooit op schijf opgeslagen."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "De indeling van een hulpmiddel",
+          "body": [
+            "De meeste hulpmiddelen hebben dezelfde opbouw: opties bovenaan, invoer aan de ene kant, uitvoer aan de andere en een statusregel onderaan.",
+            {
+              "points": [
+                "Het resultaat wordt opnieuw berekend zodra de invoer of een optie verandert, en in de uitvoer getoond; ‘Werkt vanzelf’ in de optieregel geeft dat aan. Alleen een tekst die te lang is om bij elke toetsaanslag te verwerken, of een bestand groter dan 128 MB, wacht op de knop ‘Uitvoeren’, die dan verschijnt. Met Ctrl+Enter voer je het hulpmiddel op elk moment uit.",
+                "Een resultaat dat geen tekst is (een uit Base64 gedecodeerde afbeelding, gzip) wordt als voorbeeld getoond: een afbeelding zoals ze is, al het andere met soort, grootte en eerste bytes. ‘Kopiëren’ kopieert het dan als Base64, en een afbeelding kun je ook als afbeelding kopiëren. Hetzelfde geldt voor een invoerbestand dat geen tekst is.",
+                "‘Een bestand openen’, ‘Plakken’ en ‘Wissen’ staan boven de invoer; ‘Kopiëren’ en ‘Opslaan in een bestand’ boven de uitvoer. Je kunt ook een bestand op de invoer slepen.",
+                "Invoerfouten worden in woorden uitgelegd, met regel en kolom, en in de editor gemarkeerd.",
+                "Het menu Weergave plaatst de deelvensters naast of onder elkaar, toont regelnummers en laat lange regels omlopen. Je kunt de scheidingslijn verslepen.",
+                "Je gekozen opties worden voor de volgende keer onthouden. Je invoer niet."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "‘Alles wissen’ en wat wordt bewaard",
+          "body": [
+            "‘Alles wissen’, rechtsonder in elk hulpmiddel, wist direct de invoer, het resultaat, alle ingevulde vakken en de bewerkingsgeschiedenis van de editors.",
+            "Dev bewaart alleen de instellingen, vastgezette hulpmiddelen, de naam van het laatst gebruikte hulpmiddel en de opties per hulpmiddel. Niets wat je typt, plakt, opent of maakt, wordt op schijf, in een logboek of in een lijst met recente inhoud bewaard. Dat geldt zeker voor geheimen: sleutels, wachtwoordzinnen, tokens en verzoekheaders bestaan alleen in het tabblad.",
+            "Eén ding blijft een tijdje op schijf: het resultaat van een bestand, en een resultaat dat geen tekst is, worden in een eigen map van het programma geschreven zodat ze getoond en daarna opgeslagen kunnen worden. Elk wordt verwijderd zodra een ander resultaat de plaats inneemt, wanneer je het hulpmiddel met ‘Alles wissen’ leegmaakt of sluit, en in elk geval wanneer Dev opnieuw start."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Bestanden van elke grootte",
+          "body": [
+            "Er is geen vaste limiet aan de bestandsgrootte. Een bestand dat klein genoeg is om te tonen (tot 16 MB) wordt in de editor geladen. Een groter bestand, of een bestand dat geen tekst is, blijft op schijf: het begin (of een voorbeeld) wordt getoond, het hulpmiddel leest vanaf de bestandslocatie en het resultaat wordt getoond zoals bij tekst. ‘Opslaan in een bestand’ kopieert het resultaat daarna naar de plek die je kiest.",
+            {
+              "points": [
+                "Bij langdurige verwerking verschijnt een kaart met de voortgang en de knop ‘Stoppen’.",
+                "Tekstbestanden met een andere codering dan UTF-8 (UTF-16, Windows-1252 enzovoort) worden als tekst gelezen als ze klein genoeg zijn om te tonen; de codering wordt vermeld. Wat je vanuit Dev opslaat, is UTF-8.",
+                "Een bestand dat je op een hulpmiddel sleept, wordt geopend zoals met ‘Een bestand openen’. Als het venster niet kan bepalen waar het bestand staat, wordt het tot 16 MB als geplakte inhoud geladen."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Meerdere bestanden en hele mappen",
+          "body": [
+            "Als een hulpmiddel ‘Werken met: Tekst / Bestanden’ heeft, verwerkt Bestanden meerdere bestanden tegelijk.",
+            {
+              "steps": [
+                "Voeg bestanden of een map toe, inclusief submappen als je die optie aan laat staan.",
+                "Elk bestand wordt bij het toevoegen eenmaal gelezen om te bepalen of het hulpmiddel het accepteert.",
+                "Kies de bestemming: naast elk bestand onder een nieuwe naam, in een map met behoud van de structuur, of de bestanden zelf overschrijven, waarvoor nogmaals bevestiging wordt gevraagd. Hash kan de resultaten ook alleen in de lijst tonen.",
+                "Klik op een bestand in de lijst om alleen het resultaat ervan onder de keuzes te zien, voordat er iets wordt geschreven.",
+                "Voer het hulpmiddel uit. Een fout bestand houdt de andere niet tegen; elk bestand toont het eigen resultaat."
+              ]
+            },
+            {
+              "note": "Een resultaat overschrijft nooit een bestaand bestand tenzij je daarom vraagt."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Het rechtsklikmenu van Windows Verkenner",
+          "body": [
+            "Schakel dit in bij de programma-instellingen onder Windows Verkenner. Alles staat onder één vermelding, ‘Syntelab Creative’; in Windows 11 onder ‘Meer opties weergeven’.",
+            {
+              "points": [
+                "Openen in Syntelab Dev: voor bestandstypen die een hulpmiddel leest (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz enzovoort). Het bestand opent in het passende hulpmiddel.",
+                "Controlesommen: voor elk bestand of elke map. De hashwaarden staan naast hun bestanden; er wordt niets opgeslagen.",
+                "Hexweergave: voor elk bestand.",
+                "Vergelijken: twee bestanden openen aan beide kanten van Verschillen; twee mappen in de mapvergelijking."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Coderen",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Zet bytes om in Base64 en terug. Coderen accepteert elk bestand; decoderen levert de bytes terug, getoond als tekst wanneer mogelijk en anders opgeslagen in een bestand.",
+            {
+              "points": [
+                "Alfabet: standaard of URL-geschikt (- en _).",
+                "Opvullen met = en regels van 64, 76 of een eigen aantal tekens.",
+                "Decoderen accepteert beide alfabetten, met of zonder opvulling, en vermeldt de positie van ongeldige tekens."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL coderen / decoderen",
+          "body": [
+            "Procentcodering zoals browsers die schrijven: een adresonderdeel (alles behalve gewone letters wordt gecodeerd), een volledig adres (speciale adrestekens blijven behouden) of een formulier (+ voor een spatie).",
+            "Decoderen meldt waar een % niet door twee hexadecimale cijfers wordt gevolgd."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML-entiteiten",
+          "body": [
+            "Schrijft de voor HTML en XML gereserveerde tekens (&, <, >, aanhalingstekens) als entiteiten en leest ze terug: op naam, als decimaal getal of als hexadecimaal getal. De namen volgen de HTML-standaard.",
+            "‘Ook elk niet-ASCII-teken’ schrijft letters met accenten en andere alfabetten eveneens als entiteiten."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT-decoder",
+          "body": [
+            "Ontleedt een JSON Web Token: header en payload als JSON, met claims in gewone woorden (uitgever, onderwerp, doelgroep, vervaltijd en ‘verlopen’ of ‘nog niet verlopen’).",
+            "Geef het geheim op om een handtekening met een gedeeld geheim (HS256, HS384, HS512) te controleren. Handtekeningen met een privésleutel (RS, ES, PS) worden niet gecontroleerd.",
+            {
+              "note": "Het token en geheim blijven in het tabblad: er wordt niets verstuurd om een token te decoderen."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escapen / unescapen",
+          "body": [
+            "Schrijft tekst als een tekenreeks van een programmeertaal (JSON, JavaScript, C, C++, Java enzovoort) met escapes voor aanhalingstekens, regeleinden en andere tekens, en leest zo’n tekenreeks terug."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Comprimeert en decomprimeert gzip, voor bestanden van elke grootte tijdens het lezen. Het niveau loopt van snelst tot kleinst; het resultaat van tekst kan als Base64 worden gegeven."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Talstelsels",
+          "body": [
+            "Toont gehele getallen, één per regel, binair, octaal, decimaal en hexadecimaal, plus een zelfgekozen grondtal tot 36. Er is geen maximale getalgrootte.",
+            {
+              "points": [
+                "Het grondtal wordt uit de schrijfwijze afgeleid: 0x voor hexadecimaal, 0b voor binair, 0o voor octaal, letters voor hexadecimaal en anders decimaal. Je kunt ook zelf één grondtal voor alle invoer kiezen.",
+                "Spaties, onderstrepingstekens en apostroffen tussen cijfers worden genegeerd: 1_000_000.",
+                "Een negatief getal verschijnt ook zoals computers het bewaren (tweecomplement), in de kleinste passende breedte van 8, 16, 32, 64 bits enzovoort."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gegevens",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON-opmaak",
+          "body": [
+            "Maakt JSON op, verkleint en valideert deze en toont een boomstructuur. Documenten van elke grootte worden als stroom gelezen.",
+            {
+              "points": [
+                "Inspringen met 2 of 4 spaties, een tab of een eigen aantal spaties.",
+                "Meer opties: sleutels sorteren, korte lijsten op één regel, spatie na de dubbele punt, regeleinden, afsluitend regeleinde en niet-ASCII-letters als \\uXXXX.",
+                "Soepel lezen accepteert opmerkingen (// en /* */) en afsluitende komma’s en schrijft strikte JSON.",
+                "Wijzigingen: null-waarden, lege waarden en dergelijke verwijderen in één doorgang.",
+                "De boomstructuur opent niveau voor niveau en zoekt tekst in sleutels en waarden."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Voert een JSONPath-query (RFC 9535) op een document uit: $.store.book[?@.price < 10].title. Het resultaat bevat de gevonden waarden, hun paden of beide.",
+            "Bij een ongeldige query wordt de foutpositie vermeld."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema-validator",
+          "body": [
+            "Controleert een document aan de hand van een JSON Schema (draft 4 tot 2020-12). Het schema komt in het deelvenster onder de invoer. Elke afwijking wordt vermeld met de locatie en de overtreden regel.",
+            "Bij meerdere bestanden wordt elk tegen hetzelfde schema gecontroleerd. Een $ref naar een ander bestand of adres wordt niet gevolgd."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Schemagenerator en JSON naar TypeScript",
+          "body": [
+            "Op basis van een JSON-voorbeeld maakt de schemagenerator een passend JSON Schema en schrijft JSON naar TypeScript de typedeclaraties (interfaces of types, geëxporteerd of niet, readonly of niet, onder een gekozen naam)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Zet YAML om in JSON en JSON in YAML. YAML wordt volgens het kernschema gelezen, met verwerking van ankers en samenvoegingen; fouten worden met hun positie vermeld."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Zet een tabel om in JSON en terug. Het scheidingsteken wordt uit de eerste rij afgeleid of zelf gekozen (komma, puntkomma, tab, verticale streep). De eerste rij kan de kolomkoppen bevatten; getallen en true / false kunnen worden herkend.",
+            "‘Tabel’ toont CSV in rijen en kolommen, ongeacht de bestandsgrootte."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML / HTML-opmaak",
+          "body": [
+            "Maakt XML en HTML op, verkleint en controleert deze. XML wordt strikt gelezen: een niet-gesloten tag wordt met de positie gemeld. HTML wordt gelezen met de soepelheid van browsers."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL-opmaak",
+          "body": [
+            "Maakt een instructie op met elke clausule op een eigen regel of zet alles op één regel; trefwoorden in hoofdletters, kleine letters of zoals ingevoerd. Er wordt niet om een dialect gevraagd en de betekenis van de instructie wordt niet gecontroleerd."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Verschillen",
+          "body": [
+            "Vergelijkt twee teksten regel voor regel, twee JSON-documenten op inhoud of twee mappen bestand voor bestand. De eerste komt in de invoer, de tweede in het deelvenster eronder.",
+            {
+              "points": [
+                "‘Naast elkaar’ markeert gewijzigde woorden binnen een regel; ‘Gecombineerd’ toont een patch zoals diff -u die schrijft.",
+                "Negeer hoofdletterverschillen, witruimte, lege regels, cijfers of leestekens.",
+                "Bij JSON tellen de sleutelvolgorde en opmaak niet als verschil; het resultaat kan een JSON Patch (RFC 6902) zijn.",
+                "Mappen: bestanden die slechts in één map staan, gelijk zijn of verschillen; ‘Vergelijken’ op een rij opent het paar als teksten."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdown-voorbeeld",
+          "body": [
+            "Toont hoe Markdown eruit zal zien en levert HTML om te kopiëren of op te slaan: CommonMark met tabellen, doorhalingen, takenlijsten en voetnoten.",
+            {
+              "points": [
+                "HTML binnen Markdown wordt als tekst getoond, niet uitgevoerd.",
+                "Afbeeldingen van het netwerk worden niet opgehaald: in plaats daarvan verschijnen beschrijving en adres. Een afbeelding die in de tekst is opgenomen (data:) wordt wel getoond.",
+                "Een aangeklikte link opent in de systeembrowser."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Genereren",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Maakt UUID’s van versie 1, 3, 4, 5, 6 en 7 (RFC 9562), zoveel als gevraagd, met koppeltekens, zonder scheidingstekens, als URN of tussen accolades. ‘Ontleden’ toont de versie van elke UUID en de tijd of naam die deze bevat."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 en SHA-512 van tekst of een bestand, meerdere tegelijk, als hex of Base64. Een bestand van elke grootte wordt tijdens het lezen gehasht.",
+            {
+              "points": [
+                "‘Vergelijken met’: plak een controlesom of een regel uit een .sha256-bestand; het hulpmiddel meldt of deze overeenkomt.",
+                "‘HMAC-sleutel’: de hashwaarden worden HMAC’s met die sleutel.",
+                "‘Elke regel afzonderlijk’: één hashwaarde per tekstregel.",
+                "Bestanden: de hashwaarden staan naast hun bestanden; ‘Alles kopiëren’ levert ze in de notatie van sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Wachtwoorden en geheimen",
+          "body": [
+            "Maakt wachtwoorden met gekozen tekensoorten, wachtwoordzinnen met woorden en willekeurige bytes als hex of Base64, met willekeurige getallen van het besturingssysteem. Bij elk resultaat staat het aantal bits entropie. Is er eenmaal iets gemaakt, dan maakt het wijzigen van een optie het opnieuw.",
+            "Een wachtwoordzin bestaat uit woorden uit de lange woordenlijst van de Electronic Frontier Foundation (7776 Engelse woorden), elk met dezelfde kans: zes woorden leveren ongeveer 77 bits op."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Sleutels en certificaten",
+          "body": [
+            "Vijf mogelijkheden, bovenaan te kiezen:",
+            {
+              "points": [
+                "Nieuwe sleutel: RSA, EC P-256 / P-384 / P-521 of Ed25519, in alle ondersteunde formaten (PKCS #8, de oudere vorm, OpenSSH; de publieke sleutel als PEM en als regel voor authorized_keys), beveiligd met een wachtwoordzin als je die opgeeft.",
+                "Certificaataanvraag: een CSR voor een nieuwe of geplakte sleutel, met het onderwerp en alternatieve namen (SAN).",
+                "Zelfondertekend certificaat: hetzelfde, ondertekend met de eigen sleutel voor een gekozen aantal dagen. ‘Mag andere certificaten ondertekenen’ maakt er een eigen certificaatautoriteit van.",
+                "Ondertekenen met je eigen CA: plak een aanvraag, het certificaat van je autoriteit en de sleutel; je krijgt het ondertekende certificaat met daarachter de autoriteit.",
+                "Lezen en converteren: plak of open PEM, DER, een OpenSSH-sleutel of een .pfx- of .p12-bestand, al dan niet beveiligd. Het hulpmiddel toont wat is gevonden en of de sleutel bij het certificaat hoort, en schrijft elk onderdeel in andere formaten. Een sleutel en certificaat kunnen samen als .pfx worden opgeslagen."
+              ]
+            },
+            {
+              "note": "Alles wordt op deze computer gemaakt. Een sleutel blijft in het tabblad totdat je ‘Alles wissen’ gebruikt, en nergens anders tenzij je deze opslaat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inspecteren",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Regex-tester",
+          "body": [
+            "Test een JavaScript-expressie op tekst: overeenkomsten met groepen en posities, of de tekst met vervangen overeenkomsten. De vlaggen zijn g, i, m, s, u, y.",
+            "Het patroon draait los van het venster; een patroon dat langer dan 20 seconden duurt, wordt beëindigd."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron-uitleg",
+          "body": [
+            "Legt in woorden uit wat een schema betekent en wanneer het wordt uitgevoerd: crontab (vijf velden, zes met seconden, zeven met een jaar), Quartz, AWS EventBridge cron() en rate(), en systemd OnCalendar. Eén schema per regel.",
+            {
+              "points": [
+                "De volgende uitvoeringen, en op verzoek de vorige, in de gekozen tijdzone.",
+                "Weekdagen worden genummerd vanaf 0 voor zondag, of vanaf 1 zoals Quartz ze nummert, naar keuze. Een regel met seconden die ook een jaar, L, W of # bevat, is van Quartz en wordt vanzelf op de Quartz-manier gelezen.",
+                "Hetzelfde schema in andere notaties, om te kopiëren of aan de invoer toe te voegen.",
+                "De samensteller maakt een schema door elk veld te kiezen; ‘Wijzigen in de samensteller’ laadt een getypt schema daarin."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix-tijdstempel",
+          "body": [
+            "Leest tijdstippen, één per regel: seconden, milliseconden, microseconden of nanoseconden sinds 1970, of een datum in een gebruikelijke notatie (ISO 8601, zoals e-mail en HTTP die schrijven, zoals Git die schrijft). Elk verschijnt in de gekozen tijdzone, in UTC en als elk type tijdstempel."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL-ontleder",
+          "body": [
+            "Ontleedt een URL zoals browsers die lezen: schema, gebruiker, host (met Unicode-vorm bij punycode), poort, pad, elke gedecodeerde queryparameter en het fragment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Certificaatdecoder",
+          "body": [
+            "Leest X.509-certificaten uit PEM of DER en toont de inhoud: onderwerp, uitgever, geldigheid, namen waarvoor het geldt, sleutel, extensies en vingerafdrukken.",
+            "Het hulpmiddel leest, maar beoordeelt niet of een certificaat vertrouwd is. Gebruik Netwerk → Certificaat van een website voor het aangeboden sitecertificaat en de vertrouwensstatus op deze computer."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Hexviewer",
+          "body": [
+            "Toont de bytes van een bestand van elke grootte of van geplakte tekst: positie per rij, bytes en dezelfde bytes als letters.",
+            {
+              "points": [
+                "Ga naar een positie zoals 0x1F4, 1F4h of 500.",
+                "Zoek bytes (DE AD BE EF) of tekst (UTF-8 of UTF-16 in beide bytevolgorden), vooruit en achteruit.",
+                "Klik op een byte: het zijpaneel toont de inhoud als getallen van verschillende groottes, in beide bytevolgorden, als teken en als tijd.",
+                "Selecteer door slepen, met Shift of met de pijltoetsen; kopieer de selectie als hex, code, Base64 of tekst, of sla deze in een bestand op."
+              ]
+            },
+            {
+              "note": "Het hulpmiddel bekijkt alleen: het bestand verandert niet."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Netwerk",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Waar de netwerkhulpmiddelen verbinding mee maken",
+          "body": [
+            "Deze vier hulpmiddelen zijn het enige deel van Dev dat internet gebruikt en ze gaan naar de bestemming die je opgeeft.",
+            {
+              "points": [
+                "Alleen het ingevoerde adres wordt benaderd, alleen wanneer je op de knop drukt. Nooit op de achtergrond.",
+                "Er wordt verstuurd wat je hebt ingevoerd. Alleen een voor iedereen gelijke User-Agent (‘Syntelab Creative’) wordt toegevoegd, tenzij je een eigen waarde opgeeft.",
+                "Er worden geen cookies bewaard, geen gegevens over jou of de computer verstuurd en geen ingevoerde gegevens bewaard."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP-client",
+          "body": [
+            "Verstuurt één handmatig opgesteld verzoek: methode, adres, headers (één per regel: Name: value) en een body, getypt of uit een bestand van elke grootte.",
+            {
+              "points": [
+                "Het antwoord: statuscode, duur (totaal en tot de eerste byte), grootte, headers en body, ingekleurd naar type en opgemaakt bij JSON. Een body die geen tekst is (een afbeelding, een PDF), wordt getoond zoals die is, en opgeslagen zoals die binnenkwam.",
+                "Volg doorverwijzingen of bekijk het eerste antwoord ongewijzigd. Adressen waarlangs het verzoek is doorgestuurd, worden vermeld.",
+                "Controleer het certificaat aan de hand van wat deze computer vertrouwt; schakel dit alleen voor eigen servers uit.",
+                "‘Verzenden, antwoord naar bestand’ schrijft een body van elke grootte direct naar schijf, met voortgang en de knop ‘Stoppen’.",
+                "‘Kopiëren als curl’ geeft hetzelfde verzoek als opdracht."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS-opvraag",
+          "body": [
+            "Vraagt een naamserver om records voor een naam: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, meerdere tegelijk. Bij een adres wordt de naam opgezocht (PTR).",
+            "De vraag gaat naar de ingestelde naamserver van de computer, een publieke server (1.1.1.1, 8.8.8.8, 9.9.9.9), een resolver via HTTPS (Cloudflare, Google) of een zelf opgegeven server."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Poortcontrole",
+          "body": [
+            "Controleert of hostpoorten TCP-verbindingen accepteren: één, meerdere of een bereik tot alle 65 535 poorten (22, 80, 443, 8000-8100). Elke poort is open, gesloten of geeft geen antwoord binnen de ingestelde tijd.",
+            {
+              "note": "Test alleen hosts die van jou zijn of waarvoor je toestemming hebt."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Certificaat van een website",
+          "body": [
+            "Toont de certificaten die een site aanbiedt bij een beveiligde verbinding: voor wie ze zijn, wie ze heeft ondertekend, resterende dagen, of deze computer ze vertrouwt en waarom niet, TLS-versie en versleuteling. Alleen de handshake wordt uitgevoerd: er wordt geen verzoek verstuurd.",
+            {
+              "points": [
+                "Schrijf example.com, example.com:8443 of een webadres.",
+                "E-mailservers en FTP beginnen onversleuteld en krijgen een verzoek om naar TLS over te schakelen (STARTTLS): gekozen op basis van de poort (25, 587, 143, 110, 21) of handmatig.",
+                "‘Alles’ toont alle certificaatgegevens; ‘PEM’ levert ze om te kopiëren of op te slaan."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Instellingen",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "De instellingen van Dev",
+          "body": [
+            "Bestand → Instellingen opent de programma-instellingen bij Dev.",
+            {
+              "points": [
+                "Elk hulpmiddel in een eigen tabblad openen of in het tabblad waarin je het kiest.",
+                "Een nieuw tabblad openen met het laatst gebruikte hulpmiddel of met de eerste pagina.",
+                "Opties van alle hulpmiddelen en vastgemaakte hulpmiddelen terugzetten naar de standaardinstellingen."
+              ]
+            },
+            "Het rechtsklikmenu van Windows Verkenner, de taal, het thema en de toetsen staan in de algemene programma-instellingen."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Over Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Over Dev",
+          "body": [
+            "Dev is de ontwikkelaarsapp van Syntelab Creative: hulpmiddelen voor coderen en decoderen, opmaken en controleren, gegevens omzetten en moeilijk leesbare inhoud ontleden.",
+            "Alles gebeurt op deze computer. Niets wat je typt, plakt of in een hulpmiddel opent, wordt bewaard of verstuurd. Er is geen vaste limiet aan bestandsgrootte of aantal bestanden: de grenzen zijn het geheugen en de schijfruimte van de computer.",
+            "De app is nieuw en nog in ontwikkeling. Laat via Help → Feedback weten waar deze voor jouw werk tekortschiet."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Waarmee Dev is gebouwd",
+          "body": [
+            {
+              "points": [
+                "De editors: CodeMirror, https://codemirror.net . MIT-licentie. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "JSON lezen en inkleuren in de editors: @codemirror/lang-json, https://github.com/codemirror/lang-json , met @codemirror/language en @lezer/highlight. MIT-licentie. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "YAML, XML, HTML en SQL lezen en inkleuren in de editors: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (met @codemirror/lang-css en @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . MIT-licentie. Copyright (C) 2018-2024 by Marijn Haverbeke and others.",
+                "Een document controleren tegen een JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . MIT-licentie. Copyright (c) 2020-2026 Dmitry Dygalo. Gebouwd zonder netwerkonderdeel: Dev haalt nooit een schema op.",
+                "JSONPath-patronen (match en search): regex, https://github.com/rust-lang/regex . MIT- of Apache-2.0-licentie. Copyright (c) 2014 The Rust Project Developers.",
+                "YAML lezen: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . MIT- of Apache-2.0-licentie. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Dev schrijft YAML zelf.",
+                "Twee teksten vergelijken (Diff): similar, https://github.com/mitsuhiko/similar . Apache-2.0-licentie. Auteurs: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . MIT- of Apache-2.0-licentie. Copyright (c) 2014-2026 Alex Crichton.",
+                "Hashwaarden van het Hash-hulpmiddel en tokenhandtekeningen: sha2, sha1 en md-5, https://github.com/RustCrypto/hashes . MIT- of Apache-2.0-licentie. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, and the RustCrypto developers.",
+                "Datums, tijden en tijdzones (Unix-tijdstempel, Cron-uitleg): jiff, https://github.com/BurntSushi/jiff , met tijdzones uit de IANA-database. Unlicense- of MIT-licentie. Copyright (c) 2015 Andrew Gallant.",
+                "Een URL ontleden: url en idna, https://github.com/servo/rust-url . MIT- of Apache-2.0-licentie. Copyright (c) 2013-2025 The rust-url developers.",
+                "X.509-certificaten lezen: x509-parser, https://github.com/rusticata/x509-parser . MIT- of Apache-2.0-licentie. Copyright (c) 2017 Pierre Chifflier.",
+                "Het hulpmiddel voor reguliere expressies gebruikt JavaScript-expressies in de WebView-engine waarmee het programma wordt weergegeven (Microsoft Edge WebView2 op Windows); er wordt geen extra bibliotheek voor toegevoegd.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . MIT- of Apache-2.0-licentie. Copyright (c) 2018 Sam Rijs, Alex Crichton and contributors.",
+                "UUID’s: uuid, https://github.com/uuid-rs/uuid . Apache-2.0- of MIT-licentie. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Willekeurige bytes voor wachtwoorden, geheimen en UUID’s uit het besturingssysteem: getrandom, https://github.com/rust-random/getrandom . MIT- of Apache-2.0-licentie. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "RSA-sleutels en -handtekeningen: rsa, https://github.com/RustCrypto/RSA , met num-bigint-dig, https://github.com/dignifiedquire/num-bigint . MIT- of Apache-2.0-licentie. Copyright (c) RustCrypto Developers and dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Sleutels en handtekeningen van NIST-curven (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , met de benodigde ecdsa, elliptic-curve en crypto-bigint. Apache-2.0- of MIT-licentie. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Ed25519-sleutels en -handtekeningen: ed25519-dalek en curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . BSD 3-Clause-licentie. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft and Henry de Valence. All rights reserved.",
+                "Bestandsformaten voor sleutels, aanvragen en certificaten (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER en PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Apache-2.0- of MIT-licentie. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "OpenSSH-sleutelbestanden: ssh-key, https://github.com/RustCrypto/SSH , met bcrypt-pbkdf, aes, ctr, chacha20 en andere versleutelings- en hashfuncties van RustCrypto voor sleutelbeveiliging ( https://github.com/RustCrypto ). Apache-2.0- of MIT-licentie. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "PKCS #12-bestanden (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , met de benodigde pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 en scrypt van RustCrypto. MIT- of Apache-2.0-licentie. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Willekeurige getallen voor sleutels uit het besturingssysteem: rand_core, https://github.com/rust-random/rand . MIT- of Apache-2.0-licentie. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "De HTTP-client: ureq, https://github.com/algesten/ureq . MIT- of Apache-2.0-licentie. Copyright (c) 2019 Martin Algesten.",
+                "Beveiligde verbindingen (TLS) van de HTTP-client en ‘Certificaat van een website’: rustls, https://github.com/rustls/rustls , Apache-2.0-, ISC- of MIT-licentie, Copyright (c) 2016 Joseph Birr-Pixton; met rustls-webpki, https://github.com/rustls/webpki , ISC-licentie, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , Apache-2.0- en ISC-licenties; webpki-roots, https://github.com/rustls/webpki-roots , CDLA-Permissive-2.0-licentie.",
+                "Controleren of deze computer een certificaat vertrouwt: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . MIT- of Apache-2.0-licentie. Copyright (c) 2022 1Password.",
+                "Markdown lezen: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . MIT-licentie. Copyright 2015 Google Inc. All rights reserved.",
+                "Bestanden met andere coderingen dan UTF-8 lezen: encoding_rs, https://github.com/hsivonen/encoding_rs , Apache-2.0- of MIT-licentie (met BSD-3-Clause voor de gegevens), Copyright Mozilla Foundation; en chardetng, https://github.com/hsivonen/chardetng , Apache-2.0- of MIT-licentie, Copyright Mozilla Foundation.",
+                "De woorden voor wachtwoordzinnen: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , van de Electronic Frontier Foundation, gebruikt onder de Creative Commons Attribution 3.0 United States-licentie ( https://creativecommons.org/licenses/by/3.0/us/ ). De lijst wordt ongewijzigd gebruikt.",
+                "Sleutels met de oude OpenSSL-beveiliging openen: aes, cbc en des van RustCrypto, https://github.com/RustCrypto . MIT- of Apache-2.0-licentie. Copyright (c) RustCrypto Developers.",
+                "Voor Dev geschreven, zonder bibliotheek: DNS opzoeken (vragen schrijven en antwoorden lezen volgens RFC 1035) en poorten controleren.",
+                "Voor Dev geschreven, zonder bibliotheek: JSON als stroom lezen en schrijven, JSONPath (RFC 9535), Base64, procentcodering, HTML-tekenverwijzingen (namen volgens de HTML-standaard, https://html.spec.whatwg.org ), tekenreeksescapes, JSON Web Tokens lezen, YAML schrijven, CSV in beide richtingen, cron-schema’s lezen en XML, HTML en SQL opmaken."
+              ]
+            },
+            "Wat de app met de rest van het programma deelt, staat onder ‘Over Syntelab Creative’."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Wat Dev nog niet kan",
+          "body": [
+            {
+              "points": [
+                "Een tokenhandtekening wordt alleen gecontroleerd als deze met een gedeeld geheim is gemaakt (HS256, HS384, HS512).",
+                "De JSON Schema-validator meldt afwijkingen in het Engels, zoals de bibliotheek doet, en volgt geen $ref naar een ander bestand of adres.",
+                "Het SQL-opmaakhulpmiddel vraagt niet om een dialect en controleert de betekenis van instructies niet: het meldt alleen niet-afgesloten tekenreeksen of opmerkingen.",
+                "YAML en JSON die naar YAML of CSV worden omgezet, blijven tijdens de omzetting volledig in het geheugen. CSV naar JSON, XML, HTML en SQL worden tijdens het lezen verwerkt, ongeacht de grootte.",
+                "De CSV-tabel is alleen-lezen: je kunt er nog niet in typen of eruit kopiëren.",
+                "Verschillen bewaart zestien bytes per regel van beide bestanden, niet de bestanden zelf. Twee JSON-documenten worden wel volledig bewaard, omdat ze vóór de vergelijking opnieuw worden geschreven.",
+                "Een reeks regels zonder gemeenschappelijke regel die aan beide kanten precies eenmaal voorkomt, wordt zo goed vergeleken als binnen één seconde mogelijk is. De gemelde verschillen zijn correct, maar niet altijd minimaal.",
+                "Verschillen vergelijkt regeleinden (CRLF of LF) niet.",
+                "Twee mappen worden op bestandsbytes vergeleken; bestanden worden op exact gelijke namen gekoppeld.",
+                "De uitvoer van de hulpmiddelen in het menu Inspecteren is JSON met Engelse veldnamen.",
+                "De Regex-tester gebruikt JavaScript, niet PCRE of Rust. Het werkt op tekst die kan worden getoond, niet op een bestand dat op schijf blijft. Een patroon dat langer dan 20 seconden duurt, wordt beëindigd.",
+                "De certificaatdecoder leest een certificaat zonder het vertrouwen te controleren: niet de keten, de handtekening of een eventuele intrekking.",
+                "Een tekstbestand met een andere codering dan UTF-8 wordt gelezen als het klein genoeg is om te tonen. Een groter bestand dat vanaf schijf wordt verwerkt, moet UTF-8 zijn.",
+                "Een bestand dat je op een hulpmiddel sleept, wordt tot 16 MB geladen. Het venster ontvangt de schijflocatie niet, dus grotere bestanden open je via ‘Een bestand openen’.",
+                "Wachtwoordzinnen bestaan alleen uit Engelse woorden.",
+                "Cron-uitleg: de samensteller maakt crontab-schema’s (vijf velden of zes met seconden); een schema met L, W, # of ? kan niet worden geladen. De tijden van AWS rate() kunnen niet worden bepaald, omdat deze vanaf het aanmaken van de regel tellen. Van systemd worden gebruikelijke kalendergebeurtenissen gelezen, maar geen fracties van seconden of lijsten van dagen geteld vanaf het maandeinde.",
+                "De hexviewer bekijkt alleen: het bestand verandert niet. De tekstkolom toont ASCII of West-Europese letters, geen andere alfabetten. Zoeken werkt op bytes of tekst, niet op patronen.",
+                "Sleutels en certificaten: ondersteund zijn RSA, de curven P-256, P-384 en P-521 en Ed25519; andere typen (DSA, secp256k1, X25519) worden niet gelezen. Sleutels met de oude OpenSSL-beveiliging kunnen worden geopend bij AES of 3DES. Een .pfx-bestand bevat één sleutel met de bijbehorende certificaten. Een zeer grote RSA-sleutel maken kost tijd en kan niet halverwege worden gestopt. De RSA-bibliotheek heeft een bekende kwetsbaarheid voor een aanvaller die via een netwerk de duur van veel ondertekeningen kan meten (RUSTSEC-2023-0071): hier worden sleutels op je computer gemaakt en opgeslagen en wordt niets voor anderen ondertekend.",
+                "HTTP-client: HTTP/1.1 (geen HTTP/2 of 3); geen cookies tussen verzoeken; multipart-formulieren worden niet automatisch opgebouwd. Een antwoord groter dan 16 MB of een niet-tekstueel antwoord wordt naar een bestand geschreven door het verzoek opnieuw te versturen.",
+                "DNS-opvraag toont DNSSEC-handtekeningen zonder ze te controleren. Poortcontrole test alleen TCP: een stille UDP-poort is niet te onderscheiden van een gesloten poort. Certificaat van een website controleert niet of een certificaat is ingetrokken.",
+                "Het rechtsklikmenu is voor Windows Verkenner; in Windows 11 staan de opties onder ‘Meer opties weergeven’."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

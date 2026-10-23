@@ -1,0 +1,63 @@
+.strip {
+  display: flex;
+  flex: 0 0 160px;
+  flex-direction: column;
+  min-height: 0;
+  border-inline-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+}
+
+.strip[data-collapsed='true'] {
+  flex: 0 0 36px;
+  align-items: center;
+  gap: 4px;
+  padding-block: 4px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.tabs {
+  display: flex;
+  flex: 1;
+  gap: 2px;
+}
+
+.fold {
+  flex: none;
+  width: 28px;
+  min-height: 28px;
+}
+
+/* The arrows point the way the strip goes, also where reading runs right to left. */
+:global([dir='rtl']) .fold :global(svg),
+:global([dir='rtl']) .fold > span {
+  scale: -1 1;
+}
+
+.tab {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.tab:hover {
+  background: var(--sc-surface-2);
+}
+
+.tab[aria-selected='true'] {
+  background: var(--sc-accent-soft);
+  color: var(--sc-accent);
+}

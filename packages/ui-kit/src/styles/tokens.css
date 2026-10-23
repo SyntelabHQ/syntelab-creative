@@ -1,0 +1,123 @@
+/*
+ * Design tokens. Light is the default; `data-theme` (light or dark) and
+ * `data-tone` (plain or gray) are set by theme/theme.ts.
+ */
+:root {
+  color-scheme: light;
+  --sc-bg: #f3f4f6;
+  --sc-surface: #ffffff;
+  --sc-surface-2: #eceef1;
+  --sc-border: #dadee4;
+  --sc-text: #15181e;
+  --sc-muted: #555d6b;
+  --sc-accent: #2450c8;
+  --sc-accent-text: #ffffff;
+  --sc-accent-soft: #dde0e6;
+  --sc-danger: #ef4444;
+
+  /* Colors of the changelog, feedback and support actions (same as syntelab.com). */
+  --sc-action-feedback: #9c27b0;
+  --sc-action-support: #4caf50;
+  --sc-action-support-hover: #388e3c;
+  --sc-action-changelog: #ffc107;
+  --sc-action-changelog-hover: #ffa000;
+
+  --sc-success: #2e9d57;
+  --sc-success-strong: #2e7d32;
+  --sc-warning: #b26a00;
+  /* Found text, and marks of found text on pages. */
+  --sc-highlight: #f5b301;
+  --sc-find-hit: rgb(255 213 0 / 0.4);
+  --sc-find-current: rgb(255 138 0 / 0.55);
+  --sc-find-current-edge: rgb(230 110 0);
+  /* Text on a colored tile or badge. */
+  --sc-on-color: #ffffff;
+  /* Behind a window, and over a picture to write on it. */
+  --sc-backdrop: rgb(0 0 0 / 0.45);
+  --sc-overlay: rgb(32 36 44 / 0.88);
+  /* Lines that help place things on a page. */
+  --sc-guide: rgb(0 120 255 / 0.28);
+
+  /* Paper: pages and what is drawn like on them stay as on paper in every theme. */
+  --sc-paper: #ffffff;
+  --sc-paper-text: #15181e;
+  --sc-paper-text-soft: #555d6b;
+  --sc-paper-muted: #9aa1ad;
+  --sc-paper-line: #c9ced8;
+  --sc-paper-accent: #2450c8;
+  --sc-paper-accent-soft: #e3eafb;
+  --sc-paper-field: rgb(214 226 255 / 0.55);
+
+  /* Shadows: of a page or a card, of a menu, of a window. */
+  --sc-shadow-s: 0 1px 4px rgb(0 0 0 / 0.25);
+  --sc-shadow-m: 0 8px 24px rgb(0 0 0 / 0.16);
+  --sc-shadow-l: 0 12px 32px rgb(0 0 0 / 0.24);
+
+  --sc-brand: #007bff;
+  --sc-tooltip-bg: #2b303a;
+  --sc-tooltip-text: #f3f4f6;
+
+  --sc-font: 'IBM Plex Sans', 'IBM Plex Sans Arabic', 'Segoe UI', system-ui, sans-serif;
+  --sc-font-brand: 'Sansation', var(--sc-font);
+  --sc-font-size: 14px;
+
+  /* How round every corner of the program is: change this one value. The sizes below follow it. */
+  --sc-radius: 4px;
+  --sc-radius-xs: calc(var(--sc-radius) * 0.5);
+  --sc-radius-s: var(--sc-radius);
+  --sc-radius-m: calc(var(--sc-radius) * 1.5);
+  --sc-radius-l: calc(var(--sc-radius) * 2);
+  /* Only for what is round by nature: scroll bars, meters, the sample of a pen's stroke. */
+  --sc-radius-pill: 999px;
+  --sc-control-height: 44px;
+  /* Controls in windows and side panels, and the room left around a button's text there. */
+  --sc-control-height-compact: 32px;
+  --sc-button-padding-compact: 12px;
+  /* The commands of every ribbon tab take this height, so the ribbon does not move when the tab changes. */
+  --sc-ribbon-height: 72px;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --sc-bg: #0f1115;
+  --sc-surface: #181b21;
+  --sc-surface-2: #22262d;
+  --sc-border: #2e333c;
+  --sc-text: #e8eaee;
+  --sc-muted: #a0a8b4;
+  --sc-accent: #86a6ff;
+  --sc-accent-text: #0c1222;
+  --sc-accent-soft: #30353e;
+  --sc-tooltip-bg: #e8eaee;
+  --sc-tooltip-text: #15181e;
+}
+
+/* Light gray: the light theme a step darker, easier on the eyes on a bright screen. */
+:root[data-theme='light'][data-tone='gray'] {
+  --sc-bg: #d5d8dd;
+  --sc-surface: #e7e9ec;
+  --sc-surface-2: #c9cdd3;
+  --sc-border: #b3b8c1;
+  --sc-text: #15181e;
+  --sc-muted: #474e5a;
+  --sc-accent: #1f46b4;
+  --sc-accent-soft: #b6bbc4;
+}
+
+/* Dark gray: the dark theme a step lighter, without the near-black. */
+:root[data-theme='dark'][data-tone='gray'] {
+  --sc-bg: #2a2d32;
+  --sc-surface: #363a40;
+  --sc-surface-2: #43474e;
+  --sc-border: #555a63;
+  --sc-text: #eceef1;
+  --sc-muted: #b6bcc6;
+  --sc-accent: #9db7ff;
+  --sc-accent-text: #0c1222;
+  --sc-accent-soft: #565b65;
+}
+
+:root[dir='rtl'] {
+  --sc-font: 'IBM Plex Sans Arabic', 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+  --sc-font-size: 15px;
+}

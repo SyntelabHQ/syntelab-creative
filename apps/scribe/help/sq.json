@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Tekstet dhe skedarët",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editori",
+          "body": [
+            "Scribe është një editor teksti të thjeshtë me veglat e tij anash. Çdo tekst ka një skedë; teksti është në mes, paneli i veglave në anë dhe një rresht me të dhëna poshtë tij.",
+            "Kur hapet Scribe, fillimisht pyet se çfarë dëshironi të bëni: të numëroni fjalët, të kërkoni dhe zëvendësoni, të hiqni të përsëriturat, të krahasoni dy tekste, të renditni rreshtat, të përmbysni një tekst, të shkruani tekst mbushës ose tekst të rastësishëm. Çdo zgjedhje hap tekstin me mjetin përkatës anash; \"Një tekst bosh\" hap vetëm tekstin, dhe tekstet e hapura së fundmi renditen poshtë.",
+            {
+              "points": [
+                "Skedari → Tekst i ri (Ctrl+N) nis një tekst bosh.",
+                "Skedari → Hap (Ctrl+O) hap një ose disa skedarë, secilin në skedën e vet. Hapet çdo skedar që përmban tekst: .txt, .md, .csv, .log, .srt, kod burimi dhe të tjerë.",
+                "Redakto → Anulo (Ctrl+Z) dhe Ribëj (Ctrl+Y) kalojnë nëpër gjithçka që i është bërë tekstit; një mjet ose një recetë llogaritet si një hap.",
+                "Redakto → Kërko dhe zëvendëso (Ctrl+F) hap një shirit në editor që kalon nga një përputhje te tjetra.",
+                "Redakto → Zgjidh të gjitha (Ctrl+A)."
+              ]
+            },
+            "Rreshti nën tekst tregon ku ndodhet kursori, sa është përzgjedhur, numrin e rreshtave, fjalëve dhe karaktereve, kodimin e skedarit dhe si përfundojnë rreshtat e tij.",
+            "Hapen edhe skedarët e lëshuar në dritare, secili si një tekst i ri me emrin, kodimin dhe fundrreshtat e skedarit. Programi merr përmbajtjen e skedarit të lëshuar, por jo vendndodhjen e tij në disk, prandaj kur ruani ju pyet ku; skedarët mbi 64 MB hapen me Skedari → Hap.",
+            "Një tekst i ri, sa kohë është bosh, liston tekstet e hapura së fundmi: klikoni njërin për ta hapur. \"Fshi listën\" e zbraz atë; lista ruhet vetëm në këtë kompjuter."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Ruaj dhe Ruaj si",
+          "body": [
+            "Asgjë nuk e ndryshon skedarin në disk derisa ta ruani. Një pikë në skedë tregon se teksti ka ndryshime që nuk janë në skedarin e tij, dhe mbyllja e një skede të tillë kërkon konfirmim më parë.",
+            {
+              "points": [
+                "Ruaj (Ctrl+S) e shkruan tekstin mbi skedarin e tij. Për një tekst të ri pyet ku.",
+                "Ruaj si (Ctrl+Shift+S) e shkruan në një skedar të ri, i cili pastaj zë vendin e skedës, me gjithçka që mund të anulohet ende aty; skedari i vjetër mbetet siç ishte."
+              ]
+            },
+            "Një skedar shkruhet i plotë ose aspak: nëse shkrimi dështon, skedari që ishte aty mbetet aty.",
+            {
+              "note": "Një skedar ruhet ashtu siç është hapur: në të njëjtin kodim, me të njëjtat fundrreshte. Një tekst i shkruar në Windows dhe një i shkruar në Linux mbeten ashtu siç ishin."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodimet dhe fundrreshtet",
+          "body": [
+            "Një kodim është mënyra se si shkronjat ruhen si byte. Scribe lexon atë që skedari thotë për veten, dhe supon kur nuk thotë asgjë. Shumica e skedarëve sot janë UTF-8; ata më të vjetër nga Evropa Qendrore janë shpesh windows-1250.",
+            {
+              "points": [
+                "Shkronjat që duken gabim (Ã£ në vend të ă, ose katrorë): Skedari → \"Lexo përsëri me kodim tjetër\", dhe zgjidhni atë me të cilin është shkruar skedari.",
+                "Për të ruajtur në një kodim tjetër, zgjidhni atë në rreshtin nën tekst, pastaj ruajeni. Nëse teksti ka shkronja që ai kodim nuk mund të shkruajë, Scribe tregon cilat janë dhe nuk shkruan asgjë.",
+                "Fundrreshtet (Windows CRLF, Linux dhe macOS LF, Mac i vjetër CR) ndryshohen në të njëjtin vend. Për një skedar me fundrreshte të përziera kjo tregohet; ruajtja u jep të gjitha rreshtave të njëjtin fundrresht."
+              ]
+            },
+            "Me çfarë fillon një tekst i ri zgjidhet në Cilësimet."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Si shfaqet teksti",
+          "body": [
+            {
+              "points": [
+                "Çdo gjë në menunë Pamja është një çelës: kur është aktiv, shihet; kur është joaktiv, nuk shihet.",
+                "Teksti: Mbështjell rreshtat e gjatë (Alt+Z) — një rresht më i gjatë se dritarja vazhdon më poshtë, dhe teksti i mban rreshtat e tij; Numrat e rreshtave; Rezultati pranë tekstit.",
+                "Pranë tekstit: Veglat (Ctrl+T), Recetat, Statistikat. Paneli tregon vetëm pjesët që janë aktive; kur asnjë nuk është aktive, nuk ka panel.",
+                "Veglat e shfaqura: çdo grup veglash (Kërko dhe zëvendëso, Rreshta, Shkronjat e mëdha, Pastrim, Shkruaj tekst) mund të lihet jashtë panelit. Një mjet i zgjedhur nga menuja Formatimi ose Veglat shfaqet gjithsesi: pjesa dhe grupi i tij kthehen vetë.",
+                "Shigjeta e dyfishtë në pjesën e sipërme të panelit e palos atë në një shirit në skaj, nga i cili çdo pjesë është vetëm një klikim larg; tërhiqni skajin e tij për ta bërë më të gjerë ose më të ngushtë.",
+                "Shkronjat dhe madhësia e tyre zgjidhen te Cilësimet."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Skedarë shumë të mëdhenj",
+          "body": [
+            "Një skedar mbi 64 MB nuk vendoset në editor: ai hapet në një skedë që e shfaq një faqe prej 500 rreshtash në një herë, të lexuara nga skedari ndërsa ecni. Skedarët prej gigabajtësh hapen kështu për aq kohë sa duhet për t’i kaluar një herë.",
+            {
+              "points": [
+                "\"Faqja e mëparshme\" dhe \"Faqja tjetër\" lëvizin nëpër të; një numër rreshti dhe \"Shko\" kërcejnë te çdo rresht.",
+                "Kërkimi kërkon në të gjithë skedarin, me të njëjtat zgjedhje si kudo tjetër, dhe liston vendet ku gjeti: klikoni njërin për të shkuar te rreshti i tij. Një listë e gjatë vjen pjesë-pjesë, me \"Kërko më shumë\".",
+                "\"Ekzekuto një recetë në të gjithë skedarin\" e shkruan rezultatin në një dosje që zgjidhni ju, me të njëjtin emër. Vetë skedari nuk ndryshohet kurrë këtu.",
+                "\"Hape të gjithë në editor\" e vendos gjithsesi në editor, për ta ndryshuar me dorë. Mund të jetë i ngadaltë dhe kërkon në memorie disa herë madhësinë e skedarit."
+              ]
+            },
+            {
+              "note": "Skedarët e shkruar me dy bajte për shkronjë (UTF-16) nuk mund të shfaqen faqe pas faqeje. Një recetë e mban të gjithë skedarin në memorie gjatë ekzekutimit: kufiri është memoria e kompjuterit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Veglat",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Si funksionojnë mjetet",
+          "body": [
+            "Veglat janë në panelin pranë tekstit, në grupe. Klikoni një mjet për të parë zgjedhjet e tij, pastaj \"Zbato në tekst\".",
+            {
+              "points": [
+                "Kur diçka është e përzgjedhur, një mjet ndryshon vetëm përzgjedhjen; kur asgjë nuk është e përzgjedhur, të gjithë tekstin. Paneli tregon cilën, në pjesën e tij të sipërme.",
+                "Nën buton, një mjet tregon se çfarë bëri: sa rreshta ose vende ndryshoi.",
+                "Çdo mjet është një hap: Anulo e zhbën të tërin.",
+                "Çdo mjet gjendet edhe në menu dhe në kërkimin e komandave: ato që ndryshojnë formën e tekstit (rreshtat, shkronjat e mëdha dhe të vogla, pastrimi) te menuja Formatimi, të tjerat te Veglat. Zgjedhja e njërit prej tyre aty e hap panelin te zgjedhjet e tij."
+              ]
+            },
+            "Te menuja Formatimi, një mjet që është kryesisht një zgjedhje e vetme shtrihet sipas opsioneve të tij: çdo mënyrë për të ndryshuar shkronjat e mëdha, çdo lloj thonjëzash, çdo mënyrë për të përmbysur një tekst është një komandë më vete, e cila e hap mjetin me atë opsion të zgjedhur. Aty ku dritarja është shumë e ngushtë për një grup, grupi bëhet një buton që hap listën e plotë.",
+            "Veglat ekzekutohen në këtë kompjuter. Asnjë tekst nuk largohet prej tij."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Rezultati, para aplikimit",
+          "body": [
+            "Ndërsa një mjet është i hapur, ajo që do të jepte shfaqet pranë tekstit, në panelin \"Rezultati\". Asgjë në tekst nuk ndryshon derisa të zgjidhni \"Zbato në tekst\". Rezultati ju ndjek: ndryshoni një zgjedhje ose tekstin, dhe ai bëhet përsëri.",
+            {
+              "points": [
+                "Teksti dhe rezultati qëndrojnë krah për krah, secili nën një kokë të së njëjtës lartësi, kështu që të njëjtat rreshta fillojnë në të njëjtën lartësi; ata rrëshqasin së bashku (butoni me zinxhir e çaktivizon këtë).",
+                "Rreshtat që do të ndryshonin janë të shënuar, me pjesën e rreshtit që ndryshon të shënuar më errët; rreshtat që vetëm do të zhvendoseshin dhe rreshtat e rinj kanë secili ngjyrën e vet. Rreshtat që do të ndryshoheshin ose do të hiqeshin janë të shënuar edhe në tekstin tuaj.",
+                "Nën emrat: çfarë do të ndodhte në numra — rreshtat e ndryshuar, të lëvizur, të rinj, të hequr; rreshtat dhe karakteret para dhe pas.",
+                "Nën rezultatin: rreshtat që do të hiqeshin. Klikoni njërin për të shkuar tek ai në tekst.",
+                "Butonat e vegjël të rezultatit: kopjojeni, hapeni si tekst të ri, krahasojeni me tekstin në një skedë, rrëshqitni së bashku, vendoseni rezultatin nën tekst në vend se pranë tij, fshiheni. Teksti ka butonat e vet: anulo, ribëj, kopjo, ngjit në vend, zgjidh të gjitha, pastro.",
+                "Tërhiqni shiritin midis të dyjave për t'i dhënë njërit më shumë hapësirë; një klikim i dyfishtë i bën ata përsëri të barabartë."
+              ]
+            },
+            "Pas \"Zbato në tekst\", paneli Rezultati e thotë këtë (\"U zbatua. Teksti në të majtë tani është rezultati.\") dhe ofron Anulo dhe \"Krahaso me atë që ishte\", që hap të njëjtin krahasim të para dhe pas. Ai tregon sërish një rezultat sapo të ndryshoni tekstin ose një zgjedhje të mjetit.",
+            {
+              "note": "Pamja → \"Rezultati pranë tekstit\" e fik dhe e ndez panelin. Për një tekst shumë të gjatë (mbi dy milionë karaktere) asgjë nuk shfaqet paraprakisht: zbatoni mjetin, dhe Anulo e kthen mbrapsht."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Zëvendëso kudo",
+          "body": [
+            "Zëvendëson njëherësh çdo vend ku gjendet diçka. Ndërsa shkruani atë që kërkoni, Scribe tregon në sa vende gjendet dhe i shënon në tekst, që të shihni çfarë do të ndryshojë para se ta zbatoni.",
+            {
+              "points": [
+                "\"Shprehje e rregullt\": teksti që kërkohet është një model. Te \"Zëvendëso me\", $1, $2… zënë vendin e asaj që gjetën grupet e modelit.",
+                "\"Dallon shkronjat e mëdha\": a dhe A janë shkronja të ndryshme.",
+                "\"Vetëm fjalë të plota\": \"mal\" nuk gjendet brenda \"malore\".",
+                "\"Ruaj shkronjat e mëdha të asaj që zëvendësohet\": zëvendësimi i \"mace\" me \"qen\" e kthen \"Mace\" në \"Qen\" dhe \"MACE\" në \"QEN\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Më shumë zgjedhje\" → \"Plotëso…\": ajo që vendoset në vend mund të ketë boshllëqe që plotësohen në çdo përputhje. {counter} numëron 1, 2, 3… ({counter:10} fillon nga 10, {counter:10:5} rritet me 5); {date} dhe {time} janë data dhe ora e kompjuterit tuaj; {uuid} është një identifikues; {random} janë 8 shkronja dhe shifra të rastësishme ({random:12} për 12).",
+                "Nën atë që kërkoni, Scribe tregon gjithashtu në sa rreshta janë përputhjet dhe sa tekste të ndryshme janë ato."
+              ]
+            },
+            "\"Zëvendëso disa njëkohësisht\" kryen një listë çiftesh në një hap. Shkruani një çift për rresht, kështu: çfarë kërkohet => çfarë vendoset në vend të tij. Ato kryhen nga i pari te i fundit, secili mbi atë që la i mëparshmi; një gjysmë e dytë bosh e heq tekstin.",
+            {
+              "note": "Një model nuk mund të bllokojë programin: koha që kërkohet rritet në përpjesëtim të gjatësisë së tekstit dhe jo më shpejt. Për këtë arsye, modelet që referohen prapa në atë që kanë gjetur (\\1) nuk janë të disponueshme."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Rreshtat",
+          "body": [
+            {
+              "points": [
+                "Renditni rreshtat sipas: shkronjave të tyre, siç bën një fjalor, në gjuhën e programit ose në një gjuhë që zgjidhni (në rumanisht ă vjen pas a; suedishtja e vendos ä pas z, gjermanishtja pranë a); shkronjave me numrat si numra (file2 para file10); numrit me të cilin fillon çdo rresht; gjatësisë; numrit të fjalëve; datës me të cilën fillon çdo rresht (05.03.2024, 2024-03-05, me ose pa orë); adresave të internetit; numrave të versioneve (1.2.10 pas 1.2.9); titujve, ku një nyje në fillim nuk llogaritet; një renditjeje që shkruani ju (e vogël, e mesme, e madhe); ose pa asnjë renditje.",
+                "Rreshtat që nuk kanë asgjë sipas së cilës të renditen (pa numër, pa datë, një vlerë që nuk është në renditjen që keni shkruar) mbeten në fund, në cilëndo mënyrë të renditen të tjerët: më të vegjlit të parët ose më të mëdhenjtë të parët.",
+                "Më shumë zgjedhje për renditjen: krahasimi nga një fjalë ose një karakter e tutje, ose sipas një kolone të një tabele (me atë që ndan kolonat); mbajtja e rreshtit të parë në vend si kokë; renditja e paragrafëve në vend të rreshtave; dhe rregullimi paraprak — prerja e hapësirave, heqja e rreshtave bosh, heqja e të përsëriturave.",
+                "Hiq rreshtat e përsëritur: mbani të parin, të fundit ose asnjë nga rreshtat që përsëriten (mbeten vetëm ata që janë një herë). Shkronjat e mëdha, hapësirat rreth një rreshti, shifrat, shenjat e pikësimit dhe një numër karakteresh në fillim ose në fund mund të shpërfillen secili; mund të krahasohet vetëm një kolonë, ose vetëm ajo që gjen një model. Rreshtat bosh trajtohen si të tjerët: mbahen, hiqen ose bashkohen.",
+                "Numëro rreshtat e përsëritur: e lë çdo rresht një herë, me numrin e herëve që ishte aty të shkruar para tij — më të përsëriturit të parët, ose më pak të përsëriturit, ose sipas radhës në të cilën vijnë.",
+                "Mbaj ose hiq rreshtat: kërkon diçka në çdo rresht dhe mban vetëm rreshtat që e kanë atë, ose vetëm ata që nuk e kanë.",
+                "Përmbys rreshtat; Përzje rreshtat.",
+                "Numëro rreshtat: numri i parë, çfarë vjen pas tij, zero në fillim që numrat të rreshtohen, rreshtat bosh pa numër.",
+                "Rreshtat bosh: hiqi të gjithë, ose lër një aty ku janë disa.",
+                "Bashko rreshtat në një, me atë që zgjidhni mes tyre; Nda në rreshta te çdo presje, pikëpresje ose çdo gjë tjetër. Kudo ku shkruhet ajo që qëndron mes gjërave (numërimi, bashkimi, ndarja, numërimi i rreshtave), \\t zë vendin e një tabulimi, i cili nuk mund të shkruhet në fushë."
+              ]
+            },
+            {
+              "note": "Një zgjedhje që ka rëndësi vetëm bashkë me një tjetër shfaqet vetëm atëherë: kolona, pasi të krahasoni sipas një kolone. Zgjedhjet që u nevojiten më pak njerëzve janë te \"Më shumë zgjedhje\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Shkronjat e mëdha",
+          "body": [
+            "Ndrysho shkronjat e mëdha/të vogla: fillimi i fjalisë me të madhe, çdo fjalë me shkronjë të madhe, të gjitha shkronja të mëdha, të gjitha shkronja të vogla, të invertuara, dhe mënyrat si shkruhen emrat në kod: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Shkronjat e mëdha ndjekin rregullat e çdo alfabeti, jo vetëm të anglishtes.",
+            "Në grupin Drejtimi, \"Përmbys tekstin\" përmbys shkronjat e çdo rreshti, ose radhën e fjalëve të tij, ose shkronjat e çdo fjale; \"Me kokë poshtë\" e shkruan që të lexohet nga ana tjetër e tavolinës, dhe \"Si në pasqyrë\" shkëmben edhe shenjat që kanë një të majtë dhe një të djathtë. Shkronjat numërohen siç i numëron një lexues: një shkronjë me shenjat e saj mbetet një."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Pastrimi",
+          "body": [
+            {
+              "points": [
+                "Pastro hapësirat: disa hapësira bëhen një; hapësirat në fund të rreshtave hiqen.",
+                "Pras fundet e rreshtave: në të dy skajet, në fillim ose në fund.",
+                "Thonjëzat: të drejta, angleze, rumune, gjermane ose franceze.",
+                "Hiq diakritikat: ă bëhet a, é bëhet e. Vetëm në alfabetet latine dhe greke, ku një shkronjë pa shenjën e saj është ende ajo shkronjë.",
+                "Rregullimi i shkronjave rumune: ş dhe ţ (me cedilë, të shkruara nga tastierat e vjetra) bëhen ș dhe ț (me presje), shkronjat me të cilat shkruhet gjuhë rumune.",
+                "Tabulimet në hapësira dhe hapësirat në tabulime, me gjerësinë e tabulimit që zgjidhni ju.",
+                "Hiq etiketat HTML: për kodin burimor të një faqeje ueb të ngjitur në tekst. Etiketat, skriptet dhe stilet hiqen; mbetet ajo që do të shihte një lexues. Për të marrë një faqe nga adresa e saj, përdorni mjetin poshtë tij, \"Teksti i një faqeje ueb\".",
+                "Teksti i një faqeje ueb: shkruani adresën e një faqeje (example.com/page) dhe zgjidhni \"Merr tekstin\". Ajo që një lexues do të shihte në atë faqe shkruhet aty ku ndodhet kursori, pa etiketa, skripte ose stile. Ky është i vetmi mjet i Scribe që lidhet me internetin, dhe vetëm kur e kërkoni: faqja merret nga shfletuesi i instaluar në këtë kompjuter (Microsoft Edge ose Google Chrome), i ekzekutuar pa dritare dhe pa cookies ose hyrjet tuaja; vetë programi nuk dërgon asgjë. Një faqe që kërkon të jeni i kyçur jep vetëm atë që do të shihte një i panjohur."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Rikthimi i diakritikave rumune",
+          "body": [
+            "Teksti rumun i shkruar pa ă, â, î, ș, ț shkruhet përsëri me to.",
+            {
+              "steps": [
+                "Hapni mjetin në grupin Pastrim dhe zgjidhni \"Zbato në tekst\".",
+                "Fjalët që kanë vetëm një formë të saktë ndryshojnë menjëherë: \"stiu\" bëhet \"știu\", \"informatii\" bëhet \"informații\".",
+                "Fjalët që mund të lexohen në mënyra të ndryshme (fata, fată, fața, față) listohen nën buton, secila në vendin e saj në tekst. Klikoni formën e saktë për secilën.",
+                "Ose shënoni \"Zgjidh vetë formën më të mundshme kur një fjalë është e dyshimtë\" para zbatimit: nuk pyetet asgjë, dhe rezultati duhet lexuar me kujdes."
+              ]
+            },
+            "Atje ku fjalët rrethuese janë të mjaftueshme, Scribe vendos bazuar në to: \"o casa\" bëhet \"o casă\", \"casa mea\" mbetet ashtu, \"pentru ca\" bëhet \"pentru că\".",
+            {
+              "note": "Kjo është ndërtuar për Scribe nga një listë fjalësh të zakonshme dhe mbaresat që rumanishtja i shkruan gjithmonë me diakritikë. Fjalët që nuk i njeh (fjalë të rralla, emra) mbeten siç janë shtypur, dhe një fjalë e shkruar tashmë me diakritikë nuk preket kurrë. Lexoni rezultatin para se ta dërgoni."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Shkrimi i tekstit: mbushës dhe i rastësishëm",
+          "body": [
+            "Mjetet e grupit \"Shkruaj tekst\" nuk ndryshojnë asgjë: ato shkruajnë. Ajo që japin shkon aty ku ndodhet kursori, në vend të përzgjedhjes.",
+            {
+              "points": [
+                "Tekst mbushës: paragrafë, fjali, fjalë, lista, tituj, ose pjesë të një faqeje (një titull, paragrafë, një listë). Në latinishten e shtypshkronjave (lorem ipsum), anglisht, rumanisht, me fjalë zyre ose kuzhine, ose me fjalët tuaja. Më shumë zgjedhje: fjali të shkurtra, të mesme ose të gjata; tekst i thjeshtë, Markdown, HTML ose JSON; niveli i titujve; një kufi në karaktere (teksti pritet te një fjalë e plotë dhe sërish mbaron si fjali); fjalë që lihen jashtë.",
+                "Të dhëna imagjinare: emra, adresa e-mail, numra telefoni, adresa rrugësh, data ose numra, një për rresht, të Rumanisë ose të vendeve anglishtfolëse. \"Rreshta sipas modelit tim\" e shkruan çdo rresht siç thoni ju, ku {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} dhe {row} zënë vendin e asaj që krijohet — një tabelë për të provuar diçka, në një çast.",
+                "Tekst i rastësishëm: fjalëkalime (shkronja, shifra dhe shenja, të paktën një nga secila), shkronja, shifra, heksadecimale ose identifikues (UUID), në një rresht ose në shumë. Karakteret që ngatërrohen lehtë (0 dhe O, 1, l dhe I) mund të lihen jashtë.",
+                "Fara (te \"Më shumë zgjedhje\") bën që teksti mbushës dhe të dhënat imagjinare të dalin njësoj çdo herë për të njëjtin numër; 0 jep diçka të re çdo herë."
+              ]
+            },
+            {
+              "note": "Fjalëkalimet krijohen në këtë kompjuter, nga rastësia e sistemit operativ, dhe nuk dërgohen askund. Adresat e-mail imagjinare përfundojnë me example.com, ku posta nuk arrin te askush; një numër telefoni i krijuar rastësisht mund të jetë i dikujt, prandaj mos e telefononi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recetat",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Ruajtja e veprimeve si recetë",
+          "body": [
+            "Një recetë është një listë mjetesh me zgjedhjet e tyre, e ruajtur nën një emër dhe që ekzekutohet përsëri me një klikim.",
+            {
+              "steps": [
+                "Zbatoni në një tekst mjetet që dëshironi, në radhën që dëshironi.",
+                "Hapni \"Recetat\" në krye të panelit: mjetet që keni zbatuar janë të listuara.",
+                "\"Ruaje si recetë\", dhe jepini një emër.",
+                "Më vonë, hapni recetën dhe zgjidhni \"Ekzekuto në tekst\": të gjithë hapat e saj kryhen, dhe një Anulo i kthen të gjithë mbrapsht."
+              ]
+            },
+            "Recetat ruhen në këtë kompjuter dhe janë aty në çdo tekst."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Ndryshimi i një recete, ose krijimi i një të reje nga e para",
+          "body": [
+            "\"Ndrysho\" në një recetë të hapur shfaq emrin dhe hapat e saj. Çdo hap mund të zhvendoset lart ose poshtë, të hiqet, ose t’i jepen zgjedhje të tjera; mjetet shtohen nga lista nën hapat. Asgjë nuk ruhet derisa të zgjidhni \"Ruaj\".",
+            "\"Recetë e re\" nis një recetë pa hapa, që ndërtohet në të njëjtën mënyrë pa i zbatuar më parë mjetet në një tekst.",
+            {
+              "note": "Mjetet që shkruajnë tekst (mbushës, i rastësishëm) nuk janë hapa të një recete: një recetë ndryshon një tekst."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Ekzekutimi i një recete në skedarë",
+          "body": [
+            {
+              "steps": [
+                "Hapni recetën dhe, te \"Ekzekuto në skedarë\", shtoni skedarë ose një dosje (bashkë me dosjet brenda saj).",
+                "Zgjidhni ku shkojnë rezultatet: në një dosje tjetër, gjë që i lë skedarët siç janë, ose mbi vetë skedarët.",
+                "Ekzekutoni. Scribe tregon sa skedarë u shkruan, sa nuk kishin nevojë për ndryshim, dhe cilët nuk mund të përpunoheshin dhe pse."
+              ]
+            },
+            "Çdo skedar shkruhet në kodimin dhe me fundrreshtat që kishte. Në një dosje tjetër, skedarët ruajnë dosjet me të cilat erdhën, dhe një skedar që është tashmë aty nuk mbishkruhet kurrë.",
+            {
+              "note": "Mbishkrimi i vetë skedarëve nuk mund të anulohet nga Scribe. Mbani një kopje nëse janë të rëndësishëm."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistikat, krahasimi dhe dosjet",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistikat",
+          "body": [
+            "\"Statistikat\" në krye të panelit tregojnë nga se përbëhet teksti ose përzgjedhja. Çdo pjesë mund të palohet.",
+            {
+              "points": [
+                "Në krye: fjalët, karakteret me dhe pa hapësira, fjalitë, paragrafët, rreshtat, faqet dhe madhësia në bajte.",
+                "Koha: për lexim të heshtur, për lexim me zë, për shkrim në tastierë dhe për shkrim me dorë.",
+                "Fjalët: sa janë të ndryshme (dhe çfarë përqindjeje të të gjithave), shkronjat në një fjalë, rrokjet, fjala më e gjatë dhe më e shkurtra, dhe sa fjalë ka për çdo gjatësi.",
+                "Fjalitë: fjalët në një fjali, sa janë të shkurtra, të mesme dhe të gjata, sa janë pohime, pyetje dhe thirrje, si dhe fjalia më e gjatë dhe më e shkurtra.",
+                "Lehtësia e leximit: një pikë nga 0 (shumë e vështirë) deri në 100 (shumë e lehtë), sipas formulës së krijuar për gjuhën e tekstit. Ka formula për anglishten, gjermanishten, spanjishten, frëngjishten, italishten, holandishten, portugalishten dhe rusishten; një gjuhë pa formulë nuk merr pikë, sepse një formulë e krijuar për një gjuhë tjetër do të çorientonte.",
+                "Çfarë thotë më së shumti: fjalët e përdorura më shpesh me pjesën e tyre në tekst, si dhe çiftet dhe grupet prej tre fjalësh që përsëriten.",
+                "Hapësira në kufijtë e zakonshëm: sa karaktere kanë mbetur, ose janë tepër, për një titull, një përshkrim, një postim të shkurtër dhe të tjera."
+              ]
+            },
+            "Fjalët dhe fjalitë gjenden sipas rregullave të çdo shkrimi, kështu që numërohen edhe kinezishtja, japonishtja dhe tajlandishtja, që nuk vendosin hapësira mes fjalëve. Shpejtësitë me të cilat llogariten kohët dhe sa fjalë përbëjnë një faqe caktohen te Cilësimet."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Krahasimi i dy teksteve",
+          "body": [
+            {
+              "points": [
+                "Veglat → \"Krahaso me një tekst tjetër\": teksti në editor pranë një teksti që shkruani ose ngjisni.",
+                "Veglat → \"Krahaso me një skedar\": teksti në editor, siç është tani, pranë një skedari që zgjidhni.",
+                "Veglat → \"Krahaso dy tekste\": dy tekste të shkruara ose të ngjitura krah për krah.",
+                "Veglat → \"Krahaso dy skedarë\"."
+              ]
+            },
+            "Të dy tekstet shfaqen krah për krah. Rreshtat që janë vetëm te i pari shënohen si të hequr, rreshtat vetëm te i dyti si të shtuar, dhe në një rresht që ka ndryshuar shënohen fjalët që ndryshojnë. Shfaqet vetëm ajo që ndryshon, me disa rreshta përreth; shigjetat kalojnë nga një ndryshim te tjetri.",
+            "Shkronjat e mëdha, hapësirat, rreshtat bosh, numrat dhe shenjat e pikësimit mund të shpërfillen secili. \"Në një kolonë\" tregon atë që u hoq mbi atë që u vu, secili me shenjën e vet, në vend se krah për krah. Pranë numrave, Scribe tregon sa të ngjashëm janë të dy tekstet, si pjesa e rreshtave që janë të njëjtë.",
+            "Një tekst shfaqet sapo zgjidhet, para se të zgjidhet tjetri. Tërhiqni shiritin midis dy teksteve për t’i dhënë njërit më shumë hapësirë; ndërsa tekstet shkruhen, shiriti nën kutitë tërhiqet lart e poshtë për t’u dhënë kutive ose krahasimit më shumë hapësirë. Një klikim i dyfishtë e kthen shiritin në vend.",
+            "Aty ku disa rreshta radhazi janë ndryshuar, secili vendoset pranë rreshtit me të cilin ngjan më shumë, kështu që një rresht i shtuar ose i hequr mes tyre nuk i bën të gjithë rreshtat pas tij të duken si të ndryshuar në rreshtin pasardhës.",
+            "\"Shkruani ose ngjisni tekstet\" shfaq një kuti mbi çdo kolonë; ajo që shkruani aty krahasohet ndërsa shkruani, dhe ende mund të zgjidhet një skedar për secilën anë."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Kërkimi dhe zëvendësimi në një dosje",
+          "body": [
+            {
+              "steps": [
+                "Veglat → \"Kërko në një dosje\" (Ctrl+Shift+F), dhe zgjidhni dosjen. Kërkohet edhe në dosjet brenda saj.",
+                "Shkruani atë që kërkoni, me të njëjtat zgjedhje si te \"Zëvendëso kudo\". \"Llojet e skedarëve\" e kufizon kërkimin në disa prapashtesa (txt, md, csv…).",
+                "Çdo përputhje shfaqet në rreshtin e saj, skedar pas skedari. Klikoni një rresht për të hapur skedarin në atë pikë.",
+                "Për të zëvendësuar: shkruani tekstin e ri, hiqni shenjën nga skedarët që doni t’i lini të paprekur dhe zgjidhni \"Shkruaj skedarët\"."
+              ]
+            },
+            "Asgjë nuk shkruhet derisa ta kërkoni, dhe vetëm në skedarët që mbeten të shënuar. Çdo skedar shkruhet në kodimin dhe me fundrreshtat që kishte.",
+            {
+              "note": "Dosjet e fshehura dhe ato që mbushin programet (.git, node_modules) anashkalohen, përveç nëse i kërkoni. Skedarët që nuk janë tekst anashkalohen gjithmonë."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cilësimet",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Cilësimet e Scribe",
+          "body": [
+            "Skedari → Cilësimet hap Cilësimet e programit te pjesa e Scribe.",
+            {
+              "points": [
+                "Edituesi: shkronja me gjerësi të njëjtë ose ato të programit, madhësia e tyre, mbështjellja, numrat e rreshtave, dhe nëse rezultati i një mjeti shfaqet para se të zbatohet.",
+                "Një tekst i ri: si përfundojnë rreshtat e tij, dhe nëse skedari i tij fillon me një shenjë të rendit të bajteve (BOM).",
+                "Statistikat: shpejtësitë e leximit, thënies, shkrimit me tastierë dhe shkrimit me dorë, dhe sa fjalë përbëjnë një faqe.",
+                "Tastet e komandave të Scribe."
+              ]
+            },
+            "Çdo cilësim ka një buton që e kthen siç vjen me programin."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Rreth Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Rreth Scribe",
+          "body": [
+            "Scribe është aplikacioni i tekstit i Syntelab Creative: një editor me veglat e tij pranë tekstit. Tregon çfarë do të bënte një mjet para se ta bëjë, pastron dhe rirendit listat, kërkon dhe zëvendëson në një tekst ose në një dosje të tërë, krahason dy tekste, tregon nga se përbëhet një tekst, shkruan tekst mbushës dhe të dhëna imagjinare, dhe ruan si receta atë që bëni shpesh, për ta ekzekutuar përsëri.",
+            "Çdo gjë bëhet në këtë kompjuter. Nuk ka kufi për madhësinë ose numrin e teksteve: kufijtë janë memoria e kompjuterit dhe ajo që mund të bëjë teknologjia e sotme.",
+            "Është i ri. Aty ku nuk mjafton për tekstet tuaja, na tregoni përmes Ndihma → Komentet: kështu e dimë për çfarë të punojmë."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Me çfarë është ndërtuar Scribe",
+          "body": [
+            {
+              "points": [
+                "Editori: CodeMirror.",
+                "Leximi dhe shkrimi i kodimeve: encoding_rs, me chardetng për të gjetur kodimin e një skedari që nuk e thotë.",
+                "Kërkimi dhe zëvendësimi: libraria regex e Rust, modelet e së cilës nuk mund ta bllokojnë programin.",
+                "Renditja ashtu siç bën çdo gjuhë, dhe gjetja e fjalëve dhe fjalive në çdo shkrim: ICU4X, libraria Unicode.",
+                "Krahasimi i teksteve: libraria similar.",
+                "Diakritikat rumune: një listë fjalësh dhe rregullash të shkruara për Scribe."
+              ]
+            },
+            "Ajo që ndan me pjesën tjetër të programit gjendet te \"Rreth Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Çfarë nuk mund të bëjë ende Scribe",
+          "body": [
+            {
+              "points": [
+                "Një skedar shumë i madh lexohet faqe pas faqeje dhe ndryshohet vetëm përmes recetave; për ta ndryshuar me dorë duhet hapur i tëri, gjë që kërkon memorie.",
+                "Rikthimi i shenjave diakritike rumune i njeh fjalët e zakonshme; fjalët dhe emrat e rrallë mbeten ashtu siç janë shkruar.",
+                "Nuk ka kontroll të drejtshkrimit.",
+                "Teksti nuk nxirret nga PDF ose dokumentet e zyrës këtu; PDF Organizer i hap ato.",
+                "Editori nuk i ngjyros kodin ose Markdown-in.",
+                "Një skedar i lëshuar në dritare hapet si tekst i ri: programit nuk i thuhet ku ndodhet skedari, prandaj kur ruani ju pyet ku."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

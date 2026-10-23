@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Tekstovi i datoteke",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editor",
+          "body": [
+            "Scribe je editor običnog teksta sa alatima pored njega. Svaki tekst ima karticu; tekst je u sredini, panel sa alatima sa strane, a red sa informacijama ispod njega.",
+            "Kada se Scribe otvori, prvo pita šta biste željeli uraditi: prebrojati riječi, pronaći i zamijeniti, ukloniti duplikate, uporediti dva teksta, sortirati redove, obrnuti tekst, napisati popunjavajući ili nasumični tekst. Svaki izbor otvara tekst sa pripadajućim alatom pored; „Prazan tekst“ otvara samo tekst, a nedavno otvoreni tekstovi su izlistani ispod.",
+            {
+              "points": [
+                "Datoteka → Novi tekst (Ctrl+N) započinje prazan tekst.",
+                "Datoteka → Otvori (Ctrl+O) otvara jednu ili više datoteka, svaku u svojoj kartici. Otvara svaka datoteka koja sadrži tekst: .txt, .md, .csv, .log, .srt, izvorni kod i druge.",
+                "Uredi → Poništi (Ctrl+Z) i Ponovi (Ctrl+Y) prolaze kroz sve što je urađeno s tekstom, pri čemu jedan alat ili recept računaju kao jedan korak.",
+                "Uredi → Traži i zamijeni (Ctrl+F) otvara traku u editoru koja prelazi sa jednog pronađenog rezultata na sljedeći.",
+                "Uredi → Označi sve (Ctrl+A)."
+              ]
+            },
+            "Red ispod teksta pokazuje gdje se nalazi kursor, koliko je teksta označeno, broj redova, riječi i znakova, kodiranje datoteke i način završetka redova.",
+            "Datoteke prevučene u prozor se također otvaraju, svaka kao novi tekst sa nazivom datoteke, kodiranjem i završetkom redova. Program preuzima sadržaj prevučene datoteke, ali ne i njenu putanju na disku, pa prilikom spremanja pita gdje je sačuvati; datoteke veće od 64 MB otvaraju se putem Datoteka → Otvori.",
+            "Novi tekst, dok je prazan, izlistava nedavno otvorene tekstove: kliknite na jedan da biste ga otvorili. „Zaboravi listu“ je prazni; lista se čuva samo na ovom računaru."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Spremi i Spremi kao",
+          "body": [
+            "Ništa ne mijenja datoteku na disku dok je ne spremite. Tačka na kartici označava da tekst ima izmjene koje nisu u datoteci, a zatvaranje takve kartice prvo traži potvrdu.",
+            {
+              "points": [
+                "Spremi (Ctrl+S) zapisuje tekst preko njegove datoteke. Za novi tekst će biti traženo mjesto spremanja.",
+                "Spremi kao (Ctrl+Shift+S) zapisuje sadržaj u novu datoteku, koja zatim zauzima mjesto kartice, pri čemu sve što se može poništiti ostaje dostupno; stara datoteka ostaje kakva je i bila."
+              ]
+            },
+            "Datoteka se zapisuje u potpunosti ili uopšte ne: ako zapisivanje ne uspije, datoteka koja je bila tu i dalje ostaje.",
+            {
+              "note": "Datoteka se čuva onako kako je i otvorena: u istom kodiranju, sa istim završecima redova. Tekst napisan na Windows-u i onaj napisan na Linux-u ostaju onakvi kakvi su bili."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodiranja i završeci redova",
+          "body": [
+            "Kodiranje je način na koji se slova čuvaju kao bajtovi. Scribe čita ono što datoteka kaže o sebi, a kada ne kaže ništa, on pogađa. Većina današnjih datoteka je u UTF-8 formatu; starije iz Centralne Evrope su često windows-1250.",
+            {
+              "points": [
+                "Slova koja izgledaju pogrešno (Ã£ umjesto ă, ili kvadratići): Datoteka → „Ponovo pročitaj u drugom kodiranju“, i odaberite ono u kojem je datoteka napisana.",
+                "Da biste sačuvali u drugom kodiranju, odaberite ga na liniji ispod teksta, a zatim sačuvajte. Ako tekst sadrži slova koja to kodiranje ne može zapisati, Scribe će navesti koja su to slova i neće zapisati ništa.",
+                "Završeci redova (Windows CRLF, Linux i macOS LF, stari Mac CR) mijenjaju se na istom mjestu. Za datoteku sa miješanim završecima kaže se da ih ima; čuvanjem se svim redovima dodjeljuje isti završetak."
+              ]
+            },
+            "Ono čime novi tekst počinje odabire se u Postavkama."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Kako se tekst prikazuje",
+          "body": [
+            {
+              "points": [
+                "Sve u meniju Pregled je prekidač: kada je uključeno, vidi se; kada je isključeno, ne vidi se.",
+                "Tekst: Prelom dugačkih linija (Alt+Z) — red duži od prozora prelazi u red ispod, a tekst zadržava svoje redove; Brojevi linija; Rezultat pored teksta.",
+                "Pored teksta: Alati (Ctrl+T), Recepti, Statistika. Panel prikazuje samo dijelove koji su uključeni; ako nijedan nije uključen, panel se ne prikazuje.",
+                "Prikazani alati: svaka grupa alata (pronađi i zamijeni, linije, velika i mala slova, čišćenje, pisanje teksta) može se ukloniti iz panela. Alat odabran iz menija Format ili Alati se prikazuje bez obzira na to: njegov dio i grupa se automatski vraćaju.",
+                "Dvostruka strelica na vrhu panela sklapa ga u traku na rubu, iz koje je svaki njegov dio udaljen samo jedan klik; povucite rub kako biste ga proširili ili suzili.",
+                "Slova i njihova veličina odabiraju se u Postavkama."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Vrlo velike datoteke",
+          "body": [
+            "Datoteka veća od 64 MB ne stavlja se u editor: ona se otvara u kartici koja prikazuje jednu stranicu od 500 linija odjednom, čitajući iz datoteke kako napredujete. Datoteke od nekoliko gigabajta otvaraju se na ovaj način u vrijeme koje je potrebno da se jednom prođu.",
+            {
+              "points": [
+                "„Prethodna stranica“ i „Sljedeća stranica“ omogućavaju kretanje kroz datoteku; broj linije i „Idi“ omogućavaju skok na bilo koju liniju.",
+                "„Traži“ pretražuje cijelu datoteku, sa istim opcijama kao i drugdje, i izlistava pronađena mjesta: kliknite na jedno kako biste otišli na njegovu liniju. Duga lista se prikazuje dio po dio pomoću opcije „Pronađi više“.",
+                "„Pokreni recept na cijeloj datoteci“ zapisuje rezultat u folder koji odaberete, pod istim imenom. Sama datoteka se ovdje nikada ne mijenja.",
+                "„Otvori cijelu u editoru“ ipak je stavlja u editor kako biste je ručno izmijenili. To može biti sporo i zahtijeva višestruku veličinu datoteke u memoriji."
+              ]
+            },
+            {
+              "note": "Datoteke zapisane sa dva bajta po slovu (UTF-16) ne mogu se prikazivati stranicu po stranicu. Recept drži cijelu datoteku u memoriji dok se izvršava: ograničenje je memorija računara."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alati",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Kako alati rade",
+          "body": [
+            "Alati se nalaze u panelu pored teksta, organizovani u grupe. Kliknite na alat da vidite njegove opcije, a zatim na „Primijeni na tekst“.",
+            {
+              "points": [
+                "Kada je nešto označeno, alat mijenja samo označeni dio; kada ništa nije označeno, mijenja cijeli tekst. Panel na vrhu navodi koji se slučaj radi.",
+                "Ispod dugmeta, alat navodi šta je uradio: koliko je linija ili mjesta izmijenio.",
+                "Svaki alat predstavlja jedan korak: „Poništi“ ga u potpunosti poništava.",
+                "Svaki alat se nalazi i u menijima i u pretrazi komandi: oni koji mijenjaju oblik teksta (linije, velika slova i slova, čišćenje) u meniju Format, ostali u meniju Alati. Odabir jednog od njih otvara panel sa njegovim opcijama."
+              ]
+            },
+            "U meniju Format, alat koji uglavnom ima jednu opciju prikazan je kao set opcija: svaki način promjene velikih slova, svaka vrsta navodnika, svaki način preokretanja teksta je zasebna komanda, koja otvara alat sa odabranom opcijom. Tamo gdje je prozor preuzak za grupu, grupa postaje jedno dugme koje otvara cijelu listu.",
+            "Alati rade na ovom računaru. Nijedan tekst ga ne napušta."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Rezultat, prije primjene",
+          "body": [
+            "Dok je alat otvoren, ono što bi on uradio prikazano je pored teksta, u panelu „Rezultat“. Ništa u tekstu se ne mijenja dok ne odaberete „Primijeni na tekst“. Rezultat vas prati: promijenite opciju ili tekst, i on će biti ponovo generisan.",
+            {
+              "points": [
+                "Tekst i rezultat stoje jedan pored drugog, svaki ispod zaglavlja iste visine, tako da iste linije počinju na istoj visini; oni se skrolaju zajedno (dugme za lanac to isključuje).",
+                "Linije koje bi se promijenile su označene, pri čemu je dio linije koji se mijenja označen tamnije; linije koje bi se samo pomjerile i linije koje su nove imaju svoju boju. Linije koje bi bile promijenjene ili uklonjene označene su i u vašem tekstu.",
+                "Ispod naziva: šta bi se dogodilo u brojevima — promijenjene, pomjerene, nove i uklonjene linije; linije i znakovi prije i poslije.",
+                "Ispod rezultata: linije koje bi bile uklonjene. Kliknite na jednu da biste do nje došli u tekstu.",
+                "Mala dugmad rezultata: kopiraj ga, otvori ga kao novi tekst, uporedi ga sa tekstom u kartici, skrolaj zajedno, postavi rezultat ispod teksta umjesto pored njega, sakrij ga. Tekst ima svoja: poništi, ponovi, kopiraj, zalijepi preko, označi sve, očisti.",
+                "Povucite traku između njih dvoje kako biste jednom date više prostora; dvostruki klik ponovo ih čini jednakima."
+              ]
+            },
+            "Nakon primjene okno „Rezultat“ to potvrđuje („Primijenjeno. Tekst s lijeve strane je sada rezultat.“) i nudi opcije „Poništi“ i „Uporedi sa prethodnim“, što otvara isto poređenje prije i poslije. Rezultat se ponovo prikazuje čim promijenite tekst ili izbor alata.",
+            {
+              "note": "Pregled → „Rezultat pored teksta“ uključuje ili isključuje okno. Za veoma dugačak tekst (preko dva miliona znakova) ništa se prethodno ne prikazuje: primijenite alat, a „Poništi“ će poništiti izmjenu."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Zamijeni svuda",
+          "body": [
+            "Odjednom zamjenjuje svako pronađeno mjesto. Dok kucate ono što tražite, Scribe navodi u koliko je mjesta pronađeno i označava ih u tekstu, tako da vidite šta će se promijeniti prije primjene.",
+            {
+              "points": [
+                "„Regularni izraz“: tekst za pronalaženje je obrazac. U polju „Zamijeni sa“, $1, $2… označavaju ono što su grupe obrasca pronašle.",
+                "„Razlikuj velika i mala slova“: a i A su različita slova.",
+                "„Samo cijele riječi“: riječ „kat“ neće biti pronađena unutar riječi „katalog“.",
+                "„Zadrži velika slova onoga što se zamjenjuje“: zamjena riječi „kat“ riječju „sprat“ pretvara „Kat“ u „Sprat“, a „KAT“ u „SPRAT“."
+              ]
+            },
+            {
+              "points": [
+                "„Više opcija“ → „Popuni…“: ono što se umetne može sadržavati praznine koje se popunjavaju pri svakom poklapanju. {counter} broji 1, 2, 3… ({counter:10} počinje od 10, {counter:10:5} raste za 5); {date} i {time} su datum i vrijeme vašeg računara; {uuid} je identifikator; {random} su 8 nasumičnih slova i cifara ({random:12} za 12).",
+                "Ispod onoga što tražite, Scribe takođe navodi na koliko se linija nalaze poklapanja i koliko je različitih tekstova pronađeno."
+              ]
+            },
+            "„Zamijeni više odjednom“ vrši listu parova u jednom koraku. Zapišite jedan par po liniji, kao: šta pronaći => čime zamijeniti. Oni se obrađuju od prvog do posljednjeg, svaki na onome što je prethodni ostavio; prazna druga polovina uklanja tekst.",
+            {
+              "note": "Obrazac ne može zamrznuti program: vrijeme potrebno za obradu raste s dužinom teksta i ne brže. Obrazci koji se vraćaju na ono što su pronašli (\\1) iz tog razloga nisu dostupni."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Linije",
+          "body": [
+            {
+              "points": [
+                "Sortirajte linije prema: njihovim slovima, kao u rječniku, na jeziku programa ili onom koji odaberete (u rumunjskom dolazi ă nakon a; švedski stavlja ä nakon z, njemački pored a); slovima s brojevima kao brojevima (file2 prije file10); broju kojim svaka linija počinje; dužini; broju riječi; datumu kojim svaka linija počinje (05.03.2024, 2024-03-05, s ili bez sata); internet adresama; verzijama (1.2.10 nakon 1.2.9); naslovima, gdje član na početku ne utiče; redoslijedu koji sami napišete (mali, srednji, veliki); ili bez ikakvog redoslijeda.",
+                "Linije koje nemaju vrijednost za sortiranje (nema broja, nema datuma, vrijednost nije u redoslijedu koji ste napisali) ostaju na kraju bez obzira na to kako su ostale sortirane: od najmanjeg prema najvećem ili obrnuto.",
+                "Više opcija za sortiranje: poređenje od određene riječi ili znaka, ili jedne kolone tabele (sa specifikacijom dijelova kolona); zadržavanje prve linije na mjestu kao naslov; sortiranje pasusa umjesto linija; i prvo čišćenje — trimovanje, uklanjanje praznih linija, uklanjanje duplikata.",
+                "Uklanjanje dupliranih linija: zadržite prvu, posljednju ili nijednu od linija koje se ponavljaju (ostaju samo one koje se pojavljuju jednom). Velika i mala slova, razmaci oko linije, cifre, interpunkcija i određeni broj znakova na početku ili kraju mogu se zanemariti; za poređenje se može koristiti samo kolona ili samo ono što obrazac pronađe. Prazne linije se tretiraju kao i ostale: zadržavaju se, uklanjaju ili spajaju.",
+                "Brojanje ponovljenih linija: ostavlja svaku liniju jednom, uz zapis o tome koliko puta se pojavljivala — najviše ponovljene prvo, ili najmanje, ili redoslijedom kojim dolaze.",
+                "Zadrži ili izbriši redove: traži određeni sadržaj u svakom redu i zadrži samo redove koji ga imaju, ili samo one koji ga nemaju.",
+                "Obrni redoslijed redova; Pomiješaj redove.",
+                "Numeriraj redove: prvi broj, šta slijedi nakon njega, nule ispred kako bi brojevi bili poravnati, prazni redovi bez broja.",
+                "Prazni redovi: ukloni ih sve, ili ostavi jedan tamo gdje ih ima više.",
+                "Spoji redove u jedan, sa onim što odaberete između njih; Podijeli u redove na svakom zarezu, tačka-zarezu ili bilo čemu drugom. Gdje god se upisuje ono što stoji između stvari (numeriranje, spajanje, dijeljenje, brojanje), \\t označava tabulator, koji se ne može upisati u polje."
+              ]
+            },
+            {
+              "note": "Izbor koji je važan samo uz drugi izbor prikazuje se tek tada: kolona, kada poredite po koloni. Opcije koje je manje ljudi koristi nalaze se pod „Više opcija“."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Velika i mala slova",
+          "body": [
+            "Promijeni velika i mala slova: prvo slovo rečenice veliko, svaka riječ počinje velikim slovom, sva velika slova, sva mala slova, invertovano, i načini na koje se imena pišu u kodu: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Velika i mala slova prate pravila svakog alfabeta, ne samo engleskog.",
+            "U grupi Smjer, „Okreni tekst“ okreće slova svakog reda, ili redoslijed riječi, ili slova svake riječi; „Naopako“ ga piše tako da se može čitati s druge strane stola, a „Kao u ogledalu“ takođe zamjenjuje znakove koji imaju lijevu i desnu stranu. Slova se broje onako kako ih čitač broji: slovo sa svojim znakovima ostaje jedno."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Čišćenje",
+          "body": [
+            {
+              "points": [
+                "Očisti razmake: više razmaka postaje jedan; razmaci na krajevima redova se uklanjaju.",
+                "Obreži krajeve redova: na oba kraja, na početku ili na kraju.",
+                "Navodnici: ravni, engleski, rumunski, njemački ili francuski.",
+                "Ukloni diakritike: ă postaje a, é postaje e. Samo u latiničnim i grčkim alfabetima, gdje je slovo bez svog znaka i dalje to samo slovo.",
+                "Popravka rumunskih slova: ş i ţ (sa cedilom, pisani na starijim tastaturama) postaju ș i ț (sa zarezom), slova kojima se piše rumunski jezik.",
+                "Tabovi u razmake i razmaci u tabove, sa širinom taba koju vi odaberete.",
+                "Uklanjanje HTML tagova: za izvornik web stranice koji je zalijepljen u tekst. Tagovi, skripte i stilovi se uklanjaju; ostaje ono što bi čitalac vidio. Da biste učitali stranicu s njene adrese, koristite alat ispod njega, „Tekst web stranice“.",
+                "Tekst web stranice: upišite adresu stranice (example.com/page) i odaberite „Preuzmi tekst“. Ono što bi čitalac vidio na toj stranici bit će upisano gdje se nalazi kursor, bez tagova, skripti ili stilova. Ovo je jedini alat Scribe-a koji izlazi na internet, i to samo kada vi to zatražite: stranica se preuzima putem pretraživača instaliranog na ovom računaru (Microsoft Edge ili Google Chrome), koji se pokreće bez prozora i bez vaših kolačića ili prijava; sam program ništa ne šalje. Stranica koja zahtijeva prijavu dat će samo ono što bi vidio stranac."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Vraćanje rumunskih diakritika",
+          "body": [
+            "Rumunski jezik koji je kucan bez ă, â, î, ș, ț ponovo se piše s njima.",
+            {
+              "steps": [
+                "Otvorite alat u grupi Čišćenje i odaberite „Primijeni na tekst“.",
+                "Riječi koje imaju samo jedan ispravan oblik mijenjaju se odmah: „stiu“ postaje „știu“, „informatii“ postaje „informații“.",
+                "Riječi koje se mogu pročitati na više načina (fata, fată, fața, față) navode se ispod dugmeta, svaka na svom mjestu u tekstu. Kliknite na ispravan oblik za svaku.",
+                "Ili označite „Samostalno odaberi vjerovatniju formu kada je riječ sumnjiva“ prije primjene: ništa vam neće biti traženo, a rezultat treba pročitati i provjeriti."
+              ]
+            },
+            "Tamo gdje su okolne riječi dovoljne, Scribe odlučuje na osnovu njih: „o casa“ postaje „o casă“, „casa mea“ ostaje, „pentru ca“ postaje „pentru că“.",
+            {
+              "note": "Ovo je napravljeno za Scribe na osnovu liste uobičajenih riječi i nastavaka koje rumunski jezik uvijek piše s dijakriticima. Riječi koje ne prepozna (rijeđe riječi, imena) ostaju onako kako su upisane, a riječ koja je već napisana s dijakriticima nikada se ne mijenja. Pročitajte rezultat prije slanja."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Pisanje teksta: popunjavanje i nasumično",
+          "body": [
+            "Alati grupe „Zapiši tekst“ ništa ne mijenjaju: oni pišu. Ono što generišu ide tamo gdje je kursor, na mjesto selekcije.",
+            {
+              "points": [
+                "Popunjavajući tekst: pasusi, rečenice, riječi, liste, naslovi ili dijelovi stranice (naslov, pasusi, lista). Na štamparskom latinskom (lorem ipsum), engleskom, rumunskom, riječima iz kancelarije ili kuhinje, ili vašim vlastitim riječima. Više opcija: kratke, srednje ili duge rečenice; običan tekst, Markdown, HTML ili JSON; nivo naslova; ograničenje u znakovima (tekst se siječe na cijeloj riječi i i dalje završava kao rečenica); riječi koje treba izostaviti.",
+                "Izmišljeni podaci: imena, e-mail adrese, brojevi telefona, kućne adrese, datumi ili brojevi, jedan po liniji, iz Rumunije ili engleskog govornog područja. „Linije po mom obrascu“ piše svaku liniju onako kako odredite, koristeći {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} i {row} kao zamjenske oznake za ono što se generiše — tabela za testiranje, za trenutak.",
+                "Nasumični tekst: lozinke (slova, cifre i znakovi, najmanje jedno od svakog), slova, cifre, heksadecimalni brojevi ili identifikatori (UUID), u jednoj liniji ili u više njih. Znakovi koji se lako miješaju (0 i O, 1, l i I) mogu se izostaviti.",
+                "Početni broj (pod „Više opcija“) čini da popunjavajući tekst i izmišljeni podaci uvijek budu isti za isti broj; 0 svaki put daje nešto novo."
+              ]
+            },
+            {
+              "note": "Lozinke se kreiraju na ovom računaru, na osnovu nasumičnosti operativnog sistema, i nigdje se ne šalju. Izmišljene e-mail adrese završavaju se sa example.com, gdje mejlovi ne stižu nikome; nasumično generisan broj telefona može pripadati nekom, stoga ga nemojte zvati."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recepti",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Čuvanje onoga što ste uradili kao recept",
+          "body": [
+            "Recept je lista alata sa njihovim postavkama, sačuvan pod određenim imenom i pokrenut ponovo jednim klikom.",
+            {
+              "steps": [
+                "Primijenite na tekst alate koje želite, onim redoslijedom kojim ih želite.",
+                "Otvorite „Recepti“ na vrhu panela: alat koji ste primijenili bit će izlistan.",
+                "Odaberite „Sačuvaj kao recept“ i dajte mu ime.",
+                "Kasnije otvorite recept i odaberite „Pokreni na tekstu“: svi njegovi koraci će biti izvršeni, a jedna komanda „Poništi“ će sve poništiti."
+              ]
+            },
+            "Recepti se čuvaju na ovom računaru i dostupni su u svakom tekstu."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Izmjena recepta ili kreiranje novog",
+          "body": [
+            "„Promijeni“ na otvorenom receptu prikazuje njegovo ime i korake. Svaki korak se može pomjeriti gore ili dolje, ukloniti ili mu se mogu dodati druge postavke; alati se dodaju sa liste ispod koraka. Ništa se ne čuva dok ne odaberete „Spremi“.",
+            "„Novi recept“ pokreće recept bez koraka, koji se sastavlja na isti način, ali bez prethodnog primjenjivanja alata na tekst.",
+            {
+              "note": "Alati koji pišu tekst (popunjavajući, nasumični) nisu koraci recepta: recept mijenja postojeći tekst."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Pokretanje recepta na datotekama",
+          "body": [
+            {
+              "steps": [
+                "Otvorite recept i, pod „Pokreni na datotekama“, dodajte datoteke ili folder (zajedno sa podfolderima).",
+                "Odaberite gdje će ići rezultati: u drugi folder, što ostavlja originalne datoteke netaknute, ili preko samih datoteka.",
+                "Pokrenite. Scribe će ispisati koliko je datoteka zapisano, koliko nije zahtijevalo izmjene, te koje nisu mogle biti obrađene i zašto."
+              ]
+            },
+            "Svaka datoteka se zapisuje u kodiranju i sa završecima redova koje je već imala. U drugom folderu, datoteke zadržavaju strukturu foldera iz kojih potječu, a datoteka koja već postoji nikada se ne prepisuje.",
+            {
+              "note": "Prepisivanje samih datoteka se ne može poništiti putem Scribe-a. Sačuvajte kopiju ako su datoteke važne."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistika, poređenje i folderi",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistika",
+          "body": [
+            "„Statistika“ na vrhu panela pokazuje od čega se tekst, ili selekcija, sastoji. Svaki dio se može sklopiti.",
+            {
+              "points": [
+                "Na vrhu: riječi, znakovi sa i bez razmaka, rečenice, pasusi, redovi, stranice i veličina u bajtovima.",
+                "Vrijeme: za čitanje u sebi, za čitanje naglas, za kucanje i za pisanje rukom.",
+                "Riječi: koliko ih je različitih (i koliki je njihov udio u ukupnom broju), slova u riječi, slogovi, najduža i najkraća riječ, te koliko riječi postoji svake dužine.",
+                "Rečenice: riječi u rečenici, koliko ih je kratkih, srednjih i dugih, koliko su izjavne, upitne i uzvične, te najduža i najkraća.",
+                "Jednostavnost čitanja: rezultat od 0 (veoma teško) do 100 (veoma lako), prema formuli napravljenoj za jezik teksta. Formule postoje za engleski, njemački, španski, francuski, italijanski, holandski, portugalski i ruski; jezik za koji formula ne postoji neće imati rezultat, jer bi formula za drugi jezik bila pogrešna.",
+                "Najčešći pojmovi: riječi koje se najviše koriste sa njihovim udjelom u tekstu, kao i parovi i grupe od tri riječi koje se ponavljaju.",
+                "Prostor u uobičajenim okvirima: koliko znakova nedostaje ili je viška za naslov, opis, kratku objavu i ostalo."
+              ]
+            },
+            "Riječi i rečenice se pronalaze prema pravilima svakog pisma, tako da se broje i kineski, japanski i tajlandski jezici, koji ne koriste razmake između riječi. Brzine prema kojima se računa vrijeme, kao i broj riječi po stranici, podešavaju u Postavkama."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Poređenje dva teksta",
+          "body": [
+            {
+              "points": [
+                "Alati → „Uporedi sa drugim tekstom“: tekst u editoru pored onog koji ukucate ili zalijepite.",
+                "Alati → „Uporedi sa datotekom“: tekst u editoru, u trenutnom obliku, pored datoteke koju odaberete.",
+                "Alati → „Uporedi dva teksta“: dva teksta ukucana ili zalijepljena jedan pored drugog.",
+                "Alati → „Uporedi dvije datoteke“."
+              ]
+            },
+            "Dva teksta se prikazuju jedan pored drugog. Redovi koji se nalaze samo u prvom tekstu označeni su kao uklonjeni, redovi samo u drugom kao dodani, a u redu koji je izmijenjen, označene su riječi koje se razlikuju. Prikazuje se samo ono što se razlikuje, uz nekoliko redova oko toga; strelice vode od jedne razlike do sljedeće.",
+            "Velika slova, razmaci, prazni redovi, brojevi i interpunkcija se mogu zanemariti. Opcija „U jednoj koloni“ prikazuje ono što je izbačeno iznad onoga što je dodano, svako sa svojim znakom, umjesto jedno pored drugog. Pored brojača, Scribe navodi koliko su dva teksta slična, kao udio redova koji su isti.",
+            "Tekst se prikazuje čim bude odabran, prije nego što to bude drugi. Povucite traku između dva teksta kako biste jednomu date više prostora; dok se tekstu kuca, traka ispod okvira povlači se gore i dolje kako bi se okvirima ili poređenju dalo više prostora. Dvostruki klik vraća traku na mjesto.",
+            "Tamo gdje je izmijenjeno nekoliko redova zaredom, svaki se postavlja pored reda kojem je najsličniji, tako da dodani ili uklonjeni red među njima ne čini da svaki sljedeći red izgleda kao izmijenjen.",
+            "„Upišite ili zalijepite tekstove“ prikazuje okvir iznad svake kolone; ono što tamo napišete poredi se dok pišete, a za bilo koju stranu i dalje se može odabrati datoteka."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Pronalaženje i zamjena u folderu",
+          "body": [
+            {
+              "steps": [
+                "Alati → „Pronađi u folderu“ (Ctrl+Shift+F) i odaberite folder. Pretražuju se i folderi unutar njega.",
+                "Ukucajte šta tražite, uz iste opcije kao kod „Zamijeni svuda“. „Vrste datoteka“ ograničava pretragu na određene nastavke (txt, md, csv…).",
+                "Svako poklapanje se prikazuje u svom redu, datoteka po datoteci. Kliknite na red kako biste otvorili datoteku na tom mjestu.",
+                "Za zamjenu: ukucajte novi tekst, odznačite datoteke koje želite ostaviti netaknute i odaberite „Zapiši datoteke“."
+              ]
+            },
+            "Ništa se ne zapisuje dok ne zatražite, i to samo u datotekama koje su ostale označene. Svaka datoteka se zapisuje u kodiranju i sa završecima redova koje je prethodno imala.",
+            {
+              "note": "Skriveni folderi i oni programski folderi (.git, node_modules) se preskaču osim ako ih ne zatražite. Datoteke koje nisu tekstualne uvijek se preskaču."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Postavke",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Postavke programa Scribe",
+          "body": [
+            "Datoteka → Postavke otvara postavke programa za dio Scribe.",
+            {
+              "points": [
+                "Editor: slova fiksne širine ili vlastiti font programa, njihova veličina, prelamanje redova, brojevi redova i prikazivanje rezultata alata prije njegove primjene.",
+                "Novi tekst: način završetka redova i informacija o tome počinje li datoteka oznakom reda bajtova (BOM).",
+                "Statistika: brzine čitanja, izgovora, kucanja i pisanja rukom, te broj riječi po stranici.",
+                "Prečaci za komande programa Scribe."
+              ]
+            },
+            "Svaka postavka ima dugme za vraćanje na početne vrijednosti."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O programu Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O programu Scribe",
+          "body": [
+            "Scribe je tekstualna aplikacija Syntelab Creative: editor s alatima pored teksta. Prikazuje šta bi alat uradio prije nego što to uradi, čisti i sortira liste, pronalazi i zamjenjuje tekst u datoteci ili cijelom folderu, poredi dva teksta, analizira sastav teksta, generiše popunjavajuće i izmišljene podatke, te čuva često korištene radnje kao recepte za ponovnu upotrebu.",
+            "Sve se obrađuje lokalno na vašem računaru. Ne postoje ograničenja veličine ili broja tekstova: ograničenja su samo memorija računara i mogućnosti današnje tehnologije.",
+            "Program je nov. Ako primijetite nedostatke u radu s vašim tekstovima, javite nam putem Pomoć → Povratne informacije: tako znamo na čemu treba raditi."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Tehnologije na kojima je Scribe izgrađen",
+          "body": [
+            {
+              "points": [
+                "Editor: CodeMirror.",
+                "Kodiranje pri čitanju i pisanju: encoding_rs, uz chardetng za prepoznavanje kodiranja datoteke koja ga ne navodi.",
+                "Pronalaženje i zamjena: regex biblioteka jezika Rust, čiji obrasci ne mogu zamrznuti program.",
+                "Sortiranje prema pravilima svakog jezika, te pronalaženje riječi i rečenica u svakom pismu: ICU4X, Unicode biblioteka.",
+                "Poređenje tekstova: similar biblioteka.",
+                "Rumunska diakritika: lista riječi i pravila napisana za Scribe."
+              ]
+            },
+            "Ono što dijeli sa ostatkom programa nalazi se pod „O Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Šta Scribe još uvijek ne može",
+          "body": [
+            {
+              "points": [
+                "Vrlo velika datoteka čita se stranicu po stranicu i mijenja se samo putem recepata; ručno mijenjanje znači otvaranje cijele datoteke, što troši memoriju.",
+                "Vraćanje rumunskih diakritika prepoznaje uobičajene riječi; rijetke riječi i imena ostaju onako kako su upisani.",
+                "Ne postoji provjera pravopisa.",
+                "Tekst se ovdje ne izvlači iz PDF-a ili office dokumenata; PDF Organizer otvara njih.",
+                "Editor ne podržava bojenje koda niti Markdown.",
+                "Datoteka prevučena u prozor otvara se kao novi tekst: programu nije rečeno gdje se datoteka nalazi, pa će prilikom spremanja tražiti lokaciju."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Openen en lezen",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Een document openen",
+          "body": [
+            "Bestand → Openen (Ctrl+O) opent een PDF in een eigen tabblad. ‘Meerdere bestanden tegelijk openen’ opent elk gekozen bestand in een eigen tabblad.",
+            "Ook andere bestanden openen als pagina’s: afbeeldingen (PNG, JPEG, TIFF, WebP en veel meer), tekst- en webbestanden, e-books, XPS en kantoordocumenten. Zo’n document is nog nergens opgeslagen: ‘Opslaan’ vraagt om een locatie.",
+            {
+              "note": "Kantoordocumenten (Word, Excel, PowerPoint, OpenDocument) worden geconverteerd door Word, Excel, PowerPoint of LibreOffice, afhankelijk van wat op de computer staat. Zonder een van deze programma’s kunnen ze niet worden geopend."
+            },
+            "Bestanden die je op een leeg tabblad sleept, worden in een PDF-bundel verzameld; als je ze op een document sleept, worden de pagina’s eraan toegevoegd.",
+            "In Windows kan PDF Organizer de app zijn die PDF-bestanden opent als je erop dubbelklikt: op de startpagina opent ‘Als standaard instellen’ de Windows-instellingen, waar je Syntelab Creative kiest voor PDF-bestanden."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "De pagina’s bekijken",
+          "body": [
+            "Het menu Beeld bepaalt hoe het document wordt getoond; geen van deze opties wijzigt het bestand.",
+            {
+              "points": [
+                "Zoom: inzoomen, uitzoomen, werkelijke grootte, pagina passend, breedte passend en hoogte passend. Met Ctrl en het muiswiel kun je ook zoomen.",
+                "Paginaweergave: één pagina of twee naast elkaar, met of zonder voorblad, en door alle pagina’s scrollen als één lange strook.",
+                "Hulplijnen: linialen en een raster, in de bij Instellingen gekozen eenheid.",
+                "‘Miniaturen tonen’: kleine pagina’s aan de zijkant. Klik op een miniatuur om naar die pagina te gaan; de documentbladwijzers staan in hetzelfde paneel.",
+                "‘Leesmodus’ verbergt de hulpmiddelen; ‘Volledig scherm’ verbergt alles behalve de pagina. Met Escape verlaat je beide."
+              ]
+            },
+            "De strook boven de pagina’s (de snelle werkbalk) bevat het paginanummer, de zoom en de knoppen die je bij Instellingen hebt gekozen."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Tekst zoeken",
+          "body": [
+            "Bewerken → Zoeken in document (Ctrl+F): typ een woord of woordgroep. De overeenkomsten worden op de pagina’s gemarkeerd en met de pijlen ga je van de ene naar de volgende.",
+            {
+              "note": "Een gescand document bestaat uit afbeeldingen van pagina’s en heeft pas doorzoekbare tekst na tekstherkenning: zie ‘Tekst herkennen (OCR)’."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Documenteigenschappen",
+          "body": [
+            "Bestand → Documenteigenschappen toont wat het document over zichzelf vermeldt: titel, auteur, aanmaak- en wijzigingsdatum, aantal pagina’s en bestandsgrootte."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Opslaan, afdrukken en versturen",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Opslaan en Opslaan als",
+          "body": [
+            "Je bewerkingen veranderen het bestand op schijf pas wanneer je opslaat. Tot die tijd kun je elke stap ongedaan maken (Ctrl+Z) en opnieuw uitvoeren (Ctrl+Y).",
+            {
+              "points": [
+                "Opslaan (Ctrl+S) schrijft het document over het eigen bestand.",
+                "Opslaan als (Ctrl+Shift+S) schrijft naar een nieuw bestand, dat vervolgens bij het tabblad hoort; het oude bestand blijft ongewijzigd."
+              ]
+            },
+            "Als het bestand in een ander programma is geopend, kan het niet worden overschreven. Het programma meldt dit en behoudt je wijzigingen, zodat je onder een andere naam kunt opslaan.",
+            {
+              "note": "Als je een gewijzigd document over een met een certificaat ondertekend bestand opslaat, worden de handtekeningen verwijderd. Het programma vraagt eerst om bevestiging en biedt ‘Als nieuw bestand opslaan’ aan. Je kunt deze vraag uitschakelen via Instellingen → Handtekeningen."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Een PDF maken",
+          "body": [
+            "Bestand → Een PDF maken maakt een nieuw document:",
+            {
+              "points": [
+                "van één of meerdere bestanden: samengevoegd tot één PDF of elk als aparte PDF;",
+                "van een webpagina op het ingevoerde adres (opgeslagen met de geïnstalleerde browser);",
+                "van de klembordinhoud;",
+                "van lege pagina’s met een gekozen formaat."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Naar een ander formaat exporteren",
+          "body": [
+            "Bestand → Exporteren schrijft het document in een ander formaat: Word- of OpenDocument-tekst, platte tekst, een webpagina, XML, pagina-afbeeldingen (PNG, JPEG, TIFF, SVG) of PostScript. Voor afbeeldingen kies je de resolutie.",
+            "Het document zelf blijft een PDF; de export is een nieuw bestand.",
+            {
+              "note": "Tekst kan alleen worden geëxporteerd als het document tekst bevat. Herken eerst de tekst van een scan."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Afdrukken",
+          "body": [
+            "Bestand → Afdrukken (Ctrl+P) drukt het document af met de huidige indeling en je tekeningen. Kies de pagina’s, het papier, staand of liggend en passend schalen of werkelijke grootte; daarna vraagt het systeemafdrukvenster om de printer.",
+            "Het papier, de afdrukstand en de schaal waarmee het afdrukvenster opent, stel je in via Instellingen → Afdrukken."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Delen",
+          "body": [
+            "Bestand → Delen geeft het document door aan het systeemvenster ‘Delen’: e-mail, een apparaat in de buurt en andere apps. Het document wordt in de huidige staat gedeeld, inclusief niet-opgeslagen wijzigingen."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pagina’s ordenen",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "De ordeningsweergave",
+          "body": [
+            "Ordenen → Pagina’s ordenen toont elke pagina in een raster. Er verandert niets op schijf totdat je opslaat.",
+            {
+              "points": [
+                "Selecteren: klik op een pagina; Ctrl+klik voegt er een toe en Shift+klik selecteert een reeks. ‘Alle pagina’s selecteren’, ‘Selectie opheffen’, ‘Oneven pagina’s selecteren’ en ‘Even pagina’s selecteren’ staan in het menu.",
+                "Verplaatsen: sleep de geselecteerde pagina’s naar de nieuwe plek of gebruik ‘Naar links verplaatsen’ en ‘Naar rechts verplaatsen’.",
+                "Draaien: ‘Selectie: naar links draaien’ en ‘Selectie: naar rechts draaien’ draaien de selectie; ‘Alle pagina’s: naar links draaien’ en ‘Alle pagina’s: naar rechts draaien’ draaien elke pagina.",
+                "Verwijderen: de toets Delete of ‘Pagina’s verwijderen’. Een document behoudt minimaal één pagina.",
+                "Kopiëren, knippen en plakken (Ctrl+C, Ctrl+X, Ctrl+V): pagina’s kunnen in hetzelfde document of in een ander geopend document worden geplakt.",
+                "Grootte: de schuifregelaar bovenaan maakt de pagina’s groter of kleiner; dat doen ook Ctrl + muiswiel boven de pagina’s, en ‘Inzoomen’ en ‘Uitzoomen’ (Ctrl+= en Ctrl+-). De grootte wordt onthouden."
+              ]
+            },
+            "Dezelfde opdrachten werken ook buiten het raster, op de zichtbare pagina."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Pagina’s extraheren en een document splitsen",
+          "body": [
+            "Ordenen → Pagina’s extraheren opent de geselecteerde pagina’s als nieuw, nog niet opgeslagen document in een eigen tabblad. Je kunt elke pagina ook als apart bestand laten schrijven en kiezen of de pagina’s uit dit document worden verwijderd.",
+            "Ordenen → Document splitsen schrijft het document als meerdere kleinere bestanden; dit document blijft ongewijzigd.",
+            "De namen van nieuwe documenten volgen de patronen in Instellingen → Namen van nieuwe documenten.",
+            {
+              "note": "Handtekeningen met een certificaat worden niet meegenomen naar geëxtraheerde of gesplitste documenten: een handtekening geldt alleen voor het bestand waarin deze is gemaakt."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Pagina’s invoegen en vervangen",
+          "body": [
+            {
+              "points": [
+                "Ordenen → Pagina’s invoegen voegt de pagina’s van een ander bestand (PDF, afbeelding, tekst of kantoordocument) toe na de geselecteerde pagina of aan het einde.",
+                "Ordenen → Pagina’s vervangen vervangt de geselecteerde pagina’s door de pagina’s van een ander bestand.",
+                "Invoegen → Lege pagina voegt een lege pagina toe met hetzelfde formaat als de aangrenzende pagina."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Pagina’s bijsnijden en formaat wijzigen",
+          "body": [
+            "Bewerken → Pagina’s bijsnijden snijdt randen af volgens ingevoerde of gesleepte marges. Er wordt niets uit het bestand verwijderd: de pagina’s tonen alleen minder.",
+            "Bewerken → Paginaformaat wijzigen plaatst pagina’s op een ander papierformaat (A4, Letter en andere). Je kunt de inhoud passend schalen of op het eigen formaat behouden en op een van negen posities op het nieuwe papier plaatsen.",
+            "Beide vragen op welke pagina’s ze werken: alle, geselecteerde, een bereik, oneven of even."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bestanden samenvoegen",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "De PDF-bundel",
+          "body": [
+            "Samenvoegen → Nieuwe PDF-bundel opent een plek om bestanden te verzamelen en als één PDF op te slaan.",
+            {
+              "steps": [
+                "Voeg bestanden toe met ‘Bestanden toevoegen’ of sleep ze op de PDF-bundel. Je kunt PDF’s, afbeeldingen, tekst en kantoordocumenten combineren.",
+                "Sleep de kaarten in de gewenste volgorde of gebruik de pijlen op elke kaart.",
+                "Open een kaart om te kiezen welke pagina’s worden opgenomen.",
+                "‘Bestanden samenvoegen’ maakt er in de gekozen volgorde één nieuw document van in een eigen tabblad."
+              ]
+            },
+            "De bestanden zelf veranderen niet.",
+            "De schuifregelaar bovenaan maakt de pagina’s op de kaarten groter of kleiner; dat doen ook Ctrl + muiswiel, en ‘Inzoomen’ en ‘Uitzoomen’ (Ctrl+= en Ctrl+-). De grootte wordt onthouden."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Schrijven en tekenen op pagina’s",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "De hulpmiddelen",
+          "body": [
+            "De tekenhulpmiddelen openen in een paneel naast de pagina, als knoppenraster of lijst met namen (bepaald in Instellingen). Sleep of klik op de pagina met het gekozen hulpmiddel; Escape legt het neer.",
+            {
+              "points": [
+                "Tekst: klik en typ. Lettertype, grootte, kleur, vet, cursief en uitlijning staan in het paneel.",
+                "Afbeelding: kies een afbeelding en sleep om plaats en grootte te bepalen.",
+                "Vormen: rechthoek, ellips, lijn, pijl, vinkje, kruisje en stip.",
+                "Markeren: sleep over wat moet opvallen; de inhoud eronder blijft leesbaar."
+              ]
+            },
+            "Met ‘Selecteren, verplaatsen en formaat wijzigen’ pak je een markering weer op: sleep deze, trek aan de hoeken, draai via de greep, wijzig de kleuren in het paneel of verwijder met Delete. Markeringen kunnen worden gekopieerd en geplakt, ook op andere pagina’s.",
+            "Alles wat je tekent, wordt bij het opslaan in het bestand opgenomen."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "De oorspronkelijke tekst en afbeeldingen bewerken",
+          "body": [
+            "Het hulpmiddel ‘Tekst en afbeeldingen van het document bewerken’ omlijnt de eigen inhoud van de pagina. Klik op een tekstregel om deze te herschrijven of op een afbeelding om deze te verplaatsen, vergroten, verkleinen, draaien of verwijderen.",
+            {
+              "note": "Dit wijzigt telkens één regel of afbeelding. Alinea’s lopen niet opnieuw om als een regel langer wordt en overlappende afbeeldingen worden samen opgepakt. Bewerk voor grote wijzigingen het document in het programma waarin het is gemaakt."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Inhoud onleesbaar maken",
+          "body": [
+            "Meer hulpmiddelen → Inhoud onleesbaar maken verwijdert definitief wat niet gelezen mag worden: sleep er op een pagina een zwart vlak overheen. Bij het opslaan worden de onderliggende tekst en afbeeldingen uit het bestand verwijderd, niet alleen bedekt.",
+            {
+              "note": "Sla het bewerkte document onder een nieuwe naam op en bewaar het origineel veilig: verwijderde inhoud kan niet worden teruggehaald."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Watermerk",
+          "body": [
+            "Bewerken → Watermerk plaatst woorden of een afbeelding op gekozen pagina’s: recht of schuin, op een van negen posities, met de ingestelde grootte en dekking. Daarna is het op elke pagina een gewone markering die je nog kunt verplaatsen of verwijderen."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Paginanummers, kop- en voetteksten, Bates-nummers",
+          "body": [
+            {
+              "points": [
+                "Bewerken → Paginanummers: de notatie (1, 1 / 12, Pagina 1 en andere), de plaats en welke pagina’s een nummer krijgen.",
+                "Invoegen → Koptekst en voettekst: tekst op zes mogelijke plaatsen. Daarin staat {page} voor het paginanummer, {pages} voor het aantal pagina’s, {date} voor de datum van vandaag en {file} voor de documentnaam.",
+                "Invoegen → Bates-nummering: doorlopende nummers met tekst ervoor of erachter (ABC000123), zoals gebruikt bij dossierdocumenten."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Links, bladwijzers en bijgevoegde bestanden",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Links",
+          "body": [
+            "Invoegen → Link: sleep over de klikbare plek en geef het doel op: een webadres of een pagina van dit document.",
+            "Documentlinks werken tijdens het lezen: een paginalink brengt je naar die pagina; een web- of e-mailadres wordt aan je browser of e-mailprogramma doorgegeven."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Bladwijzers",
+          "body": [
+            "Invoegen → Nieuwe bladwijzer: klik op de doelpositie en geef een titel op. Invoegen → Bladwijzers opent de lijst, waar je een bladwijzer kunt hernoemen of verwijderen. De wijzigingen worden bij het opslaan verwerkt."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Bijgevoegde bestanden",
+          "body": [
+            "Invoegen → Een bestand bijvoegen: kies een bestand en klik waar de paperclip moet komen. Je kunt een naam en auteur opgeven en de paperclip kleuren, van formaat veranderen en draaien. Bij het opslaan wordt het bestand in de PDF opgenomen.",
+            "Invoegen → Bijgevoegde bestanden toont wat het document bevat; elk bestand kan op schijf worden opgeslagen of verwijderd. Klikken op een paperclip opent dezelfde lijst."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formulieren",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Een formulier invullen",
+          "body": [
+            "Invoegen → Formulier invullen toont de documentvelden: typ in tekstvelden, vink vakjes aan en kies uit lijsten. De antwoorden worden bij het opslaan in het bestand opgenomen."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Een formulier maken",
+          "body": [
+            "Via Invoegen kun je velden aan elk document toevoegen: tekstvelden, selectievakjes, keuzerondjes waarvan er één kan worden gekozen, een keuzelijst en een leeg handtekeningveld voor een ondertekenaar.",
+            "Sleep op de pagina waar het veld moet komen. Net als andere markeringen kun je het verplaatsen en van formaat veranderen totdat je opslaat; daarna maakt het deel uit van het formulier."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ondertekenen",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Een getekende handtekening toevoegen",
+          "body": [
+            "Ondertekenen → Handtekening toevoegen plaatst een afbeelding van een handtekening op de pagina: hier getekend met een gekozen pen, getypt in een lettertype of afkomstig uit een afbeelding (met ‘Alleen de penstreken behouden’ voor een foto van een ondertekend vel). Je kunt de datum eronder plaatsen.",
+            "Sleep op de gewenste plek op de pagina. Gebruikte handtekeningen worden op deze computer bewaard voor hergebruik.",
+            {
+              "note": "Dit is een afbeelding: deze geeft geen zekerheid over wie haar heeft geplaatst. Een handtekening die bewijst wie heeft ondertekend en dat er sindsdien niets is gewijzigd, wordt met een certificaat gemaakt."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Ondertekenen met een certificaat",
+          "body": [
+            "Ondertekenen → Ondertekenen met certificaat maakt een digitale handtekening: deze vermeldt wie heeft ondertekend en verzegelt het document, zodat latere wijzigingen zichtbaar zijn.",
+            {
+              "steps": [
+                "Sleep het zichtbare handtekeninggebied op de pagina (een voorafgaand uitlegvenster kan worden uitgeschakeld). Kies ‘Ondertekenen zonder zichtbare handtekening op de pagina’ als er niets op de pagina’s moet verschijnen.",
+                "Kies het certificaat: een certificaat van de computer (een kaart of token verschijnt zodra deze op de lezer is aangesloten) of een .pfx- / .p12-bestand met wachtwoord. Kies ‘Doorgaan’.",
+                "Kies het uiterlijk van de handtekening. Onder ‘Reden en plaats’ kun je opgeven waarom en waar je ondertekent: deze gegevens komen in de handtekening en op de pagina als het uiterlijk ze toont. Vink ‘Document na ondertekening vergrendelen’ aan als niemand daarna mag ondertekenen of wijzigen. Laat ‘Vertrouwde tijd toevoegen (tijdstempel)’ aangevinkt, zodat een tijdstempeldienst bevestigt wanneer je hebt ondertekend.",
+                "Kies ‘Ondertekenen’ en de opslaglocatie voor het ondertekende bestand. Een token vraagt op dit moment om de pincode."
+              ]
+            },
+            "Het ondertekende bestand vervangt het document in het tabblad. Het programma bewaart nooit een wachtwoord of pincode.",
+            {
+              "note": "Een gekwalificeerde handtekening wordt op deze manier gemaakt met een gekwalificeerd certificaat op de bijbehorende kaart of token. Het ondertekenen gebeurt op je computer; alleen het tijdstempel en de controle van je certificaat gaan via internet, en daarbij worden hashwaarden en het serienummer van het certificaat verstuurd, nooit het document."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Uiterlijk van handtekeningen",
+          "body": [
+            "Een uiterlijk bepaalt hoe een certificaathandtekening op de pagina verschijnt. Bewaar meerdere varianten onder eigen namen: bijvoorbeeld één voor het bedrijf en één voor jezelf.",
+            {
+              "points": [
+                "Afbeelding: geen, uit een bestand (een stempel of gescande handtekening) of hier getekend.",
+                "Getoonde tekst: naam, datum, reden en plaats, elk met of zonder label.",
+                "Eigen regels onder de naam, bijvoorbeeld een functie en bedrijf.",
+                "‘Standaardtekst’ blijft altijd beschikbaar: wie heeft ondertekend en wanneer."
+              ]
+            },
+            "In het ondertekenvenster: ‘Nieuw…’, ‘Bewerken…’, ‘Verwijderen’. De laatst gebruikte variant verschijnt eerst. De uiterlijken worden op deze computer bewaard."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Meerdere handtekeningen en vergrendelen",
+          "body": [
+            "Meerdere mensen kunnen een document na elkaar ondertekenen. Open het ondertekende bestand en onderteken zonder iets te wijzigen: jouw handtekening wordt aan het bestandseinde toegevoegd en de eerdere blijven geldig.",
+            "‘Document na ondertekening vergrendelen’ (standaard uit) sluit het document af: niemand kan daarna ondertekenen en er mag niets meer worden gewijzigd. Dit kan niet ongedaan worden gemaakt.",
+            {
+              "note": "Als je een ondertekend document wijzigt voordat je opnieuw ondertekent, moet het opnieuw worden geschreven en vervallen de eerdere handtekeningen. Het ondertekenvenster waarschuwt: open het bestand opnieuw en onderteken zonder wijzigingen om ze te behouden."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Tijdstempels",
+          "body": [
+            "Een tijdstempel is de ondertekende verklaring van een tijdstempeldienst over wanneer iets bestond. Anders komt de tijd in een handtekening van de klok van de computer van de ondertekenaar, die iedereen kan instellen; een tijdstempel bewijst het moment en houdt de handtekening aantoonbaar nadat het certificaat is verlopen (PAdES B-T).",
+            {
+              "points": [
+                "Handtekeningen krijgen er een als ‘Vertrouwde tijd toevoegen (tijdstempel)’ is aangevinkt in het ondertekeningsvenster. In Instellingen → Handtekeningen stel je in of dit standaard is aangevinkt, hier en bij batchverwerking.",
+                "Ondertekenen → Tijdstempel toevoegen geeft het hele document een eigen tijdstempel, zonder certificaat: het bewijst dat het document precies zo op dat moment bestond. Het wordt als nieuw bestand opgeslagen; handtekeningen in het bestand blijven geldig."
+              ]
+            },
+            "De dienst is die van DigiCert (http://timestamp.digicert.com), gratis en vertrouwd door Adobe Reader en Windows; een andere kun je instellen in Instellingen → Handtekeningen. De dienst ontvangt alleen een hashwaarde (SHA-256), nooit het document, en er is een internetverbinding nodig. Wanneer een handtekening een tijdstempel krijgt, wordt ook aan de uitgever van je certificaat gevraagd of het certificaat nog geldig is, en het antwoord wordt in de handtekening bewaard (langetermijnvalidatie): Adobe Reader kan de handtekening dan als geldig tonen, nu en nadat het certificaat is verlopen.",
+            {
+              "note": "Als de tijdstempeldienst niet bereikbaar is, wordt er niets ondertekend of opgeslagen: probeer het opnieuw, of vink het tijdstempel uit om zonder te ondertekenen."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Handtekeningen controleren",
+          "body": [
+            "Ondertekenen → Handtekeningen controleren toont elke certificaathandtekening in het bestand: wie heeft ondertekend, wie het certificaat heeft uitgegeven, wanneer, de reden en plaats, en",
+            {
+              "points": [
+                "of het document sinds die handtekening ongewijzigd is (een later toegevoegde handtekening telt niet als wijziging);",
+                "of de handtekening het document vergrendelt;",
+                "of deze computer de certificaatuitgever vertrouwt en of het certificaat vandaag geldig is;",
+                "de tijd die door het tijdstempel is bevestigd, en door welke dienst, als er een is. Een tijdstempel van het hele document wordt ook vermeld, met een eigen controle."
+              ]
+            },
+            "De controle betreft de laatst opgeslagen bestandsversie en gebeurt op deze computer, zonder internetverbinding. Als je op een handtekening op een pagina klikt, opent deze lijst bij die handtekening. Onder elke handtekening opent “Certificaat weergeven” het Windows-venster van het certificaat (de keten en alle details; daar zorgt “Certificaat installeren” ervoor dat deze computer een certificaat vertrouwt dat je kent), en “Valideren” vraagt online aan de uitgever van het certificaat, alleen als je erop drukt, of het certificaat is ingetrokken."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Meer hulpmiddelen",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Tekst herkennen (OCR)",
+          "body": [
+            "Meer hulpmiddelen → Tekst herkennen (OCR) leest de woorden van gescande pagina’s en neemt ze onzichtbaar in de pagina’s op, zodat je het document kunt doorzoeken en de tekst kopiëren en exporteren. Het uiterlijk verandert niet.",
+            "Vink alleen de talen aan waarin de pagina’s zijn geschreven; pagina’s die al tekst bevatten, blijven behouden.",
+            {
+              "note": "De herkenning gebeurt met Tesseract, een gratis programma dat afzonderlijk wordt geïnstalleerd. Als het ontbreekt, toont het venster de installatieopdracht voor Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Een document verkleinen",
+          "body": [
+            "Meer hulpmiddelen → Comprimeren slaat het document als kleiner bestand op door foto’s en scans minder pixels te geven. Er zijn drie sterkten; tekst en tekeningen blijven even scherp. Een document met weinig afbeeldingen wordt nauwelijks kleiner."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Twee documenten vergelijken",
+          "body": [
+            "Meer hulpmiddelen → Documenten vergelijken: kies een andere PDF. Beide worden pagina voor pagina naast elkaar getoond, met markeringen op pagina’s waarvan de tekst afwijkt en lijsten van regels die slechts in één document staan."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Batchverwerking: meerdere bestanden tegelijk",
+          "body": [
+            "Meer hulpmiddelen → Batchverwerking voert dezelfde bewerkingen op meerdere bestanden uit in een eigen tabblad. Elk resultaat is een nieuw bestand. Als resultaten de plaats zouden innemen van bestanden die al in de map staan (je eigen bestanden, als ze naar hun eigen map gaan zonder dat er iets aan de naam wordt toegevoegd), wordt je eerst gevraagd of je ze wilt vervangen of overslaan, of dat je wilt annuleren. Een bestand wordt pas vervangen als het resultaat klaar is; een geopend bestand (in een tabblad hier of in een ander programma) blijft zoals het is en wordt gemarkeerd als niet uitgevoerd.",
+            {
+              "steps": [
+                "Voeg links bestanden toe: ‘Bestanden toevoegen’, ‘Een map toevoegen’ (inclusief submappen) of sleep ze ernaartoe.",
+                "Vink rechts de gewenste bewerkingen aan. Elk bestand wordt in ieder geval een PDF. Daarnaast kun je pagina’s draaien, tekst herkennen, kop- en voetteksten, watermerken of paginanummers toevoegen, bestanden verkleinen, met een certificaat ondertekenen of in een ander formaat opslaan. De nummers tonen de volgorde.",
+                "Kies de uitvoer: elk als apart bestand of alles in één PDF (in de lijstvolgorde), en kies de doelmap. Als alle bestanden uit één map komen, wordt die map voor je gekozen totdat je een andere kiest; anders is het de laatste map die je hebt gekozen.",
+                "Kies ‘Starten’. Bij elk bestand verschijnt het resultaat; de verwerking kan tussen bestanden worden gestopt."
+              ]
+            },
+            {
+              "points": [
+                "Recepten: ‘Als recept opslaan’ bewaart alle keuzes behalve de bestanden en eventuele wachtwoorden onder een naam, zodat je ze met één keuze kunt herstellen.",
+                "‘De mappen van de bestanden behouden in de resultaten’ bouwt de mappenstructuur van een toegevoegde map opnieuw op.",
+                "‘Een verwerkingsrapport opslaan’ maakt naast de resultaten een tekstbestand met wat is geschreven en wat is mislukt.",
+                "Een PDF die alleen wordt ondertekend, behoudt bestaande handtekeningen. Als dezelfde verwerking ook andere bewerkingen uitvoert, wordt het bestand opnieuw geschreven en vervallen ze."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Instellingen",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "De instellingen van PDF Organizer",
+          "body": [
+            "Bestand → Instellingen (of Instellingen in de zijbalk en daarna PDF Organizer). Je kunt elke instelling afzonderlijk of alle instellingen tegelijk herstellen.",
+            {
+              "points": [
+                "Bij het openen van een document: begingrootte van de weergave, scrollen of één pagina tegelijk en miniaturen tonen of verbergen.",
+                "Eenheden, linialen en raster: eenheid (millimeters, inches, punten), linialen, raster en rasterafstand.",
+                "Afdrukken: papier, afdrukstand en schaal waarmee het afdrukvenster opent.",
+                "Snelle werkbalk: de knoppen in de strook boven de pagina’s.",
+                "Namen van nieuwe documenten: patronen voor geëxtraheerde pagina’s, nieuwe documenten en de PDF waarin batchverwerking meerdere bestanden samenvoegt.",
+                "Handtekeningen: of ‘Opslaan’ om bevestiging vraagt voordat een ondertekend bestand wordt overschreven.",
+                "Sneltoetsen: klik op de toetsen van een opdracht en druk op de nieuwe combinatie."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Over PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Over PDF Organizer",
+          "body": [
+            "PDF Organizer is de PDF-app van Syntelab Creative: PDF-documenten lezen, pagina’s ordenen en samenvoegen, erop schrijven en tekenen, formulieren invullen en maken, met een certificaat ondertekenen en handtekeningen controleren, en dezelfde bewerkingen op meerdere bestanden tegelijk uitvoeren.",
+            "De app is nieuw en sommige functies zijn een eerste stap. Laat via Help → Feedback weten waar deze voor jouw documenten tekortschiet: zo weten we waaraan we moeten werken."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Waarmee PDF Organizer is gebouwd",
+          "body": [
+            {
+              "points": [
+                "PDF’s lezen, tekenen en schrijven: MuPDF.",
+                "Tekstherkenning (OCR): Tesseract, indien op de computer geïnstalleerd.",
+                "Kantoordocumenten openen: Word, Excel en PowerPoint of LibreOffice, afhankelijk van wat is geïnstalleerd.",
+                "Een webpagina als PDF opslaan: de geïnstalleerde browser.",
+                "Ondertekenen met een certificaat: de certificaatdiensten van Windows; handtekeningen worden volgens de PAdES-standaard geschreven."
+              ]
+            },
+            "Wat de app met de rest van het programma deelt, staat onder ‘Over Syntelab Creative’."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Wat PDF Organizer nog niet kan",
+          "body": [
+            {
+              "points": [
+                "Kantoordocumenten worden door het kantoorpakket op de computer geopend; zonder Word, Excel, PowerPoint of LibreOffice kan dat niet. Aan een eigen converter wordt gewerkt: zie ‘Waar we aan werken’.",
+                "Tekstherkenning vereist de afzonderlijk geïnstalleerde software Tesseract.",
+                "De eigen tekst van het document wordt regel voor regel gewijzigd; alinea’s lopen niet opnieuw om.",
+                "Afbeeldingen met vier drukinkten (CMYK) kunnen niet worden opgepakt om ze te verplaatsen.",
+                "“Valideren” geeft aan of een certificaat vandaag ingetrokken is, niet wanneer het is ingetrokken.",
+                "Ondertekenen met een certificaat werkt voorlopig op Windows; Linux en macOS volgen in een latere versie."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

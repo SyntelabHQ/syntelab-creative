@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Mở và đọc tài liệu",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Mở tài liệu",
+          "body": [
+            "Tệp → Mở (Ctrl+O) mở PDF trong thẻ riêng. “Mở nhiều tệp cùng lúc” sẽ mở từng tệp trong thẻ của nó.",
+            "Các tệp không phải PDF cũng mở được dưới dạng trang: hình ảnh (PNG, JPEG, TIFF, WebP và nhiều định dạng khác), văn bản, trang web, sách điện tử, XPS và tài liệu văn phòng. Tài liệu đó chưa được lưu ở đâu; lệnh “Lưu” sẽ hỏi vị trí lưu.",
+            {
+              "note": "Tài liệu văn phòng (Word, Excel, PowerPoint, OpenDocument) được chuyển đổi bằng Word, Excel hoặc PowerPoint, hoặc bằng LibreOffice nếu có trên máy tính. Nếu không có chương trình nào trong số này thì không thể mở tài liệu."
+            },
+            "Tệp thả vào thẻ trống sẽ được gom vào một bộ tài liệu; nếu thả vào tài liệu đang mở, các trang của tệp sẽ được thêm vào đó.",
+            "Trên Windows, PDF Organizer có thể là ứng dụng mở tệp PDF khi bạn bấm đúp vào chúng: trên trang bắt đầu của ứng dụng, “Đặt làm mặc định” sẽ mở cài đặt Windows, nơi bạn chọn Syntelab Creative cho tệp PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Xem các trang",
+          "body": [
+            "Menu Xem quyết định cách hiển thị tài liệu; các lựa chọn này không làm thay đổi tệp.",
+            {
+              "points": [
+                "Thu phóng: phóng to, thu nhỏ, kích thước thực, vừa trang, vừa chiều rộng hoặc vừa chiều cao. Giữ Ctrl và lăn bánh xe chuột cũng để thu phóng.",
+                "Hiển thị trang: một trang hoặc hai trang cạnh nhau, có hoặc không có trang bìa; có thể cuộn liên tục qua tất cả trang như một dải dài.",
+                "Đường căn: thước và lưới theo đơn vị được chọn trong Cài đặt.",
+                "“Hiển thị hình thu nhỏ”: các trang nhỏ ở bên cạnh. Nhấp vào một trang để đến trang đó; dấu trang của tài liệu cũng nằm trong bảng này.",
+                "“Chế độ đọc” ẩn các công cụ; “Toàn màn hình” chỉ giữ lại trang. Nhấn Escape để thoát cả hai chế độ."
+              ]
+            },
+            "Thanh công cụ nhanh phía trên trang có số trang, mức thu phóng và các nút bạn chọn trong Cài đặt."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Tìm văn bản",
+          "body": [
+            "Chỉnh sửa → Tìm trong tài liệu (Ctrl+F): nhập một từ hoặc cụm từ; các vị trí tìm thấy được đánh dấu trên trang và dùng mũi tên để chuyển đến kết quả tiếp theo hoặc trước đó.",
+            {
+              "note": "Tài liệu quét là ảnh các trang nên chưa có văn bản để tìm cho đến khi nhận dạng văn bản. Xem “Nhận dạng văn bản (OCR)”."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Thuộc tính tài liệu",
+          "body": [
+            "Tệp → Thuộc tính tài liệu hiển thị thông tin tài liệu tự lưu: tiêu đề, tác giả, ngày tạo và chỉnh sửa, số trang và kích thước tệp."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lưu, in và chia sẻ",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Lưu và Lưu thành",
+          "body": [
+            "Các thao tác không làm thay đổi tệp trên đĩa cho đến khi bạn lưu. Trước đó, mọi bước đều có thể hoàn tác (Ctrl+Z) hoặc làm lại (Ctrl+Y).",
+            {
+              "points": [
+                "Lưu (Ctrl+S) ghi đè tài liệu lên tệp hiện tại.",
+                "Lưu thành (Ctrl+Shift+S) lưu tài liệu vào tệp mới, rồi dùng tệp đó cho thẻ hiện tại; tệp cũ vẫn nguyên trạng."
+              ]
+            },
+            "Nếu tệp đang được chương trình khác mở thì không thể ghi đè; chương trình sẽ báo và giữ lại thay đổi để bạn lưu bằng tên khác.",
+            {
+              "note": "Lưu đè tài liệu đã thay đổi có chữ ký chứng chỉ sẽ xóa chữ ký. Chương trình sẽ hỏi trước và đề xuất “Lưu thành tệp mới”; có thể tắt câu hỏi này trong Cài đặt → Chữ ký."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Tạo PDF",
+          "body": [
+            "Tệp → Tạo PDF tạo tài liệu mới:",
+            {
+              "points": [
+                "từ một hoặc nhiều tệp: gộp thành một PDF hoặc tạo một PDF cho mỗi tệp;",
+                "từ trang web theo địa chỉ bạn nhập (trang được lưu bằng trình duyệt đã cài trên máy tính);",
+                "từ nội dung trên bảng nhớ tạm;",
+                "từ các trang trống theo kích thước bạn chọn."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Xuất sang định dạng khác",
+          "body": [
+            "Tệp → Xuất ghi tài liệu sang định dạng khác: Word hoặc văn bản OpenDocument, văn bản thuần, trang web, XML, ảnh của các trang (PNG, JPEG, TIFF, SVG) hoặc PostScript. Với ảnh, bạn chọn độ phân giải.",
+            "Tài liệu gốc vẫn là PDF; bản xuất được lưu thành tệp mới.",
+            {
+              "note": "Chỉ xuất được văn bản nếu tài liệu có văn bản. Hãy nhận dạng văn bản trong bản quét trước."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "In",
+          "body": [
+            "Tệp → In (Ctrl+P) in tài liệu theo bố cục hiện tại, gồm cả nội dung bạn đã vẽ lên. Chọn trang, giấy, hướng giấy dọc hoặc ngang, và cách căn trang vừa khổ giấy hay in theo kích thước thực; sau đó cửa sổ in của hệ thống sẽ yêu cầu chọn máy in.",
+            "Khổ giấy, hướng giấy và tỷ lệ mặc định trong cửa sổ in được thiết lập tại Cài đặt → In."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Chia sẻ",
+          "body": [
+            "Tệp → Chia sẻ chuyển tài liệu sang cửa sổ “Chia sẻ” của hệ thống để gửi qua email, thiết bị ở gần hoặc ứng dụng khác. Tài liệu được chia sẻ theo trạng thái hiện tại, bao gồm cả thay đổi chưa lưu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sắp xếp trang",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Chế độ xem Sắp xếp",
+          "body": [
+            "Chọn Sắp xếp → Sắp xếp trang để xem tất cả trang trong lưới. Tệp trên đĩa chỉ thay đổi khi bạn lưu.",
+            {
+              "points": [
+                "Chọn trang: nhấp vào trang; Ctrl+nhấp để thêm trang; Shift+nhấp để chọn một dải. Menu có “Chọn tất cả trang”, “Bỏ chọn tất cả”, “Chọn trang lẻ” và “Chọn trang chẵn”.",
+                "Di chuyển: kéo các trang đã chọn đến vị trí mới hoặc dùng “Di chuyển sang trái” và “Di chuyển sang phải”.",
+                "Xoay: “Mục đã chọn: xoay trái” hoặc “Mục đã chọn: xoay phải” để xoay trang đã chọn; “Tất cả trang: xoay trái” hoặc “Tất cả trang: xoay phải” để xoay mọi trang.",
+                "Xóa: nhấn phím Delete hoặc chọn “Xóa trang”. Tài liệu phải còn ít nhất một trang.",
+                "Sao chép, cắt và dán (Ctrl+C, Ctrl+X, Ctrl+V): có thể dán trang trong cùng tài liệu hoặc sang tài liệu khác đang mở trong chương trình.",
+                "Kích thước: thanh trượt ở trên cùng làm các trang lớn hơn hoặc nhỏ hơn; Ctrl + con lăn chuột trên các trang, cùng “Phóng to” và “Thu nhỏ” (Ctrl+= và Ctrl+-) cũng vậy. Kích thước được ghi nhớ."
+              ]
+            },
+            "Các lệnh tương tự cũng dùng được khi không mở lưới, trực tiếp trên trang đang xem."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Trích xuất trang và tách tài liệu",
+          "body": [
+            "Sắp xếp → Trích xuất trang đưa các trang đã chọn thành tài liệu mới trong thẻ riêng, chưa được lưu. Bạn cũng có thể lưu mỗi trang thành một tệp riêng và chọn có xóa các trang đó khỏi tài liệu hiện tại hay không.",
+            "Sắp xếp → Tách tài liệu lưu tài liệu thành nhiều tệp nhỏ; tài liệu hiện tại vẫn được giữ nguyên.",
+            "Tên tài liệu mới tuân theo mẫu trong Cài đặt → Tên tài liệu mới.",
+            {
+              "note": "Chữ ký chứng chỉ không được giữ trong tài liệu trích xuất hoặc tách: chữ ký chỉ hợp lệ với tệp ban đầu đã ký."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Chèn và thay thế trang",
+          "body": [
+            {
+              "points": [
+                "Sắp xếp → Chèn trang thêm các trang từ tệp khác (PDF, ảnh, văn bản hoặc tài liệu văn phòng) sau trang đã chọn hoặc vào cuối tài liệu.",
+                "Sắp xếp → Thay thế trang thay các trang đã chọn bằng trang từ tệp khác.",
+                "Chèn → Trang trống thêm trang trống có cùng kích thước với trang bên cạnh."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Cắt và đổi kích thước trang",
+          "body": [
+            "Chỉnh sửa → Cắt trang xén mép trang theo lề bạn nhập hoặc kéo. Nội dung không bị xóa khỏi tệp; trang chỉ hiển thị ít hơn.",
+            "Chỉnh sửa → Đổi kích thước trang chuyển trang sang khổ giấy khác (A4, Letter, v.v.). Có thể co giãn nội dung cho vừa hoặc giữ nguyên kích thước và đặt ở một trong chín vị trí trên trang mới.",
+            "Cả hai lệnh đều hỏi áp dụng cho trang nào: tất cả, các trang đã chọn, một dải, trang lẻ hoặc trang chẵn."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gộp tệp",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Bộ tài liệu",
+          "body": [
+            "Chọn Gộp → Bộ tài liệu mới để tập hợp các tệp và xuất thành một PDF.",
+            {
+              "steps": [
+                "Thêm tệp bằng lệnh “Thêm tệp” hoặc thả tệp vào bộ tài liệu. Có thể kết hợp PDF, ảnh, văn bản và tài liệu văn phòng.",
+                "Kéo các thẻ để sắp xếp theo thứ tự mong muốn hoặc dùng mũi tên trên mỗi thẻ.",
+                "Mở thẻ để chọn những trang cần đưa vào.",
+                "Chọn “Gộp tệp” để tạo một tài liệu mới theo thứ tự đã chọn trong thẻ riêng."
+              ]
+            },
+            "Các tệp gốc không bị thay đổi.",
+            "Thanh trượt ở trên cùng làm các trang trên thẻ lớn hơn hoặc nhỏ hơn; Ctrl + con lăn chuột, cùng “Phóng to” và “Thu nhỏ” (Ctrl+= và Ctrl+-) cũng vậy. Kích thước được ghi nhớ."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Viết và vẽ trên trang",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Các công cụ",
+          "body": [
+            "Các công cụ vẽ mở thành bảng cạnh trang, lưới nút hoặc danh sách có tên (thiết lập trong Cài đặt). Chọn công cụ rồi kéo hoặc nhấp trên trang; nhấn Escape để bỏ chọn công cụ.",
+            {
+              "points": [
+                "Văn bản: nhấp rồi nhập. Chọn phông chữ, cỡ, màu, đậm, nghiêng và căn lề trong bảng.",
+                "Ảnh: chọn ảnh, sau đó kéo để đặt vị trí và kích thước.",
+                "Hình dạng: hình chữ nhật, hình elip, đường thẳng, mũi tên, dấu kiểm, dấu chéo và chấm.",
+                "Tô sáng: kéo qua vùng cần làm nổi bật; nội dung bên dưới vẫn đọc được."
+              ]
+            },
+            "Dùng “Chọn, di chuyển và đổi kích thước” để chọn lại chú thích: kéo, nắm góc để đổi kích thước, xoay bằng núm điều khiển, đổi màu trong bảng hoặc xóa bằng phím Delete. Có thể sao chép và dán chú thích sang trang khác.",
+            "Nội dung đã vẽ được ghi vào tệp khi bạn lưu."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Chỉnh sửa văn bản và hình ảnh của chính tài liệu",
+          "body": [
+            "Công cụ “Chỉnh sửa văn bản và hình ảnh trong tài liệu” đánh dấu nội dung gốc của trang. Nhấp vào dòng văn bản để sửa hoặc nhấp vào ảnh để di chuyển, đổi kích thước, xoay hay xóa.",
+            {
+              "note": "Chỉ chỉnh sửa từng dòng hoặc từng ảnh. Đoạn văn không tự dàn lại khi dòng dài hơn; ảnh chồng lên ảnh khác có thể được chọn cùng nhau. Với thay đổi lớn, hãy sửa tài liệu trong chương trình đã tạo ra nó."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Che thông tin",
+          "body": [
+            "Công cụ khác → Che thông tin xóa vĩnh viễn nội dung không được phép đọc: kéo hộp đen lên vùng đó trên bất kỳ trang nào. Khi lưu, văn bản và ảnh bên dưới bị loại bỏ khỏi tệp chứ không chỉ bị che.",
+            {
+              "note": "Lưu tài liệu đã che dưới tên mới và giữ bản gốc ở nơi an toàn; nội dung đã che không thể khôi phục."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Hình mờ",
+          "body": [
+            "Chỉnh sửa → Hình mờ chèn chữ hoặc ảnh lên các trang bạn chọn: đặt ngang hoặc nghiêng, ở một trong chín vị trí, với kích thước và độ mờ tùy chỉnh. Hình mờ trên mỗi trang là chú thích thông thường, vẫn có thể di chuyển hoặc xóa."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Số trang, đầu trang và chân trang, đánh số Bates",
+          "body": [
+            {
+              "points": [
+                "Chỉnh sửa → Số trang: chọn định dạng (1, 1 / 12, Trang 1, v.v.), vị trí và trang cần đánh số.",
+                "Chèn → Đầu trang và chân trang: thêm văn bản ở một trong sáu vị trí. Trong văn bản, {page} là số trang hiện tại, {pages} là tổng số trang, {date} là ngày hôm nay và {file} là tên tài liệu.",
+                "Chèn → Đánh số Bates: đánh số tuần tự với tiền tố hoặc hậu tố (ABC000123), thường dùng cho hồ sơ vụ việc."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Liên kết, dấu trang và tệp đính kèm",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Liên kết",
+          "body": [
+            "Chèn → Liên kết: kéo chọn vùng cần nhấp, sau đó chỉ định đích đến là địa chỉ web hoặc một trang trong tài liệu.",
+            "Liên kết trong tài liệu hoạt động khi đọc: nhấp vào liên kết đến trang để chuyển đến đó; địa chỉ web hoặc email sẽ được mở bằng trình duyệt hoặc ứng dụng thư."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Dấu trang",
+          "body": [
+            "Chèn → Dấu trang mới: nhấp vào vị trí cần liên kết đến và đặt tiêu đề. Chèn → Dấu trang mở danh sách để đổi tên hoặc xóa dấu trang. Thay đổi được lưu khi bạn lưu tài liệu."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Tệp đính kèm",
+          "body": [
+            "Chèn → Đính kèm tệp: chọn tệp rồi nhấp vào vị trí đặt biểu tượng kẹp giấy. Có thể đặt tên, tác giả, màu sắc, đổi kích thước và xoay biểu tượng. Tệp được lưu bên trong PDF.",
+            "Chèn → Tệp đính kèm liệt kê nội dung tài liệu; có thể lưu từng tệp ra đĩa hoặc xóa khỏi tài liệu. Nhấp vào biểu tượng kẹp giấy cũng mở danh sách này."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Biểu mẫu",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Điền biểu mẫu",
+          "body": [
+            "Chèn → Điền biểu mẫu hiển thị các trường trong tài liệu: nhập văn bản, đánh dấu ô và chọn mục trong danh sách. Câu trả lời được ghi vào tệp khi bạn lưu."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Tạo biểu mẫu",
+          "body": [
+            "Menu Chèn thêm trường vào mọi tài liệu: trường văn bản, ô kiểm, nút chọn (chỉ chọn được một), danh sách lựa chọn và trường chữ ký để trống cho người ký.",
+            "Kéo trên trang để đặt trường. Có thể di chuyển và đổi kích thước trường như các chú thích khác cho đến khi lưu; sau đó trường trở thành một phần của biểu mẫu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ký tài liệu",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Thêm chữ ký vẽ tay",
+          "body": [
+            "Ký → Thêm chữ ký chèn hình chữ ký vào trang: bạn có thể vẽ bằng bút chọn trước, nhập chữ ký bằng phông chữ hoặc dùng ảnh (có tùy chọn “Chỉ giữ nét bút, bỏ nền giấy” cho ảnh chụp trang đã ký). Có thể ghi ngày bên dưới.",
+            "Kéo trên trang để đặt chữ ký. Các chữ ký đã dùng được lưu trên máy tính này để sử dụng lại.",
+            {
+              "note": "Đây chỉ là hình ảnh, không xác minh ai đã ký. Chữ ký chứng minh người ký và bảo đảm tài liệu không bị thay đổi cần dùng chứng chỉ."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Ký bằng chứng chỉ",
+          "body": [
+            "Ký → Ký bằng chứng chỉ tạo chữ ký số: chữ ký xác nhận người ký và niêm phong tài liệu để mọi thay đổi về sau đều được phát hiện.",
+            {
+              "steps": [
+                "Kéo chọn vùng hiển thị chữ ký trên trang (ban đầu sẽ có cửa sổ hướng dẫn; có thể tắt). Để ký mà không hiển thị trên trang, chọn “Ký mà không hiển thị trên trang”.",
+                "Chọn chứng chỉ: một chứng chỉ trên máy tính (thẻ hoặc token sẽ xuất hiện sau khi lắp vào đầu đọc) hoặc tệp .pfx / .p12 cùng mật khẩu. Nhấn “Tiếp tục”.",
+                "Chọn giao diện chữ ký. Trong mục “Lý do và địa điểm”, nhập lý do và nơi ký; nội dung này được lưu vào chữ ký và hiển thị trên trang nếu giao diện bật. Chọn “Khóa tài liệu sau khi ký” nếu không muốn ai ký hoặc sửa tiếp. Giữ chọn “Thêm thời gian tin cậy (dấu thời gian)” để cơ quan cấp xác nhận thời điểm bạn ký.",
+                "Nhấn “Ký” rồi chọn nơi lưu tệp đã ký. Nếu dùng token, lúc này bạn sẽ được yêu cầu nhập mã PIN."
+              ]
+            },
+            "Tệp đã ký sẽ mở thay cho tài liệu hiện tại. Chương trình không bao giờ lưu mật khẩu hoặc mã PIN.",
+            {
+              "note": "Chữ ký đủ điều kiện là chữ ký được tạo theo cách này bằng chứng chỉ đủ điều kiện trên thẻ hoặc token. Quá trình ký thực hiện trên máy tính của bạn; chỉ dấu thời gian và việc kiểm tra chứng chỉ của bạn cần kết nối mạng, và chỉ gửi các mã băm và số sê-ri của chứng chỉ, không bao giờ gửi tài liệu."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Giao diện chữ ký",
+          "body": [
+            "Giao diện chữ ký quyết định cách chữ ký chứng chỉ hiển thị trên trang. Có thể lưu nhiều giao diện với tên riêng, chẳng hạn một giao diện ký thay mặt công ty và một giao diện ký tên cá nhân.",
+            {
+              "points": [
+                "Ảnh: không dùng ảnh, chọn tệp (con dấu hoặc chữ ký đã quét) hoặc vẽ trực tiếp.",
+                "Văn bản hiển thị: tên, ngày, lý do và địa điểm; mỗi mục có thể hiện hoặc ẩn nhãn.",
+                "Thêm các dòng riêng bên dưới tên, chẳng hạn chức vụ và công ty.",
+                "“Văn bản tiêu chuẩn” luôn được hiển thị: ai ký và thời điểm ký."
+              ]
+            },
+            "Trong cửa sổ ký có các lệnh “Mới…”, “Sửa…” và “Xóa”. Giao diện dùng gần nhất sẽ được đề xuất đầu tiên. Các giao diện được lưu trên máy tính này."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Nhiều chữ ký và khóa tài liệu",
+          "body": [
+            "Nhiều người có thể ký cùng một tài liệu lần lượt. Mở tệp đã ký và ký mà không chỉnh sửa gì: chữ ký mới được thêm vào cuối tệp, các chữ ký trước đó vẫn hợp lệ.",
+            "Tùy chọn “Khóa tài liệu sau khi ký” (mặc định tắt) đóng khóa tài liệu: không ai có thể ký tiếp hoặc thay đổi tài liệu. Không thể hoàn tác thao tác này.",
+            {
+              "note": "Nếu chỉnh sửa tài liệu đã ký trước khi ký lại, tài liệu sẽ được tạo thành tệp mới và các chữ ký trước bị loại bỏ. Cửa sổ ký sẽ cảnh báo; để giữ chữ ký cũ, hãy mở lại tệp và ký mà không chỉnh sửa."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Dấu thời gian",
+          "body": [
+            "Dấu thời gian là xác nhận có chữ ký của cơ quan cấp dấu thời gian về thời điểm một thứ tồn tại. Nếu không có, thời gian trong chữ ký lấy từ đồng hồ máy tính của người ký, mà ai cũng có thể chỉnh; dấu thời gian chứng minh thời điểm đó và giúp chữ ký vẫn chứng minh được sau khi chứng chỉ hết hạn (PAdES B-T).",
+            {
+              "points": [
+                "Chữ ký có dấu thời gian khi chọn “Thêm thời gian tin cậy (dấu thời gian)” trong cửa sổ ký. Cài đặt → Chữ ký quyết định tùy chọn này có được chọn sẵn hay không, ở đây và khi xử lý hàng loạt.",
+                "Ký → Thêm dấu thời gian gắn cho toàn bộ tài liệu một dấu thời gian riêng, không cần chứng chỉ: dấu này chứng minh tài liệu tồn tại đúng như hiện tại vào thời điểm đó. Tài liệu được lưu thành tệp mới; các chữ ký sẵn có trong tệp vẫn hợp lệ."
+              ]
+            },
+            "Cơ quan cấp mặc định là của DigiCert (http://timestamp.digicert.com), miễn phí và được Adobe Reader cùng Windows tin cậy; có thể đặt cơ quan khác trong Cài đặt → Chữ ký. Cơ quan này chỉ nhận mã băm (SHA-256), không bao giờ nhận tài liệu, và cần có kết nối Internet. Khi chữ ký được gắn dấu thời gian, tổ chức cấp chứng chỉ của bạn cũng được hỏi xem chứng chỉ còn hiệu lực hay không, và câu trả lời được lưu trong chữ ký (xác thực dài hạn): nhờ đó Adobe Reader có thể hiển thị chữ ký là hợp lệ, cả bây giờ lẫn sau khi chứng chỉ hết hạn.",
+            {
+              "note": "Nếu không kết nối được với cơ quan cấp, sẽ không có gì được ký hay ghi: hãy thử lại, hoặc bỏ chọn dấu thời gian để ký mà không có nó."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Kiểm tra chữ ký",
+          "body": [
+            "Ký → Xác minh chữ ký liệt kê mọi chữ ký chứng chỉ của tệp: người ký, bên cấp chứng chỉ, thời điểm, lý do và địa điểm, cùng các thông tin sau:",
+            {
+              "points": [
+                "tài liệu có bị thay đổi kể từ chữ ký đó hay không (chữ ký thêm sau này không được tính là thay đổi);",
+                "chữ ký có khóa tài liệu hay không;",
+                "máy tính này có tin cậy CA phát hành chứng chỉ hay không và chứng chỉ hiện còn hợp lệ hay không;",
+                "thời gian được dấu thời gian của chữ ký xác nhận và cơ quan đã cấp, nếu có. Dấu thời gian của toàn bộ tài liệu cũng được liệt kê, kèm kết quả kiểm tra riêng."
+              ]
+            },
+            "Việc kiểm tra dựa trên phiên bản tệp được lưu gần nhất và thực hiện trên máy tính này, không kết nối mạng. Nhấp vào một chữ ký trên trang sẽ mở danh sách này tại chữ ký đó. Bên dưới mỗi chữ ký, “Hiện chứng chỉ” mở cửa sổ chứng chỉ của Windows (chuỗi chứng chỉ và mọi chi tiết; từ đó, “Cài đặt Chứng chỉ” giúp máy tính này tin cậy một chứng chỉ mà bạn biết), còn “Xác thực” hỏi trực tuyến tổ chức cấp chứng chỉ, chỉ khi bạn nhấn nút, xem chứng chỉ có bị thu hồi hay không."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Công cụ khác",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Nhận dạng văn bản (OCR)",
+          "body": [
+            "Công cụ khác → Nhận dạng văn bản (OCR) đọc chữ trên các trang quét và thêm văn bản ẩn vào trang để có thể tìm kiếm, sao chép và xuất văn bản. Hình thức trang không thay đổi.",
+            "Chỉ chọn những ngôn ngữ có trong trang; các trang đã có văn bản sẽ được giữ nguyên.",
+            {
+              "note": "Việc nhận dạng dùng bộ máy Tesseract, một chương trình miễn phí được cài riêng. Nếu chưa có, cửa sổ sẽ hiển thị lệnh cài đặt trên Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Giảm dung lượng tài liệu",
+          "body": [
+            "Công cụ khác → Nén lưu tài liệu thành tệp nhỏ hơn bằng cách giảm số điểm ảnh của ảnh chụp và bản quét. Có ba mức nén; văn bản và nét vẽ vẫn sắc nét. Tài liệu có ít ảnh sẽ được giảm dung lượng không nhiều."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "So sánh hai tài liệu",
+          "body": [
+            "Công cụ khác → So sánh tài liệu: chọn một PDF khác. Hai tài liệu được hiển thị cạnh nhau theo từng trang; những trang có văn bản khác nhau được đánh dấu và các dòng chỉ có ở mỗi bên được liệt kê."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Xử lý hàng loạt: nhiều tệp cùng lúc",
+          "body": [
+            "Công cụ khác → Xử lý hàng loạt thực hiện cùng thao tác trên nhiều tệp trong thẻ riêng. Mỗi kết quả là một tệp mới. Nếu kết quả sẽ thế chỗ các tệp đã có trong thư mục (chính các tệp của bạn, khi được lưu vào thư mục của chúng mà không thêm gì vào tên), bạn sẽ được hỏi trước muốn thay thế, bỏ qua hay hủy. Một tệp chỉ được thay thế khi kết quả của nó đã hoàn tất; tệp đang mở (trong một thẻ ở đây hoặc trong chương trình khác) được giữ nguyên và được đánh dấu là chưa xong.",
+            {
+              "steps": [
+                "Ở bên trái, thêm tệp bằng “Thêm tệp”, “Thêm thư mục” (bao gồm thư mục con) hoặc kéo thả tệp vào.",
+                "Ở bên phải, chọn thao tác. Mỗi tệp đều được chuyển thành PDF; ngoài ra có thể xoay trang, nhận dạng văn bản, thêm đầu trang và chân trang, hình mờ hoặc số trang, nén tệp, ký bằng chứng chỉ hoặc xuất sang định dạng khác. Các số cho biết thứ tự thao tác.",
+                "Chọn cách xuất: mỗi tệp thành một tệp riêng hoặc gộp tất cả vào một PDF theo thứ tự danh sách; sau đó chọn thư mục lưu kết quả. Khi tất cả tệp đến từ cùng một thư mục, thư mục đó sẽ được chọn sẵn cho bạn cho đến khi bạn chọn thư mục khác; nếu không, đó là thư mục bạn chọn gần nhất.",
+                "Nhấn “Bắt đầu”. Trạng thái của từng tệp sẽ được hiển thị; có thể dừng giữa các tệp."
+              ]
+            },
+            {
+              "points": [
+                "Quy trình mẫu: “Lưu thành quy trình mẫu” lưu mọi lựa chọn (trừ tệp và mật khẩu) theo tên để áp dụng lại chỉ bằng một lựa chọn.",
+                "“Giữ nguyên cấu trúc thư mục của các tệp trong kết quả” tái tạo cấu trúc thư mục đã thêm.",
+                "“Ghi báo cáo quá trình” lưu tệp văn bản cạnh kết quả, ghi lại những gì đã lưu và lỗi gặp phải.",
+                "PDF chỉ được ký sẽ giữ nguyên các chữ ký có sẵn; nếu thực hiện thêm thao tác khác trong cùng lượt, tệp được tạo lại và chữ ký cũ bị loại bỏ."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cài đặt",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Cài đặt PDF Organizer",
+          "body": [
+            "Tệp → Cài đặt (hoặc chọn Cài đặt ở thanh bên, rồi chọn PDF Organizer). Có thể khôi phục riêng từng thiết lập hoặc khôi phục tất cả.",
+            {
+              "points": [
+                "Khi mở tài liệu: kích thước hiển thị ban đầu, cuộn trang hay xem từng trang, bật hoặc tắt hình thu nhỏ.",
+                "Đơn vị, thước và lưới: đơn vị (milimét, inch, point), thước, lưới và khoảng cách lưới.",
+                "In: khổ giấy, hướng giấy và tỷ lệ mặc định của cửa sổ in.",
+                "Thanh công cụ nhanh: chọn các nút hiển thị phía trên trang.",
+                "Tên tài liệu mới: mẫu đặt tên cho trang trích xuất, tài liệu mới và PDF gộp từ nhiều tệp trong xử lý hàng loạt.",
+                "Chữ ký: chọn có hỏi trước khi lưu đè tệp đã ký hay không.",
+                "Phím tắt: nhấp vào phím tắt của lệnh rồi nhấn tổ hợp phím mới."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Giới thiệu PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Giới thiệu PDF Organizer",
+          "body": [
+            "PDF Organizer là ứng dụng PDF của Syntelab Creative: đọc tài liệu PDF, sắp xếp và gộp trang, viết và vẽ lên trang, điền và tạo biểu mẫu, ký bằng chứng chỉ, xác minh chữ ký và xử lý hàng loạt tệp.",
+            "Ứng dụng còn mới và một số chức năng mới chỉ ở bước đầu. Nếu chưa đáp ứng nhu cầu tài liệu của bạn, hãy gửi góp ý qua Trợ giúp → Góp ý để chúng tôi biết cần cải thiện điều gì."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Công nghệ sử dụng trong PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Đọc, vẽ và ghi PDF: MuPDF.",
+                "Nhận dạng văn bản (OCR): Tesseract nếu được cài trên máy tính.",
+                "Mở tài liệu văn phòng: Word, Excel, PowerPoint hoặc LibreOffice, tùy chương trình được cài.",
+                "Lưu trang web dưới dạng PDF: dùng trình duyệt đã cài trên máy tính.",
+                "Ký bằng chứng chỉ: dùng dịch vụ chứng chỉ của Windows; chữ ký được ghi theo tiêu chuẩn PAdES."
+              ]
+            },
+            "Thông tin về những thành phần được dùng chung với phần còn lại của chương trình có trong mục “Giới thiệu Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Những giới hạn hiện tại của PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Tài liệu văn phòng được mở bằng bộ ứng dụng văn phòng trên máy tính; nếu không có Word, Excel, PowerPoint hoặc LibreOffice thì không thể mở. Công cụ chuyển đổi riêng đang được phát triển; xem “Đang phát triển”.",
+                "Nhận dạng văn bản cần bộ máy Tesseract được cài riêng.",
+                "Văn bản trong tài liệu chỉ được chỉnh sửa từng dòng; đoạn văn không tự dàn lại.",
+                "Không thể chọn và di chuyển ảnh được in bằng bốn màu mực (CMYK).",
+                "“Xác thực” cho biết hiện tại chứng chỉ có bị thu hồi hay không, chứ không cho biết bị thu hồi từ khi nào.",
+                "Hiện tại chỉ hỗ trợ ký bằng chứng chỉ trên Windows; hỗ trợ Linux và macOS sẽ có trong phiên bản sau."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

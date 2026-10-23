@@ -1,0 +1,22 @@
+/* Tooltips: see tooltip/tooltip.ts. One box for the whole window, placed by
+   tooltip/tooltip-layer.ts above everything else, so nothing cuts it off. */
+.sc-tooltip {
+  position: fixed;
+  inset: auto;
+  width: max-content;
+  max-width: 260px;
+  margin: 0;
+  padding-block: 6px;
+  padding-inline: 10px;
+  overflow: visible;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-tooltip-bg);
+  color: var(--sc-tooltip-text);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: start;
+  white-space: normal;
+  pointer-events: none;
+}

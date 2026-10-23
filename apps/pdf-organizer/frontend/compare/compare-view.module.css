@@ -1,0 +1,175 @@
+.view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-block: 4px;
+  padding-inline: 16px 8px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+}
+
+.summary {
+  flex: 1;
+  font-weight: 600;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.pages {
+  display: flex;
+  flex: 0 0 210px;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px;
+  overflow-y: auto;
+  border-inline-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+}
+
+.pageButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-block: 6px;
+  padding-inline: 8px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  font-size: 13px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.pageButton:hover {
+  background: var(--sc-surface-2);
+}
+
+.pageButton[aria-current='page'] {
+  background: var(--sc-accent-soft);
+}
+
+/* A page that differs stands out in the list; one that is the same recedes. */
+.pageButton:not([data-status='same']) {
+  color: var(--sc-text);
+  font-weight: 600;
+}
+
+.status {
+  flex: 1;
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 400;
+  text-align: end;
+}
+
+.sides {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 24px;
+  min-width: 0;
+  padding: 20px;
+  overflow: auto;
+  background: var(--sc-surface-2);
+}
+
+.side {
+  display: flex;
+  flex: 1 1 320px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.name {
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.paper {
+  max-width: 100%;
+  background: var(--sc-paper);
+  box-shadow: var(--sc-shadow-s);
+}
+
+.noPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(460px, 100%);
+  min-height: 160px;
+  border: 1px dashed var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  color: var(--sc-muted);
+}
+
+/* The lines only this side has. */
+.lines {
+  align-self: stretch;
+  margin: 0;
+  padding: 8px 12px;
+  border-inline-start: 3px solid;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  font-size: 13px;
+  list-style: none;
+  user-select: text;
+}
+
+.lines li + li {
+  margin-block-start: 4px;
+}
+
+.lines[data-kind='removed'] {
+  border-color: var(--sc-danger);
+}
+
+.lines[data-kind='added'] {
+  border-color: var(--sc-action-support);
+}
+
+.more {
+  color: var(--sc-muted);
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 100%;
+  padding: 40px;
+  color: var(--sc-muted);
+  text-align: center;
+}
+
+.message p {
+  max-width: 420px;
+  margin: 0;
+  color: var(--sc-text);
+}
+
+.warning {
+  display: flex;
+  color: var(--sc-danger);
+}

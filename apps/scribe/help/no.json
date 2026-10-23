@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Tekster og filer",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editoren",
+          "body": [
+            "Scribe er en ren teksteditor med verktøy ved siden av. Hver tekst har en fane; teksten er i midten, verktøypanelet på siden, og en linje med fakta under.",
+            "Når Scribe åpnes, spør den først hva du vil gjøre: telle ord, søke og erstatte, fjerne duplikater, sammenligne to tekster, sortere linjer, reversere en tekst, skrive fylltekst eller tilfeldig tekst. Hvert valg åpner teksten med tilhørende verktøy ved siden av; \"En tom tekst\" åpner teksten alene, og tekster som nylig er åpnet er oppført under.",
+            {
+              "points": [
+                "Fil → Ny tekst (Ctrl+N) starter en tom tekst.",
+                "Fil → Åpne (Ctrl+O) åpner én eller flere filer, hver i sin fane. Alle filer som inneholder tekst kan åpnes: .txt, .md, .csv, .log, .srt, kildekode og andre.",
+                "Rediger → Angre (Ctrl+Z) og Gjenta (Ctrl+Y) går gjennom alt som er gjort med teksten, der et verktøy eller en oppskrift teller som ett trinn.",
+                "Rediger → Søk og erstatt (Ctrl+F) åpner et felt i editoren som går fra ett treff til det neste.",
+                "Rediger → Marker alt (Ctrl+A)."
+              ]
+            },
+            "Linjen under teksten viser hvor markøren er, hvor mye som er markert, antall linjer, ord og tegn, filens koding og hvordan linjene avsluttes.",
+            "Filer som slippes inn i vinduet åpnes også, hver som en ny tekst med filnavn, koding og linjeskift. Programmet leser innholdet i en sluppet fil, men ikke hvor den ligger på disken, så ved lagring spør programmet hvor den skal lagres; filer over 64 MB åpnes med Fil → Åpne.",
+            "En ny tekst, mens den er tom, viser en liste over tekster som nylig er åpnet: klikk på en for å åpne den. \"Tøm listen\" tømmer den; listen lagres kun på denne datamaskinen."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Lagre og Lagre som",
+          "body": [
+            "Ingenting endres i filen på disken før du lagrer. En prikk på fanen indikerer at teksten har endringer som ikke er lagret i filen, og ved lukking av en slik fane vil programmet spørre først.",
+            {
+              "points": [
+                "Lagre (Ctrl+S) skriver teksten over filen. For en ny tekst blir du spurt hvor den skal lagres.",
+                "Lagre som (Ctrl+Shift+S) skriver det til en ny fil, som deretter tar fanens plass, mens alt som kan angres fortsatt er der; den gamle filen forblir som den var."
+              ]
+            },
+            "En fil skrives enten helt eller ikke i det hele tatt: hvis skrivingen mislykkes, er filen som var der fortsatt der.",
+            {
+              "note": "En fil lagres slik den ble åpnet: med samme koding og samme linjeskift. En tekst skrevet på Windows og en skrevet på Linux forblir begge som de var."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodinger og linjeskift",
+          "body": [
+            "En koding er måten bokstaver lagres som bytes på. Scribe leser hva filen sier om seg selv, og gjetter når den ikke sier noe. De fleste filer i dag er UTF-8; eldre filer fra Sentral-Europa er ofte windows-1250.",
+            {
+              "points": [
+                "Bokstaver som ser feil ut (Ã£ i stedet for ă, eller firkanter): Fil → \"Les på nytt med annen koding\", og velg den filen ble skrevet i.",
+                "For å lagre i en annen koding, velg den på linjen under teksten, og lagre deretter. Hvis teksten har bokstaver som den kodingen ikke kan skrive, sier Scribe hvilke og skriver ingenting.",
+                "Linjeskift (Windows CRLF, Linux og macOS LF, gammel Mac CR) endres på samme sted. En fil med blandede linjeskift sies å ha dette; lagring gir alle linjene den samme."
+              ]
+            },
+            "Hva en ny tekst starter med, velges i Innstillinger."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Hvordan teksten vises",
+          "body": [
+            {
+              "points": [
+                "Alt i Vis-menyen er en bryter: på, så er det synlig; av, så er det ikke det.",
+                "Tekst: Bryt lange linjer (Alt+Z) — en linje som er lengre enn vinduet fortsetter under, og teksten beholder linjene sine; Linjenummer; Resultat ved siden av teksten.",
+                "Ved siden av teksten: Verktøy (Ctrl+T), Oppskrifter, Statistikk. Panelet viser bare delene som er på; når ingen er på, er det ikke noe panel.",
+                "Viste verktøy: hver gruppe med verktøy (finn og erstatt, linjer, store og små bokstaver, rensing, skriv tekst) kan fjernes fra panelet. Et verktøy valgt fra Format- eller Verktøy-menyen vises uansett: delen og gruppen kommer automatisk tilbake.",
+                "Den doble pilen øverst i panelet folder det sammen til en stripe i kanten, hvor hver av delene er ett klikk unna; dra i kanten for å gjøre det bredere eller smalere.",
+                "Bokstaver og størrelsen på disse velges i Innstillinger."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Veldig store filer",
+          "body": [
+            "En fil på over 64 MB legges ikke inn i editoren: den åpnes i en fane som viser én side med 500 linjer om gangen, lest fra filen etter hvert som du går frem. Filer på flere gigabyte åpnes på denne måten på den tiden det tar å gå gjennom dem én gang.",
+            {
+              "points": [
+                "\"Forrige side\" og \"Neste side\" beveger seg gjennom filen; et linjenummer og \"Gå til\" hopper til hvilken som helst linje.",
+                "Finn søker gjennom hele filen, med de samme valgene som ellers, og lister opp stedene den fant: klikk på ett for å gå til den linjen. En lang liste vises én del om gangen med \"Finn flere\".",
+                "\"Kjør en oppskrift på hele filen\" skriver resultatet i en mappe du velger, under samme navn. Selve filen blir aldri endret her.",
+                "\"Åpne hele i editoren\" legger den i editoren uansett, for å endre den manuelt. Dette kan være tregt, og det krever flere ganger filens størrelse i minne."
+              ]
+            },
+            {
+              "note": "Filer skrevet med to bytes per bokstav (UTF-16) kan ikke vises én side om gangen. En oppskrift holder hele filen i minnet mens den kjører: grensen er datamaskinens minne."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Verktøy",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Hvordan verktøy fungerer",
+          "body": [
+            "Verktøyene finnes i panelet ved siden av teksten, inndelt i grupper. Klikk på et verktøy for å se valgene, og trykk deretter Bruk.",
+            {
+              "points": [
+                "Når noe er markert, endrer et verktøy kun markeringen; når ingenting er markert, endres hele teksten. Panelet viser hvilket som gjelder øverst.",
+                "Under knappen viser verktøyet hva det gjorde: hvor mange linjer eller steder det endret.",
+                "Hvert verktøy er ett steg: Angre tar det hele tilbake.",
+                "Hvert verktøy finnes også i menyene og i kommando-søket: de som endrer formen på en tekst (linjer, store bokstaver og tegn, rensing) i Format-menyen, de andre i Verktøy. Ved å velge et der åpnes panelet med tilhørende valg."
+              ]
+            },
+            "I Format-menyen er et verktøy som for det meste har ett valg, lagt ut som sine alternativer: hver måte å endre store bokstaver på, hver type anførselstegn, hver måte å snu en tekst på er en egen kommando, som åpner verktøyet med det valget markert. Der vinduet er for smalt for en gruppe, blir gruppen til én knapp som åpner hele listen.",
+            "Verktøyene kjører på denne datamaskinen. Ingen tekst forlater den."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Resultatet, før du bruker det",
+          "body": [
+            "Mens et verktøy er åpent, vises det resultatet ville gitt ved siden av teksten, i «Resultat»-ruten. Ingenting i teksten endres før du velger Bruk. Resultatet følger deg: endre et valg eller teksten, så blir det generert på nytt.",
+            {
+              "points": [
+                "Teksten og resultatet står side om side, hver under en overskrift med samme høyde, slik at de samme linjene starter på samme høyde; de ruller sammen (kjede-knappen slår dette av).",
+                "Linjer som ville endret seg er markerte, med den delen av linjen som endres markert mørkere; linjer som bare ville flyttet seg, og linjer som er nye, har hver sin farge. Linjene som ville blitt endret eller fjernet, er også markerte i teksten din.",
+                "Under navnene: hva som ville skjedd i tall — linjer endret, flyttet, nye, fjernet; linjer og tegn før og etter.",
+                "Under resultatet: linjene som ville blitt fjernet. Klikk på en for å gå til den i teksten.",
+                "De små knappene for resultatet: kopier det, åpne det som en ny tekst, sammenlign det med teksten i en fane, rull sammen, plasser resultatet under teksten i stedet for ved siden av, skjul det. Teksten har sine egne: angre, gjenta, kopier, lim inn over, velg alle, slett.",
+                "Dra linjen mellom de to for å gi den ene mer plass; et dobbeltklikk gjør dem like igjen."
+              ]
+            },
+            "Etter Anvend på teksten melder Resultat-ruten om dette (\"Anvendt. Teksten til venstre er nå resultatet.\") og tilbyr Angre og \"Sammenlign med slik det var\", som åpner den samme sammenligningen av før og etter. Den viser et resultat igjen så snart du endrer teksten eller et valg i verktøyet.",
+            {
+              "note": "Vis → \"Resultat ved siden av teksten\" slår ruten av og på. For en veldig lang tekst (over to millioner tegn) vises ingenting på forhånd: bruk verktøyet, og Angre tar det tilbake."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Erstatt overalt",
+          "body": [
+            "Ersetter alle steder noe blir funnet, på én gang. Mens du skriver hva som skal søkes etter, opplyser Scribe hvor mange steder det er funnet og markerer dem i teksten, slik at du ser hva som vil endres før du utfører handlingen.",
+            {
+              "points": [
+                "\"Regulært uttrykk\": teksten som skal finnes, er et mønster. I \"Erstatt med\" står $1, $2… for det mønstergruppene fant.",
+                "\"Skille mellom store og små bokstaver\": a og A er forskjellige bokstaver.",
+                "\"Kun hele ord\": \"katt\" blir ikke funnet inne i \"kattemat\".",
+                "\"Behold store bokstaver i det som erstattes\": å erstatte \"katt\" med \"hund\" gjør \"Katt\" til \"Hund\" og \"KATT\" til \"HUND\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Flere valg\" → \"Fyll inn…\": det som settes inn, kan inneholde plassholdere som fylles ut ved hvert treff. {counter} teller 1, 2, 3… ({counter:10} starter på 10, {counter:10:5} øker med 5); {date} og {time} er datoen og klokkeslettet på datamaskinen din; {uuid} er en identifikator; {random} er 8 tilfeldige bokstaver og sifre ({random:12} for 12).",
+                "Under det du søker etter, opplyser Scribe også hvor mange linjer treffene er fordelt på og hvor mange ulike tekster det er."
+              ]
+            },
+            "\"Erstatt flere på én gang\" utfører en liste med par i ett trinn. Skriv ett par per linje, slik: hva som skal finnes => hva som skal settes inn. Disse utføres fra første til siste, hver på det den forrige etterlot; en tom andre halvdel fjerner teksten.",
+            {
+              "note": "Et mønster kan ikke fryse programmet: tiden det tar vokser med lengden på teksten og ikke raskere. Mønstre som ser tilbake på det de fant (\\1) er ikke tilgjengelige av denne grunn."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Linjer",
+          "body": [
+            {
+              "points": [
+                "Sorter linjer etter: bokstavene deres, slik en ordbok gjør, på programmets språk eller et du velger (på rumensk kommer ă etter a; svensk setter ä etter z, tysk ved siden av a); bokstaver med tall som tall (fil2 før fil10); tallet hver linje starter med; lengde; antall ord; datoen hver linje starter med (05.03.2024, 2024-03-05, med eller uten klokkeslett); internettadresser; versjonsnumre (1.2.10 etter 1.2.9); titler, der en artikkel i starten ikke teller; en rekkefølge du skriver (liten, medium, stor); eller ingen rekkefølge i det hele tatt.",
+                "Linjer uten noe å sortere etter (intet tall, ingen dato, en verdi som ikke er i rekkefølgen du skrev) blir værende til slutt uansett hvordan de andre er sortert: minste først eller største først.",
+                "Flere valg for sortering: sammenlign fra et ord eller et tegn og utover, eller én kolonne i en tabell (med hvilke deler kolonnene består av); behold den første linjen på plass som en overskrift; sorter avsnitt i stedet for linjer; og rydd først — trim, fjern tomme linjer, fjern duplikater.",
+                "Fjern duplikate linjer: behold den første, den siste, eller ingen av linjene som gjentas (kun de som finnes én gang blir værende). Store og små bokstaver, mellomrom rundt en linje, sifre, tegnsetting og et antall tegn i starten eller slutten kan se bort fra; kun en kolonne, eller kun det et mønster finner, kan være det som sammenlignes. Tomme linjer behandles som de andre, beholdes, fjernes eller slås sammen.",
+                "Tell gjentatte linjer: beholder hver linje én gang, med antall ganger den forekom skrevet foran — de mest gjentatte først, eller de minst gjentatte, eller i den rekkefølgen de kommer.",
+                "Behold eller fjern linjer: søker etter noe i hver linje og beholder kun linjene som har det, eller kun de som ikke har det.",
+                "Snu rekkefølgen på linjene; stokk om på linjene.",
+                "Nummerer linjer: startnummer, hva som skal stå etter det, nuller foran slik at numrene står på linje, tomme linjer uten nummer.",
+                "Tomme linjer: fjern alle, eller behold én der det er flere.",
+                "Slå sammen linjer til én, med det du velger imellom; del opp i linjer ved hvert komma, semikolon eller annet. Der det som står mellom ting skrives inn (nummerering, sammenføying, oppdeling, telling), står \\t for en tabulator, som ikke kan skrives direkte inn i et felt."
+              ]
+            },
+            {
+              "note": "Et valg som bare betyr noe sammen med et annet, vises bare da: kolonnen, når du sammenligner etter kolonne. Valgene færre personer trenger, ligger under \"Flere valg\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Store og små bokstaver",
+          "body": [
+            "Endre store og små bokstaver: setningsstart med stor bokstav, hvert ord med stor bokstav, alle store bokstaver, alle små bokstaver, invertert, og måtene navn skrives på i kode: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Store og små bokstaver følger reglene for hvert alfabet, ikke bare for engelsk.",
+            "I gruppen Retning vil \"Snu teksten\" snu bokstavene i hver linje, eller rekkefølgen på ordene, eller bokstavene i hvert ord; \"Opp-ned\" skriver det slik at det kan leses fra andre siden av bordet, og \"Som i et speil\" bytter også tegn som har en venstre- og høyreside. Bokstaver telles slik en leser teller dem: en bokstav med sine tegn forblir én."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Rensing",
+          "body": [
+            {
+              "points": [
+                "Rens opp i mellomrom: flere mellomrom blir til ett; mellomrom i slutten av linjer fjernes.",
+                "Trim linjeslutter: i begge ender, i starten eller i slutten.",
+                "Anførselstegn: rette, engelske, rumenske, tyske eller franske.",
+                "Fjern diakritiske tegn: ă blir a, é blir e. Kun i det latinske og greske alfabetet, der en bokstav uten tegnet sitt fortsatt er den samme bokstaven.",
+                "Reparer rumenske bokstaver: ş og ţ (med cedille, skrevet med eldre tastaturer) blir til ș og ț (med komma), bokstavene som rumensk skrives med.",
+                "Tabs til mellomrom og mellomrom til tabs, med den tab-bredden du velger.",
+                "Fjern HTML-tagger: for kildekoden til en nettside limt inn i teksten. Tagger, skript og stiler fjernes; det en leser ville sett, blir værende. For å hente en side fra adressen, bruk verktøyet under, \"Tekst fra nettside\".",
+                "Tekst fra nettside: skriv inn adressen til en side (example.com/page) og velg \"Hent tekst\". Det en leser ville sett på den siden, skrives der markøren er, uten tagger, skript eller stiler. Dette er det eneste verktøyet i Scribe som går på nett, og kun når du ber om det: siden hentes av nettleseren installert på denne datamaskinen (Microsoft Edge eller Google Chrome), kjørt uten vindu og uten dine informasjonskapsler eller pålogginger; programmet selv sender ingenting. En side som krever at du er logget inn, gir kun det en fremmed ville sett."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Gjenopprette rumenske diakritiske tegn",
+          "body": [
+            "Rumensk skrevet uten ă, â, î, ș, ț blir skrevet med dem igjen.",
+            {
+              "steps": [
+                "Åpne verktøyet i gruppen Rengjøring og velg Bruk.",
+                "Ord som bare har én riktig form endres med en gang: \"stiu\" blir \"știu\", \"informatii\" blir \"informații\".",
+                "Ord som kan leses på mer enn én måte (fata, fată, fața, față) listes opp under knappen, hver på sin plass i teksten. Klikk på den riktige formen for hver.",
+                "Eller merk \"Velg den mest sannsynlige formen automatisk der et ord er usikkert\" før du bruker det: ingenting blir spurt om, og resultatet må leses gjennom."
+              ]
+            },
+            "Der ordene rundt er tilstrekkelige, avgjør Scribe ut fra dem: \"o casa\" blir \"o casă\", \"casa mea\" forblir, \"pentru ca\" blir \"pentru că\".",
+            {
+              "note": "Dette er bygget for Scribe fra en liste over vanlige ord og endelser som på rumensk alltid skrives med diakritiske tegn. Ord den ikke kjenner (sjeldne ord, navn) forblir slik de er skrevet, og et ord som allerede er skrevet med diakritiske tegn blir aldri endret. Les resultatet før du sender det."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Skrive tekst: fylltekst og tilfeldig tekst",
+          "body": [
+            "Verktøyene i gruppen \"Skriv tekst\" endrer ingenting: de skriver. Det de genererer plasseres der markøren er, eller erstatter markert tekst.",
+            {
+              "points": [
+                "Fylltekst: avsnitt, setninger, ord, lister, overskrifter eller deler av en side (en overskrift, avsnitt, en liste). På printers latin (lorem ipsum), engelsk, rumensk, kontor- eller kjøkkenord, eller dine egne ord. Flere valg: korte, mellomlange eller lange setninger; ren tekst, Markdown, HTML eller JSON; nivå på overskrifter; tegnbegrensning (teksten kuttes ved et helt ord og avsluttes fortsatt som en setning); ord som skal utelates.",
+                "Fiktive data: navn, e-postadresser, telefonnumre, gateadresser, datoer eller tall, ett per linje, fra Romania eller engelsktalende land. \"Linjer etter mønsteret mitt\" skriver hver linje slik du ønsker, der {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} og {row} representerer det som genereres — for eksempel en tabell for å teste noe, om et øyeblikk.",
+                "Tilfeldig tekst: passord (bokstaver, sifre og tegn, minst ett av hver), bokstaver, sifre, heksadesimalt eller identifikatorer (UUID), på én eller flere linjer. Tegn som lett kan forveksles (0 og O, 1, l og I) kan utelates.",
+                "Et seed (under \"Flere valg\") gjør at fylltekst og fiktive data blir like hver gang for samme nummer; 0 gir noe nytt hver gang."
+              ]
+            },
+            {
+              "note": "Passord lages på denne datamaskinen, basert på operativsystemets tilfeldighet, og sendes ingen steder. Oppdiktede e-postadresser slutter på example.com, hvor e-post ikke når noen; et tilfeldig generert telefonnummer kan tilhøre noen, så ikke ring det."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oppskrifter",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Lagre det du har gjort som en oppskrift",
+          "body": [
+            "En oppskrift er en liste over verktøy med deres innstillinger, lagret under et navn og kjørt på nytt med ett klikk.",
+            {
+              "steps": [
+                "Bruk de verktøyene du ønsker på en tekst, i den rekkefølgen du ønsker.",
+                "Åpne \"Oppskrifter\" øverst i panelet: verktøyene du har brukt er listet opp.",
+                "Velg \"Lagre som oppskrift\", og gi den et navn.",
+                "Senere kan du åpne oppskriften og velge \"Kjør på teksten\": alle trinnene utføres, og én Angre-operasjon fjerner alle sammen."
+              ]
+            },
+            "Oppskrifter lagres på denne datamaskinen og er tilgjengelige i alle tekster."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Endre en oppskrift, eller lage en fra bunnen av",
+          "body": [
+            "\"Endre\" på en åpen oppskrift viser navnet og trinnene. Hvert trinn kan flyttes opp eller ned, fjernes, eller få andre innstillinger; verktøy legges til fra listen under trinnene. Ingenting lagres før du trykker \"Lagre\".",
+            "\"Ny oppskrift\" starter en uten trinn, som settes sammen på samme måte uten at verktøyene først brukes på en tekst.",
+            {
+              "note": "Verktøy som skriver tekst (filler, random) er ikke trinn i en oppskrift: en oppskrift endrer en tekst."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Kjøre en oppskrift på filer",
+          "body": [
+            {
+              "steps": [
+                "Åpne oppskriften og legg til filer eller en mappe (inkludert undermapper) under \"Kjør på filer\".",
+                "Velg hvor resultatene skal lagres: i en annen mappe, noe som lar filene være som de er, eller over filene selv.",
+                "Kjør. Scribe opplyser hvor mange filer som ble skrevet, hvor mange som ikke trengte endring, og hvilke som ikke kunne behandles og hvorfor."
+              ]
+            },
+            "Hver fil skrives med den kodingen og de linjeskiftene den hadde. I en annen mappe beholder filene mappestrukturen de kom fra, og en fil som allerede eksisterer der blir aldri overskrevet.",
+            {
+              "note": "Overskriving av filene selv kan ikke angres fra Scribe. Ta en kopi hvis filene er viktige."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistikk, sammenligning og mapper",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistikk",
+          "body": [
+            "\"Statistikk\" øverst i panelet viser hva teksten, eller markeringen, består av. Hver del kan foldes sammen.",
+            {
+              "points": [
+                "Øverst: ord, tegn med og uten mellomrom, setninger, avsnitt, linjer, sider og størrelse i bytes.",
+                "Tid: for å lese i stillhet, for å lese høyt, for å skrive på tastatur og for å skrive for hånd.",
+                "Ord: hvor mange som er unike (og deres andel av totalen), bokstaver i et ord, stavelser, det lengste og det korteste ordet, og hvor mange ord det er av hver lengde.",
+                "Setninger: ord i en setning, hvor mange som er korte, mellomstore og lange, hvor mange som er konstateringer, spørsmål og utrop, samt den lengste og den korteste.",
+                "Lesbarhet: en poengsum fra 0 (veldig vanskelig) til 100 (veldig enkelt), basert på formelen laget for tekstens språk. Det finnes formler for engelsk, tysk, spansk, fransk, italiensk, nederlandsk, portugisisk og russisk; et språk uten formel får ingen poengsum, da en formel laget for et annet språk ville vært misvisende.",
+                "Hyppigste ord: ordene som brukes mest med deres andel av teksten, samt par og grupper på tre ord som gjentar seg.",
+                "Plass innenfor vanlige grenser: hvor mange tegn som er igjen, eller over, for en tittel, en beskrivelse, et kort innlegg og andre formål."
+              ]
+            },
+            "Ord og setninger finneres ut fra reglene for hvert skriftsystem, så kinesisk, japansk og thai, som ikke bruker mellomrom mellom ord, blir også talt. Hastighetene tidene beregnes ut fra, og hvor mange ord som utgjør en side, er angitt i Innstillinger."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Sammenligne to tekster",
+          "body": [
+            {
+              "points": [
+                "Verktøy → \"Sammenlign med en annen tekst\": teksten i editoren ved siden av en tekst du skriver eller limer inn.",
+                "Verktøy → \"Sammenlign med fil\": teksten i editoren, slik den er nå, ved siden av en fil du velger.",
+                "Verktøy → \"Sammenlign to tekster\": to tekster skrevet eller limt inn side om side.",
+                "Verktøy → \"Sammenlign to filer\"."
+              ]
+            },
+            "De to tekstene vises side om side. Linjer som bare finnes i den første er markert som fjernet, linjer som bare finnes i den andre som lagt til, og i en linje som er endret, er ordene som avviker markert. Bare det som avviker vises, med noen få linjer rundt; pilene går fra én forskjell til den neste.",
+            "Store bokstaver, mellomrom, tomme linjer, tall og tegnsetting kan hver for seg ignoreres. \"I én kolonne\" viser hva som ble tatt ut over hva som ble satt inn, hver med sitt tegn, i stedet for side om side. Ved siden av antallene opplyser Scribe hvor like de to tekstene er, som andelen linjer som er like.",
+            "En tekst vises så snart den er valgt, før den andre er det. Dra linjen mellom de to tekstene for å gi den ene mer plass; mens tekstene skrives, kan linjen under boksene dras opp og ned for å gi boksene eller sammenligningen mer plass. Et dobbeltklikk setter en linje tilbake.",
+            "Der flere linjer på rad ble endret, blir hver linje plassert ved siden av den linjen den ligner mest på, slik at en linje som er lagt til eller fjernet blant dem ikke gjør at hver påfølgende linje ser ut som om den er endret til den neste.",
+            "\"Skriv eller lim inn tekstene\" viser en boks over hver kolonne; det du skriver der sammenlignes mens du skriver, og en fil kan fortsatt velges for hver side."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Søk og erstatt i en mappe",
+          "body": [
+            {
+              "steps": [
+                "Verktøy → \"Søk i mappe\" (Ctrl+Shift+F), og velg mappen. Mapper under denne blir også søkt i.",
+                "Skriv inn hva som skal søkes etter, med de samme valgene som i \"Erstatt overalt\". \"Filtyper\" begrenser søket til enkelte filendelser (txt, md, csv…).",
+                "Hvert treff vises i sin linje, fil for fil. Klikk på en linje for å åpne filen der.",
+                "For å erstatte: skriv inn den nye teksten, avhuk filene som skal utelates, og velg \"Skriv filene\"."
+              ]
+            },
+            "Ingenting skrives før du ber om det, og kun i filene som forblir avhuket. Hver fil skrives med den kodingen og de linjeskiftene den hadde.",
+            {
+              "note": "Skjulte mapper og mapper som fylles opp av programmer (.git, node_modules) blir hoppet over med mindre du ber om dem. Filer som ikke er tekst, blir alltid hoppet over."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Innstillinger",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Innstillinger for Scribe",
+          "body": [
+            "Fil → Innstillinger åpner programinnstillingene for Scribe.",
+            {
+              "points": [
+                "Editoren: bokstaver med fast bredde eller programmets egne, størrelse, linjeskift, linjenummer, og om resultatet av et verktøy skal vises før det blir brukt.",
+                "Ny tekst: hvordan linjene avsluttes, og om filen starter med et byte order mark.",
+                "Statistikk: hastighet for lesing, opplesing, tasting og håndskrift, og hvor mange ord som utgjør en side.",
+                "Tastaturkombinasjoner for Scribes kommandoer."
+              ]
+            },
+            "Hver innstilling har en knapp som tilbakestiller den til standardverdien."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Om Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Om Scribe",
+          "body": [
+            "Scribe er tekstappen i Syntelab Creative: en editor med verktøy ved siden av teksten. Den viser hva et verktøy vil gjøre før det utføres, renser og sorterer lister, søker og erstatter i en tekst eller i en hel mappe, sammenligner to tekster, analyserer hva en tekst består av, skriver fylltekst og fiktive data, og lagrer oppgaver du gjør ofte som oppskrifter for gjenbruk.",
+            "Alt gjøres lokalt på denne datamaskinen. Det er ingen begrensninger på størrelsen eller antall tekster: begrensningene er datamaskinens minne og hva dagens teknologi kan utrette.",
+            "Programmet er nytt. Hvis det mangler noe for dine behov, gi oss beskjed via Hjelp → Tilbakemelding: det er slik vi vet hva vi skal jobbe med."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Hva Scribe er bygget med",
+          "body": [
+            {
+              "points": [
+                "Editoren: CodeMirror.",
+                "Lese- og skrivekoding: encoding_rs, med chardetng for å gjette kodingen av en fil som ikke oppgir dette.",
+                "Søk og erstatt: Rusts regex-bibliotek, hvis mønstre ikke kan fryse programmet.",
+                "Språkspesifikk sortering, samt gjenkjenning av ord og setninger i alle skrifttyper: ICU4X, Unicode-biblioteket.",
+                "Sammenligning av tekster: similar-biblioteket.",
+                "Rumenske diakritiske tegn: en liste over ord og regler skrevet for Scribe."
+              ]
+            },
+            "Hva den deler med resten av programmet finnes under \"Om Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Hva Scribe ikke kan gjøre ennå",
+          "body": [
+            {
+              "points": [
+                "En veldig stor fil leses én side om gangen og endres kun via oppskrifter; å endre den manuelt betyr at hele filen må åpnes, noe som krever minne.",
+                "Gjenoppretting av rumenske diakritiske tegn gjenkjenner vanlige ord; sjeldne ord og navn forblir slik de er skrevet.",
+                "Det finnes ingen stavekontroll.",
+                "Tekst hentes ikke ut fra PDF- eller Office-dokumenter her; PDF Organizer åpner disse.",
+                "Editoren støtter ikke fargekoding eller Markdown.",
+                "En fil som slippes i vinduet åpnes som en ny tekst: programmet får ikke vite hvor filen ligger, så ved lagring blir du spurt om hvor den skal lagres."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

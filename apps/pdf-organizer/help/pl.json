@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Otwieranie i czytanie",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Otwieranie dokumentu",
+          "body": [
+            "Wybierz Plik → Otwórz (Ctrl+O), aby otworzyć PDF na osobnej karcie. Polecenie „Otwórz kilka plików naraz…” otwiera każdy wybrany plik na własnej karcie.",
+            "Można też otwierać pliki inne niż PDF jako strony dokumentu: obrazy (PNG, JPEG, TIFF, WebP i wiele innych), pliki tekstowe i internetowe, e-booki, XPS oraz dokumenty biurowe. Taki dokument nie jest jeszcze nigdzie zapisany — polecenie „Zapisz” poprosi o wskazanie miejsca.",
+            {
+              "note": "Dokumenty biurowe (Word, Excel, PowerPoint, OpenDocument) są konwertowane przez zainstalowany na komputerze program Word, Excel, PowerPoint albo LibreOffice. Bez jednego z tych programów nie można ich otworzyć."
+            },
+            "Pliki upuszczone na pustą kartę są zbierane w Segregatorze PDF; pliki upuszczone na otwartym dokumencie dodają do niego swoje strony.",
+            "W systemie Windows PDF Organizer może być aplikacją, która otwiera pliki PDF po dwukrotnym kliknięciu: na jego stronie startowej przycisk „Ustaw jako domyślną” otwiera ustawienia systemu Windows, gdzie dla plików PDF wybierasz Syntelab Creative."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Wyświetlanie stron",
+          "body": [
+            "Menu Widok określa sposób wyświetlania dokumentu; jego ustawienia nie zmieniają pliku.",
+            {
+              "points": [
+                "Powiększenie: powiększ, pomniejsz, rozmiar rzeczywisty, dopasuj do strony, szerokości lub wysokości. Powiększenie można też zmieniać kółkiem myszy z wciśniętym klawiszem Ctrl.",
+                "Układ stron: jedna strona albo dwie obok siebie, z widoczną stroną okładkową lub bez niej, a także przewijanie wszystkich stron jako jednego długiego ciągu.",
+                "Prowadnice: linijki i siatka w jednostkach wybranych w Ustawieniach.",
+                "Polecenie „Pokaż miniatury” wyświetla z boku pomniejszone strony. Kliknij miniaturę, aby przejść do strony; w tym samym panelu znajdują się zakładki dokumentu.",
+                "„Tryb czytania” ukrywa narzędzia, a „Tryb pełnoekranowy” ukrywa wszystko poza stroną. Naciśnij Esc, aby wyjść z każdego z tych trybów."
+              ]
+            },
+            "Pasek nad stronami (pasek szybkiego dostępu) zawiera numer strony, powiększenie i przyciski wybrane w Ustawieniach."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Wyszukiwanie tekstu",
+          "body": [
+            "Wybierz Edycja → Znajdź w dokumencie (Ctrl+F), a następnie wpisz słowo lub frazę. Znalezione miejsca zostaną zaznaczone na stronach; użyj strzałek, aby przechodzić między wynikami.",
+            {
+              "note": "Zeskanowany dokument zawiera obrazy stron, a nie tekst do wyszukania. Najpierw rozpoznaj tekst, korzystając z sekcji „Rozpoznawanie tekstu (OCR)”."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Właściwości dokumentu",
+          "body": [
+            "Wybierz Plik → Właściwości dokumentu, aby zobaczyć informacje zapisane w dokumencie: tytuł, autora, daty utworzenia i modyfikacji, liczbę stron oraz rozmiar pliku."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Zapisywanie, drukowanie i wysyłanie",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Zapisz i Zapisz jako",
+          "body": [
+            "Dopóki nie zapiszesz dokumentu, zmiany nie są wprowadzane do pliku na dysku. Wcześniejsze operacje można cofać (Ctrl+Z) i ponawiać (Ctrl+Y).",
+            {
+              "points": [
+                "Zapisz (Ctrl+S) zapisuje dokument w jego bieżącym pliku.",
+                "Zapisz jako (Ctrl+Shift+S) zapisuje dokument w nowym pliku i otwiera ten plik na bieżącej karcie. Poprzedni plik pozostaje bez zmian."
+              ]
+            },
+            "Jeśli plik jest otwarty w innym programie, nie można go nadpisać. Program wyświetli informację o tym problemie i zachowa zmiany, które będzie można zapisać pod inną nazwą.",
+            {
+              "note": "Zapisanie zmian w tym samym pliku usuwa podpisy certyfikatu. Program najpierw ostrzega o tym i proponuje „Zapisz jako nowy plik…”. To ostrzeżenie można wyłączyć w Ustawienia → Podpisy."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Tworzenie pliku PDF",
+          "body": [
+            "Wybierz Plik → Utwórz PDF, aby utworzyć nowy dokument:",
+            {
+              "points": [
+                "z jednego lub kilku plików — połączonych w jeden PDF albo zapisanych jako osobny PDF każdy;",
+                "z witryny pod wskazanym adresem — strona zostanie zapisana przy użyciu przeglądarki zainstalowanej na komputerze;",
+                "zawartości schowka;",
+                "z pustych stron o wybranym rozmiarze."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Eksportowanie do innego formatu",
+          "body": [
+            "Wybierz Plik → Eksportuj, aby zapisać dokument w innym formacie: Word lub tekst OpenDocument, zwykły tekst, strona internetowa, XML, obrazy stron (PNG, JPEG, TIFF, SVG) albo PostScript. Dla obrazów możesz wybrać rozdzielczość.",
+            "Dokument pozostaje plikiem PDF, a eksport jest zapisywany w nowym pliku.",
+            {
+              "note": "Tekst można wyeksportować tylko wtedy, gdy dokument zawiera tekst. Najpierw rozpoznaj tekst ze skanu."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Drukowanie",
+          "body": [
+            "Wybierz Plik → Drukuj (Ctrl+P), aby wydrukować dokument w bieżącym układzie, wraz z dodanymi rysunkami. Wybierz strony, papier, orientację arkusza oraz dopasowanie do arkusza lub drukowanie w rzeczywistym rozmiarze. Następnie systemowe okno drukowania poprosi o wybór drukarki.",
+            "Domyślny papier, orientację i skalowanie w oknie drukowania określisz w Ustawienia → Drukowanie."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Udostępnianie",
+          "body": [
+            "Wybierz Plik → Udostępnij, aby przekazać dokument do systemowego okna udostępniania, skąd można wysłać go pocztą, na urządzenie w pobliżu lub do innej aplikacji. Udostępniany dokument zawiera bieżące zmiany, także te jeszcze niezapisane."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organizowanie stron",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Widok Organizuj strony",
+          "body": [
+            "Wybierz Organizuj → Organizuj strony, aby wyświetlić wszystkie strony dokumentu w siatce. Zmiany nie są zapisywane na dysku, dopóki nie zapiszesz dokumentu.",
+            {
+              "points": [
+                "Zaznaczanie: kliknij stronę; Ctrl+klik dodaje ją do zaznaczenia, a Shift+klik zaznacza zakres. Menu zawiera polecenia „Zaznacz wszystkie strony”, „Odznacz wszystkie strony”, „Zaznacz strony nieparzyste” i „Zaznacz strony parzyste”.",
+                "Przenoszenie: przeciągnij zaznaczone strony w nowe miejsce albo użyj poleceń „Przesuń w lewo” i „Przesuń w prawo”.",
+                "Obracanie: polecenia „Zaznaczone: obróć w lewo” i „Zaznaczone: obróć w prawo” obracają zaznaczone strony; „Wszystkie strony: obróć w lewo” i „Wszystkie strony: obróć w prawo” obracają cały dokument.",
+                "Usuwanie: naciśnij Delete albo wybierz „Usuń strony”. Dokument musi zachować co najmniej jedną stronę.",
+                "Kopiowanie, wycinanie i wklejanie (Ctrl+C, Ctrl+X, Ctrl+V): strony można wkleić w tym samym dokumencie lub w innym dokumencie otwartym w programie.",
+                "Rozmiar: suwak u góry powiększa lub pomniejsza strony; to samo robi Ctrl + kółko myszy nad stronami oraz „Powiększ” i „Pomniejsz” (Ctrl+= i Ctrl+-). Rozmiar jest zapamiętywany."
+              ]
+            },
+            "Te same polecenia działają również bez siatki, na aktualnie wyświetlanej stronie."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Wyodrębnianie stron i dzielenie dokumentu",
+          "body": [
+            "Wybierz Organizuj → Wyodrębnij strony, aby przenieść zaznaczone strony do nowego, jeszcze niezapisanego dokumentu na osobnej karcie. Możesz też zapisać każdą stronę w osobnym pliku i wybrać, czy strony mają zostać usunięte z bieżącego dokumentu.",
+            "Wybierz Organizuj → Podziel dokument, aby zapisać go jako kilka mniejszych plików. Bieżący dokument pozostanie bez zmian.",
+            "Nazwy nowych dokumentów są tworzone według wzorców z Ustawienia → Nazwy nowych dokumentów.",
+            {
+              "note": "Podpisy złożone certyfikatem nie są przenoszone do wyodrębnionych ani podzielonych dokumentów. Podpis jest ważny tylko dla pliku, w którym został utworzony."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Wstawianie i zastępowanie stron",
+          "body": [
+            {
+              "points": [
+                "Wybierz Organizuj → Wstaw strony, aby dodać strony z innego pliku (PDF, obrazu, tekstu lub dokumentu biurowego) za zaznaczoną stroną albo na końcu dokumentu.",
+                "Wybierz Organizuj → Zastąp strony, aby w miejsce zaznaczonych wstawić strony z innego pliku.",
+                "Wybierz Wstaw → Pusta strona, aby dodać pustą stronę o takim samym rozmiarze jak sąsiednia."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Przycinanie i zmiana rozmiaru stron",
+          "body": [
+            "Wybierz Edycja → Przytnij strony, aby ukryć krawędzie stron, podając marginesy lub przeciągając uchwyty. Zawartość nie jest usuwana z pliku — strony będą jedynie mniej widoczne.",
+            "Wybierz Edycja → Zmień rozmiar stron, aby umieścić strony na arkuszach o innym rozmiarze (A4, Letter i inne). Zawartość można dopasować do arkusza albo zachować jej rozmiar i umieścić ją w jednym z dziewięciu miejsc.",
+            "W obu operacjach możesz wybrać strony: wszystkie, zaznaczone, zakres, nieparzyste lub parzyste."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Łączenie plików",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Segregator PDF",
+          "body": [
+            "Wybierz Połącz → Nowy segregator, aby zebrać pliki i połączyć je w jeden dokument PDF.",
+            {
+              "steps": [
+                "Dodaj pliki przyciskiem „Dodaj pliki…” albo przeciągnij je do segregatora. Możesz łączyć pliki PDF, obrazy, tekst i dokumenty biurowe.",
+                "Przeciągnij karty, aby ustawić je w odpowiedniej kolejności, albo użyj strzałek na każdej karcie.",
+                "Otwórz kartę, aby wybrać strony, które mają zostać uwzględnione.",
+                "Wybierz „Połącz pliki”, aby połączyć je w podanej kolejności w nowy dokument na osobnej karcie."
+              ]
+            },
+            "Pliki źródłowe pozostają bez zmian.",
+            "Suwak u góry powiększa lub pomniejsza strony na kartach; to samo robi Ctrl + kółko myszy oraz „Powiększ” i „Pomniejsz” (Ctrl+= i Ctrl+-). Rozmiar jest zapamiętywany."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pisanie i rysowanie na stronach",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Narzędzia do rysowania",
+          "body": [
+            "Narzędzia do rysowania otwierają się w panelu obok strony — jako siatka przycisków lub lista z nazwami, zależnie od Ustawień. Wybierz narzędzie, a następnie przeciągnij kursor lub kliknij stronę. Naciśnij Esc, aby je wyłączyć.",
+            {
+              "points": [
+                "Tekst: kliknij stronę i wpisz tekst. W panelu możesz ustawić czcionkę, rozmiar, kolor, pogrubienie, kursywę i wyrównanie.",
+                "Obraz: wybierz obraz, a następnie przeciągnij go, aby ustawić położenie i rozmiar.",
+                "Kształty: prostokąt, elipsa, linia, strzałka, znacznik wyboru, krzyżyk i kropka.",
+                "Podświetlenie: przeciągnij kursor nad treścią, którą chcesz wyróżnić. Tekst pod podświetleniem pozostanie czytelny."
+              ]
+            },
+            "Wybierz „Zaznacz, przenieś i zmień rozmiar”, aby ponownie zaznaczyć dodany element. Możesz go przeciągać, zmieniać rozmiar za pomocą narożników, obracać uchwytem, zmieniać kolory w panelu lub usunąć klawiszem Delete. Elementy można kopiować i wklejać, także na inne strony.",
+            "Wszystkie dodane elementy są zapisywane w pliku razem z dokumentem."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Edycja tekstu i obrazów w dokumencie",
+          "body": [
+            "Narzędzie „Edytuj tekst i obrazy dokumentu” zaznacza elementy znajdujące się bezpośrednio na stronie. Kliknij wiersz tekstu, aby go zmienić, albo obraz, aby go przesunąć, zmienić jego rozmiar lub obrót albo go usunąć.",
+            {
+              "note": "Zmiany dotyczą jednego wiersza tekstu lub jednego obrazu naraz. Po wydłużeniu wiersza akapity nie są ponownie zawijane, a nachodzące na siebie obrazy są zaznaczane razem. Większe zmiany wprowadź w programie, w którym utworzono dokument."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Usuwanie poufnych informacji",
+          "body": [
+            "Wybierz Więcej narzędzi → Usuń poufne informacje, aby trwale usunąć treści, które nie powinny być widoczne. Przeciągnij czarny prostokąt nad wybranym obszarem na dowolnej stronie. Podczas zapisywania tekst i obrazy pod prostokątem są usuwane z pliku, a nie tylko zasłaniane.",
+            {
+              "note": "Zapisz dokument z usuniętymi informacjami pod nową nazwą i przechowuj oryginał w bezpiecznym miejscu. Usuniętych treści nie można odzyskać."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Znak wodny",
+          "body": [
+            "Wybierz Edycja → Znak wodny, aby dodać tekst lub obraz na wybranych stronach. Możesz ustawić jego orientację — poziomą lub ukośną — jedną z dziewięciu pozycji, rozmiar i przezroczystość. Na stronie znak wodny zachowuje się jak każdy inny element graficzny: można go później przesunąć lub usunąć."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Numery stron, nagłówek i stopka, numeracja Batesa",
+          "body": [
+            {
+              "points": [
+                "Edycja → Numery stron: wybierz format (np. 1, 1 / 12, Strona 1), położenie oraz strony, na których mają się pojawić numery.",
+                "Wstaw → Nagłówek i stopka: dodaj tekst w jednym z sześciu miejsc. Użyj {page}, aby wstawić numer strony, {pages} — liczbę stron, {date} — dzisiejszą datę, a {file} — nazwę dokumentu.",
+                "Wstaw → Numeracja Batesa: numeruj strony kolejno, dodając słowo lub tekst przed numerem albo po nim (np. ABC000123), jak w dokumentach sprawy."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Odnośniki, zakładki i załączniki",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Odnośniki",
+          "body": [
+            "Wybierz Wstaw → Odnośnik i przeciągnij kursor nad obszarem, który ma być klikalny. Następnie określ cel: adres internetowy albo strona w tym dokumencie.",
+            "Odnośniki w dokumencie działają podczas jego czytania: kliknięcie odnośnika do strony przenosi do niej, a adres internetowy lub pocztowy otwiera się w przeglądarce albo programie pocztowym."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Zakładki",
+          "body": [
+            "Wybierz Wstaw → Nowa zakładka, kliknij miejsce docelowe i nadaj zakładce tytuł. Wybierz Wstaw → Zakładki, aby otworzyć listę zakładek i zmienić ich nazwy lub je usunąć. Zmiany zostaną zapisane razem z dokumentem."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Dołączone pliki",
+          "body": [
+            "Wybierz Wstaw → Dołącz plik, wskaż plik i kliknij miejsce, w którym ma się pojawić ikona spinacza. Możesz podać nazwę i autora, zmienić kolor spinacza, jego rozmiar i obrót. Przy zapisywaniu plik zostanie osadzony w PDF.",
+            "Wstaw → Dołączone pliki wyświetla pliki osadzone w dokumencie; każdy z nich można zapisać na dysku lub usunąć z dokumentu. Kliknięcie ikony spinacza otwiera tę samą listę."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formularze",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Wypełnianie formularza",
+          "body": [
+            "Wybierz Wstaw → Wypełnij formularz, aby wyświetlić pola formularza w dokumencie. Wpisz tekst, zaznacz pola wyboru lub wybierz pozycję z listy. Odpowiedzi zostaną zapisane w pliku podczas zapisywania dokumentu."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Tworzenie formularza",
+          "body": [
+            "Menu Wstaw dodaje pola do dowolnego dokumentu: pole tekstowe, pole wyboru, przyciski opcji (z których można wybrać jedną odpowiedź), listę wyboru oraz puste pole podpisu dla osoby podpisującej.",
+            "Przeciągnij kursor po stronie, aby określić położenie pola. Do chwili zapisania można je przesuwać i zmieniać jego rozmiar, tak jak inne elementy. Po zapisaniu pole staje się częścią formularza."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Podpisywanie",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Dodawanie odręcznego podpisu",
+          "body": [
+            "Wybierz Podpisz → Dodaj podpis, aby umieścić na stronie obraz podpisu: narysowany wybranym piórem, wpisany wybraną czcionką albo wczytany z obrazu. W przypadku zdjęcia podpisanego dokumentu możesz użyć opcji „Pozostaw tylko ślady pióra, bez tła papieru”. Pod podpisem można dodać datę.",
+            "Przeciągnij podpis w wybrane miejsce na stronie. Używane podpisy są przechowywane na tym komputerze i można z nich skorzystać ponownie.",
+            {
+              "note": "To obraz, który sam w sobie nie potwierdza tożsamości osoby podpisującej. Podpis potwierdzający, kto podpisał dokument i że od tego czasu nie wprowadzono w nim zmian, składa się przy użyciu certyfikatu."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Podpisywanie certyfikatem",
+          "body": [
+            "Wybierz Podpisz → Podpisz certyfikatem, aby złożyć podpis cyfrowy, który wskazuje osobę podpisującą i zabezpiecza dokument. Każda późniejsza zmiana będzie widoczna.",
+            {
+              "steps": [
+                "Przeciągnij kursor po stronie, aby zaznaczyć miejsce wyświetlania podpisu (najpierw pojawi się objaśnienie; można je wyłączyć). Aby złożyć podpis niewidoczny na stronie, wybierz „Podpisz bez pokazywania go na stronie”.",
+                "Wybierz certyfikat: jeden z certyfikatów dostępnych na komputerze (certyfikat z karty lub tokena pojawi się po umieszczeniu nośnika w czytniku) albo plik .pfx lub .p12 wraz z hasłem. Kliknij „Dalej”.",
+                "Wybierz wygląd podpisu. W sekcji „Powód i miejsce” możesz podać przyczynę i miejsce podpisania — informacje te zostaną zapisane w podpisie, a także na stronie, jeśli wybrany wygląd je pokazuje. Zaznacz „Zablokuj dokument po podpisaniu”, jeśli po podpisaniu nikt nie powinien go zmieniać ani podpisywać. Pozostaw zaznaczone „Dodaj zaufany czas (znacznik czasu)”, aby urząd potwierdził, kiedy podpisano dokument.",
+                "Kliknij „Podpisz”, a następnie wybierz miejsce zapisania podpisanego pliku. Na tym etapie token poprosi o kod PIN."
+              ]
+            },
+            "Podpisany plik zastąpi otwarty dokument. Program nie przechowuje haseł ani kodów PIN.",
+            {
+              "note": "Podpis kwalifikowany można złożyć w ten sposób przy użyciu kwalifikowanego certyfikatu na karcie lub tokenie. Podpis jest tworzony na tym komputerze; z internetem łączą się tylko znacznik czasu i sprawdzenie certyfikatu, które wysyłają skróty i numer seryjny certyfikatu, nigdy dokument."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Wygląd podpisu",
+          "body": [
+            "Wygląd określa sposób wyświetlania podpisu certyfikatem na stronie. Możesz zapisać kilka własnych wariantów pod różnymi nazwami — np. jeden do podpisywania w imieniu firmy, a drugi do podpisu we własnym imieniu.",
+            {
+              "points": [
+                "Obraz: bez obrazu, obraz z pliku (np. pieczęć lub skan podpisu) albo rysunek wykonany w programie.",
+                "Wyświetlany tekst: imię i nazwisko, data, powód i miejsce — każde pole z etykietą lub bez niej.",
+                "Własne wiersze pod imieniem i nazwiskiem, np. stanowisko i nazwa firmy.",
+                "„Tekst standardowy” jest zawsze wyświetlany: informuje, kto i kiedy podpisał dokument."
+              ]
+            },
+            "W oknie podpisywania użyj poleceń „Nowy…”, „Edytuj…” lub „Usuń”. Ostatnio użyty wygląd jest proponowany jako pierwszy. Wyglądy są przechowywane na tym komputerze."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Wiele podpisów i blokowanie dokumentu",
+          "body": [
+            "Dokument może być podpisywany kolejno przez kilka osób. Otwórz podpisany plik i złóż podpis bez wprowadzania zmian. Nowy podpis zostanie dodany na końcu pliku, a wcześniejsze podpisy zachowają ważność.",
+            "Opcja „Zablokuj dokument po podpisaniu” jest domyślnie wyłączona. Po jej włączeniu dokument zostanie zamknięty: nikt nie będzie mógł złożyć kolejnego podpisu ani wprowadzić zmian. Tej operacji nie można cofnąć.",
+            {
+              "note": "Jeśli przed ponownym podpisaniem zmienisz podpisany dokument, trzeba będzie zapisać go ponownie, a wcześniejsze podpisy zostaną pominięte. Okno podpisywania wyświetli ostrzeżenie. Aby zachować wcześniejsze podpisy, otwórz plik ponownie i podpisz go bez wprowadzania zmian."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Znaczniki czasu",
+          "body": [
+            "Znacznik czasu to podpisane przez urząd znakowania czasem poświadczenie, kiedy coś istniało. Bez niego czas w podpisie pochodzi z zegara komputera osoby podpisującej, który każdy może ustawić; znacznik czasu dowodzi tej chwili i pozwala udowodnić podpis także po wygaśnięciu certyfikatu (PAdES B-T).",
+            {
+              "points": [
+                "Podpisy otrzymują znacznik czasu, gdy w oknie podpisywania zaznaczono „Dodaj zaufany czas (znacznik czasu)”. W Ustawienia → Podpisy określasz, czy pole jest domyślnie zaznaczone, tutaj i w przetwarzaniu wsadowym.",
+                "Podpisz → Dodaj znacznik czasu nadaje całemu dokumentowi własny znacznik czasu, bez certyfikatu: dowodzi, że dokument w dokładnie tej postaci istniał w tej chwili. Dokument jest zapisywany jako nowy plik; podpisy zawarte w pliku pozostają ważne."
+              ]
+            },
+            "Urzędem jest DigiCert (http://timestamp.digicert.com), bezpłatny i zaufany w Adobe Reader i Windows; inny można ustawić w Ustawienia → Podpisy. Otrzymuje on tylko skrót (SHA-256), nigdy dokument, a potrzebne jest połączenie z internetem. Gdy podpis otrzymuje znacznik czasu, wystawca certyfikatu jest też pytany, czy certyfikat jest nadal ważny, a jego odpowiedź zostaje zapisana w podpisie (walidacja długoterminowa): dzięki temu Adobe Reader może pokazać podpis jako ważny teraz i po wygaśnięciu certyfikatu.",
+            {
+              "note": "Jeśli nie można połączyć się z urzędem, nic nie zostanie podpisane ani zapisane: spróbuj ponownie albo odznacz znacznik czasu, aby podpisać bez niego."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Weryfikowanie podpisów",
+          "body": [
+            "Wybierz Podpisz → Weryfikuj podpisy, aby wyświetlić wszystkie podpisy certyfikatem w pliku: kto podpisał, kto wystawił certyfikat, kiedy złożono podpis, jaki podano powód i miejsce, a także:",
+            {
+              "points": [
+                "czy dokument nie został zmieniony od chwili złożenia danego podpisu (dodanie późniejszego podpisu nie jest uznawane za zmianę);",
+                "czy podpis blokuje dokument;",
+                "czy ten komputer ufa urzędowi certyfikacji, który wystawił certyfikat, oraz czy certyfikat jest obecnie ważny;",
+                "czas potwierdzony znacznikiem czasu podpisu i urząd, który go wystawił, jeśli podpis ma znacznik czasu. Wyświetlany jest też znacznik czasu całego dokumentu, z osobnym sprawdzeniem."
+              ]
+            },
+            "Weryfikowany jest dokument w stanie z ostatniego zapisu. Sprawdzenie odbywa się na tym komputerze, bez połączenia z internetem. Kliknięcie podpisu na stronie otwiera tę listę przy tym podpisie. Pod każdym podpisem przycisk „Pokaż certyfikat” otwiera okno certyfikatu systemu Windows (łańcuch certyfikatów i wszystkie szczegóły; stamtąd „Zainstaluj certyfikat” sprawia, że ten komputer ufa certyfikatowi, który znasz), a „Zweryfikuj” – tylko gdy go naciśniesz – pyta online wystawcę certyfikatu, czy certyfikat został unieważniony."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Więcej narzędzi",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Rozpoznawanie tekstu (OCR)",
+          "body": [
+            "Wybierz Więcej narzędzi → Rozpoznaj tekst (OCR), aby odczytać tekst ze skanowanych stron i dodać go do dokumentu jako niewidoczną warstwę. Dzięki temu można wyszukiwać, kopiować i eksportować tekst. Wygląd stron pozostaje bez zmian.",
+            "Zaznacz tylko języki, w których zapisano tekst na stronach. Strony zawierające już tekst zostaną pominięte.",
+            {
+              "note": "Rozpoznawanie wykonuje Tesseract — bezpłatny, osobno instalowany program. Jeśli nie jest zainstalowany, okno pokaże polecenie instalacji w systemie Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Zmniejszanie dokumentu",
+          "body": [
+            "Wybierz Więcej narzędzi → Kompresuj, aby zapisać dokument jako mniejszy plik przez zmniejszenie liczby pikseli w zdjęciach i skanach. Dostępne są trzy poziomy kompresji. Tekst i rysunki pozostają ostre. Dokumenty zawierające niewiele obrazów zostaną zmniejszone w niewielkim stopniu."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Porównywanie dwóch dokumentów",
+          "body": [
+            "Wybierz Więcej narzędzi → Porównaj dokumenty i wskaż inny plik PDF. Dokumenty zostaną wyświetlone obok siebie, strona po stronie. Strony, na których różni się tekst, zostaną oznaczone, a poniżej pojawią się wiersze występujące tylko w jednym z dokumentów."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Przetwarzanie wsadowe: wiele plików naraz",
+          "body": [
+            "Wybierz Więcej narzędzi → Przetwarzanie wsadowe, aby wykonać te same operacje na wielu plikach w osobnej karcie. Każdy wynik jest nowym plikiem. Jeśli wyniki miałyby zająć miejsce plików, które już są w folderze (Twoich własnych plików, gdy trafiają do swojego folderu bez żadnych dodatków w nazwach), najpierw pojawi się pytanie, czy je zastąpić, pominąć, czy anulować. Plik jest zastępowany dopiero po ukończeniu jego wyniku; plik otwarty (w karcie tutaj lub w innym programie) pozostaje bez zmian i zostaje oznaczony jako niewykonany.",
+            {
+              "steps": [
+                "Po lewej stronie dodaj pliki: użyj polecenia „Dodaj pliki…”, wybierz „Dodaj folder…” (możesz uwzględnić także podfoldery) albo przeciągnij pliki do okna.",
+                "Po prawej zaznacz operacje. Każdy plik zostanie przekształcony w PDF; dodatkowo możesz obracać strony, rozpoznawać tekst, dodawać nagłówek i stopkę, znak wodny lub numery stron, zmniejszać pliki, podpisywać certyfikatem albo zapisywać w innym formacie. Numery wskazują kolejność operacji.",
+                "Wybierz sposób zapisu wyników: osobny plik dla każdego dokumentu albo jeden PDF zawierający wszystkie dokumenty w kolejności z listy. Wskaż też folder docelowy. Gdy wszystkie pliki pochodzą z jednego folderu, ten folder jest wybierany automatycznie, dopóki nie wybierzesz innego; w przeciwnym razie jest to ostatnio wybrany folder.",
+                "Kliknij „Rozpocznij”. Przy każdym pliku zobaczysz wynik przetwarzania; przebieg można zatrzymać między plikami."
+              ]
+            },
+            {
+              "points": [
+                "Przepisy: polecenie „Zapisz jako przepis…” zapisuje podaną nazwą wybrane ustawienia (bez plików i haseł), aby można je było odtworzyć jednym wyborem.",
+                "Opcja „Zachowaj foldery plików w wynikach” odtwarza strukturę podfolderów dodanego folderu.",
+                "„Zapisz raport z przebiegu” tworzy obok wyników plik tekstowy z informacją o zapisanych plikach i błędach.",
+                "PDF poddany wyłącznie podpisywaniu zachowuje dotychczasowe podpisy. Jeśli podczas tego samego przebiegu zostanie wykonana inna operacja, plik jest zapisywany ponownie bez wcześniejszych podpisów."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ustawienia",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Ustawienia PDF Organizer",
+          "body": [
+            "Otwórz Plik → Ustawienia albo wybierz Ustawienia na pasku bocznym, a następnie PDF Organizer. Każde ustawienie można przywrócić osobno lub wszystkie jednocześnie.",
+            {
+              "points": [
+                "Po otwarciu dokumentu: ustaw początkowe powiększenie, przewijanie stron lub widok jednej strony naraz oraz widoczność miniatur.",
+                "Jednostki, linijki i siatka: wybierz jednostki (milimetry, cale lub punkty), włącz linijki i siatkę oraz ustaw jej odstępy.",
+                "Drukowanie: ustaw domyślny papier, orientację i skalowanie w oknie drukowania.",
+                "Szybki pasek narzędzi: wybierz przyciski wyświetlane na pasku nad stronami.",
+                "Nazwy nowych dokumentów: ustaw wzorce nazw wyodrębnionych stron, nowych dokumentów i PDF-ów łączących pliki w przetwarzaniu wsadowym.",
+                "Podpisy: określ, czy przed zapisaniem zmian w podpisanym pliku ma pojawić się ostrzeżenie.",
+                "Skróty klawiszowe: kliknij skrót danego polecenia, a następnie naciśnij nowe klawisze."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O PDF Organizer",
+          "body": [
+            "PDF Organizer to aplikacja Syntelab Creative do pracy z dokumentami PDF. Umożliwia odczytywanie dokumentów, układanie i łączenie stron, dodawanie tekstu i rysunków, wypełnianie oraz tworzenie formularzy, podpisywanie certyfikatem i weryfikowanie podpisów, a także wykonywanie tych samych operacji na wielu plikach jednocześnie.",
+            "Aplikacja jest nowa, a niektóre funkcje to dopiero pierwszy krok. Jeśli nie sprawdza się przy Twoich dokumentach, przekaż nam opinię przez Pomoc → Opinia — dzięki temu wiemy, nad czym pracować."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Technologie użyte w PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Odczyt, rysowanie i zapisywanie PDF: MuPDF.",
+                "Rozpoznawanie tekstu (OCR): Tesseract, jeśli jest zainstalowany na komputerze.",
+                "Otwieranie dokumentów biurowych: zainstalowany na komputerze program Word, Excel, PowerPoint albo LibreOffice.",
+                "Zapisywanie stron internetowych jako PDF: przeglądarka zainstalowana na komputerze.",
+                "Podpisywanie certyfikatem: usługi certyfikatów systemu Windows; podpisy są zapisywane zgodnie ze standardem PAdES."
+              ]
+            },
+            "Informacje o elementach współdzielonych z pozostałymi częściami programu znajdziesz w sekcji „O Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Obecne ograniczenia PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Dokumenty biurowe są otwierane w zainstalowanym na komputerze pakiecie biurowym. Bez programu Word, Excel, PowerPoint lub LibreOffice nie można ich otworzyć. Pracujemy nad własnym konwerterem — zobacz sekcję „Nad czym pracujemy”.",
+                "Rozpoznawanie tekstu wymaga osobno zainstalowanego silnika Tesseract.",
+                "Tekst dokumentu można zmieniać tylko wiersz po wierszu; akapity nie są ponownie zawijane.",
+                "Obrazów wydrukowanych w czterech kolorach (CMYK) nie można zaznaczyć i przesunąć.",
+                "„Zweryfikuj” informuje, czy certyfikat jest dziś unieważniony, ale nie, kiedy został unieważniony.",
+                "Podpisywanie certyfikatem jest obecnie dostępne tylko w systemie Windows. Obsługa systemów Linux i macOS pojawi się w późniejszej wersji."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

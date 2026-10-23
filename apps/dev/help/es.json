@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Orientarse",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Página inicial",
+          "body": [
+            "La pestaña de Dev se abre en la página inicial, donde están todas las herramientas, agrupadas como en los menús: Codificar, Datos, Generar, Inspeccionar y Red.",
+            {
+              "points": [
+                "Escribe en «Buscar una herramienta» para filtrar la lista.",
+                "Fija una herramienta para mantenerla arriba, en «Fijadas».",
+                "La herramienta se abre en la misma pestaña; Archivo → Todas las herramientas vuelve a la página inicial. En Ajustes puedes abrir cada herramienta en su propia pestaña y hacer que las pestañas nuevas se abran en la última herramienta usada."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Pegar cualquier cosa",
+          "body": [
+            "El cuadro de la parte superior de la página inicial acepta lo que pegues e identifica qué parece ser: un token, un certificado, JSON, UUID, marcas de tiempo, programaciones cron, URL, XML o HTML, SQL, Base64, una suma de verificación, una tabla o YAML.",
+            "Debajo de cada sugerencia aparecen las herramientas compatibles, primero la más adecuada. Haz clic en una para abrirla con el texto ya cargado y ejecutarla.",
+            {
+              "note": "Lo que pegues permanece en el cuadro hasta que lo borres o cierres la pestaña. Nunca se escribe en el disco."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Cómo se organiza una herramienta",
+          "body": [
+            "La mayoría de las herramientas tienen la misma estructura: las opciones en una fila arriba, la entrada a un lado, el resultado al otro y, abajo, una línea que indica qué ha ocurrido.",
+            {
+              "points": [
+                "El resultado se vuelve a generar cada vez que cambia la entrada o una opción, y se muestra en la salida; lo indica «Se ejecuta solo» en la línea de opciones. Solo un texto demasiado largo para procesarse con cada tecla, o un archivo de más de 128 MB, espera al botón Ejecutar, que entonces aparece. Ctrl+Enter ejecuta la herramienta en cualquier momento.",
+                "Un resultado que no es texto (una imagen decodificada de Base64, gzip) se muestra como vista previa: una imagen tal cual, y cualquier otra cosa por su tipo, su tamaño y sus primeros bytes. Copiar lo copia entonces como Base64, y una imagen se puede copiar como imagen. Lo mismo ocurre con un archivo de entrada que no es texto.",
+                "Abrir un archivo, Pegar y Borrar aparecen sobre la entrada; Copiar y Guardar en un archivo, sobre el resultado. También puedes arrastrar un archivo hasta la entrada.",
+                "Los problemas de la entrada se explican con palabras, indicando la línea y la columna, y se marcan en el editor.",
+                "El menú Ver coloca los dos paneles uno al lado del otro o uno debajo del otro, muestra los números de línea y ajusta las líneas largas; puedes arrastrar el separador entre los paneles.",
+                "Las opciones que eliges se recuerdan para la próxima vez; lo que escribes, no."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Vaciar y qué se conserva",
+          "body": [
+            "Vaciar, en la esquina inferior derecha de cada herramienta, la borra de inmediato: la entrada, el resultado, todo lo escrito en sus cuadros y el historial de deshacer de sus editores.",
+            "Dev solo conserva sus ajustes, las herramientas fijadas, el nombre de la última herramienta usada y las opciones de cada herramienta. No se escribe en el disco, en registros ni en listas de elementos recientes nada de lo que escribas, pegues, abras o generes en una herramienta. Los secretos se protegen especialmente: las claves, frases de contraseña, tokens y encabezados de solicitudes permanecen en la pestaña y en ningún otro lugar.",
+            "Solo una cosa queda un tiempo en el disco: el resultado de un archivo, y un resultado que no es texto, se escriben en una carpeta propia del programa para poder mostrarlos y luego guardarlos. Cada uno se elimina cuando otro resultado ocupa su lugar, cuando vacías o cierras la herramienta y, en cualquier caso, cuando Dev se vuelve a iniciar."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Archivos de cualquier tamaño",
+          "body": [
+            "No se establece un límite al tamaño de los archivos. Los que pueden mostrarse (hasta 16 MB) se cargan en el editor. Los más grandes, o los que no son texto, permanecen en disco: se muestra su comienzo (o una vista previa), la herramienta los lee desde su ubicación y su resultado se muestra como el de un texto. Después, Guardar en un archivo copia el resultado donde elijas.",
+            {
+              "points": [
+                "Las tareas largas muestran una tarjeta con el progreso y un botón Detener.",
+                "Los archivos de texto con una codificación distinta de UTF-8 (como UTF-16 o Windows-1252) se leen como texto cuando caben en el editor, y se indica su codificación. Dev guarda los archivos como UTF-8.",
+                "Al arrastrar un archivo hasta una herramienta, se abre como con Abrir un archivo. Cuando la ventana no puede saber dónde está, se carga si tiene hasta 16 MB, como si lo hubieras pegado."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Muchos archivos y carpetas enteras",
+          "body": [
+            "Cuando una herramienta ofrece «Trabajar con: Texto / Archivos», el modo Archivos la ejecuta en varios archivos de una vez.",
+            {
+              "steps": [
+                "Añade archivos o una carpeta (incluidas sus subcarpetas, si mantienes activada esa opción).",
+                "Al añadir cada archivo, se lee una vez y se comprueba si la herramienta puede procesarlo.",
+                "Elige dónde guardar los resultados: junto a cada archivo con un nombre nuevo, en una carpeta (conservando las subcarpetas) o encima de los archivos originales, opción que requiere una confirmación adicional. Hash también puede limitarse a mostrar los resultados en la lista.",
+                "Haz clic en un archivo de la lista para ver solo su resultado bajo las opciones, antes de que se escriba nada.",
+                "Pulsa Ejecutar. Si un archivo da error, los demás se siguen procesando; cada uno indica el resultado."
+              ]
+            },
+            {
+              "note": "Los resultados nunca reemplazan archivos existentes, salvo que lo solicites."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "El menú contextual del Explorador de archivos de Windows",
+          "body": [
+            "Actívalo en Ajustes del programa, en la sección Explorador de archivos de Windows. Las opciones se agrupan bajo «Syntelab Creative»; en Windows 11 aparecen dentro de «Mostrar más opciones».",
+            {
+              "points": [
+                "Abrir en Syntelab Dev: aparece para los tipos de archivo que lee una herramienta (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz y otros). El archivo se abre en la herramienta correspondiente.",
+                "Sumas de verificación: disponible para cualquier archivo o carpeta. Los resúmenes se muestran junto a cada archivo y no se escribe nada.",
+                "Vista hexadecimal: disponible para cualquier archivo.",
+                "Comparar: dos archivos se cargan en los dos paneles del Comparador; dos carpetas, en la herramienta para compararlas."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Codificar",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Codifica bytes en Base64 y viceversa. La codificación acepta cualquier archivo; la decodificación devuelve los bytes, que se muestran si son texto y se guardan en un archivo si no lo son.",
+            {
+              "points": [
+                "Alfabeto: el estándar o el de URL (- y _).",
+                "Relleno con = y líneas de 64, 76 o cualquier número de caracteres.",
+                "La decodificación acepta ambos alfabetos, con o sin relleno, e indica dónde hay un carácter incorrecto."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Codificación y decodificación de URL",
+          "body": [
+            "Codificación porcentual, como la usan los navegadores: una parte de una dirección (se codifica todo lo que no sea una letra sin modificar), una dirección completa (se conservan sus signos propios) o un formulario (+ representa un espacio).",
+            "Al decodificar, se indica si un % no va seguido de dos dígitos hexadecimales."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Entidades HTML",
+          "body": [
+            "Convierte en entidades los caracteres que HTML y XML reservan para sí (&, <, > y las comillas), y también las convierte de nuevo a caracteres: por nombre, número decimal o hexadecimal. Los nombres siguen el estándar HTML.",
+            "La opción «También los caracteres no ASCII» convierte asimismo las letras acentuadas y de otros alfabetos en entidades."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Decodificador JWT",
+          "body": [
+            "Descompone un JSON Web Token: muestra la cabecera y el contenido en formato JSON, y explica sus campos (emisor, asunto, audiencia y vencimiento, indicando si está «caducado» o «aún no ha caducado»).",
+            "Introduce el secreto para comprobar una firma creada con un secreto compartido (HS256, HS384, HS512). No se comprueban las firmas creadas con una clave privada (RS, ES, PS).",
+            {
+              "note": "El token y el secreto permanecen en la pestaña: no se envía nada a ningún sitio para decodificar el token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escapar y desescapar",
+          "body": [
+            "Convierte texto en una cadena literal de un lenguaje (JSON, JavaScript, C, C++, Java y otros), escapando comillas, saltos de línea y otros caracteres; también puede volver a convertir esa cadena en texto."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Comprime y descomprime archivos gzip de cualquier tamaño mientras los lee. Puedes elegir entre mayor velocidad o menor tamaño; el resultado de texto también se puede obtener como Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Bases numéricas",
+          "body": [
+            "Muestra números enteros, uno por línea, en binario, octal, decimal, hexadecimal y otra base que elijas, hasta la base 36. No hay un tamaño máximo para los números.",
+            {
+              "points": [
+                "La base se deduce de cómo está escrito el número: 0x para hexadecimal, 0b para binario, 0o para octal, letras para hexadecimal y, en los demás casos, decimal. También puedes elegir una base única para leer todos los números.",
+                "Se omiten los espacios, guiones bajos y apóstrofos entre los dígitos: 1_000_000.",
+                "Los números negativos también se muestran como los almacenan los ordenadores (complemento a dos), usando el menor tamaño entre 8, 16, 32, 64 bits, etc., que permita representarlos."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Datos",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Formateador JSON",
+          "body": [
+            "Da formato, reduce y valida JSON, y lo muestra como un árbol. Los documentos de cualquier tamaño se leen como un flujo.",
+            {
+              "points": [
+                "Indenta con 2 o 4 espacios, una tabulación o cualquier cantidad de espacios.",
+                "Más opciones: ordenar las claves, poner las listas cortas en una línea, elegir el espacio después de los dos puntos, el tipo de salto de línea, añadir un salto al final y representar los caracteres no ASCII como \\uXXXX.",
+                "La lectura permisiva acepta comentarios (// y /* */) y comas finales, y genera JSON estricto.",
+                "Transformaciones: elimina valores nulos, valores vacíos y otros similares, todo de una vez.",
+                "El árbol se abre nivel por nivel y permite buscar texto en las claves y los valores."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Ejecuta una consulta JSONPath (RFC 9535) en un documento: $.store.book[?@.price < 10].title. El resultado muestra los valores encontrados, sus rutas o ambos.",
+            "Si una consulta es incorrecta, se indica dónde está el error."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Validador de JSON Schema",
+          "body": [
+            "Comprueba un documento con un JSON Schema (borradores 4 a 2020-12). El esquema se introduce en el panel situado debajo de la entrada. Se enumeran los elementos que no encajan, con su ubicación y la regla que incumplen.",
+            "Al procesar varios archivos, cada uno se comprueba con el mismo esquema. No se resuelven las referencias $ref a otros archivos ni a direcciones web."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Generador de esquemas y JSON a TypeScript",
+          "body": [
+            "A partir de un ejemplo JSON, el generador crea un JSON Schema que se ajusta a él; JSON a TypeScript genera declaraciones de tipos (interfaces o tipos, exportados o no, de solo lectura o no, con el nombre que indiques)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Convierte YAML en JSON y JSON en YAML. Lee YAML con el esquema Core, incluidas las anclas y las combinaciones; si hay un error, indica dónde está."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Convierte una tabla en JSON y viceversa. Detecta el separador a partir de la primera fila o permite elegirlo (coma, punto y coma, tabulación o barra vertical); la primera fila puede ser la cabecera, y también se pueden detectar números y valores verdadero/falso.",
+            "La vista «Tabla» muestra el CSV en filas y columnas, incluso si el archivo es muy grande."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Formateador de XML / HTML",
+          "body": [
+            "Da formato, minimiza y valida XML y HTML. Lee XML estrictamente e indica dónde está una etiqueta sin cerrar. Lee HTML con la tolerancia habitual de los navegadores."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Formateador SQL",
+          "body": [
+            "Distribuye cada cláusula de una sentencia en una línea o la pone en una sola; permite escribir las palabras clave en mayúsculas, minúsculas o como están. No requiere un dialecto ni comprueba el significado de la sentencia."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Comparador",
+          "body": [
+            "Compara dos textos línea por línea, dos documentos JSON por su contenido o dos carpetas archivo por archivo. Introduce el primero en la entrada y el segundo en el panel inferior.",
+            {
+              "points": [
+                "La vista «Lado a lado» resalta las palabras que cambiaron dentro de cada línea; «Unificado» muestra un parche como el de diff -u.",
+                "Ignora las mayúsculas, los espacios en blanco, las líneas vacías, los dígitos o la puntuación.",
+                "En JSON, el orden de las claves y el formato no afectan a la comparación; el resultado puede ser un JSON Patch (RFC 6902).",
+                "Carpetas: muestra qué archivos solo están en una carpeta, cuáles coinciden y cuáles difieren. Pulsa «Comparar» en una fila para abrir el par como textos."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Vista previa de Markdown",
+          "body": [
+            "Muestra cómo se verá el Markdown y genera el HTML para copiarlo o guardarlo: CommonMark con tablas, tachado, listas de tareas y notas al pie.",
+            {
+              "points": [
+                "El HTML escrito dentro del Markdown se muestra como texto; no se ejecuta.",
+                "No se descargan las imágenes remotas: en su lugar se muestran su descripción y dirección. Las imágenes incluidas en el texto (data:) sí se muestran.",
+                "Los enlaces se abren en el navegador del sistema."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Generar",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Genera tantos UUID de las versiones 1, 3, 4, 5, 6 y 7 (RFC 9562) como indiques, con guiones, sin formato, como URN o entre llaves. «Descomponer» indica la versión de cada UUID y la fecha o el nombre que contiene."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "Calcula CRC-32, MD5, SHA-1, SHA-256, SHA-384 y SHA-512 de un texto o archivo, varios a la vez, en hexadecimal o Base64. Calcula el hash de archivos de cualquier tamaño mientras los lee.",
+            {
+              "points": [
+                "«Comprobar con»: pega una suma de verificación o la línea de un archivo .sha256; se indica si coincide.",
+                "«Clave HMAC»: convierte los resúmenes en HMAC usando esa clave.",
+                "«Una suma por línea»: calcula un resumen por cada línea del texto.",
+                "Archivos: muestra los resúmenes junto a cada archivo; «Copiar todo» los copia en el formato de sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Contraseñas y secretos",
+          "body": [
+            "Genera contraseñas con los tipos de caracteres que elijas, frases de contraseña con palabras y bytes aleatorios en hexadecimal o Base64, usando el generador aleatorio del sistema operativo. Indica la entropía en bits de cada resultado. Una vez generado, cambiar una opción lo vuelve a generar.",
+            "Las frases se forman con palabras de la lista extensa de la Electronic Frontier Foundation (7776 palabras en inglés), todas con la misma probabilidad: seis palabras aportan unos 77 bits."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Claves y certificados",
+          "body": [
+            "Hay cinco opciones, que se eligen arriba:",
+            {
+              "points": [
+                "Nueva clave: RSA, EC P-256 / P-384 / P-521 o Ed25519, en todos los formatos habituales (PKCS #8, formato antiguo u OpenSSH; clave pública como PEM o en una línea para authorized_keys). Puedes protegerla con una frase de contraseña.",
+                "Solicitud de certificado: crea una CSR para una clave nueva o pegada, con su sujeto y nombres alternativos (SAN).",
+                "Certificado autofirmado: igual que el anterior, pero firmado con su propia clave y válido durante el número de días indicado. «Puede firmar otros certificados» lo convierte en una autoridad certificadora propia.",
+                "Firmar con tu propia AC: pega una solicitud, el certificado de tu autoridad y su clave; obtendrás el certificado firmado y el certificado de la autoridad.",
+                "Leer y convertir: pega o abre cualquier formato (PEM, DER, clave OpenSSH, archivo .pfx o .p12, protegido o no). Se indica qué se ha encontrado y si la clave corresponde al certificado; después, cada elemento se ofrece en los demás formatos. Puedes guardar juntos una clave y su certificado en un archivo .pfx."
+              ]
+            },
+            {
+              "note": "Todo se genera en este equipo. La clave permanece en la pestaña hasta que pulses Vaciar y no se guarda en ningún otro sitio, salvo que la guardes tú."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inspeccionar",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Probador de expresiones regulares",
+          "body": [
+            "Prueba una expresión regular de JavaScript en un texto: muestra las coincidencias con sus grupos y posiciones, o el texto con las coincidencias reemplazadas. Las opciones son g, i, m, s, u e y.",
+            "La expresión se ejecuta fuera de la ventana; las ejecuciones que duran más de 20 segundos se detienen."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Explicador de cron",
+          "body": [
+            "Explica en palabras qué significa una programación y cuándo se ejecuta: crontab (cinco campos, seis con segundos, siete con año), Quartz, cron() y rate() de AWS EventBridge y OnCalendar de systemd. Escribe una programación por línea.",
+            {
+              "points": [
+                "Muestra las próximas ejecuciones y, si lo solicitas, las anteriores, en la zona horaria que elijas.",
+                "Los días de la semana se numeran desde 0 para el domingo, o desde 1 como los numera Quartz, según elijas. Una línea con segundos que además tiene año, L, W o # es de Quartz, y se interpreta automáticamente a la manera de Quartz.",
+                "Muestra la misma programación en los demás formatos para copiarla o añadirla a la entrada.",
+                "El asistente de creación crea una programación al elegir cada campo; «Editar en el asistente» carga en él una programación escrita."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Marca de tiempo Unix",
+          "body": [
+            "Lee instantes, uno por línea: segundos, milisegundos, microsegundos o nanosegundos desde 1970, o fechas en los formatos habituales (ISO 8601, como las escriben el correo y HTTP, como las escribe Git). Muestra cada uno en la zona horaria elegida, en UTC y en todos los tipos de marca de tiempo."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Analizador de URL",
+          "body": [
+            "Descompone una URL tal como la leen los navegadores: esquema, usuario, host (incluida su forma Unicode cuando está escrita en punycode), puerto, ruta, cada parámetro de consulta decodificado y el fragmento."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Decodificador de certificados",
+          "body": [
+            "Lee certificados X.509 en formato PEM o DER y muestra todos sus datos: sujeto, emisor, período de validez, nombres asociados, clave, extensiones y huellas digitales.",
+            "Lee el certificado, pero no determina si es de confianza. Para consultar el certificado que presenta un sitio y si este equipo confía en él, usa Red → Certificado de un sitio."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Visor hexadecimal",
+          "body": [
+            "Muestra los bytes de un archivo de cualquier tamaño o de un texto pegado: la posición de cada fila, los bytes y su representación como caracteres.",
+            {
+              "points": [
+                "Ve a una posición escrita como 0x1F4, 1F4h o 500.",
+                "Busca bytes (DE AD BE EF) o texto (UTF-8 o UTF-16 en cualquiera de los dos órdenes), hacia delante o hacia atrás.",
+                "Haz clic en un byte para ver a un lado su valor como número de cualquier tamaño, en cualquiera de los órdenes de bytes, como carácter y como hora.",
+                "Selecciona arrastrando, con Mayús o con las flechas. Copia la selección como hexadecimal, código, Base64 o texto, o guárdala en un archivo."
+              ]
+            },
+            {
+              "note": "Solo permite consultar el archivo: no lo modifica."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Red",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Dónde se conectan las herramientas de red",
+          "body": [
+            "Estas cuatro herramientas son la única parte de Dev que se conecta a internet y solo acceden al destino que indiques.",
+            {
+              "points": [
+                "Solo se contacta con la dirección que escribes, y únicamente al pulsar el botón. Nunca en segundo plano.",
+                "Solo se envía lo que escribes. A la solicitud se añade únicamente un User-Agent igual para todos («Syntelab Creative»), salvo que indiques uno propio.",
+                "No se guardan cookies, no se envían datos sobre ti ni sobre el equipo y no se conserva lo que escribes."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Cliente HTTP",
+          "body": [
+            "Envía una solicitud escrita a mano: método, dirección, encabezados (uno por línea, con el formato Nombre: valor) y cuerpo, escrito o cargado desde un archivo de cualquier tamaño.",
+            {
+              "points": [
+                "La respuesta incluye el código, el tiempo transcurrido (total y hasta el primer byte), el tamaño, los encabezados y el cuerpo, coloreado según su tipo y formateado si es JSON. Un cuerpo que no es texto (una imagen, un PDF) se muestra tal cual y se guarda tal como llegó.",
+                "Puedes seguir las redirecciones o ver la primera respuesta sin seguirlas. Se enumeran las direcciones por las que pasó la solicitud.",
+                "Comprueba el certificado con los certificados de confianza de este equipo; desactiva la comprobación solo para servidores propios.",
+                "«Enviar y guardar la respuesta en un archivo» escribe el cuerpo directamente en disco, sea del tamaño que sea, y muestra el progreso y el botón Detener.",
+                "«Copiar como curl» genera un comando equivalente para la misma solicitud."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Consulta DNS",
+          "body": [
+            "Solicita a un servidor DNS los registros de un nombre: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS o DNSKEY, varios a la vez. Para una dirección, busca su nombre (PTR).",
+            "La consulta se envía al servidor DNS configurado en el equipo, a uno público (1.1.1.1, 8.8.8.8, 9.9.9.9), a un resolvedor HTTPS (Cloudflare o Google) o al servidor que indiques."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Comprobación de puertos",
+          "body": [
+            "Indica si los puertos de un host aceptan conexiones TCP: uno, varios o un rango de hasta 65 535 (22, 80, 443, 8000-8100). Cada uno aparece como abierto, cerrado o sin respuesta dentro del tiempo indicado.",
+            {
+              "note": "Prueba solo hosts que sean tuyos o que tengas permiso para analizar."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Certificado de un sitio",
+          "body": [
+            "Muestra los certificados que presenta un sitio al establecer una conexión segura: para quién son, quién los firmó, cuántos días les quedan, si este equipo confía en ellos y por qué no, la versión de TLS y el cifrado. Solo se realiza el intercambio inicial; no se envía ninguna solicitud.",
+            {
+              "points": [
+                "Escribe example.com, example.com:8443 o una dirección web.",
+                "Los servidores de correo y FTP empiezan sin cifrar y se les solicita cambiar a TLS (STARTTLS): el modo se elige según el puerto (25, 587, 143, 110, 21) o manualmente.",
+                "«Todo» muestra toda la información de los certificados; «PEM» permite copiarlos o guardarlos."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ajustes",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Ajustes de Dev",
+          "body": [
+            "Archivo → Ajustes abre la sección de Dev en los ajustes del programa.",
+            {
+              "points": [
+                "Abre cada herramienta en una pestaña propia o en la pestaña desde la que la elegiste.",
+                "Configura las pestañas nuevas para abrir la última herramienta usada o la página inicial.",
+                "Restablece las opciones de todas las herramientas y las herramientas fijadas a los valores originales del programa."
+              ]
+            },
+            "El menú contextual del Explorador de archivos de Windows, el idioma, el tema y los atajos de teclado se configuran en los ajustes generales del programa."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Acerca de Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Acerca de Dev",
+          "body": [
+            "Dev es la aplicación para desarrolladores de Syntelab Creative: incluye herramientas para codificar y decodificar, dar formato y validar, convertir datos entre formatos y desglosar información difícil de leer.",
+            "Todo se procesa en este equipo. No se guarda ni se envía a ningún sitio nada de lo que escribas, pegues o abras en una herramienta. No hay límite de tamaño ni de cantidad de archivos: los límites son la memoria y el disco del equipo.",
+            "La aplicación es nueva y sigue en desarrollo. Si no cubre tus necesidades, cuéntanoslo en Ayuda → Comentarios."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Tecnologías con las que está creado Dev",
+          "body": [
+            {
+              "points": [
+                "Los editores: CodeMirror, https://codemirror.net . Licencia MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Lectura y coloreado de JSON en los editores: @codemirror/lang-json, https://github.com/codemirror/lang-json , junto con @codemirror/language y @lezer/highlight. Licencia MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Lectura y coloreado de YAML, XML, HTML y SQL en los editores: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (con @codemirror/lang-css y @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Licencia MIT. Copyright (C) 2018-2024 by Marijn Haverbeke and others.",
+                "Comprobación de documentos con JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Licencia MIT. Copyright (c) 2020-2026 Dmitry Dygalo. Se compila sin el componente de red: Dev nunca descarga esquemas.",
+                "Patrones de JSONPath (coincidencias y búsquedas): regex, https://github.com/rust-lang/regex . Licencia MIT o Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "Lectura de YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Licencia MIT o Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Dev genera YAML por sí mismo.",
+                "Comparación de dos textos (Diff): similar, https://github.com/mitsuhiko/similar . Licencia Apache-2.0. Autores: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Licencia MIT o Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Resúmenes de la herramienta Hash y firma de tokens: sha2, sha1 y md-5, https://github.com/RustCrypto/hashes . Licencia MIT o Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, and the RustCrypto developers.",
+                "Fechas, horas y zonas horarias (marca de tiempo Unix, Explicador de cron): jiff, https://github.com/BurntSushi/jiff , con las zonas horarias de la base de datos IANA. Licencia Unlicense o MIT. Copyright (c) 2015 Andrew Gallant.",
+                "Análisis de URL: url e idna, https://github.com/servo/rust-url . Licencia MIT o Apache-2.0. Copyright (c) 2013-2025 The rust-url developers.",
+                "Lectura de certificados X.509: x509-parser, https://github.com/rusticata/x509-parser . Licencia MIT o Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "El probador de expresiones regulares usa las expresiones regulares de JavaScript en el motor del WebView que utiliza la aplicación (Microsoft Edge WebView2 en Windows); no añade ninguna biblioteca para ello.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Licencia MIT o Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton and contributors.",
+                "UUID: uuid, https://github.com/uuid-rs/uuid . Licencia Apache-2.0 o MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Bytes aleatorios para contraseñas, secretos y UUID generados por el sistema operativo: getrandom, https://github.com/rust-random/getrandom . Licencia MIT o Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Claves y firmas RSA: rsa, https://github.com/RustCrypto/RSA , junto con num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Licencia MIT o Apache-2.0. Copyright (c) RustCrypto Developers and dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Claves y firmas de las curvas NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , junto con ecdsa, elliptic-curve y crypto-bigint, que necesitan. Licencia Apache-2.0 o MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Claves y firmas Ed25519: ed25519-dalek y curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Licencia BSD de 3 cláusulas. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft and Henry de Valence. All rights reserved.",
+                "Formatos usados para escribir claves, solicitudes y certificados (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER y PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Licencia Apache-2.0 o MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Archivos de claves OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , junto con bcrypt-pbkdf, aes, ctr, chacha20 y los demás cifrados y hashes de RustCrypto necesarios para proteger una clave. Licencia Apache-2.0 o MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Archivos PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , junto con pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 y scrypt de RustCrypto. Licencia MIT o Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Los números aleatorios de los que se generan las claves proceden del sistema operativo: rand_core, https://github.com/rust-random/rand . Licencia MIT o Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "Cliente HTTP: ureq, https://github.com/algesten/ureq . Licencia MIT o Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Conexiones seguras (TLS) del cliente HTTP y de «Certificado de un sitio»: rustls, https://github.com/rustls/rustls , licencias Apache-2.0, ISC o MIT; con rustls-webpki, https://github.com/rustls/webpki , licencia ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , licencias Apache-2.0 e ISC; webpki-roots, https://github.com/rustls/webpki-roots , licencia CDLA-Permissive-2.0.",
+                "Verificación de confianza de certificados en este equipo: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Licencia MIT o Apache-2.0. Copyright (c) 2022 1Password.",
+                "Lectura de Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Licencia MIT. Copyright 2015 Google Inc. All rights reserved.",
+                "Lectura de archivos con codificaciones distintas de UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , licencia Apache-2.0 o MIT (sus datos usan BSD-3-Clause), Copyright Mozilla Foundation; y chardetng, https://github.com/hsivonen/chardetng , licencia Apache-2.0 o MIT, Copyright Mozilla Foundation.",
+                "Palabras de las frases de contraseña: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , de Electronic Frontier Foundation, utilizada bajo la licencia Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). La lista se usa tal cual.",
+                "Para abrir claves protegidas con el método antiguo de OpenSSL se usan aes, cbc y des de RustCrypto, https://github.com/RustCrypto . Licencia MIT o Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "Implementados para Dev sin bibliotecas: la consulta DNS (las solicitudes y respuestas se leen según RFC 1035) y la comprobación de puertos.",
+                "Implementados para Dev sin bibliotecas: lectura y escritura de JSON como flujo, JSONPath (RFC 9535), Base64, codificación porcentual, referencias a caracteres HTML (sus nombres siguen el estándar HTML, https://html.spec.whatwg.org ), escapes de cadenas, lectura de JSON Web Tokens, escritura de YAML, CSV en ambos sentidos, lectura de programaciones cron, formateadores XML y HTML y formateador SQL."
+              ]
+            },
+            "Las tecnologías que comparte con el resto del programa se indican en «Acerca de Syntelab Creative»."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Lo que Dev aún no puede hacer",
+          "body": [
+            {
+              "points": [
+                "La firma de un token solo se comprueba si se creó con un secreto compartido (HS256, HS384 o HS512).",
+                "El validador de JSON Schema muestra los errores en inglés, como hace su biblioteca, y no sigue referencias $ref a otros archivos ni direcciones web.",
+                "El formateador SQL no requiere un dialecto ni comprueba el significado de una sentencia; solo detecta cadenas o comentarios sin cerrar.",
+                "YAML, y el JSON que se convierte en YAML o CSV, se mantienen íntegros en memoria durante la conversión. El CSV convertido a JSON, XML, HTML y SQL se procesa a medida que se lee, sea cual sea su tamaño.",
+                "La tabla que muestra el CSV es de solo lectura: todavía no se puede escribir en ella ni copiar contenido desde ella.",
+                "El Comparador conserva 16 bytes por línea de cada archivo, no los archivos completos. Los dos documentos JSON sí se mantienen íntegros en memoria, porque se vuelven a generar antes de compararlos.",
+                "También se toma como punto de referencia un bloque de líneas que aparece exactamente una vez en ambos lados, como permite el algoritmo de paciencia. Cada tramo se compara con el algoritmo de Myers y puede intentarse una segunda vez como máximo: las diferencias indicadas son correctas, aunque no siempre sean las mínimas.",
+                "El Comparador no compara los finales de línea (CRLF o LF).",
+                "Las carpetas se comparan byte por byte; los archivos se emparejan por sus nombres, carácter por carácter.",
+                "Los datos que muestran las herramientas del menú Inspeccionar son JSON y sus nombres están en inglés.",
+                "El probador de expresiones regulares ejecuta expresiones de JavaScript, no de PCRE ni de Rust. Solo funciona con texto que cabe en el editor, no con archivos procesados desde el disco; detiene las expresiones que tardan más de 20 segundos.",
+                "El decodificador de certificados lee el certificado, pero no comprueba si es de confianza: no verifica la cadena, la firma ni su revocación.",
+                "Los archivos de texto con una codificación distinta de UTF-8 se leen si caben en el editor; los archivos más grandes, procesados desde el disco, deben estar codificados en UTF-8.",
+                "Al arrastrarlo, se carga un archivo de hasta 16 MB. La ventana no recibe la ubicación en disco de un archivo mayor, así que debes abrirlo con Abrir un archivo.",
+                "Las frases de contraseña se generan únicamente con palabras en inglés.",
+                "Explicador de cron: el asistente de creación crea programaciones crontab de cinco campos, o de seis con segundos; no admite los símbolos L, W, # o ? al cargar una programación. No se pueden predecir las ejecuciones de AWS rate(), porque se calculan desde la creación de la regla. En systemd se leen los eventos de calendario habituales, pero no las fracciones de segundo ni las listas de días contados desde el final del mes.",
+                "El visor hexadecimal solo permite consultar el archivo: no lo modifica. La columna de texto muestra ASCII o caracteres de Europa occidental, pero no otros alfabetos. Se pueden buscar bytes o texto, no patrones.",
+                "Claves y certificados: se admiten claves RSA, las curvas P-256, P-384 y P-521 y Ed25519; no se leen otras (DSA, secp256k1, X25519). Se abren claves protegidas con el método antiguo de OpenSSL si usan AES o 3DES. Un archivo .pfx contiene una clave y sus certificados. La generación de claves RSA muy grandes tarda y no se puede detener a mitad del proceso. La biblioteca que genera claves RSA tiene una vulnerabilidad conocida para un atacante que pueda medir muchas firmas por red (RUSTSEC-2023-0071): aquí las claves se generan y guardan en tu equipo, y no se firma nada para terceros.",
+                "Cliente HTTP: solo HTTP/1.1 (no HTTP/2 ni HTTP/3); no conserva cookies entre solicitudes; no prepara formularios multipart; las respuestas de más de 16 MB o que no sean texto se guardan en un archivo volviendo a enviar la solicitud.",
+                "La consulta DNS muestra las firmas DNSSEC, pero no las valida. La comprobación de puertos solo prueba TCP: no se puede distinguir un puerto UDP silencioso de uno cerrado. Certificado de un sitio no comprueba si el certificado ha sido revocado.",
+                "El menú contextual está disponible en el Explorador de archivos de Windows; en Windows 11, sus opciones están en «Mostrar más opciones»."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

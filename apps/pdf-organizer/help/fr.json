@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Ouverture et lecture",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Ouvrir un document",
+          "body": [
+            "Fichier → Ouvrir (Ctrl+O) ouvre un PDF dans un nouvel onglet. « Ouvrir plusieurs fichiers à la fois » ouvre chaque fichier sélectionné dans son propre onglet.",
+            "Les fichiers qui ne sont pas des PDF s’ouvrent également comme des pages : images (PNG, JPEG, TIFF, WebP et bien d’autres formats), fichiers texte et web, livres numériques, XPS et documents bureautiques. Un tel document n’est pas encore enregistré : « Enregistrer » vous demande où le sauvegarder.",
+            {
+              "note": "Les documents bureautiques (Word, Excel, PowerPoint, OpenDocument) sont convertis par Word, Excel, PowerPoint ou LibreOffice, selon les logiciels installés sur l’ordinateur. Sans l’un d’eux, ils ne peuvent pas être ouverts."
+            },
+            "Les fichiers déposés sur un onglet vide sont réunis dans un assembleur ; déposés sur un document, leurs pages y sont ajoutées.",
+            "Sous Windows, PDF Organizer peut être l’application qui ouvre les fichiers PDF lorsque vous double-cliquez dessus : sur sa page d’accueil, « Définir par défaut » ouvre les paramètres de Windows, où vous choisissez Syntelab Creative pour les fichiers PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Afficher les pages",
+          "body": [
+            "Le menu Affichage détermine la présentation du document ; il ne modifie pas le fichier.",
+            {
+              "points": [
+                "Zoom : agrandir, réduire, taille réelle, ajuster à la page, à la largeur ou à la hauteur. Ctrl et la molette de la souris permettent aussi de zoomer.",
+                "Affichage des pages : une page ou deux pages côte à côte, avec ou sans page de couverture, et défilement de toutes les pages sous forme d’une longue bande.",
+                "Repères : règles et grille, dans l’unité choisie dans les paramètres.",
+                "« Afficher les vignettes » montre les petites pages sur le côté. Sélectionnez-en une pour y accéder ; les signets du document se trouvent dans le même panneau.",
+                "« Mode lecture » masque les outils ; « Mode plein écran » masque tout sauf la page. Appuyez sur Échap pour quitter l’un ou l’autre."
+              ]
+            },
+            "La barre au-dessus des pages (barre d’outils rapide) contient le numéro de page, le zoom et les boutons choisis dans les paramètres."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Rechercher du texte",
+          "body": [
+            "Édition → Rechercher dans le document (Ctrl+F) : saisissez un mot ou une expression ; les résultats sont marqués sur les pages et les flèches permettent de passer de l’un à l’autre.",
+            {
+              "note": "Un document numérisé est composé d’images de pages et ne contient aucun texte à rechercher avant la reconnaissance des caractères : voir « Reconnaître le texte (OCR) »."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Propriétés du document",
+          "body": [
+            "Fichier → Propriétés du document affiche les informations enregistrées dans le document : titre, auteur, dates de création et de modification, nombre de pages et taille du fichier."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Enregistrer, imprimer et partager",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Enregistrer et Enregistrer sous",
+          "body": [
+            "Aucune modification n’est écrite sur le disque avant l’enregistrement. Jusque-là, chaque action peut être annulée (Ctrl+Z) ou rétablie (Ctrl+Y).",
+            {
+              "points": [
+                "Enregistrer (Ctrl+S) remplace le fichier du document.",
+                "Enregistrer sous (Ctrl+Maj+S) crée un nouveau fichier, qui prend ensuite la place de l’onglet actuel ; l’ancien fichier reste inchangé."
+              ]
+            },
+            "Si un autre programme a ouvert le fichier, il ne peut pas être remplacé. Le programme vous le signale et conserve vos modifications pour les enregistrer sous un autre nom.",
+            {
+              "note": "Enregistrer par-dessus un document signé avec un certificat supprime les signatures. Le programme demande confirmation et propose « Enregistrer dans un nouveau fichier ». Vous pouvez désactiver cette demande dans Paramètres → Signatures."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Créer un PDF",
+          "body": [
+            "Fichier → Créer un PDF produit un nouveau document :",
+            {
+              "points": [
+                "à partir d’un ou plusieurs fichiers, réunis en un seul PDF ou convertis chacun en PDF séparé ;",
+                "à partir d’une page web à l’adresse saisie (la page est enregistrée avec le navigateur installé sur l’ordinateur) ;",
+                "à partir du contenu du presse-papiers ;",
+                "à partir de pages vierges au format choisi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Exporter vers un autre format",
+          "body": [
+            "Fichier → Exporter enregistre le document dans un autre format : Word ou OpenDocument texte, texte brut, page web, XML, images des pages (PNG, JPEG, TIFF, SVG) ou PostScript. Pour les images, vous pouvez choisir la résolution.",
+            "Le document d’origine reste un PDF ; l’export est enregistré dans un nouveau fichier.",
+            {
+              "note": "Le texte ne peut être exporté que si le document en contient. Lancez d’abord la reconnaissance de texte pour les documents numérisés."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Imprimer",
+          "body": [
+            "Fichier → Imprimer (Ctrl+P) imprime le document tel qu’il est présenté, avec les annotations dessinées. Choisissez les pages, le papier, l’orientation portrait ou paysage et l’ajustement à la feuille ou la taille réelle ; la fenêtre d’impression du système vous demande ensuite de choisir l’imprimante.",
+            "Le papier, l’orientation et l’échelle proposés au départ par la fenêtre d’impression se règlent dans Paramètres → Impression."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Partager",
+          "body": [
+            "Fichier → Partager transmet le document à la fenêtre de partage du système : e-mail, appareil à proximité et autres applications. Le document est partagé dans son état actuel, avec les modifications non enregistrées."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organiser les pages",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Vue Organiser",
+          "body": [
+            "Organiser → Organiser les pages affiche toutes les pages dans une grille. Rien n’est modifié sur le disque avant l’enregistrement.",
+            {
+              "points": [
+                "Sélectionner : cliquez sur une page ; Ctrl+clic en ajoute une à la sélection et Maj+clic sélectionne une plage. Le menu propose « Sélectionner toutes les pages », « Désélectionner tout », « Sélectionner les pages impaires » et « Sélectionner les pages paires ».",
+                "Déplacer : faites glisser les pages sélectionnées à leur nouvel emplacement ou utilisez « Déplacer vers la gauche » et « Déplacer vers la droite ».",
+                "Rotation : « Sélection : faire pivoter à gauche » et « Sélection : faire pivoter à droite » font pivoter les pages sélectionnées ; « Toutes les pages : faire pivoter vers la gauche » et « Toutes les pages : faire pivoter vers la droite » font pivoter toutes les pages.",
+                "Supprimer : utilisez la touche Suppr ou « Supprimer des pages ». Le document doit conserver au moins une page.",
+                "Copier, couper et coller (Ctrl+C, Ctrl+X, Ctrl+V) : les pages peuvent être collées dans le même document ou dans un autre document ouvert dans le programme.",
+                "Taille : le curseur en haut agrandit ou réduit les pages ; Ctrl + molette de la souris sur les pages, ainsi que Zoom avant et Zoom arrière (Ctrl+= et Ctrl+-), font de même. La taille est mémorisée."
+              ]
+            },
+            "Les mêmes commandes fonctionnent sans la grille, directement sur la page affichée."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Extraire des pages et scinder un document",
+          "body": [
+            "Organiser → Extraire des pages crée un nouveau document dans un onglet distinct, sans l’enregistrer, à partir des pages sélectionnées. Vous pouvez aussi enregistrer chaque page dans un fichier séparé et choisir si elles doivent être supprimées du document actuel.",
+            "Organiser → Scinder le document enregistre le document dans plusieurs fichiers plus petits ; le document actuel reste inchangé.",
+            "Les noms des nouveaux documents suivent les modèles définis dans Paramètres → Noms des nouveaux documents.",
+            {
+              "note": "Les signatures par certificat ne sont pas conservées dans les documents extraits ou scindés : une signature n’est valide que pour le fichier dans lequel elle a été créée."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Insérer et remplacer des pages",
+          "body": [
+            {
+              "points": [
+                "Organiser → Insérer des pages ajoute les pages d’un autre fichier (PDF, image, texte ou document bureautique) après la page sélectionnée ou à la fin.",
+                "Organiser → Remplacer des pages substitue les pages sélectionnées par celles d’un autre fichier.",
+                "Insérer → Page vierge ajoute une page vide de même format que la page voisine."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Recadrer et redimensionner les pages",
+          "body": [
+            "Édition → Recadrer des pages coupe les bords selon les marges que vous saisissez ou faites glisser. Rien n’est supprimé du fichier : seule la partie visible des pages est réduite.",
+            "Édition → Redimensionner des pages place les pages sur un autre format de feuille (A4, Lettre et autres). Le contenu peut être ajusté à la feuille ou conserver sa taille, puis placé à l’un des neuf emplacements possibles.",
+            "Les deux commandes vous demandent quelles pages traiter : toutes, les pages sélectionnées, une plage, les pages impaires ou les pages paires."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Combiner des fichiers",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "L’assembleur de documents",
+          "body": [
+            "Combiner → Nouvel assembleur de documents crée un espace où rassembler des fichiers et les enregistrer dans un seul PDF.",
+            {
+              "steps": [
+                "Ajoutez des fichiers avec « Ajouter des fichiers » ou déposez-les sur l’assembleur. Vous pouvez mélanger des PDF, des images, des fichiers texte et des documents bureautiques.",
+                "Faites glisser les cartes dans l’ordre souhaité ou utilisez les flèches de chaque carte.",
+                "Ouvrez une carte pour choisir les pages à inclure.",
+                "« Combiner des fichiers » les assemble dans l’ordre choisi et crée un nouveau document dans un onglet distinct."
+              ]
+            },
+            "Les fichiers d’origine ne sont pas modifiés.",
+            "Le curseur en haut agrandit ou réduit les pages sur les cartes ; Ctrl + molette de la souris, ainsi que Zoom avant et Zoom arrière (Ctrl+= et Ctrl+-), font de même. La taille est mémorisée."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Écrire et dessiner sur les pages",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Les outils",
+          "body": [
+            "Les outils de dessin s’ouvrent dans un panneau près de la page, sous forme de grille de boutons ou de liste avec leurs noms (à choisir dans les paramètres). Avec un outil sélectionné, faites glisser ou cliquez sur la page ; Échap désactive l’outil.",
+            {
+              "points": [
+                "Texte : cliquez et saisissez le texte. Le panneau permet de choisir la police, la taille, la couleur, le gras, l’italique et l’alignement.",
+                "Image : choisissez une image, puis faites glisser pour la placer et en régler la taille.",
+                "Formes : rectangle, ellipse, ligne, flèche, coche, croix et point.",
+                "Surlignage : faites glisser sur la zone à mettre en évidence ; le texte dessous reste lisible."
+              ]
+            },
+            "Avec « Sélectionner, déplacer et redimensionner », vous pouvez sélectionner à nouveau une annotation : la déplacer, tirer ses coins, la faire pivoter par sa poignée, modifier ses couleurs dans le panneau ou la supprimer avec la touche Suppr. Les annotations peuvent être copiées et collées, y compris sur d’autres pages.",
+            "Tout élément dessiné est enregistré dans le fichier quand vous sauvegardez."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Modifier le texte et les images du document",
+          "body": [
+            "L’outil « Modifier le texte et les images du document » encadre le contenu propre à la page. Cliquez sur une ligne de texte pour la modifier ou sur une image pour la déplacer, la redimensionner, la faire pivoter ou la supprimer.",
+            {
+              "note": "Cette fonction modifie une ligne ou une image à la fois. Les paragraphes ne se redisposent pas si une ligne s’allonge, et une image superposée à une autre est sélectionnée avec celle-ci. Pour des modifications importantes, éditez le document dans le programme où il a été créé."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Caviardage",
+          "body": [
+            "Autres outils → Caviarder supprime définitivement les informations à masquer : faites glisser un rectangle noir sur la zone, sur n’importe quelle page. À l’enregistrement, le texte et les images sous le rectangle sont retirés du fichier, et non simplement recouverts.",
+            {
+              "note": "Enregistrez le document caviardé sous un nouveau nom et conservez l’original en lieu sûr : les éléments caviardés ne peuvent pas être restaurés."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Filigrane",
+          "body": [
+            "Édition → Filigrane ajoute du texte ou une image aux pages choisies : droit ou incliné, à l’un des neuf emplacements, avec la taille et la transparence définies. Sur chaque page, il devient une annotation comme une autre, que vous pouvez déplacer ou supprimer."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Numéros de page, en-tête et pied de page, numérotation Bates",
+          "body": [
+            {
+              "points": [
+                "Édition → Numéros de page : choisissez le format (1, 1 / 12, Page 1 et autres), l’emplacement et les pages à numéroter.",
+                "Insérer → En-tête et pied de page : ajoutez du texte à l’un des six emplacements. Les variables {page}, {pages}, {date} et {file} représentent le numéro de la page, le nombre de pages, la date du jour et le nom du document.",
+                "Insérer → Numérotation Bates : attribue des numéros consécutifs avec un mot avant ou après (ABC000123), comme pour les pièces d’un dossier juridique."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Liens, signets et fichiers joints",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Liens",
+          "body": [
+            "Insérer → Lien : faites glisser sur la zone cliquable, puis indiquez sa destination : une adresse web ou une page de ce document.",
+            "Les liens du document fonctionnent en mode lecture : sélectionner un lien vers une page ouvre celle-ci ; les adresses web ou e-mail sont transmises au navigateur ou au logiciel de messagerie."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Signets",
+          "body": [
+            "Insérer → Nouveau signet : cliquez à l’emplacement de destination et donnez un titre au signet. Insérer → Signets ouvre la liste, où vous pouvez renommer ou supprimer un signet. Les modifications sont enregistrées avec le document."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Fichiers joints",
+          "body": [
+            "Insérer → Joindre un fichier : choisissez un fichier et cliquez à l’endroit où placer son trombone. Vous pouvez lui donner un nom et un auteur, changer la couleur du trombone, le redimensionner ou le faire pivoter. Le fichier est intégré au PDF lors de l’enregistrement.",
+            "Insérer → Fichiers joints affiche les fichiers contenus dans le document ; chacun peut être enregistré sur le disque ou extrait. Un clic sur un trombone ouvre la même liste."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formulaires",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Remplir un formulaire",
+          "body": [
+            "Insérer → Remplir un formulaire affiche les champs du document : saisissez du texte dans les champs prévus, cochez les cases et choisissez dans les listes. Les réponses sont enregistrées dans le fichier lorsque vous sauvegardez."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Créer un formulaire",
+          "body": [
+            "Le menu Insérer permet d’ajouter des champs à n’importe quel document : champ de texte, case à cocher, boutons radio (choix unique), liste déroulante et champ de signature laissé vide pour la personne qui signera.",
+            "Faites glisser sur la page pour placer le champ. Comme les autres annotations, il peut être déplacé et redimensionné jusqu’à l’enregistrement ; ensuite, il fait partie du formulaire."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Signature",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Ajouter une signature manuscrite",
+          "body": [
+            "Signer → Ajouter une signature insère l’image d’une signature sur la page : vous pouvez la dessiner avec un stylo choisi, la saisir avec une police ou l’importer depuis une image (avec « Ne garder que les traits du stylet » pour une photo de feuille signée). La date peut être ajoutée dessous.",
+            "Faites glisser sur la page pour la placer. Les signatures utilisées sont conservées sur cet ordinateur afin de pouvoir les réutiliser.",
+            {
+              "note": "Il s’agit d’une image : elle ne prouve pas l’identité de la personne qui l’a ajoutée. Pour prouver l’identité du signataire et garantir l’absence de modifications ultérieures, utilisez une signature par certificat."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Signer avec un certificat",
+          "body": [
+            "Signer → Signer avec un certificat crée une signature numérique : elle indique l’identité du signataire et scelle le document afin que toute modification ultérieure soit détectée.",
+            {
+              "steps": [
+                "Faites glisser sur la page pour définir la zone où la signature sera visible (une fenêtre vous en informe d’abord ; vous pouvez désactiver cet avertissement). Pour signer sans afficher la signature sur une page, choisissez plutôt « Signer sans afficher la signature sur une page ».",
+                "Choisissez le certificat : l’un de ceux de l’ordinateur (une carte ou un jeton apparaît dans la liste une fois inséré dans son lecteur) ou un fichier .pfx / .p12 accompagné de son mot de passe. Sélectionnez « Continuer ».",
+                "Choisissez l’apparence de la signature. Dans « Motif et lieu », vous pouvez préciser pourquoi et où vous signez : ces informations sont intégrées à la signature et visibles sur la page si l’apparence les affiche. Cochez « Verrouiller le document après la signature » pour empêcher les signatures ou modifications ultérieures. Laissez « Ajouter une heure de confiance (horodatage) » coché pour qu’une autorité confirme le moment de votre signature.",
+                "Sélectionnez « Signer », puis indiquez où enregistrer le fichier signé. Si vous utilisez un jeton, son code PIN est demandé à cette étape."
+              ]
+            },
+            "Le fichier signé s’ouvre à la place du document. Le programme ne conserve jamais de mot de passe ni de code PIN.",
+            {
+              "note": "Une signature qualifiée est créée ainsi avec un certificat qualifié, conservé sur sa carte ou son jeton. La signature est réalisée sur votre ordinateur ; seuls l’horodatage et la vérification de votre certificat passent par Internet, et ils n’envoient que des empreintes et le numéro de série du certificat, jamais le document."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Apparences des signatures",
+          "body": [
+            "Une apparence définit le rendu sur la page d’une signature par certificat. Enregistrez plusieurs modèles sous des noms distincts : par exemple, pour signer au nom d’une entreprise ou en votre nom propre.",
+            {
+              "points": [
+                "Image : aucune, importée depuis un fichier (tampon ou signature numérisée) ou dessinée ici.",
+                "Texte affiché : nom, date, motif et lieu, avec ou sans libellé.",
+                "Lignes personnalisées sous le nom, par exemple un poste et le nom d’une entreprise.",
+                "Le « Texte standard » est toujours présent : identité du signataire et date de signature."
+              ]
+            },
+            "Dans la fenêtre de signature, sélectionnez « Nouveau… », « Modifier… » ou « Supprimer ». La dernière apparence utilisée est proposée en premier. Les apparences sont conservées sur cet ordinateur."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Signatures multiples et verrouillage",
+          "body": [
+            "Plusieurs personnes peuvent signer un document l’une après l’autre. Ouvrez le fichier signé et signez-le sans rien modifier : votre signature est ajoutée à la fin du fichier et les précédentes restent valides.",
+            "« Verrouiller le document après la signature » (désactivé tant que vous ne le cochez pas) ferme le document : personne ne peut ensuite le signer et plus aucune modification n’est possible. Cette action est irréversible.",
+            {
+              "note": "Si vous modifiez un document signé avant de le signer à nouveau, il doit être réécrit et les signatures précédentes sont supprimées. La fenêtre de signature vous en avertit : pour les conserver, rouvrez le fichier et signez-le sans rien modifier."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Horodatage",
+          "body": [
+            "Un horodatage est l’attestation signée, par une autorité d’horodatage, du moment où quelque chose existait. Sans lui, l’heure d’une signature provient de l’horloge de l’ordinateur du signataire, que n’importe qui peut régler ; un horodatage prouve le moment et garde la signature prouvable après l’expiration du certificat (PAdES B-T).",
+            {
+              "points": [
+                "Les signatures en reçoivent un lorsque « Ajouter une heure de confiance (horodatage) » est coché dans la fenêtre de signature. Paramètres → Signatures indique si la case est cochée au départ, ici et dans le traitement par lots.",
+                "Signer → Ajouter un horodatage donne à l’ensemble du document son propre horodatage, sans certificat : il prouve que le document existait, exactement tel qu’il est, à cet instant. Il est enregistré dans un nouveau fichier ; les signatures que contient déjà le fichier restent valides."
+              ]
+            },
+            "L’autorité est celle de DigiCert (http://timestamp.digicert.com), gratuite et approuvée par Adobe Reader et Windows ; vous pouvez en définir une autre dans Paramètres → Signatures. Elle ne reçoit qu’une empreinte (SHA-256), jamais le document, et une connexion Internet est nécessaire. Lorsqu’une signature reçoit un horodatage, l’émetteur de votre certificat est aussi interrogé pour savoir si le certificat est toujours valide, et sa réponse est conservée dans la signature (validation à long terme) : Adobe Reader peut alors afficher la signature comme valide, maintenant et après l’expiration du certificat.",
+            {
+              "note": "Si l’autorité est injoignable, rien n’est signé ni enregistré : réessayez, ou décochez l’horodatage pour signer sans."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Vérifier les signatures",
+          "body": [
+            "Signer → Vérifier les signatures répertorie chaque signature par certificat du fichier : identité du signataire, émetteur du certificat, date, motif et lieu, ainsi que :",
+            {
+              "points": [
+                "si le document est resté inchangé depuis la signature (l’ajout ultérieur d’une autre signature ne compte pas comme une modification) ;",
+                "si la signature verrouille le document ;",
+                "si l’autorité du certificat est approuvée par cet ordinateur et si le certificat est valide aujourd’hui ;",
+                "l’heure confirmée par son horodatage, et par quelle autorité, s’il en a un. Un horodatage de l’ensemble du document est aussi répertorié, avec sa propre vérification."
+              ]
+            },
+            "La vérification porte sur le dernier état enregistré du fichier et s’effectue sur cet ordinateur, sans connexion à Internet. Un clic sur une signature dans une page ouvre cette liste à cette signature. Sous chaque signature, « Afficher le certificat » ouvre la fenêtre Windows du certificat (sa chaîne et tous ses détails ; de là, « Installer le certificat » fait que cet ordinateur fait confiance à un certificat que vous connaissez), et « Valider » demande en ligne à l’émetteur du certificat, uniquement quand vous cliquez dessus, si le certificat a été révoqué."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Autres outils",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Reconnaître le texte (OCR)",
+          "body": [
+            "Autres outils → Reconnaître le texte (OCR) lit le texte des pages numérisées et l’intègre au document de manière invisible. Vous pouvez ensuite rechercher, copier et exporter ce texte sans modifier l’apparence des pages.",
+            "Cochez uniquement les langues présentes sur les pages ; celles qui contiennent déjà du texte ne sont pas modifiées.",
+            {
+              "note": "La reconnaissance est effectuée par Tesseract, un logiciel libre à installer séparément. S’il n’est pas installé, la fenêtre affiche la commande permettant de l’installer sous Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Réduire la taille d’un document",
+          "body": [
+            "Autres outils → Compresser réduit la taille du fichier en diminuant la résolution des photos et des pages numérisées. Trois niveaux sont proposés ; le texte et les dessins conservent leur netteté. Un document contenant peu d’images sera peu réduit."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Comparer deux documents",
+          "body": [
+            "Autres outils → Comparer des documents : choisissez un autre PDF. Les deux documents sont affichés côte à côte, page par page ; les pages dont le texte diffère sont signalées et les lignes propres à chaque document sont répertoriées."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Traitement par lots : plusieurs fichiers à la fois",
+          "body": [
+            "Autres outils → Traitement par lots effectue les mêmes opérations sur plusieurs fichiers, dans un onglet dédié. Chaque résultat est un nouveau fichier. Si des résultats devaient prendre la place de fichiers déjà présents dans le dossier (vos propres fichiers, lorsqu’ils sont enregistrés dans leur dossier sans rien ajouter à leur nom), il vous est d’abord demandé s’il faut les remplacer, les ignorer ou annuler. Un fichier n’est remplacé qu’une fois son résultat terminé ; un fichier ouvert (dans un onglet ici ou dans un autre programme) est laissé tel quel et marqué comme non traité.",
+            {
+              "steps": [
+                "À gauche, ajoutez les fichiers : « Ajouter des fichiers », « Ajouter un dossier » (avec ses sous-dossiers) ou glissez-les dans la fenêtre.",
+                "À droite, cochez les opérations souhaitées. Chaque fichier est converti en PDF ; vous pouvez aussi faire pivoter les pages, reconnaître le texte, ajouter un en-tête et un pied de page, un filigrane ou des numéros de page, réduire la taille, signer avec un certificat ou exporter dans un autre format. Les numéros indiquent l’ordre d’exécution.",
+                "Choisissez les fichiers de sortie : un fichier par document ou un PDF unique (dans l’ordre de la liste), ainsi que le dossier de destination. Lorsque tous les fichiers proviennent d’un même dossier, ce dossier est choisi pour vous jusqu’à ce que vous en choisissiez un autre ; sinon, c’est le dernier dossier que vous avez choisi.",
+                "Sélectionnez « Démarrer ». Le résultat de chaque fichier est indiqué ; le traitement peut être interrompu entre deux fichiers."
+              ]
+            },
+            {
+              "points": [
+                "Recettes : « Enregistrer comme recette » mémorise sous un nom les options choisies, sauf les fichiers et les éventuels mots de passe. Vous pouvez les réutiliser en un clic.",
+                "« Conserver l’arborescence des dossiers dans les résultats » recrée la structure du dossier ajouté.",
+                "« Créer un rapport du traitement » enregistre un fichier texte près des résultats, avec la liste des fichiers créés et des échecs.",
+                "Un PDF uniquement signé conserve ses signatures. Si d’autres opérations lui sont appliquées pendant le même traitement, il est réécrit et les signatures sont supprimées."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paramètres",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Paramètres de PDF Organizer",
+          "body": [
+            "Fichier → Paramètres (ou Paramètres dans la barre latérale, puis PDF Organizer). Chaque paramètre peut être réinitialisé individuellement ou tous à la fois.",
+            {
+              "points": [
+                "À l’ouverture d’un document : taille d’affichage, défilement ou pages une par une, affichage ou non des miniatures.",
+                "Unités, règles et grille : unité (millimètres, pouces, points), règles, grille et espacement.",
+                "Impression : papier, orientation et échelle proposés au départ par la fenêtre d’impression.",
+                "Barre d’outils rapide : boutons affichés dans la barre au-dessus des pages.",
+                "Noms des nouveaux documents : modèles utilisés pour les pages extraites, les nouveaux documents et le PDF regroupant les fichiers du traitement par lots.",
+                "Signatures : indique si « Enregistrer » demande confirmation avant de remplacer un fichier signé.",
+                "Raccourcis clavier : sélectionnez les touches d’une commande, puis appuyez sur la nouvelle combinaison."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "À propos de PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "À propos de PDF Organizer",
+          "body": [
+            "PDF Organizer est l’application PDF de Syntelab Creative : elle lit les documents PDF, organise et rassemble leurs pages, permet d’écrire et de dessiner dessus, de remplir et créer des formulaires, de signer avec un certificat et de vérifier les signatures, et d’effectuer les mêmes opérations sur plusieurs fichiers à la fois.",
+            "L’application est nouvelle et certaines fonctions n’en sont qu’à leurs débuts. Si elle ne répond pas à vos besoins documentaires, écrivez-nous via Aide → Feedback : cela nous aide à choisir les prochaines améliorations."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Technologies utilisées par PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Lecture, dessin et écriture dans les PDF : MuPDF.",
+                "Reconnaissance du texte (OCR) : Tesseract, s’il est installé sur l’ordinateur.",
+                "Ouverture des documents bureautiques : Word, Excel, PowerPoint ou LibreOffice, selon les logiciels installés.",
+                "Enregistrement d’une page web au format PDF : navigateur installé sur l’ordinateur.",
+                "Signature par certificat : services de certificats de Windows ; les signatures sont produites conformément à la norme PAdES."
+              ]
+            },
+            "Les technologies partagées avec le reste du programme sont présentées dans « À propos de Syntelab Creative »."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Limitations actuelles de PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Les documents bureautiques sont ouverts par la suite bureautique installée sur l’ordinateur ; sans Word, Excel, PowerPoint ou LibreOffice, ils ne peuvent pas être ouverts. Un convertisseur propre au programme est en cours de développement : voir « Ce que nous préparons ».",
+                "La reconnaissance de texte nécessite le moteur Tesseract, à installer séparément.",
+                "Le texte du document se modifie une ligne à la fois ; les paragraphes ne se redisposent pas.",
+                "Les images imprimées en quadrichromie (CMJN) ne peuvent pas être sélectionnées et déplacées.",
+                "« Valider » indique si un certificat est révoqué aujourd’hui, mais pas quand il l’a été.",
+                "La signature par certificat fonctionne actuellement sous Windows ; elle sera ajoutée dans une version ultérieure pour Linux et macOS."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

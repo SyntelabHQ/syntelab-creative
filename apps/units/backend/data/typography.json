@@ -1,0 +1,38 @@
+{
+  "id": "typography",
+  "category": "digital",
+  "icon": "font",
+  "base": "point",
+  "startsWith": ["point","pixel-96dpi"],
+  "decimals": 2,
+  "groups": [
+    { "id": "absolute", "color": "#2563eb" },
+    { "id": "traditional", "color": "#9333ea" },
+    { "id": "digital", "color": "#ea580c" }
+  ],
+  "units": [
+    {"id":"point","symbol":"pt","group":"absolute","factor":"1","popular":true},
+    {"id":"pica","symbol":"pc","group":"absolute","factor":"12","popular":true},
+    {"id":"inch","symbol":"in","group":"absolute","factor":"72","popular":true,"decimals":3},
+    {"id":"millimeter","symbol":"mm","group":"absolute","factor":"360/127","popular":true},
+    {"id":"centimeter","symbol":"cm","group":"absolute","factor":"3600/127"},
+    {"id":"meter","symbol":"m","group":"absolute","factor":"360000/127"},
+    {"id":"didot-point","symbol":"dd","group":"traditional","factor":"1.066","popular":true},
+    {"id":"didot-pica","symbol":"cicero","group":"traditional","factor":"12.792"},
+    {"id":"tex-point","symbol":"pt (TeX)","group":"traditional","factor":"0.9963"},
+    {"id":"tex-pica","symbol":"pc (TeX)","group":"traditional","factor":"11.9552"},
+    {"id":"postscript-point","symbol":"bp","group":"traditional","factor":"1","popular":true},
+    {"id":"computer-point","symbol":"pt (72dpi)","group":"traditional","factor":"1"},
+    {"id":"printers-point","symbol":"pt (US)","group":"traditional","factor":"0.9962"},
+    {"id":"twip","symbol":"twip","group":"traditional","factor":"0.05","popular":true},
+    {"id":"pixel-96dpi","symbol":"px (96)","group":"digital","factor":"0.75","popular":true,"decimals":1},
+    {"id":"pixel-72dpi","symbol":"px (72)","group":"digital","factor":"1","popular":true},
+    {"id":"pixel-300dpi","symbol":"px (300)","group":"digital","factor":"0.24"},
+    {"id":"android-dp","symbol":"dp/dip","group":"digital","factor":"0.45","popular":true},
+    {"id":"ios-pt","symbol":"pt (iOS)","group":"digital","factor":"1","popular":true},
+    {"id":"agate","symbol":"agate","group":"traditional","factor":"5.5"},
+    {"id":"Q","symbol":"Q","group":"absolute","factor":"90/127"},
+    {"id":"finger","symbol":"finger","group":"traditional","factor":"63"},
+    {"id":"line","symbol":"line","group":"traditional","factor":"6"}
+  ]
+}

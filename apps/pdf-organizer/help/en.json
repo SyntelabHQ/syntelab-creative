@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Opening and reading",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Opening a document",
+          "body": [
+            "File → Open (Ctrl+O) opens a PDF in a tab of its own. \"Open several files at once\" opens each chosen file in its tab.",
+            "Files that are not PDFs open too, as pages: pictures (PNG, JPEG, TIFF, WebP and many more), text and web files, e-books, XPS, and office documents. Such a document is not saved anywhere yet: \"Save\" asks where.",
+            {
+              "note": "Office documents (Word, Excel, PowerPoint, OpenDocument) are converted by Word, Excel or PowerPoint, or by LibreOffice, whichever is on the computer. Without one of them they cannot be opened."
+            },
+            "Files dropped on an empty tab are gathered in a binder; dropped on a document, their pages are added to it.",
+            "On Windows, PDF Organizer can be the app that opens PDF files when you double-click them: on its start page, \"Make default\" opens the Windows settings, where you choose Syntelab Creative for PDF files."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Looking at the pages",
+          "body": [
+            "The View menu decides how the document is shown; nothing in it changes the file.",
+            {
+              "points": [
+                "Zoom: in, out, actual size, fit the page, fit the width, fit the height. Ctrl and the mouse wheel zoom too.",
+                "Page display: one page or two side by side, with or without a cover page, and scrolling through all pages as one long strip.",
+                "Guides: rulers and a grid, in the unit chosen in Settings.",
+                "\"Show thumbnails\": the small pages on the side. Click one to go to it; the bookmarks of the document are in the same panel.",
+                "\"Read mode\" hides the tools; \"Full screen mode\" hides everything but the page. Escape leaves both."
+              ]
+            },
+            "The strip above the pages (the quick toolbar) has the page number, the zoom and the buttons you chose in Settings."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Finding text",
+          "body": [
+            "Edit → Find in document (Ctrl+F): type a word or a phrase; the places it is found are marked on the pages, and the arrows go from one to the next.",
+            {
+              "note": "A scanned document is pictures of pages and has no text to find until its text is recognized: see \"Recognizing text (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Document properties",
+          "body": [
+            "File → Document properties shows what the document says about itself: title, author, the dates it was made and changed, the number of pages, the size of the file."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Saving, printing and sending",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Save and Save as",
+          "body": [
+            "Nothing you do changes the file on disk until you save. Until then, every step can be undone (Ctrl+Z) and redone (Ctrl+Y).",
+            {
+              "points": [
+                "Save (Ctrl+S) writes the document over its file.",
+                "Save as (Ctrl+Shift+S) writes it to a new file, which then takes the tab's place; the old file stays as it was."
+              ]
+            },
+            "If another program has the file open, it cannot be written over: the program says so and keeps your changes, to be saved under another name.",
+            {
+              "note": "Saving a changed document over a file that is signed with a certificate removes its signatures. The program asks first and offers \"Save as a new file\"; the question can be turned off in Settings → Signatures."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Creating a PDF",
+          "body": [
+            "File → Create a PDF makes a new document:",
+            {
+              "points": [
+                "from one file, or from several: combined into one PDF, or one PDF for each;",
+                "from a web page, at the address you type (the page is saved with the browser installed on the computer);",
+                "from what is on the clipboard;",
+                "from empty pages of the size you choose."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Exporting to another format",
+          "body": [
+            "File → Export writes the document in another format: Word or OpenDocument text, plain text, a web page, XML, pictures of the pages (PNG, JPEG, TIFF, SVG) or PostScript. For pictures you choose the resolution.",
+            "The document itself stays a PDF; the export is a new file.",
+            {
+              "note": "Text can only be exported where the document has text. Recognize the text of a scan first."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Printing",
+          "body": [
+            "File → Print (Ctrl+P) prints the document as it is arranged now, with what you drew on it. Choose the pages, the paper, whether sheets lie upright or sideways, and whether pages are fitted to the sheet or printed at their real size; then the system's print window asks for the printer.",
+            "The paper, orientation and scaling the print window starts with are set in Settings → Printing."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Sharing",
+          "body": [
+            "File → Share hands the document to the \"Share\" window of the system: mail, a nearby device and other apps. The document is shared as it is now, with your unsaved changes."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organizing pages",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "The Organize view",
+          "body": [
+            "Organize → Organize pages shows every page in a grid. Nothing changes on disk until you save.",
+            {
+              "points": [
+                "Select: click a page; Ctrl+click adds one, Shift+click takes a run. \"Select all pages\", \"Select none\", \"Select odd pages\" and \"Select even pages\" are in the menu.",
+                "Move: drag the selected pages to their new place, or use \"Move left\" and \"Move right\".",
+                "Turn: \"Selected: rotate left\" and \"Selected: rotate right\" turn the selected pages; \"All pages: rotate left\" and \"All pages: rotate right\" turn every page.",
+                "Delete: the Delete key, or \"Delete pages\". A document keeps at least one page.",
+                "Copy, cut and paste (Ctrl+C, Ctrl+X, Ctrl+V): pages can be pasted in the same document or in another one open in the program.",
+                "Size: the slider at the top makes the pages larger or smaller; so do Ctrl + mouse wheel over the pages, and Zoom in and Zoom out (Ctrl+= and Ctrl+-). The size is remembered."
+              ]
+            },
+            "The same commands work without the grid, on the page in view."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Extracting pages and splitting a document",
+          "body": [
+            "Organize → Extract pages takes the selected pages out as a new document in its own tab, not saved yet. You can also have each page written as a file of its own, and choose whether the pages are removed from this document.",
+            "Organize → Split document writes the document as several smaller files; this document stays as it is.",
+            "The names of the new documents follow the patterns in Settings → Names of new documents.",
+            {
+              "note": "Signatures made with a certificate are not carried into extracted or split documents: a signature is good only for the file it was made in."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Inserting and replacing pages",
+          "body": [
+            {
+              "points": [
+                "Organize → Insert pages adds the pages of another file (PDF, picture, text, office document) after the selected page, or at the end.",
+                "Organize → Replace pages puts the pages of another file in place of the selected ones.",
+                "Insert → Blank page adds an empty page of the size of its neighbour."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Cropping and resizing pages",
+          "body": [
+            "Edit → Crop pages cuts the edges off pages, by margins you type or drag. Nothing is removed from the file: the pages only show less.",
+            "Edit → Resize pages puts pages on another sheet size (A4, Letter and others). The content can be scaled to fit or kept at its size, and placed at one of nine places on the new sheet.",
+            "Both ask which pages: all, the selected ones, a range, odd or even."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Combining files",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "The binder",
+          "body": [
+            "Combine → New binder opens a place to gather files and write them as one PDF.",
+            {
+              "steps": [
+                "Add files with \"Add files\", or drop them on the binder. PDFs, pictures, text and office documents can be mixed.",
+                "Drag the cards into the order you want, or use the arrows on each card.",
+                "Open a card to choose which of its pages go in.",
+                "\"Combine files\" writes them, in order, as one new document in its own tab."
+              ]
+            },
+            "The files themselves are not changed.",
+            "The slider at the top makes the pages on the cards larger or smaller; so do Ctrl + mouse wheel, and Zoom in and Zoom out (Ctrl+= and Ctrl+-). The size is remembered."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Writing and drawing on pages",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "The tools",
+          "body": [
+            "The drawing tools open as a panel beside the page, as a grid of buttons or as a list with names (Settings decides). With a tool in hand, drag or click on the page; Escape puts the tool down.",
+            {
+              "points": [
+                "Text: click and type. Font, size, colour, bold, italic and alignment are in the panel.",
+                "Image: choose a picture, then drag where it goes and how large.",
+                "Shapes: rectangle, ellipse, line, arrow, tick, cross, dot.",
+                "Highlight: drag over what should stand out; what is under it stays readable."
+              ]
+            },
+            "With \"Select, move and resize\" a mark is picked up again: drag it, pull its corners, turn it by its handle, change its colours in the panel, or delete it with the Delete key. Marks can be copied and pasted, also to other pages.",
+            "Everything drawn is written into the file when you save."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Changing the document's own text and pictures",
+          "body": [
+            "The tool \"Edit the text and pictures of the document\" outlines what the page itself has. Click a line of text to rewrite it, or a picture to move, resize, turn or delete it.",
+            {
+              "note": "This changes one line or one picture at a time. Paragraphs do not flow again when a line gets longer, and a picture that lies over another is picked up together with it. For large changes, edit the document in the program it was written in."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Redacting",
+          "body": [
+            "More tools → Redact removes for good what must not be read: drag a black box over it, on any page. When you save, the text and pictures under the box are taken out of the file, not merely covered.",
+            {
+              "note": "Save the redacted document under a new name and keep the original somewhere safe: what is redacted cannot be brought back."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Watermark",
+          "body": [
+            "Edit → Watermark writes words or puts a picture on the pages you choose: straight or slanted, at one of nine places, as large and as faint as you set. On each page it is then a mark like any other and can still be moved or removed."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Page numbers, header and footer, Bates numbers",
+          "body": [
+            {
+              "points": [
+                "Edit → Page numbers: the format (1, 1 / 12, Page 1 and others), the place, and which pages get one.",
+                "Insert → Header and footer: text at any of six places. In it, {page} stands for the number of the page, {pages} for the number of pages, {date} for today's date and {file} for the name of the document.",
+                "Insert → Bates numbering: numbers one after another with a word before or after (ABC000123), as used for the documents of a case."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Links, bookmarks and attached files",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Links",
+          "body": [
+            "Insert → Link: drag over the place that should be clicked, then say where it leads: a web address, or a page of this document.",
+            "Links of a document work while you read it: a click on a link to a page goes there; a web or mail address is handed to your browser or mail program."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Bookmarks",
+          "body": [
+            "Insert → New bookmark: click the place it should lead to and give it a title. Insert → Bookmarks opens the list, where a bookmark can be renamed or removed. The changes are written when you save."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Attached files",
+          "body": [
+            "Insert → Attach a file: choose a file and click where its paper clip goes. You can give it a name and an author, colour the clip, resize and turn it. The file is kept inside the PDF when you save.",
+            "Insert → Attached files lists what the document carries; each file can be saved to disk or taken out. A click on a paper clip opens the same list."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Filling in a form",
+          "body": [
+            "Insert → Fill in form shows the fields of the document: type in text fields, tick boxes, choose from lists. The answers are written into the file when you save."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Making a form",
+          "body": [
+            "The Insert menu adds fields to any document: a text field, a check box, radio buttons (of which one can be chosen), a list to choose from, and a signature field left empty for a signer.",
+            "Drag on the page where the field goes. Like other marks, a field can be moved and resized until you save; after that it is part of the form."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Signing",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Adding a signature you draw",
+          "body": [
+            "Sign → Add signature puts the picture of a signature on the page: drawn here with a pen you choose, typed in a font, or taken from a picture (with \"Keep the pen strokes only\" for a photo of a signed sheet). The date can be written under it.",
+            "Drag on the page where it goes. Signatures you used are kept on this computer, to be used again.",
+            {
+              "note": "This is a picture: it says nothing certain about who put it there. A signature that proves who signed, and that nothing changed since, is made with a certificate."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Signing with a certificate",
+          "body": [
+            "Sign → Sign with certificate makes a digital signature: it says who signed and seals the document, so any later change shows.",
+            {
+              "steps": [
+                "Drag on the page the area where the signature shows (a window says so first; it can be turned off). To sign without anything on the pages, choose \"Sign without showing it on a page\" instead.",
+                "Choose the certificate: one of the computer's (a card or a token shows among them once it is in its reader), or a .pfx / .p12 file with its password. \"Continue\".",
+                "Choose the appearance of the signature. Under \"Reason and place\" you can write why and where you sign: they go into the signature, and onto the page if the appearance shows them. Tick \"Lock the document after signing\" if no one should sign or change it after you. Leave \"Add a trusted time (time stamp)\" ticked so that an authority confirms when you signed.",
+                "\"Sign\", then choose where the signed file is saved. A token asks for its PIN at this point."
+              ]
+            },
+            "The signed file opens in place of the document. A password or a PIN is never kept by the program.",
+            {
+              "note": "A qualified signature is one made this way with a qualified certificate, on its card or token. Signing is done on your computer; only the time stamp and the check of your certificate go online, and they send fingerprints and the certificate’s serial number, never the document."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Signature appearances",
+          "body": [
+            "An appearance says how a certificate signature looks on the page. Keep several under names of your own: one for signing for a company, one for signing in your own name.",
+            {
+              "points": [
+                "Picture: none, from a file (a stamp, a scanned signature) or drawn here.",
+                "Text shown: name, date, reason, place, each with or without its label.",
+                "Lines of your own under the name, such as a role and a company.",
+                "\"Standard text\" is always there: who signed and when."
+              ]
+            },
+            "In the signing window: \"New…\", \"Edit…\", \"Delete\". The last one used is offered first. Appearances are kept on this computer."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Several signatures, and locking",
+          "body": [
+            "A document can be signed by several people, one after another. Open the signed file and sign it without changing anything: your signature is added to the end of the file and the earlier ones stay good.",
+            "\"Lock the document after signing\" (off unless you tick it) closes the document: no one can sign after you and nothing more may be changed. It cannot be undone.",
+            {
+              "note": "If you change a signed document before signing it again, it has to be written anew and the earlier signatures are left out. The signing window warns you: to keep them, open the file again and sign without changing anything."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Time stamps",
+          "body": [
+            "A time stamp is a time-stamping authority's signed word on when something was. The time in a signature otherwise comes from the clock of the signer's computer, which anyone can set; a time stamp proves the moment, and keeps the signature provable after the certificate expires (PAdES B-T).",
+            {
+              "points": [
+                "Signatures get one when \"Add a trusted time (time stamp)\" is ticked in the signing window. Settings → Signatures says whether it starts ticked, here and in batch processing.",
+                "Sign → Add timestamp gives the whole document a time stamp of its own, without a certificate: it proves the document was, exactly as it is, at that moment. It is saved as a new file; signatures the file has stay good."
+              ]
+            },
+            "The authority is DigiCert's (http://timestamp.digicert.com), free and trusted by Adobe Reader and Windows; another can be set in Settings → Signatures. It receives only a fingerprint (SHA-256), never the document, and an internet connection is needed. When a signature gets a time stamp, the issuer of your certificate is also asked whether the certificate is still valid, and its answer is kept in the signature (long-term validation): Adobe Reader can then show the signature as valid, now and after the certificate expires.",
+            {
+              "note": "If the authority cannot be reached, nothing is signed or written: try again, or untick the time stamp to sign without it."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Checking signatures",
+          "body": [
+            "Sign → Verify signatures lists every certificate signature of the file: who signed, who issued the certificate, when, the reason and place, and",
+            {
+              "points": [
+                "whether the document is unchanged since that signature (another signature added afterwards does not count as a change);",
+                "whether the signature locks the document;",
+                "whether this computer trusts the authority behind the certificate, and whether the certificate is valid today;",
+                "the time confirmed by its time stamp, and by which authority, when it has one. A time stamp of the whole document is listed too, with its own check."
+              ]
+            },
+            "The check is of the file as it was last saved and is done on this computer, without going online. Clicking a signature on a page opens this list at it. Under each signature, Show certificate opens the Windows window of the certificate (its chain and every detail; from there, Install Certificate makes this computer trust a certificate you know), and Validate asks the issuer of the certificate online, only when you press it, whether the certificate has been revoked."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "More tools",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Recognizing text (OCR)",
+          "body": [
+            "More tools → Recognize text (OCR) reads the words of scanned pages and writes them into the pages unseen, so the document can be searched and its text copied and exported. What the pages look like does not change.",
+            "Tick only the languages the pages are written in; pages that already have text are left as they are.",
+            {
+              "note": "Reading is done by the Tesseract engine, a free program installed apart. Without it, the window shows the command that installs it on Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Making a document smaller",
+          "body": [
+            "More tools → Compress saves the document as a smaller file by giving its photographs and scans fewer pixels. Three strengths; text and drawings stay as sharp as they are. A document with few pictures gains little."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Comparing two documents",
+          "body": [
+            "More tools → Compare documents: choose another PDF. The two are shown side by side, page by page, with the pages whose text differs marked and the lines each has alone listed."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Batch processing: many files at once",
+          "body": [
+            "More tools → Batch processing does the same things to many files, in a tab of its own. Each result is a new file. If results would take the place of files already in the folder (your own files, when they go to their folder with nothing added to their names), you are first asked whether to replace them, skip them, or cancel. A file is replaced only once its result is complete; one that is open (in a tab here or in another program) is left as it is and marked as not done.",
+            {
+              "steps": [
+                "On the left, add the files: \"Add files\", \"Add a folder\" (with the folders under it), or drop them in.",
+                "On the right, tick what to do. Every file becomes a PDF in any case; besides that you can turn pages, recognize text, add a header and footer, a watermark or page numbers, make files smaller, sign them with a certificate, or write them out in another format. The numbers show the order.",
+                "Choose what is written: a file for each one, or everything in one PDF (in the order of the list), and the folder the results go to. When all the files come from one folder, that folder is chosen for you until you choose another; otherwise it is the last folder you chose.",
+                "\"Start\". Each file shows how it went; the run can be stopped between files."
+              ]
+            },
+            {
+              "points": [
+                "Recipes: \"Save as a recipe\" keeps everything you chose (except the files and any password) under a name, to be set again with one choice.",
+                "\"Keep the folders of the files in the results\" rebuilds the folders of an added folder.",
+                "\"Write a report of the run\" leaves a text file beside the results saying what was written and what failed.",
+                "A PDF that is only signed keeps the signatures it has; if anything else is done to it in the same run, it is written anew and they are left out."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Settings",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "The settings of PDF Organizer",
+          "body": [
+            "File → Settings (or Settings on the side bar, then PDF Organizer). Each setting can be put back on its own, or all at once.",
+            {
+              "points": [
+                "When a document opens: how large a document is shown when it opens, scrolling or one page at a time, thumbnails shown or not.",
+                "Units, rulers and grid: the unit (millimetres, inches, points), rulers, the grid and its spacing.",
+                "Printing: the paper, orientation and scaling the print window starts with.",
+                "Quick toolbar: which buttons the strip above the pages has.",
+                "Names of new documents: the patterns for extracted pages, new documents and the PDF that batch processing gathers many files in.",
+                "Signatures: whether \"Save\" asks before writing over a signed file.",
+                "Keyboard shortcuts: click the keys of a command, then press the new ones."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "About PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "About PDF Organizer",
+          "body": [
+            "PDF Organizer is the PDF app of Syntelab Creative: it reads PDF documents, arranges and combines their pages, writes and draws on them, fills in and makes forms, signs with a certificate and checks signatures, and does the same things to many files at once.",
+            "It is new, and some of what it does is a first step. Where it falls short for your documents, tell us through Help → Feedback: that is how we know what to work on."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "What PDF Organizer is built with",
+          "body": [
+            {
+              "points": [
+                "Reading, drawing and writing PDF: MuPDF.",
+                "Recognizing text (OCR): Tesseract, when it is installed on the computer.",
+                "Opening office documents: Word, Excel and PowerPoint, or LibreOffice, whichever is installed.",
+                "Saving a web page as a PDF: the browser installed on the computer.",
+                "Signing with a certificate: the certificate services of Windows; signatures are written the way the PAdES standard asks."
+              ]
+            },
+            "What it shares with the rest of the program is under \"About Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "What PDF Organizer cannot do yet",
+          "body": [
+            {
+              "points": [
+                "Office documents are opened by the office suite on the computer; without Word, Excel, PowerPoint or LibreOffice they cannot be opened. A converter of our own is being worked on: see \"What we are working on\".",
+                "Recognizing text needs the Tesseract engine, installed apart.",
+                "The text of a document itself is changed one line at a time; paragraphs do not flow again.",
+                "Pictures printed in four inks (CMYK) cannot be picked up to be moved.",
+                "Validate tells whether a certificate is revoked today, not when it was revoked.",
+                "Signing with a certificate works on Windows for now; on Linux and macOS it will come in a later version."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

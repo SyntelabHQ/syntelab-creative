@@ -1,0 +1,129 @@
+/* Two texts side by side: a number and a line for each side, in the letters code is written in. */
+.sides {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  background: var(--sc-surface);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.rows {
+  display: grid;
+  /* A number and a text for each side: the two texts share the room equally. */
+  grid-template-columns: max-content minmax(0, 1fr) max-content minmax(0, 1fr);
+}
+
+/* Lines that are not broken make each side as wide as its longest line: the pane is scrolled sideways. */
+.sides[data-wrap='false'] .rows {
+  grid-template-columns: max-content minmax(max-content, 1fr) max-content minmax(max-content, 1fr);
+}
+
+.row,
+.skipped {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+}
+
+.number {
+  padding-inline: 10px 8px;
+  border-inline-end: 1px solid var(--sc-border);
+  color: var(--sc-muted);
+  font-size: 12px;
+  text-align: end;
+  user-select: none;
+}
+
+.text {
+  min-width: 0;
+  padding-inline: 4px 12px;
+  border-inline-end: 1px solid var(--sc-border);
+  color: var(--sc-text);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.sides[data-wrap='false'] .text {
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+.sign {
+  display: inline-block;
+  width: 14px;
+  color: var(--sc-muted);
+  user-select: none;
+}
+
+/* What was taken out, on the left; what was put in, on the right. */
+.text[data-kind='removed'],
+.number[data-kind='removed'],
+.text[data-kind='changed'],
+.number[data-kind='changed'] {
+  background: color-mix(in srgb, var(--sc-danger) 14%, var(--sc-surface));
+}
+
+.text[data-kind='added'],
+.number[data-kind='added'],
+.text[data-kind='changed-new'],
+.number[data-kind='changed-new'] {
+  background: color-mix(in srgb, var(--sc-action-support) 16%, var(--sc-surface));
+}
+
+/* The side that has no line where the other has one. */
+.text[data-kind='none'],
+.number[data-kind='none'] {
+  background: var(--sc-bg);
+}
+
+/* The words only this side has, inside a line that was changed. */
+.text mark {
+  border-radius: var(--sc-radius-xs);
+  color: inherit;
+}
+
+.text[data-kind='changed'] mark {
+  background: color-mix(in srgb, var(--sc-danger) 38%, var(--sc-surface));
+}
+
+.text[data-kind='changed-new'] mark {
+  background: color-mix(in srgb, var(--sc-action-support) 40%, var(--sc-surface));
+}
+
+.skipped {
+  display: block;
+  padding: 2px 12px;
+  border-block: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  color: var(--sc-muted);
+  font-family: var(--sc-font, system-ui);
+  font-size: 12px;
+  text-align: center;
+}
+
+.more {
+  display: block;
+  margin: 10px auto;
+  min-height: 28px;
+  padding: 0 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  font-family: var(--sc-font, system-ui);
+  cursor: pointer;
+}
+
+.note {
+  margin: 0;
+  padding: 14px 16px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.note[data-problem='true'] {
+  color: var(--sc-danger);
+}

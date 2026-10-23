@@ -1,0 +1,265 @@
+/* The first page of Units: one value, from a unit to another. In the letters of the program. */
+.page {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  background: var(--sc-bg);
+  font-family: var(--sc-font, system-ui);
+  font-size: 14px;
+  text-align: start;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 1040px;
+  margin-inline: auto;
+  padding: 28px 28px 40px;
+}
+
+.title {
+  margin: 0 0 4px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* The converters it has a tab for: one row, turned sideways with the wheel when they do not fit. */
+.tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tab {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 6px 14px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.tab:hover:not(:disabled) {
+  border-color: var(--sc-accent);
+}
+
+.tab[aria-selected='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent);
+  color: var(--sc-accent-text);
+  font-weight: 600;
+}
+
+.tab:disabled {
+  color: var(--sc-muted);
+  cursor: default;
+  opacity: 0.6;
+}
+
+/* The two sides, with the button that changes their places between them. */
+.work {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.label {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.label strong {
+  color: var(--sc-text);
+  font-weight: 600;
+}
+
+/* The value typed, and the value it comes to: the same box on both sides. */
+.box {
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-bg);
+}
+
+.box:focus-within {
+  border-color: var(--sc-accent);
+}
+
+.box[data-result='true'] {
+  background: var(--sc-accent-soft);
+}
+
+.value {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 14px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 22px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+output.value {
+  user-select: text;
+}
+
+.value[data-empty='true'] {
+  color: var(--sc-muted);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.inBox {
+  flex: none;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  margin-inline-end: 8px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.inBox:hover {
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+}
+
+.swap {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  margin-block-start: 44px;
+  place-items: center;
+  border: 1px solid var(--sc-border);
+  border-radius: 50%;
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  cursor: pointer;
+  transition:
+    border-color 0.12s ease,
+    rotate 0.25s ease;
+}
+
+.swap:hover {
+  border-color: var(--sc-accent);
+  color: var(--sc-accent);
+}
+
+.swap:active {
+  rotate: 180deg;
+}
+
+.problem,
+.note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 13px;
+}
+
+.problem {
+  color: var(--sc-danger);
+}
+
+.note {
+  color: var(--sc-muted);
+}
+
+.rates {
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  overflow: hidden;
+}
+
+.rates > div {
+  border-block-start: 0;
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.footNote {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+/* Narrow: one side under the other. */
+@media (max-width: 760px) {
+  .work {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .swap {
+    margin-block-start: 0;
+    justify-self: center;
+    rotate: 90deg;
+  }
+}
+
+/* A light bar to scroll with: slim, no arrows, and only as dark as it needs to be seen. */
+.page::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.page::-webkit-scrollbar-track,
+.page::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.page::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: var(--sc-radius-pill);
+  background: color-mix(in srgb, var(--sc-muted) 40%, transparent);
+  background-clip: content-box;
+}
+
+.page:hover::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--sc-muted) 70%, transparent);
+  background-clip: content-box;
+}
+
+.page::-webkit-scrollbar-thumb:hover,
+.page::-webkit-scrollbar-thumb:active {
+  border-width: 1px;
+  background: var(--sc-muted);
+  background-clip: content-box;
+}

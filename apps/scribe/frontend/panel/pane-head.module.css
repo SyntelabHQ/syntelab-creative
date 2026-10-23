@@ -1,0 +1,82 @@
+/* The head of a pane, in the letters of the program whatever the text is written in. Two lines, each of a fixed height. */
+.head {
+  flex: none;
+  min-width: 0;
+  overflow: hidden;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  container-type: inline-size;
+  font-family: var(--sc-font, system-ui);
+  font-size: 13px;
+}
+
+.names {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  padding-inline: 14px 4px;
+  overflow: hidden;
+}
+
+/* A narrow pane keeps its name and its main buttons: what it is of goes first, then the buttons fewer people need. */
+@container (width < 330px) {
+  .of {
+    display: none;
+  }
+}
+
+@container (width < 250px) {
+  .action[data-minor='true'] {
+    display: none;
+  }
+}
+
+.title {
+  flex: none;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.of {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--sc-muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actions {
+  display: inline-flex;
+  flex: none;
+  gap: 0;
+  margin-inline-start: auto;
+}
+
+.action {
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  min-height: 28px;
+  padding: 0;
+}
+
+.action[aria-pressed='true'] {
+  background: var(--sc-accent-soft);
+  color: var(--sc-accent);
+}
+
+/* One line, never two: what does not fit is cut, so the text under it does not move. */
+.facts {
+  display: flex;
+  align-items: center;
+  gap: 6px 8px;
+  height: 28px;
+  padding-inline: 14px;
+  overflow: hidden;
+  border-block-start: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+  white-space: nowrap;
+}

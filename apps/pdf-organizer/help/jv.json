@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Mbukak lan maca",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Mbukak dokumen",
+          "body": [
+            "Berkas → Bukak (Ctrl+O) mbukak PDF ing tab dhewe. \"Bukak sawetara berkas bebarengan…\" mbukak saben berkas sing dipilih ing tab dhewe-dhewe.",
+            "Berkas sing dudu PDF uga bisa dibukak minangka kaca: gambar (PNG, JPEG, TIFF, WebP lan liyane), berkas teks lan web, e-book, XPS, lan dokumen kantor. Dokumen kaya ngono durung disimpen ing ngendi-endi: \"Simpen\" bakal takon ing ngendi arep disimpen.",
+            {
+              "note": "Dokumen kantor (Word, Excel, PowerPoint, OpenDocument) diowahi dening Word, Excel utawa PowerPoint, utawa dening LibreOffice, gumantung apa sing ana ing komputer. Tanpa salah sijine, dokumen kasebut ora bisa dibukak."
+            },
+            "Berkas sing diseleh ing tab kosong bakal dikumpulake ing bendhel; yen diseleh ing dokumen, kacane bakal ditambahake menyang dokumen kasebut.",
+            "Ing Windows, PDF Organizer bisa dadi aplikasi sing mbukak berkas PDF nalika diklik kaping pindho: ing kaca wiwitané, \"Dadekake standar\" mbukak setelan Windows, ing kono sampeyan milih Syntelab Creative kanggo berkas PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Ndeleng kaca",
+          "body": [
+            "Menu Tampilan nemtokake kepiye dokumen katon; ora ana ing menu iki sing ngowahi berkas.",
+            {
+              "points": [
+                "Ukuran tampilan: gedhekake, cilikake, ukuran asli, pasake kaca, pasake lebar, pasake dhuwur. Ctrl lan rodha mouse uga bisa nggedhekake lan nyilikake.",
+                "Tampilan kaca: siji kaca utawa loro jejer, nganggo utawa tanpa kaca ngarep, lan nggulung kabeh kaca minangka siji jalur dawa.",
+                "Pandhuan: penggaris lan kisi, nganggo satuan sing dipilih ing Setelan.",
+                "\"Tampilake gambar cilik kaca\": kaca-kaca cilik ing sisih. Klik siji kanggo menyang kono; tetenger dokumen ana ing panel sing padha.",
+                "\"Mode maca\" ndhelikake piranti; \"Mode layar kebak\" ndhelikake kabeh kajaba kaca. Esc kanggo metu saka loro-lorone."
+              ]
+            },
+            "Jalur ing ndhuwur kaca (bilah piranti cepet) isine nomer kaca, ukuran tampilan, lan tombol sing sampeyan pilih ing Setelan."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Nggoleki teks",
+          "body": [
+            "Owahi → Goleki ing dokumen (Ctrl+F): ketik tembung utawa ukara; panggonan sing ditemokake bakal ditandhani ing kaca, lan panah nggawa saka siji menyang sabanjure.",
+            {
+              "note": "Dokumen sing dipindai iku wujude gambar kaca lan ora ana teks sing bisa digoleki nganti tekse dikenali: delengen \"Ngenali teks (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Properti dokumen",
+          "body": [
+            "Berkas → Properti dokumen nuduhake apa sing dicritakake dokumen bab awake dhewe: judhul, panulis, tanggal digawe lan diowahi, cacah kaca, lan ukuran berkas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nyimpen, nyithak lan ngirim",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Simpen lan Simpen minangka",
+          "body": [
+            "Apa wae sing sampeyan lakoni ora ngowahi berkas ing disk nganti sampeyan nyimpen. Sadurunge iku, saben langkah bisa diwurungake (Ctrl+Z) lan dibaleni (Ctrl+Y).",
+            {
+              "points": [
+                "Simpen (Ctrl+S) nulis dokumen ing berkase dhewe.",
+                "Simpen minangka (Ctrl+Shift+S) nulis dokumen menyang berkas anyar, sing banjur nggenteni panggonan tab; berkas lawas tetep kaya asline."
+              ]
+            },
+            "Yen ana program liyane sing mbukak berkas kasebut, berkas ora bisa ditimpa: program bakal menehi weruh lan tetep nyimpen owahan sampeyan, supaya bisa disimpen nganggo jeneng liyane.",
+            {
+              "note": "Nyimpen dokumen sing wis diowahi ing berkas sing wis ditandatangani nganggo sertifikat bakal mbusak tanda tangane. Program bakal takon dhisik lan nawakake \"Simpen minangka berkas anyar…\"; pitakon iki bisa dipateni ing Setelan → Tanda tangan."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Nggawe PDF",
+          "body": [
+            "Berkas → Gawe PDF nggawe dokumen anyar:",
+            {
+              "points": [
+                "saka siji berkas, utawa saka pirang-pirang berkas: digabung dadi siji PDF, utawa siji PDF kanggo saben berkas;",
+                "saka kaca web, ing alamat sing sampeyan ketik (kaca kasebut disimpen nganggo browser sing dipasang ing komputer);",
+                "saka apa sing ana ing papan klip;",
+                "saka kaca kosong kanthi ukuran sing sampeyan pilih."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Ekspor menyang format liyane",
+          "body": [
+            "Berkas → Ekspor nulis dokumen ing format liyane: teks Word utawa OpenDocument, teks polos, kaca web, XML, gambar kaca (PNG, JPEG, TIFF, SVG) utawa PostScript. Kanggo gambar, sampeyan milih resolusine.",
+            "Dokumen kasebut tetep dadi PDF; asil ekspor yaiku berkas anyar.",
+            {
+              "note": "Teks mung bisa diekspor ing bagean dokumen sing pancen ana tekse. Kenali teks saka asil pindai dhisik."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Nyithak",
+          "body": [
+            "Berkas → Cetak (Ctrl+P) nyithak dokumen kaya sing wis ditata saiki, kalebu apa sing wis sampeyan gambar. Pilih kaca, kertas, apa lembarane jejeg utawa miring, lan apa kacane dipasake karo lembaran utawa dicithak nganggo ukuran asline; banjur jendhela cetak sistem bakal takon printere.",
+            "Kertas, orientasi, lan skala wiwitan jendhela cetak diatur ing Setelan → Nyithak."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Mbagi",
+          "body": [
+            "Berkas → Bagi ngirim dokumen menyang jendhela \"Bagi\" sistem: email, piranti sing cedhak, lan aplikasi liyane. Dokumen dibagi kaya kahanane saiki, kalebu owahan sing durung disimpen."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ngatur kaca",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Tampilan Atur kaca",
+          "body": [
+            "Atur → Atur kaca nuduhake saben kaca ing kisi. Ora ana sing owah ing disk nganti sampeyan nyimpen.",
+            {
+              "points": [
+                "Milih: klik kaca; Ctrl+klik nambahake siji, Shift+klik milih sarentetan. \"Pilih kabeh kaca\", \"Aja pilih apa-apa\", \"Pilih kaca ganjil\" lan \"Pilih kaca genep\" ana ing menu.",
+                "Mindhah: seret kaca sing dipilih menyang panggonan anyar, utawa gunakake \"Pindah kiwa\" lan \"Pindah tengen\".",
+                "Muter: \"Sing dipilih: puter kiwa\" lan \"Sing dipilih: puter tengen\" muter kaca sing dipilih; \"Kabeh kaca: puter ngiwa\" lan \"Kabeh kaca: puter nengen\" muter saben kaca.",
+                "Mbusak: tombol Delete, utawa \"Busak kaca\". Dokumen tansah duwe paling sithik siji kaca.",
+                "Salin, potong lan tempel (Ctrl+C, Ctrl+X, Ctrl+V): kaca bisa ditempel ing dokumen sing padha utawa ing dokumen liyane sing dibukak ing program.",
+                "Ukuran: panggeser ing sisih ndhuwur nggedhekake utawa nyilikake kaca; semono uga Ctrl + roda mouse ing ndhuwur kaca, lan \"Gedhekake\" lan \"Cilikake\" (Ctrl+= lan Ctrl+-). Ukurane bakal dieling."
+              ]
+            },
+            "Perintah sing padha uga bisa digunakake tanpa kisi, ing kaca sing katon."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Njupuk kaca lan misah dokumen",
+          "body": [
+            "Atur → Jupuk kaca njupuk kaca sing dipilih dadi dokumen anyar ing tab dhewe, durung disimpen. Sampeyan uga bisa nggawe saben kaca dadi berkas dhewe, lan milih apa kaca-kaca kasebut dibusak saka dokumen iki.",
+            "Atur → Pisah dokumen nulis dokumen dadi sawetara berkas sing luwih cilik; dokumen iki tetep kaya asline.",
+            "Jeneng dokumen anyar manut pola ing Setelan → Jeneng dokumen anyar.",
+            {
+              "note": "Tanda tangan sing digawe nganggo sertifikat ora bakal kalebu ing dokumen sing diekstrak utawa dipisah: tanda tangan mung sah kanggo berkas panggonane digawe."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Nglebokake lan ngganti kaca",
+          "body": [
+            {
+              "points": [
+                "Atur → Lebokake kaca nambahake kaca saka berkas liyane (PDF, gambar, teks, dokumen kantor) sawise kaca sing dipilih, utawa ing pungkasan.",
+                "Atur → Ganti kaca nyelehake kaca saka berkas liyane ing panggonan kaca sing dipilih.",
+                "Lebokake → Kaca kosong nambahake kaca kosong kanthi ukuran sing padha karo kaca ing sandhinge."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Motong lan ngowahi ukuran kaca",
+          "body": [
+            "Owahi → Potong kaca motong pinggiran kaca, nganggo margin sing diketik utawa diseret. Ora ana sing dibusak saka berkas: kaca mung nuduhake bagean sing luwih sithik.",
+            "Owahi → Ubah ukuran kaca nyelehake kaca ing ukuran lembaran liyane (A4, Letter lan liyane). Isine bisa disesuaiake supaya pas utawa dijaga ukurane, lan diselehake ing salah siji saka sanga panggonan ing lembaran anyar.",
+            "Loro-lorone takon kaca endi: kabeh, sing dipilih, rentang tartamtu, ganjil utawa genep."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nggabungake berkas",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Bendhel",
+          "body": [
+            "Gabungake → Bendhel anyar mbukak panggonan kanggo ngumpulake berkas lan nulis dadi siji PDF.",
+            {
+              "steps": [
+                "Tambahake berkas nganggo \"Tambah berkas…\", utawa seleh berkas ing bendhel. PDF, gambar, teks lan dokumen kantor bisa dicampur.",
+                "Seret kertu-kertu manut urutan sing dikarepake, utawa gunakake panah ing saben kertu.",
+                "Bukak kertu kanggo milih kaca endi sing arep dilebokake.",
+                "\"Gabungake berkas\" nulis berkas-berkas kasebut, manut urutane, dadi siji dokumen anyar ing tab dhewe."
+              ]
+            },
+            "Berkas asline ora owah.",
+            "Panggeser ing sisih ndhuwur nggedhekake utawa nyilikake kaca ing kertu-kertu; semono uga Ctrl + roda mouse, lan \"Gedhekake\" lan \"Cilikake\" (Ctrl+= lan Ctrl+-). Ukurane bakal dieling."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nulis lan nggambar ing kaca",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Piranti",
+          "body": [
+            "Piranti gambar mbukak minangka panel ing sandhinge kaca, minangka kisi tombol utawa minangka dhaptar kanthi jeneng (ditemtokake ing Setelan). Nalika nyekel piranti, seret utawa klik ing kaca; Esc kanggo nyelehake piranti.",
+            {
+              "points": [
+                "Teks: klik lan ketik. Font, ukuran, werna, kandel, miring lan perataan ana ing panel.",
+                "Gambar: pilih gambar, banjur seret menyang panggonane lan atur ukurane.",
+                "Bentuk: kothak, elips, garis, panah, centhang, silang, titik.",
+                "Sorot: seret ing bagean sing kudu ditonjolake; apa sing ana ing ngisore tetep bisa diwaca."
+              ]
+            },
+            "Kanthi \"Pilih, pindhah lan owahi ukuran\" tandha bisa dicekel maneh: seret, tarik pojokane, puter nganggo gagange, ganti wernane ing panel, utawa busak nganggo tombol Delete. Tandha bisa disalin lan ditempel, uga menyang kaca liyane.",
+            "Kabeh sing digambar bakal ditulis ing berkas nalika sampeyan nyimpen."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Ngowahi teks lan gambar dokumen",
+          "body": [
+            "Piranti \"Owahi teks lan gambar dokumen\" menehi garis wates ing apa sing diduweni kaca dhewe. Klik baris teks kanggo nulis ulang, utawa gambar kanggo mindhah, ngowahi ukuran, muter utawa mbusak.",
+            {
+              "note": "Iki ngowahi siji baris utawa siji gambar sakwayah. Paragraf ora bakal mili maneh nalika baris dadi luwih dawa, lan gambar sing ana ing ndhuwur gambar liyane bakal kejupuk bebarengan. Kanggo owahan sing gedhe, owahi dokumen ing program sing digunakake kanggo nulis dokumen kasebut."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Nyensor",
+          "body": [
+            "Piranti liyane → Sensor mbusak saklawase apa sing ora oleh diwaca: seret kothak ireng ing ndhuwure, ing kaca endi wae. Nalika sampeyan nyimpen, teks lan gambar ing ngisor kothak kasebut bakal dibusak saka berkas, ora mung ditutupi.",
+            {
+              "note": "Simpen dokumen sing wis disensor nganggo jeneng anyar lan simpen dokumen asline ing panggonan sing aman: apa sing wis disensor ora bisa dibalekake."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Tandha banyu",
+          "body": [
+            "Owahi → Tandha banyu nulis tembung utawa masang gambar ing kaca sing sampeyan pilih: jejeg utawa miring, ing salah siji saka sanga panggonan, sagedhe lan samar kaya sing sampeyan atur. Ing saben kaca, iki banjur dadi tandha kaya liyane lan isih bisa dipindhah utawa dibusak."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Nomer kaca, header lan footer, nomer Bates",
+          "body": [
+            {
+              "points": [
+                "Owahi → Nomer kaca: format (1, 1 / 12, Kaca 1 lan liyane), panggonan, lan kaca endi wae sing entuk nomer.",
+                "Lebokake → Header lan footer: teks ing salah siji saka enem panggonan. Ing kono, {page} kanggo nomer kaca, {pages} kanggo cacah kaca, {date} kanggo tanggal dina iki lan {file} kanggo jeneng dokumen.",
+                "Lebokake → Penomoran Bates: nomer urut kanthi tembung ing ngarep utawa ing mburi (ABC000123), kaya sing digunakake kanggo dokumen perkara."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pranala, tetenger lan berkas lampiran",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Pranala",
+          "body": [
+            "Lebokake → Pranala: seret ing panggonan sing kudu diklik, banjur tentokake tujuane: alamat web, utawa kaca ing dokumen iki.",
+            "Pranala ing dokumen bisa digunakake nalika sampeyan maca: klik ing pranala menyang kaca bakal nggawa mrono; alamat web utawa email diterusake menyang browser utawa program email sampeyan."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Tetenger",
+          "body": [
+            "Lebokake → Tetenger anyar: klik panggonan sing kudu dituju lan wenehi judhul. Lebokake → Tetenger mbukak dhaptar, ing ngendi tetenger bisa diganti jenenge utawa dibusak. Owahan ditulis nalika sampeyan nyimpen."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Berkas lampiran",
+          "body": [
+            "Lebokake → Lampirake berkas: pilih berkas lan klik ing panggonan klip kertase. Sampeyan bisa menehi jeneng lan panulis, menehi werna klip, ngowahi ukuran lan muter klip kasebut. Berkas kasebut bakal tetep ana ing njero PDF nalika sampeyan nyimpen.",
+            "Lebokake → Berkas lampiran nuduhake apa wae sing digawa dokumen; saben berkas bisa disimpen menyang disk utawa dibusak. Klik ing klip kertas mbukak dhaptar sing padha."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formulir",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Ngisi formulir",
+          "body": [
+            "Lebokake → Isi formulir nuduhake kolom-kolom ing dokumen: ketik ing kolom teks, centhang kothak, pilih saka dhaptar. Jawaban bakal ditulis ing berkas nalika sampeyan nyimpen."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Gawe formulir",
+          "body": [
+            "Menu Lebokake nambahake kolom menyang dokumen apa wae: kolom teks, kothak centhang, tombol radio (sing mung bisa dipilih siji), dhaptar pilihan, lan kolom tanda tangan sing dikosongake kanggo sing nandatangani.",
+            "Seret ing kaca ing panggonan kolom kasebut. Kaya tandha liyane, kolom bisa dipindah lan diowahi ukurane nganti sampeyan nyimpen; sawise iku, kolom kasebut dadi bagean saka formulir."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tanda tangan",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Nambahake tanda tangan sing digambar",
+          "body": [
+            "Tanda tangan → Tambah tanda tangan masang gambar tanda tangan ing kaca: digambar ing kene nganggo pulpen sing sampeyan pilih, diketik nganggo font, utawa dijupuk saka gambar (nganggo \"Simpen coretan pulpen wae, tanpa kertas ing mburine\" kanggo foto kertas sing wis ditandatangani). Tanggal bisa ditulis ing ngisore.",
+            "Seret menyang kaca panggonane. Tanda tangan sing wis digunakake bakal disimpen ing komputer iki, supaya bisa digunakake maneh.",
+            {
+              "note": "Iki awujud gambar: ora bisa mesthekake sapa sing masang. Tanda tangan sing bisa mbuktekake sapa sing nandatangani, lan ora ana sing owah wiwit kuwi, digawe nganggo sertifikat."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Nandatangani nganggo sertifikat",
+          "body": [
+            "Tanda tangan → Tanda tangan nganggo sertifikat nggawe tanda tangan digital: iki nuduhake sapa sing nandatangani lan nyegel dokumen, saengga owah-owahan sabanjure bakal katon.",
+            {
+              "steps": [
+                "Seret area ing kaca panggonan tanda tangan bakal katon (dhisik ana jendhela sing ngandhani; iki bisa dipateni). Kanggo nandatangani tanpa ana apa-apa ing kaca, pilih \"Tanda tangan tanpa nampilake ing kaca\".",
+                "Pilih sertifikat: salah siji saka komputer (kertu utawa token bakal katon ing antarane yen wis ana ing pamacane), utawa berkas .pfx / .p12 karo sandhine. \"Terusake\".",
+                "Pilih tampilan tanda tangan. Ing \"Alesan lan panggonan\" sampeyan bisa nulis alesan lan panggonan nandatangani: informasi iki mlebu ing tanda tangan, lan ing kaca yen tampilane nuduhake. Centhang \"Kunci dokumen sawise ditandatangani\" yen ora ana wong liya sing oleh nandatangani utawa ngowahi sawise sampeyan. Jarna \"Tambah wektu sing dipercaya (stempel wektu)\" tetep dicenthang supaya otoritas negesake kapan sampeyan nandatangani.",
+                "\"Tanda tangan\", banjur pilih panggonan kanggo nyimpen berkas sing wis ditandatangani. Token bakal njaluk PIN ing tahap iki."
+              ]
+            },
+            "Berkas sing wis ditandatangani bakal mbukak ngganti dokumen kasebut. Sandhi utawa PIN ora tau disimpen dening program.",
+            {
+              "note": "Tanda tangan kualifikasi yaiku tanda tangan sing digawe kanthi cara iki nganggo sertifikat kualifikasi, ing kertu utawa tokene. Proses nandatangani dilakoni ing komputer sampeyan; mung stempel wektu lan pamriksan sertifikat sampeyan sing mlebu internet, lan sing dikirim mung sidik jari digital lan nomer seri sertifikat, dudu dokumene."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Tampilan tanda tangan",
+          "body": [
+            "Tampilan nuduhake kepiye wujude tanda tangan sertifikat ing kaca. Simpen sawetara tampilan nganggo jeneng sampeyan dhewe: siji kanggo nandatangani atas nama perusahaan, siji kanggo nandatangani nganggo jeneng dhewe.",
+            {
+              "points": [
+                "Gambar: ora ana, saka berkas (stempel, tanda tangan sing dipindai) utawa digambar ing kene.",
+                "Teks sing katon: jeneng, tanggal, alasan, panggonan, saben-sabene bisa nganggo utawa tanpa label.",
+                "Baris tambahan ing ngisor jeneng, kayata jabatan lan perusahaan.",
+                "\"Teks standar\" tansah ana: sapa sing nandatangani lan kapan."
+              ]
+            },
+            "Ing jendhela tanda tangan: \"Anyar…\", \"Owahi…\", \"Busak\". Sing pungkasan digunakake bakal ditawakake dhisik. Tampilan disimpen ing komputer iki."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Sawetara tanda tangan, lan ngunci",
+          "body": [
+            "Dokumen bisa ditandatangani dening sawetara wong, siji mbaka siji. Bukak berkas sing wis ditandatangani lan tandatangani tanpa ngowahi apa-apa: tanda tangan sampeyan bakal ditambahake ing pungkasan berkas lan tanda tangan sadurunge tetep sah.",
+            "\"Kunci dokumen sawise ditandatangani\" (mati kajaba sampeyan centhang) nutup dokumen: ora ana sing bisa nandatangani sawise sampeyan lan ora ana sing oleh diowahi maneh. Iki ora bisa diwurungake.",
+            {
+              "note": "Yen sampeyan ngowahi dokumen sing wis ditandatangani sadurunge nandatangani maneh, dokumen kasebut kudu ditulis anyar lan tanda tangan sadurunge ora kalebu. Jendhela tanda tangan bakal menehi peringatan: supaya tetep ana, bukak maneh berkase lan tandatangani tanpa ngowahi apa-apa."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Stempel wektu",
+          "body": [
+            "Stempel wektu yaiku pratelan sing ditandatangani dening otoritas stempel wektu babagan kapan sawijining barang wis ana. Yen ora, wektu ing tanda tangan asale saka jam komputer sing nandatangani, sing bisa disetel sapa wae; stempel wektu mbuktekake wektune, lan njaga tanda tangan tetep bisa dibuktekake sawise sertifikate kadaluwarsa (PAdES B-T).",
+            {
+              "points": [
+                "Tanda tangan entuk stempel wektu yen \"Tambah wektu sing dipercaya (stempel wektu)\" dicenthang ing jendhela tanda tangan. Setelan → Tanda tangan nemtokake apa iku wiwit dicenthang, ing kene lan ing proses massal.",
+                "Tanda tangan → Tambah stempel wektu menehi stempel wektu dhewe kanggo kabeh dokumen, tanpa sertifikat: mbuktekake yen dokumen wis ana, persis kaya saiki, ing wektu iku. Disimpen dadi berkas anyar; tanda tangan sing ana ing berkas tetep sah."
+              ]
+            },
+            "Otoritase yaiku duweke DigiCert (http://timestamp.digicert.com), gratis lan dipercaya Adobe Reader lan Windows; liyane bisa disetel ing Setelan → Tanda tangan. Mung nampa sidik jari digital (SHA-256), dudu dokumene, lan butuh sambungan internet. Nalika tanda tangan entuk stempel wektu, penerbit sertifikat sampeyan uga ditakoni apa sertifikat kasebut isih sah, lan wangsulane disimpen ing tanda tangan (validasi jangka panjang): kanthi mangkono Adobe Reader bisa nuduhake tanda tangan minangka sah, saiki lan sawise sertifikat kadaluwarsa.",
+            {
+              "note": "Yen otoritas ora bisa digayuh, ora ana sing ditandatangani utawa ditulis: coba maneh, utawa busak centhangan stempel wektu kanggo nandatangani tanpa iku."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Mriksa tanda tangan",
+          "body": [
+            "Tanda tangan → Verifikasi tanda tangan nuduhake saben tanda tangan sertifikat ing berkas: sapa sing nandatangani, sapa sing nerbitake sertifikat, kapan, alesan lan panggonane, lan",
+            {
+              "points": [
+                "apa dokumen kasebut ora owah wiwit tanda tangan kasebut (tanda tangan liyane sing ditambahake sawise iku ora dianggep owahan);",
+                "apa tanda tangan kasebut ngunci dokumen;",
+                "apa komputer iki percaya marang otoritas ing mburine sertifikat, lan apa sertifikat kasebut isih sah saiki;",
+                "wektu sing ditegesake stempel wektune, lan dening otoritas endi, yen ana. Stempel wektu kanggo kabeh dokumen uga ditampilake, kanthi pamriksan dhewe."
+              ]
+            },
+            "Pamriksan iki kanggo berkas kaya nalika pungkasan disimpen lan ditindakake ing komputer iki, tanpa mlebu internet. Ngeklik tanda tangan ing kaca mbukak dhaptar iki ing tanda tangan kasebut. Ing sangisore saben tanda tangan, “Tampilake sertifikat” mbukak jendhela Windows kanggo sertifikat kasebut (ranté lan kabeh rinciané; saka kono, “Instal Sertifikat” ndadekake komputer iki percaya marang sertifikat sing sampeyan kenal), lan “Validasi” takon liwat internet marang penerbit sertifikat, mung yen sampeyan mencet, apa sertifikat wis ditarik."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piranti liyane",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Ngenali teks (OCR)",
+          "body": [
+            "Piranti liyane → Kenali teks (OCR) maca tembung-tembung saka kaca sing dipindai lan nulis ing kaca kanthi ora katon, saengga dokumen bisa digoleki lan tekse bisa disalin sarta diekspor. Tampilan kaca ora owah.",
+            "Centhang mung basa sing digunakake ing kaca; kaca sing wis ana tekse ditinggal kaya saiki.",
+            {
+              "note": "Maca ditindakake dening mesin Tesseract, program gratis sing dipasang dhewe. Tanpa program kasebut, jendhela bakal nuduhake perintah kanggo masang ing Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Nyilikake dokumen",
+          "body": [
+            "Piranti liyane → Kompres nyimpen dokumen dadi berkas sing luwih cilik kanthi nyuda piksel foto lan asil pindaine. Ana telung tingkat kekuwatan; teks lan gambar tetep landhep kaya asline. Dokumen sing gambare sithik ora bakal akeh owah ukurane."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Mbandhingake rong dokumen",
+          "body": [
+            "Piranti liyane → Bandhingake dokumen: pilih PDF liyane. Loro-lorone ditampilake jejer, kaca demi kaca, kaca sing tekse beda ditandhani lan baris sing mung ana ing salah siji dokumen didhaptar."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Proses massal: akeh berkas bebarengan",
+          "body": [
+            "Piranti liyane → Proses massal nglakoni bab sing padha kanggo akeh berkas, ing tab dhewe. Saben asile yaiku berkas anyar. Yen asile bakal nggenteni berkas sing wis ana ing folder (berkas sampeyan dhewe, yen disimpen ing foldere tanpa tambahan apa-apa ing jenenge), sampeyan bakal ditakoni dhisik arep diganti, diliwati, utawa dibatalake. Berkas mung diganti sawise asile rampung; berkas sing lagi dibukak (ing tab kene utawa ing program liya) ditinggal kaya saiki lan ditandhani durung rampung.",
+            {
+              "steps": [
+                "Ing sisih kiwa, tambahi berkas: \"Tambah berkas…\", \"Tambah folder…\" (kalebu folder ing njerone), utawa seleh berkas mrene.",
+                "Ing sisih tengen, centhang apa sing arep dilakoni. Saben berkas mesthi dadi PDF; saliyane iku sampeyan bisa muter kaca, ngenali teks, nambah header lan footer, tandha banyu utawa nomer kaca, nyilikake berkas, nandatangani nganggo sertifikat, utawa nulis menyang format liyane. Nomer nuduhake urutane.",
+                "Pilih apa sing ditulis: siji berkas kanggo saben siji, utawa kabeh dadi siji PDF (manut urutan dhaptar), lan folder kanggo nyimpen asile. Yen kabeh berkas asale saka siji folder, folder kuwi dipilih kanggo sampeyan nganti sampeyan milih liyane; yen ora, iku folder pungkasan sing sampeyan pilih.",
+                "\"Mulai\". Saben berkas nuduhake asile; proses bisa diendhegake ing antarane berkas."
+              ]
+            },
+            {
+              "points": [
+                "Resep: \"Simpen minangka resep…\" nyimpen kabeh pilihan sampeyan (kajaba berkas lan sandhi) nganggo jeneng, supaya bisa disetel maneh kanthi sepisan milih.",
+                "\"Tetepake folder berkas ing asile\" mbangun maneh folder-folder saka folder sing ditambahake.",
+                "\"Tulis laporan proses\" ninggalake berkas teks ing sandhinge asil sing nerangake apa sing wis ditulis lan apa sing gagal.",
+                "PDF sing mung ditandatangani tetep nyimpen tanda tangane; yen ana bab liyane sing ditindakake ing proses sing padha, dokumen kasebut ditulis anyar lan tanda tangane ora kalebu."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Setelan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Setelan PDF Organizer",
+          "body": [
+            "Berkas → Setelan (utawa Setelan ing jalur sisih, banjur PDF Organizer). Saben setelan bisa dibalekake siji-siji, utawa kabeh bebarengan.",
+            {
+              "points": [
+                "Nalika dokumen mbukak: sepira gedhene dokumen ditampilake nalika dibukak, nggulung utawa siji kaca sakwayah, gambar cilik kaca katon utawa ora.",
+                "Satuan, penggaris lan kisi: satuan (milimeter, inci, poin), penggaris, kisi lan jarake.",
+                "Nyithak: kertas, orientasi lan skala wiwitan jendhela cetak.",
+                "Bilah piranti cepet: tombol apa wae sing ana ing jalur ndhuwur kaca.",
+                "Jeneng dokumen anyar: pola kanggo kaca sing dijupuk, dokumen anyar lan PDF sing ngumpulake akeh berkas ing proses massal.",
+                "Tanda tangan: apa \"Simpen\" takon dhisik sadurunge nimpa berkas sing wis ditandatangani.",
+                "Pintasan keyboard: klik tombol perintah, banjur pencet tombol anyar."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Babagan PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Babagan PDF Organizer",
+          "body": [
+            "PDF Organizer yaiku aplikasi PDF saka Syntelab Creative: aplikasi iki bisa maca dokumen PDF, nata lan nggabungake kacane, nulis lan nggambar ing dhuwure, ngisi lan nggawe formulir, nandatangani nganggo sertifikat lan mriksa tanda tangan, sarta nindakake bab-bab kasebut kanggo akeh berkas bebarengan.",
+            "Aplikasi iki isih anyar, lan sawetara sing ditindakake isih langkah wiwitan. Yen ana sing kurang kanggo dokumen sampeyan, kandhanana marang kita liwat Pitulung → Masukan: kanthi cara kasebut kita ngerti apa sing kudu digarap."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "PDF Organizer digawe nganggo apa",
+          "body": [
+            {
+              "points": [
+                "Maca, nggambar lan nulis PDF: MuPDF.",
+                "Ngenali teks (OCR): Tesseract, yen wis dipasang ing komputer.",
+                "Mbukak dokumen kantor: Word, Excel lan PowerPoint, utawa LibreOffice, gumantung endi sing dipasang.",
+                "Nyimpen kaca web dadi PDF: browser sing dipasang ing komputer.",
+                "Nandatangani nganggo sertifikat: layanan sertifikat Windows; tanda tangan ditulis manut standar PAdES."
+              ]
+            },
+            "Apa sing padha karo bagean program liyane ana ing \"Babagan Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Apa sing durung bisa ditindakake PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Dokumen kantor dibukak nganggo program kantor ing komputer; tanpa Word, Excel, PowerPoint utawa LibreOffice dokumen kasebut ora bisa dibukak. Konverter dhewe lagi digarap: delengen \"Apa sing lagi digarap\".",
+                "Ngenali teks mbutuhake mesin Tesseract, sing kudu dipasang dhewe.",
+                "Teks dokumen dhewe diowahi siji baris sakwayah; paragraf ora mili maneh.",
+                "Gambar sing dicetak nganggo patang tinta (CMYK) ora bisa dijupuk kanggo dipindahake.",
+                "“Validasi” ngandhani apa sertifikat saiki wis ditarik, dudu kapan ditarike.",
+                "Nandatangani nganggo sertifikat saiki mung bisa ing Windows; kanggo Linux lan macOS bakal ana ing versi sabanjure."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

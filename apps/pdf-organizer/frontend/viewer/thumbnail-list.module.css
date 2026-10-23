@@ -1,0 +1,71 @@
+/* Fills the side strip it sits in (side-strip.tsx). */
+.scroller {
+  flex: 1;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.strip {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  position: absolute;
+  inset-inline: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--sc-muted);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.picture {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-xs);
+  background: var(--sc-paper);
+}
+
+/* The thumbnail itself, turned with the view inside its frame. A page is
+   never mirrored, so this is placed with physical sides. */
+.turned {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  translate: -50% -50%;
+}
+
+.button:hover .picture {
+  border-color: var(--sc-muted);
+}
+
+.button[aria-current='page'] {
+  color: var(--sc-text);
+  font-weight: 600;
+}
+
+.button[aria-current='page'] .picture {
+  border-color: var(--sc-accent);
+  outline: 2px solid var(--sc-accent);
+}
+
+.number {
+  display: flex;
+  align-items: center;
+}

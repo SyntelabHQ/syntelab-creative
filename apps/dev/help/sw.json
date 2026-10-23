@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Kupata mwongozo",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Ukurasa wa kwanza",
+          "body": [
+            "Tabo ya Dev inafunguka kwenye ukurasa wa kwanza, ambapo kila zana ipo, ikiwa imegawanywa kama ilivyo kwenye menyu: Usimbaji, Data, Tengeneza, Kagua, Mtandao.",
+            {
+              "points": [
+                "Andika \"Tafuta zana\" ili kupunguza orodha.",
+                "Alama ya pini kwenye zana huifanya ibaki juu, chini ya Zilizopigwa pini.",
+                "Zana hufunguka kwenye tabo hiyo hiyo; Faili → Zana zote hurudisha kwenye ukurasa wa kwanza. Katika Mipangilio unaweza kufanya kila zana ifunguke kwenye tabo yake yenyewe, na tabo mpya ifunguke kwenye zana iliyotumika mwisho."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Bandika chochote",
+          "body": [
+            "Sanduku lililo juu ya ukurasa wa kwanza hupokea chochote unachobandika na kusema kinaonekana kama nini: tokeni, cheti, JSON, UUID, mihuri ya muda, ratiba za cron, URL, XML au HTML, SQL, Base64, checksum, jedwali, YAML.",
+            "Chini ya kila utabiri kuna zana zinazofanya kazi kwenye kitu hicho, zikiwa zimepangwa kuanzia zinazofaa zaidi. Bonyeza moja: itafunguka ikiwa na maandishi tayari na itatekelezwa.",
+            {
+              "note": "Unachobandika hubaki kwenye sanduku hadi utakapokifuta au kufunga tabo. Haichapishwi kamwe kwenye diski."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Mpangilio wa zana",
+          "body": [
+            "Zana nyingi zina fremu sawa: chaguzi kwenye mstari wa juu, pembejeo (input) upande mmoja, matokeo (output) upande mwingine, na mstari chini unaosema nini kimetokea.",
+            {
+              "points": [
+                "Matokeo yanatengenezwa tena kila ingizo au chaguo linapobadilika, na kuonyeshwa kwenye matokeo; “Hujitekeleza yenyewe” kwenye mstari wa chaguzi husema hivyo. Ni maandishi marefu mno kutekelezwa kila kitufe kinapobonyezwa, au faili kubwa kuliko 128 MB, tu yanayosubiri kitufe cha Tekeleza, ambacho huonekana wakati huo. Ctrl+Enter hutekeleza zana wakati wowote.",
+                "Matokeo ambayo si maandishi (picha iliyofumbuliwa kutoka Base64, gzip) huonyeshwa kama onyesho: picha kama ilivyo, kitu kingine chochote kwa aina yake, ukubwa wake na baiti zake za kwanza. Nakili basi huyanakili kama Base64, na picha inaweza kunakiliwa kama picha. Ndivyo ilivyo pia kwa faili ya pembejeo ambayo si maandishi.",
+                "Fungua faili, Bandika na Futa zipo juu ya pembejeo; Nakili na Hifadhi kwenye faili zipo juu ya matokeo. Faili pia inaweza kubururwa hadi kwenye pembejeo.",
+                "Kosa lolote kwenye pembejeo huelezwa kwa maneno, pamoja na mstari na safu yake, na kuwekwa alama kwenye mhariri.",
+                "Menyu ya Tazama huweka sehemu hizo mbili pembeni kwa pembeni au moja chini ya nyingine, huonyesha namba za mistari na kunyoosha mistari mirefu; mstari kati ya sehemu hizo unaweza kubururwa.",
+                "Chaguzi unazochagua hukumbukwa kwa ajili ya wakati ujao. Unachoandika hakikumbukwi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Futa kabisa, na nini kinahifadhiwa",
+          "body": [
+            "Futa kabisa, chini kulia ya kila zana, huifuta yote mara moja: pembejeo, matokeo, chochote kilichoandikwa kwenye sanduku zake, na kile ambacho mhariri wake ungeweza kurudisha (undo).",
+            "Dev huhifadhi mipangilio yake tu, zana ulizopiga pini, jina la zana iliyotumika hivi karibuni na chaguzi za kila zana. Hakuna kitu unachoandika, kubandika, kufungua au kutengeneza katika zana kinachoandikwa kwenye diski, kwenye logi au kwenye orodha ya vitu vya hivi karibuni. Siri ndizo zisizohifadhiwa kabisa: funguo, nywila, tokeni na vichwa vya ombi hukaa kwenye tabo na si mahali pengine popote.",
+            "Kitu kimoja husubiri kwenye diski kwa muda: matokeo ya faili, na matokeo ambayo si maandishi, huandikwa kwenye folda ya programu yenyewe ili yaweze kuonyeshwa na kisha kuhifadhiwa. Kila moja hufutwa matokeo mengine yanapochukua nafasi yake, unapoifuta kabisa zana au kuifunga, na kwa vyovyote vile Dev inapoanza tena."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Faili za ukubwa wowote",
+          "body": [
+            "Hakuna kikomo kilichowekwa kwenye ukubwa wa faili. Faili ndogo ya kutosha kuonyeshwa (hadi 16 MB) huwekwa kwenye mhariri. Faili kubwa zaidi, au ambayo si maandishi, hubaki kwenye diski: mwanzo wake (au onyesho) huonyeshwa, zana husoma kutoka inapokuwa, na matokeo yake huonyeshwa kama ya maandishi. Hifadhi kwenye faili kisha hunakili matokeo mahali unapochagua.",
+            {
+              "points": [
+                "Kazi ndefu huonyesha kadi yenye maendeleo ya kazi na kitufe cha Simamisha.",
+                "Faili ambayo ni maandishi katika ucodishaji mwingine tofauti na UTF-8 (UTF-16, Windows-1252 na nyinginezo) husomwa kama maandishi inapokuwa ndogo ya kutosha kuonyeshwa, na ucodishaji huo huonyeshwa. Kile unachohifadhi kutoka Dev ni UTF-8.",
+                "Faili inayowekwa kwenye zana hufunguliwa kama kwa Fungua faili. Pale dirisha lisipoweza kujua iko wapi, huchukuliwa hadi 16 MB, kama vile imebandikwa."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Faili nyingi na folda nzima",
+          "body": [
+            "Pale zana inapokuwa na \"Fanya kazi kwenye: Maandishi / Faili\", Faili huendesha zana hiyo kwenye faili nyingi kwa wakati mmoja.",
+            {
+              "steps": [
+                "Ongeza faili, au folda (pamoja na folda zilizo chini yake, ikiwa umeacha chaguo hilo).",
+                "Kila faili husomwa mara moja inapoongezwa na kuonyeshwa ikiwa zana hiyo inaikubali.",
+                "Chagua mahali matokeo yaende: kando ya kila faili chini ya jina jipya, kwenye folda (ukihifadhi folda), au juu ya faili zenyewe, jambo ambalo litakuuliza mara moja zaidi. Hash pia inaweza kuonyesha matokeo kwenye orodha tu.",
+                "Bofya faili kwenye orodha ili uone matokeo yake peke yake chini ya chaguzi, kabla kitu chochote hakijaandikwa.",
+                "Endesha. Faili ambayo ina hitilafu haizuii nyingine; kila moja huonyesha jinsi ilivyomalizika."
+              ]
+            },
+            {
+              "note": "Matokeo hayawahi kuandikwa juu ya faili ambayo tayari ipo isipokuwa ukiomba hivyo."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Menyu ya kubofya kulia ya Windows Explorer",
+          "body": [
+            "Iwashe kwenye Mipangilio ya programu, chini ya Windows Explorer. Kila kitu hukusanywa chini ya mstari mmoja, \"Syntelab Creative\"; kwenye Windows 11 iko chini ya \"Onyesha chaguo zaidi\".",
+            {
+              "points": [
+                "Fungua katika Syntelab Dev: kuhusu aina za faili ambazo zana husoma (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz na nyinginezo). Faili hufunguliwa katika zana kulingana na aina yake.",
+                "Checksums: kwenye faili au folda yoyote. Digest huorodheshwa, kila moja pembeni ya faili lake, na hakuna kitu kinachoandikwa.",
+                "Hex view: kwenye faili yoyote.",
+                "Linganisha: faili mbili huwekwa katika pande mbili za Diff; folda mbili huwekwa katika ulinganishaji wa folda."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Usimbaji",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Hubadilisha baiti kuwa Base64 na kurudisha. Encoding huchukua faili yoyote; decoding hurudisha baiti, zinazoonyeshwa zinapokuwa maandishi na kuhifadhiwa kwenye faili zinapokuwa si maandishi.",
+            {
+              "points": [
+                "Alfabeti: ya kawaida, au ile ya URL (- na _).",
+                "Jaza kwa =, na mistari ya herufi 64, 76 au idadi yoyote ya herufi.",
+                "Decoding huchukua alfabeti zote mbili, ikiwa na ujazaji au bila, na kuonyesha mahali herufi ilipo kuwa na makosa."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Simba / simbua URL",
+          "body": [
+            "Percent-encoding, kama vivinjari vinavyoandika: sehemu ya anwani (kila kitu ambacho si herufi ya kawaida husimbwa), anwani nzima (alama zake huhifadhiwa), au fomu (+ kwa nafasi).",
+            "Kusimbua huonyesha mahali alama ya % haifuatiwa na tarakimu mbili za hexadecimal."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Huluki za HTML",
+          "body": [
+            "Huandika alama ambazo HTML na XML huhifadhi kwa ajili yao (&, <, >, alama za nukuu) kama huluki (entities), na kusoma huluki kurudi: kwa jina, kwa namba ya desimali au kwa namba ya hexadecimal. Majina ni yale ya kiwango cha HTML.",
+            "\"Kila herufi ambayo si ASCII pia\" huandika herufi zenye alama na alfabeti nyingine kama huluki pia."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Kisimbuzi cha JWT",
+          "body": [
+            "Huchambua JSON Web Token: kichwa (header) na mzigo wake (payload) kama JSON, na madai yake (claims) kwa maneno (mtoaji, mada, hadhira, wakati inapoisha, ikiwa ni \"imeisha\" au \"haijaisha bado\").",
+            "Toa siri ili kukagua saini iliyotengenezwa kwa siri ya pamoja (HS256, HS384, HS512). Saini zilizotengenezwa kwa ufunguo wa siri (RS, ES, PS) hazukagwi.",
+            {
+              "note": "Tokeni na siri hubaki kwenye tabo: hakuna kitu kinachotumwa popote ili kusimbua tokeni."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Huandika maandishi kama mfululizo wa lugha (JSON, JavaScript, C, C++, Java na nyinginezo) huku alama za nukuu, mivunjo ya mistari na alama nyingine zikiwa zimeepukwa, na kusoma mfululizo huo tena."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Hufanya mfupisho na ufunguaji wa gzip, faili ya ukubwa wowote wakati inasomwa. Kiwango huanzia cha haraka zaidi hadi kidogo zaidi; matokeo ya maandishi yanaweza kutolewa kama Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Misingi ya namba",
+          "body": [
+            "Hutoa namba nzima, moja kwa kila mstari, katika mfumo wa jozi, oktali, desimali na heksadesimali, na katika msingi mwingine mmoja utakaochagua, hadi 36. Namba haina ukubwa wa juu zaidi.",
+            {
+              "points": [
+                "Msingi wa namba hutambuliwa kupitia jinsi ilivyoandikwa: 0x kwa heksadesimali, 0b kwa jozi, 0o kwa oktali, herufi kwa heksadesimali, na desimali vinginevyo. Au chagua msingi ambao kila kitu kitasomwa kwao.",
+                "Nafasi, mistari ya chini (underscores) na alama za nukuu kati ya tarakimu hupuzwa: 1_000_000.",
+                "Namba hasi pia hutolewa kama kompyuta zinavyohifadhi (two’s complement), katika ukubwa mdogo zaidi wa biti 8, 16, 32, 64 na kadhalika unaoweza kuibeba."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Kipangaji cha JSON",
+          "body": [
+            "Hupanga, hufupisha na kuhakiki JSON, na kuionyesha kama mti. Nyaraka ya ukubwa wowote husomwa kama mkondo (stream).",
+            {
+              "points": [
+                "Weka nafasi (indent) ya nafasi 2 au 4, tab, au idadi yoyote ya nafasi.",
+                "Machaguo zaidi: pangilia funguo, orodha fupi kwenye mstari mmoja, nafasi baada ya koloni, jinsi mistari inavyoishia, mvunjo wa mstari mwishoni, herufi zisizo za ASCII kama \\uXXXX.",
+                "Usomaji wa kulegeza hukubali maoni (// na /* */) na koma za mwisho, na kuandika JSON rasmi.",
+                "Mabadiliko: ondoa nulls, ondoa thamani tupu na nyinginezo, katika hatua moja.",
+                "Mti hufungua kiwango kimoja kwa wakati na kutafuta maandishi katika funguo na thamani."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Hufanya hoja ya JSONPath (RFC 9535) kwenye nyaraka: $.store.book[?@.price < 10].title. Matokeo ni thamani zilizopatikana, njia kuelekea kwazo, au zote mbili.",
+            "Hoja ambayo haina usahihi huonyeshwa pamoja na sehemu ambapo imekosea."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Kihakiki cha JSON Schema",
+          "body": [
+            "Hukagua hati dhidi ya JSON Schema (rasimu 4 hadi 2020-12). Schema huwekwa kwenye sehemu ya chini ya pembe ya pembejeo. Kila kitu kisicholingana huorodheshwa pamoja na mahali kilipo na sheria inayokiuka.",
+            "Kwa faili nyingi, kila moja hukaguliwa dhidi ya schema moja. $ref ya faili nyingine au anwani haifuatwi."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Kizalishaji cha Schema na JSON kwenda TypeScript",
+          "body": [
+            "Kutoka kwa sampuli ya JSON, kizalishaji cha schema huandika JSON Schema inayolingana, na JSON kwenda TypeScript huandika matangazo ya aina yake (interfaces au types, zilizosafirishwa au la, readonly au la, chini ya jina unalotoa)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Hubadilisha YAML kuwa JSON na JSON kuwa YAML. YAML husomwa kwa schema yake ya msingi, huku anchors na merges zikifuatwa; kile kilicho kibaya huonyeshwa pamoja na mahali pake."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Hubadilisha jedwali kuwa JSON na kurudisha. Kitu kinachotenganisha huainishwa kutoka mstari wa kwanza, au kuchaguliwa (koma, nukta mkato, tab, pipe); mstari wa kwanza unaweza kuwa kichwa cha habari; namba na kweli / si kweli zinaweza kugunduliwa.",
+            "\"Jedwali\" huonyesha CSV katika mistari na safu, faili ya ukubwa wowote."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Kipangaji cha XML / HTML",
+          "body": [
+            "Hupanga, hupunguza (minifies) na hukagua XML na HTML. XML husomwa kwa ukali: tag ambayo haijafungwa huonyeshwa pamoja na mahali pake. HTML husomwa kama vivinjari (browsers) hupunguza makosa."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Kipangaji cha SQL",
+          "body": [
+            "Hupanga kauli, kipengele kimoja kwa mstari, au huweka kwenye mstari mmoja; maneno muhimu katika herufi kubwa, herufi ndogo au kama yalivyoandikwa. Haihitaji lahaja (dialect) yoyote na haikagui maana ya kauli."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Hulinganisha maandishi mawili mstari kwa mstari, hati mbili za JSON kwa kile zinachosema, au folda mbili faili kwa faili. Ya kwanza huwekwa kwenye pembejeo, ya pili kwenye sehemu ya chini yake.",
+            {
+              "points": [
+                "Upande kwa upande huonyesha maneno yaliyobadilika ndani ya mstari; Unified ni patch kama diff -u inavyoiandika.",
+                "Puuza herufi kubwa/ndogo, nafasi, mistari mitupu, tarakimu au alama za uandishi.",
+                "Kwa JSON, mpangilio wa funguo (keys) na muundo si tofauti; matokeo yanaweza kuwa JSON Patch (RFC 6902).",
+                "Folda: faili zipi zimo kwenye folda moja tu, zipi zinafanana, na zipi zinatofautiana; Linganisha kwenye mstari hufungua jozi kama maandishi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Onyesho la Markdown",
+          "body": [
+            "Huonyesha Markdown jinsi itakavyoonekana, na hutoa HTML yake ili kunakiliwa au kuhifadhiwa: CommonMark yenye majedwali, mistari iliyokhatishwa, orodha za kazi na tanbihi.",
+            {
+              "points": [
+                "HTML iliyoandikwa ndani ya Markdown huonyeshwa kama maandishi, haitekelezwi.",
+                "Picha ambayo ingepakiwa kutoka kwenye mtandao haipakuliwi: maelezo yake na anwani huonyeshwa badala yake. Picha iliyobebwa ndani ya maandishi (data:) huonyeshwa.",
+                "Kiungo unachobofya hufunguka kwenye kivinjari cha mfumo."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tengeneza",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Hutengeneza UUID za matoleo 1, 3, 4, 5, 6 na 7 (RFC 9562), nyingi kama unavyohitaji, zikiwa zimeandikwa kwa alama za kutoa, kawaida, kama URN au kwenye mabano. \"Chambua\" huonyesha toleo la kila UUID na wakati au jina lililo ndani yake."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 na SHA-512 ya maandishi au faili, nyingi kwa wakati mmoja, zikiwa zimeandikwa kama hex au Base64. Faili ya ukubwa wowote hufanyiwa hash wakati inasomwa.",
+            {
+              "points": [
+                "Hakiki dhidi ya: weka checksum, au mstari wa faili ya .sha256; utajulishwa kama inalingana au la.",
+                "Ufunguo wa HMAC: digests huwa HMACs kwa kutumia ufunguo huo.",
+                "Kila mstari mbalimbali: digest moja kwa kila mstari wa maandishi.",
+                "Faili: digests huorodheshwa kando ya faili zake; Nakili zote huzitoa kama sha256sum zinavyoandika."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Nywila na siri",
+          "body": [
+            "Hutengeneza nywila za aina ya herufi unazochagua, nywila za maneno, na baiti nasibu kama hex au Base64, kutoka kwa namba nasibu za mfumo wa uendeshaji. Kila moja huonyesha idadi ya biti za entropy zilizomo. Kitu kikishatengenezwa, kubadilisha chaguo hukitengeneza tena.",
+            "Misimuli ni maneno yanayochukuliwa kutoka kwenye orodha ndefu ya maneno ya Electronic Frontier Foundation (maneno 7776 ya Kiingereza), kila moja likiwa na uwezekano sawa na mengine: maneno sita ni takriban biti 77."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Funguo na vyeti",
+          "body": [
+            "Vitu vitano, vilivyochaguliwa juu:",
+            {
+              "points": [
+                "Ufunguo mpya: RSA, EC P-256 / P-384 / P-521 au Ed25519, katika kila mfumo ambao programu hutumia (PKCS #8, mfumo wa zamani, OpenSSH; ufunguo wa umma kama PEM na kama mstari wa authorized_keys), uliofungwa kwa nenosiri ikiwa utatoa.",
+                "Ombi la cheti: CSR kwa ajili ya ufunguo mpya au ule uliounakili, ikiwa na mada yake na majina yake mengine (SAN).",
+                "Cheti kilichojisaini: vilevile, kilichosainiwa kwa ufunguo wake wenyewe, kwa siku nyingi; \"Kinaweza kusaini vyeti vingine\" kinakifanya kuwa mamlaka yako mwenyewe.",
+                "Saini kwa CA yako mwenyewe: nakili ombi, cheti cha mamlaka yako na ufunguo wake; utapata cheti kilichosainiwa na mamlaka hiyo baada yake.",
+                "Soma na Convert: nakili au fungua chochote (PEM, DER, ufunguo wa OpenSSH, faili ya .pfx au .p12, ikiwa imefungwa au la). Inataja kile kilichopatikana na ikiwa ufunguo ni wa cheti hicho, na kuandika kila kitu katika mifumo mingine. Ufunguo na cheti chake vinaweza kuhifadhiwa pamoja kama .pfx."
+              ]
+            },
+            {
+              "note": "Kila kitu kinafanyika kwenye kompyuta hii. Ufunguo unabaki kwenye tabo hadi Futa kabisa, na hakuna mahali pengine isipokuwa ukiuhifadhi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kagua",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Kijaribio cha Regex",
+          "body": [
+            "Hujaribu regular expression ya JavaScript kwenye maandishi: matokeo yenye vikundi na nafasi zake, au maandishi yakiwa na matokeo yamebadilishwa. Alama (flags) ni g, i, m, s, u, y.",
+            "Kiolezo (pattern) kinafanya kazi nje ya dirisha, na kile kinachochukua zaidi ya sekunde 20 kinasimamishwa."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Ufafanuzi wa Cron",
+          "body": [
+            "Inataja kwa maneno maana ya ratiba na wakati inapotekelezwa: crontab (sehemu tano, sita ikiwa na sekunde, saba ikiwa na mwaka), Quartz, AWS EventBridge cron() na rate(), na systemd OnCalendar. Ratiba moja kwa kila mstari.",
+            {
+              "points": [
+                "Muda wa utekelezaji unaofuata, na ule wa awali unapoulizwa, katika ukanda wa saa unaouchagua.",
+                "Siku za wiki huhesabiwa kuanzia 0 kwa Jumapili, au kuanzia 1 kama Quartz inavyozihesabu, kama unavyochagua. Mstari wenye sekunde ambao pia una mwaka, L, W au # ni wa Quartz, na husomwa kwa njia ya Quartz wenyewe.",
+                "Ratiba hiyo hiyo katika mifumo mingine, ili kunakili au kuongeza kwenye ingizo.",
+                "Kijenzi (builder) hutengeneza ratiba kwa kuchagua kila sehemu; \"Badilisha kwenye kijenzi\" huchukua ratiba iliyoandikwa na kuiweka humo."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Muhuri wa muda wa Unix",
+          "body": [
+            "Husoma nyakati, moja kwa mstari: sekunde, milisekunde, mikrosekunde au nanosekunde tangu 1970, au tarehe iliyoandikwa kwa njia za kawaida (ISO 8601, kama barua pepe na HTTP zinavyoiandika, kama Git inavyoiandika). Kila moja huonyeshwa katika ukanda wa saa uliouchagua, katika UTC, na kama kila aina ya alama ya muda (timestamp)."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Kichanganuzi cha URL",
+          "body": [
+            "Huchanganua URL kama vivinjari vinavyoisoma: scheme, mtumiaji, host (pamoja na mfumo wake wa Unicode inapokuwa imeandikwa katika punycode), port, njia (path), kila parameter ya query ikiwa imedekodwa, na fragment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Kisimbuzi cha cheti",
+          "body": [
+            "Husoma vyeti vya X.509 kutoka PEM au DER na huonyesha kila kitu kilichomo: mhusika (subject), mtoaji, uhalali, majina yanayohusika, ufunguo wake, viongeza vyake na alama zake za kidijitali (fingerprints).",
+            "Husoma tu; haihukumu ikiwa cheti kinapaswa kuaminika. Kwa cheti ambacho tovuti inaonyesha, na ikiwa kompyuta hii inakiamini, tumia Mtandao → Cheti cha tovuti."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Kitazamaji cha Hex",
+          "body": [
+            "Huonyesha baiti za faili ya ukubwa wowote, au ya maandishi yaliyobandikwa: nafasi ya kila mstari, baiti, na baiti hizo hizo kama herufi.",
+            {
+              "points": [
+                "Nenda kwenye nafasi iliyoandikwa kama 0x1F4, 1F4h au 500.",
+                "Tafuta baiti (DE AD BE EF) au maandishi (UTF-8, au UTF-16 kwa njia yoyote), mbele na nyuma.",
+                "Bofya baiti: upande wa pembeni huonyesha kilichopo kama namba za ukubwa wowote, katika mpangilio wowote wa baiti, kama herufi na kama muda.",
+                "Chagua kwa kuburuta, Shift au funguo za mishale; nakili uchaguzi kama hex, kama kodi, kama Base64 au kama maandishi, au hifadhi kwenye faili."
+              ]
+            },
+            {
+              "note": "Hutazama tu: hakuna kitu kinachobadilishwa kwenye faili."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mtandao",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Mahali zana za mtandao zinapopatikana",
+          "body": [
+            "Zana hizi nne ndiyo sehemu pekee ya Dev inayounganishwa mtandaoni, na huenda pale unapozielekeza.",
+            {
+              "points": [
+                "Ni anwani tu uliyoiandika ndiyo inayowasiliana, na ni wakati tu unapobonyeza kitufe. Kamwe si kwa nyuma (background).",
+                "Kile kinachotumwa ni kile ulichoandika. Kitu pekee kinachoongezwa kwenye ombi ni User-Agent ambayo ni sawa kwa kila mtu (\"Syntelab Creative\"), isipokuwa utoe yako mwenyewe.",
+                "Hakuna kuki (cookies) zinazohifadhiwa, hakuna kitu kuhusu wewe au kompyuta kinachotumwa, na hakuna kitu kilichoandikwa kinachohifadhiwa."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Kiteja cha HTTP",
+          "body": [
+            "Hutumia ombi moja lililoandikwa kwa mkono: mbinu, anwani, vichwa (kimoja kwa mstari: Jina: thamani) na mwili, uliotypewa au uliotoka kwenye faili ya ukubwa wowote.",
+            {
+              "points": [
+                "Jibu: namba yake, muda uliotumika (kwa jumla, na hadi byte ya kwanza), ukubwa wake, vichwa vyake, na mwili wake, uliopambwa kwa rangi kulingana na aina yake na kupangwa unapokuwa JSON. Mwili ambao si maandishi (picha, PDF) huonyeshwa kama ulivyo, na kuhifadhiwa kama ulivyofika.",
+                "Fuata mwelekezo (redirects), au ona jibu la kwanza kama lilivyo. Anwani ambazo ombi lilitumwa kwake zinaorodheshwa.",
+                "Kagua cheti kulingana na kile ambacho kompyuta hii inaamini; izime tu kwa seva zako mwenyewe.",
+                "\"Tuma, jibu kwenda kwenye faili\" huandika mwili wa ukubwa wowote moja kwa moja kwenye diski, ikiwa na maendeleo na Simamisha.",
+                "\"Nakili kama curl\" hutoa ombi lile lile kama amri."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Utafutaji wa DNS",
+          "body": [
+            "Humuuliza seva ya majina rekodi za jina: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, kadhaa kwa wakati mmoja. Anwani hutoa jina lake (PTR).",
+            "Swali huenda kwenye seva ya majina ambayo kompyuta imewekwa kutumia, kwenye seva ya umma (1.1.1.1, 8.8.8.8, 9.9.9.9), kwenye resolver kupitia HTTPS (Cloudflare, Google), au kwenye ile unayoiandika."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Ukaguzi wa bandari",
+          "body": [
+            "Hueleza ikiwa bandari za mwenyeji (host) zinapokea miunganisho ya TCP: moja, kadhaa, au mfululizo hadi zote 65 535 (22, 80, 443, 8000-8100). Kila moja iko wazi, imefungwa, au haina jibu katika muda uliotoa.",
+            {
+              "note": "Jaribu tu wenyeji ambao ni wako, au ambao unaweza kuwajaribu."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Cheti cha tovuti",
+          "body": [
+            "Huonyesha vyeti ambavyo tovuti hutoa wakati muunganisho salama unapofanyika: ni vya nani, nani alivitia saini, siku ngapi zimebaki, ikiwa kompyuta hii inaviamini na kwa nini haiamini, toleo la TLS na cipher. Handshake pekee ndiyo inayofanyika: hakuna ombi linalotumwa.",
+            {
+              "points": [
+                "Andika example.com, example.com:8443 au anwani ya wavuti.",
+                "Seva za barua pepe na FTP huanza bila usimbaji na huombwa kuhamia kwenye TLS (STARTTLS): huchaguliwa kwa bandari (25, 587, 143, 110, 21) au kwa mkono.",
+                "\"Kila kitu\" huonyesha yote ambayo vyeti vinavyosema; \"PEM\" huvitoa ili kunakili au kuhifadhi."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mipangilio",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Mipangilio ya Dev",
+          "body": [
+            "Faili → Mipangilio hufungua Mipangilio ya programu katika sehemu ya Dev.",
+            {
+              "points": [
+                "Fungua kila zana katika tabo yake yenyewe, au katika tabo ilimochaguliwa.",
+                "Fungua tabo mpya kwenye zana iliyotumika mwisho, au kwenye ukurasa wa kwanza.",
+                "Rudisha chaguzi za kila zana, na pini, kama zilivyokuwa wakati programu inavyosambazwa."
+              ]
+            },
+            "Menyu ya kubofya kulia ya Windows Explorer, lugha, mandhari na funguo zipo katika Mipangilio ya programu kwa ujumla."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Kuhusu Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Kuhusu Dev",
+          "body": [
+            "Dev ni programu ya Syntelab Creative kwa ajili ya watengenezaji: zana zinazobofya na kufungua kodi, kupanga na kukagua, kubadilisha aina moja ya data kuwa nyingine, na kuchambua kile ambacho ni vigumu kusoma kama kilivyo.",
+            "Kila kitu hufanyika kwenye kompyuta hii. Hakuna kitu unachoandika, kubandika au kufungua katika zana kinachohifadhiwa au kutumwa popote. Hakuna kikomo kilichowekwa kwenye ukubwa au idadi ya faili: vikomo ni kumbukumbu na diski ya kompyuta.",
+            "Ni mpya na bado inajengwa. Pale inapokosa kitu kwa ajili ya kazi yako, tujulishe kupitia Msaada → Maoni."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Kile Dev imejengwa nacho",
+          "body": [
+            {
+              "points": [
+                "Wahariri: CodeMirror, https://codemirror.net . Leseni ya MIT. Hakimiliki (C) 2018-2021 na Marijn Haverbeke na wengine.",
+                "Kusoma na kupaka rangi JSON katika wahariri: @codemirror/lang-json, https://github.com/codemirror/lang-json , ikiwa na @codemirror/language na @lezer/highlight. Leseni ya MIT. Hakimiliki (C) 2018-2021 na Marijn Haverbeke na wengine.",
+                "Kusoma na kupaka rangi YAML, XML, HTML na SQL katika wahariri: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (ikiwa na @codemirror/lang-css na @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Leseni ya MIT. Hakimiliki (C) 2018-2024 na Marijn Haverbeke na wengine.",
+                "Kukagua hati dhidi ya JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Leseni ya MIT. Hakimiliki (c) 2020-2026 Dmitry Dygalo. Imejengwa bila sehemu yake ya mtandao: Dev haitafuti schema kamwe.",
+                "Mifumo ya JSONPath (linganisha na tafuta): regex, https://github.com/rust-lang/regex . Leseni ya MIT au Apache-2.0. Hakimiliki (c) 2014 The Rust Project Developers.",
+                "Kusoma YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Leseni ya MIT au Apache-2.0. Hakimiliki (c) 2015 Chen Yuheng, Hakimiliki (c) 2023 Ethiraric. Kuandika YAML hufanywa na Dev yenyewe.",
+                "Kulinganisha maandishi mawili (Diff): similar, https://github.com/mitsuhiko/similar . Leseni ya Apache-2.0. Waandishi: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Leseni ya MIT au Apache-2.0. Hakimiliki (c) 2014-2026 Alex Crichton.",
+                "Muhtasari wa zana ya Hash na saini ya tokeni: sha2, sha1 na md-5, https://github.com/RustCrypto/hashes . Leseni ya MIT au Apache-2.0. Hakimiliki (c) 2006-2009 Graydon Hoare, Hakimiliki (c) 2009-2013 Mozilla Foundation, na waandishi wa RustCrypto.",
+                "Tarehe, saa na kanda za saa (Muhuri wa muda wa Unix, Ufafanuzi wa Cron): jiff, https://github.com/BurntSushi/jiff , ikiwa na kanda za saa za kanzi ya IANA. Leseni ya Unlicense au MIT. Hakimiliki (c) 2015 Andrew Gallant.",
+                "Kutenganisha URL: url na idna, https://github.com/servo/rust-url . Leseni ya MIT au Apache-2.0. Hakimiliki (c) 2013-2025 The rust-url developers.",
+                "Kusoma vyeti vya X.509: x509-parser, https://github.com/rusticata/x509-parser . Leseni ya MIT au Apache-2.0. Hakimiliki (c) 2017 Pierre Chifflier.",
+                "Kijaribio cha regex huendesha maneno ya kawaida ya JavaScript, katika injini ya WebView ambayo programu huchora nayo (Microsoft Edge WebView2 kwenye Windows); hakuna maktaba iliyoongezwa kwa ajili hiyo.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Leseni ya MIT au Apache-2.0. Hakimiliki (c) 2018 Sam Rijs, Alex Crichton na wachangia.",
+                "UUIDs: uuid, https://github.com/uuid-rs/uuid . Leseni ya Apache-2.0 au MIT. Hakimiliki (c) 2014 The Rust Project Developers, Hakimiliki (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Byte nasibu kwa nywila, siri na UUIDs, kutoka kwa mfumo wa uendeshaji: getrandom, https://github.com/rust-random/getrandom . Leseni ya MIT au Apache-2.0. Hakimiliki (c) 2018-2025 The rust-random Project Developers, Hakimiliki (c) 2014 The Rust Project Developers.",
+                "Funguo na saini za RSA: rsa, https://github.com/RustCrypto/RSA , kwa kutumia num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Leseni ya MIT au Apache-2.0. Hakimiliki (c) RustCrypto Developers na dignifiedquire; Hakimiliki (c) 2014 The Rust Project Developers.",
+                "Funguo na saini za NIST curves (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , kwa kutumia ecdsa, elliptic-curve na crypto-bigint zinazohitajika. Leseni ya Apache-2.0 au MIT. Hakimiliki (c) 2020-2023 RustCrypto Developers.",
+                "Funguo na saini za Ed25519: ed25519-dalek na curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Leseni ya BSD 3-Clause. Hakimiliki (c) 2017-2019 isis agora lovecruft; Hakimiliki (c) 2016-2021 isis agora lovecruft na Henry de Valence. Haki zote zimehifadhiwa.",
+                "Mifumo ambayo funguo, maombi na vyeti huandikwa (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER na PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Leseni ya Apache-2.0 au MIT. Hakimiliki (c) 2020-2023 The RustCrypto Project Developers.",
+                "Faili za funguo za OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , ikiwa na bcrypt-pbkdf, aes, ctr, chacha20 na ciphers na hashes zingine za RustCrypto zinazohitajika ili kufunga funguo ( https://github.com/RustCrypto ). Leseni ya Apache-2.0 au MIT. Hakimiliki (c) 2021-2024 The RustCrypto Project Developers.",
+                "Faili za PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , ikiwa na pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 na scrypt za RustCrypto zinazohitajika. Leseni ya MIT au Apache-2.0. Hakimiliki (c) Dmitry Pankratov; Hakimiliki (c) The RustCrypto Project Developers.",
+                "Namba nasibu ambazo funguo hutengenezwa nazo, zinazochukuliwa kutoka kwenye mfumo wa uendeshaji: rand_core, https://github.com/rust-random/rand . Leseni ya MIT au Apache-2.0. Hakimiliki 2018 Developers of the Rand project, Hakimiliki (c) 2014 The Rust Project Developers.",
+                "Kiteja cha HTTP: ureq, https://github.com/algesten/ureq . Leseni ya MIT au Apache-2.0. Hakimiliki (c) 2019 Martin Algesten.",
+                "Miunganisho salama (TLS) ya kiteja cha HTTP na ya \"Cheti cha tovuti\": rustls, https://github.com/rustls/rustls , leseni ya Apache-2.0, ISC au MIT, Hakimiliki (c) 2016 Joseph Birr-Pixton; ikiwa na rustls-webpki, https://github.com/rustls/webpki , leseni ya ISC, Hakimiliki 2015 Brian Smith; ring, https://github.com/briansmith/ring , leseni za Apache-2.0 na ISC; webpki-roots, https://github.com/rustls/webpki-roots , leseni ya CDLA-Permissive-2.0.",
+                "Kama kompyuta hii inaamini cheti: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Leseni ya MIT au Apache-2.0. Hakimiliki (c) 2022 1Password.",
+                "Kusoma Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Leseni ya MIT. Hakimiliki 2015 Google Inc. Haki zote zimehifadhiwa.",
+                "Kusoma faili zilizoandikwa kwa usimbo (encodings) zingine tofauti na UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , leseni ya Apache-2.0 au MIT (ikiwa na BSD-3-Clause kwa data zake), Hakimiliki ya Mozilla Foundation; na chardetng, https://github.com/hsivonen/chardetng , leseni ya Apache-2.0 au MIT, Hakimiliki ya Mozilla Foundation.",
+                "Maneno ya nywila (passphrases): EFF Large Wordlist for Passphrases, https://www.eff.org/dice , ya Electronic Frontier Foundation, inayotumika chini ya leseni ya Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Orodha hii inatumika kama ilivyo.",
+                "Kufungua funguo zilizofungwa kwa njia ya zamani ya OpenSSL: aes, cbc na des za RustCrypto, https://github.com/RustCrypto . Leseni ya MIT au Apache-2.0. Hakimiliki (c) RustCrypto Developers.",
+                "Iliandikwa kwa ajili ya Dev, bila maktaba: utafutaji wa DNS (maswali yaliyoandikwa na majibu yanayosomwa kama RFC 1035 inavyoelekeza) na ukaguzi wa bandari (port check).",
+                "Iliandikwa kwa ajili ya Dev, bila maktaba: kusoma na kuandika JSON kama mkondo (stream), JSONPath (RFC 9535), Base64, percent-encoding, marejeleo ya herufi za HTML (majina yake ni ya kiwango cha HTML, https://html.spec.whatwg.org ), string escapes, kusoma JSON Web Tokens, kuandika YAML, CSV pande zote mbili, kusoma ratiba za cron, kusanifu XML na HTML, na kusanifu SQL."
+              ]
+            },
+            "Kile kinachoshirikiwa na sehemu nyingine ya programu kipo chini ya \"Kuhusu Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Kile ambacho Dev hakiwezi kufanya bado",
+          "body": [
+            {
+              "points": [
+                "Saini ya tokeni hukaguliwa tu wakati ilipoundwa kwa siri ya pamoja (HS256, HS384, HS512).",
+                "Kihakiki cha JSON Schema hueleza kile kisichofaa kwa Kiingereza, kama maktaba yake inavyofanya, na haifuati $ref kwenda faili au anwani nyingine.",
+                "Kipangaji cha SQL hakiombi lahaja (dialect) na hakikagui maana ya sentensi: hueleza tu kuhusu mnyororo wa maandishi (string) au maoni yanayokosa mwisho.",
+                "YAML, na JSON inayogeuka kuwa YAML au CSV, huhifadhiwa nzima kwenye kumbukumbu wakati zinapobadilishwa; CSV inayogeuka kuwa JSON, XML, HTML na SQL hufanyiwa kazi zinaposomwa, bila kujali ukubwa wao.",
+                "Jedwali la CSV linalotazamwa husomwa tu: hakuna kitu kinachoandikwa ndani yake, na hakuna kitu kinachonakiliwa kutoka humo bado.",
+                "Diff huhifadhi baiti kumi na sita kwa kila mstari wa faili mbili, si faili zenyewe; nyaraka mbili za JSON huhifadhiwa nzima, kwani huandikwa upya kabla ya kulinganishwa.",
+                "Mfululizo wa mistari usio na mstari wowote unaopatikana mara moja hasa pande zote mbili hulinganishwa kadiri sekunde moja inavyoruhusu: tofauti zinazotajwa ni za kweli, ingawa si wakati wote ndizo chache zaidi.",
+                "Diff hailinganishi jinsi mistari inavyomalizika (CRLF au LF).",
+                "Folda mbili hulinganishwa kwa baiti za faili zao; faili huendanishwa kwa majina yao, herufi kwa herufi.",
+                "Kile ambacho zana za Kagua zinavyosema ni JSON, ikiwa na majina yake kwa Kiingereza.",
+                "Kijaribio cha regex huendesha regular expressions za JavaScript, si PCRE na wala za Rust; hufanya kazi kwenye maandishi yanayoweza kuonyeshwa, si kwenye faili iliyohifadhiwa kwenye diski; mfuatano (pattern) unaotumia zaidi ya sekunde 20 hukatishwa.",
+                "Kidecode cha cheti husoma cheti na hakijangi kama kinapaswa kuaminika: si mnyororo wake, si saini yake, wala kama kilifutwa.",
+                "Faili ambayo ni maandishi katika encoding nyingine tofauti na UTF-8 husomwa inapokuwa ndogo vya kutosha kuonyeshwa; faili kubwa kuliko hapo, inayofanyiwa kazi kutoka kwenye diski, lazima iwe UTF-8.",
+                "Faili inayowekwa kwenye zana huchukuliwa hadi MB 16; dirisha haliambiwi faili iliyowekwa iko wapi kwenye diski, hivyo faili kubwa zaidi hufunguliwa kwa kutumia Fungua faili.",
+                "Nywila (Passphrases) huundwa kwa maneno ya Kiingereza pekee.",
+                "Ufafanuzi wa Cron: kijenzi hutengeneza ratiba za crontab (sehemu tano, au sita ikiwa kuna sekunde); ratiba yenye L, W, # au ? haiwezi kuchukuliwa humo. Nyakati za AWS rate() haziwezi kutajwa, kwani huhesabiwa tangu wakati sheria yake ilipoundwa. Kwa systemd, matukio ya kawaida ya kalenda husomwa; si sehemu za sekunde au orodha ya siku zinazohesabiwa kuanzia mwisho wa mwezi.",
+                "Kitazamaji cha Hex huangalia tu: hakuna kitu kinachobadilishwa kwenye faili. Safu ya maandishi huonyesha ASCII au herufi za Ulaya wa Magharibi, si alfabeti nyingine; baiti au maandishi hutafutwa, si mifumo (patterns).",
+                "Funguo na vyeti: funguo ni RSA, miringo ya P-256, P-384 na P-521, na Ed25519; nyingine (DSA, secp256k1, X25519) hazisomwi. Funguo iliyofungwa kwa njia ya zamani ya OpenSSL hufunguliwa wakati cipher yake ni AES au 3DES. Faili ya .pfx hushikilia funguo moja pamoja na vyeti vyake. Kutengeneza funguo kubwa sana ya RSA huchukua muda na haiwezi kusitishwa katikati. Maktaba inayotengeneza funguo za RSA ina udhaifu unaojulikana kwa mshambuliaji anayeweza kupima nyakati za saini nyingi kupitia mtandao (RUSTSEC-2023-0071): hapa funguo hutengenezwa na kuandikwa kwenye kompyuta yako, na hakuna kitu kinachosainiwa kwa mtu mwingine.",
+                "Kiteja cha HTTP: HTTP/1.1 (si HTTP/2 au 3); hakuna kuki (cookies) zinazohifadhiwa kati ya maombi; fomu za sehemu nyingi (multipart) hazijengwi kwa ajili yako; jibu kubwa kuliko 16 MB, au lile ambalo si maandishi, huandikwa kwenye faili kwa kutuma ombi tena.",
+                "Utafutaji wa DNS huonyesha saini (DNSSEC) na haizihakiki. Ukaguzi wa bandari hujaribu TCP pekee: bandari ya UDP ambayo imenyamaza haiwezi kutofautishwa na ile iliyofungwa. Cheti cha tovuti hakiulizi ikiwa cheti kilifutwa.",
+                "Menyu ya kubofya kulia ni kwa ajili ya Windows Explorer; kwenye Windows 11, maingizo yake yako chini ya \"Onyesha chaguo zaidi\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

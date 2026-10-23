@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Texter och filer",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Redigeraren",
+          "body": [
+            "Scribe är en redigerare för ren text med tillhörande verktyg. Varje text har en flik; texten är i mitten, verktygspanelen på sidan och en rad med fakta under.",
+            "När Scribe öppnas frågas du först vad du vill göra: räkna ord, sök och ersätt, ta bort dubbletter, jämföra två texter, sortera rader, vända på en text, skriva platshållartext eller slumpmässig text. Varje val öppnar texten med motsvarande verktyg bredvid; \"En tom text\" öppnar endast texten, och nyligen öppnade texter listas under.",
+            {
+              "points": [
+                "Arkiv → Ny text (Ctrl+N) startar en tom text.",
+                "Arkiv → Öppna (Ctrl+O) öppnar en eller flera filer, var och en i sin flik. Alla filer som innehåller text kan öppnas: .txt, .md, .csv, .log, .srt, källkod och andra.",
+                "Redigera → Ångra (Ctrl+Z) och Återställ (Ctrl+Y) går igenom allt som gjorts med texten, där ett verktyg eller ett recept räknas som ett steg.",
+                "Redigera → Sök och ersätt (Ctrl+F) öppnar ett fält i redigeraren som går från ett matchande resultat till nästa.",
+                "Redigera → Markera alla (Ctrl+A)."
+              ]
+            },
+            "Raden under texten visar var markören är, hur mycket som är markerat, antal rader, ord och tecken, filens kodning och hur radbrytningarna ser ut.",
+            "Filer som dras och släpps i fönstret öppnas också, var och en som en ny text med filnamn, kodning och radbrytningar. Programmet läser in innehållet i en fil som släpps in men inte var den finns på disken, så vid sparning frågas var den ska sparas; filer över 64 MB öppnas via Arkiv → Öppna.",
+            "En ny text, medan den är tom, listar nyligen öppnade texter: klicka på en för att öppna den. \"Rensa listan\" tömmer den; listan sparas endast på den här datorn."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Spara och Spara som",
+          "body": [
+            "Inget ändras i filen på disken förrän du sparar. En punkt på fliken visar att texten har ändringar som inte finns i filen, och om du stänger en sådan flik kommer du att bli tillfrågad först.",
+            {
+              "points": [
+                "Spara (Ctrl+S) skriver över filen med texten. För en ny text frågas var den ska sparas.",
+                "Spara som (Ctrl+Shift+S) skriver till en ny fil, som sedan tar flikens plats, med allt som kan ångras kvar; den gamla filen förblir som den var."
+              ]
+            },
+            "En fil skrivs antingen helt eller inte alls: om skrivningen misslyckas finns filen som fanns där kvar.",
+            {
+              "note": "En fil sparas på samma sätt som den öppnades: med samma kodning och samma radbrytningar. En text skriven i Windows och en skriven i Linux förblir vad de var."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodningar och radbrytningar",
+          "body": [
+            "En kodning är sättet som bokstäver sparas som bytes. Scribe läser vad filen anger om sig själv, och gissar när den inte anger något. De flesta filer idag är UTF-8; äldre filer från Centraleuropa är ofta windows-1250.",
+            {
+              "points": [
+                "Bokstäver som ser fel ut (Ã£ istället för ă, eller rutor): Arkiv → \"Läs igen med annan kodning\", och välj den som filen skrevs i.",
+                "För att spara i en annan kodning, välj den på raden under texten och spara sedan. Om texten innehåller bokstäver som kodningen inte kan skriva, anger Scribe vilka och skriver inget.",
+                "Radbrytningar (Windows CRLF, Linux och macOS LF, gammal Mac CR) ändras på samma ställe. En fil med blandade radbrytningar markeras som sådan; vid sparning får alla rader samma brytning."
+              ]
+            },
+            "Vad en ny text startar med väljs i Inställningar."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Hur texten visas",
+          "body": [
+            {
+              "points": [
+                "Allt i vyn-menyn är en brytare: på visas det; av visas det inte.",
+                "Text: Radbryt långa rader (Alt+Z) — en rad som är längre än fönstret fortsätter nedanför, men texten behåller sina rader; Radnummer; Resultat bredvid texten.",
+                "Bredvid texten: Verktyg (Ctrl+T), Recept, Statistik. Panelen visar endast de delar som är på; om ingen är på visas ingen panel.",
+                "Visade verktyg: varje grupp av verktyg (sök och ersätt, linjer, versaler och gemener, rensning, skriv text) kan tas bort från panelen. Ett verktyg som väljs från Format- eller Verktygsmenyn visas ändå: dess del och grupp återkommer automatiskt.",
+                "Dubbelpilen högst upp i panelen fäller ihop den till ett fält vid kanten, därifrån varje del nås med ett klick; dra i kanten för att göra den bredare eller smalare.",
+                "Bokstäver och deras storlek väljs i Inställningar."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Mycket stora filer",
+          "body": [
+            "En fil på över 64 MB placeras inte i redigeraren: den öppnas i en flik som visar en sida om 500 rader åt gången, vilka läses från filen allt eftersom. Filer på flera gigabyte öppnas på detta sätt på den tid det tar att gå igenom dem en gång.",
+            {
+              "points": [
+                "\"Föregående sida\" och \"Nästa sida\" bläddrar igenom filen; ett radnummer och \"Gå till\" hoppar till vilken rad som helst.",
+                "Sök letar igenom hela filen, med samma val som på andra ställen, och listar de platser som hittades: klicka på en för att gå till dess rad. En lång lista visas i delar med \"Hitta fler\".",
+                "\"Kör ett recept på hela filen\" skriver resultatet i en mapp som du väljer, under samma namn. Själva filen ändras aldrig här.",
+                "\"Öppna hela i redigeraren\" placerar den i redigeraren ändå, för att ändra den manuellt. Det kan gå långsamt och kräver flera gånger filens storlek i minne."
+              ]
+            },
+            {
+              "note": "Filer skrivna med två byte per bokstav (UTF-16) kan inte visas en sida i taget. Ett recept håller hela filen i minnet medan det körs: begränsningen är datorns minne."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Verktyg",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Hur verktygen fungerar",
+          "body": [
+            "Verktygen finns i panelen bredvid texten, uppdelade i grupper. Klicka på ett verktyg för att se dess alternativ, och klicka sedan på Verkställ.",
+            {
+              "points": [
+                "När något är markerat ändrar ett verktyg endast markeringen; när inget är markerat ändras hela texten. Panelen anger vilket som gäller högst upp.",
+                "Under knappen anger verktyget vad det har gjort: hur många rader eller platser som ändrades.",
+                "Varje verktyg är ett steg: Ångra tar tillbaka hela steget.",
+                "Varje verktyg finns även i menyerna och i kommandosökningen: de som ändrar textens form (rader, versaler och bokstäver, rensning) i Formatmenyn, övriga i Verktyg. Om du väljer ett där öppnas panelen med dess alternativ."
+              ]
+            },
+            "I Formatmenyn presenteras ett verktyg som främst har ett val som sina alternativ: varje sätt att ändra versaler, varje typ av citattecken, varje sätt att vända på en text är ett eget kommando, vilket öppnar verktyget med det alternativet valt. Där fönstret är för smalt för en grupp, blir gruppen en knapp som öppnar hela listan.",
+            "Verktygen körs på den här datorn. Ingen text lämnar den."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Resultatet, innan du tillämpar",
+          "body": [
+            "När ett verktyg är öppet visas vad det skulle ge bredvid texten, i rutan \"Resultat\". Ingenting i texten ändras förrän du väljer Tillämpa. Resultatet följer med: ändra ett val eller texten, så genereras det på nytt.",
+            {
+              "points": [
+                "Texten och resultatet står sida vid sida, vardera under en rubrik av samma höjd, så att samma rader börjar på samma höjd; de skrollas tillsammans (kedjeknappen stänger av detta).",
+                "Rader som skulle ändras är markerade, med den del av raden som ändras markerad mörkare; rader som bara skulle flyttas, och rader som är nya, har each sin egen färg. De rader som skulle ändras eller tas bort är även markerade i din text.",
+                "Under namnen: vad som skulle hända i siffror — rader ändrade, flyttade, nya, borttagna; rader och tecken före och efter.",
+                "Under resultatet: de rader som skulle tas bort. Klicka på en för att gå till den i texten.",
+                "Resultatets små knappar: kopiera det, öppna det som en ny text, jämför det med texten i en flik, skrolla tillsammans, placera resultatet under texten istället för bredvid, dölj det. Texten har sina egna: ångra, gör om, kopiera, klistra över, markera alla, rensa.",
+                "Dra i fältet mellan de två för att ge den ena mer utrymme; ett dubbelklick gör dem lika igen."
+              ]
+            },
+            "Efter Tillämpa på texten meddelar Resultat-rutan detta (\"Tillämpat. Texten till vänster är nu resultatet.\") och erbjuder Ångra samt \"Jämför med hur det var\", vilket öppnar samma jämförelse mellan före och efter. Ett resultat visas igen så snart du ändrar texten eller ett val i verktyget.",
+            {
+              "note": "Visa → \"Resultat bredvid texten\" stänger av eller sätter på rutan. För en mycket lång text (över två miljoner tecken) visas ingenting i förväg: använd verktyget, och Ångra återställer det."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Ersätt överallt",
+          "body": [
+            "Ersätter varje ställe där något hittas, på en gång. Medan du skriver vad som ska sökas efter, anger Scribe hur många ställen det hittas på och markerar dem i texten, så att du ser vad som kommer att ändras innan du applicerar.",
+            {
+              "points": [
+                "\"Reguljärt uttryck\": texten som ska sökas efter är ett mönster. I \"Ersätt med\" står $1, $2… för vad mönstrets grupper hittade.",
+                "\"Skilj på stora och små bokstäver\": a och A är olika bokstäver.",
+                "\"Endast hela ord\": \"katt\" hittas inte inuti \"kattmat\".",
+                "\"Behåll versaler i det som ersätts\": att ersätta \"katt\" med \"hund\" gör \"Katt\" till \"Hund\" och \"KATT\" till \"HUND\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Fler val\" → \"Fyll i…\": det som sätts in kan innehålla platshållare som fylls i vid varje matchning. {counter} räknar 1, 2, 3… ({counter:10} börjar på 10, {counter:10:5} ökar med 5); {date} och {time} är din dators datum och tid; {uuid} är en identifierare; {random} är 8 slumpmässiga bokstäver och siffror ({random:12} för 12).",
+                "Under det du söker efter anger Scribe även på hur många rader matchningarna finns och hur många olika texter det rör sig om."
+              ]
+            },
+            "\"Ersätt flera samtidigt\" utför en lista med par i ett steg. Skriv ett par per rad, som: vad som ska sökas efter => vad som ska sättas in. De utförs från första till sista, var och en på det som den föregående lämnade efter sig; en tom andra del tar bort texten.",
+            {
+              "note": "Ett mönster kan inte låsa programmet: tiden det tar ökar i takt med textens längd och inte snabbare. Mönster som refererar tillbaka till vad de hittat (\\1) är därför inte tillgängliga."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Rader",
+          "body": [
+            {
+              "points": [
+                "Sortera rader efter: bokstäver, som i en ordbok, på programmets språk eller ett språk du väljer (på rumänska kommer ă efter a; svenska sätter ä efter z, tyska bredvid a); bokstäver med siffror som siffror (fil2 före fil10); siffran som varje rad börjar med; längd; antal ord; datumet som varje rad börjar med (05.03.2024, 2024-03-05, med eller utan klockslag); internetadresser; versionsnummer (1.2.10 efter 1.2.9); titlar, där en inledande artikel inte räknas; en ordning som du skriver (liten, mellan, stor); eller ingen ordning alls.",
+                "Rader som saknar sorteringsgrund (inget nummer, inget datum, ett värde som inte finns i den ordning du skrev) hamnar sist oavsett hur de andra sorteras: minsta först eller största först.",
+                "Fler sorteringsalternativ: jämför från ett visst ord eller tecken, eller en kolumn i en tabell (vilka delar kolumnerna består av); behåll den första raden som en rubrik; sortera stycken istället för rader; och städa först — trimma, ta bort tomma rader, ta bort dubbletter.",
+                "Ta bort dubbletter: behåll den första, den sista, eller ingen av de rader som upprepas (endast de som förekommer en gång sparas). Versaler, blanksteg runt en rad, siffror, skiljetecken och ett antal tecken i början eller slutet kan ignoreras; endast en kolumn, eller endast det ett mönster hittar, kan vara det som jämförs. Tomma rader behandlas som övriga, behålls, tas bort eller slås ihop.",
+                "Räkna upprepade rader: behåll varje rad en gång, med antalet förekomster skrivet före raden — de mest upprepade först, eller de minst upprepade, eller i den ordning de förekommer.",
+                "Behåll eller ta bort rader: letar efter något i varje rad och behåller endast de rader som innehåller det, eller endast de som inte gör det.",
+                "Vänd på ordningen av rader; Blanda rader.",
+                "Numrera rader: det första numret, vad som ska stå efter det, nollor framför så att numren ligger i linje, tomma rader utan nummer.",
+                "Tomma rader: ta bort alla, eller lämna en där det finns flera.",
+                "Slå ihop rader till en, med det du väljer emellan; Dela upp i rader vid varje kommatecken, semikolon eller något annat. Där det som står mellan saker skrivs in (numrering, sammanfogning, uppdelning, räkning), står \\t för en tabulator, vilket inte kan skrivas direkt i ett fält."
+              ]
+            },
+            {
+              "note": "Ett val som endast är relevant tillsammans med ett annat visas endast då: kolumnen, när du jämför efter en kolumn. Valen som färre personer behöver finns under \"Fler val\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Versaler",
+          "body": [
+            "Ändra versaler: meningsstor bokstav, varje ord med stor bokstav, alla versaler, alla gemener, inverterat, samt sätten namn skrivs på i kod: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Versaler följer reglerna för varje alfabet, inte bara för engelska.",
+            "I gruppen Riktning vänder \"Vänd på texten\" på bokstäverna i varje rad, eller ordningen på dess ord, eller bokstäverna i varje ord; \"Upp och ner\" skriver texten så att den kan läsas från andra sidan bordet, och \"Som i en spegel\" byter även ut tecken som har en vänster- och högersida. Bokstäver räknas som en läsare räknar dem: en bokstav med sina tecken förblir en."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Rengöring",
+          "body": [
+            {
+              "points": [
+                "Rensa mellanslag: flera mellanslag blir ett; mellanslag i slutet av rader tas bort.",
+                "Trimma radändar: i båda ändar, i början eller i slutet.",
+                "Citattecken: raka, engelska, rumänska, tyska eller franska.",
+                "Ta bort diakritiska tecken: ă blir a, é blir e. Endast i det latinska och grekiska alfabetet, där en bokstav utan sitt tecken fortfarande är samma bokstav.",
+                "Reparera rumänska bokstäver: ş och ţ (med cedilla, skrivna med äldre tangentbord) blir ș och ț (med kommatecken), de bokstäver som rumänska skrivs med.",
+                "Flikar till mellanslag och mellanslag till flikar, med en flikbredd som du väljer.",
+                "Ta bort HTML-taggar: för källkoden till en webbsida som klistrats in i texten. Taggar, skript och stilar tas bort; det som en läsare skulle se finns kvar. För att hämta en sida från dess adress, använd verktyget under detta, \"Text från en webbsida\".",
+                "Text från en webbsida: skriv adressen till en sida (example.com/page) och välj \"Hämta texten\". Det som en läsare skulle se på den sidan skrivs där markören är, utan taggar, skript eller stilar. Detta är det enda verktyget i Scribe som går online, och endast när du ber om det: sidan hämtas av webbläsaren som är installerad på den här datorn (Microsoft Edge eller Google Chrome), körs utan fönster och utan dina cookies eller inloggningar; programmet självt skickar ingenting. En sida som kräver att du är inloggad ger endast det som en främling skulle se."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Återställa rumänska diakritiska tecken",
+          "body": [
+            "Rumänska som skrivits utan ă, â, î, ș, ț skrivs om med dem.",
+            {
+              "steps": [
+                "Öppna verktyget i gruppen Rengöring och välj Verkställ.",
+                "Ord som bara har en korrekt form ändras direkt: \"stiu\" blir \"știu\", \"informatii\" blir \"informații\".",
+                "Ord som kan läsas på mer än ett sätt (fata, fată, fața, față) listas under knappen, var och en på sin plats i texten. Klicka på den rätta formen för varje ord.",
+                "Eller markera \"Välj automatiskt den mest sannolika formen\" innan du verkställer: inget frågas och resultatet får läsas igenom."
+              ]
+            },
+            "Där orden runtomkring räcker till, avgör Scribe utifrån dem: \"o casa\" blir \"o casă\", \"casa mea\" förblir oförändrat, \"pentru ca\" blir \"pentru că\".",
+            {
+              "note": "Detta är byggt för Scribe utifrån en lista med vanliga ord och de ändelser som rumänska alltid skriver med diakritiska tecken. Ord som programmet inte känner till (ovanliga ord, namn) förblir som de är skrivna, och ett ord som redan är skrivet med diakritiska tecken rörs aldrig. Läs resultatet innan du skickar det."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Skriva text: platshållare och slumpmässigt",
+          "body": [
+            "Verktygen i gruppen \"Skriv text\" ändrar ingenting: de skriver. Det de genererar placeras där markören befinner sig, eller ersätter det markerade området.",
+            {
+              "points": [
+                "Platshållartext: stycken, meningar, ord, listor, rubriker eller delar av en sida (en rubrik, stycken, en lista). På tryckarslatin (lorem ipsum), engelska, rumänska, kontorsord eller köksord, eller dina egna ord. Fler val: korta, medellånga eller långa meningar; ren text, Markdown, HTML eller JSON; rubriknivå; teckenbegränsning (texten klipps vid ett helt ord och avslutas fortfarande som en mening); ord som ska uteslutas.",
+                "Fiktiva data: namn, e-postadresser, telefonnummer, gatuadresser, datum eller nummer, ett per rad, från Rumänien eller engelskspråkiga länder. \"Rader efter mitt mönster\" skriver varje rad enligt dina anvisningar, där {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} och {row} representerar det som skapas — en tabell att testa något på, om en stund.",
+                "Slumpmässig text: lösenord (bokstäver, siffror och tecken, minst ett av varje), bokstäver, siffror, hexadecimalt eller identifierare (UUID), på en rad eller flera. Tecken som lätt förväxlas (0 och O, 1, l och I) kan uteslutas.",
+                "Ett seed (under \"Fler val\") gör att platshållartext och fiktiva data blir likadana varje gång för samma nummer; 0 ger något nytt varje gång."
+              ]
+            },
+            {
+              "note": "Lösenord skapas på den här datorn, utifrån operativsystemets slumpmässighet, och skickas ingenstans. Påhittade e-postadresser slutar på example.com, där mejl inte når någon; ett slumpmässigt telefonnummer kan tillhöra någon, så ring det inte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recept",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Spara det du gjort som ett recept",
+          "body": [
+            "Ett recept är en lista med verktyg och deras inställningar, sparat under ett namn och som kan köras igen med ett klick.",
+            {
+              "steps": [
+                "Använd de verktyg du vill på en text, i den ordning du vill ha dem.",
+                "Öppna \"Recept\" högst upp i panelen: verktygen du använde listas.",
+                "Välj \"Spara som recept\" och ge det ett namn.",
+                "Öppna senare receptet och välj \"Kör på texten\": alla steg utförs, och ett Ångra återställer alla steg."
+              ]
+            },
+            "Recept sparas på den här datorn och finns tillgängliga i varje text."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Ändra ett recept, eller skapa ett från grunden",
+          "body": [
+            "\"Ändra\" på ett öppet recept visar dess namn och steg. Varje steg kan flyttas upp eller ner, tas bort eller ges andra inställningar; verktyg läggs till från listan under stegen. Ingenting sparas förrän du väljer \"Spara\".",
+            "\"Nytt recept\" startar ett recept utan steg, som sätts ihop på samma sätt utan att verktygen först appliceras på en text.",
+            {
+              "note": "Verktyg som skriver text (fyllnadstext, slumpmässig text) är inte steg i ett recept: ett recept ändrar en befintlig text."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Köra ett recept på filer",
+          "body": [
+            {
+              "steps": [
+                "Öppna receptet och lägg till filer eller en mapp (inklusive undermappar) under \"Kör på filer\".",
+                "Välj var resultaten ska hamna: i en annan mapp, vilket lämnar originalfilerna orörda, eller genom att skriva över filerna själva.",
+                "Kör. Scribe anger hur många filer som skrevs, hur många som inte behövde ändras, samt vilka som inte kunde behandlas och varför."
+              ]
+            },
+            "Varje fil skrivs med den teckenkodning och de radbrytningar den hade. Vid export till en annan mapp behålls mappstrukturen, och en fil som redan finns där skrivs aldrig över.",
+            {
+              "note": "Att skriva över filerna själva kan inte ångras i Scribe. Behåll en kopia om filerna är viktiga."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistik, jämförelse och mappar",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistik",
+          "body": [
+            "\"Statistik\" högst upp i panelen visar vad texten, eller markeringen, består av. Varje del kan fällas ihop.",
+            {
+              "points": [
+                "Högst upp: ord, tecken med och utan blanksteg, meningar, stycken, rader, sidor och storleken i bytes.",
+                "Tid: att läsa tyst, att läsa högt, att skriva på tangentbord och att skriva för hand.",
+                "Ord: hur många som är unika (och deras andel av totalen), bokstäver i ett ord, stavelser, det längsta och det kortaste ordet, samt hur många ord det finns av varje längd.",
+                "Meningar: ord i en mening, hur många som är korta, medellånga och långa, hur många som är påståenden, frågor och utrop, samt den längsta och den kortaste.",
+                "Läsbarhet: ett värde från 0 (mycket svårt) till 100 (mycket lätt), baserat på formeln för textens språk. Formler finns för engelska, tyska, spanska, franska, italienska, nederländska, portugisiska och ryska; ett språk utan formel får inget värde, eftersom en formel för ett annat språk skulle vara missvisande.",
+                "Vanligaste uttrycken: de ord som används mest med deras andel av texten, samt par och grupper om tre ord som återkommer.",
+                "Plats inom vanliga gränser: hur många tecken som återstår, eller överskrids, för en titel, en beskrivning, ett kort inlägg och annat."
+              ]
+            },
+            "Ord och meningar identifieras enligt reglerna för varje skrift, så även kinesiska, japanska och thailändska, som inte använder blanksteg mellan ord, räknas. De hastigheter som tiderna beräknas med, och hur många ord som utgör en sida, ställs in i Inställningar."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Jämföra två texter",
+          "body": [
+            {
+              "points": [
+                "Verktyg → \"Jämför med en annan text\": texten i redigeraren bredvid en text du skriver eller klistrar in.",
+                "Verktyg → \"Jämför med fil\": texten i redigeraren, som den är nu, bredvid en fil som du väljer.",
+                "Verktyg → \"Jämför två texter\": två texter som skrivs eller klistras in sida vid sida.",
+                "Verktyg → \"Jämför två filer\"."
+              ]
+            },
+            "De två texterna visas sida vid sida. Rader som endast finns i den första markeras som borttagna, rader som endast finns i den andra som tillagda, och i en rad som har ändrats markeras de ord som skiljer sig åt. Endast det som skiljer sig visas, med några rader runtomkring; pilarna går från en skillnad till nästa.",
+            "Versaler, mellanslag, tomma rader, siffror och skiljetecken kan väljas bort. \"I en kolumn\" visar vad som tagits bort ovanför vad som lagts till, var och en med sin symbol, istället för sida vid sida. Bredvid räknarna anger Scribe hur lika de två texterna är, som andelen rader som är identiska.",
+            "En text visas så snart den väljs, innan den andra väljs. Dra i fältet mellan de två texterna för att ge den ena mer utrymme; medan texterna skrivs kan fältet under rutorna dras upp och ner för att ge rutorna eller jämförelsen mer utrymme. Ett dubbelklick återställer fältet.",
+            "Där flera rader i rad har ändrats, placeras varje rad bredvid den rad den liknar mest, så att en rad som lagts till eller tagits bort bland dem inte får varje efterföljande rad att se ut som om den ändrats till nästa.",
+            "\"Skriv eller klistra in texterna\" visar en ruta över varje kolumn; det du skriver där jämförs medan du skriver, och en fil kan fortfarande väljas för antingen sida."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Sök och ersätt i en mapp",
+          "body": [
+            {
+              "steps": [
+                "Verktyg → \"Sök i mapp\" (Ctrl+Shift+F), och välj mappen. Undermappar söks också igenom.",
+                "Skriv vad som ska sökas efter, med samma val som i \"Ersätt överallt\". \"Filtyper\" begränsar sökningen till vissa filändelser (txt, md, csv…).",
+                "Varje matchning visas i sin rad, fil för fil. Klicka på en rad för att öppna filen där.",
+                "För att ersätta: skriv den nya texten, avmarkera de filer som ska lämnas orörda och välj \"Skriv filerna\"."
+              ]
+            },
+            "Inget skrivs tills du ber om det, och endast i de filer som är markerade. Varje fil skrivs med den teckenkodning och de radbrytningar den hade.",
+            {
+              "note": "Dolda mappar och mappar som fylls av program (.git, node_modules) hoppas över om du inte uttryckligen ber om dem. Filer som inte är text hoppas alltid över."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inställningar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Inställningar för Scribe",
+          "body": [
+            "Arkiv → Inställningar öppnar programmets inställningar för Scribe.",
+            {
+              "points": [
+                "Redigeraren: tecken med fast bredd eller programmets egna, deras storlek, radbrytning, radnummer och om resultatet av ett verktyg ska visas innan det appliceras.",
+                "Ny text: hur raderna avslutas och om filen ska starta med ett byte order mark.",
+                "Statistik: hastighet för läsning, uppläsning, skrivning på tangentbord och handskrift, samt hur många ord som utgör en sida.",
+                "Kortkommandon för Scribes funktioner."
+              ]
+            },
+            "Varje inställning har en knapp som återställer den till standardvärdet."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Om Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Om Scribe",
+          "body": [
+            "Scribe är textappen i Syntelab Creative: en redigerare med verktyg bredvid texten. Den visar vad ett verktyg skulle göra innan det utförs, rensar och sorterar listor, söker och ersätter i en text eller i en hel mapp, jämför två texter, analyserar vad en text består av, skapar platshållartext och fiktiva data, samt sparar funktioner du använder ofta som recept för att kunna köra dem igen.",
+            "Allt sker lokalt på datorn. Det finns ingen begränsning för storleken eller antalet texter: begränsningarna är datorns minne och vad dagens teknik klarar av.",
+            "Det är ett nytt program. Om det inte lever upp till dina behov för dina texter, berätta för oss via Hjälp → Feedback: det är så vi vet vad vi behöver förbättra."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Vad Scribe är byggt med",
+          "body": [
+            {
+              "points": [
+                "Redigeraren: CodeMirror.",
+                "Läsning och skrivning av teckenkodningar: encoding_rs, med chardetng för att gissa teckenkodningen i filer som inte anger den.",
+                "Sök och ersätt: Rusts regex-bibliotek, vars mönster inte kan låsa programmet.",
+                "Sortering enligt språkets regler, samt identifiering av ord och meningar i alla skrifter: ICU4X, Unicode-biblioteket.",
+                "Jämförelse av texter: similar-biblioteket.",
+                "Rumänska diakritiska tecken: en lista med ord och regler skrivna för Scribe."
+              ]
+            },
+            "Vad den delar med resten av programmet finns under \"Om Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Vad Scribe ännu inte kan göra",
+          "body": [
+            {
+              "points": [
+                "En mycket stor fil läses in en sida i taget och ändras endast via recept; att ändra den manuellt innebär att hela filen öppnas, vilket kräver minne.",
+                "Återställning av rumänska diakritiska tecken känner igen vanliga ord; sällsynta ord och namn förblir som de skrevs.",
+                "Det finns ingen stavningskontroll.",
+                "Text extraheras inte från PDF eller Office-dokument här; PDF Organizer öppnar dessa.",
+                "Redigeraren stöder inte färgkodning eller Markdown.",
+                "En fil som släpps på fönstret öppnas som en ny text: programmet får inte veta var filen finns, så vid sparning frågas var den ska sparas."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

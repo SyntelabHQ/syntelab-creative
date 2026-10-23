@@ -1,0 +1,60 @@
+.range {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 12px 14px 14px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+}
+
+.fromTo {
+  display: grid;
+  grid-template-columns: auto 72px auto 72px;
+  align-items: center;
+  gap: 8px;
+}
+
+.fromTo input[type='number'] {
+  width: 100%;
+  min-width: 0;
+}
+
+.custom {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.list {
+  min-width: 0;
+  min-height: 34px;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.list[aria-invalid='true'] {
+  border-color: var(--sc-danger);
+}
+
+.parity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.count {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.count[data-problem='true'] {
+  color: var(--sc-danger);
+}

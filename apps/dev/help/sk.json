@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Orientácia",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Prvá stránka",
+          "body": [
+            "Karta Dev sa otvorí na prvej stránke, kde sú všetky nástroje zoskupené rovnako ako v menu: Kódovať, Údaje, Generovať, Preskúmať, Sieť.",
+            {
+              "points": [
+                "Do poľa „Hľadať nástroj“ zadajte text, aby ste zúžili zoznam.",
+                "Špendlík pri nástroji ho udrží hore, v sekcii Pripnuté.",
+                "Nástroj sa otvorí v tej istej karte; Súbor → Všetky nástroje vás vráti na prvú stránku. V Nastaveniach môžete nastaviť, aby sa každý nástroj otváral vo vlastnej karte a nová karta sa otvárala na naposledy použitom nástroji."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Vložte čokoľvek",
+          "body": [
+            "Pole v hornej časti prvej stránky prijme čokoľvek, čo vložíte, a určí, na čo sa to podobá: token, certifikát, JSON, UUID, časové pečiatky, cron plány, URL, XML alebo HTML, SQL, Base64, kontrolný súčet, tabuľku alebo YAML.",
+            "Pod každým odhadom sú nástroje, ktoré s daným typom dát pracujú, pričom tie najvhodnejšie sú prvé. Kliknutím na nástroj sa otvorí s už vloženým textom a spustí sa.",
+            {
+              "note": "To, čo vložíte, zostane v poli, kým ho nevymažete alebo nezavrete kartu. Nikdy sa nezapisuje na disk."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Rozloženie nástroja",
+          "body": [
+            "Väčšina nástrojov má rovnaký rám: možnosti v jednom riadku v hornej časti, vstup na jednej strane, výstup na druhej a riadok v spodnej časti, ktorý informuje o výsledku.",
+            {
+              "points": [
+                "Výsledok sa vytvorí znova pri každej zmene vstupu alebo možnosti a zobrazí sa vo výstupe; hovorí o tom „Spúšťa sa samo“ v riadku možností. Na tlačidlo Spustiť, ktoré sa vtedy zobrazí, čaká len text príliš dlhý na spúšťanie pri každom stlačení klávesu alebo súbor väčší ako 128 MB. Ctrl+Enter spustí nástroj kedykoľvek.",
+                "Výsledok, ktorý nie je text (obrázok dekódovaný z Base64, gzip), sa zobrazí ako náhľad: obrázok tak, ako je, všetko ostatné podľa druhu, veľkosti a prvých bajtov. Kopírovať ho potom skopíruje ako Base64 a obrázok sa dá skopírovať ako obrázok. Rovnako sa zobrazí aj vstupný súbor, ktorý nie je text.",
+                "Nad vstupom sa nachádzajú funkcie Otvoriť súbor, Vložiť a Vymazať; nad výstupom Kopírovať a Uložiť do súboru. Do vstupu môžete tiež pretiahnuť súbor.",
+                "Chyby vo vstupe sú popísané slovami spolu s číslom riadku a stĺpca a sú zvýraznené v editore.",
+                "Menu Zobraziť umiestni oba panely vedľa seba alebo pod seba, zobrazí čísla riadkov a zalomí dlhé riadky; čiaru medzi panelmi môžete potiahnuť.",
+                "Zvolené možnosti sa zapamätajú na najbližšie použitie. Vložený text sa nepamätá."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Spáliť a čo sa uchováva",
+          "body": [
+            "Tlačidlo Spáliť v pravom dolnom rohu každého nástroja ho okamžite vyprázdni: vstup, výsledok, čokoľvek zapísané do jeho polí aj to, čo by sa v jeho editoroch dalo vrátiť späť.",
+            "Dev si uchováva len svoje nastavenia, pripnuté nástroje, názov naposledy použitého nástroja a možnosti každého nástroja. Nič, čo do nástroja napíšete, vložíte, otvoríte alebo v ňom vytvoríte, sa nezapisuje na disk, do protokolu ani do zoznamu nedávno použitých položiek. Tajné údaje už vôbec nie: kľúče, heslá, tokeny a hlavičky požiadaviek zostávajú v karte a nikde inde.",
+            "Jedna vec chvíľu čaká na disku: výsledok zo súboru a výsledok, ktorý nie je text, sa zapíšu do vlastného priečinka programu, aby sa dali zobraziť a potom uložiť. Každý sa vymaže, keď jeho miesto zaujme iný výsledok, keď nástroj spálite alebo zatvoríte, a v každom prípade pri ďalšom spustení Dev."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Súbory ľubovoľnej veľkosti",
+          "body": [
+            "Na veľkosť súboru nie je stanovený žiadny limit. Súbor dostatočne malý na zobrazenie (do 16 MB) sa vloží do editora. Väčší súbor alebo súbor, ktorý nie je text, zostáva na disku: zobrazí sa jeho začiatok (alebo náhľad), nástroj ho číta priamo z disku a jeho výsledok sa zobrazí ako pri texte. Uložiť do súboru potom skopíruje výsledok tam, kam si vyberiete.",
+            {
+              "points": [
+                "Pri dlhotrvajúcej práci sa zobrazí karta s informáciou o postupe a tlačidlo Zastaviť.",
+                "Súbor, ktorý je textom v inom kódovaní než UTF-8 (UTF-16, Windows-1252 a podobne), sa pri dostatočne malej veľkosti pre zobrazenie prečíta ako text a kódovanie sa uvedie. To, čo z Dev uložíte, je v UTF-8.",
+                "Súbor pretiahnutý na nástroj sa otvorí ako pomocou „Otvoriť súbor“. Ak okno nevie zistiť, kde sa súbor nachádza, prijme sa do 16 MB, ako keby bol vložený."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Viac súborov a celé priečinky",
+          "body": [
+            "Tam, kde má nástroj možnosť „Práca s: Textom / Súbormi“, ho voľba Súbormi spustí na viacerých súboroch naraz.",
+            {
+              "steps": [
+                "Pridajte súbory alebo priečinok (vrátane podpriečinkov, ak necháte túto možnosť zapnutú).",
+                "Každý súbor je pri pridaní raz prečítaný a systém oznámi, či ho nástroj prijme.",
+                "Vyberte, kam majú výsledky ísť: vedľa každého súboru pod novým názvom, do priečinka (pri zachovaní štruktúry priečinkov) alebo priamo cez pôvodné súbory, pričom sa vás program ešte raz opýta. Hash môže výsledky aj len zobraziť v zozname.",
+                "Kliknite na súbor v zozname a pod voľbami uvidíte len jeho výsledok, ešte predtým, ako sa čokoľvek zapíše.",
+                "Spustite. Súbor, ktorý je nesprávny, ostatné nezastaví; pri každom sa uvede výsledok spracovania."
+              ]
+            },
+            {
+              "note": "Výsledok nikdy neprepíše existujúci súbor, pokiaľ o to výslovne nepožiadate."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Kontextové menu Prieskumníka Windows",
+          "body": [
+            "Zapnite ho v Nastaveniach programu v sekcii Prieskumník Windows. Všetko je zhrnuté pod jednou položkou „Syntelab Creative“; vo Windows 11 sa nachádza pod položkou „Zobraziť ďalšie možnosti“.",
+            {
+              "points": [
+                "Otvoriť v Syntelab Dev: pre typy súborov, ktoré nástroj číta (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz a podobne). Súbor sa otvorí v nástroji zodpovedajúcom jeho typu.",
+                "Kontrolné súčty: pre akýkoľvek súbor alebo priečinok. Digesty sú uvedené pri každom súbore a nič sa nezapisuje.",
+                "Hexadecimálne zobrazenie: pre akýkoľvek súbor.",
+                "Porovnať: dva súbory sa vložia do dvoch strán Diff; dva priečinky do porovnania priečinkov."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kódovanie",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Prevádza bajty na Base64 a späť. Kódovanie prijíma akýkoľvek súbor; dekódovanie vráti bajty, ktoré sa zobrazia, ak ide o text, a uložia sa do súboru, ak nie.",
+            {
+              "points": [
+                "Abeceda: štandardná alebo tá pre URL adresy (- a _).",
+                "Výplň znakom =, a riadky o dĺžke 64, 76 alebo ľubovoľného počtu znakov.",
+                "Dekódovanie prijíma obe abecedy, s výplňou alebo bez nej, a upozorní, kde je znak nesprávny."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Kódovanie / dekódovanie URL",
+          "body": [
+            "Percentové kódovanie, tak ako ho zapisujú prehliadače: časť adresy (všetko, čo nie je obyčajné písmeno, sa zakóduje), celá adresa (jej vlastné znaky sa zachovajú) alebo formulár (+ pre medzeru).",
+            "Dekódovanie upozorní, kde za znakom % nenasledujú dve hexadecimálne cifry."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML entity",
+          "body": [
+            "Zapisuje znaky, ktoré si HTML a XML vyhradzujú (&, <, >, úvodzovky), ako entity, a číta entity späť: podľa názvu, desiatkového čísla alebo hexadecimálneho čísla. Názvy sú podľa štandardu HTML.",
+            "„Aj každé písmeno, ktoré nie je ASCII“ zapisuje ako entity aj písmená s diakritikou a iné abecedy."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT dekodér",
+          "body": [
+            "Rozloží JSON Web Token: jeho hlavičku a obsah (payload) ako JSON a jeho nároky (claims) slovami (vydavateľ, subjekt, príjemca, kedy vyprší, s označením „vypršal“ alebo „ešte nevypršal“).",
+            "Zadajte tajný kľúč na kontrolu podpisu vytvoreného pomocou zdieľaného tajného kľúča (HS256, HS384, HS512). Podpisy vytvorené pomocou súkromného kľúča (RS, ES, PS) sa nekontrolujú.",
+            {
+              "note": "Token a tajný kľúč zostávajú v karte: na dekódovanie tokena sa nikam nič neposiela."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escapovanie / zrušenie escapovania",
+          "body": [
+            "Zapíše text ako reťazec jazyka (JSON, JavaScript, C, C++, Java a pod.) s escapovanými úvodzovkami, koncami riadkov a inými znakmi, a takýto reťazec aj prečíta späť."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Komprimuje a dekomprimuje gzip, súbor ľubovoľnej veľkosti priamo počas čítania. Úroveň ide od najrýchlejšej po najmenšiu; výsledok pre text môže byť vo forme Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Číselné sústavy",
+          "body": [
+            "Zobrazí celé čísla, jedno na riadok, v dvojkovej, osmičkovej, desiatkovej a šestnástkovej sústave a v jednej ďalšej sústave podľa vášho výberu až do základu 36. Číslo nemá maximálnu veľkosť.",
+            {
+              "points": [
+                "Sústava čísla sa určuje podľa toho, ako je zapísané: 0x pre šestnástkovú, 0b pre dvojkovú, 0o pre osmičkovú, písmená pre šestnástkovú, inak desiatková. Prípadne si vyberte sústavu, v ktorej sa všetko číta.",
+                "Medzery, podčiarkovníky a apostrofy medzi ciframi sú ignorované: 1_000_000.",
+                "Záporné číslo sa uvádza aj tak, ako ho ukladajú počítače (dvojkový doplnok), v najmenšej z veľkostí 8, 16, 32, 64 bitov a tak ďalej, ktorá ho pojme."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Údaje",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON formátovač",
+          "body": [
+            "Formátuje, minifikuje a validuje JSON a zobrazuje ho ako strom. Dokument ľubovoľnej veľkosti sa číta ako prúd.",
+            {
+              "points": [
+                "Odsadenie o 2 alebo 4 medzery, tabulátor alebo ľubovoľný počet medzier.",
+                "Ďalšie možnosti: zoradiť kľúče, krátke zoznamy na jednom riadku, medzera po dvojbodke, ukončenie riadkov, zalomenie riadka na konci, znaky mimo ASCII ako \\uXXXX.",
+                "Benevolentné čítanie prijíma komentáre (// a /* */) a koncové čiarky a zapíše prísny JSON.",
+                "Zmeny: odstránenie hodnôt null, odstránenie prázdnych hodnôt a podobne, v jednom prechode.",
+                "Strom sa otvára úroveň po úrovni a vyhľadáva text v kľúčoch a hodnotách."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Spustí dopyt JSONPath (RFC 9535) na dokumente: $.store.book[?@.price < 10].title. Výsledkom sú nájdené hodnoty, cesty k nim alebo oboje.",
+            "Pri nesprávnom dopyte sa uvede miesto, kde došlo k chybe."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Validátor JSON Schema",
+          "body": [
+            "Kontroluje dokument podľa JSON Schema (návrhy 4 až 2020-12). Schéma sa vkladá do panela pod vstupom. Každá vec, ktorá nevyhovuje, je uvedená spolu s jej umiestnením a pravidlom, ktoré porušuje.",
+            "Pri mnohých súboroch sa každý kontroluje podľa tej istej schémy. Odkazy $ref na iný súbor alebo adresu sa nesledujú."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Generátor schém a JSON do TypeScript",
+          "body": [
+            "Na základe vzorky JSON vygeneruje generátor schém vyhovujúcu JSON Schema a funkcia JSON do TypeScript napíše deklarácie jej typu (rozhrania alebo typy, exportované alebo nie, len na čítanie alebo nie, pod názvom, ktorý zadáte)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Prevádza YAML do JSON a JSON do YAML. YAML sa číta podľa jeho základnej schémy, pričom sa sledujú kotvy a zlúčenia (merges); chyby sa uvádzajú spolu s ich polohou."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Prevádza tabuľku do JSON a späť. Oddeľovač sa určí z prvého riadka alebo sa vyberie (čiarka, bodkočiarka, tabulátor, zvislá čiara); prvý riadok môže byť hlavičkou; čísla a hodnoty true / false sa môžu automaticky rozpoznať.",
+            "„Tabuľka“ zobrazuje CSV v riadkoch a stĺpcoch, bez ohľadu na veľkosť súboru."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Formátovač XML / HTML",
+          "body": [
+            "Formátuje, minifikuje a kontroluje XML a HTML. XML sa číta prísne: nezatvorený tag sa uvádza spolu s jeho polohou. HTML sa číta tak, ako ho tolerujú prehliadače."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL formátovač",
+          "body": [
+            "Rozloží príkaz (klauzula na riadok) alebo ho dá na jeden riadok; kľúčové slová veľkými písmenami, malými písmenami alebo tak, ako boli napísané. Nevyžaduje žiadny dialekt a nekontroluje význam príkazu."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Porovnáva dva texty riadok po riadku, dva JSON dokumenty podľa ich obsahu alebo dva priečinky súbor po súbore. Prvý ide do vstupu, druhý do panela pod ním.",
+            {
+              "points": [
+                "Zobrazenie vedľa seba zvýrazní zmenené slová v rámci riadka; zjednotené zobrazenie (Unified) je patch tak, ako ho zapisuje diff -u.",
+                "Ignorovať veľkosť písmen, biele znaky, prázdne riadky, číslice alebo interpunkciu.",
+                "Pri JSON nehrá rolu poradie kľúčov ani rozloženie; výsledkom môže byť JSON Patch (RFC 6902).",
+                "Priečinky: ktoré súbory má len jeden z nich, ktoré sú rovnaké, ktoré sa líšia; Porovnať v riadku otvorí dvojicu ako texty."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Náhľad Markdown",
+          "body": [
+            "Zobrazuje Markdown tak, ako bude vyzerať, a poskytuje jeho HTML na skopírovanie alebo uloženie: CommonMark s tabuľkami, prečiarknutím, zoznamami úloh a poznámkami pod čiarou.",
+            {
+              "points": [
+                "HTML napísaný v Markdowne sa zobrazí ako text, nie je vykonaný.",
+                "Obrázok, ktorý by sa sťahoval zo siete, sa nestiahne: namiesto neho sa zobrazí jeho popis a adresa. Obrázok vložený v texte (data:) sa zobrazí.",
+                "Kliknutý odkaz sa otvorí v systémovom prehliadači."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Generovať",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Vytvára UUID verzií 1, 3, 4, 5, 6 a 7 (RFC 9562), v požadovanom počte, zapísané s pomlčkami, bez pomlčiek, ako URN alebo v zložených zátvorkách. „Rozložiť“ uvedie verziu každého UUID a čas alebo meno v ňom obsiahnuté."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 a SHA-512 textu alebo súboru, viacero naraz, zapísané ako hex alebo Base64. Súbor ľubovoľnej veľkosti sa hašuje počas čítania.",
+            {
+              "points": [
+                "Kontrola proti: vložte kontrolný súčet alebo riadok zo súboru .sha256; program oznámi, či sa zhoduje.",
+                "Kľúč HMAC: digesty sa s týmto kľúčom stanú HMACmi.",
+                "Každý riadok zvlášť: jeden digest pre každý riadok textu.",
+                "Súbory: digesty sú uvedené vedľa príslušných súborov; Kopírovať všetko ich poskytne vo formáte, v akom ich zapisuje sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Heslá a tajomstvá",
+          "body": [
+            "Vytvára heslá z vybraných druhov znakov, heslá zo slov a náhodné bajty ako hex alebo Base64, pomocou náhodných čísel operačného systému. Pri každom sa uvádza, koľko bitov entropie má. Keď už je niečo vytvorené, zmena možnosti to vytvorí znova.",
+            "Heslo zo slov tvoria slová vybrané z dlhého zoznamu slov Electronic Frontier Foundation (7776 anglických slov), pričom každé slovo má rovnakú pravdepodobnosť výberu: šesť slov predstavuje približne 77 bitov."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Kľúče a certifikáty",
+          "body": [
+            "Päť možností, vybraných v hornej časti:",
+            {
+              "points": [
+                "Nový kľúč: RSA, EC P-256 / P-384 / P-521 alebo Ed25519, v každej forme, ktorú programy používajú (PKCS #8, staršia forma, OpenSSH; verejný kľúč ako PEM a ako riadok pre authorized_keys), uzamknutý heslom, ak ho zadáte.",
+                "Žiadosť o certifikát: CSR pre nový kľúč alebo vložený kľúč, s jeho subjektom a ďalšími menami (SAN).",
+                "Certifikát podpísaný sám sebou: to isté, podpísané vlastným kľúčom na zvolený počet dní; možnosť „Môže podpisovať iné certifikáty“ z neho urobí vašu vlastnú autoritu.",
+                "Podpísať vlastnou certifikačnou autoritou: vložte žiadosť, certifikát vašej autority a jej kľúč; získate podpísaný certifikát a za ním certifikát autority.",
+                "Čítať a konvertovať: vložte alebo otvorte čokoľvek (PEM, DER, kľúč OpenSSH, súbor .pfx alebo .p12, zamknutý alebo nie). Program uvedie, čo našiel a či kľúč patrí k certifikátu, a zapíše každú vec v ostatných formátoch. Kľúč a jeho certifikát možno uložiť spolu ako .pfx."
+              ]
+            },
+            {
+              "note": "Všetko sa vytvára na tomto počítači. Kľúč zostáva v karte až do Spálenia a nikde inde, pokiaľ ho neuložíte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preskúmať",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Tester regulárnych výrazov",
+          "body": [
+            "Vyskúša regulárny výraz JavaScriptu na texte: zhody s ich skupinami a pozíciami, alebo text s nahradenými zhodami. Príznaky sú g, i, m, s, u, y.",
+            "Vzor beží oddelene od okna a ak beží dlhšie ako 20 sekúnd, je ukončený."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Vysvetlenie Cron",
+          "body": [
+            "Slovne vysvetlí, čo znamená plán a kedy beží: crontab (päť polí, šesť so sekundami, sedem s rokom), Quartz, AWS EventBridge cron() a rate(), a systemd OnCalendar. Jeden plán na jeden riadok.",
+            {
+              "points": [
+                "Nasledujúce spustenia a predchádzajúce na žiadosť v časovom pásme, ktoré si vyberiete.",
+                "Dni v týždni sa číslujú od 0 pre nedeľu alebo od 1 tak, ako ich čísluje Quartz, podľa vášho výberu. Riadok so sekundami, ktorý má aj rok, L, W alebo #, patrí Quartzu a sám sa prečíta spôsobom Quartz.",
+                "Ten istý plán v ostatných formách na skopírovanie alebo pridanie do vstupu.",
+                "Zostavovač vytvorí plán výberom každého poľa; „Zmeniť v zostavovači“ do neho prenesie napísaný plán."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unixová časová pečiatka",
+          "body": [
+            "Číta okamihy, jeden na riadok: sekundy, milisekundy, mikrosekundy alebo nanosekundy od roku 1970, alebo dátum zapísaný bežným spôsobom (ISO 8601, ako ho píše e-mail a HTTP, ako ho píše Git). Každý z nich sa zobrazí v časovom pásme, ktoré si vyberiete, v UTC a ako každý druh časovej pečiatky."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Analyzátor URL",
+          "body": [
+            "Rozloží URL adresu tak, ako ju čítajú prehliadače: schéma, používateľ, hostiteľ (vrátane jeho Unicode formy, ak je zapísaný v punycode), port, cesta, každý dekódovaný parameter dopytu a fragment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Dekodér certifikátov",
+          "body": [
+            "Číta certifikáty X.509 z formátov PEM alebo DER a zobrazí všetky ich údaje: subjekt, vystavovateľa, platnosť, mená, pre ktoré je určený, jeho kľúč, rozšírenia a otisky.",
+            "Nástroj len číta; neposudzuje, či je certifikát dôveryhodný. Pre certifikát, ktorý zobrazuje stránka, a pre informáciu, či mu tento počítač dôveruje, použite Sieť → Certifikát stránky."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Prehliadač hex",
+          "body": [
+            "Zobrazuje bajty súboru ľubovoľnej veľkosti alebo vloženého textu: pozíciu každého riadku, bajty a tieto isté bajty ako znaky.",
+            {
+              "points": [
+                "Prejdite na pozíciu zapísanú ako 0x1F4, 1F4h alebo 500.",
+                "Hľadajte bajty (DE AD BE EF) alebo text (UTF-8 alebo UTF-16 v oboch smeroch), dopredu aj späť.",
+                "Kliknite na bajt: bočný panel zobrazí jeho hodnotu ako čísla rôznej veľkosti, v oboch poradíach bajtov, ako znak a ako čas.",
+                "Vyberajte potiahnutím, pomocou Shiftu alebo šípok; kopírujte výber ako hex, ako kód, ako Base64 alebo ako text, prípadne ho uložte do súboru."
+              ]
+            },
+            {
+              "note": "Nástroj len zobrazuje: v súbore sa nič nemení."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sieť",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Použitie sieťových nástrojov",
+          "body": [
+            "Tieto štyri nástroje sú jedinou časťou Dev, ktorá sa pripája na internet, a pripájajú sa len tam, kam ich nasmerujete.",
+            {
+              "points": [
+                "Kontaktuje sa len adresa, ktorú zadáte, a to až vtedy, keď stlačíte tlačidlo. Nikdy v pozadí.",
+                "Odosiela sa presne to, čo ste napísali. Jediné, čo sa k požiadavke pridá, je User-Agent, ktorý je pre všetkých rovnaký („Syntelab Creative“), pokiaľ nezadáte vlastný.",
+                "Žiadne cookies sa neukladajú, neodosielajú sa žiadne údaje o vás ani o počítači a nič zadané sa neuchováva."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP klient",
+          "body": [
+            "Odošle jednu ručne napísanú požiadavku: metódu, adresu, hlavičky (jedna na riadok: Meno: hodnota) a telo, napísané alebo načítané zo súboru ľubovoľnej veľkosti.",
+            {
+              "points": [
+                "Odpoveď: jej číslo, čas odozvy (celkový a do prvého bajtu), veľkosť, hlavičky a telo, ktoré je farebne zvýraznené podľa typu a pri formáte JSON štruktúrované. Telo, ktoré nie je text (obrázok, PDF), sa zobrazí tak, ako je, a uloží sa tak, ako prišlo.",
+                "Sledovanie presmerovaní alebo zobrazenie prvej odpovede tak, ako je. Zobrazia sa aj adresy, cez ktoré bola požiadavka presmerovaná.",
+                "Kontrola certifikátu proti dôveryhodným certifikátom počítača; vypnite túto funkciu len pri vlastných serveroch.",
+                "„Odoslať, odpoveď do súboru“ zapíše telo ľubovoľnej veľkosti priamo na disk, s priebehom a tlačidlom Zastaviť.",
+                "„Kopírovať ako curl“ poskytne tú istú požiadavku vo forme príkazu."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS vyhľadávanie",
+          "body": [
+            "Opýta sa menného servera na záznamy daného mena: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, aj niekoľko naraz. Adresa vráti svoje meno (PTR).",
+            "Dotaz sa posiela na menný server nastavený v počítači, na verejný server (1.1.1.1, 8.8.8.8, 9.9.9.9), na resolver cez HTTPS (Cloudflare, Google) alebo na server, ktorý zadáte ručne."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Kontrola portov",
+          "body": [
+            "Overuje, či hostiteľ prijíma TCP pripojenia na konkrétnych portoch: jeden, niekoľko alebo rozsah až do 65 535 (napr. 22, 80, 443, 8000-8100). Každý port je označený ako otvorený, zatvorený alebo bez odpovede v zadanom čase.",
+            {
+              "note": "Skúšajte len hostiteľov, ktorí vám patria alebo ktorých testovanie máte povolené."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Certifikát stránky",
+          "body": [
+            "Zobrazuje certifikáty, ktoré stránka poskytuje pri naviazaní zabezpečeného pripojenia: pre koho sú určené, kto ich podpísal, koľko dní im zostáva, či im tento počítač dôveruje a ak nie, prečo, verziu TLS a šifru. Vykoná sa len handshake: neodosiela sa žiadna požiadavka.",
+            {
+              "points": [
+                "Zadajte example.com, example.com:8443 alebo webovú adresu.",
+                "Mailové servery a FTP začínajú nešifrovaným prenosom a následne žiadajú prechod na TLS (STARTTLS): výber je možný podľa portu (25, 587, 143, 110, 21) alebo ručne.",
+                "\"Všetko\" zobrazí všetky informácie z certifikátov; \"PEM\" umožní ich kopírovanie alebo uloženie."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nastavenia",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Nastavenia Dev",
+          "body": [
+            "Súbor → Nastavenia otvorí nastavenia programu v časti Dev.",
+            {
+              "points": [
+                "Otvárať každý nástroj vo vlastnej karte alebo v karte, v ktorej bol vybraný.",
+                "Otvárať novú kartu na naposledy použitom nástroji alebo na prvej stránke.",
+                "Obnoviť možnosti každého nástroja a pripnutia tak, ako sú pri inštalácii programu."
+              ]
+            },
+            "Kontextová ponuka Prieskumníka Windows, jazyk, motív a klávesové skratky sa nachádzajú v nastaveniach celého programu."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O Dev",
+          "body": [
+            "Dev je aplikácia od Syntelab Creative pre vývojárov: nástroje na kódovanie a dekódovanie, formátovanie a kontrolu, prevod jednej formy dát na druhú a rozbor toho, čo je v pôvodnom stave ťažko čitateľné.",
+            "Všetko sa vykonáva na tomto počítači. Nič, čo napíšete, vložíte alebo v nástroji otvoríte, sa nikam neukladá ani neposiela. Na veľkosť alebo počet súborov nie sú stanovené žiadne limity: limitom je pamäť a disk počítača.",
+            "Aplikácia je nová a stále sa vyvíja. Ak vám pre vašu prácu niečo chýba, dajte nám vedieť cez Pomoc → Spätná väzba."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Na čom je Dev postavený",
+          "body": [
+            {
+              "points": [
+                "Editory: CodeMirror, https://codemirror.net . Licencia MIT. Copyright (C) 2018-2021 Marijn Haverbeke a ďalší.",
+                "Čítanie a zvýrazňovanie JSON v editoroch: @codemirror/lang-json, https://github.com/codemirror/lang-json , s @codemirror/language a @lezer/highlight. Licencia MIT. Copyright (C) 2018-2021 Marijn Haverbeke a ďalší.",
+                "Čítanie a zvýrazňovanie YAML, XML, HTML a SQL v editoroch: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (s @codemirror/lang-css a @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Licencia MIT. Copyright (C) 2018-2024 Marijn Haverbeke a ďalší.",
+                "Kontrola dokumentu voči JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Licencia MIT. Copyright (c) 2020-2026 Dmitry Dygalo. Je zostavená bez sieťovej časti: Dev nikdy nesťahuje schému.",
+                "Vzory JSONPath (match a search): regex, https://github.com/rust-lang/regex . Licencia MIT alebo Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "Čítanie YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Licencia MIT alebo Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Zápis YAML vykonáva samotný Dev.",
+                "Porovnávanie dvoch textov (Diff): similar, https://github.com/mitsuhiko/similar . Licencia Apache-2.0. Autori: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Licencia MIT alebo Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Digesty nástroja Hash a podpisu tokena: sha2, sha1 a md-5, https://github.com/RustCrypto/hashes . Licencia MIT alebo Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation a vývojári RustCrypto.",
+                "Dátumy, časy a časové pásma (Unixová časová pečiatka, Vysvetlenie Cron): jiff, https://github.com/BurntSushi/jiff , s časovými pásmami z databázy IANA. Licencia Unlicense alebo MIT. Copyright (c) 2015 Andrew Gallant.",
+                "Rozbor URL: url a idna, https://github.com/servo/rust-url . Licencia MIT alebo Apache-2.0. Copyright (c) 2013-2025 The rust-url developers.",
+                "Čítanie certifikátov X.509: x509-parser, https://github.com/rusticata/x509-parser . Licencia MIT alebo Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "Tester regulárnych výrazov spúšťa regulárne výrazy JavaScriptu v jadre WebView, ktorým program vykresľuje (Microsoft Edge WebView2 vo Windows); nie je preň pridaná žiadna knižnica.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Licencia MIT alebo Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton a prispievatelia.",
+                "UUID: uuid, https://github.com/uuid-rs/uuid . Licencia Apache-2.0 alebo MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Náhodné bajty pre heslá, tajomstvá a UUID z operačného systému: getrandom, https://github.com/rust-random/getrandom . Licencia MIT alebo Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Kľúče RSA a podpisy: rsa, https://github.com/RustCrypto/RSA , s num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Licencia MIT alebo Apache-2.0. Copyright (c) RustCrypto Developers a dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Kľúče a podpisy NIST kriviek (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , spolu s potrebnými ecdsa, elliptic-curve a crypto-bigint. Licencia Apache-2.0 alebo MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Kľúče a podpisy Ed25519: ed25519-dalek a curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Licencia BSD 3-Clause. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft a Henry de Valence. Všetky práva vyhradené.",
+                "Formáty, v ktorých sú zapísané kľúče, žiadosti a certifikáty (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER a PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Licencia Apache-2.0 alebo MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Súbory kľúčov OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , s bcrypt-pbkdf, aes, ctr, chacha20 a ostatnými šiframi a hašmi z RustCrypto, ktoré sú potrebné pre uzamknutie kľúča ( https://github.com/RustCrypto ). Licencia Apache-2.0 alebo MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Súbory PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , s pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 a scrypt z RustCrypto, ktoré vyžaduje. Licencia MIT alebo Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Náhodné čísla, z ktorých sa vytvárajú kľúče, získané z operačného systému: rand_core, https://github.com/rust-random/rand . Licencia MIT alebo Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "HTTP klient: ureq, https://github.com/algesten/ureq . Licencia MIT alebo Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Zabezpečené pripojenia (TLS) HTTP klienta a „Certifikátu stránky“: rustls, https://github.com/rustls/rustls , licencia Apache-2.0, ISC alebo MIT, Copyright (c) 2016 Joseph Birr-Pixton; s rustls-webpki, https://github.com/rustls/webpki , licencia ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , licencie Apache-2.0 a ISC; webpki-roots, https://github.com/rustls/webpki-roots , licencia CDLA-Permissive-2.0.",
+                "Overenie dôvery počítača voči certifikátu: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Licencia MIT alebo Apache-2.0. Copyright (c) 2022 1Password.",
+                "Čítanie Markdownu: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Licencia MIT. Copyright 2015 Google Inc. All rights reserved.",
+                "Čítanie súborov zapísaných v iných kódovaniach ako UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , licencia Apache-2.0 alebo MIT (s BSD-3-Clause pre jeho dáta), Copyright Mozilla Foundation; a chardetng, https://github.com/hsivonen/chardetng , licencia Apache-2.0 alebo MIT, Copyright Mozilla Foundation.",
+                "Slová prístupových fráz: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , od Electronic Frontier Foundation, používané pod licenciou Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Zoznam je použitý v pôvodnom znení.",
+                "Otvieranie kľúčov zamknutých starým spôsobom OpenSSL: aes, cbc a des z RustCrypto, https://github.com/RustCrypto . Licencia MIT alebo Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "Napísané pre Dev, bez použitia knižnice: DNS vyhľadávanie (otázky zapísané a odpovede čítané podľa RFC 1035) a kontrola portov.",
+                "Napísané pre Dev, bez použitia knižnice: čítanie a zápis JSON ako prúdu, JSONPath (RFC 9535), Base64, percent-encoding, referencie na znaky HTML (ich názvy sú podľa HTML štandardu, https://html.spec.whatwg.org ), únikové sekvencie reťazcov, čítanie JSON Web Tokenov, zápis YAML, obojstranný zápis CSV, čítanie rozvrhov cron, formátovač XML a HTML a formátovač SQL."
+              ]
+            },
+            "To, čo zdieľa so zvyškom programu, nájdete v časti „O Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Čo Dev ešte nevie urobiť",
+          "body": [
+            {
+              "points": [
+                "Podpis tokena sa kontroluje len vtedy, keď bol vytvorený pomocou spoločného tajomstva (HS256, HS384, HS512).",
+                "Validátor JSON Schema uvádza, čo nevyhovuje, v angličtine, ako to robí jeho knižnica, a nesleduje $ref do iného súboru alebo adresy.",
+                "Formátovač SQL nevyžaduje žiadny dialekt a nekontroluje význam príkazu: upozorní len na reťazec alebo komentár, ktorý nikdy nekončí.",
+                "YAML a JSON, ktorý sa mení na YAML alebo CSV, sa pri konverzii udržiavajú v pamäti v celku; CSV, ktoré sa mení na JSON, XML, HTML a SQL, sa spracovávajú postupne pri čítaní, bez ohľadu na ich veľkosť.",
+                "Tabuľka, v ktorej sa CSV zobrazuje, je len na čítanie: nič do nej nenapíšete a nič z nej zatiaľ neskopírujete.",
+                "Diff si pre každý riadok dvoch súborov rezervuje šestnásť bajtov, nie samotné súbory; dva JSON dokumenty sa udržiavajú v pamäti v celku, pretože pred porovnaním sa zapíšu nanovo.",
+                "Úsek riadkov, v ktorom nie je nič, čo by sa na oboch stranách vyskytovalo presne raz, sa porovná tak dobre, ako to dovolí jedna sekunda: uvedené rozdiely sú pravdivé, hoci nie vždy najmenej početné.",
+                "Diff neporovnáva koncové znaky riadkov (CRLF alebo LF).",
+                "Dva priečinky sa porovnávajú podľa bajtov ich súborov; súbory sa párujú podľa názvov, písmeno po písmene.",
+                "To, čo uvádzajú nástroje Preskúmať, je JSON s názvami v angličtine.",
+                "Tester regulárnych výrazov spúšťa regulárne výrazy JavaScriptu, nie PCRE ani tie z Rustu; pracuje s textom, ktorý sa dá zobraziť, nie so súborom uloženým na disku; vzor, ktorý beží dlhšie ako 20 sekúnd, sa ukončí.",
+                "Dekodér certifikátov číta certifikát a nekontroluje, či je dôveryhodný: nie jeho reťazec, nie jeho podpis, ani to, či bol zneplatnený.",
+                "Súbor, ktorý je v inom kódovaní ako UTF-8, sa prečíta, ak je dostatočne malý na zobrazenie; súbor väčší, ktorý sa spracováva priamo z disku, musí byť v UTF-8.",
+                "Súbor pretiahnutý na nástroj sa prijme do veľkosti 16 MB; okno sa nedozvie, kde sa pretiahnutý súbor na disku nachádza, preto sa väčší súbor otvára cez Otvoriť súbor.",
+                "Prístupové frázy sa skladajú výlučne z anglických slov.",
+                "Vysvetlenie Cron: zostavovač vytvára plány crontab (päť polí, prípadne šesť so sekundami); plán s L, W, # alebo ? doň nemožno načítať. Časy AWS rate() sa nedajú určiť, pretože sa počítajú od momentu vytvorenia pravidla. Zo systemd sa čítajú bežné kalendárne udalosti; nie zlomky sekundy ani zoznamy dní počítané od konca mesiaca.",
+                "Prehliadač hex len zobrazuje: v súbore sa nič nemení. Stĺpec textu zobrazuje ASCII alebo západoeurópske písmená, nie iné abecedy; hľadajú sa bajty alebo text, nie vzory.",
+                "Kľúče a certifikáty: kľúče sú RSA, krivky P-256, P-384 a P-521 a Ed25519; ostatné (DSA, secp256k1, X25519) sa nečítajú. Kľúč uzamknutý starým spôsobom OpenSSL sa otvorí, ak je jeho šifra AES alebo 3DES. Súbor .pfx obsahuje jeden kľúč s jeho certifikátmi. Vytvorenie veľmi veľkého RSA kľúča trvá dlho a nedá sa zastaviť v polovici. Knižnica, ktorá vytvára RSA kľúče, má známu slabinu voči útočníkovi, ktorý dokáže merať čas mnohých podpisov cez sieť (RUSTSEC-2023-0071): tu sa kľúče vytvárajú a zapisujú na vašom počítači a pre nikoho iného sa nič nepodpisuje.",
+                "HTTP klient: HTTP/1.1 (nie HTTP/2 alebo 3); medzi požiadavkami sa neuchovávajú žiadne cookies; viacdielne formuláre (multipart) sa za vás nevytvárajú; odpoveď väčšia ako 16 MB alebo odpoveď, ktorá nie je textom, sa zapíše do súboru opätovným odoslaním požiadavky.",
+                "DNS vyhľadávanie zobrazuje podpisy (DNSSEC), ale nekontroluje ich. Kontrola portov skúša len TCP: UDP port, ktorý neodpovedá, nie je možné odlíšiť od zatvoreného. Certifikát stránky nezisťuje, či bol certifikát zneplatnený.",
+                "Kontextová ponuka je určená pre Prieskumník Windows; vo Windows 11 sa jej položky nachádzajú pod možnosťou „Zobraziť ďalšie možnosti“."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

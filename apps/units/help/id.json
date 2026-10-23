@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Konversi",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Konverter",
+          "body": [
+            "Units mengonversi nilai antar satuan ukur: satu nilai dengan cepat atau seluruh tabel nilai sekaligus. Semua perhitungan dilakukan di komputer Anda.",
+            "Konverter tersedia dalam enam menu: Dasar, Gerak dan mekanika, Energi dan daya, Sains, Digital dan media, serta Fisika khusus. Pilih konverter untuk membuka tabelnya.",
+            {
+              "points": [
+                "Konverter terbuka di tab saat ini. Jika tabelnya berisi nilai, Anda akan ditanya terlebih dahulu: Lanjutkan (nilai akan hilang), Buka di tab baru, atau Batal.",
+                "Pengaturan → Units → “Buka setiap konverter di tab tersendiri” akan membuka konverter yang dipilih di tab baru.",
+                "Berkas → Kembali ke Beranda akan kembali ke halaman pertama Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Konversi cepat",
+          "body": [
+            "Halaman pertama Units, Konversi cepat, mengonversi satu nilai dari satu satuan ke satuan lain. Pilih konverter, ketik nilai di sisi “Dari”, lalu pilih kedua satuan; hasilnya muncul di sisi “Ke”.",
+            {
+              "points": [
+                "Setiap sisi menampilkan satuan populer pada konverter dan satuan buatan Anda, dengan kolom pencarian. Tabel konverter memuat semua satuan.",
+                "Tombol di antara kedua sisi menukar satuan asal dan tujuan.",
+                "Sematkan satuan melalui ikon penanda di sampingnya. Satuan yang disematkan muncul pertama dalam kedua daftar dan panel satuan tabel.",
+                "Tombol di samping hasil akan menyalinnya; tanda × menghapus nilai.",
+                "“Buka di tabel” membuka tabel konverter tersebut."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Cara membaca dan menulis angka",
+          "body": [
+            "Anda dapat mengetik dan menempel angka sesuai format berbagai negara: 1,234.56 dan 1.234,56 sama-sama dikenali. Spasi dan apostrof sebagai pemisah ribuan juga didukung, begitu pula 1.5e-3 untuk pangkat sepuluh.",
+            "Angka yang dapat dibaca dengan dua cara (1,234: seribu dua ratus tiga puluh empat atau satu koma dua tiga empat) dibaca sesuai format angka bahasa program; keterangan formatnya muncul di bawah tabel.",
+            "Hasil ditulis dengan angka desimal yang sesuai untuk satuan tujuan, bukan sebanyak digit yang Anda ketik: 5 cm adalah 1,97 in. Nilai bukan nol selalu menampilkan beberapa digit bermakna, sehingga 1 cm menjadi 0,00001 km, bukan 0,000 km.",
+            "Nilai yang terlalu besar atau kecil untuk dibaca sekilas ditulis dengan pangkat sepuluh, misalnya 1,6 × 10⁻³⁵. Tampilan → Nilai ekstrem sepenuhnya menuliskan semua nolnya.",
+            "Jika suatu satuan tidak memiliki nilai untuk masukan tertentu (tekanan suara nol tidak memiliki desibel), sel menampilkan tanda pisah."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabel",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Baris dan kolom",
+          "body": [
+            "Setiap kolom mewakili satu satuan dan setiap baris satu nilai. Nilai yang Anda ketik menentukan baris tersebut; kolom lain menampilkan nilai yang sama dalam satuannya masing-masing. Sel yang diketik ditampilkan tebal.",
+            "Masukan yang bukan angka tetap dipertahankan dan ditampilkan dengan warna merah; konversi pada baris tersebut berhenti sampai nilainya diperbaiki.",
+            {
+              "points": [
+                "Klik dua kali sel atau langsung mulai mengetik untuk mengedit. Enter berpindah ke bawah, Tab ke kanan; tombol panah untuk berpindah; Escape mengembalikan isi sel seperti semula.",
+                "Klik sudut (#) untuk memilih seluruh tabel, nomor baris untuk memilih satu baris, atau judul untuk memilih satu kolom. Shift+klik memilih rentang, Ctrl+klik menambahkan sel, dan menyeret juga dapat memilih sel.",
+                "Home dan End berpindah ke kolom pertama dan terakhir pada baris; Ctrl+Home ke sel pertama tabel, Ctrl+End ke sel terakhir. Ctrl+panah berpindah ke tepi tabel: baris atau kolom pertama maupun terakhir. Page Up dan Page Down berpindah satu layar. Tahan Shift untuk memperluas pilihan dengan tombol-tombol tersebut.",
+                "Pilihan beberapa sel diberi garis tepi di bagian luarnya; sel tempat Anda mengetik tetap tidak diarsir di dalam pilihan.",
+                "Delete mengosongkan baris yang dipilih.",
+                "Mengetik di baris terakhir akan menambahkan baris baru. Panjang tabel hanya dibatasi oleh memori komputer (satu baris memerlukan 16 byte; 100 juta baris memerlukan sekitar 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Kolom dan panel satuan",
+          "body": [
+            "Panel di samping tabel mencantumkan satuan dalam konverter. Bagian atas menampilkan satuan yang ada di tabel; klik satuan untuk menghapus kolomnya. Di bawahnya tercantum semua satuan: cari berdasarkan nama atau simbol, filter menurut grup atau “Populer”, lalu klik satuan untuk menambahkannya sebagai kolom.",
+            "Sematkan satuan melalui ikon penanda di sampingnya agar menjadi favorit. Satuan tersebut akan muncul pertama dalam daftar dan di Konversi cepat.",
+            {
+              "points": [
+                "Kolom berbagi lebar tabel secara merata hingga judulnya tidak lagi muat; setelah itu, tabel dapat digulir ke samping.",
+                "Seret tepi judul untuk mengubah lebar kolom; klik dua kali tepinya agar lebar kolom menyesuaikan nilai terpanjang. Kolom nomor baris juga dapat diseret.",
+                "Tombol ⋮ pada kolom: pindahkan ke kiri atau kanan, sematkan ke tepi kiri atau kanan, ubah presisinya, atau hapus kolom.",
+                "Presisi kolom hanya mengubah kolom tersebut. “Gunakan presisi ini untuk satuan di semua tempat” menjadikan presisi itu sebagai presisi satuan di setiap tabel dan Konversi cepat.",
+                "Tombol dua panah di samping Urungkan dan Ulangi menyesuaikan lebar kolom dengan tabel: semua ukuran yang diubah atau disesuaikan akan direset, dan kolom kembali berbagi lebar tabel secara merata.",
+                "Klik nama bagian atas panel—satuan di tabel atau “Menambahkan satuan” (pencarian dan filter)—untuk melipatnya dan memberi lebih banyak ruang pada daftar."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Urungkan, salin, tempel, impor, dan ekspor",
+          "body": [
+            "Bilah di atas tabel berisi alat-alat untuk mengelolanya.",
+            {
+              "points": [
+                "Urungkan dan Ulangi (Ctrl+Z, Ctrl+Y) menelusuri setiap perubahan tabel. Menempel atau mengimpor data dihitung sebagai satu langkah.",
+                "Salin (Ctrl+C) menyalin seluruh tabel atau pilihan, dalam format yang dapat dibaca aplikasi spreadsheet. “Ditukar baris dan kolom” mengubah baris menjadi kolom.",
+                "Tempel (Ctrl+V) memasukkan baris yang disalin ke tabel mulai dari sel aktif. Jika baris pertama berisi judul satuan, kolom akan dicocokkan berdasarkan judulnya; satuan yang belum ada di tabel akan ditambahkan.",
+                "Impor membaca workbook Excel, berkas CSV, atau TSV untuk menggantikan isi tabel. “Deteksi format otomatis” mengenali jenis berkasnya.",
+                "Ekspor menyimpan tabel sebagai Excel, CSV, TSV, atau JSON. Jika desimal memakai koma, CSV ditulis dengan pemisah titik koma seperti yang diharapkan aplikasi spreadsheet. Satu lembar Excel menampung 1.048.576 baris; tabel yang lebih panjang dilanjutkan pada lembar berikutnya dalam workbook yang sama dengan judul kolom yang sama.",
+                "Ikon penghapus mengosongkan baris terpilih; ikon tempat sampah mengosongkan seluruh tabel."
+              ]
+            },
+            "Setiap baris menampung satu nilai. Jika baris yang ditempel atau diimpor berisi beberapa nilai, nilai pertama digunakan dan nilai lainnya dihitung berdasarkan nilai tersebut.",
+            "Menempel, mengimpor, mengekspor, atau menyalin banyak baris memerlukan waktu. Kartu di atas tabel akan menampilkan progres dalam persen dan jumlah baris, beserta tombol Berhenti. Jika proses tempel atau impor dihentikan, tabel tetap seperti semula; jika ekspor dihentikan, tidak ada berkas yang ditulis.",
+            "Jika memori komputer tidak cukup untuk menampung baris, tidak ada perubahan yang dilakukan dan baris di bawah tabel menunjukkan kebutuhan memori. Jika baris baru muat tetapi tabel lama tidak dapat disimpan bersamanya, Anda akan ditanya apakah ingin melanjutkan tanpa opsi urungkan. Setelah itu, perubahan tersebut dan perubahan sebelumnya tidak dapat dibatalkan. Sebelum bertanya, langkah Urungkan yang paling lama akan dihapus untuk menyediakan ruang.",
+            "Opsi tabel (ikon roda gigi): teks judul kolom (nama dan simbol, nama saja, atau simbol saja), apakah salinan dan ekspor menyertakan judul dan nomor baris, “Jadikan kolom ini sebagai kolom awal konverter”, dan “Atur ulang tabel”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Konverter khusus",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Mata uang",
+          "body": [
+            "Mata uang tidak memiliki faktor konversi tetap karena nilainya berubah. Konverter mata uang mengambil kurs dari dua layanan gratis saat digunakan, hanya pada saat itu.",
+            {
+              "points": [
+                "Mata uang negara: Rates By Exchange Rate API, https://www.exchangerate-api.com . Sumbernya memperbarui kurs sekali sehari dan kurs tidak diambil lebih sering dari itu.",
+                "Mata uang kripto: Powered by CoinGecko, https://www.coingecko.com . Data diambil saat konverter dibuka atau kembali ke depan jika usianya lebih dari 15 menit, serta saat Anda menekan Perbarui; tidak ada pengambilan berkala."
+              ]
+            },
+            "Hanya kurs yang diminta. Informasi tentang Anda tidak dikirim, begitu pula jumlah yang Anda konversi.",
+            "Baris di bawah tabel dan hasil Konversi cepat menunjukkan waktu kurs diperbarui. Tanpa koneksi, kurs terakhir digunakan dan ditandai sebagai lama. Mata uang yang tidak memiliki kurs dari layanan ditampilkan dengan tanda pisah.",
+            "Pengaturan → Units → Mata uang: nonaktifkan “Ambil kurs dari jaringan” untuk menggunakan kurs terakhir yang tersimpan. “Tampilkan sumber kurs” menampilkan atau menyembunyikan nama kedua layanan pada baris tersebut.",
+            "Kurs hanya untuk informasi. Jangan mengandalkannya untuk bertransaksi."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Basis bilangan",
+          "body": [
+            "Satuan pada konverter ini adalah cara menuliskan bilangan bulat: basis 2 hingga 64, angka Romawi, basis 60 dengan titik dua (1:30:15), desimal berkode biner, dan kode Gray. Nilainya berupa teks: ketik FF pada kolom heksadesimal, lalu kolom lain menampilkan 255, 11111111, dan seterusnya.",
+            "Angka Romawi mencakup I hingga MMMCMXCIX (1 hingga 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Satuan yang tidak memakai faktor sederhana",
+          "body": [
+            "Sebagian besar satuan dikonversi menggunakan faktor. Beberapa satuan tidak demikian; Units mengonversinya sesuai definisi: suhu dengan offset; efisiensi bahan bakar (liter per 100 km dan mil per galon); panjang gelombang dan frekuensi; konduktansi dan hambatan; derajat Baumé, API, Brix, dan Plato dengan massa jenis; desibel dengan tekanan dan intensitas suara; serta kemiringan persen dengan sudutnya.",
+            "Suhu dan selisih suhu adalah hal yang berbeda: 100 °C sama dengan 212 °F, tetapi selisih 100 °C sama dengan selisih 180 °F. Satuan dalam grup “Selisih (Δ)” dapat dikonversi satu sama lain; jika dibandingkan dengan skala suhu, sel menampilkan tanda pisah."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Satuan buatan sendiri",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Membuat satuan",
+          "body": [
+            "Anda dapat menambahkan satuan sendiri ke konverter mana pun. Di panel satuan, pilih “Satuan baru”, beri nama dan simbol, lalu tentukan satuan yang sudah ada sebagai acuannya.",
+            {
+              "points": [
+                "Faktor: “1 langkah = 0,75 m”. Untuk skala yang tidak dimulai dari nol, tentukan juga nilai yang ditambahkan setelah perkalian.",
+                "Rumus: tentukan cara mengubah nilai ke satuan lain dan rumus untuk konversi balik, dengan x sebagai nilai. Contohnya x * 9 / 5 + 32 dan (x - 32) * 5 / 9."
+              ]
+            },
+            "Masukan dicoba saat Anda mengetik, dan hasil konversi salah satu satuan Anda ditampilkan sebelum disimpan. Rumus dapat menggunakan + − × ÷ ^, tanda kurung, x, pi, e, serta fungsi sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos, dan atan. Rumus dihitung sebagai ekspresi, bukan dijalankan sebagai program.",
+            "Satuan Anda tercantum di bagian “Satuan saya” pada panel, tempat satuan dapat diubah atau dihapus. Satuan sendiri dapat menggunakan satuan sendiri lainnya sebagai acuannya; jika acuannya dihapus, satuan yang bergantung padanya juga akan dihapus.",
+            "Pengaturan → Units mencantumkan satuan buatan Anda untuk semua konverter dan dapat mengekspor atau mengimpornya sebagai teks untuk disimpan atau dipindahkan ke komputer lain."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pengaturan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Pengaturan Units",
+          "body": [
+            "Berkas → Buka Pengaturan membuka pengaturan Units; opsi pada bilah tabel (ikon roda gigi) juga membuka pengaturan tersebut.",
+            {
+              "points": [
+                "Buka setiap konverter di tab tersendiri atau di tab saat ini.",
+                "Tampilkan nilai ekstrem sepenuhnya, pemisah ribuan (10000,000, 10 000,000, atau 10.000,000; tidak ada, kecuali Anda memilih yang lain), dan nomor baris.",
+                "Mata uang: atur apakah kurs diambil dari internet dan apakah nama layanan ditampilkan di samping kurs.",
+                "Presisi satuan: pilih konverter (atau “Satuan yang Anda ubah”), cari satuan, lalu atur jumlah desimal dengan tombol − dan +. Tombol panah mengembalikannya ke presisi bawaan satuan. “Gunakan presisi ini untuk satuan di semua tempat” pada menu kolom menerapkan nilai yang sama di seluruh tabel.",
+                "Satuan awal tabel: pilih konverter yang kolom pertamanya ingin Anda tentukan, masing-masing dengan opsi untuk memulihkan kolom bawaan.",
+                "Satuan buatan Anda."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tentang Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tentang Units",
+          "body": [
+            "Units adalah aplikasi konverter dari Syntelab Creative: 38 konverter dengan lebih dari 1.500 satuan, mulai dari panjang dan suhu hingga mata uang dan basis bilangan. Satu nilai yang diketik akan ditampilkan dalam semua satuan yang dipilih, dalam tabel yang dapat memuat satu nilai maupun jutaan nilai.",
+            "Angka dihitung secara presisi sebagai pecahan dan hanya dibulatkan saat ditampilkan. Semua proses dilakukan di komputer ini; hanya kurs mata uang yang diambil dari internet, dan fitur itu dapat dinonaktifkan.",
+            "Aplikasi ini masih baru. Jika ada kekurangan yang menghambat pekerjaan Anda, sampaikan melalui Bantuan → Masukan agar kami tahu hal yang perlu dikembangkan."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Kapasitas baris tabel: hasil pengukuran",
+          "body": [
+            "Tabel tidak memiliki batas tetap untuk jumlah baris; kapasitasnya bergantung pada memori komputer. Satu baris memerlukan 16 byte, jadi 100 juta baris memerlukan sekitar 1,5 GB. Jika memori habis, tabel tetap seperti semula dan program memberi tahu jumlah memori yang diperlukan.",
+            "Pengukuran dilakukan pada 50.000.000 baris, masing-masing berisi satu angka dalam satu kolom, dengan build program yang dioptimalkan:",
+            {
+              "points": [
+                "Menempel 50.000.000 baris: sekitar 7 detik.",
+                "Mengimpor dari berkas CSV: 12 detik.",
+                "Mengekspor ke berkas CSV dengan kolom kedua dikonversi: sekitar 3,5 menit.",
+                "Mengekspor ke Excel dalam 48 lembar: 4,3 menit."
+              ]
+            },
+            "Proses ekspor lebih lama daripada impor karena setiap sel yang ditulis terlebih dahulu dikonversi secara presisi.",
+            {
+              "note": "Komputer untuk pengujian: AMD Ryzen 9 9950X3D (16 inti, 32 utas), memori 64 GB, Windows 11 Pro. Oktober 2026. Waktu dapat berbeda pada komputer lain; ukuran setiap baris tetap sama."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Teknologi yang digunakan Units",
+          "body": [
+            {
+              "points": [
+                "Angka presisi: pustaka Rust num (pecahan bilangan bulat dengan ukuran berapa pun).",
+                "Satuan, faktor, dan grupnya: berkas data program, satu berkas untuk setiap konverter.",
+                "Pembacaan workbook Excel dan OpenDocument: calamine. Penulisan workbook Excel: rust_xlsxwriter.",
+                "Papan klip sistem untuk menyalin dan menempel banyak baris: arboard.",
+                "Kurs mata uang: ExchangeRate-API dan CoinGecko (lihat “Mata uang”)."
+              ]
+            },
+            "Komponen yang digunakan bersama bagian lain program dijelaskan di “Tentang Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Hal yang belum dapat dilakukan Units",
+          "body": [
+            {
+              "points": [
+                "Setiap baris menampung satu nilai. Jika menempel baris dengan beberapa nilai, hanya nilai pertama yang digunakan.",
+                "Ekspor sangat banyak baris memerlukan waktu lama (lihat hasil pengukuran).",
+                "Teks yang disalin ke papan klip disimpan seluruhnya di memori sebelum ditempel.",
+                "Kurs mata uang mengikuti pembaruan dari kedua sumbernya: kurs mata uang negara diperbarui sekali sehari."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

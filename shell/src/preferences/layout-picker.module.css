@@ -1,0 +1,142 @@
+.picker {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  border: 2px solid var(--sc-border);
+  border-radius: var(--sc-radius-l);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  text-align: start;
+  cursor: pointer;
+}
+
+.card[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.name {
+  margin-block-start: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.description {
+  color: var(--sc-muted);
+}
+
+/* A small drawing of the layout: where the tools sit around the page. */
+.preview {
+  position: relative;
+  display: block;
+  height: 110px;
+  overflow: hidden;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+  direction: ltr;
+}
+
+.tools {
+  position: absolute;
+  background: var(--sc-surface);
+  border: 0 solid var(--sc-border);
+}
+
+.preview[data-layout='classic'] .tools {
+  inset: 0 0 auto;
+  height: 22px;
+  border-bottom-width: 1px;
+  background: repeating-linear-gradient(90deg, var(--sc-border) 0 18px, transparent 18px 24px) 8px 13px / 96px 5px
+    no-repeat var(--sc-surface);
+}
+
+.preview[data-layout='ribbon'] .tools {
+  inset: 0 0 auto;
+  height: 40px;
+  border-bottom-width: 1px;
+  background: repeating-linear-gradient(90deg, var(--sc-border) 0 26px, transparent 26px 34px) 8px 12px / 170px 20px
+    no-repeat var(--sc-surface);
+}
+
+.preview[data-layout='side-panel'] .tools {
+  inset: 0 auto 0 0;
+  width: 56px;
+  border-right-width: 1px;
+  background: repeating-linear-gradient(180deg, var(--sc-border) 0 7px, transparent 7px 15px) 8px 10px / 40px 75px
+    no-repeat var(--sc-surface);
+}
+
+.preview[data-layout='side-panel'][data-side='right'] .tools {
+  inset: 0 0 0 auto;
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+
+.page {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  width: 40px;
+  height: 52px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-xs);
+  background: var(--sc-paper);
+  translate: -50% -50%;
+}
+
+.preview[data-layout='side-panel'] .page {
+  top: 50%;
+  left: calc(50% + 28px);
+}
+
+.preview[data-layout='side-panel'][data-side='right'] .page {
+  left: calc(50% - 28px);
+}
+
+.side {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.sideLabel {
+  font-weight: 500;
+}
+
+/* An app's own layout: says whether it overrides the general one, and how to go back. */
+.override {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.overrideNote {
+  flex: 1 1 320px;
+  margin: 0;
+  color: var(--sc-muted);
+}
+
+/* What the form now chosen means. */
+.sideNote {
+  flex-basis: 100%;
+  color: var(--sc-muted);
+  font-size: 13px;
+}

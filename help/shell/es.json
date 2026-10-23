@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Primeros pasos",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Qué es Syntelab Creative",
+          "body": [
+            "Syntelab Creative es un programa compuesto por aplicaciones. Cada aplicación está especializada en un tipo de tarea:",
+            {
+              "points": [
+                "PDF Organizer lee, organiza, edita y firma documentos PDF.",
+                "Scribe es un editor de texto con herramientas para limpiar, ordenar, comparar y transformar textos.",
+                "Units convierte entre unidades de medida: longitud, temperatura, monedas y muchas más.",
+                "Dev reúne herramientas para desarrolladores: codificar y decodificar, dar formato, validar y convertir datos entre distintos formatos."
+              ]
+            },
+            "Las aplicaciones comparten una ventana, ajustes comunes y una forma de uso coherente, así que lo que aprendes en una también te sirve en las demás.",
+            {
+              "note": "Todo se procesa en tu equipo. Tus documentos nunca se envían a ningún sitio y no se recopila información sobre ti ni sobre tu trabajo."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "La ventana",
+          "body": [
+            {
+              "points": [
+                "La barra lateral: el icono de la casa lleva a Inicio; debajo aparecen tus aplicaciones y, al final, las noticias del programa, Comentarios, Apoyar y Ajustes.",
+                "En una aplicación, Archivo → Ir al inicio abre su página principal si la tiene (Units o Scribe). Archivo → Abrir ajustes (Ctrl+,) abre la sección de Ajustes correspondiente a esa aplicación; desde allí puedes acceder a las demás secciones con un clic.",
+                "Las pestañas de la parte superior: cada documento, colección o herramienta que abras tiene su propia pestaña. Un punto en ella indica que hay cambios sin guardar.",
+                "Los menús de la aplicación, debajo de las pestañas, se muestran como barra de menús, cinta o panel lateral, según lo que hayas elegido.",
+                "El resto de la ventana corresponde a la pestaña activa."
+              ]
+            },
+            "Antes de cerrar una pestaña con cambios sin guardar, el programa te pregunta qué quieres hacer. Lo mismo ocurre al cerrar el programa."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Inicio",
+          "body": [
+            "Inicio muestra tus aplicaciones y los archivos abiertos recientemente. Haz clic en una aplicación para abrirla o en un archivo reciente para volver a abrirlo.",
+            "Puedes mostrar las aplicaciones como tarjetas, como iconos con nombre o solo como iconos, y arrastrarlas para ordenarlas a tu gusto. También puedes moverlas con Alt y las teclas de flecha. «Restablecer valores predeterminados» recupera el orden original.",
+            "Cada aplicación también tiene su propio acceso directo en el menú Inicio de Windows, como «Syntelab PDF Organizer» o «Syntelab Units». Al abrirlo, el programa se inicia directamente en esa aplicación. Si ya está abierto, la aplicación aparece en una pestaña nueva."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Abrir archivos",
+          "body": [
+            {
+              "points": [
+                "Desde una aplicación: Archivo → Abrir o Ctrl+O.",
+                "Arrastrando archivos desde una carpeta hasta la ventana.",
+                "Desde el administrador de archivos del sistema: haz doble clic en un archivo compatible con el programa. En el Explorador de archivos de Windows también puedes usar el menú contextual (consulta «El menú contextual del Explorador de archivos de Windows»).",
+                "Desde Inicio: en la lista de archivos recientes."
+              ]
+            },
+            "El programa se ejecuta en una sola instancia. Si abres un archivo desde el administrador de archivos mientras el programa ya está en ejecución, se abrirá en una pestaña nueva de la misma ventana."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personalizar el programa",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Diseño: barra de menús, cinta o panel lateral",
+          "body": [
+            "Los comandos de una aplicación se pueden mostrar de tres maneras. Los comandos son los mismos; solo cambia su ubicación.",
+            {
+              "points": [
+                "Clásico: barra de menús y barra de herramientas.",
+                "Cinta: botones grandes agrupados por nombre, con una pestaña para cada menú. Puedes contraerla para dejar más espacio al documento.",
+                "Panel lateral: herramientas en un panel a la izquierda o a la derecha, que puedes contraer para dejar solo los iconos."
+              ]
+            },
+            "Elige el diseño de todas las aplicaciones en Ajustes → General → Diseño. Puedes asignar un diseño propio a una aplicación desde su sección de Ajustes o desde el menú Ver. En ese caso, dejará de seguir el diseño general hasta que selecciones «Usar el diseño general»."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Ajustes → General → Tema: Claro, Oscuro, Gris claro, Gris oscuro o Automático, que sigue el tema claro u oscuro del sistema.",
+            "El tema nunca cambia los colores de las páginas de un documento: el papel conserva su aspecto."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Idioma",
+          "body": [
+            "Ajustes → General → Idioma. El programa está disponible en 62 idiomas. «Idioma del sistema» sigue el idioma de tu equipo. Puedes buscar un idioma por su nombre propio, por su nombre en tu idioma o por su nombre en inglés.",
+            "El texto que todavía no se haya traducido se muestra en inglés, nunca como un código."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Pestañas",
+          "body": [
+            {
+              "points": [
+                "«Mantener la pestaña Inicio entre las demás»: si desactivas esta opción, la pestaña Inicio solo aparece cuando Inicio está en primer plano. El icono de la casa en la barra lateral siempre te lleva a ella.",
+                "El indicador de una pestaña puede ser el icono de la aplicación o un cuadrado liso con el color de la aplicación."
+              ]
+            },
+            "Si hay más pestañas de las que caben, usa las flechas de los extremos para desplazarte. «Más pestañas» las muestra todas en una lista."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orientarse",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Buscar un comando",
+          "body": [
+            "El campo de búsqueda («Buscar aplicaciones, herramientas y comandos») encuentra cualquier comando de la pestaña activa por su nombre, tanto en tu idioma como en inglés. Selecciona un resultado para ejecutarlo.",
+            "Los comandos previstos pero aún no implementados aparecen atenuados en los menús y no se incluyen en la búsqueda."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Atajos de teclado",
+          "body": [
+            "Las teclas de acceso rápido de cada comando aparecen junto a su nombre en los menús y en su descripción emergente. Estos son los atajos más usados:",
+            {
+              "points": [
+                "Ctrl+O: abrir un archivo",
+                "Ctrl+S: guardar; Ctrl+Mayús+S: guardar como",
+                "Ctrl+P: imprimir",
+                "Ctrl+Z y Ctrl+Y: deshacer y rehacer",
+                "Ctrl+F: buscar en el documento",
+                "Ctrl+W: cerrar la pestaña",
+                "Ctrl+Tab y Ctrl+Mayús+Tab: ir a la pestaña siguiente y a la anterior",
+                "Ctrl+, (coma): Ajustes",
+                "F1: abrir esta ayuda",
+                "Esc: salir del modo de pantalla completa o lectura, o cerrar la herramienta activa"
+              ]
+            },
+            "Puedes cambiar los atajos de los comandos del programa (pestañas, Ajustes y Ayuda) en Ajustes → General → Atajos de teclado. Los atajos de cada aplicación se cambian en su sección de Ajustes. Haz clic en las teclas de un comando y pulsa las nuevas."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Usar esta ayuda",
+          "body": [
+            "La ayuda depende del lugar desde el que la abras. Desde una aplicación, solo verás su manual y los comandos de la pestaña desde la que abriste la ayuda. Desde Inicio o Ajustes, verás «Acerca de» (una breve presentación del programa y de cada aplicación) y el manual del programa. Ayuda → Acerca de siempre abre esa sección.",
+            "El índice está a la izquierda. El campo de búsqueda que aparece encima busca en todos los temas, tanto en los títulos como en el texto.",
+            "La ayuda se abre en una pestaña propia para que puedas alternar entre ella y tu trabajo. Pulsa F1 para volver a mostrarla. En «Comandos de la pestaña de origen» se enumeran todos los menús de esa pestaña, con sus comandos, atajos y funciones. Abre la ayuda desde la pestaña sobre la que tengas dudas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "El menú contextual del Explorador de archivos de Windows",
+          "body": [
+            "Ajustes → General → Explorador de archivos de Windows → «Mostrar Syntelab Creative en el menú contextual de archivos y carpetas» añade opciones para los archivos compatibles: «Convertir a PDF con PDF Organizer» y «Combinar archivos en PDF Organizer», cada una con el icono de PDF Organizer, y «Syntelab Dev», que se abre a un lado con Sumas de verificación, Comparar y Vista hexadecimal.",
+            "Las opciones se añaden solo a tu cuenta, sin necesitar permisos de administrador. Al desactivar el ajuste, se eliminan. En Windows 11 aparecen dentro de «Mostrar más opciones». Siempre abren el programa instalado: si se ha movido o reinstalado en otro lugar, las corrige al iniciarse.",
+            {
+              "note": "Si eliges «Combinar archivos en PDF Organizer» para varios archivos, se abre una colección que los contiene. «Convertir a PDF con PDF Organizer» los abre en el procesamiento por lotes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privacidad, actualizaciones y contacto",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Qué se conecta a Internet y qué no",
+          "body": [
+            "El programa no recopila nada: ni datos de uso ni nombres de archivos, y tampoco envía informes de errores automáticamente.",
+            "El programa solo se conecta a Internet en los siguientes casos, siempre a petición tuya:",
+            {
+              "points": [
+                "Comprobar si hay actualizaciones y noticias (se leen dos archivos pequeños de syntelab.com), cuando lo solicitas o, si lo has permitido, al iniciar el programa; y descargar una versión nueva, solo cuando pulsas «Actualizar».",
+                "Guardar una página web como PDF (PDF Organizer) y obtener el texto de una página web (Scribe), a partir de la dirección que escribiste.",
+                "Al hacer clic en un enlace de un documento, se abre en el navegador o en la aplicación de correo.",
+                "Comentarios y Apoyar: abren una página de syntelab.com en el navegador."
+              ]
+            },
+            "La firma con certificado y la verificación de firmas se realizan en tu equipo, sin conectarse a Internet."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Actualizaciones",
+          "body": [
+            "Ajustes → General → Actualizaciones → «Buscar actualizaciones». Si hay una versión nueva, una ventana te informa de las novedades y ofrece la opción «Actualizar».",
+            "«Actualizar» descarga la versión nueva, comprueba que realmente procede de nosotros (debe estar firmada con nuestra clave; cualquier otra se rechaza) y la instala sobre la actual. Se conservan tus ajustes y el programa se reinicia. No se descarga nada hasta que pulsas ese botón.",
+            "Si no se puede instalar la actualización de esta manera (versión portátil, paquete de Linux o falta de conexión), «Descargar» abre la página de descargas en el navegador. Instala la nueva versión sobre la actual para conservar tus ajustes.",
+            "Puedes desactivar «Comprobar actualizaciones y novedades al iniciar el programa». En cualquier caso, no se envía información sobre ti ni sobre tu equipo."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Comentarios y apoyo",
+          "body": [
+            "Ayuda → Comentarios: solicita una nueva aplicación, una función o un cambio, o informa de un problema. Leemos todos los mensajes.",
+            "Ayuda → Apoyar: el programa es gratuito; aquí puedes contribuir a que siga adelante."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Acerca de Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Acerca de Syntelab Creative",
+          "body": [
+            "Syntelab Creative es un conjunto gratuito de aplicaciones para trabajar con documentos, textos y datos, creado por Syntelab (syntelab.com). Empieza con cuatro aplicaciones: PDF Organizer, Scribe, Units y Dev. Se añadirán otras en la misma ventana.",
+            {
+              "points": [
+                "Siempre gratuito.",
+                "No se recopilan datos sobre ti, tu equipo ni tu trabajo.",
+                "Sin restricciones artificiales: no hay versión de pago, funciones bloqueadas ni límites impuestos a propósito. Los únicos límites son los de la tecnología actual y la capacidad de tu equipo."
+              ]
+            },
+            "No contamos con financiación. Creamos el programa en nuestro tiempo libre, hasta donde este nos lo permite. Queremos ofrecer software de calidad, y eso requiere tiempo y paciencia: la nuestra para desarrollarlo y la tuya mientras sigue creciendo.",
+            "El programa mejorará con cada versión. Corregimos los problemas que nos comunicas y evaluamos las funciones solicitadas para decidir qué desarrollar después.",
+            {
+              "note": "Tus documentos permanecen en tu equipo. El programa no recopila datos sobre ti ni sobre tu trabajo; consulta «Qué se conecta a Internet y qué no»."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Cómo puedes ayudar",
+          "body": [
+            "Hay tres maneras de ayudar y todas cuentan:",
+            {
+              "points": [
+                "Cuéntanos qué opinas: Ayuda → Comentarios. Puedes informarnos de un problema, de algo que falta o de algo que resulta más difícil de lo necesario. Leemos todos los mensajes.",
+                "Habla del programa y de nuestro trabajo. Cuanta más gente lo use, más comentarios recibiremos y mejor sabremos qué es lo importante. También nos ayuda a sentir que se valora nuestro trabajo y el de todas las personas que participan en el proyecto, ahora y en el futuro.",
+                "Si puedes, apóyanos económicamente: Ayuda → Apóyanos. Tu contribución nos da tiempo para seguir trabajando en el programa."
+              ]
+            },
+            "No te pedimos nada de esto. El programa es y siempre será gratuito y completo para todo el mundo."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Tecnologías utilizadas",
+          "body": [
+            "El programa se apoya en el trabajo de muchas personas. Estas son las tecnologías que comparten todas las aplicaciones:",
+            {
+              "points": [
+                "La ventana y todo lo que ves: Tauri con el componente web del sistema (WebView2 en Windows, WebKitGTK en Linux y WKWebView en macOS), escrito en TypeScript con React.",
+                "La parte que realiza el trabajo: escrita en Rust.",
+                "Tipografías e iconos: Sansation, IBM Plex Sans y Font Awesome Free."
+              ]
+            },
+            "Las tecnologías adicionales de cada aplicación se indican en su sección «Acerca de». Agradecemos su trabajo a las personas que están detrás de estos proyectos."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Limitaciones actuales",
+          "body": [
+            "Ten en cuenta estas limitaciones antes de usar el programa:",
+            {
+              "points": [
+                "Algunos textos aún están pendientes de traducción. Mientras tanto, se muestran en inglés, nunca como códigos.",
+                "Por ahora, el menú contextual del administrador de archivos solo está disponible en el Explorador de archivos de Windows.",
+                "Por ahora, la firma con certificado solo funciona en Windows; estará disponible en Linux y macOS en una versión posterior."
+              ]
+            },
+            "Las limitaciones de cada aplicación se describen en su sección «Acerca de». Si alguna te impide trabajar, cuéntanoslo en Ayuda → Comentarios; nos ayudará a decidir qué debemos priorizar."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "En qué estamos trabajando",
+          "body": [
+            "Seguiremos mejorando las cuatro aplicaciones; muchos de nuestros próximos pasos dependen de tus comentarios y solicitudes en Ayuda → Comentarios. También estamos preparando aplicaciones nuevas. Inicio no las muestra a menos que quieras: márcalas en su menú «Vista» para verlas allí como «Próximamente»:",
+            {
+              "points": [
+                "Convert: convierte archivos entre formatos, incluidos documentos de ofimática y PDF, sin necesidad de instalar otro programa. Aún no hemos encontrado una tecnología abierta que alcance la calidad que buscamos, así que la aplicación estará disponible cuando podamos ofrecer un resultado satisfactorio. Si no existen las herramientas necesarias, las desarrollaremos.",
+                "Pixel: herramientas para imágenes, como cambiar el tamaño, comprimir, quitar fondos, ajustar colores y crear códigos QR.",
+                "Metadata: permite ver y eliminar los datos ocultos de fotos, vídeos y documentos antes de compartirlos.",
+                "Wizard: herramientas aleatorias para elegir y generar resultados, como una ruleta, dados, una moneda o nombres extraídos de una lista."
+              ]
+            },
+            "En las aplicaciones actuales trabajamos en las funciones que se indican en sus secciones «Limitaciones actuales»: por ejemplo, una marca de tiempo de confianza para las firmas, firma con certificado en Linux y macOS y corrección ortográfica en Scribe.",
+            "También añadiremos más opciones de instalación: Microsoft Store y winget en Windows, Flathub y Snap en Linux.",
+            {
+              "note": "Las novedades de cada versión están en el botón de noticias de la barra lateral. Ajustes → General → Actualizaciones permite buscar versiones nuevas."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

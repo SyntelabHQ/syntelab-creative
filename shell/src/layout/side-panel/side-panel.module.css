@@ -1,0 +1,165 @@
+.panel {
+  /* Above the content, so the tooltips of the narrow strip can reach over it. */
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex: 0 0 260px;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--sc-surface);
+}
+
+.panel[data-edge='start'] {
+  border-inline-end: 1px solid var(--sc-border);
+}
+
+.panel[data-edge='end'] {
+  border-inline-start: 1px solid var(--sc-border);
+}
+
+.panel[data-collapsed='true'] {
+  flex-basis: 52px;
+  /* Its strip of buttons is wider than it (see .quick) and must not widen it. */
+  min-width: 0;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-block: 6px;
+  padding-inline: 14px 6px;
+}
+
+.panel[data-collapsed='true'] .head {
+  padding-inline: 0;
+}
+
+.title {
+  flex: 1;
+  font-weight: 600;
+}
+
+.fold {
+  width: 32px;
+  min-height: 32px;
+}
+
+/* The arrow points at the window edge when the panel can fold, away when it can open. */
+.foldArrow {
+  display: flex;
+  rotate: -90deg;
+}
+
+.panel[data-edge='start'] .foldArrow[data-open='true'],
+.panel[data-edge='end'] .foldArrow[data-open='false'] {
+  rotate: 90deg;
+}
+
+:global([dir='rtl']) .foldArrow {
+  scale: -1 1;
+}
+
+/*
+ * The narrow strip scrolls, and a scrolling box cuts off whatever sticks out
+ * of it sideways, tooltips included. So the box is made wider than the strip,
+ * reaching over the content, and lets the pointer through everywhere but on
+ * its buttons.
+ */
+.quick {
+  --tooltip-room: 280px;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  gap: 2px;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  pointer-events: none;
+}
+
+.quick > * {
+  flex: none;
+  pointer-events: auto;
+}
+
+.panel[data-edge='start'] .quick {
+  align-self: flex-start;
+  padding-inline: 8px var(--tooltip-room);
+}
+
+.panel[data-edge='end'] .quick {
+  align-self: flex-end;
+  padding-inline: var(--tooltip-room) 8px;
+}
+
+.sections {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-block-end: 12px;
+}
+
+.section {
+  padding-inline: 6px;
+}
+
+.section + .section {
+  margin-block-start: 8px;
+  padding-block-start: 8px;
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.menuName {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* The name of a section folds and unfolds it. */
+.sectionToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding-block: 6px;
+  padding-inline: 8px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.sectionToggle:hover {
+  background: var(--sc-surface-2);
+}
+
+.sectionArrow {
+  display: flex;
+  color: var(--sc-muted);
+  rotate: -90deg;
+  transition: rotate 0.12s ease;
+}
+
+:global([dir='rtl']) .sectionArrow {
+  rotate: 90deg;
+}
+
+.sectionArrow[data-open='true'] {
+  rotate: 0deg;
+}
+
+.group + .group {
+  margin-block-start: 6px;
+}
+
+.groupName {
+  padding-block: 4px;
+  padding-inline: 8px;
+  color: var(--sc-muted);
+  font-size: 12px;
+}

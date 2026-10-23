@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Farawa",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Menene Syntelab Creative",
+          "body": [
+            "Syntelab Creative shiri ɗaya ne da aka gina da manhajoji. Kowace manhaja tana yin nau'in aiki ɗaya:",
+            {
+              "points": [
+                "PDF Organizer yana karantawa, tsarawa, gyarawa da sa hannu a takardun PDF.",
+                "Scribe editan rubutu ne mai kayan aiki da ke tsaftacewa, jerawa, kwatantawa da sauya rubutu.",
+                "Units yana canzawa tsakanin ma'aunai: tsawo, zafin jiki, kuɗaɗe da sauran su da yawa.",
+                "Dev yana tattara kayan aiki ga masu haɓaka manhaja: ɓoye da buɗe lamba (encode da decode), tsarawa da dubawa, sauya wani nau'in bayanai zuwa wani."
+              ]
+            },
+            "Manhajojin suna raba taga ɗaya, saituna iri ɗaya da hanyar aiki ɗaya, don haka abin da ka koya a ɗaya haka yake a ta gaba.",
+            {
+              "note": "Komai yana faruwa ne a kwamfutarka. Ba a taɓa aika takardunka ko'ina ba, kuma ba a tattara komai game da kai ko aikinka."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Taga",
+          "body": [
+            {
+              "points": [
+                "Sandar gefe: gida yana kai ka zuwa Farko, sannan manhajojinka, kuma a ƙasa labaran shirin, Ra'ayi, Tallafi da Saituna.",
+                "A cikin manhaja, Fayil → Je zuwa Farko yana zuwa shafin farko na wannan manhaja idan tana da shi (Units, Scribe), kuma Fayil → Buɗe Saituna (Ctrl+,) yana buɗe Saituna a sashin wannan manhaja; sauran sassan danna ɗaya ne kawai daga can.",
+                "Tab a sama: kowace takarda, tarin fayiloli ko kayan aiki da ka buɗe yana da tab nasa. Ɗigo a kan tab yana nuna cewa yana da canje-canjen da ba a ajiye ba.",
+                "Menu na manhajar, ƙarƙashin tab: a matsayin sandar menu, ribbon ko faifai a gefe, duk wanda ka zaɓa.",
+                "Sauran tagar ita ce tab ɗin da ke gaba."
+              ]
+            },
+            "Rufe tab mai canje-canjen da ba a ajiye ba yana tambaya da farko; haka ma rufe shirin."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Farko",
+          "body": [
+            "Farko yana nuna manhajojinka da fayilolin da ka buɗe kwanan nan. Danna manhaja don buɗe ta; danna fayil na kwanan nan don sake buɗe shi.",
+            "Ana iya nuna manhajojin a matsayin katuna, alamomi tare da suna ko alamomi kawai, kuma a ja su zuwa jerin da kake so. Da madannai: Alt da maɓallan kibiya. \"Mayar da na asali\" yana mayar da su.",
+            "Kowace manhaja kuma tana da gajeriyar hanyarta a menu na Start na Windows, kamar \"Syntelab PDF Organizer\" ko \"Syntelab Units\": tana buɗe shirin kai tsaye a cikin wannan manhaja. Idan shirin yana buɗe tuni, manhajar tana buɗewa a ciki a matsayin tab."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Buɗe fayiloli",
+          "body": [
+            {
+              "points": [
+                "Daga manhaja: Fayil → Buɗe, ko Ctrl+O.",
+                "Ta hanyar jefa fayiloli daga folda a kan tagar.",
+                "Daga manajan fayiloli na tsarinka: danna sau biyu a kan fayil da aka saita shirin ya buɗe. A Windows Explorer akwai kuma menu na danna-dama (duba \"Menu na danna-dama na Windows Explorer\").",
+                "Daga Farko: jerin fayilolin kwanan nan."
+              ]
+            },
+            "Shirin yana gudana a matsayin kwafi ɗaya. Fayil da aka buɗe daga manajan fayiloli yayin da shirin yake gudana yana buɗewa a matsayin sabon tab a cikin taga ɗaya."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mai da shi naka",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Tsari: sandar menu, ribbon ko faifan gefe",
+          "body": [
+            "Ana iya nuna umarnin manhaja ta hanyoyi uku. Umarni ɗaya ne; inda suke kawai ya bambanta.",
+            {
+              "points": [
+                "Na gargajiya: sandar menu da sandar kayan aiki.",
+                "Ribbon: manyan maɓallai a cikin rukunoni masu suna, tab ɗaya ga kowane menu. Ana iya ninke shi don barin ƙarin fili ga takardar.",
+                "Faifan gefe: kayan aiki a cikin faifai a hagu ko a dama, wanda za a iya ninke shi zuwa alamomi."
+              ]
+            },
+            "Zaɓi tsarin kowace manhaja a Saituna → Gaba ɗaya → Tsari. Manhaja na iya samun tsarinta na kanta, wanda aka zaɓa a sashinta na Saituna ko daga menu na Kallo nata; daga nan ba ta bin na gaba ɗaya har sai ka zaɓi \"Yi amfani da tsarin gaba ɗaya\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Jigo",
+          "body": [
+            "Saituna → Gaba ɗaya → Jigo: Mai haske, Mai duhu, Toka mai haske, Toka mai duhu, ko Atomatik, wanda yake bin saitin haske ko duhu na tsarin kwamfuta.",
+            "Jigo ba ya taɓa canza launin shafukan takarda: takarda tana kasancewa yadda take."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Harshe",
+          "body": [
+            "Saituna → Gaba ɗaya → Harshe. Shirin yana magana da harsuna 62. \"Harshen tsarin kwamfuta\" yana bin harshen tsarinka. Ana iya bincika jerin ta sunan harshe a harshensa, sunansa a harshenka ko sunansa na Turanci.",
+            "Rubutun da ba a fassara ba tukuna ana nuna shi da Turanci, ba a matsayin lamba ba."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Tab",
+          "body": [
+            {
+              "points": [
+                "\"Riƙe tab ɗin Farko a cikin sauran tab\": idan an kashe, tab ɗin Farko yana bayyana ne kawai lokacin da Farko kansa yake gaba; gidan da ke kan sandar gefe kullum yana mayar da kai can.",
+                "Alamar da ke kan tab na iya zama alamar manhajarsa ko murabba'i mai sauƙi a launin manhajar."
+              ]
+            },
+            "Idan tab sun fi wurin da ake da shi yawa, kibiyoyin da ke ƙarshen layin suna gungura shi, kuma \"Ƙarin tab\" yana lissafa su duka."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gano hanyarka",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Neman umarni",
+          "body": [
+            "Akwatin bincike (\"Nemo manhajoji, kayan aiki da umarni\") yana nemo kowane umarni na tab ɗin da ke gaba ta sunansa, a harshenka ko a Turanci. Zaɓi sakamako don gudanar da shi.",
+            "Umarnin da aka tsara amma ba a rubuta ba tukuna suna bayyana da launin toka a cikin menu kuma ba a saka su a cikin bincike."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Gajerun hanyoyin madannai",
+          "body": [
+            "Ana rubuta maɓallan umarni kusa da sunansa a cikin menu da kuma a bayanin gaggawarsa. Waɗanda aka fi amfani da su:",
+            {
+              "points": [
+                "Ctrl+O: buɗe fayil",
+                "Ctrl+S: ajiye; Ctrl+Shift+S: ajiye a matsayin",
+                "Ctrl+P: buga",
+                "Ctrl+Z da Ctrl+Y: soke da maimaita",
+                "Ctrl+F: nemo a cikin takarda",
+                "Ctrl+W: rufe tab",
+                "Ctrl+Tab da Ctrl+Shift+Tab: tab na gaba da na baya",
+                "Ctrl+, (waƙafi): Saituna",
+                "F1: wannan Taimako",
+                "Escape: fita daga cikakken allo ko yanayin karatu, ko ajiye kayan aikin da ke hannu"
+              ]
+            },
+            "Ana canza maɓallan umarnin shirin kansa (tab, Saituna, Taimako) a Saituna → Gaba ɗaya → Gajerun hanyoyin madannai; na umarnin manhaja kuma a sashinta na Saituna. Danna maɓallan umarni, sannan ka danna sababbin."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Amfani da wannan Taimako",
+          "body": [
+            "Taimako ya dogara da inda ka buɗe shi. Daga manhaja kana ganin littafin jagorar wannan manhaja kawai da umarnin tab ɗin da ka fito daga ciki. Daga shafin farko ko daga Saituna kana ganin \"Game da\" (shirin da kowace manhaja, a taƙaice) da littafin jagorar shirin. Taimako → Game da kullum yana kai ka zuwa \"Game da\".",
+            "Abubuwan ciki suna gefen hagu; binciken da ke samansu yana dubawa a kowane batu, a cikin kanun labarai da rubutu.",
+            "Taimako yana buɗewa a cikin tab nasa, don haka za ka iya kai da komowa tsakaninsa da aikinka; F1 yana sake kawo shi gaba. Ƙarƙashin \"Umarnin tab ɗin da ka fito daga ciki\" an lissafa kowane menu na wannan tab tare da kowane umarninsa, maɓallansa da abin da yake yi: buɗe Taimako daga tab ɗin da kake da tambaya a kai."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Menu na danna-dama na Windows Explorer",
+          "body": [
+            "Saituna → Gaba ɗaya → Windows Explorer → \"Nuna Syntelab Creative a menu na danna-dama na fayiloli da folda\" yana ƙara abubuwa ga fayilolin da shirin yake karantawa: \"Canza zuwa PDF da PDF Organizer\" da \"Haɗa fayiloli a PDF Organizer\", kowanne da alamar PDF Organizer, da \"Syntelab Dev\", wanda ke buɗewa a gefe da Checksums, Kwatanta da Duban hex.",
+            "Ana ƙara su don mai amfaninka kaɗai, ba tare da haƙƙin mai gudanarwa ba, kuma kashe maɓallin yana cire su. A Windows 11 suna ƙarƙashin \"Show more options\". Kullum suna buɗe shirin da aka shigar: idan an matsar da shi ko an sake shigar da shi a wani wuri, yana gyara su lokacin da ya fara.",
+            {
+              "note": "Zaɓar \"Haɗa fayiloli a PDF Organizer\" a kan fayiloli da yawa yana buɗe tarin fayiloli da su; \"Canza zuwa PDF da PDF Organizer\" yana buɗe sarrafa fayiloli da yawa da su."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sirri, sabuntawa da tuntuɓa",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Abin da ke shiga intanet, da abin da ba ya taɓa shiga",
+          "body": [
+            "Shirin ba ya tattara komai: babu bayanan amfani, babu sunayen fayiloli, babu rahotannin faɗuwa da ake aikawa da kansu.",
+            "Yana shiga intanet ne kawai a waɗannan lokuta, kowanne da kai ka nema:",
+            {
+              "points": [
+                "Duba sabuntawa da labarai (ƙananan fayiloli biyu da ake karantawa daga syntelab.com), lokacin da ka nema ko, idan ka yarda, lokacin da shirin ya fara; da sauke sabuwar siga, sai kawai lokacin da ka danna \"Sabunta\".",
+                "Ajiye shafin yanar gizo a matsayin PDF (PDF Organizer) da kawo rubutun shafin yanar gizo (Scribe), daga adireshin da ka rubuta.",
+                "Mahaɗi a cikin takarda da ka danna: ana miƙa shi ga burauzarka ko shirin imel ɗinka.",
+                "Ra'ayi da Tallafi: suna buɗe shafin syntelab.com a burauzarka."
+              ]
+            },
+            "Sa hannu da takardar shaida da duba sa hannu ana yin su a kwamfutarka, ba tare da shiga intanet ba."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Sabuntawa",
+          "body": [
+            "Saituna → Gaba ɗaya → Sabuntawa → \"Duba sabuntawa\". Idan akwai sabuwar siga, taga tana gaya maka abin da ke sabo kuma ta ba ka \"Sabunta\".",
+            "\"Sabunta\" yana sauke sabuwar siga, ya tabbatar cewa da gaske daga gare mu take (dole ne an sa mata hannu da maɓallinmu; ana ƙin duk wani abu daban) sannan ya saka ta a kan wannan. Ana riƙe saitunanka kuma shirin yana sake farawa. Ba a sauke komai har sai ka danna shi.",
+            "Idan ba za a iya saka sabuntawar ta wannan hanya ba (kwafi mai ɗauka, fakitin Linux, babu hanyar sadarwa), \"Sauke\" yana buɗe shafin saukewa a burauzarka; saka sabuwar siga a kan wannan kuma za a riƙe saitunanka.",
+            "Ana iya kashe \"Duba sabuntawa da labarai lokacin da shirin ya fara\"; ko ta yaya ba a aika komai game da kai ko kwamfutarka."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Ra'ayi da tallafi",
+          "body": [
+            "Taimako → Ra'ayi: nemi sabuwar manhaja, sabon fasali ko canji, ko kai rahoton matsala. Ana karanta kowane saƙo.",
+            "Taimako → Tallafi: shirin kyauta ne; a nan ne za ka iya taimaka masa ya ci gaba."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Game da Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Game da Syntelab Creative",
+          "body": [
+            "Syntelab Creative rukunin manhajoji ne na kyauta don aikin yau da kullum da takardu, rubutu da bayanai, wanda Syntelab (syntelab.com) ya yi. Ya fara da manhajoji huɗu: PDF Organizer, Scribe, Units da Dev. Wasu za su haɗu da su a cikin taga ɗaya.",
+            {
+              "points": [
+                "Kyauta har abada.",
+                "Ba a tattara bayanai: babu komai game da kai, kwamfutarka ko aikinka.",
+                "Ba a hana komai ba: babu sigar biya, babu fasalin da aka kulle, babu iyakar da aka sanya da gangan. Iyakoki kawai su ne abin da fasahar yau za ta iya yi da abin da kwamfutarka za ta iya ɗauka."
+              ]
+            },
+            "Ba mu da kuɗin tallafi. Ana yin shirin ne a lokacin hutunmu, gwargwadon yadda lokacin ya ba da dama. Mun ƙudurta sosai mu yi manhaja mai inganci, kuma hakan yana buƙatar lokaci da haƙuri: namu don gina ta, da naka yayin da take girma.",
+            "Zai ƙara inganta da kowace siga. Ana gyara matsalolin da aka kai rahotonsu, kuma ana auna fasalolin da aka nema don abin da zai zo na gaba.",
+            {
+              "note": "Takardunka suna zama a kwamfutarka. Shirin ba ya tattara komai game da kai ko aikinka; duba \"Abin da ke shiga intanet, da abin da ba ya taɓa shiga\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Yadda za ka taimaka",
+          "body": [
+            "Akwai hanyoyi uku, kuma kowannensu yana da muhimmanci:",
+            {
+              "points": [
+                "Faɗa mana ra'ayinka: Taimako → Ra'ayi. Matsalar da ka gamu da ita, abin da ya ɓace, abin da ya fi wuya fiye da yadda ya kamata. Muna karanta kowane saƙo.",
+                "Faɗa wa wasu game da shirin da abin da muke yi. Ƙarin mutane masu amfani da shi yana nufin ƙarin ra'ayoyi, kuma ta haka ne muke ganin abin da yake da muhimmanci da gaske. Yana kuma sa mu ji cewa ana daraja aikinmu: namu, da na kowa da ke shiga cikin aikin da wanda zai shiga.",
+                "Tallafa masa da kuɗi, idan za ka iya: Taimako → Tallafa mana. Yana sayo mana lokaci don yin aiki a kai."
+              ]
+            },
+            "Ba a nemi ko ɗaya daga cikin waɗannan daga gare ka ba. Shirin kyauta ne kuma zai kasance kyauta har abada, cikakke, ga kowa."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Abin da aka gina shi da shi",
+          "body": [
+            "Shirin ya dogara ne a kan aikin mutane da yawa. Abin da kowace manhaja take rabawa:",
+            {
+              "points": [
+                "Taga da duk abin da kake gani: Tauri, tare da web view na tsarin kwamfuta (WebView2 a Windows, WebKitGTK a Linux, WKWebView a macOS); an rubuta shi da TypeScript tare da React.",
+                "Ɓangaren da ke yin aikin: an rubuta shi da Rust.",
+                "Haruffa da alamomi: Sansation, IBM Plex Sans da Font Awesome Free."
+              ]
+            },
+            "Abin da kowace manhaja ta ƙara an faɗa a shafinta ƙarƙashin \"Game da\". Muna godiya ga mutanen da ke bayan waɗannan ayyuka."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Abin da ba zai iya yi ba tukuna",
+          "body": [
+            "Don ka sani kafin ka dogara da shi:",
+            {
+              "points": [
+                "Wasu rubutu har yanzu suna jiran fassararsu. Har zuwa lokacin ana nuna su da Turanci, ba a matsayin lamba ba.",
+                "Menu na danna-dama na manajan fayiloli yana nan ne kawai a Windows Explorer a yanzu.",
+                "Sa hannu da takardar shaida yana aiki a Windows a yanzu; a Linux da macOS zai zo a wata siga ta gaba."
+              ]
+            },
+            "Iyakokin kowace manhaja suna a shafinta ƙarƙashin \"Game da\". Idan ɗaya daga cikinsu ya hana ka, faɗa mana ta Taimako → Ra'ayi: yana taimaka mana mu yanke shawarar abin da zai fara zuwa."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Abin da muke aiki a kai",
+          "body": [
+            "Manhajoji huɗun za su ci gaba da girma: abin da ka kai rahoto da abin da ka nema ta Taimako → Ra’ayi yana ƙayyade yawancin abin da zai fara zuwa. Ban da su, ana shirya sababbin manhajoji. Farko ba ya nuna su sai idan kana so: yi musu alama a menu ɗinsa na \"Kallo\" don ganin su a can a matsayin \"Yana zuwa nan ba da jimawa ba\":",
+            {
+              "points": [
+                "Convert: canza fayiloli daga wani tsari zuwa wani, ciki har da takardun ofis zuwa PDF da akasin haka, ba tare da buƙatar saka wani shiri ba. Ba mu sami fasahar buɗaɗɗiya da ta kai ingancin da muke so ba tukuna, don haka za ta zo ne kawai lokacin da ba za ta ba ka kunya ba; inda kayan aiki ba su wanzu ba, za mu gina su.",
+                "Pixel: kayan aiki don hotuna, kamar canza girma da matsawa, cire bango, launuka da lambobin QR.",
+                "Metadata: gani da cire ɓoyayyun bayanai na hotuna, bidiyo da takardu, kafin ka raba su.",
+                "Wizard: masu zaɓe da masu samarwa na bazata: dabaran juyawa, ɗan lido, kwabo, sunayen da aka zaro daga jeri."
+              ]
+            },
+            "A cikin manhajojin da ke nan tuni muna aiki a kan abin da shafukansu na \"Abin da ba zai iya yi ba tukuna\" suka lissafa: misali tambarin lokaci amintacce don sa hannu, sa hannu da takardar shaida a Linux da macOS, da duba kuskuren rubutu a Scribe.",
+            "Ƙarin hanyoyin saka shirin za su biyo baya: Microsoft Store da winget a Windows, Flathub da Snap a Linux.",
+            {
+              "note": "Labaran kowace siga suna ƙarƙashin maɓallin labarai a sandar gefe; Saituna → Gaba ɗaya → Sabuntawa yana duba ko akwai sabuwar siga."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

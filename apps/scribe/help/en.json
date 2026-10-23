@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Texts and files",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "The editor",
+          "body": [
+            "Scribe is an editor of plain text with its tools beside it. Each text has a tab; the text is in the middle, the panel of tools on its side, and a line of facts under it.",
+            "When Scribe is opened it first asks what you would like to do: count words, find and replace, remove duplicates, compare two texts, sort lines, reverse a text, write filler or random text. Each choice opens the text with the tool for it beside; \"An empty text\" opens the text alone, and the texts opened lately are listed under.",
+            {
+              "points": [
+                "File → New text (Ctrl+N) starts an empty text.",
+                "File → Open (Ctrl+O) opens one or several files, each in its tab. Any file that holds text opens: .txt, .md, .csv, .log, .srt, source code and others.",
+                "Edit → Undo (Ctrl+Z) and Redo (Ctrl+Y) go through everything done to the text, a tool or a recipe counting as one step.",
+                "Edit → Find and replace (Ctrl+F) opens a strip in the editor that goes from one match to the next.",
+                "Edit → Select all (Ctrl+A)."
+              ]
+            },
+            "The line under the text shows where the cursor is, how much is selected, the number of lines, words and characters, the encoding of the file and how its lines end.",
+            "Files dropped on the window open too, each as a new text with the file's name, encoding and line endings. The program gets what is in a dropped file but not where it is on disk, so saving asks where; files over 64 MB are opened with File → Open.",
+            "A new text, while it is empty, lists the texts opened lately: click one to open it. \"Forget the list\" empties it; the list is kept on this computer only."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Save and Save as",
+          "body": [
+            "Nothing changes the file on disk until you save. A dot on the tab says the text has changes that are not in its file, and closing such a tab asks first.",
+            {
+              "points": [
+                "Save (Ctrl+S) writes the text over its file. A new text asks where.",
+                "Save as (Ctrl+Shift+S) writes it to a new file, which then takes the tab's place, with everything that can be undone still there; the old file stays as it was."
+              ]
+            },
+            "A file is written whole or not at all: if writing fails, the file that was there is still there.",
+            {
+              "note": "A file is saved the way it was opened: in the same encoding, with the same line endings. A text typed on Windows and one typed on Linux both stay what they were."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Encodings and line endings",
+          "body": [
+            "An encoding is the way letters are kept as bytes. Scribe reads what the file says about itself, and guesses when it says nothing. Most files today are UTF-8; older ones from Central Europe are often windows-1250.",
+            {
+              "points": [
+                "Letters that look wrong (Ã£ in place of ă, or squares): File → \"Read again in another encoding\", and choose the one the file was written in.",
+                "To save in another encoding, choose it on the line under the text, then save. If the text has letters that encoding cannot write, Scribe says which and writes nothing.",
+                "Line endings (Windows CRLF, Linux and macOS LF, old Mac CR) are changed in the same place. A file with mixed endings is said to have them; saving gives all its lines the same."
+              ]
+            },
+            "What a new text starts with is chosen in Settings."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "How the text is shown",
+          "body": [
+            {
+              "points": [
+                "Everything in the View menu is a switch: on, it is seen; off, it is not.",
+                "Text: Wrap long lines (Alt+Z) — a line longer than the window goes on below, and the text keeps its lines; Line numbers; Result beside the text.",
+                "Beside the text: Tools (Ctrl+T), Recipes, Statistics. The panel shows only the parts that are on; with none on, there is no panel.",
+                "Tools shown: each group of tools (find and replace, lines, capitals and letters, cleaning, write text) can be left out of the panel. A tool chosen from the Format or the Tools menu is shown all the same: its part and its group come back by themselves.",
+                "The double arrow at the top of the panel folds it down to a strip at the edge, from which each of its parts is a click away; drag its edge to make it wider or narrower.",
+                "The letters and their size are chosen in Settings."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Very large files",
+          "body": [
+            "A file over 64 MB is not put in the editor: it opens in a tab that shows it a page of 500 lines at a time, read from the file as you go. Files of gigabytes open this way in the time it takes to go through them once.",
+            {
+              "points": [
+                "\"Previous page\" and \"Next page\" move through it; a line number and \"Go\" jump to any line.",
+                "Find looks through the whole file, with the same choices as elsewhere, and lists the places it found: click one to go to its line. A long list comes a part at a time, with \"Find more\".",
+                "\"Run a recipe on the whole file\" writes the result into a folder you choose, under the same name. The file itself is never changed here.",
+                "\"Open whole in the editor\" puts it in the editor all the same, to change it by hand. It may be slow, and it needs several times the size of the file in memory."
+              ]
+            },
+            {
+              "note": "Files written two bytes to a letter (UTF-16) cannot be shown a page at a time. A recipe holds the whole file in memory while it runs: the limit is the memory of the computer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tools",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "How tools work",
+          "body": [
+            "The tools are in the panel beside the text, in groups. Click a tool to see its choices, then Apply.",
+            {
+              "points": [
+                "With something selected, a tool changes only the selection; with nothing selected, the whole text. The panel says which, at its top.",
+                "Under the button, a tool says what it did: how many lines or places it changed.",
+                "Every tool is one step: Undo takes it back whole.",
+                "Every tool is also in the menus and in the search of commands: those that change the shape of a text (lines, capitals and letters, cleaning) in the Format menu, the others in Tools. Choosing one there opens the panel at its choices."
+              ]
+            },
+            "In the Format menu, a tool that is mostly one choice is laid out as its options: every way to change capitals, every kind of quotation mark, every way to turn a text around is a command of its own, which opens the tool with that option chosen. Where the window is too narrow for a group, the group becomes one button that opens the whole list.",
+            "The tools run on this computer. No text leaves it."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "The result, before you apply",
+          "body": [
+            "While a tool is open, what it would give is shown beside the text, in the \"Result\" pane. Nothing in the text changes until you choose Apply. The result follows you: change a choice or the text, and it is made again.",
+            {
+              "points": [
+                "The text and the result stand side by side, each under a head of the same height, so the same lines start at the same height; they scroll together (the chain button turns that off).",
+                "Lines that would change are marked, with the part of the line that changes marked darker; lines that would only move, and lines that are new, each have their own colour. The lines that would be changed or taken out are marked in your text too.",
+                "Under the names: what would happen in numbers — lines changed, moved, new, taken out; lines and characters before and after.",
+                "Under the result: the lines that would be taken out. Click one to go to it in the text.",
+                "The small buttons of the result: copy it, open it as a new text, compare it with the text in a tab, scroll together, put the result under the text instead of beside it, hide it. The text has its own: undo, redo, copy, paste over, select all, clear.",
+                "Drag the bar between the two to give one more room; a double click makes them equal again."
+              ]
+            },
+            "After Apply, the Result pane says so (\"Applied. The text on the left is now the result.\") and offers Undo and \"Compare with what it was\", which opens the same comparison of before and after. It shows a result again as soon as you change the text or a choice of the tool.",
+            {
+              "note": "View → \"Result beside the text\" turns the pane off and on. For a very long text (over two million characters) nothing is shown beforehand: apply the tool, and Undo takes it back."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Replace everywhere",
+          "body": [
+            "Replaces every place something is found, at once. While you type what to find, Scribe says in how many places it is found and marks them in the text, so you see what will change before you apply.",
+            {
+              "points": [
+                "\"Regular expression\": the text to find is a pattern. In \"Replace with\", $1, $2… stand for what the groups of the pattern found.",
+                "\"Capitals count\": a and A are different letters.",
+                "\"Whole words only\": \"cat\" is not found inside \"category\".",
+                "\"Keep the capitals of what is replaced\": replacing \"cat\" with \"dog\" turns \"Cat\" into \"Dog\" and \"CAT\" into \"DOG\"."
+              ]
+            },
+            {
+              "points": [
+                "\"More choices\" → \"Fill in…\": what is put in place may hold blanks filled in at each match. {counter} counts 1, 2, 3… ({counter:10} starts at 10, {counter:10:5} goes up by 5); {date} and {time} are the day and the hour of your computer; {uuid} is an identifier; {random} is 8 random letters and digits ({random:12} for 12).",
+                "Under what you look for, Scribe also says on how many lines the matches are and how many different texts they are."
+              ]
+            },
+            "\"Replace several at once\" does a list of pairs in one step. Write one pair to a line, as: what to find => what to put in its place. They are done from the first to the last, each on what the one before left; an empty second half takes the text out.",
+            {
+              "note": "A pattern cannot freeze the program: the time it takes grows with the length of the text and no faster. Patterns that look back at what they found (\\1) are not available for that reason."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Lines",
+          "body": [
+            {
+              "points": [
+                "Sort lines by: their letters, as a dictionary does, in the language of the program or one you choose (in Romanian ă comes after a; Swedish puts ä after z, German beside a); letters with numbers as numbers (file2 before file10); the number each line starts with; length; number of words; the date each line starts with (05.03.2024, 2024-03-05, with or without an hour); internet addresses; version numbers (1.2.10 after 1.2.9); titles, where an article at the start does not count; an order you write (small, medium, large); or no order at all.",
+                "Lines with nothing to be sorted by (no number, no date, a value that is not in the order you wrote) stay at the end whichever way the others are sorted: smallest first or largest first.",
+                "More choices for sorting: compare from a word or a character on, or one column of a table (with what parts the columns); keep the first line in place as a heading; sort paragraphs instead of lines; and tidy first — trim, take out empty lines, take out duplicates.",
+                "Remove duplicate lines: keep the first, the last, or none of the lines that repeat (only those that are there once stay). Capitals, the spaces around a line, digits, punctuation, and a number of characters at the start or the end can each be passed over; only a column, or only what a pattern finds, can be what is compared. Empty lines are treated as the others, kept, taken out, or collapsed.",
+                "Count repeated lines: leaves each line once, with how many times it was there written before it — the most repeated first, or the least, or in the order they come.",
+                "Keep or drop lines: looks for something in every line and keeps only the lines that have it, or only those that do not.",
+                "Reverse the order of lines; Shuffle lines.",
+                "Number lines: the first number, what stands after it, zeros in front so the numbers line up, empty lines without a number.",
+                "Empty lines: remove them all, or leave one where there are several.",
+                "Join lines into one, with what you choose between them; Split into lines at every comma, semicolon or anything else. Wherever what stands between things is typed (numbering, joining, splitting, counting), \\t stands for a tab, which cannot be typed into a field."
+              ]
+            },
+            {
+              "note": "A choice that only matters with another is shown only then: the column, once you compare by a column. The choices fewer people need are under \"More choices\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Capitals",
+          "body": [
+            "Change capitals: sentence case, every word with a capital, all capitals, all small letters, inverted, and the ways names are written in code: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Capitals follow the rules of each alphabet, not only of English.",
+            "In the Direction group, \"Turn the text around\" turns the letters of every line around, or the order of its words, or the letters of each word; \"Upside down\" writes it to be read from across the table, and \"As in a mirror\" also swaps the marks that have a left and a right. Letters are counted as a reader counts them: a letter with its marks stays one."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Cleaning",
+          "body": [
+            {
+              "points": [
+                "Clean up spaces: several spaces become one; spaces at the ends of lines go.",
+                "Trim line ends: at both ends, at the start or at the end.",
+                "Quotation marks: straight, English, Romanian, German or French.",
+                "Remove diacritics: ă becomes a, é becomes e. Only in the Latin and Greek alphabets, where a letter without its mark is still the letter.",
+                "Repair Romanian letters: ş and ţ (with a cedilla, written by older keyboards) become ș and ț (with a comma), the letters Romanian is written with.",
+                "Tabs to spaces and spaces to tabs, with the width of a tab you choose.",
+                "Remove HTML tags: for the source of a web page pasted into the text. The tags, scripts and styles go; what a reader would see stays. To bring a page from its address, use the tool under it, \"Text of a web page\".",
+                "Text of a web page: type the address of a page (example.com/page) and choose \"Bring the text\". What a reader would see on that page is written where the cursor is, without tags, scripts or styles. This is the one tool of Scribe that goes online, and only when you ask: the page is fetched by the browser installed on this computer (Microsoft Edge or Google Chrome), run without a window and without your cookies or sign-ins; the program itself sends nothing. A page that needs you to be signed in gives only what a stranger would see."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Putting Romanian diacritics back",
+          "body": [
+            "Romanian typed without ă, â, î, ș, ț is written with them again.",
+            {
+              "steps": [
+                "Open the tool in the Cleaning group and choose Apply.",
+                "Words that have one right form are changed at once: \"stiu\" becomes \"știu\", \"informatii\" becomes \"informații\".",
+                "Words that can be read in more than one way (fata, fată, fața, față) are listed under the button, each in its place in the text. Click the right form for each.",
+                "Or tick \"Choose the likelier form by itself\" before applying: nothing is asked, and the result is to be read through."
+              ]
+            },
+            "Where the words around are enough, Scribe decides by them: \"o casa\" becomes \"o casă\", \"casa mea\" stays, \"pentru ca\" becomes \"pentru că\".",
+            {
+              "note": "This is built for Scribe from a list of common words and the endings Romanian always writes with diacritics. Words it does not know (rare words, names) stay as they are typed, and a word already written with diacritics is never touched. Read the result before sending it."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Writing text: filler and random",
+          "body": [
+            "The tools of the \"Write text\" group change nothing: they write. What they give goes where the cursor is, in place of the selection.",
+            {
+              "points": [
+                "Filler text: paragraphs, sentences, words, lists, headings, or parts of a page (a heading, paragraphs, a list). In printers' Latin (lorem ipsum), English, Romanian, the words of offices or of the kitchen, or your own words. More choices: short, medium or long sentences; plain text, Markdown, HTML or JSON; the level of the headings; a limit in characters (the text is cut at a whole word and still ends as a sentence); words to leave out.",
+                "Made-up data: names, e-mail addresses, phone numbers, street addresses, dates or numbers, one to a line, of Romania or of English-speaking countries. \"Lines after my pattern\" writes each line as you say, with {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} and {row} standing for what is made — a table to try something on, in a moment.",
+                "Random text: passwords (letters, digits and marks, at least one of each), letters, digits, hexadecimal or identifiers (UUID), on one line or on many. Characters easily confused (0 and O, 1, l and I) can be left out.",
+                "A seed (under \"More choices\") makes filler and made-up data come out the same every time for the same number; 0 gives something new each time."
+              ]
+            },
+            {
+              "note": "Passwords are made on this computer, from the randomness of the operating system, and are sent nowhere. Made-up e-mail addresses end in example.com, where mail reaches no one; a phone number made at random may be someone's, so do not call it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recipes",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Keeping what you did as a recipe",
+          "body": [
+            "A recipe is a list of tools with their choices, kept under a name and run again with one click.",
+            {
+              "steps": [
+                "Apply to a text the tools you want, in the order you want them.",
+                "Open \"Recipes\" at the top of the panel: the tools you applied are listed.",
+                "\"Keep as a recipe\", and give it a name.",
+                "Later, open the recipe and choose \"Run on the text\": all its steps are done, and one Undo takes them all back."
+              ]
+            },
+            "Recipes are kept on this computer and are there in every text."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Changing a recipe, or making one from nothing",
+          "body": [
+            "\"Change\" on an open recipe shows its name and its steps. Each step can be moved up or down, taken out, and given other choices; tools are added from the list under the steps. Nothing is kept until \"Save\".",
+            "\"New recipe\" starts one with no steps, to be put together the same way without applying the tools to a text first.",
+            {
+              "note": "The tools that write text (filler, random) are not steps of a recipe: a recipe changes a text."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Running a recipe on files",
+          "body": [
+            {
+              "steps": [
+                "Open the recipe and, under \"Run on files\", add files or a folder (with the folders under it).",
+                "Choose where the results go: into another folder, which leaves the files as they are, or over the files themselves.",
+                "Run. Scribe says how many files were written, how many needed no change, and which could not be done and why."
+              ]
+            },
+            "Each file is written in the encoding and with the line endings it had. In another folder, files keep the folders they came with, and a file that is already there is never written over.",
+            {
+              "note": "Writing over the files themselves cannot be undone from Scribe. Keep a copy if they matter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistics, comparing and folders",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistics",
+          "body": [
+            "\"Statistics\" at the top of the panel says what the text, or the selection, is made of. Each part folds away.",
+            {
+              "points": [
+                "At the top: words, characters with and without spaces, sentences, paragraphs, lines, pages, and the size in bytes.",
+                "Time: to read in silence, to say aloud, to type, and to write by hand.",
+                "Words: how many are different (and what share of all), letters in a word, syllables, the longest and the shortest word, and how many words there are of each length.",
+                "Sentences: words in a sentence, how many are short, medium and long, how many are statements, questions and exclamations, and the longest and the shortest.",
+                "Ease of reading: a score from 0 (very hard) to 100 (very easy), by the formula made for the language of the text. Formulas exist for English, German, Spanish, French, Italian, Dutch, Portuguese and Russian; a language without one gets no score, since a formula made for another would mislead.",
+                "What it says most: the words used most with their share of the text, and the pairs and groups of three words that come back.",
+                "Room in the usual limits: how many characters are left, or over, for a title, a description, a short post and others."
+              ]
+            },
+            "Words and sentences are found by the rules of each script, so Chinese, Japanese and Thai, which put no spaces between words, are counted too. The speeds the times are reckoned with, and how many words make a page, are set in Settings."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Comparing two texts",
+          "body": [
+            {
+              "points": [
+                "Tools → \"Compare with another text\": the text in the editor beside one you type or paste.",
+                "Tools → \"Compare with a file\": the text in the editor, as it is now, beside a file you choose.",
+                "Tools → \"Compare two texts\": two texts typed or pasted side by side.",
+                "Tools → \"Compare two files\"."
+              ]
+            },
+            "The two texts are shown side by side. Lines only in the first are marked as removed, lines only in the second as added, and in a line that changed, the words that differ are marked. Only what differs is shown, with a few lines around; the arrows go from one difference to the next.",
+            "Capitals, spaces, empty lines, numbers and punctuation can each be passed over. \"In one column\" shows what was taken out above what was put in, each with its sign, instead of side by side. Beside the counts, Scribe says how alike the two texts are, as the share of lines that are the same.",
+            "A text is shown as soon as it is chosen, before the other is. Drag the bar between the two texts to give one more room; while the texts are typed, the bar under the boxes is dragged up and down to give the boxes or the comparison more room. A double click puts a bar back.",
+            "Where several lines in a row were changed, each is put beside the line it is most like, so a line added or taken out among them does not make every line after it look changed into the next.",
+            "\"Type or paste the texts\" shows a box over each column; what you write there is compared as you write, and a file can still be chosen for either side."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Finding and replacing in a folder",
+          "body": [
+            {
+              "steps": [
+                "Tools → \"Find in a folder\" (Ctrl+Shift+F), and choose the folder. The folders under it are searched too.",
+                "Type what to find, with the same choices as \"Replace everywhere\". \"Kinds of files\" keeps the search to some endings (txt, md, csv…).",
+                "Every match is shown in its line, file by file. Click a line to open the file there.",
+                "To replace: type the new text, untick the files to leave alone, and choose \"Write the files\"."
+              ]
+            },
+            "Nothing is written until you ask, and only in the files left ticked. Each file is written in the encoding and with the line endings it had.",
+            {
+              "note": "Hidden folders and those programs fill (.git, node_modules) are passed over unless you ask for them. Files that are not text are passed over always."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Settings",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "The settings of Scribe",
+          "body": [
+            "File → Settings opens the program's Settings at Scribe's part.",
+            {
+              "points": [
+                "The editor: letters of one width or the program's own, their size, wrapping, line numbers, and whether the result of a tool is shown before it is applied.",
+                "A new text: how its lines end, and whether its file starts with a byte order mark.",
+                "Statistics: the speeds of reading, saying, typing and writing by hand, and how many words make a page.",
+                "The keys of Scribe's commands."
+              ]
+            },
+            "Each setting has a button that puts it back as the program ships it."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "About Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "About Scribe",
+          "body": [
+            "Scribe is the text app of Syntelab Creative: an editor with its tools beside the text. It shows what a tool would do before it does it, cleans and reorders lists, finds and replaces in a text or in a whole folder, compares two texts, says what a text is made of, writes filler and made-up data, and keeps what you do often as recipes to run again.",
+            "Everything is done on this computer. There is no limit put on the size or the number of texts: the limits are the memory of the computer and what today's technology can do.",
+            "It is new. Where it falls short for your texts, tell us through Help → Feedback: that is how we know what to work on."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "What Scribe is built with",
+          "body": [
+            {
+              "points": [
+                "The editor: CodeMirror.",
+                "Reading and writing encodings: encoding_rs, with chardetng to guess the encoding of a file that does not say it.",
+                "Finding and replacing: the regex library of Rust, whose patterns cannot freeze the program.",
+                "Sorting as each language does, and finding words and sentences in every script: ICU4X, the Unicode library.",
+                "Comparing texts: the similar library.",
+                "Romanian diacritics: a list of words and rules written for Scribe."
+              ]
+            },
+            "What it shares with the rest of the program is under \"About Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "What Scribe cannot do yet",
+          "body": [
+            {
+              "points": [
+                "A very large file is read a page at a time and changed only through recipes; changing it by hand means opening it whole, which takes memory.",
+                "Putting Romanian diacritics back knows the common words; rare words and names stay as typed.",
+                "There is no spelling check.",
+                "Text is not taken out of PDF or office documents here; PDF Organizer opens those.",
+                "The editor does not colour code or Markdown.",
+                "A file dropped on the window opens as a new text: the program is not told where the file is, so saving asks where."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

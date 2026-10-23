@@ -1,0 +1,40 @@
+/* The line under the text: small, quiet, always there. */
+.bar {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 18px;
+  min-height: 32px;
+  padding: 2px 14px;
+  border-block-start: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  color: var(--sc-muted);
+  /* In the letters of the program, whatever the text is written in. */
+  font-family: var(--sc-font);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.spring {
+  flex: 1;
+}
+
+.choice {
+  max-width: 190px;
+  min-height: 26px;
+  padding-inline: 6px;
+  border: 1px solid transparent;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  font: inherit;
+  cursor: pointer;
+}
+
+.choice:hover:not(:disabled),
+.choice:focus-visible {
+  border-color: var(--sc-border);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+}

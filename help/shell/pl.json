@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Pierwsze kroki",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Czym jest Syntelab Creative",
+          "body": [
+            "Syntelab Creative to jeden program złożony z aplikacji. Każda aplikacja służy do określonego rodzaju pracy:",
+            {
+              "points": [
+                "PDF Organizer odczytuje, porządkuje, edytuje i podpisuje dokumenty PDF.",
+                "Scribe to edytor tekstu z narzędziami do czyszczenia, sortowania, porównywania i przekształcania tekstu.",
+                "Units przelicza jednostki miary, takie jak długość, temperatura, waluty i wiele innych.",
+                "Dev zawiera narzędzia dla programistów: do kodowania i dekodowania, formatowania i sprawdzania oraz konwersji danych między różnymi formatami."
+              ]
+            },
+            "Aplikacje korzystają ze wspólnego okna, tych samych ustawień i spójnego sposobu obsługi, dlatego to, czego nauczysz się w jednej, przyda Ci się również w pozostałych.",
+            {
+              "note": "Wszystko odbywa się na Twoim komputerze. Dokumenty nie są nigdzie wysyłane, a informacje o Tobie ani Twojej pracy nie są gromadzone."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Okno programu",
+          "body": [
+            {
+              "points": [
+                "Pasek boczny: ikona domu prowadzi do Start, poniżej znajdują się aplikacje, a na dole — aktualności programu, Przekaż opinię, Wsparcie i Ustawienia.",
+                "W aplikacji polecenie Plik → Przejdź do strony Start otwiera jej pierwszą stronę, jeśli ją ma (Units, Scribe), a Plik → Otwórz ustawienia (Ctrl+,) otwiera ustawienia w sekcji tej aplikacji. Do pozostałych sekcji można przejść jednym kliknięciem.",
+                "Karty u góry: każdy otwarty dokument, segregator lub zestaw narzędzi ma własną kartę. Kropka na karcie oznacza niezapisane zmiany.",
+                "Menu aplikacji pod kartami może być wyświetlane jako pasek menu, wstążka lub panel boczny — zależnie od wybranego układu.",
+                "Pozostałą część okna zajmuje aktywna karta."
+              ]
+            },
+            "Przed zamknięciem karty z niezapisanymi zmianami program poprosi o potwierdzenie; to samo zrobi przed zamknięciem programu."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Start",
+          "body": [
+            "Na stronie Start są widoczne aplikacje i ostatnio otwierane pliki. Kliknij aplikację, aby ją uruchomić, albo ostatnio używany plik, aby ponownie go otworzyć.",
+            "Aplikacje mogą być wyświetlane jako kafelki, ikony z nazwami albo same ikony. Możesz przeciągać je, aby ustawić własną kolejność. Użyj klawisza Alt i strzałek. Polecenie Przywróć domyślne przywraca pierwotny układ.",
+            "Każda aplikacja ma także własny skrót w menu Start systemu Windows, na przykład Syntelab PDF Organizer lub Syntelab Units. Skrót uruchamia program od razu w wybranej aplikacji. Jeśli program jest już otwarty, aplikacja pojawi się w nim jako nowa karta."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Otwieranie plików",
+          "body": [
+            {
+              "points": [
+                "W aplikacji: Plik → Otwórz albo Ctrl+O.",
+                "Przeciągając pliki z folderu do okna programu.",
+                "W menedżerze plików: kliknij dwukrotnie plik obsługiwany przez program. W Eksploratorze plików systemu Windows dostępne jest też menu kontekstowe (zob. Menu kontekstowe Eksploratora plików systemu Windows).",
+                "Na stronie Start: wybierz plik z listy ostatnio używanych."
+              ]
+            },
+            "Program działa jako jedna instancja. Plik otwarty z menedżera plików, gdy program jest już uruchomiony, pojawia się jako nowa karta w tym samym oknie."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dostosuj program do siebie",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Układ: pasek menu, wstążka lub panel boczny",
+          "body": [
+            "Polecenia aplikacji można wyświetlać na trzy sposoby. Zestaw poleceń jest taki sam — różni się tylko ich rozmieszczenie.",
+            {
+              "points": [
+                "Klasyczny: pasek menu i pasek narzędzi.",
+                "Wstążka: duże przyciski w nazwanych grupach, z osobną kartą dla każdego menu. Można ją zwinąć, aby zrobić więcej miejsca na dokument.",
+                "Panel boczny: narzędzia w panelu po lewej lub prawej stronie, który można zwinąć do samych ikon."
+              ]
+            },
+            "Układ wszystkich aplikacji wybierzesz w Ustawienia → Ogólne → Układ. Dla konkretnej aplikacji można ustawić osobny układ w jej sekcji Ustawień albo w menu Widok. Aplikacja przestanie wtedy korzystać z układu ogólnego, dopóki nie wybierzesz Użyj układu ogólnego."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Motyw",
+          "body": [
+            "Ustawienia → Ogólne → Motyw: Jasny, Ciemny, Jasnoszary, Ciemnoszary albo Automatyczny, który dopasowuje się do jasnego lub ciemnego motywu systemu.",
+            "Motyw nie zmienia kolorów stron dokumentu — papier zachowuje swój wygląd."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Język",
+          "body": [
+            "Ustawienia → Ogólne → Język. Program obsługuje 62 języki. Opcja Język systemu dopasowuje język do ustawień komputera. Listę można przeszukiwać po nazwie języka w jego własnym zapisie, po nazwie w Twoim języku lub po nazwie angielskiej.",
+            "Nieprzetłumaczony jeszcze tekst jest wyświetlany po angielsku, nigdy jako kod."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Karty",
+          "body": [
+            {
+              "points": [
+                "Zawsze pokazuj kartę Start: po wyłączeniu karta Start jest widoczna tylko wtedy, gdy aktywna jest sama strona Start. Ikona domu na pasku bocznym zawsze do niej prowadzi.",
+                "Oznaczenie karty może być ikoną aplikacji albo jednolitym kwadratem w jej kolorze."
+              ]
+            },
+            "Gdy otwartych kart jest więcej, niż mieści się na pasku, strzałki na jego końcach przewijają listę, a polecenie Więcej kart wyświetla wszystkie karty."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Poruszanie się po programie",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Wyszukiwanie poleceń",
+          "body": [
+            "Pole wyszukiwania (Szukaj aplikacji, narzędzi i poleceń) pozwala znaleźć dowolne polecenie dostępne na aktywnej karcie. Wpisz jego nazwę w swoim języku lub po angielsku i wybierz wynik, aby uruchomić polecenie.",
+            "Polecenia planowane, ale jeszcze niedostępne, są wyszarzone w menu i pomijane podczas wyszukiwania."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Skróty klawiaturowe",
+          "body": [
+            "Skróty poleceń są widoczne obok ich nazw w menu i podpowiedziach. Oto najczęściej używane:",
+            {
+              "points": [
+                "Ctrl+O: otwórz plik",
+                "Ctrl+S: zapisz; Ctrl+Shift+S: zapisz jako",
+                "Ctrl+P: drukuj",
+                "Ctrl+Z i Ctrl+Y: cofnij i ponów",
+                "Ctrl+F: znajdź w dokumencie",
+                "Ctrl+W: zamknij kartę",
+                "Ctrl+Tab i Ctrl+Shift+Tab: przejdź do następnej lub poprzedniej karty",
+                "Ctrl+, (przecinek): ustawienia",
+                "F1: Pomoc",
+                "Escape: wyjdź z trybu pełnoekranowego lub czytania albo zamknij aktywne narzędzie"
+              ]
+            },
+            "Skróty poleceń programu (karty, Ustawienia, Pomoc) zmienisz w Ustawienia → Ogólne → Skróty klawiaturowe, a skróty poleceń aplikacji — w jej sekcji Ustawień. Kliknij pole skrótu polecenia i naciśnij nowe klawisze."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Korzystanie z Pomocy",
+          "body": [
+            "Zakres Pomocy zależy od miejsca, z którego ją otworzysz. W aplikacji zobaczysz tylko jej podręcznik i polecenia karty, z której przejdziesz do Pomocy. Na stronie Start lub w Ustawieniach dostępne są sekcja O programie (krótkie informacje o programie i aplikacjach) oraz podręcznik programu. Polecenie Pomoc → O programie zawsze otwiera tę sekcję.",
+            "Spis treści znajduje się po lewej. Pole wyszukiwania nad nim przeszukuje tytuły i tekst wszystkich tematów.",
+            "Pomoc otwiera się we własnej karcie, więc możesz przełączać się między nią a swoją pracą. Klawisz F1 ponownie wyświetla ją na pierwszym planie. Sekcja Polecenia z poprzedniej karty zawiera wszystkie menu aktywnej karty wraz z poleceniami, skrótami klawiszowymi i opisami. Otwórz Pomoc z karty, której dotyczy Twoje pytanie."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Menu kontekstowe Eksploratora plików systemu Windows",
+          "body": [
+            "Ustawienia → Ogólne → Eksplorator plików → „Pokaż Syntelab Creative w menu podręcznym plików i folderów” dodaje polecenia dla obsługiwanych plików: „Konwertuj do PDF w PDF Organizer” i „Połącz pliki w PDF Organizer”, oba z ikoną PDF Organizer, oraz „Syntelab Dev”, które rozwija się z boku z poleceniami Sumy kontrolne, Porównaj i Widok szesnastkowy.",
+            "Polecenia są dodawane tylko dla Twojego konta użytkownika, bez uprawnień administratora. Wyłączenie tej opcji usuwa je. W systemie Windows 11 znajdują się w menu Pokaż więcej opcji. Polecenia zawsze uruchamiają zainstalowany program: jeśli został przeniesiony lub zainstalowany ponownie w innym miejscu, poprawia je przy uruchomieniu.",
+            {
+              "note": "Wybranie „Połącz pliki w PDF Organizer” dla kilku plików otwiera segregator zawierający te pliki; „Konwertuj do PDF w PDF Organizer” uruchamia dla nich przetwarzanie wsadowe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prywatność, aktualizacje i kontakt",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Co łączy się z internetem, a co nigdy",
+          "body": [
+            "Program niczego nie gromadzi: ani danych o użyciu, ani nazw plików, ani raportów o błędach wysyłanych automatycznie.",
+            "Łączy się z internetem tylko w poniższych sytuacjach, każdorazowo na Twoje żądanie:",
+            {
+              "points": [
+                "Sprawdzanie aktualizacji i aktualności (odczyt dwóch niewielkich plików z syntelab.com) — na Twoje żądanie albo przy uruchomieniu programu, jeśli na to zezwolisz. Nowa wersja jest pobierana tylko po kliknięciu Aktualizuj.",
+                "Zapisywanie strony internetowej jako PDF (PDF Organizer) i pobieranie tekstu strony (Scribe) z podanego przez Ciebie adresu.",
+                "Kliknięcie łącza w dokumencie przekazuje je do przeglądarki lub programu pocztowego.",
+                "Polecenia Przekaż opinię i Wsparcie otwierają stronę syntelab.com w przeglądarce."
+              ]
+            },
+            "Podpisywanie certyfikatem i sprawdzanie podpisów odbywają się na Twoim komputerze, bez połączenia z internetem."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Aktualizacje",
+          "body": [
+            "Ustawienia → Ogólne → Aktualizacje → Sprawdź dostępność aktualizacji. Jeśli dostępna jest nowsza wersja, pojawi się okno z listą zmian i przyciskiem Aktualizuj.",
+            "Przycisk Aktualizuj pobiera nową wersję, sprawdza, czy pochodzi od nas (musi być podpisana naszym kluczem; każda inna wersja zostanie odrzucona) i instaluje ją w miejsce obecnej. Ustawienia zostają zachowane, a program uruchamia się ponownie. Pobieranie rozpoczyna się dopiero po kliknięciu przycisku.",
+            "Jeśli nie można zainstalować aktualizacji w ten sposób (wersja przenośna, pakiet systemu Linux lub brak połączenia z internetem), przycisk Pobierz otwiera stronę pobierania w przeglądarce. Zainstaluj nową wersję w miejsce obecnej, a ustawienia zostaną zachowane.",
+            "Możesz wyłączyć opcję Sprawdzaj dostępność aktualizacji i aktualności przy uruchamianiu programu. Niezależnie od tego program nie wysyła żadnych informacji o Tobie ani o komputerze."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Opinie i wsparcie",
+          "body": [
+            "Pomoc → Przekaż opinię: zgłoś pomysł na nową aplikację, funkcję lub zmianę albo opisz problem. Czytamy każdą wiadomość.",
+            "Pomoc → Wsparcie: program jest bezpłatny; tutaj możesz pomóc nam go rozwijać."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "O Syntelab Creative",
+          "body": [
+            "Syntelab Creative to bezpłatny zestaw aplikacji do codziennej pracy z dokumentami, tekstem i danymi, tworzony przez Syntelab (syntelab.com). Zaczyna od czterech aplikacji: PDF Organizer, Scribe, Units i Dev. Kolejne będą dodawane do tego samego okna.",
+            {
+              "points": [
+                "Zawsze bezpłatny.",
+                "Nie gromadzimy danych: żadnych informacji o Tobie, Twoim komputerze ani Twojej pracy.",
+                "Bez ograniczeń wprowadzonych celowo: nie ma płatnej wersji, zablokowanych funkcji ani sztucznych limitów. Ograniczają nas jedynie możliwości obecnej technologii i sprzętu."
+              ]
+            },
+            "Nie otrzymujemy finansowania. Program powstaje w wolnym czasie, w takim zakresie, na jaki pozwalają nasze możliwości. Chcemy tworzyć oprogramowanie wysokiej jakości, a to wymaga czasu i cierpliwości — zarówno od nas podczas pracy nad programem, jak i od Ciebie, gdy program się rozwija.",
+            "Każda wersja przynosi ulepszenia. Zgłaszane problemy są naprawiane, a proponowane funkcje rozważamy przy planowaniu dalszych prac.",
+            {
+              "note": "Twoje dokumenty pozostają na komputerze. Program nie gromadzi informacji o Tobie ani Twojej pracy; zob. Co łączy się z internetem, a co nigdy."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Jak możesz pomóc",
+          "body": [
+            "Możesz pomóc na trzy sposoby — każdy z nich ma znaczenie:",
+            {
+              "points": [
+                "Napisz, co myślisz: Pomoc → Przekaż opinię. Opisz napotkany problem, brakującą funkcję albo coś, co powinno być prostsze. Czytamy każdą wiadomość.",
+                "Opowiedz innym o programie i naszej pracy. Więcej użytkowników to więcej opinii, które pomagają nam zrozumieć, co jest najważniejsze. Dzięki temu wiemy też, że nasza praca jest doceniana — zarówno nasza, jak i wszystkich osób zaangażowanych w projekt teraz i w przyszłości.",
+                "Jeśli możesz, wesprzyj nas finansowo: Pomoc → Wesprzyj nas. Dzięki temu zyskujemy więcej czasu na rozwijanie programu."
+              ]
+            },
+            "Nie oczekujemy żadnej z tych form pomocy. Program jest i zawsze pozostanie w pełni bezpłatny dla wszystkich."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Technologie użyte w programie",
+          "body": [
+            "Program powstał dzięki pracy wielu osób. Wszystkie aplikacje korzystają z tych samych technologii:",
+            {
+              "points": [
+                "Okno i widoczne elementy: Tauri z systemowym komponentem wyświetlania stron (WebView2 w systemie Windows, WebKitGTK w systemie Linux, WKWebView w systemie macOS); interfejs napisano w TypeScript z użyciem React.",
+                "Część wykonująca operacje: Rust.",
+                "Kroje pisma i ikony: Sansation, IBM Plex Sans i Font Awesome Free."
+              ]
+            },
+            "Informacje o technologiach wykorzystywanych przez poszczególne aplikacje znajdują się na ich stronach w sekcji O programie. Dziękujemy osobom, które rozwijają te projekty."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Czego program jeszcze nie potrafi",
+          "body": [
+            "Warto o tym wiedzieć, zanim zaczniesz polegać na programie:",
+            {
+              "points": [
+                "Niektóre teksty nie zostały jeszcze przetłumaczone. Do czasu ich tłumaczenia są wyświetlane po angielsku, nigdy jako kod.",
+                "Menu kontekstowe menedżera plików jest obecnie dostępne tylko w Eksploratorze plików systemu Windows.",
+                "Podpisywanie certyfikatem działa obecnie w systemie Windows; obsługa systemów Linux i macOS pojawi się w późniejszej wersji."
+              ]
+            },
+            "Ograniczenia poszczególnych aplikacji opisano na ich stronach w sekcji O programie. Jeśli któreś z nich utrudnia Ci pracę, zgłoś to przez Pomoc → Przekaż opinię — pomoże nam to ustalić priorytety."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Nad czym pracujemy",
+          "body": [
+            "Cztery obecne aplikacje będą nadal rozwijane. Zgłoszenia i prośby przesyłane przez Pomoc → Przekaż opinię pomagają nam ustalać priorytety. Przygotowujemy też nowe aplikacje. Strona Start pokazuje je tylko wtedy, gdy tego chcesz: zaznacz je w menu Widok strony Start, aby widzieć je tam jako Wkrótce:",
+            {
+              "points": [
+                "Convert: konwertowanie plików między formatami, w tym dokumentów biurowych do PDF i z powrotem, bez instalowania dodatkowych programów. Nie znaleźliśmy jeszcze otwartej technologii zapewniającej oczekiwaną jakość, dlatego aplikacja pojawi się dopiero wtedy, gdy będzie spełniać nasze standardy. Tam, gdzie brakuje odpowiednich narzędzi, stworzymy je sami.",
+                "Pixel: narzędzia do obrazów, takie jak zmiana rozmiaru i kompresja, usuwanie tła, praca z kolorami i kodami QR.",
+                "Metadata: wyświetlanie i usuwanie ukrytych danych ze zdjęć, filmów i dokumentów przed ich udostępnieniem.",
+                "Wizard: losowanie i generowanie, w tym koło fortuny, kostki, rzut monetą i wybieranie nazw z listy."
+              ]
+            },
+            "W obecnych aplikacjach pracujemy nad funkcjami wymienionymi w sekcjach Czego program jeszcze nie potrafi, na przykład zaufanym znacznikiem czasu dla podpisów, podpisywaniem certyfikatem w systemach Linux i macOS oraz sprawdzaniem pisowni w Scribe.",
+            "Pojawią się też kolejne sposoby instalacji: Microsoft Store i winget w systemie Windows oraz Flathub i Snap w systemie Linux.",
+            {
+              "note": "Informacje o każdej wersji znajdziesz pod przyciskiem aktualności na pasku bocznym. Ustawienia → Ogólne → Aktualizacje pozwala sprawdzić, czy jest dostępna nowsza wersja."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

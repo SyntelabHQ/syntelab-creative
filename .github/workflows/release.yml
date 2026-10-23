@@ -1,0 +1,99 @@
+# Builds the Linux and macOS packages of a release and attaches them to it.
+# The Windows installer is built on the owner's computer (tools/build-release.ps1).
+#
+# Runs when a tag like v1.0.0 is pushed, or by hand (Actions > Release > Run
+# workflow, naming the tag). The release of that tag is made if it does not
+# exist yet (as a draft), and the files are added to it under names without
+# the version, so that .../releases/latest/download/<name> always works:
+#   syntelab-creative.deb, syntelab-creative.rpm, syntelab-creative.AppImage,
+#   syntelab-creative.dmg
+# plus, for "Update" on Linux and macOS, the signed update files
+# (syntelab-creative.AppImage.sig, syntelab-creative.app.tar.gz and its .sig).
+#
+# Needs two repository secrets (Settings > Secrets and variables > Actions):
+#   TAURI_SIGNING_PRIVATE_KEY           the text of syntelab-creative.key
+#   TAURI_SIGNING_PRIVATE_KEY_PASSWORD  its password (empty if it has none)
+
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag of the release, like v1.0.0'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-22.04
+            args: --bundles deb,rpm,appimage
+          - os: macos-latest
+            args: --target universal-apple-darwin --bundles app,dmg
+    runs-on: ${{ matrix.os }}
+    env:
+      TAG: ${{ github.event.inputs.tag || github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.tag || github.ref }}
+
+      - name: Linux libraries
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libayatana-appindicator3-dev librsvg2-dev patchelf libclang-dev rpm
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ runner.os == 'macOS' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
+
+      - uses: Swatinem/rust-cache@v2
+
+      - run: npm ci
+
+      - name: Build
+        env:
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        run: npm run build -- ${{ matrix.args }}
+
+      - name: Names without the version
+        shell: bash
+        run: |
+          mkdir out
+          if [ "$RUNNER_OS" = Linux ]; then
+            b=target/release/bundle
+            cp "$(ls $b/deb/*.deb | head -1)" out/syntelab-creative.deb
+            cp "$(ls $b/rpm/*.rpm | head -1)" out/syntelab-creative.rpm
+            cp "$(ls $b/appimage/*.AppImage | head -1)" out/syntelab-creative.AppImage
+            cp "$(ls $b/appimage/*.AppImage.sig | head -1)" out/syntelab-creative.AppImage.sig
+          else
+            b=target/universal-apple-darwin/release/bundle
+            cp "$(ls $b/dmg/*.dmg | head -1)" out/syntelab-creative.dmg
+            cp "$(ls $b/macos/*.app.tar.gz | head -1)" out/syntelab-creative.app.tar.gz
+            cp "$(ls $b/macos/*.app.tar.gz.sig | head -1)" out/syntelab-creative.app.tar.gz.sig
+          fi
+          ls -la out
+
+      - name: Attach to the release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Both jobs may try to make the release at once; one of them finds it made.
+          gh release view "$TAG" >/dev/null 2>&1 || gh release create "$TAG" --draft --title "Syntelab Creative ${TAG#v}" --notes "" || true
+          gh release upload "$TAG" out/* --clobber

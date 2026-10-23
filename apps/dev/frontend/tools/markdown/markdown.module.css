@@ -1,0 +1,135 @@
+/* Markdown as it will look: a page of text, laid out as documents are. */
+.note {
+  margin: 0;
+  padding: 14px 16px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.preview {
+  flex: 1;
+  min-height: 0;
+  padding: 18px 24px 40px;
+  overflow: auto;
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+
+.preview > :first-child {
+  margin-block-start: 0;
+}
+
+.preview h1,
+.preview h2,
+.preview h3,
+.preview h4,
+.preview h5,
+.preview h6 {
+  margin: 1.4em 0 0.5em;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.preview h1 {
+  padding-block-end: 0.25em;
+  border-block-end: 1px solid var(--sc-border);
+  font-size: 1.9em;
+}
+
+.preview h2 {
+  padding-block-end: 0.2em;
+  border-block-end: 1px solid var(--sc-border);
+  font-size: 1.5em;
+}
+
+.preview h3 {
+  font-size: 1.25em;
+}
+
+.preview h4,
+.preview h5,
+.preview h6 {
+  font-size: 1em;
+}
+
+.preview p,
+.preview ul,
+.preview ol,
+.preview blockquote,
+.preview pre,
+.preview table {
+  margin: 0 0 1em;
+}
+
+.preview ul,
+.preview ol {
+  padding-inline-start: 1.8em;
+}
+
+.preview li > input[type='checkbox'] {
+  margin-inline-end: 0.5em;
+}
+
+.preview a {
+  color: var(--sc-accent);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.preview code {
+  padding: 0.12em 0.4em;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.preview pre {
+  padding: 12px 14px;
+  overflow-x: auto;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-bg);
+}
+
+.preview pre code {
+  padding: 0;
+  background: none;
+  white-space: pre;
+}
+
+.preview blockquote {
+  padding-inline-start: 14px;
+  border-inline-start: 3px solid var(--sc-border);
+  color: var(--sc-muted);
+}
+
+.preview table {
+  border-collapse: collapse;
+}
+
+.preview th,
+.preview td {
+  padding: 6px 12px;
+  border: 1px solid var(--sc-border);
+  text-align: start;
+}
+
+.preview th {
+  background: var(--sc-bg);
+  font-weight: 600;
+}
+
+.preview hr {
+  margin: 1.5em 0;
+  border: 0;
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.preview img {
+  max-width: 100%;
+}

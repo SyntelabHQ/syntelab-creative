@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Memulai",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Tentang Syntelab Creative",
+          "body": [
+            "Syntelab Creative adalah satu program yang terdiri dari beberapa aplikasi. Setiap aplikasi menangani jenis pekerjaan tertentu:",
+            {
+              "points": [
+                "PDF Organizer membaca, mengatur, mengedit, dan menandatangani dokumen PDF.",
+                "Scribe adalah editor teks dengan alat untuk membersihkan, mengurutkan, membandingkan, dan mengubah teks.",
+                "Units mengonversi satuan panjang, suhu, mata uang, dan banyak lagi.",
+                "Dev menyediakan kumpulan alat untuk pengembang: mengodekan dan mendekode, memformat dan memeriksa, serta mengubah data ke bentuk lain."
+              ]
+            },
+            "Semua aplikasi menggunakan jendela, pengaturan, dan cara kerja yang sama, sehingga hal yang Anda pelajari di satu aplikasi juga berlaku di aplikasi lain.",
+            {
+              "note": "Semua proses berlangsung di komputer Anda. Dokumen tidak pernah dikirim ke mana pun dan informasi tentang Anda atau pekerjaan Anda tidak dikumpulkan."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Jendela program",
+          "body": [
+            {
+              "points": [
+                "Bilah sisi: ikon rumah membuka Beranda, diikuti aplikasi Anda; di bagian bawah terdapat berita program, Masukan, Dukungan, dan Pengaturan.",
+                "Di dalam aplikasi, Berkas → Kembali ke Beranda membuka halaman pertama aplikasi jika tersedia (Units, Scribe), sedangkan Berkas → Buka Pengaturan (Ctrl+,) membuka bagian pengaturan aplikasi tersebut. Bagian lain dapat dibuka dengan sekali klik.",
+                "Tab di bagian atas: setiap dokumen, penggabung dokumen, atau alat yang dibuka memiliki tab tersendiri. Titik pada tab menandakan ada perubahan yang belum disimpan.",
+                "Menu aplikasi di bawah tab dapat ditampilkan sebagai bilah menu, pita, atau panel sisi, sesuai pilihan Anda.",
+                "Bagian jendela lainnya menampilkan tab yang sedang aktif."
+              ]
+            },
+            "Jika tab memiliki perubahan yang belum disimpan, program akan bertanya sebelum menutupnya; hal yang sama berlaku saat program ditutup."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Beranda",
+          "body": [
+            "Beranda menampilkan aplikasi dan berkas yang terakhir Anda buka. Klik aplikasi untuk membukanya atau berkas terbaru untuk membukanya kembali.",
+            "Aplikasi dapat ditampilkan sebagai kartu, ikon beserta nama, atau ikon saja. Seret aplikasi untuk mengurutkannya. Dengan papan ketik, gunakan Alt dan tombol panah. “Kembalikan ke bawaan” mengembalikan urutan bawaan.",
+            "Setiap aplikasi juga memiliki pintasan tersendiri di menu Mulai Windows, seperti “Syntelab PDF Organizer” atau “Syntelab Units”, yang langsung membuka program pada aplikasi tersebut. Jika program sudah terbuka, aplikasi akan dibuka di tab baru."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Membuka berkas",
+          "body": [
+            {
+              "points": [
+                "Dari aplikasi: Berkas → Buka atau Ctrl+O.",
+                "Seret berkas dari folder ke jendela program.",
+                "Dari pengelola berkas sistem: klik dua kali berkas yang dapat dibuka oleh program. Di Windows Explorer, Anda juga dapat menggunakan menu klik kanan (lihat “Menu klik kanan Windows Explorer”).",
+                "Dari Beranda: pilih berkas di daftar terbaru."
+              ]
+            },
+            "Program hanya berjalan sebagai satu salinan. Jika berkas dibuka dari pengelola berkas saat program sedang berjalan, berkas akan terbuka sebagai tab baru di jendela yang sama."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sesuaikan program",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Tata letak: bilah menu, pita, atau panel sisi",
+          "body": [
+            "Perintah aplikasi dapat ditampilkan dalam tiga tata letak. Perintahnya tetap sama; hanya letaknya yang berubah.",
+            {
+              "points": [
+                "Klasik: bilah menu dan bilah alat.",
+                "Pita: tombol besar dalam grup bernama, dengan tab untuk setiap menu. Pita dapat diciutkan agar ruang dokumen lebih luas.",
+                "Panel sisi: alat ditampilkan dalam panel di sebelah kiri atau kanan, yang dapat diciutkan menjadi ikon."
+              ]
+            },
+            "Pilih tata letak untuk setiap aplikasi melalui Pengaturan → Umum → Tata letak. Aplikasi juga dapat menggunakan tata letaknya sendiri, yang dipilih di bagian pengaturan aplikasi atau menu Tampilan. Tata letak khusus akan menggantikan tata letak umum sampai Anda memilih “Gunakan tata letak umum”."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Pengaturan → Umum → Tema: Terang, Gelap, Abu-abu terang, Abu-abu gelap, atau Otomatis untuk mengikuti pengaturan terang atau gelap sistem.",
+            "Tema tidak pernah mengubah warna halaman dokumen; warna kertas tetap seperti aslinya."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Bahasa",
+          "body": [
+            "Pengaturan → Umum → Bahasa. Program mendukung 62 bahasa. “Bahasa sistem” mengikuti bahasa komputer Anda. Daftar dapat dicari menggunakan nama asli bahasa, namanya dalam bahasa Anda, atau nama bahasa Inggrisnya.",
+            "Teks yang belum diterjemahkan akan ditampilkan dalam bahasa Inggris, bukan sebagai kode."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Tab",
+          "body": [
+            {
+              "points": [
+                "“Pertahankan tab Beranda di antara tab lainnya”: jika nonaktif, tab Beranda hanya tampil saat Beranda terbuka; ikon rumah di bilah sisi selalu dapat digunakan untuk kembali ke sana.",
+                "Tanda pada tab dapat menggunakan ikon aplikasinya atau kotak polos dengan warna aplikasi tersebut."
+              ]
+            },
+            "Jika jumlah tab melebihi ruang yang tersedia, gunakan tombol panah di ujung bilah untuk menggulirnya. “Tab lainnya” menampilkan semua tab."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menemukan fitur",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Mencari perintah",
+          "body": [
+            "Kotak pencarian (“Cari aplikasi, alat, dan perintah”) menemukan perintah di tab aktif berdasarkan namanya dalam bahasa Anda atau bahasa Inggris. Pilih hasil untuk menjalankan perintah.",
+            "Perintah yang direncanakan tetapi belum dibuat ditampilkan dalam warna redup pada menu dan tidak disertakan dalam hasil pencarian."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Pintasan papan ketik",
+          "body": [
+            "Pintasan papan ketik suatu perintah ditampilkan di samping namanya pada menu dan keterangan alat. Pintasan yang paling sering digunakan:",
+            {
+              "points": [
+                "Ctrl+O: buka berkas",
+                "Ctrl+S: simpan; Ctrl+Shift+S: simpan sebagai",
+                "Ctrl+P: cetak",
+                "Ctrl+Z dan Ctrl+Y: urungkan dan ulangi",
+                "Ctrl+F: cari dalam dokumen",
+                "Ctrl+W: tutup tab",
+                "Ctrl+Tab dan Ctrl+Shift+Tab: tab berikutnya dan sebelumnya",
+                "Ctrl+, (koma): Pengaturan",
+                "F1: Bantuan ini",
+                "Escape: keluar dari mode layar penuh atau mode baca, atau meletakkan alat yang sedang digunakan"
+              ]
+            },
+            "Pintasan untuk perintah program (tab, Pengaturan, Bantuan) dapat diubah melalui Pengaturan → Umum → Pintasan papan ketik; pintasan perintah aplikasi diatur melalui bagian Pengaturan aplikasi tersebut. Klik pintasan perintah, lalu tekan kombinasi tombol baru."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Menggunakan Bantuan ini",
+          "body": [
+            "Isi Bantuan bergantung pada tempat Anda membukanya. Dari aplikasi, Anda hanya melihat panduan aplikasi tersebut dan perintah pada tab asal. Dari Beranda atau Pengaturan, Anda melihat bagian “Tentang” (ringkasan program dan setiap aplikasi) serta panduan program. Bantuan → Tentang selalu membuka bagian “Tentang”.",
+            "Daftar isi berada di sebelah kiri; kotak pencarian di atasnya mencari semua topik, baik judul maupun isi.",
+            "Bantuan terbuka di tab tersendiri sehingga Anda dapat berpindah antara Bantuan dan pekerjaan. F1 akan menampilkan Bantuan kembali. Bagian “Perintah pada tab asal” mencantumkan setiap menu pada tab tersebut, nama perintah, pintasan, dan fungsinya. Buka Bantuan dari tab yang ingin Anda ketahui lebih lanjut."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Menu klik kanan Windows Explorer",
+          "body": [
+            "Pengaturan → Umum → Windows Explorer → “Tampilkan Syntelab Creative dalam menu klik kanan berkas dan folder” menambahkan perintah untuk jenis berkas yang dapat dibaca program: “Konversi menjadi PDF dengan PDF Organizer” dan “Gabungkan berkas di PDF Organizer”, masing-masing dengan ikon PDF Organizer, serta “Syntelab Dev”, yang terbuka ke samping dengan Checksum, Bandingkan, dan Tampilan heksadesimal.",
+            "Perintah ditambahkan hanya untuk akun pengguna Anda, tanpa hak administrator. Menonaktifkan opsi tersebut akan menghapusnya. Di Windows 11, perintah berada di bawah “Tampilkan opsi lainnya”. Perintah ini selalu menjalankan program yang terpasang: jika program dipindahkan atau dipasang ulang di tempat lain, program akan memperbaikinya saat dijalankan.",
+            {
+              "note": "Memilih “Gabungkan berkas di PDF Organizer” untuk beberapa berkas akan membukanya dalam penggabung dokumen; “Konversi menjadi PDF dengan PDF Organizer” akan membukanya dalam pemrosesan massal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privasi, pembaruan, dan kontak",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Aktivitas online dan data yang tidak pernah dikirim",
+          "body": [
+            "Program tidak mengumpulkan apa pun: tidak ada data penggunaan, nama berkas, atau laporan kerusakan yang dikirim otomatis.",
+            "Program hanya mengakses internet dalam kasus berikut, dan setiap tindakan diminta oleh Anda:",
+            {
+              "points": [
+                "Memeriksa pembaruan dan berita (membaca dua berkas kecil dari syntelab.com) saat Anda meminta atau, jika diizinkan, saat program dimulai; versi baru hanya diunduh setelah Anda menekan “Perbarui”.",
+                "Menyimpan halaman web sebagai PDF (PDF Organizer) dan mengambil teks halaman web (Scribe), hanya dari alamat yang Anda masukkan.",
+                "Membuka tautan yang Anda klik dalam dokumen; tautan akan diteruskan ke browser atau program email.",
+                "Masukan dan Dukungan akan membuka halaman syntelab.com di browser."
+              ]
+            },
+            "Penandatanganan dengan sertifikat dan pemeriksaan tanda tangan dilakukan di komputer Anda tanpa koneksi internet."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Pembaruan",
+          "body": [
+            "Pengaturan → Umum → Pembaruan → “Periksa pembaruan”. Jika versi yang lebih baru tersedia, jendela akan menjelaskan perubahan dan menawarkan “Perbarui”.",
+            "“Perbarui” mengunduh versi baru, memeriksa bahwa versi tersebut benar-benar berasal dari kami (harus ditandatangani dengan kunci kami; selain itu akan ditolak), lalu memasangnya menggantikan versi ini. Pengaturan Anda tetap tersimpan dan program dimulai ulang. Tidak ada yang diunduh sebelum Anda menekan tombol tersebut.",
+            "Jika pembaruan tidak dapat dipasang dengan cara ini (salinan portabel, paket Linux, atau tidak ada koneksi internet), “Unduh” akan membuka halaman unduhan di browser. Pasang versi baru untuk menggantikan versi ini; pengaturan Anda tetap tersimpan.",
+            "“Periksa pembaruan dan berita saat program dimulai” dapat dinonaktifkan. Dalam kedua keadaan, informasi tentang Anda atau komputer tidak dikirim."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Masukan dan dukungan",
+          "body": [
+            "Bantuan → Masukan: ajukan aplikasi, fitur, atau perubahan baru, atau laporkan masalah. Setiap pesan dibaca.",
+            "Bantuan → Dukungan: program ini gratis; di sini Anda dapat membantu agar pengembangannya berlanjut."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tentang Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Tentang Syntelab Creative",
+          "body": [
+            "Syntelab Creative adalah kumpulan aplikasi gratis untuk pekerjaan sehari-hari dengan dokumen, teks, dan data, dibuat oleh Syntelab (syntelab.com). Saat ini tersedia empat aplikasi: PDF Organizer, Scribe, Units, dan Dev. Aplikasi lain akan hadir di jendela yang sama.",
+            {
+              "points": [
+                "Selalu gratis.",
+                "Tidak mengumpulkan data: tidak ada informasi tentang Anda, komputer, atau pekerjaan Anda yang dikumpulkan.",
+                "Semua fitur tersedia: tidak ada versi berbayar, fitur terkunci, atau batas yang sengaja diterapkan. Batasnya hanya kemampuan teknologi saat ini dan kapasitas komputer Anda."
+              ]
+            },
+            "Kami tidak menerima pendanaan. Program ini dibuat pada waktu luang, sesuai kemampuan waktu kami. Kami bertekad membuat perangkat lunak berkualitas, dan itu memerlukan waktu serta kesabaran—dari kami untuk mengembangkannya dan dari Anda selama program ini terus tumbuh.",
+            "Setiap versi akan membawa perbaikan. Masalah yang dilaporkan akan diperbaiki, dan fitur yang diminta akan dipertimbangkan untuk pengembangan berikutnya.",
+            {
+              "note": "Dokumen Anda tetap berada di komputer. Program tidak mengumpulkan informasi tentang Anda atau pekerjaan Anda; lihat “Aktivitas online dan data yang tidak pernah dikirim”."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Cara membantu",
+          "body": [
+            "Ada tiga cara untuk membantu, dan semuanya berarti:",
+            {
+              "points": [
+                "Sampaikan pendapat Anda melalui Bantuan → Masukan. Ceritakan masalah yang Anda alami, hal yang belum tersedia, atau proses yang terasa lebih sulit daripada seharusnya. Setiap pesan dibaca.",
+                "Ceritakan program ini dan pekerjaan kami kepada orang lain. Semakin banyak pengguna berarti semakin banyak masukan, yang membantu kami memahami hal yang paling dibutuhkan. Dukungan Anda juga membuat kami dan semua kontributor merasa bahwa pekerjaan kami dihargai.",
+                "Jika mampu, dukung dengan dana melalui Bantuan → Dukung kami. Dukungan ini memberi kami lebih banyak waktu untuk mengembangkan program."
+              ]
+            },
+            "Semua ini bersifat sukarela. Program ini gratis dan akan selalu gratis sepenuhnya untuk semua orang."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Teknologi yang digunakan",
+          "body": [
+            "Program ini dibangun di atas karya banyak orang. Komponen yang digunakan bersama oleh semua aplikasi:",
+            {
+              "points": [
+                "Jendela dan semua yang Anda lihat: Tauri dengan tampilan web sistem (WebView2 di Windows, WebKitGTK di Linux, WKWebView di macOS); dibuat menggunakan TypeScript dan React.",
+                "Bagian yang menjalankan pekerjaan: dibuat menggunakan Rust.",
+                "Jenis huruf dan ikon: Sansation, IBM Plex Sans, dan Font Awesome Free."
+              ]
+            },
+            "Komponen tambahan tiap aplikasi dijelaskan pada halaman “Tentang” masing-masing. Kami berterima kasih kepada semua orang di balik proyek-proyek tersebut."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Hal yang belum dapat dilakukan",
+          "body": [
+            "Informasi berikut dapat membantu Anda mengetahui keterbatasannya sebelum mengandalkan fitur tertentu:",
+            {
+              "points": [
+                "Beberapa teks masih menunggu terjemahan. Untuk sementara, teks tersebut ditampilkan dalam bahasa Inggris, bukan sebagai kode.",
+                "Menu klik kanan pengelola berkas saat ini hanya tersedia di Windows Explorer.",
+                "Penandatanganan dengan sertifikat saat ini hanya berfungsi di Windows; dukungan Linux dan macOS akan hadir di versi mendatang."
+              ]
+            },
+            "Keterbatasan tiap aplikasi dijelaskan pada halaman “Tentang” masing-masing. Jika ada yang menghambat Anda, sampaikan melalui Bantuan → Masukan agar kami dapat menentukan prioritas pengembangan."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Yang sedang kami kerjakan",
+          "body": [
+            "Keempat aplikasi yang tersedia akan terus dikembangkan. Masukan dan permintaan melalui Bantuan → Masukan turut menentukan prioritas kami. Aplikasi baru juga sedang disiapkan. Beranda tidak menampilkannya kecuali Anda menginginkannya: centang aplikasi tersebut di menu “Tampilan” Beranda agar muncul di sana sebagai “Segera hadir”:",
+            {
+              "points": [
+                "Convert: konversi berkas dari satu format ke format lain, termasuk dokumen Office ke PDF dan sebaliknya, tanpa perlu memasang program lain. Kami belum menemukan teknologi terbuka yang memenuhi kualitas yang kami inginkan, jadi aplikasi ini baru akan dirilis saat hasilnya memuaskan. Jika alat yang dibutuhkan belum tersedia, kami akan membuatnya.",
+                "Pixel: alat untuk gambar, seperti mengubah ukuran dan mengompres, menghapus latar belakang, mengatur warna, dan membuat kode QR.",
+                "Metadata: melihat dan menghapus data tersembunyi dari foto, video, dan dokumen sebelum dibagikan.",
+                "Wizard: pemilih dan generator acak—roda putar, dadu, koin, atau nama yang diambil dari daftar."
+              ]
+            },
+            "Pada aplikasi yang sudah tersedia, kami sedang mengerjakan hal-hal yang tercantum di bagian “Hal yang belum dapat dilakukan”, seperti stempel waktu tepercaya untuk tanda tangan, penandatanganan dengan sertifikat di Linux dan macOS, serta pemeriksaan ejaan di Scribe.",
+            "Pilihan pemasangan tambahan juga akan tersedia: Microsoft Store dan winget di Windows, Flathub dan Snap di Linux.",
+            {
+              "note": "Berita setiap versi dapat dibuka melalui tombol berita di bilah sisi. Pengaturan → Umum → Pembaruan memeriksa ketersediaan versi baru."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Conversion",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Les convertisseurs",
+          "body": [
+            "Units convertit des valeurs entre unités de mesure : une seule valeur rapidement ou des tableaux entiers en une fois. Tous les calculs sont effectués sur cet ordinateur.",
+            "Les convertisseurs sont répartis dans six menus : Essentiels, Mouvement et mécanique, Énergie et puissance, Sciences, Numérique et médias, Physique spécialisée. Sélectionnez-en un pour ouvrir son tableau.",
+            {
+              "points": [
+                "Un convertisseur s’ouvre dans l’onglet actif. Si son tableau contient des valeurs, vous devez d’abord choisir : Continuer (les valeurs seront perdues), Ouvrir dans un nouvel onglet ou Annuler.",
+                "Paramètres → Units → « Ouvrir chaque convertisseur dans son propre onglet » ouvre dans un nouvel onglet chaque convertisseur que vous sélectionnez.",
+                "Fichier → Aller à l’accueil retourne à la page principale de Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Conversion rapide",
+          "body": [
+            "La page principale de Units, Conversion rapide, convertit une valeur d’une unité vers une autre. Choisissez un convertisseur, saisissez la valeur du côté « De » et sélectionnez les deux unités ; le résultat apparaît du côté « Vers ».",
+            {
+              "points": [
+                "Chaque côté répertorie les unités courantes du convertisseur et vos unités personnalisées, avec une fonction de recherche. Le tableau du convertisseur contient toutes les unités.",
+                "Le bouton entre les deux côtés échange les unités.",
+                "L’icône de signet à côté d’une unité permet de l’épingler : les unités épinglées apparaissent en premier dans les deux listes et dans le panneau des unités du tableau.",
+                "Le bouton du résultat le copie ; le × efface la valeur.",
+                "« Ouvrir dans le tableau » affiche le tableau du convertisseur."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Lecture et écriture des nombres",
+          "body": [
+            "Vous pouvez saisir et coller des nombres tels qu’ils sont écrits dans différents pays : 1,234.56 et 1.234,56 sont tous deux compris, tout comme les espaces et apostrophes séparant les milliers, et 1.5e-3 pour une puissance de dix.",
+            "Un nombre ambigu (1,234, soit mille deux cent trente-quatre ou un virgule deux cent trente-quatre) est interprété selon les conventions de la langue du programme ; une ligne sous le tableau l’indique.",
+            "Un résultat est affiché avec le nombre de décimales de son unité de destination, et non autant de chiffres que vous en avez saisis : 5 cm = 1,97 in. Une valeur non nulle conserve toujours quelques chiffres significatifs : 1 cm = 0,00001 km, jamais 0,000 km.",
+            "Les valeurs trop grandes ou trop petites pour être lues d’un coup d’œil sont écrites avec une puissance de dix, par exemple 1,6 × 10⁻³⁵. Affichage → Afficher les valeurs extrêmes en entier les affiche avec tous les zéros.",
+            "Lorsqu’une unité ne peut pas représenter une valeur (une pression sonore nulle n’a pas de valeur en décibels), la cellule affiche un tiret."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le tableau",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Lignes et colonnes",
+          "body": [
+            "Chaque colonne correspond à une unité et chaque ligne à une valeur. La cellule dans laquelle vous saisissez une valeur détermine toute la ligne : les autres colonnes affichent cette valeur dans leurs unités. La cellule active est en gras.",
+            "Les valeurs qui ne sont pas des nombres sont conservées et affichées en rouge ; leur ligne n’est pas convertie tant que la valeur n’est pas corrigée.",
+            {
+              "points": [
+                "Double-cliquez sur une cellule ou commencez à y saisir du texte pour la modifier. Entrée passe à la ligne suivante, Tab à la cellule de droite ; les flèches permettent de se déplacer et Échap annule la modification.",
+                "Cliquez sur le coin (#) pour sélectionner tout le tableau, sur un numéro de ligne pour sélectionner la ligne ou sur un titre pour sélectionner la colonne. Maj+clic sélectionne une plage, Ctrl+clic ajoute des cellules et vous pouvez aussi sélectionner en faisant glisser.",
+                "Origine et Fin vont respectivement à la première et à la dernière colonne de la ligne ; Ctrl+Origine va à la première cellule du tableau et Ctrl+Fin à la dernière. Ctrl et une flèche permettent d’atteindre le bord du tableau : première ou dernière ligne, première ou dernière colonne. Page précédente et Page suivante déplacent la vue d’un écran. Avec Maj, chacune de ces actions étend la sélection.",
+                "Une sélection de plusieurs cellules est encadrée ; la cellule active reste non ombrée à l’intérieur.",
+                "Suppr vide les lignes sélectionnées.",
+                "Saisir une valeur sur la dernière ligne en ajoute une nouvelle. La taille du tableau n’est limitée que par la mémoire de l’ordinateur (une ligne occupe 16 octets ; 100 millions de lignes utilisent environ 1,5 Go)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Colonnes et panneau des unités",
+          "body": [
+            "Le panneau à côté du tableau répertorie les unités du convertisseur. En haut, les unités déjà présentes dans le tableau : sélectionnez-en une pour retirer sa colonne. En dessous, toutes les unités disponibles : recherchez par nom ou symbole, filtrez par groupe ou par « Courantes », puis sélectionnez une unité pour l’ajouter comme colonne.",
+            "Le signet à côté d’une unité l’ajoute aux favoris : elle apparaît en premier dans la liste et dans Conversion rapide.",
+            {
+              "points": [
+                "Les colonnes se partagent également la largeur du tableau tant que leurs titres tiennent ; sinon, le tableau peut défiler horizontalement.",
+                "Faites glisser le bord d’un titre pour modifier la largeur de sa colonne ; double-cliquez dessus pour l’ajuster à la valeur la plus longue. La colonne des numéros de ligne peut aussi être redimensionnée.",
+                "Le bouton ⋮ d’une colonne permet de la déplacer vers la gauche ou la droite, de l’épingler sur l’un des bords, de modifier sa précision ou de la supprimer.",
+                "La précision choisie pour une colonne ne concerne que celle-ci. « Utiliser cette précision partout pour cette unité » applique la même précision dans tous les tableaux et dans Conversion rapide.",
+                "Le bouton à deux flèches, près de Annuler et Rétablir, ajuste les colonnes à la largeur du tableau : les largeurs définies manuellement sont réinitialisées et les colonnes se partagent à nouveau l’espace.",
+                "Les deux premières sections du panneau — unités du tableau et « Ajout d’unités » (recherche et filtres) — peuvent être repliées en cliquant sur leur titre pour laisser plus de place à la liste."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Annuler, copier, coller, importer et exporter",
+          "body": [
+            "La barre au-dessus du tableau contient ses outils.",
+            {
+              "points": [
+                "Annuler et Rétablir (Ctrl+Z, Ctrl+Y) parcourent toutes les modifications du tableau. Un collage ou un import constitue une seule étape.",
+                "Copier (Ctrl+C) copie tout le tableau ou la sélection au format reconnu par un tableur. « Transposé » convertit les lignes en colonnes.",
+                "Coller (Ctrl+V) insère les lignes copiées dans le tableau à partir de la cellule active. Si la première ligne contient les titres des unités, les colonnes sont associées grâce à ces titres et les unités absentes du tableau sont ajoutées.",
+                "Importer remplace le contenu du tableau par celui d’un classeur Excel, d’un fichier CSV ou TSV. « Détecter automatiquement le format » identifie le type d’après le fichier.",
+                "Exporter enregistre le tableau au format Excel, CSV, TSV ou JSON. Si les nombres utilisent une virgule décimale, le CSV est séparé par des points-virgules, comme le demandent les tableurs. Une feuille Excel contient au maximum 1 048 576 lignes ; un tableau plus long continue sur d’autres feuilles du même classeur, avec les mêmes titres.",
+                "La gomme vide les lignes sélectionnées ; la corbeille vide tout le tableau."
+              ]
+            },
+            "Chaque ligne ne contient qu’une valeur. Si une ligne collée ou importée en contient plusieurs, seule la première est utilisée et les autres sont calculées à partir d’elle.",
+            "Le collage, l’import, l’export ou la copie d’un grand nombre de lignes peut prendre du temps. Une carte au-dessus du tableau affiche alors la progression en pourcentage et en nombre de lignes, avec un bouton Arrêter. Interrompre un collage ou un import laisse le tableau intact ; interrompre un export ne crée aucun fichier.",
+            "Si l’ordinateur n’a plus assez de mémoire pour les lignes, rien n’est modifié et la barre sous le tableau indique la mémoire nécessaire. Si les lignes tiennent mais que le tableau précédent ne peut pas être conservé en mémoire en même temps, le programme vous propose de continuer sans possibilité d’annuler. La modification en cours et celles qui la précèdent ne pourront alors plus être annulées. Les étapes d’annulation les plus anciennes sont supprimées pour libérer de la mémoire avant cette demande.",
+            "Options du tableau (icône d’engrenage) : contenu des titres de colonnes (nom et symbole, nom ou symbole), inclusion ou non des titres et numéros de ligne dans les copies et exports, « Ouvrir ce convertisseur avec ces colonnes » et « Réinitialiser le tableau »."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Convertisseurs spécialisés",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Monnaie",
+          "body": [
+            "Les devises n’ont pas de facteur de conversion fixe : leur valeur varie. Le convertisseur lit les taux auprès de deux services gratuits pendant son utilisation, et uniquement à ce moment-là.",
+            {
+              "points": [
+                "Devises nationales : taux fournis par ExchangeRate-API, https://www.exchangerate-api.com . Les taux sont mis à jour une fois par jour à la source et ne sont pas consultés plus souvent.",
+                "Cryptomonnaies : données fournies par CoinGecko, https://www.coingecko.com . Les cours sont consultés à l’ouverture du convertisseur ou lorsqu’il revient au premier plan si les données datent de plus de quinze minutes, ainsi que lorsque vous sélectionnez Actualiser ; aucun rafraîchissement automatique n’a lieu."
+              ]
+            },
+            "Seuls les taux sont demandés. Aucune information vous concernant ni aucun montant converti n’est transmis.",
+            "La ligne sous le tableau et sous le résultat de Conversion rapide indique la date des taux. Sans connexion, les derniers taux disponibles sont utilisés et signalés comme anciens. Une devise sans taux fourni par les services affiche un tiret.",
+            "Paramètres → Units → Monnaies : vous pouvez désactiver « Lire les taux en ligne » ; le convertisseur utilise alors les derniers taux conservés. « Afficher le nom des sources à côté des taux » affiche ou masque les noms des deux services.",
+            "Ces taux sont fournis à titre informatif. Ne vous y fiez pas pour effectuer une transaction."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Bases numériques",
+          "body": [
+            "Les unités de ce convertisseur représentent différentes façons d’écrire un nombre entier : bases de 2 à 64, chiffres romains, base 60 avec deux-points (1:30:15), décimal codé binaire et code Gray. Les valeurs sont traitées comme du texte : saisissez FF en hexadécimal pour voir 255, 11111111 et les autres représentations dans les colonnes.",
+            "Les chiffres romains vont de I à MMMCMXCIX (de 1 à 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Unités sans facteur de conversion simple",
+          "body": [
+            "La plupart des unités sont liées par un facteur. D’autres ne le sont pas ; Units les convertit selon leur définition : températures avec décalage ; consommation (litres aux 100 km et miles par gallon) ; longueur d’onde et fréquence ; conductance et résistance ; degrés Baumé, API, Brix et Plato et masse volumique ; décibels et pression acoustique ou intensité ; pente en pourcentage et angle correspondant.",
+            "Une température et un écart de température sont deux choses différentes : 100 °C correspondent à 212 °F, mais un écart de 100 °C correspond à un écart de 180 °F. Les unités du groupe « Différence (Δ) » se convertissent entre elles ; entre ce groupe et les échelles de température, la cellule affiche un tiret."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Unités personnalisées",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Créer une unité",
+          "body": [
+            "Vous pouvez ajouter vos propres unités à n’importe quel convertisseur. Dans le panneau des unités, sélectionnez « Nouvelle unité », saisissez son nom et son symbole, puis indiquez son équivalence avec une unité existante.",
+            {
+              "points": [
+                "Facteur : « 1 pas = 0,75 m ». Pour une échelle dont l’origine n’est pas zéro, indiquez aussi la valeur à ajouter après la multiplication.",
+                "Formule : indiquez comment convertir la valeur vers l’autre unité avec x, puis sa formule inverse. Par exemple : x * 9 / 5 + 32 et (x - 32) * 5 / 9."
+              ]
+            },
+            "La formule est testée à mesure que vous la saisissez et un résultat d’exemple s’affiche avant l’enregistrement. Elle peut utiliser + − × ÷ ^, les parenthèses, x, pi, e et les fonctions sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos et atan. Elle est calculée, jamais exécutée comme un programme.",
+            "Vos unités apparaissent sous « Personnelles » dans le panneau ; vous pouvez les modifier ou les supprimer. Une unité personnelle peut être définie à partir d’une autre ; supprimer une unité supprime également celles qui en dépendent.",
+            "Paramètres → Units répertorie vos unités pour chaque convertisseur et permet de les exporter ou importer sous forme de texte, pour les conserver ou les transférer vers un autre ordinateur."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paramètres",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Paramètres de Units",
+          "body": [
+            "Fichier → Ouvrir les paramètres affiche les réglages de Units ; vous pouvez aussi y accéder depuis les options du tableau (roue dentée dans sa barre).",
+            {
+              "points": [
+                "Ouvrir chaque convertisseur dans son propre onglet, ou dans l’onglet actif.",
+                "Afficher les valeurs extrêmes en entier, ce qui s’écrit entre les milliers (10000,000, 10 000,000 ou 10.000,000 ; rien, sauf si vous choisissez autre chose), et les numéros de ligne.",
+                "Monnaies : choix de la lecture des taux en ligne et de l’affichage du nom des services à côté des taux.",
+                "Précision des unités : choisissez un convertisseur (ou « Unités modifiées »), recherchez une unité et réglez ses décimales avec − et +. La flèche rétablit sa précision par défaut. « Utiliser cette précision partout pour cette unité » dans le menu d’une colonne applique la même valeur partout.",
+                "Unités affichées au démarrage du tableau : les convertisseurs dont vous avez choisi les premières colonnes, chacun avec une option pour rétablir les colonnes par défaut.",
+                "Vos unités personnalisées."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "À propos de Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "À propos de Units",
+          "body": [
+            "Units est le convertisseur de Syntelab Creative : 38 convertisseurs et plus de 1 500 unités, de la longueur et la température aux monnaies et aux bases numériques. Saisissez une valeur une seule fois pour l’afficher dans chaque unité choisie, dans un tableau pouvant contenir une ou des millions de valeurs.",
+            "Les nombres sont calculés exactement sous forme de fractions et arrondis uniquement à l’affichage. Tout est traité sur cet ordinateur ; seuls les taux de change sont lus en ligne, et cette fonction peut être désactivée.",
+            "L’application est nouvelle. Si elle ne répond pas à vos besoins, écrivez-nous via Aide → Commentaires ; cela nous aide à choisir les prochaines améliorations."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Capacité des tableaux : mesures effectuées",
+          "body": [
+            "Le nombre de lignes d’un tableau n’est pas limité : il dépend de la mémoire disponible sur votre ordinateur. Une ligne occupe 16 octets ; 100 millions de lignes représentent environ 1,5 Go. Si la mémoire est épuisée, le tableau reste inchangé et le programme indique la quantité nécessaire.",
+            "Nous avons effectué les mesures avec 50 000 000 de lignes, chacune contenant un nombre dans une colonne, avec la version optimisée du programme :",
+            {
+              "points": [
+                "Collage de 50 000 000 de lignes : environ 7 secondes.",
+                "Importation depuis un fichier CSV : 12 secondes.",
+                "Exportation vers un fichier CSV avec conversion d’une deuxième colonne : environ 3,5 minutes.",
+                "Exportation vers Excel, sur 48 feuilles : 4,3 minutes."
+              ]
+            },
+            "L’export prend plus de temps que l’import, car chaque cellule enregistrée est d’abord convertie exactement.",
+            {
+              "note": "Ordinateur utilisé pour le test : AMD Ryzen 9 9950X3D (16 cœurs, 32 fils), 64 Go de mémoire, Windows 11 Pro. Octobre 2026. Les durées varieront selon l’ordinateur, mais pas la taille d’une ligne."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Technologies utilisées par Units",
+          "body": [
+            {
+              "points": [
+                "Calcul exact : bibliothèques Rust num (fractions d’entiers de taille quelconque).",
+                "Unités, facteurs et catégories : fichiers de données du programme, un pour chaque convertisseur.",
+                "Lecture des classeurs Excel et OpenDocument : calamine. Écriture des classeurs Excel : rust_xlsxwriter.",
+                "Presse-papiers du système pour copier et coller un très grand nombre de lignes : arboard.",
+                "Taux de change : ExchangeRate-API et CoinGecko (voir « Monnaie »)."
+              ]
+            },
+            "Les technologies partagées avec le reste du programme sont présentées dans « À propos de Syntelab Creative »."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Limitations actuelles de Units",
+          "body": [
+            {
+              "points": [
+                "Chaque ligne contient une seule valeur : lorsqu’une ligne avec plusieurs valeurs est collée, seule la première est utilisée.",
+                "L’export d’un très grand nombre de lignes est lent (voir les mesures).",
+                "Le contenu copié est entièrement conservé en mémoire sous forme de texte avant d’être collé.",
+                "Les taux de change sont aussi récents que les données fournies par les deux services : les devises nationales sont actualisées une fois par jour."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

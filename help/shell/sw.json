@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Kuanza",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Syntelab Creative ni nini",
+          "body": [
+            "Syntelab Creative ni programu moja inayoundwa na programu ndogo (apps). Kila programu ndogo hufanya aina moja ya kazi:",
+            {
+              "points": [
+                "PDF Organizer husoma, hupanga, huhariri na kusaini nyaraka za PDF.",
+                "Scribe ni mhariri wa maandishi wenye zana za kusafisha, kupanga, kulinganisha na kubadilisha maandishi.",
+                "Units hubadilisha vipimo: urefu, joto, sarafu na vingine vingi.",
+                "Dev hukusanya zana kwa ajili ya watengenezaji programu: kusimba na kusimbua, kubadilisha muundo na kukagua, na kubadilisha aina moja ya data kuwa nyingine."
+              ]
+            },
+            "Programu hizi zinashiriki dirisha moja, seti moja ya mipangilio na njia moja ya kufanya kazi, hivyo unachojifunza katika moja ni sawa na nyingine.",
+            {
+              "note": "Kila kitu kinafanyika kwenye kompyuta yako. Nyaraka zako hazitumwi popote, na hakuna taarifa kuhusu wewe au kazi yako inayokusanywa."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Dirisha",
+          "body": [
+            {
+              "points": [
+                "Upau wa pembeni: picha ya nyumba hupeleka kwenye Anza, kisha zinafuata programu zako, na chini kuna habari za programu, Maoni, Saidia na Mipangilio.",
+                "Ndani ya programu, Faili → Nenda hadi Anza huenda kwenye ukurasa wa kwanza wa programu hiyo ikiwa ipo (Units, Scribe), na Faili → Fungua Mipangilio (Ctrl+,) hufungua Mipangilio katika sehemu ya programu hiyo; sehemu nyingine zinapatikana kwa mbofyo mmoja hapo.",
+                "Tabo za juu: kila nyaraka, kifunga au zana unayofungua ina tabo yake. Nukta kwenye tabo inaashiria kuwa kuna mabadiliko ambayo hayajahifadhiwa.",
+                "Menyu za programu, chini ya tabo: kama upau wa menyu, kama utepe au kama paneli ya pembeni, kulingana na chaguo lako.",
+                "Sehemu iliyobaki ya dirisha ni tabo iliyo mbele."
+              ]
+            },
+            "Kufunga tabo yenye mabadiliko ambayo hayajahifadhiwa huuliza kwanza; vivyo hivyo kwa kufunga programu."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Anza",
+          "body": [
+            "Anza huonyesha programu zako na faili ulizofungua hivi karibuni. Bofya programu ili kuifungua; bofya faili ya hivi karibuni ili kuifungua tena.",
+            "Programu zinaweza kuonyeshwa kama kadi, kama aikoni zenye majina au kama aikoni pekee, na kuvutwa katika mpangilio unaopenda. Kwa kutumia kibodi: Alt na mishale. \"Rudisha kwenye asili\" huzirudisha katika hali ya awali.",
+            "Kila programu pia ina njia mkato yake katika menyu ya Start ya Windows, kama vile \"Syntelab PDF Organizer\" au \"Syntelab Units\": inafungua programu moja kwa moja katika programu hiyo. Ikiwa programu tayari imefunguliwa, programu hiyo inafunguka ndani yake kama tabo."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Kufungua faili",
+          "body": [
+            {
+              "points": [
+                "Kutoka kwenye programu: Faili → Fungua, au Ctrl+O.",
+                "Kwa kuburuta faili kutoka kwenye folda na kuzidondosha kwenye dirisha.",
+                "Kutoka kwenye meneja wa faili wa mfumo wako: bonyeza mara mbili faili ambayo programu imewekwa kuifungua. Katika Windows Explorer kuna pia menyu ya kubofya kulia (angalia \"Menyu ya kubofya kulia ya Windows Explorer\").",
+                "Kutoka Anza: orodha ya faili za hivi karibuni."
+              ]
+            },
+            "Programu inafanya kazi kama nakala moja. Faili iliyofunguliwa kutoka kwenye meneja wa faili wakati programu inafanya kazi inafunguka kama tabo mpya katika dirisha lile lile."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kuifanya kuwa yako",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Mpangilio: upau wa menyu, utepe au paneli ya pembeni",
+          "body": [
+            "Amri za programu zinaweza kuonyeshwa kwa njia tatu. Ni amri zilezile; kinachotofautiana ni mahali zilipo.",
+            {
+              "points": [
+                "Kawaida: upau wa menyu na upau wa zana.",
+                "Utepe: vitufe vikubwa katika makundi yenye majina, tabo moja kwa kila menyu. Inaweza kukunjwa ili kuacha nafasi zaidi kwa hati.",
+                "Paneli ya pembeni: zana katika paneli upande wa kushoto au kulia, ambayo inaweza kukunjwa kuwa aikoni."
+              ]
+            },
+            "Chagua mpangilio wa kila programu katika Mipangilio → Jumla → Mpangilio. Programu inaweza kuwa na mpangilio wake mwenyewe, ulioteuliwa katika sehemu yake ya Mipangilio au kutoka kwenye menyu yake ya Tazama; kisha haitafuata tena mpangilio wa jumla hadi utakapochagua \"Tumia mpangilio wa jumla\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Mandhari",
+          "body": [
+            "Mipangilio → Jumla → Mandhari: Mwanga, Giza, Kijivu hafifu, Kijivu kizito, au Kiotomatiki, ambayo inafuata mpangilio wa mwanga au giza wa mfumo.",
+            "Kurasa za hati hazibadilishi rangi kamwe kwa sababu ya mandhari: karatasi inabaki kama ilivyo."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Lugha",
+          "body": [
+            "Mipangilio → Jumla → Lugha. Programu inazungumza lugha 62. \"Lugha ya mfumo\" inafuata lugha ya mfumo wako. Orodha inaweza kutafutwa kwa jina la lugha yenyewe, jina lake katika lugha yako au jina lake la Kiingereza.",
+            "Maandishi ambayo hayajatafsiriwa bado yanaonyeshwa kwa Kiingereza, kamwe kama kodi."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Tabo",
+          "body": [
+            {
+              "points": [
+                "\"Weka tabo ya Anza miongoni mwa tabo\": inapozimwa, tabo ya Anza huonyeshwa tu wakati Anza yenyewe iko mbele; nyumba kwenye upau wa pembeni huongoza kurudi humo kila wakati.",
+                "Alama kwenye tabo inaweza kuwa ikoni ya programu yake au mraba wa kawaida katika rangi ya programu hiyo."
+              ]
+            },
+            "Kukiwa na tabo nyingi kuliko zinavyoweza kutosha, mishale mwishoni mwa upau huizungusha, na \"Tabo zaidi\" huorodhesha zote."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kupata njia yako",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Kutafuta amri",
+          "body": [
+            "Sanduku la utafutaji (\"Tafuta programu, zana na amri\") hupata amri yoyote ya tabo iliyo mbele kwa jina lake, katika lugha yako au kwa Kiingereza. Chagua matokeo ili kuitekeleza.",
+            "Amri zilizopangwa lakini hazijaandikwa bado zinaonyeshwa kwa rangi ya kijivu kwenye menyu na hazijajumuishwa kwenye utafutaji."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Njia za mkato za kibodi",
+          "body": [
+            "Kitufe cha amri huandikwa kando ya jina lake kwenye menyu na kwenye kidokezo chake. Vile vinavyotumika zaidi:",
+            {
+              "points": [
+                "Ctrl+O: fungua faili",
+                "Ctrl+S: hifadhi; Ctrl+Shift+S: hifadhi kama",
+                "Ctrl+P: chapa",
+                "Ctrl+Z na Ctrl+Y: rudisha nyuma na rudia",
+                "Ctrl+F: tafuta kwenye hati",
+                "Ctrl+W: funga tabo",
+                "Ctrl+Tab na Ctrl+Shift+Tab: tabo inayofuata na ya awali",
+                "Ctrl+, (koma): Mipangilio",
+                "F1: Msaada huu",
+                "Escape: ondoka kwenye skrini kamili au hali ya kusoma, au weka chini kifaa kilicho mkononi"
+              ]
+            },
+            "Vitufe vya amri za programu yenyewe (tabo, Mipangilio, Msaada) hubadilishwa katika Mipangilio → Jumla → Njia za mkato za kibodi; vile vya amri za programu katika sehemu yake ya Mipangilio. Bofya vitufe vya amri, kisha bonyeza vitufe vipya."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Kutumia Msaada huu",
+          "body": [
+            "Msaada unahusiana na mahali unapoifungulia. Kutoka kwenye programu unaona tu mwongozo wa programu hiyo na amri za tabo uliyotoka. Kutoka ukurasa wa kuanzia au kutoka Mipangilio unaona \"Kuhusu\" (programu na kila programu, kwa ufupi) na mwongozo wa programu. Msaada → Kuhusu huongoza kila wakati kwenye \"Kuhusu\".",
+            "Maudhui yapo upande wa kushoto; utafutaji juu yake hupita kila mada, katika vichwa vya habari na katika maandishi.",
+            "Msaada hufunguka katika tabo yake yenyewe, hivyo unaweza kurudi mbele na nyuma kati yake na kazi yako; F1 huileta mbele tena. Chini ya \"Amri za tabo uliyotoka\" kila menyu ya tabo hiyo imeorodheshwa ikiwa na kila amri yake, funguo zake na kile inachofanya: fungua Msaada kutoka kwenye tabo ambayo una swali kuihusu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Menyu ya kubofya kulia ya Windows Explorer",
+          "body": [
+            "Mipangilio → Jumla → Windows Explorer → \"Onyesha Syntelab Creative kwenye menyu ya kubofya kulia ya faili na folda\" huongeza vichaguzi kwa ajili ya faili ambazo programu husoma: \"Badili kuwa PDF kwa PDF Organizer\" na \"Unganisha faili katika PDF Organizer\", kila kimoja kikiwa na aikoni ya PDF Organizer, na \"Syntelab Dev\", ambacho hufunguka pembeni na Checksum, Linganisha na Muonekano wa Hex.",
+            "Huongezwa kwa ajili ya mtumiaji wako pekee, bila haki za msimamizi (administrator), na kuzima swichi hiyo huyaondoa. Kwenye Windows 11 zipo chini ya \"Onyesha chaguo zaidi\". Daima huanzisha programu iliyosakinishwa: ikiwa ilihamishwa au kusakinishwa upya mahali pengine, huvirekebisha inapoanza.",
+            {
+              "note": "Kuchagua \"Unganisha faili katika PDF Organizer\" kwenye faili kadhaa hufungua kifunga chenye faili hizo; \"Badili kuwa PDF kwa PDF Organizer\" hufungua uchakataji wa pamoja nazo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Faragha, sasisho na mawasiliano",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Kile kinachoenda mtandaoni, na kile kisichowahi kwenda",
+          "body": [
+            "Programu haikusanyi chochote: hakuna data za matumizi, hakuna majina ya faili, hakuna ripoti za hitilafu (crash reports) zinazotumwa zenyewe.",
+            "Huenda mtandaoni tu katika visa hivi, kila kimoja kikiombwa na wewe:",
+            {
+              "points": [
+                "Kukagua sasisho na habari (faili mbili ndogo zinazosomwa kutoka syntelab.com), unapouliza au, ikiwa uliruhusu, programu inapozinduliwa; na kupakua toleo jipya, tu unapobonyeza \"Sasisha\".",
+                "Kuhifadhi ukurasa wa wavuti kama PDF (PDF Organizer) na kuleta maandishi ya ukurasa wa wavuti (Scribe), kutoka kwenye anwani uliyoiandika.",
+                "Kiungo (link) katika hati ambayo unabonyeza: hukabidhiwa kwa kivinjari chako au programu ya barua pepe.",
+                "Maoni na Saidia: hufungua ukurasa wa syntelab.com katika kivinjari chako."
+              ]
+            },
+            "Kutia saini kwa cheti na kukagua saini hufanyika kwenye kompyuta yako, bila kwenda mtandaoni."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Sasisho",
+          "body": [
+            "Mipangilio → Jumla → Sasisho → \"Angalia sasisho\". Wakati toleo jipya lipo, dirisha litakuambia kipi kipya na kukupa chaguo la \"Sasisha\".",
+            "\"Sasisha\" inapakua toleo jipya, inahakikisha kuwa kweli linatoka kwetu (lazima liwe limesainiwa kwa ufunguo wetu; kitu kingine chochote kinakataliwa) na kulisakinisha juu ya hili. Mipangilio yako inahifadhiwa na programu inaanza tena. Hakuna kitu kinachopakuliwa hadi utakapobonyeza.",
+            "Ikiwa sasisho haliwezi kusakinishwa kwa njia hii (nakala inayobebeka, kifurushi cha Linux, hakuna mtandao), \"Pakua\" inafungua ukurasa wa kupakulia kwenye kivinjari chako; sakinisha toleo jipya juu ya hili na mipangilio yako itahifadhiwa.",
+            "\"Kagua sasisho na habari programu inapoanza\" inaweza kuzimwa; hakuna kitu kuhusu wewe au kompyuta yako kinachotumwa kwa vyovyote vile."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Maoni na msaada",
+          "body": [
+            "Msaada → Maoni: omba programu mpya, kipengele kipya au mabadiliko, au ripoti tatizo. Kila ujumbe unasomwa.",
+            "Msaada → Saidia: programu hii ni ya bure; hapa ndipo unapoweza kusaidia iendelee."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Kuhusu Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Kuhusu Syntelab Creative",
+          "body": [
+            "Syntelab Creative ni seti ya programu za bure kwa ajili ya kazi za kila siku za nyaraka, maandishi na data, zilizotengenezwa na Syntelab (syntelab.com). Inaanza na programu nne: PDF Organizer, Scribe, Units na Dev. Zingine zitaungana nazo katika dirisha moja.",
+            {
+              "points": [
+                "Bure daima.",
+                "Hakuna data inayokusanywa: hakuna kitu kuhusu wewe, kompyuta yako au kazi yako.",
+                "Hakuna kitu kilichofichwa: hakuna toleo la kulipia, hakuna kipengele kilichofungwa, hakuna kikomo kilichowekwa kwa makusudi. Vikwazo pekee ni vile ambavyo teknolojia ya leo inaweza kufanya na vile ambavyo kompyuta yako inaweza kuhimili."
+              ]
+            },
+            "Hatuna ufadhili. Programu hii imetengenezwa katika muda wetu wa ziada, kwa kadiri muda huo unavyoruhusu. Tuna nia kamili ya kutengeneza programu ya ubora wa juu, na hiyo inahitaji muda na uvumilivu: wetu kuijenga, na wako wakati inavyokua.",
+            "Itazidi kuwa bora kwa kila toleo. Matatizo yanayoripotiwa yanasahihishwa, na vipengele vinavyoombwa vinazingatiwa kwa ajili ya kile kitakachofuata.",
+            {
+              "note": "Nyaraka zako hubaki kwenye kompyuta yako. Programu haikusanyi chochote kuhusu wewe au kazi yako; angalia \"Kile kinachoenda mtandaoni, na kile kisichowahi kwenda\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Jinsi unavyoweza kusaidia",
+          "body": [
+            "Kuna njia tatu, na kila moja kati yake ina thamani:",
+            {
+              "points": [
+                "Tuambie unachofikiri: Msaada → Maoni. Tatizo ulilokutana nalo, kitu kinachokosekana, au kitu ambacho ni kigumu kuliko inavyopaswa kuwa. Tunasoma kila ujumbe.",
+                "Waambie wengine kuhusu programu hii na kile tunachofanya. Watu wengi zaidi kuitumia inamaanisha maoni mengi zaidi, na hivyo ndivyo tunavyoona kile chenye umuhimu wa kweli. Pia hutufanya tuhisi kuwa kazi yetu inathaminiwa: yetu, na ya kila mtu anayeshiriki katika mradi huu na atakayeshiriki.",
+                "Iunge mkono kwa fedha, ikiwa unaweza: Msaada → Tusaidie. Hii hutupa muda wa kuifanyia kazi."
+              ]
+            },
+            "Hakuna haja ya kufanya haya. Programu hii ni ya bure na itabaki kuwa ya bure, kamili, kwa kila mtu."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Imejengwa kwa kutumia nini",
+          "body": [
+            "Programu hii inategemea kazi ya watu wengi. Kile ambacho kila programu hushiriki:",
+            {
+              "points": [
+                "Dirisha na kila kitu unachokiona: Tauri, ikiwa na kionyeshi cha wavuti cha mfumo (WebView2 kwenye Windows, WebKitGTK kwenye Linux, WKWebView kwenye macOS); imeandikwa kwa TypeScript kwa kutumia React.",
+                "Sehemu inayofanya kazi: imeandikwa kwa Rust.",
+                "Herufi na ikoni: Sansation, IBM Plex Sans na Font Awesome Free."
+              ]
+            },
+            "Kile ambacho kila programu huongeza kimeelezwa kwenye ukurasa wake chini ya \"Kuhusu\". Tunashukuru watu walio nyuma ya miradi hii."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Kile ambacho bado hakiwezi kufanya",
+          "body": [
+            "Ili ujue kabla ya kuitegemea:",
+            {
+              "points": [
+                "Baadhi ya maandishi bado yanangoja tafsiri zake. Hadi wakati huo, yanaonyeshwa kwa Kiingereza, na si kama kodi.",
+                "Menyu ya kubofya kulia (right-click) ya meneja wa faili kwa sasa ipo kwenye Windows Explorer pekee.",
+                "Kutia saini kwa kutumia cheti (certificate) inafanya kazi kwenye Windows kwa sasa; kwenye Linux na macOS itakuja katika toleo la baadaye."
+              ]
+            },
+            "Mipaka ya kila programu ipo kwenye ukurasa wake chini ya \"Kuhusu\". Ikiwa mojawapo itakuzuia, tuambie kupitia Msaada → Maoni: inatusaidia kuamua nini kije kwanza."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Kile tunachofanyia kazi",
+          "body": [
+            "Programu hizi nne zitaendelea kukua: kile unachoripoti na kuomba kupitia Msaada → Maoni huamua mengi ya yale yatakayokuja kwanza. Pamoja nazo, programu mpya zinaandaliwa. Anza haizionyeshi isipokuwa ukitaka: ziwekee alama kwenye menyu ya \"Onyesha\" ya Anza ili uzione hapo kama \"Inakuja hivi karibuni\":",
+            {
+              "points": [
+                "Convert: kubadilisha faili kutoka muundo mmoja kwenda mwingine, miongoni mwa hivyo nyaraka za ofisi kwenda PDF na kurudi, bila kuhitaji programu nyingine kusakinishwa. Bado hatujapata teknolojia ya wazi inayofikia ubora tunaoutaka, hivyo itakuja tu wakati itakapokuwa haitakukatisha tamaa; pale ambapo zana hazipo, tutazitengeneza.",
+                "Pixel: zana za picha, kama vile kubadilisha ukubwa na kubana, kuondoa mandhari ya nyuma, rangi na misimbo ya QR.",
+                "Metadata: kuona na kuondoa data zilizofichwa za picha, video na nyaraka, kabla hujashiriki.",
+                "Wizard: vichaguzi na vizalishaji vya nasibu: gurudumu la kuzungusha, kete, sarafu, majina yanayochaguliwa kutoka kwenye orodha."
+              ]
+            },
+            "Katika programu ambazo tayari zipo, tunafanyia kazi yale yaliyoorodheshwa kwenye kurasa zao za \"Kile ambacho bado hakiwezi kufanya\": kwa mfano alama ya muda ya kuaminika kwa saini, kusaini kwa cheti kwenye Linux na macOS, na ukaguzi wa tahajia katika Scribe.",
+            "Machaguo zaidi ya usakinishaji yatafuata pia: Microsoft Store na winget kwenye Windows, Flathub na Snap kwenye Linux.",
+            {
+              "note": "Habari za kila toleo zipo chini ya kitufe cha habari kwenye upau wa pembeni; Mipangilio → Jumla → Sasisho hukagua kama kuna toleo jipya."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

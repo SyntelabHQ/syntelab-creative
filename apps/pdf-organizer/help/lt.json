@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Atidarymas ir skaitymas",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Dokumento atidarymas",
+          "body": [
+            "Failas → Atidaryti (Ctrl+O) atidaro PDF atskiroje kortelėje. „Atidaryti kelis failus vienu metu“ atidaro kiekvieną pasirinktą failą atskiroje kortelėje.",
+            "Atidaromi ir ne PDF failai – kaip puslapiai: paveikslėliai (PNG, JPEG, TIFF, WebP ir daug kitų), teksto ir tinklalapių failai, el. knygos, XPS ir biuro dokumentai. Toks dokumentas dar niekur neišsaugotas: „Išsaugoti“ paklaus, kur.",
+            {
+              "note": "Biuro dokumentus (Word, Excel, PowerPoint, OpenDocument) konvertuoja Word, Excel ar PowerPoint arba LibreOffice – kuri iš jų yra kompiuteryje. Be jų tokių dokumentų atidaryti negalima."
+            },
+            "Į tuščią kortelę numesti failai surenkami į rinkinį; numetus juos ant dokumento, jų puslapiai pridedami prie jo.",
+            "Sistemoje Windows PDF Organizer gali būti programa, kuri atidaro PDF failus juos dukart spustelėjus: jos pradžios puslapyje „Nustatyti kaip numatytąją“ atidaro Windows parametrus, kuriuose PDF failams pasirenkate Syntelab Creative."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Puslapių peržiūra",
+          "body": [
+            "Meniu „Rodinys“ nustato, kaip rodomas dokumentas; niekas jame nekeičia failo.",
+            {
+              "points": [
+                "Mastelis: padidinti, sumažinti, tikrasis dydis, talpinti puslapį, talpinti pagal plotį, talpinti pagal aukštį. Mastelį keičia ir Ctrl su pelės ratuku.",
+                "Puslapių rodymas: vienas puslapis arba du greta, su viršelio puslapiu arba be jo, taip pat visų puslapių slinkimas kaip viena ilga juosta.",
+                "Pagalbinės linijos: liniuotės ir tinklelis, nustatymuose pasirinktais vienetais.",
+                "„Rodyti miniatiūras“: maži puslapiai šone. Spustelėkite vieną, kad į jį pereitumėte; dokumento žymelės yra tame pačiame skydelyje.",
+                "„Skaitymo režimas“ paslepia įrankius; „Pilno ekrano režimas“ paslepia viską, išskyrus puslapį. Iš abiejų išeinama klavišu Escape."
+              ]
+            },
+            "Juostoje virš puslapių (greitojoje įrankių juostoje) yra puslapio numeris, mastelis ir mygtukai, kuriuos pasirinkote nustatymuose."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Teksto paieška",
+          "body": [
+            "Redaguoti → Ieškoti dokumente (Ctrl+F): įveskite žodį arba frazę; vietos, kuriose jie rasti, pažymimos puslapiuose, o rodyklės pereina nuo vienos prie kitos.",
+            {
+              "note": "Nuskenuotas dokumentas – tai puslapių paveikslėliai, ir jame nėra teksto, kurį būtų galima rasti, kol jo tekstas neatpažintas: žr. „Teksto atpažinimas (OCR)“."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Dokumento savybės",
+          "body": [
+            "Failas → Dokumento savybės rodo, ką dokumentas sako apie save: pavadinimą, autorių, datas, kada jis buvo sukurtas ir pakeistas, puslapių skaičių, failo dydį."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Išsaugojimas, spausdinimas ir siuntimas",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Išsaugoti ir Išsaugoti kaip",
+          "body": [
+            "Kol neišsaugosite, jokie jūsų veiksmai nekeičia failo diske. Iki tol kiekvieną veiksmą galima anuliuoti (Ctrl+Z) ir pakartoti (Ctrl+Y).",
+            {
+              "points": [
+                "Išsaugoti (Ctrl+S) įrašo dokumentą ant jo failo.",
+                "Išsaugoti kaip (Ctrl+Shift+S) įrašo jį į naują failą, kuris tada užima kortelės vietą; senasis failas lieka toks, koks buvo."
+              ]
+            },
+            "Jei failą atidariusi kita programa, ant jo įrašyti negalima: programa apie tai praneša ir išlaiko jūsų pakeitimus, kad galėtumėte juos išsaugoti kitu pavadinimu.",
+            {
+              "note": "Įrašius pakeistą dokumentą ant sertifikatu pasirašyto failo, jo parašai pašalinami. Programa pirmiausia paklausia ir pasiūlo „Išsaugoti kaip naują failą…“; šį klausimą galima išjungti skiltyje Nustatymai → Parašai."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "PDF kūrimas",
+          "body": [
+            "Failas → Sukurti PDF sukuria naują dokumentą:",
+            {
+              "points": [
+                "iš vieno failo arba iš kelių: sujungtų į vieną PDF arba po vieno PDF kiekvienam;",
+                "iš tinklalapio jūsų įvestu adresu (puslapis išsaugomas kompiuteryje įdiegta naršykle);",
+                "iš to, kas yra iškarpinėje;",
+                "iš tuščių puslapių jūsų pasirinkto dydžio."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Eksportavimas į kitą formatą",
+          "body": [
+            "Failas → Eksportuoti įrašo dokumentą kitu formatu: Word arba OpenDocument tekstu, paprastu tekstu, tinklalapiu, XML, puslapių paveikslėliais (PNG, JPEG, TIFF, SVG) arba PostScript. Paveikslėliams pasirenkate raišką.",
+            "Pats dokumentas lieka PDF; eksportas – tai naujas failas.",
+            {
+              "note": "Tekstą galima eksportuoti tik ten, kur dokumente yra teksto. Pirmiausia atpažinkite nuskenuoto dokumento tekstą."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Spausdinimas",
+          "body": [
+            "Failas → Spausdinti (Ctrl+P) spausdina dokumentą taip, kaip jis sutvarkytas dabar, su tuo, ką jame nupiešėte. Pasirinkite puslapius, popierių, ar lapai bus stati, ar gulsti, ir ar puslapiai bus talpinami lape, ar spausdinami tikruoju dydžiu; tada sistemos spausdinimo langas paklaus spausdintuvo.",
+            "Popierius, išdėstymas ir mastelis, su kuriais atsidaro spausdinimo langas, nustatomi skiltyje Nustatymai → Spausdinimas."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Bendrinimas",
+          "body": [
+            "Failas → Bendrinti perduoda dokumentą sistemos langui „Bendrinti“: el. paštui, netoliese esančiam įrenginiui ir kitoms programoms. Dokumentas bendrinamas toks, koks yra dabar, su neišsaugotais pakeitimais."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Puslapių tvarkymas",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Puslapių tvarkymo rodinys",
+          "body": [
+            "Tvarkyti → Tvarkyti puslapius rodo visus puslapius tinklelyje. Kol neišsaugosite, diske niekas nesikeičia.",
+            {
+              "points": [
+                "Pasirinkimas: spustelėkite puslapį; Ctrl+spustelėjimas prideda puslapį, Shift+spustelėjimas pažymi iš eilės einančius. Meniu yra „Pasirinkti visus puslapius“, „Nieko nežymėti“, „Pasirinkti nelyginius puslapius“ ir „Pasirinkti lyginius puslapius“.",
+                "Perkėlimas: nuvilkite pasirinktus puslapius į naują vietą arba naudokite „Perkelti į kairę“ ir „Perkelti į dešinę“.",
+                "Pasukimas: „Pasirinktus: pasukti į kairę“ ir „Pasirinktus: pasukti į dešinę“ pasuka pasirinktus puslapius; „Visi puslapiai: pasukti į kairę“ ir „Visi puslapiai: pasukti į dešinę“ pasuka visus puslapius.",
+                "Ištrynimas: klavišas Delete arba „Ištrinti puslapius“. Dokumente lieka bent vienas puslapis.",
+                "Kopijavimas, iškirpimas ir įklijavimas (Ctrl+C, Ctrl+X, Ctrl+V): puslapius galima įklijuoti tame pačiame dokumente arba kitame programoje atidarytame dokumente.",
+                "Dydis: viršuje esantis slankiklis padidina arba sumažina puslapius; tą patį daro Ctrl + pelės ratukas virš puslapių bei „Priartinti“ ir „Atitolinti“ (Ctrl+= ir Ctrl+-). Dydis įsimenamas."
+              ]
+            },
+            "Tos pačios komandos veikia ir be tinklelio – su rodomu puslapiu."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Puslapių ištraukimas ir dokumento skaidymas",
+          "body": [
+            "Tvarkyti → Ištraukti puslapius iškelia pasirinktus puslapius į naują, dar neišsaugotą dokumentą atskiroje kortelėje. Taip pat galite kiekvieną puslapį įrašyti kaip atskirą failą ir pasirinkti, ar puslapiai pašalinami iš šio dokumento.",
+            "Tvarkyti → Skaidyti dokumentą įrašo dokumentą kaip kelis mažesnius failus; šis dokumentas lieka nepakeistas.",
+            "Naujų dokumentų pavadinimai sudaromi pagal šablonus skiltyje Nustatymai → Naujų dokumentų pavadinimai.",
+            {
+              "note": "Sertifikatu sukurti parašai neperkeliami į ištrauktus ar suskaidytus dokumentus: parašas galioja tik tam failui, kuriame buvo sukurtas."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Puslapių įterpimas ir pakeitimas",
+          "body": [
+            {
+              "points": [
+                "Tvarkyti → Įterpti puslapius prideda kito failo (PDF, paveikslėlio, teksto, biuro dokumento) puslapius po pasirinkto puslapio arba pabaigoje.",
+                "Tvarkyti → Pakeisti puslapius įdeda kito failo puslapius vietoj pasirinktųjų.",
+                "Įterpti → Tuščias puslapis prideda tuščią puslapį, tokio pat dydžio kaip gretimas."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Puslapių apkirpimas ir dydžio keitimas",
+          "body": [
+            "Redaguoti → Apkirpti puslapius nupjauna puslapių kraštus pagal jūsų įvestas arba nuvilktas paraštes. Iš failo niekas nepašalinama: puslapiuose tiesiog rodoma mažiau.",
+            "Redaguoti → Keisti puslapių dydį perkelia puslapius ant kito dydžio lapo (A4, Letter ir kt.). Turinį galima pritaikyti, kad tilptų, arba palikti jo dydžio ir padėti vienoje iš devynių vietų naujame lape.",
+            "Abu klausia, kuriuos puslapius: visus, pasirinktus, intervalą, nelyginius ar lyginius."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Failų jungimas",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Rinkinys",
+          "body": [
+            "Apjungti → Naujas rinkinys atveria vietą failams surinkti ir įrašyti kaip vieną PDF.",
+            {
+              "steps": [
+                "Pridėkite failus mygtuku „Pridėti failus“ arba numeskite juos ant rinkinio. Galima maišyti PDF, paveikslėlius, tekstą ir biuro dokumentus.",
+                "Nuvilkite korteles norima tvarka arba naudokite kiekvienos kortelės rodykles.",
+                "Atidarykite kortelę, kad pasirinktumėte, kurie jos puslapiai bus įtraukti.",
+                "„Apjungti failus“ įrašo juos nurodyta tvarka kaip vieną naują dokumentą atskiroje kortelėje."
+              ]
+            },
+            "Patys failai nekeičiami.",
+            "Viršuje esantis slankiklis padidina arba sumažina puslapius kortelėse; tą patį daro Ctrl + pelės ratukas bei „Priartinti“ ir „Atitolinti“ (Ctrl+= ir Ctrl+-). Dydis įsimenamas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rašymas ir piešimas puslapiuose",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Įrankiai",
+          "body": [
+            "Piešimo įrankiai atsidaro skydelyje šalia puslapio – kaip mygtukų tinklelis arba kaip sąrašas su pavadinimais (tai lemia nustatymai). Pasirinkę įrankį, vilkite arba spustelėkite puslapyje; klavišas Escape įrankį padeda.",
+            {
+              "points": [
+                "Tekstas: spustelėkite ir rašykite. Šriftas, dydis, spalva, pusjuodis, kursyvas ir lygiuotė yra skydelyje.",
+                "Vaizdas: pasirinkite paveikslėlį, tada vilkite ten, kur jis turi būti, ir tokio dydžio, kokio reikia.",
+                "Figūros: stačiakampis, elipsė, linija, rodyklė, varnelė, kryžius, taškas.",
+                "Išryškinimas: vilkite per tai, kas turi išsiskirti; kas po juo, lieka įskaitoma."
+              ]
+            },
+            "Įrankiu „Pasirinkti, perkelti ir keisti dydį“ žymė vėl paimama: vilkite ją, tempkite už kampų, pasukite už rankenėlės, skydelyje pakeiskite jos spalvas arba ištrinkite klavišu Delete. Žymes galima kopijuoti ir įklijuoti, taip pat į kitus puslapius.",
+            "Viskas, kas nupiešta, įrašoma į failą, kai išsaugote."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Paties dokumento teksto ir paveikslėlių keitimas",
+          "body": [
+            "Įrankis „Redaguoti dokumento tekstą ir paveikslėlius“ apibrėžia tai, kas yra pačiame puslapyje. Spustelėkite teksto eilutę, kad ją perrašytumėte, arba paveikslėlį, kad jį perkeltumėte, pakeistumėte jo dydį, pasuktumėte ar ištrintumėte.",
+            {
+              "note": "Taip keičiama po vieną eilutę arba vieną paveikslėlį. Pailgėjus eilutei, pastraipos nepersidėlioja, o paveikslėlis, esantis ant kito, paimamas kartu su juo. Dideliems pakeitimams redaguokite dokumentą programoje, kurioje jis buvo parašytas."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Neskelbtinos informacijos pašalinimas",
+          "body": [
+            "Daugiau įrankių → Pašalinti neskelbtiną informaciją visam laikui pašalina tai, ko negalima skaityti: bet kuriame puslapyje uždenkite tai juodu stačiakampiu. Išsaugojus tekstas ir paveikslėliai po stačiakampiu pašalinami iš failo, o ne tik uždengiami.",
+            {
+              "note": "Dokumentą, iš kurio pašalinote informaciją, išsaugokite nauju pavadinimu, o originalą laikykite saugioje vietoje: kas pašalinta, to nebeįmanoma atkurti."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Vandens žymė",
+          "body": [
+            "Redaguoti → Vandens žymė užrašo žodžius arba uždeda paveikslėlį jūsų pasirinktuose puslapiuose: tiesiai arba įstrižai, vienoje iš devynių vietų, tokio dydžio ir blyškumo, kokį nustatysite. Kiekviename puslapyje ji tada yra tokia pati žymė kaip kitos ir ją vis dar galima perkelti ar pašalinti."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Puslapių numeriai, antraštė ir poraštė, Bates numeriai",
+          "body": [
+            {
+              "points": [
+                "Redaguoti → Puslapių numeriai: formatas (1, 1 / 12, 1 puslapis ir kt.), vieta ir kuriems puslapiams jie dedami.",
+                "Įterpti → Antraštė ir poraštė: tekstas bet kurioje iš šešių vietų. Jame {page} reiškia puslapio numerį, {pages} – puslapių skaičių, {date} – šiandienos datą, o {file} – dokumento pavadinimą.",
+                "Įterpti → Bates numeracija: iš eilės einantys numeriai su žodžiu prieš juos arba po jų (ABC000123), kaip naudojama bylos dokumentams."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nuorodos, žymelės ir prisegti failai",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Nuorodos",
+          "body": [
+            "Įterpti → Nuoroda: vilkite per vietą, kurią reikės spustelėti, tada nurodykite, kur ji veda: į tinklalapio adresą ar į šio dokumento puslapį.",
+            "Dokumento nuorodos veikia jį skaitant: spustelėjus nuorodą į puslapį, pereinama į jį; tinklalapio ar el. pašto adresas perduodamas jūsų naršyklei ar el. pašto programai."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Žymelės",
+          "body": [
+            "Įterpti → Nauja žymelė: spustelėkite vietą, į kurią ji turi vesti, ir suteikite jai pavadinimą. Įterpti → Žymelės atveria sąrašą, kuriame žymelę galima pervardyti arba pašalinti. Pakeitimai įrašomi, kai išsaugote."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Prisegti failai",
+          "body": [
+            "Įterpti → Prisegti failą: pasirinkite failą ir spustelėkite ten, kur turi būti jo sąvaržėlė. Galite suteikti jam pavadinimą ir autorių, nuspalvinti sąvaržėlę, pakeisti jos dydį ir ją pasukti. Išsaugojus failas laikomas PDF viduje.",
+            "Įterpti → Prisegti failai parodo, ką dokumentas turi savyje; kiekvieną failą galima išsaugoti diske arba pašalinti. Spustelėjus sąvaržėlę atsidaro tas pats sąrašas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formos",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Formos užpildymas",
+          "body": [
+            "Įterpti → Užpildyti formą parodo dokumento laukelius: rašykite teksto laukeliuose, žymėkite langelius, rinkitės iš sąrašų. Atsakymai įrašomi į failą, kai išsaugote."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Formos kūrimas",
+          "body": [
+            "Meniu „Įterpti“ prideda laukelius į bet kurį dokumentą: teksto laukelį, žymimąjį langelį, akutes (iš kurių galima pasirinkti vieną), pasirinkimų sąrašą ir pasirašančiajam tuščią paliekamą parašo laukelį.",
+            "Vilkite puslapyje ten, kur turi būti laukelis. Kaip ir kitas žymes, laukelį galima perkelti ir keisti jo dydį, kol išsaugosite; po to jis tampa formos dalimi."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pasirašymas",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Ranka piešiamo parašo pridėjimas",
+          "body": [
+            "Pasirašyti → Pridėti parašą įdeda parašo paveikslėlį puslapyje: nupieštą čia pasirinktu rašikliu, įvestą šriftu arba paimtą iš paveikslėlio (pasirašyto lapo nuotraukai – su „Palikti tik rašiklio brūkšnius, be popieriaus fono“). Po juo galima įrašyti datą.",
+            "Vilkite puslapyje ten, kur jis turi būti. Panaudoti parašai saugomi šiame kompiuteryje, kad galėtumėte juos naudoti vėl.",
+            {
+              "note": "Tai paveikslėlis: jis nieko tikro nepasako apie tai, kas jį ten įdėjo. Parašas, įrodantis, kas pasirašė ir kad nuo to laiko niekas nepakeista, kuriamas sertifikatu."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Pasirašymas sertifikatu",
+          "body": [
+            "Pasirašyti → Pasirašyti sertifikatu sukuria skaitmeninį parašą: jis nurodo, kas pasirašė, ir užantspauduoja dokumentą, todėl bet koks vėlesnis pakeitimas bus matomas.",
+            {
+              "steps": [
+                "Puslapyje nuvilkite sritį, kurioje bus rodomas parašas (pirmiausia tai paaiškina langas; jį galima išjungti). Norėdami pasirašyti nieko nerodydami puslapiuose, vietoj to pasirinkite „Pasirašyti nerodant parašo puslapyje“.",
+                "Pasirinkite sertifikatą: vieną iš kompiuterio sertifikatų (kortelė ar žetonas tarp jų atsiranda, kai įdedamas į skaitytuvą) arba .pfx / .p12 failą su jo slaptažodžiu. „Tęsti“.",
+                "Pasirinkite parašo išvaizdą. Skiltyje „Priežastis ir vieta (nebūtina)“ galite įrašyti, kodėl ir kur pasirašote: tai įrašoma į parašą, o į puslapį – jei išvaizda tai rodo. Pažymėkite „Užrakinti dokumentą pasirašius“, jei po jūsų niekas neturėtų jo pasirašyti ar keisti. Palikite pažymėtą „Pridėti patikimą laiką (laiko žymę)“, kad tarnyba patvirtintų, kada pasirašėte.",
+                "„Pasirašyti“, tada pasirinkite, kur išsaugoti pasirašytą failą. Šiuo metu žetonas paprašo PIN kodo."
+              ]
+            },
+            "Pasirašytas failas atsidaro vietoj dokumento. Programa niekada nesaugo slaptažodžio ar PIN kodo.",
+            {
+              "note": "Kvalifikuotas parašas – tai šitaip sukurtas parašas kvalifikuotu sertifikatu, esančiu jo kortelėje ar žetone. Pasirašoma jūsų kompiuteryje; internetu siunčiamos tik užklausos dėl laiko žymės ir jūsų sertifikato patikros, ir jos siunčia kontrolinius kodus ir sertifikato serijos numerį, niekada ne dokumentą."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Parašo išvaizda",
+          "body": [
+            "Išvaizda nurodo, kaip sertifikato parašas atrodo puslapyje. Laikykite kelias išvaizdas savo pavadinimais: vieną pasirašymui įmonės vardu, kitą – savo vardu.",
+            {
+              "points": [
+                "Paveikslėlis: be jo, iš failo (antspaudas, nuskenuotas parašas) arba nupieštas čia.",
+                "Rodomas tekstas: vardas, data, priežastis, vieta, kiekvienas su etikete arba be jos.",
+                "Jūsų eilutės po vardu, pavyzdžiui, pareigos ir įmonė.",
+                "„Standartinis tekstas“ yra visada: kas pasirašė ir kada."
+              ]
+            },
+            "Pasirašymo lange: „Naujas…“, „Redaguoti…“, „Ištrinti“. Pirmiausia siūloma paskutinė naudota. Išvaizdos saugomos šiame kompiuteryje."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Keli parašai ir užrakinimas",
+          "body": [
+            "Dokumentą gali pasirašyti keli žmonės, vienas po kito. Atidarykite pasirašytą failą ir pasirašykite nieko nekeisdami: jūsų parašas pridedamas failo pabaigoje, o ankstesni lieka galiojantys.",
+            "„Užrakinti dokumentą pasirašius“ (išjungta, kol nepažymite) uždaro dokumentą: po jūsų niekas negali pasirašyti ir nieko nebegalima keisti. To negalima atšaukti.",
+            {
+              "note": "Jei pakeisite pasirašytą dokumentą prieš pasirašydami jį dar kartą, jis turi būti įrašytas iš naujo, o ankstesni parašai neįtraukiami. Pasirašymo langas apie tai įspėja: norėdami juos išlaikyti, vėl atidarykite failą ir pasirašykite nieko nekeisdami."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Laiko žymės",
+          "body": [
+            "Laiko žymė – tai laiko žymų tarnybos pasirašytas patvirtinimas, kada kas buvo. Kitaip parašo laikas paimamas iš pasirašančiojo kompiuterio laikrodžio, kurį gali nustatyti bet kas; laiko žymė įrodo momentą ir leidžia įrodyti parašą ir pasibaigus sertifikato galiojimui (PAdES B-T).",
+            {
+              "points": [
+                "Parašai ją gauna, kai pasirašymo lange pažymėta „Pridėti patikimą laiką (laiko žymę)“. Skiltyje Nustatymai → Parašai nustatoma, ar ji iš pradžių pažymėta – čia ir grupiniame apdorojime.",
+                "Pasirašyti → Pridėti laiko žymę suteikia visam dokumentui atskirą laiko žymę be sertifikato: ji įrodo, kad tuo momentu dokumentas buvo būtent toks, koks yra. Jis išsaugomas kaip naujas failas; failo parašai lieka galiojantys."
+              ]
+            },
+            "Tarnyba – DigiCert (http://timestamp.digicert.com), nemokama, ja pasitiki Adobe Reader ir Windows; kitą galima nustatyti skiltyje Nustatymai → Parašai. Ji gauna tik kontrolinį kodą (SHA-256), niekada ne dokumentą, ir reikia interneto ryšio. Kai parašas gauna laiko žymę, jūsų sertifikato išdavėjo taip pat klausiama, ar sertifikatas vis dar galioja, o jo atsakymas išsaugomas paraše (ilgalaikis patvirtinimas): tada Adobe Reader gali rodyti parašą kaip galiojantį dabar ir pasibaigus sertifikato galiojimui.",
+            {
+              "note": "Jei nepavyksta susisiekti su laiko žymų tarnyba, niekas nepasirašoma ir neįrašoma: bandykite dar kartą arba nuimkite laiko žymės žymėjimą, kad pasirašytumėte be jos."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Parašų tikrinimas",
+          "body": [
+            "Pasirašyti → Patikrinti parašus išvardija visus failo sertifikatų parašus: kas pasirašė, kas išdavė sertifikatą, kada, priežastį ir vietą, taip pat",
+            {
+              "points": [
+                "ar dokumentas nepakeistas nuo to parašo (vėliau pridėtas kitas parašas nėra laikomas pakeitimu);",
+                "ar parašas užrakina dokumentą;",
+                "ar šis kompiuteris pasitiki institucija, išdavusia sertifikatą, ir ar sertifikatas šiandien galioja;",
+                "laikas, patvirtintas jo laiko žyme, ir kuri tarnyba jį patvirtino, jei parašas ją turi. Taip pat nurodoma viso dokumento laiko žymė su atskiru patikrinimu."
+              ]
+            },
+            "Tikrinamas failas toks, koks buvo paskutinį kartą išsaugotas, ir tikrinama šiame kompiuteryje be ryšio su internetu. Spustelėjus parašą puslapyje, šis sąrašas atsidaro ties tuo parašu. Po kiekvienu parašu „Rodyti sertifikatą“ atidaro Windows sertifikato langą (sertifikato grandinę ir visą informaciją; iš ten „Įdiegti sertifikatą“ leidžia šiam kompiuteriui pasitikėti jums žinomu sertifikatu), o „Patikrinti galiojimą“ tik jums paspaudus internetu paklausia sertifikato išdavėjo, ar sertifikatas buvo atšauktas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Daugiau įrankių",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Teksto atpažinimas (OCR)",
+          "body": [
+            "Daugiau įrankių → Atpažinti tekstą (OCR) nuskaito nuskenuotų puslapių žodžius ir nematomai įrašo juos į puslapius, kad dokumente būtų galima ieškoti, o jo tekstą – kopijuoti ir eksportuoti. Puslapių išvaizda nesikeičia.",
+            "Pažymėkite tik tas kalbas, kuriomis parašyti puslapiai; puslapiai, kuriuose jau yra teksto, paliekami tokie, kokie yra.",
+            {
+              "note": "Tekstą skaito variklis „Tesseract“ – nemokama, atskirai diegiama programa. Jei jos nėra, langas parodo komandą, kuria ji įdiegiama „Windows“ sistemoje."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Dokumento mažinimas",
+          "body": [
+            "Daugiau įrankių → Suspausti išsaugo dokumentą kaip mažesnį failą, sumažindamas jo nuotraukų ir skenuotų vaizdų pikselių skaičių. Trys stiprumo lygiai; tekstas ir brėžiniai lieka tokie pat ryškūs. Dokumentas, kuriame mažai paveikslėlių, sumažėja nedaug."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Dviejų dokumentų palyginimas",
+          "body": [
+            "Daugiau įrankių → Palyginti dokumentus: pasirinkite kitą PDF. Abu rodomi greta, puslapis po puslapio; pažymimi puslapiai, kurių tekstas skiriasi, ir išvardijamos eilutės, kurios yra tik viename iš jų."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Grupinis apdorojimas: daug failų vienu metu",
+          "body": [
+            "Daugiau įrankių → Grupinis apdorojimas atlieka tuos pačius veiksmus su daug failų atskiroje kortelėje. Kiekvienas rezultatas yra naujas failas. Jei rezultatai užimtų aplanke jau esančių failų vietą (jūsų pačių failų, kai jie įrašomi į savo aplanką ir prie jų pavadinimų nieko nepridedama), pirmiausia jūsų paklausiama, ar juos pakeisti, praleisti, ar atšaukti. Failas pakeičiamas tik tada, kai jo rezultatas baigtas; atidarytas failas (kortelėje čia ar kitoje programoje) paliekamas toks, koks yra, ir pažymimas kaip neatliktas.",
+            {
+              "steps": [
+                "Kairėje pridėkite failus: „Pridėti failus…“, „Pridėti aplanką…“ (su jame esančiais aplankais) arba numeskite juos.",
+                "Dešinėje pažymėkite, ką daryti. Kiekvienas failas bet kuriuo atveju tampa PDF; be to, galite pasukti puslapius, atpažinti tekstą, pridėti antraštę ir poraštę, vandens žymę ar puslapių numerius, sumažinti failus, pasirašyti juos sertifikatu arba įrašyti kitu formatu. Skaičiai rodo eilę.",
+                "Pasirinkite, ką įrašyti: atskirą failą kiekvienam arba viską viename PDF (sąrašo tvarka), ir aplanką, į kurį bus įrašyti rezultatai. Kai visi failai yra iš vieno aplanko, tas aplankas pasirenkamas už jus, kol pasirinksite kitą; kitu atveju tai paskutinis jūsų pasirinktas aplankas.",
+                "„Pradėti“. Prie kiekvieno failo rodoma, kaip sekėsi; vykdymą galima sustabdyti tarp failų."
+              ]
+            },
+            {
+              "points": [
+                "Receptai: „Išsaugoti kaip receptą…“ išsaugo viską, ką pasirinkote (išskyrus failus ir slaptažodžius), tam tikru pavadinimu, kad vėliau viską būtų galima nustatyti vienu pasirinkimu.",
+                "„Rezultatuose išlaikyti failų aplankus“ atkuria pridėto aplanko poaplankius.",
+                "„Įrašyti vykdymo ataskaitą“ šalia rezultatų palieka teksto failą, kuriame nurodyta, kas įrašyta ir kas nepavyko.",
+                "PDF, kuris tik pasirašomas, išlaiko turimus parašus; jei per tą patį vykdymą su juo daroma ir kas nors kita, jis įrašomas iš naujo ir parašai neįtraukiami."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nustatymai",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "PDF Organizer nustatymai",
+          "body": [
+            "Failas → Nustatymai (arba Nustatymai šoninėje juostoje, tada PDF Organizer). Kiekvieną nustatymą galima atkurti atskirai arba visus iš karto.",
+            {
+              "points": [
+                "Atidarant dokumentą: kokio dydžio dokumentas rodomas atidarius, slinkimas ar po vieną puslapį, ar rodomos miniatiūros.",
+                "Vienetai, liniuotės ir tinklelis: matavimo vienetas (milimetrai, coliai, taškai), liniuotės, tinklelis ir jo tankis.",
+                "Spausdinimas: popierius, išdėstymas ir mastelis, su kuriais atsidaro spausdinimo langas.",
+                "Greitoji įrankių juosta: kokie mygtukai yra juostoje virš puslapių.",
+                "Naujų dokumentų pavadinimai: šablonai ištrauktiems puslapiams, naujiems dokumentams ir PDF, į kurį grupinis apdorojimas sujungia daug failų.",
+                "Parašai: ar „Išsaugoti“ klausia prieš įrašant ant pasirašyto failo.",
+                "Spartieji klavišai: spustelėkite komandos klavišus, tada paspauskite naujus."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Apie PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Apie PDF Organizer",
+          "body": [
+            "PDF Organizer – tai Syntelab Creative PDF programa: ji skaito PDF dokumentus, tvarko ir jungia jų puslapius, leidžia juose rašyti ir piešti, pildo ir kuria formas, pasirašo sertifikatu ir tikrina parašus, o tuos pačius veiksmus atlieka su daug failų iš karto.",
+            "Ji nauja, ir kai kurios jos funkcijos – tik pirmas žingsnis. Jei jūsų dokumentams jos nepakanka, praneškite mums per Pagalba → Atsiliepimai: taip sužinome, ką tobulinti."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Kuo remiasi PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "PDF skaitymas, piešimas ir rašymas: MuPDF.",
+                "Teksto atpažinimas (OCR): Tesseract, jei jis įdiegtas kompiuteryje.",
+                "Biuro dokumentų atidarymas: Word, Excel ir PowerPoint arba LibreOffice – kuri yra įdiegta.",
+                "Tinklalapio išsaugojimas PDF formatu: kompiuteryje įdiegta naršyklė.",
+                "Pasirašymas sertifikatu: naudojamos „Windows“ sertifikatų paslaugos; parašai rašomi pagal PAdES standartą."
+              ]
+            },
+            "Tai, ką ji turi bendro su likusia programa, aprašyta skiltyje „Apie Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ko PDF Organizer dar negali",
+          "body": [
+            {
+              "points": [
+                "Biuro dokumentus atidaro kompiuteryje esantis biuro programų paketas; be Word, Excel, PowerPoint ar LibreOffice jų atidaryti negalima. Kuriame savo konverterį: žr. „Ką kuriame“.",
+                "Tekstui atpažinti reikia atskirai įdiegto variklio „Tesseract“.",
+                "Paties dokumento tekstas keičiamas po vieną eilutę; pastraipos iš naujo nepersidėlioja.",
+                "Keturiais dažais (CMYK) spausdinamų paveikslėlių negalima paimti ir perkelti.",
+                "„Patikrinti galiojimą“ parodo, ar sertifikatas šiandien yra atšauktas, bet ne tai, kada jis buvo atšauktas.",
+                "Pasirašymas sertifikatu kol kas veikia „Windows“ sistemoje; „Linux“ ir „macOS“ sistemose jis bus vėlesnėje versijoje."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

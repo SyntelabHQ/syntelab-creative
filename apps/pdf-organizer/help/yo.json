@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Ṣíṣí àti kíkà",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Ṣíṣí ìwé kan",
+          "body": [
+            "Fáìlì → Ṣí (Ctrl+O) ń ṣí PDF kan nínú táàbù tirẹ̀. \"Ṣí ọ̀pọ̀ fáìlì lẹ́ẹ̀kan náà\" ń ṣí fáìlì kọ̀ọ̀kan tí a yàn nínú táàbù tirẹ̀.",
+            "Àwọn fáìlì tí kì í ṣe PDF náà ń ṣí, gẹ́gẹ́ bí ojú-ewé: àwọn àwòrán (PNG, JPEG, TIFF, WebP àti ọ̀pọ̀ míì), fáìlì ọ̀rọ̀ àti ti ayélujára, ìwé-ẹ̀rọ (e-book), XPS, àti ìwé ọ́fíìsì. A kò tíì fi irú ìwé bẹ́ẹ̀ pamọ́ síbìkan: \"Fi pamọ́\" yóò béèrè ibi.",
+            {
+              "note": "Word, Excel tàbí PowerPoint, tàbí LibreOffice, èyí tó bá wà lórí kọ̀ǹpútà, ni ó ń yí àwọn ìwé ọ́fíìsì (Word, Excel, PowerPoint, OpenDocument) padà. Láìsí ọ̀kan nínú wọn, a kò lè ṣí wọn."
+            },
+            "Àwọn fáìlì tí a jù sílẹ̀ sórí táàbù òfìfo ni a ó kó jọ sínú àkójọ kan; tí a bá jù wọ́n sórí ìwé kan, a ó fi àwọn ojú-ewé wọn kún un.",
+            "Lórí Windows, PDF Organizer lè jẹ́ áàpù tí ń ṣí àwọn fáìlì PDF nígbà tí o bá tẹ̀ wọ́n lẹ́ẹ̀mejì: lórí ojú-ewé ìbẹ̀rẹ̀ rẹ̀, \"Ṣe é ní àkọ́kọ́\" ń ṣí ètò Windows, níbi tí o ti ń yan Syntelab Creative fún àwọn fáìlì PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Wíwo àwọn ojú-ewé",
+          "body": [
+            "Àkójọ àṣàyàn Ìfihàn ni ó ń pinnu bí a ṣe ń fi ìwé hàn; kò sí ohun kan nínú rẹ̀ tó ń yí fáìlì padà.",
+            {
+              "points": [
+                "Ìsúnmọ́: sún mọ́, sún sẹ́yìn, ìwọ̀n gidi, bá ojú-ewé mu, bá fífẹ̀ mu, bá gíga mu. Ctrl àti kẹ̀kẹ́ èkú náà ń sún mọ́ tàbí sẹ́yìn.",
+                "Ìfihàn ojú-ewé: ojú-ewé kan tàbí méjì lẹ́gbẹ̀ẹ́ ara wọn, pẹ̀lú tàbí láìsí ojú-ewé èèpo, àti yíyí lọ láàárín gbogbo ojú-ewé gẹ́gẹ́ bí ọ̀wọ́ gígùn kan.",
+                "Àwọn atọ́nà: ọ̀pá-ìwọ̀n àti àwọ̀n ìlà, ní ẹyọ ìwọ̀n tí a yàn nínú Ètò.",
+                "\"Fi àwòrán kékeré hàn\": àwọn ojú-ewé kékeré lẹ́gbẹ̀ẹ́. Tẹ ọ̀kan láti lọ síbẹ̀; àwọn àmì-ìwé ìwé náà wà nínú pánẹ́lì kan náà.",
+                "\"Ipò kíkà\" ń fi àwọn irinṣẹ́ pamọ́; \"Ipò ojú-iboju kíkún\" ń fi ohun gbogbo pamọ́ àyàfi ojú-ewé. Esc ń kúrò nínú méjèèjì."
+              ]
+            },
+            "Ọ̀wọ́ tó wà lókè àwọn ojú-ewé (ọ̀pá irinṣẹ́ kíákíá) ní nọ́ńbà ojú-ewé, ìsúnmọ́ àti àwọn bọ́tìnì tí o yàn nínú Ètò."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Wíwá ọ̀rọ̀",
+          "body": [
+            "Àtúnṣe → Wá nínú ìwé (Ctrl+F): tẹ ọ̀rọ̀ kan tàbí gbólóhùn kan; a ó sàmì sí àwọn ibi tí a ti rí i lórí àwọn ojú-ewé, àwọn ọfà sì ń lọ láti ọ̀kan sí èkejì.",
+            {
+              "note": "Ìwé tí a ṣàyẹ̀wò (scan) jẹ́ àwòrán àwọn ojú-ewé, kò sì ní ọ̀rọ̀ tí a lè wá títí a ó fi dá ọ̀rọ̀ rẹ̀ mọ̀: wo \"Dídá ọ̀rọ̀ mọ̀ (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Àbùdá ìwé",
+          "body": [
+            "Fáìlì → Àbùdá ìwé ń fi ohun tí ìwé náà sọ nípa ara rẹ̀ hàn: àkọlé, òǹkọ̀wé, ọjọ́ tí a ṣe é àti tí a yí i padà, iye ojú-ewé, ìwọ̀n fáìlì."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fífi pamọ́, títẹ̀ jáde àti fífi ránṣẹ́",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Fi pamọ́ àti Fi pamọ́ bí",
+          "body": [
+            "Kò sí ohun tí o ṣe tó máa yí fáìlì padà lórí disk títí o fi fi pamọ́. Títí di ìgbà náà, o lè dá ìgbésẹ̀ kọ̀ọ̀kan padà (Ctrl+Z) kí o sì tún un ṣe (Ctrl+Y).",
+            {
+              "points": [
+                "Fi pamọ́ (Ctrl+S) ń kọ ìwé náà sórí fáìlì rẹ̀.",
+                "Fi pamọ́ bí (Ctrl+Shift+S) ń kọ ọ́ sínú fáìlì tuntun, tí yóò gba ipò táàbù náà; fáìlì àtijọ́ yóò wà bí ó ṣe wà."
+              ]
+            },
+            "Tí ètò míì bá ti ṣí fáìlì náà, a kò lè kọ sórí rẹ̀: ètò yìí yóò sọ bẹ́ẹ̀, yóò sì pa àwọn àyípadà rẹ mọ́, kí o lè fi pamọ́ lábẹ́ orúkọ míì.",
+            {
+              "note": "Fífi ìwé tí a ti yí padà pamọ́ sórí fáìlì tí a ti fi ìwé-ẹ̀rí fọwọ́ sí ń yọ àwọn ìfọwọ́sí rẹ̀ kúrò. Ètò yìí yóò kọ́kọ́ béèrè, yóò sì fúnni ní \"Fi pamọ́ gẹ́gẹ́ bí fáìlì tuntun\"; o lè pa ìbéèrè yìí nínú Ètò → Àwọn ìfọwọ́sí."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Ṣíṣẹ̀dá PDF",
+          "body": [
+            "Fáìlì → Ṣẹ̀dá PDF kan ń ṣe ìwé tuntun:",
+            {
+              "points": [
+                "láti inú fáìlì kan, tàbí láti inú ọ̀pọ̀: tí a pa pọ̀ sínú PDF kan, tàbí PDF kan fún ọ̀kọ̀ọ̀kan;",
+                "láti inú ojú-ewé ayélujára, ní àdírẹ́sì tí o tẹ̀ (aṣàwákiri tó wà lórí kọ̀ǹpútà ni a fi ń fi ojú-ewé náà pamọ́);",
+                "láti inú ohun tó wà lórí pátákó ẹ̀dà;",
+                "láti inú àwọn ojú-ewé òfìfo ní ìwọ̀n tí o yàn."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Kíkó jáde sí fọ́ọ̀mátì míì",
+          "body": [
+            "Fáìlì → Kó jáde ń kọ ìwé náà ní fọ́ọ̀mátì míì: ọ̀rọ̀ Word tàbí OpenDocument, ọ̀rọ̀ lásán, ojú-ewé ayélujára, XML, àwòrán àwọn ojú-ewé (PNG, JPEG, TIFF, SVG) tàbí PostScript. Fún àwọn àwòrán, o máa yan ìpéye àwòrán.",
+            "Ìwé fúnra rẹ̀ ṣì jẹ́ PDF; ohun tí a kó jáde jẹ́ fáìlì tuntun.",
+            {
+              "note": "A lè kó ọ̀rọ̀ jáde níbi tí ìwé bá ti ní ọ̀rọ̀ nìkan. Kọ́kọ́ dá ọ̀rọ̀ inú ìwé tí a ṣàyẹ̀wò (scan) mọ̀."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Títẹ̀ jáde",
+          "body": [
+            "Fáìlì → Tẹ̀ jáde (Ctrl+P) ń tẹ ìwé náà jáde bí a ṣe tò ó báyìí, pẹ̀lú ohun tí o yà sórí rẹ̀. Yan àwọn ojú-ewé, bébà, bóyá bébà yóò wà ní ìdúró tàbí ní ìbú, àti bóyá a ó mú àwọn ojú-ewé bá bébà mu tàbí tẹ̀ wọ́n ní ìwọ̀n gidi wọn; lẹ́yìn náà fèrèsé títẹ̀ jáde ẹ̀rọ kọ̀ǹpútà yóò béèrè ẹ̀rọ ìtẹ̀wé.",
+            "Bébà, ìdojúkọ àti ìwọ̀n tí fèrèsé títẹ̀ jáde ń bẹ̀rẹ̀ pẹ̀lú ni a ń ṣètò nínú Ètò → Títẹ̀ jáde."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Pínpín",
+          "body": [
+            "Fáìlì → Pín ń gbé ìwé náà fún fèrèsé \"Pín\" ti ẹ̀rọ kọ̀ǹpútà: ímeèlì, ẹ̀rọ tó wà nítòsí àti àwọn áàpù míì. A ń pín ìwé náà bí ó ṣe wà báyìí, pẹ̀lú àwọn àyípadà rẹ tí a kò tíì fi pamọ́."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ṣíṣètò àwọn ojú-ewé",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Ìfihàn Ṣètò",
+          "body": [
+            "Ṣètò → Ṣètò àwọn ojú-ewé ń fi gbogbo ojú-ewé hàn ní àwọ̀n ìlà. Kò sí ohun tí yóò yí padà lórí disk títí o fi fi pamọ́.",
+            {
+              "points": [
+                "Yíyàn: tẹ ojú-ewé kan; Ctrl+tẹ ń fi ọ̀kan kún un, Shift+tẹ ń mú ọ̀wọ́ kan. \"Yan gbogbo ojú-ewé\", \"Má yan ìkankan\", \"Yan àwọn ojú-ewé 1, 3, 5…\" àti \"Yan àwọn ojú-ewé 2, 4, 6…\" wà nínú àkójọ àṣàyàn.",
+                "Sísún: fa àwọn ojú-ewé tí a yàn sí ibi tuntun wọn, tàbí lo \"Sún sí òsì\" àti \"Sún sí ọ̀tún\".",
+                "Yíyí: \"Àwọn tí a yàn: yí sí òsì\" àti \"Àwọn tí a yàn: yí sí ọ̀tún\" ń yí àwọn ojú-ewé tí a yàn; \"Gbogbo ojú-ewé: yí sí òsì\" àti \"Gbogbo ojú-ewé: yí sí ọ̀tún\" ń yí gbogbo ojú-ewé.",
+                "Pípa rẹ́: bọ́tìnì Delete, tàbí \"Pa àwọn ojú-ewé rẹ́\". Ìwé kan máa ń ní ó kéré tán ojú-ewé kan.",
+                "Ṣe ẹ̀dà, gé kúrò àti lẹ̀ (Ctrl+C, Ctrl+X, Ctrl+V): a lè lẹ̀ àwọn ojú-ewé sínú ìwé kan náà tàbí sínú òmíràn tó wà ní ṣíṣí nínú ètò yìí.",
+                "Ìtóbi: ọ̀pá ìfàsẹ́ lókè ń mú àwọn ojú-ewé tóbi sí i tàbí kéré sí i; Ctrl + kẹ̀kẹ́ èkúté lórí àwọn ojú-ewé, àti \"Sún mọ́\" àti \"Sún sẹ́yìn\" (Ctrl+= àti Ctrl+-) náà ń ṣe bẹ́ẹ̀. A máa ń rántí ìtóbi náà."
+              ]
+            },
+            "Àwọn àṣẹ kan náà ń ṣiṣẹ́ láìsí àwọ̀n ìlà, lórí ojú-ewé tó wà níwájú rẹ."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Yíyọ ojú-ewé jáde àti pípín ìwé",
+          "body": [
+            "Ṣètò → Yọ àwọn ojú-ewé jáde ń mú àwọn ojú-ewé tí a yàn jáde gẹ́gẹ́ bí ìwé tuntun nínú táàbù tirẹ̀, láìtíì fi pamọ́. O tún lè jẹ́ kí a kọ ojú-ewé kọ̀ọ̀kan gẹ́gẹ́ bí fáìlì tirẹ̀, kí o sì yàn bóyá a ó yọ àwọn ojú-ewé náà kúrò nínú ìwé yìí.",
+            "Ṣètò → Pín ìwé ń kọ ìwé náà gẹ́gẹ́ bí ọ̀pọ̀ fáìlì kéékèèké; ìwé yìí yóò wà bí ó ṣe wà.",
+            "Orúkọ àwọn ìwé tuntun ń tẹ̀lé àwọn àpẹẹrẹ inú Ètò → Orúkọ àwọn ìwé tuntun.",
+            {
+              "note": "Àwọn ìfọwọ́sí tí a fi ìwé-ẹ̀rí ṣe kì í bá ìwé tí a yọ jáde tàbí tí a pín lọ: ìfọwọ́sí kan wúlò fún fáìlì tí a ti ṣe é nìkan."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Fífi ojú-ewé sí i àti rírọ́pò wọn",
+          "body": [
+            {
+              "points": [
+                "Ṣètò → Fi àwọn ojú-ewé sí i ń fi àwọn ojú-ewé fáìlì míì (PDF, àwòrán, ọ̀rọ̀, ìwé ọ́fíìsì) kún un lẹ́yìn ojú-ewé tí a yàn, tàbí ní ìparí.",
+                "Ṣètò → Rọ́pò àwọn ojú-ewé ń fi àwọn ojú-ewé fáìlì míì sí ipò àwọn tí a yàn.",
+                "Fi sí i → Ojú-ewé òfìfo ń fi ojú-ewé òfìfo kún un ní ìwọ̀n ojú-ewé tó wà lẹ́gbẹ̀ẹ́ rẹ̀."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Gígé àti yíyí ìwọ̀n ojú-ewé padà",
+          "body": [
+            "Àtúnṣe → Gé àwọn ojú-ewé ń gé etí àwọn ojú-ewé kúrò, nípa ìwọ̀n etí tí o tẹ̀ tàbí tí o fà. A kò yọ nǹkan kan kúrò nínú fáìlì: àwọn ojú-ewé kàn ń fi díẹ̀ hàn ni.",
+            "Àtúnṣe → Yí ìwọ̀n àwọn ojú-ewé padà ń fi àwọn ojú-ewé sórí ìwọ̀n bébà míì (A4, Letter àti àwọn míì). A lè yí ìwọ̀n àkóónú padà kí ó bá a mu tàbí pa ìwọ̀n rẹ̀ mọ́, kí a sì gbé e sí ọ̀kan nínú ibi mẹ́sàn-án lórí bébà tuntun.",
+            "Àwọn méjèèjì ń béèrè àwọn ojú-ewé wo: gbogbo wọn, àwọn tí a yàn, ọ̀wọ́ kan, 1, 3, 5… tàbí 2, 4, 6…."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pípa àwọn fáìlì pọ̀",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Àkójọ",
+          "body": [
+            "Pa pọ̀ → Àkójọ tuntun ń ṣí ibì kan láti kó àwọn fáìlì jọ kí a sì kọ wọ́n gẹ́gẹ́ bí PDF kan.",
+            {
+              "steps": [
+                "Fi àwọn fáìlì kún un pẹ̀lú \"Fi àwọn fáìlì kún\", tàbí jù wọ́n sílẹ̀ sórí àkójọ. A lè da PDF, àwòrán, ọ̀rọ̀ àti ìwé ọ́fíìsì pọ̀.",
+                "Fa àwọn káàdì sí ìtẹ̀léra tí o fẹ́, tàbí lo àwọn ọfà lórí káàdì kọ̀ọ̀kan.",
+                "Ṣí káàdì kan láti yan àwọn ojú-ewé rẹ̀ tí yóò wọ inú rẹ̀.",
+                "\"Pa àwọn fáìlì pọ̀\" ń kọ wọ́n, ní ìtẹ̀léra, gẹ́gẹ́ bí ìwé tuntun kan nínú táàbù tirẹ̀."
+              ]
+            },
+            "A kò yí àwọn fáìlì fúnra wọn padà.",
+            "Ọ̀pá ìfàsẹ́ lókè ń mú àwọn ojú-ewé lórí àwọn káàdì tóbi sí i tàbí kéré sí i; Ctrl + kẹ̀kẹ́ èkúté, àti \"Sún mọ́\" àti \"Sún sẹ́yìn\" (Ctrl+= àti Ctrl+-) náà ń ṣe bẹ́ẹ̀. A máa ń rántí ìtóbi náà."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kíkọ̀wé àti yíya àwòrán sórí ojú-ewé",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Àwọn irinṣẹ́",
+          "body": [
+            "Àwọn irinṣẹ́ yíyà ń ṣí gẹ́gẹ́ bí pánẹ́lì lẹ́gbẹ̀ẹ́ ojú-ewé, bí àwọ̀n bọ́tìnì tàbí bí àtòjọ pẹ̀lú orúkọ (Ètò ló ń pinnu). Pẹ̀lú irinṣẹ́ lọ́wọ́, fa ọwọ́ tàbí tẹ ojú-ewé; Esc ń gbé irinṣẹ́ náà sílẹ̀.",
+            {
+              "points": [
+                "Ọ̀rọ̀: tẹ ojú-ewé kí o sì tẹ ọ̀rọ̀. Fọ́ǹtì, ìwọ̀n, àwọ̀, kíkí, dídagun àti ìtòlẹ́sẹẹsẹ wà nínú pánẹ́lì.",
+                "Àwòrán: yan àwòrán kan, lẹ́yìn náà fa ọwọ́ síbi tí yóò wà àti bí yóò ṣe tóbi tó.",
+                "Àwọn ìrísí: onígun mẹ́rin, ìrísí ẹyin, ìlà, ọfà, àmì ✓, àmì ✗, kókó.",
+                "Àfihàn àwọ̀: fa ọwọ́ bo ohun tó yẹ kí ó yọrí; ohun tó wà lábẹ́ rẹ̀ ṣì ṣeé kà."
+              ]
+            },
+            "Pẹ̀lú \"Yàn, sún kí o sì yí ìwọ̀n padà\" a lè tún mú àmì kan: fà á, fa àwọn igun rẹ̀, yí i pẹ̀lú ìdìmú rẹ̀, yí àwọn àwọ̀ rẹ̀ padà nínú pánẹ́lì, tàbí pa á rẹ́ pẹ̀lú bọ́tìnì Delete. A lè ṣe ẹ̀dà àwọn àmì kí a sì lẹ̀ wọ́n, sórí àwọn ojú-ewé míì pẹ̀lú.",
+            "Gbogbo ohun tí a yà ni a ó kọ sínú fáìlì nígbà tí o bá fi pamọ́."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Yíyí ọ̀rọ̀ àti àwòrán ìwé fúnra rẹ̀ padà",
+          "body": [
+            "Irinṣẹ́ \"Ṣàtúnṣe ọ̀rọ̀ àti àwòrán inú ìwé náà\" ń fa ìlà yí ohun tí ojú-ewé fúnra rẹ̀ ní ká. Tẹ ìlà ọ̀rọ̀ kan láti tún un kọ, tàbí àwòrán kan láti sún un, yí ìwọ̀n rẹ̀ padà, yí i tàbí pa á rẹ́.",
+            {
+              "note": "Èyí ń yí ìlà kan tàbí àwòrán kan padà lẹ́ẹ̀kan. Àwọn ìpínrọ̀ kì í tún ara wọn tò nígbà tí ìlà kan bá gùn sí i, àwòrán tó sì wà lórí òmíràn ni a ó mú pọ̀ mọ́ ọn. Fún àyípadà ńlá, ṣàtúnṣe ìwé náà nínú ètò tí a fi kọ ọ́."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Pípa rẹ́ pátápátá",
+          "body": [
+            "Àwọn irinṣẹ́ míì → Pa rẹ́ pátápátá ń yọ ohun tí a kò gbọdọ̀ kà kúrò títí láé: fa àpótí dúdú bò ó, lórí ojú-ewé èyíkéyìí. Nígbà tí o bá fi pamọ́, a ó yọ ọ̀rọ̀ àti àwòrán tó wà lábẹ́ àpótí kúrò nínú fáìlì, kì í ṣe pé a kàn bò wọ́n.",
+            {
+              "note": "Fi ìwé tí o ti pa rẹ́ pamọ́ lábẹ́ orúkọ tuntun kí o sì pa ti àtilẹ̀wá mọ́ síbi tó láàbò: a kò lè dá ohun tí a ti pa rẹ́ padà."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Àmì-omi",
+          "body": [
+            "Àtúnṣe → Àmì-omi ń kọ ọ̀rọ̀ tàbí gbé àwòrán sórí àwọn ojú-ewé tí o yàn: ní títọ́ tàbí ní dídagun, ní ọ̀kan nínú ibi mẹ́sàn-án, bí ó ṣe tóbi àti bí ó ṣe bàìbàì tó bí o ṣe ṣètò rẹ̀. Lórí ojú-ewé kọ̀ọ̀kan, ó di àmì bí èyíkéyìí míì, o sì ṣì lè sún un tàbí yọ ọ́ kúrò."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Nọ́ńbà ojú-ewé, orí-ewé àti ìsàlẹ̀-ewé, nọ́ńbà Bates",
+          "body": [
+            {
+              "points": [
+                "Àtúnṣe → Nọ́ńbà ojú-ewé: ọ̀nà kíkọ (1, 1 / 12, Ojú-ewé 1 àti àwọn míì), ibi, àti àwọn ojú-ewé tí yóò ní nọ́ńbà.",
+                "Fi sí i → Orí-ewé àti ìsàlẹ̀-ewé: ọ̀rọ̀ ní ọ̀kan nínú ibi mẹ́fà. Nínú rẹ̀, {page} dúró fún nọ́ńbà ojú-ewé, {pages} fún iye ojú-ewé, {date} fún ọjọ́ òní àti {file} fún orúkọ ìwé náà.",
+                "Fi sí i → Nọ́ńbà Bates: nọ́ńbà ní ìtẹ̀léra pẹ̀lú ọ̀rọ̀ kan ṣáájú tàbí lẹ́yìn (ABC000123), bí a ṣe ń lò ó fún àwọn ìwé ẹjọ́."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ìjápọ̀, àmì-ìwé àti fáìlì tí a so mọ́ ọn",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Àwọn ìjápọ̀",
+          "body": [
+            "Fi sí i → Ìjápọ̀: fa ọwọ́ bo ibi tí a ó tẹ̀, lẹ́yìn náà sọ ibi tí yóò darí sí: àdírẹ́sì ayélujára, tàbí ojú-ewé kan nínú ìwé yìí.",
+            "Àwọn ìjápọ̀ inú ìwé ń ṣiṣẹ́ nígbà tí o ń kà á: títẹ ìjápọ̀ sí ojú-ewé kan ń gbé ọ lọ síbẹ̀; àdírẹ́sì ayélujára tàbí ímeèlì ni a ó fi lé aṣàwákiri tàbí ètò ímeèlì rẹ lọ́wọ́."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Àwọn àmì-ìwé",
+          "body": [
+            "Fi sí i → Àmì-ìwé tuntun: tẹ ibi tí yóò darí sí kí o sì fún un ní àkọlé. Fi sí i → Àwọn àmì-ìwé ń ṣí àtòjọ, níbi tí a ti lè yí orúkọ àmì-ìwé padà tàbí yọ ọ́ kúrò. A ó kọ àwọn àyípadà náà nígbà tí o bá fi pamọ́."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Àwọn fáìlì tí a so mọ́ ọn",
+          "body": [
+            "Fi sí i → So fáìlì kan mọ́ ọn: yan fáìlì kan kí o sì tẹ ibi tí ìdèwé rẹ̀ yóò wà. O lè fún un ní orúkọ àti òǹkọ̀wé, yí àwọ̀ ìdèwé padà, yí ìwọ̀n rẹ̀ padà kí o sì yí i. A ó pa fáìlì náà mọ́ sínú PDF nígbà tí o bá fi pamọ́.",
+            "Fi sí i → Àwọn fáìlì tí a so mọ́ ọn ń ṣe àtòjọ ohun tí ìwé náà gbé dání; a lè fi fáìlì kọ̀ọ̀kan pamọ́ sórí disk tàbí yọ ọ́ kúrò. Títẹ ìdèwé kan ń ṣí àtòjọ kan náà."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Àwọn fọ́ọ̀mù",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Kíkún fọ́ọ̀mù",
+          "body": [
+            "Fi sí i → Kún fọ́ọ̀mù ń fi àwọn àyè ìwé náà hàn: tẹ ọ̀rọ̀ sínú àwọn àyè ọ̀rọ̀, sàmì sí àwọn àpótí, yàn láti inú àwọn àtòjọ. A ó kọ àwọn ìdáhùn sínú fáìlì nígbà tí o bá fi pamọ́."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Ṣíṣe fọ́ọ̀mù",
+          "body": [
+            "Àkójọ àṣàyàn Fi sí i ń fi àwọn àyè kún ìwé èyíkéyìí: àyè ọ̀rọ̀, àpótí àmì, àwọn bọ́tìnì yíyàn (tí a lè yan ọ̀kan nínú wọn), àtòjọ láti yàn nínú rẹ̀, àti àyè ìfọwọ́sí tí a fi sílẹ̀ ní òfìfo fún ẹni tí yóò fọwọ́ sí i.",
+            "Fa ọwọ́ lórí ojú-ewé síbi tí àyè náà yóò wà. Bí àwọn àmì míì, o lè sún àyè kan kí o sì yí ìwọ̀n rẹ̀ padà títí o fi fi pamọ́; lẹ́yìn ìyẹn, ó di apá kan fọ́ọ̀mù."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fífọwọ́ sí",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Fífi ìfọwọ́sí tí o yà kún un",
+          "body": [
+            "Fọwọ́ sí → Fi ìfọwọ́sí kún ń gbé àwòrán ìfọwọ́sí kan sórí ojú-ewé: tí a yà níbí pẹ̀lú gègé tí o yàn, tí a tẹ̀ ní fọ́ǹtì kan, tàbí tí a mú láti inú àwòrán (pẹ̀lú \"Pa ìlà gègé nìkan mọ́\" fún fọ́tò bébà tí a fọwọ́ sí). A lè kọ ọjọ́ sísàlẹ̀ rẹ̀.",
+            "Fa ọwọ́ lórí ojú-ewé síbi tí yóò wà. A ń pa àwọn ìfọwọ́sí tí o ti lò mọ́ sórí kọ̀ǹpútà yìí, láti tún lò wọ́n.",
+            {
+              "note": "Àwòrán ni èyí: kò sọ ohunkóhun tó dájú nípa ẹni tó fi í síbẹ̀. Ìfọwọ́sí tó ń fi hàn ẹni tó fọwọ́ sí, àti pé kò sí ohun tó yí padà láti ìgbà náà, ni a fi ìwé-ẹ̀rí ṣe."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Fífi ìwé-ẹ̀rí fọwọ́ sí",
+          "body": [
+            "Fọwọ́ sí → Fọwọ́ sí pẹ̀lú ìwé-ẹ̀rí ń ṣe ìfọwọ́sí díjítà: ó ń sọ ẹni tó fọwọ́ sí, ó sì ń dí ìwé náà, kí àyípadà èyíkéyìí lẹ́yìn náà lè hàn.",
+            {
+              "steps": [
+                "Fa ọwọ́ lórí ojú-ewé síbi tí ìfọwọ́sí yóò hàn (fèrèsé kan yóò kọ́kọ́ sọ bẹ́ẹ̀; o lè pa á). Láti fọwọ́ sí láìsí nǹkan kan lórí àwọn ojú-ewé, yan \"Fọwọ́ sí láìfi hàn lórí ojú-ewé\" dípò bẹ́ẹ̀.",
+                "Yan ìwé-ẹ̀rí: ọ̀kan lára ti kọ̀ǹpútà (káàdì tàbí tókìnì ń hàn láàárín wọn nígbà tí ó bá wà nínú olùkà rẹ̀), tàbí fáìlì .pfx / .p12 pẹ̀lú ọ̀rọ̀ aṣínà rẹ̀. \"Tẹ̀síwájú\".",
+                "Yan ìrísí ìfọwọ́sí. Lábẹ́ \"Ìdí àti ibi\" o lè kọ ìdí àti ibi tí o ti fọwọ́ sí: wọ́n ń wọ inú ìfọwọ́sí, àti sórí ojú-ewé tí ìrísí bá fi wọ́n hàn. Sàmì sí \"Tì ìwé náà pa lẹ́yìn ìfọwọ́sí\" tí kò bá yẹ kí ẹnikẹ́ni fọwọ́ sí i tàbí yí i padà lẹ́yìn rẹ. Fi \"Fi àkókò tí a gbẹ́kẹ̀lé kún un (àmì àkókò)\" sílẹ̀ ní àmì kí aláṣẹ kan lè jẹ́rìí ìgbà tí o fọwọ́ sí i.",
+                "\"Fọwọ́ sí\", lẹ́yìn náà yan ibi tí a ó fi fáìlì tí a fọwọ́ sí pamọ́ sí. Tókìnì yóò béèrè PIN rẹ̀ ní àkókò yìí."
+              ]
+            },
+            "Fáìlì tí a fọwọ́ sí ń ṣí dípò ìwé náà. Ètò yìí kì í pa ọ̀rọ̀ aṣínà tàbí PIN mọ́ láé.",
+            {
+              "note": "Ìfọwọ́sí tó péye (qualified) ni èyí tí a ṣe ní ọ̀nà yìí pẹ̀lú ìwé-ẹ̀rí tó péye, lórí káàdì tàbí tókìnì rẹ̀. Orí kọ̀ǹpútà rẹ ni a ti ń fọwọ́ sí; àmì àkókò àti àyẹ̀wò ìwé-ẹ̀rí rẹ nìkan ló ń lọ sórí ayélujára, àwọn àmì ìdánimọ̀ àti nọ́mbà ìtẹ̀léra ìwé-ẹ̀rí náà nìkan ni wọ́n sì ń fi ránṣẹ́, kì í ṣe ìwé náà láé."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Àwọn ìrísí ìfọwọ́sí",
+          "body": [
+            "Ìrísí kan ń sọ bí ìfọwọ́sí ìwé-ẹ̀rí ṣe ń rí lórí ojú-ewé. Pa ọ̀pọ̀ mọ́ lábẹ́ orúkọ tìrẹ: ọ̀kan fún fífọwọ́ sí fún ilé-iṣẹ́, ọ̀kan fún fífọwọ́ sí ní orúkọ ara rẹ.",
+            {
+              "points": [
+                "Àwòrán: kò sí, láti inú fáìlì (èdìdì, ìfọwọ́sí tí a ṣàyẹ̀wò) tàbí tí a yà níbí.",
+                "Ọ̀rọ̀ tó ń hàn: orúkọ, ọjọ́, ìdí, ibi, ọ̀kọ̀ọ̀kan pẹ̀lú tàbí láìsí àkọlé rẹ̀.",
+                "Àwọn ìlà tìrẹ nísàlẹ̀ orúkọ, bíi ipò iṣẹ́ àti ilé-iṣẹ́.",
+                "\"Ọ̀rọ̀ àṣà\" máa ń wà níbẹ̀ nígbà gbogbo: ẹni tó fọwọ́ sí àti ìgbà wo."
+              ]
+            },
+            "Nínú fèrèsé ìfọwọ́sí: \"Tuntun…\", \"Ṣàtúnṣe…\", \"Pa á rẹ́\". Èyí tí a lò kẹ́yìn ni a ó kọ́kọ́ fi hàn. A ń pa àwọn ìrísí mọ́ sórí kọ̀ǹpútà yìí."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Ọ̀pọ̀ ìfọwọ́sí, àti títì pa",
+          "body": [
+            "Ọ̀pọ̀ ènìyàn lè fọwọ́ sí ìwé kan, ọ̀kan tẹ̀lé òmíràn. Ṣí fáìlì tí a fọwọ́ sí kí o sì fọwọ́ sí i láìyí nǹkan kan padà: a ó fi ìfọwọ́sí rẹ kún ìparí fáìlì, àwọn ti tẹ́lẹ̀ yóò sì ṣì wúlò.",
+            "\"Tì ìwé náà pa lẹ́yìn ìfọwọ́sí\" (ó wà ní pípa àyàfi tí o bá sàmì sí i) ń ti ìwé náà pa: kò sí ẹni tó lè fọwọ́ sí i lẹ́yìn rẹ, a kò sì gbọ́dọ̀ yí nǹkan kan padà mọ́. A kò lè dá a padà.",
+            {
+              "note": "Tí o bá yí ìwé tí a ti fọwọ́ sí padà kí o tó tún fọwọ́ sí i, a gbọ́dọ̀ kọ ọ́ ní tuntun, a ó sì fi àwọn ìfọwọ́sí ti tẹ́lẹ̀ sílẹ̀. Fèrèsé ìfọwọ́sí yóò kìlọ̀ fún ọ: láti pa wọ́n mọ́, tún ṣí fáìlì náà kí o sì fọwọ́ sí i láìyí nǹkan kan padà."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Àwọn àmì àkókò",
+          "body": [
+            "Àmì àkókò ni ọ̀rọ̀ tí aláṣẹ àmì àkókò kan fọwọ́ sí nípa ìgbà tí nǹkan kan wà. Bí kò bá sí i, àkókò inú ìfọwọ́sí ń wá láti inú aago kọ̀ǹpútà ẹni tó fọwọ́ sí i, èyí tí ẹnikẹ́ni lè yí; àmì àkókò ń fi ìṣẹ́jú náà hàn dájú, ó sì ń jẹ́ kí ìfọwọ́sí ṣì ṣeé fìdí múlẹ̀ lẹ́yìn tí ìwé-ẹ̀rí bá dópin (PAdES B-T).",
+            {
+              "points": [
+                "Àwọn ìfọwọ́sí ń gba àmì àkókò nígbà tí a bá sàmì sí \"Fi àkókò tí a gbẹ́kẹ̀lé kún un (àmì àkókò)\" nínú fèrèsé ìfọwọ́sí. Ètò → Àwọn ìfọwọ́sí ń sọ bóyá yóò bẹ̀rẹ̀ ní àmì, níbí àti nínú iṣẹ́ ọ̀pọ̀ fáìlì.",
+                "Fọwọ́ sí → Fi àmì àkókò kún ń fún gbogbo ìwé náà ní àmì àkókò tirẹ̀, láìsí ìwé-ẹ̀rí: ó ń fi hàn pé ìwé náà wà, gẹ́lẹ́ bí ó ṣe rí, ní àkókò náà. A ó fi pamọ́ gẹ́gẹ́ bí fáìlì tuntun; àwọn ìfọwọ́sí tí fáìlì náà ní ṣì wúlò."
+              ]
+            },
+            "Aláṣẹ náà ni ti DigiCert (http://timestamp.digicert.com), tí ó jẹ́ ọ̀fẹ́, tí Adobe Reader àti Windows sì gbẹ́kẹ̀lé; a lè ṣètò òmíràn nínú Ètò → Àwọn ìfọwọ́sí. Àmì ìdánimọ̀ (SHA-256) nìkan ni ó ń gbà, kì í ṣe ìwé náà láé, a sì nílò ìsopọ̀ ayélujára. Nígbà tí ìfọwọ́sí bá gba àmì àkókò, a tún ń béèrè lọ́wọ́ ẹni tó fún ọ ní ìwé-ẹ̀rí rẹ bóyá ìwé-ẹ̀rí náà ṣì wúlò, a sì ń tọ́jú ìdáhùn rẹ̀ sínú ìfọwọ́sí náà (ìfìdímúlẹ̀ fún ìgbà pípẹ́): bẹ́ẹ̀ ni Adobe Reader lè fi ìfọwọ́sí náà hàn gẹ́gẹ́ bí èyí tó wúlò, nísinsìnyí àti lẹ́yìn tí ìwé-ẹ̀rí náà bá dópin.",
+            {
+              "note": "Tí a kò bá lè dé ọ̀dọ̀ aláṣẹ náà, a kò ní fọwọ́ sí tàbí kọ nǹkan kan: tún gbìyànjú, tàbí yọ àmì kúrò lára àmì àkókò láti fọwọ́ sí láìsí i."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Ṣíṣàyẹ̀wò àwọn ìfọwọ́sí",
+          "body": [
+            "Fọwọ́ sí → Ṣàyẹ̀wò àwọn ìfọwọ́sí ń ṣe àtòjọ gbogbo ìfọwọ́sí ìwé-ẹ̀rí inú fáìlì náà: ẹni tó fọwọ́ sí, ẹni tó fún ìwé-ẹ̀rí jáde, ìgbà wo, ìdí àti ibi, àti",
+            {
+              "points": [
+                "bóyá ìwé náà kò yí padà láti ìgbà ìfọwọ́sí yẹn (ìfọwọ́sí míì tí a fi kún un lẹ́yìn náà kò ka sí àyípadà);",
+                "bóyá ìfọwọ́sí náà ti ìwé náà pa;",
+                "bóyá kọ̀ǹpútà yìí gbẹ́kẹ̀lé aláṣẹ tó wà lẹ́yìn ìwé-ẹ̀rí náà, àti bóyá ìwé-ẹ̀rí náà wúlò lónìí;",
+                "àkókò tí àmì àkókò rẹ̀ jẹ́rìí, àti aláṣẹ wo, tí ó bá ní ọ̀kan. Àmì àkókò gbogbo ìwé náà wà nínú àtòjọ pẹ̀lú, pẹ̀lú àyẹ̀wò tirẹ̀."
+              ]
+            },
+            "Àyẹ̀wò náà jẹ́ ti fáìlì bí a ṣe fi pamọ́ kẹ́yìn, a sì ń ṣe é lórí kọ̀ǹpútà yìí, láìlọ sórí ayélujára. Títẹ ìfọwọ́sí kan lójú ìwé máa ṣí àkójọ yìí sí ibi ìfọwọ́sí náà. Lábẹ́ ìfọwọ́sí kọ̀ọ̀kan, “Fi ìwé-ẹ̀rí hàn” máa ṣí fèrèsé Windows ti ìwé-ẹ̀rí náà (ẹ̀wọ̀n rẹ̀ àti gbogbo àlàyé rẹ̀; láti ibẹ̀, “Fi Ìwé-ẹ̀rí Sórí Ẹ̀rọ” máa jẹ́ kí kọ̀ǹpútà yìí gbẹ́kẹ̀lé ìwé-ẹ̀rí kan tí o mọ̀), “Fìdí rẹ̀ múlẹ̀” sì máa béèrè lórí ayélujára lọ́wọ́ ẹni tó fún ìwé-ẹ̀rí náà jáde, nígbà tí o bá tẹ̀ ẹ́ nìkan, bóyá a ti fagi lé ìwé-ẹ̀rí náà."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Àwọn irinṣẹ́ míì",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Dídá ọ̀rọ̀ mọ̀ (OCR)",
+          "body": [
+            "Àwọn irinṣẹ́ míì → Dá ọ̀rọ̀ mọ̀ (OCR) ń ka àwọn ọ̀rọ̀ inú àwọn ojú-ewé tí a ṣàyẹ̀wò (scan), ó sì ń kọ wọ́n sínú àwọn ojú-ewé láìhàn, kí a lè wá nǹkan nínú ìwé náà, kí a sì ṣe ẹ̀dà ọ̀rọ̀ rẹ̀ tàbí kó o jáde. Bí àwọn ojú-ewé ṣe rí kò ní yí padà.",
+            "Sàmì sí àwọn èdè tí a fi kọ àwọn ojú-ewé nìkan; àwọn ojú-ewé tó ti ní ọ̀rọ̀ yóò wà bí wọ́n ṣe wà.",
+            {
+              "note": "Ẹ̀rọ Tesseract ló ń kàwé, ètò ọ̀fẹ́ tí a ń fi sórí kọ̀ǹpútà lọ́tọ̀. Láìsí i, fèrèsé náà ń fi àṣẹ tí a fi ń fi í sí i lórí Windows hàn."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Sísọ ìwé di kékeré",
+          "body": [
+            "Àwọn irinṣẹ́ míì → Sọ di kékeré ń fi ìwé náà pamọ́ gẹ́gẹ́ bí fáìlì tó kéré nípa fífún àwọn fọ́tò àti àwòrán tí a ṣàyẹ̀wò rẹ̀ ní píkísẹ́lì díẹ̀. Ìpele mẹ́ta ló wà; ọ̀rọ̀ àti àwòrán-ìlà ṣì mọ́ kedere bí wọ́n ṣe wà. Ìwé tí kò ní àwòrán púpọ̀ kò ní kéré púpọ̀."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Ṣíṣe àfiwé ìwé méjì",
+          "body": [
+            "Àwọn irinṣẹ́ míì → Ṣe àfiwé àwọn ìwé: yan PDF míì. A ó fi àwọn méjèèjì hàn lẹ́gbẹ̀ẹ́ ara wọn, ní ojú-ewé kọ̀ọ̀kan, pẹ̀lú àmì lórí àwọn ojú-ewé tí ọ̀rọ̀ wọn yàtọ̀ àti àtòjọ àwọn ìlà tí ọ̀kọ̀ọ̀kan nìkan ní."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Iṣẹ́ ọ̀pọ̀ fáìlì: ọ̀pọ̀ fáìlì lẹ́ẹ̀kan náà",
+          "body": [
+            "Àwọn irinṣẹ́ míì → Iṣẹ́ ọ̀pọ̀ fáìlì ń ṣe ohun kan náà sí ọ̀pọ̀ fáìlì, nínú táàbù tirẹ̀. Àbájáde kọ̀ọ̀kan jẹ́ fáìlì tuntun. Bí àwọn àbájáde bá máa gba ipò àwọn fáìlì tó ti wà nínú fódà (àwọn fáìlì tìrẹ, nígbà tí wọ́n bá lọ sí fódà wọn láìsí nǹkan tí a fi kún orúkọ wọn), a ó kọ́kọ́ bi ọ́ bóyá o fẹ́ rọ́pò wọn, fò wọ́n, tàbí fagilé. A máa rọ́pò fáìlì kan nígbà tí àbájáde rẹ̀ bá parí nìkan; èyí tó ṣí sílẹ̀ (nínú táàbù kan níbí tàbí nínú ètò míì) ni a fi sílẹ̀ bó ṣe wà, a sì sàmì sí i pé kò tíì parí.",
+            {
+              "steps": [
+                "Ní òsì, fi àwọn fáìlì kún un: \"Fi àwọn fáìlì kún\", \"Fi fódà kan kún\" (pẹ̀lú àwọn fódà tó wà nínú rẹ̀), tàbí jù wọ́n sílẹ̀ síbẹ̀.",
+                "Ní ọ̀tún, sàmì sí ohun tí a ó ṣe. Gbogbo fáìlì ló ń di PDF lọ́nàkọ́nà; yàtọ̀ sí ìyẹn o lè yí àwọn ojú-ewé, dá ọ̀rọ̀ mọ̀, fi orí-ewé àti ìsàlẹ̀-ewé, àmì-omi tàbí nọ́ńbà ojú-ewé kún un, sọ àwọn fáìlì di kékeré, fi ìwé-ẹ̀rí fọwọ́ sí wọn, tàbí kọ wọ́n jáde ní fọ́ọ̀mátì míì. Àwọn nọ́ńbà ń fi ìtẹ̀léra hàn.",
+                "Yan ohun tí a ó kọ: fáìlì kan fún ọ̀kọ̀ọ̀kan, tàbí gbogbo rẹ̀ nínú PDF kan (ní ìtẹ̀léra àtòjọ), àti fódà tí àwọn àbájáde yóò lọ. Nígbà tí gbogbo fáìlì bá wá láti fódà kan, a ó yan fódà náà fún ọ títí o fi yan òmíràn; bí kò bá rí bẹ́ẹ̀, fódà tí o yàn kẹ́yìn ni.",
+                "\"Bẹ̀rẹ̀\". Fáìlì kọ̀ọ̀kan ń fi bí ó ṣe lọ sí hàn; a lè dá iṣẹ́ náà dúró láàárín àwọn fáìlì."
+              ]
+            },
+            {
+              "points": [
+                "Àwọn ìlànà: \"Fi pamọ́ gẹ́gẹ́ bí ìlànà\" ń pa gbogbo ohun tí o yàn mọ́ (àyàfi àwọn fáìlì àti ọ̀rọ̀ aṣínà èyíkéyìí) lábẹ́ orúkọ kan, láti tún ṣètò rẹ̀ pẹ̀lú yíyàn kan ṣoṣo.",
+                "\"Pa àwọn fódà àwọn fáìlì mọ́ nínú àwọn àbájáde\" ń tún àwọn fódà inú fódà tí a fi kún un kọ́.",
+                "\"Kọ ìròyìn iṣẹ́ náà\" ń fi fáìlì ọ̀rọ̀ kan sílẹ̀ lẹ́gbẹ̀ẹ́ àwọn àbájáde tó ń sọ ohun tí a kọ àti ohun tí kò yọrí.",
+                "PDF tí a kàn fọwọ́ sí nìkan ń pa àwọn ìfọwọ́sí tó ní mọ́; tí a bá ṣe nǹkan míì sí i nínú iṣẹ́ kan náà, a ó kọ ọ́ ní tuntun, a ó sì fi wọ́n sílẹ̀."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ètò",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Ètò PDF Organizer",
+          "body": [
+            "Fáìlì → Ètò (tàbí Ètò ní ọ̀wọ́ ẹ̀gbẹ́, lẹ́yìn náà PDF Organizer). A lè dá ètò kọ̀ọ̀kan padà fúnra rẹ̀, tàbí gbogbo wọn lẹ́ẹ̀kan.",
+            {
+              "points": [
+                "Nígbà tí ìwé kan bá ṣí: bí ìwé yóò ṣe tóbi tó nígbà tó bá ṣí, yíyí lọ tàbí ojú-ewé kan lẹ́ẹ̀kan, bóyá a ó fi àwòrán kékeré hàn tàbí a kò ní fi hàn.",
+                "Ẹyọ ìwọ̀n, ọ̀pá-ìwọ̀n àti àwọ̀n ìlà: ẹyọ ìwọ̀n (mìlímítà, íǹṣì, pọ́íǹtì), ọ̀pá-ìwọ̀n, àwọ̀n ìlà àti ìjìnnà láàárín àwọn ìlà rẹ̀.",
+                "Títẹ̀ jáde: bébà, ìdojúkọ àti ìwọ̀n tí fèrèsé títẹ̀ jáde ń bẹ̀rẹ̀ pẹ̀lú.",
+                "Ọ̀pá irinṣẹ́ kíákíá: àwọn bọ́tìnì tí ọ̀wọ́ tó wà lókè àwọn ojú-ewé ní.",
+                "Orúkọ àwọn ìwé tuntun: àwọn àpẹẹrẹ fún àwọn ojú-ewé tí a yọ jáde, àwọn ìwé tuntun àti PDF tí iṣẹ́ ọ̀pọ̀ fáìlì ń kó ọ̀pọ̀ fáìlì jọ sí.",
+                "Àwọn ìfọwọ́sí: bóyá \"Fi pamọ́\" yóò béèrè kí ó tó kọ sórí fáìlì tí a ti fọwọ́ sí.",
+                "Àwọn ọ̀nà-àbùjá àtẹ̀wé: tẹ àwọn bọ́tìnì àṣẹ kan, lẹ́yìn náà tẹ àwọn tuntun."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Nípa PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Nípa PDF Organizer",
+          "body": [
+            "PDF Organizer ni áàpù PDF ti Syntelab Creative: ó ń ka àwọn ìwé PDF, ó ń tò àwọn ojú-ewé wọn ó sì ń pa wọ́n pọ̀, ó ń kọ̀wé ó sì ń ya àwòrán sórí wọn, ó ń kún fọ́ọ̀mù ó sì ń ṣe fọ́ọ̀mù, ó ń fi ìwé-ẹ̀rí fọwọ́ sí ó sì ń ṣàyẹ̀wò àwọn ìfọwọ́sí, ó sì ń ṣe ohun kan náà sí ọ̀pọ̀ fáìlì lẹ́ẹ̀kan náà.",
+            "Ó ṣẹ̀ṣẹ̀ dé, àwọn kan lára ohun tó ń ṣe sì jẹ́ ìgbésẹ̀ àkọ́kọ́. Níbi tí kò bá ti tó fún àwọn ìwé rẹ, sọ fún wa nípasẹ̀ Ìrànlọ́wọ́ → Èsì: báyìí ni a ó ṣe mọ ohun tí a ó ṣiṣẹ́ lé lórí."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Ohun tí a fi kọ́ PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Kíka, yíya àwòrán àti kíkọ PDF: MuPDF.",
+                "Dídá ọ̀rọ̀ mọ̀ (OCR): Tesseract, tí a bá ti fi í sórí kọ̀ǹpútà.",
+                "Ṣíṣí ìwé ọ́fíìsì: Word, Excel àti PowerPoint, tàbí LibreOffice, èyí tí a bá fi sí i.",
+                "Fífi ojú-ewé ayélujára pamọ́ gẹ́gẹ́ bí PDF: aṣàwákiri tó wà lórí kọ̀ǹpútà.",
+                "Fífi ìwé-ẹ̀rí fọwọ́ sí: àwọn iṣẹ́ ìwé-ẹ̀rí ti Windows; a ń kọ àwọn ìfọwọ́sí bí ìlànà PAdES ṣe béèrè."
+              ]
+            },
+            "Ohun tí ó ń pín pẹ̀lú ìyókù ètò náà wà lábẹ́ \"Nípa Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ohun tí PDF Organizer kò tíì lè ṣe",
+          "body": [
+            {
+              "points": [
+                "Ẹgbẹ́ ètò ọ́fíìsì tó wà lórí kọ̀ǹpútà ni ó ń ṣí àwọn ìwé ọ́fíìsì; láìsí Word, Excel, PowerPoint tàbí LibreOffice, a kò lè ṣí wọn. A ń ṣiṣẹ́ lórí ẹ̀rọ ìyípadà tiwa: wo \"Ohun tí a ń ṣiṣẹ́ lé lórí\".",
+                "Dídá ọ̀rọ̀ mọ̀ nílò ẹ̀rọ Tesseract, tí a ń fi sí i lọ́tọ̀.",
+                "Ọ̀rọ̀ ìwé fúnra rẹ̀ ni a ń yí padà ní ìlà kan lẹ́ẹ̀kan; àwọn ìpínrọ̀ kì í tún ara wọn tò.",
+                "A kò lè gbé àwọn àwòrán tí a tẹ̀ pẹ̀lú íǹkì mẹ́rin (CMYK) láti sún wọn.",
+                "“Fìdí rẹ̀ múlẹ̀” ń sọ bóyá a ti fagi lé ìwé-ẹ̀rí kan lónìí, kì í ṣe ìgbà tí a fagi lé e.",
+                "Fífi ìwé-ẹ̀rí fọwọ́ sí ń ṣiṣẹ́ lórí Windows fún báyìí; lórí Linux àti macOS, yóò dé nínú ẹ̀yà tó ń bọ̀."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

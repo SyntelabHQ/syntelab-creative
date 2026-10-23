@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--sc-bg);
+  color: var(--sc-text);
+  font-family: var(--sc-font);
+  font-size: var(--sc-font-size);
+  line-height: 1.45;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--sc-accent);
+}
+
+/*
+ * An app's color on small things. The element with `data-app-ink` carries
+ * `--app-color` and its lighter tints; it and its children draw with:
+ * - `--app-ink`: the color as ink on a plain surface (the dark themes take it
+ *   from the tints);
+ * - `--app-tile` and `--app-tile-ink`: a small icon of the app. On light
+ *   themes the icon itself is in the app's color; on dark ones, where that
+ *   color is too dark to draw with, it is white on a square of the color, as
+ *   on the cards of the Start screen.
+ */
+[data-app-ink] {
+  --app-ink: var(--app-color);
+  --app-tile: transparent;
+  --app-tile-ink: var(--app-color);
+}
+
+:root[data-theme='dark'] [data-app-ink] {
+  --app-ink: var(--app-color-on-dark, var(--app-color));
+  --app-tile: var(--app-color);
+  --app-tile-ink: #ffffff;
+}
+
+:root[data-theme='dark'][data-tone='gray'] [data-app-ink] {
+  --app-ink: var(--app-color-on-dark-gray, var(--app-color));
+}
+
+:focus-visible {
+  outline: 2px solid var(--sc-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

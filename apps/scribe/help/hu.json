@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Szövegek és fájlok",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "A szerkesztő",
+          "body": [
+            "A Scribe egyszerű szövegek szerkesztője, mellette az eszközeivel. Minden szövegnek saját füle van; a szöveg középen, az eszközpanel mellette, alatta pedig egy adatsor.",
+            "A Scribe megnyitásakor először azt kérdezi, mit szeretne tenni: szavakat számlálni, keresni és cserélni, ismétlődéseket eltávolítani, két szöveget összehasonlítani, sorokat rendezni, szöveget megfordítani, töltőszöveget vagy véletlenszerű szöveget írni. Minden választás megnyitja a szöveget, mellette a hozzá tartozó eszközzel; az „Üres szöveg” csak a szöveget nyitja meg, alatta pedig a legutóbb megnyitott szövegek szerepelnek.",
+            {
+              "points": [
+                "Fájl → Új szöveg (Ctrl+N) egy üres szöveget indít.",
+                "Fájl → Megnyitás (Ctrl+O): egy vagy több fájlt nyit meg, mindegyiket saját fülön. Minden szöveget tartalmazó fájl megnyílik: .txt, .md, .csv, .log, .srt, forráskód és egyebek.",
+                "Szerkesztés → Visszavonás (Ctrl+Z) és Újra (Ctrl+Y): végigmegy mindenen, ami a szöveggel történt; egy eszköz vagy egy recept egy lépésnek számít.",
+                "Szerkesztés → Keresés és csere (Ctrl+F): sávot nyit a szerkesztőben, amellyel egyik egyezésről a következőre léphet.",
+                "Szerkesztés → Összes kijelölése (Ctrl+A)."
+              ]
+            },
+            "A szöveg alatti sor mutatja, hol van a kurzor, mennyi van kijelölve, a sorok, szavak és karakterek számát, a fájl kódolását és a sorvégek típusát.",
+            "Az ablakba húzott fájlok is megnyílnak, mindegyik új szövegként, a fájl nevével, kódolásával és sorvégeivel. A program megkapja a behúzott fájl tartalmát, de azt nem, hogy hol van a lemezen, ezért mentéskor megkérdezi a helyet; a 64 MB-nál nagyobb fájlokat a Fájl → Megnyitás paranccsal nyissa meg.",
+            "Egy új szöveg, amíg üres, felsorolja a legutóbb megnyitott szövegeket: kattintson egyikre a megnyitásához. A „Lista törlése” kiüríti a listát; a lista csak ezen a számítógépen tárolódik."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Mentés és Mentés másként",
+          "body": [
+            "Amíg nem ment, semmi sem változtat a lemezen lévő fájlon. A fülön lévő pont jelzi, hogy a szövegben olyan változások vannak, amelyek még nincsenek a fájlban; egy ilyen fül bezárása előtt a program rákérdez.",
+            {
+              "points": [
+                "Mentés (Ctrl+S) felülírja a fájlt a szöveggel. Egy új szöveg esetén a program megkérdezi a mentési helyet.",
+                "A Mentés másként (Ctrl+Shift+S) egy új fájlba írja a tartalmat, amely ezután átveszi a fül helyét, miközben minden visszavonható művelet megmarad; a régi fájl változatlan marad."
+              ]
+            },
+            "A fájl vagy teljes egészében íródik ki, vagy egyáltalán nem: ha az írás nem sikerül, a korábbi fájl megmarad.",
+            {
+              "note": "A fájl úgy mentődik, ahogy megnyitották: ugyanazzal a kódolással, ugyanazokkal a sorvégekkel. A Windowson és a Linuxon írt szöveg is olyan marad, amilyen volt."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kódolások és sorvégek",
+          "body": [
+            "A kódolás az a mód, ahogyan a betűk bájtokként tárolódnak. A Scribe azt olvassa ki, amit a fájl saját magáról mond, és ha nem mond semmit, kikövetkezteti. Ma a legtöbb fájl UTF-8; a régebbi közép-európai fájlok gyakran windows-1250 kódolásúak.",
+            {
+              "points": [
+                "Hibásan megjelenő betűk (Ã£ az ă helyett, vagy négyzetek): Fájl → „Újra betöltés más kódolással”, majd válassza ki azt a kódolást, amellyel a fájlt írták.",
+                "Más kódolással való mentéshez válassza ki azt a szöveg alatti sorban, majd mentsen. Ha a szövegben olyan betűk vannak, amelyeket ez a kódolás nem tud leírni, a Scribe megmondja, melyek ezek, és semmit sem ír ki.",
+                "A sorvégeket (Windows CRLF, Linux és macOS LF, régi Mac CR) ugyanitt lehet módosítani. Ha egy fájlban vegyes sorvégek vannak, a program ezt jelzi; mentéskor minden sora ugyanolyan sorvéget kap."
+              ]
+            },
+            "Az új szövegek kezdő beállításait a Beállításoknál lehet meghatározni."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "A szöveg megjelenítése",
+          "body": [
+            {
+              "points": [
+                "A Nézet menüben minden kapcsoló: ha be van kapcsolva, látható; ha ki, akkor nem.",
+                "Szöveg: Hosszú sorok törése (Alt+Z) – az ablaknál hosszabb sor lent folytatódik, a szöveg sorai pedig megmaradnak; Sorszámok; Eredmény a szöveg mellett.",
+                "A szöveg mellett: Eszközök (Ctrl+T), Receptek, Statisztika. A panel csak a bekapcsolt részeket jeleníti meg; ha egyik sincs bekapcsolva, nincs panel.",
+                "Megjelenített eszközök: minden eszközcsoport (Keresés és csere, Sorok, Kis- és nagybetűk, Tisztítás, Szöveg írása) kihagyható a panelből. A Formátum vagy az Eszközök menüből választott eszköz ettől függetlenül megjelenik: a hozzá tartozó rész és csoport magától visszatér.",
+                "A panel tetején lévő dupla nyíl a panelt egy keskeny sávvá hajtja össze a szélén, ahonnan minden része egy kattintásnyira van; a szélét húzva a panel szélesebb vagy keskenyebb lesz.",
+                "A betűket és azok méretét a Beállításokban lehet választani."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Nagyon nagy fájlok",
+          "body": [
+            "A 64 MB-nál nagyobb fájl nem kerül a szerkesztőbe: olyan fülön nyílik meg, amely egyszerre egy 500 soros oldalt mutat, menet közben olvasva a fájlból. A több gigabájtos fájlok is így nyílnak meg, annyi idő alatt, amennyi egyszeri végigolvasásukhoz kell.",
+            {
+              "points": [
+                "Az „Előző oldal” és a „Következő oldal” gombbal lapozhat; egy sorszámmal és az „Ugrás” gombbal bármelyik sorra ugorhat.",
+                "A keresés az egész fájlban keres, ugyanazokkal a beállításokkal, mint máshol, és felsorolja a találatokat: kattintson egyikre, hogy a sorára ugorjon. A hosszú lista részletekben érkezik, a „Továbbiak keresése” gombbal.",
+                "A „Recept futtatása a teljes fájlon” az eredményt egy választott mappába írja, ugyanazzal a névvel. Magát a fájlt itt semmi sem változtatja meg.",
+                "A „Teljes megnyitása a szerkesztőben” mégis a szerkesztőbe tölti a fájlt, hogy kézzel módosíthassa. Ez lassú lehet, és a fájl méretének többszörösét igényli a memóriából."
+              ]
+            },
+            {
+              "note": "A betűnként két bájtot használó (UTF-16) fájlok nem jeleníthetők meg oldalanként. A recept futás közben a teljes fájlt a memóriában tartja: a korlát a számítógép memóriája."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Eszközök",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Az eszközök működése",
+          "body": [
+            "Az eszközök csoportokba rendezve a szöveg melletti panelen találhatók. Kattintson egy eszközre a beállításai megtekintéséhez, majd az „Alkalmazza a szövegre” gombra.",
+            {
+              "points": [
+                "Ha van kijelölés, az eszköz csak a kijelölést módosítja; ha nincs, a teljes szöveget. A panel tetején látható, hogy melyiket.",
+                "A gomb alatt az eszköz jelzi, mit tett: hány sort vagy helyet módosított.",
+                "Minden eszköz egy lépés: a Visszavonás egészében visszavonja.",
+                "Minden eszköz elérhető a menükben és a parancskeresőben is: a szöveg formáját módosítók (sorok, kis- és nagybetűk, tisztítás) a Formátum menüben, a többi az Eszközök menüben. Ha onnan választ egyet, a panel az eszköz beállításainál nyílik meg."
+              ]
+            },
+            "A Formátum menüben az az eszköz, amely lényegében egyetlen választásból áll, a lehetőségeire bontva jelenik meg: a kis- és nagybetűk módosításának minden módja, minden idézőjelfajta, a szöveg megfordításának minden módja külön parancs, amely az adott lehetőséggel kiválasztva nyitja meg az eszközt. Ahol az ablak túl keskeny egy csoporthoz, a csoport egyetlen gombbá válik, amely a teljes listát nyitja meg.",
+            "Az eszközök helyileg, ezen a számítógépen futnak. Egyetlen szöveg sem hagyja el a gépet."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Az eredmény, alkalmazás előtt",
+          "body": [
+            "Amíg egy eszköz nyitva van, a szöveg mellett, az „Eredmény” panelen látható, mit adna. A szövegben semmi sem változik, amíg nem kattint az „Alkalmazza a szövegre” gombra. Az eredmény követi Önt: ha módosít egy beállítást vagy a szöveget, újra elkészül.",
+            {
+              "points": [
+                "A szöveg és az eredmény egymás mellett állnak, mindegyik egy azonos magasságú fejléc alatt, így azonos sorok azonos magasságban kezdődnek; együtt görgetődnek (a lánc gomb kikapcsolja ezt).",
+                "A változó sorok meg vannak jelölve, a sor változó része sötétebben; a csak elmozduló soroknak és az új soroknak saját színük van. A módosuló vagy eltávolítandó sorok az Ön szövegében is meg vannak jelölve.",
+                "A nevek alatt: számokban látható, mi történne — módosított, mozgatott, új és eltávolított sorok; sorok és karakterek a módosítás előtt és után.",
+                "Az eredmény alatt: az eltávolítandó sorok. Kattintson egyikre, hogy a szövegben odaugorjon.",
+                "Az eredmény kis gombjai: másolás, megnyitás új szövegként, összehasonlítás a szöveggel egy fülön, együttes görgetés, az eredmény a szöveg alá helyezése mellé helyett, elrejtés. A szövegnek saját gombjai vannak: visszavonás, újra, másolás, beillesztés a helyére, összes kijelölése, törlés.",
+                "Húzza a sávot a kettő között, hogy az egyiknek több helyet adjon; egy dupla kattintás újra egyenlővé teszi őket."
+              ]
+            },
+            "Az „Alkalmazza a szövegre” után az Eredmény panel ezt jelzi („Alkalmazva. A bal oldali szöveg már az eredmény.”), és felkínálja a Visszavonást, valamint az „Összehasonlítás az eredetivel” lehetőséget, amely ugyanazt az előtte–utána összehasonlítást nyitja meg. Amint módosítja a szöveget vagy az eszköz egy beállítását, ismét eredményt mutat.",
+            {
+              "note": "A Nézet → „Eredmény a szöveg mellett” ki- és bekapcsolja a panelt. Nagyon hosszú szövegnél (kétmillió karakter fölött) előre semmi sem jelenik meg: alkalmazza az eszközt, és a Visszavonás visszavonja."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Csere mindenhol",
+          "body": [
+            "Egyszerre lecseréli mindenhol, ahol a keresett szöveg előfordul. Miközben beírja, mit keres, a Scribe jelzi, hány helyen található, és megjelöli ezeket a szövegben, így az alkalmazás előtt látja, mi fog változni.",
+            {
+              "points": [
+                "„Reguláris kifejezés”: a keresett szöveg egy minta. A „Csere erre” mezőben a $1, $2… azt jelöli, amit a minta csoportjai találtak.",
+                "„Kis- és nagybetű számít”: az a és az A különböző betűk.",
+                "„Csak egész szavak”: a „macska” nem található meg a „macskaköröm” szóban.",
+                "„A cserélt szöveg nagybetűinek megtartása”: ha a „macska” szót „kutya” szóra cseréli, a „Macska” „Kutya”, a „MACSKA” pedig „KUTYA” lesz."
+              ]
+            },
+            {
+              "points": [
+                "„További lehetőségek” → „Kitöltés…”: a behelyezett szöveg tartalmazhat üres helyeket, amelyek minden egyes találatnál kitöltődnek. A {counter} 1, 2, 3… számozza ({counter:10} 10-től kezdődik, {counter:10:5} 5-es lépésekben halad); a {date} és a {time} a számítógépének dátumát és időpontját jelenti; a {uuid} egy azonosító; a {random} 8 véletlenszerű betű és szám ({random:12} esetén 12).",
+                "A keresett kifejezés alatt a Scribe azt is jelzi, hogy a találatok hány sorban szerepelnek, és hány különböző szövegről van szó."
+              ]
+            },
+            "A „Több csere egyszerre” párok listáját hajtja végre egy lépésben. Soronként egy párt írjon, így: mit keres => mit tesz a helyére. A párok sorban, az elsőtől az utolsóig hajtódnak végre, mindegyik azon, amit az előző meghagyott; ha a második fele üres, a keresett szöveg törlődik.",
+            {
+              "note": "Egy minta nem tudja lefagyasztani a programot: a feldolgozáshoz szükséges idő a szöveg hosszával növekszik, nem gyorsabban. Emiatt azok a minták nem érhetőek el, amelyek visszanéznek a már megtalált részre (\\1)."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Sorok",
+          "body": [
+            {
+              "points": [
+                "A sorok rendezhetők: betűik szerint, ahogy egy szótár teszi, a program nyelvén vagy egy választott nyelven (románul az ă az a után jön; a svéd az ä-t a z után teszi, a német az a mellé); betűk szerint, a bennük lévő számokat számként kezelve (file2 a file10 előtt); a sor elején álló szám szerint; hossz szerint; a szavak száma szerint; a sor elején álló dátum szerint (05.03.2024, 2024-03-05, órával vagy anélkül); internetcímek szerint; verziószámok szerint (1.2.10 az 1.2.9 után); címek szerint, ahol a kezdő névelő nem számít; egy Ön által megadott sorrend szerint (kicsi, közepes, nagy); vagy teljesen véletlenszerűen.",
+                "Azok a sorok, amelyeknél nincs mi szerint rendezni (nincs szám, nincs dátum, vagy az érték nem szerepel a megadott sorrendben), a végén maradnak, akármilyen irányban rendeződnek a többiek: a legkisebbtől vagy a legnagyobbtól kezdve.",
+                "További rendezési lehetőségek: összehasonlítás egy adott szótól vagy karaktertől kezdve, vagy egy táblázat egyik oszlopa szerint (megadva, mi választja el az oszlopokat); az első sor helyben tartása fejlécként; bekezdések rendezése sorok helyett; és előzetes rendrakás: a szélek levágása, az üres sorok és az ismétlődések törlése.",
+                "Ismétlődő sorok törlése: az ismétlődő sorok közül az első, az utolsó vagy egyik sem marad meg (ekkor csak az egyszer előforduló sorok maradnak). A nagybetűk, a sor körüli szóközök, a számjegyek, az írásjelek, valamint az elején vagy a végén adott számú karakter egyenként figyelmen kívül hagyható; az összehasonlítás korlátozható egy oszlopra vagy arra, amit egy minta talál. Az üres sorokat ugyanúgy kezeli, mint a többit: megtartja, törli vagy összevonja őket.",
+                "Ismétlődő sorok számlálása: minden sort egyszer hagy meg, előtte azzal, hányszor szerepelt – elöl a legtöbbször ismétlődőkkel, vagy a legkevesebbszer ismétlődőkkel, vagy előfordulási sorrendben.",
+                "Sorok megtartása vagy törlése: keres valamit minden sorban, és csak azokat a sorokat tartja meg, amelyekben szerepel, vagy csak azokat, amelyekben nem.",
+                "Sorok sorrendjének megfordítása; Sorok véletlenszerű rendezése.",
+                "Sorok számozása: a kezdő szám, ami utána áll, vezető nullák, hogy a számok egymás alá igazodjanak, üres sorok szám nélkül.",
+                "Üres sorok: töröljön mindet, vagy hagyjon egyet ott, ahol több volt.",
+                "Sorok összefűzése egy sorrá, a választott elválasztóval; Szétválasztás sorokra minden vesszőnél, pontosvesszőnél vagy bármi másnál. Ahol az elválasztót be kell írni (számozás, összefűzés, szétválasztás, számlálás), a \\t a tabulátort jelenti, amelyet nem lehet beírni a mezőbe."
+              ]
+            },
+            {
+              "note": "Az a beállítás, amely csak egy másikkal együtt számít, csak akkor jelenik meg: például az oszlop, ha oszlop szerint hasonlít össze. A ritkábban szükséges beállítások a „További lehetőségek” alatt vannak."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Kis- és nagybetűk",
+          "body": [
+            "Kis- és nagybetűk módosítása: mondatkezdő nagybetű, minden szó nagybetűvel, csupa nagybetű, csupa kisbetű, fordított, valamint a nevek kódban használt írásmódjai: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "A nagybetűk az adott ábécé szabályait követik, nem csak az angol nyelvét.",
+            "Az Irány csoportban a „Szöveg megfordítása” megfordítja minden sor betűit, vagy a szavak sorrendjét, vagy az egyes szavak betűit; a „Fejjel lefelé” úgy írja a szöveget, hogy az asztal túloldaláról lehessen olvasni, a „Tükörképként” pedig a bal és jobb oldallal rendelkező jeleket is felcseréli. A betűket úgy számolja, ahogy egy olvasó: az ékezetes betű egy betű marad."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Tisztítás",
+          "body": [
+            {
+              "points": [
+                "Szóközök tisztítása: több szóközből egy lesz; a sorok végi szóközök eltűnnek.",
+                "Sorvégi szóközök levágása: mindkét végén, csak az elején vagy csak a végén.",
+                "Idézőjelek: egyenes, angol, román, német vagy francia.",
+                "Ékezetek eltávolítása: az ă-ból a, az é-ből e lesz. Csak a latin és a görög ábécében, ahol a jel nélküli betű is ugyanaz a betű marad.",
+                "Román betűk javítása: a ş és ţ (cedillával, régebbi billentyűzetekkel írva) helyett a ș és ț (vesszővel) kerül be, amelyekkel a román nyelvben írnak.",
+                "Tabulátorok cseréje szóközökre és szóközök cseréje tabulátorokra, a választott tabulátorszélességgel.",
+                "HTML-címkék eltávolítása: a szövegbe beillesztett weboldal-forráskódhoz. A címkék, szkriptek és stílusok eltűnnek; az marad, amit egy olvasó látna. Ha egy oldalt a címéből szeretne lekérni, használja az alatta lévő eszközt: „Weboldal szövege”.",
+                "Weboldal szövege: írja be egy oldal címét (example.com/page), és válassza a „Szöveg lekérése” gombot. Amit egy olvasó azon az oldalon látna, az a kurzor helyére kerül, címkék, szkriptek és stílusok nélkül. Ez a Scribe egyetlen eszköze, amely az internetre csatlakozik, és csak akkor, ha Ön kéri: az oldalt a számítógépre telepített böngésző (Microsoft Edge vagy Google Chrome) kéri le, ablak nélkül, az Ön sütijei és bejelentkezései nélkül; maga a program semmit sem küld. A bejelentkezést igénylő oldal csak azt adja, amit egy idegen is látna."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Román ékezetek visszahelyezése",
+          "body": [
+            "Az ă, â, î, ș, ț nélkül gépelt román szöveget újra ezekkel írja.",
+            {
+              "steps": [
+                "Nyissa meg az eszközt a Tisztítás csoportban, és kattintson az „Alkalmazza a szövegre” gombra.",
+                "A szavak, amelyeknek csak egy helyes formája van, azonnal megváltoznak: a „stiu” lesz „știu”, az „informatii” lesz „informații”.",
+                "A többféleképpen olvasható szavak (fata, fată, fața, față) a gomb alatt jelennek meg, mindegyik a szövegbeli helyén. Kattintson mindegyiknél a helyes alakra.",
+                "Vagy alkalmazás előtt jelölje be a „Kétes szavaknál a valószínűbb alak automatikus kiválasztása” lehetőséget: ekkor nem kérdez semmit, és az eredményt át kell olvasni."
+              ]
+            },
+            "Ahol a környező szavak elegendő információt nyújtanak, a Scribe azok alapján dönt: az „o casa” lesz „o casă”, a „casa mea” változatlan marad, a „pentru ca” lesz „pentru că”.",
+            {
+              "note": "Ezt a Scribe számára készítették gyakori szavak listájából és azokból a végződésekből, amelyeket a román mindig ékezettel ír. Az ismeretlen szavak (ritka szavak, nevek) úgy maradnak, ahogy begépelték, a már ékezettel írt szavakhoz pedig sosem nyúl. Küldés előtt olvassa át az eredményt."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Szöveg írása: töltőszöveg és véletlenszerű szöveg",
+          "body": [
+            "A „Szöveg írása” csoport eszközei semmit sem módosítanak: írnak. Amit adnak, a kurzor helyére kerül, a kijelölés helyére.",
+            {
+              "points": [
+                "Töltőszöveg: bekezdések, mondatok, szavak, listák, címsorok vagy egy oldal részei (egy címsor, bekezdések, egy lista). Nyomdászlatinul (lorem ipsum), angolul, románul, irodai vagy konyhai szavakkal, vagy saját szavaival. További lehetőségek: rövid, közepes vagy hosszú mondatok; egyszerű szöveg, Markdown, HTML vagy JSON; a címsorok szintje; karakterkorlát (a szöveg egész szónál szakad meg, és így is mondatként végződik); kihagyandó szavak.",
+                "Kitalált adatok: nevek, e-mail-címek, telefonszámok, utcai címek, dátumok vagy számok, soronként egy, Romániából vagy angol nyelvű országokból. A „Sorok a saját mintám szerint” minden sort úgy ír, ahogy Ön megadja, ahol a {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} és {row} a kitalált adatot jelöli – így egy pillanat alatt kap egy táblázatot, amelyen kipróbálhat valamit.",
+                "Véletlenszerű szöveg: jelszavak (betűk, számjegyek és jelek, mindegyikből legalább egy), betűk, számjegyek, hexadecimális értékek vagy azonosítók (UUID), egy vagy több sorban. A könnyen összetéveszthető karakterek (0 és O, 1, l és I) kihagyhatók.",
+                "A „További lehetőségek” alatti kezdőérték azt biztosítja, hogy ugyanarra a számra a töltőszöveg és a kitalált adatok mindig ugyanúgy jöjjenek ki; a 0 minden alkalommal újat ad."
+              ]
+            },
+            {
+              "note": "A jelszavak ezen a számítógépen készülnek, az operációs rendszer véletlenforrásából, és sehová sem kerülnek elküldésre. A kitalált e-mail-címek example.com-ra végződnek, ahová a levél senkihez sem jut el; egy véletlenszerűen előállított telefonszám valakié lehet, ezért ne hívja fel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Receptek",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "A műveletek mentése receptként",
+          "body": [
+            "A recept eszközök listája a beállításaikkal, amelyet egy név alatt megőrizhet, és egyetlen kattintással újra futtathat.",
+            {
+              "steps": [
+                "Alkalmazza a kívánt eszközöket a szövegre, a kívánt sorrendben.",
+                "Nyissa meg a „Receptek” részt a panel tetején: itt láthatók az alkalmazott eszközök.",
+                "Kattintson a „Mentés receptként” gombra, és adjon neki nevet.",
+                "Később nyissa meg a receptet, és válassza a „Futtatás a szövegen” lehetőséget: minden lépése végrehajtódik, és egyetlen Visszavonás mindet visszavonja."
+              ]
+            },
+            "A receptek ezen a számítógépen tárolódnak, és minden szövegnél elérhetőek."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Recept módosítása vagy új recept létrehozása",
+          "body": [
+            "Egy megnyitott receptnél a „Módosítás” megmutatja a nevét és a lépéseit. Minden lépés feljebb vagy lejjebb mozgatható, eltávolítható, és más beállításokat kaphat; eszközöket a lépések alatti listából lehet hozzáadni. A „Mentés” előtt semmi sem mentődik.",
+            "Az „Új recept” lépések nélküli receptet kezd, amelyet ugyanígy állíthat össze anélkül, hogy előbb egy szövegen alkalmazná az eszközöket.",
+            {
+              "note": "A szöveget író eszközök (töltőszöveg, véletlenszerű szöveg) nem lehetnek egy recept lépései: a recept szöveget módosít."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Recept futtatása fájlokon",
+          "body": [
+            {
+              "steps": [
+                "Nyissa meg a receptet, és a „Futtatás fájlokon” alatt adjon hozzá fájlokat vagy egy mappát (az almappáival együtt).",
+                "Válassza ki, hová kerüljenek az eredmények: egy másik mappába, így a fájlok változatlanok maradnak, vagy magukra a fájlokra.",
+                "Futtassa. A Scribe megmondja, hány fájlt írt ki, hányat nem kellett módosítani, és melyeket nem sikerült feldolgozni, és miért."
+              ]
+            },
+            "Minden fájl az eredeti kódolásával és sorvégeivel íródik ki. Másik mappába írva a fájlok megtartják a mappaszerkezetüket, és a már ott lévő fájlt soha nem írja felül.",
+            {
+              "note": "A fájlok közvetlen felülírása a Scribe-ban nem vonható vissza. Ha fontosak, készítsen róluk másolatot."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statisztika, összehasonlítás és mappák",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statisztika",
+          "body": [
+            "A panel tetején lévő „Statisztika” megmutatja, miből áll a szöveg vagy a kijelölés. Minden része összecsukható.",
+            {
+              "points": [
+                "Felül: szavak, karakterek szóközökkel és szóközök nélkül, mondatok, bekezdések, sorok, oldalak és a méret bájtban.",
+                "Idő: néma olvasáshoz, felolvasáshoz, gépeléshez és kézi íráshoz.",
+                "Szavak: hány különböző van (és az összes hányad része), betűk szónként, szótagok, a leghosszabb és a legrövidebb szó, valamint hogy az egyes hosszúságokból hány szó van.",
+                "Mondatok: szavak egy mondatban, rövid, közepes és hosszú mondatok száma, kijelentő, kérdő és felkiáltó mondatok száma, valamint a leghosszabb és a legrövidebb mondat.",
+                "Olvashatóság: egy érték 0-tól (nagyon nehéz) 100-ig (nagyon könnyű), a szöveg nyelvéhez készült képlet alapján. Angol, német, spanyol, francia, olasz, holland, portugál és orosz nyelvekre léteznek képletek; olyan nyelv esetén, amelyre nincs, nem lesz érték, mivel egy másik nyelvre tervezett képlet félrevezetné.",
+                "Leggyakrabban előforduló kifejezések: a leggyakrabban használt szavak a szövegben való arányukkal, valamint a visszatérő szópárok és háromszavas csoportok.",
+                "Hely a szokásos határokban: hány karakter maradt még, vagy hánnyal lépi túl a határt egy cím, egy leírás, egy rövid bejegyzés és mások esetében."
+              ]
+            },
+            "A szavakat és mondatokat az egyes írásrendszerek szabályai szerint ismeri fel, így a kínai, a japán és a thai szöveget is megszámolja, pedig ezek nem tesznek szóközt a szavak közé. Az idők számításához használt sebességek és az egy oldalra jutó szavak száma a Beállításokban adható meg."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Két szöveg összehasonlítása",
+          "body": [
+            {
+              "points": [
+                "Eszközök → „Összehasonlítás másik szöveggel”: a szerkesztőben lévő szöveg egy beírt vagy beillesztett szöveg mellett.",
+                "Eszközök → „Összehasonlítás fájllal”: a szerkesztőben lévő szöveg, jelenlegi állapotában, egy Ön által választott fájl mellett.",
+                "Eszközök → „Két szöveg összehasonlítása”: két beírt vagy beillesztett szöveg egymás mellett.",
+                "Eszközök → „Két fájl összehasonlítása”."
+              ]
+            },
+            "A két szöveg egymás mellett jelenik meg. A csak az elsőben szereplő sorok eltávolítottként, a csak a másodikban szereplők hozzáadottként vannak jelölve, a módosult sorokban pedig az eltérő szavak vannak megjelölve. Csak az eltérések látszanak, néhány környező sorral; a nyilakkal egyik eltéréstől a következőig léphet.",
+            "A nagybetűk, a szóközök, az üres sorok, a számok és az írásjelek egyenként figyelmen kívül hagyhatók. Az „Egy oszlopban” az eltávolítottat a hozzáadott fölött mutatja, mindegyiket a saját jelével, egymás mellett helyett. A számok mellett a Scribe megadja, mennyire hasonlít a két szöveg: az egyező sorok arányát.",
+            "Egy szöveg azonnal megjelenik, amint kiválasztja, még a másik előtt. Húzza a két szöveg közötti sávot, hogy az egyik több helyet kapjon; amíg a szövegeket beírja, a mezők alatti sáv fel-le húzható, hogy a mezők vagy az összehasonlítás kapjon több helyet. Dupla kattintással a sáv visszaáll.",
+            "Ahol egymás után több sor módosult, mindegyik ahhoz a sorhoz kerül, amelyikre a leginkább hasonlít, így egy közöttük hozzáadott vagy eltávolított sor miatt nem tűnik úgy, hogy minden utána következő sor a következővé módosult.",
+            "Az „Írja be vagy illessze be a szövegeket” minden oszlop fölött egy mezőt jelenít meg; amit oda ír, azt írás közben hasonlítja össze, és bármelyik oldalra továbbra is választhat fájlt."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Keresés és csere mappában",
+          "body": [
+            {
+              "steps": [
+                "Eszközök → „Keresés mappában” (Ctrl+Shift+F), majd válassza ki a mappát. Az almappákban is keres.",
+                "Írja be, mit keres, ugyanazokkal a lehetőségekkel, mint a „Csere mindenhol” eszköznél. A „Fájltípusok” bizonyos kiterjesztésekre korlátozza a keresést (txt, md, csv…).",
+                "Minden találat a saját sorában jelenik meg, fájlonként. Kattintson egy sorra, hogy a fájl azon a helyen nyíljon meg.",
+                "Cseréhez: írja be az új szöveget, vegye ki a jelölést azokból a fájlokból, amelyeket érintetlenül hagyna, majd válassza a „Fájlok írása” lehetőséget."
+              ]
+            },
+            "Amíg nem kéri, semmi sem íródik ki, és akkor is csak a bejelölve hagyott fájlokba. Minden fájl az eredeti kódolásával és sorvégeivel íródik ki.",
+            {
+              "note": "A rejtett mappákat és a programok által feltöltött mappákat (.git, node_modules) kihagyja, hacsak nem kéri őket. A nem szöveges fájlokat mindig kihagyja."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Beállítások",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "A Scribe beállításai",
+          "body": [
+            "A Fájl → Beállítások a program beállításait a Scribe részénél nyitja meg.",
+            {
+              "points": [
+                "Szerkesztő: fix szélességű vagy a program saját betűtípusa, a betűméret, a sortörés, a sorszámok, valamint hogy egy eszköz eredménye megjelenjen-e az alkalmazása előtt.",
+                "Új szöveg: milyen sorvégeket kap, és hogy a fájlja bájtsorrend-jelzővel (BOM) kezdődjön-e.",
+                "Statisztika: az olvasás, a felolvasás, a gépelés és a kézírás sebessége, valamint hogy hány szó tesz ki egy oldalt.",
+                "Billentyűparancsok: a Scribe parancsainak billentyűi."
+              ]
+            },
+            "Minden beállításhoz tartozik egy gomb, amely visszaállítja azt a program eredeti értékére."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "A Scribe programról",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "A Scribe programról",
+          "body": [
+            "A Scribe a Syntelab Creative szövegalkalmazása: szerkesztő, a szöveg mellett az eszközeivel. Megmutatja, mit tenne egy eszköz, mielőtt megtenné, rendbe teszi és átrendezi a listákat, keres és cserél egy szövegben vagy egy egész mappában, összehasonlít két szöveget, megmutatja, miből áll egy szöveg, töltőszöveget és kitalált adatokat ír, és receptként megőrzi, amit gyakran csinál, hogy újra futtathassa.",
+            "Minden ezen a számítógépen történik. A szövegek méretére és számára nincs korlát szabva: a korlátot a számítógép memóriája és a mai technika lehetőségei jelentik.",
+            "A program új. Ahol nem elég jó az Ön szövegeihez, jelezze nekünk a Súgó → Visszajelzés menüpontban: így tudjuk, min dolgozzunk."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "A Scribe technológiai háttere",
+          "body": [
+            {
+              "points": [
+                "Szerkesztő: CodeMirror.",
+                "Kódolások olvasása és írása: encoding_rs, a chardetng segítségével pedig kitalálja azoknak a fájloknak a kódolását, amelyek nem adják meg.",
+                "Keresés és csere: a Rust regex könyvtára, amelynek mintái nem tudják lefagyasztani a programot.",
+                "Rendezés az egyes nyelvek szabályai szerint, valamint szavak és mondatok felismerése minden írásrendszerben: ICU4X, a Unicode könyvtár.",
+                "Szövegek összehasonlítása: a similar könyvtár.",
+                "Román ékezetek: a Scribe számára írt szólista és szabályok."
+              ]
+            },
+            "Amit a program többi részével közösen használ, azt „A Syntelab Creative névjegye” alatt találja."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Amire a Scribe még nem képes",
+          "body": [
+            {
+              "points": [
+                "A nagyon nagy fájlt oldalanként olvassa, és csak recepttel módosíthatja; kézi módosításhoz teljes egészében meg kell nyitni, ami memóriát igényel.",
+                "A román ékezetek visszaállítása a gyakori szavakat ismeri; a ritka szavak és a nevek úgy maradnak, ahogy begépelték.",
+                "Nincs helyesírás-ellenőrzés.",
+                "Itt nem lehet szöveget kinyerni PDF- vagy irodai dokumentumokból; ezeket a PDF Organizer nyitja meg.",
+                "A szerkesztő nem színezi a kódot vagy a Markdownt.",
+                "Az ablakba húzott fájl új szövegként nyílik meg: a program nem kapja meg, hol van a fájl, ezért mentéskor megkérdezi a helyet."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

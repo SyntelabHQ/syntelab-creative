@@ -1,0 +1,265 @@
+/* Find and replace in a folder: what to look for at the top, what was found under it. */
+.view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: var(--sc-surface);
+  text-align: start;
+}
+
+.top {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 20px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1fr);
+  gap: 12px;
+}
+
+@media (width < 900px) {
+  .fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.label {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.control {
+  min-height: var(--sc-control-height);
+  padding-inline: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.control:focus {
+  border-color: var(--sc-accent);
+  outline: none;
+}
+
+.folder {
+  flex: 1;
+  min-width: 120px;
+  min-height: var(--sc-control-height);
+  padding: 9px 12px;
+  overflow: hidden;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.flag input,
+.fileHead > input {
+  flex: none;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: var(--sc-accent);
+}
+
+.spring {
+  flex: 1;
+}
+
+.summary {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 10px 20px;
+  border-block-end: 1px solid var(--sc-border);
+  font-weight: 600;
+}
+
+.warning {
+  color: var(--sc-danger);
+  font-weight: 600;
+}
+
+.problem,
+.message {
+  margin: 0;
+  padding: 16px 20px;
+  color: var(--sc-danger);
+}
+
+.message {
+  margin: auto;
+  max-width: 560px;
+  color: var(--sc-muted);
+  font-size: 15px;
+  text-align: center;
+}
+
+.written {
+  flex: none;
+  padding: 10px 20px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-accent-soft);
+}
+
+.written p,
+.written ul {
+  margin: 0;
+}
+
+.written ul {
+  padding-inline-start: 20px;
+  color: var(--sc-danger);
+}
+
+.files {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 0;
+  margin: 0;
+  padding: 12px 20px 20px;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.file {
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+}
+
+/* A file: its name on a band, so it reads as the level above its lines. */
+.fileHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 6px 4px 12px;
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface-2);
+}
+
+.fileName {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 34px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-weight: 600;
+  text-align: start;
+  cursor: pointer;
+}
+
+.fileName bdi {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.under {
+  color: var(--sc-muted);
+  font-weight: 400;
+}
+
+.count {
+  flex: none;
+  color: var(--sc-muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.matches {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+}
+
+/* A line with a match: of one width, as in the editor. Text is never mirrored. */
+.match {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  padding: 2px 12px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font-family: 'Cascadia Mono', 'Cascadia Code', Consolas, ui-monospace, 'DejaVu Sans Mono', Menlo, monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: start;
+  cursor: pointer;
+  direction: ltr;
+}
+
+.match:hover {
+  background: var(--sc-surface-2);
+}
+
+.lineNumber {
+  flex: none;
+  min-width: 44px;
+  color: var(--sc-muted);
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.lineText {
+  min-width: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  unicode-bidi: plaintext;
+}
+
+.lineText mark {
+  border-radius: var(--sc-radius-xs);
+  background: color-mix(in srgb, var(--sc-highlight) 50%, transparent);
+  color: inherit;
+}
+
+.more {
+  padding: 4px 12px 4px 68px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}

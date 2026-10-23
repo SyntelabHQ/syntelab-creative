@@ -1,0 +1,27 @@
+/* Over the whole window; lets the drop through to the window, which is what listens. */
+.hint {
+  position: fixed;
+  z-index: 90;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--sc-accent) 12%, transparent);
+  pointer-events: none;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 420px;
+  padding: 28px 36px;
+  border: 2px dashed var(--sc-accent);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}

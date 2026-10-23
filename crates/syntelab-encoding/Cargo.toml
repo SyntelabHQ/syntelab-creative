@@ -1,0 +1,12 @@
+[package]
+name = "syntelab-encoding"
+description = "Telling how the bytes of a text are written (UTF-8, UTF-16, the old encodings), and reading them."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+# Reads and writes the encodings the web knows (Apache-2.0 / MIT / BSD-3-Clause).
+encoding_rs = "0.8"
+# Guesses the encoding of bytes that carry no mark (Apache-2.0 / MIT).
+chardetng = "0.1"

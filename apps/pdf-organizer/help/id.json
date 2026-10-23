@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Membuka dan membaca",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Membuka dokumen",
+          "body": [
+            "Berkas → Buka (Ctrl+O) membuka PDF di tab tersendiri. “Buka beberapa berkas sekaligus” membuka setiap berkas yang dipilih di tab masing-masing.",
+            "Berkas selain PDF juga terbuka sebagai halaman: gambar (PNG, JPEG, TIFF, WebP, dan banyak format lain), teks dan berkas web, e-book, XPS, serta dokumen Office. Dokumen semacam itu belum disimpan; perintah “Simpan” akan meminta lokasi penyimpanan.",
+            {
+              "note": "Dokumen Office (Word, Excel, PowerPoint, OpenDocument) dikonversi menggunakan Word, Excel, PowerPoint, atau LibreOffice—mana pun yang tersedia di komputer. Tanpa salah satu aplikasi tersebut, dokumen tidak dapat dibuka."
+            },
+            "Berkas yang diseret ke tab kosong akan dikumpulkan dalam penggabung dokumen; jika diseret ke dokumen, halamannya akan ditambahkan ke dokumen tersebut.",
+            "Di Windows, PDF Organizer dapat menjadi aplikasi yang membuka berkas PDF saat Anda mengekliknya dua kali: di halaman awalnya, “Jadikan default” membuka pengaturan Windows, tempat Anda memilih Syntelab Creative untuk berkas PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Melihat halaman",
+          "body": [
+            "Menu Tampilan mengatur cara dokumen ditampilkan; pengaturan ini tidak mengubah berkas.",
+            {
+              "points": [
+                "Zum: perbesar, perkecil, ukuran sebenarnya, sesuaikan halaman, sesuaikan lebar, atau sesuaikan tinggi. Tahan Ctrl dan putar roda mouse untuk mengatur zum.",
+                "Tampilan halaman: satu halaman atau dua halaman berdampingan, dengan atau tanpa halaman sampul, serta gulir semua halaman sebagai satu deretan panjang.",
+                "Panduan: penggaris dan kisi dengan satuan yang dipilih di Pengaturan.",
+                "“Tampilkan gambar mini”: halaman kecil di sisi dokumen. Klik salah satunya untuk membukanya; penanda dokumen juga ada di panel yang sama.",
+                "“Mode baca” menyembunyikan alat; “Mode layar penuh” menyembunyikan semuanya kecuali halaman. Tekan Escape untuk keluar dari kedua mode."
+              ]
+            },
+            "Bilah di atas halaman (bilah alat cepat) menampilkan nomor halaman, zum, dan tombol yang Anda pilih di Pengaturan."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Mencari teks",
+          "body": [
+            "Sunting → Cari dalam dokumen (Ctrl+F): ketik kata atau frasa. Lokasi yang ditemukan akan ditandai pada halaman; gunakan tombol panah untuk berpindah dari satu hasil ke hasil berikutnya.",
+            {
+              "note": "Dokumen hasil pemindaian berupa gambar halaman dan belum memiliki teks yang dapat dicari sampai teksnya dikenali. Lihat “Mengenali teks (OCR)”."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Properti dokumen",
+          "body": [
+            "Berkas → Properti dokumen menampilkan informasi yang tercatat di dalam dokumen: judul, penulis, tanggal pembuatan dan perubahan, jumlah halaman, serta ukuran berkas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menyimpan, mencetak, dan mengirim",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Simpan dan Simpan sebagai",
+          "body": [
+            "Perubahan Anda tidak memengaruhi berkas di disk sampai disimpan. Sebelum itu, setiap langkah dapat dibatalkan (Ctrl+Z) dan diulangi (Ctrl+Y).",
+            {
+              "points": [
+                "Simpan (Ctrl+S) menulis dokumen ke berkas yang sama.",
+                "Simpan sebagai (Ctrl+Shift+S) menyimpan dokumen ke berkas baru, lalu tab beralih ke berkas tersebut; berkas lama tetap seperti semula."
+              ]
+            },
+            "Jika berkas sedang dibuka oleh program lain, berkas itu tidak dapat ditimpa. Program akan memberi tahu Anda dan mempertahankan perubahan agar dapat disimpan dengan nama lain.",
+            {
+              "note": "Menyimpan perubahan dengan menimpa berkas bertanda tangan sertifikat akan menghapus tanda tangannya. Program akan bertanya lebih dahulu dan menawarkan “Simpan sebagai berkas baru”; pertanyaan ini dapat dinonaktifkan di Pengaturan → Tanda tangan."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Membuat PDF",
+          "body": [
+            "Berkas → Buat PDF akan membuat dokumen baru:",
+            {
+              "points": [
+                "dari satu atau beberapa berkas: gabungkan menjadi satu PDF atau buat satu PDF untuk setiap berkas;",
+                "dari halaman web di alamat yang Anda masukkan (halaman disimpan menggunakan browser yang terpasang di komputer);",
+                "dari isi papan klip;",
+                "dari halaman kosong dengan ukuran pilihan Anda."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Mengekspor ke format lain",
+          "body": [
+            "Berkas → Ekspor menyimpan dokumen dalam format lain: Word atau teks OpenDocument, teks biasa, halaman web, XML, gambar halaman (PNG, JPEG, TIFF, SVG), atau PostScript. Untuk gambar, Anda dapat memilih resolusinya.",
+            "Dokumen aslinya tetap berupa PDF; ekspor dibuat sebagai berkas baru.",
+            {
+              "note": "Teks hanya dapat diekspor jika dokumen memiliki teks. Kenali teks hasil pemindaian terlebih dahulu."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Mencetak",
+          "body": [
+            "Berkas → Cetak (Ctrl+P) mencetak dokumen sesuai susunannya saat ini, termasuk gambar atau anotasi yang Anda tambahkan. Pilih halaman, ukuran kertas, orientasi tegak atau mendatar, serta apakah halaman disesuaikan ke kertas atau dicetak pada ukuran sebenarnya. Jendela cetak sistem kemudian akan meminta Anda memilih printer.",
+            "Ukuran kertas, orientasi, dan penskalaan awal di jendela cetak diatur melalui Pengaturan → Pencetakan"
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Berbagi",
+          "body": [
+            "Berkas → Bagikan membuka jendela “Bagikan” sistem untuk mengirim dokumen melalui email, ke perangkat di sekitar, atau ke aplikasi lain. Dokumen dibagikan dalam keadaan saat ini, termasuk perubahan yang belum disimpan."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mengatur halaman",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Tampilan Atur",
+          "body": [
+            "Atur → Atur halaman menampilkan semua halaman dalam kisi. Perubahan tidak ditulis ke disk sampai Anda menyimpan.",
+            {
+              "points": [
+                "Pilih: klik halaman; Ctrl+klik menambahkan halaman, Shift+klik memilih rentang. Menu menyediakan “Pilih semua halaman”, “Batalkan pilihan semua halaman”, “Pilih halaman ganjil”, dan “Pilih halaman genap”.",
+                "Pindahkan: seret halaman yang dipilih ke posisi baru atau gunakan “Pindahkan ke kiri” dan “Pindahkan ke kanan”.",
+                "Putar: “Pilihan: putar ke kiri” atau “Pilihan: putar ke kanan” untuk halaman terpilih; “Semua halaman: putar ke kiri” atau “Semua halaman: putar ke kanan” untuk seluruh halaman.",
+                "Hapus: tekan tombol Delete atau pilih “Hapus halaman”. Dokumen harus memiliki setidaknya satu halaman.",
+                "Salin, potong, dan tempel (Ctrl+C, Ctrl+X, Ctrl+V): halaman dapat ditempelkan dalam dokumen yang sama atau dokumen lain yang terbuka di program.",
+                "Ukuran: penggeser di bagian atas memperbesar atau memperkecil halaman; begitu pula Ctrl + roda mouse di atas halaman, serta “Perbesar” dan “Perkecil” (Ctrl+= dan Ctrl+-). Ukurannya akan diingat."
+              ]
+            },
+            "Perintah yang sama juga berfungsi tanpa kisi, langsung pada halaman yang sedang ditampilkan."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Mengekstrak halaman dan memisahkan dokumen",
+          "body": [
+            "Atur → Ekstrak halaman mengeluarkan halaman terpilih sebagai dokumen baru di tab tersendiri, belum disimpan. Anda juga dapat menyimpan setiap halaman sebagai berkas tersendiri dan memilih apakah halaman tersebut dihapus dari dokumen ini.",
+            "Atur → Pisahkan dokumen menyimpan dokumen sebagai beberapa berkas yang lebih kecil; dokumen ini tetap tidak berubah.",
+            "Nama dokumen baru mengikuti pola di Pengaturan → Nama dokumen baru.",
+            {
+              "note": "Tanda tangan sertifikat tidak disertakan dalam dokumen hasil ekstraksi atau pemisahan: tanda tangan hanya berlaku untuk berkas tempat tanda tangan itu dibuat."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Menyisipkan dan mengganti halaman",
+          "body": [
+            {
+              "points": [
+                "Atur → Sisipkan halaman menambahkan halaman dari berkas lain (PDF, gambar, teks, dokumen Office) setelah halaman terpilih atau di bagian akhir.",
+                "Atur → Ganti halaman mengganti halaman terpilih dengan halaman dari berkas lain.",
+                "Sisipkan → Halaman kosong menambahkan halaman kosong dengan ukuran yang sama seperti halaman di sebelahnya."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Memotong dan mengubah ukuran halaman",
+          "body": [
+            "Sunting → Pangkas halaman memotong tepi halaman sesuai margin yang Anda ketik atau atur dengan menyeret. Tidak ada bagian yang dihapus dari berkas; hanya area yang ditampilkan menjadi lebih sempit.",
+            "Sunting → Ubah ukuran halaman menempatkan halaman pada ukuran kertas lain (A4, Letter, dan lainnya). Konten dapat diskalakan agar pas atau dipertahankan ukurannya, lalu ditempatkan di salah satu dari sembilan posisi pada kertas baru.",
+            "Kedua perintah meminta pilihan halaman: semua, yang dipilih, rentang tertentu, ganjil, atau genap."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menggabungkan berkas",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Penggabung dokumen",
+          "body": [
+            "Gabungkan → Buat penggabung dokumen membuka ruang untuk mengumpulkan berkas dan menyimpannya sebagai satu PDF.",
+            {
+              "steps": [
+                "Tambahkan berkas dengan “Tambahkan berkas” atau seret ke penggabung dokumen. PDF, gambar, teks, dan dokumen Office dapat digabungkan.",
+                "Seret kartu untuk mengatur urutannya atau gunakan tombol panah pada tiap kartu.",
+                "Buka kartu untuk memilih halaman yang akan disertakan.",
+                "“Gabungkan berkas” menyimpan semuanya sesuai urutan sebagai satu dokumen baru di tab tersendiri."
+              ]
+            },
+            "Berkas aslinya tidak diubah.",
+            "Penggeser di bagian atas memperbesar atau memperkecil halaman pada kartu; begitu pula Ctrl + roda mouse, serta “Perbesar” dan “Perkecil” (Ctrl+= dan Ctrl+-). Ukurannya akan diingat."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menulis dan menggambar pada halaman",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Alat gambar",
+          "body": [
+            "Alat gambar terbuka sebagai panel di samping halaman, kisi tombol, atau daftar bernama (diatur melalui Pengaturan). Setelah memilih alat, seret atau klik pada halaman; tekan Escape untuk meletakkan alat.",
+            {
+              "points": [
+                "Teks: klik lalu ketik. Jenis huruf, ukuran, warna, tebal, miring, dan perataan tersedia di panel.",
+                "Gambar: pilih gambar, lalu seret untuk menentukan posisi dan ukurannya.",
+                "Bentuk: persegi panjang, elips, garis, panah, tanda centang, tanda silang, titik.",
+                "Sorotan: seret pada bagian yang ingin ditonjolkan; teks di bawahnya tetap terbaca."
+              ]
+            },
+            "Dengan “Pilih, pindahkan, dan ubah ukuran”, pilih kembali anotasi untuk menyeretnya, menarik sudutnya, memutarnya dengan gagang, mengubah warnanya di panel, atau menghapusnya dengan tombol Delete. Anotasi dapat disalin dan ditempel, termasuk ke halaman lain.",
+            "Semua gambar atau anotasi yang ditambahkan akan ditulis ke berkas saat Anda menyimpan."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Mengubah teks dan gambar asli dokumen",
+          "body": [
+            "Alat “Edit teks dan gambar dalam dokumen” menandai isi halaman. Klik baris teks untuk mengubahnya atau klik gambar untuk memindahkan, mengubah ukuran, memutar, atau menghapusnya.",
+            {
+              "note": "Alat ini mengubah satu baris atau gambar setiap kali. Paragraf tidak mengalir ulang jika baris menjadi lebih panjang, dan gambar yang bertumpuk dengan gambar lain akan ikut terpilih. Untuk perubahan besar, edit dokumen di program yang digunakan untuk membuatnya."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Menyamarkan informasi",
+          "body": [
+            "Alat lainnya → Hapus permanen menghapus secara permanen bagian yang tidak boleh dibaca: seret kotak hitam ke atasnya di halaman mana pun. Saat disimpan, teks dan gambar di bawah kotak dikeluarkan dari berkas, bukan sekadar ditutupi.",
+            {
+              "note": "Simpan dokumen yang disamarkan dengan nama baru dan simpan dokumen asli di tempat aman: informasi yang disamarkan tidak dapat dipulihkan."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Tanda air",
+          "body": [
+            "Sunting → Tanda air menambahkan teks atau gambar ke halaman pilihan: lurus atau miring, di salah satu dari sembilan posisi, dengan ukuran dan transparansi pilihan Anda. Di tiap halaman, tanda air menjadi anotasi yang masih dapat dipindahkan atau dihapus."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Nomor halaman, header dan footer, nomor Bates",
+          "body": [
+            {
+              "points": [
+                "Sunting → Nomor halaman: pilih format (1, 1 / 12, Halaman 1, dan lainnya), posisi, serta halaman yang akan diberi nomor.",
+                "Sisipkan → Header dan footer: tambahkan teks di salah satu dari enam posisi. Gunakan {page} untuk nomor halaman, {pages} untuk jumlah halaman, {date} untuk tanggal hari ini, dan {file} untuk nama dokumen.",
+                "Sisipkan → Penomoran Bates: tambahkan nomor berurutan dengan kata di depan atau belakang (ABC000123), seperti yang digunakan pada dokumen perkara."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tautan, penanda, dan berkas lampiran",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Tautan",
+          "body": [
+            "Sisipkan → Tautan: seret pada area yang ingin diklik, lalu tentukan tujuan—alamat web atau halaman dalam dokumen ini.",
+            "Tautan dalam dokumen berfungsi saat dibaca: klik tautan halaman untuk menuju halaman tersebut; alamat web atau email akan dibuka di browser atau program email Anda."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Penanda",
+          "body": [
+            "Sisipkan → Penanda baru: klik lokasi tujuan dan beri judul. Sisipkan → Penanda membuka daftar; dari sana, penanda dapat diganti namanya atau dihapus. Perubahan ditulis saat Anda menyimpan."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Berkas lampiran",
+          "body": [
+            "Sisipkan → Lampirkan berkas: pilih berkas, lalu klik lokasi ikon penjepit kertas. Anda dapat memberi nama dan penulis, mengubah warna ikon, mengubah ukurannya, serta memutarnya. Berkas disimpan di dalam PDF saat Anda menyimpan dokumen.",
+            "Sisipkan → Berkas terlampir menampilkan semua berkas yang dibawa dokumen; tiap berkas dapat disimpan ke disk atau dikeluarkan. Klik ikon penjepit kertas untuk membuka daftar yang sama."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formulir",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Mengisi formulir",
+          "body": [
+            "Sisipkan → Isi formulir menampilkan kolom dalam dokumen: ketik di kolom teks, centang kotak, dan pilih opsi dari daftar. Jawaban ditulis ke berkas saat Anda menyimpan."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Membuat formulir",
+          "body": [
+            "Menu Sisipkan menambahkan kolom ke dokumen apa pun: kolom teks, kotak centang, tombol pilihan (pilih salah satu), daftar pilihan, dan kolom tanda tangan kosong untuk penanda tangan.",
+            "Seret pada halaman untuk menentukan posisi kolom. Seperti anotasi lain, kolom dapat dipindahkan dan diubah ukurannya sampai Anda menyimpan; setelah itu kolom menjadi bagian formulir."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tanda tangan",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Menambahkan tanda tangan gambar",
+          "body": [
+            "Tandatangani → Tambahkan tanda tangan menempatkan gambar tanda tangan pada halaman. Buat gambar dengan pena pilihan Anda, ketik menggunakan jenis huruf, atau pilih dari gambar (aktifkan “Pertahankan goresan pena saja, tanpa latar kertas” untuk foto kertas yang telah ditandatangani). Tanggal dapat ditampilkan di bawahnya.",
+            "Seret pada halaman untuk menentukan posisinya. Tanda tangan yang pernah digunakan disimpan di komputer ini agar dapat digunakan kembali.",
+            {
+              "note": "Ini hanya gambar; gambar tidak membuktikan siapa yang menempatkannya. Tanda tangan yang membuktikan identitas penanda tangan dan mendeteksi perubahan dokumen dibuat menggunakan sertifikat."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Menandatangani dengan sertifikat",
+          "body": [
+            "Tandatangani → Tandatangani dengan sertifikat membuat tanda tangan digital: tanda tangan menunjukkan siapa yang menandatangani dan menyegel dokumen sehingga perubahan selanjutnya dapat diketahui.",
+            {
+              "steps": [
+                "Seret untuk menentukan area tanda tangan di halaman (jendela akan menjelaskan lebih dahulu; konfirmasi ini dapat dinonaktifkan). Untuk menandatangani tanpa menampilkan tanda tangan pada halaman, pilih “Tandatangani tanpa menampilkan tanda tangan pada halaman”.",
+                "Pilih sertifikat: sertifikat di komputer (kartu atau token akan muncul setelah dimasukkan ke pembaca) atau berkas .pfx / .p12 beserta kata sandinya. Klik “Lanjutkan”.",
+                "Pilih tampilan tanda tangan. Di bagian “Alasan dan lokasi”, tulis alasan dan tempat penandatanganan; informasi ini disertakan dalam tanda tangan dan ditampilkan pada halaman jika tampilan menyertakannya. Centang “Kunci dokumen setelah ditandatangani” jika dokumen tidak boleh ditandatangani atau diubah lagi. Biarkan “Tambahkan waktu tepercaya (stempel waktu)” tetap dicentang agar otoritas menegaskan kapan Anda menandatangani.",
+                "Klik “Tandatangani”, lalu pilih lokasi untuk menyimpan berkas bertanda tangan. Pada tahap ini, token akan meminta PIN."
+              ]
+            },
+            "Berkas bertanda tangan akan terbuka menggantikan dokumen saat ini. Program tidak pernah menyimpan kata sandi atau PIN.",
+            {
+              "note": "Tanda tangan tersertifikasi adalah tanda tangan yang dibuat dengan cara ini menggunakan sertifikat berkualifikasi pada kartu atau token. Penandatanganan dilakukan di komputer Anda; hanya stempel waktu dan pemeriksaan sertifikat Anda yang memerlukan koneksi internet, dan yang dikirim hanya sidik jari digital dan nomor seri sertifikat, tidak pernah dokumennya."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Tampilan tanda tangan",
+          "body": [
+            "Tampilan menentukan rupa tanda tangan sertifikat pada halaman. Simpan beberapa tampilan dengan nama pilihan Anda, misalnya untuk mewakili perusahaan atau menandatangani atas nama pribadi.",
+            {
+              "points": [
+                "Gambar: tanpa gambar, dari berkas (stempel atau tanda tangan hasil pemindaian), atau digambar di sini.",
+                "Teks yang ditampilkan: nama, tanggal, alasan, lokasi—masing-masing dapat ditampilkan dengan atau tanpa label.",
+                "Tambahkan baris khusus di bawah nama, seperti jabatan dan perusahaan.",
+                "“Teks standar” selalu ditampilkan: siapa yang menandatangani dan kapan."
+              ]
+            },
+            "Di jendela penandatanganan tersedia “Baru…”, “Edit…”, dan “Hapus”. Tampilan yang terakhir digunakan ditawarkan lebih dahulu. Tampilan disimpan di komputer ini."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Beberapa tanda tangan dan penguncian",
+          "body": [
+            "Dokumen dapat ditandatangani oleh beberapa orang secara berurutan. Buka berkas yang sudah ditandatangani lalu tambahkan tanda tangan tanpa mengubah isinya: tanda tangan Anda ditambahkan di akhir berkas dan tanda tangan sebelumnya tetap sah.",
+            "“Kunci dokumen setelah ditandatangani” (nonaktif kecuali Anda mencentangnya) mengunci dokumen: tidak ada yang dapat menandatanganinya setelah Anda atau mengubah isinya. Tindakan ini tidak dapat dibatalkan.",
+            {
+              "note": "Jika dokumen bertanda tangan diubah sebelum ditandatangani kembali, dokumen harus ditulis ulang dan tanda tangan sebelumnya akan dihilangkan. Jendela penandatanganan akan memperingatkan Anda. Untuk mempertahankan tanda tangan, buka kembali berkas dan tandatangani tanpa mengubah isinya."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Stempel waktu",
+          "body": [
+            "Stempel waktu adalah pernyataan bertanda tangan dari otoritas stempel waktu tentang kapan sesuatu ada. Tanpanya, waktu dalam tanda tangan berasal dari jam komputer penanda tangan, yang dapat diatur siapa saja; stempel waktu membuktikan saat tersebut, dan membuat tanda tangan tetap dapat dibuktikan setelah sertifikat kedaluwarsa (PAdES B-T).",
+            {
+              "points": [
+                "Tanda tangan mendapat stempel waktu jika “Tambahkan waktu tepercaya (stempel waktu)” dicentang di jendela penandatanganan. Pengaturan → Tanda tangan menentukan apakah opsi ini dicentang sejak awal, di sini dan dalam pemrosesan banyak berkas.",
+                "Tandatangani → Tambahkan stempel waktu memberi seluruh dokumen stempel waktu tersendiri, tanpa sertifikat: stempel ini membuktikan bahwa dokumen ada, persis seperti ini, pada saat itu. Dokumen disimpan sebagai berkas baru; tanda tangan yang ada di berkas tetap sah."
+              ]
+            },
+            "Otoritasnya adalah milik DigiCert (http://timestamp.digicert.com), gratis dan dipercaya oleh Adobe Reader dan Windows; otoritas lain dapat diatur di Pengaturan → Tanda tangan. Otoritas hanya menerima sidik jari digital (SHA-256), tidak pernah dokumennya, dan koneksi internet diperlukan. Saat tanda tangan mendapat stempel waktu, penerbit sertifikat Anda juga ditanya apakah sertifikat masih berlaku, dan jawabannya disimpan dalam tanda tangan (validasi jangka panjang): dengan begitu Adobe Reader dapat menampilkan tanda tangan sebagai sah, sekarang maupun setelah sertifikat kedaluwarsa.",
+            {
+              "note": "Jika otoritas tidak dapat dihubungi, tidak ada yang ditandatangani atau ditulis: coba lagi, atau hapus centang stempel waktu untuk menandatangani tanpanya."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Memeriksa tanda tangan",
+          "body": [
+            "Tandatangani → Verifikasi tanda tangan mencantumkan setiap tanda tangan sertifikat dalam berkas: siapa yang menandatangani, siapa yang menerbitkan sertifikat, kapan penandatanganan dilakukan, alasan dan lokasinya, serta",
+            {
+              "points": [
+                "apakah dokumen tidak berubah sejak tanda tangan tersebut (penambahan tanda tangan setelahnya tidak dianggap sebagai perubahan);",
+                "apakah tanda tangan mengunci dokumen;",
+                "apakah komputer ini memercayai otoritas di balik sertifikat dan apakah sertifikat masih berlaku hari ini;",
+                "waktu yang ditegaskan oleh stempel waktunya, dan oleh otoritas mana, jika ada. Stempel waktu untuk seluruh dokumen juga dicantumkan, dengan pemeriksaannya sendiri."
+              ]
+            },
+            "Pemeriksaan dilakukan pada versi terakhir berkas yang disimpan, di komputer ini, tanpa koneksi internet. Mengklik tanda tangan di halaman akan membuka daftar ini pada tanda tangan tersebut. Di bawah setiap tanda tangan, “Tampilkan sertifikat” membuka jendela Windows untuk sertifikat tersebut (rantai sertifikat dan semua detailnya; dari sana, “Instal Sertifikat” membuat komputer ini memercayai sertifikat yang Anda kenal), dan “Validasi” menanyakan secara daring kepada penerbit sertifikat, hanya saat Anda menekannya, apakah sertifikat telah dicabut."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alat lainnya",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Mengenali teks (OCR)",
+          "body": [
+            "Alat lainnya → Kenali teks (OCR) membaca kata pada halaman hasil pemindaian dan menyisipkan teks tersembunyi ke dalam halaman agar dokumen dapat dicari serta teksnya dapat disalin dan diekspor. Tampilan halaman tidak berubah.",
+            "Centang hanya bahasa yang digunakan pada halaman; halaman yang sudah memiliki teks tidak diubah.",
+            {
+              "note": "Pembacaan dilakukan oleh mesin Tesseract, program gratis yang dipasang secara terpisah. Jika belum terpasang, jendela akan menampilkan perintah untuk memasangnya di Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Memperkecil ukuran dokumen",
+          "body": [
+            "Alat lainnya → Kompres menyimpan dokumen sebagai berkas yang lebih kecil dengan mengurangi jumlah piksel foto dan hasil pemindaian. Tersedia tiga tingkat kompresi; ketajaman teks dan gambar tetap terjaga. Dokumen dengan sedikit gambar hanya akan menjadi sedikit lebih kecil."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Membandingkan dua dokumen",
+          "body": [
+            "Alat lainnya → Bandingkan dokumen: pilih PDF lain. Kedua dokumen ditampilkan berdampingan halaman demi halaman; halaman dengan teks berbeda ditandai dan baris yang hanya ada di salah satu dokumen dicantumkan."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Pemrosesan massal: banyak berkas sekaligus",
+          "body": [
+            "Alat lainnya → Pemrosesan massal menjalankan operasi yang sama pada banyak berkas di tab tersendiri. Setiap hasil dibuat sebagai berkas baru. Jika hasil akan menggantikan berkas yang sudah ada di folder (berkas Anda sendiri, bila disimpan ke foldernya tanpa tambahan apa pun pada namanya), Anda akan ditanya dulu apakah ingin menggantinya, melewatinya, atau membatalkan. Berkas baru diganti setelah hasilnya selesai; berkas yang sedang terbuka (di tab sini atau di program lain) dibiarkan apa adanya dan ditandai belum selesai.",
+            {
+              "steps": [
+                "Di sebelah kiri, tambahkan berkas dengan “Tambahkan berkas”, “Tambahkan folder” (termasuk folder di dalamnya), atau seret berkas ke area tersebut.",
+                "Di sebelah kanan, centang tindakan yang ingin dilakukan. Setiap berkas akan menjadi PDF; selain itu, Anda dapat memutar halaman, mengenali teks, menambahkan header dan footer, tanda air atau nomor halaman, memperkecil berkas, menandatanganinya dengan sertifikat, atau mengekspornya ke format lain. Angka menunjukkan urutannya.",
+                "Pilih keluaran: satu berkas untuk setiap sumber atau satu PDF gabungan (mengikuti urutan daftar), serta folder tujuan hasil. Jika semua berkas berasal dari satu folder, folder itu dipilih otomatis sampai Anda memilih yang lain; jika tidak, yang dipakai adalah folder terakhir yang Anda pilih.",
+                "Klik “Mulai”. Status setiap berkas ditampilkan; proses dapat dihentikan di antara berkas."
+              ]
+            },
+            {
+              "points": [
+                "Resep: “Simpan sebagai resep” menyimpan semua pilihan (kecuali berkas dan kata sandi) dengan nama tertentu agar dapat diterapkan lagi dengan sekali pilih.",
+                "“Pertahankan struktur folder sumber pada hasil” membuat ulang struktur folder dari folder yang ditambahkan.",
+                "“Buat laporan proses” menyimpan berkas teks di samping hasil yang menjelaskan berkas yang berhasil ditulis dan yang gagal.",
+                "PDF yang hanya ditandatangani akan mempertahankan tanda tangan yang ada. Jika tindakan lain juga dilakukan dalam proses yang sama, berkas ditulis ulang dan tanda tangannya dihilangkan."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pengaturan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Pengaturan PDF Organizer",
+          "body": [
+            "Berkas → Pengaturan (atau Pengaturan pada bilah sisi, lalu PDF Organizer). Setiap pengaturan dapat dipulihkan satu per satu atau semuanya sekaligus.",
+            {
+              "points": [
+                "Saat dokumen dibuka: ukuran tampilan awal dokumen, gulir atau satu halaman setiap kali, dan apakah gambar mini ditampilkan.",
+                "Satuan, penggaris, dan kisi: satuan (milimeter, inci, point), penggaris, kisi, dan jarak kisi.",
+                "Pencetakan: ukuran kertas, orientasi, dan penskalaan awal di jendela cetak.",
+                "Bilah alat cepat: tombol yang ditampilkan di bilah atas halaman.",
+                "Nama dokumen baru: pola nama halaman hasil ekstraksi, dokumen baru, dan PDF yang menggabungkan banyak berkas dalam pemrosesan massal.",
+                "Tanda tangan: apakah perintah “Simpan” meminta konfirmasi sebelum menimpa berkas bertanda tangan.",
+                "Pintasan keyboard: klik tombol pintasan suatu perintah, lalu tekan kombinasi tombol yang baru."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tentang PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tentang PDF Organizer",
+          "body": [
+            "PDF Organizer adalah aplikasi PDF dari Syntelab Creative: membaca dokumen PDF, mengatur dan menggabungkan halamannya, menulis dan menggambar di atasnya, mengisi dan membuat formulir, menandatangani dengan sertifikat dan memeriksa tanda tangan, serta melakukan hal yang sama pada banyak berkas sekaligus.",
+            "Aplikasi ini masih baru dan beberapa fiturnya baru langkah awal. Jika ada kekurangan saat menangani dokumen Anda, sampaikan melalui Bantuan → Masukan agar kami tahu hal yang perlu dikembangkan."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Teknologi yang digunakan PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Pembacaan, penggambaran, dan penulisan PDF: MuPDF.",
+                "Pengenalan teks (OCR): Tesseract, jika terpasang di komputer.",
+                "Pembukaan dokumen Office: Word, Excel, PowerPoint, atau LibreOffice, sesuai aplikasi yang terpasang.",
+                "Penyimpanan halaman web sebagai PDF: menggunakan browser yang terpasang di komputer.",
+                "Penandatanganan dengan sertifikat: menggunakan layanan sertifikat Windows; tanda tangan ditulis sesuai standar PAdES."
+              ]
+            },
+            "Komponen yang digunakan bersama bagian lain program dijelaskan di “Tentang Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Hal yang belum dapat dilakukan PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Dokumen Office dibuka menggunakan paket aplikasi Office di komputer. Tanpa Word, Excel, PowerPoint, atau LibreOffice, dokumen tidak dapat dibuka. Konverter buatan kami sedang dikembangkan; lihat “Yang sedang kami kerjakan”.",
+                "Pengenalan teks memerlukan mesin Tesseract yang dipasang secara terpisah.",
+                "Teks dokumen hanya dapat diubah satu baris setiap kali; paragraf tidak mengalir ulang.",
+                "Gambar yang dicetak dengan empat tinta (CMYK) tidak dapat dipilih untuk dipindahkan.",
+                "“Validasi” memberi tahu apakah sertifikat sudah dicabut per hari ini, bukan kapan sertifikat itu dicabut.",
+                "Penandatanganan dengan sertifikat saat ini hanya berfungsi di Windows; dukungan Linux dan macOS akan hadir di versi mendatang."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

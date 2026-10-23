@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Teks lan berkas",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editor",
+          "body": [
+            "Scribe iku editor teks polos karo piranti-pirantine ing sandhinge. Saben teks duwe tab; teks ana ing tengah, panel piranti ing pinggire, lan baris katrangan ing ngisore.",
+            "Nalika Scribe dibukak, dhisik takon sampeyan arep nindakake apa: ngitung tembung, goleki lan ganti, mbuwang sing kembar, mbandhingake rong teks, ngurutake baris, malik teks, nulis teks isen-isen utawa teks acak. Saben pilihan mbukak teks karo piranti kanggo iku ing sandhinge; \"Teks kosong\" mbukak teks wae, lan teks-teks sing bubar dibukak didhaptar ing ngisore.",
+            {
+              "points": [
+                "Berkas → Teks anyar (Ctrl+N) miwiti teks kosong.",
+                "Berkas → Bukak (Ctrl+O) mbukak siji utawa sawetara berkas, saben siji ing tab dhewe. Saben berkas sing isine teks bisa dibukak: .txt, .md, .csv, .log, .srt, kode sumber lan liyane.",
+                "Owahi → Wurungake (Ctrl+Z) lan Baleni (Ctrl+Y) nlusuri kabeh sing ditindakake marang teks; piranti utawa resep diitung siji langkah.",
+                "Owahi → Goleki lan ganti (Ctrl+F) mbukak lajur ing editor sing pindhah saka siji sing cocog menyang sabanjure.",
+                "Owahi → Pilih kabeh (Ctrl+A)."
+              ]
+            },
+            "Baris ing ngisor teks nuduhake ing ngendi kursor, pira sing dipilih, cacahe baris, tembung lan karakter, enkoding berkas lan carane baris-barise pungkasan.",
+            "Berkas sing diseret lan diculake ing jendhela uga kabukak, saben siji minangka teks anyar karo jeneng, enkoding lan pungkasan baris berkase. Program nampa isine berkas sing diculake nanging ora ngerti panggonane ing disk, dadi nalika nyimpen takon panggonane; berkas luwih saka 64 MB dibukak nganggo Berkas → Bukak.",
+            "Teks anyar, sauger isih kosong, ndhaptar teks-teks sing bubar dibukak: klik siji kanggo mbukak. \"Lalekake dhaptar\" ngosongake dhaptar iku; dhaptar mung disimpen ing komputer iki."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Simpen lan Simpen minangka",
+          "body": [
+            "Ora ana sing ngowahi berkas ing disk nganti sampeyan nyimpen. Titik ing tab nuduhake yen teks duwe owahan sing durung ana ing berkase, lan nutup tab kaya ngono takon dhisik.",
+            {
+              "points": [
+                "Simpen (Ctrl+S) nulis teks nimpa berkase. Teks anyar takon panggonane.",
+                "Simpen minangka (Ctrl+Shift+S) nulis menyang berkas anyar, sing banjur nggenteni panggonan ing tab, karo kabeh sing bisa diwurungake isih ana; berkas lawas tetep kaya asline."
+              ]
+            },
+            "Berkas ditulis wutuh utawa ora babar pisan: yen nulis gagal, berkas sing wis ana tetep ana.",
+            {
+              "note": "Berkas disimpen kaya nalika dibukak: nganggo enkoding sing padha, karo pungkasan baris sing padha. Teks sing diketik ing Windows lan sing diketik ing Linux tetep kaya asline."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Enkoding lan pungkasan baris",
+          "body": [
+            "Enkoding iku carane aksara disimpen minangka byte. Scribe maca apa sing dikandhakake berkas bab awake dhewe, lan mbatang yen ora ngandhakake apa-apa. Akeh-akehe berkas saiki UTF-8; sing luwih lawas saka Eropa Tengah asring windows-1250.",
+            {
+              "points": [
+                "Aksara sing katon salah (Ã£ ganti ă, utawa kothak-kothak): Berkas → \"Waca maneh nganggo enkoding liya…\", lan pilih enkoding sing dienggo nulis berkas iku.",
+                "Kanggo nyimpen nganggo enkoding liya, pilih ing baris ing ngisor teks, banjur simpen. Yen teks duwe aksara sing ora bisa ditulis enkoding iku, Scribe ngandhani sing endi lan ora nulis apa-apa.",
+                "Pungkasan baris (Windows CRLF, Linux lan macOS LF, Mac lawas CR) diowahi ing panggonan sing padha. Berkas sing pungkasane campur dikandhani; nyimpen menehi kabeh barise pungkasan sing padha."
+              ]
+            },
+            "Apa sing dienggo teks anyar dipilih ing Setelan."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Carane teks dituduhake",
+          "body": [
+            {
+              "points": [
+                "Kabeh ing menu Tampilan iku saklar: urip, katon; mati, ora.",
+                "Teks: Lempit baris sing dawa (Alt+Z) — baris sing luwih dawa tinimbang jendhela diterusake ing ngisor, lan teks tetep nganggo baris-barise; Nomer baris; Asil ing sandhinge teks.",
+                "Ing sandhinge teks: Piranti (Ctrl+T), Resep, Statistik. Panel mung nuduhake perangan sing urip; yen ora ana sing urip, ora ana panel.",
+                "Piranti sing dituduhake: saben klompok piranti (goleki lan ganti, baris, aksara gedhe lan aksara, ngresiki, tulis teks) bisa ora dilebokake ing panel. Piranti sing dipilih saka menu Format utawa Piranti tetep dituduhake: perangan lan klompoke bali dhewe.",
+                "Panah dobel ing ndhuwur panel nglempit panel dadi lajur ing pinggir, saka ngendi saben perangane mung saklik adohe; seret pinggire kanggo nggawe luwih amba utawa luwih ciyut.",
+                "Aksara lan ukurane dipilih ing Setelan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Berkas sing gedhe banget",
+          "body": [
+            "Berkas luwih saka 64 MB ora dilebokake ing editor: mbukak ing tab sing nuduhake kaca isi 500 baris siji mbaka siji, diwaca saka berkas nalika sampeyan maju. Berkas gigabyte-an mbukak kanthi cara iki sajrone wektu sing dibutuhake kanggo nlusuri sapisan.",
+            {
+              "points": [
+                "\"Kaca sadurunge\" lan \"Kaca sabanjure\" kanggo maju mundur; nomer baris lan \"Menyang\" mlumpat menyang baris endi wae.",
+                "Goleki nlusuri kabeh berkas, karo pilihan sing padha kaya ing panggonan liya, lan ndhaptar panggonan sing ketemu: klik siji kanggo menyang barise. Dhaptar sing dawa teka saperangan mbaka saperangan, karo \"Goleki liyane\".",
+                "\"Lakokake resep ing kabeh berkas…\" nulis asile menyang folder sing sampeyan pilih, kanthi jeneng sing padha. Berkase dhewe ora tau diowahi ing kene.",
+                "\"Bukak wutuh ing editor\" tetep nglebokake berkas ing editor, kanggo diowahi kanthi tangan. Bisa alon, lan butuh memori kaping pirang-pirang ukuran berkas."
+              ]
+            },
+            {
+              "note": "Berkas sing ditulis rong byte saben aksara (UTF-16) ora bisa dituduhake kaca mbaka kaca. Resep nyimpen kabeh berkas ing memori nalika dilakokake: watese memori komputer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piranti",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Carane piranti makarya",
+          "body": [
+            "Piranti ana ing panel ing sandhinge teks, diklompokake. Klik piranti kanggo ndeleng pilihane, banjur Trapake ing teks.",
+            {
+              "points": [
+                "Yen ana sing dipilih, piranti mung ngowahi pilihan; yen ora ana sing dipilih, kabeh teks. Panel ngandhani sing endi, ing ndhuwure.",
+                "Ing ngisor tombol, piranti ngandhani apa sing ditindakake: pira baris utawa panggonan sing diowahi.",
+                "Saben piranti iku siji langkah: Wurungake mbalekake wutuh.",
+                "Saben piranti uga ana ing menu lan ing panggolekan prentah: sing ngowahi wujud teks (baris, aksara gedhe lan aksara, ngresiki) ing menu Format, liyane ing Piranti. Milih salah siji ing kono mbukak panel ing pilihane."
+              ]
+            },
+            "Ing menu Format, piranti sing umume mung siji pilihan disusun miturut pilihan-pilihane: saben cara ngowahi aksara gedhe, saben jinis tandha petik, saben cara malik teks dadi prentah dhewe, sing mbukak piranti karo pilihan iku wis dipilih. Yen jendhela kecityutan kanggo sawijining klompok, klompok iku dadi siji tombol sing mbukak dhaptar wutuh.",
+            "Piranti dilakokake ing komputer iki. Ora ana teks sing metu saka komputer iki."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Asile, sadurunge sampeyan nrapake",
+          "body": [
+            "Nalika piranti kabukak, apa sing bakal diasilake dituduhake ing sandhinge teks, ing panel \"Asil\". Ora ana sing owah ing teks nganti sampeyan milih Trapake ing teks. Asile melu sampeyan: owahi pilihan utawa teks, lan asile digawe maneh.",
+            {
+              "points": [
+                "Teks lan asil jejer, saben siji ing sangisore sirahan sing dhuwure padha, dadi baris sing padha diwiwiti ing dhuwur sing padha; lorone digulung bebarengan (tombol ranté mateni iku).",
+                "Baris sing bakal owah ditandhani, karo perangan baris sing owah ditandhani luwih peteng; baris sing mung pindhah, lan baris sing anyar, saben duwe werna dhewe. Baris sing bakal diowahi utawa dibuwang uga ditandhani ing teks sampeyan.",
+                "Ing ngisor jeneng: apa sing bakal kedadeyan ing angka — baris diowahi, dipindhah, anyar, dibuwang; baris lan karakter sadurunge lan sawise.",
+                "Ing ngisor asil: baris-baris sing bakal dibuwang. Klik siji kanggo menyang baris iku ing teks.",
+                "Tombol-tombol cilik asil: salin, bukak minangka teks anyar, bandhingake karo teks ing tab, gulung bebarengan, selehake asil ing ngisor teks tinimbang ing sandhinge, dhelikake. Teks duwe tombol dhewe: wurungake, baleni, salin, tempel ngganti, pilih kabeh, resiki.",
+                "Seret garis ing antarane lorone kanggo menehi papan luwih marang siji; klik ping pindho nggawe padha maneh."
+              ]
+            },
+            "Sawise ditrapake, panel Asil ngandhani (\"Wis ditrapake. Teks ing kiwa saiki dadi asile.\") lan nawakake Wurungake lan \"Bandhingake karo sadurunge\", sing mbukak pambandhingan sadurunge lan sawise sing padha. Panel nuduhake asil maneh sanalika sampeyan ngowahi teks utawa pilihan piranti.",
+            {
+              "note": "Tampilan → \"Asil ing sandhinge teks\" mateni lan nguripake panel. Kanggo teks sing dawa banget (luwih saka rong yuta karakter) ora ana sing dituduhake dhisik: trapake piranti, lan Wurungake bisa mbalekake."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Ganti ing endi wae",
+          "body": [
+            "Ngganti saben panggonan sing ketemu, sapisan. Nalika sampeyan ngetik sing digoleki, Scribe ngandhani ing pira panggonan ketemu lan nandhani ing teks, dadi sampeyan weruh apa sing bakal owah sadurunge nrapake.",
+            {
+              "points": [
+                "\"Ekspresi reguler\": teks sing digoleki iku pola. Ing \"Ganti karo\", $1, $2… tegese apa sing ditemokake klompok-klompok pola.",
+                "\"Aksara gedhe dibedakake\": a lan A aksara sing beda.",
+                "\"Mung tembung wutuh\": \"cat\" ora ketemu ing njero \"category\".",
+                "\"Jaga aksara gedhe saka sing diganti\": ngganti \"cat\" karo \"dog\" ngowahi \"Cat\" dadi \"Dog\" lan \"CAT\" dadi \"DOG\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Pilihan liyane\" → \"Isi…\": sing dilebokake bisa ngandhut papan kosong sing diisi ing saben sing cocog. {counter} ngitung 1, 2, 3… ({counter:10} wiwit 10, {counter:10:5} munggah 5-5); {date} lan {time} iku dina lan jam komputer sampeyan; {uuid} iku pengenal; {random} iku 8 aksara lan digit acak ({random:12} kanggo 12).",
+                "Ing ngisor sing digoleki, Scribe uga ngandhani ing pira baris sing cocog iku ana lan pira teks sing beda."
+              ]
+            },
+            "\"Ganti sawetara sapisan\" nindakake dhaptar pasangan sapisan langkah. Tulisen siji pasangan saben baris, kaya: sing digoleki => sing dilebokake ing panggonane. Ditindakake saka sing kapisan nganti sing pungkasan, saben siji marang apa sing ditinggalake sadurunge; separo kapindho sing kosong mbuwang teks iku.",
+            {
+              "note": "Pola ora bisa nggawe program macet: wektune mung mundhak miturut dawane teks lan ora luwih cepet. Pola sing nyawang bali marang apa sing wis ditemokake (\\1) ora kasedhiya amarga iku."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Baris",
+          "body": [
+            {
+              "points": [
+                "Urutake baris miturut: aksarane, kaya kamus, ing basa program utawa basa sing sampeyan pilih (ing basa Rumania ă sawise a; basa Swedia nyelehake ä sawise z, basa Jerman ing sandhinge a); aksara karo angka minangka angka (file2 sadurunge file10); angka ing wiwitan saben baris; dawane; cacah tembung; tanggal ing wiwitan saben baris (05.03.2024, 2024-03-05, nganggo utawa tanpa jam); alamat internet; nomer versi (1.2.10 sawise 1.2.9); irah-irahan, sing artikel ing wiwitane ora diitung; urutan sing sampeyan tulis (cilik, sedheng, gedhe); utawa tanpa urutan babar pisan.",
+                "Baris sing ora duwe apa-apa kanggo diurutake (ora ana angka, ora ana tanggal, nilai sing ora ana ing urutan sing sampeyan tulis) tetep ing pungkasan, arah endi wae liyane diurutake: sing paling cilik dhisik utawa sing paling gedhe dhisik.",
+                "Pilihan liyane kanggo ngurutake: bandhingake wiwit saka sawijining tembung utawa karakter, utawa siji kolom tabel (karo apa sing misahake kolom); jaga baris kapisan ing panggonane minangka sirahan; urutake paragraf tinimbang baris; lan rapekake dhisik — pangkas, buwang baris kosong, buwang sing kembar.",
+                "Buwang baris sing kembar: jaga sing kapisan, sing pungkasan, utawa ora ana siji wae saka baris sing bola-bali (mung sing ana sapisan sing tetep). Aksara gedhe, spasi ing sakubenge baris, digit, tandha waca, lan cacah karakter ing wiwitan utawa pungkasan bisa ora digatekake; mung siji kolom, utawa mung apa sing ditemokake pola, bisa dadi sing dibandhingake. Baris kosong dianggep padha karo liyane, dijaga, dibuwang, utawa dikumpulake dadi siji.",
+                "Itung baris sing bola-bali: ninggalake saben baris sapisan, karo pirang kaping baris iku ana ditulis ing ngarepe — sing paling kerep dhisik, utawa sing paling arang, utawa miturut urutan tekane.",
+                "Jaga utawa buwang baris: nggoleki sawijining bab ing saben baris lan mung njaga baris sing ngandhut, utawa mung sing ora ngandhut.",
+                "Walik urutan baris; Acak baris.",
+                "Wenehi nomer baris: nomer kapisan, apa sing ana sawise nomer, nol ing ngarep supaya angka jejeg, baris kosong tanpa nomer.",
+                "Baris kosong: buwang kabeh, utawa tinggalake siji yen ana sawetara.",
+                "Gabungake baris dadi siji, karo apa sing sampeyan pilih ing antarane; Pecah dadi baris ing saben koma, titik koma utawa liyane. Ing ngendi wae apa sing ana ing antarane diketik (menehi nomer, nggabungake, mecah, ngitung), \\t tegese tab, sing ora bisa diketik ing kolom isian."
+              ]
+            },
+            {
+              "note": "Pilihan sing mung penting bebarengan karo pilihan liya mung dituduhake nalika iku: kolom, sawise sampeyan mbandhingake miturut kolom. Pilihan sing kurang dibutuhake ana ing \"Pilihan liyane\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Aksara gedhe",
+          "body": [
+            "Owahi aksara gedhe: kaya ukara, saben tembung aksara gedhe, kabeh aksara gedhe, kabeh aksara cilik, walikan, lan cara jeneng ditulis ing kode: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Aksara gedhe miturut aturan saben alfabet, ora mung basa Inggris.",
+            "Ing klompok Arah, \"Walik teks\" malik aksara saben baris, utawa urutan tembunge, utawa aksara saben tembung; \"Jungkir\" nulis supaya bisa diwaca saka sabrang meja, lan \"Kaya ing pangilon\" uga ngijolake tandha sing duwe kiwa lan tengen. Aksara diitung kaya pamaca ngitung: aksara karo tandha-tandhane tetep siji."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Ngresiki",
+          "body": [
+            {
+              "points": [
+                "Resiki spasi: spasi sing akeh dadi siji; spasi ing pungkasan baris dibuwang.",
+                "Pangkas pungkasan baris: ing loro pucuk, ing wiwitan utawa ing pungkasan.",
+                "Tandha petik: lurus, Inggris, Rumania, Jerman utawa Prancis.",
+                "Buwang diakritik: ă dadi a, é dadi e. Mung ing alfabet Latin lan Yunani, ing ngendi aksara tanpa tandhane tetep aksara iku.",
+                "Dandani aksara Rumania: ş lan ţ (nganggo cedilla, ditulis keyboard lawas) dadi ș lan ț (nganggo koma), aksara sing dienggo nulis basa Rumania.",
+                "Tab dadi spasi lan spasi dadi tab, karo ambane tab sing sampeyan pilih.",
+                "Buwang tag HTML: kanggo sumber kaca web sing ditempel ing teks. Tag, skrip lan gaya dibuwang; apa sing bakal dideleng pamaca tetep. Kanggo njupuk kaca saka alamate, enggo piranti ing ngisore, \"Teks kaca web\".",
+                "Teks kaca web: ketik alamat kaca (example.com/page) lan pilih \"Jupuk teks\". Apa sing bakal dideleng pamaca ing kaca iku ditulis ing panggonan kursor, tanpa tag, skrip utawa gaya. Iki siji-sijine piranti Scribe sing nyambung menyang internet, lan mung yen sampeyan njaluk: kaca dijupuk dening browser sing dipasang ing komputer iki (Microsoft Edge utawa Google Chrome), dilakokake tanpa jendhela lan tanpa cookie utawa login sampeyan; program dhewe ora ngirim apa-apa. Kaca sing mbutuhake sampeyan login mung menehi apa sing bakal dideleng wong liya."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Mbalekake diakritik Rumania",
+          "body": [
+            "Basa Rumania sing diketik tanpa ă, â, î, ș, ț ditulis maneh nganggo aksara-aksara iku.",
+            {
+              "steps": [
+                "Bukak piranti ing klompok Ngresiki lan pilih Trapake ing teks.",
+                "Tembung sing duwe siji wujud sing bener diowahi sanalika: \"stiu\" dadi \"știu\", \"informatii\" dadi \"informații\".",
+                "Tembung sing bisa diwaca luwih saka siji cara (fata, fată, fața, față) didhaptar ing ngisor tombol, saben siji ing panggonane ing teks. Klik wujud sing bener kanggo saben tembung.",
+                "Utawa centhang \"Pilih dhewe wujud sing luwih mungkin yen tembunge ragu-ragu\" sadurunge nrapake: ora ana sing ditakokake, lan asile kudu diwaca maneh."
+              ]
+            },
+            "Yen tembung-tembung ing sakubenge wis cukup, Scribe mutusake miturut tembung-tembung iku: \"o casa\" dadi \"o casă\", \"casa mea\" tetep, \"pentru ca\" dadi \"pentru că\".",
+            {
+              "note": "Iki digawe kanggo Scribe saka dhaptar tembung sing lumrah lan pungkasan tembung sing tansah ditulis nganggo diakritik ing basa Rumania. Tembung sing ora dikenal (tembung langka, jeneng) tetep kaya diketik, lan tembung sing wis ditulis nganggo diakritik ora tau diowahi. Waca asile sadurunge dikirim."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Nulis teks: isen-isen lan acak",
+          "body": [
+            "Piranti ing klompok \"Tulis teks\" ora ngowahi apa-apa: piranti iku nulis. Apa sing diwenehake mlebu ing panggonan kursor, ngganti pilihan.",
+            {
+              "points": [
+                "Teks isen-isen: paragraf, ukara, tembung, dhaptar, irah-irahan, utawa perangan kaca (irah-irahan, paragraf, dhaptar). Ing basa Latin para tukang cetak (lorem ipsum), Inggris, Rumania, tembung-tembung kantor utawa pawon, utawa tembung duweke sampeyan dhewe. Pilihan liyane: ukara cendhak, sedheng utawa dawa; teks biasa, Markdown, HTML utawa JSON; tingkat irah-irahan; wates karakter (teks dipotong ing tembung wutuh lan tetep pungkasan minangka ukara); tembung sing ora dienggo.",
+                "Data karangan: jeneng, alamat e-mail, nomer telpon, alamat dalan, tanggal utawa angka, siji saben baris, saka Rumania utawa saka negara-negara sing nganggo basa Inggris. \"Baris miturut polaku\" nulis saben baris kaya sing sampeyan kandhakake, karo {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} lan {row} minangka panggonan sing diisi — tabel kanggo njajal sawijining bab, sanalika.",
+                "Teks acak: tembung sandhi (aksara, digit lan tandha, paling ora siji saka saben jinis), aksara, digit, heksadesimal utawa pengenal (UUID), ing siji baris utawa akeh baris. Karakter sing gampang kliru (0 lan O, 1, l lan I) bisa ora dienggo.",
+                "Wiji (ing \"Pilihan liyane\") nggawe teks isen-isen lan data karangan metu padha saben-saben kanggo angka sing padha; 0 menehi sing anyar saben-saben."
+              ]
+            },
+            {
+              "note": "Tembung sandhi digawe ing komputer iki, saka acakan sistem operasi, lan ora dikirim menyang ngendi-endi. Alamat e-mail karangan dipungkasi example.com, sing mail-e ora tekan sapa-sapa; nomer telpon sing digawe acak bisa uga duweke wong, mula aja ditelpon."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Resep",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Nyimpen apa sing wis sampeyan tindakake minangka resep",
+          "body": [
+            "Resep iku dhaptar piranti karo pilihan-pilihane, disimpen nganggo jeneng lan dilakokake maneh sapisan klik.",
+            {
+              "steps": [
+                "Trapake piranti sing sampeyan karepake ing teks, miturut urutan sing sampeyan karepake.",
+                "Bukak \"Resep\" ing ndhuwur panel: piranti sing wis sampeyan trapake didhaptar.",
+                "\"Simpen minangka resep…\", lan wenehi jeneng.",
+                "Mengko, bukak resep lan pilih \"Lakokake ing teks\": kabeh langkahe ditindakake, lan sapisan Wurungake mbalekake kabeh."
+              ]
+            },
+            "Resep disimpen ing komputer iki lan kasedhiya ing saben teks."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Ngowahi resep, utawa nggawe saka kosong",
+          "body": [
+            "\"Owahi…\" ing resep sing kabukak nuduhake jeneng lan langkah-langkahe. Saben langkah bisa dipindhah munggah utawa mudhun, dibuwang, lan diwenehi pilihan liya; piranti ditambahake saka dhaptar ing ngisor langkah-langkah. Ora ana sing disimpen nganti \"Simpen\".",
+            "\"Resep anyar\" miwiti resep tanpa langkah, kanggo disusun kanthi cara sing padha tanpa nrapake piranti ing teks dhisik.",
+            {
+              "note": "Piranti sing nulis teks (isen-isen, acak) dudu langkah resep: resep ngowahi teks."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Nglakokake resep ing berkas",
+          "body": [
+            {
+              "steps": [
+                "Bukak resep lan, ing \"Lakokake ing berkas\", tambahake berkas utawa folder (karo folder-folder ing njerone).",
+                "Pilih panggonan asile: menyang folder liya, sing ninggalake berkas kaya asline, utawa nimpa berkas-berkas iku dhewe.",
+                "Lakokake. Scribe ngandhani pira berkas sing ditulis, pira sing ora perlu diowahi, lan endi sing ora bisa ditindakake lan kenapa."
+              ]
+            },
+            "Saben berkas ditulis nganggo enkoding lan pungkasan baris sing diduweni. Ing folder liya, berkas tetep ing folder-folder asale, lan berkas sing wis ana ora tau ditimpa.",
+            {
+              "note": "Nimpa berkas-berkas iku dhewe ora bisa diwurungake saka Scribe. Simpen salinan yen berkas iku penting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistik, mbandhingake lan folder",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistik",
+          "body": [
+            "\"Statistik\" ing ndhuwur panel ngandhani apa isine teks, utawa pilihan. Saben perangan bisa dilempit.",
+            {
+              "points": [
+                "Ing ndhuwur: tembung, karakter nganggo lan tanpa spasi, ukara, paragraf, baris, kaca, lan ukuran ing byte.",
+                "Wektu: diwaca ing batin, diwaca sora, diketik, lan ditulis tangan.",
+                "Tembung: pira sing beda (lan pira bageane saka kabeh), aksara saben tembung, wanda, tembung paling dawa lan paling cendhak, lan pira tembung saben dawa.",
+                "Ukara: tembung saben ukara, pira sing cendhak, sedheng lan dawa, pira sing pratelan, pitakon lan pangundhang, lan sing paling dawa lan paling cendhak.",
+                "Gampange diwaca: biji saka 0 (angel banget) nganti 100 (gampang banget), miturut rumus sing digawe kanggo basa teks. Rumus ana kanggo basa Inggris, Jerman, Spanyol, Prancis, Italia, Walanda, Portugis lan Rusia; basa sing ora duwe rumus ora entuk biji, amarga rumus sing digawe kanggo basa liya bakal nyasarake.",
+                "Apa sing paling kerep diomongake: tembung sing paling kerep dienggo karo bageane ing teks, lan pasangan lan klompok telung tembung sing bola-bali metu.",
+                "Papan ing wates sing lumrah: pira karakter sing isih kari, utawa sing luwih, kanggo irah-irahan, katrangan, kiriman cendhak lan liyane."
+              ]
+            },
+            "Tembung lan ukara dikenali miturut aturan saben aksara, dadi basa Cina, Jepang lan Thai, sing ora nganggo spasi ing antarane tembung, uga diitung. Kacepetan sing dienggo ngitung wektu, lan pira tembung sing dadi sakaca, disetel ing Setelan."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Mbandhingake rong teks",
+          "body": [
+            {
+              "points": [
+                "Piranti → \"Bandhingake karo teks liya…\": teks ing editor ing sandhinge teks sing sampeyan ketik utawa tempel.",
+                "Piranti → \"Bandhingake karo berkas…\": teks ing editor, kaya saiki, ing sandhinge berkas sing sampeyan pilih.",
+                "Piranti → \"Bandhingake rong teks…\": rong teks sing diketik utawa ditempel jejer.",
+                "Piranti → \"Bandhingake rong berkas…\"."
+              ]
+            },
+            "Rong teks dituduhake jejer. Baris sing mung ana ing sing kapisan ditandhani dibuwang, baris sing mung ana ing sing kapindho ditandhani ditambahake, lan ing baris sing owah, tembung sing beda ditandhani. Mung sing beda sing dituduhake, karo sawetara baris ing sakubenge; panah pindhah saka siji bedane menyang sabanjure.",
+            "Aksara gedhe, spasi, baris kosong, angka lan tandha waca bisa ora digatekake. \"Ing siji kolom\" nuduhake apa sing dibuwang ing ndhuwur apa sing dilebokake, saben karo tandhane, tinimbang jejer. Ing sandhinge cacahan, Scribe ngandhani sepira padhane rong teks, minangka bagean baris sing padha.",
+            "Teks dituduhake sanalika dipilih, sadurunge sijine. Seret garis ing antarane rong teks kanggo menehi papan luwih marang siji; nalika teks diketik, garis ing ngisor kothak-kothak diseret munggah lan mudhun kanggo menehi papan luwih marang kothak utawa pambandhingan. Klik ping pindho mbalekake garis.",
+            "Yen sawetara baris urut-urutan diowahi, saben siji diselehake ing sandhinge baris sing paling mirip, dadi baris sing ditambahake utawa dibuwang ing antarane ora nggawe saben baris sawise iku katon diowahi dadi sing sabanjure.",
+            "\"Ketik utawa tempel teks-teks\" nuduhake kothak ing ndhuwur saben kolom; apa sing sampeyan tulis ing kono dibandhingake nalika sampeyan nulis, lan berkas isih bisa dipilih kanggo sisih endi wae."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Nggoleki lan ngganti ing folder",
+          "body": [
+            {
+              "steps": [
+                "Piranti → \"Goleki ing folder…\" (Ctrl+Shift+F), lan pilih foldere. Folder-folder ing njerone uga digoleki.",
+                "Ketik sing digoleki, karo pilihan sing padha kaya \"Ganti ing endi wae\". \"Jinis berkas\" mbatesi panggolekan ing pungkasan jeneng tartamtu (txt, md, csv…).",
+                "Saben sing cocog dituduhake ing barise, berkas saka berkas. Klik baris kanggo mbukak berkas ing kono.",
+                "Kanggo ngganti: ketik teks anyar, copot centhang berkas sing ora arep diowahi, lan pilih \"Tulis berkas-berkas\"."
+              ]
+            },
+            "Ora ana sing ditulis nganti sampeyan njaluk, lan mung ing berkas sing isih dicenthang. Saben berkas ditulis nganggo enkoding lan pungkasan baris sing diduweni.",
+            {
+              "note": "Folder sing didhelikake lan folder sing diisi program (.git, node_modules) dilewati kajaba sampeyan njaluk. Berkas sing dudu teks tansah dilewati."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Setelan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Setelan Scribe",
+          "body": [
+            "Berkas → Bukak Setelan mbukak Setelan program ing perangan Scribe.",
+            {
+              "points": [
+                "Editor: aksara sing ambane padha utawa duweke program, ukurane, lempitan baris, nomer baris, lan apa asil piranti dituduhake sadurunge ditrapake.",
+                "Teks anyar: carane baris-barise pungkasan, lan apa berkase diwiwiti nganggo tandha urutan byte (BOM).",
+                "Statistik: kacepetan maca, ngomong, ngetik lan nulis tangan, lan pira tembung sing dadi sakaca.",
+                "Tombol-tombol prentah Scribe."
+              ]
+            },
+            "Saben setelan duwe tombol sing mbalekake kaya nalika program dikirim."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Babagan Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Babagan Scribe",
+          "body": [
+            "Scribe iku aplikasi teks Syntelab Creative: editor karo piranti-pirantine ing sandhinge teks. Nuduhake apa sing bakal ditindakake piranti sadurunge ditindakake, ngresiki lan nata maneh dhaptar, nggoleki lan ngganti ing teks utawa ing folder wutuh, mbandhingake rong teks, ngandhani apa isine teks, nulis teks isen-isen lan data karangan, lan nyimpen apa sing kerep sampeyan tindakake minangka resep kanggo dilakokake maneh.",
+            "Kabeh ditindakake ing komputer iki. Ukuran lan cacahe teks ora diwatesi: watese mung memori komputer lan apa sing bisa ditindakake teknologi saiki.",
+            "Aplikasi iki isih anyar. Yen ana sing kurang kanggo teks-teks sampeyan, critakna marang kita liwat Pitulung → Panemu: saka kono kita ngerti apa sing kudu digarap."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Scribe digawe nganggo apa",
+          "body": [
+            {
+              "points": [
+                "Editor: CodeMirror.",
+                "Maca lan nulis enkoding: encoding_rs, karo chardetng kanggo mbatang enkoding berkas sing ora nyebutake.",
+                "Nggoleki lan ngganti: pustaka regex saka Rust, sing pola-polane ora bisa nggawe program macet.",
+                "Ngurutake miturut saben basa, lan ngenali tembung lan ukara ing saben aksara: ICU4X, pustaka Unicode.",
+                "Mbandhingake teks: pustaka similar.",
+                "Diakritik Rumania: dhaptar tembung lan aturan sing ditulis kanggo Scribe."
+              ]
+            },
+            "Apa sing dienggo bareng karo program liyane ana ing \"Babagan Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Apa sing durung bisa ditindakake Scribe",
+          "body": [
+            {
+              "points": [
+                "Berkas sing gedhe banget diwaca kaca mbaka kaca lan mung diowahi liwat resep; ngowahi kanthi tangan tegese mbukak wutuh, sing butuh memori.",
+                "Mbalekake diakritik Rumania mung ngerti tembung-tembung sing lumrah; tembung langka lan jeneng tetep kaya diketik.",
+                "Ora ana pamriksa ejaan.",
+                "Teks ora dijupuk saka PDF utawa dokumen kantor ing kene; PDF Organizer sing mbukak dokumen kaya ngono.",
+                "Editor ora menehi werna marang kode utawa Markdown.",
+                "Berkas sing diseret lan diculake ing jendhela mbukak minangka teks anyar: program ora dikandhani ing ngendi berkase, dadi nalika nyimpen takon panggonane."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

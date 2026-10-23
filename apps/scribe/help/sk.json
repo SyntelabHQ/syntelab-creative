@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Texty a súbory",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editor",
+          "body": [
+            "Scribe je editor prostého textu s nástrojmi po boku. Každý text má svoju kartu; text je v strede, panel s nástrojmi po jeho strane a riadok s informáciami pod ním.",
+            "Po otvorení sa Scribe najprv opýta, čo by ste chceli urobiť: spočítať slová, hľadať a nahradiť, odstrániť duplikáty, porovnať dva texty, zoradiť riadky, otočiť text, napísať výplňový alebo náhodný text. Každá voľba otvorí text s príslušným nástrojom vedľa neho; „Prázdny text“ otvorí len text a nižšie sú uvedené nedávno otvorené texty.",
+            {
+              "points": [
+                "Súbor → Nový text (Ctrl+N) vytvorí prázdny text.",
+                "Súbor → Otvoriť (Ctrl+O) otvorí jeden alebo viac súborov, každý vo vlastnej karte. Otvoria sa všetky súbory, ktoré obsahujú text: .txt, .md, .csv, .log, .srt, zdrojový kód a ďalšie.",
+                "Upraviť → Krok späť (Ctrl+Z) a Krok vpred (Ctrl+Y) prechádzajú všetkým, čo sa s textom urobilo, pričom nástroj alebo recept sa počíta ako jeden krok.",
+                "Upraviť → Hľadať a nahradiť (Ctrl+F) otvorí v editore lištu, ktorá postupne prechádza jednotlivými zhodami.",
+                "Upraviť → Vybrať všetko (Ctrl+A)."
+              ]
+            },
+            "Riadok pod textom zobrazuje polohu kurzora, množstvo vybraného textu, počet riadkov, slov a znakov, kódovanie súboru a typ ukončenia riadkov.",
+            "Súbory pretiahnuté do okna sa tiež otvoria, každý ako nový text s názvom súboru, kódovaním a koncami riadkov. Program dostane obsah pretiahnutého súboru, ale nie jeho umiestnenie na disku, preto sa pri ukladaní opýta, kam ho uložiť; súbory väčšie ako 64 MB sa otvárajú cez Súbor → Otvoriť.",
+            "Nový text, kým je prázdny, zobrazí nedávno otvorené texty: kliknutím na jeden z nich ho otvoríte. „Vymazať zoznam“ ho vyprázdni; zoznam sa uchováva len na tomto počítači."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Uložiť a Uložiť ako",
+          "body": [
+            "Súbor na disku sa nezmení, kým ho neuložíte. Bodka na karte znamená, že text obsahuje zmeny, ktoré nie sú v súbore, a pri zatváraní takejto karty sa program najprv opýta.",
+            {
+              "points": [
+                "Uložiť (Ctrl+S) zapíše text do jeho súboru. Pri novom texte sa program opýta, kam ho uložiť.",
+                "Uložiť ako (Ctrl+Shift+S) zapíše text do nového súboru, ktorý potom zaujme miesto v karte, pričom všetko, čo sa dá vrátiť, zostáva zachované; starý súbor zostane taký, aký bol."
+              ]
+            },
+            "Súbor sa zapíše buď celý, alebo vôbec: ak zápis zlyhá, pôvodný súbor zostane zachovaný.",
+            {
+              "note": "Súbor sa uloží v tom istom formáte, v akom bol otvorený: v rovnakom kódovaní a s rovnakými koncami riadkov. Text napísaný vo Windows aj text napísaný v Linuxe zostanú také, aké boli."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kódovania a konce riadkov",
+          "body": [
+            "Kódovanie je spôsob, akým sa písmená ukladajú ako bajty. Scribe číta informácie, ktoré súbor o sebe obsahuje, a v opačnom prípade kódovanie odhaduje. Väčšina dnešných súborov používa UTF-8; staršie súbory zo strednej Európy často používajú windows-1250.",
+            {
+              "points": [
+                "Písmená, ktoré vyzerajú nesprávne (napr. Ã£ namiesto ă alebo štvorčeky): Súbor → „Znova prečítať v inom kódovaní“ a vyberte kódovanie, v ktorom bol súbor napísaný.",
+                "Ak chcete uložiť v inom kódovaní, vyberte ho v riadku pod textom a následne uložte. Ak text obsahuje písmená, ktoré vybrané kódovanie nepodporuje, Scribe vás na to upozorní a nič nezapíše.",
+                "Konce riadkov (Windows CRLF, Linux a macOS LF, starý Mac CR) sa menia na tom istom mieste. Ak má súbor zmiešané konce riadkov, bude to uvedené; po uložení budú všetky riadky jednotné."
+              ]
+            },
+            "To, čím začína nový text, sa nastavuje v Nastaveniach."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Zobrazovanie textu",
+          "body": [
+            {
+              "points": [
+                "Všetko v menu Zobraziť funguje ako prepínač: zapnuté znamená viditeľné, vypnuté znamená neviditeľné.",
+                "Text: Zalamovať dlhé riadky (Alt+Z) — riadok dlhší než okno pokračuje nižšie, pričom text si zachová svoje riadky; Čísla riadkov; Výsledok vedľa textu.",
+                "Vedľa textu: Nástroje (Ctrl+T), Recepty, Štatistiky. Panel zobrazuje len zapnuté časti; ak nie je zapnutá žiadna, panel sa nezobrazí.",
+                "Zobrazené nástroje: každú skupinu nástrojov (hľadať a nahradiť, riadky, veľké písmená a písmená, čistenie, zapísať text) je možné z panela vynechať. Nástroj vybraný z menu Formát alebo Nástroje sa zobrazí aj tak: jeho časť a skupina sa vrátia automaticky.",
+                "Dvojitá šípka v hornej časti panela ho zvinie do pásika na okraji, z ktorého je každá jeho časť na jedno kliknutie; potiahnutím za jeho okraj ho rozšírite alebo zúžite.",
+                "Písmo a jeho veľkosť sa vyberajú v Nastaveniach."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Veľmi veľké súbory",
+          "body": [
+            "Súbor väčší ako 64 MB sa do editora nenahráva: otvorí sa v karte, ktorá ho zobrazuje po stranách o 500 riadkoch, čítaných zo súboru postupne. Súbory s veľkosťou v gigabajtoch sa takto otvoria za čas, ktorý trvá ich jednorazové prečítanie.",
+            {
+              "points": [
+                "„Predchádzajúca strana“ a „Nasledujúca strana“ slúžia na pohyb v súbore; číslo riadku a „Prejsť“ umožňujú preskočiť na ľubovoľný riadok.",
+                "Hľadanie prehľadáva celý súbor s rovnakými možnosťami ako inde a vypíše nájdené miesta: kliknutím na jedno z nich prejdete na príslušný riadok. Dlhý zoznam sa zobrazuje po častiach pomocou „Hľadať ďalej“.",
+                "„Spustiť recept na celom súbore“ zapíše výsledok do vybraného priečinka pod rovnakým názvom. Samotný súbor sa tu nikdy nezmení.",
+                "„Otvoriť celý v editore“ ho napriek tomu vloží do editora, aby ste ho mohli upraviť ručne. Môže to byť pomalé a vyžaduje to niekoľkonásobok veľkosti súboru v pamäti."
+              ]
+            },
+            {
+              "note": "Súbory zapísané dvoma bajtmi na znak (UTF-16) nemožno zobrazovať po stranách. Recept drží celý súbor v pamäti počas svojho behu: limitom je pamäť počítača."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nástroje",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Ako nástroje fungujú",
+          "body": [
+            "Nástroje sa nachádzajú v paneli vedľa textu, rozdelené do skupín. Kliknutím na nástroj zobrazíte jeho možnosti a potom zvoľte „Aplikovať na text“.",
+            {
+              "points": [
+                "Ak je niečo vybrané, nástroj zmení len výber; ak nie je vybrané nič, zmení celý text. Panel v hornej časti uvádza, ktorá možnosť je aktívna.",
+                "Pod tlačidlom nástroj uvádza, čo urobil: koľko riadkov alebo miest zmenil.",
+                "Každý nástroj je jeden krok: Krok späť ho vráti celý.",
+                "Každý nástroj sa nachádza aj v menu a vo vyhľadávaní príkazov: tie, ktoré menia tvar textu (riadky, veľké písmená a písmená, čistenie), sú v menu Formát, ostatné v menu Nástroje. Výber v menu otvorí panel s jeho možnosťami."
+              ]
+            },
+            "V menu Formát je nástroj, ktorý je väčšinou jednou voľbou, rozložený na jednotlivé možnosti: každý spôsob zmeny veľkých písmen, každý druh úvodzoviek, každý spôsob otočenia textu je samostatný príkaz, ktorý otvorí nástroj s touto možnosťou. Ak je okno príliš úzke na zobrazenie skupiny, skupina sa stane jedným tlačidlom, ktoré otvorí celý zoznam.",
+            "Nástroje bežia na tomto počítači. Žiadny text z neho neodchádza."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Výsledok pred aplikáciou",
+          "body": [
+            "Kým je nástroj otvorený, to, čo by urobil, sa zobrazuje vedľa textu v paneli „Výsledok“. V texte sa nič nezmení, kým nezvolíte „Aplikovať na text“. Výsledok sa priebežne obnovuje: zmeníte voľbu alebo text a výsledok sa vytvorí znova.",
+            {
+              "points": [
+                "Text a výsledok sú vedľa seba, každý pod záhlavím rovnakej výšky, takže rovnaké riadky začínajú v rovnakej výške; posúvajú sa spolu (tlačidlo s reťazou to vypne).",
+                "Riadky, ktoré by sa zmenili, sú označené, pričom časť riadku, ktorá sa mení, je označená tmavšie; riadky, ktoré by sa len presunuli, a riadky, ktoré sú nové, majú každý svoju farbu. Riadky, ktoré by boli zmenené alebo odstránené, sú označené aj vo vašom texte.",
+                "Pod názvami: čo by sa stalo, v číslach — zmenené, presunuté, nové a odstránené riadky; riadky a znaky pred a po.",
+                "Pod výsledkom: riadky, ktoré by boli odstránené. Kliknutím na riadok k nemu prejdete v texte.",
+                "Malé tlačidlá výsledku: kopírovať ho, otvoriť ako nový text, porovnať ho s textom v karte, posúvať spolu, umiestniť výsledok pod text namiesto vedľa neho, skryť ho. Text má svoje vlastné: krok späť, krok vpred, kopírovať, vložiť namiesto textu, vybrať všetko, vymazať.",
+                "Ťahajte lištu medzi nimi, aby ste jednému z nich pridelili viac miesta; dvojklik ich opäť vyrovná."
+              ]
+            },
+            "Po aplikácii to panel Výsledok oznámi („Aplikované. Text vľavo je teraz výsledkom.“) a ponúkne Krok späť a „Porovnať s pôvodným stavom“, čím sa otvorí rovnaké porovnanie pred a po. Výsledok sa zobrazí znova hneď, ako zmeníte text alebo voľbu nástroja.",
+            {
+              "note": "Zobraziť → „Výsledok vedľa textu“ zapne alebo vypne tento panel. Pri veľmi dlhom texte (viac ako dva milióny znakov) sa vopred nič nezobrazí: aplikujte nástroj a Krok späť ho vráti."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Nahradiť všade",
+          "body": [
+            "Okamžite nahradí všetky nájdené výskyty. Počas písania hľadaného textu Scribe uvádza počet nájdených výskytov a označuje ich v texte, takže vidíte, čo sa zmení ešte pred aplikáciou.",
+            {
+              "points": [
+                "„Regulárny výraz“: hľadaný text je vzorom. V poli „Nahradiť za“ znamenajú symboly $1, $2… to, čo našli skupiny vzoru.",
+                "„Rozlíšiť veľké a malé písmená“: a a A sú rôzne písmená.",
+                "„Len celé slová“: „mačka“ sa nenájde v slove „mačkovitý“.",
+                "„Zachovať veľké písmená nahrádzaného textu“: nahradenie „mačka“ slovom „pes“ zmení „Mačka“ na „Pes“ a „MAČKA“ na „PES“."
+              ]
+            },
+            {
+              "points": [
+                "„Viac možností“ → „Pri každej zhode doplniť…“: text, ktorý vkladáte, môže obsahovať polia, ktoré sa pri každej zhode vyplnia. {counter} počíta 1, 2, 3… ({counter:10} začína od 10, {counter:10:5} stúpa o 5); {date} a {time} sú dátum a čas vášho počítača; {uuid} je identifikátor; {random} je 8 náhodných písmen a číslic ({random:12} pre 12 znakov).",
+                "Pod poľom pre hľadanie Scribe uvádza aj to, na koľkých riadkoch sa zhody nachádzajú a koľko rôznych textov to je."
+              ]
+            },
+            "„Nahradiť viacero naraz“ vykoná zoznam párov v jednom kroku. Napíšte jeden pár na riadok v tvare: čo hľadať => čím nahradiť. Vykonávajú sa postupne od prvého po posledný, pričom každý pracuje s výsledkom predchádzajúceho; prázdna druhá časť text odstráni.",
+            {
+              "note": "Vzor nemôže program zavesiť: čas potrebný na spracovanie rastie s dĺžkou textu a nie rýchlejšie. Z toho dôvodu nie sú k dispozícii vzory, ktoré odkazujú na to, čo už našli (\\1)."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Riadky",
+          "body": [
+            {
+              "points": [
+                "Zoradiť riadky podľa: písmen, ako v slovníku, v jazyku programu alebo v jazyku, ktorý si vyberiete (v rumunčine nasleduje ă po a; švédčina dáva ä za z, nemčina vedľa a); písmen s číslami ako čísla (file2 pred file10); čísla, ktorým riadok začína; dĺžky; počtu slov; dátumu, ktorým riadok začína (05.03.2024, 2024-03-05, s časom alebo bez neho); internetových adries; čísel verzií (1.2.10 po 1.2.9); názvov, kde sa člen na začiatku nepočíta; poradia, ktoré zadáte (malý, stredný, veľký); alebo bez akéhokoľvek poradia.",
+                "Riadky, ktoré nemajú podľa čoho zoradiť (žiadne číslo, žiadny dátum, hodnota, ktorá nie je v zadanom poradí), zostanú na konci bez ohľadu na to, či sú ostatné zoradené od najmenšieho alebo od najväčšieho.",
+                "Ďalšie možnosti radenia: porovnávať od určitého slova alebo znaku, alebo podľa jedného stĺpca tabuľky (s určením oddeľovača stĺpcov); ponechať prvý riadok na mieste ako hlavičku; zoradiť odseky namiesto riadkov; a najprv upratať — orezať medzery, odstrániť prázdne riadky, odstrániť duplikáty.",
+                "Odstrániť duplicitné riadky: ponechať prvý, posledný alebo žiadny z opakujúcich sa riadkov (zostanú len tie, ktoré sa vyskytujú raz). Veľké písmená, medzery okolo riadku, číslice, interpunkciu a určitý počet znakov na začiatku alebo na konci možno ignorovať; porovnávať sa môže len stĺpec alebo len to, čo nájde vzor. Prázdne riadky sa berú ako ostatné, ponechajú sa, odstránia alebo zlúčia.",
+                "Spočítať opakované riadky: ponechá každý riadok raz a pred neho zapíše, koľkokrát sa vyskytol — najčastejšie najprv, alebo najmenej časté, alebo v poradí, v ktorom sa vyskytujú.",
+                "Ponechať alebo odstrániť riadky: hľadá niečo v každom riadku a ponechá len riadky, ktoré to obsahujú, alebo len tie, ktoré to neobsahujú.",
+                "Otočiť poradie riadkov; Premiešať riadky.",
+                "Očíslovať riadky: prvé číslo, čo stojí za ním, nuly vpredu na zarovnanie čísel, prázdne riadky bez čísla.",
+                "Prázdne riadky: odstrániť všetky, alebo ponechať jeden tam, kde ich je viac.",
+                "Spojiť riadky do jedného s vybraným oddeľovačom; Rozdeliť na riadky pri každej čiarke, bodkočiarke alebo čomkoľvek inom. Všade, kde sa zadáva oddeľovač (číslovanie, spájanie, rozdeľovanie, počítanie), \\t znamená tabulátor, ktorý sa do poľa nedá napísať."
+              ]
+            },
+            {
+              "note": "Voľba, ktorá má význam len spolu s inou, sa zobrazí až potom: napríklad stĺpec, keď porovnávate podľa stĺpca. Voľby, ktoré potrebuje menej ľudí, sú v časti „Viac možností“."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Veľké písmená",
+          "body": [
+            "Zmeniť veľkosť písmen: veľké na začiatku vety, každé slovo s veľkým písmenom, všetky veľké písmená, všetky malé písmená, invertované a spôsoby zápisu názvov v kóde: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Veľké písmená dodržiavajú pravidlá každej abecedy, nielen anglickej.",
+            "V skupine Smer „Otočiť text“ otočí písmená v každom riadku, alebo poradie slov, alebo písmená v každom slove; „Hore nohami“ ho napíše tak, aby sa dal čítať z druhej strany stola, a „Ako v zrkadle“ vymení aj znaky, ktoré majú ľavú a pravú stranu. Písmená sa počítajú tak, ako ich počíta čitateľ: písmeno s diakritikou zostáva jedným písmenom."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Čistenie",
+          "body": [
+            {
+              "points": [
+                "Vyčistiť medzery: viacero medzier sa nahradí jednou; medzery na koncoch riadkov sa odstránia.",
+                "Orezať konce riadkov: na oboch koncoch, na začiatku alebo na konci.",
+                "Úvodzovky: rovné, anglické, rumunské, nemecké alebo francúzske.",
+                "Odstrániť diakritiku: z ă sa stane a, z é sa stane e. Len v latinke a gréckej abecede, kde písmeno bez znamienka zostáva tým istým písmenom.",
+                "Opraviť rumunské písmená: ş a ţ (s cedilou, ktoré písali staršie klávesnice) sa zmenia na ș a ț (s čiarkou), teda písmená, ktorými sa rumunčina píše.",
+                "Taby na medzery a medzery na taby, so šírkou tabulátora podľa vášho výberu.",
+                "Odstrániť HTML tagy: pre zdroj webovej stránky vložený do textu. Tagy, skripty a štýly sa odstránia; zostane len to, čo by videl čitateľ. Ak chcete stránku načítať z jej adresy, použite nástroj pod ním, „Text webovej stránky“.",
+                "Text webovej stránky: zadajte adresu stránky (example.com/page) a zvoľte „Načítať text“. To, čo by čitateľ na danej stránke videl, sa zapíše na miesto kurzora bez tagov, skriptov alebo štýlov. Je to jediný nástroj Scribe, ktorý sa pripája na internet, a to len na vašu žiadosť: stránku načíta prehliadač nainštalovaný v tomto počítači (Microsoft Edge alebo Google Chrome), spustený bez okna a bez vašich cookies alebo prihlásení; samotný program nič neposiela. Stránka, ktorá vyžaduje prihlásenie, poskytne len to, čo by videl cudzí návštevník."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Obnovenie rumunskej diakritiky",
+          "body": [
+            "Rumunčina napísaná bez ă, â, î, ș, ț bude opäť napísaná s nimi.",
+            {
+              "steps": [
+                "Otvorte nástroj v skupine Čistenie a zvoľte „Aplikovať na text“.",
+                "Slová, ktoré majú len jednu správnu formu, sa zmenia okamžite: „stiu“ sa stane „știu“, „informatii“ sa stane „informații“.",
+                "Slová, ktoré sa dajú čítať viacerými spôsobmi (fata, fată, fața, față), sa vypíšu pod tlačidlom, každé na svojom mieste v texte. Pre každé slovo kliknite na správnu formu.",
+                "Alebo pred aplikáciou zaškrtnite „Pri pochybnosti automaticky vybrať pravdepodobnejšiu formu“: na nič sa nebude pýtať a výsledok treba potom prečítať."
+              ]
+            },
+            "Tam, kde sú okolité slová dostatočné, Scribe rozhodne na základe nich: „o casa“ sa stane „o casă“, „casa mea“ ostane takto, „pentru ca“ sa stane „pentru că“.",
+            {
+              "note": "Tento nástroj bol vytvorený pre Scribe zo zoznamu bežných slov a koncov, ktoré sa v rumunčine vždy píšu s diakritikou. Slová, ktoré nástroj nepozná (vzácne slová, mená), zostávajú tak, ako boli napísané, a slovo už napísané s diakritikou sa nikdy nezmení. Pred odoslaním si výsledok prečítajte."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Písanie textu: výplň a náhodné údaje",
+          "body": [
+            "Nástroje skupiny „Zapísať text“ nič nemenia: zapisujú. To, čo vytvoria, sa vloží tam, kde je kurzor, namiesto výberu.",
+            {
+              "points": [
+                "Výplňový text: odseky, vety, slová, zoznamy, nadpisy alebo časti stránky (nadpis, odseky, zoznam). V tlačiarskej latinčine (lorem ipsum), angličtine, rumunčine, slovách z kancelárie alebo kuchyne, alebo vo vlastných slovách. Viac možností: krátke, stredne dlhé alebo dlhé vety; prostý text, Markdown, HTML alebo JSON; úroveň nadpisov; limit znakov (text sa oreže na celom slove a stále končí vetou); slová, ktoré sa majú vynechať.",
+                "Ukážkové údaje: mená, e-mailové adresy, telefónne čísla, adresy, dátumy alebo čísla, jedno na riadok, z Rumunska alebo z anglicky hovoriacich krajín. „Riadky podľa môjho vzoru“ napíše každý riadok tak, ako zadáte, pričom {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} a {row} zastupujú to, čo sa vytvorí — tabuľka na vyskúšanie niečoho, za okamih.",
+                "Náhodný text: heslá (písmená, číslice a znaky, aspoň jedno z každého), písmená, číslice, hexadecimálne hodnoty alebo identifikátory (UUID), na jednom riadku alebo na viacerých. Znaky, ktoré sa ľahko pletú (0 a O, 1, l a I), sa dajú vynechať.",
+                "Seed (v časti „Viac možností“) zabezpečí, že výplňový text a ukážkové údaje budú pri rovnakom čísle vždy rovnaké; hodnota 0 vytvorí zakaždým niečo nové."
+              ]
+            },
+            {
+              "note": "Heslá sa vytvárajú na tomto počítači z náhodnosti operačného systému a nikam sa neposielajú. Vymyslené e-mailové adresy končia na example.com, kde pošta nikomu nedorazí; náhodne vytvorené telefónne číslo môže patriť niekomu inému, takže naň nevolajte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recepty",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Uloženie vykonaných krokov ako recept",
+          "body": [
+            "Recept je zoznam nástrojov s ich nastaveniami, uložený pod určitým názvom, ktorý sa dá znova spustiť jedným kliknutím.",
+            {
+              "steps": [
+                "K textu aplikujte nástroje, ktoré chcete, a to v požadovanom poradí.",
+                "V hornej časti panela otvorte položku „Recepty“: zobrazí sa zoznam nástrojov, ktoré ste aplikovali.",
+                "Zvoľte „Uložiť ako recept“ a dajte mu názov.",
+                "Neskôr otvorte recept a zvoľte „Spustiť na texte“: všetky jeho kroky sa vykonajú a jeden Krok späť ich všetky vráti."
+              ]
+            },
+            "Recepty sa ukladajú na tomto počítači a sú k dispozícii v každom texte."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Zmena receptu alebo vytvorenie nového",
+          "body": [
+            "„Zmeniť“ pri otvorenom recepte zobrazí jeho názov a kroky. Každý krok sa dá posunúť nahor alebo nadol, odstrániť alebo mu zmeniť voľby; nástroje sa pridávajú zo zoznamu pod krokmi. Nič sa neuloží, kým nezvolíte „Uložiť“.",
+            "„Nový recept“ vytvorí prázdny recept bez krokov, ktorý sa zostavuje rovnakým spôsobom, ale bez predchádzajúcej aplikácie nástrojov na text.",
+            {
+              "note": "Nástroje, ktoré generujú text (výplň, náhodný text), nie sú kroky receptu: recept mení existujúci text."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Spúšťanie receptu na súboroch",
+          "body": [
+            {
+              "steps": [
+                "Otvorte recept a v časti „Spustiť na súboroch“ pridajte súbory alebo priečinok (vrátane podpriečinkov).",
+                "Zvoľte, kam pôjdu výsledky: do iného priečinka, čím zostanú pôvodné súbory nedotknuté, alebo priamo cez pôvodné súbory.",
+                "Spustite. Scribe uvedie, koľko súborov bolo zapísaných, koľko nevyžadovalo žiadnu zmenu a ktoré nebolo možné spracovať a prečo."
+              ]
+            },
+            "Každý súbor sa zapíše v kódovaní a s koncami riadkov, ktoré mal pôvodne. Pri zápise do iného priečinka si súbory zachovajú svoje podpriečinky a súbor, ktorý tam už existuje, sa nikdy neprepíše.",
+            {
+              "note": "Prepísanie pôvodných súborov sa v Scribe nedá vrátiť. Ak sú súbory dôležité, uložte si ich kópiu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Štatistiky, porovnávanie a priečinky",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Štatistiky",
+          "body": [
+            "„Štatistiky“ v hornej časti panela uvádzajú, z čoho sa text alebo výber skladá. Každú časť možno zbaliť.",
+            {
+              "points": [
+                "V hornej časti: slová, znaky s medzierami a bez medzier, vety, odseky, riadky, strany a veľkosť v bajtoch.",
+                "Čas: na tiché čítanie, hovorenie nahlas, písanie na klávesnici a písanie rukou.",
+                "Slová: koľko je ich unikátnych (a aký je ich podiel), počet písmen v slove, slabiky, najdlhšie a najkratšie slovo a počet slov každej dĺžky.",
+                "Vety: počet slov vo vete, koľko je krátkych, stredných a dlhých, koľko je oznamovacích, opytovacích a zvolacích, a najdlhšia a najkratšia veta.",
+                "Čitateľnosť: skóre od 0 (veľmi ťažké) do 100 (veľmi ľahké) podľa vzorca vytvoreného pre jazyk textu. Vzorce existujú pre angličtinu, nemčinu, španielčinu, francúzštinu, taliančinu, holandčinu, portugalčinu a ruštinu; jazyk bez vzorca nedostane žiadne skóre, pretože vzorec pre iný jazyk by bol zavádzajúci.",
+                "Najčastejšie frázy: najpoužívanejšie slová s ich podielom v texte a dvojice a trojice slov, ktoré sa opakujú.",
+                "Kapacita v rámci bežných limitov: koľko znakov zostáva alebo ich je navyše pre nadpis, popis, krátky príspevok a ďalšie."
+              ]
+            },
+            "Slová a vety sa zisťujú podľa pravidiel každého písma, takže sa započítajú aj čínština, japončina a thajčina, ktoré medzi slová nedávajú medzery. Rýchlosti, podľa ktorých sa počíta čas, a počet slov na stranu sa nastavujú v Nastaveniach."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Porovnávanie dvoch textov",
+          "body": [
+            {
+              "points": [
+                "Nástroje → „Porovnať s iným textom“: text v editore vedľa textu, ktorý napíšete alebo vložíte.",
+                "Nástroje → „Porovnať so súborom“: text v editore v aktuálnom stave vedľa súboru, ktorý si vyberiete.",
+                "Nástroje → „Porovnať dva texty“: dva texty napísané alebo vložené vedľa seba.",
+                "Nástroje → „Porovnať dva súbory“."
+              ]
+            },
+            "Dva texty sa zobrazia vedľa seba. Riadky len v prvom sú označené ako odstránené, riadky len v druhom ako pridané a v zmenenom riadku sú označené slová, ktoré sa líšia. Zobrazuje sa len to, čo je odlišné, spolu s niekoľkými okolitými riadkami; šípky vedú od jedného rozdielu k ďalšiemu.",
+            "Veľké písmená, medzery, prázdne riadky, čísla a interpunkciu možno ignorovať. „V jednom stĺpci“ zobrazí to, čo bolo odstránené, nad tým, čo bolo pridané, každé so svojou značkou, namiesto zobrazenia vedľa seba. Vedľa počtov Scribe uvádza, nakoľko sú si oba texty podobné, ako podiel rovnakých riadkov.",
+            "Text sa zobrazí hneď po vybratí, ešte predtým, než sa vyberie druhý. Ťahaním lišty medzi textami dáte jednému viac miesta; kým sa texty píšu, lištou pod poľami sa ťahá hore a dole, aby sa dalo viac miesta poliam alebo porovnaniu. Dvojklik vráti lištu späť.",
+            "Tam, kde bolo zmenených niekoľko riadkov za sebou, sa každý z nich umiestni vedľa riadku, ktorému sa najviac podobá, takže riadok pridaný alebo odstránený medzi nimi nespôsobí, že každý nasledujúci riadok bude vyzerať ako zmenený na ďalší.",
+            "„Napíšte alebo vložte texty“ zobrazí pole nad každým stĺpcom; to, čo tam napíšete, sa porovná počas písania a pre ktorúkoľvek stranu možno stále vybrať súbor."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Hľadanie a nahrádzanie v priečinku",
+          "body": [
+            {
+              "steps": [
+                "Nástroje → „Hľadať v priečinku“ (Ctrl+Shift+F) a vyberte priečinok. Prehľadávajú sa aj podpriečinky.",
+                "Napíšte, čo chcete nájsť, s rovnakými možnosťami ako pri „Nahradiť všade“. „Typy súborov“ obmedzí vyhľadávanie na určité prípony (txt, md, csv…).",
+                "Každá zhoda sa zobrazí vo svojom riadku, súbor po súbore. Kliknutím na riadok otvoríte súbor na danom mieste.",
+                "Pre nahradenie: napíšte nový text, zrušte zaškrtnutie súborov, ktoré chcete ponechať, a zvoľte „Zapísať súbory“."
+              ]
+            },
+            "Nič sa nezapíše, kým o to nepožiadate, a len do súborov, ktoré zostali zaškrtnuté. Každý súbor sa zapíše v kódovaní a s koncami riadkov, ktoré mal pôvodne.",
+            {
+              "note": "Skryté priečinky a priečinky programov (.git, node_modules) sa vynechávajú, pokiaľ ich nevyžiadate. Súbory, ktoré nie sú textové, sa vynechávajú vždy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nastavenia",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Nastavenia programu Scribe",
+          "body": [
+            "Súbor → Nastavenia otvorí nastavenia programu v časti Scribe.",
+            {
+              "points": [
+                "Editor: písmo s pevnou šírkou alebo písmo programu, jeho veľkosť, zalamovanie riadkov, čísla riadkov a to, či sa výsledok nástroja zobrazí pred jeho aplikáciou.",
+                "Nový text: konce jeho riadkov a to, či jeho súbor začína znakom BOM (byte order mark).",
+                "Štatistiky: rýchlosti čítania, hovorenia, písania na klávesnici a písania rukou a počet slov na stranu.",
+                "Klávesové skratky príkazov programu Scribe."
+              ]
+            },
+            "Každé nastavenie má tlačidlo, ktoré ho vráti na predvolenú hodnotu programu."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O programe Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O programe Scribe",
+          "body": [
+            "Scribe je textová aplikácia od Syntelab Creative: editor s nástrojmi vedľa textu. Ukáže, čo by nástroj urobil, ešte predtým, než to urobí, čistí a preusporiadava zoznamy, hľadá a nahrádza v texte alebo v celom priečinku, porovnáva dva texty, ukáže, z čoho sa text skladá, píše výplňový text a ukážkové údaje a uchováva to, čo robíte často, ako recepty na opätovné spustenie.",
+            "Všetko sa spracováva lokálne na tomto počítači. Na veľkosť alebo počet textov nie je stanovený žiadny limit: limitom je pamäť počítača a možnosti súčasnej technológie.",
+            "Program je nový. Ak pre vaše texty niečo nestačí, napíšte nám cez Pomoc → Spätná väzba: tak vieme, na čom máme pracovať."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Na čom je Scribe postavený",
+          "body": [
+            {
+              "points": [
+                "Editor: CodeMirror.",
+                "Kódovanie pri čítaní a zápise: encoding_rs s chardetng na odhadovanie kódovania súborov, ktoré ho neuvádzajú.",
+                "Hľadanie a nahrádzanie: knižnica regex v jazyku Rust, jej vzory nemôžu program zablokovať.",
+                "Zoradenie podľa pravidiel konkrétneho jazyka a hľadanie slov a viet v každom písme: ICU4X, knižnica Unicode.",
+                "Porovnávanie textov: knižnica similar.",
+                "Rumunská diakritika: zoznam slov a pravidiel napísaných pre Scribe."
+              ]
+            },
+            "To, čo Scribe zdieľa so zvyškom programu, nájdete v časti „O Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Čo Scribe zatiaľ nevie",
+          "body": [
+            {
+              "points": [
+                "Veľmi veľké súbory sa čítajú strana po strane a upravujú sa len pomocou receptov; ručná úprava vyžaduje otvorenie celého súboru, čo spotrebuje pamäť.",
+                "Obnovenie rumunskej diakritiky pozná bežné slová; zriedkavé slová a mená zostávajú tak, ako boli napísané.",
+                "Kontrola pravopisu nie je k dispozícii.",
+                "Text sa tu neextrahuje z PDF alebo kancelárskych dokumentov; na to slúži PDF Organizer.",
+                "Editor nepodporuje farebné zvýraznenie ani Markdown.",
+                "Súbor pretiahnutý do okna sa otvorí ako nový text: program sa nedozvie, kde je súbor uložený, preto sa pri ukladaní opýta, kam ho uložiť."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

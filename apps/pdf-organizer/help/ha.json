@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Buɗewa da karantawa",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Buɗe takarda",
+          "body": [
+            "Fayil → Buɗe (Ctrl+O) yana buɗe PDF a tab nasa. \"Buɗe fayiloli da yawa lokaci ɗaya\" yana buɗe kowane fayil da aka zaɓa a tab nasa.",
+            "Fayilolin da ba PDF ba ma suna buɗewa, a matsayin shafuka: hotuna (PNG, JPEG, TIFF, WebP da sauransu da yawa), fayilolin rubutu da na yanar gizo, littattafan lantarki (e-book), XPS, da takardun ofis. Ba a ajiye irin wannan takardar a ko’ina ba tukuna: \"Ajiye\" zai tambayi inda za a ajiye ta.",
+            {
+              "note": "Ana canza takardun ofis (Word, Excel, PowerPoint, OpenDocument) ta hanyar Word, Excel ko PowerPoint, ko ta LibreOffice, duk wanda ke kan kwamfutar. Idan babu ɗaya daga cikinsu, ba za a iya buɗe su ba."
+            },
+            "Fayilolin da aka jefa a kan tab mara komai ana tara su a cikin tarin fayiloli; idan aka jefa su a kan takarda, ana ƙara shafukansu a cikinta.",
+            "A Windows, PDF Organizer zai iya zama manhajar da ke buɗe fayilolin PDF idan ka danna su sau biyu: a shafin farko nasa, \"Mayar da tsoho\" yana buɗe saitunan Windows, inda za ka zaɓi Syntelab Creative don fayilolin PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Kallon shafuka",
+          "body": [
+            "Menu na Kallo ne yake yanke yadda ake nuna takardar; babu abin da ke cikinsa da yake canza fayil ɗin.",
+            {
+              "points": [
+                "Girman gani: ƙara girma, rage girma, girma na asali, daidaita shafi, daidaita faɗi, daidaita tsayi. Ctrl da ƙafafun mouse ma suna canza girman gani.",
+                "Nuna shafuka: shafi ɗaya ko biyu gefe da gefe, tare da shafin bango ko ba tare da shi ba, da gungurawa cikin dukkan shafuka a matsayin dogon layi ɗaya.",
+                "Jagorori: rula da raga, a ma'aunin da aka zaɓa a Saituna.",
+                "\"Nuna ƙananan hotunan shafuka\": ƙananan shafukan da ke gefe. Danna ɗaya don zuwa gare shi; alamomin shafi na takardar suna cikin faifan gefe ɗaya.",
+                "\"Yanayin karatu\" yana ɓoye kayan aiki; \"Yanayin cikakken allo\" yana ɓoye komai sai shafin. Esc yana fita daga duka biyun."
+              ]
+            },
+            "Layin da ke saman shafuka (sandar kayan aiki ta gaggawa) yana da lambar shafi, girman gani da maɓallan da ka zaɓa a Saituna."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Neman rubutu",
+          "body": [
+            "Gyara → Nemo a cikin takarda (Ctrl+F): rubuta kalma ko jimla; ana yi wa wuraren da aka same ta alama a kan shafuka, kuma kibiyoyi suna tafiya daga ɗaya zuwa na gaba.",
+            {
+              "note": "Takardar da aka yi wa sikan hotunan shafuka ce kuma ba ta da rubutun da za a nema har sai an gane rubutunta: duba \"Gane rubutu (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Bayanan takarda",
+          "body": [
+            "Fayil → Bayanan takarda yana nuna abin da takardar ta faɗa game da kanta: lakabi, marubuci, ranakun da aka yi ta da aka canza ta, adadin shafuka, girman fayil ɗin."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ajiyewa, bugawa da aikawa",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Ajiye da Ajiye a matsayin",
+          "body": [
+            "Babu abin da kake yi da zai canza fayil ɗin a faifai har sai ka ajiye. Kafin nan, ana iya soke kowane mataki (Ctrl+Z) kuma a maimaita shi (Ctrl+Y).",
+            {
+              "points": [
+                "Ajiye (Ctrl+S) yana rubuta takardar a kan fayil ɗinta.",
+                "Ajiye a matsayin (Ctrl+Shift+S) yana rubuta ta a sabon fayil, wanda daga nan zai maye gurbin tab ɗin; tsohon fayil ɗin yana tsayawa yadda yake."
+              ]
+            },
+            "Idan wani shiri ya buɗe fayil ɗin, ba za a iya rubutawa a kansa ba: shirin zai faɗi haka kuma ya riƙe canje-canjenka, don a ajiye su da wani suna.",
+            {
+              "note": "Ajiye takardar da aka canza a kan fayil da aka sa wa hannu da takardar shaida yana cire sa hannunsa. Shirin yana fara tambaya kuma yana ba da \"Ajiye a matsayin sabon fayil\"; ana iya kashe tambayar a Saituna → Sa hannu."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Ƙirƙirar PDF",
+          "body": [
+            "Fayil → Ƙirƙiri PDF yana yin sabuwar takarda:",
+            {
+              "points": [
+                "daga fayil ɗaya, ko daga da yawa: a haɗe cikin PDF ɗaya, ko PDF ɗaya ga kowanne;",
+                "daga shafin yanar gizo, a adireshin da ka rubuta (ana ajiye shafin da burauzar da aka saka a kwamfutar);",
+                "daga abin da ke kan allon kwafi;",
+                "daga shafuka marasa komai na girman da ka zaɓa."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Fitarwa zuwa wani tsari",
+          "body": [
+            "Fayil → Fitar da yana rubuta takardar a wani tsari: rubutun Word ko OpenDocument, rubutu kawai, shafin yanar gizo, XML, hotunan shafuka (PNG, JPEG, TIFF, SVG) ko PostScript. Don hotuna, kana zaɓar tsabtar hoto.",
+            "Takardar kanta tana ci gaba da zama PDF; abin da aka fitar sabon fayil ne.",
+            {
+              "note": "Ana iya fitar da rubutu ne kawai inda takardar take da rubutu. Ka fara gane rubutun takardar da aka yi wa sikan."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Bugawa",
+          "body": [
+            "Fayil → Buga (Ctrl+P) yana buga takardar kamar yadda aka tsara ta yanzu, tare da abin da ka zana a kanta. Zaɓi shafuka, takarda, ko takardu za su kasance a tsaye ko a kwance, da kuma ko za a daidaita shafuka da takarda ko a buga su a girmansu na asali; sannan tagar bugawa ta tsarin kwamfutar tana tambayar firinta.",
+            "Takarda, fuskantar shafi da girman da tagar bugawa take farawa da su ana saita su a Saituna → Bugawa."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Rabawa",
+          "body": [
+            "Fayil → Raba yana miƙa takardar ga tagar \"Raba\" ta tsarin kwamfutar: imel, na'urar da ke kusa da sauran manhajoji. Ana raba takardar kamar yadda take yanzu, tare da canje-canjenka da ba a ajiye ba."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tsara shafuka",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Kallon Tsara",
+          "body": [
+            "Tsara → Tsara shafuka yana nuna kowane shafi a cikin raga. Babu abin da zai canza a faifai har sai ka ajiye.",
+            {
+              "points": [
+                "Zaɓa: danna shafi; Ctrl+danna yana ƙara ɗaya, Shift+danna yana ɗaukar jeri. \"Zaɓi dukkan shafuka\", \"Kada a zaɓi komai\", \"Zaɓi shafuka masu lamba mara\" da \"Zaɓi shafuka masu lamba cika\" suna cikin menu.",
+                "Motsawa: ja shafukan da aka zaɓa zuwa sabon wurinsu, ko yi amfani da \"Matsa hagu\" da \"Matsa dama\".",
+                "Juyawa: \"Waɗanda aka zaɓa: juya hagu\" da \"Waɗanda aka zaɓa: juya dama\" suna juya shafukan da aka zaɓa; \"Dukkan shafuka: juya hagu\" da \"Dukkan shafuka: juya dama\" suna juya kowane shafi.",
+                "Gogewa: maɓallin Delete, ko \"Goge shafuka\". Takarda tana riƙe aƙalla shafi ɗaya.",
+                "Kwafa, yankewa da manna (Ctrl+C, Ctrl+X, Ctrl+V): ana iya manna shafuka a cikin takarda ɗaya ko a wata takardar da ke buɗe a cikin shirin.",
+                "Girma: madannin zamiya da ke sama yana ƙara ko rage girman shafuka; haka ma Ctrl + ƙafafun mouse a kan shafukan, da Ƙara girma da Rage girma (Ctrl+= da Ctrl+-). Ana tuna girman."
+              ]
+            },
+            "Waɗannan umarnin suna aiki ba tare da raga ba ma, a kan shafin da ake gani."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Ciro shafuka da raba takarda",
+          "body": [
+            "Tsara → Ciro shafuka yana fitar da shafukan da aka zaɓa a matsayin sabuwar takarda a tab nata, wadda ba a ajiye ba tukuna. Haka kuma za ka iya sa a rubuta kowane shafi a matsayin fayil nasa, ka kuma zaɓi ko za a cire shafukan daga wannan takardar.",
+            "Tsara → Raba takarda yana rubuta takardar a matsayin ƙananan fayiloli da dama; wannan takardar tana tsayawa yadda take.",
+            "Sunayen sababbin takardun suna bin tsare-tsaren da ke cikin Saituna → Sunayen sabbin takardu.",
+            {
+              "note": "Sa hannun da aka yi da takardar shaida ba sa shiga cikin takardun da aka ciro ko aka raba: sa hannu yana aiki ne kawai ga fayil ɗin da aka yi shi a ciki."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Saka da maye gurbin shafuka",
+          "body": [
+            {
+              "points": [
+                "Tsara → Saka shafuka yana ƙara shafukan wani fayil (PDF, hoto, rubutu, takardar ofis) bayan shafin da aka zaɓa, ko a ƙarshe.",
+                "Tsara → Maye gurbin shafuka yana sanya shafukan wani fayil a madadin waɗanda aka zaɓa.",
+                "Saka → Shafi mara komai yana ƙara shafi mara komai mai girman shafin da ke kusa da shi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Datsewa da canza girman shafuka",
+          "body": [
+            "Gyara → Datse shafuka yana datse gefunan shafuka, ta hanyar gefunan da ka rubuta ko ka ja. Ba a cire komai daga fayil ɗin ba: shafukan suna nuna ƙasa da da kawai.",
+            "Gyara → Canza girman shafuka yana sanya shafuka a kan wani girman takarda (A4, Letter da sauransu). Ana iya daidaita girman abin da ke ciki don ya dace ko a bar shi a girmansa, kuma a sanya shi a ɗaya daga cikin wurare tara a sabuwar takardar.",
+            "Duka biyun suna tambayar waɗanne shafuka: duka, waɗanda aka zaɓa, jeri, masu lamba mara ko masu lamba cika."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Haɗa fayiloli",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Tarin fayiloli",
+          "body": [
+            "Haɗa → Sabon tarin fayiloli yana buɗe wuri don tara fayiloli da rubuta su a matsayin PDF ɗaya.",
+            {
+              "steps": [
+                "Ƙara fayiloli da \"Ƙara fayiloli\", ko ka jefa su a kan tarin. Ana iya haɗa PDF, hotuna, rubutu da takardun ofis tare.",
+                "Ja katunan zuwa jerin da kake so, ko yi amfani da kibiyoyin da ke kan kowane kati.",
+                "Buɗe kati don zaɓar waɗanne shafukansa za su shiga.",
+                "\"Haɗa fayiloli\" yana rubuta su, bisa jeri, a matsayin sabuwar takarda ɗaya a tab nata."
+              ]
+            },
+            "Ba a canza fayilolin da kansu ba.",
+            "Madannin zamiya da ke sama yana ƙara ko rage girman shafukan da ke kan katunan; haka ma Ctrl + ƙafafun mouse, da Ƙara girma da Rage girma (Ctrl+= da Ctrl+-). Ana tuna girman."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rubutu da zane a kan shafuka",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Kayan aiki",
+          "body": [
+            "Kayan zane suna buɗewa a matsayin faifan gefe kusa da shafin, a matsayin ragar maɓallai ko jeri da sunaye (Saituna ne ke yanke wannan). Idan kayan aiki yana hannunka, ja ko danna a kan shafin; Esc yana ajiye kayan aikin.",
+            {
+              "points": [
+                "Rubutu: danna ka rubuta. Nau'in rubutu, girma, launi, mai kauri, mai karkata da jeri suna cikin faifan gefe.",
+                "Hoto: zaɓi hoto, sannan ka ja inda zai zauna da girman da kake so.",
+                "Siffofi: murabba'i, da'ira mai tsawo, layi, kibiya, alamar ✓, alamar ✗, ɗigo.",
+                "Haskaka: ja a kan abin da ya kamata ya fito fili; abin da ke ƙarƙashinsa yana ci gaba da zama mai karantuwa."
+              ]
+            },
+            "Da \"Zaɓa, motsa da canza girma\" ana sake ɗaukar alama: ja ta, ja kusurwoyinta, juya ta da maƙallinta, canza launukanta a faifan gefe, ko goge ta da maɓallin Delete. Ana iya kwafar alamomi da manna su, har zuwa wasu shafuka.",
+            "Duk abin da aka zana ana rubuta shi a cikin fayil ɗin lokacin da ka ajiye."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Canza rubutu da hotunan takardar kanta",
+          "body": [
+            "Kayan aikin \"Gyara rubutu da hotunan takardar\" yana zagaye abin da shafin kansa yake da shi. Danna layin rubutu don sake rubuta shi, ko hoto don motsa shi, canza girmansa, juya shi ko goge shi.",
+            {
+              "note": "Wannan yana canza layi ɗaya ko hoto ɗaya a lokaci guda. Sakin layi ba sa sake gudana idan layi ya yi tsawo, kuma hoton da ke kan wani ana ɗaukar su tare. Don manyan canje-canje, gyara takardar a cikin shirin da aka rubuta ta da shi."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Goge har abada",
+          "body": [
+            "Ƙarin kayan aiki → Goge har abada yana cire abin da bai kamata a karanta ba har abada: ja akwati baƙi a kansa, a kowane shafi. Lokacin da ka ajiye, ana cire rubutu da hotunan da ke ƙarƙashin akwatin daga fayil ɗin, ba rufe su kawai ba.",
+            {
+              "note": "Ajiye takardar da aka goge da sabon suna kuma ka ajiye ta asali a wuri mai aminci: abin da aka goge ba za a iya dawo da shi ba."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Alamar ruwa",
+          "body": [
+            "Gyara → Alamar ruwa yana rubuta kalmomi ko sanya hoto a shafukan da ka zaɓa: miƙaƙƙe ko a karkace, a ɗaya daga cikin wurare tara, da girma da dusashewa yadda ka saita. A kowane shafi daga nan alama ce kamar kowace kuma ana iya motsa ta ko cire ta."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Lambobin shafuka, kan shafi da gindin shafi, lambobin Bates",
+          "body": [
+            {
+              "points": [
+                "Gyara → Lambobin shafuka: tsarin (1, 1 / 12, Shafi 1 da sauransu), wurin, da shafukan da za su samu lamba.",
+                "Saka → Kan shafi da gindin shafi: rubutu a kowane ɗaya daga cikin wurare shida. A ciki, {page} yana wakiltar lambar shafi, {pages} adadin shafuka, {date} kwanan watan yau da {file} sunan takardar.",
+                "Saka → Lambobin Bates: lambobi ɗaya bayan ɗaya tare da kalma a gaba ko a baya (ABC000123), kamar yadda ake amfani da su ga takardun shari'a."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mahaɗai, alamomin shafi da fayilolin da aka liƙa",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Mahaɗai",
+          "body": [
+            "Saka → Mahaɗi: ja a kan wurin da ya kamata a danna, sannan ka faɗi inda yake kaiwa: adireshin yanar gizo, ko wani shafi na wannan takardar.",
+            "Mahaɗan takarda suna aiki yayin da kake karanta ta: danna mahaɗi zuwa shafi yana kai ka can; adireshin yanar gizo ko na imel ana miƙa shi ga burauzarka ko shirin imel ɗinka."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Alamomin shafi",
+          "body": [
+            "Saka → Sabuwar alamar shafi: danna wurin da za ta kai ka ba ta lakabi. Saka → Alamomin shafi yana buɗe jerin, inda ana iya canza sunan alamar shafi ko cire ta. Ana rubuta canje-canjen lokacin da ka ajiye."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Fayilolin da aka liƙa",
+          "body": [
+            "Saka → Liƙa fayil: zaɓi fayil ka danna inda kilif ɗinsa zai zauna. Za ka iya ba shi suna da marubuci, canza launin kilif ɗin, canza girmansa da juya shi. Ana ajiye fayil ɗin a cikin PDF lokacin da ka ajiye.",
+            "Saka → Fayilolin da aka liƙa yana jera abin da takardar take ɗauke da shi; ana iya ajiye kowane fayil a faifai ko cire shi. Danna kilif yana buɗe wannan jerin."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fom",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Cike fom",
+          "body": [
+            "Saka → Cike fom yana nuna filayen takardar: rubuta a filayen rubutu, yi wa akwatuna alama, zaɓi daga jeri. Ana rubuta amsoshin a cikin fayil ɗin lokacin da ka ajiye."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Yin fom",
+          "body": [
+            "Menu na Saka yana ƙara filaye a kowace takarda: filin rubutu, akwatin alama, maɓallan zaɓi (waɗanda ɗaya kawai za a iya zaɓa daga cikinsu), jerin zaɓuɓɓuka, da filin sa hannu da aka bar shi babu komai don mai sa hannu.",
+            "Ja a kan shafin inda filin zai zauna. Kamar sauran alamomi, ana iya motsa fili da canza girmansa har sai ka ajiye; bayan haka ya zama ɓangare na fom ɗin."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sa hannu",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Saka sa hannun da ka zana",
+          "body": [
+            "Sa hannu → Saka sa hannu yana sanya hoton sa hannu a shafin: wanda aka zana a nan da alƙalamin da ka zaɓa, aka rubuta da nau'in rubutu, ko aka ɗauka daga hoto (da \"Bar layukan alƙalamin kawai\" don hoton takardar da aka sa wa hannu). Ana iya rubuta kwanan wata a ƙasansa.",
+            "Ja a kan shafin inda zai zauna. Ana ajiye sa hannun da ka yi amfani da su a wannan kwamfutar, don sake amfani da su.",
+            {
+              "note": "Wannan hoto ne: ba ya faɗin komai tabbatacce game da wanda ya sanya shi. Sa hannun da ke tabbatar da wanda ya sa hannu, da cewa babu abin da ya canza tun daga lokacin, ana yin shi ne da takardar shaida."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Sa hannu da takardar shaida",
+          "body": [
+            "Sa hannu → Sa hannu da takardar shaida yana yin sa hannun dijital: yana faɗin wanda ya sa hannu kuma yana rufe takardar, don haka duk wani canji daga baya yana bayyana.",
+            {
+              "steps": [
+                "Ja a kan shafin wurin da sa hannun zai bayyana (wata taga tana fara faɗin haka; ana iya kashe ta). Don sa hannu ba tare da komai a shafukan ba, zaɓi \"Sa hannu ba tare da nuna shi a shafi ba\" maimakon haka.",
+                "Zaɓi takardar shaida: ɗaya daga cikin na kwamfutar (kati ko token yana bayyana a cikinsu da zarar yana cikin mai karanta shi), ko fayil .pfx / .p12 tare da kalmar sirrinsa. \"Ci gaba\".",
+                "Zaɓi siffar sa hannun. A ƙarƙashin \"Dalili da wuri\" za ka iya rubuta dalili da inda kake sa hannu: suna shiga cikin sa hannun, da kuma a kan shafin idan siffar tana nuna su. Yi alama a \"Kulle takardar bayan sa hannu\" idan kada wani ya sa hannu ko ya canza ta bayanka. Bar \"Ƙara lokaci amintacce (tambarin lokaci)\" da alama domin wata hukuma ta tabbatar da lokacin da ka sa hannu.",
+                "\"Sa hannu\", sannan ka zaɓi inda za a ajiye fayil ɗin da aka sa wa hannu. Token yana neman PIN ɗinsa a wannan lokacin."
+              ]
+            },
+            "Fayil ɗin da aka sa wa hannu yana buɗewa a madadin takardar. Shirin ba ya taɓa ajiye kalmar sirri ko PIN.",
+            {
+              "note": "Sa hannu ingantacce (qualified) shine wanda aka yi ta wannan hanya da ingantacciyar takardar shaida, a kan katinta ko token. Ana yin sa hannun a kwamfutarka; tambarin lokaci da binciken takardar shaidarka kawai suke shiga intanet, kuma suna aika sawun dijital da lambar serial ta takardar shaidar, ba takardar ba ko kaɗan."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Siffofin sa hannu",
+          "body": [
+            "Siffa tana nuna yadda sa hannu da takardar shaida yake bayyana a shafi. Ajiye da yawa da sunayen da ka zaɓa: ɗaya don sa hannu a madadin kamfani, ɗaya don sa hannu da sunanka.",
+            {
+              "points": [
+                "Hoto: babu, daga fayil (tambari, sa hannun da aka yi wa sikan) ko wanda aka zana a nan.",
+                "Rubutun da ake nunawa: suna, kwanan wata, dalili, wuri, kowanne tare da lakabinsa ko ba tare da shi ba.",
+                "Layukanka na kanka a ƙarƙashin suna, kamar matsayi da kamfani.",
+                "\"Rubutu na yau da kullum\" yana nan koyaushe: wanda ya sa hannu da yaushe."
+              ]
+            },
+            "A tagar sa hannu: \"Sabuwa…\", \"Gyara…\", \"Goge\". Wadda aka yi amfani da ita a ƙarshe ana fara ba da ita. Ana ajiye siffofi a wannan kwamfutar."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Sa hannu da yawa, da kullewa",
+          "body": [
+            "Mutane da yawa za su iya sa hannu a takarda, ɗaya bayan ɗaya. Buɗe fayil ɗin da aka sa wa hannu ka sa hannu ba tare da canza komai ba: ana ƙara sa hannunka a ƙarshen fayil ɗin kuma na baya suna ci gaba da aiki.",
+            "\"Kulle takardar bayan sa hannu\" (a kashe sai idan ka yi masa alama) yana rufe takardar: babu wanda zai iya sa hannu bayanka kuma ba za a iya canza komai ba. Ba za a iya soke wannan ba.",
+            {
+              "note": "Idan ka canza takardar da aka sa wa hannu kafin ka sake sa hannu, dole a sake rubuta ta kuma ana barin sa hannun na baya. Tagar sa hannu tana gargaɗinka: don kiyaye su, sake buɗe fayil ɗin ka sa hannu ba tare da canza komai ba."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Tambarin lokaci",
+          "body": [
+            "Tambarin lokaci shaida ce da hukumar tambarin lokaci ta sa wa hannu game da lokacin da wani abu ya kasance. In ba haka ba, lokacin da ke cikin sa hannu yana fitowa daga agogon kwamfutar wanda ya sa hannu, wanda kowa zai iya saitawa; tambarin lokaci yana tabbatar da lokacin, kuma yana sa a iya tabbatar da sa hannun ko bayan takardar shaida ta ƙare (PAdES B-T).",
+            {
+              "points": [
+                "Sa hannu yana samun tambarin lokaci idan an yi wa \"Ƙara lokaci amintacce (tambarin lokaci)\" alama a tagar sa hannu. Saituna → Sa hannu yana nuna ko yana farawa da alama, a nan da kuma a sarrafa fayiloli da yawa.",
+                "Sa hannu → Saka tambarin lokaci yana ba dukkan takardar tambarin lokacinta, ba tare da takardar shaida ba: yana tabbatar da cewa takardar ta kasance, daidai yadda take, a wannan lokacin. Ana ajiye ta a matsayin sabon fayil; sa hannun da fayil ɗin yake da su suna ci gaba da aiki."
+              ]
+            },
+            "Hukumar ita ce ta DigiCert (http://timestamp.digicert.com), kyauta ce kuma Adobe Reader da Windows sun aminta da ita; ana iya saita wata a Saituna → Sa hannu. Sawun dijital (SHA-256) kawai take karɓa, ba takardar ba ko kaɗan, kuma ana buƙatar haɗin intanet. Idan sa hannu ya sami tambarin lokaci, ana kuma tambayar wanda ya bayar da takardar shaidarka ko har yanzu takardar shaidar tana aiki, kuma ana ajiye amsarsa a cikin sa hannun (tabbatarwa na dogon lokaci): ta haka Adobe Reader zai iya nuna sa hannun a matsayin sahihi, yanzu da kuma bayan takardar shaidar ta ƙare.",
+            {
+              "note": "Idan ba a iya isa ga hukumar ba, ba a sa hannu ko rubuta komai: sake gwadawa, ko cire alamar tambarin lokaci don sa hannu ba tare da shi ba."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Tabbatar da sa hannu",
+          "body": [
+            "Sa hannu → Tabbatar da sa hannu yana jera kowane sa hannu da takardar shaida na fayil ɗin: wanda ya sa hannu, wanda ya bayar da takardar shaidar, yaushe, dalili da wuri, da kuma",
+            {
+              "points": [
+                "ko ba a canza takardar ba tun wannan sa hannun (wani sa hannu da aka ƙara daga baya ba a ɗauke shi a matsayin canji ba);",
+                "ko sa hannun yana kulle takardar;",
+                "ko wannan kwamfutar ta aminta da hukumar da ke bayan takardar shaidar, da kuma ko takardar shaidar tana aiki a yau;",
+                "lokacin da tambarin lokacinsa ya tabbatar, da wace hukuma, idan yana da shi. Ana kuma jera tambarin lokaci na dukkan takardar, tare da nasa dubawar."
+              ]
+            },
+            "Dubawar ta fayil ɗin ne kamar yadda aka ajiye shi a ƙarshe kuma ana yin ta a wannan kwamfutar, ba tare da shiga intanet ba. Danna wani sa hannu a shafi yana buɗe wannan jerin a kan sa hannun. A ƙarƙashin kowane sa hannu, “Nuna takardar shaida” tana buɗe tagar Windows ta takardar shaidar (sarƙarta da duk bayananta; daga can, “Shigar da takardar shaida” tana sa wannan kwamfutar ta aminta da takardar shaidar da ka sani), kuma “Tabbatar” tana tambayar wanda ya bayar da takardar shaidar ta intanet, sai lokacin da ka danna ta kawai, ko an janye takardar shaidar."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ƙarin kayan aiki",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Gane rubutu (OCR)",
+          "body": [
+            "Ƙarin kayan aiki → Gane rubutu (OCR) yana karanta kalmomin shafukan da aka yi wa sikan kuma yana rubuta su a cikin shafukan ba tare da an gani ba, don a iya bincike a cikin takardar, a kwafi rubutunta kuma a fitar da shi. Yadda shafukan suke ba ya canzawa.",
+            "Yi alama kawai a kan harsunan da aka rubuta shafukan da su; shafukan da suke da rubutu tuni ana barin su yadda suke.",
+            {
+              "note": "Injin Tesseract ne yake karatun, shiri ne kyauta da ake saka shi daban. Idan babu shi, tagar tana nuna umarnin da ke saka shi a Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Rage girman takarda",
+          "body": [
+            "Ƙarin kayan aiki → Rage girman fayil yana ajiye takardar a matsayin ƙaramin fayil ta hanyar ba hotunanta da sikan ƙarancin pikisal. Akwai matakai uku; rubutu da zane-zane suna tsayawa a fili yadda suke. Takardar da ke da hotuna kaɗan ba ta samun raguwa sosai."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Kwatanta takardu biyu",
+          "body": [
+            "Ƙarin kayan aiki → Kwatanta takardu: zaɓi wani PDF. Ana nuna su biyun gefe da gefe, shafi bayan shafi, tare da alama a kan shafukan da rubutunsu ya bambanta da jerin layukan da kowanne yake da su shi kaɗai."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Sarrafa fayiloli da yawa: fayiloli da yawa lokaci ɗaya",
+          "body": [
+            "Ƙarin kayan aiki → Sarrafa fayiloli da yawa yana yin abu ɗaya ga fayiloli da yawa, a tab nasa. Kowane sakamako sabon fayil ne. Idan sakamako za su maye gurbin fayilolin da ke cikin folda tuni (fayilolinka na kanka, idan suka je foldarsu ba tare da an ƙara komai a sunayensu ba), za a fara tambayarka ko a maye gurbinsu, a tsallake su, ko a soke. Ana maye gurbin fayil ne kawai bayan sakamakonsa ya kammala; wanda ke buɗe (a tab a nan ko a wani shiri) ana barin shi yadda yake kuma a yi masa alama cewa ba a gama ba.",
+            {
+              "steps": [
+                "A hagu, ƙara fayilolin: \"Ƙara fayiloli\", \"Ƙara folda\" (tare da foldojin da ke cikinta), ko ka jefa su a ciki.",
+                "A dama, yi alama a kan abin da za a yi. Kowane fayil yana zama PDF a kowane hali; ban da haka za ka iya juya shafuka, gane rubutu, ƙara kan shafi da gindin shafi, alamar ruwa ko lambobin shafuka, rage girman fayiloli, sa musu hannu da takardar shaida, ko rubuta su a wani tsari. Lambobin suna nuna jerin.",
+                "Zaɓi abin da ake rubutawa: fayil ɗaya ga kowanne, ko komai a cikin PDF ɗaya (bisa jerin), da folda inda sakamakon zai shiga. Idan duk fayilolin sun fito daga folda ɗaya, za a zaɓar maka wannan foldar har sai ka zaɓi wata; in ba haka ba, ita ce foldar da ka zaɓa ta ƙarshe.",
+                "\"Fara\". Kowane fayil yana nuna yadda ya kasance; ana iya dakatar da aikin tsakanin fayiloli."
+              ]
+            },
+            {
+              "points": [
+                "Tsare-tsaren aiki: \"Ajiye a matsayin tsarin aiki\" yana ajiye duk abin da ka zaɓa (ban da fayilolin da kowace kalmar sirri) da suna, don a sake saita shi da zaɓi ɗaya.",
+                "\"Kiyaye foldojin fayilolin a cikin sakamakon\" yana sake gina foldojin folda da aka ƙara.",
+                "\"Rubuta rahoton aikin\" yana barin fayil ɗin rubutu a gefen sakamakon da ke faɗin abin da aka rubuta da abin da bai yi nasara ba.",
+                "PDF da aka sa wa hannu kawai yana riƙe sa hannun da yake da su; idan aka yi masa wani abu kuma a cikin aiki ɗaya, ana sake rubuta shi kuma ana barin su."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Saituna",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Saitunan PDF Organizer",
+          "body": [
+            "Fayil → Saituna (ko Saituna a layin gefe, sannan PDF Organizer). Ana iya mayar da kowane saiti zuwa na asali shi kaɗai, ko duka lokaci ɗaya.",
+            {
+              "points": [
+                "Lokacin da takarda take buɗuwa: girman da ake nuna takarda da shi lokacin da take buɗewa, gungurawa ko shafi ɗaya a lokaci guda, nuna ƙananan hotunan shafuka ko a'a.",
+                "Ma'auni, rula da raga: ma'aunin (milimita, inci, poyinti), rula, raga da tazararta.",
+                "Bugawa: takarda, fuskantar shafi da girman da tagar bugawa take farawa da su.",
+                "Sandar kayan aiki ta gaggawa: waɗanne maɓallai layin da ke saman shafuka yake da su.",
+                "Sunayen sabbin takardu: tsare-tsaren sunaye don shafukan da aka ciro, sababbin takardu da PDF ɗin da sarrafa fayiloli da yawa yake tara fayiloli da yawa a ciki.",
+                "Sa hannu: ko \"Ajiye\" yana tambaya kafin ya rubuta a kan fayil da aka sa wa hannu.",
+                "Gajerun hanyoyin madannai: danna maɓallan wani umarni, sannan ka danna sababbi."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Game da PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Game da PDF Organizer",
+          "body": [
+            "PDF Organizer ita ce manhajar PDF ta Syntelab Creative: tana karanta takardun PDF, tana tsara da haɗa shafukansu, tana rubutu da zane a kansu, tana cike da yin fom, tana sa hannu da takardar shaida da tabbatar da sa hannu, kuma tana yin abu ɗaya ga fayiloli da yawa lokaci ɗaya.",
+            "Sabuwa ce, kuma wasu daga cikin abin da take yi matakin farko ne. Inda ta gaza ga takardunka, faɗa mana ta Taimako → Ra'ayi: ta haka muke sanin abin da za mu yi aiki a kai."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Abin da aka gina PDF Organizer da shi",
+          "body": [
+            {
+              "points": [
+                "Karantawa, zane da rubuta PDF: MuPDF.",
+                "Gane rubutu (OCR): Tesseract, idan an saka shi a kwamfutar.",
+                "Buɗe takardun ofis: Word, Excel da PowerPoint, ko LibreOffice, duk wanda aka saka.",
+                "Ajiye shafin yanar gizo a matsayin PDF: burauzar da aka saka a kwamfutar.",
+                "Sa hannu da takardar shaida: ayyukan takardar shaida na Windows; ana rubuta sa hannu yadda ma'aunin PAdES ya buƙata."
+              ]
+            },
+            "Abin da take rabawa da sauran shirin yana ƙarƙashin \"Game da Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Abin da PDF Organizer ba ta iya yi ba tukuna",
+          "body": [
+            {
+              "points": [
+                "Takardun ofis ana buɗe su ta rukunin shirye-shiryen ofis da ke kan kwamfutar; idan babu Word, Excel, PowerPoint ko LibreOffice ba za a iya buɗe su ba. Ana aiki a kan namu mai canzawa: duba \"Abin da muke aiki a kai\".",
+                "Gane rubutu yana buƙatar injin Tesseract, wanda ake saka shi daban.",
+                "Ana canza rubutun takardar kanta layi ɗaya a lokaci guda; sakin layi ba sa sake gudana.",
+                "Hotunan da aka buga da tawada huɗu (CMYK) ba za a iya ɗaukar su a motsa su ba.",
+                "“Tabbatar” tana faɗin ko an janye takardar shaida a yau, amma ba ta faɗin lokacin da aka janye ta ba.",
+                "Sa hannu da takardar shaida yana aiki a Windows a yanzu; a Linux da macOS zai zo a wani sabon sigar nan gaba."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

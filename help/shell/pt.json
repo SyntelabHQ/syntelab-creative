@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Primeiros passos",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "O que é o Syntelab Creative",
+          "body": [
+            "O Syntelab Creative é um programa composto por aplicações. Cada aplicação trata de um tipo de trabalho:",
+            {
+              "points": [
+                "O PDF Organizer lê, organiza, edita e assina documentos PDF.",
+                "O Scribe é um editor de texto com ferramentas para limpar, ordenar, comparar e transformar texto.",
+                "O Units converte entre unidades: comprimento, temperatura, moedas e muitas outras.",
+                "O Dev reúne ferramentas para programadores: codificar e descodificar, formatar e validar, e converter dados entre formatos."
+              ]
+            },
+            "As aplicações partilham a mesma janela, as mesmas definições e a mesma forma de trabalhar. Assim, o que aprendes numa aplica-se às restantes.",
+            {
+              "note": "Tudo acontece no teu computador. Os teus documentos nunca são enviados para lado nenhum e não são recolhidos dados sobre ti nem sobre o teu trabalho."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "A janela",
+          "body": [
+            {
+              "points": [
+                "A barra lateral: o ícone da casa abre o Início, seguem-se as tuas aplicações e, no fundo, as notícias do programa, Comentários, Apoiar e Definições.",
+                "Numa aplicação, Ficheiro → Ir para o início abre a página inicial dessa aplicação, quando existe (Units, Scribe). Ficheiro → Abrir definições (Ctrl+,) abre as Definições na secção dessa aplicação; as restantes secções ficam a um clique.",
+                "Os separadores no topo: cada documento, conjunto de documentos ou ferramenta que abrires tem o seu próprio separador. Um ponto no separador indica que há alterações por guardar.",
+                "Os menus da aplicação, por baixo dos separadores: podem aparecer numa barra de menus, num friso ou num painel lateral, conforme escolheres.",
+                "O resto da janela corresponde ao separador que está em primeiro plano."
+              ]
+            },
+            "Se fechares um separador com alterações por guardar, é-te pedida confirmação. O mesmo acontece ao fechar o programa."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Início",
+          "body": [
+            "O Início apresenta as tuas aplicações e os ficheiros abertos recentemente. Clica numa aplicação para a abrir ou num ficheiro recente para o voltar a abrir.",
+            "Podes apresentar as aplicações em cartões, como ícones com nomes ou apenas como ícones, e arrastá-las para as ordenar como preferires. Com o teclado, usa Alt e as teclas de seta. «Repor predefinições» restaura a ordem original.",
+            "Cada aplicação também tem o seu próprio atalho no menu Iniciar do Windows, como «Syntelab PDF Organizer» ou «Syntelab Units»: abre o programa diretamente nessa aplicação. Se o programa já estiver aberto, a aplicação abre num novo separador."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Abrir ficheiros",
+          "body": [
+            {
+              "points": [
+                "Numa aplicação: Ficheiro → Abrir ou Ctrl+O.",
+                "Arrastando ficheiros de uma pasta para a janela.",
+                "No gestor de ficheiros do sistema: faz duplo clique num ficheiro associado ao programa. No Explorador de Ficheiros do Windows, também podes usar o menu de contexto (ver «O menu de contexto do Explorador de Ficheiros do Windows»).",
+                "A partir do Início: a lista de ficheiros recentes."
+              ]
+            },
+            "O programa funciona numa única instância. Se abrires um ficheiro no gestor de ficheiros enquanto o programa está em execução, este é aberto num novo separador da mesma janela."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personalizar",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Disposição: barra de menus, friso ou painel lateral",
+          "body": [
+            "Os comandos de uma aplicação podem ser apresentados de três formas. Os comandos são os mesmos; só muda a sua disposição.",
+            {
+              "points": [
+                "Clássica: uma barra de menus e uma barra de ferramentas.",
+                "Friso: botões grandes organizados por grupos com nomes, num separador para cada menu. Podes recolhê-lo para dar mais espaço ao documento.",
+                "Painel lateral: ferramentas num painel à esquerda ou à direita, que podes recolher para mostrar apenas ícones."
+              ]
+            },
+            "Escolhe a disposição de todas as aplicações em Definições → Geral → Disposição. Uma aplicação pode ter uma disposição própria, escolhida na respetiva secção das Definições ou no menu Ver. Nesse caso, deixa de seguir a disposição geral até escolheres «Usar a disposição geral»."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Definições → Geral → Tema: Claro, Escuro, Cinzento-claro, Cinzento-escuro ou Automático, que segue a definição de tema claro ou escuro do sistema.",
+            "O tema nunca altera as cores das páginas de um documento: o papel mantém o seu aspeto original."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Idioma",
+          "body": [
+            "Definições → Geral → Idioma. O programa está disponível em 62 idiomas. «Idioma do sistema» segue o idioma do teu computador. Podes pesquisar na lista pelo nome nativo do idioma, pelo nome na tua língua ou pelo nome em inglês.",
+            "O texto ainda não traduzido é apresentado em inglês, nunca como um código."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Separadores",
+          "body": [
+            {
+              "points": [
+                "«Manter o separador Início entre os separadores»: quando está desativado, o separador Início só aparece enquanto o próprio Início está em primeiro plano; o ícone da casa na barra lateral permite sempre voltar ao Início.",
+                "O indicador de um separador pode ser o ícone da aplicação ou um quadrado simples com a cor da aplicação."
+              ]
+            },
+            "Quando há mais separadores do que os que cabem no ecrã, as setas nas extremidades da faixa permitem percorrê-los e «Mais separadores» apresenta a lista completa."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orientar-se",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Procurar um comando",
+          "body": [
+            "A caixa de pesquisa («Pesquisar aplicações, ferramentas e comandos») encontra qualquer comando do separador em primeiro plano pelo nome, no teu idioma ou em inglês. Escolhe um resultado para o executar.",
+            "Os comandos planeados mas ainda não implementados aparecem esbatidos nos menus e não são incluídos na pesquisa."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Atalhos de teclado",
+          "body": [
+            "As teclas de um comando aparecem junto ao respetivo nome nos menus e na descrição. Os mais utilizados:",
+            {
+              "points": [
+                "Ctrl+O: abrir um ficheiro",
+                "Ctrl+S: guardar; Ctrl+Shift+S: guardar como",
+                "Ctrl+P: imprimir",
+                "Ctrl+Z e Ctrl+Y: anular e refazer",
+                "Ctrl+F: procurar no documento",
+                "Ctrl+W: fechar o separador",
+                "Ctrl+Tab e Ctrl+Shift+Tab: separador seguinte e anterior",
+                "Ctrl+, (vírgula): Definições",
+                "F1: esta Ajuda",
+                "Escape: sair do ecrã inteiro ou do modo de leitura, ou pousar a ferramenta selecionada"
+              ]
+            },
+            "As teclas dos comandos do programa (separadores, Definições, Ajuda) são alteradas em Definições → Geral → Atalhos de teclado; as dos comandos de uma aplicação, na respetiva secção das Definições. Clica nas teclas de um comando e, em seguida, prime as novas teclas."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Utilizar esta Ajuda",
+          "body": [
+            "A Ajuda depende do local a partir do qual a abres. Numa aplicação, vês apenas o manual dessa aplicação e os comandos do separador de onde vieste. Na página inicial ou nas Definições, vês «Acerca de» (uma breve apresentação do programa e de cada aplicação) e o manual do programa. Ajuda → Acerca de abre sempre a secção «Acerca de».",
+            "O índice encontra-se à esquerda; a pesquisa acima procura em todos os tópicos, nos títulos e no texto.",
+            "A Ajuda abre num separador próprio, para poderes alternar entre ela e o teu trabalho; F1 volta a trazê-la para a frente. Em «Comandos do separador de origem», cada menu desse separador é apresentado com os respetivos comandos, atalhos e descrições: abre a Ajuda no separador sobre o qual tens dúvidas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "O menu de contexto do Explorador de Ficheiros do Windows",
+          "body": [
+            "Definições → Geral → Explorador de Ficheiros do Windows → «Mostrar Syntelab Creative no menu de contexto de ficheiros e pastas» adiciona opções para os ficheiros que o programa consegue ler: «Converter para PDF com o PDF Organizer» e «Combinar ficheiros no PDF Organizer», cada uma com o ícone do PDF Organizer, e «Syntelab Dev», que abre ao lado com Somas de verificação, Comparar e Visualização hexadecimal.",
+            "As opções são adicionadas apenas para a tua conta, sem exigir direitos de administrador, e desaparecem quando desativas esta opção. No Windows 11, encontram-se em «Mostrar mais opções». Iniciam sempre o programa instalado: se este tiver sido movido ou reinstalado noutro local, corrige-as quando é iniciado.",
+            {
+              "note": "Ao escolher «Combinar ficheiros no PDF Organizer» para vários ficheiros, abre-se um conjunto de documentos com esses ficheiros; «Converter para PDF com o PDF Organizer» abre o processamento em lote com os mesmos ficheiros."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privacidade, atualizações e contacto",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "O que acede à Internet e o que nunca o faz",
+          "body": [
+            "O programa não recolhe nada: nem dados de utilização, nem nomes de ficheiros, nem relatórios de falhas enviados automaticamente.",
+            "O programa só acede à Internet nos seguintes casos, sempre a teu pedido:",
+            {
+              "points": [
+                "Verificar atualizações e notícias (dois ficheiros pequenos lidos de syntelab.com), quando o pedes ou, se o tiveres autorizado, ao iniciar o programa; e transferir uma versão nova, apenas quando premes «Atualizar».",
+                "Guardar uma página Web em PDF (PDF Organizer) e obter o texto de uma página Web (Scribe), a partir do endereço que introduziste.",
+                "Quando clicas numa ligação num documento, esta é passada ao teu navegador ou programa de correio eletrónico.",
+                "Comentários e Apoiar: abrem uma página de syntelab.com no teu navegador."
+              ]
+            },
+            "A assinatura com um certificado e a verificação de assinaturas são feitas no teu computador, sem aceder à Internet."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Atualizações",
+          "body": [
+            "Definições → Geral → Atualizações → «Procurar atualizações». Quando existe uma versão mais recente, uma janela mostra-te as novidades e apresenta a opção «Atualizar».",
+            "«Atualizar» transfere a nova versão, confirma que vem realmente de nós (tem de estar assinada com a nossa chave; qualquer outra é rejeitada) e instala-a por cima da atual. As tuas definições são mantidas e o programa reinicia. Nada é transferido até premires este botão.",
+            "Se não for possível instalar a atualização desta forma (cópia portátil, pacote Linux ou ausência de ligação à rede), «Transferir» abre a página de transferências no navegador; instala a nova versão por cima da atual e as tuas definições serão mantidas.",
+            "Podes desativar «Procurar atualizações e notícias ao iniciar o programa»; em qualquer caso, não são enviados dados sobre ti nem sobre o teu computador."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Comentários e apoio",
+          "body": [
+            "Ajuda → Comentários: pede uma nova aplicação, uma nova funcionalidade ou uma alteração, ou comunica um problema. Todas as mensagens são lidas.",
+            "Ajuda → Apoiar: o programa é gratuito; aqui podes ajudar a garantir a sua continuidade."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Sobre o Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Sobre o Syntelab Creative",
+          "body": [
+            "O Syntelab Creative é um conjunto gratuito de aplicações para o trabalho quotidiano com documentos, texto e dados, criado pela Syntelab (syntelab.com). Começa com quatro aplicações: PDF Organizer, Scribe, Units e Dev. Outras serão adicionadas na mesma janela.",
+            {
+              "points": [
+                "Sempre gratuito.",
+                "Não recolhe dados: nada sobre ti, o teu computador ou o teu trabalho.",
+                "Sem funcionalidades reservadas: não há versão paga, funcionalidades bloqueadas nem limites impostos deliberadamente. Os únicos limites são os da tecnologia atual e da capacidade do teu computador."
+              ]
+            },
+            "Não temos financiamento. O programa é criado nos nossos tempos livres, tanto quanto esses tempos o permitem. Queremos mesmo criar software de qualidade, e isso exige tempo e paciência: da nossa parte, para o desenvolver, e da tua, enquanto continua a crescer.",
+            "O programa melhora a cada versão. Os problemas comunicados são corrigidos e os pedidos de funcionalidades são ponderados para as próximas versões.",
+            {
+              "note": "Os teus documentos permanecem no teu computador. O programa não recolhe dados sobre ti nem sobre o teu trabalho; consulta «O que acede à Internet e o que nunca o faz»."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Como podes ajudar",
+          "body": [
+            "Existem três formas de ajudar, e todas contam:",
+            {
+              "points": [
+                "Diz-nos o que pensas: Ajuda → Comentários. Um problema que encontraste, algo em falta ou algo mais difícil do que devia ser. Lemos todas as mensagens.",
+                "Fala do programa e do nosso trabalho a outras pessoas. Quanto mais pessoas o utilizarem, mais comentários recebemos e melhor percebemos o que realmente importa. Também nos mostra que o nosso trabalho é apreciado: o nosso e o de todas as pessoas que participam, ou virão a participar, no projeto.",
+                "Apoia o projeto com um donativo, se puderes: Ajuda → Apoiar-nos. Isso dá-nos mais tempo para trabalhar nele."
+              ]
+            },
+            "Ninguém te pede que faças qualquer uma destas coisas. O programa é gratuito e continuará sempre gratuito, completo e disponível para todos."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Tecnologias utilizadas",
+          "body": [
+            "O programa assenta no trabalho de muitas pessoas. Tecnologias partilhadas por todas as aplicações:",
+            {
+              "points": [
+                "A janela e tudo o que vês: Tauri, com a vista Web do sistema (WebView2 no Windows, WebKitGTK no Linux e WKWebView no macOS); desenvolvido em TypeScript com React.",
+                "A componente que executa o trabalho: desenvolvida em Rust.",
+                "Fontes e ícones: Sansation, IBM Plex Sans e Font Awesome Free."
+              ]
+            },
+            "As tecnologias adicionais de cada aplicação são indicadas na respetiva página «Acerca de». Agradecemos às pessoas que desenvolveram estes projetos."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "O que ainda não consegue fazer",
+          "body": [
+            "Para saberes antes de contares com elas:",
+            {
+              "points": [
+                "Alguns textos ainda aguardam tradução. Até lá, são apresentados em inglês, nunca como código.",
+                "Atualmente, o menu de contexto do gestor de ficheiros só está disponível no Explorador de Ficheiros do Windows.",
+                "Atualmente, a assinatura com um certificado só funciona no Windows; estará disponível no Linux e no macOS numa versão futura."
+              ]
+            },
+            "Os limites de cada aplicação estão descritos na respetiva página «Acerca de». Se algum deles for um obstáculo, diz-nos através de Ajuda → Comentários: isso ajuda-nos a decidir o que fazer primeiro."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Em que estamos a trabalhar",
+          "body": [
+            "As quatro aplicações continuarão a evoluir: os problemas e pedidos enviados através de Ajuda → Comentários ajudam a decidir o que fazer primeiro. Também estamos a preparar novas aplicações. O Início só as mostra se quiser: assinale-as no menu «Ver» do Início para as ver aí como «Em breve»:",
+            {
+              "points": [
+                "Convert: conversão de ficheiros entre formatos, incluindo documentos de escritório para PDF e vice-versa, sem precisar de instalar outro programa. Ainda não encontrámos uma tecnologia aberta com a qualidade que pretendemos, por isso só será lançada quando estiver à altura das tuas expectativas; onde não existirem ferramentas adequadas, iremos criá-las.",
+                "Pixel: ferramentas para imagens, como redimensionamento e compressão, remoção de fundos, cores e códigos QR.",
+                "Metadata: consulta e remoção de dados ocultos de fotografias, vídeos e documentos antes de os partilhar.",
+                "Wizard: seletores e geradores aleatórios, como uma roda da sorte, dados, uma moeda ou nomes sorteados de uma lista."
+              ]
+            },
+            "Nas aplicações já disponíveis, estamos a trabalhar nos pontos indicados nas respetivas páginas «O que ainda não consegue fazer», como um carimbo temporal fiável para assinaturas, assinatura com certificado no Linux e macOS e verificação ortográfica no Scribe.",
+            "Também haverá mais formas de instalação: Microsoft Store e winget no Windows, Flathub e Snap no Linux.",
+            {
+              "note": "As novidades de cada versão encontram-se no botão de notícias da barra lateral; Definições → Geral → Atualizações procura uma versão mais recente."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

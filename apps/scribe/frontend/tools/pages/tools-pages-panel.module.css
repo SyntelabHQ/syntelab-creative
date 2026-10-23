@@ -1,0 +1,196 @@
+/* The tools as two pages of one panel: the list, and the tool that was chosen. */
+.panel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+}
+
+/* Looking for a tool by its name: at the top of both pages. */
+.finder {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-muted);
+}
+
+.finder:focus-within {
+  border-color: var(--sc-accent);
+}
+
+.find {
+  flex: 1;
+  min-width: 0;
+  min-height: 30px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  outline: none;
+}
+
+/* What scrolls: the list, or the choices of the tool. The head and the foot stay where they are. */
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 0;
+  overflow-y: auto;
+  /* Room for the bar that scrolls, so nothing stands under it. */
+  padding-inline-end: 2px;
+}
+
+.group {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.groupName {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 2px;
+  border: 0;
+  background: none;
+  color: var(--sc-muted);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: start;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.groupName:hover {
+  color: var(--sc-text);
+}
+
+/* The tools of a group, as many to a line as the panel has room for: two when it is narrow, more when it is dragged wider. */
+.tiles {
+  display: grid;
+  flex: none;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: 3px;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 3px 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: start;
+  cursor: pointer;
+}
+
+.tile > svg {
+  flex: none;
+  color: var(--sc-muted);
+}
+
+.tile > span {
+  /* Two lines of a name at most: the whole of it is in what is shown over the tool. */
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.tile:hover {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+/* The page of a tool: the way back, its name, and what it does when asked. */
+.head {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 4px;
+}
+
+.title {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  font-weight: 700;
+}
+
+.title > svg {
+  flex: none;
+}
+
+.hint {
+  flex: none;
+  margin: 0;
+  overflow: hidden;
+  color: var(--sc-muted);
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.hint[data-whole='true'] {
+  overflow: visible;
+  white-space: normal;
+}
+
+.count,
+.scope {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+/* The foot: what the tool is applied to or what it did, and its button, always in sight. */
+.foot {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: 6px;
+  padding-block-start: 8px;
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.actions > button[type='submit'] {
+  flex: 1;
+}
+
+.done {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.problem {
+  margin: 0;
+  color: var(--sc-danger);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,50 @@
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding-block: 40px;
+  padding-inline: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 960px;
+  padding: 40px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-l);
+  background: var(--sc-surface);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hint {
+  margin: 0;
+  color: var(--sc-muted);
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}

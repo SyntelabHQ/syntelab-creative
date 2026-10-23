@@ -1,0 +1,97 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--sc-surface-2);
+}
+
+.button:disabled {
+  color: var(--sc-muted);
+  cursor: default;
+  opacity: 0.55;
+}
+
+.button[aria-pressed='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.icon {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  color: var(--sc-muted);
+}
+
+.button[aria-pressed='true'] .icon {
+  color: var(--sc-accent);
+}
+
+.button[data-shape='icon'] {
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.button[data-shape='tile'] {
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-width: 68px;
+  max-width: 104px;
+  min-height: 60px;
+  padding: 6px 8px;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.button[data-shape='tile'] .icon {
+  height: 22px;
+}
+
+/* At most two lines of name, so every tab of the ribbon keeps its height. */
+.button[data-shape='tile'] .label {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.button[data-shape='row'] {
+  width: 100%;
+  min-height: 36px;
+  padding-inline: 10px;
+  text-align: start;
+}
+
+.button[data-shape='row'] .icon {
+  width: 18px;
+}
+
+.button[data-shape='small'] {
+  gap: 6px;
+  min-height: 24px;
+  padding-block: 1px;
+  padding-inline: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  text-align: start;
+}
+
+.button[data-shape='small'] .icon {
+  width: 16px;
+}
+
+.label {
+  overflow-wrap: anywhere;
+}

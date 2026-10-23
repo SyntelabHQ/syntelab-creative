@@ -1,0 +1,91 @@
+/* One tab: the strip that says something, the text, the line under it. */
+.view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: var(--sc-surface);
+}
+
+/* The letters of the text: of one width, or the program's own. */
+.view[data-font='mono'] {
+  font-family: 'Cascadia Mono', 'Cascadia Code', Consolas, ui-monospace, 'DejaVu Sans Mono', Menlo, monospace;
+}
+
+/* While the opening page is shown the text waits out of sight, as it is. */
+.work[hidden] {
+  display: none;
+}
+
+/* The text (with, beside or under it, the result of a tool) and the panel of tools. */
+.work {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.panes {
+  position: relative;
+  display: flex;
+  flex: 1;
+  /* Room for the text alone; beside a result, for the two of them. The panel gives way before they do. */
+  min-width: 170px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.panes[data-dual='true']:not([data-stacked='true']) {
+  min-width: 342px;
+}
+
+.panes[data-stacked='true'] {
+  flex-direction: column;
+}
+
+/* The pane of the text itself: alone it takes all the room; beside a result, its share. */
+.pane {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  /* Never so narrow that its head has nowhere to stand. */
+  min-width: 170px;
+  min-height: 0;
+}
+
+.fact {
+  color: var(--sc-muted);
+}
+
+.said {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px 6px 14px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-accent-soft);
+  /* What the program says is in its own letters and size, whatever the text is written in. */
+  font-family: var(--sc-font, system-ui);
+  font-size: 14px;
+}
+
+.said[data-kind='problem'] {
+  background: color-mix(in srgb, var(--sc-danger) 12%, var(--sc-surface));
+}
+
+.said[data-kind='problem'] > svg {
+  color: var(--sc-danger);
+}
+
+.saidText {
+  flex: 1;
+  min-width: 0;
+}
+
+.waiting {
+  margin: auto;
+  color: var(--sc-muted);
+  font-family: var(--sc-font, system-ui);
+  font-size: 15px;
+}

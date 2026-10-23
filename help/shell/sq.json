@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Fillimi i punës",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Çfarë është Syntelab Creative",
+          "body": [
+            "Syntelab Creative është një program i vetëm i përbërë nga aplikacione. Çdo aplikacion kryen një lloj pune:",
+            {
+              "points": [
+                "PDF Organizer lexon, rregullon, redakton dhe nënshkruan dokumente PDF.",
+                "Scribe është një redaktor teksti me vegla që pastrojnë, rendisin, krahasojnë dhe transformojnë tekstin.",
+                "Units konverton ndërmjet njësive: gjatësi, temperaturë, monedha dhe shumë të tjera.",
+                "Dev mbledh vegla për zhvilluesit: kodim dhe dekodim, formatim dhe kontroll, kthim i një forme të dhënash në një tjetër."
+              ]
+            },
+            "Aplikacionet ndajnë një dritare, një grup cilësimesh dhe një mënyrë pune, kështu që ajo që mësoni në njërin vlen njësoj edhe në tjetrin.",
+            {
+              "note": "Çdo gjë ndodh në kompjuterin tuaj. Dokumentet tuaja nuk dërgohen kurrë askund dhe asgjë rreth jush ose punës suaj nuk mblidhet."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Dritarja",
+          "body": [
+            {
+              "points": [
+                "Shiriti anësor: shtëpia të çon te Fillimi, pastaj vijnë aplikacionet tuaja dhe poshtë lajmet e programit, Komentet, Mbështetje dhe Cilësimet.",
+                "Në një aplikacion, Skedari → Shko te Fillimi të çon në faqen e parë të atij aplikacioni, kur ka një të tillë (Units, Scribe), dhe Skedari → Hap Cilësimet (Ctrl+,) hap Cilësimet te pjesa e atij aplikacioni; pjesët e tjera janë aty vetëm një klikim larg.",
+                "Skedat lart: çdo dokument, koleksion ose vegël që hapni ka skedën e vet. Një pikë në skedë tregon se ka ndryshime të paruajtura.",
+                "Menutë e aplikacionit, nën skedat: si shirit menuje, si shirit ose si panel anësor, sipas zgjedhjes suaj.",
+                "Pjesa tjetër e dritares është skeda në plan të parë."
+              ]
+            },
+            "Mbyllja e një skede me ndryshime të paruajtura pyet më parë; po ashtu edhe mbyllja e programit."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Fillimi",
+          "body": [
+            "Fillimi tregon aplikacionet tuaja dhe skedarët që keni hapur së fundmi. Klikoni një aplikacion për ta hapur; klikoni një skedar të fundit për ta hapur përsëri.",
+            "Aplikacionet mund të shfaqen si karta, si ikona me emra ose vetëm si ikona dhe mund të tërhiqen në renditjen që dëshironi. Me tastierë: Alt dhe tastet e shigjetave. \"Rikthe parazgjedhjen\" i kthen në vend.",
+            "Çdo aplikacion ka gjithashtu shkurtoren e vet në menunë Start të Windows, si \"Syntelab PDF Organizer\" ose \"Syntelab Units\": ajo e hap programin drejtpërdrejt në atë aplikacion. Nëse programi është tashmë i hapur, aplikacioni hapet në të si skedë."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Hapja e skedarëve",
+          "body": [
+            {
+              "points": [
+                "Nga një aplikacion: Skedari → Hap, ose Ctrl+O.",
+                "Duke lëshuar skedarë nga një dosje mbi dritare.",
+                "Nga menaxheri i skedarëve i sistemit tuaj: klikoni dy herë një skedar që programi është caktuar ta hapë. Në Eksploruesin e Windows ka edhe menunë e klikimit të djathtë (shih \"Menuja e klikimit të djathtë në Eksploruesin e Windows\").",
+                "Nga Fillimi: lista e skedarëve të fundit."
+              ]
+            },
+            "Programi punon si një kopje e vetme. Një skedar i hapur nga menaxheri i skedarëve ndërsa programi punon hapet si skedë e re në të njëjtën dritare."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Përshtatja sipas jush",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Paraqitja: shirit menuje, shirit ose panel anësor",
+          "body": [
+            "Komandat e një aplikacioni mund të shfaqen në tri mënyra. Janë të njëjtat komanda; ndryshon vetëm vendi ku ndodhen.",
+            {
+              "points": [
+                "Klasike: një shirit menuje dhe një shirit veglash.",
+                "Shiriti: butona të mëdhenj në grupe të emërtuara, një skedë për çdo menu. Mund të paloset për të lënë më shumë vend për dokumentin.",
+                "Paneli anësor: veglat në një panel majtas ose djathtas, i cili mund të paloset në ikona."
+              ]
+            },
+            "Zgjidhni paraqitjen e çdo aplikacioni te Cilësimet → Të përgjithshme → Paraqitja. Një aplikacion mund të ketë paraqitjen e vet, të zgjedhur në pjesën e tij të Cilësimeve ose nga menuja e tij Pamja; atëherë ai nuk ndjek më atë të përgjithshme derisa të zgjidhni \"Përdor paraqitjen e përgjithshme\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Cilësimet → Të përgjithshme → Tema: E çelët, E errët, Gri e çelët, Gri e errët ose Automatike, e cila ndjek cilësimin e çelët ose të errët të sistemit.",
+            "Tema nuk i ringjyros kurrë faqet e një dokumenti: letra mbetet ashtu siç është."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Gjuha",
+          "body": [
+            "Cilësimet → Të përgjithshme → Gjuha. Programi flet 62 gjuhë. \"Gjuha e sistemit\" ndjek gjuhën e sistemit tuaj. Në listë mund të kërkoni sipas emrit të gjuhës në vetë atë gjuhë, emrit të saj në gjuhën tuaj ose emrit të saj në anglisht.",
+            "Një tekst që nuk është përkthyer ende shfaqet në anglisht, kurrë si kod."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Skedat",
+          "body": [
+            {
+              "points": [
+                "\"Mbaj skedën Fillimi mes skedave\": kur është fikur, skeda Fillimi shfaqet vetëm kur vetë Fillimi është në plan të parë; shtëpia në shiritin anësor të çon gjithmonë përsëri tek ai.",
+                "Shenja në një skedë mund të jetë ikona e aplikacionit të saj ose një katror i thjeshtë në ngjyrën e aplikacionit."
+              ]
+            },
+            "Kur ka më shumë skeda sesa nxë shiriti, shigjetat në skajet e tij e lëvizin dhe \"Më shumë skeda\" i liston të gjitha."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orientimi",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Kërkimi i një komande",
+          "body": [
+            "Kutia e kërkimit (\"Kërko komanda dhe cilësime\") gjen çdo komandë të skedës në plan të parë sipas emrit, në gjuhën tuaj ose në anglisht. Zgjidhni një rezultat për ta ekzekutuar.",
+            "Komandat që janë planifikuar, por nuk janë shkruar ende, shfaqen të hirta në menu dhe lihen jashtë kërkimit."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Shkurtimet e tastierës",
+          "body": [
+            "Tastet e një komande shkruhen pranë emrit të saj në menu dhe në këshillën e saj të veglës. Ato që përdoren më shpesh:",
+            {
+              "points": [
+                "Ctrl+O: hap një skedar",
+                "Ctrl+S: ruaj; Ctrl+Shift+S: ruaj si",
+                "Ctrl+P: printo",
+                "Ctrl+Z dhe Ctrl+Y: anulo dhe ribëj",
+                "Ctrl+F: kërko në dokument",
+                "Ctrl+W: mbyll skedën",
+                "Ctrl+Tab dhe Ctrl+Shift+Tab: skeda tjetër dhe ajo para saj",
+                "Ctrl+, (presje): Cilësimet",
+                "F1: kjo Ndihmë",
+                "Escape: dil nga ekrani i plotë ose modaliteti i leximit, ose lësho veglën që keni në dorë"
+              ]
+            },
+            "Tastet e komandave të vetë programit (skedat, Cilësimet, Ndihma) ndryshohen te Cilësimet → Të përgjithshme → Shkurtimet e tastierës; ato të komandave të një aplikacioni në pjesën e tij të Cilësimeve. Klikoni tastet e një komande, pastaj shtypni të rejat."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Përdorimi i kësaj Ndihme",
+          "body": [
+            "Ndihma varet nga vendi ku e hapni. Nga një aplikacion shihni vetëm manualin e atij aplikacioni dhe komandat e skedës nga e cila erdhët. Nga faqja e fillimit ose nga Cilësimet shihni \"Rreth\" (programi dhe çdo aplikacion, shkurt) dhe manualin e programit. Ndihma → Rreth të çon gjithmonë te \"Rreth\".",
+            "Përmbajtja është në të majtë; kërkimi mbi të kërkon në çdo temë, në tituj dhe në tekst.",
+            "Ndihma hapet në një skedë më vete, kështu që mund të kaloni para e pas mes saj dhe punës suaj; F1 e sjell sërish në plan të parë. Nën \"Komandat e skedës nga e cila erdhët\" listohet çdo menu e asaj skede me secilën nga komandat e saj, tastet dhe atë që bën: hapeni Ndihmën nga skeda për të cilën keni një pyetje."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Menuja e klikimit të djathtë në Eksploruesin e Windows",
+          "body": [
+            "Cilësimet → Të përgjithshme → Eksploruesi i Windows → \"Shfaq Syntelab Creative në menunë e klikimit të djathtë të skedarëve dhe dosjeve\" shton hyrje për skedarët që lexon programi: \"Konverto në PDF me PDF Organizer\" dhe \"Kombino skedarët në PDF Organizer\", secila me ikonën e PDF Organizer, si dhe \"Syntelab Dev\", që hapet anash me Shumat e kontrollit, Krahaso dhe Pamja Hex.",
+            "Ato shtohen vetëm për përdoruesin tuaj, pa të drejta administratori, dhe fikja e çelësit i heq. Në Windows 11 ato ndodhen te \"Shfaq më shumë opsione\". Ato nisin gjithmonë programin e instaluar: nëse ai është zhvendosur ose riinstaluar diku tjetër, i rregullon kur niset.",
+            {
+              "note": "Zgjedhja e \"Kombino skedarët në PDF Organizer\" për disa skedarë hap një koleksion me to; \"Konverto në PDF me PDF Organizer\" hap përpunimin në grup me to."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privatësia, përditësimet dhe kontakti",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Çfarë shkon në internet dhe çfarë nuk shkon kurrë",
+          "body": [
+            "Programi nuk mbledh asgjë: as të dhëna përdorimi, as emra skedarësh, as raporte rrëzimesh të dërguara vetvetiu.",
+            "Ai lidhet me internetin vetëm në këto raste, secili i kërkuar nga ju:",
+            {
+              "points": [
+                "Kontrolli për përditësime dhe lajme (dy skedarë të vegjël të lexuar nga syntelab.com), kur e kërkoni ose, nëse e keni lejuar, kur nis programi; dhe shkarkimi i një versioni të ri, vetëm kur shtypni \"Përditëso\".",
+                "Ruajtja e një faqeje interneti si PDF (PDF Organizer) dhe marrja e tekstit të një faqeje interneti (Scribe), nga adresa që keni shkruar.",
+                "Një lidhje në një dokument që klikoni: i kalohet shfletuesit tuaj ose programit të postës.",
+                "Komentet dhe Mbështetje: ato hapin një faqe të syntelab.com në shfletuesin tuaj."
+              ]
+            },
+            "Nënshkrimi me certifikatë dhe kontrolli i nënshkrimeve bëhen në kompjuterin tuaj, pa u lidhur me internetin."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Përditësimet",
+          "body": [
+            "Cilësimet → Të përgjithshme → Përditësimet → \"Kontrollo për përditësime\". Kur ka një version më të ri, një dritare ju tregon çfarë ka të re dhe ofron \"Përditëso\".",
+            "\"Përditëso\" shkarkon versionin e ri, kontrollon që vjen vërtet prej nesh (duhet të jetë i nënshkruar me çelësin tonë; çdo gjë tjetër refuzohet) dhe e instalon mbi këtë. Cilësimet tuaja ruhen dhe programi niset përsëri. Asgjë nuk shkarkohet derisa ta shtypni.",
+            "Nëse përditësimi nuk mund të instalohet në këtë mënyrë (kopje portative, paketë Linux, pa rrjet), \"Shkarko\" hap faqen e shkarkimit në shfletuesin tuaj; instaloni versionin e ri mbi këtë dhe cilësimet tuaja ruhen.",
+            "\"Kontrollo për përditësime dhe lajme kur nis programi\" mund të fiket; në asnjë rast nuk dërgohet asgjë rreth jush ose kompjuterit tuaj."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Komentet dhe mbështetja",
+          "body": [
+            "Ndihma → Komentet: kërkoni një aplikacion të ri, një funksion të ri ose një ndryshim, ose raportoni një problem. Çdo mesazh lexohet.",
+            "Ndihma → Mbështetje: programi është falas; këtu mund ta ndihmoni të vazhdojë."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Rreth Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Rreth Syntelab Creative",
+          "body": [
+            "Syntelab Creative është një paketë falas aplikacionesh për punën e përditshme me dokumente, tekst dhe të dhëna, e krijuar nga Syntelab (syntelab.com). Ajo fillon me katër aplikacione: PDF Organizer, Scribe, Units dhe Dev. Të tjera do t'u bashkohen në të njëjtën dritare.",
+            {
+              "points": [
+                "Gjithmonë falas.",
+                "Asnjë e dhënë e mbledhur: asgjë rreth jush, kompjuterit tuaj ose punës suaj.",
+                "Asgjë e mbajtur mënjanë: asnjë version me pagesë, asnjë funksion i bllokuar, asnjë kufizim i vendosur qëllimisht. Kufizimet e vetme janë ato që mund të bëjë teknologjia e sotme dhe ato që mund të përballojë kompjuteri juaj."
+              ]
+            },
+            "Ne nuk kemi financim. Programi bëhet në kohën tonë të lirë, aq sa e lejon kjo kohë. Kemi plotësisht ndër mend të bëjmë softuer me cilësi të mirë, dhe kjo kërkon kohë e durim: tonin për ta ndërtuar dhe tuajin ndërsa rritet.",
+            "Do të bëhet më i mirë me çdo version. Problemet e raportuara korrigjohen dhe funksionet e kërkuara vlerësohen për hapat e ardhshëm.",
+            {
+              "note": "Dokumentet tuaja mbeten në kompjuterin tuaj. Programi nuk mbledh asgjë rreth jush ose punës suaj; shih \"Çfarë shkon në internet dhe çfarë nuk shkon kurrë\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Si mund të ndihmoni",
+          "body": [
+            "Ka tri mënyra dhe secila prej tyre ka rëndësi:",
+            {
+              "points": [
+                "Na tregoni çfarë mendoni: Ndihma → Komentet. Një problem me të cilin u përballët, diçka që mungon, diçka që është më e vështirë se ç'duhet. Ne e lexojmë çdo mesazh.",
+                "U tregoni të tjerëve për programin dhe për atë që bëjmë. Më shumë përdorues do të thotë më shumë komente, dhe kështu shohim se çfarë ka vërtet rëndësi. Kjo na bën gjithashtu të ndjejmë se puna jonë vlerësohet: e jona dhe e të gjithë atyre që marrin dhe do të marrin pjesë në projekt.",
+                "Mbështeteni me para, nëse mundeni: Ndihma → Na mbështetni. Kjo na blen kohë për të punuar mbi të."
+              ]
+            },
+            "Asgjë nga këto nuk ju kërkohet. Programi është falas dhe do të jetë gjithmonë falas, i plotë, për të gjithë."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Me çfarë është ndërtuar",
+          "body": [
+            "Programi mbështetet në punën e shumë njerëzve. Çfarë kanë të përbashkët të gjitha aplikacionet:",
+            {
+              "points": [
+                "Dritarja dhe gjithçka që shihni: Tauri, me pamjen web të sistemit (WebView2 në Windows, WebKitGTK në Linux, WKWebView në macOS); i shkruar në TypeScript me React.",
+                "Pjesa që kryen punën: e shkruar në Rust.",
+                "Shkronjat dhe ikonat: Sansation, IBM Plex Sans dhe Font Awesome Free."
+              ]
+            },
+            "Çfarë shton çdo aplikacion thuhet në faqen e tij nën \"Rreth\". Jemi mirënjohës për njerëzit pas këtyre projekteve."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Çfarë nuk mund të bëjë ende",
+          "body": [
+            "Që ta dini përpara se të mbështeteni tek ai:",
+            {
+              "points": [
+                "Disa tekste ende presin përkthimin e tyre. Deri atëherë ato shfaqen në anglisht, kurrë si kod.",
+                "Menuja e klikimit të djathtë e menaxherit të skedarëve gjendet tani për tani vetëm në Eksploruesin e Windows.",
+                "Nënshkrimi me certifikatë tani për tani funksionon në Windows; në Linux dhe macOS do të vijë në një version të mëvonshëm."
+              ]
+            },
+            "Kufizimet e çdo aplikacioni janë në faqen e tij nën \"Rreth\". Nëse ndonjë prej tyre ju pengon, na tregoni përmes Ndihma → Komentet: kjo na ndihmon të vendosim çfarë vjen e para."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Në çfarë po punojmë",
+          "body": [
+            "Katër aplikacionet do të vazhdojnë të rriten: ajo që raportoni dhe kërkoni përmes Ndihma → Komentet përcakton shumë nga ajo që vjen e para. Pranë tyre po përgatiten aplikacione të reja. Fillimi nuk i shfaq, përveç nëse dëshironi: shënojini te menyja \"Pamja\" e Fillimit për t’i parë atje si \"Së shpejti\":",
+            {
+              "points": [
+                "Convert: konvertimi i skedarëve nga një format në tjetrin, ndër to dokumentet e zyrës në PDF dhe anasjelltas, pa pasur nevojë të instalohet një program tjetër. Ende nuk kemi gjetur një teknologji të hapur që arrin cilësinë që duam, prandaj do të vijë vetëm kur të mos ju zhgënjejë; aty ku veglat nuk ekzistojnë, do t'i ndërtojmë ne.",
+                "Pixel: vegla për imazhe, si ndryshimi i përmasave dhe ngjeshja, heqja e sfondit, ngjyrat dhe kodet QR.",
+                "Metadata: shikimi dhe heqja e të dhënave të fshehta të fotove, videove dhe dokumenteve, përpara se t'i ndani.",
+                "Wizard: zgjedhës dhe gjenerues të rastësishëm: një rrotë për ta rrotulluar, zare, një monedhë, emra të nxjerrë nga një listë."
+              ]
+            },
+            "Në aplikacionet që janë tashmë këtu po punojmë mbi atë që listojnë faqet e tyre \"Çfarë nuk mund të bëjë ende\": për shembull një vulë kohore e besuar për nënshkrimet, nënshkrimi me certifikatë në Linux dhe macOS, dhe një kontroll drejtshkrimor në Scribe.",
+            "Do të vijnë gjithashtu më shumë mundësi instalimi: Microsoft Store dhe winget në Windows, Flathub dhe Snap në Linux.",
+            {
+              "note": "Lajmet e çdo versioni janë nën butonin e lajmeve në shiritin anësor; Cilësimet → Të përgjithshme → Përditësimet kontrollon për një version më të ri."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

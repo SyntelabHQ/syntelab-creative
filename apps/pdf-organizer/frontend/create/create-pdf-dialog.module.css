@@ -1,0 +1,115 @@
+.window {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  min-height: 340px;
+}
+
+/* The ways to make a PDF, one under the other. */
+.ways {
+  display: flex;
+  flex: 0 0 250px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.way {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding-inline: 14px;
+  border: 1px solid transparent;
+  border-radius: var(--sc-radius-m);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-weight: 500;
+  text-align: start;
+  cursor: pointer;
+}
+
+.way:hover {
+  background: var(--sc-surface-2);
+}
+
+.way[aria-selected='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.detail {
+  display: flex;
+  flex: 1 1 320px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+}
+
+.heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about {
+  margin: 0;
+  color: var(--sc-muted);
+}
+
+.note {
+  margin: 0;
+  color: var(--sc-text);
+}
+
+/* Pushed to the bottom: the same for every way. */
+.unsaved {
+  margin: 0;
+  margin-block-start: auto;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.blank {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  width: min(100%, 340px);
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 1fr 170px;
+  align-items: center;
+  gap: 12px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  min-width: 0;
+}
+
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.addressField {
+  flex: 1 1 240px;
+  min-width: 0;
+  min-height: var(--sc-control-height);
+  padding-inline: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}

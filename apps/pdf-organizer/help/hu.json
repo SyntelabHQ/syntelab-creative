@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Megnyitás és olvasás",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Dokumentum megnyitása",
+          "body": [
+            "Fájl → Megnyitás (Ctrl+O): egy PDF-et nyit meg külön fülben. A „Több fájl megnyitása egyszerre…” minden kiválasztott fájlt a saját fülében nyit meg.",
+            "A nem PDF fájlok is megnyílnak, oldalakként: képek (PNG, JPEG, TIFF, WebP és sok más), szöveges és webes fájlok, e-könyvek, XPS és irodai dokumentumok. Egy ilyen dokumentum még sehová sincs mentve: a „Mentés” megkérdezi, hová.",
+            {
+              "note": "Az irodai dokumentumokat (Word, Excel, PowerPoint, OpenDocument) a Word, az Excel vagy a PowerPoint, illetve a LibreOffice konvertálja – amelyik a számítógépen van. Ezek egyike nélkül nem nyithatók meg."
+            },
+            "Az üres fülre húzott fájlok egy gyűjtőbe kerülnek; ha egy dokumentumra húzza őket, oldalaik hozzáadódnak.",
+            "Windows rendszeren a PDF Organizer lehet az az alkalmazás, amely dupla kattintásra megnyitja a PDF-fájlokat: a kezdőlapján a „Beállítás alapértelmezettként” megnyitja a Windows beállításait, ahol a PDF-fájlokhoz a Syntelab Creative alkalmazást választhatja."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Az oldalak megtekintése",
+          "body": [
+            "A Nézet menü határozza meg, hogyan jelenik meg a dokumentum; semmi sem módosítja benne a fájlt.",
+            {
+              "points": [
+                "Zoom: nagyítás, kicsinyítés, valós méret, oldal illesztése, szélesség illesztése, magasság illesztése. A Ctrl és az egérgörgő is nagyít és kicsinyít.",
+                "Oldalnézet: egy oldal vagy kettő egymás mellett, kezdőlappal vagy anélkül, illetve az összes oldal görgetése egyetlen hosszú sávként.",
+                "Segédvonalak: vonalzók és rács, a beállításokban választott mértékegységben.",
+                "„Miniatűrök megjelenítése”: a kis oldalak oldalt. Kattintson egyre, hogy odaugorjon; a dokumentum könyvjelzői ugyanabban a panelben vannak.",
+                "Az „Olvasási mód” elrejti az eszközöket; a „Teljes képernyős mód” az oldalon kívül mindent elrejt. Mindkettőből az Escape billentyűvel lehet kilépni."
+              ]
+            },
+            "Az oldalak feletti sávban (a gyors eszköztáron) van az oldalszám, a zoom és a beállításokban kiválasztott gombok."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Szöveg keresése",
+          "body": [
+            "Szerkesztés → Keresés a dokumentumban (Ctrl+F): írjon be egy szót vagy kifejezést; a találatok helyei meg vannak jelölve az oldalakon, a nyilak pedig egyikről a másikra lépnek.",
+            {
+              "note": "A beszkennelt dokumentum oldalak képeiből áll, és nincs benne kereshető szöveg, amíg a szövegét fel nem ismerik: lásd „Szövegfelismerés (OCR)”."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Dokumentum tulajdonságai",
+          "body": [
+            "Fájl → Dokumentum tulajdonságai: megmutatja, mit mond a dokumentum önmagáról: cím, szerző, a létrehozás és a módosítás dátuma, az oldalak száma, a fájl mérete."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mentés, nyomtatás és küldés",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Mentés és Mentés másként",
+          "body": [
+            "Amíg nem ment, semmi sem változtatja meg a lemezen lévő fájlt. Addig minden lépés visszavonható (Ctrl+Z) és újra elvégezhető (Ctrl+Y).",
+            {
+              "points": [
+                "A Mentés (Ctrl+S) a dokumentumot a saját fájljára írja.",
+                "A Mentés másként (Ctrl+Shift+S) új fájlba írja, amely ezután átveszi a fül helyét; a régi fájl olyan marad, amilyen volt."
+              ]
+            },
+            "Ha egy másik program nyitva tartja a fájlt, az nem írható felül: a program ezt jelzi, és megőrzi a változtatásokat, hogy más néven mentse őket.",
+            {
+              "note": "Ha egy módosított dokumentumot tanúsítvánnyal aláírt fájlra ment, annak aláírásai eltűnnek. A program előbb rákérdez, és felajánlja a „Mentés új fájlként…” lehetőséget; a kérdés a Beállítások → Aláírások részben kapcsolható ki."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "PDF létrehozása",
+          "body": [
+            "Fájl → PDF létrehozása: új dokumentumot készít",
+            {
+              "points": [
+                "egy fájlból vagy többől: egyetlen PDF-be összevonva, vagy mindegyikből külön PDF-et;",
+                "egy weboldalról, a beírt címről (az oldalt a számítógépre telepített böngésző menti);",
+                "a vágólap tartalmából;",
+                "a választott méretű üres oldalakból."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Exportálás másik formátumba",
+          "body": [
+            "Fájl → Exportálás: másik formátumban írja ki a dokumentumot: Word vagy OpenDocument szöveg, egyszerű szöveg, weboldal, XML, az oldalak képei (PNG, JPEG, TIFF, SVG) vagy PostScript. Képeknél a felbontást is kiválasztja.",
+            "Maga a dokumentum PDF marad; az export egy új fájl.",
+            {
+              "note": "Szöveget csak ott lehet exportálni, ahol a dokumentumban van szöveg. Egy szkennelt dokumentumnál előbb ismertesse fel a szöveget."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Nyomtatás",
+          "body": [
+            "Fájl → Nyomtatás (Ctrl+P): a dokumentumot jelenlegi elrendezésében nyomtatja ki, azzal együtt, amit rárajzolt. Válassza ki az oldalakat, a papírt, hogy a lapok állók vagy fekvők legyenek, és hogy az oldalak a laphoz igazodjanak vagy valós méretben nyomtatódjanak; ezután a rendszer nyomtatási ablaka kéri a nyomtatót.",
+            "A papírt, a tájolást és a méretezést, amellyel a nyomtatási ablak indul, a Beállítások → Nyomtatás részben lehet megadni."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Megosztás",
+          "body": [
+            "Fájl → Megosztás: átadja a dokumentumot a rendszer „Megosztás” ablakának: e-mail, közeli eszköz és más alkalmazások. A dokumentum jelenlegi állapotában, a mentetlen változtatásokkal együtt kerül megosztásra."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oldalak szervezése",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "A Szervezés nézet",
+          "body": [
+            "Szervezés → Oldalak szervezése: minden oldalt rácsban mutat. A mentésig semmi sem változik a lemezen.",
+            {
+              "points": [
+                "Kijelölés: kattintson egy oldalra; a Ctrl+kattintás hozzáad egyet, a Shift+kattintás egy tartományt jelöl ki. Az „Összes oldal kijelölése”, a „Kijelölés megszüntetése”, a „Páratlan oldalak kijelölése” és a „Páros oldalak kijelölése” a menüben található.",
+                "Mozgatás: húzza a kijelölt oldalakat az új helyükre, vagy használja a „Balra mozgatás” és a „Jobbra mozgatás” parancsot.",
+                "Forgatás: a „Kijelöltek: balra forgatás” és „Kijelöltek: jobbra forgatás” elforgatja a kijelölt oldalakat; az „Összes oldal: balra forgatás” és „Összes oldal: jobbra forgatás” minden oldalt elforgat.",
+                "Törlés: a Delete billentyű vagy az „Oldalak törlése”. A dokumentumban legalább egy oldal megmarad.",
+                "Másolás, kivágás és beillesztés (Ctrl+C, Ctrl+X, Ctrl+V): az oldalak ugyanabba a dokumentumba vagy egy másik, a programban megnyitott dokumentumba illeszthetők be.",
+                "Méret: a felül lévő csúszka nagyobbra vagy kisebbre állítja az oldalakat; ugyanezt teszi a Ctrl + egérgörgő az oldalak fölött, valamint a „Nagyítás” és a „Kicsinyítés” (Ctrl+= és Ctrl+-). A program megjegyzi a méretet."
+              ]
+            },
+            "Ugyanezek a parancsok a rács nélkül, a jelenleg látható oldalon is működnek."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Oldalak kivonása és a dokumentum bontása",
+          "body": [
+            "Szervezés → Oldalak kivonása: a kijelölt oldalakat új, még nem mentett dokumentumként, saját fülben veszi ki. Azt is kérheti, hogy minden oldal külön fájlba kerüljön, és megválaszthatja, hogy az oldalak törlődjenek-e ebből a dokumentumból.",
+            "Szervezés → Dokumentum bontása: a dokumentumot több kisebb fájlba írja; ez a dokumentum változatlan marad.",
+            "Az új dokumentumok neve a Beállítások → Új dokumentumok nevei részben megadott mintákat követi.",
+            {
+              "note": "A tanúsítvánnyal készült aláírások nem kerülnek át a kivont vagy bontott dokumentumokba: egy aláírás csak arra a fájlra érvényes, amelyben készült."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Oldalak beszúrása és cseréje",
+          "body": [
+            {
+              "points": [
+                "Szervezés → Oldalak beszúrása: egy másik fájl (PDF, kép, szöveg, irodai dokumentum) oldalait adja hozzá a kijelölt oldal után vagy a végén.",
+                "Szervezés → Oldalak cseréje: egy másik fájl oldalait teszi a kijelöltek helyére.",
+                "Beszúrás → Üres oldal: a szomszédjával azonos méretű üres oldalt ad hozzá."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Oldalak vágása és átméretezése",
+          "body": [
+            "Szerkesztés → Oldalak vágása: a beírt vagy kihúzott margók szerint levágja az oldalak szélét. A fájlból semmi sem távolítódik el: az oldalak csak kevesebbet mutatnak.",
+            "Szerkesztés → Oldalak átméretezése: más lapméretre (A4, Letter és mások) helyezi az oldalakat. A tartalom a laphoz igazítható vagy megtartható a mérete, és az új lap kilenc helyének egyikére tehető.",
+            "Mindkettő megkérdezi, mely oldalakra vonatkozik: az összesre, a kijelöltekre, egy tartományra, a páratlanokra vagy a párosokra."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fájlok egyesítése",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "A gyűjtő",
+          "body": [
+            "Összevonás → Új gyűjtő: helyet nyit, ahol fájlokat gyűjthet össze, és egyetlen PDF-ként írhatja ki őket.",
+            {
+              "steps": [
+                "Adjon hozzá fájlokat a „Fájlok hozzáadása…” gombbal, vagy húzza őket a gyűjtőre. PDF-ek, képek, szövegek és irodai dokumentumok vegyesen is lehetnek.",
+                "Húzza a kártyákat a kívánt sorrendbe, vagy használja a kártyákon található nyilakat.",
+                "Nyisson meg egy kártyát, hogy kiválassza, mely oldalai kerüljenek bele.",
+                "A „Fájlok egyesítése” sorrendben, egyetlen új dokumentumként írja ki őket, saját fülben."
+              ]
+            },
+            "Maguk a fájlok nem változnak.",
+            "A felül lévő csúszka nagyobbra vagy kisebbre állítja a kártyákon lévő oldalakat; ugyanezt teszi a Ctrl + egérgörgő, valamint a „Nagyítás” és a „Kicsinyítés” (Ctrl+= és Ctrl+-). A program megjegyzi a méretet."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Írás és rajzolás az oldalakon",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Az eszközök",
+          "body": [
+            "A rajzoló eszközök panelként nyílnak meg az oldal mellett, gombok rácsaként vagy nevekkel ellátott listaként (ezt a beállítások döntik el). Egy eszközzel a kézben húzzon vagy kattintson az oldalon; az Escape leteszi az eszközt.",
+            {
+              "points": [
+                "Szöveg: kattintson és gépeljen. A betűtípus, a méret, a szín, a félkövér, a dőlt és az igazítás a panelben van.",
+                "Kép: válasszon egy képet, majd húzzon oda, ahová kerül, akkorára, amekkorára kell.",
+                "Alakzatok: téglalap, ellipszis, vonal, nyíl, pipa, kereszt, pont.",
+                "Kiemelés: húzzon végig azon, aminek ki kell tűnnie; ami alatta van, olvasható marad."
+              ]
+            },
+            "A „Kijelölés, mozgatás és átméretezés” eszközzel egy jelölés újra felvehető: húzza, húzza a sarkait, forgassa el a fogantyújánál, módosítsa a színeit a panelen, vagy törölje a Delete billentyűvel. A jelölések másolhatók és beilleszthetők, más oldalakra is.",
+            "Mentéskor minden rajzolt elem bekerül a fájlba."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "A dokumentum saját szövegének és képeinek módosítása",
+          "body": [
+            "„A dokumentum szövegének és képeinek szerkesztése” eszköz körberajzolja, ami magán az oldalon van. Kattintson egy szövegsorra az átírásához, vagy egy képre a mozgatásához, átméretezéséhez, elforgatásához vagy törléséhez.",
+            {
+              "note": "Ez egyszerre egy sort vagy egy képet módosít. A bekezdések nem tördelődnek újra, ha egy sor hosszabb lesz, és egy másik fölött fekvő kép azzal együtt kerül felvételre. Nagyobb módosításokhoz a dokumentumot abban a programban szerkessze, amelyben írták."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Kitakarás",
+          "body": [
+            "További eszközök → Kitakarás: véglegesen eltávolítja, amit nem szabad elolvasni: húzzon fölé egy fekete téglalapot bármelyik oldalon. Mentéskor a téglalap alatti szöveg és képek kikerülnek a fájlból, nem csak le vannak takarva.",
+            {
+              "note": "A kitakart dokumentumot új néven mentse, az eredetit pedig tartsa biztonságos helyen: a kitakart tartalom nem hozható vissza."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Vízjel",
+          "body": [
+            "Szerkesztés → Vízjel: szavakat ír vagy képet helyez a választott oldalakra: egyenesen vagy ferdén, kilenc hely egyikén, a beállított méretben és halványsággal. Ezután minden oldalon olyan jelölés, mint bármely más, és továbbra is mozgatható vagy eltávolítható."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Oldalszámok, fejléc és lábléc, Bates-számok",
+          "body": [
+            {
+              "points": [
+                "Szerkesztés → Oldalszámok: a formátum (1, 1 / 12, 1. oldal és mások), a hely, és hogy mely oldalak kapnak számot.",
+                "Beszúrás → Fejléc és lábléc: szöveg hat hely bármelyikén. Ebben a {page} az oldal számát, a {pages} az oldalak számát, a {date} a mai dátumot, a {file} pedig a dokumentum nevét jelenti.",
+                "Beszúrás → Bates-számozás: egymást követő számok egy előttük vagy utánuk álló szóval (ABC000123), ahogy egy ügy iratainál használják."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Linkek, könyvjelzők és csatolt fájlok",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Linkek",
+          "body": [
+            "Beszúrás → Link: húzzon végig azon a helyen, amelyre kattintani kell, majd adja meg, hová vezet: egy webcímre vagy a dokumentum egy oldalára.",
+            "A dokumentum linkjei olvasás közben működnek: egy oldalra mutató linkre kattintva oda ugrik; a web- vagy e-mail-címet a böngésző vagy a levelezőprogram kapja meg."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Könyvjelzők",
+          "body": [
+            "Beszúrás → Új könyvjelző: kattintson arra a helyre, ahová vezessen, és adjon neki címet. A Beszúrás → Könyvjelzők megnyitja a listát, ahol a könyvjelzők átnevezhetők vagy eltávolíthatók. A változtatások mentéskor íródnak ki."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Csatolt fájlok",
+          "body": [
+            "Beszúrás → Fájl csatolása: válasszon egy fájlt, és kattintson oda, ahová a gemkapcsa kerüljön. Adhat neki nevet és szerzőt, színezheti a gemkapcsot, átméretezheti és elforgathatja. Mentéskor a fájl a PDF-be kerül.",
+            "A Beszúrás → Csatolmányok felsorolja, mit tartalmaz a dokumentum; minden fájl lemezre menthető vagy eltávolítható. A gemkapocsra kattintva ugyanez a lista nyílik meg."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Űrlapok",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Űrlap kitöltése",
+          "body": [
+            "Beszúrás → Űrlap kitöltése: megjeleníti a dokumentum mezőit: írjon a szövegmezőkbe, jelölje be a négyzeteket, válasszon a listákból. A válaszok mentéskor íródnak a fájlba."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Űrlap készítése",
+          "body": [
+            "A Beszúrás menü bármely dokumentumhoz ad mezőket: szövegmezőt, jelölőnégyzetet, választógombokat (amelyek közül egy választható), választási listát és az aláíró számára üresen hagyott aláírásmezőt.",
+            "Húzzon az oldalon oda, ahová a mező kerül. Más jelölésekhez hasonlóan a mező a mentésig mozgatható és átméretezhető; utána az űrlap része."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aláírás",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Rajzolt aláírás hozzáadása",
+          "body": [
+            "Aláírás → Aláírás hozzáadása: egy aláírás képét helyezi az oldalra: itt, választott tollal rajzolva, betűtípussal gépelve vagy képből véve (egy aláírt lap fényképéhez a „Csak a tollvonásokat tartsa meg, a háttérben lévő papír nélkül” lehetőséggel). Alá a dátum is írható.",
+            "Húzzon az oldalon oda, ahová kerül. A használt aláírásokat a program ezen a számítógépen megőrzi, hogy újra használhatók legyenek.",
+            {
+              "note": "Ez egy kép: semmi biztosat nem mond arról, ki tette oda. Az az aláírás, amely igazolja, ki írta alá, és hogy azóta semmi sem változott, tanúsítvánnyal készül."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Aláírás tanúsítvánnyal",
+          "body": [
+            "Aláírás → Aláírás tanúsítvánnyal: digitális aláírást készít: megmutatja, ki írta alá, és lepecsételi a dokumentumot, így minden későbbi módosítás látszik.",
+            {
+              "steps": [
+                "Húzza ki az oldalon a területet, ahol az aláírás megjelenik (előtte egy ablak ezt elmagyarázza; ez kikapcsolható). Ha úgy írna alá, hogy semmi ne látszódjon az oldalakon, válassza helyette az „Aláírás anélkül, hogy megjelenne az oldalon” lehetőséget.",
+                "Válassza ki a tanúsítványt: a számítógép egyik tanúsítványát (a kártya vagy a token is megjelenik köztük, amint az olvasóban van), vagy egy .pfx / .p12 fájlt a jelszavával. „Tovább”.",
+                "Válassza ki az aláírás megjelenését. Az „Indok és helyszín (opcionális)” részben megadhatja, miért és hol ír alá: ezek bekerülnek az aláírásba, és az oldalra is, ha a megjelenés tartalmazza őket. Jelölje be „A dokumentum zárolása aláírás után” négyzetet, ha Ön után senki sem írhatja alá és nem módosíthatja. Hagyja bejelölve a „Hiteles idő hozzáadása (időbélyeg)” négyzetet, hogy egy szolgáltató igazolja, mikor írta alá.",
+                "„Aláírás”, majd válassza ki, hová kerüljön az aláírt fájl. A token ekkor kéri a PIN-kódját."
+              ]
+            },
+            "Az aláírt fájl a dokumentum helyén nyílik meg. A program soha nem őrzi meg a jelszót vagy a PIN-kódot.",
+            {
+              "note": "Minősített aláírás az, amely így, minősített tanúsítvánnyal, annak kártyáján vagy tokenjén készül. Az aláírás a számítógépén történik; csak az időbélyeg és a tanúsítványa ellenőrzése kér internetet, és ezek is csak ujjlenyomatokat és a tanúsítvány sorozatszámát küldik el, a dokumentumot soha."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Aláírás-megjelenések",
+          "body": [
+            "A megjelenés azt határozza meg, hogyan néz ki a tanúsítványos aláírás az oldalon. Tartson többet saját neveken: egyet a cég nevében, egyet a saját nevében való aláíráshoz.",
+            {
+              "points": [
+                "Kép: nincs, fájlból (bélyegző, beszkennelt aláírás) vagy itt rajzolva.",
+                "Megjelenített szöveg: név, dátum, indok, hely, mindegyik címkével vagy címke nélkül.",
+                "Saját sorok a név alatt, például beosztás és cég.",
+                "A „Standard szöveg” mindig ott van: ki és mikor írta alá."
+              ]
+            },
+            "Az aláírási ablakban: „Új…”, „Szerkesztés…”, „Törlés”. Elsőként az utoljára használt kerül felajánlásra. A megjelenések ezen a számítógépen tárolódnak."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Több aláírás és zárolás",
+          "body": [
+            "Egy dokumentumot több ember is aláírhat egymás után. Nyissa meg az aláírt fájlt, és írja alá anélkül, hogy bármit módosítana: az Ön aláírása a fájl végére kerül, a korábbiak pedig érvényesek maradnak.",
+            "„A dokumentum zárolása aláírás után” (alapból ki van kapcsolva, amíg be nem jelöli) lezárja a dokumentumot: Ön után senki sem írhatja alá, és semmi sem módosítható többé. Ez nem vonható vissza.",
+            {
+              "note": "Ha egy aláírt dokumentumot módosít, mielőtt újra aláírná, azt újra ki kell írni, és a korábbi aláírások kimaradnak. Az aláírási ablak figyelmeztet erre: megtartásukhoz nyissa meg újra a fájlt, és írja alá anélkül, hogy bármit módosítana."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Időbélyegek",
+          "body": [
+            "Az időbélyeg egy időbélyeg-szolgáltató aláírt igazolása arról, hogy valami mikor létezett. Az aláírásban szereplő idő egyébként az aláíró számítógépének órájából származik, amelyet bárki beállíthat; az időbélyeg bizonyítja a pillanatot, és az aláírást a tanúsítvány lejárta után is bizonyíthatóvá teszi (PAdES B-T).",
+            {
+              "points": [
+                "Az aláírások akkor kapnak időbélyeget, ha az aláírási ablakban be van jelölve a „Hiteles idő hozzáadása (időbélyeg)”. A Beállítások → Aláírások részben adható meg, hogy alapból be legyen-e jelölve, itt és a kötegelt feldolgozásban is.",
+                "Aláírás → Időbélyeg hozzáadása: tanúsítvány nélkül saját időbélyeget ad a teljes dokumentumnak: igazolja, hogy a dokumentum abban a pillanatban pontosan ilyen volt. Új fájlként kerül mentésre; a fájlban lévő aláírások érvényesek maradnak."
+              ]
+            },
+            "A szolgáltató a DigiCert (http://timestamp.digicert.com), amely ingyenes, és az Adobe Reader és a Windows is megbízik benne; másik a Beállítások → Aláírások résznél adható meg. Csak ujjlenyomatot (SHA-256) kap, a dokumentumot soha, és internetkapcsolat szükséges. Amikor egy aláírás időbélyeget kap, a program a tanúsítványa kiállítójától is megkérdezi, hogy a tanúsítvány érvényes-e még, és a választ az aláírásban tárolja (hosszú távú érvényesítés): így az Adobe Reader most és a tanúsítvány lejárta után is érvényesként jelenítheti meg az aláírást.",
+            {
+              "note": "Ha a szolgáltató nem érhető el, semmi sem kerül aláírásra vagy kiírásra: próbálja újra, vagy vegye ki az időbélyeg jelölését, és írjon alá nélküle."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Aláírások ellenőrzése",
+          "body": [
+            "Aláírás → Aláírások ellenőrzése: felsorolja a fájl minden tanúsítványos aláírását: ki írta alá, ki adta ki a tanúsítványt, mikor, az indokot és a helyszínt, valamint",
+            {
+              "points": [
+                "hogy a dokumentum változatlan maradt-e az aláírás óta (a később hozzáadott másik aláírás nem számít módosításnak);",
+                "hogy az aláírás zárolja-e a dokumentumot;",
+                "hogy ez a számítógép megbízik-e a tanúsítvány kiállítójában, és hogy a tanúsítvány ma érvényes-e;",
+                "az időbélyegével igazolt időt, és hogy melyik szolgáltató igazolta, ha van időbélyege. A teljes dokumentum időbélyege is szerepel a listában, saját ellenőrzéssel."
+              ]
+            },
+            "Az ellenőrzés a fájl utoljára mentett állapotára vonatkozik, és ezen a számítógépen, internet nélkül történik. Ha egy oldalon egy aláírásra kattint, ez a lista annál az aláírásnál nyílik meg. Minden aláírás alatt a „Tanúsítvány megjelenítése” megnyitja a tanúsítvány Windows-ablakát (a tanúsítványláncot és minden részletet; onnan a „Tanúsítvány telepítése” révén ez a számítógép megbízik egy Ön által ismert tanúsítványban), az „Ellenőrzés” pedig – csak ha megnyomja – online megkérdezi a tanúsítvány kiállítóját, hogy visszavonták-e a tanúsítványt."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "További eszközök",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Szövegfelismerés (OCR)",
+          "body": [
+            "További eszközök → Szövegfelismerés (OCR): beolvassa a beszkennelt oldalak szavait, és láthatatlanul az oldalakba írja őket, így a dokumentumban keresni lehet, a szövege pedig másolható és exportálható. Az oldalak kinézete nem változik.",
+            "Csak azokat a nyelveket jelölje be, amelyeken az oldalak íródtak; a már szöveget tartalmazó oldalak változatlanok maradnak.",
+            {
+              "note": "A beolvasást a Tesseract motor végzi, egy külön telepítendő ingyenes program. Ha nincs meg, az ablak megmutatja azt a parancsot, amellyel Windows alatt telepíthető."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "A dokumentum méretének csökkentése",
+          "body": [
+            "További eszközök → Tömörítés: kisebb fájlként menti a dokumentumot úgy, hogy a fényképei és szkennelt képei kevesebb képpontot kapnak. Három erősség; a szöveg és a rajzok ugyanolyan élesek maradnak. Kevés képet tartalmazó dokumentumnál a nyereség csekély."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Két dokumentum összehasonlítása",
+          "body": [
+            "További eszközök → Dokumentumok összehasonlítása: válasszon egy másik PDF-et. A kettő egymás mellett, oldalanként jelenik meg; az eltérő szövegű oldalak meg vannak jelölve, és fel vannak sorolva azok a sorok, amelyek csak az egyikben szerepelnek."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Kötegelt feldolgozás: sok fájl egyszerre",
+          "body": [
+            "További eszközök → Kötegelt feldolgozás: ugyanazokat a műveleteket végzi el sok fájlon, saját fülben. Minden eredmény új fájl. Ha az eredmények a mappában már lévő fájlok helyére kerülnének (a saját fájljai, ha a saját mappájukba kerülnek, és a nevükhöz semmi nem adódik hozzá), előbb megkérdezzük, hogy lecseréli vagy kihagyja őket, vagy megszakítja a műveletet. Egy fájl csak akkor cserélődik le, amikor az eredménye elkészült; a megnyitott fájl (itt egy fülön vagy egy másik programban) változatlan marad, és el nem készültként lesz megjelölve.",
+            {
+              "steps": [
+                "Bal oldalon adja hozzá a fájlokat: „Fájlok hozzáadása…”, „Mappa hozzáadása…” (az alatta lévő mappákkal együtt), vagy húzza be őket.",
+                "Jobb oldalon jelölje be, mit kell tenni. Minden fájl mindenképpen PDF lesz; ezen felül forgathatja az oldalakat, felismertetheti a szöveget, hozzáadhat fejlécet és láblécet, vízjelet vagy oldalszámokat, csökkentheti a fájlok méretét, aláírhatja őket tanúsítvánnyal, vagy kiírhatja őket más formátumban. A számok a sorrendet mutatják.",
+                "Válassza ki, mi kerüljön kiírásra: külön fájl mindegyikhez, vagy minden egyetlen PDF-ben (a lista sorrendjében), valamint a mappát, ahová az eredmények kerülnek. Ha minden fájl egy mappából származik, automatikusan az a mappa lesz kiválasztva, amíg másikat nem választ; egyébként az utoljára választott mappa.",
+                "„Kezdés”. Minden fájlnál látszik, hogyan sikerült; a futás a fájlok között leállítható."
+              ]
+            },
+            {
+              "points": [
+                "Receptek: a „Mentés receptként…” egy név alatt megőrzi mindazt, amit kiválasztott (a fájlok és a jelszavak kivételével), hogy egyetlen választással újra beállítható legyen.",
+                "Az „Őrizze meg a fájlok mappaszerkezetét az eredményekben” újraépíti a hozzáadott mappa almappáit.",
+                "A „Futtatásról szóló jelentés készítése” az eredmények mellé egy szöveges fájlt tesz, amely leírja, mi készült el és mi nem sikerült.",
+                "Egy csak aláírt PDF megtartja meglévő aláírásait; ha ugyanabban a futásban bármi mást is végeznek rajta, újraíródik, és az aláírások kimaradnak."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Beállítások",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "A PDF Organizer beállításai",
+          "body": [
+            "Fájl → Beállítások (vagy a Beállítások az oldalsávon, majd a PDF Organizer). Minden beállítás külön-külön vagy egyszerre is visszaállítható.",
+            {
+              "points": [
+                "Dokumentum megnyitásakor: mekkora méretben jelenjen meg a dokumentum megnyitáskor, görgetés vagy oldalanként, látszanak-e a bélyegképek.",
+                "Mértékegység, vonalzó és rács: a mértékegység (milliméter, hüvelyk, pont), a vonalzók, a rács és annak sűrűsége.",
+                "Nyomtatás: a papír, a tájolás és a skálázás, amivel a nyomtatási ablak indul.",
+                "Gyors eszköztár: mely gombok legyenek az oldalak feletti sávban.",
+                "Új dokumentumok nevei: a minták a kivont oldalakhoz, az új dokumentumokhoz és ahhoz a PDF-hez, amelybe a kötegelt feldolgozás sok fájlt gyűjt.",
+                "Aláírások: rákérdezzen-e a „Mentés” az aláírt fájl felülírása előtt.",
+                "Billentyűparancsok: kattintson egy parancs billentyűire, majd nyomja meg az újakat."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "A PDF Organizerről",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "A PDF Organizerről",
+          "body": [
+            "A PDF Organizer a Syntelab Creative PDF-alkalmazása: PDF dokumentumokat olvas, rendezi és összevonja az oldalaikat, írni és rajzolni lehet rájuk, űrlapokat tölt ki és készít, tanúsítvánnyal aláír és aláírásokat ellenőriz, és mindezt sok fájlon egyszerre is elvégzi.",
+            "Új program, és amit tud, annak egy része még csak az első lépés. Ahol nem elég az Ön dokumentumaihoz, jelezze nekünk a Súgó → Visszajelzés menüben: így tudjuk, min dolgozzunk."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Miből épül a PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "PDF olvasás, rajzolás és írás: MuPDF.",
+                "Szövegfelismerés (OCR): Tesseract, amennyiben telepítve van a számítógépen.",
+                "Irodai dokumentumok megnyitása: Word, Excel és PowerPoint, vagy LibreOffice, attól függően, hogy melyik van telepítve.",
+                "Weboldal PDF-ként mentése: a számítógépen telepített böngésző.",
+                "Aláírás tanúsítvánnyal: a Windows tanúsítványszolgáltatásai; az aláírások a PAdES szabvány előírásai szerint készülnek."
+              ]
+            },
+            "Amiben a program többi részével osztozik, az „A Syntelab Creative névjegye” alatt található."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Amit a PDF Organizer még nem tud",
+          "body": [
+            {
+              "points": [
+                "Az irodai dokumentumokat a számítógépen lévő irodai programcsomag nyitja meg; Word, Excel, PowerPoint vagy LibreOffice nélkül nem nyithatók meg. Saját konverteren dolgozunk: lásd „Min dolgozunk”.",
+                "A szövegfelismeréshez a külön telepített Tesseract motor szükséges.",
+                "Magának a dokumentumnak a szövege soronként módosítható; a bekezdések nem tördelődnek újra.",
+                "A négy festékkel (CMYK) nyomtatott képek nem vehetők fel áthelyezéshez.",
+                "Az „Ellenőrzés” azt mondja meg, hogy egy tanúsítvány ma vissza van-e vonva, azt nem, hogy mikor vonták vissza.",
+                "A tanúsítvánnyal való aláírás egyelőre Windows alatt működik; Linuxon és macOS-en egy későbbi verzióban jön."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

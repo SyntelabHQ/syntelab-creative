@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Tájékozódás",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Az első oldal",
+          "body": [
+            "A Dev fül az első oldalon nyílik meg, ahol minden eszköz megtalálható, a menükhöz hasonlóan csoportosítva: Kódolás, Adatok, Generálás, Vizsgálat, Hálózat.",
+            {
+              "points": [
+                "Írjon az „Eszköz keresése” mezőbe a lista szűkítéséhez.",
+                "Az eszközön lévő rögzítőgomb felül, a Rögzített csoportban tartja az eszközt.",
+                "Az eszköz ugyanazon a fülön nyílik meg; a Fájl → Összes eszköz visszavisz az első oldalra. A Beállításokban beállíthatja, hogy minden eszköz külön fülön nyíljon meg, és hogy az új fül az utoljára használt eszközzel nyíljon meg."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Illesszen be bármit",
+          "body": [
+            "Az első oldal tetején lévő mező elfogad bármit, amit beilleszt, és jelzi, minek tűnik: tokennek, tanúsítványnak, JSON-nak, UUID-knek, időbélyegeknek, cron-ütemezéseknek, URL-eknek, XML-nek vagy HTML-nek, SQL-nek, Base64-nek, ellenőrző összegnek, táblázatnak vagy YAML-nak.",
+            "Minden tipp alatt azok az eszközök állnak, amelyek ilyesmivel dolgoznak, a leginkább illő elöl. Kattintson egyre: a szöveggel együtt nyílik meg, és rögtön le is fut.",
+            {
+              "note": "A beillesztett tartalom a mezőben marad, amíg nem törli, vagy be nem zárja a fület. Soha nem kerül lemezre."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Az eszköz felépítése",
+          "body": [
+            "A legtöbb eszköz ugyanazt a felépítést használja: a beállítások egy sorban vannak a tetején, a bemenet az egyik oldalon, a kimenet a másikon, alul pedig egy sor jelzi az eredményt.",
+            {
+              "points": [
+                "Az eredmény újra elkészül, valahányszor a bemenet vagy egy beállítás megváltozik, és megjelenik a kimenetben; ezt jelzi a beállítások sorában a „Magától fut” felirat. Csak a minden billentyűleütésre futtatáshoz túl hosszú szöveg vagy a 128 MB-nál nagyobb fájl vár a Futtatás gombra, amely ilyenkor megjelenik. A Ctrl+Enter bármikor lefuttatja az eszközt.",
+                "A nem szöveges eredmény (Base64-ből dekódolt kép, gzip) előnézetként jelenik meg: a kép úgy, ahogy van, minden más a fajtájával, a méretével és az első bájtjaival. A Másolás ilyenkor Base64-ként másolja, a kép pedig képként is másolható. Ugyanez érvényes a nem szöveges bemeneti fájlra is.",
+                "A bemenet felett a Fájl megnyitása, a Beillesztés és a Törlés, a kimenet felett a Másolás és a Mentés fájlba gomb található. Fájlt a bemenetre is húzhat.",
+                "A bemenet hibáit szövegesen, a sor- és oszlopszám megadásával jelzik, és a szerkesztőben is kiemelik.",
+                "A Nézet menüben a két panel egymás mellé vagy egymás alá helyezhető, megjeleníthetők a sorszámok, és bekapcsolható a hosszú sorok törése; a panelek közötti vonal húzható.",
+                "A választott beállításokat a program megjegyzi a következő alkalomra. A beírt szövegeket viszont nem."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Megsemmisítés és a megőrzött adatok",
+          "body": [
+            "Az egyes eszközök jobb alsó sarkában lévő Megsemmisítés gomb azonnal kiüríti az eszközt: a bemenetet, az eredményt, mindent, amit a mezőibe írt, és azt is, amit a szerkesztői visszavonhatnának.",
+            "A Dev csak a beállításait, az Ön által rögzített eszközöket, az utoljára használt eszköz nevét és az egyes eszközök beállításait őrzi meg. Semmi sem kerül lemezre, naplóba vagy a legutóbbi elemek listájába abból, amit egy eszközbe beír, beilleszt, megnyit vagy ott létrehoz. A titkok végképp nem: a kulcsok, jelmondatok, tokenek és a kérések fejlécei csak a fülön élnek, sehol máshol.",
+            "Egy dolog egy ideig a lemezen marad: a fájlok eredménye és a nem szöveges eredmény a program saját mappájába kerül, hogy megjeleníthető, majd menthető legyen. Mindegyik törlődik, amikor egy másik eredmény lép a helyére, amikor megsemmisíti vagy bezárja az eszközt, és mindenképpen a Dev következő indításakor."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Bármilyen méretű fájlok",
+          "body": [
+            "A fájlok méretére nincs korlát. A megjelenítéshez elég kicsi fájl (legfeljebb 16 MB) a szerkesztőbe kerül. A nagyobb, illetve a nem szöveges fájl a lemezen marad: a kezdete (vagy egy előnézet) látható, az eszköz a helyéről olvassa, az eredménye pedig úgy jelenik meg, mint egy szövegé. A Mentés fájlba ezután az Ön által választott helyre másolja az eredményt.",
+            {
+              "points": [
+                "A hosszabb folyamatoknál egy kártya jelenik meg, amely mutatja a haladást, valamint egy Leállítás gomb.",
+                "Az UTF-8-tól eltérő kódolású (UTF-16, Windows-1252 és hasonló) szöveges fájlt a program szövegként olvassa be, ha elég kicsi a megjelenítéshez, és jelzi a kódolást. Amit a Devből ment, az UTF-8 kódolású lesz.",
+                "Az eszközre húzott fájl úgy nyílik meg, mint a Fájl megnyitása paranccsal. Ha az ablak nem tudja megállapítani, hol van a fájl, 16 MB-ig úgy veszi át, mintha beillesztette volna."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Sok fájl és teljes mappák",
+          "body": [
+            "Ahol egy eszköznél megtalálható a „Feldolgozás tárgya: Szöveg / Fájlok” beállítás, a Fájlok egyszerre sok fájlon futtatja az eszközt.",
+            {
+              "steps": [
+                "Adjon hozzá fájlokat vagy egy mappát (az almappáival együtt, ha ezt bekapcsolva hagyja).",
+                "A program minden fájlt egyszer, hozzáadáskor beolvas, és jelzi, hogy az eszköz feldolgozza-e.",
+                "Válassza ki, hová kerüljenek az eredmények: minden fájl mellé új néven, egy mappába (a mappaszerkezet megőrzésével) vagy magukra a fájlokra, amire a program még egyszer rákérdez. A Hash az eredményeket a listában is megjelenítheti.",
+                "Kattintson egy fájlra a listában, hogy a választások alatt csak annak eredményét lássa, még mielőtt bármi kiíródna.",
+                "Futtassa. Egy hibás fájl nem állítja le a többit; mindegyiknél látszik, hogyan sikerült."
+              ]
+            },
+            {
+              "note": "Az eredmény soha nem írja felül a már meglévő fájlt, hacsak nem kéri kifejezetten."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "A Windows Fájlkezelő helyi menüje",
+          "body": [
+            "Kapcsolja be a program Beállításaiban, a Windows Fájlkezelő résznél. Minden egyetlen sor, a „Syntelab Creative” alatt található; Windows 11 alatt a „További beállítások megjelenítése” alatt.",
+            {
+              "points": [
+                "Megnyitás a Syntelab Devben: azokon a fájltípusokon, amelyeket valamelyik eszköz beolvas (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz és hasonlók). A fájl a típusának megfelelő eszközben nyílik meg.",
+                "Ellenőrző összegek: bármely fájlon vagy mappán. A kivonatok a fájljuk mellett jelennek meg, és semmi sem íródik ki.",
+                "Hex nézet: bármely fájlon.",
+                "Összehasonlítás: két fájl a Diff két oldalára kerül; két mappa a mappák összehasonlításába."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kódolás",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Bájtokat alakít Base64 formátumba és fordít vissza. A kódolás bármely fájlt elfogad; a dekódolás visszaadja a bájtokat, amelyeket szöveg esetén megjelenít, egyéb esetben pedig fájlba menti.",
+            {
+              "points": [
+                "Ábécé: a szabványos, vagy az URL-ekhez használt (- és _ karakterekkel).",
+                "Töltés = karakterrel, és 64, 76 vagy bármilyen más karakterhosszúságú sorok.",
+                "A dekódolás mindkét ábécét elfogadja, kitöltéssel vagy anélkül, és jelzi, hol hibás egy karakter."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL kódolás / dekódolás",
+          "body": [
+            "Százalékos kódolás, úgy, ahogy a böngészők használják: egy cím része (minden kódolódik, ami nem egyszerű betű), egy teljes cím (saját speciális jelei megmaradnak), vagy egy űrlap (+ a szóköz helyett).",
+            "A dekódolás jelzi, ha egy % jelet nem követ két hexadecimális számjegy."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML entitások",
+          "body": [
+            "Azokat a jeleket, amelyeket a HTML és az XML saját célra foglal le (&, <, >, idézőjelek), entitásként írja ki, és az entitásokat visszaolvassa: név, decimális szám vagy hexadecimális szám szerint. A nevek a HTML-szabvány szerintiek.",
+            "A „Minden nem ASCII karakter is” beállítás az ékezetes betűket és a más ábécék betűit is entitásként írja ki."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT dekódoló",
+          "body": [
+            "Szétbont egy JSON Web Tokent: a fejlécét és az adatrészét JSON-ként, az igényeit pedig szavakkal (kiállító, alany, célközönség, lejárat, „lejárt” vagy „még nem járt le” jelzéssel).",
+            "Adja meg a titkos kulcsot a megosztott titkos kulccsal készült aláírás ellenőrzéséhez (HS256, HS384, HS512). A privát kulccsal (RS, ES, PS) készült aláírások nem lesznek ellenőrizve.",
+            {
+              "note": "A token és a titkos kulcs a fülön marad: a dekódoláshoz semmit sem küld el sehová."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Szöveget ír egy nyelv (JSON, JavaScript, C, C++, Java és hasonlók) sztringjeként, az idézőjeleket, sortöréseket és más jeleket escape-szekvenciaként írva, és az ilyen sztringet vissza is olvassa."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Gzip-tömörítést és -kibontást végez bármilyen méretű fájlon, olvasás közben. A szint a leggyorsabbtól a legkisebbig terjed; szöveg eredménye Base64-ként is megadható."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Számrendszerek",
+          "body": [
+            "Egész számokat jelenít meg, soronként egyet, bináris, oktális, decimális és hexadecimális alakban, valamint egy további, Ön által választott, legfeljebb 36-os alapú számrendszerben. A számok mérete nem korlátozott.",
+            {
+              "points": [
+                "A szám alapját a felírásából állapítja meg: 0x hexadecimális, 0b bináris, 0o oktális, betűk esetén hexadecimális, egyébként decimális. Kiválaszthatja azt az alapot is, amelyben mindent beolvas.",
+                "A számok közötti szóközöket, aláhúzásokat és apostrofokat figyelmen kívül hagyja: 1_000_000.",
+                "A negatív számot úgy is megadja, ahogy a számítógépek tárolják (kettes komplemens), a 8, 16, 32, 64 stb. bites méretek közül a legkisebbben, amelybe belefér."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Adatok",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON formázó",
+          "body": [
+            "JSON-t formáz, minifikál és validál, és fa szerkezetben is megjeleníti. Bármilyen méretű dokumentumot folyamként olvas be.",
+            {
+              "points": [
+                "Behúzás 2 vagy 4 szóközzel, tabulátorral, vagy bármilyen számú szóközzel.",
+                "További opciók: kulcsok rendezése, rövid listák egy sorban, szóköz a kettőspont után, sorvégződés, sortörés a végén, nem ASCII karakterek \\uXXXX alakban.",
+                "A megengedő olvasás elfogadja a megjegyzéseket (// és /* */) és a záró vesszőket, és szigorú JSON-t ír ki.",
+                "Módosítások: null értékek törlése, üres értékek törlése és hasonlóak, egyetlen műveletben.",
+                "A fa egyszerre egy szintet nyit meg, és képes szövegek keresésére a kulcsokban és értékekben."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "JSONPath lekérdezést futtat (RFC 9535) egy dokumentumon: $.store.book[?@.price < 10].title. Az eredmény a megtalált értékek, az azokhoz vezető útvonalak, vagy mindkettő.",
+            "A hibás lekérdezés esetén a hiba pontos helye is megjelenik."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema validátor",
+          "body": [
+            "Egy dokumentumot JSON Schema alapján ellenőriz (a 4-es drafttól a 2020-12-esig). A séma a bemenet alatti panelbe kerül. Minden nem megfelelő elemet felsorol a helyével és a megsértett szabállyal együtt.",
+            "Sok fájl esetén mindegyiket ugyanazzal a sémával ellenőrzi. A más fájlra vagy címre mutató $ref hivatkozást nem követi."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Sémagenerátor és JSON → TypeScript",
+          "body": [
+            "Egy JSON-mintából a JSON Schema generátor egy hozzá illő JSON Schemát ír, a JSON → TypeScript pedig a típusdeklarációit (interface-ek vagy típusok, exportálva vagy sem, readonly vagy sem, az Ön által megadott néven)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "YAML-t alakít JSON-ná és JSON-t YAML-lé. A YAML-t a core sémája szerint olvassa, a horgonyokat (anchor) és összevonásokat (merge) követve; a hibákat a helyükkel együtt jelzi."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Táblázatot alakít JSON-ná és vissza. Az elválasztót az első sorból állapítja meg, vagy kiválasztható (vessző, pontosvessző, tabulátor, függőleges vonal); az első sor lehet fejléc; a számok és a true / false értékek felismerhetők.",
+            "A „Táblázat” nézet sorokban és oszlopokban mutatja a CSV-t, bármilyen méretű fájl esetén."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML / HTML formázó",
+          "body": [
+            "Formázza, minifikálja és ellenőrzi az XML-t és a HTML-t. Az XML-t szigorúan olvassa: a le nem zárt taget a helyével együtt jelzi. A HTML-t olyan elnézően olvassa, ahogy a böngészők."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL formázó",
+          "body": [
+            "Az utasítást tagolja, soronként egy záradékkal, vagy egyetlen sorba írja; a kulcsszavak nagybetűsek, kisbetűsek vagy az eredeti írásmódúak lehetnek. Nem kér dialektust, és nem ellenőrzi, mit jelent az utasítás."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Összehasonlít két szöveget soronként, két JSON dokumentumot a tartalmuk alapján, vagy két mappát fájlonként. Az első a bemenetbe, a második pedig az alatta lévő panelbe kerül.",
+            {
+              "points": [
+                "Az „Egymás mellett” nézet a soron belül megváltozott szavakat jelöli; az „Egységes” egy patch, ahogy a diff -u írja.",
+                "A kis- és nagybetűk, a szóközök, az üres sorok, a számjegyek vagy az írásjelek figyelmen kívül hagyása.",
+                "JSON esetén a kulcsok sorrendje és az elrendezés nem jelent különbséget; az eredmény egy JSON Patch (RFC 6902) lehet.",
+                "Mappák: mely fájlok vannak csak az egyikben, melyek azonosak, melyek térnek el; egy sor Összehasonlítás gombja szövegként nyitja meg a párt."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdown előnézet",
+          "body": [
+            "Megmutatja, hogyan fog kinézni a Markdown, és megadja a HTML kódját másolásra vagy mentésre: CommonMark táblázatokkal, áthúzással, feladatlistákkal és lábjegyzetekkel.",
+            {
+              "points": [
+                "A Markdown-be beírt HTML szövegként jelenik meg, nem fut le.",
+                "A hálózatról letöltendő képet nem tölti le: helyette a leírása és a címe jelenik meg. A szövegbe ágyazott (data:) kép megjelenik.",
+                "A rákattintott hivatkozás a rendszerböngészőben nyílik meg."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Generálás",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "1, 3, 4, 5, 6 és 7 verziójú UUID-ket generál (RFC 9562), a kért mennyiségben, kötőjelekkel, egyszerűen, URN-ként vagy kapcsos zárójelben. A „Szétbontás” megmutatja minden UUID verzióját és a benne lévő időpontot vagy nevet."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "Szöveg vagy fájl CRC-32, MD5, SHA-1, SHA-256, SHA-384 és SHA-512 kivonata, egyszerre több is, hex vagy Base64 formában. Bármilyen méretű fájl kivonatát olvasás közben számítja ki.",
+            {
+              "points": [
+                "Összevetés ezzel: illesszen be egy ellenőrző összeget vagy egy .sha256 fájl sorát; a program jelzi, egyezik-e.",
+                "HMAC kulcs: a kivonatokból ezzel a kulccsal HMAC-ek lesznek.",
+                "Minden sor külön: a szöveg minden sorához egy kivonat.",
+                "Fájlok: a kivonatok a fájljuk mellett jelennek meg; az Összes másolása úgy adja vissza őket, ahogy a sha256sum írja."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Jelszavak és titkok",
+          "body": [
+            "Jelszavakat készít az Ön által választott karakterfajtákból, szavakból álló jelmondatokat, valamint véletlen bájtokat hex vagy Base64 formában, az operációs rendszer véletlenszámaiból. Mindegyiknél látszik, hány bit entrópiája van. Ha már készült valami, egy beállítás módosítása újra elkészíti.",
+            "A jelmondat az Electronic Frontier Foundation hosszú szólistájából (7776 angol szó) választott szavakból áll, mindegyik azonos valószínűséggel: hat szó körülbelül 77 bit."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Kulcsok és tanúsítványok",
+          "body": [
+            "Öt lehetőség, a felső részen választható:",
+            {
+              "points": [
+                "Új kulcs: RSA, EC P-256 / P-384 / P-521 vagy Ed25519, minden olyan formátumban, amelyet a programok használnak (PKCS #8, a régebbi forma, OpenSSH; a nyilvános kulcs PEM-ként és az authorized_keys soraként), jelmondattal zárolva, ha megad egyet.",
+                "Tanúsítványkérés: CSR egy új vagy egy beillesztett kulcshoz, az alanyával (subject) és egyéb neveivel (SAN).",
+                "Önaláírt tanúsítvány: ugyanez, a saját kulcsával aláírva, adott számú napra; a „Más tanúsítványokat is aláírhat” beállítás saját hitelesítő hatósággá teszi.",
+                "Aláírás saját CA-val: illesszen be egy kérést, a hatósága tanúsítványát és kulcsát; megkapja az aláírt tanúsítványt, utána a hatóságét.",
+                "Olvasás és konvertálás: illesszen be vagy nyisson meg bármit (PEM, DER, OpenSSH kulcs, .pfx vagy .p12 fájl, zárolva vagy sem). Jelzi, mit talált, és hogy a kulcs a tanúsítványhoz tartozik-e, és mindent kiír a többi formátumban is. Egy kulcs és a tanúsítványa együtt menthető .pfx fájlként."
+              ]
+            },
+            {
+              "note": "Minden ezen a számítógépen készül. A kulcs a Megsemmisítésig a fülön van, máshol sehol, hacsak el nem menti."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vizsgálat",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Regex tesztelő",
+          "body": [
+            "JavaScript reguláris kifejezést próbál ki egy szövegen: megjeleníti a találatokat a csoportjaikkal és a helyükkel, vagy a szöveget a találatok cseréje után. A jelzők: g, i, m, s, u, y.",
+            "A minta az ablaktól elkülönítve fut, és ha 20 másodpercnél tovább fut, a program leállítja."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron magyarázat",
+          "body": [
+            "Szavakkal elmondja, mit jelent egy ütemezés és mikor fut: crontab (öt mező, másodpercekkel hat, évvel hét), Quartz, AWS EventBridge cron() és rate(), valamint systemd OnCalendar. Soronként egy ütemezés.",
+            {
+              "points": [
+                "A következő futások, kérésre az előzőek is, a választott időzónában.",
+                "A hét napjait választása szerint vasárnaptól 0-tól számozza, vagy 1-től, ahogy a Quartz. A másodperceket tartalmazó sor, amelyben év, L, W vagy # is van, Quartz-sor, és a program magától Quartz-módon olvassa be.",
+                "Ugyanaz az ütemezés a többi formátumban, másoláshoz vagy a bemenethez való hozzáadáshoz.",
+                "Az összeállító mezőnkénti választással készít ütemezést; a „Módosítás az összeállítóban” betölti oda a beírt ütemezést."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix időbélyeg",
+          "body": [
+            "Időpontokat olvas, soronként egyet: 1970 óta eltelt másodperceket, ezredmásodperceket, mikroszekundumokat vagy nanoszekundumokat, vagy a szokásos módokon írt dátumot (ISO 8601, ahogy a levelezés és a HTTP írja, ahogy a Git írja). Mindegyiket megjeleníti a választott időzónában, UTC-ben és minden időbélyeg-formátumban."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL elemző",
+          "body": [
+            "Szétbont egy URL-t úgy, ahogy a böngészők olvassák: séma, felhasználó, gazdagép (Unicode alakjában is, ha punycode-ban van írva), port, elérési út, a lekérdezés minden paramétere dekódolva, és a fragmentum."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Tanúsítvány dekódoló",
+          "body": [
+            "X.509 tanúsítványokat olvas PEM vagy DER formátumban, és mindent megjelenít, ami bennük szerepel: alany, kiállító, érvényesség, a hozzá tartozó nevek, a kulcs, a bővítmények és az ujjlenyomatok.",
+            "Csak olvas; nem ítéli meg, hogy egy tanúsítvány megbízható-e. Egy oldal által mutatott tanúsítványhoz, és ahhoz, hogy ez a számítógép megbízik-e benne, használja a Hálózat → Oldal tanúsítványa eszközt."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Hex nézegető",
+          "body": [
+            "Bármilyen méretű fájl vagy beillesztett szöveg bájtjait jeleníti meg: minden sor pozícióját, a bájtokat és ugyanezeket a bájtokat karakterként.",
+            {
+              "points": [
+                "Ugrás egy 0x1F4, 1F4h vagy 500 alakban megadott pozícióra.",
+                "Bájtok (DE AD BE EF) vagy szöveg (UTF-8, illetve bármelyik bájtsorrendű UTF-16) keresése előre és hátra.",
+                "Kattintson egy bájtra: az oldalsáv megmutatja, mi van ott, minden méretű számként, mindkét bájtsorrendben, karakterként és időpontként.",
+                "Jelöljön ki húzással, a Shift billentyűvel vagy a nyílbillentyűkkel; a kijelölést hexként, kódként, Base64-ként vagy szövegként másolhatja, vagy fájlba mentheti."
+              ]
+            },
+            {
+              "note": "Csak megjelenít: a fájlban semmi sem változik."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hálózat",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Hová kapcsolódnak a hálózati eszközök",
+          "body": [
+            "Ez a négy eszköz a Dev egyetlen olyan része, amely a hálózatra kapcsolódik, és csak oda kapcsolódik, ahová Ön irányítja.",
+            {
+              "points": [
+                "Csak a beírt címhez kapcsolódik, és csak akkor, ha megnyomja a gombot. Soha nem a háttérben.",
+                "Az megy el, amit Ön beírt. A kéréshez csak egy mindenkinél azonos User-Agent kerül („Syntelab Creative”), hacsak nem ad meg sajátot.",
+                "Nem tárol sütiket, semmit nem küld Önről vagy a számítógépről, és semmit sem őriz meg abból, amit beír."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP kliens",
+          "body": [
+            "Egy kézzel megírt kérést küld: metódus, cím, fejlécek (soronként egy: Név: érték) és törzs, beírva vagy bármilyen méretű fájlból.",
+            {
+              "points": [
+                "A válasz: az állapotkódja, mennyi ideig tartott (összesen és az első bájtig), a mérete, a fejlécei és a törzse, típus szerint színezve, JSON esetén formázva. A nem szöveges törzs (kép, PDF) úgy jelenik meg, ahogy van, és úgy menthető, ahogy érkezett.",
+                "Az átirányítások követése, vagy az első válasz változatlan megtekintése. A program felsorolja azokat a címeket, amelyekről a kérés továbbment.",
+                "A tanúsítvány ellenőrzése aszerint, amiben ez a számítógép megbízik; csak saját szervereknél kapcsolja ki.",
+                "A „Küldés, válasz mentése fájlba” bármilyen méretű törzset közvetlenül a lemezre ír, folyamatjelzővel és Leállítás gombbal.",
+                "A „Másolás curl formátumban” ugyanazt a kérést parancsként adja meg."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS lekérdezés",
+          "body": [
+            "Egy névkiszolgálótól lekéri egy név rekordjait: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, egyszerre többet is. Cím megadásakor a hozzá tartozó nevet adja meg (PTR).",
+            "A kérdés a számítógépen beállított névkiszolgálóhoz, egy nyilvánoshoz (1.1.1.1, 8.8.8.8, 9.9.9.9), egy HTTPS-en keresztül elérhető feloldóhoz (Cloudflare, Google) vagy egy Ön által beírthoz megy."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Port ellenőrzés",
+          "body": [
+            "Megmutatja, hogy egy gazdagép portjai fogadnak-e TCP-kapcsolatot: egy, több, vagy egy tartomány, akár mind a 65 535 (22, 80, 443, 8000-8100). Mindegyik nyitott, zárt, vagy a megadott időn belül nem válaszol.",
+            {
+              "note": "Csak saját gazdagépeit, vagy olyanokat próbáljon ki, amelyek tesztelésére jogosult."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Oldal tanúsítványa",
+          "body": [
+            "Megmutatja azokat a tanúsítványokat, amelyeket egy oldal a biztonságos kapcsolat létesítésekor átad: kinek szólnak, ki írta alá őket, hány nap van még hátra, megbízik-e bennük ez a számítógép, és ha nem, miért nem, a TLS verzióját és a titkosítót. Csak a kézfogás (handshake) történik meg: kérés nem kerül elküldésre.",
+            {
+              "points": [
+                "Írja be: példa.hu, példa.hu:8443 vagy egy webcím.",
+                "A levelezőszerverek és az FTP titkosítatlanul kezdenek, és a program kéri az átváltást TLS-re (STARTTLS): a port (25, 587, 143, 110, 21) alapján vagy kézzel választva.",
+                "A „Minden” a tanúsítványok összes adatát megjeleníti; a „PEM” másolásra vagy mentésre adja meg őket."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Beállítások",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "A Dev beállításai",
+          "body": [
+            "A Fájl → Beállítások a program Beállításait a Dev résznél nyitja meg.",
+            {
+              "points": [
+                "Minden eszköz megnyitása külön fülön, vagy abban a fülön, ahol kiválasztotta.",
+                "Új fül megnyitása az utoljára használt eszközzel vagy az első oldalon.",
+                "Minden eszköz beállításainak és a rögzítéseknek a visszaállítása a program alapértelmezéseire."
+              ]
+            },
+            "A Windows Fájlkezelő helyi menüje, a nyelv, a téma és a billentyűparancsok a program általános beállításai között találhatók."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "A Devről",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "A Devről",
+          "body": [
+            "A Dev a Syntelab Creative fejlesztőknek szánt alkalmazása: olyan eszközök, amelyek kódolnak és dekódolnak, formáznak és ellenőriznek, az adatokat egyik formából a másikba alakítják, és szétbontják azt, ami eredeti formájában nehezen olvasható.",
+            "Minden ezen a számítógépen történik. Semmi, amit egy eszközbe beír, beilleszt vagy megnyit, nem kerül tárolásra, és sehová sem kerül elküldésre. A fájlok méretére és számára nincs korlát: a határt a számítógép memóriája és lemeze szabja meg.",
+            "Az alkalmazás új, és még fejlesztés alatt áll. Ahol nem felel meg a munkájához, jelezze nekünk a Súgó → Visszajelzés menüpontban."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "A Dev technológiai háttere",
+          "body": [
+            {
+              "points": [
+                "Szerkesztők: CodeMirror, https://codemirror.net . MIT licenc. Copyright (C) 2018-2021 Marijn Haverbeke és mások.",
+                "JSON olvasása és színezése a szerkesztőkben: @codemirror/lang-json, https://github.com/codemirror/lang-json , a @codemirror/language és a @lezer/highlight csomaggal. MIT licenc. Copyright (C) 2018-2021 Marijn Haverbeke és mások.",
+                "YAML, XML, HTML és SQL olvasása és színezése a szerkesztőkben: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (a @codemirror/lang-css és a @codemirror/lang-javascript csomaggal); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . MIT licenc. Copyright (C) 2018-2024 Marijn Haverbeke és mások.",
+                "Dokumentum ellenőrzése JSON Schema alapján: jsonschema, https://github.com/Stranger6667/jsonschema . MIT licenc. Copyright (c) 2020-2026 Dmitry Dygalo. A hálózati része nélkül van beépítve: a Dev soha nem tölt le sémát.",
+                "A JSONPath mintái (match és search): regex, https://github.com/rust-lang/regex . MIT vagy Apache-2.0 licenc. Copyright (c) 2014 The Rust Project Developers.",
+                "YAML olvasása: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . MIT vagy Apache-2.0 licenc. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. A YAML írását maga a Dev végzi.",
+                "Két szöveg összehasonlítása (Diff): similar, https://github.com/mitsuhiko/similar . Apache-2.0 licenc. Szerzők: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . MIT vagy Apache-2.0 licenc. Copyright (c) 2014-2026 Alex Crichton.",
+                "A Hash eszköz és a token-aláírás kivonatai: sha2, sha1 és md-5, https://github.com/RustCrypto/hashes . MIT vagy Apache-2.0 licenc. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, valamint a RustCrypto fejlesztői.",
+                "Dátumok, idők és időzónák (Unix időbélyeg, Cron magyarázat): jiff, https://github.com/BurntSushi/jiff , az IANA adatbázis időzónáival. Unlicense vagy MIT licenc. Copyright (c) 2015 Andrew Gallant.",
+                "URL szétbontása: url és idna, https://github.com/servo/rust-url . MIT vagy Apache-2.0 licenc. Copyright (c) 2013-2025 The rust-url developers.",
+                "X.509 tanúsítványok olvasása: x509-parser, https://github.com/rusticata/x509-parser . MIT vagy Apache-2.0 licenc. Copyright (c) 2017 Pierre Chifflier.",
+                "A regex tesztelő a JavaScript reguláris kifejezéseit futtatja, annak a WebView-nak a motorjában, amellyel a program rajzol (Windows alatt Microsoft Edge WebView2); ehhez nincs külön könyvtár hozzáadva.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . MIT vagy Apache-2.0 licenc. Copyright (c) 2018 Sam Rijs, Alex Crichton és közreműködők.",
+                "UUID-k: uuid, https://github.com/uuid-rs/uuid . Apache-2.0 vagy MIT licenc. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Véletlen bájtok jelszavakhoz, titkokhoz és UUID-khez, az operációs rendszerből: getrandom, https://github.com/rust-random/getrandom . MIT vagy Apache-2.0 licenc. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "RSA kulcsok és aláírások: rsa, https://github.com/RustCrypto/RSA , a num-bigint-dig segítségével, https://github.com/dignifiedquire/num-bigint . MIT vagy Apache-2.0 licenc. Copyright (c) RustCrypto Developers és dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "A NIST görbék (P-256, P-384, P-521) kulcsai és aláírásai: p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , a hozzájuk szükséges ecdsa, elliptic-curve és crypto-bigint könyvtárakkal. Apache-2.0 vagy MIT licenc. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Ed25519 kulcsok és aláírások: ed25519-dalek és curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . BSD 3-Clause licenc. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft és Henry de Valence. Minden jog fenntartva.",
+                "A kulcsok, kérések és tanúsítványok formátumai (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER és PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Apache-2.0 vagy MIT licenc. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "OpenSSH kulcsfájlok: ssh-key, https://github.com/RustCrypto/SSH , a bcrypt-pbkdf, aes, ctr, chacha20 és a RustCrypto egyéb olyan titkosítási algoritmusai és hash-függvényei, amelyek egy kulcs zárolásához szükségesek ( https://github.com/RustCrypto ). Apache-2.0 vagy MIT licenc. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "PKCS #12 fájlok (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , a RustCrypto pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 és scrypt könyvtárai segítségével. MIT vagy Apache-2.0 licenc. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "A kulcsok alapját képező véletlenszámok, amelyek az operációs rendszerből származnak: rand_core, https://github.com/rust-random/rand . MIT vagy Apache-2.0 licenc. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "A HTTP kliens: ureq, https://github.com/algesten/ureq . MIT vagy Apache-2.0 licenc. Copyright (c) 2019 Martin Algesten.",
+                "A HTTP kliens és az „Oldal tanúsítványa” biztonságos kapcsolatai (TLS): rustls, https://github.com/rustls/rustls , Apache-2.0, ISC vagy MIT licenc, Copyright (c) 2016 Joseph Birr-Pixton; rustls-webpki, https://github.com/rustls/webpki , ISC licenc, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , Apache-2.0 és ISC licencek; webpki-roots, https://github.com/rustls/webpki-roots , CDLA-Permissive-2.0 licenc.",
+                "Megbízik-e ez a számítógép egy tanúsítványban: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . MIT vagy Apache-2.0 licenc. Copyright (c) 2022 1Password.",
+                "Markdown olvasása: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . MIT licenc. Copyright 2015 Google Inc. Minden jog fenntartva.",
+                "Az UTF-8-tól eltérő kódolású fájlok olvasása: encoding_rs, https://github.com/hsivonen/encoding_rs , Apache-2.0 vagy MIT licenc (az adataira BSD-3-Clause licenc), Copyright Mozilla Foundation; valamint chardetng, https://github.com/hsivonen/chardetng , Apache-2.0 vagy MIT licenc, Copyright Mozilla Foundation.",
+                "A jelmondatok szavai: az EFF Large Wordlist for Passphrases, https://www.eff.org/dice , az Electronic Frontier Foundation munkája, a Creative Commons Attribution 3.0 United States licenc ( https://creativecommons.org/licenses/by/3.0/us/ ) alapján használva. A listát változatlanul használjuk.",
+                "Az OpenSSL régi módon zárolt kulcsainak megnyitása: a RustCrypto aes, cbc és des moduljai, https://github.com/RustCrypto . MIT vagy Apache-2.0 licenc. Copyright (c) RustCrypto Developers.",
+                "Kifejezetten a Dev számára, könyvtár nélkül írva: a DNS lekérdezés (a kérdések felírása és a válaszok olvasása az RFC 1035 szerint) és a port ellenőrzés.",
+                "Kifejezetten a Dev számára, könyvtár nélkül írva: JSON olvasása és írása folyamként, JSONPath (RFC 9535), Base64, százalékos kódolás, HTML karakterhivatkozások (neveik a HTML-szabvány szerintiek, https://html.spec.whatwg.org ), sztringek escape-szekvenciái, JSON Web Tokenek olvasása, YAML írása, CSV mindkét irányban, cron-ütemezések olvasása, az XML / HTML formázó és az SQL formázó."
+              ]
+            },
+            "A program többi részével közös elemek „A Syntelab Creative névjegye” alatt találhatók."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Amit a Dev még nem tud",
+          "body": [
+            {
+              "points": [
+                "A token aláírása csak akkor kerül ellenőrzésre, ha azt egy közös titokkal készítették (HS256, HS384, HS512).",
+                "A JSON Schema validáló angolul jelzi, ami nem felel meg, ahogy a könyvtára is, és nem követi a más fájlra vagy címre mutató $ref hivatkozást.",
+                "Az SQL formázó nem kér dialektust, és nem ellenőrzi, mit jelent egy utasítás: csak a soha véget nem érő sztringet vagy megjegyzést jelzi.",
+                "A YAML, valamint a YAML-lé vagy CSV-vé alakított JSON az átalakítás alatt teljes egészében a memóriában van; a JSON-ná alakított CSV, valamint az XML, a HTML és az SQL feldolgozása olvasás közben történik, méretüktől függetlenül.",
+                "A táblázat, amelyben a CSV megtekinthető, csak olvasható: nem lehet beleírni, és egyelőre másolni sem lehet belőle.",
+                "A Diff a két fájl minden sorából tizenhat bájtot tárol, nem magukat a fájlokat; két JSON dokumentumot viszont egészben tart, mivel összehasonlítás előtt újraírja őket.",
+                "Az olyan sorszakaszt, amelyben nincs mindkét oldalon pontosan egyszer előforduló sor, a program olyan alaposan hasonlítja össze, amennyire egy másodperc engedi: a jelzett különbségek valósak, bár nem mindig a lehető legkevesebbek.",
+                "A Diff nem veszi figyelembe a sorvégek típusát (CRLF vagy LF).",
+                "Két mappát a fájljaik bájtjai alapján hasonlít össze; a fájlokat a nevük alapján, betűről betűre párosítja.",
+                "A Vizsgálat menü eszközei JSON-t adnak vissza, angol nyelvű nevekkel.",
+                "A regex tesztelő a JavaScript reguláris kifejezéseit futtatja, nem a PCRE-t és nem a Rustéit; megjeleníthető szövegen dolgozik, nem lemezen tárolt fájlon; ha egy minta 20 másodpercnél tovább fut, leállítja.",
+                "A tanúsítvány dekódoló beolvassa a tanúsítványt, de nem ellenőrzi, hogy megbízható-e: sem a láncát, sem az aláírását, sem azt, hogy visszavonták-e.",
+                "Az UTF-8-tól eltérő kódolású szöveges fájlt akkor olvassa be, ha elég kicsi a megjelenítéshez; a nagyobbnak, amelyet a lemezről dolgoz fel, UTF-8 kódolásúnak kell lennie.",
+                "Az eszközre húzott fájlt 16 MB-ig veszi át; az ablak nem tudja meg, hol van a lemezen a ráhúzott fájl, ezért a nagyobbat a Fájl megnyitása paranccsal kell megnyitni.",
+                "A jelmondatok csak angol szavakból állnak.",
+                "Cron magyarázat: az összeállító crontab-ütemezéseket készít (öt mező, vagy másodpercekkel hat); az L, W, # vagy ? jelet tartalmazó ütemezés nem tölthető be oda. Az AWS rate() időpontjai nem adhatók meg, mivel a szabály létrehozásától számítódnak. A systemd-ből a szokásos naptári eseményeket olvassa be; a másodperc törtrészeit és a hónap végétől számolt naplistákat nem.",
+                "A Hex nézegető csak megjelenít: a fájlban semmi sem változik. A szövegoszlop ASCII vagy nyugat-európai betűket mutat, más ábécéket nem; bájtok vagy szöveg kereshető, minták nem.",
+                "Kulcsok és tanúsítványok: a kulcsok lehetnek RSA, P-256, P-384 és P-521 görbe, valamint Ed25519; másokat (DSA, secp256k1, X25519) nem olvas be. Az OpenSSL régi módján zárolt kulcsot akkor nyitja meg, ha a titkosítója AES vagy 3DES. Egy .pfx fájl egy kulcsot tartalmaz a tanúsítványaival. Egy nagyon nagy RSA kulcs létrehozása időbe telik, és félúton nem állítható meg. Az RSA kulcsokat készítő könyvtárnak ismert gyengesége van olyan támadóval szemben, aki hálózaton keresztül sok aláírás idejét tudja mérni (RUSTSEC-2023-0071): itt a kulcsok az Ön számítógépén készülnek és íródnak ki, és semmi sem kerül aláírásra más számára.",
+                "HTTP kliens: HTTP/1.1 (nem HTTP/2 vagy 3); a kérések között nem tárol sütiket; a többrészes (multipart) űrlapokat nem állítja össze; a 16 MB-nál nagyobb vagy nem szöveges választ a kérés újraküldésével lehet fájlba írni.",
+                "A DNS lekérdezés megjeleníti az aláírásokat (DNSSEC), de nem ellenőrzi őket. A Port ellenőrzés csak TCP-t próbál: egy hallgatag UDP-port nem különböztethető meg egy zárttól. Az Oldal tanúsítványa nem kérdezi le, hogy a tanúsítványt visszavonták-e.",
+                "A helyi menü a Windows Fájlkezelőhöz készült; Windows 11 alatt a bejegyzései a „További beállítások megjelenítése” alatt találhatók."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

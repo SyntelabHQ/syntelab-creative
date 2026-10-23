@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Bí o ṣe lè rí ọ̀nà rẹ",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Ojú-ewé àkọ́kọ́",
+          "body": [
+            "Táàbù Dev kan máa ń ṣí sí ojú-ewé àkọ́kọ́, níbi tí gbogbo irinṣẹ́ wà, tí a kó jọ bí wọ́n ṣe wà nínú àwọn àkójọ àṣàyàn: Kóòdù, Dátà, Ṣẹ̀dá, Ìṣàyẹ̀wò, Nẹ́tíwọ́ọ̀kì.",
+            {
+              "points": [
+                "Tẹ̀ ọ̀rọ̀ sínú \"Wá irinṣẹ́ kan\" láti dín àtòjọ náà kù.",
+                "Àmì ìkànmọ́ lórí irinṣẹ́ kan ń jẹ́ kí ó wà lókè, lábẹ́ \"Àwọn tí a kàn mọ́\".",
+                "Irinṣẹ́ kan máa ń ṣí nínú táàbù kan náà; Fáìlì → Gbogbo irinṣẹ́ ń padà sí ojú-ewé àkọ́kọ́. Nínú Ètò, o lè jẹ́ kí irinṣẹ́ kọ̀ọ̀kan ṣí nínú táàbù tirẹ̀, kí táàbù tuntun sì ṣí sí irinṣẹ́ tí a lò kẹ́yìn."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Lẹ̀ ohunkóhun",
+          "body": [
+            "Àpótí tó wà lókè ojú-ewé àkọ́kọ́ ń gba ohunkóhun tí o bá lẹ̀, ó sì ń sọ ohun tí ó dà bí: tókìnì, ìwé-ẹ̀rí, JSON, àwọn UUID, àwọn àmì àkókò, àwọn ètò àkókò cron, àwọn URL, XML tàbí HTML, SQL, Base64, checksum, tábìlì, YAML.",
+            "Lábẹ́ àfojúsùn kọ̀ọ̀kan ni àwọn irinṣẹ́ tí ó ń ṣiṣẹ́ lórí irú nǹkan bẹ́ẹ̀ wà, èyí tí ó bá a mu jù ní àkọ́kọ́. Tẹ ọ̀kan: yóò ṣí pẹ̀lú ọ̀rọ̀ náà nínú rẹ̀ tẹ́lẹ̀, tí a sì ti mú un ṣiṣẹ́.",
+            {
+              "note": "Ohun tí o lẹ̀ yóò wà nínú àpótí náà títí o fi pa á rẹ́ tàbí tí o fi pa táàbù náà dé. A kò kọ ọ́ sórí díìsì láé."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Bí a ṣe to irinṣẹ́ kan kalẹ̀",
+          "body": [
+            "Ọ̀pọ̀ irinṣẹ́ ní ìgbékalẹ̀ kan náà: àwọn àṣàyàn ní ìlà kan lókè, ìgbéwọlé ní ẹ̀gbẹ́ kan, ìgbéjáde ní ẹ̀gbẹ́ kejì, àti ìlà kan nísàlẹ̀ tí ó ń sọ ohun tí ó ṣẹlẹ̀.",
+            {
+              "points": [
+                "A ń tún àbájáde ṣe nígbàkúùgbà tí ìgbéwọlé tàbí àṣàyàn kan bá yí padà, a sì ń fi í hàn nínú ìgbéjáde; \"Ó ń ṣiṣẹ́ fúnra rẹ̀\" nínú ìlà àwọn àṣàyàn ń sọ bẹ́ẹ̀. Ọ̀rọ̀ tí ó gùn jù láti ṣiṣẹ́ ní gbogbo bọ́tìnnì tí a tẹ̀, tàbí fáìlì tí ó tóbi ju 128 MB lọ, nìkan ló ń dúró de bọ́tìnnì \"Ṣiṣẹ́\", tí yóò hàn nígbà náà. Ctrl+Enter ń mú irinṣẹ́ náà ṣiṣẹ́ nígbàkigbà.",
+                "Àbájáde tí kì í ṣe ọ̀rọ̀ (àwòrán tí a túmọ̀ láti Base64, gzip) ni a ń fi hàn bí àwòtẹ́lẹ̀: àwòrán bí ó ti rí, ohunkóhun míì nípa irú rẹ̀, ìwọ̀n rẹ̀ àti àwọn báìtì àkọ́kọ́ rẹ̀. Nígbà náà \"Ṣe ẹ̀dà\" ń ṣe ẹ̀dà rẹ̀ bí Base64, a sì lè ṣe ẹ̀dà àwòrán bí àwòrán. Bẹ́ẹ̀ náà ni fáìlì ìgbéwọlé tí kì í ṣe ọ̀rọ̀.",
+                "\"Ṣí fáìlì kan\", \"Lẹ̀ ẹ́\" àti \"Pa á rẹ́\" wà lórí ìgbéwọlé; \"Ṣe ẹ̀dà\" àti \"Fi pamọ́ sínú fáìlì\" wà lórí ìgbéjáde. O tún lè ju fáìlì kan sílẹ̀ sórí ìgbéwọlé.",
+                "A ń fi ọ̀rọ̀ sọ ohun tí kò tọ́ nínú ìgbéwọlé, pẹ̀lú ìlà àti òpó rẹ̀, a sì ń sàmì sí i nínú olóòtú.",
+                "Àkójọ àṣàyàn Ìfihàn ń fi pánẹ́lì méjèèjì sí ẹ̀gbẹ́ ara wọn tàbí ọ̀kan sábẹ́ èkejì, ó ń fi nọ́ńbà ìlà hàn, ó sì ń ṣẹ́ àwọn ìlà gígùn; o lè fa ìlà tó wà láàrin àwọn pánẹ́lì.",
+                "A ń rántí àwọn àṣàyàn tí o yàn fún ìgbà tó ń bọ̀. A kò rántí ohun tí o tẹ̀."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "\"Jó o run\", àti ohun tí a ń pa mọ́",
+          "body": [
+            "\"Jó o run\", nísàlẹ̀ lápá ọ̀tún irinṣẹ́ kọ̀ọ̀kan, ń sọ ọ́ di òfo lẹ́sẹ̀kẹsẹ̀: ìgbéwọlé, àbájáde, ohunkóhun tí a tẹ̀ sínú àwọn àpótí rẹ̀, àti ohun tí àwọn olóòtú rẹ̀ lè dá padà.",
+            "Dev ń pa àwọn ètò rẹ̀ nìkan mọ́, àwọn irinṣẹ́ tí o kàn mọ́, orúkọ irinṣẹ́ tí a lò kẹ́yìn àti àwọn àṣàyàn irinṣẹ́ kọ̀ọ̀kan. A kò kọ ohunkóhun tí o tẹ̀, tí o lẹ̀, tí o ṣí tàbí tí o ṣẹ̀dá nínú irinṣẹ́ kan sórí díìsì, sínú àkọsílẹ̀ ìṣẹ̀lẹ̀ tàbí sínú àtòjọ àwọn nǹkan àìpẹ́. Pàápàá jùlọ àwọn àṣírí: àwọn kọ́kọ́rọ́, gbólóhùn aṣínà, tókìnì àti àwọn header ìbéèrè kan wà nínú táàbù nìkan, kì í ṣe ibòmíì.",
+            "Ohun kan ń dúró lórí díìsì fún ìgbà díẹ̀: àbájáde fáìlì kan, àti àbájáde tí kì í ṣe ọ̀rọ̀, ni a ń kọ sínú fódà ti ètò náà fúnra rẹ̀ kí a lè fi wọ́n hàn, kí a sì fi wọ́n pamọ́ lẹ́yìn náà. A ń pa ọ̀kọ̀ọ̀kan rẹ́ nígbà tí àbájáde míì bá gba ipò rẹ̀, nígbà tí o bá jó irinṣẹ́ náà run tàbí tí o pa á dé, àti ní gbogbo ọ̀nà nígbà tí Dev bá tún bẹ̀rẹ̀."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Fáìlì ti ìwọ̀n yòówù",
+          "body": [
+            "Kò sí ààlà lórí ìwọ̀n fáìlì. Fáìlì tí ó kéré tó láti fi hàn (títí dé 16 MB) ni a ń fi sínú olóòtú. Èyí tí ó tóbi jù bẹ́ẹ̀ lọ, tàbí èyí tí kì í ṣe ọ̀rọ̀, ń wà lórí díìsì: a ń fi ìbẹ̀rẹ̀ rẹ̀ (tàbí àwòtẹ́lẹ̀) hàn, irinṣẹ́ náà ń kà á láti ibi tí ó wà, a sì ń fi àbájáde rẹ̀ hàn bí ti ọ̀rọ̀. Lẹ́yìn náà \"Fi pamọ́ sínú fáìlì\" ń ṣe ẹ̀dà àbájáde náà sí ibi tí o yàn.",
+            {
+              "points": [
+                "Iṣẹ́ tí ó gùn ń fi káàdì kan hàn pẹ̀lú bí ó ti lọ jìnnà tó àti bọ́tìnì \"Dá a dúró\".",
+                "Fáìlì ọ̀rọ̀ tí a kọ ní ọ̀nà kóòdù míì yàtọ̀ sí UTF-8 (UTF-16, Windows-1252 àti irú wọn) ni a ń kà bí ọ̀rọ̀ nígbà tí ó bá kéré tó láti fi hàn, a sì ń sọ ọ̀nà kóòdù rẹ̀. UTF-8 ni ohun tí o bá fi pamọ́ láti Dev.",
+                "Fáìlì tí a jù sílẹ̀ sórí irinṣẹ́ kan ni a ń ṣí bí pẹ̀lú \"Ṣí fáìlì kan\". Níbi tí fèrèsé kò ti lè mọ ibi tí ó wà, a ń gbà á títí dé 16 MB, bí ẹni pé a lẹ̀ ẹ́."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Ọ̀pọ̀ fáìlì àti odidi fódà",
+          "body": [
+            "Níbi tí irinṣẹ́ kan bá ní \"Ṣiṣẹ́ lórí: Ọ̀rọ̀ / Àwọn fáìlì\", \"Àwọn fáìlì\" ń mú un ṣiṣẹ́ lórí ọ̀pọ̀ fáìlì lẹ́ẹ̀kan náà.",
+            {
+              "steps": [
+                "Fi àwọn fáìlì kún, tàbí fódà kan (pẹ̀lú àwọn fódà tí ó wà nínú rẹ̀, tí o bá fi ìyẹn sílẹ̀ ní títàn).",
+                "A ń ka fáìlì kọ̀ọ̀kan lẹ́ẹ̀kan bí a ṣe ń fi í kún, a sì ń sọ bóyá irinṣẹ́ náà gbà á.",
+                "Yan ibi tí àwọn àbájáde ń lọ: lẹ́gbẹ̀ẹ́ fáìlì kọ̀ọ̀kan pẹ̀lú orúkọ tuntun, sínú fódà kan (pẹ̀lú àwọn fódà bí wọ́n ṣe wà), tàbí sórí àwọn fáìlì náà fúnra wọn, èyí tí yóò tún bi ọ́ léèrè lẹ́ẹ̀kan sí i. Hash tún lè kàn fi àwọn àbájáde hàn nínú àtòjọ náà.",
+                "Tẹ fáìlì kan nínú àtòjọ láti rí àbájáde rẹ̀ nìkan lábẹ́ àwọn ìyàn, kí a tó kọ ohunkóhun.",
+                "Tẹ \"Ṣiṣẹ́\". Fáìlì tí kò tọ́ kò ní dá àwọn yòókù dúró; ọ̀kọ̀ọ̀kan ń sọ bí ó ṣe yọrí."
+              ]
+            },
+            {
+              "note": "Àbájáde kò ní bọ́ sórí fáìlì tí ó ti wà níbẹ̀ láé, àyàfi tí o bá béèrè bẹ́ẹ̀."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Àkójọ àṣàyàn títẹ ọ̀tún ti Windows Explorer",
+          "body": [
+            "Tàn án nínú Ètò ètò náà, lábẹ́ Windows Explorer. A kó gbogbo nǹkan jọ sábẹ́ ìlà kan, \"Syntelab Creative\"; lórí Windows 11 ó wà lábẹ́ \"Show more options\".",
+            {
+              "points": [
+                "\"Ṣí nínú Syntelab Dev\": lórí irú àwọn fáìlì tí irinṣẹ́ kan ń kà (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz àti irú wọn). Fáìlì náà yóò ṣí nínú irinṣẹ́ tí ó wà fún irú rẹ̀.",
+                "\"Checksum\": lórí fáìlì tàbí fódà èyíkéyìí. A ń to àwọn hash sílẹ̀, ọ̀kọ̀ọ̀kan lẹ́gbẹ̀ẹ́ fáìlì rẹ̀, a kò sì kọ nǹkan kan.",
+                "\"Ìwò hex\": lórí fáìlì èyíkéyìí.",
+                "\"Ṣe àfiwé\": fáìlì méjì ń lọ sí ẹ̀gbẹ́ méjèèjì Ìyàtọ̀; fódà méjì ń lọ sí àfiwé àwọn fódà."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kóòdù",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Ó ń sọ báìtì di Base64 ó sì ń dá a padà. Ṣíṣe kóòdù ń gba fáìlì èyíkéyìí; títú kóòdù ń dá àwọn báìtì padà, a ń fi wọ́n hàn nígbà tí wọ́n bá jẹ́ ọ̀rọ̀, a sì ń fi wọ́n pamọ́ sínú fáìlì nígbà tí wọn kì í bá ṣe ọ̀rọ̀.",
+            {
+              "points": [
+                "Álífábẹ́ẹ̀tì: ti àṣà, tàbí èyí tí ó wà fún URL (- àti _).",
+                "\"Fi = kún un\", àti àwọn ìlà lẹ́tà 64, 76 tàbí iye lẹ́tà yòówù.",
+                "Títú kóòdù ń gba álífábẹ́ẹ̀tì méjèèjì, pẹ̀lú ìkún tàbí láìsí i, ó sì ń sọ ibi tí lẹ́tà kan ti ṣàṣìṣe."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Kóòdù URL",
+          "body": [
+            "Percent-encoding, bí àwọn aṣàwákiri ṣe ń kọ ọ́: apá kan àdírẹ́sì (a ń ṣe kóòdù gbogbo ohun tí kì í ṣe lẹ́tà lásán), odidi àdírẹ́sì (a ń pa àwọn àmì tirẹ̀ mọ́), tàbí fọ́ọ̀mù (+ fún àlàfo).",
+            "Títú kóòdù ń sọ ibi tí díjítì hexadecimal méjì kò ti tẹ̀lé àmì % kan."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Àwọn entity HTML",
+          "body": [
+            "Ó ń kọ àwọn àmì tí HTML àti XML pa mọ́ fún ara wọn (&, <, >, àmì àyọlò) bí entity, ó sì ń ka entity padà: nípa orúkọ, nípa nọ́ńbà ìdámẹ́wàá tàbí nípa nọ́ńbà hexadecimal. Àwọn orúkọ náà ni ti ìlànà HTML.",
+            "\"Gbogbo lẹ́tà tí kì í ṣe ASCII pẹ̀lú\" ń kọ àwọn lẹ́tà olóhùn àti àwọn álífábẹ́ẹ̀tì míì bí entity pẹ̀lú."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Ìtúkóòdù JWT",
+          "body": [
+            "Ó ń tú JSON Web Token palẹ̀: àkọlé rẹ̀ àti ẹrù rẹ̀ bí JSON, àti àwọn ìkéde rẹ̀ ní ọ̀rọ̀ (olùfúnni, ẹni tí ó kàn, àwọn olùgbà, ìgbà tí ó parí, pẹ̀lú \"ó ti parí\" tàbí \"kò tíì parí\").",
+            "Fún un ní àṣírí náà láti ṣàyẹ̀wò ìfọwọ́sí tí a ṣe pẹ̀lú àṣírí àjọpín (HS256, HS384, HS512). A kò ṣàyẹ̀wò àwọn ìfọwọ́sí tí a ṣe pẹ̀lú kọ́kọ́rọ́ àdáni (RS, ES, PS).",
+            {
+              "note": "Tókìnì àti àṣírí náà ń wà nínú táàbù: a kò fi nǹkan kan ránṣẹ́ sí ibikíbi láti tú kóòdù tókìnì kan."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Ó ń kọ ọ̀rọ̀ kan bí okùn ọ̀rọ̀ ti èdè kan (JSON, JavaScript, C, C++, Java àti irú wọn) pẹ̀lú escape lórí àwọn àmì àyọlò rẹ̀, ìfọ́ ìlà àti àwọn àmì míì, ó sì ń ka irú okùn ọ̀rọ̀ bẹ́ẹ̀ padà."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Ó ń fún gzip pọ̀ ó sì ń tú u, fáìlì ti ìwọ̀n yòówù bí a ṣe ń kà á. Ìpele ń lọ láti èyí tó yára jù sí èyí tó kéré jù; a lè fún ni ní àbájáde ọ̀rọ̀ kan bí Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Àwọn ìpìlẹ̀ nọ́ńbà",
+          "body": [
+            "Ó ń sọ àwọn odidi nọ́ńbà, ọ̀kan nínú ìlà kọ̀ọ̀kan, ní ìpìlẹ̀ méjì (binary), ìpìlẹ̀ mẹ́jọ (octal), ìpìlẹ̀ mẹ́wàá (decimal) àti hexadecimal, àti ní ìpìlẹ̀ kan sí i tí o yàn, títí dé 36. Kò sí ìwọ̀n tó ga jù fún nọ́ńbà kan.",
+            {
+              "points": [
+                "A ń mọ ìpìlẹ̀ nọ́ńbà kan láti bí a ṣe kọ ọ́: 0x fún hexadecimal, 0b fún binary, 0o fún octal, àwọn lẹ́tà fún hexadecimal, decimal bí bẹ́ẹ̀ kọ́. Tàbí yan ìpìlẹ̀ tí a ó fi ka gbogbo rẹ̀.",
+                "A ń fo àwọn àlàfo, àmì ìlà-ìsàlẹ̀ (_) àti àmì àfikúrò (') tí ó wà láàrin àwọn díjítì: 1_000_000.",
+                "A tún ń fi nọ́ńbà òdì hàn bí àwọn kọ̀ǹpútà ṣe ń pa á mọ́ (two’s complement), nínú èyí tó kéré jù nínú bit 8, 16, 32, 64 àti bẹ́ẹ̀ bẹ́ẹ̀ lọ tí ó lè gbà á."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dátà",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Ìtò JSON",
+          "body": [
+            "Ó ń ṣe ìtò JSON, ó ń dín in kù, ó ń ṣàyẹ̀wò rẹ̀, ó sì ń fi í hàn bí igi. A ń ka ìwé ti ìwọ̀n yòówù bí ìṣàn.",
+            {
+              "points": [
+                "Ìfàsẹ́yìn pẹ̀lú àlàfo 2 tàbí 4, Tab kan, tàbí iye àlàfo yòówù.",
+                "\"Àwọn àṣàyàn míì\": títo àwọn kọ́kọ́rọ́ lẹ́sẹẹsẹ, àwọn àtòjọ kúkúrú ní ìlà kan, àlàfo lẹ́yìn kọ́lọ́ọ̀nù, bí àwọn ìlà ṣe ń parí, ìfọ́ ìlà ní òpin, àwọn lẹ́tà tí kì í ṣe ASCII bí \\uXXXX.",
+                "\"Kíkà láìfúnpinpin\" ń gba àwọn àlàyé (// àti /* */) àti kọ́mà tó gbẹ̀yìn, ó sì ń kọ JSON tó péye.",
+                "Àwọn àyípadà: yíyọ àwọn null kúrò, yíyọ àwọn iye tí ó ṣófo kúrò àti irú wọn, lẹ́ẹ̀kan náà.",
+                "Igi náà ń ṣí ní ìpele kan lẹ́ẹ̀kan, ó sì ń wá ọ̀rọ̀ nínú àwọn kọ́kọ́rọ́ àti iye."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Ó ń ṣe ìbéèrè JSONPath (RFC 9535) lórí ìwé kan: $.store.book[?@.price < 10].title. Àbájáde ni àwọn iye tí a rí, àwọn ipa-ọ̀nà sí wọn, tàbí méjèèjì.",
+            "Tí ìbéèrè kan kò bá tọ́, a ń sọ ọ́ pẹ̀lú ibi tí ó ti ṣàṣìṣe."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Ìṣàyẹ̀wò JSON Schema",
+          "body": [
+            "Ó ń ṣàyẹ̀wò ìwé kan pẹ̀lú JSON Schema (àwọn draft 4 sí 2020-12). Schema náà ń lọ sínú pánẹ́lì tó wà lábẹ́ ìgbéwọlé. A ń to ohun kọ̀ọ̀kan tí kò bá a mu sílẹ̀ pẹ̀lú ibi tí ó wà àti òfin tí ó rú.",
+            "Lórí ọ̀pọ̀ fáìlì, a ń ṣàyẹ̀wò ọ̀kọ̀ọ̀kan pẹ̀lú schema kan náà. A kò tẹ̀lé $ref sí fáìlì míì tàbí sí àdírẹ́sì kan."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Ìṣẹ̀dá schema àti JSON → TypeScript",
+          "body": [
+            "Láti inú àpẹẹrẹ JSON kan, Ìṣẹ̀dá JSON Schema ń kọ JSON Schema tí ó bá a mu, JSON → TypeScript sì ń kọ àwọn ìkéde type rẹ̀ (interface tàbí type, tí a gbé jáde tàbí kò gbé jáde, readonly tàbí kì í ṣe readonly, lábẹ́ orúkọ tí o fún un)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Ó ń sọ YAML di JSON àti JSON di YAML. A ń ka YAML ní ìbámu pẹ̀lú core schema rẹ̀, a sì ń tẹ̀lé àwọn anchor àti merge; a ń sọ ohun tí kò tọ́ pẹ̀lú ibi tí ó wà."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Ó ń sọ tábìlì di JSON ó sì ń dá a padà. A ń mọ àmì ìpínyà láti ìlà àkọ́kọ́, tàbí kí o yàn án (kọ́mà, sẹ̀míkọ́lọ́ọ̀nù, Tab, ọ̀pá); ìlà àkọ́kọ́ lè jẹ́ àkọlé; a lè dá àwọn nọ́ńbà àti true / false mọ̀.",
+            "\"Tábìlì\" ń fi CSV hàn ní ìlà àti òpó, fáìlì ti ìwọ̀n yòówù."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Ìtò XML / HTML",
+          "body": [
+            "Ó ń ṣe ìtò XML àti HTML, ó ń dín wọn kù, ó sì ń ṣàyẹ̀wò wọn. A ń ka XML ní ìlànà tó fẹsẹ̀ múlẹ̀: a ń sọ tag tí a kò pa dé rárá pẹ̀lú ibi tí ó wà. A ń ka HTML bí àwọn aṣàwákiri ṣe ń gbójú fo àṣìṣe rẹ̀."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Ìtò SQL",
+          "body": [
+            "Ó ń to gbólóhùn kan kalẹ̀, apá kan nínú ìlà kọ̀ọ̀kan, tàbí kí ó fi í sí ìlà kan; àwọn ọ̀rọ̀ pàtàkì ní lẹ́tà ńlá, ní lẹ́tà kékeré tàbí bí a ṣe kọ wọ́n. Kò béèrè dialect kankan, kò sì ṣàyẹ̀wò ohun tí gbólóhùn kan túmọ̀ sí."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Ìyàtọ̀",
+          "body": [
+            "Ó ń fi ọ̀rọ̀ méjì wé ara wọn ní ìlà-ní-ìlà, ìwé JSON méjì nípa ohun tí wọ́n sọ, tàbí fódà méjì ní fáìlì-ní-fáìlì. Àkọ́kọ́ ń lọ sínú ìgbéwọlé, èkejì sínú pánẹ́lì tó wà lábẹ́ rẹ̀.",
+            {
+              "points": [
+                "\"Lẹ́gbẹ̀ẹ́ ara wọn\" ń sàmì sí àwọn ọ̀rọ̀ tí ó yí padà nínú ìlà kan; \"Ìṣọ̀kan (unified)\" jẹ́ patch bí diff -u ṣe ń kọ ọ́.",
+                "Má ka lẹ́tà ńlá àti kékeré, àlàfo, ìlà òfo, díjítì tàbí àmì ìpínrọ̀ sí.",
+                "Fún JSON, ètò àwọn kọ́kọ́rọ́ àti ìgbékalẹ̀ kì í ṣe ìyàtọ̀; àbájáde lè jẹ́ JSON Patch (RFC 6902).",
+                "Àwọn fódà: àwọn fáìlì tí ọ̀kan nìkan ní, àwọn tí ó jẹ́ ọ̀kan náà, àwọn tí ó yàtọ̀; \"Ṣe àfiwé\" lórí ìlà kan ń ṣí méjèèjì bí ọ̀rọ̀."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Àwòtẹ́lẹ̀ Markdown",
+          "body": [
+            "Ó ń fi Markdown hàn bí yóò ṣe rí, ó sì ń fún ọ ní HTML rẹ̀ láti ṣe ẹ̀dà tàbí láti fi pamọ́: CommonMark pẹ̀lú tábìlì, ìlà-àárín (strikethrough), àtòjọ iṣẹ́ àti àkọsílẹ̀ ìsàlẹ̀.",
+            {
+              "points": [
+                "A ń fi HTML tí a tẹ̀ sínú Markdown hàn bí ọ̀rọ̀, a kò mú un ṣiṣẹ́.",
+                "A kò mú àwòrán tí ì bá wá láti orí nẹ́tíwọ́ọ̀kì wá: a ń fi àpèjúwe àti àdírẹ́sì rẹ̀ hàn ní ipò rẹ̀. A ń fi àwòrán tí ó wà nínú ọ̀rọ̀ náà (data:) hàn.",
+                "Ìjápọ̀ tí o tẹ̀ ń ṣí nínú aṣàwákiri ẹ̀rọ ìṣiṣẹ́."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ṣẹ̀dá",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Ó ń ṣẹ̀dá àwọn UUID ti ẹ̀dà 1, 3, 4, 5, 6 àti 7 (RFC 9562), iye tí o bá béèrè, tí a kọ pẹ̀lú àmì-ìdàpọ̀ (-), láìsí nǹkan míì, bí URN tàbí pẹ̀lú àkámọ́. \"Tú u palẹ̀\" ń sọ ẹ̀dà UUID kọ̀ọ̀kan àti àkókò tàbí orúkọ tí ó wà nínú rẹ̀."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 àti SHA-512 ti ọ̀rọ̀ kan tàbí fáìlì kan, púpọ̀ lẹ́ẹ̀kan náà, tí a kọ bí hex tàbí Base64. A ń ṣe hash fáìlì ti ìwọ̀n yòówù bí a ṣe ń kà á.",
+            {
+              "points": [
+                "\"Ṣàyẹ̀wò pẹ̀lú\": lẹ̀ checksum kan, tàbí ìlà kan láti inú fáìlì .sha256; a ó sọ bóyá ó bá a mu tàbí kò bá a mu.",
+                "\"Kọ́kọ́rọ́ HMAC\": àwọn hash ń di HMAC pẹ̀lú kọ́kọ́rọ́ yẹn.",
+                "\"Ìlà kọ̀ọ̀kan lọ́tọ̀\": hash kan fún ìlà kọ̀ọ̀kan nínú ọ̀rọ̀ náà.",
+                "\"Àwọn fáìlì\": a ń to àwọn hash sílẹ̀ lẹ́gbẹ̀ẹ́ àwọn fáìlì wọn; \"Ṣe ẹ̀dà gbogbo rẹ̀\" ń fún ọ ní wọn bí sha256sum ṣe ń kọ wọ́n."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Ọ̀rọ̀ aṣínà àti àṣírí",
+          "body": [
+            "Ó ń ṣẹ̀dá ọ̀rọ̀ aṣínà pẹ̀lú irú àwọn lẹ́tà tí o yàn, gbólóhùn aṣínà oníọ̀rọ̀, àti báìtì àìròtẹ́lẹ̀ bí hex tàbí Base64, láti inú àwọn nọ́ńbà àìròtẹ́lẹ̀ ti ẹ̀rọ ìṣiṣẹ́. Ọ̀kọ̀ọ̀kan ń sọ iye bit entropy tí ó ní. Lẹ́yìn tí a bá ti ṣẹ̀dá nǹkan, yíyí àṣàyàn kan padà ń tún un ṣẹ̀dá.",
+            "Gbólóhùn aṣínà jẹ́ àwọn ọ̀rọ̀ tí a fà láti inú àtòjọ ọ̀rọ̀ gígùn ti Electronic Frontier Foundation (ọ̀rọ̀ Gẹ̀ẹ́sì 7776), tí àǹfààní ọ̀kọ̀ọ̀kan dọ́gba pẹ̀lú ti àwọn yòókù: ọ̀rọ̀ mẹ́fà jẹ́ nǹkan bí bit 77."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Kọ́kọ́rọ́ àti ìwé-ẹ̀rí",
+          "body": [
+            "Nǹkan márùn-ún, tí a yàn lókè:",
+            {
+              "points": [
+                "\"Kọ́kọ́rọ́ tuntun\": RSA, EC P-256 / P-384 / P-521 tàbí Ed25519, tí a fún ni ní gbogbo ọ̀nà tí àwọn ètò ń gbà (PKCS #8, ọ̀nà àtijọ́, OpenSSH; kọ́kọ́rọ́ gbangba bí PEM àti bí ìlà fún authorized_keys), tí a fi gbólóhùn aṣínà tì pa tí o bá fún un ní ọ̀kan.",
+                "\"Ìbéèrè ìwé-ẹ̀rí\": CSR fún kọ́kọ́rọ́ tuntun tàbí èyí tí o lẹ̀, pẹ̀lú ẹni tí ó kàn àti àwọn orúkọ míì rẹ̀ (SAN).",
+                "\"Ìwé-ẹ̀rí tí ó fọwọ́ sí ara rẹ̀\": bákan náà, tí a fi kọ́kọ́rọ́ ara rẹ̀ fọwọ́ sí, fún iye ọjọ́ kan; \"Ó lè fọwọ́ sí àwọn ìwé-ẹ̀rí míì\" ń sọ ọ́ di aláṣẹ tìrẹ.",
+                "\"Fọwọ́ sí i pẹ̀lú CA tìrẹ\": lẹ̀ ìbéèrè kan, ìwé-ẹ̀rí aláṣẹ rẹ àti kọ́kọ́rọ́ rẹ̀; o ó gba ìwé-ẹ̀rí tí a fọwọ́ sí àti aláṣẹ náà lẹ́yìn rẹ̀.",
+                "\"Kà á kí o sì yí i padà\": lẹ̀ tàbí ṣí ohunkóhun (PEM, DER, kọ́kọ́rọ́ OpenSSH, fáìlì .pfx tàbí .p12, tí a tì pa tàbí kò tì pa). Ó ń sọ ohun tí ó rí àti bóyá kọ́kọ́rọ́ náà ni ti ìwé-ẹ̀rí náà, ó sì ń kọ nǹkan kọ̀ọ̀kan ní àwọn ọ̀nà míì. A lè fi kọ́kọ́rọ́ kan àti ìwé-ẹ̀rí rẹ̀ pamọ́ papọ̀ bí .pfx."
+              ]
+            },
+            {
+              "note": "Orí kọ̀ǹpútà yìí ni a ti ń ṣẹ̀dá gbogbo nǹkan. Kọ́kọ́rọ́ kan ń wà nínú táàbù títí di \"Jó o run\", kò sì sí ní ibòmíì àyàfi tí o bá fi í pamọ́."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ìṣàyẹ̀wò",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Ìdánwò regex",
+          "body": [
+            "Ó ń dán regular expression ti JavaScript wò lórí ọ̀rọ̀ kan: àwọn ìbámu pẹ̀lú àwọn ẹgbẹ́ àti ibi wọn, tàbí ọ̀rọ̀ náà pẹ̀lú àwọn ìbámu tí a ti rọ́pò. Àwọn àmì àṣàyàn (flag) ni g, i, m, s, u, y.",
+            "Àpẹẹrẹ ìwádìí náà ń ṣiṣẹ́ lọ́tọ̀ sí fèrèsé, a sì ń dá èyí tí ó bá ṣiṣẹ́ ju ìṣẹ́jú-àáyá 20 lọ dúró."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Àlàyé cron",
+          "body": [
+            "Ó ń fi ọ̀rọ̀ sọ ohun tí ètò àkókò kan túmọ̀ sí àti ìgbà tí ó ń ṣiṣẹ́: crontab (pápá márùn-ún, mẹ́fà pẹ̀lú ìṣẹ́jú-àáyá, méje pẹ̀lú ọdún), Quartz, cron() àti rate() ti AWS EventBridge, àti OnCalendar ti systemd. Ètò àkókò kan nínú ìlà kọ̀ọ̀kan.",
+            {
+              "points": [
+                "Àwọn ìgbà tó ń bọ̀, àti àwọn tó ti kọjá nígbà tí a bá béèrè, ní agbègbè àkókò tí o yàn.",
+                "A ń ka àwọn ọjọ́ ọ̀sẹ̀ láti 0 fún Àìkú, tàbí láti 1 bí Quartz ṣe ń kà wọ́n, bí o ṣe yàn. Ìlà tí ó ní ìṣẹ́jú-àáyá tí ó tún ní ọdún, L, W tàbí # jẹ́ ti Quartz, a sì ń kà á ní ọ̀nà Quartz fúnra rẹ̀.",
+                "Ètò àkókò kan náà ní àwọn ọ̀nà míì, láti ṣe ẹ̀dà tàbí láti fi kún ìgbéwọlé.",
+                "Olùkọ́ ń ṣẹ̀dá ètò àkókò nípa yíyan pápá kọ̀ọ̀kan; \"Yí i padà nínú olùkọ́\" ń gbé ètò àkókò tí a tẹ̀ sínú rẹ̀."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Àmì àkókò Unix",
+          "body": [
+            "Ó ń ka àwọn àkókò, ọ̀kan nínú ìlà kọ̀ọ̀kan: ìṣẹ́jú-àáyá, mílíṣẹ́kọ́ndì, máíkróṣẹ́kọ́ndì tàbí nanoṣẹ́kọ́ndì láti 1970, tàbí ọjọ́ tí a kọ ní àwọn ọ̀nà tí a mọ̀ (ISO 8601, bí ímeèlì àti HTTP ṣe ń kọ ọ́, bí Git ṣe ń kọ ọ́). A ń sọ ọ̀kọ̀ọ̀kan ní agbègbè àkókò tí o yàn, ní UTC, àti bí gbogbo irú àmì àkókò."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Ìpínsí URL",
+          "body": [
+            "Ó ń tú URL kan palẹ̀ bí àwọn aṣàwákiri ṣe ń kà á: scheme, aṣàmúlò, olùgbàlejò (pẹ̀lú ọ̀nà Unicode rẹ̀ nígbà tí a kọ ọ́ ní punycode), pọ́ọ̀tì, ipa-ọ̀nà, pàrámítà kọ̀ọ̀kan nínú query tí a ti tú kóòdù rẹ̀, àti fragment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Ìtúkóòdù ìwé-ẹ̀rí",
+          "body": [
+            "Ó ń ka àwọn ìwé-ẹ̀rí X.509 láti PEM tàbí DER, ó sì ń sọ gbogbo ohun tí ó wà nínú wọn: ẹni tí ó kàn, olùfúnni, àsìkò tí ó wúlò, àwọn orúkọ tí ó wà fún, kọ́kọ́rọ́ rẹ̀, àwọn àfikún (extension) rẹ̀ àti àwọn àtẹ̀ka rẹ̀.",
+            "Ó ń kà á; kò ṣèdájọ́ bóyá ó yẹ kí a gbẹ́kẹ̀lé ìwé-ẹ̀rí kan. Fún ìwé-ẹ̀rí tí ojú òpó wẹ́ẹ̀bù kan fi hàn, àti bóyá kọ̀ǹpútà yìí gbẹ́kẹ̀lé e, lo Nẹ́tíwọ́ọ̀kì → Ìwé-ẹ̀rí ojú òpó wẹ́ẹ̀bù."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Ìwò hex",
+          "body": [
+            "Ó ń fi àwọn báìtì fáìlì ti ìwọ̀n yòówù hàn, tàbí ti ọ̀rọ̀ tí a lẹ̀: ipò ìlà kọ̀ọ̀kan, àwọn báìtì, àti àwọn báìtì kan náà bí lẹ́tà.",
+            {
+              "points": [
+                "Lọ sí ipò tí a kọ bí 0x1F4, 1F4h tàbí 500.",
+                "Wá àwọn báìtì (DE AD BE EF) tàbí ọ̀rọ̀ kan (UTF-8, tàbí UTF-16 ní ọ̀nà méjèèjì), síwájú àti sẹ́yìn.",
+                "Tẹ báìtì kan: ẹ̀gbẹ́ ń fi ohun tí ó wà níbẹ̀ hàn bí nọ́ńbà ti gbogbo ìwọ̀n, ní ètò báìtì méjèèjì, bí àmì-lẹ́tà àti bí àkókò.",
+                "Yàn pẹ̀lú fífà, Shift tàbí àwọn bọ́tìnì ọfà; ṣe ẹ̀dà àṣàyàn náà bí hex, bí kóòdù, bí Base64 tàbí bí ọ̀rọ̀, tàbí fi í pamọ́ sínú fáìlì."
+              ]
+            },
+            {
+              "note": "Wíwò nìkan ni: a kò yí nǹkan kan padà nínú fáìlì náà."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nẹ́tíwọ́ọ̀kì",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Ibi tí àwọn irinṣẹ́ nẹ́tíwọ́ọ̀kì ń lọ",
+          "body": [
+            "Àwọn irinṣẹ́ mẹ́rin wọ̀nyí nìkan ni apá Dev tí ó ń lọ sórí ayélujára, wọ́n sì ń lọ sí ibi tí o bá tọ́ka wọn sí.",
+            {
+              "points": [
+                "Àdírẹ́sì tí o tẹ̀ nìkan ni a ń kàn sí, nígbà tí o bá tẹ bọ́tìnì náà nìkan. Kì í ṣe ní abẹ́lẹ̀ láé.",
+                "Ohun tí a ń fi ránṣẹ́ ni ohun tí o kọ. Ohun kan ṣoṣo tí a ń fi kún ìbéèrè ni User-Agent tí ó jẹ́ ọ̀kan náà fún gbogbo ènìyàn (\"Syntelab Creative\"), àyàfi tí o bá fúnni ní tìrẹ.",
+                "A kò pa kúkì kankan mọ́, a kò fi nǹkan kan nípa rẹ tàbí nípa kọ̀ǹpútà ránṣẹ́, a kò sì pa ohunkóhun tí a tẹ̀ mọ́."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Oníbàárà HTTP",
+          "body": [
+            "Ó ń fi ìbéèrè kan tí a fi ọwọ́ kọ ránṣẹ́: method, àdírẹ́sì, àwọn header (ọ̀kan nínú ìlà kọ̀ọ̀kan: Name: value) àti ara, tí a tẹ̀ tàbí tí a mú láti inú fáìlì ti ìwọ̀n yòówù.",
+            {
+              "points": [
+                "Ìdáhùn náà: nọ́ńbà rẹ̀, bí ó ti pẹ́ tó (lápapọ̀, àti títí dé báìtì àkọ́kọ́), ìwọ̀n rẹ̀, àwọn header rẹ̀, àti ara rẹ̀, tí a fi àwọ̀ sí ní ìbámu pẹ̀lú irú rẹ̀ tí a sì tò kalẹ̀ nígbà tí ó bá jẹ́ JSON. Ara tí kì í ṣe ọ̀rọ̀ (àwòrán kan, PDF kan) ni a ń fi hàn bí ó ti rí, a sì ń fi í pamọ́ bí ó ṣe dé.",
+                "Tẹ̀lé àwọn ìdarí-síbòmíì (redirect), tàbí wo ìdáhùn àkọ́kọ́ bí ó ṣe wà. A ń to àwọn àdírẹ́sì tí a ti fi ìbéèrè náà ránṣẹ́ síwájú láti ọ̀dọ̀ wọn sílẹ̀.",
+                "Ṣàyẹ̀wò ìwé-ẹ̀rí náà pẹ̀lú ohun tí kọ̀ǹpútà yìí gbẹ́kẹ̀lé; pa á fún àwọn sáfà tìrẹ nìkan.",
+                "\"Fi ránṣẹ́, ìdáhùn sínú fáìlì\" ń kọ ara ti ìwọ̀n yòówù tààrà sórí díìsì, pẹ̀lú ìlọsíwájú àti \"Dá a dúró\".",
+                "\"Ṣe ẹ̀dà bí curl\" ń fún ọ ní ìbéèrè kan náà bí àṣẹ."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Ìwádìí DNS",
+          "body": [
+            "Ó ń béèrè àwọn àkọsílẹ̀ orúkọ kan lọ́wọ́ sáfà orúkọ: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, púpọ̀ lẹ́ẹ̀kan náà. Àdírẹ́sì kan ń fúnni ní orúkọ rẹ̀ (PTR).",
+            "Ìbéèrè náà ń lọ sí sáfà orúkọ tí a ṣètò kọ̀ǹpútà láti lò, sí ọ̀kan tí ó wà fún gbogbo ènìyàn (1.1.1.1, 8.8.8.8, 9.9.9.9), sí resolver lórí HTTPS (Cloudflare, Google), tàbí sí èyí tí o tẹ̀."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Àyẹ̀wò pọ́ọ̀tì",
+          "body": [
+            "Ó ń sọ bóyá àwọn pọ́ọ̀tì olùgbàlejò kan ń gba ìsopọ̀ TCP: ọ̀kan, púpọ̀, tàbí ìbú kan títí dé gbogbo 65 535 (22, 80, 443, 8000-8100). Ọ̀kọ̀ọ̀kan ṣí, tì, tàbí kò dáhùn láàrin àkókò tí o fúnni.",
+            {
+              "note": "Dán àwọn olùgbàlejò tí ó jẹ́ tìrẹ nìkan wò, tàbí àwọn tí a gbà ọ́ láàyè láti dán wò."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Ìwé-ẹ̀rí ojú òpó wẹ́ẹ̀bù",
+          "body": [
+            "Ó ń fi àwọn ìwé-ẹ̀rí tí ojú òpó wẹ́ẹ̀bù kan ń fúnni hàn nígbà tí a bá ṣe ìsopọ̀ aláàbò: ẹni tí wọ́n wà fún, ẹni tí ó fọwọ́ sí wọn, iye ọjọ́ tí ó kù, bóyá kọ̀ǹpútà yìí gbẹ́kẹ̀lé wọn àti ìdí tí kò fi gbẹ́kẹ̀lé wọn, ẹ̀dà TLS àti cipher. Ìkíni ìbẹ̀rẹ̀ (handshake) nìkan ni a ń ṣe: a kò fi ìbéèrè kankan ránṣẹ́.",
+            {
+              "points": [
+                "Kọ example.com, example.com:8443 tàbí àdírẹ́sì wẹ́ẹ̀bù kan.",
+                "Àwọn sáfà ímeèlì àti FTP ń bẹ̀rẹ̀ láìsí ààbò, a sì ń béèrè pé kí wọ́n yí padà sí TLS (STARTTLS): a ń yàn án ní ìbámu pẹ̀lú pọ́ọ̀tì (25, 587, 143, 110, 21) tàbí pẹ̀lú ọwọ́.",
+                "\"Gbogbo rẹ̀\" ń fi gbogbo ohun tí àwọn ìwé-ẹ̀rí sọ hàn; \"PEM\" ń fún ọ ní wọn láti ṣe ẹ̀dà tàbí láti fi pamọ́."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ètò",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Àwọn ètò Dev",
+          "body": [
+            "Fáìlì → Ètò ń ṣí Ètò ètò náà ní apá Dev.",
+            {
+              "points": [
+                "Ṣí irinṣẹ́ kọ̀ọ̀kan nínú táàbù tirẹ̀, tàbí nínú táàbù tí a ti yàn án.",
+                "Ṣí táàbù tuntun sí irinṣẹ́ tí a lò kẹ́yìn, tàbí sí ojú-ewé àkọ́kọ́.",
+                "Dá àwọn àṣàyàn gbogbo irinṣẹ́ padà, àti àwọn tí a kàn mọ́, sí bí ètò náà ṣe dé."
+              ]
+            },
+            "Àkójọ àṣàyàn títẹ ọ̀tún ti Windows Explorer, èdè, àwòṣe àwọ̀ àti àwọn bọ́tìnì wà nínú Ètò ti gbogbo ètò náà."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Nípa Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Nípa Dev",
+          "body": [
+            "Dev ni áàpù Syntelab Creative fún àwọn olùgbéṣẹ́ sọ́fítíwià: àwọn irinṣẹ́ tí ó ń ṣe kóòdù tí ó sì ń tú kóòdù, tí ó ń ṣe ìtò tí ó sì ń ṣàyẹ̀wò, tí ó ń sọ dátà láti ọ̀nà kan di òmíràn, tí ó sì ń tú ohun tí ó ṣòro láti kà bí ó ṣe wà palẹ̀.",
+            "Orí kọ̀ǹpútà yìí ni a ti ń ṣe gbogbo nǹkan. A kò pa ohunkóhun tí o tẹ̀, tí o lẹ̀ tàbí tí o ṣí nínú irinṣẹ́ kan mọ́, a kò sì fi ránṣẹ́ sí ibikíbi. Kò sí ààlà lórí ìwọ̀n tàbí iye àwọn fáìlì: ààlà náà ni ìrántí àti díìsì kọ̀ǹpútà.",
+            "Ó jẹ́ tuntun, a sì ṣì ń kọ́ ọ. Níbi tí kò bá ti tó fún iṣẹ́ rẹ, sọ fún wa nípasẹ̀ Ìrànlọ́wọ́ → Èrò rẹ."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Ohun tí a fi kọ́ Dev",
+          "body": [
+            {
+              "points": [
+                "Àwọn olóòtú: CodeMirror, https://codemirror.net . Ìwé-àṣẹ MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Kíkà JSON àti fífi àwọ̀ sí i nínú àwọn olóòtú: @codemirror/lang-json, https://github.com/codemirror/lang-json , pẹ̀lú @codemirror/language àti @lezer/highlight. Ìwé-àṣẹ MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Kíkà YAML, XML, HTML àti SQL àti fífi àwọ̀ sí wọn nínú àwọn olóòtú: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (pẹ̀lú @codemirror/lang-css àti @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Ìwé-àṣẹ MIT. Copyright (C) 2018-2024 by Marijn Haverbeke and others.",
+                "Ṣíṣàyẹ̀wò ìwé kan pẹ̀lú JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Ìwé-àṣẹ MIT. Copyright (c) 2020-2026 Dmitry Dygalo. A kọ́ ọ láìsí apá nẹ́tíwọ́ọ̀kì rẹ̀: Dev kì í mú schema wá láti ibòmíì láé.",
+                "Àwọn àpẹẹrẹ ìwádìí JSONPath (match àti search): regex, https://github.com/rust-lang/regex . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "Kíkà YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Dev fúnra rẹ̀ ló ń kọ YAML.",
+                "Fífi ọ̀rọ̀ méjì wé ara wọn (Ìyàtọ̀): similar, https://github.com/mitsuhiko/similar . Ìwé-àṣẹ Apache-2.0. Àwọn òǹkọ̀wé: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Àwọn hash ti irinṣẹ́ Hash àti ti ìfọwọ́sí tókìnì: sha2, sha1 àti md-5, https://github.com/RustCrypto/hashes . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, àti àwọn olùgbéṣẹ́ RustCrypto.",
+                "Ọjọ́, àkókò àti agbègbè àkókò (Àmì àkókò Unix, Àlàyé cron): jiff, https://github.com/BurntSushi/jiff , pẹ̀lú àwọn agbègbè àkókò ti ibùdó dátà IANA. Ìwé-àṣẹ Unlicense tàbí MIT. Copyright (c) 2015 Andrew Gallant.",
+                "Títú URL palẹ̀: url àti idna, https://github.com/servo/rust-url . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) 2013-2025 The rust-url developers.",
+                "Kíkà àwọn ìwé-ẹ̀rí X.509: x509-parser, https://github.com/rusticata/x509-parser . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "Ìdánwò regex ń mú àwọn regular expression ti JavaScript ṣiṣẹ́, nínú ẹ̀rọ WebView tí ètò náà fi ń yàwòrán (Microsoft Edge WebView2 lórí Windows); a kò fi library kankan kún un fún èyí.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton and contributors.",
+                "Àwọn UUID: uuid, https://github.com/uuid-rs/uuid . Ìwé-àṣẹ Apache-2.0 tàbí MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Báìtì àìròtẹ́lẹ̀ fún ọ̀rọ̀ aṣínà, àṣírí àti UUID, láti ọ̀dọ̀ ẹ̀rọ ìṣiṣẹ́: getrandom, https://github.com/rust-random/getrandom . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Kọ́kọ́rọ́ àti ìfọwọ́sí RSA: rsa, https://github.com/RustCrypto/RSA , pẹ̀lú num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) RustCrypto Developers and dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Kọ́kọ́rọ́ àti ìfọwọ́sí àwọn curve NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , pẹ̀lú ecdsa, elliptic-curve àti crypto-bigint tí wọ́n nílò. Ìwé-àṣẹ Apache-2.0 tàbí MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Kọ́kọ́rọ́ àti ìfọwọ́sí Ed25519: ed25519-dalek àti curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Ìwé-àṣẹ BSD 3-Clause. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft and Henry de Valence. All rights reserved.",
+                "Àwọn ọ̀nà tí a fi ń kọ kọ́kọ́rọ́, ìbéèrè àti ìwé-ẹ̀rí (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER àti PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Ìwé-àṣẹ Apache-2.0 tàbí MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Àwọn fáìlì kọ́kọ́rọ́ OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , pẹ̀lú bcrypt-pbkdf, aes, ctr, chacha20 àti àwọn cipher àti hash míì ti RustCrypto tí títi kọ́kọ́rọ́ pa nílò ( https://github.com/RustCrypto ). Ìwé-àṣẹ Apache-2.0 tàbí MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Àwọn fáìlì PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , pẹ̀lú pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 àti scrypt ti RustCrypto tí ó nílò. Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Àwọn nọ́ńbà àìròtẹ́lẹ̀ tí a fi ń ṣẹ̀dá kọ́kọ́rọ́, tí a mú láti ọ̀dọ̀ ẹ̀rọ ìṣiṣẹ́: rand_core, https://github.com/rust-random/rand . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "Oníbàárà HTTP: ureq, https://github.com/algesten/ureq . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Àwọn ìsopọ̀ aláàbò (TLS) ti Oníbàárà HTTP àti ti \"Ìwé-ẹ̀rí ojú òpó wẹ́ẹ̀bù\": rustls, https://github.com/rustls/rustls , ìwé-àṣẹ Apache-2.0, ISC tàbí MIT, Copyright (c) 2016 Joseph Birr-Pixton; pẹ̀lú rustls-webpki, https://github.com/rustls/webpki , ìwé-àṣẹ ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , àwọn ìwé-àṣẹ Apache-2.0 àti ISC; webpki-roots, https://github.com/rustls/webpki-roots , ìwé-àṣẹ CDLA-Permissive-2.0.",
+                "Bóyá kọ̀ǹpútà yìí gbẹ́kẹ̀lé ìwé-ẹ̀rí kan: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) 2022 1Password.",
+                "Kíkà Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Ìwé-àṣẹ MIT. Copyright 2015 Google Inc. All rights reserved.",
+                "Kíkà àwọn fáìlì tí a kọ ní ọ̀nà kóòdù míì yàtọ̀ sí UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , ìwé-àṣẹ Apache-2.0 tàbí MIT (pẹ̀lú BSD-3-Clause fún dátà rẹ̀), Copyright Mozilla Foundation; àti chardetng, https://github.com/hsivonen/chardetng , ìwé-àṣẹ Apache-2.0 tàbí MIT, Copyright Mozilla Foundation.",
+                "Àwọn ọ̀rọ̀ gbólóhùn aṣínà: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , láti ọwọ́ Electronic Frontier Foundation, tí a lò lábẹ́ ìwé-àṣẹ Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). A lo àtòjọ náà bí ó ṣe wà.",
+                "Ṣíṣí àwọn kọ́kọ́rọ́ tí a tì pa ní ọ̀nà àtijọ́ ti OpenSSL: aes, cbc àti des ti RustCrypto, https://github.com/RustCrypto . Ìwé-àṣẹ MIT tàbí Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "A kọ ọ́ fún Dev, láìsí library kankan: Ìwádìí DNS (àwọn ìbéèrè tí a kọ àti àwọn ìdáhùn tí a kà bí RFC 1035 ṣe ní wọn) àti Àyẹ̀wò pọ́ọ̀tì.",
+                "A kọ ọ́ fún Dev, láìsí library kankan: kíkà àti kíkọ JSON bí ìṣàn, JSONPath (RFC 9535), Base64, percent-encoding, àwọn ìtọ́ka àmì-lẹ́tà HTML (orúkọ wọn ni ti ìlànà HTML, https://html.spec.whatwg.org ), escape okùn ọ̀rọ̀, kíka JSON Web Token, kíkọ YAML, CSV ní ọ̀nà méjèèjì, kíka àwọn ètò àkókò cron, Ìtò XML àti HTML, àti Ìtò SQL."
+              ]
+            },
+            "Ohun tí ó pín pẹ̀lú àwọn apá yòókù ètò náà wà lábẹ́ \"Nípa Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ohun tí Dev kò tíì lè ṣe",
+          "body": [
+            {
+              "points": [
+                "A ń ṣàyẹ̀wò ìfọwọ́sí tókìnì kan kìkì nígbà tí a bá fi àṣírí àjọpín ṣe é (HS256, HS384, HS512).",
+                "Ìṣàyẹ̀wò JSON Schema ń sọ ohun tí kò bá a mu ní Gẹ̀ẹ́sì, bí library rẹ̀ ṣe ń ṣe, kò sì tẹ̀lé $ref sí fáìlì míì tàbí àdírẹ́sì míì.",
+                "Ìtò SQL kò béèrè dialect kankan, kò sì ṣàyẹ̀wò ohun tí gbólóhùn kan túmọ̀ sí: okùn ọ̀rọ̀ tàbí àlàyé tí kò parí nìkan ni ó ń sọ.",
+                "YAML, àti JSON tí ó ń di YAML tàbí CSV, ni a ń mú sínú ìrántí lódidi nígbà tí a ń yí wọn padà; CSV tí ó ń di JSON, XML, HTML àti SQL ni a ń ṣiṣẹ́ lé lórí bí a ṣe ń kà wọ́n, ìwọ̀n wọn yòówù.",
+                "Tábìlì tí a fi ń wo CSV jẹ́ fún kíkà nìkan: a kò tẹ̀ nǹkan kan sínú rẹ̀, a kò sì tíì lè ṣe ẹ̀dà nǹkan kan láti inú rẹ̀.",
+                "Ìyàtọ̀ ń pa báìtì mẹ́rìndínlógún mọ́ fún ìlà kọ̀ọ̀kan nínú fáìlì méjèèjì, kì í ṣe àwọn fáìlì fúnra wọn; ìwé JSON méjì ni a ń mú lódidi, nítorí a ń tún wọn kọ kí a tó fi wọ́n wé ara wọn.",
+                "Apá àwọn ìlà tí kò ní nǹkan kan tí ẹ̀gbẹ́ méjèèjì ní lẹ́ẹ̀kan ṣoṣo ni a ń fi wé ara wọn bí ìṣẹ́jú-àáyá kan ṣe gbà láàyè: àwọn ìyàtọ̀ tí a sọ jẹ́ òótọ́, bí wọn kò tilẹ̀ jẹ́ èyí tó kéré jù nígbà gbogbo.",
+                "Ìyàtọ̀ kò fi bí àwọn ìlà ṣe ń parí (CRLF tàbí LF) wé ara wọn.",
+                "A ń fi fódà méjì wé ara wọn nípa àwọn báìtì àwọn fáìlì wọn; a ń so àwọn fáìlì pọ̀ nípa orúkọ wọn, lẹ́tà-ní-lẹ́tà.",
+                "Ohun tí àwọn irinṣẹ́ Ìṣàyẹ̀wò ń sọ jẹ́ JSON, pẹ̀lú àwọn orúkọ rẹ̀ ní Gẹ̀ẹ́sì.",
+                "Ìdánwò regex ń mú àwọn regular expression ti JavaScript ṣiṣẹ́, kì í ṣe PCRE tàbí ti Rust; ó ń ṣiṣẹ́ lórí ọ̀rọ̀ tí a lè fi hàn, kì í ṣe lórí fáìlì tí a fi sílẹ̀ sórí díìsì; a ń dá àpẹẹrẹ ìwádìí tí ó bá ṣiṣẹ́ ju ìṣẹ́jú-àáyá 20 lọ dúró.",
+                "Ìtúkóòdù ìwé-ẹ̀rí ń ka ìwé-ẹ̀rí kan, kò sì ṣàyẹ̀wò bóyá ó yẹ kí a gbẹ́kẹ̀lé e: kì í ṣe ẹ̀wọ̀n rẹ̀, kì í ṣe ìfọwọ́sí rẹ̀, kì í ṣe bóyá a ti fagilé e.",
+                "A ń ka fáìlì ọ̀rọ̀ tí a kọ ní ọ̀nà kóòdù míì yàtọ̀ sí UTF-8 nígbà tí ó bá kéré tó láti fi hàn; èyí tí ó tóbi jù bẹ́ẹ̀ lọ, tí a ń ṣiṣẹ́ lé lórí láti orí díìsì, gbọ́dọ̀ jẹ́ UTF-8.",
+                "A ń gba fáìlì tí a jù sílẹ̀ sórí irinṣẹ́ kan títí dé 16 MB; fèrèsé kò mọ ibi tí fáìlì tí a jù sílẹ̀ wà lórí díìsì, nítorí náà a ń ṣí èyí tí ó tóbi jù bẹ́ẹ̀ lọ pẹ̀lú \"Ṣí fáìlì kan\".",
+                "Ọ̀rọ̀ Gẹ̀ẹ́sì nìkan ni a fi ń ṣe gbólóhùn aṣínà.",
+                "Àlàyé cron: olùkọ́ ń ṣẹ̀dá àwọn ètò àkókò crontab (pápá márùn-ún, tàbí mẹ́fà pẹ̀lú ìṣẹ́jú-àáyá); a kò lè gbé ètò àkókò tí ó ní L, W, # tàbí ? sínú rẹ̀. A kò lè sọ àwọn àkókò rate() ti AWS, nítorí a ń kà á láti ìgbà tí a ṣẹ̀dá òfin rẹ̀. Ti systemd, a ń ka àwọn ìṣẹ̀lẹ̀ kàlẹ́ńdà tí ó wọ́pọ̀; kì í ṣe ìdá ìṣẹ́jú-àáyá tàbí àtòjọ àwọn ọjọ́ tí a kà láti òpin oṣù.",
+                "Ìwò hex ń wò nìkan: a kò yí nǹkan kan padà nínú fáìlì náà. Òpó ọ̀rọ̀ ń fi ASCII tàbí àwọn lẹ́tà Ìwọ̀-oòrùn Europe hàn, kì í ṣe àwọn álífábẹ́ẹ̀tì míì; báìtì tàbí ọ̀rọ̀ ni a ń wá, kì í ṣe àpẹẹrẹ ìwádìí.",
+                "Kọ́kọ́rọ́ àti ìwé-ẹ̀rí: àwọn kọ́kọ́rọ́ jẹ́ RSA, àwọn curve P-256, P-384 àti P-521, àti Ed25519; a kò ka àwọn míì (DSA, secp256k1, X25519). A ń ṣí kọ́kọ́rọ́ tí a tì pa ní ọ̀nà àtijọ́ ti OpenSSL nígbà tí cipher rẹ̀ bá jẹ́ AES tàbí 3DES. Fáìlì .pfx ń mú kọ́kọ́rọ́ kan pẹ̀lú àwọn ìwé-ẹ̀rí rẹ̀. Ṣíṣẹ̀dá kọ́kọ́rọ́ RSA tí ó tóbi púpọ̀ ń gba àkókò, a kò sì lè dá a dúró ní àárín. Library tí ó ń ṣẹ̀dá kọ́kọ́rọ́ RSA ní àìlera tí a mọ̀ sí olùkọlù tí ó lè díwọ̀n àkókò ọ̀pọ̀ ìfọwọ́sí lórí nẹ́tíwọ́ọ̀kì (RUSTSEC-2023-0071): níbí, orí kọ̀ǹpútà rẹ ni a ti ń ṣẹ̀dá kọ́kọ́rọ́ tí a sì ń kọ wọ́n, a kò sì fọwọ́ sí nǹkan kan fún ẹlòmíì.",
+                "Oníbàárà HTTP: HTTP/1.1 (kì í ṣe HTTP/2 tàbí 3); a kò pa kúkì mọ́ láàrin àwọn ìbéèrè; a kò kọ́ fọ́ọ̀mù aláwọn-apá-púpọ̀ (multipart) fún ọ; ìdáhùn tí ó tóbi ju 16 MB lọ, tàbí èyí tí kì í ṣe ọ̀rọ̀, ni a ń kọ sínú fáìlì nípa títún ìbéèrè náà fi ránṣẹ́.",
+                "Ìwádìí DNS ń fi àwọn ìfọwọ́sí (DNSSEC) hàn, kò sì ṣàyẹ̀wò wọn. Àyẹ̀wò pọ́ọ̀tì ń dán TCP nìkan wò: a kò lè mọ ìyàtọ̀ láàrin pọ́ọ̀tì UDP tí ó dákẹ́ àti èyí tí ó tì. Ìwé-ẹ̀rí ojú òpó wẹ́ẹ̀bù kò béèrè bóyá a ti fagilé ìwé-ẹ̀rí kan.",
+                "Àkójọ àṣàyàn títẹ ọ̀tún wà fún Windows Explorer; lórí Windows 11 àwọn ohun inú rẹ̀ wà lábẹ́ \"Show more options\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

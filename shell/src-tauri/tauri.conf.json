@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Syntelab Creative",
+  "version": "1.0.0",
+  "identifier": "com.syntelab.creative",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Syntelab Creative",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 240,
+        "minHeight": 200,
+        "dragDropEnabled": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data: syntelab-app: http://syntelab-app.localhost; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src ipc: http://ipc.localhost; frame-src syntelab-app: http://syntelab-app.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "publisher": "Syntelab",
+    "targets": [
+      "nsis"
+    ],
+    "createUpdaterArtifacts": true,
+    "icon": [
+      "icons/icon.ico",
+      "icons/icon.png"
+    ],
+    "resources": {
+      "icons/apps/*.ico": "icons/apps/",
+      "../../apps/convert/app.json": "apps/convert/app.json",
+      "../../apps/convert/assets/icon.svg": "apps/convert/assets/icon.svg",
+      "../../apps/dev/app.json": "apps/dev/app.json",
+      "../../apps/dev/assets/icon.svg": "apps/dev/assets/icon.svg",
+      "../../apps/metadata/app.json": "apps/metadata/app.json",
+      "../../apps/metadata/assets/icon.svg": "apps/metadata/assets/icon.svg",
+      "../../apps/pdf-organizer/app.json": "apps/pdf-organizer/app.json",
+      "../../apps/pdf-organizer/assets/icon.svg": "apps/pdf-organizer/assets/icon.svg",
+      "../../apps/pixel/app.json": "apps/pixel/app.json",
+      "../../apps/pixel/assets/icon.svg": "apps/pixel/assets/icon.svg",
+      "../../apps/scribe/app.json": "apps/scribe/app.json",
+      "../../apps/scribe/assets/icon.svg": "apps/scribe/assets/icon.svg",
+      "../../apps/units/app.json": "apps/units/app.json",
+      "../../apps/units/assets/icon.svg": "apps/units/assets/icon.svg",
+      "../../apps/wizard/app.json": "apps/wizard/app.json",
+      "../../apps/wizard/assets/icon.svg": "apps/wizard/assets/icon.svg"
+    },
+    "windows": {
+      "nsis": {
+        "installerHooks": "../../installers/windows/app-shortcuts.nsh"
+      }
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEQ1RkFGRjMzNDM0ODM4OTMKUldTVE9FaERNLy82MWVmNTdLYUdIQythUElvL1VWOC81MzMxTnpqVEZsZTVVT3VyZzNnZ05yTGEK",
+      "endpoints": [
+        "https://syntelab.com/creative/check/update.json"
+      ],
+      "windows": {
+        "installMode": "passive"
+      }
+    }
+  }
+}

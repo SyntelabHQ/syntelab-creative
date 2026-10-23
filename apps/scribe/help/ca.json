@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Textos i fitxers",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "L'editor",
+          "body": [
+            "Scribe és un editor de text pla amb les seves eines al costat. Cada text té una pestanya; el text és al centre, el panell d'eines al seu costat i una línia de dades a sota.",
+            "Quan s'obre Scribe, primer pregunta què vols fer: comptar paraules, cercar i substituir, eliminar duplicats, comparar dos textos, ordenar línies, invertir un text, escriure text de farciment o text aleatori. Cada opció obre el text amb l'eina corresponent al costat; \"Un text buit\" obre el text sol, i a sota apareixen els textos oberts recentment.",
+            {
+              "points": [
+                "Fitxer → Text nou (Ctrl+N) inicia un text buit.",
+                "Fitxer → Obre (Ctrl+O) obre un o diversos fitxers, cadascun a la seva pestanya. S'obre qualsevol fitxer que contingui text: .txt, .md, .csv, .log, .srt, codi font i altres.",
+                "Edita → Desfés (Ctrl+Z) i Refés (Ctrl+Y) recorren tot el que s'ha fet al text; una eina o una recepta compta com un sol pas.",
+                "Edita → Cerca i substitueix (Ctrl+F) obre una franja a l'editor que va d'una coincidència a la següent.",
+                "Edita → Selecciona tot (Ctrl+A)."
+              ]
+            },
+            "La línia sota el text mostra on és el cursor, quant hi ha seleccionat, el nombre de línies, paraules i caràcters, la codificació del fitxer i com acaben les seves línies.",
+            "Els fitxers que deixis anar a la finestra també s'obren, cadascun com un text nou amb el nom, la codificació i els finals de línia del fitxer. El programa obté el contingut d'un fitxer deixat anar, però no on es troba al disc, per la qual cosa en desar et pregunta on; els fitxers de més de 64 MB s'obren amb Fitxer → Obre.",
+            "Un text nou, mentre és buit, llista els textos oberts recentment: fes clic en un per obrir-lo. \"Esborrar la llista\" la buida; la llista es conserva només en aquest ordinador."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Desa i Desa com",
+          "body": [
+            "Res no canvia el fitxer al disc fins que no desis. Un punt a la pestanya indica que el text té canvis que no són al seu fitxer, i si tanques una pestanya així, primer se't pregunta.",
+            {
+              "points": [
+                "Desa (Ctrl+S) escriu el text sobre el seu fitxer. En un text nou, et pregunta on.",
+                "Desa com (Ctrl+Shift+S) l'escriu en un fitxer nou, que després ocupa el lloc de la pestanya, amb tot el que es pot desfer encara disponible; el fitxer antic es queda tal com era."
+              ]
+            },
+            "Un fitxer s'escriu completament o no es fa: si l'escriptura falla, el fitxer que hi havia encara hi és.",
+            {
+              "note": "Un fitxer es desa tal com s'ha obert: amb la mateixa codificació i els mateixos finals de línia. Un text escrit a Windows i un escrit a Linux es mantenen tal com eren."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Codificacions i finals de línia",
+          "body": [
+            "Una codificació és la manera com les lletres es conserven com a bytes. Scribe llegeix el que el fitxer diu sobre si mateix i ho endevina quan no diu res. La majoria de fitxers actualment són UTF-8; els més antics d'Europa Central solen ser windows-1250.",
+            {
+              "points": [
+                "Lletres que semblen incorrectes (Ã£ en lloc de ă, o quadrats): Fitxer → \"Torna a llegir amb una altra codificació\", i tria aquella en què es va escriure el fitxer.",
+                "Per desar amb una altra codificació, tria-la a la línia sota el text i després desa. Si el text té lletres que aquesta codificació no pot escriure, Scribe indica quines són i no escriu res.",
+                "Els finals de línia (Windows CRLF, Linux i macOS LF, Mac antic CR) es canvien al mateix lloc. Si un fitxer té finals barrejats, s'indica; en desar-lo, totes les línies passen a tenir el mateix."
+              ]
+            },
+            "Amb què comença un text nou es tria a la Configuració."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Com es mostra el text",
+          "body": [
+            {
+              "points": [
+                "Tot el que hi ha al menú Vista és un interruptor: si està activat, es veu; si està desactivat, no.",
+                "Text: Ajustar línies llargues (Alt+Z) — una línia més llarga que la finestra continua a sota, i el text manté les seves línies; Números de línia; Resultat al costat del text.",
+                "Al costat del text: Eines (Ctrl+T), Receptes, Estadístiques. El panell mostra només les parts que estan actives; si cap part està activa, no hi ha panell.",
+                "Eines mostrades: cada grup d'eines (cerca i substitueix, línies, majúscules i lletres, neteja, escriure text) es pot treure del panell. Una eina triada des del menú Format o Eines es mostra igualment: la seva part i el seu grup tornen a aparèixer automàticament.",
+                "La doble fletxa a la part superior del panell el plega en una franja a la vora, des de la qual cadascuna de les seves parts és a un clic; arrossega'n la vora per fer-lo més ample o més estret.",
+                "Les lletres i la seva mida es trien a Configuració."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Fitxers molt grans",
+          "body": [
+            "Un fitxer de més de 64 MB no es posa a l'editor: s'obre en una pestanya que el mostra en pàgines de 500 línies, llegint el fitxer a mesura que avances. Els fitxers de gigabytes s'obren així en el temps que es triga a recórrer-los una vegada.",
+            {
+              "points": [
+                "\"Pàgina anterior\" i \"Pàgina següent\" permeten moure-s'hi; un número de línia i \"Anar\" permeten saltar a qualsevol línia.",
+                "Cerca busca a tot el fitxer, amb les mateixes opcions que en altres llocs, i llista els llocs trobats: fes clic en un per anar a la seva línia. Una llista llarga arriba per parts, amb \"Cercar més\".",
+                "\"Executar una recepta en tot el fitxer\" escriu el resultat en una carpeta que triïs, amb el mateix nom. El fitxer mateix mai no es modifica aquí.",
+                "\"Obrir complet a l'editor\" el posa igualment a l'editor, per modificar-lo a mà. Pot ser lent i necessita diverses vegades la mida del fitxer en memòria."
+              ]
+            },
+            {
+              "note": "Els fitxers escrits amb dos bytes per lletra (UTF-16) no es poden mostrar pàgina per pàgina. Una recepta manté tot el fitxer a la memòria mentre s'executa: el límit és la memòria de l'ordinador."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Eines",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Com funcionen les eines",
+          "body": [
+            "Les eines són al panell al costat del text, organitzades per grups. Fes clic en una eina per veure'n les opcions i després a \"Aplicar al text\".",
+            {
+              "points": [
+                "Amb alguna cosa seleccionada, una eina canvia només la selecció; si no hi ha res seleccionat, canvia tot el text. El panell indica quin és el cas a la part superior.",
+                "Sota el botó, l'eina indica què ha fet: quantes línies o llocs ha canviat.",
+                "Cada eina és un pas: Desfés la desfà sencera.",
+                "Cada eina també es troba als menús i a la cerca d'ordres: les que canvien la forma d'un text (línies, majúscules i lletres, neteja) al menú Format, i les altres a Eines. Si en tries una allà, s'obre el panell amb les seves opcions."
+              ]
+            },
+            "Al menú Format, una eina que té majoritàriament una sola opció es desplega en les seves variants: cada manera de canviar les majúscules, cada tipus de cometes, cada manera d'invertir un text és una ordre independent, que obre l'eina amb aquesta opció seleccionada. Quan la finestra és massa estreta per a un grup, el grup es converteix en un botó que obre la llista completa.",
+            "Les eines s'executen en aquest ordinador. Cap text en surt."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "El resultat, abans d'aplicar",
+          "body": [
+            "Mentre una eina és oberta, el que donaria es mostra al costat del text, al panell \"Resultat\". Res del text no canvia fins que triïs \"Aplicar al text\". El resultat et segueix: si canvies una opció o el text, es torna a generar.",
+            {
+              "points": [
+                "El text i el resultat apareixen un al costat de l'altre, cadascun sota una capçalera de la mateixa alçada, de manera que les mateixes línies comencen a la mateixa alçada; es desplacen junts (el botó de la cadena ho desactiva).",
+                "Les línies que canviarien estan marcades, i la part de la línia que canvia, amb un color més fosc; les línies que només es mourien i les línies noves tenen cadascuna el seu propi color. Les línies que es canviarien o s'eliminarien també estan marcades al teu text.",
+                "Sota els noms: què passaria en números — línies canviades, mogudes, noves, eliminades; línies i caràcters abans i després.",
+                "Sota el resultat: les línies que s'eliminarien. Fes clic en una per anar-hi al text.",
+                "Els botons petits del resultat: copiar-lo, obrir-lo com a text nou, comparar-lo amb el text en una pestanya, desplaçar junts, posar el resultat sota el text en lloc de al costat, ocultar-lo. El text té els seus: desfer, refer, copiar, enganxar a sobre, seleccionar-ho tot, netejar.",
+                "Arrossega la barra entre els dos per donar-ne més espai a un; un doble clic els torna a igualar."
+              ]
+            },
+            "Després d'aplicar, el panell Resultat ho indica (\"Aplicat. El text de l'esquerra és ara el resultat.\") i ofereix Desfés i \"Comparar amb l'estat anterior\", que obre la mateixa comparació d'abans i després. Torna a mostrar un resultat tan bon punt canvies el text o una opció de l'eina.",
+            {
+              "note": "Vista → \"Resultat al costat del text\" desactiva i activa el panell. Per a un text molt llarg (més de dos milions de caràcters) no es mostra res per endavant: aplica l'eina, i Desfés ho desfà."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Substituir a tot arreu",
+          "body": [
+            "Substitueix alhora tots els llocs on es troba alguna cosa. Mentre escrius què buscar, Scribe indica en quants llocs es troba i els marca al text, de manera que veus què canviarà abans d'aplicar-ho.",
+            {
+              "points": [
+                "\"Expressió regular\": el text a buscar és un patró. A \"Substitueix per\", $1, $2… representen el que han trobat els grups del patró.",
+                "\"Distingeix majúscules\": a i A són lletres diferents.",
+                "\"Només paraules senceres\": \"gat\" no es trobarà dins de \"categoria\".",
+                "\"Manté les majúscules del text substituït\": substituir \"gat\" per \"gos\" converteix \"Gat\" en \"Gos\" i \"GAT\" en \"GOS\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Més opcions\" → \"Omplir…\": el que es posa al seu lloc pot contenir buits que s'omplen a cada coincidència. {counter} compta 1, 2, 3… ({counter:10} comença al 10, {counter:10:5} augmenta de 5 en 5); {date} i {time} són el dia i l'hora del teu ordinador; {uuid} és un identificador; {random} són 8 lletres i dígits aleatoris ({random:12} per a 12).",
+                "Sota el que busques, Scribe també indica en quantes línies hi ha coincidències i quants textos diferents són."
+              ]
+            },
+            "\"Substituir diversos a la vegada\" fa una llista de parells en un sol pas. Escriu un parell per línia, així: què buscar => què posar al seu lloc. Es fan del primer a l'últim, cadascun sobre el que ha deixat l'anterior; una segona meitat buida elimina el text.",
+            {
+              "note": "Un patró no pot bloquejar el programa: el temps que triga augmenta segons la longitud del text i no més ràpidament. Per aquest motiu, no estan disponibles els patrons que busquen enrere el que han trobat (\\1)."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Línies",
+          "body": [
+            {
+              "points": [
+                "Ordena les línies per: les seves lletres, com fa un diccionari, en la llengua del programa o en una que triïs (en romanès la ă va després de la a; el suec posa la ä després de la z, l'alemany al costat de la a); lletres amb números com a números (file2 abans de file10); el número amb què comença cada línia; longitud; nombre de paraules; la data amb què comença cada línia (05.03.2024, 2024-03-05, amb hora o sense); adreces d'internet; números de versió (1.2.10 després de 1.2.9); títols, on un article al començament no compta; un ordre que escriguis (petit, mitjà, gran); o sense cap ordre.",
+                "Les línies sense res per ordenar-les (sense número, sense data, un valor que no és a l'ordre que has escrit) es queden al final, sigui quin sigui el sentit en què s'ordenin les altres: de menor a major o de major a menor.",
+                "Més opcions d'ordenació: comparar a partir d'una paraula o d'un caràcter, o una columna d'una taula (amb el que separa les columnes); mantenir la primera línia al seu lloc com a capçalera; ordenar paràgrafs en lloc de línies; i endreçar primer: retallar, eliminar les línies buides, eliminar els duplicats.",
+                "Eliminar línies duplicades: de les línies que es repeteixen, mantén la primera, l'última o cap (només queden les que hi són una vegada). Les majúscules, els espais al voltant d'una línia, els dígits, la puntuació i un nombre de caràcters al començament o al final es poden ignorar; també es pot comparar només una columna, o només el que trobi un patró. Les línies buides es tracten com les altres, es mantenen, s'eliminen o se'n deixa una on n'hi ha diverses.",
+                "Comptar línies repetides: deixa cada línia una sola vegada, amb el nombre de vegades que hi era escrit al davant: les més repetides primer, o les menys, o en l'ordre en què apareixen.",
+                "Mantenir o eliminar línies: busca alguna cosa en cada línia i manté només les línies que la tenen, o només aquelles que no la tenen.",
+                "Invertir l'ordre de les línies; Barrejar línies.",
+                "Numerar línies: el primer número, què va després, zeros al davant perquè els números quedin alineats, línies buides sense número.",
+                "Línies buides: elimina-les totes, o deixa'n una on n'hi hagi diverses.",
+                "Unir línies en una sola, amb el que triïs entre elles; Dividir en línies a cada coma, punt i coma o qualsevol altra cosa. Allà on s'escriu què va entre elements (numeració, unió, divisió, recompte), \\t representa un tabulador, que no es pot escriure en un camp."
+              ]
+            },
+            {
+              "note": "Una opció que només importa amb una altra només es mostra llavors: la columna, un cop compares per una columna. Les opcions que menys gent necessita són a \"Més opcions\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Majúscules",
+          "body": [
+            "Canviar majúscules: format de frase, cada paraula amb majúscula, tot en majúscules, tot en minúscules, invertit, i les maneres com s'escriuen els noms en codi: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Les majúscules segueixen les regles de cada alfabet, no només les de l'anglès.",
+            "Al grup Direcció, \"Invertir el text\" inverteix les lletres de cada línia, o l'ordre de les seves paraules, o les lletres de cada paraula; \"De capdavall\" l'escriu perquè es pugui llegir des de l'altra banda de la taula, i \"Com en un mirall\" també intercanvia els signes que tenen una part esquerra i una de dreta. Les lletres es compten com les compta un lector: una lletra amb els seus signes compta com una sola."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Neteja",
+          "body": [
+            {
+              "points": [
+                "Netejar espais: diversos espais es converteixen en un; els espais als extrems de les línies s'eliminen.",
+                "Retallar els extrems de les línies: als dos extrems, a l'inici o al final.",
+                "Cometes: rectes, angleses, romaneses, alemanyes o franceses.",
+                "Eliminar diacrítics: ă es converteix en a, é es converteix en e. Només en els alfabets llatí i grec, on una lletra sense el seu signe segueix sent la lletra.",
+                "Reparar lletres romaneses: la ş i la ţ (amb ceditla, escrites per teclats antics) es converteixen en ș i ț (amb coma), les lletres amb què s'escriu el romanès.",
+                "Tabuladors a espais i espais a tabuladors, amb l'amplada de tabulador que triïs.",
+                "Eliminar etiquetes HTML: per al codi font d'una pàgina web enganxat al text. Les etiquetes, els scripts i els estils s'eliminen; es manté el que veuria un lector. Per obtenir una pàgina a partir de la seva adreça, fes servir l'eina que hi ha a sota, \"Text d'una pàgina web\".",
+                "Text d'una pàgina web: escriu l'adreça d'una pàgina (example.com/page) i tria \"Obtenir el text\". El que un lector veuria en aquesta pàgina s'escriu on és el cursor, sense etiquetes, scripts ni estils. Aquesta és l'única eina de Scribe que es connecta a la xarxa, i només quan ho demanes: la pàgina l'obté el navegador instal·lat en aquest ordinador (Microsoft Edge o Google Chrome), executat sense finestra i sense les teves galetes ni sessions iniciades; el programa mateix no envia res. Una pàgina que requereix haver iniciat la sessió només dona el que veuria un desconegut."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Restaurar els diacrítics romanesos",
+          "body": [
+            "El romanès escrit sense ă, â, î, ș, ț es torna a escriure amb aquests signes.",
+            {
+              "steps": [
+                "Obre l'eina del grup Neteja i tria \"Aplicar al text\".",
+                "Les paraules que tenen una sola forma correcta es canvien immediatament: \"stiu\" es converteix en \"știu\", \"informatii\" es converteix en \"informații\".",
+                "Les paraules que es poden llegir de més d'una manera (fata, fată, fața, față) es llisten sota el botó, cadascuna al seu lloc del text. Fes clic a la forma correcta de cadascuna.",
+                "O marca \"Triar automàticament la forma més probable quan una paraula sigui dubtosa\" abans d'aplicar: no es pregunta res, i cal revisar el resultat."
+              ]
+            },
+            "Quan les paraules del voltant són suficients, Scribe decideix segons aquestes: \"o casa\" es converteix en \"o casă\", \"casa mea\" es manté, \"pentru ca\" es converteix en \"pentru că\".",
+            {
+              "note": "Això s'ha creat per a Scribe a partir d'una llista de paraules comunes i de les terminacions que el romanès sempre escriu amb diacrítics. Les paraules que no coneix (paraules rares, noms) es queden tal com s'han escrit, i una paraula que ja està escrita amb diacrítics no es toca mai. Llegeix el resultat abans d'enviar-lo."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Escriure text: farciment i aleatori",
+          "body": [
+            "Les eines del grup \"Escriure text\" no canvien res: escriuen. El que generen es col·loca on és el cursor, en lloc de la selecció.",
+            {
+              "points": [
+                "Text de farciment: paràgrafs, frases, paraules, llistes, encapçalaments o parts d'una pàgina (un encapçalament, paràgrafs, una llista). En el llatí dels impressors (lorem ipsum), anglès, romanès, paraules d'oficina o de cuina, o les teves pròpies paraules. Més opcions: frases curtes, mitjanes o llargues; text pla, Markdown, HTML o JSON; el nivell dels encapçalaments; un límit de caràcters (el text es talla en una paraula sencera i igualment acaba com una frase); paraules a omitir.",
+                "Dades fictícies: noms, adreces de correu electrònic, números de telèfon, adreces postals, dates o números, un per línia, de Romania o de països angloparlants. \"Línies segons el meu patró\" escriu cada línia com diguis, amb {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} i {row} en lloc del que es genera: una taula per provar alguna cosa, en un moment.",
+                "Text aleatori: contrasenyes (lletres, dígits i signes, almenys un de cadascun), lletres, dígits, hexadecimal o identificadors (UUID), en una línia o en diverses. Es poden excloure els caràcters fàcils de confondre (0 i O, 1, l i I).",
+                "Una llavor (a \"Més opcions\") fa que el text de farciment i les dades fictícies surtin iguals cada vegada amb el mateix número; el 0 dona una cosa nova cada vegada."
+              ]
+            },
+            {
+              "note": "Les contrasenyes es generen en aquest ordinador, a partir de l'aleatorietat del sistema operatiu, i no s'envien enlloc. Les adreces de correu electrònic fictícies acaben en example.com, on el correu no arriba a ningú; un número de telèfon generat aleatòriament pot ser d'algú, així que no hi truquis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Receptes",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Desar el que has fet com a recepta",
+          "body": [
+            "Una recepta és una llista d'eines amb les seves opcions, desada amb un nom i que es torna a executar amb un sol clic.",
+            {
+              "steps": [
+                "Aplica a un text les eines que vulguis, en l'ordre que vulguis.",
+                "Obre \"Receptes\" a la part superior del panell: s'hi llisten les eines que has aplicat.",
+                "\"Desar com a recepta\", i dona-li un nom.",
+                "Més tard, obre la recepta i tria \"Executar al text\": es fan tots els seus passos, i un sol Desfés els desfà tots."
+              ]
+            },
+            "Les receptes es desen en aquest ordinador i estan disponibles en cada text."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Canviar una recepta o crear-ne una des de zero",
+          "body": [
+            "\"Canviar\" en una recepta oberta mostra el seu nom i els seus passos. Cada pas es pot moure amunt o avall, eliminar i canviar-ne les opcions; les eines s'afegeixen des de la llista que hi ha sota els passos. No es desa res fins que no fas clic a \"Desa\".",
+            "\"Recepta nova\" en comença una sense passos, per muntar-la de la mateixa manera sense haver d'aplicar abans les eines a un text.",
+            {
+              "note": "Les eines que escriuen text (farciment, aleatori) no són passos d'una recepta: una recepta modifica un text."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Executar una recepta en fitxers",
+          "body": [
+            {
+              "steps": [
+                "Obre la recepta i, a \"Executar en fitxers\", afegeix fitxers o una carpeta (amb les carpetes que conté).",
+                "Tria on van els resultats: a una altra carpeta, cosa que deixa els fitxers tal com són, o sobre els mateixos fitxers.",
+                "Executa. Scribe indica quants fitxers s'han escrit, quants no necessitaven cap canvi i quins no s'han pogut fer i per què."
+              ]
+            },
+            "Cada fitxer s'escriu amb la codificació i els finals de línia que tenia. En una altra carpeta, els fitxers conserven les carpetes d'on venien, i un fitxer que ja hi és no se sobreescriu mai.",
+            {
+              "note": "Escriure sobre els mateixos fitxers no es pot desfer des de Scribe. Conserva'n una còpia si són importants."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Estadístiques, comparació i carpetes",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Estadístiques",
+          "body": [
+            "\"Estadístiques\" a la part superior del panell indica de què està compost el text o la selecció. Cada part es pot plegar.",
+            {
+              "points": [
+                "A la part superior: paraules, caràcters amb i sense espais, frases, paràgrafs, línies, pàgines i la mida en bytes.",
+                "Temps: per llegir en silenci, per dir en veu alta, per mecanitzar i per escriure a mà.",
+                "Paraules: quantes són diferents (i quin percentatge del total), lletres per paraula, síl·labes, la paraula més llarga i la més curta, i quantes paraules hi ha de cada longitud.",
+                "Frases: paraules per frase, quantes són curtes, mitjanes i llargues, quantes són afirmacions, preguntes i exclamacions, i la més llarga i la més curta.",
+                "Facilitat de lectura: una puntuació de 0 (molt difícil) a 100 (molt fàcil), segons la fórmula elaborada per a la llengua del text. Hi ha fórmules per a l'anglès, l'alemany, l'espanyol, el francès, l'italià, el neerlandès, el portuguès i el rus; una llengua que no en té no rep puntuació, ja que una fórmula feta per a una altra seria enganyosa.",
+                "El que més diu: les paraules més utilitzades amb el seu percentatge del text, i els parells i grups de tres paraules que es repeteixen.",
+                "Espai dins dels límits habituals: quants caràcters queden, o sobren, per a un títol, una descripció, una publicació curta i altres."
+              ]
+            },
+            "Les paraules i les frases es troben segons les regles de cada escriptura, de manera que també es compten el xinès, el japonès i el tailandès, que no posen espais entre paraules. Les velocitats amb què es calculen els temps i quantes paraules formen una pàgina es defineixen a la Configuració."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Comparar dos textos",
+          "body": [
+            {
+              "points": [
+                "Eines → \"Comparar amb un altre text\": el text de l'editor al costat d'un que escriguis o enganxis.",
+                "Eines → \"Comparar amb un fitxer\": el text de l'editor, tal com està ara, al costat d'un fitxer que triïs.",
+                "Eines → \"Comparar dos textos\": dos textos escrits o enganxats l'un al costat de l'altre.",
+                "Eines → \"Comparar dos fitxers\"."
+              ]
+            },
+            "Els dos textos es mostren l'un al costat de l'altre. Les línies que només són al primer es marquen com a eliminades, les que només són al segon com a afegides, i en una línia que ha canviat es marquen les paraules que difereixen. Només es mostra el que difereix, amb unes quantes línies al voltant; les fletxes van d'una diferència a la següent.",
+            "Es poden ignorar les majúscules, els espais, les línies buides, els números i la puntuació. \"En una sola columna\" mostra el que s'ha tret a sobre del que s'ha posat, cadascun amb el seu signe, en lloc de l'un al costat de l'altre. Al costat dels recomptes, Scribe indica com s'assemblen els dos textos, com a percentatge de línies iguals.",
+            "Un text es mostra tan bon punt es tria, abans que l'altre. Arrossega la barra entre els dos textos per donar més espai a un d'ells; mentre s'escriuen els textos, la barra que hi ha sota els quadres s'arrossega amunt i avall per donar més espai als quadres o a la comparació. Un doble clic torna la barra al seu lloc.",
+            "Quan s'han canviat diverses línies seguides, cadascuna es posa al costat de la línia a la qual més s'assembla, de manera que una línia afegida o eliminada entre elles no faci que totes les línies posteriors semblin canviades per la següent.",
+            "\"Escriu o enganxa els textos\" mostra un quadre sobre cada columna; el que hi escrius es compara a mesura que escrius, i encara es pot triar un fitxer per a qualsevol dels dos costats."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Cerca i substitució en una carpeta",
+          "body": [
+            {
+              "steps": [
+                "Eines → \"Cerca en una carpeta\" (Ctrl+Shift+F), i tria la carpeta. També es cerca a les carpetes que conté.",
+                "Escriu què vols trobar, amb les mateixes opcions que a \"Substituir a tot arreu\". \"Tipus de fitxers\" limita la cerca a certes extensions (txt, md, csv…).",
+                "Cada coincidència es mostra a la seva línia, fitxer per fitxer. Fes clic en una línia per obrir el fitxer en aquest punt.",
+                "Per substituir: escriu el text nou, desmarca els fitxers que vulguis deixar intactes i tria \"Escriure els fitxers\"."
+              ]
+            },
+            "No s'escriu res fins que no ho demanes, i només als fitxers que hagin quedat marcats. Cada fitxer s'escriu amb la codificació i els finals de línia que tenia.",
+            {
+              "note": "Les carpetes ocultes i les que omplen els programes (.git, node_modules) s'ometen tret que les demanis. Els fitxers que no són de text s'ometen sempre."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Configuració",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "La configuració de Scribe",
+          "body": [
+            "Fitxer → Configuració obre la configuració del programa a la part de Scribe.",
+            {
+              "points": [
+                "L'editor: lletres d'una sola amplada o les pròpies del programa, la seva mida, l'ajust de línia, els números de línia i si el resultat d'una eina es mostra abans de ser aplicat.",
+                "Un text nou: com acaben les seves línies i si el seu fitxer comença amb una marca d'ordre de bytes (BOM).",
+                "Estadístiques: les velocitats de lectura en silenci, de lectura en veu alta, de mecanografia i d'escriptura a mà, i quantes paraules formen una pàgina.",
+                "Les tecles de les ordres de Scribe."
+              ]
+            },
+            "Cada configuració té un botó que la restableix tal com ve amb el programa."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Quant a Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Quant a Scribe",
+          "body": [
+            "Scribe és l'aplicació de text de Syntelab Creative: un editor amb les seves eines al costat del text. Mostra què faria una eina abans de fer-ho, neteja i reordena llistes, cerca i substitueix en un text o en una carpeta sencera, compara dos textos, indica de què està fet un text, escriu text de farciment i dades fictícies, i desa el que fas sovint com a receptes per tornar-les a executar.",
+            "Tot es fa en aquest ordinador. No hi ha cap límit imposat a la mida o al nombre de textos: els límits són la memòria de l'ordinador i el que la tecnologia actual pot fer.",
+            "És nova. Allà on no n'hi hagi prou per als teus textos, digues-nos-ho a través d'Ajuda → Comentaris: així sabem en què hem de treballar."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Amb què s'ha construït Scribe",
+          "body": [
+            {
+              "points": [
+                "L'editor: CodeMirror.",
+                "Lectura i escriptura de codificacions: encoding_rs, amb chardetng per endevinar la codificació d'un fitxer que no la indica.",
+                "Cerca i substitució: la biblioteca regex de Rust, els patrons de la qual no poden bloquejar el programa.",
+                "Ordenació segons cada llengua, i cerca de paraules i frases en qualsevol escriptura: ICU4X, la biblioteca Unicode.",
+                "Comparació de textos: la biblioteca similar.",
+                "Diacrítics romanesos: una llista de paraules i regles escrites per a Scribe."
+              ]
+            },
+            "El que comparteix amb la resta del programa es troba a \"Quant a Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "El que Scribe encara no pot fer",
+          "body": [
+            {
+              "points": [
+                "Un fitxer molt gran es llegeix pàgina per pàgina i es modifica només mitjançant receptes; modificar-lo manualment implica obrir-lo completament, cosa que consumeix memòria.",
+                "La restauració dels diacrítics romanesos coneix les paraules comunes; les paraules rares i els noms es mantenen tal com s'han escrit.",
+                "No hi ha corrector ortogràfic.",
+                "Aquí no s'extreu text de PDF ni de documents d'oficina; aquests els obre PDF Organizer.",
+                "L'editor no acoloreix el codi ni el Markdown.",
+                "Un fitxer que deixis anar a la finestra s'obre com un text nou: al programa no se li diu on és el fitxer, per la qual cosa en desar et pregunta on."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Primers passos",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Què és Syntelab Creative",
+          "body": [
+            "Syntelab Creative és un sol programa format per aplicacions. Cada aplicació fa un tipus de feina:",
+            {
+              "points": [
+                "PDF Organizer llegeix, organitza, edita i signa documents PDF.",
+                "Scribe és un editor de text amb eines per netejar, ordenar, comparar i transformar text.",
+                "Units converteix entre unitats: longitud, temperatura, monedes i moltes més.",
+                "Dev aplega eines per a desenvolupadors: codificar i descodificar, formatar i comprovar, convertir una forma de dades en una altra."
+              ]
+            },
+            "Les aplicacions comparteixen una finestra, una configuració i una manera de treballar, de manera que el que aprens en una és igual a la següent.",
+            {
+              "note": "Tot passa al teu ordinador. Els teus documents no s'envien mai enlloc i no es recull res sobre tu ni sobre la teva feina."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "La finestra",
+          "body": [
+            {
+              "points": [
+                "La barra lateral: la casa porta a l'Inici, després vénen les teves aplicacions i, a baix, les novetats del programa, Comentaris, Suport i Configuració.",
+                "En una aplicació, Fitxer → Ves a l'Inici va a la primera pàgina d'aquella aplicació si en té (Units, Scribe), i Fitxer → Obre la configuració (Ctrl+,) obre la Configuració a la secció d'aquella aplicació; les altres seccions hi són a un clic.",
+                "Les pestanyes de dalt: cada document, arxivador o eina que obres té la seva pròpia pestanya. Un punt en una pestanya indica que té canvis no desats.",
+                "Els menús de l'aplicació, sota les pestanyes: com a barra de menús, com a cinta d'opcions o com a panell lateral, el que hagis triat.",
+                "La resta de la finestra és la pestanya que tens al davant."
+              ]
+            },
+            "En tancar una pestanya amb canvis no desats, primer es demana confirmació; el mateix passa en tancar el programa."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Inici",
+          "body": [
+            "L'Inici mostra les teves aplicacions i els fitxers que has obert darrerament. Fes clic en una aplicació per obrir-la; fes clic en un fitxer recent per tornar-lo a obrir.",
+            "Les aplicacions es poden mostrar com a targetes, com a icones amb noms o només com a icones, i es poden arrossegar a l'ordre que vulguis. Amb el teclat: Alt i les tecles de fletxa. \"Restableix els valors per defecte\" les torna a deixar com eren.",
+            "Cada aplicació també té la seva pròpia drecera al menú Inici de Windows, com ara \"Syntelab PDF Organizer\" o \"Syntelab Units\": obre el programa directament en aquella aplicació. Si el programa ja està obert, l'aplicació s'hi obre com a pestanya."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Obrir fitxers",
+          "body": [
+            {
+              "points": [
+                "Des d'una aplicació: Fitxer → Obre, o Ctrl+O.",
+                "Deixant anar fitxers d'una carpeta damunt la finestra.",
+                "Des del gestor de fitxers del sistema: fes doble clic en un fitxer que el programa estigui configurat per obrir. A l'Explorador de Windows també hi ha el menú contextual (consulta \"El menú contextual de l'Explorador de Windows\").",
+                "Des de l'Inici: la llista de fitxers recents."
+              ]
+            },
+            "El programa s'executa com una sola còpia. Un fitxer obert des del gestor de fitxers mentre el programa s'executa s'obre com una pestanya nova a la mateixa finestra."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A la teva manera",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Disposició: barra de menús, cinta d'opcions o panell lateral",
+          "body": [
+            "Les ordres d'una aplicació es poden mostrar de tres maneres. Són les mateixes ordres; només canvia on són.",
+            {
+              "points": [
+                "Clàssic: una barra de menús i una barra d'eines.",
+                "Cinta d'opcions: botons grans en grups amb nom, una pestanya per a cada menú. Es pot contraure per deixar més espai al document.",
+                "Panell lateral: les eines en un panell a l'esquerra o a la dreta, que es pot contraure a icones."
+              ]
+            },
+            "Tria la disposició de totes les aplicacions a Configuració → General → Disposició. Una aplicació pot tenir una disposició pròpia, triada a la seva secció de Configuració o des del seu menú Vista; aleshores ja no segueix la general fins que triïs \"Utilitza la disposició general\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Configuració → General → Tema: Clar, Fosc, Gris clar, Gris fosc o Automàtic, que segueix la configuració clara o fosca del sistema.",
+            "El tema no torna a acolorir mai les pàgines d'un document: el paper es queda tal com és."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Idioma",
+          "body": [
+            "Configuració → General → Idioma. El programa parla 62 idiomes. \"Idioma del sistema\" segueix l'idioma del teu sistema. A la llista es pot cercar pel nom de l'idioma en aquell idioma, pel seu nom en el teu idioma o pel seu nom en anglès.",
+            "Un text que encara no està traduït es mostra en anglès, mai com un codi."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Pestanyes",
+          "body": [
+            {
+              "points": [
+                "\"Mantén la pestanya Inici entre les pestanyes\": quan està desactivat, la pestanya Inici només es mostra mentre l'Inici mateix és al davant; la casa de la barra lateral sempre hi torna.",
+                "La marca d'una pestanya pot ser la icona de la seva aplicació o un quadrat senzill del color de l'aplicació."
+              ]
+            },
+            "Quan hi ha més pestanyes de les que hi caben, les fletxes als extrems de la tira la desplacen, i \"Més pestanyes\" les llista totes."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orientar-se",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Cercar una ordre",
+          "body": [
+            "El quadre de cerca (\"Cerca ordres i configuració\") troba qualsevol ordre de la pestanya del davant pel seu nom, en el teu idioma o en anglès. Tria un resultat per executar-lo.",
+            "Les ordres previstes però encara no escrites es mostren en gris als menús i queden fora de la cerca."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Dreceres de teclat",
+          "body": [
+            "Les tecles d'una ordre s'indiquen al costat del seu nom als menús i a la seva descripció emergent. Les més utilitzades:",
+            {
+              "points": [
+                "Ctrl+O: obrir un fitxer",
+                "Ctrl+S: desar; Ctrl+Shift+S: desar com",
+                "Ctrl+P: imprimir",
+                "Ctrl+Z i Ctrl+Y: desfer i refer",
+                "Ctrl+F: cercar al document",
+                "Ctrl+W: tancar la pestanya",
+                "Ctrl+Tab i Ctrl+Shift+Tab: la pestanya següent i l'anterior",
+                "Ctrl+, (coma): Configuració",
+                "F1: aquesta Ajuda",
+                "Escape: sortir de la pantalla completa o del mode de lectura, o deixar l'eina que tens a la mà"
+              ]
+            },
+            "Les tecles de les ordres pròpies del programa (pestanyes, Configuració, Ajuda) es canvien a Configuració → General → Dreceres de teclat; les de les ordres d'una aplicació, a la seva secció de Configuració. Fes clic a les tecles d'una ordre i després prem les noves."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Com fer servir aquesta Ajuda",
+          "body": [
+            "L'Ajuda depèn del lloc des d'on l'obres. Des d'una aplicació només veus el manual d'aquella aplicació i les ordres de la pestanya d'on vens. Des de la pàgina d'inici o des de Configuració veus \"Quant a\" (el programa i cada aplicació, en resum) i el manual del programa. Ajuda → Quant a sempre porta a \"Quant a\".",
+            "El contingut és a l'esquerra; la cerca de sobre busca a tots els temes, als títols i al text.",
+            "L'Ajuda s'obre en una pestanya pròpia, perquè puguis anar i venir entre ella i la teva feina; F1 la torna a portar al davant. A \"Ordres de la pestanya d'on vens\" es llista cada menú d'aquella pestanya amb totes les seves ordres, les seves tecles i el que fan: obre l'Ajuda des de la pestanya sobre la qual tens un dubte."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "El menú contextual de l'Explorador de Windows",
+          "body": [
+            "Configuració → General → Explorador de Windows → \"Mostra Syntelab Creative al menú contextual de fitxers i carpetes\" afegeix entrades per als fitxers que el programa llegeix: \"Convertir a PDF amb PDF Organizer\" i \"Combinar fitxers a PDF Organizer\", cadascuna amb la icona de PDF Organizer, i \"Syntelab Dev\", que s’obre al costat amb Sumes de verificació, Comparar i Vista hex.",
+            "S’afegeixen només per al teu usuari, sense drets d’administrador, i desactivar l’opció les elimina. A Windows 11 són a \"Mostra més opcions\". Sempre inicien el programa instal·lat: si s’ha mogut o reinstal·lat en un altre lloc, les corregeix quan s’inicia.",
+            {
+              "note": "Si tries \"Combinar fitxers a PDF Organizer\" amb diversos fitxers, s’obre un arxivador amb ells; \"Convertir a PDF amb PDF Organizer\" obre el processament per lots amb ells."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privadesa, actualitzacions i contacte",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Què es connecta a internet i què no ho fa mai",
+          "body": [
+            "El programa no recull res: ni dades d'ús, ni noms de fitxers, ni informes d'error enviats pel seu compte.",
+            "Només es connecta a internet en aquests casos, i sempre perquè tu ho demanes:",
+            {
+              "points": [
+                "Comprovar si hi ha actualitzacions i novetats (dos fitxers petits llegits de syntelab.com), quan ho demanes o, si ho has permès, quan s'inicia el programa; i descarregar una versió nova, només quan prems \"Actualitza\".",
+                "Desar una pàgina web com a PDF (PDF Organizer) i obtenir el text d'una pàgina web (Scribe), des de l'adreça que has escrit.",
+                "Un enllaç d'un document en què fas clic: es passa al teu navegador o programa de correu.",
+                "Comentaris i Suport: obren una pàgina de syntelab.com al teu navegador."
+              ]
+            },
+            "La signatura amb certificat i la comprovació de signatures es fan al teu ordinador, sense connectar-se a internet."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Actualitzacions",
+          "body": [
+            "Configuració → General → Actualitzacions → \"Comprova si hi ha actualitzacions\". Quan hi ha una versió més nova, una finestra t'explica què hi ha de nou i t'ofereix \"Actualitza\".",
+            "\"Actualitza\" descarrega la nova versió, comprova que realment prové de nosaltres (ha d'estar signada amb la nostra clau; qualsevol altra cosa es rebutja) i la instal·la sobre aquesta. La teva configuració es manté i el programa es torna a iniciar. No es descarrega res fins que el prems.",
+            "Si l'actualització no es pot instal·lar d'aquesta manera (una còpia portable, un paquet de Linux, sense xarxa), \"Descarrega\" obre la pàgina de descàrrega al teu navegador; instal·la la versió nova sobre aquesta i la teva configuració es mantindrà.",
+            "\"Comprova si hi ha actualitzacions i novetats quan s'inicia el programa\" es pot desactivar; en cap cas s'envia res sobre tu ni sobre el teu ordinador."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Comentaris i suport",
+          "body": [
+            "Ajuda → Comentaris: demana una aplicació nova, una funció nova o un canvi, o informa d'un problema. Llegim cada missatge.",
+            "Ajuda → Suport: el programa és gratuït; aquí és on pots ajudar que continuï."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Quant a Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Quant a Syntelab Creative",
+          "body": [
+            "Syntelab Creative és un paquet gratuït d'aplicacions per a la feina de cada dia amb documents, text i dades, fet per Syntelab (syntelab.com). Comença amb quatre aplicacions: PDF Organizer, Scribe, Units i Dev. Se n'hi afegiran d'altres a la mateixa finestra.",
+            {
+              "points": [
+                "Sempre gratuït.",
+                "No es recullen dades: res sobre tu, el teu ordinador o la teva feina.",
+                "No es reté res: cap versió de pagament, cap funció bloquejada, cap límit posat expressament. Els únics límits són el que pot fer la tecnologia actual i el que pot suportar el teu ordinador."
+              ]
+            },
+            "No tenim finançament. El programa es fa en el nostre temps lliure, tant com aquest temps ho permet. Tenim la ferma intenció de fer programari de bona qualitat, i això demana temps i paciència: la nostra per construir-lo i la teva mentre creix.",
+            "Millorarà amb cada versió. Els problemes que es notifiquen es corregeixen, i les funcions que es demanen es valoren per decidir què ve després.",
+            {
+              "note": "Els teus documents es queden al teu ordinador. El programa no recull res sobre tu ni sobre la teva feina; consulta \"Què es connecta a internet i què no ho fa mai\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Com pots ajudar",
+          "body": [
+            "Hi ha tres maneres, i cadascuna compta:",
+            {
+              "points": [
+                "Digues-nos què en penses: Ajuda → Comentaris. Un problema que has trobat, alguna cosa que hi falta, alguna cosa que és més difícil del que hauria de ser. Llegim cada missatge.",
+                "Parla del programa i del que fem a altres persones. Més gent que l'utilitza vol dir més comentaris, i així veiem què importa de debò. També ens fa sentir que la nostra feina es valora: la nostra i la de tothom qui hi participa i hi participarà.",
+                "Dona-li suport econòmic, si pots: Ajuda → Dona'ns suport. Ens compra temps per treballar-hi."
+              ]
+            },
+            "Res d'això no se't demana. El programa és gratuït i sempre ho serà, sencer, per a tothom."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Amb què està fet",
+          "body": [
+            "El programa es basa en la feina de molta gent. El que comparteixen totes les aplicacions:",
+            {
+              "points": [
+                "La finestra i tot el que veus: Tauri, amb la vista web del sistema (WebView2 a Windows, WebKitGTK a Linux, WKWebView a macOS); escrit en TypeScript amb React.",
+                "La part que fa la feina: escrita en Rust.",
+                "Lletres i icones: Sansation, IBM Plex Sans i Font Awesome Free."
+              ]
+            },
+            "El que afegeix cada aplicació s'explica a la seva pròpia pàgina a \"Quant a\". Estem agraïts a les persones que hi ha darrere d'aquests projectes."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Què encara no pot fer",
+          "body": [
+            "Perquè ho sàpigues abans de comptar-hi:",
+            {
+              "points": [
+                "Alguns textos encara esperen la seva traducció. Mentrestant es mostren en anglès, mai com un codi.",
+                "De moment, el menú contextual del gestor de fitxers només existeix a l'Explorador de Windows.",
+                "De moment, la signatura amb certificat funciona a Windows; a Linux i macOS arribarà en una versió posterior."
+              ]
+            },
+            "Els límits de cada aplicació són a la seva pròpia pàgina a \"Quant a\". Si algun et fa nosa, digues-nos-ho a través d'Ajuda → Comentaris: ens ajuda a decidir què va primer."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "En què estem treballant",
+          "body": [
+            "Les quatre aplicacions continuaran creixent: el que ens informes i demanes a través d’Ajuda → Comentaris decideix bona part del que arriba primer. A més, s’estan preparant aplicacions noves. L’Inici no les mostra si no vols: marca-les al seu menú \"Vista\" per veure-les-hi com a \"Pròximament\":",
+            {
+              "points": [
+                "Convert: convertir fitxers d'un format a un altre, entre ells documents d'oficina a PDF i a l'inrevés, sense haver d'instal·lar cap altre programa. Encara no hem trobat cap tecnologia oberta que arribi a la qualitat que volem, així que només arribarà quan no et decebi; on les eines no existeixin, les construirem.",
+                "Pixel: eines per a imatges, com ara redimensionar i comprimir, eliminar el fons, colors i codis QR.",
+                "Metadata: veure i eliminar les dades ocultes de fotos, vídeos i documents abans de compartir-los.",
+                "Wizard: selectors i generadors aleatoris: una roda per fer girar, daus, una moneda, noms extrets d'una llista."
+              ]
+            },
+            "A les aplicacions que ja hi són, treballem en el que indiquen les seves pàgines \"Què encara no pot fer\": per exemple, un segell de temps de confiança per a les signatures, signar amb certificat a Linux i macOS, i un corrector ortogràfic a Scribe.",
+            "També arribaran més opcions d'instal·lació: Microsoft Store i winget a Windows, Flathub i Snap a Linux.",
+            {
+              "note": "Les novetats de cada versió són al botó de novetats de la barra lateral; Configuració → General → Actualitzacions comprova si hi ha una versió més nova."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

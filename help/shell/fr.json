@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Premiers pas",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Qu’est-ce que Syntelab Creative ?",
+          "body": [
+            "Syntelab Creative est un seul programme composé d’applications. Chaque application se charge d’un type de travail :",
+            {
+              "points": [
+                "PDF Organizer lit, organise, modifie et signe les documents PDF.",
+                "Scribe est un éditeur de texte doté d’outils pour nettoyer, trier, comparer et transformer du texte.",
+                "Units convertit les unités : longueur, température, devises et bien d’autres.",
+                "Dev réunit des outils pour les développeurs : encoder et décoder, formater et vérifier, convertir des données d’une forme à une autre."
+              ]
+            },
+            "Les applications partagent une même fenêtre, les mêmes paramètres et la même façon de travailler : ce que vous apprenez dans l’une vaut aussi dans les autres.",
+            {
+              "note": "Tout se passe sur votre ordinateur. Vos documents ne sont jamais envoyés nulle part, et rien n’est collecté sur vous ou sur votre travail."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "La fenêtre",
+          "body": [
+            {
+              "points": [
+                "La barre latérale : la maison mène à l’Accueil, viennent ensuite vos applications et, en bas, les nouveautés du programme, Commentaires, Soutenir et Paramètres.",
+                "Dans une application, Fichier → Aller à l’accueil mène à la première page de cette application lorsqu’elle en a une (Units, Scribe), et Fichier → Ouvrir les paramètres (Ctrl+,) ouvre les paramètres à la section de cette application ; les autres sections sont à un clic.",
+                "Les onglets en haut : chaque document, assembleur de documents ou outil que vous ouvrez a son propre onglet. Un point sur un onglet signale des modifications non enregistrées.",
+                "Les menus de l’application, sous les onglets : sous forme de barre de menus, de ruban ou de panneau latéral, selon votre choix.",
+                "Le reste de la fenêtre est occupé par l’onglet au premier plan."
+              ]
+            },
+            "La fermeture d’un onglet contenant des modifications non enregistrées demande d’abord confirmation ; il en va de même pour la fermeture du programme."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Accueil",
+          "body": [
+            "L’Accueil affiche vos applications et les fichiers ouverts récemment. Cliquez sur une application pour l’ouvrir ; cliquez sur un fichier récent pour le rouvrir.",
+            "Les applications peuvent s’afficher sous forme de cartes, d’icônes avec noms ou d’icônes seules, et être déplacées dans l’ordre de votre choix. Au clavier : Alt et les touches fléchées. « Rétablir les paramètres par défaut » rétablit l’ordre d’origine.",
+            "Chaque application a aussi son propre raccourci dans le menu Démarrer de Windows, par exemple « Syntelab PDF Organizer » ou « Syntelab Units » : il ouvre le programme directement dans cette application. Si le programme est déjà ouvert, l’application s’y ouvre dans un onglet."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Ouvrir des fichiers",
+          "body": [
+            {
+              "points": [
+                "Depuis une application : Fichier → Ouvrir, ou Ctrl+O.",
+                "En déposant des fichiers d’un dossier sur la fenêtre.",
+                "Depuis le gestionnaire de fichiers de votre système : double-cliquez sur un fichier que le programme est configuré pour ouvrir. Dans l’Explorateur de fichiers Windows, il y a aussi le menu contextuel (voir « Le menu contextuel de l’Explorateur de fichiers Windows »).",
+                "Depuis l’Accueil : la liste des fichiers récents."
+              ]
+            },
+            "Le programme ne s’exécute qu’en un seul exemplaire. Un fichier ouvert depuis le gestionnaire de fichiers pendant que le programme tourne s’ouvre dans un nouvel onglet de la même fenêtre."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personnaliser le programme",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Disposition : barre de menus, ruban ou panneau latéral",
+          "body": [
+            "Les commandes d’une application peuvent s’afficher de trois façons. Ce sont les mêmes commandes ; seul leur emplacement change.",
+            {
+              "points": [
+                "Classique : une barre de menus et une barre d’outils.",
+                "Ruban : de grands boutons répartis en groupes nommés, un onglet par menu. Il peut être réduit pour laisser plus de place au document.",
+                "Panneau latéral : les outils dans un panneau à gauche ou à droite, qui peut être réduit à des icônes."
+              ]
+            },
+            "Choisissez la disposition de toutes les applications dans Paramètres → Général → Disposition. Une application peut avoir sa propre disposition, choisie dans sa section des paramètres ou dans son menu Affichage ; elle ne suit alors plus la disposition générale, jusqu’à ce que vous choisissiez « Utiliser la disposition générale »."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Thème",
+          "body": [
+            "Paramètres → Général → Thème : Clair, Sombre, Gris clair, Gris foncé ou Automatique, qui suit le réglage clair ou sombre du système.",
+            "Les pages d’un document ne sont jamais recolorées par le thème : le papier reste tel qu’il est."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Langue",
+          "body": [
+            "Paramètres → Général → Langue. Le programme parle 62 langues. « Langue du système » suit la langue de votre système. La liste peut être parcourue par le nom d’une langue dans cette langue, par son nom dans votre langue ou par son nom anglais.",
+            "Un texte qui n’est pas encore traduit s’affiche en anglais, jamais sous forme de code."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Onglets",
+          "body": [
+            {
+              "points": [
+                "« Garder l’onglet Accueil parmi les onglets » : lorsque cette option est désactivée, l’onglet Accueil ne s’affiche que lorsque l’Accueil est au premier plan ; la maison de la barre latérale y ramène toujours.",
+                "La marque d’un onglet peut être l’icône de son application ou un simple carré de la couleur de l’application."
+              ]
+            },
+            "Lorsqu’il y a plus d’onglets que de place, les flèches aux extrémités de la bande la font défiler, et « Autres onglets » les liste tous."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "S’orienter",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Rechercher une commande",
+          "body": [
+            "La zone de recherche (« Rechercher des applications, outils et commandes ») trouve n’importe quelle commande de l’onglet au premier plan par son nom, dans votre langue ou en anglais. Choisissez un résultat pour l’exécuter.",
+            "Les commandes prévues mais pas encore écrites apparaissent en grisé dans les menus et sont exclues de la recherche."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Raccourcis clavier",
+          "body": [
+            "Les touches d’une commande sont indiquées à côté de son nom dans les menus et dans son info-bulle. Les plus utilisées :",
+            {
+              "points": [
+                "Ctrl+O : ouvrir un fichier",
+                "Ctrl+S : enregistrer ; Ctrl+Shift+S : enregistrer sous",
+                "Ctrl+P : imprimer",
+                "Ctrl+Z et Ctrl+Y : annuler et rétablir",
+                "Ctrl+F : rechercher dans le document",
+                "Ctrl+W : fermer l’onglet",
+                "Ctrl+Tab et Ctrl+Shift+Tab : l’onglet suivant et le précédent",
+                "Ctrl+, (virgule) : Paramètres",
+                "F1 : cette aide",
+                "Échap : quitter le plein écran ou le mode lecture, ou lâcher l’outil en main"
+              ]
+            },
+            "Les touches des commandes propres au programme (onglets, Paramètres, Aide) se modifient dans Paramètres → Général → Raccourcis clavier ; celles des commandes d’une application, dans sa section des paramètres. Cliquez sur les touches d’une commande, puis appuyez sur les nouvelles."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Utiliser cette aide",
+          "body": [
+            "L’aide dépend de l’endroit d’où vous l’ouvrez. Depuis une application, vous ne voyez que le manuel de cette application et les commandes de l’onglet d’où vous venez. Depuis la page d’accueil ou depuis les paramètres, vous voyez « À propos » (le programme et chaque application, en bref) et le manuel du programme. Aide → À propos mène toujours à « À propos ».",
+            "Le sommaire est à gauche ; la recherche au-dessus parcourt tous les sujets, dans les titres et dans le texte.",
+            "L’aide s’ouvre dans un onglet dédié, pour que vous puissiez passer de l’aide à votre travail et inversement ; F1 la ramène au premier plan. Sous « Commandes de l’onglet d’où vous venez », chaque menu de cet onglet est listé avec chacune de ses commandes, ses touches et ce qu’elle fait : ouvrez l’aide depuis l’onglet sur lequel vous avez une question."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Le menu contextuel de l’Explorateur de fichiers Windows",
+          "body": [
+            "Paramètres → Général → Explorateur de fichiers Windows → « Afficher Syntelab Creative dans le menu contextuel des fichiers et dossiers » ajoute des entrées pour les fichiers que le programme lit : « Convertir en PDF avec PDF Organizer » et « Combiner les fichiers dans PDF Organizer », chacune avec l’icône de PDF Organizer, et « Syntelab Dev », qui s’ouvre sur le côté avec Sommes de contrôle, Comparer et Vue hexadécimale.",
+            "Elles sont ajoutées pour votre compte uniquement, sans droits d’administrateur, et désactiver l’option les supprime. Sous Windows 11, elles se trouvent dans « Afficher d’autres options ». Elles lancent toujours le programme installé : s’il a été déplacé ou réinstallé ailleurs, il les corrige à son démarrage.",
+            {
+              "note": "Choisir « Combiner les fichiers dans PDF Organizer » sur plusieurs fichiers ouvre un assembleur de documents avec ces fichiers ; « Convertir en PDF avec PDF Organizer » ouvre le traitement par lots avec eux."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Confidentialité, mises à jour et contact",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Ce qui passe par Internet, et ce qui n’y passe jamais",
+          "body": [
+            "Le programme ne collecte rien : ni données d’utilisation, ni noms de fichiers, ni rapports de plantage envoyés automatiquement.",
+            "Il ne se connecte à Internet que dans les cas suivants, chacun à votre demande :",
+            {
+              "points": [
+                "La recherche de mises à jour et d’actualités (deux petits fichiers lus sur syntelab.com), lorsque vous la demandez ou, si vous l’avez autorisé, au démarrage du programme ; et le téléchargement d’une nouvelle version, uniquement lorsque vous cliquez sur « Mettre à jour ».",
+                "L’enregistrement d’une page web en PDF (PDF Organizer) et la récupération du texte d’une page web (Scribe), à partir de l’adresse que vous avez saisie.",
+                "Un lien sur lequel vous cliquez dans un document : il est transmis à votre navigateur ou à votre logiciel de messagerie.",
+                "Commentaires et Soutenir : ils ouvrent une page de syntelab.com dans votre navigateur."
+              ]
+            },
+            "La signature avec un certificat et la vérification des signatures se font sur votre ordinateur, sans connexion à Internet."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Mises à jour",
+          "body": [
+            "Paramètres → Général → Mises à jour → « Rechercher des mises à jour ». Lorsqu’une version plus récente existe, une fenêtre vous présente les nouveautés et propose « Mettre à jour ».",
+            "« Mettre à jour » télécharge la nouvelle version, vérifie qu’elle provient bien de nous (elle doit être signée avec notre clé ; tout le reste est refusé) et l’installe par-dessus celle-ci. Vos paramètres sont conservés et le programme redémarre. Rien n’est téléchargé avant que vous cliquiez.",
+            "Si la mise à jour ne peut pas être installée ainsi (copie portable, paquet Linux, pas de réseau), « Télécharger » ouvre la page de téléchargement dans votre navigateur ; installez la nouvelle version par-dessus celle-ci et vos paramètres seront conservés.",
+            "« Rechercher des mises à jour et des actualités au démarrage du programme » peut être désactivé ; dans tous les cas, rien n’est envoyé sur vous ou votre ordinateur."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Commentaires et soutien",
+          "body": [
+            "Aide → Commentaires : demandez une nouvelle application, une nouvelle fonctionnalité ou une modification, ou signalez un problème. Chaque message est lu.",
+            "Aide → Soutenir : le programme est gratuit ; c’est ici que vous pouvez l’aider à continuer."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "À propos de Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "À propos de Syntelab Creative",
+          "body": [
+            "Syntelab Creative est une suite gratuite d’applications pour le travail quotidien avec des documents, du texte et des données, créée par Syntelab (syntelab.com). Elle commence avec quatre applications : PDF Organizer, Scribe, Units et Dev. D’autres les rejoindront dans la même fenêtre.",
+            {
+              "points": [
+                "Toujours gratuit.",
+                "Aucune donnée collectée : rien sur vous, sur votre ordinateur ou sur votre travail.",
+                "Rien de retenu : pas de version payante, aucune fonctionnalité verrouillée, aucune limite imposée volontairement. Les seules limites sont ce que la technologie actuelle permet et ce que votre ordinateur peut supporter."
+              ]
+            },
+            "Nous n’avons aucun financement. Le programme est développé sur notre temps libre, dans la mesure où ce temps le permet. Nous tenons à faire un logiciel de qualité, et cela demande du temps et de la patience : la nôtre pour le construire, et la vôtre pendant qu’il grandit.",
+            "Il s’améliorera à chaque version. Les problèmes signalés sont corrigés, et les fonctionnalités demandées sont étudiées pour la suite.",
+            {
+              "note": "Vos documents restent sur votre ordinateur. Le programme ne collecte rien sur vous ou sur votre travail ; voir « Ce qui passe par Internet, et ce qui n’y passe jamais »."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Comment vous pouvez aider",
+          "body": [
+            "Il y a trois façons, et chacune compte :",
+            {
+              "points": [
+                "Dites-nous ce que vous en pensez : Aide → Commentaires. Un problème rencontré, quelque chose qui manque, quelque chose de plus difficile que nécessaire. Nous lisons chaque message.",
+                "Parlez du programme et de ce que nous faisons autour de vous. Plus il y a d’utilisateurs, plus il y a de retours, et c’est ainsi que nous voyons ce qui compte vraiment. Cela nous donne aussi le sentiment que notre travail est apprécié : le nôtre, et celui de tous ceux qui participent et participeront au projet.",
+                "Soutenez-le financièrement si vous le pouvez : Aide → Nous soutenir. Cela nous donne du temps pour y travailler."
+              ]
+            },
+            "Rien de tout cela ne vous est demandé. Le programme est gratuit et le restera toujours, complet, pour tout le monde."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Les technologies utilisées",
+          "body": [
+            "Le programme repose sur le travail de nombreuses personnes. Ce que toutes les applications partagent :",
+            {
+              "points": [
+                "La fenêtre et tout ce que vous voyez : Tauri, avec la vue web du système (WebView2 sous Windows, WebKitGTK sous Linux, WKWebView sous macOS) ; écrit en TypeScript avec React.",
+                "La partie qui fait le travail : écrite en Rust.",
+                "Polices et icônes : Sansation, IBM Plex Sans et Font Awesome Free."
+              ]
+            },
+            "Ce que chaque application ajoute est indiqué sur sa propre page sous « À propos ». Nous remercions les personnes à l’origine de ces projets."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Ce qu’il ne sait pas encore faire",
+          "body": [
+            "Pour que vous le sachiez avant de compter dessus :",
+            {
+              "points": [
+                "Certains textes attendent encore leur traduction. D’ici là, ils s’affichent en anglais, jamais sous forme de code.",
+                "Le menu contextuel du gestionnaire de fichiers n’existe pour l’instant que dans l’Explorateur de fichiers Windows.",
+                "La signature avec un certificat fonctionne pour l’instant sous Windows ; elle arrivera sous Linux et macOS dans une version ultérieure."
+              ]
+            },
+            "Les limites de chaque application figurent sur sa propre page sous « À propos ». Si l’une d’elles vous gêne, dites-le-nous via Aide → Commentaires : cela nous aide à décider des priorités."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Ce sur quoi nous travaillons",
+          "body": [
+            "Les quatre applications vont continuer à grandir : ce que vous signalez et demandez via Aide → Commentaires décide en grande partie de ce qui vient en premier. À côté d’elles, de nouvelles applications sont en préparation. L’Accueil ne les affiche que si vous le souhaitez : cochez-les dans son menu « Affichage » pour les y voir avec la mention « Bientôt disponible » :",
+            {
+              "points": [
+                "Convert : convertir des fichiers d’un format à un autre, notamment des documents bureautiques en PDF et inversement, sans avoir besoin d’installer un autre programme. Nous n’avons pas encore trouvé de technologie ouverte qui atteigne la qualité que nous visons ; l’application n’arrivera donc que lorsqu’elle ne vous décevra pas. Là où les outils n’existent pas, nous les construirons.",
+                "Pixel : des outils pour les images, comme le redimensionnement et la compression, la suppression de l’arrière-plan, les couleurs et les codes QR.",
+                "Metadata : voir et supprimer les données cachées des photos, vidéos et documents avant de les partager.",
+                "Wizard : des sélecteurs et générateurs aléatoires : une roue à faire tourner, des dés, une pièce, des noms tirés d’une liste."
+              ]
+            },
+            "Dans les applications déjà disponibles, nous travaillons sur ce que listent leurs pages « Ce qu’il ne sait pas encore faire » : par exemple un horodatage de confiance pour les signatures, la signature avec un certificat sous Linux et macOS, et un correcteur orthographique dans Scribe.",
+            "D’autres modes d’installation suivront : Microsoft Store et winget sous Windows, Flathub et Snap sous Linux.",
+            {
+              "note": "Les nouveautés de chaque version se trouvent sous le bouton des nouveautés de la barre latérale ; Paramètres → Général → Mises à jour recherche une version plus récente."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

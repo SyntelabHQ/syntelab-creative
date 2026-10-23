@@ -1,0 +1,272 @@
+/* The contents on one side, what is read on the other; each scrolls on its own. */
+.help {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  height: 100%;
+  min-height: 0;
+  background: var(--sc-surface);
+  text-align: start;
+}
+
+@media (width < 720px) {
+  .help {
+    grid-template-columns: minmax(0, 1fr);
+    height: auto;
+  }
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  padding: 20px 16px 20px 24px;
+  overflow-y: auto;
+  background: var(--sc-bg);
+  border-inline-end: 1px solid var(--sc-border);
+}
+
+.search {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--sc-control-height);
+  padding-inline: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-muted);
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.search:focus-within {
+  border-color: var(--sc-accent);
+}
+
+/* A part of the contents (About, a manual, the commands): the largest name, on a band of its own, so it reads as the level above its chapters. */
+.part {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.part > summary {
+  cursor: pointer;
+}
+
+.manual {
+  margin: 6px 0 4px;
+  padding: 9px 12px;
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.part > summary:hover {
+  background: var(--sc-accent-soft);
+}
+
+.part[open] > .manual {
+  background: var(--sc-accent-soft);
+}
+
+/* A chapter: one step in from its part, smaller than it, larger than its topics. */
+.chapter {
+  margin-inline-start: 12px;
+}
+
+.chapter > summary {
+  padding: 6px 8px;
+  border-radius: var(--sc-radius-s);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chapter > summary:hover {
+  background: var(--sc-surface-2);
+}
+
+/* The commands of the tab have no chapters: their menus stand where chapters would. */
+.part > .topics {
+  margin-inline-start: 12px;
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chapter .topics {
+  margin-inline-start: 12px;
+  padding-inline-start: 10px;
+  border-inline-start: 2px solid var(--sc-border);
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 14px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.topic:hover {
+  background: var(--sc-surface-2);
+}
+
+.topic[aria-current='true'] {
+  background: var(--sc-accent-soft);
+  font-weight: 600;
+}
+
+.where,
+.nothing {
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.nothing {
+  padding: 8px 10px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  min-height: 0;
+  padding: 28px max(32px, calc((100% - 760px) / 2));
+  overflow-y: auto;
+  line-height: 1.6;
+  user-select: text;
+}
+
+.article p {
+  margin: 0;
+}
+
+.heading {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.lead {
+  color: var(--sc-muted);
+}
+
+.steps,
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding-inline-start: 24px;
+}
+
+.note {
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-accent-soft);
+}
+
+.note > svg {
+  flex: none;
+  margin-block-start: 4px;
+  color: var(--sc-accent);
+}
+
+/* The commands of a menu: the name, its keys, what it does. */
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.groupName {
+  margin: 6px 0 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.commands {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+}
+
+.command {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 12px;
+}
+
+.command + .command {
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.command dt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.command dt span {
+  flex: 1;
+}
+
+.command dd {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 14px;
+}
+
+.command kbd {
+  padding: 1px 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface-2);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* A web address in the text of a manual: opened in the system's browser. */
+.link {
+  color: var(--sc-accent);
+  text-decoration: underline;
+  cursor: pointer;
+}

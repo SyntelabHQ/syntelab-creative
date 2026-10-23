@@ -1,0 +1,12 @@
+/* One Dev tab: whatever it shows takes all of it. */
+.tab {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: var(--sc-bg);
+  /* Narrow layouts are decided by the room the tab has, not by the window. */
+  container-type: inline-size;
+  /* A menu of a tool that reaches past the tab is cut there: it must not make the tab scroll. */
+  overflow: clip;
+}

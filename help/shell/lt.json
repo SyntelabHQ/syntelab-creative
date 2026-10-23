@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Darbo pradžia",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Kas yra Syntelab Creative",
+          "body": [
+            "Syntelab Creative yra viena programa, sudaryta iš programėlių. Kiekviena programėlė atlieka vienos rūšies darbą:",
+            {
+              "points": [
+                "PDF Organizer skaito, tvarko, redaguoja ir pasirašo PDF dokumentus.",
+                "Scribe yra teksto redaktorius su įrankiais, kurie tekstą valo, rikiuoja, lygina ir pertvarko.",
+                "Units konvertuoja matavimo vienetus: ilgį, temperatūrą, valiutas ir daug kitų.",
+                "Dev sujungia įrankius programuotojams: kodavimas ir dekodavimas, formatavimas ir tikrinimas, vienos duomenų formos pavertimas kita."
+              ]
+            },
+            "Programėlės turi bendrą langą, bendrus nustatymus ir vienodą darbo būdą, todėl tai, ką išmokstate vienoje, galioja ir kitoje.",
+            {
+              "note": "Viskas vyksta jūsų kompiuteryje. Jūsų dokumentai niekada niekur nesiunčiami, ir apie jus ar jūsų darbą nerenkama jokia informacija."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Langas",
+          "body": [
+            {
+              "points": [
+                "Šoninė juosta: namelis veda į Pradžią, toliau eina jūsų programėlės, o apačioje – programos naujienos, Atsiliepimai, Parama ir Nustatymai.",
+                "Programėlėje Failas → Eiti į Pradžią veda į pirmąjį tos programėlės puslapį, jei toks yra (Units, Scribe), o Failas → Atidaryti nustatymus (Ctrl+,) atidaro Nustatymus tos programėlės skiltyje; kitos skiltys ten pasiekiamos vienu spustelėjimu.",
+                "Kortelės viršuje: kiekvienas atidarytas dokumentas, rinkinys ar įrankis turi savo kortelę. Taškas kortelėje rodo, kad joje yra neišsaugotų pakeitimų.",
+                "Programėlės meniu po kortelėmis: kaip meniu juosta, kaip juostelė arba kaip šoninis skydelis – kaip pasirinkote.",
+                "Likusi lango dalis yra priekyje esanti kortelė."
+              ]
+            },
+            "Uždarant kortelę su neišsaugotais pakeitimais, pirmiausia klausiama; taip pat ir uždarant programą."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Pradžia",
+          "body": [
+            "Pradžioje rodomos jūsų programėlės ir neseniai atidaryti failai. Spustelėkite programėlę, kad ją atidarytumėte; spustelėkite neseniai naudotą failą, kad vėl jį atidarytumėte.",
+            "Programėles galima rodyti kaip korteles, kaip piktogramas su pavadinimais arba tik kaip piktogramas, ir vilkti norima tvarka. Klaviatūra: Alt ir rodyklių klavišai. „Atkurti numatytuosius“ grąžina jas į vietas.",
+            "Kiekviena programėlė taip pat turi savo nuorodą „Windows“ meniu Pradžia, pavyzdžiui, „Syntelab PDF Organizer“ arba „Syntelab Units“: ji atidaro programą iškart toje programėlėje. Jei programa jau atidaryta, programėlė joje atsidaro kaip kortelė."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Failų atidarymas",
+          "body": [
+            {
+              "points": [
+                "Iš programėlės: Failas → Atidaryti arba Ctrl+O.",
+                "Nutempiant failus iš aplanko ant lango.",
+                "Iš sistemos failų tvarkyklės: dukart spustelėkite failą, kurį atidaryti nustatyta programa. Windows failų naršyklėje taip pat yra dešiniojo spustelėjimo meniu (žr. „Windows failų naršyklės dešiniojo spustelėjimo meniu“).",
+                "Iš Pradžios: neseniai naudotų failų sąrašas."
+              ]
+            },
+            "Programa veikia kaip viena kopija. Failas, atidarytas iš failų tvarkyklės, kai programa veikia, atsidaro kaip nauja kortelė tame pačiame lange."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pritaikymas sau",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Išdėstymas: meniu juosta, juostelė arba šoninis skydelis",
+          "body": [
+            "Programėlės komandas galima rodyti trimis būdais. Komandos tos pačios; skiriasi tik jų vieta.",
+            {
+              "points": [
+                "Klasikinis: meniu juosta ir įrankių juosta.",
+                "Juostelė: dideli mygtukai pavadintose grupėse, po vieną kortelę kiekvienam meniu. Ją galima sutraukti, kad dokumentui liktų daugiau vietos.",
+                "Šoninis skydelis: įrankiai skydelyje kairėje arba dešinėje, kurį galima sutraukti iki piktogramų."
+              ]
+            },
+            "Visų programėlių išdėstymą pasirinkite Nustatymai → Bendrieji → Išdėstymas. Programėlė gali turėti savo išdėstymą, pasirinktą jos skiltyje nustatymuose arba jos meniu Vaizdas; tada ji nebeseka bendrojo, kol nepasirinksite „Naudoti bendrą išdėstymą“."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Nustatymai → Bendrieji → Tema: Šviesi, Tamsi, Šviesiai pilka, Tamsiai pilka arba Automatinė, kuri seka sistemos šviesų arba tamsų nustatymą.",
+            "Tema niekada neperspalvina dokumento puslapių: popierius lieka toks, koks yra."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Kalba",
+          "body": [
+            "Nustatymai → Bendrieji → Kalba. Programa kalba 62 kalbomis. „Sistemos kalba“ seka jūsų sistemos kalbą. Sąraše galima ieškoti pagal kalbos pavadinimą ta pačia kalba, jos pavadinimą jūsų kalba arba angliškai.",
+            "Dar neišverstas tekstas rodomas angliškai, niekada kaip kodas."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Kortelės",
+          "body": [
+            {
+              "points": [
+                "„Laikyti kortelę „Pradžia“ tarp kortelių“: kai išjungta, kortelė „Pradžia“ rodoma tik tada, kai pati Pradžia yra priekyje; namelis šoninėje juostoje visada veda atgal į ją.",
+                "Kortelės ženklas gali būti jos programėlės piktograma arba paprastas programėlės spalvos kvadratas."
+              ]
+            },
+            "Kai kortelių yra daugiau, nei telpa, rodyklės juostos galuose ją slenka, o „Daugiau kortelių“ išvardija jas visas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orientavimasis",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Komandos paieška",
+          "body": [
+            "Paieškos laukas („Ieškoti komandų ir nustatymų“) pagal pavadinimą jūsų kalba arba angliškai randa bet kurią priekyje esančios kortelės komandą. Pasirinkite rezultatą, kad jį vykdytumėte.",
+            "Suplanuotos, bet dar neparašytos komandos meniu rodomos pilkai ir neįtraukiamos į paiešką."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Spartieji klavišai",
+          "body": [
+            "Komandos klavišai parašyti šalia jos pavadinimo meniu ir jos paaiškinime. Dažniausiai naudojami:",
+            {
+              "points": [
+                "Ctrl+O: atidaryti failą",
+                "Ctrl+S: išsaugoti; Ctrl+Shift+S: išsaugoti kaip",
+                "Ctrl+P: spausdinti",
+                "Ctrl+Z ir Ctrl+Y: anuliuoti ir pakartoti",
+                "Ctrl+F: ieškoti dokumente",
+                "Ctrl+W: uždaryti kortelę",
+                "Ctrl+Tab ir Ctrl+Shift+Tab: kita kortelė ir ankstesnė",
+                "Ctrl+, (kablelis): Nustatymai",
+                "F1: ši Pagalba",
+                "Escape: išeiti iš viso ekrano ar skaitymo režimo arba padėti rankoje esantį įrankį"
+              ]
+            },
+            "Pačios programos komandų (kortelių, Nustatymų, Pagalbos) klavišai keičiami Nustatymai → Bendrieji → Spartieji klavišai; programėlės komandų klavišai – jos skiltyje nustatymuose. Spustelėkite komandos klavišus, tada paspauskite naujus."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Kaip naudotis šia Pagalba",
+          "body": [
+            "Pagalba priklauso nuo to, iš kur ją atidarote. Iš programėlės matote tik tos programėlės vadovą ir kortelės, iš kurios atėjote, komandas. Iš pradžios puslapio arba Nustatymų matote „Apie“ (trumpai apie programą ir kiekvieną programėlę) ir programos vadovą. Pagalba → Apie visada veda į „Apie“.",
+            "Turinys yra kairėje; paieška virš jo ieško visose temose – pavadinimuose ir tekste.",
+            "Pagalba atsidaro atskiroje kortelėje, todėl galite pereiti tarp jos ir savo darbo; F1 vėl iškelia ją į priekį. Skiltyje „Kortelės, iš kurios atėjote, komandos“ išvardytas kiekvienas tos kortelės meniu su visomis jo komandomis, jų klavišais ir paaiškinimu, ką jos daro: atidarykite Pagalbą iš tos kortelės, dėl kurios turite klausimą."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Windows failų naršyklės dešiniojo spustelėjimo meniu",
+          "body": [
+            "Nustatymai → Bendrieji → Windows failų naršyklė → „Rodyti Syntelab Creative failų ir aplankų dešiniojo spustelėjimo meniu“ prideda įrašus failams, kuriuos programa skaito: „Konvertuoti į PDF su PDF Organizer“ ir „Apjungti failus programoje PDF Organizer“, abu su PDF Organizer piktograma, ir „Syntelab Dev“, kuris išsiskleidžia į šoną su Kontrolinės sumos, Palyginti ir Hex peržiūra.",
+            "Jie pridedami tik jūsų naudotojui, be administratoriaus teisių, o išjungus jungiklį pašalinami. „Windows 11“ jie yra skiltyje „Rodyti daugiau parinkčių“. Jie visada paleidžia įdiegtą programą: jei ji buvo perkelta arba iš naujo įdiegta kitur, paleista ji juos pataiso.",
+            {
+              "note": "Pasirinkus „Apjungti failus programoje PDF Organizer“ keliems failams, atsidaro rinkinys su jais; „Konvertuoti į PDF su PDF Organizer“ atidaro jų grupinį apdorojimą."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privatumas, atnaujinimai ir kontaktai",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Kas keliauja į internetą, o kas – niekada",
+          "body": [
+            "Programa nieko nerenka: jokių naudojimo duomenų, jokių failų pavadinimų, jokių savaime siunčiamų strigčių ataskaitų.",
+            "Prie interneto ji jungiasi tik šiais atvejais, kiekvieną kartą jūsų prašymu:",
+            {
+              "points": [
+                "Atnaujinimų ir naujienų tikrinimas (du maži failai, nuskaitomi iš syntelab.com), kai paprašote arba, jei leidote, kai programa paleidžiama; ir naujos versijos atsisiuntimas, tik kai paspaudžiate „Atnaujinti“.",
+                "Tinklalapio išsaugojimas kaip PDF (PDF Organizer) ir tinklalapio teksto gavimas (Scribe) iš jūsų įvesto adreso.",
+                "Nuoroda dokumente, kurią spustelite: ji perduodama jūsų naršyklei arba pašto programai.",
+                "Atsiliepimai ir Parama: jie atidaro syntelab.com puslapį jūsų naršyklėje."
+              ]
+            },
+            "Pasirašymas sertifikatu ir parašų tikrinimas atliekami jūsų kompiuteryje, nesijungiant prie interneto."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Atnaujinimai",
+          "body": [
+            "Nustatymai → Bendrieji → Atnaujinimai → „Patikrinti atnaujinimus“. Kai yra naujesnė versija, langas parodo, kas nauja, ir pasiūlo „Atnaujinti“.",
+            "„Atnaujinti“ atsisiunčia naują versiją, patikrina, ar ji tikrai iš mūsų (ji turi būti pasirašyta mūsų raktu; visa kita atmetama), ir įdiegia ją ant dabartinės. Jūsų nustatymai išsaugomi, o programa paleidžiama iš naujo. Niekas neatsisiunčiama, kol jo nepaspaudžiate.",
+            "Jei atnaujinimo negalima įdiegti šiuo būdu (nešiojamoji kopija, „Linux“ paketas, nėra tinklo), „Atsisiųsti“ atidaro atsisiuntimo puslapį jūsų naršyklėje; įdiekite naują versiją ant dabartinės, ir jūsų nustatymai išliks.",
+            "„Tikrinti atnaujinimus ir naujienas paleidžiant programą“ galima išjungti; bet kuriuo atveju apie jus ar jūsų kompiuterį niekas nesiunčiama."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Atsiliepimai ir parama",
+          "body": [
+            "Pagalba → Atsiliepimai: paprašykite naujos programėlės, naujos funkcijos ar pakeitimo arba praneškite apie problemą. Perskaitome kiekvieną žinutę.",
+            "Pagalba → Parama: programa nemokama; čia galite padėti jai tęstis."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Apie Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Apie Syntelab Creative",
+          "body": [
+            "Syntelab Creative yra nemokamas programėlių rinkinys kasdieniam darbui su dokumentais, tekstu ir duomenimis, kurį kuria Syntelab (syntelab.com). Jis prasideda nuo keturių programėlių: PDF Organizer, Scribe, Units ir Dev. Prie jų tame pačiame lange prisijungs ir kitos.",
+            {
+              "points": [
+                "Visada nemokama.",
+                "Jokie duomenys nerenkami: nieko apie jus, jūsų kompiuterį ar jūsų darbą.",
+                "Niekas nesulaikoma: nėra mokamos versijos, nėra užrakintų funkcijų, nėra tyčia nustatytų apribojimų. Vieninteliai apribojimai – tai, ką gali šiandienos technologijos, ir tai, ką gali jūsų kompiuteris."
+              ]
+            },
+            "Mes neturime finansavimo. Programa kuriama mūsų laisvalaikiu, kiek tas laikas leidžia. Esame tvirtai pasiryžę kurti kokybišką programinę įrangą, o tam reikia laiko ir kantrybės: mūsų – ją kuriant, ir jūsų – kol ji auga.",
+            "Su kiekviena versija ji taps geresnė. Praneštos problemos ištaisomos, o pageidaujamos funkcijos įvertinamos planuojant tolesnius žingsnius.",
+            {
+              "note": "Jūsų dokumentai lieka jūsų kompiuteryje. Programa nerenka nieko apie jus ar jūsų darbą; žr. „Kas keliauja į internetą, o kas – niekada“."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Kaip galite padėti",
+          "body": [
+            "Yra trys būdai, ir kiekvienas jų svarbus:",
+            {
+              "points": [
+                "Pasakykite, ką manote: Pagalba → Atsiliepimai. Problema, su kuria susidūrėte, kas nors, ko trūksta, kas nors, kas sudėtingiau, nei turėtų būti. Perskaitome kiekvieną žinutę.",
+                "Papasakokite kitiems apie programą ir apie tai, ką darome. Daugiau naudotojų – daugiau atsiliepimų, ir taip matome, kas iš tikrųjų svarbu. Tai taip pat leidžia mums jausti, kad mūsų darbas vertinamas: mūsų ir kiekvieno, kuris dalyvauja ir dalyvaus projekte.",
+                "Paremkite ją pinigais, jei galite: Pagalba → Paremkite mus. Tai suteikia mums laiko prie jos dirbti."
+              ]
+            },
+            "Nieko iš to iš jūsų nereikalaujama. Programa nemokama ir visada bus nemokama, visa, visiems."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Iš ko ji sukurta",
+          "body": [
+            "Programa remiasi daugelio žmonių darbu. Kas bendra visoms programėlėms:",
+            {
+              "points": [
+                "Langas ir viskas, ką matote: Tauri su sistemos žiniatinklio rodiniu (WebView2 „Windows“, WebKitGTK „Linux“, WKWebView „macOS“); parašyta TypeScript su React.",
+                "Dalis, kuri atlieka darbą: parašyta Rust.",
+                "Raidės ir piktogramos: Sansation, IBM Plex Sans ir Font Awesome Free."
+              ]
+            },
+            "Ką prideda kiekviena programėlė, nurodyta jos puslapyje skiltyje „Apie“. Esame dėkingi žmonėms, kurie stovi už šių projektų."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Ko ji dar negali",
+          "body": [
+            "Kad žinotumėte, prieš ja pasikliaudami:",
+            {
+              "points": [
+                "Kai kurie tekstai dar laukia vertimo. Iki tol jie rodomi angliškai, niekada kaip kodas.",
+                "Failų tvarkyklės dešiniojo spustelėjimo meniu kol kas yra tik Windows failų naršyklėje.",
+                "Pasirašymas sertifikatu kol kas veikia „Windows“; „Linux“ ir „macOS“ jis atsiras vėlesnėje versijoje."
+              ]
+            },
+            "Kiekvienos programėlės apribojimai nurodyti jos puslapyje skiltyje „Apie“. Jei kuris nors iš jų jums trukdo, praneškite mums per Pagalba → Atsiliepimai: tai padeda nuspręsti, kas bus pirmiausia."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Prie ko dirbame",
+          "body": [
+            "Keturios programėlės toliau augs: tai, ką pranešate ir ko prašote per Pagalba → Atsiliepimai, daug lemia, kas bus pirmiausia. Šalia jų ruošiamos naujos programėlės. Pradžia jų nerodo, nebent norite: pažymėkite jas jos meniu „Rodinys“, kad matytumėte jas ten kaip „Netrukus“:",
+            {
+              "points": [
+                "Convert: failų konvertavimas iš vieno formato į kitą, tarp jų biuro dokumentų į PDF ir atgal, nereikalaujant įdiegti kitos programos. Dar neradome atviros technologijos, kuri pasiektų norimą kokybę, todėl ji atsiras tik tada, kai jūsų nenuvils; kur įrankių nėra, juos sukursime.",
+                "Pixel: įrankiai vaizdams, pavyzdžiui, dydžio keitimas ir glaudinimas, fono pašalinimas, spalvos ir QR kodai.",
+                "Metadata: nuotraukų, vaizdo įrašų ir dokumentų paslėptų duomenų peržiūra ir šalinimas prieš juos bendrinant.",
+                "Wizard: atsitiktiniai pasirinkikliai ir generatoriai: sukamas ratas, kauliukai, moneta, iš sąrašo traukiami vardai."
+              ]
+            },
+            "Jau esamose programėlėse dirbame prie to, ką išvardija jų puslapiai „Ko ji dar negali“: pavyzdžiui, patikimo laiko žymos parašams, pasirašymo sertifikatu „Linux“ ir „macOS“ bei rašybos tikrinimo Scribe.",
+            "Bus ir daugiau diegimo būdų: Microsoft Store ir winget „Windows“, Flathub ir Snap „Linux“.",
+            {
+              "note": "Kiekvienos versijos naujienos yra po naujienų mygtuku šoninėje juostoje; Nustatymai → Bendrieji → Atnaujinimai patikrina, ar yra naujesnė versija."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

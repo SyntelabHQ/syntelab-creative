@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Alustamine",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Mis on Syntelab Creative",
+          "body": [
+            "Syntelab Creative on üks programm, mis koosneb rakendustest. Iga rakendus teeb ühte liiki tööd:",
+            {
+              "points": [
+                "PDF Organizer loeb, korraldab, redigeerib ja allkirjastab PDF-dokumente.",
+                "Scribe on tekstiredaktor tööriistadega, mis teksti puhastavad, sorteerivad, võrdlevad ja teisendavad.",
+                "Units teisendab ühikuid: pikkus, temperatuur, valuutad ja palju muud.",
+                "Dev koondab tööriistad arendajatele: kodeerimine ja dekodeerimine, vormindamine ja kontrollimine, andmete teisendamine ühest vormist teise."
+              ]
+            },
+            "Rakendustel on ühine aken, ühised seaded ja ühine töötamise viis, nii et mida ühes õpite, kehtib ka järgmises.",
+            {
+              "note": "Kõik toimub teie arvutis. Teie dokumente ei saadeta kunagi kuhugi ning teie ega teie töö kohta ei koguta midagi."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Aken",
+          "body": [
+            {
+              "points": [
+                "Külgriba: maja viib Algusesse, siis tulevad teie rakendused ja all programmi uudised, Tagasiside, Toetus ja Seaded.",
+                "Rakenduses viib Fail → Mine algusesse selle rakenduse esimesele lehele, kui see on olemas (Units, Scribe), ja Fail → Ava seaded (Ctrl+,) avab Seaded selle rakenduse jaotises; teised jaotised on sealt ühe klõpsu kaugusel.",
+                "Sakid üleval: igal avatud dokumendil, kogumikul või tööriistal on oma sakk. Täpp sakil näitab, et selles on salvestamata muudatusi.",
+                "Rakenduse menüüd sakkide all: menüüribana, lindina või külgpaneelina, olenevalt teie valikust.",
+                "Ülejäänud aken on esiplaanil olev sakk."
+              ]
+            },
+            "Salvestamata muudatustega saki sulgemisel küsitakse enne kinnitust; samuti programmi sulgemisel."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Algus",
+          "body": [
+            "Algus näitab teie rakendusi ja hiljuti avatud faile. Klõpsake rakendusel, et see avada; klõpsake hiljutisel failil, et see uuesti avada.",
+            "Rakendusi saab kuvada kaartidena, nimedega ikoonidena või ainult ikoonidena ning lohistada soovitud järjekorda. Klaviatuuriga: Alt ja nooleklahvid. „Taasta vaikesätted“ paneb need tagasi.",
+            "Igal rakendusel on ka oma otsetee Windowsi menüüs Start, näiteks „Syntelab PDF Organizer“ või „Syntelab Units“: see avab programmi kohe selles rakenduses. Kui programm on juba avatud, avaneb rakendus selles sakina."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Failide avamine",
+          "body": [
+            {
+              "points": [
+                "Rakendusest: Fail → Ava või Ctrl+O.",
+                "Lohistades failid kaustast aknale.",
+                "Süsteemi failihaldurist: topeltklõpsake faili, mille avamiseks programm on määratud. Windowsi failihalduris on ka paremklõpsumenüü (vt „Windowsi failihalduri paremklõpsumenüü“).",
+                "Algusest: hiljutiste failide loend."
+              ]
+            },
+            "Programm töötab ühe eksemplarina. Fail, mis avatakse failihaldurist ajal, kui programm töötab, avaneb samas aknas uue sakina."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Enda järgi kohandamine",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Paigutus: menüüriba, lint või külgpaneel",
+          "body": [
+            "Rakenduse käske saab kuvada kolmel viisil. Käsud on samad; erineb ainult nende asukoht.",
+            {
+              "points": [
+                "Klassikaline: menüüriba ja tööriistariba.",
+                "Lint: suured nupud nimega rühmades, iga menüü jaoks üks sakk. Lindi saab ahendada, et dokumendile jääks rohkem ruumi.",
+                "Külgpaneel: tööriistad paneelis vasakul või paremal; paneeli saab ahendada ikoonideks."
+              ]
+            },
+            "Kõigi rakenduste paigutuse valite jaotises Seaded → Üldised → Paigutus. Rakendusel võib olla oma paigutus, mis valitakse selle rakenduse jaotises seadetes või selle menüüs Vaade; siis ei järgi see enam üldist paigutust, kuni valite „Kasuta üldist paigutust“."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Teema",
+          "body": [
+            "Seaded → Üldised → Teema: Hele, Tume, Helehall, Tumehall või Automaatne, mis järgib süsteemi heledat või tumedat sätet.",
+            "Teema ei värvi kunagi dokumendi lehti ümber: paber jääb selliseks, nagu see on."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Keel",
+          "body": [
+            "Seaded → Üldised → Keel. Programm räägib 62 keelt. „Süsteemi keel“ järgib teie süsteemi keelt. Loendist saab otsida keele omakeelse nime, teie keeles nime või ingliskeelse nime järgi.",
+            "Tekst, mis pole veel tõlgitud, kuvatakse inglise keeles, mitte kunagi koodina."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Sakid",
+          "body": [
+            {
+              "points": [
+                "„Hoia Algus-sakk sakkide hulgas“: kui see on väljas, on Algus-sakk nähtav ainult siis, kui Algus ise on esiplaanil; külgriba maja viib alati selle juurde tagasi.",
+                "Saki märk võib olla selle rakenduse ikoon või lihtne ruut rakenduse värvis."
+              ]
+            },
+            "Kui sakke on rohkem, kui mahub, kerivad riba otstes olevad nooled seda ja „Rohkem sakke“ loetleb need kõik."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orienteerumine",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Käsu otsimine",
+          "body": [
+            "Otsingukast („Otsi käske ja seadeid“) leiab esiplaanil oleva saki mis tahes käsu selle nime järgi, teie keeles või inglise keeles. Valige tulemus, et see käivitada.",
+            "Käsud, mis on kavandatud, kuid veel kirjutamata, kuvatakse menüüdes hallilt ja need jäetakse otsingust välja."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Kiirklahvid",
+          "body": [
+            "Käsu klahvid on kirjas selle nime kõrval menüüdes ja selle kohtspikris. Kõige sagedamini kasutatavad:",
+            {
+              "points": [
+                "Ctrl+O: ava fail",
+                "Ctrl+S: salvesta; Ctrl+Shift+S: salvesta nimega",
+                "Ctrl+P: prindi",
+                "Ctrl+Z ja Ctrl+Y: võta tagasi ja tee uuesti",
+                "Ctrl+F: otsi dokumendist",
+                "Ctrl+W: sulge sakk",
+                "Ctrl+Tab ja Ctrl+Shift+Tab: järgmine ja eelmine sakk",
+                "Ctrl+, (koma): Seaded",
+                "F1: see Abi",
+                "Escape: välju täisekraanilt või lugemisrežiimist või pane käesolev tööriist käest"
+              ]
+            },
+            "Programmi enda käskude (sakid, Seaded, Abi) klahve muudetakse jaotises Seaded → Üldised → Kiirklahvid; rakenduse käskude klahve selle rakenduse jaotises seadetes. Klõpsake käsu klahvidel ja vajutage seejärel uusi."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Selle Abi kasutamine",
+          "body": [
+            "Abi sõltub sellest, kust selle avate. Rakendusest näete ainult selle rakenduse kasutusjuhendit ja selle saki käske, millelt tulite. Avalehelt või seadetest näete jaotist „Programmi kohta“ (lühidalt programmist ja igast rakendusest) ning programmi kasutusjuhendit. Abi → Programmi kohta viib alati jaotisse „Programmi kohta“.",
+            "Sisukord on vasakul; selle kohal olev otsing otsib läbi kõik teemad, nii pealkirjadest kui ka tekstist.",
+            "Abi avaneb eraldi sakis, nii et saate selle ja oma töö vahel edasi-tagasi liikuda; F1 toob selle uuesti esiplaanile. Jaotises „Saki käsud, millelt tulite“ on loetletud selle saki iga menüü koos kõigi käskude, nende klahvide ja selgitusega, mida need teevad: avage Abi sellelt sakilt, mille kohta teil on küsimus."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Windowsi failihalduri paremklõpsumenüü",
+          "body": [
+            "Seaded → Üldised → Windowsi failihaldur → „Kuva Syntelab Creative failide ja kaustade paremklõpsumenüüs“ lisab kirjed failidele, mida programm loeb: „Konverteeri PDF-iks rakendusega PDF Organizer“ ja „Ühenda failid rakenduses PDF Organizer“, kumbki PDF Organizeri ikooniga, ning „Syntelab Dev“, mis avaneb küljele kirjetega Kontrollsummad, Võrdle ja Hex-vaade.",
+            "Need lisatakse ainult teie kasutajale, ilma administraatoriõigusteta, ja lüliti väljalülitamine eemaldab need. Windows 11-s on need jaotises „Kuva rohkem suvandeid“. Need käivitavad alati installitud programmi: kui see teisaldati või installiti mujale uuesti, parandab see kirjed käivitumisel.",
+            {
+              "note": "Kui valite mitme faili puhul „Ühenda failid rakenduses PDF Organizer“, avaneb nendega kogumik; „Konverteeri PDF-iks rakendusega PDF Organizer“ avab nendega pakktöötluse."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privaatsus, uuendused ja kontakt",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Mis läheb võrku ja mis mitte kunagi",
+          "body": [
+            "Programm ei kogu midagi: ei kasutusandmeid, ei failinimesi ega iseenesest saadetavaid krahhiaruandeid.",
+            "Võrku läheb see ainult järgmistel juhtudel, igaüks neist teie enda soovil:",
+            {
+              "points": [
+                "Uuenduste ja uudiste kontrollimine (kaks väikest faili, mis loetakse saidilt syntelab.com), kui te seda palute või, kui olete lubanud, programmi käivitumisel; ning uue versiooni allalaadimine, ainult siis, kui vajutate „Uuenda“.",
+                "Veebilehe salvestamine PDF-ina (PDF Organizer) ja veebilehe teksti toomine (Scribe) teie sisestatud aadressilt.",
+                "Dokumendis olev link, millel klõpsate: see antakse üle teie brauserile või e-postiprogrammile.",
+                "Tagasiside ja Toetus: need avavad teie brauseris saidi syntelab.com lehe."
+              ]
+            },
+            "Sertifikaadiga allkirjastamine ja allkirjade kontrollimine toimuvad teie arvutis, ilma võrku minemata."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Uuendused",
+          "body": [
+            "Seaded → Üldised → Uuendused → „Kontrolli uuendusi“. Kui on olemas uuem versioon, näitab aken, mis on uut, ja pakub nuppu „Uuenda“.",
+            "„Uuenda“ laadib alla uue versiooni, kontrollib, et see pärineb tõesti meilt (see peab olema allkirjastatud meie võtmega; kõik muu lükatakse tagasi), ja installib selle praeguse peale. Teie seaded säilivad ja programm käivitub uuesti. Midagi ei laadita alla enne, kui te nuppu vajutate.",
+            "Kui uuendust ei saa sel viisil installida (kaasaskantav koopia, Linuxi pakett, võrk puudub), avab „Laadi alla“ teie brauseris allalaadimislehe; installige uus versioon praeguse peale ja teie seaded säilivad.",
+            "„Kontrolli uuendusi ja uudiseid programmi käivitamisel“ saab välja lülitada; teie ega teie arvuti kohta ei saadeta mingil juhul midagi."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Tagasiside ja toetus",
+          "body": [
+            "Abi → Tagasiside: paluge uut rakendust, uut funktsiooni või muudatust või teatage probleemist. Iga sõnum loetakse läbi.",
+            "Abi → Toetus: programm on tasuta; siin saate aidata sellel edasi minna."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Syntelab Creative'i kohta",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Syntelab Creative'i kohta",
+          "body": [
+            "Syntelab Creative on tasuta rakenduste komplekt igapäevaseks tööks dokumentide, teksti ja andmetega, mille on teinud Syntelab (syntelab.com). See algab nelja rakendusega: PDF Organizer, Scribe, Units ja Dev. Samasse aknasse lisandub neile teisi.",
+            {
+              "points": [
+                "Alati tasuta.",
+                "Andmeid ei koguta: mitte midagi teie, teie arvuti ega teie töö kohta.",
+                "Midagi ei hoita tagasi: pole tasulist versiooni, pole lukustatud funktsioone ega meelega seatud piiranguid. Ainsad piirid on see, mida tänapäeva tehnoloogia suudab ja mida teie arvuti välja kannab."
+              ]
+            },
+            "Meil pole rahastust. Programmi tehakse meie vabast ajast, niipalju kui see aeg lubab. Meil on kindel kavatsus teha head tarkvara ning see nõuab aega ja kannatlikkust: meie oma selle ehitamiseks ja teie oma, kuni see kasvab.",
+            "Iga versiooniga läheb see paremaks. Teatatud probleemid parandatakse ja soovitud funktsioone kaalutakse järgmiste sammude jaoks.",
+            {
+              "note": "Teie dokumendid jäävad teie arvutisse. Programm ei kogu midagi teie ega teie töö kohta; vt „Mis läheb võrku ja mis mitte kunagi“."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Kuidas saate aidata",
+          "body": [
+            "On kolm võimalust ja igaüks neist loeb:",
+            {
+              "points": [
+                "Öelge meile, mida arvate: Abi → Tagasiside. Probleem, millega kokku puutusite, midagi, mis puudub, midagi, mis on keerulisem, kui peaks. Loeme iga sõnumi.",
+                "Rääkige teistele programmist ja sellest, mida teeme. Rohkem kasutajaid tähendab rohkem tagasisidet ja nii näeme, mis on tõeliselt oluline. See annab meile ka tunde, et meie tööd hinnatakse: meie ja kõigi nende tööd, kes projektis osalevad ja osalema hakkavad.",
+                "Toetage seda rahaliselt, kui saate: Abi → Toeta meid. See ostab meile aega selle kallal töötamiseks."
+              ]
+            },
+            "Midagi sellest ei nõuta teilt. Programm on tasuta ja jääb alati tasuta, tervikuna, kõigile."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Millega see on tehtud",
+          "body": [
+            "Programm toetub paljude inimeste tööle. Mis on kõigil rakendustel ühine:",
+            {
+              "points": [
+                "Aken ja kõik, mida näete: Tauri süsteemi veebivaatega (WebView2 Windowsis, WebKitGTK Linuxis, WKWebView macOS-is); kirjutatud TypeScriptis Reactiga.",
+                "Osa, mis tööd teeb: kirjutatud Rustis.",
+                "Tähed ja ikoonid: Sansation, IBM Plex Sans ja Font Awesome Free."
+              ]
+            },
+            "Mida iga rakendus lisab, on kirjas selle oma lehel jaotises „Programmi kohta“. Oleme tänulikud nende projektide taga olevatele inimestele."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Mida see veel ei oska",
+          "body": [
+            "Et teaksite enne, kui sellele loodate:",
+            {
+              "points": [
+                "Mõned tekstid ootavad veel tõlget. Seni kuvatakse need inglise keeles, mitte kunagi koodina.",
+                "Failihalduri paremklõpsumenüü on praegu olemas ainult Windowsi failihalduris.",
+                "Sertifikaadiga allkirjastamine töötab praegu Windowsis; Linuxis ja macOS-is tuleb see hilisemas versioonis."
+              ]
+            },
+            "Iga rakenduse piirangud on kirjas selle oma lehel jaotises „Programmi kohta“. Kui mõni neist teid takistab, andke meile teada menüü Abi → Tagasiside kaudu: see aitab meil otsustada, mis tuleb esimesena."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Mille kallal töötame",
+          "body": [
+            "Neli rakendust kasvavad edasi: see, millest teatate ja mida palute menüü Abi → Tagasiside kaudu, otsustab suuresti, mis tuleb esimesena. Nende kõrval valmistatakse ette uusi rakendusi. Algus ei näita neid, kui te seda ei soovi: märkige need selle menüüs „Vaade“, et näha neid seal kui „Varsti saadaval“:",
+            {
+              "points": [
+                "Convert: failide konverteerimine ühest vormingust teise, sealhulgas kontoridokumendid PDF-iks ja tagasi, ilma et oleks vaja installida mõnda teist programmi. Me pole veel leidnud avatud tehnoloogiat, mis saavutaks soovitud kvaliteedi, seega tuleb see alles siis, kui see ei valmista teile pettumust; kus tööriistu pole olemas, ehitame need ise.",
+                "Pixel: tööriistad piltide jaoks, näiteks suuruse muutmine ja tihendamine, tausta eemaldamine, värvid ja QR-koodid.",
+                "Metadata: fotode, videote ja dokumentide peidetud andmete vaatamine ja eemaldamine enne nende jagamist.",
+                "Wizard: juhuslikud valijad ja generaatorid: keerutatav ratas, täringud, münt, loendist loositud nimed."
+              ]
+            },
+            "Juba olemasolevates rakendustes töötame selle kallal, mida loetlevad nende lehed „Mida see veel ei oska“: näiteks usaldusväärne ajatempel allkirjadele, sertifikaadiga allkirjastamine Linuxis ja macOS-is ning õigekirjakontroll Scribe'is.",
+            "Lisanduvad ka uued installimisvõimalused: Microsoft Store ja winget Windowsis, Flathub ja Snap Linuxis.",
+            {
+              "note": "Iga versiooni uudised on külgriba uudiste nupu all; Seaded → Üldised → Uuendused kontrollib, kas on uuem versioon."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

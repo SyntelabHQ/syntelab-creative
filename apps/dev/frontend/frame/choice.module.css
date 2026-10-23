@@ -1,0 +1,105 @@
+/* One of a few, side by side, with what is chosen said before them. */
+.choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.choice[data-disabled='true'] {
+  opacity: 0.5;
+}
+
+.label {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.options {
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+}
+
+/* Something that is on or off. */
+.check {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--sc-accent);
+}
+
+/* A line of text typed by the user. */
+.text {
+  width: 220px;
+  min-height: 30px;
+  padding: 0 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+}
+
+.text[data-wide='true'] {
+  width: min(520px, 46cqw);
+}
+
+.text[data-code='true'] {
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+}
+
+.text:focus-visible {
+  border-color: var(--sc-accent);
+  outline: none;
+}
+
+/* A whole number typed by the user, beside the choices. */
+.number {
+  width: 64px;
+  min-height: 30px;
+  padding: 0 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.number:focus-visible {
+  border-color: var(--sc-accent);
+  outline: none;
+}
+
+.option {
+  min-height: 26px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.option:hover:not(:disabled) {
+  color: var(--sc-text);
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.option[aria-checked='true'] {
+  background: var(--sc-surface);
+  box-shadow: 0 0 0 1px var(--sc-border);
+  color: var(--sc-text);
+}

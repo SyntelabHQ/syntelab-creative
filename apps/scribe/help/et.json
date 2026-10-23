@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Tekstid ja failid",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Redaktor",
+          "body": [
+            "Scribe on lihtteksti redaktor, mille tööriistad on selle kõrval. Igal tekstil on oma sakk; tekst on keskel, tööriistapaneel selle kõrval ja andmerida selle all.",
+            "Scribe'i avamisel küsitakse esmalt, mida soovite teha: loendada sõnu, otsida ja asendada, eemaldada duplikaate, võrrelda kaht teksti, sorteerida ridu, pöörata teksti ümber, kirjutada täiteteksti või juhuslikku teksti. Iga valik avab teksti koos vastava tööriistaga selle kõrval; \"Tühi tekst\" avab ainult teksti ning allpool on loetletud viimati avatud tekstid.",
+            {
+              "points": [
+                "Fail → Uus tekst (Ctrl+N) alustab tühja teksti.",
+                "Fail → Ava (Ctrl+O) avab ühe või mitu faili, igaühe oma sakis. Avaneb iga fail, mis sisaldab teksti: .txt, .md, .csv, .log, .srt, lähtekood ja muud.",
+                "Muuda → Võta tagasi (Ctrl+Z) ja Tee uuesti (Ctrl+Y) liiguvad läbi kõige, mis tekstiga on tehtud; tööriist või retsept loetakse üheks sammuks.",
+                "Muuda → Otsi ja asenda (Ctrl+F) avab redaktoris riba, millega liigutakse ühelt vastelt järgmisele.",
+                "Muuda → Vali kõik (Ctrl+A)."
+              ]
+            },
+            "Teksti all olev rida näitab kursori asukohta, valitud osa suurust, ridade, sõnade ja märkide arvu, faili kodeeringut ja reavahetusi.",
+            "Aknale lohistatud failid avanevad samuti, igaüks uue tekstina faili nime, kodeeringu ja reavahetustega. Programm saab lohistatud faili sisu, kuid mitte selle asukohta kettal, seega küsitakse salvestamisel asukohta; üle 64 MB failid avage menüüst Fail → Ava.",
+            "Uus tekst loetleb seni, kuni see on tühi, viimati avatud tekstid: klõpsake ühel, et see avada. \"Unusta loend\" tühjendab loendi; seda hoitakse ainult selles arvutis."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Salvesta ja Salvesta nimega",
+          "body": [
+            "Faili kettal ei muudeta enne, kui salvestate. Punkt sakil näitab, et tekstis on muudatusi, mida failis pole, ja sellise saki sulgemisel küsitakse enne kinnitust.",
+            {
+              "points": [
+                "Salvesta (Ctrl+S) kirjutab teksti selle faili peale. Uue teksti puhul küsitakse asukohta.",
+                "Salvesta nimega (Ctrl+Shift+S) kirjutab teksti uude faili, mis võtab seejärel saki üle, kusjuures kõik tagasivõetav jääb alles; vana fail jääb selliseks, nagu oli."
+              ]
+            },
+            "Fail kirjutatakse kas tervikuna või üldse mitte: kui kirjutamine ebaõnnestub, jääb seal varem olnud fail alles.",
+            {
+              "note": "Fail salvestatakse nii, nagu see avati: samas kodeeringus ja samade reavahetustega. Nii Windowsis kui ka Linuxis kirjutatud tekst jääb selliseks, nagu see oli."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodeeringud ja reavahetused",
+          "body": [
+            "Kodeering on viis, kuidas tähti baitidena hoitakse. Scribe loeb, mida fail enda kohta ütleb, ja kui see midagi ei ütle, siis oletab. Enamik tänapäeva faile on UTF-8; vanemad Kesk-Euroopa failid on sageli windows-1250.",
+            {
+              "points": [
+                "Valesti näivad tähed (Ã£ ă asemel või ruudud): Fail → \"Loe uuesti teise kodeeringuga\" ja valige kodeering, milles fail on kirjutatud.",
+                "Teises kodeeringus salvestamiseks valige see teksti all olevalt realt ja salvestage. Kui tekstis on tähti, mida see kodeering kirjutada ei suuda, ütleb Scribe, millised, ega kirjuta midagi.",
+                "Reavahetusi (Windows CRLF, Linux ja macOS LF, vana Mac CR) muudetakse samas kohas. Kui failis on segamini eri reavahetused, öeldakse seda; salvestamisel saavad kõik read ühesugused."
+              ]
+            },
+            "Seda, millega uus tekst algab, saab valida Seadetes."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Teksti kuvamine",
+          "body": [
+            {
+              "points": [
+                "Kõik menüüs Vaade on lülitid: sisselülitatuna on see nähtav, väljalülitatuna mitte.",
+                "Tekst: Murra pikad read (Alt+Z) — aknast pikem rida jätkub allpool ja tekst säilitab oma read; Reanumbrid; Tulemus teksti kõrval.",
+                "Teksti kõrval: Tööriistad (Ctrl+T), Retseptid, Statistika. Paneel näitab ainult sisselülitatud osi; kui ükski pole sisse lülitatud, pole ka paneeli.",
+                "Näidatud tööriistad: iga tööriistarühma (otsi ja asenda, read, suurtähed ja tähed, puhastamine, kirjuta tekst) saab paneelilt ära jätta. Menüüst Vorming või Tööriistad valitud tööriista näidatakse siiski: selle osa ja rühm ilmuvad ise tagasi.",
+                "Paneeli ülaosas olev topeltnool voldib paneeli serval olevaks ribaks, kust iga selle osa on ühe klõpsu kaugusel; lohistage paneeli serva, et seda laiemaks või kitsamaks muuta.",
+                "Font ja selle suurus valitakse Seadetes."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Väga suured failid",
+          "body": [
+            "Üle 64 MB faili redaktorisse ei panda: see avaneb sakis, mis näitab seda 500-realiste lehekülgede kaupa, lugedes failist jooksvalt. Gigabaitidesuurused failid avanevad nii sama ajaga, mis kulub nende ühekordseks läbimiseks.",
+            {
+              "points": [
+                "\"Eelmine lehekülg\" ja \"Järgmine lehekülg\" liiguvad failis; rea number ja \"Mine\" viivad mis tahes reale.",
+                "Otsing otsib kogu failist samade valikutega nagu mujal ja loetleb leitud kohad: klõpsake ühel, et minna selle reale. Pikk loend tuleb osade kaupa, nupuga \"Otsi rohkem\".",
+                "\"Käivita retsept terve faili suhtes\" kirjutab tulemuse teie valitud kausta sama nimega. Faili ennast siin kunagi ei muudeta.",
+                "\"Ava tervikuna redaktoris\" paneb selle siiski redaktorisse, et seda käsitsi muuta. See võib olla aeglane ja vajab mälu mitu korda faili suuruse jagu."
+              ]
+            },
+            {
+              "note": "Faile, mis on kirjutatud kahe baidiga tähe kohta (UTF-16), ei saa lehekülgede kaupa kuvada. Retsept hoiab käivitamise ajal kogu faili mälus: piiriks on arvuti mälu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tööriistad",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Kuidas tööriistad töötavad",
+          "body": [
+            "Tööriistad on teksti kõrval paneelil, rühmade kaupa. Klõpsake tööriistal, et näha selle valikuid, ja seejärel nuppu \"Rakenda tekstile\".",
+            {
+              "points": [
+                "Kui midagi on valitud, muudab tööriist ainult valikut; kui midagi pole valitud, siis kogu teksti. Paneeli ülaosas on kirjas, kumb.",
+                "Nupu all ütleb tööriist, mida see tegi: mitu rida või kohta see muutis.",
+                "Iga tööriist on üks samm: Võta tagasi võtab selle tervikuna tagasi.",
+                "Iga tööriist on ka menüüdes ja käskude otsingus: need, mis muudavad teksti kuju (read, suurtähed ja tähed, puhastamine), on menüüs Vorming, teised menüüs Tööriistad. Sealt valimine avab paneeli selle tööriista valikute juures."
+              ]
+            },
+            "Menüüs Vorming on tööriist, mis on peamiselt üks valik, esitatud oma valikutena: iga suurtähtede muutmise viis, iga jutumärkide liik, iga teksti ümberpööramise viis on eraldi käsk, mis avab tööriista selle valikuga. Kui aken on rühma jaoks liiga kitsas, saab rühmast üks nupp, mis avab kogu loendi.",
+            "Tööriistad töötavad selles arvutis. Ükski tekst siit ei lahku."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Tulemus enne rakendamist",
+          "body": [
+            "Kui tööriist on avatud, näidatakse teksti kõrval paanil \"Tulemus\", mida see annaks. Tekstis ei muutu midagi enne, kui valite \"Rakenda tekstile\". Tulemus käib teiega kaasas: muutke valikut või teksti ja see tehakse uuesti.",
+            {
+              "points": [
+                "Tekst ja tulemus on kõrvuti, kumbki sama kõrge päise all, nii et samad read algavad samal kõrgusel; need kerivad koos (ketinupp lülitab selle välja).",
+                "Read, mis muutuksid, on märgitud ja rea muutuv osa tumedamalt; read, mis ainult liiguksid, ja uued read on kumbki oma värviga. Read, mida muudetaks või eemaldataks, on märgitud ka teie tekstis.",
+                "Nimede all: mis juhtuks arvudes — muudetud, liigutatud, uued ja eemaldatud read; ridade ja märkide arv enne ja pärast.",
+                "Tulemuse all: read, mis eemaldataks. Klõpsake ühel, et minna selle juurde tekstis.",
+                "Tulemuse väikesed nupud: kopeeri see, ava see uue tekstina, võrdle seda tekstiga sakis, keri koos, pane tulemus teksti alla kõrvale asemel, peida see. Tekstil on omad: võta tagasi, tee uuesti, kopeeri, kleebi asemele, vali kõik, tühjenda.",
+                "Lohistage nendevahelist riba, et anda ühele rohkem ruumi; topeltklõps muudab need jälle võrdseks."
+              ]
+            },
+            "Pärast rakendamist ütleb paan Tulemus seda (\"Rakendatud. Vasakul olev tekst on nüüd tulemus.\") ning pakub nuppe Võta tagasi ja \"Võrdle algsega\", mis avab sama enne-ja-pärast võrdluse. Tulemust näidatakse uuesti kohe, kui muudate teksti või tööriista valikut.",
+            {
+              "note": "Vaade → \"Tulemus teksti kõrval\" lülitab paani välja ja sisse. Väga pika teksti puhul (üle kahe miljoni märgi) ette midagi ei näidata: rakendage tööriist ja Võta tagasi võtab selle tagasi."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Asenda kõikjal",
+          "body": [
+            "Asendab korraga kõik kohad, kus midagi leitakse. Kui kirjutate, mida otsida, ütleb Scribe, mitmes kohas see leiti, ja märgib need tekstis, nii et näete enne rakendamist, mis muutub.",
+            {
+              "points": [
+                "\"Regulaaravaldis\": otsitav tekst on muster. Väljal \"Asenda tekstiga\" tähistavad $1, $2… seda, mille mustri rühmad leidsid.",
+                "\"Tõstutundlik\": a ja A on erinevad tähed.",
+                "\"Ainult terved sõnad\": \"kass\" ei leita sõna \"kassett\" seest.",
+                "\"Säilita asendatava teksti tähesuurus\": kui asendate \"kass\" sõnaga \"koer\", muutub \"Kass\" sõnaks \"Koer\" ja \"KASS\" sõnaks \"KOER\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Rohkem valikuid\" → \"Täida…\": asemele pandav tekst võib sisaldada lünki, mis täidetakse iga vaste juures. {counter} loeb 1, 2, 3… ({counter:10} algab 10-st, {counter:10:5} suureneb 5 kaupa); {date} ja {time} on teie arvuti kuupäev ja kellaaeg; {uuid} on identifikaator; {random} on 8 juhuslikku tähte ja numbrit ({random:12} 12 jaoks).",
+                "Otsitava all ütleb Scribe ka, mitmel real vasted on ja mitu erinevat teksti need on."
+              ]
+            },
+            "\"Asenda mitu korraga\" teeb paaride loendi ühe sammuna. Kirjutage üks paar rea kohta kujul: mida otsida => millega asendada. Need tehakse esimesest viimaseni, igaüks sellel, mis eelmisest järele jäi; tühi teine pool eemaldab teksti.",
+            {
+              "note": "Muster ei saa programmi hangule ajada: kuluv aeg kasvab koos teksti pikkusega ega kiiremini. Seetõttu pole saadaval mustrid, mis viitavad tagasi juba leitule (\\1)."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Read",
+          "body": [
+            {
+              "points": [
+                "Sorteeri read: tähtede järgi nagu sõnastikus, programmi keeles või teie valitud keeles (rumeenia keeles tuleb ă pärast a; rootsi keel paneb ä pärast z, saksa keel a kõrvale); tähed koos numbritega numbritena (file2 enne file10); rea alguses oleva arvu järgi; pikkuse järgi; sõnade arvu järgi; rea alguses oleva kuupäeva järgi (05.03.2024, 2024-03-05, kellaajaga või ilma); internetiaadresside järgi; versiooninumbrite järgi (1.2.10 pärast 1.2.9); pealkirjade järgi, kus alguses olevat artiklit ei arvestata; teie kirjutatud järjekorras (väike, keskmine, suur); või üldse ilma järjekorrata.",
+                "Read, mille järgi pole midagi sorteerida (pole arvu, pole kuupäeva, väärtust pole teie kirjutatud järjekorras), jäävad lõppu, ükskõik kummas suunas teisi sorteeritakse: väikseim ees või suurim ees.",
+                "Rohkem sorteerimisvalikuid: võrdlemine alates sõnast või märgist või tabeli ühe veeru järgi (koos sellega, mis veerge eraldab); esimese rea jätmine pealkirjana paigale; lõikude sorteerimine ridade asemel; ja eelnev korrastamine — kärpimine, tühjade ridade ja duplikaatide eemaldamine.",
+                "Eemalda korduvad read: korduvatest ridadest jääb alles esimene, viimane või mitte ükski (alles jäävad ainult need, mis esinevad üks kord). Suurtähti, rea ümber olevaid tühikuid, numbreid, kirjavahemärke ning teatud arvu märke rea alguses või lõpus saab igaüht eirata; võrrelda saab ka ainult üht veergu või ainult seda, mida muster leiab. Tühje ridu koheldakse nagu teisi, need jäetakse alles, eemaldatakse või koondatakse.",
+                "Loenda korduvad read: jätab iga rea alles ühe korra ja kirjutab selle ette, mitu korda see esines — enim korduvad eespool, vähim korduvad eespool või esinemise järjekorras.",
+                "Jäta alles või eemalda read: otsib igast reast midagi ja jätab alles ainult read, kus see on, või ainult need, kus seda pole.",
+                "Pööra ridade järjekord ümber; Sega read.",
+                "Nummerda read: esimene number, mis selle järel tuleb, nullid ette, et numbrid joonduksid, tühjad read ilma numbrita.",
+                "Tühjad read: eemalda kõik või jäta mitme asemele üks.",
+                "Ühenda read üheks, valitud eraldajaga nende vahel; Jaga ridadeks iga koma, semikooloni või millegi muu kohalt. Kõikjal, kus asjade vahele tulev tekst kirjutatakse (nummerdamine, ühendamine, jagamine, loendamine), tähistab \\t tabeldusmärki, mida väljale sisestada ei saa."
+              ]
+            },
+            {
+              "note": "Valik, mis on oluline ainult koos teisega, kuvatakse alles siis: veerg näiteks alles siis, kui võrdlete veeru järgi. Harvem vajalikud valikud on jaotises \"Rohkem valikuid\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Suurtähed",
+          "body": [
+            "Muuda tähesuurust: lausealguse suurtäht, iga sõna suurtähega, kõik suurtähtedega, kõik väiketähtedega, pööratud ning nimede kirjutamise viisid koodis: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Suurtähed järgivad iga tähestiku reegleid, mitte ainult inglise keele omi.",
+            "Rühmas Suund pöörab \"Pööra tekst ümber\" iga rea tähed, selle sõnade järjekorra või iga sõna tähed ümber; \"Tagurpidi\" kirjutab teksti nii, et seda saab lugeda laua vastasküljelt, ja \"Peegelpilt\" vahetab ka märgid, millel on vasak ja parem pool. Tähti loetakse nii, nagu lugeja neid loeb: täht koos oma märkidega jääb üheks."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Puhastamine",
+          "body": [
+            {
+              "points": [
+                "Puhasta tühikud: mitu tühikut muutub üheks; ridade otstes olevad tühikud eemaldatakse.",
+                "Kärbi reaotsad: mõlemast otsast, algusest või lõpust.",
+                "Jutumärgid: sirged, inglise, rumeenia, saksa või prantsuse.",
+                "Eemalda diakriitikud: ă muutub a-ks, é muutub e-ks. Ainult ladina ja kreeka tähestikus, kus täht ilma märgita on ikka sama täht.",
+                "Paranda rumeenia tähed: ş ja ţ (sediljiga, mida kirjutavad vanemad klaviatuurid) muutuvad tähtedeks ș ja ț (komaga), millega rumeenia keelt kirjutatakse.",
+                "Tabeldusmärgid tühikuteks ja tühikud tabeldusmärkideks, teie valitud tabeldusmärgi laiusega.",
+                "Eemalda HTML-sildid: teksti kleebitud veebilehe lähtekoodi jaoks. Sildid, skriptid ja stiilid eemaldatakse; alles jääb see, mida lugeja näeks. Lehe toomiseks aadressi järgi kasutage selle all olevat tööriista \"Veebilehe tekst\".",
+                "Veebilehe tekst: sisestage lehe aadress (example.com/page) ja valige \"Too tekst\". See, mida lugeja sellel lehel näeks, kirjutatakse kursori kohale, ilma siltide, skriptide ja stiilideta. See on Scribe'i ainus tööriist, mis läheb võrku, ja ainult siis, kui seda palute: lehe toob selles arvutis olev brauser (Microsoft Edge või Google Chrome), mis töötab ilma aknata ning ilma teie küpsiste ja sisselogimisteta; programm ise ei saada midagi. Leht, mis nõuab sisselogimist, annab ainult selle, mida näeks võõras."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Rumeenia diakriitikute taastamine",
+          "body": [
+            "Ilma tähtedeta ă, â, î, ș, ț trükitud rumeenia tekst kirjutatakse uuesti nendega.",
+            {
+              "steps": [
+                "Avage tööriist rühmas Puhastamine ja valige \"Rakenda tekstile\".",
+                "Sõnad, millel on üks õige vorm, muudetakse kohe: \"stiu\" muutub sõnaks \"știu\", \"informatii\" sõnaks \"informații\".",
+                "Sõnad, mida võib lugeda rohkem kui ühel viisil (fata, fată, fața, față), on loetletud nupu all, igaüks oma kohal tekstis. Klõpsake iga sõna puhul õiget vormi.",
+                "Või märkige enne rakendamist \"Vali kahtlase sõna puhul automaatselt tõenäolisem vorm\": midagi ei küsita ja tulemus tuleb läbi lugeda."
+              ]
+            },
+            "Kui ümbritsevatest sõnadest piisab, otsustab Scribe nende järgi: \"o casa\" muutub \"o casă\", \"casa mea\" jääb samaks, \"pentru ca\" muutub \"pentru că\".",
+            {
+              "note": "See on Scribe'i jaoks koostatud levinud sõnade loendist ja lõppudest, mida rumeenia keeles kirjutatakse alati diakriitikutega. Sõnad, mida see ei tunne (harvad sõnad, nimed), jäävad nii, nagu need on trükitud, ja juba diakriitikutega kirjutatud sõna ei puudutata kunagi. Lugege tulemus enne saatmist läbi."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Teksti kirjutamine: täitetekst ja juhuslik tekst",
+          "body": [
+            "Rühma \"Kirjuta tekst\" tööriistad ei muuda midagi: need kirjutavad. See, mida need annavad, läheb kursori kohale, valiku asemele.",
+            {
+              "points": [
+                "Täitetekst: lõigud, laused, sõnad, loetelud, pealkirjad või lehe osad (pealkiri, lõigud, loetelu). Trükkalite ladina keeles (lorem ipsum), inglise või rumeenia keeles, kontori- või köögisõnadega või teie enda sõnadega. Rohkem valikuid: lühikesed, keskmised või pikad laused; tavatekst, Markdown, HTML või JSON; pealkirjade tase; märkide piirang (tekst lõigatakse tervel sõnal ja lõpeb ikkagi lausena); väljajäetavad sõnad.",
+                "Väljamõeldud andmed: nimed, e-posti aadressid, telefoninumbrid, tänavaaadressid, kuupäevad või arvud, üks rea kohta, Rumeeniast või ingliskeelsetest riikidest. \"Read minu mustri järgi\" kirjutab iga rea nii, nagu ütlete, kus {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} ja {row} tähistavad loodavat — tabel, millel hetkega midagi proovida.",
+                "Juhuslik tekst: paroolid (tähed, numbrid ja märgid, vähemalt üks igast), tähed, numbrid, kuueteistkümnendsüsteem või identifikaatorid (UUID), ühel või mitmel real. Kergesti segiaetavad märgid (0 ja O, 1, l ja I) saab välja jätta.",
+                "Seeme (jaotises \"Rohkem valikuid\") paneb täiteteksti ja väljamõeldud andmed sama arvu korral iga kord ühesugusena tulema; 0 annab iga kord midagi uut."
+              ]
+            },
+            {
+              "note": "Paroolid luuakse selles arvutis operatsioonisüsteemi juhuslikkuse põhjal ja neid ei saadeta kuhugi. Väljamõeldud e-posti aadressid lõpevad domeeniga example.com, kuhu kirjad kellelegi ei jõua; juhuslikult loodud telefoninumber võib kellelegi kuuluda, seega ärge sellele helistage."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Retseptid",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Tehtu säilitamine retseptina",
+          "body": [
+            "Retsept on tööriistade loend koos nende valikutega, mis on säilitatud nime all ja mida saab ühe klõpsuga uuesti käivitada.",
+            {
+              "steps": [
+                "Rakendage tekstile soovitud tööriistad soovitud järjekorras.",
+                "Avage paneeli ülaosas \"Retseptid\": rakendatud tööriistad on seal loetletud.",
+                "Valige \"Säilita retseptina\" ja andke sellele nimi.",
+                "Hiljem avage retsept ja valige \"Käivita tekstil\": kõik selle sammud tehakse ning üks Võta tagasi võtab need kõik tagasi."
+              ]
+            },
+            "Retsepte hoitakse selles arvutis ja need on olemas igas tekstis."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Retsepti muutmine või loomine nullist",
+          "body": [
+            "Avatud retsepti nupp \"Muuda\" näitab selle nime ja samme. Iga sammu saab liigutada üles või alla, eemaldada ja sellele saab anda teisi valikuid; tööriistu lisatakse sammude all olevast loendist. Midagi ei säilitata enne nuppu \"Salvesta\".",
+            "\"Uus retsept\" alustab retsepti ilma sammudeta, et see samamoodi kokku panna, ilma et tööriistu peaks enne tekstile rakendama.",
+            {
+              "note": "Teksti kirjutavad tööriistad (täitetekst, juhuslik tekst) ei ole retsepti sammud: retsept muudab teksti."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Retsepti käivitamine failidele",
+          "body": [
+            {
+              "steps": [
+                "Avage retsept ja lisage jaotises \"Käivita failidel\" failid või kaust (koos selle alamkaustadega).",
+                "Valige, kuhu tulemused lähevad: teise kausta, mis jätab failid muutmata, või failide endi peale.",
+                "Käivitage. Scribe ütleb, mitu faili kirjutati, mitu ei vajanud muutmist ning milliseid ei õnnestunud töödelda ja miks."
+              ]
+            },
+            "Iga fail kirjutatakse samas kodeeringus ja samade reavahetustega, mis tal olid. Teise kausta kirjutamisel säilivad failide kaustad, millest need tulid, ja seal juba olemasolevat faili ei kirjutata kunagi üle.",
+            {
+              "note": "Failide endi ülekirjutamist ei saa Scribe'is tagasi võtta. Kui failid on olulised, hoidke neist koopia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistika, võrdlemine ja kaustad",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistika",
+          "body": [
+            "Paneeli ülaosas olev \"Statistika\" näitab, millest tekst või valik koosneb. Iga osa saab kokku voltida.",
+            {
+              "points": [
+                "Ülaosas: sõnad, märgid koos tühikutega ja ilma, laused, lõigud, read, leheküljed ja suurus baitides.",
+                "Aeg: vaikseks lugemiseks, ettelugemiseks, trükkimiseks ja käsitsi kirjutamiseks.",
+                "Sõnad: mitu on erinevaid (ja milline osa kõigist), tähti sõnas, silbid, pikim ja lühim sõna ning mitu sõna on igast pikkusest.",
+                "Laused: sõnu lauses, mitu on lühikesi, keskmisi ja pikki, mitu on väit-, küsi- ja hüüdlauseid ning pikim ja lühim lause.",
+                "Loetavus: hinne 0-st (väga raske) 100-ni (väga lihtne), teksti keele jaoks loodud valemi järgi. Valemid on olemas inglise, saksa, hispaania, prantsuse, itaalia, hollandi, portugali ja vene keele jaoks; keel, millele valemit pole, hinnet ei saa, sest teise keele jaoks loodud valem oleks eksitav.",
+                "Kõige sagedasemad väljendid: enim kasutatud sõnad koos nende osaga tekstist ning korduvad sõnapaarid ja kolmesõnalised rühmad.",
+                "Ruum tavaliste piiride sees: mitu märki jääb alles või on üle pealkirja, kirjelduse, lühikese postituse ja muu jaoks."
+              ]
+            },
+            "Sõnad ja laused leitakse iga kirjasüsteemi reeglite järgi, nii et loendatakse ka hiina, jaapani ja tai keelt, mis ei pane sõnade vahele tühikuid. Kiirused, millega ajad arvutatakse, ja see, mitu sõna mahub lehele, määratakse Seadetes."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Kahe teksti võrdlemine",
+          "body": [
+            {
+              "points": [
+                "Tööriistad → \"Võrdle teise tekstiga\": redaktoris olev tekst kõrvuti tekstiga, mille kirjutate või kleebite.",
+                "Tööriistad → \"Võrdle failiga\": redaktoris olev tekst praegusel kujul kõrvuti teie valitud failiga.",
+                "Tööriistad → \"Võrdle kahte teksti\": kaks kõrvuti kirjutatud või kleebitud teksti.",
+                "Tööriistad → \"Võrdle kahte faili\"."
+              ]
+            },
+            "Kaks teksti kuvatakse kõrvuti. Ainult esimeses olevad read märgitakse eemaldatuks, ainult teises olevad lisatuks ning muutunud real märgitakse erinevad sõnad. Näidatakse ainult erinevusi koos mõne ümbritseva reaga; nooled viivad ühelt erinevuselt järgmisele.",
+            "Suurtähti, tühikuid, tühje ridu, numbreid ja kirjavahemärke saab igaüht eirata. \"Ühes veerus\" näitab eemaldatut lisatu kohal, kumbki oma märgiga, kõrvuti kuvamise asemel. Arvude kõrval ütleb Scribe, kui sarnased kaks teksti on, samade ridade osakaaluna.",
+            "Tekst kuvatakse kohe, kui see on valitud, enne kui teine on valitud. Lohistage kahe teksti vahelist riba, et anda ühele rohkem ruumi; kui tekste kirjutatakse, saab kastide all olevat riba lohistada üles ja alla, et anda kastidele või võrdlusele rohkem ruumi. Topeltklõps paneb riba tagasi.",
+            "Kui mitu järjestikust rida on muutunud, pannakse iga rida selle rea kõrvale, millega see on kõige sarnasem, et nende vahele lisatud või sealt eemaldatud rida ei paneks kõiki järgnevaid ridu näima järgmiseks muudetuna.",
+            "\"Kirjutage või kleepige tekstid\" kuvab iga veeru kohal kasti; sinna kirjutatut võrreldakse kirjutamise ajal ning kummagi poole jaoks saab ikka faili valida."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Otsimine ja asendamine kaustas",
+          "body": [
+            {
+              "steps": [
+                "Tööriistad → \"Otsi kaustast\" (Ctrl+Shift+F) ja valige kaust. Otsitakse ka selle alamkaustadest.",
+                "Kirjutage, mida otsida, samade valikutega nagu \"Asenda kõikjal\". \"Failitüübid\" piirab otsingu teatud laienditega (txt, md, csv…).",
+                "Iga vaste kuvatakse oma real, fail faili haaval. Klõpsake real, et avada fail selles kohas.",
+                "Asendamiseks: kirjutage uus tekst, eemaldage linnuke failidelt, mida ei soovi muuta, ja valige \"Kirjuta failid\"."
+              ]
+            },
+            "Midagi ei kirjutata enne, kui seda palute, ja ainult märgituks jäetud failidesse. Iga fail kirjutatakse samas kodeeringus ja samade reavahetustega, mis tal olid.",
+            {
+              "note": "Peidetud kaustad ja need, mida programmid täidavad (.git, node_modules), jäetakse vahele, kui te neid ei küsi. Failid, mis pole tekst, jäetakse alati vahele."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Seaded",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Scribe'i seaded",
+          "body": [
+            "Fail → Seaded avab programmi Seaded Scribe'i jaotise juures.",
+            {
+              "points": [
+                "Redaktor: püsilaiusega font või programmi oma, selle suurus, ridade murdmine, reanumbrid ja see, kas tööriista tulemust näidatakse enne rakendamist.",
+                "Uus tekst: millised on selle reavahetused ja kas selle fail algab baidijärjestuse märgiga.",
+                "Statistika: vaikse lugemise, ettelugemise, trükkimise ja käsitsi kirjutamise kiirused ning mitu sõna mahub lehele.",
+                "Scribe'i käskude klahvid."
+              ]
+            },
+            "Igal seadel on nupp, mis taastab selle nii, nagu see programmiga kaasa tuleb."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Scribe'i kohta",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Scribe'i kohta",
+          "body": [
+            "Scribe on Syntelab Creative'i tekstirakendus: redaktor, mille tööriistad on teksti kõrval. See näitab, mida tööriist teeks, enne kui see seda teeb, puhastab ja järjestab loendeid ümber, otsib ja asendab tekstis või tervest kaustast, võrdleb kaht teksti, ütleb, millest tekst koosneb, kirjutab täiteteksti ja väljamõeldud andmeid ning säilitab sageli tehtava retseptidena, mida uuesti käivitada.",
+            "Kõik tehakse selles arvutis. Tekstide suurusele ega arvule pole seatud piiranguid: piirid on arvuti mälu ja see, mida tänapäeva tehnoloogia suudab.",
+            "See on uus. Kui sellest teie tekstide jaoks ei piisa, andke meile teada menüüst Abi → Tagasiside: nii teame, mille kallal töötada."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Millega Scribe on tehtud",
+          "body": [
+            {
+              "points": [
+                "Redaktor: CodeMirror.",
+                "Kodeeringute lugemine ja kirjutamine: encoding_rs, koos chardetng-iga, et oletada selle faili kodeeringut, mis seda ei ütle.",
+                "Otsimine ja asendamine: Rusti teek regex, mille mustrid ei saa programmi hangule ajada.",
+                "Sorteerimine iga keele moodi ning sõnade ja lausete leidmine igas kirjasüsteemis: ICU4X, Unicode'i teek.",
+                "Tekstide võrdlemine: teek similar.",
+                "Rumeenia diakriitikud: Scribe'i jaoks kirjutatud sõnaloend ja reeglid."
+              ]
+            },
+            "See, mida Scribe jagab ülejäänud programmiga, on kirjas jaotises \"Syntelab Creative'i kohta\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Mida Scribe veel ei oska",
+          "body": [
+            {
+              "points": [
+                "Väga suurt faili loetakse lehekülgede kaupa ja muudetakse ainult retseptidega; käsitsi muutmine tähendab selle tervikuna avamist, mis võtab mälu.",
+                "Rumeenia diakriitikute taastamine tunneb levinud sõnu; harvad sõnad ja nimed jäävad nii, nagu need on trükitud.",
+                "Õigekirjakontrolli ei ole.",
+                "PDF-idest ega kontoridokumentidest siin teksti välja ei võeta; neid avab PDF Organizer.",
+                "Redaktor ei värvi koodi ega Markdowni.",
+                "Aknale lohistatud fail avaneb uue tekstina: programmile ei öelda, kus fail asub, seega küsitakse salvestamisel asukohta."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

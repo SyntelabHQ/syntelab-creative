@@ -1,0 +1,436 @@
+/* The units of the converter, beside its table. In the letters of the program. */
+.panel {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 200px;
+  min-height: 0;
+  padding: 10px 10px 12px;
+  border-inline-start: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  font-family: var(--sc-font, system-ui);
+  font-size: 14px;
+  text-align: start;
+  position: relative;
+}
+
+/*
+ * The edge beside the table: dragged to make the panel wider or narrower. Drawn as the line between the panes of Dev:
+ * thin to the eye (the border of the panel), wide enough to take hold of, and in the colour of the program while it
+ * is pointed at, has the keys or is held.
+ */
+.edge {
+  position: absolute;
+  inset-block: 0;
+  /* Inside the panel, clear of the bar the table is scrolled with. */
+  inset-inline-start: 0;
+  z-index: 7;
+  width: 7px;
+  cursor: col-resize;
+  touch-action: none;
+}
+
+.edge::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: -1px;
+  width: 1px;
+  background: transparent;
+  content: '';
+}
+
+.edge:hover::after,
+.edge:focus-visible::after,
+.edge[data-dragging='true']::after {
+  width: 3px;
+  background: var(--sc-accent);
+}
+
+.edge:focus-visible {
+  outline: none;
+}
+
+.top {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+}
+
+/* The name of a part of the panel: folds it away and brings it back. */
+.part {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 24px;
+  padding: 0 4px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: start;
+  cursor: pointer;
+}
+
+.part:hover {
+  background: var(--sc-surface-2);
+}
+
+.part > svg {
+  flex: none;
+  color: var(--sc-muted);
+}
+
+:global([dir='rtl']) .part[aria-expanded='false'] > svg {
+  scale: -1 1;
+}
+
+/* Folds the panel, or brings it back: small, so its shade never reaches the line beside it. */
+.fold {
+  flex: none;
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+  transition:
+    background 0.12s ease,
+    color 0.12s ease;
+}
+
+.fold:hover {
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+}
+
+.fold:focus-visible {
+  outline: 2px solid var(--sc-accent);
+  outline-offset: 1px;
+}
+
+/* The units in use: a chip for each column of the table; a click takes its column out. */
+.active {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-height: 124px;
+  padding-block-end: 8px;
+  border-block-end: 1px solid var(--sc-border);
+  overflow-y: auto;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  min-height: 24px;
+  padding: 1px 7px;
+  border: 1px solid var(--sc-accent);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-accent-soft);
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: var(--sc-danger);
+  background: color-mix(in srgb, var(--sc-danger) 10%, var(--sc-surface));
+  color: var(--sc-danger);
+}
+
+.chip > svg {
+  flex: none;
+  opacity: 0.7;
+}
+
+.chipSymbol {
+  flex: none;
+  font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+  font-weight: 700;
+}
+
+.chipName {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.finder {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-muted);
+}
+
+.finder:focus-within {
+  border-color: var(--sc-accent);
+}
+
+.finder input {
+  flex: 1;
+  min-width: 0;
+  min-height: 30px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  outline: none;
+}
+
+.groups {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.group {
+  min-height: 26px;
+  padding: 2px 9px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.group:hover {
+  border-color: var(--sc-accent);
+}
+
+.group[aria-pressed='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+  font-weight: 600;
+}
+
+.list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 3px;
+  min-height: 0;
+  overflow-y: auto;
+  padding-inline-end: 2px;
+}
+
+
+.said {
+  margin: 4px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+/* One unit: a click adds it as a column or takes it out; the bookmark makes it a favourite. */
+.unit {
+  display: flex;
+  flex: none;
+  align-items: stretch;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.unit[data-shown='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.toggle {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  min-height: 32px;
+  padding: 3px 8px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.toggle > svg {
+  flex: none;
+  color: var(--sc-accent);
+}
+
+.symbol {
+  flex: none;
+  min-width: 38px;
+  font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pin {
+  flex: none;
+  display: grid;
+  width: 30px;
+  place-items: center;
+  border: 0;
+  border-inline-start: 1px solid var(--sc-border);
+  background: none;
+  color: var(--sc-border);
+  cursor: pointer;
+}
+
+.pin:hover {
+  color: var(--sc-muted);
+}
+
+.pin[aria-pressed='true'] {
+  color: var(--sc-accent);
+}
+
+/* Changing a unit of the user's own, and taking it out. */
+.own {
+  flex: none;
+  display: grid;
+  width: 26px;
+  place-items: center;
+  border: 0;
+  border-inline-start: 1px solid var(--sc-border);
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.own:hover {
+  color: var(--sc-text);
+}
+
+.own[data-danger='true']:hover {
+  color: var(--sc-danger);
+}
+
+/* Makes a unit of the user's own: among the filters, drawn apart from them. */
+.newUnit {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 26px;
+  padding: 2px 9px;
+  border: 1px dashed var(--sc-accent);
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-accent);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.newUnit:hover {
+  background: var(--sc-accent-soft);
+}
+
+/* The panel folded away: a narrow strip with the way to bring it back. */
+.rail {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+  padding-block: 10px;
+  border-inline-start: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+}
+
+:global([dir='rtl']) .fold > svg {
+  scale: -1 1;
+}
+
+/* A light bar to scroll with: slim, no arrows, and only as dark as it needs to be seen. */
+.list::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.list::-webkit-scrollbar-track,
+.list::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.list::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: var(--sc-radius-pill);
+  background: color-mix(in srgb, var(--sc-muted) 40%, transparent);
+  background-clip: content-box;
+}
+
+.list:hover::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--sc-muted) 70%, transparent);
+  background-clip: content-box;
+}
+
+.list::-webkit-scrollbar-thumb:hover,
+.list::-webkit-scrollbar-thumb:active {
+  border-width: 1px;
+  background: var(--sc-muted);
+  background-clip: content-box;
+}
+
+/* A light bar to scroll with: slim, no arrows, and only as dark as it needs to be seen. */
+.active::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.active::-webkit-scrollbar-track,
+.active::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.active::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: var(--sc-radius-pill);
+  background: color-mix(in srgb, var(--sc-muted) 40%, transparent);
+  background-clip: content-box;
+}
+
+.active:hover::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--sc-muted) 70%, transparent);
+  background-clip: content-box;
+}
+
+.active::-webkit-scrollbar-thumb:hover,
+.active::-webkit-scrollbar-thumb:active {
+  border-width: 1px;
+  background: var(--sc-muted);
+  background-clip: content-box;
+}

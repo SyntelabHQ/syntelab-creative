@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Avaaminen ja lukeminen",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Asiakirjan avaaminen",
+          "body": [
+            "Tiedosto → Avaa (Ctrl+O) avaa PDF-tiedoston omaan välilehteen. \"Avaa useita tiedostoja kerralla\" avaa jokaisen valitun tiedoston omaan välilehteensä.",
+            "Myös muut kuin PDF-tiedostot avautuvat sivuina: kuvat (PNG, JPEG, TIFF, WebP ja monet muut), teksti- ja verkkotiedostot, e-kirjat, XPS ja toimistodokumentit. Tällaisia asiakirjoja ei vielä tallenneta mihinkään: \"Tallenna\" kysyy tallennuspaikan.",
+            {
+              "note": "Toimistodokumentit (Word, Excel, PowerPoint, OpenDocument) muunnetaan Wordilla, Excelillä tai PowerPointilla tai LibreOfficella, riippuen siitä, mikä tietokoneella on asennettuna. Ilman näitä tiedostoja ei voida avata."
+            },
+            "Tyhjälle välilehdelle raahatut tiedostot kootaan kansioksi; asiakirjan päälle rahatut tiedostot lisätään sen sivuiksi.",
+            "Windowsissa PDF Organizer voi olla sovellus, joka avaa PDF-tiedostot, kun kaksoisnapsautat niitä: sen aloitussivulla \"Aseta oletukseksi\" avaa Windowsin asetukset, joissa valitset PDF-tiedostoille Syntelab Creativen."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Sivujen tarkastelu",
+          "body": [
+            "Näkymä-valikosta määritetään, miten asiakirja näytetään; mikään sen asetuksista ei muuta itse tiedostoa.",
+            {
+              "points": [
+                "Zoomaus: lähennys, loitonnus, alkuperäinen koko, sovita sivu, sovita leveys, sovita korkeus. Ctrl ja hiiren rulla zoomaavat myös.",
+                "Sivunäyttö: yksi sivu tai kaksi rinnakkain, kansisivulla tai ilman, sekä kaikkien sivujen selaaminen yhtenä pitkänä nauhana.",
+                "Ohjaimet: viivaimet ja ruudukko, Asetuksissa valitulla yksiköllä.",
+                "\"Näytä pikkukuvat\": pienet sivut sivupalkissa. Klikkaa sivua siirtyäksesi siihen; asiakirjan kirjanmerkit ovat samassa paneelissa.",
+                "\"Lukutila\" piilottaa työkalut; \"Koko näytön tila\" piilottaa kaiken paitsi sivun. Escape poistuu molemmista."
+              ]
+            },
+            "Sivujen yläpuolella olevassa nauhassa (pikatyökalupalkki) on sivunumero, zoomaus ja Asetuksissa valitsemasi painikkeet."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Tekstin etsiminen",
+          "body": [
+            "Muokkaa → Etsi asiakirjasta (Ctrl+F): kirjoita sana tai fraasi; kohdat, joista se löytyy, merkitään sivuille, ja nuolilla voi siirtyä kohdasta toiseen.",
+            {
+              "note": "Skannattu asiakirja koostuu sivujen kuvista, eikä siinä ole etsittävää tekstiä ennen kuin teksti on tunnistettu: katso \"Tekstin tunnistus (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Asiakirjan ominaisuudet",
+          "body": [
+            "Tiedosto → Asiakirjan ominaisuudet näyttää, mitä asiakirja kertoo itsestään: otsikon, tekijän, luonti- ja muokkauspäivämäärät, sivumäärän ja tiedoston koon."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tallentaminen, tulostaminen ja lähettäminen",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Tallenna ja Tallenna nimellä",
+          "body": [
+            "Mikään tekemäsi muutos ei vaikuta levyllä olevaan tiedostoon ennen kuin tallennat sen. Siihen asti jokaisen vaiheen voi kumota (Ctrl+Z) ja palauttaa (Ctrl+Y).",
+            {
+              "points": [
+                "Tallenna (Ctrl+S) kirjoittaa asiakirjan päälle sen tiedostoon.",
+                "Tallenna nimellä (Ctrl+Shift+S) kirjoittaa sen uuteen tiedostoon, joka korvaa välilehden; vanha tiedosto säilyy ennallaan."
+              ]
+            },
+            "Jos toinen ohjelma on avannut tiedoston, sitä ei voida korvata: ohjelma ilmoittaa tästä ja säilyttää muutoksesi, jotta ne voidaan tallentaa toisella nimellä.",
+            {
+              "note": "Muutetun asiakirjan tallentaminen sertifikaatilla allekirjoitetun tiedoston päälle poistaa sen allekirjoitukset. Ohjelma kysyy ensin ja tarjoaa vaihtoehtoa \"Tallenna uutena tiedostona\"; tämän kysymyksen voi poistaa käytöstä kohdasta Asetukset → Allekirjoitukset."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "PDF-tiedoston luominen",
+          "body": [
+            "Tiedosto → Luo PDF luo uuden asiakirjan:",
+            {
+              "points": [
+                "yhdestä tiedostosta tai useammasta: yhdistettynä yhdeksi PDF-tiedostoksi tai jokaisesta omaksi PDF-tiedostoksi;",
+                "verkkosivulta kirjoittamassasi osoitteessa (sivu tallennetaan tietokoneeseen asennetulla selaimella);",
+                "leikepöydän sisällöstä;",
+                "valitsemasi kokoisista tyhjistä sivuista."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Vienti muuhun muotoon",
+          "body": [
+            "Tiedosto → Vie kirjoittaa asiakirjan muuhun muotoon: Word- tai OpenDocument-tekstiksi, tavalliseksi tekstiksi, verkkosivuksi, XML-muotoon, sivujen kuviksi (PNG, JPEG, TIFF, SVG) tai PostScriptiksi. Kuvien kohdalla voit valita resoluution.",
+            "Itse asiakirja pysyy PDF-tiedostona; vienti luo uuden tiedoston.",
+            {
+              "note": "Tekstiä voidaan viedä vain sieltä, missä asiakirjassa on tekstiä. Tunnista ensin skannauksen teksti."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Tulostaminen",
+          "body": [
+            "Tiedosto → Tulosta (Ctrl+P) tulostaa asiakirjan nykyisessä muodossaan piirroksineen. Valitse sivut, paperi, sivujen suunta (pysty tai vaaka) sekä se, sovitetaanko sivut arkille vai tulostetaanko ne alkuperäisessä koossa; tämän jälkeen järjestelmän tulostusikkuna pyytää tulostimen valitsemista.",
+            "Tulostusikkunan oletusarvot paperille, suunnalle ja skaalaukselle on määritetty kohdassa Asetukset → Tulostus."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Jakaminen",
+          "body": [
+            "Tiedosto → Jaa avaa järjestelmän \"Jaa\"-ikkuna: sähköposti, lähellä oleva laite ja muut sovellukset. Asiakirja jaetaan nykyisessä tilassaan tallentamattomine muutoksineen."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sivujen järjestely",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Järjestely-näkymä",
+          "body": [
+            "Järjestä → Järjestä sivut näyttää kaikki sivut ruudukossa. Levylle ei tallenneta muutoksia ennen kuin tallennat tiedoston.",
+            {
+              "points": [
+                "Valinta: napsauta sivua; Ctrl+napsautus lisää sivun valintaan, Shift+napsautus valitsee alueen. Valikosta löytyvät komennot \"Valitse kaikki sivut\", \"Poista valinnat\", \"Valitse parittomat sivut\" ja \"Valitse parilliset sivut\".",
+                "Siirto: raahaa valitut sivut uuteen paikkaan tai käytä komentoja \"Siirrä vasemmalle\" ja \"Siirrä oikealle\".",
+                "Kääntö: \"Valitut: käännä vasemmalle\" ja \"Valitut: käännä oikealle\" kääntävät valitut sivut; \"Kaikki sivut: käännä vasemmalle\" ja \"Kaikki sivut: käännä oikealle\" kääntävät kaikki sivut.",
+                "Poisto: Delete-näppäin tai \"Poista sivut\". Asiakirjassa on oltava vähintään yksi sivu.",
+                "Kopioi, leikkaa ja liitä (Ctrl+C, Ctrl+X, Ctrl+V): sivut voidaan liittää samaan asiakirjaan tai toiseen ohjelmassa avattuun asiakirjaan.",
+                "Koko: yläreunan liukusäädin suurentaa tai pienentää sivuja; samoin toimivat Ctrl + hiiren rulla sivujen päällä sekä Zoomaa sisään ja Zoomaa ulos (Ctrl+= ja Ctrl+-). Koko muistetaan."
+              ]
+            },
+            "Samat komennot toimivat myös ilman ruudukkoa, suoraan näkymässä olevalla sivulla."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Sivujen poimiminen ja asiakirjan jakaminen",
+          "body": [
+            "Järjestä → Poimi sivut ottaa valitut sivut uudeksi, vielä tallentamattomaksi asiakirjaksi omaan välilehteensä. Voit myös tallentaa jokaisen sivun omaksi tiedostoksi ja valita, poistetaanko sivut alkuperäisestä asiakirjasta.",
+            "Järjestä → Jaa asiakirja tallentaa asiakirjan useampaan pienempään tiedostoon; alkuperäinen asiakirja säilyy ennallaan.",
+            "Uusien asiakirjojen nimet noudattavat Asetukset → Uusien asiakirjojen nimet -kohdan malleja.",
+            {
+              "note": "Sertifikaatilla tehdyt allekirjoitukset eivät siirry uutettuihin tai jaettuihin asiakirjoihin: allekirjoitus on voimassa vain tiedostossa, jossa se on tehty."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Sivujen lisääminen ja korvaaminen",
+          "body": [
+            {
+              "points": [
+                "Järjestä → Lisää sivut lisää toisen tiedoston (PDF, kuva, teksti, toimistoasiakirja) sivut valitun sivun jälkeen tai loppuun.",
+                "Järjestä → Korvaa sivut asettaa toisen tiedoston sivut valittujen sivujen tilalle.",
+                "Lisää → Tyhjä sivu lisää tyhjän sivun, jonka koko on sama kuin viereisellä sivulla."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Sivujen rajaaminen ja koon muuttaminen",
+          "body": [
+            "Muokkaa → Rajaa sivut leikkaa sivujen reunat pois kirjoittamiesi tai vetämiesi marginaalien mukaan. Tiedostosta ei poisteta mitään: sivut vain näyttävät pienemmiltä.",
+            "Muokkaa → Muuta sivujen kokoa asettaa sivut toiselle arkikoolle (A4, Letter ja muut). Sisältö voidaan skaalata sopivaksi tai pitää alkuperäisessä koossa ja sijoittaa johonkin yhdeksästä kohdasta uudella arkilla.",
+            "Molemmat kysyvät, mitkä sivut: kaikki, valitut, väli, parittomat tai parilliset."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tiedostojen yhdistäminen",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Kansio",
+          "body": [
+            "Yhdistä → Uusi kansio avaa paikan tiedostojen kokoamiseksi ja niiden kirjoittamiseksi yhdeksi PDF-tiedostoksi.",
+            {
+              "steps": [
+                "Lisää tiedostoja \"Lisää tiedostot\" -painikkeella tai raahaamalla ne kansioon. PDF-tiedostot, kuvat, tekstit ja toimistoasiakirjat voidaan sekoittaa.",
+                "Raahaa kortit haluamaasi järjestykseen tai käytä kunkin kortin nuolia.",
+                "Avaa kortti valitaksesi, mitkä sen sivut otetaan mukaan.",
+                "\"Yhdistä tiedostot\" kirjoittaa ne järjestyksessä yhdeksi uudeksi asiakirjaksi omaan välilehteensä."
+              ]
+            },
+            "Itse tiedostot eivät muutu.",
+            "Yläreunan liukusäädin suurentaa tai pienentää korttien sivuja; samoin toimivat Ctrl + hiiren rulla sekä Zoomaa sisään ja Zoomaa ulos (Ctrl+= ja Ctrl+-). Koko muistetaan."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kirjoittaminen ja piirtäminen sivuille",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Työkalut",
+          "body": [
+            "Piirtotyökalut avautuvat paneelina sivun viereen joko painikkeiden ruudukkona tai nimilistana (Asetukset määrää). Kun työkalu on valittuna, raahaa tai klikkaa sivua; Escape-näppäin poistaa työkalun käytöstä.",
+            {
+              "points": [
+                "Teksti: klikkaa ja kirjoita. Fontti, koko, väri, lihavointi, kursivointi ja tasaus löytyvät paneelista.",
+                "Kuva: valitse kuva, raahaa se haluamaasi kohtaan ja määritä koko.",
+                "Muodot: suorakulmio, ellipsi, viiva, nuoli, valintamerkki, rasti, piste.",
+                "Korostus: vedä korostettavan kohdan yli; sen alla oleva teksti pysyy luettavana."
+              ]
+            },
+            "Työkalulla \"Valitse, siirrä ja muuta kokoa\" merkintä voidaan valita uudelleen: vedä sitä, muuta kokoa kulmista, kierrä kahvasta, vaihda värejä paneelista tai poista se Delete-näppäimellä. Merkintöjä voidaan kopioida ja liittää myös muille sivuille.",
+            "Kaikki piirretyt asiat tallennetaan tiedostoon tallennuksen yhteydessä."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Asiakirjan oman tekstin ja kuvien muuttaminen",
+          "body": [
+            "Työkalu \"Muokkaa asiakirjan tekstiä ja kuvia\" rajaa sen, mitä sivulla on. Klikkaa tekstiriviä kirjoittaaksesi sen uudelleen tai kuvaa siirtääksesi, muuttaaksesi sen kokoa, kiertääksesi tai poistaaksesi sen.",
+            {
+              "note": "Tämä muuttaa kerrallaan yhden rivin tai yhden kuvan. Kappaleet eivät rivity uudelleen, jos rivi pitenee, ja toisen päällä oleva kuva valitaan yhdessä sen kanssa. Tee suuret muutokset sillä ohjelmalla, jolla asiakirja on kirjoitettu."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Sensurointi",
+          "body": [
+            "Lisää työkaluja → Peitä tiedot poistaa pysyvästi sen, mitä ei saa lukea: vedä musta laatikko sen päälle millä tahansa sivulla. Kun tallennat, laatikon alla olevat tekstit ja kuvat poistetaan tiedostosta, eivätkä ne jää vain peittoon.",
+            {
+              "note": "Tallenna sensuroitu asiakirja uudella nimellä ja säilytä alkuperäinen tiedosto turvallisesti: sensuroitua sisältöä ei voi palauttaa."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Vesileima",
+          "body": [
+            "Muokkaa → Vesileima kirjoittaa sanoja tai asettaa kuvan valitsemillesi sivuille: suorana tai vinona, johon tahansa yhdeksästä paikasta, haluamassasi koossa ja läpinäkyvyydellä. Jokaisella sivulla se on tällöin merkintä kuten mikä tahansa muu, ja sen voi edelleen siirtää tai poistaa."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Sivunumerot, ylä- ja alatunniste, Bates-numerointi",
+          "body": [
+            {
+              "points": [
+                "Muokkaa → Sivunumerot: muoto (1, 1 / 12, Sivu 1 ja muut), sijainti sekä se, mille sivuille numeroitetaan.",
+                "Lisää → Ylä- ja alatunniste: teksti johon tahansa kuudesta paikasta. Tässä {page} tarkoittaa sivun numeroa, {pages} sivujen kokonaismäärää, {date} tämän päivän päivämäärää ja {file} asiakirjan nimeä.",
+                "Lisää → Bates-numerointi: peräkkäiset numerot, joiden edessä tai jälkeen on sana (ABC000123), kuten asianajamisessa käytetään."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Linkit, kirjanmerkit ja liitetiedostot",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Linkit",
+          "body": [
+            "Lisää → Linkki: vedä hiirellä kohdan yli, jota klikataan, ja määritä kohde: verkko-osoite tai tämän asiakirjan sivu.",
+            "Asiakirjan linkit toimivat lukutilassa: linkin klikkaaminen vie kyseiselle sivulle; verkko- tai sähköpostiosoite avataan selaimessa tai sähköpostiohjelmassa."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Kirjanmerkit",
+          "body": [
+            "Lisää → Uusi kirjanmerkki: klikkaa kohtaa, johon linkin tulee johtaa, ja anna sille nimi. Lisää → Kirjanmerkit avaa luettelon, jossa kirjanmerkkejä voi nimetä uudelleen tai poistaa. Muutokset tallennetaan tiedostoon."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Liitetiedostot",
+          "body": [
+            "Lisää → Liitä tiedosto: valitse tiedosto ja klikkaa kohtaa, johon paperiliitin sijoitetaan. Voit antaa tiedostolle nimen ja tekijän, vaihtaa liittimen värin sekä muuttaa sen kokoa ja asentoa. Tiedosto tallennetaan PDF-tiedoston sisään.",
+            "Lisää → Liitetiedostot näyttää asiakirjaan liitetyt tiedostot; jokaisen tiedoston voi tallentaa levylle tai poistaa. Paperiliittimen klikkaaminen avaa saman luettelon."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lomakkeet",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Lomakkeen täyttäminen",
+          "body": [
+            "Lisää → Täytä lomake näyttää asiakirjan kentät: kirjoita tekstikenttiin, merkitse valintaruudut tai valitse luetteloista. Vastaukset tallennetaan tiedostoon tallennuksen yhteydessä."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Lomakkeen luominen",
+          "body": [
+            "Lisää-valikosta voit lisätä mihin tahansa asiakirjaan kenttiä: tekstikentän, valintaruudun, valintapainikkeet (joista voi valita yhden), alasvetovalikon sekä tyhjän allekirjoituskentän.",
+            "Vedä hiirellä sivulle kohtaan, johon kenttä sijoitetaan. Kuten muita merkintöjä, myös kenttää voi siirtää ja koon muuttaa tallennushetkeen asti; tämän jälkeen se on osa lomaketta."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allekirjoittaminen",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Käsin piirretyn allekirjoituksen lisääminen",
+          "body": [
+            "Allekirjoita → Lisää allekirjoitus sijoittaa allekirjoituksen kuvan sivulle: voit piirtää sen valitsemallasi kynällä, kirjoittaa sen fontilla tai tuoda sen kuvatiedostosta (käytä vaihtoehtoa \"Säilytä vain kynänvedot\" allekirjoitetun paperin valokuvalle). Allekirjoituksen alle voidaan lisätä päivämäärä.",
+            "Raahaa sivulle kohtaan, johon se tulee. Käyttämäsi allekirjoitukset tallennetaan tälle tietokoneelle myöhempää käyttöä varten.",
+            {
+              "note": "Tämä on kuva: se ei todista varmasti, kuka sen on asettanut. Allekirjoitus, joka todistaa allekirjoittajan ja sen, ettei asiakirjaan ole tehty muutoksia, luodaan sertifikaatilla."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Allekirjoittaminen sertifikaatilla",
+          "body": [
+            "Allekirjoita → Allekirjoita sertifikaatilla luo digitaalinen allekirjoitus: se kertoo, kuka on allekirjoittanut ja sinetöi asiakirjan, jolloin kaikki myöhemmät muutokset tulevat näkyviin.",
+            {
+              "steps": [
+                "Raahaa sivulle alue, jossa allekirjoitus näkyy (ikkuna ilmoittaa tästä ensin; sen voi kytkeä pois päältä). Jos haluat allekirjoittaa ilman merkintää sivuilla, valitse sen sijaan \"Allekirjoita näyttämättä sitä sivulla\".",
+                "Valitse sertifikaatti: jokin tietokoneen sertifikaateista (kortti tai token näkyy listalla, kun se on lukijassa) tai .pfx / .p12 -tiedosto ja sen salasana. \"Jatka\".",
+                "Valitse allekirjoituksen ulkoasu. Kohdassa \"Syy ja paikka\" voit kirjoittaa, miksi ja missä allekirjoitat: nämä tiedot tulevat allekirjoitukseen ja sivulle, jos ulkoasu näyttää ne. Valitse \"Lukitse asiakirja allekirjoituksen jälkeen\", jos kukaan ei saa allekirjoittaa tai muuttaa sitä jälkeesi. Jätä \"Lisää luotettava aika (aikaleima)\" valituksi, jotta aikaleimapalvelu vahvistaa, milloin allekirjoitit.",
+                "\"Allekirjoita\" ja valitse sitten tallennuspaikka allekirjoitetulle tiedostolle. Token pyytää PIN-koodia tässä vaiheessa."
+              ]
+            },
+            "Allekirjoitettu tiedosto avautuu alkuperäisen asiakirjan tilalle. Ohjelma ei koskaan tallenna salasanoja tai PIN-koodeja.",
+            {
+              "note": "Kvalifioitu allekirjoitus on tällä tavalla luotu allekirjoitus, jossa on käytetty kortilla tai tokenilla olevaa kvalifioitua sertifikaattia. Allekirjoitus tehdään tietokoneellasi; verkkoa käytetään vain aikaleimaan ja sertifikaattisi tarkistukseen, ja niihin lähetetään tiivisteet ja sertifikaatin sarjanumero, ei koskaan asiakirjaa."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Allekirjoituksen ulkoasut",
+          "body": [
+            "Ulkoasu määrittää, miltä sertifikaattiallekirjoitus näyttää sivulla. Tallenna useita omilla nimilläsi: yksi yrityksen puolesta allekirjoittamiseen ja yksi omaan nimeesi.",
+            {
+              "points": [
+                "Kuva: ei kuvaa, tiedostosta (leima, skannattu allekirjoitus) tai tässä piirretty.",
+                "Näytettävä teksti: nimi, päivämäärä, syy, paikka, kukin joko etiketin kanssa tai ilman.",
+                "Omat rivit nimen alle, kuten titteli ja yritys.",
+                "\"Vakioteksti\" on aina mukana: kuka allekirjoitti ja milloin."
+              ]
+            },
+            "Allekirjoitusikkunassa: \"Uusi…\", \"Muokkaa…\", \"Poista\". Viimeksi käytetty vaihtoehto tarjotaan ensimmäisenä. Asetukset tallennetaan tälle tietokoneelle."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Useat allekirjoitukset ja lukitus",
+          "body": [
+            "Asiakirjan voi allekirjoittaa useampi henkilö peräkkäin. Avaa allekirjoitettu tiedosto ja allekirjoita se muuttamatta mitään: allekirjoituksesi lisätään tiedoston loppuun ja aiemmat allekirjoitukset pysyvät voimassa.",
+            "\"Lukitse asiakirja allekirjoituksen jälkeen\" (pois päältä, ellei sitä valita) sulkee asiakirjan: kukaan ei voi allekirjoittaa sitä jälkesi eikä mitään voida enää muuttaa. Tätä ei voi peruuttaa.",
+            {
+              "note": "Jos muutat allekirjoitettua asiakirjaa ennen sen uudelleen allekirjoittamista, se on kirjoitettava uudelleen ja aiemmat allekirjoitukset poistuvat. Allekirjoitusikkuna varoittaa tästä: säilyttääksesi ne, avaa tiedosto uudelleen ja allekirjoita se muuttamatta mitään."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Aikaleimat",
+          "body": [
+            "Aikaleima on aikaleimapalvelun allekirjoitettu vahvistus siitä, milloin jokin oli olemassa. Muuten allekirjoituksen aika tulee allekirjoittajan tietokoneen kellosta, jonka kuka tahansa voi asettaa; aikaleima todistaa hetken ja pitää allekirjoituksen todennettavana myös sertifikaatin vanhennuttua (PAdES B-T).",
+            {
+              "points": [
+                "Allekirjoitukset saavat aikaleiman, kun \"Lisää luotettava aika (aikaleima)\" on valittuna allekirjoitusikkunassa. Kohdassa Asetukset → Allekirjoitukset määritetään, onko se valittuna oletuksena, sekä tässä että eräajossa.",
+                "Allekirjoita → Lisää aikaleima antaa koko asiakirjalle oman aikaleiman ilman sertifikaattia: se todistaa, että asiakirja oli olemassa täsmälleen tällaisena sillä hetkellä. Asiakirja tallennetaan uutena tiedostona; tiedoston allekirjoitukset pysyvät voimassa."
+              ]
+            },
+            "Palveluna on DigiCertin palvelu (http://timestamp.digicert.com), joka on maksuton ja johon Adobe Reader ja Windows luottavat; toisen voi asettaa kohdassa Asetukset → Allekirjoitukset. Palvelu saa vain tiivisteen (SHA-256), ei koskaan asiakirjaa, ja internetyhteys tarvitaan. Kun allekirjoitus saa aikaleiman, myös sertifikaattisi myöntäjältä kysytään, onko sertifikaatti yhä voimassa, ja vastaus tallennetaan allekirjoitukseen (pitkäaikainen validointi): Adobe Reader voi silloin näyttää allekirjoituksen kelvollisena nyt ja sertifikaatin vanhennuttuakin.",
+            {
+              "note": "Jos aikaleimapalveluun ei saada yhteyttä, mitään ei allekirjoiteta eikä tallenneta: yritä uudelleen tai poista aikaleiman valinta allekirjoittaaksesi ilman sitä."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Allekirjoitusten tarkistaminen",
+          "body": [
+            "Allekirjoita → Varmista allekirjoitukset listaa tiedoston kaikki sertifikaattiallekirjoitukset: kuka allekirjoitti, kuka sertifikaatin myönsi, milloin, syy ja paikka sekä",
+            {
+              "points": [
+                "onko asiakirja pysynyt muuttumattomana kyseisen allekirjoituksen jälkeen (myöhemmin lisätty allekirjoitus ei lasketa muutokseksi);",
+                "lukitseeko allekirjoitus asiakirjan;",
+                "luottaako tämä tietokone sertifikaatin takana olevaan viranomaiseen ja onko sertifikaatti tänään voimassa;",
+                "aikaleiman vahvistama aika ja vahvistanut palvelu, jos allekirjoituksessa on aikaleima. Myös koko asiakirjan aikaleima näytetään omine tarkistuksineen."
+              ]
+            },
+            "Tarkistus tehdään tiedostolle sellaisena kuin se on viimeksi tallennettu, ja se suoritetaan tällä tietokoneella ilman verkkoyhteyttä. Sivulla olevan allekirjoituksen napsauttaminen avaa tämän luettelon kyseisen allekirjoituksen kohdalta. Kunkin allekirjoituksen alla ”Näytä sertifikaatti” avaa sertifikaatin Windows-ikkunan (sen ketjun ja kaikki tiedot; sieltä ”Asenna varmenne” saa tämän tietokoneen luottamaan tuntemaasi sertifikaattiin), ja ”Tarkista” kysyy verkossa sertifikaatin myöntäjältä, vain kun painat sitä, onko sertifikaatti peruutettu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lisätyökalut",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Tekstin tunnistus (OCR)",
+          "body": [
+            "Lisää työkaluja → Tunnista teksti (OCR) lukee skannattujen sivujen sanat ja kirjoittaa ne näkymättömiin sivujen alle, jotta asiakirjaa voidaan hakea ja sen tekstiä kopioida ja viedä. Sivujen ulkoasu ei muutu.",
+            "Valitse vain ne kielet, joilla sivut on kirjoitettu; sivut, joissa on jo tekstiä, jätetään ennalleen.",
+            {
+              "note": "Luku suorittaa Tesseract-moottori, joka on erikseen asennettava ilmainen ohjelma. Ilman sitä ikkunassa näkyy komento, jolla se asennetaan Windowsiin."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Asiakirjan koon pienentäminen",
+          "body": [
+            "Lisää työkaluja → Pakkaa tallentaa asiakirjan pienempänä tiedostona vähentämällä valokuvien ja skannausten pikselimäärää. Kolme eri tasoa; teksti ja piirustukset pysyvät yhtä terävinä kuin ennenkin. Asiakirja, jossa on vähän kuvia, pienenee vain vähän."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Kahden asiakirjan vertailu",
+          "body": [
+            "Lisää työkaluja → Vertaa asiakirjoja: valitse toinen PDF. Molemmat näytetään rinnakkain sivu sivulta, ja sivut, joiden teksti eroaa, on merkitty sekä kunkin tiedoston yksinomaan sisältämät rivit on lueteltu."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Eräajo: useita tiedostoja kerralla",
+          "body": [
+            "Lisää työkaluja → Eräajo suorittaa samat toiminnot useille tiedostoille omassa välilehdessään. Jokainen tulos on uusi tiedosto. Jos tulokset korvaisivat kansiossa jo olevia tiedostoja (omia tiedostojasi, kun ne tallennetaan omaan kansioonsa ilman nimeen lisättyä tekstiä), sinulta kysytään ensin, korvataanko ne, ohitetaanko ne vai perutaanko. Tiedosto korvataan vasta, kun sen tulos on valmis; avoinna oleva tiedosto (välilehdellä täällä tai toisessa ohjelmassa) jätetään ennalleen ja merkitään tekemättömäksi.",
+            {
+              "steps": [
+                "Lisää tiedostot vasemmalle: \"Lisää tiedostot\", \"Lisää kansio\" (sisältäen sen alakansiot) tai raahaa ne sisään.",
+                "Valitse oikealta haluamasi toiminnot. Jokaisesta tiedostosta tulee joka tapauksessa PDF; tämän lisäksi voit kääntää sivuja, tunnistaa tekstiä, lisätä ylä- ja alatunnisteen, vesileiman tai sivunumerot, pienentää tiedostoja, allekirjoittaa ne sertifikaatilla tai tallentaa ne toiseen muotoon. Numerot osoittavat järjestyksen.",
+                "Valitse tallennustapa: erillinen tiedosto jokaiselle tai kaikki yhteen PDF-tiedostoon (listan järjestyksessä) sekä kansio, johon tulokset tallennetaan. Kun kaikki tiedostot ovat samasta kansiosta, se kansio valitaan puolestasi, kunnes valitset toisen; muuten se on viimeksi valitsemasi kansio.",
+                "\"Käynnistä\". Jokaisen tiedoston kohdalla näkyy tulos; ajo voidaan keskeyttää tiedostojen välillä."
+              ]
+            },
+            {
+              "points": [
+                "Reseptit: \"Tallenna reseptiksi\" tallentaa kaikki valintasi (paitsi tiedostot ja mahdolliset salasanat) nimen alle, jotta ne voidaan ottaa käyttöön yhdellä valinnalla.",
+                "\"Säilytä tiedostojen kansiorakenne tuloksissa\" luo uudelleen lisätyn kansion alikansiot.",
+                "\"Kirjoita ajoraportti\" tallentaa tulosten viereen tekstitiedoston, jossa kerrotaan, mitkä tiedostot tallennettiin ja mitkä epäonnistuivat.",
+                "PDF, joka on vain allekirjoitettu, säilyttää allekirjoituksensa; jos sille tehdään jotain muuta saman ajon aikana, se kirjoitetaan uudelleen ja allekirjoitukset jäävät pois."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Asetukset",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "PDF Organizerin asetukset",
+          "body": [
+            "Tiedosto → Asetukset (tai Asetukset sivupalkissa, sitten PDF Organizer). Jokainen asetus voidaan palauttaa erikseen tai kaikki kerralla.",
+            {
+              "points": [
+                "Asiakirjan avaaminen: kuinka suurena asiakirja näytetään avattaessa, vieritys vai yksi sivu kerrallaan, näytetäänkö pikkukuvia.",
+                "Yksiköt, viivaimet ja ruudukko: yksikkö (millimetrit, tuumat, pisteet), viivaimet, ruudukko ja sen välistys.",
+                "Tulostus: paperi, suunta ja skaalaus, joilla tulostusikkuna alkaa.",
+                "Pikatyökalupalkki: mitkä painikkeet sivujen yläpuolella olevassa palkissa ovat.",
+                "Uusien asiakirjojen nimet: mallit urotetuille sivuille, uusille asiakirjoille ja PDF-tiedostolle, johon eräajo kokoaa useita tiedostoja.",
+                "Allekirjoitukset: kysyykö \"Tallenna\" ennen allekirjoitetun tiedoston ylikirjoittamista.",
+                "Näppäinkomennot: napsauta komennon näppäimiä ja paina sitten uusia näppäimiä."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tietoa PDF Organizerista",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tietoa PDF Organizerista",
+          "body": [
+            "PDF Organizer on Syntelab Creativen PDF-sovellus: se lukee PDF-asiakirjoja, järjestelee ja yhdistää niiden sivuja, kirjoittaa ja piirtää niihin, täyttää ja luo lomakkeita, allekirjoittaa sertifikaatilla ja tarkistaa allekirjoitukset, ja tekee samoja asioita useille tiedostoille kerralla.",
+            "Se on uusi, ja osa sen toiminnoista on vasta ensimmäinen askel. Jos se ei vastaa asiakirjojesi tarpeita, kerro meille kohdassa Ohje → Palaute: niin tiedämme, mitä kehittää."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "PDF Organizerin teknologia",
+          "body": [
+            {
+              "points": [
+                "PDF-tiedostojen lukeminen, piirtäminen ja kirjoittaminen: MuPDF.",
+                "Tekstin tunnistus (OCR): Tesseract, jos se on asennettu tietokoneelle.",
+                "Toimistovierailujen avaaminen: Word, Excel ja PowerPoint tai LibreOffice, riippuen siitä, kumpi on asennettu.",
+                "Verkkosivun tallentaminen PDF-tiedostona: tietokoneelle asennettu selain.",
+                "Allekirjoittaminen sertifikaatilla: Windowsin sertifikaattipalvelut; allekirjoitukset kirjoitetaan PAdES-standardin mukaisesti."
+              ]
+            },
+            "Tiedot siitä, mitä se jakaa ohjelman muiden osien kanssa, löytyvät kohdasta \"Tietoja Syntelab Creativesta\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Mitä PDF Organizer ei vielä osaa tehdä",
+          "body": [
+            {
+              "points": [
+                "Office-asiakirjat avataan tietokoneen toimisto-ohjelmistolla; ilman Wordia, Exceliä, PowerPointia tai LibreOfficea niitä ei voida avata. Kehitämme omaa muunninta: katso \"Mitä kehitämme\".",
+                "Tekstin tunnistaminen vaatii erikseen asennetun Tesseract-moottorin.",
+                "Asiakirjan tekstiä muokataan kerrallaan yhtä riviä; kappaleet eivät rivity automaattisesti uudelleen.",
+                "Neljällä värillä (CMYK) tulostettuja kuvia ei voi valita siirrettäväksi.",
+                "”Tarkista” kertoo, onko sertifikaatti nyt peruutettu, mutta ei sitä, milloin se peruutettiin.",
+                "Sertifikaatilla allekirjoittaminen toimii tällä hetkellä Windowsissa; Linux- ja macOS-versioihin se tulee myöhemmässä versiossa."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Začetek",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Kaj je Syntelab Creative",
+          "body": [
+            "Syntelab Creative je en program, sestavljen iz aplikacij. Vsaka aplikacija opravlja eno vrsto dela:",
+            {
+              "points": [
+                "PDF Organizer bere, razvršča, ureja in podpisuje dokumente PDF.",
+                "Scribe je urejevalnik besedila z orodji za čiščenje, razvrščanje, primerjavo in preoblikovanje besedila.",
+                "Units pretvarja med enotami: dolžina, temperatura, valute in še veliko več.",
+                "Dev združuje orodja za razvijalce: kodiranje in dekodiranje, oblikovanje in preverjanje, pretvarjanje ene oblike podatkov v drugo."
+              ]
+            },
+            "Aplikacije si delijo isto okno, isti nabor nastavitev in isti način delovanja, zato je to, kar se naučite v eni, enako tudi v naslednji.",
+            {
+              "note": "Vse se dogaja na vašem računalniku. Vaši dokumenti se nikoli nikamor ne pošiljajo in o vas ali vašem delu se ne zbira nič."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Okno",
+          "body": [
+            {
+              "points": [
+                "Vrstica ob strani: hišica vodi na Začetek, nato sledijo vaše aplikacije, na dnu pa novice programa, Povratne informacije, Podpora in Nastavitve.",
+                "V aplikaciji Datoteka → Pojdi na Začetek vodi na prvo stran te aplikacije, če jo ima (Units, Scribe), Datoteka → Odpri nastavitve (Ctrl+,) pa odpre Nastavitve pri delu te aplikacije; drugi deli so tam oddaljeni le en klik.",
+                "Zavihki na vrhu: vsak dokument, zbirka ali orodje, ki ga odprete, ima svoj zavihek. Pika na zavihku pomeni, da ima neshranjene spremembe.",
+                "Meniji aplikacije pod zavihki: kot menijska vrstica, kot trak ali kot stranska plošča, kar ste pač izbrali.",
+                "Preostanek okna je zavihek v ospredju."
+              ]
+            },
+            "Zapiranje zavihka z neshranjenimi spremembami najprej zahteva potrditev; enako velja za zapiranje programa."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Začetek",
+          "body": [
+            "Začetek prikazuje vaše aplikacije in nedavno odprte datoteke. Kliknite aplikacijo, da jo odprete; kliknite nedavno datoteko, da jo znova odprete.",
+            "Aplikacije so lahko prikazane kot kartice, kot ikone z imeni ali samo kot ikone, in jih lahko povlečete v poljuben vrstni red. S tipkovnico: Alt in puščične tipke. \"Ponastavi na privzeto\" jih vrne na prvotno mesto.",
+            "Vsaka aplikacija ima tudi svojo bližnjico v meniju Start sistema Windows, na primer \"Syntelab PDF Organizer\" ali \"Syntelab Units\": ta odpre program neposredno v tej aplikaciji. Če je program že odprt, se aplikacija v njem odpre kot zavihek."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Odpiranje datotek",
+          "body": [
+            {
+              "points": [
+                "Iz aplikacije: Datoteka → Odpri ali Ctrl+O.",
+                "S spuščanjem datotek iz mape na okno.",
+                "Iz upravljalnika datotek vašega sistema: dvokliknite datoteko, ki jo program odpira. V Raziskovalcu Windows je na voljo tudi meni desnega klika (glejte \"Meni desnega klika v Raziskovalcu Windows\").",
+                "Z Začetka: seznam nedavnih datotek."
+              ]
+            },
+            "Program teče kot ena sama kopija. Datoteka, odprta iz upravljalnika datotek, medtem ko program teče, se odpre kot nov zavihek v istem oknu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prilagajanje po svoje",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Postavitev: menijska vrstica, trak ali stranska plošča",
+          "body": [
+            "Ukaze aplikacije je mogoče prikazati na tri načine. Ukazi so isti; razlikuje se le, kje so.",
+            {
+              "points": [
+                "Klasični: menijska vrstica in orodna vrstica.",
+                "Trak: veliki gumbi v imenovanih skupinah, en zavihek za vsak meni. Lahko ga strnete, da ostane več prostora za dokument.",
+                "Stranska plošča: orodja v plošči na levi ali desni, ki jo lahko strnete na ikone."
+              ]
+            },
+            "Postavitev vseh aplikacij izberite v Nastavitve → Splošno → Postavitev. Aplikacija ima lahko svojo postavitev, izbrano v njenem delu Nastavitev ali v njenem meniju Pogled; takrat ne sledi več splošni, dokler ne izberete \"Uporabi splošno postavitev\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Nastavitve → Splošno → Tema: Svetla, Temna, Svetlo siva, Temno siva ali Samodejna, ki sledi svetli ali temni nastavitvi sistema.",
+            "Tema nikoli ne prebarva strani dokumenta: papir ostane tak, kot je."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Jezik",
+          "body": [
+            "Nastavitve → Splošno → Jezik. Program govori 62 jezikov. \"Sistemski jezik\" sledi jeziku vašega sistema. Po seznamu lahko iščete po izvirnem imenu jezika, po njegovem imenu v vašem jeziku ali po angleškem imenu.",
+            "Besedilo, ki še ni prevedeno, je prikazano v angleščini, nikoli v obliki kode."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Zavihki",
+          "body": [
+            {
+              "points": [
+                "\"Ohrani zavihek Začetek med zavihki\": ko je izklopljeno, je zavihek Začetek viden le, ko je sam Začetek v ospredju; hišica v stranski vrstici vedno vodi nazaj nanj.",
+                "Oznaka na zavihku je lahko ikona njegove aplikacije ali preprost kvadrat v barvi aplikacije."
+              ]
+            },
+            "Ko je zavihkov več, kot jih gre v vrstico, puščici na koncih vrstice omogočata drsenje, \"Več zavihkov\" pa jih navede vse."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Znajti se",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Iskanje ukaza",
+          "body": [
+            "Iskalno polje (\"Išči ukaze in nastavitve\") po imenu najde katerikoli ukaz zavihka v ospredju, v vašem jeziku ali v angleščini. Izberite rezultat, da ga izvedete.",
+            "Ukazi, ki so načrtovani, a še niso napisani, so v menijih prikazani sivo in niso vključeni v iskanje."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Bližnjice na tipkovnici",
+          "body": [
+            "Tipke ukaza so zapisane poleg njegovega imena v menijih in v njegovem namigu. Najpogosteje uporabljane:",
+            {
+              "points": [
+                "Ctrl+O: odpri datoteko",
+                "Ctrl+S: shrani; Ctrl+Shift+S: shrani kot",
+                "Ctrl+P: natisni",
+                "Ctrl+Z in Ctrl+Y: razveljavi in ponovi",
+                "Ctrl+F: poišči v dokumentu",
+                "Ctrl+W: zapri zavihek",
+                "Ctrl+Tab in Ctrl+Shift+Tab: naslednji zavihek in prejšnji",
+                "Ctrl+, (vejica): Nastavitve",
+                "F1: ta Pomoč",
+                "Escape: zapusti celozaslonski način ali način branja ali odloži orodje, ki ga imate v roki"
+              ]
+            },
+            "Tipke lastnih ukazov programa (zavihki, Nastavitve, Pomoč) spremenite v Nastavitve → Splošno → Bližnjice na tipkovnici; tipke ukazov aplikacije pa v njenem delu Nastavitev. Kliknite tipke ukaza, nato pritisnite nove."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Uporaba te Pomoči",
+          "body": [
+            "Pomoč je odvisna od mesta, od koder jo odprete. Iz aplikacije vidite le priročnik te aplikacije in ukaze zavihka, iz katerega prihajate. Z začetne strani ali iz Nastavitev vidite \"O programu\" (na kratko o programu in vsaki aplikaciji) in priročnik programa. Pomoč → O programu vedno vodi do \"O programu\".",
+            "Vsebina je na levi; iskanje nad njo išče po vseh temah, v naslovih in v besedilu.",
+            "Pomoč se odpre v lastnem zavihku, zato lahko preklapljate med njo in svojim delom; F1 jo znova prikaže v ospredju. Pod \"Ukazi zavihka, iz katerega prihajate\" je naveden vsak meni tega zavihka z vsemi ukazi, njihovimi tipkami in opisom, kaj naredijo: Pomoč odprite iz zavihka, o katerem imate vprašanje."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Meni desnega klika v Raziskovalcu Windows",
+          "body": [
+            "Nastavitve → Splošno → Raziskovalec Windows → \"Prikaži Syntelab Creative v meniju desnega klika za datoteke in mape\" doda vnose za datoteke, ki jih program bere: \"Pretvori v PDF s PDF Organizer\" in \"Združi datoteke v PDF Organizer\", vsak z ikono PDF Organizer, ter \"Syntelab Dev\", ki se odpre ob strani z vnosi Kontrolne vsote, Primerjaj in Hex prikaz.",
+            "Dodani so samo za vašega uporabnika, brez skrbniških pravic, izklop stikala pa jih odstrani. V sistemu Windows 11 so pod \"Pokaži več možnosti\". Vedno zaženejo nameščeni program: če je bil premaknjen ali znova nameščen drugam, jih ob zagonu popravi.",
+            {
+              "note": "Izbira \"Združi datoteke v PDF Organizer\" na več datotekah odpre zbirko z njimi; \"Pretvori v PDF s PDF Organizer\" z njimi odpre serijsko obdelavo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Zasebnost, posodobitve in kontakt",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Kaj gre na splet in kaj nikoli ne gre",
+          "body": [
+            "Program ne zbira ničesar: nobenih podatkov o uporabi, nobenih imen datotek, nobenih poročil o zrušitvah, poslanih samodejno.",
+            "Na splet se poveže samo v teh primerih, vsakič na vašo zahtevo:",
+            {
+              "points": [
+                "Preverjanje posodobitev in novic (dve majhni datoteki, prebrani s strani syntelab.com), ko to zahtevate ali, če ste to dovolili, ob zagonu programa; in prenos nove različice, samo ko pritisnete \"Posodobi\".",
+                "Shranjevanje spletne strani kot PDF (PDF Organizer) in pridobivanje besedila s spletne strani (Scribe) z naslova, ki ste ga vpisali.",
+                "Povezava v dokumentu, ki jo kliknete: preda se vašemu brskalniku ali poštnemu programu.",
+                "Povratne informacije in Podpora: odprejo stran syntelab.com v vašem brskalniku."
+              ]
+            },
+            "Podpisovanje s certifikatom in preverjanje podpisov poteka na vašem računalniku, brez povezave s spletom."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Posodobitve",
+          "body": [
+            "Nastavitve → Splošno → Posodobitve → \"Preveri posodobitve\". Če obstaja novejša različica, vam okno sporoči, kaj je novega, in ponudi možnost \"Posodobi\".",
+            "\"Posodobi\" prenese novo različico, preveri, da res prihaja od nas (podpisana mora biti z našim ključem; vse drugo je zavrnjeno), in jo namesti čez trenutno. Vaše nastavitve se ohranijo, program pa se znova zažene. Nič se ne prenese, dokler ga ne pritisnete.",
+            "Če posodobitve ni mogoče namestiti na ta način (prenosna kopija, paket za Linux, ni omrežja), \"Prenesi\" odpre stran za prenos v vašem brskalniku; namestite novo različico čez trenutno in vaše nastavitve se ohranijo.",
+            "\"Ob zagonu programa preveri posodobitve in novice\" lahko izklopite; o vas ali vašem računalniku se v nobenem primeru ne pošlje nič."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Povratne informacije in podpora",
+          "body": [
+            "Pomoč → Povratne informacije: prosite za novo aplikacijo, novo funkcijo ali spremembo ali pa prijavite težavo. Preberemo vsako sporočilo.",
+            "Pomoč → Podpora: program je brezplačen; tukaj lahko pomagate, da se nadaljuje."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "O Syntelab Creative",
+          "body": [
+            "Syntelab Creative je brezplačen nabor aplikacij za vsakdanje delo z dokumenti, besedilom in podatki, ki ga izdeluje Syntelab (syntelab.com). Začenja s štirimi aplikacijami: PDF Organizer, Scribe, Units in Dev. V istem oknu se jim bodo pridružile še druge.",
+            {
+              "points": [
+                "Vedno brezplačno.",
+                "Brez zbiranja podatkov: nič o vas, vašem računalniku ali vašem delu.",
+                "Nič zadržanega: ni plačljive različice, nobena funkcija ni zaklenjena, nobena omejitev ni dodana namenoma. Edine omejitve so to, kar zmore današnja tehnologija, in to, kar zmore vaš računalnik."
+              ]
+            },
+            "Nimamo financiranja. Program izdelujemo v prostem času, kolikor nam ga ta dopušča. Trdno nameravamo ustvarjati kakovostno programsko opremo, to pa zahteva čas in potrpežljivost: našo, da jo zgradimo, in vašo, medtem ko raste.",
+            "Z vsako različico bo boljši. Prijavljene težave se popravijo, želene funkcije pa pretehtamo za naslednje korake.",
+            {
+              "note": "Vaši dokumenti ostanejo na vašem računalniku. Program ne zbira ničesar o vas ali vašem delu; glejte \"Kaj gre na splet in kaj nikoli ne gre\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Kako lahko pomagate",
+          "body": [
+            "Obstajajo trije načini in vsak šteje:",
+            {
+              "points": [
+                "Povejte nam svoje mnenje: Pomoč → Povratne informacije. Težava, na katero ste naleteli, nekaj, kar manjka, nekaj, kar je težje, kot bi moralo biti. Preberemo vsako sporočilo.",
+                "Povejte drugim o programu in o tem, kaj delamo. Več uporabnikov pomeni več povratnih informacij in tako vidimo, kaj je res pomembno. Daje nam tudi občutek, da je naše delo cenjeno: naše in delo vseh, ki sodelujejo in bodo sodelovali pri projektu.",
+                "Podprite ga z denarjem, če lahko: Pomoč → Podprite nas. Tako dobimo čas za delo na njem."
+              ]
+            },
+            "Nič od tega od vas ni zahtevano. Program je brezplačen in bo vedno ostal brezplačen, celoten in dostopen vsem."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "S čim je zgrajen",
+          "body": [
+            "Program temelji na delu mnogih ljudi. Kar imajo vse aplikacije skupno:",
+            {
+              "points": [
+                "Okno in vse, kar vidite: Tauri s sistemskim spletnim pogledom (WebView2 v sistemu Windows, WebKitGTK v Linuxu, WKWebView v macOS); napisano v TypeScriptu z Reactom.",
+                "Del, ki opravlja delo: napisan v Rustu.",
+                "Črke in ikone: Sansation, IBM Plex Sans in Font Awesome Free."
+              ]
+            },
+            "Kaj doda posamezna aplikacija, je navedeno na njeni strani pod \"O programu\". Hvaležni smo ljudem, ki stojijo za temi projekti."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Česa še ne zna",
+          "body": [
+            "Da boste vedeli, preden se zanašate nanj:",
+            {
+              "points": [
+                "Nekatera besedila še čakajo na prevod. Do takrat so prikazana v angleščini, nikoli kot koda.",
+                "Meni desnega klika v upravljalniku datotek je zaenkrat na voljo le v Raziskovalcu Windows.",
+                "Podpisovanje s certifikatom trenutno deluje na Windowsu; na Linuxu in macOSu bo na voljo v kasnejši različici."
+              ]
+            },
+            "Omejitve vsake aplikacije so navedene na njeni strani pod \"O programu\". Če vas katera od njih ovira, nam to sporočite prek Pomoč → Povratne informacije: pomaga nam odločiti, kaj pride najprej."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Na čem delamo",
+          "body": [
+            "Štiri aplikacije bodo še rasle: kar sporočite in zahtevate prek Pomoč → Povratne informacije, v veliki meri odloča, kaj pride najprej. Poleg njih pripravljamo nove aplikacije. Začetek jih ne prikaže, razen če to želite: označite jih v njegovem meniju \"Pogled\", da jih boste tam videli kot \"Kmalu na voljo\":",
+            {
+              "points": [
+                "Convert: pretvarjanje datotek iz ene oblike v drugo, med drugim pisarniških dokumentov v PDF in nazaj, ne da bi bilo treba namestiti drug program. Odprte tehnologije, ki bi dosegla želeno kakovost, še nismo našli, zato bo prišla šele, ko vas ne bo razočarala; kjer orodja ne obstajajo, jih bomo izdelali sami.",
+                "Pixel: orodja za slike, kot so spreminjanje velikosti in stiskanje, odstranjevanje ozadja, barve in kode QR.",
+                "Metadata: ogled in odstranjevanje skritih podatkov fotografij, videoposnetkov in dokumentov, preden jih delite.",
+                "Wizard: naključni izbirniki in generatorji: kolo za vrtenje, kocke, kovanec, imena, izžrebana s seznama."
+              ]
+            },
+            "V aplikacijah, ki so že tu, delamo na tem, kar navajajo njihove strani \"Česa še ne zna\": na primer zaupanja vreden časovni žig za podpise, podpisovanje s certifikatom v Linuxu in macOS ter preverjanje črkovanja v Scribe.",
+            "Sledile bodo tudi nove možnosti namestitve: Microsoft Store in winget v sistemu Windows, Flathub in Snap v Linuxu.",
+            {
+              "note": "Novice vsake različice so pod gumbom za novice v stranski vrstici; Nastavitve → Splošno → Posodobitve preveri, ali obstaja novejša različica."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

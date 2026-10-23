@@ -1,0 +1,53 @@
+/* The bar between two panes: thin to the eye, wider to the hand. Drawn as the line between the panes of Dev. */
+.splitter {
+  position: relative;
+  z-index: 3;
+  flex: none;
+  background: var(--sc-border);
+  touch-action: none;
+}
+
+.splitter[data-orientation='vertical'] {
+  width: 1px;
+  cursor: col-resize;
+}
+
+.splitter[data-orientation='horizontal'] {
+  height: 1px;
+  cursor: row-resize;
+}
+
+/* What is taken hold of: a few pixels on each side of the line. */
+.splitter::before {
+  position: absolute;
+  content: '';
+}
+
+.splitter[data-orientation='vertical']::before {
+  inset-block: 0;
+  inset-inline: -4px;
+}
+
+.splitter[data-orientation='horizontal']::before {
+  inset-inline: 0;
+  inset-block: -4px;
+}
+
+.splitter:hover,
+.splitter:focus-visible,
+.splitter[data-dragging='true'] {
+  background: var(--sc-accent);
+  outline: none;
+}
+
+.splitter[data-orientation='vertical']:hover,
+.splitter[data-orientation='vertical']:focus-visible,
+.splitter[data-orientation='vertical'][data-dragging='true'] {
+  box-shadow: 0 0 0 1px var(--sc-accent);
+}
+
+.splitter[data-orientation='horizontal']:hover,
+.splitter[data-orientation='horizontal']:focus-visible,
+.splitter[data-orientation='horizontal'][data-dragging='true'] {
+  box-shadow: 0 0 0 1px var(--sc-accent);
+}

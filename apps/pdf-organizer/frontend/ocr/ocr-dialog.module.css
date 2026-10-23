@@ -1,0 +1,49 @@
+/* The languages the engine can read: tick the ones the pages are written in. */
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  max-height: 150px;
+  margin: 0;
+  padding: 10px 12px;
+  overflow-y: auto;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.language input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--sc-accent);
+}
+
+/* How far the reading is. */
+.progress {
+  width: 100%;
+  height: 8px;
+  accent-color: var(--sc-accent);
+}
+
+.command {
+  display: block;
+  padding: 10px 12px;
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface-2);
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+  user-select: all;
+}
+
+.problem {
+  margin: 0;
+  color: var(--sc-danger);
+}

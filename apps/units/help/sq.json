@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Konvertimi",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Konvertuesit",
+          "body": [
+            "Units konverton vlera midis njësive të matjes: një vlerë shpejt, ose tabela të tëra vlerash njëherësh. Gjithçka llogaritet në kompjuterin tuaj.",
+            "Konvertuesit ndodhen në gjashtë menu: Bazat, Lëvizja dhe mekanika, Energjia dhe fuqia, Shkencore, Digjitale dhe media, dhe Fizika e specializuar. Zgjedhja e njërit hap tabelën e tij.",
+            {
+              "points": [
+                "Një konvertues hapet në skedën ku ndodheni. Nëse tabela e tij ka vlera, ju pyet më parë: Vazhdo (vlerat humbasin), Hape në një skedë të re, ose Anulo.",
+                "Cilësimet → Units → “Hap çdo konvertues në një skedë më vete” e hap çdo konvertues që zgjidhni në një skedë të re.",
+                "Skedari → Shko te Fillimi ju kthen në faqen e parë të Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Konvertim i shpejtë",
+          "body": [
+            "Faqja e parë e Units, Konvertim i shpejtë, konverton një vlerë nga një njësi në një tjetër. Zgjidhni një konvertues, shkruani vlerën në anën “Nga” dhe zgjidhni të dy njësitë: rezultati shfaqet në anën “Në”.",
+            {
+              "points": [
+                "Secila anë liston njësitë popullore të konvertuesit dhe njësitë tuaja, me një kërkim në to. Tabela e konvertuesit i ka të gjitha njësitë.",
+                "Butoni midis dy anëve shkëmben dy njësitë.",
+                "Shenja e faqerojtësit pranë një njësie e fikson atë: njësitë e fiksuara dalin të parat në të dyja listat dhe në panelin e njësive të tabelës.",
+                "Butoni në rezultat e kopjon atë; shenja × fshin vlerën.",
+                "“Hape në tabelë” hap tabelën e konvertuesit."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Si lexohen dhe shkruhen numrat",
+          "body": [
+            "Mund të shkruani dhe të ngjitni numra ashtu siç shkruhen në vende të ndryshme: kuptohen si 1,234.56 ashtu edhe 1.234,56, si dhe hapësirat dhe apostrofët midis mijësheve, dhe 1.5e-3 për një fuqi të dhjetës.",
+            "Një numër që mund të lexohet në dy mënyra (1,234: një mijë, ose një e pak) lexohet ashtu siç i shkruan numrat gjuha e programit, dhe rreshti nën tabelë e thotë këtë.",
+            "Një rezultat shkruhet me dhjetoret e njësisë në të cilën konvertohet, jo me aq shifra sa keni shkruar: 5 cm janë 1,97 in. Një vlerë që nuk është zero tregon gjithmonë disa shifra domethënëse, kështu që 1 cm është 0,00001 km dhe kurrë 0,000 km.",
+            "Vlerat shumë të mëdha ose shumë të vogla për t’u lexuar me një shikim shkruhen me një fuqi të dhjetës, si 1,6 × 10⁻³⁵. Pamja → Vlerat ekstreme të plota i shkruan ato me të gjitha zerot.",
+            "Kur një njësi nuk ka një vlerë të tillë (një presion zëri zero nuk ka decibelë), qeliza shfaq një vizë."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabela",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Rreshtat dhe kolonat",
+          "body": [
+            "Çdo kolonë është një njësi dhe çdo rresht një vlerë. Qeliza në të cilën shkruani drejton rreshtin e saj: kolonat e tjera tregojnë të njëjtën vlerë në njësitë e tyre. Qeliza e shkruar shfaqet me shkronja të trasha.",
+            "Ajo që nuk është numër ruhet dhe shfaqet me të kuqe; rreshti i saj nuk konverton asgjë derisa ta korrigjoni.",
+            {
+              "points": [
+                "Për ta redaktuar, klikoni dy herë një qelizë ose thjesht filloni të shkruani në të. Enter lëviz poshtë, Tab djathtas; tastet e shigjetave lëvizin; Escape e lë qelizën siç ishte.",
+                "Klikoni këndin (#) për të përzgjedhur gjithë tabelën, numrin e një rreshti për të përzgjedhur rreshtin, një titull për të përzgjedhur kolonën. Shift+klik përzgjedh një varg, Ctrl+klik shton qeliza, edhe tërheqja përzgjedh.",
+                "Home dhe End shkojnë te kolona e parë dhe e fundit e rreshtit; Ctrl+Home te qeliza e parë e tabelës, Ctrl+End te e fundit. Ctrl me një shigjetë shkon në skajin e tabelës: rreshti i parë ose i fundit, kolona e parë ose e fundit. Page Up dhe Page Down lëvizin me një ekran. Me Shift, secili prej tyre e zgjeron përzgjedhjen.",
+                "Një përzgjedhje me disa qeliza konturohet nga jashtë; qeliza ku shkon shkrimi mbetet pa hije brenda saj.",
+                "Delete zbraz rreshtat e përzgjedhur.",
+                "Shkrimi në rreshtin e fundit shton një rresht. Një tabelë nuk ka kufi maksimal: është aq e gjatë sa lejon memoria e kompjuterit tuaj (një rresht zë 16 bajt, kështu që 100 milionë rreshta zënë rreth 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Kolonat dhe paneli i njësive",
+          "body": [
+            "Paneli pranë tabelës liston njësitë e konvertuesit. Në krye janë njësitë që ndodhen në tabelë: klikoni njërën për të hequr kolonën e saj. Poshtë tyre, të gjitha njësitë: kërkoni sipas emrit ose simbolit, filtroni sipas grupit ose sipas “Popullore”, dhe klikoni një njësi për ta shtuar si kolonë.",
+            "Shenja e faqerojtësit pranë një njësie e fikson atë si të preferuar: ajo del e para në listë dhe e para te Konvertim i shpejtë.",
+            {
+              "points": [
+                "Kolonat e ndajnë gjerësinë e tabelës në mënyrë të barabartë derisa titujt e tyre të mos nxënë më; atëherë tabela lëviz anash.",
+                "Tërhiqni skajin e një titulli për të ndryshuar gjerësinë e kolonës; klikoni dy herë skajin për ta përshtatur kolonën me vlerën e saj më të gjatë. Edhe kolona e numrave të rreshtave mund të tërhiqet.",
+                "Butoni ⋮ i një kolone: zhvendoseni majtas ose djathtas, fiksojeni në skajin e majtë ose të djathtë, ndryshoni saktësinë e saj ose hiqeni.",
+                "Saktësia e një kolone ndryshon vetëm atë kolonë. “Përdore për këtë njësi kudo” e bën atë saktësinë e njësisë, në çdo tabelë dhe te Konvertim i shpejtë.",
+                "Butoni me dy shigjeta pranë Anulo dhe Ribëj i përshtat kolonat me tabelën: çdo gjerësi që keni tërhequr ose përshtatur zhduket, dhe kolonat e ndajnë sërish gjerësinë e tabelës.",
+                "Dy pjesët e sipërme të panelit, njësitë në tabelë dhe “Shto njësi” (kërkimi dhe filtrat), palosen me një klikim mbi emrat e tyre, që lista të ketë më shumë hapësirë."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Anulo, kopjo, ngjit, importo dhe eksporto",
+          "body": [
+            "Shiriti mbi tabelë mban veglat e saj.",
+            {
+              "points": [
+                "Anulo dhe Ribëj (Ctrl+Z, Ctrl+Y) kalojnë nëpër çdo ndryshim të tabelës. Një ngjitje ose një importim është një hap.",
+                "Kopjo (Ctrl+C) kopjon gjithë tabelën ose atë që është përzgjedhur, ashtu siç e lexon një fletëllogaritëse. “E transpozuar” i kthen rreshtat në kolona.",
+                "Ngjit (Ctrl+V) vendos rreshtat e kopjuar në tabelë, nga qeliza aktive e poshtë. Nëse rreshti i parë mban titujt e njësive, kolonat përputhen sipas tyre, dhe njësitë që nuk janë ende në tabelë shtohen.",
+                "Importo lexon një libër pune Excel, një skedar CSV ose TSV në vend të asaj që mban tabela. “Gjej formatin automatikisht” e përcakton llojin sipas skedarit.",
+                "Eksporto e shkruan tabelën si Excel, CSV, TSV ose JSON. Kur dhjetoret ndahen me presje, CSV shkruhet me pikëpresje, siç presin fletëllogaritëset. Një fletë Excel mban 1 048 576 rreshta: një tabelë më e gjatë vazhdon në fletët e ardhshme të të njëjtit libër pune, nën të njëjtët tituj.",
+                "Goma e fshirjes zbraz rreshtat e përzgjedhur; koshi zbraz gjithë tabelën."
+              ]
+            },
+            "Një rresht përmban një vlerë. Nga një rresht i ngjitur ose i importuar që ka disa vlera, merret e para dhe të tjerat llogariten prej saj.",
+            "Shumë rreshta kërkojnë kohë për t’u ngjitur, importuar, eksportuar ose kopjuar. Atëherë një kartë mbi tabelë tregon sa ka përparuar puna, në përqindje dhe në rreshta, me një buton Ndalo. Një ngjitje ose një importim që ndalet e lë tabelën siç ishte; një eksportim që ndalet nuk shkruan asnjë skedar.",
+            "Kur kompjuteri nuk ka më memorie për rreshtat, asgjë nuk ndryshon dhe rreshti nën tabelë tregon sa nevojitej. Kur rreshtat kanë vend, por tabela siç ishte nuk mund të mbahej pranë tyre, ju pyet nëse doni të vazhdoni pa anulim: ky ndryshim dhe ata para tij nuk mund të anulohen më pas. Para se të pyesë, hapat më të vjetër të Anulo-s lëshohen për të liruar vend.",
+            "Opsionet e tabelës (ingranazhi): çfarë tregon titulli i një kolone (Emri (simboli), Emri ose Simboli), nëse kopjet dhe eksportet përfshijnë titujt dhe numrat e rreshtave, “Fillo këtë konvertues me këto kolona” dhe “Rivendos tabelën”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Konvertues specialë",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valuta",
+          "body": [
+            "Valutat nuk kanë një faktor të fiksuar: vlera e tyre ndryshon. Konvertuesi i valutave i lexon kurset nga dy shërbime falas ndërkohë që e përdorni, dhe vetëm atëherë.",
+            {
+              "points": [
+                "Valutat e shteteve: Rates By Exchange Rate API, https://www.exchangerate-api.com . Ato ndryshojnë një herë në ditë në burim dhe nuk lexohen më shpesh se kaq.",
+                "Kriptovalutat: Powered by CoinGecko, https://www.coingecko.com . Ato lexohen kur konvertuesi hapet ose rikthehet në plan të parë dhe të dhënat që ka janë më të vjetra se një çerek ore, si dhe kur shtypni Përditëso; kurrë me kohëmatës."
+              ]
+            },
+            "Kërkohen vetëm kurset. Asgjë rreth jush nuk dërgohet, dhe kurrë shumat që konvertoni.",
+            "Rreshti nën tabelë, dhe nën rezultatin e Konvertim i shpejtë, tregon se të kujt date janë kurset. Pa lidhje përdoren kurset e fundit dhe shënohen si të vjetra. Një valutë për të cilën shërbimet nuk japin kurs shfaq një vizë.",
+            "Cilësimet → Units → Valuta: “Lexo kurset nga rrjeti” mund të çaktivizohet, dhe konvertuesi atëherë përdor kurset e fundit që ka ruajtur. “Emërto burimet pranë kurseve” shfaq ose fsheh emrat e dy shërbimeve në atë rresht.",
+            "Kurset janë për informacion. Mos u mbështetni tek ato për një transaksion."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Baza e numrit",
+          "body": [
+            "Njësitë e këtij konvertuesi janë mënyra të shkrimit të një numri të plotë: baza nga 2 deri në 64, numrat romakë, baza 60 me dy pika (1:30:15), decimali i koduar në binar (BCD) dhe kodi Gray. Vlerat e tyre janë tekst: shkruani FF nën heksadecimal dhe kolonat e tjera shfaqin 255, 11111111 e kështu me radhë.",
+            "Numrat romakë shkojnë nga I deri në MMMCMXCIX (1 deri në 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Njësi që nuk janë një faktor i thjeshtë",
+          "body": [
+            "Shumica e njësive janë shumëfish i një tjetre. Disa nuk janë, dhe Units i konverton ashtu siç janë përcaktuar: temperaturat me zhvendosjet e tyre; ekonomia e karburantit (litra për 100 km kundrejt miljeve për galon); gjatësia e valës kundrejt frekuencës; përçueshmëria kundrejt rezistencës; gradët Baumé, API, Brix dhe Plato kundrejt dendësisë; decibelët kundrejt presionit dhe intensitetit të zërit; një pjerrësi në përqindje kundrejt këndit të saj.",
+            "Një temperaturë dhe një diferencë temperature nuk janë e njëjta gjë: 100 °C janë 212 °F, por një diferencë prej 100 °C është një diferencë prej 180 °F. Njësitë e grupit “Diferenca (Δ)” konvertohen mes tyre; mes tyre dhe shkallëve të temperaturës qeliza shfaq një vizë."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Njësitë tuaja",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Krijimi i një njësie",
+          "body": [
+            "Mund të shtoni njësitë tuaja në çdo konvertues. Në panelin e njësive zgjidhni “Njësi e re”, jepini një emër dhe një simbol, dhe përcaktojeni me një njësi ekzistuese.",
+            {
+              "points": [
+                "Një faktor: “1 hap = 0,75 m”. Për një shkallë që nuk fillon nga zero, edhe atë që shtohet pas shumëzimit.",
+                "Një formulë: si kthehet vlera në njësinë tjetër, me x për vlerën, dhe formula për rrugën e kthimit. Për shembull x * 9 / 5 + 32 dhe (x - 32) * 5 / 9."
+              ]
+            },
+            "Ajo që shkruani provohet ndërsa e shkruani, dhe sa bën një njësi e juaja shfaqet para se ta ruani. Një formulë mund të përdorë + − × ÷ ^, kllapa, x, pi, e, dhe funksionet sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos dhe atan. Ajo llogaritet, nuk ekzekutohet kurrë si program.",
+            "Njësitë tuaja listohen nën “Të miat” në panel, ku mund të ndryshohen dhe të hiqen. Një njësi e juaja mund të përcaktohet me një njësi tjetër nga tuajat; heqja e një njësie heq edhe ato që janë përcaktuar me të.",
+            "Cilësimet → Units liston njësitë tuaja të çdo konvertuesi dhe i eksporton e i importon si tekst që mund ta ruani ose ta kaloni në një kompjuter tjetër."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cilësimet",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Cilësimet e Units",
+          "body": [
+            "Skedari → Hap Cilësimet hap cilësimet e Units; po kështu edhe opsionet e tabelës (ingranazhi në shiritin e saj).",
+            {
+              "points": [
+                "Hapja e çdo konvertuesi në një skedë më vete, ose në skedën ku ndodheni.",
+                "Vlerat ekstreme të plota, çfarë shkruhet midis mijëshëve (10000,000, 10 000,000 ose 10.000,000; asgjë, nëse nuk zgjidhni ndryshe) dhe numrat e rreshtave.",
+                "Valuta: nëse kurset lexohen nga rrjeti dhe nëse shërbimet emërtohen pranë tyre.",
+                "Saktësia e njësive: zgjidhni një konvertues (ose “Njësitë që keni ndryshuar”), kërkoni një njësi dhe caktoni dhjetoret e saj me − dhe +; shigjeta e kthen te saktësia e vetë njësisë. “Përdore për këtë njësi kudo” në menynë e një kolone cakton të njëjtën vlerë.",
+                "Njësitë me të cilat fillon një tabelë: konvertuesit për të cilët keni zgjedhur kolonat e para, secili me një mënyrë për t’u kthyer te njësitë me të cilat vjen.",
+                "Njësitë tuaja."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Rreth Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Rreth Units",
+          "body": [
+            "Units është aplikacioni i konvertimit i Syntelab Creative: 38 konvertues me më shumë se 1 500 njësi, nga gjatësia dhe temperatura te valutat dhe bazat e numrave. Një vlerë e shkruar një herë shfaqet në çdo njësi që kërkoni, në një tabelë që mban një vlerë ose miliona të tilla.",
+            "Numrat llogariten saktësisht, si thyesa, dhe rrumbullakohen vetëm kur shkruhen. Gjithçka bëhet në këtë kompjuter; vetëm kurset e valutave lexohen nga rrjeti, dhe kjo mund të çaktivizohet.",
+            "Është i ri. Aty ku nuk mjafton për punën tuaj, na tregoni përmes Ndihma → Komentet: kështu e dimë se për çfarë të punojmë."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Sa rreshta mban një tabelë: çfarë matëm",
+          "body": [
+            "Një tabelë nuk ka kufi të caktuar rreshtash: është aq e gjatë sa lejon memoria e kompjuterit tuaj. Një rresht zë 16 bajt, kështu që 100 milionë rreshta zënë rreth 1,5 GB. Kur memoria mbaron, tabela mbetet siç ishte dhe programi tregon sa nevojitej.",
+            "E matëm me 50 000 000 rreshta, secili me një numër në një kolonë, në versionin e optimizuar të programit:",
+            {
+              "points": [
+                "Ngjitja e 50 000 000 rreshtave: rreth 7 sekonda.",
+                "Importimi i tyre nga një skedar CSV: 12 sekonda.",
+                "Eksportimi i tyre në një skedar CSV, me një kolonë të dytë të konvertuar: rreth 3,5 minuta.",
+                "Eksportimi i tyre në Excel, në 48 fletë: 4,3 minuta."
+              ]
+            },
+            "Nxjerrja zgjat më shumë se futja, sepse çdo qelizë që shkruhet konvertohet më parë saktësisht.",
+            {
+              "note": "Kompjuteri në të cilin u krye testi: AMD Ryzen 9 9950X3D (16 bërthama, 32 fije), 64 GB memorie, Windows 11 Pro. Tetor 2026. Në një kompjuter tjetër kohët do të ndryshojnë; madhësia e një rreshti jo."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Me çfarë është ndërtuar Units",
+          "body": [
+            {
+              "points": [
+                "Numra të saktë: libraritë num të Rust (thyesa të numrave të plotë të çdo madhësie).",
+                "Njësitë, faktorët dhe grupet e tyre: skedarë të të dhënave të programit, një për çdo konvertues.",
+                "Leximi i librave të punës Excel dhe OpenDocument: calamine. Shkrimi i librave të punës Excel: rust_xlsxwriter.",
+                "Kujtesa e fragmenteve e sistemit, për kopjimin dhe ngjitjen e shumë rreshtave: arboard.",
+                "Kurset e valutave: ExchangeRate-API dhe CoinGecko (shih “Valuta”)."
+              ]
+            },
+            "Ajo që ndan me pjesën tjetër të programit gjendet te “Rreth Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Çfarë nuk mund të bëjë ende Units",
+          "body": [
+            {
+              "points": [
+                "Një rresht mban një vlerë: nga një rresht i ngjitur me disa vlera, merret e para.",
+                "Eksportimi i shumë rreshtave është i ngadaltë (shih çfarë matëm).",
+                "Ajo që kopjohet në kujtesën e fragmenteve mbahet në memorie si një tekst i vetëm para se të ngjitet.",
+                "Kurset e valutave janë aq të freskëta sa i ofrojnë dy burimet e tyre: një herë në ditë për valutat e shteteve."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

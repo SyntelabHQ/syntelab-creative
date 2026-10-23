@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Teksty i pliki",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Edytor",
+          "body": [
+            "Scribe to edytor zwykłego tekstu z narzędziami umieszczonymi obok. Każdy tekst ma własną kartę; tekst znajduje się pośrodku, panel narzędzi z boku, a pasek informacji pod nim.",
+            "Po uruchomieniu Scribe najpierw pyta, co chcesz zrobić: policzyć słowa, znaleźć i zamienić tekst, usunąć duplikaty, porównać dwa teksty, posortować wiersze, odwrócić tekst albo wygenerować tekst wypełniający lub losowy. Każdy wybór otwiera tekst z odpowiednim narzędziem obok. „Pusty tekst” otwiera sam tekst, a poniżej widoczna jest lista ostatnio otwieranych tekstów.",
+            {
+              "points": [
+                "Plik → Nowy tekst (Ctrl+N) tworzy pusty tekst.",
+                "Plik → Otwórz… (Ctrl+O) otwiera jeden lub kilka plików, każdy na osobnej karcie. Można otwierać dowolne pliki tekstowe: .txt, .md, .csv, .log, .srt, kod źródłowy i inne.",
+                "Edycja → Cofnij (Ctrl+Z) i Ponów (Ctrl+Y) cofają i ponawiają wszystkie zmiany. Operacja narzędzia lub przepisu jest traktowana jako jeden krok.",
+                "Edycja → Znajdź i zamień (Ctrl+F) otwiera pasek w edytorze, który pozwala przechodzić między kolejnymi dopasowaniami.",
+                "Edycja → Zaznacz wszystko (Ctrl+A)."
+              ]
+            },
+            "Pasek pod tekstem pokazuje położenie kursora, rozmiar zaznaczenia, liczbę wierszy, słów i znaków, kodowanie pliku oraz rodzaj zakończeń wierszy.",
+            "Upuszczone na okno pliki również zostaną otwarte, każdy jako nowy tekst z nazwą pliku, kodowaniem i zakończeniami wierszy. Program odczytuje zawartość upuszczonego pliku, ale nie zna jego lokalizacji na dysku, dlatego podczas zapisywania zapyta o miejsce. Pliki większe niż 64 MB otwieraj przez Plik → Otwórz.",
+            "Pusty tekst wyświetla listę ostatnio otwieranych tekstów. Kliknij pozycję, aby otworzyć tekst. Polecenie „Wyczyść listę” ją czyści; lista jest przechowywana tylko na tym komputerze."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Zapisz i Zapisz jako",
+          "body": [
+            "Plik na dysku nie zmienia się, dopóki nie zapiszesz tekstu. Kropka na karcie oznacza niezapisane zmiany; przy zamykaniu takiej karty program najpierw zapyta, co zrobić.",
+            {
+              "points": [
+                "Zapisz (Ctrl+S) zapisuje tekst w jego bieżącym pliku. W przypadku nowego tekstu program zapyta o miejsce zapisu.",
+                "Zapisz jako (Ctrl+Shift+S) zapisuje tekst w nowym pliku, który zastępuje dotychczasowy tekst na karcie. Historia cofania zmian pozostaje zachowana, a poprzedni plik nie ulega zmianie."
+              ]
+            },
+            "Plik jest zapisywany w całości albo wcale. Jeśli zapis się nie powiedzie, istniejący plik pozostaje nienaruszony.",
+            {
+              "note": "Plik jest zapisywany w takim samym kodowaniu i z takimi samymi zakończeniami wierszy, jak przy otwieraniu. Tekst wpisany w systemie Windows pozostaje w pierwotnym formacie, tak samo jak tekst wpisany w systemie Linux."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodowania i zakończenia wierszy",
+          "body": [
+            "Kodowanie określa sposób zapisywania liter w postaci bajtów. Scribe odczytuje informacje o kodowaniu zapisane w pliku, a gdy ich brak — próbuje je rozpoznać. Większość współczesnych plików używa UTF-8; starsze pliki z Europy Środkowej często korzystają z Windows-1250.",
+            {
+              "points": [
+                "Jeśli znaki są wyświetlane nieprawidłowo (np. Ã£ zamiast ă albo jako kwadraty), wybierz Plik → Odczytaj ponownie w innym kodowaniu i wskaż kodowanie użyte przy zapisie pliku.",
+                "Aby zapisać tekst w innym kodowaniu, wybierz je na pasku pod tekstem, a następnie zapisz plik. Jeśli wybranego kodowania nie da się użyć do zapisu wszystkich znaków, Scribe wskaże które i nie zapisze pliku.",
+                "W tym samym miejscu można zmienić zakończenia wierszy: Windows CRLF, Linux i macOS LF lub starszy Mac CR. Scribe informuje o plikach z mieszanymi zakończeniami; podczas zapisu wszystkie wiersze otrzymują ten sam rodzaj zakończenia."
+              ]
+            },
+            "Domyślne kodowanie i zakończenia wierszy dla nowych tekstów wybiera się w Ustawieniach."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Wyświetlanie tekstu",
+          "body": [
+            {
+              "points": [
+                "Każda pozycja w menu Widok działa jak przełącznik: po włączeniu jest widoczna, po wyłączeniu — ukryta.",
+                "Tekst: „Zawijaj długie wiersze” (Alt+Z) wyświetla długi wiersz w kilku liniach bez zmieniania tekstu; dostępne są też numery wierszy i wynik obok tekstu.",
+                "Obok tekstu: Narzędzia (Ctrl+T), Przepisy i Statystyki. Panel pokazuje tylko włączone sekcje; jeśli żadna nie jest włączona, panel się nie wyświetla.",
+                "Widoczne narzędzia: możesz ukryć całe grupy narzędzi, np. znajdowanie i zamienianie, operacje na wierszach, zmianę wielkości liter i znaków, czyszczenie czy generowanie tekstu. Narzędzie wybrane z menu Format lub Narzędzia zawsze będzie widoczne — jego grupa i sekcja panelu włączą się automatycznie.",
+                "Podwójna strzałka u góry panelu zwija go do wąskiego paska przy krawędzi. Z paska można otworzyć każdą sekcję jednym kliknięciem; przeciągnij jego krawędź, aby zmienić szerokość panelu.",
+                "Krój i rozmiar czcionki można ustawić w Ustawieniach."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Bardzo duże pliki",
+          "body": [
+            "Plik większy niż 64 MB nie jest otwierany w edytorze. Otwiera się w osobnej karcie, która wyświetla po 500 wierszy naraz i odczytuje kolejne fragmenty w miarę przewijania. Nawet pliki o rozmiarze kilku gigabajtów można w ten sposób otworzyć w czasie jednego przejścia przez plik.",
+            {
+              "points": [
+                "Przyciski „Poprzednia strona” i „Następna strona” służą do poruszania się po pliku; wpisz numer wiersza i kliknij „Idź”, aby otworzyć dowolny wiersz.",
+                "Funkcja Znajdź przeszukuje cały plik z tymi samymi opcjami co w innych miejscach i wyświetla listę trafień. Kliknij pozycję, aby przejść do danego wiersza. Długa lista wyników jest wczytywana partiami — kliknij „Znajdź więcej”.",
+                "Polecenie „Uruchom przepis na całym pliku” zapisuje wynik w wybranym folderze pod tą samą nazwą. Oryginalny plik nie jest tutaj zmieniany.",
+                "Polecenie „Otwórz cały plik w edytorze” mimo to przenosi go do edytora, gdzie można go ręcznie zmienić. Może to działać wolno i wymaga pamięci wielokrotnie większej niż rozmiar pliku."
+              ]
+            },
+            {
+              "note": "Plików zapisanych w kodowaniu, w którym na każdą literę przypadają dwa bajty (UTF-16), nie można wyświetlać strona po stronie. Podczas działania przepisu cały plik znajduje się w pamięci; ograniczeniem jest ilość pamięci komputera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Narzędzia",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Jak działają narzędzia",
+          "body": [
+            "Narzędzia znajdują się w panelu obok tekstu i są pogrupowane. Kliknij narzędzie, aby wyświetlić jego opcje, a następnie wybierz Zastosuj.",
+            {
+              "points": [
+                "Jeśli zaznaczono fragment, narzędzie zmienia tylko zaznaczenie; jeśli nic nie zaznaczono — cały tekst. Informacja o zakresie działania znajduje się u góry panelu.",
+                "Pod przyciskiem narzędzie podaje wynik działania, na przykład liczbę zmienionych wierszy lub miejsc.",
+                "Każde użycie narzędzia jest jednym krokiem; polecenie Cofnij odwraca całą operację.",
+                "Każde narzędzie jest też dostępne w menu i wyszukiwarce poleceń. Narzędzia zmieniające układ tekstu (wiersze, wielkość liter i znaki, czyszczenie) znajdują się w menu Format, a pozostałe — w menu Narzędzia. Wybór narzędzia w menu otwiera panel z jego opcjami."
+              ]
+            },
+            "W menu Format narzędzie, które zwykle ma jedną opcję, jest przedstawione jako zestaw poleceń: każda metoda zmiany wielkości liter, rodzaj cudzysłowu czy sposób odwrócenia tekstu ma własne polecenie, otwierające narzędzie z wybraną opcją. Gdy okno jest zbyt wąskie, aby pokazać grupę, zastępuje ją jeden przycisk otwierający całą listę.",
+            "Narzędzia działają na tym komputerze. Tekst nigdzie z niego nie jest wysyłany."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Podgląd wyniku przed zastosowaniem",
+          "body": [
+            "Gdy narzędzie jest otwarte, przewidywany wynik widać obok tekstu, w panelu Wynik. Tekst zmieni się dopiero po wybraniu Zastosuj. Wynik aktualizuje się automatycznie po zmianie opcji lub tekstu.",
+            {
+              "points": [
+                "Tekst i wynik są wyświetlane obok siebie, każdy pod nagłówkiem o tej samej wysokości, dzięki czemu odpowiadające sobie wiersze zaczynają się na tej samej wysokości. Przewijają się razem; przycisk z łańcuchem wyłącza tę synchronizację.",
+                "Zmieniane wiersze są oznaczone, a zmieniony fragment ma ciemniejsze tło. Wiersze, które tylko zmienią położenie, i nowe wiersze mają własne kolory. W tekście oznaczone są również wiersze, które zostaną zmienione lub usunięte.",
+                "Pod nazwami pokazane są przewidywane zmiany: liczba zmienionych, przeniesionych, nowych i usuniętych wierszy oraz liczba wierszy i znaków przed i po operacji.",
+                "Pod wynikiem widać wiersze, które zostaną usunięte. Kliknij wiersz, aby przejść do niego w tekście.",
+                "Małe przyciski wyniku pozwalają go skopiować, otworzyć jako nowy tekst, porównać z tekstem w karcie, synchronizować przewijanie, umieścić wynik pod tekstem zamiast obok niego albo go ukryć. Przyciski tekstu służą do cofania i ponawiania zmian, kopiowania, wklejania wyniku zamiast tekstu, zaznaczania całości i czyszczenia.",
+                "Przeciągnij pasek między panelami, aby powiększyć jeden z nich; kliknij go dwukrotnie, aby ponownie ustawić równą szerokość."
+              ]
+            },
+            "Po zastosowaniu narzędzia panel Wynik wyświetla komunikat „Zastosowano. Tekst po lewej stronie jest teraz wynikiem.” oraz przyciski Cofnij i „Porównaj ze stanem poprzednim”, który otwiera porównanie tekstu przed i po zmianie. Wynik pojawi się ponownie po zmianie tekstu lub opcji narzędzia.",
+            {
+              "note": "Polecenie Widok → Wynik obok tekstu włącza i wyłącza panel. Przy bardzo długim tekście (ponad dwa miliony znaków) podgląd nie jest wyświetlany — zastosuj narzędzie, a polecenie Cofnij przywróci tekst."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Zamiana we wszystkich miejscach",
+          "body": [
+            "Zamienia jednocześnie wszystkie znalezione wystąpienia. Podczas wpisywania wyszukiwanego tekstu Scribe informuje, w ilu miejscach go znaleziono, i oznacza je w tekście, aby przed zastosowaniem można było sprawdzić zmiany.",
+            {
+              "points": [
+                "Wyrażenie regularne: wyszukiwany tekst jest wzorcem. W polu Zamień na symbole $1, $2… oznaczają tekst dopasowany przez kolejne grupy wzorca.",
+                "Uwzględniaj wielkość liter: a i A są traktowane jako różne znaki.",
+                "„Tylko całe słowa”: „kot” nie zostanie znaleziony w słowie „kotlet”.",
+                "„Zachowaj wielkie litery zastępowanego tekstu”: zamiana „kot” na „pies” zmieni „Kot” na „Pies”, a „KOT” na „PIES”."
+              ]
+            },
+            {
+              "points": [
+                "Więcej opcji → Wstaw…: wstawiany tekst może zawierać pola uzupełniane przy każdym dopasowaniu. {counter} kolejno wstawia 1, 2, 3… ({counter:10} zaczyna od 10, a {counter:10:5} zwiększa wartość o 5); {date} i {time} oznaczają datę i godzinę z komputera; {uuid} wstawia identyfikator; {random} — 8 losowych liter i cyfr ({random:12} — 12).",
+                "Pod polem wyszukiwania Scribe pokazuje także, w ilu wierszach znaleziono dopasowania i w ilu różnych tekstach."
+              ]
+            },
+            "Polecenie „Zamień kilka tekstów naraz” wykonuje listę par jako jedną operację. Wpisz jedną parę w każdym wierszu w formacie: szukany tekst => tekst zastępujący. Pary są stosowane kolejno od góry do dołu, każda do wyniku poprzedniej; puste pole po prawej usuwa znaleziony tekst.",
+            {
+              "note": "Wzorzec nie może zablokować programu: czas działania rośnie proporcjonalnie do długości tekstu. Z tego powodu niedostępne są wzorce odwołujące się wstecz do dopasowanego tekstu (\u0001)."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Wiersze",
+          "body": [
+            {
+              "points": [
+                "Sortuj wiersze według: liter, jak w słowniku, zgodnie z językiem programu lub wybranym językiem (w rumuńskim ă występuje po a; w szwedzkim ä po z, a w niemieckim obok a); liter i cyfr traktowanych jak liczby (file2 przed file10); liczby na początku wiersza; długości; liczby słów; daty na początku wiersza (05.03.2024, 2024-03-05, z godziną lub bez); adresu internetowego; numeru wersji (1.2.10 po 1.2.9); tytułu, z pominięciem rodzajnika na początku; własnej kolejności (mały, średni, duży) albo bez sortowania.",
+                "Wiersze bez sortowanej wartości (bez numeru lub daty albo z wartością spoza określonej kolejności) pozostają na końcu niezależnie od kierunku sortowania pozostałych — od najmniejszej lub największej wartości.",
+                "Więcej opcji sortowania: rozpoczęcie porównywania od wyrazu lub znaku albo według wybranej kolumny tabeli (z określeniem separatorów kolumn); pozostawienie pierwszego wiersza jako nagłówka; sortowanie akapitów zamiast wierszy; wstępne uporządkowanie tekstu przez przycięcie spacji, usunięcie pustych wierszy lub duplikatów.",
+                "Usuń powtarzające się wiersze: zachowaj pierwszy albo ostatni z duplikatów lub usuń wszystkie powtórzenia (pozostaną tylko wiersze występujące raz). Można pominąć wielkość liter, spacje na początku i końcu wiersza, cyfry, interpunkcję oraz określoną liczbę znaków na początku lub końcu. Porównywać można tylko wybraną kolumnę albo fragment dopasowany przez wzorzec. Puste wiersze są traktowane tak samo jak pozostałe: można je zachować, usunąć lub połączyć.",
+                "Policz powtarzające się wiersze: pozostawia każdy wiersz raz i dopisuje przed nim liczbę wystąpień; wynik można posortować od najczęstszych, od najrzadszych albo według kolejności w tekście.",
+                "Zachowaj lub usuń wiersze: wyszukuje tekst w każdym wierszu i pozostawia tylko te, które go zawierają, albo tylko te, które go nie zawierają.",
+                "Odwróć kolejność wierszy albo losowo je przetasuj.",
+                "Numeruj wiersze: określ numer początkowy, tekst po numerze i czy poprzedzać numery zerami, aby miały tę samą szerokość; można pominąć puste wiersze.",
+                "Puste wiersze: usuń wszystkie albo pozostaw jeden z kolejnych pustych wierszy.",
+                "Połącz wiersze w jeden, wybierając separator, albo podziel je na wiersze przy każdym przecinku, średniku lub innym wskazanym znaku. W polach dotyczących numerowania, łączenia, dzielenia i liczenia zapis \t oznacza tabulator, którego nie można wpisać bezpośrednio."
+              ]
+            },
+            {
+              "note": "Opcja zależna od innej pojawia się dopiero po jej wybraniu, na przykład ustawienia kolumny przy sortowaniu według kolumny. Rzadziej używane opcje znajdują się w sekcji Więcej opcji."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Wielkość liter",
+          "body": [
+            "Zmień wielkość liter: jak w zdaniu, Każde Słowo Wielką Literą, WIELKIE LITERY, małe litery, odwrócona wielkość liter oraz konwencje nazw używane w kodzie: camelCase, PascalCase, snake_case, CONSTANT_CASE i kebab-case.",
+            "Wielkość liter jest zmieniana zgodnie z regułami danego alfabetu, nie tylko angielskiego.",
+            "W grupie Kierunek polecenie Odwróć tekst może odwrócić litery w każdym wierszu, kolejność słów albo litery w każdym słowie. „Do góry nogami” zapisuje tekst tak, by czytać go z drugiej strony stołu, a „Lustrzane odbicie” zamienia także znaki mające lewą i prawą stronę. Litery są liczone tak, jak odczytuje je użytkownik: litera ze znakami diakrytycznymi nadal jest jednym znakiem."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Czyszczenie",
+          "body": [
+            {
+              "points": [
+                "Uporządkuj spacje: zamień kilka spacji na jedną i usuń spacje na końcach wierszy.",
+                "Przytnij końce wierszy: z obu stron, tylko z początku albo tylko z końca.",
+                "Cudzysłowy: proste, angielskie, rumuńskie, niemieckie lub francuskie.",
+                "Usuń znaki diakrytyczne: ă zmienia się w a, a é w e. Operacja działa tylko w alfabetach łacińskim i greckim, w których litera bez znaku diakrytycznego pozostaje tą samą literą.",
+                "Popraw rumuńskie litery: ş i ţ (z cedillą, wpisywane starszymi klawiaturami) zamienia na ș i ț (z przecinkiem pod literą) — właściwe litery rumuńskie.",
+                "Zamień tabulatory na spacje lub spacje na tabulatory, określając szerokość tabulatora.",
+                "Usuń znaczniki HTML: użyj dla kodu strony internetowej wklejonego do tekstu. Znaczniki, skrypty i style zostaną usunięte, a treść widoczna dla czytelnika pozostanie. Aby pobrać stronę z adresu, użyj narzędzia Tekst strony internetowej.",
+                "Tekst strony internetowej: wpisz adres strony (np. example.com/page) i wybierz Pobierz tekst. Treść widoczna dla czytelnika zostanie wstawiona w miejscu kursora bez znaczników, skryptów i stylów. To jedyne narzędzie Scribe korzystające z internetu i uruchamia się tylko na Twoje żądanie: stronę pobiera zainstalowana przeglądarka (Microsoft Edge lub Google Chrome), uruchomiona bez okna i bez Twoich plików cookie ani logowania. Sama aplikacja niczego nie wysyła. Strona wymagająca zalogowania udostępni tylko treści widoczne dla niezalogowanego użytkownika."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Przywracanie rumuńskich znaków diakrytycznych",
+          "body": [
+            "Rumuński tekst wpisany bez ă, â, î, ș, ț zostaje uzupełniony o te znaki.",
+            {
+              "steps": [
+                "Otwórz to narzędzie w grupie Czyszczenie i wybierz Zastosuj.",
+                "Wyrazy mające tylko jedną poprawną formę są zmieniane automatycznie: „stiu” na „știu”, a „informatii” na „informații”.",
+                "Wyrazy o kilku możliwych znaczeniach (fata, fată, fața, față) są wyświetlane pod przyciskiem, przy każdym miejscu wystąpienia. Kliknij właściwą formę.",
+                "Możesz też przed zastosowaniem zaznaczyć opcję „Samodzielnie wybieraj bardziej prawdopodobną formę”. Program nie będzie pytać o wybór, ale wynik należy sprawdzić."
+              ]
+            },
+            "Gdy wystarcza kontekst sąsiednich wyrazów, Scribe podejmuje decyzję na jego podstawie: „o casa” zmieni na „o casă”, „casa mea” pozostawi bez zmian, a „pentru ca” zmieni na „pentru că”.",
+            {
+              "note": "To narzędzie zostało przygotowane dla Scribe na podstawie listy częstych słów i rumuńskich końcówek zawsze zapisywanych ze znakami diakrytycznymi. Nieznane wyrazy (rzadkie słowa, nazwy) pozostają bez zmian, podobnie jak słowa już zapisane ze znakami. Przed wysłaniem tekstu sprawdź wynik."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Tworzenie tekstu: wypełniacz i losowy tekst",
+          "body": [
+            "Narzędzia w grupie Twórz tekst niczego nie zmieniają — dopisują tekst. Wstawiają go w miejscu kursora, zastępując zaznaczony fragment.",
+            {
+              "points": [
+                "Tekst wypełniający: akapity, zdania, słowa, listy, nagłówki lub fragmenty strony (nagłówek, akapity, lista). Możesz wybrać łaciński tekst drukarski (lorem ipsum), angielski lub rumuński, słownictwo biurowe albo kuchenne, a także własne słowa. Więcej opcji: krótkie, średnie lub długie zdania; zwykły tekst, Markdown, HTML lub JSON; poziom nagłówków; limit znaków (tekst zostanie ucięty na granicy pełnego słowa i zakończony zdaniem); słowa do pominięcia.",
+                "Dane fikcyjne: imiona i nazwiska, adresy e-mail, numery telefonów, adresy uliczne, daty lub liczby — po jednym elemencie w wierszu, z Rumunii lub krajów anglojęzycznych. Polecenie „Wiersze według mojego wzorca” zapisuje każdy wiersz zgodnie z podanym formatem. Pola {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} i {row} zostaną zastąpione wygenerowanymi danymi — przydatne do szybkiego tworzenia przykładowej tabeli.",
+                "Tekst losowy: hasła (zawierające co najmniej po jednej literze, cyfrze i znaku specjalnym), litery, cyfry, zapis szesnastkowy lub identyfikatory UUID; w jednym wierszu albo wielu. Można pominąć podobne znaki, takie jak 0 i O oraz 1, l i I.",
+                "Wartość początkowa w sekcji Więcej opcji sprawia, że tekst wypełniający i dane fikcyjne są za każdym razem takie same dla tej samej wartości. Wartość 0 generuje nowy wynik przy każdym użyciu."
+              ]
+            },
+            {
+              "note": "Hasła są tworzone na tym komputerze z użyciem generatora losowości systemu i nigdzie nie są wysyłane. Fikcyjne adresy e-mail kończą się na example.com, gdzie poczta nie dociera do nikogo. Losowo wygenerowany numer telefonu może należeć do prawdziwej osoby — nie dzwoń pod ten numer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Przepisy",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Zapisywanie wykonanych operacji jako przepisu",
+          "body": [
+            "Przepis to lista narzędzi wraz z ich opcjami, zapisana pod nazwą i gotowa do ponownego uruchomienia jednym kliknięciem.",
+            {
+              "steps": [
+                "Zastosuj do tekstu wybrane narzędzia, w wybranej kolejności.",
+                "Otwórz sekcję Przepisy u góry panelu. Zobaczysz na niej zastosowane narzędzia.",
+                "Wybierz Zapisz jako przepis i podaj jego nazwę.",
+                "Później otwórz przepis i wybierz Uruchom na tekście. Wszystkie kroki zostaną wykonane, a jedno polecenie Cofnij odwróci je wszystkie."
+              ]
+            },
+            "Przepisy są przechowywane na tym komputerze i dostępne w każdym tekście."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Edytowanie przepisu i tworzenie nowego",
+          "body": [
+            "Polecenie Zmień w otwartym przepisie wyświetla jego nazwę i kroki. Każdy krok można przenieść w górę lub w dół, usunąć albo zmienić jego opcje; narzędzia dodaje się z listy pod krokami. Zmiany są zapisywane dopiero po wybraniu Zapisz.",
+            "Polecenie Nowy przepis tworzy przepis bez kroków, który można skonfigurować w ten sam sposób, bez wcześniejszego stosowania narzędzi do tekstu.",
+            {
+              "note": "Narzędzia tworzące tekst (wypełniający lub losowy) nie mogą być krokami przepisu, ponieważ przepis służy do zmieniania tekstu."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Uruchamianie przepisu na plikach",
+          "body": [
+            {
+              "steps": [
+                "Otwórz przepis i w sekcji Uruchom na plikach dodaj pliki albo folder wraz z jego podfolderami.",
+                "Wybierz miejsce zapisu wyników: inny folder, pozostawiając oryginalne pliki bez zmian, albo te same pliki, zastępując je wynikami.",
+                "Uruchom przepis. Scribe poda, ile plików zapisano, ile nie wymagało zmian oraz których plików nie udało się przetworzyć i dlaczego."
+              ]
+            },
+            "Każdy plik jest zapisywany z użyciem tego samego kodowania i zakończeń wierszy co oryginał. W innym folderze pliki zachowują swoją strukturę folderów, a istniejące pliki nigdy nie są nadpisywane.",
+            {
+              "note": "Nadpisania plików nie można cofnąć w Scribe. Jeśli pliki są ważne, zachowaj ich kopię."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statystyki, porównywanie i foldery",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statystyki",
+          "body": [
+            "Sekcja Statystyki u góry panelu pokazuje, z czego składa się tekst lub zaznaczony fragment. Każdą część można zwinąć.",
+            {
+              "points": [
+                "Na początku: liczba słów, znaków ze spacjami i bez spacji, zdań, akapitów, wierszy i stron oraz rozmiar w bajtach.",
+                "Czas: szacowany czas cichego czytania, czytania na głos, pisania na klawiaturze i ręcznego przepisywania.",
+                "Słowa: liczba różnych słów i ich udział w tekście, liczba liter i sylab w słowie, najdłuższe i najkrótsze słowo oraz liczba słów o każdej długości.",
+                "Zdania: liczba słów w zdaniu, liczba zdań krótkich, średnich i długich, oznajmujących, pytających i wykrzyknikowych, a także najdłuższe i najkrótsze zdanie.",
+                "Czytelność: wynik od 0 (bardzo trudny) do 100 (bardzo łatwy), obliczany wzorem przeznaczonym dla języka tekstu. Wzory są dostępne dla angielskiego, niemieckiego, hiszpańskiego, francuskiego, włoskiego, niderlandzkiego, portugalskiego i rosyjskiego. Dla innych języków wynik nie jest podawany, ponieważ zastosowanie wzoru dla innego języka byłoby mylące.",
+                "Najczęściej używane wyrażenia: słowa wraz z ich udziałem w tekście oraz powtarzające się pary i grupy trzech słów.",
+                "Limity znaków: liczba znaków pozostałych do typowych limitów albo przekraczających je, na przykład dla tytułu, opisu lub krótkiego wpisu."
+              ]
+            },
+            "Słowa i zdania są rozpoznawane zgodnie z regułami danego pisma, dlatego liczone są także teksty chińskie, japońskie i tajskie, w których wyrazy nie są rozdzielone spacjami. Tempo używane do obliczania czasu i liczba słów mieszczących się na stronie są ustawiane w Ustawieniach."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Porównywanie dwóch tekstów",
+          "body": [
+            {
+              "points": [
+                "Narzędzia → Porównaj z innym tekstem: tekst z edytora i tekst wpisany lub wklejony przez Ciebie.",
+                "Narzędzia → Porównaj z plikiem: bieżący tekst z edytora i wybrany plik.",
+                "Narzędzia → Porównaj dwa teksty: dwa teksty wpisane lub wklejone obok siebie.",
+                "Narzędzia → Porównaj dwa pliki."
+              ]
+            },
+            "Teksty są wyświetlane obok siebie. Wiersze występujące tylko w pierwszym tekście są oznaczone jako usunięte, a występujące tylko w drugim — jako dodane. W zmienionym wierszu wyróżnione są różniące się słowa. Pokazywane są tylko różnice i kilka otaczających je wierszy; strzałkami można przechodzić od jednej różnicy do następnej.",
+            "Można pominąć różnice w wielkości liter, spacjach, pustych wierszach, cyfrach i interpunkcji. Widok W jednej kolumnie wyświetla usunięty tekst nad dodanym, wraz z odpowiednimi oznaczeniami, zamiast pokazywać teksty obok siebie. Obok liczby różnic Scribe podaje stopień podobieństwa tekstów jako udział identycznych wierszy.",
+            "Pierwszy tekst jest wyświetlany od razu po jego wybraniu, jeszcze przed wskazaniem drugiego. Przeciągnij pasek między tekstami, aby powiększyć jeden z nich. Gdy teksty są wpisywane, pasek pod polami można przeciągać w górę i w dół, aby zmienić proporcje miejsca na tekst i porównanie. Dwukrotne kliknięcie przywraca domyślne położenie paska.",
+            "Gdy zmieniono kilka kolejnych wierszy, każdy z nich jest zestawiany z najbardziej podobnym wierszem po drugiej stronie. Dzięki temu dodany lub usunięty wiersz nie sprawia, że wszystkie następne wyglądają na zmienione.",
+            "Opcja Wpisz lub wklej teksty wyświetla pole nad każdą kolumną. Wpisany tekst jest porównywany na bieżąco; po każdej stronie nadal można wybrać plik."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Znajdowanie i zamiana w folderze",
+          "body": [
+            {
+              "steps": [
+                "Wybierz Narzędzia → Znajdź w folderze (Ctrl+Shift+F) i wskaż folder. Przeszukiwane są również jego podfoldery.",
+                "Wpisz szukany tekst i wybierz opcje dostępne także w narzędziu „Zamień wszystkie”. Pole „Typy plików” ogranicza wyszukiwanie do wybranych rozszerzeń (txt, md, csv…).",
+                "Każde dopasowanie jest wyświetlane w odpowiednim wierszu, osobno dla każdego pliku. Kliknij wiersz, aby otworzyć plik w tym miejscu.",
+                "Aby zamienić tekst, wpisz nową treść, odznacz pliki, które mają pozostać bez zmian, i wybierz Zapisz pliki."
+              ]
+            },
+            "Nic nie zostanie zapisane bez Twojego polecenia i tylko w zaznaczonych plikach. Każdy plik zachowuje swoje kodowanie i zakończenia wierszy.",
+            {
+              "note": "Ukryte foldery i foldery wypełniane przez programy (np. .git, node_modules) są pomijane, chyba że zdecydujesz inaczej. Pliki niebędące tekstem są zawsze pomijane."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ustawienia",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Ustawienia Scribe",
+          "body": [
+            "Polecenie Plik → Ustawienia otwiera ustawienia programu w sekcji Scribe.",
+            {
+              "points": [
+                "Edytor: czcionka o stałej szerokości lub czcionka programu, jej rozmiar, zawijanie wierszy, numery wierszy oraz wyświetlanie wyniku narzędzia przed jego zastosowaniem.",
+                "Nowy tekst: zakończenia wierszy oraz informacja, czy na początku pliku ma być zapisany znacznik kolejności bajtów.",
+                "Statystyki: tempo czytania, czytania na głos, pisania na klawiaturze i ręcznego przepisywania oraz liczba słów na stronie.",
+                "Skróty klawiszowe poleceń Scribe."
+              ]
+            },
+            "Przy każdym ustawieniu znajduje się przycisk przywracający domyślną wartość dostarczoną z programem."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O Scribe",
+          "body": [
+            "Scribe to edytor tekstu w Syntelab Creative z narzędziami umieszczonymi obok tekstu. Pokazuje wynik działania narzędzia przed jego zastosowaniem, czyści i sortuje listy, wyszukuje i zamienia tekst w pojedynczym pliku lub całym folderze, porównuje dwa teksty, analizuje ich zawartość, tworzy tekst wypełniający i dane fikcyjne oraz zapisuje często wykonywane operacje jako przepisy do ponownego użycia.",
+            "Wszystkie operacje odbywają się na tym komputerze. Program nie ogranicza rozmiaru ani liczby tekstów; ograniczeniem jest ilość pamięci komputera i możliwości obecnej technologii.",
+            "Scribe jest nową aplikacją. Jeśli nie spełnia potrzeb związanych z Twoimi tekstami, napisz do nas przez Pomoc → Przekaż opinię. Dzięki temu wiemy, nad czym warto pracować."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Technologie użyte w Scribe",
+          "body": [
+            {
+              "points": [
+                "Edytor: CodeMirror.",
+                "Odczyt i zapis kodowań: encoding_rs; kodowanie plików bez informacji o kodowaniu rozpoznaje chardetng.",
+                "Wyszukiwanie i zamiana: biblioteka wyrażeń regularnych języka Rust, której wzorce nie mogą zablokować programu.",
+                "Sortowanie zgodne z regułami języków oraz wyszukiwanie słów i zdań w różnych systemach pisma: biblioteka Unicode ICU4X.",
+                "Porównywanie tekstów: biblioteka similar.",
+                "Rumuńskie znaki diakrytyczne: lista słów i reguły przygotowane dla Scribe."
+              ]
+            },
+            "Informacje o technologiach współdzielonych z resztą programu znajdują się w sekcji O Syntelab Creative."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Czego Scribe jeszcze nie potrafi",
+          "body": [
+            {
+              "points": [
+                "Bardzo duży plik jest odczytywany strona po stronie i można go zmieniać tylko za pomocą przepisów. Ręczna edycja wymaga otwarcia całego pliku, co zużywa pamięć.",
+                "Narzędzie przywracające rumuńskie znaki diakrytyczne rozpoznaje popularne słowa; rzadkie wyrazy i nazwy pozostają bez zmian.",
+                "Aplikacja nie ma funkcji sprawdzania pisowni.",
+                "Scribe nie wyodrębnia tekstu z plików PDF ani dokumentów biurowych; otwiera je PDF Organizer.",
+                "Edytor nie koloruje składni kodu ani składni Markdown.",
+                "Plik upuszczony na okno otwiera się jako nowy tekst. Aplikacja nie zna jego lokalizacji, więc podczas zapisywania pyta, gdzie umieścić plik."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

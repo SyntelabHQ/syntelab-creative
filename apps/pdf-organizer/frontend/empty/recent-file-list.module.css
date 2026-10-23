@@ -1,0 +1,108 @@
+.recent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 640px;
+  margin-block-start: 28px;
+  text-align: start;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  flex: 1;
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.clear {
+  min-height: 28px;
+  padding-inline: 10px;
+  font-size: 13px;
+}
+
+.none {
+  margin: 0;
+  color: var(--sc-muted);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-l);
+  background: var(--sc-surface);
+  list-style: none;
+}
+
+.list li + li {
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding-block: 10px;
+  padding-inline: 14px;
+  border: 0;
+  background: none;
+  color: var(--sc-text);
+  text-align: start;
+  cursor: pointer;
+}
+
+.file:hover {
+  background: var(--sc-surface-2);
+}
+
+.icon {
+  display: flex;
+  color: var(--pdf-organizer-color, #7A1F3D);
+}
+
+/* On dark themes the color is too dark to draw with: white on a square of it, as the shell does. */
+:root[data-theme='dark'] .icon {
+  padding: 3px;
+  margin: -3px;
+  border-radius: var(--sc-radius-s);
+  background: var(--pdf-organizer-color, #7A1F3D);
+  color: var(--sc-on-color);
+}
+
+.texts {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.name {
+  overflow: hidden;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.folder {
+  overflow: hidden;
+  color: var(--sc-muted);
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.when {
+  flex: none;
+  color: var(--sc-muted);
+  font-size: 13px;
+}

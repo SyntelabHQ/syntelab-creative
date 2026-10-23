@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Ìyípadà",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Àwọn olùyípadà",
+          "body": [
+            "Units ń yí iye padà láti ẹ̀yọ ìwọ̀n kan sí òmíràn: iye kan ní kíákíá, tàbí odindi tábìlì iye lẹ́ẹ̀kan náà. Orí kọ̀ǹpútà rẹ ni gbogbo ìṣirò ti ń ṣẹlẹ̀.",
+            "Àwọn olùyípadà wà nínú àkójọ mẹ́fà: Àwọn Ohun Pàtàkì, Ìrìn àti ìmọ̀ ẹ̀rọ, Agbára àti agbára-ìṣiṣẹ́, Ti sáyẹ́ǹsì, Díjítà àti mídíà, àti Físíìsì àkànṣe. Tí o bá yan ọ̀kan, tábìlì rẹ̀ yóò ṣí.",
+            {
+              "points": [
+                "Olùyípadà máa ń ṣí nínú táàbù tí o wà. Tí iye bá wà nínú tábìlì rẹ̀, a ó kọ́kọ́ bi ọ́: Tẹ̀síwájú (àwọn iye náà yóò sọnù), Ṣí i nínú táàbù tuntun, tàbí Fagilé.",
+                "Ètò → Units → “Ṣí olùyípadà kọ̀ọ̀kan nínú táàbù tirẹ̀” máa ń ṣí olùyípadà kọ̀ọ̀kan tí o bá yàn nínú táàbù tuntun dípò bẹ́ẹ̀.",
+                "Fáìlì → Lọ sí Ìbẹ̀rẹ̀ máa ń padà sí ojú-ewé àkọ́kọ́ Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Ìyípadà kíákíá",
+          "body": [
+            "Ojú-ewé àkọ́kọ́ Units, Ìyípadà kíákíá, máa ń yí iye kan padà láti ẹ̀yọ ìwọ̀n kan sí òmíràn. Yan olùyípadà kan, tẹ iye náà ní apá “Láti”, kí o sì yan ẹ̀yọ ìwọ̀n méjèèjì: èsì yóò hàn ní apá “Sí”.",
+            {
+              "points": [
+                "Apá kọ̀ọ̀kan ń ṣe àkójọ àwọn ẹ̀yọ ìwọ̀n gbajúmọ̀ ti olùyípadà náà àti àwọn ẹ̀yọ ìwọ̀n tìrẹ, pẹ̀lú ìwákiri nínú wọn. Tábìlì olùyípadà náà ní gbogbo ẹ̀yọ ìwọ̀n.",
+                "Bọ́tìnnì tó wà láàrin apá méjèèjì máa ń pààrọ̀ ẹ̀yọ ìwọ̀n méjèèjì.",
+                "Àmì-ìwé tó wà lẹ́gbẹ̀ẹ́ ẹ̀yọ ìwọ̀n kan máa ń kàn án mọ́: àwọn ẹ̀yọ ìwọ̀n tí a kàn mọ́ ló máa ń kọ́kọ́ hàn nínú àkójọ méjèèjì àti nínú pánẹ́lì ẹ̀yọ ìwọ̀n ti tábìlì.",
+                "Bọ́tìnnì tó wà nínú èsì máa ń ṣe ẹ̀dà rẹ̀; × máa ń pa iye náà rẹ́.",
+                "“Ṣí i nínú tábìlì” máa ń ṣí tábìlì olùyípadà náà."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Bí a ṣe ń ka nọ́ńbà àti bí a ṣe ń kọ ọ́",
+          "body": [
+            "O lè tẹ nọ́ńbà tàbí lẹ̀ ẹ́ bí wọ́n ṣe ń kọ ọ́ ní orílẹ̀-èdè ọ̀tọ̀ọ̀tọ̀: a lóye 1,234.56 àti 1.234,56 méjèèjì, bákan náà ààyè tàbí àmì àkékúrú láàrin ẹgbẹẹgbẹ̀rún, àti 1.5e-3 fún agbára mẹ́wàá.",
+            "Nọ́ńbà tí a lè kà ní ọ̀nà méjì (1,234: ẹgbẹ̀rún kan, tàbí ọ̀kan àti díẹ̀) ni a ń kà bí èdè ètò náà ṣe ń kọ nọ́ńbà, ìlà tó wà lábẹ́ tábìlì sì máa ń sọ bẹ́ẹ̀.",
+            "A máa ń kọ èsì pẹ̀lú díjítì ìdá ti ẹ̀yọ ìwọ̀n tí ó dé sí, kì í ṣe pẹ̀lú iye díjítì tí o tẹ̀: 5 cm jẹ́ 1.97 in. Iye tí kì í ṣe òdo máa ń fi díjítì díẹ̀ tó ní ìtumọ̀ hàn nígbà gbogbo, nítorí náà 1 cm jẹ́ 0.00001 km, kì í ṣe 0.000 km láéláé.",
+            "Àwọn iye tó tóbi jù tàbí tó kéré jù láti kà lójú kan ni a ń kọ pẹ̀lú agbára mẹ́wàá, bí 1.6 × 10⁻³⁵. Ìfihàn → Àwọn iye tó ga jù tàbí kéré jù ní kíkún máa ń kọ wọ́n pẹ̀lú gbogbo òdo wọn dípò bẹ́ẹ̀.",
+            "Níbi tí ẹ̀yọ ìwọ̀n kò ti ní irú iye bẹ́ẹ̀ (ìfúnpá ohùn tó jẹ́ òdo kò ní decibel), sẹ́ẹ̀lì náà máa ń fi àmì ìlà kúkúrú hàn."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tábìlì",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Ìlà àti ọ̀wọ̀n",
+          "body": [
+            "Ọ̀wọ̀n kọ̀ọ̀kan jẹ́ ẹ̀yọ ìwọ̀n, ìlà kọ̀ọ̀kan sì jẹ́ iye. Sẹ́ẹ̀lì tí o tẹ̀ sí ló ń darí ìlà rẹ̀: àwọn ọ̀wọ̀n yòókù ń fi iye kan náà hàn nínú ẹ̀yọ ìwọ̀n tiwọn. Sẹ́ẹ̀lì tí o tẹ̀ sí máa ń hàn ní kíkọ dúdú.",
+            "Ohun tí kì í ṣe nọ́ńbà ni a ń pa mọ́, a sì ń fi hàn ní àwọ̀ pupa; ìlà rẹ̀ kò ní yí nǹkan kan padà títí tí o fi tún un ṣe.",
+            {
+              "points": [
+                "Tẹ sẹ́ẹ̀lì kan lẹ́ẹ̀mejì, tàbí kàn bẹ̀rẹ̀ sí í tẹ̀wé sí i, láti ṣàtúnṣe. Enter máa ń lọ sísàlẹ̀, Tab sí ọ̀tún; àwọn kọ́kọ́rọ́ ọfà máa ń gbéra; Escape máa ń fi sẹ́ẹ̀lì sílẹ̀ bí ó ṣe wà.",
+                "Tẹ igun (#) láti yan odindi tábìlì, nọ́ńbà ìlà kan láti yan ìlà rẹ̀, àkọlé kan láti yan ọ̀wọ̀n rẹ̀. Shift+títẹ̀ máa ń yan ibi kan látòkè délẹ̀, Ctrl+títẹ̀ máa ń fi sẹ́ẹ̀lì kún un, fífà náà máa ń yan.",
+                "Home àti End máa ń lọ sí ọ̀wọ̀n àkọ́kọ́ àti ti ìkẹyìn ìlà náà; Ctrl+Home sí sẹ́ẹ̀lì àkọ́kọ́ tábìlì, Ctrl+End sí ti ìkẹyìn. Ctrl pẹ̀lú ọfà máa ń lọ sí etí tábìlì: ìlà àkọ́kọ́ tàbí ti ìkẹyìn, ọ̀wọ̀n àkọ́kọ́ tàbí ti ìkẹyìn. Page Up àti Page Down máa ń gbéra ní ojú-ìbojú kan. Pẹ̀lú Shift, ọ̀kọ̀ọ̀kan wọn máa ń na àṣàyàn náà dípò bẹ́ẹ̀.",
+                "Àṣàyàn sẹ́ẹ̀lì púpọ̀ ní ìlà yíká ìta rẹ̀; sẹ́ẹ̀lì tí ìtẹ̀wé ń lọ sí kò ní àwọ̀ nínú rẹ̀.",
+                "Delete máa ń sọ àwọn ìlà tí a yàn di òfo.",
+                "Títẹ̀wé sí ìlà ìkẹyìn máa ń fi ìlà kan kún un. Tábìlì kò ní iye ìlà tó pọ̀ jù tí ó lè gbà: ó lè gùn tó bí ìrántí kọ̀ǹpútà rẹ ṣe gbà (ìlà kan ń gba 16 báítì, nítorí náà 100 mílíọ̀nù ìlà ń gba nǹkan bí 1.5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Ọ̀wọ̀n àti pánẹ́lì ẹ̀yọ ìwọ̀n",
+          "body": [
+            "Pánẹ́lì tó wà lẹ́gbẹ̀ẹ́ tábìlì ń ṣe àkójọ àwọn ẹ̀yọ ìwọ̀n ti olùyípadà náà. Lókè rẹ̀ ni àwọn ẹ̀yọ ìwọ̀n tó wà nínú tábìlì: tẹ ọ̀kan láti yọ ọ̀wọ̀n rẹ̀ kúrò. Lábẹ́ wọn ni gbogbo ẹ̀yọ ìwọ̀n: wá a nípa orúkọ tàbí àmì, sẹ́ ẹ nípa ẹgbẹ́ tàbí nípa “Gbajúmọ̀”, kí o sì tẹ ẹ̀yọ ìwọ̀n kan láti fi kún un gẹ́gẹ́ bí ọ̀wọ̀n.",
+            "Àmì-ìwé tó wà lẹ́gbẹ̀ẹ́ ẹ̀yọ ìwọ̀n kan máa ń kàn án mọ́ gẹ́gẹ́ bí àyànfẹ́: ó máa ń kọ́kọ́ hàn nínú àkójọ, ó sì máa ń wà níwájú nínú Ìyípadà kíákíá.",
+            {
+              "points": [
+                "Àwọn ọ̀wọ̀n máa ń pín fífẹ̀ tábìlì dọ́gba títí tí àkọlé wọn kò fi ní gbà mọ́; nígbà náà tábìlì máa ń yí lọ sí ẹ̀gbẹ́.",
+                "Fa etí àkọlé kan láti yí fífẹ̀ ọ̀wọ̀n rẹ̀ padà; tẹ etí náà lẹ́ẹ̀mejì láti mú ọ̀wọ̀n náà bá iye rẹ̀ tó gùn jù mu. A tún lè fa ọ̀wọ̀n nọ́ńbà ìlà.",
+                "Bọ́tìnnì ⋮ ti ọ̀wọ̀n kan: gbé e sí òsì tàbí ọ̀tún, kàn án mọ́ etí òsì tàbí ọ̀tún, yí ìpéye rẹ̀ padà, tàbí yọ ọ́ kúrò.",
+                "Ìpéye ọ̀wọ̀n kan máa ń yí ọ̀wọ̀n náà nìkan padà. “Lò ó fún ẹ̀yọ ìwọ̀n yìí níbi gbogbo” máa ń sọ ọ́ di ìpéye ẹ̀yọ ìwọ̀n náà, nínú gbogbo tábìlì àti nínú Ìyípadà kíákíá.",
+                "Bọ́tìnnì tó ní ọfà méjì lẹ́gbẹ̀ẹ́ Dá a padà àti Tún un ṣe máa ń mú àwọn ọ̀wọ̀n bá tábìlì mu: gbogbo fífẹ̀ tí o fà tàbí tí o mú bá a mu yóò lọ, àwọn ọ̀wọ̀n yóò sì tún pín fífẹ̀ tábìlì dọ́gba.",
+                "Apá méjì òkè pánẹ́lì náà, àwọn ẹ̀yọ ìwọ̀n inú tábìlì àti “Fi ẹ̀yọ ìwọ̀n kún un” (ìwákiri àti àwọn àlẹ̀mọ́), máa ń ká wọlé tí o bá tẹ orúkọ wọn, kí àkójọ náà lè ní ààyè púpọ̀ sí i."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Dá a padà, ṣe ẹ̀dà, lẹ̀ ẹ́, gbé wọlé àti kó jáde",
+          "body": [
+            "Ọ̀pá tó wà lórí tábìlì ló ní àwọn irinṣẹ́ rẹ̀.",
+            {
+              "points": [
+                "Dá a padà àti Tún un ṣe (Ctrl+Z, Ctrl+Y) máa ń kọjá gbogbo àyípadà tábìlì náà. Lílẹ̀ kan tàbí gbígbé wọlé kan jẹ́ ìgbésẹ̀ kan.",
+                "Ṣe ẹ̀dà (Ctrl+C) máa ń ṣe ẹ̀dà odindi tábìlì tàbí ohun tí a yàn, bí ìwé ìṣirò (spreadsheet) ṣe ń kà á. “Ìlà di ọ̀wọ̀n” máa ń sọ àwọn ìlà di ọ̀wọ̀n.",
+                "Lẹ̀ ẹ́ (Ctrl+V) máa ń fi àwọn ìlà tí a ṣe ẹ̀dà rẹ̀ sínú tábìlì láti sẹ́ẹ̀lì tó ń ṣiṣẹ́ lọ sísàlẹ̀. Tí ìlà àkọ́kọ́ bá ní àkọlé ẹ̀yọ ìwọ̀n, a máa fi wọ́n bá àwọn ọ̀wọ̀n mu, a sì máa fi àwọn ẹ̀yọ ìwọ̀n tí kò tíì sí nínú tábìlì kún un.",
+                "Gbé wọlé máa ń ka ìwé iṣẹ́ Excel, fáìlì CSV tàbí TSV sí ipò ohun tó wà nínú tábìlì. “Wá fọ́ọ̀mátì náà fúnra rẹ̀” máa ń mọ irú rẹ̀ láti ara fáìlì náà.",
+                "Kó jáde máa ń kọ tábìlì náà sí Excel, CSV, TSV tàbí JSON. Tí kọ́mà bá ń ṣáájú díjítì ìdá, a máa kọ CSV pẹ̀lú àmì ìdádúró-ológbe (;), bí àwọn ìwé ìṣirò ṣe ń retí. Ojú-ìwé Excel kan ń gba ìlà 1,048,576: tábìlì tó gùn jù bẹ́ẹ̀ lọ máa ń tẹ̀síwájú sí àwọn ojú-ìwé tó tẹ̀lé e nínú ìwé iṣẹ́ kan náà, lábẹ́ àkọlé kan náà.",
+                "Rọ́bà ìpanu máa ń sọ àwọn ìlà tí a yàn di òfo; àpò ìdọ̀tí máa ń sọ odindi tábìlì di òfo."
+              ]
+            },
+            "Ìlà kan ń gba iye kan. Nínú ìlà tí a lẹ̀ tàbí tí a gbé wọlé tó ní iye púpọ̀, a máa mú èyí àkọ́kọ́, a sì máa ṣírò àwọn yòókù láti inú rẹ̀.",
+            "Ìlà tó pọ̀ gan-an máa ń gba àkókò láti lẹ̀, gbé wọlé, kó jáde tàbí ṣe ẹ̀dà. Káàdì kan lórí tábìlì yóò wá fi bí iṣẹ́ náà ti lọ sí hàn, ní ìdá ọgọ́rùn-ún àti ní iye ìlà, pẹ̀lú bọ́tìnnì Dá a dúró. Lílẹ̀ tàbí gbígbé wọlé tí a dá dúró máa ń fi tábìlì sílẹ̀ bí ó ṣe wà; kíkó jáde tí a dá dúró kì í kọ fáìlì kankan.",
+            "Tí kọ̀ǹpútà kò bá ní ìrántí tó kù fún àwọn ìlà náà, a kì í yí nǹkan kan padà, ìlà tó wà lábẹ́ tábìlì sì máa ń sọ iye tí a nílò. Tí àwọn ìlà náà bá gbà ṣùgbọ́n a kò lè pa tábìlì àtijọ́ mọ́ lẹ́gbẹ̀ẹ́ wọn, a ó bi ọ́ bóyá kí o tẹ̀síwájú láìsí Dá a padà: a kò ní lè dá àyípadà yẹn àti àwọn tó ṣáájú rẹ̀ padà mọ́. Kí a tó bi ọ́, a máa ń jẹ́ kí àwọn ìgbésẹ̀ Dá a padà tó ti pẹ́ jù lọ lọ, láti ṣe ààyè.",
+            "Àwọn àṣàyàn tábìlì (ẹ̀rọ jíà): ohun tí àkọlé ọ̀wọ̀n ń sọ (orúkọ àti àmì, orúkọ, tàbí àmì), bóyá ẹ̀dà àti ohun tí a kó jáde máa ní àkọlé àti nọ́ńbà ìlà, “Bẹ̀rẹ̀ olùyípadà yìí pẹ̀lú àwọn ọ̀wọ̀n wọ̀nyí”, àti “Dá tábìlì padà sí ti àkọ́kọ́”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Àwọn olùyípadà àkànṣe",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Owó",
+          "body": [
+            "Owó kò ní ìpín tó dúró sójú kan: iye tí owó kan tó máa ń yí padà. Olùyípadà owó máa ń ka iye pàṣípààrọ̀ rẹ̀ láti ọ̀dọ̀ iṣẹ́ ọ̀fẹ́ méjì nígbà tí o bá ń lò ó, àti ìgbà yẹn nìkan.",
+            {
+              "points": [
+                "Owó àwọn orílẹ̀-èdè: Rates By Exchange Rate API, https://www.exchangerate-api.com . Wọ́n máa ń yí padà lẹ́ẹ̀kan lójúmọ́ ní orísun wọn, a kì í sì í kà wọ́n ju ìgbà yẹn lọ.",
+                "Owó kíríptò: Powered by CoinGecko, https://www.coingecko.com . A máa ń kà wọ́n nígbà tí a bá ṣí olùyípadà náà tàbí tí ó bá padà sí iwájú, tí ohun tó ní bá ti ju ìdá mẹ́rin wákàtí lọ, àti nígbà tí o bá tẹ Sọ dọ̀tun; kò sí aago kankan tó ń ṣe é fúnra rẹ̀."
+              ]
+            },
+            "Iye pàṣípààrọ̀ nìkan ni a ń béèrè. A kì í fi ohunkóhun nípa rẹ ránṣẹ́, a kì í sì í fi iye owó tí o ń yí padà ránṣẹ́ láéláé.",
+            "Ìlà tó wà lábẹ́ tábìlì, àti lábẹ́ èsì Ìyípadà kíákíá, máa ń sọ ìgbà tí iye pàṣípààrọ̀ náà ti wá. Láìsí ìsopọ̀, a máa ń lo iye pàṣípààrọ̀ tó kẹ́yìn, a sì máa ń sàmì sí i pé ó ti pẹ́. Owó tí àwọn iṣẹ́ náà kò fún ní iye pàṣípààrọ̀ máa ń fi àmì ìlà kúkúrú hàn.",
+            "Ètò → Units → Owó: o lè pa “Ka iye pàṣípààrọ̀ láti orí ẹ̀rọ ayélujára”, olùyípadà náà yóò sì lo iye pàṣípààrọ̀ tó kẹ́yìn tí ó pa mọ́. “Dárúkọ àwọn orísun lẹ́gbẹ̀ẹ́ iye pàṣípààrọ̀” máa ń fi orúkọ iṣẹ́ méjèèjì hàn tàbí pa wọ́n mọ́ lórí ìlà náà.",
+            "Iye pàṣípààrọ̀ wọ̀nyí wà fún ìmọ̀ nìkan. Má ṣe gbára lé wọn fún ìdúnàádúrà."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Ìpìlẹ̀ nọ́ńbà",
+          "body": [
+            "Àwọn ẹ̀yọ ìwọ̀n olùyípadà yìí jẹ́ ọ̀nà láti kọ odidi nọ́ńbà: ìpìlẹ̀ láti 2 sí 64, nọ́ńbà Róòmù, ìpìlẹ̀ 60 pẹ̀lú àmì kólọ́nì (1:30:15), dẹ́símà tí a kọ ní bínárì (BCD) àti kóòdù Gray. Ọ̀rọ̀ ni iye wọn: tẹ FF lábẹ́ hẹ́ksádẹ́símà, àwọn ọ̀wọ̀n yòókù yóò sì fi 255, 11111111 àti bẹ́ẹ̀ bẹ́ẹ̀ lọ hàn.",
+            "Nọ́ńbà Róòmù bẹ̀rẹ̀ láti I dé MMMCMXCIX (1 sí 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Ẹ̀yọ ìwọ̀n tí kì í ṣe ìpín lásán",
+          "body": [
+            "Ọ̀pọ̀ jù lọ ẹ̀yọ ìwọ̀n jẹ́ ìpín ti òmíràn. Àwọn kan kì í ṣe bẹ́ẹ̀, Units sì ń yí wọn padà bí a ṣe ṣàlàyé wọn: ìgbóná pẹ̀lú àyè-ìbẹ̀rẹ̀ wọn; ìlò epo (lítà fún 100 km ní ìfiwéra pẹ̀lú máìlì fún gálọ́ọ̀nù); gígùn ìgbì ní ìfiwéra pẹ̀lú ìgbohùnsókè; agbára-ìgbéná ní ìfiwéra pẹ̀lú ìdènà; dígírì Baumé, API, Brix àti Plato ní ìfiwéra pẹ̀lú ìwúwo-ìpọ̀; decibel ní ìfiwéra pẹ̀lú ìfúnpá ohùn àti agbára ohùn; ìtẹ̀ ní ìdá ọgọ́rùn-ún ní ìfiwéra pẹ̀lú igun rẹ̀.",
+            "Ìgbóná àti ìyàtọ̀ ìgbóná kì í ṣe ohun kan náà: 100 °C jẹ́ 212 °F, ṣùgbọ́n ìyàtọ̀ 100 °C jẹ́ ìyàtọ̀ 180 °F. Àwọn ẹ̀yọ ìwọ̀n inú ẹgbẹ́ “Ìyàtọ̀ (Δ)” ń yí padà láàrin ara wọn; láàrin wọn àti òṣùwọ̀n ìgbóná, sẹ́ẹ̀lì máa ń fi àmì ìlà kúkúrú hàn."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Àwọn ẹ̀yọ ìwọ̀n tìrẹ",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Ṣíṣe ẹ̀yọ ìwọ̀n",
+          "body": [
+            "O lè fi àwọn ẹ̀yọ ìwọ̀n tìrẹ kún olùyípadà èyíkéyìí. Nínú pánẹ́lì ẹ̀yọ ìwọ̀n, yan “Ẹ̀yọ ìwọ̀n tuntun”, fún un ní orúkọ àti àmì, kí o sì ṣàlàyé rẹ̀ pẹ̀lú ẹ̀yọ ìwọ̀n kan tó ti wà.",
+            {
+              "points": [
+                "Ìpín kan: “1 ìgbésẹ̀ = 0.75 m”. Fún òṣùwọ̀n tí kò bẹ̀rẹ̀ láti òdo, ohun tí a ń fi kún un lẹ́yìn ìsọdipúpọ̀ pẹ̀lú.",
+                "Àgbékalẹ̀ kan: bí iye náà ṣe ń di ẹ̀yọ ìwọ̀n kejì, pẹ̀lú x fún iye náà, àti àgbékalẹ̀ fún ọ̀nà ìpadà. Fún àpẹẹrẹ x * 9 / 5 + 32 àti (x - 32) * 5 / 9."
+              ]
+            },
+            "A máa ń dán ohun tí o tẹ̀ wò bí o ṣe ń tẹ̀ ẹ́, a sì máa ń fi ohun tí ẹ̀yọ ìwọ̀n rẹ kan jẹ́ hàn kí o tó pa á mọ́. Àgbékalẹ̀ lè lo + − × ÷ ^, àkámọ́, x, pi, e, àti àwọn iṣẹ́ sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos àti atan. A máa ń ṣírò rẹ̀, a kì í ṣiṣẹ́ rẹ̀ gẹ́gẹ́ bí ètò kọ̀ǹpútà láéláé.",
+            "Àwọn ẹ̀yọ ìwọ̀n rẹ wà lábẹ́ “Tèmi” nínú pánẹ́lì, níbi tí o ti lè yí wọn padà tàbí yọ wọ́n kúrò. A lè ṣàlàyé ẹ̀yọ ìwọ̀n rẹ kan pẹ̀lú ẹ̀yọ ìwọ̀n rẹ mìíràn; yíyọ ẹ̀yọ ìwọ̀n kan kúrò máa ń yọ àwọn tí a ṣàlàyé pẹ̀lú rẹ̀ kúrò.",
+            "Ètò → Units ń ṣe àkójọ àwọn ẹ̀yọ ìwọ̀n rẹ nínú gbogbo olùyípadà, ó sì ń kó wọn jáde tàbí gbé wọn wọlé gẹ́gẹ́ bí ọ̀rọ̀ tí o lè pa mọ́ tàbí gbé lọ sí kọ̀ǹpútà mìíràn."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ètò",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Ètò Units",
+          "body": [
+            "Fáìlì → Ṣí Ètò máa ń ṣí ètò Units; àwọn àṣàyàn tábìlì (ẹ̀rọ jíà inú ọ̀pá rẹ̀) náà máa ń ṣe bẹ́ẹ̀.",
+            {
+              "points": [
+                "Ṣí olùyípadà kọ̀ọ̀kan nínú táàbù tirẹ̀, tàbí nínú táàbù tí o wà.",
+                "Àwọn iye tó ga jù tàbí kéré jù ní kíkún, ohun tí a ń kọ láàárín àwọn ẹgbẹ̀rún (10000.000, 10 000.000 tàbí 10,000.000; kò sí nǹkan kan, àyàfi tí o bá yan òmíràn), àti nọ́ńbà ìlà.",
+                "Owó: bóyá a ń ka iye pàṣípààrọ̀ láti orí ẹ̀rọ ayélujára, àti bóyá a ń dárúkọ àwọn iṣẹ́ náà lẹ́gbẹ̀ẹ́ wọn.",
+                "Ìpéye àwọn ẹ̀yọ ìwọ̀n: yan olùyípadà kan (tàbí “Àwọn ẹ̀yọ ìwọ̀n tí o yí padà”), wá ẹ̀yọ ìwọ̀n kan, kí o sì ṣètò díjítì ìdá rẹ̀ pẹ̀lú − àti +; ọfà máa ń dá a padà sí ti ẹ̀yọ ìwọ̀n náà. “Lò ó fún ẹ̀yọ ìwọ̀n yìí níbi gbogbo” nínú àkójọ ọ̀wọ̀n kan máa ń ṣètò iye kan náà.",
+                "Àwọn ẹ̀yọ ìwọ̀n tí tábìlì fi ń bẹ̀rẹ̀: àwọn olùyípadà tí o ti yan ọ̀wọ̀n àkọ́kọ́ wọn, ọ̀kọ̀ọ̀kan pẹ̀lú ọ̀nà láti padà sí àwọn tí ó wá pẹ̀lú rẹ̀.",
+                "Àwọn ẹ̀yọ ìwọ̀n tìrẹ."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Nípa Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Nípa Units",
+          "body": [
+            "Units ni ètò ìyípadà ẹ̀yọ ìwọ̀n ti Syntelab Creative: olùyípadà 38 pẹ̀lú ẹ̀yọ ìwọ̀n tó ju 1,500 lọ, láti gígùn àti ìgbóná dé owó àti ìpìlẹ̀ nọ́ńbà. Iye tí o tẹ̀ lẹ́ẹ̀kan máa ń hàn nínú gbogbo ẹ̀yọ ìwọ̀n tí o béèrè, nínú tábìlì tó lè gba iye kan tàbí mílíọ̀nù.",
+            "A ń ṣírò nọ́ńbà ní pàtó, gẹ́gẹ́ bí ìdá, a sì ń dín wọn kù nígbà tí a bá ń kọ wọ́n nìkan. Orí kọ̀ǹpútà yìí ni gbogbo nǹkan ti ń ṣẹlẹ̀; iye pàṣípààrọ̀ owó nìkan ni a ń kà láti orí ẹ̀rọ ayélujára, o sì lè pa ìyẹn.",
+            "Ó ṣẹ̀ṣẹ̀ dé ni. Níbi tí kò bá ti tó fún iṣẹ́ rẹ, sọ fún wa nípasẹ̀ Ìrànlọ́wọ́ → Èrò rẹ: bẹ́ẹ̀ ni a ṣe ń mọ ohun tí a ó ṣiṣẹ́ lé lórí."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Iye ìlà tí tábìlì lè gbà: ohun tí a wọ̀n",
+          "body": [
+            "Tábìlì kò ní ààlà ìlà tó dúró sójú kan: ó lè gùn tó bí ìrántí kọ̀ǹpútà rẹ ṣe gbà. Ìlà kan ń gba 16 báítì, nítorí náà 100 mílíọ̀nù ìlà ń gba nǹkan bí 1.5 GB. Tí ìrántí bá tán, tábìlì máa ń wà bí ó ṣe wà, ètò náà sì máa ń sọ iye tí a nílò.",
+            "A wọ̀n ọ́n pẹ̀lú ìlà 50,000,000, ọ̀kọ̀ọ̀kan jẹ́ nọ́ńbà kan nínú ọ̀wọ̀n kan, nínú ẹ̀dà ètò náà tí a ti mú yára:",
+            {
+              "points": [
+                "Lílẹ̀ ìlà 50,000,000: nǹkan bí ìṣẹ́jú-àáyá 7.",
+                "Gbígbé wọn wọlé láti fáìlì CSV: ìṣẹ́jú-àáyá 12.",
+                "Kíkó wọn jáde sí fáìlì CSV, pẹ̀lú ọ̀wọ̀n kejì tí a yí padà: nǹkan bí ìṣẹ́jú 3.5.",
+                "Kíkó wọn jáde sí Excel, lórí ojú-ìwé 48: ìṣẹ́jú 4.3."
+              ]
+            },
+            "Kíkó jáde máa ń pẹ́ ju gbígbé wọlé lọ nítorí pé a máa ń kọ́kọ́ yí sẹ́ẹ̀lì kọ̀ọ̀kan tí a ń kọ padà ní pàtó.",
+            {
+              "note": "Kọ̀ǹpútà tí a fi ṣe ìdánwò náà: AMD Ryzen 9 9950X3D (kóòdù 16, okùn 32), ìrántí 64 GB, Windows 11 Pro. Oṣù Kẹwàá 2026. Lórí kọ̀ǹpútà mìíràn, àkókò yóò yàtọ̀; ìwọ̀n ìlà kan kò ní yàtọ̀."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Ohun tí a fi kọ́ Units",
+          "body": [
+            {
+              "points": [
+                "Nọ́ńbà pàtó: àwọn ilé-ìkàwé num ti Rust (ìdá odidi nọ́ńbà ti ìtóbi èyíkéyìí).",
+                "Àwọn ẹ̀yọ ìwọ̀n, ìpín wọn àti ẹgbẹ́ wọn: fáìlì dátà ti ètò náà, ọ̀kan fún olùyípadà kọ̀ọ̀kan.",
+                "Kíka ìwé iṣẹ́ Excel àti OpenDocument: calamine. Kíkọ ìwé iṣẹ́ Excel: rust_xlsxwriter.",
+                "Pátákó ìgbàdí ẹ̀rọ, fún ṣíṣe ẹ̀dà àti lílẹ̀ ìlà tó pọ̀ gan-an: arboard.",
+                "Iye pàṣípààrọ̀ owó: ExchangeRate-API àti CoinGecko (wo “Owó”)."
+              ]
+            },
+            "Ohun tí ó ń pín pẹ̀lú ìyókù ètò náà wà lábẹ́ “Nípa Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ohun tí Units kò tíì lè ṣe",
+          "body": [
+            {
+              "points": [
+                "Ìlà kan ń gba iye kan: nínú ìlà tí a lẹ̀ tó ní iye púpọ̀, èyí àkọ́kọ́ ni a ń mú.",
+                "Kíkó ìlà tó pọ̀ gan-an jáde máa ń lọ́ra (wo ohun tí a wọ̀n).",
+                "Ohun tí a ṣe ẹ̀dà rẹ̀ sí pátákó ìgbàdí máa ń wà nínú ìrántí gẹ́gẹ́ bí ọ̀rọ̀ kan kí a tó lẹ̀ ẹ́.",
+                "Iye pàṣípààrọ̀ owó jẹ́ tuntun tó bí orísun méjèèjì ṣe fún wọn: lẹ́ẹ̀kan lójúmọ́ fún owó àwọn orílẹ̀-èdè."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

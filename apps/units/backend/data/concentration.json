@@ -1,0 +1,40 @@
+{
+  "id": "concentration",
+  "category": "scientific",
+  "icon": "vial",
+  "base": "g-l",
+  "startsWith": ["ppm","ppb"],
+  "decimals": 4,
+  "groups": [
+    { "id": "mass_concentration", "color": "#2563eb" },
+    { "id": "percentage", "color": "#ea580c" },
+    { "id": "parts_per", "color": "#9333ea" },
+    { "id": "specialized", "color": "#059669" }
+  ],
+  "units": [
+    {"id":"g-l","symbol":"g/L","group":"mass_concentration","factor":"1","popular":true},
+    {"id":"mg-l","symbol":"mg/L","group":"mass_concentration","factor":"0.001","popular":true},
+    {"id":"ug-l","symbol":"µg/L","group":"mass_concentration","factor":"0.000001","popular":true},
+    {"id":"ng-l","symbol":"ng/L","group":"mass_concentration","factor":"0.000000001"},
+    {"id":"pg-l","symbol":"pg/L","group":"mass_concentration","factor":"0.000000000001"},
+    {"id":"kg-l","symbol":"kg/L","group":"mass_concentration","factor":"1000"},
+    {"id":"kg-m3","symbol":"kg/m³","group":"mass_concentration","factor":"1","popular":true},
+    {"id":"g-m3","symbol":"g/m³","group":"mass_concentration","factor":"0.001"},
+    {"id":"mg-m3","symbol":"mg/m³","group":"mass_concentration","factor":"0.000001"},
+    {"id":"ug-m3","symbol":"µg/m³","group":"mass_concentration","factor":"0.000000001"},
+    {"id":"g-ml","symbol":"g/mL","group":"mass_concentration","factor":"1000","popular":true},
+    {"id":"mg-ml","symbol":"mg/mL","group":"mass_concentration","factor":"1","popular":true},
+    {"id":"ug-ml","symbol":"µg/mL","group":"mass_concentration","factor":"0.001"},
+    {"id":"g-dl","symbol":"g/dL","group":"mass_concentration","factor":"10","popular":true},
+    {"id":"mg-dl","symbol":"mg/dL","group":"mass_concentration","factor":"0.01","popular":true},
+    {"id":"percent-mass-vol","symbol":"%w/v","group":"percentage","factor":"10","popular":true},
+    {"id":"ppm","symbol":"ppm","group":"parts_per","factor":"0.001","popular":true},
+    {"id":"ppb","symbol":"ppb","group":"parts_per","factor":"0.000001","popular":true},
+    {"id":"ppt","symbol":"ppt","group":"parts_per","factor":"0.000000001","popular":true},
+    {"id":"ppq","symbol":"ppq","group":"parts_per","factor":"0.000000000001"},
+    {"id":"grain-gal","symbol":"gpg","group":"specialized","factor":"0.01712","popular":true},
+    {"id":"french-hardness","symbol":"°fH","group":"specialized","factor":"0.01","popular":true},
+    {"id":"german-hardness","symbol":"°dH","group":"specialized","factor":"0.01783"},
+    {"id":"english-hardness","symbol":"°e","group":"specialized","factor":"0.01427"}
+  ]
+}

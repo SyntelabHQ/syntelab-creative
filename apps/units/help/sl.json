@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Pretvorba",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Pretvorniki",
+          "body": [
+            "Units pretvarja vrednosti med merskimi enotami: eno vrednost hitro ali cele tabele vrednosti naenkrat. Vse se izračuna na vašem računalniku.",
+            "Pretvorniki so razvrščeni v šest menijev: Osnovno, Gibanje in mehanika, Energija in moč, Znanost, Digitalno in mediji ter Specializirana fizika. Izbira pretvornika odpre njegovo tabelo.",
+            {
+              "points": [
+                "Pretvornik se odpre v zavihku, v katerem se nahajate. Če tabela vsebuje vrednosti, vas program najprej vpraša: Nadaljuj (vrednosti bodo izbrisane), Odpri v novem zavihku ali Prekliči.",
+                "Nastavitve → Units → »Vsak pretvornik odpri v lastnem zavihku« namesto tega odpre vsak izbrani pretvornik v novem zavihku.",
+                "Datoteka → Pojdi na Začetek vrne na prvo stran Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Hitra pretvorba",
+          "body": [
+            "Prva stran Units, Hitra pretvorba, pretvori eno vrednost iz ene enote v drugo. Izberite pretvornik, vpišite vrednost na strani »Iz« in izberite obe enoti: rezultat je na strani »V«.",
+            {
+              "points": [
+                "Na vsaki strani so navedene priljubljene enote pretvornika in vaše lastne enote, z iskanjem po njih. Tabela pretvornika vsebuje vse enote.",
+                "Gumb med stranema zamenja enoti.",
+                "Zaznamek ob enoti jo pripne: pripete enote so prve na obeh seznamih in v plošči enot tabele.",
+                "Gumb v rezultatu ga kopira; × počisti vrednost.",
+                "»Odpri v tabeli« odpre tabelo pretvornika."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Kako se števila berejo in zapisujejo",
+          "body": [
+            "Števila lahko vpišete ali prilepite tako, kot jih pišejo v različnih državah: razumljeni sta tako 1,234.56 kot 1.234,56, prav tako presledki in apostrofi med tisočicami ter 1.5e-3 za potenco števila deset.",
+            "Število, ki ga je mogoče prebrati na dva načina (1,234: tisoč ali nekaj več kot ena), se prebere tako, kot števila zapisuje jezik programa, in vrstica pod tabelo to navede.",
+            "Rezultat je zapisan z decimalnimi mesti enote, v katero se pretvori, ne s toliko števkami, kot ste jih vpisali: 5 cm je 1,97 in. Vrednost, ki ni nič, vedno prikaže nekaj pomenljivih števk, zato je 1 cm 0,00001 km in nikoli 0,000 km.",
+            "Vrednosti, prevelike ali premajhne za branje na prvi pogled, so zapisane s potenco števila deset, na primer 1,6 × 10⁻³⁵. Pogled → Ekstremne vrednosti v celoti jih namesto tega zapiše z vsemi ničlami.",
+            "Kjer enota take vrednosti nima (zvočni tlak nič nima decibelov), celica prikaže pomišljaj."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabela",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Vrstice in stolpci",
+          "body": [
+            "Vsak stolpec je enota in vsaka vrstica vrednost. Celica, v katero vpisujete, upravlja svojo vrstico: drugi stolpci prikažejo isto vrednost v svojih enotah. Vpisana celica je prikazana krepko.",
+            "Kar ni število, se ohrani in prikaže rdeče; njegova vrstica ne pretvori ničesar, dokler tega ne popravite.",
+            {
+              "points": [
+                "Za urejanje dvokliknite celico ali preprosto začnite vanjo pisati. Enter premakne navzdol, Tab desno; puščice premikajo; Escape pusti celico v prvotnem stanju.",
+                "Kliknite kot (#) za izbiro celotne tabele, številko vrstice za izbiro njene vrstice, naslov za izbiro njenega stolpca. Shift+klik izbere razpon, Ctrl+klik doda celice, izbira je možna tudi z vlečenjem.",
+                "Home in End gredo do prvega in zadnjega stolpca vrstice; Ctrl+Home do prve celice tabele, Ctrl+End do zadnje. Ctrl s puščico gre do roba tabele: prve ali zadnje vrstice, prvega ali zadnjega stolpca. Page Up in Page Down premikata za zaslon. S Shiftom namesto tega razširijo izbiro.",
+                "Izbira več celic je obrobljena po zunanjem robu; celica, v katero se vpisuje, ostane v njej neosenčena.",
+                "Delete izprazni izbrane vrstice.",
+                "Vpisovanje v zadnjo vrstico doda vrstico. Tabela nima največje velikosti: dolga je toliko, kolikor dopušča pomnilnik vašega računalnika (vrstica zasede 16 bajtov, zato 100 milijonov vrstic zasede približno 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Stolpci in plošča enot",
+          "body": [
+            "Plošča poleg tabele navaja enote pretvornika. Na vrhu so enote v tabeli: kliknite enoto, da odstranite njen stolpec. Pod njimi so vse enote: iščite po imenu ali simbolu, filtrirajte po skupini ali po »Priljubljene« in kliknite enoto, da jo dodate kot stolpec.",
+            "Zaznamek ob enoti jo pripne kot priljubljeno: na seznamu je prva in prva je tudi v Hitri pretvorbi.",
+            {
+              "points": [
+                "Stolpci si širino tabele delijo enakomerno, dokler se njihovi naslovi še prilegajo; nato se tabela pomika vodoravno.",
+                "Povlecite rob naslova, da spremenite širino stolpca; dvokliknite rob, da stolpec prilagodite njegovi najdaljši vrednosti. Povlečete lahko tudi stolpec s številkami vrstic.",
+                "Gumb ⋮ stolpca: premaknite ga levo ali desno, pripnite ga na levi ali desni rob, spremenite njegovo natančnost ali ga odstranite.",
+                "Natančnost stolpca spremeni samo ta stolpec. »Za to enoto uporabi povsod« jo nastavi kot natančnost enote v vseh tabelah in v Hitri pretvorbi.",
+                "Gumb z dvema puščicama poleg »Razveljavi« in »Ponovi« prilagodi stolpce tabeli: vse širine, ki ste jih povlekli ali prilagodili, izginejo in stolpci si spet enakomerno delijo širino tabele.",
+                "Zgornja dela plošče, enote v tabeli in »Dodaj enote« (iskanje in filtri), se s klikom na njuno ime strneta, da ima seznam več prostora."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Razveljavitev, kopiranje, prilepljanje, uvoz in izvoz",
+          "body": [
+            "V vrstici nad tabelo se nahajajo njena orodja.",
+            {
+              "points": [
+                "»Razveljavi« in »Ponovi« (Ctrl+Z, Ctrl+Y) gresta skozi vse spremembe tabele. Prilepljanje ali uvoz je en korak.",
+                "»Kopiraj« (Ctrl+C) kopira celotno tabelo ali izbor v obliki, ki jo prebere preglednica. »Transponirano« spremeni vrstice v stolpce.",
+                "»Prilepi« (Ctrl+V) vstavi kopirane vrstice v tabelo od aktivne celice navzdol. Če prva vrstica vsebuje naslove enot, se stolpci ujemajo po njih, enote, ki jih v tabeli še ni, pa se dodajo.",
+                "»Uvozi« prebere delovni zvezek Excel, datoteko CSV ali TSV namesto vsebine tabele. »Samodejno zaznaj format« prepozna vrsto po datoteki.",
+                "»Izvozi« zapiše tabelo kot Excel, CSV, TSV ali JSON. Če je pred decimalkami vejica, se CSV zapiše s podpičji, kot pričakujejo preglednice. List v Excelu sprejme 1.048.576 vrstic: daljša tabela se nadaljuje na naslednjih listih istega delovnega zvezka pod enakimi naslovi.",
+                "Radirka izprazni izbrane vrstice; koš izprazni celotno tabelo."
+              ]
+            },
+            "Vrstica vsebuje eno vrednost. Pri prilepljeni ali uvoženi vrstici, ki ima več vrednosti, se prevzame prva, ostale pa se iz nje izračunajo.",
+            "Prilepljanje, uvoz, izvoz ali kopiranje zelo velikega števila vrstic traja nekaj časa. Nad tabelo se tedaj prikaže kartica, ki v odstotkih in vrsticah kaže, kako daleč je delo, z gumbom Ustavi. Ustavljeno prilepljanje ali uvoz pusti tabelo nespremenjeno; ustavljen izvoz ne zapiše nobene datoteke.",
+            "Če računalnik nima več pomnilnika za vrstice, se nič ne spremeni, vrstica pod tabelo pa navede, koliko ga je bilo potrebnega. Če vrstice gredo v pomnilnik, prejšnje tabele pa ni mogoče obdržati poleg njih, vas program vpraša, ali želite nadaljevati brez razveljavljanja: te spremembe in prejšnjih potem ni več mogoče razveljaviti. Preden vpraša, opusti najstarejše korake razveljavljanja, da sprosti prostor.",
+            "Možnosti tabele (zobnik): kaj piše v naslovu stolpca (ime in simbol, ime ali simbol), ali kopije in izvozi vključujejo naslove in številke vrstic, »Začni ta pretvornik s temi stolpci« in »Ponastavi tabelo«."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Posebni pretvorniki",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valuta",
+          "body": [
+            "Valute nimajo stalnega faktorja: njihova vrednost se spreminja. Pretvornik valut bere tečaje iz dveh brezplačnih storitev, medtem ko ga uporabljate, in samo takrat.",
+            {
+              "points": [
+                "Valute držav: Rates By Exchange Rate API, https://www.exchangerate-api.com . Na izvoru se spremenijo enkrat na dan in se ne berejo pogosteje.",
+                "Kriptovalute: Powered by CoinGecko, https://www.coingecko.com . Preberejo se, ko se pretvornik odpre ali ponovno pride v ospredje in so podatki starejši od četrt ure, ter ko pritisnete Osveži; nikoli po časovniku."
+              ]
+            },
+            "Zahtevajo se le tečaji. O vas se ne pošlje nič, prav tako nikoli zneski, ki jih pretvarjate.",
+            "Vrstica pod tabelo in pod rezultatom Hitre pretvorbe navaja, s katerega časa so tečaji. Brez povezave se uporabijo zadnji tečaji, označeni kot stari. Valuta, za katero storitvi ne dajeta tečaja, prikaže pomišljaj.",
+            "Nastavitve → Units → Valuta: »Beri tečaje iz omrežja« lahko izklopite, pretvornik pa nato uporabi zadnje shranjene tečaje. »Prikaži imena izvorov ob tečajih« prikaže ali skrije imeni obeh storitev v tej vrstici.",
+            "Tečaji so namenjeni zgolj informativnim namenom. Ne zanašajte se nanje pri transakcijah."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Številska baza",
+          "body": [
+            "Enote tega pretvornika so načini zapisa celega števila: baze od 2 do 64, rimske številke, baza 60 z dvopičji (1:30:15), binarno kodirana decimalna števila in Grayeva koda. Njihove vrednosti so besedilo: vpišite FF pod »heksadecimalni« in drugi stolpci prikažejo 255, 11111111 in tako naprej.",
+            "Rimske številke segajo od I do MMMCMXCIX (1 do 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Enote, ki niso preprost faktor",
+          "body": [
+            "Večina enot je faktor druge enote. Nekatere niso in Units jih pretvarja tako, kot so definirane: temperature z njihovimi zamiki; poraba goriva (litri na 100 km proti miljam na galon); valovna dolžina proti frekvenci; prevodnost proti upornosti; stopinje Baumé, API, Brix in Plato proti gostoti; decibeli proti zvočnemu tlaku in jakosti; naklon v odstotkih proti njegovemu kotu.",
+            "Temperatura in temperaturna razlika nista isto: 100 °C je 212 °F, razlika 100 °C pa je razlika 180 °F. Enote skupine »Razlika (Δ)« se pretvarjajo med seboj; med njimi in temperaturnimi lestvicami celica prikaže pomišljaj."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vaše lastne enote",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Ustvarjanje enote",
+          "body": [
+            "Kateremukoli pretvorniku lahko dodate svoje enote. V plošči enot izberite »Nova enota«, ji dajte ime in simbol ter jo opredelite z obstoječo enoto.",
+            {
+              "points": [
+                "Faktor: \"1 korak = 0,75 m\". Za lestvico, ki ne začne pri ničli, dodajte tudi vrednost, ki se prišteje po množenju.",
+                "Formula: kako vrednost postane druga enota, pri čemer je x vrednost, ter formula za obratno pretvorbo. Na primer x * 9 / 5 + 32 in (x - 32) * 5 / 9."
+              ]
+            },
+            "Vpisano se preizkuša med pisanjem, koliko znaša ena vaša enota, pa je prikazano, preden jo shranite. Formula lahko uporablja + − × ÷ ^, oklepaje, x, pi, e in funkcije sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos in atan. Formula se izračuna, nikoli pa se ne izvede kot program.",
+            "Vaše enote so navedene pod »Moje« v plošči, kjer jih lahko spremenite in odstranite. Vašo enoto lahko opredelite z drugo vašo enoto; odstranitev enote odstrani tudi enote, opredeljene z njo.",
+            "Nastavitve → Units navede vaše enote za vsak pretvornik ter jih izvozi in uvozi kot besedilo, ki ga lahko shranite ali prenesete na drugi računalnik."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nastavitve",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Nastavitve Units",
+          "body": [
+            "Datoteka → Odpri nastavitve odpre nastavitve Units; prav tako možnosti tabele (zobnik v njeni vrstici orodij).",
+            {
+              "points": [
+                "Vsak pretvornik odpri v lastnem zavihku ali v zavihku, v katerem ste.",
+                "Ekstremne vrednosti v celoti, kaj se piše med tisočicami (10000,000, 10 000,000 ali 10.000,000; nič, če ne izberete drugače) in številke vrstic.",
+                "Valuta: ali se tečaji berejo iz omrežja in ali sta ob njih navedeni storitvi.",
+                "Natančnost enot: izberite pretvornik (ali »Spremenjene enote«), poiščite enoto in z − in + nastavite število decimalnih mest; puščica vrne lastno natančnost enote. »Za to enoto uporabi povsod« v meniju stolpca nastavi isto vrednost.",
+                "Enote, s katerimi se tabela začne: pretvorniki, katerih prve stolpce ste izbrali, vsak z možnostjo vrnitve na enote, ki so priložene pretvorniku.",
+                "Vaše lastne enote."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O Units",
+          "body": [
+            "Units je aplikacija za pretvarjanje v Syntelab Creative: 38 pretvornikov z več kot 1.500 enotami, od dolžine in temperature do valut in številskih baz. Enkrat vpisana vrednost se prikaže v vseh enotah, ki jih želite, v tabeli, ki sprejme eno vrednost ali milijone.",
+            "Števila se izračunajo natančno, kot ulomki, in se zaokrožijo šele pri zapisu. Vse se izvede na tem računalniku; le tečaji valut se berejo iz omrežja, kar lahko izklopite.",
+            "Program je nov. Če za vaše delo ne zadostuje, nam sporočite prek Pomoč → Povratne informacije: tako vemo, kaj izboljšati."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Koliko vrstic sprejme tabela: kaj smo izmerili",
+          "body": [
+            "Tabela nima fiksne omejitve števila vrstic: je dolga toliko, kolikor dopušča pomnilnik vašega računalnika. Ena vrstica zasede 16 bajtov, zato 100 milijonov vrstic zasede približno 1,5 GB. Ko pomnilnik zmanjka, tabela ostane takšna, kot je bila, program pa sporoči, koliko pomnilnika je bilo potrebno.",
+            "Izmerili smo s 50.000.000 vrsticami, vsaka s številom v enem stolpcu, v optimizirani različici programa:",
+            {
+              "points": [
+                "Prilepljanje 50.000.000 vrstic: približno 7 sekund.",
+                "Uvoz iz CSV datoteke: 12 sekund.",
+                "Izvoz v datoteko CSV z drugim, pretvorjenim stolpcem: približno 3,5 minute.",
+                "Izvoz v Excel na 48 listov: 4,3 minute."
+              ]
+            },
+            "Izvoz traja dlje kot uvoz, saj se vsaka celica, ki se zapiše, najprej natančno pretvori.",
+            {
+              "note": "Računalnik, na katerem je bil izveden test: AMD Ryzen 9 9950X3D (16 jeder, 32 niti), 64 GB pomnilnika, Windows 11 Pro. Oktober 2026. Na drugem računalniku bodo časi drugačni; velikost vrstice ne."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "S čim je Units zgrajen",
+          "body": [
+            {
+              "points": [
+                "Natančna števila: knjižnice num jezika Rust (ulomki celih števil poljubne velikosti).",
+                "Enote, njihovi faktorji in skupine: podatkovne datoteke programa, ena za vsak pretvornik.",
+                "Branje delovnih zvezkov Excel in OpenDocument: calamine. Pisanje delovnih zvezkov Excel: rust_xlsxwriter.",
+                "Sistemsko odložišče za kopiranje in prilepljanje zelo velikega števila vrstic: arboard.",
+                "Tečaji valut: ExchangeRate-API in CoinGecko (glejte »Valuta«)."
+              ]
+            },
+            "Kaj ima skupnega z ostalim programom, je opisano pod »O Syntelab Creative«."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Kaj Units še ne zna",
+          "body": [
+            {
+              "points": [
+                "Vrstica vsebuje eno vrednost: pri prilepljeni vrstici z več vrednostmi se prevzame prva.",
+                "Izvoz zelo velikega števila vrstic je počasen (glejte naše meritve).",
+                "Kar se kopira v odložišče, se pred prilepljanjem hrani v pomnilniku kot eno besedilo.",
+                "Tečaji valut so tako sveži, kot jih dajeta njuna vira: za valute držav enkrat na dan."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

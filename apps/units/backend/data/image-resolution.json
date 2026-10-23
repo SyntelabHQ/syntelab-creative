@@ -1,0 +1,39 @@
+{
+  "id": "image-resolution",
+  "category": "digital",
+  "icon": "desktop",
+  "base": "pixel",
+  "startsWith": ["megapixel","fhd-1080p"],
+  "decimals": 2,
+  "groups": [
+    { "id": "pixel_counts", "color": "#9333ea" },
+    { "id": "video_standards", "color": "#2563eb" },
+    { "id": "cinema_standards", "color": "#dc2626" }
+  ],
+  "units": [
+    {"id":"pixel","symbol":"px","group":"pixel_counts","factor":"1","popular":true,"decimals":1},
+    {"id":"megapixel","symbol":"MP","group":"pixel_counts","factor":"1000000","popular":true},
+    {"id":"kilopixel","symbol":"kpx","group":"pixel_counts","factor":"1000"},
+    {"id":"gigapixel","symbol":"GP","group":"pixel_counts","factor":"1000000000","decimals":3},
+    {"id":"qvga","symbol":"QVGA","group":"video_standards","factor":"76800"},
+    {"id":"vga","symbol":"VGA","group":"video_standards","factor":"307200","popular":true},
+    {"id":"svga","symbol":"SVGA","group":"video_standards","factor":"480000"},
+    {"id":"xga","symbol":"XGA","group":"video_standards","factor":"786432"},
+    {"id":"hd-720p","symbol":"720p","group":"video_standards","factor":"921600","popular":true},
+    {"id":"wxga","symbol":"WXGA","group":"video_standards","factor":"1024000"},
+    {"id":"hd-plus","symbol":"HD+","group":"video_standards","factor":"1440000"},
+    {"id":"fhd-1080p","symbol":"1080p","group":"video_standards","factor":"2073600","popular":true},
+    {"id":"wuxga","symbol":"WUXGA","group":"video_standards","factor":"2304000"},
+    {"id":"qhd-1440p","symbol":"1440p","group":"video_standards","factor":"3686400","popular":true},
+    {"id":"wqhd","symbol":"WQHD","group":"video_standards","factor":"4953600"},
+    {"id":"uhd-4k","symbol":"4K","group":"video_standards","factor":"8294400","popular":true},
+    {"id":"uhd-5k","symbol":"5K","group":"video_standards","factor":"14745600","popular":true},
+    {"id":"uhd-6k","symbol":"6K","group":"video_standards","factor":"21233664"},
+    {"id":"uhd-8k","symbol":"8K","group":"video_standards","factor":"33177600","popular":true},
+    {"id":"uhd-10k","symbol":"10K","group":"video_standards","factor":"58982400"},
+    {"id":"uhd-12k","symbol":"12K","group":"video_standards","factor":"84934656"},
+    {"id":"dci-2k","symbol":"2K DCI","group":"cinema_standards","factor":"2211840","popular":true},
+    {"id":"dci-4k","symbol":"4K DCI","group":"cinema_standards","factor":"8847360","popular":true},
+    {"id":"dci-8k","symbol":"8K DCI","group":"cinema_standards","factor":"35389440"}
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Permulaan",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Apa itu Syntelab Creative",
+          "body": [
+            "Syntelab Creative ialah satu program yang terdiri daripada aplikasi. Setiap aplikasi melakukan satu jenis kerja:",
+            {
+              "points": [
+                "PDF Organizer membaca, menyusun, mengedit dan menandatangani dokumen PDF.",
+                "Scribe ialah penyunting teks dengan alatan yang membersih, menyisih, membanding dan mengubah teks.",
+                "Units menukar antara unit: panjang, suhu, mata wang dan banyak lagi.",
+                "Dev menghimpunkan alatan untuk pembangun: kod dan dekod, format dan semak, tukar satu bentuk data kepada bentuk lain."
+              ]
+            },
+            "Aplikasi-aplikasi ini berkongsi satu tetingkap, satu set tetapan dan satu cara kerja, jadi apa yang anda pelajari dalam satu aplikasi adalah sama untuk aplikasi seterusnya.",
+            {
+              "note": "Segala-galanya berlaku pada komputer anda. Dokumen anda tidak pernah dihantar ke mana-mana, dan tiada maklumat tentang anda atau kerja anda yang dikumpul."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Tetingkap",
+          "body": [
+            {
+              "points": [
+                "Bar di sisi: ikon rumah membawa ke Mula, kemudian diikuti oleh aplikasi anda, dan di bahagian bawah terdapat berita program, Maklum balas, Sokongan dan Tetapan.",
+                "Dalam aplikasi, Fail → Pergi ke Mula pergi ke halaman pertama aplikasi tersebut jika ada (Units, Scribe), dan Fail → Buka Tetapan (Ctrl+,) membuka Tetapan pada bahagian aplikasi itu sendiri; bahagian lain boleh dicapai dengan satu klik di sana.",
+                "Tab di bahagian atas: setiap dokumen, pengikat atau alatan yang anda buka mempunyai tab sendiri. Titik pada tab menunjukkan terdapat perubahan yang belum disimpan.",
+                "Menu aplikasi, di bawah tab: sebagai bar menu, sebagai reben atau sebagai panel di sisi, mengikut pilihan anda.",
+                "Bahagian tetingkap yang selebihnya ialah tab yang berada di hadapan."
+              ]
+            },
+            "Menutup tab yang mempunyai perubahan yang belum disimpan akan meminta pengesahan terlebih dahulu; begitu juga apabila menutup program."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Mula",
+          "body": [
+            "Mula menunjukkan aplikasi anda dan fail yang anda buka baru-baru ini. Klik aplikasi untuk membukanya; klik fail terkini untuk membukanya semula.",
+            "Aplikasi boleh dipaparkan sebagai kad, sebagai ikon dengan nama atau sebagai ikon sahaja, dan boleh diseret mengikut urutan yang anda suka. Dengan papan kekunci: Alt dan kekunci anak panah. \"Tetapkan semula ke lalai\" akan mengembalikannya.",
+            "Setiap aplikasi juga mempunyai pintasannya sendiri dalam menu Start Windows, seperti \"Syntelab PDF Organizer\" atau \"Syntelab Units\": ia membuka program terus dalam aplikasi tersebut. Jika program sudah terbuka, aplikasi tersebut akan dibuka sebagai tab di dalamnya."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Membuka fail",
+          "body": [
+            {
+              "points": [
+                "Daripada aplikasi: Fail → Buka, atau Ctrl+O.",
+                "Dengan menyeret fail daripada folder ke dalam tetingkap.",
+                "Daripada pengurus fail sistem anda: klik dua kali pada fail yang ditetapkan untuk dibuka oleh program. Dalam Windows Explorer, terdapat juga menu klik kanan (lihat \"Menu klik kanan Windows Explorer\").",
+                "Daripada Mula: senarai fail terkini."
+              ]
+            },
+            "Program berjalan sebagai satu salinan. Fail yang dibuka daripada pengurus fail semasa program sedang berjalan akan dibuka sebagai tab baharu dalam tetingkap yang sama."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menyesuaikannya",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Susun atur: bar menu, reben atau panel sisi",
+          "body": [
+            "Arahan aplikasi boleh dipaparkan dalam tiga cara. Arahan tersebut adalah sama; hanya lokasinya yang berbeza.",
+            {
+              "points": [
+                "Klasik: bar menu dan bar alatan.",
+                "Reben: butang besar dalam kumpulan bernama, satu tab untuk setiap menu. Ia boleh dikecilkan untuk memberi lebih ruang kepada dokumen.",
+                "Panel sisi: alatan dalam panel di sebelah kiri atau kanan, yang boleh dikecilkan menjadi ikon."
+              ]
+            },
+            "Pilih susun atur setiap aplikasi dalam Tetapan → Umum → Susun atur. Aplikasi boleh mempunyai susun aturnya sendiri, yang dipilih dalam bahagian Tetapannya atau daripada menu Lihat; ia kemudian tidak lagi mengikut susun atur umum sehingga anda memilih \"Gunakan susun atur umum\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Tetapan → Umum → Tema: Cerah, Gelap, Kelabu cerah, Kelabu gelap, atau Automatik, yang mengikut tetapan cerah atau gelap sistem.",
+            "Halaman dokumen tidak akan pernah diubah warnanya oleh tema: kertas kekal seperti sedia ada."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Bahasa",
+          "body": [
+            "Tetapan → Umum → Bahasa. Program ini menyokong 62 bahasa. \"Bahasa sistem\" mengikut bahasa sistem anda. Senarai boleh dicari menggunakan nama bahasa itu sendiri, namanya dalam bahasa anda atau nama bahasa Inggerisnya.",
+            "Teks yang belum diterjemahkan akan dipaparkan dalam bahasa Inggeris, bukan sebagai kod."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Tab",
+          "body": [
+            {
+              "points": [
+                "\"Kekalkan tab Mula dalam kalangan tab\": apabila dimatikan, tab Mula hanya dipaparkan semasa Mula berada di hadapan; ikon rumah pada bar sisi sentiasa membawa anda kembali kepadanya.",
+                "Tanda pada tab boleh berupa ikon aplikasinya atau petak kosong dalam warna aplikasi tersebut."
+              ]
+            },
+            "Apabila terdapat lebih banyak tab daripada yang boleh dimuatkan, anak panah di hujung jalur akan menatalnya, dan \"Lebih banyak tab\" akan menyenaraikan kesemuanya."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mencari jalan anda",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Mencari arahan",
+          "body": [
+            "Kotak carian (\"Cari aplikasi, alatan dan arahan\") mencari sebarang arahan pada tab di hadapan melalui namanya, dalam bahasa anda atau dalam bahasa Inggeris. Pilih hasil untuk menjalankannya.",
+            "Arahan yang dirancang tetapi belum ditulis akan dipaparkan dalam warna kelabu dalam menu dan tidak disertakan dalam carian."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Pintasan papan kekunci",
+          "body": [
+            "Kekunci arahan ditulis di sebelah namanya dalam menu dan dalam petua alatnya. Kekunci yang paling kerap digunakan:",
+            {
+              "points": [
+                "Ctrl+O: buka fail",
+                "Ctrl+S: simpan; Ctrl+Shift+S: simpan sebagai",
+                "Ctrl+P: cetak",
+                "Ctrl+Z dan Ctrl+Y: buat asal dan buat semula",
+                "Ctrl+F: cari dalam dokumen",
+                "Ctrl+W: tutup tab",
+                "Ctrl+Tab dan Ctrl+Shift+Tab: tab seterusnya dan tab sebelumnya",
+                "Ctrl+, (koma): Tetapan",
+                "F1: Bantuan ini",
+                "Escape: keluar daripada skrin penuh atau mod bacaan, atau letakkan semula alat yang sedang digunakan"
+              ]
+            },
+            "Kekunci arahan program sendiri (tab, Tetapan, Bantuan) boleh diubah dalam Tetapan → Umum → Pintasan papan kekunci; kekunci arahan aplikasi dalam bahagian Tetapannya. Klik kekunci arahan, kemudian tekan kekunci baharu."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Menggunakan Bantuan ini",
+          "body": [
+            "Bantuan bergantung kepada tempat anda membukanya. Daripada aplikasi, anda hanya melihat manual aplikasi tersebut dan arahan tab yang anda gunakan. Daripada halaman mula atau daripada Tetapan, anda akan melihat \"Tentang\" (ringkasan program dan setiap aplikasi) dan manual program. Bantuan → Tentang sentiasa membawa anda ke \"Tentang\".",
+            "Kandungan berada di sebelah kiri; carian di atasnya mencari melalui setiap topik, dalam tajuk dan dalam teks.",
+            "Bantuan dibuka dalam tab tersendiri, jadi anda boleh berulang-alik antara bantuan dan kerja anda; F1 akan membawanya ke hadapan semula. Di bawah \"Arahan daripada tab asal anda\" setiap menu tab tersebut disenaraikan bersama setiap perintahnya, kekuncinya dan fungsinya: buka Bantuan daripada tab yang anda mempunyai soalan mengenainya."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Menu klik kanan Windows Explorer",
+          "body": [
+            "Tetapan → Umum → Windows Explorer → \"Tunjukkan Syntelab Creative dalam menu klik kanan fail dan folder\" menambah entri untuk fail yang dibaca oleh program: \"Tukar ke PDF dengan PDF Organizer\" dan \"Gabungkan fail dalam PDF Organizer\", masing-masing dengan ikon PDF Organizer, serta \"Syntelab Dev\", yang terbuka ke tepi dengan Checksum, Bandingkan dan Paparan Hex.",
+            "Ia ditambah untuk pengguna anda sahaja, tanpa hak pentadbir, dan mematikan suis tersebut akan memadamkannya. Pada Windows 11, ia berada di bawah \"Tunjukkan lebih banyak pilihan\". Ia sentiasa memulakan program yang dipasang: jika program itu dialihkan atau dipasang semula di tempat lain, ia membetulkannya apabila dimulakan.",
+            {
+              "note": "Memilih \"Gabungkan fail dalam PDF Organizer\" pada beberapa fail akan membuka pengikat dengan fail tersebut; \"Tukar ke PDF dengan PDF Organizer\" akan membuka pemprosesan kelompok dengan fail tersebut."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privasi, kemas kini dan hubungan",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Apa yang dihantar dalam talian, dan apa yang tidak",
+          "body": [
+            "Program ini tidak mengumpul apa-apa: tiada data penggunaan, tiada nama fail, tiada laporan kerosakan yang dihantar secara automatik.",
+            "Ia hanya akan mengakses dalam talian dalam kes-kes berikut, yang masing-masing diminta oleh anda:",
+            {
+              "points": [
+                "Menyemak kemas kini dan berita (dua fail kecil dibaca daripada syntelab.com), apabila anda memintanya atau, jika anda membenarkannya, apabila program bermula; dan memuat turun versi baharu, hanya apabila anda menekan \"Kemas kini\".",
+                "Menyimpan halaman web sebagai PDF (PDF Organizer) dan mengambil teks halaman web (Scribe), daripada alamat yang anda taip.",
+                "Pautan dalam dokumen yang anda klik: ia akan diserahkan kepada pelayar atau program e-mel anda.",
+                "Maklum balas dan Sokongan: ia akan membuka halaman syntelab.com dalam pelayar anda."
+              ]
+            },
+            "Menandatangani dengan sijil dan menyemak tandatangan dilakukan pada komputer anda, tanpa perlu mengakses dalam talian."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Kemas kini",
+          "body": [
+            "Tetapan → Umum → Kemas kini → \"Semak kemas kini\". Apabila versi yang lebih baharu tersedia, satu tetingkap akan memberitahu anda apa yang baharu dan menawarkan \"Kemas kini\".",
+            "\"Kemas kini\" memuat turun versi baharu, menyemak bahawa ia benar-benar datang daripada kami (ia mesti ditandatangani dengan kunci kami; apa-apa yang lain akan ditolak) dan memasangnya menggantikan versi ini. Tetapan anda dikekalkan dan program akan bermula semula. Tiada apa-apa yang dimuat turun sehingga anda menekannya.",
+            "Jika kemas kini tidak dapat dipasang dengan cara ini (salinan mudah alih, pakej Linux, tiada rangkaian), \"Muat turun\" akan membuka halaman muat turun dalam pelayar anda; pasang versi baharu menggantikan versi ini dan tetapan anda akan dikekalkan.",
+            "\"Semak kemas kini dan berita apabila program bermula\" boleh dimatikan; tiada maklumat tentang anda atau komputer anda yang akan dihantar dalam kedua-dua keadaan."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Maklum balas dan sokongan",
+          "body": [
+            "Bantuan → Maklum balas: minta aplikasi baharu, ciri baharu atau perubahan, atau laporkan masalah. Setiap mesej dibaca.",
+            "Bantuan → Sokongan: program ini adalah percuma; di sinilah anda boleh membantu ia terus berkembang."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tentang Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Tentang Syntelab Creative",
+          "body": [
+            "Syntelab Creative ialah suite aplikasi percuma untuk kerja harian dengan dokumen, teks dan data, yang dibuat oleh Syntelab (syntelab.com). Ia bermula dengan empat aplikasi: PDF Organizer, Scribe, Units dan Dev. Aplikasi lain akan menyertai mereka dalam tetingkap yang sama.",
+            {
+              "points": [
+                "Sentiasa percuma.",
+                "Tiada data dikumpul: tiada apa-apa tentang anda, komputer anda atau kerja anda.",
+                "Tiada apa yang disembunyikan: tiada versi berbayar, tiada ciri dikunci, tiada had yang diletakkan dengan sengaja. Satu-satunya had adalah apa yang mampu dilakukan oleh teknologi hari ini dan apa yang mampu ditampung oleh komputer anda."
+              ]
+            },
+            "Kami tidak mempunyai pembiayaan. Program ini dibuat dalam masa lapang kami, sejauh mana masa itu mengizinkan. Kami bertekad sepenuhnya untuk menghasilkan perisian berkualiti tinggi, dan itu memerlukan masa dan kesabaran: masa kami untuk membinanya, dan kesabaran anda sementara ia berkembang.",
+            "Ia akan menjadi lebih baik dengan setiap versi. Masalah yang dilaporkan akan diperbetulkan, dan ciri yang diminta akan dipertimbangkan untuk pembangunan seterusnya.",
+            {
+              "note": "Dokumen anda kekal di komputer anda. Program ini tidak mengumpul apa-apa maklumat tentang anda atau kerja anda; lihat \"Apa yang dihantar dalam talian, dan apa yang tidak\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Bagaimana anda boleh membantu",
+          "body": [
+            "Terdapat tiga cara, dan setiap satunya amat bermakna:",
+            {
+              "points": [
+                "Beritahu kami pendapat anda: Bantuan → Maklum balas. Masalah yang anda hadapi, sesuatu yang hilang, atau sesuatu yang lebih sukar daripada yang sepatutnya. Kami membaca setiap mesej.",
+                "Beritahu orang lain tentang program ini dan apa yang kami lakukan. Lebih ramai orang menggunakannya bermakna lebih banyak maklum balas, dan begitulah cara kami melihat apa yang benar-benar penting. Ia juga membuatkan kami rasa kerja kami dihargai: kerja kami, dan kerja semua orang yang mengambil bahagian dalam projek ini dan akan mengambil bahagian di masa hadapan.",
+                "Sokong dengan sumbangan kewangan, jika anda mampu: Bantuan → Sokong kami. Ia memberi kami masa untuk mengusahakannya."
+              ]
+            },
+            "Tiada satu pun daripada perkara ini diminta daripada anda. Program ini adalah percuma dan akan sentiasa percuma, lengkap, untuk semua orang."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Teknologi yang digunakan",
+          "body": [
+            "Program ini dibina berasaskan hasil kerja ramai orang. Apa yang dikongsi oleh setiap aplikasi:",
+            {
+              "points": [
+                "Tetingkap dan semua yang anda lihat: Tauri, dengan paparan web sistem (WebView2 pada Windows, WebKitGTK pada Linux, WKWebView pada macOS); ditulis dalam TypeScript dengan React.",
+                "Bahagian yang melakukan kerja: ditulis dalam Rust.",
+                "Huruf dan ikon: Sansation, IBM Plex Sans dan Font Awesome Free."
+              ]
+            },
+            "Apa yang ditambah oleh setiap aplikasi dinyatakan pada halaman masing-masing di bawah \"Tentang\". Kami berterima kasih kepada orang-orang di sebalik projek-projek ini."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Apa yang belum boleh dilakukan",
+          "body": [
+            "Supaya anda tahu sebelum menggunakannya:",
+            {
+              "points": [
+                "Beberapa teks masih menunggu terjemahan. Sehingga itu, ia akan dipaparkan dalam bahasa Inggeris, bukan sebagai kod.",
+                "Menu klik kanan pengurus fail buat masa ini hanya tersedia dalam Windows Explorer.",
+                "Menandatangani dengan sijil berfungsi pada Windows buat masa ini; bagi Linux dan macOS, ia akan tersedia dalam versi akan datang."
+              ]
+            },
+            "Had bagi setiap aplikasi ada pada halaman masing-masing di bawah \"Tentang\". Jika salah satu daripadanya menghalang anda, beritahu kami melalui Bantuan → Maklum balas: ia membantu kami memutuskan apa yang perlu diutamakan."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Apa yang sedang kami usahakan",
+          "body": [
+            "Keempat-empat aplikasi akan terus berkembang: apa yang anda laporkan dan minta melalui Bantuan → Maklum balas menentukan banyak perkara tentang apa yang akan didahulukan. Selain itu, aplikasi baharu sedang disediakan. Mula tidak memaparkannya melainkan anda mahu: tandakannya dalam menu \"Lihat\" pada Mula untuk melihatnya di sana sebagai \"Akan datang\":",
+            {
+              "points": [
+                "Convert: menukar fail daripada satu format ke format lain, termasuk dokumen pejabat ke PDF dan sebaliknya, tanpa perlu memasang program lain. Kami belum menemui teknologi terbuka yang mencapai kualiti yang kami inginkan, jadi ia hanya akan hadir apabila ia tidak mengecewakan anda; jika alat tersebut tidak wujud, kami akan membinanya.",
+                "Pixel: alat untuk imej, seperti mengubah saiz dan memampatkan, membuang latar belakang, warna dan kod QR.",
+                "Metadata: melihat dan membuang data tersembunyi foto, video dan dokumen, sebelum anda berkongsinya.",
+                "Wizard: pemilih dan penjana rawak: roda untuk diputar, dadu, syiling, nama yang dicabut daripada senarai."
+              ]
+            },
+            "Dalam aplikasi yang sudah ada, kami sedang mengusahakan apa yang disenaraikan dalam halaman \"Apa yang belum boleh dilakukan\": contohnya cap masa dipercayai untuk tandatangan, menandatangani dengan sijil pada Linux dan macOS, serta semakan ejaan dalam Scribe.",
+            "Lebih banyak pilihan pemasangan akan menyusul: Microsoft Store dan winget pada Windows, Flathub dan Snap pada Linux.",
+            {
+              "note": "Berita bagi setiap versi berada di bawah butang berita pada bar sisi; Tetapan → Umum → Kemas kini menyemak versi yang lebih baharu."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

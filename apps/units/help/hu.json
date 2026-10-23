@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Átváltás",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Az átváltók",
+          "body": [
+            "A Units mértékegységek között vált át értékeket: egyetlen értéket gyorsan, vagy egész értéktáblázatokat egyszerre. Minden számítás az Ön számítógépén történik.",
+            "Az átváltók hat menüben találhatók: Alapok, Mozgás és mechanika, Energia és teljesítmény, Tudományos, Digitális és média, valamint Speciális fizika. Egy átváltó kiválasztása megnyitja annak táblázatát.",
+            {
+              "points": [
+                "Az átváltó abban a fülben nyílik meg, amelyben éppen van. Ha a táblázatában vannak értékek, a program előbb rákérdez: Folytatás (az értékek elvesznek), Megnyitás új fülben vagy Mégsem.",
+                "A Beállítások → Units → „Minden átváltó megnyitása külön fülön” beállítással minden kiválasztott átváltó új fülben nyílik meg.",
+                "A Fájl → Ugrás a Kezdőlapra visszavisz a Units első oldalára."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Gyors átváltás",
+          "body": [
+            "A Units első oldala, a Gyors átváltás, egyetlen értéket vált át egyik egységből a másikba. Válasszon egy átváltót, írja be az értéket a „Miből” oldalon, és válassza ki a két egységet: az eredmény a „Mibe” oldalon jelenik meg.",
+            {
+              "points": [
+                "Mindkét oldal felsorolja az átváltó népszerű egységeit és az Ön saját egységeit, keresővel. Az átváltó táblázatában minden egység megtalálható.",
+                "A két oldal közötti gomb felcseréli a két egységet.",
+                "Az egység melletti könyvjelző rögzíti az egységet: a rögzített egységek mindkét listában és a táblázat egységpaneljén is elsőként jelennek meg.",
+                "Az eredményben lévő gomb kimásolja azt; az × törli az értéket.",
+                "A „Megnyitás táblázatban” megnyitja az átváltó táblázatát."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Számok olvasása és írása",
+          "body": [
+            "A számokat úgy írhatja be és illesztheti be, ahogyan a különböző országokban írják őket: az 1,234.56 és az 1.234,56 alakot is felismeri a program, ahogy az ezreseket elválasztó szóközöket és aposztrófokat, valamint a tízhatványt jelölő 1.5e-3 alakot is.",
+            "A kétféleképpen olvasható számot (1,234: ezer, vagy egy egész és egy kicsi) a program a nyelvének számírása szerint olvassa, és ezt a táblázat alatti sor jelzi is.",
+            "Az eredmény annak az egységnek a tizedesjegyeivel jelenik meg, amelybe átvált, nem annyi számjeggyel, ahányat Ön beírt: 5 cm = 1,97 in. A nem nulla érték mindig mutat néhány értékes számjegyet, így 1 cm = 0,00001 km, és sosem 0,000 km.",
+            "A ránézésre nehezen olvasható, túl nagy vagy túl kicsi értékek tízhatvánnyal jelennek meg, például 1,6 × 10⁻³⁵. A Nézet → Extrém értékek teljes egészében beállítással ehelyett minden nulla kiíródik.",
+            "Ahol egy egységnek nincs ilyen értéke (a nulla hangnyomásnak nincs decibelértéke), a cellában gondolatjel látható."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A táblázat",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Sorok és oszlopok",
+          "body": [
+            "Minden oszlop egy egység, és minden sor egy érték. Az a cella határozza meg a sort, amelybe Ön ír: a többi oszlop ugyanazt az értéket mutatja a saját egységében. A beírt cella félkövérrel jelenik meg.",
+            "Ami nem szám, megmarad, és pirossal jelenik meg; a sora semmit sem vált át, amíg ki nem javítja.",
+            {
+              "points": [
+                "Szerkesztéshez kattintson duplán egy cellára, vagy egyszerűen kezdjen gépelni rajta. Az Enter lefelé, a Tab jobbra lép; a nyílbillentyűkkel mozoghat; az Escape változatlanul hagyja a cellát.",
+                "Kattintson a sarokra (#) a teljes táblázat, egy sorszámra a sor, egy oszlopcímre az oszlop kijelöléséhez. A Shift+kattintás tartományt jelöl ki, a Ctrl+kattintás cellákat ad hozzá, és húzással is kijelölhet.",
+                "A Home és az End a sor első és utolsó oszlopára ugrik; a Ctrl+Home a táblázat első cellájára, a Ctrl+End az utolsóra. A Ctrl és egy nyílbillentyű a táblázat széléig ugrik: az első vagy utolsó sorra, illetve az első vagy utolsó oszlopra. A Page Up és a Page Down egy képernyőnyit lép. A Shift lenyomásával ezek mindegyike a kijelölést bővíti.",
+                "A több cellából álló kijelölést külső körvonal jelzi; az a cella, amelybe a gépelés kerül, a kijelölésen belül árnyékolatlan marad.",
+                "A Delete billentyű kiüríti a kijelölt sorokat.",
+                "Ha az utolsó sorba ír, új sor jön létre. A táblázatnak nincs felső korlátja: olyan hosszú lehet, amennyit a számítógép memóriája enged (egy sor 16 bájtot foglal, így 100 millió sor körülbelül 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Oszlopok és az egységpanel",
+          "body": [
+            "A táblázat melletti panel az átváltó egységeit sorolja fel. Legfelül a táblázatban lévő egységek láthatók: kattintson egyre az oszlopa eltávolításához. Alattuk minden egység szerepel: kereshet név vagy szimbólum szerint, szűrhet csoportra vagy a „Népszerű” lehetőségre, és egy egységre kattintva oszlopként hozzáadhatja.",
+            "Az egység melletti könyvjelző kedvencként rögzíti az egységet: a lista elejére kerül, és a Gyors átváltásban is elsőként jelenik meg.",
+            {
+              "points": [
+                "Az oszlopok egyenlő arányban osztoznak a táblázat szélességén, amíg a címük elfér; ezután a táblázat vízszintesen görgethető.",
+                "Az oszlopcím szélét húzva módosíthatja az oszlop szélességét; a szélre duplán kattintva az oszlop a leghosszabb értékéhez igazodik. A sorszámok oszlopa is húzható.",
+                "Egy oszlop ⋮ gombja: az oszlop mozgatása balra vagy jobbra, rögzítése a bal vagy a jobb szélhez, pontosságának módosítása vagy eltávolítása.",
+                "Az oszlop pontossága csak azt az oszlopot módosítja. Az „Alkalmazás erre az egységre mindenhol” ezt teszi az egység pontosságává minden táblázatban és a Gyors átváltásban is.",
+                "A Visszavonás és az Újra melletti, két nyíllal jelölt gomb a táblázathoz igazítja az oszlopokat: minden húzott vagy igazított szélesség megszűnik, és az oszlopok ismét egyenlően osztoznak a táblázat szélességén.",
+                "A panel két felső része, a táblázatban lévő egységek és az „Egységek hozzáadása” (a kereső és a szűrők), a nevükre kattintva összecsukható, így a listának több hely jut."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Visszavonás, másolás, beillesztés, importálás és exportálás",
+          "body": [
+            "A táblázat feletti sáv tartalmazza a hozzá tartozó eszközöket.",
+            {
+              "points": [
+                "A Visszavonás és az Újra (Ctrl+Z, Ctrl+Y) a táblázat minden módosításán végighalad. Egy beillesztés vagy importálás egy lépésnek számít.",
+                "A Másolás (Ctrl+C) az egész táblázatot vagy a kijelölést másolja, úgy, ahogyan egy táblázatkezelő beolvassa. A „Transzponált” a sorokat oszlopokká alakítja.",
+                "A Beillesztés (Ctrl+V) a másolt sorokat az aktív cellától lefelé illeszti be a táblázatba. Ha az első sor egységek címeit tartalmazza, az oszlopok ezek alapján párosulnak, és a táblázatban még nem szereplő egységek hozzáadódnak.",
+                "Az Importálás egy Excel-munkafüzetet, CSV- vagy TSV-fájlt olvas be a táblázat tartalma helyére. Az „Automatikus formátumfelismerés” a fájl alapján állapítja meg a típusát.",
+                "Az Exportálás Excel, CSV, TSV vagy JSON formátumba írja a táblázatot. Ha a tizedesjegyek előtt vessző áll, a CSV pontosvesszővel tagolva készül, ahogyan a táblázatkezelők várják. Egy Excel-munkalap 1 048 576 sort tartalmazhat: a hosszabb táblázat ugyanannak a munkafüzetnek a következő lapjain folytatódik, ugyanazokkal a címekkel.",
+                "A radír kiüríti a kijelölt sorokat; a kuka az egész táblázatot."
+              ]
+            },
+            "Egy sor egy értéket tartalmaz. Ha egy beillesztett vagy importált sorban több érték van, a program az elsőt veszi, a többit abból számítja ki.",
+            "Nagyon sok sor beillesztése, importálása, exportálása vagy másolása eltart egy ideig. Ilyenkor a táblázat fölött egy kártya mutatja, hol tart a munka, százalékban és sorokban, egy Leállítás gombbal. A leállított beillesztés vagy importálás változatlanul hagyja a táblázatot; a leállított exportálás nem ír fájlt.",
+            "Ha a számítógépen nincs több memória a sorok számára, semmi sem változik, és a táblázat alatti sor jelzi, mennyire lett volna szükség. Ha a sorok elférnek, de a táblázat korábbi állapota nem tartható meg mellettük, a program megkérdezi, folytassa-e visszavonás nélkül: ezt a módosítást és az előtte lévőket ekkor már nem lehet visszavonni. A kérdés előtt a program elengedi a legrégebbi visszavonási lépéseket, hogy helyet szabadítson fel.",
+            "Táblázat beállításai (a fogaskerék): mit mutasson az oszlop címe (Név (szimbólum), Név vagy Szimbólum), tartalmazzák-e a másolatok és az exportok a címeket és a sorszámokat, „Ennek az átváltónak az indítása ezekkel az oszlopokkal” és „Táblázat alaphelyzetbe állítása”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Különleges átváltók",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Pénznemek",
+          "body": [
+            "A pénznemeknek nincs rögzített szorzójuk: az értékük változik. A pénznem-átváltó két ingyenes szolgáltatástól kéri le az árfolyamokat, amíg Ön használja, és csak akkor.",
+            {
+              "points": [
+                "Országok pénznemei: Rates By Exchange Rate API, https://www.exchangerate-api.com . A forrásnál naponta egyszer változnak, és a program ennél gyakrabban nem kéri le őket.",
+                "Kriptovaluták: Powered by CoinGecko, https://www.coingecko.com . A program akkor kéri le őket, amikor az átváltó megnyílik vagy ismét előtérbe kerül, és a meglévő adatai negyed óránál régebbiek, valamint amikor Ön a Frissítés gombra kattint; időzítő szerint soha."
+              ]
+            },
+            "Csak az árfolyamokat kéri le a program. Önről semmilyen adatot nem küld el, és az átváltott összegeket sem soha.",
+            "A táblázat alatti sor, valamint a Gyors átváltás eredménye alatti sor jelzi, mikori az árfolyam. Kapcsolat nélkül a program a legutóbbi árfolyamokat használja, és régiként jelöli őket. Ha a szolgáltatások egy pénznemhez nem adnak árfolyamot, gondolatjel jelenik meg.",
+            "Beállítások → Units → Pénznemek: az „Árfolyamok betöltése a hálózatból” kikapcsolható, ekkor az átváltó a legutóbb megőrzött árfolyamokat használja. A „Források megjelenítése az árfolyamok mellett” megjeleníti vagy elrejti a két szolgáltatás nevét ebben a sorban.",
+            "Az árfolyamok tájékoztató jellegűek. Ne hagyatkozzon rájuk pénzügyi ügyleteknél."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Számrendszer",
+          "body": [
+            "Ennek az átváltónak az egységei az egész számok írásmódjai: 2-től 64-ig terjedő alapú számrendszerek, római számok, 60-as alap kettőspontokkal (1:30:15), binárisan kódolt decimális és Gray-kód. Az értékeik szövegek: ha a hexadecimális alá FF-et ír, a többi oszlop 255-öt, 11111111-et és így tovább mutat.",
+            "A római számok I-től MMMCMXCIX-ig (1-től 3999-ig) terjednek."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Nem egyszerű szorzóval átváltható egységek",
+          "body": [
+            "A legtöbb egység egy másik egység többszöröse. Néhány nem az, ezeket a Units a definíciójuk szerint váltja át: a hőmérsékleteket az eltolásukkal együtt; az üzemanyag-fogyasztást (liter per 100 km kontra mérföld per gallon); a hullámhosszt a frekvenciával; a vezetőképességet az ellenállással; a Baumé-, API-, Brix- és Plato-fokot a sűrűséggel; a decibelt a hangnyomással és a hangintenzitással; a százalékos lejtést a szögével.",
+            "A hőmérséklet és a hőmérséklet-különbség nem ugyanaz: 100 °C = 212 °F, de 100 °C különbség 180 °F különbségnek felel meg. A „Különbség (Δ)” csoport egységei egymás között váltanak át; köztük és a hőmérsékleti skálák között a cellában gondolatjel jelenik meg."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Saját egységek",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Egység létrehozása",
+          "body": [
+            "Bármelyik átváltóhoz hozzáadhat saját egységeket. Az egységpanelen válassza az „Új egység” lehetőséget, adjon meg nevet és szimbólumot, és határozza meg az egységet egy létező egységgel.",
+            {
+              "points": [
+                "Szorzóval: „1 lépés = 0,75 m”. Nem nullánál kezdődő skála esetén azt is, amit a szorzás után hozzá kell adni.",
+                "Képlettel: hogyan lesz az értékből a másik egység értéke (az értéket x jelöli), valamint a visszafelé vezető út képletével. Például x * 9 / 5 + 32 és (x - 32) * 5 / 9."
+              ]
+            },
+            "A beírtakat a program gépelés közben kipróbálja, és mentés előtt megmutatja, mennyit ér az Ön egységéből egy. A képletben használható a + − × ÷ ^, a zárójel, az x, a pi, az e, valamint az sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos és atan függvény. A képletet a program kiszámítja, programként sosem futtatja.",
+            "Az Ön egységei a panel „Saját” csoportjában szerepelnek, ahol módosíthatók és törölhetők. Egy saját egység megadható egy másik saját egységgel is; egy egység törlése az általa meghatározott egységeket is törli.",
+            "A Beállítások → Units az összes átváltó saját egységeit felsorolja, és szövegként exportálja és importálja őket, amelyet megőrizhet vagy átvihet egy másik számítógépre."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Beállítások",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Units beállításai",
+          "body": [
+            "A Fájl → Beállítások megnyitása megnyitja a Units beállításait; ugyanígy a táblázat beállításai (a fogaskerék a táblázat sávjában) is.",
+            {
+              "points": [
+                "Minden átváltó megnyitása külön fülön, vagy abban a fülben, amelyben éppen van.",
+                "Extrém értékek teljes egészében, mi kerüljön az ezresek közé (10000,000, 10 000,000 vagy 10.000,000; semmi, hacsak mást nem választ), valamint sorszámok.",
+                "Pénznemek: lekérje-e a program az árfolyamokat a hálózatról, és megnevezze-e mellettük a szolgáltatásokat.",
+                "Egységek pontossága: válasszon egy átváltót (vagy a „Módosított egységek” lehetőséget), keressen egy egységet, és a − és + gombbal állítsa be a tizedesjegyeit; a nyíl visszaállítja az egység saját pontosságát. Egy oszlop menüjében az „Alkalmazás erre az egységre mindenhol” ugyanezt az értéket állítja be.",
+                "Egységek, amelyekkel a táblázat kezdődik: azok az átváltók, amelyeknek Ön választotta ki az első oszlopait, mindegyiknél visszatérési lehetőséggel az eredeti egységekhez.",
+                "Saját egységek."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "A Units alkalmazásról",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "A Units alkalmazásról",
+          "body": [
+            "A Units a Syntelab Creative átváltó alkalmazása: 38 átváltó több mint 1500 egységgel, a hosszúságtól és a hőmérséklettől a pénznemekig és a számrendszerekig. Az egyszer beírt érték minden kért egységben megjelenik, egy olyan táblázatban, amely egyetlen értéket vagy akár milliókat is befogad.",
+            "A számításokat a program pontosan, törtekként végzi, és csak kiíráskor kerekít. Minden ezen a számítógépen történik; csak a pénznemek árfolyamait kéri le a hálózatról, és ez kikapcsolható.",
+            "Ez egy új alkalmazás. Ha valahol nem elég a munkájához, jelezze nekünk a Súgó → Visszajelzés menüpontban: így tudjuk, min dolgozzunk."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Hány sort bír el egy táblázat: amit mértünk",
+          "body": [
+            "A táblázat sorainak száma nincs rögzítve: olyan hosszú lehet, amennyit a számítógép memóriája enged. Egy sor 16 bájtot foglal, így 100 millió sor körülbelül 1,5 GB. Ha elfogy a memória, a táblázat változatlan marad, és a program jelzi, mennyire lett volna szükség.",
+            "50 000 000 sorral mértük, soronként egy számmal egy oszlopban, a program optimalizált változatával:",
+            {
+              "points": [
+                "50 000 000 sor beillesztése: kb. 7 másodperc.",
+                "Importálás CSV fájlból: 12 másodperc.",
+                "Exportálás CSV-fájlba, egy második, átváltott oszloppal: kb. 3,5 perc.",
+                "Exportálás Excelbe, 48 lapra elosztva: 4,3 perc."
+              ]
+            },
+            "A kiírás tovább tart, mint a beolvasás, mert minden kiírt cellát előbb pontosan át kell váltani.",
+            {
+              "note": "A teszteléshez használt számítógép: AMD Ryzen 9 9950X3D (16 mag, 32 szál), 64 GB memória, Windows 11 Pro. 2026. október. Más számítógépen az idők eltérhetnek; a sor mérete nem."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Mire épül a Units",
+          "body": [
+            {
+              "points": [
+                "Pontos számok: a Rust num könyvtárai (tetszőleges méretű egész számokból álló törtek).",
+                "Az egységek, a szorzóik és a csoportjaik: a program adatfájljai, átváltónként egy.",
+                "Excel- és OpenDocument-munkafüzetek olvasása: calamine. Excel-munkafüzetek írása: rust_xlsxwriter.",
+                "A rendszer vágólapja a nagyon sok sor másolásához és beillesztéséhez: arboard.",
+                "A pénznemek árfolyamai: ExchangeRate-API és CoinGecko (lásd „Pénznemek”)."
+              ]
+            },
+            "Amin a program többi részével osztozik, azt „A Syntelab Creative névjegye” alatt találja."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Amit a Units még nem tud",
+          "body": [
+            {
+              "points": [
+                "Egy sor egy értéket tartalmaz: több értéket tartalmazó beillesztett sorból az elsőt veszi figyelembe.",
+                "Nagyon sok sor exportálása lassú (lásd a méréseinket).",
+                "A vágólapra másolt tartalom beillesztés előtt egyetlen szövegként marad a memóriában.",
+                "A pénznemek árfolyamai olyan frissek, amilyennek a két forrásuk adja őket: az országok pénznemeinél naponta egyszer."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

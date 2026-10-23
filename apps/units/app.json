@@ -1,0 +1,347 @@
+{
+  "id": "units",
+  "version": "0.0.0",
+  "apiVersion": 1,
+  "status": "active",
+  "name": {
+    "en": "Units"
+  },
+  "description": {
+    "en": "Unit converters: length, temperature, currency and many more.",
+    "hi": "लंबाई, तापमान, मुद्रा आदि के लिए इकाई परिवर्तक।",
+    "de": "Einheitenumrechner für Länge, Temperatur, Währung und vieles mehr.",
+    "zh-CN": "单位换算器：长度、温度、货币等多种单位。",
+    "ro": "Convertoare de unități: lungime, temperatură, valută și multe altele.",
+    "ar": "محوّلات وحدات: الطول ودرجة الحرارة والعملات وغيرها كثير.",
+    "es": "Conversores de unidades: longitud, temperatura, moneda y muchas más.",
+    "pt": "Conversores de unidades: comprimento, temperatura, moeda e muito mais.",
+    "id": "Konverter satuan: panjang, suhu, mata uang, dan banyak lagi.",
+    "fr": "Convertisseurs d’unités : longueur, température, devises et bien d’autres.",
+    "ja": "長さ、温度、通貨など、さまざまな単位を変換できます。",
+    "ru": "Преобразователи единиц длины, температуры, валюты и многих других величин.",
+    "ko": "길이, 온도, 통화 등 다양한 단위를 변환합니다.",
+    "tr": "Uzunluk, sıcaklık, para birimi ve daha birçok ölçü için birim dönüştürücüler.",
+    "it": "Convertitori di unità: lunghezza, temperatura, valute e molto altro.",
+    "vi": "Công cụ chuyển đổi đơn vị: độ dài, nhiệt độ, tiền tệ và nhiều đơn vị khác.",
+    "pl": "Konwertery jednostek: długości, temperatury, walut i wielu innych.",
+    "nl": "Eenheden omrekenen: lengte, temperatuur, valuta en nog veel meer.",
+    "th": "ตัวแปลงหน่วย: ความยาว อุณหภูมิ สกุลเงิน และอื่น ๆ อีกมากมาย",
+    "uk": "Конвертери одиниць: довжина, температура, валюта та багато іншого.",
+    "el": "Μετατροπείς μονάδων: μήκος, θερμοκρασία, νόμισμα και πολλά άλλα.",
+    "cs": "Převodníky jednotek: délka, teplota, měna a mnoho dalších.",
+    "sv": "Enhetskonverterare: längd, temperatur, valuta och många fler.",
+    "hu": "Mértékegység-átváltók: hossz, hőmérséklet, pénznem és sok más.",
+    "fa": "مبدل‌های واحد: طول، دما، ارز و بسیاری موارد دیگر.",
+    "pt-BR": "Conversores de unidades: comprimento, temperatura, moeda e muitos outros.",
+    "zh-TW": "單位轉換器：長度、溫度、貨幣等。",
+    "sq": "Konvertues njësish: gjatësi, temperaturë, monedhë dhe shumë të tjera.",
+    "am": "የዩኒት መቀየሪያዎች፦ ርዝመት፣ ሙቀት፣ ምንዛሬ እና ሌሎችም።",
+    "be": "Канвертары адзінак: даўжыня, тэмпература, валюта і многае іншае.",
+    "bn": "ইউনিট কনভার্টার: দৈর্ঘ্য, তাপমাত্রা, কারেন্সি এবং আরও অনেক কিছু।",
+    "bs": "Konvertori jedinica: dužina, temperatura, valuta i mnogi drugi.",
+    "bg": "Конвертори на единици: дължина, температура, валута и много други.",
+    "ca": "Convertidors d'unitats: longitud, temperatura, moneda i moltes més.",
+    "hr": "Pretvarači jedinica: duljina, temperatura, valute i mnogi drugi.",
+    "da": "Enhedskonvertere: længde, temperatur, valuta og mange flere.",
+    "et": "Ühikute teisendajad: pikkus, temperatuur, valuuta ja palju muud.",
+    "tl": "Mga unit converter: haba, temperatura, pera at marami pang iba.",
+    "fi": "Yksikkömuuntimet: pituus, lämpötila, valuutta ja monia muita.",
+    "gu": "યુનિટ કન્વર્ટર્સ: લંબાઈ, તાપમાન, કરન્સી અને ઘણું બધું.",
+    "ha": "Masu canza ma'aunai: tsawo, zafin jiki, kuɗaɗe da sauran su da yawa.",
+    "he": "ממירי יחידות: אורך, טמפרטורה, מטבע ועוד רבים.",
+    "ga": "Tiontairí aonad: fad, teocht, airgeadra agus go leor eile.",
+    "jv": "Pangowah satuan: dawa, suhu, mata uang lan akeh liyane.",
+    "kn": "ಘಟಕ ಪರಿವರ್ತಕಗಳು: ಉದ್ದ, ತಾಪಮಾನ, ಕರೆನ್ಸಿ ಮತ್ತು ಇನ್ನೂ ಅನೇಕ.",
+    "lv": "Mērvienību pārveidotāji: garums, temperatūra, valūta un daudz kas cits.",
+    "lt": "Matavimo vienetų keitikliai: ilgis, temperatūra, valiuta ir daug kitų.",
+    "mk": "Конвертери на единици: должина, температура, валута и многу други.",
+    "ms": "Penukar unit: panjang, suhu, mata wang dan banyak lagi.",
+    "ml": "യൂണിറ്റ് കൺവെർട്ടറുകൾ: നീളം, താപനില, കറൻസി തുടങ്ങി ഒട്ടനവധി.",
+    "mt": "Konvertituri tal-unitajiet: tul, temperatura, muniti u ħafna oħrajn.",
+    "my": "ယူနစ်ပြောင်းလဲကိရိယာများ - အလျား၊ အပူချိန်၊ ငွေကြေးနှင့် အခြားအများအပြား။",
+    "no": "Enhetskonvertering: lengde, temperatur, valuta og mange flere.",
+    "pa": "ਯੂਨਿਟ ਕਨਵਰਟਰ: ਲੰਬਾਈ, ਤਾਪਮਾਨ, ਕਰੰਸੀ ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ।",
+    "sr": "Konvertori jedinica: dužina, temperatura, valute i mnogi drugi.",
+    "sk": "Konvertory jednotiek: dĺžka, teplota, mena a mnoho ďalších.",
+    "sl": "Pretvorniki enot: dolžina, temperatura, valute in veliko več.",
+    "sw": "Vibadilishaji vya vipimo: urefu, joto, sarafu na vingine vingi.",
+    "ta": "அலகு மாற்றிகள்: நீளம், வெப்பநிலை, நாணயம் மற்றும் பல.",
+    "te": "యూనిట్ కన్వర్టర్లు: పొడవు, ఉష్ణోగ్రత, కరెన్సీ మరియు మరిన్ని.",
+    "ur": "یونٹ کنورٹرز: لمبائی، درجہ حرارت، کرنسی اور بہت کچھ۔",
+    "yo": "Àwọn olùyípadà ẹ̀yọ ìwọ̀n: gígùn, ìwọ̀n ooru, owó àti ọ̀pọ̀lọpọ̀ míì."
+  },
+  "brand": {
+    "color": "#E53935",
+    "icon": "assets/icon.svg"
+  },
+  "defaultLayout": "ribbon",
+  "locales": "locales/",
+  "search": [
+    {
+      "id": "length",
+      "labelKey": "units.converter.length",
+      "params": {
+        "converter": "length"
+      }
+    },
+    {
+      "id": "weight",
+      "labelKey": "units.converter.weight",
+      "params": {
+        "converter": "weight"
+      }
+    },
+    {
+      "id": "temperature",
+      "labelKey": "units.converter.temperature",
+      "params": {
+        "converter": "temperature"
+      }
+    },
+    {
+      "id": "volume",
+      "labelKey": "units.converter.volume",
+      "params": {
+        "converter": "volume"
+      }
+    },
+    {
+      "id": "area",
+      "labelKey": "units.converter.area",
+      "params": {
+        "converter": "area"
+      }
+    },
+    {
+      "id": "time",
+      "labelKey": "units.converter.time",
+      "params": {
+        "converter": "time"
+      }
+    },
+    {
+      "id": "currency",
+      "labelKey": "units.converter.currency",
+      "params": {
+        "converter": "currency"
+      }
+    },
+    {
+      "id": "speed",
+      "labelKey": "units.converter.speed",
+      "params": {
+        "converter": "speed"
+      }
+    },
+    {
+      "id": "fuel-economy",
+      "labelKey": "units.converter.fuel-economy",
+      "params": {
+        "converter": "fuel-economy"
+      }
+    },
+    {
+      "id": "acceleration",
+      "labelKey": "units.converter.acceleration",
+      "params": {
+        "converter": "acceleration"
+      }
+    },
+    {
+      "id": "force",
+      "labelKey": "units.converter.force",
+      "params": {
+        "converter": "force"
+      }
+    },
+    {
+      "id": "torque",
+      "labelKey": "units.converter.torque",
+      "params": {
+        "converter": "torque"
+      }
+    },
+    {
+      "id": "pressure",
+      "labelKey": "units.converter.pressure",
+      "params": {
+        "converter": "pressure"
+      }
+    },
+    {
+      "id": "energy",
+      "labelKey": "units.converter.energy",
+      "params": {
+        "converter": "energy"
+      }
+    },
+    {
+      "id": "power",
+      "labelKey": "units.converter.power",
+      "params": {
+        "converter": "power"
+      }
+    },
+    {
+      "id": "electric-charge",
+      "labelKey": "units.converter.electric-charge",
+      "params": {
+        "converter": "electric-charge"
+      }
+    },
+    {
+      "id": "voltage",
+      "labelKey": "units.converter.voltage",
+      "params": {
+        "converter": "voltage"
+      }
+    },
+    {
+      "id": "electric-current",
+      "labelKey": "units.converter.electric-current",
+      "params": {
+        "converter": "electric-current"
+      }
+    },
+    {
+      "id": "resistance",
+      "labelKey": "units.converter.resistance",
+      "params": {
+        "converter": "resistance"
+      }
+    },
+    {
+      "id": "density",
+      "labelKey": "units.converter.density",
+      "params": {
+        "converter": "density"
+      }
+    },
+    {
+      "id": "frequency",
+      "labelKey": "units.converter.frequency",
+      "params": {
+        "converter": "frequency"
+      }
+    },
+    {
+      "id": "angle",
+      "labelKey": "units.converter.angle",
+      "params": {
+        "converter": "angle"
+      }
+    },
+    {
+      "id": "concentration",
+      "labelKey": "units.converter.concentration",
+      "params": {
+        "converter": "concentration"
+      }
+    },
+    {
+      "id": "prefixes",
+      "labelKey": "units.converter.prefixes",
+      "params": {
+        "converter": "prefixes"
+      }
+    },
+    {
+      "id": "light",
+      "labelKey": "units.converter.light",
+      "params": {
+        "converter": "light"
+      }
+    },
+    {
+      "id": "flow",
+      "labelKey": "units.converter.flow",
+      "params": {
+        "converter": "flow"
+      }
+    },
+    {
+      "id": "data-storage",
+      "labelKey": "units.converter.data-storage",
+      "params": {
+        "converter": "data-storage"
+      }
+    },
+    {
+      "id": "data-transfer",
+      "labelKey": "units.converter.data-transfer",
+      "params": {
+        "converter": "data-transfer"
+      }
+    },
+    {
+      "id": "image-resolution",
+      "labelKey": "units.converter.image-resolution",
+      "params": {
+        "converter": "image-resolution"
+      }
+    },
+    {
+      "id": "typography",
+      "labelKey": "units.converter.typography",
+      "params": {
+        "converter": "typography"
+      }
+    },
+    {
+      "id": "sound",
+      "labelKey": "units.converter.sound",
+      "params": {
+        "converter": "sound"
+      }
+    },
+    {
+      "id": "number-base",
+      "labelKey": "units.converter.number-base",
+      "params": {
+        "converter": "number-base"
+      }
+    },
+    {
+      "id": "heat-transfer",
+      "labelKey": "units.converter.heat-transfer",
+      "params": {
+        "converter": "heat-transfer"
+      }
+    },
+    {
+      "id": "viscosity",
+      "labelKey": "units.converter.viscosity",
+      "params": {
+        "converter": "viscosity"
+      }
+    },
+    {
+      "id": "surface-tension",
+      "labelKey": "units.converter.surface-tension",
+      "params": {
+        "converter": "surface-tension"
+      }
+    },
+    {
+      "id": "permeability",
+      "labelKey": "units.converter.permeability",
+      "params": {
+        "converter": "permeability"
+      }
+    },
+    {
+      "id": "magnetic-field",
+      "labelKey": "units.converter.magnetic-field",
+      "params": {
+        "converter": "magnetic-field"
+      }
+    },
+    {
+      "id": "radiation",
+      "labelKey": "units.converter.radiation",
+      "params": {
+        "converter": "radiation"
+      }
+    }
+  ]
+}

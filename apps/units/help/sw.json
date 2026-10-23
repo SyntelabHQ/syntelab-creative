@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Kubadilisha",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Vibadilishi",
+          "body": [
+            "Units hubadilisha thamani kati ya vitengo vya vipimo: thamani moja kwa haraka, au majedwali mazima ya thamani kwa mara moja. Kila kitu hukokotolewa kwenye kompyuta yako.",
+            "Vibadilishi viko katika menyu sita: Muhimu, Mwendo na mekanika, Nishati na nguvu, Kisayansi, Kidijitali na vyombo vya habari, na Fizikia maalum. Kuchagua kimoja hufungua jedwali lake.",
+            {
+              "points": [
+                "Kibadilishi hufunguka katika kichupo ulichomo. Ikiwa jedwali lake lina thamani, utaulizwa kwanza: Endelea (thamani zitapotea), Fungua katika kichupo kipya, au Ghairi.",
+                "Mipangilio → Units → \"Fungua kila kibadilishi katika kichupo chake\" hufungua kila kibadilishi unachochagua katika kichupo kipya badala yake.",
+                "Faili → Nenda hadi Anza hurudi kwenye ukurasa wa kwanza wa Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Ubadilishaji wa haraka",
+          "body": [
+            "Ukurasa wa kwanza wa Units, Ubadilishaji wa haraka, hubadilisha thamani moja kutoka kitengo kimoja kwenda kingine. Chagua kibadilishi, andika thamani upande wa \"Kutoka\", na uchague vitengo viwili: matokeo yako upande wa \"Kwenda\".",
+            {
+              "points": [
+                "Kila upande huorodhesha vitengo maarufu vya kibadilishi na vitengo vyako mwenyewe, pamoja na utafutaji ndani yake. Jedwali la kibadilishi lina kila kitengo.",
+                "Kitufe kilicho kati ya pande mbili hubadilishana vitengo hivyo viwili.",
+                "Alamisho kando ya kitengo hukibana: vitengo vilivyobanwa huja kwanza katika orodha zote mbili na katika paneli ya vitengo ya jedwali.",
+                "Kitufe kilicho kwenye matokeo huyanakili; × hufuta thamani.",
+                "\"Fungua kwenye jedwali\" hufungua jedwali la kibadilishi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Jinsi namba zinavyosomwa na kuandikwa",
+          "body": [
+            "Unaweza kuandika na kubandika namba jinsi zinavyoandikwa katika nchi mbalimbali: 1,234.56 na 1.234,56 zote zinaeleweka, vivyo hivyo nafasi na apostrofi kati ya maelfu, na 1.5e-3 kwa nguvu ya kumi.",
+            "Namba inayoweza kusomwa kwa njia mbili (1,234: elfu moja, au moja na kidogo) husomwa jinsi lugha ya programu inavyoandika namba, na mstari ulio chini ya jedwali husema hivyo.",
+            "Matokeo huandikwa kwa desimali za kitengo yanachofikia, si kwa idadi ya tarakimu ulizoandika: 5 cm ni 1.97 in. Thamani isiyo sifuri daima huonyesha tarakimu chache zenye maana, hivyo 1 cm ni 0.00001 km na kamwe si 0.000 km.",
+            "Thamani kubwa mno au ndogo mno kusomeka kwa mtazamo mmoja huandikwa kwa nguvu ya kumi, kama 1.6 × 10⁻³⁵. Tazama → Thamani zilizopitiliza kwa ukamilifu huziandika kwa kila sifuri badala yake.",
+            "Pale ambapo kitengo hakina thamani kama hiyo (shinikizo la sauti la sifuri halina desibeli) seli huonyesha kistari."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jedwali",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Mistari na safu",
+          "body": [
+            "Kila safu ni kitengo na kila mstari ni thamani. Seli unayoandikia huongoza mstari wake: safu nyingine huonyesha thamani hiyo hiyo katika vitengo vyake. Seli iliyoandikwa huonyeshwa kwa herufi nzito.",
+            "Kisicho namba huhifadhiwa na kuonyeshwa kwa rangi nyekundu; mstari wake haubadilishi chochote hadi utakapokirekebisha.",
+            {
+              "points": [
+                "Bofya seli mara mbili, au anza tu kuandika juu yake, ili kuhariri. Enter husogea chini, Tab kwenda kulia; vitufe vya mishale husogeza; Escape huiacha seli kama ilivyokuwa.",
+                "Bofya kona (#) ili kuchagua jedwali zima, namba ya mstari ili kuchagua mstari wake, kichwa ili kuchagua safu yake. Shift+bofya huchagua masafa, Ctrl+bofya huongeza seli, na kuburuta huchagua pia.",
+                "Home na End huenda kwenye safu ya kwanza na ya mwisho ya mstari; Ctrl+Home kwenye seli ya kwanza ya jedwali, Ctrl+End kwenye ya mwisho. Ctrl pamoja na mshale huenda hadi ukingo wa jedwali: mstari wa kwanza au wa mwisho, safu ya kwanza au ya mwisho. Page Up na Page Down husogeza kwa skrini moja. Pamoja na Shift, kila moja ya hivi hupanua uchaguzi badala yake.",
+                "Uchaguzi wa seli kadhaa huzungushiwa mstari upande wake wa nje; seli ambayo uandishi unaenda hubaki bila kivuli ndani yake.",
+                "Delete huondoa thamani katika mistari iliyochaguliwa.",
+                "Kuandika katika mstari wa mwisho huongeza mstari. Jedwali halina kiwango cha juu cha kushikilia: ni refu kadiri kumbukumbu ya kompyuta yako inavyoruhusu (mstari mmoja huchukua baiti 16, hivyo mistari milioni 100 huchukua takriban 1.5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Safu na paneli ya vitengo",
+          "body": [
+            "Paneli iliyo kando ya jedwali huorodhesha vitengo vya kibadilishi. Juu yake kuna vitengo vilivyo kwenye jedwali: bofya kimoja ili kuondoa safu yake. Chini yake, kila kitengo: tafuta kwa jina au alama, chuja kwa kikundi au kwa \"Maarufu\", na bofya kitengo ili kukiongeza kama safu.",
+            "Alamisho kando ya kitengo hukibana kama kipendwa: huja kwanza kwenye orodha na ni cha kwanza katika Ubadilishaji wa haraka.",
+            {
+              "points": [
+                "Safu hugawana upana wa jedwali kwa usawa hadi vichwa vyake visipotosha tena; kisha jedwali husogea kando.",
+                "Buruta ukingo wa kichwa ili kubadilisha upana wa safu yake; bofya ukingo mara mbili ili kulinganisha safu na thamani yake ndefu zaidi. Safu ya namba za mistari inaweza kuburutwa pia.",
+                "Kitufe ⋮ cha safu: isogeze kushoto au kulia, ibane kwenye ukingo wa kushoto au wa kulia, badilisha usahihi wake, au iondoe.",
+                "Usahihi wa safu hubadilisha safu hiyo pekee. \"Tumia kwa kitengo hiki kila mahali\" huufanya kuwa usahihi wa kitengo, katika kila jedwali na katika Ubadilishaji wa haraka.",
+                "Kitufe chenye mishale miwili kando ya Rudi nyuma na Rudia hulinganisha safu na jedwali: kila upana uliouburuta au kuulinganisha huondoka, na safu hugawana tena upana wa jedwali.",
+                "Sehemu mbili za juu za paneli, vitengo vilivyo kwenye jedwali na \"Ongeza vitengo\" (utafutaji na vichujio), hukunjwa kwa kubofya majina yao, ili orodha ipate nafasi zaidi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Rudi nyuma, nakili, bandika, ingiza na toa",
+          "body": [
+            "Upau ulio juu ya jedwali una zana zake.",
+            {
+              "points": [
+                "Rudi nyuma na Rudia (Ctrl+Z, Ctrl+Y) hupitia kila badiliko la jedwali. Kubandika au kuingiza ni hatua moja.",
+                "Nakili (Ctrl+C) hunakili jedwali zima au kilichochaguliwa, jinsi lahajedwali inavyokisoma. \"Iliyogeuzwa\" hugeuza mistari kuwa safu.",
+                "Bandika (Ctrl+V) huweka mistari iliyonakiliwa kwenye jedwali kuanzia seli hai kwenda chini. Ikiwa mstari wa kwanza una majina ya vitengo, safu hulinganishwa nayo, na vitengo ambavyo bado havimo kwenye jedwali huongezwa.",
+                "Ingiza husoma kitabu cha kazi cha Excel, faili ya CSV au TSV mahali pa kile jedwali linachoshikilia. \"Tafuta muundo wenyewe\" hutambua aina kutokana na faili.",
+                "Toa huandika jedwali kama Excel, CSV, TSV au JSON. Kwa koma kabla ya desimali, CSV huandikwa kwa nukta-mkato, kama lahajedwali zinavyotarajia. Laha moja ya Excel hushikilia mistari 1,048,576: jedwali refu zaidi huendelea kwenye laha zinazofuata za kitabu hicho hicho cha kazi, chini ya vichwa vile vile.",
+                "Kifutio huondoa thamani katika mistari iliyochaguliwa; pipa huondoa thamani katika jedwali zima."
+              ]
+            },
+            "Mstari mmoja hushikilia thamani moja. Kwa mstari uliobandikwa au kuingizwa wenye thamani kadhaa, ya kwanza huchukuliwa na nyingine hukokotolewa kutoka kwayo.",
+            "Mistari mingi sana huchukua muda kubandikwa, kuingizwa, kutolewa au kunakiliwa. Kisha kadi juu ya jedwali huonyesha kazi imefika wapi, kwa asilimia na kwa mistari, pamoja na kitufe cha Simamisha. Kubandika au kuingiza kunakosimamishwa huacha jedwali kama lilivyokuwa; kutoa kunakosimamishwa hakuandiki faili.",
+            "Kompyuta inapokosa kumbukumbu ya kutosha kwa mistari, hakuna kinachobadilishwa na mstari ulio chini ya jedwali husema kiasi kilichohitajika. Mistari inapotosha lakini jedwali kama lilivyokuwa haliwezi kuhifadhiwa kando yake, utaulizwa kama uendelee bila uwezo wa kurudi nyuma: badiliko hilo, na yale yaliyotangulia, hayawezi tena kurudishwa nyuma. Kabla ya kuuliza, hatua za zamani zaidi za Rudi nyuma huachiliwa ili kupata nafasi.",
+            "Chaguo za jedwali (gia): kichwa cha safu kinaonyesha nini (jina na alama, jina, au alama), kama nakala na faili zinazotolewa zinajumuisha vichwa na namba za mistari, \"Anza kibadilishi hiki kwa safu hizi\", na \"Rudisha jedwali\"."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vibadilishi maalum",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Sarafu",
+          "body": [
+            "Sarafu hazina kigezo thabiti: thamani ya sarafu hubadilika. Kibadilishi cha sarafu husoma viwango vyake kutoka huduma mbili za bure wakati unakitumia, na wakati huo tu.",
+            {
+              "points": [
+                "Sarafu za nchi: Rates By Exchange Rate API, https://www.exchangerate-api.com . Hubadilika mara moja kwa siku kwenye chanzo chake, na husomwa si mara nyingi zaidi ya hapo.",
+                "Sarafu za kidijitali: Powered by CoinGecko, https://www.coingecko.com . Husomwa kibadilishi kinapofunguliwa au kinaporudi mbele na kilichonacho ni cha zamani zaidi ya robo saa, na unapobofya Sasisha; kamwe si kwa kipima muda."
+              ]
+            },
+            "Viwango pekee ndivyo vinavyoombwa. Hakuna chochote kukuhusu kinachotumwa, na kamwe si kiasi unachobadilisha.",
+            "Mstari ulio chini ya jedwali, na chini ya matokeo ya Ubadilishaji wa haraka, husema viwango ni vya lini. Bila muunganisho, viwango vya mwisho hutumika na kuwekwa alama kuwa vya zamani. Sarafu ambayo huduma hazitoi kiwango chake huonyesha kistari.",
+            "Mipangilio → Units → Sarafu: \"Soma viwango kutoka kwenye mtandao\" kinaweza kuzimwa, na kibadilishi kisha hutumia viwango vya mwisho kilivyohifadhi. \"Taja vyanzo kando ya viwango\" huonyesha au kuficha majina ya huduma hizo mbili kwenye mstari huo.",
+            "Viwango ni kwa ajili ya taarifa tu. Usivitegemee kwa muamala."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Msingi wa namba",
+          "body": [
+            "Vitengo vya kibadilishi hiki ni njia za kuandika namba kamili: misingi kutoka 2 hadi 64, namba za Kirumi, msingi 60 kwa nukta pacha (1:30:15), desimali iliyosimbwa kwa binari na msimbo wa Gray. Thamani zake ni maandishi: andika FF chini ya heksadesimali na safu nyingine zitaonyesha 255, 11111111 na kadhalika.",
+            "Namba za Kirumi huanzia I hadi MMMCMXCIX (1 hadi 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Vitengo visivyo kigezo rahisi",
+          "body": [
+            "Vitengo vingi ni kigezo cha kingine. Baadhi si hivyo, na Units huvibadilisha jinsi vilivyofafanuliwa: halijoto pamoja na mihamo yake; matumizi ya mafuta (lita kwa km 100 dhidi ya maili kwa galoni); urefu wa wimbi dhidi ya masafa; upitishaji dhidi ya ukinzani; nyuzi za Baumé, API, Brix na Plato dhidi ya msongamano; desibeli dhidi ya shinikizo la sauti na ukali wake; mteremko kwa asilimia dhidi ya pembe yake.",
+            "Halijoto na tofauti ya halijoto si kitu kimoja: 100 °C ni 212 °F, lakini tofauti ya 100 °C ni tofauti ya 180 °F. Vitengo vya kikundi \"Tofauti (Δ)\" hubadilishana vyenyewe kwa vyenyewe; kati yake na vipimo vya halijoto seli huonyesha kistari."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vitengo vyako mwenyewe",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Kutengeneza kitengo",
+          "body": [
+            "Unaweza kuongeza vitengo vyako mwenyewe kwenye kibadilishi chochote. Katika paneli ya vitengo, chagua \"Kitengo kipya\", kipe jina na alama, na ukifafanue kwa kitengo kilichopo.",
+            {
+              "points": [
+                "Kigezo: \"1 hatua = 0.75 m\". Kwa kipimo kisichoanzia sifuri, pia kile kinachoongezwa baada ya kuzidisha.",
+                "Fomula: jinsi thamani inavyokuwa kitengo kingine, kwa x kama thamani, na fomula ya kurudi. Kwa mfano x * 9 / 5 + 32 na (x - 32) * 5 / 9."
+              ]
+            },
+            "Unachoandika hujaribiwa unapokiandika, na matokeo ya kitengo chako huonyeshwa kabla ya kukihifadhi. Fomula inaweza kutumia + − × ÷ ^, mabano, x, pi, e, na vitendakazi sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos na atan. Hukokotolewa, na kamwe haiendeshwi kama programu.",
+            "Vitengo vyako huorodheshwa chini ya \"Zangu\" kwenye paneli, ambapo vinaweza kubadilishwa na kuondolewa. Kitengo chako kimoja kinaweza kufafanuliwa kwa kitengo chako kingine; kuondoa kitengo huondoa pia vile vilivyofafanuliwa kwacho.",
+            "Mipangilio → Units huorodhesha vitengo vyako vya kila kibadilishi, na huvitoa na kuviingiza kama maandishi unayoweza kuhifadhi au kuhamishia kompyuta nyingine."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mipangilio",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Mipangilio ya Units",
+          "body": [
+            "Faili → Fungua Mipangilio hufungua mipangilio ya Units; vivyo hivyo chaguo za jedwali (gia kwenye upau wake).",
+            {
+              "points": [
+                "Fungua kila kibadilishi katika kichupo chake, au katika kichupo ulichomo.",
+                "Thamani zilizopitiliza kwa ukamilifu, kinachoandikwa kati ya maelfu (10000.000, 10 000.000 au 10,000.000; hakuna kitu, isipokuwa ukichagua vinginevyo), na namba za mistari.",
+                "Sarafu: kama viwango husomwa kutoka kwenye mtandao, na kama huduma hutajwa kando yake.",
+                "Usahihi wa vitengo: chagua kibadilishi (au \"Vitengo ulivyobadilisha\"), tafuta kitengo, na weka desimali zake kwa − na +; mshale huurudisha kwenye usahihi wa kitengo chenyewe. \"Tumia kwa kitengo hiki kila mahali\" katika menyu ya safu huweka thamani hiyo hiyo.",
+                "Vitengo ambavyo jedwali huanza navyo: vibadilishi ambavyo ulichagua safu zake za kwanza, kila kimoja na njia ya kurudi kwenye vile kinachokuja navyo.",
+                "Vitengo vyako mwenyewe."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Kuhusu Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Kuhusu Units",
+          "body": [
+            "Units ni programu ya kubadilisha vipimo ya Syntelab Creative: vibadilishi 38 vyenye vitengo zaidi ya 1,500, kuanzia urefu na halijoto hadi sarafu na misingi ya namba. Thamani iliyoandikwa mara moja huonyeshwa katika kila kitengo unachoomba, katika jedwali linaloweza kushikilia thamani moja au mamilioni yake.",
+            "Namba hukokotolewa kwa usahihi, kama sehemu, na huzungushwa tu zinapoandikwa. Kila kitu hufanyika kwenye kompyuta hii; viwango vya sarafu pekee ndivyo husomwa kutoka kwenye mtandao, na hilo linaweza kuzimwa.",
+            "Ni mpya. Pale isipotosheleza kazi yako, tuambie kupitia Msaada → Maoni: hivyo ndivyo tunavyojua tufanyie kazi nini."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Jedwali linashikilia mistari mingapi: tulichopima",
+          "body": [
+            "Jedwali halina kikomo maalum cha mistari: ni refu kadiri kumbukumbu ya kompyuta yako inavyoruhusu. Mstari mmoja huchukua baiti 16, hivyo mistari milioni 100 huchukua takriban 1.5 GB. Kumbukumbu inapoisha, jedwali hubaki kama lilivyokuwa na programu husema kiasi kilichohitajika.",
+            "Tulipima kwa mistari 50,000,000, kila mmoja ukiwa na namba katika safu moja, kwenye toleo lililoboreshwa la programu:",
+            {
+              "points": [
+                "Kubandika mistari 50,000,000: takriban sekunde 7.",
+                "Kuiingiza kutoka faili ya CSV: sekunde 12.",
+                "Kuitoa kwenda faili ya CSV, pamoja na safu ya pili iliyobadilishwa: takriban dakika 3.5.",
+                "Kuitoa kwenda Excel, kwenye laha 48: dakika 4.3."
+              ]
+            },
+            "Kutoa huchukua muda mrefu kuliko kuingiza kwa sababu kila seli inayoandikwa hubadilishwa kwa usahihi kwanza.",
+            {
+              "note": "Kompyuta ambayo jaribio liliendeshwa: AMD Ryzen 9 9950X3D (kore 16, nyuzi 32), kumbukumbu ya GB 64, Windows 11 Pro. Oktoba 2026. Kwenye kompyuta nyingine muda utatofautiana; ukubwa wa mstari hautatofautiana."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Units imejengwa kwa nini",
+          "body": [
+            {
+              "points": [
+                "Namba kamili: maktaba za num za Rust (sehemu za namba kamili za ukubwa wowote).",
+                "Vitengo, vigezo vyake na vikundi vyake: faili za data za programu, moja kwa kila kibadilishi.",
+                "Kusoma vitabu vya kazi vya Excel na OpenDocument: calamine. Kuandika vitabu vya kazi vya Excel: rust_xlsxwriter.",
+                "Ubao wa kunakili wa mfumo, kwa kunakili na kubandika mistari mingi sana: arboard.",
+                "Viwango vya sarafu: ExchangeRate-API na CoinGecko (tazama \"Sarafu\")."
+              ]
+            },
+            "Kile inachoshiriki na sehemu nyingine ya programu kiko chini ya \"Kuhusu Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Kile ambacho Units haiwezi kufanya bado",
+          "body": [
+            {
+              "points": [
+                "Mstari mmoja hushikilia thamani moja: kwa mstari uliobandikwa wenye thamani kadhaa, ya kwanza huchukuliwa.",
+                "Kutoa mistari mingi sana ni polepole (tazama tulichopima).",
+                "Kinachonakiliwa kwenye ubao wa kunakili hushikiliwa kwenye kumbukumbu kama maandishi moja kabla ya kubandikwa.",
+                "Viwango vya sarafu ni vipya kadiri vyanzo vyake viwili vinavyovitoa: mara moja kwa siku kwa sarafu za nchi."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

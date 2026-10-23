@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Texte und Dateien",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Der Editor",
+          "body": [
+            "Scribe ist ein Editor für einfachen Text mit Werkzeugen daneben. Jeder Text hat einen eigenen Tab: Der Text steht in der Mitte, das Werkzeugbedienfeld daneben und eine Statuszeile darunter.",
+            "Beim Start fragt Scribe zuerst, was Sie tun möchten: Wörter zählen, suchen und ersetzen, Duplikate entfernen, zwei Texte vergleichen, Zeilen sortieren, einen Text umkehren oder Füll- bzw. Zufallstext schreiben. Jede Auswahl öffnet den Text mit dem passenden Werkzeug daneben. „Leerer Text“ öffnet nur den Text; zuletzt geöffnete Texte werden darunter aufgelistet.",
+            {
+              "points": [
+                "Datei → Neuer Text (Strg+N) beginnt mit einem leeren Text.",
+                "Datei → Öffnen (Strg+O) öffnet eine oder mehrere Dateien, jede in einem eigenen Tab. Jede Datei mit Text kann geöffnet werden: .txt, .md, .csv, .log, .srt, Quellcode und weitere.",
+                "Bearbeiten → Rückgängig (Strg+Z) und Wiederholen (Strg+Y) gehen alle Änderungen am Text durch. Ein Werkzeug oder ein Rezept zählt jeweils als ein Schritt.",
+                "Bearbeiten → Suchen und ersetzen (Strg+F) öffnet im Editor eine Leiste, mit der Sie von einem Treffer zum nächsten wechseln.",
+                "Bearbeiten → Alles auswählen (Strg+A)."
+              ]
+            },
+            "Die Zeile unter dem Text zeigt die Cursorposition, den Umfang der Auswahl, die Anzahl der Zeilen, Wörter und Zeichen, die Dateikodierung und die Zeilenenden.",
+            "Auf das Fenster gezogene Dateien werden ebenfalls geöffnet, jede als neuer Text mit Dateiname, Kodierung und Zeilenenden. Die App erhält den Inhalt der abgelegten Datei, aber nicht ihren Speicherort. Daher werden Sie beim Speichern nach einem Speicherort gefragt. Dateien über 64 MB öffnen Sie über Datei → Öffnen.",
+            "Solange ein neuer Text leer ist, werden zuletzt geöffnete Texte aufgelistet. Klicken Sie auf einen Eintrag, um ihn zu öffnen. „Liste löschen“ entfernt alle Einträge. Die Liste wird nur auf diesem Computer gespeichert."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Speichern und Speichern unter",
+          "body": [
+            "Die Datei auf dem Datenträger wird erst geändert, wenn Sie speichern. Ein Punkt auf dem Tab zeigt an, dass der Text Änderungen enthält, die noch nicht in der Datei stehen. Beim Schließen eines solchen Tabs werden Sie zuerst gefragt.",
+            {
+              "points": [
+                "„Speichern“ (Strg+S) überschreibt die Datei mit dem Text. Bei einem neuen Text werden Sie nach dem Speicherort gefragt.",
+                "„Speichern unter“ (Strg+Umschalt+S) speichert den Text in einer neuen Datei, die anschließend den Tab übernimmt. Alle rückgängig zu machenden Schritte bleiben erhalten; die alte Datei bleibt unverändert."
+              ]
+            },
+            "Eine Datei wird vollständig oder gar nicht geschrieben. Schlägt der Schreibvorgang fehl, bleibt die bisherige Datei erhalten.",
+            {
+              "note": "Eine Datei wird so gespeichert, wie sie geöffnet wurde: mit derselben Kodierung und denselben Zeilenenden. Ein unter Windows erstellter Text und ein unter Linux erstellter Text behalten jeweils ihr Format."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodierungen und Zeilenenden",
+          "body": [
+            "Eine Kodierung legt fest, wie Buchstaben als Bytes gespeichert werden. Scribe liest die Angaben aus der Datei und schätzt die Kodierung, wenn keine angegeben ist. Die meisten heutigen Dateien verwenden UTF-8; ältere Dateien aus Mitteleuropa häufig Windows-1250.",
+            {
+              "points": [
+                "Wenn Buchstaben falsch aussehen (Ã£ statt ă oder als Kästchen): Datei → „Mit anderer Zeichenkodierung erneut lesen“ und die Kodierung auswählen, mit der die Datei geschrieben wurde.",
+                "Zum Speichern mit einer anderen Kodierung wählen Sie sie in der Zeile unter dem Text aus und speichern Sie dann. Enthält der Text Buchstaben, die diese Kodierung nicht darstellen kann, nennt Scribe sie und speichert nichts.",
+                "Zeilenenden (Windows CRLF, Linux und macOS LF, altes Mac CR) ändern Sie am selben Ort. Scribe meldet Dateien mit gemischten Zeilenenden; beim Speichern erhalten alle Zeilen dasselbe Zeilenende."
+              ]
+            },
+            "Wie ein neuer Text beginnt, legen Sie in den Einstellungen fest."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Textanzeige",
+          "body": [
+            {
+              "points": [
+                "Alle Einträge im Menü „Ansicht“ sind Schalter: Ist ein Eintrag aktiviert, wird die entsprechende Anzeige eingeblendet; andernfalls bleibt sie verborgen.",
+                "Text: „Lange Zeilen umbrechen“ (Alt+Z) zeigt Zeilen, die länger als das Fenster sind, in mehreren Bildschirmzeilen an, ohne die Zeilen im Text zu verändern; außerdem gibt es Zeilennummern und die Ergebnisanzeige neben dem Text.",
+                "Neben dem Text: Werkzeuge (Strg+T), Rezepte und Statistik. Das Bedienfeld zeigt nur aktivierte Bereiche. Ist keiner aktiviert, wird kein Bedienfeld angezeigt.",
+                "Angezeigte Werkzeuge: Werkzeuggruppen (Suchen und ersetzen, Zeilen, Groß- und Kleinschreibung, Bereinigen, Text schreiben) können aus dem Bedienfeld ausgeblendet werden. Ein über das Menü „Format“ oder „Werkzeuge“ ausgewähltes Werkzeug wird trotzdem angezeigt: Der zugehörige Bereich und seine Gruppe werden automatisch eingeblendet.",
+                "Der Doppelpfeil oben im Bedienfeld klappt es zu einer Leiste am Rand ein. Von dort erreichen Sie jeden Bereich mit einem Klick. Ziehen Sie am Rand, um das Bedienfeld breiter oder schmaler zu machen.",
+                "Schriftart und Schriftgröße legen Sie in den Einstellungen fest."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Sehr große Dateien",
+          "body": [
+            "Dateien über 64 MB werden nicht in den Editor geladen. Sie öffnen sich in einem Tab, der jeweils 500 Zeilen auf einmal anzeigt und sie beim Lesen aus der Datei lädt. Dateien mit mehreren Gigabyte lassen sich so in ungefähr der Zeit öffnen, die ein einmaliges Durchgehen dauert.",
+            {
+              "points": [
+                "Mit „Vorherige Seite“ und „Nächste Seite“ blättern Sie durch die Datei. Eine Zeilennummer und „Los“ führen direkt zu einer beliebigen Zeile.",
+                "Die Suche durchsucht die gesamte Datei mit denselben Optionen wie sonst und listet die Fundstellen auf. Klicken Sie auf einen Treffer, um zu der Zeile zu wechseln. Lange Trefferlisten werden nach und nach geladen; mit „Weitere suchen“ laden Sie mehr.",
+                "„Rezept auf die ganze Datei anwenden“ schreibt das Ergebnis unter demselben Namen in einen Ordner Ihrer Wahl. Die Datei selbst wird dabei nicht geändert.",
+                "„Ganz im Editor öffnen“ lädt die Datei dennoch in den Editor, damit Sie sie manuell ändern können. Das kann langsam sein und benötigt ein Mehrfaches der Dateigröße an Arbeitsspeicher."
+              ]
+            },
+            {
+              "note": "Dateien, die für jedes Zeichen zwei Bytes verwenden (UTF-16), können nicht seitenweise angezeigt werden. Während ein Rezept ausgeführt wird, liegt die gesamte Datei im Arbeitsspeicher; die Grenze ist der verfügbare Speicher des Computers."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Werkzeuge",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "So funktionieren Werkzeuge",
+          "body": [
+            "Die Werkzeuge befinden sich gruppiert im Bedienfeld neben dem Text. Klicken Sie auf ein Werkzeug, um seine Optionen anzuzeigen, und wählen Sie dann „Auf den Text anwenden“.",
+            {
+              "points": [
+                "Ist Text ausgewählt, bearbeitet ein Werkzeug nur die Auswahl. Ohne Auswahl bearbeitet es den gesamten Text. Ob eine Auswahl vorliegt, steht oben im Bedienfeld.",
+                "Unter der Schaltfläche zeigt ein Werkzeug an, was es geändert hat und wie viele Zeilen oder Fundstellen betroffen sind.",
+                "Jedes Werkzeug ist ein einzelner Schritt: Mit „Rückgängig“ machen Sie es vollständig rückgängig.",
+                "Jedes Werkzeug ist auch über die Menüs und die Befehlssuche erreichbar. Werkzeuge, die die Form eines Textes ändern (Zeilen, Groß- und Kleinschreibung, Bereinigen), stehen im Menü „Format“, die übrigen unter „Werkzeuge“. Wenn Sie dort ein Werkzeug auswählen, öffnet sich das Bedienfeld mit seinen Optionen."
+              ]
+            },
+            "Im Menü „Format“ wird ein Werkzeug mit nur einer hauptsächlichen Auswahl direkt mit seinen Optionen dargestellt: Jede Art der Groß- und Kleinschreibung, jedes Anführungszeichenformat und jede Möglichkeit, einen Text umzudrehen, hat einen eigenen Befehl. Er öffnet das Werkzeug mit der entsprechenden Option. Ist das Fenster für eine Gruppe zu schmal, wird die Gruppe zu einer Schaltfläche, die die gesamte Liste öffnet.",
+            "Die Werkzeuge laufen auf diesem Computer. Kein Text verlässt ihn."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Ergebnis vor dem Anwenden",
+          "body": [
+            "Wenn ein Werkzeug geöffnet ist, sehen Sie im Bereich „Ergebnis“ neben dem Text, was es ausgeben würde. Der Text ändert sich erst, wenn Sie „Auf den Text anwenden“ wählen. Das Ergebnis wird laufend aktualisiert: Ändern Sie eine Option oder den Text, wird es neu berechnet.",
+            {
+              "points": [
+                "Text und Ergebnis stehen nebeneinander, jeweils unter einer Überschrift gleicher Höhe, damit dieselben Zeilen auf gleicher Höhe beginnen. Beide Bereiche scrollen gemeinsam; mit der Schaltfläche zum Verknüpfen können Sie das ausschalten.",
+                "Geänderte Zeilen werden markiert, der geänderte Teil der Zeile dunkler. Nur verschobene und neue Zeilen erhalten jeweils eine eigene Farbe. Zeilen, die geändert oder entfernt würden, sind auch im Ausgangstext markiert.",
+                "Unter den Überschriften stehen die Zahlen zu den Änderungen: geänderte, verschobene, neue und entfernte Zeilen sowie Zeilen- und Zeichenanzahl vorher und nachher.",
+                "Unter dem Ergebnis stehen die Zeilen, die entfernt würden. Klicken Sie auf eine, um im Text zu ihrer Stelle zu springen.",
+                "Die kleinen Schaltflächen beim Ergebnis: kopieren, als neuen Text öffnen, mit dem Text in einem Tab vergleichen, gemeinsames Scrollen ein- oder ausschalten, das Ergebnis unter statt neben dem Text anzeigen und ausblenden. Der Text hat eigene Schaltflächen für Rückgängig, Wiederholen, Kopieren, Einfügen und Ersetzen, Alles auswählen und Leeren.",
+                "Ziehen Sie den Balken zwischen den Bereichen, um einem mehr Platz zu geben. Mit einem Doppelklick werden beide wieder gleich groß."
+              ]
+            },
+            "Nach dem Anwenden meldet der Ergebnisbereich: „Angewendet. Der Text links zeigt jetzt das Ergebnis.“ Er bietet außerdem „Rückgängig“ und „Mit dem vorherigen Text vergleichen“ an. Damit wird derselbe Vergleich von vorher und nachher geöffnet. Sobald Sie den Text oder eine Werkzeugoption ändern, wird wieder eine Vorschau angezeigt.",
+            {
+              "note": "Ansicht → „Ergebnis neben dem Text“ blendet den Bereich ein oder aus. Bei sehr langen Texten (über zwei Millionen Zeichen) wird keine Vorschau angezeigt: Wenden Sie das Werkzeug an; mit „Rückgängig“ stellen Sie den vorherigen Stand wieder her."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Alle Fundstellen ersetzen",
+          "body": [
+            "Ersetzt auf einmal jede Fundstelle. Während Sie den Suchtext eingeben, zeigt Scribe die Anzahl der Treffer an und markiert sie im Text. So sehen Sie vor dem Anwenden, was geändert wird.",
+            {
+              "points": [
+                "„Regulärer Ausdruck“: Der Suchtext ist ein Muster. In „Ersetzen durch“ stehen $1, $2 … für die Treffer der Mustergruppen.",
+                "„Groß-/Kleinschreibung beachten“: a und A gelten als verschiedene Buchstaben.",
+                "„Nur ganze Wörter“: „Hund“ wird nicht innerhalb von „Hundefutter“ gefunden.",
+                "„Groß-/Kleinschreibung des ersetzten Textes beibehalten“: Wird „rot“ durch „blau“ ersetzt, wird aus „Rot“ „Blau“ und aus „ROT“ „BLAU“."
+              ]
+            },
+            {
+              "points": [
+                "Unter „Weitere Optionen“ → „Einsetzen…“ kann der einzusetzende Text Platzhalter enthalten, die für jeden Treffer ausgefüllt werden. {counter} zählt 1, 2, 3 … ({counter:10} beginnt bei 10, {counter:10:5} erhöht sich jeweils um 5); {date} und {time} geben Datum und Uhrzeit des Computers an; {uuid} ist eine Kennung; {random} besteht aus 8 zufälligen Buchstaben und Ziffern ({random:12} aus 12).",
+                "Unter dem Suchfeld zeigt Scribe auch an, auf wie vielen Zeilen Treffer liegen und wie viele verschiedene Texte betroffen sind."
+              ]
+            },
+            "Mit „Mehrere Ersetzungen auf einmal“ wenden Sie in einem Schritt eine Liste von Such- und Ersetzungspaaren an. Schreiben Sie pro Zeile ein Paar im Format: Suchtext => Ersatztext. Die Paare werden der Reihe nach angewendet; jedes arbeitet mit dem Ergebnis des vorherigen. Ist die zweite Hälfte leer, wird der Suchtext entfernt.",
+            {
+              "note": "Ein Muster kann das Programm nicht blockieren: Die Laufzeit wächst mit der Textlänge und nicht schneller. Muster mit Rückverweisen auf einen Treffer (\\1) sind deshalb nicht verfügbar."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Zeilen",
+          "body": [
+            {
+              "points": [
+                "Zeilen sortieren nach: Buchstaben wie in einem Wörterbuch, in der Programmsprache oder einer von Ihnen gewählten Sprache (im Rumänischen kommt ă nach a; im Schwedischen ä nach z; im Deutschen neben a); Buchstaben und Zahlen nach Zahlenwert (file2 vor file10); der Zahl am Zeilenanfang; Länge; Wortanzahl; Datum am Zeilenanfang (05.03.2024, 2024-03-05, mit oder ohne Uhrzeit); Internetadressen; Versionsnummern (1.2.10 nach 1.2.9); Titeln, wobei ein vorangestellter Artikel nicht zählt; einer von Ihnen vorgegebenen Reihenfolge (klein, mittel, groß) oder ohne Sortierung.",
+                "Zeilen ohne sortierbaren Wert (keine Zahl, kein Datum oder ein Wert, der in Ihrer Reihenfolge nicht vorkommt) bleiben immer am Ende – unabhängig davon, ob aufsteigend oder absteigend sortiert wird.",
+                "Weitere Sortieroptionen: ab einem bestimmten Wort oder Zeichen vergleichen oder eine Tabellenspalte verwenden (einschließlich der Spaltenauswahl); die erste Zeile als Überschrift beibehalten; Absätze statt Zeilen sortieren; vor dem Sortieren aufräumen – Leerzeichen am Rand entfernen, Leerzeilen löschen oder Duplikate entfernen.",
+                "Doppelte Zeilen entfernen: die erste oder letzte Wiederholung behalten oder alle wiederholten Zeilen entfernen (nur einmal vorkommende Zeilen bleiben dann erhalten). Groß-/Kleinschreibung, Leerzeichen am Zeilenrand, Ziffern und Satzzeichen sowie eine Anzahl von Zeichen am Anfang oder Ende können beim Vergleich ignoriert werden. Verglichen werden kann auch nur eine Spalte oder nur der Teil, auf den ein Muster zutrifft. Leerzeilen werden wie andere behandelt: behalten, entfernt oder zu einer zusammengefasst.",
+                "Wiederholte Zeilen zählen: Jede Zeile bleibt einmal erhalten, davor steht ihre Häufigkeit. Sortierung nach häufigster zuerst, seltenster zuerst oder ursprünglicher Reihenfolge.",
+                "Zeilen behalten oder verwerfen: Sucht in jeder Zeile nach einem Text und behält nur Zeilen, die ihn enthalten, oder nur jene, die ihn nicht enthalten.",
+                "Zeilenreihenfolge umkehren; Zeilen mischen.",
+                "Zeilen nummerieren: Startnummer, nachgestellter Text, führende Nullen für gleich breite Zahlen; Leerzeilen bleiben unnummeriert.",
+                "Leerzeilen: alle entfernen oder bei mehreren aufeinanderfolgenden nur eine behalten.",
+                "Zeilen mit einem Trenntext Ihrer Wahl zusammenfügen; an jedem Komma, Semikolon oder einem anderen Zeichen in Zeilen aufteilen. In Feldern für Nummerierung, Zusammenfügen, Aufteilen und Zählen steht \\t für einen Tabulator, da er nicht direkt eingegeben werden kann."
+              ]
+            },
+            {
+              "note": "Eine Option, die nur zusammen mit einer anderen sinnvoll ist, wird erst dann angezeigt, zum Beispiel die Spaltenauswahl beim Sortieren nach Spalte. Weniger häufig benötigte Optionen stehen unter „Weitere Optionen“."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Groß- und Kleinschreibung",
+          "body": [
+            "Groß- und Kleinschreibung ändern: Satzanfänge großschreiben, Jedes Wort Großschreiben, alles groß, alles klein, umkehren sowie Schreibweisen für Namen in Code: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Die Groß- und Kleinschreibung folgt den Regeln des jeweiligen Alphabets und nicht nur denen des Englischen.",
+            "In der Gruppe „Richtung“ kehrt „Text umkehren“ die Buchstaben jeder Zeile, die Wortreihenfolge oder die Buchstaben innerhalb jedes Wortes um. „Auf dem Kopf“ schreibt den Text so, dass man ihn von der anderen Tischseite lesen kann. „Wie im Spiegel“ vertauscht zusätzlich Zeichen, die eine linke und rechte Seite haben. Buchstaben werden so gezählt, wie Leser sie wahrnehmen: Ein Buchstabe mit diakritischen Zeichen bleibt ein Zeichen."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Bereinigen",
+          "body": [
+            {
+              "points": [
+                "Leerzeichen bereinigen: Mehrere Leerzeichen werden zu einem; Leerzeichen am Zeilenanfang und -ende werden entfernt.",
+                "Zeilenränder kürzen: an beiden Enden, nur am Anfang oder nur am Ende.",
+                "Anführungszeichen: gerade, englische, rumänische, deutsche oder französische.",
+                "Diakritische Zeichen entfernen: ă wird zu a, é zu e. Nur in lateinischen und griechischen Alphabeten, in denen der Buchstabe ohne Zeichen derselbe Buchstabe bleibt.",
+                "Rumänische Buchstaben korrigieren: ş und ţ (mit Cedille, wie auf älteren Tastaturen geschrieben) werden zu ș und ț (mit Komma darunter), den Buchstaben des Rumänischen.",
+                "Tabulatoren in Leerzeichen und Leerzeichen in Tabulatoren umwandeln; die Tabulatorbreite legen Sie fest.",
+                "HTML-Tags entfernen: für den Quelltext einer Webseite, der in den Text eingefügt wurde. Tags, Skripte und Formatierungen werden entfernt; sichtbar bleibt, was ein Leser auf der Seite sehen würde. Um eine Seite anhand ihrer Adresse abzurufen, verwenden Sie das Werkzeug „Text einer Webseite“ darunter.",
+                "Text einer Webseite: Geben Sie die Adresse einer Seite ein (example.com/page) und wählen Sie „Text abrufen“. Der für Leser sichtbare Text wird an der Cursorposition eingefügt, ohne Tags, Skripte oder Formatierungen. Dies ist das einzige Scribe-Werkzeug mit Internetzugriff, und es wird nur auf Ihren Wunsch verwendet: Die Seite wird vom auf diesem Computer installierten Browser (Microsoft Edge oder Google Chrome) ohne Fenster, Cookies oder Anmeldedaten abgerufen. Die App selbst sendet nichts. Bei einer Seite, für die eine Anmeldung erforderlich ist, erhalten Sie nur das, was auch ein nicht angemeldeter Besucher sehen würde."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Rumänische Diakritika wiederherstellen",
+          "body": [
+            "Rumänischer Text, der ohne ă, â, î, ș und ț geschrieben wurde, erhält diese Buchstaben zurück.",
+            {
+              "steps": [
+                "Öffnen Sie das Werkzeug in der Gruppe „Bereinigen“ und wählen Sie „Auf den Text anwenden“.",
+                "Wörter mit nur einer richtigen Form werden sofort geändert: „stiu“ wird zu „știu“, „informatii“ zu „informații“.",
+                "Wörter mit mehreren möglichen Bedeutungen (fata, fată, fața, față) erscheinen unter der Schaltfläche an ihrer jeweiligen Stelle im Text. Klicken Sie für jedes auf die richtige Form.",
+                "Sie können vor dem Anwenden auch „Bei mehrdeutigen Wörtern automatisch die wahrscheinlichere Form auswählen“ aktivieren. Dann wird nichts nachgefragt; prüfen Sie anschließend das Ergebnis."
+              ]
+            },
+            "Wenn der Kontext ausreicht, entscheidet Scribe anhand der umgebenden Wörter: „o casa“ wird zu „o casă“, „casa mea“ bleibt unverändert und „pentru ca“ wird zu „pentru că“.",
+            {
+              "note": "Dieses Werkzeug wurde für Scribe anhand einer Liste häufiger Wörter und rumänischer Endungen entwickelt, die immer mit Diakritika geschrieben werden. Unbekannte Wörter (seltene Wörter und Namen) bleiben unverändert. Wörter, die bereits Diakritika enthalten, werden nie angefasst. Lesen Sie das Ergebnis durch, bevor Sie es weitergeben."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Text schreiben: Füll- und Zufallstext",
+          "body": [
+            "Die Werkzeuge in der Gruppe „Text schreiben“ ändern nichts Vorhandenes, sondern fügen Text ein. Das Ergebnis erscheint an der Cursorposition und ersetzt eine vorhandene Auswahl.",
+            {
+              "points": [
+                "Fülltext: Absätze, Sätze, Wörter, Listen, Überschriften oder Seitenteile (Überschrift, Absätze, Liste). In lateinischem Blindtext (Lorem ipsum), auf Englisch oder Rumänisch, mit Wörtern aus Büro oder Küche oder mit eigenen Wörtern. Weitere Optionen: kurze, mittlere oder lange Sätze; reiner Text, Markdown, HTML oder JSON; Überschriftenebene; Zeichenlimit (der Text wird am vollständigen Wort abgeschnitten und endet weiterhin mit einem Satz); Wörter, die ausgelassen werden sollen.",
+                "Erfundene Daten: Namen, E-Mail-Adressen, Telefonnummern, Straßenadressen, Daten oder Zahlen, je eine pro Zeile, aus Rumänien oder englischsprachigen Ländern. „Zeilen nach eigenem Muster“ schreibt jede Zeile wie angegeben. Platzhalter {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} und {row} stehen für die erzeugten Werte – so erstellen Sie in kurzer Zeit Beispieldaten für eine Tabelle.",
+                "Zufallstext: Passwörter (mit Buchstaben, Ziffern und Sonderzeichen, mindestens jeweils einem), Buchstaben, Ziffern, Hexadezimalwerte oder Kennungen (UUIDs), in einer oder mehreren Zeilen. Leicht verwechselbare Zeichen (0 und O, 1, l und I) können ausgelassen werden.",
+                "Ein Startwert unter „Weitere Optionen“ sorgt dafür, dass Fülltext und erfundene Daten bei demselben Startwert immer gleich ausfallen. 0 erzeugt jedes Mal ein neues Ergebnis."
+              ]
+            },
+            {
+              "note": "Passwörter werden auf diesem Computer aus der Zufälligkeit des Betriebssystems erzeugt und nirgendwohin gesendet. Erfundenen E-Mail-Adressen wird example.com angehängt, wo niemand E-Mails erhält. Eine zufällig erzeugte Telefonnummer kann einer echten Person gehören – rufen Sie sie nicht an."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rezepte",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Aktionen als Rezept speichern",
+          "body": [
+            "Ein Rezept ist eine Liste von Werkzeugen samt ihren Optionen. Es wird unter einem Namen gespeichert und lässt sich mit einem Klick erneut ausführen.",
+            {
+              "steps": [
+                "Wenden Sie die gewünschten Werkzeuge in der gewünschten Reihenfolge auf einen Text an.",
+                "Öffnen Sie oben im Bedienfeld den Bereich „Rezepte“. Die angewendeten Werkzeuge werden dort aufgelistet.",
+                "Wählen Sie „Als Rezept speichern“ und geben Sie einen Namen ein.",
+                "Öffnen Sie später das Rezept und wählen Sie „Auf den Text anwenden“. Alle Schritte werden ausgeführt und lassen sich gemeinsam mit einem einzigen „Rückgängig“ zurücknehmen."
+              ]
+            },
+            "Rezepte werden auf diesem Computer gespeichert und sind in jedem Text verfügbar."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Rezept ändern oder neu erstellen",
+          "body": [
+            "„Ändern“ bei einem geöffneten Rezept zeigt seinen Namen und seine Schritte. Sie können Schritte nach oben oder unten verschieben, entfernen oder mit anderen Optionen versehen. Werkzeuge fügen Sie über die Liste unter den Schritten hinzu. Gespeichert wird erst mit „Speichern“.",
+            "„Neues Rezept“ beginnt ohne Schritte. Sie können es auf dieselbe Weise zusammenstellen, ohne die Werkzeuge zuvor auf einen Text anzuwenden.",
+            {
+              "note": "Werkzeuge, die Text erzeugen (Fülltext und Zufallstext), sind keine Rezeptschritte: Ein Rezept verändert einen vorhandenen Text."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Rezept auf Dateien anwenden",
+          "body": [
+            {
+              "steps": [
+                "Öffnen Sie das Rezept und fügen Sie unter „Auf Dateien anwenden“ Dateien oder einen Ordner samt Unterordnern hinzu.",
+                "Wählen Sie den Speicherort der Ergebnisse: in einem anderen Ordner, sodass die Originaldateien unverändert bleiben, oder direkt über den Dateien.",
+                "Starten Sie den Vorgang. Scribe meldet, wie viele Dateien geschrieben wurden, wie viele keine Änderungen benötigten und welche aus welchem Grund nicht verarbeitet werden konnten."
+              ]
+            },
+            "Jede Datei wird mit ihrer ursprünglichen Kodierung und ihren Zeilenenden gespeichert. Im Zielordner behalten die Dateien ihre Ordnerstruktur. Bereits vorhandene Dateien werden nie überschrieben.",
+            {
+              "note": "Das Überschreiben der Originaldateien lässt sich in Scribe nicht rückgängig machen. Bewahren Sie eine Kopie auf, wenn Ihnen die Dateien wichtig sind."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistiken, Vergleiche und Ordner",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistiken",
+          "body": [
+            "„Statistik“ oben im Bedienfeld zeigt, woraus der Text oder die Auswahl besteht. Jeder Bereich lässt sich einklappen.",
+            {
+              "points": [
+                "Oben: Wörter, Zeichen mit und ohne Leerzeichen, Sätze, Absätze, Zeilen, Seiten und Dateigröße in Bytes.",
+                "Zeitangaben: geschätzte Dauer für stilles Lesen, lautes Vorlesen, Tippen und handschriftliches Schreiben.",
+                "Wörter: Anzahl verschiedener Wörter (und deren Anteil am Gesamttext), Buchstaben pro Wort, Silben, längstes und kürzestes Wort sowie die Anzahl der Wörter je Länge.",
+                "Sätze: Wörter pro Satz, Anzahl kurzer, mittlerer und langer Sätze, Aussagen, Fragen und Ausrufe sowie der längste und kürzeste Satz.",
+                "Lesbarkeit: ein Wert von 0 (sehr schwer) bis 100 (sehr leicht), berechnet mit einer Formel für die Sprache des Textes. Formeln gibt es für Englisch, Deutsch, Spanisch, Französisch, Italienisch, Niederländisch, Portugiesisch und Russisch. Für andere Sprachen wird kein Wert angezeigt, da eine Formel für eine andere Sprache irreführend wäre.",
+                "Häufigste Ausdrücke: meistverwendete Wörter samt Textanteil sowie wiederkehrende Wortpaare und Dreiergruppen.",
+                "Übliche Zeichenlimits: verbleibende oder überschrittene Zeichenzahl für Titel, Beschreibung, kurzen Beitrag und weitere Formate."
+              ]
+            },
+            "Wörter und Sätze werden nach den Regeln der jeweiligen Schrift erkannt. So werden auch Chinesisch, Japanisch und Thai gezählt, obwohl diese Sprachen Wörter nicht durch Leerzeichen trennen. Die für Zeitangaben verwendeten Geschwindigkeiten und die Wortzahl pro Seite legen Sie in den Einstellungen fest."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Zwei Texte vergleichen",
+          "body": [
+            {
+              "points": [
+                "Werkzeuge → „Mit einem anderen Text vergleichen“: der Text im Editor neben einem Text, den Sie eingeben oder einfügen.",
+                "Werkzeuge → „Mit einer Datei vergleichen“: der aktuelle Text im Editor neben einer ausgewählten Datei.",
+                "Werkzeuge → „Zwei Texte vergleichen“: zwei Texte, die Sie nebeneinander eingeben oder einfügen.",
+                "Werkzeuge → „Zwei Dateien vergleichen“."
+              ]
+            },
+            "Die Texte stehen nebeneinander. Nur im ersten Text vorkommende Zeilen sind als entfernt markiert, nur im zweiten als hinzugefügt. In geänderten Zeilen werden die abweichenden Wörter markiert. Angezeigt werden nur Unterschiede mit einigen Zeilen Kontext; mit den Pfeilen wechseln Sie zwischen ihnen.",
+            "Groß-/Kleinschreibung, Leerzeichen, Leerzeilen, Zahlen und Satzzeichen können beim Vergleich ignoriert werden. „In einer Spalte“ zeigt entfernte Zeilen mit ihrem Zeichen über den hinzugefügten Zeilen statt nebeneinander. Neben den Anzahlen zeigt Scribe den Ähnlichkeitsgrad der Texte als Anteil gleicher Zeilen.",
+            "Sobald Sie einen Text auswählen, wird er angezeigt, auch wenn der andere noch fehlt. Ziehen Sie den Balken zwischen den Texten, um einem mehr Platz zu geben. Während Sie die Texte eingeben, können Sie den Balken unter den Eingabefeldern nach oben oder unten ziehen, um den Feldern oder dem Vergleich mehr Platz zu geben. Mit einem Doppelklick setzen Sie einen Balken zurück.",
+            "Wenn mehrere aufeinanderfolgende Zeilen geändert wurden, wird jede der ähnlichsten Zeile gegenübergestellt. So führt eine eingefügte oder entfernte Zeile dazwischen nicht dazu, dass alle folgenden Zeilen als Änderungen erscheinen.",
+            "„Texte eingeben oder einfügen“ zeigt über jeder Spalte ein Feld. Der Vergleich wird während der Eingabe aktualisiert. Für jede Seite können Sie weiterhin eine Datei auswählen."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "In einem Ordner suchen und ersetzen",
+          "body": [
+            {
+              "steps": [
+                "Werkzeuge → „In einem Ordner suchen“ (Strg+Umschalt+F) und den Ordner auswählen. Unterordner werden ebenfalls durchsucht.",
+                "Geben Sie den Suchtext mit denselben Optionen wie bei „Überall ersetzen“ ein. Unter „Dateitypen“ können Sie die Suche auf bestimmte Endungen beschränken (txt, md, csv …).",
+                "Jeder Treffer wird je Datei mit seiner Zeile angezeigt. Klicken Sie auf eine Zeile, um die Datei an dieser Stelle zu öffnen.",
+                "Zum Ersetzen geben Sie den neuen Text ein, deaktivieren Sie Dateien, die unverändert bleiben sollen, und wählen Sie „Dateien schreiben“."
+              ]
+            },
+            "Es wird nichts geschrieben, bevor Sie es anfordern, und nur in Dateien, die ausgewählt bleiben. Jede Datei wird mit ihrer ursprünglichen Kodierung und ihren Zeilenenden gespeichert.",
+            {
+              "note": "Versteckte Ordner und von Programmen erzeugte Ordner (.git, node_modules) werden übersprungen, sofern Sie ihre Suche nicht ausdrücklich aktivieren. Dateien, die keinen Text enthalten, werden immer übersprungen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Einstellungen",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Die Einstellungen von Scribe",
+          "body": [
+            "Datei → Einstellungen öffnet die Programmeinstellungen im Bereich von Scribe.",
+            {
+              "points": [
+                "Editor: Schriftart (gleichmäßige Zeichenbreite oder Programmschrift), Schriftgröße, Zeilenumbruch, Zeilennummern und Vorschau eines Werkzeugergebnisses vor dem Anwenden.",
+                "Neuer Text: Zeilenenden und ob die Datei mit einer Byte-Reihenfolge-Markierung (BOM) beginnt.",
+                "Statistiken: Geschwindigkeiten für Lesen, Sprechen, Tippen und handschriftliches Schreiben sowie Wörter pro Seite.",
+                "Tastenkürzel für die Befehle von Scribe."
+              ]
+            },
+            "Mit einer Schaltfläche können Sie jede Einstellung auf den Auslieferungszustand zurücksetzen."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Über Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Über Scribe",
+          "body": [
+            "Scribe ist die Text-App von Syntelab Creative: ein Editor mit Werkzeugen neben dem Text. Die App zeigt vor dem Anwenden, was ein Werkzeug bewirken würde. Sie bereinigt und sortiert Listen, sucht und ersetzt Text in einer Datei oder einem ganzen Ordner, vergleicht Texte, wertet deren Inhalt aus, erzeugt Fülltext und Beispieldaten und speichert häufig ausgeführte Schritte als Rezepte.",
+            "Alles geschieht auf diesem Computer. Für Größe und Anzahl der Texte gibt es keine festgelegte Grenze. Begrenzend sind nur der Arbeitsspeicher des Computers und die Möglichkeiten der heutigen Technik.",
+            "Die App ist neu. Wenn etwas mit Ihren Texten nicht wie gewünscht funktioniert, teilen Sie uns das über Hilfe → Feedback mit. So erfahren wir, woran wir arbeiten sollen."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Womit Scribe entwickelt wird",
+          "body": [
+            {
+              "points": [
+                "Editor: CodeMirror.",
+                "Kodierungen lesen und schreiben: encoding_rs; chardetng schätzt die Kodierung einer Datei, die keine eigene Angabe enthält.",
+                "Suchen und ersetzen: die Regex-Bibliothek von Rust. Ihre Muster können das Programm nicht blockieren.",
+                "Sortierung nach den Regeln der jeweiligen Sprache sowie Erkennung von Wörtern und Sätzen in allen Schriftsystemen: ICU4X, die Unicode-Bibliothek.",
+                "Texte vergleichen: die Bibliothek similar.",
+                "Rumänische Diakritika: eine eigens für Scribe erstellte Wortliste und Regeln."
+              ]
+            },
+            "Was Scribe mit dem übrigen Programm gemeinsam hat, steht unter „Über Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Was Scribe noch nicht kann",
+          "body": [
+            {
+              "points": [
+                "Sehr große Dateien werden seitenweise gelesen und lassen sich nur mit Rezepten ändern. Für manuelle Änderungen muss die ganze Datei geöffnet werden, was Arbeitsspeicher benötigt.",
+                "Beim Wiederherstellen rumänischer Diakritika werden häufige Wörter erkannt. Seltene Wörter und Namen bleiben unverändert.",
+                "Es gibt keine Rechtschreibprüfung.",
+                "PDF- und Office-Dokumenten wird hier kein Text entnommen; diese lassen sich mit PDF Organizer öffnen.",
+                "Der Editor hebt weder Quellcode noch Markdown farblich hervor.",
+                "Eine auf das Fenster gezogene Datei wird als neuer Text geöffnet. Die App erfährt nicht, wo die Datei gespeichert ist, und fragt deshalb beim Speichern nach dem Speicherort."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

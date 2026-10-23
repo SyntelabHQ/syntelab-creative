@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Konverzia",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Konvertory",
+          "body": [
+            "Units konvertuje hodnoty medzi jednotkami merania: jednu hodnotu rýchlo alebo celé tabuľky hodnôt naraz. Všetko sa vypočítava vo vašom počítači.",
+            "Konvertory sú v šiestich ponukách: Základy, Pohyb a mechanika, Energia a výkon, Vedecké, Digitálne a médiá a Špecializovaná fyzika. Výberom konvertora sa otvorí jeho tabuľka.",
+            {
+              "points": [
+                "Konvertor sa otvorí na karte, na ktorej sa nachádzate. Ak jeho tabuľka obsahuje hodnoty, najprv sa vás opýta: Pokračovať (hodnoty sa stratia), Otvoriť na novej karte alebo Zrušiť.",
+                "Nastavenia → Units → „Otvárať každý konvertor na vlastnej karte“ namiesto toho otvorí každý vybraný konvertor na novej karte.",
+                "Súbor → Prejsť na Štart vás vráti na prvú stránku Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Rýchla konverzia",
+          "body": [
+            "Prvá stránka Units, Rýchla konverzia, prevedie jednu hodnotu z jednej jednotky na inú. Vyberte konvertor, zadajte hodnotu na strane „Z“ a vyberte obe jednotky: výsledok je na strane „Do“.",
+            {
+              "points": [
+                "Každá strana uvádza populárne jednotky konvertora a vaše vlastné jednotky, s vyhľadávaním. Tabuľka konvertora obsahuje všetky jednotky.",
+                "Tlačidlo medzi oboma stranami vymení obe jednotky.",
+                "Záložka vedľa jednotky ju pripne: pripnuté jednotky sú prvé v oboch zoznamoch aj v paneli jednotiek tabuľky.",
+                "Tlačidlo vo výsledku ho skopíruje; × vymaže hodnotu.",
+                "„Otvoriť v tabuľke“ otvorí tabuľku konvertora."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Ako sa čísla čítajú a píšu",
+          "body": [
+            "Čísla môžete zadávať a vkladať tak, ako sa píšu v rôznych krajinách: rozumie sa 1,234.56 aj 1.234,56, ako aj medzery a apostrofy medzi tisíckami a 1.5e-3 pre mocninu desiatich.",
+            "Číslo, ktoré sa dá prečítať dvoma spôsobmi (1,234: tisíc, alebo jedna a kúsok), sa prečíta tak, ako čísla zapisuje jazyk programu, a riadok pod tabuľkou to uvedie.",
+            "Výsledok sa zapíše s počtom desatinných miest jednotky, do ktorej sa prevádza, nie s toľkými číslicami, koľko ste zadali: 5 cm je 1,97 in. Nenulová hodnota vždy ukáže niekoľko platných číslic, takže 1 cm je 0,00001 km a nikdy 0,000 km.",
+            "Hodnoty príliš veľké alebo príliš malé na prečítanie na prvý pohľad sa zapíšu s mocninou desiatich, napríklad 1,6 × 10⁻³⁵. Zobraziť → Extrémne hodnoty v plnom zápise ich namiesto toho zapíše so všetkými nulami.",
+            "Ak jednotka takú hodnotu nemá (nulový akustický tlak nemá decibely), bunka zobrazí pomlčku."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabuľka",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Riadky a stĺpce",
+          "body": [
+            "Každý stĺpec je jednotka a každý riadok hodnota. Bunka, do ktorej píšete, určuje svoj riadok: ostatné stĺpce zobrazia tú istú hodnotu vo svojich jednotkách. Zadaná bunka je zobrazená tučným písmom.",
+            "Čo nie je číslo, sa zachová a zobrazí červenou farbou; jeho riadok nič neprevedie, kým to neopravíte.",
+            {
+              "points": [
+                "Na úpravu dvakrát kliknite na bunku alebo do nej jednoducho začnite písať. Enter presunie nadol, Tab doprava; šípky presúvajú; Escape ponechá bunku tak, ako bola.",
+                "Kliknutím na roh (#) vyberiete celú tabuľku, na číslo riadka jeho riadok, na nadpis jeho stĺpec. Shift+klik vyberie rozsah, Ctrl+klik pridá bunky a vyberať možno aj ťahaním.",
+                "Home a End prejdú na prvý a posledný stĺpec riadka; Ctrl+Home na prvú bunku tabuľky, Ctrl+End na poslednú. Ctrl so šípkou prejde na okraj tabuľky: na prvý alebo posledný riadok, prvý alebo posledný stĺpec. Page Up a Page Down posúvajú o obrazovku. So Shiftom každý z nich namiesto toho rozšíri výber.",
+                "Výber viacerých buniek je zvonka orámovaný; bunka, do ktorej ide písanie, zostáva vo vnútri bez podfarbenia.",
+                "Delete vyprázdni vybrané riadky.",
+                "Písaním do posledného riadka pridáte riadok. Tabuľka nemá horný limit: je taká dlhá, ako dovolí pamäť vášho počítača (riadok zaberá 16 bajtov, takže 100 miliónov riadkov zaberie približne 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Stĺpce a panel jednotiek",
+          "body": [
+            "Panel vedľa tabuľky uvádza jednotky konvertora. Hore sú jednotky v tabuľke: kliknutím na jednu odstránite jej stĺpec. Pod nimi sú všetky jednotky: hľadajte podľa názvu alebo symbolu, filtrujte podľa skupiny alebo podľa „Populárne“ a kliknutím na jednotku ju pridajte ako stĺpec.",
+            "Záložka vedľa jednotky ju pripne ako obľúbenú: v zozname je prvá a je prvá aj v Rýchlej konverzii.",
+            {
+              "points": [
+                "Stĺpce si šírku tabuľky delia rovnomerne, kým sa ich nadpisy zmestia; potom sa tabuľka posúva do strany.",
+                "Ťahaním okraja nadpisu zmeníte šírku stĺpca; dvojitým kliknutím na okraj prispôsobíte stĺpec jeho najdlhšej hodnote. Ťahať možno aj stĺpec s číslami riadkov.",
+                "Tlačidlo ⋮ stĺpca: presuňte ho doprava alebo doľava, pripnite ho k ľavému alebo pravému okraju, zmeňte jeho presnosť alebo ho odstráňte.",
+                "Presnosť stĺpca mení len tento stĺpec. „Použiť pre túto jednotku všade“ z nej urobí presnosť jednotky vo všetkých tabuľkách aj v Rýchlej konverzii.",
+                "Tlačidlo s dvoma šípkami vedľa Krok späť a Krok vpred prispôsobí stĺpce tabuľke: každá šírka, ktorú ste ťahali alebo prispôsobili, zmizne a stĺpce si šírku tabuľky opäť rozdelia.",
+                "Dve horné časti panela, jednotky v tabuľke a „Pridať jednotky“ (vyhľadávanie a filtre), sa kliknutím na ich názvy zbalia, aby mal zoznam viac miesta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Krok späť, kopírovanie, vkladanie, import a export",
+          "body": [
+            "Lišta nad tabuľkou obsahuje jej nástroje.",
+            {
+              "points": [
+                "Krok späť a Krok vpred (Ctrl+Z, Ctrl+Y) prechádzajú každou zmenou tabuľky. Vloženie alebo import je jeden krok.",
+                "Kopírovať (Ctrl+C) skopíruje celú tabuľku alebo výber tak, ako ho prečíta tabuľkový procesor. „Transponované“ zmení riadky na stĺpce.",
+                "Vložiť (Ctrl+V) vloží skopírované riadky do tabuľky od aktívnej bunky nadol. Ak prvý riadok obsahuje nadpisy jednotiek, stĺpce sa priradia podľa nich a jednotky, ktoré v tabuľke ešte nie sú, sa pridajú.",
+                "Importovať načíta zošit Excel alebo súbor CSV či TSV namiesto obsahu tabuľky. „Automaticky zistiť formát“ určí druh podľa súboru.",
+                "Exportovať zapíše tabuľku ako Excel, CSV, TSV alebo JSON. Ak sa desatinné miesta oddeľujú čiarkou, CSV sa zapíše s bodkočiarkami, ako to očakávajú tabuľkové procesory. Hárok Excelu pojme 1 048 576 riadkov: dlhšia tabuľka pokračuje na ďalších hárkoch toho istého zošita pod rovnakými nadpismi.",
+                "Guma vyprázdni vybrané riadky; kôš vyprázdni celú tabuľku."
+              ]
+            },
+            "Riadok obsahuje jednu hodnotu. Z vloženého alebo importovaného riadka s viacerými hodnotami sa vezme prvá a ostatné sa z nej vypočítajú.",
+            "Vloženie, import, export alebo kopírovanie veľmi mnohých riadkov chvíľu trvá. Karta nad tabuľkou vtedy ukazuje, ako ďaleko je práca, v percentách a v riadkoch, s tlačidlom Zastaviť. Zastavené vloženie alebo import ponechá tabuľku tak, ako bola; zastavený export nezapíše žiadny súbor.",
+            "Keď počítaču nezostane pamäť pre riadky, nič sa nezmení a riadok pod tabuľkou uvedie, koľko bolo potrebné. Keď sa riadky zmestia, ale pôvodnú tabuľku nemožno popri nich zachovať, opýta sa vás, či pokračovať bez možnosti vrátenia: túto zmenu ani tie pred ňou potom už nebude možné vrátiť späť. Pred otázkou sa uvoľnia najstaršie kroky funkcie Krok späť, aby sa získalo miesto.",
+            "Možnosti tabuľky (ozubené koliesko): čo uvádza nadpis stĺpca (Názov (symbol), Názov alebo Symbol), či kópie a exporty obsahujú nadpisy a čísla riadkov, „Spúšťať tento konvertor s týmito stĺpcami“ a „Resetovať tabuľku“."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Špeciálne konvertory",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Mena",
+          "body": [
+            "Meny nemajú pevný koeficient: ich hodnota sa mení. Konvertor mien načítava kurzy z dvoch bezplatných služieb, kým ho používate, a len vtedy.",
+            {
+              "points": [
+                "Meny krajín: Rates By Exchange Rate API, https://www.exchangerate-api.com . V zdroji sa menia raz denne a nenačítavajú sa častejšie.",
+                "Kryptomeny: Powered by CoinGecko, https://www.coingecko.com . Načítajú sa, keď sa konvertor otvorí alebo vráti do popredia a údaje, ktoré má, sú staršie ako štvrťhodina, a keď stlačíte Aktualizovať; nikdy podľa časovača."
+              ]
+            },
+            "Vyžadujú sa len kurzy. Neposiela sa nič o vás a nikdy ani sumy, ktoré prevádzate.",
+            "Riadok pod tabuľkou a pod výsledkom Rýchlej konverzie uvádza, z akého času sú kurzy. Bez pripojenia sa použijú posledné kurzy a označia sa ako staré. Mena, pre ktorú služby neposkytujú kurz, zobrazí pomlčku.",
+            "Nastavenia → Units → Mena: „Čítať kurzy zo siete“ sa dá vypnúť a konvertor potom používa posledné uložené kurzy. „Zobrazovať názvy zdrojov pri kurzoch“ zobrazí alebo skryje názvy oboch služieb na tomto riadku.",
+            "Kurzy sú informatívne. Nespoliehajte sa na ne pri transakciách."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Základ čísla",
+          "body": [
+            "Jednotky tohto konvertora sú spôsoby zápisu celého čísla: základy od 2 do 64, rímske číslice, základ 60 s dvojbodkami (1:30:15), binárne kódované desiatkové číslo (BCD) a Grayov kód. Ich hodnoty sú text: zadajte FF pod šestnástkovú sústavu a ostatné stĺpce zobrazia 255, 11111111 a tak ďalej.",
+            "Rímske číslice siahajú od I do MMMCMXCIX (1 až 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Jednotky, ktoré nie sú jednoduchým násobkom",
+          "body": [
+            "Väčšina jednotiek je násobkom inej. Niektoré nie sú a Units ich prevádza tak, ako sú definované: teploty s ich posunmi; spotrebu paliva (litre na 100 km oproti míľam na galón); vlnovú dĺžku oproti frekvencii; vodivosť oproti odporu; stupne Baumé, API, Brix a Plato oproti hustote; decibely oproti akustickému tlaku a intenzite; sklon v percentách oproti jeho uhlu.",
+            "Teplota a rozdiel teplôt nie sú to isté: 100 °C je 212 °F, ale rozdiel 100 °C je rozdiel 180 °F. Jednotky skupiny „Rozdiel (Δ)“ sa prevádzajú medzi sebou; medzi nimi a teplotnými stupnicami bunka zobrazí pomlčku."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vlastné jednotky",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Vytváranie jednotky",
+          "body": [
+            "K akémukoľvek konvertoru môžete pridať vlastné jednotky. V paneli jednotiek zvoľte „Nová jednotka“, dajte jej názov a symbol a definujte ju pomocou existujúcej jednotky.",
+            {
+              "points": [
+                "Faktor: „1 krok = 0,75 m“. Pre škálu, ktorá nezačína na nule, uveďte aj hodnotu, ktorá sa pridá po vynásobení.",
+                "Vzorec: ako sa hodnota mení na druhú jednotku (použite x pre hodnotu) a vzorec pre opačný smer. Napríklad x * 9 / 5 + 32 a (x - 32) * 5 / 9."
+              ]
+            },
+            "To, čo zadávate, sa skúša už počas písania a pred uložením sa zobrazí, koľko je jedna vaša jednotka. Vzorec môže obsahovať + − × ÷ ^, zátvorky, x, pi, e a funkcie sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos a atan. Vzorec sa vypočíta, nikdy sa nespustí ako program.",
+            "Vaše jednotky sú v paneli uvedené pod položkou „Moje“, kde ich môžete upravovať a odstraňovať. Vašu jednotku môžete definovať pomocou inej vašej jednotky; odstránenie jednotky odstráni aj všetky jednotky, ktoré boli definované pomocou nej.",
+            "Nastavenia → Units uvádzajú vaše jednotky všetkých konvertorov a exportujú a importujú ich ako text, ktorý si môžete uchovať alebo preniesť do iného počítača."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nastavenia",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Nastavenia Units",
+          "body": [
+            "Súbor → Otvoriť Nastavenia otvorí nastavenia Units; rovnako aj možnosti tabuľky (ozubené koliesko v jej lište).",
+            {
+              "points": [
+                "Otvárať každý konvertor na vlastnej karte, alebo na karte, na ktorej sa nachádzate.",
+                "Extrémne hodnoty v plnom zápise, čo sa píše medzi tisícami (10000,000, 10 000,000 alebo 10.000,000; nič, ak nezvolíte inak) a čísla riadkov.",
+                "Mena: či sa kurzy čítajú zo siete a či sa vedľa nich zobrazujú názvy služieb.",
+                "Presnosť jednotiek: vyberte konvertor (alebo „Zmenené jednotky“), vyhľadajte jednotku a nastavte jej desatinné miesta pomocou − a +; šípka ju vráti na vlastnú presnosť jednotky. „Použiť pre túto jednotku všade“ v ponuke stĺpca nastaví rovnakú hodnotu.",
+                "Jednotky, ktorými tabuľka začína: konvertory, ktorých prvé stĺpce ste vybrali, každý s možnosťou návratu k jednotkám, s ktorými prichádza.",
+                "Vaše vlastné jednotky."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O aplikácii Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O aplikácii Units",
+          "body": [
+            "Units je aplikácia Syntelab Creative na prevod jednotiek: 38 konvertorov s viac ako 1 500 jednotkami, od dĺžky a teploty po meny a číselné sústavy. Hodnota zadaná raz sa zobrazí v každej jednotke, ktorú si vyžiadate, v tabuľke, ktorá pojme jednu hodnotu aj milióny.",
+            "Čísla sa počítajú presne, ako zlomky, a zaokrúhľujú sa až pri zápise. Všetko sa deje v tomto počítači; zo siete sa načítavajú len kurzy mien a to sa dá vypnúť.",
+            "Aplikácia je nová. Ak vám pri práci v niečom nestačí, napíšte nám cez Pomoc → Spätná väzba: tak vieme, na čom pracovať."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Koľko riadkov tabuľka pojme: čo sme namerali",
+          "body": [
+            "Tabuľka nemá pevný limit riadkov: je tak dlhá, ako to dovolí pamäť vášho počítača. Jeden riadok zaberá 16 bajtov, takže 100 miliónov riadkov zaberie približne 1,5 GB. Keď dôjde pamäť, tabuľka zostane taká, aká bola, a program oznámi, koľko pamäte bolo potrebných.",
+            "Merali sme s 50 000 000 riadkami, každý s číslom v jednom stĺpci, v optimalizovanom zostavení programu:",
+            {
+              "points": [
+                "Vloženie 50 000 000 riadkov: približne 7 sekúnd.",
+                "Ich import zo súboru CSV: 12 sekúnd.",
+                "Ich export do súboru CSV s prevedeným druhým stĺpcom: približne 3,5 minúty.",
+                "Ich export do Excelu, na 48 hárkov: 4,3 minúty."
+              ]
+            },
+            "Export trvá dlhšie ako import, pretože každá zapisovaná bunka sa najprv presne prevedie.",
+            {
+              "note": "Počítač, na ktorom test prebehol: AMD Ryzen 9 9950X3D (16 jadier, 32 vlákien), 64 GB pamäte, Windows 11 Pro. Október 2026. Na inom počítači sa časy budú líšiť; veľkosť riadka nie."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Na čom je Units postavený",
+          "body": [
+            {
+              "points": [
+                "Presné čísla: knižnice num jazyka Rust (zlomky celých čísel ľubovoľnej veľkosti).",
+                "Jednotky, ich koeficienty a skupiny: dátové súbory programu, jeden pre každý konvertor.",
+                "Čítanie zošitov Excel a OpenDocument: calamine. Zápis zošitov Excel: rust_xlsxwriter.",
+                "Schránka systému pre kopírovanie a vkladanie veľmi veľkého množstva riadkov: arboard.",
+                "Kurzy mien: ExchangeRate-API a CoinGecko (pozrite „Mena“)."
+              ]
+            },
+            "To, čo zdieľa so zvyškom programu, nájdete v časti „O Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Čo Units ešte nevie robiť",
+          "body": [
+            {
+              "points": [
+                "Jeden riadok obsahuje jednu hodnotu: z vloženého riadku s viacerými hodnotami sa berie prvá.",
+                "Export veľmi veľkého množstva riadkov je pomalý (pozrite si naše merania).",
+                "To, čo sa kopíruje do schránky, sa pred vložením uchováva v pamäti ako jeden text.",
+                "Kurzy mien sú také aktuálne, ako ich poskytujú ich dva zdroje: pri menách krajín raz denne."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

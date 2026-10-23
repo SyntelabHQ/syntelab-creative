@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Téacsanna agus comhaid",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "An t-eagarthóir",
+          "body": [
+            "Is eagarthóir gnáth-théacs é Scribe agus a uirlisí in aice leis. Tá cluaisín ag gach téacs; tá an téacs sa lár, painéal na n-uirlisí ar a thaobh, agus líne fíricí faoi.",
+            "Nuair a osclaítear Scribe, fiafraíonn sé ar dtús cad ba mhaith leat a dhéanamh: focail a chomhaireamh, aimsiú agus ionadú, dúblaigh a bhaint, dhá théacs a chur i gcomparáid, línte a shórtáil, téacs a iompú droim ar ais, téacs líonta nó randamach a scríobh. Osclaíonn gach rogha an téacs agus an uirlis chuige in aice leis; osclaíonn \"Téacs folamh\" an téacs leis féin, agus liostaítear thíos na téacsanna a osclaíodh le déanaí.",
+            {
+              "points": [
+                "Tosaíonn Comhad → Téacs nua (Ctrl+N) téacs folamh.",
+                "Osclaíonn Comhad → Oscail… (Ctrl+O) comhad amháin nó níos mó, gach ceann ina chluaisín féin. Osclaíonn comhad ar bith ina bhfuil téacs: .txt, .md, .csv, .log, .srt, cód foinse agus eile.",
+                "Téann Eagar → Cealaigh (Ctrl+Z) agus Athdhéan (Ctrl+Y) trí gach a ndearnadh leis an téacs; áirítear uirlis nó oideas mar chéim amháin.",
+                "Osclaíonn Eagar → Aimsigh agus ionadaigh (Ctrl+F) stiall san eagarthóir a théann ó mheaitseáil amháin go dtí an chéad cheann eile.",
+                "Eagar → Roghnaigh gach rud (Ctrl+A)."
+              ]
+            },
+            "Taispeánann an líne faoin téacs cá bhfuil an cúrsóir, an méid atá roghnaithe, líon na línte, na bhfocal agus na gcarachtar, ionchódú an chomhaid agus conas a chríochnaíonn a línte.",
+            "Osclaíonn comhaid a scaoiltear ar an bhfuinneog freisin, gach ceann mar théacs nua le hainm, ionchódú agus críocha líne an chomhaid. Faigheann an clár a bhfuil i gcomhad scaoilte ach ní fhaigheann sé cá bhfuil sé ar an diosca, mar sin fiafraíonn an tsábháil cá háit; osclaítear comhaid os cionn 64 MB le Comhad → Oscail….",
+            "Fad atá téacs nua folamh, liostaíonn sé na téacsanna a osclaíodh le déanaí: cliceáil ceann chun é a oscailt. Folmhaíonn \"Déan dearmad ar an liosta\" é; ní choinnítear an liosta ach ar an ríomhaire seo."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Sábháil agus Sábháil mar",
+          "body": [
+            "Ní athraíonn aon rud an comhad ar an diosca go sábhálann tú. Léiríonn ponc ar an gcluaisín go bhfuil athruithe sa téacs nach bhfuil ina chomhad, agus fiafraítear díot ar dtús má dhúnann tú a leithéid de chluaisín.",
+            {
+              "points": [
+                "Scríobhann Sábháil (Ctrl+S) an téacs thar a chomhad. Fiafraíonn téacs nua cá háit.",
+                "Scríobhann Sábháil mar… (Ctrl+Shift+S) chuig comhad nua é, a ghlacann áit an chluaisín ansin, agus gach rud is féidir a chealú fós ann; fanann an seanchomhad mar a bhí."
+              ]
+            },
+            "Scríobhtar comhad ina iomláine nó ní scríobhtar ar chor ar bith é: má theipeann ar an scríobh, tá an comhad a bhí ann fós ann.",
+            {
+              "note": "Sábháiltear comhad mar a osclaíodh é: san ionchódú céanna, leis na críocha líne céanna. Fanann téacs a clóscríobhadh ar Windows agus ceann a clóscríobhadh ar Linux araon mar a bhí siad."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Ionchóduithe agus críocha líne",
+          "body": [
+            "Is éard is ionchódú ann an bealach a gcoinnítear litreacha mar bhearta. Léann Scribe a ndeir an comhad faoi féin, agus tugann sé buille faoi thuairim nuair nach ndeir sé tada. Is UTF-8 formhór na gcomhad inniu; is minic gur windows-1250 iad seanchomhaid ó Lár na hEorpa.",
+            {
+              "points": [
+                "Litreacha a fhéachann mícheart (Ã£ in áit ă, nó cearnóga): Comhad → \"Léigh arís in ionchódú eile…\", agus roghnaigh an ceann inar scríobhadh an comhad.",
+                "Chun sábháil in ionchódú eile, roghnaigh é ar an líne faoin téacs, ansin sábháil. Má tá litreacha sa téacs nach féidir leis an ionchódú sin a scríobh, deir Scribe cé acu agus ní scríobhann sé aon rud.",
+                "Athraítear críocha líne (Windows CRLF, Linux agus macOS LF, seanMhac CR) san áit chéanna. Deirtear faoi chomhad a bhfuil críocha measctha aige go bhfuil; tugann an tsábháil an chríoch chéanna dá línte go léir."
+              ]
+            },
+            "Roghnaítear i Socruithe cad leis a dtosaíonn téacs nua."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Conas a thaispeántar an téacs",
+          "body": [
+            {
+              "points": [
+                "Is lasc gach rud sa roghchlár Amharc: nuair atá sé ar siúl, feictear é; nuair atá sé múchta, ní fheictear.",
+                "Téacs: Timfhill línte fada (Alt+Z) — leanann líne atá níos faide ná an fhuinneog ar aghaidh thíos, agus coinníonn an téacs a línte; Uimhreacha líne; Toradh in aice leis an téacs.",
+                "In aice leis an téacs: Uirlisí (Ctrl+T), Oidis, Staitisticí. Ní thaispeánann an painéal ach na codanna atá ar siúl; mura bhfuil aon cheann ar siúl, níl painéal ann.",
+                "Uirlisí a thaispeántar: is féidir gach grúpa uirlisí (aimsigh agus ionadaigh, línte, ceannlitreacha agus litreacha, glanadh, scríobh téacs) a fhágáil as an bpainéal. Taispeántar uirlis a roghnaítear ón roghchlár Formáid nó Uirlisí mar sin féin: tagann a cuid agus a grúpa ar ais leo féin.",
+                "Fillteann an tsaighead dhúbailte ag barr an phainéil é síos go stiall ar an imeall, óna bhfuil gach cuid de cliceáil amháin uait; tarraing a imeall chun é a leathnú nó a chúngú.",
+                "Roghnaítear an cló agus a mhéid i Socruithe."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Comhaid an-mhóra",
+          "body": [
+            "Ní chuirtear comhad os cionn 64 MB san eagarthóir: osclaíonn sé i gcluaisín a thaispeánann leathanach de 500 líne ag an am, á léamh ón gcomhad de réir mar a théann tú. Osclaíonn comhaid de ghigibhearta ar an mbealach seo san am a thógann sé dul tríothu uair amháin.",
+            {
+              "points": [
+                "Bogann \"An leathanach roimhe seo\" agus \"An chéad leathanach eile\" tríd; léimeann uimhir líne agus \"Téigh\" chuig líne ar bith.",
+                "Cuardaíonn Aimsigh an comhad ar fad, leis na roghanna céanna agus in áiteanna eile, agus liostaíonn sé na háiteanna inar aimsíodh é: cliceáil ceann chun dul go dtí a líne. Tagann liosta fada cuid ar chuid, le \"Aimsigh tuilleadh\".",
+                "Scríobhann \"Rith oideas ar an gcomhad ar fad…\" an toradh isteach i bhfillteán a roghnaíonn tú, faoin ainm céanna. Ní athraítear an comhad féin anseo riamh.",
+                "Cuireann \"Oscail ina iomláine san eagarthóir\" san eagarthóir é mar sin féin, chun é a athrú de láimh. D’fhéadfadh sé a bheith mall, agus teastaíonn roinnt uaireanta méid an chomhaid de chuimhne uaidh."
+              ]
+            },
+            {
+              "note": "Ní féidir comhaid atá scríofa le dhá bheart sa litir (UTF-16) a thaispeáint leathanach ar leathanach. Coinníonn oideas an comhad ar fad sa chuimhne fad a ritheann sé: is í cuimhne an ríomhaire an teorainn."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Uirlisí",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Conas a oibríonn uirlisí",
+          "body": [
+            "Tá na huirlisí sa phainéal in aice leis an téacs, i ngrúpaí. Cliceáil uirlis chun a roghanna a fheiceáil, ansin Cuir i bhfeidhm.",
+            {
+              "points": [
+                "Nuair atá rud éigin roghnaithe, ní athraíonn uirlis ach an roghnúchán; nuair nach bhfuil aon rud roghnaithe, an téacs ar fad. Deir an painéal cé acu, ag a bharr.",
+                "Faoin gcnaipe, deir uirlis cad a rinne sí: cé mhéad líne nó áit a d’athraigh sí.",
+                "Is céim amháin í gach uirlis: cuireann Cealaigh ar ais ina hiomláine í.",
+                "Tá gach uirlis sna roghchláir agus i gcuardach na n-orduithe freisin: iad siúd a athraíonn cruth téacs (línte, ceannlitreacha agus litreacha, glanadh) sa roghchlár Formáid, na cinn eile in Uirlisí. Má roghnaítear ceann ansin, osclaítear an painéal ag a roghanna."
+              ]
+            },
+            "Sa roghchlár Formáid, leagtar uirlis atá ina rogha amháin den chuid is mó amach mar a roghanna: is ordú ann féin gach bealach chun ceannlitreacha a athrú, gach cineál comhartha athfhriotail, gach bealach chun téacs a iompú droim ar ais, agus osclaíonn sé an uirlis agus an rogha sin roghnaithe. Nuair atá an fhuinneog róchúng do ghrúpa, déantar cnaipe amháin den ghrúpa a osclaíonn an liosta ar fad.",
+            "Ritheann na huirlisí ar an ríomhaire seo. Ní fhágann aon téacs é."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "An toradh, sula gcuireann tú i bhfeidhm",
+          "body": [
+            "Fad atá uirlis oscailte, taispeántar a thabharfadh sí in aice leis an téacs, sa phána \"Toradh\". Ní athraítear aon rud sa téacs go roghnaíonn tú Cuir i bhfeidhm. Leanann an toradh thú: athraigh rogha nó an téacs, agus déantar arís é.",
+            {
+              "points": [
+                "Seasann an téacs agus an toradh taobh le taobh, gach ceann faoi cheann den airde chéanna, ionas go dtosaíonn na línte céanna ag an airde chéanna; scrollaíonn siad le chéile (múchann cnaipe an tslabhra é sin).",
+                "Marcáiltear línte a d’athrófaí, agus an chuid den líne a athraíonn marcáilte níos dorcha; tá a ndath féin ag línte nach ndéanfaí ach a bhogadh, agus ag línte nua. Marcáiltear i do théacs freisin na línte a d’athrófaí nó a bhainfí amach.",
+                "Faoi na hainmneacha: cad a tharlódh, in uimhreacha — línte athraithe, bogtha, nua, bainte amach; línte agus carachtair roimh agus ina dhiaidh.",
+                "Faoin toradh: na línte a bhainfí amach. Cliceáil ceann chun dul chuige sa téacs.",
+                "Cnaipí beaga an toraidh: é a chóipeáil, é a oscailt mar théacs nua, é a chur i gcomparáid leis an téacs i gcluaisín, scrollú le chéile, an toradh a chur faoin téacs in ionad in aice leis, é a fholú. Tá a chuid féin ag an téacs: cealaigh, athdhéan, cóipeáil, greamaigh thairis, roghnaigh gach rud, glan.",
+                "Tarraing an barra idir an dá cheann chun níos mó spáis a thabhairt do cheann amháin; déanann déchliceáil cothrom arís iad."
+              ]
+            },
+            "I ndiaidh Cuir i bhfeidhm, deir an pána Toradh é sin (\"Curtha i bhfeidhm. Is é an toradh an téacs ar chlé anois.\") agus tairgeann sé Cealaigh agus \"Cuir i gcomparáid leis an méid a bhí ann\", a osclaíonn an chomparáid chéanna idir roimh agus ina dhiaidh. Taispeánann sé toradh arís a luaithe a athraíonn tú an téacs nó rogha den uirlis.",
+            {
+              "note": "Casann Amharc → \"Toradh in aice leis an téacs\" an pána as agus air. I gcás téacs an-fhada (níos mó ná dhá mhilliún carachtar) ní thaispeántar aon rud roimh ré: cuir an uirlis i bhfeidhm, agus cuireann Cealaigh ar ais é."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Ionadaigh i ngach áit",
+          "body": [
+            "Ionadaíonn sé gach áit a n-aimsítear rud éigin, in éineacht. Agus tú ag clóscríobh an ruda le haimsiú, deir Scribe cé mhéad áit a n-aimsítear é agus marcálann sé sa téacs iad, ionas go bhfeiceann tú cad a athrófar sula gcuireann tú i bhfeidhm.",
+            {
+              "points": [
+                "\"Slonn rialta\": is patrún é an téacs le haimsiú. In \"Ionadaigh le\", seasann $1, $2… don mhéid a d’aimsigh grúpaí an phatrúin.",
+                "\"Bíonn ceannlitreacha san áireamh\": is litreacha difriúla iad a agus A.",
+                "\"Focail iomlána amháin\": ní aimsítear \"cat\" laistigh de \"category\".",
+                "\"Coinnigh ceannlitreacha an ruda a ionadaítear\": má chuirtear \"dog\" in áit \"cat\", déantar \"Dog\" de \"Cat\" agus \"DOG\" de \"CAT\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Tuilleadh roghanna\" → \"Líon isteach…\": féadfaidh bearnaí a bheith sa mhéid a chuirtear ina áit, a líontar ag gach meaitseáil. Comhaireann {counter} 1, 2, 3… (tosaíonn {counter:10} ag 10, téann {counter:10:5} suas faoi 5); is iad {date} agus {time} lá agus uair do ríomhaire; is aitheantóir é {uuid}; is 8 litir agus digit randamacha é {random} ({random:12} do 12).",
+                "Faoin rud a lorgaíonn tú, deir Scribe freisin cé mhéad líne ar a bhfuil na meaitseálacha agus cé mhéad téacs éagsúil atá iontu."
+              ]
+            },
+            "Déanann \"Ionadaigh roinnt rudaí in éineacht\" liosta péirí in aon chéim amháin. Scríobh péire amháin sa líne, mar seo: an rud le haimsiú => an rud le cur ina áit. Déantar iad ón gcéad cheann go dtí an ceann deireanach, gach ceann ar a d’fhág an ceann roimhe; baineann dara leath folamh an téacs amach.",
+            {
+              "note": "Ní féidir le patrún an clár a reo: méadaíonn an t-am a thógann sé le fad an téacs agus ní níos tapúla. Níl patrúin a fhéachann siar ar a bhfuair siad (\\1) ar fáil ar an gcúis sin."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Línte",
+          "body": [
+            {
+              "points": [
+                "Sórtáil línte de réir: a litreacha, mar a dhéanann foclóir, i dteanga an chláir nó i dteanga a roghnaíonn tú (sa Rómáinis tagann ă i ndiaidh a; cuireann an tSualainnis ä i ndiaidh z, an Ghearmáinis in aice le a); litreacha agus uimhreacha mar uimhreacha (file2 roimh file10); an uimhir a thosaíonn gach líne léi; fad; líon focal; an dáta a thosaíonn gach líne leis (05.03.2024, 2024-03-05, le huair nó gan í); seoltaí idirlín; uimhreacha leagain (1.2.10 i ndiaidh 1.2.9); teidil, nach n-áirítear alt ag an tús iontu; ord a scríobhann tú (beag, meánach, mór); nó gan ord ar bith.",
+                "Fanann línte nach bhfuil aon rud iontu le sórtáil de réir (gan uimhir, gan dáta, luach nach bhfuil san ord a scríobh tú) ag an deireadh cibé bealach a shórtáiltear na cinn eile: an ceann is lú ar dtús nó an ceann is mó ar dtús.",
+                "Tuilleadh roghanna sórtála: cuir i gcomparáid ó fhocal nó ó charachtar ar aghaidh, nó colún amháin de thábla (agus cad a scarann na colúin); coinnigh an chéad líne ina háit mar cheannteideal; sórtáil ailt in ionad línte; agus slachtaigh ar dtús — bearr, bain línte folmha, bain dúblaigh.",
+                "Bain línte dúblacha: coinnigh an chéad cheann, an ceann deireanach, nó ceann ar bith de na línte a athráitear (ní fhanann ach iad siúd atá ann uair amháin). Is féidir neamhaird a dhéanamh de cheannlitreacha, de na spásanna timpeall líne, de dhigití, de phoncaíocht, agus de líon carachtar ag an tús nó ag an deireadh; is féidir nach gcuirfí i gcomparáid ach colún, nó ach a n-aimsíonn patrún. Caitear le línte folmha mar na cinn eile, coinnítear iad, baintear amach iad, nó déantar ceann amháin díobh.",
+                "Comhair línte athráite: fágann sé gach líne uair amháin, agus an líon uaireanta a bhí sí ann scríofa roimpi — na cinn is minice ar dtús, nó na cinn is annaimhe, nó san ord ina dtagann siad.",
+                "Coinnigh nó caith amach línte: cuardaíonn sé rud éigin i ngach líne agus ní choinníonn sé ach na línte ina bhfuil sé, nó iad siúd nach bhfuil sé iontu.",
+                "Aisiompaigh ord na línte; Measc línte.",
+                "Uimhrigh línte: an chéad uimhir, cad a sheasann ina diaidh, nialais chun tosaigh ionas go mbíonn na huimhreacha ar aon líne, línte folmha gan uimhir.",
+                "Línte folmha: bain iad go léir, nó fág ceann amháin san áit a bhfuil roinnt.",
+                "Ceangail línte ina líne amháin, leis an méid a roghnaíonn tú eatarthu; Roinn ina línte ag gach camóg, leathstad nó rud ar bith eile. Cibé áit a gclóscríobhtar a sheasann idir rudaí (uimhriú, ceangal, roinnt, comhaireamh), seasann \\t do tháb, nach féidir a chlóscríobh i réimse."
+              ]
+            },
+            {
+              "note": "Ní thaispeántar rogha nach mbaineann le hábhar ach in éineacht le rogha eile ach ansin: an colún, a luaithe a chuireann tú i gcomparáid de réir colúin. Tá na roghanna a theastaíonn ó níos lú daoine faoi \"Tuilleadh roghanna\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Ceannlitreacha",
+          "body": [
+            "Athraigh ceannlitreacha: cás abairte, ceannlitir ag tús gach focail, ceannlitreacha ar fad, litreacha beaga ar fad, inbhéartaithe, agus na bealaí a scríobhtar ainmneacha i gcód: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Leanann ceannlitreacha rialacha gach aibítre, ní rialacha an Bhéarla amháin.",
+            "Sa ghrúpa Treo, iompaíonn \"Iompaigh an téacs droim ar ais\" litreacha gach líne droim ar ais, nó ord a focal, nó litreacha gach focail; scríobhann \"Bun os cionn\" é le léamh ón taobh eile den bhord, agus malartaíonn \"Mar a bheadh i scáthán\" freisin na comharthaí a bhfuil clé agus deas acu. Áirítear litreacha mar a áiríonn léitheoir iad: fanann litir agus a comharthaí ina litir amháin."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Glanadh",
+          "body": [
+            {
+              "points": [
+                "Glan spásanna: déantar spás amháin de roinnt spásanna; imíonn spásanna ag deireadh línte.",
+                "Bearr foircinn línte: ag an dá cheann, ag an tús nó ag an deireadh.",
+                "Comharthaí athfhriotail: díreach, Béarla, Rómáinis, Gearmáinis nó Fraincis.",
+                "Bain síntí fada agus diacriticí: déantar a de ă, e de é. In aibítrí na Laidine agus na Gréigise amháin, áit a bhfuil litir gan a comhartha fós ina litir chéanna.",
+                "Deisigh litreacha Rómáinise: déantar ș agus ț (le camóg), na litreacha a scríobhtar an Rómáinis leo, de ş agus ţ (le síothlán, scríofa ag seanmhéarchláir).",
+                "Táib go spásanna agus spásanna go táib, le leithead táib a roghnaíonn tú.",
+                "Bain clibeanna HTML: do chód foinse leathanach gréasáin a ghreamaítear sa téacs. Imíonn na clibeanna, na scripteanna agus na stíleanna; fanann a bhfeicfeadh léitheoir. Chun leathanach a thabhairt óna sheoladh, úsáid an uirlis faoi, \"Téacs leathanach gréasáin (óna sheoladh)\".",
+                "Téacs leathanach gréasáin: clóscríobh seoladh leathanaigh (example.com/page) agus roghnaigh \"Tabhair an téacs\". Scríobhtar a bhfeicfeadh léitheoir ar an leathanach sin san áit a bhfuil an cúrsóir, gan chlibeanna, scripteanna ná stíleanna. Is í seo an t-aon uirlis de Scribe a théann ar líne, agus sin amháin nuair a iarrann tú: faigheann an brabhsálaí atá suiteáilte ar an ríomhaire seo (Microsoft Edge nó Google Chrome) an leathanach, á rith gan fhuinneog agus gan do chuid fianán ná logálacha isteach; ní sheolann an clár féin aon rud. Ní thugann leathanach a dteastaíonn uaidh go mbeifeá logáilte isteach ach a bhfeicfeadh strainséir."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Diacriticí na Rómáinise a chur ar ais",
+          "body": [
+            "Scríobhtar arís leo Rómáinis a clóscríobhadh gan ă, â, î, ș, ț.",
+            {
+              "steps": [
+                "Oscail an uirlis sa ghrúpa Glanadh agus roghnaigh Cuir i bhfeidhm.",
+                "Athraítear láithreach focail nach bhfuil acu ach foirm cheart amháin: déantar \"știu\" de \"stiu\", \"informații\" de \"informatii\".",
+                "Liostaítear faoin gcnaipe focail is féidir a léamh ar níos mó ná bealach amháin (fata, fată, fața, față), gach ceann ina áit sa téacs. Cliceáil an fhoirm cheart do gach ceann.",
+                "Nó ticeáil \"Roghnaigh an fhoirm is dóichí go huathoibríoch nuair atá amhras faoi fhocal\" sula gcuireann tú i bhfeidhm: ní fhiafraítear aon rud, agus ní mór an toradh a léamh tríd."
+              ]
+            },
+            "Nuair is leor na focail mórthimpeall, socraíonn Scribe dá réir: déantar \"o casă\" de \"o casa\", fanann \"casa mea\", déantar \"pentru că\" de \"pentru ca\".",
+            {
+              "note": "Tógadh é seo do Scribe ó liosta focal coitianta agus ó na foircinn a scríobhann an Rómáinis le diacriticí i gcónaí. Fanann focail nach eol dó (focail neamhchoitianta, ainmneacha) mar a clóscríobhadh iad, agus ní bhaintear riamh le focal atá scríofa le diacriticí cheana. Léigh an toradh sula seolann tú é."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Téacs a scríobh: líonta agus randamach",
+          "body": [
+            "Ní athraíonn uirlisí an ghrúpa \"Scríobh téacs\" aon rud: scríobhann siad. Téann a dtugann siad san áit a bhfuil an cúrsóir, in ionad an roghnúcháin.",
+            {
+              "points": [
+                "Téacs líonta: ailt, abairtí, focail, liostaí, ceannteidil, nó codanna de leathanach (ceannteideal, ailt, liosta). I Laidin na gclódóirí (lorem ipsum), i mBéarla, i Rómáinis, i bhfocail oifige nó cistine, nó i d’fhocail féin. Tuilleadh roghanna: abairtí gearra, meánacha nó fada; gnáth-théacs, Markdown, HTML nó JSON; leibhéal na gceannteideal; teorainn i gcarachtair (gearrtar an téacs ag focal iomlán agus críochnaíonn sé mar abairt fós); focail le fágáil amach.",
+                "Sonraí samplacha: ainmneacha, seoltaí ríomhphoist, uimhreacha gutháin, seoltaí sráide, dátaí nó uimhreacha, ceann sa líne, ón Rómáin nó ó thíortha ina labhraítear Béarla. Scríobhann \"Línte de réir mo phatrúin\" gach líne mar a deir tú, agus seasann {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} agus {row} don mhéid a dhéantar — tábla le triail a bhaint as rud éigin air, i bhfaiteadh na súl.",
+                "Téacs randamach: pasfhocail (litreacha, digití agus comharthaí, ceann amháin ar a laghad de gach ceann), litreacha, digití, heicsidheachúlach nó aitheantóirí (UUID), ar líne amháin nó ar go leor línte. Is féidir carachtair a mheasctar go héasca (0 agus O, 1, l agus I) a fhágáil amach.",
+                "Le síol (faoi \"Tuilleadh roghanna\") tagann téacs líonta agus sonraí samplacha amach mar an gcéanna gach uair don uimhir chéanna; tugann 0 rud éigin nua gach uair."
+              ]
+            },
+            {
+              "note": "Déantar pasfhocail ar an ríomhaire seo, ó randamacht an chórais oibriúcháin, agus ní sheoltar áit ar bith iad. Críochnaíonn seoltaí ríomhphoist samplacha le example.com, nach sroicheann ríomhphost aon duine ann; d’fhéadfadh uimhir ghutháin a dhéantar go randamach a bheith ag duine éigin, mar sin ná glaoigh uirthi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oidis",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "A ndearna tú a choinneáil mar oideas",
+          "body": [
+            "Is éard is oideas ann liosta uirlisí agus a roghanna, coinnithe faoi ainm agus rite arís le cliceáil amháin.",
+            {
+              "steps": [
+                "Cuir na huirlisí is mian leat i bhfeidhm ar théacs, san ord is mian leat.",
+                "Oscail \"Oidis\" ag barr an phainéil: liostaítear na huirlisí a chuir tú i bhfeidhm.",
+                "\"Coinnigh mar oideas…\", agus tabhair ainm dó.",
+                "Níos déanaí, oscail an t-oideas agus roghnaigh \"Rith ar an téacs\": déantar a chéimeanna go léir, agus cuireann Cealaigh amháin ar ais iad go léir."
+              ]
+            },
+            "Coinnítear oidis ar an ríomhaire seo agus bíonn siad ar fáil i ngach téacs."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Oideas a athrú, nó ceann a dhéanamh ón tús",
+          "body": [
+            "Taispeánann \"Athraigh…\" ar oideas oscailte a ainm agus a chéimeanna. Is féidir gach céim a bhogadh suas nó síos, a bhaint amach, agus roghanna eile a thabhairt di; cuirtear uirlisí leis ón liosta faoi na céimeanna. Ní choinnítear aon rud go dtí \"Sábháil\".",
+            "Tosaíonn \"Oideas nua\" ceann gan céimeanna, le cur le chéile ar an mbealach céanna gan na huirlisí a chur i bhfeidhm ar théacs ar dtús.",
+            {
+              "note": "Ní céimeanna oidis iad na huirlisí a scríobhann téacs (líonta, randamach): athraíonn oideas téacs."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Oideas a rith ar chomhaid",
+          "body": [
+            {
+              "steps": [
+                "Oscail an t-oideas agus, faoi \"Rith ar chomhaid\", cuir comhaid nó fillteán leis (leis na fillteáin faoi).",
+                "Roghnaigh cá dtéann na torthaí: isteach i bhfillteán eile, a fhágann na comhaid mar atá, nó thar na comhaid féin.",
+                "Rith. Deir Scribe cé mhéad comhad a scríobhadh, cé mhéad nár ghá a athrú, agus cé acu nárbh fhéidir a dhéanamh agus cén fáth."
+              ]
+            },
+            "Scríobhtar gach comhad san ionchódú agus leis na críocha líne a bhí aige. I bhfillteán eile, coinníonn comhaid na fillteáin a raibh siad iontu, agus ní scríobhtar riamh thar chomhad atá ann cheana.",
+            {
+              "note": "Ní féidir scríobh thar na comhaid féin a chealú ó Scribe. Coinnigh cóip má tá siad tábhachtach."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Staitisticí, comparáid agus fillteáin",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Staitisticí",
+          "body": [
+            "Deir \"Staitisticí\" ag barr an phainéil cad atá sa téacs, nó sa roghnúchán. Is féidir gach cuid a fhilleadh as an mbealach.",
+            {
+              "points": [
+                "Ag an mbarr: focail, carachtair le spásanna agus gan iad, abairtí, ailt, línte, leathanaigh, agus an méid i mbearta.",
+                "Am: le léamh os íseal, le rá os ard, le clóscríobh, agus le scríobh de láimh.",
+                "Focail: cé mhéad atá difriúil (agus cén sciar den iomlán), litreacha i bhfocal, siollaí, an focal is faide agus is giorra, agus cé mhéad focal atá ann de gach fad.",
+                "Abairtí: focail in abairt, cé mhéad atá gearr, meánach agus fada, cé mhéad atá ina ráitis, ina gceisteanna agus ina n-uaillbhreasa, agus an ceann is faide agus is giorra.",
+                "Inléiteacht: scór ó 0 (an-deacair) go 100 (an-éasca), de réir na foirmle a ceapadh do theanga an téacs. Tá foirmlí ann don Bhéarla, don Ghearmáinis, don Spáinnis, don Fhraincis, don Iodáilis, don Ollainnis, don Phortaingéilis agus don Rúisis; ní fhaigheann teanga gan foirmle scór, mar go gcuirfeadh foirmle a ceapadh do theanga eile amú thú.",
+                "A ndeir sé is minice: na focail is mó a úsáidtear agus a sciar den téacs, agus na péirí agus na grúpaí trí fhocal a thagann arís.",
+                "Spás laistigh de na gnáth-theorainneacha: cé mhéad carachtar atá fágtha, nó thar an teorainn, do theideal, do chur síos, do phostáil ghearr agus eile."
+              ]
+            },
+            "Aimsítear focail agus abairtí de réir rialacha gach scripte, mar sin áirítear an tSínis, an tSeapáinis agus an Téalainnis, nach gcuireann spásanna idir focail, freisin. Socraítear i Socruithe na luasanna lena n-áirítear na hamanna, agus cé mhéad focal atá i leathanach."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Dhá théacs a chur i gcomparáid",
+          "body": [
+            {
+              "points": [
+                "Uirlisí → \"Cuir i gcomparáid le téacs eile…\": an téacs san eagarthóir in aice le ceann a chlóscríobhann nó a ghreamaíonn tú.",
+                "Uirlisí → \"Cuir i gcomparáid le comhad…\": an téacs san eagarthóir, mar atá sé anois, in aice le comhad a roghnaíonn tú.",
+                "Uirlisí → \"Cuir dhá théacs i gcomparáid…\": dhá théacs clóscríofa nó greamaithe taobh le taobh.",
+                "Uirlisí → \"Cuir dhá chomhad i gcomparáid…\"."
+              ]
+            },
+            "Taispeántar an dá théacs taobh le taobh. Marcáiltear línte nach bhfuil ach sa chéad cheann mar línte bainte, línte nach bhfuil ach sa dara ceann mar línte curtha leis, agus i líne a d’athraigh, marcáiltear na focail atá difriúil. Ní thaispeántar ach a bhfuil difriúil, le cúpla líne timpeall air; téann na saighde ó dhifríocht amháin go dtí an chéad cheann eile.",
+            "Is féidir neamhaird a dhéanamh de cheannlitreacha, de spásanna, de línte folmha, d’uimhreacha agus de phoncaíocht. Taispeánann \"I gcolún amháin\" a baineadh amach os cionn a cuireadh isteach, gach ceann lena chomhartha, in ionad taobh le taobh. In aice leis na comhaireamh, deir Scribe cé chomh cosúil le chéile atá an dá théacs, mar an sciar de na línte atá mar a chéile.",
+            "Taispeántar téacs a luaithe a roghnaítear é, sula roghnaítear an ceann eile. Tarraing an barra idir an dá théacs chun níos mó spáis a thabhairt do cheann amháin; agus na téacsanna á gclóscríobh, tarraingítear suas agus síos an barra faoi na boscaí chun níos mó spáis a thabhairt do na boscaí nó don chomparáid. Cuireann déchliceáil barra ar ais.",
+            "Nuair a athraíodh roinnt línte as a chéile, cuirtear gach ceann in aice leis an líne is cosúla leis, ionas nach gcuireann líne a cuireadh leis nó a baineadh amach ina measc cuma athraithe ar gach líne ina diaidh.",
+            "Taispeánann \"Clóscríobh nó greamaigh na téacsanna\" bosca os cionn gach colúin; cuirtear a scríobhann tú ansin i gcomparáid de réir mar a scríobhann tú, agus is féidir comhad a roghnú fós do cheachtar taobh."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Aimsiú agus ionadú i bhfillteán",
+          "body": [
+            {
+              "steps": [
+                "Uirlisí → \"Aimsigh i bhfillteán…\" (Ctrl+Shift+F), agus roghnaigh an fillteán. Cuardaítear na fillteáin faoi freisin.",
+                "Clóscríobh an rud le haimsiú, leis na roghanna céanna agus atá ag \"Ionadaigh i ngach áit\". Coinníonn \"Cineálacha comhad\" an cuardach ar iarmhíreanna áirithe (txt, md, csv…).",
+                "Taispeántar gach meaitseáil ina líne, comhad ar chomhad. Cliceáil líne chun an comhad a oscailt ansin.",
+                "Chun ionadú: clóscríobh an téacs nua, díthiceáil na comhaid atá le fágáil mar atá, agus roghnaigh \"Scríobh na comhaid\"."
+              ]
+            },
+            "Ní scríobhtar aon rud go n-iarrann tú, agus sin sna comhaid atá fágtha ticeáilte amháin. Scríobhtar gach comhad san ionchódú agus leis na críocha líne a bhí aige.",
+            {
+              "note": "Ní chuardaítear fillteáin fholaithe ná iad siúd a líonann cláir (.git, node_modules) mura n-iarrann tú iad. Ní chuardaítear riamh comhaid nach téacs iad."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Socruithe",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Socruithe Scribe",
+          "body": [
+            "Osclaíonn Comhad → Socruithe Socruithe an chláir ag cuid Scribe.",
+            {
+              "points": [
+                "An t-eagarthóir: cló aonleithid nó cló an chláir féin, a mhéid, timfhilleadh, uimhreacha líne, agus an dtaispeántar toradh uirlise sula gcuirtear i bhfeidhm í.",
+                "Téacs nua: conas a chríochnaíonn a línte, agus an dtosaíonn a chomhad le marc oird beart.",
+                "Staitisticí: luas léite, rá, clóscríofa agus scríofa de láimh, agus cé mhéad focal atá i leathanach.",
+                "Eochracha orduithe Scribe."
+              ]
+            },
+            "Tá cnaipe ag gach socrú a chuireann ar ais é mar a thagann sé leis an gclár."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Faoi Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Faoi Scribe",
+          "body": [
+            "Is é Scribe aip téacs Syntelab Creative: eagarthóir agus a uirlisí in aice leis an téacs. Taispeánann sé cad a dhéanfadh uirlis sula ndéanann sí é, glanann agus athordaíonn sé liostaí, aimsíonn agus ionadaíonn sé i dtéacs nó i bhfillteán iomlán, cuireann sé dhá théacs i gcomparáid, deir sé cad atá i dtéacs, scríobhann sé téacs líonta agus sonraí samplacha, agus coinníonn sé a ndéanann tú go minic mar oidis le rith arís.",
+            "Déantar gach rud ar an ríomhaire seo. Níl teorainn ar mhéid ná ar líon na dtéacsanna: is iad na teorainneacha cuimhne an ríomhaire agus a bhfuil ar chumas na teicneolaíochta inniu.",
+            "Tá sé nua. Nuair nach leor é do do théacsanna, inis dúinn trí Cabhair → Aiseolas: sin an chaoi a mbíonn a fhios againn cad air le hoibriú."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Cad as a ndéantar Scribe",
+          "body": [
+            {
+              "points": [
+                "An t-eagarthóir: CodeMirror.",
+                "Ionchóduithe a léamh agus a scríobh: encoding_rs, le chardetng chun buille faoi thuairim a thabhairt faoi ionchódú comhaid nach ndeir é.",
+                "Aimsiú agus ionadú: leabharlann regex Rust, nach féidir lena patrúin an clár a reo.",
+                "Sórtáil mar a dhéanann gach teanga, agus focail agus abairtí a aimsiú i ngach script: ICU4X, leabharlann Unicode.",
+                "Téacsanna a chur i gcomparáid: an leabharlann similar.",
+                "Diacriticí na Rómáinise: liosta focal agus rialacha a scríobhadh do Scribe."
+              ]
+            },
+            "Tá a bhfuil i bpáirt aige leis an gcuid eile den chlár faoi \"Faoi Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Cad nach féidir le Scribe a dhéanamh fós",
+          "body": [
+            {
+              "points": [
+                "Léitear comhad an-mhór leathanach ar leathanach agus ní athraítear é ach trí oidis; chun é a athrú de láimh ní mór é a oscailt ina iomláine, rud a thógann cuimhne.",
+                "Is eol do chur diacriticí na Rómáinise ar ais na focail choitianta; fanann focail neamhchoitianta agus ainmneacha mar a clóscríobhadh iad.",
+                "Níl seiceáil litrithe ann.",
+                "Ní bhaintear téacs as PDF ná as doiciméid oifige anseo; osclaíonn PDF Organizer iad sin.",
+                "Ní dhathaíonn an t-eagarthóir cód ná Markdown.",
+                "Osclaíonn comhad a scaoiltear ar an bhfuinneog mar théacs nua: ní insítear don chlár cá bhfuil an comhad, mar sin fiafraíonn an tsábháil cá háit."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

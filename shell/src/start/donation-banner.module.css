@@ -1,0 +1,48 @@
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  max-width: 1200px;
+  margin-block: 24px 14px;
+  margin-inline: 40px;
+  padding-block: 14px;
+  padding-inline: 20px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-l);
+  background: var(--sc-surface);
+}
+
+/* The heart beats slowly, all the time. */
+.heart {
+  display: flex;
+  color: var(--sc-action-support);
+  animation: heartbeat 2.4s ease-in-out infinite;
+}
+
+.banner:hover .heart {
+  color: var(--sc-action-support-hover);
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.55;
+    transform: scale(0.86);
+  }
+}
+
+.text {
+  flex: 1 1 260px;
+}
+
+.banner .button:hover:not(:disabled) {
+  border-color: var(--sc-action-support);
+  background: color-mix(in srgb, var(--sc-action-support) 16%, var(--sc-surface));
+  color: var(--sc-text);
+}

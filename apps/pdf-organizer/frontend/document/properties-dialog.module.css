@@ -1,0 +1,31 @@
+.facts {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(120px, 30%) 1fr;
+  gap: 12px;
+  padding-block: 8px;
+}
+
+.row + .row {
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.name {
+  color: var(--sc-muted);
+}
+
+.value {
+  margin: 0;
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+
+.reading {
+  margin: 0;
+  color: var(--sc-muted);
+}

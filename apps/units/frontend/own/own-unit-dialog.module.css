@@ -1,0 +1,126 @@
+/* Making a unit of the user's own: its name, the unit it is said by, and how. */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: min(440px, 80vw);
+  font-size: 14px;
+  text-align: start;
+}
+
+.lead,
+.hint {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.field > span {
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.input {
+  min-width: 0;
+  min-height: 34px;
+  padding: 4px 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.input:focus {
+  border-color: var(--sc-accent);
+  outline: none;
+}
+
+/* The two ways of saying a unit, as two tabs. */
+.ways {
+  display: flex;
+  gap: 4px;
+  padding: 3px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-bg);
+}
+
+.way {
+  flex: 1;
+  min-height: 28px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.way[aria-selected='true'] {
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font-weight: 600;
+  box-shadow: var(--sc-shadow-s);
+}
+
+/* "1 pace = [0.75] m": read from left to right in every language. */
+.equation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.equation .input {
+  flex: 1;
+}
+
+.one {
+  flex: none;
+  font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* What the unit comes to, or why it is refused. */
+.said {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 6px 10px;
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-accent-soft);
+  font-size: 13px;
+}
+
+.said[data-problem='true'] {
+  background: color-mix(in srgb, var(--sc-danger) 12%, var(--sc-surface));
+  color: var(--sc-danger);
+}
+
+.said > svg {
+  flex: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-block-start: 4px;
+}

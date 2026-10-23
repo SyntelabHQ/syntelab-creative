@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Tekster og filer",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editoren",
+          "body": [
+            "Scribe er en editor til almindelig tekst med tilhørende værktøjer. Hver tekst har en fane; teksten er i midten, værktøjspanelet er ved siden af, og en linje med fakta findes nedenunder.",
+            "Når Scribe åbnes, spørges der først, hvad du vil gøre: tælle ord, find og erstat, fjerne dubletter, sammenligne to tekster, sortere linjer, vende en tekst, skrive fyldtekst eller tilfældig tekst. Hvert valg åbner teksten med det tilhørende værktøj ved siden af; \"En tom tekst\" åbner kun teksten, og tekster, der for nylig er åbnet, er anført nedenfor.",
+            {
+              "points": [
+                "Fil → Ny tekst (Ctrl+N) starter en tom tekst.",
+                "Fil → Åbn (Ctrl+O) åbner én eller flere filer, hver i sin fane. Enhver fil, der indeholder tekst, kan åbnes: .txt, .md, .csv, .log, .srt, kildekode og andre.",
+                "Rediger → Fortryd (Ctrl+Z) og Gentag (Ctrl+Y) gennemgår alt, hvad der er gjort ved teksten, hvor et værktøj eller en opskrift tæller som ét trin.",
+                "Rediger → Søg og erstat (Ctrl+F) åbner et felt i editoren, der går fra det ene match til det næste.",
+                "Rediger → Marker alt (Ctrl+A)."
+              ]
+            },
+            "Linjen under teksten viser, hvor markøren er, hvor meget der er markeret, antallet af linjer, ord og tegn, filens kodning og hvordan dens linjer afsluttes.",
+            "Filer, der trækkes ind i vinduet, åbnes også, hver som en ny tekst med filnavn, kodning og linjeafslutninger. Programmet læser indholdet af en trukket fil, men ikke hvor den befinder sig på disken, så ved lagring spørges der om placering; filer over 64 MB åbnes via Fil → Åbn.",
+            "En ny tekst, mens den er tom, viser de tekster, der for nylig er åbnet: klik på en for at åbne den. \"Ryd listen\" tømmer den; listen gemmes kun på denne computer."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Gem og Gem som",
+          "body": [
+            "Intet ændrer filen på disken, før du gemmer. En prik på fanen indikerer, at teksten har ændringer, der ikke er i filen, og hvis man lukker en sådan fane, spørges der først.",
+            {
+              "points": [
+                "Gem (Ctrl+S) skriver teksten over filen. En ny tekst vil spørge, hvor den skal gemmes.",
+                "Gem som (Ctrl+Shift+S) skriver det til en ny fil, som derefter tager fanens plads, mens alt hvad der kan fortrydes stadig er der; den gamle fil forbliver som den var."
+              ]
+            },
+            "En fil skrives enten helt eller slet ikke: hvis skrivningen mislykkes, er den fil, der var der, stadig der.",
+            {
+              "note": "En fil gemmes på samme måde, som den blev åbnet: i samme kodning, med samme linjeskift. En tekst skrevet på Windows og en skrevet på Linux forbliver begge som de var."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodninger og linjeskift",
+          "body": [
+            "En kodning er den måde, bogstaver gemmes som bytes på. Scribe læser, hvad filen siger om sig selv, og gætter, når den ikke siger noget. De fleste filer i dag er UTF-8; ældre filer fra Centraleuropa er ofte windows-1250.",
+            {
+              "points": [
+                "Bogstaver, der ser forkerte ud (Ã£ i stedet for ă, eller firkanter): Fil → \"Læs igen med en anden kodning\", og vælg den, som filen blev skrevet i.",
+                "For at gemme i en anden kodning, skal du vælge den på linjen under teksten og derefter gemme. Hvis teksten indeholder bogstaver, som den kodning ikke kan skrive, fortæller Scribe hvilke, og skriver intet.",
+                "Linjeskift (Windows CRLF, Linux og macOS LF, gammel Mac CR) ændres samme sted. En fil med blandede linjeskift markeres som sådan; ved at gemme får alle dens linjer det samme."
+              ]
+            },
+            "Hvad en ny tekst starter med, vælges i Indstillinger."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Hvordan teksten vises",
+          "body": [
+            {
+              "points": [
+                "Alt i Vis-menuen er en kontakt: når den er til, kan det ses; når den er fra, kan det ikke.",
+                "Tekst: Bryd lange linjer (Alt+Z) — en linje, der er længere end vinduet, fortsætter nedenunder, og teksten bevarer sine linjer; Linjenumre; Resultat ved siden af teksten.",
+                "Ved siden af teksten: Værktøjer (Ctrl+T), Opskrifter, Statistikker. Panelet viser kun de dele, der er til; når ingen er til, er der intet panel.",
+                "Viste værktøjer: hver gruppe af værktøjer (find og erstat, linjer, store og små bogstaver, rensning, skriv tekst) kan fjernes fra panelet. Et værktøj valgt fra Format- eller Værktøjsmenuen vises stadig: dets del og gruppe kommer automatisk tilbage.",
+                "Den dobbelte pil øverst i panelet folder det sammen til en stribe i kanten, hvor hver af dets dele er et klik væk; træk i kanten for at gøre det bredere eller smallere.",
+                "Bogstaver og deres størrelse vælges i Indstillinger."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Meget store filer",
+          "body": [
+            "En fil på over 64 MB indsættes ikke i editoren: den åbnes i en fane, der viser én side af 500 linjer ad gangen, som læses fra filen efterhånden som du går frem. Filer på flere gigabyte åbnes på denne måde på den tid, det tager at gennemgå dem én gang.",
+            {
+              "points": [
+                "\"Forrige side\" og \"Næste side\" bevæger sig gennem filen; et linjenummer og \"Gå til\" springer til en hvilken som helst linje.",
+                "Find gennemsøger hele filen med de samme valgmuligheder som andre steder og oplister de steder, den fandt: klik på et af dem for at gå til linjen. En lang liste vises i bidder med \"Find flere\".",
+                "\"Kør en opskrift på hele filen\" skriver resultatet i en mappe, du vælger, under samme navn. Selve filen ændres aldrig her.",
+                "\"Åbn hele filen i editoren\" indsætter den alligevel i editoren, så den kan ændres manuelt. Det kan være langsomt og kræver flere gange filens størrelse i hukommelsen."
+              ]
+            },
+            {
+              "note": "Filer skrevet med to bytes pr. bogstav (UTF-16) kan ikke vises én side ad gangen. En opskrift holder hele filen i hukommelsen, mens den kører: grænsen er computerens hukommelse."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Værktøjer",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Sådan fungerer værktøjer",
+          "body": [
+            "Værktøjerne findes i panelet ved siden af teksten, opdelt i grupper. Klik på et værktøj for at se dets valgmuligheder, og klik derefter på Anvend.",
+            {
+              "points": [
+                "Når noget er markeret, ændrer et værktøj kun markeringen; når intet er markeret, ændres hele teksten. Panelet angiver øverst, hvad der er gældende.",
+                "Under knappen angiver et værktøj, hvad det har gjort: hvor mange linjer eller steder det har ændret.",
+                "Hvert værktøj er ét trin: Fortryd ruller det hele tilbage.",
+                "Hvert værktøj findes også i menuerne og i kommando-søgningen: dem, der ændrer tekstens form (linjer, store bogstaver og tegn, rensning), findes i Format-menuen, de andre under Værktøjer. Ved at vælge et her åbnes panelet med dets valgmuligheder."
+              ]
+            },
+            "I Format-menuen er et værktøj, der primært har én valgmulighed, vist som sine enkelte indstillinger: hver måde at ændre store bogstaver på, hver slags citationstegn, hver måde at vende en tekst på er en selvstændig kommando, som åbner værktøjet med den valgte indstilling. Hvor vinduet er for smalt til en gruppe, bliver gruppen til én knap, der åbner hele listen.",
+            "Værktøjerne kører lokalt på denne computer. Ingen tekst forlader den."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Resultatet, før du anvender det",
+          "body": [
+            "Mens et værktøj er åbent, vises det forventede resultat ved siden af teksten i ruden \"Resultat\". Intet i teksten ændres, før du vælger Anvend. Resultatet opdateres løbende: ændr en indstilling eller teksten, og det genereres igen.",
+            {
+              "points": [
+                "Teksten og resultatet står side om side, hver under en overskrift af samme højde, så de samme linjer starter i samme højde; de ruller sammen (kæde-knappen deaktiverer dette).",
+                "Linjer, der vil blive ændret, er markeret, og den del af linjen, der ændres, er markeret mørkere; linjer, der kun flyttes, og linjer, der er nye, har hver deres farve. Linjerne, der vil blive ændret eller fjernet, er også markeret i din tekst.",
+                "Under navnene: hvad der vil ske i tal — ændrede, flyttede, nye og fjernede linjer; linjer og tegn før og efter.",
+                "Under resultatet: de linjer, der vil blive fjernet. Klik på en af dem for at gå til den i teksten.",
+                "De små knapper ved resultatet: kopier det, åbn det som en ny tekst, sammenlign det med teksten i en fane, rul sammen, placer resultatet under teksten i stedet for ved siden af, skjul det. Teksten har sine egne: fortryd, gentag, kopier, erstat, marker alle, ryd.",
+                "Træk i bjælken mellem de to for at give den ene mere plads; et dobbeltklik gør dem lige igen."
+              ]
+            },
+            "Efter Anvend på teksten meddeler Resultat-ruden det (\"Anvendt. Teksten til venstre er nu resultatet.\") og tilbyder Fortryd og \"Sammenlign med hvordan det var\", hvilket åbner den samme sammenligning af før og efter. Den viser et resultat igen, så snart du ændrer teksten eller et valg i værktøjet.",
+            {
+              "note": "Vis → \"Resultat ved siden af teksten\" slår ruden til og fra. For en meget lang tekst (over to millioner tegn) vises intet på forhånd: anvend værktøjet, og Fortryd fører det tilbage."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Erstat alle",
+          "body": [
+            "Erstatter alle steder, hvor noget findes, på én gang. Mens du skriver, hvad der skal findes, fortæller Scribe, hvor mange steder det findes, og markerer dem i teksten, så du kan se, hvad der vil ændre sig, før du anvender det.",
+            {
+              "points": [
+                "\"Regulært udtryk\": teksten, der skal findes, er et mønster. I \"Erstat med\" står $1, $2… for det, mønsterets grupper fandt.",
+                "\"Skeln mellem store og små bogstaver\": a og A er forskellige bogstaver.",
+                "\"Kun hele ord\": \"kat\" findes ikke inde i \"kategori\".",
+                "\"Behold store bogstaver i det, der erstattes\": at erstatte \"kat\" med \"hund\" gør \"Kat\" til \"Hund\" og \"KAT\" til \"HUND\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Flere valgmuligheder\" → \"Udfyld…\": det, der indsættes, kan indeholde felter, der udfyldes ved hvert match. {counter} tæller 1, 2, 3… ({counter:10} starter ved 10, {counter:10:5} stiger med 5); {date} og {time} er din computers dato og klokkeslæt; {uuid} er en identifikator; {random} er 8 tilfældige bogstaver og cifre ({random:12} for 12).",
+                "Under det, du søger efter, angiver Scribe også, på hvor mange linjer der er matches, og hvor mange forskellige tekster der er."
+              ]
+            },
+            "\"Erstat flere på én gang\" udfører en liste af par i ét trin. Skriv ét par per linje, som: hvad der skal findes => hvad der skal indsættes. De udføres fra den første til den sidste, hver på det, den foregående efterlod; en tom anden halvdel fjerner teksten.",
+            {
+              "note": "Et mønster kan ikke fryse programmet: den tid det tager vokser med tekstens længde og ikke hurtigere. Mønstre, der ser tilbage på det, de har fundet (\\1), er af den grund ikke tilgængelige."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Linjer",
+          "body": [
+            {
+              "points": [
+                "Sortér linjer efter: deres bogstaver, som i en ordbog, på programmets sprog eller et du vælger (på rumænsk kommer ă efter a; svensk placerer ä efter z, tysk ved siden af a); bogstaver med tal som tal (fil2 før fil10); det tal hver linje starter med; længde; antal ord; den dato hver linje starter med (05.03.2024, 2024-03-05, med eller uden klokkeslæt); internetadresser; versionsnumre (1.2.10 efter 1.2.9); titler, hvor en artikel i starten ikke tæller; en rækkefølge du selv skriver (lille, mellem, stor); eller slet ingen rækkefølge.",
+                "Linjer uden noget at sortere efter (intet tal, ingen dato, en værdi der ikke er i den rækkefølge du skrev) bliver til sidst, uanset hvordan de andre er sorteret: mindste først eller største først.",
+                "Flere valgmuligheder for sortering: sammenlign fra et ord eller et tegn og frem, eller én kolonne i en tabel (med hvilke dele kolonnerne består af); behold den første linje på pladsen som en overskrift; sortér afsnit i stedet for linjer; og ryd op først — trim, fjern tomme linjer, fjern dubletter.",
+                "Fjern dubletlinjer: behold den første, den sidste eller ingen af de linjer, der gentages (kun dem, der optræder én gang, bliver tilbage). Store/små bogstaver, mellemrum omkring en linje, cifre, tegnsætning og et antal tegn i starten eller slutningen kan hver især ignoreres; kun en kolonne, eller kun det et mønster finder, kan være det, der sammenlignes. Tomme linjer behandles som de andre: beholdes, fjernes eller slås sammen.",
+                "Tæl gentagne linjer: efterlader hver linje én gang, med antallet af gange den optrådte skrevet foran — de mest gentagne først, eller de mindst, eller i den rækkefølge de kommer.",
+                "Behold eller fjern linjer: søger efter noget i hver linje og beholder kun de linjer, der har det, eller kun dem, der ikke har det.",
+                "Vend rækkefølgen af linjer; Bland linjer.",
+                "Nummerering af linjer: det første nummer, hvad der skal stå efter det, nuller foran så numrene flugter, tomme linjer uden nummer.",
+                "Tomme linjer: fjern dem alle, eller efterlad én, hvor der er flere.",
+                "Flet linjer til én, med det du vælger imellem dem; Del op i linjer ved hvert komma, semikolon eller andet. Overalt hvor det, der står mellem tingene, indtastes (nummerering, fletning, opdeling, tælling), står \\t for et tabulatortegn, som ikke kan indtastes i et felt."
+              ]
+            },
+            {
+              "note": "Et valg, der kun er relevant sammen med et andet, vises kun da: kolonnen, når du sammenligner efter en kolonne. Valgene, som færre har brug for, findes under \"Flere valgmuligheder\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Store og små bogstaver",
+          "body": [
+            "Skift store/små bogstaver: sætningsstart, hvert ord med stort, alle store bogstaver, alle små bogstaver, omvendt, og måderne navne skrives på i kode: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Store og små bogstaver følger reglerne for hvert alfabet, ikke kun for engelsk.",
+            "I gruppen Retning vender \"Vend teksten om\" bogstaverne i hver linje om, eller rækkefølgen af dens ord, eller bogstaverne i hvert ord; \"På hovedet\" skriver det, så det kan læses fra den anden side af bordet, og \"Som i et spejl\" bytter også om på tegn, der har en venstre og en højre side. Bogstaver tælles, som en læser tæller dem: et bogstav med dets tegn forbliver ét."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Rengøring",
+          "body": [
+            {
+              "points": [
+                "Ryd op i mellemrum: flere mellemrum bliver til ét; mellemrum i slutningen af linjer fjernes.",
+                "Trim linjeender: i begge ender, i starten eller i slutningen.",
+                "Anførselstegn: lige, engelske, rumænske, tyske eller franske.",
+                "Fjern diakritiske tegn: ă bliver til a, é bliver til e. Kun i det latinske og græske alfabet, hvor et bogstav uden sit tegn stadig er bogstavet.",
+                "Reparer rumænske bogstaver: ş og ţ (med cedille, skrevet med ældre tastaturer) bliver til ș og ț (med komma), som er de bogstaver, rumænsk skrives med.",
+                "Tabs til mellemrum og mellemrum til tabs, med den tab-bredde du vælger.",
+                "Fjern HTML-tags: til kildekoden fra en webside indsat i teksten. Tags, scripts og styles fjernes; det læseren ville se, bliver stående. For at hente en side fra dens adresse, skal du bruge værktøjet nedenunder, \"Tekst fra en webside\".",
+                "Tekst fra en webside: indtast adressen på en side (example.com/page) og vælg \"Hent tekst\". Det, en læser ville se på den side, skrives der hvor markøren er, uden tags, scripts eller styles. Dette er det eneste værktøj i Scribe, der går online, og kun når du beder om det: siden hentes af browseren installeret på denne computer (Microsoft Edge eller Google Chrome), kørt uden vindue og uden dine cookies eller log-ind; programmet selv sender intet. En side, der kræver at du er logget ind, giver kun det, en fremmed ville se."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Gendannelse af rumænske diakritiske tegn",
+          "body": [
+            "Rumænsk skrevet uden ă, â, î, ș, ț bliver skrevet med dem igen.",
+            {
+              "steps": [
+                "Åbn værktøjet i gruppen Cleaning og vælg Anvend.",
+                "Ord, der kun har én korrekt form, ændres med det samme: \"stiu\" bliver til \"știu\", \"informatii\" bliver til \"informații\".",
+                "Ord, der kan læses på mere end én måde (fata, fată, fața, față), bliver listet under knappen, hver især på deres plads i teksten. Klik på den korrekte form for hver.",
+                "Eller markér \"Vælg automatisk den mest sandsynlige form\" før anvendelse: intet bliver spurgt om, og resultatet skal læses igennem."
+              ]
+            },
+            "Hvor de omkringliggende ord er tilstrækkelige, beslutter Scribe ud fra dem: \"o casa\" bliver til \"o casă\", \"casa mea\" forbliver, \"pentru ca\" bliver til \"pentru că\".",
+            {
+              "note": "Dette er bygget til Scribe ud fra en liste over almindelige ord og de endelser, som rumænsk altid skriver med diakritiske tegn. Ord, det ikke kender (sjældne ord, navne), forbliver som de er skrevet, og et ord, der allerede er skrevet med diakritiske tegn, bliver aldrig ændret. Læs resultatet, før du sender det."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Skriv tekst: fyldtekst og tilfældig tekst",
+          "body": [
+            "Værktøjerne i gruppen \"Skriv tekst\" ændrer ikke noget: de skriver. Det, de genererer, indsættes der, hvor markøren er, eller i stedet for markeringen.",
+            {
+              "points": [
+                "Fyldtekst: afsnit, sætninger, ord, lister, overskrifter eller dele af en side (en overskrift, afsnit, en liste). På printers latin (lorem ipsum), engelsk, rumænsk, kontorord eller køkkenord, eller dine egne ord. Flere valgmuligheder: korte, mellemstore eller lange sætninger; almindelig tekst, Markdown, HTML eller JSON; overskriftsniveau; en grænse for antal tegn (teksten skæres ved et helt ord og slutter stadig som en sætning); ord der skal udelades.",
+                "Fiktive data: navne, e-mailadresser, telefonnumre, adresser, datoer eller tal, ét per linje, fra Rumænien eller engelsktalende lande. \"Linjer efter mit mønster\" skriver hver linje, som du ønsker, hvor {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} og {row} står for det, der genereres — en tabel til at afprøve noget på om lidt.",
+                "Tilfældig tekst: adgangskoder (bogstaver, tal og tegn, mindst ét af hver), bogstaver, tal, hexadecimal eller identifikatorer (UUID), på én linje eller flere. Tegn, der let kan forveksles (0 og O, 1, l og I), kan udelades.",
+                "Et seed (under \"Flere valgmuligheder\") gør, at fyldtekst og fiktive data bliver de samme hver gang for det samme nummer; 0 giver noget nyt hver gang."
+              ]
+            },
+            {
+              "note": "Adgangskoder oprettes på denne computer ud fra operativsystemets tilfældighed og sendes ingen steder hen. Opdigtede e-mailadresser slutter på example.com, hvor mailen ikke når nogen; et tilfældigt oprettet telefonnummer kan tilhøre nogen, så ring ikke til det."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Opskrifter",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Gem det, du har gjort, som en opskrift",
+          "body": [
+            "En opskrift er en liste over værktøjer med deres indstillinger, gemt under et navn og kørt igen med et enkelt klik.",
+            {
+              "steps": [
+                "Anvend de værktøjer, du ønsker, på en tekst i den rækkefølge, du ønsker dem.",
+                "Åbn \"Opskrifter\" øverst i panelet: de værktøjer, du har anvendt, er anført.",
+                "Vælg \"Gem som opskrift\" og giv den et navn.",
+                "Åbn senere opskriften og vælg \"Kør på teksten\": alle dens trin udføres, og én Fortryd-handling ruller dem alle tilbage."
+              ]
+            },
+            "Opskrifter gemmes på denne computer og er tilgængelige i enhver tekst."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Ændring af en opskrift eller oprettelse af en fra bunden",
+          "body": [
+            "\"Rediger\" på en åben opskrift viser dens navn og dens trin. Hvert trin kan flyttes op eller ned, fjernes eller tildeles andre indstillinger; værktøjer tilføjes fra listen under trinene. Intet gemmes, før du trykker på \"Gem\".",
+            "\"Ny opskrift\" starter en uden trin, som kan sammensættes på samme måde uden først at anvende værktøjerne på en tekst.",
+            {
+              "note": "Værktøjer, der skriver tekst (filler, random), er ikke trin i en opskrift: en opskrift ændrer en tekst."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Kørsel af en opskrift på filer",
+          "body": [
+            {
+              "steps": [
+                "Åbn opskriften og tilføj filer eller en mappe (inklusive undermapper) under \"Kør på filer\".",
+                "Vælg hvor resultaterne skal gemmes: i en anden mappe, hvilket lader filerne forblive som de er, eller direkte over filerne selv.",
+                "Kør. Scribe oplyser, hvor mange filer der blev skrevet, hvor mange der ikke krævede ændringer, og hvilke der ikke kunne behandles og hvorfor."
+              ]
+            },
+            "Hver fil skrives i den kodning og med de linjeskift, den havde. I en anden mappe bevarer filerne den mappestruktur, de kom fra, og en fil, der allerede findes, bliver aldrig overskrevet.",
+            {
+              "note": "Overskrivning af filerne selv kan ikke fortrydes i Scribe. Behold en kopi, hvis de er vigtige."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistik, sammenligning og mapper",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistik",
+          "body": [
+            "\"Statistik\" øverst i panelet viser, hvad teksten eller markeringen består af. Hver del kan foldes sammen.",
+            {
+              "points": [
+                "Øverst: ord, tegn med og uden mellemrum, sætninger, afsnit, linjer, sider og størrelsen i bytes.",
+                "Tid: til at læse i stilhed, sige højt, skrive på tastatur og skrive i hånden.",
+                "Ord: hvor mange der er forskellige (og deres andel af det hele), bogstaver i et ord, stavelser, det længste og det korteste ord, og hvor mange ord der er af hver længde.",
+                "Sætninger: ord i en sætning, hvor mange der er korte, mellemstore og lange, hvor mange der er konstateringer, spørgsmål og udråb, samt den længste og den korteste.",
+                "Læsbarhed: en score fra 0 (meget svært) til 100 (meget let), baseret på formlen for tekstens sprog. Der findes formler for engelsk, tysk, spansk, fransk, italiensk, hollandsk, portugisisk og russisk; et sprog uden en formel får ingen score, da en formel lavet til et andet sprog ville være misvisende.",
+                "Hyppigste ord: de ord der bruges mest med deres andel af teksten, samt par og grupper af tre ord, der går igen.",
+                "Plads inden for normale grænser: hvor mange tegn der er tilbage, eller over, til en titel, en beskrivelse, et kort opslag og andre."
+              ]
+            },
+            "Ord og sætninger findes ud fra reglerne for hvert skriftsprog, så kinesisk, japansk og thai, som ikke bruger mellemrum mellem ord, tælles også med. De hastigheder, tiderne beregnes ud fra, og hvor mange ord der udgør en side, er indstillet i Indstillinger."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Sammenligning af to tekster",
+          "body": [
+            {
+              "points": [
+                "Værktøjer → \"Sammenlign med en anden tekst\": teksten i editoren ved siden af en tekst, du skriver eller indsætter.",
+                "Værktøjer → \"Sammenlign med en fil\": teksten i editoren, som den er nu, ved siden af en fil, du vælger.",
+                "Værktøjer → \"Sammenlign to tekster\": to tekster skrevet eller indsat side om side.",
+                "Værktøjer → \"Sammenlign to filer\"."
+              ]
+            },
+            "De to tekster vises side om side. Linjer, der kun findes i den første, markeres som fjernet, linjer, der kun findes i den anden, som tilføjet, og i en linje, der er ændret, markeres de ord, der er forskellige. Kun det, der er forskelligt, vises, med et par linjer omkring; pilene går fra én forskel til den næste.",
+            "Store bogstaver, mellemrum, tomme linjer, tal og tegnsætning kan hver især springes over. \"I én kolonne\" viser, hvad der blev taget ud, over hvad der blev sat ind, hver med sit tegn, i stedet for side om side. Ved siden af antallet angiver Scribe, hvor ens de to tekster er, som andelen af linjer, der er ens.",
+            "En tekst vises, så snart den er valgt, før den anden er det. Træk bjælken mellem de to tekster for at give den ene mere plads; mens teksterne skrives, trækkes bjælken under boksene op og ned for at give boksene eller sammenligningen mere plads. Et dobbeltklik nulstiller bjælken.",
+            "Hvor flere linjer i træk er blevet ændret, placeres hver linje ved siden af den linje, den ligner mest, så en linje, der er tilføjet eller fjernet imellem dem, ikke får hver efterfølgende linje til at se ud som om, den er ændret til den næste.",
+            "\"Skriv eller indsæt teksterne\" viser en boks over hver kolonne; det, du skriver der, sammenlignes, mens du skriver, og en fil kan stadig vælges til begge sider."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Søgning og udskiftning i en mappe",
+          "body": [
+            {
+              "steps": [
+                "Værktøjer → \"Søg i mappe\" (Ctrl+Shift+F), og vælg mappen. Mapperne under den bliver også gennemsøgt.",
+                "Skriv hvad der skal findes, med de samme valgmuligheder som \"Erstat alle steder\". \"Filtyper\" begrænser søgningen til visse filendelser (txt, md, csv…).",
+                "Hvert match vises i sin linje, fil for fil. Klik på en linje for at åbne filen der.",
+                "For at udskifte: skriv den nye tekst, fjern markeringen ved de filer, der skal forblive uændrede, og vælg \"Skriv filerne\"."
+              ]
+            },
+            "Intet skrives, før du beder om det, og kun i de filer, der stadig er markeret. Hver fil skrives i den kodning og med de linjeskift, den havde.",
+            {
+              "note": "Skjulte mapper og mapper med programfiler (.git, node_modules) springes over, medmindre du anmoder om dem. Filer, der ikke er tekst, springes altid over."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Indstillinger",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Indstillinger for Scribe",
+          "body": [
+            "Fil → Indstillinger åbner programmets indstillinger for Scribe.",
+            {
+              "points": [
+                "Editoren: skrifttyper med fast bredde eller programmets egne, deres størrelse, linjeskift, linjenumre og om resultatet af et værktøj skal vises, før det anvendes.",
+                "Ny tekst: hvordan linjerne afsluttes, og om filen starter med et byte order mark.",
+                "Statistik: hastigheder for læsning, oplæsning, skrivning på tastatur og håndskrift, samt hvor mange ord der udgør en side.",
+                "Genvejstaster til Scribes kommandoer."
+              ]
+            },
+            "Hver indstilling har en knap, der nulstiller den til standardværdien."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Om Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Om Scribe",
+          "body": [
+            "Scribe er tekst-appen fra Syntelab Creative: en editor med værktøjer ved siden af teksten. Den viser, hvad et værktøj vil gøre, før det gør det, renser og sorterer lister, søger og erstatter i en tekst eller i en hel mappe, sammenligner to tekster, analyserer hvad en tekst består af, genererer fyldtekst og fiktive data, og gemmer dine hyppigste handlinger som opskrifter, der kan køres igen.",
+            "Alt sker lokalt på denne computer. Der er ingen begrænsning på størrelsen eller antallet af tekster: begrænsningerne er computerens hukommelse og hvad nutidens teknologi kan præstere.",
+            "Det er et nyt program. Hvis det ikke lever op til dine behov, så fortæl os det via Hjælp → Feedback: det er sådan, vi ved, hvad vi skal arbejde på."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Hvad Scribe er bygget med",
+          "body": [
+            {
+              "points": [
+                "Editoren: CodeMirror.",
+                "Læse- og skrivekodninger: encoding_rs, med chardetng til at gætte kodningen af en fil, der ikke angiver det.",
+                "Søg og erstat: Rusts regex-bibliotek, hvis mønstre ikke kan få programmet til at fryse.",
+                "Sortering efter sprog, samt findning af ord og sætninger i alle skrifttyper: ICU4X, Unicode-biblioteket.",
+                "Sammenligning af tekster: similar-biblioteket.",
+                "Rumænske diakritiske tegn: en liste over ord og regler skrevet til Scribe."
+              ]
+            },
+            "Hvad den har til fælles med resten af programmet, findes under \"Om Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Hvad Scribe endnu ikke kan",
+          "body": [
+            {
+              "points": [
+                "En meget stor fil læses én side ad gangen og ændres kun via opskrifter; at ændre den manuelt betyder, at den skal åbnes i sin helhed, hvilket kræver hukommelse.",
+                "Gendannelse af rumænske diakritiske tegn genkender almindelige ord; sjældne ord og navne forbliver som indtastet.",
+                "Der er ingen stavekontrol.",
+                "Tekst udtrækkes ikke fra PDF- eller Office-dokumenter her; PDF Organizer åbner disse.",
+                "Editoren understøtter ikke farvekodning eller Markdown.",
+                "En fil, der trækkes ind i vinduet, åbnes som en ny tekst: programmet får ikke oplyst, hvor filen befinder sig, så ved lagring spørges der om placering."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

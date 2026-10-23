@@ -1,0 +1,51 @@
+.dialog {
+  width: min(640px, calc(100vw - 32px));
+  max-height: min(720px, calc(100vh - 32px));
+  padding: 0;
+  /* Only the body of the window scrolls, never the window around it too. */
+  overflow: hidden;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-l);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  box-shadow: var(--sc-shadow-l);
+  /* Inside a window everything is as compact as the rest of the program. */
+  --sc-control-height: var(--sc-control-height-compact);
+  --sc-button-padding: var(--sc-button-padding-compact);
+}
+
+.dialog[data-wide='true'] {
+  width: min(900px, calc(100vw - 32px));
+  max-height: min(820px, calc(100vh - 32px));
+}
+
+.dialog::backdrop {
+  background: var(--sc-backdrop);
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  max-height: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-block: 6px;
+  padding-inline: 16px 6px;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.title {
+  flex: 1;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.body {
+  overflow: auto;
+  padding: 16px;
+}

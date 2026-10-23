@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Textos e ficheiros",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "O editor",
+          "body": [
+            "O Scribe é um editor de texto simples com ferramentas ao lado. Cada texto tem um separador: o texto fica ao centro, o painel de ferramentas ao lado e uma linha de informações por baixo.",
+            "Ao abrir, o Scribe pergunta primeiro o que pretendes fazer: contar palavras, localizar e substituir, remover duplicados, comparar dois textos, ordenar linhas, inverter um texto ou criar texto de preenchimento ou aleatório. Cada opção abre o texto com a ferramenta correspondente ao lado; «Texto vazio» abre apenas o texto e os textos abertos recentemente aparecem abaixo.",
+            {
+              "points": [
+                "Ficheiro → Novo texto (Ctrl+N) cria um texto vazio.",
+                "Ficheiro → Abrir (Ctrl+O) abre um ou vários ficheiros, cada um no seu separador. Podes abrir qualquer ficheiro de texto: .txt, .md, .csv, .log, .srt, código-fonte e outros.",
+                "Editar → Anular (Ctrl+Z) e Refazer (Ctrl+Y) percorrem todas as alterações ao texto; uma ferramenta ou receita conta como um único passo.",
+                "Editar → Localizar e substituir (Ctrl+F) abre uma barra no editor para percorrer as correspondências.",
+                "Editar → Selecionar tudo (Ctrl+A)."
+              ]
+            },
+            "A linha por baixo do texto indica a posição do cursor, a extensão da seleção, o número de linhas, palavras e caracteres, a codificação do ficheiro e o tipo de fim de linha.",
+            "Também podes largar ficheiros na janela para os abrir, cada um como texto novo, com o nome, a codificação e os fins de linha do ficheiro. O programa recebe o conteúdo, mas não a localização do ficheiro no disco, por isso pergunta onde o guardar; os ficheiros com mais de 64 MB têm de ser abertos com Ficheiro → Abrir.",
+            "Enquanto um texto novo estiver vazio, apresenta os textos abertos recentemente: clica num para o abrir. «Limpar a lista» apaga a lista, que só fica guardada neste computador."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Guardar e Guardar como",
+          "body": [
+            "As alterações só afetam o ficheiro no disco quando guardares. Um ponto no separador indica alterações por guardar; ao fechar esse separador, o programa pede confirmação.",
+            {
+              "points": [
+                "Guardar (Ctrl+S) grava o texto por cima do ficheiro atual. Para um texto novo, o programa pergunta onde o guardar.",
+                "Guardar como (Ctrl+Shift+S) grava-o num ficheiro novo, que passa a ocupar o separador, mantendo o histórico de anulações; o ficheiro antigo permanece inalterado."
+              ]
+            },
+            "O ficheiro é gravado por inteiro ou não é gravado: se a operação falhar, o ficheiro existente mantém-se.",
+            {
+              "note": "O ficheiro é guardado como foi aberto: com a mesma codificação e os mesmos fins de linha. Um texto escrito no Windows e outro escrito no Linux mantêm o formato original."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Codificações e fins de linha",
+          "body": [
+            "Uma codificação determina como as letras são guardadas em bytes. O Scribe lê a informação do próprio ficheiro e tenta detetá-la quando esta falta. Atualmente, a maioria dos ficheiros usa UTF-8; ficheiros mais antigos da Europa Central usam frequentemente windows-1250.",
+            {
+              "points": [
+                "Se as letras aparecerem incorretas (Ã£ em vez de ă, ou quadrados): Ficheiro → «Voltar a ler noutra codificação» e escolhe a codificação do ficheiro.",
+                "Para guardar com outra codificação, escolhe-a na linha por baixo do texto e guarda. Se a codificação não conseguir representar algumas letras, o Scribe indica quais e não grava o ficheiro.",
+                "Os fins de linha (CRLF no Windows, LF no Linux e macOS e CR nos Mac antigos) também podem ser alterados no mesmo local. Se um ficheiro tiver fins de linha mistos, o Scribe indica-o; ao guardar, todas as linhas passam a ter o mesmo tipo."
+              ]
+            },
+            "As definições determinam o conteúdo inicial de um texto novo."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Apresentação do texto",
+          "body": [
+            {
+              "points": [
+                "Cada opção do menu Ver funciona como um interruptor: ativada, a opção é apresentada; desativada, fica oculta.",
+                "Texto: Ajustar linhas (Alt+Z) faz com que as linhas que ultrapassam a janela continuem por baixo sem alterar as linhas do texto; Números de linha; Resultado junto ao texto.",
+                "Ao lado do texto: Ferramentas (Ctrl+T), Receitas e Estatísticas. O painel apresenta apenas as secções ativadas; se nenhuma estiver ativada, o painel não é apresentado.",
+                "Grupos de ferramentas visíveis: podes ocultar do painel cada grupo (localizar e substituir, linhas, maiúsculas, limpeza e escrita de texto). Uma ferramenta escolhida nos menus Formatação ou Ferramentas continua a aparecer: a respetiva secção e grupo são reativados automaticamente.",
+                "A seta dupla no topo do painel recolhe-o para uma faixa na margem, a partir da qual podes aceder às secções com um clique; arrasta a margem para ajustar a largura.",
+                "O tipo e o tamanho das letras são definidos nas Definições."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Ficheiros muito grandes",
+          "body": [
+            "Um ficheiro com mais de 64 MB não é carregado no editor: abre num separador que apresenta 500 linhas de cada vez, lidas do ficheiro à medida que avanças. Ficheiros com vários gigabytes abrem assim no tempo de uma leitura sequencial.",
+            {
+              "points": [
+                "«Página anterior» e «Página seguinte» permitem percorrer o ficheiro; introduz um número de linha e clica em «Ir» para saltar para essa linha.",
+                "A pesquisa percorre o ficheiro inteiro, com as mesmas opções disponíveis noutros locais, e lista as ocorrências. Clica numa para ir para a respetiva linha. Uma lista longa é apresentada por partes através de «Procurar mais».",
+                "«Executar uma receita no ficheiro todo» guarda o resultado numa pasta à tua escolha, com o mesmo nome. O ficheiro original nunca é alterado.",
+                "«Abrir todo no editor» carrega-o no editor para que o possas alterar manualmente. A operação pode ser lenta e requer várias vezes o tamanho do ficheiro em memória."
+              ]
+            },
+            {
+              "note": "Os ficheiros com dois bytes por letra (UTF-16) não podem ser apresentados página a página. Durante a execução, uma receita mantém o ficheiro inteiro na memória: o limite depende da memória do computador."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ferramentas",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Como funcionam as ferramentas",
+          "body": [
+            "As ferramentas estão agrupadas no painel ao lado do texto. Clica numa para ver as opções e, em seguida, escolhe «Aplicar ao texto».",
+            {
+              "points": [
+                "Se houver texto selecionado, a ferramenta altera apenas a seleção; se não houver, altera o texto inteiro. O topo do painel indica o âmbito da operação.",
+                "Por baixo do botão, a ferramenta indica o que fez: quantas linhas ou ocorrências alterou.",
+                "Cada ferramenta corresponde a um passo: Anular reverte-o por completo.",
+                "Todas as ferramentas também estão nos menus e na pesquisa de comandos: as que alteram a forma do texto (linhas, maiúsculas, limpeza) encontram-se no menu Formatação; as restantes, em Ferramentas. Ao escolher uma, o painel abre nas respetivas opções."
+              ]
+            },
+            "No menu Formatação, as ferramentas com uma opção principal aparecem como comandos separados: cada transformação de maiúsculas, tipo de aspas ou forma de inverter o texto tem o seu próprio comando e abre a ferramenta com essa opção selecionada. Quando a janela é demasiado estreita para apresentar um grupo, este passa a ser um botão que abre a lista completa.",
+            "As ferramentas são executadas neste computador. Nenhum texto sai daqui."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Pré-visualizar o resultado antes de aplicar",
+          "body": [
+            "Enquanto uma ferramenta está aberta, o resultado previsto aparece ao lado do texto, no painel «Resultado». O texto só muda quando escolhes «Aplicar ao texto». O resultado é atualizado automaticamente: altera uma opção ou o texto para o recalcular.",
+            {
+              "points": [
+                "O texto e o resultado aparecem lado a lado, cada um sob um cabeçalho da mesma altura, para que as linhas correspondentes comecem à mesma altura; deslocam-se em conjunto (o botão de corrente desativa esta opção).",
+                "As linhas que seriam alteradas são assinaladas, com as partes modificadas num tom mais escuro; as linhas que apenas mudariam de posição e as linhas novas têm cores próprias. As linhas a alterar ou remover também são assinaladas no texto.",
+                "Por baixo dos títulos, são apresentados os números das alterações previstas: linhas alteradas, movidas, novas ou removidas; linhas e caracteres antes e depois.",
+                "Por baixo do resultado, são apresentadas as linhas que seriam removidas. Clica numa para ir até ela no texto.",
+                "Os pequenos botões do resultado permitem copiá-lo, abri-lo como texto novo, compará-lo com o texto de um separador, deslocar os painéis em conjunto, colocá-lo por baixo do texto em vez de ao lado ou ocultá-lo. O texto tem os seus próprios botões: anular, refazer, copiar, colar por cima, selecionar tudo e limpar.",
+                "Arrasta a barra entre os painéis para dar mais espaço a um deles; faz duplo clique para voltar a dividi-los igualmente."
+              ]
+            },
+            "Depois de aplicar, o painel Resultado confirma («Aplicado. O texto à esquerda já apresenta o resultado.») e apresenta as opções Anular e «Comparar com o original», que abre a mesma comparação entre o antes e o depois. O resultado volta a ser calculado quando alteras o texto ou uma opção da ferramenta.",
+            {
+              "note": "Ver → «Resultado junto ao texto» mostra ou oculta o painel. Para textos muito longos (mais de dois milhões de caracteres), o resultado não é pré-visualizado: aplica a ferramenta e usa Anular para reverter."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Substituir tudo",
+          "body": [
+            "Substitui de uma vez todas as ocorrências encontradas. Enquanto escreves o texto a procurar, o Scribe indica o número de ocorrências e assinala-as no texto, para poderes ver as alterações antes de as aplicar.",
+            {
+              "points": [
+                "«Expressão regular»: o texto a procurar é um padrão. Em «Substituir por», $1, $2… representam o conteúdo encontrado pelos grupos do padrão.",
+                "«Distinguir maiúsculas de minúsculas»: a e A são letras diferentes.",
+                "«Apenas palavras completas»: «gato» não é encontrado dentro de «gatinho».",
+                "«Manter as maiúsculas e minúsculas do texto substituído»: ao substituir «gato» por «cão», «Gato» passa a «Cão» e «GATO» passa a «CÃO»."
+              ]
+            },
+            {
+              "points": [
+                "«Mais opções» → «Preencher…»: o texto inserido pode incluir campos preenchidos em cada ocorrência. {counter} conta 1, 2, 3… ({counter:10} começa em 10; {counter:10:5} aumenta de 5 em 5); {date} e {time} correspondem à data e à hora do computador; {uuid} é um identificador; {random} gera 8 letras e algarismos aleatórios ({random:12} gera 12).",
+                "Por baixo do texto procurado, o Scribe também indica em quantas linhas existem ocorrências e quantos textos diferentes são afetados."
+              ]
+            },
+            "«Substituir vários elementos» executa uma lista de pares num único passo. Escreve um par por linha, no formato: procurar => substituir por. São executados pela ordem indicada, cada um sobre o resultado do anterior; uma segunda parte vazia remove o texto encontrado.",
+            {
+              "note": "Um padrão não pode bloquear o programa: o tempo de execução aumenta proporcionalmente ao comprimento do texto, sem crescer mais depressa. Por esse motivo, não estão disponíveis padrões que procurem para trás o que já encontraram (\\1)."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Linhas",
+          "body": [
+            {
+              "points": [
+                "Ordenar linhas por: ordem alfabética, segundo o idioma do programa ou um escolhido (em romeno, ă vem depois de a; em sueco, ä vem depois de z; em alemão, junto de a); letras e números como valores numéricos (file2 antes de file10); número inicial da linha; comprimento; número de palavras; data inicial (05.03.2024, 2024-03-05, com ou sem hora); endereços da Internet; números de versão (1.2.10 depois de 1.2.9); títulos, ignorando o artigo inicial; uma ordem personalizada (pequeno, médio, grande); ou sem ordenação.",
+                "As linhas sem valor para ordenar (sem número ou data, ou com um valor ausente da ordem personalizada) ficam no fim, tanto na ordem crescente como na decrescente.",
+                "Mais opções de ordenação: começar por uma palavra ou carácter, ordenar por coluna de uma tabela (indicando os separadores); manter a primeira linha como cabeçalho; ordenar parágrafos em vez de linhas; e limpar primeiro — remover espaços exteriores, linhas vazias ou duplicados.",
+                "Remover linhas duplicadas: manter a primeira, a última ou nenhuma das ocorrências repetidas (as linhas únicas permanecem). Podes ignorar maiúsculas e minúsculas, espaços no início e no fim, algarismos, pontuação ou um número de caracteres no início ou no fim. Podes comparar apenas uma coluna ou o conteúdo encontrado por um padrão. As linhas vazias podem ser mantidas, removidas ou reduzidas a uma só.",
+                "Contar linhas repetidas: mantém cada linha uma vez e indica antes dela o número de ocorrências — começando pelas mais ou menos repetidas ou mantendo a ordem original.",
+                "Manter ou remover linhas: procura texto em cada linha e mantém apenas as linhas que o contêm, ou apenas as que não o contêm.",
+                "Inverter a ordem das linhas; baralhar as linhas.",
+                "Numerar linhas: definir o número inicial, o que o segue, zeros à esquerda para alinhar os números e se as linhas vazias devem ser numeradas.",
+                "Linhas vazias: remover todas ou deixar apenas uma quando existem várias seguidas.",
+                "Juntar linhas numa só, com o separador escolhido; dividir em linhas por cada vírgula, ponto e vírgula ou outro separador. Nos campos de numeração, junção, divisão e contagem, \\t representa uma tabulação, que não pode ser introduzida diretamente."
+              ]
+            },
+            {
+              "note": "Uma opção que só faz sentido em conjunto com outra só é apresentada quando necessária: por exemplo, a coluna apenas aparece quando se escolhe ordenar por coluna. As opções menos utilizadas encontram-se em «Mais opções»."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Maiúsculas e minúsculas",
+          "body": [
+            "Alterar maiúsculas e minúsculas: maiúscula inicial de frase, Maiúscula Inicial De Cada Palavra, tudo em maiúsculas, tudo em minúsculas, inverter maiúsculas/minúsculas e convenções de nomes em código: camelCase, PascalCase, snake_case, CONSTANT_CASE e kebab-case.",
+            "As maiúsculas e minúsculas seguem as regras de cada alfabeto, não apenas as do inglês.",
+            "No grupo Direção, «Inverter o texto» inverte as letras de cada linha, a ordem das palavras ou as letras de cada palavra; «De cabeça para baixo» transforma o texto para ser lido do outro lado da mesa e «Como num espelho» também troca os sinais com orientação para a esquerda e para a direita. As letras são contadas como na leitura: uma letra com sinais diacríticos continua a ser uma só."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Limpeza",
+          "body": [
+            {
+              "points": [
+                "Limpar espaços: transforma vários espaços num só e remove os espaços no início e no fim das linhas.",
+                "Remover espaços nas extremidades: em ambas as extremidades, apenas no início ou apenas no fim.",
+                "Aspas: direitas, inglesas, romenas, alemãs ou francesas.",
+                "Remover diacríticos: ă passa a a, é passa a e. Apenas nos alfabetos latino e grego, onde a letra sem o sinal continua a ser a mesma letra.",
+                "Corrigir letras romenas: ş e ţ (com cedilha, usadas por teclados antigos) passam a ș e ț (com vírgula), as letras utilizadas na escrita romena.",
+                "Tabulações para espaços e espaços para tabulações, com a largura de tabulação escolhida.",
+                "Remover etiquetas HTML: para código-fonte de páginas Web colado no texto. Remove as etiquetas, os scripts e os estilos; mantém o que seria visível para um leitor. Para obter uma página pelo endereço, usa a ferramenta «Texto de uma página Web».",
+                "Texto de uma página Web: introduz o endereço de uma página (example.com/page) e escolhe «Obter texto». O conteúdo visível para um leitor é inserido na posição do cursor, sem etiquetas, scripts ou estilos. Esta é a única ferramenta do Scribe que acede à Internet, e apenas quando o pedes: a página é obtida pelo navegador instalado neste computador (Microsoft Edge ou Google Chrome), sem janela, cookies ou sessões iniciadas; o próprio programa não envia nada. Se a página exigir autenticação, só será obtido o conteúdo visível a um visitante."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Repor os diacríticos romenos",
+          "body": [
+            "Acrescenta ă, â, î, ș, ț ao texto romeno escrito sem estes diacríticos.",
+            {
+              "steps": [
+                "Abre a ferramenta no grupo Limpeza e escolhe «Aplicar ao texto».",
+                "As palavras com uma única forma correta são alteradas automaticamente: «stiu» passa a «știu», «informatii» passa a «informații».",
+                "As palavras com mais do que uma interpretação possível (fata, fată, fața, față) são listadas por ordem de ocorrência no texto, por baixo do botão. Clica na forma correta em cada caso.",
+                "Também podes assinalar «Escolher automaticamente a forma mais provável quando uma palavra for ambígua» antes de aplicar: não te será pedido que escolhas, mas deves rever o resultado."
+              ]
+            },
+            "Quando o contexto é suficiente, o Scribe decide: «o casa» passa a «o casă», «casa mea» mantém-se e «pentru ca» passa a «pentru că».",
+            {
+              "note": "Esta ferramenta foi criada para o Scribe com uma lista de palavras comuns e terminações romenas que levam sempre diacríticos. Palavras desconhecidas (raras ou nomes próprios) mantêm a forma escrita e as palavras que já têm diacríticos nunca são alteradas. Revê o resultado antes de o enviar."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Criar texto: preenchimento e texto aleatório",
+          "body": [
+            "As ferramentas do grupo «Escrever texto» não alteram nada: escrevem texto. O resultado é inserido na posição do cursor, substituindo a seleção.",
+            {
+              "points": [
+                "Texto de preenchimento: parágrafos, frases, palavras, listas, títulos ou partes de uma página (um título, parágrafos e uma lista). Em latim de tipografia (lorem ipsum), inglês, romeno, vocabulário de escritório ou de cozinha, ou palavras personalizadas. Mais opções: frases curtas, médias ou longas; texto simples, Markdown, HTML ou JSON; nível dos títulos; limite de caracteres (o texto termina numa palavra completa e continua a formar uma frase); palavras a excluir.",
+                "Dados fictícios: nomes, endereços de correio eletrónico, números de telefone, moradas, datas ou números, um por linha, da Roménia ou de países anglófonos. «Linhas segundo o meu padrão» cria cada linha com o formato indicado; {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} e {row} são substituídos por valores gerados — para criar rapidamente dados de teste em tabela.",
+                "Texto aleatório: palavras-passe (com letras, algarismos e símbolos, pelo menos um de cada), letras, algarismos, valores hexadecimais ou identificadores (UUID), numa ou várias linhas. Podes excluir caracteres fáceis de confundir (0 e O, 1, l e I).",
+                "Um valor inicial (em «Mais opções») faz com que o texto de preenchimento e os dados fictícios sejam sempre iguais para o mesmo número; 0 gera resultados diferentes de cada vez."
+              ]
+            },
+            {
+              "note": "As palavras-passe são geradas neste computador com os números aleatórios do sistema operativo e nunca são enviadas. Os endereços de correio eletrónico fictícios terminam em example.com, um domínio que não encaminha mensagens para ninguém; um número de telefone aleatório pode pertencer a alguém, por isso não lhe ligues."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Receitas",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Guardar as operações realizadas como receita",
+          "body": [
+            "Uma receita é uma lista de ferramentas com as respetivas opções, guardada com um nome e executada novamente com um clique.",
+            {
+              "steps": [
+                "Aplica ao texto as ferramentas pretendidas, pela ordem desejada.",
+                "Abre «Receitas» no topo do painel: são listadas as ferramentas aplicadas.",
+                "Escolhe «Guardar como receita» e atribui-lhe um nome.",
+                "Mais tarde, abre a receita e escolhe «Executar no texto»: todos os passos são aplicados e Anular reverte-os de uma só vez."
+              ]
+            },
+            "As receitas são guardadas neste computador e estão disponíveis em todos os textos."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Alterar uma receita ou criar uma de raiz",
+          "body": [
+            "«Alterar» numa receita aberta apresenta o nome e os passos. Podes mover cada passo para cima ou para baixo, removê-lo ou alterar as opções; adiciona ferramentas da lista por baixo dos passos. As alterações só ficam guardadas quando escolheres «Guardar».",
+            "«Nova receita» cria uma receita sem passos, que podes configurar da mesma forma sem aplicar primeiro as ferramentas a um texto.",
+            {
+              "note": "As ferramentas que criam texto (preenchimento, aleatório) não podem ser incluídas numa receita: uma receita transforma um texto."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Executar uma receita em ficheiros",
+          "body": [
+            {
+              "steps": [
+                "Abre a receita e, em «Executar em ficheiros», adiciona ficheiros ou uma pasta, incluindo as subpastas.",
+                "Escolhe onde guardar os resultados: noutra pasta, mantendo os ficheiros originais, ou por cima dos próprios ficheiros.",
+                "Clica em Executar. O Scribe indica quantos ficheiros foram gravados, quantos não precisaram de alterações e quais não puderam ser processados, com o motivo."
+              ]
+            },
+            "Cada ficheiro é gravado com a codificação e os fins de linha originais. Noutra pasta, os ficheiros mantêm a estrutura de pastas e os ficheiros já existentes nunca são substituídos.",
+            {
+              "note": "Não é possível anular no Scribe a gravação por cima dos ficheiros originais. Guarda uma cópia se forem importantes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Estatísticas, comparação e pastas",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Estatísticas",
+          "body": [
+            "«Estatísticas», no topo do painel, apresenta a composição do texto ou da seleção. Podes recolher cada secção.",
+            {
+              "points": [
+                "No topo: palavras, caracteres com e sem espaços, frases, parágrafos, linhas, páginas e tamanho em bytes.",
+                "Tempo estimado: leitura silenciosa, leitura em voz alta, escrita no teclado e escrita à mão.",
+                "Palavras: número de palavras diferentes e respetiva proporção, número de letras e sílabas por palavra, palavras mais longa e mais curta e contagem de palavras por comprimento.",
+                "Frases: palavras por frase, número de frases curtas, médias e longas, número de afirmações, perguntas e exclamações e frases mais longa e mais curta.",
+                "Facilidade de leitura: pontuação de 0 (muito difícil) a 100 (muito fácil), segundo uma fórmula criada para o idioma do texto. Existem fórmulas para inglês, alemão, espanhol, francês, italiano, neerlandês, português e russo. Os restantes idiomas não recebem pontuação, pois uma fórmula de outro idioma seria enganadora.",
+                "Palavras mais frequentes: as palavras mais usadas e a respetiva proporção do texto, bem como os pares e grupos de três palavras recorrentes.",
+                "Espaço disponível dentro dos limites habituais: número de caracteres que ainda cabem, ou que excedem o limite, num título, descrição, publicação curta, entre outros."
+              ]
+            },
+            "As palavras e as frases são identificadas segundo as regras de cada sistema de escrita, incluindo chinês, japonês e tailandês, que não separam as palavras com espaços. As velocidades usadas para calcular os tempos e o número de palavras por página são definidos nas Definições."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Comparar dois textos",
+          "body": [
+            {
+              "points": [
+                "Ferramentas → «Comparar com outro texto»: compara o texto do editor com outro que escrevas ou coles.",
+                "Ferramentas → «Comparar com um ficheiro»: compara o texto atual do editor com um ficheiro à tua escolha.",
+                "Ferramentas → «Comparar dois textos»: apresenta lado a lado dois textos escritos ou colados.",
+                "Ferramentas → «Comparar dois ficheiros»."
+              ]
+            },
+            "Os textos são apresentados lado a lado. As linhas que existem apenas no primeiro são assinaladas como removidas; as que existem apenas no segundo, como adicionadas; e as palavras diferentes numa linha alterada também são destacadas. São apresentadas apenas as diferenças e algumas linhas em redor; as setas passam de uma diferença para a seguinte.",
+            "Podes ignorar maiúsculas e minúsculas, espaços, linhas vazias, números e pontuação. «Numa coluna» apresenta as linhas removidas por cima das adicionadas, cada uma com o respetivo sinal, em vez de as mostrar lado a lado. Junto às contagens, o Scribe indica a semelhança entre os textos como proporção de linhas iguais.",
+            "O primeiro texto é apresentado assim que o selecionas, mesmo antes de escolheres o segundo. Arrasta a barra entre os textos para dar mais espaço a um deles; quando escreves nos textos, arrasta a barra por baixo das caixas para ajustar o espaço das caixas ou da comparação. Faz duplo clique para repor a posição de uma barra.",
+            "Quando várias linhas consecutivas são alteradas, cada uma é alinhada com a linha mais semelhante. Assim, uma linha adicionada ou removida no meio não faz parecer que todas as linhas seguintes também mudaram.",
+            "«Escreve ou cola os textos» apresenta uma caixa por cima de cada coluna. O conteúdo é comparado à medida que escreves e continua a ser possível escolher um ficheiro para cada lado."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Localizar e substituir numa pasta",
+          "body": [
+            {
+              "steps": [
+                "Ferramentas → «Localizar numa pasta» (Ctrl+Shift+F) e escolhe a pasta. A pesquisa inclui as respetivas subpastas.",
+                "Escreve o texto a procurar e escolhe as mesmas opções de «Substituir em todo o texto». «Tipos de ficheiro» limita a pesquisa a determinadas extensões (txt, md, csv…).",
+                "Cada ocorrência é apresentada na respetiva linha, agrupada por ficheiro. Clica numa linha para abrir o ficheiro nessa posição.",
+                "Para substituir: escreve o novo texto, desmarca os ficheiros que pretendes manter sem alterações e escolhe «Escrever os ficheiros»."
+              ]
+            },
+            "Nada é gravado até o pedires e apenas nos ficheiros que mantiveres selecionados. Cada ficheiro mantém a codificação e os fins de linha originais.",
+            {
+              "note": "As pastas ocultas e as pastas de programas (.git, node_modules) são ignoradas, a menos que peças para as incluir. Os ficheiros que não sejam de texto são sempre ignorados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Definições",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Definições do Scribe",
+          "body": [
+            "Ficheiro → Definições abre as Definições do programa na secção do Scribe.",
+            {
+              "points": [
+                "Editor: letras monoespaçadas ou o tipo de letra do programa, tamanho, ajuste de linha, números de linha e apresentação do resultado de uma ferramenta antes de o aplicar.",
+                "Texto novo: tipo de fim de linha e inclusão ou não de uma marca de ordem dos bytes no início do ficheiro.",
+                "Estatísticas: velocidades de leitura, fala, escrita no teclado e à mão, e número de palavras por página.",
+                "Atalhos de teclado dos comandos do Scribe."
+              ]
+            },
+            "Cada definição tem um botão para repor o valor inicial do programa."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Sobre o Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Sobre o Scribe",
+          "body": [
+            "O Scribe é a aplicação de texto do Syntelab Creative: um editor com ferramentas ao lado do texto. Pré-visualiza o resultado das operações, limpa e ordena listas, localiza e substitui texto num texto ou numa pasta, compara textos, analisa o seu conteúdo, gera texto de preenchimento e dados fictícios e guarda operações frequentes em receitas reutilizáveis.",
+            "Tudo é feito neste computador. Não há limites impostos ao tamanho nem ao número de textos: os limites dependem da memória do computador e da tecnologia atual.",
+            "A aplicação é recente. Se não responder às necessidades dos teus textos, diz-nos através de Ajuda → Comentários: assim saberemos em que trabalhar."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Tecnologias utilizadas pelo Scribe",
+          "body": [
+            {
+              "points": [
+                "Editor: CodeMirror.",
+                "Leitura e escrita de codificações: encoding_rs, com chardetng para detetar a codificação de ficheiros sem essa indicação.",
+                "Localizar e substituir: biblioteca de expressões regulares de Rust, cujos padrões não conseguem bloquear o programa.",
+                "Ordenação segundo as regras de cada idioma e localização de palavras e frases em todos os sistemas de escrita: ICU4X, a biblioteca Unicode.",
+                "Comparação de textos: biblioteca similar.",
+                "Diacríticos romenos: lista de palavras e regras criadas para o Scribe."
+              ]
+            },
+            "As tecnologias partilhadas com o resto do programa estão descritas em «Acerca de Syntelab Creative»."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "O que o Scribe ainda não consegue fazer",
+          "body": [
+            {
+              "points": [
+                "Um ficheiro muito grande é lido página a página e só pode ser alterado através de receitas; para o editar manualmente, é necessário abri-lo por inteiro, o que requer memória.",
+                "A reposição dos diacríticos romenos reconhece palavras comuns; palavras raras e nomes próprios mantêm a forma escrita.",
+                "Não existe verificação ortográfica.",
+                "O Scribe não extrai texto de PDFs nem de documentos de escritório; para isso, abre-os no PDF Organizer.",
+                "O editor não realça código nem Markdown.",
+                "Um ficheiro largado na janela abre como texto novo: o programa não recebe a localização do ficheiro e, por isso, pergunta onde o guardar."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

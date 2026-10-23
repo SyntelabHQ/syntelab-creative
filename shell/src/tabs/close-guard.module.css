@@ -1,0 +1,28 @@
+.question {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.note {
+  margin-block: 8px 20px;
+  margin-inline: 0;
+  color: var(--sc-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.actions .discard {
+  border-color: var(--sc-danger);
+  color: var(--sc-danger);
+}
+
+.actions .discard:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--sc-danger) 12%, var(--sc-surface));
+  color: var(--sc-danger);
+}

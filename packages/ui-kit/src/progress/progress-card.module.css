@@ -1,0 +1,96 @@
+/* Lies over what does something long: it cannot be touched meanwhile, and a card says how far the work has got. */
+.veil {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  cursor: progress;
+}
+
+.veil[data-shown='true'] {
+  background: color-mix(in srgb, var(--sc-surface) 72%, transparent);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: min(420px, 100%);
+  padding: 16px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  box-shadow: var(--sc-shadow-l);
+  color: var(--sc-text);
+  cursor: default;
+}
+
+.head,
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.percent {
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.track {
+  overflow: hidden;
+  height: 8px;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface-2);
+}
+
+.bar {
+  height: 100%;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-accent);
+  transition: inline-size 150ms linear;
+}
+
+/* Nothing is known yet of how much there is to do: a part of the bar goes from one end to the other. */
+.track[data-unknown='true'] .bar {
+  inline-size: 30%;
+  animation: sc-progress-unknown 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes sc-progress-unknown {
+  from {
+    margin-inline-start: 0;
+  }
+
+  to {
+    margin-inline-start: 70%;
+  }
+}
+
+.stage {
+  min-width: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bar {
+    transition: none;
+  }
+
+  .track[data-unknown='true'] .bar {
+    animation: none;
+    inline-size: 100%;
+    opacity: 0.5;
+  }
+}

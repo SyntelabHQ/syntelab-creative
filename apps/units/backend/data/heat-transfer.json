@@ -1,0 +1,39 @@
+{
+  "id": "heat-transfer",
+  "category": "physics",
+  "icon": "thermometer",
+  "base": "w-m2k",
+  "startsWith": ["w-m2k","btu-h-ft2f"],
+  "decimals": 3,
+  "groups": [
+    { "id": "heat_transfer_coefficient", "color": "#2563eb" },
+    { "id": "thermal_conductivity", "color": "#dc2626" },
+    { "id": "thermal_resistance", "color": "#ea580c" }
+  ],
+  "units": [
+    {"id":"w-m2k","symbol":"W/(m²·K)","group":"heat_transfer_coefficient","factor":"1","popular":true},
+    {"id":"w-m2c","symbol":"W/(m²·°C)","group":"heat_transfer_coefficient","factor":"1","popular":true},
+    {"id":"kw-m2k","symbol":"kW/(m²·K)","group":"heat_transfer_coefficient","factor":"1000","decimals":4},
+    {"id":"cal-s-cm2c","symbol":"cal/(s·cm²·°C)","group":"heat_transfer_coefficient","factor":"41840"},
+    {"id":"kcal-h-m2c","symbol":"kcal/(h·m²·°C)","group":"heat_transfer_coefficient","factor":"1.163","popular":true,"decimals":2},
+    {"id":"btu-h-ft2f","symbol":"BTU/(h·ft²·°F)","group":"heat_transfer_coefficient","factor":"5.678263","popular":true},
+    {"id":"btu-s-ft2f","symbol":"BTU/(s·ft²·°F)","group":"heat_transfer_coefficient","factor":"20441.748"},
+    {"id":"chu-h-ft2c","symbol":"CHU/(h·ft²·°C)","group":"heat_transfer_coefficient","factor":"5.678263"},
+    {"id":"w-mk","symbol":"W/(m·K)","group":"thermal_conductivity","factor":"1","popular":true},
+    {"id":"w-mc","symbol":"W/(m·°C)","group":"thermal_conductivity","factor":"1","popular":true},
+    {"id":"kw-mk","symbol":"kW/(m·K)","group":"thermal_conductivity","factor":"1000","decimals":4},
+    {"id":"cal-s-cmk","symbol":"cal/(s·cm·K)","group":"thermal_conductivity","factor":"418.4"},
+    {"id":"kcal-h-mk","symbol":"kcal/(h·m·K)","group":"thermal_conductivity","factor":"1.163","popular":true,"decimals":2},
+    {"id":"btu-h-ftf","symbol":"BTU/(h·ft·°F)","group":"thermal_conductivity","factor":"1.730735","popular":true},
+    {"id":"btu-in-h-ft2f","symbol":"BTU·in/(h·ft²·°F)","group":"thermal_conductivity","factor":"0.14422764"},
+    {"id":"m2k-w","symbol":"m²·K/W","group":"thermal_resistance","factor":"1","popular":true},
+    {"id":"m2c-w","symbol":"m²·°C/W","group":"thermal_resistance","factor":"1","popular":true},
+    {"id":"ft2hf-btu","symbol":"ft²·h·°F/BTU","group":"thermal_resistance","factor":"0.17611","popular":true},
+    {"id":"clo","symbol":"clo","group":"thermal_resistance","factor":"0.155","popular":true,"decimals":2},
+    {"id":"tog","symbol":"tog","group":"thermal_resistance","factor":"0.1","popular":true,"decimals":2},
+    {"id":"r-value-us","symbol":"R (US)","group":"thermal_resistance","factor":"0.17611","popular":true,"decimals":2},
+    {"id":"r-value-si","symbol":"R (SI)","group":"thermal_resistance","factor":"1","popular":true},
+    {"id":"u-value-si","symbol":"U (SI)","group":"heat_transfer_coefficient","factor":"1","popular":true},
+    {"id":"u-value-us","symbol":"U (US)","group":"heat_transfer_coefficient","factor":"5.678263","popular":true}
+  ]
+}

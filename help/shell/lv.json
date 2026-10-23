@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Darba sākšana",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Kas ir Syntelab Creative",
+          "body": [
+            "Syntelab Creative ir viena programma, kas sastāv no lietotnēm. Katra lietotne veic viena veida darbu:",
+            {
+              "points": [
+                "PDF Organizer lasa, kārto, rediģē un paraksta PDF dokumentus.",
+                "Scribe ir teksta redaktors ar rīkiem, kas tekstu tīra, kārto, salīdzina un pārveido.",
+                "Units pārveido mērvienības: garumu, temperatūru, valūtas un daudz ko citu.",
+                "Dev apvieno rīkus izstrādātājiem: kodēšana un atkodēšana, formatēšana un pārbaude, datu pārveidošana no vienas formas citā."
+              ]
+            },
+            "Lietotnēm ir kopīgs logs, kopīgi iestatījumi un vienots darba veids, tāpēc tas, ko iemācāties vienā, ir tāpat arī nākamajā.",
+            {
+              "note": "Viss notiek jūsu datorā. Jūsu dokumenti nekad netiek nekur sūtīti, un nekas par jums vai jūsu darbu netiek vākts."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Logs",
+          "body": [
+            {
+              "points": [
+                "Sānu josla: māja ved uz Sākumu, tad seko jūsu lietotnes, un apakšā programmas jaunumi, Atsauksmes, Atbalsts un Iestatījumi.",
+                "Lietotnē Fails → Doties uz Sākumu ved uz šīs lietotnes pirmo lapu, ja tai tāda ir (Units, Scribe), un Fails → Atvērt iestatījumus (Ctrl+,) atver Iestatījumus šīs lietotnes sadaļā; pārējās sadaļas tur ir viena klikšķa attālumā.",
+                "Cilnes augšā: katram atvērtajam dokumentam, sējumam vai rīkam ir sava cilne. Punkts uz cilnes nozīmē, ka tajā ir nesaglabātas izmaiņas.",
+                "Lietotnes izvēlnes zem cilnēm: kā izvēlnes josla, kā lente vai kā sānu panelis, atkarībā no jūsu izvēles.",
+                "Pārējais logs ir priekšplānā esošā cilne."
+              ]
+            },
+            "Aizverot cilni ar nesaglabātām izmaiņām, vispirms tiek jautāts; tāpat, aizverot programmu."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Sākums",
+          "body": [
+            "Sākumā redzamas jūsu lietotnes un nesen atvērtie faili. Noklikšķiniet uz lietotnes, lai to atvērtu; noklikšķiniet uz nesena faila, lai to atvērtu vēlreiz.",
+            "Lietotnes var rādīt kā kartītes, kā ikonas ar nosaukumiem vai tikai kā ikonas, un tās var vilkt vēlamajā secībā. Ar tastatūru: Alt un bulttaustiņi. \"Atiestatīt noklusējumu\" tās noliek atpakaļ.",
+            "Katrai lietotnei ir arī sava saīsne Windows izvēlnē Sākt, piemēram, \"Syntelab PDF Organizer\" vai \"Syntelab Units\": tā atver programmu uzreiz šajā lietotnē. Ja programma jau ir atvērta, lietotne tajā atveras kā cilne."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Failu atvēršana",
+          "body": [
+            {
+              "points": [
+                "No lietotnes: Fails → Atvērt vai Ctrl+O.",
+                "Nometot failus no mapes uz loga.",
+                "No sistēmas failu pārvaldnieka: veiciet dubultklikšķi uz faila, kura atvēršanai ir iestatīta programma. Windows failu pārlūkā ir arī labā klikšķa izvēlne (skatiet \"Windows failu pārlūka labā klikšķa izvēlne\").",
+                "No Sākuma: neseno failu saraksts."
+              ]
+            },
+            "Programma darbojas kā viena kopija. Fails, kas atvērts no failu pārvaldnieka, kamēr programma darbojas, atveras kā jauna cilne tajā pašā logā."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pielāgošana sev",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Izkārtojums: izvēlnes josla, lente vai sānu panelis",
+          "body": [
+            "Lietotnes komandas var rādīt trīs veidos. Komandas ir tās pašas; atšķiras tikai to atrašanās vieta.",
+            {
+              "points": [
+                "Klasisks: izvēlnes josla un rīkjosla.",
+                "Lente: lielas pogas grupās ar nosaukumiem, viena cilne katrai izvēlnei. To var sakļaut, lai dokumentam paliktu vairāk vietas.",
+                "Sānu panelis: rīki panelī kreisajā vai labajā pusē, ko var sakļaut līdz ikonām."
+              ]
+            },
+            "Visu lietotņu izkārtojumu izvēlieties sadaļā Iestatījumi → Vispārīgi → Izkārtojums. Lietotnei var būt savs izkārtojums, ko izvēlas tās sadaļā Iestatījumos vai tās izvēlnē Skats; tad tā vairs neseko vispārējam, līdz izvēlaties \"Izmantot vispārējo izkārtojumu\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tēma",
+          "body": [
+            "Iestatījumi → Vispārīgi → Tēma: Gaiša, Tumša, Gaiši pelēka, Tumši pelēka vai Automātiska, kas seko sistēmas gaišajam vai tumšajam iestatījumam.",
+            "Tēma nekad nepārkrāso dokumenta lapas: papīrs paliek, kāds ir."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Valoda",
+          "body": [
+            "Iestatījumi → Vispārīgi → Valoda. Programma runā 62 valodās. \"Sistēmas valoda\" seko jūsu sistēmas valodai. Sarakstā var meklēt pēc valodas paša nosaukuma, tās nosaukuma jūsu valodā vai angliskā nosaukuma.",
+            "Teksts, kas vēl nav iztulkots, tiek rādīts angliski, nekad kā kods."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Cilnes",
+          "body": [
+            {
+              "points": [
+                "\"Paturēt cilni Sākums starp cilnēm\": ja izslēgts, cilne Sākums tiek rādīta tikai tad, kad pats Sākums ir priekšplānā; māja sānu joslā vienmēr ved atpakaļ uz to.",
+                "Cilnes zīme var būt tās lietotnes ikona vai vienkāršs kvadrāts lietotnes krāsā."
+              ]
+            },
+            "Ja cilņu ir vairāk, nekā ietilpst, bultiņas joslas galos to ritina, un \"Vairāk ciļņu\" parāda tās visas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orientēšanās",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Komandas meklēšana",
+          "body": [
+            "Meklēšanas lodziņš (\"Meklēt komandas un iestatījumus\") pēc nosaukuma atrod jebkuru priekšplānā esošās cilnes komandu jūsu valodā vai angliski. Izvēlieties rezultātu, lai to izpildītu.",
+            "Komandas, kas ir plānotas, bet vēl nav uzrakstītas, izvēlnēs tiek rādītas pelēkas un netiek iekļautas meklēšanā."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Īsinājumtaustiņi",
+          "body": [
+            "Komandas taustiņi ir norādīti blakus tās nosaukumam izvēlnēs un tās rīka padomā. Visbiežāk lietotie:",
+            {
+              "points": [
+                "Ctrl+O: atvērt failu",
+                "Ctrl+S: saglabāt; Ctrl+Shift+S: saglabāt kā",
+                "Ctrl+P: drukāt",
+                "Ctrl+Z un Ctrl+Y: atsaukt un atcelt atsaukšanu",
+                "Ctrl+F: meklēt dokumentā",
+                "Ctrl+W: aizvērt cilni",
+                "Ctrl+Tab un Ctrl+Shift+Tab: nākamā un iepriekšējā cilne",
+                "Ctrl+, (komats): Iestatījumi",
+                "F1: šī Palīdzība",
+                "Escape: iziet no pilnekrāna vai lasīšanas režīma vai nolikt rokā esošo rīku"
+              ]
+            },
+            "Programmas pašas komandu (cilnes, Iestatījumi, Palīdzība) taustiņus maina sadaļā Iestatījumi → Vispārīgi → Īsinājumtaustiņi; lietotnes komandu taustiņus – tās sadaļā Iestatījumos. Noklikšķiniet uz komandas taustiņiem, pēc tam nospiediet jaunos."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Šīs Palīdzības lietošana",
+          "body": [
+            "Palīdzība ir atkarīga no vietas, no kuras to atverat. No lietotnes redzat tikai šīs lietotnes rokasgrāmatu un tās cilnes komandas, no kuras atnācāt. No sākuma lapas vai Iestatījumiem redzat \"Par programmu\" (īsi par programmu un katru lietotni) un programmas rokasgrāmatu. Palīdzība → Par programmu vienmēr ved uz \"Par programmu\".",
+            "Saturs ir kreisajā pusē; meklēšana virs tā pārlūko visas tēmas, virsrakstos un tekstā.",
+            "Palīdzība atveras atsevišķā cilnē, tāpēc varat pārslēgties starp to un savu darbu; F1 to atkal parāda priekšplānā. Sadaļā \"Cilnes, no kuras atnācāt, komandas\" ir uzskaitīta katra šīs cilnes izvēlne ar visām tās komandām, to taustiņiem un aprakstu, ko tās dara: atveriet Palīdzību no tās cilnes, par kuru jums ir jautājums."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Windows failu pārlūka labā klikšķa izvēlne",
+          "body": [
+            "Iestatījumi → Vispārīgi → Windows failu pārlūks → \"Rādīt Syntelab Creative failu un mapju labā klikšķa izvēlnē\" pievieno ierakstus failiem, ko programma lasa: \"Konvertēt par PDF ar PDF Organizer\" un \"Apvienot failus programmā PDF Organizer\", katru ar PDF Organizer ikonu, un \"Syntelab Dev\", kas atveras sānis ar Kontrolsummas, Salīdzināt un Hex skatījums.",
+            "Tie tiek pievienoti tikai jūsu lietotājam, bez administratora tiesībām, un slēdža izslēgšana tos noņem. Operētājsistēmā Windows 11 tie ir sadaļā \"Rādīt vairāk opciju\". Tie vienmēr palaiž instalēto programmu: ja tā ir pārvietota vai pārinstalēta citur, startējot tā tos izlabo.",
+            {
+              "note": "Izvēloties \"Apvienot failus programmā PDF Organizer\" vairākiem failiem, atveras sējums ar tiem; \"Konvertēt par PDF ar PDF Organizer\" atver ar tiem pakešapstrādi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privātums, atjauninājumi un saziņa",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Kas notiek tiešsaistē un kas nekad",
+          "body": [
+            "Programma neko nevāc: nekādus lietošanas datus, failu nosaukumus, nekādus pašus no sevis sūtītus avāriju ziņojumus.",
+            "Tiešsaistē tā dodas tikai šajos gadījumos, katru reizi pēc jūsu pieprasījuma:",
+            {
+              "points": [
+                "Atjauninājumu un jaunumu pārbaude (divi mazi faili, kas nolasīti no syntelab.com), kad jūs to lūdzat vai, ja esat atļāvis, kad programma tiek palaista; un jaunas versijas lejupielāde, tikai kad nospiežat \"Atjaunināt\".",
+                "Tīmekļa lapas saglabāšana kā PDF (PDF Organizer) un tīmekļa lapas teksta ielāde (Scribe) no jūsu ievadītās adreses.",
+                "Saite dokumentā, uz kuras noklikšķināt: tā tiek nodota jūsu pārlūkprogrammai vai e-pasta programmai.",
+                "Atsauksmes un Atbalsts: tās atver syntelab.com lapu jūsu pārlūkprogrammā."
+              ]
+            },
+            "Parakstīšana ar sertifikātu un parakstu pārbaude notiek jūsu datorā, neejot tiešsaistē."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Atjauninājumi",
+          "body": [
+            "Iestatījumi → Vispārīgi → Atjauninājumi → \"Pārbaudīt atjauninājumus\". Ja ir jaunāka versija, logs pastāsta, kas jauns, un piedāvā \"Atjaunināt\".",
+            "\"Atjaunināt\" lejupielādē jauno versiju, pārbauda, vai tā tiešām nāk no mums (tai jābūt parakstītai ar mūsu atslēgu; viss cits tiek noraidīts), un instalē to pāri šai. Jūsu iestatījumi tiek saglabāti, un programma tiek palaista no jauna. Nekas netiek lejupielādēts, līdz to nospiežat.",
+            "Ja atjauninājumu nevar instalēt šādi (pārnēsājama kopija, Linux pakotne, nav tīkla), \"Lejupielādēt\" atver lejupielādes lapu jūsu pārlūkprogrammā; instalējiet jauno versiju pāri šai, un jūsu iestatījumi tiks saglabāti.",
+            "\"Pārbaudīt atjauninājumus un jaunumus, kad programma tiek palaista\" var izslēgt; nekas par jums vai jūsu datoru netiek sūtīts nevienā gadījumā."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Atsauksmes un atbalsts",
+          "body": [
+            "Palīdzība → Atsauksmes: palūdziet jaunu lietotni, jaunu funkciju vai izmaiņas vai ziņojiet par problēmu. Katrs ziņojums tiek izlasīts.",
+            "Palīdzība → Atbalsts: programma ir bezmaksas; šeit jūs varat palīdzēt tai turpināties."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Par Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Par Syntelab Creative",
+          "body": [
+            "Syntelab Creative ir bezmaksas lietotņu komplekts ikdienas darbam ar dokumentiem, tekstu un datiem, ko veido Syntelab (syntelab.com). Tas sākas ar četrām lietotnēm: PDF Organizer, Scribe, Units un Dev. Tām tajā pašā logā pievienosies citas.",
+            {
+              "points": [
+                "Vienmēr bez maksas.",
+                "Netiek vākti dati: nekas par jums, jūsu datoru vai jūsu darbu.",
+                "Nekas netiek paturēts: nav maksas versijas, nav bloķētu funkciju, nav ar nodomu ieliktu ierobežojumu. Vienīgie ierobežojumi ir tas, ko spēj mūsdienu tehnoloģijas, un tas, ko spēj jūsu dators."
+              ]
+            },
+            "Mums nav finansējuma. Programma tiek veidota mūsu brīvajā laikā, cik nu šis laiks atļauj. Mēs stingri apņemamies veidot kvalitatīvu programmatūru, un tas prasa laiku un pacietību: mūsu – lai to veidotu, un jūsu – kamēr tā aug.",
+            "Ar katru versiju tā kļūs labāka. Ziņotās problēmas tiek labotas, un pieprasītās funkcijas tiek izvērtētas nākamajiem soļiem.",
+            {
+              "note": "Jūsu dokumenti paliek jūsu datorā. Programma nevāc neko par jums vai jūsu darbu; skatiet \"Kas notiek tiešsaistē un kas nekad\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Kā jūs varat palīdzēt",
+          "body": [
+            "Ir trīs veidi, un katrs no tiem ir svarīgs:",
+            {
+              "points": [
+                "Pastāstiet, ko domājat: Palīdzība → Atsauksmes. Problēma, ar ko saskārāties, kaut kas, kā trūkst, kaut kas, kas ir grūtāk, nekā vajadzētu. Mēs izlasām katru ziņojumu.",
+                "Pastāstiet citiem par programmu un to, ko darām. Vairāk lietotāju nozīmē vairāk atsauksmju, un tā mēs redzam, kas patiešām ir svarīgs. Tas arī ļauj mums just, ka mūsu darbs tiek novērtēts: mūsu un ikviena, kas piedalās un piedalīsies projektā.",
+                "Atbalstiet to finansiāli, ja varat: Palīdzība → Atbalstīt mūs. Tas mums dod laiku pie tās strādāt."
+              ]
+            },
+            "Nekas no tā no jums netiek prasīts. Programma ir bezmaksas un vienmēr būs bezmaksas, pilnā apjomā, visiem."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Ar ko tā ir veidota",
+          "body": [
+            "Programma balstās uz daudzu cilvēku darbu. Kas ir kopīgs visām lietotnēm:",
+            {
+              "points": [
+                "Logs un viss, ko redzat: Tauri ar sistēmas tīmekļa skatu (WebView2 operētājsistēmā Windows, WebKitGTK Linux, WKWebView macOS); rakstīts TypeScript valodā ar React.",
+                "Daļa, kas veic darbu: rakstīta Rust valodā.",
+                "Burti un ikonas: Sansation, IBM Plex Sans un Font Awesome Free."
+              ]
+            },
+            "Ko pievieno katra lietotne, ir aprakstīts tās lapā sadaļā \"Par programmu\". Mēs esam pateicīgi cilvēkiem, kas stāv aiz šiem projektiem."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Ko tā vēl neprot",
+          "body": [
+            "Lai jūs zinātu, pirms uz to paļaujaties:",
+            {
+              "points": [
+                "Daži teksti vēl gaida tulkojumu. Līdz tam tie tiek rādīti angliski, nekad kā kods.",
+                "Failu pārvaldnieka labā klikšķa izvēlne pagaidām ir tikai Windows failu pārlūkā.",
+                "Parakstīšana ar sertifikātu pagaidām darbojas operētājsistēmā Windows; Linux un macOS tā būs kādā vēlākā versijā."
+              ]
+            },
+            "Katras lietotnes ierobežojumi ir aprakstīti tās lapā sadaļā \"Par programmu\". Ja kāds no tiem jums traucē, paziņojiet mums, izmantojot Palīdzība → Atsauksmes: tas palīdz mums izlemt, kas nāks vispirms."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Pie kā mēs strādājam",
+          "body": [
+            "Četras lietotnes turpinās augt: tas, ko ziņojat un lūdzat, izmantojot Palīdzība → Atsauksmes, lielā mērā nosaka, kas nāks vispirms. Līdzās tām tiek gatavotas jaunas lietotnes. Sākums tās nerāda, ja vien jūs to nevēlaties: atzīmējiet tās Sākuma izvēlnē \"Skats\", lai tās tur redzētu kā \"Drīzumā\":",
+            {
+              "points": [
+                "Convert: failu konvertēšana no viena formāta citā, tostarp biroja dokumentu konvertēšana par PDF un atpakaļ, bez vajadzības instalēt citu programmu. Mēs vēl neesam atraduši atvērtu tehnoloģiju, kas sasniegtu vēlamo kvalitāti, tāpēc tā nāks tikai tad, kad jūs nepievils; kur rīku nav, mēs tos izveidosim.",
+                "Pixel: rīki attēliem, piemēram, izmēru maiņa un saspiešana, fona noņemšana, krāsas un QR kodi.",
+                "Metadata: fotoattēlu, video un dokumentu slēpto datu skatīšana un noņemšana, pirms tos kopīgojat.",
+                "Wizard: nejaušas izvēles rīki un ģeneratori: griežams rats, metamie kauliņi, monēta, no saraksta izlozēti vārdi."
+              ]
+            },
+            "Jau esošajās lietotnēs mēs strādājam pie tā, kas uzskaitīts to lapās \"Ko tā vēl neprot\": piemēram, uzticams laikspiedols parakstiem, parakstīšana ar sertifikātu Linux un macOS un pareizrakstības pārbaude programmā Scribe.",
+            "Sekos arī citas instalēšanas iespējas: Microsoft Store un winget operētājsistēmā Windows, Flathub un Snap Linux.",
+            {
+              "note": "Katras versijas jaunumi ir zem jaunumu pogas sānu joslā; Iestatījumi → Vispārīgi → Atjauninājumi pārbauda, vai ir jaunāka versija."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

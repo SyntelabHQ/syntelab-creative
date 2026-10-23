@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Erste Schritte",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Was Syntelab Creative ist",
+          "body": [
+            "Syntelab Creative ist ein Programm aus mehreren Apps. Jede App übernimmt eine bestimmte Aufgabe:",
+            {
+              "points": [
+                "PDF Organizer liest, ordnet, bearbeitet und signiert PDF-Dokumente.",
+                "Scribe ist ein Texteditor mit Werkzeugen zum Bereinigen, Sortieren, Vergleichen und Umwandeln von Text.",
+                "Units rechnet Einheiten um: Länge, Temperatur, Währungen und vieles mehr.",
+                "Dev vereint Entwicklerwerkzeuge: codieren und decodieren, formatieren und prüfen sowie Daten in andere Formen umwandeln."
+              ]
+            },
+            "Alle Apps verwenden dasselbe Fenster, dieselben Einstellungen und dieselbe Bedienung. Was Sie in einer App lernen, gilt auch in den anderen.",
+            {
+              "note": "Alles geschieht auf Ihrem Computer. Ihre Dokumente werden nirgendwohin gesendet, und es werden keine Daten über Sie oder Ihre Arbeit gesammelt."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Das Fenster",
+          "body": [
+            {
+              "points": [
+                "Die Seitenleiste: Das Haus führt zu Start, darunter stehen Ihre Apps. Ganz unten finden Sie Neuigkeiten, Feedback, Unterstützen und Einstellungen.",
+                "In einer App führt Datei → Zur Startseite zur Startseite dieser App, sofern vorhanden (Units, Scribe). Datei → Einstellungen öffnen (Strg+,) öffnet die Einstellungen direkt im Bereich der App; die übrigen Bereiche erreichen Sie dort mit einem Klick.",
+                "Die Tabs oben: Jedes Dokument, jede Zusammenstellung und jedes Werkzeug, das Sie öffnen, erhält einen eigenen Tab. Ein Punkt auf einem Tab bedeutet, dass Änderungen noch nicht gespeichert wurden.",
+                "Die Menüs der App unter den Tabs werden je nach Auswahl als Menüleiste, Menüband oder Seitenleiste angezeigt.",
+                "Der übrige Fensterbereich zeigt den aktiven Tab."
+              ]
+            },
+            "Wenn Sie einen Tab mit ungespeicherten Änderungen schließen, werden Sie zuerst gefragt. Dasselbe gilt beim Beenden des Programms."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Start",
+          "body": [
+            "Start zeigt Ihre Apps und die zuletzt geöffneten Dateien. Klicken Sie auf eine App, um sie zu öffnen, oder auf eine zuletzt verwendete Datei, um sie erneut zu öffnen.",
+            "Sie können Apps als Karten, als Symbole mit Namen oder nur als Symbole anzeigen und sie durch Ziehen beliebig anordnen. Mit der Tastatur verwenden Sie Alt und die Pfeiltasten. „Auf Standard zurücksetzen“ stellt die ursprüngliche Reihenfolge wieder her.",
+            "Jede App hat auch eine eigene Verknüpfung im Windows-Startmenü, etwa „Syntelab PDF Organizer“ oder „Syntelab Units“. Damit öffnet sich das Programm direkt in dieser App. Ist das Programm bereits geöffnet, wird die App dort in einem neuen Tab geöffnet."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Dateien öffnen",
+          "body": [
+            {
+              "points": [
+                "In einer App: Datei → Öffnen oder Strg+O.",
+                "Ziehen Sie Dateien aus einem Ordner auf das Fenster.",
+                "Doppelklicken Sie im Dateimanager Ihres Systems auf eine Datei, die dem Programm zugeordnet ist. Im Windows-Explorer gibt es außerdem das Kontextmenü per Rechtsklick (siehe „Das Rechtsklickmenü im Windows-Explorer“).",
+                "Unter Start: in der Liste der zuletzt geöffneten Dateien."
+              ]
+            },
+            "Das Programm läuft nur einmal. Wird eine Datei im Dateimanager geöffnet, während das Programm bereits läuft, erscheint sie als neuer Tab im selben Fenster."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "So passen Sie das Programm an",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Oberfläche: Menüleiste, Menüband oder Seitenleiste",
+          "body": [
+            "Die Befehle einer App lassen sich auf drei Arten anzeigen. Die Befehle sind dieselben; nur ihre Position unterscheidet sich.",
+            {
+              "points": [
+                "Klassisch: Menüleiste und Symbolleiste.",
+                "Menüband: große Schaltflächen in benannten Gruppen, jeweils ein Tab pro Menü. Sie können es einklappen, um dem Dokument mehr Platz zu geben.",
+                "Seitenleiste: Werkzeuge in einem Bedienfeld links oder rechts, das sich auf Symbole einklappen lässt."
+              ]
+            },
+            "Legen Sie das Layout aller Apps unter Einstellungen → Allgemein → Layout fest. Eine App kann ein eigenes Layout haben, das Sie in ihrem Einstellungsbereich oder im Menü Ansicht wählen. Dann folgt sie nicht mehr der allgemeinen Einstellung, bis Sie „Allgemeines Layout verwenden“ auswählen."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Design",
+          "body": [
+            "Einstellungen → Allgemein → Design: Hell, Dunkel, Hellgrau, Dunkelgrau oder Automatisch. Automatisch folgt der hellen oder dunklen Systemeinstellung.",
+            "Dokumentseiten werden durch das Design nie umgefärbt: Papier bleibt, wie es ist."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Sprache",
+          "body": [
+            "Einstellungen → Allgemein → Sprache. Das Programm unterstützt 62 Sprachen. „Systemsprache“ übernimmt die Sprache Ihres Systems. Sie können die Liste nach dem Eigennamen einer Sprache, ihrem Namen in Ihrer Sprache oder dem englischen Namen durchsuchen.",
+            "Noch nicht übersetzte Texte werden auf Englisch angezeigt, niemals als Code."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Tabs",
+          "body": [
+            {
+              "points": [
+                "„Start-Tab unter den Tabs beibehalten“: Wenn die Option ausgeschaltet ist, wird der Start-Tab nur angezeigt, solange Start aktiv ist. Das Haus in der Seitenleiste führt immer dorthin zurück.",
+                "Als Markierung auf einem Tab können Sie das App-Symbol oder ein einfaches Quadrat in der App-Farbe verwenden."
+              ]
+            },
+            "Wenn mehr Tabs geöffnet sind, als in die Leiste passen, können Sie sie mit den Pfeilen an den Enden verschieben. Über „Weitere Tabs“ sehen Sie die vollständige Liste."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orientierung",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Befehl suchen",
+          "body": [
+            "Das Suchfeld („Apps, Tools und Befehle suchen“) findet jeden Befehl des aktiven Tabs anhand seines Namens, auf Deutsch oder Englisch. Wählen Sie ein Ergebnis aus, um den Befehl auszuführen.",
+            "Geplante, aber noch nicht implementierte Befehle sind in den Menüs ausgegraut und erscheinen nicht in der Suche."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Tastenkürzel",
+          "body": [
+            "Das Tastenkürzel eines Befehls steht neben seinem Namen in den Menüs und in der Kurzinfo. Häufig verwendete Kürzel:",
+            {
+              "points": [
+                "Strg+O: Datei öffnen",
+                "Strg+S: speichern; Strg+Umschalt+S: speichern unter",
+                "Strg+P: drucken",
+                "Strg+Z und Strg+Y: rückgängig und wiederholen",
+                "Strg+F: im Dokument suchen",
+                "Strg+W: Tab schließen",
+                "Strg+Tab und Strg+Umschalt+Tab: nächster und vorheriger Tab",
+                "Strg+, (Komma): Einstellungen",
+                "F1: diese Hilfe",
+                "Esc: Vollbild oder Lesemodus verlassen oder das aktive Werkzeug ablegen"
+              ]
+            },
+            "Die Tastenkürzel der programmweiten Befehle (Tabs, Einstellungen, Hilfe) ändern Sie unter Einstellungen → Allgemein → Tastenkürzel. Die Kürzel der App-Befehle finden Sie im jeweiligen Einstellungsbereich. Klicken Sie auf das Kürzel eines Befehls und drücken Sie die neuen Tasten."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Diese Hilfe verwenden",
+          "body": [
+            "Die Hilfe richtet sich danach, von wo aus Sie sie öffnen. In einer App sehen Sie nur deren Handbuch und die Befehle des vorherigen Tabs. Auf der Startseite oder in den Einstellungen sehen Sie „Über“ (kurze Informationen zum Programm und jeder App) sowie das Handbuch des Programms. Hilfe → Über führt immer zu „Über“.",
+            "Das Inhaltsverzeichnis steht links. Über das Suchfeld darüber können Sie alle Themen anhand ihrer Titel und Texte durchsuchen.",
+            "Die Hilfe öffnet sich in einem eigenen Tab. So wechseln Sie zwischen ihr und Ihrer Arbeit hin und her; mit F1 holen Sie sie wieder nach vorn. Unter „Befehle des vorherigen Tabs“ sind alle Menüs des Tabs mit Befehlen, Tastenkürzeln und Erläuterungen aufgeführt. Öffnen Sie die Hilfe in dem Tab, zu dem Sie eine Frage haben."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Das Rechtsklickmenü im Windows-Explorer",
+          "body": [
+            "Einstellungen → Allgemein → Windows-Explorer → „Syntelab Creative im Kontextmenü von Dateien und Ordnern anzeigen“ fügt Einträge für unterstützte Dateien hinzu: „Mit PDF Organizer in PDF konvertieren“ und „Dateien in PDF Organizer zusammenführen“, jeweils mit dem Symbol von PDF Organizer, sowie „Syntelab Dev“, das sich seitlich mit Prüfsummen, Vergleichen und Hex-Ansicht öffnet.",
+            "Die Einträge werden nur für Ihr Benutzerkonto und ohne Administratorrechte hinzugefügt. Wenn Sie die Option ausschalten, werden sie entfernt. In Windows 11 finden Sie sie unter „Weitere Optionen anzeigen“. Sie starten immer das installierte Programm: Wurde es verschoben oder an anderer Stelle neu installiert, korrigiert es die Einträge beim Start.",
+            {
+              "note": "Wenn Sie bei mehreren Dateien „Dateien in PDF Organizer zusammenführen“ wählen, wird eine Zusammenstellung geöffnet. „Mit PDF Organizer in PDF konvertieren“ öffnet die Stapelverarbeitung mit diesen Dateien."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Datenschutz, Aktualisierungen und Kontakt",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Was online geht und was nie online geht",
+          "body": [
+            "Das Programm sammelt nichts: keine Nutzungsdaten, keine Dateinamen und keine automatisch gesendeten Absturzberichte.",
+            "Es geht nur in diesen Fällen online, die Sie jeweils selbst auslösen:",
+            {
+              "points": [
+                "Die Suche nach Aktualisierungen und Neuigkeiten (zwei kleine Dateien von syntelab.com), wenn Sie danach fragen oder, falls Sie es erlaubt haben, beim Programmstart; und das Herunterladen einer neuen Version, erst wenn Sie auf „Aktualisieren“ klicken.",
+                "PDF Organizer ruft die von Ihnen eingegebene Adresse auf, wenn Sie eine Webseite als PDF speichern. Scribe ruft sie ab, wenn Sie Text von einer Webseite übernehmen.",
+                "Ein Link in einem Dokument wird an Ihren Browser oder Ihr E-Mail-Programm übergeben, wenn Sie darauf klicken.",
+                "Feedback und Unterstützen öffnen in Ihrem Browser eine Seite auf syntelab.com."
+              ]
+            },
+            "Das Signieren mit einem Zertifikat und das Prüfen von Signaturen erfolgen auf Ihrem Computer, ohne Internetverbindung."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Aktualisierungen",
+          "body": [
+            "Einstellungen → Allgemein → Aktualisierungen → „Nach Aktualisierungen suchen“. Wenn eine neuere Version verfügbar ist, zeigt ein Fenster die Neuerungen an und bietet „Aktualisieren“ an.",
+            "„Aktualisieren“ lädt die neue Version herunter, prüft, ob sie wirklich von uns stammt (sie muss mit unserem Schlüssel signiert sein; alles andere wird abgelehnt), installiert sie über die vorhandene Version und startet das Programm neu. Ihre Einstellungen bleiben erhalten. Vor Ihrem Klick wird nichts heruntergeladen.",
+            "Kann die Aktualisierung auf diesem Weg nicht installiert werden (portable Version, Linux-Paket oder keine Netzwerkverbindung), öffnet „Herunterladen“ die Downloadseite im Browser. Installieren Sie die neue Version über die bestehende; Ihre Einstellungen bleiben erhalten.",
+            "„Beim Programmstart nach Aktualisierungen und Neuigkeiten suchen“ lässt sich ausschalten. In beiden Fällen werden keine Daten über Sie oder Ihren Computer gesendet."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Feedback und Unterstützung",
+          "body": [
+            "Hilfe → Feedback: Schlagen Sie eine neue App oder Funktion vor, wünschen Sie eine Änderung oder melden Sie ein Problem. Jede Nachricht wird gelesen.",
+            "Hilfe → Unterstützen: Das Programm ist kostenlos. Hier können Sie seine Weiterentwicklung unterstützen."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Über Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Über Syntelab Creative",
+          "body": [
+            "Syntelab Creative ist eine kostenlose App-Sammlung für die tägliche Arbeit mit Dokumenten, Text und Daten. Sie wird von Syntelab (syntelab.com) entwickelt. Zum Start gehören vier Apps: PDF Organizer, Scribe, Units und Dev. Weitere Apps werden sich ihnen im selben Fenster anschließen.",
+            {
+              "points": [
+                "Immer kostenlos.",
+                "Keine Datenerfassung: Es werden keine Informationen über Sie, Ihren Computer oder Ihre Arbeit gesammelt.",
+                "Keine Einschränkungen: keine Bezahlversion, keine gesperrten Funktionen und keine absichtlich gesetzten Limits. Grenzen entstehen nur durch den heutigen Stand der Technik und die Leistungsfähigkeit Ihres Computers."
+              ]
+            },
+            "Wir haben keine Finanzierung. Das Programm entsteht in unserer Freizeit, soweit sie es zulässt. Wir wollen Software in guter Qualität entwickeln, und das braucht Zeit und Geduld: von uns beim Erstellen und von Ihnen, während das Programm wächst.",
+            "Mit jeder Version wird es besser. Gemeldete Probleme werden behoben; Funktionswünsche fließen in die Planung der nächsten Versionen ein.",
+            {
+              "note": "Ihre Dokumente bleiben auf Ihrem Computer. Das Programm sammelt keine Daten über Sie oder Ihre Arbeit. Weitere Informationen finden Sie unter „Was online geht und was nie online geht“."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "So können Sie helfen",
+          "body": [
+            "Es gibt drei Möglichkeiten, und jede hilft:",
+            {
+              "points": [
+                "Teilen Sie uns Ihre Meinung mit: Hilfe → Feedback. Melden Sie ein Problem, schlagen Sie eine fehlende Funktion vor oder sagen Sie uns, was einfacher sein könnte. Wir lesen jede Nachricht.",
+                "Erzählen Sie anderen vom Programm und unserer Arbeit. Mehr Nutzerinnen und Nutzer bringen mehr Rückmeldungen. So erkennen wir, was wirklich wichtig ist. Es zeigt uns auch, dass unsere Arbeit geschätzt wird – ebenso wie die Beiträge aller, die jetzt oder künftig am Projekt mitwirken.",
+                "Unterstützen Sie das Projekt finanziell, wenn Sie können: Hilfe → Unterstützen Sie uns. Damit gewinnen wir Zeit für die Weiterentwicklung."
+              ]
+            },
+            "Nichts davon wird von Ihnen erwartet. Das Programm ist kostenlos und bleibt es für alle – vollständig und ohne Einschränkungen."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Womit das Programm entwickelt wird",
+          "body": [
+            "Das Programm baut auf der Arbeit vieler Menschen auf. Alle Apps verwenden gemeinsam:",
+            {
+              "points": [
+                "Das Fenster und alles Sichtbare: Tauri mit der Webansicht des jeweiligen Systems (WebView2 unter Windows, WebKitGTK unter Linux, WKWebView unter macOS); entwickelt mit TypeScript und React.",
+                "Die Komponente, die die Arbeit ausführt: entwickelt mit Rust.",
+                "Schriften und Symbole: Sansation, IBM Plex Sans und Font Awesome Free."
+              ]
+            },
+            "Die zusätzlichen Technologien jeder App werden auf ihrer eigenen Seite unter „Über“ genannt. Wir danken den Menschen hinter diesen Projekten."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Was noch nicht möglich ist",
+          "body": [
+            "Damit Sie es wissen, bevor Sie sich darauf verlassen:",
+            {
+              "points": [
+                "Einige Texte warten noch auf ihre Übersetzung. Bis dahin werden sie auf Englisch angezeigt, niemals als Code.",
+                "Das Rechtsklickmenü im Dateimanager gibt es vorerst nur im Windows-Explorer.",
+                "Mit Zertifikat signieren funktioniert vorerst nur unter Windows. Unterstützung für Linux und macOS ist für eine spätere Version geplant."
+              ]
+            },
+            "Weitere Grenzen der einzelnen Apps finden Sie auf ihrer jeweiligen Seite unter „Über“. Wenn Sie etwas einschränkt, sagen Sie uns über Hilfe → Feedback Bescheid. Das hilft uns bei der Planung."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Woran wir arbeiten",
+          "body": [
+            "Die vier vorhandenen Apps werden weiterentwickelt. Rückmeldungen und Wünsche über Hilfe → Feedback bestimmen mit, was zuerst kommt. Außerdem entstehen neue Apps. Start zeigt sie nur an, wenn Sie das möchten: Haken Sie sie im Menü „Ansicht“ an, damit sie dort als „Demnächst verfügbar“ erscheinen:",
+            {
+              "points": [
+                "Convert: Dateien zwischen Formaten umwandeln, darunter Office-Dokumente in PDF und zurück, ohne ein weiteres Programm installieren zu müssen. Bisher haben wir keine offene Technologie gefunden, die die gewünschte Qualität erreicht. Convert erscheint erst, wenn das Ergebnis überzeugt. Wo passende Werkzeuge fehlen, entwickeln wir sie selbst.",
+                "Pixel: Bildwerkzeuge, zum Beispiel zum Ändern der Größe und Komprimieren, Entfernen von Hintergründen, Anpassen von Farben und Erstellen von QR-Codes.",
+                "Metadata: Versteckte Daten in Fotos, Videos und Dokumenten anzeigen und entfernen, bevor Sie sie weitergeben.",
+                "Wizard: Zufallsauswahl und Generatoren – ein Glücksrad, Würfel, Münzwurf oder Namen aus einer Liste."
+              ]
+            },
+            "Auch die vorhandenen Apps werden um die Funktionen erweitert, die auf ihren Seiten unter „Was noch nicht möglich ist“ aufgeführt sind. Dazu gehören etwa vertrauenswürdige Zeitstempel für Signaturen, Signieren mit Zertifikat unter Linux und macOS sowie eine Rechtschreibprüfung in Scribe.",
+            "Weitere Installationsmöglichkeiten sind ebenfalls geplant: Microsoft Store und winget unter Windows sowie Flathub und Snap unter Linux.",
+            {
+              "note": "Neuigkeiten zu jeder Version finden Sie über die Neuigkeiten-Schaltfläche in der Seitenleiste. Unter Einstellungen → Allgemein → Aktualisierungen können Sie nach einer neueren Version suchen."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Paghahanap ng daan",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Ang unang pahina",
+          "body": [
+            "Bubukas ang isang Dev tab sa unang pahina, kung nasaan ang lahat ng tool, na nakapangkat gaya ng sa mga menu: I-encode, Data, Gumawa, Suriin, Network.",
+            {
+              "points": [
+                "Mag-type sa \"Maghanap ng tool\" para paikliin ang listahan.",
+                "Pinapanatili ng pin sa isang tool ang tool sa itaas, sa ilalim ng Naka-pin.",
+                "Bubukas ang tool sa parehong tab; ibinabalik ka ng File → Lahat ng tool sa unang pahina. Sa Mga Setting, maaari mong ipabukas ang bawat tool sa sarili nitong tab, at ipabukas ang bagong tab sa huling ginamit na tool."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "I-paste ang kahit ano",
+          "body": [
+            "Tinatanggap ng kahon sa itaas ng unang pahina ang anumang i-paste mo at sinasabi kung ano ang hitsura nito: token, sertipiko, JSON, mga UUID, mga timestamp, mga iskedyul ng cron, mga URL, XML o HTML, SQL, Base64, checksum, talahanayan, YAML.",
+            "Sa ilalim ng bawat hula ay ang mga tool na gumagana sa ganoong bagay, nauuna ang pinakaangkop. Mag-click ng isa: bubukas ito na nasa loob na ang teksto at napatakbo na.",
+            {
+              "note": "Nananatili sa kahon ang i-paste mo hanggang sa linisin mo ito o isara ang tab. Hindi ito kailanman isinusulat sa disk."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Ayos ng isang tool",
+          "body": [
+            "Karamihan sa mga tool ay may parehong balangkas: ang mga opsyon sa isang linya sa itaas, ang input sa isang gilid, ang output sa kabila, at isang linya sa ibaba na nagsasabi kung ano ang nangyari.",
+            {
+              "points": [
+                "Muling ginagawa ang resulta tuwing nagbabago ang input o isang opsyon, at ipinapakita sa output; sinasabi ito ng “Kusang tumatakbo” sa linya ng mga opsyon. Ang tekstong masyadong mahaba para patakbuhin sa bawat pindot ng key, o file na mas malaki sa 128 MB, lamang ang naghihintay sa button na Patakbuhin, na lumalabas sa ganoong pagkakataon. Pinapatakbo ng Ctrl+Enter ang tool anumang oras.",
+                "Ang resultang hindi teksto (larawang na-decode mula sa Base64, gzip) ay ipinapakita bilang silip: ang larawan kung ano ito, ang iba pa ayon sa uri, laki at mga unang byte nito. Kinokopya ito noon ng Kopyahin bilang Base64, at maaaring kopyahin ang larawan bilang larawan. Ganoon din ang input na file na hindi teksto.",
+                "Nasa itaas ng input ang Magbukas ng file, I-paste at Linisin; nasa itaas ng output ang Kopyahin at I-save sa isang file. Maaari ring ibagsak ang isang file sa input.",
+                "Sinasabi sa mga salita kung ano ang mali sa input, kasama ang linya at hanay nito, at minamarkahan ito sa editor.",
+                "Sa menu na Tingnan, mailalagay ang dalawang pane nang magkatabi o ang isa sa ilalim ng isa, maipapakita ang mga numero ng linya at maibabalot ang mahahabang linya; maaaring hilahin ang linya sa pagitan ng mga pane.",
+                "Natatandaan para sa susunod na pagkakataon ang mga opsyong pinili mo. Hindi ang tina-type mo."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Sunugin, at kung ano ang itinatabi",
+          "body": [
+            "Ang Sunugin, sa kanang ibaba ng bawat tool, ay nagpapawalang-laman dito agad: ang input, ang resulta, anumang na-type sa mga kahon nito, at ang maaaring i-undo ng mga editor nito.",
+            "Itinatabi lamang ng Dev ang mga setting nito, ang mga tool na in-pin mo, ang pangalan ng huling ginamit na tool at ang mga opsyon ng bawat tool. Walang anumang tina-type, ipine-paste, binubuksan o ginagawa mo sa isang tool ang isinusulat sa disk, sa isang log o sa listahan ng mga kamakailang bagay. Lalo na ang mga lihim: ang mga key, passphrase, token at ang mga header ng isang request ay nasa tab lamang at wala nang iba pang lugar.",
+            "May isang bagay na naghihintay sa disk nang ilang sandali: ang resulta ng isang file, at ang resultang hindi teksto, ay isinusulat sa sariling folder ng programa para maipakita at pagkatapos ay ma-save. Binubura ang bawat isa kapag may ibang resultang pumalit dito, kapag sinunog o isinara mo ang tool, at sa anumang kaso kapag nagsimula muli ang Dev."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Mga file ng anumang laki",
+          "body": [
+            "Walang limitasyon sa laki ng file. Ang file na sapat ang liit para maipakita (hanggang 16 MB) ay inilalagay sa editor. Ang mas malaki, o ang hindi teksto, ay nananatili sa disk: ipinapakita ang simula nito (o isang silip), binabasa ito ng tool mula sa kinalalagyan nito, at ipinapakita ang resulta nito gaya ng sa isang teksto. Kinokopya naman ng I-save sa isang file ang resulta sa lugar na pipiliin mo.",
+            {
+              "points": [
+                "Ang mahabang gawain ay nagpapakita ng card kung gaano na ito kalayo at ng button na Itigil.",
+                "Ang file na teksto sa ibang encoding maliban sa UTF-8 (UTF-16, Windows-1252 at iba pa) ay binabasa bilang teksto kapag sapat ang liit nito para maipakita, at sinasabi ang encoding. UTF-8 ang sine-save mo mula sa Dev.",
+                "Binubuksan ang file na ibinagsak sa isang tool gaya ng sa Magbukas ng file. Kapag hindi malaman ng window kung nasaan ito, tinatanggap ito hanggang 16 MB, na parang ipinaste."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Maraming file at buong folder",
+          "body": [
+            "Kung may \"Iproseso ang: Teksto / Mga file\" ang isang tool, pinapatakbo ito ng Mga file sa maraming file nang sabay-sabay.",
+            {
+              "steps": [
+                "Magdagdag ng mga file, o isang folder (kasama ang mga folder sa ilalim nito, kung hahayaan mong naka-on iyon).",
+                "Binabasa nang isang beses ang bawat file habang idinaragdag at sinasabi kung tinatanggap ito ng tool.",
+                "Piliin kung saan pupunta ang mga resulta: sa tabi ng bawat file sa bagong pangalan, sa isang folder (pinapanatili ang mga folder), o papalitan ang mga file mismo, na itatanong sa iyo nang isa pang beses. Maaari ring ipakita lamang ng Hash ang mga resulta sa listahan.",
+                "I-click ang isang file sa listahan para makita ang resulta nito lamang sa ilalim ng mga pagpipilian, bago may maisulat na anuman.",
+                "Patakbuhin. Hindi napapahinto ng isang maling file ang iba; sinasabi ng bawat isa kung ano ang kinalabasan nito."
+              ]
+            },
+            {
+              "note": "Hindi kailanman napupunta ang resulta sa isang file na naroon na maliban kung hihilingin mo iyon."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Ang right-click menu ng Windows Explorer",
+          "body": [
+            "I-on ito sa Mga Setting ng programa, sa ilalim ng Windows Explorer. Nakatipon ang lahat sa ilalim ng iisang linya, \"Syntelab Creative\"; sa Windows 11, nasa ilalim ito ng \"Show more options\".",
+            {
+              "points": [
+                "Buksan sa Syntelab Dev: sa mga uri ng file na binabasa ng isang tool (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz at iba pa). Bubukas ang file sa tool para sa uri nito.",
+                "Mga Checksum: sa anumang file o folder. Inililista ang mga digest, bawat isa sa tabi ng file nito, at walang isinusulat.",
+                "Tingnan bilang hex: sa anumang file.",
+                "Ihambing: napupunta ang dalawang file sa dalawang panig ng Diff; ang dalawang folder sa paghahambing ng mga folder."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I-encode",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Ginagawang Base64 ang mga byte at pabalik. Tumatanggap ng anumang file ang pag-encode; ibinabalik ng pag-decode ang mga byte, na ipinapakita kapag teksto ang mga ito at sine-save sa isang file kapag hindi.",
+            {
+              "points": [
+                "Alpabeto: ang karaniwan, o ang para sa mga URL (- at _).",
+                "Punan ng =, at mga linya na may 64, 76 o anumang bilang ng mga titik.",
+                "Tinatanggap ng pag-decode ang dalawang alpabeto, may pampuno man o wala, at sinasabi kung saan may maling titik."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "I-encode / i-decode ang URL",
+          "body": [
+            "Percent-encoding, gaya ng pagsulat ng mga browser: bahagi ng isang address (naka-encode ang lahat ng hindi payak na titik), isang buong address (pinapanatili ang sarili nitong mga tanda), o isang form (+ para sa espasyo).",
+            "Sinasabi ng pag-decode kung saan hindi sinusundan ang % ng dalawang hexadecimal na digit."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Mga HTML entity",
+          "body": [
+            "Isinusulat bilang mga entity ang mga tandang nakalaan sa HTML at XML (&, <, >, mga panipi), at binabasa pabalik ang mga entity: ayon sa pangalan, sa decimal na numero o sa hexadecimal na numero. Ang mga pangalan ay ang sa pamantayan ng HTML.",
+            "Isinusulat din ng \"Pati ang bawat titik na hindi ASCII\" bilang mga entity ang mga titik na may tuldik at ang iba pang alpabeto."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Pang-decode ng JWT",
+          "body": [
+            "Hinihimay ang isang JSON Web Token: ang header at payload nito bilang JSON, at ang mga claim nito sa mga salita (issuer, subject, audience, kailan ito mag-e-expire, na may \"nag-expire na\" o \"hindi pa nag-e-expire\").",
+            "Ibigay ang lihim para suriin ang lagdang ginawa gamit ang isang pinagsasaluhang lihim (HS256, HS384, HS512). Hindi sinusuri ang mga lagdang ginawa gamit ang isang pribadong key (RS, ES, PS).",
+            {
+              "note": "Nananatili sa tab ang token at ang lihim: walang ipinapadala kahit saan para i-decode ang isang token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "I-escape / i-unescape",
+          "body": [
+            "Isinusulat ang isang teksto bilang string ng isang wika (JSON, JavaScript, C, C++, Java at iba pa) na naka-escape ang mga panipi, line break at iba pang tanda nito, at binabasa pabalik ang ganoong string."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Kino-compress at dine-decompress ang gzip, isang file ng anumang laki habang binabasa ito. Ang antas ay mula sa pinakamabilis hanggang sa pinakamaliit; maaaring ibigay bilang Base64 ang resulta ng isang teksto."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Mga base ng numero",
+          "body": [
+            "Isinasaad ang mga buong numero, isa sa bawat linya, sa binary, octal, decimal at hexadecimal, at sa isa pang base na pipiliin mo, hanggang 36. Walang pinakamalaking laki ang isang numero.",
+            {
+              "points": [
+                "Nalalaman ang base ng isang numero mula sa pagkakasulat nito: 0x para sa hexadecimal, 0b para sa binary, 0o para sa octal, mga titik para sa hexadecimal, decimal kung hindi. O piliin ang base na pagbabasahan ng lahat.",
+                "Nilalaktawan ang mga espasyo, underscore at kudlit sa pagitan ng mga digit: 1_000_000.",
+                "Ibinibigay din ang negatibong numero kung paano ito itinatago ng mga computer (two’s complement), sa pinakamaliit sa 8, 16, 32, 64 bit at iba pa na kasya ito."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Pang-format ng JSON",
+          "body": [
+            "Ina-format, mini-minify at vina-validate ang JSON, at ipinapakita ito bilang puno. Binabasa bilang stream ang dokumento ng anumang laki.",
+            {
+              "points": [
+                "Indent na 2 o 4 na espasyo, isang tab, o anumang bilang ng espasyo.",
+                "Higit pang mga opsyon: ayusin ang mga key, maiikling listahan sa isang linya, ang espasyo pagkatapos ng tutuldok, kung paano nagtatapos ang mga linya, isang line break sa dulo, mga titik na hindi ASCII bilang \\uXXXX.",
+                "Tumatanggap ang Maluwag na pagbasa ng mga komento (// at /* */) at kuwit sa dulo, at nagsusulat ng mahigpit na JSON.",
+                "Mga pagbabago: alisin ang mga null, alisin ang mga walang lamang value at iba pa, sa isang daanan.",
+                "Binubuksan ang puno nang isang antas sa bawat pagkakataon at naghahanap ito ng teksto sa mga key at value."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Nagpapatakbo ng isang JSONPath query (RFC 9535) sa isang dokumento: $.store.book[?@.price < 10].title. Ang resulta ay ang mga value na nahanap, ang mga path papunta sa mga ito, o pareho.",
+            "Sinasabi ang maling query kasama ang lugar kung saan ito nagkamali."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Pang-validate ng JSON Schema",
+          "body": [
+            "Sinusuri ang isang dokumento laban sa isang JSON Schema (mga draft 4 hanggang 2020-12). Inilalagay ang schema sa pane sa ilalim ng input. Inililista ang bawat bagay na hindi tugma kasama ang kinalalagyan nito at ang panuntunang nilalabag nito.",
+            "Sa maraming file, ang bawat isa ay sinusuri laban sa parehong schema. Ang $ref sa ibang file o sa isang address ay hindi sinusundan."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Panggawa ng JSON Schema at JSON → TypeScript",
+          "body": [
+            "Mula sa isang halimbawa ng JSON, isinusulat ng Panggawa ng JSON Schema ang JSON Schema na tugma rito, at isinusulat ng JSON → TypeScript ang mga deklarasyon ng type nito (mga interface o type, naka-export o hindi, readonly o hindi, sa ilalim ng pangalang ibibigay mo)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Ginagawang JSON ang YAML at YAML ang JSON. Binabasa ang YAML ayon sa core schema nito, na sinusundan ang mga anchor at merge; sinasabi ang anumang mali kasama ang kinalalagyan nito."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Ginagawang JSON ang isang talahanayan at pabalik. Nalalaman ang panghiwalay mula sa unang hilera, o pinipili (kuwit, tuldok-kuwit, tab, pipe); maaaring header ang unang hilera; maaaring makilala ang mga numero at true / false.",
+            "Ipinapakita ng \"Talahanayan\" ang CSV sa mga hilera at hanay, isang file ng anumang laki."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Pang-format ng XML / HTML",
+          "body": [
+            "Ina-format, mini-minify at sinusuri ang XML at HTML. Mahigpit na binabasa ang XML: sinasabi kasama ang kinalalagyan nito ang tag na hindi naisara. Binabasa ang HTML nang mapagpaumanhin gaya ng mga browser."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Pang-format ng SQL",
+          "body": [
+            "Inaayos ang isang statement, isang clause bawat linya, o inilalagay ito sa isang linya; ang mga keyword ay sa malalaking titik, sa maliliit na titik o ayon sa pagkakasulat. Hindi ito humihingi ng dialect at hindi sinusuri kung ano ang ibig sabihin ng isang statement."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Inihahambing ang dalawang teksto linya bawat linya, ang dalawang JSON na dokumento ayon sa sinasabi nila, o ang dalawang folder file bawat file. Ang una ay inilalagay sa input, ang pangalawa sa pane sa ilalim nito.",
+            {
+              "points": [
+                "Minamarkahan ng Magkatabi ang mga salitang nagbago sa loob ng isang linya; ang Pinag-isa (unified) ay isang patch gaya ng isinusulat ng diff -u.",
+                "Huwag pansinin ang laki ng titik, mga espasyo, mga bakanteng linya, mga digit o bantas.",
+                "Para sa JSON, hindi pagkakaiba ang pagkakasunod-sunod ng mga key at ang pagkakaayos; maaaring maging JSON Patch (RFC 6902) ang resulta.",
+                "Mga folder: aling mga file ang nasa isa lamang, alin ang magkapareho, alin ang magkaiba; binubuksan ng Ihambing sa isang hilera ang pares bilang mga teksto."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Pantingin ng Markdown",
+          "body": [
+            "Ipinapakita ang Markdown kung ano ang magiging hitsura nito, at ibinibigay ang HTML nito para kopyahin o i-save: CommonMark na may mga talahanayan, strikethrough, listahan ng gawain at footnote.",
+            {
+              "points": [
+                "Ang HTML na na-type sa loob ng Markdown ay ipinapakita bilang teksto, hindi pinapatakbo.",
+                "Hindi kinukuha ang larawang kukunin sana mula sa network: ang paglalarawan at address nito ang ipinapakita sa lugar nito. Ipinapakita ang larawang nakapaloob sa teksto (data:).",
+                "Bubukas sa browser ng system ang link na iki-click mo."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gumawa",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Gumagawa ng mga UUID ng mga bersyong 1, 3, 4, 5, 6 at 7 (RFC 9562), gaano man karami ang hilingin mo, nakasulat na may mga gitling, payak, bilang URN o sa loob ng mga brace. Sinasabi ng \"Himayin\" ang bersyon ng bawat UUID at ang oras o pangalan sa loob nito."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 at SHA-512 ng isang teksto o file, ilan nang sabay, nakasulat bilang hex o Base64. Hina-hash ang file ng anumang laki habang binabasa ito.",
+            {
+              "points": [
+                "Suriin laban sa: i-paste ang isang checksum, o ang linya ng isang .sha256 file; sinasabi kung tugma ito o hindi.",
+                "Key ng HMAC: nagiging HMAC ang mga digest gamit ang key na iyon.",
+                "Bawat linya nang hiwalay: isang digest para sa bawat linya ng teksto.",
+                "Mga file: inililista ang mga digest sa tabi ng kanilang mga file; ibinibigay ng Kopyahin lahat ang mga ito gaya ng pagsulat ng sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Mga password at lihim",
+          "body": [
+            "Gumagawa ng mga password mula sa mga uri ng titik na pipiliin mo, mga passphrase na mga salita, at mga random na byte bilang hex o Base64, mula sa mga random na numero ng operating system. Sinasabi ng bawat isa kung ilang bit ng entropy ang mayroon ito. Kapag may nagawa na, ginagawa itong muli kapag binago ang isang opsyon.",
+            "Ang passphrase ay mga salitang kinuha mula sa mahabang listahan ng salita ng Electronic Frontier Foundation (7776 na salitang Ingles), na pare-pareho ang posibilidad: humigit-kumulang 77 bit ang anim na salita."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Mga key at sertipiko",
+          "body": [
+            "Limang bagay, na pinipili sa itaas:",
+            {
+              "points": [
+                "Bagong key: RSA, EC P-256 / P-384 / P-521 o Ed25519, ibinibigay sa bawat anyong tinatanggap ng mga programa (PKCS #8, ang lumang anyo, OpenSSH; ang pampublikong key bilang PEM at bilang linya para sa authorized_keys), naka-lock gamit ang passphrase kung magbibigay ka nito.",
+                "Request ng sertipiko: isang CSR para sa bagong key o sa isang i-paste mo, kasama ang paksa (subject) nito at ang iba pa nitong mga pangalan (SAN).",
+                "Sertipikong nilagdaan ng sarili: pareho, nilagdaan ng sarili nitong key, para sa ilang araw; ginagawa itong sarili mong awtoridad ng \"Maaari itong lumagda ng ibang mga sertipiko\".",
+                "Lagdaan gamit ang sarili mong CA: i-paste ang isang request, ang sertipiko ng iyong awtoridad at ang key nito; makukuha mo ang nilagdaang sertipiko at ang awtoridad kasunod nito.",
+                "Basahin at i-convert: i-paste o buksan ang kahit ano (PEM, DER, isang OpenSSH key, isang .pfx o .p12 file, naka-lock man o hindi). Sinasabi nito kung ano ang nahanap nito at kung ang key ay ang key ng sertipiko, at isinusulat ang bawat bagay sa iba pang mga anyo. Maaaring i-save nang magkasama ang isang key at ang sertipiko nito bilang .pfx."
+              ]
+            },
+            {
+              "note": "Ginagawa ang lahat sa computer na ito. Nasa tab ang key hanggang Sunugin, at wala sa ibang lugar maliban kung i-save mo ito."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suriin",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Pansubok ng regex",
+          "body": [
+            "Sinusubukan ang isang regular expression ng JavaScript sa isang teksto: ang mga tugma kasama ang kanilang mga grupo at posisyon, o ang teksto na napalitan ang mga tugma. Ang mga flag ay g, i, m, s, u, y.",
+            "Tumatakbo ang pattern nang hiwalay sa window, at itinitigil ang tumatakbo nang higit sa 20 segundo."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Paliwanag sa cron",
+          "body": [
+            "Sinasabi sa mga salita kung ano ang ibig sabihin ng isang iskedyul at kailan ito tumatakbo: crontab (limang field, anim kasama ang mga segundo, pito kasama ang taon), Quartz, AWS EventBridge cron() at rate(), at systemd OnCalendar. Isang iskedyul bawat linya.",
+            {
+              "points": [
+                "Ang mga susunod na takbo, at ang mga nakaraan kapag hiniling, sa time zone na pipiliin mo.",
+                "Binibilang ang mga araw ng linggo mula 0 para sa Linggo, o mula 1 gaya ng pagbilang ng Quartz, ayon sa pipiliin mo. Ang linyang may segundo na may taon din, L, W o # ay sa Quartz, at kusang binabasa sa paraan ng Quartz.",
+                "Ang parehong iskedyul sa iba pang mga anyo, para kopyahin o idagdag sa input.",
+                "Gumagawa ang tagabuo ng iskedyul sa pagpili ng bawat field; inilalagay ng \"Baguhin sa tagabuo\" doon ang isang na-type na iskedyul."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix timestamp",
+          "body": [
+            "Nagbabasa ng mga sandali, isa bawat linya: mga segundo, millisecond, microsecond o nanosecond mula 1970, o petsang nakasulat sa mga karaniwang paraan (ISO 8601, gaya ng pagsulat ng mail at HTTP, gaya ng pagsulat ng Git). Sinasabi ang bawat isa sa time zone na pipiliin mo, sa UTC, at bilang bawat uri ng timestamp."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Pang-parse ng URL",
+          "body": [
+            "Hinihimay ang isang URL gaya ng pagbasa ng mga browser: scheme, user, host (kasama ang anyong Unicode nito kapag nakasulat sa punycode), port, path, bawat parameter ng query na naka-decode, at ang fragment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Pang-decode ng sertipiko",
+          "body": [
+            "Nagbabasa ng mga X.509 na sertipiko mula sa PEM o DER at sinasabi ang lahat ng nasa mga ito: paksa (subject), naglabas (issuer), bisa, ang mga pangalang para sa kanila ito, ang key nito, ang mga extension nito at ang mga fingerprint nito.",
+            "Nagbabasa ito; hindi nito hinuhusgahan kung dapat pagkatiwalaan ang isang sertipiko. Para sa sertipikong ipinapakita ng isang site, at kung pinagkakatiwalaan ito ng computer na ito, gamitin ang Network → Sertipiko ng isang site."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Pantingin ng hex",
+          "body": [
+            "Ipinapakita ang mga byte ng isang file ng anumang laki, o ng isang ipinaste na teksto: ang posisyon ng bawat hilera, ang mga byte, at ang parehong mga byte bilang mga titik.",
+            {
+              "points": [
+                "Pumunta sa posisyong nakasulat bilang 0x1F4, 1F4h o 500.",
+                "Maghanap ng mga byte (DE AD BE EF) o ng isang teksto (UTF-8, o UTF-16 sa alinmang pagkakasunod), pasulong at pabalik.",
+                "Mag-click ng isang byte: ipinapakita sa gilid kung ano ang naroon bilang mga numero ng bawat laki, sa alinmang pagkakasunod ng byte, bilang isang character at bilang isang oras.",
+                "Pumili sa pamamagitan ng paghila, Shift o ng mga arrow key; kopyahin ang napili bilang hex, bilang code, bilang Base64 o bilang teksto, o i-save ito sa isang file."
+              ]
+            },
+            {
+              "note": "Tumitingin lamang ito: walang binabago sa file."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Network",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Kung saan pumupunta ang mga network tool",
+          "body": [
+            "Ang apat na tool na ito lamang ang bahagi ng Dev na kumokonekta sa internet, at pumupunta sila kung saan mo sila itinuturo.",
+            {
+              "points": [
+                "Ang address lamang na tina-type mo ang kinokontak, at kapag pinindot mo lamang ang button. Hindi kailanman sa background.",
+                "Ang ipinapadala ay ang isinulat mo. Ang tanging idinaragdag sa isang request ay isang User-Agent na pareho para sa lahat (\"Syntelab Creative\"), maliban kung magbibigay ka ng sarili mo.",
+                "Walang cookie na itinatabi, walang ipinapadalang anuman tungkol sa iyo o sa computer, at walang itinatabing anumang na-type."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP client",
+          "body": [
+            "Nagpapadala ng isang request na isinulat nang mano-mano: method, address, mga header (isa bawat linya: Pangalan: halaga) at isang nilalaman (body), na na-type o kinuha mula sa isang file ng anumang laki.",
+            {
+              "points": [
+                "Ang sagot: ang numero nito, gaano katagal ito (sa kabuuan, at hanggang sa unang byte), ang laki nito, ang mga header nito, at ang nilalaman nito, may kulay ayon sa uri nito at inaayos kapag JSON. Ang nilalamang hindi teksto (isang larawan, isang PDF) ay ipinapakita kung ano ito, at sine-save kung paano ito dumating.",
+                "Sundin ang mga redirect, o tingnan ang unang sagot kung ano ito. Inililista ang mga address na pinagpasahan ng request.",
+                "Suriin ang sertipiko laban sa pinagkakatiwalaan ng computer na ito; i-off lamang ito para sa sarili mong mga server.",
+                "Isinusulat ng \"Ipadala, sagot sa isang file\" ang nilalaman ng anumang laki nang direkta sa disk, na may takbo ng progreso at Itigil.",
+                "Ibinibigay ng \"Kopyahin bilang curl\" ang parehong request bilang isang command."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Paghahanap sa DNS",
+          "body": [
+            "Itinatanong sa isang name server ang mga record ng isang pangalan: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, ilan nang sabay. Ibinibigay ng isang address ang pangalan nito (PTR).",
+            "Pupunta ang tanong sa name server na nakatakdang gamitin ng computer, sa isang pampubliko (1.1.1.1, 8.8.8.8, 9.9.9.9), sa isang resolver sa HTTPS (Cloudflare, Google), o sa isang tina-type mo."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Pagsuri ng port",
+          "body": [
+            "Sinasabi kung tumatanggap ng mga TCP na koneksyon ang mga port ng isang host: isa, ilan, o isang saklaw hanggang sa lahat ng 65 535 (22, 80, 443, 8000-8100). Ang bawat isa ay bukas, sarado, o walang sagot sa loob ng oras na ibinigay mo.",
+            {
+              "note": "Subukan lamang ang mga host na sa iyo, o na pinapayagan kang subukan."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Sertipiko ng isang site",
+          "body": [
+            "Ipinapakita ang mga sertipikong ibinibigay ng isang site kapag gumagawa ng secure na koneksyon: para kanino ang mga ito, sino ang naglagda sa mga ito, ilang araw pa ang natitira, kung pinagkakatiwalaan ang mga ito ng computer na ito at kung bakit hindi, ang bersyon ng TLS at ang cipher. Handshake lamang ang ginagawa: walang request na ipinapadala.",
+            {
+              "points": [
+                "Isulat ang example.com, example.com:8443 o isang web address.",
+                "Nagsisimula ang mga mail server at FTP nang hindi naka-encrypt at hinihilingang lumipat sa TLS (STARTTLS): pinipili ayon sa port (25, 587, 143, 110, 21) o nang mano-mano.",
+                "Ipinapakita ng \"Lahat\" ang lahat ng sinasabi ng mga sertipiko; ibinibigay ng \"PEM\" ang mga ito para kopyahin o i-save."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mga Setting",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Ang mga setting ng Dev",
+          "body": [
+            "Binubuksan ng File → Buksan ang Mga Setting ang Mga Setting ng programa sa bahagi ng Dev.",
+            {
+              "points": [
+                "Buksan ang bawat tool sa sarili nitong tab, o sa tab kung saan ito pinili.",
+                "Buksan ang bagong tab sa huling tool na ginamit, o sa unang pahina.",
+                "Ibalik ang mga opsyon ng bawat tool, at ang mga pin, sa kung paano ipinamahagi ng programa."
+              ]
+            },
+            "Ang right-click menu ng Windows Explorer, ang wika, ang tema at ang mga key ay nasa Mga Setting ng buong programa."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tungkol sa Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tungkol sa Dev",
+          "body": [
+            "Ang Dev ay ang app ng Syntelab Creative para sa mga developer: mga tool na nag-e-encode at nagde-decode, nag-a-format at nagsusuri, nagpapalit ng isang anyo ng data tungo sa iba, at humihimay sa mahirap basahin sa kasalukuyang anyo nito.",
+            "Ginagawa ang lahat sa computer na ito. Walang anumang tina-type, ipine-paste o binubuksan mo sa isang tool ang itinatabi o ipinapadala kahit saan. Walang limitasyon sa laki o bilang ng mga file: ang mga hangganan ay ang memory at disk ng computer.",
+            "Bago pa ito at binubuo pa. Kung saan ito kulang para sa iyong trabaho, sabihin sa amin sa Tulong → Puna."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Kung ano ang ginamit sa pagbuo ng Dev",
+          "body": [
+            {
+              "points": [
+                "Ang mga editor: CodeMirror, https://codemirror.net . Lisensyang MIT. Copyright (C) 2018-2021 nina Marijn Haverbeke at iba pa.",
+                "Pagbasa at pagkulay ng JSON sa mga editor: @codemirror/lang-json, https://github.com/codemirror/lang-json , kasama ang @codemirror/language at @lezer/highlight. Lisensyang MIT. Copyright (C) 2018-2021 nina Marijn Haverbeke at iba pa.",
+                "Pagbasa at pagkulay ng YAML, XML, HTML at SQL sa mga editor: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (kasama ang @codemirror/lang-css at @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Lisensyang MIT. Copyright (C) 2018-2024 nina Marijn Haverbeke at iba pa.",
+                "Pagsuri ng dokumento laban sa isang JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Lisensyang MIT. Copyright (c) 2020-2026 Dmitry Dygalo. Binuo ito nang wala ang bahagi nito para sa network: hindi kailanman kumukuha ng schema ang Dev.",
+                "Ang mga pattern ng JSONPath (match at search): regex, https://github.com/rust-lang/regex . Lisensyang MIT o Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "Pagbasa ng YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Lisensyang MIT o Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Ang Dev mismo ang nagsusulat ng YAML.",
+                "Paghahambing ng dalawang teksto (Diff): similar, https://github.com/mitsuhiko/similar . Lisensyang Apache-2.0. Mga may-akda: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Lisensyang MIT o Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Ang mga digest ng tool na Hash at ng lagda ng isang token: sha2, sha1 at md-5, https://github.com/RustCrypto/hashes . Lisensyang MIT o Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, at ang mga developer ng RustCrypto.",
+                "Mga petsa, oras at time zone (Unix timestamp, Paliwanag sa cron): jiff, https://github.com/BurntSushi/jiff , kasama ang mga time zone ng IANA database. Lisensyang Unlicense o MIT. Copyright (c) 2015 Andrew Gallant.",
+                "Paghimay ng URL: url at idna, https://github.com/servo/rust-url . Lisensyang MIT o Apache-2.0. Copyright (c) 2013-2025 The rust-url developers.",
+                "Pagbasa ng mga X.509 na sertipiko: x509-parser, https://github.com/rusticata/x509-parser . Lisensyang MIT o Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "Pinapatakbo ng Pansubok ng regex ang mga regular expression ng JavaScript, sa engine ng WebView na ginagamit ng programa sa pagguhit (Microsoft Edge WebView2 sa Windows); walang idinagdag na library para rito.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Lisensyang MIT o Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton and contributors.",
+                "Mga UUID: uuid, https://github.com/uuid-rs/uuid . Lisensyang Apache-2.0 o MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Mga random na byte para sa mga password, lihim at UUID, mula sa operating system: getrandom, https://github.com/rust-random/getrandom . Lisensyang MIT o Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Mga RSA key at lagda: rsa, https://github.com/RustCrypto/RSA , kasama ang num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Lisensyang MIT o Apache-2.0. Copyright (c) RustCrypto Developers and dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Mga key at lagda ng mga NIST curve (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , kasama ang ecdsa, elliptic-curve at crypto-bigint na kailangan nila. Lisensyang Apache-2.0 o MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Mga Ed25519 key at lagda: ed25519-dalek at curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Lisensyang BSD 3-Clause. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft and Henry de Valence. All rights reserved.",
+                "Ang mga anyong pinagsusulatan ng mga key, request at sertipiko (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER at PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Lisensyang Apache-2.0 o MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Mga file ng OpenSSH key: ssh-key, https://github.com/RustCrypto/SSH , kasama ang bcrypt-pbkdf, aes, ctr, chacha20 at ang iba pang cipher at hash ng RustCrypto na kailangan sa pag-lock ng key ( https://github.com/RustCrypto ). Lisensyang Apache-2.0 o MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Mga PKCS #12 na file (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , kasama ang pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 at scrypt ng RustCrypto na kailangan nito. Lisensyang MIT o Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Ang mga random number na pinagmumulan ng mga key, na kinuha mula sa operating system: rand_core, https://github.com/rust-random/rand . Lisensyang MIT o Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "Ang HTTP client: ureq, https://github.com/algesten/ureq . Lisensyang MIT o Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Mga secure na koneksyon (TLS) ng HTTP client at ng \"Sertipiko ng isang site\": rustls, https://github.com/rustls/rustls , lisensyang Apache-2.0, ISC o MIT, Copyright (c) 2016 Joseph Birr-Pixton; kasama ang rustls-webpki, https://github.com/rustls/webpki , lisensyang ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , mga lisensyang Apache-2.0 at ISC; webpki-roots, https://github.com/rustls/webpki-roots , lisensyang CDLA-Permissive-2.0.",
+                "Kung pinagkakatiwalaan ng computer na ito ang isang sertipiko: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Lisensyang MIT o Apache-2.0. Copyright (c) 2022 1Password.",
+                "Pagbasa ng Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Lisensyang MIT. Copyright 2015 Google Inc. All rights reserved.",
+                "Pagbasa ng mga file na nakasulat sa ibang encoding maliban sa UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , lisensyang Apache-2.0 o MIT (na may BSD-3-Clause para sa data nito), Copyright Mozilla Foundation; at chardetng, https://github.com/hsivonen/chardetng , lisensyang Apache-2.0 o MIT, Copyright Mozilla Foundation.",
+                "Ang mga salita ng mga passphrase: ang EFF Large Wordlist for Passphrases, https://www.eff.org/dice , ng Electronic Frontier Foundation, ginagamit sa ilalim ng lisensyang Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Ginagamit ang listahan nang walang pagbabago.",
+                "Pagbubukas ng mga key na naka-lock sa lumang paraan ng OpenSSL: aes, cbc at des ng RustCrypto, https://github.com/RustCrypto . Lisensyang MIT o Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "Isinulat para sa Dev, nang walang library: ang Paghahanap sa DNS (isinusulat ang mga tanong at binabasa ang mga sagot ayon sa RFC 1035) at ang Pagsuri ng port.",
+                "Isinulat para sa Dev, nang walang library: pagbasa at pagsulat ng JSON bilang stream, JSONPath (RFC 9535), Base64, percent-encoding, mga HTML character reference (ang mga pangalan ay ang sa pamantayan ng HTML, https://html.spec.whatwg.org ), pag-escape ng string, pagbasa ng mga JSON Web Token, pagsulat ng YAML, CSV sa magkabilang direksyon, pagbasa ng mga iskedyul ng cron, ang Pang-format ng XML / HTML, at ang Pang-format ng SQL."
+              ]
+            },
+            "Ang ibinabahagi nito sa iba pang bahagi ng programa ay nasa \"Tungkol sa Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ang mga hindi pa kayang gawin ng Dev",
+          "body": [
+            {
+              "points": [
+                "Sinusuri lamang ang lagda ng isang token kapag ginawa ito gamit ang isang pinagsasaluhang lihim (HS256, HS384, HS512).",
+                "Sinasabi ng Pang-validate ng JSON Schema sa Ingles kung ano ang hindi tugma, gaya ng ginagawa ng library nito, at hindi nito sinusundan ang isang $ref papunta sa ibang file o address.",
+                "Hindi humihingi ng dialect ang Pang-format ng SQL at hindi nito sinusuri kung ano ang ibig sabihin ng isang statement: sinasabi lamang nito ang string o komentong hindi natatapos.",
+                "Ang YAML, at ang JSON na nagiging YAML o CSV, ay buong hinahawakan sa memory habang kino-convert; ang CSV na nagiging JSON, ang XML, HTML at SQL ay pinoproseso habang binabasa, anuman ang laki.",
+                "Pagbasa lamang ang talahanayang pinagtitingnan ng CSV: walang tina-type dito, at wala pang kinokopya mula rito.",
+                "Nag-iingat ang Diff ng labing-anim na byte para sa bawat linya ng dalawang file, hindi ang mga file mismo; buong hinahawakan ang dalawang JSON na dokumento, dahil isinusulat muli ang mga ito bago ihambing.",
+                "Ang isang bahagi ng mga linya na walang anumang eksaktong minsan lumilitaw sa magkabilang panig ay inihahambing hangga’t pinapayagan ng isang segundo: totoo ang mga pagkakaibang sinasabi, bagaman hindi laging ang pinakakaunti.",
+                "Hindi inihahambing ng Diff kung paano nagtatapos ang mga linya (CRLF o LF).",
+                "Inihahambing ang dalawang folder ayon sa mga byte ng kanilang mga file; itinutugma ang mga file ayon sa kanilang mga pangalan, titik sa titik.",
+                "JSON ang sinasabi ng mga tool sa Suriin, na nasa Ingles ang mga pangalan.",
+                "Pinapatakbo ng Pansubok ng regex ang mga regular expression ng JavaScript, hindi PCRE at hindi ang sa Rust; gumagana ito sa tekstong maipapakita, hindi sa isang file na nasa disk; itinitigil ang pattern na tumatakbo nang higit sa 20 segundo.",
+                "Binabasa ng Pang-decode ng sertipiko ang isang sertipiko at hindi sinusuri kung dapat itong pagkatiwalaan: hindi ang chain nito, hindi ang lagda nito, hindi kung binawi na ito.",
+                "Binabasa ang file na teksto sa ibang encoding maliban sa UTF-8 kapag sapat ang liit nito para maipakita; ang mas malaki rito, na pinoproseso mula sa disk, ay dapat UTF-8.",
+                "Tinatanggap ang file na ibinagsak sa isang tool hanggang 16 MB; hindi nasasabihan ang window kung nasaan sa disk ang ibinagsak na file, kaya binubuksan ang mas malaki gamit ang Magbukas ng file.",
+                "Ang mga passphrase ay binubuo lamang ng mga salitang Ingles.",
+                "Paliwanag sa cron: gumagawa ang tagabuo ng mga iskedyul ng crontab (limang field, o anim kasama ang mga segundo); hindi maaaring ilagay roon ang iskedyul na may L, W, # o ?. Hindi masasabi ang mga oras ng AWS rate(), dahil binibilang ito mula nang gawin ang panuntunan nito. Sa systemd, binabasa ang mga karaniwang calendar event; hindi ang mga bahagi ng segundo o mga listahan ng araw na binibilang mula sa dulo ng buwan.",
+                "Tumitingin lamang ang Pantingin ng hex: walang binabago sa file. Ipinapakita ng hanay ng teksto ang ASCII o ang mga titik ng Kanlurang Europa, hindi ang ibang alpabeto; mga byte o teksto ang hinahanap, hindi mga pattern.",
+                "Mga key at sertipiko: ang mga key ay RSA, ang mga curve na P-256, P-384 at P-521, at Ed25519; hindi binabasa ang iba (DSA, secp256k1, X25519). Binubuksan ang key na naka-lock sa lumang paraan ng OpenSSL kapag AES o 3DES ang cipher nito. May hawak na isang key kasama ang mga sertipiko nito ang isang .pfx file. Natatagalan ang paggawa ng napakalaking RSA key at hindi ito maititigil sa kalagitnaan. May kilalang kahinaan ang library na gumagawa ng mga RSA key laban sa isang umaatake na kayang orasan ang maraming lagda sa isang network (RUSTSEC-2023-0071): dito, ginagawa at isinusulat ang mga key sa iyong computer, at walang nilalagdaan para sa ibang tao.",
+                "HTTP client: HTTP/1.1 (hindi HTTP/2 o 3); walang cookie na itinatabi sa pagitan ng mga request; hindi binubuo para sa iyo ang mga form na may ilang bahagi (multipart); ang sagot na mas malaki sa 16 MB, o hindi teksto, ay isinusulat sa isang file sa muling pagpapadala ng request.",
+                "Ipinapakita ng Paghahanap sa DNS ang mga lagda (DNSSEC) at hindi sinusuri ang mga ito. TCP lamang ang sinusubukan ng Pagsuri ng port: hindi maihihiwalay ang tahimik na UDP port sa saradong port. Hindi itinatanong ng Sertipiko ng isang site kung binawi na ang isang sertipiko.",
+                "Ang right-click menu ay para sa Windows Explorer; sa Windows 11, ang mga entry nito ay nasa ilalim ng \"Show more options\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

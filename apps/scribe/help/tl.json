@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Mga teksto at file",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Ang editor",
+          "body": [
+            "Ang Scribe ay isang editor ng payak na teksto na may mga tool sa tabi nito. May tab ang bawat teksto; nasa gitna ang teksto, nasa gilid nito ang panel ng mga tool, at nasa ilalim nito ang isang linya ng impormasyon.",
+            "Kapag binuksan ang Scribe, itinatanong muna nito kung ano ang gusto mong gawin: bilangin ang mga salita, hanapin at palitan, alisin ang mga duplicate, ihambing ang dalawang teksto, i-sort ang mga linya, baligtarin ang isang teksto, magsulat ng pampuno o random na teksto. Binubuksan ng bawat pagpipilian ang teksto na nasa tabi ang tool para rito; binubuksan ng \"Isang walang lamang teksto\" ang teksto lamang, at nakalista sa ibaba ang mga tekstong kamakailang binuksan.",
+            {
+              "points": [
+                "Nagsisimula ang File → Bagong teksto (Ctrl+N) ng walang lamang teksto.",
+                "Nagbubukas ang File → Buksan (Ctrl+O) ng isa o ilang file, bawat isa sa sarili nitong tab. Bumubukas ang anumang file na may teksto: .txt, .md, .csv, .log, .srt, source code at iba pa.",
+                "Dinadaanan ng I-edit → I-undo (Ctrl+Z) at I-redo (Ctrl+Y) ang lahat ng ginawa sa teksto, na binibilang na isang hakbang ang isang tool o resipe.",
+                "Nagbubukas ang I-edit → Hanapin at palitan (Ctrl+F) ng isang guhit sa editor na lumilipat mula sa isang tugma patungo sa susunod.",
+                "I-edit → Piliin lahat (Ctrl+A)."
+              ]
+            },
+            "Ipinapakita ng linya sa ilalim ng teksto kung nasaan ang cursor, gaano karami ang napili, ang bilang ng mga linya, salita at karakter, ang encoding ng file at kung paano nagtatapos ang mga linya nito.",
+            "Bumubukas din ang mga file na ibinagsak sa window, bawat isa bilang bagong teksto na may pangalan, encoding at mga dulo ng linya ng file. Nakukuha ng programa ang laman ng ibinagsak na file pero hindi kung nasaan ito sa disk, kaya itinatanong nito kung saan ise-save; binubuksan ang mga file na higit sa 64 MB gamit ang File → Buksan.",
+            "Habang walang laman, inililista ng bagong teksto ang mga tekstong kamakailang binuksan: mag-click ng isa para buksan ito. Binubura ito ng \"Kalimutan ang listahan\"; itinatabi lamang ang listahan sa computer na ito."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "I-save at I-save bilang",
+          "body": [
+            "Walang nagbabago sa file sa disk hangga’t hindi ka nagse-save. Sinasabi ng tuldok sa tab na may mga pagbabago ang teksto na wala pa sa file nito, at nagtatanong muna bago isara ang ganoong tab.",
+            {
+              "points": [
+                "Isinusulat ng I-save (Ctrl+S) ang teksto sa ibabaw ng file nito. Nagtatanong kung saan ang isang bagong teksto.",
+                "Isinusulat ito ng I-save bilang (Ctrl+Shift+S) sa isang bagong file, na papalit sa lugar ng tab, nang naroon pa rin ang lahat ng maaaring i-undo; nananatili ang lumang file gaya ng dati."
+              ]
+            },
+            "Isinusulat ang isang file nang buo o hindi talaga: kung mabigo ang pagsulat, naroon pa rin ang file na dati nang naroon.",
+            {
+              "note": "Sine-save ang isang file sa paraan ng pagkakabukas nito: sa parehong encoding, na may parehong mga dulo ng linya. Nananatili kung ano sila ang tekstong na-type sa Windows at ang na-type sa Linux."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Mga encoding at dulo ng linya",
+          "body": [
+            "Ang encoding ay ang paraan ng pagtatabi ng mga titik bilang mga byte. Binabasa ng Scribe ang sinasabi ng file tungkol sa sarili nito, at humuhula kapag wala itong sinasabi. Karamihan sa mga file ngayon ay UTF-8; ang mga mas luma mula sa Gitnang Europa ay kadalasang windows-1250.",
+            {
+              "points": [
+                "Mga titik na mukhang mali (Ã£ sa halip na ă, o mga parisukat): File → \"Basahin muli sa ibang encoding\", at piliin ang encoding kung saan isinulat ang file.",
+                "Para mag-save sa ibang encoding, piliin ito sa linya sa ilalim ng teksto, saka i-save. Kung may mga titik ang teksto na hindi kayang isulat ng encoding na iyon, sinasabi ng Scribe kung alin at walang isinusulat.",
+                "Binabago sa parehong lugar ang mga dulo ng linya (Windows CRLF, Linux at macOS LF, lumang Mac CR). Sinasabi kapag may halu-halong dulo ang isang file; ibinibigay ng pag-save ang parehong dulo sa lahat ng linya nito."
+              ]
+            },
+            "Pinipili sa Mga Setting kung paano nagsisimula ang isang bagong teksto."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Kung paano ipinapakita ang teksto",
+          "body": [
+            {
+              "points": [
+                "Switch ang lahat ng nasa menu na Tingnan: kapag naka-on, nakikita; kapag naka-off, hindi.",
+                "Teksto: Ibalot ang mahahabang linya (Alt+Z) — tumutuloy sa ibaba ang linyang mas mahaba kaysa sa window, at pinapanatili ng teksto ang mga linya nito; Mga numero ng linya; Resulta sa tabi ng teksto.",
+                "Sa tabi ng teksto: Mga Tool (Ctrl+T), Mga resipe, Estadistika. Ang mga naka-on na bahagi lamang ang ipinapakita ng panel; kapag walang naka-on, walang panel.",
+                "Mga tool na ipinapakita: maaaring alisin sa panel ang bawat pangkat ng mga tool (hanapin at palitan, mga linya, malalaking titik at mga titik, paglilinis, pagsulat ng teksto). Ipinapakita pa rin ang tool na pinili mula sa menu na Format o Mga Tool: kusang bumabalik ang bahagi at pangkat nito.",
+                "Itinitiklop ng dobleng palaso sa itaas ng panel ang panel tungo sa isang guhit sa gilid, kung saan isang click lang ang layo ng bawat bahagi nito; hilahin ang gilid nito para palaparin o paliitin ito.",
+                "Pinipili sa Mga Setting ang mga titik at ang laki nito."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Napakalalaking file",
+          "body": [
+            "Hindi inilalagay sa editor ang file na higit sa 64 MB: bumubukas ito sa isang tab na nagpapakita nito nang isang pahina ng 500 linya sa bawat pagkakataon, binabasa mula sa file habang sumusulong ka. Sa ganitong paraan, bumubukas ang mga file na ilang gigabyte sa panahong kailangan para daanan ang mga ito nang isang beses.",
+            {
+              "points": [
+                "Gumagalaw rito ang \"Nakaraang pahina\" at \"Susunod na pahina\"; tumatalon sa anumang linya ang isang numero ng linya at \"Pumunta\".",
+                "Hinahanap ng Hanapin sa buong file, na may parehong mga pagpipilian gaya ng sa ibang lugar, at inililista ang mga lugar na nahanap nito: mag-click ng isa para pumunta sa linya nito. Dumarating nang paunti-unti ang mahabang listahan, gamit ang \"Maghanap pa\".",
+                "Isinusulat ng \"Magpatakbo ng resipe sa buong file\" ang resulta sa isang folder na pipiliin mo, sa parehong pangalan. Hindi kailanman binabago rito ang file mismo.",
+                "Inilalagay pa rin ito ng \"Buksan ang buo sa editor\" sa editor, para baguhin ito nang mano-mano. Maaaring mabagal ito, at kailangan nito sa memory nang ilang ulit ng laki ng file."
+              ]
+            },
+            {
+              "note": "Hindi maipapakita nang pahina-pahina ang mga file na nakasulat nang dalawang byte bawat titik (UTF-16). Hinahawakan ng isang resipe ang buong file sa memory habang tumatakbo ito: ang hangganan ay ang memory ng computer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mga Tool",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Paano gumagana ang mga tool",
+          "body": [
+            "Nasa panel sa tabi ng teksto ang mga tool, nakapangkat. Mag-click ng isang tool para makita ang mga pagpipilian nito, saka Ilapat.",
+            {
+              "points": [
+                "Kapag may napili, ang napili lamang ang binabago ng tool; kapag walang napili, ang buong teksto. Sinasabi ng panel kung alin, sa itaas nito.",
+                "Sa ilalim ng button, sinasabi ng tool kung ano ang ginawa nito: ilang linya o lugar ang binago nito.",
+                "Isang hakbang ang bawat tool: binabawi ito nang buo ng I-undo.",
+                "Nasa mga menu rin at sa paghahanap ng mga utos ang bawat tool: nasa menu na Format ang mga nagbabago sa hugis ng teksto (mga linya, malalaking titik at mga titik, paglilinis), nasa Mga Tool ang iba. Ang pagpili ng isa roon ay nagbubukas ng panel sa mga pagpipilian nito."
+              ]
+            },
+            "Sa menu na Format, inilalatag bilang mga opsyon nito ang tool na halos iisang pagpipilian: bawat paraan ng pagbabago ng malalaking titik, bawat uri ng panipi, bawat paraan ng pagbaligtad ng teksto ay sariling utos, na nagbubukas ng tool na napili na ang opsyong iyon. Kung masyadong makitid ang window para sa isang pangkat, nagiging isang button ang pangkat na nagbubukas ng buong listahan.",
+            "Tumatakbo ang mga tool sa computer na ito. Walang tekstong lumalabas dito."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Ang resulta, bago mo ilapat",
+          "body": [
+            "Habang nakabukas ang isang tool, ipinapakita sa tabi ng teksto, sa pane na \"Resulta\", ang ibibigay nito. Walang nagbabago sa teksto hangga’t hindi mo pinipili ang Ilapat. Sinusundan ka ng resulta: baguhin ang isang pagpipilian o ang teksto, at gagawin itong muli.",
+            {
+              "points": [
+                "Magkatabi ang teksto at ang resulta, bawat isa sa ilalim ng ulong may parehong taas, kaya nagsisimula sa parehong taas ang parehong mga linya; sabay silang nag-i-scroll (pinapatay iyon ng button na kadena).",
+                "Minamarkahan ang mga linyang magbabago, na mas madilim ang marka sa bahagi ng linya na nagbabago; may sariling kulay ang mga linyang lilipat lamang, at ang mga linyang bago. Minamarkahan din sa iyong teksto ang mga linyang mababago o aalisin.",
+                "Sa ilalim ng mga pangalan: ang mangyayari sa mga numero — mga linyang nabago, nailipat, bago, inalis; mga linya at karakter bago at pagkatapos.",
+                "Sa ilalim ng resulta: ang mga linyang aalisin. Mag-click ng isa para pumunta rito sa teksto.",
+                "Ang maliliit na button ng resulta: kopyahin ito, buksan ito bilang bagong teksto, ihambing ito sa teksto sa isang tab, sabay na i-scroll, ilagay ang resulta sa ilalim ng teksto sa halip na sa tabi nito, itago ito. May sarili rin ang teksto: i-undo, i-redo, kopyahin, i-paste kapalit, piliin lahat, linisin.",
+                "Hilahin ang bar sa pagitan ng dalawa para bigyan ng mas maraming espasyo ang isa; ginagawa silang magkasinlaki muli ng double click."
+              ]
+            },
+            "Pagkatapos ng Ilapat, sinasabi ito ng pane na Resulta (\"Nailapat na. Ang teksto sa kaliwa na ngayon ang resulta.\") at nag-aalok ng I-undo at \"Ihambing sa dati\", na nagbubukas ng parehong paghahambing ng bago at pagkatapos. Muli itong nagpapakita ng resulta sa sandaling baguhin mo ang teksto o ang isang pagpipilian ng tool.",
+            {
+              "note": "Pinapatay at binubuksan ng Tingnan → \"Resulta sa tabi ng teksto\" ang pane. Para sa napakahabang teksto (higit sa dalawang milyong karakter) walang ipinapakita nang maaga: ilapat ang tool, at binabawi ito ng I-undo."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Palitan lahat",
+          "body": [
+            "Pinapalitan nang sabay-sabay ang bawat lugar kung saan may nahanap. Habang tina-type mo ang hahanapin, sinasabi ng Scribe kung sa ilang lugar ito nahanap at minamarkahan ang mga ito sa teksto, kaya nakikita mo ang magbabago bago mo ilapat.",
+            {
+              "points": [
+                "\"Regular expression\": pattern ang tekstong hahanapin. Sa \"Palitan ng\", ang $1, $2… ay kumakatawan sa nahanap ng mga grupo ng pattern.",
+                "\"Mahalaga ang laki ng titik\": magkaibang titik ang a at A.",
+                "\"Buong salita lamang\": hindi nahahanap ang \"cat\" sa loob ng \"category\".",
+                "\"Panatilihin ang laki ng titik ng pinapalitan\": kapag pinalitan ang \"cat\" ng \"dog\", nagiging \"Dog\" ang \"Cat\" at \"DOG\" ang \"CAT\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Higit pang mga pagpipilian\" → \"Punan ang…\": maaaring may mga patlang ang ilalagay na kapalit na pinupunan sa bawat tugma. Nagbibilang ang {counter} ng 1, 2, 3… (nagsisimula sa 10 ang {counter:10}, tumataas nang tig-5 ang {counter:10:5}); ang {date} at {time} ay ang araw at oras ng iyong computer; ang {uuid} ay isang identifier; ang {random} ay 8 random na titik at digit ({random:12} para sa 12).",
+                "Sa ilalim ng hinahanap mo, sinasabi rin ng Scribe kung sa ilang linya ang mga tugma at kung ilang magkakaibang teksto ang mga ito."
+              ]
+            },
+            "Ginagawa ng \"Palitan ang marami nang sabay-sabay\" ang isang listahan ng mga pares sa isang hakbang. Magsulat ng isang pares bawat linya, gaya nito: ang hahanapin => ang ipapalit dito. Ginagawa ang mga ito mula sa una hanggang sa huli, bawat isa sa iniwan ng nauna; inaalis ang teksto kapag walang laman ang ikalawang bahagi.",
+            {
+              "note": "Hindi mapapatigil ng isang pattern ang programa: lumalaki ang oras na kailangan nito kasabay ng haba ng teksto at hindi mas mabilis. Dahil dito, hindi magagamit ang mga pattern na tumitingin pabalik sa nahanap nila (\\1)."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Mga linya",
+          "body": [
+            {
+              "points": [
+                "I-sort ang mga linya ayon sa: kanilang mga titik, gaya ng sa diksyunaryo, sa wika ng programa o sa wikang pipiliin mo (sa Rumano, kasunod ng a ang ă; inilalagay ng Swedish ang ä pagkatapos ng z, ng Aleman sa tabi ng a); mga titik na ang mga numero ay bilang numero (file2 bago ang file10); ang numerong pinagsisimulan ng bawat linya; haba; bilang ng mga salita; ang petsang pinagsisimulan ng bawat linya (05.03.2024, 2024-03-05, may oras man o wala); mga address sa internet; mga numero ng bersyon (1.2.10 pagkatapos ng 1.2.9); mga pamagat, kung saan hindi binibilang ang artikulo sa simula; isang pagkakasunod-sunod na isusulat mo (maliit, katamtaman, malaki); o walang anumang pagkakasunod-sunod.",
+                "Ang mga linyang walang mapagbabatayan sa pag-sort (walang numero, walang petsa, isang halagang wala sa pagkakasunod-sunod na isinulat mo) ay nananatili sa dulo, alinmang paraan i-sort ang iba: pinakamaliit muna o pinakamalaki muna.",
+                "Higit pang mga pagpipilian sa pag-sort: ihambing mula sa isang salita o karakter, o isang hanay ng talahanayan (kasama kung ano ang naghihiwalay sa mga hanay); panatilihin sa lugar ang unang linya bilang heading; i-sort ang mga talata sa halip na mga linya; at ayusin muna — tabasin, alisin ang mga bakanteng linya, alisin ang mga duplicate.",
+                "Alisin ang mga duplicate na linya: panatilihin ang una, ang huli, o wala sa mga linyang umuulit (ang mga minsan lamang lumilitaw ang natitira). Maaaring huwag pansinin ang malalaking titik, ang mga espasyo sa paligid ng linya, mga digit, bantas, at ilang karakter sa simula o dulo; isang hanay lamang, o ang nahahanap lamang ng isang pattern, ang maaaring ihambing. Ang mga bakanteng linya ay itinuturing na katulad ng iba, pinapanatili, inaalis, o pinagsasama sa isa.",
+                "Bilangin ang mga nauulit na linya: iniiwan ang bawat linya nang isang beses, na nakasulat sa unahan nito kung ilang beses ito lumitaw — ang pinakamadalas umulit muna, o ang pinakamadalang, o ayon sa paglitaw nila.",
+                "Panatilihin o alisin ang mga linya: naghahanap ng isang bagay sa bawat linya at pinapanatili lamang ang mga linyang mayroon nito, o ang mga wala nito.",
+                "Baligtarin ang pagkakasunod-sunod ng mga linya; Paghaluin ang mga linya.",
+                "Lagyan ng numero ang mga linya: ang unang numero, ang kasunod nito, mga zero sa unahan para magtapat ang mga numero, mga bakanteng linya na walang numero.",
+                "Mga bakanteng linya: alisin lahat, o mag-iwan ng isa kung saan may ilan.",
+                "Pagsamahin ang mga linya sa isa, kasama ang pipiliin mong ilagay sa pagitan ng mga ito; Hatiin sa mga linya sa bawat kuwit, tuldok-kuwit o anupaman. Saanman tina-type ang nasa pagitan ng mga bagay (pagnunumero, pagsasama, paghahati, pagbibilang), ang \\t ay kumakatawan sa tab, na hindi maita-type sa isang field."
+              ]
+            },
+            {
+              "note": "Ang pagpipiliang mahalaga lamang kasama ng iba ay ipinapakita lamang kapag kailangan: ang hanay, kapag naghahambing ka ayon sa hanay. Nasa ilalim ng \"Higit pang mga pagpipilian\" ang mga pagpipiliang kailangan ng mas kaunting tao."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Malalaking titik",
+          "body": [
+            "Baguhin ang malalaking titik: gaya ng pangungusap, malaking titik sa bawat salita, lahat malalaking titik, lahat maliliit na titik, baliktad, at ang mga paraan ng pagsulat ng mga pangalan sa code: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Sumusunod ang malalaking titik sa mga panuntunan ng bawat alpabeto, hindi lamang ng Ingles.",
+            "Sa pangkat na Direksyon, binabaligtad ng \"Baligtarin ang teksto\" ang mga titik ng bawat linya, o ang pagkakasunod-sunod ng mga salita nito, o ang mga titik ng bawat salita; isinusulat ito ng \"Baligtad\" para mabasa mula sa kabilang panig ng mesa, at pinagpapalit din ng \"Gaya ng sa salamin\" ang mga tandang may kaliwa at kanan. Binibilang ang mga titik gaya ng pagbilang ng mambabasa: nananatiling isa ang titik kasama ang mga tuldik nito."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Paglilinis",
+          "body": [
+            {
+              "points": [
+                "Linisin ang mga espasyo: nagiging isa ang ilang espasyo; inaalis ang mga espasyo sa dulo ng mga linya.",
+                "Tabasin ang mga dulo ng linya: sa magkabilang dulo, sa simula o sa dulo.",
+                "Mga panipi: tuwid, Ingles, Rumano, Aleman o Pranses.",
+                "Alisin ang mga tuldik: nagiging a ang ă, nagiging e ang é. Sa mga alpabetong Latin at Griyego lamang, kung saan titik pa rin ang titik na walang tuldik.",
+                "Ayusin ang mga titik ng Rumano: nagiging ș at ț (may kuwit), ang mga titik na ginagamit sa pagsulat ng Rumano, ang ş at ţ (may cedilla, isinulat ng mga lumang keyboard).",
+                "Mga tab tungo sa espasyo at mga espasyo tungo sa tab, sa lapad ng tab na pipiliin mo.",
+                "Alisin ang mga HTML tag: para sa source ng isang web page na ipinaste sa teksto. Inaalis ang mga tag, script at style; nananatili ang makikita ng mambabasa. Para kumuha ng page mula sa address nito, gamitin ang tool sa ilalim nito, ang \"Teksto ng isang web page\".",
+                "Teksto ng isang web page: i-type ang address ng isang page (example.com/page) at piliin ang \"Kunin ang teksto\". Isinusulat kung nasaan ang cursor ang makikita ng mambabasa sa page na iyon, walang mga tag, script o style. Ito lamang ang tool ng Scribe na kumokonekta sa internet, at kapag hiniling mo lamang: kinukuha ang page ng browser na naka-install sa computer na ito (Microsoft Edge o Google Chrome), na pinapatakbo nang walang window at nang wala ang iyong mga cookie o pag-sign in; walang ipinapadala ang programa mismo. Ang page na nangangailangang naka-sign in ka ay nagbibigay lamang ng makikita ng isang estranghero."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Pagbabalik ng mga tuldik ng Rumano",
+          "body": [
+            "Muling isinusulat nang may ă, â, î, ș, ț ang Rumanong na-type nang wala ang mga ito.",
+            {
+              "steps": [
+                "Buksan ang tool sa pangkat na Paglilinis at piliin ang Ilapat.",
+                "Agad na binabago ang mga salitang may iisang tamang anyo: nagiging \"știu\" ang \"stiu\", nagiging \"informații\" ang \"informatii\".",
+                "Ang mga salitang mababasa sa higit sa isang paraan (fata, fată, fața, față) ay inililista sa ilalim ng button, bawat isa sa lugar nito sa teksto. I-click ang tamang anyo para sa bawat isa.",
+                "O i-tick ang \"Kusa nang piliin ang mas malamang na anyo\" bago ilapat: walang itinatanong, at kailangang basahin nang buo ang resulta."
+              ]
+            },
+            "Kung sapat ang mga salita sa paligid, ang mga ito ang batayan ng pasya ng Scribe: nagiging \"o casă\" ang \"o casa\", nananatili ang \"casa mea\", nagiging \"pentru că\" ang \"pentru ca\".",
+            {
+              "note": "Ginawa ito para sa Scribe mula sa isang listahan ng mga karaniwang salita at ng mga hulaping laging isinusulat ng Rumano nang may tuldik. Nananatili kung paano na-type ang mga salitang hindi nito alam (mga bihirang salita, pangalan), at hindi kailanman ginagalaw ang salitang nakasulat na nang may tuldik. Basahin ang resulta bago ito ipadala."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Pagsulat ng teksto: pampuno at random",
+          "body": [
+            "Walang binabago ang mga tool ng pangkat na \"Magsulat ng teksto\": nagsusulat sila. Pumupunta ang ibinibigay nila kung nasaan ang cursor, kapalit ng napili.",
+            {
+              "points": [
+                "Pampunong teksto: mga talata, pangungusap, salita, listahan, heading, o mga bahagi ng isang pahina (isang heading, mga talata, isang listahan). Sa Latin ng mga manlilimbag (lorem ipsum), Ingles, Rumano, mga salita ng opisina o ng kusina, o sarili mong mga salita. Higit pang mga pagpipilian: maikli, katamtaman o mahabang pangungusap; payak na teksto, Markdown, HTML o JSON; ang antas ng mga heading; limitasyon sa mga karakter (pinuputol ang teksto sa isang buong salita at nagtatapos pa rin bilang pangungusap); mga salitang hindi isasama.",
+                "Gawa-gawang data: mga pangalan, e-mail address, numero ng telepono, address ng kalye, petsa o numero, isa bawat linya, mula sa Rumania o sa mga bansang nagsasalita ng Ingles. Isinusulat ng \"Mga linyang ayon sa aking pattern\" ang bawat linya gaya ng sinasabi mo, kung saan kumakatawan ang {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} at {row} sa ginagawa — isang talahanayang mapagsusubukan, sa isang iglap.",
+                "Random na teksto: mga password (mga titik, digit at simbolo, kahit isa sa bawat uri), mga titik, digit, hexadecimal o mga identifier (UUID), sa isang linya o sa marami. Maaaring hindi isama ang mga karakter na madaling mapagkamalan (0 at O, 1, l at I).",
+                "Ginagawang pareho ng isang binhi (seed, sa ilalim ng \"Higit pang mga pagpipilian\") ang lumalabas na pampuno at gawa-gawang data tuwing pareho ang numero; nagbibigay ang 0 ng bago sa bawat pagkakataon."
+              ]
+            },
+            {
+              "note": "Ginagawa ang mga password sa computer na ito, mula sa pagka-random ng operating system, at hindi ipinapadala kahit saan. Nagtatapos sa example.com ang mga gawa-gawang e-mail address, kung saan walang naaabot ang mail; ang numero ng teleponong ginawa nang random ay maaaring sa isang tao, kaya huwag itong tawagan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mga resipe",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Pagtatabi ng iyong ginawa bilang resipe",
+          "body": [
+            "Ang resipe ay isang listahan ng mga tool kasama ang kanilang mga pagpipilian, na itinatabi sa ilalim ng isang pangalan at pinapatakbo muli sa isang click.",
+            {
+              "steps": [
+                "Ilapat sa isang teksto ang mga tool na gusto mo, sa pagkakasunod-sunod na gusto mo.",
+                "Buksan ang \"Mga resipe\" sa itaas ng panel: nakalista ang mga tool na inilapat mo.",
+                "\"Itabi bilang resipe\", at bigyan ito ng pangalan.",
+                "Sa ibang pagkakataon, buksan ang resipe at piliin ang \"Patakbuhin sa teksto\": ginagawa ang lahat ng hakbang nito, at binabawi ang lahat ng ito ng isang I-undo."
+              ]
+            },
+            "Itinatabi ang mga resipe sa computer na ito at naroon sa bawat teksto."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Pagbabago ng resipe, o paggawa ng isa mula sa wala",
+          "body": [
+            "Ipinapakita ng \"Baguhin\" sa isang nakabukas na resipe ang pangalan at mga hakbang nito. Maaaring ilipat pataas o pababa ang bawat hakbang, alisin, at bigyan ng ibang mga pagpipilian; idinaragdag ang mga tool mula sa listahan sa ilalim ng mga hakbang. Walang itinatabi hanggang \"I-save\".",
+            "Nagsisimula ang \"Bagong resipe\" ng isang resipeng walang hakbang, na bubuuin sa parehong paraan nang hindi muna inilalapat ang mga tool sa isang teksto.",
+            {
+              "note": "Hindi hakbang ng resipe ang mga tool na nagsusulat ng teksto (pampuno, random): nagbabago ng teksto ang isang resipe."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Pagpapatakbo ng resipe sa mga file",
+          "body": [
+            {
+              "steps": [
+                "Buksan ang resipe at, sa ilalim ng \"Patakbuhin sa mga file\", magdagdag ng mga file o isang folder (kasama ang mga folder sa ilalim nito).",
+                "Piliin kung saan pupunta ang mga resulta: sa ibang folder, na nag-iiwan sa mga file gaya ng dati, o sa mismong mga file.",
+                "Patakbuhin. Sasabihin ng Scribe kung ilang file ang naisulat, ilan ang hindi nangailangan ng pagbabago, at alin ang hindi nagawa at kung bakit."
+              ]
+            },
+            "Isinusulat ang bawat file sa encoding at may mga dulo ng linya na mayroon ito. Sa ibang folder, pinapanatili ng mga file ang mga folder na kasama nila, at hindi kailanman pinapatungan ang file na naroon na.",
+            {
+              "note": "Hindi mababawi mula sa Scribe ang pagsulat sa mismong mga file. Magtabi ng kopya kung mahalaga ang mga ito."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Estadistika, paghahambing at mga folder",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Estadistika",
+          "body": [
+            "Sinasabi ng \"Estadistika\" sa itaas ng panel kung ano ang bumubuo sa teksto, o sa piniling bahagi. Ang bawat bahagi ay maaaring itiklop.",
+            {
+              "points": [
+                "Sa itaas: mga salita, mga karakter na may at walang espasyo, mga pangungusap, mga talata, mga linya, mga pahina, at ang laki sa mga byte.",
+                "Oras: para basahin nang tahimik, para sabihin nang malakas, para i-type, at para isulat sa kamay.",
+                "Mga salita: ilan ang magkakaiba (at anong bahagi ng lahat), mga titik sa isang salita, mga pantig, ang pinakamahaba at pinakamaikling salita, at ilang salita ang mayroon sa bawat haba.",
+                "Mga pangungusap: mga salita sa isang pangungusap, ilan ang maikli, katamtaman at mahaba, ilan ang mga pahayag, tanong at padamdam, at ang pinakamahaba at pinakamaikli.",
+                "Dali ng pagbabasa: isang marka mula 0 (napakahirap) hanggang 100 (napakadali), ayon sa pormulang ginawa para sa wika ng teksto. May mga pormula para sa Ingles, Aleman, Espanyol, Pranses, Italyano, Olandes, Portuges at Ruso; walang marka ang wikang walang pormula, dahil makapanlilinlang ang pormulang ginawa para sa iba.",
+                "Ang pinakamadalas nitong sabihin: ang mga salitang pinakamadalas gamitin kasama ang bahagi nila sa teksto, at ang mga pares at pangkat ng tatlong salita na umuulit.",
+                "Natitirang espasyo sa mga karaniwang limitasyon: ilang karakter ang natitira, o sobra, para sa isang pamagat, paglalarawan, maikling post at iba pa."
+              ]
+            },
+            "Hinahanap ang mga salita at pangungusap ayon sa mga panuntunan ng bawat sistema ng pagsulat, kaya nabibilang din ang Tsino, Hapones at Thai, na walang espasyo sa pagitan ng mga salita. Itinatakda sa Mga Setting ang mga bilis na pinagbabatayan ng mga oras, at kung ilang salita ang bumubuo sa isang pahina."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Paghahambing ng dalawang teksto",
+          "body": [
+            {
+              "points": [
+                "Mga Tool → \"Ihambing sa isa pang teksto\": ang teksto sa editor katabi ng isang tina-type o ipine-paste mo.",
+                "Mga Tool → \"Ihambing sa isang file\": ang teksto sa editor, sa kasalukuyang anyo nito, katabi ng isang file na pipiliin mo.",
+                "Mga Tool → \"Ihambing ang dalawang teksto\": dalawang tekstong tina-type o ipine-paste nang magkatabi.",
+                "Mga Tool → \"Ihambing ang dalawang file\"."
+              ]
+            },
+            "Ipinapakita nang magkatabi ang dalawang teksto. Minamarkahang inalis ang mga linyang nasa una lamang, idinagdag ang mga nasa ikalawa lamang, at sa linyang nabago, minamarkahan ang mga salitang magkaiba. Ang mga pagkakaiba lamang ang ipinapakita, kasama ang ilang linya sa paligid; lumilipat ang mga palaso mula sa isang pagkakaiba patungo sa susunod.",
+            "Maaaring huwag pansinin ang malalaking titik, espasyo, bakanteng linya, numero at bantas. Ipinapakita ng \"Sa isang hanay\" ang inalis sa itaas ng inilagay, bawat isa may sariling tanda, sa halip na magkatabi. Sa tabi ng mga bilang, sinasabi ng Scribe kung gaano magkatulad ang dalawang teksto, bilang bahagi ng mga linyang magkapareho.",
+            "Ipinapakita ang isang teksto sa sandaling mapili ito, bago pa ang isa. Hilahin ang bar sa pagitan ng dalawang teksto para bigyan ng mas maraming espasyo ang isa; habang tina-type ang mga teksto, hinihila pataas at pababa ang bar sa ilalim ng mga kahon para bigyan ng mas maraming espasyo ang mga kahon o ang paghahambing. Ibinabalik ng double click ang isang bar.",
+            "Kung saan nabago ang ilang magkakasunod na linya, inilalagay ang bawat isa sa tabi ng linyang pinakakahawig nito, kaya hindi pinapamukhang nabago ng isang linyang idinagdag o inalis sa gitna nila ang bawat kasunod na linya.",
+            "Nagpapakita ang \"I-type o i-paste ang mga teksto\" ng kahon sa itaas ng bawat hanay; inihahambing ang isinusulat mo roon habang nagsusulat ka, at maaari pa ring pumili ng file para sa alinmang panig."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Paghahanap at pagpapalit sa isang folder",
+          "body": [
+            {
+              "steps": [
+                "Mga Tool → \"Maghanap sa folder\" (Ctrl+Shift+F), at piliin ang folder. Hinahanapan din ang mga folder sa ilalim nito.",
+                "I-type ang hahanapin, na may parehong mga pagpipilian gaya ng \"Palitan lahat\". Nililimitahan ng \"Mga uri ng file\" ang paghahanap sa ilang dulo ng pangalan (txt, md, csv…).",
+                "Ipinapakita ang bawat tugma sa linya nito, file bawat file. Mag-click ng linya para buksan doon ang file.",
+                "Para magpalit: i-type ang bagong teksto, alisin ang tsek sa mga file na hindi gagalawin, at piliin ang \"Isulat ang mga file\"."
+              ]
+            },
+            "Walang isinusulat hangga’t hindi ka humihiling, at sa mga file lamang na naiwang naka-tsek. Isinusulat ang bawat file sa encoding at may mga dulo ng linya na mayroon ito.",
+            {
+              "note": "Nilalaktawan ang mga nakatagong folder at ang mga pinupuno ng mga programa (.git, node_modules) maliban kung hihilingin mo ang mga ito. Laging nilalaktawan ang mga file na hindi teksto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mga Setting",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Ang mga setting ng Scribe",
+          "body": [
+            "Binubuksan ng File → Buksan ang Mga Setting ang Mga Setting ng programa sa bahagi ng Scribe.",
+            {
+              "points": [
+                "Ang editor: mga titik na may iisang lapad o ang sarili ng programa, ang laki nito, pagbalot ng linya, mga numero ng linya, at kung ipinapakita ang resulta ng isang tool bago ito ilapat.",
+                "Isang bagong teksto: kung paano nagtatapos ang mga linya nito, at kung nagsisimula ang file nito sa isang byte order mark.",
+                "Estadistika: ang mga bilis ng pagbasa, pagsasalita, pag-type at pagsulat sa kamay, at kung ilang salita ang bumubuo sa isang pahina.",
+                "Ang mga key ng mga utos ng Scribe."
+              ]
+            },
+            "May button ang bawat setting na nagbabalik dito sa kung paano ito ipinamahagi ng programa."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tungkol sa Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tungkol sa Scribe",
+          "body": [
+            "Ang Scribe ay ang app ng Syntelab Creative para sa teksto: isang editor na nasa tabi ng teksto ang mga tool nito. Ipinapakita nito ang gagawin ng isang tool bago nito gawin, nililinis at inaayos muli ang mga listahan, naghahanap at nagpapalit sa isang teksto o sa isang buong folder, naghahambing ng dalawang teksto, sinasabi kung ano ang bumubuo sa isang teksto, nagsusulat ng pampuno at gawa-gawang data, at itinatabi bilang mga resipe ang madalas mong gawin para patakbuhin muli.",
+            "Ginagawa ang lahat sa computer na ito. Walang limitasyon sa laki o bilang ng mga teksto: ang mga hangganan ay ang memory ng computer at ang kaya ng teknolohiya ngayon.",
+            "Bago pa ito. Kung saan ito kulang para sa iyong mga teksto, sabihin sa amin sa Tulong → Puna: sa ganoon namin nalalaman kung ano ang dapat pagtrabahuhan."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Kung ano ang ginamit sa pagbuo ng Scribe",
+          "body": [
+            {
+              "points": [
+                "Ang editor: CodeMirror.",
+                "Pagbasa at pagsulat ng mga encoding: encoding_rs, kasama ang chardetng para hulaan ang encoding ng isang file na hindi ito sinasabi.",
+                "Paghahanap at pagpapalit: ang regex library ng Rust, na hindi mapapatigil ng mga pattern nito ang programa.",
+                "Pag-sort ayon sa bawat wika, at paghahanap ng mga salita at pangungusap sa bawat sistema ng pagsulat: ICU4X, ang library ng Unicode.",
+                "Paghahambing ng mga teksto: ang library na similar.",
+                "Mga tuldik ng Rumano: isang listahan ng mga salita at panuntunang isinulat para sa Scribe."
+              ]
+            },
+            "Ang ibinabahagi nito sa iba pang bahagi ng programa ay nasa \"Tungkol sa Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ang mga bagay na hindi pa kayang gawin ng Scribe",
+          "body": [
+            {
+              "points": [
+                "Binabasa nang pahina-pahina ang napakalaking file at binabago lamang sa pamamagitan ng mga resipe; ang pagbabago nito nang mano-mano ay nangangahulugang bubuksan ito nang buo, na kumukuha ng memory.",
+                "Ang mga karaniwang salita ang alam ng pagbabalik ng mga tuldik ng Rumano; nananatili kung paano na-type ang mga bihirang salita at pangalan.",
+                "Walang pagsuri ng baybay.",
+                "Hindi kinukuha rito ang teksto mula sa PDF o mga dokumento ng opisina; binubuksan ang mga iyon ng PDF Organizer.",
+                "Hindi kinukulayan ng editor ang code o Markdown.",
+                "Bumubukas bilang bagong teksto ang file na ibinagsak sa window: hindi sinasabihan ang programa kung nasaan ang file, kaya nagtatanong ang pag-save kung saan."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

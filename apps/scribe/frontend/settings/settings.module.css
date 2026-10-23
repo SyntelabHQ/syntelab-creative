@@ -1,0 +1,169 @@
+/* Scribe's part of Settings: sections of rows, each row a setting with its way back. */
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.heading {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.note {
+  margin: 0 0 8px;
+  color: var(--sc-muted);
+}
+
+.rows {
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 8px 16px;
+  padding-block: 12px;
+  padding-inline: 16px 8px;
+}
+
+.row + .row {
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.rowText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.rowLabel {
+  font-weight: 500;
+}
+
+.rowHint {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.rowControl {
+  min-width: 0;
+}
+
+/* Hidden, not removed, while there is nothing to put back: the controls stay lined up. */
+.revert:disabled {
+  visibility: hidden;
+}
+
+.select {
+  min-height: var(--sc-control-height);
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.switch {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--sc-accent);
+}
+
+.withUnit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--sc-muted);
+}
+
+.withUnit input {
+  width: 88px;
+}
+
+/* A line written as the editor will write it. */
+.sample {
+  margin: 8px 0 0;
+  padding: 12px 16px;
+  overflow: hidden;
+  border: 1px dashed var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-bg);
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sample[data-font='mono'] {
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+/* The keys, two columns of "what it does — the keys". */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0 32px;
+  margin: 0;
+  padding-block: 4px;
+  padding-inline: 16px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+.keyRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 38px;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.keyRow dt {
+  min-width: 0;
+}
+
+.keyRow dd {
+  flex: none;
+  margin: 0;
+}
+
+.keys kbd {
+  padding-block: 2px;
+  padding-inline: 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+  font: inherit;
+  font-size: 13px;
+}
+
+.resetAll {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+}
+
+.resetAll p {
+  flex: 1 1 280px;
+  margin: 0;
+  color: var(--sc-muted);
+}

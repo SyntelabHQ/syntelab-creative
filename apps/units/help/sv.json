@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Konvertering",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Konverterarna",
+          "body": [
+            "Units konverterar värden mellan måttenheter: ett värde snabbt, eller hela tabeller med värden på en gång. Allt beräknas på din dator.",
+            "Konverterarna finns i sex menyer: Grundläggande, Rörelse och mekanik, Energi och effekt, Vetenskapliga, Digitalt och media samt Specialiserad fysik. Genom att välja en öppnas dess tabell.",
+            {
+              "points": [
+                "En konverterare öppnas i den flik du befinner dig i. Om dess tabell innehåller värden får du först välja: Fortsätt (värdena går förlorade), Öppna i ny flik eller Avbryt.",
+                "Inställningar → Units → \"Öppna varje konverterare i en egen flik\" öppnar istället varje konverterare du väljer i en ny flik.",
+                "Arkiv → Gå till Start går tillbaka till första sidan i Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Snabbkonvertering",
+          "body": [
+            "Första sidan i Units, Snabbkonvertering, konverterar ett värde från en enhet till en annan. Välj en konverterare, skriv in värdet på sidan \"Från\" och välj de två enheterna: resultatet visas på sidan \"Till\".",
+            {
+              "points": [
+                "Varje sida listar konverterarens populära enheter och dina egna enheter, med ett sökfält ovanför. Konverterarens tabell innehåller alla enheter.",
+                "Knappen mellan de två sidorna byter plats på de två enheterna.",
+                "Bokmärket bredvid en enhet fäster den: fästa enheter kommer först i båda listorna och i tabellens enhetspanel.",
+                "Knappen i resultatet kopierar det; krysset (×) rensar värdet.",
+                "\"Öppna i tabellen\" öppnar konverterarens tabell."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Hur siffror läses och skrivs",
+          "body": [
+            "Du kan skriva och klistra in siffror så som de skrivs i olika länder: 1,234.56 och 1.234,56 förstås båda, liksom mellanslag och apostrofer mellan tusental, samt 1.5e-3 för tiopotenser.",
+            "Ett tal som kan läsas på två sätt (1,234: ett tusental, eller ett och lite till) läses så som programmets språk skriver siffror, och raden under tabellen anger detta.",
+            "Ett resultat skrivs med decimalerna för den enhet det landar i, inte med lika många siffror som du skrev in: 5 cm är 1,97 in. Ett värde som inte är noll visar alltid några siffror som är betydelsefulla, så 1 cm är 0,00001 km och aldrig 0,000 km.",
+            "Värden som är för stora eller för små för att kunna läsas vid en snabb anblick skrivs med en tiopotens, som 1,6 × 10⁻³⁵. Visa → Extremvärden fullt utskrivna skriver ut dem med varje nolla istället.",
+            "Där en enhet inte har ett sådant värde (ett ljudtryck på noll har inga decibel) visar cellen ett bindestreck."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabellen",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Rader och kolumner",
+          "body": [
+            "Varje kolumn är en enhet och varje rad ett värde. Cellen du skriver i styr sin rad: de andra kolumnerna visar samma värde i sina enheter. Den cell som skrivits i visas i fetstil.",
+            "Det som inte är ett tal behålls och visas i rött; dess rad konverterar ingenting förrän du korrigerar det.",
+            {
+              "points": [
+                "Dubbelklicka på en cell, eller börja bara skriva i den, för att redigera. Enter flyttar nedåt, Tab till höger; piltangenterna flyttar markören; Escape lämnar cellen som den var.",
+                "Klicka i hörnet (#) för att markera hela tabellen, på ett radnummer för att markera dess rad, eller på en rubrik för att markera dess kolumn. Shift+klick markerar ett område, Ctrl+klick lägger till celler, och att dra med musen markerar också.",
+                "Home och End går till den första respektive sista kolumnen i raden; Ctrl+Home till den första cellen i tabellen, Ctrl+End till den sista. Ctrl tillsammans med en piltangent går till tabellens kant: första eller sista raden, första eller sista kolumnen. Page Up och Page Down flyttar en skärm i taget. Med Shift utökar varje sådan åtgärd markeringen istället.",
+                "En markering av flera celler ramas in på utsidan; cellen där skrivningen sker förblir oskuggad inuti markeringen.",
+                "Delete tömmer de markerade raderna.",
+                "Att skriva i den sista raden lägger till en ny rad. En tabell har ingen övre gräns för hur mycket den rymmer: den är så lång som datorns minne tillåter (en rad tar 16 bytes, så 100 miljoner rader tar ungefär 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Kolumner och panelen för enheter",
+          "body": [
+            "Panelen bredvid tabellen listar konverterarens enheter. Längst upp finns de enheter som redan är i tabellen: klicka på någon för att ta bort dess kolumn. Under dem finns alla enheter: sök efter namn eller symbol, filtrera efter grupp eller \"Populära\", och klicka på en enhet för att lägga till den som en kolumn.",
+            "Bokmärket bredvid en enhet fäster den som favorit: den hamnar först i listan och först i Snabbkonvertering.",
+            {
+              "points": [
+                "Kolumnerna delar tabellens bredd lika tills deras titlar inte längre får plats; då kan tabellen scrollas i sidled.",
+                "Dra i kanten av en titel för att ändra kolumnens bredd; dubbelklicka på kanten för att anpassa kolumnen efter dess längsta värde. Även kolumnen med radnummer kan dras i.",
+                "Kolumnens ⋮-knapp: flytta den till vänster eller höger, fäst den vid vänster eller höger kant, ändra dess precision eller ta bort den.",
+                "Precisionen för en kolumn ändrar endast den kolumnen. \"Använd för denna enhet överallt\" gör den till enhetens precision, i varje tabell och i Snabbkonvertering.",
+                "Knappen med två pilar bredvid Ångra och Återställ anpassar kolumnerna till tabellen: alla bredder som du dragit eller anpassat återställs, och kolumnerna delar tabellens bredd igen.",
+                "Panelens två övre delar, enheterna i tabellen och \"Lägg till enheter\" (sökningen och filtren), kan fällas ihop genom att klicka på deras namn så att listan får mer plats."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Ångra, kopiera, klistra in, importera och exportera",
+          "body": [
+            "Raden ovanför tabellen innehåller dess verktyg.",
+            {
+              "points": [
+                "Ångra och Återställ (Ctrl+Z, Ctrl+Y) går igenom varje ändring i tabellen. En klistring eller en import räknas som ett steg.",
+                "Kopiera (Ctrl+C) kopierar hela tabellen eller det som är markerat, så som ett kalkylblad läser det. \"Transponerad\" gör om rader till kolumner.",
+                "Klistra in (Ctrl+V) sätter in kopierade rader i tabellen från den aktiva cellen och nedåt. Om den första raden innehåller enhetsnamn matchas kolumnerna efter dessa, och enheter som ännu inte finns i tabellen läggs till.",
+                "Import läser in en Excel-arbetsbok, en CSV- eller en TSV-fil istället för vad tabellen innehåller. \"Identifiera formatet automatiskt\" identifierar typen utifrån filen.",
+                "Export skriver tabellen som Excel, CSV, TSV eller JSON. Om kommatecken används före decimalerna skrivs CSV med semikolon, vilket kalkylblad förväntar sig. Ett Excel-ark rymmer 1 048 576 rader: en längre tabell fortsätter på nästa ark i samma arbetsbok, under samma rubriker.",
+                "Suddgummit tömmer de markerade raderna; papperskorgen tömmer hela tabellen."
+              ]
+            },
+            "En rad innehåller ett värde. För en inklistrad eller importerad rad som har flera värden tas det första och de övriga beräknas utifrån det.",
+            "Det kan ta en stund att klistra in, importera, exportera eller kopiera ett mycket stort antal rader. Ett kort över tabellen visar då hur långt arbetet har kommit, i procent och i rader, med en Stopp-knapp. En inklistring eller import som stoppas lämnar tabellen som den var; en export som stoppas skriver ingen fil.",
+            "När datorn inte har något minne kvar för raderna ändras ingenting och raden under tabellen anger hur mycket som behövdes. Om raderna får plats men tabellen som den var inte kunde behållas vid sidan av dem, får du frågan om du vill fortsätta utan ångra: den ändringen, och de före den, kan då inte längre tas tillbaka. Innan frågan ställs tas de äldsta stegen i Ångra bort för att göra plats.",
+            "Tabellalternativ (kugghjulet): vad kolumnrubriken ska visa (namn och symbol, namn eller symbol), om kopior och exporter ska inkludera rubrikerna och radnumren, \"Starta denna konverterare med dessa kolumner\" och \"Återställ tabellen\"."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Specialkonverterare",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valuta",
+          "body": [
+            "Valutor har ingen fast faktor: vad en valuta är värd förändras. Valutakonverteraren läser sina kurser från två kostnadsfria tjänster medan du använder den, och endast då.",
+            {
+              "points": [
+                "Länders valutor: Rates By Exchange Rate API, https://www.exchangerate-api.com . De ändras en gång per dag vid källan och läses inte oftare än så.",
+                "Kryptovalutor: Powered by CoinGecko, https://www.coingecko.com . De läses när konverteraren öppnas eller kommer i förgrunden och det befintliga värdet är äldre än en kvart, samt när du trycker på Uppdatera; aldrig via en timer."
+              ]
+            },
+            "Endast växelkurserna efterfrågas. Ingen information om dig skickas, och aldrig de belopp du konverterar.",
+            "Raden under tabellen, och under resultatet för Snabbkonvertering, anger när kurserna är ifrån. Utan anslutning används de senaste kurserna och markeras som gamla. En valuta som tjänsterna inte ger någon kurs för visas med ett bindestreck.",
+            "Inställningar → Units → Valuta: \"Hämta kurser från nätverket\" kan stängas av, varpå konverteraren använder de senaste sparade kurserna. \"Visa källnamn vid kurserna\" visar eller döljer namnen på de två tjänsterna på den raden.",
+            "Kurserna är endast för information. Lita inte på dem vid transaktioner."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Talsystem",
+          "body": [
+            "Enheterna i denna konverterare är sätt att skriva ett heltal: baser från 2 till 64, romerska siffror, bas 60 med kolon (1:30:15), binärkodad decimal och Gray-kod. Deras värden är text: skriv FF under hexadecimalt så visar de andra kolumnerna 255, 11111111 och så vidare.",
+            "Romerska siffror sträcker sig från I till MMMCMXCIX (1 till 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Enheter som inte är en enkel faktor",
+          "body": [
+            "De flesta enheter är en faktor av en annan. Vissa är inte det, och Units konverterar dem så som de är definierade: temperaturer med deras offset; bränsleförbrukning (liter per 100 km mot engelska mil per gallon); våglängd mot frekvens; konduktans mot resistans; grader Baumé, API, Brix och Plato mot densitet; decibel mot ljudtryck och intensitet; lutning i procent mot dess vinkel.",
+            "En temperatur och en temperaturskillnad är inte samma sak: 100 °C är 212 °F, men en skillnad på 100 °C är en skillnad på 180 °F. Enheterna i gruppen \"Differens (Δ)\" konverteras sinsemellan; mellan dem och temperaturskalorna visar en cell ett bindestreck."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Egna enheter",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Skapa en enhet",
+          "body": [
+            "Du kan lägga till egna enheter i vilken konverterare som helst. I enhetspanelen väljer du \"Ny enhet\", anger ett namn och en symbol, och definierar den utifrån en befintlig enhet.",
+            {
+              "points": [
+                "En faktor: \"1 steg = 0,75 m\". För en skala som inte börjar på noll, även vad som läggs till efter multiplikationen.",
+                "En formel: hur värdet blir den andra enheten, med x för värdet, och formeln för vägen tillbaka. Till exempel x * 9 / 5 + 32 och (x - 32) * 5 / 9."
+              ]
+            },
+            "Det du skriver testas medan du skriver, och resultatet för en av dina enheter visas innan du sparar den. En formel kan använda + − × ÷ ^, parenteser, x, pi, e, samt funktionerna sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos och atan. Den beräknas och körs aldrig som ett program.",
+            "Dina enheter listas under \"Mina\" i panelen, där de kan ändras och tas bort. En av dina enheter kan definieras utifrån en annan av dina enheter; att ta bort en enhet tar även bort de som definierats utifrån den.",
+            "Inställningar → Units listar dina enheter för varje konverterare, samt exporterar och importerar dem som text som du kan spara eller flytta till en annan dator."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inställningar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Inställningar för Units",
+          "body": [
+            "Arkiv → Öppna inställningar öppnar inställningarna för Units; det gör även tabellalternativen (kugghjulet i dess menyrad).",
+            {
+              "points": [
+                "Öppna varje konverterare i en egen flik, eller i den flik du befinner dig i.",
+                "Extremvärden fullt utskrivna, vad som skrivs mellan tusentalen (10000,000, 10 000,000 eller 10.000,000; ingenting om du inte väljer annat), samt radnummer.",
+                "Valuta: om kurserna läses från nätverket, och om tjänsterna namnges bredvid dem.",
+                "Enheternas precision: välj en konverterare (eller \"Enheter du ändrat\"), sök efter en enhet och ställ in dess decimaler med − och +; pilen återställer den till enhetens standardvärde. \"Använd för denna enhet överallt\" i en kolumns meny ställer in samma värde.",
+                "Enheter som en tabell startar med: de konverterare vars första kolumner du valt, var och en med ett sätt att återgå till de som levereras med programmet.",
+                "Dina egna enheter."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Om Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Om Units",
+          "body": [
+            "Units är konverteringsappen i Syntelab Creative: 38 konverterare med mer än 1 500 enheter, från längd och temperatur till valutor och talsystem. Ett värde som skrivs in en gång visas i varje enhet du begär, i en tabell som kan hantera ett värde eller miljontals sådana.",
+            "Siffror beräknas exakt, som bråktal, och avrundas endast när de skrivs ut. Allt sker på den här datorn; endast valutakurser läses från nätverket, och detta kan stängas av.",
+            "Det är nytt. Där det inte räcker till för ditt arbete, berätta för oss via Hjälp → Feedback: det är så vi vet vad vi ska arbeta med."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Hur många rader en tabell rymmer: vad vi mätte",
+          "body": [
+            "En tabell har ingen fast gräns för antal rader: den är så lång som datorns minne tillåter. En rad tar 16 byte, så 100 miljoner rader tar ungefär 1,5 GB. När minnet tar slut förblir tabellen som den var och programmet meddelar hur mycket som behövdes.",
+            "Vi mätte detta med 50 000 000 rader, där varje rad var ett nummer i en kolumn, i den optimerade versionen av programmet:",
+            {
+              "points": [
+                "Klistra in 50 000 000 rader: ca 7 sekunder.",
+                "Importera dem från en CSV-fil: 12 sekunder.",
+                "Exportera dem till en CSV-fil, med en andra kolumn konverterad: ca 3,5 minuter.",
+                "Exportera dem till Excel, på 48 ark: 4,3 minuter."
+              ]
+            },
+            "Export tar längre tid än import eftersom varje cell som skrivs först konverteras exakt.",
+            {
+              "note": "Datorn som testet kördes på: AMD Ryzen 9 9950X3D (16 kärnor, 32 trådar), 64 GB minne, Windows 11 Pro. Oktober 2026. På en annan dator kommer tiderna att skilja sig; storleken på en rad kommer inte att göra det."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Vad Units är byggt med",
+          "body": [
+            {
+              "points": [
+                "Exakta tal: Rusts num-bibliotek (bråktal av heltal i vilken storlek som helst).",
+                "Enheter, deras faktorer och deras grupper: programmets datafiler, en för varje konverterare.",
+                "Läsning av Excel- och OpenDocument-arbetsböcker: calamine. Skrivning av Excel-arbetsböcker: rust_xlsxwriter.",
+                "Systemets urklipp, för kopiering och klistring av mycket många rader: arboard.",
+                "Valutakurser: ExchangeRate-API och CoinGecko (se \"Valuta\")."
+              ]
+            },
+            "Det som delas med resten av programmet finns under \"Om Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Vad Units ännu inte kan göra",
+          "body": [
+            {
+              "points": [
+                "En rad innehåller ett värde: av en inklistrad rad med flera värden tas det första.",
+                "Export av mycket många rader är långsam (se vad vi mätte).",
+                "Det som kopieras till urklippet hålls i minnet som en text innan det klistras in.",
+                "Valutakurserna är så aktuella som deras två källor tillhandahåller dem: en gång om dagen för länders valutor."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

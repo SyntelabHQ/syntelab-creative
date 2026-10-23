@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Öppna och läsa",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Öppna ett dokument",
+          "body": [
+            "Arkiv → Öppna (Ctrl+O) öppnar en PDF i en egen flik. \"Öppna flera filer samtidigt\" öppnar varje vald fil i dess egen flik.",
+            "Filer som inte är PDF:er öppnas också som sidor: bilder (PNG, JPEG, TIFF, WebP och många fler), text- och webbfiler, e-böcker, XPS och kontorsdokument. Ett sådant dokument sparas ännu ingenstans: \"Spara\" frågar var.",
+            {
+              "note": "Kontorsdokument (Word, Excel, PowerPoint, OpenDocument) konverteras av Word, Excel eller PowerPoint, eller av LibreOffice, beroende på vad som finns på datorn. Utan något av dessa kan de inte öppnas."
+            },
+            "Filer som släpps på en tom flik samlas i en pärm; släpps de på ett dokument läggs deras sidor till i det.",
+            "I Windows kan PDF Organizer vara appen som öppnar PDF-filer när du dubbelklickar på dem: på startsidan öppnar \"Ange som standard\" Windows-inställningarna, där du väljer Syntelab Creative för PDF-filer."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Visa sidor",
+          "body": [
+            "Vyn-menyn avgör hur dokumentet visas; inget i den ändrar själva filen.",
+            {
+              "points": [
+                "Zoom: in, ut, verklig storlek, anpassa sida, anpassa bredd, anpassa höjd. Ctrl och mushjulet zoomar också.",
+                "Sidvisning: en sida eller två sida vid sida, med eller utan omslagssida, samt rullning genom alla sidor som ett långt band.",
+                "Hjälplinjer: linjaler och ett rutnät, i den enhet som valts i Inställningar.",
+                "\"Visa miniatyrbilder\": de små sidorna på sidan. Klicka på en för att gå till den; dokumentets bokmärken finns i samma panel.",
+                "\"Läsläge\" döljer verktygen; \"Helskärmsläge\" döljer allt utom sidan. Escape avslutar båda."
+              ]
+            },
+            "Raden ovanför sidorna (snabbverktygsfältet) innehåller sidnummer, zoom och de knappar du valt i Inställningar."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Söka efter text",
+          "body": [
+            "Redigera → Sök i dokument (Ctrl+F): skriv ett ord eller en fras; ställena där det hittas markeras på sidorna, och pilarna går från ett till nästa.",
+            {
+              "note": "Ett skannat dokument består av bilder av sidor och har ingen text att söka i förrän texten har identifierats: se \"Känna igen text (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Dokumentegenskaper",
+          "body": [
+            "Arkiv → Dokumentegenskaper visar vad dokumentet säger om sig själv: titel, författare, datumen det skapades och ändrades, antal sidor och filstorlek."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spara, skriva ut och skicka",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Spara och Spara som",
+          "body": [
+            "Inget du gör ändrar filen på disken förrän du sparar. Fram till dess kan varje steg ångras (Ctrl+Z) och göras om (Ctrl+Y).",
+            {
+              "points": [
+                "Spara (Ctrl+S) skriver över dokumentets fil.",
+                "Spara som (Ctrl+Shift+S) skriver det till en ny fil, som sedan tar flikens plats; den gamla filen förblir oförändrad."
+              ]
+            },
+            "Om ett annat program har filen öppen kan den inte skrivas över: programmet meddelar detta och behåller dina ändringar så att de kan sparas under ett annat namn.",
+            {
+              "note": "Om ett ändrat dokument sparas över en fil som är signerad med ett certifikat tas signaturerna bort. Programmet frågar först och erbjuder att \"Spara som ny fil\"; frågan kan stängas av under Inställningar → Signaturer."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Skapa en PDF",
+          "body": [
+            "Arkiv → Skapa en PDF skapar ett nytt dokument:",
+            {
+              "points": [
+                "från en fil, eller från flera: kombinerade till en PDF, eller en PDF för varje;",
+                "från en webbsida, via den adress du anger (sidan sparas med den webbläsare som är installerad på datorn);",
+                "från innehållet i urklippet;",
+                "från tomma sidor i den storlek du väljer."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Exportera till ett annat format",
+          "body": [
+            "Arkiv → Exportera skriver dokumentet i ett annat format: Word eller OpenDocument-text, ren text, en webbsida, XML, bilder av sidorna (PNG, JPEG, TIFF, SVG) eller PostScript. För bilder väljer du upplösningen.",
+            "Dokumentet i sig förblir en PDF; exporten blir en ny fil.",
+            {
+              "note": "Text kan endast exporteras där dokumentet innehåller text. Känn först igen texten i en skanning."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Utskrift",
+          "body": [
+            "Arkiv → Skriv ut (Ctrl+P) skriver ut dokumentet så som det är arrangerat nu, inklusive det du har ritat på det. Välj sidor, papper, om bladen ska ligga stående eller liggande, och om sidorna ska anpassas till bladet eller skrivas ut i sin verkliga storlek; därefter öppnas systemets utskriftsfönster där du väljer skrivare.",
+            "Papper, orientering och skalning som utskriftsfönstret startar med är inställda under Inställningar → Utskrift."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Dela",
+          "body": [
+            "Arkiv → Dela skickar dokumentet till systemets fönster för delning: e-post, en närliggande enhet och andra appar. Dokumentet delas så som det är nu, med dina osparade ändringar."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organisera sidor",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Organisera-vyn",
+          "body": [
+            "Organisera → Organisera sidor visar varje sida i ett rutnät. Ingenting ändras på disken förrän du sparar.",
+            {
+              "points": [
+                "Markera: klicka på en sida; Ctrl+klick lägger till en, Shift+klick markerar ett intervall. \"Markera alla sidor\", \"Markera ingen\", \"Markera udda sidor\" och \"Markera jämna sidor\" finns i menyn.",
+                "Flytta: dra de markerade sidorna till deras nya plats, eller använd \"Flytta vänster\" och \"Flytta höger\".",
+                "Vrid: \"Markerade: rotera vänster\" och \"Markerade: rotera höger\" vrider de markerade sidorna; \"Alla sidor: rotera vänster\" och \"Alla sidor: rotera höger\" vrider varje sida.",
+                "Ta bort: Delete-tangenten, eller \"Ta bort sidor\". Ett dokument behåller alltid minst en sida.",
+                "Kopiera, klipp ut och klistra in (Ctrl+C, Ctrl+X, Ctrl+V): sidor kan klistras in i samma dokument eller i ett annat som är öppet i programmet.",
+                "Storlek: skjutreglaget högst upp gör sidorna större eller mindre; det gör även Ctrl + mushjulet över sidorna samt \"Zooma in\" och \"Zooma ut\" (Ctrl+= och Ctrl+-). Storleken sparas."
+              ]
+            },
+            "Samma kommandon fungerar utan rutnätet, direkt på sidan i vyn."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Extrahera sidor och dela upp ett dokument",
+          "body": [
+            "Organisera → Extrahera sidor tar ut de markerade sidorna som ett nytt dokument i en egen flik, ännu ej sparat. Du kan också välja att varje sida skrivs som en egen fil, och välja om sidorna ska tas bort från detta dokument.",
+            "Organisera → Dela dokument skriver ut dokumentet som flera mindre filer; detta dokument förblir oförändrat.",
+            "Namnen på de nya dokumenten följer mönstren i Inställningar → Namn på nya dokument.",
+            {
+              "note": "Signaturer som skapats med ett certifikat förs inte över till extraherade eller uppdelade dokument: en signatur är endast giltig för den fil den skapades i."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Infoga och ersätta sidor",
+          "body": [
+            {
+              "points": [
+                "Organisera → Infoga sidor lägger till sidor från en annan fil (PDF, bild, text, kontorsdokument) efter den markerade sidan, eller i slutet.",
+                "Organisera → Ersätt sidor placerar sidor från en annan fil istället för de markerade.",
+                "Infoga → Blank sida lägger till en tom sida med samma storlek som grannsidan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Beskära och ändra storlek på sidor",
+          "body": [
+            "Redigera → Beskär sidor klipper bort kanterna på sidor med marginaler som du skriver in eller drar. Ingenting tas bort från filen: sidorna visar bara mindre.",
+            "Redigera → Ändra sidstorlek placerar sidor på ett annat pappersformat (A4, Letter och andra). Innehållet kan skalas för att passa eller behållas i sin storlek och placeras på ett av nio ställen på det nya arket.",
+            "Båda frågar vilka sidor: alla, de markerade, ett intervall, udda eller jämna."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kombinera filer",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Pärmen",
+          "body": [
+            "Kombinera → Ny pärm öppnar en plats för att samla filer och skriva ut dem som en PDF.",
+            {
+              "steps": [
+                "Lägg till filer med \"Lägg till filer\", eller dra dem till pärmen. PDF:er, bilder, text och kontorsdokument kan blandas.",
+                "Dra korten i den ordning du vill ha, eller använd pilarna på varje kort.",
+                "Öppna ett kort för att välja vilka av dess sidor som ska inkluderas.",
+                "\"Kombinera filer\" skriver ut dem, i ordning, som ett nytt dokument i en egen flik."
+              ]
+            },
+            "Själva filerna ändras inte.",
+            "Skjutreglaget högst upp gör sidorna på korten större eller mindre; det gör även Ctrl + mushjulet samt \"Zooma in\" och \"Zooma ut\" (Ctrl+= och Ctrl+-). Storleken sparas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Skriva och rita på sidor",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Verktygen",
+          "body": [
+            "Ritverktygen öppnas som en panel bredvid sidan, som ett rutnät av knappar eller som en lista med namn (Inställningar avgör). Med ett verktyg valt, dra eller klicka på sidan; Escape lägger ifrån sig verktyget.",
+            {
+              "points": [
+                "Text: klicka och skriv. Teckensnitt, storlek, färg, fetstil, kursiv och justering finns i panelen.",
+                "Bild: välj en bild, dra sedan var den ska placeras och hur stor den ska vara.",
+                "Former: rektangel, ellips, linje, pil, bock, kryss, punkt.",
+                "Markering: dra över det som ska framhävas; det som ligger under förblir läsbart."
+              ]
+            },
+            "Med \"Markera, flytta och ändra storlek\" kan en markering väljas igen: dra i den, dra i hörnen, vrid den med handtaget, ändra färger i panelen eller ta bort den med Delete-tangenten. Markeringar kan kopieras och klistras in, även till andra sidor.",
+            "Allt som ritas skrivs in i filen när du sparar."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Ändra dokumentets egna texter och bilder",
+          "body": [
+            "Verktyget \"Redigera dokumentets text och bilder\" markerar vad sidan själv innehåller. Klicka på en textrad för att skriva om den, eller på en bild för att flytta, ändra storlek, vrida eller ta bort den.",
+            {
+              "note": "Detta ändrar en rad eller en bild i taget. Stycken flödar inte om en rad blir längre, och en bild som ligger över en annan väljs tillsammans med den. För större ändringar, redigera dokumentet i det program det skrevs i."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Maskering",
+          "body": [
+            "Fler verktyg → Maskera tar permanent bort det som inte får läsas: dra en svart ruta över det, på vilken sida som helst. När du sparar tas texten och bilderna under rutan bort från filen, de täcks inte bara över.",
+            {
+              "note": "Spara det svartade dokumentet under ett nytt namn och förvara originalet på ett säkert ställe: det som svartats kan inte återställas."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Vattenstämpel",
+          "body": [
+            "Redigera → Vattenstämpel skriver ord eller placerar en bild på de sidor du väljer: rakt eller snett, på någon av nio platser, så stor och blek som du ställer in. På varje sida blir det sedan en markering som alla andra och kan fortfarande flyttas eller tas bort."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Sidnummer, sidhuvud och sidfot, Bates-nummer",
+          "body": [
+            {
+              "points": [
+                "Redigera → Sidnummer: formatet (1, 1 / 12, Sida 1 och andra), placeringen och vilka sidor som ska ha ett.",
+                "Infoga → Sidhuvud och sidfot: text på någon av sex platser. Där står {page} för sidnumret, {pages} för antal sidor, {date} för dagens datum och {file} för dokumentets namn.",
+                "Infoga → Bates-numrering: nummer i följd med ett ord före eller efter (ABC000123), som används för dokument i ett rättsfall."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Länkar, bokmärken och bifogade filer",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Länkar",
+          "body": [
+            "Infoga → Länk: dra över det ställe som ska vara klickbart, ange sedan vart den leder: en webbadress eller en sida i det här dokumentet.",
+            "Länkar i ett dokument fungerar medan du läser det: ett klick på en länk till en sida går dit; en webb- eller e-postadress skickas till din webbläsare eller ditt e-postprogram."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Bokmärken",
+          "body": [
+            "Infoga → Nytt bokmärke: klicka på det ställe den ska leda till och ge den en titel. Infoga → Bokmärken öppnar listan där ett bokmärke kan byta namn eller tas bort. Ändringarna sparas när du sparar dokumentet."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Bifogade filer",
+          "body": [
+            "Infoga → Bifoga fil: välj en fil och klicka där gemet ska placeras. Du kan ge den ett namn och en författare, färglägga gemet, ändra storlek och rotera det. Filen sparas inuti PDF-filen när du sparar.",
+            "Infoga → Bifogade filer listar vad dokumentet innehåller; varje fil kan sparas på disk eller tas bort. Ett klick på ett gem öppnar samma lista."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formulär",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Fylla i ett formulär",
+          "body": [
+            "Infoga → Fyll i formulär visar dokumentets fält: skriv i textfält, markera kryssrutor, välj från listor. Svaren skrivs in i filen när du sparar."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Skapa ett formulär",
+          "body": [
+            "Menyn Infoga lägger till fält i vilket dokument som helst: ett textfält, en kryssruta, alternativknappar (varav en kan väljas), en lista att välja ifrån och ett signaturfält som lämnas tomt för undertecknaren.",
+            "Dra på sidan där fältet ska placeras. Liksom andra markeringar kan ett fält flyttas och storleksändras tills du sparar; därefter blir det en del av formuläret."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Signering",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Lägga till en handritad signatur",
+          "body": [
+            "Signera → Lägg till signatur placerar en bild av en signatur på sidan: ritad här med en penna du väljer, skriven med ett typsnitt eller tagen från en bild (använd \"Behåll endast penndragen\" för ett foto av ett signerat ark). Datumet kan skrivas under signaturen.",
+            "Dra till den sida där den ska placeras. Signaturer du har använt sparas på den här datorn för att kunna användas igen.",
+            {
+              "note": "Detta är en bild: den bevisar ingenting om vem som placerade den där. En signatur som bevisar vem som signerat, och att inget har ändrats sedan dess, skapas med ett certifikat."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Signering med certifikat",
+          "body": [
+            "Signera → Signera med certifikat skapar en digital signatur: den anger vem som signerat och förseglar dokumentet, så att varje senare ändring syns.",
+            {
+              "steps": [
+                "Dra området där signaturen ska visas till sidan (ett fönster anger detta först; det kan stängas av). För att signera utan att något visas på sidorna, välj istället \"Signera utan att visa det på en sida\".",
+                "Välj certifikat: ett av datorns (ett kort eller en token visas bland dem när den sitter i sin läsare), eller en .pfx / .p12-fil med tillhörande lösenord. \"Fortsätt\".",
+                "Välj signaturens utseende. Under \"Orsak och plats\" kan du skriva varför och var du signerar: dessa läggs till i signaturen, och på sidan om utseendet visar dem. Markera \"Lås dokumentet efter signering\" om ingen ska kunna signera eller ändra det efter dig. Låt \"Lägg till betrodd tid (tidsstämpel)\" vara markerat så att en tidsstämpeltjänst bekräftar när du signerade.",
+                "\"Signera\", välj sedan var den signerade filen ska sparas. En token efterfrågar sin PIN-kod vid detta steg."
+              ]
+            },
+            "Den signerade filen öppnas istället för dokumentet. Ett lösenord eller en PIN-kod sparas aldrig av programmet.",
+            {
+              "note": "En kvalificerad signatur är en som skapas på detta sätt med ett kvalificerat certifikat på ett kort eller en token. Signeringen sker på din dator; endast tidsstämpeln och kontrollen av ditt certifikat sker online, och då skickas hashvärden och certifikatets serienummer, aldrig dokumentet."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Signaturutseenden",
+          "body": [
+            "Ett utseende anger hur en certifikatsignatur ser ut på sidan. Spara flera under egna namn: ett för att signera för ett företag, ett för att signera i eget namn.",
+            {
+              "points": [
+                "Bild: ingen, från en fil (en stämpel, en skannad signatur) eller ritad här.",
+                "Visad text: namn, datum, orsak, plats, var och en med eller utan etikett.",
+                "Egna rader under namnet, till exempel roll och företag.",
+                "\"Standardtext\" finns alltid med: vem som har signerat och när."
+              ]
+            },
+            "I signeringsfönstret: \"Ny…\", \"Redigera…\", \"Ta bort\". Den senast använda visas först. Utseenden sparas på den här datorn."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Flera signaturer och låsning",
+          "body": [
+            "Ett dokument kan signeras av flera personer, efter varandra. Öppna den signerade filen och signera den utan att ändra något: din signatur läggs till i slutet av filen och de tidigare förblir giltiga.",
+            "\"Lås dokumentet efter signering\" (avstängt om du inte markerar det) stänger dokumentet: ingen kan signera efter dig och inget mer får ändras. Detta kan inte ångras.",
+            {
+              "note": "Om du ändrar ett signerat dokument innan du signerar det igen, måste det skrivas om och de tidigare signaturerna utelämnas. Signeringsfönstret varnar dig: för att behålla dem, öppna filen igen och signera utan att ändra något."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Tidsstämplar",
+          "body": [
+            "En tidsstämpel är en tidsstämpeltjänsts signerade intyg om när något fanns. Annars kommer tiden i en signatur från klockan i signaturgivarens dator, som vem som helst kan ställa om; en tidsstämpel bevisar tidpunkten och gör att signaturen kan styrkas även efter att certifikatet har gått ut (PAdES B-T).",
+            {
+              "points": [
+                "Signaturer får en när \"Lägg till betrodd tid (tidsstämpel)\" är markerat i signeringsfönstret. Under Inställningar → Signaturer anger du om det är markerat från början, här och vid batchbearbetning.",
+                "Signera → Lägg till tidsstämpel ger hela dokumentet en egen tidsstämpel, utan certifikat: den bevisar att dokumentet fanns, exakt som det är, vid den tidpunkten. Det sparas som en ny fil; filens signaturer förblir giltiga."
+              ]
+            },
+            "Tjänsten är DigiCerts (http://timestamp.digicert.com), gratis och betrodd av Adobe Reader och Windows; en annan kan anges under Inställningar → Signaturer. Den tar bara emot ett hashvärde (SHA-256), aldrig dokumentet, och en internetanslutning krävs. När en signatur får en tidsstämpel tillfrågas också utfärdaren av ditt certifikat om certifikatet fortfarande är giltigt, och svaret sparas i signaturen (långtidsvalidering): Adobe Reader kan då visa signaturen som giltig, både nu och efter att certifikatet har gått ut.",
+            {
+              "note": "Om tidsstämpeltjänsten inte kan nås signeras eller sparas ingenting: försök igen, eller avmarkera tidsstämpeln för att signera utan den."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Kontrollera signaturer",
+          "body": [
+            "Signera → Verifiera signaturer listar varje certifikatsignatur i filen: vem som signerat, vem som utfärdat certifikatet, när, anledning och plats, samt",
+            {
+              "points": [
+                "om dokumentet är oförändrat sedan den signaturen (en annan signatur som lagts till efteråt räknas inte som en ändring);",
+                "om signaturen låser dokumentet;",
+                "om den här datorn litar på myndigheten bakom certifikatet, och om certifikatet är giltigt idag;",
+                "tiden som bekräftats av dess tidsstämpel, och av vilken tjänst, om den har en. En tidsstämpel för hela dokumentet listas också, med en egen kontroll."
+              ]
+            },
+            "Kontrollen avser filen så som den senast sparades och utförs på den här datorn utan att ansluta till internet. Om du klickar på en signatur på en sida öppnas den här listan vid den. Under varje signatur öppnar ”Visa certifikat” certifikatets Windows-fönster (kedjan och alla detaljer; därifrån gör ”Installera certifikat” att den här datorn litar på ett certifikat som du känner till), och ”Validera” frågar certifikatets utfärdare online, bara när du trycker på den, om certifikatet har återkallats."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fler verktyg",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Textigenkänning (OCR)",
+          "body": [
+            "Fler verktyg → Känn igen text (OCR) läser orden på skannade sidor och skriver in dem i sidorna osynligt, så att dokumentet kan sökas i och dess text kopieras och exporteras. Sidornas utseende ändras inte.",
+            "Markera endast de språk som sidorna är skrivna på; sidor som redan har text lämnas orörda.",
+            {
+              "note": "Läsningen utförs av Tesseract-motorn, ett gratisprogram som installeras separat. Utan det visas kommandot för att installera det på Windows i fönstret."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Minska dokumentets storlek",
+          "body": [
+            "Fler verktyg → Komprimera sparar dokumentet som en mindre fil genom att ge dess fotografier och skanningar färre pixlar. Tre styrkor finns; text och ritningar förblir lika skarpa som tidigare. Ett dokument med få bilder vinner lite på detta."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Jämföra två dokument",
+          "body": [
+            "Fler verktyg → Jämför dokument: välj en annan PDF. De två visas sida vid sida, sida för sida, där de sidor vars text skiljer sig markeras och de rader som endast finns i det ena dokumentet listas."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Batchbearbetning: många filer samtidigt",
+          "body": [
+            "Fler verktyg → Batchbearbetning utför samma åtgärder på många filer i en egen flik. Varje resultat blir en ny fil. Om resultat skulle ta platsen för filer som redan finns i mappen (dina egna filer, när de hamnar i sin mapp utan att något läggs till i namnen) får du först frågan om du vill ersätta dem, hoppa över dem eller avbryta. En fil ersätts först när dess resultat är klart; en fil som är öppen (i en flik här eller i ett annat program) lämnas som den är och markeras som inte klar.",
+            {
+              "steps": [
+                "Lägg till filerna till vänster: \"Lägg till filer\", \"Lägg till mapp\" (inklusive undermappar), eller dra och släpp dem.",
+                "Kryssa i vad som ska göras till höger. Varje fil blir en PDF i vilket fall som helst; utöver det kan du rotera sidor, känna igen text, lägga till sidhuvud och sidfot, en vattenstämpel eller sidnummer, göra filerna mindre, signera dem med ett certifikat eller exportera dem i ett annat format. Numren visar ordningsföljden.",
+                "Välj hur det ska sparas: en fil för varje, eller allt i en PDF (i listans ordning), samt mappen där resultaten ska hamna. När alla filer kommer från en och samma mapp väljs den mappen åt dig tills du väljer en annan; annars är det den mapp du senast valde.",
+                "\"Starta\". Varje fil visar hur det gick; körningen kan stoppas mellan filerna."
+              ]
+            },
+            {
+              "points": [
+                "Recept: \"Spara som recept\" sparar allt du valt (förutom filerna och eventuella lösenord) under ett namn, för att kunna ställas in igen med ett enda val.",
+                "\"Behåll filernas mappstruktur i resultaten\" återskapar mappstrukturen för en tillagd mapp.",
+                "\"Skriv en rapport över körningen\" skapar en textfil bredvid resultaten som anger vad som skrevs och vad som misslyckades.",
+                "En PDF som endast är signerad behåller sina signaturer; om något annat görs med den i samma körning skrivs den om och signaturerna utelämnas."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inställningar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Inställningar för PDF Organizer",
+          "body": [
+            "Arkiv → Inställningar (eller Inställningar i sidofältet, sedan PDF Organizer). Varje inställning kan återställas individuellt eller alla samtidigt.",
+            {
+              "points": [
+                "När ett dokument öppnas: hur stort ett dokument som visas när det öppnas, rullning eller en sida i taget, om miniatyrbilder visas eller inte.",
+                "Enheter, linjaler och rutnät: enheten (millimeter, tum, punkter), linjaler, rutnätet och dess avstånd.",
+                "Utskrift: det papper, den orientering och den skalning som utskriftsfönstret startar med.",
+                "Snabbtoolrad: vilka knappar som finns på raden ovanför sidorna.",
+                "Namn på nya dokument: mönster för extraherade sidor, nya dokument och den PDF som batchbearbetning samlar många filer i.",
+                "Signaturer: om \"Spara\" ska fråga innan en signerad fil skrivs över.",
+                "Tangentbordsgenvägar: klicka på tangenterna för ett kommando och tryck sedan på de nya."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Om PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Om PDF Organizer",
+          "body": [
+            "PDF Organizer är PDF-appen i Syntelab Creative: den läser PDF-dokument, arrangerar och kombinerar deras sidor, skriver och ritar på dem, fyller i och skapar formulär, signerar med ett certifikat och kontrollerar signaturer, och gör samma saker med många filer samtidigt.",
+            "Den är ny, och en del av dess funktioner är ett första steg. Där den inte räcker till för dina dokument, berätta för oss via Hjälp → Feedback: det är så vi vet vad vi ska arbeta med."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Vad PDF Organizer är byggd med",
+          "body": [
+            {
+              "points": [
+                "Läsa, rita och skriva PDF: MuPDF.",
+                "Känna igen text (OCR): Tesseract, om det är installerat på datorn.",
+                "Öppna kontorsdokument: Word, Excel och PowerPoint, eller LibreOffice, beroende på vad som är installerat.",
+                "Spara en webbsida som PDF: webbläsaren som är installerad på datorn.",
+                "Signering med certifikat: Windows certifikattjänster; signaturer skrivs enligt PAdES-standarden."
+              ]
+            },
+            "Vad den delar med resten av programmet finns under \"Om Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Vad PDF Organizer ännu inte kan göra",
+          "body": [
+            {
+              "points": [
+                "Office-dokument öppnas av kontorspaketet på datorn; utan Word, Excel, PowerPoint eller LibreOffice kan de inte öppnas. En egen konverterare arbetas på: se \"Vad vi arbetar på\".",
+                "Textigenkänning kräver Tesseract-motorn, som installeras separat.",
+                "Själva texten i ett dokument ändras en rad i taget; stycken flödar inte om.",
+                "Bilder tryckta i fyra färger (CMYK) kan inte markeras för att flyttas.",
+                "”Validera” visar om ett certifikat är återkallat i dag, inte när det återkallades.",
+                "Signering med certifikat fungerar för närvarande på Windows; på Linux och macOS kommer det i en senare version."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Umrechnen",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Die Umrechner",
+          "body": [
+            "Units rechnet Werte zwischen Maßeinheiten um: einzelne Werte schnell oder ganze Wertetabellen auf einmal. Alle Berechnungen erfolgen auf Ihrem Computer.",
+            "Die Umrechner sind in sechs Menüs angeordnet: Grundlagen, Bewegung und Mechanik, Energie und Leistung, Wissenschaft, Digitales und Medien sowie Spezielle Physik. Wenn Sie einen Umrechner auswählen, wird seine Tabelle geöffnet.",
+            {
+              "points": [
+                "Ein Umrechner öffnet sich im aktuellen Tab. Enthält seine Tabelle Werte, werden Sie vorher gefragt: „Fortfahren“ (die Werte gehen verloren), „In neuem Tab öffnen“ oder „Abbrechen“.",
+                "Einstellungen → Units → „Jeden Umrechner in einem eigenen Tab öffnen“ öffnet jeden ausgewählten Umrechner stattdessen in einem neuen Tab.",
+                "Datei → Zur Startseite bringt Sie zur ersten Seite von Units zurück."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Schnell umrechnen",
+          "body": [
+            "Auf der ersten Seite von Units, „Schnell umrechnen“, rechnen Sie einen Wert von einer Einheit in eine andere um. Wählen Sie einen Umrechner, geben Sie den Wert auf der Seite „Von“ ein und wählen Sie die beiden Einheiten. Das Ergebnis erscheint auf der Seite „Nach“.",
+            {
+              "points": [
+                "Jede Seite zeigt die gängigen Einheiten des Umrechners und Ihre eigenen Einheiten sowie ein Suchfeld. Die Umrechnungstabelle enthält alle Einheiten.",
+                "Mit der Schaltfläche zwischen den Seiten tauschen Sie die Einheiten.",
+                "Mit dem Lesezeichen neben einer Einheit heften Sie sie an. Angeheftete Einheiten stehen in beiden Listen und im Einheitenbereich der Tabelle oben.",
+                "Über die Schaltfläche im Ergebnis können Sie es kopieren; mit × löschen Sie den Wert.",
+                "„In der Tabelle öffnen“ öffnet die Tabelle des Umrechners."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Zahlen lesen und schreiben",
+          "body": [
+            "Sie können Zahlen so eingeben und einfügen, wie sie in verschiedenen Ländern geschrieben werden: 1,234.56 und 1.234,56 werden beide verstanden. Auch Leerzeichen und Apostrophe als Tausendertrennzeichen sowie 1.5e-3 für eine Zehnerpotenz sind möglich.",
+            "Lässt sich eine Zahl auf zwei Arten lesen (1,234 als Tausend oder als Eins und ein Bruchteil), wird sie gemäß der Zahlenschreibweise der Programmsprache interpretiert. In der Zeile unter der Tabelle steht, welche Schreibweise gilt.",
+            "Ein Ergebnis wird mit der Dezimalgenauigkeit der Zieleinheit angezeigt, nicht mit so vielen Stellen wie die eingegebene Zahl: 5 cm sind 1,97 in. Ein Wert ungleich null zeigt immer einige aussagekräftige Ziffern, daher wird 1 cm als 0,00001 km und nie als 0,000 km angezeigt.",
+            "Sehr große oder kleine Werte, die sich nicht auf einen Blick lesen lassen, werden mit Zehnerpotenz geschrieben, etwa 1,6 × 10⁻³⁵. Mit Ansicht → Extremwerte vollständig anzeigen werden stattdessen alle Nullen ausgeschrieben.",
+            "Wenn eine Einheit für einen Wert kein Ergebnis hat (zum Beispiel Schalldruck von null ohne Dezibelwert), zeigt das Feld einen Gedankenstrich."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die Tabelle",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Zeilen und Spalten",
+          "body": [
+            "Jede Spalte steht für eine Einheit und jede Zeile für einen Wert. Die Zelle, in die Sie einen Wert eingeben, steuert die Zeile: Die übrigen Spalten zeigen denselben Wert in ihren Einheiten. Die bearbeitete Zelle ist fett markiert.",
+            "Eingaben, die keine Zahl sind, bleiben erhalten und werden rot angezeigt. In dieser Zeile wird nichts umgerechnet, bis Sie den Eintrag korrigieren.",
+            {
+              "points": [
+                "Doppelklicken Sie auf eine Zelle oder beginnen Sie direkt mit der Eingabe, um sie zu bearbeiten. Eingabe wechselt nach unten, Tab nach rechts; mit den Pfeiltasten bewegen Sie sich weiter. Esc stellt den vorherigen Zelleninhalt wieder her.",
+                "Klicken Sie auf die Ecke (#), um die ganze Tabelle auszuwählen, auf eine Zeilennummer für die Zeile oder auf eine Überschrift für die Spalte. Mit Umschalt+Klick wählen Sie einen Bereich, mit Strg+Klick fügen Sie Zellen hinzu. Auch durch Ziehen können Sie auswählen.",
+                "Pos1 und Ende wechseln zur ersten und letzten Spalte der Zeile; Strg+Pos1 zur ersten Zelle der Tabelle und Strg+Ende zur letzten. Strg zusammen mit einer Pfeiltaste springt zum Tabellenrand: zur ersten oder letzten Zeile beziehungsweise Spalte. Bild auf und Bild ab blättern um eine Bildschirmseite. Mit Umschalt erweitern diese Tasten die Auswahl.",
+                "Eine Auswahl mehrerer Zellen wird außen umrandet. Die Zelle, in die Sie schreiben, bleibt innerhalb der Auswahl unmarkiert.",
+                "Entf leert die ausgewählten Zeilen.",
+                "Wenn Sie in der letzten Zeile einen Wert eingeben, wird eine neue Zeile angefügt. Für die Tabellenlänge gibt es keine feste Grenze; maßgeblich ist der verfügbare Arbeitsspeicher (eine Zeile benötigt 16 Byte, 100 Millionen Zeilen etwa 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Spalten und Einheitenbereich",
+          "body": [
+            "Der Bereich neben der Tabelle listet die Einheiten des Umrechners auf. Oben stehen die Einheiten in der Tabelle. Klicken Sie auf eine, um ihre Spalte zu entfernen. Darunter finden Sie alle Einheiten: Suchen Sie nach Name oder Symbol, filtern Sie nach Gruppe oder „Beliebt“ und klicken Sie auf eine Einheit, um sie als Spalte hinzuzufügen.",
+            "Mit dem Lesezeichen neben einer Einheit heften Sie sie als Favorit an. Sie erscheint dann oben in der Liste und bei „Schnell umrechnen“.",
+            {
+              "points": [
+                "Die Spalten teilen sich die Tabellenbreite gleichmäßig, bis ihre Überschriften nicht mehr hineinpassen. Danach lässt sich die Tabelle seitlich scrollen.",
+                "Ziehen Sie am Rand einer Überschrift, um die Spaltenbreite zu ändern. Mit einem Doppelklick auf den Rand passt sich die Spalte an ihren längsten Wert an. Auch die Spalte mit den Zeilennummern lässt sich ziehen.",
+                "Über die Schaltfläche ⋮ einer Spalte können Sie sie nach links oder rechts verschieben, am linken oder rechten Rand anheften, ihre Genauigkeit ändern oder sie entfernen.",
+                "Eine Änderung der Genauigkeit wirkt zunächst nur für diese Spalte. „Für diese Einheit überall verwenden“ übernimmt die Genauigkeit für diese Einheit in allen Tabellen und bei „Schnell umrechnen“.",
+                "Die Schaltfläche mit den zwei Pfeilen neben „Rückgängig“ und „Wiederholen“ passt die Spalten an die Tabellenbreite an. Alle manuell angepassten Spaltenbreiten werden zurückgesetzt und die Spalten teilen sich die Breite wieder gleichmäßig.",
+                "Die beiden oberen Bereiche im Bedienfeld – die Einheiten in der Tabelle und „Einheiten hinzufügen“ mit Suche und Filtern – können Sie durch Klick auf ihre Überschrift einklappen, damit die Liste mehr Platz hat."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Rückgängig, Kopieren, Einfügen, Importieren und Exportieren",
+          "body": [
+            "Die Leiste über der Tabelle enthält ihre Werkzeuge.",
+            {
+              "points": [
+                "„Rückgängig“ und „Wiederholen“ (Strg+Z, Strg+Y) gehen alle Tabellenänderungen durch. Ein Einfügen oder Importieren zählt jeweils als ein Schritt.",
+                "„Kopieren“ (Strg+C) kopiert die ganze Tabelle oder die Auswahl in einem Format, das Tabellenkalkulationen lesen können. „Transponiert“ macht aus Zeilen Spalten.",
+                "„Einfügen“ (Strg+V) fügt kopierte Zeilen ab der aktiven Zelle nach unten in die Tabelle ein. Enthält die erste Zeile Einheitenüberschriften, werden die Spalten anhand dieser zugeordnet und noch nicht vorhandene Einheiten ergänzt.",
+                "„Importieren“ liest eine Excel-Arbeitsmappe, CSV- oder TSV-Datei ein und ersetzt damit den Tabelleninhalt. „Format automatisch erkennen“ bestimmt den Typ anhand der Datei.",
+                "„Exportieren“ speichert die Tabelle als Excel, CSV, TSV oder JSON. Bei Komma als Dezimaltrennzeichen wird eine CSV-Datei mit Semikolons geschrieben, wie es Tabellenkalkulationen erwarten. Ein Excel-Arbeitsblatt fasst 1.048.576 Zeilen. Längere Tabellen werden auf weiteren Blättern derselben Arbeitsmappe mit denselben Überschriften fortgesetzt.",
+                "Der Radierer leert ausgewählte Zeilen; der Papierkorb leert die ganze Tabelle."
+              ]
+            },
+            "Jede Zeile enthält einen Wert. Bei einer eingefügten oder importierten Zeile mit mehreren Werten wird der erste übernommen und die übrigen werden daraus berechnet.",
+            "Das Einfügen, Importieren, Exportieren oder Kopieren sehr vieler Zeilen kann dauern. Dann zeigt eine Karte über der Tabelle den Fortschritt in Prozent und Zeilen sowie eine Schaltfläche „Anhalten“. Wird ein Einfügen oder Import abgebrochen, bleibt die Tabelle unverändert; ein abgebrochener Export erstellt keine Datei.",
+            "Reicht der Arbeitsspeicher des Computers für die Zeilen nicht aus, wird nichts geändert und die Zeile unter der Tabelle zeigt den benötigten Speicher an. Wenn die Zeilen zwar hineinpassen, die bisherige Tabelle aber nicht zusätzlich gespeichert werden kann, werden Sie gefragt, ob Sie ohne Rückgängig-Funktion fortfahren möchten. Dann lassen sich diese und vorherige Änderungen nicht mehr zurücknehmen. Vor der Rückfrage werden die ältesten Rückgängig-Schritte verworfen, um Platz zu schaffen.",
+            "Tabellenoptionen (Zahnrad): Anzeige der Spaltenüberschrift (Name und Symbol, Name oder Symbol), Überschriften und Zeilennummern beim Kopieren und Exportieren einbeziehen, „Umrechner mit diesen Spalten öffnen“ und „Tabelle zurücksetzen“."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spezielle Umrechner",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Währung",
+          "body": [
+            "Für Währungen gibt es keinen festen Umrechnungsfaktor: Ihr Wert ändert sich. Der Währungsumrechner liest seine Wechselkurse während der Nutzung von zwei kostenlosen Diensten ab – und nur dann.",
+            {
+              "points": [
+                "Währungen von Ländern: Rates By Exchange Rate API, https://www.exchangerate-api.com . Die Quelle aktualisiert die Kurse einmal täglich; Units fragt sie höchstens einmal am Tag ab.",
+                "Kryptowährungen: Powered by CoinGecko, https://www.coingecko.com . Die Kurse werden beim Öffnen oder erneuten Anzeigen des Umrechners abgerufen, wenn sie älter als 15 Minuten sind, sowie bei Klick auf „Aktualisieren“ – niemals automatisch nach einem Zeitplan."
+              ]
+            },
+            "Abgefragt werden nur die Wechselkurse. Es werden keine Informationen über Sie und niemals die umgerechneten Beträge gesendet.",
+            "Die Zeile unter der Tabelle und unter dem Ergebnis von „Schnell umrechnen“ zeigt den Zeitpunkt der Wechselkurse. Ohne Internetverbindung werden die zuletzt gespeicherten Kurse verwendet und als veraltet markiert. Für eine Währung ohne Kurs von den Diensten wird ein Gedankenstrich angezeigt.",
+            "Einstellungen → Units → Währung: „Kurse über das Internet abrufen“ lässt sich ausschalten; der Umrechner verwendet dann die zuletzt gespeicherten Kurse. „Quellen neben den Kursen nennen“ blendet die Namen der beiden Dienste in dieser Zeile ein oder aus.",
+            "Die Wechselkurse dienen nur zur Information. Verlassen Sie sich bei Transaktionen nicht darauf."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Zahlensystem",
+          "body": [
+            "Die Einheiten dieses Umrechners sind verschiedene Schreibweisen für ganze Zahlen: Zahlensysteme zur Basis 2 bis 64, römische Zahlen, Basis 60 mit Doppelpunkten (1:30:15), binär codierte Dezimalzahlen und Gray-Code. Die Werte werden als Text eingegeben: Geben Sie FF unter Hexadezimal ein, zeigen die anderen Spalten 255, 11111111 und weitere Darstellungen.",
+            "Römische Zahlen reichen von I bis MMMCMXCIX (1 bis 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Einheiten ohne einfachen Umrechnungsfaktor",
+          "body": [
+            "Die meisten Einheiten lassen sich mit einem Faktor ineinander umrechnen. Für einige gilt das nicht; Units rechnet sie anhand ihrer Definition um: Temperaturen mit ihren Offsets; Kraftstoffverbrauch (Liter pro 100 km und Meilen pro Gallone); Wellenlänge und Frequenz; Leitwert und Widerstand; Grad Baumé, API, Brix und Plato im Verhältnis zur Dichte; Dezibel im Verhältnis zu Schalldruck und Schallintensität; Steigung in Prozent im Verhältnis zum Winkel.",
+            "Temperatur und Temperaturdifferenz sind nicht dasselbe: 100 °C entsprechen 212 °F, eine Differenz von 100 °C jedoch einer Differenz von 180 °F. Die Einheiten der Gruppe „Differenz (Δ)“ lassen sich untereinander umrechnen. Zwischen diesen Einheiten und Temperaturskalen wird ein Gedankenstrich angezeigt."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Eigene Einheiten",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Eine Einheit erstellen",
+          "body": [
+            "Sie können jedem Umrechner eigene Einheiten hinzufügen. Wählen Sie im Einheitenbereich „Neue Einheit“, geben Sie einen Namen und ein Symbol ein und legen Sie fest, über welche vorhandene Einheit sie definiert wird.",
+            {
+              "points": [
+                "Über einen Faktor: „1 Schritt = 0,75 m“. Beginnt eine Skala nicht bei null, geben Sie auch den Wert an, der nach der Multiplikation addiert wird.",
+                "Über eine Formel: Legen Sie fest, wie der Wert in die andere Einheit umgerechnet wird. x steht für den Wert; zusätzlich benötigen Sie die Formel für den Rückweg. Zum Beispiel x * 9 / 5 + 32 und (x - 32) * 5 / 9."
+              ]
+            },
+            "Ihre Eingabe wird während des Tippens ausprobiert. Das Ergebnis für eine Ihrer Einheiten wird angezeigt, bevor Sie sie speichern. Eine Formel kann + − × ÷ ^, Klammern, x, pi, e und die Funktionen sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos und atan verwenden. Sie wird berechnet und niemals als Programm ausgeführt.",
+            "Ihre Einheiten stehen im Bereich unter „Eigene“, wo Sie sie ändern und entfernen können. Eine eigene Einheit kann über eine andere eigene Einheit definiert werden. Wenn Sie eine Einheit entfernen, werden auch jene entfernt, die von ihr abhängen.",
+            "Unter Einstellungen → Units finden Sie Ihre Einheiten aus allen Umrechnern. Sie können sie als Text exportieren und aufbewahren oder auf einen anderen Computer übertragen."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Einstellungen",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Einstellungen von Units",
+          "body": [
+            "Datei → Einstellungen öffnen öffnet die Units-Einstellungen. Sie erreichen sie auch über die Tabellenoptionen (Zahnrad in der Tabellenleiste).",
+            {
+              "points": [
+                "Jeden Umrechner in einem eigenen Tab oder im aktuellen Tab öffnen.",
+                "Extremwerte vollständig anzeigen, festlegen, was zwischen Tausendern steht (10000,000, 10 000,000 oder 10.000,000; nichts, sofern Sie nicht anders wählen), und Zeilennummern einblenden.",
+                "Währung: festlegen, ob Kurse über das Internet abgerufen und die Dienste daneben genannt werden.",
+                "Genauigkeit der Einheiten: Wählen Sie einen Umrechner (oder „Geänderte Einheiten“), suchen Sie nach einer Einheit und legen Sie mit − und + die Dezimalstellen fest. Der Pfeil setzt den Wert auf die Genauigkeit der Einheit zurück. Über „Für diese Einheit überall verwenden“ im Spaltenmenü legen Sie denselben Wert global fest.",
+                "Einheiten, mit denen eine Tabelle beginnt: Umrechner mit den von Ihnen gewählten ersten Spalten und jeweils einer Möglichkeit, zu den mitgelieferten Spalten zurückzukehren.",
+                "Ihre eigenen Einheiten."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Über Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Über Units",
+          "body": [
+            "Units ist die Umrechnungs-App von Syntelab Creative: 38 Umrechner mit mehr als 1.500 Einheiten, von Länge und Temperatur bis zu Währungen und Zahlensystemen. Ein einmal eingegebener Wert wird in allen gewünschten Einheiten angezeigt – in einer Tabelle mit einer oder Millionen Zeilen.",
+            "Zahlen werden exakt als Brüche berechnet und erst beim Anzeigen gerundet. Alles geschieht auf diesem Computer. Nur Wechselkurse werden über das Internet abgerufen; diese Funktion lässt sich ausschalten.",
+            "Die App ist neu. Wenn etwas bei Ihrer Arbeit nicht wie gewünscht funktioniert, teilen Sie uns das über Hilfe → Feedback mit. So erfahren wir, woran wir arbeiten sollen."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Wie viele Zeilen eine Tabelle fasst: unsere Messungen",
+          "body": [
+            "Für Tabellen gibt es keine feste Zeilenbegrenzung; ihre Länge richtet sich nach dem verfügbaren Arbeitsspeicher des Computers. Eine Zeile benötigt 16 Byte, 100 Millionen Zeilen benötigen also etwa 1,5 GB. Wenn der Arbeitsspeicher nicht mehr ausreicht, bleibt die Tabelle unverändert und das Programm zeigt den benötigten Speicher an.",
+            "Wir haben mit 50.000.000 Zeilen getestet, jeweils einer Zahl in einer Spalte, im optimierten Build des Programms:",
+            {
+              "points": [
+                "50.000.000 Zeilen einfügen: etwa 7 Sekunden.",
+                "Aus einer CSV-Datei importieren: 12 Sekunden.",
+                "In eine CSV-Datei exportieren und dabei eine zweite Spalte umrechnen: etwa 3,5 Minuten.",
+                "In eine Excel-Datei mit 48 Blättern exportieren: 4,3 Minuten."
+              ]
+            },
+            "Das Exportieren dauert länger als das Importieren, weil jede geschriebene Zelle zuerst exakt umgerechnet wird.",
+            {
+              "note": "Testcomputer: AMD Ryzen 9 9950X3D (16 Kerne, 32 Threads), 64 GB Arbeitsspeicher, Windows 11 Pro. Oktober 2026. Auf anderen Computern unterscheiden sich die Zeiten, nicht aber die Größe einer Zeile."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Womit Units entwickelt wird",
+          "body": [
+            {
+              "points": [
+                "Exakte Zahlen: die Rust-Bibliotheken der num-Familie (Brüche mit Ganzzahlen beliebiger Größe).",
+                "Einheiten, Umrechnungsfaktoren und Gruppen: Datendateien der App, jeweils eine pro Umrechner.",
+                "Excel- und OpenDocument-Arbeitsmappen lesen: calamine. Excel-Arbeitsmappen schreiben: rust_xlsxwriter.",
+                "Systemzwischenablage zum Kopieren und Einfügen sehr vieler Zeilen: arboard.",
+                "Wechselkurse: ExchangeRate-API und CoinGecko (siehe „Währung“)."
+              ]
+            },
+            "Was Units mit dem übrigen Programm gemeinsam hat, steht unter „Über Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Was Units noch nicht kann",
+          "body": [
+            {
+              "points": [
+                "Jede Zeile enthält einen Wert. Bei einer eingefügten Zeile mit mehreren Werten wird der erste übernommen.",
+                "Der Export sehr vieler Zeilen dauert lange (siehe unsere Messungen).",
+                "Der zu kopierende Inhalt wird vor dem Einfügen als zusammenhängender Text im Arbeitsspeicher gehalten.",
+                "Wechselkurse sind so aktuell wie die beiden Quellen: Kurse für Landeswährungen werden einmal täglich aktualisiert."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

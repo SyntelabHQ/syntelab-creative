@@ -1,0 +1,94 @@
+/* Beside the pages, on the far side from the thumbnails. */
+.panel {
+  display: flex;
+  flex: 0 0 330px;
+  flex-direction: column;
+  min-height: 0;
+  border-inline-start: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+  /* As compact as the windows of the program. */
+  --sc-control-height: var(--sc-control-height-compact);
+  --sc-button-padding: var(--sc-button-padding-compact);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-block: 4px;
+  padding-inline: 12px 4px;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  padding: 10px 12px;
+  overflow-y: auto;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 8px 12px 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.edges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+}
+
+.edge {
+  display: grid;
+  grid-template-columns: 1fr 72px;
+  align-items: center;
+  gap: 6px;
+}
+
+.edge input {
+  width: 100%;
+  min-width: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.size {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 8px 12px;
+  border-block-start: 1px solid var(--sc-border);
+}

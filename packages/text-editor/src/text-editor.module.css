@@ -1,0 +1,11 @@
+/* The editor fills what is left of the tab; its letters come from the settings (see `editor-view.tsx`). */
+.editor {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--sc-surface);
+  /* Text is never mirrored as a whole: each line finds its own direction. */
+  direction: ltr;
+  text-align: start;
+}

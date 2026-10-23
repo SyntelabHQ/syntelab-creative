@@ -1,0 +1,31 @@
+/* The way to the choices fewer people need. */
+.more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  border: 0;
+  background: none;
+  color: var(--sc-muted);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: start;
+  cursor: pointer;
+}
+
+.more:hover:not(:disabled) {
+  color: var(--sc-text);
+}
+
+.more:disabled {
+  cursor: default;
+}
+
+.further {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline-start: 10px;
+  border-inline-start: 2px solid var(--sc-border);
+}

@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Açma ve okuma",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Belge açma",
+          "body": [
+            "Dosya → Aç (Ctrl+O), PDF’yi kendi sekmesinde açar. “Birden çok dosya aç” seçeneği seçilen her dosyayı ayrı sekmede açar.",
+            "PDF olmayan dosyalar da sayfa olarak açılabilir: görseller (PNG, JPEG, TIFF, WebP ve daha fazlası), metin ve web dosyaları, e-kitaplar, XPS ve ofis belgeleri. Bu tür bir belge henüz hiçbir yere kaydedilmez; Kaydet, nereye kaydedileceğini sorar.",
+            {
+              "note": "Ofis belgeleri (Word, Excel, PowerPoint, OpenDocument), bilgisayarda yüklü olan Word, Excel veya PowerPoint ya da LibreOffice ile dönüştürülür. Bunlardan biri yoksa belge açılamaz."
+            },
+            "Dosyaları boş bir sekmeye bırakırsanız bir dosya panosunda toplanır; bir belgenin üzerine bırakırsanız sayfaları belgeye eklenir.",
+            "Windows’ta PDF Organizer, PDF dosyalarına çift tıkladığınızda onları açan uygulama olabilir: başlangıç sayfasındaki “Varsayılan yap” Windows ayarlarını açar; orada PDF dosyaları için Syntelab Creative’i seçersiniz."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Sayfaları görüntüleme",
+          "body": [
+            "Görünüm menüsü belgenin nasıl gösterileceğini belirler; dosyanın içeriğini değiştirmez.",
+            {
+              "points": [
+                "Yakınlaştırma: büyütme, küçültme, gerçek boyut, sayfaya sığdırma, genişliğe sığdırma veya yüksekliğe sığdırma. Ctrl tuşunu basılı tutup fare tekerleğini kullanarak da yakınlaştırabilirsiniz.",
+                "Sayfa görünümü: tek sayfa veya yan yana iki sayfa; kapak sayfasıyla ya da kapak olmadan; tüm sayfaları tek uzun şerit olarak kaydırma.",
+                "Kılavuzlar: Ayarlar'da seçilen birimde cetveller ve ızgara.",
+                "“Küçük resimleri göster”: yandaki küçük sayfa görselleri. Birine tıklayarak o sayfaya gidin; belgenin yer işaretleri de aynı paneldedir.",
+                "“Okuma modu” araçları gizler; “Tam ekran modu” sayfa dışındaki her şeyi gizler. Her iki moddan da Esc ile çıkabilirsiniz."
+              ]
+            },
+            "Sayfaların üstündeki şeritte (hızlı araç çubuğunda) sayfa numarası, yakınlaştırma ve Ayarlar'da seçtiğiniz düğmeler bulunur."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Metin bulma",
+          "body": [
+            "Düzenle → Belgede bul (Ctrl+F): sözcük veya ifade yazın; bulunduğu yerler sayfalarda işaretlenir, oklarla bir sonraki sonuca geçebilirsiniz.",
+            {
+              "note": "Taranmış belge, metin aranabilmesi için önce metni tanınması gereken sayfa görsellerinden oluşur. “Metni tanıma (OCR)” bölümüne bakın."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Belge özellikleri",
+          "body": [
+            "Dosya → Belge özellikleri, belgenin kendisi hakkında sakladığı bilgileri gösterir: başlık, yazar, oluşturulma ve değiştirilme tarihleri, sayfa sayısı ve dosya boyutu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kaydetme, yazdırma ve gönderme",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Kaydet ve Farklı kaydet",
+          "body": [
+            "Kaydedene kadar yaptığınız hiçbir değişiklik diskteki dosyaya yazılmaz. O zamana kadar her adımı geri alabilir (Ctrl+Z) veya yineleyebilirsiniz (Ctrl+Y).",
+            {
+              "points": [
+                "Kaydet (Ctrl+S), belgeyi kendi dosyasının üzerine yazar.",
+                "Farklı kaydet (Ctrl+Shift+S), belgeyi yeni bir dosyaya yazar ve sekmedeki eski dosyanın yerini alır; eski dosya değişmeden kalır."
+              ]
+            },
+            "Başka bir program dosyayı açık tutuyorsa üzerine yazılamaz. Program bunu bildirir ve değişikliklerinizi korur; başka bir adla kaydedebilirsiniz.",
+            {
+              "note": "Sertifikayla imzalanmış bir belgenin üzerine değişiklikleri kaydetmek imzaları kaldırır. Program önce sorar ve “Yeni dosya olarak kaydet” seçeneğini sunar. Bu soru Ayarlar → İmzalar bölümünden kapatılabilir."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "PDF oluşturma",
+          "body": [
+            "Dosya → PDF oluştur yeni bir belge oluşturur:",
+            {
+              "points": [
+                "bir dosyadan veya birden çok dosyadan: dosyaları tek PDF'de birleştirerek ya da her dosya için ayrı PDF oluşturarak;",
+                "yazdığınız adresteki bir web sayfasından (sayfa, bilgisayarda yüklü tarayıcıyla kaydedilir);",
+                "panodaki içerikten;",
+                "seçtiğiniz boyuttaki boş sayfalardan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Başka bir biçime dışa aktarma",
+          "body": [
+            "Dosya → Dışa aktar, belgeyi Word veya OpenDocument metnine, düz metne, web sayfasına, XML'e, sayfa görsellerine (PNG, JPEG, TIFF, SVG) veya PostScript'e dönüştürür. Görseller için çözünürlüğü seçebilirsiniz.",
+            "Belgenin kendisi PDF olarak kalır; dışa aktarma yeni bir dosya oluşturur.",
+            {
+              "note": "Metin yalnızca belgede metin varsa dışa aktarılabilir. Taranmış belgenin metnini önce tanıyın."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Yazdırma",
+          "body": [
+            "Dosya → Yazdır (Ctrl+P), belgeyi çizimlerinizle birlikte şu anki düzeninde yazdırır. Sayfaları ve kâğıdı seçin; kâğıdın dikey mi yatay mı olacağını ve sayfaların kâğıda sığdırılıp sığdırılmayacağını ya da gerçek boyutunda yazdırılmasını belirleyin. Sonra yazıcıyı seçmeniz için sistemin yazdırma penceresi açılır.",
+            "Yazdırma penceresinin başlangıçta kullandığı kâğıt, yön ve ölçek Ayarlar → Yazdırma bölümünden belirlenir."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Paylaşma",
+          "body": [
+            "Dosya → Paylaş, belgeyi sistemin Paylaş penceresine gönderir: e-posta, yakındaki cihazlar ve diğer uygulamalar. Belge, kaydedilmemiş değişiklikleriniz dâhil şu anki hâliyle paylaşılır."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sayfaları düzenleme",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Düzenle görünümü",
+          "body": [
+            "Sayfalar → Sayfaları düzenle, tüm sayfaları ızgarada gösterir. Kaydedene kadar diskteki dosya değişmez.",
+            {
+              "points": [
+                "Seçme: bir sayfaya tıklayın; Ctrl+tıklama seçime ekler, Shift+tıklama aradaki sayfaları seçer. Menüde “Tüm sayfaları seç”, “Seçimi temizle”, “Tek sayfaları seç” ve “Çift sayfaları seç” seçenekleri bulunur.",
+                "Taşıma: seçili sayfaları yeni konumlarına sürükleyin veya “Sola taşı” ve “Sağa taşı” seçeneklerini kullanın.",
+                "Döndürme: “Seçili: sola döndür” ve “Seçili: sağa döndür” seçili sayfaları; “Tüm sayfalar: sola döndür” ve “Tüm sayfalar: sağa döndür” tüm sayfaları döndürür.",
+                "Silme: Delete tuşuna basın veya “Sayfaları sil” seçeneğini kullanın. Belgede en az bir sayfa kalmalıdır.",
+                "Kopyalama, kesme ve yapıştırma (Ctrl+C, Ctrl+X, Ctrl+V): sayfaları aynı belgeye veya programda açık başka bir belgeye yapıştırabilirsiniz.",
+                "Boyut: üstteki kaydırıcı sayfaları büyütür veya küçültür; sayfaların üzerinde Ctrl + fare tekerleği ile “Yakınlaştır” ve “Uzaklaştır” (Ctrl+= ve Ctrl+-) da aynı işi yapar. Boyut hatırlanır."
+              ]
+            },
+            "Aynı komutlar ızgara olmadan da görüntülenen sayfada çalışır."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Sayfaları ayıklama ve belgeyi bölme",
+          "body": [
+            "Sayfalar → Sayfaları ayıkla, seçili sayfaları kaydedilmemiş yeni bir belge olarak kendi sekmesinde açar. Her sayfayı ayrı dosya olarak yazdırabilir ve sayfaların bu belgeden kaldırılıp kaldırılmayacağını seçebilirsiniz.",
+            "Sayfalar → Belgeyi böl, belgeyi birkaç küçük dosyaya yazar; bu belge olduğu gibi kalır.",
+            "Yeni belgelerin adları Ayarlar → Yeni belge adları bölümündeki şablonları izler.",
+            {
+              "note": "Sertifikayla oluşturulmuş imzalar ayıklanan veya bölünen belgelere aktarılmaz; imza yalnızca oluşturulduğu dosya için geçerlidir."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Sayfa ekleme ve değiştirme",
+          "body": [
+            {
+              "points": [
+                "Sayfalar → Sayfa ekle, başka bir dosyanın (PDF, görsel, metin, ofis belgesi) sayfalarını seçili sayfadan sonra veya belgenin sonuna ekler.",
+                "Sayfalar → Sayfaları değiştir, seçili sayfaların yerine başka bir dosyanın sayfalarını koyar.",
+                "Ekle → Boş sayfa, komşu sayfayla aynı boyutta boş bir sayfa ekler."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Sayfaları kırpma ve yeniden boyutlandırma",
+          "body": [
+            "Düzenle → Sayfaları kırp, yazdığınız veya sürükleyerek belirlediğiniz kenar boşluklarına göre sayfaların kenarlarını keser. Dosyadan hiçbir şey silinmez; sayfaların yalnızca daha azı gösterilir.",
+            "Düzenle → Sayfaları yeniden boyutlandır, sayfaları başka bir kâğıt boyutuna (A4, Letter vb.) yerleştirir. İçerik sığacak şekilde ölçeklenebilir veya özgün boyutunda bırakılabilir ve yeni sayfada dokuz konumdan birine yerleştirilebilir.",
+            "Her iki işlemde de sayfaları seçebilirsiniz: tümü, seçilenler, bir aralık, tek veya çift sayfalar."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dosyaları birleştirme",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Dosya panosu",
+          "body": [
+            "Birleştir → Yeni dosya panosu, dosyaları toplayıp tek PDF olarak yazabileceğiniz bir alan açar.",
+            {
+              "steps": [
+                "“Dosya ekle” ile dosyaları ekleyin veya cildin üzerine bırakın. PDF, görsel, metin ve ofis belgelerini birlikte kullanabilirsiniz.",
+                "Kartları istediğiniz sıraya sürükleyin veya her kartın ok düğmelerini kullanın.",
+                "Kartı açarak hangi sayfalarının ekleneceğini seçin.",
+                "“Dosyaları birleştir”, dosyaları sırayla yeni bir belge olarak kendi sekmesine yazar."
+              ]
+            },
+            "Dosyaların kendileri değiştirilmez.",
+            "Üstteki kaydırıcı kartlardaki sayfaları büyütür veya küçültür; Ctrl + fare tekerleği ile “Yakınlaştır” ve “Uzaklaştır” (Ctrl+= ve Ctrl+-) da aynı işi yapar. Boyut hatırlanır."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sayfalara yazma ve çizim yapma",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Araçlar",
+          "body": [
+            "Çizim araçları, sayfanın yanında panel, düğme ızgarası veya adların yer aldığı liste olarak açılır (biçimi Ayarlar'dan seçilir). Aracı seçtikten sonra sayfaya tıklayın veya sürükleyin; Esc ile aracı bırakın.",
+            {
+              "points": [
+                "Metin: tıklayıp yazın. Yazı tipi, boyut, renk, kalın, italik ve hizalama paneldedir.",
+                "Görsel: bir resim seçin, sonra konumunu ve boyutunu sürükleyerek belirleyin.",
+                "Şekiller: dikdörtgen, elips, çizgi, ok, tik, çarpı ve nokta.",
+                "Vurgulama: öne çıkarmak istediğiniz alanı sürükleyin; altındaki içerik okunur kalır."
+              ]
+            },
+            "“Seç, taşı ve yeniden boyutlandır” aracıyla işaretlemeyi yeniden seçebilirsiniz: sürükleyin, köşelerinden boyutlandırın, tutamacıyla döndürün, panelden renklerini değiştirin veya Delete tuşuyla silin. İşaretlemeler kopyalanıp yapıştırılabilir; başka sayfalara da aktarılabilir.",
+            "Çizdikleriniz kaydettiğinizde dosyaya yazılır."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Belgenin kendi metnini ve görsellerini değiştirme",
+          "body": [
+            "“Belgenin metin ve görsellerini düzenle” aracı sayfanın kendi içeriğinin çevresini çizer. Bir metin satırını yeniden yazmak için satıra, görseli taşımak, boyutlandırmak, döndürmek veya silmek için görsele tıklayın.",
+            {
+              "note": "Bu araç her seferinde tek satırı veya görseli değiştirir. Satır uzadığında paragraflar yeniden akıtılmaz; başka bir görselin üstündeki görsel seçildiğinde ikisi birlikte seçilir. Büyük değişiklikler için belgeyi oluşturulduğu programda düzenleyin."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "İçeriği kalıcı olarak karartma",
+          "body": [
+            "Diğer araçlar → Hassas bilgileri gizle, gizlenmesi gereken içeriği kalıcı olarak kaldırır: herhangi bir sayfada üzerine siyah kutu sürükleyin. Kaydettiğinizde kutunun altındaki metin ve görseller yalnızca örtülmez, dosyadan çıkarılır.",
+            {
+              "note": "Karartılmış belgeyi yeni bir adla kaydedin ve özgün dosyayı güvenli bir yerde saklayın; karartılan içerik geri getirilemez."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Filigran",
+          "body": [
+            "Düzenle → Filigran, seçtiğiniz sayfalara metin yazar veya görsel yerleştirir: düz ya da eğik, dokuz konumdan birinde ve belirlediğiniz boyut ve saydamlıkta. Sonrasında her sayfada diğerleri gibi taşınabilir veya kaldırılabilir bir işaretleme olur."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Sayfa numaraları, üstbilgi ve altbilgi, Bates numaraları",
+          "body": [
+            {
+              "points": [
+                "Düzenle → Sayfa numaraları: biçimi (1, 1 / 12, Sayfa 1 vb.), konumu ve numara eklenecek sayfaları seçin.",
+                "Ekle → Üstbilgi ve altbilgi: altı konumdan herhangi birine metin ekleyin. {page} sayfa numarasını, {pages} sayfa sayısını, {date} bugünün tarihini, {file} belge adını yazar.",
+                "Ekle → Bates numaralandırma: dava belgelerinde kullanılan, başında veya sonunda sözcük olan sıralı numaralar ekler (ABC000123)."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bağlantılar, yer işaretleri ve ekli dosyalar",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Bağlantılar",
+          "body": [
+            "Ekle → Bağlantı: tıklanacak alanın üzerine sürükleyin ve nereye gideceğini belirtin: web adresi veya bu belgedeki bir sayfa.",
+            "Belge bağlantıları okuma sırasında çalışır: sayfa bağlantısı tıklandığında o sayfaya gidilir; web veya e-posta adresi tarayıcıya ya da e-posta programına gönderilir."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Yer işaretleri",
+          "body": [
+            "Ekle → Yeni yer işareti: bağlantının gideceği yere tıklayın ve bir başlık verin. Ekle → Yer işaretleri listesinden yer işaretlerini yeniden adlandırabilir veya kaldırabilirsiniz. Değişiklikler kaydettiğinizde yazılır."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Ekli dosyalar",
+          "body": [
+            "Ekle → Dosya ekle: bir dosya seçin ve ataşman simgesinin geleceği yere tıklayın. Dosyaya ad ve yazar ekleyebilir, ataşmanın rengini, boyutunu ve yönünü değiştirebilirsiniz. Kaydettiğinizde dosya PDF'nin içine eklenir.",
+            "Ekle → Ekli dosyalar, belgenin içindeki ekleri listeler; her dosyayı diske kaydedebilir veya belgeden çıkarabilirsiniz. Ataşman simgesine tıklamak da aynı listeyi açar."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formlar",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Form doldurma",
+          "body": [
+            "Ekle → Formu doldur, belgedeki alanları gösterir: metin alanlarına yazın, kutuları işaretleyin ve listelerden seçim yapın. Yanıtlar kaydettiğinizde dosyaya yazılır."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Form oluşturma",
+          "body": [
+            "Ekle menüsünden herhangi bir belgeye alan ekleyebilirsiniz: metin alanı, onay kutusu, radyo düğmeleri (yalnızca biri seçilebilir), seçim listesi ve imzalayanın doldurması için boş bırakılan imza alanı.",
+            "Alanı yerleştirmek istediğiniz yerde sayfaya sürükleyin. Diğer işaretlemeler gibi alan da kaydedene kadar taşınabilir ve yeniden boyutlandırılabilir; kaydedildikten sonra formun parçası olur."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "İmzalama",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Çizdiğiniz imzayı ekleme",
+          "body": [
+            "İmzala → İmza ekle, sayfaya imza görseli koyar: seçtiğiniz kalemle çizin, bir yazı tipiyle yazın veya görselden alın (imzalı sayfanın fotoğrafından yalnızca kalem izlerini almak için “Yalnızca kalem izlerini koru” seçeneğini kullanın). Altına tarih de yazılabilir.",
+            "İmzanın yerleşeceği alana sürükleyin. Kullandığınız imzalar bu bilgisayarda saklanır ve tekrar kullanılabilir.",
+            {
+              "note": "Bu bir görseldir; imzalayan kişinin kim olduğunu kanıtlamaz. İmzalayanı ve sonradan değişiklik yapılmadığını doğrulayan imza sertifikayla oluşturulur."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Sertifikayla imzalama",
+          "body": [
+            "İmzala → Sertifikayla imzala, kimin imzaladığını bildiren ve belgeyi mühürleyerek sonraki değişiklikleri görünür kılan dijital imza oluşturur.",
+            {
+              "steps": [
+                "İmzanın görüneceği alanı sayfada sürükleyerek belirleyin (önce alanı bildiren bir pencere açılır; isterseniz kapatabilirsiniz). Sayfada hiçbir şey göstermeden imzalamak için “Sayfada göstermeden imzala” seçeneğini seçin.",
+                "Sertifikayı seçin: bilgisayardaki sertifikalardan biri (kart veya token okuyucuya takıldığında listede görünür) ya da parolalı .pfx / .p12 dosyası. Ardından “Devam et”i seçin.",
+                "İmzanın görünümünü seçin. “Neden ve konum” bölümünde imzalama nedeninizi ve yerini yazabilirsiniz; bunlar imzanın içine, görünümde gösterilecek şekilde seçilirse sayfaya da eklenir. Sizden sonra kimsenin imza atmasını veya değişiklik yapmasını önlemek için “İmzadan sonra belgeyi kilitle” seçeneğini işaretleyin. Ne zaman imzaladığınızı bir otoritenin onaylaması için “Güvenilir zaman ekle (zaman damgası)” seçeneğini işaretli bırakın.",
+                "“İmzala”yı seçin ve imzalı dosyanın kaydedileceği yeri belirtin. Bu aşamada token PIN'inizi ister."
+              ]
+            },
+            "İmzalı dosya belgenin yerini alarak açılır. Program parola veya PIN saklamaz.",
+            {
+              "note": "Nitelikli imza, nitelikli sertifikayla ve o sertifikayı taşıyan kart veya token kullanılarak bu şekilde oluşturulur. İmzalama bilgisayarınızda yapılır; internete yalnızca zaman damgası ve sertifikanızın denetimi için bağlanılır ve belge değil, yalnızca özetler ve sertifikanın seri numarası gönderilir."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "İmza görünümleri",
+          "body": [
+            "Görünüm, sertifika imzasının sayfada nasıl görüneceğini belirler. Şirket adına veya kendi adınıza imzalama gibi farklı durumlar için görünümleri kendi adlarınızla kaydedebilirsiniz.",
+            {
+              "points": [
+                "Görsel: yok, dosyadan alınan bir görsel (kaşe veya taranmış imza) ya da burada çizilen imza.",
+                "Gösterilecek metin: ad, tarih, neden ve yer; her biri etiketiyle veya etiketsiz.",
+                "Adın altına görev veya şirket gibi kendi satırlarınızı ekleyin.",
+                "“Standart metin” her zaman görünür: imzalayan ve imzalama zamanı."
+              ]
+            },
+            "İmzalama penceresinde “Yeni…”, “Düzenle…” ve “Sil” seçenekleri bulunur. En son kullanılan görünüm ilk sırada sunulur. Görünümler bu bilgisayarda saklanır."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Birden çok imza ve belgeyi kilitleme",
+          "body": [
+            "Bir belgeyi birkaç kişi sırayla imzalayabilir. İmzalı dosyayı açıp hiçbir şeyi değiştirmeden imzalayın: yeni imza dosyanın sonuna eklenir ve önceki imzalar geçerliliğini korur.",
+            "“İmzadan sonra belgeyi kilitle” (işaretlenmedikçe kapalıdır) belgeyi kapatır; sizden sonra kimse imzalayamaz ve belge değiştirilemez. Bu işlem geri alınamaz.",
+            {
+              "note": "İmzalı belgeyi yeniden imzalamadan önce değiştirirseniz dosyanın yeniden oluşturulması gerekir ve önceki imzalar aktarılmaz. İmzalama penceresi sizi uyarır. İmzaları korumak için dosyayı yeniden açıp hiçbir şeyi değiştirmeden imzalayın."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Zaman damgaları",
+          "body": [
+            "Zaman damgası, bir zaman damgası otoritesinin bir şeyin ne zaman var olduğuna dair imzalı beyanıdır. Aksi hâlde imzadaki zaman, imzalayanın bilgisayar saatinden gelir ve bu saati herkes ayarlayabilir; zaman damgası anı kanıtlar ve sertifikanın süresi dolduktan sonra da imzayı kanıtlanabilir tutar (PAdES B-T).",
+            {
+              "points": [
+                "İmzalama penceresinde “Güvenilir zaman ekle (zaman damgası)” işaretliyse imzalar zaman damgası alır. Bunun başlangıçta işaretli olup olmayacağı, burada ve toplu işlemde, Ayarlar → İmzalar bölümünden belirlenir.",
+                "İmzala → Zaman damgası ekle, sertifika olmadan tüm belgeye kendi zaman damgasını verir: belgenin o anda tam olarak bu hâliyle var olduğunu kanıtlar. Yeni bir dosya olarak kaydedilir; dosyadaki imzalar geçerliliğini korur."
+              ]
+            },
+            "Otorite DigiCert'tir (http://timestamp.digicert.com); ücretsizdir ve Adobe Reader ile Windows tarafından güvenilir kabul edilir. Başka bir otorite Ayarlar → İmzalar bölümünden ayarlanabilir. Otoriteye belge değil, yalnızca özet (SHA-256) gönderilir ve internet bağlantısı gerekir. Bir imza zaman damgası aldığında, sertifikanızı veren kuruluşa da sertifikanın hâlâ geçerli olup olmadığı sorulur ve yanıtı imzanın içinde saklanır (uzun süreli doğrulama): bu sayede Adobe Reader imzayı hem şimdi hem de sertifikanın süresi dolduktan sonra geçerli olarak gösterebilir.",
+            {
+              "note": "Otoriteye ulaşılamazsa hiçbir şey imzalanmaz veya yazılmaz: yeniden deneyin ya da zaman damgası olmadan imzalamak için işaretini kaldırın."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "İmzaları doğrulama",
+          "body": [
+            "İmzala → İmzaları doğrula, dosyadaki tüm sertifika imzalarını listeler: imzalayanı, sertifikayı veren otoriteyi, tarihi, imzalama nedenini ve yerini; ayrıca:",
+            {
+              "points": [
+                "belgenin imzadan sonra değişip değişmediğini (sonradan eklenen başka bir imza değişiklik sayılmaz);",
+                "imzanın belgeyi kilitleyip kilitlemediğini;",
+                "bu bilgisayarın sertifikanın arkasındaki otoriteye güvenip güvenmediğini ve sertifikanın bugün geçerli olup olmadığını;",
+                "varsa, zaman damgasıyla onaylanan zamanı ve bunu hangi otoritenin onayladığını. Tüm belgenin zaman damgası da kendi denetimiyle birlikte listelenir."
+              ]
+            },
+            "Denetim, dosyanın en son kaydedilmiş hâlinde bu bilgisayarda ve internete bağlanmadan yapılır. Sayfadaki bir imzaya tıklamak bu listeyi o imzada açar. Her imzanın altında, “Sertifikayı göster” sertifikanın Windows penceresini açar (zinciri ve tüm ayrıntıları; oradan “Sertifika Yükle”, bildiğiniz bir sertifikaya bu bilgisayarın güvenmesini sağlar), “Doğrula” ise yalnızca bastığınızda, sertifikanın iptal edilip edilmediğini sertifikayı veren kuruluşa çevrimiçi olarak sorar."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diğer araçlar",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Metni tanıma (OCR)",
+          "body": [
+            "Diğer araçlar → Metni tanı (OCR), taranmış sayfalardaki sözcükleri okuyup görünmeden sayfalara ekler; böylece belgede arama yapabilir, metni kopyalayıp dışa aktarabilirsiniz. Sayfaların görünümü değişmez.",
+            "Yalnızca sayfaların yazıldığı dilleri seçin; zaten metin içeren sayfalar değiştirilmez.",
+            {
+              "note": "Okuma, ayrıca yüklenmesi gereken Tesseract motoruyla yapılır. Motor yoksa pencerede Windows'a yükleme komutu gösterilir."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Belge boyutunu küçültme",
+          "body": [
+            "Diğer araçlar → Sıkıştır, fotoğraf ve taramaların piksel sayısını azaltarak belgeyi daha küçük dosya olarak kaydeder. Üç sıkıştırma düzeyi vardır; metin ve çizimler aynı keskinlikte kalır. Az görselli belgelerde boyut değişikliği sınırlı olabilir."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "İki belgeyi karşılaştırma",
+          "body": [
+            "Diğer araçlar → Belgeleri karşılaştır: başka bir PDF seçin. Belgeler yan yana, sayfa sayfa gösterilir; metni farklı sayfalar işaretlenir ve her belgede ayrı olan satırlar listelenir."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Toplu işleme: aynı anda çok dosya",
+          "body": [
+            "Diğer araçlar → Toplu işleme, aynı işlemleri kendi sekmesinde çok sayıda dosyaya uygular. Her sonuç yeni bir dosyadır. Sonuçlar klasörde zaten bulunan dosyaların yerini alacaksa (adlarına hiçbir şey eklenmeden kendi klasörlerine kaydedilen kendi dosyalarınız), önce bunları değiştirmek mi, atlamak mı yoksa iptal etmek mi istediğiniz sorulur. Bir dosya ancak sonucu tamamlandığında değiştirilir; açık olan bir dosya (burada bir sekmede veya başka bir programda) olduğu gibi bırakılır ve yapılmadı olarak işaretlenir.",
+            {
+              "steps": [
+                "Soldan dosyaları ekleyin: “Dosya ekle”, “Klasör ekle” (alt klasörleriyle birlikte) veya dosyaları buraya bırakın.",
+                "Sağ tarafta yapılacak işlemleri işaretleyin. Her dosya PDF'ye dönüştürülür; ayrıca sayfaları çevirebilir, metni tanıyabilir, üstbilgi ve altbilgi, filigran veya sayfa numarası ekleyebilir, dosyaları küçültebilir, sertifikayla imzalayabilir ya da başka biçimde dışa aktarabilirsiniz. Numaralar işlem sırasını gösterir.",
+                "Çıktı biçimini seçin: her dosya için ayrı dosya veya listedeki sıraya göre tek PDF; ardından sonuç klasörünü belirtin. Tüm dosyalar tek bir klasörden geliyorsa, siz başka bir klasör seçene kadar o klasör sizin için seçilir; aksi halde son seçtiğiniz klasör kullanılır.",
+                "“Başlat”ı seçin. Her dosyanın sonucu gösterilir; işlem dosyalar arasında durdurulabilir."
+              ]
+            },
+            {
+              "points": [
+                "Tarifler: “Tarif olarak kaydet”, seçtiğiniz dosyalar ve parolalar dışında tüm seçenekleri bir adla saklar; sonra tek seçimle yeniden uygulayabilirsiniz.",
+                "“Sonuçlarda dosyaların klasör yapısını koru”, eklenen klasörün yapısını yeniden oluşturur.",
+                "“İşlem raporu oluştur”, yazılanları ve hataları bildiren bir metin dosyasını sonuçların yanına kaydeder.",
+                "Yalnızca imzalanan PDF imzalarını korur. Aynı işlem sırasında dosyada başka bir değişiklik yapılırsa dosya yeniden yazılır ve imzalar aktarılmaz."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ayarlar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "PDF Organizer ayarları",
+          "body": [
+            "Dosya → Ayarlar'ı veya kenar çubuğundaki Ayarlar → PDF Organizer'ı açın. Her ayarı tek başına veya tümünü birden varsayılan hâline getirebilirsiniz.",
+            {
+              "points": [
+                "Belge açıldığında: açılışta gösterilecek belge boyutu, kaydırma ya da tek tek sayfa görünümü ve küçük resimlerin gösterilip gösterilmeyeceği.",
+                "Birimler, cetveller ve ızgara: birim (milimetre, inç, punto), cetveller, ızgara ve aralıkları.",
+                "Yazdırma: yazdırma penceresinin başlangıçta kullanacağı kâğıt, yön ve ölçek.",
+                "Hızlı araç çubuğu: sayfaların üstündeki şeritte bulunacak düğmeler.",
+                "Yeni belge adları: ayıklanan sayfalar, yeni belgeler ve toplu işlemede dosyaların birleştirildiği PDF için kullanılacak şablonlar.",
+                "İmzalar: Kaydet'in imzalı dosyanın üzerine yazmadan önce sorup sormayacağı.",
+                "Klavye kısayolları: bir komutun tuşlarına tıklayın ve yeni tuşlara basın."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "PDF Organizer hakkında",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "PDF Organizer hakkında",
+          "body": [
+            "PDF Organizer, Syntelab Creative'in PDF uygulamasıdır: PDF belgelerini okur, sayfalarını düzenleyip birleştirir, üzerlerine yazar ve çizer, formları doldurup oluşturur, sertifikayla imzalar ve imzaları doğrular; bunların aynısını birçok dosyada birden yapabilir.",
+            "Uygulama yenidir ve bazı özellikleri ilk aşamadadır. Belgeleriniz için yetersiz kaldığı yerleri Yardım → Geri bildirim üzerinden bize iletin; geliştirme önceliklerini bu şekilde belirliyoruz."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "PDF Organizer hangi bileşenlerle oluşturuldu",
+          "body": [
+            {
+              "points": [
+                "PDF okuma, çizim ve yazma: MuPDF.",
+                "Metni tanıma (OCR): bilgisayara ayrıca yüklenmişse Tesseract.",
+                "Ofis belgelerini açma: bilgisayarda yüklü olan Word, Excel veya PowerPoint ya da LibreOffice.",
+                "Web sayfasını PDF olarak kaydetme: bilgisayarda yüklü tarayıcı.",
+                "Sertifikayla imzalama: Windows sertifika hizmetleri; imzalar PAdES standardına uygun yazılır."
+              ]
+            },
+            "Programın geri kalanıyla paylaştığı bilgiler “Syntelab Creative hakkında” bölümündedir."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "PDF Organizer henüz neleri yapamıyor",
+          "body": [
+            {
+              "points": [
+                "Ofis belgeleri bilgisayardaki ofis paketiyle açılır. Word, Excel, PowerPoint veya LibreOffice yoksa açılamaz. Kendi dönüştürücümüz üzerinde çalışıyoruz; “Üzerinde çalıştıklarımız” bölümüne bakın.",
+                "Metni tanımak için ayrıca yüklenmiş Tesseract motoru gerekir.",
+                "Belgenin kendi metni satır satır değiştirilir; paragraflar yeniden akıtılmaz.",
+                "Dört mürekkeple (CMYK) basılmış görseller taşınmak üzere seçilemez.",
+                "“Doğrula”, bir sertifikanın bugün iptal edilmiş olup olmadığını söyler; ne zaman iptal edildiğini söylemez.",
+                "Sertifikayla imzalama şimdilik Windows'ta çalışır; Linux ve macOS desteği sonraki bir sürümde eklenecektir."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

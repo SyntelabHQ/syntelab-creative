@@ -1,0 +1,42 @@
+/* A field of the document's form, over the picture of its page. The tint
+   shows where to type; the page under it is white paper in both themes. */
+.field,
+.tick {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid color-mix(in srgb, var(--sc-paper-accent) 35%, transparent);
+  border-radius: var(--sc-radius-xs);
+  background: var(--sc-paper-field);
+  color: var(--sc-paper-text);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.field {
+  padding-block: 0;
+  padding-inline: 3px;
+  line-height: 1.2;
+}
+
+textarea.field {
+  padding-block: 2px;
+  resize: none;
+}
+
+.field:focus,
+.tick:focus-visible {
+  border-color: var(--sc-paper-accent);
+  outline: 2px solid color-mix(in srgb, var(--sc-paper-accent) 35%, transparent);
+  background: var(--sc-paper);
+}
+
+.field:disabled,
+.tick:disabled {
+  border-color: transparent;
+  background: none;
+}
+
+.tick {
+  accent-color: var(--sc-paper-text);
+  cursor: pointer;
+}

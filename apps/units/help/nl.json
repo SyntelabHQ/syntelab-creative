@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Omrekenen",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "De omrekenhulpmiddelen",
+          "body": [
+            "Units rekent waarden tussen meeteenheden om: snel één waarde of hele tabellen tegelijk. Alles wordt op je computer berekend.",
+            "De omrekenhulpmiddelen staan in zes menu’s: Basis, Beweging en mechanica, Energie en vermogen, Wetenschappelijk, Digitaal en media en Gespecialiseerde natuurkunde. Als je er een kiest, opent de bijbehorende tabel.",
+            {
+              "points": [
+                "Een omrekenhulpmiddel opent in het huidige tabblad. Als de tabel waarden bevat, wordt eerst gevraagd: Doorgaan (de waarden gaan verloren), In een nieuw tabblad openen of Annuleren.",
+                "Instellingen → Units → ‘Elk omrekenhulpmiddel in een eigen tabblad openen’ opent elk gekozen omrekenhulpmiddel in een nieuw tabblad.",
+                "Bestand → Ga naar Start gaat terug naar de eerste pagina van Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Snel omrekenen",
+          "body": [
+            "De eerste pagina van Units, Snel omrekenen, rekent één waarde van de ene eenheid naar de andere om. Kies een omrekenhulpmiddel, typ de waarde aan de kant ‘Van’ en kies de twee eenheden: het resultaat staat bij ‘Naar’.",
+            {
+              "points": [
+                "Elke kant toont de veelgebruikte eenheden van het omrekenhulpmiddel en je eigen eenheden, met een zoekfunctie. De tabel van het omrekenhulpmiddel bevat alle eenheden.",
+                "De knop tussen de twee kanten verwisselt de eenheden.",
+                "De bladwijzer naast een eenheid zet deze vast: vastgezette eenheden staan bovenaan in beide lijsten en in het eenhedenpaneel van de tabel.",
+                "De knop in het resultaat kopieert de waarde; de × wist de invoer.",
+                "‘In de tabel openen’ opent de tabel van het omrekenhulpmiddel."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Hoe getallen worden gelezen en geschreven",
+          "body": [
+            "Je kunt getallen typen en plakken volgens de notatie van verschillende landen: zowel 1,234.56 als 1.234,56 wordt begrepen, evenals spaties en apostroffen tussen duizendtallen en 1.5e-3 voor een macht van tien.",
+            "Een getal dat op twee manieren kan worden gelezen (1,234: ruim duizend of iets meer dan één) wordt gelezen volgens de getalnotatie van de programmataal. De regel onder de tabel vermeldt dat.",
+            "Een resultaat gebruikt het aantal decimalen van de doeleenheid, niet het aantal ingevoerde cijfers: 5 cm is 1,97 in. Een waarde die niet nul is, toont altijd enkele betekenisvolle cijfers, zodat 1 cm als 0,00001 km verschijnt en nooit als 0,000 km.",
+            "Waarden die te groot of te klein zijn om in één oogopslag te lezen, worden met een macht van tien geschreven, zoals 1,6 × 10⁻³⁵. Weergave → Extreme waarden volledig uitschrijven toont in plaats daarvan alle nullen.",
+            "Als een waarde niet in een eenheid bestaat (een geluidsdruk van nul heeft geen decibelwaarde), toont de cel een streepje."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "De tabel",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Rijen en kolommen",
+          "body": [
+            "Elke kolom is een eenheid en elke rij een waarde. De cel waarin je typt, bepaalt de rij: de andere kolommen tonen dezelfde waarde in hun eenheid. De ingevoerde cel wordt vet weergegeven.",
+            "Inhoud die geen getal is, blijft behouden en verschijnt rood; de rij wordt pas omgerekend nadat je deze corrigeert.",
+            {
+              "points": [
+                "Dubbelklik op een cel of begin erin te typen om deze te bewerken. Enter gaat omlaag, Tab naar rechts en de pijltoetsen verplaatsen de selectie; Escape laat de cel ongewijzigd.",
+                "Klik op de hoek (#) om de hele tabel te selecteren, op een rijnummer voor de rij of op een titel voor de kolom. Shift+klik selecteert een bereik, Ctrl+klik voegt cellen toe en slepen selecteert ook.",
+                "Home en End gaan naar de eerste en laatste kolom van de rij; Ctrl+Home naar de eerste cel van de tabel en Ctrl+End naar de laatste. Ctrl met een pijltoets gaat naar de tabelrand: de eerste of laatste rij of kolom. Page Up en Page Down verplaatsen één scherm. Met Shift breidt elk van deze toetsen de selectie uit.",
+                "Een selectie van meerdere cellen krijgt een buitenrand; de actieve invoercel blijft daarbinnen ongekleurd.",
+                "Delete maakt de geselecteerde rijen leeg.",
+                "Typen in de laatste rij voegt een rij toe. Een tabel heeft geen vaste maximumlengte: deze groeit zolang het computergeheugen het toelaat (een rij gebruikt 16 bytes, dus 100 miljoen rijen ongeveer 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Kolommen en het eenhedenpaneel",
+          "body": [
+            "Het paneel naast de tabel toont de eenheden van het omrekenhulpmiddel. Bovenaan staan de eenheden in de tabel: klik op een eenheid om de kolom te verwijderen. Daaronder staan alle eenheden: zoek op naam of symbool, filter op groep of ‘Veelgebruikt’ en klik op een eenheid om deze als kolom toe te voegen.",
+            "De bladwijzer naast een eenheid zet deze vast als favoriet: de eenheid komt bovenaan in de lijst en in Snel omrekenen.",
+            {
+              "points": [
+                "Kolommen verdelen de tabelbreedte gelijkmatig totdat hun titels niet meer passen; daarna kun je de tabel horizontaal verschuiven.",
+                "Sleep de rand van een titel om de kolombreedte te wijzigen; dubbelklik op de rand om de breedte aan de langste waarde aan te passen. Je kunt ook de kolom met rijnummers verslepen.",
+                "De knop ⋮ van een kolom: naar links of rechts verplaatsen, aan de linker- of rechterrand vastzetten, de precisie wijzigen of de kolom verwijderen.",
+                "De precisie van een kolom geldt alleen voor die kolom. ‘Overal voor deze eenheid gebruiken’ maakt deze tot de precisie van de eenheid, in elke tabel en in Snel omrekenen.",
+                "De knop met twee pijlen naast Ongedaan maken en Opnieuw uitvoeren past de kolommen aan de tabel aan: alle handmatig ingestelde breedten vervallen en de kolommen verdelen de tabelbreedte weer gelijkmatig.",
+                "De twee bovenste delen van het paneel, de eenheden in de tabel en ‘Eenheden toevoegen’ (zoeken en filters), kun je inklappen door op hun naam te klikken. Zo krijgt de lijst meer ruimte."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Ongedaan maken, kopiëren, plakken, importeren en exporteren",
+          "body": [
+            "De balk boven de tabel bevat de hulpmiddelen.",
+            {
+              "points": [
+                "Ongedaan maken en Opnieuw uitvoeren (Ctrl+Z, Ctrl+Y) doorlopen elke tabelwijziging. Plakken of importeren telt als één stap.",
+                "Kopiëren (Ctrl+C) kopieert de hele tabel of de selectie in een vorm die een spreadsheet kan lezen. ‘Getransponeerd’ verwisselt rijen en kolommen.",
+                "Plakken (Ctrl+V) plaatst gekopieerde rijen vanaf de actieve cel naar beneden in de tabel. Als de eerste rij eenheidsnamen bevat, worden de kolommen daarop afgestemd en worden ontbrekende eenheden aan de tabel toegevoegd.",
+                "Importeren leest een Excel-werkmap, CSV- of TSV-bestand in ter vervanging van de tabelinhoud. ‘Formaat automatisch herkennen’ bepaalt het type aan de hand van het bestand.",
+                "Exporteren slaat de tabel op als Excel, CSV, TSV of JSON. Bij een komma als decimaalteken gebruikt CSV puntkomma’s, zoals spreadsheets verwachten. Een Excel-werkblad bevat maximaal 1,048,576 rijen: een langere tabel gaat verder op volgende werkbladen in dezelfde werkmap, met dezelfde kolomtitels.",
+                "De gum maakt de geselecteerde rijen leeg; de prullenbak maakt de hele tabel leeg."
+              ]
+            },
+            "Een rij bevat één waarde. Bij een geplakte of geïmporteerde rij met meerdere waarden wordt de eerste gebruikt en worden de andere daaruit berekend.",
+            "Heel veel rijen plakken, importeren, exporteren of kopiëren kost tijd. Een kaart boven de tabel toont dan de voortgang in procenten en rijen, met een knop Stoppen. Gestopt plakken of importeren laat de tabel ongewijzigd; een gestopte export schrijft geen bestand.",
+            "Als de computer onvoldoende geheugen voor de rijen heeft, verandert er niets en vermeldt de regel onder de tabel hoeveel geheugen nodig was. Als de rijen passen maar de vorige tabeltoestand niet daarnaast kan worden bewaard, wordt gevraagd of je zonder ongedaan maken wilt doorgaan: die wijziging en eerdere wijzigingen kunnen dan niet meer worden teruggedraaid. Voordat dit wordt gevraagd, vervallen de oudste herstelstappen om ruimte te maken.",
+            "Tabelopties (het tandwiel): inhoud van de kolomtitel (naam en symbool, naam of symbool), kolomtitels en rijnummers opnemen bij kopiëren en exporteren, ‘Dit omrekenhulpmiddel met deze kolommen starten’ en ‘Tabel herstellen’."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bijzondere omrekenhulpmiddelen",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valuta",
+          "body": [
+            "Valuta hebben geen vaste omrekenfactor: hun waarde verandert. Het valutaomrekenhulpmiddel haalt tijdens het gebruik de koersen op bij twee gratis diensten, en alleen dan.",
+            {
+              "points": [
+                "Nationale valuta: Rates By Exchange Rate API, https://www.exchangerate-api.com . De koersen veranderen bij de bron eenmaal per dag en worden niet vaker opgehaald.",
+                "Cryptovaluta: Powered by CoinGecko, https://www.coingecko.com . De koersen worden opgehaald wanneer het omrekenhulpmiddel wordt geopend of weer actief wordt en de beschikbare koersen ouder zijn dan een kwartier, en wanneer je op Vernieuwen drukt; nooit op een timer."
+              ]
+            },
+            "Alleen de koersen worden opgevraagd. Er wordt niets over jou verstuurd en nooit de bedragen die je omrekent.",
+            "De regel onder de tabel en onder het resultaat in Snel omrekenen vermeldt van wanneer de koersen zijn. Zonder verbinding worden de laatste koersen gebruikt en als verouderd gemarkeerd. Een valuta waarvoor de diensten geen koers leveren, toont een streepje.",
+            "Instellingen → Units → Valuta: je kunt ‘Koersen via het netwerk ophalen’ uitschakelen; het omrekenhulpmiddel gebruikt dan de laatst bewaarde koersen. ‘Bronnen naast de koersen vermelden’ toont of verbergt de namen van de twee diensten op die regel.",
+            "De koersen zijn ter informatie. Vertrouw er niet op voor een transactie."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Talstelsel",
+          "body": [
+            "De eenheden van dit omrekenhulpmiddel zijn manieren om een geheel getal te schrijven: grondtallen van 2 tot 64, Romeinse cijfers, grondtal 60 met dubbele punten (1:30:15), binair gecodeerd decimaal en Gray-code. De waarden zijn tekst: typ FF onder hexadecimaal en de andere kolommen tonen 255, 11111111 enzovoort.",
+            "Romeinse cijfers lopen van I tot MMMCMXCIX (1 tot 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Eenheden die meer dan een factor vereisen",
+          "body": [
+            "De meeste eenheden zijn een factor van een andere. Sommige niet, en Units rekent ze volgens hun definitie om: temperaturen met verschoven nulpunten; brandstofverbruik (liter per 100 km tegenover mijl per gallon); golflengte tegenover frequentie; geleidbaarheid tegenover weerstand; graden Baumé, API, Brix en Plato tegenover dichtheid; decibels tegenover geluidsdruk en -intensiteit; een hellingspercentage tegenover de hoek.",
+            "Een temperatuur en een temperatuurverschil zijn niet hetzelfde: 100 °C is 212 °F, maar een verschil van 100 °C is een verschil van 180 °F. De eenheden in de groep ‘Verschil (Δ)’ kunnen onderling worden omgerekend; tussen deze eenheden en de temperatuurschalen toont de cel een streepje."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Je eigen eenheden",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Een eenheid maken",
+          "body": [
+            "Je kunt eigen eenheden toevoegen aan elk omrekenhulpmiddel. Kies ‘Nieuwe eenheid’ in het eenhedenpaneel, geef een naam en symbool op en druk de eenheid uit in een bestaande eenheid.",
+            {
+              "points": [
+                "Een factor: ‘1 pas = 0,75 m’. Voor een schaal die niet bij nul begint, geef je ook op wat na vermenigvuldiging wordt opgeteld.",
+                "Een formule: hoe de waarde in de andere eenheid wordt berekend, met x voor de waarde, plus de formule voor de omgekeerde berekening. Bijvoorbeeld x * 9 / 5 + 32 en (x - 32) * 5 / 9."
+              ]
+            },
+            "Je invoer wordt tijdens het typen uitgeprobeerd. Voordat je opslaat, zie je hoeveel één eigen eenheid is. Een formule kan + − × ÷ ^, haakjes, x, pi, e en de functies sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos en atan gebruiken. Deze wordt berekend, nooit als programma uitgevoerd.",
+            "Je eenheden staan onder ‘Mijn eenheden’ in het paneel, waar je ze kunt wijzigen en verwijderen. Een eigen eenheid kan in een andere eigen eenheid worden uitgedrukt; als je een eenheid verwijdert, verdwijnen ook de eenheden die daarop gebaseerd zijn.",
+            "Instellingen → Units toont je eigen eenheden uit alle omrekenhulpmiddelen en kan ze als tekst exporteren en importeren, zodat je ze kunt bewaren of naar een andere computer meenemen."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Instellingen",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Instellingen van Units",
+          "body": [
+            "Bestand → Instellingen openen opent de instellingen van Units; dat kan ook via de tabelopties (het tandwiel in de balk).",
+            {
+              "points": [
+                "Elk omrekenhulpmiddel openen in een eigen tabblad of in het huidige tabblad.",
+                "Extreme waarden volledig uitschrijven, wat er tussen duizendtallen staat (10000,000, 10 000,000 of 10.000,000; niets, tenzij je iets anders kiest) en rijnummers.",
+                "Valuta: of koersen via het netwerk worden opgehaald en of de diensten ernaast worden vermeld.",
+                "Precisie van eenheden: kies een omrekenhulpmiddel (of ‘Gewijzigde eenheden’), zoek een eenheid en stel de decimalen in met − en +; de pijl herstelt de eigen precisie van de eenheid. ‘Overal voor deze eenheid gebruiken’ in het kolommenu stelt dezelfde waarde in.",
+                "Eenheden waarmee een tabel begint: de omrekenhulpmiddelen waarvoor je de eerste kolommen hebt gekozen, elk met een optie om de standaardeenheden te herstellen.",
+                "Je eigen eenheden."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Over Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Over Units",
+          "body": [
+            "Units is de omrekenapp van Syntelab Creative: 38 omrekenhulpmiddelen met meer dan 1.500 eenheden, van lengte en temperatuur tot valuta en talstelsels. Een eenmaal ingevoerde waarde wordt getoond in elke gewenste eenheid, in een tabel voor één waarde of miljoenen waarden.",
+            "Getallen worden exact als breuken berekend en pas bij de weergave afgerond. Alles gebeurt op deze computer; alleen valutakoersen worden via het netwerk opgehaald, en dat kun je uitschakelen.",
+            "De app is nieuw. Laat via Help → Feedback weten waar deze voor jouw werk tekortschiet: zo weten we waaraan we moeten werken."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Hoeveel rijen een tabel aankan: onze metingen",
+          "body": [
+            "Een tabel heeft geen vaste rijlimiet: deze groeit zolang het computergeheugen het toelaat. Een rij gebruikt 16 bytes, dus 100 miljoen rijen ongeveer 1,5 GB. Als het geheugen opraakt, blijft de tabel ongewijzigd en meldt het programma hoeveel er nodig was.",
+            "We hebben gemeten met 50.000.000 rijen, elk met een getal in één kolom, in de geoptimaliseerde programmaversie:",
+            {
+              "points": [
+                "50.000.000 rijen plakken: ongeveer 7 seconden.",
+                "Deze uit een CSV-bestand importeren: 12 seconden.",
+                "Deze met een omgerekende tweede kolom naar CSV exporteren: ongeveer 3,5 minuten.",
+                "Naar Excel exporteren, verdeeld over 48 werkbladen: 4,3 minuten."
+              ]
+            },
+            "Exporteren duurt langer dan importeren, omdat elke geschreven cel eerst exact wordt omgerekend.",
+            {
+              "note": "De testcomputer: AMD Ryzen 9 9950X3D (16 cores, 32 threads), 64 GB geheugen, Windows 11 Pro. Oktober 2026. Op een andere computer verschillen de tijden; de grootte van een rij blijft hetzelfde."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Waarmee Units is gebouwd",
+          "body": [
+            {
+              "points": [
+                "Exacte getallen: de num-bibliotheken van Rust (breuken van gehele getallen van willekeurige grootte).",
+                "De eenheden, factoren en groepen: gegevensbestanden van het programma, één per omrekenhulpmiddel.",
+                "Excel- en OpenDocument-werkmappen lezen: calamine. Excel-werkmappen schrijven: rust_xlsxwriter.",
+                "Het systeemklembord, voor het kopiëren en plakken van zeer veel rijen: arboard.",
+                "Valutakoersen: ExchangeRate-API en CoinGecko (zie ‘Valuta’)."
+              ]
+            },
+            "Wat de app met de rest van het programma deelt, staat onder ‘Over Syntelab Creative’."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Wat Units nog niet kan",
+          "body": [
+            {
+              "points": [
+                "Een rij bevat één waarde: bij een geplakte rij met meerdere waarden wordt de eerste gebruikt.",
+                "Zeer veel rijen exporteren is langzaam (zie onze metingen).",
+                "Gekopieerde klembordinhoud wordt vóór het plakken als één tekst in het geheugen bewaard.",
+                "De valutakoersen zijn zo recent als de twee bronnen ze leveren: eenmaal per dag voor nationale valuta."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

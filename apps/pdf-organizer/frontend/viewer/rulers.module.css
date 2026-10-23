@@ -1,0 +1,54 @@
+/* Laid over the top and left edges of the area the pages are shown in. */
+.rulers {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.corner,
+.across,
+.down {
+  position: absolute;
+  background: var(--sc-surface);
+  color: var(--sc-muted);
+}
+
+.corner {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-right: 1px solid var(--sc-border);
+  border-bottom: 1px solid var(--sc-border);
+  font-size: 9px;
+}
+
+.across {
+  top: 0;
+  left: 22px;
+  border-bottom: 1px solid var(--sc-border);
+}
+
+.down {
+  top: 22px;
+  left: 0;
+  border-right: 1px solid var(--sc-border);
+}
+
+.rulers line {
+  stroke: currentColor;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.rulers text {
+  fill: currentColor;
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+}

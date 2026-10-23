@@ -1,0 +1,41 @@
+{
+  "id": "number-base",
+  "category": "digital",
+  "icon": "hashtag",
+  "base": "decimal",
+  "startsWith": ["decimal","binary","hexadecimal"],
+  "decimals": 0,
+  "groups": [
+    { "id": "common", "color": "#2563eb" },
+    { "id": "programming", "color": "#dc2626" },
+    { "id": "mathematical", "color": "#ea580c" },
+    { "id": "ancient", "color": "#9333ea" },
+    { "id": "specialized", "color": "#059669" }
+  ],
+  "units": [
+    {"id":"decimal","symbol":"BASE 10","group":"common","numeral":{"kind":"radix","radix":10},"popular":true},
+    {"id":"binary","symbol":"BASE 2","group":"common","numeral":{"kind":"radix","radix":2},"popular":true},
+    {"id":"octal","symbol":"BASE 8","group":"common","numeral":{"kind":"radix","radix":8},"popular":true},
+    {"id":"hexadecimal","symbol":"BASE 16","group":"common","numeral":{"kind":"radix","radix":16},"popular":true},
+    {"id":"base32","symbol":"BASE 32","group":"programming","numeral":{"kind":"radix","radix":32},"popular":true},
+    {"id":"base64-numeric","symbol":"BASE 64","group":"programming","numeral":{"kind":"radix","radix":64}},
+    {"id":"ternary","symbol":"BASE 3","group":"mathematical","numeral":{"kind":"radix","radix":3},"popular":true},
+    {"id":"quaternary","symbol":"BASE 4","group":"mathematical","numeral":{"kind":"radix","radix":4}},
+    {"id":"quinary","symbol":"BASE 5","group":"mathematical","numeral":{"kind":"radix","radix":5}},
+    {"id":"senary","symbol":"BASE 6","group":"mathematical","numeral":{"kind":"radix","radix":6}},
+    {"id":"septenary","symbol":"BASE 7","group":"mathematical","numeral":{"kind":"radix","radix":7}},
+    {"id":"nonary","symbol":"BASE 9","group":"mathematical","numeral":{"kind":"radix","radix":9}},
+    {"id":"undecimal","symbol":"BASE 11","group":"mathematical","numeral":{"kind":"radix","radix":11}},
+    {"id":"duodecimal","symbol":"BASE 12","group":"mathematical","numeral":{"kind":"radix","radix":12},"popular":true},
+    {"id":"base13","symbol":"BASE 13","group":"mathematical","numeral":{"kind":"radix","radix":13}},
+    {"id":"base14","symbol":"BASE 14","group":"mathematical","numeral":{"kind":"radix","radix":14}},
+    {"id":"base15","symbol":"BASE 15","group":"mathematical","numeral":{"kind":"radix","radix":15}},
+    {"id":"base20","symbol":"BASE 20","group":"mathematical","numeral":{"kind":"radix","radix":20},"popular":true},
+    {"id":"base24","symbol":"BASE 24","group":"mathematical","numeral":{"kind":"radix","radix":24}},
+    {"id":"base36","symbol":"BASE 36","group":"mathematical","numeral":{"kind":"radix","radix":36},"popular":true},
+    {"id":"roman","symbol":"ROMAN","group":"ancient","numeral":{"kind":"roman"},"popular":true},
+    {"id":"base60","symbol":"BASE 60","group":"ancient","numeral":{"kind":"sexagesimal"},"popular":true},
+    {"id":"bcd","symbol":"BCD","group":"specialized","numeral":{"kind":"bcd"}},
+    {"id":"gray-code","symbol":"GRAY","group":"specialized","numeral":{"kind":"gray"}}
+  ]
+}

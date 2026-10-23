@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Orientēšanās",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Pirmā lapa",
+          "body": [
+            "Dev cilne atveras pirmajā lapā, kurā ir visi rīki, sagrupēti tāpat kā izvēlnēs: Kodēt, Dati, Ģenerēt, Pārbaudīt, Tīkls.",
+            {
+              "points": [
+                "Rakstiet laukā „Meklēt rīku“, lai sašaurinātu sarakstu.",
+                "Rīka spraude to notur augšā, sadaļā „Piesprausti“.",
+                "Rīks atveras tajā pašā cilnē; Fails → Visi rīki atgriež pirmajā lapā. Iestatījumos varat likt katram rīkam atvērties savā cilnē un jaunai cilnei atvērties ar pēdējo izmantoto rīku."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Ielīmēt jebko",
+          "body": [
+            "Lodziņš pirmās lapas augšā pieņem visu, ko ielīmējat, un pasaka, kam tas līdzinās: marķieris, sertifikāts, JSON, UUID, laikspiedoli, cron grafiki, URL, XML vai HTML, SQL, Base64, kontrolsumma, tabula, YAML.",
+            "Zem katra minējuma ir rīki, kas darbojas ar ko tādu, piemērotākais pirmais. Noklikšķiniet uz kāda: tas atveras ar jau ievietotu tekstu un tiek izpildīts.",
+            {
+              "note": "Ielīmētais paliek lodziņā, līdz to notīrāt vai aizverat cilni. Tas nekad netiek ierakstīts diskā."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Kā veidots rīks",
+          "body": [
+            "Lielākajai daļai rīku ir vienāds rāmis: opcijas rindā augšā, ievade vienā pusē, izvade otrā un rinda apakšā, kas pasaka, kas notika.",
+            {
+              "points": [
+                "Rezultāts tiek izveidots no jauna ikreiz, kad mainās ievade vai kāda opcija, un parādīts izvadē; to norāda „Izpildās pats“ opciju rindā. Tikai teksts, kas ir pārāk garš, lai to izpildītu pēc katra taustiņa, vai fails, kas lielāks par 128 MB, gaida pogu „Izpildīt“, kas tad parādās. Ctrl+Enter izpilda rīku jebkurā brīdī.",
+                "Rezultāts, kas nav teksts (no Base64 atkodēts attēls, gzip), tiek rādīts kā priekšskatījums: attēls tāds, kāds tas ir, viss pārējais — ar tā veidu, izmēru un pirmajiem baitiem. Tad „Kopēt“ to nokopē kā Base64, un attēlu var nokopēt arī kā attēlu. Tāpat notiek ar ievades failu, kas nav teksts.",
+                "„Atvērt failu“, „Ielīmēt“ un „Notīrīt“ atrodas virs ievades; „Kopēt“ un „Saglabāt failā“ — virs izvades. Failu var arī ievilkt ievadē.",
+                "Kas ievadē nav kārtībā, tiek pateikts vārdiem, ar rindu un kolonnu, un atzīmēts redaktorā.",
+                "Izvēlne Skats novieto abus paneļus blakus vai vienu zem otra, rāda rindu numurus un aplauž garas rindas; līniju starp paneļiem var vilkt.",
+                "Izvēlētās opcijas tiek atcerētas nākamajai reizei. Ievadītais teksts — nē."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Dzēst, un kas tiek saglabāts",
+          "body": [
+            "„Dzēst“ katra rīka apakšējā labajā stūrī to uzreiz iztukšo: ievadi, rezultātu, visu, kas ierakstīts tā lodziņos, un to, ko tā redaktori varētu atsaukt.",
+            "Dev saglabā tikai savus iestatījumus, jūsu piespraustos rīkus, pēdējā izmantotā rīka nosaukumu un katra rīka opcijas. Nekas, ko rīkā ierakstāt, ielīmējat, atverat vai izveidojat, netiek ierakstīts diskā, žurnālā vai neseno vienumu sarakstā. Jo īpaši noslēpumi: atslēgas, paroles frāzes, marķieri un pieprasījuma galvenes dzīvo cilnē un nekur citur.",
+            "Viena lieta kādu laiku paliek diskā: faila rezultāts un rezultāts, kas nav teksts, tiek ierakstīti pašas programmas mapē, lai tos varētu parādīt un pēc tam saglabāt. Katrs tiek izdzēsts, kad tā vietā nāk cits rezultāts, kad rīku izdzēšat vai aizverat, un jebkurā gadījumā, kad Dev tiek palaists no jauna."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Jebkura izmēra faili",
+          "body": [
+            "Faila izmēram nav noteikts ierobežojums. Fails, kas ir pietiekami mazs, lai to rādītu (līdz 16 MB), tiek ievietots redaktorā. Lielāks fails vai fails, kas nav teksts, paliek diskā: tiek rādīts tā sākums (vai priekšskatījums), rīks to nolasa no tā atrašanās vietas, un tā rezultāts tiek rādīts tāpat kā tekstam. Pēc tam „Saglabāt failā“ nokopē rezultātu jūsu izvēlētajā vietā.",
+            {
+              "points": [
+                "Ilgs darbs rāda kartīti ar to, cik tālu tas ticis, un pogu „Apturēt“.",
+                "Fails, kas ir teksts citā kodējumā, nevis UTF-8 (UTF-16, Windows-1252 un tamlīdzīgi), tiek nolasīts kā teksts, ja tas ir pietiekami mazs, lai to rādītu, un kodējums tiek norādīts. Viss, ko saglabājat no Dev, ir UTF-8.",
+                "Rīkā ievilkts fails tiek atvērts tāpat kā ar „Atvērt failu“. Ja logs nevar noteikt, kur fails atrodas, tas tiek pieņemts līdz 16 MB, it kā ielīmēts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Daudz failu un veselas mapes",
+          "body": [
+            "Ja rīkam ir „Strādāt ar: Tekstu / Failiem“, „Failiem“ to izpilda daudziem failiem vienā reizē.",
+            {
+              "steps": [
+                "Pievienojiet failus vai mapi (ar tās apakšmapēm, ja to atstājat ieslēgtu).",
+                "Katrs fails tiek nolasīts vienreiz, kad to pievieno, un tiek pateikts, vai rīks to pieņem.",
+                "Izvēlieties, kur nonāk rezultāti: blakus katram failam ar jaunu nosaukumu, mapē (saglabājot mapju struktūru) vai pāri pašiem failiem, par ko jums pajautās vēlreiz. Jaucējkodi var rezultātus arī tikai parādīt sarakstā.",
+                "Noklikšķiniet uz faila sarakstā, lai zem izvēlēm redzētu tikai tā rezultātu, pirms kaut kas tiek ierakstīts.",
+                "Izpildiet. Fails ar kļūdu neaptur pārējos; katrs pasaka, kā tam gāja."
+              ]
+            },
+            {
+              "note": "Rezultāts nekad nenonāk failā, kas jau pastāv, ja vien jūs to nepieprasāt."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Windows failu pārlūka labā klikšķa izvēlne",
+          "body": [
+            "Ieslēdziet to programmas iestatījumos, sadaļā „Windows failu pārlūks“. Viss ir apkopots zem vienas rindas „Syntelab Creative“; sistēmā Windows 11 tā atrodas zem „Rādīt citas opcijas“.",
+            {
+              "points": [
+                "Atvērt ar Syntelab Dev: tiem failu veidiem, ko nolasa kāds rīks (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz un tamlīdzīgi). Fails atveras rīkā, kas paredzēts tā veidam.",
+                "Kontrolsummas: jebkuram failam vai mapei. Jaucējvērtības tiek uzskaitītas, katra blakus savam failam, un nekas netiek ierakstīts.",
+                "Hex skatījums: jebkuram failam.",
+                "Salīdzināt: divi faili nonāk abās Diff pusēs; divas mapes — mapju salīdzināšanā."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kodēšana",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Pārvērš baitus Base64 un atpakaļ. Kodēšana pieņem jebkuru failu; dekodēšana atdod baitus, kas tiek rādīti, ja tie ir teksts, un saglabāti failā, ja nav.",
+            {
+              "points": [
+                "Alfabets: standarta vai URL alfabets (- un _).",
+                "Aizpildīšana ar = un rindas pa 64, 76 vai jebkuru citu rakstzīmju skaitu.",
+                "Dekodēšana pieņem abus alfabētus, ar vai bez aizpildījuma, un norāda, kur rakstzīme ir nepareiza."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL kodēšana / dekodēšana",
+          "body": [
+            "Procentu kodējums, kā to raksta pārlūki: adreses daļa (tiek kodēts viss, kas nav vienkāršs burts), visa adrese (tās pašas zīmes tiek saglabātas) vai veidlapa (+ atstarpes vietā).",
+            "Dekodēšana norāda, kur % zīmei neseko divi heksadecimālie cipari."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML entitātes",
+          "body": [
+            "Raksta zīmes, ko HTML un XML patur sev (&, <, >, pēdiņas), kā entitātes un nolasa entitātes atpakaļ: pēc nosaukuma, decimālā vai heksadecimālā numura. Nosaukumi ir tie, kas noteikti HTML standartā.",
+            "„Arī katru rakstzīmi, kas nav ASCII“ kā entitātes raksta arī burtus ar diakritiskajām zīmēm un citu alfabētu burtus."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT dekoderis",
+          "body": [
+            "Izjauc JSON Web Token pa daļām: tā galveni un datus kā JSON un tā prasības vārdiem (izdevējs, subjekts, auditorija, kad tas beidzas, ar „beidzies“ vai „vēl nav beidzies“).",
+            "Ievadiet noslēpumu, lai pārbaudītu parakstu, kas izveidots ar kopīgu noslēpumu (HS256, HS384, HS512). Paraksti, kas izveidoti ar privāto atslēgu (RS, ES, PS), netiek pārbaudīti.",
+            {
+              "note": "Marķieris un noslēpums paliek cilnē: lai dekodētu marķieri, nekas nekur netiek sūtīts."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Ekranēšana / atekranēšana",
+          "body": [
+            "Raksta tekstu kā kādas valodas (JSON, JavaScript, C, C++, Java un tamlīdzīgu) virkni ar ekranētām pēdiņām, rindu pārnesumiem un citām zīmēm un nolasa šādu virkni atpakaļ."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Komprimē un dekomprimē gzip — jebkura izmēra failu, to lasot. Līmenis ir no „Ātrākais“ līdz „Mazākais“; teksta rezultātu var iegūt kā Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Skaitīšanas sistēmas",
+          "body": [
+            "Izsaka veselus skaitļus, pa vienam katrā rindā, binārajā, oktālajā, decimālajā un heksadecimālajā sistēmā un vēl vienā jūsu izvēlētā sistēmā līdz 36. Skaitlim nav maksimālā lieluma.",
+            {
+              "points": [
+                "Skaitļa sistēmu nosaka pēc tā pieraksta: 0x — heksadecimālā, 0b — binārā, 0o — oktālā, burti — heksadecimālā, citādi — decimālā. Vai arī izvēlieties sistēmu, kurā tiek lasīts viss.",
+                "Atstarpes, pasvītras un apostrofi starp cipariem tiek izlaisti: 1_000_000.",
+                "Negatīvs skaitlis tiek parādīts arī tā, kā to glabā datori (divnieka papildkods), mazākajā no 8, 16, 32, 64 un tā tālāk bitiem, kurā tas ietilpst."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dati",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON formatētājs",
+          "body": [
+            "Formatē, minificē un validē JSON un rāda to kā koku. Jebkura izmēra dokuments tiek lasīts kā plūsma.",
+            {
+              "points": [
+                "Atkāpe ar 2 vai 4 atstarpēm, tabulāciju vai jebkuru atstarpju skaitu.",
+                "„Vairāk opciju“: kārtot atslēgas, īsi saraksti vienā rindā, atstarpe pēc kola, kā beidzas rindas, rindas pārnesums beigās, ne-ASCII rakstzīmes kā \\uXXXX.",
+                "„Iecietīga lasīšana“ pieņem komentārus (// un /* */) un komatus beigās un raksta stingru JSON.",
+                "Izmaiņas: izņemt null vērtības, izņemt tukšās vērtības un tamlīdzīgi, vienā piegājienā.",
+                "Koks atveras pa vienam līmenim un atrod tekstu atslēgās un vērtībās."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Izpilda JSONPath vaicājumu (RFC 9535) dokumentā: $.store.book[?@.price < 10].title. Rezultāts ir atrastās vērtības, ceļi līdz tām vai abi.",
+            "Kļūdains vaicājums tiek paziņots ar vietu, kurā tas kļūst nepareizs."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema validatoris",
+          "body": [
+            "Pārbauda dokumentu pret JSON Schema (melnraksti no 4 līdz 2020-12). Shēma tiek ievietota panelī zem ievades. Katra neatbilstība tiek uzskaitīta ar tās atrašanās vietu un noteikumu, ko tā pārkāpj.",
+            "Daudziem failiem katru pārbauda pret to pašu shēmu. $ref uz citu failu vai adresi netiek izsekots."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Shēmas ģenerators un JSON uz TypeScript",
+          "body": [
+            "No JSON parauga shēmas ģenerators uzraksta JSON Schema, kurai tas atbilst, un JSON → TypeScript uzraksta tā tipa deklarācijas (interfeisus vai tipus, eksportētus vai ne, readonly vai ne, ar jūsu norādītu nosaukumu)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Pārvērš YAML par JSON un JSON par YAML. YAML tiek lasīts pēc tā pamatshēmas, izsekojot enkurus un apvienošanas; kļūdas tiek norādītas ar to vietu."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Pārvērš tabulu par JSON un atpakaļ. Atdalītāju nosaka pēc pirmās rindas vai izvēlas (komats, semikols, tabulācija, vertikāla svītra); pirmā rinda var būt virsraksts; var atpazīt skaitļus un true / false.",
+            "„Tabula“ rāda CSV rindās un kolonnās, jebkura izmēra failam."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML / HTML formatētājs",
+          "body": [
+            "Formatē, minificē un pārbauda XML un HTML. XML tiek lasīts stingri: tags, kas nekad netiek aizvērts, tiek norādīts ar tā vietu. HTML tiek lasīts tik iecietīgi, kā to dara pārlūki."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL formatētājs",
+          "body": [
+            "Izkārto priekšrakstu, pa vienai klauzulai rindā, vai saliek to vienā rindā; atslēgvārdi ar lielajiem burtiem, mazajiem burtiem vai kā ierakstīts. Tas neprasa dialektu un nepārbauda, ko priekšraksts nozīmē."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Salīdzina divus tekstus rindu pa rindai, divus JSON dokumentus pēc to satura vai divas mapes failu pa failam. Pirmais nonāk ievadē, otrais — panelī zem tās.",
+            {
+              "points": [
+                "„Blakus“ atzīmē vārdus, kas mainījušies rindas iekšienē; „Vienots“ ir ielāps, kā to raksta diff -u.",
+                "Ignorēt reģistru, atstarpes, tukšas rindas, ciparus vai interpunkciju.",
+                "JSON gadījumā atslēgu secība un izkārtojums nav atšķirība; rezultāts var būt JSON Patch (RFC 6902).",
+                "Mapes: kuri faili ir tikai vienā, kuri ir vienādi, kuri atšķiras; „Salīdzināt“ rindā atver pāri kā tekstus."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdown priekšskatījums",
+          "body": [
+            "Rāda Markdown tā, kā tas izskatīsies, un dod tā HTML kopēšanai vai saglabāšanai: CommonMark ar tabulām, pārsvītrojumu, uzdevumu sarakstiem un vēres piezīmēm.",
+            {
+              "points": [
+                "Markdown tekstā ierakstīts HTML tiek rādīts kā teksts, nevis izpildīts.",
+                "Attēls, kas būtu jāielādē no tīkla, netiek ielādēts: tā vietā tiek rādīts tā apraksts un adrese. Tekstā ietverts attēls (data:) tiek rādīts.",
+                "Saite, uz kuras noklikšķināt, atveras sistēmas pārlūkā."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ģenerēt",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Izveido 1., 3., 4., 5., 6. un 7. versijas UUID (RFC 9562), tik daudz, cik lūdzat, ar svītrām, parastus, kā URN vai figūriekavās. „Sadalīt“ pasaka katra UUID versiju un tajā ietverto laiku vai nosaukumu."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Jaucējkodi",
+          "body": [
+            "Teksta vai faila CRC-32, MD5, SHA-1, SHA-256, SHA-384 un SHA-512, vairākas vienlaikus, pierakstītas kā hex vai Base64. Jebkura izmēra faila jaucējvērtība tiek aprēķināta, to lasot.",
+            {
+              "points": [
+                "„Pārbaudīt pret“: ielīmējiet kontrolsummu vai .sha256 faila rindu; tiek pateikts, vai tā sakrīt.",
+                "„HMAC atslēga“: jaucējvērtības kļūst par HMAC ar šo atslēgu.",
+                "„Katra rinda atsevišķi“: viena jaucējvērtība katrai teksta rindai.",
+                "Faili: jaucējvērtības tiek uzskaitītas blakus to failiem; „Kopēt visu“ tās dod tā, kā tās raksta sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Paroles un noslēpumi",
+          "body": [
+            "No operētājsistēmas nejaušajiem skaitļiem izveido paroles no jūsu izvēlētajiem rakstzīmju veidiem, paroles frāzes no vārdiem un nejaušus baitus kā hex vai Base64. Katrai norādīts, cik bitu entropijas tai ir. Kad kaut kas ir izveidots, opcijas maiņa to izveido no jauna.",
+            "Paroles frāze sastāv no vārdiem, kas ņemti no Electronic Frontier Foundation garā vārdu saraksta (7776 angļu vārdi), katrs tikpat iespējams kā pārējie: seši vārdi ir aptuveni 77 biti."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Atslēgas un sertifikāti",
+          "body": [
+            "Piecas darbības, ko izvēlas augšā:",
+            {
+              "points": [
+                "„Jauna atslēga“: RSA, EC P-256 / P-384 / P-521 vai Ed25519, visos formātos, ko izmanto programmas (PKCS #8, vecākā forma, OpenSSH; publiskā atslēga kā PEM un kā rinda failam authorized_keys), bloķēta ar paroles frāzi, ja to norādāt.",
+                "„Sertifikāta pieprasījums“: CSR jaunai atslēgai vai jūsu ielīmētai, ar tās subjektu un citiem nosaukumiem (SAN).",
+                "„Pašparakstīts sertifikāts“: tas pats, parakstīts ar savu atslēgu, uz norādīto dienu skaitu; „Tas var parakstīt citus sertifikātus“ padara to par jūsu pašu sertifikācijas iestādi.",
+                "„Parakstīt ar savu CA“: ielīmējiet pieprasījumu, savas sertifikācijas iestādes sertifikātu un tās atslēgu; jūs saņemat parakstīto sertifikātu un aiz tā sertifikācijas iestādi.",
+                "„Nolasīt un pārveidot“: ielīmējiet vai atveriet jebko (PEM, DER, OpenSSH atslēgu, .pfx vai .p12 failu, bloķētu vai ne). Tiek pateikts, kas atrasts un vai atslēga atbilst sertifikātam, un katrs elements tiek uzrakstīts citos formātos. Atslēgu un tās sertifikātu var saglabāt kopā kā .pfx."
+              ]
+            },
+            {
+              "note": "Viss tiek izveidots šajā datorā. Atslēga ir cilnē līdz „Dzēst“ un nekur citur, ja vien to nesaglabājat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pārbaude",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Regex testeris",
+          "body": [
+            "Izmēģina JavaScript regulāro izteiksmi tekstā: atbilstības ar to grupām un vietām vai tekstu ar aizstātām atbilstībām. Karodziņi ir g, i, m, s, u, y.",
+            "Šablons darbojas atsevišķi no loga, un tāds, kas darbojas ilgāk par 20 sekundēm, tiek apturēts."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron skaidrojums",
+          "body": [
+            "Vārdiem pasaka, ko nozīmē grafiks un kad tas tiek izpildīts: crontab (pieci lauki, seši ar sekundēm, septiņi ar gadu), Quartz, AWS EventBridge cron() un rate() un systemd OnCalendar. Viens grafiks katrā rindā.",
+            {
+              "points": [
+                "Nākamās izpildes un, ja lūdzat, iepriekšējās, jūsu izvēlētajā laika zonā.",
+                "Nedēļas dienas tiek numurētas no 0 svētdienai vai no 1, kā tās numurē Quartz, — kā izvēlaties. Rinda ar sekundēm, kurā ir arī gads, L, W vai #, ir Quartz rinda un automātiski tiek nolasīta Quartz veidā.",
+                "Tas pats grafiks citos formātos, ko nokopēt vai pievienot ievadei.",
+                "Veidotājs izveido grafiku, izvēloties katru lauku; „Mainīt veidotājā“ ielādē tajā ierakstītu grafiku."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix laikspiedols",
+          "body": [
+            "Nolasa mirkļus, pa vienam rindā: sekundes, milisekundes, mikrosekundes vai nanosekundes kopš 1970. gada vai datumu, kas pierakstīts ierastajos veidos (ISO 8601, kā to raksta e-pasts un HTTP, kā to raksta Git). Katrs tiek izteikts jūsu izvēlētajā laika zonā, UTC un kā visu veidu laikspiedoli."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL parsētājs",
+          "body": [
+            "Sadala URL tā, kā to nolasa pārlūki: shēma, lietotājs, resursdators (ar tā Unicode formu, ja tas ierakstīts punycode), ports, ceļš, katrs dekodētais vaicājuma parametrs un fragments."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Sertifikāta dekodētājs",
+          "body": [
+            "Nolasa X.509 sertifikātus no PEM vai DER un pasaka visu, kas tajos ir: subjektu, izdevēju, derīgumu, nosaukumus, kam tas paredzēts, tā atslēgu, paplašinājumus un pirkstu nospiedumus.",
+            "Tas nolasa, nevis spriež, vai sertifikātam var uzticēties. Lai redzētu vietnes rādīto sertifikātu un to, vai šis dators tam uzticas, izmantojiet Tīkls → Vietnes sertifikāts."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Hex skatītājs",
+          "body": [
+            "Rāda jebkura izmēra faila vai ielīmēta teksta baitus: katras rindas pozīciju, baitus un tos pašus baitus kā rakstzīmes.",
+            {
+              "points": [
+                "Pāriet uz pozīciju, kas pierakstīta kā 0x1F4, 1F4h vai 500.",
+                "Meklēt baitus (DE AD BE EF) vai tekstu (UTF-8 vai UTF-16 abās baitu secībās) uz priekšu un atpakaļ.",
+                "Noklikšķiniet uz baita: sānos tiek rādīts, kas tur ir, kā jebkura izmēra skaitļi abās baitu secībās, kā rakstzīme un kā laiks.",
+                "Atlasiet, velkot, ar Shift vai bulttaustiņiem; kopējiet atlasi kā hex, kodu, Base64 vai tekstu, vai saglabājiet to failā."
+              ]
+            },
+            {
+              "note": "Tas tikai skatās: failā nekas netiek mainīts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tīkls",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Kur sazinās tīkla rīki",
+          "body": [
+            "Šie četri rīki ir vienīgā Dev daļa, kas sazinās ar tīklu, un tie sazinās tur, kur jūs tos novirzāt.",
+            {
+              "points": [
+                "Sazinās tikai ar jūsu ierakstīto adresi un tikai tad, kad nospiežat pogu. Nekad fonā.",
+                "Tiek sūtīts tas, ko uzrakstījāt. Vienīgais, kas pieprasījumam tiek pievienots, ir visiem vienāds User-Agent („Syntelab Creative“), ja vien nenorādāt savu.",
+                "Sīkdatnes netiek glabātas, nekas par jums vai datoru netiek sūtīts, un nekas ierakstītais netiek saglabāts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP klients",
+          "body": [
+            "Nosūta vienu ar roku uzrakstītu pieprasījumu: metodi, adresi, galvenes (pa vienai rindā: Nosaukums: vērtība) un saturu — ierakstītu vai ņemtu no jebkura izmēra faila.",
+            {
+              "points": [
+                "Atbilde: tās numurs, cik ilgi tā aizņēma (kopā un līdz pirmajam baitam), tās izmērs, galvenes un saturs, iekrāsots atbilstoši veidam un izkārtots, ja tas ir JSON. Saturs, kas nav teksts (attēls, PDF), tiek rādīts tāds, kāds tas ir, un saglabāts tāds, kāds tas pienāca.",
+                "„Sekot pāradresējumiem“ vai redzēt pirmo atbildi tādu, kāda tā ir. Adreses, no kurām pieprasījums tika pārsūtīts, tiek uzskaitītas.",
+                "„Pārbaudīt sertifikātu“ pret to, kam šis dators uzticas; izslēdziet to tikai saviem serveriem.",
+                "„Sūtīt, atbildi saglabāt failā“ ieraksta jebkura izmēra saturu tieši diskā, ar progresu un pogu „Apturēt“.",
+                "„Kopēt kā curl“ dod to pašu pieprasījumu kā komandu."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS meklēšana",
+          "body": [
+            "Jautā vārdu serverim kāda nosaukuma ierakstus: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, vairākus vienlaikus. Adrese dod savu nosaukumu (PTR).",
+            "Jautājums tiek nosūtīts vārdu serverim, ko dators ir iestatīts izmantot, publiskam serverim (1.1.1.1, 8.8.8.8, 9.9.9.9), atrisinātājam caur HTTPS (Cloudflare, Google) vai serverim, ko ierakstāt."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Portu pārbaude",
+          "body": [
+            "Pasaka, vai resursdatora porti pieņem TCP savienojumus: viens, vairāki vai diapazons līdz visiem 65 535 (22, 80, 443, 8000-8100). Katrs ir atvērts, slēgts vai bez atbildes jūsu norādītajā laikā.",
+            {
+              "note": "Pārbaudiet tikai resursdatorus, kas ir jūsu, vai kurus jums atļauts testēt."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Vietnes sertifikāts",
+          "body": [
+            "Rāda sertifikātus, ko vietne sniedz, kad tiek izveidots drošs savienojums: kam tie ir, kas tos parakstījis, cik dienu atlicis, vai šis dators tiem uzticas un kāpēc ne, TLS versiju un šifru. Tiek veikta tikai rokasspiediena apmaiņa: neviens pieprasījums netiek sūtīts.",
+            {
+              "points": [
+                "Ierakstiet example.com, example.com:8443 vai tīmekļa adresi.",
+                "Pasta serveri un FTP sāk nešifrēti, un tiem tiek lūgts pāriet uz TLS (STARTTLS): izvēle pēc porta (25, 587, 143, 110, 21) vai manuāli.",
+                "„Viss“ rāda visu, ko saka sertifikāti; „PEM“ dod tos kopēšanai vai saglabāšanai."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Iestatījumi",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Dev iestatījumi",
+          "body": [
+            "Fails → Iestatījumi atver programmas iestatījumus Dev daļā.",
+            {
+              "points": [
+                "Atvērt katru rīku savā cilnē vai tajā cilnē, kurā tas izvēlēts.",
+                "Atvērt jaunu cilni ar pēdējo izmantoto rīku vai pirmajā lapā.",
+                "Atiestatīt visu rīku opcijas un piespraudes tādas, kādas tās ir programmai sākotnēji."
+              ]
+            },
+            "Windows failu pārlūka labā klikšķa izvēlne, valoda, tēma un taustiņi atrodas visas programmas iestatījumos."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Par Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Par Dev",
+          "body": [
+            "Dev ir Syntelab Creative lietotne izstrādātājiem: rīki, kas kodē un dekodē, formatē un pārbauda, pārvērš vienu datu formu citā un sadala to, ko tādu, kāds tas ir, grūti nolasīt.",
+            "Viss notiek šajā datorā. Nekas, ko rīkā ierakstāt, ielīmējat vai atverat, netiek saglabāts vai kaut kur nosūtīts. Failu izmēram vai skaitam nav noteikts ierobežojums: ierobežojumi ir datora atmiņa un disks.",
+            "Lietotne ir jauna un joprojām tiek veidota. Ja tā jūsu darbam kaut kur nepietiek, pastāstiet mums, izmantojot Palīdzība → Atsauksmes."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "No kā veidots Dev",
+          "body": [
+            {
+              "points": [
+                "Redaktori: CodeMirror, https://codemirror.net . MIT licence. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "JSON lasīšana un krāsošana redaktoros: @codemirror/lang-json, https://github.com/codemirror/lang-json , kopā ar @codemirror/language un @lezer/highlight. MIT licence. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "YAML, XML, HTML un SQL lasīšana un krāsošana redaktoros: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (kopā ar @codemirror/lang-css un @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . MIT licence. Copyright (C) 2018-2024 by Marijn Haverbeke and others.",
+                "Dokumenta pārbaude pret JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . MIT licence. Copyright (c) 2020-2026 Dmitry Dygalo. Tā ir būvēta bez tīkla daļas: Dev nekad neielādē shēmu.",
+                "JSONPath šabloni (match un search): regex, https://github.com/rust-lang/regex . MIT vai Apache-2.0 licence. Copyright (c) 2014 The Rust Project Developers.",
+                "YAML lasīšana: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . MIT vai Apache-2.0 licence. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. YAML rakstīšanu veic pats Dev.",
+                "Divu tekstu salīdzināšana (Diff): similar, https://github.com/mitsuhiko/similar . Apache-2.0 licence. Autori: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . MIT vai Apache-2.0 licence. Copyright (c) 2014-2026 Alex Crichton.",
+                "Jaucējkodu rīka un marķiera paraksta jaucējvērtības: sha2, sha1 un md-5, https://github.com/RustCrypto/hashes . MIT vai Apache-2.0 licence. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation un RustCrypto izstrādātāji.",
+                "Datumi, laiki un laika zonas (Unix laikspiedols, Cron skaidrojums): jiff, https://github.com/BurntSushi/jiff , ar IANA datubāzes laika zonām. Unlicense vai MIT licence. Copyright (c) 2015 Andrew Gallant.",
+                "URL sadalīšana: url un idna, https://github.com/servo/rust-url . MIT vai Apache-2.0 licence. Copyright (c) 2013-2025 The rust-url developers.",
+                "X.509 sertifikātu lasīšana: x509-parser, https://github.com/rusticata/x509-parser . MIT vai Apache-2.0 licence. Copyright (c) 2017 Pierre Chifflier.",
+                "Regex testeris izpilda JavaScript regulārās izteiksmes WebView dzinējā, ar ko programma zīmē (Microsoft Edge WebView2 sistēmā Windows); tam netiek pievienota neviena bibliotēka.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . MIT vai Apache-2.0 licence. Autortiesības (c) 2018 Sam Rijs, Alex Crichton un līdzdarbotāji.",
+                "UUID: uuid, https://github.com/uuid-rs/uuid . Apache-2.0 vai MIT licence. Autortiesības (c) 2014 The Rust Project Developers, Autortiesības (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Nejauši baiti parolēm, noslēpumiem un UUID no operētājsistēmas: getrandom, https://github.com/rust-random/getrandom . MIT vai Apache-2.0 licence. Autortiesības (c) 2018-2025 The rust-random Project Developers, Autortiesības (c) 2014 The Rust Project Developers.",
+                "RSA atslēgas un paraksti: rsa, https://github.com/RustCrypto/RSA , kopā ar num-bigint-dig, https://github.com/dignifiedquire/num-bigint . MIT vai Apache-2.0 licence. Autortiesības (c) RustCrypto Developers un dignifiedquire; Autortiesības (c) 2014 The Rust Project Developers.",
+                "NIST līkņu (P-256, P-384, P-521) atslēgas un paraksti: p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , kopā ar tām nepieciešamajām ecdsa, elliptic-curve un crypto-bigint. Apache-2.0 vai MIT licence. Autortiesības (c) 2020-2023 RustCrypto Developers.",
+                "Ed25519 atslēgas un paraksti: ed25519-dalek un curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . BSD 3-Clause licence. Autortiesības (c) 2017-2019 isis agora lovecruft; Autortiesības (c) 2016-2021 isis agora lovecruft un Henry de Valence. Visas tiesības aizsargātas.",
+                "Formāti, kuros tiek rakstītas atslēgas, pieprasījumi un sertifikāti (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER un PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Apache-2.0 vai MIT licence. Autortiesības (c) 2020-2023 The RustCrypto Project Developers.",
+                "OpenSSH atslēgu faili: ssh-key, https://github.com/RustCrypto/SSH , ar bcrypt-pbkdf, aes, ctr, chacha20 un citiem RustCrypto šifriem un jaucējfunkcijām, kas vajadzīgas atslēgas bloķēšanai ( https://github.com/RustCrypto ). Apache-2.0 vai MIT licence. Autortiesības (c) 2021-2024 The RustCrypto Project Developers.",
+                "PKCS #12 faili (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , ar tai nepieciešamajiem RustCrypto pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 un scrypt. MIT vai Apache-2.0 licence. Autortiesības (c) Dmitry Pankratov; Autortiesības (c) The RustCrypto Project Developers.",
+                "Nejaušie skaitļi, no kuriem veido atslēgas, ņemti no operētājsistēmas: rand_core, https://github.com/rust-random/rand . MIT vai Apache-2.0 licence. Copyright 2018 Developers of the Rand project, Autortiesības (c) 2014 The Rust Project Developers.",
+                "HTTP klients: ureq, https://github.com/algesten/ureq . MIT vai Apache-2.0 licence. Autortiesības (c) 2019 Martin Algesten.",
+                "HTTP klienta un „Vietnes sertifikāts“ drošie savienojumi (TLS): rustls, https://github.com/rustls/rustls , Apache-2.0, ISC vai MIT licence, Autortiesības (c) 2016 Joseph Birr-Pixton; kopā ar rustls-webpki, https://github.com/rustls/webpki , ISC licence, Autortiesības 2015 Brian Smith; ring, https://github.com/briansmith/ring , Apache-2.0 un ISC licences; webpki-roots, https://github.com/rustls/webpki-roots , CDLA-Permissive-2.0 licence.",
+                "Vai šis dators uzticas sertifikātam: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . MIT vai Apache-2.0 licence. Autortiesības (c) 2022 1Password.",
+                "Markdown lasīšana: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . MIT licence. Autortiesības 2015 Google Inc. Visas tiesības aizsargātas.",
+                "Citos kodējumos, nevis UTF-8, rakstītu failu lasīšana: encoding_rs, https://github.com/hsivonen/encoding_rs , Apache-2.0 vai MIT licence (tā datiem — BSD-3-Clause), Copyright Mozilla Foundation; un chardetng, https://github.com/hsivonen/chardetng , Apache-2.0 vai MIT licence, Copyright Mozilla Foundation.",
+                "Paroles frāžu vārdi: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , no Electronic Frontier Foundation, izmantots saskaņā ar Creative Commons Attribution 3.0 United States licenci ( https://creativecommons.org/licenses/by/3.0/us/ ). Saraksts tiek izmantots nemainīts.",
+                "Vecajā OpenSSL veidā bloķētu atslēgu atvēršana: RustCrypto aes, cbc un des, https://github.com/RustCrypto . MIT vai Apache-2.0 licence. Copyright (c) RustCrypto Developers.",
+                "Uzrakstīts Dev vajadzībām, bez bibliotēkas: DNS meklēšana (jautājumi rakstīti un atbildes lasītas, kā noteikts RFC 1035) un portu pārbaude.",
+                "Uzrakstīts Dev vajadzībām, bez bibliotēkas: JSON lasīšana un rakstīšana kā plūsma, JSONPath (RFC 9535), Base64, procentu kodējums, HTML rakstzīmju atsauces (to nosaukumi ir no HTML standarta, https://html.spec.whatwg.org ), virkņu ekranēšana, JSON Web Token lasīšana, YAML rakstīšana, CSV abos virzienos, cron grafiku lasīšana, XML un HTML formatētājs un SQL formatētājs."
+              ]
+            },
+            "Tas, kas ir kopīgs ar pārējo programmu, ir aprakstīts sadaļā „Par Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ko Dev vēl neprot",
+          "body": [
+            {
+              "points": [
+                "Marķiera paraksts tiek pārbaudīts tikai tad, ja tas izveidots ar kopīgu noslēpumu (HS256, HS384, HS512).",
+                "JSON Schema validatoris neatbilstības paziņo angliski, tāpat kā tā bibliotēka, un neizseko $ref uz citu failu vai adresi.",
+                "SQL formatētājs neprasa dialektu un nepārbauda, ko priekšraksts nozīmē: tas ziņo tikai par virkni vai komentāru, kas nekad nebeidzas.",
+                "YAML un JSON, kas kļūst par YAML vai CSV, pārveidošanas laikā tiek turēti atmiņā pilnībā; CSV, kas kļūst par JSON, XML, HTML un SQL tiek apstrādāti lasīšanas gaitā, lai kāds būtu to izmērs.",
+                "Tabula, kurā skata CSV, ir tikai lasāma: tajā neko neieraksta, un no tās pagaidām neko nekopē.",
+                "Diff glabā sešpadsmit baitus par katru abu failu rindu, nevis pašus failus; divi JSON dokumenti tiek turēti pilnībā, jo pirms salīdzināšanas tie tiek uzrakstīti no jauna.",
+                "Rindu posms, kurā nav nekā, kas abās pusēs būtu tieši vienu reizi, tiek salīdzināts tik labi, cik sekundes laikā iespējams: norādītās atšķirības ir patiesas, kaut ne vienmēr mazākās iespējamās.",
+                "Diff nesalīdzina, kā beidzas rindas (CRLF vai LF).",
+                "Divas mapes tiek salīdzinātas pēc to failu baitiem; faili tiek sapāroti pēc nosaukumiem, burtu pa burtam.",
+                "Tas, ko pasaka Pārbaudīt rīki, ir JSON ar nosaukumiem angļu valodā.",
+                "Regex testeris izpilda JavaScript regulārās izteiksmes, nevis PCRE un ne Rust izteiksmes; tas strādā ar tekstu, ko var parādīt, nevis ar diskā glabātu failu; šablons, kas darbojas ilgāk par 20 sekundēm, tiek apturēts.",
+                "Sertifikāta dekodētājs nolasa sertifikātu un nepārbauda, vai tam var uzticēties: ne tā ķēdi, ne parakstu, ne to, vai tas ir atsaukts.",
+                "Fails, kas ir teksts citā kodējumā, nevis UTF-8, tiek nolasīts, ja tas ir pietiekami mazs, lai to rādītu; lielākam, ko apstrādā no diska, jābūt UTF-8.",
+                "Rīkā ievilkts fails tiek pieņemts līdz 16 MB; logam netiek pateikts, kur diskā atrodas ievilktais fails, tāpēc lielāku atver ar „Atvērt failu“.",
+                "Paroles frāzes veido tikai angļu valodas vārdi.",
+                "Cron skaidrojums: veidotājs izveido crontab grafikus (pieci lauki vai seši ar sekundēm); grafiku ar L, W, # vai ? tajā ielādēt nevar. AWS rate() laikus nevar noteikt, jo tos skaita no brīža, kad izveidots tā noteikums. No systemd tiek lasīti parastie kalendāra notikumi, bet ne sekunžu daļas vai dienu saraksti, kas skaitīti no mēneša beigām.",
+                "Hex skatītājs tikai skatās: failā nekas netiek mainīts. Teksta kolonna rāda ASCII vai Rietumeiropas burtus, nevis citus alfabētus; meklē baitus vai tekstu, nevis šablonus.",
+                "Atslēgas un sertifikāti: atslēgas ir RSA, līknes P-256, P-384 un P-521 un Ed25519; citas (DSA, secp256k1, X25519) netiek nolasītas. Vecajā OpenSSL veidā bloķētu atslēgu atver, ja tās šifrs ir AES vai 3DES. .pfx fails satur vienu atslēgu ar tās sertifikātiem. Ļoti lielas RSA atslēgas izveide aizņem laiku, un to nevar apturēt pusceļā. Bibliotēkai, kas veido RSA atslēgas, ir zināma ievainojamība pret uzbrucēju, kas tīklā var mērīt daudzu parakstu laiku (RUSTSEC-2023-0071): šeit atslēgas tiek izveidotas un ierakstītas jūsu datorā, un nekas netiek parakstīts nevienam citam.",
+                "HTTP klients: HTTP/1.1 (nevis HTTP/2 vai 3); starp pieprasījumiem sīkdatnes netiek glabātas; vairākdaļu (multipart) veidlapas jūsu vietā netiek veidotas; atbildi, kas lielāka par 16 MB vai nav teksts, ieraksta failā, nosūtot pieprasījumu vēlreiz.",
+                "DNS meklēšana rāda parakstus (DNSSEC), bet tos nepārbauda. Portu pārbaude mēģina tikai TCP: UDP portu, kas klusē, nevar atšķirt no slēgta. Vietnes sertifikāts nepārbauda, vai sertifikāts ir atsaukts.",
+                "Labā klikšķa izvēlne ir paredzēta Windows failu pārlūkam; sistēmā Windows 11 tās ieraksti atrodas zem „Rādīt citas opcijas“."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

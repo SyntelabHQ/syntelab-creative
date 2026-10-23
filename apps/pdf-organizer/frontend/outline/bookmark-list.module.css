@@ -1,0 +1,151 @@
+.list {
+  flex: 1;
+  min-height: 0;
+  padding-block: 8px;
+  overflow-y: auto;
+}
+
+.none {
+  margin: 0;
+  padding: 16px 12px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.entries {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  padding-inline-end: 6px;
+}
+
+.fold {
+  display: flex;
+  flex: 0 0 20px;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+}
+
+button.fold {
+  cursor: pointer;
+}
+
+button.fold:hover {
+  background: var(--sc-surface-2);
+}
+
+.arrow {
+  display: flex;
+  rotate: -90deg;
+}
+
+:global([dir='rtl']) .arrow {
+  rotate: 90deg;
+}
+
+.arrow[data-open='true'] {
+  rotate: 0deg;
+}
+
+.title {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+  min-height: 28px;
+  padding-block: 5px;
+  padding-inline: 6px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  font-size: 13px;
+  text-align: start;
+  cursor: pointer;
+}
+
+.title:hover:not(:disabled) {
+  background: var(--sc-surface-2);
+}
+
+.title[aria-current='page'] {
+  background: var(--sc-accent-soft);
+  font-weight: 600;
+}
+
+/* A bookmark whose page was removed from the document. */
+.title:disabled {
+  color: var(--sc-muted);
+  cursor: default;
+  opacity: 0.6;
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.page {
+  flex: none;
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Rename and remove: shown while the pointer is on the bookmark, or the keyboard in it. */
+.tools {
+  display: flex;
+  flex: none;
+  align-self: center;
+  opacity: 0;
+}
+
+.row:hover .tools,
+.row:focus-within .tools {
+  opacity: 1;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.tool:hover {
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+}
+
+.rename {
+  flex: 1;
+  min-width: 0;
+  min-height: 28px;
+  padding-inline: 6px;
+  border: 1px solid var(--sc-accent);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+}

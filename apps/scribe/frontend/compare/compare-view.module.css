@@ -1,0 +1,333 @@
+/* Two texts side by side: what is compared at the top, what differs under it. */
+.view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: var(--sc-surface);
+  text-align: start;
+}
+
+.top {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+}
+
+/*
+ * The names of the two texts stand over their columns: the same division as the lines under them. The lines are
+ * never mirrored (the first text is on the left in every language), so neither are the names over them nor the
+ * boxes the texts are typed in: each stays over its own column.
+ */
+.sides {
+  display: grid;
+  direction: ltr;
+  grid-template-columns: calc(56px + (100% - 112px) * var(--left-share, 0.5)) minmax(0, 1fr);
+}
+
+.side {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  min-width: 0;
+  padding: 10px 16px;
+}
+
+/* The second is always the one on the right: the line between them is on its left, whichever way it is written. */
+.side + .side {
+  border-left: 1px solid var(--sc-border);
+}
+
+/* What a side says is still written the way the program's language is. */
+:global(html[dir='rtl']) .side {
+  direction: rtl;
+}
+
+.sideLabel {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.sideName {
+  flex: 1;
+  min-width: 80px;
+  overflow: hidden;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  padding: 8px 16px;
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.flag input {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: var(--sc-accent);
+}
+
+.spring {
+  flex: 1;
+}
+
+.summary {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.summary [data-kind='added'] {
+  color: var(--sc-success-strong);
+}
+
+.summary [data-kind='removed'] {
+  color: var(--sc-danger);
+}
+
+.summary [data-kind='changed'] {
+  color: var(--sc-warning);
+}
+
+.place {
+  color: var(--sc-muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.problem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+  padding: 24px;
+  color: var(--sc-muted);
+  font-size: 15px;
+  text-align: center;
+}
+
+.problem {
+  color: var(--sc-danger);
+}
+
+/* The lines: of one width, each row a line of the first text beside a line of the second. Text is never mirrored. */
+.rows {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  font-family: 'Cascadia Mono', 'Cascadia Code', Consolas, ui-monospace, 'DejaVu Sans Mono', Menlo, monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  direction: ltr;
+}
+
+.hunk {
+  scroll-margin-block-start: 4px;
+}
+
+.skipped {
+  margin: 0;
+  padding: 4px 16px;
+  border-block: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  color: var(--sc-muted);
+  font-family: var(--sc-font);
+  font-size: 12px;
+  text-align: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 56px minmax(0, var(--left, 1fr)) 56px minmax(0, var(--right, 1fr));
+}
+
+.number {
+  padding-inline: 8px;
+  background: var(--sc-bg);
+  color: var(--sc-muted);
+  text-align: end;
+  user-select: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.text {
+  min-width: 0;
+  padding-inline: 10px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  unicode-bidi: plaintext;
+  user-select: text;
+}
+
+.text mark {
+  border-radius: var(--sc-radius-xs);
+  color: inherit;
+}
+
+/* Only in the first text: its side is marked, the other is empty. */
+.row[data-kind='removed'] > .text:nth-of-type(2),
+.row[data-kind='changed'] > .text:nth-of-type(2) {
+  background: color-mix(in srgb, var(--sc-danger) 10%, transparent);
+}
+
+.row[data-kind='removed'] > .text:nth-of-type(2) mark,
+.row[data-kind='changed'] > .text:nth-of-type(2) mark {
+  background: color-mix(in srgb, var(--sc-danger) 30%, transparent);
+}
+
+.row[data-kind='added'] > .text:nth-of-type(4),
+.row[data-kind='changed'] > .text:nth-of-type(4) {
+  background: color-mix(in srgb, var(--sc-success-strong) 12%, transparent);
+}
+
+.row[data-kind='added'] > .text:nth-of-type(4) mark,
+.row[data-kind='changed'] > .text:nth-of-type(4) mark {
+  background: color-mix(in srgb, var(--sc-success-strong) 32%, transparent);
+}
+
+.row[data-kind='removed'] > .text:nth-of-type(4),
+.row[data-kind='added'] > .text:nth-of-type(2) {
+  background: var(--sc-bg);
+}
+
+.row[data-kind='removed'] mark,
+.row[data-kind='added'] mark {
+  background: none;
+}
+
+/* The two texts in one column: what was taken out above what was put in, each with its sign. */
+.inlineRow {
+  display: grid;
+  grid-template-columns: 64px 20px minmax(0, 1fr);
+  align-items: baseline;
+}
+
+.inlineRow[data-kind='removed'] {
+  background: color-mix(in srgb, var(--sc-danger) 10%, transparent);
+}
+
+.inlineRow[data-kind='added'] {
+  background: color-mix(in srgb, var(--sc-success) 12%, transparent);
+}
+
+/* The words that differ, in the colour of their line: never the yellow a browser marks with. */
+.inlineRow[data-kind='removed'] mark {
+  background: color-mix(in srgb, var(--sc-danger) 30%, transparent);
+}
+
+.inlineRow[data-kind='added'] mark {
+  background: color-mix(in srgb, var(--sc-success-strong) 32%, transparent);
+}
+
+.inlineRow[data-kind='same'] mark {
+  background: none;
+}
+
+.sign {
+  color: var(--sc-muted);
+  font-weight: 700;
+  text-align: center;
+  user-select: none;
+}
+
+.summary [data-kind='alike'] {
+  font-weight: 700;
+}
+
+/* Under the head: the lines, with the bar that divides the two texts drawn over them. */
+.body {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Everything under the head: the boxes the texts are typed in, the lines compared, and the bars that divide them. */
+.area {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* In one column the lines are not divided: the bar stays between the boxes the texts are typed in. */
+.area[data-inline='true'] > [role='separator'][aria-orientation='vertical'] {
+  inset-block-end: auto;
+  height: calc(var(--typed-share, 0.35) * 100%);
+}
+
+/* The bar between the two texts runs the whole height: through the boxes and through the lines. */
+.area > [role='separator'][aria-orientation='vertical'] {
+  position: absolute;
+  inset-block: 0;
+  /* Counted from the left in every language, as the columns it divides are. */
+  left: calc(56px + (100% - 112px) * var(--left-share, 0.5));
+  direction: ltr;
+}
+
+/* A line said over the texts: what is still to be chosen, or that the two are the same. */
+.note {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 8px 16px;
+  border-block-end: 1px solid var(--sc-border);
+  color: var(--sc-muted);
+  font-size: 14px;
+}
+
+.note > svg {
+  color: var(--sc-success);
+}
+
+/* The two texts typed or pasted here: a box over each column, as tall as the user drags it. */
+.typed {
+  display: grid;
+  direction: ltr;
+  min-height: 60px;
+  overflow: hidden;
+  grid-template-columns: calc(56px + (100% - 112px) * var(--left-share, 0.5)) minmax(0, 1fr);
+}
+
+.typedText {
+  height: 100%;
+  padding: 10px 14px;
+  border: 0;
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font-family: 'Cascadia Mono', 'Cascadia Code', Consolas, ui-monospace, 'DejaVu Sans Mono', Menlo, monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  resize: none;
+}
+
+.typedText + .typedText {
+  border-left: 1px solid var(--sc-border);
+}
+
+.typedText:focus {
+  outline: 2px solid var(--sc-accent);
+  outline-offset: -2px;
+}

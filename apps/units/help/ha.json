@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Canzawa",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Masu canzawa",
+          "body": [
+            "Units tana canza ƙima daga wani ma'auni zuwa wani: ƙima ɗaya cikin sauri, ko tebur na ƙima gaba ɗaya a lokaci guda. Ana lissafa komai a kan kwamfutarka.",
+            "Masu canzawa suna cikin menu guda shida: Abubuwan da ake buƙata, Motsi da makanikanci, Makamashi da ƙarfi, Kimiyya, Dijital da kafofin watsa labarai, da Fiziks na musamman. Idan ka zaɓi ɗaya, tebur ɗinsa zai buɗe.",
+            {
+              "points": [
+                "Mai canzawa yana buɗewa a cikin tab ɗin da kake ciki. Idan akwai ƙima a tebur ɗinsa, za a fara tambayar ka: Ci gaba (ƙimar za ta ɓace), Buɗe a sabon tab, ko Fasa.",
+                "Saituna → Units → “Buɗe kowane mai canzawa a tab ɗinsa na kansa” yana buɗe kowane mai canzawa da ka zaɓa a sabon tab maimakon haka.",
+                "Fayil → Je zuwa Farko yana komawa shafin farko na Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Canzawa cikin sauri",
+          "body": [
+            "Shafin farko na Units, Canzawa cikin sauri, yana canza ƙima ɗaya daga wani ma'auni zuwa wani. Zaɓi mai canzawa, rubuta ƙimar a gefen “Daga”, sannan ka zaɓi ma'aunan biyu: sakamakon yana gefen “Zuwa”.",
+            {
+              "points": [
+                "Kowane gefe yana lissafa shahararrun ma'aunan mai canzawar da ma'aunan kanka, tare da bincike a cikinsu. Tebur ɗin mai canzawar yana da kowane ma'auni.",
+                "Maɓallin da ke tsakanin gefe biyun yana musanya ma'aunan biyu.",
+                "Alamar shafi da ke kusa da ma'auni tana kafa shi: ma'aunan da aka kafa suna zuwa farko a cikin jerin biyun da kuma cikin faifan ma'aunai na tebur.",
+                "Maɓallin da ke cikin sakamakon yana kwafe shi; × yana share ƙimar.",
+                "“Buɗe a cikin tebur” yana buɗe tebur ɗin mai canzawar."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Yadda ake karanta da rubuta lambobi",
+          "body": [
+            "Kana iya rubutawa ko liƙa lambobi kamar yadda ake rubuta su a ƙasashe daban-daban: ana fahimtar 1,234.56 da 1.234,56 duka biyu, haka ma sarari da alamar ridda tsakanin dubbai, da 1.5e-3 don ƙarfin goma.",
+            "Lambar da za a iya karantawa ta hanyoyi biyu (1,234: dubu ɗaya, ko ɗaya da ɗan kaɗan) ana karanta ta yadda harshen shirin yake rubuta lambobi, kuma layin da ke ƙarƙashin tebur yana faɗin haka.",
+            "Ana rubuta sakamako da lambobin juzu'i na ma'aunin da ya isa gare shi, ba da yawan lambobin da ka rubuta ba: 5 cm daidai yake da 1.97 in. Ƙimar da ba sifili ba kullum tana nuna wasu lambobi masu ma'ana, don haka 1 cm shi ne 0.00001 km, ba 0.000 km ba har abada.",
+            "Ƙima masu girma ko ƙanƙanta da yawa da ba za a iya karanta su da kallo ɗaya ba ana rubuta su da ƙarfin goma, kamar 1.6 × 10⁻³⁵. Kallo → Ƙima masu girma ko ƙanƙanta sosai a cikakke yana rubuta su da dukkan sifilansu maimakon haka.",
+            "Inda ma'auni ba shi da irin wannan ƙima (matsin sauti na sifili ba shi da decibel) akwatin yana nuna ɗan layi."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tebur",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Layuka da ginshiƙai",
+          "body": [
+            "Kowane ginshiƙi ma'auni ne, kowane layi kuma ƙima ne. Akwatin da ka rubuta a ciki shi ne ke tafiyar da layinsa: sauran ginshiƙai suna nuna ƙimar guda a ma'aunansu. Akwatin da aka rubuta yana bayyana da rubutu mai kauri.",
+            "Abin da ba lamba ba ana ajiye shi kuma ana nuna shi da ja; layinsa ba ya canza komai har sai ka gyara shi.",
+            {
+              "points": [
+                "Danna akwati sau biyu, ko kawai ka fara rubutu a kansa, don gyarawa. Enter yana sauka ƙasa, Tab zuwa dama; maɓallan kibiya suna motsawa; Escape yana barin akwatin yadda yake.",
+                "Danna kusurwa (#) don zaɓar tebur gaba ɗaya, lambar layi don zaɓar layinsa, take don zaɓar ginshiƙinsa. Shift+danna yana zaɓar jeri, Ctrl+danna yana ƙara akwatuna, jan linzamin ma yana zaɓa.",
+                "Home da End suna zuwa ginshiƙi na farko da na ƙarshe na layin; Ctrl+Home zuwa akwatin farko na tebur, Ctrl+End zuwa na ƙarshe. Ctrl tare da kibiya yana zuwa gefen tebur: layi na farko ko na ƙarshe, ginshiƙi na farko ko na ƙarshe. Page Up da Page Down suna motsawa da allo ɗaya. Tare da Shift, kowanne daga cikinsu yana faɗaɗa zaɓin maimakon haka.",
+                "Zaɓin akwatuna da yawa yana da layi a waje; akwatin da rubutu ke shiga yana nan ba inuwa a ciki.",
+                "Delete yana wofintar da layukan da aka zaɓa.",
+                "Rubutu a layi na ƙarshe yana ƙara layi. Tebur ba shi da iyakar abin da zai iya ɗauka: tsawonsa ya kai yadda ƙwaƙwalwar kwamfutarka ta yarda (layi ɗaya yana ɗaukar baiti 16, don haka layuka miliyan 100 suna ɗaukar kusan 1.5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Ginshiƙai da faifan ma'aunai",
+          "body": [
+            "Faifan da ke gefen tebur yana lissafa ma'aunan mai canzawar. A samansa akwai ma'aunan da ke cikin tebur: danna ɗaya don cire ginshiƙinsa. A ƙarƙashinsu, kowane ma'auni: nema da suna ko alama, tace da rukuni ko da “Shahararru”, sannan ka danna ma'auni don ƙara shi a matsayin ginshiƙi.",
+            "Alamar shafi da ke kusa da ma'auni tana kafa shi a matsayin wanda aka fi so: yana zuwa farko a cikin jerin kuma shi ne na farko a Canzawa cikin sauri.",
+            {
+              "points": [
+                "Ginshiƙai suna raba faɗin tebur daidai har sai takensu ba su ƙara dacewa ba; sai tebur ya gungura gefe.",
+                "Ja gefen take don canza faɗin ginshiƙinsa; danna gefen sau biyu don daidaita ginshiƙin da ƙimarsa mafi tsawo. Ana iya jan ginshiƙin lambobin layuka ma.",
+                "Maɓallin ⋮ na ginshiƙi: matsar da shi hagu ko dama, kafa shi a gefen hagu ko dama, canza daidaitonsa, ko cire shi.",
+                "Daidaiton ginshiƙi yana canza wannan ginshiƙin kawai. “Yi amfani da shi don wannan ma'aunin a ko'ina” yana mai da shi daidaiton ma'aunin, a kowane tebur da kuma a Canzawa cikin sauri.",
+                "Maɓallin mai kibiya biyu kusa da Soke da Sake yi yana daidaita ginshiƙai da tebur: duk faɗin da ka ja ko ka daidaita zai tafi, kuma ginshiƙai za su sake raba faɗin tebur daidai.",
+                "Sassan sama guda biyu na faifan, ma'aunan da ke cikin tebur da “Ƙara ma'aunai” (bincike da matatun), suna naɗewa idan ka danna sunansu, don jerin ya sami ƙarin wuri."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Soke, kwafi, liƙa, shigo da kuma fitar da",
+          "body": [
+            "Sandar da ke saman tebur tana ɗauke da kayan aikinsa.",
+            {
+              "points": [
+                "Soke da Sake yi (Ctrl+Z, Ctrl+Y) suna bi ta kowane canji na tebur. Liƙa ɗaya ko shigo da ɗaya mataki ɗaya ne.",
+                "Kwafi (Ctrl+C) yana kwafe tebur gaba ɗaya ko abin da aka zaɓa, yadda maƙunsar bayanai ke karanta shi. “Juyayye (layi zuwa ginshiƙi)” yana mai da layuka ginshiƙai.",
+                "Liƙa (Ctrl+V) yana saka layukan da aka kwafa cikin tebur daga akwati mai aiki zuwa ƙasa. Idan layin farko yana da taken ma'aunai, ana daidaita ginshiƙai da su, kuma ana ƙara ma'aunan da ba su cikin tebur tukuna.",
+                "Shigo da yana karanta littafin aikin Excel, ko fayil na CSV ko TSV a madadin abin da tebur ke ɗauke da shi. “Gano tsarin fayil da kansa” yana gane nau'in daga fayil ɗin.",
+                "Fitar da yana rubuta tebur a matsayin Excel, CSV, TSV ko JSON. Idan waƙafi ne ke gaban lambobin juzu'i, ana rubuta CSV da alamar waƙafi-da-digo (;), kamar yadda maƙunsar bayanai ke tsammani. Takardar Excel ɗaya tana ɗaukar layuka 1,048,576: tebur mafi tsayi yana ci gaba a takardu na gaba na littafin aiki guda, ƙarƙashin taken guda.",
+                "Magogi yana wofintar da layukan da aka zaɓa; kwandon shara yana wofintar da tebur gaba ɗaya."
+              ]
+            },
+            "Layi ɗaya yana ɗaukar ƙima ɗaya. A layin da aka liƙa ko aka shigo da shi mai ƙima da yawa, ana ɗaukar ta farko, sannan a lissafa sauran daga gare ta.",
+            "Layuka masu yawan gaske suna ɗaukar lokaci kafin a liƙa, a shigo da, a fitar da ko a kwafe su. Sai kati a saman tebur ya nuna nisan da aikin ya kai, a kashi cikin ɗari da kuma a layuka, tare da maɓallin Tsayar. Liƙawa ko shigowa da aka tsayar suna barin tebur yadda yake; fitarwar da aka tsayar ba ta rubuta kowane fayil.",
+            "Idan kwamfuta ba ta da sauran ƙwaƙwalwa don layukan, ba a canza komai ba, kuma layin da ke ƙarƙashin tebur yana faɗin yawan da ake buƙata. Idan layukan sun dace amma ba za a iya ajiye tebur na dā a gefensu ba, za a tambaye ka ko za ka ci gaba ba tare da sokewa ba: wannan canjin, da waɗanda aka yi kafinsa, ba za a iya soke su ba kuma. Kafin a tambaya, ana sakin tsofaffin matakan Soke don samun wuri.",
+            "Zaɓuɓɓukan tebur (giya): abin da taken ginshiƙi ke faɗi (suna da alama, suna, ko alama), ko kwafi da fitarwa za su haɗa da take da lambobin layuka, “Fara wannan mai canzawar da waɗannan ginshiƙai”, da “Sake saita tebur”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Masu canzawa na musamman",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Kuɗi",
+          "body": [
+            "Kuɗaɗe ba su da madaidaicin ma'auni: darajar kowanne tana canzawa. Mai canza kuɗi yana karanta farashin canjinsa daga ayyuka biyu na kyauta yayin da kake amfani da shi, kuma a lokacin kawai.",
+            {
+              "points": [
+                "Kuɗaɗen ƙasashe: Rates By Exchange Rate API, https://www.exchangerate-api.com . Suna canzawa sau ɗaya a rana a tushensu, kuma ba a karanta su fiye da haka.",
+                "Kuɗaɗen kirifto: Powered by CoinGecko, https://www.coingecko.com . Ana karanta su idan aka buɗe mai canzawar ko ya dawo gaba kuma abin da yake da shi ya wuce kwata na awa, da kuma lokacin da ka danna Sabunta; ba da agogo ba har abada."
+              ]
+            },
+            "Farashin canji kawai ake nema. Ba a aika komai game da kai, kuma ba a taɓa aika adadin kuɗin da kake canzawa ba.",
+            "Layin da ke ƙarƙashin tebur, da ƙarƙashin sakamakon Canzawa cikin sauri, yana faɗin lokacin farashin canjin. Ba tare da haɗi ba, ana amfani da farashin canji na ƙarshe kuma a yi musu alama a matsayin tsofaffi. Kuɗin da ayyukan ba su ba da farashinsa ba yana nuna ɗan layi.",
+            "Saituna → Units → Kuɗi: ana iya kashe “Karanta farashin canji daga intanet”, sannan mai canzawar zai yi amfani da farashin canji na ƙarshe da ya ajiye. “Ambaci tushen kusa da farashin canji” yana nuna ko ɓoye sunayen ayyukan biyu a wannan layin.",
+            "Farashin canjin don bayani ne. Kada ka dogara da su don ciniki."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Tushen lamba",
+          "body": [
+            "Ma'aunan wannan mai canzawar hanyoyi ne na rubuta cikakkiyar lamba: tushe daga 2 zuwa 64, lambobin Roma, tushe 60 tare da alamar ruwa biyu (1:30:15), decimal da aka rubuta da binary (BCD) da lambar Gray. Ƙimarsu rubutu ce: rubuta FF ƙarƙashin hexadecimal, sauran ginshiƙai za su nuna 255, 11111111 da sauransu.",
+            "Lambobin Roma suna farawa daga I zuwa MMMCMXCIX (1 zuwa 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Ma'aunan da ba sauƙaƙan juzu'i ba ne",
+          "body": [
+            "Yawancin ma'aunai sauƙaƙan juzu'i ne na wani. Wasu ba haka ba ne, kuma Units tana canza su yadda aka ayyana su: yanayin zafi tare da tazararsu; amfani da mai (lita a kowace kilomita 100 idan aka kwatanta da mil a kowace galan); tsawon raƙuman ruwa idan aka kwatanta da mitar; ƙarfin wucewar lantarki idan aka kwatanta da juriya; digirin Baumé, API, Brix da Plato idan aka kwatanta da yawan nauyi; decibel idan aka kwatanta da matsin sauti da ƙarfinsa; gangara a kashi cikin ɗari idan aka kwatanta da kusurwarta.",
+            "Yanayin zafi da bambancin yanayin zafi ba abu ɗaya ba ne: 100 °C daidai yake da 212 °F, amma bambancin 100 °C daidai yake da bambancin 180 °F. Ma'aunan rukunin “Bambanci (Δ)” suna canzawa a tsakaninsu; tsakaninsu da ma'aunan yanayin zafi, akwati yana nuna ɗan layi."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ma'aunan kanka",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Ƙirƙirar ma'auni",
+          "body": [
+            "Kana iya ƙara ma'aunan kanka a kowane mai canzawa. A cikin faifan ma'aunai, zaɓi “Sabon ma'auni”, ba shi suna da alama, sannan ka bayyana shi da wani ma'aunin da yake akwai.",
+            {
+              "points": [
+                "Juzu'i: “1 taki = 0.75 m”. Don sikelin da ba ya farawa daga sifili, har da abin da ake ƙarawa bayan an ninka.",
+                "Dabara: yadda ƙimar take zama ɗayan ma'aunin, tare da x don ƙimar, da dabarar hanyar komawa. Misali x * 9 / 5 + 32 da (x - 32) * 5 / 9."
+              ]
+            },
+            "Ana gwada abin da ka rubuta yayin da kake rubutawa, kuma ana nuna abin da ma'aunin naka ɗaya ya kai kafin ka ajiye shi. Dabara na iya amfani da + − × ÷ ^, baka, x, pi, e, da ayyukan sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos da atan. Ana lissafa ta ne, ba a taɓa gudanar da ita a matsayin shiri ba.",
+            "Ma'aunanka suna ƙarƙashin “Nawa” a cikin faifan, inda za a iya canza su ko cire su. Ana iya bayyana ma'aunin naka da wani ma'aunin naka; cire ma'auni yana cire waɗanda aka bayyana da shi.",
+            "Saituna → Units yana lissafa ma'aunanka na kowane mai canzawa, kuma yana fitar da su ko shigo da su a matsayin rubutu da za ka iya ajiyewa ko kai wa wata kwamfuta."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Saituna",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Saitunan Units",
+          "body": [
+            "Fayil → Buɗe Saituna yana buɗe saitunan Units; haka ma zaɓuɓɓukan tebur (giyar da ke cikin sandarsa).",
+            {
+              "points": [
+                "Buɗe kowane mai canzawa a tab ɗinsa na kansa, ko a tab ɗin da kake ciki.",
+                "Ƙima masu girma ko ƙanƙanta sosai a cikakke, abin da ake rubutawa tsakanin dubbai (10000.000, 10 000.000 ko 10,000.000; babu komai, sai dai idan ka zaɓi wani abu dabam), da lambobin layuka.",
+                "Kuɗi: ko ana karanta farashin canji daga intanet, da kuma ko ana ambaton ayyukan a kusa da su.",
+                "Daidaiton ma'aunai: zaɓi mai canzawa (ko “Ma'aunan da ka canza”), nemi ma'auni, sannan ka saita lambobin juzu'insa da − da +; kibiya tana mayar da shi na ma'aunin na asali. “Yi amfani da shi don wannan ma'aunin a ko'ina” a cikin menu na ginshiƙi yana saita ƙimar guda.",
+                "Ma'aunan da tebur ke farawa da su: masu canzawa waɗanda ka zaɓi ginshiƙansu na farko, kowanne da hanyar komawa zuwa waɗanda ya zo da su.",
+                "Ma'aunan kanka."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Game da Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Game da Units",
+          "body": [
+            "Units ita ce manhajar canza ma'aunai ta Syntelab Creative: masu canzawa 38 da ma'aunai fiye da 1,500, daga tsawo da yanayin zafi zuwa kuɗaɗe da tushen lamba. Ƙimar da aka rubuta sau ɗaya tana bayyana a kowane ma'aunin da ka nema, a cikin tebur da ke ɗaukar ƙima ɗaya ko miliyoyinsu.",
+            "Ana lissafa lambobi daidai, a matsayin juzu'i, kuma ana zagaye su ne kawai lokacin da ake rubuta su. Ana yin komai a wannan kwamfutar; farashin canjin kuɗi ne kawai ake karantawa daga intanet, kuma ana iya kashe hakan.",
+            "Sabuwa ce. Inda ta gaza wa aikinka, gaya mana ta Taimako → Ra'ayi: haka muke sanin abin da za mu yi aiki a kai."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Layuka nawa tebur ke ɗauka: abin da muka auna",
+          "body": [
+            "Tebur ba shi da ƙayyadadden iyakar layuka: tsawonsa ya kai yadda ƙwaƙwalwar kwamfutarka ta yarda. Layi ɗaya yana ɗaukar baiti 16, don haka layuka miliyan 100 suna ɗaukar kusan 1.5 GB. Idan ƙwaƙwalwa ta ƙare, tebur yana nan yadda yake kuma shirin yana faɗin yawan da ake buƙata.",
+            "Mun auna shi da layuka 50,000,000, kowanne lamba a ginshiƙi ɗaya, a cikin ingantaccen ginin shirin:",
+            {
+              "points": [
+                "Liƙa layuka 50,000,000: kusan sakan 7.",
+                "Shigo da su daga fayil na CSV: sakan 12.",
+                "Fitar da su zuwa fayil na CSV, tare da ginshiƙi na biyu da aka canza: kusan minti 3.5.",
+                "Fitar da su zuwa Excel, a takardu 48: minti 4.3."
+              ]
+            },
+            "Fitarwa tana ɗaukar lokaci fiye da shigowa saboda ana fara canza kowane akwati da ake rubutawa daidai.",
+            {
+              "note": "Kwamfutar da aka yi gwajin a kai: AMD Ryzen 9 9950X3D (cores 16, threads 32), ƙwaƙwalwa 64 GB, Windows 11 Pro. Oktoba 2026. A wata kwamfuta lokutan za su bambanta; girman layi ba zai bambanta ba."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Abin da aka gina Units da shi",
+          "body": [
+            {
+              "points": [
+                "Lambobi daidai: ɗakunan karatun num na Rust (juzu'in cikakkun lambobi na kowane girma).",
+                "Ma'aunai, juzu'insu da rukuninsu: fayilolin bayanai na shirin, ɗaya ga kowane mai canzawa.",
+                "Karanta littattafan aiki na Excel da OpenDocument: calamine. Rubuta littattafan aiki na Excel: rust_xlsxwriter.",
+                "Allon kwafi na tsarin, don kwafi da liƙa layuka masu yawan gaske: arboard.",
+                "Farashin canjin kuɗi: ExchangeRate-API da CoinGecko (duba “Kuɗi”)."
+              ]
+            },
+            "Abin da take tarayya da sauran shirin yana ƙarƙashin “Game da Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Abin da Units ba ta iya yi tukuna",
+          "body": [
+            {
+              "points": [
+                "Layi ɗaya yana ɗaukar ƙima ɗaya: a layin da aka liƙa mai ƙima da yawa, ta farko ake ɗauka.",
+                "Fitar da layuka masu yawan gaske yana da jinkiri (duba abin da muka auna).",
+                "Abin da aka kwafa zuwa allon kwafi ana riƙe shi a ƙwaƙwalwa a matsayin rubutu ɗaya kafin a liƙa shi.",
+                "Farashin canjin kuɗi sabo ne gwargwadon yadda tushensu biyu ke ba da su: sau ɗaya a rana don kuɗaɗen ƙasashe."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

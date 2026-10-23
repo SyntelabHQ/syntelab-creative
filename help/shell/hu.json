@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Első lépések",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Mi a Syntelab Creative?",
+          "body": [
+            "A Syntelab Creative egyetlen program, amely alkalmazásokból áll. Minden alkalmazás egyféle munkát végez:",
+            {
+              "points": [
+                "A PDF Organizer PDF-dokumentumokat olvas, rendez, szerkeszt és ír alá.",
+                "A Scribe egy szövegszerkesztő olyan eszközökkel, amelyek tisztítják, rendezik, összehasonlítják és átalakítják a szöveget.",
+                "A Units mértékegységek között vált át: hossz, hőmérséklet, pénznemek és még sok más.",
+                "A Dev fejlesztői eszközöket gyűjt össze: kódolás és dekódolás, formázás és ellenőrzés, adatok átalakítása egyik formáról a másikra."
+              ]
+            },
+            "Az alkalmazások egy ablakon, egy beállításkészleten és egy munkamódon osztoznak, így amit az egyikben megtanul, az a következőben is ugyanúgy működik.",
+            {
+              "note": "Minden az Ön számítógépén történik. A dokumentumait soha nem küldjük sehova, és semmit sem gyűjtünk Önről vagy a munkájáról."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Az ablak",
+          "body": [
+            {
+              "points": [
+                "Az oldalsáv: a ház a Kezdőlapra vezet, utána jönnek az alkalmazásai, alul pedig a program hírei, a Visszajelzés, a Támogatás és a Beállítások.",
+                "Egy alkalmazásban a Fájl → Ugrás a Kezdőlapra az adott alkalmazás első oldalára visz, ha van ilyen (Units, Scribe), a Fájl → Beállítások megnyitása (Ctrl+,) pedig a Beállításokat az adott alkalmazás részénél nyitja meg; a többi rész onnan egy kattintásra van.",
+                "A fülek felül: minden megnyitott dokumentumnak, gyűjtőnek vagy eszköznek saját füle van. A fülön lévő pont azt jelzi, hogy nem mentett változtatások vannak rajta.",
+                "Az alkalmazás menüi a fülek alatt: menüsávként, szalagmenüként vagy oldalsávként, aszerint, amit választott.",
+                "Az ablak többi része az elöl lévő fül."
+              ]
+            },
+            "Ha nem mentett változtatásokat tartalmazó fület zár be, a program előbb rákérdez; ugyanígy a program bezárásakor is."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Kezdőlap",
+          "body": [
+            "A Kezdőlap megmutatja az alkalmazásait és a legutóbb megnyitott fájlokat. Kattintson egy alkalmazásra a megnyitásához; kattintson egy legutóbbi fájlra az újbóli megnyitásához.",
+            "Az alkalmazások megjelenhetnek kártyaként, ikonként névvel vagy csak ikonként, és tetszőleges sorrendbe húzhatók. Billentyűzettel: Alt és a nyílbillentyűk. Az „Alapértelmezés visszaállítása” visszarendezi őket.",
+            "Minden alkalmazásnak saját parancsikonja is van a Windows Start menüjében, például „Syntelab PDF Organizer” vagy „Syntelab Units”: ez rögtön abban az alkalmazásban nyitja meg a programot. Ha a program már meg van nyitva, az alkalmazás fülként nyílik meg benne."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Fájlok megnyitása",
+          "body": [
+            {
+              "points": [
+                "Egy alkalmazásból: Fájl → Megnyitás vagy Ctrl+O.",
+                "Fájlok áthúzásával egy mappából az ablakra.",
+                "A rendszer fájlkezelőjéből: kattintson duplán egy olyan fájlra, amelynek megnyitására a program be van állítva. A Windows Fájlkezelőben a helyi menü is használható (lásd „A Windows Fájlkezelő helyi menüje”).",
+                "A Kezdőlapról: a legutóbbi fájlok listája."
+              ]
+            },
+            "A program egy példányban fut. Ha a program futása közben a fájlkezelőből nyit meg egy fájlt, az új fülként nyílik meg ugyanabban az ablakban."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Testreszabás",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Elrendezés: menüsáv, szalagmenü vagy oldalsáv",
+          "body": [
+            "Egy alkalmazás parancsai háromféleképpen jeleníthetők meg. A parancsok ugyanazok; csak a helyük különbözik.",
+            {
+              "points": [
+                "Klasszikus: menüsáv és eszköztár.",
+                "Szalagmenü: nagy gombok elnevezett csoportokban, minden menühöz egy fül. Összecsukható, hogy több hely maradjon a dokumentumnak.",
+                "Oldalsáv: az eszközök egy bal vagy jobb oldali panelen, amely ikonokká csukható össze."
+              ]
+            },
+            "Az összes alkalmazás elrendezését a Beállítások → Általános → Elrendezés helyen választhatja ki. Egy alkalmazásnak saját elrendezése is lehet, amelyet a Beállítások hozzá tartozó részében vagy a Nézet menüjében választhat ki; ekkor már nem követi az általánosat, amíg nem választja az „Általános elrendezés használata” lehetőséget."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Téma",
+          "body": [
+            "Beállítások → Általános → Téma: Világos, Sötét, Világosszürke, Sötétszürke vagy Automatikus, amely a rendszer világos vagy sötét beállítását követi.",
+            "A téma soha nem színezi át a dokumentum oldalait: a papír olyan marad, amilyen."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Nyelv",
+          "body": [
+            "Beállítások → Általános → Nyelv. A program 62 nyelven beszél. A „Rendszer nyelve” a rendszere nyelvét követi. A listában egy nyelv saját nevére, az Ön nyelvén használt nevére vagy az angol nevére lehet keresni.",
+            "A még le nem fordított szöveg angolul jelenik meg, soha nem kódként."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Fülek",
+          "body": [
+            {
+              "points": [
+                "„A Kezdőlap fül maradjon a fülek között”: ha ki van kapcsolva, a Kezdőlap fül csak akkor látszik, ha maga a Kezdőlap van elöl; az oldalsáv háza mindig visszavezet hozzá.",
+                "A fülön lévő jel lehet az alkalmazás ikonja vagy egy egyszerű négyzet az alkalmazás színében."
+              ]
+            },
+            "Ha több fül van, mint amennyi elfér, a sáv végein lévő nyilak görgetik, a „Több fül” pedig mindet felsorolja."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tájékozódás",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Parancs keresése",
+          "body": [
+            "A keresőmező („Parancsok és beállítások keresése”) az elöl lévő fül bármely parancsát megtalálja a neve alapján, az Ön nyelvén vagy angolul. Válasszon egy találatot a futtatásához.",
+            "A tervezett, de még meg nem írt parancsok szürkén jelennek meg a menükben, és kimaradnak a keresésből."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Billentyűparancsok",
+          "body": [
+            "Egy parancs billentyűi a neve mellett szerepelnek a menükben és a súgóbuborékában. A leggyakrabban használtak:",
+            {
+              "points": [
+                "Ctrl+O: fájl megnyitása",
+                "Ctrl+S: mentés; Ctrl+Shift+S: mentés másként",
+                "Ctrl+P: nyomtatás",
+                "Ctrl+Z és Ctrl+Y: visszavonás és újra",
+                "Ctrl+F: keresés a dokumentumban",
+                "Ctrl+W: a fül bezárása",
+                "Ctrl+Tab és Ctrl+Shift+Tab: a következő és az előző fül",
+                "Ctrl+, (vessző): Beállítások",
+                "F1: ez a Súgó",
+                "Escape: kilépés a teljes képernyőből vagy az olvasási módból, illetve a kézben lévő eszköz letétele"
+              ]
+            },
+            "A program saját parancsainak (fülek, Beállítások, Súgó) billentyűit a Beállítások → Általános → Billentyűparancsok helyen lehet módosítani; az alkalmazás parancsaiéit a Beállítások hozzá tartozó részében. Kattintson egy parancs billentyűire, majd nyomja meg az újakat."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "A Súgó használata",
+          "body": [
+            "A Súgó attól függ, honnan nyitja meg. Egy alkalmazásból csak annak az alkalmazásnak a kézikönyvét és annak a fülnek a parancsait látja, ahonnan jött. A kezdőoldalról vagy a Beállításokból a „Névjegy” részt (röviden a programról és az egyes alkalmazásokról) és a program kézikönyvét látja. A Súgó → Névjegy mindig a „Névjegy” részhez vezet.",
+            "A tartalomjegyzék a bal oldalon van; a fölötte lévő keresés minden témát átnéz, a címekben és a szövegben is.",
+            "A Súgó saját fülön nyílik meg, így oda-vissza válthat közte és a munkája között; az F1 újra előre hozza. „Az előző fül parancsai” alatt annak a fülnek minden menüje szerepel az összes parancsával, azok billentyűivel és leírásával: nyissa meg a Súgót arról a fülről, amellyel kapcsolatban kérdése van."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "A Windows Fájlkezelő helyi menüje",
+          "body": [
+            "A Beállítások → Általános → Windows Fájlkezelő → „A Syntelab Creative megjelenítése a fájlok és mappák helyi menüjében” bejegyzéseket ad azokhoz a fájlokhoz, amelyeket a program olvas: „Konvertálás PDF-re a PDF Organizerrel” és „Fájlok összevonása a PDF Organizerben”, mindkettő a PDF Organizer ikonjával, valamint „Syntelab Dev”, amely oldalra nyílik az Ellenőrző összegek, Összehasonlítás és Hex nézet elemekkel.",
+            "Csak az Ön felhasználójához adódnak hozzá, rendszergazdai jogok nélkül, és a kapcsoló kikapcsolása eltávolítja őket. Windows 11 alatt a „További lehetőségek megjelenítése” alatt találhatók. Mindig a telepített programot indítják el: ha a programot áthelyezték vagy máshová telepítették újra, induláskor helyreállítja őket.",
+            {
+              "note": "Ha több fájlon a „Fájlok összevonása a PDF Organizerben” lehetőséget választja, egy gyűjtő nyílik meg velük; a „Konvertálás PDF-re a PDF Organizerrel” kötegelt feldolgozást nyit meg velük."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Adatvédelem, frissítések és kapcsolat",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Mi megy ki az internetre, és mi soha",
+          "body": [
+            "A program semmit sem gyűjt: sem használati adatokat, sem fájlneveket, sem magától elküldött összeomlási jelentéseket.",
+            "Csak ezekben az esetekben lép kapcsolatba az internettel, mindegyiket Ön kezdeményezi:",
+            {
+              "points": [
+                "Frissítések és hírek keresése (két kis fájl beolvasása a syntelab.com oldalról), amikor kéri, vagy ha engedélyezte, a program indulásakor; valamint új verzió letöltése, csak amikor megnyomja a „Frissítés” gombot.",
+                "Weboldal mentése PDF-ként (PDF Organizer) és egy weboldal szövegének lekérése (Scribe) az Ön által beírt címről.",
+                "Egy dokumentumban lévő hivatkozás, amelyre rákattint: ezt a böngészője vagy a levelezőprogramja kapja meg.",
+                "Visszajelzés és Támogatás: ezek a syntelab.com egy oldalát nyitják meg a böngészőjében."
+              ]
+            },
+            "A tanúsítvánnyal való aláírás és az aláírások ellenőrzése az Ön számítógépén történik, internetkapcsolat nélkül."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Frissítések",
+          "body": [
+            "Beállítások → Általános → Frissítések → „Frissítések keresése”. Ha van újabb verzió, egy ablak megmutatja, mi az újdonság, és felajánlja a „Frissítés” lehetőséget.",
+            "A „Frissítés” letölti az új verziót, ellenőrzi, hogy valóban tőlünk származik-e (a mi kulcsunkkal kell aláírva lennie; minden mást elutasít), majd a jelenlegire telepíti. A beállításai megmaradnak, és a program újraindul. Semmi sem töltődik le, amíg meg nem nyomja.",
+            "Ha a frissítés így nem telepíthető (hordozható példány, Linux-csomag, nincs hálózat), a „Letöltés” megnyitja a letöltési oldalt a böngészőjében; telepítse az új verziót a jelenlegire, és a beállításai megmaradnak.",
+            "A „Frissítések és hírek ellenőrzése a program indításakor” kikapcsolható; Önről vagy a számítógépéről egyik esetben sem küldünk semmit."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Visszajelzés és támogatás",
+          "body": [
+            "Súgó → Visszajelzés: kérjen új alkalmazást, új funkciót vagy változtatást, vagy jelezzen egy problémát. Minden üzenetet elolvasunk.",
+            "Súgó → Támogatás: a program ingyenes; itt segíthet, hogy folytatódhasson."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "A Syntelab Creative névjegye",
+      "topics": [
+        {
+          "id": "about",
+          "title": "A Syntelab Creative névjegye",
+          "body": [
+            "A Syntelab Creative ingyenes alkalmazáscsomag a dokumentumokkal, szövegekkel és adatokkal végzett mindennapi munkához, amelyet a Syntelab (syntelab.com) készít. Négy alkalmazással indul: PDF Organizer, Scribe, Units és Dev. Ugyanebben az ablakban továbbiak is csatlakoznak hozzájuk.",
+            {
+              "points": [
+                "Mindig ingyenes.",
+                "Nincs adatgyűjtés: semmit sem gyűjtünk Önről, a számítógépéről vagy a munkájáról.",
+                "Semmit sem tartunk vissza: nincs fizetős verzió, nincs zárolt funkció, nincs szándékosan beépített korlát. Az egyetlen korlát az, amire a mai technológia képes, és amit a számítógépe elbír."
+              ]
+            },
+            "Nincs finanszírozásunk. A programot a szabadidőnkben készítjük, amennyire ez az idő engedi. Komolyan szándékunkban áll jó minőségű szoftvert készíteni, ehhez pedig idő és türelem kell: a miénk, hogy megépítsük, és az Öné, amíg fejlődik.",
+            "Minden verzióval jobb lesz. A bejelentett problémákat kijavítjuk, a kért funkciókat pedig mérlegeljük a következő lépésekhez.",
+            {
+              "note": "A dokumentumai a számítógépén maradnak. A program semmit sem gyűjt Önről vagy a munkájáról; lásd „Mi megy ki az internetre, és mi soha”."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Hogyan segíthet",
+          "body": [
+            "Három módja van, és mindegyik számít:",
+            {
+              "points": [
+                "Mondja el, mit gondol: Súgó → Visszajelzés. Egy probléma, amelybe belefutott, valami, ami hiányzik, valami, ami nehezebb a kelleténél. Minden üzenetet elolvasunk.",
+                "Meséljen másoknak a programról és arról, amit csinálunk. Több felhasználó több visszajelzést jelent, és így látjuk, mi számít igazán. Azt is érezteti velünk, hogy a munkánkat megbecsülik: a miénket és mindenkiét, aki részt vesz és részt fog venni a projektben.",
+                "Támogassa anyagilag, ha teheti: Súgó → Támogasson minket. Ezzel időt nyerünk a fejlesztésére."
+              ]
+            },
+            "Ezek közül semmit sem várunk el Öntől. A program ingyenes, és mindig ingyenes marad, teljes egészében, mindenkinek."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Miből készült",
+          "body": [
+            "A program sok ember munkájára épül. Amin minden alkalmazás osztozik:",
+            {
+              "points": [
+                "Az ablak és minden, amit lát: Tauri, a rendszer webnézetével (WebView2 Windowson, WebKitGTK Linuxon, WKWebView macOS-en); TypeScriptben, React-tel írva.",
+                "A munkát végző rész: Rustban írva.",
+                "Betűk és ikonok: Sansation, IBM Plex Sans és Font Awesome Free."
+              ]
+            },
+            "Hogy az egyes alkalmazások mit tesznek hozzá, az a saját oldalukon olvasható a „Névjegy” alatt. Hálásak vagyunk a projektek mögött álló embereknek."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Amit még nem tud",
+          "body": [
+            "Hogy tudja, mielőtt számítana rá:",
+            {
+              "points": [
+                "Néhány szöveg még fordításra vár. Addig angolul jelennek meg, soha nem kódként.",
+                "A fájlkezelő helyi menüje egyelőre csak a Windows Fájlkezelőben érhető el.",
+                "A tanúsítvánnyal való aláírás egyelőre Windowson működik; Linuxon és macOS-en egy későbbi verzióban érkezik."
+              ]
+            },
+            "Az egyes alkalmazások korlátai a saját oldalukon szerepelnek a „Névjegy” alatt. Ha valamelyik akadályozza Önt, jelezze nekünk a Súgó → Visszajelzés menüpontban: ez segít eldönteni, mi kerüljön sorra először."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Min dolgozunk",
+          "body": [
+            "A négy alkalmazás tovább fejlődik: amit a Súgó → Visszajelzés útján jelez és kér, nagyrészt az dönti el, mi kerül sorra először. Mellettük új alkalmazások készülnek. A Kezdőlap csak akkor jeleníti meg őket, ha szeretné: jelölje be őket a „Nézet” menüjében, és ott „Hamarosan” felirattal jelennek meg:",
+            {
+              "points": [
+                "Convert: fájlok konvertálása egyik formátumból a másikba, többek között irodai dokumentumoké PDF-re és vissza, anélkül hogy más programot kellene telepíteni. Még nem találtunk olyan nyílt technológiát, amely elérné a kívánt minőséget, ezért csak akkor érkezik, amikor nem fog csalódást okozni; ahol az eszközök nem léteznek, megépítjük őket.",
+                "Pixel: eszközök képekhez, például átméretezés és tömörítés, háttér eltávolítása, színek és QR-kódok.",
+                "Metadata: fotók, videók és dokumentumok rejtett adatainak megtekintése és eltávolítása, mielőtt megosztja őket.",
+                "Wizard: véletlenszerű választók és generátorok: pörgethető kerék, dobókockák, érme, listából kihúzott nevek."
+              ]
+            },
+            "A már elérhető alkalmazásokban azon dolgozunk, amit a „Amit még nem tud” oldaluk felsorol: például megbízható időbélyeg az aláírásokhoz, tanúsítvánnyal való aláírás Linuxon és macOS-en, valamint helyesírás-ellenőrzés a Scribe-ban.",
+            "További telepítési lehetőségek is jönnek: Microsoft Store és winget Windowson, Flathub és Snap Linuxon.",
+            {
+              "note": "Az egyes verziók hírei az oldalsáv hírek gombja alatt találhatók; a Beállítások → Általános → Frissítések ellenőrzi, van-e újabb verzió."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

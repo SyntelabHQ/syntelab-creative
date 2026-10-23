@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Tekstai ir failai",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Redaktorius",
+          "body": [
+            "Scribe – paprasto teksto redaktorius su įrankiais šalia. Kiekvienas tekstas turi savo kortelę; tekstas yra viduryje, įrankių skydelis šone, o po juo – faktų eilutė.",
+            "Atidarius Scribe, pirmiausia klausiama, ką norėtumėte daryti: skaičiuoti žodžius, ieškoti ir pakeisti, pašalinti dublikatus, palyginti du tekstus, rūšiuoti eilutes, apversti tekstą, rašyti užpildymo ar atsitiktinį tekstą. Kiekvienas pasirinkimas atidaro tekstą su jam skirtu įrankiu šalia; „Tuščias tekstas“ atidaro tik tekstą, o apačioje išvardijami neseniai atidaryti tekstai.",
+            {
+              "points": [
+                "Failas → Naujas tekstas (Ctrl+N) sukuria tuščią tekstą.",
+                "Failas → Atidaryti (Ctrl+O) atidaro vieną ar kelis failus, kiekvieną savo kortelėje. Atidaromas bet kuris failas, kuriame yra teksto: .txt, .md, .csv, .log, .srt, šaltinio kodas ir kiti.",
+                "Redaguoti → Anuliuoti (Ctrl+Z) ir Pakartoti (Ctrl+Y) eina per viską, kas padaryta tekstui; įrankis ar receptas laikomas vienu žingsniu.",
+                "Redaguoti → Ieškoti ir pakeisti (Ctrl+F) atidaro redaktoriuje juostą, kuri pereina nuo vieno atitikmens prie kito.",
+                "Redaguoti → Pasirinkti viską (Ctrl+A)."
+              ]
+            },
+            "Eilutė po tekstu rodo, kur yra žymeklis, kiek pažymėta, eilučių, žodžių ir simbolių skaičių, failo koduotę ir kaip baigiasi jo eilutės.",
+            "Į langą numesti failai taip pat atidaromi, kiekvienas kaip naujas tekstas su failo pavadinimu, koduote ir eilučių pabaigomis. Programa gauna numesto failo turinį, bet ne jo vietą diske, todėl išsaugant klausiama kur; didesni nei 64 MB failai atidaromi per Failas → Atidaryti.",
+            "Naujas tekstas, kol jis tuščias, išvardija neseniai atidarytus tekstus: spustelėkite vieną, kad jį atidarytumėte. „Pamiršti sąrašą“ jį išvalo; sąrašas saugomas tik šiame kompiuteryje."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Išsaugoti ir Išsaugoti kaip",
+          "body": [
+            "Kol neišsaugote, niekas nekeičia failo diske. Taškas kortelėje rodo, kad tekste yra pakeitimų, kurių nėra jo faile, o uždarant tokią kortelę pirmiausia klausiama.",
+            {
+              "points": [
+                "Išsaugoti (Ctrl+S) įrašo tekstą vietoj jo failo. Naujam tekstui klausiama, kur.",
+                "Išsaugoti kaip (Ctrl+Shift+S) įrašo jį į naują failą, kuris tada užima kortelės vietą, o viskas, ką galima anuliuoti, išlieka; senas failas lieka toks, koks buvo."
+              ]
+            },
+            "Failas įrašomas visiškai arba visai neįrašomas: jei įrašymas nepavyksta, failas, kuris buvo anksčiau, išlieka.",
+            {
+              "note": "Failas išsaugomas taip, kaip buvo atidarytas: ta pačia koduote, su tomis pačiomis eilučių pabaigomis. Ir Windows, ir Linux surinktas tekstas lieka toks, koks buvo."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Koduotės ir eilučių pabaigos",
+          "body": [
+            "Koduotė – tai būdas, kuriuo raidės saugomos baitais. Scribe perskaito, ką failas sako apie save, o jei nieko nesako – spėja. Dauguma šiandienos failų yra UTF-8; senesni failai iš Vidurio Europos dažnai yra windows-1250.",
+            {
+              "points": [
+                "Raidės atrodo netaisyklingai (Ã£ vietoj ă arba kvadratėliai): Failas → „Perskaityti kita koduote…“ ir pasirinkite tą, kuria failas buvo parašytas.",
+                "Norėdami išsaugoti kita koduote, pasirinkite ją eilutėje po tekstu ir išsaugokite. Jei tekste yra raidžių, kurių ta koduotė negali įrašyti, Scribe nurodo, kurių, ir nieko neįrašo.",
+                "Eilučių pabaigos (Windows CRLF, Linux ir macOS LF, senas Mac CR) keičiamos toje pačioje vietoje. Jei faile pabaigos mišrios, tai nurodoma; išsaugant visos jo eilutės gauna vienodas."
+              ]
+            },
+            "Tai, kuo prasideda naujas tekstas, pasirenkama nustatymuose."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Kaip rodomas tekstas",
+          "body": [
+            {
+              "points": [
+                "Viskas meniu „Vaizdas“ yra jungikliai: įjungta – matoma, išjungta – ne.",
+                "Tekstas: Laužyti ilgas eilutes (Alt+Z) – už langą ilgesnė eilutė tęsiasi žemiau, o tekstas išlaiko savo eilutes; Eilučių numeriai; Rezultatas šalia teksto.",
+                "Šalia teksto: Įrankiai (Ctrl+T), Receptai, Statistika. Skydelyje rodomos tik įjungtos dalys; jei neįjungta nė viena, skydelio nėra.",
+                "Rodomi įrankiai: kiekvieną įrankių grupę (Ieškoti ir pakeisti, Eilutės, Raidžių dydis, Valymas, Rašyti tekstą) galima pašalinti iš skydelio. Įrankis, pasirinktas iš meniu „Formatas“ arba „Įrankiai“, rodomas vis tiek: jo dalis ir grupė grįžta savaime.",
+                "Dviguba rodyklė skydelio viršuje suskleidžia jį į juostelę krašte, iš kurios kiekviena jo dalis pasiekiama vienu spustelėjimu; vilkite jo kraštą, kad jis taptų platesnis ar siauresnis.",
+                "Raidės ir jų dydis pasirenkami nustatymuose."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Labai dideli failai",
+          "body": [
+            "Didesnis nei 64 MB failas nekeliamas į redaktorių: jis atidaromas kortelėje, kuri rodo jį po 500 eilučių puslapį, skaitydama iš failo jums slenkant. Gigabaitų failai taip atidaromi per tiek laiko, kiek reikia juos vieną kartą perskaityti.",
+            {
+              "points": [
+                "„Ankstesnis puslapis“ ir „Kitas puslapis“ juda per jį; eilutės numeris ir „Eiti“ nušoka į bet kurią eilutę.",
+                "Paieška peržiūri visą failą su tais pačiais pasirinkimais kaip ir kitur ir išvardija rastas vietas: spustelėkite vieną, kad pereitumėte į jos eilutę. Ilgas sąrašas pateikiamas dalimis, su „Ieškoti daugiau“.",
+                "„Paleisti receptą visam failui…“ įrašo rezultatą į jūsų pasirinktą aplanką tuo pačiu pavadinimu. Pats failas čia niekada nekeičiamas.",
+                "„Atidaryti visą redaktoriuje“ vis tiek įkelia jį į redaktorių, kad galėtumėte keisti ranka. Tai gali būti lėta, ir tam reikia kelis kartus daugiau atminties, nei sudaro failo dydis."
+              ]
+            },
+            {
+              "note": "Failų, užrašytų po du baitus raidei (UTF-16), negalima rodyti puslapiais. Vykdomas receptas laiko visą failą atmintyje: riba yra kompiuterio atmintis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Įrankiai",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Kaip veikia įrankiai",
+          "body": [
+            "Įrankiai yra skydelyje šalia teksto, suskirstyti į grupes. Spustelėkite įrankį, kad pamatytumėte jo pasirinkimus, tada „Taikyti tekstui“.",
+            {
+              "points": [
+                "Kai kas nors pažymėta, įrankis keičia tik pažymėtą dalį; kai nieko nepažymėta – visą tekstą. Skydelio viršuje nurodoma, kurį.",
+                "Po mygtuku įrankis nurodo, ką atliko: kiek eilučių ar vietų buvo pakeista.",
+                "Kiekvienas įrankis yra vienas žingsnis: „Anuliuoti“ jį atšaukia visą.",
+                "Kiekvienas įrankis taip pat yra meniu ir komandų paieškoje: tie, kurie keičia teksto formą (eilutės, raidžių dydis, valymas), – meniu „Formatas“, kiti – meniu „Įrankiai“. Pasirinkus jį ten, skydelis atsidaro ties jo pasirinkimais."
+              ]
+            },
+            "Meniu „Formatas“ įrankis, kurį daugiausia sudaro vienas pasirinkimas, išskleidžiamas į savo parinktis: kiekvienas raidžių dydžio keitimo būdas, kiekviena kabučių rūšis, kiekvienas teksto apvertimo būdas yra atskira komanda, kuri atidaro įrankį su ta parinktimi. Kai langas grupei per siauras, grupė tampa vienu mygtuku, kuris atidaro visą sąrašą.",
+            "Įrankiai veikia šiame kompiuteryje. Joks tekstas iš jo neišsiunčiamas."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Rezultatas prieš pritaikymą",
+          "body": [
+            "Kai įrankis atidarytas, tai, ką jis duotų, rodoma šalia teksto, skiltyje „Rezultatas“. Tekste niekas nesikeičia, kol pasirinksite „Taikyti tekstui“. Rezultatas seka paskui jus: pakeiskite pasirinkimą ar tekstą, ir jis sudaromas iš naujo.",
+            {
+              "points": [
+                "Tekstas ir rezultatas yra vienas šalia kito, kiekvienas po tokio pat aukščio antrašte, todėl tos pačios eilutės prasideda tame pačiame aukštyje; jie slenka kartu (grandinės mygtukas tai išjungia).",
+                "Eilutės, kurios pasikeistų, pažymimos, o besikeičianti eilutės dalis pažymima tamsiau; eilutės, kurios tik būtų perkeltos, ir naujos eilutės turi savo spalvą. Eilutės, kurios būtų pakeistos ar pašalintos, pažymimos ir jūsų tekste.",
+                "Po pavadinimais: kas nutiktų skaičiais – pakeistos, perkeltos, naujos, pašalintos eilutės; eilutės ir simboliai prieš ir po.",
+                "Po rezultatu: eilutės, kurios būtų pašalintos. Spustelėkite vieną iš jų, kad pereitumėte prie jos tekste.",
+                "Maži rezultato mygtukai: kopijuoti jį, atidaryti kaip naują tekstą, palyginti jį su tekstu kortelėje, slinkti kartu, rodyti rezultatą po tekstu, o ne šalia, paslėpti jį. Tekstas turi savus: anuliuoti, pakartoti, kopijuoti, įklijuoti vietoje, pasirinkti viską, ištrinti.",
+                "Vilkite juostą tarp jų, kad vienam suteiktumėte daugiau vietos; dukart spustelėjus jie vėl tampa lygūs."
+              ]
+            },
+            "Po „Taikyti tekstui“ skiltis „Rezultatas“ tai praneša („Pritaikyta. Tekstas kairėje dabar yra rezultatas.“) ir siūlo „Anuliuoti“ bei „Palyginti su tuo, kas buvo“, kuris atidaro tą patį palyginimą prieš ir po. Rezultatas vėl rodomas, kai tik pakeičiate tekstą ar įrankio pasirinkimą.",
+            {
+              "note": "Vaizdas → „Rezultatas šalia teksto“ išjungia ir įjungia šią skiltį. Labai ilgam tekstui (daugiau nei du milijonai simbolių) iš anksto nieko nerodoma: pritaikykite įrankį, o „Anuliuoti“ jį atšauks."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Pakeisti visur",
+          "body": [
+            "Iš karto pakeičia visas vietas, kuriose kas nors randama. Kol rašote, ko ieškoti, Scribe nurodo, keliose vietose tai rasta, ir pažymi jas tekste, kad prieš taikydami matytumėte, kas pasikeis.",
+            {
+              "points": [
+                "„Reguliarusis reiškinys“: ieškomas tekstas yra šablonas. Lauke „Pakeisti į“ $1, $2… reiškia tai, ką rado šablono grupės.",
+                "„Atsižvelgti į raidžių registrą“: a ir A yra skirtingos raidės.",
+                "„Tik ištisi žodžiai“: „dar“ nerandamas žodyje „darbas“.",
+                "„Išlaikyti pakeičiamojo teksto registrą“: keičiant „katė“ į „šuo“, „Katė“ tampa „Šuo“, o „KATĖ“ – „ŠUO“."
+              ]
+            },
+            {
+              "points": [
+                "„Daugiau pasirinkimų“ → „Įrašyti…“: tai, kas įrašoma, gali turėti tuščių vietų, užpildomų kiekviename atitikmenyje. {counter} skaičiuoja 1, 2, 3… ({counter:10} pradeda nuo 10, {counter:10:5} didėja po 5); {date} ir {time} – jūsų kompiuterio diena ir valanda; {uuid} – identifikatorius; {random} – 8 atsitiktinės raidės ir skaitmenys ({random:12} – 12).",
+                "Po tuo, ko ieškote, Scribe taip pat nurodo, keliose eilutėse yra atitikmenys ir kiek skirtingų tekstų jie sudaro."
+              ]
+            },
+            "„Pakeisti kelis iškart“ vienu žingsniu atlieka porų sąrašą. Rašykite po vieną porą eilutėje taip: ko ieškoti => kuo pakeisti. Jos atliekamos nuo pirmos iki paskutinės, kiekviena su tuo, ką paliko ankstesnė; tuščia antroji pusė tekstą pašalina.",
+            {
+              "note": "Šablonas negali užšaldyti programos: jam reikalingas laikas auga kartu su teksto ilgiu ir ne greičiau. Todėl šablonai, kurie atsigręžia į tai, ką rado (\\1), negalimi."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Eilutės",
+          "body": [
+            {
+              "points": [
+                "Rūšiuoti eilutes pagal: raides, kaip žodyne, programos arba jūsų pasirinkta kalba (rumunų kalboje ă eina po a; švedų kalba ä deda po z, vokiečių – šalia a); raides su skaičiais kaip skaičiais (file2 prieš file10); skaičių, kuriuo prasideda kiekviena eilutė; ilgį; žodžių skaičių; datą, kuria prasideda kiekviena eilutė (05.03.2024, 2024-03-05, su valanda ar be jos); interneto adresus; versijų numerius (1.2.10 po 1.2.9); pavadinimus, kai pradžioje esantis artikelis neskaičiuojamas; jūsų užrašytą tvarką (mažas, vidutinis, didelis); arba visai be tvarkos.",
+                "Eilutės, kuriose nėra pagal ką rūšiuoti (nėra skaičiaus, datos, reikšmės, kurios nėra jūsų užrašytoje tvarkoje), lieka pabaigoje, kad ir kaip būtų rūšiuojamos kitos: nuo mažiausio ar nuo didžiausio.",
+                "Daugiau rūšiavimo pasirinkimų: lyginti nuo žodžio ar simbolio arba vieną lentelės stulpelį (nurodant, kas skiria stulpelius); palikti pirmąją eilutę vietoje kaip antraštę; rūšiuoti pastraipas, o ne eilutes; ir pirmiausia sutvarkyti – apkirpti, pašalinti tuščias eilutes, pašalinti dublikatus.",
+                "Pašalinti dubliuotas eilutes: palikti pirmąją, paskutinę arba nė vienos iš pasikartojančių eilučių (lieka tik tos, kurios yra vieną kartą). Galima nepaisyti raidžių dydžio, tarpų aplink eilutę, skaitmenų, skyrybos ženklų ir tam tikro simbolių skaičiaus pradžioje ar pabaigoje; lyginti galima tik stulpelį arba tik tai, ką randa šablonas. Tuščios eilutės laikomos kaip kitos, paliekamos, pašalinamos arba sutraukiamos į vieną.",
+                "Suskaičiuoti pasikartojančias eilutes: palieka kiekvieną eilutę vieną kartą, prieš ją įrašydamas, kiek kartų ji pasitaikė, – dažniausiai pasikartojančias pirmiausia, rečiausiai pasikartojančias arba ta tvarka, kuria jos eina.",
+                "Palikti arba pašalinti eilutes: kiekvienoje eilutėje ieško kažko ir palieka tik eilutes, kuriose tai yra, arba tik tas, kuriose to nėra.",
+                "Apversti eilučių tvarką; Sumaišyti eilutes.",
+                "Numeruoti eilutes: pirmasis numeris, kas rašoma po jo, nuliai priekyje, kad numeriai būtų išlygiuoti, tuščios eilutės be numerio.",
+                "Tuščios eilutės: pašalinti visas arba palikti vieną ten, kur jų kelios.",
+                "Sujungti eilutes į vieną, su jūsų pasirinktu skyrikliu tarp jų; Skaidyti į eilutes ties kiekvienu kableliu, kabliataškiu ar bet kuo kitu. Visur, kur įrašoma tai, kas stovi tarp elementų (numeruojant, jungiant, skaidant, skaičiuojant), \\t reiškia tabuliaciją, kurios negalima įvesti į lauką."
+              ]
+            },
+            {
+              "note": "Pasirinkimas, kuris yra svarbus tik kartu su kitu, rodomas tik tada: stulpelis, kai lyginate pagal stulpelį. Pasirinkimai, kurių reikia rečiau, yra skiltyje „Daugiau pasirinkimų“."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Raidžių dydis",
+          "body": [
+            "Keisti raidžių registrą: kaip sakinyje, kiekvienas žodis iš didžiosios, visos didžiosios, visos mažosios, apverstas, ir būdai, kuriais kode rašomi pavadinimai: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Didžiosios raidės paiso kiekvienos abėcėlės taisyklių, ne tik anglų.",
+            "Grupėje „Kryptis“ „Apversti tekstą“ apverčia kiekvienos eilutės raides, arba jos žodžių tvarką, arba kiekvieno žodžio raides; „Aukštyn kojomis“ parašo jį taip, kad būtų galima skaityti iš kitos stalo pusės, o „Kaip veidrodyje“ dar ir sukeičia ženklus, turinčius kairę ir dešinę pusę. Raidės skaičiuojamos taip, kaip jas skaičiuoja skaitytojas: raidė su savo ženklais lieka viena."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Valymas",
+          "body": [
+            {
+              "points": [
+                "Valyti tarpus: keli tarpai tampa vienu; tarpai eilučių galuose pašalinami.",
+                "Apkirpti eilučių galus: abiejuose galuose, pradžioje arba pabaigoje.",
+                "Kabutės: tiesios, angliškos, rumuniškos, vokiškos arba prancūziškos.",
+                "Pašalinti diakritinius ženklus: ă tampa a, é tampa e. Tik lotynų ir graikų abėcėlėse, kur raidė be savo ženklo vis dar yra ta pati raidė.",
+                "Taisyti rumunų raides: ş ir ţ (su sedile, rašomos senesnėmis klaviatūromis) tampa ș ir ț (su kableliu) – raidėmis, kuriomis rašoma rumuniškai.",
+                "Tabuliacijos į tarpus ir tarpai į tabuliacijas, su jūsų pasirinktu tabuliacijos pločiu.",
+                "Pašalinti HTML žymes: tekste įklijuotam tinklalapio šaltinio kodui. Žymės, scenarijai ir stiliai pašalinami; lieka tai, ką matytų skaitytojas. Norėdami gauti puslapį pagal jo adresą, naudokite po juo esantį įrankį „Tinklalapio tekstas“.",
+                "Tinklalapio tekstas: įveskite puslapio adresą (example.com/page) ir pasirinkite „Gauti tekstą“. Tai, ką skaitytojas matytų tame puslapyje, įrašoma ten, kur yra žymeklis, be žymių, scenarijų ar stilių. Tai vienintelis Scribe įrankis, kuris jungiasi prie interneto, ir tik kai paprašote: puslapį gauna šiame kompiuteryje įdiegta naršyklė (Microsoft Edge arba Google Chrome), veikianti be lango ir be jūsų slapukų ar prisijungimų; pati programa nieko nesiunčia. Puslapis, kuriam reikia prisijungti, pateikia tik tai, ką matytų nepažįstamasis."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Rumunų diakritikų grąžinimas",
+          "body": [
+            "Rumuniškas tekstas, surinktas be ă, â, î, ș, ț, vėl parašomas su jais.",
+            {
+              "steps": [
+                "Atidarykite įrankį grupėje „Valymas“ ir pasirinkite „Taikyti tekstui“.",
+                "Žodžiai, kurie turi vieną teisingą formą, pakeičiami iškart: „stiu“ tampa „știu“, „informatii“ tampa „informații“.",
+                "Žodžiai, kuriuos galima perskaityti daugiau nei vienaip (fata, fată, fața, față), išvardijami po mygtuku, kiekvienas savo vietoje tekste. Kiekvienam spustelėkite teisingą formą.",
+                "Arba prieš taikydami pažymėkite „Kai žodis abejotinas, pačiam pasirinkti tikėtinesnę formą“: nieko neklausiama, o rezultatą reikia perskaityti."
+              ]
+            },
+            "Kai aplinkinių žodžių pakanka, Scribe nusprendžia pagal juos: „o casa“ tampa „o casă“, „casa mea“ lieka nepakeista, „pentru ca“ tampa „pentru că“.",
+            {
+              "note": "Tai sukurta Scribe programai iš dažnų žodžių sąrašo ir galūnių, kurias rumunų kalba visada rašo su diakritikais. Žodžiai, kurių ji nežino (reti žodžiai, vardai), lieka tokie, kokie surinkti, o jau su diakritikais parašytas žodis niekada neliečiamas. Prieš siųsdami perskaitykite rezultatą."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Teksto rašymas: užpildymo ir atsitiktinis tekstas",
+          "body": [
+            "Grupės „Rašyti tekstą“ įrankiai nieko nekeičia: jie rašo. Tai, ką jie duoda, įrašoma ten, kur yra žymeklis, vietoj pažymėto teksto.",
+            {
+              "points": [
+                "Užpildymo tekstas: pastraipos, sakiniai, žodžiai, sąrašai, antraštės arba puslapio dalys (antraštė, pastraipos, sąrašas). Spaustuvininkų lotynų kalba (lorem ipsum), anglų, rumunų kalba, biuro ar virtuvės žodžiais arba jūsų pačių žodžiais. Daugiau pasirinkimų: trumpi, vidutiniai arba ilgi sakiniai; paprastas tekstas, Markdown, HTML arba JSON; antraščių lygis; simbolių riba (tekstas nukerpamas ties ištisu žodžiu ir vis tiek baigiasi kaip sakinys); žodžiai, kuriuos reikia praleisti.",
+                "Išgalvoti duomenys: vardai, el. pašto adresai, telefonų numeriai, gatvių adresai, datos ar skaičiai, po vieną eilutėje, iš Rumunijos arba angliškai kalbančių šalių. „Eilutės pagal mano šabloną“ rašo kiekvieną eilutę taip, kaip nurodote, o {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} ir {row} pakeičiami tuo, kas sukuriama, – lentelė kam nors išbandyti, akimirksniu.",
+                "Atsitiktinis tekstas: slaptažodžiai (raidės, skaitmenys ir ženklai, bent po vieną kiekvienų), raidės, skaitmenys, šešioliktainiai skaičiai arba identifikatoriai (UUID), vienoje ar daugelyje eilučių. Lengvai painiojamus simbolius (0 ir O, 1, l ir I) galima praleisti.",
+                "Sėkla (skiltyje „Daugiau pasirinkimų“) lemia, kad su tuo pačiu skaičiumi užpildymo tekstas ir išgalvoti duomenys kaskart būtų tokie patys; 0 kaskart duoda ką nors nauja."
+              ]
+            },
+            {
+              "note": "Slaptažodžiai sukuriami šiame kompiuteryje, naudojant operacinės sistemos atsitiktinumą, ir niekur nesiunčiami. Išgalvoti el. pašto adresai baigiasi example.com, kur laiškai niekam nepasiekia; atsitiktinai sudarytas telefono numeris gali kam nors priklausyti, todėl juo neskambinkite."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Receptai",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Atliktų veiksmų išsaugojimas kaip receptas",
+          "body": [
+            "Receptas – tai įrankių sąrašas su jų pasirinkimais, išsaugotas pavadinimu ir vėl paleidžiamas vienu spustelėjimu.",
+            {
+              "steps": [
+                "Pritaikykite tekstui norimus įrankius norima tvarka.",
+                "Skydelio viršuje atidarykite „Receptai“: ten išvardyti pritaikyti įrankiai.",
+                "„Išsaugoti kaip receptą…“ ir suteikite jam pavadinimą.",
+                "Vėliau atidarykite receptą ir pasirinkite „Paleisti tekstui“: atliekami visi jo žingsniai, o vienas „Anuliuoti“ juos visus atšaukia."
+              ]
+            },
+            "Receptai saugomi šiame kompiuteryje ir prieinami kiekviename tekste."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Recepto keitimas arba kūrimas nuo nulio",
+          "body": [
+            "„Keisti…“ atidarytame recepte rodo jo pavadinimą ir žingsnius. Kiekvieną žingsnį galima perkelti aukštyn ar žemyn, pašalinti ir jam parinkti kitus pasirinkimus; įrankiai pridedami iš sąrašo po žingsniais. Niekas neišsaugoma, kol nepaspausite „Išsaugoti“.",
+            "„Naujas receptas“ pradeda receptą be žingsnių, kurį galima sudėti tuo pačiu būdu, prieš tai netaikant įrankių tekstui.",
+            {
+              "note": "Įrankiai, kurie rašo tekstą (užpildymo tekstas, atsitiktinis tekstas), nėra recepto žingsniai: receptas keičia tekstą."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Recepto paleidimas failams",
+          "body": [
+            {
+              "steps": [
+                "Atidarykite receptą ir skiltyje „Paleisti failams“ pridėkite failus arba aplanką (su jo poaplankiais).",
+                "Pasirinkite, kur dėti rezultatus: į kitą aplanką – tada failai lieka tokie, kokie yra, – arba ant pačių failų.",
+                "Paleiskite. Scribe nurodo, kiek failų įrašyta, kiek jų nereikėjo keisti ir kurių nepavyko apdoroti bei kodėl."
+              ]
+            },
+            "Kiekvienas failas įrašomas ta koduote ir su tomis eilučių pabaigomis, kurias turėjo. Kitame aplanke failai išlaiko aplankus, kuriuose buvo, o ten jau esantis failas niekada neperrašomas.",
+            {
+              "note": "Pačių failų perrašymo Scribe atšaukti negalima. Jei jie svarbūs, pasidarykite kopiją."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistika, palyginimas ir aplankai",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistika",
+          "body": [
+            "„Statistika“ skydelio viršuje rodo, iš ko sudarytas tekstas arba pažymėta dalis. Kiekvieną dalį galima suskleisti.",
+            {
+              "points": [
+                "Viršuje: žodžiai, simboliai su tarpais ir be jų, sakiniai, pastraipos, eilutės, puslapiai ir dydis baitais.",
+                "Laikas: skaitant tyliai, sakant garsiai, renkant klaviatūra ir rašant ranka.",
+                "Žodžiai: kiek jų skirtingų (ir kokią dalį jie sudaro iš viso), raidės žodyje, skiemenys, ilgiausias ir trumpiausias žodis bei kiek žodžių yra kiekvieno ilgio.",
+                "Sakiniai: žodžiai sakinyje, kiek yra trumpų, vidutinių ir ilgų, kiek yra teiginių, klausimų ir šaukiamųjų sakinių, taip pat ilgiausias ir trumpiausias.",
+                "Skaitymo lengvumas: balas nuo 0 (labai sunku) iki 100 (labai lengva) pagal teksto kalbai sukurtą formulę. Formulės yra anglų, vokiečių, ispanų, prancūzų, italų, olandų, portugalų ir rusų kalboms; kalba be formulės balo negauna, nes kitai kalbai sukurta formulė klaidintų.",
+                "Dažniausiai vartojamos frazės: dažniausiai vartojami žodžiai su jų dalimi tekste ir pasikartojančios žodžių poros bei trijų žodžių grupės.",
+                "Vietos įprastose ribose: kiek simbolių liko arba kiek viršyta pavadinimui, aprašymui, trumpam įrašui ir kitiems."
+              ]
+            },
+            "Žodžiai ir sakiniai randami pagal kiekvienos rašto sistemos taisykles, todėl skaičiuojami ir kinų, japonų bei tajų tekstai, kuriuose tarp žodžių nededama tarpų. Greičiai, pagal kuriuos skaičiuojami laikai, ir kiek žodžių telpa puslapyje, nustatomi nustatymuose."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Dviejų tekstų palyginimas",
+          "body": [
+            {
+              "points": [
+                "Įrankiai → „Palyginti su kitu tekstu…“: redaktoriaus tekstas šalia teksto, kurį įrašote arba įklijuojate.",
+                "Įrankiai → „Palyginti su failu…“: redaktoriaus tekstas, koks jis yra dabar, šalia jūsų pasirinkto failo.",
+                "Įrankiai → „Palyginti du tekstus…“: du tekstai, įrašyti ar įklijuoti vienas šalia kito.",
+                "Įrankiai → „Palyginti du failus…“."
+              ]
+            },
+            "Du tekstai rodomi vienas šalia kito. Eilutės, esančios tik pirmame, pažymimos kaip pašalintos, esančios tik antrame – kaip pridėtos, o pakeistoje eilutėje pažymimi besiskiriantys žodžiai. Rodoma tik tai, kas skiriasi, su keliomis aplinkinėmis eilutėmis; rodyklės pereina nuo vieno skirtumo prie kito.",
+            "Raidžių dydžio, tarpų, tuščių eilučių, skaičių ir skyrybos ženklų galima nepaisyti. „Viename stulpelyje“ rodo, kas pašalinta, virš to, kas įdėta, kiekvieną su savo ženklu, o ne vienas šalia kito. Šalia skaičių Scribe nurodo, kiek abu tekstai panašūs, kaip vienodų eilučių dalį.",
+            "Tekstas parodomas, kai tik jis pasirinktas, dar prieš kitą. Vilkite juostą tarp tekstų, kad vienam suteiktumėte daugiau vietos; kol tekstai rašomi, juostą po laukais galima vilkti aukštyn ir žemyn, kad laukams arba palyginimui būtų daugiau vietos. Dukart spustelėjus juosta grąžinama.",
+            "Kai pakeistos kelios eilutės iš eilės, kiekviena dedama šalia eilutės, į kurią ji labiausiai panaši, kad tarp jų pridėta ar pašalinta eilutė nepadarytų taip, jog kiekviena po jos einanti eilutė atrodytų pakeista į kitą.",
+            "„Įrašykite arba įklijuokite tekstus“ rodo lauką virš kiekvieno stulpelio; tai, ką ten rašote, lyginama jums rašant, o bet kuriai pusei vis tiek galima pasirinkti failą."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Paieška ir pakeitimas aplanke",
+          "body": [
+            {
+              "steps": [
+                "Įrankiai → „Ieškoti aplanke…“ (Ctrl+Shift+F) ir pasirinkite aplanką. Ieškoma ir jo poaplankiuose.",
+                "Įrašykite, ko ieškoti, su tais pačiais pasirinkimais kaip „Pakeisti visur“. „Failų tipai“ apriboja paiešką tam tikrais plėtiniais (txt, md, csv…).",
+                "Kiekvienas sutapimas rodomas savo eilutėje, failu po failo. Spustelėkite eilutę, kad atidarytumėte failą toje vietoje.",
+                "Norėdami pakeisti: įrašykite naują tekstą, nuimkite žymėjimą nuo failų, kurių nekeisite, ir pasirinkite „Įrašyti failus“."
+              ]
+            },
+            "Niekas neįrašoma, kol nepaprašote, ir tik į pažymėtus failus. Kiekvienas failas įrašomas ta koduote ir su tomis eilučių pabaigomis, kurias turėjo.",
+            {
+              "note": "Paslėpti aplankai ir tie, kuriuos pildo programos (.git, node_modules), praleidžiami, nebent jų paprašote. Ne tekstiniai failai praleidžiami visada."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nustatymai",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Scribe nustatymai",
+          "body": [
+            "Failas → Nustatymai atidaro programos nustatymus ties Scribe dalimi.",
+            {
+              "points": [
+                "Redaktorius: vienodo pločio raidės ar pačios programos raidės, jų dydis, eilučių laužymas, eilučių numeriai ir ar įrankio rezultatas rodomas prieš jį pritaikant.",
+                "Naujas tekstas: kaip baigiasi jo eilutės ir ar failas prasideda baitų tvarkos ženkliu (BOM).",
+                "Statistika: skaitymo, sakymo, rinkimo klaviatūra ir rašymo ranka greičiai bei kiek žodžių telpa puslapyje.",
+                "Scribe komandų klavišai."
+              ]
+            },
+            "Kiekvienas nustatymas turi mygtuką, kuris grąžina jį tokį, koks yra įdiegus programą."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Apie Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Apie Scribe",
+          "body": [
+            "Scribe – Syntelab Creative teksto programėlė: redaktorius su įrankiais šalia teksto. Ji parodo, ką įrankis padarytų, prieš jam tai padarant, valo ir pertvarko sąrašus, ieško ir pakeičia tekste ar visame aplanke, lygina du tekstus, parodo, iš ko sudarytas tekstas, rašo užpildymo tekstą ir išgalvotus duomenis bei išsaugo tai, ką dažnai darote, kaip receptus, kuriuos galima paleisti vėl.",
+            "Viskas atliekama šiame kompiuteryje. Tekstų dydis ar skaičius neribojamas: ribos yra kompiuterio atmintis ir tai, ką leidžia šiandienos technologijos.",
+            "Ji nauja. Jei jūsų tekstams jos nepakanka, praneškite mums per Pagalba → Atsiliepimai: taip sužinome, ką tobulinti."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Iš ko sukurta Scribe",
+          "body": [
+            {
+              "points": [
+                "Redaktorius: CodeMirror.",
+                "Koduočių skaitymas ir rašymas: encoding_rs, su chardetng, kad būtų galima atspėti failo, kuris jos nenurodo, koduotę.",
+                "Paieška ir pakeitimas: Rust regex biblioteka, kurios šablonai negali užšaldyti programos.",
+                "Rūšiavimas taip, kaip tai daro kiekviena kalba, ir žodžių bei sakinių radimas bet kurioje rašto sistemoje: ICU4X, Unicode biblioteka.",
+                "Tekstų lyginimas: similar biblioteka.",
+                "Rumunų diakritikai: Scribe parašytas žodžių sąrašas ir taisyklės."
+              ]
+            },
+            "Tai, kas bendra su likusia programa, aprašyta skyriuje „Apie Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ko Scribe dar negali",
+          "body": [
+            {
+              "points": [
+                "Labai didelis failas skaitomas po puslapį ir keičiamas tik receptais; norint jį keisti ranka, jį reikia atidaryti visą, o tam reikia atminties.",
+                "Rumunų diakritikų grąžinimas žino dažnus žodžius; reti žodžiai ir vardai lieka tokie, kokie surinkti.",
+                "Rašybos tikrinimo nėra.",
+                "Iš PDF ar raštinės dokumentų tekstas čia neištraukiamas; juos atidaro PDF Organizer.",
+                "Redaktorius nespalvina kodo ar Markdown.",
+                "Į langą numestas failas atidaromas kaip naujas tekstas: programai nepranešama, kur failas yra, todėl išsaugant klausiama kur."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

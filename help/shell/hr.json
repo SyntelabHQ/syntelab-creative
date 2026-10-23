@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Prvi koraci",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Što je Syntelab Creative",
+          "body": [
+            "Syntelab Creative je jedan program sastavljen od aplikacija. Svaka aplikacija obavlja jednu vrstu posla:",
+            {
+              "points": [
+                "PDF Organizer čita, organizira, uređuje i potpisuje PDF dokumente.",
+                "Scribe je uređivač teksta s alatima za čišćenje, sortiranje, uspoređivanje i transformiranje teksta.",
+                "Units konvertira između jedinica: duljine, temperature, valuta i mnogih drugih.",
+                "Dev okuplja alate za programere: kodiranje i dekodiranje, formatiranje i provjeru, pretvaranje jednog oblika podataka u drugi."
+              ]
+            },
+            "Aplikacije dijele jedan prozor, jedan skup postavki i jedan način rada, tako da je ono što naučite u jednoj aplikaciji isto i u sljedećoj.",
+            {
+              "note": "Sve se događa na vašem računalu. Vaši dokumenti se nikada ne šalju nigdje, a o vama ili vašem radu ne prikupljaju se nikakvi podaci."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Prozor",
+          "body": [
+            {
+              "points": [
+                "Bočna traka: ikona kuće vodi na Početak, zatim slijede vaše aplikacije, a na dnu su novosti o programu, Povratne informacije, Podrška i Postavke.",
+                "U aplikaciji, Datoteka → Idi na Početak vodi na prvu stranicu te aplikacije ako je ona ima (Units, Scribe), a Datoteka → Otvori Postavke (Ctrl+,) otvara Postavke u dijelu koji pripada toj aplikaciji; ostali dijelovi su tamo udaljeni samo jedan klik.",
+                "Kartice na vrhu: svaki dokument, zbirka ili alat koji otvorite ima vlastitu karticu. Točka na kartici označava da postoje nespremljene promjene.",
+                "Izbornici aplikacije, ispod kartica: kao traka izbornika, kao traka ili kao bočna ploča, ovisno o vašem izboru.",
+                "Ostatak prozora zauzima aktivna kartica."
+              ]
+            },
+            "Zatvaranje kartice koja ima nespremljene promjene zahtijeva potvrdu; isto vrijedi i za zatvaranje programa."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Početak",
+          "body": [
+            "Početak prikazuje vaše aplikacije i nedavno otvorene datoteke. Kliknite aplikaciju da biste je otvorili; kliknite nedavnu datoteku da biste je ponovno otvorili.",
+            "Aplikacije se mogu prikazati kao kartice, kao ikone s nazivima ili samo kao ikone, te ih možete prevući u željeni redoslijed. Pomoću tipkovnice: Alt i tipke sa strelicama. „Vrati na zadane postavke” vraća ih u početni redoslijed.",
+            "Svaka aplikacija također ima vlastiti prečac u izborniku Start sustava Windows, kao što su „Syntelab PDF Organizer” ili „Syntelab Units”: on otvara program izravno u toj aplikaciji. Ako je program već otvoren, aplikacija se u njemu otvara kao kartica."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Otvaranje datoteka",
+          "body": [
+            {
+              "points": [
+                "Iz aplikacije: Datoteka → Otvori ili Ctrl+O.",
+                "Povlačenjem datoteka iz mape u prozor.",
+                "Iz upravitelja datoteka vašeg sustava: dvaput kliknite datoteku koju je program postavljen otvarati. U Windows Exploreru postoji i izbornik desnog klika (vidi „Izbornik desnog klika u Windows Exploreru”).",
+                "S Početka: popis nedavnih datoteka."
+              ]
+            },
+            "Program se pokreće kao jedna kopija. Datoteka otvorena iz upravitelja datoteka dok je program pokrenut otvara se kao nova kartica u istom prozoru."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prilagodba",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Izgled: traka izbornika, traka ili bočna ploča",
+          "body": [
+            "Naredbe aplikacije mogu se prikazati na tri načina. Riječ je o istim naredbama; razlikuje se samo njihovo mjesto.",
+            {
+              "points": [
+                "Klasični: traka izbornika i traka s alatima.",
+                "Traka: veliki gumbi u imenovanim grupama, jedna kartica za svaki izbornik. Može se sklopiti kako bi ostalo više prostora za dokument.",
+                "Bočna ploča: alati u ploči s lijeve ili desne strane, koja se može sklopiti na ikone."
+              ]
+            },
+            "Odaberite izgled svih aplikacija u Postavke → Općenito → Izgled. Aplikacija može imati vlastiti izgled, odabran u njezinom dijelu Postavki ili u njezinom izborniku Pregled; tada više ne prati opći izgled sve dok ne odaberete „Koristi opći izgled”."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Postavke → Općenito → Tema: Svijetla, Tamna, Svijetlosiva, Tamnosiva ili Automatska, koja prati postavku svijetlog ili tamnog načina rada sustava.",
+            "Stranice dokumenta nikada ne mijenjaju boju prema temi: papir ostaje takav kakav jest."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Jezik",
+          "body": [
+            "Postavke → Općenito → Jezik. Program podržava 62 jezika. „Jezik sustava” prati jezik vašeg sustava. Popis se može pretraživati prema izvornom nazivu jezika, nazivu na vašem jeziku ili engleskom nazivu.",
+            "Tekst koji još nije preveden prikazuje se na engleskom jeziku, nikada kao kod."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Kartice",
+          "body": [
+            {
+              "points": [
+                "„Zadrži karticu Početak među karticama”: kada je isključeno, kartica Početak prikazuje se samo dok je sam Početak u prvom planu; kućica na bočnoj traci uvijek vodi natrag na nju.",
+                "Oznaka na kartici može biti ikona njezine aplikacije ili običan kvadrat u boji aplikacije."
+              ]
+            },
+            "Kada ima više kartica nego što stane, strelice na krajevima trake pomiču ih, a „Više kartica” navodi ih sve."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Snalaženje",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Pretraživanje naredbe",
+          "body": [
+            "Okvir za pretraživanje („Pretraži aplikacije, alate i naredbe”) pronalazi bilo koju naredbu aktivne kartice prema nazivu, na vašem jeziku ili na engleskom. Odaberite rezultat kako biste je pokrenuli.",
+            "Naredbe koje su planirane, ali još nisu napisane, prikazane su sivom bojom u izbornicima i izostavljene su iz pretraživanja."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Prečaci na tipkovnici",
+          "body": [
+            "Tipke naredbe napisane su pored njezina naziva u izbornicima i u njezinu okviru s objašnjenjem. Najčešće korištene:",
+            {
+              "points": [
+                "Ctrl+O: otvori datoteku",
+                "Ctrl+S: spremi; Ctrl+Shift+S: spremi kao",
+                "Ctrl+P: ispiši",
+                "Ctrl+Z i Ctrl+Y: poništi i ponovi",
+                "Ctrl+F: traži u dokumentu",
+                "Ctrl+W: zatvori karticu",
+                "Ctrl+Tab i Ctrl+Shift+Tab: sljedeća kartica i prethodna",
+                "Ctrl+, (zarez): Postavke",
+                "F1: ova Pomoć",
+                "Escape: izađi iz cijelog zaslona ili načina čitanja, ili spusti alat koji je u ruci"
+              ]
+            },
+            "Tipke vlastitih naredbi programa (kartice, Postavke, Pomoć) mijenjaju se u Postavke → Općenito → Prečaci na tipkovnici; tipke naredbi aplikacije u njezinom dijelu Postavki. Kliknite na tipke naredbe, a zatim pritisnite nove."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Korištenje ove Pomoći",
+          "body": [
+            "Pomoć pripada mjestu s kojeg ste je otvorili. Iz aplikacije vidite samo priručnik te aplikacije i naredbe kartice s koje ste došli. S početne stranice ili iz Postavki vidite \"O programu\" (kratki opis programa i svake aplikacije) i priručnik programa. Pomoć → O programu uvijek vodi do dijela \"O programu\".",
+            "Sadržaj se nalazi s lijeve strane; pretraživanje iznad njega pretražuje svaku temu, u naslovima i u tekstu.",
+            "Pomoć se otvara u zasebnoj kartici, tako da možete jednostavno prelaziti između nje i svog rada; tipka F1 ponovno je iznosi u prvi plan. Pod „Naredbe kartice s koje ste došli” naveden je svaki izbornik te kartice sa svim njegovim naredbama, tipkama i opisima: otvorite Pomoć iz kartice o kojoj imate pitanje."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Izbornik desnog klika u Windows Exploreru",
+          "body": [
+            "Postavke → Općenito → Windows Explorer → „Prikaži Syntelab Creative u izborniku desnog klika na datoteke i mape” dodaje stavke za datoteke koje program čita: „Pretvori u PDF pomoću PDF Organizera” i „Kombiniraj datoteke u PDF Organizeru”, svaku s ikonom PDF Organizera, te „Syntelab Dev”, koji se otvara sa strane sa stavkama Kontrolni zbrojevi, Usporedi i Hex prikaz.",
+            "One se dodaju samo za vašeg korisnika, bez administratorskih prava, a isključivanjem prekidača se uklanjaju. U Windowsima 11 nalaze se pod „Prikaži više mogućnosti”. Uvijek pokreću instalirani program: ako je premješten ili ponovno instaliran negdje drugdje, on ih ispravi pri pokretanju.",
+            {
+              "note": "Odabir opcije „Kombiniraj datoteke u PDF Organizeru” za više datoteka otvara zbirku s njima; „Pretvori u PDF pomoću PDF Organizera” otvara skupnu obradu tih datoteka."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privatnost, ažuriranja i kontakt",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Što ide na mrežu, a što nikada",
+          "body": [
+            "Program ništa ne prikuplja: nijedne podatke o korištenju, imena datoteka niti izvještaje o rušenju koji bi se slali sami od sebe.",
+            "On izlazi na mrežu samo u sljedećim slučajevima, svaki uz vaš zahtjev:",
+            {
+              "points": [
+                "Provjera ažuriranja i novosti (dvije male datoteke koje se čitaju sa syntelab.com), kada to zatražite ili, ako ste dopustili, pri pokretanju programa; te preuzimanje nove verzije, samo kada pritisnete „Ažuriraj”.",
+                "Spremanje web stranice kao PDF-a (PDF Organizer) i preuzimanje teksta s web stranice (Scribe), s adrese koju ste upisali.",
+                "Poveznica u dokumentu na koju kliknete: ona se prosljeđuje vašem pregledniku ili programu za poštu.",
+                "Povratne informacije i Podrška: otvaraju stranicu syntelab.com u vašem pregledniku."
+              ]
+            },
+            "Potpisivanje certifikatom i provjera potpisa obavljaju se na vašem računalu, bez izlaska na mrežu."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Ažuriranja",
+          "body": [
+            "Postavke → Općenito → Ažuriranja → „Provjeri ažuriranja”. Kada postoji novija verzija, prozor vas obavještava što je novo i nudi „Ažuriraj”.",
+            "„Ažuriraj” preuzima novu verziju, provjerava dolazi li doista od nas (mora biti potpisana našim ključem; sve ostalo se odbija) i instalira je preko trenutne. Vaše postavke se zadržavaju, a program se ponovno pokreće. Ništa se ne preuzima dok ne pritisnete gumb.",
+            "Ako se ažuriranje ne može instalirati na ovaj način (prenosna kopija, Linux paket, nema mreže), „Preuzmi” otvara stranicu za preuzimanje u vašem pregledniku; instalirajte novu verziju preko trenutne i vaše postavke će biti zadržane.",
+            "Opcija „Provjeravaj ažuriranja i novosti pri pokretanju programa” može se isključiti; ni u jednom slučaju ne šalju se nikakvi podaci o vama ili vašem računalu."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Povratne informacije i podrška",
+          "body": [
+            "Pomoć → Povratne informacije: zatražite novu aplikaciju, novu značajku ili promjenu, ili prijavite problem. Svaka poruka se pročita.",
+            "Pomoć → Podrška: program je besplatan; ovdje možete pomoći da se nastavi."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O programu Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "O programu Syntelab Creative",
+          "body": [
+            "Syntelab Creative je besplatan skup aplikacija za svakodnevni rad s dokumentima, tekstom i podacima, koji je izradila tvrtka Syntelab (syntelab.com). Počinje s četiri aplikacije: PDF Organizer, Scribe, Units i Dev. Ostale će im se pridružiti u istom prozoru.",
+            {
+              "points": [
+                "Uvijek besplatno.",
+                "Nema prikupljanja podataka: ništa o vama, vašem računalu ili vašem radu.",
+                "Ništa nije uskraćeno: nema plaćene verzije, nema zaključanih značajki, nema namjernih ograničenja. Jedina ograničenja su ono što današnja tehnologija može i ono što vaše računalo može podnijeti."
+              ]
+            },
+            "Nemamo financiranje. Program se izrađuje u našem slobodnom vremenu, onoliko koliko nam to vrijeme dopušta. U potpunosti nam je namjera izraditi kvalitetan softver, a to zahtijeva vrijeme i strpljenje: naše za izradu, a vaše dok program raste.",
+            "Program će postajati bolji sa svakom verzijom. Prijavljeni problemi se ispravljaju, a zatražene značajke se razmatraju za buduće nadogradnje.",
+            {
+              "note": "Vaši dokumenti ostaju na vašem računalu. Program ne prikuplja ništa o vama niti o vašem radu; pogledajte „Što ide na mrežu, a što nikada”."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Kako možete pomoći",
+          "body": [
+            "Postoje tri načina, a svaki od njih je značajan:",
+            {
+              "points": [
+                "Recite nam što mislite: Pomoć → Povratne informacije. Problem na koji ste naišli, nešto što nedostaje, nešto što je teže nego što bi trebalo biti. Pročitali ćemo svaku poruku.",
+                "Recite drugima o programu i onome što radimo. Što više ljudi koristi program, to ćemo imati više povratnih informacija, a tako vidimo što je stvarno važno. To nam također daje osjećaj da je naš rad cijenjen: naš i rad svih onih koji sudjeluju u projektu i sudjelovat će u njemu.",
+                "Podržite ga novčano, ako možete: Pomoć → Podržite nas. Time nam kupujete vrijeme za rad na programu."
+              ]
+            },
+            "Ništa od ovoga se od vas ne zahtijeva. Program je besplatan i uvijek će biti besplatan, u potpunosti, za sve."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "S čime je izgrađen",
+          "body": [
+            "Program se oslanja na rad mnogih ljudi. Ono što svaka aplikacija dijeli:",
+            {
+              "points": [
+                "Prozor i sve što vidite: Tauri, s web preglednikom sustava (WebView2 na Windowsima, WebKitGTK na Linuxu, WKWebView na macOS-u); napisan u TypeScriptu s Reactom.",
+                "Dio koji obavlja posao: napisan u Rustu.",
+                "Slova i ikone: Sansation, IBM Plex Sans i Font Awesome Free."
+              ]
+            },
+            "Ono što svaka aplikacija dodaje navedeno je na njezinoj stranici pod „O programu”. Zahvalni smo ljudima koji stoje iza ovih projekata."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Što još ne može",
+          "body": [
+            "Kako biste znali prije nego što počnete računati na to:",
+            {
+              "points": [
+                "Neki tekstovi još uvijek čekaju svoj prijevod. Do tada se prikazuju na engleskom jeziku, nikada kao kod.",
+                "Izbornik s desnim klikom u upravitelju datoteka trenutno je dostupan samo u Windows Exploreru.",
+                "Potpisivanje certifikatom trenutno radi na Windowsima; na Linuxu i macOS-u to će stići u kasnijoj verziji."
+              ]
+            },
+            "Ograničenja svake aplikacije nalaze se na njezinoj stranici pod „O programu”. Ako vam nešto od toga predstavlja prepreku, javite nam putem Pomoć → Povratne informacije: to nam pomaže odlučiti što dolazi prvo."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Na čemu radimo",
+          "body": [
+            "Četiri aplikacije će nastaviti rasti: ono što prijavite i zatražite putem Pomoć → Povratne informacije u velikoj mjeri odlučuje što dolazi prvo. Uz njih se pripremaju nove aplikacije. Početak ih ne prikazuje osim ako to želite: označite ih u njegovu izborniku „Prikaz” da biste ih ondje vidjeli kao „Uskoro”:",
+            {
+              "points": [
+                "Convert: pretvaranje datoteka iz jednog formata u drugi, uključujući uredske dokumente u PDF i obrnuto, bez potrebe za instalacijom drugog programa. Još nismo pronašli otvorenu tehnologiju koja doseže kvalitetu koju želimo, stoga će stići tek kada vas ne razočara; tamo gdje alati ne postoje, mi ćemo ih izgraditi.",
+                "Pixel: alati za slike, kao što su promjena veličine i kompresija, uklanjanje pozadine, boje i QR kodovi.",
+                "Metadata: pregled i uklanjanje skrivenih podataka iz fotografija, videozapisa i dokumenata prije nego što ih podijelite.",
+                "Wizard: nasumični birači i generatori: kolo za vrtnju, kockice, novčić, izvlačenje imena iz popisa."
+              ]
+            },
+            "U aplikacijama koje su već dostupne radimo na onome što je navedeno na njihovim stranicama „Što još ne može”: na primjer, pouzdani vremenski žig za potpise, potpisivanje certifikatom na Linuxu i macOS-u te provjera pravopisa u Scribeu.",
+            "Slijedit će i više opcija instalacije: Microsoft Store i winget na Windowsu, Flathub i Snap na Linuxu.",
+            {
+              "note": "Novosti o svakoj verziji nalaze se pod gumbom za novosti na bočnoj traci; Postavke → Općenito → Ažuriranja provjerava postoji li novija verzija."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

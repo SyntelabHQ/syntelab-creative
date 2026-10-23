@@ -1,0 +1,184 @@
+.view {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding-block: 6px;
+  padding-inline: 16px 8px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+}
+
+.summary {
+  flex: 1 1 160px;
+  font-weight: 600;
+}
+
+.problem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-block: 4px;
+  padding-inline: 16px 8px;
+  border-block-end: 1px solid var(--sc-border);
+  background: color-mix(in srgb, var(--sc-danger) 10%, var(--sc-surface));
+}
+
+.problemText {
+  flex: 1;
+}
+
+.warning {
+  display: flex;
+  color: var(--sc-danger);
+}
+
+.empty {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.hint {
+  max-width: 460px;
+  margin: 0 0 12px;
+  color: var(--sc-muted);
+}
+
+.cards {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 16px;
+  margin: 0;
+  padding: 24px;
+  overflow-y: auto;
+  background: var(--sc-surface-2);
+  list-style: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 10px 6px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-l);
+  background: var(--sc-surface);
+  cursor: grab;
+}
+
+.card[data-selected='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.card[data-dragged='true'] {
+  opacity: 0.45;
+}
+
+/* Where a dragged card would land: a line in the middle of the gap, so the
+   same place looks the same from either card (gap 16px, border 1px). */
+.card[data-drop]::before {
+  content: '';
+  position: absolute;
+  inset-block: 8px;
+  width: 4px;
+  border-radius: var(--sc-radius-xs);
+  background: var(--sc-accent);
+}
+
+.card[data-drop='before']::before {
+  inset-inline-start: -11px;
+}
+
+.card[data-drop='after']::before {
+  inset-inline-end: -11px;
+}
+
+/* The place of the card in the combined file. */
+.position {
+  position: absolute;
+  inset-block-start: 8px;
+  inset-inline-start: 10px;
+  min-width: 22px;
+  padding-inline: 6px;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-accent-soft);
+  color: var(--sc-text);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+
+.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  cursor: pointer;
+}
+
+.open:hover .picture {
+  outline: 2px solid var(--sc-accent);
+}
+
+.picture {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: var(--sc-paper);
+  box-shadow: var(--sc-shadow-s);
+}
+
+.name {
+  max-width: 100%;
+  overflow: hidden;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pages {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Compact, so a card can be as small as its page. */
+.tools > button {
+  width: var(--sc-control-height-compact);
+  min-height: var(--sc-control-height-compact);
+}

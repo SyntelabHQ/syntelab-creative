@@ -1,0 +1,29 @@
+/* One Units tab: whatever it shows takes all of it. */
+.tab {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: var(--sc-bg);
+  /* Narrow layouts are decided by the room the tab has, not by the window. */
+  container-type: inline-size;
+}
+
+/* The question asked before a table with values is left. */
+.leave {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 460px;
+}
+
+.leave p {
+  margin: 0;
+}
+
+.leaveActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}

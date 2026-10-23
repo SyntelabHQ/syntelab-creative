@@ -1,0 +1,154 @@
+/* Shared by the windows that draw over pages: page numbers and watermark. */
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.fields {
+  display: flex;
+  flex: 1 1 240px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 120px 28px;
+  align-items: center;
+  gap: 8px;
+}
+
+.row select {
+  grid-column: 2 / 4;
+  min-height: 36px;
+}
+
+.text {
+  min-height: var(--sc-control-height);
+  padding-inline: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+}
+
+.sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.textRow {
+  display: flex;
+  gap: 8px;
+}
+
+.textRow .text {
+  flex: 1;
+  min-width: 0;
+}
+
+.colorBox {
+  width: 44px;
+  height: var(--sc-control-height);
+  padding: 2px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  cursor: pointer;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 1fr 120px 44px;
+  align-items: center;
+  gap: 8px;
+}
+
+.amount {
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+}
+
+.placeRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Nine places on the page: the corners, the sides, the middle. */
+.placeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 22px);
+  gap: 3px;
+  padding: 4px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+}
+
+.placeCell {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface-2);
+  cursor: pointer;
+}
+
+.placeCell[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent);
+}
+
+/* The six places of a page number: three along the top, three along the bottom. */
+.numberPlaces {
+  display: grid;
+  grid-template-columns: repeat(3, 22px);
+  gap: 16px 3px;
+  padding: 4px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+}
+
+.fontRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.fontRow select {
+  max-width: 170px;
+}
+
+.fontRow :global([aria-pressed='true']) {
+  background: var(--sc-accent-soft);
+}
+
+/* A name and, at the far end, what is chosen for it. */
+.pair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+}
+
+.pair select {
+  max-width: 200px;
+}
+
+/* The text of a page number written by hand, with what stands for the numbers under it. */
+.customFormat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}

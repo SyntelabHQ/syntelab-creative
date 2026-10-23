@@ -1,0 +1,41 @@
+{
+  "id": "angle",
+  "category": "scientific",
+  "icon": "circle-half-stroke",
+  "base": "degree",
+  "startsWith": ["degree","radian"],
+  "decimals": 4,
+  "groups": [
+    { "id": "common", "color": "#2563eb" },
+    { "id": "historical", "color": "#dc2626" },
+    { "id": "navigation", "color": "#ea580c" },
+    { "id": "astronomy", "color": "#9333ea" },
+    { "id": "specialized", "color": "#059669" }
+  ],
+  "units": [
+    {"id":"degree","symbol":"°","group":"common","factor":"1","popular":true},
+    {"id":"radian","symbol":"rad","group":"common","factor":"57.29577951308232","popular":true},
+    {"id":"gradian","symbol":"grad","group":"common","factor":"0.9","popular":true},
+    {"id":"turn","symbol":"turn","group":"common","factor":"360","popular":true},
+    {"id":"revolution","symbol":"rev","group":"common","factor":"360","popular":true},
+    {"id":"circle","symbol":"circle","group":"common","factor":"360"},
+    {"id":"right-angle","symbol":"∟","group":"common","factor":"90","popular":true},
+    {"id":"minute-arc","symbol":"′","group":"historical","factor":"1/60","popular":true},
+    {"id":"second-arc","symbol":"″","group":"historical","factor":"1/3600","popular":true},
+    {"id":"milliarcsecond","symbol":"mas","group":"historical","factor":"1/3600000"},
+    {"id":"microarcsecond","symbol":"µas","group":"historical","factor":"1/3600000000","decimals":1},
+    {"id":"point-compass","symbol":"point","group":"navigation","factor":"11.25","popular":true},
+    {"id":"mil-nato","symbol":"mil","group":"navigation","factor":"0.05625","popular":true},
+    {"id":"mil-ussr","symbol":"mil USSR","group":"navigation","factor":"0.06"},
+    {"id":"mil-sweden","symbol":"streck","group":"navigation","factor":"2/35"},
+    {"id":"binary-degree","symbol":"brad","group":"navigation","factor":"1.40625"},
+    {"id":"hour-angle","symbol":"h","group":"astronomy","factor":"15","popular":true},
+    {"id":"minute-time","symbol":"min","group":"astronomy","factor":"0.25"},
+    {"id":"second-time","symbol":"s","group":"astronomy","factor":"1/240"},
+    {"id":"sign","symbol":"sign","group":"astronomy","factor":"30","popular":true},
+    {"id":"sextant","symbol":"sextant","group":"specialized","factor":"60"},
+    {"id":"octant","symbol":"octant","group":"specialized","factor":"45"},
+    {"id":"quadrant","symbol":"quadrant","group":"specialized","factor":"90"},
+    {"id":"percent-grade","symbol":"%","group":"specialized","formula":{"kind":"grade"},"popular":true}
+  ]
+}

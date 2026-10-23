@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Öffnen und lesen",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Ein Dokument öffnen",
+          "body": [
+            "Datei → Öffnen (Strg+O) öffnet eine PDF-Datei in einem eigenen Tab. Mit „Mehrere Dateien gleichzeitig öffnen“ wird jede ausgewählte Datei in einem eigenen Tab geöffnet.",
+            "Auch Dateien, die keine PDFs sind, lassen sich als Seiten öffnen: Bilder (PNG, JPEG, TIFF, WebP und viele weitere), Text- und Webdateien, E-Books, XPS- und Office-Dokumente. Ein solches Dokument ist noch nirgendwo gespeichert; bei „Speichern“ werden Sie nach dem Speicherort gefragt.",
+            {
+              "note": "Office-Dokumente (Word, Excel, PowerPoint, OpenDocument) werden mit Word, Excel oder PowerPoint oder mit LibreOffice konvertiert – je nachdem, was auf dem Computer installiert ist. Ohne eines dieser Programme können sie nicht geöffnet werden."
+            },
+            "Dateien, die auf einen leeren Tab gezogen werden, werden in einer Zusammenstellung gesammelt. Werden sie auf ein Dokument gezogen, werden ihre Seiten diesem Dokument hinzugefügt.",
+            "Unter Windows kann PDF Organizer die App sein, die PDF-Dateien per Doppelklick öffnet: Auf der Startseite öffnet „Als Standard festlegen“ die Windows-Einstellungen, in denen Sie Syntelab Creative für PDF-Dateien auswählen."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Seiten anzeigen",
+          "body": [
+            "Im Menü „Ansicht“ legen Sie fest, wie das Dokument angezeigt wird. Die Datei selbst wird dadurch nicht verändert.",
+            {
+              "points": [
+                "Zoom: vergrößern, verkleinern, Originalgröße, Seite einpassen, Breite einpassen oder Höhe einpassen. Mit Strg und dem Mausrad können Sie ebenfalls zoomen.",
+                "Seitenanzeige: eine oder zwei Seiten nebeneinander, mit oder ohne Deckblatt, oder alle Seiten fortlaufend als langen Streifen anzeigen.",
+                "Hilfslinien: Lineale und Raster in der Maßeinheit, die in den Einstellungen ausgewählt wurde.",
+                "„Miniaturen anzeigen“ zeigt kleine Seiten am Rand. Klicken Sie auf eine Seite, um zu ihr zu wechseln. Die Lesezeichen des Dokuments befinden sich im selben Bereich.",
+                "„Lesemodus“ blendet die Werkzeuge aus; „Vollbildmodus“ blendet alles außer der Seite aus. Mit Esc verlassen Sie beide Modi."
+              ]
+            },
+            "Die Leiste über den Seiten (die Schnellzugriffsleiste) enthält die Seitennummer, den Zoom und die Schaltflächen, die Sie in den Einstellungen ausgewählt haben."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Text suchen",
+          "body": [
+            "Bearbeiten → Im Dokument suchen (Strg+F): Geben Sie ein Wort oder eine Formulierung ein. Die Fundstellen werden auf den Seiten markiert. Mit den Pfeilen wechseln Sie von einer zur nächsten.",
+            {
+              "note": "Ein gescanntes Dokument besteht aus Seitenbildern und enthält zunächst keinen durchsuchbaren Text. Dieser muss erst erkannt werden. Siehe „Text erkennen (OCR)“."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Dokumenteigenschaften",
+          "body": [
+            "Datei → Dokumenteigenschaften zeigt die Angaben des Dokuments: Titel, Autor, Erstellungs- und Änderungsdatum, Seitenzahl und Dateigröße."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Speichern, drucken und senden",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Speichern und Speichern unter",
+          "body": [
+            "Nichts, was Sie tun, ändert die Datei auf dem Datenträger, bis Sie speichern. Bis dahin können Sie jeden Schritt rückgängig machen (Strg+Z) und wiederholen (Strg+Y).",
+            {
+              "points": [
+                "„Speichern“ (Strg+S) überschreibt die Datei mit dem aktuellen Dokument.",
+                "„Speichern unter“ (Strg+Umschalt+S) speichert das Dokument in einer neuen Datei. Diese ersetzt anschließend den Tab; die alte Datei bleibt unverändert."
+              ]
+            },
+            "Wenn eine andere Anwendung die Datei geöffnet hat, kann sie nicht überschrieben werden. Die App meldet das und behält Ihre Änderungen, damit Sie sie unter einem anderen Namen speichern können.",
+            {
+              "note": "Wenn Sie ein geändertes, mit einem Zertifikat signiertes Dokument überschreiben, werden dessen Signaturen entfernt. Die App fragt vorher nach und bietet „Als neue Datei speichern“ an. Diese Rückfrage lässt sich unter Einstellungen → Signaturen ausschalten."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "PDF erstellen",
+          "body": [
+            "Datei → PDF erstellen legt ein neues Dokument an:",
+            {
+              "points": [
+                "aus einer oder mehreren Dateien: zusammengefasst in einer PDF-Datei oder jeweils in einer eigenen PDF-Datei;",
+                "aus einer Webseite unter der eingegebenen Adresse (die Seite wird mit dem auf dem Computer installierten Browser gespeichert);",
+                "aus dem Inhalt der Zwischenablage;",
+                "aus leeren Seiten im ausgewählten Format."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "In ein anderes Format exportieren",
+          "body": [
+            "Datei → Exportieren speichert das Dokument in einem anderen Format: Word- oder OpenDocument-Text, reiner Text, Webseite, XML, Seitenbilder (PNG, JPEG, TIFF, SVG) oder PostScript. Für Bilder können Sie die Auflösung festlegen.",
+            "Das Dokument selbst bleibt eine PDF-Datei; beim Export wird eine neue Datei erstellt.",
+            {
+              "note": "Text lässt sich nur exportieren, wenn das Dokument Text enthält. Erkennen Sie zuerst den Text eines Scans."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Drucken",
+          "body": [
+            "Datei → Drucken (Strg+P) druckt das Dokument in der aktuellen Anordnung einschließlich Ihrer Zeichnungen. Wählen Sie die Seiten und das Papier, Hoch- oder Querformat sowie, ob die Seiten an das Blatt angepasst oder in Originalgröße gedruckt werden sollen. Anschließend fragt das Druckfenster des Systems nach dem Drucker.",
+            "Das Papierformat, die Ausrichtung und die Skalierung, mit denen das Druckfenster startet, legen Sie unter Einstellungen → Drucken fest."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Teilen",
+          "body": [
+            "Datei → Teilen übergibt das Dokument an das Systemfenster „Teilen“, etwa für E-Mail, ein Gerät in der Nähe oder andere Apps. Das Dokument wird im aktuellen Zustand einschließlich ungespeicherter Änderungen geteilt."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Seiten organisieren",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Ansicht „Organisieren“",
+          "body": [
+            "Organisieren → Seiten organisieren zeigt alle Seiten in einem Raster. Auf dem Datenträger wird erst nach dem Speichern etwas geändert.",
+            {
+              "points": [
+                "Auswählen: Klicken Sie auf eine Seite. Mit Strg+Klick fügen Sie eine Seite hinzu, mit Umschalt+Klick einen zusammenhängenden Bereich. Im Menü finden Sie „Alle Seiten auswählen“, „Auswahl aufheben“, „Ungerade Seiten auswählen“ und „Gerade Seiten auswählen“.",
+                "Verschieben: Ziehen Sie die ausgewählten Seiten an die gewünschte Stelle oder verwenden Sie „Nach links“ und „Nach rechts“.",
+                "Drehen: „Ausgewählte nach links drehen“ und „Ausgewählte nach rechts drehen“ drehen die Auswahl. „Alle Seiten nach links drehen“ und „Alle Seiten nach rechts drehen“ drehen sämtliche Seiten.",
+                "Löschen: Drücken Sie die Entf-Taste oder wählen Sie „Seiten löschen“. Ein Dokument muss mindestens eine Seite behalten.",
+                "Kopieren, ausschneiden und einfügen (Strg+C, Strg+X, Strg+V): Seiten können im selben Dokument oder in einem anderen geöffneten Dokument eingefügt werden.",
+                "Größe: Der Schieberegler oben macht die Seiten größer oder kleiner; ebenso Strg + Mausrad über den Seiten sowie Vergrößern und Verkleinern (Strg+= und Strg+-). Die Größe wird gespeichert."
+              ]
+            },
+            "Dieselben Befehle funktionieren auch ohne Raster direkt auf der angezeigten Seite."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Seiten entnehmen und Dokumente teilen",
+          "body": [
+            "Organisieren → Seiten extrahieren öffnet die ausgewählten Seiten als neues, noch nicht gespeichertes Dokument in einem eigenen Tab. Sie können auch jede Seite als separate Datei speichern lassen und festlegen, ob die Seiten aus diesem Dokument entfernt werden.",
+            "Organisieren → Dokument aufteilen speichert das Dokument als mehrere kleinere Dateien. Dieses Dokument bleibt unverändert.",
+            "Die Namen der neuen Dokumente richten sich nach den Mustern unter Einstellungen → Namen neuer Dokumente.",
+            {
+              "note": "Zertifikatsignaturen werden nicht in entnommene oder geteilte Dokumente übernommen: Eine Signatur gilt nur für die Datei, für die sie erstellt wurde."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Seiten einfügen und ersetzen",
+          "body": [
+            {
+              "points": [
+                "Organisieren → Seiten einfügen fügt die Seiten einer anderen Datei (PDF, Bild, Text- oder Office-Dokument) nach der ausgewählten Seite oder am Ende ein.",
+                "Organisieren → Seiten ersetzen setzt die Seiten einer anderen Datei an die Stelle der ausgewählten Seiten.",
+                "Einfügen → Leere Seite fügt eine leere Seite im Format der benachbarten Seite ein."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Seiten zuschneiden und Größe ändern",
+          "body": [
+            "Bearbeiten → Seiten zuschneiden schneidet Seitenränder anhand von eingegebenen oder gezogenen Rändern ab. Aus der Datei wird nichts entfernt; sichtbar ist lediglich ein kleinerer Ausschnitt der Seiten.",
+            "Bearbeiten → Seitengröße ändern setzt Seiten auf ein anderes Papierformat (A4, Letter und weitere). Der Inhalt kann passend skaliert oder in Originalgröße beibehalten und an einer von neun Positionen auf dem neuen Blatt platziert werden.",
+            "Bei beiden Befehlen wählen Sie die Seiten aus: alle, die ausgewählten, einen Bereich, ungerade oder gerade Seiten."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dateien zusammenführen",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Die Zusammenstellung",
+          "body": [
+            "Zusammenführen → Neue Zusammenstellung öffnet einen Bereich, in dem Sie Dateien sammeln und zu einer PDF-Datei zusammenführen können.",
+            {
+              "steps": [
+                "Fügen Sie Dateien über „Dateien hinzufügen“ hinzu oder ziehen Sie sie auf die Zusammenstellung. PDFs, Bilder, Text- und Office-Dokumente lassen sich mischen.",
+                "Ziehen Sie die Karten in die gewünschte Reihenfolge oder verwenden Sie die Pfeile auf den einzelnen Karten.",
+                "Öffnen Sie eine Karte, um auszuwählen, welche Seiten davon übernommen werden.",
+                "„Dateien zusammenführen“ schreibt sie in dieser Reihenfolge als neues Dokument in einen eigenen Tab."
+              ]
+            },
+            "Die Dateien selbst werden nicht verändert.",
+            "Der Schieberegler oben macht die Seiten auf den Karten größer oder kleiner; ebenso Strg + Mausrad sowie Vergrößern und Verkleinern (Strg+= und Strg+-). Die Größe wird gespeichert."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Auf Seiten schreiben und zeichnen",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Die Werkzeuge",
+          "body": [
+            "Die Zeichenwerkzeuge öffnen sich je nach Einstellung als Seitenleiste neben der Seite, als Raster mit Schaltflächen oder als Liste mit Namen. Ziehen Sie mit einem ausgewählten Werkzeug über die Seite oder klicken Sie darauf. Mit Esc legen Sie das Werkzeug wieder ab.",
+            {
+              "points": [
+                "Text: Klicken Sie und schreiben Sie. Schriftart, Größe, Farbe, Fett, Kursiv und Ausrichtung legen Sie im Bedienfeld fest.",
+                "Bild: Wählen Sie ein Bild aus und ziehen Sie es an die gewünschte Stelle und auf die passende Größe.",
+                "Formen: Rechteck, Ellipse, Linie, Pfeil, Häkchen, Kreuz und Punkt.",
+                "Hervorheben: Ziehen Sie über den Bereich, der hervorgehoben werden soll. Der darunterliegende Inhalt bleibt lesbar."
+              ]
+            },
+            "Mit „Auswählen, verschieben und Größe ändern“ können Sie eine Markierung erneut auswählen: Ziehen Sie sie, ziehen Sie an ihren Ecken, drehen Sie sie am Griff, ändern Sie ihre Farben im Bedienfeld oder löschen Sie sie mit der Entf-Taste. Markierungen lassen sich kopieren und einfügen, auch auf andere Seiten.",
+            "Alles, was Sie zeichnen, wird beim Speichern in die Datei übernommen."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Text und Bilder des Dokuments ändern",
+          "body": [
+            "Das Werkzeug „Dokumenttext und -bilder bearbeiten“ hebt hervor, welche Inhalte zur Seite selbst gehören. Klicken Sie auf eine Textzeile, um sie umzuschreiben, oder auf ein Bild, um es zu verschieben, in der Größe zu ändern, zu drehen oder zu löschen.",
+            {
+              "note": "Sie ändern jeweils nur eine Textzeile oder ein Bild. Absätze werden nicht neu umbrochen, wenn eine Zeile länger wird. Ein Bild, das ein anderes überlagert, wird zusammen mit diesem ausgewählt. Für umfangreiche Änderungen bearbeiten Sie das Dokument im Programm, in dem es erstellt wurde."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Inhalte schwärzen",
+          "body": [
+            "Weitere Werkzeuge → Schwärzen entfernt Inhalte dauerhaft, die nicht lesbar sein sollen: Ziehen Sie auf einer beliebigen Seite ein schwarzes Feld darüber. Beim Speichern werden der Text und die Bilder unter dem Feld aus der Datei entfernt und nicht nur verdeckt.",
+            {
+              "note": "Speichern Sie das geschwärzte Dokument unter einem neuen Namen und bewahren Sie das Original sicher auf. Geschwärzte Inhalte lassen sich nicht wiederherstellen."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Wasserzeichen",
+          "body": [
+            "Bearbeiten → Wasserzeichen fügt auf den ausgewählten Seiten Text oder ein Bild ein: gerade oder schräg, an einer von neun Positionen sowie in der von Ihnen festgelegten Größe und Deckkraft. Auf jeder Seite ist es anschließend eine Markierung wie jede andere und lässt sich weiterhin verschieben oder entfernen."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Seitennummern, Kopf- und Fußzeilen, Bates-Nummern",
+          "body": [
+            {
+              "points": [
+                "Bearbeiten → Seitennummern: Wählen Sie das Format (1, 1 / 12, Seite 1 und weitere), die Position und die Seiten aus, die nummeriert werden sollen.",
+                "Einfügen → Kopf- und Fußzeile: Text an einer von sechs Positionen. Darin steht {page} für die Seitennummer, {pages} für die Seitenanzahl, {date} für das heutige Datum und {file} für den Dokumentnamen.",
+                "Einfügen → Bates-Nummerierung: fortlaufende Nummern mit einem vorangestellten oder nachgestellten Wort (ABC000123), wie sie für Fallakten verwendet werden."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Links, Lesezeichen und angehängte Dateien",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Links",
+          "body": [
+            "Einfügen → Link: Ziehen Sie über den Bereich, der anklickbar sein soll, und geben Sie anschließend das Ziel an: eine Webadresse oder eine Seite in diesem Dokument.",
+            "Links im Dokument funktionieren beim Lesen: Ein Klick auf einen Seitenlink führt dorthin; eine Web- oder E-Mail-Adresse wird an Ihren Browser oder Ihr E-Mail-Programm übergeben."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Lesezeichen",
+          "body": [
+            "Einfügen → Neues Lesezeichen: Klicken Sie auf die Zielstelle und geben Sie einen Titel ein. Über Einfügen → Lesezeichen öffnen Sie die Liste. Dort können Sie ein Lesezeichen umbenennen oder entfernen. Die Änderungen werden beim Speichern übernommen."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Angehängte Dateien",
+          "body": [
+            "Einfügen → Datei anhängen: Wählen Sie eine Datei und klicken Sie auf die Stelle, an der die Büroklammer erscheinen soll. Sie können einen Namen und einen Autor angeben, die Büroklammer einfärben, ihre Größe ändern und sie drehen. Beim Speichern wird die Datei in der PDF-Datei aufbewahrt.",
+            "Einfügen → Angehängte Dateien listet die im Dokument enthaltenen Dateien auf. Jede Datei lässt sich auf dem Datenträger speichern oder entfernen. Ein Klick auf eine Büroklammer öffnet dieselbe Liste."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formulare",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Ein Formular ausfüllen",
+          "body": [
+            "Einfügen → Formular ausfüllen zeigt die Formularfelder des Dokuments. Geben Sie Text in Textfelder ein, markieren Sie Kontrollkästchen und wählen Sie Einträge aus Listen aus. Ihre Eingaben werden beim Speichern in die Datei übernommen."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Ein Formular erstellen",
+          "body": [
+            "Über das Menü „Einfügen“ können Sie jedem Dokument Formularfelder hinzufügen: ein Textfeld, ein Kontrollkästchen, Optionsfelder (von denen eines ausgewählt werden kann), eine Auswahlliste und ein leeres Signaturfeld für die unterzeichnende Person.",
+            "Ziehen Sie auf der Seite den Bereich auf, in dem das Feld platziert werden soll. Wie andere Markierungen lässt sich das Feld bis zum Speichern verschieben und in der Größe ändern; danach ist es Bestandteil des Formulars."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Signieren",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Eine gezeichnete Unterschrift hinzufügen",
+          "body": [
+            "Signieren → Unterschrift hinzufügen fügt ein Bild Ihrer Unterschrift auf der Seite ein: Sie können sie hier mit einem Stift Ihrer Wahl zeichnen, in einer Schriftart eingeben oder aus einem Bild übernehmen (bei einem Foto eines unterschriebenen Blatts mit „Nur Stiftstriche beibehalten“). Darunter kann das Datum stehen.",
+            "Ziehen Sie auf der Seite den Bereich auf, an dem die Unterschrift erscheinen soll. Verwendete Unterschriften werden auf diesem Computer gespeichert und können erneut verwendet werden.",
+            {
+              "note": "Dies ist ein Bild und belegt nicht zuverlässig, wer es eingefügt hat. Eine Unterschrift, die die Identität der unterzeichnenden Person bestätigt und spätere Änderungen erkennbar macht, wird mit einem Zertifikat erstellt."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Mit einem Zertifikat signieren",
+          "body": [
+            "Signieren → Mit Zertifikat signieren erstellt eine digitale Signatur: Sie weist aus, wer unterschrieben hat, und versiegelt das Dokument, sodass spätere Änderungen erkennbar sind.",
+            {
+              "steps": [
+                "Ziehen Sie auf der Seite den Bereich auf, in dem die Signatur erscheinen soll (zuvor wird ein Hinweis angezeigt, den Sie ausschalten können). Wenn auf den Seiten nichts sichtbar sein soll, wählen Sie stattdessen „Signieren, ohne die Signatur auf einer Seite anzuzeigen“.",
+                "Wählen Sie das Zertifikat: eines auf dem Computer (eine Karte oder ein Token erscheint in der Liste, sobald es im Lesegerät steckt) oder eine .pfx- bzw. .p12-Datei mit Kennwort. Klicken Sie auf „Weiter“.",
+                "Wählen Sie das Erscheinungsbild der Signatur. Unter „Grund und Ort“ können Sie angeben, warum und wo Sie signieren. Diese Angaben werden in die Signatur aufgenommen und erscheinen auch auf der Seite, wenn das gewählte Erscheinungsbild sie enthält. Aktivieren Sie „Dokument nach dem Signieren sperren“, wenn danach niemand mehr signieren oder etwas ändern soll. Lassen Sie „Vertrauenswürdige Zeit hinzufügen (Zeitstempel)“ aktiviert, damit ein Zeitstempeldienst bestätigt, wann Sie signiert haben.",
+                "Klicken Sie auf „Signieren“ und wählen Sie anschließend den Speicherort der signierten Datei. Bei einem Token werden Sie jetzt nach der PIN gefragt."
+              ]
+            },
+            "Die signierte Datei wird anstelle des bisherigen Dokuments geöffnet. Die App speichert weder Kennwörter noch PINs.",
+            {
+              "note": "Eine qualifizierte Signatur wird auf diese Weise mit einem qualifizierten Zertifikat auf einer Karte oder einem Token erstellt. Das Signieren erfolgt auf Ihrem Computer; nur der Zeitstempel und die Prüfung Ihres Zertifikats laufen über das Internet, und dabei werden Hashwerte und die Seriennummer des Zertifikats gesendet, nie das Dokument."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Erscheinungsbilder von Signaturen",
+          "body": [
+            "Ein Erscheinungsbild legt fest, wie eine Zertifikatssignatur auf der Seite aussieht. Speichern Sie mehrere unter eigenen Namen, zum Beispiel eines für die Unterschrift im Namen eines Unternehmens und eines für Ihren eigenen Namen.",
+            {
+              "points": [
+                "Bild: keines, aus einer Datei (Stempel oder eingescannte Unterschrift) oder hier gezeichnet.",
+                "Angezeigter Text: Name, Datum, Grund und Ort, jeweils mit oder ohne Bezeichnung.",
+                "Eigene Zeilen unter dem Namen, etwa Funktion und Unternehmen.",
+                "„Standardtext“ ist immer enthalten: wer und wann unterschrieben hat."
+              ]
+            },
+            "Im Signierfenster finden Sie „Neu…“, „Bearbeiten…“ und „Löschen“. Das zuletzt verwendete Erscheinungsbild wird zuerst vorgeschlagen. Erscheinungsbilder werden auf diesem Computer gespeichert."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Mehrere Signaturen und Sperren",
+          "body": [
+            "Ein Dokument kann nacheinander von mehreren Personen signiert werden. Öffnen Sie die signierte Datei und unterschreiben Sie sie, ohne etwas zu ändern. Ihre Signatur wird an die Datei angehängt; die vorherigen Signaturen bleiben gültig.",
+            "„Dokument nach dem Signieren sperren“ (standardmäßig deaktiviert) schließt das Dokument: Danach kann niemand mehr signieren und es sind keine Änderungen möglich. Diese Aktion kann nicht rückgängig gemacht werden.",
+            {
+              "note": "Wenn Sie ein signiertes Dokument vor einer erneuten Signatur ändern, muss es neu geschrieben werden; die bisherigen Signaturen werden dabei entfernt. Das Signierfenster weist Sie darauf hin. Um sie zu behalten, öffnen Sie die Datei erneut und signieren Sie sie, ohne Änderungen vorzunehmen."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Zeitstempel",
+          "body": [
+            "Ein Zeitstempel ist die signierte Bestätigung eines Zeitstempeldienstes, wann etwas vorlag. Ansonsten stammt die Zeit in einer Signatur von der Uhr des Computers des Unterzeichners, die jeder verstellen kann. Ein Zeitstempel beweist den Zeitpunkt und sorgt dafür, dass die Signatur auch nach Ablauf des Zertifikats nachweisbar bleibt (PAdES B-T).",
+            {
+              "points": [
+                "Signaturen erhalten einen Zeitstempel, wenn im Signierfenster „Vertrauenswürdige Zeit hinzufügen (Zeitstempel)“ aktiviert ist. Unter Einstellungen → Signaturen legen Sie fest, ob die Option anfangs aktiviert ist – hier und in der Stapelverarbeitung.",
+                "Signieren → Zeitstempel hinzufügen versieht das ganze Dokument mit einem eigenen Zeitstempel, ohne Zertifikat: Er beweist, dass das Dokument genau in dieser Form zu diesem Zeitpunkt vorlag. Es wird als neue Datei gespeichert; vorhandene Signaturen der Datei bleiben gültig."
+              ]
+            },
+            "Voreingestellt ist der Dienst von DigiCert (http://timestamp.digicert.com), kostenlos und von Adobe Reader und Windows als vertrauenswürdig eingestuft; einen anderen können Sie unter Einstellungen → Signaturen festlegen. Er erhält nur einen Hashwert (SHA-256), nie das Dokument. Eine Internetverbindung ist erforderlich. Wenn eine Signatur einen Zeitstempel erhält, wird außerdem der Aussteller Ihres Zertifikats gefragt, ob das Zertifikat noch gültig ist, und seine Antwort wird in der Signatur gespeichert (Langzeitvalidierung): Adobe Reader kann die Signatur dann als gültig anzeigen, jetzt und nach Ablauf des Zertifikats.",
+            {
+              "note": "Ist der Zeitstempeldienst nicht erreichbar, wird nichts signiert oder geschrieben: Versuchen Sie es erneut oder deaktivieren Sie den Zeitstempel, um ohne ihn zu signieren."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Signaturen prüfen",
+          "body": [
+            "Signieren → Signaturen überprüfen listet alle Zertifikatssignaturen der Datei auf: wer unterschrieben hat, wer das Zertifikat ausgestellt hat, wann sowie den Grund und den Ort. Außerdem sehen Sie:",
+            {
+              "points": [
+                "ob das Dokument seit dieser Signatur unverändert ist (eine später hinzugefügte Signatur gilt nicht als Änderung);",
+                "ob die Signatur das Dokument sperrt;",
+                "ob dieser Computer der Zertifizierungsstelle hinter dem Zertifikat vertraut und ob das Zertifikat heute gültig ist;",
+                "die durch den Zeitstempel bestätigte Zeit und den bestätigenden Dienst, sofern vorhanden. Ein Zeitstempel des ganzen Dokuments wird ebenfalls aufgeführt, mit eigener Prüfung."
+              ]
+            },
+            "Geprüft wird die zuletzt gespeicherte Version der Datei. Die Prüfung erfolgt auf diesem Computer ohne Internetverbindung. Ein Klick auf eine Signatur auf einer Seite öffnet diese Liste bei dieser Signatur. Unter jeder Signatur öffnet „Zertifikat anzeigen“ das Windows-Fenster des Zertifikats (seine Kette und alle Details; von dort aus sorgt „Zertifikat installieren“ dafür, dass dieser Computer einem Zertifikat vertraut, das Sie kennen), und „Validieren“ fragt – nur wenn Sie darauf klicken – online beim Aussteller des Zertifikats nach, ob das Zertifikat widerrufen wurde."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Weitere Werkzeuge",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Text erkennen (OCR)",
+          "body": [
+            "Weitere Werkzeuge → Text erkennen (OCR) liest die Wörter gescannter Seiten und fügt sie unsichtbar in die Seiten ein. So kann das Dokument durchsucht und sein Text kopiert oder exportiert werden. Das Aussehen der Seiten ändert sich nicht.",
+            "Aktivieren Sie nur die Sprachen, in denen die Seiten verfasst sind. Seiten, die bereits Text enthalten, bleiben unverändert.",
+            {
+              "note": "Die Texterkennung übernimmt die separat installierte freie Tesseract-Engine. Fehlt sie, zeigt das Fenster den Installationsbefehl für Windows an."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Dateigröße verringern",
+          "body": [
+            "Weitere Werkzeuge → Komprimieren speichert das Dokument als kleinere Datei, indem Fotos und Scans mit weniger Bildpunkten gespeichert werden. Es gibt drei Komprimierungsstufen; Text und Zeichnungen bleiben gleich scharf. Bei einem Dokument mit wenigen Bildern fällt die Einsparung gering aus."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Zwei Dokumente vergleichen",
+          "body": [
+            "Weitere Werkzeuge → Dokumente vergleichen: Wählen Sie eine andere PDF-Datei aus. Beide Dokumente werden Seite für Seite nebeneinander angezeigt. Seiten mit abweichendem Text werden markiert und die Zeilen aufgelistet, die jeweils nur in einem Dokument vorkommen."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Stapelverarbeitung: viele Dateien auf einmal",
+          "body": [
+            "Weitere Werkzeuge → Stapelverarbeitung führt mehrere Aktionen für viele Dateien in einem eigenen Tab aus. Für jedes Ergebnis wird eine neue Datei angelegt. Würden Ergebnisse Dateien ersetzen, die bereits im Ordner liegen (Ihre eigenen Dateien, wenn sie ohne Namenszusatz in ihrem eigenen Ordner gespeichert werden), werden Sie zuerst gefragt, ob Sie sie ersetzen, überspringen oder abbrechen möchten. Eine Datei wird erst ersetzt, wenn ihr Ergebnis vollständig ist; eine geöffnete Datei (in einem Tab hier oder in einem anderen Programm) bleibt unverändert und wird als nicht erledigt markiert.",
+            {
+              "steps": [
+                "Fügen Sie links die Dateien hinzu: über „Dateien hinzufügen“, „Ordner hinzufügen“ (einschließlich seiner Unterordner) oder per Ziehen und Ablegen.",
+                "Wählen Sie rechts die gewünschten Aktionen aus. Jede Datei wird in jedem Fall zu einer PDF-Datei. Zusätzlich können Sie Seiten drehen, Text erkennen, Kopf- und Fußzeilen, Wasserzeichen oder Seitennummern hinzufügen, Dateien verkleinern, mit einem Zertifikat signieren oder in ein anderes Format exportieren. Die Zahlen zeigen die Reihenfolge der Aktionen.",
+                "Legen Sie fest, was gespeichert wird: eine Datei pro Ausgangsdatei oder alle Dateien zusammen in einer PDF-Datei (in der Reihenfolge der Liste). Wählen Sie außerdem den Zielordner für die Ergebnisse. Wenn alle Dateien aus einem Ordner stammen, wird dieser Ordner für Sie gewählt, bis Sie einen anderen wählen; andernfalls ist es der zuletzt gewählte Ordner.",
+                "Klicken Sie auf „Starten“. Für jede Datei wird das Ergebnis angezeigt. Der Durchlauf kann zwischen zwei Dateien angehalten werden."
+              ]
+            },
+            {
+              "points": [
+                "Vorlagen: „Als Vorlage speichern“ speichert Ihre Auswahl (ohne Dateien und Kennwörter) unter einem Namen, sodass Sie sie mit einer Auswahl erneut festlegen können.",
+                "„Ordnerstruktur der Dateien in den Ergebnissen beibehalten“ bildet die Ordnerstruktur eines hinzugefügten Ordners nach.",
+                "„Bericht über den Durchlauf neben den Ergebnissen als Textdatei speichern“ legt eine Textdatei an, die die gespeicherten Dateien und aufgetretene Fehler auflistet.",
+                "Eine PDF-Datei, die nur signiert wird, behält ihre Signaturen. Wird während desselben Durchlaufs noch etwas anderes mit ihr gemacht, wird sie neu geschrieben und die Signaturen werden entfernt."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Einstellungen",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Die Einstellungen von PDF Organizer",
+          "body": [
+            "Datei → Einstellungen (oder „Einstellungen“ in der Seitenleiste und dann „PDF Organizer“). Jede Einstellung kann einzeln oder alle zusammen zurückgesetzt werden.",
+            {
+              "points": [
+                "Beim Öffnen eines Dokuments: Größe der Dokumentanzeige, Bildlauf oder Anzeige einer Seite nach der anderen sowie Miniaturansichten ein- oder ausblenden.",
+                "Einheiten, Lineale und Raster: Maßeinheit (Millimeter, Zoll, Punkt), Lineale, Raster und dessen Abstand.",
+                "Drucken: Papierformat, Ausrichtung und Skalierung, mit denen das Druckfenster startet.",
+                "Schnellzugriffsleiste: Schaltflächen in der Leiste über den Seiten.",
+                "Namen neuer Dokumente: Namensmuster für entnommene Seiten, neue Dokumente und die PDF-Datei, in der die Stapelverarbeitung mehrere Dateien zusammenfasst.",
+                "Signaturen: festlegen, ob „Speichern“ vor dem Überschreiben einer signierten Datei nachfragt.",
+                "Tastenkürzel: Klicken Sie auf die Tasten eines Befehls und drücken Sie dann die neuen Tasten."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Über PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Über PDF Organizer",
+          "body": [
+            "PDF Organizer ist die PDF-App von Syntelab Creative. Sie liest PDF-Dokumente, ordnet und kombiniert Seiten, ermöglicht Schreiben und Zeichnen, füllt Formulare aus und erstellt sie, signiert mit Zertifikaten, prüft Signaturen und führt dieselben Aktionen für viele Dateien auf einmal aus.",
+            "Die App ist neu und manches davon ist erst ein erster Schritt. Wenn etwas mit Ihren Dokumenten nicht wie gewünscht funktioniert, teilen Sie uns das über Hilfe → Feedback mit. So erfahren wir, woran wir arbeiten sollen."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Womit PDF Organizer entwickelt wird",
+          "body": [
+            {
+              "points": [
+                "PDF-Dateien lesen, zeichnen und schreiben: MuPDF.",
+                "Text erkennen (OCR): Tesseract, sofern es auf dem Computer installiert ist.",
+                "Office-Dokumente öffnen: Word, Excel und PowerPoint oder LibreOffice, je nachdem, was installiert ist.",
+                "Webseite als PDF speichern: der auf dem Computer installierte Browser.",
+                "Mit Zertifikat signieren: die Zertifikatdienste von Windows; Signaturen werden gemäß dem PAdES-Standard geschrieben."
+              ]
+            },
+            "Was PDF Organizer mit dem übrigen Programm gemeinsam hat, steht unter „Über Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Was PDF Organizer noch nicht kann",
+          "body": [
+            {
+              "points": [
+                "Office-Dokumente werden mit dem Office-Programm auf dem Computer geöffnet. Ohne Word, Excel, PowerPoint oder LibreOffice lassen sie sich nicht öffnen. Ein eigener Konverter ist in Arbeit; siehe „Woran wir arbeiten“.",
+                "Für die Texterkennung wird die separat installierte Tesseract-Engine benötigt.",
+                "Der Text eines Dokuments lässt sich nur zeilenweise ändern; Absätze werden nicht neu umbrochen.",
+                "Bilder, die mit vier Druckfarben (CMYK) gedruckt wurden, lassen sich nicht auswählen und verschieben.",
+                "„Validieren“ zeigt, ob ein Zertifikat heute widerrufen ist, nicht aber, wann es widerrufen wurde.",
+                "Das Signieren mit einem Zertifikat funktioniert vorerst nur unter Windows. Für Linux und macOS ist es in einer späteren Version vorgesehen."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

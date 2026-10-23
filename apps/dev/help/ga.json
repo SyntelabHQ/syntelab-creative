@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Do bhealach a aimsiú",
+      "topics": [
+        {
+          "id": "start",
+          "title": "An chéad leathanach",
+          "body": [
+            "Osclaíonn cluaisín Dev ar an gcéad leathanach, ina bhfuil gach uirlis, grúpáilte mar atá sna roghchláir: Ionchódaigh, Sonraí, Gin, Iniúch, Líonra.",
+            {
+              "points": [
+                "Clóscríobh in \"Aimsigh uirlis\" chun an liosta a chúngú.",
+                "Coinníonn an biorán ar uirlis ag an mbarr í, faoi Pionnáilte.",
+                "Osclaíonn uirlis sa chluaisín céanna; téann Comhad → Gach uirlis ar ais go dtí an chéad leathanach. I Socruithe is féidir leat gach uirlis a oscailt ina cluaisín féin, agus cluaisín nua a oscailt ar an uirlis a úsáideadh go deireanach."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Greamaigh rud ar bith",
+          "body": [
+            "Glacann an bosca ag barr an chéad leathanaigh le cibé rud a ghreamaíonn tú agus deir sé cad leis a bhfuil sé cosúil: comhartha, teastas, JSON, UUIDanna, stampaí ama, sceidil cron, URLanna, XML nó HTML, SQL, Base64, suim seiceála, tábla, YAML.",
+            "Faoi gach buille faoi thuairim tá na huirlisí a oibríonn ar a leithéid, an ceann is fearr a oireann ar dtús. Cliceáil ceann: osclaíonn sé agus an téacs ann cheana agus rite.",
+            {
+              "note": "Fanann a ghreamaíonn tú sa bhosca go nglanann tú é nó go ndúnann tú an cluaisín. Ní scríobhtar ar an diosca riamh é."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Leagan amach uirlise",
+          "body": [
+            "Tá an fráma céanna ag formhór na n-uirlisí: na roghanna i líne ag an mbarr, an t-ionchur ar thaobh amháin, an t-aschur ar an taobh eile, agus líne ag an mbun a deir cad a tharla.",
+            {
+              "points": [
+                "Déantar an toradh arís aon uair a athraíonn an t-ionchur nó rogha, agus taispeántar san aschur é; deir \"Ritheann sé leis féin\" i líne na roghanna amhlaidh. Ní fhanann leis an gcnaipe Rith, a thaispeántar ansin, ach téacs atá rófhada le rith ag gach eochair, nó comhad níos mó ná 128 MB. Ritheann Ctrl+Enter an uirlis am ar bith.",
+                "Taispeántar toradh nach téacs é (pictiúr díchódaithe ó Base64, gzip) mar réamhamharc: pictiúr mar atá sé, aon rud eile de réir a chineáil, a mhéide agus a chéad bheart. Cóipeálann Cóipeáil ansin é mar Base64, agus is féidir pictiúr a chóipeáil mar phictiúr. Mar an gcéanna le comhad ionchuir nach téacs é.",
+                "Tá Oscail comhad, Greamaigh agus Glan os cionn an ionchuir; Cóipeáil agus Sábháil i gcomhad os cionn an aschuir. Is féidir comhad a scaoileadh ar an ionchur freisin.",
+                "Deirtear i bhfocail cad atá cearr leis an ionchur, lena líne agus a cholún, agus marcáiltear san eagarthóir é.",
+                "Cuireann an roghchlár Amharc an dá phána taobh le taobh nó ceann faoin gceann eile, taispeánann sé uimhreacha líne agus timfhilleann sé línte fada; is féidir an líne idir na pánaí a tharraingt.",
+                "Cuimhnítear ar na roghanna a roghnaíonn tú don chéad uair eile. Ní chuimhnítear ar a gclóscríobhann tú."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Dóigh, agus a gcoinnítear",
+          "body": [
+            "Folmhaíonn Dóigh, ag bun gach uirlise ar dheis, láithreach í: an t-ionchur, an toradh, aon rud a clóscríobhadh ina boscaí, agus a bhféadfadh a heagarthóirí a chealú.",
+            "Ní choinníonn Dev ach a shocruithe, na huirlisí a phionnáil tú, ainm na huirlise a úsáideadh go deireanach agus roghanna gach uirlise. Ní scríobhtar aon rud a chlóscríobhann tú, a ghreamaíonn tú, a osclaíonn tú nó a dhéanann tú in uirlis ar an diosca, i logchomhad ná i liosta de rudaí le déanaí. Rúin go háirithe: maireann eochracha, pasfhrásaí, comharthaí agus ceanntáisc iarratais sa chluaisín agus in áit ar bith eile.",
+            "Fanann rud amháin ar an diosca ar feadh tamaill: scríobhtar toradh comhaid, agus toradh nach téacs é, chuig fillteán de chuid an ríomhchláir féin ionas gur féidir iad a thaispeáint agus ansin a shábháil. Scriostar gach ceann nuair a thógann toradh eile a áit, nuair a dhónn tú an uirlis nó nuair a dhúnann tú í, agus i gcás ar bith nuair a thosaíonn Dev arís."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Comhaid de mhéid ar bith",
+          "body": [
+            "Níl teorainn ar mhéid comhaid. Cuirtear comhad atá beag go leor le taispeáint (suas le 16 MB) san eagarthóir. Fanann comhad níos mó, nó comhad nach téacs é, ar an diosca: taispeántar a thús (nó réamhamharc), léann an uirlis é san áit a bhfuil sé, agus taispeántar a thoradh mar a dhéantar do théacs. Cóipeálann Sábháil i gcomhad an toradh ansin chuig an áit a roghnaíonn tú.",
+            {
+              "points": [
+                "Taispeánann obair fhada cárta a insíonn cá fhad atá sí tagtha, agus cnaipe Stop.",
+                "Léitear mar théacs comhad atá ina théacs in ionchódú seachas UTF-8 (UTF-16, Windows-1252 agus a leithéid) nuair atá sé beag go leor le taispeáint, agus luaitear an t-ionchódú. Is UTF-8 a shábhálann tú ó Dev.",
+                "Osclaítear comhad a scaoiltear ar uirlis mar a dhéantar le Oscail comhad. Nuair nach féidir leis an bhfuinneog a aithint cá bhfuil sé, glactar leis suas le 16 MB, amhail is dá ngreamófaí é."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Go leor comhad agus fillteáin iomlána",
+          "body": [
+            "Nuair atá \"Oibrigh ar: Téacs / Comhaid\" ag uirlis, ritheann Comhaid í ar go leor comhad in aon iarraidh amháin.",
+            {
+              "steps": [
+                "Cuir comhaid leis, nó fillteán (leis na fillteáin faoi, má fhágann tú sin ar siúl).",
+                "Léitear gach comhad uair amháin de réir mar a chuirtear leis é agus insítear an nglacann an uirlis leis.",
+                "Roghnaigh cá dtéann na torthaí: in aice le gach comhad faoi ainm nua, isteach i bhfillteán (ag coinneáil na bhfillteán), nó thar na comhaid féin, rud a fhiafraíonn díot uair amháin eile. Is féidir le Hais na torthaí a thaispeáint sa liosta freisin.",
+                "Cliceáil ar chomhad sa liosta chun a thoradh féin a fheiceáil faoi na roghanna, sula scríobhtar aon rud.",
+                "Rith. Ní stopann comhad a bhfuil fadhb leis na cinn eile; insíonn gach ceann conas a d’éirigh leis."
+              ]
+            },
+            {
+              "note": "Ní théann toradh riamh ar chomhad atá ann cheana mura n-iarrann tú é sin."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Roghchlár deaschliceála Windows Explorer",
+          "body": [
+            "Cas air é i Socruithe an chláir, faoi Windows Explorer. Bailítear gach rud faoi líne amháin, \"Syntelab Creative\"; ar Windows 11 tá sé faoi \"Taispeáin tuilleadh roghanna\".",
+            {
+              "points": [
+                "Oscail i Syntelab Dev: ar na cineálacha comhad a léann uirlis (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz agus a leithéid). Osclaíonn an comhad san uirlis dá chineál.",
+                "Suimeanna seiceála: ar chomhad nó fillteán ar bith. Liostaítear na hachoimrí, gach ceann in aice lena chomhad, agus ní scríobhtar aon rud.",
+                "Amharc heics: ar chomhad ar bith.",
+                "Cuir i gcomparáid: téann dhá chomhad isteach i dhá thaobh Diff; dhá fhillteán isteach i gcomparáid na bhfillteán."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ionchódaigh",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Iompaíonn sé bearta ina Base64 agus ar ais. Glacann an t-ionchódú le comhad ar bith; tugann an díchódú na bearta ar ais, taispeánta nuair is téacs iad agus sábháilte i gcomhad nuair nach ea.",
+            {
+              "points": [
+                "Aibítir: an ceann caighdeánach, nó an ceann do URLanna (- agus _).",
+                "Líon le =, agus línte de 64, 76 nó líon ar bith litreacha.",
+                "Glacann an díchódú leis an dá aibítir, leis an líonadh nó gan é, agus deir sé cá bhfuil litir mícheart."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Ionchódú / díchódú URL",
+          "body": [
+            "Ionchódú céatadáin, mar a scríobhann brabhsálaithe é: cuid de sheoladh (ionchódaítear gach rud nach gnáthlitir é), seoladh iomlán (coinnítear a chomharthaí féin), nó foirm (+ in ionad spáis).",
+            "Deir an díchódú cá háit nach bhfuil dhá dhigit heicsidheachúlacha i ndiaidh %."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Aonáin HTML",
+          "body": [
+            "Scríobhann sé mar aonáin na comharthaí a choinníonn HTML agus XML dóibh féin (&, <, >, comharthaí athfhriotail), agus léann sé aonáin ar ais: de réir ainm, de réir uimhir dheachúlach nó de réir uimhir heicsidheachúlach. Is iad ainmneacha chaighdeán HTML na hainmneacha.",
+            "Scríobhann \"Gach litir nach litir ASCII í freisin\" litreacha le síntí agus aibítreacha eile mar aonáin freisin."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Díchódóir JWT",
+          "body": [
+            "Briseann sé JSON Web Token ina chodanna: a cheanntásc agus a lastas mar JSON, agus a éilimh i bhfocail (eisitheoir, ábhar, lucht sprice, cathain a théann sé in éag, le \"imithe in éag\" nó \"níl imithe in éag fós\").",
+            "Tabhair an rún chun síniú a rinneadh le rún comhroinnte a sheiceáil (HS256, HS384, HS512). Ní sheiceáiltear sínithe a rinneadh le heochair phríobháideach (RS, ES, PS).",
+            {
+              "note": "Fanann an comhartha agus an rún sa chluaisín: ní sheoltar aon rud áit ar bith chun comhartha a dhíchódú."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Éalú / díéalú",
+          "body": [
+            "Scríobhann sé téacs mar theaghrán de theanga (JSON, JavaScript, C, C++, Java agus a leithéid) agus a chomharthaí athfhriotail, a bhristeacha líne agus comharthaí eile éalaithe, agus léann sé a leithéid de theaghrán ar ais."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Comhbhrúnn agus díchomhbhrúnn sé gzip, comhad de mhéid ar bith de réir mar a léitear é. Téann an leibhéal ón gceann is tapúla go dtí an ceann is lú; is féidir toradh téacs a thabhairt mar Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Bunuimhreacha",
+          "body": [
+            "Tugann sé slánuimhreacha, ceann ar gach líne, i ndénártha, in ochtnártha, i ndeachúlach agus i heicsidheachúlach, agus i mbunuimhir amháin eile de do rogha, suas go 36. Níl uasmhéid ar uimhir.",
+            {
+              "points": [
+                "Aithnítear bunuimhir uimhreach ón gcaoi a bhfuil sí scríofa: 0x do heicsidheachúlach, 0b do dhénártha, 0o d’ochtnártha, litreacha do heicsidheachúlach, deachúlach i gcásanna eile. Nó roghnaigh an bhunuimhir ina léitear gach rud.",
+                "Ní thugtar aird ar spásanna, fostríocanna ná uaschamóga idir digití: 1_000_000.",
+                "Tugtar uimhir dhiúltach freisin mar a choinníonn ríomhairí í (comhlánú dó), sa cheann is lú de 8, 16, 32, 64 giotán agus mar sin de a choinníonn í."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonraí",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Formáidiú JSON",
+          "body": [
+            "Formáidíonn, mionlaghdaíonn agus bailíochtaíonn sé JSON, agus taispeánann sé mar chrann é. Léitear doiciméad de mhéid ar bith mar shruth.",
+            {
+              "points": [
+                "Eangaigh le 2 nó 4 spás, táb, nó líon ar bith spásanna.",
+                "Tuilleadh roghanna: sórtáil eochracha, liostaí gearra ar líne amháin, an spás i ndiaidh an idirstaid, conas a chríochnaíonn línte, briseadh líne ag an deireadh, litreacha nach litreacha ASCII iad mar \\uXXXX.",
+                "Glacann léamh scaoilte le nótaí tráchta (// agus /* */) agus le camóga deiridh, agus scríobhann sé JSON dian.",
+                "Athruithe: bain na luachanna null, bain luachanna folmha agus a leithéid, in aon uair amháin.",
+                "Osclaíonn an crann leibhéal ar leibhéal agus aimsíonn sé téacs in eochracha agus i luachanna."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Ritheann sé iarratas JSONPath (RFC 9535) ar dhoiciméad: $.store.book[?@.price < 10].title. Is é an toradh na luachanna a aimsíodh, na cosáin chucu, nó an dá rud.",
+            "Luaitear iarratas atá mícheart leis an áit a dtéann sé amú."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Bailíochtóir JSON Schema",
+          "body": [
+            "Seiceálann sé doiciméad in aghaidh JSON Schema (dréachtaí 4 go 2020-12). Téann an scéimre sa phána faoin ionchur. Liostaítear gach rud nach n-oireann leis an áit a bhfuil sé agus an riail a sháraíonn sé.",
+            "Ar go leor comhad, seiceáiltear gach ceann in aghaidh an scéimre chéanna. Ní leantar $ref chuig comhad eile ná chuig seoladh."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Gineadóir scéimre agus JSON go TypeScript",
+          "body": [
+            "Ó shampla JSON, scríobhann an gineadóir scéimre JSON Schema a n-oireann sé dó, agus scríobhann JSON go TypeScript fógraí a chineáil (interfaces nó types, easpórtáilte nó nach ea, readonly nó nach ea, faoi ainm a thugann tú)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Iompaíonn sé YAML ina JSON agus JSON ina YAML. Léitear YAML de réir a scéimre lárnaigh, agus leantar ancairí agus cumaisc; luaitear a bhfuil cearr lena áit."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Iompaíonn sé tábla ina JSON agus ar ais. Aithnítear an deighilteoir ón gcéad ró, nó roghnaítear é (camóg, leathstad, táb, píopa); féadfaidh an chéad ró a bheith ina cheanntásc; féadtar uimhreacha agus true / false a aithint.",
+            "Taispeánann \"Tábla\" an CSV i rónna agus i gcolúin, comhad de mhéid ar bith."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Formáidiú XML / HTML",
+          "body": [
+            "Formáidíonn, mionlaghdaíonn agus seiceálann sé XML agus HTML. Léitear XML go dian: luaitear clib nach ndúntar riamh lena háit. Léitear HTML leis an maithiúnas a thugann brabhsálaithe dó."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Formáidiú SQL",
+          "body": [
+            "Leagann sé ráiteas amach, clásal sa líne, nó cuireann sé ar líne amháin é; eochairfhocail i gceannlitreacha, i litreacha beaga nó mar atá scríofa. Ní iarrann sé canúint ar bith agus ní sheiceálann sé brí ráitis."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Cuireann sé dhá théacs i gcomparáid líne ar líne, dhá dhoiciméad JSON de réir a bhfuil á rá acu, nó dhá fhillteán comhad ar chomhad. Téann an chéad cheann san ionchur, an dara ceann sa phána faoi.",
+            {
+              "points": [
+                "Marcálann Taobh le taobh na focail a d’athraigh laistigh de líne; is paiste é Aonaithe mar a scríobhann diff -u é.",
+                "Déan neamhaird de cheannlitreacha, de spás bán, de línte folmha, de dhigití nó de phoncaíocht.",
+                "I gcás JSON, ní difríocht iad ord na n-eochracha ná an leagan amach; is féidir gur JSON Patch (RFC 6902) an toradh.",
+                "Fillteáin: cé na comhaid nach bhfuil ach i gceann amháin, cé acu atá mar a chéile, cé acu atá difriúil; osclaíonn Cuir i gcomparáid ar ró an péire mar théacsanna."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Réamhamharc Markdown",
+          "body": [
+            "Taispeánann sé Markdown mar a bheidh sé, agus tugann sé a HTML le cóipeáil nó le sábháil: CommonMark le táblaí, líne tríd, liostaí tascanna agus fonótaí.",
+            {
+              "points": [
+                "Taispeántar mar théacs HTML a clóscríobhadh laistigh den Markdown; ní ritear é.",
+                "Ní fhaightear pictiúr a d’fhaighfí ón líonra: taispeántar a chur síos agus a sheoladh ina áit. Taispeántar pictiúr atá sa téacs féin (data:).",
+                "Osclaíonn nasc a chliceálann tú i mbrabhsálaí an chórais."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gin",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Déanann sé UUIDanna de leaganacha 1, 3, 4, 5, 6 agus 7 (RFC 9562), an oiread agus a iarrann tú, scríofa le fleiscíní, lom, mar URN nó idir lúibíní slabhracha. Insíonn \"Bris ina chodanna\" leagan gach UUID agus an t-am nó an t-ainm atá ann."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hais",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 agus SHA-512 de théacs nó de chomhad, roinnt acu in éineacht, scríofa mar heics nó Base64. Haiseáiltear comhad de mhéid ar bith de réir mar a léitear é.",
+            {
+              "points": [
+                "Seiceáil in aghaidh: greamaigh suim seiceála, nó líne de chomhad .sha256; insítear an meaitseálann sí nó nach meaitseálann.",
+                "Eochair HMAC: déantar HMACanna de na hachoimrí leis an eochair sin.",
+                "Gach líne ar leith: achoimre amháin do gach líne den téacs.",
+                "Comhaid: liostaítear na hachoimrí in aice lena gcomhaid; tugann Cóipeáil gach rud iad mar a scríobhann sha256sum iad."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Pasfhocail agus rúin",
+          "body": [
+            "Déanann sé pasfhocail de na cineálacha litreacha a roghnaíonn tú, pasfhrásaí d’fhocail, agus bearta randamacha mar heics nó Base64, ó uimhreacha randamacha an chórais oibriúcháin. Deir gach ceann cé mhéad giotán eantrópachta atá ann. Nuair a bhíonn rud déanta, déanann athrú ar rogha arís é.",
+            "Is éard atá i bpasfhrása focail a tharraingítear ó liosta fada focal an Electronic Frontier Foundation (7776 focal Béarla), gach ceann chomh dóchúil leis na cinn eile: tá thart ar 77 giotán i sé fhocal."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Eochracha agus teastais",
+          "body": [
+            "Cúig rud, roghnaithe ag an mbarr:",
+            {
+              "points": [
+                "Eochair nua: RSA, EC P-256 / P-384 / P-521 nó Ed25519, tugtha i ngach foirm a nglacann cláir léi (PKCS #8, an seanfhoirm, OpenSSH; an eochair phoiblí mar PEM agus mar an líne do authorized_keys), faoi ghlas le pasfhrása má thugann tú ceann.",
+                "Iarratas ar theastas: CSR d’eochair nua nó do cheann a ghreamaíonn tú, lena ábhar agus a ainmneacha eile (SAN).",
+                "Teastas féinsínithe: an rud céanna, sínithe lena eochair féin, ar feadh an oiread sin laethanta; déanann \"Féadann sé teastais eile a shíniú (fréamh de do chuid féin)\" údarás de do chuid féin de.",
+                "Sínigh le d’údarás deimhniúcháin (CA) féin: greamaigh iarratas, teastas d’údaráis agus a eochair; faigheann tú an teastas sínithe agus an t-údarás ina dhiaidh.",
+                "Léigh agus tiontaigh: greamaigh nó oscail rud ar bith (PEM, DER, eochair OpenSSH, comhad .pfx nó .p12, faoi ghlas nó nach ea). Deir sé cad a d’aimsigh sé agus an í an eochair eochair an teastais, agus scríobhann sé gach rud sna foirmeacha eile. Is féidir eochair agus a teastas a shábháil le chéile mar .pfx."
+              ]
+            },
+            {
+              "note": "Déantar gach rud ar an ríomhaire seo. Bíonn eochair sa chluaisín go dtí Dóigh, agus in áit ar bith eile mura sábhálann tú í."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Iniúch",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Tástálaí regex",
+          "body": [
+            "Baineann sé triail as slonn rialta JavaScript ar théacs: na meaitseálacha lena ngrúpaí agus lena n-áiteanna, nó an téacs agus na meaitseálacha ionadaithe. Is iad na bratacha g, i, m, s, u, y.",
+            "Ritheann an patrún ar leith ón bhfuinneog, agus stoptar ceann a ritheann níos faide ná 20 soicind."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Míniú cron",
+          "body": [
+            "Deir sé i bhfocail cad is brí le sceideal agus cathain a ritheann sé: crontab (cúig réimse, sé cinn le soicindí, seacht gcinn le bliain), Quartz, AWS EventBridge cron() agus rate(), agus systemd OnCalendar. Sceideal amháin sa líne.",
+            {
+              "points": [
+                "Na chéad rithanna eile, agus na cinn roimhe nuair a iarrtar, sa chrios ama a roghnaíonn tú.",
+                "Uimhrítear laethanta na seachtaine ó 0 don Domhnach, nó ó 1 mar a uimhríonn Quartz iad, de réir do rogha. Is le Quartz líne le soicindí a bhfuil bliain, L, W nó # inti freisin, agus léitear ar bhealach Quartz í léi féin.",
+                "An sceideal céanna sna foirmeacha eile, le cóipeáil nó le cur leis an ionchur.",
+                "Déanann an tógálaí sceideal trí gach réimse a roghnú; tógann \"Athraigh sa tógálaí\" sceideal clóscríofa isteach ann."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Stampa ama Unix",
+          "body": [
+            "Léann sé nóiméid ama, ceann sa líne: soicindí, milleasoicindí, micreashoicindí nó nanashoicindí ó 1970, nó dáta scríofa ar na gnáthbhealaí (ISO 8601, mar a scríobhann ríomhphost agus HTTP é, mar a scríobhann Git é). Tugtar gach ceann sa chrios ama a roghnaíonn tú, in UTC, agus mar gach cineál stampa ama."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Parsálaí URL",
+          "body": [
+            "Briseann sé URL ina chodanna mar a léann brabhsálaithe é: scéim, úsáideoir, óstach (lena fhoirm Unicode nuair atá sé scríofa i punycode), calafort, cosán, gach paraiméadar den iarratas díchódaithe, agus an blúire."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Díchódóir teastas",
+          "body": [
+            "Léann sé teastais X.509 ó PEM nó DER agus insíonn sé gach a bhfuil iontu: ábhar, eisitheoir, bailíocht, na hainmneacha a bhfuil siad dóibh, a n-eochair, a n-eisínteachtaí agus a méarloirg.",
+            "Léann sé; ní mheasann sé an bhfuil muinín le cur as teastas. Don teastas a thaispeánann suíomh, agus an bhfuil muinín ag an ríomhaire seo as, úsáid Líonra → Teastas suímh."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Amharcán heics",
+          "body": [
+            "Taispeánann sé bearta comhaid de mhéid ar bith, nó téacs greamaithe: suíomh gach ró, na bearta, agus na bearta céanna mar litreacha.",
+            {
+              "points": [
+                "Téigh go suíomh scríofa mar 0x1F4, 1F4h nó 500.",
+                "Aimsigh bearta (DE AD BE EF) nó téacs (UTF-8, nó UTF-16 sa dá ord), ar aghaidh agus siar.",
+                "Cliceáil beart: taispeánann an taobh a bhfuil ann mar uimhreacha de gach méid, i gceachtar ord beart, mar charachtar agus mar am.",
+                "Roghnaigh trí tharraingt, le Shift nó leis na heochracha saighde; cóipeáil an roghnúchán mar heics, mar chód, mar Base64 nó mar théacs, nó sábháil i gcomhad é."
+              ]
+            },
+            {
+              "note": "Ní dhéanann sé ach féachaint: ní athraítear aon rud sa chomhad."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Líonra",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Cá dtéann na huirlisí líonra",
+          "body": [
+            "Is iad na ceithre uirlis seo an t-aon chuid de Dev a théann ar líne, agus téann siad san áit a dtreoraíonn tú iad.",
+            {
+              "points": [
+                "Ní dhéantar teagmháil ach leis an seoladh a chlóscríobhann tú, agus sin amháin nuair a bhrúnn tú an cnaipe. Riamh sa chúlra.",
+                "Seoltar a scríobh tú. An t-aon rud a chuirtear le hiarratas ná User-Agent atá mar an gcéanna do chách (\"Syntelab Creative\"), mura dtugann tú do cheann féin.",
+                "Ní choinnítear fianáin, ní sheoltar aon rud fút féin ná faoin ríomhaire, agus ní choinnítear aon rud a clóscríobhadh."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Cliant HTTP",
+          "body": [
+            "Seolann sé iarratas amháin scríofa de láimh: modh, seoladh, ceanntáisc (ceann sa líne: Name: value) agus corp, clóscríofa nó tógtha ó chomhad de mhéid ar bith.",
+            {
+              "points": [
+                "An freagra: a uimhir, cá fhad a thóg sé (san iomlán, agus go dtí an chéad bheart), a mhéid, a cheanntáisc, agus a chorp, daite de réir a chineáil agus leagtha amach nuair is JSON é. Taispeántar corp nach téacs é (pictiúr, PDF) mar atá sé, agus sábháiltear é mar a tháinig sé.",
+                "Lean atreoruithe, nó féach ar an gcéad fhreagra mar atá. Liostaítear na seoltaí ónar seoladh iarratas ar aghaidh.",
+                "Seiceáil an teastas in aghaidh a bhfuil muinín ag an ríomhaire seo as; ná múch é ach do fhreastalaithe de do chuid féin.",
+                "Scríobhann \"Seol, freagra chuig comhad\" corp de mhéid ar bith díreach chuig an diosca, le dul chun cinn agus Stop.",
+                "Tugann \"Cóipeáil mar curl\" an t-iarratas céanna mar ordú."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Cuardach DNS",
+          "body": [
+            "Iarrann sé ar fhreastalaí ainmneacha taifid ainm: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, roinnt acu in éineacht. Tugann seoladh a ainm (PTR).",
+            "Téann an cheist chuig an bhfreastalaí ainmneacha atá socraithe ar an ríomhaire, chuig ceann poiblí (1.1.1.1, 8.8.8.8, 9.9.9.9), chuig réiteoir thar HTTPS (Cloudflare, Google), nó chuig ceann a chlóscríobhann tú."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Seiceáil calafoirt",
+          "body": [
+            "Insíonn sé an nglacann calafoirt óstaigh le ceangail TCP: ceann amháin, roinnt, nó raon suas go dtí na 65 535 ar fad (22, 80, 443, 8000-8100). Bíonn gach ceann oscailte, dúnta, nó gan freagra laistigh den am a thugann tú.",
+            {
+              "note": "Ná triail ach óstaigh atá agat féin, nó a bhfuil cead agat iad a thástáil."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Teastas suímh",
+          "body": [
+            "Taispeánann sé na teastais a thugann suíomh nuair a dhéantar ceangal slán: cé dóibh iad, cé a shínigh iad, cé mhéad lá atá fágtha, an bhfuil muinín ag an ríomhaire seo astu agus cén fáth nach bhfuil, leagan TLS agus an sifear. Ní dhéantar ach an croitheadh láimhe: ní sheoltar aon iarratas.",
+            {
+              "points": [
+                "Scríobh example.com, example.com:8443 nó seoladh gréasáin.",
+                "Tosaíonn freastalaithe ríomhphoist agus FTP gan chriptiú agus iarrtar orthu dul anonn go TLS (STARTTLS): roghnaithe de réir an chalafoirt (25, 587, 143, 110, 21) nó de láimh.",
+                "Taispeánann \"Gach rud\" a bhfuil á rá ag na teastais ar fad; tugann \"PEM\" iad le cóipeáil nó le sábháil."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Socruithe",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Socruithe Dev",
+          "body": [
+            "Osclaíonn Comhad → Socruithe Socruithe an chláir ag cuid Dev.",
+            {
+              "points": [
+                "Oscail gach uirlis ina cluaisín féin, nó sa chluaisín inar roghnaíodh í.",
+                "Oscail cluaisín nua ar an uirlis a úsáideadh go deireanach, nó ar an gcéad leathanach.",
+                "Cuir roghanna gach uirlise, agus na bioráin, ar ais mar a thagann siad leis an gclár."
+              ]
+            },
+            "Tá roghchlár deaschliceála Windows Explorer, an teanga, an téama agus na heochracha i Socruithe an chláir ina iomláine."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Faoi Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Faoi Dev",
+          "body": [
+            "Is é Dev aip Syntelab Creative d’fhorbróirí: uirlisí a ionchódaíonn agus a dhíchódaíonn, a fhormáidíonn agus a sheiceálann, a iompaíonn foirm amháin sonraí ina foirm eile, agus a bhriseann ina gcodanna rudaí atá deacair le léamh mar atá siad.",
+            "Déantar gach rud ar an ríomhaire seo. Ní choinnítear ná ní sheoltar áit ar bith aon rud a chlóscríobhann tú, a ghreamaíonn tú nó a osclaíonn tú in uirlis. Níl teorainn ar mhéid ná ar líon na gcomhad: is iad cuimhne agus diosca an ríomhaire na teorainneacha.",
+            "Tá sé nua agus á thógáil fós. Nuair nach leor é do d’obair, inis dúinn trí Cabhair → Aiseolas."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Cad as a ndéantar Dev",
+          "body": [
+            {
+              "points": [
+                "Na heagarthóirí: CodeMirror, https://codemirror.net . Ceadúnas MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "JSON a léamh agus a dhathú sna heagarthóirí: @codemirror/lang-json, https://github.com/codemirror/lang-json , le @codemirror/language agus @lezer/highlight. Ceadúnas MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "YAML, XML, HTML agus SQL a léamh agus a dhathú sna heagarthóirí: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (le @codemirror/lang-css agus @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Ceadúnas MIT. Copyright (C) 2018-2024 by Marijn Haverbeke and others.",
+                "Doiciméad a sheiceáil in aghaidh JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Ceadúnas MIT. Copyright (c) 2020-2026 Dmitry Dygalo. Tógtar é gan a chuid líonra: ní fhaigheann Dev scéimre riamh ón líonra.",
+                "Patrúin JSONPath (match agus search): regex, https://github.com/rust-lang/regex . Ceadúnas MIT nó Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "YAML a léamh: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Ceadúnas MIT nó Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Is é Dev féin a scríobhann YAML.",
+                "Dhá théacs a chur i gcomparáid (Diff): similar, https://github.com/mitsuhiko/similar . Ceadúnas Apache-2.0. Údair: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Ceadúnas MIT nó Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Achoimrí na huirlise Hais agus shíniú comhartha: sha2, sha1 agus md-5, https://github.com/RustCrypto/hashes . Ceadúnas MIT nó Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, and the RustCrypto developers.",
+                "Dátaí, amanna agus criosanna ama (Stampa ama Unix, Míniú cron): jiff, https://github.com/BurntSushi/jiff , le criosanna ama bhunachar sonraí IANA. Ceadúnas Unlicense nó MIT. Copyright (c) 2015 Andrew Gallant.",
+                "URL a bhriseadh ina chodanna: url agus idna, https://github.com/servo/rust-url . Ceadúnas MIT nó Apache-2.0. Copyright (c) 2013-2025 The rust-url developers.",
+                "Teastais X.509 a léamh: x509-parser, https://github.com/rusticata/x509-parser . Ceadúnas MIT nó Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "Ritheann an tástálaí regex sloinn rialta JavaScript, in inneall an WebView a tharraingíonn an clár leis (Microsoft Edge WebView2 ar Windows); ní chuirtear leabharlann ar bith leis chuige sin.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Ceadúnas MIT nó Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton and contributors.",
+                "UUIDanna: uuid, https://github.com/uuid-rs/uuid . Ceadúnas Apache-2.0 nó MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Bearta randamacha do phasfhocail, do rúin agus do UUIDanna, ón gcóras oibriúcháin: getrandom, https://github.com/rust-random/getrandom . Ceadúnas MIT nó Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Eochracha agus sínithe RSA: rsa, https://github.com/RustCrypto/RSA , le num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Ceadúnas MIT nó Apache-2.0. Copyright (c) RustCrypto Developers and dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Eochracha agus sínithe chuair NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , le ecdsa, elliptic-curve agus crypto-bigint a theastaíonn uathu. Ceadúnas Apache-2.0 nó MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Eochracha agus sínithe Ed25519: ed25519-dalek agus curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Ceadúnas BSD 3-Clause. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft and Henry de Valence. Gach ceart ar cosaint.",
+                "Na foirmeacha ina scríobhtar eochracha, iarratais agus teastais (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER agus PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Ceadúnas Apache-2.0 nó MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Comhaid eochrach OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , le bcrypt-pbkdf, aes, ctr, chacha20 agus na sifir agus na haiseanna eile de chuid RustCrypto a theastaíonn chun eochair a chur faoi ghlas ( https://github.com/RustCrypto ). Ceadúnas Apache-2.0 nó MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Comhaid PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , le pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 agus scrypt de chuid RustCrypto a theastaíonn uaidh. Ceadúnas MIT nó Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Na huimhreacha randamacha as a ndéantar eochracha, tógtha ón gcóras oibriúcháin: rand_core, https://github.com/rust-random/rand . Ceadúnas MIT nó Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "An cliant HTTP: ureq, https://github.com/algesten/ureq . Ceadúnas MIT nó Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Ceangail shlána (TLS) an chliaint HTTP agus \"Teastas suímh\": rustls, https://github.com/rustls/rustls , ceadúnas Apache-2.0, ISC nó MIT, Copyright (c) 2016 Joseph Birr-Pixton; le rustls-webpki, https://github.com/rustls/webpki , ceadúnas ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , ceadúnais Apache-2.0 agus ISC; webpki-roots, https://github.com/rustls/webpki-roots , ceadúnas CDLA-Permissive-2.0.",
+                "An bhfuil muinín ag an ríomhaire seo as teastas: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Ceadúnas MIT nó Apache-2.0. Copyright (c) 2022 1Password.",
+                "Markdown a léamh: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Ceadúnas MIT. Copyright 2015 Google Inc. Gach ceart ar cosaint.",
+                "Comhaid scríofa in ionchóduithe seachas UTF-8 a léamh: encoding_rs, https://github.com/hsivonen/encoding_rs , ceadúnas Apache-2.0 nó MIT (le BSD-3-Clause dá chuid sonraí), Copyright Mozilla Foundation; agus chardetng, https://github.com/hsivonen/chardetng , ceadúnas Apache-2.0 nó MIT, Copyright Mozilla Foundation.",
+                "Focail na bpasfhrásaí: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , ón Electronic Frontier Foundation, á úsáid faoin gceadúnas Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Úsáidtear an liosta mar atá.",
+                "Eochracha a cuireadh faoi ghlas ar sheanbhealach OpenSSL a oscailt: aes, cbc agus des de chuid RustCrypto, https://github.com/RustCrypto . Ceadúnas MIT nó Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "Scríofa do Dev, gan leabharlann: an cuardach DNS (ceisteanna scríofa agus freagraí léite mar atá in RFC 1035) agus an tseiceáil calafoirt.",
+                "Scríofa do Dev, gan leabharlann: JSON a léamh agus a scríobh mar shruth, JSONPath (RFC 9535), Base64, ionchódú céatadáin, tagairtí carachtar HTML (is iad ainmneacha chaighdeán HTML a n-ainmneacha, https://html.spec.whatwg.org ), seichimh éalúcháin teaghráin, JSON Web Tokens a léamh, YAML a scríobh, CSV sa dá threo, sceidil cron a léamh, formáidiú XML agus HTML, agus formáidiú SQL."
+              ]
+            },
+            "Tá a bhfuil i bpáirt aige leis an gcuid eile den chlár faoi \"Faoi Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Cad nach féidir le Dev a dhéanamh fós",
+          "body": [
+            {
+              "points": [
+                "Ní sheiceáiltear síniú comhartha ach nuair a rinneadh é le rún comhroinnte (HS256, HS384, HS512).",
+                "Deir an bailíochtóir JSON Schema i mBéarla cad nach n-oireann, mar a dhéanann a leabharlann, agus ní leanann sé $ref chuig comhad ná seoladh eile.",
+                "Ní iarrann formáidiú SQL canúint ar bith agus ní sheiceálann sé brí ráitis: ní insíonn sé ach faoi theaghrán nó nóta tráchta nach gcríochnaíonn riamh.",
+                "Coinnítear YAML, agus JSON a dhéantar YAML nó CSV de, ina iomláine sa chuimhne fad atá siad á n-iompú; oibrítear ar CSV a dhéantar JSON de, ar XML, ar HTML agus ar SQL de réir mar a léitear iad, cibé méid atá iontu.",
+                "Is le léamh amháin an tábla ina bhféachtar ar CSV: ní chlóscríobhtar aon rud ann, agus ní chóipeáiltear aon rud as fós.",
+                "Coinníonn Diff sé bheart déag do gach líne den dá chomhad, ní na comhaid féin; coinnítear dhá dhoiciméad JSON ina n-iomláine, mar go scríobhtar as an nua iad sula gcuirtear i gcomparáid iad.",
+                "Cuirtear sraith línte nach bhfuil aon rud iontu atá ag an dá thaobh díreach uair amháin i gcomparáid chomh maith agus a cheadaíonn soicind: is fíor na difríochtaí a insítear, cé nach iad an líon is lú i gcónaí.",
+                "Ní chuireann Diff i gcomparáid conas a chríochnaíonn línte (CRLF nó LF).",
+                "Cuirtear dhá fhillteán i gcomparáid de réir bhearta a gcomhad; meaitseáiltear comhaid de réir a n-ainmneacha, litir ar litir.",
+                "Is JSON é a insíonn uirlisí Iniúch, agus a ainmneacha i mBéarla.",
+                "Ritheann an tástálaí regex sloinn rialta JavaScript, ní PCRE ná iad siúd de Rust; oibríonn sé ar théacs is féidir a thaispeáint, ní ar chomhad a choinnítear ar an diosca; stoptar patrún a ritheann níos faide ná 20 soicind.",
+                "Léann an díchódóir teastas teastas agus ní sheiceálann sé an bhfuil muinín le cur as: ní a shlabhra, ní a shíniú, ní an ndearnadh é a chúlghairm.",
+                "Léitear comhad atá ina théacs in ionchódú seachas UTF-8 nuair atá sé beag go leor le taispeáint; caithfidh comhad níos mó ná sin, a n-oibrítear air ón diosca, a bheith ina UTF-8.",
+                "Glactar le comhad a scaoiltear ar uirlis suas le 16 MB; ní insítear don fhuinneog cá bhfuil comhad scaoilte ar an diosca, mar sin osclaítear comhad níos mó le Oscail comhad.",
+                "Ní dhéantar pasfhrásaí ach d’fhocail Bhéarla.",
+                "Míniú cron: déanann an tógálaí sceidil crontab (cúig réimse, nó sé cinn le soicindí); ní féidir sceideal le L, W, # nó ? a thógáil isteach ann. Ní féidir amanna AWS rate() a insint, mar go n-áirítear é ón uair a rinneadh a riail. As systemd, léitear na teagmhais féilire coitianta; ní codáin soicind ná liostaí laethanta a áirítear ó dheireadh na míosa.",
+                "Ní dhéanann Amharcán heics ach féachaint: ní athraítear aon rud sa chomhad. Taispeánann colún an téacs ASCII nó litreacha Iarthar na hEorpa, ní aibítreacha eile; cuardaítear bearta nó téacs, ní patrúin.",
+                "Eochracha agus teastais: is eochracha RSA, na cuair P-256, P-384 agus P-521, agus Ed25519 iad; ní léitear cinn eile (DSA, secp256k1, X25519). Osclaítear eochair a cuireadh faoi ghlas ar sheanbhealach OpenSSL nuair is AES nó 3DES a sifear. Coinníonn comhad .pfx eochair amháin lena teastais. Tógann sé am eochair RSA an-mhór a dhéanamh agus ní féidir í a stopadh ina lár. Tá laige aitheanta ag an leabharlann a dhéanann eochracha RSA i gcoinne ionsaitheora atá in ann go leor sínithe a thomhas thar líonra (RUSTSEC-2023-0071): anseo déantar agus scríobhtar eochracha ar do ríomhaire, agus ní shínítear aon rud do dhuine ar bith eile.",
+                "Cliant HTTP: HTTP/1.1 (ní HTTP/2 ná 3); ní choinnítear fianáin idir iarratais; ní thógtar foirmeacha ilchodacha (multipart) duit; scríobhtar freagra níos mó ná 16 MB, nó ceann nach téacs é, chuig comhad tríd an iarratas a sheoladh arís.",
+                "Taispeánann Cuardach DNS sínithe (DNSSEC) agus ní sheiceálann sé iad. Ní thriaileann Seiceáil calafoirt ach TCP: ní féidir calafort UDP atá ina thost a aithint ó cheann atá dúnta. Ní fhiafraíonn Teastas suímh an ndearnadh teastas a chúlghairm.",
+                "Is do Windows Explorer an roghchlár deaschliceála; ar Windows 11 tá a iontrálacha faoi \"Taispeáin tuilleadh roghanna\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

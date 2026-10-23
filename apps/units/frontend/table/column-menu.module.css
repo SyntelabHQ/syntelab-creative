@@ -1,0 +1,120 @@
+/* What can be done with a column, as a list under its head. */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 30px;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.item:hover:not(:disabled) {
+  background: var(--sc-surface-2);
+}
+
+.item:disabled {
+  color: var(--sc-muted);
+  cursor: default;
+  opacity: 0.6;
+}
+
+.item[aria-checked='true'] {
+  background: var(--sc-accent-soft);
+  font-weight: 600;
+}
+
+.item[data-danger='true'] {
+  color: var(--sc-danger);
+}
+
+.rule {
+  height: 1px;
+  margin-block: 4px;
+  background: var(--sc-border);
+}
+
+.precision {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 4px 8px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.step {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.step:hover:not(:disabled) {
+  border-color: var(--sc-accent);
+}
+
+.step:disabled,
+.back:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.count {
+  min-width: 30px;
+  padding: 3px 0;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  text-align: center;
+}
+
+.back {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  margin-inline-start: auto;
+  place-items: center;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-accent);
+  cursor: pointer;
+}
+
+.back:hover:not(:disabled) {
+  background: var(--sc-surface-2);
+}

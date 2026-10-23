@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Bắt đầu",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Syntelab Creative là gì",
+          "body": [
+            "Syntelab Creative là một chương trình gồm nhiều ứng dụng. Mỗi ứng dụng chuyên thực hiện một nhóm công việc:",
+            {
+              "points": [
+                "PDF Organizer đọc, sắp xếp, chỉnh sửa và ký tài liệu PDF.",
+                "Scribe là trình soạn thảo văn bản với các công cụ dọn dẹp, sắp xếp, so sánh và chuyển đổi văn bản.",
+                "Units chuyển đổi các đơn vị như độ dài, nhiệt độ, tiền tệ và nhiều đơn vị khác.",
+                "Dev tập hợp công cụ dành cho nhà phát triển: mã hóa và giải mã, định dạng và kiểm tra, chuyển đổi dữ liệu giữa các dạng."
+              ]
+            },
+            "Các ứng dụng dùng chung một cửa sổ, một bộ cài đặt và một cách thao tác; những gì bạn học được ở ứng dụng này cũng áp dụng cho ứng dụng khác.",
+            {
+              "note": "Mọi thao tác diễn ra trên máy tính của bạn. Tài liệu không được gửi đi đâu và không thu thập thông tin về bạn hoặc công việc của bạn."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Cửa sổ",
+          "body": [
+            {
+              "points": [
+                "Thanh bên: biểu tượng ngôi nhà mở trang Bắt đầu, bên dưới là các ứng dụng; cuối thanh có tin tức chương trình, Góp ý, Ủng hộ và Cài đặt.",
+                "Trong ứng dụng, Tệp → Đi tới trang Bắt đầu mở trang đầu riêng nếu ứng dụng có (Units, Scribe); Tệp → Mở Cài đặt (Ctrl+,) mở phần cài đặt của ứng dụng đó. Có thể nhấp để chuyển đến các phần khác.",
+                "Các tab ở đầu cửa sổ: mỗi tài liệu, bộ tài liệu hoặc công cụ đã mở có tab riêng. Dấu chấm trên tab cho biết có thay đổi chưa lưu.",
+                "Menu ứng dụng nằm bên dưới các tab, có thể hiển thị dưới dạng thanh menu, dải băng hoặc bảng bên tùy lựa chọn của bạn.",
+                "Phần còn lại của cửa sổ là tab đang mở phía trước."
+              ]
+            },
+            "Khi đóng tab có thay đổi chưa lưu hoặc đóng chương trình, bạn sẽ được hỏi trước."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Bắt đầu",
+          "body": [
+            "Trang Bắt đầu hiển thị các ứng dụng và tệp bạn mở gần đây. Nhấp vào ứng dụng để mở hoặc tệp gần đây để mở lại.",
+            "Có thể hiển thị ứng dụng dưới dạng thẻ, biểu tượng kèm tên hoặc chỉ biểu tượng; kéo để sắp xếp theo ý muốn. Dùng Alt cùng các phím mũi tên để sắp xếp bằng bàn phím. “Khôi phục mặc định” khôi phục thứ tự ban đầu.",
+            "Mỗi ứng dụng cũng có lối tắt riêng trong menu Start của Windows, chẳng hạn “Syntelab PDF Organizer” hoặc “Syntelab Units”; lối tắt sẽ mở chương trình trực tiếp ở ứng dụng đó. Nếu chương trình đang chạy, ứng dụng sẽ mở thành tab mới."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Mở tệp",
+          "body": [
+            {
+              "points": [
+                "Trong ứng dụng: Tệp → Mở hoặc Ctrl+O.",
+                "Kéo tệp từ thư mục vào cửa sổ.",
+                "Trong trình quản lý tệp của hệ thống: nhấp đúp vào tệp được cấu hình để mở bằng chương trình. Windows Explorer cũng có menu chuột phải (xem “Menu chuột phải của Windows Explorer”).",
+                "Từ trang Bắt đầu: chọn tệp trong danh sách gần đây."
+              ]
+            },
+            "Chương trình chỉ chạy một phiên bản. Nếu mở tệp từ trình quản lý tệp khi chương trình đang chạy, tệp sẽ mở trong tab mới ở cùng cửa sổ."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tùy chỉnh chương trình",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Bố cục: thanh menu, dải băng hoặc bảng bên",
+          "body": [
+            "Lệnh của ứng dụng có thể hiển thị theo ba cách. Các lệnh giống nhau; chỉ khác vị trí.",
+            {
+              "points": [
+                "Cổ điển: thanh menu và thanh công cụ.",
+                "Dải băng: nút lớn trong các nhóm có tên, mỗi tab tương ứng một menu. Có thể thu gọn để tăng chỗ hiển thị tài liệu.",
+                "Bảng bên: các công cụ nằm trong bảng bên trái hoặc bên phải, có thể thu gọn thành biểu tượng."
+              ]
+            },
+            "Chọn bố cục chung cho ứng dụng trong Cài đặt → Chung → Bố cục. Có thể chọn bố cục riêng cho một ứng dụng trong phần cài đặt của ứng dụng hoặc menu Xem; sau đó ứng dụng không theo bố cục chung nữa cho đến khi bạn chọn “Dùng bố cục chung”."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Giao diện",
+          "body": [
+            "Cài đặt → Chung → Giao diện: Sáng, Tối, Xám nhạt, Xám đậm hoặc Tự động theo chế độ sáng/tối của hệ thống.",
+            "Giao diện không đổi màu trang tài liệu; giấy vẫn giữ nguyên màu."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Ngôn ngữ",
+          "body": [
+            "Cài đặt → Chung → Ngôn ngữ. Chương trình hỗ trợ 62 ngôn ngữ. “Ngôn ngữ hệ thống” theo ngôn ngữ máy tính của bạn. Có thể tìm trong danh sách bằng tên ngôn ngữ đó, tên theo ngôn ngữ của bạn hoặc tên tiếng Anh.",
+            "Văn bản chưa được dịch sẽ hiển thị bằng tiếng Anh, không bao giờ hiện mã ngôn ngữ."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Tab",
+          "body": [
+            {
+              "points": [
+                "“Giữ tab Bắt đầu trong danh sách tab”: khi tắt, tab Bắt đầu chỉ hiện khi trang Bắt đầu đang mở; biểu tượng ngôi nhà ở thanh bên luôn quay về trang đó.",
+                "Biểu tượng trên tab có thể là biểu tượng ứng dụng hoặc ô vuông trơn theo màu ứng dụng."
+              ]
+            },
+            "Khi số tab vượt quá chỗ hiển thị, mũi tên ở hai đầu dải sẽ cuộn danh sách; mục “Thêm tab” liệt kê tất cả."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tìm kiếm và trợ giúp",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Tìm lệnh",
+          "body": [
+            "Ô tìm kiếm (“Tìm ứng dụng, công cụ và lệnh”) tìm lệnh của tab đang mở theo tên tiếng Việt hoặc tiếng Anh. Chọn kết quả để chạy lệnh.",
+            "Lệnh dự kiến nhưng chưa được triển khai sẽ bị làm mờ trong menu và không xuất hiện trong kết quả tìm kiếm."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Phím tắt",
+          "body": [
+            "Phím tắt của lệnh được hiển thị cạnh tên lệnh trong menu và chú giải. Các phím thường dùng:",
+            {
+              "points": [
+                "Ctrl+O: mở tệp",
+                "Ctrl+S: lưu; Ctrl+Shift+S: lưu thành",
+                "Ctrl+P: in",
+                "Ctrl+Z và Ctrl+Y: hoàn tác và làm lại",
+                "Ctrl+F: tìm trong tài liệu",
+                "Ctrl+W: đóng tab",
+                "Ctrl+Tab và Ctrl+Shift+Tab: chuyển sang tab tiếp theo hoặc tab trước đó",
+                "Ctrl+, (dấu phẩy): Cài đặt",
+                "F1: Trợ giúp",
+                "Escape: thoát toàn màn hình hoặc chế độ đọc, hoặc bỏ chọn công cụ đang dùng"
+              ]
+            },
+            "Có thể đổi phím tắt của lệnh riêng chương trình (tab, Cài đặt, Trợ giúp) tại Cài đặt → Chung → Phím tắt. Phím tắt của lệnh ứng dụng nằm trong phần cài đặt của ứng dụng đó. Nhấp vào phím hiện tại của lệnh rồi nhấn tổ hợp phím mới."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Sử dụng Trợ giúp",
+          "body": [
+            "Trợ giúp phụ thuộc nơi bạn mở: từ ứng dụng, bạn chỉ thấy hướng dẫn của ứng dụng đó và các lệnh trong tab hiện tại. Từ trang Bắt đầu hoặc Cài đặt, bạn thấy mục “Giới thiệu” (tóm tắt về chương trình và từng ứng dụng) cùng hướng dẫn chương trình. Trợ giúp → Giới thiệu luôn mở mục “Giới thiệu”.",
+            "Mục lục ở bên trái; ô tìm kiếm phía trên tìm trong tiêu đề và nội dung của mọi chủ đề.",
+            "Trợ giúp mở trong tab riêng để bạn chuyển qua lại với công việc; nhấn F1 để đưa tab Trợ giúp lên trước. Trong mục “Lệnh của tab trước đó”, mọi menu của tab được liệt kê cùng các lệnh, phím tắt và chức năng. Hãy mở Trợ giúp từ tab bạn cần hỏi."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Menu chuột phải của Windows Explorer",
+          "body": [
+            "Cài đặt → Chung → Windows Explorer → “Hiển thị Syntelab Creative trong menu ngữ cảnh của tệp và thư mục” thêm lệnh cho các loại tệp chương trình hỗ trợ: “Chuyển đổi sang PDF bằng PDF Organizer” và “Gộp tệp trong PDF Organizer”, mỗi lệnh có biểu tượng của PDF Organizer, cùng “Syntelab Dev”, mở ra bên cạnh với Checksum, So sánh và Xem thập lục phân.",
+            "Các lệnh chỉ được thêm cho tài khoản người dùng của bạn, không cần quyền quản trị; tắt tùy chọn sẽ xóa chúng. Trên Windows 11, các lệnh nằm trong mục “Hiển thị thêm tùy chọn”. Các lệnh luôn khởi động chương trình đã cài đặt: nếu chương trình đã được di chuyển hoặc cài đặt lại ở nơi khác, nó sẽ sửa lại các lệnh khi khởi động.",
+            {
+              "note": "Chọn “Gộp tệp trong PDF Organizer” trên nhiều tệp sẽ mở bộ tài liệu chứa chúng; “Chuyển đổi sang PDF bằng PDF Organizer” sẽ mở xử lý hàng loạt với các tệp đó."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quyền riêng tư, cập nhật và liên hệ",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Khi nào chương trình kết nối mạng",
+          "body": [
+            "Chương trình không thu thập dữ liệu: không theo dõi việc sử dụng, không lấy tên tệp và không tự gửi báo cáo lỗi.",
+            "Chương trình chỉ kết nối mạng trong các trường hợp sau, theo yêu cầu của bạn:",
+            {
+              "points": [
+                "Kiểm tra cập nhật và tin tức (đọc hai tệp nhỏ từ syntelab.com) khi bạn yêu cầu hoặc khi chương trình khởi động nếu bạn đã cho phép; tải phiên bản mới chỉ khi bạn nhấn “Cập nhật”.",
+                "Lưu trang web thành PDF (PDF Organizer) và lấy văn bản từ trang web (Scribe), theo địa chỉ bạn nhập.",
+                "Liên kết trong tài liệu bạn nhấp sẽ được chuyển cho trình duyệt hoặc ứng dụng thư.",
+                "Góp ý và Ủng hộ mở trang syntelab.com trong trình duyệt."
+              ]
+            },
+            "Ký bằng chứng chỉ và xác minh chữ ký đều thực hiện trên máy tính, không kết nối mạng."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Cập nhật",
+          "body": [
+            "Cài đặt → Chung → Cập nhật → “Kiểm tra cập nhật”. Nếu có phiên bản mới, cửa sổ sẽ cho biết nội dung mới và đề xuất “Cập nhật”.",
+            "“Cập nhật” tải phiên bản mới, xác minh phiên bản do chúng tôi phát hành (phải có chữ ký bằng khóa của chúng tôi; phiên bản khác sẽ bị từ chối) rồi cài đè lên phiên bản hiện tại. Cài đặt của bạn được giữ lại và chương trình khởi động lại. Không tải gì cho đến khi bạn nhấn nút.",
+            "Nếu không thể cài theo cách này (bản portable, gói Linux hoặc không có mạng), “Tải xuống” sẽ mở trang tải trong trình duyệt; cài đè phiên bản mới để giữ nguyên cài đặt.",
+            "Có thể tắt “Kiểm tra cập nhật và tin tức khi chương trình khởi động”; dù bật hay tắt, chương trình cũng không gửi thông tin về bạn hoặc máy tính."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Góp ý và ủng hộ",
+          "body": [
+            "Trợ giúp → Góp ý: yêu cầu ứng dụng hoặc tính năng mới, đề xuất thay đổi hay báo sự cố. Mọi thư đều được đọc.",
+            "Trợ giúp → Ủng hộ: chương trình miễn phí; tại đây bạn có thể góp sức để dự án tiếp tục phát triển."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Giới thiệu Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Giới thiệu Syntelab Creative",
+          "body": [
+            "Syntelab Creative là bộ ứng dụng miễn phí cho công việc hằng ngày với tài liệu, văn bản và dữ liệu, do Syntelab phát triển (syntelab.com). Phiên bản đầu gồm bốn ứng dụng: PDF Organizer, Scribe, Units và Dev. Các ứng dụng mới sẽ được thêm vào cùng cửa sổ.",
+            {
+              "points": [
+                "Luôn miễn phí.",
+                "Không thu thập dữ liệu về bạn, máy tính hoặc công việc của bạn.",
+                "Không giới hạn có chủ ý: không có bản trả phí, không khóa tính năng. Giới hạn duy nhất là khả năng công nghệ hiện nay và phần cứng máy tính của bạn."
+              ]
+            },
+            "Chúng tôi không có nguồn tài trợ. Chương trình được phát triển trong thời gian rảnh, tùy điều kiện cho phép. Chúng tôi quyết tâm tạo phần mềm chất lượng tốt, nhưng cần thời gian và sự kiên nhẫn của cả chúng tôi khi phát triển lẫn bạn khi chờ sản phẩm hoàn thiện.",
+            "Chương trình sẽ tốt hơn qua từng phiên bản. Sự cố được báo sẽ được sửa; các tính năng được yêu cầu sẽ được cân nhắc cho những bản tiếp theo.",
+            {
+              "note": "Tài liệu luôn nằm trên máy tính của bạn. Chương trình không thu thập thông tin về bạn hoặc công việc; xem “Khi nào chương trình kết nối mạng”."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Bạn có thể giúp như thế nào",
+          "body": [
+            "Có ba cách hỗ trợ dự án và cách nào cũng có ích:",
+            {
+              "points": [
+                "Chia sẻ ý kiến: Trợ giúp → Góp ý. Hãy cho biết sự cố, tính năng còn thiếu hoặc thao tác khó hơn mức cần thiết. Chúng tôi đọc mọi ý kiến.",
+                "Giới thiệu chương trình và công việc của chúng tôi cho người khác. Càng nhiều người dùng thì càng có nhiều góp ý, nhờ đó chúng tôi thấy rõ điều gì quan trọng. Sự quan tâm cũng khích lệ chúng tôi và tất cả những người đang hoặc sẽ tham gia dự án.",
+                "Nếu có thể, ủng hộ tài chính tại Trợ giúp → Ủng hộ chúng tôi. Khoản đóng góp giúp chúng tôi có thêm thời gian phát triển."
+              ]
+            },
+            "Bạn không bắt buộc phải làm những việc này. Chương trình miễn phí và sẽ luôn miễn phí, đầy đủ tính năng cho tất cả mọi người."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Công nghệ được sử dụng",
+          "body": [
+            "Chương trình được xây dựng dựa trên công sức của nhiều người. Các thành phần dùng chung:",
+            {
+              "points": [
+                "Cửa sổ và toàn bộ giao diện: Tauri cùng trình hiển thị web của hệ thống (WebView2 trên Windows, WebKitGTK trên Linux, WKWebView trên macOS); viết bằng TypeScript với React.",
+                "Phần xử lý: viết bằng Rust.",
+                "Phông chữ và biểu tượng: Sansation, IBM Plex Sans và Font Awesome Free."
+              ]
+            },
+            "Các thành phần riêng của từng ứng dụng được liệt kê trong mục “Giới thiệu” của ứng dụng đó. Xin cảm ơn những người đã phát triển các dự án này."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Những giới hạn hiện tại",
+          "body": [
+            "Để bạn biết trước khi sử dụng:",
+            {
+              "points": [
+                "Một số nội dung chưa được dịch; hiện chúng hiển thị bằng tiếng Anh, không phải mã ngôn ngữ.",
+                "Menu chuột phải của trình quản lý tệp hiện chỉ có trong Windows Explorer.",
+                "Hiện tại chỉ hỗ trợ ký bằng chứng chỉ trên Windows; hỗ trợ Linux và macOS sẽ có trong phiên bản sau."
+              ]
+            },
+            "Giới hạn riêng của từng ứng dụng được liệt kê trong mục “Giới thiệu” của ứng dụng đó. Nếu giới hạn nào ảnh hưởng đến bạn, hãy gửi góp ý qua Trợ giúp → Góp ý để giúp chúng tôi quyết định ưu tiên."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Những gì chúng tôi đang phát triển",
+          "body": [
+            "Bốn ứng dụng hiện có sẽ tiếp tục được phát triển; góp ý và yêu cầu qua Trợ giúp → Góp ý sẽ giúp quyết định việc nào được ưu tiên. Các ứng dụng mới đang được chuẩn bị. Trang Bắt đầu chỉ hiện chúng nếu bạn muốn: hãy đánh dấu chúng trong menu “Chế độ xem” của trang Bắt đầu để thấy chúng ở đó với nhãn “Sắp ra mắt”:",
+            {
+              "points": [
+                "Convert: chuyển tệp giữa nhiều định dạng, gồm tài liệu văn phòng sang PDF và ngược lại mà không cần cài chương trình khác. Chúng tôi chưa tìm được công nghệ mở đạt chất lượng mong muốn; ứng dụng chỉ ra mắt khi không làm bạn thất vọng. Nếu công cụ phù hợp chưa có, chúng tôi sẽ tự phát triển.",
+                "Pixel: công cụ xử lý ảnh như đổi kích thước, nén, xóa nền, chỉnh màu và tạo mã QR.",
+                "Metadata: xem và xóa dữ liệu ẩn trong ảnh, video và tài liệu trước khi chia sẻ.",
+                "Wizard: công cụ chọn ngẫu nhiên và tạo nội dung, như vòng quay, xúc xắc, đồng xu hoặc rút tên từ danh sách."
+              ]
+            },
+            "Chúng tôi cũng đang xử lý các giới hạn được ghi trong mục “Những giới hạn hiện tại” của từng ứng dụng, chẳng hạn dấu thời gian tin cậy cho chữ ký, ký bằng chứng chỉ trên Linux/macOS và kiểm tra chính tả trong Scribe.",
+            "Sẽ có thêm cách cài đặt: Microsoft Store và winget trên Windows, Flathub và Snap trên Linux.",
+            {
+              "note": "Tin tức của mỗi phiên bản nằm dưới nút tin tức trên thanh bên; Cài đặt → Chung → Cập nhật kiểm tra phiên bản mới."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

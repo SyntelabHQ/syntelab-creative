@@ -1,0 +1,18 @@
+{
+  "name": "@syntelab/scribe-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "dependencies": {
+    "@codemirror/state": "^6.0.0",
+    "@codemirror/view": "^6.0.0",
+    "@syntelab/command-registry": "*",
+    "@syntelab/i18n": "*",
+    "@syntelab/shell-api": "*",
+    "@syntelab/text-editor": "*",
+    "@syntelab/ui-kit": "*"
+  }
+}

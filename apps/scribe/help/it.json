@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Testi e file",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editor",
+          "body": [
+            "Scribe è un editor di testo semplice con gli strumenti a fianco. Ogni testo ha una scheda: il testo è al centro, il pannello degli strumenti di lato e, sotto, una barra con le informazioni.",
+            "All’avvio Scribe ti chiede cosa vuoi fare: contare le parole, cercare e sostituire, rimuovere i duplicati, confrontare due testi, ordinare le righe, invertire un testo, generare testo segnaposto o casuale. Ogni scelta apre il testo con lo strumento corrispondente a fianco; «Testo vuoto» apre solo l’editor e sotto trovi l’elenco dei testi aperti di recente.",
+            {
+              "points": [
+                "File → Nuovo testo (Ctrl+N) crea un testo vuoto.",
+                "File → Apri (Ctrl+O) apre uno o più file, ciascuno nella propria scheda. Puoi aprire qualsiasi file di testo: .txt, .md, .csv, .log, .srt, codice sorgente e altri.",
+                "Modifica → Annulla (Ctrl+Z) e Ripeti (Ctrl+Y) annullano o ripristinano tutte le operazioni sul testo; uno strumento o una ricetta conta come un solo passaggio.",
+                "Modifica → Trova e sostituisci (Ctrl+F) apre una barra nell’editor per passare da una corrispondenza alla successiva.",
+                "Modifica → Seleziona tutto (Ctrl+A)."
+              ]
+            },
+            "La barra sotto il testo mostra la posizione del cursore, la quantità di testo selezionato, il numero di righe, parole e caratteri, la codifica del file e i relativi caratteri di fine riga.",
+            "Puoi anche trascinare file sulla finestra: ognuno si apre come nuovo testo con il nome del file, la codifica e i caratteri di fine riga. Il programma riceve il contenuto del file trascinato, ma non il suo percorso su disco, quindi per salvare ti chiederà dove farlo. Per i file più grandi di 64 MB usa File → Apri.",
+            "Quando un testo è vuoto, mostra l’elenco dei testi aperti di recente: fai clic su uno per aprirlo. «Dimentica l’elenco» lo svuota; l’elenco viene conservato solo su questo computer."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Salva e Salva con nome",
+          "body": [
+            "Il file su disco non cambia finché non lo salvi. Un punto sulla scheda indica che il testo contiene modifiche non ancora salvate; prima di chiudere la scheda ti verrà chiesto cosa fare.",
+            {
+              "points": [
+                "Salva (Ctrl+S) sovrascrive il file del testo. Per un nuovo testo ti verrà chiesto dove salvarlo.",
+                "Salva con nome (Ctrl+Maiusc+S) salva il testo in un nuovo file, che sostituisce quello corrente nella scheda; la cronologia delle modifiche annullabili resta disponibile e il file originale non cambia."
+              ]
+            },
+            "La scrittura del file avviene interamente oppure non avviene: se fallisce, il file esistente resta intatto.",
+            {
+              "note": "Il file viene salvato nello stesso modo in cui è stato aperto: con la stessa codifica e gli stessi caratteri di fine riga. I testi creati su Windows e quelli creati su Linux mantengono le rispettive impostazioni."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Codifiche e fine riga",
+          "body": [
+            "La codifica determina come le lettere vengono rappresentate in byte. Scribe legge le informazioni presenti nel file e, se non ci sono, cerca di dedurla. Oggi la maggior parte dei file usa UTF-8; i file più vecchi dell’Europa centrale spesso usano windows-1250.",
+            {
+              "points": [
+                "Se i caratteri appaiono sbagliati (Ã£ invece di ă oppure quadratini), usa File → «Riapri con un’altra codifica» e scegli quella usata per salvare il file.",
+                "Per salvare con un’altra codifica, selezionala nella barra sotto il testo e salva. Se la codifica non può rappresentare alcuni caratteri, Scribe ti indica quali sono e non salva il file.",
+                "Puoi cambiare i caratteri di fine riga (Windows CRLF, Linux e macOS LF, vecchio Mac CR) nello stesso punto. Se un file contiene caratteri di fine riga misti, viene segnalato; al salvataggio vengono uniformati."
+              ]
+            },
+            "Puoi scegliere nelle Impostazioni i valori iniziali per i nuovi testi."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Visualizzazione del testo",
+          "body": [
+            {
+              "points": [
+                "Tutte le opzioni del menu Visualizza sono interruttori: attivale per mostrarle, disattivale per nasconderle.",
+                "Testo: A capo automatico (Alt+Z) manda a capo le righe più lunghe della finestra senza modificare le righe del testo; Numeri di riga; Risultato accanto al testo.",
+                "Pannello laterale: Strumenti (Ctrl+T), Ricette, Statistiche. Il pannello mostra solo le sezioni attivate; se non ne attivi nessuna, non compare.",
+                "Strumenti visualizzati: puoi nascondere dal pannello i gruppi Trova e sostituisci, Righe, Maiuscole e lettere, Pulizia e Scrittura. Se scegli uno strumento dal menu Formato o Strumenti, la relativa sezione e il suo gruppo vengono riattivati automaticamente.",
+                "La doppia freccia in cima al pannello lo riduce a una striscia sul bordo, da cui puoi aprire ciascuna sezione con un clic. Trascina il bordo per allargarlo o restringerlo.",
+                "Puoi scegliere nelle Impostazioni il carattere e la dimensione del testo."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "File molto grandi",
+          "body": [
+            "I file più grandi di 64 MB non vengono caricati nell’editor: si aprono in una scheda che mostra 500 righe per pagina e le legge direttamente dal file man mano che scorri. Anche file di diversi gigabyte possono essere aperti in poco più del tempo necessario per leggerli una volta.",
+            {
+              "points": [
+                "«Pagina precedente» e «Pagina successiva» scorrono il file; inserisci un numero di riga e premi «Vai» per raggiungerla.",
+                "Trova esegue la ricerca nell’intero file con le stesse opzioni disponibili altrove e mostra un elenco di risultati. Fai clic su un risultato per raggiungere la riga corrispondente. Se i risultati sono molti, vengono caricati in più passaggi con «Trova altre corrispondenze».",
+                "«Applica una ricetta all’intero file» salva il risultato in una cartella scelta da te, mantenendo lo stesso nome. Il file originale non viene modificato.",
+                "«Apri tutto nell’editor» carica comunque il file nell’editor per modificarlo manualmente. L’operazione può essere lenta e richiedere una quantità di memoria diverse volte superiore alle dimensioni del file."
+              ]
+            },
+            {
+              "note": "I file con due byte per carattere (UTF-16) non possono essere visualizzati una pagina alla volta. Durante l’esecuzione di una ricetta, l’intero file viene caricato in memoria: il limite dipende dalla memoria disponibile sul computer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Strumenti",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Funzionamento degli strumenti",
+          "body": [
+            "Gli strumenti si trovano nel pannello accanto al testo, raggruppati per categoria. Fai clic su uno strumento per vedere le opzioni, quindi scegli Applica al testo.",
+            {
+              "points": [
+                "Selezionando una parte del testo, lo strumento modifica solo quella; senza selezione, modifica l’intero testo. Il pannello indica in alto quale dei due casi si applica.",
+                "Sotto il pulsante, lo strumento descrive l’operazione eseguita e indica quante righe o posizioni ha modificato.",
+                "Ogni strumento costituisce un solo passaggio: Annulla lo ripristina per intero.",
+                "Tutti gli strumenti si trovano anche nei menu e nella ricerca dei comandi: quelli che modificano la struttura del testo (righe, maiuscole e lettere, pulizia) sono nel menu Formato; gli altri in Strumenti. Se scegli uno strumento da un menu, si apre il pannello con le relative opzioni."
+              ]
+            },
+            "Nel menu Formato, gli strumenti con una scelta principale espongono le singole opzioni come comandi: ogni modalità per modificare maiuscole e minuscole, ogni tipo di virgolette e ogni modo per invertire il testo ha un comando dedicato, che apre lo strumento con quell’opzione già selezionata. Se la finestra non è abbastanza larga per mostrare un gruppo, il gruppo diventa un pulsante che apre l’elenco completo.",
+            "Gli strumenti vengono eseguiti su questo computer. Il testo non viene inviato altrove."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Anteprima del risultato",
+          "body": [
+            "Mentre uno strumento è aperto, il risultato previsto viene mostrato accanto al testo nel riquadro «Risultato». Il testo non cambia finché non scegli Applica al testo. L’anteprima si aggiorna: se cambi un’opzione o il testo, il risultato viene ricalcolato.",
+            {
+              "points": [
+                "Il testo e il risultato sono affiancati, ciascuno sotto un’intestazione della stessa altezza, così le righe corrispondenti iniziano alla stessa altezza; scorrono insieme (il pulsante a forma di catena disattiva lo scorrimento sincronizzato).",
+                "Le righe che cambierebbero vengono evidenziate; la parte modificata è più scura. Le righe che verrebbero solo spostate e quelle nuove hanno colori distinti. Nel testo vengono evidenziate anche le righe che verrebbero modificate o rimosse.",
+                "Sotto i titoli sono riepilogate le modifiche: righe cambiate, spostate, aggiunte o rimosse, e numero di righe e caratteri prima e dopo.",
+                "Sotto il risultato sono elencate le righe che verrebbero rimosse. Fai clic su una riga per raggiungerla nel testo.",
+                "I pulsanti del risultato consentono di copiarlo, aprirlo come nuovo testo, confrontarlo con il testo di una scheda, sincronizzare lo scorrimento, visualizzarlo sotto invece che accanto al testo oppure nasconderlo. Il testo dispone di comandi separati: Annulla, Ripeti, Copia, Incolla sopra, Seleziona tutto e Cancella.",
+                "Trascina il divisore tra i due riquadri per dare più spazio a uno dei due; con un doppio clic li riporti alla stessa larghezza."
+              ]
+            },
+            "Dopo aver scelto «Applica al testo», il riquadro Risultato conferma: «Applicato. Il testo a sinistra ora mostra il risultato.» Offre Annulla e «Confronta con il testo originale», che apre il confronto tra il testo prima e dopo la modifica. Il risultato torna a essere un’anteprima non appena modifichi il testo o un’opzione dello strumento.",
+            {
+              "note": "Visualizza → «Risultato accanto al testo» mostra o nasconde il riquadro. Per testi molto lunghi (oltre due milioni di caratteri) non viene mostrata un’anteprima: applica lo strumento e usa Annulla per ripristinare il testo."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Sostituzione globale",
+          "body": [
+            "Sostituisce in un solo passaggio tutte le occorrenze trovate. Mentre digiti il testo da cercare, Scribe indica quante corrispondenze ci sono e le evidenzia nel testo, così puoi vedere cosa cambierà prima di applicare la sostituzione.",
+            {
+              "points": [
+                "«Espressione regolare»: il testo da cercare è un modello. In «Sostituisci con», $1, $2… indicano i gruppi trovati dal modello.",
+                "«Distingui maiuscole e minuscole»: a e A sono lettere diverse.",
+                "«Solo parole intere»: «gatto» non viene trovato all’interno di «gattone».",
+                "«Mantieni le maiuscole del testo sostituito»: sostituendo «gatto» con «cane», «Gatto» diventa «Cane» e «GATTO» diventa «CANE»."
+              ]
+            },
+            {
+              "points": [
+                "«Altre opzioni» → «Sostituisci ogni corrispondenza con…»: il testo sostitutivo può contenere campi che vengono compilati per ogni corrispondenza. {counter} conta 1, 2, 3… ({counter:10} parte da 10, {counter:10:5} aumenta di 5); {date} e {time} inseriscono data e ora del computer; {uuid} genera un identificatore; {random} genera 8 lettere e cifre casuali ({random:12} ne genera 12).",
+                "Sotto il testo cercato, Scribe indica anche su quante righe si trovano le corrispondenze e quanti testi distinti contengono risultati."
+              ]
+            },
+            "«Sostituisci più elementi» applica un elenco di coppie in un solo passaggio. Scrivi una coppia per riga nel formato: testo da cercare => testo sostitutivo. Le coppie vengono applicate in ordine, ciascuna sul risultato della precedente; se la seconda parte è vuota, il testo corrispondente viene rimosso.",
+            {
+              "note": "Il programma non può bloccarsi a causa di un modello: il tempo di esecuzione cresce in proporzione alla lunghezza del testo. Per questo non sono supportati i riferimenti all’indietro ai gruppi trovati (\\1)."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Gestione delle righe",
+          "body": [
+            {
+              "points": [
+                "Ordina le righe in base a: ordine alfabetico secondo la lingua del programma o una lingua scelta (in rumeno ă viene dopo a; in svedese ä dopo z; in tedesco ä accanto ad a); lettere con numeri interpretate come numeri (file2 prima di file10); numero iniziale della riga; lunghezza; numero di parole; data all’inizio della riga (05.03.2024, 2024-03-05, con o senza orario); indirizzi Internet; numeri di versione (1.2.10 dopo 1.2.9); titoli, ignorando l’articolo iniziale; un ordine definito da te (piccolo, medio, grande); oppure nessun criterio.",
+                "Le righe senza un valore utilizzabile per l’ordinamento (senza numero o data oppure con un valore non incluso nell’ordine definito) restano in fondo, sia che le altre siano ordinate dal più piccolo al più grande sia nel senso opposto.",
+                "Altre opzioni di ordinamento: inizia il confronto da una parola o un carattere specifico oppure da una colonna della tabella (specificando anche come interpretarne il contenuto); mantieni la prima riga come intestazione; ordina i paragrafi invece delle righe; esegui prima una pulizia con rimozione degli spazi iniziali e finali, delle righe vuote e dei duplicati.",
+                "Rimuovi righe duplicate: conserva la prima, l’ultima o nessuna delle righe ripetute (restano solo quelle presenti una volta). Puoi ignorare maiuscole e minuscole, spazi attorno alla riga, cifre, punteggiatura o un numero di caratteri all’inizio o alla fine; puoi confrontare solo una colonna o il testo trovato da un modello. Le righe vuote possono essere trattate come le altre: conservarle, rimuoverle o ridurle a una sola.",
+                "Conta le righe ripetute: lascia una sola occorrenza di ogni riga e ne scrive il numero di ripetizioni prima del testo. Puoi ordinare dalla più ripetuta alla meno ripetuta, viceversa o secondo l’ordine originale.",
+                "Mantieni o rimuovi righe: cerca un contenuto in ogni riga e conserva solo quelle che lo contengono oppure solo quelle che non lo contengono.",
+                "Inverti l’ordine delle righe; mescola le righe.",
+                "Numera le righe: scegli il numero iniziale, il testo che lo segue e gli zeri iniziali per allineare i numeri; le righe vuote possono restare senza numero.",
+                "Righe vuote: rimuovile tutte oppure mantienine una sola quando sono consecutive.",
+                "Unisci le righe in una sola, scegliendo il separatore; dividi il testo in righe a ogni virgola, punto e virgola o altro carattere. Nei campi in cui indichi un separatore per numerare, unire, dividere o contare, \\t rappresenta una tabulazione, che non può essere digitata direttamente nel campo."
+              ]
+            },
+            {
+              "note": "Un’opzione viene mostrata solo quando è pertinente, ad esempio la colonna da confrontare quando scegli l’ordinamento per colonna. Le opzioni meno comuni si trovano in «Altre opzioni»."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Maiuscole",
+          "body": [
+            "Modifica maiuscole e minuscole: iniziale maiuscola, iniziale maiuscola per ogni parola, tutto maiuscolo, tutto minuscolo, inversione e formati usati nei nomi del codice: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "L’uso delle maiuscole segue le regole di ogni alfabeto, non solo quelle dell’inglese.",
+            "Nel gruppo Direzione, «Inverti il testo» può invertire le lettere di ogni riga, l’ordine delle parole o le lettere di ciascuna parola; «Capovolgi» trasforma il testo per leggerlo capovolto e «Come in uno specchio» inverte anche i caratteri asimmetrici a destra e a sinistra. Le lettere vengono conteggiate come nella lettura: una lettera con i suoi segni diacritici resta una sola lettera."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Pulizia",
+          "body": [
+            {
+              "points": [
+                "Pulisci gli spazi: sostituisce più spazi consecutivi con uno solo e rimuove gli spazi a fine riga.",
+                "Rimuovi spazi a inizio e fine riga: da entrambi i lati, solo all’inizio o solo alla fine.",
+                "Virgolette: dritte, inglesi, romene, tedesche o francesi.",
+                "Rimuovi i segni diacritici: ă diventa a, é diventa e. Solo per gli alfabeti latino e greco, in cui la lettera senza segni diacritici resta la stessa lettera.",
+                "Ripristina le lettere romene: ş e ţ (con cediglia, usate dalle tastiere più vecchie) diventano ș e ț (con virgola sottoscritta), le lettere usate nella scrittura romena.",
+                "Converti tabulazioni in spazi e spazi in tabulazioni, scegliendo la larghezza della tabulazione.",
+                "Rimuovi i tag HTML: per il codice sorgente di una pagina web incollato nel testo. Rimuove tag, script e stili, mantenendo il contenuto visibile al lettore. Per caricare una pagina dal suo indirizzo, usa lo strumento «Testo di una pagina web (dal suo indirizzo)».",
+                "Testo di una pagina web: inserisci l’indirizzo (example.com/page) e scegli «Carica il testo». Il contenuto visibile al lettore viene inserito nel punto in cui si trova il cursore, senza tag, script o stili. È l’unico strumento di Scribe che si collega a Internet, e solo quando lo richiedi: la pagina viene caricata dal browser installato sul computer (Microsoft Edge o Google Chrome), avviato senza finestra e senza cookie o accessi personali; il programma stesso non invia nulla. Se la pagina richiede l’accesso, ottieni solo il contenuto visibile a chiunque."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Ripristino dei segni diacritici romeni",
+          "body": [
+            "Aggiunge i segni diacritici al testo romeno digitato senza ă, â, î, ș, ț.",
+            {
+              "steps": [
+                "Apri lo strumento Ripristina le lettere romene nel gruppo Pulizia e scegli Applica al testo.",
+                "Le parole con una sola forma corretta vengono modificate subito: «stiu» diventa «știu», «informatii» diventa «informații».",
+                "Le parole con più interpretazioni possibili (fata, fată, fața, față) vengono elencate sotto il pulsante, nella posizione in cui compaiono nel testo. Fai clic sulla forma corretta per ciascuna.",
+                "In alternativa, prima di applicare seleziona «Scegli automaticamente la forma più probabile quando una parola è ambigua»: non ti verrà chiesto di scegliere, ma dovrai rileggere il risultato."
+              ]
+            },
+            "Quando il contesto è sufficiente, Scribe decide in base alle parole vicine: «o casa» diventa «o casă», «casa mea» resta invariato, «pentru ca» diventa «pentru că».",
+            {
+              "note": "Lo strumento è stato creato per Scribe usando un elenco di parole comuni e le desinenze che in romeno richiedono sempre i segni diacritici. Le parole sconosciute (rare o nomi propri) restano come sono state digitate; quelle che contengono già i segni non vengono modificate. Rileggi il risultato prima di inviarlo."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Scrittura di testo: segnaposto e testo casuale",
+          "body": [
+            "Gli strumenti del gruppo «Scrivi testo» non modificano il contenuto esistente: aggiungono testo nel punto in cui si trova il cursore, sostituendo l’eventuale selezione.",
+            {
+              "points": [
+                "Testo segnaposto: genera paragrafi, frasi, parole, elenchi, titoli o parti di una pagina (titolo, paragrafi, elenco). Puoi usare il lorem ipsum, l’inglese, il romeno, parole a tema ufficio o cucina oppure parole a tua scelta. In Altre opzioni puoi impostare la lunghezza delle frasi (breve, media o lunga), il formato (testo semplice, Markdown, HTML o JSON), il livello dei titoli, un limite di caratteri (il testo viene tagliato alla fine di una parola e si conclude comunque con una frase) e le parole da escludere.",
+                "Dati fittizi: genera nomi, indirizzi e-mail, numeri di telefono, indirizzi postali, date o numeri, uno per riga, riferiti alla Romania o a paesi anglofoni. «Righe secondo un modello» crea righe nel formato che definisci, usando {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} e {row} come campi da sostituire con i dati generati: puoi creare al volo una tabella di esempio.",
+                "Testo casuale: genera password (con almeno una lettera, una cifra e un simbolo), lettere, cifre, numeri esadecimali o identificatori UUID, su una riga o su più righe. Puoi escludere i caratteri facilmente confondibili (0 e O, 1, l e I).",
+                "Un seme casuale (in «Altre opzioni») fa sì che il testo segnaposto e i dati fittizi risultino identici a ogni generazione con lo stesso numero; 0 produce un risultato diverso ogni volta."
+              ]
+            },
+            {
+              "note": "Le password vengono generate su questo computer usando i numeri casuali del sistema operativo e non vengono inviate altrove. Gli indirizzi e-mail fittizi terminano con example.com, un dominio che non recapita messaggi. Un numero di telefono casuale potrebbe appartenere a qualcuno: non chiamarlo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ricette",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Salvataggio delle operazioni come ricetta",
+          "body": [
+            "Una ricetta è un elenco di strumenti con le relative opzioni, salvato con un nome e riutilizzabile con un clic.",
+            {
+              "steps": [
+                "Applica al testo gli strumenti desiderati, nell’ordine in cui vuoi eseguirli.",
+                "Apri «Ricette» in cima al pannello: vengono elencati gli strumenti che hai applicato.",
+                "Scegli «Salva come ricetta…» e assegnale un nome.",
+                "In seguito, apri la ricetta e scegli «Applica al testo»: verranno eseguiti tutti i passaggi e un solo Annulla li annullerà tutti."
+              ]
+            },
+            "Le ricette vengono conservate su questo computer e sono disponibili in ogni testo."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Modifica di una ricetta o creazione da zero",
+          "body": [
+            "Scegli «Modifica…» su una ricetta aperta per visualizzarne il nome e i passaggi. Puoi spostare ogni passaggio in alto o in basso, rimuoverlo o cambiarne le opzioni; aggiungi strumenti dall’elenco sotto i passaggi. Le modifiche vengono salvate solo quando scegli «Salva».",
+            "«Nuova ricetta» ne crea una senza passaggi, che puoi comporre allo stesso modo senza dover prima applicare gli strumenti a un testo.",
+            {
+              "note": "Gli strumenti che generano testo (segnaposto e casuale) non possono essere inseriti in una ricetta: una ricetta serve a modificare un testo."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Esecuzione di una ricetta sui file",
+          "body": [
+            {
+              "steps": [
+                "Apri la ricetta e, in «Applica ai file», aggiungi file o una cartella (incluse le sottocartelle).",
+                "Scegli dove salvare i risultati: in un’altra cartella, lasciando invariati i file originali, oppure sovrascrivendo i file stessi.",
+                "Avvia l’elaborazione. Scribe indica quanti file sono stati scritti, quanti non richiedevano modifiche e quali operazioni non sono riuscite, spiegandone il motivo."
+              ]
+            },
+            "Ogni file viene salvato con la codifica e i caratteri di fine riga originali. Se scegli un’altra cartella, i file mantengono la struttura delle cartelle di origine e i file già presenti non vengono sovrascritti.",
+            {
+              "note": "Sovrascrivere i file originali non è reversibile in Scribe. Conserva una copia se i file sono importanti."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistiche, confronto e cartelle",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistiche",
+          "body": [
+            "La sezione «Statistiche» in cima al pannello descrive il testo o la selezione. Puoi chiudere ciascuna sezione.",
+            {
+              "points": [
+                "In alto: parole, caratteri con e senza spazi, frasi, paragrafi, righe, pagine e dimensione in byte.",
+                "Tempi di lettura silenziosa, lettura ad alta voce, digitazione e scrittura a mano.",
+                "Parole: quante sono diverse (e quale percentuale rappresentano), numero di lettere e sillabe, parola più lunga e più corta e numero di parole per ciascuna lunghezza.",
+                "Frasi: parole per frase, quante sono brevi, medie e lunghe, quante sono affermazioni, domande ed esclamazioni, e la frase più lunga e quella più corta.",
+                "Leggibilità: punteggio da 0 (molto difficile) a 100 (molto facile), calcolato con una formula adatta alla lingua del testo. Esistono formule per inglese, tedesco, spagnolo, francese, italiano, olandese, portoghese e russo; per le altre lingue non viene mostrato un punteggio, perché una formula diversa darebbe un risultato fuorviante.",
+                "Parole ed espressioni più frequenti: le parole usate più spesso e la loro percentuale nel testo, oltre alle coppie e alle sequenze di tre parole ricorrenti.",
+                "Limiti di lunghezza più comuni: caratteri rimanenti o in eccesso per titoli, descrizioni, brevi post e altri contenuti."
+              ]
+            },
+            "Le parole e le frasi vengono individuate secondo le regole di ogni sistema di scrittura; vengono quindi conteggiati anche cinese, giapponese e thailandese, che non separano le parole con spazi. Nelle Impostazioni puoi indicare le velocità usate per calcolare i tempi e il numero di parole per pagina."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Confronto tra due testi",
+          "body": [
+            {
+              "points": [
+                "Strumenti → «Confronta con un altro testo»: confronta il testo nell’editor con un testo digitato o incollato.",
+                "Strumenti → «Confronta con un file»: confronta il testo nell’editor, nello stato corrente, con un file scelto.",
+                "Strumenti → «Confronta due testi»: confronta due testi digitati o incollati, affiancati.",
+                "Strumenti → «Confronta due file»."
+              ]
+            },
+            "I due testi vengono mostrati affiancati. Le righe presenti solo nel primo sono indicate come rimosse, quelle presenti solo nel secondo come aggiunte; nelle righe modificate vengono evidenziate le parole diverse. Vengono mostrate solo le differenze con alcune righe di contesto; usa le frecce per passare da una differenza alla successiva.",
+            "Puoi ignorare maiuscole e minuscole, spazi, righe vuote, numeri o punteggiatura. «In un’unica colonna» mostra ciò che è stato rimosso sopra ciò che è stato aggiunto, ciascuno con il proprio simbolo, invece di disporre i testi affiancati. Accanto ai conteggi, Scribe indica la somiglianza tra i due testi come percentuale di righe uguali.",
+            "Dopo aver selezionato il primo testo, questo viene subito visualizzato in attesa del secondo. Trascina il divisore tra i due testi per dare più spazio a uno dei due; mentre digiti, puoi trascinare in alto o in basso il divisore sotto i campi per ingrandire i riquadri o l’area di confronto. Con un doppio clic ripristini la posizione del divisore.",
+            "Quando sono state modificate più righe consecutive, ciascuna viene affiancata a quella più simile, così una riga aggiunta o rimossa non fa apparire modificate tutte le righe successive.",
+            "«Digita o incolla i testi» mostra un campo sopra ciascuna colonna; il confronto si aggiorna mentre scrivi. Puoi comunque scegliere un file per uno dei due lati."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Ricerca e sostituzione in una cartella",
+          "body": [
+            {
+              "steps": [
+                "Strumenti → «Cerca in una cartella» (Ctrl+Maiusc+F), quindi scegli la cartella. La ricerca include anche le sottocartelle.",
+                "Digita il testo da cercare e scegli le stesse opzioni di «Sostituisci ovunque». «Tipi di file» limita la ricerca ad alcune estensioni (txt, md, csv…).",
+                "Le corrispondenze vengono mostrate riga per riga, file per file. Fai clic su una riga per aprire il file in quel punto.",
+                "Per sostituire il testo, inserisci quello nuovo, deseleziona i file da lasciare invariati e scegli «Scrivi i file»."
+              ]
+            },
+            "I file vengono modificati solo quando lo chiedi e solo se sono ancora selezionati. Ciascuno viene salvato con la codifica e i caratteri di fine riga originali.",
+            {
+              "note": "Le cartelle nascoste e quelle generate dai programmi (.git, node_modules) vengono escluse, a meno che tu non chieda di includerle. I file non testuali vengono sempre esclusi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Impostazioni",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Impostazioni di Scribe",
+          "body": [
+            "File → Impostazioni apre le impostazioni generali del programma nella sezione dedicata a Scribe.",
+            {
+              "points": [
+                "Editor: scegli un carattere a larghezza fissa o quello predefinito del programma, la dimensione, l’a capo automatico, i numeri di riga e se visualizzare l’anteprima del risultato prima di applicarlo.",
+                "Nuovo testo: imposta i caratteri di fine riga e scegli se il file deve iniziare con un marcatore dell’ordine dei byte.",
+                "Statistiche: imposta le velocità di lettura, lettura ad alta voce, digitazione e scrittura a mano, e il numero di parole per pagina.",
+                "Scorciatoie dei comandi di Scribe."
+              ]
+            },
+            "Ogni impostazione ha un pulsante per ripristinare il valore iniziale."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Informazioni su Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Informazioni su Scribe",
+          "body": [
+            "Scribe è l’app di Syntelab Creative dedicata al testo: un editor con gli strumenti a fianco. Mostra l’anteprima delle modifiche prima di applicarle, pulisce e riordina elenchi, cerca e sostituisce testo in un documento o in un’intera cartella, confronta testi, ne analizza il contenuto, genera testo segnaposto e dati fittizi e salva come ricette le operazioni che vuoi riutilizzare.",
+            "Tutto viene elaborato su questo computer. Non ci sono limiti alle dimensioni o al numero dei testi: i limiti sono la memoria del computer e ciò che la tecnologia attuale consente.",
+            "L’app è nuova. Se non soddisfa le esigenze dei tuoi testi, faccelo sapere tramite Aiuto → Feedback: così possiamo capire su cosa lavorare."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Tecnologie usate da Scribe",
+          "body": [
+            {
+              "points": [
+                "Editor: CodeMirror.",
+                "Lettura e scrittura delle codifiche: encoding_rs; chardetng viene usato per dedurre la codifica dei file che non la indicano.",
+                "Ricerca e sostituzione: libreria regex di Rust, i cui modelli non possono bloccare il programma.",
+                "Ordinamento secondo le regole di ogni lingua e individuazione di parole e frasi in ogni sistema di scrittura: ICU4X, la libreria Unicode.",
+                "Confronto dei testi: libreria similar.",
+                "Diacritici romeni: elenco di parole e regole creati per Scribe."
+              ]
+            },
+            "Le tecnologie condivise con il resto del programma sono descritte in «Informazioni su Syntelab Creative»."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Limiti attuali di Scribe",
+          "body": [
+            {
+              "points": [
+                "I file molto grandi vengono letti una pagina alla volta e possono essere modificati solo tramite ricette; per modificarli manualmente occorre caricarli per intero, usando memoria.",
+                "Il ripristino dei diacritici romeni riconosce le parole comuni; le parole rare e i nomi propri restano come sono stati digitati.",
+                "Non è disponibile il controllo ortografico.",
+                "Qui non è possibile estrarre testo da PDF o documenti Office; per aprirli usa PDF Organizer.",
+                "L’editor non evidenzia la sintassi del codice o di Markdown.",
+                "Un file trascinato sulla finestra si apre come nuovo testo: il programma non riceve il percorso del file, quindi per salvarlo ti chiede dove."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

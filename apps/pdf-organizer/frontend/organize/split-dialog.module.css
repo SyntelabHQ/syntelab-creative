@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.lead,
+.result {
+  margin: 0;
+}
+
+.lead {
+  color: var(--sc-muted);
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  cursor: pointer;
+}
+
+.option:has(input[type='radio']:checked) {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.option[data-disabled='true'] {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.option input[type='radio'] {
+  width: 18px;
+  height: 18px;
+  margin-block: 2px 0;
+  accent-color: var(--sc-accent);
+}
+
+.optionText {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+}
+
+.number {
+  width: 84px;
+  min-height: 34px;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+}
+
+.hint {
+  flex-basis: 100%;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.result {
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}

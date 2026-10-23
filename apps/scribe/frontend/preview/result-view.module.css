@@ -1,0 +1,10 @@
+/* The result, written as the text is: same letters, same size (they come from the tab around it). */
+.result {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.result :global(.cm-editor) {
+  height: 100%;
+}

@@ -1,0 +1,182 @@
+/* Schedules laid out to be read: one after another, each with its words, its fields and its next runs. */
+.view {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  background: var(--sc-surface);
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.expression {
+  align-self: flex-start;
+  padding: 2px 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+  color: var(--sc-muted);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 13px;
+}
+
+/* What the schedule says: the line a person came for. */
+.says {
+  margin: 0;
+  color: var(--sc-text);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 72px;
+  padding: 6px 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+}
+
+.field dd {
+  margin: 0;
+  color: var(--sc-accent);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.field dt {
+  color: var(--sc-muted);
+  font-size: 11px;
+}
+
+.heading {
+  margin: 4px 0 0;
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.next {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: run;
+}
+
+.next li {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1.4fr) minmax(0, 0.8fr) auto;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 13px;
+  counter-increment: run;
+}
+
+.next li::before {
+  color: var(--sc-muted);
+  content: counter(run);
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+}
+
+.far {
+  color: var(--sc-muted);
+}
+
+.next code {
+  color: var(--sc-muted);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 12px;
+}
+
+.warning,
+.hint,
+.note {
+  margin: 0;
+  font-size: 13px;
+}
+
+.warning {
+  padding: 8px 10px;
+  border-radius: var(--sc-radius-s);
+  background: color-mix(in srgb, var(--sc-action-changelog-hover) 16%, var(--sc-surface));
+  color: var(--sc-text);
+}
+
+.hint,
+.note {
+  color: var(--sc-muted);
+}
+
+.note {
+  padding: 14px 16px;
+}
+
+/* The form a schedule was written in, beside it. */
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.form {
+  color: var(--sc-muted);
+  font-size: 12px;
+}
+
+/* The schedule as the other forms write it. */
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.forms li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.formName {
+  min-width: 120px;
+  color: var(--sc-muted);
+}
+
+.forms code {
+  flex: 1;
+  min-width: 160px;
+  color: var(--sc-text);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+}
+
+.cannot {
+  color: var(--sc-muted);
+  font-style: italic;
+}

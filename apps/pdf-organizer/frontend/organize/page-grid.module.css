@@ -1,0 +1,138 @@
+.scroller {
+  flex: 1;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--sc-surface-2);
+}
+
+.strip {
+  position: relative;
+}
+
+.row {
+  position: absolute;
+  inset-inline: 0;
+  display: flex;
+}
+
+.cell {
+  position: relative;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  padding-block: 12px 8px;
+  padding-inline: 8px;
+  border: 2px solid transparent;
+  border-radius: var(--sc-radius-m);
+  background: none;
+  color: var(--sc-muted);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background: color-mix(in srgb, var(--sc-accent) 8%, transparent);
+}
+
+.cell[aria-pressed='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+  color: var(--sc-text);
+  font-weight: 600;
+}
+
+/* Where dragged pages would land: a line in the middle of the gap, so the
+   same place looks the same from either page (gap 12px, border 2px). */
+.cell[data-drop]::before {
+  content: '';
+  position: absolute;
+  inset-block: 8px;
+  width: 4px;
+  border-radius: var(--sc-radius-xs);
+  background: var(--sc-accent);
+}
+
+.cell[data-drop='before']::before {
+  inset-inline-start: -10px;
+}
+
+.cell[data-drop='after']::before {
+  inset-inline-end: -10px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  pointer-events: none;
+}
+
+/* A page is never mirrored, so its picture is placed with physical sides. */
+.picture {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: var(--sc-paper);
+  box-shadow: var(--sc-shadow-s);
+}
+
+.turned {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  translate: -50% -50%;
+}
+
+.number {
+  /* Its line has a set height: the cell is made exactly as tall as what it holds (`cellSize`). */
+  flex: none;
+  line-height: 20px;
+  pointer-events: none;
+}
+
+/* A page with the quick buttons that show while the pointer is on it. */
+.cellWrap {
+  position: relative;
+  flex: none;
+}
+
+.quick {
+  position: absolute;
+  inset-block-start: 8px;
+  inset-inline-end: 6px;
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  padding: 3px;
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-overlay);
+  box-shadow: var(--sc-shadow-s);
+}
+
+.cellWrap:hover .quick,
+.cellWrap:focus-within .quick {
+  display: flex;
+}
+
+.quickButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-on-color);
+  cursor: pointer;
+}
+
+.quickButton:hover {
+  background: color-mix(in srgb, var(--sc-paper) 20%, transparent);
+}

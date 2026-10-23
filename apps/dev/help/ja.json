@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "使い方",
+      "topics": [
+        {
+          "id": "start",
+          "title": "最初のページ",
+          "body": [
+            "Devのタブを開くと最初のページが表示されます。すべてのツールがメニューと同じ分類で並びます：エンコード、データ、生成、確認、ネットワーク。",
+            {
+              "points": [
+                "「ツールを検索」に入力すると一覧を絞り込めます。",
+                "ツールのピン留めボタンを押すと、一覧の上部にある「ピン留め済み」に表示されます。",
+                "ツールは同じタブで開きます。「ファイル」→「すべてのツール」で最初のページに戻れます。設定では、各ツールを専用タブで開くことや、新しいタブを最後に使ったツールで開くこともできます。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "何でも貼り付け",
+          "body": [
+            "最初のページ上部の欄に貼り付けると、トークン、証明書、JSON、UUID、タイムスタンプ、cronスケジュール、URL、XMLやHTML、SQL、Base64、チェックサム、表、YAMLなど、内容の種類を判定します。",
+            "判定結果ごとに、対応するツールが適合度の高い順に表示されます。選ぶと、テキストを入力した状態でツールが開き、処理が実行されます。",
+            {
+              "note": "貼り付けた内容は、消去するかタブを閉じるまで欄に残ります。ディスクには保存されません。"
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "ツール画面の構成",
+          "body": [
+            "多くのツールは共通の画面構成です。上部にオプション、片側に入力、反対側に出力があり、下部の行に処理結果が表示されます。",
+            {
+              "points": [
+                "入力やオプションが変わるたびに結果が作り直され、出力欄に表示されます。オプションの行にある「自動で実行」はそのことを示しています。キー入力のたびに実行するには長すぎるテキストや、128 MBを超えるファイルの場合だけ「実行」ボタンが表示され、それを押すまで待ちます。Ctrl+Enter でいつでもツールを実行できます。",
+                "テキストではない結果（Base64からデコードした画像、gzip）はプレビューとして表示されます。画像はそのまま、それ以外は種類、サイズ、先頭のバイトで表示されます。このとき「コピー」はBase64としてコピーし、画像は画像としてもコピーできます。テキストではない入力ファイルも同様です。",
+                "入力欄の上には「ファイルを開く」「貼り付け」「消去」、出力欄の上には「コピー」「ファイルに保存」があります。入力欄にファイルをドロップすることもできます。",
+                "入力の問題は、行と列を示して説明され、エディター内にも印が付きます。",
+                "「表示」メニューで2つの欄を左右または上下に並べたり、行番号や長い行の折り返しを切り替えたりできます。欄の境界線はドラッグできます。",
+                "選んだオプションは次回も保持されます。入力した内容は保持されません。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "すべて消去と保持される情報",
+          "body": [
+            "各ツールの右下にある「すべて消去」を押すと、入力、結果、各欄に入力した内容、エディターで取り消せる履歴がすべて一度に消去されます。",
+            "Devが保持するのは設定、ピン留めしたツール、最後に使ったツール名、各ツールのオプションだけです。ツールに入力、貼り付け、読み込み、生成した内容は、ディスクやログ、最近使った項目の一覧に保存されません。鍵、パスフレーズ、トークン、リクエストのヘッダーなどの秘密情報も、タブ内だけにあり、ほかには保存されません。",
+            "ひとつだけ、しばらくディスクに残るものがあります。ファイルの結果と、テキストではない結果は、表示してから保存できるように、プログラム専用のフォルダーに書き込まれます。それぞれ、別の結果に置き換わったとき、ツールを「すべて消去」したり閉じたりしたとき、そしていずれにしてもDevを再起動したときに削除されます。"
+          ]
+        },
+        {
+          "id": "files",
+          "title": "あらゆるサイズのファイル",
+          "body": [
+            "ファイルサイズに上限はありません。表示できるサイズ（最大16 MB）のファイルはエディターに読み込まれます。それより大きいファイルやテキストではないファイルはディスク上に置いたまま、先頭部分（またはプレビュー）だけを表示し、ツールが元の場所から読み込みます。結果はテキストの場合と同じように表示されます。その後「ファイルに保存」で、結果を指定した場所にコピーできます。",
+            {
+              "points": [
+                "時間のかかる処理では、進行状況と「停止」ボタンがカードに表示されます。",
+                "UTF-8以外（UTF-16、Windows-1252など）のテキストファイルは、表示可能なサイズならテキストとして読み込まれ、文字コードが表示されます。Devから保存するファイルはUTF-8です。",
+                "ツールにドロップしたファイルは、「ファイルを開く」と同じように開かれます。ファイルの場所をウィンドウが判別できない場合は、貼り付けと同様に最大16 MBまで取り込まれます。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "複数ファイルとフォルダー",
+          "body": [
+            "「対象：テキスト／ファイル」があるツールでは、「ファイル」を選ぶと複数のファイルをまとめて処理できます。",
+            {
+              "steps": [
+                "サブフォルダーも含める設定を有効にして、ファイルまたはフォルダーを追加します。",
+                "追加時に各ファイルを一度読み込み、そのツールで処理できるか判定します。",
+                "結果の保存先を選びます。各ファイルの隣に別名で保存する、フォルダー構成を保って別フォルダーに保存する、または元のファイルに上書きする方法があります。上書きには再確認が必要です。「ハッシュ」では一覧に結果だけを表示することもできます。",
+                "一覧のファイルをクリックすると、何も書き込まれる前に、そのファイルだけの結果が選択肢の下に表示されます。",
+                "実行します。処理できないファイルがあってもほかのファイルは続行され、各ファイルの結果が表示されます。"
+              ]
+            },
+            {
+              "note": "確認せずに既存ファイルへ結果を上書きすることはありません。"
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Windowsエクスプローラーの右クリックメニュー",
+          "body": [
+            "プログラムの設定にある「Windowsエクスプローラー」で有効にします。項目は「Syntelab Creative」にまとめられます。Windows 11では「その他のオプションを表示」の中にあります。",
+            {
+              "points": [
+                "「Syntelab Devで開く」は、ツールが読み込める種類のファイル（.json、.yaml、.xml、.html、.sql、.csv、.pem、.crt、.der、.pfx、.key、.csr、.gzなど）に表示されます。ファイルの種類に合ったツールで開きます。",
+                "チェックサムは任意のファイルやフォルダーで使えます。ハッシュ値が各ファイルの横に表示され、何も書き込みません。",
+                "16進数表示は任意のファイルで使えます。",
+                "「比較」では、2つのファイルを「差分」の左右に、2つのフォルダーをフォルダー比較に読み込みます。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "エンコード",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "バイト列をBase64に変換したり、元に戻したりします。任意のファイルをエンコードできます。デコード結果は、テキストなら表示され、テキストでなければファイルに保存されます。",
+            {
+              "points": [
+                "文字セットは標準形式か、URL用（-と_）を選べます。",
+                "=でパディングし、64文字、76文字、または任意の文字数ごとに改行できます。",
+                "デコードではどちらの文字セットも、パディングの有無にかかわらず使えます。誤った文字の位置も表示されます。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL エンコード／デコード",
+          "body": [
+            "ブラウザーで使われるパーセントエンコーディングを行います。URLの一部（通常の文字以外をエンコード）、URL全体（URL固有の記号を保持）、フォーム（空白を+で表す）から選べます。",
+            "デコード時は、%の後に16進数2桁が続かない箇所を表示します。"
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML エンティティ",
+          "body": [
+            "HTMLやXMLで特別な意味を持つ記号（&、<、>、引用符）を文字参照に変換し、逆変換します。名前、十進数、十六進数で表せます。名前はHTML標準に準拠します。",
+            "「ASCII 以外の文字もすべて対象にする」を選ぶと、アクセント記号付きの文字や他の文字体系も文字参照に変換します。"
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT デコーダー",
+          "body": [
+            "JSON Web Tokenを分解し、ヘッダーとペイロードをJSONで、クレームを文章で表示します。発行者、対象者、宛先、有効期限などを確認でき、「期限切れ」か「まだ期限切れではありません」かも示します。",
+            "共有秘密鍵を使った署名（HS256、HS384、HS512）を検証するには秘密鍵を入力します。秘密鍵方式（RS、ES、PS）の署名は検証しません。",
+            {
+              "note": "トークンと秘密鍵はタブ内に保持されます。デコードのために外部へ送信されることはありません。"
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "エスケープ／解除",
+          "body": [
+            "テキストをプログラミング言語（JSON、JavaScript、C、C++、Javaなど）の文字列形式に変換し、引用符、改行、その他の記号をエスケープします。文字列を元のテキストに戻すこともできます。"
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Gzip形式で圧縮・展開します。ファイルサイズを問わず、読み込みながら処理します。圧縮レベルは速度優先からサイズ優先まで選べます。テキストの結果はBase64で出力することもできます。"
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "基数変換",
+          "body": [
+            "1行に1つずつ入力した整数を、二進、八進、十進、十六進と、選択した最大36進までの形式で表示します。数値の大きさに上限はありません。",
+            {
+              "points": [
+                "数値の表記から基数を判定します。16進数は0x、二進数は0b、八進数は0oで始まり、16進数の文字があれば16進数、その他は十進数として扱います。すべての入力に使う基数を指定することもできます。",
+                "数字の間にある空白、アンダースコア、アポストロフィは無視されます（例：1_000_000）。",
+                "負の数は、コンピューターでの表現（2の補数）も、値を格納できる最小の8、16、32、64ビットなどで表示されます。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "データ",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON 整形ツール",
+          "body": [
+            "JSONを整形、圧縮、検証し、ツリー表示します。どのサイズの文書もストリームとして読み込みます。",
+            {
+              "points": [
+                "インデントは空白2個、空白4個、タブ、または任意個の空白から選べます。",
+                "追加オプションでは、キーの並べ替え、短い配列の1行表示、コロンの後の空白、改行コード、末尾の改行、ASCII以外の文字を\\uXXXXで表すかどうかを設定できます。",
+                "寛容な読み込みではコメント（// と /* */）と末尾のカンマを受け入れ、厳密なJSONとして出力します。",
+                "一度の処理でnullや空の値などを削除できます。",
+                "ツリーは階層ごとに展開でき、キーや値の文字列を検索できます。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "文書にJSONPathクエリ（RFC 9535）を実行します。例：$.store.book[?@.price < 10].title。結果には、一致した値、パス、または両方を表示できます。",
+            "クエリに誤りがある場合は、問題の位置を示します。"
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema 検証ツール",
+          "body": [
+            "JSON Schema（draft 4～2020-12）に照らして文書を検証します。スキーマは入力欄の下にあるペインに入力します。条件に合わない項目ごとに、位置と違反したルールを一覧表示します。",
+            "複数ファイルを指定すると、同じスキーマで各ファイルを検証します。他のファイルやURLを参照する$refは解決しません。"
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "スキーマ生成とJSONからTypeScriptへの変換",
+          "body": [
+            "JSONサンプルから、適合するJSON Schemaを生成します。「JSONからTypeScript」では、指定した名前で型宣言（interfaceまたはtype）を生成します。exportやreadonlyの有無も選べます。"
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "YAMLをJSONに、JSONをYAMLに変換します。YAMLはコアスキーマで読み込み、アンカーとマージも解決します。誤りの位置も表示します。"
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "表をJSONに、JSONを表に変換します。区切り文字は最初の行から判定するか、カンマ、セミコロン、タブ、縦棒から選べます。先頭行を見出しとして扱う設定や、数値とtrue／falseの自動判定もできます。",
+            "「表」表示では、サイズを問わずCSVを行と列で確認できます。"
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML／HTML 整形ツール",
+          "body": [
+            "XMLとHTMLを整形、圧縮、検証します。XMLは厳密に読み込み、閉じられていないタグがあれば位置を示します。HTMLはブラウザーと同様に、多少の誤りを許容して読み込みます。"
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL 整形ツール",
+          "body": [
+            "SQL文を句ごとに改行して整形したり、1行にまとめたりできます。キーワードは大文字、小文字、入力どおりから選べます。SQL方言の指定や、文の意味の検証は行いません。"
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "差分比較",
+          "body": [
+            "2つのテキストを行単位で、2つのJSON文書を内容で、または2つのフォルダーをファイルごとに比較します。最初の内容を入力欄に、次の内容をその下のペインに入れます。",
+            {
+              "points": [
+                "左右表示では行内で変わった語句を示します。「統合」はdiff -u形式のパッチを表示します。",
+                "大文字小文字、空白、空行、数字、句読点を無視できます。",
+                "JSONではキーの順番や整形方法の違いを無視します。結果をJSON Patch（RFC 6902）として出力できます。",
+                "フォルダー比較では片方にしかないファイル、同一のファイル、異なるファイルを表示します。行の「比較」を選ぶと、2つのファイルをテキストとして開きます。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdownプレビュー",
+          "body": [
+            "Markdownを実際の表示に近い形でプレビューし、コピーまたは保存できるHTMLを生成します。テーブル、取り消し線、タスクリスト、脚注を含むCommonMarkに対応します。",
+            {
+              "points": [
+                "Markdown内に入力したHTMLは実行せず、テキストとして表示します。",
+                "ネットワークから取得する画像は読み込みません。代わりに説明とアドレスを表示します。本文に埋め込まれた画像（data:）は表示します。",
+                "クリックしたリンクはシステムのブラウザーで開きます。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "生成",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "UUIDのバージョン1、3、4、5、6、7（RFC 9562）を、指定した個数だけ生成します。ハイフン付き、ハイフンなし、URN形式、波括弧付きから選べます。「分解」では、各UUIDのバージョンと内部の時刻または名前を確認できます。"
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "ハッシュ",
+          "body": [
+            "テキストまたはファイルのCRC-32、MD5、SHA-1、SHA-256、SHA-384、SHA-512を、複数同時に計算します。16進数またはBase64で表示できます。サイズを問わず、ファイルを読み込みながら計算します。",
+            {
+              "points": [
+                "照合ではチェックサム、または.sha256ファイルの1行を貼り付けて、一致するか確認できます。",
+                "HMACキーを指定すると、そのキーを使ったHMACを計算します。",
+                "テキストを行ごとに処理し、各行のハッシュを計算できます。",
+                "ファイル処理ではハッシュを各ファイルの横に表示します。「すべてコピー」ではsha256sum形式で出力します。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "パスワードとシークレット",
+          "body": [
+            "選んだ種類の文字を使ったパスワード、単語によるパスフレーズ、16進数またはBase64形式のランダムバイト列を生成します。乱数にはOSの乱数源を使います。それぞれのエントロピー量をビット数で表示します。一度生成した後でオプションを変更すると、生成し直されます。",
+            "パスフレーズはElectronic Frontier Foundation（EFF）の長い単語リスト（英単語7,776語）から選びます。各単語の確率は同じです。6語で約77ビットのエントロピーになります。"
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "キーと証明書",
+          "body": [
+            "上部で選べる5つの機能：",
+            {
+              "points": [
+                "新しい鍵：RSA、EC P-256／P-384／P-521、Ed25519を生成します。PKCS #8、旧形式、OpenSSHなど各種形式に対応し、公開鍵はPEMまたはauthorized_keys用の1行形式で出力できます。指定すればパスフレーズで保護します。",
+                "証明書署名要求：新しい鍵または貼り付けた鍵を使い、subjectと追加の名前（SAN）を含むCSRを生成します。",
+                "自己署名証明書：同じ情報を自身の鍵で署名し、指定した日数有効な証明書を作ります。「他の証明書に署名できるようにする」を選ぶと、独自の認証局になります。",
+                "独自のCAで署名：CSR、認証局の証明書と鍵を入力すると、署名済み証明書と認証局の証明書が得られます。",
+                "読み込みと変換：PEM、DER、OpenSSH鍵、.pfx、.p12などを貼り付けるか開きます。内容と、鍵が証明書に対応するかを確認し、各項目を別形式で出力します。鍵と証明書をまとめて.pfxに保存できます。"
+              ]
+            },
+            {
+              "note": "すべてこのコンピューター上で生成されます。「すべて消去」するまで鍵はタブ内にあり、保存を選ばない限りほかには残りません。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "確認",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "正規表現テスター",
+          "body": [
+            "JavaScriptの正規表現をテキストに適用します。一致箇所とキャプチャグループ、位置を表示するか、一致箇所を置換したテキストを表示します。フラグはg、i、m、s、u、yです。",
+            "パターンはウィンドウとは別に実行され、20秒を超えると停止します。"
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron の説明",
+          "body": [
+            "スケジュールの意味と実行時刻を文章で示します。crontab（5フィールド、秒を含む6フィールド、年を含む7フィールド）、Quartz、AWS EventBridgeのcron()とrate()、systemdのOnCalendarに対応します。1行に1つ入力します。",
+            {
+              "points": [
+                "次回の実行時刻と、指定した場合は過去の実行時刻も、選んだタイムゾーンで表示します。",
+                "曜日の番号は、日曜日を0とするか、Quartzと同じく1とするかを選べます。秒を含み、さらに年、L、W、# のいずれかを含む行はQuartzの形式とみなされ、自動的にQuartzの方式で読み取られます。",
+                "同じスケジュールを別形式でも表示し、コピーしたり入力欄に追加したりできます。",
+                "各フィールドを選んでスケジュールを作れます。「作成ツールで変更」を押すと、入力済みスケジュールを作成ツールに読み込みます。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unixタイムスタンプ",
+          "body": [
+            "日時を1行に1つずつ読み込みます。1970年からの秒、ミリ秒、マイクロ秒、ナノ秒、または一般的な形式（ISO 8601、メールやHTTPの形式、Gitの形式）で書かれた日付に対応します。選んだタイムゾーンとUTCで表示し、各種タイムスタンプ形式にも変換します。"
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL パーサー",
+          "body": [
+            "ブラウザーと同様にURLを分解し、スキーム、ユーザー、ホスト（punycode表記の場合はUnicode形式も）、ポート、パス、デコードしたクエリパラメーター、フラグメントを表示します。"
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "証明書デコーダー",
+          "body": [
+            "PEMまたはDER形式のX.509証明書を読み込み、subject、issuer、有効期間、対象名、鍵、拡張情報、フィンガープリントをすべて表示します。",
+            "証明書を読み取りますが、信頼できるかどうかは判定しません。サイトが提示する証明書や、このコンピューターが信頼しているかを確認するには、「ネットワーク」→「サイトの証明書」を使ってください。"
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "16進ビューアー",
+          "body": [
+            "サイズを問わずファイル、または貼り付けたテキストのバイト列を表示します。各行の位置、バイト値、同じバイトを文字として表示します。",
+            {
+              "points": [
+                "0x1F4、1F4h、500などの形式で位置を指定できます。",
+                "バイト列（DE AD BE EF）またはテキスト（UTF-8、またはバイト順を指定したUTF-16）を前後に検索できます。",
+                "バイトをクリックすると、各サイズとバイト順での数値、文字、時刻を横に表示します。",
+                "ドラッグ、Shift、矢印キーで選択します。選択範囲は16進数、コード、Base64、テキストとしてコピーするか、ファイルに保存できます。"
+              ]
+            },
+            {
+              "note": "内容を表示するだけで、ファイルは変更しません。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ネットワーク",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "ネットワークツールの動作",
+          "body": [
+            "Devでネットワークに接続するのはこの4つのツールだけです。接続先はユーザーが指定します。",
+            {
+              "points": [
+                "入力したアドレスに、ボタンを押したときだけ接続します。バックグラウンドでは接続しません。",
+                "送信するのは入力した内容です。独自のUser-Agentを指定しない場合、すべてのユーザーに共通のUser-Agent（「Syntelab Creative」）だけをリクエストに追加します。",
+                "Cookieは保持しません。ユーザーやコンピューターの情報は送信せず、入力内容も保存しません。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTPクライアント",
+          "body": [
+            "メソッド、アドレス、ヘッダー（1行に1つ、Name: value形式）、本文を手動で指定してリクエストを1件送信します。本文は入力するか、サイズを問わずファイルから読み込めます。",
+            {
+              "points": [
+                "応答のステータス、所要時間（合計と最初のバイトまで）、サイズ、ヘッダー、本文を表示します。本文は種類に応じて色分けし、JSONは整形して表示します。テキストではない本文（画像、PDF）はそのまま表示され、受け取ったとおりに保存されます。",
+                "リダイレクトを追跡するか、最初の応答をそのまま確認できます。リクエストが経由したアドレスも一覧表示します。",
+                "このコンピューターが信頼する証明書に照らして検証します。無効にするのは自分のサーバーだけにしてください。",
+                "「送信して応答をファイルに保存」では、進行状況を表示しながらサイズを問わず本文をディスクに直接保存します。「停止」もできます。",
+                "「curl 形式でコピー」では、同じリクエストを実行するコマンドを出力します。"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS ルックアップ",
+          "body": [
+            "ネームサーバーに問い合わせて、名前のレコードを取得します。A、AAAA、CNAME、MX、NS、TXT、SOA、PTR、SRV、CAA、DS、DNSKEYに対応し、複数同時に検索できます。アドレスを入力するとPTRで名前を調べます。",
+            "コンピューターで設定されたネームサーバー、公開サーバー（1.1.1.1、8.8.8.8、9.9.9.9）、HTTPS経由のリゾルバー（Cloudflare、Google）、または指定したサーバーに問い合わせます。"
+          ]
+        },
+        {
+          "id": "port",
+          "title": "ポート確認",
+          "body": [
+            "ホストのTCPポートが接続を受け付けるか確認します。1つ、複数、または最大65,535までの範囲を指定できます（例：22、80、443、8000-8100）。指定時間内に各ポートが開いているか、閉じているか、応答がないかを表示します。",
+            {
+              "note": "自分が所有するホスト、またはテスト許可を得たホストだけを確認してください。"
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "サイトの証明書",
+          "body": [
+            "安全な接続時にサイトが提示する証明書を表示します。対象、署名者、有効期限までの日数、このコンピューターが信頼するかとその理由、TLSバージョン、暗号方式を確認できます。ハンドシェイクだけを行い、リクエストは送信しません。",
+            {
+              "points": [
+                "example.com、example.com:8443、またはWebアドレスを入力します。",
+                "メールサーバーやFTPは平文で接続を開始し、TLS（STARTTLS）への切り替えを要求します。ポート（25、587、143、110、21）から選ぶか、手動で指定できます。",
+                "「すべて」では証明書に含まれる情報をすべて表示します。「PEM」ではコピーまたは保存できます。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "設定",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Devの設定",
+          "body": [
+            "「ファイル」→「設定」を開くと、プログラム全体の設定のうちDevに関する項目が表示されます。",
+            {
+              "points": [
+                "各ツールを専用タブで開くか、選択中のタブで開くかを設定できます。",
+                "新しいタブを最後に使ったツール、または最初のページで開くよう設定できます。",
+                "各ツールのオプションとピン留めを、プログラムの初期状態に戻せます。"
+              ]
+            },
+            "Windowsエクスプローラーの右クリックメニュー、言語、テーマ、キー設定は、プログラム全体の設定にあります。"
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Devについて",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Devについて",
+          "body": [
+            "DevはSyntelab Creativeの開発者向けアプリです。エンコード／デコード、整形／検証、データ形式の変換、読みにくいデータの解析を行うツールをまとめています。",
+            "すべてこのコンピューター上で処理します。ツールに入力、貼り付け、読み込みをした内容を保存したり、外部に送信したりしません。ファイル数やサイズに固定の上限はなく、制約となるのはコンピューターのメモリーとディスク容量です。",
+            "開発中の新しいアプリです。作業に不足する点があれば、「ヘルプ」→「フィードバック」からお知らせください。"
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Devの使用技術",
+          "body": [
+            {
+              "points": [
+                "エディター：CodeMirror、https://codemirror.net。MITライセンス。Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "エディターでのJSON読み込みと色分け：@codemirror/lang-json、https://github.com/codemirror/lang-json、および@codemirror/language、@lezer/highlight。MITライセンス。Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "エディターでのYAML、XML、HTML、SQLの読み込みと色分け：@codemirror/lang-yaml、https://github.com/codemirror/lang-yaml；@codemirror/lang-xml、https://github.com/codemirror/lang-xml；@codemirror/lang-html、https://github.com/codemirror/lang-html（@codemirror/lang-css、@codemirror/lang-javascriptを含む）；@codemirror/lang-sql、https://github.com/codemirror/lang-sql。MITライセンス。Copyright (C) 2018-2024 by Marijn Haverbeke and others.",
+                "JSON Schemaによる文書検証：jsonschema、https://github.com/Stranger6667/jsonschema。MITライセンス。Copyright (c) 2020-2026 Dmitry Dygalo。ネットワーク機能を無効にしてビルドしているため、Devがスキーマを取得することはありません。",
+                "JSONPathのパターン照合と検索：regex、https://github.com/rust-lang/regex。MITまたはApache-2.0ライセンス。Copyright (c) 2014 The Rust Project Developers.",
+                "YAMLの読み込み：yaml-rust2、https://github.com/Ethiraric/yaml-rust2。MITまたはApache-2.0ライセンス。Copyright (c) 2015 Chen Yuheng、Copyright (c) 2023 Ethiraric。YAMLの書き出しはDev独自の実装です。",
+                "2つのテキストの比較（差分）：similar、https://github.com/mitsuhiko/similar。Apache-2.0ライセンス。作者：Armin Ronacher、Pierre-Étienne Meunier、Brandon Williams。",
+                "Gzip：flate2、https://github.com/rust-lang/flate2-rs。MITまたはApache-2.0ライセンス。Copyright (c) 2014-2026 Alex Crichton.",
+                "Hashツールのハッシュ値とトークン署名：sha2、sha1、md-5、https://github.com/RustCrypto/hashes。MITまたはApache-2.0ライセンス。Copyright (c) 2006-2009 Graydon Hoare、Copyright (c) 2009-2013 Mozilla Foundation、およびRustCryptoの開発者。",
+                "日時、時刻、タイムゾーン（Unixタイムスタンプ、Cronの説明）：jiff、https://github.com/BurntSushi/jiff。IANAデータベースのタイムゾーンを使用します。UnlicenseまたはMITライセンス。Copyright (c) 2015 Andrew Gallant.",
+                "URLの解析：url、idna、https://github.com/servo/rust-url。MITまたはApache-2.0ライセンス。Copyright (c) 2013-2025 the rust-url developers.",
+                "X.509証明書の読み込み：x509-parser、https://github.com/rusticata/x509-parser。MITライセンス。Copyright (c) 2017 Pierre Chifflier.",
+                "正規表現テスターは、アプリが使用するWebViewのJavaScriptエンジン（WindowsではMicrosoft Edge WebView2）でJavaScript正規表現を実行します。追加ライブラリーは使いません。",
+                "CRC-32：crc32fast、https://github.com/srijs/rust-crc32fast。MITまたはApache-2.0ライセンス。Copyright (c) 2018 Sam Rijs、Alex Crichton and contributors.",
+                "UUID：uuid、https://github.com/uuid-rs/uuid。Apache-2.0またはMITライセンス。Copyright (c) 2014 The Rust Project Developers、Copyright (c) 2018 Ashley Mannix、Christopher Armstrong、Dylan DPC、Hunar Roop Kahlon.",
+                "パスワード、シークレット、UUID用のランダムバイト列（OSから取得）：getrandom、https://github.com/rust-random/getrandom。MITまたはApache-2.0ライセンス。Copyright (c) 2018-2025 The rust-random Project Developers、Copyright (c) 2014 The Rust Project Developers.",
+                "RSA鍵と署名：rsa、https://github.com/RustCrypto/RSA、およびnum-bigint-dig、https://github.com/dignifiedquire/num-bigint。MITまたはApache-2.0ライセンス。Copyright (c) RustCrypto Developers and dignifiedquire；Copyright (c) 2014 The Rust Project Developers.",
+                "NIST曲線（P-256、P-384、P-521）の鍵と署名：p256、p384、p521、https://github.com/RustCrypto/elliptic-curves、および必要なecdsa、elliptic-curve、crypto-bigint。Apache-2.0またはMITライセンス。Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Ed25519鍵と署名：ed25519-dalek、curve25519-dalek、https://github.com/dalek-cryptography/curve25519-dalek。BSD 3-Clauseライセンス。Copyright (c) 2017-2019 isis agora lovecruft；Copyright (c) 2016-2021 isis agora lovecruft and Henry de Valence. All rights reserved.",
+                "鍵、要求、証明書の形式（PKCS #8、PKCS #1、SEC 1、SubjectPublicKeyInfo、X.509、PKCS #10、DER、PEM）：pkcs8、pkcs5、pkcs1、sec1、spki、der、x509-cert、https://github.com/RustCrypto/formats。Apache-2.0またはMITライセンス。Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "OpenSSH鍵ファイル：ssh-key、https://github.com/RustCrypto/SSH、および鍵の保護に必要なRustCryptoのbcrypt-pbkdf、aes、ctr、chacha20などの暗号・ハッシュ実装（https://github.com/RustCrypto）。Apache-2.0またはMITライセンス。Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "PKCS #12ファイル（.pfx、.p12）：p12-keystore、https://github.com/ancwrd1/p12-keystore、および必要なRustCryptoのpkcs12、cms、des、rc2、cbc、hmac、pbkdf2、scrypt。MITまたはApache-2.0ライセンス。Copyright (c) Dmitry Pankratov；Copyright (c) The RustCrypto Project Developers.",
+                "鍵の生成に使うOS由来の乱数：rand_core、https://github.com/rust-random/rand。MITまたはApache-2.0ライセンス。Copyright 2018 Developers of the Rand project、Copyright (c) 2014 The Rust Project Developers.",
+                "HTTPクライアント：ureq、https://github.com/algesten/ureq。MITまたはApache-2.0ライセンス。Copyright (c) 2019 Martin Algesten.",
+                "HTTPクライアントと「サイトの証明書」の安全なTLS接続：rustls、https://github.com/rustls/rustls（Apache-2.0、ISCまたはMITライセンス、Copyright (c) 2016 Joseph Birr-Pixton）；rustls-webpki、https://github.com/rustls/webpki（ISCライセンス、Copyright 2015 Brian Smith）；ring、https://github.com/briansmith/ring（Apache-2.0、ISCライセンス）；webpki-roots、https://github.com/rustls/webpki-roots（CDLA-Permissive-2.0ライセンス）。",
+                "このコンピューターが証明書を信頼するかの判定：rustls-platform-verifier、https://github.com/rustls/rustls-platform-verifier。MITまたはApache-2.0ライセンス。Copyright (c) 2022 1Password.",
+                "Markdownの読み込み：pulldown-cmark、https://github.com/pulldown-cmark/pulldown-cmark。MITライセンス。Copyright 2015 Google Inc. All rights reserved.",
+                "UTF-8以外の文字コードで書かれたファイルの読み込み：encoding_rs、https://github.com/hsivonen/encoding_rs（データ部分はBSD-3-Clauseを含むApache-2.0またはMITライセンス、Copyright Mozilla Foundation）；chardetng、https://github.com/hsivonen/chardetng（Apache-2.0またはMITライセンス、Copyright Mozilla Foundation）。",
+                "パスフレーズ用の単語：Electronic Frontier FoundationのEFF Large Wordlist for Passphrases、https://www.eff.org/dice。Creative Commons Attribution 3.0 United Statesライセンス（https://creativecommons.org/licenses/by/3.0/us/）に基づいて使用しています。単語リストは変更せず使用します。",
+                "OpenSSL旧形式で保護された鍵の読み込み：RustCryptoのaes、cbc、des、https://github.com/RustCrypto。MITまたはApache-2.0ライセンス。Copyright (c) RustCrypto Developers.",
+                "Dev独自の実装（外部ライブラリー不使用）：DNS ルックアップ（RFC 1035に従った問い合わせの生成と応答の解析）およびポート確認。",
+                "Dev独自の実装（外部ライブラリー不使用）：JSONのストリーム読み書き、JSONPath（RFC 9535）、Base64、パーセントエンコーディング、HTML文字参照（名前はHTML標準、https://html.spec.whatwg.org）、文字列エスケープ、JSON Web Tokenの読み込み、YAML書き出し、CSVの双方向変換、cronスケジュールの解析、XML／HTML整形、SQL整形。"
+              ]
+            },
+            "プログラム共通の技術情報は「Syntelab Creativeについて」をご覧ください。"
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Devの現在の制限",
+          "body": [
+            {
+              "points": [
+                "トークン署名を検証できるのは、共有秘密鍵で生成されたもの（HS256、HS384、HS512）だけです。",
+                "JSON Schema 検証ツールのエラーはライブラリーと同じく英語で表示されます。他のファイルやURLを参照する$refは解決しません。",
+                "SQL 整形ツールでは方言を指定できず、文の意味も検証しません。検出するのは、閉じられていない文字列またはコメントだけです。",
+                "YAML、およびYAMLから変換するJSONやCSVは、変換中に全体をメモリーに保持します。CSVからJSONへの変換、XML、HTML、SQLは、サイズを問わず読み込みながら処理します。",
+                "CSVの表表示は読み取り専用です。セルへの入力や表からのコピーにはまだ対応していません。",
+                "「差分」は2つのファイルの各行につき16バイトを保持し、ファイル全体は保持しません。2つのJSON文書は比較前に再生成するため、全体をメモリーに保持します。",
+                "両側にちょうど一度ずつ現れる行がない範囲は、1秒間でできる限り比較します。示される差分は正確ですが、常に最小とは限りません。",
+                "「差分」は改行コード（CRLFまたはLF）の違いを比較しません。",
+                "2つのフォルダーはファイルのバイト列で比較します。ファイル名は大文字小文字も含めて完全一致で照合します。",
+                "「確認」メニューのツールの結果は、項目名が英語のJSONです。",
+                "正規表現テスターはJavaScriptの正規表現を実行します。PCREやRustの正規表現には対応しません。ディスク上のファイルではなく、表示可能なテキストを処理します。実行が20秒を超えるパターンは停止します。",
+                "証明書デコーダーは証明書を読み取るだけで、証明書チェーン、署名、失効状況などの信頼性を検証しません。",
+                "UTF-8以外の文字コードのテキストファイルを読み込めるのは、表示可能なサイズまでです。ディスクから直接処理する大きなファイルはUTF-8である必要があります。",
+                "ツールにドロップできるファイルは最大16 MBです。ドロップされたファイルのディスク上の場所はウィンドウに渡されないため、それより大きいファイルは「ファイルを開く」から開いてください。",
+                "パスフレーズは英単語だけで生成されます。",
+                "Cron の説明の作成ツールで作成できるのはcrontab（5フィールド、または秒を含む6フィールド）です。L、W、#、?を含むスケジュールは作成ツールに読み込めません。AWSのrate()はルール作成時を起点に数えるため、実行時刻を表示できません。systemdでは一般的なカレンダー指定を読み込みますが、秒未満の小数や月末から数えた曜日リストには対応しません。",
+                "16進ビューアーは表示専用で、ファイルは変更しません。テキスト列はASCIIまたは西ヨーロッパ文字を表示し、他の文字体系には対応しません。検索できるのはバイト列またはテキストで、パターン検索には対応しません。",
+                "鍵と証明書で対応する鍵はRSA、P-256、P-384、P-521、Ed25519です。DSA、secp256k1、X25519は読み込めません。OpenSSL旧形式で保護された鍵は、暗号方式がAESまたは3DESの場合に開けます。.pfxファイルには鍵を1つと証明書を格納できます。非常に大きなRSA鍵の生成には時間がかかり、途中で停止できません。RSA鍵生成ライブラリーには、ネットワーク越しに多数の署名を計時する攻撃者に対する既知の弱点（RUSTSEC-2023-0071）があります。このアプリでは鍵をコンピューター上で生成・保存し、他者向けの署名は行いません。",
+                "HTTPクライアントはHTTP/1.1に対応し、HTTP/2、HTTP/3には対応しません。リクエスト間でCookieを保持せず、multipartフォームを自動生成しません。16 MBを超える応答、またはテキスト以外の応答をファイルに保存する場合は、リクエストを再送信します。",
+                "DNS ルックアップはDNSSEC署名を表示しますが検証しません。ポート確認はTCPのみです。応答しないUDPポートと閉じたポートは区別できません。サイトの証明書では失効状況を確認しません。",
+                "Windowsエクスプローラーの右クリックメニューはWindows専用です。Windows 11では項目が「その他のオプションを表示」の中にあります。"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

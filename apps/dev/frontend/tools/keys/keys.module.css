@@ -1,0 +1,200 @@
+/* Keys and certificates: what is asked on one side, what was made or read on the other. */
+.body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.form {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  width: 400px;
+  min-height: 0;
+  overflow-y: auto;
+  border-inline-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+  font-size: 13px;
+}
+
+/* Things asked that belong together, one under another. */
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px 16px;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.group > label,
+.together > label {
+  width: 100%;
+}
+
+.group > label > input[type='text'],
+.group > label > input[type='password'],
+.together > label > input {
+  flex: 1;
+  min-width: 0;
+  max-width: none;
+}
+
+.group [role='radiogroup'] {
+  flex-wrap: wrap;
+}
+
+.heading {
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.note,
+.hint {
+  margin: 0;
+  color: var(--sc-muted);
+}
+
+/* A text of several lines: a key that is pasted, the names a certificate is for. */
+.area {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  color: var(--sc-muted);
+}
+
+.area textarea {
+  min-height: 84px;
+  padding: 8px 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+  color: var(--sc-text);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 12px;
+  resize: vertical;
+}
+
+.area[data-tall='true'] textarea {
+  min-height: 220px;
+}
+
+.area textarea:focus-visible {
+  border-color: var(--sc-accent);
+  outline: none;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  color: var(--sc-text);
+}
+
+.file bdi {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.results {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow-y: auto;
+  background: var(--sc-surface);
+}
+
+.told {
+  display: flex;
+  flex-direction: column;
+}
+
+/* What a thing is, in a few lines: a name, and what is said of it. */
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 10px 16px;
+  border-block-end: 1px solid var(--sc-border);
+  font-size: 13px;
+}
+
+.facts > div {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.facts dt {
+  flex: none;
+  width: 150px;
+  color: var(--sc-muted);
+}
+
+.facts dd {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: var(--sc-text);
+  user-select: text;
+}
+
+.facts dd[data-wrong='true'] {
+  color: var(--sc-danger);
+}
+
+/* A key and its certificate put in one file. */
+.together {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  padding: 10px 16px;
+  border-block-end: 1px solid var(--sc-border);
+  font-size: 13px;
+}
+
+.together > label {
+  width: auto;
+}
+
+.output {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.secret {
+  padding: 1px 8px;
+  border: 1px solid color-mix(in srgb, var(--sc-danger) 45%, var(--sc-border));
+  border-radius: var(--sc-radius-s);
+  color: var(--sc-danger);
+  font-size: 11px;
+}
+
+.text {
+  max-height: 260px;
+  margin: 0;
+  padding: 10px 16px;
+  overflow: auto;
+  color: var(--sc-text);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.45;
+  white-space: pre;
+  user-select: text;
+}

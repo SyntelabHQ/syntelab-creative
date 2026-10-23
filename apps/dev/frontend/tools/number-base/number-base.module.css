@@ -1,0 +1,74 @@
+/* Numbers told in every base: one after another, each with a row for each base. */
+.view {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  background: var(--sc-surface);
+}
+
+.note {
+  margin: 0;
+  padding: 14px 16px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 16px;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  color: var(--sc-muted);
+  font-size: 12px;
+}
+
+.head code {
+  max-width: 100%;
+  padding: 2px 8px;
+  overflow-wrap: anywhere;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-bg);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 13px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.row dt {
+  flex: none;
+  width: 190px;
+  color: var(--sc-muted);
+}
+
+.row dd {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+  color: var(--sc-text);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 14px;
+  font-weight: 600;
+  user-select: text;
+}

@@ -1,0 +1,42 @@
+{
+  "id": "temperature",
+  "category": "essentials",
+  "icon": "temperature-half",
+  "base": "K",
+  "startsWith": ["C","F","K"],
+  "decimals": 2,
+  "groups": [
+    { "id": "absolute", "color": "#2563eb" },
+    { "id": "relative", "color": "#dc2626" },
+    { "id": "historical", "color": "#8b5cf6" },
+    { "id": "scientific", "color": "#059669" },
+    { "id": "difference", "color": "#b45309" },
+    { "id": "culinary", "color": "#ca8a04" }
+  ],
+  "units": [
+    {"id":"K","symbol":"K","group":"absolute","factor":"1","popular":true,"aliases":["°K","degree Kelvin"]},
+    {"id":"C","symbol":"°C","group":"relative","factor":"1","offset":"273.15","popular":true,"aliases":["Centigrade"]},
+    {"id":"F","symbol":"°F","group":"relative","factor":"5/9","offset":"45967/180","popular":true,"aliases":["Farenheit"]},
+    {"id":"R","symbol":"°R","group":"relative","factor":"5/9"},
+    {"id":"Re","symbol":"°r","group":"historical","factor":"5/4","offset":"273.15","aliases":["Reaumur"]},
+    {"id":"De","symbol":"°De","group":"historical","factor":"-2/3","offset":"373.15"},
+    {"id":"N","symbol":"°N","group":"historical","factor":"100/33","offset":"273.15"},
+    {"id":"Ro","symbol":"°Rø","group":"historical","factor":"40/21","offset":"36241/140","aliases":["Romer"]},
+    {"id":"water-triple","symbol":"TPW","group":"absolute","factor":"273.16","decimals":6},
+    {"id":"T_P","symbol":"Tₚ","group":"scientific","factor":"1.416784e32","decimals":30},
+    {"id":"mK","symbol":"mK","group":"scientific","factor":"0.001"},
+    {"id":"μK","symbol":"μK","group":"scientific","factor":"0.000001"},
+    {"id":"nK","symbol":"nK","group":"scientific","factor":"0.000000001","decimals":0},
+    {"id":"eV","symbol":"eV","group":"scientific","factor":"11604.51812"},
+    {"id":"meV","symbol":"meV","group":"scientific","factor":"11.60451812"},
+    {"id":"keV","symbol":"keV","group":"scientific","factor":"1.160451812e7"},
+    {"id":"dK","symbol":"dK","group":"scientific","factor":"0.1","decimals":1},
+    {"id":"cK","symbol":"cK","group":"scientific","factor":"0.01","decimals":0},
+    {"id":"kK","symbol":"kK","group":"scientific","factor":"1000"},
+    {"id":"MK","symbol":"MK","group":"scientific","factor":"1000000"},
+    {"id":"dC","interval":true,"symbol":"Δ°C","group":"difference","factor":"1"},
+    {"id":"dF","interval":true,"symbol":"Δ°F","group":"difference","factor":"5/9","decimals":1},
+    {"id":"dR","interval":true,"symbol":"Δ°R","group":"difference","factor":"5/9","decimals":1},
+    {"id":"GM","symbol":"GM","group":"culinary","factor":"14","offset":"394.15","decimals":1}
+  ]
+}

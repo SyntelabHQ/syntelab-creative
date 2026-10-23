@@ -1,0 +1,47 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lead {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.notes {
+  margin: 0;
+  padding-inline-start: 16px;
+  border-inline-start: 3px solid var(--sc-brand);
+}
+
+.note {
+  margin: 0;
+  color: var(--sc-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-block-start: 8px;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bar {
+  inline-size: 100%;
+  block-size: 6px;
+  accent-color: var(--sc-brand);
+}
+
+.failed {
+  margin: 0;
+  color: var(--sc-danger);
+}

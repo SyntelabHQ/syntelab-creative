@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Przeliczanie",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Konwertery",
+          "body": [
+            "Units przelicza wartości między jednostkami miary: pojedynczą wartość można przeliczyć szybko, a całe tabele — jednocześnie. Wszystkie obliczenia odbywają się na Twoim komputerze.",
+            "Konwertery są dostępne w sześciu menu: Podstawowe, Ruch i mechanika, Energia i moc, Nauka, Cyfryzacja i multimedia oraz Fizyka specjalistyczna. Wybierz konwerter, aby otworzyć jego tabelę.",
+            {
+              "points": [
+                "Konwerter otwiera się w bieżącej karcie. Jeśli tabela zawiera wartości, najpierw pojawi się pytanie: Kontynuuj (wartości zostaną utracone), Otwórz na nowej karcie albo Anuluj.",
+                "Ustawienia → Units → „Otwieraj każdy konwerter na osobnej karcie” powoduje, że każdy wybrany konwerter otwiera się w nowej karcie.",
+                "Plik → Przejdź do strony Start wraca do pierwszej strony Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Szybkie przeliczanie",
+          "body": [
+            "Pierwsza strona Units — Szybkie przeliczanie — służy do przeliczania pojedynczej wartości z jednej jednostki na drugą. Wybierz konwerter, wpisz wartość po stronie Z, a następnie wybierz jednostki. Wynik pojawi się po stronie Na.",
+            {
+              "points": [
+                "Po obu stronach wyświetlane są popularne jednostki wybranego konwertera i Twoje własne jednostki; listę można przeszukiwać. Tabela konwertera zawiera wszystkie jednostki.",
+                "Przycisk między polami zamienia wybrane jednostki miejscami.",
+                "Ikona zakładki obok jednostki przypina ją. Przypięte jednostki pojawiają się na początku obu list oraz panelu jednostek w tabeli.",
+                "Przycisk przy wyniku kopiuje go, a znak × czyści wartość.",
+                "„Otwórz w tabeli” otwiera tabelę wybranego konwertera."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Odczytywanie i zapisywanie liczb",
+          "body": [
+            "Możesz wpisywać i wklejać liczby zapisane zgodnie z konwencjami różnych krajów: program rozpoznaje zarówno 1,234.56, jak i 1.234,56, a także spacje i apostrofy oddzielające tysiące oraz zapis potęgowy, np. 1.5e-3.",
+            "Liczba, którą można odczytać na dwa sposoby (1,234 może oznaczać tysiąc albo jeden i ułamek), jest interpretowana zgodnie z formatem liczb ustawionym dla języka programu. Informuje o tym wiersz pod tabelą.",
+            "Wynik jest zapisywany z liczbą miejsc dziesiętnych właściwą dla jednostki docelowej, a nie z taką samą liczbą cyfr jak wpisana wartość: 5 cm to 1,97 in. Każda niezerowa wartość zachowuje kilka cyfr znaczących, dlatego 1 cm to 0,00001 km, a nie 0,000 km.",
+            "Wartości zbyt duże lub zbyt małe, aby łatwo je odczytać, są zapisywane w notacji wykładniczej, np. 1,6 × 10⁻³⁵. Polecenie Widok → Pełny zapis wartości skrajnych wyświetla wszystkie zera.",
+            "Jeśli dla jednostki nie istnieje dana wartość (na przykład ciśnienie akustyczne równe zero nie ma wartości w decybelach), komórka pokazuje kreskę."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabela",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Wiersze i kolumny",
+          "body": [
+            "Każda kolumna odpowiada jednostce, a każdy wiersz — wartości. Wartość wpisana w komórce określa cały wiersz: pozostałe kolumny pokazują tę samą wartość w innych jednostkach. Wpisana komórka jest pogrubiona.",
+            "Nieprawidłowe wartości są zachowywane i oznaczane na czerwono; wiersz nie zostanie przeliczony, dopóki nie poprawisz wartości.",
+            {
+              "points": [
+                "Kliknij komórkę dwukrotnie albo zacznij pisać, aby ją edytować. Enter przechodzi w dół, Tab w prawo, strzałki przemieszczają zaznaczenie, a Escape przywraca poprzednią wartość komórki.",
+                "Kliknij narożnik (#), aby zaznaczyć całą tabelę; numer wiersza, aby zaznaczyć wiersz; albo nagłówek, aby zaznaczyć kolumnę. Shift+klik zaznacza zakres, Ctrl+klik dodaje komórki do zaznaczenia, a przeciąganie również zaznacza komórki.",
+                "Home i End przechodzą do pierwszej i ostatniej kolumny wiersza; Ctrl+Home przechodzi do pierwszej komórki tabeli, a Ctrl+End do ostatniej. Ctrl ze strzałką przechodzi do krawędzi tabeli: pierwszego lub ostatniego wiersza albo kolumny. Page Up i Page Down przewijają o ekran. Dodanie Shift do każdego z tych skrótów rozszerza zaznaczenie.",
+                "Zaznaczenie wielu komórek jest obramowane. Komórka, w której wpisywana jest wartość, pozostaje wewnątrz zaznaczenia niezacieniowana.",
+                "Delete czyści zaznaczone wiersze.",
+                "Wpisanie wartości w ostatnim wierszu dodaje kolejny. Liczba wierszy tabeli nie ma stałego limitu — ogranicza ją pamięć komputera (jeden wiersz zajmuje 16 bajtów, więc 100 milionów wierszy to około 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Kolumny i panel jednostek",
+          "body": [
+            "Panel obok tabeli zawiera jednostki wybranego konwertera. U góry znajdują się jednostki już widoczne w tabeli — kliknij jedną z nich, aby usunąć jej kolumnę. Niżej znajduje się pełna lista jednostek: wyszukuj według nazwy lub symbolu, filtruj według grupy albo „Popularne” i kliknij jednostkę, aby dodać ją jako kolumnę.",
+            "Ikona zakładki obok jednostki przypina ją jako ulubioną. Przypięta jednostka pojawia się na początku listy i jako pierwsza w sekcji Szybkie przeliczanie.",
+            {
+              "points": [
+                "Kolumny mają jednakową szerokość, dopóki mieszczą się ich nagłówki; gdy przestają się mieścić, tabelę można przewijać w poziomie.",
+                "Przeciągnij krawędź nagłówka, aby zmienić szerokość kolumny. Kliknij krawędź dwukrotnie, aby dopasować kolumnę do jej najdłuższej wartości. Można też przeciągać kolumnę z numerami wierszy.",
+                "Przycisk ⋮ w kolumnie umożliwia przesunięcie jej w lewo lub w prawo, przypięcie do lewej albo prawej krawędzi, zmianę precyzji lub usunięcie.",
+                "Precyzja ustawiona dla kolumny dotyczy tylko jej. Polecenie „Używaj tej jednostki wszędzie” ustawia tę samą precyzję we wszystkich tabelach i w Szybkim przeliczaniu.",
+                "Przycisk z dwiema strzałkami obok poleceń Cofnij i Ponów dopasowuje kolumny do tabeli: usuwa wszystkie ręczne ustawienia szerokości i ponownie rozdziela szerokość tabeli równo między kolumny.",
+                "Dwie górne sekcje panelu — jednostki w tabeli oraz „Dodawanie jednostek” (wyszukiwanie i filtry) — można zwinąć, klikając ich nazwy, aby zrobić więcej miejsca na listę."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Cofanie, kopiowanie, wklejanie, import i eksport",
+          "body": [
+            "Nad tabelą znajduje się pasek narzędzi.",
+            {
+              "points": [
+                "Cofnij i Ponów (Ctrl+Z, Ctrl+Y) obejmują wszystkie zmiany tabeli. Wklejenie i import stanowią pojedyncze kroki.",
+                "Kopiuj (Ctrl+C) kopiuje całą tabelę lub zaznaczenie w formacie odczytywanym przez arkusze kalkulacyjne. Opcja „Transponowany” zamienia wiersze na kolumny.",
+                "Wklej (Ctrl+V) wstawia skopiowane wiersze do tabeli od aktywnej komórki w dół. Jeśli pierwszy wiersz zawiera nazwy jednostek, kolumny są dopasowywane według tych nazw, a brakujące jednostki zostają dodane do tabeli.",
+                "Polecenie Importuj wczytuje skoroszyt Excel albo plik CSV lub TSV w miejsce obecnej zawartości tabeli. Opcja „Automatycznie wykryj format” ustala rodzaj pliku.",
+                "Polecenie Eksportuj zapisuje tabelę jako Excel, CSV, TSV lub JSON. Jeśli separatorem dziesiętnym jest przecinek, plik CSV jest zapisywany z średnikami, zgodnie z oczekiwaniami arkuszy kalkulacyjnych. Arkusz Excel mieści 1 048 576 wierszy; dłuższa tabela jest zapisywana na kolejnych arkuszach tego samego skoroszytu, z tymi samymi nagłówkami.",
+                "Gumka czyści zaznaczone wiersze, a kosz — całą tabelę."
+              ]
+            },
+            "Wiersz zawiera jedną wartość. Jeśli wklejony lub zaimportowany wiersz ma kilka wartości, używana jest pierwsza, a pozostałe są na jej podstawie przeliczane.",
+            "Wklejanie, importowanie, eksportowanie i kopiowanie bardzo wielu wierszy może zająć trochę czasu. Na tabeli pojawi się wtedy okno z postępem w procentach i liczbie wierszy oraz przyciskiem Zatrzymaj. Przerwane wklejanie lub import pozostawia tabelę bez zmian; przerwany eksport nie zapisuje pliku.",
+            "Jeśli w komputerze zabraknie pamięci na wiersze, tabela nie zostanie zmieniona, a wiersz pod tabelą poinformuje, ile pamięci było potrzebne. Jeśli wiersze mieszczą się w pamięci, ale nie można zachować obok nich poprzedniej wersji tabeli, pojawi się pytanie o kontynuację bez możliwości cofnięcia. Tej zmiany i wcześniejszych zmian nie będzie już można cofnąć. Aby zwolnić miejsce, przed wyświetleniem pytania usuwane są najstarsze kroki cofania.",
+            "Opcje tabeli (ikona koła zębatego): zawartość nagłówka kolumny (nazwa i symbol, sama nazwa albo sam symbol), uwzględnianie nagłówków i numerów wierszy przy kopiowaniu i eksporcie, „Rozpoczynaj ten konwerter od tych kolumn” oraz „Resetuj tabelę”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Konwertery specjalne",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Waluty",
+          "body": [
+            "Waluty nie mają stałego przelicznika, ponieważ ich wartość się zmienia. Podczas korzystania z konwertera walut pobierane są aktualne kursy z dwóch bezpłatnych serwisów — tylko wtedy, gdy są potrzebne.",
+            {
+              "points": [
+                "Waluty krajów: Rates By Exchange Rate API, https://www.exchangerate-api.com . Serwis aktualizuje je raz dziennie, a aplikacja pobiera je nie częściej.",
+                "Kryptowaluty: Powered by CoinGecko, https://www.coingecko.com . Są pobierane przy otwarciu konwertera albo powrocie do niego, jeśli ostatni odczyt był starszy niż 15 minut, oraz po kliknięciu Odśwież. Nie są pobierane według harmonogramu."
+              ]
+            },
+            "Pobierane są wyłącznie kursy. Żadne informacje o Tobie ani kwoty przeliczanych wartości nie są wysyłane.",
+            "Wiersz pod tabelą i pod wynikiem Szybkiego przeliczania pokazuje datę kursów. Bez połączenia używane są ostatnio zapisane kursy, oznaczone jako nieaktualne. Dla waluty, której serwisy nie podają, wyświetlana jest kreska.",
+            "Ustawienia → Units → Waluta: można wyłączyć opcję „Pobieraj kursy z sieci” — konwerter będzie wtedy korzystał z ostatnio zapisanych kursów. Opcja „Pokazuj nazwy źródeł obok kursów” wyświetla lub ukrywa nazwy obu serwisów w tym wierszu.",
+            "Kursy mają charakter informacyjny. Nie polegaj na nich przy zawieraniu transakcji."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Systemy liczbowe",
+          "body": [
+            "Jednostki w tym konwerterze to sposoby zapisu liczb całkowitych: systemy o podstawach od 2 do 64, cyfry rzymskie, system sześćdziesiątkowy z dwukropkami (1:30:15), kod BCD i kod Graya. Wartości są zapisywane jako tekst: wpisz FF w kolumnie szesnastkowej, a w pozostałych pojawi się 255, 11111111 itd.",
+            "Cyfry rzymskie obejmują zakres od I do MMMCMXCIX (od 1 do 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Jednostki przeliczane inaczej niż przez mnożenie",
+          "body": [
+            "Większość jednostek jest wielokrotnością innej jednostki. Niektóre przelicza się według odrębnych definicji: temperatury z uwzględnieniem przesunięć skali; zużycie paliwa (litry na 100 km i mile na galon); długość fali i częstotliwość; przewodność i rezystancja; stopnie Baumégo, API, Brixa i Plato w przeliczeniu na gęstość; decybele w przeliczeniu na ciśnienie i natężenie dźwięku; nachylenie w procentach i jego kąt.",
+            "Temperatura i jej zmiana to różne wielkości: 100 °C to 212 °F, ale różnica 100 °C odpowiada różnicy 180 °F. Jednostki w grupie Różnica (Δ) można przeliczać między sobą; przy przeliczaniu ich na skale temperatury lub odwrotnie komórka pokazuje kreskę."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Własne jednostki",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Tworzenie jednostki",
+          "body": [
+            "Do każdego konwertera możesz dodać własne jednostki. W panelu jednostek wybierz Nowa jednostka, podaj jej nazwę i symbol, a następnie określ, przez którą istniejącą jednostkę ją przeliczać.",
+            {
+              "points": [
+                "Współczynnik: „1 krok = 0,75 m”. Jeśli skala nie zaczyna się od zera, podaj także wartość dodawaną po pomnożeniu.",
+                "Wzór: określ, jak przeliczyć wartość na drugą jednostkę, używając x jako wartości, a także podaj wzór odwrotny. Na przykład: x * 9 / 5 + 32 oraz (x - 32) * 5 / 9."
+              ]
+            },
+            "Wpisany wzór jest obliczany na bieżąco, a wynik przeliczenia dla jednej z Twoich jednostek jest wyświetlany przed zapisaniem. Wzór może używać operatorów + − × ÷ ^, nawiasów, x, pi, e oraz funkcji sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos i atan. Jest obliczany jako wyrażenie, nigdy uruchamiany jako program.",
+            "Twoje jednostki są wyświetlane w panelu w sekcji Moje, gdzie można je edytować i usuwać. Jednostka może odwoływać się do innej jednostki użytkownika; usunięcie jednostki usuwa także te jednostki, które się do niej odwołują.",
+            "Ustawienia → Units pokazuje Twoje jednostki we wszystkich konwerterach oraz umożliwia ich eksport i import jako tekstu, który można zachować lub przenieść na inny komputer."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ustawienia",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Ustawienia Units",
+          "body": [
+            "Polecenie Plik → Otwórz ustawienia otwiera ustawienia Units. Można je też otworzyć z opcji tabeli (ikona koła zębatego na pasku).",
+            {
+              "points": [
+                "Otwieraj każdy konwerter na osobnej karcie albo na bieżącej karcie.",
+                "Pełny zapis wartości skrajnych, separator tysięcy (10000,000, 10 000,000 lub 10.000,000; domyślnie nic) i numery wierszy.",
+                "Waluta: pobieranie kursów z internetu i wyświetlanie nazw serwisów obok kursów.",
+                "Precyzja jednostek: wybierz konwerter (lub Zmienione jednostki), wyszukaj jednostkę i ustaw liczbę miejsc dziesiętnych przyciskami − i +. Strzałka przywraca precyzję domyślną dla tej jednostki. Polecenie „Używaj tej jednostki wszędzie” w menu kolumny ustawia tę samą wartość.",
+                "Jednostki początkowe tabeli: wybierz konwertery i kolumny wyświetlane jako pierwsze; dla każdego konwertera można przywrócić domyślny zestaw.",
+                "Twoje własne jednostki."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O Units",
+          "body": [
+            "Units to konwerter jednostek w Syntelab Creative: 38 konwerterów i ponad 1500 jednostek — od długości i temperatury po waluty i systemy liczbowe. Jedna wpisana wartość jest wyświetlana w każdej wybranej jednostce, w tabeli mieszczącej jedną wartość albo miliony wartości.",
+            "Wartości są obliczane dokładnie jako ułamki i zaokrąglane dopiero podczas wyświetlania. Wszystkie obliczenia odbywają się na tym komputerze; tylko kursy walut są pobierane z internetu, a tę funkcję można wyłączyć.",
+            "Units jest nową aplikacją. Jeśli nie spełnia potrzeb Twojej pracy, przekaż nam opinię przez Pomoc → Przekaż opinię. Dzięki temu wiemy, nad czym warto pracować."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Ile wierszy mieści tabela: wyniki pomiarów",
+          "body": [
+            "Tabela nie ma ustalonego limitu wierszy — jej rozmiar ogranicza pamięć komputera. Jeden wiersz zajmuje 16 bajtów, więc 100 milionów wierszy to około 1,5 GB. Gdy zabraknie pamięci, tabela pozostaje bez zmian, a program informuje o potrzebnej ilości.",
+            "Pomiar wykonano w zoptymalizowanej wersji programu na tabeli z 50 000 000 wierszy, zawierającej po jednej liczbie w każdej kolumnie:",
+            {
+              "points": [
+                "Wklejenie 50 000 000 wierszy: około 7 sekund.",
+                "Import z pliku CSV: 12 sekund.",
+                "Eksport do pliku CSV z przeliczeniem drugiej kolumny: około 3,5 minuty.",
+                "Eksport do Excela na 48 arkuszach: 4,3 minuty."
+              ]
+            },
+            "Zapis trwa dłużej niż odczyt, ponieważ każda zapisywana komórka jest najpierw dokładnie przeliczana.",
+            {
+              "note": "Komputer użyty do testu: AMD Ryzen 9 9950X3D (16 rdzeni, 32 wątki), 64 GB pamięci RAM, Windows 11 Pro. Październik 2026. Na innym komputerze czasy będą inne, ale rozmiar wiersza pozostanie taki sam."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Technologie użyte w Units",
+          "body": [
+            {
+              "points": [
+                "Dokładne obliczenia: biblioteki num języka Rust (ułamki liczb całkowitych dowolnej wielkości).",
+                "Jednostki, ich współczynniki i grupy: pliki danych aplikacji, osobne dla każdego konwertera.",
+                "Odczyt skoroszytów Excel i OpenDocument: calamine. Zapis skoroszytów Excel: rust_xlsxwriter.",
+                "Schowek systemowy do kopiowania i wklejania bardzo wielu wierszy: arboard.",
+                "Kursy walut: ExchangeRate-API i CoinGecko (zob. sekcję Waluty)."
+              ]
+            },
+            "Informacje o technologiach współdzielonych z resztą programu znajdują się w sekcji O Syntelab Creative."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Czego Units jeszcze nie potrafi",
+          "body": [
+            {
+              "points": [
+                "Wiersz przechowuje jedną wartość. Jeśli wklejony wiersz zawiera kilka wartości, używana jest pierwsza.",
+                "Eksport bardzo wielu wierszy trwa długo (zob. wyniki pomiarów).",
+                "Dane kopiowane do schowka są przed wklejeniem przechowywane w pamięci jako jeden tekst.",
+                "Kursy walut są aktualizowane tak często, jak udostępniają je oba źródła: kursy walut krajowych — raz dziennie."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

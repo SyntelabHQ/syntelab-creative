@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "apps": [
+    {
+      "id": "pdf-organizer",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "name": {
+        "en": "PDF Organizer"
+      },
+      "description": {
+        "en": "View, organize, edit and sign PDFs.",
+        "ro": "Vizualizează, organizează, editează și semnează PDF-uri."
+      },
+      "downloads": {
+        "windows-x64": {
+          "url": "https://syntelab.com/apps/EXAMPLE/pdf-organizer-1.0.0-windows-x64.zip",
+          "sha256": "..."
+        },
+        "linux-x64": {
+          "url": "https://syntelab.com/apps/EXAMPLE/pdf-organizer-1.0.0-linux-x64.tar.zst",
+          "sha256": "..."
+        }
+      },
+      "addons": [
+        {
+          "id": "ocr",
+          "version": "1.0.0",
+          "downloads": {}
+        }
+      ]
+    },
+    {
+      "id": "convert",
+      "status": "coming-soon",
+      "name": {
+        "en": "Convert"
+      },
+      "description": {
+        "en": "Convert files between formats."
+      }
+    },
+    {
+      "id": "dev",
+      "status": "coming-soon",
+      "name": {
+        "en": "Dev"
+      },
+      "description": {
+        "en": "Tools for developers."
+      }
+    },
+    {
+      "id": "scribe",
+      "version": "1.0.0",
+      "apiVersion": 1,
+      "name": {
+        "en": "Scribe"
+      },
+      "description": {
+        "en": "A text editor with tools: clean, sort, compare and transform text.",
+        "ro": "Un editor de text cu unelte: curăță, sortează, compară și transformă text."
+      },
+      "downloads": {
+        "windows-x64": {
+          "url": "https://syntelab.com/apps/EXAMPLE/scribe-1.0.0-windows-x64.zip",
+          "sha256": "..."
+        }
+      }
+    },
+    {
+      "id": "wizard",
+      "status": "coming-soon",
+      "name": {
+        "en": "Wizard"
+      },
+      "description": {
+        "en": "Random pickers and generators."
+      }
+    },
+    {
+      "id": "units",
+      "status": "coming-soon",
+      "name": {
+        "en": "Units"
+      },
+      "description": {
+        "en": "Unit converters: length, temperature, currency and many more."
+      }
+    },
+    {
+      "id": "pixel",
+      "status": "coming-soon",
+      "name": {
+        "en": "Pixel"
+      },
+      "description": {
+        "en": "Tools for images."
+      }
+    },
+    {
+      "id": "metadata",
+      "status": "coming-soon",
+      "name": {
+        "en": "Metadata"
+      },
+      "description": {
+        "en": "See and remove the hidden data of photos, videos and documents."
+      }
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Converter",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Os conversores",
+          "body": [
+            "O Units converte valores entre unidades de medida: um valor rapidamente ou tabelas inteiras de valores de uma só vez. Tudo é calculado no teu computador.",
+            "Os conversores estão em seis menus: Essenciais, Movimento e mecânica, Energia e potência, Ciência, Digital e multimédia e Física especializada. Escolher um abre a respetiva tabela.",
+            {
+              "points": [
+                "Um conversor abre-se no separador em que estás. Se a tabela dele tiver valores, primeiro é-te perguntado: Continuar (os valores perdem-se), Abrir num novo separador ou Cancelar.",
+                "Definições → Units → «Abrir cada conversor num separador próprio» abre cada conversor que escolheres num novo separador.",
+                "Ficheiro → Ir para o início volta à página inicial do Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Conversão rápida",
+          "body": [
+            "A página inicial do Units, Conversão rápida, converte um valor de uma unidade para outra. Escolhe um conversor, escreve o valor no lado «De» e escolhe as duas unidades: o resultado aparece no lado «Para».",
+            {
+              "points": [
+                "Cada lado apresenta as unidades populares do conversor e as tuas unidades personalizadas, com uma pesquisa sobre elas. A tabela do conversor tem todas as unidades.",
+                "O botão entre os dois lados troca as duas unidades.",
+                "O marcador ao lado de uma unidade fixa-a: as unidades fixadas aparecem primeiro nas duas listas e no painel de unidades da tabela.",
+                "O botão no resultado copia-o; o × limpa o valor.",
+                "«Abrir na tabela» abre a tabela do conversor."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Como os números são lidos e escritos",
+          "body": [
+            "Podes escrever e colar números como são escritos em diferentes países: 1,234.56 e 1.234,56 são ambos compreendidos, tal como espaços e apóstrofos entre os milhares, e 1.5e-3 para uma potência de dez.",
+            "Um número que pode ser lido de duas formas (1,234: mil, ou um e pouco) é lido como o idioma do programa escreve os números, e a linha por baixo da tabela indica-o.",
+            "Um resultado é escrito com as casas decimais da unidade de destino, e não com tantos algarismos quantos escreveste: 5 cm são 1,97 in. Um valor diferente de zero mostra sempre alguns algarismos significativos, por isso 1 cm são 0,00001 km e nunca 0,000 km.",
+            "Os valores demasiado grandes ou pequenos para ler num relance são escritos com uma potência de dez, como 1,6 × 10⁻³⁵. Ver → Apresentar valores extremos por extenso escreve-os com todos os zeros.",
+            "Quando uma unidade não tem esse valor (uma pressão sonora de zero não tem decibéis), a célula mostra um traço."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A tabela",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Linhas e colunas",
+          "body": [
+            "Cada coluna é uma unidade e cada linha um valor. A célula em que escreves comanda a sua linha: as outras colunas mostram o mesmo valor nas respetivas unidades. A célula escrita aparece a negrito.",
+            "O que não é um número é mantido e mostrado a vermelho; essa linha não converte nada até o corrigires.",
+            {
+              "points": [
+                "Faz duplo clique numa célula, ou começa simplesmente a escrever nela, para a editar. Enter desce, Tab avança para a direita; as teclas de seta movem; Escape deixa a célula como estava.",
+                "Clica no canto (#) para selecionar a tabela inteira, num número de linha para selecionar essa linha, num título para selecionar a coluna. Shift+clique seleciona um intervalo, Ctrl+clique adiciona células, e arrastar também seleciona.",
+                "Home e End vão para a primeira e a última coluna da linha; Ctrl+Home para a primeira célula da tabela, Ctrl+End para a última. Ctrl com uma seta vai até à extremidade da tabela: a primeira ou última linha, a primeira ou última coluna. Page Up e Page Down avançam um ecrã. Com Shift, cada uma destas teclas alarga a seleção.",
+                "Uma seleção de várias células tem um contorno exterior; a célula onde se escreve fica sem sombreado dentro dela.",
+                "Delete limpa as linhas selecionadas.",
+                "Escrever na última linha acrescenta uma linha. Uma tabela não tem um máximo: pode ser tão longa quanto a memória do teu computador permitir (uma linha ocupa 16 bytes, por isso 100 milhões de linhas ocupam cerca de 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Colunas e o painel de unidades",
+          "body": [
+            "O painel ao lado da tabela apresenta as unidades do conversor. No topo estão as unidades que já estão na tabela: clica numa para remover a respetiva coluna. Por baixo, todas as unidades: pesquisa por nome ou símbolo, filtra por grupo ou por «Populares» e clica numa unidade para a adicionar como coluna.",
+            "O marcador ao lado de uma unidade fixa-a como favorita: aparece primeiro na lista e em primeiro na Conversão rápida.",
+            {
+              "points": [
+                "As colunas partilham a largura da tabela em partes iguais até os títulos deixarem de caber; a partir daí, a tabela desloca-se lateralmente.",
+                "Arrasta a margem de um título para alterar a largura da coluna; faz duplo clique na margem para ajustar a coluna ao seu valor mais longo. A coluna dos números de linha também pode ser arrastada.",
+                "O botão ⋮ de uma coluna: move-a para a esquerda ou para a direita, fixa-a à margem esquerda ou direita, altera a precisão ou remove-a.",
+                "A precisão de uma coluna só altera essa coluna. «Usar esta precisão para esta unidade em todo o lado» torna-a a precisão da unidade, em todas as tabelas e na Conversão rápida.",
+                "O botão com duas setas ao lado de Anular e Refazer ajusta as colunas à tabela: todas as larguras que arrastaste ou ajustaste desaparecem e as colunas voltam a partilhar a largura da tabela.",
+                "As duas partes superiores do painel, as unidades na tabela e «Adicionar unidades» (a pesquisa e os filtros), recolhem-se com um clique no nome, para dar mais espaço à lista."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Anular, copiar, colar, importar e exportar",
+          "body": [
+            "A barra por cima da tabela contém as ferramentas dela.",
+            {
+              "points": [
+                "Anular e Refazer (Ctrl+Z, Ctrl+Y) percorrem todas as alterações da tabela. Uma colagem ou uma importação conta como um passo.",
+                "Copiar (Ctrl+C) copia a tabela inteira ou o que estiver selecionado, tal como uma folha de cálculo o lê. «Transposta» transforma linhas em colunas.",
+                "Colar (Ctrl+V) coloca as linhas copiadas na tabela a partir da célula ativa para baixo. Se a primeira linha contiver títulos de unidades, as colunas são associadas por eles e as unidades que ainda não estão na tabela são adicionadas.",
+                "Importar substitui o conteúdo atual da tabela por um livro do Excel, um ficheiro CSV ou TSV. «Detetar formato automaticamente» identifica o formato pelo ficheiro.",
+                "Exportar grava a tabela como Excel, CSV, TSV ou JSON. Se a vírgula for o separador decimal, o CSV usa ponto e vírgula, como esperado pelas folhas de cálculo. Uma folha do Excel aceita até 1 048 576 linhas; tabelas maiores continuam em folhas seguintes do mesmo livro, com os mesmos títulos.",
+                "A borracha limpa as linhas selecionadas; o caixote do lixo limpa a tabela inteira."
+              ]
+            },
+            "Cada linha contém um valor. Se uma linha colada ou importada tiver vários valores, o primeiro é utilizado e os restantes são calculados a partir dele.",
+            "A colagem, importação, exportação ou cópia de muitas linhas pode demorar. Nesse caso, um cartão por cima da tabela indica o progresso em percentagem e número de linhas e apresenta um botão Parar. Se interromperes a colagem ou a importação, a tabela mantém-se inalterada; se interromperes a exportação, não é criado nenhum ficheiro.",
+            "Se o computador ficar sem memória para as linhas, nada é alterado e a linha por baixo da tabela indica a memória necessária. Se as linhas couberem, mas não houver memória para manter também a versão anterior da tabela, o programa pergunta se pretendes continuar sem poder anular: essa alteração e as anteriores deixam de poder ser revertidas. Antes de perguntar, o programa liberta espaço eliminando os passos de anulação mais antigos.",
+            "Opções da tabela (engrenagem): conteúdo dos títulos das colunas (nome e símbolo, nome ou símbolo), inclusão dos títulos e números de linha em cópias e exportações, «Iniciar este conversor com estas colunas» e «Repor tabela»."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Conversores especiais",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Moeda",
+          "body": [
+            "As moedas não têm um fator de conversão fixo: o seu valor varia. O conversor de moedas obtém as taxas de dois serviços gratuitos durante a utilização, e apenas nessa altura.",
+            {
+              "points": [
+                "Moedas de países: dados da Rates By Exchange Rate API, https://www.exchangerate-api.com. As taxas são atualizadas diariamente na origem e não são consultadas com maior frequência.",
+                "Criptomoedas: dados fornecidos pela CoinGecko, https://www.coingecko.com. São consultados ao abrir o conversor ou quando este volta para primeiro plano e os dados têm mais de quinze minutos, ou ao premires Atualizar; nunca por um temporizador."
+              ]
+            },
+            "Só são consultadas as taxas. Não são enviados dados sobre ti nem os valores que convertes.",
+            "A linha por baixo da tabela e do resultado da Conversão rápida indica a data das taxas. Sem ligação à Internet, são utilizadas as últimas taxas guardadas, assinaladas como desatualizadas. Se os serviços não fornecerem uma taxa para uma moeda, é apresentado um traço.",
+            "Definições → Units → Moeda: podes desativar «Obter taxas pela Internet»; nesse caso, o conversor utiliza as últimas taxas guardadas. «Indicar as fontes junto às taxas» mostra ou oculta os nomes dos dois serviços nessa linha.",
+            "As taxas são meramente informativas. Não as utilizes como base para uma transação."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Base numérica",
+          "body": [
+            "As unidades deste conversor são formas de escrever números inteiros: bases de 2 a 64, numeração romana, base 60 com dois-pontos (1:30:15), decimal codificado em binário e código Gray. Os valores são texto: escreve FF em hexadecimal e as outras colunas apresentam 255, 11111111 e assim sucessivamente.",
+            "Os algarismos romanos vão de I a MMMCMXCIX (1 a 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Unidades sem um fator simples",
+          "body": [
+            "A maioria das unidades corresponde a um fator de outra unidade. Algumas não, e o Units converte-as segundo as respetivas definições: temperaturas com os seus desvios; consumo de combustível (litros por 100 km e milhas por galão); comprimento de onda e frequência; condutância e resistência; graus Baumé, API, Brix e Plato e densidade; decibéis, pressão sonora e intensidade; inclinação percentual e respetivo ângulo.",
+            "Temperatura e diferença de temperatura não são a mesma coisa: 100 °C correspondem a 212 °F, mas uma diferença de 100 °C corresponde a uma diferença de 180 °F. As unidades do grupo «Diferença (Δ)» convertem-se entre si; entre estas e as escalas de temperatura, a célula apresenta um traço."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "As tuas próprias unidades",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Criar uma unidade",
+          "body": [
+            "Podes adicionar unidades próprias a qualquer conversor. No painel de unidades, escolhe «Nova unidade», indica um nome e um símbolo e define-a em relação a uma unidade existente.",
+            {
+              "points": [
+                "Um fator: «1 passo = 0,75 m». Para uma escala que não começa em zero, indica também o valor a somar depois da multiplicação.",
+                "Uma fórmula: como converter o valor para a outra unidade, com x a representar o valor, e a fórmula inversa. Por exemplo, x * 9 / 5 + 32 e (x - 32) * 5 / 9."
+              ]
+            },
+            "O que escreves é testado à medida que escreves, e o valor de uma das tuas unidades é apresentado antes de a guardares. Uma fórmula pode usar + − × ÷ ^, parênteses, x, pi, e e as funções sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos e atan. A fórmula é calculada, nunca executada como programa.",
+            "As tuas unidades aparecem em «Minhas» no painel, onde as podes alterar ou remover. Podes definir uma unidade tua em relação a outra unidade tua; ao remover uma unidade, também são removidas as que dependem dela.",
+            "Definições → Units apresenta as tuas unidades de todos os conversores e permite exportá-las ou importá-las como texto, para guardar ou transferir para outro computador."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Definições",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Definições do Units",
+          "body": [
+            "Ficheiro → Abrir definições abre as definições do Units; também podes aceder-lhes através das opções da tabela (a engrenagem na barra).",
+            {
+              "points": [
+                "Abrir cada conversor no seu próprio separador ou no separador atual.",
+                "Apresentar valores extremos por extenso, o que se escreve entre os milhares (10000,000, 10 000,000 ou 10.000,000; nada, salvo se escolheres outra opção) e números de linha.",
+                "Moeda: escolhe se as taxas são obtidas pela Internet e se os nomes dos serviços aparecem junto delas.",
+                "Precisão das unidades: escolhe um conversor (ou «Unidades alteradas»), pesquisa uma unidade e ajusta o número de casas decimais com − e +; a seta repõe a precisão própria da unidade. «Usar esta precisão para esta unidade em todo o lado», no menu de uma coluna, define o mesmo valor.",
+                "Unidades iniciais da tabela: os conversores cujas primeiras colunas escolheste, cada um com uma forma de repor as unidades originais.",
+                "Unidades personalizadas."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Sobre o Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Sobre o Units",
+          "body": [
+            "O Units é a aplicação de conversão do Syntelab Creative: 38 conversores com mais de 1500 unidades, desde comprimento e temperatura até moedas e bases numéricas. Introduz um valor uma vez para o ver em todas as unidades que pretendes, numa tabela que pode conter um ou milhões de valores.",
+            "Os números são calculados exatamente, como frações, e só são arredondados quando apresentados. Tudo é feito neste computador; apenas as taxas de câmbio são obtidas pela Internet, e isso pode ser desativado.",
+            "A aplicação é recente. Se não responder às necessidades do teu trabalho, diz-nos através de Ajuda → Comentários: assim sabemos em que trabalhar."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Número de linhas numa tabela: medições",
+          "body": [
+            "O número de linhas de uma tabela não tem um limite fixo: depende da memória disponível no teu computador. Cada linha ocupa 16 bytes; 100 milhões de linhas usam cerca de 1,5 GB. Se a memória se esgotar, a tabela mantém-se inalterada e o programa indica a memória necessária.",
+            "Fizemos os testes com 50 000 000 de linhas, cada uma com um número numa coluna, na compilação otimizada do programa:",
+            {
+              "points": [
+                "Colar 50 000 000 de linhas: cerca de 7 segundos.",
+                "Importar de um ficheiro CSV: 12 segundos.",
+                "Exportar para um ficheiro CSV com conversão de uma segunda coluna: cerca de 3,5 minutos.",
+                "Exportar para Excel, em 48 folhas: 4,3 minutos."
+              ]
+            },
+            "A exportação demora mais do que a importação porque cada célula escrita é primeiro convertida com exatidão.",
+            {
+              "note": "Computador utilizado no teste: AMD Ryzen 9 9950X3D (16 núcleos, 32 threads), 64 GB de memória, Windows 11 Pro. Outubro de 2026. Os tempos variam consoante o computador; o tamanho de cada linha não."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Tecnologias utilizadas pelo Units",
+          "body": [
+            {
+              "points": [
+                "Números exatos: bibliotecas num de Rust (frações de números inteiros de qualquer tamanho).",
+                "Unidades, fatores e grupos: ficheiros de dados do programa, um para cada conversor.",
+                "Leitura de livros do Excel e OpenDocument: calamine. Escrita de livros do Excel: rust_xlsxwriter.",
+                "Área de transferência do sistema para copiar e colar muitas linhas: arboard.",
+                "Taxas de câmbio: ExchangeRate-API e CoinGecko (consulta «Moeda»)."
+              ]
+            },
+            "O que partilha com o resto do programa está descrito em «Sobre o Syntelab Creative»."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "O que o Units ainda não consegue fazer",
+          "body": [
+            {
+              "points": [
+                "Cada linha contém um valor: se colares uma linha com vários valores, só o primeiro é utilizado.",
+                "A exportação de muitas linhas é lenta (consulta as medições).",
+                "O conteúdo copiado para a área de transferência é mantido na memória como um único texto antes de ser colado.",
+                "A atualidade das taxas de câmbio depende das duas fontes: para moedas de países, são atualizadas uma vez por dia."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+target/
+shell/src-tauri/gen/
+*.log
+.DS_Store
+Thumbs.db
+tests/fixtures/generated/
+# The archive of remote/creative made for deploying the site
+remote/*.zip
+
+# Kept on this computer only
+solveo/
+demo-delete-after-we-finish-task/
+.claude/

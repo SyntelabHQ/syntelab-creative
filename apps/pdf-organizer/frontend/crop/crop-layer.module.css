@@ -1,0 +1,88 @@
+/* Over a page in the document. PDF content is never mirrored: left is left. */
+.layer {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  overflow: hidden;
+  cursor: crosshair;
+  direction: ltr;
+  touch-action: none;
+  user-select: none;
+}
+
+/* What would be cut off. */
+.shade {
+  position: absolute;
+  background: color-mix(in srgb, var(--sc-danger) 34%, transparent);
+  pointer-events: none;
+}
+
+.frame {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1.5px dashed var(--sc-accent);
+  cursor: move;
+}
+
+/* With nothing cut yet there is no frame to move: a drag draws one. */
+.frame[data-empty='true'] {
+  border-color: transparent;
+  cursor: crosshair;
+  pointer-events: none;
+}
+
+.frame[data-empty='true'] .handle {
+  display: none;
+}
+
+.handle {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border: 1.5px solid var(--sc-accent);
+  border-radius: var(--sc-radius-xs);
+  background: var(--sc-paper);
+  translate: -50% -50%;
+}
+
+.handle[data-handle^='n'] {
+  top: 0;
+}
+
+.handle[data-handle^='s'] {
+  top: 100%;
+}
+
+.handle[data-handle='e'],
+.handle[data-handle='w'] {
+  top: 50%;
+}
+
+.handle[data-handle$='w'] {
+  left: 0;
+}
+
+.handle[data-handle$='e'] {
+  left: 100%;
+}
+
+.handle[data-handle='n'],
+.handle[data-handle='s'] {
+  left: 50%;
+  cursor: ns-resize;
+}
+
+.handle[data-handle='e'],
+.handle[data-handle='w'] {
+  cursor: ew-resize;
+}
+
+.handle[data-handle='nw'],
+.handle[data-handle='se'] {
+  cursor: nwse-resize;
+}
+
+.handle[data-handle='ne'],
+.handle[data-handle='sw'] {
+  cursor: nesw-resize;
+}

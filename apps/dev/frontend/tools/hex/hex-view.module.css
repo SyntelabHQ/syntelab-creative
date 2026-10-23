@@ -1,0 +1,118 @@
+/* Bytes in rows: where each row begins, its bytes, and the same bytes as letters. */
+.view {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--sc-surface);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 13px;
+}
+
+/* Only the rows in sight are here; the wheel and the bar beside them say which. */
+/* Laid over their place, never the measure of it: how many rows are drawn cannot change how many fit. */
+.rows {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  outline: none;
+  cursor: default;
+  user-select: none;
+}
+
+.rows:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--sc-accent);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  height: 22px;
+  padding-inline: 16px;
+  white-space: pre;
+}
+
+.offset {
+  color: var(--sc-muted);
+}
+
+.bytes {
+  display: flex;
+  margin-inline-start: 18px;
+}
+
+/* A last row that is not full still leaves the letters where the others have them. */
+.bytes[data-per-row='8'] {
+  min-width: calc(8 * 3ch + 1ch);
+}
+
+.bytes[data-per-row='16'] {
+  min-width: calc(16 * 3ch + 2ch);
+}
+
+.bytes[data-per-row='24'] {
+  min-width: calc(24 * 3ch + 3ch);
+}
+
+.bytes[data-per-row='32'] {
+  min-width: calc(32 * 3ch + 4ch);
+}
+
+.bytes span {
+  padding-inline: 0.5ch;
+  color: var(--sc-text);
+}
+
+/* Every eight bytes stand a little apart, to be counted by the eye. */
+.bytes span[data-gap='true'] {
+  margin-inline-start: 1ch;
+}
+
+.bytes span[data-zero='true'] {
+  color: var(--sc-muted);
+}
+
+.letters {
+  display: flex;
+  margin-inline-start: 18px;
+  padding-inline-start: 14px;
+  border-inline-start: 1px solid var(--sc-border);
+}
+
+.letters span {
+  color: var(--sc-text);
+}
+
+.letters span[data-dim='true'] {
+  color: var(--sc-muted);
+}
+
+.bytes span[data-picked='true'],
+.letters span[data-picked='true'] {
+  background: color-mix(in srgb, var(--sc-accent) 26%, transparent);
+  color: var(--sc-text);
+}
+
+.bytes span[data-focus='true'],
+.letters span[data-focus='true'] {
+  background: var(--sc-accent);
+  color: var(--sc-accent-text);
+}
+
+/* The scrollbar of all the rows: a track as tall as they are, or as tall as a browser lays out. */
+.bar {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-end: 0;
+  width: 16px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.bar > div {
+  width: 1px;
+}

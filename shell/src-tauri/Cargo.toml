@@ -1,0 +1,32 @@
+[package]
+name = "syntelab-creative"
+description = "Syntelab Creative: one program, many apps."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-single-instance = "2"
+tauri-plugin-updater = "2"
+tauri-plugin-process = "2"
+serde = { workspace = true }
+serde_json = { workspace = true }
+syntelab-app-api = { workspace = true }
+syntelab-apps-manager = { workspace = true }
+syntelab-net = { workspace = true }
+syntelab-platform = { workspace = true }
+dev-backend = { path = "../../apps/dev/backend" }
+pdf-organizer-backend = { path = "../../apps/pdf-organizer/backend" }
+scribe-backend = { path = "../../apps/scribe/backend" }
+units-backend = { path = "../../apps/units/backend" }
+
+# The paths of files dropped on the window (dropped_files.rs): the same versions Tauri uses.
+[target.'cfg(windows)'.dependencies]
+webview2-com = "0.39"
+windows = "0.62"

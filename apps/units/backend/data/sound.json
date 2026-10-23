@@ -1,0 +1,29 @@
+{
+  "id": "sound",
+  "category": "digital",
+  "icon": "volume-high",
+  "base": "db-spl",
+  "startsWith": ["db-spl","pascal"],
+  "decimals": 1,
+  "groups": [
+    { "id": "decibel", "color": "#2563eb" },
+    { "id": "pressure", "color": "#dc2626" },
+    { "id": "intensity", "color": "#ea580c" },
+    { "id": "loudness", "color": "#9333ea" },
+    { "id": "specialized", "color": "#059669" }
+  ],
+  "units": [
+    {"id":"db-spl","symbol":"dB SPL","group":"decibel","factor":"1","popular":true},
+    {"id":"db","symbol":"dB","group":"decibel","factor":"1","popular":true},
+    {"id":"pascal","symbol":"Pa","group":"pressure","formula":{"kind":"log","multiplier":"20","base":10,"scale":"50000"},"popular":true},
+    {"id":"micropascal","symbol":"µPa","group":"pressure","formula":{"kind":"log","multiplier":"20","base":10,"scale":"0.05"},"popular":true},
+    {"id":"bar","symbol":"bar","group":"pressure","formula":{"kind":"log","multiplier":"20","base":10,"scale":"5e9"}},
+    {"id":"atm","symbol":"atm","group":"pressure","formula":{"kind":"log","multiplier":"20","base":10,"scale":"5066250000"}},
+    {"id":"watt-m2","symbol":"W/m²","group":"intensity","formula":{"kind":"log","multiplier":"10","base":10,"scale":"1e12"},"popular":true,"decimals":2},
+    {"id":"watt-cm2","symbol":"W/cm²","group":"intensity","formula":{"kind":"log","multiplier":"10","base":10,"scale":"1e16"}},
+    {"id":"phon","symbol":"phon","group":"loudness","factor":"1","popular":true},
+    {"id":"sone","symbol":"sone","group":"loudness","formula":{"kind":"log","multiplier":"10","base":2,"scale":"1","offset":"40"},"popular":true,"decimals":2},
+    {"id":"neper","symbol":"Np","group":"specialized","factor":"8.686","popular":true},
+    {"id":"bel","symbol":"B","group":"specialized","factor":"10"}
+  ]
+}

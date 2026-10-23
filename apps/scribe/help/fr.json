@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Textes et fichiers",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "L’éditeur",
+          "body": [
+            "Scribe est un éditeur de texte brut accompagné de ses outils. Chaque texte a son propre onglet : le texte apparaît au centre, le panneau d’outils sur le côté et une barre d’informations en dessous.",
+            "À l’ouverture de Scribe, choisissez d’abord une action : compter les mots, rechercher et remplacer, supprimer les doublons, comparer deux textes, trier les lignes, inverser un texte, générer du texte de remplissage ou du texte aléatoire. Chaque choix ouvre le texte avec l’outil correspondant à côté. « Nouveau texte vierge » ouvre seulement le texte ; les textes récemment ouverts sont listés dessous.",
+            {
+              "points": [
+                "Fichier → Nouveau texte (Ctrl+N) crée un texte vide.",
+                "Fichier → Ouvrir (Ctrl+O) ouvre un ou plusieurs fichiers, chacun dans son onglet. Tout fichier contenant du texte peut être ouvert : .txt, .md, .csv, .log, .srt, code source et autres formats.",
+                "Édition → Annuler (Ctrl+Z) et Rétablir (Ctrl+Y) parcourent les modifications du texte ; l’exécution d’un outil ou d’une recette compte comme une seule étape.",
+                "Édition → Rechercher et remplacer (Ctrl+F) ouvre une barre dans l’éditeur pour passer d’une correspondance à la suivante.",
+                "Édition → Tout sélectionner (Ctrl+A)."
+              ]
+            },
+            "La barre sous le texte indique la position du curseur, la longueur de la sélection, le nombre de lignes, de mots et de caractères, l’encodage du fichier et ses fins de ligne.",
+            "Les fichiers déposés sur la fenêtre s’ouvrent aussi, chacun comme un nouveau texte avec son nom, son encodage et ses fins de ligne. Le programme reçoit leur contenu, mais pas leur emplacement sur le disque ; l’enregistrement vous demande donc où les sauvegarder. Les fichiers de plus de 64 Mo s’ouvrent avec Fichier → Ouvrir.",
+            "Un nouveau texte encore vide affiche les textes ouverts récemment : sélectionnez-en un pour l’ouvrir. « Effacer la liste » la vide ; celle-ci est conservée uniquement sur cet ordinateur."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Enregistrer et Enregistrer sous",
+          "body": [
+            "Le fichier sur le disque reste inchangé tant que vous n’enregistrez pas. Un point sur l’onglet indique que le texte a été modifié ; si vous fermez cet onglet, une confirmation est demandée.",
+            {
+              "points": [
+                "Enregistrer (Ctrl+S) écrit le texte dans son fichier. Pour un nouveau texte, le programme vous demande où le sauvegarder.",
+                "Enregistrer sous (Ctrl+Maj+S) crée un nouveau fichier qui remplace le texte actuel dans l’onglet ; toutes les actions restent annulables et l’ancien fichier est conservé."
+              ]
+            },
+            "Un fichier est écrit entièrement ou pas du tout : si l’écriture échoue, le fichier précédent reste intact.",
+            {
+              "note": "Le fichier est enregistré comme il a été ouvert : même encodage et mêmes fins de ligne. Un texte créé sous Windows et un autre sous Linux conservent chacun leur format d’origine."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Encodages et fins de ligne",
+          "body": [
+            "Un encodage définit comment les lettres sont stockées sous forme d’octets. Scribe lit l’indication du fichier ou, si elle manque, essaie de la détecter. La plupart des fichiers récents utilisent UTF-8 ; les anciens fichiers d’Europe centrale sont souvent en windows-1250.",
+            {
+              "points": [
+                "Si les lettres semblent incorrectes (Ã£ à la place de ă ou des carrés), utilisez Fichier → « Relire dans un autre encodage » et choisissez celui utilisé pour écrire le fichier.",
+                "Pour enregistrer dans un autre encodage, choisissez-le dans la barre sous le texte puis enregistrez. Si certains caractères ne peuvent pas être représentés, Scribe les indique et n’écrit rien.",
+                "Les fins de ligne (CRLF sous Windows, LF sous Linux et macOS, CR sur les anciens Mac) se modifient au même endroit. Le programme signale les fichiers aux fins de ligne mixtes ; à l’enregistrement, toutes les lignes utilisent le même format."
+              ]
+            },
+            "Le format initial des nouveaux textes se choisit dans Paramètres."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Affichage du texte",
+          "body": [
+            {
+              "points": [
+                "Dans le menu Affichage, chaque option est un interrupteur : activée, elle est visible ; désactivée, elle ne l’est pas.",
+                "Texte : « Renvoyer les longues lignes à la ligne » (Alt+Z) fait continuer sous la fenêtre une ligne trop longue, sans modifier le texte ; Numéros de ligne ; Résultat à côté du texte.",
+                "À côté du texte : Outils (Ctrl+T), Recettes, Statistiques. Le panneau affiche uniquement les sections activées ; si aucune ne l’est, il disparaît.",
+                "Outils affichés : vous pouvez masquer du panneau chaque groupe (recherche et remplacement, lignes, casse, nettoyage, génération de texte). Un outil lancé depuis les menus Format ou Outils reste affiché : sa section et son groupe réapparaissent automatiquement.",
+                "La double flèche en haut du panneau le replie dans une barre au bord de la fenêtre ; ses sections restent accessibles en un clic. Faites glisser le bord pour modifier sa largeur.",
+                "La police et sa taille se choisissent dans Paramètres."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Fichiers très volumineux",
+          "body": [
+            "Un fichier de plus de 64 Mo n’est pas chargé dans l’éditeur : il s’ouvre dans un onglet qui affiche 500 lignes à la fois, lues directement depuis le fichier au fur et à mesure. Les fichiers de plusieurs gigaoctets s’ouvrent en un seul passage de lecture.",
+            {
+              "points": [
+                "« Page précédente » et « Page suivante » parcourent le fichier ; saisissez un numéro de ligne puis sélectionnez « Aller » pour y accéder directement.",
+                "Rechercher analyse tout le fichier avec les mêmes options que dans les autres outils et répertorie les résultats. Sélectionnez-en un pour accéder à sa ligne. Les longues listes sont affichées par portions avec « Rechercher la suite ».",
+                "« Appliquer une recette au fichier entier » écrit le résultat sous le même nom dans le dossier choisi. Le fichier d’origine n’est pas modifié.",
+                "« Ouvrir le fichier entier dans l’éditeur » charge tout le fichier pour permettre sa modification manuelle. Cette opération peut être lente et nécessite plusieurs fois la taille du fichier en mémoire."
+              ]
+            },
+            {
+              "note": "Les fichiers UTF-16, qui utilisent deux octets par caractère, ne peuvent pas être affichés page par page. Une recette charge le fichier entier en mémoire ; la limite dépend de la mémoire de l’ordinateur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Outils",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Fonctionnement des outils",
+          "body": [
+            "Les outils se trouvent dans le panneau à côté du texte, regroupés par catégorie. Sélectionnez un outil pour afficher ses options, puis cliquez sur « Appliquer au texte ».",
+            {
+              "points": [
+                "Si une partie du texte est sélectionnée, l’outil ne modifie que cette sélection ; sinon, il traite tout le texte. Le panneau précise la zone concernée en haut.",
+                "Sous le bouton, l’outil indique le résultat de son action : nombre de lignes ou d’emplacements modifiés.",
+                "Chaque outil constitue une seule étape : Annuler annule l’opération entière.",
+                "Chaque outil est aussi accessible dans les menus et dans la recherche de commandes : les outils qui modifient la structure du texte (lignes, casse, nettoyage) se trouvent dans Format, les autres dans Outils. Le sélectionner dans un menu ouvre ses options dans le panneau."
+              ]
+            },
+            "Dans le menu Format, les outils proposant principalement un choix sont présentés directement sous forme de commandes : chaque manière de modifier la casse, chaque type de guillemets et chaque façon d’inverser un texte dispose de sa propre commande, qui ouvre l’outil avec cette option sélectionnée. Si la fenêtre est trop étroite pour afficher un groupe, celui-ci devient un bouton ouvrant toute la liste.",
+            "Les outils fonctionnent sur cet ordinateur. Aucun texte n’en sort."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Aperçu du résultat avant application",
+          "body": [
+            "Lorsqu’un outil est ouvert, son résultat prévisionnel apparaît à côté du texte, dans le panneau « Résultat ». Le texte n’est pas modifié tant que vous ne sélectionnez pas « Appliquer au texte ». Le résultat se recalcule si vous modifiez une option ou le texte.",
+            {
+              "points": [
+                "Le texte et le résultat sont affichés côte à côte, chacun sous un en-tête de même hauteur afin que les lignes correspondantes commencent au même niveau. Ils défilent ensemble (désactivez cette option avec le bouton en forme de chaîne).",
+                "Les lignes qui seront modifiées sont signalées, et la partie modifiée est mise en évidence plus foncée. Les lignes déplacées ou ajoutées ont chacune leur couleur. Les lignes modifiées ou supprimées sont également marquées dans le texte d’origine.",
+                "Sous les titres, des statistiques résument les changements : lignes modifiées, déplacées, ajoutées ou supprimées, nombre de lignes et de caractères avant et après.",
+                "Sous le résultat, les lignes qui seraient supprimées sont listées. Sélectionnez-en une pour y accéder dans le texte.",
+                "Les petits boutons du résultat permettent de le copier, de l’ouvrir comme nouveau texte, de le comparer au texte d’un onglet, de synchroniser le défilement, de l’afficher sous le texte ou de le masquer. Le texte dispose de ses propres boutons : annuler, rétablir, copier, coller par-dessus, tout sélectionner et effacer.",
+                "Faites glisser la barre entre les deux panneaux pour agrandir l’un ; double-cliquez pour les remettre à la même taille."
+              ]
+            },
+            "Après l’application, le panneau Résultat le confirme (« Appliqué. Le texte de gauche contient maintenant le résultat. ») et propose Annuler ainsi que « Comparer avec le texte d’origine », qui ouvre la comparaison entre l’avant et l’après. Un nouvel aperçu est généré dès que vous modifiez le texte ou une option de l’outil.",
+            {
+              "note": "Affichage → « Résultat à côté du texte » permet d’afficher ou de masquer le panneau. Pour les textes de plus de deux millions de caractères, aucun aperçu n’est calculé : appliquez l’outil et utilisez Annuler pour rétablir le texte."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Tout remplacer",
+          "body": [
+            "Remplace en une seule opération toutes les occurrences trouvées. Pendant la saisie du texte à rechercher, Scribe indique le nombre d’occurrences et les marque dans le texte pour que vous voyiez les changements avant de les appliquer.",
+            {
+              "points": [
+                "« Expression régulière » : le texte recherché est un motif. Dans « Remplacer par », $1, $2… représentent le texte correspondant aux groupes du motif.",
+                "« Respecter la casse » : a et A sont considérées comme des lettres différentes.",
+                "« Mots entiers uniquement » : « chat » ne correspond pas à « chaton ».",
+                "« Conserver la casse du texte remplacé » : remplacer « chat » par « chien » transforme « Chat » en « Chien » et « CHAT » en « CHIEN »."
+              ]
+            },
+            {
+              "points": [
+                "« Autres options » → « Remplacer chaque correspondance par… » : le texte inséré peut contenir des champs remplis pour chaque correspondance. {counter} produit 1, 2, 3… ({counter:10} commence à 10 ; {counter:10:5} augmente de 5) ; {date} et {time} utilisent la date et l’heure de l’ordinateur ; {uuid} produit un identifiant ; {random} génère 8 lettres et chiffres aléatoires ({random:12} en génère 12).",
+                "Sous le champ de recherche, Scribe indique également le nombre de lignes contenant des résultats et le nombre de textes concernés."
+              ]
+            },
+            "« Remplacer plusieurs éléments » applique une liste de paires en une seule étape. Écrivez une paire par ligne au format : texte recherché => texte de remplacement. Les paires sont appliquées dans l’ordre, chacune au résultat de la précédente ; si la partie après la flèche est vide, le texte est supprimé.",
+            {
+              "note": "Un motif ne peut pas bloquer le programme : sa durée d’exécution augmente proportionnellement à la longueur du texte, jamais plus vite. Pour cette raison, les motifs qui font référence à un résultat précédent (\\1) ne sont pas pris en charge."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Lignes",
+          "body": [
+            {
+              "points": [
+                "Triez les lignes selon l’ordre alphabétique, selon la langue du programme ou celle de votre choix (en roumain, ă après a ; en suédois, ä après z ; en allemand, ä près de a) ; les suites de chiffres comme des nombres (file2 avant file10) ; le nombre initial de chaque ligne ; sa longueur ; son nombre de mots ; sa date initiale (05.03.2024, 2024-03-05, avec ou sans heure) ; les adresses Internet ; les numéros de version (1.2.10 après 1.2.9) ; les titres, en ignorant l’article initial ; un ordre que vous définissez (petit, moyen, grand) ; ou aucun ordre.",
+                "Les lignes sans valeur de tri (pas de nombre ni de date, ou valeur absente de l’ordre personnalisé) restent à la fin, que les autres soient triées du plus petit au plus grand ou l’inverse.",
+                "Autres options : comparer à partir d’un mot ou d’un caractère, ou selon une colonne de tableau ; conserver la première ligne comme en-tête ; trier des paragraphes ; nettoyer d’abord en rognant, supprimant les lignes vides ou les doublons.",
+                "Supprimer les doublons : conserver la première, la dernière ou aucune des lignes répétées. Vous pouvez ignorer la casse, les espaces, les chiffres ou la ponctuation, ainsi qu’un nombre de caractères au début ou à la fin. Comparez une colonne ou uniquement les correspondances d’un motif. Les lignes vides peuvent être conservées, supprimées ou réduites à une seule.",
+                "Compter les lignes répétées : conserve chaque ligne une seule fois et indique le nombre d’occurrences devant, en classant du plus fréquent au moins fréquent, dans l’ordre inverse ou initial.",
+                "Conserver ou supprimer des lignes : recherche un texte dans chaque ligne et ne garde que celles qui le contiennent, ou qui ne le contiennent pas.",
+                "Inverser l’ordre des lignes ; Mélanger les lignes.",
+                "Numéroter les lignes : choisissez le premier numéro, son séparateur, les zéros initiaux pour aligner les numéros et l’omission des lignes vides.",
+                "Lignes vides : les supprimer toutes ou n’en conserver qu’une lorsqu’elles se suivent.",
+                "Joindre les lignes en une seule, avec le séparateur choisi ; scinder à chaque virgule, point-virgule ou autre séparateur. Dans les champs de numérotation, fusion, découpage et comptage, \\t représente une tabulation."
+              ]
+            },
+            {
+              "note": "Une option qui ne s’applique qu’avec une autre n’apparaît que dans ce cas : la colonne s’affiche par exemple quand vous comparez selon une colonne. Les options moins courantes se trouvent dans « Autres options »."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Majuscules et casse",
+          "body": [
+            "Modifier la casse : casse de phrase, Initiales En Majuscules, tout en majuscules, tout en minuscules, casse inversée et conventions de nommage en code : camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "La casse respecte les règles de chaque alphabet, et pas seulement celles de l’anglais.",
+            "Dans le groupe Direction, « Inverser le texte » inverse les lettres de chaque ligne, l’ordre des mots ou les lettres de chaque mot. « À l’envers » retourne les caractères ; « Comme dans un miroir » inverse aussi ceux qui ont un sens gauche-droite. Les lettres sont comptées comme à la lecture : une lettre et ses signes diacritiques ne forment qu’un caractère."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Nettoyage",
+          "body": [
+            {
+              "points": [
+                "Nettoyer les espaces : réduit plusieurs espaces à un seul et supprime ceux en fin de ligne.",
+                "Rogner les lignes : aux deux extrémités, au début ou à la fin.",
+                "Guillemets : droits, anglais, roumains, allemands ou français.",
+                "Supprimer les signes diacritiques : ă devient a, é devient e. Cette option s’applique aux alphabets latin et grec, où la lettre sans signe reste la même lettre.",
+                "Rétablir les lettres roumaines : ş et ţ (avec cédille, produites par d’anciens claviers) deviennent ș et ț (avec virgule souscrite).",
+                "Convertir les tabulations en espaces ou les espaces en tabulations, selon la largeur choisie.",
+                "Supprimer les balises HTML : pour le code source d’une page web collé dans le texte. Les balises, scripts et styles sont retirés ; le contenu visible est conservé. Pour récupérer une page depuis son adresse, utilisez l’outil « Texte d’une page web ».",
+                "Texte d’une page web : saisissez l’adresse (example.com/page) et sélectionnez « Récupérer le texte ». Le contenu visible est inséré au curseur, sans balises, scripts ni styles. C’est le seul outil de Scribe qui se connecte à Internet, uniquement sur demande : la page est chargée par le navigateur installé (Microsoft Edge ou Google Chrome), sans fenêtre, cookies ni sessions. Le programme lui-même n’envoie rien. Une page nécessitant une connexion n’affiche que ce qu’un visiteur non connecté peut voir."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Rétablir les signes diacritiques roumains",
+          "body": [
+            "Scribe rétablit les signes diacritiques dans les textes roumains saisis sans ă, â, î, ș et ț.",
+            {
+              "steps": [
+                "Ouvrez l’outil dans le groupe Nettoyage et sélectionnez « Appliquer au texte ».",
+                "Les mots qui n’ont qu’une seule forme correcte sont modifiés automatiquement : « stiu » devient « știu », « informatii » devient « informații ».",
+                "Les mots ambigus (fata, fată, fața, față) sont listés sous le bouton, à leur emplacement dans le texte. Sélectionnez la forme correcte pour chacun.",
+                "Vous pouvez aussi cocher « Choisir automatiquement la forme la plus probable pour les mots ambigus » avant d’appliquer : aucun choix ne vous sera demandé, mais relisez le résultat."
+              ]
+            },
+            "Quand le contexte suffit, Scribe choisit la forme selon les mots voisins : « o casa » devient « o casă », « casa mea » reste inchangé et « pentru ca » devient « pentru că ».",
+            {
+              "note": "Cet outil a été conçu pour Scribe à partir d’une liste de mots courants et des terminaisons qui prennent toujours des signes diacritiques en roumain. Les mots inconnus (mots rares ou noms propres) restent tels quels, et les mots déjà accentués ne sont jamais modifiés. Relisez le résultat avant de l’envoyer."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Générer du texte : remplissage et aléatoire",
+          "body": [
+            "Les outils du groupe « Générer du texte » ne modifient rien : ils ajoutent du contenu. Le texte produit est inséré à la position du curseur, à la place de la sélection.",
+            {
+              "points": [
+                "Texte de remplissage : paragraphes, phrases, mots, listes, titres ou éléments de page (un titre, des paragraphes, une liste). Choisissez du lorem ipsum, de l’anglais, du roumain, du vocabulaire de bureau ou de cuisine, ou vos propres mots. Options : phrases courtes, moyennes ou longues ; texte brut, Markdown, HTML ou JSON ; niveau des titres ; limite de caractères (la coupure se fait à la fin d’un mot et le texte se termine par une phrase complète) ; mots à exclure.",
+                "Données fictives : noms, adresses e-mail, numéros de téléphone, adresses postales, dates ou nombres, une valeur par ligne, selon la Roumanie ou les pays anglophones. « Lignes selon mon motif » formate chaque ligne comme vous le souhaitez. Les variables {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} et {row} sont remplacées par les valeurs générées : vous pouvez créer un tableau d’exemple en quelques instants.",
+                "Texte aléatoire : mots de passe (avec au moins une lettre, un chiffre et un signe), lettres, chiffres, valeurs hexadécimales ou identifiants (UUID), sur une ligne ou plusieurs. Vous pouvez exclure les caractères faciles à confondre (0 et O, 1, l et I).",
+                "Une graine aléatoire (dans « Autres options ») permet de générer les mêmes textes de remplissage et données fictives pour la même valeur ; 0 produit un résultat différent à chaque fois."
+              ]
+            },
+            {
+              "note": "Les mots de passe sont générés sur cet ordinateur à partir du générateur aléatoire du système et ne sont envoyés nulle part. Les adresses e-mail fictives se terminent par example.com, un domaine qui ne distribue aucun message. Un numéro de téléphone généré au hasard peut appartenir à quelqu’un : ne l’appelez pas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recettes",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Enregistrer ses opérations sous forme de recette",
+          "body": [
+            "Une recette est une liste d’outils et de leurs options, enregistrée sous un nom et réutilisable en un clic.",
+            {
+              "steps": [
+                "Appliquez au texte les outils souhaités, dans l’ordre voulu.",
+                "Ouvrez « Recettes » en haut du panneau : les outils appliqués y sont listés.",
+                "Sélectionnez « Enregistrer comme recette » et donnez-lui un nom.",
+                "Plus tard, ouvrez la recette et sélectionnez « Appliquer au texte » : toutes les étapes sont effectuées, et une seule annulation les rétablit toutes."
+              ]
+            },
+            "Les recettes sont conservées sur cet ordinateur et disponibles pour tous les textes."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Modifier une recette ou en créer une",
+          "body": [
+            "« Modifier » sur une recette ouverte affiche son nom et ses étapes. Vous pouvez déplacer chaque étape vers le haut ou le bas, la supprimer ou modifier ses options ; les outils s’ajoutent depuis la liste sous les étapes. Rien n’est enregistré avant « Enregistrer ».",
+            "« Nouvelle recette » crée une recette vide, à composer de la même façon, sans appliquer d’abord les outils à un texte.",
+            {
+              "note": "Les outils qui génèrent du texte (remplissage, aléatoire) ne peuvent pas faire partie d’une recette : une recette modifie un texte."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Exécuter une recette sur des fichiers",
+          "body": [
+            {
+              "steps": [
+                "Ouvrez la recette puis, sous « Appliquer à des fichiers », ajoutez des fichiers ou un dossier (avec ses sous-dossiers).",
+                "Choisissez la destination des résultats : un autre dossier, pour conserver les fichiers d’origine, ou les fichiers eux-mêmes.",
+                "Lancez l’opération. Scribe indique le nombre de fichiers écrits, ceux qui n’avaient rien à modifier et ceux qui n’ont pas pu être traités, avec la raison."
+              ]
+            },
+            "Chaque fichier conserve son encodage et ses fins de ligne. Dans un autre dossier, l’arborescence des fichiers est conservée et aucun fichier déjà présent n’est remplacé.",
+            {
+              "note": "L’écrasement des fichiers d’origine ne peut pas être annulé dans Scribe. Faites une copie de sauvegarde si leur contenu est important."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistiques, comparaison et dossiers",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistiques",
+          "body": [
+            "« Statistiques » en haut du panneau décrit la composition du texte ou de la sélection. Chaque section peut être repliée.",
+            {
+              "points": [
+                "En haut : mots, caractères avec et sans espaces, phrases, paragraphes, lignes, pages et taille en octets.",
+                "Durée estimée : lecture silencieuse, lecture à voix haute, saisie au clavier et écriture manuscrite.",
+                "Mots : nombre de mots différents et leur proportion, nombre de lettres par mot, syllabes, mot le plus long et le plus court, répartition des mots selon leur longueur.",
+                "Phrases : nombre de mots par phrase, phrases courtes, moyennes et longues, déclaratives, interrogatives et exclamatives, phrase la plus longue et la plus courte.",
+                "Lisibilité : score de 0 (très difficile) à 100 (très facile), calculé avec une formule adaptée à la langue du texte. Des formules existent pour l’anglais, l’allemand, l’espagnol, le français, l’italien, le néerlandais, le portugais et le russe. Aucune note n’est affichée pour les autres langues, car une formule conçue pour une autre langue donnerait un résultat trompeur.",
+                "Éléments les plus fréquents : mots et proportions, ainsi que paires et groupes de trois mots récurrents.",
+                "Longueur selon des limites courantes : nombre de caractères restants ou dépassés pour un titre, une description, une courte publication et d’autres formats."
+              ]
+            },
+            "Les mots et les phrases sont détectés selon les règles de chaque système d’écriture ; le chinois, le japonais et le thaï sont donc aussi analysés même s’ils ne séparent pas les mots par des espaces. Les vitesses utilisées pour estimer les durées et le nombre de mots par page se règlent dans Paramètres."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Comparer deux textes",
+          "body": [
+            {
+              "points": [
+                "Outils → « Comparer avec un autre texte » : compare le texte de l’éditeur avec un texte saisi ou collé.",
+                "Outils → « Comparer avec un fichier » : compare le texte actuel de l’éditeur avec un fichier choisi.",
+                "Outils → « Comparer deux textes » : compare côte à côte deux textes saisis ou collés.",
+                "Outils → « Comparer deux fichiers »."
+              ]
+            },
+            "Les deux textes sont affichés côte à côte. Les lignes uniquement présentes dans le premier sont marquées comme supprimées ; celles présentes dans le second comme ajoutées. Dans une ligne modifiée, les mots différents sont mis en évidence. Seules les différences et quelques lignes de contexte sont affichées ; les flèches permettent de passer de l’une à l’autre.",
+            "Vous pouvez ignorer la casse, les espaces, les lignes vides, les nombres ou la ponctuation. « Dans une seule colonne » présente les suppressions au-dessus des ajouts, avec leurs signes, au lieu d’un affichage côte à côte. À côté des totaux, Scribe indique la proportion de lignes identiques entre les textes.",
+            "Un texte s’affiche dès qu’il est choisi, avant même le second. Faites glisser la séparation entre les deux textes pour donner plus de place à l’un. Pendant la saisie, la barre sous les champs peut être déplacée verticalement pour agrandir les champs ou la comparaison. Double-cliquez sur une séparation pour la réinitialiser.",
+            "Lorsque plusieurs lignes successives changent, chacune est associée à la ligne la plus proche. Ainsi, une ligne ajoutée ou supprimée dans le groupe ne donne pas l’impression que toutes les suivantes ont été remplacées.",
+            "« Saisir ou coller les textes » affiche un champ au-dessus de chaque colonne. La comparaison se met à jour pendant la saisie ; vous pouvez quand même choisir un fichier pour l’un ou l’autre côté."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Rechercher et remplacer dans un dossier",
+          "body": [
+            {
+              "steps": [
+                "Outils → « Rechercher dans un dossier » (Ctrl+Maj+F), puis choisissez le dossier. Les sous-dossiers sont également parcourus.",
+                "Saisissez le texte recherché et choisissez les mêmes options que pour « Tout remplacer ». « Types de fichiers » limite la recherche à certaines extensions (txt, md, csv…).",
+                "Chaque résultat est affiché dans son contexte, regroupé par fichier. Sélectionnez une ligne pour ouvrir le fichier à cet emplacement.",
+                "Pour remplacer du texte, saisissez le nouveau contenu, décochez les fichiers à laisser intacts puis sélectionnez « Enregistrer les fichiers »."
+              ]
+            },
+            "Rien n’est écrit avant votre confirmation, et seuls les fichiers encore cochés sont modifiés. Chaque fichier conserve son encodage et ses fins de ligne.",
+            {
+              "note": "Les dossiers masqués et ceux générés par des outils de développement (.git, node_modules) sont ignorés sauf demande explicite. Les fichiers non textuels sont toujours ignorés."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paramètres",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Paramètres de Scribe",
+          "body": [
+            "Fichier → Paramètres ouvre la section Scribe dans les paramètres du programme.",
+            {
+              "points": [
+                "Éditeur : police à chasse fixe ou police du programme, taille, renvoi à la ligne, numéros de ligne et affichage ou non du résultat avant application d’un outil.",
+                "Nouveau texte : fins de ligne et présence éventuelle d’une marque d’ordre des octets (BOM) au début du fichier.",
+                "Statistiques : vitesses de lecture, de lecture à voix haute, de saisie et d’écriture manuscrite, ainsi que nombre de mots par page.",
+                "Raccourcis clavier des commandes de Scribe."
+              ]
+            },
+            "Chaque paramètre dispose d’un bouton pour rétablir sa valeur par défaut."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "À propos de Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "À propos de Scribe",
+          "body": [
+            "Scribe est l’application de texte de Syntelab Creative : un éditeur accompagné de ses outils. Il prévisualise le résultat d’un outil, nettoie et réorganise des listes, recherche et remplace du texte dans un document ou un dossier entier, compare deux textes, analyse leur contenu, génère du texte de remplissage et des données fictives, et enregistre les opérations fréquentes sous forme de recettes réutilisables.",
+            "Tout est traité sur cet ordinateur. La taille et le nombre de textes ne sont pas limités ; les seules limites sont la mémoire de l’ordinateur et les capacités de la technologie actuelle.",
+            "L’application est nouvelle. Si elle ne répond pas à vos besoins d’écriture, écrivez-nous via Aide → Commentaires ; cela nous aide à choisir les prochaines améliorations."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Technologies utilisées par Scribe",
+          "body": [
+            {
+              "points": [
+                "Éditeur : CodeMirror.",
+                "Lecture et écriture des encodages : encoding_rs, avec chardetng pour détecter l’encodage des fichiers qui ne l’indiquent pas.",
+                "Recherche et remplacement : bibliothèque d’expressions régulières de Rust, dont les motifs ne peuvent pas bloquer le programme.",
+                "Tri selon les règles de chaque langue et détection des mots et phrases dans tous les systèmes d’écriture : ICU4X, bibliothèque Unicode.",
+                "Comparaison de textes : bibliothèque similar.",
+                "Signes diacritiques roumains : liste de mots et règles conçues pour Scribe."
+              ]
+            },
+            "Les technologies partagées avec le reste du programme sont présentées dans « À propos de Syntelab Creative »."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Limitations actuelles de Scribe",
+          "body": [
+            {
+              "points": [
+                "Les fichiers très volumineux sont lus page par page et ne peuvent être modifiés qu’avec des recettes ; pour les modifier manuellement, il faut charger le fichier entier en mémoire.",
+                "Le rétablissement des signes diacritiques roumains reconnaît les mots courants ; les mots rares et les noms propres restent tels qu’ils ont été saisis.",
+                "Il n’y a pas encore de vérification orthographique.",
+                "Scribe n’extrait pas le texte des PDF ni des documents bureautiques ; PDF Organizer peut les ouvrir.",
+                "L’éditeur ne met pas en couleur le code ni le Markdown.",
+                "Un fichier déposé sur la fenêtre s’ouvre comme nouveau texte. Le programme ne connaît pas son emplacement sur le disque ; il vous demande donc où l’enregistrer."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

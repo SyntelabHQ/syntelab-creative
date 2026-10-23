@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Teks dan fail",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editor",
+          "body": [
+            "Scribe ialah editor teks biasa dengan alat-alat di sisinya. Setiap teks mempunyai tab; teks berada di tengah, panel alat di sisinya, dan baris maklumat di bawahnya.",
+            "Apabila Scribe dibuka, ia akan bertanya apa yang ingin anda lakukan: kira perkataan, cari dan ganti, buang pendua, bandingkan dua teks, isih baris, terbalikkan teks, tulis teks pengisi atau teks rawak. Setiap pilihan akan membuka teks bersama alat yang berkaitan di sisinya; \"Teks kosong\" membuka teks sahaja, dan teks yang dibuka baru-baru ini disenaraikan di bawah.",
+            {
+              "points": [
+                "Fail → Teks baharu (Ctrl+N) memulakan teks kosong.",
+                "Fail → Buka (Ctrl+O) membuka satu atau beberapa fail, setiap satu dalam tabnya. Mana-mana fail yang mengandungi teks boleh dibuka: .txt, .md, .csv, .log, .srt, kod sumber dan lain-lain.",
+                "Edit → Buat asal (Ctrl+Z) dan Buat semula (Ctrl+Y) melalui semua yang telah dilakukan pada teks, di mana satu alat atau resipi dikira sebagai satu langkah.",
+                "Edit → Cari dan ganti (Ctrl+F) membuka jalur dalam editor yang beralih dari satu padanan ke padanan seterusnya.",
+                "Edit → Pilih semua (Ctrl+A)."
+              ]
+            },
+            "Baris di bawah teks menunjukkan kedudukan kursor, jumlah yang dipilih, bilangan baris, perkataan dan aksara, pengekodan fail dan cara barisnya berakhir.",
+            "Fail yang ditarik ke dalam tetingkap juga akan dibuka, setiap satu sebagai teks baharu dengan nama fail, pengekodan dan pengakhiran baris. Program mengenal pasti kandungan fail yang ditarik tetapi bukan lokasinya di dalam cakera, jadi proses menyimpan akan meminta lokasi; fail melebihi 64 MB dibuka melalui Fail → Buka.",
+            "Teks baharu, semasa ia kosong, menyenaraikan teks yang dibuka baru-baru ini: klik satu untuk membukanya. \"Kosongkan senarai\" akan mengosongkannya; senarai ini disimpan pada komputer ini sahaja."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Simpan dan Simpan sebagai",
+          "body": [
+            "Tiada apa-apa yang mengubah fail pada cakera sehingga anda menyimpannya. Titik pada tab menunjukkan teks mempunyai perubahan yang belum disimpan dalam failnya, dan menutup tab tersebut akan meminta pengesahan terlebih dahulu.",
+            {
+              "points": [
+                "Simpan (Ctrl+S) menulis teks ke dalam failnya. Teks baharu akan meminta lokasi penyimpanan.",
+                "Simpan sebagai (Ctrl+Shift+S) menulisnya ke fail baharu, yang kemudiannya menggantikan tab tersebut, dengan semua perkara yang boleh dibatalkan masih ada; fail lama kekal seperti sedia kala."
+              ]
+            },
+            "Fail ditulis sepenuhnya atau tidak sama sekali: jika penulisan gagal, fail yang sedia ada masih kekal.",
+            {
+              "note": "Fail disimpan mengikut cara ia dibuka: dalam pengekodan yang sama, dengan pengakhiran baris yang sama. Teks yang ditaip pada Windows dan teks yang ditaip pada Linux kedua-duanya kekal seperti sedia kala."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Pengekodan dan pengakhiran baris",
+          "body": [
+            "Pengekodan adalah cara huruf disimpan sebagai bait. Scribe membaca apa yang dinyatakan oleh fail tersebut, dan membuat tekaan apabila tiada maklumat diberikan. Kebanyakan fail hari ini adalah UTF-8; fail lama dari Eropah Tengah sering kali menggunakan windows-1250.",
+            {
+              "points": [
+                "Huruf yang kelihatan salah (Ã£ menggantikan ă, atau petak): Fail → \"Baca semula dalam pengekodan lain\", dan pilih pengekodan yang digunakan semasa fail ditulis.",
+                "Untuk menyimpan dalam pengekodan lain, pilihnya pada baris di bawah teks, kemudian simpan. Jika teks mempunyai huruf yang tidak dapat ditulis oleh pengekodan tersebut, Scribe akan memberitahu huruf mana dan tidak menulis apa-apa.",
+                "Pengakhiran baris (Windows CRLF, Linux dan macOS LF, Mac lama CR) ditukar di tempat yang sama. Fail dengan pengakhiran bercampur akan dinyatakan demikian; menyimpan akan memberikan semua barisnya pengakhiran yang sama."
+              ]
+            },
+            "Permulaan teks baharu dipilih dalam Tetapan."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Cara teks dipaparkan",
+          "body": [
+            {
+              "points": [
+                "Semua perkara dalam menu Lihat adalah suis: hidup, ia kelihatan; mati, ia tidak kelihatan.",
+                "Teks: Balut baris panjang (Alt+Z) — baris yang lebih panjang daripada tetingkap akan bersambung di bawah, dan teks mengekalkan barisnya; Nombor baris; Hasil di sebelah teks.",
+                "Di sebelah teks: Alatan (Ctrl+T), Resipi, Statistik. Panel hanya menunjukkan bahagian yang dihidupkan; jika tiada yang dihidupkan, tiada panel akan dipaparkan.",
+                "Alatan yang dipaparkan: setiap kumpulan alatan (cari dan ganti, garis, huruf besar dan kecil, pembersihan, tulis teks) boleh dikeluarkan daripada panel. Alatan yang dipilih daripada menu Format atau Alatan tetap akan dipaparkan: bahagian dan kumpulannya akan muncul semula secara automatik.",
+                "Anak panah berkembar di bahagian atas panel akan melipatnya menjadi jalur di tepi, di mana setiap bahagiannya boleh dicapai dengan satu klik; seret tepinya untuk menjadikannya lebih lebar atau lebih sempit.",
+                "Huruf dan saiznya dipilih dalam Tetapan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Fail yang sangat besar",
+          "body": [
+            "Fail melebihi 64 MB tidak dimasukkan ke dalam editor: ia dibuka dalam tab yang memaparkannya satu halaman 500 baris pada satu masa, dibaca daripada fail semasa anda menatal. Fail bersaiz gigabait dibuka dengan cara ini dalam masa yang diambil untuk menelitinya sekali.",
+            {
+              "points": [
+                "\"Halaman sebelumnya\" dan \"Halaman seterusnya\" digunakan untuk menelitinya; nombor baris dan \"Pergi\" digunakan untuk melompat ke mana-mana baris.",
+                "Carian mencari di seluruh fail, dengan pilihan yang sama seperti di tempat lain, dan menyenaraikan tempat yang ditemui: klik satu untuk pergi ke baris tersebut. Senarai yang panjang akan dipaparkan bahagian demi bahagian, dengan \"Cari lagi\".",
+                "\"Jalankan resipi pada keseluruhan fail\" menulis hasilnya ke dalam folder yang anda pilih, dengan nama yang sama. Fail itu sendiri tidak akan diubah di sini.",
+                "\"Buka keseluruhan dalam editor\" tetap memasukkannya ke dalam editor untuk diubah secara manual. Ia mungkin perlahan, dan memerlukan memori beberapa kali ganda saiz fail tersebut."
+              ]
+            },
+            {
+              "note": "Fail yang ditulis dua bait bagi satu huruf (UTF-16) tidak boleh dipaparkan satu halaman pada satu masa. Resipi memegang keseluruhan fail dalam memori semasa ia berjalan: hadnya adalah memori komputer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alatan",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Cara alatan berfungsi",
+          "body": [
+            "Alatan berada dalam panel di sebelah teks, dalam kumpulan. Klik alatan untuk melihat pilihannya, kemudian Terapkan pada teks.",
+            {
+              "points": [
+                "Apabila sesuatu dipilih, alatan hanya mengubah bahagian yang dipilih; apabila tiada apa-apa dipilih, keseluruhan teks akan diubah. Panel akan menyatakan pilihan tersebut di bahagian atasnya.",
+                "Di bawah butang, alatan akan menyatakan apa yang telah dilakukan: berapa banyak baris atau tempat yang telah diubah.",
+                "Setiap alat adalah satu langkah: Buat asal akan mengembalikannya sepenuhnya.",
+                "Setiap alat juga terdapat dalam menu dan dalam carian arahan: alat yang mengubah bentuk teks (baris, huruf besar dan huruf, pembersihan) dalam menu Format, yang lain dalam Alatan. Memilih salah satu di sana akan membuka panel dengan pilihan yang berkaitan."
+              ]
+            },
+            "Dalam menu Format, alat yang kebanyakannya mempunyai satu pilihan disusun mengikut pilihannya: setiap cara untuk mengubah huruf besar, setiap jenis tanda petikan, setiap cara untuk memusingkan teks adalah arahan tersendiri, yang membuka alat dengan pilihan tersebut dipilih. Jika tetingkap terlalu sempit untuk satu kumpulan, kumpulan tersebut menjadi satu butang yang membuka keseluruhan senarai.",
+            "Alat-alat ini berjalan pada komputer ini. Tiada teks yang keluar daripadanya."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Hasil, sebelum anda guna",
+          "body": [
+            "Semasa alat dibuka, hasil yang akan diberikan dipaparkan di sebelah teks, dalam panel \"Hasil\". Tiada apa-apa dalam teks yang berubah sehingga anda memilih Terapkan pada teks. Hasil tersebut akan mengikut anda: ubah pilihan atau teks, dan ia akan dijana semula.",
+            {
+              "points": [
+                "Teks dan hasil berada bersebelahan, masing-masing di bawah pengepala dengan ketinggian yang sama, supaya baris yang sama bermula pada ketinggian yang sama; ia skrol bersama (butang rantai akan mematikan fungsi tersebut).",
+                "Baris yang akan berubah ditandakan, dengan bahagian baris yang berubah ditandakan lebih gelap; baris yang hanya akan berpindah, dan baris yang baharu, masing-masing mempunyai warna tersendiri. Baris yang akan diubah atau dikeluarkan juga ditandakan dalam teks anda.",
+                "Di bawah nama: apa yang akan berlaku dalam bentuk angka — baris yang diubah, dipindahkan, baharu, dikeluarkan; baris dan aksara sebelum dan selepas.",
+                "Di bawah hasil: baris yang akan dikeluarkan. Klik salah satu untuk pergi ke baris tersebut dalam teks.",
+                "Butang kecil pada hasil: salin hasil, bukanya sebagai teks baharu, bandingkannya dengan teks dalam tab, skrol bersama, letakkan hasil di bawah teks dan bukannya di sebelah, sembunyikan. Teks mempunyai butangnya sendiri: buat asal, buat semula, salin, tampal atas, pilih semua, kosongkan.",
+                "Seret bar di antara kedua-duanya untuk memberi lebih ruang; klik dua kali untuk menjadikannya sama semula."
+              ]
+            },
+            "Selepas Terapkan pada teks, panel Hasil akan menyatakan demikian (\"Telah digunakan. Teks di sebelah kiri kini adalah hasilnya.\") dan menawarkan Buat asal serta \"Bandingkan dengan sebelumnya\", yang membuka perbandingan sebelum dan selepas yang sama. Ia akan menunjukkan hasil semula sebaik sahaja anda mengubah teks atau pilihan alat tersebut.",
+            {
+              "note": "Lihat → \"Hasil di sebelah teks\" menghidupkan atau mematikan panel tersebut. Untuk teks yang sangat panjang (lebih daripada dua juta aksara), tiada apa yang dipaparkan terlebih dahulu: gunakan alat tersebut, dan Buat asal akan mengembalikannya."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Ganti semua",
+          "body": [
+            "Menggantikan setiap tempat sesuatu ditemui, secara serentak. Semasa anda menaip apa yang ingin dicari, Scribe memberitahu dalam berapa banyak tempat ia ditemui dan menandakannya dalam teks, supaya anda dapat melihat apa yang akan berubah sebelum anda mengaplikasikannya.",
+            {
+              "points": [
+                "\"Ungkapan nalar\": teks yang dicari adalah satu corak. Dalam \"Gantikan dengan\", $1, $2… mewakili apa yang ditemui oleh kumpulan corak tersebut.",
+                "\"Huruf besar dikira\": a dan A adalah huruf yang berbeza.",
+                "\"Perkataan penuh sahaja\": \"kucing\" tidak akan ditemui di dalam \"kucingnya\".",
+                "\"Kekalkan huruf besar bagi apa yang diganti\": menggantikan \"kucing\" dengan \"anjing\" akan menukar \"Kucing\" menjadi \"Anjing\" dan \"KUCING\" menjadi \"ANJING\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Lebih banyak pilihan\" → \"Isi…\": apa yang dimasukkan sebagai pengganti boleh mengandungi ruang kosong yang diisi pada setiap padanan. {counter} mengira 1, 2, 3… ({counter:10} bermula pada 10, {counter:10:5} meningkat sebanyak 5); {date} dan {time} adalah hari dan jam komputer anda; {uuid} adalah pengenal unik; {random} adalah 8 huruf dan digit rawak ({random:12} untuk 12).",
+                "Di bawah apa yang anda cari, Scribe juga memberitahu pada berapa banyak baris padanan tersebut berada dan berapa banyak teks berbeza yang wujud."
+              ]
+            },
+            "\"Gantikan beberapa sekali gus\" melakukan senarai pasangan dalam satu langkah. Tulis satu pasangan pada satu baris, seperti: apa yang ingin dicari => apa yang ingin diletakkan di tempatnya. Ia dilakukan dari yang pertama hingga yang terakhir, setiap satu berdasarkan apa yang ditinggalkan oleh yang sebelumnya; bahagian kedua yang kosong akan membuang teks tersebut.",
+            {
+              "note": "Corak tidak boleh membekukan program: masa yang diambil meningkat mengikut panjang teks dan tidak lebih pantas daripada itu. Corak yang merujuk kembali kepada apa yang ditemui (\\1) tidak tersedia atas sebab tersebut."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Baris",
+          "body": [
+            {
+              "points": [
+                "Isih baris mengikut: hurufnya, seperti kamus, dalam bahasa program atau bahasa yang anda pilih (dalam bahasa Romania ă datang selepas a; bahasa Sweden meletakkan ä selepas z, bahasa Jerman bersebelahan a); huruf dengan nombor sebagai nombor (file2 sebelum file10); nombor yang memulakan setiap baris; panjang; jumlah perkataan; tarikh yang memulakan setiap baris (05.03.2024, 2024-03-05, dengan atau tanpa jam); alamat internet; nombor versi (1.2.10 selepas 1.2.9); tajuk, di mana artikel di permulaan tidak dikira; urutan yang anda tulis (kecil, sederhana, besar); atau tanpa urutan langsung.",
+                "Baris yang tidak mempunyai kriteria untuk diisih (tiada nombor, tiada tarikh, nilai yang tidak mengikut urutan yang anda tulis) akan kekal di hujung tidak kira bagaimana baris lain diisih: terkecil dahulu atau terbesar dahulu.",
+                "Lebih banyak pilihan untuk pengisihan: bandingkan bermula dari perkataan atau aksara tertentu, atau satu kolum jadual (dengan bahagian kolum tersebut); kekalkan baris pertama di tempatnya sebagai tajuk; isih perenggan berbanding baris; dan kemaskan dahulu — trim, buang baris kosong, buang pendua.",
+                "Buang baris pendua: kekalkan baris pertama, terakhir, atau tiada satu pun daripada baris yang berulang (hanya baris yang muncul sekali sahaja dikekalkan). Huruf besar, ruang di sekeliling baris, digit, tanda baca, dan jumlah aksara di permulaan atau di hujung boleh diabaikan; hanya satu kolum, atau hanya apa yang ditemui oleh corak, boleh menjadi kriteria perbandingan. Baris kosong dikendalikan seperti baris lain, dikekalkan, dibuang, atau digabungkan.",
+                "Kira baris berulang: tinggalkan setiap baris sekali, dengan jumlah kekerapannya ditulis sebelumnya — yang paling kerap berulang dahulu, atau yang paling kurang, atau mengikut urutan kemunculannya.",
+                "Kekalkan atau buang baris: mencari sesuatu dalam setiap baris dan hanya mengekalkan baris yang mempunyainya, atau hanya baris yang tidak mempunyainya.",
+                "Terbalikkan urutan baris; Rawak baris.",
+                "Nombor baris: nombor pertama, apa yang hadir selepasnya, sifar di hadapan supaya nombor sejajar, baris kosong tanpa nombor.",
+                "Baris kosong: buang semuanya, atau tinggalkan satu jika terdapat beberapa baris.",
+                "Gabungkan baris menjadi satu, dengan apa yang anda pilih di antaranya; Pecahkan kepada baris pada setiap koma, titik koma atau apa-apa sahaja. Di mana sahaja apa yang berada di antara perkara ditaip (penomboran, penggabungan, pemecahan, pengiraan), \\t mewakili tab, yang tidak boleh ditaip ke dalam medan."
+              ]
+            },
+            {
+              "note": "Pilihan yang hanya penting dengan pilihan lain hanya akan dipaparkan pada masa itu: kolum, setelah anda membandingkan mengikut kolum. Pilihan yang kurang diperlukan berada di bawah \"Lebih banyak pilihan\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Huruf Besar",
+          "body": [
+            "Tukar huruf besar: huruf besar ayat, setiap perkataan dengan huruf besar, semua huruf besar, semua huruf kecil, terbalik, dan cara nama ditulis dalam kod: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Huruf besar mengikut peraturan setiap abjad, bukan hanya bahasa Inggeris.",
+            "Dalam kumpulan Arah, \"Terbalikkan teks\" menterbalikkan huruf setiap baris, atau urutan perkataannya, atau huruf setiap perkataan; \"Terbalikkan atas bawah\" menulisnya untuk dibaca dari seberang meja, dan \"Seperti cermin\" juga menukar tanda yang mempunyai kiri dan kanan. Huruf dikira sebagaimana pembaca mengiranya: satu huruf dengan tandanya kekal sebagai satu."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Pembersihan",
+          "body": [
+            {
+              "points": [
+                "Bersihkan ruang: beberapa ruang menjadi satu; ruang di hujung baris dibuang.",
+                "Trim hujung baris: di kedua-dua hujung, di permulaan atau di penghujung.",
+                "Tanda petikan: lurus, Inggeris, Romania, Jerman atau Perancis.",
+                "Buang tanda diakritik: ă menjadi a, é menjadi e. Hanya dalam abjad Latin dan Greek, di mana huruf tanpa tandanya masih merupakan huruf tersebut.",
+                "Baiki huruf Romania: ş dan ţ (dengan cedilla, ditulis oleh papan kekunci lama) menjadi ș dan ț (dengan koma), huruf yang digunakan dalam penulisan bahasa Romania.",
+                "Tukar tab kepada ruang dan ruang kepada tab, dengan lebar tab yang anda pilih.",
+                "Alih kelua tag HTML: untuk sumber halaman web yang ditampal ke dalam teks. Tag, skrip dan gaya akan dialih keluar; apa yang dilihat oleh pembaca akan dikekalkan. Untuk membawa halaman daripada alamatnya, gunakan alat di bawahnya, \"Teks halaman web\".",
+                "Teks halaman web: taip alamat halaman (example.com/page) dan pilih \"Bawa teks\". Apa yang dilihat oleh pembaca pada halaman tersebut akan ditulis di tempat kursor berada, tanpa tag, skrip atau gaya. Ini adalah satu-satunya alat Scribe yang mengakses dalam talian, dan hanya apabila anda memintanya: halaman tersebut diambil oleh pelayar yang dipasang pada komputer ini (Microsoft Edge atau Google Chrome), dijalankan tanpa tetingkap dan tanpa kuki atau log masuk anda; program itu sendiri tidak menghantar apa-apa. Halaman yang memerlukan anda log masuk hanya akan memberikan apa yang dilihat oleh orang asing."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Mengembalikan tanda diakritik Romania",
+          "body": [
+            "Teks Romania yang ditaip tanpa ă, â, î, ș, ț akan ditulis semula dengan tanda tersebut.",
+            {
+              "steps": [
+                "Buka alat dalam kumpulan Pembersihan dan pilih Terapkan pada teks.",
+                "Perkataan yang mempunyai satu bentuk betul akan ditukar serta-merta: \"stiu\" menjadi \"știu\", \"informatii\" menjadi \"informații\".",
+                "Perkataan yang boleh dibaca dalam lebih daripada satu cara (fata, fată, fața, față) akan disenaraikan di bawah butang, mengikut kedudukannya dalam teks. Klik bentuk yang betul untuk setiap satu.",
+                "Atau tandakan \"Pilih bentuk yang lebih mungkin secara automatik apabila perkataan diragui\" sebelum menggunakan: tiada apa yang diminta, dan hasilnya perlu disemak semula."
+              ]
+            },
+            "Apabila perkataan di sekeliling sudah mencukupi, Scribe akan membuat keputusan berdasarkan perkataan tersebut: \"o casa\" menjadi \"o casă\", \"casa mea\" kekal, \"pentru ca\" menjadi \"pentru că\".",
+            {
+              "note": "Ini dibina untuk Scribe daripada senarai perkataan biasa dan akhiran yang sentiasa ditulis dengan tanda diakritik dalam bahasa Romania. Perkataan yang tidak dikenali (perkataan jarang, nama) akan kekal seperti yang ditaip, dan perkataan yang sudah ditulis dengan tanda diakritik tidak akan disentuh. Baca hasilnya sebelum menghantarnya."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Menulis teks: pengisi dan rawak",
+          "body": [
+            "Alatan dalam kumpulan \"Tulis teks\" tidak mengubah apa-apa: ia menulis. Apa yang dihasilkan akan diletakkan di mana kursor berada, menggantikan pilihan yang dibuat.",
+            {
+              "points": [
+                "Teks pengisi: perenggan, ayat, perkataan, senarai, tajuk, atau bahagian halaman (tajuk, perenggan, senarai). Dalam bahasa Latin pencetak (lorem ipsum), bahasa Inggeris, bahasa Romania, perkataan pejabat atau dapur, atau perkataan anda sendiri. Lebih banyak pilihan: ayat pendek, sederhana atau panjang; teks biasa, Markdown, HTML atau JSON; tahap tajuk; had aksara (teks dipotong pada perkataan penuh dan tetap berakhir sebagai satu ayat); perkataan yang ingin dikecualikan.",
+                "Data rekaan: nama, alamat e-mel, nombor telefon, alamat jalan, tarikh atau nombor, satu bagi setiap baris, dari Romania atau negara berbahasa Inggeris. \"Baris mengikut corak saya\" menulis setiap baris seperti yang anda nyatakan, dengan {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} dan {row} mewakili apa yang dihasilkan — satu jadual untuk mencuba sesuatu, sebentar lagi.",
+                "Teks rawak: kata laluan (huruf, digit dan tanda, sekurang-kurangnya satu daripada setiap satu), huruf, digit, heksadesimal atau pengenal pasti (UUID), pada satu baris atau banyak baris. Aksara yang mudah dikelirukan (0 dan O, 1, l dan I) boleh dikecualikan.",
+                "Satu benih (di bawah \"Lebih banyak pilihan\") menjadikan teks pengisi dan data rekaan keluar dengan hasil yang sama setiap kali untuk nombor yang sama; 0 memberikan hasil yang baharu setiap kali."
+              ]
+            },
+            {
+              "note": "Kata laluan dibuat pada komputer ini, daripada rawak sistem operasi, dan tidak dihantar ke mana-mana. Alamat e-mel rekaan berakhir dengan example.com, di mana e-mel tidak sampai kepada sesiapa; nombor telefon yang dibuat secara rawak mungkin milik seseorang, jadi jangan hubunginya."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Resipi",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Menyimpan tindakan anda sebagai resipi",
+          "body": [
+            "Resipi ialah senarai alat beserta pilihannya, disimpan di bawah satu nama dan dijalankan semula dengan satu klik.",
+            {
+              "steps": [
+                "Gunakan alat yang anda mahu pada teks, mengikut urutan yang anda mahukan.",
+                "Buka \"Resipi\" di bahagian atas panel: alat yang anda gunakan akan disenaraikan.",
+                "\"Simpan sebagai resipi\", dan berikan nama.",
+                "Kemudian, buka resipi tersebut dan pilih \"Jalankan pada teks\": semua langkahnya akan dilaksanakan, dan satu Buat asal akan membatalkan semuanya."
+              ]
+            },
+            "Resipi disimpan pada komputer ini dan tersedia dalam setiap teks."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Mengubah resipi, atau membuat resipi baharu",
+          "body": [
+            "\"Ubah\" pada resipi yang dibuka akan menunjukkan nama dan langkah-langkahnya. Setiap langkah boleh dipindahkan ke atas atau ke bawah, dikeluarkan, dan diberikan pilihan lain; alat ditambah daripada senarai di bawah langkah-langkah tersebut. Tiada apa-apa yang disimpan sehingga \"Simpan\".",
+            "\"Resipi baharu\" memulakan resipi tanpa langkah, untuk disusun dengan cara yang sama tanpa perlu menggunakan alat pada teks terlebih dahulu.",
+            {
+              "note": "Alat yang menulis teks (filler, random) bukan merupakan langkah resipi: resipi mengubah teks."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Menjalankan resipi pada fail",
+          "body": [
+            {
+              "steps": [
+                "Buka resipi dan, di bawah \"Jalankan pada fail\", tambah fail atau folder (termasuk folder di dalamnya).",
+                "Pilih destinasi hasil: ke dalam folder lain, yang mengekalkan fail asal, atau menggantikan fail itu sendiri.",
+                "Jalankan. Scribe akan memberitahu berapa banyak fail yang ditulis, berapa banyak yang tidak memerlukan perubahan, dan fail mana yang tidak dapat diproses serta sebabnya."
+              ]
+            },
+            "Setiap fail ditulis dalam pengekodan dan dengan penamat baris yang asalnya ada. Dalam folder lain, fail mengekalkan struktur folder asalnya, dan fail yang sudah ada di sana tidak akan ditindih.",
+            {
+              "note": "Menindih fail asal tidak boleh dibatalkan daripada Scribe. Simpan salinan jika fail tersebut penting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistik, perbandingan dan folder",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistik",
+          "body": [
+            "\"Statistik\" di bahagian atas panel menunjukkan kandungan teks, atau pilihan, yang dibuat. Setiap bahagian boleh dilipat.",
+            {
+              "points": [
+                "Di bahagian atas: perkataan, aksara dengan dan tanpa ruang, ayat, perenggan, baris, halaman, dan saiz dalam bait.",
+                "Masa: untuk membaca dalam diam, untuk disebut dengan kuat, untuk ditaip, dan untuk ditulis dengan tangan.",
+                "Perkataan: berapa banyak yang berbeza (dan bahagian daripada keseluruhan), huruf dalam satu perkataan, suku kata, perkataan terpanjang dan terpendek, dan berapa banyak perkataan bagi setiap panjang.",
+                "Ayat: perkataan dalam satu ayat, berapa banyak yang pendek, sederhana dan panjang, berapa banyak yang merupakan pernyataan, soalan dan seruan, serta yang terpanjang dan terpendek.",
+                "Kemudahan membaca: skor dari 0 (sangat sukar) hingga 100 (sangat mudah), mengikut formula yang dibuat untuk bahasa teks tersebut. Formula wujud untuk bahasa Inggeris, Jerman, Sepanyol, Perancis, Itali, Belanda, Portugis dan Rusia; bahasa tanpa formula tidak akan mendapat skor, kerana formula yang dibuat untuk bahasa lain akan mengelirukan.",
+                "Kekerapan tertinggi: perkataan yang paling kerap digunakan bersama bahagiannya dalam teks, serta pasangan dan kumpulan tiga perkataan yang berulang.",
+                "Ruang dalam had biasa: berapa banyak aksara yang tinggal, atau berlebihan, untuk tajuk, huraian, hantaran pendek dan lain-lain."
+              ]
+            },
+            "Perkataan dan ayat dicari mengikut peraturan setiap skrip, jadi bahasa Cina, Jepun dan Thai, yang tidak meletakkan ruang antara perkataan, juga dikira. Kelajuan masa dikira, dan berapa banyak perkataan yang membentuk satu halaman, ditetapkan dalam Tetapan."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Membandingkan dua teks",
+          "body": [
+            {
+              "points": [
+                "Alatan → \"Bandingkan dengan teks lain\": teks dalam editor bersebelahan dengan teks yang anda taip atau tampal.",
+                "Alatan → \"Banding dengan fail\": teks dalam editor, sebagaimana ia sekarang, bersebelahan dengan fail yang anda pilih.",
+                "Alatan → \"Bandingkan dua teks\": dua teks yang ditaip atau ditampal bersebelahan.",
+                "Alatan → \"Banding dua fail\"."
+              ]
+            },
+            "Kedua-dua teks dipaparkan bersebelahan. Baris yang hanya ada dalam teks pertama ditandakan sebagai dipadam, baris yang hanya ada dalam teks kedua sebagai ditambah, dan dalam baris yang berubah, perkataan yang berbeza ditandakan. Hanya bahagian yang berbeza dipaparkan, dengan beberapa baris di sekelilingnya; anak panah menunjukkan peralihan dari satu perbezaan ke perbezaan seterusnya.",
+            "Huruf besar, ruang, baris kosong, nombor dan tanda baca masing-masing boleh diabaikan. \"Dalam satu kolum\" menunjukkan apa yang dikeluarkan di atas apa yang dimasukkan, setiap satu dengan tandanya, dan bukannya bersebelahan. Di sebelah jumlah kiraan, Scribe menyatakan sejauh mana persamaan antara kedua-dua teks tersebut, sebagai bahagian baris yang sama.",
+            "Teks akan dipaparkan sebaik sahaja ia dipilih, sebelum teks yang lain dipilih. Seret bar di antara kedua-dua teks untuk memberi lebih ruang kepada salah satunya; semasa teks ditaip, bar di bawah kotak diseret ke atas dan ke bawah untuk memberi lebih ruang kepada kotak atau perbandingan. Klik dua kali untuk mengembalikan bar tersebut.",
+            "Apabila beberapa baris berturut-turut berubah, setiap baris diletakkan bersebelahan dengan baris yang paling menyerupainya, supaya baris yang ditambah atau dikeluarkan di antaranya tidak menyebabkan setiap baris selepas itu kelihatan berubah kepada baris seterusnya.",
+            "\"Taip atau tampal teks\" menunjukkan kotak di atas setiap kolum; apa yang anda tulis di sana akan dibandingkan semasa anda menulis, dan fail masih boleh dipilih untuk mana-mana bahagian."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Mencari dan mengganti dalam folder",
+          "body": [
+            {
+              "steps": [
+                "Alatan → \"Cari dalam folder\" (Ctrl+Shift+F), dan pilih folder. Folder di bawahnya juga akan dicari.",
+                "Taip apa yang ingin dicari, dengan pilihan yang sama seperti \"Ganti semua\". \"Jenis fail\" mengehadkan carian kepada beberapa sambungan fail (txt, md, csv…).",
+                "Setiap padanan dipaparkan dalam barisnya, fail demi fail. Klik pada baris untuk membuka fail di bahagian tersebut.",
+                "Untuk mengganti: taip teks baharu, nyah tanda fail yang ingin dibiarkan, dan pilih \"Tulis fail\"."
+              ]
+            },
+            "Tiada apa-apa yang ditulis sehingga anda memintanya, dan hanya dalam fail yang ditandakan. Setiap fail ditulis dalam pengekodan dan dengan penamat baris yang asalnya ada.",
+            {
+              "note": "Folder tersembunyi dan folder program (.git, node_modules) akan diabaikan melainkan anda memintanya. Fail yang bukan teks sentiasa diabaikan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tetapan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Tetapan Scribe",
+          "body": [
+            "Fail → Tetapan membuka Tetapan program pada bahagian Scribe.",
+            {
+              "points": [
+                "Editor: huruf dengan lebar tetap atau huruf program sendiri, saiznya, pembalutan teks, nombor baris, dan sama ada hasil alat dipaparkan sebelum ia digunakan.",
+                "Teks baharu: bagaimana barisnya berakhir, dan sama ada failnya bermula dengan tanda tertib bait (byte order mark).",
+                "Statistik: kelajuan membaca, menyebut, menaip dan menulis dengan tangan, serta jumlah perkataan untuk satu halaman.",
+                "Kekunci arahan Scribe."
+              ]
+            },
+            "Setiap tetapan mempunyai butang untuk mengembalikannya kepada tetapan asal program."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Mengenai Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Mengenai Scribe",
+          "body": [
+            "Scribe ialah aplikasi teks Syntelab Creative: sebuah editor dengan alat-alatnya di sisi teks. Ia menunjukkan apa yang akan dilakukan oleh sesuatu alat sebelum ia dilaksanakan, membersihkan dan menyusun semula senarai, mencari dan mengganti dalam teks atau dalam keseluruhan folder, membandingkan dua teks, menganalisis kandungan teks, menulis data pengisi dan data rekaan, serta menyimpan tindakan yang kerap anda lakukan sebagai resipi untuk dijalankan semula.",
+            "Segala-galanya dilakukan pada komputer ini. Tiada had ditetapkan pada saiz atau jumlah teks: hadnya adalah memori komputer dan apa yang mampu dilakukan oleh teknologi hari ini.",
+            "Ia masih baharu. Jika terdapat kekurangan untuk teks anda, beritahu kami melalui Bantuan → Maklum Balas: begitulah cara kami mengetahui apa yang perlu diperbaiki."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Teknologi pembangunan Scribe",
+          "body": [
+            {
+              "points": [
+                "Editor: CodeMirror.",
+                "Pengekodan bacaan dan penulisan: encoding_rs, dengan chardetng untuk meneka pengekodan fail yang tidak menyatakannya.",
+                "Cari dan ganti: pustaka regex Rust, yang coraknya tidak akan membekukan program.",
+                "Pengisihan mengikut bahasa, serta pencarian perkataan dan ayat dalam setiap skrip: ICU4X, pustaka Unicode.",
+                "Membandingkan teks: pustaka similar.",
+                "Diakritik Romania: senarai perkataan dan peraturan yang ditulis untuk Scribe."
+              ]
+            },
+            "Apa yang dikongsi dengan bahagian program yang lain berada di bawah \"Tentang Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Apa yang Scribe belum boleh lakukan",
+          "body": [
+            {
+              "points": [
+                "Fail yang sangat besar dibaca satu halaman pada satu masa dan hanya diubah melalui resipi; mengubahnya secara manual bermakna membukanya secara keseluruhan, yang memerlukan memori.",
+                "Pemulihan diakritik Romania mengenali perkataan biasa; perkataan dan nama yang jarang digunakan kekal seperti yang ditaip.",
+                "Tiada pemeriksaan ejaan.",
+                "Teks tidak dikeluarkan daripada PDF atau dokumen pejabat di sini; PDF Organizer membuka dokumen tersebut.",
+                "Editor tidak menyokong kod warna atau Markdown.",
+                "Fail yang ditarik ke dalam tetingkap akan dibuka sebagai teks baharu: program tidak diberitahu di mana fail tersebut berada, jadi proses menyimpan akan meminta lokasi fail."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

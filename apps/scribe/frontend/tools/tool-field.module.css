@@ -1,0 +1,86 @@
+/* One choice of a tool: its name over (or beside) the control that sets it. */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.control {
+  min-height: 34px;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+/* Several lines to type: as wide as the panel, grown downwards by the user. */
+.lines {
+  min-height: 96px;
+  padding: 8px 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  resize: vertical;
+  white-space: pre;
+}
+
+.lines:focus {
+  border-color: var(--sc-accent);
+  outline: none;
+}
+
+/* The options of a choice, all in sight: one is chosen with a click. */
+.spread {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.option {
+  min-height: 32px;
+  padding: 4px 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.option:hover:not(:disabled) {
+  border-color: var(--sc-accent);
+}
+
+.option[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent);
+  color: var(--sc-accent-text);
+  font-weight: 600;
+}
+
+.control:focus {
+  border-color: var(--sc-accent);
+  outline: none;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.flag input {
+  flex: none;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: var(--sc-accent);
+}

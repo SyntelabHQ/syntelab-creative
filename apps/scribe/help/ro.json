@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Texte și fișiere",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Editorul",
+          "body": [
+            "Scribe este un editor de text simplu, cu uneltele lângă text. Fiecare text are un tab; textul este la mijloc, panoul de unelte alături, iar dedesubt o linie cu informații.",
+            "Când este deschis, Scribe întreabă întâi ce vrei să faci: numărat cuvinte, căutare și înlocuire, scoaterea duplicatelor, compararea a două texte, sortarea rândurilor, inversarea unui text, text de umplutură sau aleatoriu. Fiecare alegere deschide textul cu unealta ei alături; „Un text gol” deschide doar textul, iar textele deschise recent sunt listate dedesubt.",
+            {
+              "points": [
+                "Fișier → Text nou (Ctrl+N) începe un text gol.",
+                "Fișier → Deschide (Ctrl+O) deschide unul sau mai multe fișiere, fiecare în tabul lui. Se deschide orice fișier care conține text: .txt, .md, .csv, .log, .srt, cod sursă și altele.",
+                "Editare → Anulează (Ctrl+Z) și Refă (Ctrl+Y) trec prin tot ce s-a făcut pe text; o unealtă sau o rețetă este un singur pas.",
+                "Editare → Caută și înlocuiește (Ctrl+F) deschide în editor o bandă care merge de la o potrivire la următoarea.",
+                "Editare → Selectează tot (Ctrl+A)."
+              ]
+            },
+            "Linia de sub text arată unde este cursorul, cât este selectat, numărul de rânduri, cuvinte și caractere, codificarea fișierului și cum i se termină rândurile.",
+            "Se deschid și fișierele trase în fereastră, fiecare ca text nou, cu numele, codificarea și sfârșiturile de rând ale fișierului. Programul primește ce este într-un fișier tras, dar nu și unde este pe disc, așa că salvarea întreabă unde; fișierele de peste 64 MB se deschid cu Fișier → Deschide.",
+            "Un text nou, cât este gol, listează textele deschise recent: clic pe unul îl deschide. „Uită lista” o golește; lista se păstrează doar pe acest calculator."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Salvează și Salvează ca",
+          "body": [
+            "Nimic nu schimbă fișierul de pe disc până nu salvezi. Un punct pe tab arată că textul are schimbări care nu sunt în fișier, iar închiderea unui astfel de tab întreabă întâi.",
+            {
+              "points": [
+                "Salvează (Ctrl+S) scrie textul peste fișierul lui. Un text nou întreabă unde.",
+                "Salvează ca (Ctrl+Shift+S) îl scrie într-un fișier nou, care ia apoi locul tabului, cu tot ce se poate anula păstrat; fișierul vechi rămâne cum era."
+              ]
+            },
+            "Un fișier este scris întreg sau deloc: dacă scrierea eșuează, fișierul care era acolo este tot acolo.",
+            {
+              "note": "Un fișier se salvează așa cum a fost deschis: în aceeași codificare, cu aceleași sfârșituri de rând. Un text scris pe Windows și unul scris pe Linux rămân ce erau."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Codificări și sfârșituri de rând",
+          "body": [
+            "O codificare este felul în care literele sunt păstrate ca octeți. Scribe citește ce spune fișierul despre el însuși și ghicește când nu spune nimic. Cele mai multe fișiere de azi sunt UTF-8; cele mai vechi, din Europa Centrală, sunt adesea windows-1250.",
+            {
+              "points": [
+                "Litere care arată greșit (Ã£ în loc de ă, sau pătrățele): Fișier → „Citește din nou în altă codificare” și alege-o pe cea în care a fost scris fișierul.",
+                "Ca să salvezi în altă codificare, alege-o pe linia de sub text, apoi salvează. Dacă textul are litere pe care acea codificare nu le poate scrie, Scribe spune care și nu scrie nimic.",
+                "Sfârșiturile de rând (Windows CRLF, Linux și macOS LF, Mac vechi CR) se schimbă în același loc. Despre un fișier cu sfârșituri amestecate se spune că le are; salvarea le dă tuturor rândurilor același sfârșit."
+              ]
+            },
+            "Cu ce începe un text nou se alege în Setări."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Cum este arătat textul",
+          "body": [
+            {
+              "points": [
+                "Tot ce este în meniul Vizualizare este un comutator: pornit, se vede; oprit, nu se vede.",
+                "Text: Încadrează rândurile lungi (Alt+Z) — un rând mai lung decât fereastra continuă dedesubt, iar textul își păstrează rândurile; Numere de rând; Rezultatul lângă text.",
+                "Lângă text: Unelte (Ctrl+T), Rețete, Statistici. Panoul arată doar părțile pornite; cu niciuna pornită, nu există panou.",
+                "Unelte afișate: fiecare grup de unelte (căutare și înlocuire, rânduri, majuscule și litere, curățare, scrie text) poate fi lăsat în afara panoului. O unealtă aleasă din meniul Formatare sau Unelte se arată oricum: partea și grupul ei revin singure.",
+                "Săgeata dublă din partea de sus a panoului îl pliază până la o bandă la margine, de unde fiecare parte a lui este la un clic; trage de marginea lui ca să îl lățești sau să îl îngustezi.",
+                "Literele și mărimea lor se aleg în Setări."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Fișiere foarte mari",
+          "body": [
+            "Un fișier de peste 64 MB nu este pus în editor: se deschide într-un tab care îl arată câte o pagină de 500 de rânduri, citită din fișier pe măsură ce înaintezi. Fișierele de gigaocteți se deschid așa în timpul necesar pentru a fi parcurse o dată.",
+            {
+              "points": [
+                "„Pagina anterioară” și „Pagina următoare” te poartă prin el; un număr de rând și „Mergi” sar la orice rând.",
+                "Căutarea trece prin tot fișierul, cu aceleași opțiuni ca în rest, și listează locurile găsite: clic pe unul te duce la rândul lui. O listă lungă vine pe părți, cu „Caută mai departe”.",
+                "„Rulează o rețetă pe tot fișierul” scrie rezultatul într-un folder ales, sub același nume. Fișierul însuși nu este schimbat aici niciodată.",
+                "„Deschide întreg în editor” îl pune totuși în editor, ca să îl schimbi de mână. Poate fi lent și are nevoie în memorie de câteva ori mărimea fișierului."
+              ]
+            },
+            {
+              "note": "Fișierele scrise cu doi octeți pe literă (UTF-16) nu pot fi arătate pagină cu pagină. O rețetă ține tot fișierul în memorie cât rulează: limita este memoria calculatorului."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Unelte",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Cum lucrează uneltele",
+          "body": [
+            "Uneltele sunt în panoul de lângă text, pe grupe. Fă clic pe o unealtă ca să îi vezi opțiunile, apoi Aplică.",
+            {
+              "points": [
+                "Cu ceva selectat, o unealtă schimbă doar selecția; fără selecție, tot textul. Panoul spune care, în partea de sus.",
+                "Sub buton, unealta spune ce a făcut: câte rânduri sau locuri a schimbat.",
+                "Fiecare unealtă este un pas: Anulează o ia înapoi întreagă.",
+                "Fiecare unealtă este și în meniuri și în căutarea de comenzi: cele care schimbă forma unui text (rânduri, majuscule și litere, curățare) în meniul Formatare, celelalte în Unelte. Aleasă de acolo, deschide panoul la opțiunile ei."
+              ]
+            },
+            "În meniul Formatare, o unealtă care înseamnă mai ales o singură alegere este desfăcută în opțiunile ei: fiecare fel de a schimba majusculele, fiecare fel de ghilimele, fiecare fel de a inversa un text este o comandă de sine stătătoare, care deschide unealta cu acea opțiune aleasă. Unde fereastra este prea îngustă pentru un grup, grupul devine un singur buton care deschide toată lista.",
+            "Uneltele rulează pe acest calculator. Niciun text nu pleacă de pe el."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Rezultatul, înainte să aplici",
+          "body": [
+            "Cât o unealtă este deschisă, ce ar da ea se arată lângă text, în panoul „Rezultat”. Nimic din text nu se schimbă până nu alegi Aplică. Rezultatul te urmează: schimbi o opțiune sau textul și este refăcut.",
+            {
+              "points": [
+                "Textul și rezultatul stau alăturat, fiecare sub un antet de aceeași înălțime, așa că aceleași rânduri pornesc de la aceeași înălțime; se derulează împreună (butonul cu lanț oprește asta).",
+                "Rândurile care s-ar schimba sunt marcate, cu partea schimbată din rând marcată mai închis; rândurile care doar s-ar muta și cele noi au fiecare culoarea lor. Rândurile care ar fi schimbate sau scoase sunt marcate și în textul tău.",
+                "Sub nume: ce s-ar întâmpla, în cifre — rânduri schimbate, mutate, noi, scoase; rânduri și caractere înainte și după.",
+                "Sub rezultat: rândurile care ar fi scoase. Clic pe unul te duce la el în text.",
+                "Butoanele mici ale rezultatului: copiere, deschidere ca text nou, comparare cu textul într-un tab, derulare împreună, rezultatul sub text în loc de alături, ascundere. Textul le are pe ale lui: anulează, refă, copiază, lipește peste, selectează tot, golește.",
+                "Trage bara dintre cele două ca să dai mai mult loc uneia; un dublu clic le face din nou egale."
+              ]
+            },
+            "După Aplică, panoul Rezultat spune asta („Aplicat. Textul din stânga este acum rezultatul.”) și oferă Anulează și „Compară cu ce era”, care deschide aceeași comparare între înainte și după. Arată din nou un rezultat de îndată ce schimbi textul sau o opțiune a uneltei.",
+            {
+              "note": "Vizualizare → „Rezultatul lângă text” oprește și pornește panoul. Pentru un text foarte lung (peste două milioane de caractere) nu se arată nimic dinainte: aplică unealta, iar Anulează o ia înapoi."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Înlocuiește peste tot",
+          "body": [
+            "Înlocuiește dintr-odată fiecare loc în care se găsește ceva. Cât scrii ce cauți, Scribe spune în câte locuri se găsește și le marchează în text, ca să vezi ce se schimbă înainte să aplici.",
+            {
+              "points": [
+                "„Expresie regulată”: textul căutat este un tipar. În „Înlocuiește cu”, $1, $2… țin locul a ceea ce au găsit grupurile tiparului.",
+                "„Majusculele contează”: a și A sunt litere diferite.",
+                "„Doar cuvinte întregi”: „cat” nu este găsit în „categorie”.",
+                "„Păstrează majusculele textului înlocuit”: înlocuind „pisică” cu „câine”, „Pisică” devine „Câine”, iar „PISICĂ” devine „CÂINE”."
+              ]
+            },
+            {
+              "points": [
+                "„Mai multe opțiuni” → „Completează…”: ce se pune în loc poate avea spații de completat la fiecare potrivire. {counter} numără 1, 2, 3… ({counter:10} pornește de la 10, {counter:10:5} crește din 5 în 5); {date} și {time} sunt ziua și ora calculatorului; {uuid} este un identificator; {random} înseamnă 8 litere și cifre la întâmplare ({random:12} pentru 12).",
+                "Sub ce cauți, Scribe spune și pe câte rânduri sunt potrivirile și câte texte diferite sunt."
+              ]
+            },
+            "„Înlocuiește mai multe deodată” face o listă de perechi într-un singur pas. Scrie o pereche pe rând, astfel: ce se caută => ce se pune în loc. Se fac de la prima la ultima, fiecare pe ce a lăsat cea dinainte; o a doua jumătate goală scoate textul.",
+            {
+              "note": "Un tipar nu poate bloca programul: timpul crește odată cu lungimea textului și nu mai repede. Din acest motiv, tiparele care se uită înapoi la ce au găsit (\\1) nu sunt disponibile."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Rânduri",
+          "body": [
+            {
+              "points": [
+                "Sortează rândurile după: litere, ca în dicționar, în limba programului sau într-una aleasă (în română ă vine după a; suedeza pune ä după z, germana lângă a); litere cu numerele ca numere (file2 înainte de file10); numărul cu care începe fiecare rând; lungime; număr de cuvinte; data cu care începe fiecare rând (05.03.2024, 2024-03-05, cu sau fără oră); adrese de internet; numere de versiune (1.2.10 după 1.2.9); titluri, unde articolul de la început nu contează; o ordine scrisă de tine (mic, mediu, mare); sau fără nicio ordine.",
+                "Rândurile care nu au după ce să fie sortate (niciun număr, nicio dată, o valoare care nu este în ordinea scrisă de tine) rămân la sfârșit, oricum ar fi sortate celelalte: și de la mic la mare, și de la mare la mic.",
+                "Mai multe opțiuni la sortare: compari de la un cuvânt sau un caracter încolo, sau o coloană a unui tabel (cu ce desparte coloanele); păstrezi primul rând pe loc, ca antet; sortezi paragrafe în loc de rânduri; și faci întâi ordine — tai spațiile, scoți rândurile goale, scoți duplicatele.",
+                "Scoate rândurile duplicate: păstrezi primul, ultimul sau niciunul dintre rândurile care se repetă (rămân doar cele care apar o singură dată). Majusculele, spațiile din jurul rândului, cifrele, punctuația și un număr de caractere de la început sau de la sfârșit pot fi ignorate, fiecare în parte; se poate compara doar o coloană sau doar ce găsește un tipar. Rândurile goale sunt tratate ca celelalte, păstrate, scoase sau comprimate.",
+                "Numără rândurile repetate: lasă fiecare rând o singură dată, cu numărul de apariții scris înaintea lui — cele mai repetate întâi, sau cele mai puțin repetate, sau în ordinea în care apar.",
+                "Păstrează sau scoate rânduri: caută ceva în fiecare rând și păstrează doar rândurile care îl conțin sau doar pe cele care nu îl conțin.",
+                "Inversează ordinea rândurilor; Amestecă rândurile.",
+                "Numerotează rândurile: primul număr, ce stă după el, zerouri în față ca numerele să se alinieze, rânduri goale fără număr.",
+                "Rânduri goale: scoate-le pe toate sau lasă unul unde sunt mai multe.",
+                "Unește rândurile într-unul, cu ce alegi între ele; Desparte în rânduri la fiecare virgulă, punct și virgulă sau orice altceva. Acolo unde se scrie ce stă între lucruri (la numerotare, la unire, la despărțire, la numărare), \\t ține locul unui tab, care nu poate fi tastat într-un câmp."
+              ]
+            },
+            {
+              "note": "O opțiune care contează doar împreună cu alta se arată doar atunci: coloana, după ce alegi să compari o coloană. Opțiunile de care au nevoie mai puțini sunt la „Mai multe opțiuni”."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Majuscule",
+          "body": [
+            "Schimbă majusculele: ca în propoziție, fiecare cuvânt cu majusculă, toate majuscule, toate minuscule, inversate, și felurile în care se scriu numele în cod: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Majusculele urmează regulile fiecărui alfabet, nu doar ale celui englez.",
+            "În grupa Direcție, „Inversează textul” întoarce literele fiecărui rând, sau ordinea cuvintelor lui, sau literele fiecărui cuvânt; „Cu susul în jos” îl scrie ca să fie citit de peste masă, iar „Ca în oglindă” schimbă între ele și semnele care au o stângă și o dreaptă. Literele se numără cum le numără un cititor: o literă cu semnele ei rămâne una."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Curățare",
+          "body": [
+            {
+              "points": [
+                "Curăță spațiile: mai multe spații devin unul; spațiile de la capetele rândurilor dispar.",
+                "Taie capetele rândurilor: la ambele capete, la început sau la sfârșit.",
+                "Ghilimele: drepte, englezești, românești, germane sau franțuzești.",
+                "Scoate diacriticele: ă devine a, é devine e. Doar în alfabetele latin și grec, unde o literă fără semnul ei este tot acea literă.",
+                "Repară literele românești: ş și ţ (cu sedilă, scrise de tastaturile mai vechi) devin ș și ț (cu virgulă), literele cu care se scrie româna.",
+                "Taburi în spații și spații în taburi, cu lățimea de tab aleasă.",
+                "Scoate etichetele HTML: pentru sursa unei pagini web lipită în text. Etichetele, scripturile și stilurile dispar; rămâne ce ar vedea un cititor. Ca să aduci o pagină după adresa ei, folosește unealta de sub ea, „Textul unei pagini web”.",
+                "Textul unei pagini web: scrie adresa unei pagini (example.com/pagina) și alege „Adu textul”. Ce ar vedea un cititor pe acea pagină este scris acolo unde este cursorul, fără etichete, scripturi sau stiluri. Este singura unealtă din Scribe care intră pe internet, și doar când ceri: pagina este adusă de browserul instalat pe acest calculator (Microsoft Edge sau Google Chrome), pornit fără fereastră și fără cookie-urile sau autentificările tale; programul însuși nu trimite nimic. O pagină care cere autentificare dă doar ce ar vedea un străin."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Repunerea diacriticelor românești",
+          "body": [
+            "Textul românesc scris fără ă, â, î, ș, ț le primește înapoi.",
+            {
+              "steps": [
+                "Deschide unealta din grupa Curățare și alege Aplică.",
+                "Cuvintele care au o singură formă corectă sunt schimbate pe loc: „stiu” devine „știu”, „informatii” devine „informații”.",
+                "Cuvintele care se pot citi în mai multe feluri (fata, fată, fața, față) sunt listate sub buton, fiecare la locul lui din text. Fă clic pe forma corectă pentru fiecare.",
+                "Sau bifează „Alege singur forma mai probabilă la cuvintele îndoielnice” înainte de aplicare: nu se mai întreabă nimic, iar rezultatul trebuie recitit."
+              ]
+            },
+            "Acolo unde cuvintele din jur sunt de ajuns, Scribe hotărăște după ele: „o casa” devine „o casă”, „casa mea” rămâne, „pentru ca” devine „pentru că”.",
+            {
+              "note": "Unealta este construită pentru Scribe dintr-o listă de cuvinte uzuale și din terminațiile pe care româna le scrie mereu cu diacritice. Cuvintele pe care nu le știe (cuvinte rare, nume) rămân cum au fost scrise, iar un cuvânt scris deja cu diacritice nu este atins niciodată. Recitește rezultatul înainte să îl trimiți."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Scrierea de text: umplutură și aleatoriu",
+          "body": [
+            "Uneltele din grupa „Scrie text” nu schimbă nimic: scriu. Ce dau ajunge acolo unde este cursorul, în locul selecției.",
+            {
+              "points": [
+                "Text de umplutură: paragrafe, propoziții, cuvinte, liste, titluri sau părți de pagină (un titlu, paragrafe, o listă). În latina tipografilor (lorem ipsum), engleză, română, cuvinte de birou sau de bucătărie, ori cuvintele tale. Mai multe opțiuni: propoziții scurte, medii sau lungi; text simplu, Markdown, HTML sau JSON; nivelul titlurilor; o limită în caractere (textul este tăiat la un cuvânt întreg și tot se termină ca o propoziție); cuvinte de lăsat deoparte.",
+                "Date fictive: nume, adrese de e-mail, numere de telefon, adrese, date calendaristice sau numere, câte unul pe rând, din România sau din țări vorbitoare de engleză. „Rânduri după tiparul meu” scrie fiecare rând cum spui, cu {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} și {row} ținând locul a ceea ce se generează — un tabel de probă, într-o clipă.",
+                "Text aleatoriu: parole (litere, cifre și semne, cel puțin câte unul din fiecare), litere, cifre, hexazecimal sau identificatori (UUID), pe un rând sau pe mai multe. Caracterele ușor de confundat (0 și O, 1, l și I) pot fi lăsate deoparte.",
+                "O sămânță (la „Mai multe opțiuni”) face ca umplutura și datele fictive să iasă la fel de fiecare dată pentru același număr; 0 dă de fiecare dată altceva."
+              ]
+            },
+            {
+              "note": "Parolele sunt făcute pe acest calculator, din sursa de întâmplare a sistemului de operare, și nu sunt trimise nicăieri. Adresele de e-mail fictive se termină în example.com, unde corespondența nu ajunge la nimeni; un număr de telefon făcut la întâmplare poate fi al cuiva, deci nu îl suna."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rețete",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Păstrarea a ceea ce ai făcut ca rețetă",
+          "body": [
+            "O rețetă este o listă de unelte cu opțiunile lor, păstrată sub un nume și rulată din nou dintr-un clic.",
+            {
+              "steps": [
+                "Aplică pe un text uneltele dorite, în ordinea dorită.",
+                "Deschide „Rețete” în partea de sus a panoului: uneltele aplicate sunt listate.",
+                "„Păstrează ca rețetă” și dă-i un nume.",
+                "Mai târziu, deschide rețeta și alege „Rulează pe text”: se fac toți pașii, iar un singur Anulează îi ia înapoi pe toți."
+              ]
+            },
+            "Rețetele se păstrează pe acest calculator și sunt disponibile în orice text."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Modificarea unei rețete sau una făcută de la zero",
+          "body": [
+            "„Modifică”, pe o rețetă deschisă, îi arată numele și pașii. Fiecare pas poate fi mutat mai sus sau mai jos, scos sau i se pot da alte opțiuni; uneltele se adaugă din lista de sub pași. Nimic nu se păstrează până la „Salvează”.",
+            "„Rețetă nouă” începe una fără pași, de alcătuit în același fel, fără să aplici întâi uneltele pe un text.",
+            {
+              "note": "Uneltele care scriu text (umplutură, aleatoriu) nu sunt pași de rețetă: o rețetă schimbă un text."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Rularea unei rețete pe fișiere",
+          "body": [
+            {
+              "steps": [
+                "Deschide rețeta și, la „Rulează pe fișiere”, adaugă fișiere sau un folder (cu folderele de sub el).",
+                "Alege unde ajung rezultatele: într-un alt folder, ceea ce lasă fișierele cum sunt, sau peste fișierele înseși.",
+                "Rulează. Scribe spune câte fișiere au fost scrise, câte nu aveau nimic de schimbat și care nu au putut fi făcute și de ce."
+              ]
+            },
+            "Fiecare fișier este scris în codificarea și cu sfârșiturile de rând pe care le avea. În alt folder, fișierele își păstrează folderele cu care au venit, iar peste un fișier care este deja acolo nu se scrie niciodată.",
+            {
+              "note": "Scrierea peste fișierele înseși nu se poate anula din Scribe. Păstrează o copie dacă sunt importante."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistici, comparare și foldere",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistici",
+          "body": [
+            "„Statistici”, în partea de sus a panoului, spune din ce este făcut textul sau selecția. Fiecare parte se poate plia.",
+            {
+              "points": [
+                "Sus: cuvinte, caractere cu și fără spații, propoziții, paragrafe, rânduri, pagini și mărimea în octeți.",
+                "Timp: de citit în gând, de spus cu voce tare, de tastat și de scris de mână.",
+                "Cuvinte: câte sunt diferite (și cât la sută din total), litere într-un cuvânt, silabe, cel mai lung și cel mai scurt cuvânt și câte cuvinte sunt de fiecare lungime.",
+                "Propoziții: cuvinte într-o propoziție, câte sunt scurte, medii și lungi, câte sunt enunțuri, întrebări și exclamații, cea mai lungă și cea mai scurtă.",
+                "Ușurința de citire: un scor de la 0 (foarte greu) la 100 (foarte ușor), după formula făcută pentru limba textului. Există formule pentru engleză, germană, spaniolă, franceză, italiană, neerlandeză, portugheză și rusă; o limbă fără formulă nu primește scor, pentru că una făcută pentru altă limbă ar induce în eroare.",
+                "Ce spune cel mai des: cele mai folosite cuvinte, cu partea lor din text, și perechile și grupurile de trei cuvinte care revin.",
+                "Loc în limitele obișnuite: câte caractere mai sunt, sau cu câte s-a depășit, pentru un titlu, o descriere, o postare scurtă și altele."
+              ]
+            },
+            "Cuvintele și propozițiile sunt găsite după regulile fiecărei scrieri, așa că se numără și chineza, japoneza și thailandeza, care nu pun spații între cuvinte. Vitezele cu care se calculează timpii și câte cuvinte fac o pagină se stabilesc în Setări."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Compararea a două texte",
+          "body": [
+            {
+              "points": [
+                "Unelte → „Compară cu alt text”: textul din editor lângă unul scris sau lipit de tine.",
+                "Unelte → „Compară cu un fișier”: textul din editor, așa cum este acum, lângă un fișier ales.",
+                "Unelte → „Compară două texte”: două texte scrise sau lipite alăturat.",
+                "Unelte → „Compară două fișiere”."
+              ]
+            },
+            "Cele două texte sunt arătate alăturat. Rândurile care sunt doar în primul sunt marcate ca scoase, cele doar în al doilea ca adăugate, iar într-un rând schimbat sunt marcate cuvintele care diferă. Se arată doar ce diferă, cu câteva rânduri în jur; săgețile merg de la o diferență la următoarea.",
+            "Majusculele, spațiile, rândurile goale, numerele și punctuația pot fi ignorate, fiecare în parte. „Pe o singură coloană” arată ce a fost scos deasupra a ce a fost pus, fiecare cu semnul lui, în loc de alăturat. Lângă numărători, Scribe spune cât de asemănătoare sunt cele două texte, ca parte a rândurilor care sunt la fel.",
+            "Un text se arată de îndată ce este ales, înainte de celălalt. Trage bara dintre cele două texte ca să dai mai mult loc unuia; cât textele sunt scrise, bara de sub casete se trage în sus și în jos ca să dai mai mult loc casetelor sau comparației. Un dublu clic pune o bară la loc.",
+            "Acolo unde mai multe rânduri la rând au fost schimbate, fiecare este pus lângă rândul cu care seamănă cel mai mult, așa că un rând adăugat sau scos printre ele nu le face pe toate cele de după să pară schimbate în următorul.",
+            "„Scrie sau lipește textele” arată o casetă deasupra fiecărei coloane; ce scrii acolo se compară pe măsură ce scrii, iar pentru oricare parte se poate alege în continuare un fișier."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Căutare și înlocuire într-un folder",
+          "body": [
+            {
+              "steps": [
+                "Unelte → „Caută într-un folder” (Ctrl+Shift+F) și alege folderul. Se caută și în folderele de sub el.",
+                "Scrie ce cauți, cu aceleași opțiuni ca la „Înlocuiește peste tot”. „Feluri de fișiere” restrânge căutarea la unele extensii (txt, md, csv…).",
+                "Fiecare potrivire este arătată în rândul ei, fișier cu fișier. Clic pe un rând deschide fișierul acolo.",
+                "Ca să înlocuiești: scrie textul nou, debifează fișierele de lăsat în pace și alege „Scrie fișierele”."
+              ]
+            },
+            "Nimic nu se scrie până nu ceri, și doar în fișierele rămase bifate. Fiecare fișier este scris în codificarea și cu sfârșiturile de rând pe care le avea.",
+            {
+              "note": "Folderele ascunse și cele umplute de programe (.git, node_modules) sunt sărite, dacă nu le ceri. Fișierele care nu sunt text sunt sărite întotdeauna."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Setări",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Setările din Scribe",
+          "body": [
+            "Fișier → Setări deschide Setările programului la partea lui Scribe.",
+            {
+              "points": [
+                "Editorul: litere de aceeași lățime sau ale programului, mărimea lor, încadrarea, numerele de rând și dacă rezultatul unei unelte se arată înainte de aplicare.",
+                "Un text nou: cum i se termină rândurile și dacă fișierul începe cu marcajul de ordine a octeților (BOM).",
+                "Statistici: vitezele de citit, de spus, de tastat și de scris de mână, și câte cuvinte fac o pagină.",
+                "Tastele comenzilor din Scribe."
+              ]
+            },
+            "Fiecare setare are un buton care o pune înapoi cum vine programul."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Despre Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Despre Scribe",
+          "body": [
+            "Scribe este aplicația de text din Syntelab Creative: un editor cu uneltele lângă text. Arată ce ar face o unealtă înainte să o facă, curăță și reordonează liste, caută și înlocuiește într-un text sau într-un folder întreg, compară două texte, spune din ce este făcut un text, scrie text de umplutură și date fictive și păstrează ce faci des ca rețete de rulat din nou.",
+            "Totul se face pe acest calculator. Nu există o limită pusă pe mărimea sau pe numărul textelor: limitele sunt memoria calculatorului și ce poate tehnologia de azi.",
+            "Este nouă. Acolo unde nu ajunge pentru textele tale, spune-ne prin Ajutor → Feedback: așa știm la ce să lucrăm."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Cu ce este construit Scribe",
+          "body": [
+            {
+              "points": [
+                "Editorul: CodeMirror.",
+                "Citirea și scrierea codificărilor: encoding_rs, cu chardetng pentru ghicirea codificării unui fișier care nu o spune.",
+                "Căutare și înlocuire: biblioteca regex din Rust, ale cărei tipare nu pot bloca programul.",
+                "Sortarea după regulile fiecărei limbi și găsirea cuvintelor și propozițiilor în orice scriere: ICU4X, biblioteca Unicode.",
+                "Compararea textelor: biblioteca similar.",
+                "Diacriticele românești: o listă de cuvinte și reguli scrise pentru Scribe."
+              ]
+            },
+            "Ce împarte cu restul programului este la „Despre Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ce nu poate face Scribe încă",
+          "body": [
+            {
+              "points": [
+                "Un fișier foarte mare este citit pagină cu pagină și schimbat doar prin rețete; ca să fie schimbat de mână trebuie deschis întreg, ceea ce cere memorie.",
+                "Repunerea diacriticelor românești știe cuvintele uzuale; cuvintele rare și numele rămân cum au fost scrise.",
+                "Nu există verificare ortografică.",
+                "Textul nu se scoate aici din PDF sau din documente Office; pe acelea le deschide PDF Organizer.",
+                "Editorul nu colorează codul sau Markdown.",
+                "Un fișier tras în fereastră se deschide ca text nou: programului nu i se spune unde este fișierul, așa că salvarea întreabă unde."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

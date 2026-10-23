@@ -1,0 +1,72 @@
+/* Holds the pages and, over their top and left edges, the rulers. */
+.frame {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Room for the rulers, so they cover nothing of the pages. */
+.scroller[data-rulers='true'] {
+  padding-block-start: 22px;
+  padding-inline-start: 22px;
+}
+
+/* Lines over a page to line things up by; they are not part of the document. */
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, var(--sc-guide) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--sc-guide) 1px, transparent 1px);
+  pointer-events: none;
+}
+
+.scroller {
+  flex: 1;
+  min-width: 0;
+  overflow: auto;
+  /* The scroll bar's place is kept, so "fit" zooms do not flicker around it. */
+  scrollbar-gutter: stable;
+  background: var(--sc-surface-2);
+}
+
+.scroller:focus-visible {
+  outline-offset: -2px;
+}
+
+.strip {
+  position: relative;
+}
+
+/* One or two pages side by side, centered in the strip. */
+.row {
+  position: absolute;
+  inset-inline-start: 50%;
+  display: flex;
+  align-items: center;
+  transform: translateX(-50%);
+}
+
+/* A page is white paper in both themes; its picture fades in when it arrives. */
+.page {
+  position: relative;
+  flex: none;
+  background: var(--sc-paper);
+  box-shadow: var(--sc-shadow-s);
+}
+
+/* A place where the text looked for was found; the one the user is at stands out. */
+.hit {
+  position: absolute;
+  border-radius: var(--sc-radius-xs);
+  background: var(--sc-find-hit);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.hit[data-active='true'] {
+  background: var(--sc-find-current);
+  outline: 2px solid var(--sc-find-current-edge);
+}

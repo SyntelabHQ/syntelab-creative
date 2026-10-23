@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Membuka dan membaca",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Membuka dokumen",
+          "body": [
+            "Fail → Buka (Ctrl+O) membuka PDF dalam tab tersendiri. \"Buka beberapa fail sekaligus\" membuka setiap fail yang dipilih dalam tab masing-masing.",
+            "Fail yang bukan PDF juga boleh dibuka sebagai halaman: gambar (PNG, JPEG, TIFF, WebP dan banyak lagi), fail teks dan web, e-buku, XPS, dan dokumen pejabat. Dokumen sedemikian belum disimpan di mana-mana: \"Simpan\" akan meminta lokasi penyimpanan.",
+            {
+              "note": "Dokumen pejabat (Word, Excel, PowerPoint, OpenDocument) ditukar oleh Word, Excel atau PowerPoint, atau oleh LibreOffice, bergantung kepada apa yang ada pada komputer. Tanpa salah satu daripadanya, dokumen tersebut tidak dapat dibuka."
+            },
+            "Fail yang diletakkan pada tab kosong akan dikumpulkan dalam pengikat; jika diletakkan pada dokumen, halaman-halamannya akan ditambah ke dalamnya.",
+            "Pada Windows, PDF Organizer boleh menjadi aplikasi yang membuka fail PDF apabila anda mengklik dua kali padanya: pada halaman mulanya, \"Jadikan lalai\" membuka seting Windows, di mana anda memilih Syntelab Creative untuk fail PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Melihat halaman",
+          "body": [
+            "Menu Lihat menentukan cara dokumen dipaparkan; tiada apa-apa di dalamnya yang mengubah fail tersebut.",
+            {
+              "points": [
+                "Zum: masuk, keluar, saiz sebenar, muat halaman, muat lebar, muat tinggi. Ctrl dan roda tetikus juga boleh digunakan untuk zum.",
+                "Paparan halaman: satu halaman atau dua bersebelahan, dengan atau tanpa halaman kulit, dan tatal melalui semua halaman sebagai satu jalur panjang.",
+                "Panduan: pembaris dan grid, dalam unit yang dipilih dalam Tetapan.",
+                "\"Tunjukkan gambar kenit\": halaman kecil di sisi. Klik satu untuk pergi ke halaman tersebut; penanda buku dokumen berada dalam panel yang sama.",
+                "\"Mod baca\" menyembunyikan alat; \"Mod skrin penuh\" menyembunyikan semua kecuali halaman. Escape akan keluar daripada kedua-duanya."
+              ]
+            },
+            "Jalur di atas halaman (bar alat pantas) mempunyai nombor halaman, zum dan butang yang anda pilih dalam Tetapan."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Mencari teks",
+          "body": [
+            "Edit → Cari dalam dokumen (Ctrl+F): taip perkataan atau frasa; tempat ia ditemui akan ditandakan pada halaman, dan anak panah akan membawa anda dari satu ke satu yang lain.",
+            {
+              "note": "Dokumen yang diimbas adalah gambar halaman dan tidak mempunyai teks untuk dicari sehingga teksnya dikenal pasti: lihat \"Mengenal pasti teks (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Sifat dokumen",
+          "body": [
+            "Fail → Sifat dokumen menunjukkan apa yang dinyatakan oleh dokumen tentang dirinya: tajuk, pengarang, tarikh ia dibuat dan diubah, jumlah halaman, saiz fail."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menyimpan, mencetak dan menghantar",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Simpan dan Simpan sebagai",
+          "body": [
+            "Tiada apa yang anda lakukan akan mengubah fail pada cakera sehingga anda menyimpannya. Sehingga itu, setiap langkah boleh dibatalkan (Ctrl+Z) dan dilakukan semula (Ctrl+Y).",
+            {
+              "points": [
+                "Simpan (Ctrl+S) menulis dokumen ke atas failnya.",
+                "Simpan sebagai (Ctrl+Shift+S) menulisnya ke fail baharu, yang kemudiannya mengambil tempat tab tersebut; fail lama kekal seperti sedia ada."
+              ]
+            },
+            "Jika program lain membuka fail tersebut, ia tidak boleh ditulis semula: program akan memberitahu anda dan mengekalkan perubahan anda, untuk disimpan di bawah nama lain.",
+            {
+              "note": "Menyimpan dokumen yang telah diubah ke atas fail yang ditandatangani dengan sijil akan membuang tandatangannya. Program akan bertanya terlebih dahulu dan menawarkan \"Simpan sebagai fail baharu\"; soalan ini boleh dimatikan dalam Tetapan → Tandatangan."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Mencipta PDF",
+          "body": [
+            "Fail → Cipta PDF membuat dokumen baharu:",
+            {
+              "points": [
+                "daripada satu fail, atau daripada beberapa fail: digabungkan menjadi satu PDF, atau satu PDF bagi setiap fail;",
+                "daripada halaman web, pada alamat yang anda taip (halaman tersebut disimpan dengan pelayar yang dipasang pada komputer);",
+                "daripada apa yang ada pada papan klip;",
+                "daripada halaman kosong dengan saiz yang anda pilih."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Mengeksport ke format lain",
+          "body": [
+            "Fail → Eksport menulis dokumen dalam format lain: teks Word atau OpenDocument, teks biasa, halaman web, XML, gambar halaman (PNG, JPEG, TIFF, SVG) atau PostScript. Untuk gambar, anda boleh memilih resolusi.",
+            "Dokumen itu sendiri kekal sebagai PDF; eksport tersebut adalah fail baharu.",
+            {
+              "note": "Teks hanya boleh dieksport di mana dokumen mempunyai teks. Kenali teks imbasan terlebih dahulu."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Mencetak",
+          "body": [
+            "Fail → Cetak (Ctrl+P) mencetak dokumen sebagaimana ia disusun sekarang, termasuk apa yang anda lukis padanya. Pilih halaman, kertas, sama ada helaian berada dalam kedudukan menegak atau melintang, dan sama ada halaman dipadankan dengan helaian atau dicetak pada saiz sebenar; kemudian tetingkap cetakan sistem akan meminta pencetak.",
+            "Kertas, orientasi dan penskalaan yang dimulakan oleh tetingkap cetakan ditetapkan dalam Tetapan → Percetakan."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Perkongsian",
+          "body": [
+            "Fail → Kongsi menghantar dokumen ke tetingkap \"Kongsi\" sistem: e-mel, peranti berhampiran dan aplikasi lain. Dokumen dikongsi sebagaimana ia ada sekarang, termasuk perubahan yang belum disimpan."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menyusun halaman",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Paparan Susun",
+          "body": [
+            "Atur → Atur halaman menunjukkan setiap halaman dalam grid. Tiada apa-apa yang berubah pada cakera sehingga anda menyimpan.",
+            {
+              "points": [
+                "Pilih: klik halaman; Ctrl+klik menambah satu, Shift+klik memilih satu rangkaian. \"Pilih semua halaman\", \"Jangan pilih mana-mana\", \"Pilih halaman ganjil\" dan \"Pilih halaman genap\" terdapat dalam menu.",
+                "Alih: seret halaman yang dipilih ke tempat baharu, atau gunakan \"Alih ke kiri\" dan \"Alih ke kanan\".",
+                "Putar: \"Dipilih: putar kiri\" dan \"Dipilih: putar kanan\" memutar halaman yang dipilih; \"Semua halaman: putar kiri\" dan \"Semua halaman: putar kanan\" memutar setiap halaman.",
+                "Padam: kekunci Delete, atau \"Padam halaman\". Dokumen mesti mempunyai sekurang-kurangnya satu halaman.",
+                "Salin, potong dan tampal (Ctrl+C, Ctrl+X, Ctrl+V): halaman boleh ditampal dalam dokumen yang sama atau dalam dokumen lain yang dibuka dalam program.",
+                "Saiz: peluncur di bahagian atas membesarkan atau mengecilkan halaman; begitu juga Ctrl + roda tetikus di atas halaman, serta \"Zum masuk\" dan \"Zum keluar\" (Ctrl+= dan Ctrl+-). Saiz itu diingati."
+              ]
+            },
+            "Perintah yang sama berfungsi tanpa grid, pada halaman yang sedang dipaparkan."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Mengekstrak halaman dan membahagikan dokumen",
+          "body": [
+            "Atur → Ekstrak halaman mengeluarkan halaman yang dipilih sebagai dokumen baharu dalam tabnya sendiri, yang belum disimpan. Anda juga boleh menetapkan setiap halaman ditulis sebagai fail tersendiri, dan memilih sama ada halaman tersebut hendak dialih keluar daripada dokumen ini.",
+            "Atur → Pisahkan dokumen menulis dokumen sebagai beberapa fail yang lebih kecil; dokumen ini kekal sebagaimana sedia ada.",
+            "Nama dokumen baharu mengikut corak dalam Tetapan → Nama dokumen baharu.",
+            {
+              "note": "Tandatangan yang dibuat dengan sijil tidak dibawa ke dalam dokumen yang diekstrak atau dipecahkan: tandatangan hanya sah untuk fail tempat ia dibuat."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Memasukkan dan menggantikan halaman",
+          "body": [
+            {
+              "points": [
+                "Atur → Sisip halaman menambah halaman daripada fail lain (PDF, gambar, teks, dokumen pejabat) selepas halaman yang dipilih, atau di penghujung.",
+                "Atur → Ganti halaman meletakkan halaman daripada fail lain bagi menggantikan halaman yang dipilih.",
+                "Sisip → Halaman kosong menambah halaman kosong mengikut saiz halaman bersebelahannya."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Memotong dan mengubah saiz halaman",
+          "body": [
+            "Edit → Potong halaman memotong tepi halaman, mengikut margin yang anda taip atau seret. Tiada apa yang dibuang daripada fail: halaman hanya memaparkan bahagian yang lebih kecil.",
+            "Edit → Ubah saiz halaman meletakkan halaman pada saiz helaian lain (A4, Letter dan lain-lain). Kandungan boleh diskalakan untuk muat atau dikekalkan pada saiz asalnya, dan diletakkan di salah satu daripada sembilan kedudukan pada helaian baharu.",
+            "Kedua-duanya bertanya halaman mana: semua, yang dipilih, julat, ganjil atau genap."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menggabungkan fail",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Pengikat",
+          "body": [
+            "Gabung → Pengikat baharu membuka ruang untuk mengumpulkan fail dan menulisnya sebagai satu PDF.",
+            {
+              "steps": [
+                "Tambah fail dengan \"Tambah fail\", atau seret fail ke dalam pengikat. PDF, gambar, teks dan dokumen pejabat boleh dicampur.",
+                "Seret kad mengikut urutan yang anda mahu, atau gunakan anak panah pada setiap kad.",
+                "Buka kad untuk memilih halaman mana yang akan dimasukkan.",
+                "\"Gabungkan fail\" menulis fail tersebut, mengikut urutan, sebagai satu dokumen baharu dalam tabnya sendiri."
+              ]
+            },
+            "Fail itu sendiri tidak berubah.",
+            "Peluncur di bahagian atas membesarkan atau mengecilkan halaman pada kad; begitu juga Ctrl + roda tetikus, serta \"Zum masuk\" dan \"Zum keluar\" (Ctrl+= dan Ctrl+-). Saiz itu diingati."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menulis dan melukis pada halaman",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Alatan",
+          "body": [
+            "Alatan melukis dibuka sebagai panel di sebelah halaman, sebagai grid butang atau sebagai senarai dengan nama (ditentukan oleh Tetapan). Dengan alatan di tangan, seret atau klik pada halaman; Escape akan meletakkan semula alatan tersebut.",
+            {
+              "points": [
+                "Teks: klik dan taip. Fon, saiz, warna, tebal, condong dan penjajaran berada di dalam panel.",
+                "Imej: pilih gambar, kemudian seret ke tempat yang dikehendaki dan tentukan saiznya.",
+                "Bentuk: segi empat tepat, elips, garisan, anak panah, tanda rait, pangkah, titik.",
+                "Sorotan: seret pada bahagian yang perlu ditonjolkan; apa yang berada di bawahnya tetap boleh dibaca."
+              ]
+            },
+            "Dengan \"Pilih, pindah dan ubah saiz\" tanda boleh dipilih semula: seret, tarik bucunya, putarkannya melalui pemegangnya, tukar warnanya di panel, atau padamkan dengan kekunci Delete. Tanda boleh disalin dan ditampal, termasuk ke halaman lain.",
+            "Semua yang dilukis akan ditulis ke dalam fail apabila anda menyimpan."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Mengubah teks dan gambar dokumen itu sendiri",
+          "body": [
+            "Alatan \"Edit teks dan gambar dokumen\" menggariskan apa yang ada pada halaman itu sendiri. Klik baris teks untuk menulis semula, atau gambar untuk menggerak, mengubah saiz, memutar atau memadamnya.",
+            {
+              "note": "Ini mengubah satu baris atau satu gambar pada satu masa. Perenggan tidak akan mengalir semula apabila satu baris menjadi lebih panjang, dan gambar yang berada di atas gambar lain akan dipilih bersama-sama. Untuk perubahan besar, edit dokumen dalam program asal ia ditulis."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Lindap",
+          "body": [
+            "Alatan lanjut → Lindap membuang secara kekal apa yang tidak boleh dibaca: seret kotak hitam di atasnya, pada mana-mana halaman. Apabila anda menyimpan, teks dan gambar di bawah kotak tersebut akan dikeluarkan daripada fail, bukan sekadar ditutup.",
+            {
+              "note": "Simpan dokumen yang telah diedit di bawah nama baharu dan simpan dokumen asal di tempat yang selamat: apa yang telah dipadamkan tidak boleh dikembalikan."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Tanda Air",
+          "body": [
+            "Edit → Tanda air menulis perkataan atau meletakkan gambar pada halaman yang anda pilih: tegak atau senget, di salah satu daripada sembilan tempat, mengikut saiz dan kejelasan yang anda tetapkan. Pada setiap halaman, ia kemudiannya menjadi tanda seperti tanda lain dan masih boleh digerakkan atau dialih keluar."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Nombor halaman, pengepala dan kaki halaman, nombor Bates",
+          "body": [
+            {
+              "points": [
+                "Edit → Nombor halaman: format (1, 1 / 12, Halaman 1 dan lain-lain), tempat, dan halaman mana yang akan mendapatkannya.",
+                "Sisip → Helaian atas dan bawah: teks di mana-mana daripada enam tempat. Di dalamnya, {page} mewakili nombor halaman, {pages} untuk jumlah halaman, {date} untuk tarikh hari ini dan {file} untuk nama dokumen.",
+                "Sisip → Penomboran Bates: nombor satu demi satu dengan perkataan sebelum atau selepas (ABC000123), seperti yang digunakan untuk dokumen kes."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pautan, penanda buku dan fail lampiran",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Pautan",
+          "body": [
+            "Sisip → Pautan: seret pada tempat yang perlu diklik, kemudian nyatakan ke mana ia membawa: alamat web, atau halaman dalam dokumen ini.",
+            "Pautan dalam dokumen berfungsi semasa anda membacanya: klik pada pautan ke halaman akan membawa anda ke sana; alamat web atau e-mel akan diserahkan kepada pelayar atau program e-mel anda."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Penanda buku",
+          "body": [
+            "Sisip → Penanda buku baharu: klik pada tempat yang ingin dituju dan berikan tajuk. Sisip → Penanda buku membuka senarai, di mana penanda buku boleh dinamakan semula atau dipadamkan. Perubahan akan disimpan apabila anda menyimpan dokumen."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Fail lampiran",
+          "body": [
+            "Sisip → Lampirkan fail: pilih fail dan klik pada tempat klip kertas akan diletakkan. Anda boleh memberikan nama dan pengarang, mewarnakan klip, mengubah saiz dan memutarkannya. Fail tersebut disimpan di dalam PDF apabila anda menyimpan dokumen.",
+            "Sisip → Fail lampiran menyenaraikan apa yang dibawa oleh dokumen; setiap fail boleh disimpan ke cakera atau dikeluarkan. Klik pada klip kertas akan membuka senarai yang sama."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Borang",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Mengisi borang",
+          "body": [
+            "Sisip → Isi borang menunjukkan medan dokumen: taip dalam medan teks, tanda kotak, pilih daripada senarai. Jawapan akan ditulis ke dalam fail apabila anda menyimpan dokumen."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Membuat borang",
+          "body": [
+            "Menu Sisip menambah medan ke mana-mana dokumen: medan teks, kotak semak, butang radio (di mana satu boleh dipilih), senarai untuk dipilih, dan medan tandatangan yang dikosongkan untuk penandatangan.",
+            "Seret pada halaman di mana medan tersebut perlu diletakkan. Seperti tanda lain, medan boleh digerakkan dan diubah saiznya sehingga anda menyimpan dokumen; selepas itu ia menjadi sebahagian daripada borang."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menandatangani",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Menambah tandatangan yang anda lukis",
+          "body": [
+            "Tandatangan → Tambah tandatangan meletakkan gambar tandatangan pada halaman: dilukis di sini dengan pen yang anda pilih, ditaip dalam fon, atau diambil daripada gambar (dengan \"Kekalkan strok pen sahaja, tanpa kertas di belakangnya\" untuk foto helaian yang telah ditandatangani). Tarikh boleh ditulis di bawahnya.",
+            "Seret ke halaman yang dikehendaki. Tandatangan yang anda gunakan disimpan pada komputer ini untuk digunakan semula.",
+            {
+              "note": "Ini adalah gambar: ia tidak membuktikan secara pasti siapa yang meletakkannya di situ. Tandatangan yang membuktikan siapa yang menandatangani, dan bahawa tiada apa yang berubah sejak itu, dibuat dengan sijil."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Menandatangani dengan sijil",
+          "body": [
+            "Tandatangan → Tandatangan dengan sijil menghasilkan tandatangan digital: ia menyatakan siapa yang menandatangani dan memeterai dokumen tersebut, supaya sebarang perubahan kemudian akan kelihatan.",
+            {
+              "steps": [
+                "Seret kawasan di mana tandatangan akan dipaparkan pada halaman (tetingkap akan memberitahu anda terlebih dahulu; ia boleh dimatikan). Untuk menandatangani tanpa memaparkan apa-apa pada halaman, pilih \"Tandatangani tanpa memaparkannya pada halaman\" sebagai ganti.",
+                "Pilih sijil: salah satu daripada komputer (kad atau token akan dipaparkan antaranya setelah ia dimasukkan ke dalam pembaca), atau fail .pfx / .p12 bersama kata laluannya. \"Teruskan\".",
+                "Pilih rupa tandatangan. Di bawah \"Sebab dan tempat\" anda boleh menulis mengapa dan di mana anda menandatangani: maklumat ini akan dimasukkan ke dalam tandatangan, dan ke atas halaman jika rupa tandatangan memaparkannya. Tandakan \"Kunci dokumen selepas menandatangani\" jika tiada sesiapa yang boleh menandatangani atau mengubahnya selepas anda. Biarkan \"Tambah masa yang dipercayai (cap masa)\" ditandakan supaya pihak berkuasa mengesahkan bila anda menandatangani.",
+                "\"Tandatangan\", kemudian pilih tempat fail yang telah ditandatangani disimpan. Token akan meminta PIN pada peringkat ini."
+              ]
+            },
+            "Fail yang telah ditandatangani akan dibuka bagi menggantikan dokumen tersebut. Kata laluan atau PIN tidak pernah disimpan oleh program.",
+            {
+              "note": "Tandatangan berkelayakan ialah tandatangan yang dibuat dengan cara ini menggunakan sijil berkelayakan, pada kad atau tokennya. Proses menandatangani dilakukan pada komputer anda; hanya cap masa dan semakan sijil anda yang memerlukan talian, dan kedua-duanya menghantar cap jari digital dan nombor siri sijil, bukan dokumen."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Rupa tandatangan",
+          "body": [
+            "Rupa tandatangan menentukan bagaimana tandatangan sijil kelihatan pada halaman. Simpan beberapa rupa dengan nama pilihan anda: satu untuk menandatangani bagi pihak syarikat, satu untuk menandatangani atas nama sendiri.",
+            {
+              "points": [
+                "Gambar: tiada, daripada fail (cop, tandatangan yang diimbas) atau dilukis di sini.",
+                "Teks yang dipaparkan: nama, tarikh, sebab, tempat, setiap satu dengan atau tanpa labelnya.",
+                "Baris teks anda sendiri di bawah nama, seperti jawatan dan syarikat.",
+                "\"Teks standard\" sentiasa ada: siapa yang menandatangani dan bila."
+              ]
+            },
+            "Dalam tetingkap menandatangani: \"Baru…\", \"Edit\", \"Padam\". Yang terakhir digunakan akan ditawarkan dahulu. Penampilan disimpan pada komputer ini."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Beberapa tandatangan, dan penguncian",
+          "body": [
+            "Dokumen boleh ditandatangani oleh beberapa orang, satu demi satu. Buka fail yang telah ditandatangani dan tandatanganinya tanpa mengubah apa-apa: tandatangan anda akan ditambah ke hujung fail dan tandatangan sebelumnya tetap sah.",
+            "\"Kunci dokumen selepas menandatangani\" (dimatikan melainkan anda menandakannya) akan menutup dokumen: tiada sesiapa boleh menandatangani selepas anda dan tiada apa-apa lagi yang boleh diubah. Ia tidak boleh dibatalkan.",
+            {
+              "note": "Jika anda mengubah dokumen yang telah ditandatangani sebelum menandatanganinya semula, ia perlu ditulis semula dan tandatangan sebelumnya akan diketepikan. Tetingkap menandatangani akan memberi amaran kepada anda: untuk mengekalkannya, buka fail itu semula dan tandatangani tanpa mengubah apa-apa."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Cap masa",
+          "body": [
+            "Cap masa ialah pengesahan bertandatangan daripada pihak berkuasa cap masa tentang bila sesuatu wujud. Tanpanya, masa dalam tandatangan datang daripada jam komputer penandatangan, yang boleh ditetapkan oleh sesiapa sahaja; cap masa membuktikan saat itu, dan mengekalkan tandatangan boleh dibuktikan selepas sijil tamat tempoh (PAdES B-T).",
+            {
+              "points": [
+                "Tandatangan mendapat cap masa apabila \"Tambah masa yang dipercayai (cap masa)\" ditandakan dalam tetingkap menandatangani. Tetapan → Tandatangan menentukan sama ada ia ditandakan sejak awal, di sini dan dalam pemprosesan banyak fail.",
+                "Tandatangan → Tambah cap masa memberikan keseluruhan dokumen cap masanya sendiri, tanpa sijil: ia membuktikan dokumen wujud, tepat seperti ini, pada saat itu. Ia disimpan sebagai fail baharu; tandatangan yang ada dalam fail tetap sah."
+              ]
+            },
+            "Pihak berkuasanya ialah DigiCert (http://timestamp.digicert.com), percuma dan dipercayai oleh Adobe Reader dan Windows; pihak berkuasa lain boleh ditetapkan dalam Tetapan → Tandatangan. Ia hanya menerima cap jari digital (SHA-256), bukan dokumen, dan sambungan internet diperlukan. Apabila tandatangan mendapat cap masa, pengeluar sijil anda juga ditanya sama ada sijil itu masih sah, dan jawapannya disimpan dalam tandatangan (pengesahan jangka panjang): dengan itu Adobe Reader boleh memaparkan tandatangan sebagai sah, sekarang dan selepas sijil tamat tempoh.",
+            {
+              "note": "Jika pihak berkuasa tidak dapat dihubungi, tiada apa-apa yang ditandatangani atau ditulis: cuba lagi, atau nyahtanda cap masa untuk menandatangani tanpanya."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Menyemak tandatangan",
+          "body": [
+            "Tandatangan → Sahkan tandatangan menyenaraikan setiap tandatangan sijil fail: siapa yang menandatangani, siapa yang mengeluarkan sijil, bila, sebab dan tempat, serta",
+            {
+              "points": [
+                "sama ada dokumen tidak berubah sejak tandatangan tersebut (tandatangan lain yang ditambah kemudian tidak dikira sebagai perubahan);",
+                "sama ada tandatangan tersebut mengunci dokumen;",
+                "sama ada komputer ini mempercayai pihak berkuasa di sebalik sijil tersebut, dan sama ada sijil itu sah hari ini;",
+                "masa yang disahkan oleh cap masanya, dan oleh pihak berkuasa mana, jika ada. Cap masa keseluruhan dokumen turut disenaraikan, dengan semakannya sendiri."
+              ]
+            },
+            "Semakan adalah terhadap fail seperti mana ia disimpan kali terakhir dan dilakukan pada komputer ini, tanpa pergi dalam talian. Mengklik tandatangan pada halaman akan membuka senarai ini pada tandatangan tersebut. Di bawah setiap tandatangan, “Tunjukkan sijil” membuka tetingkap Windows bagi sijil itu (rantaiannya dan setiap butiran; dari situ, “Pasang Sijil” menjadikan komputer ini mempercayai sijil yang anda kenali), dan “Sahkan” bertanya kepada pengeluar sijil secara dalam talian, hanya apabila anda menekannya, sama ada sijil telah ditarik balik."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alatan lanjut",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Mengenal pasti teks (OCR)",
+          "body": [
+            "Alatan lanjut → Kenali teks (OCR) membaca perkataan pada halaman yang diimbas dan menulisnya ke dalam halaman yang tidak kelihatan, supaya dokumen boleh dicari dan teksnya boleh disalin serta dieksport. Rupa halaman tidak berubah.",
+            "Tandakan hanya bahasa yang digunakan pada halaman tersebut; halaman yang sudah mempunyai teks akan dibiarkan seperti sedia ada.",
+            {
+              "note": "Pembacaan dilakukan oleh enjin Tesseract, sebuah program percuma yang dipasang secara berasingan. Tanpanya, tetingkap akan memaparkan arahan untuk memasangnya pada Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Mengecilkan dokumen",
+          "body": [
+            "Alatan lanjut → Mampatkan menyimpan dokumen sebagai fail yang lebih kecil dengan mengurangkan piksel pada foto dan imbasan. Terdapat tiga tahap kekuatan; teks dan lukisan kekal tajam. Dokumen dengan sedikit gambar tidak akan banyak berubah."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Membandingkan dua dokumen",
+          "body": [
+            "Alatan lanjut → Bandingkan dokumen: pilih PDF yang lain. Kedua-duanya dipaparkan bersebelahan, halaman demi halaman, dengan halaman yang mempunyai teks berbeza ditandakan dan baris yang hanya ada pada salah satu dokumen disenaraikan."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Pemprosesan kelompok: banyak fail sekaligus",
+          "body": [
+            "Alatan lanjut → Pemprosesan kelompok melakukan perkara yang sama pada banyak fail, dalam tab tersendiri. Setiap hasil adalah fail baharu. Jika hasil akan menggantikan fail yang sedia ada dalam folder (fail anda sendiri, apabila disimpan ke folder asalnya tanpa apa-apa ditambah pada namanya), anda akan ditanya dahulu sama ada mahu menggantikannya, melangkaunya atau membatalkan. Fail hanya digantikan setelah hasilnya lengkap; fail yang sedang dibuka (dalam tab di sini atau dalam program lain) dibiarkan seperti sedia ada dan ditandakan sebagai tidak selesai.",
+            {
+              "steps": [
+                "Di sebelah kiri, tambah fail: \"Tambah fail\", \"Tambah folder\" (termasuk folder di bawahnya), atau seret dan lepaskan fail tersebut.",
+                "Di sebelah kanan, tanda apa yang perlu dilakukan. Setiap fail akan menjadi PDF dalam apa jua keadaan; selain itu anda boleh memutar halaman, mengecam teks, menambah pengepala dan kaki halaman, tanda air atau nombor halaman, mengecilkan fail, menandatanganinya dengan sijil, atau mengeksportnya dalam format lain. Nombor menunjukkan urutan.",
+                "Pilih cara penyimpanan: satu fail untuk setiap satu, atau semuanya dalam satu PDF (mengikut urutan senarai), dan folder untuk menyimpan hasil tersebut. Apabila semua fail datang dari satu folder, folder itu dipilih untuk anda sehingga anda memilih yang lain; jika tidak, folder terakhir yang anda pilih akan digunakan.",
+                "\"Mula\". Setiap fail menunjukkan status prosesnya; proses boleh dihentikan di antara fail."
+              ]
+            },
+            {
+              "points": [
+                "Resipi: \"Simpan sebagai resipi\" menyimpan semua pilihan anda (kecuali fail dan sebarang kata laluan) di bawah satu nama, untuk ditetapkan semula dengan satu pilihan.",
+                "\"Kekalkan folder fail dalam hasil\" membina semula struktur folder bagi folder yang ditambah.",
+                "\"Tulis laporan proses\" meninggalkan fail teks di sebelah hasil yang menyatakan apa yang telah ditulis dan apa yang gagal.",
+                "PDF yang hanya ditandatangani akan mengekalkan tandatangan yang ada; jika perkara lain dilakukan kepadanya dalam sesi yang sama, ia akan ditulis semula dan tandatangan tersebut akan ditinggalkan."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tetapan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Tetapan PDF Organizer",
+          "body": [
+            "Fail → Tetapan (atau Tetapan pada bar sisi, kemudian PDF Organizer). Setiap tetapan boleh dikembalikan secara berasingan, atau semuanya sekali.",
+            {
+              "points": [
+                "Apabila dokumen dibuka: saiz dokumen yang dipaparkan semasa dibuka, tatalan atau satu halaman pada satu masa, paparan gambar kenit atau tidak.",
+                "Unit, pembaris dan grid: unit (milimeter, inci, mata), pembaris, grid dan jaraknya.",
+                "Percetakan: kertas, orientasi dan penskalaan yang digunakan oleh tetingkap cetak pada permulaan.",
+                "Bar alatan pantas: butang yang dipaparkan pada jalur di atas halaman.",
+                "Nama dokumen baharu: corak untuk halaman yang diekstrak, dokumen baharu dan PDF yang mengumpulkan banyak fail dalam pemprosesan kelompok.",
+                "Tandatangan: sama ada \"Simpan\" meminta pengesahan sebelum menulis semula fail yang telah ditandatangani.",
+                "Pintasan papan kekunci: klik kekunci arahan, kemudian tekan kekunci baharu."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Mengenai PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Mengenai PDF Organizer",
+          "body": [
+            "PDF Organizer ialah aplikasi PDF daripada Syntelab Creative: ia membaca dokumen PDF, menyusun dan menggabungkan halamannya, menulis dan melukis padanya, mengisi dan membuat borang, menandatangani dengan sijil dan menyemak tandatangan, serta melakukan perkara yang sama pada banyak fail sekali gus.",
+            "Ia adalah aplikasi baharu, dan beberapa fungsinya merupakan langkah pertama. Jika terdapat kekurangan untuk dokumen anda, beritahu kami melalui Bantuan → Maklum Balas: itulah cara kami mengetahui apa yang perlu diperbaiki."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Teknologi pembinaan PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Membaca, melukis dan menulis PDF: MuPDF.",
+                "Mengenal pasti teks (OCR): Tesseract, apabila ia dipasang pada komputer.",
+                "Membuka dokumen pejabat: Word, Excel dan PowerPoint, atau LibreOffice, mengikut apa yang dipasang.",
+                "Menyimpan halaman web sebagai PDF: pelayar yang dipasang pada komputer.",
+                "Menandatangani dengan sijil: perkhidmatan sijil Windows; tandatangan ditulis mengikut keperluan standard PAdES."
+              ]
+            },
+            "Apa yang dikongsi dengan bahagian lain program ini ada di bawah \"Perihal Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Apa yang PDF Organizer belum boleh lakukan",
+          "body": [
+            {
+              "points": [
+                "Dokumen Office dibuka oleh suite pejabat pada komputer; tanpa Word, Excel, PowerPoint atau LibreOffice, dokumen tersebut tidak dapat dibuka. Penukar kami sendiri sedang dalam pembangunan: lihat \"Apa yang kami sedang usahakan\".",
+                "Mengenal pasti teks memerlukan enjin Tesseract, yang dipasang secara berasingan.",
+                "Teks dokumen itu sendiri diubah satu baris pada satu masa; perenggan tidak mengalir semula.",
+                "Gambar yang dicetak dalam empat dakwat (CMYK) tidak boleh dipilih untuk dipindahkan.",
+                "“Sahkan” memberitahu sama ada sijil sudah ditarik balik setakat hari ini, bukan bila ia ditarik balik.",
+                "Menandatangani dengan sijil buat masa ini hanya berfungsi pada Windows; bagi Linux dan macOS, ia akan tersedia dalam versi akan datang."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

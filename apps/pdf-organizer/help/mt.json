@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Ftuħ u qari",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Ftuħ ta' dokument",
+          "body": [
+            "Fajl → Iftaħ (Ctrl+O) jiftaħ PDF f’tab għalih. \"Iftaħ diversi fajls f’daqqa\" jiftaħ kull fajl magħżul f’tab għalih.",
+            "Jinfetħu wkoll fajls li mhumiex PDFs, bħala paġni: stampi (PNG, JPEG, TIFF, WebP u ħafna oħrajn), fajls tat-test u tal-web, kotba elettroniċi, XPS, u dokumenti tal-uffiċċju. Dokument bħal dan għadu mhux issejvjat x’imkien: \"Issejvja\" jistaqsik fejn.",
+            {
+              "note": "Id-dokumenti tal-uffiċċju (Word, Excel, PowerPoint, OpenDocument) jiġu kkonvertiti minn Word, Excel jew PowerPoint, jew minn LibreOffice, skont liema minnhom ikun fuq il-kompjuter. Mingħajr wieħed minnhom ma jistgħux jinfetħu."
+            },
+            "Il-fajls li twaqqa’ fuq tab vojta jinġabru f’ġabra; jekk twaqqagħhom fuq dokument, il-paġni tagħhom jiżdiedu miegħu.",
+            "Fuq Windows, PDF Organizer jista’ jkun l-app li tiftaħ il-fajls PDF meta tikklikkja darbtejn fuqhom: fil-paġna tal-bidu tiegħu, \"Agħmilha default\" jiftaħ is-settings ta’ Windows, fejn tagħżel Syntelab Creative għall-fajls PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Kif tħares lejn il-paġni",
+          "body": [
+            "Il-menu Dehra jiddeċiedi kif jintwera d-dokument; xejn minnu ma jibdel il-fajl.",
+            {
+              "points": [
+                "Tkabbir: kabbar, ċekken, daqs reali, daħħal il-paġna sħiħa, daħħal il-wisa', daħħal l-għoli. Ctrl u r-rota tal-maws ikabbru u jċekknu wkoll.",
+                "Wiri tal-paġni: paġna waħda jew tnejn ħdejn xulxin, bil-paġna tal-qoxra jew mingħajrha, u skrolljar mill-paġni kollha bħala strixxa twila waħda.",
+                "Gwidi: rigi u grilja, fl-unità magħżula fl-Issettjar.",
+                "\"Uri l-miniaturi\": il-paġni ż-żgħar fil-ġenb. Ikklikkja waħda biex tmur għaliha; is-sinjalibri tad-dokument jinsabu fl-istess pannell.",
+                "\"Modalità tal-qari\" taħbi l-għodod; \"Modalità skrin sħiħ\" taħbi kollox ħlief il-paġna. Esc joħroġ minn it-tnejn."
+              ]
+            },
+            "L-istrixxa ta' fuq il-paġni (l-istrixxa tal-għodod rapida) fiha n-numru tal-paġna, it-tkabbir u l-buttuni li għażilt fl-Issettjar."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Tfittxija ta' test",
+          "body": [
+            "Editja → Fittex fid-dokument (Ctrl+F): ikteb kelma jew frażi; il-postijiet fejn tinstab jiġu mmarkati fuq il-paġni, u l-vleġeġ jgħadduk minn wieħed għal ieħor.",
+            {
+              "note": "Dokument skenjat huwa stampi ta' paġni u m'għandux test x'tfittex sakemm it-test tiegħu jiġi magħruf: ara \"Għarfien tat-test (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Proprjetajiet tad-dokument",
+          "body": [
+            "Fajl → Proprjetajiet tad-dokument juri x'jgħid id-dokument dwaru nnifsu: titlu, awtur, id-dati meta sar u meta nbidel, in-numru ta' paġni, id-daqs tal-fajl."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sejvjar, ipprintjar u bgħit",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Issejvja u Issejvja bħala",
+          "body": [
+            "Xejn minn dak li tagħmel ma jibdel il-fajl fuq id-diska sakemm tissejvja. Sa dakinhar, kull pass jista' jitreġġa' lura (Ctrl+Z) u jerġa' jsir (Ctrl+Y).",
+            {
+              "points": [
+                "Issejvja (Ctrl+S) jikteb id-dokument fuq il-fajl tiegħu.",
+                "Issejvja bħala (Ctrl+Shift+S) jiktbu f'fajl ġdid, li mbagħad jieħu post it-tab; il-fajl l-antik jibqa' kif kien."
+              ]
+            },
+            "Jekk programm ieħor għandu l-fajl miftuħ, ma jistax jinkiteb fuqu: il-programm jgħidlek u jżomm il-bidliet tiegħek, biex tissejvjahom b'isem ieħor.",
+            {
+              "note": "Jekk tissejvja dokument mibdul fuq fajl iffirmat b'ċertifikat, il-firem tiegħu jitneħħew. Il-programm jistaqsi l-ewwel u joffri \"Issejvja bħala fajl ġdid\"; il-mistoqsija tista' tintefa f'Issettjar → Firem."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Ħolqien ta' PDF",
+          "body": [
+            "Fajl → Oħloq PDF jagħmel dokument ġdid:",
+            {
+              "points": [
+                "minn fajl wieħed, jew minn diversi: magħqudin f'PDF wieħed, jew PDF għal kull wieħed;",
+                "minn paġna tal-web, fl-indirizz li tikteb (il-paġna tiġi ssejvjata bil-browser installat fuq il-kompjuter);",
+                "minn dak li hemm fil-clipboard;",
+                "minn paġni vojta tad-daqs li tagħżel."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Esportazzjoni f'format ieħor",
+          "body": [
+            "Fajl → Esporta jikteb id-dokument f'format ieħor: test Word jew OpenDocument, test sempliċi, paġna tal-web, XML, stampi tal-paġni (PNG, JPEG, TIFF, SVG) jew PostScript. Għall-istampi tagħżel ir-riżoluzzjoni.",
+            "Id-dokument innifsu jibqa' PDF; l-esportazzjoni hija fajl ġdid.",
+            {
+              "note": "It-test jista' jiġi esportat biss fejn id-dokument għandu test. L-ewwel agħraf it-test ta' skenjar."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Ipprintjar",
+          "body": [
+            "Fajl → Ipprintja (Ctrl+P) jipprintja d-dokument kif inhu organizzat issa, b'dak li ddisinjajt fuqu. Agħżel il-paġni, il-karta, jekk il-folji jkunux wieqfa jew mimduda, u jekk il-paġni jitdaħħlux fil-folja jew jiġux ipprintjati fid-daqs reali tagħhom; imbagħad it-tieqa tal-ipprintjar tas-sistema tistaqsik għall-printer.",
+            "Il-karta, l-orjentazzjoni u l-iskala li biha tibda t-tieqa tal-ipprintjar jiġu ssettjati f'Issettjar → Ipprintjar."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Ixxerjar",
+          "body": [
+            "Fajl → Ixxerja jgħaddi d-dokument lit-tieqa \"Ixxerja\" tas-sistema: email, apparat fil-qrib u apps oħra. Id-dokument jiġi xxerjat kif inhu issa, bil-bidliet tiegħek li għadhom mhumiex issejvjati."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organizzazzjoni tal-paġni",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Il-vista Organizza",
+          "body": [
+            "Organizza → Organizza l-paġni juri kull paġna fi grilja. Xejn ma jinbidel fuq id-diska sakemm tissejvja.",
+            {
+              "points": [
+                "Agħżel: ikklikkja paġna; Ctrl+klikk iżżid waħda, Shift+klikk tagħżel sensiela. \"Agħżel il-paġni kollha\", \"Tagħżel xejn\", \"Agħżel il-paġni fard\" u \"Agħżel il-paġni pari\" jinsabu fil-menu.",
+                "Ċaqlaq: kaxkar il-paġni magħżula lejn posthom il-ġdid, jew uża \"Ċaqlaq lejn ix-xellug\" u \"Ċaqlaq lejn il-lemin\".",
+                "Dawwar: \"Magħżula: dawwar lejn ix-xellug\" u \"Magħżula: dawwar lejn il-lemin\" iduru l-paġni magħżula; \"Il-paġni kollha: dawwar lejn ix-xellug\" u \"Il-paġni kollha: dawwar lejn il-lemin\" iduru kull paġna.",
+                "Ħassar: it-tast Delete, jew \"Ħassar il-paġni\". Dokument iżomm mill-inqas paġna waħda.",
+                "Ikkopja, aqta’ u ippejstja (Ctrl+C, Ctrl+X, Ctrl+V): il-paġni jistgħu jiġu ppejstjati fl-istess dokument jew f’ieħor miftuħ fil-programm.",
+                "Daqs: is-slider fuq nett ikabbar jew iċekken il-paġni; l-istess jagħmlu Ctrl + r-rota tal-maws fuq il-paġni, u \"Kabbar\" u \"Ċekken\" (Ctrl+= u Ctrl+-). Id-daqs jibqa’ mfakkar."
+              ]
+            },
+            "L-istess kmandi jaħdmu mingħajr il-grilja, fuq il-paġna li qed tidher."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Estrazzjoni tal-paġni u qsim ta' dokument",
+          "body": [
+            "Organizza → Estratta l-paġni joħroġ il-paġni magħżula bħala dokument ġdid f'tab għalih, li għadu mhux issejvjat. Tista' wkoll tikteb kull paġna bħala fajl għaliha, u tagħżel jekk il-paġni jitneħħewx minn dan id-dokument.",
+            "Organizza → Aqsam id-dokument jikteb id-dokument bħala diversi fajls iżgħar; dan id-dokument jibqa' kif inhu.",
+            "L-ismijiet tad-dokumenti l-ġodda jsegwu l-mudelli f'Issettjar → Ismijiet tad-dokumenti l-ġodda.",
+            {
+              "note": "Il-firem magħmula b'ċertifikat ma jgħaddux għad-dokumenti estratti jew maqsuma: firma tgħodd biss għall-fajl li fih saret."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Iddaħħal u tissostitwixxi paġni",
+          "body": [
+            {
+              "points": [
+                "Organizza → Daħħal paġni jżid il-paġni ta' fajl ieħor (PDF, stampa, test, dokument tal-uffiċċju) wara l-paġna magħżula, jew fl-aħħar.",
+                "Organizza → Issostitwixxi l-paġni jpoġġi l-paġni ta' fajl ieħor minflok dawk magħżula.",
+                "Daħħal → Paġna vojta jżid paġna vojta tal-istess daqs ta' dik ta' ħdejha."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Qtugħ tat-truf u tibdil tad-daqs tal-paġni",
+          "body": [
+            "Editja → Aqta' t-truf tal-paġni jaqta' t-truf tal-paġni, skont marġini li tikteb jew tkaxkar. Xejn ma jitneħħa mill-fajl: il-paġni sempliċement juru inqas.",
+            "Editja → Ibdel id-daqs tal-paġni jpoġġi l-paġni fuq daqs ieħor ta' folja (A4, Letter u oħrajn). Il-kontenut jista' jitkabbar jew jiċċekken biex joqgħod jew jinżamm fid-daqs tiegħu, u jitqiegħed f'wieħed minn disa' postijiet fuq il-folja l-ġdida.",
+            "It-tnejn jistaqsu liema paġni: kollha, dawk magħżula, medda, fard jew pari."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Għaqda tal-fajls",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Il-ġabra",
+          "body": [
+            "Għaqqad → Ġabra ġdida jiftaħ post fejn tiġbor fajls u tiktebhom bħala PDF wieħed.",
+            {
+              "steps": [
+                "Żid fajls b’\"Żid fajls\", jew waqqagħhom fuq il-ġabra. PDFs, stampi, test u dokumenti tal-uffiċċju jistgħu jitħalltu.",
+                "Kaxkar il-kards fl-ordni li trid, jew uża l-vleġeġ fuq kull kard.",
+                "Iftaħ kard biex tagħżel liema mill-paġni tagħha jidħlu.",
+                "\"Għaqqad il-fajls\" jiktibhom, f’ordni, bħala dokument ġdid wieħed f’tab għalih."
+              ]
+            },
+            "Il-fajls infushom ma jinbidlux.",
+            "Is-slider fuq nett ikabbar jew iċekken il-paġni fuq il-kards; l-istess jagħmlu Ctrl + r-rota tal-maws, u \"Kabbar\" u \"Ċekken\" (Ctrl+= u Ctrl+-). Id-daqs jibqa’ mfakkar."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kitba u disinn fuq il-paġni",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "L-għodod",
+          "body": [
+            "L-għodod tad-disinn jinfetħu bħala pannell ħdejn il-paġna, bħala grilja ta' buttuni jew bħala lista bl-ismijiet (jiddeċiedi l-Issettjar). B'għodda f'idek, kaxkar jew ikklikkja fuq il-paġna; Esc iqiegħed l-għodda.",
+            {
+              "points": [
+                "Test: ikklikkja u ikteb. It-tipa, id-daqs, il-kulur, il-grassett, il-korsiv u l-allinjament jinsabu fil-pannell.",
+                "Stampa: agħżel stampa, imbagħad kaxkar fejn tmur u kemm għandha tkun kbira.",
+                "Forom: rettangolu, ellissi, linja, vleġġa, marka tajba, salib, tikka.",
+                "Evidenzja: kaxkar fuq dak li għandu jispikka; dak li jkun taħtu jibqa' jinqara."
+              ]
+            },
+            "B'\"Agħżel, ċaqlaq u ibdel id-daqs\" marka terġa' tinqabad: kaxkarha, iġbed ir-rokniet tagħha, dawwarha mill-maqbad tagħha, ibdel il-kuluri tagħha fil-pannell, jew ħassarha bit-tast Delete. Il-marki jistgħu jiġu kkupjati u ppejstjati, anke f'paġni oħra.",
+            "Kull ma tiddisinja jinkiteb fil-fajl meta tissejvja."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Tibdil tat-test u tal-istampi tad-dokument innifsu",
+          "body": [
+            "L-għodda \"Editja t-test u l-istampi tad-dokument\" turi l-kontorn ta' dak li fiha l-paġna nnifisha. Ikklikkja linja ta' test biex terġa' tiktibha, jew stampa biex iċċaqlaqha, tibdlilha d-daqs, iddawwarha jew tħassarha.",
+            {
+              "note": "Dan jibdel linja waħda jew stampa waħda kull darba. Il-paragrafi ma jerġgħux jinqassmu meta linja ssir itwal, u stampa li tinsab fuq oħra tinqabad flimkien magħha. Għal bidliet kbar, editja d-dokument fil-programm li bih inkiteb."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Oskurar",
+          "body": [
+            "Aktar għodod → Oskura jneħħi għal dejjem dak li ma għandux jinqara: kaxkar kaxxa sewda fuqu, fi kwalunkwe paġna. Meta tissejvja, it-test u l-istampi taħt il-kaxxa jitneħħew mill-fajl, mhux sempliċement jiġu mgħottija.",
+            {
+              "note": "Issejvja d-dokument oskurat b'isem ġdid u żomm l-oriġinal f'post sigur: dak li jiġi oskurat ma jistax jinġieb lura."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Filigrana",
+          "body": [
+            "Editja → Filigrana tikteb kliem jew tpoġġi stampa fuq il-paġni li tagħżel: dritta jew imxaqilba, f'wieħed minn disa' postijiet, kbira u ħafifa kemm tissettja int. Fuq kull paġna mbagħad tkun marka bħal kull oħra u xorta tista' tiċċaqlaq jew titneħħa."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Numri tal-paġni, intestatura u qiegħ il-paġna, numri Bates",
+          "body": [
+            {
+              "points": [
+                "Editja → Numri tal-paġni: il-format (1, 1 / 12, Paġna 1 u oħrajn), il-post, u liema paġni jieħdu numru.",
+                "Daħħal → Intestatura u qiegħ il-paġna: test fi kwalunkwe wieħed minn sitt postijiet. Fih, {page} ifisser in-numru tal-paġna, {pages} in-numru ta' paġni, {date} id-data tal-lum u {file} l-isem tad-dokument.",
+                "Daħħal → Numerazzjoni Bates: numri waħda wara l-oħra b'kelma qabel jew wara (ABC000123), kif jintużaw għad-dokumenti ta' kawża."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ħoloq, sinjalibri u fajls mehmużin",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Ħoloq",
+          "body": [
+            "Daħħal → Ħolqa: kaxkar fuq il-post li għandu jiġi kklikkjat, imbagħad għid fejn iwassal: indirizz tal-web, jew paġna ta' dan id-dokument.",
+            "Il-ħoloq ta' dokument jaħdmu waqt li taqrah: klikk fuq ħolqa għal paġna jeħdok hemm; indirizz tal-web jew tal-email jingħadda lill-browser jew lill-programm tal-email tiegħek."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Sinjalibri",
+          "body": [
+            "Daħħal → Sinjalibru ġdid: ikklikkja l-post fejn għandu jwassal u agħtih titlu. Daħħal → Sinjalibri jiftaħ il-lista, fejn sinjalibru jista' jinbidillu isem jew jitneħħa. Il-bidliet jinkitbu meta tissejvja."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Fajls mehmużin",
+          "body": [
+            "Daħħal → Ehmeż fajl: agħżel fajl u kklikkja fejn imur il-klipp tiegħu. Tista' tagħtih isem u awtur, tibdel il-kulur tal-klipp, tibdillu d-daqs u ddawru. Il-fajl jinżamm ġewwa l-PDF meta tissejvja.",
+            "Daħħal → Fajls mehmużin juri x'qed iġorr id-dokument; kull fajl jista' jiġi ssejvjat fuq id-diska jew jitneħħa. Klikk fuq klipp jiftaħ l-istess lista."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formoli",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Mili ta' formola",
+          "body": [
+            "Daħħal → Imla l-formola juri l-oqsma tad-dokument: ikteb fl-oqsma tat-test, immarka l-kaxxi, agħżel mil-listi. It-tweġibiet jinkitbu fil-fajl meta tissejvja."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Ħolqien ta' formola",
+          "body": [
+            "Il-menu Daħħal iżid oqsma ma' kwalunkwe dokument: qasam tat-test, kaxxa tal-immarkar, buttuni tal-għażla (li minnhom tista' tintgħażel waħda biss), lista ta' għażliet, u qasam tal-firma li jitħalla vojt għal min se jiffirma.",
+            "Kaxkar fuq il-paġna fejn imur il-qasam. Bħal marki oħra, qasam jista' jiċċaqlaq u jinbidillu d-daqs sakemm tissejvja; wara dan isir parti mill-formola."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Iffirmar",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Żieda ta' firma li tiddisinja",
+          "body": [
+            "Iffirma → Żid firma tpoġġi l-istampa ta' firma fuq il-paġna: iddisinjata hawn b'pinna li tagħżel, miktuba b'tipa, jew meħuda minn stampa (b'\"Żomm biss il-linji tal-pinna\" għal ritratt ta' folja ffirmata). Id-data tista' tinkiteb taħtha.",
+            "Kaxkar fuq il-paġna fejn tmur. Il-firem li użajt jinżammu fuq dan il-kompjuter, biex terġa' tużahom.",
+            {
+              "note": "Din hija stampa: ma tgħid xejn ċert dwar min poġġiha hemm. Firma li tipprova min iffirma, u li ma nbidel xejn minn dakinhar, issir b'ċertifikat."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Iffirmar b'ċertifikat",
+          "body": [
+            "Iffirma → Iffirma b'ċertifikat tagħmel firma diġitali: tgħid min iffirma u tissiġilla d-dokument, b'hekk kull bidla ta' wara tidher.",
+            {
+              "steps": [
+                "Kaxkar fuq il-paġna ż-żona fejn tidher il-firma (l-ewwel tieqa tgħidlek hekk; tista' tintefa). Biex tiffirma mingħajr xejn fuq il-paġni, minflok agħżel \"Iffirma mingħajr ma turiha fuq paġna\".",
+                "Agħżel iċ-ċertifikat: wieħed tal-kompjuter (karta jew ċavetta tas-sigurtà tidher fosthom hekk kif tkun fil-qarrej tagħha), jew fajl .pfx / .p12 bil-password tiegħu. \"Kompli\".",
+                "Agħżel id-dehra tal-firma. Taħt \"Raġuni u post\" tista' tikteb għaliex u fejn qed tiffirma: jidħlu fil-firma, u fuq il-paġna jekk id-dehra turihom. Immarka \"Agħlaq id-dokument wara l-iffirmar\" jekk ħadd m'għandu jiffirmah jew jibdlu warajk. Ħalli \"Żid ħin fdat (timbru tal-ħin)\" immarkat biex awtorità tikkonferma meta ffirmajt.",
+                "\"Iffirma\", imbagħad agħżel fejn jiġi ssejvjat il-fajl iffirmat. F'dan il-punt, ċavetta tas-sigurtà titlob il-PIN tagħha."
+              ]
+            },
+            "Il-fajl iffirmat jinfetaħ minflok id-dokument. Il-programm qatt ma jżomm password jew PIN.",
+            {
+              "note": "Firma kwalifikata hija waħda magħmula b'dan il-mod b'ċertifikat kwalifikat, fuq il-karta jew iċ-ċavetta tas-sigurtà tiegħu. L-iffirmar isir fuq il-kompjuter tiegħek; it-timbru tal-ħin u l-verifika taċ-ċertifikat tiegħek biss imorru fuq l-internet, u jibagħtu marki tas-swaba' diġitali u n-numru tas-serje taċ-ċertifikat, qatt id-dokument."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Dehriet tal-firma",
+          "body": [
+            "Dehra tgħid kif tidher firma b'ċertifikat fuq il-paġna. Żomm diversi taħt ismijiet tiegħek: waħda biex tiffirma għal kumpanija, oħra biex tiffirma f'ismek.",
+            {
+              "points": [
+                "Stampa: xejn, minn fajl (timbru, firma skenjata) jew iddisinjata hawn.",
+                "Test muri: isem, data, raġuni, post, kull wieħed bit-tikketta tiegħu jew mingħajrha.",
+                "Linji tiegħek taħt l-isem, bħal kariga u kumpanija.",
+                "\"Test standard\" huwa dejjem hemm: min iffirma u meta."
+              ]
+            },
+            "Fit-tieqa tal-iffirmar: \"Ġdida…\", \"Editja…\", \"Ħassar\". L-aħħar waħda użata tiġi offruta l-ewwel. Id-dehriet jinżammu fuq dan il-kompjuter."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Diversi firem, u l-għeluq",
+          "body": [
+            "Dokument jista' jiġi ffirmat minn diversi persuni, wieħed wara l-ieħor. Iftaħ il-fajl iffirmat u ffirmah mingħajr ma tbiddel xejn: il-firma tiegħek tiżdied fl-aħħar tal-fajl u dawk ta' qabel jibqgħu validi.",
+            "\"Agħlaq id-dokument wara l-iffirmar\" (mitfi sakemm ma timmarkahx) jagħlaq id-dokument: ħadd ma jista' jiffirma warajk u ma jista' jinbidel xejn aktar. Ma jistax jitreġġa' lura.",
+            {
+              "note": "Jekk tibdel dokument iffirmat qabel ma terġa' tiffirmah, irid jinkiteb mill-ġdid u l-firem ta' qabel jitħallew barra. It-tieqa tal-iffirmar twissik: biex iżżommhom, erġa' iftaħ il-fajl u ffirma mingħajr ma tbiddel xejn."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Timbri tal-ħin",
+          "body": [
+            "Timbru tal-ħin huwa l-kelma ffirmata ta' awtorità tat-timbri tal-ħin dwar meta kienet teżisti xi ħaġa. Inkella, il-ħin f'firma jiġi mill-arloġġ tal-kompjuter ta' min jiffirma, li kulħadd jista' jibdlu; timbru tal-ħin jipprova l-mument, u jżomm il-firma ppruvabbli anke wara li jiskadi ċ-ċertifikat (PAdES B-T).",
+            {
+              "points": [
+                "Il-firem jieħdu wieħed meta \"Żid ħin fdat (timbru tal-ħin)\" ikun immarkat fit-tieqa tal-iffirmar. Issettjar → Firem jiddeċiedi jekk jibdiex immarkat, hawn u fil-proċessar f'lott.",
+                "Iffirma → Żid timbru tal-ħin jagħti lid-dokument kollu timbru tal-ħin tiegħu stess, mingħajr ċertifikat: jipprova li d-dokument kien jeżisti, eżatt kif inhu, f'dak il-mument. Jiġi ssejvjat bħala fajl ġdid; il-firem li għandu l-fajl jibqgħu validi."
+              ]
+            },
+            "L-awtorità hija dik ta' DigiCert (http://timestamp.digicert.com), b'xejn u fdata minn Adobe Reader u Windows; tista' tissettja oħra f'Issettjar → Firem. Tirċievi biss marka tas-swaba' diġitali (SHA-256), qatt id-dokument, u hemm bżonn ta' konnessjoni mal-internet. Meta firma tieħu timbru tal-ħin, l-emittent taċ-ċertifikat tiegħek jiġi mistoqsi wkoll jekk iċ-ċertifikat għadux validu, u t-tweġiba tiegħu tinżamm fil-firma (validazzjoni fit-tul): b'hekk Adobe Reader ikun jista' juri l-firma bħala valida, issa u wara li jiskadi ċ-ċertifikat.",
+            {
+              "note": "Jekk l-awtorità ma tistax tintlaħaq, xejn ma jiġi ffirmat jew miktub: erġa' pprova, jew neħħi l-marka mit-timbru tal-ħin biex tiffirma mingħajru."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Verifika tal-firem",
+          "body": [
+            "Iffirma → Ivverifika l-firem jelenka kull firma b'ċertifikat tal-fajl: min iffirma, min ħareġ iċ-ċertifikat, meta, ir-raġuni u l-post, u",
+            {
+              "points": [
+                "jekk id-dokument baqax ma nbidilx minn dik il-firma (firma oħra miżjuda wara ma titqiesx bidla);",
+                "jekk il-firma tagħlaqx id-dokument;",
+                "jekk dan il-kompjuter jafdax l-awtorità wara ċ-ċertifikat, u jekk iċ-ċertifikat huwiex validu llum;",
+                "il-ħin ikkonfermat mit-timbru tal-ħin tagħha, u minn liema awtorità, meta jkollha wieħed. Timbru tal-ħin tad-dokument kollu jiġi elenkat ukoll, bil-verifika tiegħu stess."
+              ]
+            },
+            "Il-verifika hija tal-fajl kif ġie ssejvjat l-aħħar darba u ssir fuq dan il-kompjuter, mingħajr ma jmur fuq l-internet. Klikk fuq firma f’paġna jiftaħ din il-lista fuq dik il-firma. Taħt kull firma, “Uri ċ-ċertifikat” jiftaħ it-tieqa tal-Windows taċ-ċertifikat (il-katina tiegħu u kull dettall; minn hemm, “Installa ċ-ċertifikat” iġiegħel lil dan il-kompjuter jafda ċertifikat li tafu), u “Ivvalida” jistaqsi lill-emittent taċ-ċertifikat fuq l-internet, biss meta tagħfsu, jekk iċ-ċertifikat ġiex irtirat."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aktar għodod",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Għarfien tat-test (OCR)",
+          "body": [
+            "Aktar għodod → Agħraf it-test (OCR) jaqra l-kliem tal-paġni skenjati u jiktbu fil-paġni b'mod inviżibbli, biex wieħed ikun jista' jfittex fid-dokument u jikkopja u jesporta t-test tiegħu. Id-dehra tal-paġni ma tinbidilx.",
+            "Immarka biss il-lingwi li bihom huma miktuba l-paġni; il-paġni li diġà għandhom test jitħallew kif inhuma.",
+            {
+              "note": "Il-qari jsir mill-magna Tesseract, programm b'xejn installat għalih. Mingħajrha, it-tieqa turi l-kmand li jinstallaha fuq Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Kif iċċekken dokument",
+          "body": [
+            "Aktar għodod → Ikkompressa jissejvja d-dokument bħala fajl iżgħar billi jagħti lir-ritratti u lill-iskenjar tiegħu inqas pixels. Hemm tliet livelli; it-test u d-disinji jibqgħu ċari kif inhuma. Dokument bi ftit stampi ma jiċċekkenx wisq."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Tqabbil ta' żewġ dokumenti",
+          "body": [
+            "Aktar għodod → Qabbel id-dokumenti: agħżel PDF ieħor. It-tnejn jidhru ħdejn xulxin, paġna b'paġna, bil-paġni li t-test tagħhom huwa differenti mmarkati u bil-linji li għandu kull wieħed biss elenkati."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Proċessar f'lott: ħafna fajls f'daqqa",
+          "body": [
+            "Aktar għodod → Proċessar f’lott jagħmel l-istess affarijiet lil ħafna fajls, f’tab għalih. Kull riżultat huwa fajl ġdid. Jekk ir-riżultati jieħdu post fajls li diġà jinsabu fil-folder (il-fajls tiegħek stess, meta jmorru fil-folder tagħhom mingħajr ma jiżdied xejn mal-ismijiet tagħhom), l-ewwel tiġi mistoqsi jekk tridx tissostitwihom, taqbiżhom jew tikkanċella. Fajl jiġi sostitwit biss meta r-riżultat tiegħu jkun lest; fajl li jkun miftuħ (f’tab hawn jew fi programm ieħor) jitħalla kif inhu u jiġi mmarkat bħala mhux magħmul.",
+            {
+              "steps": [
+                "Fuq ix-xellug, żid il-fajls: \"Żid fajls…\", \"Żid folder…\" (bil-folders ta' taħtu), jew waqqagħhom fih.",
+                "Fuq il-lemin, immarka x'għandu jsir. Kull fajl isir PDF f'kull każ; barra minn hekk tista' ddawwar il-paġni, tagħraf it-test, iżżid intestatura u qiegħ il-paġna, filigrana jew numri tal-paġni, iċċekken il-fajls, tiffirmahom b'ċertifikat, jew tiktibhom f'format ieħor. In-numri juru l-ordni.",
+                "Meta l-fajls kollha jiġu minn folder wieħed, dak il-folder jintgħażel għalik sakemm tagħżel ieħor; inkella jkun l-aħħar folder li għażilt.",
+                "\"Ibda\". Kull fajl juri kif mar; il-ħidma tista' titwaqqaf bejn fajl u ieħor."
+              ]
+            },
+            {
+              "points": [
+                "Riċetti: \"Issejvja bħala riċetta…\" iżżomm dak kollu li għażilt (ħlief il-fajls u kwalunkwe password) taħt isem, biex terġa' tissettjah b'għażla waħda.",
+                "\"Żomm il-folders tal-fajls fir-riżultati\" jerġa' jibni l-folders ta' folder miżjud.",
+                "\"Ikteb rapport tal-ħidma\" iħalli fajl tat-test ħdejn ir-riżultati li jgħid x'inkiteb u x'ma rnexxiex.",
+                "PDF li jiġi ffirmat biss iżomm il-firem li għandu; jekk issir xi ħaġa oħra fuqu fl-istess ħidma, jinkiteb mill-ġdid u l-firem jitħallew barra."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Issettjar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "L-issettjar ta' PDF Organizer",
+          "body": [
+            "Fajl → Issettjar (jew Issettjar fl-istrixxa tal-ġenb, imbagħad PDF Organizer). Kull issettjar jista' jitreġġa' lura waħdu, jew kollha f'daqqa.",
+            {
+              "points": [
+                "Meta jinfetaħ dokument: kemm jidher kbir dokument meta jinfetaħ, skrolljar jew paġna waħda kull darba, il-miniaturi murija jew le.",
+                "Unitajiet, rigi u grilja: l-unità (millimetri, pulzieri, punti), ir-rigi, il-grilja u d-distanza bejn il-linji tagħha.",
+                "Ipprintjar: il-karta, l-orjentazzjoni u l-iskala li biha tibda t-tieqa tal-ipprintjar.",
+                "Strixxa tal-għodod rapida: liema buttuni għandha l-istrixxa ta' fuq il-paġni.",
+                "Ismijiet tad-dokumenti l-ġodda: il-mudelli għall-paġni estratti, għad-dokumenti l-ġodda u għall-PDF li fih il-proċessar f'lott jiġbor ħafna fajls.",
+                "Firem: jekk \"Issejvja\" jistaqsix qabel ma jikteb fuq fajl iffirmat.",
+                "Kombinazzjonijiet tat-tasti: ikklikkja t-tasti ta' kmand, imbagħad agħfas il-ġodda."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Dwar PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Dwar PDF Organizer",
+          "body": [
+            "PDF Organizer hija l-app tal-PDF ta' Syntelab Creative: taqra dokumenti PDF, torganizza u tgħaqqad il-paġni tagħhom, tikteb u tiddisinja fuqhom, timla u toħloq formoli, tiffirma b'ċertifikat u tivverifika l-firem, u tagħmel l-istess affarijiet lil ħafna fajls f'daqqa.",
+            "Hija ġdida, u xi wħud minn dak li tagħmel huwa l-ewwel pass. Fejn ma tkunx biżżejjed għad-dokumenti tiegħek, għidilna permezz ta' Għajnuna → Feedback: hekk inkunu nafu fuq xiex għandna naħdmu."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "B'xiex inbniet PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Qari, disinn u kitba tal-PDF: MuPDF.",
+                "Għarfien tat-test (OCR): Tesseract, meta jkun installat fuq il-kompjuter.",
+                "Ftuħ ta' dokumenti tal-uffiċċju: Word, Excel u PowerPoint, jew LibreOffice, skont liema jkun installat.",
+                "Sejvjar ta' paġna tal-web bħala PDF: il-browser installat fuq il-kompjuter.",
+                "Iffirmar b'ċertifikat: is-servizzi taċ-ċertifikati ta' Windows; il-firem jinkitbu kif jitlob l-istandard PAdES."
+              ]
+            },
+            "Dak li taqsam mal-bqija tal-programm jinsab taħt \"Dwar Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "X'għad ma tistax tagħmel PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Id-dokumenti tal-uffiċċju jinfetħu mis-suite tal-uffiċċju li hemm fuq il-kompjuter; mingħajr Word, Excel, PowerPoint jew LibreOffice ma jistgħux jinfetħu. Qed naħdmu fuq konvertitur tagħna: ara \"Fuq xiex qed naħdmu\".",
+                "L-għarfien tat-test jeħtieġ il-magna Tesseract, installata għaliha.",
+                "It-test tad-dokument innifsu jinbidel linja b'linja; il-paragrafi ma jerġgħux jinqassmu.",
+                "L-istampi pprintjati b'erba' linki (CMYK) ma jistgħux jinqabdu biex jiċċaqilqu.",
+                "“Ivvalida” jgħid jekk ċertifikat huwiex irtirat illum, mhux meta ġie rtirat.",
+                "L-iffirmar b'ċertifikat jaħdem fuq Windows għalissa; fuq Linux u macOS jasal f'verżjoni li jmiss."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

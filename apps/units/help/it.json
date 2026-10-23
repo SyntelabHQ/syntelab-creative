@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Conversione",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Convertitori",
+          "body": [
+            "Units converte valori tra unità di misura: un valore alla volta oppure intere tabelle di valori. Tutti i calcoli vengono eseguiti sul tuo computer.",
+            "I convertitori sono raggruppati in sei menu: Essenziali, Movimento e meccanica, Energia e potenza, Scienze, Digitale e media, e Fisica specialistica. Selezionane uno per aprirne la tabella.",
+            {
+              "points": [
+                "Un convertitore si apre nella scheda corrente. Se la tabella contiene valori, puoi scegliere prima Continua (i valori andranno persi), Apri in una nuova scheda oppure Annulla.",
+                "Impostazioni → Units → «Apri ogni convertitore in una scheda separata» apre invece ogni convertitore scelto in una nuova scheda.",
+                "File → Vai a Home torna alla pagina iniziale di Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Conversione rapida",
+          "body": [
+            "La pagina iniziale di Units, Conversione rapida, converte un valore da un’unità a un’altra. Scegli un convertitore, inserisci il valore sotto «Da» e seleziona le due unità: il risultato appare sotto «A».",
+            {
+              "points": [
+                "Ogni elenco mostra le unità più usate nel convertitore e le tue unità personalizzate; puoi cercarle. La tabella del convertitore contiene tutte le unità.",
+                "Il pulsante tra i due elenchi scambia le unità.",
+                "Aggiungi un’unità ai preferiti con il segnalibro accanto: le unità preferite compaiono per prime in entrambi gli elenchi e nel pannello delle unità della tabella.",
+                "Il pulsante accanto al risultato lo copia; × cancella il valore.",
+                "«Apri nella tabella» apre la tabella del convertitore."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Lettura e visualizzazione dei numeri",
+          "body": [
+            "Puoi digitare e incollare numeri secondo le convenzioni di paesi diversi: 1,234.56 e 1.234,56 vengono interpretati correttamente, così come gli spazi e gli apostrofi tra le migliaia e la notazione esponenziale, per esempio 1.5e-3.",
+            "Se un numero può essere interpretato in due modi (1,234 può indicare mille o uno virgola duecentotrentaquattro), viene letto secondo le convenzioni della lingua del programma; la barra sotto la tabella lo indica.",
+            "Il risultato usa il numero di cifre decimali dell’unità di destinazione, non quello digitato: 5 cm diventano 1,97 in. I valori diversi da zero mostrano sempre alcune cifre significative: 1 cm è 0,00001 km, non 0,000 km.",
+            "I valori troppo grandi o piccoli per essere letti a colpo d’occhio vengono mostrati con una potenza di dieci, come 1,6 × 10⁻³⁵. Visualizza → Valori estremi per esteso li mostra con tutti gli zeri.",
+            "Se per un’unità un valore non è definito (zero decibel non esiste per la pressione sonora), la cella mostra un trattino."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La tabella",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Righe e colonne",
+          "body": [
+            "Ogni colonna rappresenta un’unità e ogni riga un valore. Il valore inserito in una cella determina la conversione della riga: le altre colonne mostrano lo stesso valore nelle rispettive unità. La cella modificata è in grassetto.",
+            "Il testo che non è un numero viene mantenuto e mostrato in rosso; la riga non viene convertita finché non correggi il contenuto.",
+            {
+              "points": [
+                "Fai doppio clic su una cella o inizia a digitare per modificarla. Invio passa alla riga successiva, Tab alla colonna a destra; usa le frecce per spostarti. Esc annulla le modifiche alla cella.",
+                "Fai clic sull’angolo (#) per selezionare l’intera tabella, sul numero di riga per selezionare una riga o sul titolo per selezionare una colonna. Maiusc+clic seleziona un intervallo, Ctrl+clic aggiunge celle alla selezione; puoi anche trascinare.",
+                "Home e Fine passano alla prima e all’ultima colonna della riga; Ctrl+Home alla prima cella della tabella e Ctrl+Fine all’ultima. Ctrl+freccia sposta il cursore fino al bordo della tabella: prima o ultima riga, prima o ultima colonna. PagSu e PagGiù spostano la selezione di una schermata. Aggiungi Maiusc a ciascuna combinazione per estendere la selezione.",
+                "Una selezione di più celle è delimitata da un bordo esterno; la cella attiva in cui si digita resta senza ombreggiatura al suo interno.",
+                "Cancella svuota le righe selezionate.",
+                "Digitando nell’ultima riga ne viene aggiunta una. Non c’è un limite fisso al numero di righe: dipende dalla memoria disponibile sul computer (ogni riga occupa 16 byte, quindi 100 milioni di righe richiedono circa 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Colonne e pannello delle unità",
+          "body": [
+            "Il pannello accanto alla tabella elenca le unità del convertitore. In alto trovi quelle già presenti: fai clic su un’unità per rimuoverne la colonna. Sotto sono elencate tutte le altre: cercale per nome o simbolo, filtra per gruppo o per «Popolari» e fai clic su un’unità per aggiungerla come colonna.",
+            "Aggiungi un’unità ai preferiti con il segnalibro accanto: comparirà in cima all’elenco e nella Conversione rapida.",
+            {
+              "points": [
+                "Le colonne si dividono equamente la larghezza della tabella finché i titoli ci stanno; altrimenti la tabella scorre in orizzontale.",
+                "Trascina il bordo di un titolo per modificare la larghezza della colonna; fai doppio clic sul bordo per adattarla al valore più lungo. Puoi trascinare anche la colonna dei numeri di riga.",
+                "Il pulsante ⋮ di una colonna consente di spostarla a sinistra o a destra, fissarla al bordo sinistro o destro, modificarne la precisione oppure rimuoverla.",
+                "La precisione impostata per una colonna riguarda solo quella colonna. «Usa questa precisione per l’unità ovunque» applica la precisione all’unità in tutte le tabelle e nella Conversione rapida.",
+                "Il pulsante con due frecce accanto ad Annulla e Ripeti adatta le colonne alla tabella: annulla le larghezze modificate o adattate manualmente e distribuisce di nuovo le colonne in modo uniforme.",
+                "Le due sezioni superiori del pannello, le unità già presenti nella tabella e «Aggiungi unità» (ricerca e filtri), possono essere chiuse facendo clic sui rispettivi titoli per lasciare più spazio all’elenco."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Annulla, copia, incolla, importa ed esporta",
+          "body": [
+            "La barra sopra la tabella contiene gli strumenti.",
+            {
+              "points": [
+                "Annulla e Ripeti (Ctrl+Z, Ctrl+Y) annullano e ripristinano tutte le modifiche alla tabella. Incolla e Importa costituiscono un solo passaggio.",
+                "Copia (Ctrl+C) copia l’intera tabella o la selezione nel formato usato dai fogli di calcolo. «Trasposta» scambia righe e colonne.",
+                "Incolla (Ctrl+V) aggiunge le righe copiate a partire dalla cella attiva. Se la prima riga contiene i nomi delle unità, le colonne vengono abbinate a quei nomi e le unità mancanti vengono aggiunte alla tabella.",
+                "Importa sostituisce i contenuti della tabella con quelli di una cartella di lavoro Excel o di un file CSV o TSV. «Rileva automaticamente il formato» lo deduce dal file.",
+                "Esporta salva la tabella in formato Excel, CSV, TSV o JSON. Se i decimali sono separati da una virgola, il CSV usa il punto e virgola, come previsto dai fogli di calcolo. Un foglio Excel contiene al massimo 1.048.576 righe: le righe successive vengono distribuite nei fogli seguenti della stessa cartella di lavoro, con gli stessi titoli.",
+                "La gomma svuota le righe selezionate; il cestino svuota l’intera tabella."
+              ]
+            },
+            "Ogni riga contiene un solo valore. Se incolli o importi una riga con più valori, viene acquisito il primo e gli altri vengono calcolati a partire da quello.",
+            "Le operazioni di copia, incolla, importazione o esportazione possono richiedere tempo con moltissime righe. In tal caso, sopra la tabella appare un riquadro con l’avanzamento percentuale e il numero di righe, oltre al pulsante Interrompi. Se interrompi un’operazione di incolla o importazione, la tabella resta invariata; se interrompi l’esportazione, non viene creato alcun file.",
+            "Se la memoria del computer non basta per le righe, la tabella resta invariata e la barra sotto di essa indica quanta memoria serviva. Se le righe entrano in memoria ma non è possibile conservare anche la versione precedente della tabella, ti verrà chiesto se continuare senza annullamento: la modifica e quelle precedenti non potranno più essere annullate. Prima di chiedertelo, il programma elimina i passaggi di annullamento più vecchi per liberare spazio.",
+            "Opzioni tabella (ingranaggio): scegli cosa mostra il titolo di una colonna (nome e simbolo, nome o simbolo), se includere i titoli e i numeri di riga nelle copie e nelle esportazioni, «Apri questo convertitore con queste colonne» e «Reimposta la tabella»."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Convertitori speciali",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valuta",
+          "body": [
+            "Le valute non hanno un fattore di conversione fisso: il loro valore cambia nel tempo. Il convertitore legge i tassi da due servizi gratuiti mentre lo usi, e solo in quel momento.",
+            {
+              "points": [
+                "Valute nazionali: dati forniti da Exchange Rate API, https://www.exchangerate-api.com . I tassi vengono aggiornati una volta al giorno dal servizio e non sono richiesti più spesso.",
+                "Criptovalute: dati forniti da CoinGecko, https://www.coingecko.com . Vengono richiesti all’apertura del convertitore o quando torna in primo piano se i dati disponibili hanno più di 15 minuti, e quando premi Aggiorna; non vengono mai aggiornati a intervalli automatici."
+              ]
+            },
+            "Vengono richiesti solo i tassi di cambio. Non vengono inviati dati personali né gli importi convertiti.",
+            "La barra sotto la tabella e quella sotto il risultato di Conversione rapida indicano la data dei tassi. Se non c’è connessione, vengono usati gli ultimi tassi disponibili, segnalati come non aggiornati. Se i servizi non forniscono il tasso di una valuta, viene mostrato un trattino.",
+            "Impostazioni → Units → Valuta: puoi disattivare «Leggi i tassi dalla rete» per usare gli ultimi tassi salvati dal programma. «Mostra i nomi delle fonti accanto ai tassi» mostra o nasconde i nomi dei due servizi nella barra.",
+            "I tassi sono forniti a scopo informativo. Non usarli come riferimento per una transazione."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Basi numeriche",
+          "body": [
+            "Le unità di questo convertitore sono diversi modi di rappresentare un numero intero: basi da 2 a 64, numeri romani, base 60 con i due punti (1:30:15), codice binario decimale e codice Gray. I valori sono testo: digita FF nella colonna esadecimale e le altre mostreranno 255, 11111111 e così via.",
+            "I numeri romani vanno da I a MMMCMXCIX (da 1 a 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Unità con conversione non lineare",
+          "body": [
+            "La maggior parte delle unità si converte applicando un fattore. Alcune seguono invece definizioni specifiche: le temperature con i relativi offset; il consumo di carburante (litri per 100 km rispetto a miglia per gallone); la conversione tra lunghezza d’onda e frequenza; tra conduttanza e resistenza; tra gradi Baumé, API, Brix e Plato e densità; tra decibel, pressione sonora e intensità; tra pendenza percentuale e angolo.",
+            "La temperatura e la differenza di temperatura sono grandezze diverse: 100 °C corrispondono a 212 °F, ma una differenza di 100 °C equivale a una differenza di 180 °F. Le unità del gruppo «Differenze (Δ)» si convertono tra loro; tra queste e le scale di temperatura viene mostrato un trattino."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Unità personalizzate",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Creazione di un’unità",
+          "body": [
+            "Puoi aggiungere unità personalizzate a qualsiasi convertitore. Nel pannello delle unità scegli «Nuova unità», inserisci un nome e un simbolo e specifica l’equivalenza con un’unità esistente.",
+            {
+              "points": [
+                "Un fattore: «1 passo = 0.75 m». Per una scala che non parte da zero, specifica anche il valore da aggiungere dopo la moltiplicazione.",
+                "Una formula: definisci come convertire il valore nell’altra unità, usando x per indicarlo, e inserisci la formula inversa. Per esempio: x * 9 / 5 + 32 e (x - 32) * 5 / 9."
+              ]
+            },
+            "L’espressione viene verificata mentre la digiti e il risultato della conversione nell’unità personalizzata viene mostrato prima che tu la salvi. Le formule possono usare + − × ÷ ^, parentesi, x, pi, e e le funzioni sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos e atan. La formula viene valutata, non eseguita come programma.",
+            "Le tue unità sono elencate sotto «Mie» nel pannello; da lì puoi modificarle o rimuoverle. Puoi definire un’unità usando un’altra unità personalizzata; se elimini un’unità, vengono rimosse anche quelle che dipendono da essa.",
+            "Impostazioni → Units elenca le tue unità per ogni convertitore e permette di esportarle o importarle come testo, da conservare o trasferire su un altro computer."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Impostazioni",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Impostazioni di Units",
+          "body": [
+            "File → Apri impostazioni apre le impostazioni di Units; puoi raggiungerle anche dalle opzioni della tabella (l’ingranaggio nella barra).",
+            {
+              "points": [
+                "Scegli se aprire ogni convertitore in una scheda propria o nella scheda corrente.",
+                "Attiva Valori estremi per esteso e i numeri di riga, e scegli cosa scrivere tra le migliaia (10000,000, 10 000,000 o 10.000,000; niente, se non scegli altrimenti).",
+                "Valuta: scegli se leggere i tassi dalla rete e se mostrare accanto a essi i nomi dei servizi.",
+                "Precisione delle unità: scegli un convertitore (o «Unità modificate»), cerca un’unità e regola le cifre decimali con − e +; la freccia ripristina la precisione predefinita dell’unità. «Usa questa precisione per l’unità ovunque» nel menu della colonna applica la stessa precisione in ogni punto.",
+                "Unità iniziali della tabella: gestisci i convertitori per cui hai scelto le colonne iniziali e ripristina le colonne predefinite.",
+                "Le tue unità personalizzate."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Informazioni su Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Informazioni su Units",
+          "body": [
+            "Units è l’app di Syntelab Creative per la conversione delle unità: offre 38 convertitori e oltre 1.500 unità, dalla lunghezza e temperatura alle valute e alle basi numeriche. Inserisci un valore una volta per visualizzarlo in tutte le unità desiderate, in una tabella con una riga o milioni di righe.",
+            "I calcoli sono eseguiti con precisione esatta, usando frazioni, e vengono arrotondati solo quando il risultato viene visualizzato. Tutto avviene su questo computer; solo i tassi di cambio vengono letti dalla rete, e questa opzione si può disattivare.",
+            "L’app è nuova. Se non soddisfa le tue esigenze, faccelo sapere tramite Aiuto → Feedback: così possiamo capire su cosa lavorare."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Numero massimo di righe nella tabella: misurazioni",
+          "body": [
+            "La tabella non ha un limite fisso di righe: può crescere finché lo consente la memoria del computer. Ogni riga occupa 16 byte, quindi 100 milioni di righe richiedono circa 1,5 GB. Quando la memoria si esaurisce, la tabella resta invariata e il programma indica quanta memoria serviva.",
+            "Le misurazioni sono state eseguite con 50.000.000 di righe, ciascuna contenente un numero in un’unica colonna, usando la build ottimizzata del programma:",
+            {
+              "points": [
+                "Incollare 50.000.000 di righe: circa 7 secondi.",
+                "Importarle da un file CSV: 12 secondi.",
+                "Esportarle in CSV, convertendo una seconda colonna: circa 3,5 minuti.",
+                "Esportarle in Excel su 48 fogli: 4,3 minuti."
+              ]
+            },
+            "L’esportazione richiede più tempo dell’importazione perché ogni cella scritta viene prima convertita con precisione esatta.",
+            {
+              "note": "Computer usato per la prova: AMD Ryzen 9 9950X3D (16 core, 32 thread), 64 GB di memoria, Windows 11 Pro. Ottobre 2026. Su un altro computer i tempi cambiano, ma la dimensione di una riga resta invariata."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Tecnologie usate da Units",
+          "body": [
+            {
+              "points": [
+                "Calcoli esatti: librerie num di Rust (frazioni di numeri interi di qualsiasi dimensione).",
+                "Unità, fattori e gruppi: file di dati del programma, uno per ogni convertitore.",
+                "Lettura di cartelle di lavoro Excel e OpenDocument: calamine. Scrittura di cartelle di lavoro Excel: rust_xlsxwriter.",
+                "Appunti di sistema per copiare e incollare moltissime righe: arboard.",
+                "Tassi di cambio: ExchangeRate-API e CoinGecko (consulta «Valuta»)."
+              ]
+            },
+            "Le tecnologie condivise con il resto del programma sono descritte in «Informazioni su Syntelab Creative»."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Limiti attuali di Units",
+          "body": [
+            {
+              "points": [
+                "Ogni riga contiene un solo valore: se ne incolli una con più valori, viene acquisito il primo.",
+                "L’esportazione di moltissime righe è lenta (consulta le misurazioni).",
+                "Prima di essere incollato, il contenuto copiato negli appunti viene conservato in memoria come un unico testo.",
+                "La frequenza di aggiornamento dei tassi dipende dai due servizi: quelli delle valute nazionali vengono aggiornati una volta al giorno."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

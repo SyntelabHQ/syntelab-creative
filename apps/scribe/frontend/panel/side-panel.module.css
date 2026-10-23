@@ -1,0 +1,70 @@
+/* The panel beside the text: in the letters of the program, whatever the text is written in. */
+.panel {
+  display: flex;
+  /* As wide as it was dragged to, less when the window is too narrow for it and the text together. */
+  flex: 0 1 auto;
+  min-width: 200px;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  padding: 10px 12px 12px;
+  border-inline-start: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  font-family: var(--sc-font);
+  font-size: 14px;
+  text-align: start;
+}
+
+/* The parts of the panel, and the way to fold it away. */
+.top {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 4px;
+}
+
+/* What the panel shows: one of a few, side by side. */
+.parts {
+  display: grid;
+  flex: 1;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  gap: 4px;
+  padding: 3px;
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface-2);
+}
+
+.part {
+  min-height: 32px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.part:hover {
+  color: var(--sc-text);
+}
+
+.part[aria-selected='true'] {
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  box-shadow: var(--sc-shadow-s);
+}
+
+/* The panel folded away: a strip at the edge, with the way back to each of its parts. */
+.rail {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 40px;
+  padding-block: 8px;
+  border-inline-start: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+}

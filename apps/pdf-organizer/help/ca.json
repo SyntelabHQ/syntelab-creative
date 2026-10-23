@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Obrir i llegir",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Obrir un document",
+          "body": [
+            "Fitxer → Obrir (Ctrl+O) obre un PDF en una pestanya pròpia. \"Obre diversos fitxers a la vegada\" obre cada fitxer triat en la seva pestanya.",
+            "També s’obren fitxers que no són PDF, com a pàgines: imatges (PNG, JPEG, TIFF, WebP i moltes més), fitxers de text i web, llibres electrònics, XPS i documents d’oficina. Aquest tipus de document encara no s’ha desat enlloc: \"Desar\" preguntarà on.",
+            {
+              "note": "Els documents d’oficina (Word, Excel, PowerPoint, OpenDocument) són convertits per Word, Excel o PowerPoint, o per LibreOffice, segons quin hi hagi a l’ordinador. Sense cap d’ells, no es poden obrir."
+            },
+            "Els fitxers arrossegats a una pestanya buida es reuneixen en un arxivador; si s’arrosseguen sobre un document, les seves pàgines s’hi afegeixen.",
+            "A Windows, PDF Organizer pot ser l’aplicació que obre els fitxers PDF quan hi fas doble clic: a la seva pàgina d’inici, \"Estableix per defecte\" obre la configuració de Windows, on tries Syntelab Creative per als fitxers PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Visualització de les pàgines",
+          "body": [
+            "El menú Vista decideix com es mostra el document; res del que s'hi triï no canvia el fitxer.",
+            {
+              "points": [
+                "Zoom: ampliar, reduir, mida real, ajustar a la pàgina, ajustar a l'amplada, ajustar a l'alçada. La tecla Ctrl i la roda del ratolí també fan el zoom.",
+                "Visualització de pàgines: una pàgina o dues l'una al costat de l'altra, amb o sense pàgina de portada, i desplaçament per totes les pàgines com una franja llarga.",
+                "Guies: regles i una quadrícula, amb la unitat triada a Configuració.",
+                "\"Mostrar miniatures\": les pàgines petites al costat. Fes clic en una per anar-hi; els marcadors del document són al mateix panell.",
+                "El \"Mode lectura\" oculta les eines; el \"Mode pantalla completa\" oculta tot excepte la pàgina. Escape surt de tots dos."
+              ]
+            },
+            "La franja superior a les pàgines (la barra d'eines ràpida) conté el número de pàgina, el zoom i els botons que has triat a Configuració."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Cerca de text",
+          "body": [
+            "Edita → Cercar al document (Ctrl+F): escriu una paraula o una frase; els llocs on s'ha trobat queden marcats a les pàgines, i les fletxes permeten anar d'un a l'altre.",
+            {
+              "note": "Un document escanejat són imatges de pàgines i no té text per cercar fins que el seu text sigui reconegut: consulta \"Reconeixement de text (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Propietats del document",
+          "body": [
+            "Fitxer → Propietats del document mostra què diu el document sobre si mateix: títol, autor, les dates de creació i modificació, el nombre de pàgines i la mida del fitxer."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Desar, imprimir i enviar",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Desar i Desar com",
+          "body": [
+            "Res del que facis no canvia el fitxer al disc fins que no el desis. Fins aleshores, cada pas es pot desfer (Ctrl+Z) i tornar a fer (Ctrl+Y).",
+            {
+              "points": [
+                "Desar (Ctrl+S) escriu el document sobre el seu fitxer.",
+                "Desar com (Ctrl+Shift+S) l'escriu en un fitxer nou, que després pren el lloc de la pestanya; el fitxer antic es manté tal com era."
+              ]
+            },
+            "Si un altre programa té el fitxer obert, no es pot sobrescriure: el programa ho indica i manté els teus canvis per desar-los amb un altre nom.",
+            {
+              "note": "Desar un document modificat sobre un fitxer signat amb un certificat elimina les seves signatures. El programa ho pregunta primer i ofereix \"Desar com a fitxer nou\"; aquesta pregunta es pot desactivar a Configuració → Signatures."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Crear un PDF",
+          "body": [
+            "Fitxer → Crea un PDF crea un document nou:",
+            {
+              "points": [
+                "a partir d'un fitxer, o de diversos: combinats en un sol PDF, o un PDF per a cadascun;",
+                "a partir d'una pàgina web, a l'adreça que escriguis (la pàgina es desa amb el navegador instal·lat a l'ordinador);",
+                "a partir del que hi hagi al porta-retalls;",
+                "a partir de pàgines buides de la mida que triïs."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Exportar a un altre format",
+          "body": [
+            "Fitxer → Exportar escriu el document en un altre format: text de Word o OpenDocument, text pla, una pàgina web, XML, imatges de les pàgines (PNG, JPEG, TIFF, SVG) o PostScript. Per a les imatges, pots triar la resolució.",
+            "El document en si segueix sent un PDF; l'exportació és un fitxer nou.",
+            {
+              "note": "El text només es pot exportar on el document té text. Reconeix primer el text d'un escaneig."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Imprimir",
+          "body": [
+            "Fitxer → Imprimir (Ctrl+P) imprimeix el document tal com està organitzat ara, amb el que hi hagis dibuixat. Tria les pàgines, el paper, si els fulls han d'estar en vertical o horitzontal, i si les pàgines s'han d'ajustar al full o imprimir a la seva mida real; després, la finestra d'impressió del sistema demanarà la impressora.",
+            "El paper, l'orientació i l'escalat amb els quals comença la finestra d'impressió estan configurats a Configuració → Impressió."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Compartir",
+          "body": [
+            "Fitxer → Compartir envia el document a la finestra de \"Compartir\" del sistema: correu electrònic, un dispositiu proper i altres aplicacions. El document es comparteix tal com està ara, amb els canvis no desats."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organitzar pàgines",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "La vista d'Organitzar",
+          "body": [
+            "Organitzar → Organitzar pàgines mostra cada pàgina en una quadrícula. Res canvia al disc fins que no desis.",
+            {
+              "points": [
+                "Seleccionar: fes clic a una pàgina; Ctrl+clic n’afegeix una, Shift+clic selecciona un interval. \"Seleccionar totes les pàgines\", \"No seleccionar cap\", \"Seleccionar pàgines senars\" i \"Seleccionar pàgines parells\" estan al menú.",
+                "Moure: arrossega les pàgines seleccionades al seu nou lloc, o utilitza \"Moure a l’esquerra\" i \"Moure a la dreta\".",
+                "Girar: \"Seleccionades: girar a l’esquerra\" i \"Seleccionades: girar a la dreta\" giren les pàgines seleccionades; \"Totes les pàgines: girar a l’esquerra\" i \"Totes les pàgines: girar a la dreta\" giren totes les pàgines.",
+                "Eliminar: la tecla Supr, o \"Eliminar pàgines\". Un document manté almenys una pàgina.",
+                "Copiar, retallar i enganxar (Ctrl+C, Ctrl+X, Ctrl+V): les pàgines es poden enganxar al mateix document o en un altre obert al programa.",
+                "Mida: el control lliscant de la part superior fa les pàgines més grans o més petites; també ho fan Ctrl + roda del ratolí sobre les pàgines, i Augmentar el zoom i Reduir el zoom (Ctrl+= i Ctrl+-). La mida es recorda."
+              ]
+            },
+            "Les mateixes ordres funcionen sense la quadrícula, a la pàgina visible."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Extreure pàgines i dividir un document",
+          "body": [
+            "Organitzar → Extreure pàgines treu les pàgines seleccionades com un document nou en la seva pròpia pestanya, encara no desat. També pots fer que cada pàgina s'escrigui com un fitxer independent i triar si les pàgines s'han d'eliminar d'aquest document.",
+            "Organitzar → Dividir document escriu el document com a diversos fitxers més petits; aquest document es manté tal com és.",
+            "Els noms dels nous documents segueixen els patrons de Configuració → Noms dels documents nous.",
+            {
+              "note": "Les signatures fetes amb un certificat no es traslladen als documents extrets o dividits: una signatura només és vàlida per al fitxer on es va realitzar."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Inserir i substituir pàgines",
+          "body": [
+            {
+              "points": [
+                "Organitzar → Inserir pàgines afegeix les pàgines d'un altre fitxer (PDF, imatge, text, document d'oficina) després de la pàgina seleccionada, o al final.",
+                "Organitzar → Substituir pàgines posa les pàgines d'un altre fitxer en lloc de les seleccionades.",
+                "Inserir → Pàgina en blanc afegeix una pàgina buida de la mida de la pàgina adjacent."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Escapçar i redimensionar pàgines",
+          "body": [
+            "Edita → Escapçar pàgines retalla les vores de les pàgines, amb marges que escrius o arrossegues. No s'elimina res del fitxer: les pàgines només mostren menys contingut.",
+            "Edita → Redimensionar pàgines posa les pàgines en una altra mida de full (A4, Letter i altres). El contingut es pot escalar per ajustar-lo o mantenir la seva mida, i situar-lo en un dels nou llocs del nou full.",
+            "Totes dues ordres pregunten quines pàgines: totes, les seleccionades, un interval, les senars o les parells."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Combinar fitxers",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "L'arxivador",
+          "body": [
+            "Combinar → Nou arxivador obre un lloc per agrupar fitxers i escriure’ls com un únic PDF.",
+            {
+              "steps": [
+                "Afegeix fitxers amb \"Afegeix fitxers\", o arrossega’ls sobre l’arxivador. Es poden barrejar PDFs, imatges, text i documents d’oficina.",
+                "Arrossega les targetes en l’ordre que vulguis, o utilitza les fletxes de cada targeta.",
+                "Obre una targeta per triar quines de les seves pàgines s’inclouen.",
+                "\"Combinar fitxers\" els escriu, en ordre, com un nou document en la seva pròpia pestanya."
+              ]
+            },
+            "Els fitxers en si no es modifiquen.",
+            "El control lliscant de la part superior fa les pàgines de les targetes més grans o més petites; també ho fan Ctrl + roda del ratolí, i Augmentar el zoom i Reduir el zoom (Ctrl+= i Ctrl+-). La mida es recorda."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Escriure i dibuixar a les pàgines",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Les eines",
+          "body": [
+            "Les eines de dibuix s'obren com un panell al costat de la pàgina, com una quadrícula de botons o com una llista amb noms (Configuració ho decideix). Amb una eina seleccionada, arrossega o fes clic a la pàgina; Escape desactiva l'eina.",
+            {
+              "points": [
+                "Text: fes clic i escriu. El tipus de lletra, la mida, el color, la negreta, la cursiva i l'alineació estan al panell.",
+                "Imatge: tria una imatge, després arrossega on va i quina mida té.",
+                "Formes: rectangle, el·lipse, línia, fletxa, marca de verificació, creu, punt.",
+                "Ressaltat: arrossega per sobre del que s'hagi de destacar; el que hi ha a sota es manté legible."
+              ]
+            },
+            "Amb \"Seleccionar, moure i redimensionar\" es pot tornar a seleccionar una marca: arrossega-la, estira les cantonades, gira-la amb el seu controlador, canvia els colors al panell o elimina-la amb la tecla Supr. Les marques es poden copiar i enganxar, també a altres pàgines.",
+            "Tot el que s'ha dibuixat s'escriu al fitxer quan desis."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Canviar el text i les imatges del document",
+          "body": [
+            "L'eina \"Edita el text i les imatges del document\" ressalta el que la pàgina mateixa conté. Fes clic en una línia de text per reescriure-la, o en una imatge per moure-la, redimensionar-la, girar-la o eliminar-la.",
+            {
+              "note": "Això canvia una línia o una imatge a la vegada. Els paràgrafs no es reorganitzen quan una línia s'allarga, i una imatge que estigui sobre una altra es selecciona juntament amb ella. Per a canvis importants, edita el document amb el programa on s'ha escrit."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Censurar contingut",
+          "body": [
+            "Més eines → Censurar elimina definitivament allò que no s'hagi de llegir: arrossega un quadre negre per sobre, a qualsevol pàgina. Quan desis, el text i les imatges sota el quadre s'eliminen del fitxer, no només es cobreixen.",
+            {
+              "note": "Desa el document censurat amb un nom nou i conserva l'original en un lloc segur: allò que s'ha censurat no es pot recuperar."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Marca d'aigua",
+          "body": [
+            "Edita → Marca d'aigua escriu paraules o posa una imatge a les pàgines que triis: recta o inclinada, en qualsevol dels nou llocs, amb la mida i la transparència que configuris. En cada pàgina passa a ser una marca com qualsevol altra i encara es pot moure o eliminar."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Números de pàgina, capçalera i peu de pàgina, números de Bates",
+          "body": [
+            {
+              "points": [
+                "Edita → Números de pàgina: el format (1, 1 / 12, Pàgina 1 i altres), el lloc i quines pàgines n'han de tenir.",
+                "Inserir → Capçalera i peu de pàgina: text en qualsevol dels sis llocs. En el text, {page} representa el número de la pàgina, {pages} el número total de pàgines, {date} la data d'avui i {file} el nom del document.",
+                "Inserir → Numeració Bates: números consecutius amb una paraula abans o després (ABC000123), com s'utilitza per als documents d'un cas."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Enllaços, marcadors i fitxers adjunts",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Enllaços",
+          "body": [
+            "Inserir → Enllaç: arrossega sobre el lloc on s'ha de fer clic i després indica on condueix: una adreça web o una pàgina d'aquest document.",
+            "Els enllaços d'un document funcionen mentre el llegeixes: un clic en un enllaç a una pàgina et hi porta; una adreça web o de correu es passa al teu navegador o programa de correu."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Marcadors",
+          "body": [
+            "Inserir → Nou marcador: fes clic al lloc on ha de conduir i assigna-li un títol. Inserir → Marcadors obre la llista, on es pot canviar el nom d'un marcador o eliminar-lo. Els canvis s'escriuen quan desis."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Fitxers adjunts",
+          "body": [
+            "Inserir → Adjunta un fitxer: tria un fitxer i fes clic on ha d'anar el clip. Pots assignar-li un nom i un autor, canviar el color del clip, redimensionar-lo i girar-lo. El fitxer es manté dins del PDF quan desis.",
+            "Inserir → Fitxers adjunts llista què porta el document; cada fitxer es pot desar al disc o treure. Un clic sobre un clip obre la mateixa llista."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formularis",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Omplir un formulari",
+          "body": [
+            "Inserir → Omplir formulari mostra els camps del document: escriu en els camps de text, marca caselles, tria de llistes. Les respostes s'escriuen al fitxer quan desis."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Crear un formulari",
+          "body": [
+            "El menú Inserir afegeix camps a qualsevol document: un camp de text, una casella de selecció, botons d'opció (dels quals n'hi ha de triar un), una llista de selecció i un camp de signatura buit per al signant.",
+            "Arrossega sobre la pàgina on ha d'anar el camp. Com altres marques, un camp es pot moure i redimensionar fins que desis; després d'això, passa a formar part del formulari."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Signatura",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Afegir una signatura dibuixada",
+          "body": [
+            "Signar → Afegir signatura posa la imatge d'una signatura a la pàgina: dibuixada aquí amb un bolígraf que triis, escrita amb un tipus de lletra o presa d'una imatge (amb l'opció \"Conserva només els traços del llapis, sense el paper del rerefons\" per a una foto d'un full signat). La data es pot escriure sota.",
+            "Arrossega la signatura a la pàgina on hagi d'anar. Les signatures que hagis fet servir es conserven en aquest ordinador per a un ús posterior.",
+            {
+              "note": "Això és una imatge: no indica amb certesa qui l'ha posat allà. Una signatura que demostri qui ha signat i que res no ha canviat des de llavors es fa mitjançant un certificat."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Signar amb un certificat",
+          "body": [
+            "Signar → Signar amb certificat crea una signatura digital: indica qui ha signat i segella el document, de manera que qualsevol canvi posterior quedi evident.",
+            {
+              "steps": [
+                "Arrossega a la pàgina l'àrea on ha d'aparèixer la signatura (primer s'obrirà una finestra per a això; es pot desactivar). Per signar sense que aparegui res a les pàgines, tria l'opció \"Signar sense mostrar-ho en una pàgina\".",
+                "Tria el certificat: un dels de l'ordinador (si hi ha una targeta o un token al lector, aquests apareixeran a la llista), o un fitxer .pfx / .p12 amb la seva contrasenya. \"Continuar\".",
+                "Tria l'aparença de la signatura. A l'apartat \"Motiu i lloc\" pots escriure per què i on signes: aquestes dades s'inclouen a la signatura i a la pàgina si l'aparença les mostra. Marca la casella \"Bloca el document després de signar\" si no vols que ningú signi o modifiqui el document després de tu. Deixa marcada la casella \"Afegir una hora de confiança (segell de temps)\" perquè una autoritat confirmi quan has signat.",
+                "\"Signar\" i, després, tria on desar el fitxer signat. En aquest punt, el token sol demanar el seu PIN."
+              ]
+            },
+            "El fitxer signat s'obrirà en lloc del document original. El programa mai conserva cap contrasenya ni PIN.",
+            {
+              "note": "Una signatura qualificada és aquella feta d'aquesta manera amb un certificat qualificat, emès en una targeta o token. El procés de signatura es realitza al teu ordinador; només el segell de temps i la comprovació del teu certificat es connecten a internet, i envien empremtes digitals i el número de sèrie del certificat, mai el document."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Aparences de la signatura",
+          "body": [
+            "L'aparença defineix com es veu una signatura amb certificat a la pàgina. Pots crear-ne diverses amb noms propis: una per signar en nom d'una empresa, una altra per signar a nom propi.",
+            {
+              "points": [
+                "Imatge: cap, des d'un fitxer (un segell, una signatura escanejada) o dibuixada aquí.",
+                "Text mostrat: nom, data, motiu, lloc, cadascun amb o sense la seva etiqueta.",
+                "Línies personalitzades sota el nom, com ara el càrrec i l'empresa.",
+                "\"Text estàndard\" sempre hi és: qui ha signat i quan."
+              ]
+            },
+            "A la finestra de signatura: \"Nou…\", \"Edita…\", \"Elimina\". L'última que s'ha fet servir s'ofereix primer. Les aparències es conserven en aquest ordinador."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Diverses signatures i bloqueig",
+          "body": [
+            "Un document pot ser signat per diverses persones, l'una després de l'altra. Obre el fitxer signat i signa'l sense canviar res: la teva signatura s'afegeix al final del fitxer i les anteriors continuen sent vàlides.",
+            "\"Bloca el document després de signar\" (desactivat tret que el marquis) tanca el document: ningú no pot signar després de tu i no es pot canviar res més. No es pot desfer.",
+            {
+              "note": "Si modifiques un document signat abans de tornar-lo a signar, s'ha d'escriure de nou i les signatures anteriors s'eliminen. La finestra de signatura t'avisa: per conservar-les, torna a obrir el fitxer i signa sense canviar res."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Segells de temps",
+          "body": [
+            "Un segell de temps és la confirmació signada d'una autoritat de segellat de temps sobre quan existia una cosa. Altrament, l'hora d'una signatura prové del rellotge de l'ordinador del signatari, que qualsevol pot canviar; un segell de temps demostra el moment i manté la signatura demostrable després que caduqui el certificat (PAdES B-T).",
+            {
+              "points": [
+                "Les signatures en reben un quan \"Afegir una hora de confiança (segell de temps)\" està marcat a la finestra de signatura. Configuració → Signatures indica si comença marcat, aquí i en el processament per lots.",
+                "Signar → Afegir segell de temps dona a tot el document un segell de temps propi, sense certificat: demostra que el document existia, exactament tal com és, en aquell moment. Es desa com a fitxer nou; les signatures que ja té el fitxer continuen sent vàlides."
+              ]
+            },
+            "L'autoritat és la de DigiCert (http://timestamp.digicert.com), gratuïta i reconeguda per Adobe Reader i Windows; se'n pot definir una altra a Configuració → Signatures. Només rep una empremta digital (SHA-256), mai el document, i cal connexió a internet. Quan una signatura rep un segell de temps, també es pregunta a l'emissor del teu certificat si el certificat encara és vàlid, i la seva resposta es desa a la signatura (validació a llarg termini): així Adobe Reader pot mostrar la signatura com a vàlida, ara i després que el certificat caduqui.",
+            {
+              "note": "Si no es pot contactar amb l'autoritat, no se signa ni s'escriu res: torna-ho a provar o desmarca el segell de temps per signar sense."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Comprovació de signatures",
+          "body": [
+            "Signar → Verificar signatures llista cada signatura de certificat del fitxer: qui ha signat, qui ha emès el certificat, quan, el motiu i el lloc, i",
+            {
+              "points": [
+                "si el document no ha canviat des d'aquella signatura (una altra signatura afegida posteriorment no es considera un canvi);",
+                "si la signatura bloqueja el document;",
+                "si aquest ordinador confia en l'autoritat darrere del certificat, i si el certificat és vàlid avui;",
+                "l'hora confirmada pel seu segell de temps, i per quina autoritat, quan en té. També s'hi llista el segell de temps de tot el document, amb la seva pròpia comprovació."
+              ]
+            },
+            "La comprovació és del fitxer tal com s’ha desat per última vegada i es fa en aquest ordinador, sense connectar-se a internet. Fer clic en una signatura d’una pàgina obre aquesta llista a la signatura corresponent. Sota cada signatura, «Mostrar el certificat» obre la finestra de Windows del certificat (la seva cadena i tots els detalls; des d’allà, «Instal·la el certificat» fa que aquest ordinador confiï en un certificat que coneixes), i «Validar» pregunta en línia a l’emissor del certificat, només quan el prems, si el certificat ha estat revocat."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Més eines",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Reconeixement de text (OCR)",
+          "body": [
+            "Més eines → Reconèixer text (OCR) llegeix les paraules de les pàgines escanejades i les escriu a les pàgines de manera invisible, perquè el document es pugui cercar i el seu text es pugui copiar i exportar. L'aspecte de les pàgines no canvia.",
+            "Marca només els idiomes en els quals estan escrites les pàgines; les pàgines que ja tenen text es deixen tal com són.",
+            {
+              "note": "La lectura la fa el motor Tesseract, un programa gratuït instal·lat per separat. Sense ell, la finestra mostra l'ordre per instal·lar-lo a Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Reduir la mida d'un document",
+          "body": [
+            "Més eines → Comprimir desa el document com un fitxer més petit reduint els píxels de les fotografies i els escanejos. Hi ha tres nivells d'intensitat; el text i els dibuixos mantenen la mateixa nitidesa. Un document amb poques imatges guanya poc."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Comparar dos documents",
+          "body": [
+            "Més eines → Comparar documents: tria un altre PDF. Tots dos es mostren l'un al costat de l'altre, pàgina per pàgina, amb les pàgines on el text difereix marcades i la llista de les línies que cada un té de forma exclusiva."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Processament per lots: molts fitxers alhora",
+          "body": [
+            "Més eines → Processament per lots aplica les mateixes accions a molts fitxers, en una pestanya independent. Cada resultat és un fitxer nou. Si els resultats haguessin d’ocupar el lloc de fitxers que ja són a la carpeta (els teus propis fitxers, quan van a la seva carpeta sense afegir res al nom), primer se’t pregunta si els vols substituir, ometre o cancel·lar. Un fitxer només se substitueix quan el seu resultat és complet; un que és obert (en una pestanya aquí o en un altre programa) es deixa tal com és i es marca com a no fet.",
+            {
+              "steps": [
+                "A l'esquerra, afegeix els fitxers: \"Afegir fitxers\", \"Afegir una carpeta\" (amb les subcarpetes incloses), o arrossega'ls.",
+                "A la dreta, marca què vols fer. En qualsevol cas, cada fitxer es converteix en un PDF; a part d'això, pots girar pàgines, reconèixer text, afegir una capçalera i un peu de pàgina, una marca d'aigua o números de pàgina, reduir la mida dels fitxers, signar-los amb un certificat o exportar-los en un altre format. Els números indiquen l'ordre.",
+                "Tria com s’han de desar: un fitxer per a cadascun, o tot en un sol PDF (segons l’ordre de la llista), i la carpeta on aniran els resultats. Quan tots els fitxers vénen d’una mateixa carpeta, aquesta carpeta es tria per tu fins que en triïs una altra; si no, és l’última carpeta que vas triar.",
+                "\"Inicia\". Cada fitxer mostra el resultat; l'execució es pot aturar entre fitxers."
+              ]
+            },
+            {
+              "points": [
+                "Receptes: \"Desar com a recepta\" desa totes les opcions triades (excepte els fitxers i qualsevol contrasenya) sota un nom, per poder aplicar-les novament amb una sola elecció.",
+                "\"Mantenir les carpetes dels fitxers als resultats\" recrea l'estructura de carpetes d'una carpeta afegida.",
+                "\"Escriure un informe de l'execució\" deixa un fitxer de text al costat dels resultats indicant què s'ha escrit i què ha fallat.",
+                "Un PDF que només està signat manté les signatures que té; si es fa qualsevol altra cosa en la mateixa sessió, s'escriu de nou i aquestes es perden."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Configuració",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "La configuració de PDF Organizer",
+          "body": [
+            "Fitxer → Configuració (o Configuració a la barra lateral, i després PDF Organizer). Cada configuració es pot restaurar individualment o totes alhora.",
+            {
+              "points": [
+                "Quan s'obre un document: quina mida de document es mostra quan s'obre, si es desplaça o es mostra una pàgina a la vegada, i si es mostren les miniatures o no.",
+                "Unitats, regles i quadrícula: la unitat (mil·límetres, polzades, punts), les regles, la quadrícula i el seu espaiat.",
+                "Impressió: el paper, l'orientació i l'escalat amb què comença la finestra d'impressió.",
+                "Barra d'eines ràpida: quins botons té la franja superior a les pàgines.",
+                "Noms dels documents nous: els patrons per a pàgines extretes, documents nous i el PDF on el processament per lots agrupa molts fitxers.",
+                "Signatures: si \"Desar\" pregunta abans d'escriure sobre un fitxer signat.",
+                "Dreceres de teclat: fes clic a les tecles d'una ordre i després prem les noves."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Sobre PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Sobre PDF Organizer",
+          "body": [
+            "PDF Organizer és l'aplicació de PDF de Syntelab Creative: llegeix documents PDF, organitza i combina les seves pàgines, hi escriu i hi dibuixa, omple i crea formularis, signa amb un certificat i comprova signatures, i fa aquestes mateixes coses a molts fitxers alhora.",
+            "És nou, i part del que fa és un primer pas. Allà on no sigui suficient per als teus documents, fes-nos-ho saber a Ajuda → Comentaris: així és com sabem en què hem de treballar."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Com s'ha construït PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Lector, dibuix i escriptura de PDF: MuPDF.",
+                "Reconeixement de text (OCR): Tesseract, quan està instal·lat a l'ordinador.",
+                "Obertura de documents d'oficina: Word, Excel i PowerPoint, o LibreOffice, segons quin estigui instal·lat.",
+                "Desar una pàgina web com a PDF: el navegador instal·lat a l'ordinador.",
+                "Signar amb un certificat: els serveis de certificats de Windows; les signatures s'escriuen segons el que sol·licita l'estàndard PAdES."
+              ]
+            },
+            "El que comparteix amb la resta del programa es troba a \"Quant a Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "El que PDF Organizer encara no pot fer",
+          "body": [
+            {
+              "points": [
+                "Els documents d'Office s'obren amb la suite d'oficina de l'ordinador; sense Word, Excel, PowerPoint o LibreOffice no es poden obrir. S'està treballant en un convertidor propi: vegeu \"En què estem treballant\".",
+                "El reconeixement de text requereix el motor Tesseract, instal·lat separatament.",
+                "El text d'un document es modifica línia per línia; els paràgrafs no es reorganitzen automàticament.",
+                "Les imatges amb quatre tintes (CMYK) no es poden seleccionar per moure-les.",
+                "«Validar» indica si un certificat està revocat avui, no quan es va revocar.",
+                "Signar amb un certificat funciona a Windows per ara; a Linux i macOS arribarà en una versió posterior."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

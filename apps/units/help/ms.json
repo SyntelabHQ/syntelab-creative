@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Menukar",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Penukar",
+          "body": [
+            "Units menukar nilai antara unit ukuran: satu nilai dengan cepat, atau keseluruhan jadual nilai sekali gus. Semuanya dikira pada komputer anda.",
+            "Penukar berada dalam enam menu: Asas, Gerakan dan mekanik, Tenaga dan kuasa, Saintifik, Digital dan media, dan Fizik khusus. Memilih satu menu akan membuka jadualnya.",
+            {
+              "points": [
+                "Penukar dibuka dalam tab yang anda gunakan. Jika jadualnya mempunyai nilai, anda akan ditanya terlebih dahulu: Teruskan (nilai akan hilang), Buka dalam tab baharu, atau Batal.",
+                "Tetapan → Units → \"Buka setiap penukar dalam tab tersendiri\" akan membuka setiap penukar yang anda pilih dalam tab baharu.",
+                "Fail → Pergi ke Mula akan kembali ke halaman pertama Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Tukar pantas",
+          "body": [
+            "Halaman pertama Units, Tukar pantas, menukar satu nilai daripada satu unit ke unit yang lain. Pilih penukar, taip nilai pada bahagian \"Daripada\", dan pilih dua unit: hasilnya adalah pada bahagian \"Kepada\".",
+            {
+              "points": [
+                "Setiap bahagian menyenaraikan unit popular penukar dan unit anda sendiri, dengan fungsi carian di atasnya. Jadual penukar mempunyai setiap unit.",
+                "Butang di antara kedua-dua bahagian menukar kedua-dua unit tersebut.",
+                "Penanda buku di sebelah unit akan menyematkannya: unit yang disematkan akan muncul dahulu dalam kedua-dua senarai dan dalam panel unit jadual.",
+                "Butang dalam hasil akan menyalinnya; tanda × akan mengosongkan nilai.",
+                "\"Buka dalam jadual\" membuka jadual penukar."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Cara nombor dibaca dan ditulis",
+          "body": [
+            "Anda boleh menaip dan menampal nombor sebagaimana ia ditulis di negara yang berbeza: 1,234.56 dan 1.234,56 kedua-duanya difahami, begitu juga ruang dan tanda apostrof antara ribuan, serta 1.5e-3 untuk kuasa sepuluh.",
+            "Nombor yang boleh dibaca dalam dua cara (1,234: seribu, atau satu dan sedikit) akan dibaca mengikut cara bahasa program menulis nombor, dan baris di bawah jadual akan menyatakannya.",
+            "Hasil ditulis dengan perpuluhan unit yang diterima, bukan dengan jumlah digit yang anda taip: 5 cm ialah 1.97 in. Nilai yang bukan sifar sentiasa menunjukkan beberapa digit yang bermakna, jadi 1 cm ialah 0.00001 km dan bukan 0.000 km.",
+            "Nilai yang terlalu besar atau terlalu kecil untuk dibaca sekali imbas ditulis dengan kuasa sepuluh, seperti 1.6 × 10⁻³⁵. Lihat → Nilai ekstrem penuh akan menulisnya dengan setiap sifar.",
+            "Apabila unit tidak mempunyai nilai sedemikian (tekanan bunyi sifar tidak mempunyai desibel), sel akan menunjukkan sengkang."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jadual",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Baris dan kolum",
+          "body": [
+            "Setiap kolum ialah satu unit dan setiap baris ialah satu nilai. Sel yang anda taip akan memacu barisnya: kolum lain menunjukkan nilai yang sama dalam unit masing-masing. Sel yang ditaip dipaparkan dalam huruf tebal.",
+            "Apa-apa yang bukan nombor akan dikekalkan dan dipaparkan dalam warna merah; barisnya tidak akan menukar apa-apa sehingga anda membetulkannya.",
+            {
+              "points": [
+                "Klik dua kali pada sel, atau mula menaip padanya, untuk mengedit. Enter bergerak ke bawah, Tab ke kanan; kekunci anak panah untuk bergerak; Escape membiarkan sel seperti sedia kala.",
+                "Klik penjuru (#) untuk memilih keseluruhan jadual, nombor baris untuk memilih barisnya, tajuk untuk memilih kolumnya. Shift+klik memilih julat, Ctrl+klik menambah sel, menyeret juga boleh digunakan untuk memilih.",
+                "Home dan End pergi ke kolum pertama dan terakhir baris tersebut; Ctrl+Home ke sel pertama jadual, Ctrl+End ke sel terakhir. Ctrl bersama anak panah pergi ke tepi jadual: baris pertama atau terakhir, kolum pertama atau terakhir. Page Up dan Page Down bergerak mengikut skrin. Dengan Shift, setiap tindakan ini akan meluaskan pilihan sebaliknya.",
+                "Pilihan beberapa sel akan digariskan di bahagian luarnya; sel yang sedang ditaip akan kekal tidak berwarna di dalamnya.",
+                "Delete mengosongkan baris yang dipilih.",
+                "Menaip di baris terakhir akan menambah baris. Jadual tidak mempunyai had maksimum: ia sepanjang yang dibenarkan oleh memori komputer anda (satu baris mengambil 16 bait, jadi 100 juta baris mengambil kira-kira 1.5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Kolum dan panel unit",
+          "body": [
+            "Panel di sebelah jadual menyenaraikan unit penukar. Di bahagian atasnya adalah unit dalam jadual: klik satu untuk mengeluarkan kolumnya. Di bawahnya, setiap unit: cari mengikut nama atau simbol, tapis mengikut kumpulan atau \"Popular\", dan klik unit untuk menambahnya sebagai kolum.",
+            "Penanda buku di sebelah unit menetapkannya sebagai kegemaran: ia akan muncul pertama dalam senarai dan pertama dalam Tukar pantas.",
+            {
+              "points": [
+                "Kolum berkongsi lebar jadual secara sama rata sehingga tajuknya tidak lagi muat; kemudian jadual akan tatal ke sisi.",
+                "Seret tepi tajuk untuk mengubah lebar kolumnya; klik dua kali pada tepi untuk menyesuaikan kolum dengan nilai terpanjangnya. Kolum nombor baris juga boleh diseret.",
+                "Butang ⋮ bagi sesuatu kolum: pindahkannya ke kiri atau kanan, tetapkannya ke tepi kiri atau kanan, ubah kejituannya, atau buangnya.",
+                "Kejituan sesuatu kolum hanya mengubah kolum tersebut. \"Gunakan untuk unit ini di mana-mana\" menjadikannya kejituan unit tersebut, dalam setiap jadual dan dalam Tukar pantas.",
+                "Butang dengan dua anak panah di sebelah Buat asal dan Buat semula menyesuaikan kolum dengan jadual: setiap lebar yang anda seret atau sesuaikan akan dibatalkan, dan kolum akan berkongsi lebar jadual semula.",
+                "Dua bahagian atas panel, unit dalam jadual dan \"Tambah unit\" (carian dan penapis), boleh dilipat dengan klik pada namanya, supaya senarai mempunyai lebih ruang."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Buat asal, salin, tampal, import dan eksport",
+          "body": [
+            "Bar di atas jadual mengandungi alat-alatnya.",
+            {
+              "points": [
+                "Buat asal dan Buat semula (Ctrl+Z, Ctrl+Y) melalui setiap perubahan jadual. Tampalan atau import adalah satu langkah.",
+                "Salin (Ctrl+C) menyalin keseluruhan jadual atau apa yang dipilih, sebagaimana yang dibaca oleh hamparan elektronik. \"Ditransposkan\" menukar baris menjadi kolum.",
+                "Tampal (Ctrl+V) meletakkan baris yang disalin ke dalam jadual bermula dari sel aktif ke bawah. Jika baris pertama mengandungi tajuk unit, kolum akan dipadankan mengikutnya, dan unit yang belum ada dalam jadual akan ditambah.",
+                "Import membaca buku kerja Excel, fail CSV atau TSV bagi menggantikan kandungan jadual. \"Kesan format secara automatik\" menentukan jenis fail tersebut.",
+                "Eksport menulis jadual sebagai Excel, CSV, TSV atau JSON. Dengan koma sebelum perpuluhan, CSV ditulis dengan titik koma, seperti yang diharapkan oleh hamparan kerja. Satu helaian Excel mengandungi 1,048,576 baris: jadual yang lebih panjang akan diteruskan pada helaian seterusnya dalam buku kerja yang sama, di bawah tajuk yang sama.",
+                "Pemadam mengosongkan baris yang dipilih; tong sampah mengosongkan keseluruhan jadual."
+              ]
+            },
+            "Satu baris mengandungi satu nilai. Bagi baris yang ditampal atau diimport yang mempunyai beberapa nilai, nilai pertama akan diambil dan nilai lain akan dikira daripadanya.",
+            "Baris yang terlalu banyak mengambil masa untuk ditampal, diimport, dieksport atau disalin. Kad di atas jadual kemudian akan menunjukkan sejauh mana kerja telah dilakukan, dalam peratusan dan jumlah baris, bersama butang Henti. Tampalan atau import yang dihentikan akan mengekalkan jadual seperti sedia kala; eksport yang dihentikan tidak akan menulis sebarang fail.",
+            "Apabila komputer tidak mempunyai memori yang mencukupi untuk baris tersebut, tiada apa yang diubah dan baris di bawah jadual akan menyatakan jumlah yang diperlukan. Apabila baris tersebut muat tetapi jadual sedia ada tidak dapat disimpan bersama-sama, anda akan ditanya sama ada mahu meneruskan tanpa buat asal: perubahan tersebut, dan perubahan sebelumnya, tidak lagi boleh dikembalikan. Sebelum bertanya, langkah Buat asal yang paling lama akan dilepaskan untuk memberi ruang.",
+            "Pilihan jadual (ikon gear): apa yang dinyatakan oleh tajuk kolum (nama dan simbol, nama, atau simbol), sama ada salinan dan eksport menyertakan tajuk dan nombor baris, \"Mulakan penukar ini dengan kolum-kolum ini\", dan \"Set semula jadual\"."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Penukar khas",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Mata Wang",
+          "body": [
+            "Mata wang tidak mempunyai faktor tetap: nilainya sentiasa berubah. Penukar mata wang membaca kadar pertukarannya daripada dua perkhidmatan percuma semasa anda menggunakannya, dan hanya pada waktu itu sahaja.",
+            {
+              "points": [
+                "Mata wang negara: Rates By Exchange Rate API, https://www.exchangerate-api.com . Ia berubah sekali sehari di sumbernya, dan dibaca tidak lebih kerap daripada itu.",
+                "Mata wang kripto: Powered by CoinGecko, https://www.coingecko.com . Ia dibaca apabila penukar dibuka atau kembali ke hadapan dan data yang ada lebih lama daripada suku jam, dan apabila anda menekan Segarkan; tidak pernah menggunakan pemasa."
+              ]
+            },
+            "Hanya kadar yang diminta. Tiada maklumat tentang anda dihantar, dan jumlah yang anda tukar tidak akan dihantar.",
+            "Baris di bawah jadual, dan di bawah hasil Tukar pantas, menyatakan bila kadar tersebut dikemas kini. Tanpa sambungan, kadar terakhir akan digunakan dan ditandakan sebagai lama. Mata wang yang tidak mempunyai kadar daripada perkhidmatan tersebut akan menunjukkan sengkang.",
+            "Tetapan → Units → Mata wang: \"Baca kadar daripada rangkaian\" boleh dimatikan, dan penukar kemudian akan menggunakan kadar terakhir yang disimpan. \"Namakan sumber di sebelah kadar\" memaparkan atau menyembunyikan nama dua perkhidmatan tersebut pada baris itu.",
+            "Kadar adalah untuk maklumat sahaja. Jangan bergantung kepadanya untuk transaksi."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Asas nombor",
+          "body": [
+            "Unit penukar ini adalah cara menulis nombor bulat: asas dari 2 hingga 64, angka Roman, asas 60 dengan titik bertindih (1:30:15), perpuluhan berkod binari dan kod Gray. Nilainya adalah teks: taip FF di bawah heksadesimal dan kolum lain akan menunjukkan 255, 11111111 dan seterusnya.",
+            "Angka Roman bermula dari I hingga MMMCMXCIX (1 hingga 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Unit yang bukan faktor biasa",
+          "body": [
+            "Kebanyakan unit adalah faktor bagi unit lain. Sesetengahnya tidak, dan Units menukarnya mengikut definisi: suhu dengan offset; ekonomi bahan api (liter per 100 km berbanding batu per galon); panjang gelombang berbanding frekuensi; konduktans berbanding rintangan; darjah Baumé, API, Brix dan Plato berbanding ketumpatan; desibel berbanding tekanan dan keamatan bunyi; kecerunan dalam peratus berbanding sudutnya.",
+            "Suhu dan perbezaan suhu adalah perkara yang berbeza: 100 °C adalah 212 °F, tetapi perbezaan 100 °C adalah perbezaan 180 °F. Unit dalam kumpulan \"Perbezaan (Δ)\" ditukar sesama sendiri; antara unit tersebut dan skala suhu, sel akan memaparkan sengkang."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Unit anda sendiri",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Membina unit",
+          "body": [
+            "Anda boleh menambah unit anda sendiri ke mana-mana penukar. Dalam panel unit, pilih \"Unit baharu\", berikan nama dan simbol, dan nyatakan berdasarkan unit yang sedia ada.",
+            {
+              "points": [
+                "Faktor: \"1 langkah = 0.75 m\". Untuk skala yang tidak bermula dari sifar, nyatakan juga nilai yang ditambah selepas pendaraban.",
+                "Formula: bagaimana nilai tersebut menjadi unit yang lain, dengan x sebagai nilai, dan formula untuk pengiraan balik. Contohnya x * 9 / 5 + 32 dan (x - 32) * 5 / 9."
+              ]
+            },
+            "Apa yang anda taip akan diuji semasa anda menaip, dan hasil daripada unit anda akan dipaparkan sebelum anda menyimpannya. Formula boleh menggunakan + − × ÷ ^, kurungan, x, pi, e, dan fungsi sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos dan atan. Ia dikira secara matematik, bukan dijalankan sebagai program.",
+            "Unit anda disenaraikan di bawah \"Milik saya\" dalam panel, di mana ia boleh diubah dan dipadamkan. Unit anda boleh dinyatakan melalui unit anda yang lain; memadamkan satu unit akan memadamkan unit-unit yang bergantung kepadanya.",
+            "Tetapan → Units menyenaraikan unit anda bagi setiap penukar, serta mengeksport dan mengimportnya sebagai teks yang boleh anda simpan atau pindahkan ke komputer lain."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tetapan",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Tetapan Units",
+          "body": [
+            "Fail → Buka Tetapan membuka tetapan Units; begitu juga dengan pilihan jadual (ikon gear pada bar tersebut).",
+            {
+              "points": [
+                "Buka setiap penukar dalam tab tersendiri, atau dalam tab yang sedang digunakan.",
+                "Nilai ekstrem penuh, apa yang ditulis antara ribuan (10000.000, 10 000.000 atau 10,000.000; tiada apa-apa, melainkan anda memilih yang lain), dan nombor baris.",
+                "Mata Wang: sama ada kadar dibaca daripada rangkaian, dan sama ada perkhidmatan dinamakan di sebelahnya.",
+                "Kejituan unit: pilih penukar (atau \"Unit yang anda tukar\"), cari unit, dan tetapkan perpuluhannya dengan − dan +; anak panah akan mengembalikannya kepada unit asal. \"Gunakan untuk unit ini di mana-mana\" dalam menu kolum menetapkan nilai yang sama.",
+                "Unit yang memulakan jadual: penukar yang kolum pertamanya anda pilih, setiap satu dengan cara untuk kembali kepada unit asal.",
+                "Unit anda sendiri."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Mengenai Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Mengenai Units",
+          "body": [
+            "Units ialah aplikasi penukar Syntelab Creative: 38 penukar dengan lebih daripada 1,500 unit, daripada panjang dan suhu kepada mata wang dan asas nombor. Nilai yang ditaip sekali akan dipaparkan dalam setiap unit yang anda minta, dalam jadual yang boleh memuatkan satu nilai atau jutaan nilai.",
+            "Nombor dikira dengan tepat, sebagai pecahan, dan dibundarkan hanya apabila ditulis. Semuanya dilakukan pada komputer ini; hanya kadar mata wang dibaca daripada rangkaian, dan fungsi itu boleh dimatikan.",
+            "Ia adalah baharu. Jika terdapat kekurangan untuk kerja anda, beritahu kami melalui Bantuan → Maklum balas: begitulah cara kami mengetahui apa yang perlu diperbaiki."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Berapa banyak baris yang boleh dimuatkan oleh jadual: apa yang kami ukur",
+          "body": [
+            "Jadual tidak mempunyai had baris yang tetap: ia sepanjang yang dibenarkan oleh memori komputer anda. Satu baris mengambil 16 bait, jadi 100 juta baris mengambil kira-kira 1.5 GB. Apabila memori habis, jadual akan kekal seperti sedia ada dan program akan memberitahu jumlah yang diperlukan.",
+            "Kami mengukurnya dengan 50,000,000 baris, setiap satu nombor dalam satu kolum, dalam binaan program yang dioptimumkan:",
+            {
+              "points": [
+                "Menampal 50,000,000 baris: kira-kira 7 saat.",
+                "Mengimportnya daripada fail CSV: 12 saat.",
+                "Mengeksportnya ke fail CSV, dengan kolum kedua ditukar: kira-kira 3.5 minit.",
+                "Mengeksportnya ke Excel, dalam 48 helaian: 4.3 minit."
+              ]
+            },
+            "Proses eksport mengambil masa lebih lama daripada import kerana setiap sel yang ditulis ditukar dengan tepat terlebih dahulu.",
+            {
+              "note": "Komputer yang digunakan untuk ujian ini: AMD Ryzen 9 9950X3D (16 teras, 32 bebenang), 64 GB memori, Windows 11 Pro. Oktober 2026. Pada komputer lain, masa akan berbeza; saiz baris tidak akan berubah."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Bagaimana Units dibina",
+          "body": [
+            {
+              "points": [
+                "Nombor tepat: perpustakaan num Rust (pecahan nombor bulat sebarang saiz).",
+                "Unit, faktor dan kumpulan mereka: fail data program, satu untuk setiap penukar.",
+                "Membaca buku kerja Excel dan OpenDocument: calamine. Menulis buku kerja Excel: rust_xlsxwriter.",
+                "Papan klip sistem, untuk salin dan tampal baris yang sangat banyak: arboard.",
+                "Kadar mata wang: ExchangeRate-API dan CoinGecko (lihat \"Mata Wang\")."
+              ]
+            },
+            "Apa yang dikongsi dengan bahagian lain program ini ada di bawah \"Tentang Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Apa yang Units belum boleh lakukan",
+          "body": [
+            {
+              "points": [
+                "Satu baris memegang satu nilai: bagi baris yang ditampal dengan beberapa nilai, nilai pertama akan diambil.",
+                "Mengeksport baris yang sangat banyak adalah perlahan (lihat apa yang kami ukur).",
+                "Apa yang disalin ke papan klip disimpan dalam memori sebagai satu teks sebelum ia ditampal.",
+                "Kadar mata wang adalah terkini mengikut sumber mereka: sekali sehari untuk mata wang negara."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

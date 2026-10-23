@@ -1,0 +1,111 @@
+.ribbon {
+  position: relative;
+  /* Above the page, for the commands shown over it. */
+  z-index: 5;
+  min-width: 0;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding-inline: 6px;
+}
+
+/* One row at any width: the tabs scroll sideways, without a scroll bar. */
+.tabList {
+  display: flex;
+  flex: 1;
+  gap: 2px;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tab {
+  flex: none;
+  padding-block: 8px;
+  padding-inline: 14px;
+  border: 0;
+  border-block-end: 2px solid transparent;
+  background: none;
+  color: var(--sc-muted);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tab:hover {
+  color: var(--sc-text);
+}
+
+.tab[aria-selected='true'] {
+  border-block-end-color: var(--sc-accent);
+  color: var(--sc-text);
+  font-weight: 600;
+}
+
+.small {
+  flex: none;
+  width: 28px;
+  min-height: 28px;
+}
+
+/* The button that folds the ribbon (chooses its form): small and round, so its shade stays clear of the tabs. */
+.mode {
+  display: flex;
+  flex: none;
+  align-items: center;
+  padding-inline: 6px 2px;
+}
+
+.mode > div > button {
+  width: 24px;
+  min-height: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition:
+    background 0.12s ease,
+    color 0.12s ease;
+}
+
+/* One row of groups; whatever does not fit folds. Cut off sideways only, so
+   tooltips and menus can reach below the ribbon. */
+.panel {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+  overflow-x: clip;
+  padding-block: 6px;
+  padding-inline: 8px;
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.panel[hidden] {
+  display: none;
+}
+
+/* Shown on hover: over the page, under the tabs, instead of pushing the page down. */
+.panel[data-overlay='true'] {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-start: 100%;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+  box-shadow: var(--sc-shadow-m);
+}
+
+/* The same groups at full width, unseen, only to be measured. */
+.measure {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  display: flex;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+}

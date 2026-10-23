@@ -1,0 +1,80 @@
+/* The table of a converter: the bar, the grid and the line under it; the units panel beside them. */
+.view {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  background: var(--sc-surface);
+  font-family: var(--sc-font, system-ui);
+  font-size: 14px;
+  /* Its bars and menus are layered among themselves: the ribbon of the program, shown over the page, stays over them all. */
+  isolation: isolate;
+}
+
+.main {
+  /* The card of long work lies over it. */
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.spring {
+  flex: 1;
+}
+
+.waiting {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 24px;
+  color: var(--sc-muted);
+  text-align: center;
+}
+
+/* The line under the table: what it holds, and what was done last. */
+.status {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 16px;
+  min-height: 30px;
+  padding: 4px 12px;
+  border-block-start: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  color: var(--sc-muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.last {
+  color: var(--sc-text);
+}
+
+.wrong,
+.last[data-problem='true'] {
+  color: var(--sc-danger);
+}
+
+/* The question asked before a change of very many rows that cannot be undone. */
+.asked {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 460px;
+}
+
+.asked p {
+  margin: 0;
+}
+
+.askedActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-block-start: 4px;
+}

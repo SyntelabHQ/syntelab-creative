@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Avamine ja lugemine",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Dokumendi avamine",
+          "body": [
+            "Fail → Ava (Ctrl+O) avab PDF-i eraldi sakis. \"Ava mitu faili korraga\" avab iga valitud faili oma sakis.",
+            "Avanevad ka failid, mis ei ole PDF-id, lehekülgedena: pildid (PNG, JPEG, TIFF, WebP ja paljud teised), teksti- ja veebifailid, e-raamatud, XPS ja kontoridokumendid. Selline dokument pole veel kuhugi salvestatud: \"Salvesta\" küsib, kuhu.",
+            {
+              "note": "Kontoridokumendid (Word, Excel, PowerPoint, OpenDocument) teisendatakse Wordi, Exceli või PowerPointi või LibreOffice’i abil, olenevalt sellest, mis arvutis on. Ilma nendeta neid avada ei saa."
+            },
+            "Tühjale sakile lohistatud failid kogutakse kogumikku; dokumendile lohistatud failide lehed lisatakse sellesse dokumenti.",
+            "Windowsis võib PDF Organizer olla rakendus, mis avab PDF-failid, kui neil topeltklõpsad: selle avalehel avab \"Määra vaikeväärtuseks\" Windowsi sätted, kus valid PDF-failide jaoks Syntelab Creative’i."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Lehekülgede vaatamine",
+          "body": [
+            "Menüü Vaade määrab, kuidas dokumenti näidatakse; miski selles ei muuda faili.",
+            {
+              "points": [
+                "Suurendus: suurenda, vähenda, tegelik suurus, sobita lehekülg, sobita laiusele, sobita kõrgusele. Suurendada saab ka Ctrl-klahvi ja hiirerattaga.",
+                "Lehe kuvamine: üks lehekülg või kaks kõrvuti, kaanelehega või ilma, ning kõigi lehtede kerimine ühe pika reana.",
+                "Abijooned: joonlauad ja ruudustik, seadetes valitud ühikus.",
+                "\"Näita miniatüüre\": väikesed lehed küljel. Klõpsake ühel, et sinna minna; dokumendi järjehoidjad on samas paneelis.",
+                "\"Lugemisrežiim\" peidab tööriistad; \"Täisekraanirežiim\" peidab kõik peale lehekülje. Escape väljub mõlemast."
+              ]
+            },
+            "Riba lehtede kohal (kiirtööriistariba) näitab leheküljenumbrit, suurendust ja seadetes valitud nuppe."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Teksti otsimine",
+          "body": [
+            "Redigeeri → Otsi dokumendist (Ctrl+F): sisestage sõna või fraas; leitud kohad märgitakse lehtedel ja nooled viivad ühelt järgmisele.",
+            {
+              "note": "Skannitud dokument koosneb lehekülgede piltidest ja selles pole otsitavat teksti enne, kui tekst on tuvastatud: vt \"Teksti tuvastamine (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Dokumendi omadused",
+          "body": [
+            "Fail → Dokumendi omadused näitab, mida dokument enda kohta ütleb: pealkiri, autor, loomise ja muutmise kuupäevad, lehekülgede arv ja faili suurus."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Salvestamine, printimine ja saatmine",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Salvesta ja Salvesta nimega",
+          "body": [
+            "Miski, mida teete, ei muuda kettal olevat faili enne salvestamist. Seni saab iga sammu tagasi võtta (Ctrl+Z) ja uuesti teha (Ctrl+Y).",
+            {
+              "points": [
+                "Salvesta (Ctrl+S) kirjutab dokumendi selle faili üle.",
+                "Salvesta nimega (Ctrl+Shift+S) kirjutab selle uude faili, mis võtab seejärel saki üle; vana fail jääb selliseks, nagu oli."
+              ]
+            },
+            "Kui fail on avatud mõnes teises programmis, ei saa seda üle kirjutada: programm ütleb seda ja hoiab teie muudatused alles, et saaksite need teise nime all salvestada.",
+            {
+              "note": "Muudetud dokumendi salvestamine sertifikaadiga allkirjastatud faili üle eemaldab selle allkirjad. Programm küsib esmalt ja pakub võimalust \"Salvesta uue failina\"; selle küsimuse saab välja lülitada jaotises Seaded → Allkirjad."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "PDFi loomine",
+          "body": [
+            "Fail → Loo PDF loob uue dokumendi:",
+            {
+              "points": [
+                "ühest failist või mitmest: ühendatuna üheks PDF-iks või igaühest eraldi PDF;",
+                "veebilehest teie sisestatud aadressil (leht salvestatakse arvutisse installitud brauseriga);",
+                "lõikelaual olevast;",
+                "tühjadest lehtedest teie valitud suuruses."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Eksportimine teise vormingusse",
+          "body": [
+            "Fail → Eksporteeri kirjutab dokumendi teises vormingus: Wordi või OpenDocumenti tekstina, lihttekstina, veebilehena, XML-ina, lehekülgede piltidena (PNG, JPEG, TIFF, SVG) või PostScriptina. Piltide puhul valite eraldusvõime.",
+            "Dokument ise jääb PDF-iks; eksport on uus fail.",
+            {
+              "note": "Teksti saab eksportida ainult sealt, kus dokumendis on tekst. Tuvastage skanni tekst esmalt."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Printimine",
+          "body": [
+            "Fail → Prindi (Ctrl+P) prindib dokumendi praegusel kujul koos sellega, mida olete sellele joonistanud. Valige lehed, paber, kas paber on püsti või külili ja kas lehed sobitatakse paberile või prinditakse tegelikus suuruses; seejärel küsib süsteemi printimisaken printerit.",
+            "Paber, suund ja skaleerimine, millega printimisaken avaneb, määratakse jaotises Seaded → Printimine."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Jagamine",
+          "body": [
+            "Fail → Jaga annab dokumendi süsteemi aknale \"Jaga\": e-post, lähedalasuv seade ja muud rakendused. Dokumenti jagatakse praegusel kujul koos salvestamata muudatustega."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lehtede korraldamine",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Korraldamise vaade",
+          "body": [
+            "Korralda → Korralda lehti näitab kõiki lehti ruudustikuna. Kettal ei muutu midagi enne salvestamist.",
+            {
+              "points": [
+                "Valimine: klõpsake lehel; Ctrl+klõps lisab ühe, Shift+klõps valib vahemiku. Menüüs on \"Vali kõik lehed\", \"Tühista valik\", \"Vali paaritu numbriga lehed\" ja \"Vali paarisnumbriga lehed\".",
+                "Teisaldamine: lohistage valitud lehed uude kohta või kasutage käske \"Liiguta vasakule\" ja \"Liiguta paremale\".",
+                "Pööramine: \"Valitud: pööra vasakule\" ja \"Valitud: pööra paremale\" pööravad valitud lehti; \"Kõik lehed: pööra vasakule\" ja \"Kõik lehed: pööra paremale\" pööravad kõiki lehti.",
+                "Kustutamine: Delete-klahv või \"Kustuta lehed\". Dokumenti jääb alati vähemalt üks leht.",
+                "Kopeerimine, lõikamine ja kleepimine (Ctrl+C, Ctrl+X, Ctrl+V): lehti saab kleepida samasse dokumenti või mõnda teise programmis avatud dokumenti.",
+                "Suurus: ülaosas olev liugur muudab lehed suuremaks või väiksemaks; sama teevad Ctrl + hiireratas lehtede kohal ning Suurenda ja Vähenda (Ctrl+= ja Ctrl+-). Suurus jäetakse meelde."
+              ]
+            },
+            "Samad käsud töötavad ka ilma ruudustikuta, nähtaval leheküljel."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Lehtede eraldamine ja dokumendi osadeks jagamine",
+          "body": [
+            "Korralda → Eralda lehed tõstab valitud lehed uueks, veel salvestamata dokumendiks oma sakis. Saate lasta ka iga lehe kirjutada eraldi failiks ja valida, kas lehed eemaldatakse sellest dokumendist.",
+            "Korralda → Jaga dokument osadeks kirjutab dokumendi mitme väiksema failina; see dokument jääb selliseks, nagu on.",
+            "Uute dokumentide nimed järgivad malle jaotises Seaded → Uute dokumentide nimed.",
+            {
+              "note": "Sertifikaadiga tehtud allkirjad ei kandu eraldatud ega osadeks jagatud dokumentidesse: allkiri kehtib ainult failis, milles see tehti."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Lehtede lisamine ja asendamine",
+          "body": [
+            {
+              "points": [
+                "Korralda → Lisa lehed lisab teise faili (PDF, pilt, tekst, kontoridokument) lehed valitud lehe järele või lõppu.",
+                "Korralda → Asenda lehed paneb teise faili lehed valitud lehtede asemele.",
+                "Lisa → Tühi leht lisab tühja lehe, mis on sama suur kui naaberleht."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Lehtede kärpimine ja suuruse muutmine",
+          "body": [
+            "Redigeeri → Kärbi lehti lõikab lehtedelt servad ära teie sisestatud või lohistatud veeriste järgi. Failist ei eemaldata midagi: lehtedel lihtsalt näidatakse vähem.",
+            "Redigeeri → Muuda lehekülgede suurust paneb lehed teise suurusega paberile (A4, Letter ja teised). Sisu saab skaleerida sobivaks või jätta oma suurusesse ning paigutada uuel paberil ühte üheksast kohast.",
+            "Mõlemad küsivad, milliseid lehti: kõiki, valitud, vahemikku, paarituid või paarislehti."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Failide ühendamine",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Kogumik",
+          "body": [
+            "Ühenda → Uus kogumik avab koha, kus faile koguda ja need üheks PDF-iks kirjutada.",
+            {
+              "steps": [
+                "Lisage faile nupuga \"Lisa failid\" või lohistage need kogumikku. PDF-e, pilte, teksti ja kontoridokumente võib segamini kasutada.",
+                "Lohistage kaardid soovitud järjekorda või kasutage iga kaardi nooli.",
+                "Avage kaart, et valida, millised selle lehed lähevad kaasa.",
+                "\"Ühenda failid\" kirjutab need järjekorras üheks uueks dokumendiks oma sakis."
+              ]
+            },
+            "Faile endid ei muudeta.",
+            "Ülaosas olev liugur muudab kaartidel olevad lehed suuremaks või väiksemaks; sama teevad Ctrl + hiireratas ning Suurenda ja Vähenda (Ctrl+= ja Ctrl+-). Suurus jäetakse meelde."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lehtedele kirjutamine ja joonistamine",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Tööriistad",
+          "body": [
+            "Joonistustööriistad avanevad paneelina lehe kõrval, nuppude ruudustikuna või nimedega loendina (seda määravad seaded). Kui tööriist on käes, lohistage või klõpsake lehel; Escape paneb tööriista käest.",
+            {
+              "points": [
+                "Tekst: klõpsake ja kirjutage. Font, suurus, värv, paks kiri, kursiiv ja joondus on paneelis.",
+                "Pilt: valige pilt, seejärel tõmmake, kuhu see läheb ja kui suur see on.",
+                "Kujundid: ristkülik, ellips, joon, nool, linnuke, rist, punkt.",
+                "Esiletõstmine: tõmmake üle selle, mis peab silma paistma; selle all olev jääb loetavaks."
+              ]
+            },
+            "Tööriistaga \"Vali, teisalda ja muuda suurust\" saab märgi uuesti kätte: lohistage seda, tõmmake selle nurki, pöörake seda pidemest, muutke paneelis selle värve või kustutage see Delete-klahviga. Märke saab kopeerida ja kleepida, ka teistele lehtedele.",
+            "Kõik joonistatu kirjutatakse salvestamisel faili."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Dokumendi teksti ja piltide muutmine",
+          "body": [
+            "Tööriist \"Muuda dokumendi teksti ja pilte\" piirjoonestab selle, mis lehel endal on. Klõpsake tekstireal, et see ümber kirjutada, või pildil, et seda teisaldada, suurust muuta, pöörata või kustutada.",
+            {
+              "note": "See muudab korraga ühe rea või ühe pildi. Lõigud ei voola uuesti, kui rida pikemaks läheb, ja teise pildi peal olev pilt võetakse koos sellega. Suuremate muudatuste jaoks redigeerige dokumenti programmis, milles see kirjutati."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Tundliku teabe eemaldamine",
+          "body": [
+            "Lisatööriistad → Eemalda tundlik teave eemaldab jäädavalt selle, mida ei tohi lugeda: tõmmake selle üle must kast mis tahes lehel. Salvestamisel eemaldatakse kasti all olev tekst ja pildid failist, mitte ei kaeta lihtsalt kinni.",
+            {
+              "note": "Salvestage töödeldud dokument uue nimega ja hoidke originaali turvalises kohas: eemaldatut ei saa taastada."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Vesimärk",
+          "body": [
+            "Redigeeri → Vesimärk kirjutab sõnu või paneb pildi teie valitud lehtedele: otse või kaldu, ühte üheksast kohast, nii suurelt ja kahvatult, kui määrate. Igal lehel on see seejärel märk nagu iga teine ja seda saab veel teisaldada või eemaldada."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Leheküljenumbrid, päis ja jalus, Batesi numbrid",
+          "body": [
+            {
+              "points": [
+                "Redigeeri → Leheküljenumbrid: vorming (1, 1 / 12, Lehekülg 1 ja teised), asukoht ning millised leheküljed numbri saavad.",
+                "Lisa → Päis ja jalus: tekst ükskõik millisesse kuuest kohast. Selles tähistab {page} lehekülje numbrit, {pages} lehekülgede arvu, {date} tänast kuupäeva ja {file} dokumendi nime.",
+                "Lisa → Batesi nummerdamine: järjestikused numbrid sõnaga ees või järel (ABC000123), nagu kasutatakse kohtuasja dokumentide puhul."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lingid, järjehoidjad ja manustatud failid",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Lingid",
+          "body": [
+            "Lisa → Link: tõmmake üle koha, millel tuleb klõpsata, ja määrake siis, kuhu see viib: veebiaadress või selle dokumendi lehekülg.",
+            "Dokumendi lingid töötavad lugemise ajal: klõps leheküljele viival lingil viib sinna; veebi- või e-posti aadress antakse teie brauserile või e-postiprogrammile."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Järjehoidjad",
+          "body": [
+            "Lisa → Uus järjehoidja: klõpsake kohal, kuhu see peab viima, ja andke sellele pealkiri. Lisa → Järjehoidjad avab loendi, kus järjehoidjat saab ümber nimetada või eemaldada. Muudatused kirjutatakse salvestamisel."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Manustatud failid",
+          "body": [
+            "Lisa → Manusta fail: valige fail ja klõpsake kohal, kuhu läheb selle kirjaklamber. Saate anda sellele nime ja autori, klambri värvida, selle suurust muuta ja seda pöörata. Salvestamisel hoitakse faili PDF-i sees.",
+            "Lisa → Manustatud failid loetleb, mida dokument endas kannab; iga faili saab kettale salvestada või välja võtta. Klõps kirjaklambril avab sama loendi."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vormid",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Vormi täitmine",
+          "body": [
+            "Lisa → Täida vorm näitab dokumendi välju: kirjutage tekstiväljadesse, märkige ruute, valige loenditest. Vastused kirjutatakse salvestamisel faili."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Vormi loomine",
+          "body": [
+            "Menüü Lisa lisab mis tahes dokumendile välju: tekstivälja, märkeruudu, valikunupud (millest saab valida ühe), valikuloendi ja allkirjavälja, mis jääb allkirjastajale tühjaks.",
+            "Tõmmake lehel sinna, kuhu väli läheb. Nagu teisi märke, saab välja teisaldada ja selle suurust muuta kuni salvestamiseni; pärast seda on see vormi osa."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allkirjastamine",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Joonistatud allkirja lisamine",
+          "body": [
+            "Allkirjasta → Lisa allkiri paneb lehele allkirja pildi: siin teie valitud pliiatsiga joonistatud, fondiga kirjutatud või pildilt võetud (allkirjastatud lehe foto puhul valikuga \"Säilita ainult pliiatsijooned\"). Selle alla saab kirjutada kuupäeva.",
+            "Tõmmake lehel sinna, kuhu see kuulub. Kasutatud allkirjad hoitakse selles arvutis, et neid saaks uuesti kasutada.",
+            {
+              "note": "See on pilt: see ei ütle kindlalt midagi selle kohta, kes selle sinna pani. Allkiri, mis tõendab, kes allkirjastas ja et pärast seda pole midagi muutunud, tehakse sertifikaadiga."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Allkirjastamine sertifikaadiga",
+          "body": [
+            "Allkirjasta → Allkirjasta sertifikaadiga loob digiallkirja: see näitab, kes allkirjastas, ja pitseerib dokumendi, nii et iga hilisem muudatus on näha.",
+            {
+              "steps": [
+                "Tõmmake lehel ala, kus allkiri kuvatakse (esmalt ütleb seda aken; selle saab välja lülitada). Kui soovite allkirjastada ilma lehtedel midagi näitamata, valige selle asemel \"Allkirjasta ilma lehel kuvamata\".",
+                "Valige sertifikaat: üks arvuti sertifikaatidest (kaart või token on nende hulgas, kui see on lugejas) või .pfx / .p12 fail koos selle parooliga. \"Jätka\".",
+                "Valige allkirja välimus. Jaotises \"Põhjus ja koht\" saate kirjutada, miks ja kus allkirjastate: need lähevad allkirja sisse ja lehele, kui välimus neid näitab. Märkige \"Lukusta dokument pärast allkirjastamist\", kui keegi ei tohi pärast teid dokumenti allkirjastada ega muuta. Jätke \"Lisa usaldusväärne aeg (ajatempel)\" märgituks, et ajatempliteenus kinnitaks, millal te allkirjastasite.",
+                "\"Allkirjasta\", seejärel valige, kuhu allkirjastatud fail salvestatakse. Token küsib sel hetkel oma PIN-koodi."
+              ]
+            },
+            "Allkirjastatud fail avaneb dokumendi asemel. Programm ei hoia kunagi alles parooli ega PIN-koodi.",
+            {
+              "note": "Kvalifitseeritud allkiri on nii tehtud allkiri kvalifitseeritud sertifikaadiga, mis on oma kaardil või tokenil. Allkirjastamine toimub teie arvutis; internetti lähevad ainult ajatempel ja teie sertifikaadi kontroll, mis saadavad räsid ja sertifikaadi seerianumbri, mitte kunagi dokumenti."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Allkirja välimused",
+          "body": [
+            "Välimus määrab, kuidas sertifikaadiga allkiri lehel välja näeb. Hoidke mitut välimust oma nimede all: ühte ettevõtte nimel allkirjastamiseks, teist enda nimel allkirjastamiseks.",
+            {
+              "points": [
+                "Pilt: puudub, failist (tempel, skannitud allkiri) või siin joonistatud.",
+                "Kuvatav tekst: nimi, kuupäev, põhjus, koht, igaüks oma sildiga või ilma.",
+                "Oma read nime all, näiteks ametikoht ja ettevõte.",
+                "\"Standardtekst\" on alati olemas: kes allkirjastas ja millal."
+              ]
+            },
+            "Allkirjastamise aknas: \"Uus…\", \"Muuda…\", \"Kustuta\". Viimati kasutatut pakutakse esimesena. Välimused hoitakse selles arvutis."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Mitu allkirja ja lukustamine",
+          "body": [
+            "Dokumenti võivad allkirjastada mitu inimest üksteise järel. Avage allkirjastatud fail ja allkirjastage see midagi muutmata: teie allkiri lisatakse faili lõppu ja varasemad jäävad kehtivaks.",
+            "\"Lukusta dokument pärast allkirjastamist\" (väljas, kui te seda ei märgi) sulgeb dokumendi: pärast teid ei saa keegi allkirjastada ja midagi ei tohi enam muuta. Seda ei saa tagasi võtta.",
+            {
+              "note": "Kui muudate allkirjastatud dokumenti enne uuesti allkirjastamist, tuleb see uuesti kirjutada ja varasemad allkirjad jäävad välja. Allkirjastamise aken hoiatab teid: nende säilitamiseks avage fail uuesti ja allkirjastage midagi muutmata."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Ajatemplid",
+          "body": [
+            "Ajatempel on ajatempliteenuse allkirjastatud kinnitus selle kohta, millal miski oli. Muidu pärineb allkirja aeg allkirjastaja arvuti kellast, mida igaüks saab muuta; ajatempel tõendab hetke ja hoiab allkirja tõendatavana ka pärast sertifikaadi aegumist (PAdES B-T).",
+            {
+              "points": [
+                "Allkiri saab ajatempli, kui allkirjastamise aknas on märgitud \"Lisa usaldusväärne aeg (ajatempel)\". Seaded → Allkirjad määrab, kas see on vaikimisi märgitud, nii siin kui ka pakktöötluses.",
+                "Allkirjasta → Lisa ajatempel annab kogu dokumendile oma ajatempli, ilma sertifikaadita: see tõendab, et dokument oli sel hetkel täpselt selline, nagu see on. See salvestatakse uue failina; faili allkirjad jäävad kehtivaks."
+              ]
+            },
+            "Teenus on DigiCerti oma (http://timestamp.digicert.com), tasuta ning Adobe Reader ja Windows usaldavad seda; teise saab määrata jaotises Seaded → Allkirjad. See saab ainult räsi (SHA-256), mitte kunagi dokumenti, ja vaja on internetiühendust. Kui allkiri saab ajatempli, küsitakse ka teie sertifikaadi väljastajalt, kas sertifikaat on endiselt kehtiv, ja vastus säilitatakse allkirjas (pikaajaline valideerimine): nii saab Adobe Reader näidata allkirja kehtivana nii praegu kui ka pärast sertifikaadi aegumist.",
+            {
+              "note": "Kui ajatempliteenusega ühendust ei saa, ei allkirjastata ega salvestata midagi: proovige uuesti või eemaldage ajatempli märge, et allkirjastada ilma selleta."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Allkirjade kontrollimine",
+          "body": [
+            "Allkirjasta → Kontrolli allkirju loetleb faili kõik sertifikaadiga allkirjad: kes allkirjastas, kes sertifikaadi väljastas, millal, põhjus ja koht ning",
+            {
+              "points": [
+                "kas dokument on pärast seda allkirja muutmata (hiljem lisatud teist allkirja muudatuseks ei loeta);",
+                "kas allkiri lukustab dokumendi;",
+                "kas see arvuti usaldab sertifikaadi taga olevat asutust ja kas sertifikaat on täna kehtiv;",
+                "ajatempliga kinnitatud aeg ja kinnitanud teenus, kui allkirjal on ajatempel. Ka kogu dokumendi ajatempel on loetelus, oma kontrolliga."
+              ]
+            },
+            "Kontrollitakse faili viimati salvestatud kujul ja see toimub selles arvutis ilma internetita. Lehel allkirjal klõpsamine avab selle loendi selle allkirja juurest. Iga allkirja all avab „Näita sertifikaati“ sertifikaadi Windowsi akna (selle ahela ja kõik üksikasjad; sealt paneb „Installi sertifikaat“ selle arvuti usaldama sertifikaati, mida te tunnete) ning „Kontrolli“ küsib sertifikaadi väljastajalt internetist, ainult siis, kui te seda vajutate, kas sertifikaat on tagasi võetud."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lisatööriistad",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Teksti tuvastamine (OCR)",
+          "body": [
+            "Lisatööriistad → Tuvasta tekst (OCR) loeb skannitud lehtede sõnad ja kirjutab need lehtedele nähtamatult, et dokumendist saaks otsida ning selle teksti kopeerida ja eksportida. Lehtede välimus ei muutu.",
+            "Märkige ainult need keeled, milles lehed on kirjutatud; lehed, millel on juba tekst, jäetakse selliseks, nagu need on.",
+            {
+              "note": "Lugemise teeb Tesseracti mootor, eraldi installitav tasuta programm. Kui seda pole, näitab aken käsku, millega see Windowsis installida."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Dokumendi suuruse vähendamine",
+          "body": [
+            "Lisatööriistad → Vähenda faili suurust salvestab dokumendi väiksema failina, vähendades selle fotode ja skannide pikslite arvu. Valida saab kolme astme vahel; tekst ja joonised jäävad sama teravaks. Vähese pildiga dokument võidab vähe."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Kahe dokumendi võrdlemine",
+          "body": [
+            "Lisatööriistad → Võrdle dokumente: valige teine PDF. Need kuvatakse kõrvuti, lehekülg lehekülje kaupa; lehed, mille tekst erineb, on märgitud ja read, mis on ainult ühes, on loetletud."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Pakktöötlus: palju faile korraga",
+          "body": [
+            "Lisatööriistad → Pakktöötlus teeb paljude failidega samu toiminguid, eraldi sakis. Iga tulemus on uus fail. Kui tulemused asendaksid kaustas juba olevaid faile (teie enda faile, kui need lähevad oma kausta ilma nimele midagi lisamata), küsitakse teilt enne, kas need asendada, vahele jätta või toiming tühistada. Fail asendatakse alles siis, kui selle tulemus on valmis; avatud fail (siin sakis või mõnes teises programmis) jäetakse nii, nagu see on, ja märgitakse tegemata jäänuks.",
+            {
+              "steps": [
+                "Lisage vasakul failid: \"Lisa faile…\", \"Lisa kaust…\" (koos selle alamkaustadega) või lohistage need sisse.",
+                "Märkige paremal, mida teha. Iga fail muutub igal juhul PDF-iks; lisaks saate pöörata lehti, tuvastada teksti, lisada päise ja jaluse, vesimärgi või leheküljenumbrid, vähendada failide suurust, allkirjastada need sertifikaadiga või kirjutada need teise vormingusse. Numbrid näitavad järjekorda.",
+                "Valige, mis kirjutatakse: iga faili kohta oma fail või kõik ühes PDF-is (loendi järjekorras), ja kaust, kuhu tulemused lähevad. Kui kõik failid on pärit ühest kaustast, valitakse teie eest see kaust, kuni valite mõne teise; muidu on see viimati valitud kaust.",
+                "\"Alusta\". Iga faili juures on näha, kuidas läks; töö saab failide vahel peatada."
+              ]
+            },
+            {
+              "points": [
+                "Retseptid: \"Salvesta retseptina\" säilitab kõik teie valikud (välja arvatud failid ja paroolid) nime all, et need saaks ühe valikuga uuesti määrata.",
+                "\"Säilita tulemustes failide kaustad\" loob lisatud kausta alamkaustad tulemustes uuesti.",
+                "\"Kirjuta töö aruanne\" jätab tulemuste kõrvale tekstifaili, kus on kirjas, mis kirjutati ja mis ebaõnnestus.",
+                "PDF, mida ainult allkirjastatakse, säilitab oma allkirjad; kui samas töös tehakse sellega veel midagi, kirjutatakse see uuesti ja allkirjad jäävad välja."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Seaded",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "PDF Organizeri seaded",
+          "body": [
+            "Fail → Seaded (või külgribal Seaded ja seejärel PDF Organizer). Iga seadet saab taastada eraldi või kõiki korraga.",
+            {
+              "points": [
+                "Dokumendi avamisel: kui suurelt dokumenti avamisel näidatakse, kas keritakse või näidatakse üks lehekülg korraga, kas miniatüüre näidatakse.",
+                "Ühikud, joonlauad ja ruudustik: ühik (millimeetrid, tollid, punktid), joonlauad, ruudustik ja selle joonte vahe.",
+                "Printimine: paber, suund ja skaleerimine, millega printimisaken avaneb.",
+                "Kiirtööriistariba: millised nupud on lehtede kohal oleval ribal.",
+                "Uute dokumentide nimed: mallid eraldatud lehtede, uute dokumentide ja PDF-i jaoks, kuhu pakktöötlus kogub mitu faili.",
+                "Allkirjad: kas \"Salvesta\" küsib enne allkirjastatud faili ülekirjutamist.",
+                "Kiirklahvid: klõpsake käsu klahvidel ja vajutage seejärel uued."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "PDF Organizeri kohta",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "PDF Organizeri kohta",
+          "body": [
+            "PDF Organizer on Syntelab Creative'i PDF-rakendus: see loeb PDF-dokumente, korraldab ja ühendab nende lehti, kirjutab ja joonistab neile, täidab ja loob vorme, allkirjastab sertifikaadiga ja kontrollib allkirju ning teeb samu toiminguid korraga paljude failidega.",
+            "See on uus ja osa sellest, mida see teeb, on esimene samm. Kui see teie dokumentidega hätta jääb, andke meile teada käsuga Abi → Tagasiside: nii teame, mille kallal töötada."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Mille põhjal PDF Organizer on ehitatud",
+          "body": [
+            {
+              "points": [
+                "PDF-i lugemine, joonistamine ja kirjutamine: MuPDF.",
+                "Teksti tuvastamine (OCR): Tesseract, kui see on arvutisse installitud.",
+                "Kontoridokumentide avamine: Word, Excel ja PowerPoint või LibreOffice, sõltuvalt sellest, kumb on installitud.",
+                "Veebilehe salvestamine PDF-ina: arvutisse installitud veebibrauser.",
+                "Sertifikaadiga allkirjastamine: Windowsi sertifikaaditeenused; allkirjad kirjutatakse vastavalt PAdES standardile."
+              ]
+            },
+            "See, mida see jagab ülejäänud programmiga, on kirjeldatud jaotises \"Syntelab Creative'i kohta\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Mida PDF Organizer veel ei oska",
+          "body": [
+            {
+              "points": [
+                "Kontoridokumendid avatakse arvutis oleva kontoritarkvaraga; ilma Wordi, Exceli, PowerPointi või LibreOffice'ita neid avada ei saa. Töötame oma teisendaja kallal: vt \"Mille kallal töötame\".",
+                "Teksti tuvastamiseks on vaja eraldi installitud Tesseracti mootorit.",
+                "Dokumendi enda teksti muudetakse rida haaval; lõigud ei voola uuesti.",
+                "Nelja värviga (CMYK) prinditud pilte ei saa teisaldamiseks kätte võtta.",
+                "„Kontrolli“ ütleb, kas sertifikaat on praegu tagasi võetud, kuid mitte seda, millal see tagasi võeti.",
+                "Sertifikaadiga allkirjastamine töötab praegu Windowsis; Linuxis ja macOS-is tuleb see hilisemas versioonis."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

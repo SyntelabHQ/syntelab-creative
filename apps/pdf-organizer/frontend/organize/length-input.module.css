@@ -1,0 +1,24 @@
+.length {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.number,
+.unit {
+  min-height: 34px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.number {
+  width: 76px;
+  min-width: 0;
+  padding-inline: 8px;
+}
+
+.unit {
+  padding-inline: 4px;
+}

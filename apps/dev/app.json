@@ -1,0 +1,379 @@
+{
+  "id": "dev",
+  "version": "0.0.0",
+  "apiVersion": 1,
+  "status": "active",
+  "name": {
+    "en": "Dev"
+  },
+  "description": {
+    "en": "Tools for developers.",
+    "hi": "डेवलपरों के लिए टूल।",
+    "de": "Werkzeuge für Entwickler.",
+    "zh-CN": "开发者工具。",
+    "ro": "Unelte pentru dezvoltatori.",
+    "ar": "أدوات للمطوّرين.",
+    "es": "Herramientas para desarrolladores.",
+    "pt": "Ferramentas para programadores.",
+    "id": "Alat untuk pengembang.",
+    "fr": "Des outils pour les développeurs.",
+    "ja": "開発者向けのツールです。",
+    "ru": "Инструменты для разработчиков.",
+    "ko": "개발자를 위한 도구입니다.",
+    "tr": "Geliştiricilere yönelik araçlar.",
+    "it": "Strumenti per sviluppatori.",
+    "vi": "Các công cụ dành cho nhà phát triển.",
+    "pl": "Narzędzia dla programistów.",
+    "nl": "Hulpmiddelen voor ontwikkelaars.",
+    "th": "เครื่องมือสำหรับนักพัฒนา",
+    "uk": "Інструменти для розробників.",
+    "el": "Εργαλεία για προγραμματιστές.",
+    "cs": "Nástroje pro vývojáře.",
+    "sv": "Verktyg för utvecklare.",
+    "hu": "Eszközök fejlesztőknek.",
+    "fa": "ابزارهایی برای توسعه‌دهندگان.",
+    "pt-BR": "Ferramentas para desenvolvedores.",
+    "zh-TW": "開發者工具。",
+    "sq": "Vegla për zhvillues.",
+    "am": "ለዴቨሎፐሮች የሚሆኑ መሣሪያዎች።",
+    "be": "Інструменты для распрацоўшчыкаў.",
+    "bn": "ডেভেলপারদের জন্য টুলস।",
+    "bs": "Alati za programere.",
+    "bg": "Инструменти за разработчици.",
+    "ca": "Eines per a desenvolupadors.",
+    "hr": "Alati za programere.",
+    "da": "Værktøjer til udviklere.",
+    "et": "Tööriistad arendajatele.",
+    "tl": "Mga tool para sa mga developer.",
+    "fi": "Työkaluja kehittäjille.",
+    "gu": "ડેવલપર્સ માટેના ટૂલ્સ.",
+    "ha": "Kayan aiki ga masu haɓaka manhaja.",
+    "he": "כלים למפתחים.",
+    "ga": "Uirlisí d’fhorbróirí.",
+    "jv": "Piranti kanggo pangembang.",
+    "kn": "ಡೆವಲಪರ್‌ಗಳಿಗಾಗಿ ಪರಿಕರಗಳು.",
+    "lv": "Rīki izstrādātājiem.",
+    "lt": "Įrankiai programuotojams.",
+    "mk": "Алатки за програмери.",
+    "ms": "Alatan untuk pembangun.",
+    "ml": "ഡെവലപ്പർമാർക്കായുള്ള ടൂളുകൾ.",
+    "mt": "Għodod għall-iżviluppaturi.",
+    "my": "ဆော့ဖ်ဝဲ ရေးသားသူများအတွက် ကိရိယာများ။",
+    "no": "Verktøy for utviklere.",
+    "pa": "ਡਿਵੈਲਪਰਾਂ ਲਈ ਟੂਲਸ।",
+    "sr": "Alati za programere.",
+    "sk": "Nástroje pre vývojárov.",
+    "sl": "Orodja za razvijalce.",
+    "sw": "Zana kwa ajili ya watengenezaji.",
+    "ta": "மென்பொருள் உருவாக்குநர்களுக்கான கருவிகள்.",
+    "te": "డెవలపర్‌ల కోసం సాధనాలు.",
+    "ur": "ڈیولپرز کے لیے ٹولز۔",
+    "yo": "Àwọn irinṣẹ́ fún àwọn olùgbéṣẹ́ sọ́fítíwià."
+  },
+  "brand": {
+    "color": "#E91E63",
+    "icon": "assets/icon.svg"
+  },
+  "defaultLayout": "ribbon",
+  "fileTypes": [
+    ".json",
+    ".yaml",
+    ".yml",
+    ".xml",
+    ".html",
+    ".htm",
+    ".sql",
+    ".pem",
+    ".crt",
+    ".cer",
+    ".der",
+    ".gz",
+    ".pfx",
+    ".p12",
+    ".key",
+    ".csr"
+  ],
+  "locales": "locales/",
+  "contextMenuGrouped": true,
+  "contextMenu": [
+    {
+      "id": "open",
+      "labelKey": "dev.contextMenu.open",
+      "fileTypes": [
+        ".json",
+        ".yaml",
+        ".yml",
+        ".xml",
+        ".html",
+        ".htm",
+        ".sql",
+        ".csv",
+        ".tsv",
+        ".pem",
+        ".crt",
+        ".cer",
+        ".der",
+        ".gz",
+        ".pfx",
+        ".p12",
+        ".key",
+        ".csr"
+      ]
+    },
+    {
+      "id": "checksum",
+      "labelKey": "dev.contextMenu.checksum",
+      "fileTypes": [
+        "*",
+        "folder"
+      ]
+    },
+    {
+      "id": "hex",
+      "labelKey": "dev.contextMenu.hex",
+      "fileTypes": [
+        "*"
+      ]
+    },
+    {
+      "id": "compare",
+      "labelKey": "dev.contextMenu.compare",
+      "fileTypes": [
+        "*"
+      ]
+    },
+    {
+      "id": "compare-folders",
+      "labelKey": "dev.contextMenu.compare",
+      "fileTypes": [
+        "folder"
+      ]
+    }
+  ],
+  "search": [
+    {
+      "id": "base64",
+      "labelKey": "dev.tool.base64",
+      "params": {
+        "tool": "base64"
+      }
+    },
+    {
+      "id": "url-encode",
+      "labelKey": "dev.tool.url-encode",
+      "params": {
+        "tool": "url-encode"
+      }
+    },
+    {
+      "id": "html-entities",
+      "labelKey": "dev.tool.html-entities",
+      "params": {
+        "tool": "html-entities"
+      }
+    },
+    {
+      "id": "jwt",
+      "labelKey": "dev.tool.jwt",
+      "params": {
+        "tool": "jwt"
+      }
+    },
+    {
+      "id": "escape",
+      "labelKey": "dev.tool.escape",
+      "params": {
+        "tool": "escape"
+      }
+    },
+    {
+      "id": "gzip",
+      "labelKey": "dev.tool.gzip",
+      "params": {
+        "tool": "gzip"
+      }
+    },
+    {
+      "id": "number-base",
+      "labelKey": "dev.tool.number-base",
+      "params": {
+        "tool": "number-base"
+      }
+    },
+    {
+      "id": "json-formatter",
+      "labelKey": "dev.tool.json-formatter",
+      "params": {
+        "tool": "json-formatter"
+      }
+    },
+    {
+      "id": "jsonpath",
+      "labelKey": "dev.tool.jsonpath",
+      "params": {
+        "tool": "jsonpath"
+      }
+    },
+    {
+      "id": "json-schema",
+      "labelKey": "dev.tool.json-schema",
+      "params": {
+        "tool": "json-schema"
+      }
+    },
+    {
+      "id": "json-schema-generator",
+      "labelKey": "dev.tool.json-schema-generator",
+      "params": {
+        "tool": "json-schema-generator"
+      }
+    },
+    {
+      "id": "json-to-typescript",
+      "labelKey": "dev.tool.json-to-typescript",
+      "params": {
+        "tool": "json-to-typescript"
+      }
+    },
+    {
+      "id": "yaml-json",
+      "labelKey": "dev.tool.yaml-json",
+      "params": {
+        "tool": "yaml-json"
+      }
+    },
+    {
+      "id": "csv-json",
+      "labelKey": "dev.tool.csv-json",
+      "params": {
+        "tool": "csv-json"
+      }
+    },
+    {
+      "id": "markup",
+      "labelKey": "dev.tool.markup",
+      "params": {
+        "tool": "markup"
+      }
+    },
+    {
+      "id": "sql",
+      "labelKey": "dev.tool.sql",
+      "params": {
+        "tool": "sql"
+      }
+    },
+    {
+      "id": "diff",
+      "labelKey": "dev.tool.diff",
+      "params": {
+        "tool": "diff"
+      }
+    },
+    {
+      "id": "markdown",
+      "labelKey": "dev.tool.markdown",
+      "params": {
+        "tool": "markdown"
+      }
+    },
+    {
+      "id": "uuid",
+      "labelKey": "dev.tool.uuid",
+      "params": {
+        "tool": "uuid"
+      }
+    },
+    {
+      "id": "hash",
+      "labelKey": "dev.tool.hash",
+      "params": {
+        "tool": "hash"
+      }
+    },
+    {
+      "id": "secrets",
+      "labelKey": "dev.tool.secrets",
+      "params": {
+        "tool": "secrets"
+      }
+    },
+    {
+      "id": "keys",
+      "labelKey": "dev.tool.keys",
+      "params": {
+        "tool": "keys"
+      }
+    },
+    {
+      "id": "regex",
+      "labelKey": "dev.tool.regex",
+      "params": {
+        "tool": "regex"
+      }
+    },
+    {
+      "id": "cron",
+      "labelKey": "dev.tool.cron",
+      "params": {
+        "tool": "cron"
+      }
+    },
+    {
+      "id": "timestamp",
+      "labelKey": "dev.tool.timestamp",
+      "params": {
+        "tool": "timestamp"
+      }
+    },
+    {
+      "id": "url-parser",
+      "labelKey": "dev.tool.url-parser",
+      "params": {
+        "tool": "url-parser"
+      }
+    },
+    {
+      "id": "certificate",
+      "labelKey": "dev.tool.certificate",
+      "params": {
+        "tool": "certificate"
+      }
+    },
+    {
+      "id": "hex",
+      "labelKey": "dev.tool.hex",
+      "params": {
+        "tool": "hex"
+      }
+    },
+    {
+      "id": "http",
+      "labelKey": "dev.tool.http",
+      "params": {
+        "tool": "http"
+      }
+    },
+    {
+      "id": "dns",
+      "labelKey": "dev.tool.dns",
+      "params": {
+        "tool": "dns"
+      }
+    },
+    {
+      "id": "port",
+      "labelKey": "dev.tool.port",
+      "params": {
+        "tool": "port"
+      }
+    },
+    {
+      "id": "site-certificate",
+      "labelKey": "dev.tool.site-certificate",
+      "params": {
+        "tool": "site-certificate"
+      }
+    }
+  ]
+}

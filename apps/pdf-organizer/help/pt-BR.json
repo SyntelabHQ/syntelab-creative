@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Abrindo e lendo",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Abrindo um documento",
+          "body": [
+            "Arquivo → Abrir (Ctrl+O) abre um PDF em sua própria guia. \"Abrir vários arquivos ao mesmo tempo\" abre cada arquivo escolhido em sua respectiva guia.",
+            "Arquivos que não são PDFs também abrem, como páginas: imagens (PNG, JPEG, TIFF, WebP e muitos outros), arquivos de texto e da web, e-books, XPS e documentos do Office. Tal documento ainda não é salvo em lugar nenhum: \"Salvar\" pergunta onde.",
+            {
+              "note": "Documentos do Office (Word, Excel, PowerPoint, OpenDocument) são convertidos pelo Word, Excel ou PowerPoint, ou pelo LibreOffice, dependendo de qual estiver no computador. Sem um deles, eles não podem ser abertos."
+            },
+            "Arquivos soltos em uma guia vazia são reunidos em um fichário; soltos sobre um documento, suas páginas são adicionadas a ele.",
+            "No Windows, o PDF Organizer pode ser o aplicativo que abre arquivos PDF quando você clica duas vezes neles: na página inicial, \"Definir como padrão\" abre as configurações do Windows, onde você escolhe Syntelab Creative para arquivos PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Visualizando as páginas",
+          "body": [
+            "O menu Exibir decide como o documento é mostrado; nada nele altera o arquivo.",
+            {
+              "points": [
+                "Zoom: aumentar, diminuir, tamanho real, ajustar à página, ajustar à largura, ajustar à altura. Ctrl e a roda do mouse também fazem o zoom.",
+                "Exibição de página: uma página ou duas lado a lado, com ou sem página de capa, e rolagem por todas as páginas como uma faixa longa.",
+                "Guias: réguas e uma grade, na unidade escolhida em Configurações.",
+                "\"Mostrar miniaturas\": as páginas pequenas na lateral. Clique em uma para ir até ela; os marcadores do documento ficam no mesmo painel.",
+                "O \"Modo de leitura\" oculta as ferramentas; o \"Modo tela cheia\" oculta tudo, exceto a página. Escape sai de ambos."
+              ]
+            },
+            "A faixa acima das páginas (a barra de ferramentas rápida) contém o número da página, o zoom e os botões que você escolheu em Configurações."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Localizando texto",
+          "body": [
+            "Editar → Localizar no documento (Ctrl+F): digite uma palavra ou frase; os locais onde ela for encontrada serão marcados nas páginas, e as setas levam de um para o próximo.",
+            {
+              "note": "Um documento digitalizado consiste em imagens de páginas e não possui texto para localizar até que seu texto seja reconhecido: veja \"Reconhecimento de texto (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Propriedades do documento",
+          "body": [
+            "Arquivo → Propriedades do documento mostra o que o documento diz sobre si mesmo: título, autor, as datas em que foi criado e alterado, o número de páginas, o tamanho do arquivo."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Salvar, imprimir e enviar",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Salvar e Salvar como",
+          "body": [
+            "Nada do que você faz altera o arquivo no disco até que você salve. Até então, cada etapa pode ser desfeita (Ctrl+Z) e refeita (Ctrl+Y).",
+            {
+              "points": [
+                "Salvar (Ctrl+S) grava o documento sobre o seu arquivo.",
+                "Salvar como (Ctrl+Shift+S) grava-o em um novo arquivo, que então assume o lugar da guia; o arquivo antigo permanece como estava."
+              ]
+            },
+            "Se outro programa estiver com o arquivo aberto, ele não poderá ser sobrescrito: o programa avisará e manterá suas alterações para serem salvas com outro nome.",
+            {
+              "note": "Salvar um documento alterado sobre um arquivo que está assinado com um certificado remove suas assinaturas. O programa pergunta primeiro e oferece \"Salvar como um novo arquivo\"; a pergunta pode ser desativada em Configurações → Assinaturas."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Criando um PDF",
+          "body": [
+            "Arquivo → Criar um PDF cria um novo documento:",
+            {
+              "points": [
+                "a partir de um arquivo, ou de vários: combinados em um único PDF, ou um PDF para cada;",
+                "a partir de uma página da web, no endereço que você digitar (a página é salva com o navegador instalado no computador);",
+                "a partir do que estiver na área de transferência;",
+                "a partir de páginas vazias do tamanho que você escolher."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Exportando para outro formato",
+          "body": [
+            "Arquivo → Exportar grava o documento em outro formato: texto Word ou OpenDocument, texto simples, uma página da web, XML, imagens das páginas (PNG, JPEG, TIFF, SVG) ou PostScript. Para imagens, você escolhe a resolução.",
+            "O documento em si continua sendo um PDF; a exportação é um novo arquivo.",
+            {
+              "note": "O texto só pode ser exportado onde o documento possui texto. Primeiro, reconheça o texto de uma digitalização."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Impressão",
+          "body": [
+            "Arquivo → Imprimir (Ctrl+P) imprime o documento conforme organizado agora, com o que você desenhou nele. Escolha as páginas, o papel, se as folhas ficam na vertical ou horizontal, e se as páginas devem ser ajustadas à folha ou impressas em tamanho real; então, a janela de impressão do sistema solicitará a impressora.",
+            "O papel, a orientação e a escala com que a janela de impressão inicia são definidos em Configurações → Impressão."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Compartilhamento",
+          "body": [
+            "Arquivo → Compartilhar envia o documento para a janela de \"Compartilhar\" do sistema: e-mail, um dispositivo próximo e outros aplicativos. O documento é compartilhado como está agora, com suas alterações não salvas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organizando páginas",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "A visualização Organizar",
+          "body": [
+            "Organizar → Organizar páginas mostra cada página em uma grade. Nada é alterado no disco até que você salve.",
+            {
+              "points": [
+                "Selecionar: clique em uma página; Ctrl+clique adiciona uma, Shift+clique seleciona uma sequência. \"Selecionar todas as páginas\", \"Limpar seleção\", \"Selecionar páginas ímpares\" e \"Selecionar páginas pares\" estão no menu.",
+                "Mover: arraste as páginas selecionadas para o novo local ou use \"Mover para a esquerda\" e \"Mover para a direita\".",
+                "Girar: \"Selecionadas: girar para a esquerda\" e \"Selecionadas: girar para a direita\" giram as páginas selecionadas; \"Todas as páginas: girar para a esquerda\" e \"Todas as páginas: girar para a direita\" giram todas as páginas.",
+                "Excluir: a tecla Delete ou \"Excluir páginas\". Um documento mantém pelo menos uma página.",
+                "Copiar, recortar e colar (Ctrl+C, Ctrl+X, Ctrl+V): as páginas podem ser coladas no mesmo documento ou em outro aberto no programa.",
+                "Tamanho: o controle deslizante no topo aumenta ou diminui as páginas; o mesmo fazem Ctrl + roda do mouse sobre as páginas e \"Aumentar zoom\" e \"Diminuir zoom\" (Ctrl+= e Ctrl+-). O tamanho é lembrado."
+              ]
+            },
+            "Os mesmos comandos funcionam sem a grade, na página em visualização."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Extraindo páginas e dividindo um documento",
+          "body": [
+            "Organizar → Extrair páginas retira as páginas selecionadas como um novo documento em sua própria guia, ainda não salvo. Você também pode fazer com que cada página seja gravada como um arquivo próprio e escolher se as páginas serão removidas deste documento.",
+            "Organizar → Dividir documento grava o documento como vários arquivos menores; este documento permanece como está.",
+            "Os nomes dos novos documentos seguem os padrões em Configurações → Nomes de novos documentos.",
+            {
+              "note": "Assinaturas feitas com um certificado não são transferidas para documentos extraídos ou divididos: uma assinatura é válida apenas para o arquivo no qual foi criada."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Inserir e substituir páginas",
+          "body": [
+            {
+              "points": [
+                "Organizar → Inserir páginas adiciona as páginas de outro arquivo (PDF, imagem, texto, documento do Office) após a página selecionada ou ao final.",
+                "Organizar → Substituir páginas coloca as páginas de outro arquivo no lugar das selecionadas.",
+                "Inserir → Página em branco adiciona uma página vazia do mesmo tamanho da página vizinha."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Recortar e redimensionar páginas",
+          "body": [
+            "Editar → Recortar páginas corta as bordas das páginas, por meio de margens que você digita ou arrasta. Nada é removido do arquivo: as páginas apenas mostram menos conteúdo.",
+            "Editar → Redimensionar páginas coloca as páginas em outro tamanho de folha (A4, Carta e outros). O conteúdo pode ser dimensionado para ajustar ou mantido em seu tamanho original, e posicionado em um de nove locais na nova folha.",
+            "Ambos perguntam quais páginas: todas, as selecionadas, um intervalo, ímpares ou pares."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Combinar arquivos",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "O fichário",
+          "body": [
+            "Combinar → Novo fichário abre um local para reunir arquivos e gravá-los como um único PDF.",
+            {
+              "steps": [
+                "Adicione arquivos com \"Adicionar arquivos\" ou arraste-os para o fichário. PDFs, imagens, textos e documentos do Office podem ser misturados.",
+                "Arraste os cartões para a ordem desejada ou use as setas em cada cartão.",
+                "Abra um cartão para escolher quais de suas páginas serão incluídas.",
+                "\"Combinar arquivos\" os grava, em ordem, como um novo documento em sua própria guia."
+              ]
+            },
+            "Os arquivos originais não são alterados.",
+            "O controle deslizante no topo aumenta ou diminui as páginas nos cartões; o mesmo fazem Ctrl + roda do mouse e \"Aumentar zoom\" e \"Diminuir zoom\" (Ctrl+= e Ctrl+-). O tamanho é lembrado."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Escrever e desenhar em páginas",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "As ferramentas",
+          "body": [
+            "As ferramentas de desenho abrem como um painel ao lado da página, como uma grade de botões ou como uma lista com nomes (as Configurações decidem). Com uma ferramenta selecionada, arraste ou clique na página; a tecla Escape desativa a ferramenta.",
+            {
+              "points": [
+                "Texto: clique e digite. Fonte, tamanho, cor, negrito, itálico e alinhamento estão no painel.",
+                "Imagem: escolha uma imagem, depois arraste para definir onde ela fica e qual o seu tamanho.",
+                "Formas: retângulo, elipse, linha, seta, marca de seleção, cruz, ponto.",
+                "Realce: arraste sobre o que deve se destacar; o que estiver sob ele permanece legível."
+              ]
+            },
+            "Com \"Selecionar, mover e redimensionar\", uma marca é selecionada novamente: arraste-a, puxe seus cantos, gire-a pela alça, altere suas cores no painel ou exclua-a com a tecla Delete. As marcas podem ser copiadas e coladas, inclusive em outras páginas.",
+            "Tudo o que for desenhado é gravado no arquivo ao salvar."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Alterando o texto e as imagens do próprio documento",
+          "body": [
+            "A ferramenta \"Editar o texto e as imagens do documento\" destaca o que a própria página contém. Clique em uma linha de texto para reescrevê-la, ou em uma imagem para movê-la, redimensioná-la, girá-la ou excluí-la.",
+            {
+              "note": "Isso altera uma linha ou uma imagem por vez. Os parágrafos não fluem novamente quando uma linha fica mais longa, e uma imagem que esteja sobre outra é selecionada junto com ela. Para alterações extensas, edite o documento no programa em que ele foi escrito."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Redação (Ocultação)",
+          "body": [
+            "Mais ferramentas → Redigir remove permanentemente o que não deve ser lido: arraste uma caixa preta sobre o conteúdo, em qualquer página. Ao salvar, o texto e as imagens sob a caixa são removidos do arquivo, e não apenas cobertos.",
+            {
+              "note": "Salve o documento redigido com um novo nome e guarde o original em local seguro: o que for redigido não poderá ser recuperado."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Marca-d'água",
+          "body": [
+            "Editar → Marca d'água escreve palavras ou insere uma imagem nas páginas escolhidas: reta ou inclinada, em um de nove locais, com o tamanho e a transparência definidos por você. Em cada página, ela se torna uma marca como qualquer outra e ainda pode ser movida ou removida."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Números de página, cabeçalho e rodapé, números Bates",
+          "body": [
+            {
+              "points": [
+                "Editar → Numeração de páginas: o formato (1, 1 / 12, Página 1 e outros), o local e quais páginas receberão a numeração.",
+                "Inserir → Cabeçalho e rodapé: texto em qualquer um de seis locais. Nele, {page} representa o número da página, {pages} o número total de páginas, {date} a data de hoje e {file} o nome do documento.",
+                "Inserir → Numeração Bates: números sequenciais com uma palavra antes ou depois (ABC000123), conforme usado para documentos de um processo."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Links, marcadores e arquivos anexados",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Links",
+          "body": [
+            "Inserir → Link: arraste sobre o local que deve ser clicado e, em seguida, indique para onde ele leva: um endereço web ou uma página deste documento.",
+            "Os links de um documento funcionam enquanto você o lê: um clique em um link para uma página leva a ela; um endereço web ou de e-mail é encaminhado ao seu navegador ou programa de e-mail."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Marcadores",
+          "body": [
+            "Inserir → Novo marcador: clique no local para onde ele deve levar e dê-lhe um título. Inserir → Marcadores abre a lista, onde um marcador pode ser renomeado ou removido. As alterações são gravadas ao salvar."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Arquivos anexados",
+          "body": [
+            "Inserir → Anexar arquivo: escolha um arquivo e clique onde o clipe de papel deve ficar. Você pode dar-lhe um nome e um autor, colorir o clipe, redimensioná-lo e girá-lo. O arquivo é mantido dentro do PDF ao salvar.",
+            "Inserir → Arquivos anexados lista o que o documento contém; cada arquivo pode ser salvo no disco ou removido. Um clique em um clipe de papel abre a mesma lista."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formulários",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Preenchimento de formulário",
+          "body": [
+            "Inserir → Preencher formulário mostra os campos do documento: digite em campos de texto, marque caixas de seleção, escolha em listas. As respostas são gravadas no arquivo ao salvar."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Criação de formulário",
+          "body": [
+            "O menu Inserir adiciona campos a qualquer documento: um campo de texto, uma caixa de seleção, botões de opção (dos quais um pode ser escolhido), uma lista de seleção e um campo de assinatura deixado em branco para o signatário.",
+            "Arraste na página onde o campo deve ficar. Como outras marcações, um campo pode ser movido e redimensionado até que você salve; depois disso, ele passa a fazer parte do formulário."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Assinatura",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Adicionando uma assinatura desenhada",
+          "body": [
+            "Assinar → Adicionar assinatura coloca a imagem de uma assinatura na página: desenhada aqui com uma caneta de sua escolha, digitada em uma fonte ou extraída de uma imagem (com \"Manter apenas os traços da caneta\" para a foto de uma folha assinada). A data pode ser escrita abaixo dela.",
+            "Arraste para a página onde a assinatura deve ficar. As assinaturas utilizadas são mantidas neste computador para serem usadas novamente.",
+            {
+              "note": "Esta é uma imagem: ela não garante quem a colocou ali. Uma assinatura que prova quem assinou, e que nada foi alterado desde então, é feita com um certificado."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Assinando com um certificado",
+          "body": [
+            "Assinar → Assinar com certificado cria uma assinatura digital: ela indica quem assinou e sela o documento, de modo que qualquer alteração posterior seja detectada.",
+            {
+              "steps": [
+                "Arraste para a página a área onde a assinatura será exibida (uma janela indicará isso primeiro; ela pode ser desativada). Para assinar sem exibir nada nas páginas, escolha \"Assinar sem exibir na página\".",
+                "Escolha o certificado: um dos certificados do computador (um cartão ou token aparecerá entre eles assim que estiver no leitor), ou um arquivo .pfx / .p12 com sua senha. \"Continuar\".",
+                "Escolha a aparência da assinatura. Em \"Motivo e local\", você pode escrever por que e onde está assinando: essas informações constarão na assinatura e na página, caso a aparência as exiba. Marque \"Bloquear o documento após assinar\" se ninguém mais puder assinar ou alterá-lo depois de você. Deixe \"Adicionar hora confiável (carimbo de tempo)\" marcado para que uma autoridade confirme quando você assinou.",
+                "\"Assinar\" e, em seguida, escolha onde salvar o arquivo assinado. Um token solicitará o PIN neste momento."
+              ]
+            },
+            "O arquivo assinado abre no lugar do documento. Uma senha ou PIN nunca é armazenada pelo programa.",
+            {
+              "note": "Uma assinatura qualificada é aquela feita desta forma com um certificado qualificado, em seu cartão ou token. A assinatura é realizada em seu computador; apenas o carimbo de tempo e a verificação do seu certificado acessam a internet, e eles enviam impressões digitais e o número de série do certificado, nunca o documento."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Aparências de assinatura",
+          "body": [
+            "Uma aparência define como a assinatura do certificado aparece na página. Mantenha várias com nomes personalizados: uma para assinar por uma empresa, outra para assinar em seu próprio nome.",
+            {
+              "points": [
+                "Imagem: nenhuma, de um arquivo (um carimbo, uma assinatura digitalizada) ou desenhada aqui.",
+                "Texto exibido: nome, data, motivo, local, cada um com ou sem seu rótulo.",
+                "Linhas personalizadas abaixo do nome, como cargo e empresa.",
+                "\"Texto padrão\" está sempre presente: quem assinou e quando."
+              ]
+            },
+            "Na janela de assinatura: \"Novo…\", \"Editar…\", \"Excluir\". A última utilizada é oferecida primeiro. As aparências são mantidas neste computador."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Várias assinaturas e bloqueio",
+          "body": [
+            "Um documento pode ser assinado por várias pessoas, uma após a outra. Abra o arquivo assinado e assine-o sem alterar nada: sua assinatura será adicionada ao final do arquivo e as anteriores permanecerão válidas.",
+            "\"Bloquear o documento após assinar\" (desativado a menos que você marque) fecha o documento: ninguém poderá assinar depois de você e nada mais poderá ser alterado. Esta ação não pode ser desfeita.",
+            {
+              "note": "Se você alterar um documento assinado antes de assiná-lo novamente, ele terá que ser gravado de novo e as assinaturas anteriores serão removidas. A janela de assinatura avisará você: para mantê-las, abra o arquivo novamente e assine sem alterar nada."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Carimbos de tempo",
+          "body": [
+            "Um carimbo de tempo é a confirmação assinada de uma autoridade de carimbo de tempo sobre quando algo existia. Sem ele, a hora de uma assinatura vem do relógio do computador do signatário, que qualquer pessoa pode ajustar; um carimbo de tempo comprova o momento e mantém a assinatura comprovável depois que o certificado expira (PAdES B-T).",
+            {
+              "points": [
+                "As assinaturas recebem um quando \"Adicionar hora confiável (carimbo de tempo)\" está marcado na janela de assinatura. Configurações → Assinaturas define se ele começa marcado, aqui e no processamento em lote.",
+                "Assinar → Adicionar carimbo de tempo dá ao documento inteiro um carimbo de tempo próprio, sem certificado: comprova que o documento existia, exatamente como está, naquele momento. Ele é salvo como um novo arquivo; as assinaturas que o arquivo já tem permanecem válidas."
+              ]
+            },
+            "A autoridade é a da DigiCert (http://timestamp.digicert.com), gratuita e reconhecida pelo Adobe Reader e pelo Windows; outra pode ser definida em Configurações → Assinaturas. Ela recebe apenas uma impressão digital (SHA-256), nunca o documento, e é necessária conexão com a internet. Quando uma assinatura recebe um carimbo de tempo, o emissor do seu certificado também é consultado para saber se o certificado ainda é válido, e a resposta fica guardada na assinatura (validação de longo prazo): assim, o Adobe Reader pode mostrar a assinatura como válida, agora e depois que o certificado expirar.",
+            {
+              "note": "Se não for possível contatar a autoridade, nada é assinado nem gravado: tente novamente ou desmarque o carimbo de tempo para assinar sem ele."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Verificação de assinaturas",
+          "body": [
+            "Assinar → Verificar assinaturas lista cada assinatura de certificado do arquivo: quem assinou, quem emitiu o certificado, quando, o motivo e o local, e",
+            {
+              "points": [
+                "se o documento permanece inalterado desde aquela assinatura (uma assinatura adicionada posteriormente não conta como alteração);",
+                "se a assinatura bloqueia o documento;",
+                "se este computador confia na autoridade por trás do certificado e se o certificado é válido hoje;",
+                "a hora confirmada pelo seu carimbo de tempo, e por qual autoridade, quando houver um. Um carimbo de tempo do documento inteiro também é listado, com sua própria verificação."
+              ]
+            },
+            "A verificação é do arquivo conforme foi salvo pela última vez e é feita neste computador, sem acessar a internet. Clicar em uma assinatura em uma página abre esta lista nela. Abaixo de cada assinatura, “Mostrar certificado” abre a janela do Windows do certificado (a cadeia e todos os detalhes; a partir dela, “Instalar Certificado” faz este computador confiar em um certificado que você conhece), e “Validar” consulta online o emissor do certificado, apenas quando você clica, se o certificado foi revogado."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mais ferramentas",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Reconhecimento de texto (OCR)",
+          "body": [
+            "Mais ferramentas → Reconhecer texto (OCR) lê as palavras de páginas digitalizadas e as escreve em camadas invisíveis nas páginas, para que o documento possa ser pesquisado e seu texto copiado e exportado. A aparência das páginas não muda.",
+            "Marque apenas os idiomas em que as páginas estão escritas; páginas que já possuem texto são mantidas como estão.",
+            {
+              "note": "A leitura é feita pelo mecanismo Tesseract, um programa gratuito instalado separadamente. Sem ele, a janela exibe o comando para instalá-lo no Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Diminuindo o tamanho de um documento",
+          "body": [
+            "Mais ferramentas → Comprimir salva o documento como um arquivo menor, reduzindo a quantidade de pixels de suas fotografias e digitalizações. Existem três níveis de compressão; textos e desenhos permanecem com a mesma nitidez. Um documento com poucas imagens terá pouco ganho."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Comparando dois documentos",
+          "body": [
+            "Mais ferramentas → Comparar documentos: escolha outro PDF. Os dois são exibidos lado a lado, página por página, com as páginas cujo texto difere marcadas e as linhas exclusivas de cada um listadas."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Processamento em lote: vários arquivos de uma vez",
+          "body": [
+            "Mais ferramentas → Processamento em lote realiza as mesmas ações em vários arquivos, em uma guia própria. Cada resultado é um novo arquivo. Se os resultados forem ocupar o lugar de arquivos que já estão na pasta (seus próprios arquivos, quando vão para a pasta deles sem nada acrescentado ao nome), você será perguntado antes se deseja substituí-los, ignorá-los ou cancelar. Um arquivo só é substituído quando seu resultado estiver concluído; um arquivo que esteja aberto (em uma guia aqui ou em outro programa) permanece como está e é marcado como não concluído.",
+            {
+              "steps": [
+                "À esquerda, adicione os arquivos: \"Adicionar arquivos\", \"Adicionar uma pasta\" (com as subpastas) ou arraste-os para dentro.",
+                "À direita, marque o que fazer. Todo arquivo torna-se um PDF em qualquer caso; além disso, você pode girar páginas, reconhecer texto, adicionar cabeçalho e rodapé, marca d'água ou numeração de páginas, diminuir o tamanho dos arquivos, assiná-los com um certificado ou exportá-los em outro formato. Os números indicam a ordem.",
+                "Escolha como salvar: um arquivo para cada um ou tudo em um único PDF (na ordem da lista), e a pasta onde os resultados serão salvos. Quando todos os arquivos vêm da mesma pasta, essa pasta é escolhida para você até que você escolha outra; caso contrário, é a última pasta que você escolheu.",
+                "\"Iniciar\". Cada arquivo mostra o resultado do processamento; a execução pode ser interrompida entre os arquivos."
+              ]
+            },
+            {
+              "points": [
+                "Receitas: \"Salvar como receita\" guarda tudo o que você escolheu (exceto os arquivos e eventuais senhas) sob um nome, para ser configurado novamente com apenas uma escolha.",
+                "\"Manter as pastas dos arquivos nos resultados\" recria a estrutura de pastas de uma pasta adicionada.",
+                "\"Gravar um relatório da execução\" deixa um arquivo de texto ao lado dos resultados informando o que foi gravado e o que falhou.",
+                "Um PDF que está apenas assinado mantém as assinaturas que possui; se qualquer outra ação for realizada nele na mesma execução, ele será gravado novamente e as assinaturas serão removidas."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Configurações",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "As configurações do PDF Organizer",
+          "body": [
+            "Arquivo → Configurações (ou Configurações na barra lateral, depois PDF Organizer). Cada configuração pode ser redefinida individualmente ou todas de uma vez.",
+            {
+              "points": [
+                "Ao abrir um documento: o tamanho do documento exibido ao abrir, rolagem ou uma página por vez, exibição de miniaturas ou não.",
+                "Unidades, réguas e grade: a unidade (milímetros, polegadas, pontos), réguas, a grade e seu espaçamento.",
+                "Impressão: o papel, a orientação e a escala com que a janela de impressão inicia.",
+                "Barra de ferramentas rápida: quais botões a faixa acima das páginas possui.",
+                "Nomes de novos documentos: os padrões para páginas extraídas, novos documentos e o PDF no qual o processamento em lote agrupa vários arquivos.",
+                "Assinaturas: se o comando \"Salvar\" deve perguntar antes de gravar sobre um arquivo assinado.",
+                "Atalhos de teclado: clique nas teclas de um comando e, em seguida, pressione as novas teclas."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Sobre o PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Sobre o PDF Organizer",
+          "body": [
+            "O PDF Organizer é o aplicativo de PDF do Syntelab Creative: ele lê documentos PDF, organiza e combina suas páginas, escreve e desenha neles, preenche e cria formulários, assina com um certificado e verifica assinaturas, e realiza as mesmas funções em vários arquivos simultaneamente.",
+            "Ele é novo e algumas de suas funcionalidades são passos iniciais. Onde ele não atender às necessidades de seus documentos, informe-nos através de Ajuda → Feedback: é assim que sabemos no que trabalhar."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Com o que o PDF Organizer foi construído",
+          "body": [
+            {
+              "points": [
+                "Leitura, desenho e escrita de PDF: MuPDF.",
+                "Reconhecimento de texto (OCR): Tesseract, quando instalado no computador.",
+                "Abertura de documentos de escritório: Word, Excel e PowerPoint, ou LibreOffice, dependendo de qual estiver instalado.",
+                "Salvando uma página da web como PDF: o navegador instalado no computador.",
+                "Assinatura com certificado: os serviços de certificado do Windows; as assinaturas são gravadas conforme solicitado pelo padrão PAdES."
+              ]
+            },
+            "O que ele compartilha com o restante do programa está em \"Sobre o Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "O que o PDF Organizer ainda não consegue fazer",
+          "body": [
+            {
+              "points": [
+                "Documentos do Office são abertos pelo pacote office do computador; sem Word, Excel, PowerPoint ou LibreOffice, eles não podem ser abertos. Um conversor próprio está sendo desenvolvido: veja \"No que estamos trabalhando\".",
+                "O reconhecimento de texto requer o mecanismo Tesseract, instalado separadamente.",
+                "O texto de um documento é alterado uma linha por vez; os parágrafos não fluem automaticamente.",
+                "Imagens impressas em quatro cores (CMYK) não podem ser selecionadas para serem movidas.",
+                "“Validar” informa se um certificado está revogado hoje, não quando ele foi revogado.",
+                "A assinatura com certificado funciona no Windows por enquanto; no Linux e macOS, será implementada em uma versão posterior."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

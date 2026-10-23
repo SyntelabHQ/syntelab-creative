@@ -1,0 +1,16 @@
+{
+  "name": "@syntelab/units-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "dependencies": {
+    "@syntelab/command-registry": "*",
+    "@syntelab/data-grid": "*",
+    "@syntelab/i18n": "*",
+    "@syntelab/shell-api": "*",
+    "@syntelab/ui-kit": "*"
+  }
+}

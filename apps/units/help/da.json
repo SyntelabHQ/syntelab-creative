@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Konvertering",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Konverterne",
+          "body": [
+            "Units konverterer værdier mellem måleenheder: én værdi hurtigt eller hele tabeller med værdier på én gang. Alt bliver beregnet på din computer.",
+            "Konverterne findes i seks menuer: Grundlæggende, Bevægelse og mekanik, Energi og effekt, Videnskabelig, Digital og medier samt Specialiseret fysik. Ved at vælge en af dem åbnes dens tabel.",
+            {
+              "points": [
+                "En konverter åbnes i den fane, du befinder dig i. Hvis dens tabel indeholder værdier, bliver du først spurgt: Fortsæt (værdierne går tabt), Åbn i en ny fane eller Annuller.",
+                "Indstillinger → Units → \"Åbn hver konverter i sin egen fane\" åbner i stedet hver konverter, du vælger, i en ny fane.",
+                "Fil → Gå til Start går tilbage til den første side i Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Hurtig konvertering",
+          "body": [
+            "Den første side i Units, Hurtig konvertering, konverterer én værdi fra en enhed til en anden. Vælg en konverter, indtast værdien i feltet \"Fra\", og vælg de to enheder: resultatet vises i feltet \"Til\".",
+            {
+              "points": [
+                "Hver side viser de populære enheder for konverteren samt dine egne enheder, med en søgefunktion over dem. Konverterens tabel indeholder alle enheder.",
+                "Knappen mellem de to sider bytter om på de to enheder.",
+                "Bogmærket ved siden af en enhed fastgør den: fastgjorte enheder vises først i begge lister og i tabellens enhedspanel.",
+                "Knappen i resultatet kopierer det; × rydder værdien.",
+                "\"Åbn i tabellen\" åbner konverterens tabel."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Hvordan tal læses og skrives",
+          "body": [
+            "Du kan indtaste og indsætte tal, som de skrives i forskellige lande: 1,234.56 og 1.234,56 forstås begge, ligesom mellemrum og apostroffer mellem tusinder, samt 1.5e-3 for en potens af ti.",
+            "Et tal, der kan læses på to måder (1,234: et tusind eller én og lidt til), læses på den måde, programmets sprog skriver tal på, og linjen under tabellen angiver dette.",
+            "Et resultat skrives med decimalerne for den enhed, det lander i, ikke med så mange cifre, som du indtastede: 5 cm er 1,97 in. En værdi, der ikke er nul, viser altid nogle få cifre, der siger noget, så 1 cm er 0,00001 km og aldrig 0,000 km.",
+            "Værdier, der er for store eller for små til at kunne læses ved et hurtigt blik, skrives med en potens af ti, som 1,6 × 10⁻³⁵. Vis → Ekstreme værdier i fuld længde skriver dem i stedet med alle nuller.",
+            "Hvor en enhed ikke har en sådan værdi (et lydtryk på nul har ingen decibel), viser cellen en bindestreg."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabellen",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Rækker og kolonner",
+          "body": [
+            "Hver kolonne er en enhed, og hver række er en værdi. Den celle, du skriver i, styrer dens række: de andre kolonner viser den samme værdi i deres enheder. Den indtastede celle vises med fed skrift.",
+            "Det, der ikke er et tal, bevares og vises med rødt; dens række konverterer intet, før du retter det.",
+            {
+              "points": [
+                "Dobbeltklik på en celle, eller begynd blot at skrive i den, for at redigere. Enter flytter ned, Tab til højre; piletasterne flytter; Escape efterlader cellen, som den var.",
+                "Klik på hjørnet (#) for at markere hele tabellen, et rækkenummer for at markere dens række, en titel for at markere dens kolonne. Shift+klik markerer et område, Ctrl+klik tilføjer celler, og trækning markerer også.",
+                "Home og End går til den første og den sidste kolonne i rækken; Ctrl+Home til den første celle i tabellen, Ctrl+End til den sidste. Ctrl med en pil går til kanten af tabellen: den første eller sidste række, den første eller sidste kolonne. Page Up og Page Down flytter en skærm. Med Shift udvider hver af disse markeringen i stedet.",
+                "En markering af flere celler er omridset på ydersiden; cellen, hvor indtastningen sker, forbliver uden skygge indeni.",
+                "Delete tømmer de markerede rækker.",
+                "Indtastning i den sidste række tilføjer en række. En tabel har ingen øvre grænse for, hvad den kan rumme: den er så lang, som din computers hukommelse tillader (en række fylder 16 bytes, så 100 millioner rækker fylder ca. 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Kolonner og enhedspanelet",
+          "body": [
+            "Panelet ved siden af tabellen viser konverterens enheder. Øverst findes de enheder, der allerede er i tabellen: klik på en for at fjerne dens kolonne. Herunder findes alle enheder: søg efter navn eller symbol, filtrer efter gruppe eller efter \"Populære\", og klik på en enhed for at tilføje den som en kolonne.",
+            "Bogmærket ved siden af en enhed fastgør den som favorit: den kommer først på listen og først i Hurtig konvertering.",
+            {
+              "points": [
+                "Kolonnerne deler tabellens bredde ligeligt, indtil deres titler ikke længere kan være der; derefter kan tabellen rulles sidelæns.",
+                "Træk i kanten af en titel for at ændre kolonnens bredde; dobbeltklik på kanten for at tilpasse kolonnen til dens længste værdi. Kolonnen med rækkenumre kan også trækkes i.",
+                "Kolonnens ⋮-knap: flyt den til venstre eller højre, fastgør den til venstre eller højre kant, ændr dens præcision eller fjern den.",
+                "Præcisionen for en kolonne ændrer kun den pågældende kolonne. \"Brug for denne enhed overalt\" gør den til enhedens præcision i alle tabeller og i Hurtig konvertering.",
+                "Knappen med to pile ved siden af Fortryd og Gør om tilpasser kolonnerne til tabellen: alle bredder, du har trukket eller tilpasset, nulstilles, og kolonnerne deler tabellens bredde igen.",
+                "De to øverste dele af panelet, enhederne i tabellen og \"Tilføj enheder\" (søgning og filtre), kan foldes sammen ved at klikke på deres navne, så listen får mere plads."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Fortryd, kopier, indsæt, importer og eksporter",
+          "body": [
+            "Linjen over tabellen indeholder dens værktøjer.",
+            {
+              "points": [
+                "Fortryd og Gør om (Ctrl+Z, Ctrl+Y) gennemgår hver ændring i tabellen. En indsættelse eller en import tæller som ét trin.",
+                "Kopier (Ctrl+C) kopierer hele tabellen eller det markerede område, som et regneark ville læse det. \"Transponeret\" bytter om på rækker og kolonner.",
+                "Indsæt (Ctrl+V) indsætter kopierede rækker i tabellen fra den aktive celle og nedad. Hvis den første række indeholder enhedsnavne, matches kolonnerne efter disse, og enheder, der endnu ikke er i tabellen, bliver tilføjet.",
+                "Importer læser en Excel-arbejdsbog, en CSV- eller en TSV-fil i stedet for det, tabellen indeholder. \"Genkend format automatisk\" bestemmer typen ud fra filen.",
+                "Eksporter skriver tabellen som Excel, CSV, TSV eller JSON. Ved brug af komma som decimalseparator skrives CSV med semikolon, som regneark forventer. Et Excel-ark rummer 1.048.576 rækker: en længere tabel fortsætter på de næste ark i samme arbejdsbog under de samme titler.",
+                "Viskelæderet tømmer de valgte rækker; papirkurven tømmer hele tabellen."
+              ]
+            },
+            "En række indeholder én værdi. For en indsat eller importeret række med flere værdier tages den første, og de andre beregnes ud fra denne.",
+            "Det kan tage tid at indsætte, importere, eksportere eller kopiere rigtig mange rækker. Et kort over tabellen viser derefter, hvor langt arbejdet er nået, i procent og i rækker, med en Stop-knap. En indsættelse eller import, der stoppes, efterlader tabellen, som den var; en eksport, der stoppes, skriver ingen fil.",
+            "Når computeren ikke har mere hukommelse tilbage til rækkerne, ændres intet, og linjen under tabellen angiver, hvor meget der var brug for. Når rækkerne kan være der, men tabellen, som den var, ikke kunne bevares ved siden af dem, bliver du spurgt, om du vil fortsætte uden fortrydelse: denne ændring og de foregående kan derefter ikke længere fortrydes. Før der spørges, frigives de ældste fortrydelsestrin for at gøre plads.",
+            "Tabelindstillinger (tandhjulet): hvad kolonneoverskriften viser (navn og symbol, navn eller symbol), om kopier og eksport inkluderer overskrifter og rækkenumre, \"Start denne konverter med disse kolonner\" og \"Nulstil tabel\"."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Specielle konvertere",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valuta",
+          "body": [
+            "Valutaer har ingen fast faktor: værdien af en valuta ændrer sig. Valutakonverteren henter sine kurser fra to gratis tjenester, mens du bruger den, og kun på det tidspunkt.",
+            {
+              "points": [
+                "Landenes valutaer: Rates By Exchange Rate API, https://www.exchangerate-api.com . De ændres én gang om dagen ved kilden og læses ikke hyppigere end det.",
+                "Kryptovalutaer: Powered by CoinGecko, https://www.coingecko.com . De læses, når konverteren åbnes eller kommer i forgrunden, og det eksisterende er ældre end et kvarter, samt når du trykker på Opdater; aldrig via en timer."
+              ]
+            },
+            "Der anmodes kun om kurserne. Intet om dig bliver sendt, og aldrig de beløb, du konverterer.",
+            "Linjen under tabellen og under resultatet af Hurtig konvertering angiver, hvornår kurserne er fra. Uden forbindelse bruges de seneste kurser, og disse markeres som gamle. En valuta, som tjenesterne ikke giver en kurs for, vises med en bindestreg.",
+            "Indstillinger → Units → Valuta: \"Hent kurser fra netværket\" kan slås fra, hvorefter konverteren bruger de seneste gemte kurser. \"Vis kilderne ved siden af kurserne\" viser eller skjuler navnene på de to tjenester på den linje.",
+            "Kurserne er kun til information. Stol ikke på dem i forbindelse med en transaktion."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Talsystem",
+          "body": [
+            "Enhederne i denne konverter er måder at skrive et helt tal på: baser fra 2 til 64, romertal, base 60 med kolon (1:30:15), binær-kodet decimal og Gray-kode. Deres værdier er tekst: skriv FF under hexadecimal, og de andre kolonner viser 255, 11111111 og så videre.",
+            "Romertal går fra I til MMMCMXCIX (1 til 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Enheder, der ikke er en simpel faktor",
+          "body": [
+            "De fleste enheder er en faktor af en anden. Nogle er ikke, og Units konverterer dem, som de er defineret: temperaturer med deres offset; brændstoføkonomi (liter per 100 km mod engelske mil per gallon); en bølgelængde mod en frekvens; konduktans mod modstand; grader Baumé, API, Brix og Plato mod densitet; decibel mod lydtryk og intensitet; en hældning i procent mod dens vinkel.",
+            "En temperatur og en temperaturforskel er ikke det samme: 100 °C er 212 °F, men en forskel på 100 °C er en forskel på 180 °F. Enhederne i gruppen \"Forskel (Δ)\" konverteres indbyrdes; mellem dem og temperaturskalaerne viser en celle en bindestreg."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dine egne enheder",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Oprettelse af en enhed",
+          "body": [
+            "Du kan tilføje dine egne enheder til enhver konverter. I enhedspanelet skal du vælge \"Ny enhed\", give den et navn og et symbol, og definere den ud fra en eksisterende enhed.",
+            {
+              "points": [
+                "En faktor: \"1 skridt = 0,75 m\". For en skala, der ikke starter ved nul, skal du også angive, hvad der lægges til efter multiplikation.",
+                "En formel: hvordan værdien bliver til den anden enhed, med x for værdien, og formlen for den omvendte vej. For eksempel x * 9 / 5 + 32 og (x - 32) * 5 / 9."
+              ]
+            },
+            "Det, du skriver, testes, mens du skriver, og resultatet af din enhed vises, før du gemmer den. En formel kan bruge + − × ÷ ^, parenteser, x, pi, e og funktionerne sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos og atan. Den beregnes og køres aldrig som et program.",
+            "Dine enheder er anført under \"Mine\" i panelet, hvor de kan ændres og fjernes. En af dine enheder kan defineres ud fra en anden af dine enheder; sletning af en enhed fjerner også dem, der er defineret ud fra den.",
+            "Indstillinger → Units viser dine enheder for hver konverter, og eksporterer og importerer dem som tekst, du kan gemme eller flytte til en anden computer."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Indstillinger",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Indstillinger for Units",
+          "body": [
+            "Fil → Åbn Indstillinger åbner indstillingerne for Units; det gør tabellens indstillinger også (tandhjulet i bjælken).",
+            {
+              "points": [
+                "Åbn hver konverter i sin egen fane, eller i den fane du befinder dig i.",
+                "Ekstreme værdier i fuld længde, hvad der skrives mellem tusinder (10000,000, 10 000,000 eller 10.000,000; intet, medmindre du vælger andet) og rækkenumre.",
+                "Valuta: om kurserne læses fra netværket, og om tjenesterne er navngivet ved siden af dem.",
+                "Enheders præcision: vælg en konverter (eller \"Enheder du har ændret\"), søg efter en enhed, og indstil dens decimaler med − og +; pilen nulstiller den til enhedens egen værdi. \"Brug for denne enhed overalt\" i en kolonnemenu indstiller den samme værdi.",
+                "Enheder en tabel starter med: de konvertere, hvis første kolonner du har valgt, hver med en vej tilbage til dem, der følger med.",
+                "Dine egne enheder."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Om Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Om Units",
+          "body": [
+            "Units er konverter-appen i Syntelab Creative: 38 konvertere med mere end 1.500 enheder, fra længde og temperatur til valutaer og talsystemer. En værdi, der indtastes én gang, vises i enhver enhed, du anmoder om, i en tabel, der kan rumme én værdi eller millioner af dem.",
+            "Tal beregnes præcist som brøker og afrundes kun, når de skrives. Alt foregår på denne computer; kun valutakurser læses fra netværket, og dette kan slås fra.",
+            "Det er nyt. Hvis det ikke lever op til dine behov i dit arbejde, så fortæl os det via Hjælp → Feedback: det er sådan, vi ved, hvad vi skal arbejde på."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Hvor mange rækker en tabel kan rumme: hvad vi har målt",
+          "body": [
+            "En tabel har ingen fast grænse for antallet af rækker: den er så lang, som din computers hukommelse tillader. En række fylder 16 bytes, så 100 millioner rækker fylder ca. 1,5 GB. Når hukommelsen slipper op, forbliver tabellen som den var, og programmet fortæller, hvor meget der var brug for.",
+            "Vi har målt det med 50.000.000 rækker, hver med et tal i én kolonne, i den optimerede version af programmet:",
+            {
+              "points": [
+                "Indsættelse af 50.000.000 rækker: ca. 7 sekunder.",
+                "Import af disse fra en CSV-fil: 12 sekunder.",
+                "Eksport af disse til en CSV-fil, med en anden kolonne konverteret: ca. 3,5 minutter.",
+                "Eksport af disse til Excel, fordelt på 48 ark: 4,3 minutter."
+              ]
+            },
+            "Eksport tager længere tid end import, fordi hver celle, der skrives, først konverteres præcist.",
+            {
+              "note": "Computeren, som testen blev kørt på: AMD Ryzen 9 9950X3D (16 kerner, 32 tråde), 64 GB hukommelse, Windows 11 Pro. Oktober 2026. På en anden computer vil tiderne variere; størrelsen på en række vil ikke."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Hvad Units er bygget med",
+          "body": [
+            {
+              "points": [
+                "Præcise tal: num-bibliotekerne i Rust (brøker af hele tal af enhver størrelse).",
+                "Enhederne, deres faktorer og deres grupper: programmets datafiler, én for hver konverter.",
+                "Læsning af Excel- og OpenDocument-arbejdsbøger: calamine. Skrivning af Excel-arbejdsbøger: rust_xlsxwriter.",
+                "Systemets udklipsholder, til kopiering og indsættelse af meget mange rækker: arboard.",
+                "Valutakurser: ExchangeRate-API og CoinGecko (se \"Valuta\")."
+              ]
+            },
+            "Det, som det deler med resten af programmet, findes under \"Om Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Hvad Units endnu ikke kan",
+          "body": [
+            {
+              "points": [
+                "En række indeholder én værdi: af en indsat række med flere værdier tages den første.",
+                "Eksport af meget mange rækker er langsomt (se hvad vi har målt).",
+                "Det, der kopieres til udklipsholderen, holdes i hukommelsen som én tekst, før det indsættes.",
+                "Valutakurserne er så opdaterede, som deres to kilder giver dem: én gang om dagen for landenes valutaer."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+.entries {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding-inline-start: 16px;
+  position: relative;
+  border-inline-start: 3px solid var(--sc-action-changelog);
+}
+
+/* A line between two items, in the middle of the space between them. */
+.entry + .entry::before {
+  content: '';
+  position: absolute;
+  inset-inline: -3px 0;
+  top: -13px;
+  border-top: 1px solid var(--sc-border);
+}
+
+.date {
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.body {
+  margin: 0;
+  /* A blank line in the text starts a new paragraph. */
+  white-space: pre-line;
+}
+
+.empty {
+  margin: 0;
+  color: var(--sc-muted);
+}

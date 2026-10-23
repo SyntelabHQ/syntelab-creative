@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Hitta rätt",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Första sidan",
+          "body": [
+            "En Dev-flik öppnas på första sidan, där alla verktyg finns, grupperade som i menyerna: Koda, Data, Generera, Inspektera, Nätverk.",
+            {
+              "points": [
+                "Skriv i \"Sök efter verktyg\" för att begränsa listan.",
+                "Häftstiftet på ett verktyg håller det överst, under Fastnålade.",
+                "Ett verktyg öppnas i samma flik; Arkiv → Alla verktyg går tillbaka till första sidan. I Inställningar kan du välja att varje verktyg öppnas i en egen flik, och att en ny flik öppnas med det senast använda verktyget."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Klistra in vad som helst",
+          "body": [
+            "Rutan högst upp på första sidan tar emot vad du än klistrar in och identifierar vad det ser ut som: en token, ett certifikat, JSON, UUID:n, tidsstämplar, cron-scheman, URL:er, XML eller HTML, SQL, Base64, en kontrollsumma, en tabell, YAML.",
+            "Under varje gissning finns de verktyg som fungerar på det aktuella objektet, med den bästa matchningen först. Klicka på ett av dem: det öppnas med texten redan ifylld och körs.",
+            {
+              "note": "Det du klistrar in stannar i rutan tills du rensar den eller stänger fliken. Det skrivs aldrig till disk."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Hur ett verktyg är uppbyggt",
+          "body": [
+            "De flesta verktyg har samma ram: alternativen på en rad högst upp, indata på ena sidan, utdata på den andra, och en rad längst ner som beskriver vad som hände.",
+            {
+              "points": [
+                "Resultatet skapas på nytt varje gång inmatningen eller ett alternativ ändras, och visas i utdata; ”Körs automatiskt” på raden med alternativ anger det. Bara en text som är för lång för att köras vid varje tangent, eller en fil större än 128 MB, väntar på knappen Kör, som då visas. Ctrl+Enter kör verktyget när som helst.",
+                "Ett resultat som inte är text (en bild avkodad från Base64, gzip) visas som en förhandsgranskning: en bild som den är, allt annat efter typ, storlek och första byten. Kopiera kopierar det då som Base64, och en bild kan kopieras som bild. Detsamma gäller en indatafil som inte är text.",
+                "Öppna fil, Klistra in och Rensa finns över indata; Kopiera och Spara till fil över utdata. En fil kan även dras och släppas på indatafältet.",
+                "Eventuella fel i indata beskrivs med ord, inklusive rad och kolumn, och markeras i editorn.",
+                "Menyn Visa placerar de två rutorna sida vid sida eller under varandra, visar radnummer och bryter långa rader; linjen mellan rutorna kan dras.",
+                "De alternativ du väljer kommers ihåg till nästa gång. Det du skriver görs inte."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Töm, och vad som sparas",
+          "body": [
+            "Töm, längst ner till höger i varje verktyg, tömmer det omedelbart: indata, resultatet, allt som skrivits i dess rutor och det som dess editorer kunde ångra.",
+            "Dev sparar endast sina inställningar, de verktyg du har nålat, namnet på det senast använda verktyget och alternativen för varje verktyg. Ingenting du skriver, klistrar in, öppnar eller skapar i ett verktyg skrivs till disk, till en logg eller till en lista över senaste filer. Hemligheter i synnerhet: nycklar, lösenfraser, tokens och anropshuvuden finns endast i fliken och ingen annanstans.",
+            "En sak väntar på disken en stund: resultatet av en fil, och ett resultat som inte är text, skrivs till en egen mapp för programmet så att de kan visas och sedan sparas. Var och en raderas när ett annat resultat tar dess plats, när du tömmer eller stänger verktyget, och i vilket fall som helst när Dev startar igen."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Filer av vilken storlek som helst",
+          "body": [
+            "Det finns ingen gräns för filstorleken. En fil som är tillräckligt liten för att visas (upp till 16 MB) placeras i redigeraren. En större fil, eller en som inte är text, stannar på disken: dess början (eller en förhandsgranskning) visas, verktyget läser den där den finns, och dess resultat visas som för en text. Spara till fil kopierar sedan resultatet dit du väljer.",
+            {
+              "points": [
+                "Långvarigt arbete visar ett kort med hur långt det har kommit och en Stopp-knapp.",
+                "En fil som är text i en annan kodning än UTF-8 (UTF-16, Windows-1252 och liknande) läses som text när den är tillräckligt liten för att visas, och kodningen anges. Det du sparar från Dev är UTF-8.",
+                "En fil som släpps på ett verktyg öppnas som med Öppna fil. Där fönstret inte kan avgöra var den finns tas den upp till 16 MB, som om den klistrades in."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Många filer och hela mappar",
+          "body": [
+            "Där ett verktyg har \"Arbeta på: Text / Filer\", kör Filer det på många filer på en gång.",
+            {
+              "steps": [
+                "Lägg till filer, eller en mapp (inklusive undermappar, om du låter det vara aktiverat).",
+                "Varje fil läses en gång när den läggs till och det meddelas om verktyget accepterar den.",
+                "Välj var resultaten ska hamna: bredvid varje fil under ett nytt namn, i en mapp (med bibehållen mappstruktur), eller över filerna själva, vilket frågas om en gång till. Hash kan även visa resultaten direkt i listan.",
+                "Klicka på en fil i listan för att se enbart dess resultat under valen, innan något skrivs.",
+                "Kör. En fil som är felaktig stoppar inte de andra; varje fil visar hur resultatet blev."
+              ]
+            },
+            {
+              "note": "Ett resultat skrivs aldrig över en befintlig fil om du inte uttryckligen ber om det."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Högerklicksmenyn i Utforskaren i Windows",
+          "body": [
+            "Aktivera detta i programmets inställningar, under Utforskaren i Windows. Allt samlas under en rad, \"Syntelab Creative\"; i Windows 11 finns det under \"Visa fler alternativ\".",
+            {
+              "points": [
+                "Öppna i Syntelab Dev: för de filtyper som ett verktyg läser (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz och liknande). Filen öppnas i det verktyg som passar dess typ.",
+                "Kontrollsummor: för vilken fil eller mapp som helst. Hashvärdena listas bredvid varje fil, och inget skrivs till filerna.",
+                "Hex-vy: för vilken fil som helst.",
+                "Jämför: två filer placeras på varsin sida i Diff; två mappar jämförs i mappjämförelsen."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Koda",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Konverterar bytes till Base64 och vice versa. Kodning kan användas på vilken fil som helst; avkodning återställer bytes, vilka visas om det är text och sparas till en fil om det inte är det.",
+            {
+              "points": [
+                "Alfabet: standardalfabetet, eller det för URL:er (- och _).",
+                "Fyll med =, och rader om 64, 76 eller valfritt antal tecken.",
+                "Avkodning hanterar båda alfabeten, med eller utan utfyllnad, och anger var ett tecken är felaktigt."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL-koda / avkoda",
+          "body": [
+            "Procentkodning, så som webbläsare skriver den: en del av en adress (allt som inte är en vanlig bokstav kodas), en hel adress (dess egna tecken behålls), eller ett formulär (+ för mellanslag).",
+            "Avkodning anger var ett %-tecken inte följs av två hexadecimala siffror."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML-entiteter",
+          "body": [
+            "Skriver tecken som HTML och XML reserverar (&, <, >, citattecken) som entiteter, och läser entiteter tillbaka: via namn, decimalt nummer eller hexadecimalt nummer. Namnen följer HTML-standarden.",
+            "\"Även varje tecken som inte är ASCII\" skriver även accentuerade bokstäver och andra alfabet som entiteter."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT-avkodare",
+          "body": [
+            "Delar upp en JSON Web Token: dess header och payload som JSON, samt dess claims i klartext (utfärdare, subjekt, mottagare, utgångsdatum, med \"utgången\" eller \"inte utgången än\").",
+            "Ange hemligheten för att kontrollera en signatur skapad med en delad hemlighet (HS256, HS384, HS512). Signaturer skapade med en privat nyckel (RS, ES, PS) kontrolleras inte.",
+            {
+              "note": "Token och hemligheten stannar i fliken: inget skickas någonstans för att avkoda en token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Skriver en text som en sträng i ett programmeringsspråk (JSON, JavaScript, C, C++, Java och liknande) med citattecken, radbrytningar och andra tecken eskaperade, och läser tillbaka en sådan sträng."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Komprimerar och dekomprimerar gzip, en fil av vilken storlek som helst medan den läses. Nivån går från snabbast till minsta; resultatet av en text kan ges som Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Talsystem",
+          "body": [
+            "Visar heltal, ett på varje rad, i binär, oktal, decimal och hexadecimal form, samt i ytterligare en bas som du väljer, upp till 36. Ett tal har ingen maximal storlek.",
+            {
+              "points": [
+                "Talets bas avgörs av hur det är skrivet: 0x för hexadecimalt, 0b för binärt, 0o för oktalt, bokstäver för hexadecimalt, annars decimalt. Eller välj den bas som allt ska läsas i.",
+                "Mellanrum, understreck och apostrofer mellan siffror ignoreras: 1_000_000.",
+                "Ett negativt tal ges också så som datorer lagrar det (tvåkomplementsform), i den minsta av 8, 16, 32, 64 bitar och så vidare som rymmer det."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON-formaterare",
+          "body": [
+            "Formaterar, minifierar och validerar JSON, och visar det som ett träd. Ett dokument av vilken storlek som helst läses som en ström.",
+            {
+              "points": [
+                "Indrag med 2 eller 4 blanksteg, en tabulator eller valfritt antal blanksteg.",
+                "Fler alternativ: sortera nycklar, korta listor på en rad, mellanslag efter kolon, hur rader avslutas, radbrytning i slutet, icke-ASCII-tecken som \\uXXXX.",
+                "Tillåtande läsning accepterar kommentarer (// och /* */) och avslutande kommatecken, och skriver strikt JSON.",
+                "Ändringar: ta bort null-värden, ta bort tomma värden och liknande, i ett svep.",
+                "Trädet öppnas en nivå i taget och kan söka efter text i nycklar och värden."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Kör en JSONPath-fråga (RFC 9535) på ett dokument: $.store.book[?@.price < 10].title. Resultatet är de hittade värdena, sökvägarna till dem, eller båda.",
+            "En felaktig fråga rapporteras med information om var felet uppstod."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema-validerare",
+          "body": [
+            "Kontrollerar ett dokument mot ett JSON-schema (utkast 4 till 2020-12). Schemat anges i rutan under indatan. Varje avvikelse listas tillsammans med var den finns och vilken regel som bryts.",
+            "För många filer kontrolleras varje fil mot samma schema. En $ref till en annan fil eller till en adress följs inte."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Schemagenerator och JSON till TypeScript",
+          "body": [
+            "Utifrån ett JSON-exempel skapar schemageneratorn ett passande JSON-schema, och JSON till TypeScript skapar typdeklarationer (gränssnitt eller typer, exporterade eller ej, skrivskyddade eller ej, under ett namn som du anger)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Konverterar YAML till JSON och JSON till YAML. YAML läses enligt dess kärnschema, där ankare och sammanslagningar följs; eventuella fel anges tillsammans med deras position."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Konverterar en tabell till JSON och vice versa. Separatorn identifieras från den första raden eller väljs (komma, semikolon, tabulator, pipe); den första raden kan vara rubriken; siffror och sant/falskt kan identifieras.",
+            "\"Tabell\" visar CSV-filen i rader och kolumner, oavsett filstorlek."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML / HTML-formaterare",
+          "body": [
+            "Formaterar, minifierar och kontrollerar XML och HTML. XML läses strikt: en tagg som aldrig stängs anges tillsammans med dess position. HTML läses på samma sätt som webbläsare tolkar det."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL-formaterare",
+          "body": [
+            "Strukturerar ett uttryck med en klausul per rad, eller placerar det på en enda rad; nyckelord i versaler, gemener eller som de är skrivna. Den kräver ingen specifik dialekt och kontrollerar inte vad ett uttryck betyder."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Jämför två texter rad för rad, två JSON-dokument baserat på deras innehåll, eller två mappar fil för fil. Den första placeras i indatan, den andra i rutan under.",
+            {
+              "points": [
+                "Sida vid sida markerar ord som ändrats inom en rad; Unified är en patch så som diff -u skriver den.",
+                "Ignorera skiftläge, blanksteg, tomma rader, siffror eller skiljetecken.",
+                "För JSON utgör ordningen på nycklar och layouten ingen skillnad; resultatet kan vara en JSON Patch (RFC 6902).",
+                "Mappar: vilka filer som bara finns i en, vilka som är identiska, vilka som skiljer sig; Jämför på en rad öppnar paret som texter."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdown-förhandsgranskning",
+          "body": [
+            "Visar Markdown som den kommer att se ut, och ger dess HTML att kopiera eller spara: CommonMark med tabeller, genomstrykning, att-göra-listor och fotnoter.",
+            {
+              "points": [
+                "HTML som skrivs inuti Markdown visas som text, inte som körbar kod.",
+                "En bild som skulle hämtas från nätverket hämtas inte: dess beskrivning och adress visas istället. En bild som är inbäddad i texten (data:) visas.",
+                "En länk som du klickar på öppnas i systemets webbläsare."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Generera",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Skapar UUID:er av version 1, 3, 4, 5, 6 och 7 (RFC 9562), så många du önskar, skrivna med bindestreck, som ren text, som en URN eller inom klamrar. \"Dela upp\" visar versionen för varje UUID samt tiden eller namnet inuti den."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 och SHA-512 av en text eller en fil, flera samtidigt, skrivna som hex eller Base64. En fil av vilken storlek som helst hashas medan den läses.",
+            {
+              "points": [
+                "Kontrollera mot: klistra in en kontrollsumma, eller raden från en .sha256-fil; det meddelas om den matchar eller inte.",
+                "HMAC-nyckel: digesten blir HMAC:er med den nyckeln.",
+                "Varje rad separat: en digest för varje rad i texten.",
+                "Filer: digesten listas bredvid deras filer; Kopiera alla ger dem så som sha256sum skriver dem."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Lösenord och hemligheter",
+          "body": [
+            "Skapar lösenord med de typer av tecken du väljer, lösenfraser av ord, och slumpmässiga bytes som hex eller Base64, från operativsystemets slumptalsgenerator. Var och en anger hur många bitars entropi den har. När något har skapats skapas det på nytt om ett alternativ ändras.",
+            "En lösenfras består av ord hämtade från Electronic Frontier Foundations långa ordlista (7776 engelska ord), där varje ord är lika sannolikt som de andra: sex ord motsvarar ungefär 77 bitar."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Nycklar och certifikat",
+          "body": [
+            "Fem alternativ, valda högst upp:",
+            {
+              "points": [
+                "Nyckeln: RSA, EC P-256 / P-384 / P-521 eller Ed25519, i alla former som program använder (PKCS #8, den äldre formen, OpenSSH; den publika nyckeln som PEM och som raden för authorized_keys), låst med ett lösenord om du anger ett.",
+                "Certifikatanrop: en CSR för en ny nyckel eller en som du klistrar in, med dess subjekt och dess andra namn (SAN).",
+                "Självsignerat certifikat: samma sak, signerat med sin egen nyckel, för ett visst antal dagar; \"Kan signera andra certifikat\" gör det till en egen certifikatutfärdare.",
+                "Signera med egen CA: klistra in ett anrop, certifikatet för din utfärdare och dess nyckel; du får det signerade certifikatet och utfärdaren efter det.",
+                "Läs och konvertera: klistra in eller öppna vad som helst (PEM, DER, en OpenSSH-nyckel, en .pfx- eller .p12-fil, låst eller ej). Programmet anger vad det hittade och om nyckeln tillhör certifikatet, och skriver ut varje del i de andra formaten. En nyckel och dess certifikat kan sparas tillsammans som en .pfx."
+              ]
+            },
+            {
+              "note": "Allt sker på den här datorn. En nyckel finns i fliken fram till Töm, och ingen annanstans om du inte sparar den."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inspektera",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Regex-testare",
+          "body": [
+            "Testar ett reguljärt uttryck i JavaScript på en text: matchningarna med deras grupper och positioner, eller texten där matchningarna har ersatts. Flaggorna är g, i, m, s, u, y.",
+            "Mönstret körs separat från fönstret, och ett mönster som körs längre än 20 sekunder avbryts."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron-förklaring",
+          "body": [
+            "Förklarar med ord vad ett schema betyder och när det körs: crontab (fem fält, sex med sekunder, sju med år), Quartz, AWS EventBridge cron() och rate(), samt systemd OnCalendar. Ett schema per rad.",
+            {
+              "points": [
+                "Nästa körning, samt tidigare körningar vid förfrågan, i den tidszon du väljer.",
+                "Veckodagarna numreras från 0 för söndag, eller från 1 som Quartz numrerar dem, efter ditt val. En rad med sekunder som också har ett år, L, W eller # är Quartz, och läses automatiskt på Quartz-sättet.",
+                "Samma schema i andra format, för att kopiera eller lägga till i inmatningen.",
+                "Byggaren skapar ett schema genom att välja varje fält; \"Ändra i byggaren\" för in ett inskrivet schema i den."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix-tidsstämpel",
+          "body": [
+            "Läser tidpunkter, en per rad: sekunder, millisekunder, mikrosekunder eller nanosekunder sedan 1970, eller ett datum skrivet på vanliga sätt (ISO 8601, som e-post och HTTP skriver det, som Git skriver det). Var och en visas i den tidszon du väljer, i UTC, och som alla typer av tidsstämplar."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL-parser",
+          "body": [
+            "Delar upp en URL så som webbläsare läser den: schema, användare, värd (med dess Unicode-form när den är skriven i punycode), port, sökväg, varje avkodad parameter i frågan och fragmentet."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Certifikatdekoder",
+          "body": [
+            "Läser X.509-certifikat från PEM eller DER och visar allt i dem: subjekt, utfärdare, giltighet, namnen det gäller för, dess nyckel, dess tillägg och dess fingeravtryck.",
+            "Den läser; den bedömer inte om ett certifikat ska vara betrott. För certifikatet som en webbplats visar, och om den här datorn litar på det, använd Nätverk → Webbplatsens certifikat."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Hex-visare",
+          "body": [
+            "Visar byten i en fil av vilken storlek som helst, eller i en inklistrad text: positionen för varje rad, byten och samma byten som tecken.",
+            {
+              "points": [
+                "Gå till en position skriven som 0x1F4, 1F4h eller 500.",
+                "Sök efter byten (DE AD BE EF) eller en text (UTF-8, eller UTF-16 åt båda hållen), framåt och bakåt.",
+                "Klicka på ett byte: sidopanelen visar vad som finns där som nummer av alla storlekar, i antingen byte-ordning, som ett tecken och som en tid.",
+                "Markera genom att dra, med Shift eller med piltangenterna; kopiera markeringen som hex, som kod, som Base64 eller som text, eller spara den till en fil."
+              ]
+            },
+            {
+              "note": "Den tittar bara: inget ändras i filen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nätverk",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Vart nätverksverktygen ansluter",
+          "body": [
+            "Dessa fyra verktyg är den enda delen av Dev som ansluter online, och de ansluter dit du pekar dem.",
+            {
+              "points": [
+                "Endast den adress du skriver kontaktas, och endast när du trycker på knappen. Aldrig i bakgrunden.",
+                "Det som skickas är det du skrev. Det enda som läggs till i en begäran är en User-Agent som är densamma för alla (\"Syntelab Creative\"), om du inte anger din egen.",
+                "Inga cookies sparas, inget om dig eller datorn skickas, och inget som skrivits sparas."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP-klient",
+          "body": [
+            "Skickar en manuellt skriven begäran: metod, adress, huvuden (en per rad: Namn: värde) och en kropp, antingen inskriven eller hämtad från en fil av vilken storlek som helst.",
+            {
+              "points": [
+                "Svaret: dess nummer, hur lång tid det tog (totalt, och till första byten), dess storlek, dess huvuden och dess kropp, färglagd efter typ och formaterad om det är JSON. En kropp som inte är text (en bild, en PDF) visas som den är och sparas som den kom.",
+                "Följ omdirigeringar, eller se det första svaret som det är. De adresser som begäran skickades till listas.",
+                "Kontrollera certifikatet mot vad den här datorn litar på; stäng endast av detta för egna servrar.",
+                "\"Skicka, spara svar till fil\" skriver en kropp av vilken storlek som helst direkt till disk, med förloppsindikator och Stopp.",
+                "\"Kopiera som curl\" ger samma begäran som ett kommando."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS-uppslag",
+          "body": [
+            "Frågar en namnserver efter posterna för ett namn: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, flera samtidigt. En adress ger sitt namn (PTR).",
+            "Frågan skickas till den namnserver som datorn är inställd på att använda, till en offentlig (1.1.1.1, 8.8.8.8, 9.9.9.9), till en resolver via HTTPS (Cloudflare, Google), eller till en som du anger."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Portkontroll",
+          "body": [
+            "Anger om portar på en värd tar emot TCP-anslutningar: en, flera, eller ett intervall upp till alla 65 535 (22, 80, 443, 8000-8100). Var och en är öppen, stängd eller utan svar inom den tid du anger.",
+            {
+              "note": "Testa endast värdar som är dina egna, eller som du får testa."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Webbplatsens certifikat",
+          "body": [
+            "Visar de certifikat som en webbplats tillhandahåller när en säker anslutning upprättas: vem de är till för, vem som har signerat dem, hur många dagar som återstår, om den här datorn litar på dem och varför inte, TLS-versionen och chifferet. Endast handskakningen utförs: ingen begäran skickas.",
+            {
+              "points": [
+                "Skriv example.com, example.com:8443 eller en webbadress.",
+                "E-postservrar och FTP börjar okrypterat och ombeds att gå över till TLS (STARTTLS): väljs via porten (25, 587, 143, 110, 21) eller manuellt.",
+                "\"Allt\" visar allt som certifikaten säger; \"PEM\" gör det möjligt att kopiera eller spara dem."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inställningar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Inställningar för Dev",
+          "body": [
+            "Arkiv → Inställningar öppnar programmets inställningar för Dev.",
+            {
+              "points": [
+                "Öppna varje verktyg i en egen flik, eller i den flik där det är valt.",
+                "Öppna en ny flik på det senast använda verktyget, eller på första sidan.",
+                "Återställ alternativen för varje verktyg, samt nålar, till programmets standardinställningar."
+              ]
+            },
+            "Högerklicksmenyn i Utforskaren i Windows, språk, tema och kortkommandon finns i programmets allmänna inställningar."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Om Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Om Dev",
+          "body": [
+            "Dev är Syntelab Creatives app för utvecklare: verktyg som kodar och avkodar, formaterar och kontrollerar, omvandlar en dataform till en annan och analyserar det som är svårläst i sin ursprungliga form.",
+            "Allt sker lokalt på den här datorn. Inget du skriver, klistrar in eller öppnar i ett verktyg sparas eller skickas någonstans. Det finns ingen begränsning för filstorlek eller antal filer: begränsningarna är datorns minne och hårddisk.",
+            "Programmet är nytt och under utveckling. Om det saknar något för ditt arbete, meddela oss via Hjälp → Feedback."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Vad Dev är byggt med",
+          "body": [
+            {
+              "points": [
+                "Redigerarna: CodeMirror, https://codemirror.net . MIT-licens. Copyright (C) 2018-2021 av Marijn Haverbeke och andra.",
+                "Läsning och färgsättning av JSON i redigerarna: @codemirror/lang-json, https://github.com/codemirror/lang-json , med @codemirror/language och @lezer/highlight. MIT-licens. Copyright (C) 2018-2021 av Marijn Haverbeke och andra.",
+                "Läsning och färgsättning av YAML, XML, HTML och SQL i redigerarna: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (med @codemirror/lang-css och @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . MIT-licens. Copyright (C) 2018-2024 av Marijn Haverbeke och andra.",
+                "Kontroll av ett dokument mot ett JSON-schema: jsonschema, https://github.com/Stranger6667/jsonschema . MIT-licens. Copyright (c) 2020-2026 Dmitry Dygalo. Det är byggt utan sin nätverksdel: Dev hämtar aldrig ett schema.",
+                "JSONPath-mönster (match och search): regex, https://github.com/rust-lang/regex . MIT- eller Apache-2.0-licens. Copyright (c) 2014 The Rust Project Developers.",
+                "Läsning av YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . MIT- eller Apache-2.0-licens. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Skrivning av YAML utförs av Dev själv.",
+                "Jämförelse av två texter (Diff): similar, https://github.com/mitsuhiko/similar . Apache-2.0-licens. Författare: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . MIT- eller Apache-2.0-licens. Copyright (c) 2014-2026 Alex Crichton.",
+                "Hashing-verktygets digest och en tokens signatur: sha2, sha1 och md-5, https://github.com/RustCrypto/hashes . MIT- eller Apache-2.0-licens. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, och RustCrypto-utvecklarna.",
+                "Datum, tider och tidszoner (Unix-tidsstämpel, Cron-förklaring): jiff, https://github.com/BurntSushi/jiff , med tidszoner från IANA-databasen. Unlicense eller MIT-licens. Copyright (c) 2015 Andrew Gallant.",
+                "Analys av URL:er: url och idna, https://github.com/servo/rust-url . MIT- eller Apache-2.0-licens. Copyright (c) 2013-2025 The rust-url developers.",
+                "Läsning av X.509-certifikat: x509-parser, https://github.com/rusticata/x509-parser . MIT- eller Apache-2.0-licens. Copyright (c) 2017 Pierre Chifflier.",
+                "Regex-testaren kör JavaScripts reguljära uttryck i den WebView-motor som programmet ritar med (Microsoft Edge WebView2 på Windows); inget bibliotek har lagts till för detta.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . MIT- eller Apache-2.0-licens. Copyright (c) 2018 Sam Rijs, Alex Crichton och bidragsgivare.",
+                "UUID: uuid, https://github.com/uuid-rs/uuid . Apache-2.0- eller MIT-licens. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Slumpmässiga bytes för lösenord, hemligheter och UUID:er, från operativsystemet: getrandom, https://github.com/rust-random/getrandom . MIT- eller Apache-2.0-licens. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "RSA-nycklar och signaturer: rsa, https://github.com/RustCrypto/RSA , med num-bigint-dig, https://github.com/dignifiedquire/num-bigint . MIT- eller Apache-2.0-licens. Copyright (c) RustCrypto Developers och dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Nycklar och signaturer för NIST-kurvor (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , med ecdsa, elliptic-curve och crypto-bigint som krävs. Apache-2.0- eller MIT-licens. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Ed25519-nycklar och signaturer: ed25519-dalek och curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . BSD 3-Clause-licens. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft och Henry de Valence. All rights reserved.",
+                "Format som nycklar, anrop och certifikat skrivs i (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER och PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Apache-2.0- eller MIT-licens. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "OpenSSH-nyckelfiler: ssh-key, https://github.com/RustCrypto/SSH , med bcrypt-pbkdf, aes, ctr, chacha20 och övriga chiffer och hashfunktioner från RustCrypto som krävs för att låsa en nyckel ( https://github.com/RustCrypto ). Licens Apache-2.0 eller MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "PKCS #12-filer (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , med pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 och scrypt från RustCrypto som krävs. Licens MIT eller Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Slumptal som nycklar skapas ifrån, hämtade från operativsystemet: rand_core, https://github.com/rust-random/rand . Licens MIT eller Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "HTTP-klienten: ureq, https://github.com/algesten/ureq . Licens MIT eller Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Säkra anslutningar (TLS) för HTTP-klienten och för \"Webbplatsens certifikat\": rustls, https://github.com/rustls/rustls , licens Apache-2.0, ISC eller MIT, Copyright (c) 2016 Joseph Birr-Pixton; med rustls-webpki, https://github.com/rustls/webpki , ISC-licens, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , licens Apache-2.0 och ISC; webpki-roots, https://github.com/rustls/webpki-roots , licens CDLA-Permissive-2.0.",
+                "Huruvida denna dator litar på ett certifikat: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Licens MIT eller Apache-2.0. Copyright (c) 2022 1Password.",
+                "Läsning av Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . MIT-licens. Copyright 2015 Google Inc. All rights reserved.",
+                "Läsning av filer skrivna i andra kodningar än UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , Apache-2.0 eller MIT-licens (med BSD-3-Clause för dess data), Copyright Mozilla Foundation; och chardetng, https://github.com/hsivonen/chardetng , Apache-2.0 eller MIT-licens, Copyright Mozilla Foundation.",
+                "Orden i lösenfraser: the EFF Large Wordlist for Passphrases, https://www.eff.org/dice , av Electronic Frontier Foundation, använd under Creative Commons Attribution 3.0 United States-licens ( https://creativecommons.org/licenses/by/3.0/us/ ). Listan används som den är.",
+                "Öppning av nycklar låsta på det gamla OpenSSL-sättet: aes, cbc och des från RustCrypto, https://github.com/RustCrypto . MIT- eller Apache-2.0-licens. Copyright (c) RustCrypto Developers.",
+                "Skrivet för Dev, utan bibliotek: DNS-uppslagning (frågor skrivna och svar lästa enligt RFC 1035) och portkontroll.",
+                "Skrivet för Dev, utan bibliotek: läsning och skrivning av JSON som en ström, JSONPath (RFC 9535), Base64, procentkodning, HTML-teckenreferenser (deras namn är enligt HTML-standarden, https://html.spec.whatwg.org ), strängflykter, läsning av JSON Web Tokens, skrivning av YAML, CSV åt båda hållen, läsning av cron-scheman, XML- och HTML-formateraren samt SQL-formateraren."
+              ]
+            },
+            "Det som delas med resten av programmet finns under \"Om Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Vad Dev ännu inte kan göra",
+          "body": [
+            {
+              "points": [
+                "Signaturen för en token kontrolleras endast när den har skapats med en delad hemlighet (HS256, HS384, HS512).",
+                "JSON Schema-valideraren anger vad som inte stämmer på engelska, precis som dess bibliotek gör, och följer inte en $ref till en annan fil eller adress.",
+                "SQL-formateraren kräver ingen dialekt och kontrollerar inte vad ett uttryck betyder: den meddelar endast om en sträng eller en kommentar som aldrig tar slut.",
+                "YAML, samt JSON som blir YAML eller CSV, hålls i sin helhet i minnet under konverteringen; CSV som blir JSON, XML, HTML och SQL bearbetas medan de läses, oavsett storlek.",
+                "CSV-tabellen som visas är skrivskyddad: inget skrivs in i den, och inget kopieras från den ännu.",
+                "Diff sparar sexton byte för varje rad i de två filerna, inte filerna själva; två JSON-dokument hålls i sin helhet, eftersom de skrivs om innan de jämförs.",
+                "Ett block av rader där ingen rad finns exakt en gång på båda sidor jämförs så gott det går inom en sekund: de skillnader som anges är korrekta, men inte alltid så få som möjligt.",
+                "Diff jämför inte hur rader avslutas (CRLF eller LF).",
+                "Två mappar jämförs via filernas byte; filer matchas efter sina namn, bokstav för bokstav.",
+                "Det som Inspektera-verktygen anger är JSON, med namn på engelska.",
+                "Regex-testaren kör JavaScripts reguljära uttryck, inte PCRE och inte de från Rust; den arbetar på en text som kan visas, inte på en fil som sparas på disk; ett mönster som körs längre än 20 sekunder avbryts.",
+                "Certifikatdekodern läser ett certifikat och kontrollerar inte om det är betrott: varken dess kedja, dess signatur eller om det har återkallats.",
+                "En fil som är text i en annan kodning än UTF-8 läses om den är tillräckligt liten för att visas; en större fil, som bearbetas från disk, måste vara UTF-8.",
+                "En fil som släpps på ett verktyg tas upp till 16 MB; fönstret får inte veta var en släppt fil finns på disken, så en större fil öppnas med Öppna fil.",
+                "Lösenfraser består endast av engelska ord.",
+                "Cron-förklaring: byggaren skapar crontab-scheman (fem fält, eller sex med sekunder); ett schema med L, W, # eller ? kan inte inkluderas. Tiderna för en AWS rate() kan inte anges, eftersom den räknas från när dess regel skapades. För systemd läses vanliga kalenderhändelser; inte bråkdelar av en sekund eller listor över dagar räknade från slutet av månaden.",
+                "Hex-visaren är endast för visning: inget ändras i filen. Textkolumnen visar ASCII eller västeuropeiska tecken, inte andra alfabet; bytes eller text söks efter, inte mönster.",
+                "Nycklar och certifikat: nycklar är RSA, kurvorna P-256, P-384 och P-521, samt Ed25519; andra (DSA, secp256k1, X25519) läses inte. En nyckel som är låst på det gamla OpenSSL-sättet öppnas när dess chiffer är AES eller 3DES. En .pfx-fil innehåller en nyckel med tillhörande certifikat. Att skapa en mycket stor RSA-nyckel tar tid och kan inte avbrytas halvvägs. Biblioteket som skapar RSA-nycklar har en känd sårbarhet för en angripare som kan tidsmäta många signaturer över ett nätverk (RUSTSEC-2023-0071): här skapas nycklar och skrivs på din dator, och inget signeras för någon annan.",
+                "HTTP-klient: HTTP/1.1 (inte HTTP/2 eller 3); inga cookies sparas mellan anrop; formulär med flera delar (multipart) skapas inte automatiskt; ett svar som är större än 16 MB, eller ett som inte är text, skrivs till en fil genom att skicka anropet igen.",
+                "DNS-uppslag visar signaturer (DNSSEC) men kontrollerar dem inte. Portkontroll försöker endast TCP: en UDP-port som är tyst kan inte skiljas från en som är stängd. Webbplatsens certifikat kontrollerar inte om ett certifikat har återkallats.",
+                "Högerklicksmenyn är för Utforskaren i Windows; i Windows 11 finns dess alternativ under \"Visa fler alternativ\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

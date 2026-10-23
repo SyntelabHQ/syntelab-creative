@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Cách sử dụng",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Trang đầu tiên",
+          "body": [
+            "Khi mở thẻ Dev, bạn sẽ thấy trang đầu tiên với tất cả công cụ, được nhóm như trong các menu: Mã hóa, Dữ liệu, Tạo, Kiểm tra, Mạng.",
+            {
+              "points": [
+                "Nhập vào ô “Tìm công cụ” để lọc danh sách.",
+                "Ghim công cụ để giữ công cụ đó ở đầu danh sách, trong mục Đã ghim.",
+                "Công cụ mở trong cùng thẻ; chọn Tệp → Tất cả công cụ để quay lại trang đầu tiên. Trong Cài đặt, bạn có thể mở mỗi công cụ trong thẻ riêng và đặt thẻ mới mở công cụ được dùng gần nhất."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Dán mọi nội dung",
+          "body": [
+            "Ô ở đầu trang đầu tiên nhận nội dung bạn dán và nhận diện loại dữ liệu: token, chứng chỉ, JSON, UUID, dấu thời gian, lịch cron, URL, XML hoặc HTML, SQL, Base64, mã kiểm tra, bảng hoặc YAML.",
+            "Bên dưới mỗi kết quả nhận diện là các công cụ phù hợp, công cụ phù hợp nhất ở trên cùng. Nhấp vào một công cụ để mở công cụ đó với văn bản đã có sẵn và chạy.",
+            {
+              "note": "Nội dung bạn dán vẫn ở trong ô cho đến khi bạn xóa hoặc đóng thẻ. Nội dung không bao giờ được ghi vào đĩa."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Bố cục của công cụ",
+          "body": [
+            "Hầu hết công cụ có cùng bố cục: các tùy chọn nằm thành hàng ở trên, dữ liệu đầu vào ở một bên, kết quả ở bên kia và một dòng phía dưới cho biết trạng thái.",
+            {
+              "points": [
+                "Kết quả được tạo lại mỗi khi đầu vào hoặc một tùy chọn thay đổi và hiển thị ở vùng kết quả; dòng chữ “Tự chạy” trên hàng tùy chọn cho biết điều đó. Chỉ văn bản quá dài để chạy sau mỗi lần gõ phím, hoặc tệp lớn hơn 128 MB, mới chờ nút Chạy, khi đó nút này sẽ xuất hiện. Ctrl+Enter chạy công cụ bất cứ lúc nào.",
+                "Kết quả không phải văn bản (hình ảnh giải mã từ Base64, gzip) được hiển thị dưới dạng xem trước: hình ảnh hiển thị nguyên trạng, các loại khác hiển thị theo loại, kích thước và các byte đầu tiên. Khi đó Sao chép sẽ sao chép kết quả dạng Base64, và hình ảnh có thể được sao chép dưới dạng hình ảnh. Tệp đầu vào không phải văn bản cũng được hiển thị như vậy.",
+                "Mở tệp, Dán và Xóa nằm phía trên vùng nhập; Sao chép và Lưu vào tệp nằm phía trên kết quả. Bạn cũng có thể thả tệp vào vùng nhập.",
+                "Lỗi trong dữ liệu đầu vào được mô tả bằng lời, kèm số dòng và cột, đồng thời được đánh dấu trong trình chỉnh sửa.",
+                "Menu Xem cho phép đặt hai khung cạnh nhau hoặc chồng lên nhau, hiện số dòng và ngắt dòng dài; có thể kéo đường phân cách giữa hai khung.",
+                "Các tùy chọn bạn chọn được ghi nhớ cho lần sau. Nội dung bạn nhập thì không."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Xóa sạch và những gì được lưu",
+          "body": [
+            "Nút Xóa sạch ở góc dưới bên phải của mỗi công cụ xóa ngay dữ liệu đầu vào, kết quả, mọi nội dung đã nhập vào các ô và lịch sử hoàn tác của trình chỉnh sửa.",
+            "Dev chỉ lưu cài đặt, các công cụ bạn đã ghim, tên công cụ được dùng gần nhất và tùy chọn của từng công cụ. Nội dung bạn nhập, dán, mở hoặc tạo trong công cụ không được ghi vào đĩa, nhật ký hay danh sách gần đây. Thông tin bí mật càng không: khóa, cụm mật khẩu, token và tiêu đề yêu cầu chỉ tồn tại trong thẻ.",
+            "Chỉ một thứ được lưu tạm trên đĩa: kết quả của một tệp, và kết quả không phải văn bản, được ghi vào thư mục riêng của chương trình để có thể hiển thị rồi lưu. Mỗi kết quả bị xóa khi có kết quả khác thay thế, khi bạn xóa sạch hoặc đóng công cụ, và trong mọi trường hợp khi Dev khởi động lại."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Tệp với mọi kích thước",
+          "body": [
+            "Không giới hạn kích thước tệp. Tệp đủ nhỏ để hiển thị (tối đa 16 MB) sẽ được đưa vào trình chỉnh sửa. Tệp lớn hơn, hoặc tệp không phải văn bản, vẫn nằm trên đĩa: phần đầu tệp (hoặc bản xem trước) được hiển thị, công cụ đọc trực tiếp từ vị trí lưu và kết quả được hiển thị như với văn bản. Sau đó Lưu vào tệp sẽ sao chép kết quả đến nơi bạn chọn.",
+            {
+              "points": [
+                "Tác vụ lâu sẽ hiển thị thẻ tiến độ và nút Dừng.",
+                "Tệp văn bản dùng bảng mã khác UTF-8 (như UTF-16, Windows-1252) sẽ được đọc dưới dạng văn bản nếu đủ nhỏ để hiển thị, đồng thời tên bảng mã sẽ được cho biết. Tệp lưu từ Dev luôn dùng UTF-8.",
+                "Tệp được thả vào công cụ sẽ được mở như khi dùng lệnh Mở tệp. Khi cửa sổ không xác định được vị trí của tệp, tệp sẽ được nạp nếu dung lượng tối đa 16 MB, như khi dán nội dung."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Nhiều tệp và cả thư mục",
+          "body": [
+            "Trong công cụ có mục “Xử lý: Văn bản / Tệp”, chế độ Tệp sẽ chạy công cụ trên nhiều tệp cùng lúc.",
+            {
+              "steps": [
+                "Thêm các tệp hoặc một thư mục (bao gồm cả thư mục con nếu tùy chọn đó đang bật).",
+                "Mỗi tệp được đọc một lần khi thêm vào và công cụ cho biết tệp đó có được hỗ trợ hay không.",
+                "Chọn nơi lưu kết quả: cạnh mỗi tệp với tên mới, trong một thư mục (giữ nguyên cấu trúc thư mục), hoặc ghi đè lên chính các tệp đó sau khi xác nhận thêm lần nữa. Công cụ Mã băm cũng có thể chỉ hiển thị kết quả trong danh sách.",
+                "Nhấp vào một tệp trong danh sách để chỉ xem kết quả của tệp đó bên dưới các lựa chọn, trước khi có bất cứ thứ gì được ghi.",
+                "Nhấn Chạy. Tệp bị lỗi sẽ không làm dừng các tệp khác; trạng thái của từng tệp được hiển thị riêng."
+              ]
+            },
+            {
+              "note": "Kết quả không bao giờ ghi vào tệp đã tồn tại trừ khi bạn yêu cầu."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Menu chuột phải của Windows Explorer",
+          "body": [
+            "Bật tính năng này trong Cài đặt của chương trình, mục Windows Explorer. Mọi lệnh được nhóm dưới dòng “Syntelab Creative”; trên Windows 11, chúng nằm trong mục “Hiển thị thêm tùy chọn”.",
+            {
+              "points": [
+                "Mở bằng Syntelab Dev: áp dụng cho các loại tệp mà công cụ hỗ trợ (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz, v.v.). Tệp sẽ mở bằng công cụ phù hợp với loại tệp đó.",
+                "Mã kiểm tra: áp dụng cho mọi tệp hoặc thư mục. Các giá trị băm được liệt kê cạnh từng tệp; không có dữ liệu nào được ghi lại.",
+                "Chế độ xem hệ thập lục phân: áp dụng cho mọi tệp.",
+                "So sánh: hai tệp được đưa vào hai khung của công cụ Diff; hai thư mục được đưa vào công cụ so sánh thư mục."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mã hóa",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Chuyển đổi byte sang Base64 và ngược lại. Có thể mã hóa tệp bất kỳ; khi giải mã, byte được hiển thị nếu là văn bản hoặc lưu vào tệp nếu không phải văn bản.",
+            {
+              "points": [
+                "Bảng ký tự: chuẩn hoặc dành cho URL (- và _).",
+                "Thêm dấu = đệm và ngắt dòng sau 64, 76 hoặc số ký tự tùy chọn.",
+                "Khi giải mã, chấp nhận cả hai bảng ký tự, có hoặc không có dấu đệm, đồng thời cho biết vị trí ký tự sai."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Mã hóa / giải mã URL",
+          "body": [
+            "Mã hóa phần trăm theo cách trình duyệt thực hiện: một phần địa chỉ (mã hóa mọi ký tự không phải chữ thông thường), toàn bộ địa chỉ (giữ lại các ký hiệu riêng) hoặc biểu mẫu (dùng dấu + cho khoảng trắng).",
+            "Khi giải mã, công cụ cho biết vị trí dấu % không theo sau bởi hai chữ số thập lục phân."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Thực thể HTML",
+          "body": [
+            "Chuyển các ký tự HTML và XML dành riêng (&, <, >, dấu ngoặc kép) thành thực thể và giải mã thực thể theo tên, số thập phân hoặc số thập lục phân. Tên thực thể tuân theo tiêu chuẩn HTML.",
+            "Tùy chọn “Mã hóa cả ký tự không thuộc ASCII” cũng chuyển chữ có dấu và các bảng chữ cái khác thành thực thể."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Bộ giải mã JWT",
+          "body": [
+            "Tách JSON Web Token thành phần tiêu đề và tải trọng ở dạng JSON, đồng thời diễn giải các thuộc tính bằng lời (đơn vị phát hành, chủ thể, đối tượng nhận, thời điểm hết hạn và trạng thái “đã hết hạn” hoặc “chưa hết hạn”).",
+            "Nhập bí mật để kiểm tra chữ ký dùng chung bí mật (HS256, HS384, HS512). Chữ ký dùng khóa riêng (RS, ES, PS) không được kiểm tra.",
+            {
+              "note": "Token và bí mật chỉ nằm trong thẻ; không có dữ liệu nào được gửi đi để giải mã token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / bỏ escape",
+          "body": [
+            "Chuyển văn bản thành chuỗi của một ngôn ngữ (JSON, JavaScript, C, C++, Java, v.v.) bằng cách escape dấu ngoặc kép, xuống dòng và các ký tự đặc biệt; đồng thời giải mã chuỗi đó về văn bản ban đầu."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Nén và giải nén gzip, kể cả tệp lớn khi đang đọc. Mức nén dao động từ nhanh nhất đến nhỏ nhất; kết quả văn bản có thể xuất ra dưới dạng Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Cơ số số học",
+          "body": [
+            "Hiển thị từng số nguyên trên một dòng ở dạng nhị phân, bát phân, thập phân, thập lục phân và một cơ số khác do bạn chọn, tối đa 36. Không giới hạn độ lớn của số.",
+            {
+              "points": [
+                "Cơ số được nhận diện theo cách viết số: 0x cho thập lục phân, 0b cho nhị phân, 0o cho bát phân, chữ cái cho thập lục phân; nếu không thì là thập phân. Hoặc chọn cơ số dùng để đọc tất cả số.",
+                "Bỏ qua khoảng trắng, dấu gạch dưới và dấu nháy đơn giữa các chữ số: 1_000_000.",
+                "Số âm cũng được hiển thị theo cách máy tính lưu trữ (bù hai), với số bit nhỏ nhất trong 8, 16, 32, 64 bit, v.v. đủ để chứa số đó."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dữ liệu",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Định dạng JSON",
+          "body": [
+            "Định dạng, thu gọn và kiểm tra JSON, đồng thời hiển thị dữ liệu dưới dạng cây. Tài liệu ở mọi kích thước đều được đọc theo luồng.",
+            {
+              "points": [
+                "Thụt lề bằng 2 hoặc 4 dấu cách, tab hoặc số dấu cách tùy chọn.",
+                "Tùy chọn khác: sắp xếp khóa, đặt danh sách ngắn trên một dòng, chọn khoảng trắng sau dấu hai chấm, kiểu xuống dòng, thêm dòng mới ở cuối và hiển thị ký tự ngoài ASCII dưới dạng \\uXXXX.",
+                "Chế độ đọc linh hoạt chấp nhận chú thích (// và /* */) và dấu phẩy thừa ở cuối, sau đó xuất JSON chuẩn.",
+                "Thay đổi dữ liệu trong một lượt: xóa giá trị null, giá trị rỗng, v.v.",
+                "Cây dữ liệu mở từng cấp và cho phép tìm văn bản trong khóa và giá trị."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Chạy truy vấn JSONPath (RFC 9535) trên tài liệu, ví dụ $.store.book[?@.price < 10].title. Kết quả có thể là các giá trị tìm được, đường dẫn đến chúng hoặc cả hai.",
+            "Truy vấn sai sẽ được thông báo kèm vị trí xảy ra lỗi."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Bộ xác thực JSON Schema",
+          "body": [
+            "Kiểm tra tài liệu theo JSON Schema (bản nháp 4 đến 2020-12). Đặt lược đồ trong khung bên dưới vùng nhập. Mỗi mục không phù hợp được liệt kê cùng vị trí và quy tắc bị vi phạm.",
+            "Khi xử lý nhiều tệp, mỗi tệp được kiểm tra theo cùng một lược đồ. Tham chiếu $ref đến tệp khác hoặc địa chỉ không được truy xuất."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Tạo lược đồ và chuyển JSON sang TypeScript",
+          "body": [
+            "Từ mẫu JSON, công cụ tạo lược đồ sinh JSON Schema phù hợp; công cụ chuyển JSON sang TypeScript tạo khai báo kiểu (interface hoặc type, có hoặc không xuất, có hoặc không chỉ đọc) theo tên bạn chọn."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Chuyển YAML sang JSON và JSON sang YAML. YAML được đọc theo lược đồ lõi, có xử lý bí danh và phép gộp; lỗi được thông báo kèm vị trí."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Chuyển bảng dữ liệu thành JSON và ngược lại. Dấu phân cách được nhận diện từ hàng đầu tiên hoặc do bạn chọn (dấu phẩy, chấm phẩy, tab, dấu gạch đứng); hàng đầu tiên có thể làm tiêu đề và công cụ có thể nhận diện số cùng giá trị đúng/sai.",
+            "Chế độ “Bảng” hiển thị CSV theo hàng và cột, kể cả với tệp có kích thước bất kỳ."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Định dạng XML / HTML",
+          "body": [
+            "Định dạng, thu gọn và kiểm tra XML cùng HTML. XML được đọc nghiêm ngặt: thẻ chưa đóng sẽ được báo kèm vị trí. HTML được đọc theo cách khoan dung của trình duyệt."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Định dạng SQL",
+          "body": [
+            "Trình bày câu lệnh với mỗi mệnh đề trên một dòng hoặc gộp tất cả trên một dòng; từ khóa có thể viết hoa, viết thường hoặc giữ nguyên như ban đầu. Không cần chọn phương ngữ SQL và công cụ không kiểm tra ý nghĩa câu lệnh."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "So sánh",
+          "body": [
+            "So sánh hai văn bản theo từng dòng, hai tài liệu JSON theo nội dung hoặc hai thư mục theo từng tệp. Đưa văn bản thứ nhất vào vùng nhập, văn bản thứ hai vào khung bên dưới.",
+            {
+              "points": [
+                "Chế độ Song song đánh dấu các từ đã thay đổi trong dòng; chế độ Hợp nhất hiển thị bản vá theo định dạng diff -u.",
+                "Có thể bỏ qua chữ hoa/thường, khoảng trắng, dòng trống, chữ số hoặc dấu câu.",
+                "Với JSON, thứ tự khóa và cách trình bày không được xem là khác biệt; kết quả có thể xuất dưới dạng JSON Patch (RFC 6902).",
+                "Với thư mục, xem tệp chỉ có ở một bên, tệp giống nhau và tệp khác nhau; chọn So sánh trên một hàng để mở cặp tệp dưới dạng văn bản."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Xem trước Markdown",
+          "body": [
+            "Hiển thị Markdown theo đúng cách trình bày và cung cấp HTML để sao chép hoặc lưu: hỗ trợ CommonMark cùng bảng, gạch ngang, danh sách tác vụ và chú thích cuối trang.",
+            {
+              "points": [
+                "HTML nhập bên trong Markdown được hiển thị như văn bản, không được thực thi.",
+                "Không tải ảnh từ mạng: thay vào đó hiển thị mô tả và địa chỉ ảnh. Ảnh nhúng trực tiếp trong văn bản (data:) vẫn được hiển thị.",
+                "Liên kết bạn nhấp sẽ mở trong trình duyệt của hệ thống."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tạo",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Tạo số lượng UUID tùy chọn theo phiên bản 1, 3, 4, 5, 6 hoặc 7 (RFC 9562), với dấu gạch nối, dạng thu gọn, URN hoặc đặt trong ngoặc nhọn. Tùy chọn “Phân tích” cho biết phiên bản của từng UUID cùng thời gian hoặc tên được mã hóa bên trong."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Mã băm",
+          "body": [
+            "Tính CRC-32, MD5, SHA-1, SHA-256, SHA-384 và SHA-512 cho văn bản hoặc tệp, có thể tính nhiều loại cùng lúc và xuất ở dạng thập lục phân hoặc Base64. Tệp mọi kích thước đều được băm khi đang đọc.",
+            {
+              "points": [
+                "Đối chiếu: dán mã kiểm tra hoặc dòng trong tệp .sha256 để xem có khớp hay không.",
+                "Khóa HMAC: tạo HMAC từ các giá trị băm bằng khóa đó.",
+                "Từng dòng riêng: tính một giá trị băm cho mỗi dòng văn bản.",
+                "Tệp: liệt kê giá trị băm cạnh từng tệp; Sao chép tất cả sẽ xuất theo định dạng sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Mật khẩu và dữ liệu bí mật",
+          "body": [
+            "Tạo mật khẩu từ các nhóm ký tự bạn chọn, cụm mật khẩu gồm nhiều từ và byte ngẫu nhiên ở dạng thập lục phân hoặc Base64, sử dụng bộ tạo số ngẫu nhiên của hệ điều hành. Mỗi kết quả cho biết số bit entropy. Khi đã tạo xong, thay đổi một tùy chọn sẽ tạo lại kết quả.",
+            "Cụm mật khẩu gồm các từ lấy từ danh sách dài 7.776 từ tiếng Anh của Electronic Frontier Foundation, mỗi từ có xác suất như nhau; sáu từ tương đương khoảng 77 bit."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Khóa và chứng chỉ",
+          "body": [
+            "Có thể chọn một trong năm chức năng sau:",
+            {
+              "points": [
+                "Khóa mới: tạo RSA, EC P-256 / P-384 / P-521 hoặc Ed25519 ở mọi định dạng mà chương trình thường dùng (PKCS #8, định dạng cũ, OpenSSH; khóa công khai dạng PEM và dòng authorized_keys), có thể khóa bằng cụm mật khẩu bạn cung cấp.",
+                "Yêu cầu chứng chỉ: tạo CSR cho khóa mới hoặc khóa bạn dán vào, kèm chủ thể và các tên bổ sung (SAN).",
+                "Chứng chỉ tự ký: tạo chứng chỉ tương tự nhưng ký bằng chính khóa đó, có thời hạn theo số ngày chọn; bật “Cho phép ký chứng chỉ khác” để biến chứng chỉ thành CA riêng.",
+                "Ký bằng CA của bạn: dán yêu cầu, chứng chỉ của CA và khóa của CA để nhận chứng chỉ đã ký cùng chuỗi CA.",
+                "Đọc và chuyển đổi: dán hoặc mở nội dung bất kỳ (PEM, DER, khóa OpenSSH, tệp .pfx hoặc .p12, có hoặc không khóa). Công cụ nhận diện dữ liệu, kiểm tra khóa có khớp chứng chỉ hay không và xuất từng mục ở các định dạng khác. Có thể lưu khóa cùng chứng chỉ trong tệp .pfx."
+              ]
+            },
+            {
+              "note": "Mọi thao tác đều diễn ra trên máy tính này. Khóa chỉ nằm trong thẻ cho đến khi bạn nhấn Xóa sạch, trừ khi bạn chủ động lưu khóa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kiểm tra",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Trình thử biểu thức chính quy",
+          "body": [
+            "Thử biểu thức chính quy JavaScript trên văn bản: xem các kết quả khớp cùng nhóm và vị trí, hoặc xem văn bản sau khi thay thế kết quả khớp. Các cờ gồm g, i, m, s, u, y.",
+            "Mẫu được chạy tách biệt với cửa sổ; nếu chạy quá 20 giây, tác vụ sẽ bị dừng."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Giải thích cron",
+          "body": [
+            "Diễn giải lịch chạy bằng lời và cho biết thời điểm chạy: crontab (5 trường, 6 trường khi có giây, 7 trường khi có năm), Quartz, cron() và rate() của AWS EventBridge, cùng OnCalendar của systemd. Mỗi dòng một lịch.",
+            {
+              "points": [
+                "Xem các lần chạy tiếp theo và, nếu yêu cầu, cả các lần trước đó theo múi giờ đã chọn.",
+                "Ngày trong tuần được đánh số từ 0 là Chủ nhật, hoặc từ 1 như cách Quartz đánh số, tùy bạn chọn. Dòng có giây đồng thời có năm, L, W hoặc # là của Quartz và sẽ tự được đọc theo cách của Quartz.",
+                "Xem lịch tương đương ở các định dạng khác để sao chép hoặc đưa vào vùng nhập.",
+                "Công cụ dựng lịch cho phép chọn từng trường để lập lịch; “Chuyển sang trình dựng” sẽ đưa lịch đã nhập vào các trường tương ứng."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Dấu thời gian Unix",
+          "body": [
+            "Đọc từng thời điểm trên một dòng: giây, mili giây, micro giây hoặc nano giây kể từ năm 1970, hoặc ngày giờ theo các định dạng thông dụng (ISO 8601, như trong email và HTTP, như trong Git). Mỗi thời điểm được hiển thị theo múi giờ bạn chọn, theo UTC và dưới mọi dạng dấu thời gian."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Bộ phân tích URL",
+          "body": [
+            "Tách URL theo cách trình duyệt đọc: lược đồ, người dùng, máy chủ (kèm dạng Unicode nếu được viết bằng punycode), cổng, đường dẫn, từng tham số truy vấn đã giải mã và phần fragment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Giải mã chứng chỉ",
+          "body": [
+            "Đọc chứng chỉ X.509 dạng PEM hoặc DER và hiển thị toàn bộ thông tin: chủ thể, bên cấp, thời hạn, các tên áp dụng, khóa, phần mở rộng và dấu vân tay.",
+            "Công cụ chỉ đọc chứng chỉ, không đánh giá độ tin cậy. Để xem chứng chỉ của trang web và kiểm tra máy tính này có tin cậy hay không, dùng Mạng → Chứng chỉ của trang web."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Trình xem thập lục phân",
+          "body": [
+            "Hiển thị byte trong tệp bất kỳ hoặc văn bản đã dán: vị trí từng hàng, byte và cách biểu diễn cùng byte đó thành ký tự.",
+            {
+              "points": [
+                "Đi đến vị trí nhập theo dạng 0x1F4, 1F4h hoặc 500.",
+                "Tìm byte (DE AD BE EF) hoặc văn bản (UTF-8 hoặc UTF-16 theo cả hai thứ tự byte), tiến hoặc lùi.",
+                "Nhấp vào một byte để xem giá trị dưới dạng số ở mọi kích thước, theo cả hai thứ tự byte, dưới dạng ký tự và thời gian.",
+                "Chọn bằng cách kéo, giữ Shift hoặc dùng phím mũi tên; sao chép vùng chọn dưới dạng thập lục phân, mã nguồn, Base64 hoặc văn bản, hay lưu thành tệp."
+              ]
+            },
+            {
+              "note": "Công cụ chỉ xem, không thay đổi tệp."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mạng",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Phạm vi hoạt động của công cụ mạng",
+          "body": [
+            "Đây là bốn công cụ duy nhất trong Dev kết nối mạng; chúng chỉ truy cập địa chỉ do bạn chỉ định.",
+            {
+              "points": [
+                "Chỉ địa chỉ bạn nhập mới được liên hệ và chỉ khi bạn nhấn nút. Không có kết nối nền.",
+                "Yêu cầu chỉ gửi nội dung bạn đã nhập. Thành phần duy nhất được tự thêm là User-Agent chung cho mọi người (“Syntelab Creative”), trừ khi bạn tự nhập giá trị khác.",
+                "Không lưu cookie, không gửi thông tin về bạn hoặc máy tính, cũng không lưu nội dung đã nhập."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Máy khách HTTP",
+          "body": [
+            "Gửi một yêu cầu do bạn tự soạn: phương thức, địa chỉ, tiêu đề (mỗi dòng một tiêu đề theo dạng Tên: giá trị) và nội dung nhập trực tiếp hoặc lấy từ tệp bất kỳ kích thước nào.",
+            {
+              "points": [
+                "Kết quả hiển thị mã trạng thái, thời gian phản hồi (tổng cộng và đến byte đầu tiên), kích thước, tiêu đề và nội dung; nội dung được tô màu theo loại và định dạng nếu là JSON. Nội dung không phải văn bản (hình ảnh, PDF) được hiển thị nguyên trạng và được lưu đúng như khi nhận.",
+                "Có thể theo dõi chuyển hướng hoặc xem phản hồi đầu tiên ngay lập tức. Danh sách hiển thị các địa chỉ mà yêu cầu đã đi qua.",
+                "Kiểm tra chứng chỉ theo kho tin cậy của máy tính này; chỉ tắt kiểm tra với máy chủ của bạn.",
+                "Tùy chọn “Gửi, lưu phản hồi vào tệp” ghi nội dung bất kỳ kích thước nào thẳng ra đĩa, có tiến độ và nút Dừng.",
+                "“Sao chép dưới dạng curl” tạo lệnh tương ứng với yêu cầu."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Tra cứu DNS",
+          "body": [
+            "Yêu cầu máy chủ tên miền cung cấp bản ghi của một tên: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY hoặc nhiều loại cùng lúc. Với địa chỉ IP, công cụ tra cứu tên tương ứng (PTR).",
+            "Yêu cầu được gửi đến máy chủ tên miền mà máy tính đang dùng, máy chủ công cộng (1.1.1.1, 8.8.8.8, 9.9.9.9), dịch vụ phân giải qua HTTPS (Cloudflare, Google) hoặc máy chủ bạn nhập."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Kiểm tra cổng",
+          "body": [
+            "Kiểm tra xem các cổng trên máy chủ có chấp nhận kết nối TCP hay không: một cổng, nhiều cổng hoặc dải tối đa 65.535 cổng (22, 80, 443, 8000-8100). Mỗi cổng được báo là đang mở, đã đóng hoặc không phản hồi trong khoảng thời gian bạn đặt.",
+            {
+              "note": "Chỉ kiểm tra máy chủ thuộc quyền sở hữu của bạn hoặc bạn được phép kiểm tra."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Chứng chỉ của trang web",
+          "body": [
+            "Hiển thị các chứng chỉ trang web cung cấp khi thiết lập kết nối bảo mật: đối tượng được cấp, bên ký, số ngày còn hiệu lực, trạng thái tin cậy trên máy tính này và lý do, phiên bản TLS cùng bộ mã hóa. Công cụ chỉ thực hiện bắt tay TLS, không gửi yêu cầu.",
+            {
+              "points": [
+                "Nhập example.com, example.com:8443 hoặc địa chỉ web.",
+                "Máy chủ thư và FTP bắt đầu ở chế độ không mã hóa rồi được yêu cầu chuyển sang TLS (STARTTLS): công cụ chọn theo cổng (25, 587, 143, 110, 21) hoặc theo lựa chọn thủ công.",
+                "“Tất cả chi tiết” hiển thị mọi thông tin trong chứng chỉ; “PEM” cho phép sao chép hoặc lưu chứng chỉ."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cài đặt",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Cài đặt Dev",
+          "body": [
+            "Tệp → Cài đặt mở phần Cài đặt Dev của chương trình.",
+            {
+              "points": [
+                "Mở mỗi công cụ trong thẻ riêng hoặc trong thẻ hiện tại.",
+                "Đặt thẻ mới mở công cụ được dùng gần nhất hoặc mở trang đầu tiên.",
+                "Khôi phục tùy chọn của mọi công cụ và danh sách ghim về trạng thái ban đầu của chương trình."
+              ]
+            },
+            "Menu chuột phải của Windows Explorer, ngôn ngữ, giao diện và phím tắt được quản lý trong phần Cài đặt chung của chương trình."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Giới thiệu Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Giới thiệu Dev",
+          "body": [
+            "Dev là ứng dụng dành cho nhà phát triển trong Syntelab Creative: các công cụ mã hóa và giải mã, định dạng và kiểm tra, chuyển đổi dữ liệu giữa các dạng, cũng như phân tích dữ liệu khó đọc.",
+            "Mọi thao tác đều thực hiện trên máy tính này. Nội dung bạn nhập, dán hoặc mở trong công cụ không được lưu hay gửi đi đâu. Không giới hạn kích thước hoặc số lượng tệp; giới hạn duy nhất là bộ nhớ và dung lượng đĩa của máy tính.",
+            "Ứng dụng còn mới và đang được phát triển. Nếu chưa đáp ứng nhu cầu công việc, hãy gửi góp ý qua Trợ giúp → Góp ý."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Công nghệ sử dụng trong Dev",
+          "body": [
+            {
+              "points": [
+                "Trình chỉnh sửa: CodeMirror, https://codemirror.net. Giấy phép MIT. Copyright (C) 2018-2021 Marijn Haverbeke và các cộng sự.",
+                "Đọc và tô màu JSON trong trình chỉnh sửa: @codemirror/lang-json, https://github.com/codemirror/lang-json, cùng @codemirror/language và @lezer/highlight. Giấy phép MIT. Copyright (C) 2018-2021 Marijn Haverbeke và các cộng sự.",
+                "Đọc và tô màu YAML, XML, HTML và SQL trong trình chỉnh sửa: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml; @codemirror/lang-xml, https://github.com/codemirror/lang-xml; @codemirror/lang-html, https://github.com/codemirror/lang-html (cùng @codemirror/lang-css và @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql. Giấy phép MIT. Copyright (C) 2018-2024 Marijn Haverbeke và các cộng sự.",
+                "Kiểm tra tài liệu theo JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema. Giấy phép MIT. Copyright (c) 2020-2026 Dmitry Dygalo. Phiên bản được dùng không có thành phần mạng: Dev không tải lược đồ.",
+                "Mẫu JSONPath (khớp và tìm kiếm): regex, https://github.com/rust-lang/regex. Giấy phép MIT hoặc Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "Đọc YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2. Giấy phép MIT hoặc Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Dev tự ghi YAML.",
+                "So sánh hai văn bản (Diff): similar, https://github.com/mitsuhiko/similar. Giấy phép Apache-2.0. Tác giả: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs. Giấy phép MIT hoặc Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Giá trị băm của công cụ Mã băm và chữ ký token: sha2, sha1 và md-5, https://github.com/RustCrypto/hashes. Giấy phép MIT hoặc Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation và các nhà phát triển RustCrypto.",
+                "Ngày giờ và múi giờ (Dấu thời gian Unix, Giải thích cron): jiff, https://github.com/BurntSushi/jiff, cùng dữ liệu múi giờ của IANA. Giấy phép Unlicense hoặc MIT. Copyright (c) 2015 Andrew Gallant.",
+                "Tách URL: url và idna, https://github.com/servo/rust-url. Giấy phép MIT. Copyright (c) 2013-2025 các nhà phát triển rust-url.",
+                "Đọc chứng chỉ X.509: x509-parser, https://github.com/rusticata/x509-parser. Giấy phép MIT hoặc Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "Công cụ kiểm tra regex chạy biểu thức chính quy JavaScript bằng bộ máy WebView của chương trình (Microsoft Edge WebView2 trên Windows); không thêm thư viện nào cho chức năng này.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast. Giấy phép MIT hoặc Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton và các cộng sự.",
+                "UUID: uuid, https://github.com/uuid-rs/uuid. Giấy phép Apache-2.0 hoặc MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Byte ngẫu nhiên cho mật khẩu, thông tin bí mật và UUID, lấy từ hệ điều hành: getrandom, https://github.com/rust-random/getrandom. Giấy phép MIT hoặc Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Khóa và chữ ký RSA: rsa, https://github.com/RustCrypto/RSA, cùng num-bigint-dig, https://github.com/dignifiedquire/num-bigint. Giấy phép MIT hoặc Apache-2.0. Copyright (c) RustCrypto Developers và dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Khóa và chữ ký theo các đường cong NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves, cùng ecdsa, elliptic-curve và crypto-bigint. Giấy phép Apache-2.0 hoặc MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Khóa và chữ ký Ed25519: ed25519-dalek và curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek. Giấy phép BSD 3-Clause. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft và Henry de Valence. Bảo lưu mọi quyền.",
+                "Các định dạng khóa, yêu cầu và chứng chỉ (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER và PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats. Giấy phép Apache-2.0 hoặc MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Tệp khóa OpenSSH: ssh-key, https://github.com/RustCrypto/SSH, cùng bcrypt-pbkdf, aes, ctr, chacha20 và các thuật toán mã hóa, băm khác của RustCrypto cần thiết để khóa bảo vệ khóa (https://github.com/RustCrypto). Giấy phép Apache-2.0 hoặc MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Tệp PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore, cùng pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 và scrypt của RustCrypto. Giấy phép MIT hoặc Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Các số ngẫu nhiên dùng để tạo khóa lấy từ hệ điều hành qua rand_core, https://github.com/rust-random/rand. Giấy phép MIT hoặc Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "Máy khách HTTP: ureq, https://github.com/algesten/ureq. Giấy phép MIT hoặc Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Kết nối bảo mật (TLS) của máy khách HTTP và “Chứng chỉ của trang web”: rustls, https://github.com/rustls/rustls, giấy phép Apache-2.0, ISC hoặc MIT, Copyright (c) 2016 Joseph Birr-Pixton; cùng rustls-webpki, https://github.com/rustls/webpki, giấy phép ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring, giấy phép Apache-2.0 và ISC; webpki-roots, https://github.com/rustls/webpki-roots, giấy phép CDLA-Permissive-2.0.",
+                "Kiểm tra máy tính này có tin cậy chứng chỉ hay không: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier. Giấy phép MIT hoặc Apache-2.0. Copyright (c) 2022 1Password.",
+                "Đọc Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark. Giấy phép MIT. Copyright 2015 Google Inc. Bảo lưu mọi quyền.",
+                "Đọc tệp dùng bảng mã khác UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs, giấy phép Apache-2.0 hoặc MIT (dữ liệu dùng BSD-3-Clause); và chardetng, https://github.com/hsivonen/chardetng, giấy phép Apache-2.0 hoặc MIT. Copyright Mozilla Foundation.",
+                "Từ dùng cho cụm mật khẩu: EFF Large Wordlist for Passphrases, https://www.eff.org/dice, do Electronic Frontier Foundation biên soạn, sử dụng theo giấy phép Creative Commons Attribution 3.0 United States (https://creativecommons.org/licenses/by/3.0/us/). Danh sách được dùng nguyên trạng.",
+                "Mở khóa được bảo vệ theo định dạng OpenSSL cũ bằng aes, cbc và des của RustCrypto, https://github.com/RustCrypto. Giấy phép MIT hoặc Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "Các công cụ do Dev tự triển khai, không dùng thư viện: tra cứu DNS (tạo truy vấn và đọc phản hồi theo RFC 1035) và kiểm tra cổng.",
+                "Các chức năng do Dev tự triển khai, không dùng thư viện: đọc và ghi JSON theo luồng, JSONPath (RFC 9535), Base64, mã hóa phần trăm, tham chiếu ký tự HTML (tên theo tiêu chuẩn HTML, https://html.spec.whatwg.org), escape chuỗi, đọc JSON Web Token, ghi YAML, chuyển đổi CSV hai chiều, đọc lịch cron, định dạng XML và HTML, cùng định dạng SQL."
+              ]
+            },
+            "Thông tin về những thành phần được dùng chung với phần còn lại của chương trình có trong mục “Giới thiệu Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Những giới hạn hiện tại của Dev",
+          "body": [
+            {
+              "points": [
+                "Chỉ kiểm tra chữ ký token khi token được tạo bằng bí mật dùng chung (HS256, HS384, HS512).",
+                "Bộ xác thực JSON Schema đưa ra thông báo bằng tiếng Anh theo thư viện được dùng và không truy xuất $ref đến tệp hoặc địa chỉ khác.",
+                "Trình định dạng SQL không yêu cầu chọn phương ngữ và không kiểm tra ý nghĩa câu lệnh; công cụ chỉ phát hiện chuỗi hoặc chú thích chưa kết thúc.",
+                "YAML và JSON chuyển thành YAML hoặc CSV được giữ toàn bộ trong bộ nhớ khi chuyển đổi; CSV chuyển thành JSON, XML, HTML và SQL được xử lý theo luồng, không phụ thuộc kích thước.",
+                "Bảng CSV chỉ đọc: hiện chưa thể nhập dữ liệu hoặc sao chép từ bảng.",
+                "Diff chỉ giữ 16 byte cho mỗi dòng của hai tệp thay vì giữ nguyên tệp; hai tài liệu JSON được giữ toàn bộ trong bộ nhớ vì cần tạo lại trước khi so sánh.",
+                "Một đoạn dòng không có dòng nào xuất hiện đúng một lần ở cả hai phía sẽ được so sánh tốt nhất có thể trong vòng một giây; kết quả chính xác nhưng không phải lúc nào cũng có ít khác biệt nhất.",
+                "Diff không so sánh kiểu kết thúc dòng (CRLF hoặc LF).",
+                "Hai thư mục được so sánh dựa trên byte của các tệp; tệp được ghép theo tên chính xác từng ký tự.",
+                "Kết quả của các công cụ Kiểm tra là JSON với tên trường bằng tiếng Anh.",
+                "Công cụ kiểm tra regex chạy biểu thức chính quy JavaScript, không phải PCRE hay regex của Rust; công cụ xử lý văn bản hiển thị được chứ không xử lý tệp lưu trên đĩa; mẫu chạy quá 20 giây sẽ bị dừng.",
+                "Trình giải mã chứng chỉ chỉ đọc chứng chỉ, không kiểm tra độ tin cậy, chuỗi chứng chỉ, chữ ký hay trạng thái thu hồi.",
+                "Tệp văn bản dùng bảng mã khác UTF-8 chỉ được đọc nếu đủ nhỏ để hiển thị; tệp lớn hơn được xử lý trực tiếp từ đĩa phải dùng UTF-8.",
+                "Tệp thả vào công cụ chỉ được nạp tối đa 16 MB; cửa sổ không nhận được đường dẫn tệp trên đĩa, vì vậy tệp lớn hơn cần mở bằng lệnh Mở tệp.",
+                "Cụm mật khẩu chỉ được tạo từ các từ tiếng Anh.",
+                "Giải thích cron: trình tạo hỗ trợ lịch crontab (5 trường hoặc 6 trường khi có giây); không thể chuyển lịch có L, W, # hoặc ? vào trình tạo. Không thể xác định thời điểm của AWS rate() vì lịch được tính từ lúc tạo quy tắc. Với systemd, công cụ đọc các sự kiện lịch phổ biến, nhưng không hỗ trợ phần lẻ giây hoặc danh sách ngày tính ngược từ cuối tháng.",
+                "Trình xem thập lục phân chỉ đọc tệp, không chỉnh sửa. Cột văn bản chỉ hiển thị ASCII hoặc ký tự Tây Âu, không hiển thị các bảng chữ cái khác; tìm được byte hoặc văn bản, không tìm theo mẫu.",
+                "Khóa và chứng chỉ: chỉ hỗ trợ khóa RSA, các đường cong P-256, P-384, P-521 và Ed25519; không đọc DSA, secp256k1 hoặc X25519. Khóa dùng kiểu mã hóa OpenSSL cũ chỉ mở được nếu dùng AES hoặc 3DES. Tệp .pfx chứa một khóa cùng các chứng chỉ của khóa đó. Tạo khóa RSA rất lớn sẽ mất thời gian và không thể dừng giữa chừng. Thư viện tạo khóa RSA có điểm yếu đã biết nếu kẻ tấn công đo thời gian của nhiều chữ ký qua mạng (RUSTSEC-2023-0071); tại đây khóa được tạo và lưu trên máy của bạn, không ký dữ liệu cho người khác.",
+                "Máy khách HTTP chỉ hỗ trợ HTTP/1.1 (không có HTTP/2 hoặc HTTP/3); không lưu cookie giữa các yêu cầu; không tự tạo biểu mẫu multipart; phản hồi lớn hơn 16 MB hoặc không phải văn bản sẽ được ghi ra tệp bằng cách gửi lại yêu cầu.",
+                "Tra cứu DNS hiển thị chữ ký (DNSSEC) nhưng không xác minh. Kiểm tra cổng chỉ thử TCP: cổng UDP không phản hồi không thể phân biệt với cổng đã đóng. Chứng chỉ của trang web không kiểm tra việc chứng chỉ có bị thu hồi hay không.",
+                "Menu chuột phải dành cho Windows Explorer; trên Windows 11, các lệnh nằm trong “Hiển thị thêm tùy chọn”."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

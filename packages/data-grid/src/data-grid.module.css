@@ -1,0 +1,323 @@
+/* The table: only the rows in sight are drawn, inside a window that stays put while its sizer is scrolled. */
+.scroller {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font-family: var(--sc-font, system-ui);
+  font-size: 14px;
+  /* Numbers are read from left to right in every language: the table is not mirrored. */
+  direction: ltr;
+  outline: none;
+}
+
+
+.sizer {
+  position: relative;
+  min-width: 100%;
+}
+
+.window {
+  position: sticky;
+  top: 0;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.head {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+}
+
+.corner,
+.number {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-inline-end: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  color: var(--sc-muted);
+  font: inherit;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  user-select: none;
+}
+
+.number {
+  overflow: hidden;
+}
+
+/* The corner selects the whole table; its edge is dragged to change the width of the row numbers. */
+.cornerButton {
+  flex: 1;
+  align-self: stretch;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.cornerButton:hover,
+.number:hover {
+  color: var(--sc-text);
+}
+
+.number[data-selected='true'] {
+  background: var(--sc-accent-soft);
+  color: var(--sc-text);
+  font-weight: 700;
+}
+
+.columnHead {
+  position: relative;
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-inline: 10px 6px;
+  border-inline-end: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.columnHead[data-selected='true'] {
+  background: var(--sc-accent-soft);
+}
+
+.columnTitle {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.columnSymbol {
+  font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+  font-size: 13px;
+}
+
+.columnMenu {
+  flex: none;
+  font-size: 16px;
+  line-height: 1;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.columnMenu:hover,
+.columnMenu[aria-expanded='true'] {
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+}
+
+/* The edge of a head: dragged to change the width of its column. */
+.edge {
+  position: absolute;
+  inset-block: 0;
+  right: -4px;
+  z-index: 1;
+  width: 8px;
+  cursor: col-resize;
+  touch-action: none;
+}
+
+/* Pointed at or held (in the head or under it: both light up), a handle shows as a line in the colour of the program, as the line between the panes of Dev. */
+.edge::after,
+.line::after {
+  position: absolute;
+  inset-block: 0;
+  left: calc(50% - 1.5px);
+  width: 3px;
+  background: transparent;
+  content: '';
+}
+
+.edge[data-lit='true']::after,
+.edge:active::after {
+  background: var(--sc-accent);
+}
+
+/* The line between two columns, under the head: the same handle as the edge of the head, down the whole table. */
+.line {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  width: 7px;
+  cursor: col-resize;
+  touch-action: none;
+}
+
+.line[data-lit='true']::after,
+.line:active::after {
+  background: var(--sc-accent);
+}
+
+/* The menu of a column: drawn over the page, right under the button that opened it. */
+.menu {
+  position: fixed;
+  z-index: 1000;
+  box-sizing: border-box;
+  padding: 6px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  box-shadow: var(--sc-shadow-m);
+  color: var(--sc-text);
+  font-family: var(--sc-font, system-ui);
+  font-size: 13px;
+  text-align: start;
+}
+
+.rows {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.row {
+  display: flex;
+  border-block-end: 1px solid var(--sc-border);
+}
+
+.cell {
+  position: relative;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-inline: 10px;
+  border-inline-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: cell;
+  user-select: none;
+}
+
+.cell > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* The cell a row's value was typed in: the others follow it. */
+.cell[data-typed='true'] {
+  font-weight: 700;
+}
+
+/* What was typed is not a number: the cell says so in red, and its row converts nothing. */
+.cell[data-wrong='true'] {
+  background: color-mix(in srgb, var(--sc-danger) 16%, var(--sc-surface));
+  box-shadow: inset 0 0 0 1px var(--sc-danger);
+  color: var(--sc-danger);
+  justify-content: flex-start;
+}
+
+/* Values that are text (base 16, Roman numerals) are written in letters of one width. */
+.cell[data-text] {
+  font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+  font-size: 13px;
+}
+
+/* Values read as text is begin where the cell begins. */
+.cell[data-from-start] {
+  justify-content: flex-start;
+}
+
+.cell[data-from-start] .editor {
+  text-align: start;
+}
+
+.cell[data-held],
+.columnHead[data-held] {
+  background: var(--sc-bg);
+}
+
+/* What is selected is outlined; its shade is only a hint, lighter than the lines of the table. */
+.cell[data-selected='true'] {
+  background: color-mix(in srgb, var(--sc-text) 4%, var(--sc-surface));
+}
+
+/* The cell typing goes to, inside a selection of several: not shaded, as the first of them. */
+.cell[data-first] {
+  background: var(--sc-surface);
+}
+
+.cell[data-active='true'] {
+  outline: 2px solid var(--sc-accent);
+  outline-offset: -2px;
+}
+
+/* The box a cell is typed in: it takes the cell. */
+.editor {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  padding-inline: 9px;
+  border: 2px solid var(--sc-accent);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+  outline: none;
+}
+
+.editor[data-wrong='true'] {
+  border-color: var(--sc-danger);
+  background: color-mix(in srgb, var(--sc-danger) 10%, var(--sc-surface));
+}
+
+/* A light bar to scroll with: slim, no arrows, and only as dark as it needs to be seen. */
+.scroller::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scroller::-webkit-scrollbar-track,
+.scroller::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: var(--sc-radius-pill);
+  background: color-mix(in srgb, var(--sc-muted) 40%, transparent);
+  background-clip: content-box;
+}
+
+.scroller:hover::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--sc-muted) 70%, transparent);
+  background-clip: content-box;
+}
+
+.scroller::-webkit-scrollbar-thumb:hover,
+.scroller::-webkit-scrollbar-thumb:active {
+  border-width: 1px;
+  background: var(--sc-muted);
+  background-clip: content-box;
+}

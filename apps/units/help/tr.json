@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Dönüştürme",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Dönüştürücüler",
+          "body": [
+            "Units, ölçü birimleri arasında değer dönüştürür: tek bir değeri hızla ya da değer tablolarının tamamını bir kerede. Tüm hesaplamalar bilgisayarınızda yapılır.",
+            "Dönüştürücüler altı menüdedir: Temel, Hareket ve mekanik, Enerji ve güç, Bilimsel, Dijital ve medya, Özel fizik. Birini seçtiğinizde dönüştürme tablosu açılır.",
+            {
+              "points": [
+                "Dönüştürücü bulunduğunuz sekmede açılır. Tabloda değerler varsa önce bir seçim yapmanız istenir: Devam et (değerler silinir), Yeni sekmede aç veya İptal.",
+                "Ayarlar → Units → ‘Her dönüştürücüyü kendi sekmesinde aç’ seçeneği, seçtiğiniz her dönüştürücüyü yeni sekmede açar.",
+                "Dosya → Başlangıç sayfasına git, Units uygulamasının ilk sayfasına döner."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Hızlı dönüştür",
+          "body": [
+            "Units uygulamasının ilk sayfasındaki Hızlı dönüştür, tek bir değeri bir birimden diğerine çevirir. Bir dönüştürücü seçin, değeri ‘Kaynak’ tarafına girin ve iki birimi seçin; sonuç ‘Hedef’ tarafında görünür.",
+            {
+              "points": [
+                "Her bölümde dönüştürücünün sık kullanılan birimleri ve kendi birimleriniz listelenir; bu listelerde arama yapabilirsiniz. Dönüştürücünün tablosunda tüm birimler bulunur.",
+                "İki tarafın arasındaki düğme birimleri birbiriyle değiştirir.",
+                "Birimin yanındaki yer imi onu sabitler: sabitlenen birimler her iki listede ve tablonun birimler panelinde en üstte görünür.",
+                "Sonuçtaki düğme değeri kopyalar; × işareti değeri temizler.",
+                "‘Tabloda aç’ dönüştürücünün tablosunu açar."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Sayıların okunması ve yazılması",
+          "body": [
+            "Farklı ülkelerde kullanılan sayı biçimlerini yazabilir veya yapıştırabilirsiniz: 1,234.56 ve 1.234,56 biçimlerinin ikisi de anlaşılır. Binlik ayraçlarında boşluk ve kesme işareti, ayrıca on kuvveti için 1.5e-3 de kullanılabilir.",
+            "İki türlü okunabilecek bir sayı (1,234: bin iki yüz otuz dört ya da 1,234) programın sayı yazım biçimine göre okunur; tablonun altındaki satır hangi biçimin kullanıldığını belirtir.",
+            "Sonuç, girdiğiniz kadar basamakla değil, hedef birimin ondalık basamaklarına göre yazılır: 5 cm, 1,97 in değerindedir. Sıfır olmayan değerlerde anlamlı birkaç basamak gösterilir; bu nedenle 1 cm, 0,00001 km olarak görünür, 0,000 km olarak yuvarlanmaz.",
+            "Bir bakışta okunamayacak kadar büyük veya küçük değerler, 1,6 × 10⁻³⁵ gibi on kuvvetiyle gösterilir. Tüm sıfırlarıyla yazmak için Görünüm → Uç değerleri tam yaz seçeneğini kullanın.",
+            "Birimin karşılık gelen değeri yoksa (sıfır ses basıncının desibel karşılığı yoktur) hücrede kısa çizgi görünür."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tablo",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Satırlar ve sütunlar",
+          "body": [
+            "Her sütun bir birimi, her satır bir değeri temsil eder. Yazdığınız hücre o satırdaki dönüşümü belirler; diğer sütunlar aynı değeri kendi birimleriyle gösterir. Girdiğiniz hücre kalın yazılır.",
+            "Sayı olmayan girişler korunur ve kırmızı gösterilir; düzeltilene kadar o satır dönüştürülmez.",
+            {
+              "points": [
+                "Düzenlemek için hücreye çift tıklayın veya yazmaya başlayın. Enter aşağı, Tab sağa geçer; ok tuşları hareket ettirir, Escape hücreyi önceki haline döndürür.",
+                "Tablonun tamamını seçmek için köşedeki (#) işaretine, bir satırı seçmek için satır numarasına, bir sütunu seçmek için başlığa tıklayın. Shift+tıklama aralık, Ctrl+tıklama ek hücre seçer; sürükleyerek de seçim yapabilirsiniz.",
+                "Home ve End satırın ilk ve son sütununa gider; Ctrl+Home tablonun ilk hücresine, Ctrl+End son hücresine gider. Ctrl ile bir ok tuşu tablonun kenarına, yani ilk veya son satıra ya da sütuna gider. Page Up ve Page Down bir ekran ilerler. Shift ile bu tuşlar seçimi genişletir.",
+                "Birden fazla hücre seçildiğinde seçim dış kenarından çerçevelenir; yazı yazılacak hücrenin içi gölgesiz kalır.",
+                "Delete seçili satırları boşaltır.",
+                "Son satıra yazmak yeni bir satır ekler. Tablonun sabit bir satır sınırı yoktur; bilgisayar belleğinin izin verdiği kadar büyüyebilir (bir satır 16 bayt kullanır; 100 milyon satır yaklaşık 1,5 GB yer kaplar)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Sütunlar ve birimler paneli",
+          "body": [
+            "Tablonun yanındaki panel, dönüştürücünün birimlerini listeler. Üstte tabloda bulunan birimler yer alır; bir sütunu kaldırmak için birime tıklayın. Altında tüm birimler bulunur: ada veya simgeye göre arayın, gruba ya da ‘Yaygın’ seçeneğine göre filtreleyin ve sütun olarak eklemek için birime tıklayın.",
+            "Birimin yanındaki yer imi onu sık kullanılanlara sabitler: listede ve Hızlı dönüştür'de ilk sırada görünür.",
+            {
+              "points": [
+                "Başlıklar sığdığı sürece sütunlar tablo genişliğini eşit paylaşır; sığmadığında tablo yatay kaydırılır.",
+                "Sütun genişliğini değiştirmek için başlığın kenarını sürükleyin; en uzun değere sığdırmak için kenara çift tıklayın. Satır numaralarının bulunduğu sütun da sürüklenebilir.",
+                "Bir sütunun ⋮ düğmesiyle sütunu sola veya sağa taşıyabilir, sol ya da sağ kenara sabitleyebilir, hassasiyetini değiştirebilir veya kaldırabilirsiniz.",
+                "Sütun hassasiyetini değiştirmek yalnızca o sütunu etkiler. ‘Bu birimi her yerde kullan’ seçeneği hassasiyeti tüm tablolarda ve Hızlı dönüştür'de o birime uygular.",
+                "Geri al ve Yinele'nin yanındaki çift oklu düğme sütunları tabloya sığdırır: sürükleyerek veya sığdırarak ayarlanan genişlikleri sıfırlar ve sütunları tablo genişliğine eşit dağıtır.",
+                "Panelin üstteki iki bölümü olan tablodaki birimler ve ‘Birim ekle’ (arama ve filtreler), adlarına tıklanarak daraltılabilir; böylece listeye daha çok yer kalır."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Geri al, kopyala, yapıştır, içe ve dışa aktar",
+          "body": [
+            "Tablonun üzerindeki çubuk araçları içerir.",
+            {
+              "points": [
+                "Geri al ve Yinele (Ctrl+Z, Ctrl+Y) tablodaki tüm değişiklikleri adım adım geri alır veya yineler. Yapıştırma ya da içe aktarma tek bir adımdır.",
+                "Kopyala (Ctrl+C) tablonun tamamını veya seçili hücreleri elektronik tablo programlarının okuyabileceği biçimde kopyalar. ‘Transpoze’ satırları sütunlara dönüştürür.",
+                "Yapıştır (Ctrl+V), kopyalanan satırları etkin hücreden başlayarak tabloya ekler. İlk satırda birim başlıkları varsa sütunlar başlıklara göre eşleştirilir; tabloda olmayan birimler de eklenir.",
+                "İçe aktar, tablodaki içeriğin yerine bir Excel çalışma kitabı, CSV veya TSV dosyası okur. ‘Biçimi otomatik belirle’ dosya türünü kendisi belirler.",
+                "Dışa aktar, tabloyu Excel, CSV, TSV veya JSON biçiminde yazar. Ondalık ayıracı virgül olduğunda elektronik tablolarla uyum için CSV noktalı virgülle kaydedilir. Excel sayfası en fazla 1.048.576 satır tutar; daha uzun tablolar aynı çalışma kitabında, aynı başlıklar altında sonraki sayfalara yazılır.",
+                "Silgi seçili satırları boşaltır; çöp kutusu tablonun tamamını boşaltır."
+              ]
+            },
+            "Her satır tek bir değer tutar. Yapıştırılan veya içe aktarılan satırda birden fazla değer varsa ilki alınır, diğerleri bu değerden hesaplanır.",
+            "Çok sayıda satırı yapıştırmak, içe veya dışa aktarmak ve kopyalamak zaman alabilir. Bu sırada tablonun üzerinde yüzdeyi ve işlenen satır sayısını gösteren bir ilerleme kartı ile Durdur düğmesi görünür. Durdurulan yapıştırma veya içe aktarma tabloyu olduğu gibi bırakır; durdurulan dışa aktarma dosya oluşturmaz.",
+            "Bellek satırlar için yetersiz kalırsa hiçbir şey değiştirilmez; tablonun altındaki satır gereken belleği bildirir. Satırlar sığıyor ancak önceki tablo sürümü bellekte tutulamıyorsa, geri alma olmadan devam edip etmeyeceğiniz sorulur. Bu durumda bu değişiklik ve önceki geri alma adımları artık geri alınamaz. Yer açmak için önce en eski geri alma adımları silinir.",
+            "Tablo seçenekleri (dişli): sütun başlığında gösterilecek bilgi (ad ve simge, ad veya simge), kopyalama ve dışa aktarmada başlıkların ve satır numaralarının eklenip eklenmeyeceği, ‘Bu dönüştürücü bu sütunlarla açılsın’ ve ‘Tabloyu sıfırla’."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Özel dönüştürücüler",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Para birimi",
+          "body": [
+            "Para birimlerinin sabit bir çarpanı yoktur; değerleri değişir. Para birimi dönüştürücüsü kurları kullandığınız sırada iki ücretsiz hizmetten alır.",
+            {
+              "points": [
+                "Ülke para birimleri: Rates By Exchange Rate API, https://www.exchangerate-api.com . Kaynakta günde bir kez güncellenir ve günde en fazla bir kez okunur.",
+                "Kripto paralar: Powered by CoinGecko, https://www.coingecko.com . Dönüştürücü açıldığında veya yeniden öne geldiğinde eldeki veriler 15 dakikadan eskiyse, ayrıca Yenile'ye bastığınızda alınır; zamanlayıcıyla yenilenmez."
+              ]
+            },
+            "Yalnızca kurlar istenir. Sizinle ilgili hiçbir bilgi ve dönüştürdüğünüz tutarlar gönderilmez.",
+            "Tablonun ve Hızlı dönüştür sonucunun altındaki satır, kurların ne zaman alındığını gösterir. Bağlantı yoksa son kurlar kullanılır ve eski olarak işaretlenir. Hizmetlerden kur alınamayan para biriminin karşısında kısa çizgi görünür.",
+            "Ayarlar → Units → Para birimi: ‘Kurları ağdan oku’ seçeneğini kapatabilirsiniz; dönüştürücü bu durumda saklanan son kurları kullanır. ‘Kur kaynaklarının adlarını göster’ seçeneği, bu satırda iki hizmetin adını gösterir veya gizler.",
+            "Kurlar yalnızca bilgilendirme amaçlıdır. Herhangi bir işlemde bunlara güvenmeyin."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Sayı tabanı",
+          "body": [
+            "Bu dönüştürücünün birimleri tam sayıların yazım biçimleridir: 2 ile 64 arasındaki tabanlar, Roma rakamları, iki noktalı taban 60 (1:30:15), ikili kodlu ondalık ve Gray kodu. Değerler metin olarak işlenir: onaltılık sütuna FF yazın; diğer sütunlarda 255, 11111111 ve benzeri karşılıkları görün.",
+            "Roma rakamları I ile MMMCMXCIX (1 ile 3999) arasındaki değerleri gösterir."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Basit bir çarpanla dönüştürülmeyen birimler",
+          "body": [
+            "Birimlerin çoğu birbiriyle sabit bir çarpan üzerinden dönüştürülür. Bazılarında bu yeterli değildir; Units tanımlandıkları biçimde dönüştürür: ofsetli sıcaklıklar; yakıt tüketimi (100 km'de litre ve galonda mil); dalga boyu ve frekans; iletkenlik ve direnç; Baumé, API, Brix ve Plato dereceleri ile yoğunluk; desibel ile ses basıncı ve şiddeti; yüzde eğim ile açı.",
+            "Sıcaklık ile sıcaklık farkı aynı şey değildir: 100 °C, 212 °F'dir; ancak 100 °C'lik fark, 180 °F'lik farka karşılık gelir. ‘Fark (Δ)’ grubundaki birimler kendi aralarında dönüştürülür; bu grup ile sıcaklık ölçekleri arasında hücrede kısa çizgi görünür."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kendi birimleriniz",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Birim oluşturma",
+          "body": [
+            "Her dönüştürücüye kendi birimlerinizi ekleyebilirsiniz. Birimler panelinden ‘Yeni birim’i seçin, ad ve simge girin, sonra bu birimin hangi mevcut birime karşılık geldiğini belirtin.",
+            {
+              "points": [
+                "Bir çarpan: ‘1 adım = 0,75 m’. Sıfırdan başlamayan ölçeklerde çarpma işleminden sonra eklenecek değeri de belirtin.",
+                "Formül: değerin diğer birime nasıl dönüştürüleceği; x değeri, ayrıca dönüşümün tersi için bir formül. Örneğin x * 9 / 5 + 32 ve (x - 32) * 5 / 9."
+              ]
+            },
+            "Yazdığınız ifade anında sınanır; biriminizin karşılığı, kaydetmeden önce gösterilir. Formüllerde + − × ÷ ^, parantez, x, pi, e ve sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos, atan işlevleri kullanılabilir. İfade hesaplanır; program olarak çalıştırılmaz.",
+            "Kendi birimleriniz panelde ‘Kendi birimlerim’ altında listelenir; buradan düzenleyebilir veya kaldırabilirsiniz. Kendi biriminiz başka bir kendi biriminize göre tanımlanabilir; birimi kaldırmak, ona bağlı birimleri de kaldırır.",
+            "Ayarlar → Units bölümünde tüm dönüştürücülerdeki kendi birimlerinizi görebilir, dışa aktarabilir ve saklayabileceğiniz veya başka bir bilgisayara taşıyabileceğiniz metin olarak içe aktarabilirsiniz."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ayarlar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Units ayarları",
+          "body": [
+            "Dosya → Ayarları aç, Units ayarlarını açar; tablonun seçeneklerinden (araç çubuğundaki dişli) de ulaşabilirsiniz.",
+            {
+              "points": [
+                "Her dönüştürücüyü kendi sekmesinde veya bulunduğunuz sekmede açın.",
+                "Uç değerleri tam yazma, binlerin arasına yazılan işaret (10000,000, 10 000,000 veya 10.000,000; başka bir seçim yapmazsanız hiçbir şey) ve satır numaraları.",
+                "Para birimi: kurların ağdan okunup okunmayacağı ve hizmet adlarının yanlarında gösterilip gösterilmeyeceği.",
+                "Birim hassasiyeti: bir dönüştürücü (veya ‘Değiştirdiğiniz birimler’) seçin, birim arayın ve − ile + düğmeleriyle ondalık basamak sayısını ayarlayın; ok düğmesi birimin varsayılan değerine döndürür. Sütun menüsündeki ‘Bu birimi her yerde kullan’ aynı değeri uygular.",
+                "Tablonun başlangıç birimleri: ilk sütunlarını seçtiğiniz dönüştürücüler; her biri, varsayılan birimlerine dönme seçeneğiyle birlikte listelenir.",
+                "Kendi birimleriniz."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Units hakkında",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Units hakkında",
+          "body": [
+            "Units, Syntelab Creative'in birim dönüştürme uygulamasıdır: uzunluk ve sıcaklıktan para birimlerine ve sayı tabanlarına kadar 1.500'den fazla birimi kapsayan 38 dönüştürücü. Bir kez girdiğiniz değer, istediğiniz her birimde gösterilir; tablo tek bir değeri de milyonlarca değeri de işleyebilir.",
+            "Sayılar kesir olarak tam hesaplanır ve yalnızca yazılırken yuvarlanır. Her şey bu bilgisayarda yapılır; yalnızca para birimi kurları ağdan alınır ve bu özellik kapatılabilir.",
+            "Uygulama yenidir. İşinizde eksik kaldığı noktaları Yardım → Geri bildirim üzerinden bize iletin; geliştireceğimiz konuları böyle belirliyoruz."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Tablo kaç satır tutar? Ölçümlerimiz",
+          "body": [
+            "Tablonun sabit bir satır sınırı yoktur; bilgisayar belleğinin izin verdiği kadar büyüyebilir. Bir satır 16 bayt kullanır; 100 milyon satır yaklaşık 1,5 GB yer kaplar. Bellek tükendiğinde tablo olduğu gibi kalır ve program gereken bellek miktarını bildirir.",
+            "Ölçümleri, iyileştirilmiş program derlemesinde her biri tek sütunda bir sayı olan 50.000.000 satırla yaptık:",
+            {
+              "points": [
+                "50.000.000 satırı yapıştırma: yaklaşık 7 saniye.",
+                "CSV dosyasından içe aktarma: 12 saniye.",
+                "İkinci sütunu dönüştürerek CSV dosyasına dışa aktarma: yaklaşık 3,5 dakika.",
+                "Excel'e 48 sayfa halinde dışa aktarma: 4,3 dakika."
+              ]
+            },
+            "Dışa aktarma içe aktarmadan daha uzun sürer; çünkü yazılan her hücre önce tam olarak dönüştürülür.",
+            {
+              "note": "Testin yapıldığı bilgisayar: AMD Ryzen 9 9950X3D (16 çekirdek, 32 iş parçacığı), 64 GB bellek, Windows 11 Pro. Ekim 2026. Süreler başka bilgisayarlarda değişir; satır boyutu değişmez."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Units hangi teknolojilerle oluşturuldu",
+          "body": [
+            {
+              "points": [
+                "Tam sayılar: Rust'ın num kütüphaneleri (her boyutta tam sayı kesirleri).",
+                "Birimler, çarpanları ve grupları: her dönüştürücü için ayrı program veri dosyaları.",
+                "Excel ve OpenDocument çalışma kitaplarını okumak için calamine. Excel çalışma kitaplarını yazmak için rust_xlsxwriter.",
+                "Çok sayıda satırı kopyalama ve yapıştırmada sistem panosu için arboard.",
+                "Para birimi kurları: ExchangeRate-API ve CoinGecko (‘Para birimi’ bölümüne bakın)."
+              ]
+            },
+            "Programın geri kalanıyla paylaşılan bileşenler ‘Syntelab Creative hakkında’ bölümünde açıklanır."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Units henüz neleri yapamıyor",
+          "body": [
+            {
+              "points": [
+                "Her satır tek bir değer tutar; birden fazla değer içeren satır yapıştırıldığında yalnızca ilki alınır.",
+                "Çok sayıda satırı dışa aktarmak yavaştır (ölçümlerimize bakın).",
+                "Panoya kopyalanan içerik, yapıştırılmadan önce bellekte tek bir metin olarak tutulur.",
+                "Para birimi kurları, iki kaynağın güncellik düzeyine bağlıdır: ülke para birimleri için günde bir kez güncellenir."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

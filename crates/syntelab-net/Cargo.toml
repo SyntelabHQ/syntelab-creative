@@ -1,0 +1,18 @@
+[package]
+name = "syntelab-net"
+description = "The only code of Syntelab Creative that goes online."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+# `platform-verifier`: a certificate is trusted when the computer trusts it (the roots of the system, with those the
+# user or their company added), for the network tools of Dev.
+ureq = { version = "3", features = ["platform-verifier"] }
+# The TLS of the network tools of Dev, asked directly for the certificates a site shows (ureq already uses it).
+rustls = { version = "0.23", default-features = false, features = ["ring", "std", "tls12", "logging"] }
+rustls-platform-verifier = "0.7"
+
+[target.'cfg(windows)'.dependencies]
+# The DNS servers the computer is set to use.
+windows = { version = "0.62", features = ["Win32_NetworkManagement_IpHelper", "Win32_NetworkManagement_Ndis", "Win32_Networking_WinSock", "Win32_Foundation"] }

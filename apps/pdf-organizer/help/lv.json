@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Atvēršana un lasīšana",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Dokumenta atvēršana",
+          "body": [
+            "Fails → Atvērt (Ctrl+O) atver PDF atsevišķā cilnē. \"Atvērt vairākus failus vienlaicīgi\" atver katru izvēlēto failu savā cilnē.",
+            "Atveras arī faili, kas nav PDF, kā lapas: attēli (PNG, JPEG, TIFF, WebP un daudzi citi), teksta un tīmekļa faili, e-grāmatas, XPS un biroja dokumenti. Šāds dokuments vēl nav nekur saglabāts: \"Saglabāt\" jautā, kur.",
+            {
+              "note": "Biroja dokumentus (Word, Excel, PowerPoint, OpenDocument) konvertē Word, Excel vai PowerPoint, vai arī LibreOffice, atkarībā no tā, kas ir instalēts datorā. Bez viena no tiem tos nevar atvērt."
+            },
+            "Tukšā cilnē nomesti faili tiek apkopoti sējumā; ja tos nomet uz dokumenta, to lapas tiek pievienotas tam.",
+            "Sistēmā Windows PDF Organizer var būt programma, kas atver PDF failus, kad uz tiem veicat dubultklikšķi: tās sākumlapā \"Iestatīt kā noklusējumu\" atver Windows iestatījumus, kur PDF failiem izvēlaties Syntelab Creative."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Lapu apskate",
+          "body": [
+            "Izvēlne Skats nosaka, kā dokuments tiek rādīts; nekas tajā nemaina failu.",
+            {
+              "points": [
+                "Tālummaiņa: tuvināt, tālināt, reālais izmērs, ietilpināt lapu, ietilpināt platumā, ietilpināt augstumā. Mērogu maina arī Ctrl un peles ritenis.",
+                "Lapas attēlojums: viena lapa vai divas blakus, ar titullapu vai bez tās, un ritināšana cauri visām lapām kā vienai garai joslai.",
+                "Vadlīnijas: lineāli un režģis iestatījumos izvēlētajā mērvienībā.",
+                "\"Rādīt sīktēlus\": mazās lapas sānos. Noklikšķiniet uz kādas, lai pārietu uz to; dokumenta grāmatzīmes ir tajā pašā panelī.",
+                "\"Lasīšanas režīms\" paslēpj rīkus; \"Pilna ekrāna režīms\" paslēpj visu, izņemot lapu. Escape iziet no abiem."
+              ]
+            },
+            "Joslā virs lapām (ātrajā rīkjoslā) ir lapas numurs, mērogs un iestatījumos izvēlētās pogas."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Teksta meklēšana",
+          "body": [
+            "Rediģēt → Meklēt dokumentā (Ctrl+F): ierakstiet vārdu vai frāzi; atrastās vietas tiek iezīmētas lapās, un bultiņas ved no vienas uz nākamo.",
+            {
+              "note": "Noskenēts dokuments ir lapu attēli un tajā nav meklējama teksta, līdz tas tiek atpazīts: skatiet \"Teksta atpazīšana (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Dokumenta īpašības",
+          "body": [
+            "Fails → Dokumenta īpašības rāda, ko dokuments saka par sevi: virsrakstu, autoru, izveides un maiņas datumus, lapu skaitu un faila izmēru."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Saglabāšana, drukāšana un sūtīšana",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Saglabāt un Saglabāt kā",
+          "body": [
+            "Neviena jūsu veiktā darbība neizmaina failu diskā, līdz jūs to saglabājat. Līdz tam katru soli var atsaukt (Ctrl+Z) vai atkārtot (Ctrl+Y).",
+            {
+              "points": [
+                "Saglabāt (Ctrl+S) pārraksta dokumentu tā pašā failā.",
+                "Saglabāt kā (Ctrl+Shift+S) ieraksta to jaunā failā, kas pēc tam aizņem cilnes vietu; vecais fails paliek nemainīts."
+              ]
+            },
+            "Ja fails ir atvērts citā programmā, to nevar pārrakstīt: programma to paziņo un patur jūsu izmaiņas, lai tās varētu saglabāt ar citu nosaukumu.",
+            {
+              "note": "Mainīta dokumenta saglabāšana pāri failam, kas parakstīts ar sertifikātu, noņem tā parakstus. Programma vispirms jautā un piedāvā \"Saglabāt kā jaunu failu\"; šo jautājumu var izslēgt sadaļā Iestatījumi → Paraksti."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "PDF izveide",
+          "body": [
+            "Fails → Izveidot PDF izveido jaunu dokumentu:",
+            {
+              "points": [
+                "no viena faila vai vairākiem: apvienojot vienā PDF vai izveidojot vienu PDF katram;",
+                "no tīmekļa lapas adreses, ko jūs ievadāt (lapa tiek saglabāta ar datorā instalēto pārlūku);",
+                "no starpliktuves satura;",
+                "no tukšām lapām jūsu izvēlētā izmēra."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Eksportēšana citā formātā",
+          "body": [
+            "Fails → Eksportēt ieraksta dokumentu citā formātā: Word vai OpenDocument tekstā, vienkāršā tekstā, tīmekļa lapā, XML, lapu attēlos (PNG, JPEG, TIFF, SVG) vai PostScript. Attēliem izvēlaties izšķirtspēju.",
+            "Pats dokuments paliek PDF; eksports ir jauns fails.",
+            {
+              "note": "Tekstu var eksportēt tikai tur, kur dokumentā ir teksts. Vispirms atpazīstiet skenējuma tekstu."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Drukāšana",
+          "body": [
+            "Fails → Drukāt (Ctrl+P) drukā dokumentu tā pašreizējā izkārtojumā, kopā ar to, ko tajā uzzīmējāt. Izvēlieties lapas, papīru, vai loksnes būs stāvus vai šķērsām un vai lapas tiek ietilpinātas loksnē vai drukātas reālajā izmērā; pēc tam sistēmas drukāšanas logs jautā printeri.",
+            "Papīrs, orientācija un mērogošana, ar kuriem atveras drukāšanas logs, tiek iestatīti sadaļā Iestatījumi → Drukāšana."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Kopīgošana",
+          "body": [
+            "Fails → Kopīgot nodod dokumentu sistēmas logam \"Kopīgot\": e-pastam, tuvumā esošai ierīcei un citām lietotnēm. Dokuments tiek kopīgots tā pašreizējā veidā, ar nesaglabātajām izmaiņām."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lapu organizēšana",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Organizēšanas skats",
+          "body": [
+            "Organizēt → Organizēt lapas rāda visas lapas režģī. Diskā nekas nemainās, kamēr nesaglabājat.",
+            {
+              "points": [
+                "Atlasīšana: noklikšķiniet uz lapas; Ctrl+klikšķis pievieno vienu, Shift+klikšķis atlasa diapazonu. Izvēlnē ir \"Atlasīt visas lapas\", \"Neatlasīt neko\", \"Atlasīt nepāra lapas\" un \"Atlasīt pāra lapas\".",
+                "Pārvietošana: velciet atlasītās lapas jaunajā vietā vai izmantojiet \"Pārvietot pa kreisi\" un \"Pārvietot pa labi\".",
+                "Pagriešana: \"Atlasītās: pagriezt pa kreisi\" un \"Atlasītās: pagriezt pa labi\" pagriež atlasītās lapas; \"Visas lapas: pagriezt pa kreisi\" un \"Visas lapas: pagriezt pa labi\" pagriež visas lapas.",
+                "Dzēšana: Delete taustiņš vai \"Dzēst lapas\". Dokumentam jāpaliek vismaz viena lapa.",
+                "Kopēšana, izgriešana un ielīmēšana (Ctrl+C, Ctrl+X, Ctrl+V): lapas var ielīmēt tajā pašā dokumentā vai citā programmā atvērtā dokumentā.",
+                "Izmērs: slīdnis augšā palielina vai samazina lapas; to pašu dara Ctrl + peles ritenītis virs lapām, kā arī \"Tuvināt\" un \"Tālināt\" (Ctrl+= un Ctrl+-). Izmērs tiek atcerēts."
+              ]
+            },
+            "Tās pašas komandas darbojas arī bez režģa, redzamajai lapai."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Lapu izņemšana un dokumenta sadalīšana",
+          "body": [
+            "Organizēt → Izņemt lapas izņem atlasītās lapas kā jaunu, vēl nesaglabātu dokumentu savā cilnē. Varat arī likt ierakstīt katru lapu kā atsevišķu failu un izvēlēties, vai lapas tiek noņemtas no šī dokumenta.",
+            "Organizēt → Sadalīt dokumentu saglabā dokumentu kā vairākus mazākus failus; šis dokuments paliek nemainīts.",
+            "Jauno dokumentu nosaukumi seko veidnēm sadaļā Iestatījumi → Jauno dokumentu nosaukumi.",
+            {
+              "note": "Ar sertifikātu veiktie paraksti netiek pārnesti uz izņemtajiem vai sadalītajiem dokumentiem: paraksts ir derīgs tikai failam, kurā tas veikts."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Lapu ievietošana un aizstāšana",
+          "body": [
+            {
+              "points": [
+                "Organizēt → Ievietot lapas pievieno cita faila (PDF, attēla, teksta, biroja dokumenta) lapas aiz atlasītās lapas vai beigās.",
+                "Organizēt → Aizstāt lapas ievieto cita faila lapas atlasīto lapu vietā.",
+                "Ievietot → Tukša lapa pievieno tukšu lapu tādā pašā izmērā kā blakus esošā."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Lapu apgriešana un izmēra maiņa",
+          "body": [
+            "Rediģēt → Apgriezt lapas nogriež lapu malas pēc ievadītām vai novilktām malām. No faila nekas netiek dzēsts: lapās vienkārši redzams mazāk.",
+            "Rediģēt → Mainīt lapu izmēru novieto lapas uz cita izmēra loksnes (A4, Letter un citas). Saturu var mērogot, lai ietilptu, vai paturēt tā izmērā un novietot vienā no deviņām vietām uz jaunās loksnes.",
+            "Abi jautā, kuras lapas: visas, atlasītās, diapazonu, nepāra vai pāra."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Failu apvienošana",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Sējums",
+          "body": [
+            "Apvienot → Jauns sējums atver vietu, kur apkopot failus un ierakstīt tos kā vienu PDF.",
+            {
+              "steps": [
+                "Pievienojiet failus ar \"Pievienot failus\" vai nometiet tos sējumā. PDF, attēlus, tekstu un biroja dokumentus var jaukt.",
+                "Velciet kartītes vajadzīgajā secībā vai izmantojiet katras kartītes bultiņas.",
+                "Atveriet kartīti, lai izvēlētos, kuras tās lapas iekļaut.",
+                "\"Apvienot failus\" ieraksta tos secībā kā vienu jaunu dokumentu savā cilnē."
+              ]
+            },
+            "Paši faili netiek izmainīti.",
+            "Slīdnis augšā palielina vai samazina lapas uz kartītēm; to pašu dara Ctrl + peles ritenītis, kā arī \"Tuvināt\" un \"Tālināt\" (Ctrl+= un Ctrl+-). Izmērs tiek atcerēts."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rakstīšana un zīmēšana lapās",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Rīki",
+          "body": [
+            "Zīmēšanas rīki atveras kā panelis blakus lapai, kā pogu režģis vai kā saraksts ar nosaukumiem (to nosaka iestatījumi). Ar izvēlētu rīku velciet vai noklikšķiniet lapā; Escape noliek rīku.",
+            {
+              "points": [
+                "Teksts: noklikšķiniet un rakstiet. Fonts, izmērs, krāsa, treknraksts, slīpraksts un līdzinājums ir panelī.",
+                "Attēls: izvēlieties attēlu, pēc tam velciet, kur tas atradīsies un cik liels būs.",
+                "Figūras: taisnstūris, elipse, līnija, bultiņa, ķeksītis, krusts, punkts.",
+                "Izcelšana: velciet pāri tam, kam jāizceļas; tas, kas zem tā, paliek lasāms."
+              ]
+            },
+            "Ar rīku \"Atlasīt, pārvietot un mainīt izmēru\" atzīmi var paņemt atkal: velciet to, velciet tās stūrus, pagrieziet to aiz tura, mainiet tās krāsas panelī vai dzēsiet ar taustiņu Delete. Atzīmes var kopēt un ielīmēt, arī citās lapās.",
+            "Viss uzzīmētais tiek ierakstīts failā, kad saglabājat."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Dokumenta teksta un attēlu mainīšana",
+          "body": [
+            "Rīks \"Rediģēt dokumenta tekstu un attēlus\" apzīmē to, kas atrodas pašā lapā. Noklikšķiniet uz teksta rindas, lai to pārrakstītu, vai uz attēla, lai to pārvietotu, mainītu izmēru, pagrieztu vai dzēstu.",
+            {
+              "note": "Tas maina vienu rindu vai vienu attēlu vienlaikus. Rindkopas netiek pārkārtotas, kad rinda kļūst garāka, un attēls, kas atrodas virs cita, tiek paņemts kopā ar to. Lielām izmaiņām rediģējiet dokumentu programmā, kurā tas tika rakstīts."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Sensitīvas informācijas dzēšana",
+          "body": [
+            "Vairāk rīku → Dzēst sensitīvu informāciju neatgriezeniski noņem to, ko nedrīkst izlasīt: velciet pāri tam melnu lodziņu jebkurā lapā. Saglabājot teksts un attēli zem lodziņa tiek izņemti no faila, nevis tikai aizklāti.",
+            {
+              "note": "Saglabājiet apstrādāto dokumentu ar jaunu nosaukumu un glabājiet oriģinālu drošā vietā: izdzēsto nevar atgūt."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Ūdenszīme",
+          "body": [
+            "Rediģēt → Ūdenszīme uzraksta vārdus vai novieto attēlu jūsu izvēlētajās lapās: taisni vai slīpi, vienā no deviņām vietām, tik lielu un bālu, kā iestatāt. Katrā lapā tā pēc tam ir atzīme kā jebkura cita, un to vēl var pārvietot vai noņemt."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Lapu numuri, galvene un kājene, Bates numuri",
+          "body": [
+            {
+              "points": [
+                "Rediģēt → Lapas numuri: formāts (1, 1 / 12, 1. lapa u.c.), vieta un kurās lapās tie jābūtu.",
+                "Ievietot → Galvene un kājene: teksts jebkurā no sešām vietām. Tajā {page} apzīmē lapas numuru, {pages} — lapu skaitu, {date} — šodienas datumu un {file} — dokumenta nosaukumu.",
+                "Ievietot → Bates numurēšana: numuri pēc kārtas ar vārdu pirms vai pēc (ABC000123), kā to izmanto lietas dokumentiem."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Saites, grāmatzīmes un pievienotie faili",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Saites",
+          "body": [
+            "Ievietot → Saite: velciet pāri vietai, uz kuras jānoklikšķina, pēc tam norādiet, kurp tā ved: tīmekļa adrese vai šī dokumenta lapa.",
+            "Dokumenta saites darbojas lasīšanas laikā: klikšķis uz saites uz lapu aizved turp; tīmekļa vai e-pasta adrese tiek nodota jūsu pārlūkam vai e-pasta programmai."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Grāmatzīmes",
+          "body": [
+            "Ievietot → Jauna grāmatzīme: noklikšķiniet vietā, uz kuru tai jāved, un dodiet tai nosaukumu. Ievietot → Grāmatzīmes atver sarakstu, kurā grāmatzīmi var pārdēvēt vai noņemt. Izmaiņas tiek ierakstītas, kad saglabājat."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Pievienotie faili",
+          "body": [
+            "Ievietot → Pievienot failu: izvēlieties failu un noklikšķiniet vietā, kur novietot tā saspraudi. Varat norādīt nosaukumu un autoru, iekrāsot saspraudi, mainīt tās izmēru un pagriezt to. Saglabājot fails tiek glabāts PDF iekšpusē.",
+            "Ievietot → Pielikumi uzskaita, ko dokuments satur; katru failu var saglabāt diskā vai izņemt. Klikšķis uz saspraudes atver to pašu sarakstu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formas",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Formas aizpildīšana",
+          "body": [
+            "Ievietot → Aizpildīt formu rāda dokumenta laukus: rakstiet teksta laukos, atzīmējiet rūtiņas, izvēlieties no sarakstiem. Saglabājot atbildes tiek ierakstītas failā."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Formas izveide",
+          "body": [
+            "Izvēlne Ievietot pievieno laukus jebkuram dokumentam: teksta lauku, izvēles rūtiņu, izvēles pogas (no kurām var izvēlēties vienu), izvēles sarakstu un paraksta lauku, kas paliek tukšs parakstītājam.",
+            "Velciet lapā vietā, kur būs lauks. Tāpat kā citas atzīmes, lauku var pārvietot un mainīt tā izmēru līdz saglabāšanai; pēc tam tas ir formas daļa."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Parakstīšana",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Zīmēta paraksta pievienošana",
+          "body": [
+            "Parakstīt → Pievienot parakstu novieto lapā paraksta attēlu: uzzīmētu šeit ar izvēlētu pildspalvu, ierakstītu ar fontu vai ņemtu no attēla (ar \"Paturēt tikai pildspalvas vilcienus\" parakstītas lapas fotogrāfijai). Zem tā var ierakstīt datumu.",
+            "Velciet lapā, kur tas jānovieto. Izmantotie paraksti tiek glabāti šajā datorā, lai tos varētu izmantot vēlreiz.",
+            {
+              "note": "Šis ir attēls: tas neko droši nepasaka par to, kas to tur novietoja. Paraksts, kas pierāda, kas parakstīja un ka kopš tā laika nekas nav mainīts, tiek veikts ar sertifikātu."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Parakstīšana ar sertifikātu",
+          "body": [
+            "Parakstīt → Parakstīt ar sertifikātu izveido digitālu parakstu: tas norāda, kas parakstīja, un aizzīmogo dokumentu, tāpēc jebkura vēlāka izmaiņa ir redzama.",
+            {
+              "steps": [
+                "Velciet lapā apgabalu, kur būs redzams paraksts (vispirms to paskaidro logs; to var izslēgt). Lai parakstītu, lapās neko nerādot, tā vietā izvēlieties \"Parakstīt, nerādot to lapā\".",
+                "Izvēlieties sertifikātu: kādu no datora sertifikātiem (karte vai marķieris parādās starp tiem, kad tas ir lasītājā) vai .pfx / .p12 failu ar tā paroli. \"Turpināt\".",
+                "Izvēlieties paraksta izskatu. Sadaļā \"Iemesls un vieta\" varat ierakstīt, kāpēc un kur parakstāt: tie nonāk parakstā un lapā, ja izskats tos rāda. Atzīmējiet \"Bloķēt dokumentu pēc parakstīšanas\", ja neviens pēc jums nedrīkst to parakstīt vai mainīt. Atstājiet atzīmētu \"Pievienot uzticamu laiku (laika zīme)\", lai iestāde apliecinātu, kad parakstījāt.",
+                "\"Parakstīt\", pēc tam izvēlieties, kur saglabāt parakstīto failu. Marķieris šajā brīdī prasa savu PIN kodu."
+              ]
+            },
+            "Parakstītais fails atveras dokumenta vietā. Paroli vai PIN kodu programma nekad nesaglabā.",
+            {
+              "note": "Kvalificēts paraksts ir šādi veikts paraksts ar kvalificētu sertifikātu, kas atrodas tā kartē vai marķierī. Parakstīšana notiek jūsu datorā; tiešsaistē tiek sūtīti tikai laika zīmes un jūsu sertifikāta pārbaudes pieprasījumi, un tie nosūta jaucējvērtības un sertifikāta sērijas numuru, nekad dokumentu."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Paraksta izskati",
+          "body": [
+            "Izskats nosaka, kā paraksts ar sertifikātu izskatās lapā. Glabājiet vairākus ar saviem nosaukumiem: vienu parakstīšanai uzņēmuma vārdā, otru parakstīšanai savā vārdā.",
+            {
+              "points": [
+                "Attēls: nav, no faila (zīmogs, noskenēts paraksts) vai uzzīmēts šeit.",
+                "Rādāmais teksts: vārds, datums, iemesls, vieta, katrs ar vai bez apzīmējuma.",
+                "Savas rindas zem vārda, piemēram, amats un uzņēmums.",
+                "\"Standarta teksts\" vienmēr ir klāts: kas parakstījis un kad."
+              ]
+            },
+            "Parakstīšanas logā: \"Jauns…\", \"Rediģēt…\", \"Dzēst\". Pēdējais izmantotais tiek piedāvāts pirmais. Izskati tiek glabāti šajā datorā."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Vairāki paraksti un bloķēšana",
+          "body": [
+            "Dokumentu var parakstīt vairākas personas, vienas pēc otras. Atveriet parakstīto failu un parakstiet to, neko nemainot: jūsu paraksts tiek pievienots faila beigās, un iepriekšējie saglabā spēku.",
+            "\"Bloķēt dokumentu pēc parakstīšanas\" (izslēgts, ja to neatzīmējat) noslēdz dokumentu: neviens pēc jums nevar parakstīt, un neko vairs nedrīkst mainīt. To nevar atsaukt.",
+            {
+              "note": "Ja maināt parakstītu dokumentu pirms tā atkārtotas parakstīšanas, tas jāieraksta no jauna, un iepriekšējie paraksti tiek izlaisti. Parakstīšanas logs jūs brīdina: lai tos saglabātu, atveriet failu vēlreiz un parakstiet, neko nemainot."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Laika zīmes",
+          "body": [
+            "Laika zīme ir laika zīmes iestādes parakstīts apliecinājums par to, kad kaut kas pastāvēja. Citādi laiks parakstā nāk no parakstītāja datora pulksteņa, ko ikviens var iestatīt; laika zīme pierāda brīdi un ļauj pierādīt parakstu arī pēc sertifikāta derīguma beigām (PAdES B-T).",
+            {
+              "points": [
+                "Paraksti to saņem, ja parakstīšanas logā ir atzīmēts \"Pievienot uzticamu laiku (laika zīme)\". Iestatījumi → Paraksti nosaka, vai tas sākumā ir atzīmēts, gan šeit, gan pakešapstrādē.",
+                "Parakstīt → Pievienot laika zīmi piešķir visam dokumentam savu laika zīmi bez sertifikāta: tā pierāda, ka dokuments tajā brīdī bija tieši tāds, kāds tas ir. Tas tiek saglabāts kā jauns fails; faila paraksti paliek derīgi."
+              ]
+            },
+            "Iestāde ir DigiCert (http://timestamp.digicert.com), bezmaksas, un tai uzticas Adobe Reader un Windows; citu var iestatīt sadaļā Iestatījumi → Paraksti. Tā saņem tikai jaucējvērtību (SHA-256), nekad dokumentu, un ir vajadzīgs interneta savienojums. Kad paraksts saņem laika zīmi, arī jūsu sertifikāta izdevējam tiek jautāts, vai sertifikāts joprojām ir derīgs, un tā atbilde tiek saglabāta parakstā (ilgtermiņa validācija): tad Adobe Reader var parādīt parakstu kā derīgu gan tagad, gan pēc sertifikāta derīguma beigām.",
+            {
+              "note": "Ja ar laika zīmes iestādi nevar sazināties, nekas netiek parakstīts vai saglabāts: mēģiniet vēlreiz vai noņemiet atzīmi no laika zīmes, lai parakstītu bez tās."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Parakstu pārbaude",
+          "body": [
+            "Parakstīt → Pārbaudīt parakstus uzskaita visus faila parakstus ar sertifikātu: kas parakstīja, kas izdeva sertifikātu, kad, iemeslu un vietu, un",
+            {
+              "points": [
+                "vai dokuments kopš šī paraksta nav mainīts (vēlāk pievienots cits paraksts netiek uzskatīts par izmaiņu);",
+                "vai paraksts bloķē dokumentu;",
+                "vai šis dators uzticas iestādei aiz sertifikāta, un vai sertifikāts šodien ir derīgs;",
+                "laiks, ko apliecina tā laika zīme, un kura iestāde to apliecinājusi, ja parakstam ir laika zīme. Sarakstā ir arī visa dokumenta laika zīme ar savu pārbaudi."
+              ]
+            },
+            "Pārbaudīts tiek fails tā pēdējā saglabātajā versijā, un tas notiek šajā datorā, neizmantojot internetu. Noklikšķinot uz paraksta lapā, šis saraksts tiek atvērts pie šī paraksta. Zem katra paraksta “Rādīt sertifikātu” atver sertifikāta Windows logu (tā ķēdi un visu informāciju; no turienes “Instalēt sertifikātu” liek šim datoram uzticēties sertifikātam, ko pazīstat), bet “Validēt” tikai tad, kad to nospiežat, tiešsaistē jautā sertifikāta izdevējam, vai sertifikāts ir atsaukts."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vairāk rīku",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Teksta atpazīšana (OCR)",
+          "body": [
+            "Vairāk rīku → Atpazīt tekstu (OCR) nolasa skenētu lapu vārdus un neredzami ieraksta tos lapās, lai dokumentā varētu meklēt un tā tekstu kopēt un eksportēt. Lapu izskats nemainās.",
+            "Atzīmējiet tikai tās valodas, kurās ir rakstītas lapas; lapas, kurās jau ir teksts, paliek nemainītas.",
+            {
+              "note": "Lasīšanu veic Tesseract dzinējs, atsevišķi instalējama bezmaksas programma. Ja tā nav, logs rāda komandu, ar kuru to instalēt sistēmā Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Dokumenta apmēra samazināšana",
+          "body": [
+            "Vairāk rīku → Saspiest saglabā dokumentu kā mazāku failu, samazinot tā fotogrāfiju un skenējumu pikseļu skaitu. Trīs pakāpes; teksts un zīmējumi paliek tikpat asi. Dokuments ar maz attēliem iegūst maz."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Divu dokumentu salīdzināšana",
+          "body": [
+            "Vairāk rīku → Salīdzināt dokumentus: izvēlieties citu PDF. Abi tiek rādīti blakus, lapu pa lapai; lapas, kuru teksts atšķiras, ir atzīmētas, un rindas, kas ir tikai vienā no tiem, ir uzskaitītas."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Pakešapstrāde: daudzi faili vienlaikus",
+          "body": [
+            "Vairāk rīku → Pakešapstrāde veic vienas un tās pašas darbības ar daudziem failiem atsevišķā cilnē. Katrs rezultāts ir jauns fails. Ja rezultāti aizstātu mapē jau esošus failus (jūsu pašu failus, ja tie nonāk savā mapē un to nosaukumiem nekas netiek pievienots), vispirms jums tiek jautāts, vai tos aizstāt, izlaist vai atcelt. Fails tiek aizstāts tikai tad, kad tā rezultāts ir pabeigts; atvērts fails (šeit kādā cilnē vai citā programmā) paliek nemainīts un tiek atzīmēts kā neizpildīts.",
+            {
+              "steps": [
+                "Kreisajā pusē pievienojiet failus: \"Pievienot failus…\", \"Pievienot mapi…\" (kopā ar tās apakšmapēm) vai nometiet tos.",
+                "Labajā pusē atzīmējiet, ko darīt. Katrs fails jebkurā gadījumā kļūst par PDF; turklāt varat pagriezt lapas, atpazīt tekstu, pievienot galveni un kājeni, ūdenszīmi vai lapu numurus, samazināt failus, parakstīt tos ar sertifikātu vai ierakstīt citā formātā. Numuri rāda secību.",
+                "Izvēlieties, kas tiek ierakstīts: atsevišķs fails katram vai viss vienā PDF (saraksta secībā), un mapi, kur nonāk rezultāti. Ja visi faili ir no vienas mapes, šī mape tiek izvēlēta jūsu vietā, līdz izvēlaties citu; pretējā gadījumā tā ir pēdējā jūsu izvēlētā mape.",
+                "\"Sākt\". Pie katra faila redzams, kā tas izdevās; darbu var apturēt starp failiem."
+              ]
+            },
+            {
+              "points": [
+                "Receptes: \"Saglabāt kā recepti\" saglabā visu, ko izvēlējāties (izņemot failus un paroles), ar nosaukumu, lai to varētu atkal iestatīt ar vienu izvēli.",
+                "\"Saglabāt rezultātos failu mapes\" atjauno pievienotās mapes apakšmapes.",
+                "\"Ierakstīt izpildes atskaiti\" atstāj blakus rezultātiem teksta failu, kurā norādīts, kas tika ierakstīts un kas neizdevās.",
+                "PDF fails, kas ir tikai parakstīts, saglabā esošos parakstus; ja tajā pašā darbības gaitā tiek veikta kāda cita darbība, tas tiek ierakstīts no jauna un paraksti tiek izlaisti."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Iestatījumi",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "PDF Organizer iestatījumi",
+          "body": [
+            "Fails → Iestatījumi (vai Iestatījumi sānu joslā, pēc tam PDF Organizer). Katru iestatījumu var atiestatīt atsevišķi vai visus uzreiz.",
+            {
+              "points": [
+                "Kad dokuments atveras: cik lielu dokumentu rāda atverot, ritināšana vai viena lapa vienlaikus, vai rādīt sīktēlus.",
+                "Mērvienības, lineāli un režģis: mērvienība (milimetri, collas, punkti), lineāli, režģis un tā atstarpe.",
+                "Drukāšana: papīrs, orientācija un mērogošana, ar kuriem atveras drukāšanas logs.",
+                "Ātrā rīkjosla: kuras pogas ir joslā virs lapām.",
+                "Jauno dokumentu nosaukumi: veidnes izņemtajām lapām, jauniem dokumentiem un PDF, kurā pakešapstrāde apkopo daudzus failus.",
+                "Paraksti: vai \"Saglabāt\" jautā pirms parakstīta faila pārrakstīšanas.",
+                "Īsinājumtaustiņi: noklikšķiniet uz komandas taustiņiem, pēc tam nospiediet jaunos."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Par PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Par PDF Organizer",
+          "body": [
+            "PDF Organizer ir Syntelab Creative PDF lietotne: tā lasa PDF dokumentus, sakārto un apvieno to lapas, raksta un zīmē tajos, aizpilda un izveido formas, paraksta ar sertifikātu un pārbauda parakstus, kā arī veic šīs darbības vairākiem failiem vienlaicīgi.",
+            "Tā ir jauna, un daļa no tā, ko tā dara, ir pirmais solis. Ja tā nespēj apstrādāt jūsu dokumentus, paziņojiet mums, izmantojot Palīdzība → Atsauksmes: tā mēs zinām, pie kā strādāt."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Kādās tehnoloģijās PDF Organizer ir veidota",
+          "body": [
+            {
+              "points": [
+                "PDF lasīšana, zīmēšana un rakstīšana: MuPDF.",
+                "Teksta atpazīšana (OCR): Tesseract, ja tas ir instalēts datorā.",
+                "Ofisa dokumentu atvēršana: Word, Excel un PowerPoint vai LibreOffice, atkarībā no tā, kurš ir instalēts.",
+                "Tīmekļa lapas saglabāšana kā PDF: datorā instalētais pārlūks.",
+                "Parakstīšana ar sertifikātu: Windows sertifikātu pakalpojumi; paraksti tiek rakstīti tā, kā prasa PAdES standarts."
+              ]
+            },
+            "Informācija par kopīgām funkcijām ar pārējo programmu atrodas sadaļā \"Par Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ko PDF Organizer vēl neprot",
+          "body": [
+            {
+              "points": [
+                "Biroja dokumentus atver datorā esošā biroja programmatūra; bez Word, Excel, PowerPoint vai LibreOffice tos nevar atvērt. Mēs strādājam pie sava konvertētāja: skatiet \"Pie kā mēs strādājam\".",
+                "Teksta atpazīšanai nepieciešams Tesseract dzinējs, kas jāinstalē atsevišķi.",
+                "Paša dokumenta teksts tiek mainīts pa vienai rindai; rindkopas netiek pārkārtotas.",
+                "Attēlus, kas drukāti ar četrām krāsām (CMYK), nevar paņemt, lai pārvietotu.",
+                "“Validēt” parāda, vai sertifikāts šodien ir atsaukts, bet ne to, kad tas tika atsaukts.",
+                "Parakstīšana ar sertifikātu pagaidām darbojas sistēmā Windows; Linux un macOS tā būs pieejama vēlākā versijā."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

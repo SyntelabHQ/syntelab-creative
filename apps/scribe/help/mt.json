@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Testi u fajls",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "L-editur",
+          "body": [
+            "Scribe huwa editur ta' test sempliċi bl-għodod tiegħu ħdejh. Kull test għandu tab; it-test jinsab fin-nofs, il-pannell tal-għodod fil-ġenb tiegħu, u linja ta' informazzjoni taħtu.",
+            "Meta jinfetaħ, Scribe l-ewwel jistaqsik x'tixtieq tagħmel: tgħodd il-kliem, tfittex u tibdel, tneħħi d-doppji, tqabbel żewġ testi, tordna l-linji, taqleb test, tikteb test ta' mili jew test bl-addoċċ. Kull għażla tiftaħ it-test bl-għodda tagħha ħdejh; \"Test vojt\" jiftaħ it-test waħdu, u t-testi miftuħa reċentement huma elenkati taħt.",
+            {
+              "points": [
+                "Fajl → Test ġdid (Ctrl+N) jibda test vojt.",
+                "Fajl → Iftaħ (Ctrl+O) jiftaħ fajl wieħed jew aktar, kull wieħed fit-tab tiegħu. Jinfetaħ kull fajl li fih test: .txt, .md, .csv, .log, .srt, kodiċi sors u oħrajn.",
+                "Editja → Erġa' lura (Ctrl+Z) u Erġa' agħmel (Ctrl+Y) jgħaddu minn kull ma sar fuq it-test; għodda jew riċetta tgħodd bħala pass wieħed.",
+                "Editja → Fittex u ibdel (Ctrl+F) jiftaħ strixxa fl-editur li tmur minn tqabbil għall-ieħor.",
+                "Editja → Agħżel kollox (Ctrl+A)."
+              ]
+            },
+            "Il-linja taħt it-test turi fejn hemm il-cursor, kemm hemm magħżul, in-numru ta' linji, kliem u karattri, il-kodifikazzjoni tal-fajl u kif jispiċċaw il-linji tiegħu.",
+            "Il-fajls imwaddba fuq it-tieqa jinfetħu wkoll, kull wieħed bħala test ġdid bl-isem, il-kodifikazzjoni u t-truf tal-linji tal-fajl. Il-programm jieħu dak li hemm f'fajl imwaddab iżda mhux fejn jinsab fuq id-diska, għalhekk meta tissejvja jistaqsik fejn; il-fajls ta' aktar minn 64 MB jinfetħu b'Fajl → Iftaħ.",
+            "Test ġdid, sakemm ikun vojt, jelenka t-testi miftuħa reċentement: ikklikkja wieħed biex tiftħu. \"Insa l-lista\" tbattalha; il-lista tinżamm fuq dan il-kompjuter biss."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Issejvja u Issejvja bħala",
+          "body": [
+            "Xejn ma jbiddel il-fajl fuq id-diska sakemm tissejvja. Tikka fuq it-tab tgħid li t-test għandu bidliet li mhumiex fil-fajl tiegħu, u l-għeluq ta' tab bħal din jistaqsik l-ewwel.",
+            {
+              "points": [
+                "Issejvja (Ctrl+S) jikteb it-test fuq il-fajl tiegħu. Test ġdid jistaqsik fejn.",
+                "Issejvja bħala (Ctrl+Shift+S) jiktbu f'fajl ġdid, li mbagħad jieħu post it-tab, b'dak kollu li jista' jitreġġa' lura għadu hemm; il-fajl il-qadim jibqa' kif kien."
+              ]
+            },
+            "Fajl jinkiteb kollu jew xejn: jekk il-kitba tfalli, il-fajl li kien hemm għadu hemm.",
+            {
+              "note": "Fajl jiġi ssejvjat kif infetaħ: bl-istess kodifikazzjoni, bl-istess truf tal-linji. Test ittajpjat fuq Windows u ieħor ittajpjat fuq Linux it-tnejn jibqgħu kif kienu."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodifikazzjonijiet u truf tal-linji",
+          "body": [
+            "Kodifikazzjoni hija l-mod kif l-ittri jinżammu bħala bytes. Scribe jaqra dak li jgħid il-fajl dwaru nnifsu, u jimmaġina meta ma jgħid xejn. Il-biċċa l-kbira tal-fajls illum huma UTF-8; dawk eqdem mill-Ewropa Ċentrali spiss huma windows-1250.",
+            {
+              "points": [
+                "Ittri li jidhru ħażin (Ã£ minflok ă, jew kwadri): Fajl → \"Erġa' aqra b'kodifikazzjoni oħra\", u agħżel dik li biha nkiteb il-fajl.",
+                "Biex tissejvja b'kodifikazzjoni oħra, agħżilha fil-linja taħt it-test, imbagħad issejvja. Jekk it-test fih ittri li dik il-kodifikazzjoni ma tistax tikteb, Scribe jgħid liema u ma jikteb xejn.",
+                "It-truf tal-linji (Windows CRLF, Linux u macOS LF, Mac qadim CR) jinbidlu fl-istess post. Fajl b'truf imħallta jingħad li għandu hekk; is-sejvjar jagħti l-istess tarf lil-linji kollha tiegħu."
+              ]
+            },
+            "B'xiex jibda test ġdid tagħżlu fl-Issettjar."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Kif jintwera t-test",
+          "body": [
+            {
+              "points": [
+                "Kull ħaġa fil-menu Ara hija swiċċ: mixgħul, tidher; mitfi, ma tidhirx.",
+                "Test: Kisser il-linji twal (Alt+Z) — linja itwal mit-tieqa tkompli taħt, u t-test iżomm il-linji tiegħu; Numri tal-linji; Riżultat ħdejn it-test.",
+                "Ħdejn it-test: Għodod (Ctrl+T), Riċetti, Statistika. Il-pannell juri biss il-partijiet mixgħula; meta l-ebda waħda mhi mixgħula, m'hemmx pannell.",
+                "Għodod murija: kull grupp ta' għodod (fittex u ibdel, linji, ittri kbar u ittri, tindif, ikteb test) jista' jitħalla barra mill-pannell. Għodda magħżula mill-menu Format jew Għodod tintwera xorta waħda: il-parti u l-grupp tagħha jerġgħu jidhru waħedhom.",
+                "Il-vleġġa doppja fuq nett tal-pannell titwih sa strixxa fit-tarf, li minnha kull parti tiegħu hija klikk 'il bogħod; kaxkar it-tarf tiegħu biex tagħmlu usa' jew idjaq.",
+                "L-ittri u d-daqs tagħhom jintgħażlu fl-Issettjar."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Fajls kbar ħafna",
+          "body": [
+            "Fajl ta' aktar minn 64 MB ma jitpoġġiex fl-editur: jinfetaħ f'tab li turih paġna ta' 500 linja kull darba, moqri mill-fajl hekk kif timxi. Fajls ta' gigabytes jinfetħu b'dan il-mod fil-ħin li jieħu biex jgħaddi minnhom darba.",
+            {
+              "points": [
+                "\"Il-paġna ta' qabel\" u \"Il-paġna li jmiss\" jimxu minnu; numru tal-linja u \"Mur\" jaqbżu għal kwalunkwe linja.",
+                "Fittex ifittex fil-fajl kollu, bl-istess għażliet bħal f'postijiet oħra, u jelenka l-postijiet li sab: ikklikkja wieħed biex tmur fil-linja tiegħu. Lista twila tiġi parti parti, b'\"Fittex aktar\".",
+                "\"Ħaddem riċetta fuq il-fajl kollu\" jikteb ir-riżultat f'folder li tagħżel int, bl-istess isem. Il-fajl innifsu qatt ma jinbidel hawn.",
+                "\"Iftaħ kollu fl-editur\" ipoġġih fl-editur xorta waħda, biex tbiddlu bl-idejn. Jista' jkun bil-mod, u jeħtieġ diversi drabi d-daqs tal-fajl fil-memorja."
+              ]
+            },
+            {
+              "note": "Fajls miktuba b'żewġ bytes għal kull ittra (UTF-16) ma jistgħux jintwerew paġna paġna. Riċetta żżomm il-fajl kollu fil-memorja waqt li titħaddem: il-limitu huwa l-memorja tal-kompjuter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Għodod",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Kif jaħdmu l-għodod",
+          "body": [
+            "L-għodod jinsabu fil-pannell ħdejn it-test, fi gruppi. Ikklikkja għodda biex tara l-għażliet tagħha, imbagħad Applika.",
+            {
+              "points": [
+                "B'xi ħaġa magħżula, għodda tbiddel l-għażla biss; b'xejn magħżul, it-test kollu. Il-pannell jgħid liema, fuq nett tiegħu.",
+                "Taħt il-buttuna, għodda tgħid x'għamlet: kemm-il linja jew post biddlet.",
+                "Kull għodda hija pass wieħed: Erġa' lura jħassarha kollha.",
+                "Kull għodda tinsab ukoll fil-menus u fit-tfittxija tal-kmandi: dawk li jbiddlu l-forma ta' test (linji, ittri kbar u ittri, tindif) fil-menu Format, l-oħrajn f'Għodod. Jekk tagħżel waħda minn hemm, il-pannell jinfetaħ fuq l-għażliet tagħha."
+              ]
+            },
+            "Fil-menu Format, għodda li hija l-aktar għażla waħda tintwera bħala l-opzjonijiet tagħha: kull mod kif tibdel l-ittri kbar, kull tip ta' virgoletti, kull mod kif taqleb test huwa kmand għalih, li jiftaħ l-għodda b'dik l-opzjoni magħżula. Fejn it-tieqa hija dejqa wisq għal grupp, il-grupp isir buttuna waħda li tiftaħ il-lista kollha.",
+            "L-għodod jaħdmu fuq dan il-kompjuter. L-ebda test ma joħroġ minnu."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Ir-riżultat, qabel ma tapplika",
+          "body": [
+            "Waqt li għodda tkun miftuħa, dak li tagħti jintwera ħdejn it-test, fil-pannell \"Riżultat\". Xejn fit-test ma jinbidel sakemm tagħżel Applika. Ir-riżultat isegwik: ibdel għażla jew it-test, u jerġa' jsir.",
+            {
+              "points": [
+                "It-test u r-riżultat jinsabu ħdejn xulxin, kull wieħed taħt intestatura tal-istess għoli, biex l-istess linji jibdew fl-istess għoli; jiskrollaw flimkien (il-buttuna tal-katina titfi dan).",
+                "Il-linji li jinbidlu jiġu mmarkati, bil-parti tal-linja li tinbidel immarkata iktar skur; il-linji li jiċċaqilqu biss, u l-linji ġodda, għandhom kull wieħed il-kulur tiegħu. Il-linji li jinbidlu jew jitneħħew jiġu mmarkati wkoll fit-test tiegħek.",
+                "Taħt l-ismijiet: x'jiġri bin-numri — linji mibdula, imċaqalqa, ġodda, imneħħija; linji u karattri qabel u wara.",
+                "Taħt ir-riżultat: il-linji li jitneħħew. Ikklikkja waħda biex tmur għaliha fit-test.",
+                "Il-buttuni żgħar tar-riżultat: ikkopjah, iftħu bħala test ġdid, qabblu mat-test f'tab, skrollja flimkien, poġġi r-riżultat taħt it-test minflok ħdejh, aħbih. It-test għandu tiegħu: erġa' lura, erġa' agħmel, ikkopja, waħħal minfloku, agħżel kollox, battal.",
+                "Kaxkar il-bar bejn it-tnejn biex tagħti aktar spazju lil wieħed; ikklikkja darbtejn biex terġa' tagħmilhom indaqs."
+              ]
+            },
+            "Wara Applika, il-pannell Riżultat jgħid hekk (\"Applikata. It-test fuq ix-xellug issa huwa r-riżultat.\") u joffri Erġa' lura u \"Qabbel ma' kif kien\", li jiftaħ l-istess tqabbil ta' qabel u wara. Jerġa' juri riżultat hekk kif tibdel it-test jew għażla tal-għodda.",
+            {
+              "note": "Ara → \"Riżultat ħdejn it-test\" jitfi u jixgħel il-pannell. Għal test twil ħafna (aktar minn żewġ miljun karattru) xejn ma jintwera minn qabel: applika l-għodda, u Erġa' lura jħassarha."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Ibdel kullimkien",
+          "body": [
+            "Jibdel kull post fejn tinstab xi ħaġa, f'daqqa. Waqt li tikteb x'għandek tfittex, Scribe jgħid f'kemm-il post tinstab u jimmarkahom fit-test, biex tara x'se jinbidel qabel ma tapplika.",
+            {
+              "points": [
+                "\"Espressjoni regolari\": it-test li tfittex huwa pattern. F'\"Ibdel bi\", $1, $2… ifissru dak li sabu l-gruppi tal-pattern.",
+                "\"L-ittri kbar jgħoddu\": a u A huma ittri differenti.",
+                "\"Kliem sħiħ biss\": \"qattus\" ma jinstabx ġewwa \"qattusa\".",
+                "\"Żomm l-ittri kbar ta' dak li jinbidel\": jekk tibdel \"qattus\" b'\"kelb\", \"Qattus\" isir \"Kelb\" u \"QATTUS\" isir \"KELB\"."
+              ]
+            },
+            {
+              "points": [
+                "\"Aktar għażliet\" → \"Imla…\": dak li jitpoġġa jista' jkun fih spazji vojta li jimtlew f'kull tqabbil. {counter} jgħodd 1, 2, 3… ({counter:10} jibda minn 10, {counter:10:5} jitla' b'5); {date} u {time} huma l-jum u s-siegħa tal-kompjuter tiegħek; {uuid} huwa identifikatur; {random} huwa 8 ittri u ċifri bl-addoċċ ({random:12} għal 12).",
+                "Taħt dak li tfittex, Scribe jgħid ukoll f'kemm-il linja jinsabu t-tqabbiliet u kemm huma testi differenti."
+              ]
+            },
+            "\"Ibdel diversi f'daqqa\" jagħmel lista ta' pari f'pass wieħed. Ikteb par wieħed f'kull linja, hekk: x'għandu jinstab => x'għandu jitpoġġa minfloku. Isiru mill-ewwel sal-aħħar, kull wieħed fuq dak li ħalla ta' qablu; nofs it-tieni vojt ineħħi t-test.",
+            {
+              "note": "Pattern ma jistax jiffriża l-programm: il-ħin li jieħu jikber mat-tul tat-test u mhux aktar malajr. Il-patterns li jħarsu lura lejn dak li sabu (\\1) mhumiex disponibbli għal din ir-raġuni."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Linji",
+          "body": [
+            {
+              "points": [
+                "Ordna l-linji skont: l-ittri tagħhom, kif jagħmel dizzjunarju, fil-lingwa tal-programm jew f'waħda li tagħżel int (bir-Rumen ă tiġi wara a; l-Iżvediż ipoġġi ä wara z, il-Ġermaniż ħdejn a); ittri bin-numri bħala numri (file2 qabel file10); in-numru li bih tibda kull linja; it-tul; l-għadd tal-kliem; id-data li biha tibda kull linja (05.03.2024, 2024-03-05, bis-siegħa jew mingħajrha); indirizzi tal-internet; numri tal-verżjoni (1.2.10 wara 1.2.9); titoli, fejn artiklu fil-bidu ma jgħoddx; ordni li tikteb int (żgħir, medju, kbir); jew l-ebda ordni.",
+                "Il-linji li m'għandhom xejn li skontu jiġu ordnati (l-ebda numru, l-ebda data, valur li mhux fl-ordni li ktibt) jibqgħu fl-aħħar ikun kif ikun ordnati l-oħrajn: l-iżgħar l-ewwel jew l-akbar l-ewwel.",
+                "Aktar għażliet għall-ordnar: qabbel minn kelma jew karattru 'l quddiem, jew kolonna waħda ta' tabella (b'dak li jifred il-kolonni); żomm l-ewwel linja f'postha bħala intestatura; ordna l-paragrafi minflok il-linji; u naddaf l-ewwel — qaċċat, neħħi l-linji vojta, neħħi d-doppji.",
+                "Neħħi l-linji doppji: żomm l-ewwel waħda, l-aħħar waħda, jew l-ebda waħda mil-linji li jirrepetu (jibqgħu biss dawk li jidhru darba). L-ittri kbar, l-ispazji madwar linja, iċ-ċifri, il-punteġġjatura, u numru ta' karattri fil-bidu jew fl-aħħar jistgħu kull wieħed jiġi injorat; jista' jitqabbel biss kolonna waħda, jew biss dak li jsib pattern. Il-linji vojta jiġu ttrattati bħall-oħrajn, miżmuma, imneħħija, jew miġbura f'waħda.",
+                "Għodd il-linji ripetuti: iħalli kull linja darba, b'kemm-il darba kienet hemm miktub qabilha — l-aktar ripetuti l-ewwel, jew l-inqas, jew fl-ordni li jiġu.",
+                "Żomm jew neħħi linji: ifittex xi ħaġa f'kull linja u jżomm biss il-linji li fihom, jew biss dawk li ma fihomx.",
+                "Aqleb l-ordni tal-linji; Ħawwad il-linji.",
+                "Innumera l-linji: l-ewwel numru, x'jiġi warajh, żeri quddiem biex in-numri jkunu allinjati, linji vojta mingħajr numru.",
+                "Linji vojta: neħħihom kollha, jew ħalli waħda fejn hemm diversi.",
+                "Għaqqad il-linji f'waħda, b'dak li tagħżel bejniethom; Aqsam f'linji f'kull virgola, punt u virgola jew kwalunkwe ħaġa oħra. Kull fejn jinkiteb dak li jinsab bejn l-affarijiet (innumerar, għaqda, qsim, għadd), \\t ifisser tab, li ma jistax jiġi ttajpjat f'qasam."
+              ]
+            },
+            {
+              "note": "Għażla li tgħodd biss flimkien ma' oħra tintwera biss dakinhar: il-kolonna, ladarba tqabbel skont kolonna. L-għażliet li jeħtieġu inqas nies jinsabu taħt \"Aktar għażliet\"."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Ittri kbar",
+          "body": [
+            "Ibdel l-ittri kbar: bħal sentenza, kull kelma b'ittra kbira, kollox ittri kbar, kollox ittri żgħar, maqluba, u l-modi kif jinkitbu l-ismijiet fil-kodiċi: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "L-ittri kbar isegwu r-regoli ta' kull alfabett, mhux biss tal-Ingliż.",
+            "Fil-grupp Direzzjoni, \"Aqleb it-test\" jaqleb l-ittri ta' kull linja, jew l-ordni tal-kliem tagħha, jew l-ittri ta' kull kelma; \"Rasu 'l isfel\" jiktbu biex jinqara min-naħa l-oħra tal-mejda, u \"Bħal f'mera\" jaqleb ukoll is-sinjali li għandhom xellug u lemin. L-ittri jingħaddu kif jgħoddhom qarrej: ittra bis-sinjali tagħha tibqa' waħda."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Tindif",
+          "body": [
+            {
+              "points": [
+                "Naddaf l-ispazji: diversi spazji jsiru wieħed; l-ispazji fit-truf tal-linji jitneħħew.",
+                "Qaċċat it-truf tal-linji: fiż-żewġ truf, fil-bidu jew fit-tmiem.",
+                "Virgoletti: dritti, Ingliżi, Rumeni, Ġermaniżi jew Franċiżi.",
+                "Neħħi d-dijakritiċi: ă issir a, é issir e. Biss fl-alfabetti Latin u Grieg, fejn ittra mingħajr is-sinjal tagħha tibqa' l-istess ittra.",
+                "Irranġa l-ittri Rumeni: ş u ţ (b'ċedilja, miktuba minn tastieri qodma) isiru ș u ț (b'virgola), l-ittri li bihom jinkiteb ir-Rumen.",
+                "Tabs għal spazji u spazji għal tabs, bil-wisa' ta' tab li tagħżel int.",
+                "Neħħi t-tags HTML: għas-sors ta' paġna tal-web imwaħħal fit-test. It-tags, l-iskripts u l-istili jitneħħew; jibqa' dak li jara l-qarrej. Biex iġġib paġna mill-indirizz tagħha, uża l-għodda ta' taħtha, \"Test ta' paġna tal-web\".",
+                "Test ta' paġna tal-web: ikteb l-indirizz ta' paġna (example.com/page) u agħżel \"Ġib it-test\". Dak li jara l-qarrej f'dik il-paġna jinkiteb fejn hemm il-cursor, mingħajr tags, skripts jew stili. Din hija l-unika għodda ta' Scribe li tmur online, u biss meta titlob int: il-paġna tinġieb mill-browser installat fuq dan il-kompjuter (Microsoft Edge jew Google Chrome), imħaddem mingħajr tieqa u mingħajr il-cookies jew l-aċċessi tiegħek; il-programm innifsu ma jibgħat xejn. Paġna li teħtieġ li tkun aċċessajt tagħti biss dak li jara barrani."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Kif terġa' tpoġġi d-dijakritiċi Rumeni",
+          "body": [
+            "Ir-Rumen ittajpjat mingħajr ă, â, î, ș, ț jerġa' jinkiteb bihom.",
+            {
+              "steps": [
+                "Iftaħ l-għodda fil-grupp Tindif u agħżel Applika.",
+                "Il-kliem li għandu forma t-tajba waħda jinbidel mill-ewwel: \"stiu\" isir \"știu\", \"informatii\" isir \"informații\".",
+                "Il-kliem li jista' jinqara b'aktar minn mod wieħed (fata, fată, fața, față) jiġi elenkat taħt il-buttuna, kull wieħed f'postu fit-test. Ikklikkja l-forma t-tajba għal kull wieħed.",
+                "Jew immarka \"Agħżel waħdu l-forma l-aktar probabbli fejn kelma hija dubjuża\" qabel ma tapplika: xejn ma jiġi mistoqsi, u r-riżultat għandu jinqara sew."
+              ]
+            },
+            "Fejn il-kliem ta' madwar ikun biżżejjed, Scribe jiddeċiedi skontu: \"o casa\" isir \"o casă\", \"casa mea\" jibqa', \"pentru ca\" isir \"pentru că\".",
+            {
+              "note": "Dan huwa mibni għal Scribe minn lista ta' kliem komuni u t-tmiem li r-Rumen dejjem jikteb bid-dijakritiċi. Il-kliem li ma jafx (kliem rari, ismijiet) jibqa' kif ittajpjat, u kelma diġà miktuba bid-dijakritiċi qatt ma tintmess. Aqra r-riżultat qabel tibagħtu."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Kitba ta' test: mili u bl-addoċċ",
+          "body": [
+            "L-għodod tal-grupp \"Ikteb test\" ma jbiddlu xejn: jiktbu. Dak li jagħtu jmur fejn hemm il-cursor, minflok l-għażla.",
+            {
+              "points": [
+                "Test ta' mili: paragrafi, sentenzi, kliem, listi, titoli, jew partijiet ta' paġna (titlu, paragrafi, lista). Bil-Latin tal-istampaturi (lorem ipsum), bl-Ingliż, bir-Rumen, bil-kliem tal-uffiċċju jew tal-kċina, jew bil-kliem tiegħek. Aktar għażliet: sentenzi qosra, medji jew twal; test sempliċi, Markdown, HTML jew JSON; il-livell tat-titoli; limitu f'karattri (it-test jinqata' f'kelma sħiħa u xorta jispiċċa bħala sentenza); kliem li għandu jitħalla barra.",
+                "Data maħluqa: ismijiet, indirizzi tal-email, numri tat-telefon, indirizzi tat-toroq, dati jew numri, wieħed f'kull linja, tar-Rumanija jew ta' pajjiżi li jitkellmu bl-Ingliż. \"Linji skont il-pattern tiegħi\" jikteb kull linja kif tgħid int, b’{name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} u {row} minflok dak li jsir — tabella biex tipprova xi ħaġa fuqha, f'mument.",
+                "Test bl-addoċċ: passwords (ittri, ċifri u simboli, mill-inqas wieħed minn kull tip), ittri, ċifri, eżadeċimali jew identifikaturi (UUID), f'linja waħda jew f'ħafna. Il-karattri li jitħawdu faċilment (0 u O, 1, l u I) jistgħu jitħallew barra.",
+                "Żerriegħa (taħt \"Aktar għażliet\") tagħmel li t-test ta' mili u d-data maħluqa joħorġu l-istess kull darba għall-istess numru; 0 jagħti xi ħaġa ġdida kull darba."
+              ]
+            },
+            {
+              "note": "Il-passwords isiru fuq dan il-kompjuter, mill-addoċċ tas-sistema operattiva, u ma jintbagħtu mkien. L-indirizzi tal-email maħluqa jispiċċaw b'example.com, fejn l-email ma tasal għand ħadd; numru tat-telefon magħmul bl-addoċċ jista' jkun ta' xi ħadd, għalhekk tċemplux."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Riċetti",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Kif iżżomm dak li għamilt bħala riċetta",
+          "body": [
+            "Riċetta hija lista ta' għodod bl-għażliet tagħhom, miżmuma taħt isem u mħaddma mill-ġdid bi klikk waħda.",
+            {
+              "steps": [
+                "Applika fuq test l-għodod li trid, fl-ordni li tridhom.",
+                "Iftaħ \"Riċetti\" fuq nett tal-pannell: l-għodod li applikajt jiġu elenkati.",
+                "\"Żomm bħala riċetta\", u agħtiha isem.",
+                "Aktar tard, iftaħ ir-riċetta u agħżel \"Ħaddem fuq it-test\": il-passi kollha tagħha jsiru, u Erġa' lura wieħed iħassarhom kollha."
+              ]
+            },
+            "Ir-riċetti jinżammu fuq dan il-kompjuter u jinsabu f'kull test."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Kif tibdel riċetta, jew tagħmel waħda minn xejn",
+          "body": [
+            "\"Ibdel\" fuq riċetta miftuħa juri isimha u l-passi tagħha. Kull pass jista' jiċċaqlaq 'il fuq jew 'l isfel, jitneħħa, u jingħata għażliet oħra; l-għodod jiżdiedu mil-lista taħt il-passi. Xejn ma jinżamm sakemm \"Issejvja\".",
+            "\"Riċetta ġdida\" tibda waħda mingħajr passi, biex tinbena bl-istess mod mingħajr ma l-ewwel tapplika l-għodod fuq test.",
+            {
+              "note": "L-għodod li jiktbu test (mili, bl-addoċċ) mhumiex passi ta' riċetta: riċetta tbiddel test."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Kif tħaddem riċetta fuq fajls",
+          "body": [
+            {
+              "steps": [
+                "Iftaħ ir-riċetta u, taħt \"Ħaddem fuq fajls\", żid fajls jew folder (bil-folders ta' taħtu).",
+                "Agħżel fejn imorru r-riżultati: f'folder ieħor, li jħalli l-fajls kif inhuma, jew fuq il-fajls infushom.",
+                "Ħaddem. Scribe jgħid kemm-il fajl inkiteb, kemm ma kellhomx bżonn bidla, u liema ma setgħux isiru u għaliex."
+              ]
+            },
+            "Kull fajl jinkiteb bil-kodifikazzjoni u bit-truf tal-linji li kellu. F'folder ieħor, il-fajls iżommu l-folders li ġew bihom, u fajl li diġà jeżisti qatt ma jinkiteb fuqu.",
+            {
+              "note": "Il-kitba fuq il-fajls infushom ma tistax titreġġa' lura minn Scribe. Żomm kopja jekk huma importanti."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistika, tqabbil u folders",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistika",
+          "body": [
+            "\"Statistika\" fuq nett tal-pannell tgħid minn xiex huwa magħmul it-test, jew l-għażla. Kull parti tintewa.",
+            {
+              "points": [
+                "Fuq nett: kliem, karattri bl-ispazji u mingħajrhom, sentenzi, paragrafi, linji, paġni, u d-daqs f'bytes.",
+                "Ħin: biex jinqara fis-skiet, biex jingħad b'leħen għoli, biex jiġi ttajpjat, u biex jinkiteb bl-idejn.",
+                "Kliem: kemm huwa differenti (u x'sehem mit-total), ittri f'kelma, sillabi, l-itwal u l-iqsar kelma, u kemm hemm kliem ta' kull tul.",
+                "Sentenzi: kliem f'sentenza, kemm huma qosra, medji u twal, kemm huma dikjarazzjonijiet, mistoqsijiet u esklamazzjonijiet, u l-itwal u l-iqsar.",
+                "Faċilità tal-qari: punteġġ minn 0 (diffiċli ħafna) sa 100 (faċli ħafna), skont il-formula magħmula għal-lingwa tat-test. Hemm formuli għall-Ingliż, il-Ġermaniż, l-Ispanjol, il-Franċiż, it-Taljan, l-Olandiż, il-Portugiż u r-Russu; lingwa mingħajr waħda ma tieħux punteġġ, għax formula magħmula għal oħra tqarraq.",
+                "X'jgħid l-aktar: il-kliem l-aktar użat bis-sehem tiegħu mit-test, u l-pari u l-gruppi ta' tliet kelmiet li jerġgħu jidhru.",
+                "Spazju fil-limiti tas-soltu: kemm fadal karattri, jew kemm hemm żejda, għal titlu, deskrizzjoni, post qasir u oħrajn."
+              ]
+            },
+            "Il-kliem u s-sentenzi jinstabu skont ir-regoli ta' kull kitba, għalhekk iċ-Ċiniż, il-Ġappuniż u t-Tajlandiż, li ma jpoġġux spazji bejn il-kliem, jingħaddu wkoll. Il-veloċitajiet li bihom jinħadmu l-ħinijiet, u kemm kliem jagħmel paġna, jiġu ssettjati fl-Issettjar."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Kif tqabbel żewġ testi",
+          "body": [
+            {
+              "points": [
+                "Għodod → \"Qabbel ma' test ieħor\": it-test fl-editur ħdejn wieħed li tikteb jew twaħħal.",
+                "Għodod → \"Qabbel ma' fajl\": it-test fl-editur, kif inhu issa, ħdejn fajl li tagħżel int.",
+                "Għodod → \"Qabbel żewġ testi\": żewġ testi miktuba jew imwaħħla ħdejn xulxin.",
+                "Għodod → \"Qabbel żewġ fajls\"."
+              ]
+            },
+            "Iż-żewġ testi jintwerew ħdejn xulxin. Il-linji li jinsabu fl-ewwel biss jiġu mmarkati bħala mneħħija, il-linji fit-tieni biss bħala miżjuda, u f'linja li nbidlet, il-kliem differenti jiġi mmarkat. Jintwera biss dak li huwa differenti, bi ftit linji madwaru; il-vleġeġ imorru minn differenza għall-oħra.",
+            "L-ittri kbar, l-ispazji, il-linji vojta, in-numri u l-punteġġjatura jistgħu kull wieħed jiġi injorat. \"F'kolonna waħda\" juri dak li tneħħa fuq dak li ddaħħal, kull wieħed bis-sinjal tiegħu, minflok ħdejn xulxin. Ħdejn l-għadd, Scribe jgħid kemm huma simili ż-żewġ testi, bħala s-sehem ta' linji li huma l-istess.",
+            "Test jintwera hekk kif jintgħażel, qabel l-ieħor. Kaxkar il-bar bejn iż-żewġ testi biex tagħti aktar spazju lil wieħed; waqt li t-testi jinkitbu, il-bar taħt il-kaxxi jitkaxkar 'il fuq u 'l isfel biex tagħti aktar spazju lill-kaxxi jew lit-tqabbil. Klikk doppju jerġa' jpoġġi bar kif kien.",
+            "Fejn diversi linji wara xulxin inbidlu, kull waħda titpoġġa ħdejn il-linja li l-aktar tixbah, biex linja miżjuda jew imneħħija fosthom ma tagħmilx li kull linja warajha tidher mibdula fil-li jmiss.",
+            "\"Ikteb jew waħħal it-testi\" juri kaxxa fuq kull kolonna; dak li tikteb hemm jitqabbel waqt li tikteb, u xorta tista' tagħżel fajl għal kwalunkwe naħa."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Kif tfittex u tibdel f'folder",
+          "body": [
+            {
+              "steps": [
+                "Għodod → \"Fittex f'folder\" (Ctrl+Shift+F), u agħżel il-folder. Il-folders ta' taħtu jiġu mfittxija wkoll.",
+                "Ikteb x'trid tfittex, bl-istess għażliet bħal \"Ibdel kullimkien\". \"Tipi ta' fajls\" jillimita t-tfittxija għal ċerti estensjonijiet (txt, md, csv…).",
+                "Kull tqabbil jintwera fil-linja tiegħu, fajl b'fajl. Ikklikkja linja biex tiftaħ il-fajl hemmhekk.",
+                "Biex tibdel: ikteb it-test il-ġdid, neħħi l-marka mill-fajls li trid tħalli, u agħżel \"Ikteb il-fajls\"."
+              ]
+            },
+            "Xejn ma jinkiteb sakemm titlob int, u biss fil-fajls li jitħallew immarkati. Kull fajl jinkiteb bil-kodifikazzjoni u bit-truf tal-linji li kellu.",
+            {
+              "note": "Il-folders moħbija u dawk li jimlew il-programmi (.git, node_modules) jinqabżu sakemm ma titlobhomx. Il-fajls li mhumiex test jinqabżu dejjem."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Issettjar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "L-issettjar ta' Scribe",
+          "body": [
+            "Fajl → Issettjar jiftaħ l-Issettjar tal-programm fil-parti ta' Scribe.",
+            {
+              "points": [
+                "L-editur: ittri b'wisa' waħda jew dawk tal-programm, id-daqs tagħhom, il-qsim tal-linji, in-numri tal-linji, u jekk ir-riżultat ta' għodda jintweriex qabel ma tiġi applikata.",
+                "Test ġdid: kif jispiċċaw il-linji tiegħu, u jekk il-fajl tiegħu jibdiex b'marka tal-ordni tal-bytes.",
+                "Statistika: il-veloċitajiet tal-qari, tat-taħdit, tal-ittajpjar u tal-kitba bl-idejn, u kemm kliem jagħmel paġna.",
+                "It-tasti tal-kmandi ta' Scribe."
+              ]
+            },
+            "Kull issettjar għandu buttuna li terġa' tpoġġih kif jiġi mal-programm."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Dwar Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Dwar Scribe",
+          "body": [
+            "Scribe hija l-app tat-test ta' Syntelab Creative: editur bl-għodod tiegħu ħdejn it-test. Turi x'tagħmel għodda qabel ma tagħmlu, tnaddaf u terġa' tordna listi, tfittex u tibdel f'test jew f'folder sħiħ, tqabbel żewġ testi, tgħid minn xiex huwa magħmul test, tikteb test ta' mili u data maħluqa, u żżomm dak li tagħmel spiss bħala riċetti biex terġa' tħaddimhom.",
+            "Kollox isir fuq dan il-kompjuter. M'hemm l-ebda limitu fuq id-daqs jew in-numru tat-testi: il-limiti huma l-memorja tal-kompjuter u dak li tista' tagħmel it-teknoloġija tal-lum.",
+            "Hija ġdida. Fejn ma tlaħħaqx mat-testi tiegħek, għidilna permezz ta' Għajnuna → Rispons: hekk inkunu nafu fuq xiex naħdmu."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "B'xiex hija mibnija Scribe",
+          "body": [
+            {
+              "points": [
+                "L-editur: CodeMirror.",
+                "Il-qari u l-kitba tal-kodifikazzjonijiet: encoding_rs, ma' chardetng biex jimmaġina l-kodifikazzjoni ta' fajl li ma jgħidhiex.",
+                "It-tfittxija u s-sostituzzjoni: il-librerija regex ta' Rust, li l-patterns tagħha ma jistgħux jiffriżaw il-programm.",
+                "L-ordnar kif tagħmel kull lingwa, u t-tfittxija ta' kliem u sentenzi f'kull kitba: ICU4X, il-librerija ta' Unicode.",
+                "It-tqabbil tat-testi: il-librerija similar.",
+                "Id-dijakritiċi Rumeni: lista ta' kliem u regoli miktuba għal Scribe."
+              ]
+            },
+            "Dak li taqsam mal-bqija tal-programm jinsab taħt \"Dwar Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "X'għadha ma tistax tagħmel Scribe",
+          "body": [
+            {
+              "points": [
+                "Fajl kbir ħafna jinqara paġna paġna u jinbidel biss permezz ta' riċetti; biex tbiddlu bl-idejn trid tiftħu kollu, u dan jieħu l-memorja.",
+                "Ir-ritorn tad-dijakritiċi Rumeni jaf il-kliem komuni; il-kliem rari u l-ismijiet jibqgħu kif ittajpjati.",
+                "M'hemmx verifika tal-ortografija.",
+                "It-test ma jiġix estratt minn PDF jew dokumenti tal-uffiċċju hawn; dawk jiftaħhom PDF Organizer.",
+                "L-editur ma jlewwinx il-kodiċi jew il-Markdown.",
+                "Fajl imwaddab fuq it-tieqa jinfetaħ bħala test ġdid: il-programm ma jingħatax fejn jinsab il-fajl, għalhekk meta tissejvja jistaqsik fejn."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Konverteerimine",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Konverteerijad",
+          "body": [
+            "Units konverteerib väärtusi mõõtühikute vahel: ühe väärtuse kiiresti või terved väärtuste tabelid korraga. Kõik arvutatakse teie arvutis.",
+            "Konverteerijad on kuues menüüs: Põhilised, Liikumine ja mehaanika, Energia ja võimsus, Teaduslikud, Digitaalne ja meedia ning Spetsiaalne füüsika. Konverteerija valimine avab selle tabeli.",
+            {
+              "points": [
+                "Konverteerija avaneb sakis, milles te olete. Kui selle tabelis on väärtusi, küsitakse teilt esmalt: Jätka (väärtused lähevad kaotsi), Ava uues sakis või Tühista.",
+                "Seaded → Units → „Ava iga konverteerija eraldi sakis” avab selle asemel iga valitud konverteerija uues sakis.",
+                "Fail → Mine algusesse viib tagasi Unitsi esimesele lehele."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Kiire konverteerimine",
+          "body": [
+            "Unitsi esimene leht, Kiire konverteerimine, teisendab ühe väärtuse ühest ühikust teise. Valige konverteerija, sisestage väärtus poolele „Millest” ja valige kaks ühikut: tulemus on poolel „Milleks”.",
+            {
+              "points": [
+                "Kummalgi poolel on konverteerija populaarsed ühikud ja teie oma ühikud ning nende seast saab otsida. Konverteerija tabelis on kõik ühikud.",
+                "Kahe poole vahel olev nupp vahetab kaks ühikut omavahel.",
+                "Ühiku kõrval olev järjehoidja kinnitab selle: kinnitatud ühikud on mõlemas loendis ja tabeli ühikute paneelis esimesed.",
+                "Tulemuses olev nupp kopeerib selle; × tühjendab väärtuse.",
+                "„Ava tabelis” avab konverteerija tabeli."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Kuidas arve loetakse ja kirjutatakse",
+          "body": [
+            "Arve saate sisestada ja kleepida nii, nagu neid eri riikides kirjutatakse: aru saadakse nii kujust 1,234.56 kui ka 1.234,56, samuti tühikutest ja ülakomadest tuhandete vahel ning kujust 1.5e-3 kümne astme jaoks.",
+            "Arv, mida saab lugeda kahel viisil (1,234: tuhat või üks ja natuke), loetakse nii, nagu programmi keeles arve kirjutatakse, ja tabeli all olev rida ütleb seda.",
+            "Tulemus kirjutatakse selle ühiku kümnendkohtadega, milles see saadakse, mitte nii paljude numbritega, kui te sisestasite: 5 cm on 1,97 in. Nullist erineval väärtusel on alati näha mõni tähendusega number, nii et 1 cm on 0,00001 km ja mitte kunagi 0,000 km.",
+            "Väärtused, mis on ühe pilguga lugemiseks liiga suured või liiga väikesed, kirjutatakse kümne astmega, näiteks 1,6 × 10⁻³⁵. Vaade → Äärmuslikud väärtused täies pikkuses kirjutab need selle asemel välja kõigi nullidega.",
+            "Kui ühikul sellist väärtust pole (helirõhul null pole detsibellides väärtust), näitab lahter kriipsu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabel",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Read ja veerud",
+          "body": [
+            "Iga veerg on ühik ja iga rida on väärtus. Lahter, kuhu te kirjutate, juhib oma rida: teised veerud näitavad sama väärtust oma ühikutes. Sisestatud lahter on paksus kirjas.",
+            "Mis ei ole arv, see säilitatakse ja kuvatakse punasena; selle rida ei teisenda midagi enne, kui te selle parandate.",
+            {
+              "points": [
+                "Muutmiseks topeltklõpsake lahtrit või hakake lihtsalt sellel kirjutama. Enter liigub alla, Tab paremale; nooleklahvid liigutavad; Escape jätab lahtri endiseks.",
+                "Klõpsake nurka (#), et valida kogu tabel, rea numbrit, et valida selle rida, või pealkirja, et valida selle veerg. Shift+klõps valib vahemiku, Ctrl+klõps lisab lahtreid, valida saab ka lohistades.",
+                "Home ja End viivad rea esimesse ja viimasesse veergu; Ctrl+Home tabeli esimesse lahtrisse, Ctrl+End viimasesse. Ctrl koos nooleklahviga viib tabeli servale: esimesse või viimasesse ritta, esimesse või viimasesse veergu. Page Up ja Page Down liiguvad ekraani kaupa. Koos Shiftiga laiendab igaüks neist hoopis valikut.",
+                "Mitme lahtri valik on väljastpoolt ümbritsetud joonega; lahter, kuhu sisestus läheb, jääb selle sees varjutamata.",
+                "Delete tühjendab valitud read.",
+                "Viimasesse ritta kirjutamine lisab rea. Tabelil pole ülempiiri: see on nii pikk, kui teie arvuti mälu lubab (rida võtab 16 baiti, nii et 100 miljonit rida võtab umbes 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Veerud ja ühikute paneel",
+          "body": [
+            "Tabeli kõrval olev paneel loetleb konverteerija ühikud. Selle ülaosas on tabelis olevad ühikud: klõpsake ühikut, et selle veerg eemaldada. Nende all on kõik ühikud: otsige nime või sümboli järgi, filtreerige rühma või valiku „Populaarsed” järgi ja klõpsake ühikut, et lisada see veeruna.",
+            "Ühiku kõrval olev järjehoidja kinnitab selle lemmikuna: see on loendis esimene ja ka vaates Kiire konverteerimine esimene.",
+            {
+              "points": [
+                "Veerud jagavad tabeli laiust võrdselt, kuni nende pealkirjad enam ära ei mahu; siis saab tabelit külgsuunas kerida.",
+                "Veeru laiuse muutmiseks lohistage pealkirja serva; veeru sobitamiseks pikima väärtusega topeltklõpsake serva. Lohistada saab ka reanumbrite veergu.",
+                "Veeru nupp ⋮: liigutage veergu vasakule või paremale, kinnitage see vasakule või paremale servale, muutke selle täpsust või eemaldage see.",
+                "Veeru täpsus muudab ainult seda veergu. „Kasuta selle ühiku jaoks kõikjal” teeb sellest ühiku täpsuse kõigis tabelites ja vaates Kiire konverteerimine.",
+                "Kahe noolega nupp nuppude Võta tagasi ja Tee uuesti kõrval sobitab veerud tabelisse: kõik lohistatud või sobitatud laiused kaovad ja veerud jagavad taas tabeli laiust võrdselt.",
+                "Paneeli kaks ülemist osa, tabelis olevad ühikud ja „Lisa ühikeid” (otsing ja filtrid), saab nende nimel klõpsates kokku voltida, et loendil oleks rohkem ruumi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Tagasivõtmine, kopeerimine, kleepimine, import ja eksport",
+          "body": [
+            "Tabeli kohal olevas ribas on selle tööriistad.",
+            {
+              "points": [
+                "Võta tagasi ja Tee uuesti (Ctrl+Z, Ctrl+Y) käivad läbi kõik tabeli muudatused. Kleepimine või import on üks samm.",
+                "Kopeeri (Ctrl+C) kopeerib kogu tabeli või valitud osa nii, nagu arvutustabel seda loeb. „Transponeeritud” teeb ridadest veerud.",
+                "Kleebi (Ctrl+V) paneb kopeeritud read tabelisse aktiivsest lahtrist allapoole. Kui esimeses reas on ühikute pealkirjad, sobitatakse veerud nende järgi ja ühikud, mida tabelis veel pole, lisatakse.",
+                "Impordi loeb Exceli töövihiku, CSV- või TSV-faili tabeli praeguse sisu asemele. „Tuvasta formaat automaatselt” määrab tüübi faili järgi.",
+                "Ekspordi kirjutab tabeli Exceli, CSV, TSV või JSON-vormingus. Kui kümnendkohtade ees on koma, kirjutatakse CSV semikoolonitega, nagu arvutustabelid ootavad. Exceli lehel on 1 048 576 rida: pikem tabel jätkub sama töövihiku järgmistel lehtedel samade pealkirjade all.",
+                "Kustutuskumm tühjendab valitud read; prügikast tühjendab kogu tabeli."
+              ]
+            },
+            "Rida sisaldab üht väärtust. Kleebitud või imporditud reast, milles on mitu väärtust, võetakse esimene ja ülejäänud arvutatakse sellest.",
+            "Väga paljude ridade kleepimine, importimine, eksportimine või kopeerimine võtab aega. Siis näitab tabeli kohal olev kaart protsentides ja ridades, kui kaugele töö on jõudnud, ning sellel on nupp Peata. Peatatud kleepimine või import jätab tabeli endiseks; peatatud eksport ei kirjuta faili.",
+            "Kui arvutil pole ridade jaoks enam mälu, ei muudeta midagi ja tabeli all olev rida ütleb, kui palju oli vaja. Kui read mahuvad, kuid tabelit endisel kujul ei saa nende kõrval säilitada, küsitakse teilt, kas jätkata ilma tagasivõtmise võimaluseta: seda muudatust ja varasemaid ei saa siis enam tagasi võtta. Enne küsimist loobutakse ruumi tegemiseks kõige vanematest tagasivõtmise sammudest.",
+            "Tabeli valikud (hammasratas): mida veeru pealkiri näitab (Nimi (sümbol), Nimi või Sümbol), kas koopiad ja ekspordid sisaldavad pealkirju ja reanumbreid, „Alusta seda konverteerijat nende veergudega” ja „Lähtesta tabel”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Erikonverteerijad",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valuuta",
+          "body": [
+            "Valuutadel pole kindlat tegurit: nende väärtus muutub. Valuutakonverteerija loeb kursse kahest tasuta teenusest siis, kui te seda kasutate, ja ainult siis.",
+            {
+              "points": [
+                "Riikide valuutad: Rates By Exchange Rate API, https://www.exchangerate-api.com . Need muutuvad allikas kord päevas ja neid ei loeta sagedamini.",
+                "Krüptovaluutad: Powered by CoinGecko, https://www.coingecko.com . Neid loetakse siis, kui konverteerija avatakse või tuleb uuesti esiplaanile ja selle andmed on vanemad kui veerand tundi, ning siis, kui te vajutate Värskenda; mitte kunagi taimeri järgi."
+              ]
+            },
+            "Küsitakse ainult kursse. Teie kohta ei saadeta midagi ega kunagi ka summasid, mida te konverteerite.",
+            "Tabeli all ja vaate Kiire konverteerimine tulemuse all olev rida ütleb, mis ajast kursid pärinevad. Ühenduse puudumisel kasutatakse viimaseid kursse ja märgitakse need vanaks. Valuuta puhul, millele teenused kurssi ei anna, näidatakse kriipsu.",
+            "Seaded → Units → Valuuta: „Loe kursid võrgust” saab välja lülitada ja siis kasutab konverteerija viimaseid talletatud kursse. „Näita allikate nimesid kursside kõrval” näitab või peidab sellel real kahe teenuse nimed.",
+            "Kursid on informatiivsed. Ärge tuginege neile tehingute tegemisel."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Arvusüsteem",
+          "body": [
+            "Selle konverteerija ühikud on täisarvu kirjutamise viisid: alused 2 kuni 64, Rooma numbrid, koolonitega kuuekümnendsüsteem (1:30:15), kahendkodeeritud kümnendarv ja Gray kood. Nende väärtused on tekst: sisestage kuueteistkümnendsüsteemi alla FF ja teised veerud näitavad 255, 11111111 jne.",
+            "Rooma numbrid ulatuvad I-st MMMCMXCIX-ni (1 kuni 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Ühikud, mis pole lihtne tegur",
+          "body": [
+            "Enamik ühikuid on teise ühiku kordsed. Mõned ei ole ja Units konverteerib neid nii, nagu need on defineeritud: temperatuurid koos nihetega; kütusekulu (liitrit 100 km kohta versus miili galloni kohta); lainepikkus versus sagedus; juhtivus versus takistus; Baumé, API, Brixi ja Plato kraadid versus tihedus; detsibellid versus helirõhk ja helitugevus; kalle protsentides versus selle nurk.",
+            "Temperatuur ja temperatuuride vahe ei ole sama asi: 100 °C on 212 °F, kuid 100 °C suurune vahe on 180 °F suurune vahe. Rühma „Vahe (Δ)” ühikud teisendatakse omavahel; nende ja temperatuuriskaalade vahel näitab lahter kriipsu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Teie oma ühikud",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Ühiku loomine",
+          "body": [
+            "Igale konverteerijale saate lisada oma ühikuid. Valige ühikute paneelis „Uus ühik”, andke sellele nimi ja sümbol ning väljendage see olemasoleva ühiku kaudu.",
+            {
+              "points": [
+                "Tegur: „1 samm = 0,75 m”. Skaala puhul, mis ei alga nullist, ka see, mis pärast korrutamist liidetakse.",
+                "Valem: kuidas väärtus teiseks ühikuks muutub, kus x on väärtus, ja valem tagasisuunas. Näiteks x * 9 / 5 + 32 ja (x - 32) * 5 / 9."
+              ]
+            },
+            "Sisestatut proovitakse juba kirjutamise ajal ja enne salvestamist näidatakse, millega teie ühik võrdub. Valemis saab kasutada märke + − × ÷ ^, sulge, x, pi, e ning funktsioone sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos ja atan. Valem arvutatakse välja, seda ei käivitata kunagi programmina.",
+            "Teie ühikud on paneelis jaotises „Minu”, kus neid saab muuta ja eemaldada. Teie ühikut saab väljendada mõne teise teie ühiku kaudu; ühiku eemaldamine eemaldab ka selle kaudu väljendatud ühikud.",
+            "Seaded → Units loetleb kõigi konverteerijate teie ühikud ning ekspordib ja impordib neid tekstina, mida saate hoida või teise arvutisse viia."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Seaded",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Unitsi seaded",
+          "body": [
+            "Fail → Ava seaded avab Unitsi seaded; sama teevad tabeli valikud (hammasratas selle ribal).",
+            {
+              "points": [
+                "Iga konverteerija avamine eraldi sakis või sakis, milles te olete.",
+                "Äärmuslikud väärtused täies pikkuses, mis kirjutatakse tuhandete vahele (10000,000, 10 000,000 või 10.000,000; mitte midagi, kui te ei vali teisiti) ja reanumbrid.",
+                "Valuuta: kas kursse loetakse võrgust ja kas teenuste nimed näidatakse nende kõrval.",
+                "Ühikute täpsus: valige konverteerija (või „Teie muudetud ühikud”), otsige ühikut ja määrake selle kümnendkohad nuppudega − ja +; nool taastab ühiku enda täpsuse. Veeru menüü käsk „Kasuta selle ühiku jaoks kõikjal” määrab sama väärtuse.",
+                "Ühikud, millega tabel algab: konverteerijad, mille esimesed veerud te valisite, igaühel võimalus taastada need, millega see tarnitakse.",
+                "Teie oma ühikud."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Unitsi kohta",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Unitsi kohta",
+          "body": [
+            "Units on Syntelab Creative'i konverteerimisrakendus: 38 konverteerijat enam kui 1500 ühikuga, pikkusest ja temperatuurist valuutade ja arvusüsteemideni. Kord sisestatud väärtust näidatakse kõigis soovitud ühikutes tabelis, mis mahutab ühe väärtuse või miljoneid.",
+            "Arvud arvutatakse täpselt, murdudena, ja ümardatakse alles kirjutamisel. Kõik tehakse selles arvutis; võrgust loetakse ainult valuutakursse ja selle saab välja lülitada.",
+            "See on uus. Kui see jääb teie töös millestki puudu, andke meile teada menüü Abi → Tagasiside kaudu: nii teame, millega tegeleda."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Mitu rida tabel mahutab: mida me mõõtsime",
+          "body": [
+            "Tabelil pole kindlat ridade piirangut: see on nii pikk, kui teie arvuti mälu lubab. Rida võtab 16 baiti, nii et 100 miljonit rida võtab umbes 1,5 GB. Kui mälu saab otsa, jääb tabel endiseks ja programm ütleb, kui palju oli vaja.",
+            "Mõõtsime seda 50 000 000 reaga, igaühes üks arv ühes veerus, programmi optimeeritud järgus:",
+            {
+              "points": [
+                "50 000 000 rea kleepimine: umbes 7 sekundit.",
+                "Nende importimine CSV-failist: 12 sekundit.",
+                "Nende eksportimine CSV-faili koos teise, teisendatud veeruga: umbes 3,5 minutit.",
+                "Nende eksportimine Excelisse 48 lehele: 4,3 minutit."
+              ]
+            },
+            "Väljaviimine võtab kauem kui sissetoomine, sest iga kirjutatav lahter teisendatakse enne täpselt.",
+            {
+              "note": "Arvuti, millel test tehti: AMD Ryzen 9 9950X3D (16 tuuma, 32 lõime), 64 GB mälu, Windows 11 Pro. Oktoober 2026. Teises arvutis on ajad teistsugused; rea suurus mitte."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Millega Units on tehtud",
+          "body": [
+            {
+              "points": [
+                "Täpsed arvud: Rusti num-teegid (suvalise suurusega täisarvude murrud).",
+                "Ühikud, nende tegurid ja rühmad: programmi andmefailid, üks iga konverteerija kohta.",
+                "Exceli ja OpenDocumenti töövihikute lugemine: calamine. Exceli töövihikute kirjutamine: rust_xlsxwriter.",
+                "Süsteemi lõikelaud väga paljude ridade kopeerimiseks ja kleepimiseks: arboard.",
+                "Valuutakursid: ExchangeRate-API ja CoinGecko (vt „Valuuta”)."
+              ]
+            },
+            "Mida see jagab ülejäänud programmiga, on kirjas jaotises „Syntelab Creative'i kohta”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Mida Units veel ei oska",
+          "body": [
+            {
+              "points": [
+                "Rida sisaldab üht väärtust: mitme väärtusega kleebitud reast võetakse esimene.",
+                "Väga paljude ridade eksportimine on aeglane (vt, mida me mõõtsime).",
+                "Lõikelauale kopeeritut hoitakse enne kleepimist mälus ühe tekstina.",
+                "Valuutakursid on nii värsked, kui nende kaks allikat neid annavad: riikide valuutade puhul kord päevas."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

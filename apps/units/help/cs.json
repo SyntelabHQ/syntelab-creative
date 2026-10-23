@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Převádění",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Převodníky",
+          "body": [
+            "Units převádí hodnoty mezi jednotkami měření: jednu hodnotu rychle, nebo celé tabulky hodnot najednou. Vše se počítá na vašem počítači.",
+            "Převodníky jsou v šesti nabídkách: Základy, Pohyb a mechanika, Energie a výkon, Vědecké, Digitální a média a Specializovaná fyzika. Výběrem převodníku se otevře jeho tabulka.",
+            {
+              "points": [
+                "Převodník se otevře v kartě, ve které se právě nacházíte. Pokud jeho tabulka obsahuje hodnoty, budete nejprve dotázáni: Pokračovat (hodnoty se ztratí), Otevřít v nové kartě nebo Zrušit.",
+                "Nastavení → Units → „Otevírat každý převodník ve vlastní kartě“ místo toho otevře každý vybraný převodník v nové kartě.",
+                "Soubor → Přejít na Start vás vrátí na první stránku Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Rychlý převod",
+          "body": [
+            "První stránka Units, Rychlý převod, převádí jednu hodnotu z jedné jednotky na jinou. Vyberte převodník, zadejte hodnotu na straně „Z“ a vyberte obě jednotky: výsledek je na straně „Do“.",
+            {
+              "points": [
+                "Každá strana uvádí populární jednotky převodníku a vaše vlastní jednotky, s vyhledáváním. Tabulka převodníku obsahuje všechny jednotky.",
+                "Tlačítko mezi oběma stranami prohodí obě jednotky.",
+                "Záložka vedle jednotky ji připne: připnuté jednotky jsou v obou seznamech i v panelu jednotek tabulky uvedeny jako první.",
+                "Tlačítko u výsledku jej kopíruje; křížek × hodnotu vymaže.",
+                "„Otevřít v tabulce“ otevře tabulku převodníku."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Jak se čísla čtou a píší",
+          "body": [
+            "Čísla můžete zadávat a vkládat tak, jak se píší v různých zemích: rozumí se 1,234.56 i 1.234,56, stejně jako mezery a apostrofy mezi tisíci a 1.5e-3 pro mocninu deseti.",
+            "Číslo, které lze přečíst dvěma způsoby (1,234: tisíc, nebo jedna a kousek), se přečte tak, jak čísla zapisuje jazyk programu, a řádek pod tabulkou to uvede.",
+            "Výsledek je zapsán s desetinnými místy jednotky, do které je převeden, nikoliv s počtem číslic, které jste zadali: 5 cm je 1,97 in. Hodnota, která není nulová, vždy zobrazí několik významných číslic, takže 1 cm je 0,00001 km a nikdy ne 0,000 km.",
+            "Hodnoty příliš velké nebo příliš malé na přečtení na první pohled se zapisují s mocninou deseti, např. 1,6 × 10⁻³⁵. Zobrazení → Extrémní hodnoty v plném zápisu je místo toho zapíše se všemi nulami.",
+            "Pokud jednotka takovou hodnotu nemá (nulový akustický tlak nemá žádné decibely), buňka zobrazí pomlčku."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tabulka",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Řádky a sloupce",
+          "body": [
+            "Každý sloupec představuje jednotku a každý řádek hodnotu. Buňka, do které píšete, určuje celý svůj řádek: ostatní sloupce zobrazí stejnou hodnotu ve svých jednotkách. Zadaná buňka je zvýrazněna tučně.",
+            "To, co není číslo, se zachová a zobrazí červeně; jeho řádek nic nepřevede, dokud to neopravíte.",
+            {
+              "points": [
+                "Pro úpravu buňky na ni dvakrát klikněte nebo do ní začněte přímo psát. Enter vás přesune dolů, Tab doprava; šipky slouží k pohybu; Escape ponechá buňku v původním stavu.",
+                "Kliknutím do rohu (#) vyberete celou tabulku, kliknutím na číslo řádku vyberete celý řádek a kliknutím na nadpis vyberete celý sloupec. Shift+klik vybere rozsah, Ctrl+klik přidává buňky, výběr je možný i tažením.",
+                "Klávesy Home a End vás přesunou do prvního a posledního sloupce řádku; Ctrl+Home do první buňky tabulky, Ctrl+End do poslední. Ctrl ve spojení se šipkou vás přesune na okraj tabulky: do prvního nebo posledního řádku, případně do prvního nebo posledního sloupce. Page Up a Page Down posouvají zobrazení o jednu obrazovku. Při držení Shift tyto klávesy místo pohybu rozšiřují výběr.",
+                "Výběr několika buněk je zvenku ohraničen; buňka, do které se píše, zůstává uvnitř výběru nevystínovaná.",
+                "Klávesa Delete vyprázdní vybrané řádky.",
+                "Psaní do posledního řádku přidá nový řádek. Tabulka nemá horní limit kapacity: je tak dlouhá, jak dovolí paměť vašeho počítače (jeden řádek zabere 16 bajtů, takže 100 milionů řádků zabere přibližně 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Sloupce a panel jednotek",
+          "body": [
+            "Panel vedle tabulky obsahuje jednotky převodníku. V horní části jsou jednotky, které jsou již v tabulce: kliknutím na jednotku ji z tabulky odeberete. Pod nimi jsou všechny jednotky: můžete vyhledávat podle názvu nebo symbolu, filtrovat podle skupiny nebo podle „Populárních“ a kliknutím na jednotku ji přidáte jako sloupec.",
+            "Záložka vedle jednotky ji připne jako oblíbenou: jednotka je pak v seznamu první a je první i v Rychlém převodu.",
+            {
+              "points": [
+                "Sloupce si šířku tabulky dělí rovnoměrně, dokud se jejich názvy vejdou; poté se tabulka posouvá do strany.",
+                "Tahem za okraj názvu změníte šířku sloupce; dvojklikem na okraj přizpůsobíte šířku sloupce jeho nejdelší hodnotě. Lze přetahovat i sloupec s čísly řádků.",
+                "Tlačítko ⋮ u sloupce: sloupec můžete přesunout doleva nebo doprava, připnout k levému nebo pravému okraji, změnit jeho přesnost nebo jej odebrat.",
+                "Přesnost sloupce mění pouze daný sloupec. Volba „Použít pro tuto jednotku všude“ z ní udělá přesnost jednotky ve všech tabulkách i v Rychlém převodu.",
+                "Tlačítko se dvěma šipkami vedle Zpět a Opakovat přizpůsobí sloupce tabulce: všechny šířky, které jste přetáhli nebo přizpůsobili, zmizí a sloupce si šířku tabulky opět rozdělí rovnoměrně.",
+                "Dvě horní části panelu – jednotky v tabulce a „Přidat jednotky“ (vyhledávání a filtry) – lze kliknutím na jejich názvy sbalit, čímž se uvolní více místa pro seznam."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Zpět, kopírování, vkládání, import a export",
+          "body": [
+            "Lišta nad tabulkou obsahuje její nástroje.",
+            {
+              "points": [
+                "Zpět a Opakovat (Ctrl+Z, Ctrl+Y) procházejí všemi změnami tabulky. Vložení nebo import je jeden krok.",
+                "Kopírovat (Ctrl+C) zkopíruje celou tabulku nebo výběr tak, jak jej čtou tabulkové procesory. Volba „Transponováno“ zamění řádky za sloupce.",
+                "Vložit (Ctrl+V) vloží zkopírované řádky do tabulky od aktivní buňky dolů. Pokud první řádek obsahuje názvy jednotek, sloupce se s nimi spárují a jednotky, které v tabulce ještě nejsou, se automaticky přidají.",
+                "Importovat načte sešit Excel, soubor CSV nebo TSV místo obsahu tabulky. Volba „Automaticky detekovat formát“ určí druh podle souboru.",
+                "Exportovat zapíše tabulku jako Excel, CSV, TSV nebo JSON. Pokud se desetinná místa oddělují čárkou, CSV se zapíše se středníky, jak tabulkové procesory očekávají. List Excelu pojme 1 048 576 řádků; delší tabulka pokračuje na dalších listech téhož sešitu pod stejnými nadpisy.",
+                "Guma vyprázdní vybrané řádky; koš vyprázdní celou tabulku."
+              ]
+            },
+            "Jeden řádek obsahuje jednu hodnotu. Z vloženého nebo importovaného řádku s více hodnotami se vezme první a ostatní se z ní vypočítají.",
+            "Vložení, import, export nebo kopírování velkého množství řádků chvíli trvá. Nad tabulkou se pak zobrazí karta s postupem práce v procentech a v řádcích, s tlačítkem Zastavit. Zastavené vložení nebo import ponechá tabulku v původním stavu; zastavený export nezapíše žádný soubor.",
+            "Pokud počítači dojde paměť pro řádky, nic se nezmění a řádek pod tabulkou uvede, kolik paměti bylo potřeba. Pokud se řádky vejdou, ale původní stav tabulky vedle nich nelze uchovat, budete dotázáni, zda pokračovat bez možnosti vrácení: tuto změnu ani ty předchozí pak už nebude možné vrátit. Před dotazem se uvolní nejstarší kroky funkce Zpět, aby se získalo místo.",
+            "Možnosti tabulky (ozubené kolečko): co uvádí název sloupce (Název (symbol), Název nebo Symbol), zda kopie a exporty obsahují názvy a čísla řádků, „Spouštět tento převodník s těmito sloupci“ a „Resetovat tabulku“."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Speciální převodníky",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Měna",
+          "body": [
+            "Měny nemají pevný koeficient: jejich hodnota se mění. Měnový převodník načítá kurzy ze dvou bezplatných služeb, když jej používáte, a jen tehdy.",
+            {
+              "points": [
+                "Měny zemí: Rates By Exchange Rate API, https://www.exchangerate-api.com . U zdroje se mění jednou denně a nenačítají se častěji.",
+                "Kryptoměny: Powered by CoinGecko, https://www.coingecko.com . Načítají se, když se převodník otevře nebo vrátí do popředí a údaje, které má, jsou starší než čtvrt hodiny, a když stisknete Aktualizovat; nikdy podle časovače."
+              ]
+            },
+            "Vyžadují se pouze kurzy. Nic o vás se neodesílá, a nikdy ani částky, které převádíte.",
+            "Řádek pod tabulkou a pod výsledkem Rychlého převodu uvádí, z jaké doby kurzy jsou. Bez připojení se použijí poslední kurzy a označí se jako staré. Měna, pro kterou služby neposkytují kurz, zobrazí pomlčku.",
+            "Nastavení → Units → Měna: „Načítat kurzy ze sítě“ lze vypnout a převodník pak používá poslední uložené kurzy. „Uvádět názvy zdrojů u kurzů“ zobrazí nebo skryje názvy obou služeb na tomto řádku.",
+            "Kurzy slouží pouze pro informační účely. Nespoléhejte na ně při provádění transakcí."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Číselná soustava",
+          "body": [
+            "Jednotky tohoto převodníku jsou způsoby zápisu celého čísla: základy od 2 do 64, římské číslice, základ 60 s dvojtečkami (1:30:15), binárně kódované desítkové číslo (BCD) a Grayův kód. Jejich hodnoty jsou text: zadejte FF pod šestnáctkovou soustavu a ostatní sloupce zobrazí 255, 11111111 a tak dále.",
+            "Římské číslice sahají od I do MMMCMXCIX (1 až 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Jednotky, které nejsou prostým násobkem",
+          "body": [
+            "Většina jednotek je násobkem jiné. Některé nejsou a Units je převádí tak, jak jsou definovány: teploty s jejich posuny; spotřebu paliva (litry na 100 km oproti mílím na galon); vlnovou délku oproti frekvenci; vodivost oproti odporu; stupně Baumé, API, Brix a Plato oproti hustotě; decibely oproti akustickému tlaku a intenzitě; sklon v procentech oproti jeho úhlu.",
+            "Teplota a rozdíl teplot nejsou totéž: 100 °C je 212 °F, ale rozdíl 100 °C je rozdíl 180 °F. Jednotky ve skupině „Rozdíl (Δ)“ se převádějí mezi sebou; mezi nimi a stupnicemi teplot zobrazuje buňka pomlčku."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vlastní jednotky",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Vytváření jednotky",
+          "body": [
+            "Do jakéhokoli převodníku můžete přidat vlastní jednotky. V panelu jednotek zvolte „Nová jednotka“, zadejte název a symbol a definujte ji pomocí existující jednotky.",
+            {
+              "points": [
+                "Faktor: „1 krok = 0,75 m“. U stupnice, která nezačíná na nule, i hodnotu, která se přičte po vynásobení.",
+                "Vzorec: jak se hodnota změní na jinou jednotku (kde x je hodnota) a vzorec pro zpětný převod. Například x * 9 / 5 + 32 a (x - 32) * 5 / 9."
+              ]
+            },
+            "To, co zadáváte, se zkouší už během psaní, a před uložením se zobrazí, kolik je jedna vaše jednotka. Ve vzorci lze použít + − × ÷ ^, závorky, x, pi, e a funkce sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos a atan. Vzorec se vypočítá, nikdy se nespouští jako program.",
+            "Vaše jednotky jsou v panelu uvedeny pod položkou „Moje“, kde je lze měnit a odebírat. Vaši jednotku lze definovat pomocí jiné vaší jednotky; odebráním jednotky se odeberou i jednotky, které jsou pomocí ní definovány.",
+            "Nastavení → Units vypíše vaše jednotky pro každý převodník a umožní jejich export a import jako text, který si můžete uložit nebo přenést na jiný počítač."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nastavení",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Nastavení Units",
+          "body": [
+            "Soubor → Otevřít Nastavení otevře nastavení Units; stejně tak i možnosti tabulky (ozubené kolečko v její liště).",
+            {
+              "points": [
+                "Otevírat každý převodník ve vlastní kartě, nebo v kartě, ve které jste.",
+                "Extrémní hodnoty v plném zápisu, co se píše mezi tisíci (10000,000, 10 000,000 nebo 10.000,000; nic, pokud nezvolíte jinak) a čísla řádků.",
+                "Měna: zda se kurzy načítají ze sítě a zda se vedle nich uvádějí názvy služeb.",
+                "Přesnost jednotek: vyberte převodník (nebo „Změněné jednotky“), vyhledejte jednotku a nastavte její desetinná místa pomocí − a +; šipka ji vrátí na vlastní přesnost jednotky. „Použít pro tuto jednotku všude“ v nabídce sloupce nastaví stejnou hodnotu.",
+                "Jednotky, kterými tabulka začíná: převodníky, jejichž první sloupce jste vybrali, každý s možností návratu k jednotkám, se kterými přichází.",
+                "Vaše vlastní jednotky."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O aplikaci Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O aplikaci Units",
+          "body": [
+            "Units je aplikace Syntelab Creative pro převod jednotek: 38 převodníků s více než 1 500 jednotkami, od délky a teploty po měny a číselné soustavy. Jednou zadaná hodnota se zobrazí ve všech jednotkách, které si vyžádáte, v tabulce, která pojme jednu hodnotu i miliony.",
+            "Čísla se počítají přesně, jako zlomky, a zaokrouhlují se až při zápisu. Vše probíhá v tomto počítači; ze sítě se načítají pouze kurzy měn, a to lze vypnout.",
+            "Aplikace je nová. Pokud vám pro vaši práci něco chybí, dejte nám vědět přes Nápověda → Zpětná vazba: tak víme, na čem pracovat."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Kolik řádků tabulka pojme: co jsme naměřili",
+          "body": [
+            "Tabulka nemá pevný limit řádků: je tak dlouhá, jak dovolí paměť vašeho počítače. Jeden řádek zabere 16 bajtů, takže 100 milionů řádků zabere asi 1,5 GB. Když dojde paměť, tabulka zůstane, jak byla, a program uvede, kolik paměti bylo potřeba.",
+            "Měřili jsme to s 50 000 000 řádky, každý s jedním číslem v jednom sloupci, v optimalizovaném sestavení programu:",
+            {
+              "points": [
+                "Vložení 50 000 000 řádků: asi 7 sekund.",
+                "Jejich import ze souboru CSV: 12 sekund.",
+                "Jejich export do souboru CSV s převedeným druhým sloupcem: asi 3,5 minuty.",
+                "Jejich export do Excelu, na 48 listů: 4,3 minuty."
+              ]
+            },
+            "Export trvá déle než import, protože každá zapisovaná buňka se nejprve přesně převede.",
+            {
+              "note": "Počítač, na kterém byl test proveden: AMD Ryzen 9 9950X3D (16 jader, 32 vláken), 64 GB RAM, Windows 11 Pro. Říjen 2026. Na jiném počítači budou časy odlišné; velikost řádku nikoliv."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Z čeho je Units postaven",
+          "body": [
+            {
+              "points": [
+                "Přesná čísla: knihovny num v jazyce Rust (zlomky celých čísel libovolné velikosti).",
+                "Jednotky, jejich koeficienty a skupiny: datové soubory programu, jeden pro každý převodník.",
+                "Čtení sešitů Excel a OpenDocument: calamine. Zápis sešitů Excel: rust_xlsxwriter.",
+                "Schránka systému pro kopírování a vkládání velkého množství řádků: arboard.",
+                "Kurzy měn: ExchangeRate-API a CoinGecko (viz „Měna“)."
+              ]
+            },
+            "To, co sdílí se zbytkem programu, najdete v části „O Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Co Units zatím neumí",
+          "body": [
+            {
+              "points": [
+                "Jeden řádek obsahuje jednu hodnotu: z vloženého řádku s několika hodnotami je vzata první.",
+                "Export velmi velkého množství řádků je pomalý (viz naše měření).",
+                "To, co je zkopírováno do schránky, je před vložením uloženo v paměti jako jeden text.",
+                "Kurzy měn jsou tak čerstvé, jak je poskytují jejich dva zdroje: u měn zemí jednou denně."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

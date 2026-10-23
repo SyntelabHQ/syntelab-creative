@@ -1,0 +1,119 @@
+.container {
+  position: relative;
+}
+
+.textTrigger {
+  min-height: 32px;
+  padding-inline: 12px;
+  border-radius: var(--sc-radius-s);
+  color: var(--sc-text);
+  font-weight: 400;
+}
+
+.textTrigger[aria-expanded='true'] {
+  background: var(--sc-surface-2);
+}
+
+/*
+ * The box that scrolls a menu too tall for the window. A scrolling box cuts
+ * off whatever sticks out of it, and the tooltips beside the items and the
+ * shadow of the menu do stick out. So the box is larger than the menu on
+ * those sides, and lets the pointer through everywhere but on the menu.
+ */
+.menu {
+  --tooltip-room: 290px;
+  --shadow-room: 28px;
+  position: absolute;
+  z-index: 20;
+  inset-block-start: calc(100% + 6px);
+  padding-block-end: var(--shadow-room);
+  overflow-y: auto;
+  scrollbar-width: none;
+  pointer-events: none;
+}
+
+.menu[data-align='end'] {
+  inset-inline-end: calc(-1 * var(--shadow-room));
+  padding-inline: var(--shadow-room);
+}
+
+.menu[data-align='start'] {
+  inset-inline-start: calc(-1 * var(--shadow-room));
+  padding-inline: var(--shadow-room) var(--tooltip-room);
+}
+
+.panel {
+  min-width: 220px;
+  padding: 6px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  box-shadow: var(--sc-shadow-m);
+  pointer-events: auto;
+}
+
+.section + .section {
+  margin-block-start: 6px;
+  padding-block-start: 6px;
+  border-block-start: 1px solid var(--sc-border);
+}
+
+.sectionTitle {
+  padding-block: 4px;
+  padding-inline: 32px 12px;
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding-block: 8px;
+  padding-inline: 8px 16px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  text-align: start;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.item:hover:not(:disabled),
+.item:focus-visible {
+  background: var(--sc-accent-soft);
+  outline: none;
+}
+
+.item:disabled {
+  color: var(--sc-muted);
+  cursor: default;
+  opacity: 0.6;
+}
+
+.label {
+  flex: 1;
+}
+
+/* The keys that do the same, at the far end of the row. */
+.shortcut {
+  margin-inline-start: 24px;
+  color: var(--sc-muted);
+  font: inherit;
+  font-size: 12px;
+}
+
+/* Check mark of a choice or toggle, or the icon of an action. */
+.mark {
+  display: flex;
+  flex: 0 0 16px;
+  justify-content: center;
+  color: var(--sc-muted);
+}
+
+.item[aria-checked='true'] .mark {
+  color: var(--sc-accent);
+}

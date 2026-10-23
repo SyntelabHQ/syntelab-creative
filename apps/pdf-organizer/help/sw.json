@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Kufungua na kusoma",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Kufungua hati",
+          "body": [
+            "Faili → Fungua (Ctrl+O) hufungua PDF katika tab yake. \"Fungua faili nyingi kwa wakati mmoja\" hufungua kila faili lililochaguliwa katika tab yake.",
+            "Faili ambazo si PDF pia hufunguka kama kurasa: picha (PNG, JPEG, TIFF, WebP na nyingine nyingi), faili za maandishi na wavuti, vitabu vya kielektroniki, XPS, na hati za ofisi. Hati kama hiyo haijahifadhiwa popote bado: \"Hifadhi\" huuliza mahali pa kuhifadhi.",
+            {
+              "note": "Hati za ofisi (Word, Excel, PowerPoint, OpenDocument) hubadilishwa na Word, Excel au PowerPoint, au na LibreOffice, kulingana na kile kilicho kwenye kompyuta. Bila mojawapo ya hizi, haziwezi kufunguliwa."
+            },
+            "Faili zinazowekwa kwenye tab tupu hukusanywa katika kifunga; zikiwekwa kwenye hati, kurasa zake huongezwa humo.",
+            "Kwenye Windows, PDF Organizer inaweza kuwa programu inayofungua faili za PDF unapozibofya mara mbili: kwenye ukurasa wake wa mwanzo, \"Fanya chaguo-msingi\" hufungua mipangilio ya Windows, ambapo unachagua Syntelab Creative kwa faili za PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Kutazama kurasa",
+          "body": [
+            "Menyu ya Tazama huamua jinsi hati inavyoonyeshwa; hakuna kitu ndani yake kinachobadilisha faili.",
+            {
+              "points": [
+                "Ukuzaji: kuza, punguza, ukubwa halisi, visha ukurasa, visha upana, visha urefu. Ctrl na gurudumu la panya pia hukuza na kupunguza.",
+                "Muonekano wa ukurasa: ukurasa mmoja au miwili pembeni kwa pembeni, ikiwa na au bila ukurasa wa jalada, na kusogeza kurasa zote kama utepe mmoja mrefu.",
+                "Mwongozo: rula na gridi, katika kipimo kilichochaguliwa kwenye Mipangilio.",
+                "\"Onyesha picha ndogo\": kurasa ndogo pembeni. Bofya moja ili kwenda kwayo; alama za kurasa za hati zipo kwenye paneli hiyo hiyo.",
+                "\"Hali ya kusoma\" huficha zana; \"Hali ya skrini nzima\" huficha kila kitu isipokuwa ukurasa. Escape hutoka katika zote mbili."
+              ]
+            },
+            "Utepe ulio juu ya kurasa (upau wa zana wa haraka) una namba ya ukurasa, ukuzaji na vitufe ulivyochagua kwenye Mipangilio."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Kutafuta maandishi",
+          "body": [
+            "Hariri → Tafuta kwenye hati (Ctrl+F): andika neno au sentensi; sehemu zinapopatikana huwekewa alama kwenye kurasa, na mishale huenda kutoka moja hadi nyingine.",
+            {
+              "note": "Hati iliyoskaniwa ni picha za kurasa na haina maandishi ya kutafuta hadi maandishi yake yatambuliwe: tazama \"Kutambua maandishi (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Sifa za hati",
+          "body": [
+            "Faili → Sifa za hati huonyesha kile hati inachosema kuhusu yenyewe: kichwa, mwandishi, tarehe ilipotengenezwa na kubadilishwa, idadi ya kurasa, ukubwa wa faili."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kuhifadhi, kuchapa na kutuma",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Hifadhi na Hifadhi kama",
+          "body": [
+            "Hakuna unachofanya kinachobadilisha faili kwenye diski hadi uhifadhi. Hadi wakati huo, kila hatua inaweza kurudishwa nyuma (Ctrl+Z) na kufanywa tena (Ctrl+Y).",
+            {
+              "points": [
+                "Hifadhi (Ctrl+S) huandika hati juu ya faili lake.",
+                "Hifadhi kama (Ctrl+Shift+S) huandika hati kwenye faili jipya, ambalo kisha huchukua nafasi ya tab; faili la zamani hubaki kama lilivyokuwa."
+              ]
+            },
+            "Ikiwa programu nyingine imefungua faili hilo, haliwezi kuandikwa juu yake: programu itajulisha na kuhifadhi mabadiliko yako, ili yahifadhiwe kwa jina lingine.",
+            {
+              "note": "Kuhifadhi hati iliyobadilishwa juu ya faili lililosainiwa kwa cheti huondoa saini zake. Programu huuliza kwanza na kutoa chaguo la \"Hifadhi kama faili mpya\"; swali hili linaweza kuzimwa katika Mipangilio → Saini."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Kutengeneza PDF",
+          "body": [
+            "Faili → Tengeneza PDF hutengeneza hati mpya:",
+            {
+              "points": [
+                "kutoka faili moja, au kutoka faili kadhaa: zikiunganishwa katika PDF moja, au PDF moja kwa kila faili;",
+                "kutoka ukurasa wa wavuti, katika anwani unayoandika (ukurasa huhifadhiwa kwa kivinjari kilichosakinishwa kwenye kompyuta);",
+                "kutoka kile kilicho kwenye klipibodi;",
+                "kutoka kurasa tupu za ukubwa unaouchagua."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Kutoa katika muundo mwingine",
+          "body": [
+            "Faili → Hamisha huandika hati katika muundo mwingine: Word au maandishi ya OpenDocument, maandishi ya kawaida, ukurasa wa wavuti, XML, picha za kurasa (PNG, JPEG, TIFF, SVG) au PostScript. Kwa picha unachagua msongo wa picha.",
+            "Hati yenyewe hubaki kuwa PDF; toleo lililotolewa ni faili jipya.",
+            {
+              "note": "Maandishi yanaweza kutolewa tu pale hati inapokuwa na maandishi. Tambua maandishi ya skani kwanza."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Kuchapa",
+          "body": [
+            "Faili → Chapa (Ctrl+P) huchapisha hati kama ilivyopangwa sasa, ikiwa na kile ulichochora juu yake. Chagua kurasa, karatasi, ikiwa karatasi ziwe wima au mlalo, na ikiwa kurasa zilinganishwe na karatasi au zichapishwe kwa ukubwa wake halisi; kisha dirisha la uchapishaji la mfumo huuliza kuhusu printa.",
+            "Karatasi, mwelekeo na ukubwa ambazo dirisha la uchapishaji huanzia zimewekwa katika Mipangilio → Uchapishaji."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Kushiriki",
+          "body": [
+            "Faili → Shiriki hupitisha hati kwenye dirisha la \"Shiriki\" la mfumo: barua pepe, kifaa kilicho karibu na programu nyingine. Hati hushirikiwa kama ilivyo sasa, ikiwa na mabadiliko yako ambayo hayajahifadhiwa."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kupanga kurasa",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Muonekano wa Kupanga",
+          "body": [
+            "Panga → Panga kurasa huonyesha kila ukurasa katika gridi. Hakuna kinachobadilika kwenye diski hadi utakapohifadhi.",
+            {
+              "points": [
+                "Chagua: bofya ukurasa; Ctrl+bofya huongeza mmoja, Shift+bofya huchagua mfululizo. \"Chagua kurasa zote\", \"Usichague\", \"Chagua kurasa zisizo na jozi\" na \"Chagua kurasa shufwa\" zipo kwenye menyu.",
+                "Sogeza: buruta kurasa zilizochaguliwa hadi mahali pao papya, au tumia \"Sogeza kushoto\" na \"Sogeza kulia\".",
+                "Zungusha: \"Zilizochaguliwa: zungusha kushoto\" na \"Zilizochaguliwa: zungusha kulia\" huzungusha kurasa zilizochaguliwa; \"Kurasa zote: zungusha kushoto\" na \"Kurasa zote: zungusha kulia\" huzungusha kila ukurasa.",
+                "Futa: kitufe cha Delete, au \"Futa kurasa\". Hati hubaki na angalau ukurasa mmoja.",
+                "Nakili, kata na bandika (Ctrl+C, Ctrl+X, Ctrl+V): kurasa zinaweza kubandikwa katika hati hiyo hiyo au katika nyingine iliyofunguliwa kwenye programu.",
+                "Ukubwa: kitelezi kilicho juu hufanya kurasa kuwa kubwa au ndogo zaidi; vivyo hivyo Ctrl + gurudumu la kipanya juu ya kurasa, na \"Kuza\" na \"Punguza\" (Ctrl+= na Ctrl+-). Ukubwa hukumbukwa."
+              ]
+            },
+            "Amri zilezile hufanya kazi bila gridi, kwenye ukurasa unaoonekana."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Kutoa kurasa na kugawanya hati",
+          "body": [
+            "Panga → Toa kurasa hutoa kurasa zilizochaguliwa kama hati mpya katika tab yake, ambayo bado haijahifadhiwa. Unaweza pia kufanya kila ukurasa uandikwe kama faili lake lenyewe, na kuchagua ikiwa kurasa ziondolewe kwenye hati hii.",
+            "Panga → Gawa hati huandika hati kama faili kadhaa ndogo; hati hii hubaki kama ilivyo.",
+            "Majina ya nyaraka mpya yanafuata mifumo iliyo katika Mipangilio → Majina ya hati mpya.",
+            {
+              "note": "Saini zilizofanywa kwa cheti hazihamishiwi kwenye nyaraka zilizotolewa au zilizogawanywa: saini ni sahihi tu kwa faili ambayo ilifanywa ndani yake."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Kuingiza na kubadilisha kurasa",
+          "body": [
+            {
+              "points": [
+                "Panga → Ingiza kurasa huongeza kurasa za faili nyingine (PDF, picha, maandishi, nyaraka ya ofisi) baada ya ukurasa ulioteuliwa, au mwishoni.",
+                "Panga → Badilisha kurasa huweka kurasa za faili nyingine badala ya zile zilizoteuliwa.",
+                "Ingiza → Ukurasa tupu huongeza ukurasa tupu wa ukubwa wa jirani yake."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Kupunguza na kubadilisha ukubwa wa kurasa",
+          "body": [
+            "Hariri → Kata kurasa hukata kingo za kurasa, kwa pembeunyo unazotype au kuvuta. Hakuna kitu kinachoondolewa kwenye faili: kurasa zinaonyesha kidogo tu.",
+            "Hariri → Badilisha ukubwa wa kurasa huweka kurasa kwenye ukubwa mwingine wa karatasi (A4, Letter na nyinginezo). Maudhui yanaweza kupanuliwa ili kutoshea au kubaki katika ukubwa wake, na kuwekwa katika moja ya sehemu tisa kwenye karatasi mpya.",
+            "Zote zinauliza ni kurasa gani: zote, zile zilizoteuliwa, mfululizo, za kishoto au za kulia."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kuunganisha faili",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Kifunga",
+          "body": [
+            "Unganisha → Kifunga kipya hufungua sehemu ya kukusanya faili na kuziandika kama PDF moja.",
+            {
+              "steps": [
+                "Ongeza faili kwa \"Ongeza faili\", au ziweke kwenye kifunga. PDF, picha, maandishi na nyaraka za ofisi zinaweza kuchanganywa.",
+                "Vuta kadi katika mpangilio unaoutaka, au tumia mishale kwenye kila kadi.",
+                "Fungua kadi ili kuchagua ni kurasa zipi kati ya zake zinazoingia.",
+                "\"Unganisha faili\" huziandika, kwa mpangilio, kama nyaraka moja mpya katika tab yake."
+              ]
+            },
+            "Faili zenyewe hazibadiliki.",
+            "Kitelezi kilicho juu hufanya kurasa kwenye kadi kuwa kubwa au ndogo zaidi; vivyo hivyo Ctrl + gurudumu la kipanya, na \"Kuza\" na \"Punguza\" (Ctrl+= na Ctrl+-). Ukubwa hukumbukwa."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kuandika na kuchora kwenye kurasa",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Zana",
+          "body": [
+            "Zana za kuchora hufunguka kama jopo kando ya ukurasa, kama gridi ya vitufe au kama orodha yenye majina (Mipangilio huamua). Ukiwa na zana mkononi, vuta au bofya kwenye ukurasa; Escape huweka zana chini.",
+            {
+              "points": [
+                "Maandishi: bofya na utype. Aina ya herufi, ukubwa, rangi, kishindo, italiki na mpangilio ziko kwenye jopo.",
+                "Picha: chagua picha, kisha vuta inapoenda na ukubwa wake.",
+                "Maumbo: mstatili, elipsi, mstari, mshale, alama ya tiki, msalaba, nukta.",
+                "Kuonyesha: buruta juu ya kile kinachopaswa kusimama; kile kilicho chini yake kinabaki kusomeka."
+              ]
+            },
+            "Kwa \"Chagua, sogea na badilisha ukubwa\" alama huchaguliwa tena: iburute, vuta pembe zake, izungushe kwa mkono wake, badilisha rangi zake kwenye paneli, au ifute kwa kitufe cha Delete. Alama zinaweza kunakiliwa na kubandikwa, pia kwenye kurasa zingine.",
+            "Kila kitu kilichochorwa huandikwa kwenye faili unapohifadhi."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Kubadilisha maandishi na picha za hati yenyewe",
+          "body": [
+            "Zana ya \"Hariri maandishi na picha za hati\" inaonyesha kile ambacho ukurasa wenyewe una. Bofya mstari wa maandishi ili kuuandika upya, au picha iliuisogeze, kubadilisha ukubwa, kuizungusha au kuifuta.",
+            {
+              "note": "Hii inabadilisha mstari mmoja au picha moja kwa wakati mmoja. Aya hazijipangilii upya wakati mstari unapokuwa mrefu, na picha iliyoko juu ya nyingine huchaguliwa pamoja nayo. Kwa mabadiliko makubwa, hariri hati katika programu iliyoandikiwa."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Kufuta maelezo",
+          "body": [
+            "Zana zaidi → Futa maelezo huondoa kabisa kile ambacho hakipaswi kusomwa: buruta sanduku jeusi juu yake, kwenye ukurasa wowote. Unapohifadhi, maandishi na picha zilizo chini ya sanduku huondolewa kwenye faili, si kufunikwa tu.",
+            {
+              "note": "Hifadhi hati iliyofutwa maelezo kwa jina jipya na uweke ya asili mahali salama: kile kilichofutwa hakiwezi kurudishwa."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Alama ya maji",
+          "body": [
+            "Hariri → Alama ya maji huandika maneno au kuweka picha kwenye kurasa unazochagua: moja kwa moja au kwa mwinuko, katika moja ya sehemu tisa, kwa ukubwa na wepesi kama ulivyoweka. Kwenye kila ukurasa inakuwa alama kama nyingine na bado inaweza kusogezwa au kuondolewa."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Namba za kurasa, kichwa na miguu ya ukurasa, namba za Bates",
+          "body": [
+            {
+              "points": [
+                "Hariri → Namba za kurasa: muundo (1, 1 / 12, Ukurasa 1 na zingine), mahali, na kurasa zipi zinapata namba.",
+                "Ingiza → Kichwa na miguu ya ukurasa: maandishi katika mojawapo ya sehemu sita. Ndani yake, {page} inawakilisha namba ya ukurasa, {pages} kwa idadi ya kurasa, {date} kwa tarehe ya leo na {file} kwa jina la hati.",
+                "Ingiza → Namba za Bates: namba zinazofuatana zikiwa na neno kabla au baada (ABC000123), kama zinavyotumika kwa nyaraka za kesi."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Viungo, alama za ukurasa na faili zilizambatanishwa",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Viungo",
+          "body": [
+            "Ingiza → Kiungo: buruta kwenye sehemu inayopaswa kubonyezwa, kisha taja inapoelekea: anwani ya wavuti, au ukurasa wa hati hii.",
+            "Viungo vya hati hufanya kazi unapoisoma: kubonyeza kiungo cha ukurasa hupeleka huko; anwani ya wavuti au barua pepe hupelekwa kwenye kivinjari au programu yako ya barua pepe."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Alama za ukurasa",
+          "body": [
+            "Ingiza → Alama mpya ya ukurasa: bonyeza sehemu inayopaswa kuelekea na uipe kichwa. Ingiza → Alama za kurasa hufungua orodha, ambapo alama ya ukurasa inaweza kubadilishwa jina au kuondolewa. Mabadiliko huandikwa unapohifadhi."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Faili zilizambatanishwa",
+          "body": [
+            "Ingiza → Ambatisha faili: chagua faili na ubonyeze sehemu ambayo pini ya karatasi iwekwe. Unaweza kuipa jina na mwandishi, kupaka rangi pini, kubadilisha ukubwa na kuizungusha. Faili huhifadhiwa ndani ya PDF unapohifadhi.",
+            "Ingiza → Faili zilizounganishwa huorodhesha kile ambacho hati inabeba; kila faili linaweza kuhifadhiwa kwenye diski au kuondolewa. Kubonyeza pini ya karatasi hufungua orodha hiyo hiyo."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fomu",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Kujaza fomu",
+          "body": [
+            "Ingiza → Jaza fomu huonyesha nyanja za hati: andika kwenye nyanja za maandishi, weka alama kwenye visanduku, chagua kutoka kwenye orodha. Majibu huandikwa kwenye faili unapohifadhi."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Kutengeneza fomu",
+          "body": [
+            "Menyu ya Ingiza huongeza nyanja kwenye hati yoyote: nyanja ya maandishi, kisanduku cha kuweka alama, vitufe vya redio (ambapo kimoja kinaweza kuchaguliwa), orodha ya kuchagua, na nyanja ya saini iliyoachwa wazi kwa msaini.",
+            "Buruta kwenye ukurasa ambapo nyanja inapaswa kuwekwa. Kama alama nyingine, nyanja inaweza kusogezwa na kubadilishwa ukubwa hadi utakapohifadhi; baada ya hapo inakuwa sehemu ya fomu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kutia saini",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Kuongeza saini unayochora",
+          "body": [
+            "Saini → Ongeza saini huweka picha ya saini kwenye ukurasa: iliyochorwa hapa kwa kalamu unayochagua, iliyoandikwa kwa fonti, au iliyochukuliwa kutoka kwenye picha (kwa kutumia \"Weka michoro ya kalamu pekee, bila karatasi nyuma yake\" kwa picha ya karatasi iliyotiwa saini). Tarehe inaweza kuandikwa chini yake.",
+            "Buruta hadi kwenye ukurasa ambapo inapaswa kuwekwa. Saini ulizotumia huhifadhiwa kwenye kompyuta hii, ili zitumike tena.",
+            {
+              "note": "Hii ni picha: haisemi kitu cha uhakika kuhusu nani aliweka hapo. Saini inayothibitisha nani alisaini, na kwamba hakuna kitu kilichobadilika tangu wakati huo, hutengenezwa kwa cheti."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Kusaini kwa kutumia cheti",
+          "body": [
+            "Saini → Saini kwa cheti hutengeneza saini ya kidijitali: inasema nani alisaini na kuhifadhi nyaraka, hivyo mabadiliko yoyote ya baadaye yataonekana.",
+            {
+              "steps": [
+                "Buruta hadi kwenye ukurasa eneo ambapo saini itaonekana (dirisha litatangaza hivyo kwanza; inaweza kuzimwa). Ili kusaini bila kuweka kitu chochote kwenye kurasa, chagua \"Tia saini bila kuionyesha kwenye ukurasa\" badala yake.",
+                "Chagua cheti: kimoja kati ya vile vya kompyuta (kadi au tokeni itaonekana miongoni mwa hivyo mara tu inapokuwa kwenye kisomaji chake), au faili ya .pfx / .p12 ikiwa na nenosiri lake. \"Endelea\".",
+                "Chagua mwonekano wa saini. Chini ya \"Sababu na mahali\" unaweza kuandika kwa nini na wapi unasaini: vitawekwa kwenye saini, na kwenye ukurasa ikiwa mwonekano utavionyesha. Weka alama ya vyema kwenye \"Funga hati baada ya kutia saini\" ikiwa hakuna mtu anayepaswa kusaini au kuibadilisha baada yako. Acha \"Ongeza muda unaoaminika (muhuri wa muda)\" ikiwa na alama ili mamlaka ithibitishe wakati ulipotia saini.",
+                "\"Saini\", kisha chagua mahali faili iliyosainiwa itakapohifadhiwa. Tokeni itaomba PIN yake wakati huu."
+              ]
+            },
+            "Faili iliyosainiwa inafunguka badala ya nyaraka. Nenosiri au PIN haihifadhiwi kamwe na programu.",
+            {
+              "note": "Saini yenye sifa ni ile inayotengenezwa kwa njia hii kwa kutumia cheti chenye sifa, kwenye kadi au tokeni yake. Kusaini hufanyika kwenye kompyuta yako; ni muhuri wa muda na ukaguzi wa cheti chako pekee vinavyoingia mtandaoni, na vinatuma heshi na nambari ya mfululizo ya cheti, kamwe si hati."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Mwonekano wa saini",
+          "body": [
+            "Mwonekano unasema jinsi saini ya cheti inavyoonekana kwenye ukurasa. Hifadhi nyingi kwa majina yako mwenyewe: moja kwa ajili ya kusaini kwa niaba ya kampuni, moja kwa ajili ya kusaini kwa jina lako mwenyewe.",
+            {
+              "points": [
+                "Picha: hakuna, kutoka kwenye faili (muhuri, saini iliyoskaniwa) au iliyochorwa hapa.",
+                "Maandishi yanayoonekana: jina, tarehe, sababu, mahali, kila kimoja kikiwa na au bila lebo yake.",
+                "Mistari yako mwenyewe chini ya jina, kama vile wadhifa na kampuni.",
+                "\"Maandishi ya kawaida\" yako hapo kila wakati: nani alisaini na lini."
+              ]
+            },
+            "Katika dirisha la kusaini: \"Mpya…\", \"Hariri…\", \"Futa\". Ya mwisho kutumiwa hutoa chaguo kwanza. Muonekano huhifadhiwa kwenye kompyuta hii."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Saini nyingi, na kufunga",
+          "body": [
+            "Hati inaweza kusainiwa na watu wengi, mmoja baada ya mwingine. Fungua faili iliyosainiwa na usaini bila kubadilisha chochote: saini yako huongezwa mwishoni mwa faili na zile za awali zinabaki kuwa sahihi.",
+            "\"Funga hati baada ya kutia saini\" (zimezimwa isipokuwa kama utaziweka alama) hufunga hati: hakuna mtu anayeweza kusaini baada yako na hakuna kitu kingine kinachoweza kubadilishwa. Haiwezi kurudishwa.",
+            {
+              "note": "Ikiwa utabadilisha hati iliyosainiwa kabla ya kuisaini tena, lazima iandikwe upya na saini za awali huachwa. Dirisha la kusaini linakutahadharisha: ili kuzihifadhi, fungua faili tena na usaini bila kubadilisha chochote."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Mihuri ya muda",
+          "body": [
+            "Muhuri wa muda ni uthibitisho uliosainiwa na mamlaka ya muhuri wa muda kuhusu wakati kitu kilipokuwepo. Vinginevyo muda ulio kwenye saini hutoka kwenye saa ya kompyuta ya msaini, ambayo mtu yeyote anaweza kuiweka; muhuri wa muda unathibitisha wakati huo, na unaifanya saini iendelee kuthibitishika baada ya cheti kuisha muda (PAdES B-T).",
+            {
+              "points": [
+                "Saini hupata muhuri wa muda wakati \"Ongeza muda unaoaminika (muhuri wa muda)\" ina alama katika dirisha la kusaini. Mipangilio → Saini huamua kama inaanza ikiwa na alama, hapa na katika uchakataji wa faili nyingi kwa pamoja.",
+                "Saini → Ongeza muhuri wa muda huipa hati nzima muhuri wake wa muda, bila cheti: unathibitisha kwamba hati ilikuwepo, kama ilivyo hasa, wakati huo. Huhifadhiwa kama faili jipya; saini zilizo kwenye faili zinabaki halali."
+              ]
+            },
+            "Mamlaka ni ya DigiCert (http://timestamp.digicert.com), ya bure na inaaminiwa na Adobe Reader na Windows; nyingine inaweza kuwekwa katika Mipangilio → Saini. Inapokea heshi (SHA-256) pekee, kamwe si hati, na muunganisho wa intaneti unahitajika. Saini inapopata muhuri wa muda, mtoaji wa cheti chako pia anaulizwa kama cheti bado ni halali, na jibu lake huhifadhiwa ndani ya saini (uthibitishaji wa muda mrefu): hivyo Adobe Reader inaweza kuonyesha saini kuwa halali, sasa na baada ya cheti kuisha muda.",
+            {
+              "note": "Ikiwa mamlaka haiwezi kufikiwa, hakuna kinachosainiwa wala kuandikwa: jaribu tena, au ondoa alama ya muhuri wa muda ili usaini bila huo."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Kuhakiki saini",
+          "body": [
+            "Saini → Thibitisha saini huorodhesha kila saini ya cheti ya faili: nani alisaini, nani alitoa cheti, lini, sababu na mahali, na",
+            {
+              "points": [
+                "ikiwa hati haijabadilishwa tangu saini hiyo (saini nyingine iliyoongezwa baadaye haichukuliwi kama mabadiliko);",
+                "ikiwa saini hiyo imefunga hati;",
+                "ikiwa kompyuta hii inaamini mamlaka nyuma ya cheti hicho, na ikiwa cheti hicho ni halali leo;",
+                "muda uliothibitishwa na muhuri wake wa muda, na mamlaka iliyouthibitisha, ikiwa inao. Muhuri wa muda wa hati nzima pia umeorodheshwa, pamoja na ukaguzi wake."
+              ]
+            },
+            "Uhakiki ni wa faili kama ilivyohifadhiwa mara ya mwisho na hufanyika kwenye kompyuta hii, bila kuingia mtandaoni. Kubofya saini kwenye ukurasa hufungua orodha hii kwenye saini hiyo. Chini ya kila saini, “Onyesha cheti” hufungua dirisha la Windows la cheti (mnyororo wake na kila undani; kutoka hapo, “Sakinisha Cheti” huifanya kompyuta hii iamini cheti unachokijua), na “Thibitisha” humuuliza mtoaji wa cheti mtandaoni, pale tu unapoibonyeza, ikiwa cheti kimefutwa."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Zana zaidi",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Kutambua maandishi (OCR)",
+          "body": [
+            "Zana zaidi → Tambua maandishi (OCR) husoma maneno ya kurasa zilizoskaniwa na kuyaandika kwenye kurasa zisizoonekana, ili hati iweze kutafutwa na maandishi yake kunakiliwa na kusambazwa. Muonekano wa kurasa haubadiliki.",
+            "Weka alama tu kwenye lugha ambazo kurasa zimeandikwa; kurasa ambazo tayari zina maandishi huachwa kama zilivyo.",
+            {
+              "note": "Usomaji hufanywa na injini ya Tesseract, programu ya bure inayowekwa kando. Bila hiyo, dirisha huonyesha amri inayoiweka kwenye Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Kupunguza ukubwa wa hati",
+          "body": [
+            "Zana zaidi → Punguza ukubwa huhifadhi hati kama faili ndogo kwa kupunguza pikseli za picha na randa zake. Kuna nguvu tatu; maandishi na michoro hubaki kuwa na ukali uleule. Hati yenye picha chache haipunguki sana."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Kulinganisha hati mbili",
+          "body": [
+            "Zana zaidi → Linganisha hati: chagua PDF nyingine. Zote mbili huonyeshwa pembeni kwa pembeni, ukurasa kwa ukurasa, huku kurasa zenye maandishi tofauti zikiashiriwa na mistari ambayo kila moja ina peke yake ikiorodheshwa."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Uchakataji wa pamoja: faili nyingi kwa wakati mmoja",
+          "body": [
+            "Zana zaidi → Uchakataji wa pamoja hufanya mambo yaleyale kwa faili nyingi, katika tab yake yenyewe. Kila matokeo ni faili jipya. Ikiwa matokeo yangechukua nafasi ya faili ambazo tayari zipo kwenye folda (faili zako mwenyewe, zinapokwenda kwenye folda yake bila kitu chochote kuongezwa kwenye majina yao), utaulizwa kwanza kama ungependa kuzibadilisha, kuziruka, au kughairi. Faili hubadilishwa tu baada ya matokeo yake kukamilika; faili iliyo wazi (katika tab hapa au katika programu nyingine) huachwa kama ilivyo na kuwekwa alama kuwa haijakamilika.",
+            {
+              "steps": [
+                "Upande wa kushoto, ongeza faili: \"Ongeza faili\", \"Ongeza folda\" (pamoja na folda zilizo chini yake), au ziweke humo.",
+                "Upande wa kulia, weka alama ya vyema kile cha kufanya. Kila faili huwa PDF katika hali yoyote; mbali na hapo unaweza kugeuza kurasa, kutambua maandishi, kuongeza kichwa na utao, alama ya maji au namba za kurasa, kupunguza ukubwa wa faili, kuzisaini kwa cheti, au kuzitoa katika muundo mwingine. Namba zinaonyesha mpangilio.",
+                "Chagua kile kitakachoandikwa: faili moja kwa kila moja, au kila kitu katika PDF moja (kwa mpangilio wa orodha), na folda ambayo matokeo yataenda. Faili zote zinapotoka kwenye folda moja, folda hiyo huchaguliwa kwa ajili yako hadi utakapochagua nyingine; vinginevyo ni folda ya mwisho uliyochagua.",
+                "\"Anza\". Kila faili huonyesha jinsi ilivyokwenda; utekelezaji unaweza kusitishwa kati ya faili."
+              ]
+            },
+            {
+              "points": [
+                "Mapishi: \"Hifadhi kama mapishi\" huhifadhi kila kitu ulichochagua (isipokuwa faili na nenosiri lolote) chini ya jina, ili kuwekwa tena kwa chaguo moja.",
+                "\"Baki na folda za faili katika matokeo\" hujenga upya folda za folda iliyoongezwa.",
+                "\"Andika ripoti ya utekelezaji\" huacha faili ya maandishi pembeni ya matokeo ikisema nini kiliandikwa na nini kilishindwa.",
+                "PDF ambayo imetiwa saini pekee huhifadhi saini zake; ikiwa jambo lingine lolote litafanywa kwake katika mzunguko huo huo, inaandikwa upya na saini hizo huachwa."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mipangilio",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Mipangilio ya PDF Organizer",
+          "body": [
+            "Faili → Mipangilio (au Mipangilio kwenye upau wa pembeni, kisha PDF Organizer). Kila mpangilio unaweza kurudishwa peke yake, au yote kwa pamoja.",
+            {
+              "points": [
+                "Hati inapofunguliwa: ukubwa wa hati inayoonyeshwa inapofunguliwa, kusogeza chini au ukurasa mmoja mmoja, picha ndogo zionyeshwe au zisionyeshwe.",
+                "Vipimo, rula na gridi: kipimo (milimita, inchi, pointi), rula, gridi na nafasi yake.",
+                "Uchapishaji: karatasi, mwelekeo na ukubwa wa dirisha la uchapishaji linapoanza.",
+                "Upau wa zana wa haraka: ni vitufe gani vipo kwenye ukingo juu ya kurasa.",
+                "Majina ya hati mpya: mifumo ya kurasa zilizotolewa, hati mpya na PDF ambayo usindikishaji wa pamoja hukusanya faili nyingi ndani yake.",
+                "Saini: ikiwa \"Hifadhi\" itauliza kabla ya kuandika juu ya faili iliyotiwa saini.",
+                "Njia za mkato za kibodi: bonyeza vitufe vya amri, kisha bonyeza vitufe vipya."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Kuhusu PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Kuhusu PDF Organizer",
+          "body": [
+            "PDF Organizer ni programu ya PDF ya Syntelab Creative: husoma hati za PDF, hupanga na kuunganisha kurasa zake, huandika na kuchora juu yake, hujaza na kutengeneza fomu, husaini kwa cheti na kukagua saini, na kufanya mambo haya haya kwa faili nyingi kwa wakati mmoja.",
+            "Ni mpya, na baadhi ya mambo inayofanya ni hatua ya kwanza. Pale inapokosa kwa hati zako, tujulishe kupitia Msaada → Maoni: ndivyo tunavyojua nini cha kufanyia kazi."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Kile PDF Organizer kilichojengwa nacho",
+          "body": [
+            {
+              "points": [
+                "Kusoma, kuchora na kuandika PDF: MuPDF.",
+                "Kutambua maandishi (OCR): Tesseract, inapokuwa imesakinishwa kwenye kompyuta.",
+                "Kufungua hati za ofisi: Word, Excel na PowerPoint, au LibreOffice, kulingana na kile kilichosakinishwa.",
+                "Hifadhi ukurasa wa wavuti kama PDF: kivinjari kilichosakinishwa kwenye kompyuta.",
+                "Kutia saini kwa cheti: huduma za vyeti za Windows; saini huandikwa kama vile kiwango cha PAdES kinavyotaka."
+              ]
+            },
+            "Kile kinachoshirikiwa na sehemu nyingine ya programu kipo chini ya \"Kuhusu Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Kile ambacho PDF Organizer hakiwezi kufanya bado",
+          "body": [
+            {
+              "points": [
+                "Nyaraka za Office hufunguliwa na seti ya ofisi kwenye kompyuta; bila Word, Excel, PowerPoint au LibreOffice haziwezi kufunguliwa. Kibadilishi chetu kinatengenezwa: angalia \"Kile tunachofanyia kazi\".",
+                "Kutambua maandishi kunahitaji injini ya Tesseract, inayowekwa kando.",
+                "Maandishi ya nyaraka yenyewe hubadilishwa mstari mmoja baada ya mwingine; aya hazijipangilii upya.",
+                "Picha zilizochapishwa kwa wino nne (CMYK) haziwezi kuchukuliwa ili kusogezwa.",
+                "“Thibitisha” huonyesha ikiwa cheti kimefutwa kufikia leo, si lini kilifutwa.",
+                "Kutia saini kwa cheti hufanya kazi kwenye Windows kwa sasa; kwenye Linux na macOS itakuja katika toleo la baadaye."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

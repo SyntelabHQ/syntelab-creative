@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Primi passi",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Che cos’è Syntelab Creative",
+          "body": [
+            "Syntelab Creative è un unico programma composto da più app. Ogni app è dedicata a un tipo di attività:",
+            {
+              "points": [
+                "PDF Organizer legge, organizza, modifica e firma documenti PDF.",
+                "Scribe è un editor di testo con strumenti per pulire, ordinare, confrontare e trasformare il testo.",
+                "Units converte tra unità di misura: lunghezza, temperatura, valute e molte altre.",
+                "Dev raccoglie strumenti per sviluppatori: codifica e decodifica, formattazione e verifica, conversione dei dati tra formati diversi."
+              ]
+            },
+            "Le app condividono una finestra, impostazioni e modalità di lavoro, così ciò che impari in una vale anche per le altre.",
+            {
+              "note": "Tutto avviene sul tuo computer. I documenti non vengono mai inviati altrove e non vengono raccolti dati personali né informazioni sul tuo lavoro."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "La finestra",
+          "body": [
+            {
+              "points": [
+                "La barra laterale: l’icona Home apre la schermata iniziale, seguono le tue app e, in fondo, trovi le novità del programma, Feedback, Sostegno e Impostazioni.",
+                "In un’app, File → Vai a Home apre la schermata iniziale dell’app, se disponibile (Units, Scribe); File → Apri Impostazioni (Ctrl+,) apre la sezione dedicata all’app. Da lì puoi passare alle altre sezioni con un clic.",
+                "Le schede in alto: ogni documento, raccolta o strumento aperto ha una propria scheda. Un punto sulla scheda indica modifiche non salvate.",
+                "I menu dell’app, sotto le schede, possono apparire come barra dei menu, barra multifunzione o pannello laterale, secondo la scelta effettuata.",
+                "Il resto della finestra mostra la scheda in primo piano."
+              ]
+            },
+            "Prima di chiudere una scheda con modifiche non salvate, il programma ti chiede cosa fare; lo stesso avviene quando chiudi il programma."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Home",
+          "body": [
+            "Home mostra le tue app e i file aperti di recente. Fai clic su un’app per aprirla oppure su un file recente per riaprirlo.",
+            "Puoi visualizzare le app come riquadri, icone con nomi o sole icone e trascinarle nell’ordine desiderato. Puoi riordinarle anche con Alt e i tasti freccia. «Ripristina predefiniti» ripristina l’ordine iniziale.",
+            "Nel menu Start di Windows ogni app ha anche un collegamento dedicato, per esempio «Syntelab PDF Organizer» o «Syntelab Units», che apre il programma direttamente in quell’app. Se il programma è già aperto, l’app si apre in una nuova scheda."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Apertura dei file",
+          "body": [
+            {
+              "points": [
+                "Da un’app: File → Apri oppure Ctrl+O.",
+                "Trascinando i file da una cartella alla finestra.",
+                "Dal file manager del sistema: fai doppio clic su un file associato al programma. In Esplora file di Windows è disponibile anche il menu contestuale (consulta «Menu contestuale di Esplora file di Windows»).",
+                "Da Home: apri un file dall’elenco dei file recenti."
+              ]
+            },
+            "Il programma viene eseguito in un’unica istanza. Se apri un file dal file manager mentre il programma è già in esecuzione, il file si apre in una nuova scheda nella stessa finestra."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personalizzazione",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Layout: barra dei menu, barra multifunzione o pannello laterale",
+          "body": [
+            "I comandi delle app possono essere visualizzati in tre modi. I comandi sono gli stessi; cambia solo la loro disposizione.",
+            {
+              "points": [
+                "Classico: barra dei menu e barra degli strumenti.",
+                "Barra multifunzione: pulsanti grandi raccolti in gruppi con nome, una scheda per ogni menu. Puoi comprimerla per lasciare più spazio al documento.",
+                "Pannello laterale: strumenti raccolti in un pannello a sinistra o a destra, comprimibile fino a mostrare solo le icone."
+              ]
+            },
+            "Scegli il layout per tutte le app in Impostazioni → Generale → Layout. Puoi impostare un layout specifico per un’app nella relativa sezione delle Impostazioni o dal menu Visualizza; in tal caso non seguirà più il layout generale finché non selezioni «Usa il layout generale»."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Impostazioni → Generale → Tema: Chiaro, Scuro, Grigio chiaro, Grigio scuro oppure Automatico, che segue l’impostazione chiara o scura del sistema.",
+            "Il tema non cambia mai i colori delle pagine di un documento: la carta mantiene il suo aspetto originale."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Lingua",
+          "body": [
+            "Impostazioni → Generale → Lingua. Il programma è disponibile in 62 lingue. «Lingua di sistema» segue la lingua del computer. Puoi cercare nell’elenco il nome di una lingua nella lingua stessa, nella tua lingua o in inglese.",
+            "I testi non ancora tradotti vengono mostrati in inglese, mai come codici."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Schede",
+          "body": [
+            {
+              "points": [
+                "«Mantieni la scheda Home tra le schede aperte»: se disattivata, la scheda Home è visibile solo quando Home è in primo piano; l’icona Home nella barra laterale ti riporta sempre alla schermata iniziale.",
+                "L’indicatore su una scheda può essere l’icona dell’app oppure un semplice quadrato del colore dell’app."
+              ]
+            },
+            "Se le schede sono troppe per essere visualizzate tutte, le frecce alle estremità della barra permettono di scorrerle; «Altre schede» le elenca tutte."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orientamento e ricerca",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Ricerca di un comando",
+          "body": [
+            "La casella di ricerca («Cerca app, strumenti e comandi») trova qualsiasi comando della scheda in primo piano tramite il nome, nella tua lingua o in inglese. Seleziona un risultato per eseguirlo.",
+            "I comandi previsti ma non ancora disponibili appaiono disattivati nei menu e non vengono inclusi nei risultati della ricerca."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Scorciatoie da tastiera",
+          "body": [
+            "Nei menu e nelle descrizioni comandi, accanto al nome di un comando è indicata la relativa scorciatoia. Ecco quelle più usate:",
+            {
+              "points": [
+                "Ctrl+O: apri un file",
+                "Ctrl+S: salva; Ctrl+Maiusc+S: salva con nome",
+                "Ctrl+P: stampa",
+                "Ctrl+Z e Ctrl+Y: annulla e ripeti",
+                "Ctrl+F: trova nel documento",
+                "Ctrl+W: chiudi la scheda",
+                "Ctrl+Tab e Ctrl+Maiusc+Tab: passa alla scheda successiva o precedente",
+                "Ctrl+, (virgola): Impostazioni",
+                "F1: apri la guida",
+                "Esc: esci dalla modalità a schermo intero o lettura oppure deseleziona lo strumento attivo"
+              ]
+            },
+            "Puoi modificare le scorciatoie dei comandi generali (schede, Impostazioni, Aiuto) in Impostazioni → Generale → Scorciatoie da tastiera; quelle dei comandi di un’app si trovano nella relativa sezione delle Impostazioni. Fai clic sui tasti associati a un comando e premi la nuova combinazione."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Uso della guida",
+          "body": [
+            "La guida dipende da dove la apri. Da un’app, mostra solo il manuale di quell’app e i comandi della scheda da cui provieni. Da Home o dalle Impostazioni, mostra «Informazioni» (sul programma e su ciascuna app, in breve) e il manuale del programma. Aiuto → Informazioni apre sempre la sezione «Informazioni».",
+            "L’indice si trova a sinistra; la casella di ricerca sopra l’indice cerca in tutti gli argomenti, nei titoli e nel testo.",
+            "La guida si apre in una scheda propria, così puoi passare dal lavoro alla guida e viceversa. F1 la riporta in primo piano. Nella sezione «Comandi della scheda da cui sei arrivato» sono elencati i menu della scheda e tutti i relativi comandi, scorciatoie e descrizioni. Apri la guida dalla scheda su cui hai una domanda."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Menu contestuale di Esplora file di Windows",
+          "body": [
+            "Impostazioni → Generale → Esplora file di Windows → «Mostra Syntelab Creative nel menu contestuale di file e cartelle» aggiunge voci per i file supportati dal programma: «Converti in PDF con PDF Organizer» e «Unisci file in PDF Organizer», ciascuna con l’icona di PDF Organizer, e «Syntelab Dev», che si apre di lato con Checksum, Confronta e Visualizzazione esadecimale.",
+            "Le voci vengono aggiunte solo per il tuo utente, senza richiedere i diritti di amministratore; disattivando l’opzione vengono rimosse. In Windows 11 si trovano in «Mostra altre opzioni». Le voci avviano sempre il programma installato: se è stato spostato o reinstallato altrove, il programma le corregge all’avvio.",
+            {
+              "note": "Selezionando «Unisci file in PDF Organizer» per più file si apre una raccolta che li contiene; «Converti in PDF con PDF Organizer» li apre nell’elaborazione in batch."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privacy, aggiornamenti e contatti",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Cosa si connette a Internet e cosa no",
+          "body": [
+            "Il programma non raccoglie dati: né sull’utilizzo, né sui nomi dei file, né rapporti sugli arresti anomali inviati automaticamente.",
+            "Si connette a Internet solo nei casi seguenti, ciascuno avviato da te:",
+            {
+              "points": [
+                "Ricerca di aggiornamenti e novità (lettura di due piccoli file da syntelab.com), quando lo chiedi o, se hai dato il consenso, all’avvio del programma; download di una nuova versione solo quando premi «Aggiorna».",
+                "Salvataggio di una pagina web in PDF (PDF Organizer) e caricamento del testo di una pagina web (Scribe), a partire dall’indirizzo che hai inserito.",
+                "Un collegamento in un documento che apri: viene passato al browser o al programma di posta.",
+                "Feedback e Sostegno: aprono una pagina di syntelab.com nel browser."
+              ]
+            },
+            "La firma con certificato e la verifica delle firme vengono eseguite sul tuo computer, senza connessione a Internet."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Aggiornamenti",
+          "body": [
+            "Impostazioni → Generale → Aggiornamenti → «Controlla aggiornamenti». Se è disponibile una versione più recente, una finestra mostra le novità e propone «Aggiorna».",
+            "«Aggiorna» scarica la nuova versione, verifica che provenga davvero da noi (deve essere firmata con la nostra chiave; qualsiasi altro file viene rifiutato) e la installa al posto di quella corrente. Le impostazioni vengono mantenute e il programma si riavvia. Il download inizia solo quando premi il pulsante.",
+            "Se non è possibile installare l’aggiornamento in questo modo (versione portatile, pacchetto Linux o assenza di rete), «Scarica» apre la pagina dei download nel browser. Installa la nuova versione al posto di quella corrente: le impostazioni vengono mantenute.",
+            "Puoi disattivare «Controlla aggiornamenti e novità all’avvio del programma». In ogni caso non vengono inviati dati personali o informazioni sul computer."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Feedback e sostegno",
+          "body": [
+            "Aiuto → Feedback: proponi una nuova app, una funzionalità o una modifica oppure segnala un problema. Ogni messaggio viene letto.",
+            "Aiuto → Sostegno: il programma è gratuito; da qui puoi aiutarci a continuare il lavoro."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Informazioni su Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Informazioni su Syntelab Creative",
+          "body": [
+            "Syntelab Creative è una suite gratuita di app per le attività quotidiane con documenti, testi e dati, realizzata da Syntelab (syntelab.com). Inizia con quattro app: PDF Organizer, Scribe, Units e Dev. Altre si aggiungeranno nella stessa finestra.",
+            {
+              "points": [
+                "Sempre gratuita.",
+                "Nessuna raccolta di dati: nulla su di te, sul tuo computer o sul tuo lavoro.",
+                "Nessuna funzione riservata: non esistono versioni a pagamento, funzioni bloccate o limiti imposti artificialmente. Gli unici limiti dipendono dalla tecnologia attuale e dalle capacità del computer."
+              ]
+            },
+            "Non abbiamo finanziamenti. Il programma viene realizzato nel tempo libero, nei limiti del tempo che abbiamo a disposizione. Vogliamo creare software di qualità, e ci vogliono tempo e pazienza: da parte nostra per svilupparlo e da parte tua mentre continua a crescere.",
+            "Il programma migliorerà a ogni versione. I problemi segnalati vengono corretti e le funzionalità richieste vengono valutate per decidere cosa fare in seguito.",
+            {
+              "note": "I documenti restano sul tuo computer. Il programma non raccoglie informazioni su di te o sul tuo lavoro; consulta «Cosa si connette a Internet e cosa no»."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Come puoi aiutarci",
+          "body": [
+            "Ci sono tre modi per aiutarci, e ognuno conta:",
+            {
+              "points": [
+                "Dicci cosa ne pensi: Aiuto → Feedback. Puoi segnalare un problema, indicare cosa manca o cosa dovrebbe essere più semplice. Leggiamo ogni messaggio.",
+                "Parla ad altre persone del programma e del nostro lavoro. Più utenti significano più feedback e ci aiutano a capire cosa conta davvero. Ci dimostrano anche che il lavoro nostro e di chi partecipa al progetto è apprezzato.",
+                "Se puoi, sostienici con una donazione: Aiuto → Sostienici. Ci permette di dedicare più tempo al programma."
+              ]
+            },
+            "Non ti chiediamo di fare nulla di tutto questo. Il programma è gratuito e resterà sempre gratuito, completo e accessibile a tutti."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Tecnologie usate",
+          "body": [
+            "Il programma si basa sul lavoro di molte persone. Ecco cosa condividono tutte le app:",
+            {
+              "points": [
+                "La finestra e tutto ciò che vedi: Tauri, con il motore web del sistema (WebView2 su Windows, WebKitGTK su Linux, WKWebView su macOS); scritto in TypeScript con React.",
+                "Il componente che esegue le operazioni è scritto in Rust.",
+                "Caratteri e icone: Sansation, IBM Plex Sans e Font Awesome Free."
+              ]
+            },
+            "Le tecnologie aggiuntive di ogni app sono indicate nella relativa sezione «Informazioni». Ringraziamo tutte le persone che sviluppano questi progetti."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Limiti attuali",
+          "body": [
+            "Ecco cosa sapere prima di fare affidamento sul programma:",
+            {
+              "points": [
+                "Alcuni testi non sono ancora stati tradotti. Nel frattempo vengono mostrati in inglese, mai come codici.",
+                "Per ora il menu contestuale del file manager è disponibile solo in Esplora file di Windows.",
+                "La firma con certificato è disponibile per ora su Windows; arriverà in una versione successiva per Linux e macOS."
+              ]
+            },
+            "I limiti di ogni app sono elencati nella relativa sezione «Informazioni». Se uno di questi ti impedisce di lavorare, faccelo sapere tramite Aiuto → Feedback: ci aiuterà a stabilire le priorità."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "A cosa stiamo lavorando",
+          "body": [
+            "Le quattro app continueranno a crescere: le segnalazioni e le richieste inviate tramite Aiuto → Feedback contribuiscono a decidere le priorità. Stiamo preparando anche nuove app. Home non le mostra, a meno che tu non lo voglia: selezionale nel suo menu «Visualizzazione» per vederle lì come «Disponibile a breve»:",
+            {
+              "points": [
+                "Convert: conversione di file tra formati diversi, compresi documenti Office e PDF, senza dover installare altri programmi. Non abbiamo ancora trovato una tecnologia aperta che raggiunga la qualità desiderata: l’app arriverà quando potrà soddisfare le tue aspettative. Dove gli strumenti non esistono, li svilupperemo noi.",
+                "Pixel: strumenti per immagini, ad esempio per ridimensionarle e comprimerle, rimuovere lo sfondo, modificare i colori e creare codici QR.",
+                "Metadata: visualizzazione e rimozione dei dati nascosti in foto, video e documenti prima di condividerli.",
+                "Wizard: selettori e generatori casuali, come una ruota da girare, dadi, monete e nomi estratti da un elenco."
+              ]
+            },
+            "Nelle app già disponibili stiamo lavorando sui limiti indicati nelle rispettive sezioni «Limiti attuali»: per esempio, una marca temporale attendibile per le firme, la firma con certificato su Linux e macOS e il controllo ortografico in Scribe.",
+            "Stiamo preparando anche altri canali di installazione: Microsoft Store e winget su Windows, Flathub e Snap su Linux.",
+            {
+              "note": "Le novità di ogni versione si trovano nel pulsante delle novità nella barra laterale; Impostazioni → Generale → Aggiornamenti controlla la disponibilità di una nuova versione."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

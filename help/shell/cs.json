@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Začínáme",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Co je Syntelab Creative",
+          "body": [
+            "Syntelab Creative je jeden program složený z aplikací. Každá aplikace slouží k jinému druhu práce:",
+            {
+              "points": [
+                "PDF Organizer čte, uspořádává, upravuje a podepisuje PDF dokumenty.",
+                "Scribe je textový editor s nástroji pro čištění, řazení, porovnávání a transformaci textu.",
+                "Units převádí jednotky: délku, teplotu, měny a mnoho dalších.",
+                "Dev shromažďuje nástroje pro vývojáře: kódování a dekódování, formátování a kontrolu, převod jedné formy dat na jinou."
+              ]
+            },
+            "Aplikace sdílejí jedno okno, jednu sadu nastavení a jeden způsob práce, takže to, co se naučíte v jedné, platí i v další.",
+            {
+              "note": "Vše probíhá na vašem počítači. Vaše dokumenty nejsou nikam odesílány a o vás ani o vaší práci nejsou sbírány žádné údaje."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Okno",
+          "body": [
+            {
+              "points": [
+                "Boční lišta: ikona domku vede na Start, následují vaše aplikace a dole novinky programu, Zpětná vazba, Podpora a Nastavení.",
+                "V aplikaci vede Soubor → Přejít na Start na úvodní stránku dané aplikace, pokud ji má (Units, Scribe), a Soubor → Otevřít Nastavení (Ctrl+,) otevře Nastavení v části dané aplikace; ostatní části jsou odtud vzdáleny jedno kliknutí.",
+                "Karty nahoře: každý dokument, svazek nebo nástroj, který otevřete, má svou vlastní kartu. Tečka na kartě značí, že obsahuje neuložené změny.",
+                "Menu aplikace pod kartami: jako panel menu, jako pás karet nebo jako boční panel, podle toho, co jste si zvolili.",
+                "Zbytek okna tvoří karta v popředí."
+              ]
+            },
+            "Zavření karty s neuloženými změnami si nejprve vyžádá potvrzení; stejně tak zavření programu."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Start",
+          "body": [
+            "Start zobrazuje vaše aplikace a nedávno otevřené soubory. Kliknutím na aplikaci ji otevřete; kliknutím na nedávný soubor jej znovu otevřete.",
+            "Aplikace lze zobrazit jako karty, jako ikony s názvy nebo pouze jako ikony a přetahovat je do libovolného pořadí. Pomocí klávesnice: Alt a šipky. „Obnovit výchozí“ je vrátí do původního stavu.",
+            "Každá aplikace má také svou vlastní zkratku v nabídce Start systému Windows, například „Syntelab PDF Organizer“ nebo „Syntelab Units“: otevře program rovnou v dané aplikaci. Pokud je program již otevřen, otevře se v něm aplikace jako karta."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Otevírání souborů",
+          "body": [
+            {
+              "points": [
+                "Z aplikace: Soubor → Otevřít, nebo Ctrl+O.",
+                "Přetažením souborů ze složky do okna.",
+                "Ze správce souborů vašeho systému: dvojklikem na soubor, který má program otevírat. V Průzkumníku Windows je k dispozici také kontextové menu (viz „Kontextové menu Průzkumníka Windows“).",
+                "Ze Startu: seznam nedávno použitých souborů."
+              ]
+            },
+            "Program běží jako jediná instance. Soubor otevřený ze správce souborů za běhu programu se otevře jako nová karta ve stejném okně."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personalizace",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Rozvržení: menu, pás karet nebo boční panel",
+          "body": [
+            "Příkazy aplikace lze zobrazit třemi způsoby. Jde o stejné příkazy; liší se pouze jejich umístění.",
+            {
+              "points": [
+                "Klasické: panel menu a panel nástrojů.",
+                "Pás karet: velká tlačítka v pojmenovaných skupinách, jedna karta pro každé menu. Lze jej sbalit, aby zbylo více místa pro dokument.",
+                "Boční panel: nástroje v panelu vlevo nebo vpravo, který lze sbalit do ikon."
+              ]
+            },
+            "Rozvržení všech aplikací zvolte v Nastavení → Obecné → Rozvržení. Aplikace může mít vlastní rozvržení, zvolené v její části Nastavení nebo v jejím menu Zobrazení; pak se již neřídí obecným rozvržením, dokud nezvolíte „Použít obecné rozvržení“."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Motiv",
+          "body": [
+            "Nastavení → Obecné → Motiv: Světlý, Tmavý, Světle šedý, Tmavě šedý nebo Automatický, který se řídí světlým či tmavým nastavením systému.",
+            "Stránky dokumentu motiv nikdy nepřebarvuje: papír zůstává takový, jaký je."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Jazyk",
+          "body": [
+            "Nastavení → Obecné → Jazyk. Program je k dispozici v 62 jazycích. „Systémový jazyk“ se řídí jazykem vašeho systému. V seznamu lze hledat podle vlastního názvu jazyka, jeho názvu ve vašem jazyce nebo anglického názvu.",
+            "Text, který ještě není přeložen, se zobrazí v angličtině, nikdy ne jako kód."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Karty",
+          "body": [
+            {
+              "points": [
+                "„Vždy ponechat kartu Start mezi kartami“: je-li vypnuto, karta Start se zobrazuje pouze tehdy, když je samotný Start v popředí; ikona domku na boční liště k ní vždy vede zpět.",
+                "Označením karty může být ikona její aplikace nebo prostý čtverec v barvě aplikace."
+              ]
+            },
+            "Když je karet více, než se vejde, lze lištu posouvat šipkami na jejích koncích a „Více karet“ je všechny vypíše."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orientace v programu",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Hledání příkazu",
+          "body": [
+            "Vyhledávací pole („Hledat příkazy a nastavení“) najde libovolný příkaz karty v popředí podle jeho názvu ve vašem jazyce nebo v angličtině. Výsledek spustíte jeho výběrem.",
+            "Příkazy, které jsou plánované, ale ještě nejsou hotové, se v menu zobrazují šedě a ve vyhledávání se nevyskytují."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Klávesové zkratky",
+          "body": [
+            "Klávesové zkratky příkazu jsou uvedeny vedle jeho názvu v menu a v jeho popisku. Nejčastěji používané:",
+            {
+              "points": [
+                "Ctrl+O: otevřít soubor",
+                "Ctrl+S: uložit; Ctrl+Shift+S: uložit jako",
+                "Ctrl+P: tisknout",
+                "Ctrl+Z a Ctrl+Y: zpět a opakovat",
+                "Ctrl+F: hledat v dokumentu",
+                "Ctrl+W: zavřít kartu",
+                "Ctrl+Tab a Ctrl+Shift+Tab: další karta a předchozí karta",
+                "Ctrl+, (čárka): Nastavení",
+                "F1: tato Nápověda",
+                "Escape: opustit režim na celou obrazovku nebo režim čtení, případně odložit aktuální nástroj"
+              ]
+            },
+            "Klávesové zkratky vlastních příkazů programu (karty, Nastavení, Nápověda) lze změnit v Nastavení → Obecné → Klávesové zkratky; zkratky příkazů aplikací v jejich části Nastavení. Klikněte na klávesy příkazu a poté stiskněte nové."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Používání této Nápovědy",
+          "body": [
+            "Nápověda odpovídá místu, ze kterého ji otevřete. Z aplikace uvidíte pouze manuál dané aplikace a příkazy karty, ze které jste přišli. Ze Startu nebo z Nastavení uvidíte „O programu“ (stručně o programu a každé aplikaci) a manuál programu. Nápověda → O programu vždy vede do „O programu“.",
+            "Obsah je vlevo; vyhledávání nad ním prohledává všechna témata, v názvech i v textu.",
+            "Nápověda se otevírá ve vlastní kartě, takže mezi ní a svou prací můžete přecházet; F1 ji opět přenese do popředí. V části „Příkazy karty, ze které jste přišli“ je vypsáno každé menu dané karty s jeho příkazy, klávesovými zkratkami a popisem funkce: Nápovědu otevírejte z karty, ke které máte dotaz."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Kontextové menu Průzkumníka Windows",
+          "body": [
+            "Nastavení → Obecné → Průzkumník Windows → „Zobrazit Syntelab Creative v kontextovém menu souborů a složek“ přidá položky pro soubory, které program umí číst: „Převést na PDF pomocí PDF Organizer“ a „Kombinovat soubory v PDF Organizer“, obě s ikonou PDF Organizer, a „Syntelab Dev“, které se otevře do strany s položkami Kontrolní součty, Porovnat a Hexadecimální zobrazení.",
+            "Tyto položky jsou přidány pouze pro vašeho uživatele, bez administrátorských práv, a vypnutím přepínače se odstraní. Ve Windows 11 se nacházejí v položce „Zobrazit další možnosti“. Vždy spouštějí nainstalovaný program: pokud byl přesunut nebo přeinstalován jinam, při spuštění je opraví.",
+            {
+              "note": "Výběr položky „Kombinovat soubory v PDF Organizer“ u několika souborů s nimi otevře svazek; „Převést na PDF pomocí PDF Organizer“ s nimi otevře hromadné zpracování."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Soukromí, aktualizace a kontakt",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Co se odesílá online a co nikdy",
+          "body": [
+            "Program nic nesbírá: žádná data o používání, žádné názvy souborů, žádná automaticky odesílaná hlášení o chybách.",
+            "K internetu se připojuje pouze v těchto případech, a to vždy pouze na váš požadavek:",
+            {
+              "points": [
+                "Kontrola aktualizací a novinek (čtení dvou malých souborů ze syntelab.com), když o to požádáte nebo, pokud jste to povolili, při spuštění programu; a stahování nové verze, pouze když stisknete „Aktualizovat“.",
+                "Ukládání webové stránky jako PDF (PDF Organizer) a získávání textu z webové stránky (Scribe) z adresy, kterou jste zadali.",
+                "Odkaz v dokumentu, na který kliknete: je předán vašemu prohlížeči nebo e-mailovému programu.",
+                "Zpětná vazba a Podpora: otevřou stránku syntelab.com ve vašem prohlížeči."
+              ]
+            },
+            "Podepisování certifikátem a ověřování podpisů probíhá na vašem počítači, bez připojení k internetu."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Aktualizace",
+          "body": [
+            "Nastavení → Obecné → Aktualizace → „Hledat aktualizace“. Pokud existuje novější verze, okno vám sdělí, co je nového, a nabídne „Aktualizovat“.",
+            "„Aktualizovat“ stáhne novou verzi, ověří, že skutečně pochází od nás (musí být podepsána naším klíčem; cokoli jiného je odmítnuto), a nainstaluje ji přes stávající verzi. Vaše nastavení bude zachováno a program se znovu spustí. Dokud tlačítko nestisknete, nic se nestahuje.",
+            "Pokud aktualizaci nelze nainstalovat tímto způsobem (přenosná kopie, balíček pro Linux, žádné připojení k síti), tlačítko „Stáhnout“ otevře stránku ke stažení ve vašem prohlížeči; nainstalujte novou verzi přes stávající a vaše nastavení zůstanou zachována.",
+            "Možnost „Při startu programu kontrolovat aktualizace a novinky“ lze vypnout; v žádném případě se o vás ani o vašem počítači nic neodesílá."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Zpětná vazba a podpora",
+          "body": [
+            "Nápověda → Zpětná vazba: požádejte o novou aplikaci, novou funkci nebo změnu, případně nahlaste problém. Každá zpráva je přečtena.",
+            "Nápověda → Podpora: program je zdarma; zde můžete pomoci s jeho dalším rozvojem."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "O Syntelab Creative",
+          "body": [
+            "Syntelab Creative je bezplatná sada aplikací pro každodenní práci s dokumenty, textem a daty, kterou vytvořila společnost Syntelab (syntelab.com). Začíná čtyřmi aplikacemi: PDF Organizer, Scribe, Units a Dev. V témže okně k nim později přibudou další.",
+            {
+              "points": [
+                "Vždy zdarma.",
+                "Žádný sběr dat: nic o vás, vašem počítači ani vaší práci.",
+                "Žádná omezení: žádná placená verze, žádná uzamčená funkce, žádný záměrný limit. Jedinými limity jsou možnosti dnešní technologie a výkon vašeho počítače."
+              ]
+            },
+            "Nemáme žádné financování. Program vzniká v našem volném čase, v rozsahu, v jakém nám ho tento čas dovolí. Chceme vytvářet software vysoké kvality, a to vyžaduje čas a trpělivost: naši při jeho tvorbě a vaši, zatímco roste.",
+            "S každou verzí bude program lepší. Nahlášené problémy jsou opravovány a žádané funkce jsou zvažovány pro budoucí implementaci.",
+            {
+              "note": "Vaše dokumenty zůstávají ve vašem počítači. Program o vás ani o vaší práci nesbírá žádné údaje; viz „Co se odesílá online a co nikdy“."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Jak můžete pomoci",
+          "body": [
+            "Existují tři způsoby a každý z nich je cenný:",
+            {
+              "points": [
+                "Napište nám svůj názor: Nápověda → Zpětná vazba. Problém, na který jste narazili, něco, co chybí, nebo něco, co je složitější, než by mělo být. Každou zprávu čteme.",
+                "Řekněte ostatním o programu a o tom, co děláme. Čím více lidí program používá, tím více dostáváme zpětné vazby a právě tak zjišťujeme, na čem skutečně záleží. Dává nám to také pocit, že je naše práce ceněna: naše i práce každého, kdo se do projektu zapojil nebo se do něj zapojí.",
+                "Podpořte nás finančně, pokud můžete: Nápověda → Podpořte nás. Tím si koupíme čas na další práci."
+              ]
+            },
+            "Nic z toho po vás nevyžadujeme. Program je zdarma a zůstane zdarma, v plné verzi a pro všechny."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "S čím byl vytvořen",
+          "body": [
+            "Program stojí na práci mnoha lidí. To, co mají všechny aplikace společné:",
+            {
+              "points": [
+                "Okno a vše, co vidíte: Tauri s webovým zobrazením systému (WebView2 ve Windows, WebKitGTK v Linuxu, WKWebView v macOS); napsáno v TypeScriptu s Reactem.",
+                "Část, která vykonává práci: napsána v Rustu.",
+                "Písma a ikony: Sansation, IBM Plex Sans a Font Awesome Free."
+              ]
+            },
+            "To, co každá aplikace přidává, je uvedeno na její vlastní stránce v sekci „O programu“. Jsme vděční lidem, kteří stojí za těmito projekty."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Co zatím neumí",
+          "body": [
+            "Abyste to věděli dříve, než se na to budete spoléhat:",
+            {
+              "points": [
+                "Některé texty stále čekají na překlad. Do té doby jsou zobrazeny v angličtině, nikdy ne jako kód.",
+                "Kontextové menu (pravé kliknutí) správce souborů je zatím k dispozici pouze v Průzkumníku Windows.",
+                "Podepisování certifikátem funguje zatím ve Windows; v Linuxu a macOS bude k dispozici v pozdější verzi."
+              ]
+            },
+            "Omezení každé aplikace jsou uvedena na její vlastní stránce v sekci „O programu“. Pokud vám některé z nich brání v práci, dejte nám vědět přes Nápověda → Zpětná vazba: pomůže nám to rozhodnout, co přijde na řadu jako první."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Na čem pracujeme",
+          "body": [
+            "Čtyři aplikace budou dál růst: o tom, co přijde jako první, z velké části rozhoduje to, co nahlásíte a o co požádáte přes Nápověda → Zpětná vazba. Vedle nich se připravují nové aplikace. Start je nezobrazuje, pokud nechcete: zaškrtněte je v jeho nabídce „Zobrazení“ a uvidíte je tam označené jako „Brzy“:",
+            {
+              "points": [
+                "Convert: převádění souborů z jednoho formátu do druhého, včetně kancelářských dokumentů do PDF a zpět, bez nutnosti instalovat další program. Ještě jsme nenalezli otevřenou technologii, která by dosáhla požadované kvality, takže Convert přijde až ve chvíli, kdy vás nezklame; tam, kde nástroje neexistují, si je vybudujeme.",
+                "Pixel: nástroje pro obrázky, jako je změna velikosti a komprese, odstranění pozadí, barvy a QR kódy.",
+                "Metadata: zobrazení a odstranění skrytých dat z fotografií, videí a dokumentů před jejich sdílením.",
+                "Wizard: náhodné výběry a generátory: točící se kolo, kostky, mince, losování jmen ze seznamu."
+              ]
+            },
+            "V aplikacích, které již jsou k dispozici, pracujeme na tom, co uvádějí jejich stránky „Co zatím neumí“: například důvěryhodné časové razítko pro podpisy, podepisování certifikátem v Linuxu a macOS a kontrola pravopisu ve Scribe.",
+            "Následují také další možnosti instalace: Microsoft Store a winget ve Windows, Flathub a Snap v Linuxu.",
+            {
+              "note": "Novinky každé verze najdete pod tlačítkem novinek na boční liště; Nastavení → Obecné → Aktualizace zjistí, zda existuje novější verze."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Konvertavimas",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Konverteriai",
+          "body": [
+            "Units konvertuoja reikšmes tarp matavimo vienetų: vieną reikšmę greitai arba ištisas reikšmių lenteles iš karto. Viskas apskaičiuojama jūsų kompiuteryje.",
+            "Konverteriai suskirstyti į šešis meniu: Pagrindiniai, Judėjimas ir mechanika, Energija ir galia, Moksliniai, Skaitmeniniai duomenys ir medija bei Specializuota fizika. Pasirinkus konverterį, atidaroma jo lentelė.",
+            {
+              "points": [
+                "Konverteris atidaromas kortelėje, kurioje esate. Jei jo lentelėje yra reikšmių, pirmiausia jūsų paklausiama: Tęsti (reikšmės bus prarastos), Atidaryti naujoje kortelėje arba Atšaukti.",
+                "Nustatymai → Units → „Kiekvieną konverterį atidaryti atskiroje kortelėje“ vietoj to kiekvieną pasirinktą konverterį atidaro naujoje kortelėje.",
+                "Failas → Eiti į Pradžią grąžina į pirmąjį Units puslapį."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Greitas konvertavimas",
+          "body": [
+            "Pirmasis Units puslapis, Greitas konvertavimas, konvertuoja vieną reikšmę iš vieno vieneto į kitą. Pasirinkite konverterį, įveskite reikšmę pusėje „Iš“ ir pasirinkite abu vienetus: rezultatas rodomas pusėje „Į“.",
+            {
+              "points": [
+                "Kiekvienoje pusėje pateikiami populiarūs konverterio vienetai ir jūsų vienetai, juose galima ieškoti. Konverterio lentelėje yra visi vienetai.",
+                "Mygtukas tarp abiejų pusių sukeičia abu vienetus vietomis.",
+                "Žymelė šalia vieneto jį prisega: prisegti vienetai būna pirmi abiejuose sąrašuose ir lentelės vienetų skydelyje.",
+                "Mygtukas rezultate jį nukopijuoja; × išvalo reikšmę.",
+                "„Atidaryti lentelėje“ atidaro konverterio lentelę."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Kaip skaičiai skaitomi ir rašomi",
+          "body": [
+            "Skaičius galite įvesti ir įklijuoti taip, kaip jie rašomi skirtingose šalyse: suprantami ir 1,234.56, ir 1.234,56, taip pat tarpai ir apostrofai tarp tūkstančių bei 1.5e-3 dešimties laipsniui.",
+            "Skaičius, kurį galima perskaityti dvejopai (1,234: tūkstantis arba vienetas su trupučiu), skaitomas taip, kaip skaičius rašo programos kalba, ir eilutė po lentele tai nurodo.",
+            "Rezultatas rašomas su tiek dešimtainių skaitmenų, kiek jų turi vienetas, į kurį konvertuojama, o ne su tiek skaitmenų, kiek įvedėte: 5 cm yra 1,97 in. Nenulinė reikšmė visada rodo kelis reikšminius skaitmenis, todėl 1 cm yra 0,00001 km ir niekada ne 0,000 km.",
+            "Reikšmės, kurios per didelės arba per mažos, kad jas būtų galima perskaityti iš pirmo žvilgsnio, rašomos su dešimties laipsniu, pvz., 1,6 × 10⁻³⁵. Vaizdas → Kraštutinės reikšmės visu ilgiu vietoj to jas rašo su visais nuliais.",
+            "Kai vienetas tokios reikšmės neturi (nulinis garso slėgis neturi decibelų), langelyje rodomas brūkšnys."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lentelė",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Eilutės ir stulpeliai",
+          "body": [
+            "Kiekvienas stulpelis yra vienetas, o kiekviena eilutė – reikšmė. Langelis, į kurį rašote, valdo savo eilutę: kiti stulpeliai rodo tą pačią reikšmę savo vienetais. Įvestas langelis rodomas paryškintai.",
+            "Tai, kas nėra skaičius, išsaugoma ir rodoma raudonai; tokia eilutė nieko nekonvertuoja, kol to nepataisote.",
+            {
+              "points": [
+                "Norėdami redaguoti, dukart spustelėkite langelį arba tiesiog pradėkite jame rašyti. Enter pereina žemyn, Tab – į dešinę; rodyklių klavišai perkelia; Escape palieka langelį tokį, koks buvo.",
+                "Spustelėkite kampą (#), kad pažymėtumėte visą lentelę, eilutės numerį – kad pažymėtumėte tą eilutę, antraštę – kad pažymėtumėte tą stulpelį. Shift+spustelėjimas pažymi intervalą, Ctrl+spustelėjimas prideda langelių, žymėti galima ir vilkdami.",
+                "Home ir End pereina į pirmą ir paskutinį eilutės stulpelį; Ctrl+Home – į pirmą lentelės langelį, Ctrl+End – į paskutinį. Ctrl su rodykle pereina į lentelės kraštą: pirmą ar paskutinę eilutę, pirmą ar paskutinį stulpelį. Page Up ir Page Down perkelia per ekraną. Su Shift kiekvienas iš jų vietoj to išplečia žymėjimą.",
+                "Kelių langelių žymėjimas apvedamas iš išorės; langelis, į kurį eina įvestis, jame lieka neužtamsintas.",
+                "Delete išvalo pažymėtas eilutes.",
+                "Rašant paskutinėje eilutėje pridedama eilutė. Lentelė neturi didžiausio dydžio: ji tokia ilga, kiek leidžia jūsų kompiuterio atmintis (eilutė užima 16 baitų, todėl 100 milijonų eilučių užima apie 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Stulpeliai ir vienetų skydelis",
+          "body": [
+            "Skydelyje šalia lentelės pateikiami konverterio vienetai. Jo viršuje yra lentelėje esantys vienetai: spustelėkite vieną, kad pašalintumėte jo stulpelį. Po jais – visi vienetai: ieškokite pagal pavadinimą ar simbolį, filtruokite pagal grupę arba pagal „Populiariausi“ ir spustelėkite vienetą, kad pridėtumėte jį kaip stulpelį.",
+            "Žymelė šalia vieneto prisega jį kaip mėgstamą: jis būna pirmas sąraše ir pirmas puslapyje Greitas konvertavimas.",
+            {
+              "points": [
+                "Stulpeliai po lygiai dalijasi lentelės plotį, kol jų antraštės nebetelpa; tada lentelę galima slinkti į šonus.",
+                "Vilkite antraštės kraštą, kad pakeistumėte jos stulpelio plotį; dukart spustelėkite kraštą, kad stulpelis prisitaikytų prie ilgiausios reikšmės. Galima vilkti ir eilučių numerių stulpelį.",
+                "Stulpelio mygtukas ⋮: perkelkite stulpelį į kairę ar dešinę, prisekite prie kairiojo ar dešiniojo krašto, pakeiskite jo tikslumą arba pašalinkite jį.",
+                "Stulpelio tikslumas keičia tik tą stulpelį. „Naudoti šiam vienetui visur“ padaro jį vieneto tikslumu visose lentelėse ir puslapyje Greitas konvertavimas.",
+                "Mygtukas su dviem rodyklėmis šalia Anuliuoti ir Pakartoti pritaiko stulpelius prie lentelės: visi nuvilkti ar pritaikyti pločiai panaikinami, ir stulpeliai vėl po lygiai dalijasi lentelės plotį.",
+                "Dvi viršutines skydelio dalis – lentelėje esančius vienetus ir „Pridėti vienetus“ (paiešką ir filtrus) – galima suskleisti spustelėjus jų pavadinimus, kad sąrašui liktų daugiau vietos."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Anuliavimas, kopijavimas, įklijavimas, importas ir eksportas",
+          "body": [
+            "Juostoje virš lentelės yra jos įrankiai.",
+            {
+              "points": [
+                "Anuliuoti ir Pakartoti (Ctrl+Z, Ctrl+Y) apima kiekvieną lentelės pakeitimą. Įklijavimas ar importas yra vienas veiksmas.",
+                "Kopijuoti (Ctrl+C) nukopijuoja visą lentelę arba tai, kas pažymėta, taip, kaip ją skaito skaičiuoklė. „Transponuotas“ eilutes paverčia stulpeliais.",
+                "Įklijuoti (Ctrl+V) įdeda nukopijuotas eilutes į lentelę nuo aktyvaus langelio žemyn. Jei pirmoje eilutėje yra vienetų antraštės, stulpeliai suderinami pagal jas, o vienetai, kurių lentelėje dar nėra, pridedami.",
+                "Importuoti nuskaito Excel darbaknygę, CSV ar TSV failą vietoj to, kas yra lentelėje. „Automatiškai nustatyti formatą“ nustato tipą pagal failą.",
+                "Eksportuoti įrašo lentelę Excel, CSV, TSV ar JSON formatu. Kai prieš dešimtainę dalį rašomas kablelis, CSV rašomas su kabliataškiais, kaip tikisi skaičiuoklės. Excel lape telpa 1 048 576 eilutės: ilgesnė lentelė tęsiasi kituose tos pačios darbaknygės lapuose po tomis pačiomis antraštėmis.",
+                "Trintukas išvalo pažymėtas eilutes; šiukšlinė išvalo visą lentelę."
+              ]
+            },
+            "Eilutėje yra viena reikšmė. Iš įklijuotos ar importuotos eilutės, kurioje yra kelios reikšmės, imama pirmoji, o kitos apskaičiuojamos iš jos.",
+            "Įklijuoti, importuoti, eksportuoti ar kopijuoti labai daug eilučių užtrunka. Tada virš lentelės rodoma, kiek darbas pažengė, procentais ir eilutėmis, kartu su mygtuku Sustabdyti. Sustabdytas įklijavimas ar importas palieka lentelę tokią, kokia buvo; sustabdytas eksportas failo neįrašo.",
+            "Kai kompiuteriui nebelieka atminties eilutėms, niekas nekeičiama, o eilutė po lentele nurodo, kiek jos reikėjo. Kai eilutės telpa, bet ankstesnės lentelės negalima išlaikyti šalia jų, jūsų paklausiama, ar tęsti be anuliavimo galimybės: tada šio pakeitimo ir ankstesnių nebebus galima atšaukti. Prieš klausiant, kad atsirastų vietos, atsisakoma seniausių anuliavimo žingsnių.",
+            "Lentelės parinktys (krumpliaratis): ką rodo stulpelio antraštė (Pavadinimas (simbolis), Pavadinimas arba Simbolis), ar kopijose ir eksportuose yra antraštės ir eilučių numeriai, „Pradėti šį konverterį su šiais stulpeliais“ ir „Atkurti lentelę“."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Specialieji konverteriai",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valiuta",
+          "body": [
+            "Valiutos neturi pastovaus koeficiento: jų vertė kinta. Valiutų konverteris kursus nuskaito iš dviejų nemokamų paslaugų, kol juo naudojatės, ir tik tada.",
+            {
+              "points": [
+                "Šalių valiutos: Rates By Exchange Rate API, https://www.exchangerate-api.com . Jų kursai šaltinyje keičiasi kartą per dieną ir nuskaitomi ne dažniau.",
+                "Kriptovaliutos: Powered by CoinGecko, https://www.coingecko.com . Jų kursai nuskaitomi, kai konverteris atidaromas arba vėl tampa aktyvus, o turimi duomenys senesni nei ketvirtis valandos, taip pat kai paspaudžiate Atnaujinti; niekada pagal laikmatį."
+              ]
+            },
+            "Prašoma tik kursų. Apie jus nesiunčiama nieko, ir niekada nesiunčiamos sumos, kurias konvertuojate.",
+            "Eilutė po lentele ir po puslapio Greitas konvertavimas rezultatu nurodo, kokio laiko yra kursai. Nesant ryšio, naudojami paskutiniai kursai ir pažymimi kaip pasenę. Valiutai, kuriai paslaugos nepateikia kurso, rodomas brūkšnys.",
+            "Nustatymai → Units → Valiuta: „Skaityti kursus iš tinklo“ galima išjungti, tada konverteris naudoja paskutinius išsaugotus kursus. „Rodyti šaltinių pavadinimus šalia kursų“ rodo arba slepia abiejų paslaugų pavadinimus toje eilutėje.",
+            "Kursai yra informaciniai. Nesiremkite jais atlikdami sandorius."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Skaičiavimo sistema",
+          "body": [
+            "Šio konverterio vienetai yra sveikojo skaičiaus užrašymo būdai: sistemos su pagrindu nuo 2 iki 64, romėniški skaitmenys, šešiasdešimtainė sistema su dvitaškiais (1:30:15), dvejetainiu būdu koduotas dešimtainis skaičius ir Grėjaus kodas. Jų reikšmės yra tekstas: po šešioliktaine sistema įveskite FF, ir kiti stulpeliai parodys 255, 11111111 ir t. t.",
+            "Romėniški skaitmenys būna nuo I iki MMMCMXCIX (nuo 1 iki 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Vienetai, kurie nėra paprastas koeficientas",
+          "body": [
+            "Dauguma vienetų yra kito vieneto kartotiniai. Kai kurie ne, ir Units juos konvertuoja taip, kaip jie apibrėžti: temperatūras – su jų poslinkiais; degalų sąnaudas (litrai 100 km ir mylios galonui); bangos ilgį ir dažnį; laidumą ir varžą; Baumé, API, Brikso ir Plato laipsnius ir tankį; decibelus ir garso slėgį bei intensyvumą; nuolydį procentais ir jo kampą.",
+            "Temperatūra ir temperatūrų skirtumas nėra tas pats: 100 °C yra 212 °F, bet 100 °C skirtumas yra 180 °F skirtumas. Grupės „Skirtumas (Δ)“ vienetai konvertuojami tarpusavyje; tarp jų ir temperatūros skalių langelyje rodomas brūkšnys."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jūsų vienetai",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Vieneto kūrimas",
+          "body": [
+            "Bet kuriam konverteriui galite pridėti savo vienetų. Vienetų skydelyje pasirinkite „Naujas vienetas“, suteikite jam pavadinimą ir simbolį ir išreikškite jį esamu vienetu.",
+            {
+              "points": [
+                "Koeficientas: „1 žingsnis = 0,75 m“. Skalei, kuri neprasideda nuo nulio, – taip pat tai, kas pridedama po daugybos.",
+                "Formulė: kaip reikšmė virsta kitu vienetu, kur x yra reikšmė, ir formulė atgal. Pavyzdžiui, x * 9 / 5 + 32 ir (x - 32) * 5 / 9."
+              ]
+            },
+            "Tai, ką įvedate, tikrinama jau rašant, o prieš išsaugant parodoma, kam lygus jūsų vienetas. Formulėje galima naudoti + − × ÷ ^, skliaustus, x, pi, e ir funkcijas sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos ir atan. Formulė apskaičiuojama, bet niekada nevykdoma kaip programa.",
+            "Jūsų vienetai skydelyje pateikiami skiltyje „Mano“, kur juos galima keisti ir šalinti. Jūsų vienetą galima išreikšti kitu jūsų vienetu; pašalinus vienetą, pašalinami ir juo išreikšti vienetai.",
+            "Nustatymai → Units pateikia visų konverterių jūsų vienetus ir eksportuoja bei importuoja juos kaip tekstą, kurį galite išsaugoti arba perkelti į kitą kompiuterį."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nustatymai",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Units nustatymai",
+          "body": [
+            "Failas → Atidaryti nustatymus atidaro Units nustatymus; tą patį daro lentelės parinktys (krumpliaratis jos juostoje).",
+            {
+              "points": [
+                "Kiekvieną konverterį atidaryti atskiroje kortelėje arba kortelėje, kurioje esate.",
+                "Kraštutinės reikšmės visu ilgiu, kas rašoma tarp tūkstančių (10000,000, 10 000,000 arba 10.000,000; nieko, jei nepasirenkate kitaip) ir eilutės numeriai.",
+                "Valiuta: ar kursai skaitomi iš tinklo ir ar šalia jų nurodomos paslaugos.",
+                "Vienetų tikslumas: pasirinkite konverterį (arba „Jūsų pakeisti vienetai“), suraskite vienetą ir nustatykite jo dešimtainių skaitmenų skaičių mygtukais − ir +; rodyklė grąžina paties vieneto tikslumą. Stulpelio meniu komanda „Naudoti šiam vienetui visur“ nustato tą pačią reikšmę.",
+                "Vienetai, kuriais prasideda lentelė: konverteriai, kurių pirmuosius stulpelius pasirinkote, kiekvienam – su galimybe grąžinti numatytuosius.",
+                "Jūsų vienetai."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Apie Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Apie Units",
+          "body": [
+            "Units yra Syntelab Creative konvertavimo programa: 38 konverteriai su daugiau nei 1 500 vienetų, nuo ilgio ir temperatūros iki valiutų ir skaičiavimo sistemų. Kartą įvesta reikšmė rodoma visais norimais vienetais lentelėje, kurioje gali būti viena reikšmė arba milijonai.",
+            "Skaičiai apskaičiuojami tiksliai, trupmenomis, ir apvalinami tik juos užrašant. Viskas atliekama šiame kompiuteryje; iš tinklo nuskaitomi tik valiutų kursai, ir tai galima išjungti.",
+            "Ji nauja. Jei jūsų darbui jos kur nors nepakanka, praneškite mums per Pagalba → Atsiliepimai: taip sužinome, ką tobulinti."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Kiek eilučių telpa lentelėje: ką išmatavome",
+          "body": [
+            "Lentelė neturi nustatytos eilučių ribos: ji tokia ilga, kiek leidžia jūsų kompiuterio atmintis. Eilutė užima 16 baitų, todėl 100 milijonų eilučių užima apie 1,5 GB. Kai atmintis baigiasi, lentelė lieka tokia, kokia buvo, o programa nurodo, kiek jos reikėjo.",
+            "Matavome su 50 000 000 eilučių, kurių kiekvienoje – vienas skaičius viename stulpelyje, optimizuotoje programos versijoje:",
+            {
+              "points": [
+                "50 000 000 eilučių įklijavimas: apie 7 sekundes.",
+                "Jų importas iš CSV failo: 12 sekundžių.",
+                "Jų eksportas į CSV failą su antru, konvertuotu stulpeliu: apie 3,5 minutės.",
+                "Jų eksportas į Excel, 48 lapuose: 4,3 minutės."
+              ]
+            },
+            "Išvestis užtrunka ilgiau nei įvestis, nes kiekvienas rašomas langelis prieš tai tiksliai konvertuojamas.",
+            {
+              "note": "Kompiuteris, kuriame atliktas bandymas: AMD Ryzen 9 9950X3D (16 branduolių, 32 gijos), 64 GB atminties, Windows 11 Pro. 2026 m. spalis. Kitame kompiuteryje laikai skirsis; eilutės dydis – ne."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Iš ko sukurta Units",
+          "body": [
+            {
+              "points": [
+                "Tikslūs skaičiai: Rust bibliotekos num (bet kokio dydžio sveikųjų skaičių trupmenos).",
+                "Vienetai, jų koeficientai ir grupės: programos duomenų failai, po vieną kiekvienam konverteriui.",
+                "Excel ir OpenDocument darbaknygių skaitymas: calamine. Excel darbaknygių rašymas: rust_xlsxwriter.",
+                "Sistemos iškarpinė, skirta labai daug eilučių kopijuoti ir įklijuoti: arboard.",
+                "Valiutų kursai: ExchangeRate-API ir CoinGecko (žr. „Valiuta“)."
+              ]
+            },
+            "Tai, ką ji turi bendro su likusia programa, aprašyta skyriuje „Apie Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ko Units dar negali",
+          "body": [
+            {
+              "points": [
+                "Eilutėje yra viena reikšmė: iš įklijuotos eilutės su keliomis reikšmėmis imama pirmoji.",
+                "Labai daug eilučių eksportuojama lėtai (žr., ką išmatavome).",
+                "Tai, kas nukopijuota į iškarpinę, prieš įklijuojant laikoma atmintyje kaip vienas tekstas.",
+                "Valiutų kursai tokie švieži, kokius pateikia du jų šaltiniai: šalių valiutų – kartą per dieną."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

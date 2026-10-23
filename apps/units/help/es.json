@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Conversión",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Conversores",
+          "body": [
+            "Units convierte valores entre unidades de medida, ya sea un valor rápidamente o tablas completas de una vez. Todos los cálculos se realizan en tu equipo.",
+            "Los conversores se organizan en seis menús: Esenciales, Movimiento y mecánica, Energía y potencia, Científicas, Digital y medios, y Física especializada. Al elegir uno, se abre su tabla.",
+            {
+              "points": [
+                "El conversor se abre en la pestaña actual. Si su tabla contiene valores, primero se te pregunta qué hacer: Continuar (se perderán los valores), Abrir en una pestaña nueva o Cancelar.",
+                "Ajustes → Units → «Abrir cada conversor en su propia pestaña» abre cada conversor seleccionado en una pestaña nueva.",
+                "Archivo → Ir al inicio vuelve a la página principal de Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Conversión rápida",
+          "body": [
+            "La primera página de Units, Conversión rápida, convierte un valor de una unidad a otra. Elige un conversor, escribe el valor en el campo «De» y selecciona las unidades de origen y destino. El resultado aparece en el campo «A».",
+            {
+              "points": [
+                "Cada campo muestra las unidades populares del conversor y tus unidades personalizadas, con una búsqueda para encontrarlas. La tabla del conversor incluye todas las unidades.",
+                "El botón entre los dos campos intercambia las unidades.",
+                "El marcador junto a una unidad la fija como favorita. Las unidades favoritas aparecen primero en ambas listas y en el panel de unidades de la tabla.",
+                "El botón del resultado lo copia; × borra el valor.",
+                "«Abrir en la tabla» abre la tabla del conversor."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Cómo se interpretan y escriben los números",
+          "body": [
+            "Puedes escribir y pegar números con los formatos usados en distintos países: se reconocen tanto 1,234.56 como 1.234,56, así como los espacios y apóstrofos para separar los millares y la notación científica, por ejemplo 1.5e-3.",
+            "Si un número puede interpretarse de dos maneras (1,234 puede significar mil o uno y una fracción), se interpreta según el formato numérico del idioma del programa. La línea debajo de la tabla indica qué formato se usa.",
+            "El resultado se muestra con los decimales adecuados para la unidad de destino, no con tantos dígitos como hayas escrito: 5 cm son 1,97 in. Los valores distintos de cero conservan algunos dígitos significativos; por eso 1 cm se muestra como 0,00001 km y nunca como 0,000 km.",
+            "Los valores demasiado grandes o pequeños para leerse de un vistazo se muestran como potencias de diez, por ejemplo 1,6 × 10⁻³⁵. Ver → Mostrar los valores extremos completos los muestra con todos sus ceros.",
+            "Si una unidad no tiene un valor equivalente (la presión sonora cero no tiene decibelios), la celda muestra un guion."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La tabla",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Filas y columnas",
+          "body": [
+            "Cada columna representa una unidad y cada fila, un valor. La celda en la que escribes determina el valor de la fila; las demás columnas lo muestran en sus unidades correspondientes. La celda editada aparece en negrita.",
+            "El contenido que no sea un número se conserva y aparece en rojo. Esa fila no se convierte hasta que corrijas el valor.",
+            {
+              "points": [
+                "Haz doble clic en una celda o empieza a escribir para editarla. Intro baja una fila y Tab avanza a la derecha; las flechas desplazan la selección. Esc cancela la edición y restaura el valor anterior.",
+                "Haz clic en la esquina (#) para seleccionar toda la tabla, en el número de una fila para seleccionarla o en el encabezado para seleccionar una columna. Mayús+clic selecciona un rango; Ctrl+clic añade celdas a la selección. También puedes seleccionar arrastrando.",
+                "Inicio y Fin llevan a la primera y a la última columna de la fila. Ctrl+Inicio lleva a la primera celda de la tabla y Ctrl+Fin, a la última. Ctrl junto con una flecha lleva al borde de la tabla: primera o última fila, primera o última columna. Re Pág y Av Pág desplazan una pantalla. Si mantienes pulsada Mayús, estas teclas amplían la selección.",
+                "La selección de varias celdas se marca con un contorno exterior; la celda activa donde escribes queda sin sombrear dentro de la selección.",
+                "Supr vacía las filas seleccionadas.",
+                "Al escribir en la última fila, se añade otra. No hay un máximo fijo de filas: la tabla puede crecer hasta el límite de memoria del equipo (cada fila ocupa 16 bytes; 100 millones de filas requieren unos 1,5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Columnas y panel de unidades",
+          "body": [
+            "El panel junto a la tabla muestra las unidades del conversor. En la parte superior aparecen las unidades de la tabla; haz clic en una para quitar su columna. Debajo se muestran todas las unidades: busca por nombre o símbolo, filtra por grupo o por «Populares» y haz clic en una unidad para añadirla como columna.",
+            "El marcador junto a una unidad la fija como favorita: aparece al principio de la lista y de Conversión rápida.",
+            {
+              "points": [
+                "Las columnas se reparten el ancho de la tabla por igual hasta que sus encabezados dejan de caber; a partir de ahí, la tabla se desplaza horizontalmente.",
+                "Arrastra el borde de un encabezado para cambiar el ancho de su columna. Haz doble clic en el borde para ajustar la columna al valor más largo. También puedes arrastrar el borde de la columna con los números de fila.",
+                "El botón ⋮ de una columna permite moverla a izquierda o derecha, fijarla en el borde izquierdo o derecho, cambiar su precisión o quitarla.",
+                "La precisión se cambia solo para esa columna. «Usar esta precisión para la unidad en todas partes» establece la precisión de esa unidad en todas las tablas y en Conversión rápida.",
+                "El botón de dos flechas junto a Deshacer y Rehacer ajusta las columnas al ancho de la tabla. Se descartan los anchos que hayas cambiado o ajustado y las columnas vuelven a repartirse el espacio por igual.",
+                "Las dos secciones superiores del panel —las unidades de la tabla y «Añadir unidades» (búsqueda y filtros)— se contraen al hacer clic en sus títulos para dejar más espacio a la lista."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Deshacer, copiar, pegar, importar y exportar",
+          "body": [
+            "La barra situada sobre la tabla contiene sus herramientas.",
+            {
+              "points": [
+                "Deshacer y Rehacer (Ctrl+Z, Ctrl+Y) recorren todos los cambios de la tabla. Cada acción de pegar o importar cuenta como un solo paso.",
+                "Copiar (Ctrl+C) copia toda la tabla o la selección con el formato de una hoja de cálculo. «Transpuesta» convierte las filas en columnas.",
+                "Pegar (Ctrl+V) inserta las filas copiadas en la tabla a partir de la celda activa. Si la primera fila contiene nombres de unidades, las columnas se emparejan con esos nombres y se añaden las unidades que aún no estén en la tabla.",
+                "Importar lee un libro de Excel o un archivo CSV o TSV y reemplaza el contenido de la tabla. «Detectar el formato automáticamente» determina el tipo a partir del archivo.",
+                "Exportar guarda la tabla como archivo Excel, CSV, TSV o JSON. Si se usa una coma decimal, el CSV se escribe con punto y coma como separador, según esperan las hojas de cálculo. Una hoja de Excel admite 1.048.576 filas; si la tabla es más larga, continúa en otras hojas del mismo libro con los mismos encabezados.",
+                "La goma vacía las filas seleccionadas; la papelera vacía toda la tabla."
+              ]
+            },
+            "Cada fila contiene un valor. Si una fila pegada o importada contiene varios, se toma el primero y los demás se calculan a partir de él.",
+            "Pegar, importar, exportar o copiar muchas filas puede tardar. Una tarjeta sobre la tabla muestra el progreso en porcentaje y en número de filas, además de un botón Detener. Si detienes una operación de pegado o importación, la tabla conserva su estado anterior; si detienes una exportación, no se crea ningún archivo.",
+            "Si el equipo no tiene memoria suficiente para las filas, no se cambia nada y la línea debajo de la tabla indica cuánta memoria hacía falta. Si las filas caben, pero no se puede conservar también la tabla anterior, se te pregunta si quieres continuar sin posibilidad de deshacer. En ese caso, ya no podrás revertir ese cambio ni los anteriores. Antes de preguntar, se eliminan los pasos más antiguos del historial de Deshacer para liberar espacio.",
+            "Opciones de tabla (icono de engranaje): qué muestra el encabezado de cada columna (nombre y símbolo, nombre o símbolo), si las copias y exportaciones incluyen los encabezados y números de fila, «Iniciar este conversor con estas columnas» y «Restablecer la tabla»."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Conversores especiales",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Moneda",
+          "body": [
+            "Las monedas no tienen un factor de conversión fijo: su valor cambia. El conversor de moneda consulta los tipos de cambio en dos servicios gratuitos, únicamente mientras lo usas.",
+            {
+              "points": [
+                "Monedas nacionales: los tipos de cambio los proporciona Exchange Rate API, https://www.exchangerate-api.com. El servicio los actualiza una vez al día y Units no los consulta con más frecuencia.",
+                "Criptomonedas: los datos los proporciona CoinGecko, https://www.coingecko.com. Se consultan al abrir o volver al conversor si los datos disponibles tienen más de 15 minutos, y cuando pulsas Actualizar. Nunca se consultan automáticamente con un temporizador."
+              ]
+            },
+            "Solo se solicitan los tipos de cambio. No se envía ningún dato sobre ti ni sobre los importes que conviertes.",
+            "La línea debajo de la tabla y del resultado de Conversión rápida indica la fecha de los tipos de cambio. Sin conexión, se usan los últimos datos disponibles y se marcan como antiguos. Si los servicios no ofrecen un tipo de cambio para una moneda, se muestra un guion.",
+            "Ajustes → Units → Moneda: puedes desactivar «Consultar los tipos de cambio por internet» para usar los últimos datos guardados. «Mostrar las fuentes junto a los tipos de cambio» muestra u oculta en esa línea los nombres de ambos servicios.",
+            "Los tipos de cambio son orientativos. No los uses como referencia para realizar transacciones."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Sistemas numéricos",
+          "body": [
+            "Las unidades de este conversor son distintas formas de escribir números enteros: bases del 2 al 64, números romanos, base 60 con dos puntos (1:30:15), decimal codificado en binario y código Gray. Sus valores se escriben como texto: introduce FF en la columna hexadecimal y las otras mostrarán 255, 11111111, etc.",
+            "Los números romanos van de I a MMMCMXCIX (del 1 al 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Unidades sin un factor de conversión simple",
+          "body": [
+            "La mayoría de las unidades se convierten mediante un factor. Otras no, y Units las convierte según sus definiciones: temperaturas con sus desplazamientos; consumo de combustible (litros por 100 km frente a millas por galón); longitud de onda frente a frecuencia; conductancia frente a resistencia; grados Baumé, API, Brix y Plato frente a densidad; decibelios frente a presión e intensidad sonora; pendiente en porcentaje frente a su ángulo.",
+            "Una temperatura y una diferencia de temperatura no son lo mismo: 100 °C equivalen a 212 °F, pero una diferencia de 100 °C equivale a una diferencia de 180 °F. Las unidades del grupo «Diferencia (Δ)» se convierten entre sí; al convertir entre ellas y las escalas de temperatura, la celda muestra un guion."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tus propias unidades",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Crear una unidad",
+          "body": [
+            "Puedes añadir unidades propias a cualquier conversor. En el panel de unidades, elige «Nueva unidad», asígnale un nombre y un símbolo, y defínela en función de una unidad existente.",
+            {
+              "points": [
+                "Un factor: «1 paso = 0.75 m». Si la escala no empieza en cero, indica también qué valor se suma después de multiplicar.",
+                "Una fórmula: indica cómo se convierte el valor usando x como variable, y añade la fórmula inversa. Por ejemplo, x * 9 / 5 + 32 y (x - 32) * 5 / 9."
+              ]
+            },
+            "La fórmula se prueba mientras la escribes y se muestra el resultado de convertir una de tus unidades antes de guardarla. Puede usar + − × ÷ ^, paréntesis, x, pi, e y las funciones sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos y atan. La fórmula se calcula; nunca se ejecuta como un programa.",
+            "Tus unidades aparecen en «Propias», en el panel, donde puedes editarlas o eliminarlas. Puedes definir una unidad propia a partir de otra; al eliminar una unidad, también se eliminan las que dependen de ella.",
+            "Ajustes → Units muestra tus unidades de todos los conversores y permite exportarlas e importarlas como texto para guardarlas o transferirlas a otro equipo."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ajustes",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Ajustes de Units",
+          "body": [
+            "Archivo → Abrir ajustes abre la configuración de Units. También puedes acceder a ella desde las opciones de la tabla (el engranaje de la barra).",
+            {
+              "points": [
+                "Abrir cada conversor en una pestaña nueva o en la pestaña actual.",
+                "Mostrar los valores extremos completos, lo que se escribe entre millares (10000,000, 10 000,000 o 10.000,000; nada, salvo que elijas otra cosa) y los números de fila.",
+                "Moneda: si se consultan los tipos de cambio en Internet y si se muestran junto a ellos los nombres de los servicios.",
+                "Precisión de las unidades: elige un conversor (o «Unidades modificadas»), busca una unidad y ajusta sus decimales con − y +. La flecha restaura la precisión propia de la unidad. «Usar esta precisión para la unidad en todas partes», en el menú de una columna, establece el mismo valor.",
+                "Unidades iniciales de la tabla: conversores para los que elegiste las columnas iniciales, cada uno con una opción para restaurar las columnas predeterminadas.",
+                "Tus propias unidades."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Acerca de Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Acerca de Units",
+          "body": [
+            "Units es la aplicación de conversión de Syntelab Creative: incluye 38 conversores y más de 1.500 unidades, desde longitud y temperatura hasta monedas y sistemas numéricos. Un valor que escribas una sola vez se muestra en todas las unidades que elijas, en una tabla que admite desde un valor hasta millones.",
+            "Los cálculos se realizan exactamente como fracciones y solo se redondean al mostrarse. Todo se procesa en este equipo; únicamente se consultan en Internet los tipos de cambio, una opción que puedes desactivar.",
+            "La aplicación es nueva. Si no satisface tus necesidades, cuéntanoslo en Ayuda → Comentarios; así sabremos qué debemos mejorar."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Capacidad de filas de una tabla: resultados medidos",
+          "body": [
+            "La tabla no tiene un límite fijo de filas: puede crecer hasta donde permita la memoria del equipo. Cada fila ocupa 16 bytes; 100 millones de filas requieren alrededor de 1,5 GB. Si se agota la memoria, la tabla conserva su estado y el programa indica cuánta memoria hacía falta.",
+            "Las mediciones se hicieron con una compilación optimizada del programa y 50.000.000 de filas, cada una con un número en una columna:",
+            {
+              "points": [
+                "Pegar 50.000.000 de filas: unos 7 segundos.",
+                "Importarlas desde un archivo CSV: 12 segundos.",
+                "Exportarlas a un archivo CSV con una segunda columna convertida: unos 3,5 minutos.",
+                "Exportarlas a Excel en 48 hojas: 4,3 minutos."
+              ]
+            },
+            "La exportación tarda más que la importación porque cada celda se convierte con precisión antes de escribirse.",
+            {
+              "note": "Equipo de prueba: AMD Ryzen 9 9950X3D (16 núcleos, 32 subprocesos), 64 GB de memoria, Windows 11 Pro. Octubre de 2026. Los tiempos pueden variar en otros equipos; el tamaño de cada fila no."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Tecnologías de Units",
+          "body": [
+            {
+              "points": [
+                "Números exactos: bibliotecas num de Rust (fracciones de números enteros de cualquier tamaño).",
+                "Unidades, factores y grupos: archivos de datos del programa, uno por conversor.",
+                "Lectura de libros de Excel y OpenDocument: calamine. Escritura de libros de Excel: rust_xlsxwriter.",
+                "Portapapeles del sistema para copiar y pegar muchas filas: arboard.",
+                "Tipos de cambio de monedas: ExchangeRate-API y CoinGecko (consulta «Moneda»)."
+              ]
+            },
+            "La información que comparte con el resto del programa está en «Acerca de Syntelab Creative»."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Limitaciones actuales de Units",
+          "body": [
+            {
+              "points": [
+                "Cada fila contiene un valor: si pegas una fila con varios valores, se toma el primero.",
+                "La exportación de un gran número de filas es lenta (consulta los resultados medidos).",
+                "El contenido que se copia en el portapapeles se mantiene en memoria como un único texto antes de pegarse.",
+                "Los tipos de cambio tienen la frecuencia de actualización de sus dos fuentes: una vez al día para las monedas nacionales."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

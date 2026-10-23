@@ -1,0 +1,380 @@
+/* The frame of a tool: its options, what goes in, what comes out, a line under them. */
+.frame {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--sc-surface);
+  font-family: var(--sc-font, system-ui);
+  font-size: 14px;
+  text-align: start;
+}
+
+/* One way of feeding the tool (a text, or many files): the other is kept as it is, out of sight. */
+.mode {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.mode[hidden] {
+  display: none;
+}
+
+.spring {
+  flex: 1;
+}
+
+/* Where a tool puts its options, with the button that runs it at the end. */
+.options {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  min-height: 40px;
+  padding: 6px 16px;
+  border-block-end: 1px solid var(--sc-border);
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+/* Something said among the options: what a choice costs. */
+.optionNote {
+  color: var(--sc-muted);
+  font-size: 12px;
+}
+
+/*
+ * Two panes with a line between them that can be dragged: one over the other, or side by side (one over the
+ * other where the tab is narrow, whatever was chosen). How much each takes comes from `--first` and `--second`,
+ * set by `split-panes.tsx`.
+ */
+.panes {
+  /* The card of long work lies over both panes. */
+  position: relative;
+  display: grid;
+  flex: 1;
+  grid-template-rows: minmax(0, var(--first, 1fr)) 7px minmax(0, var(--second, 1fr));
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 0;
+}
+
+.pane {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* A second text under the input: it shares the pane with it, half and half. */
+.second {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  border-block-start: 1px solid var(--sc-border);
+}
+
+/* The line between the panes: thin to the eye, wide enough to take hold of. */
+.splitter {
+  position: relative;
+  z-index: 2;
+  background: var(--sc-bg);
+  cursor: row-resize;
+  touch-action: none;
+}
+
+.splitter::after {
+  position: absolute;
+  inset: 3px 0;
+  background: var(--sc-border);
+  content: '';
+}
+
+.splitter:hover::after,
+.splitter:focus-visible::after,
+.panes[data-dragging='true'] .splitter::after {
+  inset: 2px 0;
+  background: var(--sc-accent);
+}
+
+.splitter:focus-visible {
+  outline: none;
+}
+
+/* While the line is dragged the text under the pointer is not selected, and the editors do not take the pointer. */
+.panes[data-dragging='true'] {
+  user-select: none;
+}
+
+.panes[data-dragging='true'] .pane {
+  pointer-events: none;
+}
+
+@container (min-width: 721px) {
+  .panes[data-side-by-side='true'] {
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-columns: minmax(0, var(--first, 1fr)) 7px minmax(0, var(--second, 1fr));
+  }
+
+  .panes[data-side-by-side='true'] .splitter {
+    cursor: col-resize;
+  }
+
+  .panes[data-side-by-side='true'] .splitter::after {
+    inset: 0 3px;
+  }
+
+  .panes[data-side-by-side='true'] .splitter:hover::after,
+  .panes[data-side-by-side='true'] .splitter:focus-visible::after,
+  .panes[data-side-by-side='true'][data-dragging='true'] .splitter::after {
+    inset: 0 2px;
+  }
+}
+
+.paneHead {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 5px 12px 5px 16px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+}
+
+.paneTitle {
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* A button of a pane, drawn as those of the bar of a table in Units. */
+.action,
+.burn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.action:hover:not(:disabled),
+.burn:hover:not(:disabled) {
+  border-color: var(--sc-accent);
+}
+
+.action:disabled,
+.burn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.burn {
+  border-color: color-mix(in srgb, var(--sc-danger) 45%, var(--sc-border));
+  color: var(--sc-danger);
+}
+
+/* Where the editor will be, for a tool that is not built yet. */
+.blank {
+  display: grid;
+  flex: 1;
+  min-height: 120px;
+  place-items: center;
+  padding: 16px;
+  color: var(--sc-muted);
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 13px;
+  text-align: center;
+}
+
+.status {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  min-height: 34px;
+  padding: 3px 12px;
+  border-block-start: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.last {
+  color: var(--sc-text);
+}
+
+.last[data-problem='true'] {
+  color: var(--sc-danger);
+}
+
+/* The tool found nothing wrong: said with a check mark before what it did. */
+.last[data-fine='true'] {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.last[data-fine='true'] > :first-child {
+  flex: none;
+  color: var(--sc-action-support);
+}
+
+/* How long the text of a pane is, beside the name of the pane. */
+.paneFacts {
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The button that runs the tool: the one thing in the line of options that is not an option. */
+.run {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-accent);
+  color: var(--sc-accent-text);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.run:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+/* In place of the Run button where the tool runs by itself: said, so the button is not looked for. */
+.live {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px dashed var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  color: var(--sc-muted);
+  font-size: 12px;
+}
+
+.live > :first-child {
+  color: var(--sc-action-support);
+}
+
+/* What the result pane shows: one of a few, small, beside its name. */
+.shows {
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+}
+
+.shows button {
+  min-height: 22px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.shows button[aria-checked='true'] {
+  background: var(--sc-surface);
+  box-shadow: 0 0 0 1px var(--sc-border);
+  color: var(--sc-text);
+}
+
+.editor[hidden] {
+  display: none;
+}
+
+/* The editor of a pane: it takes what is left of the pane, in the letters code is written in. */
+.editor {
+  display: flex;
+  flex: 1;
+  min-height: 120px;
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 13px;
+}
+
+/* Over an editor: a file that stays on disk, where a result was written, that all is well, or what is wrong. */
+.fileNote,
+.fine,
+.wrong {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px 8px 16px;
+  border-block-end: 1px solid var(--sc-border);
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.fileTexts,
+.wrongTexts {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.fileName,
+.wrongMessage {
+  overflow: hidden;
+  color: var(--sc-text);
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Nothing is wrong with what the tool was given: said as plainly as a problem would be. */
+.fine {
+  background: color-mix(in srgb, var(--sc-action-support) 12%, var(--sc-surface));
+  color: var(--sc-text);
+}
+
+.fine > :first-child {
+  flex: none;
+  color: var(--sc-action-support);
+}
+
+/* What is wrong with what the tool was given, and where. */
+.wrong {
+  background: color-mix(in srgb, var(--sc-danger) 9%, var(--sc-surface));
+  color: var(--sc-text);
+}
+
+.wrong > :first-child {
+  flex: none;
+  color: var(--sc-danger);
+}
+
+.wrongMessage {
+  white-space: normal;
+}

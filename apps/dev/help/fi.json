@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Aloittaminen",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Ensimmäinen sivu",
+          "body": [
+            "Ensimmäisellä sivulla avautuu Dev-välilehti, josta löytyvät kaikki työkalut ryhmiteltynä kuten valikoissa: Koodaa, Data, Generoi, Tarkista, Verkko.",
+            {
+              "points": [
+                "Kirjoita \"Etsi työkalu\" rajataksesi listaa.",
+                "Työkalun kiinnittäminen pitää sen ylhäällä kohdassa Kiinnitetyt.",
+                "Työkalu avautuu samaan välilehteen; Tiedosto → Kaikki työkalut vie takaisin ensimmäiselle sivulle. Asetuksista voit määrittää, että jokainen työkalu avautuu omaan välilehteensä ja että uusi välilehti avautuu viimeksi käytettyyn työkaluun."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Liitä mitä tahansa",
+          "body": [
+            "Ensimmäisen sivun yläreunassa oleva kenttä ottaa vastaan minkä tahansa liitetyn tekstin ja tunnistaa sen tyypin: token, sertifikaatti, JSON, UUID, aikaleima, cron-aikataulu, URL, XML tai HTML, SQL, Base64, tarkistussumma, taulukko tai YAML.",
+            "Jokaisen arvion alapuolella ovat kyseiseen tyyppiin sopivat työkalut, parhaat ensin. Klikkaa työkalua: se avautuu tekstin ollessa jo valmiina ja suoritetaan.",
+            {
+              "note": "Liittämäsi teksti pysyy kentässä, kunnes tyhjennät sen tai suljet välilehden. Sitä ei koskaan tallenneta levylle."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Työkalun rakenne",
+          "body": [
+            "Useimmilla työkaluilla on sama rakenne: asetukset rivillä ylhäällä, syöte toisella puolella, tulos toisella puolella ja alareunassa rivi, joka kertoo tapahtumista.",
+            {
+              "points": [
+                "Tulos muodostetaan uudelleen aina, kun syöte tai jokin asetus muuttuu, ja se näytetään tuloksessa; asetusrivin \"Suoritetaan itsestään\" kertoo tämän. Vain teksti, joka on liian pitkä suoritettavaksi jokaisella näppäilyllä, tai yli 128 MB:n tiedosto odottaa Suorita-painiketta, joka silloin tulee näkyviin. Ctrl+Enter suorittaa työkalun milloin tahansa.",
+                "Tulos, joka ei ole tekstiä (Base64:stä purettu kuva, gzip), näytetään esikatseluna: kuva sellaisenaan, kaikki muu tyyppinsä, kokonsa ja ensimmäisten tavujensa avulla. Kopioi kopioi sen silloin Base64-muodossa, ja kuvan voi kopioida kuvana. Sama koskee syötetiedostoa, joka ei ole tekstiä.",
+                "Avaa tiedosto, Liitä ja Tyhjennä ovat syötteen yläpuolella; Kopioi ja Tallenna tiedostoon tuloksen yläpuolella. Tiedoston voi myös vetää ja pudottaa syötekenttään.",
+                "Syötteen virheet kerrotaan sanallisesti rivin ja sarakkeen kera, ja ne on merkitty editoriin.",
+                "Näkymä-valikosta voit asettaa paneelit vierekkäin tai päällekkäin, näyttää rivinumerot ja rivittää pitkät rivit; paneelien välistä rajaa voi vetää.",
+                "Valitsemasi asetukset muistetaan seuraavaa kertaa varten. Kirjoittamasi teksti ei jää talteen."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Hävitä ja tietojen säilytys",
+          "body": [
+            "Hävitä-painike jokaisen työkalun oikeassa alakulmassa tyhjentää sen välittömästi: syötteen, tuloksen, kaikki kenttiin kirjoitettu teksti sekä editorin peruutushistorian.",
+            "Dev säilyttää vain asetuksensa, kiinnittämäsi työkalut, viimeksi käytetyn työkalun nimen ja kunkin työkalun asetukset. Mitään kirjoittamaasi, liittämääsi, avaamaasi tai työkalulla luomaasi ei tallenneta levylle, lokiin tai viimeisimpien kohteiden luetteloon. Salaisuudet erityisesti: avaimet, salasanat, tunnisteet ja pyynnön otsikot pysyvät välilehdellä eivätkä missään muualla.",
+            "Yksi asia jää levylle hetkeksi: tiedoston tulos sekä tulos, joka ei ole tekstiä, kirjoitetaan ohjelman omaan kansioon, jotta ne voidaan näyttää ja sitten tallentaa. Kukin poistetaan, kun toinen tulos tulee sen tilalle, kun hävität tai suljet työkalun, ja joka tapauksessa kun Dev käynnistyy uudelleen."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Kaiken kokoiset tiedostot",
+          "body": [
+            "Tiedoston koolle ei ole asetettu rajoitusta. Riittävän pieni tiedosto (jopa 16 MB), joka voidaan näyttää, siirretään editoriin. Suurempi tiedosto, tai sellainen joka ei ole tekstiä, pysyy levyllä: sen alku (tai esikatselu) näytetään, työkalu lukee sen sieltä missä se on, ja sen tulos näytetään kuten tekstin. Tallenna tiedostoon kopioi sitten tuloksen valitsemaasi paikkaan.",
+            {
+              "points": [
+                "Pitkäkestoinen työ näyttää kortin, jossa kerrotaan edistymisestä, sekä Pysäytä-painikkeen.",
+                "Tiedosto, joka on muussa tekstikoodauksessa kuin UTF-8 (UTF-16, Windows-1252 ja vastaavat), luetaan tekstinä, jos se on riittävän pieni näytettäväksi, ja koodaus ilmoitetaan. Devistä tallentamasi tiedostot ovat UTF-8-muodossa.",
+                "Työkaluun raahattu tiedosto avataan kuten Avaa tiedosto -toiminnolla. Jos ikkuna ei pysty selvittämään, missä tiedosto on, se otetaan mukaan 16 MB asti, aivan kuten liitetty teksti."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Useita tiedostoja ja kokonaisia kansioita",
+          "body": [
+            "Kun työkalussa on vaihtoehto \"Työskentele: Teksti / Tiedostot\", Tiedostot suorittaa sen useaan tiedostoon kerralla.",
+            {
+              "steps": [
+                "Lisää tiedostoja tai kansio (myös sen alikansiot, jos jätät tämän asetuksen päälle).",
+                "Jokainen tiedosto luetaan kerran lisäyksen yhteydessä ja ilmoitetaan, hyväksyykö työkalu sen.",
+                "Valitse, mihin tulokset tallennetaan: kunkin tiedoston viereen uudella nimellä, kansioon (säilyttäen kansiorakenteen) tai alkuperäisten tiedostojen päälle, jolloin ohjelma kysyy vahvistusta vielä kerran. Hash voi myös näyttää tulokset vain luettelossa.",
+                "Napsauta tiedostoa luettelossa nähdäksesi pelkän sen tuloksen valintojen alla, ennen kuin mitään kirjoitetaan.",
+                "Suorita. Virheellinen tiedosto ei pysäytä muiden käsittelyä; jokaisen kohdalla ilmoitetaan lopputulos."
+              ]
+            },
+            {
+              "note": "Tulos ei koskaan korvaa olemassa olevaa tiedostoa, ellet erikseen pyydä sitä."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Resurssienhallinnan hiiren oikean painikkeen valikko",
+          "body": [
+            "Ota se käyttöön ohjelman Asetuksista kohdasta Resurssienhallinta. Kaikki on koottu yhden \"Syntelab Creative\" -rivin alle; Windows 11:ssä se löytyy kohdasta \"Näytä lisää vaihtoehtoja\".",
+            {
+              "points": [
+                "Avaa Syntelab Devissä: tiedostotyypeille, joita työkalu lukee (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz ja vastaavat). Tiedosto avautuu työkaluun, joka vastaa sen tyyppiä.",
+                "Tarkistussummat: mille tahansa tiedostolle tai kansiolle. Tiivisteet luetellaan kunkin tiedoston viereen, eikä mitään kirjoiteta.",
+                "Hex-näkymä: mille tahansa tiedostolle.",
+                "Vertaa: kaksi tiedostoa siirtyvät Diff-näkymän puolille; kaksi kansiota kansioiden vertailuun."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Koodaa",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Muuntaa tavut Base64-muotoon ja takaisin. Koodaus hyväksyy minkä tahansa tiedoston; dekoodaus palauttaa tavut, jotka näytetään tekstinä tai tallennetaan tiedostoon, jos ne eivät ole tekstiä.",
+            {
+              "points": [
+                "Aakkoset: vakiomuoto tai URL-osoitteille tarkoitettu muoto (- ja _).",
+                "Täyttö =-merkillä sekä rivit 64, 76 tai millä tahansa määrällä merkkejä.",
+                "Dekoodaus tukee molempia aakkostoja, täytöllä tai ilman, ja ilmoittaa, jos jokin merkki on virheellinen."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL-koodaus / dekoodaus",
+          "body": [
+            "Prosenttikoodaus, kuten selaimet tekevät: osoitteen osa (kaikki muu kuin tavallinen kirjain koodataan), koko osoite (sen omat erikoismerkit säilytetään) tai lomake (+ välilyönnin tilalla).",
+            "Dekoodaus ilmoittaa, jos %-merkkiä ei seuraa kaksi heksadesimaalidigittiä."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML-entiteetit",
+          "body": [
+            "Kirjoittaa HTML- ja XML-kielten varaamat merkit (&, <, >, lainausmerkit) entiteetteinä ja lukee entiteetit takaisin: nimen, desimaaliluvun tai heksadesimaaliluvun perusteella. Nimet noudattavat HTML-standardia.",
+            "\"Myös kaikki ei-ASCII-merkit\" kirjoittaa korostetut kirjaimet ja muut aakkostot myös entiteetteinä."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT-dekooderi",
+          "body": [
+            "Purkaa JSON Web Tokenin: otsikon ja hyötykuorman JSON-muodossa sekä väitteet sanallisesti (myöntäjä, kohde, yleisö, vanhenemispäivä merkinnöillä \"vanhentunut\" tai \"ei vielä vanhentunut\").",
+            "Anna salaisuus avain ja tarkista jaetulla salaisuudella tehty allekirjoitus (HS256, HS384, HS512). Yksityisellä avaimella (RS, ES, PS) tehtyjä allekirjoituksia ei tarkisteta.",
+            {
+              "note": "Token ja salaisuus pysyvät välilehdellä: mitään ei lähetetä minnekään tokenin dekoodaamiseksi."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Kirjoittaa tekstin ohjelmointikielen merkkijonona (JSON, JavaScript, C, C++, Java ja vastaavat) niin, että lainausmerkit, rivinvaihdot ja muut merkit on eskapoitu, ja lukee tällaisen merkkijonon takaisin."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Pakkaa ja purkaa gzip-tiedostoja minkä kokoisina tahansa lukemisen aikana. Pakkaustaso vaihtelee nopeimmasta pienimpään; tekstin tulos voidaan antaa Base64-muodossa."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Lukujärjestelmät",
+          "body": [
+            "Ilmoittaa kokonaisluvut, yksi per rivi, binääri-, oktaali-, desimaali- ja heksadesimaalimuodossa sekä yhdessä muussa valitsemassasi järjestelmässä (enintään 36). Luvuilla ei ole ylärajaa.",
+            {
+              "points": [
+                "Luvun järjestelmä tunnistetaan sen kirjoitusasusta: 0x heksadesimaalille, 0b binäärille, 0o oktaalille, kirjaimet heksadesimaalille ja muut desimaaleiksi. Tai voit valita järjestelmän, jolla kaikki luetaan.",
+                "Numeroiden väliset välilyönnit, alaviivat ja heittomerkit ohitetaan: 1_000_000.",
+                "Negatiivinen luku annetaan myös siten kuin tietokoneet sen tallentavat (kahden komplementti) pienimmässä mahdollisessa 8, 16, 32, 64 bitin tai vastaavassa koossa."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON-muotoilija",
+          "body": [
+            "Muotoilee, minimoi ja validoi JSON-tiedostoja sekä näyttää ne puurakenteena. Minkä kokoinen asiakirja tahansa luetaan virtana.",
+            {
+              "points": [
+                "Sisennys 2 tai 4 välilyönnillä, sarkaimella tai millä tahansa määrällä välilyöntejä.",
+                "Lisäasetukset: avainten lajittelu, lyhyet listat yhdelle riville, välilyönti kaksoispisteen jälkeen, rivinvaihtojen tyyppi, rivinvaihto loppuun, ei-ASCII-merkit muodossa \\uXXXX.",
+                "Salliva luku hyväksyy kommentit (// ja /* */) ja loppupilkut, ja kirjoittaa tiukkaa JSONia.",
+                "Muutokset: poista null-arvot, tyhjät arvot ja vastaavat yhdellä kertaa.",
+                "Puu avautuu taso kerrallaan ja hakee tekstiä avaimista ja arvoista."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Suorittaa JSONPath-kyselyn (RFC 9535) asiakirjaan: $.store.book[?@.price < 10].title. Tuloksena ovat löytyneet arvot, polut niihin tai molemmat.",
+            "Virheellisestä kyselystä ilmoitetaan ja virheen kohta osoitetaan."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema -validoija",
+          "body": [
+            "Tarkistaa asiakirjan JSON-skeemaa (luonnokset 4–2020-12) vasten. Skeema syötetään syötteen alapuolella olevaan ruutuun. Jokainen kohta, joka ei vastaa skeemaa, luetellaan sijaintineen ja rikottuine sääntöineen.",
+            "Useiden tiedostojen kohdalla jokainen tarkistetaan samaa skeemaa vasten. Viittauksia ($ref) toiseen tiedostoon tai osoitteeseen ei seurata."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Skeeman generaattori ja JSON to TypeScript",
+          "body": [
+            "JSON-näytteen perusteella skeeman generaattori kirjoittaa siihen sopivan JSON-skeeman, ja JSON to TypeScript kirjoittaa sen tyyppimääritykset (rajapinnat tai tyypit, viedyt tai ei, vainalukut tai ei, antamasi nimen alle)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Muuntaa YAML:n JSON-muotoon ja JSON:n YAML-muotoon. YAML luetaan sen ydinskeeman mukaan, ankkurit ja yhdistykset huomioiden; virheet ilmoitetaan sijaintineen."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Muuntaa taulukon JSON-muotoon ja takaisin. Erotin tunnistetaan ensimmäisestä rivistä tai se voidaan valita (pilkku, puolipiste, sarkain, pystyviiva); ensimmäinen rivi voi olla otsikkorivi; numerot ja totuusarvot (true/false) voidaan tunnistaa.",
+            "\"Taulukko\" näyttää CSV-tiedoston riveissä ja sarakkeissa, tiedoston koosta riippumatta."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML / HTML -muotoilija",
+          "body": [
+            "Muotoilee, tiivistää ja tarkistaa XML- ja HTML-tiedostot. XML luetaan tiukasti: sulkematta jäänyt tunniste ilmoitetaan sijaintineen. HTML luetaan samalla tavalla kuin selaimet sen sallivat."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL-muotoilija",
+          "body": [
+            "Jäsentää lauseen niin, että jokainen osa on omalla rivillään, tai asettaa sen yhdelle riville; avainsanat voidaan asettaa isoilla kirjaimilla, pienillä kirjaimilla tai alkuperäisessä muodossa. Se ei vaadi tiettyä murretta eikä tarkista lauseen merkitystä."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Vertaa kahta tekstiä rivi riviltä, kahta JSON-asiakirjaa niiden sisällön perusteella tai kahta kansiota tiedosto tiedostolta. Ensimmäinen syötetään syötekenttään, toinen sen alapuolella olevaan ruutuun.",
+            {
+              "points": [
+                "Rinnakkain-näkymä merkitsee rivin sisällä muuttuneet sanat; Yhdistetty-näkymä on paikkaus (patch) kuten diff -u kirjoittaa.",
+                "Sivuuta isot ja pienet kirjaimet, tyhjät välit, tyhjät rivit, numerot tai välimerkit.",
+                "JSON-tiedostojen kohdalla avainten järjestys ja asettelu eivät vaikuta tulokseen; tuloksena voi olla JSON Patch (RFC 6902).",
+                "Kansiot: mitkä tiedostot ovat vain toisessa, mitkä ovat samoja ja mitkä eroavat; Vertaa-painike rivillä avaa parin tekstinä."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdown-esikatselu",
+          "body": [
+            "Näyttää Markdownin sellaisena kuin se tulee näyttämään ja antaa sen HTML-koodin kopioitavaksi tai tallennettavaksi: CommonMark taulukoilla, yliviivauksilla, tehtäväluetteloilla ja alaviitteillä.",
+            {
+              "points": [
+                "Markdowniin kirjoitettu HTML näytetään tekstinä, eikä sitä suoriteta.",
+                "Verkosta haettavaa kuvaa ei haeta: sen sijaan näytetään kuvan kuvaus ja osoite. Tekstissä mukana oleva kuva (data:) näytetään.",
+                "Klikkaamasi linkki avautuu järjestelmän selaimessa."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Generoi",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Luo UUID-tunnuksia versioista 1, 3, 4, 5, 6 ja 7 (RFC 9562), haluamasi määrän, kirjoitettuna viivoilla, pelkkänä tekstinä, URN-muodossa tai aaltosulkeissa. \"Pura\" kertoo kunkin UUID:n version sekä sen sisältämän ajan tai nimen."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Tiiviste",
+          "body": [
+            "Tekstin tai tiedoston CRC-32, MD5, SHA-1, SHA-256, SHA-384 ja SHA-512, useita kerrallaan, kirjoitettuna heksadesimaalina tai Base64-muodossa. Minkä kokoinen tiedosto tahansa tiivistetään sen lukemisen aikana.",
+            {
+              "points": [
+                "Tarkista vasten: liitä tarkistussumma tai .sha256-tiedoston rivi; ohjelma kertoo, täsmääkö se vai ei.",
+                "HMAC-avain: tiivisteistä tulee HMAC-tiivisteitä kyseisellä avaimella.",
+                "Jokainen rivi erikseen: yksi tiiviste tekstin jokaiselle riville.",
+                "Tiedostot: tiivisteet luetellaan tiedostojen viereen; Kopioi kaikki antaa ne samassa muodossa kuin sha256sum kirjoittaisi ne."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Salasanat ja salaisuudet",
+          "body": [
+            "Luo valitsemistasi merkistöistä koostuvia salasanoja, sanoista koostuvia salalauseita sekä satunnaisia tavuja heksadesimaalina tai Base64-muodossa käyttöjärjestelmän satunnaisluukujen avulla. Jokaisen kohdalla ilmoitetaan sen entropian määrä bitteinä. Kun jotain on luotu, asetuksen muuttaminen luo sen uudelleen.",
+            "Salalause koostuu sanoista, jotka on poimittu Electronic Frontier Foundationin pitkästä sanalistasta (7776 englanninkielistä sanaa), ja jokainen sana on yhtä todennäköinen kuin muutkin: kuusi sanaa vastaa noin 77 bittiä."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Avaimet ja sertifikaatit",
+          "body": [
+            "Viisi asiaa, jotka valitaan yläreunasta:",
+            {
+              "points": [
+                "Uusi avain: RSA, EC P-256 / P-384 / P-521 tai Ed25519, kaikissa ohjelmien käyttämissä muodoissa (PKCS #8, vanha muoto, OpenSSH; julkinen avain PEM-muodossa ja authorized_keys-rivinä), salasanalla suojattuna, jos sellainen annetaan.",
+                "Sertifikaattipyyntö: CSR uudelle avaimelle tai liitetylle avaimelle, sisältäen kohteen (subject) ja muut nimet (SAN).",
+                "Itseallekirjoitettu sertifikaatti: sama kuin edellä, mutta omalla avaimella allekirjoitettu tietyn määrän päivien ajan; valinta \"Voi allekirjoittaa muita sertifikaatteja\" tekee siitä oman sertifikaattiviranomaisesi.",
+                "Allekirjoitus omalla CA:lla: liitä pyyntö, viranomaissertifikaatti ja sen avain; saat allekirjoitetun sertifikaatin ja sen jälkeisen ketjun.",
+                "Lue ja Convert: liitä tai avaa mitä tahansa (PEM, DER, OpenSSH-avain, .pfx- tai .p12-tiedosto, suojattu tai suojaamaton). Ohjelma kertoo, mitä se löysi ja onko avain sertifikaatin avain, sekä kirjoittaa kukin tiedon muihin muotoihin. Avain ja sen sertifikaatti voidaan tallentaa yhdessä .pfx-tiedostona."
+              ]
+            },
+            {
+              "note": "Kaikki tapahtuu tällä tietokoneella. Avain pysyy välilehdellä, kunnes painat Hävitä, eikä missään muualla, ellet tallenna sitä."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tarkista",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Regex-testaus",
+          "body": [
+            "Kokeilee JavaScriptin säännöllistä lauseketta tekstiin: osumat ryhmiensä ja sijaintiensä kanssa tai teksti, jossa osumat on korvattu. Liput ovat g, i, m, s, u, y.",
+            "Kuvio suoritetaan erillään ikkunasta, ja yli 20 sekuntia kestävä suoritus keskeytetään."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron-selitys",
+          "body": [
+            "Kertoo sanallisesti, mitä aikataulu tarkoittaa ja milloin se suoritetaan: crontab (viisi kenttää, kuusi sekuntien kanssa, seitsemän vuoden kanssa), Quartz, AWS EventBridge cron() ja rate() sekä systemd OnCalendar. Yksi aikataulu per rivi.",
+            {
+              "points": [
+                "Seuraavat suoritukset ja pyydettäessä edelliset valitsemassasi aikavyöhykkeessä.",
+                "Viikonpäivät numeroidaan valintasi mukaan alkaen 0 sunnuntaista tai alkaen 1, kuten Quartz ne numeroi. Rivi, jossa on sekunnit ja lisäksi vuosi, L, W tai #, on Quartz-rivi, ja se luetaan itsestään Quartzin tapaan.",
+                "Sama aikataulu muissa muodoissa kopiointia tai syötteeseen lisäämistä varten.",
+                "Rakentaja luo aikataulun valitsemalla kunkin kentän; \"Muuta rakentajassa\" siirtää kirjoitetun aikataulun rakentajaan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unix-aikaleima",
+          "body": [
+            "Lukee ajanhetkiä yhdellä rivillä: sekunteja, millisekunteja, mikrosekunteja tai nanosekunteja vuodesta 1970 alkaen, tai tavallisella tavalla kirjoitetun päivämäärän (ISO 8601, kuten sähköposti ja HTTP sen kirjoittavat, kuten Git sen kirjoittaa). Jokainen näytetään valitsemassasi aikavyöhykkeessä, UTC-ajassa ja kaikenlaisena aikaleimana."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL-analyysi",
+          "body": [
+            "Purkaa URL-osoitteen samalla tavalla kuin selaimet: skeema, käyttäjä, isäntä (Unicode-muodossa, jos se on kirjoitettu punycodena), portti, polku, jokainen purettu kyselyparametri ja fragmentti."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Sertifikaatin purkuohjelma",
+          "body": [
+            "Lukee X.509-sertifikaatit PEM- tai DER-muodossa ja kertoo kaiken niiden sisällöstä: kohteen, myöntäjän, voimassaolon, kohteet, avaimen, laajennukset ja sormenjäljet.",
+            "Se lukee; se ei arvioi, onko sertifikaatti luotettava. Sivuston näyttämän sertifikaatin ja tämän tietokoneen luottamuksen tarkistamiseen käytä valikkoa Verkko → Sivuston sertifikaatti."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Hex-katseluohjelma",
+          "body": [
+            "Näyttää minkä kokoisen tiedoston tai liitetyn tekstin tavut: jokaisen rivin sijainnin, tavut ja samat tavut merkkeinä.",
+            {
+              "points": [
+                "Siirry sijaintiin, joka on kirjoitettu muodossa 0x1F4, 1F4h tai 500.",
+                "Etsi tavuja (DE AD BE EF) tai tekstiä (UTF-8 tai UTF-16 kumpaan suuntaan tahansa), eteen- ja taaksepäin.",
+                "Klikkaa tavua: sivupaneeli näyttää sisällön kaikenkokoisina numeroina, kummassakin tavujärjestyksessä, merkkinä ja aikana.",
+                "Valitse raahaamalla, Shift-näppäimellä tai nuolinäppäimillä; kopioi valinta hex-muodossa, koodina, Base64-muodossa tai tekstinä, tai tallenna se tiedostoon."
+              ]
+            },
+            {
+              "note": "Se vain tarkastelee: tiedostoon ei tehdä muutoksia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Verkko",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Verkkotyökalujen toiminta",
+          "body": [
+            "Nämä neljä työkalua ovat Dev-osion ainoat osat, jotka toimivat verkossa, ja ne yhdistävät sinne, mihin ohjaat ne.",
+            {
+              "points": [
+                "Vain kirjoittamasi osoite otetaan yhteyteen, ja vain kun painat painiketta. Ei koskaan taustalla.",
+                "Lähetetty sisältö on se, mitä kirjoitit. Pyyntöön lisätään ainoastaan User-Agent, joka on kaikille sama (\"Syntelab Creative\"), ellet anna omaasi.",
+                "Evästeitä ei tallenneta, sinusta tai tietokoneesta ei lähetetä tietoja, eikä kirjoitettua tekstiä säilytetä."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP-asiakas",
+          "body": [
+            "Lähettää yhden käsin kirjoitetun pyynnön: menetelmä, osoite, otsikot (yksi per rivi: Nimi: arvo) ja runko, joka on kirjoitettu tai otettu tiedostosta koosta riippumatta.",
+            {
+              "points": [
+                "Vastaus: sen numero, kesto (kokonaisuutena ja ensimmäiseen tavuun asti), koko, otsikot ja runko, joka on värikoodattu tyypin mukaan ja muotoiltu, jos se on JSON-muodossa. Runko, joka ei ole tekstiä (kuva, PDF), näytetään sellaisenaan ja tallennetaan sellaisena kuin se saapui.",
+                "Seuraa uudelleenohjauksia tai näytä ensimmäinen vastaus sellaisenaan. Luettelossa näkyvät osoitteet, joihin pyyntö on lähetetty.",
+                "Tarkista sertifikaatti tämän tietokoneen luotettujen sertifikaattien perusteella; poista tarkistus käytöstä vain omien palvelimien kohdalla.",
+                "\"Lähetä, vastaus tiedostoon\" kirjoittaa minkä kokoisen rungon tahansa suoraan levylle, edistymispalkilla ja Pysäytä-painikkeella.",
+                "\"Kopioi curl-komentona\" antaa saman pyynnön komentona."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS-haku",
+          "body": [
+            "Kysyy nimipalvelimelta nimen tietueita: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, useita kerrallaan. Osoite palauttaa sen nimen (PTR).",
+            "Kysely lähetetään tietokoneen asetettuun nimipalvelimeen, julkiseen palvelimeen (1.1.1.1, 8.8.8.8, 9.9.9.9), HTTPS-resolveriin (Cloudflare, Google) tai itse kirjoittamaasi palvelimeen."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Porttitarkistus",
+          "body": [
+            "Kertoo, hyväksyvätkö isännän portit TCP-yhteydet: yhden, useita tai alueen aina 65 535 asti (22, 80, 443, 8000-8100). Jokainen on joko avoin, suljettu tai vastaamaton annetun ajan kuluessa.",
+            {
+              "note": "Kokeile vain omia isäntäkoneita tai sellaisia, joita saat testata."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Sivuston sertifikaatti",
+          "body": [
+            "Näyttää sertifikaatit, jotka sivusto antaa suojatun yhteyden muodostettaessa: kenelle ne on tarkoitettu, kuka ne on allekirjoittanut, kuinka monta päivää on jäljellä, luottaako tämä tietokone niihin ja miksi ei, TLS-version ja salausalgoritmin. Vain kättely suoritetaan: pyyntöä ei lähetetä.",
+            {
+              "points": [
+                "Kirjoita example.com, example.com:8443 tai verkko-osoite.",
+                "Sähköpostipalvelimet ja FTP alkavat salaamattomina ja niitä pyydetään siirtymään TLS-tilaan (STARTTLS): valitaan portin (25, 587, 143, 110, 21) tai käsin.",
+                "\"Kaikki\" näyttää kaiken, mitä sertifikaatit sisältävät; \"PEM\" antaa ne kopioitavaksi tai tallennettavaksi."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Asetukset",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Dev-asetukset",
+          "body": [
+            "Tiedosto → Asetukset avaa ohjelman Dev-osion asetukset.",
+            {
+              "points": [
+                "Avaa jokainen työkalu omaan välilehteensä tai valittuun välilehteen.",
+                "Avaa uusi välilehti viimeksi käytettyyn työkaluun tai ensimmäiselle sivulle.",
+                "Palauta kaikkien työkalujen asetukset ja kiinnitykset oletusarvoihin."
+              ]
+            },
+            "Resurssienhallinnan hiiren kakkospainikkeen valikko, kieli, teema ja näppäimet löytyvät ohjelman yleisistä asetuksista."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tietoa Devistä",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tietoa Devistä",
+          "body": [
+            "Dev on Syntelab Creativen sovellus kehittäjille: työkaluja koodaamiseen ja dekoodaamiseen, muotoiluun ja tarkistamiseen, datan muuntamiseen muodosta toiseen sekä vaikealukuisten tietojen purkamiseen.",
+            "Kaikki tapahtuu tällä tietokoneella. Mitään kirjoittamaasi, liittämääsi tai työkalussa avaamaasi ei tallenneta tai lähetetä minnekään. Tiedostojen koolle tai määrälle ei ole asetettu rajoituksia: rajoittavat tekijät ovat tietokoneen muisti ja levy.",
+            "Ohjelma on uusi ja sitä kehitetään edelleen. Jos se ei vastaa työn tarpeitasi, kerro meille kohdasta Ohje → Palaute."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Devin teknologia",
+          "body": [
+            {
+              "points": [
+                "Editorit: CodeMirror, https://codemirror.net . MIT-lisenssi. Copyright (C) 2018-2021 Marijn Haverbeke ja muut.",
+                "JSON-tiedostojen lukeminen ja värikoodaus editoreissa: @codemirror/lang-json, https://github.com/codemirror/lang-json , @codemirror/language- ja @lezer/highlight-kirjastoilla. MIT-lisenssi. Copyright (C) 2018-2021 Marijn Haverbeke ja muut.",
+                "YAML-, XML-, HTML- ja SQL-tiedostojen lukeminen ja värikoodaus editoreissa: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (@codemirror/lang-css- ja @codemirror/lang-javascript-kirjastojen kanssa); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . MIT-lisenssi. Copyright (C) 2018-2024 Marijn Haverbeke ja muut.",
+                "Asiakirjan tarkistaminen JSON-skeemaa vasten: jsonschema, https://github.com/Stranger6667/jsonschema . MIT-lisenssi. Copyright (c) 2020-2026 Dmitry Dygalo. Se on rakennettu ilman verkkooltaan: Dev ei koskaan hae skeemaa.",
+                "JSONPath-kuviot (match ja search): regex, https://github.com/rust-lang/regex . MIT- tai Apache-2.0-lisenssi. Copyright (c) 2014 The Rust Project Developers.",
+                "YAML-tiedostojen luku: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . MIT- tai Apache-2.0-lisenssi. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. YAML-tiedostojen kirjoittamisen hoitaa Dev itse.",
+                "Kahden tekstin vertailu (Diff): similar, https://github.com/mitsuhiko/similar . Apache-2.0-lisenssi. Tekijät: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . MIT- tai Apache-2.0-lisenssi. Copyright (c) 2014-2026 Alex Crichton.",
+                "Tiiviste-työkalun ja tunnisteen allekirjoituksen tiivisteet: sha2, sha1 ja md-5, https://github.com/RustCrypto/hashes . MIT- tai Apache-2.0-lisenssi. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation ja RustCrypto-kehittäjät.",
+                "Päivämäärät, kellonajat ja aikavyöhykkeet (Unix-aikaleima, Cron-selitys): jiff, https://github.com/BurntSushi/jiff , IANA-tietokannan aikavyöhykkeillä. Unlicense- tai MIT-lisenssi. Copyright (c) 2015 Andrew Gallant.",
+                "URL-osoitteen purkaminen: url ja idna, https://github.com/servo/rust-url . MIT- tai Apache-2.0-lisenssi. Copyright (c) 2013-2025 The rust-url developers.",
+                "X.509-sertifikaattien luku: x509-parser, https://github.com/rusticata/x509-parser . MIT- tai Apache-2.0-lisenssi. Copyright (c) 2017 Pierre Chifflier.",
+                "Regex-testausohjelma suorittaa JavaScriptin säännölliset lausekkeet WebView-moottorilla, jota ohjelma käyttää (Microsoft Edge WebView2 Windowsissa); siihen ei ole lisätty erillistä kirjastoa.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . MIT- tai Apache-2.0-lisenssi. Copyright (c) 2018 Sam Rijs, Alex Crichton ja avustajat.",
+                "UUID:t: uuid, https://github.com/uuid-rs/uuid . Apache-2.0- tai MIT-lisenssi. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Käyttöjärjestelmästä haetut satunnaistavut salasanoille, salaisuuksille ja UUID:ille: getrandom, https://github.com/rust-random/getrandom . MIT- tai Apache-2.0-lisenssi. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "RSA-avaimet ja allekirjoitukset: rsa, https://github.com/RustCrypto/RSA , num-bigint-dig:n kanssa, https://github.com/dignifiedquire/num-bigint . MIT- tai Apache-2.0-lisenssi. Copyright (c) RustCrypto Developers ja dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "NIST-käyrien (P-256, P-384, P-521) avaimet ja allekirjoitukset: p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , sekä niiden tarvitsemat ecdsa, elliptic-curve ja crypto-bigint. Apache-2.0- tai MIT-lisenssi. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Ed25519-avaimet ja allekirjoitukset: ed25519-dalek ja curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . BSD 3-Clause-lisenssi. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft ja Henry de Valence. Kaikki oikeudet pidätetään.",
+                "Muodot, joissa avaimet, pyynnöt ja sertifikaatit on kirjoitettu (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER ja PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Apache-2.0- tai MIT-lisenssi. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "OpenSSH-avaintiedostot: ssh-key, https://github.com/RustCrypto/SSH , bcrypt-pbkdf-, aes-, ctr-, chacha20- sekä muiden RustCrypto-salausten ja tiivisteiden avulla, joita avaimen lukitseminen vaatii ( https://github.com/RustCrypto ). Apache-2.0- tai MIT-lisenssi. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "PKCS #12 -tiedostot (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , RustCrypton pkcs12-, cms-, des-, rc2-, cbc-, hmac-, pbkdf2- ja scrypt-kirjastojen avulla. MIT- tai Apache-2.0-lisenssi. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Käyttöjärjestelmästä haetut satunnaisluvut, joista avaimet muodostetaan: rand_core, https://github.com/rust-random/rand . MIT- tai Apache-2.0-lisenssi. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "HTTP-asiakas: ureq, https://github.com/algesten/ureq . MIT- tai Apache-2.0-lisenssi. Copyright (c) 2019 Martin Algesten.",
+                "HTTP-asiakkaan ja \"Sivuston sertifikaatin\" suojatut yhteydet (TLS): rustls, https://github.com/rustls/rustls , Apache-2.0-, ISC- tai MIT-lisenssi, Copyright (c) 2016 Joseph Birr-Pixton; rustls-webpki, https://github.com/rustls/webpki , ISC-lisenssi, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , Apache-2.0- ja ISC-lisenssit; webpki-roots, https://github.com/rustls/webpki-roots , CDLA-Permissive-2.0-lisenssi.",
+                "Sertifikaatin luottamus tämän tietokoneen osalta: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . MIT- tai Apache-2.0-lisenssi. Copyright (c) 2022 1Password.",
+                "Markdown-lukeminen: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . MIT-lisenssi. Copyright 2015 Google Inc. All rights reserved.",
+                "Muiden kuin UTF-8-koodausten tiedostojen lukeminen: encoding_rs, https://github.com/hsivonen/encoding_rs , Apache-2.0- tai MIT-lisenssi (datan osalta BSD-3-Clause), Copyright Mozilla Foundation; sekä chardetng, https://github.com/hsivonen/chardetng , Apache-2.0- tai MIT-lisenssi, Copyright Mozilla Foundation.",
+                "Passauheiden sanat: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , Electronic Frontier Foundationin tuottama, käytetty Creative Commons Attribution 3.0 United States -lisenssillä ( https://creativecommons.org/licenses/by/3.0/us/ ). Listaa käytetään sellaisenaan.",
+                "OpenSSL:n vanhalla tavalla lukittujen avainten avaaminen: RustCrypton aes, cbc ja des, https://github.com/RustCrypto . MIT- tai Apache-2.0-lisenssi. Copyright (c) RustCrypto Developers.",
+                "Dev-versiolle kirjoitettu ilman kirjastoa: DNS-haku (kysymykset kirjoitettu ja vastaukset luettu RFC 1035:n mukaisesti) ja porttitarkistus.",
+                "Dev-versiolle kirjoitettu ilman kirjastoa: JSON:n lukeminen ja kirjoittaminen virtana, JSONPath (RFC 9535), Base64, prosenttikoodaus, HTML-merkkiaineet (nimet ovat HTML-standardin mukaisia, https://html.spec.whatwg.org ), merkkijonojen pako-merkit, JSON Web Tokenien lukeminen, YAML:n kirjoittaminen, CSV:n lukeminen ja kirjoittaminen, cron-aikataulujen lukeminen, XML- ja HTML-muotoilija sekä SQL-muotoilija."
+              ]
+            },
+            "Se, mitä se jakaa muun ohjelman kanssa, löytyy kohdasta \"Tietoja Syntelab Creativesta\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Mitä Dev ei vielä osaa",
+          "body": [
+            {
+              "points": [
+                "Tokenin allekirjoitus tarkistetaan vain, jos se on luotu jaetulla salaisuudella (HS256, HS384, HS512).",
+                "JSON Schema -validoija ilmoittaa englanniksi, mikä ei sovi, kuten sen kirjasto tekee, eikä se seuraa $ref-viittausta toiseen tiedostoon tai osoitteeseen.",
+                "SQL-muotoilija ei kysy murretta eikä tarkista lauseen merkitystä: se ilmoittaa vain merkkijonosta tai kommentista, joka ei pääty.",
+                "YAML sekä JSON, josta tulee YAML tai CSV, pidetään kokonaisuudessaan muistissa muunnoksen ajan; CSV, josta tulee JSON, XML, HTML tai SQL, käsitellään lukuprosessin aikana koosta riippumatta.",
+                "CSV-taulukko, jota tarkastellaan, on vain luku -tilassa: siihen ei kirjoiteta mitään eikä siitä kopioida vielä mitään.",
+                "Diff säilyttää kuusitoista tavua kummankin tiedoston jokaiselta riviltä, ei tiedostoja itsessään; kaksi JSON-asiakirjaa pidetään kokonaisuudessaan, koska ne kirjoitetaan uudelleen ennen vertailua.",
+                "Rivijono, jossa mikään rivi ei esiinny täsmälleen kerran kummallakin puolella, vertaillaan niin hyvin kuin sekunnissa ehditään: ilmoitetut erot ovat oikeita, vaikka niitä ei aina olisi vähimmäismäärä.",
+                "Diff ei vertaile rivinvaihtomerkkejä (CRLF tai LF).",
+                "Kaksi kansiota vertaillaan niiden tiedostojen tavujen perusteella; tiedostot yhdistetään niiden nimien perusteella kirjain kirjaimelta.",
+                "Tarkista-työkalujen ilmoitukset ovat JSON-muodossa ja niiden nimet ovat englanniksi.",
+                "Regex-testeri käyttää JavaScriptin säännöllisiä lausekkeita, ei PCRE:tä eikä Rustin lausekkeita; se toimii näytettävässä tekstissä, ei levyllä olevassa tiedostossa; kuvio, jonka suoritus kestää yli 20 sekuntia, keskeytetään.",
+                "Sertifikaatin purkuohjelma lukee sertifikaatin, mutta ei tarkista, onko se luotettava: ei sen ketjua, ei allekirjoitusta eikä sitä, onko se peruttu.",
+                "Tiedosto, joka on muussa merkistössä kuin UTF-8, luetaan, jos se on riittävän pieni näytettäväksi; suurempi tiedosto, jota käsitellään levyltä, on oltava UTF-8-muodossa.",
+                "Työkaluun raahattu tiedosto hyväksytään 16 MB asti; ikkuna ei tiedä raahatun tiedoston sijaintia levyllä, joten suurempi tiedosto avataan Avaa tiedosto -toiminnolla.",
+                "Salasanat koostuvat vain englanninkielisistä sanoista.",
+                "Cron-selitys: rakentaja tekee crontab-aikatauluja (viisi kenttää, tai kuusi sekuntien kanssa); aikatauluja, joissa on L, W, # tai ?, ei voida käyttää. AWS rate()-ajatuksia ei voida kertoa, koska ne lasketaan siitä hetkestä, kun sääntö on luotu. Systemd:stä luetaan yleiset kalenteritapahtumat; ei sekunnin murto-osia tai listauksia päivistä, jotka on laskettu kuukauden lopusta.",
+                "Hex-katselu on vain tarkastelua varten: tiedostoon ei tehdä muutoksia. Tekstisarake näyttää ASCII- tai Länsi-Euroopan aakkoset, ei muita aakkostoja; haettavana on tavuja tai tekstiä, ei kuvioita.",
+                "Avaimet ja sertifikaatit: avaimet ovat RSA, käyrät P-256, P-384 ja P-521 sekä Ed25519; muita (DSA, secp256k1, X25519) ei lueta. OpenSSL:n vanhalla tavalla lukittu avain avataan, kun sen salaus on AES tai 3DES. .pfx-tiedosto sisältää yhden avaimen ja siihen liittyvät sertifikaatit. Erittäin suuren RSA-avaimen luominen vie aikaa, eikä sitä voi keskeyttää puolivälissä. RSA-avaimia luova kirjasto sisältää tunnetun heikkouden hyökkääjälle, joka pystyy ajoittamaan useita allekirjoituksia verkon yli (RUSTSEC-2023-0071): tässä avaimet luodaan ja kirjoitetaan tietokoneellesi, eikä mitään allekirjoiteta kenenkään muun puolesta.",
+                "HTTP-asiakas: HTTP/1.1 (ei HTTP/2 tai 3); pyyntöjen välillä ei säilytetä evästeitä; moniosaisia lomakkeita (multipart) ei rakenneta puolestasi; yli 16 MB kokoinen vastaus tai ei-tekstimuotoinen vastaus kirjoitetaan tiedostoon lähettämällä pyyntö uudelleen.",
+                "DNS-haku näyttää allekirjoitukset (DNSSEC), mutta ei tarkista niitä. Porttitarkistus kokeilee vain TCP:tä: hiljaista UDP-porttia ei voida erottaa suljetusta portista. Sivuston sertifikaatti ei tarkista, onko sertifikaatti peruttu.",
+                "Hiiren kakkospainikkeen valikko on tarkoitettu Resurssienhallinnalle; Windows 11:ssä sen kohdat löytyvät kohdasta \"Näytä lisää vaihtoehtoja\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

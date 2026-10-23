@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Otvaranje i čitanje",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Otvaranje dokumenta",
+          "body": [
+            "Datoteka → Otvori (Ctrl+O) otvara PDF u zasebnom tabu. \"Otvori više datoteka odjednom\" otvara svaku odabranu datoteku u svom tabu.",
+            "Otvaraju se i datoteke koje nisu PDF-ovi, kao stranice: slike (PNG, JPEG, TIFF, WebP i mnoge druge), tekstualne i web datoteke, e-knjige, XPS i kancelarijski dokumenti. Takav dokument još uvijek nije nigdje spremljen: \"Spremi\" će pitati gdje.",
+            {
+              "note": "Kancelarijske dokumente (Word, Excel, PowerPoint, OpenDocument) konvertuju Word, Excel ili PowerPoint, ili LibreOffice, zavisno od toga šta je instalirano na računaru. Bez jednog od njih, oni se ne mogu otvoriti."
+            },
+            "Datoteke prevučene na prazan tab grupišu se u zbirku; ako se prevuku na dokument, njihove stranice se dodaju u njega.",
+            "Na Windowsu PDF Organizer može biti aplikacija koja otvara PDF datoteke kada dvaput kliknete na njih: na njegovoj početnoj stranici \"Postavi kao zadano\" otvara postavke Windowsa, gdje birate Syntelab Creative za PDF datoteke."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Pregled stranica",
+          "body": [
+            "Meni Pregled određuje kako se dokument prikazuje; ništa u njemu ne mijenja samu datoteku.",
+            {
+              "points": [
+                "Zumiranje: uvećaj, smanji, stvarna veličina, prilagodi stranici, prilagodi širini, prilagodi visini. Ctrl i točkić miša također zumiraju.",
+                "Prikaz stranica: jedna stranica ili dvije jedna pored druge, sa ili bez naslovne stranice, te pomjeranje kroz sve stranice kao jedna duga traka.",
+                "Vodiči: lenjiri i mreža, u jedinici odabranoj u Postavkama.",
+                "\"Prikaži sličice\": male stranice sa strane. Kliknite na jednu kako biste prešli na nju; oznake (bookmarks) dokumenta nalaze se u istom panelu.",
+                "\"Režim čitanja\" skriva alate; \"Puni ekran\" skriva sve osim stranice. Escape napušta oba režima."
+              ]
+            },
+            "Traka iznad stranica (brza traka s alatima) sadrži broj stranice, zum i dugmad koja ste odabrali u Postavkama."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Pronalaženje teksta",
+          "body": [
+            "Uredi → Pronađi u dokumentu (Ctrl+F): upišite riječ ili frazu; mjesta gdje je pronađena bit će označena na stranicama, a strelice vode s jednog na drugo.",
+            {
+              "note": "Skenirani dokument su slike stranica i nema teksta za pronalaženje dok se tekst ne prepozna: pogledajte \"Prepoznavanje teksta (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Svojstva dokumenta",
+          "body": [
+            "Datoteka → Svojstva dokumenta prikazuje ono što dokument govori o sebi: naslov, autora, datume kreiranja i izmjene, broj stranica, veličinu datoteke."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spremanje, štampanje i slanje",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Spremi i Spremi kao",
+          "body": [
+            "Ništa od onoga što radite ne mijenja datoteku na disku dok je ne spremite. Do tada, svaki korak se može poništiti (Ctrl+Z) ili ponoviti (Ctrl+Y).",
+            {
+              "points": [
+                "Spremi (Ctrl+S) zapisuje dokument preko njegove datoteke.",
+                "Spremi kao (Ctrl+Shift+S) zapisuje ga u novu datoteku, koja zatim zauzima mjesto kartice; stara datoteka ostaje kakva je bila."
+              ]
+            },
+            "Ako je drugi program otvorio datoteku, ona se ne može prepisati: program će to prijaviti i sačuvati vaše izmjene kako bi se spremile pod drugim imenom.",
+            {
+              "note": "Spremanje izmijenjenog dokumenta preko datoteke koja je potpisana certifikatom uklanja njene potpise. Program će prvo pitati i ponuditi opciju \"Spremi kao novu datoteku\"; ovo pitanje se može isključiti u Postavke → Potpisi."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Kreiranje PDF-a",
+          "body": [
+            "Datoteka → Kreiraj PDF pravi novi dokument:",
+            {
+              "points": [
+                "iz jedne datoteke ili iz više njih: kombinovano u jedan PDF ili jedan PDF za svaku;",
+                "sa web stranice, na adresi koju upišete (stranica se sprema pomoću pretraživača instaliranog na računaru);",
+                "iz onoga što se nalazi u međuspremniku;",
+                "od praznih stranica veličine koju odaberete."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Izvoz u drugi format",
+          "body": [
+            "Datoteka → Izvezi kao zapisuje dokument u drugom formatu: Word ili OpenDocument tekst, običan tekst, web stranica, XML, slike stranica (PNG, JPEG, TIFF, SVG) ili PostScript. Za slike birate rezoluciju.",
+            "Sam dokument ostaje PDF; izvoz je nova datoteka.",
+            {
+              "note": "Tekst se može izvesti samo tamo gdje dokument ima tekst. Prvo prepoznajte tekst skeniranog dokumenta."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Štampanje",
+          "body": [
+            "Datoteka → Štampaj (Ctrl+P) štampa dokument onako kako je trenutno organizovan, sa onim što ste na njemu nacrtali. Odaberite stranice, papir, da li listovi stoje uspravno ili horizontalno, i da li su stranice prilagođene listu ili se štampaju u stvarnoj veličini; zatim sistemski prozor za štampanje traži izbor štampača.",
+            "Papir, orijentacija i skaliranje sa kojima prozor za štampanje počinje postavljeni su u Postavke → Štampanje."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Dijeljenje",
+          "body": [
+            "Datoteka → Podijeli šalje dokument u sistemski prozor za dijeljenje: e-pošta, obližnji uređaj i druge aplikacije. Dokument se dijeli onako kako je sada, sa vašim nespremljenim izmjenama."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organizovanje stranica",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Pregled za organizovanje",
+          "body": [
+            "Organizuj → Organizuj stranice prikazuje svaku stranicu u mreži. Ništa se ne mijenja na disku dok ne spremite.",
+            {
+              "points": [
+                "Odabir: kliknite na stranicu; Ctrl+klik dodaje jednu, Shift+klik odabire niz. „Odaberi sve stranice“, „Poništi odabir“, „Odaberi neparne stranice“ i „Odaberi parne stranice“ nalaze se u meniju.",
+                "Pomjeranje: prevucite odabrane stranice na njihovo novo mjesto ili koristite „Pomjeri lijevo“ i „Pomjeri desno“.",
+                "Okretanje: „Odabrano: rotiraj lijevo“ i „Odabrano: rotiraj desno“ okreću odabrane stranice; „Sve stranice: rotiraj lijevo“ i „Sve stranice: rotiraj desno“ okreću svaku stranicu.",
+                "Brisanje: taster Delete ili „Obriši stranice“. Dokument mora imati najmanje jednu stranicu.",
+                "Kopiraj, izreži i zalijepi (Ctrl+C, Ctrl+X, Ctrl+V): stranice se mogu zalijepiti u isti dokument ili u neki drugi koji je otvoren u programu.",
+                "Veličina: klizač na vrhu čini stranice većim ili manjim; isto rade Ctrl + točkić miša iznad stranica, te Uvećaj i Smanji (Ctrl+= i Ctrl+-). Veličina se pamti."
+              ]
+            },
+            "Iste komande rade i bez mreže, na stranici koja je trenutno u prikazu."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Izdvajanje stranica i dijeljenje dokumenta",
+          "body": [
+            "Organizuj → Izvuci stranice izvlači odabrane stranice kao novi dokument u zasebnom tabu, koji još nije spremljen. Također možete postaviti da svaka stranica bude zapisana kao zaseban fajl i odabrati da li će stranice biti uklonjene iz ovog dokumenta.",
+            "Organizuj → Podijeli dokument zapisuje dokument kao nekoliko manjih fajlova; ovaj dokument ostaje onakav kakav jeste.",
+            "Imena novih dokumenata prate obrasce u Postavke → Imena novih dokumenata.",
+            {
+              "note": "Potpisi napravljeni certifikatom se ne prenose u ekstrahovane ili podijeljene dokumente: potpis je važeći samo za datoteku u kojoj je napravljen."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Umetanje i zamjena stranica",
+          "body": [
+            {
+              "points": [
+                "Organizuj → Umetni stranice dodaje stranice druge datoteke (PDF, slika, tekst, office dokument) nakon odabrane stranice ili na kraj.",
+                "Organizuj → Zamijeni stranice stavlja stranice druge datoteke na mjesto onih koje su odabrane.",
+                "Umetni → Prazna stranica dodaje praznu stranicu veličine susjedne stranice."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Obrezivanje i promjena veličine stranica",
+          "body": [
+            "Uredi → Obreži stranice odsijeca ivice stranica prema marginama koje upišete ili povučete. Ništa se ne uklanja iz datoteke: stranice samo prikazuju manje.",
+            "Uredi → Promijeni veličinu stranica stavlja stranice na drugi format papira (A4, Letter i druge). Sadržaj se može skalirati kako bi odgovarao ili zadržati svoju veličinu i postaviti na jedno od devet mjesta na novom listu.",
+            "Obje opcije pitaju koje stranice: sve, odabrane, opseg, neparne ili parne."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kombinovanje datoteka",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Zbirka",
+          "body": [
+            "Kombinuj → Nova zbirka otvara mjesto za prikupljanje datoteka i njihovo zapisivanje kao jedan PDF.",
+            {
+              "steps": [
+                "Dodajte datoteke pomoću opcije \"Dodaj datoteke\" ili ih prevucite na zbirku. PDF-ovi, slike, tekst i office dokumenti se mogu miješati.",
+                "Povucite kartice u željeni redoslijed ili koristite strelice na svakoj kartici.",
+                "Otvorite karticu da odaberete koje od njenih stranica uključiti.",
+                "\"Kombinuj datoteke\" zapisuje ih, po redu, kao jedan novi dokument u zasebnom tabu."
+              ]
+            },
+            "Same datoteke se ne mijenjaju.",
+            "Klizač na vrhu čini stranice na karticama većim ili manjim; isto rade Ctrl + točkić miša, te Uvećaj i Smanji (Ctrl+= i Ctrl+-). Veličina se pamti."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pisanje i crtanje po stranicama",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Alati",
+          "body": [
+            "Alati za crtanje otvaraju se kao panel pored stranice, kao mreža dugmadi ili kao lista sa nazivima (to određuju Postavke). Sa odabranim alatom, povucite ili kliknite na stranicu; taster Escape odlaže alat.",
+            {
+              "points": [
+                "Tekst: kliknite i kucajte. Font, veličina, boja, podebljano, kurziv i poravnanje nalaze se u panelu.",
+                "Slika: odaberite sliku, zatim povucite gdje treba stajati i kolika treba biti.",
+                "OBLICI: pravougaonik, elipsa, linija, strelica, kvačica, krst, tačka.",
+                "Isticanje: prevucite preko onoga što treba da bude istaknuto; ono što je ispod ostaje čitljivo."
+              ]
+            },
+            "Pomoću opcije \"Odaberi, pomjeri i promijeni veličinu\" oznaka se ponovo odabira: prevucite je, povucite njene uglove, okrenite je za ručicu, promijenite njene boje u panelu ili je obrišite tasterom Delete. Oznake se mogu kopirati i zalijepiti, čak i na druge stranice.",
+            "Sve nacrtano se zapisuje u datoteku prilikom čuvanja."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Promjena sopstvenog teksta i slika dokumenta",
+          "body": [
+            "Alat \"Uredi tekst i slike u dokumentu\" označava ono što sama stranica sadrži. Kliknite na liniju teksta da biste je prepisali, ili na sliku da biste je pomjerili, promijenili njenu veličinu, okrenuli ili obrisali.",
+            {
+              "note": "Ovo mijenja jednu liniju ili jednu sliku odjednom. Pasusi se ne prilagođavaju automatski kada linija postane duža, a slika koja se nalazi preko druge odabira se zajedno s njom. Za veće izmjene, uredite dokument u programu u kojem je napisan."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Cenzurisanje",
+          "body": [
+            "Više alata → Zacrni trajno uklanja ono što ne smije biti pročitano: prevucite crni okvir preko toga, na bilo kojoj stranici. Kada sačuvate, tekst i slike ispod okvira se uklanjaju iz datoteke, a ne samo prekrivaju.",
+            {
+              "note": "Sačuvajte cenzurisani dokument pod novim imenom i original čuvajte na sigurnom mjestu: ono što je cenzurisano ne može se vratiti."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Vodeni žig",
+          "body": [
+            "Uredi → Vodeni žig upisuje riječi ili postavlja sliku na stranice koje odaberete: ravno ili ukoso, na jednom od devet mjesta, veličine i blijedosti koju postavite. Na svakoj stranici to je tada oznaka kao i svaka druga i još uvijek se može pomjerati ili uklanjati."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Brojevi stranica, zaglavlje i podnožje, Bates brojevi",
+          "body": [
+            {
+              "points": [
+                "Uredi → Brojevi stranica: format (1, 1 / 12, Stranica 1 i drugi), mjesto i koje stranice dobijaju broj.",
+                "Umetni → Zaglavlje i podnožje: tekst na bilo kojem od šest mjesta. U njemu, {page} označava broj stranice, {pages} broj stranica, {date} današnji datum, a {file} naziv dokumenta.",
+                "Umetni → Bates numeracija: brojevi jedan za drugim s riječju prije ili poslije (ABC000123), kako se koristi za dokumentaciju predmeta."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Linkovi, oznake i priloženi fajlovi",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Linkovi",
+          "body": [
+            "Umetni → Link: prevucite preko mjesta na koje treba kliknuti, zatim navedite gdje vodi: na web adresu ili stranicu ovog dokumenta.",
+            "Linkovi u dokumentu rade dok ga čitate: klik na link do stranice vodi na nju; web ili e-mail adresa se šalje vašem pretraživaču ili e-mail programu."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Oznake",
+          "body": [
+            "Umetni → Nova oznaka: kliknite na mjesto na koje treba voditi i dajte mu naslov. Umetni → Oznake otvara listu gdje se oznaka može preimenovati ili ukloniti. Promjene se zapisuju prilikom spremanja."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Priloženi fajlovi",
+          "body": [
+            "Umetni → Priloži datoteku: odaberite fajl i kliknite gdje treba stajati spajač. Možete mu dati naziv i autora, obojiti spajač, promijeniti veličinu i rotirati ga. Fajl se čuva unutar PDF-a prilikom spremanja.",
+            "Umetni → Priložene datoteke izlistava šta dokument sadrži; svaki fajl se može spremiti na disk ili ukloniti. Klik na spajač otvara istu listu."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formulari",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Popunjavanje formulara",
+          "body": [
+            "Umetni → Popuni obrazac prikazuje polja dokumenta: upišite u tekstualna polja, označite okvire, birajte iz lista. Odgovori se zapisuju u fajl prilikom spremanja."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Izrada formulara",
+          "body": [
+            "Meni Insert dodaje polja u bilo koji dokument: tekstualno polje, okvir za potvrdu, radio gumbe (od kojih se može odabrati jedan), listu za odabir i polje za potpis koje ostaje prazno za potpisnika.",
+            "Prevucite na stranicu gdje polje treba stajati. Kao i druge oznake, polje se može pomjerati i mijenjati veličina sve dok ne spremite; nakon toga ono postaje dio formulara."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Potpisivanje",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Dodavanje nacrtanog potpisa",
+          "body": [
+            "Potpiši → Dodaj potpis stavlja sliku potpisa na stranicu: nacrtan ovdje olovkom koju odaberete, upisan određenim fontom ili preuzet iz slike (uz opciju \"Zadrži samo poteze olovkom\" za fotografiju potpisanog lista). Datum se može napisati ispod njega.",
+            "Povucite na stranicu gdje treba stajati. Potpisi koje ste koristili čuvaju se na ovom računaru kako biste ih mogli ponovo koristiti.",
+            {
+              "note": "Ovo je slika: ona ništa ne potvrđuje o tome ko ju je postavio. Potpis koji dokazuje ko je potpisao, i da se ništa nije promijenilo od tada, pravi se pomoću certifikata."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Potpisivanje pomoću certifikata",
+          "body": [
+            "Potpiši → Potpiši certifikatom kreira digitalni potpis: on navodi ko je potpisao i zapečaćuje dokument, tako da se svaka kasnija izmjena vidi.",
+            {
+              "steps": [
+                "Povucite na stranicu oblast gdje će se prikazati potpis (prozor će vas prvo to zatražiti; to se može isključiti). Da biste potpisali bez prikazivanja bilo čega na stranicama, umjesto toga odaberite \"Potpiši bez prikazivanja na stranici\".",
+                "Odaberite certifikat: jedan od onih na računaru (kartica ili token će se pojaviti među njima kada je u čitaču), ili .pfx / .p12 datoteku sa njenom lozinkom. \"Nastavi\".",
+                "Odaberite izgled potpisa. Pod stavkom \"Razlog i mjesto\" možete napisati zašto i gdje potpisujete: ti podaci ulaze u potpis, i na stranicu ako izgled to predviđa. Označite \"Zaključaj dokument nakon potpisivanja\" ako niko ne smije potpisati ili promijeniti dokument nakon vas. Ostavite označeno \"Dodaj pouzdano vrijeme (vremenski pečat)\" kako bi služba potvrdila kada ste potpisali.",
+                "\"Potpiši\", zatim odaberite gdje će potpisana datoteka biti sačuvana. Token će u ovom trenutku tražiti svoj PIN."
+              ]
+            },
+            "Potpisana datoteka otvara se na mjestu dokumenta. Lozinka ili PIN se nikada ne čuvaju u programu.",
+            {
+              "note": "Kvalifikovani potpis je onaj napravljen na ovaj način pomoću kvalifikovanog certifikata, na njegovoj kartici ili tokenu. Potpisivanje se vrši na vašem računaru; na internet idu samo vremenski pečat i provjera vašeg certifikata, i šalju se heševi i serijski broj certifikata, nikada dokument."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Izgledi potpisa",
+          "body": [
+            "Izgled određuje kako potpis certifikata izgleda na stranici. Sačuvajte nekoliko pod sopstvenim nazivima: jedan za potpisivanje u ime kompanije, jedan za potpisivanje u svoje ime.",
+            {
+              "points": [
+                "Slika: bez slike, iz datoteke (pečat, skeniran potpis) ili nacrtana ovdje.",
+                "Prikazani tekst: ime, datum, razlog, mjesto, svaki sa ili bez svoje oznake.",
+                "Vaši sopstveni redovi ispod imena, kao što su funkcija i kompanija.",
+                "\"Standardni tekst\" je uvijek prisutan: ko je potpisao i kada."
+              ]
+            },
+            "U prozoru za potpisivanje: \"Novo…\", \"Uredi…\", \"Obriši\". Posljednji korišten se nudi prvi. Podešavanja izgleda čuvaju se na ovom računaru."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Više potpisa i zaključavanje",
+          "body": [
+            "Dokument mogu potpisati više osoba, jedna za drugom. Otvorite potpisani fajl i potpišite ga bez ikakvih izmjena: vaš potpis će biti dodan na kraj fajla, a prethodni će ostati važeći.",
+            "\"Zaključaj dokument nakon potpisivanja\" (isključeno osim ako ga ne označite) zatvara dokument: niko nakon vas više ne može potpisati i ništa više se ne može promijeniti. Ova radnja se ne može poništiti.",
+            {
+              "note": "Ako promijenite potpisani dokument prije ponovnog potpisivanja, on mora biti ponovo zapisan, a prethodni potpisi će biti izbačeni. Prozor za potpisivanje će vas upozoriti: da biste ih sačuvali, ponovo otvorite fajl i potpišite ga bez ikakvih izmjena."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Vremenski pečati",
+          "body": [
+            "Vremenski pečat je potpisana potvrda službe za vremenski pečat o tome kada je nešto postojalo. Inače vrijeme u potpisu dolazi sa sata računara potpisnika, koji svako može podesiti; vremenski pečat dokazuje trenutak i čini potpis dokazivim i nakon isteka certifikata (PAdES B-T).",
+            {
+              "points": [
+                "Potpisi ga dobijaju kada je u prozoru za potpisivanje označeno \"Dodaj pouzdano vrijeme (vremenski pečat)\". U Postavke → Potpisi se određuje da li je to unaprijed označeno, ovdje i u grupnoj obradi.",
+                "Potpiši → Dodaj vremenski pečat daje cijelom dokumentu vlastiti vremenski pečat, bez certifikata: on dokazuje da je dokument postojao tačno ovakav kakav je u tom trenutku. Sprema se kao nova datoteka; potpisi koje datoteka ima ostaju važeći."
+              ]
+            },
+            "Služba je DigiCert (http://timestamp.digicert.com), besplatna i pouzdana za Adobe Reader i Windows; druga se može podesiti u Postavke → Potpisi. Ona dobija samo heš (SHA-256), nikada dokument, i potrebna je internet veza. Kada potpis dobije vremenski pečat, kod izdavaoca vašeg certifikata se također provjerava da li je certifikat još važeći, a njegov odgovor se čuva u potpisu (dugoročna validacija): Adobe Reader tada može prikazati potpis kao važeći, sada i nakon što certifikat istekne.",
+            {
+              "note": "Ako služba nije dostupna, ništa se ne potpisuje niti zapisuje: pokušajte ponovo ili uklonite oznaku s vremenskog pečata da biste potpisali bez njega."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Provjera potpisa",
+          "body": [
+            "Potpiši → Provjeri potpise izlistava svaki potpis certifikatom u fajlu: ko je potpisao, ko je izdao certifikat, kada, razlog i mjesto, kao i",
+            {
+              "points": [
+                "da li je dokument ostao nepromijenjen od tog potpisa (dodavanje drugog potpisa nakon toga se ne smatra promjenom);",
+                "da li potpis zaključava dokument;",
+                "da li ovaj računar vjeruje tijelu koje stoji iza certifikata i da li je certifikat danas važeći;",
+                "vrijeme potvrđeno njegovim vremenskim pečatom, i koja služba ga je potvrdila, ako ga ima. Vremenski pečat cijelog dokumenta je također naveden, sa vlastitom provjerom."
+              ]
+            },
+            "Provjera se vrši nad fajlom onako kako je posljednji put sačuvan i obavlja se na ovom računaru, bez pristupa internetu. Klik na potpis na stranici otvara ovu listu na tom potpisu. Ispod svakog potpisa, „Prikaži certifikat“ otvara Windows prozor certifikata (njegov lanac i sve detalje; odatle „Instaliraj certifikat“ čini da ovaj računar vjeruje certifikatu koji poznajete), a „Provjeri“ putem interneta pita izdavača certifikata, samo kada ga pritisnete, da li je certifikat povučen."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Više alata",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Prepoznavanje teksta (OCR)",
+          "body": [
+            "Više alata → Prepoznaj tekst (OCR) čita riječi sa skeniranih stranica i upisuje ih u nevidljive slojeve stranica, tako da se dokument može pretraživati, a njegov tekst kopirati i izvoziti. Izgled stranica se ne mijenja.",
+            "Označite samo jezike na kojima su stranice napisane; stranice koje već imaju tekst ostaju takve kakve jesu.",
+            {
+              "note": "Čitanje vrši program Tesseract, besplatni program koji se instalira zasebno. Bez njega, prozor prikazuje komandu za njegovu instalaciju na Windows-u."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Smanjenje veličine dokumenta",
+          "body": [
+            "Više alata → Kompresuj čuva dokument kao manju datoteku tako što fotografijama i skenovima dodjeljuje manje piksela. Postoje tri intenziteta; tekst i crteži ostaju jednako oštri. Dokument s malo slika malo će dobititi."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Uspoređivanje dva dokumenta",
+          "body": [
+            "Više alata → Uporedi dokumente: odaberite drugi PDF. Oba se prikazuju jedno pored drugog, stranica po stranica, pri čemu su označene stranice čiji se tekst razlikuje, a navedene su linije koje postoje samo u jednom od dokumenata."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Grupna obrada: više datoteka odjednom",
+          "body": [
+            "Više alata → Grupna obrada vrši iste radnje nad više datoteka, u zasebnom tabu. Svaki rezultat je nova datoteka. Ako bi rezultati zauzeli mjesto datoteka koje se već nalaze u folderu (vaših vlastitih datoteka, kada idu u svoj folder bez ičega dodanog njihovim nazivima), prvo ćete biti upitani želite li ih zamijeniti, preskočiti ili otkazati. Datoteka se zamjenjuje tek kada je njen rezultat gotov; ona koja je otvorena (u tabu ovdje ili u drugom programu) ostaje kakva jeste i označava se kao neobrađena.",
+            {
+              "steps": [
+                "S lijeve strane dodajte datoteke: \"Dodaj datoteke\", \"Dodaj folder\" (zajedno s podfolderima) ili ih jednostavno prevucite.",
+                "S desne strane označite šta treba uraditi. Svaka datoteka u svakom slučaju postaje PDF; osim toga, možete okrenuti stranice, prepoznati tekst, dodati zaglavlje i podnožje, vodeni žig ili brojeve stranica, smanjiti datoteke, potpisati ih certifikatom ili ih izvesti u drugi format. Brojevi označavaju redoslijed.",
+                "Odaberite način zapisa: zasebna datoteka za svaku ili sve u jednom PDF-u (prema redoslijedu na listi), te folder u koji će ići rezultati. Kada sve datoteke dolaze iz jednog foldera, taj folder se bira za vas dok ne odaberete drugi; u suprotnom, to je posljednji folder koji ste odabrali.",
+                "\"Započni\". Za svaku datoteku se prikazuje ishod; proces se može zaustaviti između datoteka."
+              ]
+            },
+            {
+              "points": [
+                "Recepti: \"Spremi kao recept\" čuva sve vaše izbore (osim datoteka i lozinke) pod određenim imenom, kako bi se ponovo postavili jednim izborom.",
+                "\"Zadrži foldere datoteka u rezultatima\" ponovo kreira strukturu foldera za dodani folder.",
+                "\"Zapiši izvještaj o izvršavanju\" ostavlja tekstualnu datoteku pored rezultata u kojoj piše šta je zapisano, a šta nije uspjelo.",
+                "PDF koji je samo potpisan zadržava svoje potpise; ako se u istom prolasku uradi bilo šta drugo, on se ponovo zapisuje i potpisi se izostavljaju."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Postavke",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Postavke PDF Organizer-a",
+          "body": [
+            "Datoteka → Postavke (ili Postavke na bočnoj traci, zatim PDF Organizer). Svaka postavka se može vratiti pojedinačno ili sve odjednom.",
+            {
+              "points": [
+                "Kada se dokument otvori: koliki se dokument prikazuje pri otvaranju, pomicanje ili jedna stranica po jedna, prikazivanje sličica ili ne.",
+                "Jedinice, lenjiri i mreža: jedinica (milimetri, inči, poeni), lenjiri, mreža i njen razmak.",
+                "Štampanje: papir, orijentacija i skaliranje s kojim počinje prozor za štampanje.",
+                "Brza traka s alatima: koje gumbe ima traka iznad stranica.",
+                "Nazivi novih dokumenata: obrasci za izvučene stranice, nove dokumente i PDF u koji grupno obrađivanje prikuplja više datoteka.",
+                "Potpisi: da li će \"Spremi\" tražiti potvrdu prije pisanja preko potpisanog fajla.",
+                "Prečice na tastaturi: kliknite na tipke komande, zatim pritisnite nove."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O PDF Organizer-u",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O PDF Organizer-u",
+          "body": [
+            "PDF Organizer je PDF aplikacija Syntelab Creative-a: čita PDF dokumente, organizuje i kombinuje njihove stranice, piše i crta po njima, popunjava i kreira obrasce, potpisuje certifikatom i provjerava potpise, te iste radnje vrši nad više datoteka odjednom.",
+            "Aplikacija je nova i neke od njenih funkcija su tek prvi korak. Tamo gdje vam nedostaje nešto za vaše dokumente, javite nam putem Pomoć → Povratne informacije: tako znamo na čemu treba raditi."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Čime je PDF Organizer izgrađen",
+          "body": [
+            {
+              "points": [
+                "Čitanje, crtanje i pisanje PDF-a: MuPDF.",
+                "Prepoznavanje teksta (OCR): Tesseract, kada je instaliran na računaru.",
+                "Otvaranje kancelarijskih dokumenata: Word, Excel i PowerPoint, ili LibreOffice, zavisno od toga šta je instalirano.",
+                "Spremanje web stranice kao PDF-a: pretraživač instaliran na računaru.",
+                "Potpisivanje certifikatom: mrežne usluge certifikata Windowsa; potpisi se zapisuju onako kako zahtijeva PAdES standard."
+              ]
+            },
+            "Ono što dijeli sa ostatkom programa nalazi se pod stavkom \"O Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Šta PDF Organizer još uvijek ne može",
+          "body": [
+            {
+              "points": [
+                "Kancelarijski dokumenti se otvaraju pomoću kancelarijskog paketa na računaru; bez Worda, Excela, PowerPointa ili LibreOffice-a oni se ne mogu otvoriti. Na sopstvenom konverteru se trenutno radi: pogledajte \"Šta radimo\".",
+                "Prepoznavanje teksta zahtijeva program Tesseract, koji se instalira zasebno.",
+                "Tekst samog dokumenta se mijenja liniju po liniju; pasusi se ne preslagaju automatski.",
+                "Slike štampane u četiri boje (CMYK) ne mogu se označiti za pomjeranje.",
+                "„Provjeri“ govori da li je certifikat danas povučen, ali ne i kada je povučen.",
+                "Potpisivanje certifikatom trenutno radi na Windowsu; na Linuxu i macOS-u će biti dostupno u kasnijoj verziji."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Konverżjoni",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Il-konvertituri",
+          "body": [
+            "Units jikkonverti valuri bejn unitajiet tal-kejl: valur wieħed malajr, jew tabelli sħaħ ta' valuri f'daqqa. Kollox jiġi kkalkulat fuq il-kompjuter tiegħek.",
+            "Il-konvertituri jinsabu f'sitt menus: Essenzjali, Moviment u mekanika, Enerġija u qawwa, Xjentifiku, Diġitali u media, u Fiżika speċjalizzata. Meta tagħżel wieħed, tinfetaħ it-tabella tiegħu.",
+            {
+              "points": [
+                "Konvertitur jinfetaħ fit-tab li tkun fih. Jekk it-tabella tiegħu jkun fiha valuri, l-ewwel tiġi mistoqsi: Kompli (il-valuri jintilfu), Iftaħ f'tab ġdid, jew Ikkanċella.",
+                "Issettjar → Units → \"Iftaħ kull konvertitur f'tab għalih\" jiftaħ kull konvertitur li tagħżel f'tab ġdid minflok.",
+                "Fajl → Mur fil-Bidu jeħdok lura għall-ewwel paġna ta' Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Konverżjoni malajr",
+          "body": [
+            "L-ewwel paġna ta' Units, Konverżjoni malajr, tikkonverti valur wieħed minn unità għal oħra. Agħżel konvertitur, ikteb il-valur fuq in-naħa \"Minn\", u agħżel iż-żewġ unitajiet: ir-riżultat jidher fuq in-naħa \"Lejn\".",
+            {
+              "points": [
+                "Kull naħa telenka l-unitajiet popolari tal-konvertitur u l-unitajiet tiegħek, b'tfittxija fosthom. It-tabella tal-konvertitur għandha l-unitajiet kollha.",
+                "Il-buttuna bejn iż-żewġ naħat taqleb iż-żewġ unitajiet.",
+                "Is-sinjal ħdejn unità jwaħħalha: l-unitajiet imwaħħla jidhru l-ewwel fiż-żewġ listi u fil-pannell tal-unitajiet tat-tabella.",
+                "Il-buttuna fir-riżultat tikkopjah; l-× iħassar il-valur.",
+                "\"Iftaħ fit-tabella\" jiftaħ it-tabella tal-konvertitur."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Kif jinqraw u jinkitbu n-numri",
+          "body": [
+            "Tista' tikteb u tippejstja n-numri kif jinkitbu f'pajjiżi differenti: kemm 1,234.56 kif ukoll 1.234,56 jinftehmu, kif ukoll spazji u appostrofi bejn l-eluf, u 1.5e-3 għal qawwa ta' għaxra.",
+            "Numru li jista' jinqara b'żewġ modi (1,234: elf, jew wieħed u ftit) jinqara kif il-lingwa tal-programm tikteb in-numri, u l-linja taħt it-tabella tgħid hekk.",
+            "Riżultat jinkiteb bid-deċimali tal-unità li jasal fiha, mhux b'daqs ċifri kemm ktibt: 5 cm huma 1.97 in. Valur li mhuwiex żero dejjem juri ftit ċifri li jfissru xi ħaġa, allura 1 cm huwa 0.00001 km u qatt 0.000 km.",
+            "Valuri kbar jew żgħar wisq biex jinqraw b'daqqa t'għajn jinkitbu b'qawwa ta' għaxra, bħal 1.6 × 10⁻³⁵. Ara → Valuri estremi sħaħ jiktibhom b'kull żero minflok.",
+            "Fejn unità m'għandhiex valur bħal dan (pressjoni tal-ħoss żero m'għandha l-ebda deċibel) iċ-ċellula turi lineetta."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "It-tabella",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Ringieli u kolonni",
+          "body": [
+            "Kull kolonna hija unità u kull ringiela valur. Iċ-ċellula li tikteb fiha tmexxi r-ringiela tagħha: il-kolonni l-oħra juru l-istess valur fl-unitajiet tagħhom. Iċ-ċellula li ktibt fiha tidher b'tipa grassa.",
+            "Dak li mhuwiex numru jinżamm u jidher bl-aħmar; ir-ringiela tiegħu ma tikkonverti xejn sakemm tikkoreġih.",
+            {
+              "points": [
+                "Ikklikkja darbtejn fuq ċellula, jew sempliċement ibda ikteb fiha, biex teditjaha. Enter imur 'l isfel, Tab lejn il-lemin; il-vleġeġ iċaqilqu; Escape iħalli ċ-ċellula kif kienet.",
+                "Ikklikkja l-kantuniera (#) biex tagħżel it-tabella kollha, numru ta' ringiela biex tagħżel ir-ringiela tiegħu, titlu biex tagħżel il-kolonna tiegħu. Shift+klikk jagħżel firxa, Ctrl+klikk iżid ċelluli, u l-kaxkir ukoll jagħżel.",
+                "Home u End imorru għall-ewwel u l-aħħar kolonna tar-ringiela; Ctrl+Home għall-ewwel ċellula tat-tabella, Ctrl+End għall-aħħar waħda. Ctrl ma' vleġġa jmur sat-tarf tat-tabella: l-ewwel jew l-aħħar ringiela, l-ewwel jew l-aħħar kolonna. Page Up u Page Down iċaqilqu skrin sħiħ. Ma' Shift, kull wieħed minn dawn jestendi l-għażla minflok.",
+                "Għażla ta' diversi ċelluli tiġi mdawra b'kontorn minn barra; iċ-ċellula fejn imur dak li tikteb tibqa' mingħajr dell fiha.",
+                "Delete jbattal ir-ringieli magħżula.",
+                "Jekk tikteb fl-aħħar ringiela, tiżdied ringiela. Tabella m'għandhiex massimu ta' kemm iżżomm: tista' tkun twila kemm tippermetti l-memorja tal-kompjuter tiegħek (ringiela tieħu 16-il byte, allura 100 miljun ringiela jieħdu madwar 1.5 GB)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Il-kolonni u l-pannell tal-unitajiet",
+          "body": [
+            "Il-pannell ħdejn it-tabella jelenka l-unitajiet tal-konvertitur. Fuq nett hemm l-unitajiet li qegħdin fit-tabella: ikklikkja waħda biex tneħħi l-kolonna tagħha. Taħthom, l-unitajiet kollha: fittex bl-isem jew bis-simbolu, iffiltra skont il-grupp jew skont \"Popolari\", u kklikkja unità biex iżżidha bħala kolonna.",
+            "Is-sinjal ħdejn unità jwaħħalha bħala favorita: tidher l-ewwel fil-lista u l-ewwel f'Konverżjoni malajr.",
+            {
+              "points": [
+                "Il-kolonni jaqsmu l-wisa' tat-tabella b'mod ugwali sakemm it-titli tagħhom ma jibqgħux jidħlu; imbagħad it-tabella tiskrollja lejn il-ġenb.",
+                "Kaxkar it-tarf ta' titlu biex tbiddel il-wisa' tal-kolonna tiegħu; ikklikkja darbtejn fuq it-tarf biex il-kolonna taqbel mal-itwal valur tagħha. Il-kolonna tan-numri tar-ringieli tista' tiġi mkaxkra wkoll.",
+                "Il-buttuna ⋮ ta' kolonna: iċċaqlaqha lejn ix-xellug jew il-lemin, waħħalha mat-tarf tax-xellug jew tal-lemin, ibdel il-preċiżjoni tagħha, jew neħħiha.",
+                "Il-preċiżjoni ta' kolonna tbiddel dik il-kolonna biss. \"Uża għal din l-unità kullimkien\" tagħmilha l-preċiżjoni tal-unità, f'kull tabella u f'Konverżjoni malajr.",
+                "Il-buttuna b'żewġ vleġeġ ħdejn Erġa' lura u Erġa' agħmel taġġusta l-kolonni għat-tabella: kull wisa' li kaxkart jew aġġustajt titneħħa, u l-kolonni jerġgħu jaqsmu l-wisa' tat-tabella.",
+                "Iż-żewġ partijiet ta' fuq tal-pannell, l-unitajiet fit-tabella u \"Żid unitajiet\" (it-tfittxija u l-filtri), jingħalqu bi klikk fuq isimhom, biex il-lista jkollha aktar spazju."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Erġa' lura, ikkopja, ippejstja, importa u esporta",
+          "body": [
+            "L-istrixxa fuq it-tabella fiha l-għodod tagħha.",
+            {
+              "points": [
+                "Erġa' lura u Erġa' agħmel (Ctrl+Z, Ctrl+Y) jgħaddu minn kull bidla tat-tabella. Pejst jew importazzjoni huma pass wieħed.",
+                "Ikkopja (Ctrl+C) jikkopja t-tabella kollha jew dak li hu magħżul, kif jaqrah spreadsheet. \"Trasposta\" tibdel ir-ringieli f'kolonni.",
+                "Ippejstja (Ctrl+V) idaħħal ringieli kkupjati fit-tabella miċ-ċellula attiva 'l isfel. Jekk l-ewwel ringiela fiha titli ta' unitajiet, il-kolonni jitqabblu magħhom, u l-unitajiet li għadhom mhumiex fit-tabella jiżdiedu.",
+                "Importa jaqra workbook tal-Excel, fajl CSV jew TSV minflok dak li hemm fit-tabella. \"Sib il-format waħdu\" jagħraf it-tip mill-fajl.",
+                "Esporta jikteb it-tabella bħala Excel, CSV, TSV jew JSON. B'virgola qabel id-deċimali, is-CSV jinkiteb b'semikolon, kif jistennew l-ispreadsheets. Folja tal-Excel iżżomm 1,048,576 ringiela: tabella itwal tkompli fil-folji ta' wara tal-istess workbook, taħt l-istess titli.",
+                "Il-gomma tbattal ir-ringieli magħżula; il-barmil ibattal it-tabella kollha."
+              ]
+            },
+            "Ringiela żżomm valur wieħed. Minn ringiela ppejstjata jew importata li fiha diversi valuri, jittieħed l-ewwel wieħed u l-oħrajn jiġu kkalkulati minnu.",
+            "Ħafna ringieli jieħdu ftit żmien biex jiġu ppejstjati, importati, esportati jew ikkupjati. Imbagħad karta fuq it-tabella turi kemm wasal ix-xogħol, f'perċentwali u f'ringieli, b'buttuna Waqqaf. Pejst jew importazzjoni li jitwaqqfu jħallu t-tabella kif kienet; esportazzjoni li titwaqqaf ma tikteb l-ebda fajl.",
+            "Meta l-kompjuter ma jkollux aktar memorja għar-ringieli, xejn ma jinbidel u l-linja taħt it-tabella tgħid kemm kien hemm bżonn. Meta r-ringieli jidħlu imma t-tabella kif kienet ma setgħetx tinżamm magħhom, tiġi mistoqsi jekk tkomplix mingħajr Erġa' lura: dik il-bidla, u dawk ta' qabilha, ma jkunux jistgħu jitħassru aktar. Qabel ma tiġi mistoqsi, l-eqdem passi ta' Erġa' lura jitħallew biex isir post.",
+            "L-opzjonijiet tat-tabella (ir-rota): x'jgħid it-titlu ta' kolonna (isem u simbolu, isem, jew simbolu), jekk il-kopji u l-esportazzjonijiet jinkludux it-titli u n-numri tar-ringieli, \"Ibda dan il-konvertitur b'dawn il-kolonni\", u \"Irrisettja t-tabella\"."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Konvertituri speċjali",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valuta",
+          "body": [
+            "Il-valuti m'għandhomx fattur fiss: il-valur tagħhom jinbidel. Il-konvertitur tal-valuti jaqra r-rati tiegħu minn żewġ servizzi b'xejn waqt li tużah, u dak il-ħin biss.",
+            {
+              "points": [
+                "Valuti tal-pajjiżi: Rates By Exchange Rate API, https://www.exchangerate-api.com . Jinbidlu darba kuljum fis-sors tagħhom, u ma jinqrawx aktar spiss minn hekk.",
+                "Kriptovaluti: Powered by CoinGecko, https://www.coingecko.com . Jinqraw meta l-konvertitur jinfetaħ jew jerġa' jiġi quddiem u dak li għandu huwa eqdem minn kwart ta' siegħa, u meta tagħfas Aġġorna; qatt b'tajmer."
+              ]
+            },
+            "Jintalbu r-rati biss. Xejn dwarek ma jintbagħat, u qatt l-ammonti li tikkonverti.",
+            "Il-linja taħt it-tabella, u taħt ir-riżultat ta' Konverżjoni malajr, tgħid ta' meta huma r-rati. Mingħajr konnessjoni jintużaw l-aħħar rati u jiġu mmarkati bħala qodma. Valuta li s-servizzi ma jagħtu l-ebda rata għaliha turi lineetta.",
+            "Issettjar → Units → Valuta: \"Aqra r-rati min-netwerk\" jista' jintefa, u l-konvertitur imbagħad juża l-aħħar rati li żamm. \"Semmi s-sorsi ħdejn ir-rati\" juri jew jaħbi l-ismijiet taż-żewġ servizzi fuq dik il-linja.",
+            "Ir-rati huma għall-informazzjoni. Tistrieħx fuqhom għal tranżazzjoni."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Bażi tan-numri",
+          "body": [
+            "L-unitajiet ta' dan il-konvertitur huma modi kif jinkiteb numru sħiħ: bażijiet minn 2 sa 64, numri Rumani, bażi 60 b'żewġ punti (1:30:15), deċimali kkodifikat f'binarju (BCD) u kodiċi Gray. Il-valuri tagħhom huma test: ikteb FF taħt eżadeċimali u l-kolonni l-oħra juru 255, 11111111 u l-bqija.",
+            "In-numri Rumani jmorru minn I sa MMMCMXCIX (1 sa 3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Unitajiet li mhumiex fattur sempliċi",
+          "body": [
+            "Ħafna mill-unitajiet huma fattur ta' oħra. Xi wħud mhumiex, u Units jikkonvertihom kif inhuma definiti: it-temperaturi bl-offsets tagħhom; l-ekonomija tal-karburant (litri għal kull 100 km kontra mili għal kull gallun); tul ta' mewġa kontra frekwenza; konduttanza kontra reżistenza; gradi Baumé, API, Brix u Plato kontra densità; deċibel kontra pressjoni u intensità tal-ħoss; inklinazzjoni f'perċentwali kontra l-angolu tagħha.",
+            "Temperatura u differenza ta' temperatura mhumiex l-istess ħaġa: 100 °C huma 212 °F, imma differenza ta' 100 °C hija differenza ta' 180 °F. L-unitajiet tal-grupp \"Differenza (Δ)\" jikkonvertu bejniethom; bejniethom u l-iskali tat-temperatura ċellula turi lineetta."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "L-unitajiet tiegħek",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Kif toħloq unità",
+          "body": [
+            "Tista' żżid unitajiet tiegħek ma' kwalunkwe konvertitur. Fil-pannell tal-unitajiet, agħżel \"Unità ġdida\", agħtiha isem u simbolu, u ddefiniha permezz ta' unità li teżisti.",
+            {
+              "points": [
+                "Fattur: \"1 pass = 0.75 m\". Għal skala li ma tibdiex minn żero, ukoll dak li jiżdied wara l-multiplikazzjoni.",
+                "Formula: kif il-valur isir l-unità l-oħra, b'x għall-valur, u l-formula għat-triq lura. Pereżempju x * 9 / 5 + 32 u (x - 32) * 5 / 9."
+              ]
+            },
+            "Dak li tikteb jiġi ppruvat waqt li tiktbu, u kemm tiswa waħda mill-unità tiegħek jidher qabel ma żżommha. Formula tista' tuża + − × ÷ ^, parentesi, x, pi, e, u l-funzjonijiet sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos u atan. Tiġi kkalkulata, qatt ma titħaddem bħala programm.",
+            "L-unitajiet tiegħek huma elenkati taħt \"Tiegħi\" fil-pannell, fejn jistgħu jinbidlu u jitneħħew. Unità tiegħek tista' tiġi ddefinita permezz ta' unità oħra tiegħek; jekk tneħħi unità, jitneħħew ukoll dawk iddefiniti permezz tagħha.",
+            "Issettjar → Units jelenka l-unitajiet tiegħek ta' kull konvertitur, u jesportahom u jimportahom bħala test li tista' żżomm jew tittrasferixxi għal kompjuter ieħor."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Issettjar",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "L-issettjar ta' Units",
+          "body": [
+            "Fajl → Iftaħ l-Issettjar jiftaħ l-issettjar ta' Units; hekk ukoll l-opzjonijiet tat-tabella (ir-rota fl-istrixxa tagħha).",
+            {
+              "points": [
+                "Iftaħ kull konvertitur f'tab għalih, jew fit-tab li tkun fih.",
+                "Valuri estremi sħaħ, x’jinkiteb bejn l-eluf (10000.000, 10 000.000 jew 10,000.000; xejn, sakemm ma tagħżilx mod ieħor), u n-numri tar-ringieli.",
+                "Valuta: jekk ir-rati jinqrawx min-netwerk, u jekk is-servizzi jissemmewx ħdejhom.",
+                "Preċiżjoni tal-unitajiet: agħżel konvertitur (jew \"Unitajiet li biddilt\"), fittex unità, u ssettja d-deċimali tagħha b'− u +; il-vleġġa terġa' ġġibha għal dik tal-unità nfisha. \"Uża għal din l-unità kullimkien\" fil-menu ta' kolonna jissettja l-istess valur.",
+                "Unitajiet li biħom tibda tabella: il-konvertituri li għażilt l-ewwel kolonni tagħhom, kull wieħed b'mod kif terġa' lura għal dawk li jiġi bihom.",
+                "L-unitajiet tiegħek."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Dwar Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Dwar Units",
+          "body": [
+            "Units hija l-app tal-konverżjoni ta' Syntelab Creative: 38 konvertitur b'aktar minn 1,500 unità, mit-tul u t-temperatura sal-valuti u l-bażijiet tan-numri. Valur miktub darba jidher f'kull unità li titlob, f'tabella li żżomm valur wieħed jew miljuni minnhom.",
+            "In-numri jiġu kkalkulati eżatt, bħala frazzjonijiet, u jiġu arrotondati biss meta jinkitbu. Kollox isir fuq dan il-kompjuter; ir-rati tal-valuti biss jinqraw min-netwerk, u dan jista' jintefa.",
+            "Hija ġdida. Fejn ma tlaħħaqx max-xogħol tiegħek, għidilna permezz ta' Għajnuna → Rispons: hekk inkunu nafu fuq xiex għandna naħdmu."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Kemm iżżomm ringieli tabella: dak li kejjilna",
+          "body": [
+            "Tabella m'għandha l-ebda limitu fiss ta' ringieli: tista' tkun twila kemm tippermetti l-memorja tal-kompjuter tiegħek. Ringiela tieħu 16-il byte, allura 100 miljun ringiela jieħdu madwar 1.5 GB. Meta tispiċċa l-memorja, it-tabella tibqa' kif kienet u l-programm jgħid kemm kien hemm bżonn.",
+            "Kejjilnieha b'50,000,000 ringiela, kull waħda numru f'kolonna waħda, fil-verżjoni ottimizzata tal-programm:",
+            {
+              "points": [
+                "Pejst ta' 50,000,000 ringiela: madwar 7 sekondi.",
+                "Importazzjoni tagħhom minn fajl CSV: 12-il sekonda.",
+                "Esportazzjoni tagħhom għal fajl CSV, b'kolonna oħra kkonvertita: madwar 3.5 minuti.",
+                "Esportazzjoni tagħhom għal Excel, fuq 48 folja: 4.3 minuti."
+              ]
+            },
+            "Il-ħruġ jieħu aktar mid-dħul għax kull ċellula li tinkiteb l-ewwel tiġi kkonvertita eżatt.",
+            {
+              "note": "Il-kompjuter li fuqu sar it-test: AMD Ryzen 9 9950X3D (16-il core, 32 thread), 64 GB memorja, Windows 11 Pro. Ottubru 2026. Fuq kompjuter ieħor il-ħinijiet ikunu differenti; id-daqs ta' ringiela le."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "B'xiex hija mibnija Units",
+          "body": [
+            {
+              "points": [
+                "Numri eżatti: il-libreriji num ta' Rust (frazzjonijiet ta' numri sħaħ ta' kwalunkwe daqs).",
+                "L-unitajiet, il-fatturi u l-gruppi tagħhom: fajls tad-data tal-programm, wieħed għal kull konvertitur.",
+                "Qari ta' workbooks tal-Excel u OpenDocument: calamine. Kitba ta' workbooks tal-Excel: rust_xlsxwriter.",
+                "Il-clipboard tas-sistema, għall-kopji u l-pejsts ta' ħafna ringieli: arboard.",
+                "Ir-rati tal-valuti: ExchangeRate-API u CoinGecko (ara \"Valuta\")."
+              ]
+            },
+            "Dak li taqsam mal-bqija tal-programm jinsab taħt \"Dwar Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Dak li Units ma tistax tagħmel għadha",
+          "body": [
+            {
+              "points": [
+                "Ringiela żżomm valur wieħed: minn ringiela ppejstjata b'diversi valuri, jittieħed l-ewwel wieħed.",
+                "L-esportazzjoni ta' ħafna ringieli hija bil-mod (ara dak li kejjilna).",
+                "Dak li jiġi kkupjat fil-clipboard jinżamm fil-memorja bħala test wieħed qabel ma jiġi ppejstjat.",
+                "Ir-rati tal-valuti huma friski daqs kemm jagħtuhom iż-żewġ sorsi tagħhom: darba kuljum għall-valuti tal-pajjiżi."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

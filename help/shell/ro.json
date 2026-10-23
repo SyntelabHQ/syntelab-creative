@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Primii pași",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Ce este Syntelab Creative",
+          "body": [
+            "Syntelab Creative este un singur program alcătuit din aplicații. Fiecare aplicație face un fel de lucru:",
+            {
+              "points": [
+                "PDF Organizer citește, aranjează, modifică și semnează documente PDF.",
+                "Scribe este un editor de text cu unelte care curăță, sortează, compară și transformă text.",
+                "Units convertește între unități: lungime, temperatură, valute și multe altele.",
+                "Dev adună unelte pentru dezvoltatori: codificare și decodificare, formatare și verificare, trecerea datelor dintr-o formă în alta."
+              ]
+            },
+            "Aplicațiile împart aceeași fereastră, aceleași setări și același fel de lucru, așa că ce înveți într-una este la fel în următoarea.",
+            {
+              "note": "Totul se petrece pe calculatorul tău. Documentele tale nu sunt trimise nicăieri și nu se adună nimic despre tine sau despre ce lucrezi."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Fereastra",
+          "body": [
+            {
+              "points": [
+                "Bara din lateral: căsuța duce la Start, apoi vin aplicațiile tale, iar jos noutățile programului, Feedback, Susținere și Setări.",
+                "Într-o aplicație, Fișier → Mergi la Start duce la prima pagină a acelei aplicații, acolo unde are una (Units, Scribe), iar Fișier → Deschide Setările (Ctrl+,) deschide Setările la partea acelei aplicații; celelalte părți sunt la un clic acolo.",
+                "Taburile de sus: fiecare document, biblioraft sau unealtă pe care o deschizi are tabul lui. Un punct pe un tab arată că are modificări nesalvate.",
+                "Meniurile aplicației, sub taburi: ca bară de meniu, ca panglică sau ca panou lateral, după cum ai ales.",
+                "Restul ferestrei este tabul din față."
+              ]
+            },
+            "Închiderea unui tab cu modificări nesalvate întreabă întâi; la fel și închiderea programului."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Start",
+          "body": [
+            "Start arată aplicațiile tale și fișierele deschise de curând. Dă clic pe o aplicație ca să o deschizi; dă clic pe un fișier recent ca să îl deschizi din nou.",
+            "Aplicațiile pot fi arătate ca carduri, ca pictograme cu nume sau doar ca pictograme și pot fi trase în ordinea dorită. Din tastatură: Alt și săgețile. „Revino la ordinea implicită” le pune la loc.",
+            "Fiecare aplicație are și propria scurtătură în meniul Start din Windows, de exemplu „Syntelab PDF Organizer” sau „Syntelab Units”: deschide programul direct în acea aplicație. Dacă programul este deja deschis, aplicația se deschide în el, ca tab."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Deschiderea fișierelor",
+          "body": [
+            {
+              "points": [
+                "Dintr-o aplicație: Fișier → Deschide sau Ctrl+O.",
+                "Trăgând fișiere dintr-un folder peste fereastră.",
+                "Din managerul de fișiere al sistemului: dublu clic pe un fișier pe care programul este setat să îl deschidă. În Windows Explorer există și meniul de clic dreapta (vezi „Meniul de clic dreapta din Windows Explorer”).",
+                "Din Start: lista de fișiere recente."
+              ]
+            },
+            "Programul rulează într-un singur exemplar. Un fișier deschis din managerul de fișiere cât timp programul rulează se deschide ca tab nou în aceeași fereastră."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personalizare",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Aspect: bară de meniu, panglică sau panou lateral",
+          "body": [
+            "Comenzile unei aplicații pot fi arătate în trei feluri. Sunt aceleași comenzi; diferă doar locul lor.",
+            {
+              "points": [
+                "Clasic: bară de meniu și bară de unelte.",
+                "Panglică: butoane mari în grupuri cu nume, câte un tab pentru fiecare meniu. Se poate restrânge, ca să rămână mai mult loc documentului.",
+                "Panou lateral: uneltele într-un panou la stânga sau la dreapta, care se poate restrânge la pictograme."
+              ]
+            },
+            "Aspectul tuturor aplicațiilor se alege în Setări → General → Aspect. O aplicație poate avea aspectul ei, ales în partea ei din Setări sau din meniul Vizualizare; atunci nu îl mai urmează pe cel general până alegi „Folosește aspectul general”."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Temă",
+          "body": [
+            "Setări → General → Temă: Luminoasă, Întunecată, Gri deschis, Gri închis sau Automată, care urmează setarea de luminos sau întunecat a sistemului.",
+            "Paginile unui document nu sunt niciodată recolorate de temă: hârtia rămâne cum este."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Limbă",
+          "body": [
+            "Setări → General → Limbă. Programul vorbește 62 de limbi. „Limba sistemului” urmează limba sistemului tău. Lista se poate căuta după numele limbii în limba ei, în limba ta sau în engleză.",
+            "Un text care nu este încă tradus apare în engleză, niciodată ca un cod."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Taburi",
+          "body": [
+            {
+              "points": [
+                "„Păstrează tabul Start printre taburi”: când este oprită, tabul Start apare doar cât timp Start este în față; căsuța de pe bara laterală duce oricând înapoi la el.",
+                "Semnul de pe un tab poate fi pictograma aplicației sau un pătrat simplu în culoarea aplicației."
+              ]
+            },
+            "Când sunt mai multe taburi decât încap, săgețile de la capetele benzii o derulează, iar „Mai multe taburi” le listează pe toate."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cum găsești ce cauți",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Căutarea unei comenzi",
+          "body": [
+            "Caseta de căutare („Caută aplicații, unelte și comenzi”) găsește orice comandă a tabului din față după nume, în limba ta sau în engleză. Alege un rezultat ca să o rulezi.",
+            "Comenzile planificate, dar încă nescrise, apar estompate în meniuri și nu apar în căutare."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Scurtături de tastatură",
+          "body": [
+            "Tastele unei comenzi sunt scrise lângă numele ei în meniuri și în indiciul care apare când ții cursorul pe ea. Cele mai folosite:",
+            {
+              "points": [
+                "Ctrl+O: deschide un fișier",
+                "Ctrl+S: salvează; Ctrl+Shift+S: salvează ca",
+                "Ctrl+P: tipărește",
+                "Ctrl+Z și Ctrl+Y: anulează și refă",
+                "Ctrl+F: caută în document",
+                "Ctrl+W: închide tabul",
+                "Ctrl+Tab și Ctrl+Shift+Tab: tabul următor și cel dinainte",
+                "Ctrl+, (virgulă): Setări",
+                "F1: acest Ajutor",
+                "Escape: ieșire din ecran complet sau din modul de citire, ori lăsarea uneltei din mână"
+              ]
+            },
+            "Tastele comenzilor proprii ale programului (taburi, Setări, Ajutor) se schimbă în Setări → General → Scurtături de tastatură; cele ale comenzilor unei aplicații, în partea ei din Setări. Dă clic pe tastele unei comenzi, apoi apasă tastele noi."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Cum se folosește acest Ajutor",
+          "body": [
+            "Ajutorul este al locului din care îl deschizi. Dintr-o aplicație vezi doar manualul acelei aplicații și comenzile tabului din care ai venit. De pe pagina de start sau din Setări vezi „Despre” (programul și fiecare aplicație, pe scurt) și manualul programului. Ajutor → Despre duce mereu la „Despre”.",
+            "Cuprinsul este în stânga; căutarea de deasupra lui caută în toate subiectele, în titluri și în text.",
+            "Ajutorul se deschide într-un tab separat, ca să poți trece între el și ce lucrezi; F1 îl aduce din nou în față. La „Comenzile tabului din care ai venit” este listat fiecare meniu al acelui tab, cu fiecare comandă, tastele ei și ce face. Deschide Ajutorul din tabul despre care ai o întrebare."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Meniul de clic dreapta din Windows Explorer",
+          "body": [
+            "Setări → General → Windows Explorer → „Arată Syntelab Creative în meniul de clic-dreapta al fișierelor și dosarelor” adaugă intrări pentru fișierele pe care programul le citește: „Transformă în PDF cu PDF Organizer” și „Îmbină fișiere în PDF Organizer”, fiecare cu pictograma PDF Organizer, și „Syntelab Dev”, care se deschide lateral cu Sume de control, Compară și Vizualizare hex.",
+            "Sunt adăugate doar pentru utilizatorul tău, fără drepturi de administrator, iar oprirea comutatorului le scoate. În Windows 11 sunt sub „Afișați mai multe opțiuni”. Pornesc mereu programul instalat: dacă a fost mutat sau reinstalat în altă parte, le corectează când pornește.",
+            {
+              "note": "„Îmbină fișiere în PDF Organizer” pe mai multe fișiere deschide un biblioraft cu ele; „Transformă în PDF cu PDF Organizer” deschide procesarea în lot cu ele."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Confidențialitate, actualizări și contact",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Ce merge online și ce nu merge niciodată",
+          "body": [
+            "Programul nu adună nimic: nici date de folosire, nici nume de fișiere, nici rapoarte de eroare trimise de la sine.",
+            "Merge online doar în aceste cazuri, fiecare cerut de tine:",
+            {
+              "points": [
+                "Verificarea actualizărilor și a noutăților (două fișiere mici citite de pe syntelab.com), când ceri sau, dacă ai permis, la pornirea programului; și descărcarea unei versiuni noi, doar când apeși „Actualizează”.",
+                "Salvarea unei pagini web ca PDF (PDF Organizer) și aducerea textului unei pagini web (Scribe), de la adresa pe care ai scris-o.",
+                "Un link dintr-un document pe care dai clic: este predat browserului sau programului tău de e-mail.",
+                "Feedback și Susținere: deschid o pagină de pe syntelab.com în browserul tău."
+              ]
+            },
+            "Semnarea cu certificat și verificarea semnăturilor se fac pe calculatorul tău, fără acces online."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Actualizări",
+          "body": [
+            "Setări → General → Actualizări → „Caută actualizări”. Când există o versiune mai nouă, o fereastră îți arată ce este nou și îți oferă „Actualizează”.",
+            "„Actualizează” descarcă versiunea nouă, verifică dacă vine într-adevăr de la noi (trebuie să fie semnată cu cheia noastră; orice altceva este refuzat) și o instalează peste aceasta. Setările tale se păstrează, iar programul pornește din nou. Nu se descarcă nimic până nu apeși.",
+            "Dacă actualizarea nu se poate instala așa (o copie portabilă, un pachet Linux, fără internet), „Descarcă” deschide pagina de descărcare în browser; instalează versiunea nouă peste aceasta și setările tale se păstrează.",
+            "„Caută actualizări și noutăți la pornirea programului” se poate opri; în niciun caz nu se trimite ceva despre tine sau despre calculatorul tău."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Feedback și susținere",
+          "body": [
+            "Ajutor → Feedback: cere o aplicație nouă, o funcție nouă sau o schimbare, ori semnalează o problemă. Fiecare mesaj este citit.",
+            "Ajutor → Susținere: programul este gratuit; de aici îl poți ajuta să meargă mai departe."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Despre Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Despre Syntelab Creative",
+          "body": [
+            "Syntelab Creative este o suită gratuită de aplicații pentru lucrul de zi cu zi cu documente, text și date, făcută de Syntelab (syntelab.com). Pornește cu patru aplicații: PDF Organizer, Scribe, Units și Dev. Altele li se vor alătura în aceeași fereastră.",
+            {
+              "points": [
+                "Mereu gratuit.",
+                "Fără colectare de date: nimic despre tine, despre calculatorul tău sau despre ce lucrezi.",
+                "Fără nimic ținut deoparte: nicio versiune cu plată, nicio funcție blocată, nicio limită pusă cu intenție. Singurele limite sunt ce poate tehnologia de azi și ce poate duce calculatorul tău."
+              ]
+            },
+            "Nu avem finanțare. Programul este făcut în timpul nostru liber, în măsura în care acel timp ne permite. Avem toată intenția să producem software de calitate, iar asta cere timp și răbdare: a noastră ca să îl construim și a ta cât timp crește.",
+            "Se va îmbunătăți cu fiecare versiune. Problemele semnalate sunt corectate, iar funcțiile cerute sunt cântărite pentru ce urmează.",
+            {
+              "note": "Documentele tale rămân pe calculatorul tău. Programul nu adună nimic despre tine sau despre ce lucrezi; vezi „Ce merge online și ce nu merge niciodată”."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Cum ne poți ajuta",
+          "body": [
+            "Sunt trei feluri și fiecare contează:",
+            {
+              "points": [
+                "Spune-ne ce părere ai: Ajutor → Feedback. O problemă întâlnită, ceva ce lipsește, ceva mai greu de făcut decât ar trebui. Citim fiecare mesaj.",
+                "Spune și altora despre program și despre ce facem. Mai mulți utilizatori înseamnă mai mult feedback, iar așa vedem ce contează cu adevărat. Ne face să simțim că munca noastră este apreciată: a noastră și a tuturor celor care participă și vor participa la proiect.",
+                "Susține-l financiar, dacă poți: Ajutor → Susține-ne. Ne cumpără timp ca să lucrăm la el."
+              ]
+            },
+            "Nimic din toate acestea nu ți se cere. Programul este gratuit și va fi mereu gratuit, întreg, pentru toată lumea."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Cu ce este construit",
+          "body": [
+            "Programul se sprijină pe munca multor oameni. Ce au în comun toate aplicațiile:",
+            {
+              "points": [
+                "Fereastra și tot ce vezi: Tauri, cu vizualizatorul web al sistemului (WebView2 pe Windows, WebKitGTK pe Linux, WKWebView pe macOS); scris în TypeScript cu React.",
+                "Partea care face treaba: scrisă în Rust.",
+                "Litere și pictograme: Sansation, IBM Plex Sans și Font Awesome Free."
+              ]
+            },
+            "Ce adaugă fiecare aplicație este spus pe pagina ei de la „Despre”. Le suntem recunoscători oamenilor din spatele acestor proiecte."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Ce nu poate face încă",
+          "body": [
+            "Ca să știi înainte să te bazezi pe el:",
+            {
+              "points": [
+                "Unele texte își așteaptă încă traducerea. Până atunci apar în engleză, niciodată ca un cod.",
+                "Meniul de clic dreapta al fișierelor există deocamdată doar în Windows Explorer.",
+                "Semnarea cu certificat merge deocamdată pe Windows; pe Linux și macOS va veni într-o versiune următoare."
+              ]
+            },
+            "Limitele fiecărei aplicații sunt pe pagina ei de la „Despre”. Dacă una dintre ele îți stă în cale, spune-ne prin Ajutor → Feedback: ne ajută să hotărâm ce vine întâi."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "La ce lucrăm",
+          "body": [
+            "Cele patru aplicații vor continua să crească: ce semnalezi și ce ceri prin Ajutor → Feedback hotărăște în mare parte ce vine întâi. Pe lângă ele pregătim aplicații noi. Start nu le arată decât dacă vrei: bifează-le în meniul său „Vizualizare” ca să apară acolo ca „În curând”:",
+            {
+              "points": [
+                "Convert: convertirea fișierelor dintr-un format în altul, între care documente Office în PDF și înapoi, fără să fie nevoie de alt program instalat. Nu am găsit încă o tehnologie deschisă care să atingă calitatea pe care o vrem, așa că va veni doar când nu te va dezamăgi; acolo unde uneltele nu există, le vom construi.",
+                "Pixel: unelte pentru imagini, cum ar fi redimensionarea și compresia, ștergerea fundalului, culori și coduri QR.",
+                "Metadata: vederea și ștergerea datelor ascunse din fotografii, videoclipuri și documente, înainte să le trimiți altora.",
+                "Wizard: alegeri și generatoare aleatorii: o roată de învârtit, zaruri, o monedă, nume trase dintr-o listă."
+              ]
+            },
+            "În aplicațiile care sunt deja aici lucrăm la ce scrie pe paginile lor „Ce nu poate face încă”: de exemplu marca de timp de încredere pentru semnături, semnarea cu certificat pe Linux și macOS și verificarea ortografiei în Scribe.",
+            "Vor urma și mai multe feluri de instalare: Microsoft Store și winget pe Windows, Flathub și Snap pe Linux.",
+            {
+              "note": "Noutățile fiecărei versiuni sunt la butonul de noutăți de pe bara laterală; Setări → General → Actualizări caută o versiune mai nouă."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "id": "scribe",
+  "version": "0.0.0",
+  "apiVersion": 1,
+  "status": "active",
+  "name": {
+    "en": "Scribe"
+  },
+  "description": {
+    "en": "A text editor with tools: clean, sort, compare and transform text.",
+    "hi": "पाठ संपादक, जिसमें पाठ साफ़ करने, क्रम में लगाने, तुलना करने और रूपांतरित करने के टूल हैं।",
+    "de": "Ein Texteditor mit Werkzeugen zum Bereinigen, Sortieren, Vergleichen und Umwandeln von Text.",
+    "zh-CN": "一款文本编辑器，提供清理、排序、比较和转换文本等工具。",
+    "ro": "Un editor de text cu unelte care curăță, sortează, compară și transformă text.",
+    "ar": "محرر نصوص بأدوات: نظّف النص ورتّبه وقارنه وحوّله.",
+    "es": "Editor de texto con herramientas para limpiar, ordenar, comparar y transformar texto.",
+    "pt": "Editor de texto com ferramentas para limpar, ordenar, comparar e transformar texto.",
+    "id": "Editor teks dengan alat untuk membersihkan, mengurutkan, membandingkan, dan mengubah teks.",
+    "fr": "Un éditeur de texte doté d’outils pour nettoyer, trier, comparer et transformer le texte.",
+    "ja": "テキストを整形、並べ替え、比較、変換できるツールを備えたテキストエディターです。",
+    "ru": "Текстовый редактор с инструментами для очистки, сортировки, сравнения и преобразования текста.",
+    "ko": "정리, 정렬, 비교, 변환 도구를 갖춘 텍스트 편집기입니다.",
+    "tr": "Metni temizlemek, sıralamak, karşılaştırmak ve dönüştürmek için araçlar içeren bir metin düzenleyici.",
+    "it": "Un editor di testo con strumenti per pulire, ordinare, confrontare e trasformare il testo.",
+    "vi": "Trình soạn thảo văn bản với các công cụ làm sạch, sắp xếp, so sánh và chuyển đổi văn bản.",
+    "pl": "Edytor tekstu z narzędziami do czyszczenia, sortowania, porównywania i przekształcania tekstu.",
+    "nl": "Een teksteditor met hulpmiddelen om tekst op te schonen, te sorteren, te vergelijken en te bewerken.",
+    "th": "โปรแกรมแก้ไขข้อความพร้อมเครื่องมือสำหรับทำความสะอาด เรียง เปรียบเทียบ และแปลงข้อความ",
+    "uk": "Текстовий редактор з інструментами: очищення, сортування, порівняння та трансформація тексту.",
+    "el": "Ένας επεξεργαστής κειμένου με εργαλεία: καθαρισμός, ταξινόμηση, σύγκριση και μετασχηματισμός κειμένου.",
+    "cs": "Textový editor s nástroji pro čištění, řazení, porovnávání a transformaci textu.",
+    "sv": "En textredigerare med verktyg för att rensa, sortera, jämföra och transformera text.",
+    "hu": "Szövegszerkesztő eszközökkel: tisztítás, rendezés, összehasonlítás és átalakítás.",
+    "fa": "یک ویرایشگر متن با ابزارهایی برای: پاک‌سازی، مرتب‌سازی، مقایسه و تغییر متن.",
+    "pt-BR": "Um editor de texto com ferramentas: limpar, ordenar, comparar e transformar texto.",
+    "zh-TW": "文字編輯器，包含：清理、排序、比較和轉換文字等工具。",
+    "sq": "Një redaktor teksti me vegla: pastrim, renditje, krahasim dhe transformim teksti.",
+    "am": "ጽሑፎችን ለማፅዳት፣ ለመደርደር፣ ለማነጻጸር እና ለመለወጥ የሚያስችሉ መሣሪያዎች ያሉት የጽሑፍ አርታኢ።",
+    "be": "Тэкставы рэдактар з інструментамі: ачыстка, сартаванне, параўнанне і трансфармацыя тэксту.",
+    "bn": "একটি টেক্সট এডিটর যার টুলস রয়েছে: টেক্সট পরিষ্কার করা, সর্ট করা, তুলনা করা এবং রূপান্তর করা।",
+    "bs": "Uređivač teksta sa alatima: čišćenje, sortiranje, poređenje i transformacija teksta.",
+    "bg": "Текстов редактор с инструменти за почистване, сортиране, сравняване и трансформиране на текст.",
+    "ca": "Un editor de text amb eines: neteja, ordenació, comparació i transformació de text.",
+    "hr": "Uređivač teksta s alatima za čišćenje, sortiranje, uspoređivanje i transformiranje teksta.",
+    "da": "En teksteditor med værktøjer til at rense, sortere, sammenligne og transformere tekst.",
+    "et": "Tekstiredaktor tööriistadega: teksti puhastamine, sorteerimine, võrdlemine ja muundamine.",
+    "tl": "Isang text editor na may mga tool: linisin, ayusin, ihambing at baguhin ang teksto.",
+    "fi": "Tekstieditori työkaluilla: puhdista, lajittele, vertaile ja muunna tekstiä.",
+    "gu": "ટેક્સ્ટને સાફ કરવા, સૉર્ટ કરવા, સરખાવવા અને રૂપાંતરિત કરવાના સાધનો સાથેનું ટેક્સ્ટ એડિટર.",
+    "ha": "Editan rubutu mai kayan aiki: tsaftace, jera, kwatanta da sauya rubutu.",
+    "he": "עורך טקסט עם כלים לניקוי, מיון, השוואה והמרת טקסט.",
+    "ga": "Eagarthóir téacs le huirlisí: glan, sórtáil, cuir i gcomparáid agus athraigh téacs.",
+    "jv": "Editor teks karo piranti: ngresiki, ngurutake, mbandhingake lan ngowahi teks.",
+    "kn": "ಪಠ್ಯವನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸುವ, ವಿಂಗಡಿಸುವ, ಹೋಲಿಸುವ ಮತ್ತು ರೂಪಾಂತರಿಸುವ ಪರಿಕರಗಳನ್ನು ಹೊಂದಿರುವ ಪಠ್ಯ ಎಡಿಟರ್.",
+    "lv": "Teksta redaktors ar rīkiem: teksta tīrīšana, kārtošana, salīdzināšana un pārveidošana.",
+    "lt": "Teksto redaktorius su įrankiais: teksto valymas, rikiavimas, lyginimas ir pertvarkymas.",
+    "mk": "Уредувач на текст со алатки за чистење, сортирање, споредување и трансформирање на текст.",
+    "ms": "Editor teks dengan alatan: bersihkan, susun, banding dan ubah teks.",
+    "ml": "ടെക്സ്റ്റ് ക്ലീൻ ചെയ്യാനും, സോർട്ട് ചെയ്യാനും, താരതമ്യം ചെയ്യാനും, മാറ്റം വരുത്താനുമുള്ള ടൂളുകളുള്ള ഒരു ടെക്സ്റ്റ് എഡിറ്റർ.",
+    "mt": "Editur tat-test b'għodod: naddaf, issortja, qabbel u ttrasforma t-test.",
+    "my": "ကိရိယာများပါသော စာသားတည်းဖြတ်ကိရိယာ- စာသားကို သန့်စင်ခြင်း၊ စီခြင်း၊ နှိုင်းယှဉ်ခြင်းနှင့် ပြောင်းလဲခြင်း။",
+    "no": "En tekstredigerer med verktøy for å rense, sortere, sammenligne og transformere tekst.",
+    "pa": "ਟੂਲਾਂ ਵਾਲਾ ਟੈਕਸਟ ਐਡੀਟਰ: ਟੈਕਸਟ ਨੂੰ ਸਾਫ਼ ਕਰੋ, ਛਾਂਟੋ, ਤੁਲਨਾ ਕਰੋ ਅਤੇ ਬਦਲੋ।",
+    "sr": "Uređivač teksta sa alatima za čišćenje, sortiranje, poređenje i transformaciju teksta.",
+    "sk": "Textový editor s nástrojmi na čistenie, triedenie, porovnávanie a transformáciu textu.",
+    "sl": "Urejevalnik besedila z orodji: čiščenje, razvrščanje, primerjava in preoblikovanje besedila.",
+    "sw": "Kihariri cha maandishi chenye zana za: kusafisha, kupanga, kulinganisha na kubadilisha maandishi.",
+    "ta": "உரையைச் சுத்தம் செய்ய, வரிசைப்படுத்த, ஒப்பிட மற்றும் மாற்றியமைக்க உதவும் கருவிகளைக் கொண்ட உரைத் திருத்தி.",
+    "te": "టెక్స్ట్ ఎడిటర్ సాధనాలు: టెక్స్ట్‌ను క్లీన్ చేయండి, సార్ట్ చేయండి, పోల్చండి మరియు మార్చండి.",
+    "ur": "ایک ٹیکسٹ ایڈیٹر جس میں ٹولز موجود ہیں: ٹیکسٹ کو صاف کریں، ترتیب دیں، موازنہ کریں اور تبدیل کریں۔",
+    "yo": "Olùṣàtúnṣe ọ̀rọ̀ pẹ̀lú àwọn irinṣẹ́: fọ ọ̀rọ̀ mọ́, tò ó, fi wé ara wọn, kí o sì yí i padà."
+  },
+  "brand": {
+    "color": "#7B1FA2",
+    "icon": "assets/icon.svg"
+  },
+  "defaultLayout": "ribbon",
+  "fileTypes": [
+    ".txt",
+    ".md",
+    ".markdown",
+    ".log",
+    ".csv",
+    ".tsv",
+    ".srt"
+  ],
+  "locales": "locales/",
+  "search": [
+    {
+      "id": "count",
+      "labelKey": "scribe.start.count",
+      "params": {
+        "tool": "count"
+      }
+    },
+    {
+      "id": "compare",
+      "labelKey": "scribe.start.compare",
+      "params": {
+        "compare": "typed"
+      }
+    },
+    {
+      "id": "find-in-folder",
+      "labelKey": "scribe.folder.title",
+      "params": {
+        "folderSearch": "1"
+      }
+    },
+    {
+      "id": "replace",
+      "labelKey": "scribe.tool.replace",
+      "params": {
+        "tool": "replace"
+      }
+    },
+    {
+      "id": "replaceMany",
+      "labelKey": "scribe.tool.replaceMany",
+      "params": {
+        "tool": "replaceMany"
+      }
+    },
+    {
+      "id": "sortLines",
+      "labelKey": "scribe.tool.sortLines",
+      "params": {
+        "tool": "sortLines"
+      }
+    },
+    {
+      "id": "removeDuplicates",
+      "labelKey": "scribe.tool.removeDuplicates",
+      "params": {
+        "tool": "removeDuplicates"
+      }
+    },
+    {
+      "id": "countLines",
+      "labelKey": "scribe.tool.countLines",
+      "params": {
+        "tool": "countLines"
+      }
+    },
+    {
+      "id": "filterLines",
+      "labelKey": "scribe.tool.filterLines",
+      "params": {
+        "tool": "filterLines"
+      }
+    },
+    {
+      "id": "reverseLines",
+      "labelKey": "scribe.tool.reverseLines",
+      "params": {
+        "tool": "reverseLines"
+      }
+    },
+    {
+      "id": "shuffleLines",
+      "labelKey": "scribe.tool.shuffleLines",
+      "params": {
+        "tool": "shuffleLines"
+      }
+    },
+    {
+      "id": "numberLines",
+      "labelKey": "scribe.tool.numberLines",
+      "params": {
+        "tool": "numberLines"
+      }
+    },
+    {
+      "id": "emptyLines",
+      "labelKey": "scribe.tool.emptyLines",
+      "params": {
+        "tool": "emptyLines"
+      }
+    },
+    {
+      "id": "joinLines",
+      "labelKey": "scribe.tool.joinLines",
+      "params": {
+        "tool": "joinLines"
+      }
+    },
+    {
+      "id": "splitLines",
+      "labelKey": "scribe.tool.splitLines",
+      "params": {
+        "tool": "splitLines"
+      }
+    },
+    {
+      "id": "changeCase",
+      "labelKey": "scribe.tool.changeCase",
+      "params": {
+        "tool": "changeCase"
+      }
+    },
+    {
+      "id": "reverseText",
+      "labelKey": "scribe.tool.reverseText",
+      "params": {
+        "tool": "reverseText"
+      }
+    },
+    {
+      "id": "cleanSpaces",
+      "labelKey": "scribe.tool.cleanSpaces",
+      "params": {
+        "tool": "cleanSpaces"
+      }
+    },
+    {
+      "id": "trimLines",
+      "labelKey": "scribe.tool.trimLines",
+      "params": {
+        "tool": "trimLines"
+      }
+    },
+    {
+      "id": "quotes",
+      "labelKey": "scribe.tool.quotes",
+      "params": {
+        "tool": "quotes"
+      }
+    },
+    {
+      "id": "removeDiacritics",
+      "labelKey": "scribe.tool.removeDiacritics",
+      "params": {
+        "tool": "removeDiacritics"
+      }
+    },
+    {
+      "id": "repairRomanian",
+      "labelKey": "scribe.tool.repairRomanian",
+      "params": {
+        "tool": "repairRomanian"
+      }
+    },
+    {
+      "id": "restoreRomanian",
+      "labelKey": "scribe.tool.restoreRomanian",
+      "params": {
+        "tool": "restoreRomanian"
+      }
+    },
+    {
+      "id": "tabsToSpaces",
+      "labelKey": "scribe.tool.tabsToSpaces",
+      "params": {
+        "tool": "tabsToSpaces"
+      }
+    },
+    {
+      "id": "spacesToTabs",
+      "labelKey": "scribe.tool.spacesToTabs",
+      "params": {
+        "tool": "spacesToTabs"
+      }
+    },
+    {
+      "id": "stripHtml",
+      "labelKey": "scribe.tool.stripHtml",
+      "params": {
+        "tool": "stripHtml"
+      }
+    },
+    {
+      "id": "webPageText",
+      "labelKey": "scribe.tool.webPageText",
+      "params": {
+        "tool": "webPageText"
+      }
+    },
+    {
+      "id": "fillerText",
+      "labelKey": "scribe.tool.fillerText",
+      "params": {
+        "tool": "fillerText"
+      }
+    },
+    {
+      "id": "sampleData",
+      "labelKey": "scribe.tool.sampleData",
+      "params": {
+        "tool": "sampleData"
+      }
+    },
+    {
+      "id": "randomText",
+      "labelKey": "scribe.tool.randomText",
+      "params": {
+        "tool": "randomText"
+      }
+    }
+  ]
+}

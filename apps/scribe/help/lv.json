@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Teksti un faili",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Redaktors",
+          "body": [
+            "Scribe ir vienkārša teksta redaktors ar rīkiem blakus. Katram tekstam ir sava cilne; teksts ir vidū, rīku panelis sānā, un zem tā ir faktu rinda.",
+            "Kad Scribe tiek atvērts, tas vispirms jautā, ko vēlaties darīt: skaitīt vārdus, meklēt un aizstāt, noņemt dublikātus, salīdzināt divus tekstus, kārtot rindas, apgriezt tekstu, rakstīt aizpildījuma vai nejaušu tekstu. Katra izvēle atver tekstu ar attiecīgo rīku blakus; „Tukšs teksts“ atver tikai tekstu, un zemāk ir uzskaitīti nesen atvērtie teksti.",
+            {
+              "points": [
+                "Fails → Jauns teksts (Ctrl+N) sāk tukšu tekstu.",
+                "Fails → Atvērt (Ctrl+O) atver vienu vai vairākus failus, katru savā cilnē. Tiek atvērts jebkurš fails, kurā ir teksts: .txt, .md, .csv, .log, .srt, pirmkods un citi.",
+                "Rediģēt → Atsaukt (Ctrl+Z) un Atcelt atsaukšanu (Ctrl+Y) iet cauri visam, kas ar tekstu darīts; rīks vai recepte skaitās viens solis.",
+                "Rediģēt → Meklēt un aizstāt (Ctrl+F) atver redaktorā joslu, kas pāriet no vienas atbilstības uz nākamo.",
+                "Rediģēt → Atlasīt visu (Ctrl+A)."
+              ]
+            },
+            "Rinda zem teksta rāda, kur ir kursors, cik ir atlasīts, rindu, vārdu un rakstzīmju skaitu, faila kodējumu un to, kā beidzas tā rindas.",
+            "Arī logā ievilkti faili tiek atvērti, katrs kā jauns teksts ar faila nosaukumu, kodējumu un rindu beigām. Programma saņem ievilktā faila saturu, bet ne tā atrašanās vietu diskā, tāpēc, saglabājot tiek jautāts, kur; faili, kas lielāki par 64 MB, jāatver ar Fails → Atvērt.",
+            "Jauns teksts, kamēr tas ir tukšs, uzskaita nesen atvērtos tekstus: noklikšķiniet uz kāda, lai to atvērtu. „Aizmirst sarakstu“ to iztukšo; saraksts tiek glabāts tikai šajā datorā."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Saglabāt un Saglabāt kā",
+          "body": [
+            "Nekas nemaina failu diskā, līdz saglabājat. Punkts uz cilnes nozīmē, ka tekstā ir izmaiņas, kuru nav tā failā, un, aizverot šādu cilni, vispirms tiek jautāts.",
+            {
+              "points": [
+                "Saglabāt (Ctrl+S) ieraksta tekstu pāri tā failam. Jaunam tekstam tiek jautāts, kur.",
+                "Saglabāt kā (Ctrl+Shift+S) ieraksta to jaunā failā, kas pēc tam ieņem cilnes vietu, un viss, ko var atsaukt, saglabājas; vecais fails paliek, kāds bija."
+              ]
+            },
+            "Fails tiek ierakstīts pilnībā vai nemaz: ja ierakstīšana neizdodas, iepriekšējais fails paliek, kāds bija.",
+            {
+              "note": "Fails tiek saglabāts tāpat, kā tika atvērts: tajā pašā kodējumā, ar tām pašām rindu beigām. Gan Windows, gan Linux rakstīts teksts paliek tāds, kāds bija."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodējumi un rindu beigas",
+          "body": [
+            "Kodējums ir veids, kā burti tiek glabāti kā baiti. Scribe nolasa, ko fails pats par sevi saka, un min, ja tas neko nesaka. Lielākā daļa mūsdienu failu ir UTF-8; vecāki faili no Centrāleiropas bieži ir windows-1250.",
+            {
+              "points": [
+                "Burti izskatās nepareizi (Ã£ ă vietā vai kvadrātiņi): Fails → „Nolasīt vēlreiz citā kodējumā…“ un izvēlieties to, kurā fails tika rakstīts.",
+                "Lai saglabātu citā kodējumā, izvēlieties to rindā zem teksta un pēc tam saglabājiet. Ja tekstā ir burti, ko šis kodējums nevar ierakstīt, Scribe pasaka, kuri, un neko neieraksta.",
+                "Rindu beigas (Windows CRLF, Linux un macOS LF, vecais Mac CR) tiek mainītas tajā pašā vietā. Ja failā ir jauktas rindu beigas, tas tiek norādīts; saglabājot visām tā rindām tiek dotas vienādas."
+              ]
+            },
+            "To, ar ko sākas jauns teksts, izvēlas iestatījumos."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Kā tiek rādīts teksts",
+          "body": [
+            {
+              "points": [
+                "Viss izvēlnē Skats ir slēdži: ieslēgts — redzams, izslēgts — nav.",
+                "Teksts: Aplauzt garas rindas (Alt+Z) — rinda, kas garāka par logu, turpinās zemāk, un teksts saglabā savas rindas; Rindu numuri; Rezultāts blakus tekstam.",
+                "Blakus tekstam: Rīki (Ctrl+T), Receptes, Statistika. Panelis rāda tikai ieslēgtās daļas; ja nav ieslēgta neviena, paneļa nav.",
+                "Rādīti rīki: katru rīku grupu (Meklēt un aizstāt, Rindas, Reģistrs, Tīrīšana, Rakstīt tekstu) var izņemt no paneļa. Rīks, kas izvēlēts izvēlnē Formāts vai Rīki, tiek rādīts jebkurā gadījumā: tā daļa un grupa atgriežas pašas.",
+                "Dubultbultiņa paneļa augšā to sakļauj šaurā joslā pie malas, no kuras katra tā daļa ir viena klikšķa attālumā; velciet tā malu, lai to padarītu platāku vai šaurāku.",
+                "Burti un to izmērs tiek izvēlēti iestatījumos."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Ļoti lieli faili",
+          "body": [
+            "Fails, kas lielāks par 64 MB, netiek ievietots redaktorā: tas atveras cilnē, kas to rāda pa lapai ar 500 rindām, nolasot no faila, kamēr pārvietojaties. Gigabaitiem lieli faili šādi atveras tik ilgā laikā, cik vajag, lai tiem vienreiz izietu cauri.",
+            {
+              "points": [
+                "„Iepriekšējā lapa“ un „Nākamā lapa“ pārvietojas pa to; rindas numurs un „Doties“ pāriet uz jebkuru rindu.",
+                "Meklēšana pārskata visu failu ar tām pašām izvēlēm kā citur un uzskaita atrastās vietas: noklikšķiniet uz kādas, lai pārietu uz tās rindu. Garš saraksts tiek rādīts pa daļām ar „Meklēt vairāk“.",
+                "„Izpildīt recepti visam failam…“ ieraksta rezultātu jūsu izvēlētā mapē ar to pašu nosaukumu. Pats fails šeit nekad netiek mainīts.",
+                "„Atvērt visu redaktorā“ tomēr ievieto to redaktorā, lai to mainītu ar roku. Tas var būt lēni, un tam vajag atmiņu, kas vairākas reizes pārsniedz faila izmēru."
+              ]
+            },
+            {
+              "note": "Failus, kas rakstīti ar diviem baitiem uz burtu (UTF-16), nevar rādīt pa lapām. Recepte izpildes laikā tur visu failu atmiņā: ierobežojums ir datora atmiņa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rīki",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Kā darbojas rīki",
+          "body": [
+            "Rīki atrodas panelī blakus tekstam, grupās. Noklikšķiniet uz rīka, lai redzētu tā izvēles, tad uz „Pielietot tekstam“.",
+            {
+              "points": [
+                "Ja kaut kas ir atlasīts, rīks maina tikai atlasi; ja nekas nav atlasīts — visu tekstu. Paneļa augšā ir norādīts, kuru no tiem.",
+                "Zem pogas rīks pasaka, ko izdarīja: cik rindu vai vietu tas mainīja.",
+                "Katrs rīks ir viens solis: „Atsaukt“ to atceļ pilnībā.",
+                "Katrs rīks ir arī izvēlnēs un komandu meklēšanā: tie, kas maina teksta formu (rindas, reģistrs, tīrīšana), ir izvēlnē Formāts, pārējie — izvēlnē Rīki. Izvēloties kādu tur, panelis atveras pie tā izvēlēm."
+              ]
+            },
+            "Izvēlnē Formāts rīks, kas būtībā ir viena izvēle, ir izvērsts savās opcijās: katrs reģistra maiņas veids, katrs pēdiņu veids, katrs teksta apgriešanas veids ir atsevišķa komanda, kas atver rīku ar šo opciju izvēlētu. Ja logs grupai ir par šauru, grupa kļūst par vienu pogu, kas atver visu sarakstu.",
+            "Rīki darbojas šajā datorā. Teksts no tā netiek nosūtīts."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Rezultāts pirms pielietošanas",
+          "body": [
+            "Kamēr rīks ir atvērts, tas, ko tas dotu, tiek rādīts blakus tekstam, rūtī „Rezultāts“. Tekstā nekas nemainās, līdz izvēlaties „Pielietot tekstam“. Rezultāts seko līdzi: mainiet izvēli vai tekstu, un tas tiek izveidots no jauna.",
+            {
+              "points": [
+                "Teksts un rezultāts atrodas blakus, katrs zem vienāda augstuma galvenes, tāpēc vienas un tās pašas rindas sākas vienā augstumā; tie ritinās kopā (ķēdes poga to izslēdz).",
+                "Rindas, kas mainītos, ir iezīmētas, un rindas daļa, kas mainās, ir iezīmēta tumšāk; rindām, kas tikai pārvietotos, un jaunām rindām katrām ir sava krāsa. Rindas, kas tiktu mainītas vai izņemtas, ir iezīmētas arī jūsu tekstā.",
+                "Zem nosaukumiem: kas notiktu skaitļos — mainītās, pārvietotās, jaunās, izņemtās rindas; rindas un rakstzīmes pirms un pēc.",
+                "Zem rezultāta: rindas, kas tiktu izņemtas. Noklikšķiniet uz kādas, lai pārietu uz to tekstā.",
+                "Rezultāta mazās pogas: kopēt to, atvērt kā jaunu tekstu, salīdzināt to ar tekstu cilnē, ritināt kopā, novietot rezultātu zem teksta, nevis blakus, paslēpt to. Tekstam ir savas: atsaukt, atcelt atsaukšanu, kopēt, ielīmēt vietā, atlasīt visu, notīrīt.",
+                "Velciet joslu starp abiem, lai vienam dotu vairāk vietas; dubultklikšķis tos atkal padara vienādus."
+              ]
+            },
+            "Pēc „Pielietot tekstam“ rūts „Rezultāts“ to paziņo („Pielietots. Teksts kreisajā pusē tagad ir rezultāts.“) un piedāvā „Atsaukt“ un „Salīdzināt ar iepriekšējo“, kas atver to pašu salīdzinājumu pirms un pēc. Rezultāts atkal tiek rādīts, tiklīdz maināt tekstu vai rīka izvēli.",
+            {
+              "note": "Skats → „Rezultāts blakus tekstam“ izslēdz un ieslēdz šo rūti. Ļoti garam tekstam (vairāk nekā divi miljoni rakstzīmju) iepriekš nekas netiek rādīts: pielietojiet rīku, un „Atsaukt“ to atgriezīs."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Aizstāt visur",
+          "body": [
+            "Aizstāj uzreiz visās vietās, kur kaut kas atrasts. Kamēr rakstāt, ko meklēt, Scribe pasaka, cik vietās tas atrasts, un iezīmē tās tekstā, lai jūs redzētu, kas mainīsies, pirms pielietojat.",
+            {
+              "points": [
+                "„Regulārā izteiksme“: meklējamais teksts ir šablons. Laukā „Aizstāt ar“ $1, $2… apzīmē to, ko atrada šablona grupas.",
+                "„Reģistrs ir svarīgs“: a un A ir dažādi burti.",
+                "„Tikai veseli vārdi“: „kā“ netiek atrasts vārdā „kāja“.",
+                "„Saglabāt aizstātā teksta reģistru“: aizstājot „kaķis“ ar „suns“, „Kaķis“ kļūst par „Suns“ un „KAĶIS“ par „SUNS“."
+              ]
+            },
+            {
+              "points": [
+                "„Vairāk izvēļu“ → „Ievietot…“: tajā, kas tiek ievietots, var būt tukšas vietas, ko aizpilda katrā atbilstībā. {counter} skaita 1, 2, 3… ({counter:10} sāk no 10, {counter:10:5} palielinās par 5); {date} un {time} ir jūsu datora datums un laiks; {uuid} ir identifikators; {random} ir 8 nejauši burti un cipari ({random:12} — 12).",
+                "Zem meklējamā Scribe arī pasaka, cik rindās ir atbilstības un cik dažādu tekstu tās ir."
+              ]
+            },
+            "„Aizstāt vairākus vienlaikus“ izpilda pāru sarakstu vienā solī. Rakstiet vienu pāri rindā šādi: ko meklēt => ar ko aizstāt. Tie tiek izpildīti no pirmā līdz pēdējam, katrs ar to, ko atstāja iepriekšējais; tukša otrā puse tekstu izņem.",
+            {
+              "note": "Šablons nevar iesaldēt programmu: tam vajadzīgais laiks aug līdz ar teksta garumu un ne ātrāk. Tāpēc nav pieejami šabloni, kas atsaucas uz to, ko jau atraduši (\\1)."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Rindas",
+          "body": [
+            {
+              "points": [
+                "Kārtot rindas pēc: burtiem, kā to dara vārdnīca, programmas valodā vai jūsu izvēlētā (rumāņu valodā ă ir pēc a; zviedru valoda ä liek pēc z, vācu — blakus a); burtiem ar skaitļiem kā skaitļiem (file2 pirms file10); skaitļa, ar ko sākas katra rinda; garuma; vārdu skaita; datuma, ar ko sākas katra rinda (05.03.2024, 2024-03-05, ar laiku vai bez); interneta adresēm; versiju numuriem (1.2.10 pēc 1.2.9); virsrakstiem, kur artikls sākumā netiek ņemts vērā; jūsu uzrakstītas secības (mazs, vidējs, liels); vai bez jebkādas secības.",
+                "Rindas, kurās nav nekā, pēc kā kārtot (nav skaitļa, nav datuma, vērtība, kuras nav jūsu uzrakstītajā secībā), paliek beigās neatkarīgi no tā, kā kārtotas pārējās: no mazākā vai no lielākā.",
+                "Vairāk izvēļu kārtošanai: salīdzināt, sākot no vārda vai rakstzīmes, vai vienu tabulas kolonnu (ar to, kas atdala kolonnas); paturēt pirmo rindu vietā kā virsrakstu; kārtot rindkopas, nevis rindas; un vispirms sakopt — apgriezt, izņemt tukšās rindas, izņemt dublikātus.",
+                "Noņemt dublētās rindas: paturēt pirmo, pēdējo vai nevienu no atkārtotajām rindām (paliek tikai tās, kas ir vienu reizi). Var neņemt vērā reģistru, atstarpes ap rindu, ciparus, interpunkciju un noteiktu rakstzīmju skaitu sākumā vai beigās; salīdzināt var tikai kolonnu vai tikai to, ko atrod šablons. Tukšās rindas tiek uzskatītas kā pārējās, paturētas, izņemtas vai saliktas vienā.",
+                "Saskaitīt atkārtotas rindas: atstāj katru rindu vienu reizi, pirms tās ierakstot, cik reižu tā bija sastopama, — visbiežāk atkārtotās vispirms, visretāk atkārtotās vai tādā secībā, kādā tās ir tekstā.",
+                "Atstāt vai izdzēst rindas: meklē kaut ko katrā rindā un atstāj tikai rindas, kurās tas ir, vai tikai tās, kurās tā nav.",
+                "Apgriezt rindu secību; Sajaukt rindas.",
+                "Numurēt rindas: pirmais numurs, kas stāv aiz tā, nulles priekšā, lai numuri būtu vienā līnijā, tukšās rindas bez numura.",
+                "Tukšās rindas: izņemt visas vai atstāt vienu, kur to ir vairākas.",
+                "Apvienot rindas vienā ar jūsu izvēlēto atdalītāju starp tām; Sadalīt rindās pie katra komata, semikola vai jebkā cita. Visur, kur ierakstāt to, kas stāv starp elementiem (numurēšana, apvienošana, sadalīšana, skaitīšana), \\t apzīmē tabulāciju, ko laukā ierakstīt nevar."
+              ]
+            },
+            {
+              "note": "Izvēle, kurai ir nozīme tikai kopā ar citu, tiek rādīta tikai tad: kolonna — tiklīdz salīdzināt pēc kolonnas. Retāk vajadzīgās izvēles ir zem „Vairāk izvēļu“."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Reģistrs",
+          "body": [
+            "Mainīt reģistru: teikuma sākums ar lielo burtu, katrs vārds ar lielo burtu, visi lielie burti, visi mazie burti, apgriezts, kā arī veidi, kā kodā raksta nosaukumus: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Lielie burti seko katra alfabēta noteikumiem, ne tikai angļu.",
+            "Grupā „Virziens“ „Apgriezt tekstu“ apgriež otrādi katras rindas burtus vai tās vārdu secību, vai katra vārda burtus; „Kājām gaisā“ to uzraksta tā, lai to varētu lasīt no galda otras puses, un „Kā spogulī“ arī samaina zīmes, kurām ir kreisā un labā puse. Burti tiek skaitīti tā, kā tos skaita lasītājs: burts ar savām zīmēm paliek viens."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Tīrīšana",
+          "body": [
+            {
+              "points": [
+                "Sakārtot atstarpes: vairākas atstarpes kļūst par vienu; atstarpes rindu beigās tiek noņemtas.",
+                "Apgriezt rindu galus: abos galos, sākumā vai beigās.",
+                "Pēdiņas: taisnās, angļu, rumāņu, vācu vai franču.",
+                "Noņemt diakritiskās zīmes: ă kļūst par a, é par e. Tikai latīņu un grieķu alfabētā, kur burts bez savas zīmes joprojām ir tas pats burts.",
+                "Labot rumāņu burtus: ş un ţ (ar sediļu, ko raksta vecākas tastatūras) kļūst par ș un ț (ar komatu) — burtiem, ar kuriem raksta rumāņu valodā.",
+                "Tabulācijas par atstarpēm un atstarpes par tabulācijām, ar jūsu izvēlētu tabulācijas platumu.",
+                "Noņemt HTML tagus: tīmekļa lapas pirmkodam, kas ielīmēts tekstā. Tagi, skripti un stili tiek noņemti; paliek tas, ko redzētu lasītājs. Lai iegūtu lapu pēc tās adreses, izmantojiet rīku zem tā — „Tīmekļa lapas teksts“.",
+                "Tīmekļa lapas teksts: ierakstiet lapas adresi (example.com/page) un izvēlieties „Iegūt tekstu“. Tas, ko lasītājs redzētu šajā lapā, tiek ierakstīts kursora vietā, bez tagiem, skriptiem vai stiliem. Tas ir vienīgais Scribe rīks, kas pieslēdzas internetam, un tikai tad, kad lūdzat: lapu ielādē šajā datorā instalētais pārlūks (Microsoft Edge vai Google Chrome), kas darbojas bez loga un bez jūsu sīkfailiem vai pierakstīšanās; pati programma neko nesūta. Lapa, kurai jābūt pierakstītam, dod tikai to, ko redzētu svešinieks."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Rumāņu diakritisko zīmju atjaunošana",
+          "body": [
+            "Rumāņu teksts, kas rakstīts bez ă, â, î, ș, ț, tiek atkal uzrakstīts ar tiem.",
+            {
+              "steps": [
+                "Atveriet rīku grupā „Tīrīšana“ un izvēlieties „Pielietot tekstam“.",
+                "Vārdi, kuriem ir viena pareiza forma, tiek nomainīti uzreiz: „stiu“ kļūst par „știu“, „informatii“ — par „informații“.",
+                "Vārdi, kurus var izlasīt vairākos veidos (fata, fată, fața, față), tiek uzskaitīti zem pogas, katrs savā vietā tekstā. Katram noklikšķiniet uz pareizās formas.",
+                "Vai arī pirms pielietošanas atzīmējiet „Pašam izvēlēties ticamāko formu, ja vārds ir apšaubāms“: nekas netiek jautāts, un rezultāts ir jāizlasa."
+              ]
+            },
+            "Ja pietiek ar apkārtējiem vārdiem, Scribe izlemj pēc tiem: „o casa“ kļūst par „o casă“, „casa mea“ paliek, „pentru ca“ kļūst par „pentru că“.",
+            {
+              "note": "Tas ir veidots Scribe no bieži lietotu vārdu saraksta un galotnēm, kuras rumāņu valodā vienmēr raksta ar diakritiskajām zīmēm. Vārdi, ko tas nezina (reti vārdi, īpašvārdi), paliek, kā ierakstīti, un vārds, kas jau rakstīts ar diakritiskajām zīmēm, netiek aizskarts. Pirms sūtīšanas izlasiet rezultātu."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Teksta rakstīšana: aizpildteksts un nejaušs teksts",
+          "body": [
+            "Grupas „Rakstīt tekstu“ rīki neko nemaina: tie raksta. To, ko tie dod, ievieto kursora vietā vai atlases vietā.",
+            {
+              "points": [
+                "Aizpildteksts: rindkopas, teikumi, vārdi, saraksti, virsraksti vai lapas daļas (virsraksts, rindkopas, saraksts). Iespiedēju latīņu valodā (lorem ipsum), angļu, rumāņu valodā, ar biroja vai virtuves vārdiem vai jūsu pašu vārdiem. Vairāk izvēļu: īsi, vidēji vai gari teikumi; parasts teksts, Markdown, HTML vai JSON; virsrakstu līmenis; rakstzīmju ierobežojums (teksts tiek nogriezts pie vesela vārda un joprojām beidzas kā teikums); vārdi, kas jāizlaiž.",
+                "Izdomāti dati: vārdi, e-pasta adreses, tālruņu numuri, ielu adreses, datumi vai skaitļi, pa vienam rindā, no Rumānijas vai angliski runājošām valstīm. „Rindas pēc mana šablona“ raksta katru rindu tā, kā norādāt, ar {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} un {row} vietā tam, kas tiek izveidots, — tabula, kur kaut ko izmēģināt, vienā mirklī.",
+                "Nejaušs teksts: paroles (burti, cipari un zīmes, vismaz pa vienam no katra), burti, cipari, heksadecimāli skaitļi vai identifikatori (UUID), vienā vai daudzās rindās. Rakstzīmes, kuras viegli sajaukt (0 un O, 1, l un I), var izlaist.",
+                "Sēkla (zem „Vairāk izvēļu“) liek aizpildtekstam un izdomātajiem datiem katru reizi iznākt vienādiem ar to pašu skaitli; 0 katru reizi dod ko jaunu."
+              ]
+            },
+            {
+              "note": "Paroles tiek veidotas šajā datorā no operētājsistēmas nejaušības un netiek nekur sūtītas. Izdomātās e-pasta adreses beidzas ar example.com, kur pasts nevienu nesasniedz; nejauši izveidots tālruņa numurs var piederēt kādam, tāpēc nezvaniet uz to."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Receptes",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Paveiktā saglabāšana kā recepte",
+          "body": [
+            "Recepte ir rīku saraksts ar to izvēlēm, kas saglabāts ar nosaukumu un atkal izpildāms ar vienu klikšķi.",
+            {
+              "steps": [
+                "Pielietojiet tekstam vajadzīgos rīkus tādā secībā, kādā tos vēlaties.",
+                "Atveriet „Receptes“ paneļa augšā: tur ir uzskaitīti pielietotie rīki.",
+                "„Saglabāt kā recepti…“ un piešķiriet tai nosaukumu.",
+                "Vēlāk atveriet recepti un izvēlieties „Izpildīt tekstam“: visi tās soļi tiek izpildīti, un viens „Atsaukt“ tos visus atceļ."
+              ]
+            },
+            "Receptes tiek glabātas šajā datorā un ir pieejamas katrā tekstā."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Receptes mainīšana vai izveide no nulles",
+          "body": [
+            "„Mainīt…“ atvērtā receptē rāda tās nosaukumu un soļus. Katru soli var pārvietot augšup vai lejup, izņemt un dot tam citas izvēles; rīkus pievieno no saraksta zem soļiem. Nekas netiek saglabāts līdz „Saglabāt“.",
+            "„Jauna recepte“ sāk recepti bez soļiem, ko salikt tādā pašā veidā, iepriekš nepielietojot rīkus tekstam.",
+            {
+              "note": "Rīki, kas raksta tekstu (aizpildteksts, nejaušs teksts), nav receptes soļi: recepte maina tekstu."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Receptes izpilde failiem",
+          "body": [
+            {
+              "steps": [
+                "Atveriet recepti un sadaļā „Izpildīt failiem“ pievienojiet failus vai mapi (ar tās apakšmapēm).",
+                "Izvēlieties, kur nonāk rezultāti: citā mapē, kas atstāj failus, kādi tie ir, vai pāri pašiem failiem.",
+                "Izpildiet. Scribe pasaka, cik failu ierakstīts, cikiem nevajadzēja izmaiņu un kurus neizdevās apstrādāt un kāpēc."
+              ]
+            },
+            "Katrs fails tiek ierakstīts tajā kodējumā un ar tām rindu beigām, kas tam bija. Citā mapē faili saglabā mapes, kurās tie atradās, un fails, kas tur jau ir, nekad netiek pārrakstīts.",
+            {
+              "note": "Pašu failu pārrakstīšanu nevar atsaukt no Scribe. Ja faili ir svarīgi, saglabājiet kopiju."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistika, salīdzināšana un mapes",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistika",
+          "body": [
+            "„Statistika“ paneļa augšā parāda, no kā sastāv teksts vai atlase. Katru daļu var sakļaut.",
+            {
+              "points": [
+                "Augšā: vārdi, rakstzīmes ar atstarpēm un bez, teikumi, rindkopas, rindas, lapas un izmērs baitos.",
+                "Laiks: lasot klusām, runājot skaļi, rakstot ar tastatūru un rakstot ar roku.",
+                "Vārdi: cik ir atšķirīgu (un kāda daļa no visiem), burti vārdā, zilbes, garākais un īsākais vārds un cik vārdu ir katrā garumā.",
+                "Teikumi: vārdi teikumā, cik ir īsu, vidēju un garu, cik ir stāstījuma, jautājuma un izsaukuma teikumu, kā arī garākais un īsākais.",
+                "Lasāmības vieglums: vērtējums no 0 (ļoti grūti) līdz 100 (ļoti viegli) pēc formulas, kas izstrādāta teksta valodai. Formulas ir angļu, vācu, spāņu, franču, itāļu, nīderlandiešu, portugāļu un krievu valodai; valoda bez formulas vērtējumu nesaņem, jo citai valodai veidota formula maldinātu.",
+                "Visbiežāk lietotās frāzes: visbiežāk lietotie vārdi ar to daļu tekstā un vārdu pāri un trīs vārdu grupas, kas atkārtojas.",
+                "Vieta ierastajos ierobežojumos: cik rakstzīmju atlicis vai par cik pārsniegts virsrakstam, aprakstam, īsam ierakstam un citiem."
+              ]
+            },
+            "Vārdi un teikumi tiek atrasti pēc katras rakstības noteikumiem, tāpēc tiek saskaitīta arī ķīniešu, japāņu un taju valoda, kurā starp vārdiem neliek atstarpes. Ātrumus, ar kuriem aprēķina laikus, un to, cik vārdu ir lapā, iestata iestatījumos."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Divu tekstu salīdzināšana",
+          "body": [
+            {
+              "points": [
+                "Rīki → „Salīdzināt ar citu tekstu…“: redaktorā esošais teksts blakus tekstam, ko ierakstāt vai ielīmējat.",
+                "Rīki → „Salīdzināt ar failu…“: redaktorā esošais teksts, kāds tas ir tagad, blakus jūsu izvēlētam failam.",
+                "Rīki → „Salīdzināt divus tekstus…“: divi teksti, ierakstīti vai ielīmēti blakus.",
+                "Rīki → „Salīdzināt divus failus…“."
+              ]
+            },
+            "Abi teksti tiek rādīti blakus. Rindas, kas ir tikai pirmajā, ir iezīmētas kā noņemtas, rindas, kas ir tikai otrajā, — kā pievienotas, un mainītā rindā ir iezīmēti vārdi, kas atšķiras. Tiek rādīts tikai tas, kas atšķiras, ar dažām rindām apkārt; bultiņas pāriet no vienas atšķirības uz nākamo.",
+            "Reģistru, atstarpes, tukšās rindas, skaitļus un interpunkciju var ignorēt katru atsevišķi. „Vienā kolonnā“ rāda izņemto virs ievietotā, katru ar savu zīmi, nevis blakus. Blakus skaitiem Scribe pasaka, cik līdzīgi ir abi teksti, kā vienādo rindu daļu.",
+            "Teksts tiek parādīts, tiklīdz tas izvēlēts, vēl pirms otrs. Velciet joslu starp abiem tekstiem, lai vienam dotu vairāk vietas; kamēr teksti tiek ierakstīti, joslu zem lodziņiem velk augšup un lejup, lai dotu vairāk vietas lodziņiem vai salīdzinājumam. Dubultklikšķis atliek joslu atpakaļ.",
+            "Ja vairākas rindas pēc kārtas ir mainītas, katra tiek novietota blakus rindai, kurai tā ir vislīdzīgākā, lai starp tām pievienota vai izņemta rinda neliktu katrai nākamajai rindai izskatīties pārvērstai par nākamo.",
+            "„Ierakstiet vai ielīmējiet tekstus“ rāda lodziņu virs katras kolonnas; tas, ko tur rakstāt, tiek salīdzināts rakstīšanas laikā, un jebkurai pusei joprojām var izvēlēties failu."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Meklēšana un aizstāšana mapē",
+          "body": [
+            {
+              "steps": [
+                "Rīki → „Meklēt mapē…“ (Ctrl+Shift+F) un izvēlieties mapi. Tiek pārmeklētas arī tās apakšmapes.",
+                "Ierakstiet, ko meklēt, ar tām pašām izvēlēm kā „Aizstāt visur“. „Failu veidi“ ierobežo meklēšanu ar dažiem paplašinājumiem (txt, md, csv…).",
+                "Katra atbilstība tiek parādīta savā rindā, failu pa failam. Noklikšķiniet uz rindas, lai atvērtu failu tajā vietā.",
+                "Lai aizstātu: ierakstiet jauno tekstu, noņemiet atzīmi failiem, kurus neaiztikt, un izvēlieties „Ierakstīt failus“."
+              ]
+            },
+            "Nekas netiek ierakstīts, līdz to lūdzat, un tikai atzīmētajos failos. Katrs fails tiek ierakstīts tajā kodējumā un ar tām rindu beigām, kas tam bija.",
+            {
+              "note": "Slēptās mapes un tās, ko aizpilda programmas (.git, node_modules), tiek izlaistas, ja vien tās nepieprasāt. Faili, kas nav teksts, tiek izlaisti vienmēr."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Iestatījumi",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Scribe iestatījumi",
+          "body": [
+            "Fails → Iestatījumi atver programmas iestatījumus pie Scribe daļas.",
+            {
+              "points": [
+                "Redaktors: vienāda platuma burti vai programmas pašas burti, to izmērs, rindu aplaušana, rindu numuri un vai rīka rezultāts tiek rādīts pirms pielietošanas.",
+                "Jauns teksts: kā beidzas tā rindas un vai tā fails sākas ar baitu secības zīmi (BOM).",
+                "Statistika: lasīšanas, runāšanas, rakstīšanas ar tastatūru un rakstīšanas ar roku ātrums un cik vārdu ir lapā.",
+                "Scribe komandu taustiņi."
+              ]
+            },
+            "Katram iestatījumam ir poga, kas to atjauno tādu, kāds tas ir programmai sākotnēji."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Par Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Par Scribe",
+          "body": [
+            "Scribe ir Syntelab Creative teksta lietotne: redaktors ar rīkiem blakus tekstam. Tā parāda, ko rīks darītu, pirms to izdara, tīra un pārkārto sarakstus, meklē un aizstāj tekstā vai visā mapē, salīdzina divus tekstus, parāda, no kā teksts sastāv, raksta aizpildtekstu un izdomātus datus un saglabā to, ko bieži darāt, kā receptes atkārtotai izpildei.",
+            "Viss notiek šajā datorā. Tekstu izmēram vai skaitam nav noteikta ierobežojuma: robežas ir datora atmiņa un tas, ko spēj mūsdienu tehnoloģijas.",
+            "Tā ir jauna. Ja tā nepietiekami labi tiek galā ar jūsu tekstiem, pastāstiet mums, izmantojot Palīdzība → Atsauksmes: tā mēs zinām, pie kā strādāt."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "No kā Scribe ir veidota",
+          "body": [
+            {
+              "points": [
+                "Redaktors: CodeMirror.",
+                "Kodējumu lasīšana un rakstīšana: encoding_rs, ar chardetng, lai uzminētu kodējumu failam, kas to nenorāda.",
+                "Meklēšana un aizstāšana: Rust regex bibliotēka, kuras šabloni nevar iesaldēt programmu.",
+                "Kārtošana tā, kā to dara katra valoda, un vārdu un teikumu atrašana jebkurā rakstībā: ICU4X, Unicode bibliotēka.",
+                "Tekstu salīdzināšana: similar bibliotēka.",
+                "Rumāņu diakritiskās zīmes: vārdu saraksts un noteikumi, kas uzrakstīti Scribe."
+              ]
+            },
+            "Tas, kas kopīgs ar pārējo programmu, ir aprakstīts sadaļā „Par Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ko Scribe vēl neprot",
+          "body": [
+            {
+              "points": [
+                "Ļoti liels fails tiek lasīts pa lapai un mainīts tikai ar receptēm; lai to mainītu ar roku, tas jāatver viss, un tas prasa atmiņu.",
+                "Rumāņu diakritisko zīmju atjaunošana zina bieži lietotos vārdus; reti vārdi un īpašvārdi paliek, kā ierakstīti.",
+                "Pareizrakstības pārbaudes nav.",
+                "Šeit teksts netiek izvilkts no PDF vai biroja dokumentiem; tos atver PDF Organizer.",
+                "Redaktors neiekrāso kodu vai Markdown.",
+                "Logā ievilkts fails tiek atvērts kā jauns teksts: programmai netiek pateikts, kur fails atrodas, tāpēc, saglabājot tiek jautāts, kur."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+.settings {
+  display: flex;
+  align-items: flex-start;
+  min-height: 100%;
+}
+
+/* The parts of Settings, on the side; stays in view while a long part scrolls. */
+.nav {
+  position: sticky;
+  inset-block-start: 0;
+  display: flex;
+  flex: 0 0 240px;
+  flex-direction: column;
+  gap: 2px;
+  padding-block: 32px;
+  padding-inline: 16px;
+}
+
+.navTitle {
+  margin: 0 0 12px;
+  padding-inline: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navGroup {
+  margin-block-start: 16px;
+  padding-inline: 12px;
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 38px;
+  padding-inline: 12px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  font-weight: 500;
+  text-align: start;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background: var(--sc-surface-2);
+}
+
+.navItem[aria-current='page'] {
+  background: var(--sc-accent-soft);
+}
+
+/* The app's icon: in its color, or white on a square of it (ui-kit `base.css`). */
+.navIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin: -3px;
+  border-radius: var(--sc-radius-s);
+  background: var(--app-tile, transparent);
+  color: var(--app-tile-ink, currentColor);
+}
+
+.navDot {
+  background: var(--app-color, var(--sc-muted));
+  width: 12px;
+  height: 12px;
+  margin-inline: 2px;
+  border-radius: var(--sc-radius-s);
+}
+
+.view {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 0;
+  max-width: 960px;
+  padding-block: 32px;
+  padding-inline: 24px 40px;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.heading {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.note {
+  margin: 0;
+  color: var(--sc-muted);
+}
+
+@media (max-width: 760px) {
+  .settings {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav {
+    position: static;
+    flex: none;
+    padding-block-end: 0;
+  }
+}

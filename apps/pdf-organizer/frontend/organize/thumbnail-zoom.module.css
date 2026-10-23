@@ -1,0 +1,25 @@
+.zoom {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+}
+
+/* As small as the other controls of the strip it sits in. */
+.button {
+  width: var(--sc-control-height-compact);
+  min-height: var(--sc-control-height-compact);
+}
+
+.slider {
+  width: 112px;
+  margin-inline: 4px;
+  accent-color: var(--sc-accent);
+  cursor: pointer;
+}
+
+/* The sharper picture of a page shown large, over its thumbnail. */
+.sharp {
+  position: absolute;
+  inset: 0;
+  display: block;
+}

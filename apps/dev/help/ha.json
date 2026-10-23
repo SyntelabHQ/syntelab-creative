@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Yadda za ka sami hanya",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Shafi na farko",
+          "body": [
+            "Tab na Dev yana buɗewa a shafin farko, inda dukkan kayan aiki suke, an haɗa su kamar a menu: Lamba, Bayanai, Samarwa, Bincike, Hanyar sadarwa.",
+            {
+              "points": [
+                "Rubuta a \"Nemo kayan aiki\" don taƙaita jerin.",
+                "Alamar liƙa a kan kayan aiki tana riƙe shi a sama, ƙarƙashin Waɗanda aka liƙa.",
+                "Kayan aiki yana buɗewa a tab ɗin; Fayil → Dukkan kayan aiki yana komawa shafin farko. A Saituna za ka iya sa kowane kayan aiki ya buɗe a tab nasa, kuma sabon tab ya buɗe a kan kayan aikin da aka yi amfani da shi na ƙarshe."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Manna komai",
+          "body": [
+            "Akwatin da ke saman shafin farko yana karɓar duk abin da ka manna kuma yana faɗin abin da yake kama da shi: token, takardar shaida, JSON, UUID, tambarin lokaci, jadawalin cron, URL, XML ko HTML, SQL, Base64, checksum, tebur, YAML.",
+            "A ƙarƙashin kowane hasashe akwai kayan aikin da suke aiki a kan irin wannan abu, wanda ya fi dacewa a farko. Danna ɗaya: yana buɗewa da rubutun a cikinsa tuni kuma an gudanar da shi.",
+            {
+              "note": "Abin da ka manna yana zama a akwatin har sai ka share shi ko ka rufe tab ɗin. Ba a taɓa rubuta shi a faifai ba."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Yadda aka tsara kayan aiki",
+          "body": [
+            "Yawancin kayan aiki suna da tsari ɗaya: zaɓuɓɓuka a layi a sama, shigarwa a gefe ɗaya, fitarwa a ɗayan gefe, da layi a ƙasa da ke faɗin abin da ya faru.",
+            {
+              "points": [
+                "Ana sake samar da sakamakon duk lokacin da shigarwa ko wani zaɓi ya canza, kuma ana nuna shi a fitarwa; \"Yana gudana da kansa\" a layin zaɓuɓɓuka yana faɗin haka. Rubutu mai tsawo da yawa da ba za a iya gudanar da shi a kowane maɓalli ba, ko fayil da ya fi 128 MB, ne kawai ke jiran maɓallin Gudanar, wanda ke bayyana a lokacin. Ctrl+Enter yana gudanar da kayan aikin a kowane lokaci.",
+                "Sakamakon da ba rubutu ba ne (hoton da aka fassara daga Base64, gzip) ana nuna shi a matsayin samfoti: hoto kamar yadda yake, duk wani abu kuma ta irinsa, girmansa da bytes ɗinsa na farko. Kwafi yana kwafa shi a matsayin Base64 a lokacin, kuma ana iya kwafa hoto a matsayin hoto. Haka ma fayil ɗin shigarwa da ba rubutu ba ne.",
+                "Buɗe fayil, Manna da Share suna saman shigarwa; Kwafi da Ajiye a fayil suna saman fitarwa. Ana kuma iya jefa fayil a kan shigarwa.",
+                "Ana faɗin abin da ke kuskure a shigarwa da kalmomi, tare da layinsa da ginshiƙinsa, kuma ana yi masa alama a editan.",
+                "Menu na Kallo yana sanya sassan biyu gefe da gefe ko ɗaya a ƙarƙashin ɗaya, yana nuna lambobin layi kuma yana naɗe dogayen layuka; ana iya jan layin da ke tsakanin sassan.",
+                "Ana tuna zaɓuɓɓukan da ka zaɓa don lokaci na gaba. Abin da ka rubuta ba a tunawa da shi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Ƙone, da abin da ake adanawa",
+          "body": [
+            "Ƙone, a ƙasan dama na kowane kayan aiki, yana zubar da shi nan take: shigarwa, sakamakon, duk abin da aka rubuta a akwatunansa, da abin da editocinsa za su iya sokewa.",
+            "Dev yana adana saitunansa kawai, kayan aikin da ka liƙa, sunan kayan aikin da aka yi amfani da shi na ƙarshe da zaɓuɓɓukan kowane kayan aiki. Babu abin da ka rubuta, ka manna, ka buɗe ko ka ƙirƙira a kayan aiki da ake rubutawa a faifai, a rajista (log) ko a jerin abubuwan kwanan nan. Musamman asirai: maɓallai, jimlolin sirri, tokens da kanun buƙata suna zama a tab ɗin ne kawai, ba a wani wuri ba.",
+            "Abu ɗaya yana jira a faifai na ɗan lokaci: sakamakon fayil, da sakamakon da ba rubutu ba ne, ana rubuta su a wata folda ta shirin kansa don a iya nuna su sannan a ajiye su. Ana goge kowanne idan wani sakamako ya maye gurbinsa, idan ka ƙone kayan aikin ko ka rufe shi, kuma a kowane hali idan Dev ya sake farawa."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Fayiloli na kowane girma",
+          "body": [
+            "Babu iyakar da aka sanya wa girman fayil. Fayil ƙarami da za a iya nunawa (har zuwa 16 MB) ana sanya shi a editan. Wanda ya fi haka girma, ko wanda ba rubutu ba ne, yana zama a faifai: ana nuna farkonsa (ko samfoti), kayan aikin yana karanta shi daga inda yake, kuma ana nuna sakamakonsa kamar na rubutu. Ajiye a fayil sannan yana kwafa sakamakon zuwa inda ka zaɓa.",
+            {
+              "points": [
+                "Aiki mai tsawo yana nuna kati da ke nuna inda ya kai da maɓallin Tsaya.",
+                "Fayil na rubutu a wani encoding ba UTF-8 ba (UTF-16, Windows-1252 da makamantansu) ana karanta shi a matsayin rubutu idan ya isa ƙarami da za a nuna shi, kuma ana faɗin encoding ɗin. Abin da ka ajiye daga Dev UTF-8 ne.",
+                "Fayil da aka jefa a kan kayan aiki ana buɗe shi kamar da Buɗe fayil. Inda taga ba zai iya gane inda yake ba, ana karɓar shi har zuwa 16 MB, kamar an manna shi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Fayiloli da yawa da dukan foldoji",
+          "body": [
+            "Inda kayan aiki yake da \"Aiki a kan: Rubutu / Fayiloli\", Fayiloli yana gudanar da shi a kan fayiloli da yawa a lokaci ɗaya.",
+            {
+              "steps": [
+                "Ƙara fayiloli, ko folda (tare da foldojin da ke ƙarƙashinta, idan ka bar wannan a kunne).",
+                "Ana karanta kowane fayil sau ɗaya yayin da aka ƙara shi kuma a faɗi ko kayan aikin yana karɓar sa.",
+                "Zaɓi inda sakamakon zai tafi: a gefen kowane fayil da sabon suna, a cikin folda (ana kiyaye foldojin), ko a kan fayilolin da kansu, wanda yake sake tambayarka sau ɗaya. Hash kuma yana iya nuna sakamakon a jerin kawai.",
+                "Danna fayil a cikin jerin don ganin sakamakonsa shi kaɗai a ƙarƙashin zaɓuɓɓuka, kafin a rubuta komai.",
+                "Gudanar. Fayil mai kuskure ba ya tsayar da sauran; kowanne yana faɗin yadda ya fito."
+              ]
+            },
+            {
+              "note": "Sakamako ba ya taɓa faɗawa kan fayil da ke can tuni sai dai idan ka nemi haka."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Menu na danna-dama na Windows Explorer",
+          "body": [
+            "Kunna shi a Saitunan shirin, ƙarƙashin Windows Explorer. Komai an tattara shi a layi ɗaya, \"Syntelab Creative\"; a Windows 11 yana ƙarƙashin \"Show more options\".",
+            {
+              "points": [
+                "Buɗe a Syntelab Dev: a kan irin fayilolin da wani kayan aiki yake karantawa (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz da makamantansu). Fayil ɗin yana buɗewa a kayan aikin da ya dace da irinsa.",
+                "Checksums: a kan kowane fayil ko folda. Ana jera digest, kowanne a gefen fayil ɗinsa, kuma ba a rubuta komai.",
+                "Duban hex: a kan kowane fayil.",
+                "Kwatanta: fayiloli biyu suna shiga gefe biyu na Bambance-bambance (diff); foldoji biyu suna shiga kwatancen foldoji."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lamba",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Yana mayar da bytes zuwa Base64 da akasin haka. Sanya lamba yana karɓar kowane fayil; warware lamba yana dawo da bytes, ana nuna su idan rubutu ne kuma ana ajiye su a fayil idan ba rubutu ba ne.",
+            {
+              "points": [
+                "Haruffa: na yau da kullum, ko na URL (- da _).",
+                "Cika da =, da layuka na haruffa 64, 76 ko kowane adadi.",
+                "Warware lamba yana karɓar nau'in haruffa biyun, da cikon ko ba tare da shi ba, kuma yana faɗin inda harafi ba daidai ba ne."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Lambar URL (sanya / warware)",
+          "body": [
+            "Lambar kashi-ɗari (percent-encoding), kamar yadda burauzoji suke rubuta ta: wani sashe na adireshi (ana sanya wa duk abin da ba harafi kawai ba lamba), cikakken adireshi (ana kiyaye alamominsa), ko fom (+ don sarari).",
+            "Warware lamba yana faɗin inda lambobin hexadecimal biyu ba su biyo bayan % ba."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML entities",
+          "body": [
+            "Yana rubuta alamomin da HTML da XML suke keɓewa kansu (&, <, >, alamun zance) a matsayin entities, kuma yana karanta entities zuwa baya: da suna, da lambar goma (decimal) ko da lambar hexadecimal. Sunayen su ne na ma'aunin HTML.",
+            "\"Har da kowane harafi da ba ASCII ba\" yana rubuta haruffa masu alamomi da na sauran baƙaƙe a matsayin entities ma."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Mai karanta JWT",
+          "body": [
+            "Yana raba JSON Web Token gida-gida: kanunsa (header) da kayansa (payload) a matsayin JSON, da iƙirarinsa (claims) a kalmomi (mai bayarwa, mai shi, masu karɓa, lokacin da yake ƙarewa, tare da \"ya ƙare\" ko \"bai ƙare ba tukuna\").",
+            "Ba da sirrin don duba sa hannun da aka yi da sirrin da aka raba (HS256, HS384, HS512). Ba a duba sa hannun da aka yi da maɓallin sirri (RS, ES, PS).",
+            {
+              "note": "Token da sirrin suna zama a tab ɗin: ba a aika komai ko'ina don karanta token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Yana rubuta rubutu a matsayin string na wani harshen shirye-shirye (JSON, JavaScript, C, C++, Java da makamantansu) tare da yi wa alamun zance, karya layi da sauran alamomi escape, kuma yana karanta irin wannan string zuwa baya."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Yana matsawa da buɗe matsewar gzip, fayil na kowane girma yayin da ake karanta shi. Matakin yana farawa daga mafi sauri zuwa mafi ƙanƙanta; ana iya bayar da sakamakon rubutu a matsayin Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Tushen lambobi",
+          "body": [
+            "Yana faɗin cikakkun lambobi, ɗaya a kowane layi, a biyu-biyu (binary), takwas-takwas (octal), goma (decimal) da hexadecimal, da kuma a ƙarin tushe ɗaya da ka zaɓa, har zuwa 36. Lamba ba ta da iyakar girma.",
+            {
+              "points": [
+                "Ana gane tushen lamba daga yadda aka rubuta ta: 0x don hexadecimal, 0b don binary, 0o don octal, haruffa don hexadecimal, in ba haka ba goma. Ko ka zaɓi tushen da za a karanta komai da shi.",
+                "Ana tsallake sarari, karan ƙasa (_) da alamar ridda (') da ke tsakanin lambobi: 1_000_000.",
+                "Ana kuma bayar da lamba mara kyau (negative) yadda kwamfutoci suke adana ta (cikon biyu, two’s complement), a mafi ƙanƙanta cikin bits 8, 16, 32, 64 da sauransu da zai ɗauke ta."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bayanai",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Mai tsara JSON",
+          "body": [
+            "Yana tsarawa, matsawa da tabbatar da JSON, kuma yana nuna shi a matsayin bishiya. Ana karanta takarda ta kowane girma a matsayin kwarara (stream).",
+            {
+              "points": [
+                "Indent da sarari 2 ko 4, tab, ko kowane adadin sarari.",
+                "Ƙarin zaɓuɓɓuka: jera maɓallai, gajerun jeri a layi ɗaya, sarari bayan ruɓaɓɓen digo, yadda layuka suke ƙarewa, karya layi a ƙarshe, haruffan da ba ASCII ba a matsayin \\uXXXX.",
+                "Karatu mai sassauci yana karɓar sharhi (// da /* */) da waƙafi a ƙarshe, kuma yana rubuta JSON mai tsauri.",
+                "Canje-canje: cire null, cire ƙimomin da ke fanko da makamantansu, a zagaye ɗaya.",
+                "Bishiyar tana buɗewa mataki ɗaya a lokaci ɗaya kuma tana nemo rubutu a cikin maɓallai da ƙimomi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Yana gudanar da tambayar JSONPath (RFC 9535) a kan takarda: $.store.book[?@.price < 10].title. Sakamakon shi ne ƙimomin da aka samu, hanyoyin zuwa gare su, ko duka biyun.",
+            "Tambayar da ke da kuskure ana faɗin ta tare da wurin da take kuskure."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Mai tabbatar da JSON Schema",
+          "body": [
+            "Yana duba takarda bisa JSON Schema (daftari 4 zuwa 2020-12). Schema yana shiga sashen da ke ƙarƙashin shigarwa. Kowane abin da bai dace ba ana jera shi tare da inda yake da ƙa'idar da ya karya.",
+            "A kan fayiloli da yawa, ana duba kowanne bisa schema ɗaya. Ba a bin $ref zuwa wani fayil ko zuwa wani adireshi."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Mai samar da schema da JSON → TypeScript",
+          "body": [
+            "Daga samfurin JSON, mai samar da schema yana rubuta JSON Schema da samfurin ya dace da shi, kuma JSON → TypeScript yana rubuta bayyane-bayyanen nau'insa (interfaces ko types, an fitar da su ko a'a, readonly ko a'a, ƙarƙashin sunan da ka bayar)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Yana mayar da YAML zuwa JSON da JSON zuwa YAML. Ana karanta YAML bisa core schema ɗinsa, ana bin anchors da merges; ana faɗin abin da ke kuskure tare da wurinsa."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Yana mayar da tebur zuwa JSON da akasin haka. Ana gane mai rarrabewa daga layin farko, ko a zaɓa (waƙafi, waƙafi mai digo, tab, layin tsaye); layin farko yana iya zama kanu; ana iya gano lambobi da true / false.",
+            "\"Tebur\" yana nuna CSV a layuka da ginshiƙai, fayil na kowane girma."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Mai tsara XML / HTML",
+          "body": [
+            "Yana tsarawa, matsawa da duba XML da HTML. Ana karanta XML da tsauri: tag da ba a taɓa rufewa ba ana faɗin sa tare da wurinsa. Ana karanta HTML yadda burauzoji suke yafe masa."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Mai tsara SQL",
+          "body": [
+            "Yana shimfiɗa umarni (statement), sashe ɗaya a kowane layi, ko ya sanya shi a layi ɗaya; kalmomin umarni a manyan haruffa, a ƙananan haruffa ko yadda aka rubuta. Ba ya neman wani dialect kuma ba ya duba ma'anar umarni."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Bambance-bambance (diff)",
+          "body": [
+            "Yana kwatanta rubutu biyu layi bayan layi, takardun JSON biyu bisa abin da suke faɗa, ko foldoji biyu fayil bayan fayil. Na farko yana shiga shigarwa, na biyu a sashen da ke ƙarƙashinsa.",
+            {
+              "points": [
+                "Gefe da gefe yana yi wa kalmomin da suka canza a cikin layi alama; Haɗaɗɗe (unified) faci ne (patch) kamar yadda diff -u yake rubuta shi.",
+                "Kar a kula da manya da ƙananan haruffa, sarari, layuka marasa komai, lambobi ko alamomin rubutu.",
+                "Ga JSON, jerin maɓallai da shimfiɗa ba bambanci ba ne; sakamakon yana iya zama JSON Patch (RFC 6902).",
+                "Foldoji: waɗanne fayiloli ɗaya ne kawai yake da su, waɗanne iri ɗaya ne, waɗanne sun bambanta; Kwatanta a kan layi yana buɗe fayilolin biyu a matsayin rubutu."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Samfotin Markdown",
+          "body": [
+            "Yana nuna Markdown yadda zai kasance, kuma yana ba da HTML ɗinsa don kwafi ko ajiye: CommonMark tare da tebur, layin gogewa, jerin ayyuka da bayanan ƙasan shafi.",
+            {
+              "points": [
+                "HTML da aka rubuta a cikin Markdown ana nuna shi a matsayin rubutu, ba a gudanar da shi.",
+                "Hoton da za a ɗauko daga hanyar sadarwa ba a ɗauko shi: ana nuna bayaninsa da adireshinsa a gurbinsa. Hoton da ke cikin rubutun kansa (data:) ana nuna shi.",
+                "Mahaɗin da ka danna yana buɗewa a burauzar tsarin."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Samarwa",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Yana samar da UUID na siga 1, 3, 4, 5, 6 da 7 (RFC 9562), gwargwadon yawan da ka nema, a rubuce da karan haɗi, ba ado, a matsayin URN ko a cikin baka masu lanƙwasa. \"Raba gida-gida\" yana faɗin sigar kowane UUID da lokaci ko sunan da ke cikinsa."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 da SHA-512 na rubutu ko fayil, da yawa a lokaci ɗaya, a rubuce a matsayin hex ko Base64. Ana yin hash na fayil na kowane girma yayin da ake karanta shi.",
+            {
+              "points": [
+                "Duba bisa: manna checksum, ko layin fayil na .sha256; ana faɗin ko ya dace ko bai dace ba.",
+                "Maɓallin HMAC: digest suna zama HMAC da wannan maɓallin.",
+                "Kowane layi daban: digest ɗaya ga kowane layi na rubutun.",
+                "Fayiloli: ana jera digest a gefen fayilolinsu; Kwafi duka yana ba da su yadda sha256sum yake rubuta su."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Kalmomin sirri da asirai",
+          "body": [
+            "Yana samar da kalmomin sirri na irin haruffan da ka zaɓa, jimlolin sirri na kalmomi, da bytes na bazata a matsayin hex ko Base64, daga lambobin bazata na tsarin aiki (operating system). Kowanne yana faɗin bits nawa na entropy yake da su. Da zarar an samar da wani abu, canza zaɓi yana sake samar da shi.",
+            "Jimlar sirri kalmomi ne da aka zaro daga dogon jerin kalmomi na Electronic Frontier Foundation (kalmomin Turanci 7776), kowacce da damar fitowa daidai da sauran: kalmomi shida kusan bits 77 ne."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Maɓallai da takardun shaida",
+          "body": [
+            "Abubuwa biyar, ana zaɓa a sama:",
+            {
+              "points": [
+                "Sabon maɓalli: RSA, EC P-256 / P-384 / P-521 ko Ed25519, a kowace siga da shirye-shirye suke karɓa (PKCS #8, tsohuwar siga, OpenSSH; maɓallin jama'a a matsayin PEM da kuma layin authorized_keys), a kulle da jimlar sirri idan ka bayar da ita.",
+                "Buƙatar takardar shaida: CSR don sabon maɓalli ko wanda ka manna, tare da mai shi (subject) da sauran sunayensa (SAN).",
+                "Takardar shaida mai sa hannun kanta: haka nan, amma maɓallinta na kanta ya sa mata hannu, na kwanaki kaza; \"Za ta iya sa hannu a wasu takardun shaida\" yana mayar da ita hukumarka ta kanka.",
+                "Sa hannu da CA naka: manna buƙata, takardar shaidar hukumarka da maɓallinta; za ka sami takardar shaidar da aka sa wa hannu da hukumar a bayanta.",
+                "Karanta ka mayar: manna ko buɗe komai (PEM, DER, maɓallin OpenSSH, fayil na .pfx ko .p12, a kulle ko a'a). Yana faɗin abin da ya samu da ko maɓallin shi ne na takardar shaidar, kuma yana rubuta kowane abu a sauran sigogi. Ana iya ajiye maɓalli da takardar shaidarsa tare a matsayin .pfx."
+              ]
+            },
+            {
+              "note": "Ana yin komai a wannan kwamfutar. Maɓalli yana cikin tab ɗin har zuwa Ƙone, ba a wani wuri ba sai idan ka ajiye shi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bincike",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Mai gwada regex",
+          "body": [
+            "Yana gwada regular expression na JavaScript a kan rubutu: abubuwan da aka samu tare da rukunansu da wurarensu, ko rubutun da aka maye gurbin abubuwan da aka samu. Tutocin (flags) su ne g, i, m, s, u, y.",
+            "Tsarin yana gudana a waje da taga, kuma wanda ya gudana fiye da daƙiƙa 20 ana dakatar da shi."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Bayanin cron",
+          "body": [
+            "Yana faɗi da kalmomi abin da jadawali yake nufi da lokacin da yake gudana: crontab (filaye biyar, shida da daƙiƙoƙi, bakwai da shekara), Quartz, AWS EventBridge cron() da rate(), da systemd OnCalendar. Jadawali ɗaya a kowane layi.",
+            {
+              "points": [
+                "Gudanarwa na gaba, da na baya idan an nema, a yankin lokacin da ka zaɓa.",
+                "Ana ƙidaya ranakun mako daga 0 don Lahadi, ko daga 1 kamar yadda Quartz ke ƙidaya su, yadda ka zaɓa. Layi mai daƙiƙoƙi wanda kuma yake da shekara, L, W ko # na Quartz ne, kuma ana karanta shi ta hanyar Quartz da kansa.",
+                "Jadawalin ɗaya a sauran sigogi, don kwafi ko ƙarawa a shigarwa.",
+                "Mai ginawa yana ƙirƙirar jadawali ta zaɓar kowane fili; \"Canza a mai ginawa\" yana ɗaukar jadawalin da aka rubuta zuwa cikinsa."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Tambarin lokaci na Unix",
+          "body": [
+            "Yana karanta lokuta, ɗaya a kowane layi: daƙiƙoƙi, milliseconds, microseconds ko nanoseconds tun 1970, ko kwanan wata da aka rubuta ta hanyoyin da aka saba (ISO 8601, kamar yadda imel da HTTP ke rubuta shi, kamar yadda Git ke rubuta shi). Ana faɗin kowanne a yankin lokacin da ka zaɓa, a UTC, da kuma a kowace irin tambarin lokaci."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Mai raba URL",
+          "body": [
+            "Yana raba URL gida-gida yadda burauzoji suke karanta shi: scheme, mai amfani, host (tare da sigarsa ta Unicode idan an rubuta shi a punycode), port, hanya (path), kowane siga (parameter) na query a warware, da fragment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Mai karanta takardar shaida",
+          "body": [
+            "Yana karanta takardun shaida na X.509 daga PEM ko DER kuma yana faɗin duk abin da ke cikinsu: mai shi (subject), mai bayarwa (issuer), lokacin inganci, sunayen da take gare su, maɓallinta, ƙarin bayananta (extensions) da zanen yatsunta (fingerprints).",
+            "Yana karantawa ne; ba ya yanke hukunci ko ya kamata a amince da takardar shaida. Don takardar shaidar da shafi yake nunawa, da ko wannan kwamfutar ta amince da ita, yi amfani da Hanyar sadarwa → Takardar shaidar shafi."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Mai duba hex",
+          "body": [
+            "Yana nuna bytes na fayil na kowane girma, ko na rubutun da aka manna: wurin kowane layi, bytes ɗin, da bytes ɗin a matsayin haruffa.",
+            {
+              "points": [
+                "Je zuwa wurin da aka rubuta kamar 0x1F4, 1F4h ko 500.",
+                "Nemo bytes (DE AD BE EF) ko rubutu (UTF-8, ko UTF-16 ta kowace hanya), gaba da baya.",
+                "Danna byte: gefen yana nuna abin da ke can a matsayin lambobi na kowane girma, a kowane jerin bytes, a matsayin harafi da a matsayin lokaci.",
+                "Zaɓa ta hanyar ja, Shift ko maɓallan kibiya; kwafi zaɓin a matsayin hex, a matsayin code, a matsayin Base64 ko a matsayin rubutu, ko ka ajiye shi a fayil."
+              ]
+            },
+            {
+              "note": "Dubawa kawai yake yi: ba a canza komai a fayil ɗin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hanyar sadarwa",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Inda kayan aikin hanyar sadarwa suke zuwa",
+          "body": [
+            "Waɗannan kayan aiki huɗu su ne kaɗai ɓangaren Dev da ke shiga intanet, kuma suna zuwa inda ka nuna musu.",
+            {
+              "points": [
+                "Adireshin da ka rubuta kawai ake tuntuɓa, kuma sai lokacin da ka danna maɓallin. Ba a taɓa yi a ɓoye (a bayan fage) ba.",
+                "Abin da ake aikawa shi ne abin da ka rubuta. Abu ɗaya kaɗai da ake ƙarawa a buƙata shi ne User-Agent da yake iri ɗaya ga kowa (\"Syntelab Creative\"), sai dai idan ka ba da naka.",
+                "Ba a adana kukis, ba a aika komai game da kai ko kwamfutar, kuma ba a adana komai da aka rubuta."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Abokin ciniki na HTTP (HTTP client)",
+          "body": [
+            "Yana aika buƙata ɗaya da aka rubuta da hannu: method, adireshi, kanun (ɗaya a kowane layi: Name: value) da jiki, a rubuce ko an ɗauko daga fayil na kowane girma.",
+            {
+              "points": [
+                "Amsar: lambarta, tsawon lokacin da ta ɗauka (gaba ɗaya, da zuwa byte na farko), girmanta, kanunta, da jikinta, mai launi bisa irinsa kuma a shimfiɗe idan JSON ne. Jikin da ba rubutu ba ne (hoto, PDF) ana nuna shi kamar yadda yake, kuma ana ajiye shi kamar yadda ya zo.",
+                "Bi turawa (redirects), ko ka ga amsar farko yadda take. Ana jera adiresoshin da aka tura buƙatar gaba daga gare su.",
+                "Duba takardar shaidar bisa abin da wannan kwamfutar ta amince da shi; kashe shi kawai don servers naka.",
+                "\"Aika, amsa zuwa fayil\" yana rubuta jiki na kowane girma kai tsaye a faifai, tare da nuna ci gaba da Tsaya.",
+                "\"Kwafi a matsayin curl\" yana ba da buƙatar ɗaya a matsayin umarni."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Binciken DNS",
+          "body": [
+            "Yana tambayar name server bayanan (records) wani suna: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, da yawa a lokaci ɗaya. Adireshi yana ba da sunansa (PTR).",
+            "Tambayar tana zuwa name server da aka saita kwamfutar ta yi amfani da shi, zuwa na jama'a (1.1.1.1, 8.8.8.8, 9.9.9.9), zuwa resolver ta HTTPS (Cloudflare, Google), ko zuwa wanda ka rubuta."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Duba port",
+          "body": [
+            "Yana faɗin ko port na host suna karɓar haɗin TCP: ɗaya, da yawa, ko kewayo har zuwa duka 65 535 (22, 80, 443, 8000-8100). Kowanne a buɗe yake, a rufe, ko babu amsa a lokacin da ka bayar.",
+            {
+              "note": "Gwada hosts naka kawai, ko waɗanda kake da izinin gwadawa."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Takardar shaidar shafi",
+          "body": [
+            "Yana nuna takardun shaidar da shafi yake bayarwa lokacin da aka ƙulla haɗi mai tsaro: wa suke gare shi, wa ya sa musu hannu, kwanaki nawa suka rage, ko wannan kwamfutar ta amince da su da kuma dalilin da ya sa ba ta amince ba, sigar TLS da cipher. Musabaha (handshake) kawai ake yi: ba a aika buƙata.",
+            {
+              "points": [
+                "Rubuta example.com, example.com:8443 ko adireshin yanar gizo.",
+                "Servers na imel da FTP suna farawa a fili kuma ana neman su koma TLS (STARTTLS): ana zaɓa bisa port (25, 587, 143, 110, 21) ko da hannu.",
+                "\"Komai\" yana nuna duk abin da takardun shaidar suke faɗa; \"PEM\" yana ba da su don kwafi ko ajiye."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Saituna",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Saitunan Dev",
+          "body": [
+            "Fayil → Saituna yana buɗe Saitunan shirin a ɓangaren Dev.",
+            {
+              "points": [
+                "Buɗe kowane kayan aiki a tab nasa, ko a tab ɗin da aka zaɓe shi a ciki.",
+                "Buɗe sabon tab a kan kayan aikin da aka yi amfani da shi na ƙarshe, ko a shafin farko.",
+                "Mayar da zaɓuɓɓukan kowane kayan aiki, da liƙe-liƙe, yadda shirin yake zuwa."
+              ]
+            },
+            "Menu na danna-dama na Windows Explorer, harshe, jigo da gajerun hanyoyin madannai suna cikin Saitunan shirin gaba ɗaya."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Game da Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Game da Dev",
+          "body": [
+            "Dev manhajar Syntelab Creative ce don masu haɓaka manhaja (developers): kayan aikin da ke sanya lamba da warware ta, tsarawa da dubawa, mayar da wata sigar bayanai zuwa wata, da raba gida-gida abin da ke da wuyar karantawa yadda yake.",
+            "Ana yin komai a wannan kwamfutar. Babu abin da ka rubuta, ka manna ko ka buɗe a kayan aiki da ake adanawa ko aikawa ko'ina. Babu iyakar da aka sanya wa girma ko yawan fayiloli: iyakokin su ne ƙwaƙwalwa (memory) da faifan kwamfutar.",
+            "Sabo ne kuma ana ci gaba da gina shi. Inda ya gaza ga aikinka, faɗa mana ta Taimako → Ra'ayi."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Abin da aka gina Dev da shi",
+          "body": [
+            {
+              "points": [
+                "Editocin: CodeMirror, https://codemirror.net . Lasisin MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Karantawa da yi wa JSON launi a editocin: @codemirror/lang-json, https://github.com/codemirror/lang-json , tare da @codemirror/language da @lezer/highlight. Lasisin MIT. Copyright (C) 2018-2021 by Marijn Haverbeke and others.",
+                "Karantawa da yi wa YAML, XML, HTML da SQL launi a editocin: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (tare da @codemirror/lang-css da @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Lasisin MIT. Copyright (C) 2018-2024 by Marijn Haverbeke and others.",
+                "Duba takarda bisa JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Lasisin MIT. Copyright (c) 2020-2026 Dmitry Dygalo. An gina shi ba tare da ɓangarensa na hanyar sadarwa ba: Dev ba ya taɓa ɗauko schema.",
+                "Tsare-tsaren JSONPath (match da search): regex, https://github.com/rust-lang/regex . Lasisin MIT ko Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "Karanta YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Lasisin MIT ko Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Dev kansa ne yake rubuta YAML.",
+                "Kwatanta rubutu biyu (Bambance-bambance): similar, https://github.com/mitsuhiko/similar . Lasisin Apache-2.0. Marubuta: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Lasisin MIT ko Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Digest na kayan aikin Hash da na sa hannun token: sha2, sha1 da md-5, https://github.com/RustCrypto/hashes . Lasisin MIT ko Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, and the RustCrypto developers.",
+                "Kwanan wata, lokuta da yankunan lokaci (Tambarin lokaci na Unix, Bayanin cron): jiff, https://github.com/BurntSushi/jiff , tare da yankunan lokaci na rumbun bayanan IANA. Lasisin Unlicense ko MIT. Copyright (c) 2015 Andrew Gallant.",
+                "Raba URL gida-gida: url da idna, https://github.com/servo/rust-url . Lasisin MIT ko Apache-2.0. Copyright (c) 2013-2025 The rust-url developers.",
+                "Karanta takardun shaida na X.509: x509-parser, https://github.com/rusticata/x509-parser . Lasisin MIT ko Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "Mai gwada regex yana gudanar da regular expressions na JavaScript, a injin WebView da shirin yake zane da shi (Microsoft Edge WebView2 a Windows); ba a ƙara wani library don shi ba.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Lasisin MIT ko Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton and contributors.",
+                "UUID: uuid, https://github.com/uuid-rs/uuid . Lasisin Apache-2.0 ko MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Bytes na bazata don kalmomin sirri, asirai da UUID, daga tsarin aiki: getrandom, https://github.com/rust-random/getrandom . Lasisin MIT ko Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Maɓallai da sa hannun RSA: rsa, https://github.com/RustCrypto/RSA , tare da num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Lasisin MIT ko Apache-2.0. Copyright (c) RustCrypto Developers and dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Maɓallai da sa hannun curves na NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , tare da ecdsa, elliptic-curve da crypto-bigint da suke buƙata. Lasisin Apache-2.0 ko MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Maɓallai da sa hannun Ed25519: ed25519-dalek da curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Lasisin BSD 3-Clause. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft and Henry de Valence. All rights reserved.",
+                "Sigogin da ake rubuta maɓallai, buƙatu da takardun shaida da su (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER da PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Lasisin Apache-2.0 ko MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Fayilolin maɓallin OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , tare da bcrypt-pbkdf, aes, ctr, chacha20 da sauran ciphers da hashes na RustCrypto da kulle maɓalli yake buƙata ( https://github.com/RustCrypto ). Lasisin Apache-2.0 ko MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Fayilolin PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , tare da pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 da scrypt na RustCrypto da yake buƙata. Lasisin MIT ko Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Lambobin bazata da ake ƙirƙirar maɓallai da su, an ɗauko daga tsarin aiki: rand_core, https://github.com/rust-random/rand . Lasisin MIT ko Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "Abokin ciniki na HTTP: ureq, https://github.com/algesten/ureq . Lasisin MIT ko Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Haɗi masu tsaro (TLS) na abokin ciniki na HTTP da na \"Takardar shaidar shafi\": rustls, https://github.com/rustls/rustls , lasisin Apache-2.0, ISC ko MIT, Copyright (c) 2016 Joseph Birr-Pixton; tare da rustls-webpki, https://github.com/rustls/webpki , lasisin ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , lasisin Apache-2.0 da ISC; webpki-roots, https://github.com/rustls/webpki-roots , lasisin CDLA-Permissive-2.0.",
+                "Ko wannan kwamfutar ta amince da takardar shaida: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Lasisin MIT ko Apache-2.0. Copyright (c) 2022 1Password.",
+                "Karanta Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Lasisin MIT. Copyright 2015 Google Inc. All rights reserved.",
+                "Karanta fayilolin da aka rubuta a wasu encodings ba UTF-8 ba: encoding_rs, https://github.com/hsivonen/encoding_rs , lasisin Apache-2.0 ko MIT (tare da BSD-3-Clause don bayanansa), Copyright Mozilla Foundation; da chardetng, https://github.com/hsivonen/chardetng , lasisin Apache-2.0 ko MIT, Copyright Mozilla Foundation.",
+                "Kalmomin jimlolin sirri: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , na Electronic Frontier Foundation, ana amfani da shi ƙarƙashin lasisin Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Ana amfani da jerin yadda yake.",
+                "Buɗe maɓallan da aka kulle ta tsohuwar hanyar OpenSSL: aes, cbc da des na RustCrypto, https://github.com/RustCrypto . Lasisin MIT ko Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "An rubuta don Dev, ba tare da library ba: binciken DNS (ana rubuta tambayoyi kuma ana karanta amsoshi kamar yadda RFC 1035 ya tsara su) da duba port.",
+                "An rubuta don Dev, ba tare da library ba: karantawa da rubuta JSON a matsayin kwarara (stream), JSONPath (RFC 9535), Base64, percent-encoding, HTML character references (sunayensu su ne na ma'aunin HTML, https://html.spec.whatwg.org ), escape na string, karanta JSON Web Tokens, rubuta YAML, CSV ta ɓangarorin biyu, karanta jadawalan cron, mai tsara XML da HTML, da mai tsara SQL."
+              ]
+            },
+            "Abin da yake rabawa da sauran shirin yana ƙarƙashin \"Game da Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Abin da Dev ba zai iya yi ba tukuna",
+          "body": [
+            {
+              "points": [
+                "Ana duba sa hannun token ne kawai idan an yi shi da sirrin da aka raba (HS256, HS384, HS512).",
+                "Mai tabbatar da JSON Schema yana faɗin abin da bai dace ba da Turanci, kamar yadda library ɗinsa yake yi, kuma ba ya bin $ref zuwa wani fayil ko adireshi.",
+                "Mai tsara SQL ba ya neman wani dialect kuma ba ya duba ma'anar umarni: yana faɗin string ko sharhin da bai taɓa ƙarewa ba kawai.",
+                "YAML, da JSON da ke zama YAML ko CSV, ana riƙe su duka a ƙwaƙwalwa yayin da ake mayar da su; CSV da ke zama JSON, XML, HTML da SQL ana aiki da su yayin da ake karanta su, ko yaya girmansu yake.",
+                "Teburin da ake duba CSV a ciki don karatu ne kawai: ba a rubuta komai a ciki, kuma ba a kwafar komai daga cikinsa tukuna.",
+                "Bambance-bambance (diff) yana riƙe bytes goma sha shida ga kowane layi na fayilolin biyu, ba fayilolin kansu ba; takardun JSON biyu ana riƙe su duka, tunda ana sake rubuta su kafin a kwatanta su.",
+                "Rukunin layuka da babu wani abu da gefe biyun suke da shi daidai sau ɗaya ana kwatanta su gwargwadon yadda daƙiƙa ɗaya ta ba da dama: bambance-bambancen da aka faɗa gaskiya ne, ko da yake ba koyaushe su ne mafi ƙaranci ba.",
+                "Bambance-bambance (diff) ba ya kwatanta yadda layuka suke ƙarewa (CRLF ko LF).",
+                "Ana kwatanta foldoji biyu bisa bytes na fayilolinsu; ana haɗa fayiloli bisa sunayensu, harafi da harafi.",
+                "Abin da kayan aikin Bincike suke faɗa JSON ne, tare da sunayensa da Turanci.",
+                "Mai gwada regex yana gudanar da regular expressions na JavaScript, ba PCRE ba kuma ba na Rust ba; yana aiki a kan rubutun da za a iya nunawa, ba a kan fayil da aka ajiye a faifai ba; tsarin da ya gudana fiye da daƙiƙa 20 ana dakatar da shi.",
+                "Mai karanta takardar shaida yana karanta takardar shaida kuma ba ya duba ko ya kamata a amince da ita: ba sarƙarta (chain) ba, ba sa hannunta ba, ba kuma ko an soke ta ba.",
+                "Fayil na rubutu a wani encoding ba UTF-8 ba ana karanta shi idan ya isa ƙarami da za a nuna shi; wanda ya fi haka girma, da ake aiki da shi daga faifai, dole ya zama UTF-8.",
+                "Fayil da aka jefa a kan kayan aiki ana karɓar shi har zuwa 16 MB; ba a gaya wa taga inda fayil ɗin da aka jefa yake a faifai ba, don haka wanda ya fi haka ana buɗe shi da Buɗe fayil.",
+                "Jimlolin sirri ana yin su da kalmomin Turanci kawai.",
+                "Bayanin cron: mai ginawa yana ƙirƙirar jadawalan crontab (filaye biyar, ko shida da daƙiƙoƙi); jadawali mai L, W, # ko ? ba za a iya ɗaukar sa zuwa cikinsa ba. Ba za a iya faɗin lokutan AWS rate() ba, tunda ana ƙidaya shi daga lokacin da aka kafa ƙa'idarsa. Na systemd, ana karanta lamuran kalanda na yau da kullum; ba sassan daƙiƙa ba ko jerin ranakun da aka ƙidaya daga ƙarshen wata.",
+                "Mai duba hex dubawa kawai yake yi: ba a canza komai a fayil ɗin. Ginshiƙin rubutu yana nuna ASCII ko haruffan Turai ta Yamma, ba sauran baƙaƙe ba; ana neman bytes ko rubutu, ba tsare-tsare ba.",
+                "Maɓallai da takardun shaida: maɓallai su ne RSA, curves P-256, P-384 da P-521, da Ed25519; ba a karanta wasu (DSA, secp256k1, X25519). Maɓallin da aka kulle ta tsohuwar hanyar OpenSSL ana buɗe shi idan cipher ɗinsa AES ne ko 3DES. Fayil na .pfx yana ɗauke da maɓalli ɗaya tare da takardun shaidarsa. Ƙirƙirar babban maɓallin RSA sosai yana ɗaukar lokaci kuma ba za a iya dakatar da shi a tsakiya ba. Library ɗin da ke ƙirƙirar maɓallan RSA yana da sanannen rauni ga maharin da zai iya auna lokacin sa hannu da yawa ta hanyar sadarwa (RUSTSEC-2023-0071): a nan ana ƙirƙira da rubuta maɓallai a kwamfutarka, kuma ba a sa wa kowa hannu a kan komai.",
+                "Abokin ciniki na HTTP: HTTP/1.1 (ba HTTP/2 ko 3 ba); ba a adana kukis tsakanin buƙatu; ba a gina maka fom masu sassa da yawa (multipart); amsar da ta fi 16 MB, ko wadda ba rubutu ba ce, ana rubuta ta a fayil ta hanyar sake aika buƙatar.",
+                "Binciken DNS yana nuna sa hannu (DNSSEC) kuma ba ya duba su. Duba port yana gwada TCP kawai: port na UDP da ke shiru ba za a iya bambanta shi da wanda ke a rufe ba. Takardar shaidar shafi ba ta tambaya ko an soke takardar shaida ba.",
+                "Menu na danna-dama na Windows Explorer ne; a Windows 11 abubuwansa suna ƙarƙashin \"Show more options\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+/* The tools as a grid of squares, six to a row. */
+.tools,
+.places {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+}
+
+.tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  cursor: pointer;
+}
+
+.tool:hover {
+  border-color: var(--sc-accent);
+}
+
+.tool[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent);
+  color: var(--sc-accent-text);
+}
+
+.tool:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.toolName {
+  margin: 0;
+  font-weight: 600;
+}
+
+.note {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+/* Something waits to be put on a page: said first, where it cannot be missed. */
+.placing {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 8px 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--sc-accent);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-accent-soft);
+  line-height: 1.45;
+}
+
+.placing > button {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.colorRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.color {
+  width: 44px;
+  height: 30px;
+  padding: 2px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  cursor: pointer;
+}
+
+/* No color is in use: the box shows the one a click would bring back, faded. */
+.color[data-none='true'] {
+  opacity: 0.35;
+}
+
+.none {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.none[aria-pressed='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+  color: var(--sc-accent);
+}
+
+.opacity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.opacity input {
+  width: 120px;
+}
+
+.percent {
+  min-width: 4ch;
+  color: var(--sc-muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+}
+
+.wide {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  gap: 2px;
+}
+
+.buttons [aria-pressed='true'],
+.buttons [aria-checked='true'] {
+  background: var(--sc-accent-soft);
+  color: var(--sc-accent);
+}
+
+.pages {
+  display: flex;
+  gap: 8px;
+}
+
+.pages input {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Undo and redo at the start of the row of buttons, away from "Done". */
+.history {
+  display: flex;
+  gap: 2px;
+  margin-inline-end: auto;
+}
+
+/* Two or three choices side by side: where a link leads. */
+.choices {
+  display: flex;
+  gap: 6px;
+}
+
+.choice {
+  flex: 1;
+  min-height: 34px;
+  padding-inline: 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.choice[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+  color: var(--sc-accent);
+  font-weight: 600;
+}
+
+/* Grid of buttons or list with names: chosen at the top of the tools, at the far end. */
+.views {
+  display: flex;
+  gap: 2px;
+  align-self: flex-end;
+  margin-block: -6px -2px;
+}
+
+.view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.view[aria-checked='true'] {
+  background: var(--sc-accent-soft);
+  color: var(--sc-accent);
+}
+
+.toolList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toolGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.toolGroupName {
+  color: var(--sc-muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.toolRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 32px;
+  padding-inline: 8px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.toolRow:hover {
+  background: var(--sc-surface-2);
+}
+
+.toolRow[aria-checked='true'] {
+  background: var(--sc-accent);
+  color: var(--sc-accent-text);
+}
+
+/* A name over its field. */
+.stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pair {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Where a file is on the computer: long, so it may break anywhere. */
+.path {
+  color: var(--sc-muted);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+/* The answers of a list, one to a line. */
+.answers {
+  padding: 8px 10px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  resize: vertical;
+}

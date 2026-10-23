@@ -1,0 +1,9 @@
+.logo {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22%;
+  background: var(--sc-brand);
+  color: var(--sc-on-color);
+}

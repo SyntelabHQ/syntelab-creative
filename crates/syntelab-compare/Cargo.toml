@@ -1,0 +1,10 @@
+[package]
+name = "syntelab-compare"
+description = "Comparing two texts line by line, with the words that changed inside a line."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+# Finds what differs between two texts (Apache-2.0).
+similar = "2"

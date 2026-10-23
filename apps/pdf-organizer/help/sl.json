@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Odpiranje in branje",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Odpiranje dokumenta",
+          "body": [
+            "Datoteka → Odpri (Ctrl+O) odpre PDF v lastnem zavihku. Možnost \"Odpri več datotek hkrati\" odpre vsako izbrano datoteko v njenem zavihku.",
+            "Odprejo se tudi datoteke, ki niso PDF-ji, kot strani: slike (PNG, JPEG, TIFF, WebP in številne druge), besedilne in spletne datoteke, e-knjige, XPS in pisarniški dokumenti. Takšen dokument še ni nikjer shranjen: \"Shrani\" vas vpraša, kam.",
+            {
+              "note": "Pisarniške dokumente (Word, Excel, PowerPoint, OpenDocument) pretvorijo Word, Excel ali PowerPoint ali LibreOffice, odvisno od tega, kaj je nameščeno na računalniku. Brez enega od teh programov jih ni mogoče odpreti."
+            },
+            "Datoteke, povlečene na prazen zavihek, se zberejo v zbirko; če jih povlečete na dokument, se njihove strani dodajo k njemu.",
+            "V sistemu Windows je lahko PDF Organizer aplikacija, ki odpre datoteke PDF, ko jih dvokliknete: na njegovi začetni strani \"Nastavi kot privzeto\" odpre nastavitve sistema Windows, kjer za datoteke PDF izberete Syntelab Creative."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Ogled strani",
+          "body": [
+            "Meni Pogled določa, kako se dokument prikazuje; nič v njem ne spreminja datoteke.",
+            {
+              "points": [
+                "Povečava: povečaj, pomanjšaj, dejanska velikost, prilagodi strani, prilagodi širini, prilagodi višini. Za povečavo služita tudi tipka Ctrl in kolesce miške.",
+                "Prikaz strani: ena stran ali dve strani druga ob drugi, z naslovno stranjo ali brez nje, ter pomikanje skozi vse strani kot en dolg trak.",
+                "Vodila: ravnila in mreža v enoti, izbrani v Nastavitvah.",
+                "\"Prikaži sličice\": pomanjšane strani ob strani. Kliknite eno, da pridete do nje; v isti plošči so tudi zaznamki dokumenta.",
+                "\"Način branja\" skrije orodja; \"Celozaslonski način\" skrije vse razen strani. Tipka Escape zapre oba načina."
+              ]
+            },
+            "Trak nad stranmi (hitra orodjarna) vsebuje številko strani, povečavo in gumbe, ki ste jih izbrali v Nastavitvah."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Iskanje besedila",
+          "body": [
+            "Uredi → Išči v dokumentu (Ctrl+F): vtipkajte besedo ali frazo; mesta, kjer je bila najdena, so označena na straneh, puščice pa vas vodijo od enega do drugega.",
+            {
+              "note": "Skeniran dokument je slika strani in nima besedila za iskanje, dokler besedilo ni prepoznano: glejte \"Prepoznavanje besedila (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Lastnosti dokumenta",
+          "body": [
+            "Datoteka → Lastnosti dokumenta prikazuje, kaj dokument pravi o sebi: naslov, avtorja, datuma nastanka in spremembe, število strani ter velikost datoteke."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Shranjevanje, tiskanje in pošiljanje",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Shrani in Shrani kot",
+          "body": [
+            "Nobena sprememba se ne zapiše v datoteko na disku, dokler ne shranite. Do takrat je vsak korak mogoče razveljaviti (Ctrl+Z) ali ponoviti (Ctrl+Y).",
+            {
+              "points": [
+                "Shrani (Ctrl+S) dokument zapisuje čez obstoječo datoteko.",
+                "Shrani kot (Ctrl+Shift+S) ga zapiše v novo datoteko, ki nato zasede zavihek; stara datoteka ostane nespremenjena."
+              ]
+            },
+            "Če je datoteko odprl drug program, nanjo ni mogoče pisati: program vas o tem obvesti in vaše spremembe ohrani, da jih shranite pod drugim imenom.",
+            {
+              "note": "Shranjevanje spremenjenega dokumenta čez datoteko, ki je podpisana s certifikatom, odstrani njene podpise. Program vas najprej vpraša in ponudi možnost »Shrani kot novo datoteko«; to vprašanje lahko izklopite v Nastavitve → Podpisi."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Ustvarjanje PDF",
+          "body": [
+            "Datoteka → Ustvari PDF ustvari nov dokument:",
+            {
+              "points": [
+                "iz ene datoteke ali iz več datotek: združenih v en PDF ali ločen PDF za vsako;",
+                "s spletne strani na naslovu, ki ga vpišete (stran je shranjena z brskalnikom, ki je nameščen na računalniku);",
+                "iz vsebine odložišča;",
+                "iz praznih strani izbrane velikosti."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Izvoz v drug format",
+          "body": [
+            "Datoteka → Izvozi kot zapiše dokument v drug format: Word ali OpenDocument besedilo, navadno besedilo, spletna stran, XML, slike strani (PNG, JPEG, TIFF, SVG) ali PostScript. Za slike izberete ločljivost.",
+            "Sam dokument ostane PDF; izvoz je nova datoteka.",
+            {
+              "note": "Besedilo lahko izvozite le tam, kjer dokument vsebuje besedilo. Najprej prepoznajte besedilo skena."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Tiskanje",
+          "body": [
+            "Datoteka → Natisni (Ctrl+P) natisne dokument tako, kot je trenutno urejen, skupaj s tem, kar ste narisali nanj. Izberite strani, papir, ali naj bodo listi pokončni ali ležeči ter ali naj se strani prilagodijo listu ali natisnejo v dejanski velikosti; nato sistemsko okno za tiskanje zahteva izbiro tiskalnika.",
+            "Papir, usmerjenost in prilagajanje, s katerimi se odpre okno za tiskanje, so nastavljeni v Nastavitve → Tiskanje."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Deljenje",
+          "body": [
+            "Datoteka → Deli pošlje dokument v sistemsko okno za deljenje: e-pošta, bližnja naprava in druge aplikacije. Dokument se deli v trenutnem stanju, vključno z neshranjenimi spremembami."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Urejanje strani",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Pogled Organiziraj",
+          "body": [
+            "Organiziraj → Organiziraj strani prikaže vse strani v mrežici. Na disku se nič ne spremeni, dokler ne shranite.",
+            {
+              "points": [
+                "Izbira: kliknite stran; Ctrl+klik doda stran, Shift+klik izbere zaporedje. V meniju so možnosti \"Izberi vse strani\", \"Počisti izbor\", \"Izberi lihe strani\" in \"Izberi sodne strani\".",
+                "Premikanje: izbrane strani povlecite na novo mesto ali uporabite možnosti \"Premakni levo\" in \"Premakni desno\".",
+                "Vrtenje: \"Izbrano: zavrti levo\" in \"Izbrano: zavrti desno\" zavrtita izbrane strani; \"Vse strani: zavrti levo\" in \"Vse strani: zavrti desno\" zavrtita vse strani.",
+                "Brisanje: tipka Delete ali možnost \"Izbriši strani\". Dokument mora vsebovati vsaj eno stran.",
+                "Kopiranje, izrezovanje in lepljenje (Ctrl+C, Ctrl+X, Ctrl+V): strani lahko prilepite v isti dokument ali v drug, ki je odprt v programu.",
+                "Velikost: drsnik na vrhu poveča ali pomanjša strani; enako naredijo Ctrl + kolesce miške nad stranmi ter \"Povečaj\" in \"Pomanjšaj\" (Ctrl+= in Ctrl+-). Velikost si program zapomni."
+              ]
+            },
+            "Isti ukazi delujejo tudi brez mrežice, neposredno na prikazani strani."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Izvlečenje strani in razdelitev dokumenta",
+          "body": [
+            "Organiziraj → Izvleci strani prenese izbrane strani v nov, še neshranjen dokument v ločenem zavihku. Nastavite lahko tudi, da se vsaka stran shrani kot ločena datoteka, ter izberete, ali naj se strani odstranijo iz tega dokumenta.",
+            "Organiziraj → Razdeli dokument shrani dokument kot več manjših datotek; ta dokument ostane nespremenjen.",
+            "Imena novih dokumentov sledijo vzorcem v Nastavitvah → Imena novih dokumentov.",
+            {
+              "note": "Podpisi, ustvarjeni s certifikatom, se ne prenesejo v izvlečene ali razdeljene dokumente: podpis je veljaven samo za datoteko, v kateri je bil ustvarjen."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Vstavljanje in zamenjava strani",
+          "body": [
+            {
+              "points": [
+                "Organiziraj → Vstavi strani doda strani druge datoteke (PDF, sliko, besedilo, pisarniški dokument) za izbrano stran ali na konec.",
+                "Organiziraj → Zamenjaj strani postavi strani druge datoteke na mesto izbranih strani.",
+                "Vstavi → Prazna stran doda prazno stran velikosti sosednje strani."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Obrezovanje in spreminjanje velikosti strani",
+          "body": [
+            "Uredi → Obreži strani odreže robove strani glede na robove, ki jih vpišete ali povlečete. Iz datoteke se nič ne odstrani: strani le prikazujejo manj vsebine.",
+            "Uredi → Spremeni velikost strani postavi strani na drugo velikost lista (A4, Letter in druge). Vsebino lahko prilagodite velikosti ali jo pustite v prvotni velikosti in jo postavite na enega od devetih mest na novem listu.",
+            "Obe funkciji vprašata, katere strani: vse, izbrane, razpon, lihe ali sode."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kombiniranje datotek",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Zbirka",
+          "body": [
+            "Združi → Nova zbirka odpre prostor za zbiranje datotek in njihovo zapisovanje v en PDF.",
+            {
+              "steps": [
+                "Dodajte datoteke z možnostjo \"Dodaj datoteke\" ali jih spustite v zbirko. PDF-je, slike, besedila in pisarniške dokumente lahko mešate.",
+                "Povlecite kartice v želeni vrstni red ali uporabite puščice na vsaki kartici.",
+                "Odprite kartico, da izberete, katere od njenih strani želite vključiti.",
+                "\"Združi datoteke\" jih po vrstnem redu zapiše kot nov dokument v lastnem zavihku."
+              ]
+            },
+            "Same datoteke se ne spremenijo.",
+            "Drsnik na vrhu poveča ali pomanjša strani na karticah; enako naredijo Ctrl + kolesce miške ter \"Povečaj\" in \"Pomanjšaj\" (Ctrl+= in Ctrl+-). Velikost si program zapomni."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pisana in risana vsebina na straneh",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Orodja",
+          "body": [
+            "Orodja za risanje se odprejo kot panel ob strani, v obliki mreže gumbov ali kot seznam z imeni (to določijo Nastavitve). Ko imate orodje izbrano, povlecite ali kliknite na stran; tipka Escape orodje odloži.",
+            {
+              "points": [
+                "Besedilo: kliknite in tipkajte. Pisava, velikost, barva, krepko, ležeče in poravnava so v plošči.",
+                "Slika: izberite sliko, nato povlecite na željeno mesto in določite velikost.",
+                "Oblike: pravokotnik, elipsa, črta, puščica, kljukica, križ, pika.",
+                "Označevanje: povlecite čez vsebino, ki naj bo poudarjena; vsebina pod njo ostane berljiva."
+              ]
+            },
+            "Z orodjem »Izberi, premakni in spremeni velikost« lahko oznako ponovno izberete: povlecite jo, potegnite za vogale, zavrtite jo za ročaj, spremenite barve v plošči ali jo izbrišite s tipko Delete. Oznake lahko kopirate in prilepite tudi na druge strani.",
+            "Vse narisano se ob shranjevanju zapiše v datoteko."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Sprememba lastnega besedila in slik dokumenta",
+          "body": [
+            "Orodje »Uredi besedilo in slike v dokumentu« obrobi vsebino same strani. Kliknite vrstico besedila, da jo ponovno napišete, ali sliko, da jo premaknete, spremenite njeno velikost, zavrtite ali izbrišete.",
+            {
+              "note": "To spremeni po eno vrstico ali eno sliko naenkrat. Odstavki se ne preoblikujejo, če vrstica postane daljša, slika, ki leži čez drugo, pa se izbere skupaj z njo. Za večje spremembe uredite dokument v programu, v katerem je bil napisan."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Počrnitev",
+          "body": [
+            "Več orodij → Počrni trajno odstrani tisto, kar ne sme biti prebrano: na kateri koli strani povlecite črn okvir čez vsebino. Ob shranjevanju se besedilo in slike pod okvirom odstranijo iz datoteke, ne le prekrijejo.",
+            {
+              "note": "Počrnjen dokument shranite pod novim imenom in original hranite na varnem mestu: počrnjene vsebine ni mogoče vrniti."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Vodni znak",
+          "body": [
+            "Uredi → Vodni znak vpiše besedilo ali doda sliko na izbrane strani: ravno ali poševno, na enem od devetih mest, v velikosti in s prosojnostjo, ki ju nastavite. Na vsaki strani je nato oznaka kot katera koli druga in jo lahko še vedno premaknete ali odstranite."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Številke strani, glava in noga, Batesove številke",
+          "body": [
+            {
+              "points": [
+                "Uredi → Številke strani: format (1, 1 / 12, Stran 1 in drugi), mesto ter določitev strani, ki bodo imele številko.",
+                "Vstavi → Glava in noga: besedilo na katerem koli od šestih mest. V njem {page} pomeni številko strani, {pages} število strani, {date} današnji datum in {file} ime dokumenta.",
+                "Vstavi → Batesovo oštevilčenje: zaporedne številke z besedo pred ali za njimi (ABC000123), kot se uporablja za dokumente v zadevi."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Povezave, zaznamki in priložene datoteke",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Povezave",
+          "body": [
+            "Vstavi → Povezava: povlecite čez mesto, na katero naj se klikne, nato določite cilj: spletni naslov ali stran tega dokumenta.",
+            "Povezave v dokumentu delujejo med branjem: klik na povezavo do strani vas pelje tja; spletni ali e-poštni naslov se prepošlje vašemu brskalniku ali programu za e-pošto."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Zaznamki",
+          "body": [
+            "Vstavi → Nov zaznamek: kliknite mesto, kamor naj vodi zaznamek, in mu dodajte naslov. Vstavi → Zaznamki odpre seznam, kjer lahko zaznamek preimenujete ali odstranite. Spremembe se zapišejo ob shranjevanju."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Priložene datoteke",
+          "body": [
+            "Vstavi → Priloži datoteko: izberite datoteko in kliknite mesto, kjer naj bo sponka. Datoteki lahko dodate ime in avtorja, spremenite barvo sponke in njeno velikost ter jo zavrtite. Datoteka se ob shranjevanju shrani v PDF.",
+            "Vstavi → Priložene datoteke izpiše vse, kar dokument vsebuje; vsako datoteko lahko shranite na disk ali odstranite. Klik na sponko odpre isti seznam."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Obrazci",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Izpolnjevanje obrazca",
+          "body": [
+            "Vstavi → Izpolni obrazec prikaže polja v dokumentu: vpišite besedilo v besedilna polja, označite kontrolna polja, izbirajte s seznamov. Odgovori se zapišejo v datoteko ob shranjevanju."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Izdelava obrazca",
+          "body": [
+            "Meni Vstavi doda polja kateremu koli dokumentu: besedilno polje, kontrolno polje, izbirne gumbe (od katerih lahko izberete enega), seznam za izbiro in polje za podpis, ki ostane prazno za podpisnika.",
+            "Povlecite na stran tja, kjer naj bo polje. Tako kot druge oznake lahko polje do shranjevanja premikate in mu spreminjate velikost; nato postane del obrazca."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Podpisovanje",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Dodajanje slike podpisa",
+          "body": [
+            "Podpiši → Dodaj podpis postavi sliko podpisa na stran: narisan tukaj z izbranim pisalom, vtipkan v izbrani pisavi ali prevzet iz slike (z možnostjo »Ohranite le poteze pisala« za fotografijo podpisanega lista). Pod podpis lahko dopišete datum.",
+            "Povlecite na stran, kjer naj bo podpis. Uporabljeni podpisi se shranijo na tem računalniku za kasnejšo uporabo.",
+            {
+              "note": "To je slika: ta ne potrjuje ničesar o tem, kdo jo je postavil. Podpis, ki dokazuje, kdo je podpisal in da se od takrat nič ni spremenilo, se ustvari s certifikatom."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Podpisovanje s certifikatom",
+          "body": [
+            "Podpiši → Podpiši s certifikatom ustvari digitalni podpis: ta navaja, kdo je podpisal, in zapečati dokument, tako da je vsaka poznejša sprememba vidna.",
+            {
+              "steps": [
+                "Na stran povlecite območje, kjer naj bo viden podpis (najprej se pojavi okno; to lahko izklopite). Če želite podpisati, ne da bi se na straneh kar koli prikazalo, izberite »Podpiši brez prikaza na strani«.",
+                "Izberite certifikat: enega iz računalnika (med njimi se bo prikazala kartica ali žeton, ko je v bralniku) ali datoteko .pfx / .p12 z njenim geslom. »Nadaljuj«.",
+                "Izberite videz podpisa. Pod »Razlog in kraj« lahko zapišete, zakaj in kje podpisujete: ti podatki se vključijo v podpis in na stran, če videz to prikazuje. Označite »Zakleni dokument po podpisu«, če nihče ne sme podpisati ali spremeniti dokumenta po vas. Pustite označeno »Dodaj zaupanja vreden čas (časovni žig)«, da izdajatelj potrdi, kdaj ste podpisali.",
+                "»Podpiši«, nato izberite, kam shraniti podpisano datoteko. Žeton bo v tem trenutku zahteval svojo PIN kodo."
+              ]
+            },
+            "Podpisana datoteka se odpre namesto dokumenta. Program nikoli ne shranjuje gesla ali PIN kode.",
+            {
+              "note": "Kvalificiran podpis je tisti, ki je ustvarjen na ta način s kvalificiranim certifikatom na kartici ali žetonu. Podpisovanje poteka na vašem računalniku; na splet gresta samo časovni žig in preverjanje vašega certifikata, ki pošljeta zgoščene vrednosti in serijsko številko certifikata, nikoli dokumenta."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Videz podpisa",
+          "body": [
+            "Videz določa, kako je podpis s certifikatom viden na strani. Shranite si jih lahko več pod lastnimi imeni: enega za podpisovanje v imenu podjetja, drugega za podpisovanje v lastnem imenu.",
+            {
+              "points": [
+                "Slika: nobena, iz datoteke (žig, skeniran podpis) ali narisana tukaj.",
+                "Prikazano besedilo: ime, datum, razlog, kraj, vsak z oznako ali brez nje.",
+                "Vaše lastne vrstice pod imenom, na primer vlogo in podjetje.",
+                "\"Standardno besedilo\" je vedno prisotno: kdo je podpisal in kdaj."
+              ]
+            },
+            "V oknu za podpisovanje: \"Novo…\", \"Uredi…\", \"Izbriši\". Nazadnje uporabljeni videz se ponudi prvi. Videzi se shranijo na tem računalniku."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Več podpisov in zaklepanje",
+          "body": [
+            "Dokument lahko podpiše več oseb, ena za drugo. Odprite podpisano datoteko in jo podpišite, ne da bi kaj spremenili: vaš podpis se doda na konec datoteke, prejšnji pa ostanejo veljavni.",
+            "\"Zakleni dokument po podpisu\" (izklopljeno, razen če označite) zaklene dokument: nihče ne more podpisati za vami in ničesar več ni mogoče spremeniti. Tega ni mogoče razveljaviti.",
+            {
+              "note": "Če spremenite podpisan dokument, preden ga ponovno podpišete, mora biti zapisan ponovno, prejšnji podpisi pa bodo odstranjeni. Okno za podpisovanje vas opozori: če jih želite obdržati, datoteko ponovno odprite in jo podpišite, ne da bi kaj spremenili."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Časovni žigi",
+          "body": [
+            "Časovni žig je podpisana izjava izdajatelja časovnih žigov o tem, kdaj je nekaj obstajalo. Sicer čas v podpisu prihaja z ure računalnika podpisnika, ki jo lahko nastavi kdor koli; časovni žig dokaže trenutek in omogoča, da je podpis mogoče dokazati tudi po izteku certifikata (PAdES B-T).",
+            {
+              "points": [
+                "Podpisi ga dobijo, kadar je v oknu za podpisovanje označeno »Dodaj zaupanja vreden čas (časovni žig)«. V Nastavitve → Podpisi določite, ali je privzeto označeno, tukaj in pri serijski obdelavi.",
+                "Podpiši → Dodaj časovni žig da celotnemu dokumentu lasten časovni žig, brez certifikata: ta dokaže, da je dokument v tistem trenutku obstajal natanko takšen, kot je. Shrani se kot nova datoteka; podpisi, ki jih ima datoteka, ostanejo veljavni."
+              ]
+            },
+            "Izdajatelj je DigiCert (http://timestamp.digicert.com), ki je brezplačen in mu zaupata Adobe Reader in Windows; drugega lahko nastavite v Nastavitve → Podpisi. Prejme samo zgoščeno vrednost (SHA-256), nikoli dokumenta, potrebna pa je internetna povezava. Ko podpis dobi časovni žig, se tudi izdajatelja vašega certifikata vpraša, ali je certifikat še veljaven, njegov odgovor pa se shrani v podpis (dolgoročno preverjanje): Adobe Reader lahko tako prikaže podpis kot veljaven, zdaj in po izteku certifikata.",
+            {
+              "note": "Če izdajatelj ni dosegljiv, se nič ne podpiše in ne zapiše: poskusite znova ali odznačite časovni žig, da podpišete brez njega."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Preverjanje podpisov",
+          "body": [
+            "Podpiši → Preveri podpise izpiše vsak certifikatski podpis datoteke: kdo je podpisal, kdo je izdal certifikat, kdaj, razlog in kraj ter",
+            {
+              "points": [
+                "ali je dokument od tistega podpisa nespremenjen (dodaten podpis pozneje se ne šteje za spremembo);",
+                "ali podpis zaklene dokument;",
+                "ali ta računalnik zaupa organu za izdajo certifikata in ali je certifikat danes veljaven;",
+                "čas, ki ga potrjuje njegov časovni žig, in kateri izdajatelj ga je potrdil, če ga ima. Časovni žig celotnega dokumenta je prav tako naveden, z lastnim preverjanjem."
+              ]
+            },
+            "Preverjanje velja za datoteko, kot je bila nazadnje shranjena, in se izvede na tem računalniku brez povezave s spletom. Klik na podpis na strani odpre ta seznam pri tem podpisu. Pod vsakim podpisom »Pokaži certifikat« odpre okno certifikata v sistemu Windows (verigo in vse podrobnosti; od tam »Namesti potrdilo« doseže, da ta računalnik zaupa certifikatu, ki ga poznate), »Preveri« pa le, ko ga pritisnete, prek spleta vpraša izdajatelja certifikata, ali je bil certifikat preklican."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Več orodij",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Prepoznavanje besedila (OCR)",
+          "body": [
+            "Več orodij → Prepoznaj besedilo (OCR) prebere besede skeniranih strani in jih zapiše v nevidno plast strani, tako da je dokument mogoče preiskovati, njegovo besedilo pa kopirati in izvoziti. Videz strani se ne spremeni.",
+            "Označite samo jezike, v katerih so strani napisane; strani, ki že vsebujejo besedilo, ostanejo nespremenjene.",
+            {
+              "note": "Branje izvaja Tesseract, brezplačen program, ki se namesti posebej. Če ni nameščen, okno prikaže ukaz za njegovo namestitev v sistemu Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Zmanjšanje velikosti dokumenta",
+          "body": [
+            "Več orodij → Stisni shrani dokument kot manjšo datoteko tako, da fotografijam in skenom dodeli manj pikslov. Na voljo so tri stopnje; besedilo in risbe ostanejo enako ostri. Dokument z malo slikami se le malo zmanjša."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Primerjava dveh dokumentov",
+          "body": [
+            "Več orodij → Primerjaj dokumente: izberite drug PDF. Dokumenta sta prikazana drug ob drugem, stran za stran, pri čemer so označene strani z različnim besedilom in navedene vrstice, ki se pojavljajo le v enem od dokumentov."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Serijska obdelava: več datotek hkrati",
+          "body": [
+            "Več orodij → Serijska obdelava izvede iste operacije nad več datotekami v ločenem zavihku. Vsak rezultat je nova datoteka. Če bi rezultati zamenjali datoteke, ki so že v mapi (vaše lastne datoteke, ko gredo v svojo mapo, ne da bi se njihovim imenom kar koli dodalo), vas najprej vprašamo, ali jih želite zamenjati, preskočiti ali postopek preklicati. Datoteka se zamenja šele, ko je njen rezultat dokončan; odprta datoteka (v zavihku tukaj ali v drugem programu) ostane nespremenjena in je označena kot neobdelana.",
+            {
+              "steps": [
+                "Levo dodajte datoteke: \"Dodaj datoteke\", \"Dodaj mapo\" (z vsemi podmapami) ali jih povlecite in spustite.",
+                "Desno označite želene operacije. Vsaka datoteka v vsakem primeru postane PDF; poleg tega lahko zavrtite strani, prepoznate besedilo, dodate glavo in nogo, vodni znak ali številke strani, zmanjšate velikost datotek, jih podpišete s certifikatom ali jih izvozite v drug format. Številke prikazujejo vrstni red izvajanja.",
+                "Izberite način zapisa: ločena datoteka za vsako izvirno datoteko ali vse v enem PDF-ju (v vrstnem redu seznama) ter mapo, v katero bodo shranjeni rezultati. Če so vse datoteke iz ene mape, je ta mapa izbrana samodejno, dokler ne izberete druge; sicer je to mapa, ki ste jo izbrali nazadnje.",
+                "\"Začni\". Pri vsaki datoteki je prikazan rezultat; izvajanje lahko ustavite med obdelovanjem datotek."
+              ]
+            },
+            {
+              "points": [
+                "Recepti: \"Shrani kot recept\" pod določenim imenom shrani vse vaše izbire (razen datotek in gesla), da jih lahko kasneje ponovno uporabite z enim klikom.",
+                "\"V rezultatih ohrani strukturo map datotek\" ponovno ustvari strukturo map za dodano mapo.",
+                "\"Zapiši poročilo o izvedbi\" ob rezultate shrani besedilno datoteko, v kateri je navedeno, kaj je bilo zapisano in kje je prišlo do napake.",
+                "PDF, ki je le podpisan, ohrani svoje podpise; če se v istem teku izvede še kaj drugega, se dokument zapiše ponovno in podpisi so izpuščeni."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nastavitve",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Nastavitve PDF Organizerja",
+          "body": [
+            "Datoteka → Nastavitve (ali Nastavitve v stranski vrstici, nato PDF Organizer). Vsako nastavitev lahko vrnete posamezno ali vse hkrati.",
+            {
+              "points": [
+                "Pri odpiranju dokumenta: kakšna povečava se uporabi ob odpiranju, drsenje ali ena stran naenkrat, prikaz sličic ali ne.",
+                "Enote, ravnila in mreža: enota (milimetri, palci, točke), ravnila, mreža in njen razmik.",
+                "Tiskanje: papir, usmerjenost in prilagajanje, s katerimi se odpre okno za tiskanje.",
+                "Hitra orodjarna: katere gumbe ima trak nad stranmi.",
+                "Imena novih dokumentov: vzorci za izvlečene strani, nove dokumente in PDF, v katerega serijska obdelava združi več datotek.",
+                "Podpisi: ali naj \"Shrani\" vpraša pred zapisovanjem čez podpisano datoteko.",
+                "Bližnjice na tipkovnici: kliknite tipke ukaza, nato pritisnite nove."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O PDF Organizerju",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O PDF Organizerju",
+          "body": [
+            "PDF Organizer je PDF aplikacija Syntelab Creative: bere PDF dokumente, ureja in združuje njihove strani, nanje piše in riše, izpolnjuje in ustvarja obrazce, podpisuje s certifikatom in preverja podpise ter vse to izvede tudi za več datotek hkrati.",
+            "Aplikacija je nova in nekaj njenih funkcij je šele prvi korak. Če za vaše dokumente ne zadostuje, nam sporočite prek Pomoč → Povratne informacije: tako vemo, kaj izboljšati."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "S čim je zgrajen PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Branje, risanje in pisanje PDF: MuPDF.",
+                "Prepoznavanje besedila (OCR): Tesseract, če je nameščen na računalniku.",
+                "Odpiranje pisarniških dokumentov: Word, Excel in PowerPoint ali LibreOffice, odvisno od tega, kaj je nameščeno.",
+                "Shranjevanje spletne strani kot PDF: brskalnik, nameščen na računalniku.",
+                "Podpisovanje s certifikatom: Windowsove storitve za certifikate; podpisi so zapisani v skladu s standardom PAdES."
+              ]
+            },
+            "Kar ima skupnega s preostalim programom, je navedeno pod \"O Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Kaj PDF Organizer še ne zna",
+          "body": [
+            {
+              "points": [
+                "Pisarniške dokumente odpira pisarniški paket na računalniku; brez Worda, Excela, PowerPointa ali LibreOfficea jih ni mogoče odpreti. Na lastnem pretvorniku trenutno delamo: glejte \"Kaj pripravljamo\".",
+                "Za prepoznavanje besedila je potreben program Tesseract, ki se namesti posebej.",
+                "Besedilo dokumenta se spreminja po eno vrstico naenkrat; odstavki se ne preoblikujejo samodejno.",
+                "Slik, natisnjenih v štirih barvah (CMYK), ni mogoče izbrati za premikanje.",
+                "»Preveri« pove, ali je certifikat danes preklican, ne pa, kdaj je bil preklican.",
+                "Podpisovanje s certifikatom trenutno deluje v sistemu Windows; na Linuxu in macOSu bo na voljo v kasnejši različici."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Orienteerumine",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Esimene leht",
+          "body": [
+            "Devi sakk avaneb esimesel lehel, kus on kõik tööriistad, rühmitatuna nagu menüüdes: Kodeeri, Andmed, Genereeri, Kontrolli, Võrk.",
+            {
+              "points": [
+                "Loendi kitsendamiseks kirjutage väljale \"Otsi tööriista\".",
+                "Tööriista nööpnõel hoiab seda üleval, jaotises Kinnitatud.",
+                "Tööriist avaneb samas sakis; Fail → Kõik tööriistad viib tagasi esimesele lehele. Seadetes saate määrata, et iga tööriist avaneks eraldi sakis ja uus sakk avaneks viimati kasutatud tööriistaga."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Kleepige ükskõik mida",
+          "body": [
+            "Esimese lehe ülaosas olev kast võtab vastu kõik, mida kleebite, ja ütleb, millena see paistab: token, sertifikaat, JSON, UUID-d, ajatemplid, cron-ajakavad, URL-id, XML või HTML, SQL, Base64, kontrollsumma, tabel, YAML.",
+            "Iga oletuse all on tööriistad, mis sellisega töötavad, sobivaim esimesena. Klõpsake ühel: see avaneb, tekst on juba sees ja töödeldud.",
+            {
+              "note": "Kleebitu jääb kasti seni, kuni selle tühjendate või saki sulgete. Seda ei kirjutata kunagi kettale."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Tööriista ülesehitus",
+          "body": [
+            "Enamikul tööriistadel on sama raam: valikud real ülaosas, sisend ühel pool, väljund teisel pool ja allosas rida, mis ütleb, mis juhtus.",
+            {
+              "points": [
+                "Tulemus tehakse uuesti iga kord, kui sisend või mõni valik muutub, ja näidatakse väljundis; seda ütleb valikute real \"Käivitub ise\". Ainult tekst, mis on iga klahvivajutusega käivitamiseks liiga pikk, või fail, mis on suurem kui 128 MB, ootab nuppu Käivita, mis siis ilmub. Ctrl+Enter käivitab tööriista igal ajal.",
+                "Tulemust, mis ei ole tekst (Base64-st dekodeeritud pilt, gzip), näidatakse eelvaatena: pilti sellisena, nagu see on, kõike muud selle tüübi, suuruse ja esimeste baitide kaudu. Kopeeri kopeerib selle siis Base64-na ja pildi saab kopeerida pildina. Sama kehtib sisendfaili kohta, mis ei ole tekst.",
+                "Ava fail, Kleebi ja Tühjenda on sisendi kohal; Kopeeri ja Salvesta faili väljundi kohal. Faili võib ka sisendile lohistada.",
+                "Sisendi vead kirjeldatakse sõnadega koos rea ja veeruga ning märgitakse redaktoris.",
+                "Menüü Vaade paneb kaks paneeli kõrvuti või üksteise alla, näitab reanumbreid ja murrab pikad read; paneelide vahelist joont saab lohistada.",
+                "Teie valitud valikud jäetakse järgmiseks korraks meelde. Kirjutatut mitte."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Põleta ja mida säilitatakse",
+          "body": [
+            "Põleta iga tööriista paremas alanurgas tühjendab selle korraga: sisendi, tulemuse, kõik selle kastidesse kirjutatu ja selle, mida redaktorid saaksid tagasi võtta.",
+            "Dev säilitab ainult oma seaded, teie kinnitatud tööriistad, viimati kasutatud tööriista nime ja iga tööriista valikud. Mitte midagi, mida tööriistas kirjutate, kleebite, avate või loote, ei kirjutata kettale, logisse ega hiljutiste asjade loendisse. Saladusi kõige vähem: võtmed, paroolifraasid, tokenid ja päringu päised elavad sakis ja mitte kusagil mujal.",
+            "Üks asi jääb mõneks ajaks kettale: faili tulemus ja tulemus, mis ei ole tekst, kirjutatakse programmi enda kausta, et neid saaks näidata ja seejärel salvestada. Kumbki kustutatakse, kui selle asemele tuleb teine tulemus, kui põletate tööriista või sulgete selle, ja igal juhul siis, kui Dev uuesti käivitub."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Mis tahes suurusega failid",
+          "body": [
+            "Faili suurusele pole piirangut seatud. Kuvamiseks piisavalt väike fail (kuni 16 MB) pannakse redaktorisse. Suurem või selline, mis ei ole tekst, jääb kettale: kuvatakse selle algus (või eelvaade), tööriist loeb seda selle asukohast ja selle tulemust näidatakse nagu teksti puhul. Salvesta faili kopeerib seejärel tulemuse teie valitud kohta.",
+            {
+              "points": [
+                "Pikk töö kuvab kaardi, kus on näha edenemine ja nupp Peata.",
+                "Fail, mis on tekst muus kodeeringus kui UTF-8 (UTF-16, Windows-1252 jms), loetakse tekstina, kui see on kuvamiseks piisavalt väike, ja kodeering näidatakse. Devist salvestatu on UTF-8.",
+                "Tööriistale lohistatud fail avatakse nagu käsuga Ava fail. Kui aken ei saa aru, kus fail asub, võetakse see vastu kuni 16 MB, nagu oleks see kleebitud."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Palju faile ja terved kaustad",
+          "body": [
+            "Kus tööriistal on valik \"Töötle: Teksti / Faile\", käivitab \"Faile\" selle korraga paljudel failidel.",
+            {
+              "steps": [
+                "Lisage failid või kaust (koos alamkaustadega, kui jätate selle valiku sisse).",
+                "Iga fail loetakse lisamisel üks kord ja öeldakse, kas tööriist selle vastu võtab.",
+                "Valige, kuhu tulemused lähevad: iga faili kõrvale uue nimega, kausta (säilitades kaustastruktuuri) või failide endi asemele, mille puhul küsitakse veel kord. Räsi saab tulemusi ka lihtsalt loendis näidata.",
+                "Klõpsake loendis failil, et näha valikute all ainult selle tulemust, enne kui midagi kirjutatakse.",
+                "Käivitage. Vigane fail ei peata teisi; igaüks ütleb, kuidas sellel läks."
+              ]
+            },
+            {
+              "note": "Tulemust ei kirjutata kunagi juba olemasoleva faili peale, kui te seda just ei palu."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Windowsi failihalduri paremklõpsumenüü",
+          "body": [
+            "Lülitage see sisse programmi seadetes jaotises Windowsi failihaldur. Kõik on koondatud ühe rea alla, \"Syntelab Creative\"; Windows 11-s on see jaotises \"Kuva rohkem suvandeid\".",
+            {
+              "points": [
+                "Ava rakenduses Syntelab Dev: failitüüpidel, mida mõni tööriist loeb (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz jms). Fail avaneb selle tüübi tööriistas.",
+                "Kontrollsummad: mis tahes failil või kaustal. Räsid loetletakse, igaüks oma faili kõrval, ja midagi ei kirjutata.",
+                "Hex-vaade: mis tahes failil.",
+                "Võrdle: kaks faili lähevad Diffi kahele poolele; kaks kausta kaustade võrdlusesse."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kodeeri",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Teisendab baidid Base64-ks ja tagasi. Kodeerimine võtab mis tahes faili; dekodeerimine annab tagasi baidid, mis kuvatakse, kui need on tekst, ja salvestatakse faili, kui ei ole.",
+            {
+              "points": [
+                "Tähestik: standardne või URL-ide jaoks (- ja _).",
+                "Täitmine märgiga = ning read 64, 76 või mis tahes arvu märgiga.",
+                "Dekodeerimine võtab vastu mõlemad tähestikud, täitega või ilma, ja ütleb, kus mõni märk on vale."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "URL-i kodeerimine / dekodeerimine",
+          "body": [
+            "Protsendikodeering, nagu brauserid seda kirjutavad: aadressi osa (kodeeritakse kõik, mis pole lihtne täht), terve aadress (selle enda märgid säilitatakse) või vorm (+ tühiku asemel).",
+            "Dekodeerimine ütleb, kus märgile % ei järgne kaht kuueteistkümnendnumbrit."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML-olemid",
+          "body": [
+            "Kirjutab märgid, mida HTML ja XML enda jaoks hoiavad (&, <, >, jutumärgid), olemitena ja loeb olemeid tagasi: nime, kümnendarvu või kuueteistkümnendarvu järgi. Nimed on HTML-standardi omad.",
+            "\"Ka kõik mitte-ASCII märgid\" kirjutab olemitena ka rõhumärkidega tähed ja muud tähestikud."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "JWT-i dekodeerija",
+          "body": [
+            "Võtab JSON Web Tokeni osadeks: selle päise ja sisu JSON-ina ning väited sõnadega (väljaandja, subjekt, sihtrühm, millal see aegub, märkega \"aegunud\" või \"pole veel aegunud\").",
+            "Jagatud saladusega tehtud allkirja (HS256, HS384, HS512) kontrollimiseks sisestage saladus. Privaatvõtmega (RS, ES, PS) tehtud allkirju ei kontrollita.",
+            {
+              "note": "Token ja saladus jäävad sakki: tokeni dekodeerimiseks ei saadeta midagi kuhugi."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Paojadade lisamine / eemaldamine",
+          "body": [
+            "Kirjutab teksti mõne keele (JSON, JavaScript, C, C++, Java jms) sõnena, kus jutumärgid, reavahetused ja muud märgid on paojadadena, ning loeb sellise sõne tagasi."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Pakib ja pakib lahti gzipi, mis tahes suurusega faili lugemise käigus. Tase ulatub kiireimast väikseimani; teksti tulemuse saab anda Base64-na."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Arvusüsteemid",
+          "body": [
+            "Näitab täisarve, üks igal real, kahend-, kaheksand-, kümnend- ja kuueteistkümnendsüsteemis ning veel ühel teie valitud alusel kuni 36-ni. Arvul pole suurimat suurust.",
+            {
+              "points": [
+                "Arvu alus tuvastatakse kirjutusviisi järgi: 0x tähendab kuueteistkümnendsüsteemi, 0b kahendsüsteemi, 0o kaheksandsüsteemi, tähed kuueteistkümnendsüsteemi, muidu on see kümnendsüsteem. Või valige alus, millel kõike loetakse.",
+                "Numbrite vahel olevad tühikud, alakriipsud ja ülakomad jäetakse vahele: 1_000_000.",
+                "Negatiivne arv antakse ka nii, nagu arvutid seda hoiavad (täiendkood), väikseimas 8, 16, 32, 64 jne bitist, mis selle mahutab."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Andmed",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "JSON-i vormindaja",
+          "body": [
+            "Vormindab, minifitseerib ja valideerib JSON-i ning näitab seda puuna. Mis tahes suurusega dokumenti loetakse voona.",
+            {
+              "points": [
+                "Taane 2 või 4 tühikuga, tabeldusmärgiga või mis tahes arvu tühikutega.",
+                "Rohkem valikuid: võtmete sortimine, lühikesed loendid ühel real, tühik pärast koolonit, reavahetuse tüüp, reavahetus lõpus, mitte-ASCII märgid kujul \\uXXXX.",
+                "Leebe lugemine võtab vastu kommentaarid (// ja /* */) ja lõpukomad ning kirjutab range JSON-i.",
+                "Muudatused: nullide eemaldamine, tühjade väärtuste eemaldamine jms, ühe läbimisega.",
+                "Puu avaneb tase korraga ja leiab teksti võtmetest ja väärtustest."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Käivitab dokumendil JSONPath-päringu (RFC 9535): $.store.book[?@.price < 10].title. Tulemus on leitud väärtused, teed nendeni või mõlemad.",
+            "Vigase päringu korral öeldakse koht, kus viga tekib."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "JSON Schema valideerija",
+          "body": [
+            "Kontrollib dokumenti JSON Schema järgi (mustandid 4 kuni 2020-12). Skeem läheb sisendi all olevale paneelile. Iga mittevastav koht loetletakse koos asukoha ja rikutud reegliga.",
+            "Paljude failide puhul kontrollitakse igaüht sama skeemi järgi. Viidet $ref teisele failile või aadressile ei järgita."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Skeemigeneraator ja JSON → TypeScript",
+          "body": [
+            "JSON-i näidise põhjal kirjutab skeemigeneraator JSON Schema, millele näidis vastab, ja JSON → TypeScript kirjutab selle tüübi deklaratsioonid (liidesed või tüübid, eksporditud või mitte, readonly või mitte, teie antud nime all)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Teisendab YAML-i JSON-iks ja JSON-i YAML-iks. YAML-i loetakse selle põhiskeemi järgi, ankruid ja ühendamisi järgides; vead näidatakse koos asukohaga."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Teisendab tabeli JSON-iks ja tagasi. Eraldaja tuvastatakse esimesest reast või valitakse (koma, semikoolon, tabeldusmärk, püstkriips); esimene rida võib olla päis; arvud ja true / false saab tuvastada.",
+            "\"Tabel\" näitab CSV-d ridade ja veergudena, mis tahes suurusega faili puhul."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "XML / HTML vormindaja",
+          "body": [
+            "Vormindab, minifitseerib ja kontrollib XML-i ja HTML-i. XML-i loetakse rangelt: sulgemata märgend näidatakse koos asukohaga. HTML-i loetakse sama andestavalt kui brauserites."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "SQL vormindaja",
+          "body": [
+            "Paigutab lause, üks klausel rea kohta, või paneb selle ühele reale; võtmesõnad suurtähtedega, väiketähtedega või nii, nagu kirjutatud. See ei küsi dialekti ega kontrolli, mida lause tähendab."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Võrdleb kaht teksti rea kaupa, kaht JSON-dokumenti sisu järgi või kaht kausta faili kaupa. Esimene läheb sisendisse, teine selle all olevale paneelile.",
+            {
+              "points": [
+                "Kõrvuti märgib rea sees muutunud sõnad; Ühendatud on paik sellisel kujul, nagu diff -u selle kirjutab.",
+                "Ignoreeri tähesuurust, tühimärke, tühje ridu, numbreid või kirjavahemärke.",
+                "JSON-i puhul ei loe võtmete järjekord ega paigutus erinevuseks; tulemus võib olla JSON Patch (RFC 6902).",
+                "Kaustad: millised failid on ainult ühes, millised on samad, millised erinevad; rea nupp Võrdle avab paari tekstidena."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Markdowni eelvaade",
+          "body": [
+            "Näitab Markdowni nii, nagu see välja näeb, ja annab selle HTML-i kopeerimiseks või salvestamiseks: CommonMark koos tabelite, läbikriipsutuse, ülesandeloendite ja allmärkustega.",
+            {
+              "points": [
+                "Markdowni sisse kirjutatud HTML kuvatakse tekstina, seda ei käivitata.",
+                "Pilti, mis tuleks võrgust laadida, ei laadita: selle asemel kuvatakse selle kirjeldus ja aadress. Teksti sees kaasas olev pilt (data:) kuvatakse.",
+                "Klõpsatud link avaneb süsteemi brauseris."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Genereeri",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Loob versioonide 1, 3, 4, 5, 6 ja 7 UUID-sid (RFC 9562), nii palju kui soovite, sidekriipsudega, lihtsana, URN-ina või looksulgudes. \"Jaota osadeks\" näitab iga UUID-i versiooni ning selles sisalduvat aega või nime."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Räsi",
+          "body": [
+            "Teksti või faili CRC-32, MD5, SHA-1, SHA-256, SHA-384 ja SHA-512, mitu korraga, hex- või Base64-kujul. Mis tahes suurusega fail räsitakse lugemise käigus.",
+            {
+              "points": [
+                "Võrdle kontrollsummaga: kleepige kontrollsumma või .sha256-faili rida; öeldakse, kas see ühtib.",
+                "HMAC-võti: räsidest saavad selle võtmega HMAC-id.",
+                "Iga rida eraldi: üks räsi teksti iga rea kohta.",
+                "Failid: räsid loetletakse failide kõrval; Kopeeri kõik annab need sellisel kujul, nagu sha256sum need kirjutab."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Paroolid ja saladused",
+          "body": [
+            "Loob paroole teie valitud märgitüüpidest, paroolifraase sõnadest ja juhuslikke baite hex- või Base64-kujul, operatsioonisüsteemi juhuslikest arvudest. Igaüks näitab, mitu bitti entroopiat sellel on. Kui midagi on loodud, loob valiku muutmine selle uuesti.",
+            "Paroolifraas koosneb sõnadest, mis on valitud Electronic Frontier Foundationi pikast sõnaloendist (7776 ingliskeelset sõna), igaüks sama tõenäoline kui teised: kuus sõna annavad umbes 77 bitti."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Võtmed ja sertifikaadid",
+          "body": [
+            "Viis toimingut, mis valitakse ülaosas:",
+            {
+              "points": [
+                "Uus võti: RSA, EC P-256 / P-384 / P-521 või Ed25519, kõigis vormingutes, mida programmid kasutavad (PKCS #8, vanem vorming, OpenSSH; avalik võti PEM-ina ja authorized_keys rea kujul), lukustatud paroolifraasiga, kui selle annate.",
+                "Sertifikaadi taotlus: CSR uue või kleebitud võtme jaoks, koos subjekti ja muude nimedega (SAN).",
+                "Iseallkirjastatud sertifikaat: sama, aga allkirjastatud oma võtmega, määratud arvuks päevadeks; \"Võib allkirjastada teisi sertifikaate\" teeb sellest teie oma sertifitseerimisasutuse.",
+                "Allkirjasta oma CA-ga: kleepige taotlus, oma sertifitseerimisasutuse sertifikaat ja selle võti; saate allkirjastatud sertifikaadi ja selle järel asutuse sertifikaadi.",
+                "Loe ja teisenda: kleepige või avage ükskõik mis (PEM, DER, OpenSSH-võti, .pfx- või .p12-fail, lukustatud või mitte). Tööriist ütleb, mida leidis ja kas võti vastab sertifikaadile, ning kirjutab iga asja teistes vormingutes. Võtme ja selle sertifikaadi saab koos salvestada .pfx-failina."
+              ]
+            },
+            {
+              "note": "Kõik luuakse selles arvutis. Võti on sakis kuni Põletamiseni ja mitte kusagil mujal, kui te seda ei salvesta."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kontrolli",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Regex-tester",
+          "body": [
+            "Proovib JavaScripti regulaaravaldist tekstil: vasted koos rühmade ja asukohtadega või tekst, milles vasted on asendatud. Lipud on g, i, m, s, u, y.",
+            "Muster töötab aknast eraldi ja kui see töötab kauem kui 20 sekundit, siis see lõpetatakse."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Cron-selgitaja",
+          "body": [
+            "Ütleb sõnadega, mida ajakava tähendab ja millal see käivitub: crontab (viis välja, sekunditega kuus, aastaga seitse), Quartz, AWS EventBridge cron() ja rate() ning systemd OnCalendar. Üks ajakava rea kohta.",
+            {
+              "points": [
+                "Järgmised käivitused ja soovi korral ka eelmised, teie valitud ajavööndis.",
+                "Nädalapäevi nummerdatakse teie valikul alates 0-st, mis on pühapäev, või alates 1-st, nagu Quartz neid nummerdab. Rida sekunditega, milles on ka aasta, L, W või #, on Quartzi rida ja seda loetakse ise Quartzi moodi.",
+                "Sama ajakava teistes vormides, kopeerimiseks või sisendisse lisamiseks.",
+                "Koostaja loob ajakava, kui valite iga välja; \"Muuda koostajas\" võtab kirjutatud ajakava sinna üle."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Unixi ajatempel",
+          "body": [
+            "Loeb ajahetki, üks rea kohta: sekundeid, millisekundeid, mikrosekundeid või nanosekundeid alates 1970. aastast või tavapärasel viisil kirjutatud kuupäeva (ISO 8601, nagu seda kirjutavad e-post ja HTTP, nagu seda kirjutab Git). Iga hetk näidatakse teie valitud ajavööndis, UTC-s ja igat tüüpi ajatemplina."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "URL-i parser",
+          "body": [
+            "Võtab URL-i osadeks nii, nagu brauserid seda loevad: skeem, kasutaja, host (koos Unicode-kujuga, kui see on kirjutatud punycode'is), port, tee, iga päringu parameeter dekodeerituna ja fragment."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Sertifikaadi dekodeerija",
+          "body": [
+            "Loeb X.509 sertifikaate PEM- või DER-kujul ja näitab kõike, mis neis on: subjekt, väljaandja, kehtivus, nimed, mille jaoks see on, selle võti, laiendused ja sõrmejäljed.",
+            "See loeb; see ei otsusta, kas sertifikaati tasub usaldada. Saidi näidatava sertifikaadi ja selle kohta, kas see arvuti seda usaldab, kasutage Võrk → Saidi sertifikaat."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Hex-vaataja",
+          "body": [
+            "Näitab mis tahes suurusega faili või kleebitud teksti baite: iga rea positsiooni, baite ja samu baite märkidena.",
+            {
+              "points": [
+                "Minge positsioonile, mis on kirjutatud kujul 0x1F4, 1F4h või 500.",
+                "Otsige baite (DE AD BE EF) või teksti (UTF-8 või UTF-16 mõlemas baidijärjestuses), edasi ja tagasi.",
+                "Klõpsake baidil: külgpaneel näitab, mis seal on, igas suuruses arvudena, mõlemas baidijärjestuses, märgina ja ajana.",
+                "Valige lohistades, Shift-klahviga või nooleklahvidega; kopeerige valik hex-kujul, koodina, Base64-na või tekstina või salvestage see faili."
+              ]
+            },
+            {
+              "note": "See ainult vaatab: failis ei muudeta midagi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Võrk",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Kuhu võrgutööriistad pöörduvad",
+          "body": [
+            "Need neli tööriista on Devi ainus osa, mis võrku läheb, ja need lähevad sinna, kuhu te need suunate.",
+            {
+              "points": [
+                "Ühendust võetakse ainult teie sisestatud aadressiga ja ainult siis, kui vajutate nuppu. Mitte kunagi taustal.",
+                "Saadetakse see, mis te kirjutasite. Päringule lisatakse ainult User-Agent, mis on kõigil sama (\"Syntelab Creative\"), kui te ei anna oma.",
+                "Küpsiseid ei säilitata, teie ega arvuti kohta ei saadeta midagi ja kirjutatut ei säilitata."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "HTTP-klient",
+          "body": [
+            "Saadab ühe käsitsi kirjutatud päringu: meetod, aadress, päised (üks rea kohta: Nimi: väärtus) ja keha, kirjutatud või võetud mis tahes suurusega failist.",
+            {
+              "points": [
+                "Vastus: selle kood, kui kaua see aega võttis (kokku ja esimese baidini), suurus, päised ja keha, tüübi järgi värvitud ja vormindatud, kui see on JSON. Keha, mis ei ole tekst (pilt, PDF), näidatakse sellisena, nagu see on, ja salvestatakse nii, nagu see saabus.",
+                "Järgige ümbersuunamisi või vaadake esimest vastust sellisena, nagu see on. Aadressid, kust päring edasi saadeti, loetletakse.",
+                "Kontrollige sertifikaati selle järgi, mida see arvuti usaldab; lülitage see välja ainult oma serverite puhul.",
+                "\"Saada, vastus faili\" kirjutab mis tahes suurusega keha otse kettale, edenemise ja nupuga Peata.",
+                "\"Kopeeri curl-käsuna\" annab sama päringu käsuna."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS-päring",
+          "body": [
+            "Küsib nimeserverilt nime kirjeid: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, mitu korraga. Aadressi puhul antakse selle nimi (PTR).",
+            "Küsimus läheb nimeserverile, mida arvuti on seadistatud kasutama, avalikule serverile (1.1.1.1, 8.8.8.8, 9.9.9.9), HTTPS-i kaudu töötavale lahendajale (Cloudflare, Google) või teie sisestatud serverile."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Portide kontroll",
+          "body": [
+            "Ütleb, kas hosti pordid võtavad vastu TCP-ühendusi: üks, mitu või vahemik kuni kõigi 65 535-ni (22, 80, 443, 8000-8100). Iga port on avatud, suletud või teie antud aja jooksul vastuseta.",
+            {
+              "note": "Kontrollige ainult enda hoste või neid, mida teil on lubatud testida."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Saidi sertifikaat",
+          "body": [
+            "Näitab sertifikaate, mida sait turvalise ühenduse loomisel annab: kellele need on, kes need allkirjastas, mitu päeva on jäänud, kas see arvuti neid usaldab ja kui ei, siis miks, TLS-i versiooni ja šifri. Tehakse ainult kätlus (handshake): päringut ei saadeta.",
+            {
+              "points": [
+                "Kirjutage example.com, example.com:8443 või veebiaadress.",
+                "E-posti serverid ja FTP alustavad krüpteerimata ja neil palutakse minna üle TLS-ile (STARTTLS): valitakse pordi järgi (25, 587, 143, 110, 21) või käsitsi.",
+                "\"Kõik\" näitab kõike, mida sertifikaadid ütlevad; \"PEM\" annab need kopeerimiseks või salvestamiseks."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Seaded",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Devi seaded",
+          "body": [
+            "Fail → Seaded avab programmi seaded Devi jaotises.",
+            {
+              "points": [
+                "Avage iga tööriist eraldi sakis või sakis, milles see valiti.",
+                "Avage uus sakk viimati kasutatud tööriistaga või esimesel lehel.",
+                "Taastage iga tööriista valikud ja kinnitused programmi vaikeväärtustele."
+              ]
+            },
+            "Windowsi failihalduri paremklõpsumenüü, keel, teema ja klahvid on kogu programmi seadetes."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Devi kohta",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Devi kohta",
+          "body": [
+            "Dev on Syntelab Creative'i rakendus arendajatele: tööriistad, mis kodeerivad ja dekodeerivad, vormindavad ja kontrollivad, teisendavad üht andmevormi teiseks ning võtavad osadeks selle, mida on sellisena raske lugeda.",
+            "Kõik tehakse selles arvutis. Mitte midagi, mida tööriistas kirjutate, kleebite või avate, ei säilitata ega saadeta kuhugi. Failide suurusele ega arvule pole piirangut seatud: piirangud on arvuti mälu ja ketas.",
+            "See on uus ja alles valmimas. Kui see jääb teie töö jaoks puudulikuks, andke meile teada menüüst Abi → Tagasiside."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Millega Dev on tehtud",
+          "body": [
+            {
+              "points": [
+                "Redaktorid: CodeMirror, https://codemirror.net . MIT litsents. Copyright (C) 2018-2021 Marijn Haverbeke ja teised.",
+                "JSON-i lugemine ja värvimine redaktorites: @codemirror/lang-json, https://github.com/codemirror/lang-json , koos @codemirror/language ja @lezer/highlight. MIT litsents. Copyright (C) 2018-2021 Marijn Haverbeke ja teised.",
+                "YAML-i, XML-i, HTML-i ja SQL-i lugemine ja värvimine redaktorites: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (koos @codemirror/lang-css ja @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . MIT litsents. Copyright (C) 2018-2024 Marijn Haverbeke ja teised.",
+                "Dokumendi kontrollimine JSON Schema järgi: jsonschema, https://github.com/Stranger6667/jsonschema . MIT litsents. Copyright (c) 2020-2026 Dmitry Dygalo. See on ehitatud ilma võrguosata: Dev ei laadi kunagi skeemi alla.",
+                "JSONPath mustrid (sobitamine ja otsing): regex, https://github.com/rust-lang/regex . MIT või Apache-2.0 litsents. Copyright (c) 2014 The Rust Project Developers.",
+                "YAML-i lugemine: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . MIT või Apache-2.0 litsents. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. YAML-i kirjutab Dev ise.",
+                "Kahe teksti võrdlemine (Diff): similar, https://github.com/mitsuhiko/similar . Apache-2.0 litsents. Autorid: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . MIT või Apache-2.0 litsents. Copyright (c) 2014-2026 Alex Crichton.",
+                "Räsi-tööriista ja tokeni allkirja räsid: sha2, sha1 ja md-5, https://github.com/RustCrypto/hashes . MIT või Apache-2.0 litsents. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation ja RustCrypto arendajad.",
+                "Kuupäevad, kellaajad ja ajavööndid (Unixi ajatempel, Cron-selgitaja): jiff, https://github.com/BurntSushi/jiff , koos IANA andmebaasi ajavöönditega. Unlicense või MIT litsents. Copyright (c) 2015 Andrew Gallant.",
+                "URL-i osadeks võtmine: url ja idna, https://github.com/servo/rust-url . MIT või Apache-2.0 litsents. Copyright (c) 2013-2025 The rust-url developers.",
+                "X.509 sertifikaatide lugemine: x509-parser, https://github.com/rusticata/x509-parser . MIT või Apache-2.0 litsents. Copyright (c) 2017 Pierre Chifflier.",
+                "Regulaaravaldiste testija käivitab JavaScripti regulaaravaldisi selle WebView mootoris, millega programm kuva joonistab (Windowsis Microsoft Edge WebView2); selle jaoks pole lisatud ühtki teeki.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . MIT või Apache-2.0 litsents. Copyright (c) 2018 Sam Rijs, Alex Crichton ja kaasautorid.",
+                "UUID-d: uuid, https://github.com/uuid-rs/uuid . Apache-2.0 või MIT litsents. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Juhuslikud baidid paroolide, saladuste ja UUID-de jaoks, operatsioonisüsteemist: getrandom, https://github.com/rust-random/getrandom . MIT või Apache-2.0 litsents. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "RSA-võtmed ja -allkirjad: rsa, https://github.com/RustCrypto/RSA , koos num-bigint-dig, https://github.com/dignifiedquire/num-bigint . MIT või Apache-2.0 litsents. Copyright (c) RustCrypto Developers ja dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "NIST-i kõverate (P-256, P-384, P-521) võtmed ja allkirjad: p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , koos teekidega ecdsa, elliptic-curve ja crypto-bigint, mida need vajavad. Apache-2.0 või MIT litsents. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Ed25519 võtmed ja allkirjad: ed25519-dalek ja curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . BSD 3-Clause litsents. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft ja Henry de Valence. Kõik õigused kaitstud.",
+                "Vormingud, milles võtmed, taotlused ja sertifikaadid kirjutatakse (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER ja PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Apache-2.0 või MIT litsents. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "OpenSSH-võtmefailid: ssh-key, https://github.com/RustCrypto/SSH , koos bcrypt-pbkdf, aes, ctr, chacha20 ja muude RustCrypto šifrite ja räsidega, mida võtme lukustamine vajab ( https://github.com/RustCrypto ). Apache-2.0 või MIT litsents. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "PKCS #12 failid (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , koos RustCrypto teekidega pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 ja scrypt, mida see vajab. MIT või Apache-2.0 litsents. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Võtmete loomiseks kasutatavad juhuslikud arvud, mis on võetud operatsioonisüsteemist: rand_core, https://github.com/rust-random/rand . MIT või Apache-2.0 litsents. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "HTTP-klient: ureq, https://github.com/algesten/ureq . MIT või Apache-2.0 litsents. Copyright (c) 2019 Martin Algesten.",
+                "HTTP-kliendi ja \"Saidi sertifikaadi\" turvalised ühendused (TLS): rustls, https://github.com/rustls/rustls , Apache-2.0, ISC või MIT litsents, Copyright (c) 2016 Joseph Birr-Pixton; koos rustls-webpki, https://github.com/rustls/webpki , ISC litsents, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , Apache-2.0 ja ISC litsentsid; webpki-roots, https://github.com/rustls/webpki-roots , CDLA-Permissive-2.0 litsents.",
+                "Kas see arvuti usaldab sertifikaati: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . MIT või Apache-2.0 litsents. Copyright (c) 2022 1Password.",
+                "Markdowni lugemine: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . MIT litsents. Copyright 2015 Google Inc. Kõik õigused kaitstud.",
+                "Muus kodeeringus kui UTF-8 kirjutatud failide lugemine: encoding_rs, https://github.com/hsivonen/encoding_rs , Apache-2.0 või MIT litsents (andmete jaoks BSD-3-Clause), Copyright Mozilla Foundation; ning chardetng, https://github.com/hsivonen/chardetng , Apache-2.0 või MIT litsents, Copyright Mozilla Foundation.",
+                "Paroolifraaside sõnad: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , autor Electronic Frontier Foundation, kasutatud Creative Commons Attribution 3.0 United States litsentsi alusel ( https://creativecommons.org/licenses/by/3.0/us/ ). Loendit kasutatakse muutmata kujul.",
+                "OpenSSL-i vanal viisil lukustatud võtmete avamine: RustCrypto aes, cbc ja des, https://github.com/RustCrypto . MIT või Apache-2.0 litsents. Copyright (c) RustCrypto Developers.",
+                "Kirjutatud Devi jaoks, ilma teegita: DNS-päring (küsimused kirjutatakse ja vastused loetakse nii, nagu RFC 1035 neid kirjeldab) ja portide kontroll.",
+                "Kirjutatud Devi jaoks, ilma teegita: JSON-i lugemine ja kirjutamine voona, JSONPath (RFC 9535), Base64, protsendikodeering, HTML-i märgiviited (nende nimed on HTML-standardi omad, https://html.spec.whatwg.org ), sõnede paojadad, JSON Web Tokenite lugemine, YAML-i kirjutamine, CSV mõlemas suunas, cron-ajakavade lugemine, XML-i ja HTML-i vormindaja ning SQL-i vormindaja."
+              ]
+            },
+            "See, mis on ühine ülejäänud programmiga, on jaotises \"Syntelab Creative'i kohta\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Mida Dev veel ei oska",
+          "body": [
+            {
+              "points": [
+                "Tokeni allkirja kontrollitakse ainult siis, kui see on tehtud jagatud saladusega (HS256, HS384, HS512).",
+                "JSON Schema valideerija ütleb mittevastavused inglise keeles, nagu selle teek seda teeb, ega järgi viidet $ref teisele failile või aadressile.",
+                "SQL-i vormindaja ei küsi dialekti ega kontrolli, mida lause tähendab: see annab teada ainult sõnest või kommentaarist, mis kunagi ei lõpe.",
+                "YAML-i ning JSON-i, millest saab YAML või CSV, hoitakse teisendamise ajal tervikuna mälus; CSV-d, millest saab JSON, ning XML-i, HTML-i ja SQL-i töödeldakse lugemise käigus, olenemata nende suurusest.",
+                "Tabel, milles CSV-d vaadatakse, on kirjutuskaitstud: sinna ei saa midagi kirjutada ega sealt veel midagi kopeerida.",
+                "Diff hoiab mõlema faili iga rea kohta kuusteist baiti, mitte faile endid; kaht JSON-dokumenti hoitakse tervikuna, sest need kirjutatakse enne võrdlemist uuesti.",
+                "Ridade lõiku, milles pole ühtki rida, mis esineks mõlemal poolel täpselt üks kord, võrreldakse nii põhjalikult, kui üks sekund lubab: näidatud erinevused on õiged, kuigi mitte alati vähimad.",
+                "Diff ei võrdle seda, kuidas read lõpevad (CRLF või LF).",
+                "Kaht kausta võrreldakse nende failide baitide järgi; failid seotakse nimede järgi, täht-tähelt.",
+                "Kontrolli-tööriistade väljund on JSON, mille nimed on inglise keeles.",
+                "Regulaaravaldiste testija käivitab JavaScripti regulaaravaldisi, mitte PCRE ega Rusti omi; see töötab kuvatava tekstiga, mitte kettal hoitava failiga; muster, mis töötab kauem kui 20 sekundit, lõpetatakse.",
+                "Sertifikaadi dekodeerija loeb sertifikaati ega kontrolli, kas seda tasub usaldada: ei selle ahelat, allkirja ega seda, kas see on tühistatud.",
+                "Fail, mis on tekst muus kodeeringus kui UTF-8, loetakse, kui see on kuvamiseks piisavalt väike; suurem, mida töödeldakse kettalt, peab olema UTF-8.",
+                "Tööriistale lohistatud fail võetakse vastu kuni 16 MB; aknale ei öelda, kus lohistatud fail kettal asub, seega avatakse suurem fail käsuga Ava fail.",
+                "Paroolifraasid koosnevad ainult ingliskeelsetest sõnadest.",
+                "Cron-selgitaja: koostaja loob crontab-ajakavu (viis välja või sekunditega kuus); ajakava, milles on L, W, # või ?, ei saa sinna üle võtta. AWS-i rate() aegu ei saa öelda, sest neid arvestatakse reegli loomise hetkest. Systemd'st loetakse tavalised kalendrisündmused, mitte sekundi murdosi ega kuu lõpust loetud päevade loendeid.",
+                "Hex-vaataja ainult vaatab: failis ei muudeta midagi. Tekstiveerg näitab ASCII-d või Lääne-Euroopa tähti, mitte muid tähestikke; otsida saab baite või teksti, mitte mustreid.",
+                "Võtmed ja sertifikaadid: võtmed on RSA, kõverad P-256, P-384 ja P-521 ning Ed25519; teisi (DSA, secp256k1, X25519) ei loeta. OpenSSL-i vanal viisil lukustatud võti avatakse, kui selle šiffer on AES või 3DES. .pfx-fail sisaldab üht võtit koos selle sertifikaatidega. Väga suure RSA-võtme loomine võtab aega ja seda ei saa poole pealt peatada. RSA-võtmeid loova teegi teadaolev nõrkus puudutab ründajat, kes suudab võrgu kaudu mõõta paljude allkirjade ajastust (RUSTSEC-2023-0071): siin luuakse ja kirjutatakse võtmed teie arvutis ning kellegi teise jaoks ei allkirjastata midagi.",
+                "HTTP-klient: HTTP/1.1 (mitte HTTP/2 ega 3); päringute vahel küpsiseid ei säilitata; mitmeosalisi (multipart) vorme teie eest ei koostata; vastus, mis on suurem kui 16 MB või ei ole tekst, kirjutatakse faili päringu uuesti saatmisega.",
+                "DNS-päring näitab allkirju (DNSSEC), kuid ei kontrolli neid. Portide kontroll proovib ainult TCP-d: vaikivat UDP-porti ei saa eristada suletud pordist. Saidi sertifikaat ei küsi, kas sertifikaat on tühistatud.",
+                "Paremklõpsumenüü on Windowsi failihalduri jaoks; Windows 11-s on selle kirjed jaotises \"Kuva rohkem suvandeid\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

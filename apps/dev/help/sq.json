@@ -1,0 +1,583 @@
+{
+  "title": "Dev",
+  "chapters": [
+    {
+      "title": "Orientimi në program",
+      "topics": [
+        {
+          "id": "start",
+          "title": "Faqja e parë",
+          "body": [
+            "Një skedë Dev hapet në faqen e parë, ku ndodhen të gjitha mjetet, të grupuara si në menu: Kodo, Të dhënat, Gjenero, Inspekto, Rrjeti.",
+            {
+              "points": [
+                "Shkruani te \"Kërko një mjet\" për të ngushtuar listën.",
+                "Butoni i fiksimit në një mjet e mban atë në krye, te Të fiksuara.",
+                "Një mjet hapet në të njëjtën skedë; Skedari → Të gjitha mjetet kthen në faqen e parë. Te Cilësimet mund të zgjidhni që çdo mjet të hapet në një skedë më vete dhe që një skedë e re të hapet me mjetin e përdorur së fundi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "paste-anything",
+          "title": "Ngjit çdo gjë",
+          "body": [
+            "Kutia në krye të faqes së parë pranon çdo gjë që ngjitni dhe tregon se si duket: një token, një certifikatë, JSON, UUID, vula kohore, orare cron, URL, XML ose HTML, SQL, Base64, një shumë kontrolli, një tabelë, YAML.",
+            "Nën çdo supozim janë mjetet që punojnë me atë lloj të dhënash, duke filluar nga më i përshtatshmi. Klikoni njërin: ai hapet me tekstin e ngjitur dhe ekzekutohet.",
+            {
+              "note": "Ajo që ngjisni mbetet në kuti derisa ta pastroni ose të mbyllni skedën. Nuk shkruhet kurrë në disk."
+            }
+          ]
+        },
+        {
+          "id": "frame",
+          "title": "Struktura e një mjeti",
+          "body": [
+            "Shumica e mjeteve kanë të njëjtën strukturë: opsionet në një rresht në krye, hyrja në njërën anë, dalja në anën tjetër dhe një rresht në fund që tregon çfarë ndodhi.",
+            {
+              "points": [
+                "Rezultati krijohet përsëri sa herë që ndryshon hyrja ose një opsion, dhe shfaqet në dalje; këtë e thotë „Ekzekutohet vetë“ në rreshtin e opsioneve. Vetëm një tekst shumë i gjatë për t’u ekzekutuar në çdo tast, ose një skedar më i madh se 128 MB, pret butonin Ekzekuto, i cili shfaqet atëherë. Ctrl+Enter e ekzekuton mjetin në çdo kohë.",
+                "Një rezultat që nuk është tekst (një figurë e dekoduar nga Base64, gzip) shfaqet si parapamje: një figurë ashtu siç është, çdo gjë tjetër sipas llojit, madhësisë dhe bajteve të para. Kopjo atëherë e kopjon si Base64, dhe një figurë mund të kopjohet si figurë. Po kështu edhe një skedar hyrjeje që nuk është tekst.",
+                "Hap një skedar, Ngjit dhe Pastro janë mbi hyrjen; Kopjo dhe Ruaj në një skedar mbi daljen. Një skedar mund të lëshohet gjithashtu mbi hyrjen.",
+                "Gabimet në hyrje thuhen me fjalë, me rreshtin dhe kolonën përkatëse, dhe shënohen në editor.",
+                "Menuja Pamja i vendos dy panelet krah për krah ose njërin nën tjetrin, shfaq numrat e rreshtave dhe mbështjell rreshtat e gjatë; vija mes paneleve mund të tërhiqet.",
+                "Opsionet që zgjidhni mbahen mend për herën tjetër. Ajo që shkruani, jo."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "burn",
+          "title": "Fshi përfundimisht dhe çfarë ruhet",
+          "body": [
+            "Fshi përfundimisht, poshtë djathtas në çdo mjet, e zbraz atë menjëherë: hyrjen, rezultatin, çdo gjë të shkruar në kutitë e tij dhe atë që editorët e tij mund të anulonin.",
+            "Dev ruan vetëm cilësimet e veta, mjetet që keni fiksuar, emrin e mjetit të përdorur së fundi dhe opsionet e çdo mjeti. Asgjë që shkruani, ngjitni, hapni ose krijoni në një mjet nuk shkruhet në disk, në një regjistër (log) ose në një listë të gjërave të fundit. Aq më pak sekretet: çelësat, frazat e kalimit, token-at dhe kokat e një kërkese jetojnë në skedë dhe askund tjetër.",
+            "Një gjë pret për pak kohë në disk: rezultati i një skedari, dhe një rezultat që nuk është tekst, shkruhen në një dosje të vetë programit që të mund të shfaqen dhe pastaj të ruhen. Secili fshihet kur një rezultat tjetër zë vendin e tij, kur e fshini përfundimisht mjetin ose e mbyllni, dhe në çdo rast kur Dev niset përsëri."
+          ]
+        },
+        {
+          "id": "files",
+          "title": "Skedarë të çdo madhësie",
+          "body": [
+            "Nuk ka asnjë kufi për madhësinë e një skedari. Një skedar mjaft i vogël për t’u shfaqur (deri në 16 MB) vendoset në editor. Një skedar më i madh, ose një që nuk është tekst, mbetet në disk: fillimi i tij (ose një parapamje) shfaqet, mjeti e lexon aty ku ndodhet dhe rezultati i tij shfaqet si për një tekst. Ruaj në një skedar pastaj e kopjon rezultatin aty ku zgjidhni ju.",
+            {
+              "points": [
+                "Punët e gjata shfaqin një kartë me progresin e arritur dhe një buton Ndalo.",
+                "Një skedar që është tekst në një kodim tjetër nga UTF-8 (UTF-16, Windows-1252 dhe të ngjashme) lexohet si tekst kur është mjaft i vogël për t'u shfaqur, dhe tregohet kodimi. Ajo që ruani nga Dev është UTF-8.",
+                "Një skedar i lëshuar mbi një mjet hapet si me Hap një skedar. Kur dritarja nuk mund ta dijë se ku ndodhet, ai merret deri në 16 MB, sikur të ishte ngjitur."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "many-files",
+          "title": "Shumë skedarë dhe dosje të tëra",
+          "body": [
+            "Aty ku një mjet ka \"Puno me: Tekst / Skedarë\", Skedarë e ekzekuton atë në shumë skedarë njëherësh.",
+            {
+              "steps": [
+                "Shtoni skedarë, ose një dosje (bashkë me nëndosjet, nëse e lini këtë opsion të aktivizuar).",
+                "Çdo skedar lexohet një herë gjatë shtimit dhe tregohet nëse mjeti e pranon atë.",
+                "Zgjidhni ku të shkojnë rezultatet: pranë çdo skedari nën një emër të ri, në një dosje (duke ruajtur strukturën e dosjeve), ose mbi vetë skedarët, gjë që ju kërkon konfirmim edhe një herë. Hash gjithashtu mund të shfaqë rezultatet thjesht në listë.",
+                "Klikoni një skedar në listë për të parë vetëm rezultatin e tij nën zgjedhjet, para se të shkruhet ndonjë gjë.",
+                "Ekzekutoni. Një skedar i gabuar nuk i ndalon të tjerët; secili tregon rezultatin e tij."
+              ]
+            },
+            {
+              "note": "Një rezultat nuk mbishkruan kurrë një skedar që ekziston tashmë, përveçse nëse ju e kërkoni këtë."
+            }
+          ]
+        },
+        {
+          "id": "explorer-menu",
+          "title": "Menuja e klikimit të djathtë të Eksploruesit të Windows",
+          "body": [
+            "Aktivizojeni te Cilësimet e programit, nën Eksploruesi i Windows. Gjithçka mblidhet nën një rresht, \"Syntelab Creative\"; në Windows 11 ndodhet nën \"Shfaq më shumë opsione\".",
+            {
+              "points": [
+                "Hape në Syntelab Dev: për llojet e skedarëve që një mjet lexon (.json, .yaml, .xml, .html, .sql, .csv, .pem, .crt, .der, .pfx, .key, .csr, .gz dhe të ngjashme). Skedari hapet në mjetin përkatës për llojin e tij.",
+                "Shumat e kontrollit: për çdo skedar ose dosje. Përmbledhjet listohen, secila pranë skedarit të vet, dhe asgjë nuk shkruhet.",
+                "Pamja Hex: për çdo skedar.",
+                "Krahaso: dy skedarë shkojnë në dy anët e Diff; dy dosje në krahasimin e dosjeve."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kodo",
+      "topics": [
+        {
+          "id": "base64",
+          "title": "Base64",
+          "body": [
+            "Kthen bajtet në Base64 dhe anasjelltas. Kodimi pranon çdo skedar; dekodimi kthen bajtet, të cilat shfaqen kur janë tekst dhe ruhen në një skedar kur nuk janë.",
+            {
+              "points": [
+                "Alfabeti: ai standard, ose ai për URL-të (- dhe _).",
+                "Mbushje me =, dhe rreshta prej 64, 76 ose çdo numër shkronjash.",
+                "Dekodimi pranon të dy alfabetet, me ose pa mbushje, dhe tregon ku një shkronjë është e gabuar."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "url-encode",
+          "title": "Kodimi / dekodimi i URL-së",
+          "body": [
+            "Kodimi me përqindje, ashtu siç e shkruajnë shfletuesit: një pjesë e një adrese (kodohet çdo gjë që nuk është shkronjë e thjeshtë), një adresë e plotë (shenjat e saj ruhen) ose një formular (+ për një hapësirë).",
+            "Dekodimi tregon ku një % nuk ndiqet nga dy shifra heksadecimale."
+          ]
+        },
+        {
+          "id": "html-entities",
+          "title": "Entitetet HTML",
+          "body": [
+            "Shkruan shenjat që HTML dhe XML i mbajnë për vete (&, <, >, thonjëzat) si entitete, dhe lexon entitetet mbrapsht: sipas emrit, sipas numrit dhjetor ose sipas numrit heksadecimal. Emrat janë ato të standardit HTML.",
+            "\"Edhe çdo shkronjë që nuk është ASCII\" shkruan si entitete edhe shkronjat me theks dhe alfabetet e tjera."
+          ]
+        },
+        {
+          "id": "jwt",
+          "title": "Dekoder JWT",
+          "body": [
+            "Zbërthen një JSON Web Token: kokën dhe ngarkesën e tij si JSON, dhe deklarimet (claims) me fjalë (lëshuesi, subjekti, audienca, kur skadon, me \"i skaduar\" ose \"ende nuk ka skaduar\").",
+            "Jepni sekretin për të kontrolluar një nënshkrim të bërë me një sekret të përbashkët (HS256, HS384, HS512). Nënshkrimet e bëra me një çelës privat (RS, ES, PS) nuk kontrollohen.",
+            {
+              "note": "Token-i dhe sekreti mbeten në skedë: asgjë nuk dërgohet askund për të dekoduar një token."
+            }
+          ]
+        },
+        {
+          "id": "escape",
+          "title": "Escape / unescape",
+          "body": [
+            "Shkruan një tekst si string të një gjuhe (JSON, JavaScript, C, C++, Java dhe të ngjashme), me thonjëzat, kthimet e rreshtit dhe shenjat e tjera të shkruara si sekuenca escape, dhe lexon mbrapsht një string të tillë."
+          ]
+        },
+        {
+          "id": "gzip",
+          "title": "Gzip",
+          "body": [
+            "Kompreson dhe dekompreson gzip, një skedar të çfarëdo madhësie ndërsa lexohet. Niveli shkon nga më i shpejti te më i vogli; rezultati i një teksti mund të jepet si Base64."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Bazat numerike",
+          "body": [
+            "Tregon numra të plotë, një në çdo rresht, në sistemin binar, oktal, dhjetor dhe heksadecimal, si dhe në një bazë tjetër sipas zgjedhjes suaj, deri në 36. Një numër nuk ka madhësi maksimale.",
+            {
+              "points": [
+                "Baza e një numri përcaktohet nga mënyra si shkruhet: 0x për heksadecimal, 0b për binar, 0o për oktal, shkronjat për heksadecimal, përndryshe dhjetor. Ose zgjidhni bazën në të cilën lexohet gjithçka.",
+                "Hapësirat, nënvizat dhe apostrofët midis shifrave anashkalohen: 1_000_000.",
+                "Një numër negativ jepet gjithashtu ashtu siç e ruajnë kompjuterët (komplementi i dyshit), në më të voglin nga 8, 16, 32, 64 bit e kështu me radhë që e nxë."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Të dhënat",
+      "topics": [
+        {
+          "id": "json-formatter",
+          "title": "Formatuesi JSON",
+          "body": [
+            "Formaton, minimizon dhe validon JSON, dhe e shfaq atë si një pemë. Një dokument i çfarëdo madhësie lexohet si një stream.",
+            {
+              "points": [
+                "Dhëmbëzim me 2 ose 4 hapësira, një tab ose çdo numër hapësirash.",
+                "Më shumë opsione: renditja e çelësave, listat e shkurtra në një rresht, hapësira pas dy pikave, si përfundojnë rreshtat, një kthim rreshti në fund, shkronjat jo-ASCII si \\uXXXX.",
+                "Leximi i lirë pranon komentet (// dhe /* */) dhe presjet në fund, dhe shkruan JSON strikt.",
+                "Ndryshimet: hiqni null-et, hiqni vlerat bosh dhe të ngjashmet, në një kalim të vetëm.",
+                "Pema hap një nivel në një kohë dhe gjen një tekst në çelësa dhe vlera."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jsonpath",
+          "title": "JSONPath",
+          "body": [
+            "Ekzekuton një pyetje JSONPath (RFC 9535) në një dokument: $.store.book[?@.price < 10].title. Rezultati janë vlerat e gjetura, rrugët drejt tyre ose të dyja.",
+            "Një pyetje e gabuar raportohet së bashku me vendin ku ndodh gabimi."
+          ]
+        },
+        {
+          "id": "json-schema",
+          "title": "Validuesi i JSON Schema",
+          "body": [
+            "Kontrollon një dokument në raport me një JSON Schema (draftet 4 deri në 2020-12). Skema vendoset në panelin nën hyrjen. Çdo element që nuk përputhet listohet së bashku me vendndodhjen dhe rregullin që shkel.",
+            "Në shumë skedarë, secili kontrollohet në raport me të njëjtën skemë. Një $ref drejt një skedari tjetër ose drejt një adrese nuk ndiqet."
+          ]
+        },
+        {
+          "id": "json-derive",
+          "title": "Gjenerues i skemës dhe JSON në TypeScript",
+          "body": [
+            "Nga një mostër JSON, gjeneruesi i skemës shkruan një JSON Schema që i përshtatet, dhe JSON në TypeScript shkruan deklarimet e tipit të tij (ndërfaqe ose tipe, të eksportuara ose jo, readonly ose jo, nën një emër që i jepni ju)."
+          ]
+        },
+        {
+          "id": "yaml-json",
+          "title": "YAML ↔ JSON",
+          "body": [
+            "Kthen YAML në JSON dhe JSON në YAML. YAML lexohet sipas skemës së tij bazë, duke ndjekur anchor-at dhe merge-at; çdo gabim raportohet së bashku me vendndodhjen e tij."
+          ]
+        },
+        {
+          "id": "csv-json",
+          "title": "CSV ↔ JSON",
+          "body": [
+            "Kthen një tabelë në JSON dhe anasjelltas. Ndarësi përcaktohet nga rreshti i parë ose zgjidhet (presje, pikëpresje, tab, vijë vertikale); rreshti i parë mund të jetë koka e tabelës; numrat dhe vlerat true / false mund të zbulohen.",
+            "\"Tabela\" shfaq CSV-në në rreshta dhe kolona, pavarësisht madhësisë së skedarit."
+          ]
+        },
+        {
+          "id": "markup",
+          "title": "Formatues XML / HTML",
+          "body": [
+            "Formaton, minimizon dhe kontrollon XML dhe HTML. XML lexohet në mënyrë strikte: një etiketë që nuk mbyllet kurrë raportohet së bashku me vendndodhjen e saj. HTML lexohet me tolerancën e shfletuesve."
+          ]
+        },
+        {
+          "id": "sql",
+          "title": "Formatues SQL",
+          "body": [
+            "Rregullon strukturën e një deklarate, duke vendosur një klauzolë në çdo rresht, ose e vendos gjithçka në një rresht të vetëm; fjalët kyçe në shkronja të mëdha, në shkronja të vogla ose ashtu siç janë shkruar. Nuk kërkon asnjë dialekt dhe nuk kontrollon kuptimin e deklaratës."
+          ]
+        },
+        {
+          "id": "diff",
+          "title": "Diff",
+          "body": [
+            "Krahason dy tekste rresht pas rreshti, dy dokumente JSON sipas përmbajtjes së tyre, ose dy dosje skedar pas skedari. I pari vendoset në hyrje, i dyti në panelin nën të.",
+            {
+              "points": [
+                "Krah për krah shënon fjalët që kanë ndryshuar brenda një rreshti; I unifikuar është një patch ashtu siç e shkruan diff -u.",
+                "Shpërfill shkronjat e mëdha/të vogla, hapësirat, rreshtat bosh, shifrat ose shenjat e pikësimit.",
+                "Për JSON, renditja e çelësave dhe struktura nuk përbëjnë diferencë; rezultati mund të jetë një JSON Patch (RFC 6902).",
+                "Dosjet: cilët skedarë janë vetëm në njërën, cilët janë të njëjtë, cilët ndryshojnë; Krahaso në një rresht e hap çiftin si tekste."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "markdown",
+          "title": "Parapamja e Markdown",
+          "body": [
+            "Tregon Markdown ashtu siç do të duket dhe jep HTML-në e tij për ta kopjuar ose ruajtur: CommonMark me tabela, tekst të hequr me vizë, lista detyrash dhe shënime në fund të faqes.",
+            {
+              "points": [
+                "HTML-ja e shkruar brenda Markdown-it shfaqet si tekst, jo si kod ekzekutues.",
+                "Një imazh që do të merrej nga rrjeti nuk merret: në vend të tij shfaqen përshkrimi dhe adresa. Një imazh i përfshirë në tekst (data:) shfaqet.",
+                "Një link që klikoni hapet në shfletuesin e sistemit."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gjenero",
+      "topics": [
+        {
+          "id": "uuid",
+          "title": "UUID",
+          "body": [
+            "Krijon UUID të versioneve 1, 3, 4, 5, 6 dhe 7 (RFC 9562), aq sa kërkoni, të shkruara me viza, të thjeshta, si URN ose në kllapa gjarpëruese. \"Zbërthe\" tregon versionin e çdo UUID-je dhe kohën ose emrin brenda saj."
+          ]
+        },
+        {
+          "id": "hash",
+          "title": "Hash",
+          "body": [
+            "CRC-32, MD5, SHA-1, SHA-256, SHA-384 dhe SHA-512 të një teksti ose një skedari, disa njëkohësisht, të shkruara si hex ose Base64. Një skedar i çdo madhësie bëhet hash ndërsa lexohet.",
+            {
+              "points": [
+                "Kontrollo ndaj: ngjitni një shumë kontrolli ose rreshtin e një skedari .sha256; tregohet nëse përputhet apo jo.",
+                "Çelësi HMAC: përmbledhjet (digests) bëhen HMAC-e me atë çelës.",
+                "Çdo rresht veçmas: një përmbledhje për çdo rresht të tekstit.",
+                "Skedarët: përmbledhjet listohen pranë skedarëve të tyre; Kopjo të gjitha i jep ato ashtu siç i shkruan sha256sum."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secrets",
+          "title": "Fjalëkalimet dhe sekretet",
+          "body": [
+            "Krijon fjalëkalime me llojet e shkronjave që zgjidhni, fraza kalimi me fjalë dhe bajte të rastësishme si hex ose Base64, nga numrat e rastësishëm të sistemit operativ. Secili tregon sa bit entropie ka. Pasi diçka është krijuar, ndryshimi i një opsioni e krijon përsëri.",
+            "Një frazë kalimi përbëhet nga fjalë të marra nga lista e gjatë e fjalëve e Electronic Frontier Foundation (7776 fjalë angleze), secila me të njëjtën gjasë si të tjerat: gjashtë fjalë janë rreth 77 bit."
+          ]
+        },
+        {
+          "id": "keys",
+          "title": "Çelësat dhe certifikatat",
+          "body": [
+            "Pesë gjëra, të zgjedhura në pjesën e sipërme:",
+            {
+              "points": [
+                "Çelës i ri: RSA, EC P-256 / P-384 / P-521 ose Ed25519, në çdo formë që përdorin programet (PKCS #8, forma më e vjetër, OpenSSH; çelësi publik si PEM dhe si rresht për authorized_keys), i kyçur me një frazë kalimi nëse jepni një të tillë.",
+                "Kërkesë për certifikatë: një CSR për një çelës të ri ose një që ngjitni, me subjektin dhe emrat e tjerë (SAN).",
+                "Certifikatë e nënshkruar vetë: e njëjta, e nënshkruar me çelësin e vet, për një numër ditësh; \"Mund të nënshkruajë certifikata të tjera\" e bën atë një autoritet tuajin.",
+                "Nënshkrim me CA-në tuaj: ngjitni një kërkesë, certifikatën e autoritetit tuaj dhe çelësin e tij; merrni certifikatën e nënshkruar dhe autoritetin pas saj.",
+                "Lexo dhe konverto: ngjitni ose hapni çdo gjë (PEM, DER, një çelës OpenSSH, një skedar .pfx ose .p12, i kyçur ose jo). Tregon se çfarë gjeti dhe nëse çelësi është ai i certifikatës, dhe shkruan çdo gjë në format e tjera. Një çelës dhe certifikata e tij mund të ruhen së bashku si .pfx."
+              ]
+            },
+            {
+              "note": "Çdo gjë krijohet në këtë kompjuter. Një çelës qëndron në skedë deri te Fshi përfundimisht, dhe askund tjetër përveçse nëse e ruani."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inspekto",
+      "topics": [
+        {
+          "id": "regex",
+          "title": "Testuesi i Regex",
+          "body": [
+            "Provon një shprehje të rregullt të JavaScript në një tekst: përputhjet me grupet dhe vendet e tyre, ose tekstin me përputhjet e zëvendësuara. Flamujt (flags) janë g, i, m, s, u, y.",
+            "Modeli ekzekutohet jashtë dritares, dhe ai që zgjat më shumë se 20 sekonda ndërpritet."
+          ]
+        },
+        {
+          "id": "cron",
+          "title": "Shpjegimi i Cron",
+          "body": [
+            "Tregon me fjalë se çfarë do të thotë një orar dhe kur ekzekutohet: crontab (pesë fusha, gjashtë me sekonda, shtatë me një vit), Quartz, AWS EventBridge cron() dhe rate(), dhe systemd OnCalendar. Një orar për rresht.",
+            {
+              "points": [
+                "Ekzekutimet e ardhshme, dhe ato të mëparshme kur kërkohen, në zonën kohore që zgjidhni.",
+                "Ditët e javës numërohen nga 0 për të dielën, ose nga 1 siç i numëron Quartz, sipas zgjedhjes suaj. Një rresht me sekonda që ka edhe vit, L, W ose # është i Quartz, dhe lexohet vetë sipas mënyrës së Quartz.",
+                "I njëjti orar në formatet e tjera, për ta kopjuar ose për ta shtuar në hyrje.",
+                "Ndërtuesi krijon një orar duke zgjedhur çdo fushë; \"Ndrysho në ndërtues\" merr një orar të shkruar në të."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Vula kohore Unix",
+          "body": [
+            "Lexon momente, një në rresht: sekonda, milisekonda, mikrosekonda ose nanosekonda që nga viti 1970, ose një datë të shkruar në mënyrat e zakonshme (ISO 8601, siç e shkruajnë posta elektronike dhe HTTP, siç e shkruan Git). Secili tregohet në zonën kohore që zgjidhni, në UTC dhe si çdo lloj vule kohore."
+          ]
+        },
+        {
+          "id": "url-parser",
+          "title": "Analizuesi i URL-së",
+          "body": [
+            "Zbërthen një URL ashtu siç e lexojnë shfletuesit: skemën, përdoruesin, host-in (me formën e tij Unicode kur shkruhet në punycode), portën, shtegun, çdo parametër të pyetjes të dekoduar dhe fragmentin."
+          ]
+        },
+        {
+          "id": "certificate",
+          "title": "Dekoduesi i certifikatës",
+          "body": [
+            "Lexon certifikatat X.509 nga PEM ose DER dhe tregon gjithçka në to: subjektin, lëshuesin, vlefshmërinë, emrat për të cilët është e destinuar, çelësin, shtesat dhe gjurmët e gishtave (fingerprints).",
+            "Ai vetëm lexon; nuk gjykon nëse një certifikatë duhet besuar. Për certifikatën që shfaq një faqe dhe nëse ky kompjuter i beson asaj, përdorni Rrjeti → Certifikata e një faqeje."
+          ]
+        },
+        {
+          "id": "hex",
+          "title": "Shikuesi Hex",
+          "body": [
+            "Tregon bajtet e një skedari të çdo madhësie, ose të një teksti të ngjitur: pozicionin e çdo rreshti, bajtet dhe të njëjtat bajte si shkronja.",
+            {
+              "points": [
+                "Shkoni në një pozicion të shkruar si 0x1F4, 1F4h ose 500.",
+                "Gjeni bajte (DE AD BE EF) ose një tekst (UTF-8, ose UTF-16 në të dyja drejtimet), përpara dhe prapa.",
+                "Klikoni një bajt: anash tregohet çfarë ka aty si numra të çdo madhësie, në të dyja renditjet e bajteve, si karakter dhe si kohë.",
+                "Zgjidhni me tërheqje, Shift ose me tastet e shigjetave; kopjoni zgjedhjen si hex, si kod, si Base64 ose si tekst, ose ruajeni në një skedar."
+              ]
+            },
+            {
+              "note": "Vetëm shfaq: asgjë nuk ndryshohet në skedar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rrjeti",
+      "topics": [
+        {
+          "id": "network-rules",
+          "title": "Ku shkojnë mjetet e rrjetit",
+          "body": [
+            "Këto katër mjete janë pjesa e vetme e Dev që lidhet online, dhe ato shkojnë aty ku ju i drejtoni.",
+            {
+              "points": [
+                "Kontaktohet vetëm adresa që shkruani, dhe vetëm kur shtypni butonin. Kurrë në sfond.",
+                "Ajo që dërgohet është ajo që keni shkruar. E vetmja gjë që i shtohet një kërkese është një User-Agent që është i njëjtë për të gjithë (\"Syntelab Creative\"), përveç rastit kur jepni të juajin.",
+                "Nuk ruhen cookies, nuk dërgohet asgjë rreth jush ose kompjuterit, dhe asgjë e shkruar nuk ruhet."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "Klienti HTTP",
+          "body": [
+            "Dërgon një kërkesë të shkruar manualisht: metodën, adresën, kokat (njëra në një rresht: Emri: vlera) dhe një trup, të shkruar ose të marrë nga një skedar i çfarëdo madhësie.",
+            {
+              "points": [
+                "Përgjigjja: numri i saj, sa kohë mori (gjithsej, dhe deri në bajtin e parë), madhësia, kokat dhe trupi, i ngjyrosur sipas llojit dhe i organizuar kur është JSON. Një trup që nuk është tekst (një figurë, një PDF) shfaqet ashtu siç është, dhe ruhet ashtu siç erdhi.",
+                "Ndiqni ridirektimet, ose shihni përgjigjen e parë ashtu siç është. Listohen adresat ku është dërguar kërkesa.",
+                "Kontrolloni certifikatën në raport me atë që ky kompjuter beson; çaktivizojeni këtë vetëm për serverët tuaj.",
+                "\"Dërgo, përgjigjen në një skedar\" shkruan një trup të çfarëdo madhësie drejtpërdrejt në disk, me progres dhe Ndalo.",
+                "\"Kopjo si curl\" jep të njëjtën kërkesë si një komandë."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "Kërkimi DNS",
+          "body": [
+            "Pyet një server emrash për rekordet e një emri: A, AAAA, CNAME, MX, NS, TXT, SOA, PTR, SRV, CAA, DS, DNSKEY, disa njëkohësisht. Një adresë jep emrin e saj (PTR).",
+            "Pyetja i dërgohet serverit të emrave që kompjuteri është i konfiguruar të përdorë, njëit publik (1.1.1.1, 8.8.8.8, 9.9.9.9), një resolver-i përmes HTTPS (Cloudflare, Google), ose njërit që shkruani ju."
+          ]
+        },
+        {
+          "id": "port",
+          "title": "Kontrolli i portave",
+          "body": [
+            "Tregon nëse portat e një host-i pranojnë lidhje TCP: një, disa, ose një gamë deri në të gjitha 65 535 (22, 80, 443, 8000-8100). Secila është e hapur, e mbyllur ose pa përgjigje brenda kohës që caktoni.",
+            {
+              "note": "Provoni vetëm host-et që janë tuajat, ose ato që keni leje të testoni."
+            }
+          ]
+        },
+        {
+          "id": "site-certificate",
+          "title": "Certifikata e një faqeje",
+          "body": [
+            "Tregon certifikatat që një faqe jep kur krijohet një lidhje e sigurt: për kë janë, kush i ka nënshkruar, sa ditë kanë mbetur, nëse ky kompjuter i beson ato dhe pse jo, versionin e TLS dhe shifrimin. Kryhet vetëm 'handshake'-i: nuk dërgohet asnjë kërkesë.",
+            {
+              "points": [
+                "Shkruani example.com, example.com:8443 ose një adresë uebi.",
+                "Serverët e postës dhe FTP fillojnë në tekst të hapur dhe kërkohet të kalojnë në TLS (STARTTLS): zgjidhet nga porta (25, 587, 143, 110, 21) ose manualisht.",
+                "\"Çdo gjë\" tregon gjithçka që thonë certifikatat; \"PEM\" i jep ato për t'i kopjuar ose ruajtur."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cilësimet",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Cilësimet e Dev",
+          "body": [
+            "Skedari → Cilësimet hap Cilësimet e programit te pjesa e Dev.",
+            {
+              "points": [
+                "Hape çdo mjet në një skedë më vete, ose në skedën ku zgjidhet.",
+                "Hap një skedë të re me mjetin e përdorur së fundi, ose në faqen e parë.",
+                "Kthe opsionet e çdo mjeti dhe fiksimet siç vijnë me programin."
+              ]
+            },
+            "Menuja e klikimit të djathtë të Eksploruesit të Windows, gjuha, tema dhe tastet ndodhen te Cilësimet e programit në tërësi."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Rreth Dev",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Rreth Dev",
+          "body": [
+            "Dev është aplikacioni i Syntelab Creative për zhvillues: mjete që kodojnë dhe dekodojnë, formatojnë dhe kontrollojnë, kthejnë një formë të dhënash në një tjetër dhe zbërthejnë atë që është e vështirë të lexohet ashtu siç është.",
+            "Çdo gjë bëhet në këtë kompjuter. Asgjë që shkruani, ngjitni ose hapni në një mjet nuk ruhet dhe nuk dërgohet askund. Nuk ka kufi për madhësinë ose numrin e skedarëve: kufijtë janë memoria dhe disku i kompjuterit.",
+            "Është i ri dhe ende në ndërtim. Aty ku nuk i plotëson nevojat e punës suaj, na e tregoni përmes Ndihma → Komentet."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Me çfarë është ndërtuar Dev",
+          "body": [
+            {
+              "points": [
+                "Editorët: CodeMirror, https://codemirror.net . Licenca MIT. Copyright (C) 2018-2021 nga Marijn Haverbeke dhe të tjerë.",
+                "Leximi dhe ngjyrosja e JSON në editorë: @codemirror/lang-json, https://github.com/codemirror/lang-json , me @codemirror/language dhe @lezer/highlight. Licenca MIT. Copyright (C) 2018-2021 nga Marijn Haverbeke dhe të tjerë.",
+                "Leximi dhe ngjyrosja e YAML, XML, HTML dhe SQL në editorë: @codemirror/lang-yaml, https://github.com/codemirror/lang-yaml ; @codemirror/lang-xml, https://github.com/codemirror/lang-xml ; @codemirror/lang-html, https://github.com/codemirror/lang-html (me @codemirror/lang-css dhe @codemirror/lang-javascript); @codemirror/lang-sql, https://github.com/codemirror/lang-sql . Licenca MIT. Copyright (C) 2018-2024 nga Marijn Haverbeke dhe të tjerë.",
+                "Kontrollimi i një dokumenti sipas një JSON Schema: jsonschema, https://github.com/Stranger6667/jsonschema . Licenca MIT. Copyright (c) 2020-2026 Dmitry Dygalo. Është ndërtuar pa pjesën e rrjetit: Dev nuk shkarkon kurrë një skemë.",
+                "Modelet e JSONPath (match dhe search): regex, https://github.com/rust-lang/regex . Licenca MIT ose Apache-2.0. Copyright (c) 2014 The Rust Project Developers.",
+                "Leximi i YAML: yaml-rust2, https://github.com/Ethiraric/yaml-rust2 . Licenca MIT ose Apache-2.0. Copyright (c) 2015 Chen Yuheng, Copyright (c) 2023 Ethiraric. Shkrimi i YAML bëhet nga vetë Dev.",
+                "Krahasimi i dy teksteve (Diff): similar, https://github.com/mitsuhiko/similar . Licenca Apache-2.0. Autorët: Armin Ronacher, Pierre-Étienne Meunier, Brandon Williams.",
+                "Gzip: flate2, https://github.com/rust-lang/flate2-rs . Licenca MIT ose Apache-2.0. Copyright (c) 2014-2026 Alex Crichton.",
+                "Përmbledhjet e mjetit Hash dhe të nënshkrimit të një token-i: sha2, sha1 dhe md-5, https://github.com/RustCrypto/hashes . Licenca MIT ose Apache-2.0. Copyright (c) 2006-2009 Graydon Hoare, Copyright (c) 2009-2013 Mozilla Foundation, dhe zhvilluesit e RustCrypto.",
+                "Datat, orët dhe zonat kohore (Vula kohore Unix, Shpjegimi i Cron): jiff, https://github.com/BurntSushi/jiff , me zonat kohore të bazës së të dhënave IANA. Licenca Unlicense ose MIT. Copyright (c) 2015 Andrew Gallant.",
+                "Analizimi i një URL-je: url dhe idna, https://github.com/servo/rust-url . Licenca MIT ose Apache-2.0. Copyright (c) 2013-2025 The rust-url developers.",
+                "Leximi i certifikatave X.509: x509-parser, https://github.com/rusticata/x509-parser . Licenca MIT ose Apache-2.0. Copyright (c) 2017 Pierre Chifflier.",
+                "Testuesi i regex ekzekuton shprehjet e rregullta të JavaScript, në motorin e WebView-it me të cilin programi vizaton (Microsoft Edge WebView2 në Windows); nuk është shtuar asnjë librari për këtë.",
+                "CRC-32: crc32fast, https://github.com/srijs/rust-crc32fast . Licenca MIT ose Apache-2.0. Copyright (c) 2018 Sam Rijs, Alex Crichton dhe kontribuesit.",
+                "UUID: uuid, https://github.com/uuid-rs/uuid . Licenca Apache-2.0 ose MIT. Copyright (c) 2014 The Rust Project Developers, Copyright (c) 2018 Ashley Mannix, Christopher Armstrong, Dylan DPC, Hunar Roop Kahlon.",
+                "Bajte të rastësishme për fjalëkalime, sekrete dhe UUID, nga sistemi operativ: getrandom, https://github.com/rust-random/getrandom . Licenca MIT ose Apache-2.0. Copyright (c) 2018-2025 The rust-random Project Developers, Copyright (c) 2014 The Rust Project Developers.",
+                "Çelësat dhe nënshkrimet RSA: rsa, https://github.com/RustCrypto/RSA , me num-bigint-dig, https://github.com/dignifiedquire/num-bigint . Licenca MIT ose Apache-2.0. Copyright (c) RustCrypto Developers dhe dignifiedquire; Copyright (c) 2014 The Rust Project Developers.",
+                "Çelësat dhe nënshkrimet e lakoreve NIST (P-256, P-384, P-521): p256, p384, p521, https://github.com/RustCrypto/elliptic-curves , me ecdsa, elliptic-curve dhe crypto-bigint që u nevojiten. Licenca Apache-2.0 ose MIT. Copyright (c) 2020-2023 RustCrypto Developers.",
+                "Çelësat dhe nënshkrimet Ed25519: ed25519-dalek dhe curve25519-dalek, https://github.com/dalek-cryptography/curve25519-dalek . Licenca BSD 3-Clause. Copyright (c) 2017-2019 isis agora lovecruft; Copyright (c) 2016-2021 isis agora lovecruft dhe Henry de Valence. Të gjitha të drejtat të rezervuara.",
+                "Formatet në të cilat shkruhen çelësat, kërkesat dhe certifikatat (PKCS #8, PKCS #1, SEC 1, SubjectPublicKeyInfo, X.509, PKCS #10, DER dhe PEM): pkcs8, pkcs5, pkcs1, sec1, spki, der, x509-cert, https://github.com/RustCrypto/formats . Licenca Apache-2.0 ose MIT. Copyright (c) 2020-2023 The RustCrypto Project Developers.",
+                "Skedarët e çelësave OpenSSH: ssh-key, https://github.com/RustCrypto/SSH , me bcrypt-pbkdf, aes, ctr, chacha20 dhe shifrat e tjera dhe hash-et e RustCrypto që i nevojiten kyçjes së një çelësi ( https://github.com/RustCrypto ). Licenca Apache-2.0 ose MIT. Copyright (c) 2021-2024 The RustCrypto Project Developers.",
+                "Skedarët PKCS #12 (.pfx, .p12): p12-keystore, https://github.com/ancwrd1/p12-keystore , me pkcs12, cms, des, rc2, cbc, hmac, pbkdf2 dhe scrypt të RustCrypto që i nevojiten. Licenca MIT ose Apache-2.0. Copyright (c) Dmitry Pankratov; Copyright (c) The RustCrypto Project Developers.",
+                "Numrat e rastësishëm nga të cilët krijohen çelësat, të marrë nga sistemi operativ: rand_core, https://github.com/rust-random/rand . Licenca MIT ose Apache-2.0. Copyright 2018 Developers of the Rand project, Copyright (c) 2014 The Rust Project Developers.",
+                "Klienti HTTP: ureq, https://github.com/algesten/ureq . Licenca MIT ose Apache-2.0. Copyright (c) 2019 Martin Algesten.",
+                "Lidhjet e sigurta (TLS) të klientit HTTP dhe të \"Certifikatës së një faqeje\": rustls, https://github.com/rustls/rustls , licenca Apache-2.0, ISC ose MIT, Copyright (c) 2016 Joseph Birr-Pixton; me rustls-webpki, https://github.com/rustls/webpki , licenca ISC, Copyright 2015 Brian Smith; ring, https://github.com/briansmith/ring , licencat Apache-2.0 dhe ISC; webpki-roots, https://github.com/rustls/webpki-roots , licenca CDLA-Permissive-2.0.",
+                "Nëse ky kompjuter i beson një certifikate: rustls-platform-verifier, https://github.com/rustls/rustls-platform-verifier . Licenca MIT ose Apache-2.0. Copyright (c) 2022 1Password.",
+                "Leximi i Markdown: pulldown-cmark, https://github.com/pulldown-cmark/pulldown-cmark . Licenca MIT. Copyright 2015 Google Inc. Të gjitha të drejtat e rezervuara.",
+                "Leximi i skedarëve të shkruar në kodime të tjera përveç UTF-8: encoding_rs, https://github.com/hsivonen/encoding_rs , licencë Apache-2.0 ose MIT (me BSD-3-Clause për të dhënat e tij), Copyright Mozilla Foundation; dhe chardetng, https://github.com/hsivonen/chardetng , licencë Apache-2.0 ose MIT, Copyright Mozilla Foundation.",
+                "Fjalët e fjalëkalimeve: EFF Large Wordlist for Passphrases, https://www.eff.org/dice , nga Electronic Frontier Foundation, e përdorur nën licencën Creative Commons Attribution 3.0 United States ( https://creativecommons.org/licenses/by/3.0/us/ ). Lista përdoret ashtu siç është.",
+                "Hapja e çelësave të kyçur në mënyrën e vjetër të OpenSSL: aes, cbc dhe des të RustCrypto, https://github.com/RustCrypto . Licencë MIT ose Apache-2.0. Copyright (c) RustCrypto Developers.",
+                "Shkruar për Dev, pa asnjë bibliotekë: kërkimi DNS (pyetjet e shkruara dhe përgjigjet e lexuara ashtu siç i ka RFC 1035) dhe kontrolli i portës.",
+                "Shkruar për Dev, pa asnjë bibliotekë: leximi dhe shkrimi i JSON si rrjedhë (stream), JSONPath (RFC 9535), Base64, kodimi me përqindje, referencat e karaktereve HTML (emrat e tyre janë ato të standardit HTML, https://html.spec.whatwg.org ), sekuencat escape të stringjeve, leximi i JSON Web Token-ave, shkrimi i YAML, CSV në të dyja drejtimet, leximi i orareve cron, formatuesi XML / HTML dhe formatuesi SQL."
+              ]
+            },
+            "Ajo që ndan me pjesën tjetër të programit gjendet te \"Rreth Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Çfarë Dev nuk mund të bëjë ende",
+          "body": [
+            {
+              "points": [
+                "Nënshkrimi i një tokeni kontrollohet vetëm kur ai është krijuar me një sekret të përbashkët (HS256, HS384, HS512).",
+                "Validuesi i JSON Schema tregon në anglisht atë që nuk përshtatet, ashtu siç bën biblioteka e tij, dhe nuk ndjek një $ref drejt një skedari ose adrese tjetër.",
+                "Formatuesi SQL nuk kërkon asnjë dialekt dhe nuk kontrollon se çfarë do të thotë një deklaratë: ai tregon vetëm për një string ose një koment që nuk përfundon kurrë.",
+                "YAML, dhe JSON që bëhet YAML ose CSV, mbahen të plotë në memorie gjatë konvertimit; CSV që bëhet JSON, XML, HTML dhe SQL përpunohen gjatë leximit, pavarësisht madhësisë së tyre.",
+                "Tabela CSV në të cilën bëhet shikimi është vetëm për lexim: asgjë nuk shkruhet në të, dhe asgjë nuk kopjohet prej saj ende.",
+                "Diff mban shembuj prej gjashtëmbëdhjetë bajtësh për çdo rresht të dy skedarëve, jo vetë skedarët; dy dokumente JSON mbahen të plotë, pasi shkruhen të reja përpara se të krahasohen.",
+                "Një pjesë rreshtash ku nuk ka asnjë rresht që të dyja anët e kanë saktësisht një herë krahasohet aq mirë sa lejon një sekondë: ndryshimet e treguara janë të vërteta, ndonëse jo gjithmonë më të paktat.",
+                "Diff nuk krahason mënyrën se si përfundojnë rreshtat (CRLF ose LF).",
+                "Dy dosje krahasohen sipas bajteve të skedarëve të tyre; skedarët çiftohen sipas emrave të tyre, shkronjë për shkronjë.",
+                "Ajo që tregojnë mjetet e menysë Inspekto është JSON, me emrat e tij në anglisht.",
+                "Testuesi i regex ekzekuton shprehjet e rregullta të JavaScript, jo PCRE dhe jo ato të Rust; ai punon mbi një tekst që mund të shfaqet, jo mbi një skedar të ruajtur në disk; një model që ekzekutohet më shumë se 20 sekonda ndërpritet.",
+                "Dekoduesi i certifikatës lexon një certifikatë dhe nuk kontrollon nëse ajo duhet të besohet: as zinxhirin e saj, as nënshkrimin, as nëse është revokuar.",
+                "Një skedar që është tekst në një kodim tjetër nga UTF-8 lexohet kur është mjaftueshëm i vogël për t'u shfaqur; një skedar më i madh se aq, i përpunuar nga disku, duhet të jetë UTF-8.",
+                "Një skedar i lëshuar mbi një mjet pranohet deri në 16 MB; dritarja nuk njoftohet se ku ndodhet në disk një skedar i lëshuar, kështu që një skedar më i madh hapet me Hap një skedar.",
+                "Frazat e kalimit përbëhen vetëm nga fjalë angleze.",
+                "Shpjegimi i Cron: ndërtuesi krijon orare crontab (pesë fusha, ose gjashtë me sekondat); një orar me L, W, # ose ? nuk mund të pranohet në të. Kohët e një AWS rate() nuk mund të përcaktohen, pasi ato llogariten që nga momenti kur është krijuar rregulli i tij. Për systemd, lexohen ngjarjet e zakonshme të kalendarit; jo pjesë të sekondës ose lista ditësh të llogaritura nga fundi i muajit.",
+                "Shikuesi Hex vetëm shfaq: asgjë nuk ndryshohet në skedar. Kolona e tekstit tregon ASCII ose shkronjat e Evropës Perëndimore, jo alfabetet e tjera; kërkohen bajte ose një tekst, jo modele.",
+                "Çelësat dhe certifikatat: çelësat janë RSA, lakoret P-256, P-384 dhe P-521, dhe Ed25519; të tjerët (DSA, secp256k1, X25519) nuk lexohen. Një çelës i kyçur në mënyrën e vjetër të OpenSSL hapet kur shifra e tij është AES ose 3DES. Një skedar .pfx mban një çelës me certifikatat e tij. Krijimi i një çelësi RSA shumë të madh kërkon kohë dhe nuk mund të ndalohet në gjysmë të rrugës. Biblioteka që krijon çelësat RSA ka një dobësi të njohur ndaj një sulmuesi që mund të matë kohën e shumë nënshkrimeve përmes një rrjeti (RUSTSEC-2023-0071): këtu çelësat krijohen dhe shkruhen në kompjuterin tuaj dhe asgjë nuk nënshkruhet për askënd tjetër.",
+                "Klienti HTTP: HTTP/1.1 (jo HTTP/2 ose 3); nuk ruhen cookies mes kërkesave; formularët me disa pjesë (multipart) nuk ndërtohen për ju; një përgjigje më e madhe se 16 MB, ose një që nuk është tekst, shkruhet në një skedar duke e dërguar kërkesën përsëri.",
+                "Kërkimi DNS tregon nënshkrimet (DNSSEC) dhe nuk i kontrollon ato. Kontrolli i portës provon vetëm TCP: një portë UDP që hesht nuk mund të dallohet nga një që është e mbyllur. Certifikata e një faqeje nuk pyet nëse një certifikatë është revokuar.",
+                "Menuja e klikimit të djathtë është për Eksploruesin e Windows; në Windows 11 hyrjet e saj janë te \"Shfaq më shumë opsione\"."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

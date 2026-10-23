@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Pag-convert",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Ang mga converter",
+          "body": [
+            "Kino-convert ng Units ang mga halaga sa pagitan ng mga yunit ng sukat: isang halaga nang mabilisan, o buong talahanayan ng mga halaga nang sabay-sabay. Lahat ay kinukuwenta sa iyong computer.",
+            "Nasa anim na menu ang mga converter: Mahahalaga, Galaw at mekanika, Enerhiya at lakas, Pang-agham, Digital at midya, at Natatanging pisika. Kapag pumili ka ng isa, bubukas ang talahanayan nito.",
+            {
+              "points": [
+                "Bubukas ang converter sa tab na kinaroroonan mo. Kung may mga halaga ang talahanayan nito, tatanungin ka muna: Ituloy (mawawala ang mga halaga), Buksan sa bagong tab, o Kanselahin.",
+                "Sa Mga Setting → Units → “Buksan ang bawat converter sa sarili nitong tab”, bubukas sa bagong tab ang bawat converter na pipiliin mo.",
+                "Ang File → Pumunta sa Simula ay bumabalik sa unang pahina ng Units."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Mabilisang pag-convert",
+          "body": [
+            "Ang unang pahina ng Units, ang Mabilisang pag-convert, ay nagko-convert ng isang halaga mula sa isang yunit patungo sa iba. Pumili ng converter, i-type ang halaga sa panig na “Mula sa”, at piliin ang dalawang yunit: nasa panig na “Patungo sa” ang resulta.",
+            {
+              "points": [
+                "Inililista ng bawat panig ang mga sikat na yunit ng converter at ang sarili mong mga yunit, na may paghahanap sa mga ito. Nasa talahanayan ng converter ang lahat ng yunit.",
+                "Pinagpapalit ng button sa pagitan ng dalawang panig ang dalawang yunit.",
+                "Pini-pin ng bookmark sa tabi ng isang yunit ang yunit na iyon: nauuna ang mga naka-pin na yunit sa dalawang listahan at sa panel ng mga yunit ng talahanayan.",
+                "Kinokopya ng button sa resulta ang resulta; binubura ng × ang halaga.",
+                "Binubuksan ng “Buksan sa talahanayan” ang talahanayan ng converter."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Paano binabasa at isinusulat ang mga numero",
+          "body": [
+            "Maaari kang mag-type at mag-paste ng mga numero ayon sa pagsulat sa iba't ibang bansa: parehong nauunawaan ang 1,234.56 at 1.234,56, gayundin ang mga espasyo at apostrophe sa pagitan ng mga libo, at ang 1.5e-3 para sa kapangyarihan ng sampu.",
+            "Ang numerong mababasa sa dalawang paraan (1,234: isang libo, o isa at kaunti) ay binabasa ayon sa pagsulat ng numero sa wika ng programa, at sinasabi ito ng linya sa ilalim ng talahanayan.",
+            "Isinusulat ang resulta gamit ang mga decimal ng yunit na kinahantungan nito, hindi sa dami ng digit na itinype mo: ang 5 cm ay 1.97 in. Ang halagang hindi zero ay laging nagpapakita ng ilang digit na may kahulugan, kaya ang 1 cm ay 0.00001 km at hindi kailanman 0.000 km.",
+            "Ang mga halagang sobrang laki o sobrang liit para mabasa sa isang tingin ay isinusulat gamit ang kapangyarihan ng sampu, gaya ng 1.6 × 10⁻³⁵. Ang Tingnan → Buong pagsulat ng matitinding halaga ay isinusulat ang mga ito nang kumpleto ang bawat zero.",
+            "Kapag walang ganoong halaga ang isang yunit (walang decibel ang sound pressure na zero), gitling ang ipinapakita ng cell."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ang talahanayan",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Mga row at column",
+          "body": [
+            "Ang bawat column ay isang yunit at ang bawat row ay isang halaga. Ang cell na tina-type-an mo ang nagpapatakbo sa row nito: ipinapakita ng ibang column ang parehong halaga sa kani-kanilang yunit. Naka-bold ang cell na tina-type-an.",
+            "Ang hindi numero ay pinananatili at ipinapakita nang pula; walang kino-convert ang row nito hangga't hindi mo ito naitatama.",
+            {
+              "points": [
+                "I-double-click ang isang cell, o magsimula lang mag-type dito, para mag-edit. Pababa ang Enter, pakanan ang Tab; gumagalaw ang mga arrow key; iniiwan ng Escape ang cell gaya ng dati.",
+                "I-click ang sulok (#) para piliin ang buong talahanayan, ang numero ng row para piliin ang row nito, ang pamagat para piliin ang column nito. Ang Shift+click ay pumipili ng saklaw, ang Ctrl+click ay nagdaragdag ng mga cell, at pumipili rin ang pag-drag.",
+                "Pumupunta ang Home at End sa una at huling column ng row; ang Ctrl+Home sa unang cell ng talahanayan, ang Ctrl+End sa huli. Pumupunta ang Ctrl kasama ang arrow sa gilid ng talahanayan: ang una o huling row, ang una o huling column. Gumagalaw nang isang screen ang Page Up at Page Down. Kapag may Shift, pinalalawak ng bawat isa sa mga ito ang pinili sa halip.",
+                "Ang pinili na may ilang cell ay may balangkas sa labas; walang lilim sa loob nito ang cell na pinupuntahan ng pagta-type.",
+                "Inaalisan ng laman ng Delete ang mga napiling row.",
+                "Nagdaragdag ng row ang pagta-type sa huling row. Walang pinakamaraming kayang hawakan ang talahanayan: kasinghaba ito ng pinapayagan ng memory ng iyong computer (16 byte ang isang row, kaya mga 1.5 GB ang 100 milyong row)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Mga column at ang panel ng mga yunit",
+          "body": [
+            "Inililista ng panel sa tabi ng talahanayan ang mga yunit ng converter. Nasa itaas nito ang mga yunit na nasa talahanayan: i-click ang isa para alisin ang column nito. Sa ilalim ng mga iyon, lahat ng yunit: maghanap ayon sa pangalan o simbolo, i-filter ayon sa grupo o ayon sa “Sikat”, at i-click ang isang yunit para idagdag ito bilang column.",
+            "Pini-pin ng bookmark sa tabi ng isang yunit ang yunit bilang paborito: nauuna ito sa listahan at nasa unahan sa Mabilisang pag-convert.",
+            {
+              "points": [
+                "Pantay na pinaghahatian ng mga column ang lapad ng talahanayan hanggang hindi na kasya ang mga pamagat nila; pagkatapos ay nag-i-scroll nang pahalang ang talahanayan.",
+                "I-drag ang gilid ng isang pamagat para baguhin ang lapad ng column nito; i-double-click ang gilid para i-fit ang column sa pinakamahaba nitong halaga. Maaari ring i-drag ang column ng mga numero ng row.",
+                "Ang button na ⋮ ng isang column: ilipat ito pakaliwa o pakanan, i-pin ito sa kaliwa o kanang gilid, baguhin ang katumpakan nito, o alisin ito.",
+                "Ang katumpakan ng isang column ay para sa column na iyon lang. Ginagawa ito ng “Gamitin para sa yunit na ito kahit saan” na katumpakan ng yunit, sa bawat talahanayan at sa Mabilisang pag-convert.",
+                "Ini-fit ng button na may dalawang arrow sa tabi ng I-undo at I-redo ang mga column sa talahanayan: mawawala ang bawat lapad na in-drag o in-fit mo, at muling pantay na pinaghahatian ng mga column ang lapad ng talahanayan.",
+                "Ang dalawang itaas na bahagi ng panel, ang mga yunit sa talahanayan at ang “Magdagdag ng mga yunit” (ang paghahanap at mga filter), ay natitiklop sa pag-click sa pangalan nila, para lumuwag ang listahan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "I-undo, kopyahin, i-paste, i-import at i-export",
+          "body": [
+            "Nasa bar sa itaas ng talahanayan ang mga tool nito.",
+            {
+              "points": [
+                "Dumaraan ang I-undo at I-redo (Ctrl+Z, Ctrl+Y) sa bawat pagbabago ng talahanayan. Isang hakbang ang isang pag-paste o isang pag-import.",
+                "Kinokopya ng Kopyahin (Ctrl+C) ang buong talahanayan o ang napili, sa paraang nababasa ng spreadsheet. Ginagawang column ng “Pinagpalit (row at column)” ang mga row.",
+                "Inilalagay ng I-paste (Ctrl+V) ang mga kinopyang row sa talahanayan mula sa aktibong cell pababa. Kung may mga pamagat ng yunit ang unang row, itinutugma ang mga column ayon sa mga ito, at idinadagdag ang mga yunit na wala pa sa talahanayan.",
+                "Binabasa ng I-import ang isang Excel workbook, o isang CSV o TSV na file, kapalit ng laman ng talahanayan. Kinikilala ng “Kusa nitong hanapin ang format” ang uri mula sa file.",
+                "Isinusulat ng I-export ang talahanayan bilang Excel, CSV, TSV o JSON. Kapag kuwit ang nasa unahan ng mga decimal, isinusulat ang CSV na may mga semicolon, gaya ng inaasahan ng mga spreadsheet. Ang isang sheet ng Excel ay may 1,048,576 na row: ang mas mahabang talahanayan ay nagpapatuloy sa mga susunod na sheet ng parehong workbook, sa ilalim ng parehong mga pamagat.",
+                "Inaalisan ng laman ng pambura ang mga napiling row; inaalisan ng laman ng basurahan ang buong talahanayan."
+              ]
+            },
+            "Isang halaga ang hawak ng isang row. Sa na-paste o na-import na row na may ilang halaga, ang una ang kinukuha at kinukuwenta mula rito ang iba.",
+            "Natatagalan ang pag-paste, pag-import, pag-export o pagkopya ng napakaraming row. Ipinapakita noon ng isang card sa itaas ng talahanayan kung gaano na kalayo ang trabaho, sa porsiyento at sa mga row, na may button na Itigil. Iniiwan ng itinigil na pag-paste o pag-import ang talahanayan gaya ng dati; walang file na isinusulat ang itinigil na pag-export.",
+            "Kapag wala nang memory ang computer para sa mga row, walang binabago at sinasabi ng linya sa ilalim ng talahanayan kung gaano karami ang kailangan. Kapag kasya ang mga row pero hindi maitatabi ang dating talahanayan sa tabi ng mga ito, tatanungin ka kung itutuloy nang walang undo: ang pagbabagong iyon, at ang mga nauna rito, ay hindi na maibabalik. Bago magtanong, binibitawan ang pinakalumang mga hakbang ng I-undo para magkaroon ng espasyo.",
+            "Mga opsyon ng talahanayan (ang gear): kung ano ang sinasabi ng pamagat ng column (pangalan at simbolo, pangalan, o simbolo), kung kasama sa mga kopya at export ang mga pamagat at numero ng row, “Simulan ang converter na ito gamit ang mga column na ito”, at “I-reset ang talahanayan”."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mga natatanging converter",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Salapi",
+          "body": [
+            "Walang nakapirming salik ang mga salapi: nagbabago ang halaga ng bawat isa. Binabasa ng converter ng salapi ang palitan mula sa dalawang libreng serbisyo habang ginagamit mo ito, at sa oras lang na iyon.",
+            {
+              "points": [
+                "Mga salapi ng mga bansa: Rates By Exchange Rate API, https://www.exchangerate-api.com . Nagbabago ang mga ito nang isang beses kada araw sa pinagmulan nila, at hindi binabasa nang mas madalas pa roon.",
+                "Mga cryptocurrency: Powered by CoinGecko, https://www.coingecko.com . Binabasa ang mga ito kapag binuksan ang converter o bumalik ito sa harap at mas luma sa labinlimang minuto ang hawak nito, at kapag pinindot mo ang I-refresh; hindi kailanman ayon sa timer."
+              ]
+            },
+            "Ang palitan lang ang hinihingi. Walang ipinapadalang anuman tungkol sa iyo, at hindi kailanman ang mga halagang kino-convert mo.",
+            "Sinasabi ng linya sa ilalim ng talahanayan, at sa ilalim ng resulta ng Mabilisang pag-convert, kung kailan ang palitan. Kapag walang koneksiyon, ginagamit ang huling palitan at minamarkahang luma. Gitling ang ipinapakita para sa salaping walang palitang ibinigay ang mga serbisyo.",
+            "Mga Setting → Units → Salapi: maaaring i-off ang “Basahin ang palitan mula sa network”, at gagamitin ng converter ang huling palitang itinabi nito. Ipinapakita o itinatago ng “Ipakita ang mga pinagmulan sa tabi ng palitan” ang pangalan ng dalawang serbisyo sa linyang iyon.",
+            "Para sa impormasyon lang ang palitan. Huwag itong asahan para sa isang transaksiyon."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Base ng numero",
+          "body": [
+            "Ang mga yunit ng converter na ito ay mga paraan ng pagsulat ng buong numero: mga base mula 2 hanggang 64, mga numerong Romano, base 60 na may tutuldok (1:30:15), binary-coded decimal at Gray code. Teksto ang mga halaga nila: i-type ang FF sa ilalim ng hexadecimal at ipapakita ng ibang column ang 255, 11111111 at iba pa.",
+            "Mula I hanggang MMMCMXCIX (1 hanggang 3999) ang mga numerong Romano."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Mga yunit na hindi simpleng salik",
+          "body": [
+            "Karamihan sa mga yunit ay salik ng iba. May ilang hindi, at kino-convert ng Units ang mga ito ayon sa kahulugan nila: ang mga temperatura kasama ang kanilang offset; ang fuel economy (litro bawat 100 km laban sa milya bawat galon); ang wavelength laban sa frequency; ang conductance laban sa resistance; ang mga digri Baumé, API, Brix at Plato laban sa densidad; ang decibel laban sa sound pressure at intensity; ang dalisdis sa porsiyento laban sa anggulo nito.",
+            "Hindi magkapareho ang temperatura at ang pagkakaiba ng temperatura: ang 100 °C ay 212 °F, pero ang pagkakaibang 100 °C ay pagkakaibang 180 °F. Nagko-convert sa isa't isa ang mga yunit ng grupong “Pagkakaiba (Δ)”; sa pagitan ng mga ito at ng mga iskala ng temperatura, gitling ang ipinapakita ng cell."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sarili mong mga yunit",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Paggawa ng yunit",
+          "body": [
+            "Maaari kang magdagdag ng sarili mong mga yunit sa anumang converter. Sa panel ng mga yunit, piliin ang “Bagong yunit”, bigyan ito ng pangalan at simbolo, at ipahayag ito sa pamamagitan ng isang yunit na umiiral na.",
+            {
+              "points": [
+                "Isang salik: “1 hakbang = 0.75 m”. Para sa iskalang hindi nagsisimula sa zero, pati ang idinadagdag pagkatapos mag-multiply.",
+                "Isang formula: kung paano nagiging ibang yunit ang halaga, na x ang halaga, at ang formula pabalik. Halimbawa x * 9 / 5 + 32 at (x - 32) * 5 / 9."
+              ]
+            },
+            "Sinusubukan ang itina-type mo habang tina-type mo ito, at ipinapakita kung magkano ang isa sa yunit mo bago mo ito itabi. Maaaring gumamit ang formula ng + − × ÷ ^, panaklong, x, pi, e, at ng mga function na sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos at atan. Kinukuwenta ito, hindi kailanman pinatatakbo bilang programa.",
+            "Nakalista ang mga yunit mo sa ilalim ng “Akin” sa panel, kung saan maaari silang baguhin at alisin. Maaaring ipahayag ang isang yunit mo sa pamamagitan ng iba mo pang yunit; kapag inalis ang isang yunit, inaalis din ang mga ipinahayag sa pamamagitan nito.",
+            "Inililista ng Mga Setting → Units ang mga yunit mo sa bawat converter, at ini-export at ini-import ang mga ito bilang teksto na maaari mong itabi o ilipat sa ibang computer."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mga Setting",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Mga Setting ng Units",
+          "body": [
+            "Binubuksan ng File → Buksan ang Mga Setting ang mga setting ng Units; gayundin ang mga opsyon ng talahanayan (ang gear sa bar nito).",
+            {
+              "points": [
+                "Buksan ang bawat converter sa sarili nitong tab, o sa tab na kinaroroonan mo.",
+                "Buong pagsulat ng matitinding halaga, ang isinusulat sa pagitan ng mga libo (10000.000, 10 000.000 o 10,000.000; wala maliban kung iba ang piliin mo), at mga numero ng row.",
+                "Salapi: kung binabasa ang palitan mula sa network, at kung pinangangalanan ang mga serbisyo sa tabi nito.",
+                "Katumpakan ng mga yunit: pumili ng converter (o “Mga yunit na binago mo”), maghanap ng yunit, at itakda ang mga decimal nito gamit ang − at +; ibinabalik ito ng arrow sa sariling katumpakan ng yunit. Itinatakda rin ang parehong halaga ng “Gamitin para sa yunit na ito kahit saan” sa menu ng isang column.",
+                "Mga yunit na pinagsisimulan ng talahanayan: ang mga converter na pinili mo ang mga unang column, bawat isa ay may paraan para ibalik sa orihinal na kasama nito.",
+                "Sarili mong mga yunit."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tungkol sa Units",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tungkol sa Units",
+          "body": [
+            "Ang Units ay ang converter app ng Syntelab Creative: 38 converter na may higit sa 1,500 yunit, mula sa haba at temperatura hanggang sa mga salapi at base ng numero. Ang halagang na-type nang isang beses ay ipinapakita sa bawat yunit na hihingin mo, sa talahanayang kayang humawak ng isang halaga o milyun-milyon.",
+            "Eksaktong kinukuwenta ang mga numero, bilang fraction, at nira-round lang kapag isinusulat. Lahat ay ginagawa sa computer na ito; ang palitan lang ng mga salapi ang binabasa mula sa network, at maaari itong i-off.",
+            "Bago pa ito. Kung saan ito kulang para sa trabaho mo, sabihin sa amin sa Tulong → Puna: doon namin nalalaman kung ano ang dapat pagtrabahuhan."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Ilang row ang kayang hawakan ng talahanayan: ang sinukat namin",
+          "body": [
+            "Walang nakapirming hangganan ng row ang talahanayan: kasinghaba ito ng pinapayagan ng memory ng iyong computer. 16 byte ang isang row, kaya mga 1.5 GB ang 100 milyong row. Kapag naubos ang memory, nananatili ang talahanayan gaya ng dati at sinasabi ng programa kung gaano karami ang kailangan.",
+            "Sinukat namin ito gamit ang 50,000,000 row, na tig-isang numero sa isang column, sa optimized na build ng programa:",
+            {
+              "points": [
+                "Pag-paste ng 50,000,000 row: mga 7 segundo.",
+                "Pag-import ng mga ito mula sa isang CSV file: 12 segundo.",
+                "Pag-export ng mga ito sa isang CSV file, na may ikalawang column na kino-convert: mga 3.5 minuto.",
+                "Pag-export ng mga ito sa Excel, sa 48 sheet: 4.3 minuto."
+              ]
+            },
+            "Mas matagal ang paglabas kaysa sa pagpasok dahil eksaktong kino-convert muna ang bawat cell na isinusulat.",
+            {
+              "note": "Ang computer na pinagpatakbuhan ng pagsubok: AMD Ryzen 9 9950X3D (16 core, 32 thread), 64 GB na memory, Windows 11 Pro. Oktubre 2026. Sa ibang computer, mag-iiba ang mga oras; hindi mag-iiba ang laki ng isang row."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Kung ano ang ginamit sa pagbuo ng Units",
+          "body": [
+            {
+              "points": [
+                "Mga eksaktong numero: ang mga num library ng Rust (mga fraction ng buong numero na anumang laki).",
+                "Ang mga yunit, ang mga salik nila at ang mga grupo nila: mga data file ng programa, isa para sa bawat converter.",
+                "Pagbasa ng mga Excel at OpenDocument workbook: calamine. Pagsulat ng mga Excel workbook: rust_xlsxwriter.",
+                "Ang clipboard ng system, para sa pagkopya at pag-paste ng napakaraming row: arboard.",
+                "Ang palitan ng mga salapi: ExchangeRate-API at CoinGecko (tingnan ang “Salapi”)."
+              ]
+            },
+            "Ang ibinabahagi nito sa iba pang bahagi ng programa ay nasa “Tungkol sa Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ang hindi pa kayang gawin ng Units",
+          "body": [
+            {
+              "points": [
+                "Isang halaga ang hawak ng isang row: sa na-paste na row na may ilang halaga, ang una ang kinukuha.",
+                "Mabagal ang pag-export ng napakaraming row (tingnan ang sinukat namin).",
+                "Ang kinopya sa clipboard ay hawak sa memory bilang iisang teksto bago ito i-paste.",
+                "Kasing-sariwa lang ng ibinibigay ng dalawang pinagmulan ang palitan ng mga salapi: isang beses kada araw para sa mga salapi ng mga bansa."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+/* The certificates to choose from, one to a row. */
+.certificates {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 220px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.certificate {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  cursor: pointer;
+}
+
+.certificate[data-chosen='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.certificate[data-expired='true'] {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.certificate input[type='radio'] {
+  width: 18px;
+  height: 18px;
+  margin-block-start: 2px;
+  accent-color: var(--sc-accent);
+}
+
+.facts {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.name {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.detail {
+  color: var(--sc-muted);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.fileRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.fileRow input:not([type='checkbox']) {
+  flex: 1 1 180px;
+  min-width: 0;
+}
+
+.field {
+  min-height: var(--sc-control-height);
+  padding-inline: 12px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.pair label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.problem {
+  margin: 0;
+  color: var(--sc-danger);
+}
+
+/* The signatures of a document, one to a card. */
+.signatures {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.signature {
+  display: flex;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+}
+
+/* The signature clicked on the page. */
+.signature[data-shown='true'] {
+  border-color: var(--sc-accent);
+  box-shadow: 0 0 0 1px var(--sc-accent);
+}
+
+.signatureActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block-start: 6px;
+}
+
+.says p.revocation {
+  color: var(--sc-muted);
+}
+
+.says p.revocation[data-state='good'] {
+  color: var(--sc-action-support);
+}
+
+.says p.revocation[data-state='revoked'] {
+  color: var(--sc-danger);
+}
+
+.mark {
+  display: flex;
+  flex: none;
+  margin-block-start: 2px;
+}
+
+.mark[data-state='good'] {
+  color: var(--sc-action-support);
+}
+
+.mark[data-state='warning'] {
+  color: var(--sc-action-changelog-hover);
+}
+
+.mark[data-state='bad'] {
+  color: var(--sc-danger);
+}
+
+.says {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  user-select: text;
+}
+
+.says p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+/* How a signature will look on the page: on white, like the paper it goes on. */
+.preview {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  border: 1px dashed var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-paper);
+  direction: ltr;
+}
+
+/* Where the picture of a look comes from: none, a file, drawn here. */
+.sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.source {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--sc-control-height);
+  padding-inline: 14px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.source[aria-checked='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-accent-soft);
+}
+
+.lines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.lines legend {
+  margin-block-end: 6px;
+}
+
+.stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+textarea.field {
+  padding-block: 8px;
+  resize: vertical;
+}
+
+/* Reason and place: optional, folded away until asked for. */
+.more {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.more > summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.more[open] > summary {
+  margin-block-end: 10px;
+}
+
+.more > p {
+  margin-block-end: 10px;
+}

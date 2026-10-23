@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Pagbubukas at pagbabasa",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Pagbubukas ng dokumento",
+          "body": [
+            "Binubuksan ng File → Buksan (Ctrl+O) ang isang PDF sa sarili nitong tab. Binubuksan ng \"Buksan ang ilang file nang sabay…\" ang bawat piniling file sa kani-kaniyang tab.",
+            "Nabubuksan din bilang mga pahina ang mga file na hindi PDF: mga larawan (PNG, JPEG, TIFF, WebP at marami pa), mga text at web file, e-book, XPS, at mga dokumentong pang-opisina. Hindi pa naka-save kahit saan ang ganitong dokumento: itatanong ng \"I-save\" kung saan.",
+            {
+              "note": "Ang mga dokumentong pang-opisina (Word, Excel, PowerPoint, OpenDocument) ay kino-convert ng Word, Excel o PowerPoint, o ng LibreOffice, alinman ang nasa computer. Kung wala ang alinman sa mga ito, hindi sila mabubuksan."
+            },
+            "Ang mga file na i-drop sa isang bakanteng tab ay titipunin sa isang binder; kung i-drop sa isang dokumento, idaragdag dito ang mga pahina nila.",
+            "Sa Windows, maaaring ang PDF Organizer ang app na magbubukas ng mga PDF file kapag dinoble-click mo ang mga ito: sa start page nito, binubuksan ng \"Gawing default\" ang mga setting ng Windows, kung saan pipiliin mo ang Syntelab Creative para sa mga PDF file."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Pagtingin sa mga pahina",
+          "body": [
+            "Ang menu na Tingnan ang nagtatakda kung paano ipinapakita ang dokumento; walang anuman dito na nagbabago sa file.",
+            {
+              "points": [
+                "Pag-zoom: palakihin, paliitin, aktwal na laki, ikasya ang pahina, ikasya sa lapad, ikasya sa taas. Nakaka-zoom din ang Ctrl at ang gulong ng mouse.",
+                "Pagpapakita ng pahina: isang pahina o dalawang magkatabi, may pabalat o wala, at pag-scroll sa lahat ng pahina bilang isang mahabang hanay.",
+                "Mga gabay: mga ruler at grid, sa yunit na pinili sa Mga Setting.",
+                "\"Ipakita ang maliliit na larawan ng pahina\": ang maliliit na pahina sa gilid. I-click ang isa para pumunta roon; nasa parehong panel ang mga bookmark ng dokumento.",
+                "Itinatago ng \"Mode ng pagbasa\" ang mga tool; itinatago naman ng \"Buong screen\" ang lahat maliban sa pahina. Pindutin ang Esc para lumabas sa alinman sa dalawa."
+              ]
+            },
+            "Ang hanay sa itaas ng mga pahina (ang mabilisang toolbar) ay may numero ng pahina, pag-zoom, at ang mga button na pinili mo sa Mga Setting."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Paghahanap ng teksto",
+          "body": [
+            "I-edit → Hanapin sa dokumento (Ctrl+F): i-type ang isang salita o parirala; mamarkahan sa mga pahina ang mga lugar kung saan ito nahanap, at dadalhin ka ng mga arrow mula sa isa patungo sa susunod.",
+            {
+              "note": "Ang na-scan na dokumento ay mga larawan ng pahina at walang tekstong mahahanap hangga’t hindi nakikilala ang teksto nito: tingnan ang \"Pagkilala sa teksto (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Mga katangian ng dokumento",
+          "body": [
+            "Ipinapakita ng File → Mga katangian ng dokumento kung ano ang sinasabi ng dokumento tungkol sa sarili nito: pamagat, may-akda, ang mga petsa kung kailan ito ginawa at binago, ang bilang ng mga pahina, at ang laki ng file."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pag-save, pag-print at pagpapadala",
+      "topics": [
+        {
+          "id": "save",
+          "title": "I-save at I-save bilang",
+          "body": [
+            "Walang anumang ginagawa mo ang nagbabago sa file sa disk hangga’t hindi ka nagse-save. Hanggang doon, maaaring i-undo (Ctrl+Z) at i-redo (Ctrl+Y) ang bawat hakbang.",
+            {
+              "points": [
+                "Isinusulat ng I-save (Ctrl+S) ang dokumento sa ibabaw ng sarili nitong file.",
+                "Isinusulat ito ng I-save bilang (Ctrl+Shift+S) sa isang bagong file, na siyang papalit sa tab; mananatili ang lumang file gaya ng dati."
+              ]
+            },
+            "Kung nakabukas ang file sa ibang programa, hindi ito mapapatungan: sasabihin ito ng programa at pananatilihin ang iyong mga pagbabago, para mai-save sa ibang pangalan.",
+            {
+              "note": "Ang pag-save ng binagong dokumento sa ibabaw ng file na nilagdaan gamit ang sertipiko ay nag-aalis ng mga lagda nito. Magtatanong muna ang programa at mag-aalok ng \"I-save bilang bagong file…\"; maaaring i-off ang tanong na ito sa Mga Setting → Mga Lagda."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Paglikha ng PDF",
+          "body": [
+            "Gumagawa ng bagong dokumento ang File → Gumawa ng PDF:",
+            {
+              "points": [
+                "mula sa isang file, o mula sa marami: pinagsama sa isang PDF, o isang PDF para sa bawat isa;",
+                "mula sa isang web page, sa address na ita-type mo (sine-save ang pahina gamit ang browser na naka-install sa computer);",
+                "mula sa kung ano ang nasa clipboard;",
+                "mula sa mga bakanteng pahina sa laki na pipiliin mo."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Pag-export sa ibang format",
+          "body": [
+            "Isinusulat ng File → I-export ang dokumento sa ibang format: tekstong Word o OpenDocument, payak na teksto, web page, XML, mga larawan ng mga pahina (PNG, JPEG, TIFF, SVG) o PostScript. Para sa mga larawan, pipiliin mo ang resolusyon.",
+            "Mananatiling PDF ang dokumento mismo; bagong file ang na-export.",
+            {
+              "note": "Maaari lamang i-export ang teksto kung saan may teksto ang dokumento. Kilalanin muna ang teksto ng isang scan."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Pag-print",
+          "body": [
+            "Ipi-print ng File → I-print (Ctrl+P) ang dokumento ayon sa pagkakaayos nito ngayon, kasama ang mga iginuhit mo rito. Piliin ang mga pahina, ang papel, kung patayo o pahiga ang mga papel, at kung ikakasya ang mga pahina sa papel o ipi-print sa tunay nilang laki; pagkatapos ay itatanong ng window ng pag-print ng system ang printer.",
+            "Ang papel, oryentasyon at sukat na panimula ng window ng pag-print ay itinatakda sa Mga Setting → Pag-print."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Pagbabahagi",
+          "body": [
+            "Ipinapasa ng File → Ibahagi ang dokumento sa window na \"Ibahagi\" ng system: email, isang kalapit na device at iba pang app. Ibinabahagi ang dokumento ayon sa kasalukuyang kalagayan nito, kasama ang iyong mga hindi pa naka-save na pagbabago."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pag-aayos ng mga pahina",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Ang tanaw na Ayusin ang mga pahina",
+          "body": [
+            "Ipinapakita ng Ayusin → Ayusin ang mga pahina ang bawat pahina sa isang grid. Walang mababago sa disk hangga’t hindi ka nagse-save.",
+            {
+              "points": [
+                "Pagpili: i-click ang isang pahina; Ctrl+click para magdagdag ng isa, Shift+click para pumili ng sunod-sunod. Nasa menu ang \"Piliin ang lahat ng pahina\", \"Walang pipiliin\", \"Piliin ang mga pahinang gansal\" at \"Piliin ang mga pahinang pares\".",
+                "Paglipat: i-drag ang mga napiling pahina sa bago nilang lugar, o gamitin ang \"Ilipat sa kaliwa\" at \"Ilipat sa kanan\".",
+                "Pag-ikot: iniikot ng \"Pinili: iikot pakaliwa\" at \"Pinili: iikot pakanan\" ang mga napiling pahina; iniikot ng \"Lahat ng pahina: iikot pakaliwa\" at \"Lahat ng pahina: iikot pakanan\" ang bawat pahina.",
+                "Pagbura: ang Delete key, o \"Burahin ang mga pahina\". Laging may kahit isang pahina ang dokumento.",
+                "Kopyahin, gupitin at i-paste (Ctrl+C, Ctrl+X, Ctrl+V): ang mga pahina ay maaaring i-paste sa parehong dokumento o sa isa pang nakabukas sa programa.",
+                "Laki: pinalalaki o pinaliliit ng slider sa itaas ang mga pahina; ganoon din ang Ctrl + mouse wheel sa ibabaw ng mga pahina, at ang \"Palakihin\" at \"Paliitin\" (Ctrl+= at Ctrl+-). Natatandaan ang laki."
+              ]
+            },
+            "Gumagana rin ang parehong mga utos nang wala ang grid, sa pahinang nakikita."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Pagkuha ng mga pahina at paghahati ng dokumento",
+          "body": [
+            "Kinukuha ng Ayusin → Kunin ang mga pahina ang mga napiling pahina bilang bagong dokumento sa sarili nitong tab, na hindi pa naka-save. Maaari mo ring isulat ang bawat pahina bilang sariling file, at piliin kung aalisin ang mga pahina sa dokumentong ito.",
+            "Isinusulat ng Ayusin → Hatiin ang dokumento ang dokumento bilang ilang mas maliliit na file; mananatili ang dokumentong ito gaya ng dati.",
+            "Sumusunod ang mga pangalan ng mga bagong dokumento sa mga pattern sa Mga Setting → Mga pangalan ng mga bagong dokumento.",
+            {
+              "note": "Hindi nadadala sa mga kinuha o hinating dokumento ang mga lagdang ginawa gamit ang sertipiko: may bisa lamang ang isang lagda para sa file kung saan ito ginawa."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Pagpasok at pagpapalit ng mga pahina",
+          "body": [
+            {
+              "points": [
+                "Nagdaragdag ang Ayusin → Ipasok ang mga pahina ng mga pahina mula sa ibang file (PDF, larawan, teksto, dokumentong pang-opisina) pagkatapos ng napiling pahina, o sa dulo.",
+                "Inilalagay ng Ayusin → Palitan ang mga pahina ang mga pahina ng ibang file kapalit ng mga napili.",
+                "Nagdaragdag ang Ipasok → Blangkong pahina ng isang blangkong pahina na kasinlaki ng katabi nito."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Pag-crop at pagbabago ng laki ng mga pahina",
+          "body": [
+            "Pinuputol ng I-edit → I-crop ang mga pahina ang mga gilid ng mga pahina, ayon sa mga margin na ita-type o ida-drag mo. Walang inaalis sa file: mas kaunti lang ang ipinapakita ng mga pahina.",
+            "Inilalagay ng I-edit → Baguhin ang laki ng mga pahina ang mga pahina sa ibang laki ng papel (A4, Letter at iba pa). Maaaring iangkop ang nilalaman para magkasya o panatilihin ang laki nito, at ilagay sa isa sa siyam na puwesto sa bagong papel.",
+            "Pareho itong nagtatanong kung aling mga pahina: lahat, ang mga napili, isang hanay, gansal o pares."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pagsasama ng mga file",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Ang binder",
+          "body": [
+            "Nagbubukas ang Pagsamahin → Bagong binder ng lugar para tipunin ang mga file at isulat ang mga ito bilang isang PDF.",
+            {
+              "steps": [
+                "Magdagdag ng mga file gamit ang \"Magdagdag ng mga file…\", o i-drop ang mga ito sa binder. Maaaring paghaluin ang mga PDF, larawan, teksto at dokumentong pang-opisina.",
+                "I-drag ang mga card sa pagkakasunod-sunod na gusto mo, o gamitin ang mga palaso sa bawat card.",
+                "Buksan ang isang card para piliin kung aling mga pahina nito ang isasama.",
+                "Isinusulat ng \"Pagsamahin ang mga file\" ang mga ito, nang sunod-sunod, bilang isang bagong dokumento sa sarili nitong tab."
+              ]
+            },
+            "Ang mga file mismo ay hindi nababago.",
+            "Pinalalaki o pinaliliit ng slider sa itaas ang mga pahina sa mga card; ganoon din ang Ctrl + mouse wheel, at ang \"Palakihin\" at \"Paliitin\" (Ctrl+= at Ctrl+-). Natatandaan ang laki."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pagsusulat at pagguhit sa mga pahina",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Ang mga kasangkapan",
+          "body": [
+            "Bumubukas ang mga kasangkapan sa pagguhit bilang panel sa tabi ng pahina, bilang grid ng mga button o bilang listahang may mga pangalan (itinatakda sa Mga Setting). Habang hawak ang isang kasangkapan, mag-drag o mag-click sa pahina; ibinababa ng Esc ang kasangkapan.",
+            {
+              "points": [
+                "Teksto: i-click at mag-type. Nasa panel ang font, laki, kulay, makapal, pahilig at pagkakahanay.",
+                "Larawan: pumili ng larawan, pagkatapos ay i-drag kung saan ito ilalagay at kung gaano kalaki.",
+                "Mga hugis: parihaba, elipse, linya, palaso, tsek, ekis, tuldok.",
+                "I-highlight: i-drag sa bahaging dapat bigyang-diin; mananatiling nababasa ang nasa ilalim nito."
+              ]
+            },
+            "Gamit ang \"Piliin, ilipat at baguhin ang laki\", muling mahahawakan ang isang marka: i-drag ito, hilahin ang mga kanto nito, iikot gamit ang hawakan nito, baguhin ang mga kulay nito sa panel, o burahin gamit ang Delete key. Maaaring kopyahin at i-paste ang mga marka, pati sa ibang mga pahina.",
+            "Lahat ng iginuhit ay isinusulat sa file kapag nag-save ka."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Pagbabago sa sariling teksto at mga larawan ng dokumento",
+          "body": [
+            "Binabalangkas ng kasangkapang \"I-edit ang teksto at mga larawan ng dokumento\" ang mga nasa pahina mismo. Mag-click sa isang linya ng teksto para muling isulat ito, o sa isang larawan para ilipat, baguhin ang laki, iikot o burahin ito.",
+            {
+              "note": "Isang linya o isang larawan lamang ang binabago nito sa bawat pagkakataon. Hindi muling dumadaloy ang mga talata kapag humaba ang isang linya, at kasamang mahahawakan ang larawang nakapatong sa iba. Para sa malalaking pagbabago, i-edit ang dokumento sa programang pinagsulatan nito."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Pagbura nang tuluyan",
+          "body": [
+            "Tuluyang inaalis ng Iba pang tool → Burahin nang tuluyan ang hindi dapat mabasa: mag-drag ng itim na kahon sa ibabaw nito, sa kahit anong pahina. Kapag nag-save ka, tatanggalin sa file ang teksto at mga larawan sa ilalim ng kahon, hindi lamang tatakpan.",
+            {
+              "note": "I-save sa bagong pangalan ang dokumentong binurahan at itago ang orihinal sa ligtas na lugar: hindi na maibabalik ang tuluyang binura."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Watermark",
+          "body": [
+            "Nagsusulat ang I-edit → Watermark ng mga salita o naglalagay ng larawan sa mga pahinang pipiliin mo: tuwid o pahilig, sa isa sa siyam na puwesto, sa laki at labo na itatakda mo. Sa bawat pahina, magiging marka ito gaya ng iba at maaari pa ring ilipat o alisin."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Mga numero ng pahina, header at footer, Bates na pagnunumero",
+          "body": [
+            {
+              "points": [
+                "I-edit → Mga numero ng pahina: ang format (1, 1 / 12, Pahina 1 at iba pa), ang puwesto, at kung aling mga pahina ang magkakaroon nito.",
+                "Ipasok → Header at footer: teksto sa alinman sa anim na puwesto. Dito, ang {page} ay ang numero ng pahina, {pages} ang bilang ng mga pahina, {date} ang petsa ngayon at {file} ang pangalan ng dokumento.",
+                "Ipasok → Bates na pagnunumero: mga numerong sunod-sunod na may salita bago o pagkatapos (ABC000123), gaya ng ginagamit para sa mga dokumento ng isang kaso."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mga link, bookmark at nakalakip na file",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Mga link",
+          "body": [
+            "Ipasok → Link: i-drag sa bahaging dapat i-click, pagkatapos ay tukuyin kung saan ito pupunta: isang web address, o isang pahina ng dokumentong ito.",
+            "Gumagana ang mga link ng isang dokumento habang binabasa mo ito: dadalhin ka roon ng pag-click sa link patungo sa isang pahina; ipapasa ang web o email address sa iyong browser o email program."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Mga bookmark",
+          "body": [
+            "Ipasok → Bagong bookmark: i-click ang lugar na dapat nitong puntahan at bigyan ito ng pamagat. Binubuksan ng Ipasok → Mga bookmark ang listahan, kung saan maaaring palitan ang pangalan o alisin ang isang bookmark. Isinusulat ang mga pagbabago kapag nag-save ka."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Mga nakalakip na file",
+          "body": [
+            "Ipasok → Maglakip ng file: pumili ng file at i-click kung saan ilalagay ang paper clip nito. Maaari mo itong bigyan ng pangalan at may-akda, kulayan ang clip, baguhin ang laki at iikot ito. Mananatili ang file sa loob ng PDF kapag nag-save ka.",
+            "Inililista ng Ipasok → Mga nakalakip na file ang mga dala ng dokumento; maaaring i-save sa disk o alisin ang bawat file. Binubuksan din ng pag-click sa isang paper clip ang parehong listahan."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mga form",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Pagpuno sa isang form",
+          "body": [
+            "Ipinapakita ng Ipasok → Sagutan ang form ang mga field ng dokumento: mag-type sa mga field ng teksto, lagyan ng tsek ang mga kahon, pumili mula sa mga listahan. Isinusulat ang mga sagot sa file kapag nag-save ka."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Paggawa ng form",
+          "body": [
+            "Nagdaragdag ang menu na Ipasok ng mga field sa anumang dokumento: field ng teksto, kahon ng tsek, mga bilog na button (na isa lang ang mapipili), listahang mapagpipilian, at field ng lagda na iniiwang bakante para sa lalagda.",
+            "I-drag sa pahina kung saan ilalagay ang field. Gaya ng ibang marka, ang isang field ay maaaring ilipat at baguhin ang laki hanggang sa mag-save ka; pagkatapos nito, bahagi na ito ng form."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paglagda",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Pagdaragdag ng lagda na iginuhit",
+          "body": [
+            "Inilalagay ng Lagdaan → Magdagdag ng lagda ang larawan ng lagda sa pahina: iginuhit dito gamit ang panulat na pinili mo, na-type sa isang font, o kinuha mula sa isang larawan (gamit ang \"Panatilihin lamang ang mga guhit ng panulat, nang walang papel sa likod\" para sa litrato ng nilagdaang papel). Maaaring isulat ang petsa sa ilalim nito.",
+            "I-drag sa pahina kung saan ito dapat ilagay. Ang mga lagda na ginamit mo ay itatabi sa computer na ito para magamit muli.",
+            {
+              "note": "Ito ay larawan: wala itong tiyak na sinasabi kung sino ang naglagay nito. Ang lagdang nagpapatunay kung sino ang lumagda, at na walang nabago mula noon, ay ginagawa gamit ang sertipiko."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Paglagda gamit ang sertipiko",
+          "body": [
+            "Gumagawa ang Lagdaan → Lagdaan gamit ang sertipiko ng digital na lagda: sinasabi nito kung sino ang lumagda at sinasarhan ang dokumento, kaya makikita ang anumang pagbabago pagkatapos.",
+            {
+              "steps": [
+                "I-drag sa pahina ang bahagi kung saan lalabas ang lagda (may window munang magsasabi nito; maaari itong i-off). Para lumagda nang walang anuman sa mga pahina, piliin na lang ang \"Lagdaan nang hindi ipinapakita sa pahina\".",
+                "Piliin ang sertipiko: isa sa mga nasa computer (lalabas sa mga ito ang card o token kapag nasa reader na ito), o isang .pfx / .p12 file kasama ang password nito. \"Magpatuloy\".",
+                "Piliin ang hitsura ng lagda. Sa ilalim ng \"Dahilan at lugar\" maaari mong isulat kung bakit at saan ka lumalagda: mapupunta ang mga ito sa lagda, at sa pahina kung ipinapakita ito ng hitsura. Lagyan ng tsek ang \"I-lock ang dokumento pagkatapos lagdaan\" kung walang dapat lumagda o magbago nito pagkatapos mo. Iwanang may tsek ang \"Magdagdag ng pinagkakatiwalaang oras (tatak ng oras)\" para kumpirmahin ng isang awtoridad kung kailan ka lumagda.",
+                "\"Lagdaan\", pagkatapos ay piliin kung saan ise-save ang nilagdaang file. Hihingin ng token ang PIN nito sa puntong ito."
+              ]
+            },
+            "Bubukas ang nilagdaang file kapalit ng dokumento. Hindi kailanman itinatabi ng programa ang password o PIN.",
+            {
+              "note": "Ang kwalipikadong lagda ay lagdang ginawa sa ganitong paraan gamit ang kwalipikadong sertipiko, sa card o token nito. Ginagawa ang paglagda sa iyong computer; ang tatak ng oras at ang pagsusuri ng iyong sertipiko lang ang kumokonekta online, at mga hash at ang serial number ng sertipiko ang ipinapadala ng mga ito, hindi kailanman ang dokumento."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Mga hitsura ng lagda",
+          "body": [
+            "Sinasabi ng hitsura kung paano lalabas sa pahina ang lagdang may sertipiko. Magtabi ng ilan sa sarili mong mga pangalan: isa para sa paglagda para sa isang kumpanya, isa para sa paglagda sa sarili mong pangalan.",
+            {
+              "points": [
+                "Larawan: wala, mula sa isang file (isang tatak, isang na-scan na lagda) o iginuhit dito.",
+                "Tekstong ipinapakita: pangalan, petsa, dahilan, lugar, bawat isa na mayroon o walang label nito.",
+                "Sarili mong mga linya sa ilalim ng pangalan, gaya ng tungkulin at kumpanya.",
+                "Laging naroon ang \"Karaniwang teksto\": kung sino ang lumagda at kailan."
+              ]
+            },
+            "Sa window ng paglagda: \"Bago…\", \"I-edit…\", \"Burahin\". Ang huling ginamit ang unang iniaalok. Itinatabi ang mga hitsura sa computer na ito."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Maraming lagda, at pag-lock",
+          "body": [
+            "Maaaring lagdaan ng ilang tao ang isang dokumento, nang sunod-sunod. Buksan ang nilagdaang file at lagdaan ito nang walang binabago: idaragdag ang iyong lagda sa dulo ng file at mananatiling may bisa ang mga nauna.",
+            "Isinasara ng \"I-lock ang dokumento pagkatapos lagdaan\" (naka-off maliban kung lagyan mo ng tsek) ang dokumento: wala nang makakalagda pagkatapos mo at wala nang maaaring baguhin. Hindi na ito maaaring i-undo.",
+            {
+              "note": "Kung babaguhin mo ang isang nilagdaang dokumento bago ito lagdaan muli, kailangan itong isulat muli at hindi na isasama ang mga naunang lagda. Babalaan ka ng window ng paglagda: para mapanatili ang mga ito, buksan muli ang file at lumagda nang walang binabago."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Mga tatak ng oras",
+          "body": [
+            "Ang tatak ng oras ay nilagdaang patunay ng isang awtoridad ng tatak ng oras kung kailan umiral ang isang bagay. Kung wala ito, ang oras sa isang lagda ay galing sa orasan ng computer ng lumagda, na kayang baguhin ng kahit sino; pinatutunayan ng tatak ng oras ang sandali, at pinananatiling mapapatunayan ang lagda kahit mag-expire na ang sertipiko (PAdES B-T).",
+            {
+              "points": [
+                "Nagkakaroon nito ang mga lagda kapag may tsek ang \"Magdagdag ng pinagkakatiwalaang oras (tatak ng oras)\" sa window ng paglagda. Itinatakda sa Mga Setting → Mga Lagda kung may tsek ito sa simula, dito at sa maramihang pagproseso.",
+                "Binibigyan ng Lagdaan → Magdagdag ng tatak ng oras ang buong dokumento ng sarili nitong tatak ng oras, nang walang sertipiko: pinatutunayan nito na ganito mismo ang dokumento sa sandaling iyon. Ise-save ito bilang bagong file; mananatiling may bisa ang mga lagdang nasa file."
+              ]
+            },
+            "Ang awtoridad ay ang sa DigiCert (http://timestamp.digicert.com), libre at pinagkakatiwalaan ng Adobe Reader at Windows; maaaring magtakda ng iba sa Mga Setting → Mga Lagda. Hash (SHA-256) lang ang natatanggap nito, hindi kailanman ang dokumento, at kailangan ng koneksyon sa internet. Kapag nagkaroon ng tatak ng oras ang isang lagda, tinatanong din ang nag-isyu ng iyong sertipiko kung may bisa pa ang sertipiko, at itinatago sa lagda ang sagot nito (pangmatagalang pagpapatunay): sa gayon, maipapakita ng Adobe Reader na may bisa ang lagda, ngayon at pagkatapos mag-expire ng sertipiko.",
+            {
+              "note": "Kung hindi maabot ang awtoridad, walang malalagdaan o maisusulat: subukang muli, o alisin ang tsek sa tatak ng oras para lumagda nang wala ito."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Pag-verify ng mga lagda",
+          "body": [
+            "Inililista ng Lagdaan → I-verify ang mga lagda ang bawat lagdang may sertipiko sa file: kung sino ang lumagda, sino ang nag-isyu ng sertipiko, kailan, ang dahilan at lugar, at",
+            {
+              "points": [
+                "kung ang dokumento ay hindi nabago simula noong lagdang iyon (ang pagdaragdag ng isa pang lagda pagkatapos ay hindi itinuturing na pagbabago);",
+                "kung ikinakandado ng lagda ang dokumento;",
+                "kung pinagkakatiwalaan ng computer na ito ang awtoridad sa likod ng sertipiko, at kung may bisa pa ang sertipiko ngayon;",
+                "ang oras na kinumpirma ng tatak ng oras nito, at kung aling awtoridad, kapag mayroon ito. Nakalista rin ang tatak ng oras ng buong dokumento, na may sarili nitong pagsusuri."
+              ]
+            },
+            "Ang pagsusuri ay para sa file ayon sa huling pagka-save nito at ginagawa sa computer na ito, nang hindi kumokonekta online. Kapag nag-click ka ng lagda sa isang pahina, bubuksan ang listahang ito sa lagdang iyon. Sa ilalim ng bawat lagda, binubuksan ng “Ipakita ang sertipiko” ang window ng Windows para sa sertipiko (ang chain nito at bawat detalye; mula roon, sa pamamagitan ng “I-install ang Sertipiko” ay pagkakatiwalaan ng computer na ito ang isang sertipikong kilala mo), at tinatanong ng “Patunayan” online ang nag-isyu ng sertipiko, kapag pinindot mo lang ito, kung binawi na ang sertipiko."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Iba pang tool",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Pagkilala sa teksto (OCR)",
+          "body": [
+            "Binabasa ng Iba pang tool → Kilalanin ang teksto (OCR) ang mga salita ng mga na-scan na pahina at isinusulat ang mga ito sa mga pahina nang hindi nakikita, para mahanap ang dokumento at makopya at ma-export ang teksto nito. Hindi nagbabago ang hitsura ng mga pahina.",
+            "Lagyan lamang ng tsek ang mga wikang ginamit sa mga pahina; mananatili gaya ng dati ang mga pahinang may teksto na.",
+            {
+              "note": "Ang pagbasa ay ginagawa ng makinang Tesseract, isang libreng programang hiwalay na ini-install. Kung wala ito, ipapakita ng window ang utos para i-install ito sa Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Pagpapaliit ng dokumento",
+          "body": [
+            "Sine-save ng Iba pang tool → I-compress ang dokumento bilang mas maliit na file sa pamamagitan ng pagbabawas ng pixel ng mga litrato at scan nito. May tatlong antas; nananatiling kasinlinaw ng dati ang teksto at mga guhit. Kaunti lamang ang lumiliit sa dokumentong may kakaunting larawan."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Paghahambing ng dalawang dokumento",
+          "body": [
+            "Iba pang tool → Ihambing ang mga dokumento: pumili ng isa pang PDF. Ipapakita ang dalawa nang magkatabi, pahina por pahina, na may marka ang mga pahinang magkaiba ang teksto at nakalista ang mga linyang nasa isa lamang."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Maramihang pagproseso: maraming file nang sabay-sabay",
+          "body": [
+            "Ginagawa ng Iba pang tool → Maramihang pagproseso ang parehong mga bagay sa maraming file, sa sarili nitong tab. Bagong file ang bawat resulta. Kung papalitan ng mga resulta ang mga file na nasa folder na (ang sarili mong mga file, kapag pumupunta ang mga ito sa sarili nilang folder nang walang idinadagdag sa mga pangalan), tatanungin ka muna kung papalitan mo ang mga ito, lalaktawan, o kakanselahin. Papalitan lang ang isang file kapag kumpleto na ang resulta nito; ang file na bukas (sa isang tab dito o sa ibang program) ay iiwan kung ano ito at mamarkahang hindi tapos.",
+            {
+              "steps": [
+                "Sa kaliwa, idagdag ang mga file: \"Magdagdag ng mga file…\", \"Magdagdag ng folder…\" (kasama ang mga folder sa loob nito), o i-drop ang mga ito rito.",
+                "Sa kanan, lagyan ng tsek ang mga gagawin. Magiging PDF ang bawat file sa anumang kaso; bukod doon, maaari mong iikot ang mga pahina, kilalanin ang teksto, magdagdag ng header at footer, watermark o mga numero ng pahina, paliitin ang mga file, lagdaan ang mga ito gamit ang sertipiko, o isulat ang mga ito sa ibang format. Ipinapakita ng mga numero ang pagkakasunod-sunod.",
+                "Piliin kung ano ang isusulat: isang file para sa bawat isa, o lahat sa isang PDF (ayon sa pagkakasunod-sunod ng listahan), at ang folder kung saan ilalagay ang mga resulta. Kapag galing sa iisang folder ang lahat ng file, pipiliin para sa iyo ang folder na iyon hangga’t hindi ka pumipili ng iba; kung hindi, ito ang huling folder na pinili mo.",
+                "\"Simulan\". Ipinapakita ng bawat file kung paano ito natapos; maaaring itigil ang pagproseso sa pagitan ng mga file."
+              ]
+            },
+            {
+              "points": [
+                "Mga resipe: itinatabi ng \"I-save bilang resipe…\" ang lahat ng iyong pinili (maliban sa mga file at anumang password) sa ilalim ng isang pangalan, para maitakda muli sa isang pagpili lamang.",
+                "Muling binubuo ng \"Panatilihin ang mga folder ng mga file sa mga resulta\" ang mga folder ng isang idinagdag na folder.",
+                "Nag-iiwan ang \"Sumulat ng ulat ng pagproseso\" ng isang text file sa tabi ng mga resulta na nagsasabi kung ano ang naisulat at kung ano ang nabigo.",
+                "Pinapanatili ng PDF na nilagdaan lamang ang mga lagda nito; kung may iba pang gagawin dito sa parehong pagproseso, muli itong isusulat at hindi na isasama ang mga lagda."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mga Setting",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Ang mga setting ng PDF Organizer",
+          "body": [
+            "File → Mga Setting (o Mga Setting sa gilid na hanay, pagkatapos ay PDF Organizer). Maaaring ibalik sa dati ang bawat setting nang isa-isa, o lahat nang sabay-sabay.",
+            {
+              "points": [
+                "Kapag bumubukas ang isang dokumento: gaano kalaki ipinapakita ang dokumento pagbukas, pag-scroll o isang pahina sa bawat pagkakataon, ipapakita ba ang maliliit na larawan ng pahina o hindi.",
+                "Mga yunit, ruler at grid: ang yunit (milimetro, pulgada, puntos), mga ruler, ang grid at ang pagitan nito.",
+                "Pag-print: ang panimulang papel, oryentasyon at sukat ng window ng pag-print.",
+                "Mabilisang toolbar: kung aling mga button ang nasa hanay sa itaas ng mga pahina.",
+                "Mga pangalan ng mga bagong dokumento: ang mga pattern para sa mga kinuhang pahina, mga bagong dokumento at ang PDF kung saan tinitipon ng maramihang pagproseso ang maraming file.",
+                "Mga Lagda: kung magtatanong ang \"I-save\" bago patungan ang isang nilagdaang file.",
+                "Mga shortcut sa keyboard: i-click ang mga key ng isang utos, pagkatapos ay pindutin ang mga bago."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tungkol sa PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tungkol sa PDF Organizer",
+          "body": [
+            "Ang PDF Organizer ang PDF app ng Syntelab Creative: binabasa nito ang mga dokumentong PDF, inaayos at pinagsasama ang mga pahina nito, nagsusulat at gumuguhit sa mga ito, sumasagot at gumagawa ng mga form, lumalagda gamit ang sertipiko at sumusuri ng mga lagda, at ginagawa ang mga bagay na ito sa maraming file nang sabay-sabay.",
+            "Bago pa ito, at unang hakbang pa lamang ang ilan sa mga ginagawa nito. Kung may kulang ito para sa iyong mga dokumento, ipaalam sa amin sa pamamagitan ng Tulong → Puna: doon namin nalalaman kung ano ang dapat naming pagtrabahuhan."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Kung ano ang ginamit sa pagbuo ng PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Pagbabasa, pagguhit at pagsusulat ng PDF: MuPDF.",
+                "Pagkilala sa teksto (OCR): Tesseract, kapag naka-install ito sa computer.",
+                "Pagbubukas ng mga dokumentong pang-opisina: Word, Excel at PowerPoint, o LibreOffice, alinman ang naka-install.",
+                "Pag-save ng web page bilang PDF: ang browser na naka-install sa computer.",
+                "Paglagda gamit ang sertipiko: ang mga serbisyo ng sertipiko ng Windows; isinusulat ang mga lagda ayon sa hinihingi ng pamantayang PAdES."
+              ]
+            },
+            "Ang mga ibinabahagi nito sa iba pang bahagi ng programa ay nasa \"Tungkol sa Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Ang mga bagay na hindi pa kayang gawin ng PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Binubuksan ang mga dokumentong pang-opisina ng office suite sa computer; kung walang Word, Excel, PowerPoint o LibreOffice, hindi sila mabubuksan. Ginagawa na ang sarili naming converter: tingnan ang \"Ang ginagawa namin ngayon\".",
+                "Kailangan ng pagkilala sa teksto ang makinang Tesseract, na hiwalay na ini-install.",
+                "Ang teksto ng mismong dokumento ay binabago nang isa-isang linya; hindi muling dumadaloy ang mga talata.",
+                "Ang mga larawang naka-print sa apat na tinta (CMYK) ay hindi maaaring piliin para ilipat.",
+                "Sinasabi ng “Patunayan” kung binawi na ang isang sertipiko sa ngayon, hindi kung kailan ito binawi.",
+                "Sa ngayon, sa Windows gumagana ang paglagda gamit ang sertipiko; darating ito sa Linux at macOS sa susunod na bersyon."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

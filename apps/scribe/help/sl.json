@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Besedila in datoteke",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Urejevalnik",
+          "body": [
+            "Scribe je urejevalnik navadnega besedila z orodji ob njem. Vsako besedilo ima svoj zavihek; besedilo je na sredini, plošča z orodji ob strani, pod njim pa vrstica s podatki.",
+            "Ko odprete Scribe, vas najprej vpraša, kaj želite storiti: prešteti besede, poiskati in zamenjati, odstraniti podvojene, primerjati dve besedili, razvrstiti vrstice, obrniti besedilo, napisati polnilno ali naključno besedilo. Vsaka izbira odpre besedilo s pripadajočim orodjem ob njem; »Prazno besedilo« odpre samo besedilo, spodaj pa so navedena nedavno odprta besedila.",
+            {
+              "points": [
+                "Datoteka → Novo besedilo (Ctrl+N) začne prazno besedilo.",
+                "Datoteka → Odpri (Ctrl+O) odpre eno ali več datotek, vsako v svojem zavihku. Odpre se vsaka datoteka z besedilom: .txt, .md, .csv, .log, .srt, izvorna koda in druge.",
+                "Uredi → Razveljavi (Ctrl+Z) in Ponovi (Ctrl+Y) gresta skozi vse spremembe v besedilu, pri čemer velja uporaba orodja ali recepta za en korak.",
+                "Uredi → Išči in zamenjaj (Ctrl+F) odpre v urejevalniku trak, ki se premika od enega ujemanja do naslednjega.",
+                "Uredi → Izberi vse (Ctrl+A)."
+              ]
+            },
+            "Vrstica pod besedilom prikazuje položaj kazalca, koliko je izbrano, število vrstic, besed in znakov, kodiranje datoteke in kako se končajo njene vrstice.",
+            "Odprejo se tudi datoteke, ki jih povlečete v okno, vsaka kot novo besedilo z imenom, kodiranjem in konci vrstic datoteke. Program dobi vsebino povlečene datoteke, ne pa tudi njenega mesta na disku, zato pri shranjevanju vpraša, kam; datoteke, večje od 64 MB, odprite z ukazom Datoteka → Odpri.",
+            "Novo besedilo, dokler je prazno, navaja nedavno odprta besedila: kliknite eno, da ga odprete. »Pozabi seznam« ga izprazni; seznam je shranjen samo v tem računalniku."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Shrani in Shrani kot",
+          "body": [
+            "Datoteka na disku se ne spremeni, dokler ne shranite. Pika na zavihku pomeni, da ima besedilo spremembe, ki jih v datoteki ni; zapiranje takšnega zavihka najprej vpraša.",
+            {
+              "points": [
+                "Shrani (Ctrl+S) zapiše besedilo čez njegovo datoteko. Pri novem besedilu vpraša, kam.",
+                "Shrani kot (Ctrl+Shift+S) ga zapiše v novo datoteko, ki nato prevzame mesto zavihka, vse, kar je mogoče razveljaviti, pa ostane; stara datoteka ostane taka, kot je bila."
+              ]
+            },
+            "Datoteka se zapiše v celoti ali pa sploh ne: če zapisovanje ne uspe, prejšnja datoteka ostane, kot je bila.",
+            {
+              "note": "Datoteka se shrani tako, kot je bila odprta: v istem kodiranju in z istimi konci vrstic. Besedilo, natipkano v Windows, in besedilo, natipkano v Linuxu, ostaneta, kar sta bili."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Kodiranja in konci vrstic",
+          "body": [
+            "Kodiranje je način, kako so črke shranjene kot bajti. Scribe prebere, kar datoteka pove o sebi, in ugiba, kadar ne pove ničesar. Večina današnjih datotek je v UTF-8; starejše iz srednje Evrope so pogosto v windows-1250.",
+            {
+              "points": [
+                "Črke so videti napačno (Ã£ namesto ă ali kvadratki): Datoteka → »Ponovno preberi z drugim kodiranjem« in izberite kodiranje, v katerem je bila datoteka zapisana.",
+                "Za shranjevanje v drugem kodiranju ga izberite v vrstici pod besedilom in nato shranite. Če ima besedilo črke, ki jih to kodiranje ne more zapisati, Scribe pove, katere, in ne zapiše ničesar.",
+                "Konce vrstic (Windows CRLF, Linux in macOS LF, stari Mac CR) spremenite na istem mestu. Pri datoteki z mešanimi konci je to navedeno; ob shranjevanju dobijo vse vrstice enake."
+              ]
+            },
+            "S čim se začne novo besedilo, izberete v nastavitvah."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Prikaz besedila",
+          "body": [
+            {
+              "points": [
+                "Vse v meniju Pogled je stikalo: vklopljeno je vidno, izklopljeno ni.",
+                "Besedilo: Prelomi dolge vrstice (Alt+Z) — vrstica, daljša od okna, se nadaljuje spodaj, besedilo pa ohrani svoje vrstice; Številke vrstic; Rezultat ob besedilu.",
+                "Ob besedilu: Orodja (Ctrl+T), Recepti, Statistika. Plošča prikazuje samo vklopljene dele; če ni vklopljen noben, plošče ni.",
+                "Prikazana orodja: vsako skupino orodij (iskanje in zamenjava, vrstice, velike in male črke, čiščenje, pisanje besedila) lahko izpustite s plošče. Orodje, izbrano v meniju Format ali Orodja, je vseeno prikazano: njegov del in skupina se vrneta sama.",
+                "Dvojna puščica na vrhu plošče jo skrije v trak ob robu, od koder je vsak njen del oddaljen en klik; povlecite njen rob, da jo razširite ali zožite.",
+                "Pisavo in velikost črk izberete v nastavitvah."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Zelo velike datoteke",
+          "body": [
+            "Datoteka, večja od 64 MB, se ne naloži v urejevalnik: odpre se v zavihku, ki jo prikazuje po straneh s 500 vrsticami, prebranih iz datoteke sproti. Datoteke z več gigabajti se tako odprejo v času, ki je potreben, da se enkrat preberejo.",
+            {
+              "points": [
+                "»Prejšnja stran« in »Naslednja stran« se premikata po datoteki; številka vrstice in »Pojdi« skočita na katero koli vrstico.",
+                "Iskanje preišče celotno datoteko z enakimi možnostmi kot drugje in navede najdena mesta: kliknite eno, da skočite na njeno vrstico. Dolg seznam pride po delih, z »Poišči več«.",
+                "»Zaženi recept na celotni datoteki« zapiše rezultat v mapo, ki jo izberete, pod istim imenom. Sama datoteka se tu nikoli ne spremeni.",
+                "»Odpri celotno v urejevalniku« jo vseeno naloži v urejevalnik, da jo spremenite ročno. To je lahko počasno in potrebuje v pomnilniku nekajkrat več prostora, kot je velika datoteka."
+              ]
+            },
+            {
+              "note": "Datotek, zapisanih z dvema bajtoma na črko (UTF-16), ni mogoče prikazovati po straneh. Recept med izvajanjem hrani celotno datoteko v pomnilniku: meja je pomnilnik računalnika."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Orodja",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Kako orodja delujejo",
+          "body": [
+            "Orodja so v plošči ob besedilu, razvrščena v skupine. Kliknite orodje, da vidite njegove možnosti, nato »Uporabi na besedilu«.",
+            {
+              "points": [
+                "Če je nekaj izbrano, orodje spremeni samo izbor; če ni izbrano nič, celotno besedilo. Kaj od tega, piše na vrhu plošče.",
+                "Pod gumbom orodje navaja, kaj je storilo: koliko vrstic ali mest je spremenilo.",
+                "Vsako orodje je en korak: Razveljavi ga v celoti povrne.",
+                "Vsako orodje je tudi v menijih in v iskanju ukazov: tista, ki spremenijo obliko besedila (vrstice, velike in male črke, čiščenje), v meniju Format, druga v meniju Orodja. Izbira tam odpre ploščo pri njegovih možnostih."
+              ]
+            },
+            "V meniju Format je orodje, ki je večinoma ena sama izbira, razgrnjeno v svoje možnosti: vsak način spreminjanja velikih in malih črk, vsaka vrsta narekovajev, vsak način obračanja besedila je samostojen ukaz, ki odpre orodje s to možnostjo že izbrano. Kjer je okno za skupino preozko, skupina postane en gumb, ki odpre celoten seznam.",
+            "Orodja delujejo v tem računalniku. Nobeno besedilo ga ne zapusti."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Rezultat pred uporabo",
+          "body": [
+            "Ko je orodje odprto, je to, kar bi dalo, prikazano ob besedilu v podoknu »Rezultat«. V besedilu se nič ne spremeni, dokler ne izberete »Uporabi na besedilu«. Rezultat vam sledi: spremenite izbiro ali besedilo in nastane znova.",
+            {
+              "points": [
+                "Besedilo in rezultat stojita drug ob drugem, vsak pod glavo enake višine, zato se iste vrstice začnejo na isti višini; pomikata se skupaj (gumb z verigo to izklopi).",
+                "Vrstice, ki bi se spremenile, so označene, del vrstice, ki se spremeni, pa je označen temneje; vrstice, ki bi se le premaknile, in nove vrstice imajo vsaka svojo barvo. Vrstice, ki bi bile spremenjene ali odstranjene, so označene tudi v vašem besedilu.",
+                "Pod imeni: kaj bi se zgodilo v številkah — spremenjene, premaknjene, nove in odstranjene vrstice; vrstice in znaki pred in po.",
+                "Pod rezultatom: vrstice, ki bi bile odstranjene. Kliknite eno, da skočite nanjo v besedilu.",
+                "Majhni gumbi rezultata: kopiraj ga, odpri ga kot novo besedilo, primerjaj ga z besedilom v zavihku, pomikaj skupaj, postavi rezultat pod besedilo namesto ob njega, skrij ga. Besedilo ima svoje: razveljavi, ponovi, kopiraj, prilepi čez, izberi vse, počisti.",
+                "Povlecite pregrado med njima, da enemu daste več prostora; dvojni klik ju spet izenači."
+              ]
+            },
+            "Po uporabi podokno Rezultat to pove (»Uporabljeno. Besedilo na levi strani je zdaj rezultat.«) in ponudi Razveljavi ter »Primerjaj s tem, kar je bilo«, kar odpre isto primerjavo pred in po. Rezultat se spet prikaže, takoj ko spremenite besedilo ali izbiro orodja.",
+            {
+              "note": "Pogled → »Rezultat ob besedilu« podokno izklopi in vklopi. Pri zelo dolgem besedilu (več kot dva milijona znakov) se vnaprej nič ne prikaže: uporabite orodje, Razveljavi pa ga povrne."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Zamenjaj povsod",
+          "body": [
+            "Zamenja vsa mesta, kjer je nekaj najdeno, naenkrat. Medtem ko tipkate, kaj iskati, Scribe pove, na koliko mestih je najdeno, in jih označi v besedilu, tako da pred uporabo vidite, kaj se bo spremenilo.",
+            {
+              "points": [
+                "»Regularni izraz«: iskano besedilo je vzorec. V polju »Zamenjaj z« $1, $2… pomenijo to, kar so našle skupine vzorca.",
+                "»Velike črke štejejo«: a in A sta različni črki.",
+                "»Samo cele besede«: »miš« ni najdena znotraj »mišica«.",
+                "»Ohrani velike črke zamenjanega besedila«: zamenjava »mačka« s »pes« spremeni »Mačka« v »Pes« in »MAČKA« v »PES«."
+              ]
+            },
+            {
+              "points": [
+                "»Več možnosti« → »V vsakem ujemanju zapolni …«: kar se vstavi, lahko vsebuje prazna mesta, ki se zapolnijo pri vsakem ujemanju. {counter} šteje 1, 2, 3… ({counter:10} začne pri 10, {counter:10:5} narašča po 5); {date} in {time} sta datum in ura vašega računalnika; {uuid} je identifikator; {random} je 8 naključnih črk in števk ({random:12} za 12).",
+                "Pod iskanim Scribe pove tudi, v koliko vrsticah so ujemanja in koliko različnih besedil so."
+              ]
+            },
+            "»Zamenjaj več elementov hkrati« izvede seznam parov v enem koraku. V vsako vrstico zapišite en par, takole: kaj poiskati => kaj postaviti na njegovo mesto. Izvedejo se od prvega do zadnjega, vsak na tem, kar je pustil prejšnji; prazna druga polovica besedilo odstrani.",
+            {
+              "note": "Vzorec ne more zamrzniti programa: čas, ki ga porabi, raste z dolžino besedila in nič hitreje. Zato vzorci, ki se sklicujejo na že najdeno (\\1), niso na voljo."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Vrstice",
+          "body": [
+            {
+              "points": [
+                "Razvrsti vrstice po: črkah, kot v slovarju, v jeziku programa ali v jeziku, ki ga izberete (v romunščini je ă za a; švedščina postavi ä za z, nemščina k a); črkah s številkami kot številkami (file2 pred file10); številki, s katero se vrstica začne; dolžini; številu besed; datumu, s katerim se vrstica začne (05.03.2024, 2024-03-05, z uro ali brez); internetnih naslovih; številkah različic (1.2.10 po 1.2.9); naslovih, pri katerih se začetni člen ne šteje; vrstnem redu, ki ga zapišete (majhen, srednji, velik); ali brez reda.",
+                "Vrstice, po katerih ni mogoče razvrščati (brez številke, brez datuma, vrednost, ki je ni v zapisanem vrstnem redu), ostanejo na koncu ne glede na to, kako so razvrščene druge: od najmanjše ali od največje.",
+                "Več možnosti razvrščanja: primerjaj od neke besede ali znaka naprej ali po enem stolpcu tabele (in s čim so stolpci ločeni); prvo vrstico ohrani na mestu kot glavo; razvrsti odstavke namesto vrstic; in najprej pospravi — obreži presledke, odstrani prazne vrstice, odstrani podvojene.",
+                "Odstrani podvojene vrstice: od vrstic, ki se ponavljajo, obdrži prvo, zadnjo ali nobene (ostanejo samo tiste, ki se pojavijo enkrat). Velike črke, presledke okoli vrstice, števke, ločila in določeno število znakov na začetku ali koncu je mogoče prezreti; primerja se lahko samo stolpec ali samo to, kar najde vzorec. Prazne vrstice se obravnavajo kot druge, ohranijo, odstranijo ali strnejo v eno.",
+                "Preštej ponovljene vrstice: vsako vrstico pusti enkrat, pred njo pa zapiše, kolikokrat se je pojavila — najbolj ponovljene najprej, najmanj ponovljene ali v vrstnem redu pojavljanja.",
+                "Ohrani ali odstrani vrstice: v vsaki vrstici nekaj išče in obdrži samo vrstice, ki to vsebujejo, ali samo tiste, ki tega ne vsebujejo.",
+                "Obrni vrstni red vrstic; Premešaj vrstice.",
+                "Oštevilči vrstice: prva številka, kaj stoji za njo, ničle spredaj, da so številke poravnane, prazne vrstice brez številke.",
+                "Prazne vrstice: odstrani vse ali pusti eno, kjer jih je več.",
+                "Združi vrstice v eno, s tem, kar izberete med njimi; Razdeli na vrstice pri vsaki vejici, podpičju ali čem drugem. Povsod, kjer se vpiše, kar stoji med deli (številčenje, združevanje, razdeljevanje, štetje), \\t pomeni tabulator, ki ga v polje ni mogoče natipkati."
+              ]
+            },
+            {
+              "note": "Izbira, ki je pomembna samo skupaj z drugo, se prikaže šele takrat: stolpec, ko primerjate po stolpcu. Izbire, ki jih potrebuje manj ljudi, so pod »Več možnosti«."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Velike in male črke",
+          "body": [
+            "Spremeni velike in male črke: kot v povedi, vsaka beseda z veliko črko, vse velike črke, vse male črke, invertirano in načini pisanja imen v kodi: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Velike in male črke sledijo pravilom vsake abecede, ne le angleške.",
+            "V skupini Smer »Obrni besedilo« obrne črke vsake vrstice, vrstni red njenih besed ali črke vsake besede; »Na glavo« ga zapiše tako, da se bere z druge strani mize, »Kot v ogledalu« pa zamenja še znake, ki imajo levo in desno obliko. Črke se štejejo tako, kot jih šteje bralec: črka s svojimi znamenji ostane ena."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Čiščenje",
+          "body": [
+            {
+              "points": [
+                "Počisti presledke: več presledkov postane en; presledki na koncih vrstic izginejo.",
+                "Obreži konce vrstic: na obeh straneh, na začetku ali na koncu.",
+                "Narekovaji: ravni, angleški, romunski, nemški ali francoski.",
+                "Odstrani diakritike: ă postane a, é postane e. Samo v latinici in grški abecedi, kjer je črka brez svojega znamenja še vedno ista črka.",
+                "Popravi romunske črke: ş in ţ (s cediljo, kot ju pišejo starejše tipkovnice) postaneta ș in ț (z vejico), črki, s katerima se piše romunščina.",
+                "Tabulatorji v presledke in presledki v tabulatorje, s širino tabulatorja, ki jo izberete.",
+                "Odstrani HTML oznake: za izvorno kodo spletne strani, prilepljeno v besedilo. Oznake, skripti in slogi izginejo; ostane to, kar bi videl bralec. Če želite stran prinesti z njenega naslova, uporabite orodje pod njim, »Besedilo spletne strani«.",
+                "Besedilo spletne strani: vtipkajte naslov strani (example.com/page) in izberite »Pridobi besedilo«. Kar bi bralec videl na tej strani, se zapiše tam, kjer je kazalec, brez oznak, skriptov ali slogov. To je edino orodje Scribe, ki gre na splet, in to samo, ko to zahtevate: stran pridobi brskalnik, nameščen v tem računalniku (Microsoft Edge ali Google Chrome), zagnan brez okna ter brez vaših piškotkov in prijav; program sam ne pošilja ničesar. Stran, za katero morate biti prijavljeni, da samo to, kar bi videl neznanec."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Vračanje romunskih diakritičnih znakov",
+          "body": [
+            "Romunščina, zapisana brez črk ă, â, î, ș, ț, se ponovno zapiše z njimi.",
+            {
+              "steps": [
+                "Odprite orodje v skupini Čiščenje in izberite »Uporabi na besedilu«.",
+                "Besede, ki imajo eno samo pravilno obliko, se spremenijo takoj: »stiu« postane »știu«, »informatii« postane »informații«.",
+                "Besede, ki jih je mogoče prebrati na več načinov (fata, fată, fața, față), so navedene pod gumbom, vsaka na svojem mestu v besedilu. Za vsako kliknite pravilno obliko.",
+                "Ali pa pred uporabo označite »Pri dvomnih besedah samodejno izberi verjetnejšo obliko«: nič ni vprašano, rezultat pa je treba prebrati."
+              ]
+            },
+            "Kjer okoliške besede zadostujejo, Scribe odloči po njih: »o casa« postane »o casă«, »casa mea« ostane, »pentru ca« postane »pentru că«.",
+            {
+              "note": "To je za Scribe izdelano iz seznama pogostih besed in končnic, ki jih romunščina vedno piše z diakritičnimi znaki. Besede, ki jih ne pozna (redke besede, imena), ostanejo, kot so natipkane, beseda, ki je že zapisana z diakritičnimi znaki, pa ni nikoli spremenjena. Preden rezultat pošljete, ga preberite."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Pisanje besedila: polnilno in naključno",
+          "body": [
+            "Orodja skupine »Pisanje besedila« ničesar ne spreminjajo: pišejo. Kar dajo, gre tja, kjer je kazalec, namesto izbranega.",
+            {
+              "points": [
+                "Polnilno besedilo: odstavki, stavki, besede, seznami, naslovi ali deli strani (naslov, odstavki, seznam). V tiskarski latinščini (lorem ipsum), angleščini, romunščini, z besedami iz pisarne ali kuhinje ali z vašimi lastnimi besedami. Več možnosti: kratki, srednje dolgi ali dolgi stavki; navadno besedilo, Markdown, HTML ali JSON; stopnja naslovov; omejitev v znakih (besedilo se odreže pri celi besedi in se še vedno konča kot stavek); besede, ki jih je treba izpustiti.",
+                "Smišljeni podatki: imena, e-poštni naslovi, telefonske številke, ulični naslovi, datumi ali števila, po eden v vrstici, iz Romunije ali angleško govorečih držav. »Vrstice po mojem vzorcu« zapiše vsako vrstico, kot rečete, pri čemer {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} in {row} pomenijo to, kar se ustvari — tabela za preizkus, v trenutku.",
+                "Naključno besedilo: gesla (črke, števke in znaki, vsaj po eden od vsakega), črke, števke, šestnajstiško ali identifikatorji (UUID), v eni ali več vrsticah. Znake, ki jih je lahko zamenjati (0 in O, 1, l in I), lahko izpustite.",
+                "Seme (pod »Več možnosti«) poskrbi, da sta polnilno besedilo in smišljeni podatki za isto število vsakič enaka; 0 vsakič da nekaj novega."
+              ]
+            },
+            {
+              "note": "Gesla se ustvarijo v tem računalniku iz naključnosti operacijskega sistema in se nikamor ne pošiljajo. Smišljeni e-poštni naslovi se končajo z example.com, kamor pošta ne pride do nikogar; naključno ustvarjena telefonska številka je morda od nekoga, zato je ne kličite."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recepti",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Shranjevanje opravljenega kot recept",
+          "body": [
+            "Recept je seznam orodij z njihovimi možnostmi, shranjen pod imenom in znova zagnan z enim klikom.",
+            {
+              "steps": [
+                "Na besedilu uporabite želena orodja v želenem vrstnem redu.",
+                "Na vrhu plošče odprite »Recepti«: navedena so orodja, ki ste jih uporabili.",
+                "Izberite »Shrani kot recept…« in mu dajte ime.",
+                "Pozneje odprite recept in izberite »Zaženi na besedilu«: izvedejo se vsi njegovi koraki, en Razveljavi pa jih vse povrne."
+              ]
+            },
+            "Recepti so shranjeni v tem računalniku in so na voljo v vsakem besedilu."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Spreminjanje recepta ali ustvarjanje novega iz nič",
+          "body": [
+            "»Spremeni…« pri odprtem receptu prikaže njegovo ime in korake. Vsak korak lahko premaknete navzgor ali navzdol, ga odstranite in mu določite druge možnosti; orodja dodate s seznama pod koraki. Nič ni shranjeno do »Shrani«.",
+            "»Nov recept« ustvari recept brez korakov, ki ga sestavite na enak način, ne da bi orodja najprej uporabili na besedilu.",
+            {
+              "note": "Orodja, ki pišejo besedilo (polnilno, naključno), ne morejo biti koraki recepta: recept spreminja besedilo."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Izvajanje recepta na datotekah",
+          "body": [
+            {
+              "steps": [
+                "Odprite recept in pod »Zaženi na datotekah« dodajte datoteke ali mapo (vključno s podmapami).",
+                "Izberite, kam gredo rezultati: v drugo mapo, kar pusti datoteke, kakršne so, ali čez same datoteke.",
+                "Zaženite. Scribe pove, koliko datotek je bilo zapisanih, koliko jih ni potrebovalo sprememb in katerih ni bilo mogoče obdelati ter zakaj."
+              ]
+            },
+            "Vsaka datoteka se zapiše v kodiranju in s konci vrstic, ki jih je imela. V drugi mapi datoteke ohranijo mape, iz katerih so prišle, datoteka, ki je tam že, pa se nikoli ne prepiše.",
+            {
+              "note": "Zapisovanja čez same datoteke v Scribe ni mogoče razveljaviti. Če so pomembne, shranite kopijo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistika, primerjava in mape",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Statistika",
+          "body": [
+            "»Statistika« na vrhu plošče pove, iz česa je sestavljeno besedilo ali izbor. Vsak del je mogoče strniti.",
+            {
+              "points": [
+                "Na vrhu: besede, znaki s presledki in brez, stavki, odstavki, vrstice, strani in velikost v bajtih.",
+                "Čas: za tiho branje, za branje na glas, za tipkanje in za ročno pisanje.",
+                "Besede: koliko jih je različnih (in kolikšen delež vseh), črke v besedi, zlogi, najdaljša in najkrajša beseda ter koliko besed je vsake dolžine.",
+                "Stavki: besede v stavku, koliko jih je kratkih, srednje dolgih in dolgih, koliko je trditev, vprašanj in vzklikov ter najdaljši in najkrajši.",
+                "Berljivost: ocena od 0 (zelo težko) do 100 (zelo lahko) po formuli, narejeni za jezik besedila. Formule obstajajo za angleščino, nemščino, španščino, francoščino, italijanščino, nizozemščino, portugalščino in ruščino; jezik brez formule ne dobi ocene, saj bi formula za drug jezik zavajala.",
+                "Kaj najpogosteje pove: najpogosteje rabljene besede z deležem v besedilu ter pari in trojice besed, ki se ponavljajo.",
+                "Prostor v običajnih omejitvah: koliko znakov je še na voljo ali koliko jih je preveč za naslov, opis, kratko objavo in drugo."
+              ]
+            },
+            "Besede in stavki se določajo po pravilih vsake pisave, zato se štejejo tudi kitajščina, japonščina in tajščina, ki med besedami nimajo presledkov. Hitrosti, po katerih se izračuna čas, in koliko besed je na strani, nastavite v nastavitvah."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Primerjava dveh besedil",
+          "body": [
+            {
+              "points": [
+                "Orodja → »Primerjaj z drugim besedilom…«: besedilo v urejevalniku ob besedilu, ki ga vtipkate ali prilepite.",
+                "Orodja → »Primerjaj z datoteko…«: besedilo v urejevalniku, kakršno je zdaj, ob datoteki, ki jo izberete.",
+                "Orodja → »Primerjaj dve besedili…«: dve vtipkani ali prilepljeni besedili drugo ob drugem.",
+                "Orodja → »Primerjaj dve datoteki…«."
+              ]
+            },
+            "Besedili sta prikazani drugo ob drugem. Vrstice, ki so samo v prvem, so označene kot odstranjene, vrstice samo v drugem kot dodane, v spremenjeni vrstici pa so označene besede, ki se razlikujejo. Prikazano je samo to, kar se razlikuje, z nekaj vrsticami okoli; puščice vodijo od ene razlike do naslednje.",
+            "Velike in male črke, presledke, prazne vrstice, številke in ločila lahko posamično prezrete. »V enem stolpcu« prikaže odstranjeno nad dodanim, vsako s svojim znakom, namesto drugo ob drugem. Ob številih Scribe pove, kako podobni sta besedili, kot delež enakih vrstic.",
+            "Besedilo se prikaže, takoj ko je izbrano, še preden je izbrano drugo. Povlecite pregrado med besediloma, da enemu daste več prostora; medtem ko besedili tipkate, pregrado pod poljema vlečete gor in dol, da daste več prostora poljema ali primerjavi. Dvojni klik pregrado vrne na mesto.",
+            "Kjer je bilo spremenjenih več zaporednih vrstic, je vsaka postavljena ob vrstico, ki ji je najbolj podobna, tako da dodana ali odstranjena vrstica med njimi ne povzroči, da bi bila videti vsaka naslednja vrstica spremenjena v naslednjo.",
+            "»Vtipkajte ali prilepite besedila« prikaže polje nad vsakim stolpcem; kar tja napišete, se primerja med pisanjem, za katero koli stran pa lahko še vedno izberete datoteko."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Iskanje in zamenjava v mapi",
+          "body": [
+            {
+              "steps": [
+                "Orodja → »Išči v mapi…« (Ctrl+Shift+F) in izberite mapo. Preiščejo se tudi mape v njej.",
+                "Vtipkajte, kaj iskati, z enakimi možnostmi kot pri »Zamenjaj povsod«. »Vrste datotek« omeji iskanje na nekatere končnice (txt, md, csv…).",
+                "Vsako ujemanje je prikazano v svoji vrstici, datoteko za datoteko. Kliknite vrstico, da odprete datoteko na tem mestu.",
+                "Za zamenjavo: vtipkajte novo besedilo, odznačite datoteke, ki jih želite pustiti pri miru, in izberite »Zapiši datoteke«."
+              ]
+            },
+            "Nič se ne zapiše, dokler tega ne zahtevate, in samo v datoteke, ki ostanejo označene. Vsaka datoteka se zapiše v kodiranju in s konci vrstic, ki jih je imela.",
+            {
+              "note": "Skrite mape in mape, ki jih polnijo programi (.git, node_modules), so izpuščene, razen če jih zahtevate. Datoteke, ki niso besedilo, so vedno izpuščene."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nastavitve",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Nastavitve programa Scribe",
+          "body": [
+            "Datoteka → Nastavitve odpre nastavitve programa pri delu za Scribe.",
+            {
+              "points": [
+                "Urejevalnik: pisava enake širine ali pisava programa, velikost črk, prelom vrstic, številke vrstic in ali je rezultat orodja prikazan, preden ga uporabite.",
+                "Novo besedilo: kako se končajo njegove vrstice in ali se njegova datoteka začne z oznako vrstnega reda bajtov (BOM).",
+                "Statistika: hitrost branja, govora, tipkanja in ročnega pisanja ter število besed na strani.",
+                "Tipke za ukaze programa Scribe."
+              ]
+            },
+            "Vsaka nastavitev ima gumb, ki jo vrne na vrednost, s katero je program izdan."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O programu Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O programu Scribe",
+          "body": [
+            "Scribe je program za besedila v paketu Syntelab Creative: urejevalnik z orodji ob besedilu. Pokaže, kaj bi orodje naredilo, preden to naredi, čisti in preureja sezname, išče in zamenjuje v besedilu ali v celi mapi, primerja dve besedili, pove, iz česa je besedilo sestavljeno, piše polnilno besedilo in smišljene podatke ter shrani, kar pogosto počnete, kot recepte za ponovni zagon.",
+            "Vse se izvede v tem računalniku. Velikost in število besedil nista omejena: meji sta pomnilnik računalnika in to, kar zmore današnja tehnologija.",
+            "Program je nov. Kjer za vaša besedila ne zadošča, nam to sporočite prek Pomoč → Povratne informacije: tako vemo, na čem delati."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Tehnologije, na katerih temelji Scribe",
+          "body": [
+            {
+              "points": [
+                "Urejevalnik: CodeMirror.",
+                "Branje in zapisovanje kodiranj: encoding_rs, s chardetng za ugibanje kodiranja datoteke, ki ga ne navaja.",
+                "Iskanje in zamenjava: knjižnica regex jezika Rust, katere vzorci ne morejo zamrzniti programa.",
+                "Razvrščanje po pravilih vsakega jezika ter iskanje besed in stavkov v vsaki pisavi: ICU4X, knjižnica Unicode.",
+                "Primerjava besedil: knjižnica similar.",
+                "Romunski diakritični znaki: seznam besed in pravil, napisanih za Scribe."
+              ]
+            },
+            "Kar si deli s preostalim programom, je navedeno pod »O Syntelab Creative«."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Česa Scribe še ne zna",
+          "body": [
+            {
+              "points": [
+                "Zelo velika datoteka se bere po straneh in spreminja samo prek receptov; ročno spreminjanje pomeni, da jo odprete v celoti, kar porabi pomnilnik.",
+                "Vračanje romunskih diakritičnih znakov pozna pogoste besede; redke besede in imena ostanejo, kot so natipkani.",
+                "Preverjanja pravopisa ni.",
+                "Besedilo se tu ne izvleče iz PDF-jev ali pisarniških dokumentov; te odpre PDF Organizer.",
+                "Urejevalnik ne obarva kode ali Markdowna.",
+                "Datoteka, povlečena v okno, se odpre kot novo besedilo: program ne izve, kje je datoteka, zato pri shranjevanju vpraša, kam."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

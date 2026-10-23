@@ -1,0 +1,430 @@
+{
+  "title": "Scribe",
+  "chapters": [
+    {
+      "title": "Văn bản và tệp",
+      "topics": [
+        {
+          "id": "editor",
+          "title": "Trình soạn thảo",
+          "body": [
+            "Scribe là trình chỉnh sửa văn bản thuần với các công cụ ở bên cạnh. Mỗi văn bản có một thẻ; văn bản ở giữa, bảng công cụ ở cạnh và dòng trạng thái ở phía dưới.",
+            "Khi mở Scribe, chương trình hỏi bạn muốn làm gì: đếm từ, tìm và thay thế, xóa nội dung trùng, so sánh hai văn bản, sắp xếp dòng, đảo văn bản, tạo văn bản mẫu hoặc văn bản ngẫu nhiên. Chọn một mục để mở văn bản cùng công cụ tương ứng; “Văn bản trống” chỉ mở trình soạn thảo, còn các văn bản mới mở gần đây được liệt kê bên dưới.",
+            {
+              "points": [
+                "Tệp → Văn bản mới (Ctrl+N) tạo văn bản trống.",
+                "Tệp → Mở (Ctrl+O) mở một hoặc nhiều tệp, mỗi tệp trong thẻ riêng. Có thể mở mọi tệp chứa văn bản: .txt, .md, .csv, .log, .srt, mã nguồn và các loại khác.",
+                "Chỉnh sửa → Hoàn tác (Ctrl+Z) và Làm lại (Ctrl+Y) duyệt lại mọi thay đổi trong văn bản; thao tác của công cụ hoặc quy trình mẫu được tính là một bước.",
+                "Chỉnh sửa → Tìm và thay thế (Ctrl+F) mở thanh tìm kiếm trong trình soạn thảo để chuyển từ kết quả này sang kết quả khác.",
+                "Chỉnh sửa → Chọn tất cả (Ctrl+A)."
+              ]
+            },
+            "Dòng bên dưới văn bản hiển thị vị trí con trỏ, độ dài phần chọn, số dòng, từ và ký tự, bảng mã tệp và kiểu kết thúc dòng.",
+            "Tệp thả vào cửa sổ cũng được mở thành văn bản mới với tên tệp, bảng mã và kiểu kết thúc dòng. Chương trình nhận nội dung tệp nhưng không nhận đường dẫn trên đĩa, vì vậy khi lưu sẽ hỏi vị trí; tệp lớn hơn 64 MB cần mở bằng Tệp → Mở.",
+            "Văn bản mới khi còn trống sẽ liệt kê những văn bản mở gần đây; nhấp vào một mục để mở. “Xóa danh sách” sẽ xóa nội dung đó. Danh sách chỉ được lưu trên máy tính này."
+          ]
+        },
+        {
+          "id": "save",
+          "title": "Lưu và Lưu thành",
+          "body": [
+            "Tệp trên đĩa không thay đổi cho đến khi bạn lưu. Dấu chấm trên thẻ cho biết văn bản có thay đổi chưa được ghi vào tệp; khi đóng thẻ như vậy, chương trình sẽ hỏi trước.",
+            {
+              "points": [
+                "Lưu (Ctrl+S) ghi văn bản đè lên tệp hiện tại. Với văn bản mới, chương trình sẽ hỏi nơi lưu.",
+                "Lưu thành (Ctrl+Shift+S) ghi văn bản vào tệp mới rồi thay tệp trong thẻ hiện tại; mọi thao tác vẫn có thể hoàn tác, còn tệp cũ được giữ nguyên."
+              ]
+            },
+            "Tệp được ghi toàn bộ hoặc không ghi gì: nếu lưu thất bại, tệp cũ vẫn còn nguyên.",
+            {
+              "note": "Tệp được lưu theo cách đã mở: giữ nguyên bảng mã và kiểu kết thúc dòng. Văn bản nhập trên Windows và Linux đều giữ nguyên định dạng ban đầu."
+            }
+          ]
+        },
+        {
+          "id": "encoding",
+          "title": "Bảng mã và kiểu kết thúc dòng",
+          "body": [
+            "Bảng mã là cách lưu chữ thành byte. Scribe đọc thông tin do tệp cung cấp và tự nhận diện nếu tệp không ghi rõ. Hầu hết tệp hiện nay dùng UTF-8; tệp cũ ở Trung Âu thường dùng windows-1250.",
+            {
+              "points": [
+                "Nếu chữ hiển thị sai (chẳng hạn Ã£ thay cho ă hoặc thành ô vuông): chọn Tệp → “Đọc lại bằng mã hóa khác” rồi chọn bảng mã dùng khi tạo tệp.",
+                "Để lưu bằng bảng mã khác, chọn bảng mã trên dòng trạng thái bên dưới văn bản rồi lưu. Nếu bảng mã đó không thể ghi một số ký tự, Scribe sẽ cho biết ký tự nào và không lưu tệp.",
+                "Có thể đổi kiểu kết thúc dòng (Windows CRLF, Linux/macOS LF, Mac cũ CR) tại cùng vị trí. Tệp có kiểu kết thúc dòng lẫn lộn sẽ được nhận diện; khi lưu, mọi dòng sẽ dùng cùng một kiểu."
+              ]
+            },
+            "Bảng mã ban đầu của văn bản mới được chọn trong Cài đặt."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Cách hiển thị văn bản",
+          "body": [
+            {
+              "points": [
+                "Mọi mục trong menu Xem đều là công tắc: bật để hiện, tắt để ẩn.",
+                "Văn bản: Ngắt dòng dài (Alt+Z) để dòng dài hơn cửa sổ hiển thị tiếp ở dòng dưới mà không làm thay đổi văn bản; Số dòng; Kết quả cạnh văn bản.",
+                "Bảng cạnh văn bản: Công cụ (Ctrl+T), Quy trình mẫu, Thống kê. Bảng chỉ hiện các mục đã bật; nếu không bật mục nào thì bảng sẽ ẩn.",
+                "Công cụ hiển thị: có thể ẩn từng nhóm (tìm và thay thế, dòng, chữ hoa và chữ thường, dọn dẹp, tạo văn bản). Công cụ chọn từ menu Định dạng hoặc Công cụ vẫn sẽ hiện; nhóm tương ứng tự bật lại.",
+                "Mũi tên kép ở đầu bảng thu gọn bảng thành dải ở mép cửa sổ; nhấp vào tên để mở từng mục. Kéo mép bảng để thay đổi chiều rộng.",
+                "Chọn phông chữ và cỡ chữ trong Cài đặt."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Tệp rất lớn",
+          "body": [
+            "Tệp lớn hơn 64 MB không được nạp vào trình soạn thảo: tệp mở trong thẻ dạng trang, mỗi lần hiển thị 500 dòng đọc trực tiếp từ tệp. Có thể mở tệp nhiều gigabyte trong thời gian cần để đọc qua một lượt.",
+            {
+              "points": [
+                "“Trang trước” và “Trang tiếp theo” để chuyển trang; nhập số dòng rồi nhấn “Đi đến” để đến vị trí bất kỳ.",
+                "Tìm kiếm sẽ quét toàn bộ tệp theo các tùy chọn như những nơi khác và liệt kê vị trí tìm thấy; nhấp vào kết quả để đến dòng tương ứng. Danh sách dài được tải từng phần bằng nút “Tìm tiếp”.",
+                "“Chạy quy trình mẫu trên toàn bộ tệp” lưu kết quả vào thư mục bạn chọn với cùng tên. Tệp gốc không bị thay đổi.",
+                "“Mở toàn bộ trong trình soạn thảo” vẫn mở tệp trong trình soạn thảo để chỉnh sửa thủ công. Có thể chậm và cần bộ nhớ nhiều lần lớn hơn kích thước tệp."
+              ]
+            },
+            {
+              "note": "Không thể hiển thị từng trang đối với tệp UTF-16 (hai byte cho mỗi ký tự). Khi chạy, quy trình mẫu nạp toàn bộ tệp vào bộ nhớ; giới hạn phụ thuộc bộ nhớ máy tính."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Công cụ",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Cách công cụ hoạt động",
+          "body": [
+            "Các công cụ nằm trong bảng cạnh văn bản, được chia thành nhóm. Nhấp vào công cụ để xem tùy chọn rồi chọn Áp dụng.",
+            {
+              "points": [
+                "Nếu đã chọn một phần văn bản, công cụ chỉ thay đổi phần đó; nếu chưa chọn, công cụ áp dụng cho toàn bộ văn bản. Bảng ở phía trên cho biết phạm vi áp dụng.",
+                "Bên dưới nút, công cụ cho biết những gì đã làm: số dòng hoặc vị trí được thay đổi.",
+                "Mỗi công cụ tương ứng một bước; Hoàn tác sẽ khôi phục toàn bộ bước đó.",
+                "Mọi công cụ cũng có trong menu và tìm kiếm lệnh: công cụ thay đổi cấu trúc văn bản (dòng, chữ hoa/thường, dọn dẹp) nằm trong menu Định dạng; các công cụ khác nằm trong menu Công cụ. Chọn lệnh sẽ mở bảng tại tùy chọn tương ứng."
+              ]
+            },
+            "Trong menu Định dạng, công cụ chỉ có một lựa chọn chính được hiển thị thành các lệnh riêng: mỗi kiểu đổi chữ hoa/thường, dấu ngoặc kép hoặc đảo văn bản có lệnh riêng mở công cụ với tùy chọn đó được chọn sẵn. Nếu cửa sổ quá hẹp để hiển thị một nhóm, nhóm đó được gộp vào một nút mở toàn bộ danh sách.",
+            "Công cụ chạy trên máy tính này; văn bản không bị gửi đi đâu."
+          ]
+        },
+        {
+          "id": "preview",
+          "title": "Kết quả trước khi áp dụng",
+          "body": [
+            "Khi mở công cụ, kết quả dự kiến sẽ hiện cạnh văn bản trong khung “Kết quả”. Văn bản chỉ thay đổi khi bạn chọn Áp dụng. Kết quả được cập nhật theo bạn: thay đổi tùy chọn hoặc văn bản sẽ tạo lại kết quả.",
+            {
+              "points": [
+                "Văn bản và kết quả nằm cạnh nhau, dưới hai tiêu đề có cùng chiều cao để các dòng tương ứng bắt đầu ngang nhau; hai khung cuộn cùng lúc (nút dây xích tắt tính năng này).",
+                "Các dòng sẽ thay đổi được đánh dấu, phần khác biệt trong dòng được tô đậm hơn; dòng chỉ di chuyển và dòng mới có màu riêng. Những dòng sẽ thay đổi hoặc bị xóa cũng được đánh dấu trong văn bản gốc.",
+                "Bên dưới tên khung là số liệu về thao tác dự kiến: số dòng được đổi, di chuyển, thêm hoặc xóa; số dòng và ký tự trước và sau.",
+                "Bên dưới kết quả có các dòng sẽ bị xóa. Nhấp vào một dòng để đến vị trí đó trong văn bản.",
+                "Các nút nhỏ của khung Kết quả: sao chép, mở thành văn bản mới, so sánh với văn bản trong thẻ, cuộn đồng bộ, đặt kết quả bên dưới thay vì bên cạnh hoặc ẩn khung. Văn bản có các nút riêng: hoàn tác, làm lại, sao chép, dán đè, chọn tất cả và xóa.",
+                "Kéo thanh giữa hai khung để nới rộng một khung; nhấp đúp để chia đều lại."
+              ]
+            },
+            "Sau khi Áp dụng, khung Kết quả xác nhận (“Đã áp dụng. Văn bản bên trái hiện là kết quả.”) và cho phép Hoàn tác hoặc “So sánh với bản trước”, mở màn hình so sánh trước và sau. Khi bạn đổi văn bản hoặc tùy chọn công cụ, kết quả xem trước sẽ xuất hiện lại.",
+            {
+              "note": "Xem → “Kết quả bên cạnh văn bản” bật hoặc tắt khung. Với văn bản rất dài (trên hai triệu ký tự), không hiển thị kết quả trước; hãy áp dụng công cụ rồi dùng Hoàn tác nếu cần khôi phục."
+            }
+          ]
+        },
+        {
+          "id": "replace",
+          "title": "Thay thế ở mọi nơi",
+          "body": [
+            "Thay thế mọi vị trí tìm thấy cùng lúc. Khi bạn nhập nội dung cần tìm, Scribe cho biết số vị trí tìm thấy và đánh dấu chúng trong văn bản để bạn xem trước các thay đổi.",
+            {
+              "points": [
+                "“Biểu thức chính quy”: nội dung cần tìm là một mẫu. Trong mục “Thay bằng”, $1, $2… đại diện cho các nhóm được khớp trong mẫu.",
+                "“Phân biệt chữ hoa/thường”: a và A được xem là hai ký tự khác nhau.",
+                "“Chỉ khớp từ hoàn chỉnh”: “mèo” sẽ không khớp bên trong “mèomun”.",
+                "“Giữ kiểu chữ hoa của nội dung được thay thế”: thay “mèo” bằng “chó” sẽ đổi “Mèo” thành “Chó” và “MÈO” thành “CHÓ”."
+              ]
+            },
+            {
+              "points": [
+                "“Thêm lựa chọn” → “Điền vào…”: nội dung thay thế có thể chứa trường được điền riêng cho mỗi kết quả. {counter} đếm 1, 2, 3… ({counter:10} bắt đầu từ 10, {counter:10:5} tăng mỗi lần 5); {date} và {time} là ngày giờ trên máy tính; {uuid} là mã định danh; {random} tạo 8 chữ và số ngẫu nhiên ({random:12} tạo 12 ký tự).",
+                "Bên dưới ô tìm kiếm, Scribe cũng cho biết kết quả xuất hiện trên bao nhiêu dòng và trong bao nhiêu văn bản khác nhau."
+              ]
+            },
+            "“Thay thế nhiều cặp” thực hiện danh sách cặp trong một bước. Nhập mỗi cặp trên một dòng theo dạng: nội dung cần tìm => nội dung thay thế. Các cặp được xử lý theo thứ tự, mỗi cặp áp dụng trên kết quả của cặp trước; nếu phần thay thế để trống thì nội dung khớp sẽ bị xóa.",
+            {
+              "note": "Mẫu tìm kiếm không thể làm chương trình treo: thời gian xử lý tăng tuyến tính theo độ dài văn bản. Vì lý do đó, không hỗ trợ mẫu nhìn lại nội dung đã khớp (\\1)."
+            }
+          ]
+        },
+        {
+          "id": "lines",
+          "title": "Dòng",
+          "body": [
+            {
+              "points": [
+                "Sắp xếp theo chữ cái trong từ điển theo ngôn ngữ của chương trình hoặc ngôn ngữ bạn chọn; theo số (file2 trước file10), số đầu dòng, độ dài, số từ, ngày, địa chỉ Internet, phiên bản, tiêu đề bỏ qua mạo từ đầu, thứ tự tùy chỉnh hoặc không sắp xếp.",
+                "Dòng không có giá trị sắp xếp hợp lệ sẽ nằm cuối danh sách, dù sắp xếp tăng hay giảm.",
+                "Có thể bắt đầu so sánh từ từ/ký tự bất kỳ hoặc dùng một cột bảng; giữ dòng đầu làm tiêu đề; sắp xếp đoạn; dọn trước bằng cách xóa khoảng trắng đầu/cuối, dòng trống hoặc bản sao.",
+                "Xóa dòng trùng: giữ bản đầu, bản cuối hoặc bỏ tất cả dòng lặp. Có thể bỏ qua kiểu chữ, khoảng trắng, số, dấu câu, ký tự đầu/cuối; chỉ so sánh một cột hoặc phần khớp mẫu. Xử lý dòng trống như các dòng khác.",
+                "Đếm dòng lặp: giữ mỗi dòng một lần và ghi số lần xuất hiện phía trước; sắp theo số lần nhiều nhất, ít nhất hoặc theo thứ tự ban đầu.",
+                "Giữ hoặc xóa dòng bằng cách tìm nội dung trên từng dòng.",
+                "Đảo thứ tự dòng; xáo trộn dòng.",
+                "Đánh số dòng: chọn số bắt đầu, phần theo sau, thêm số 0 ở đầu để thẳng hàng hoặc bỏ đánh số dòng trống.",
+                "Xóa tất cả dòng trống hoặc chỉ gộp các dòng trống liền nhau.",
+                "Nối dòng thành một với dấu phân cách tùy chọn; tách dòng tại dấu phẩy, chấm phẩy hoặc ký tự khác. Trong các trường đánh số, nối, tách và đếm, \\t đại diện cho tab."
+              ]
+            },
+            {
+              "note": "Tùy chọn chỉ dùng khi kết hợp với lựa chọn khác chỉ hiện khi cần, chẳng hạn chọn cột khi sắp xếp theo cột. Các lựa chọn ít dùng nằm trong “Thêm lựa chọn”."
+            }
+          ]
+        },
+        {
+          "id": "case",
+          "title": "Chữ hoa",
+          "body": [
+            "Đổi kiểu chữ: viết hoa đầu câu, viết hoa chữ cái đầu mỗi từ, viết hoa toàn bộ, viết thường toàn bộ, đảo kiểu chữ và các kiểu đặt tên trong mã: camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case.",
+            "Quy tắc viết hoa tuân theo từng bảng chữ cái, không chỉ tiếng Anh.",
+            "Trong nhóm Hướng, “Đảo ngược văn bản” có thể đảo thứ tự chữ cái trong mỗi dòng, thứ tự từ hoặc chữ cái trong từng từ; “Lộn ngược” tạo chữ để đọc khi xoay ngược trang; “Phản chiếu” còn đảo các ký tự có hướng trái/phải. Ký tự được đếm theo cách người đọc cảm nhận: chữ cái có dấu vẫn tính là một ký tự."
+          ]
+        },
+        {
+          "id": "clean",
+          "title": "Dọn dẹp",
+          "body": [
+            {
+              "points": [
+                "Gộp nhiều dấu cách thành một; xóa khoảng trắng ở đầu và cuối dòng.",
+                "Xóa khoảng trắng ở hai đầu dòng, chỉ ở đầu hoặc chỉ ở cuối.",
+                "Dấu ngoặc kép: thẳng, kiểu Anh, Romania, Đức hoặc Pháp.",
+                "Bỏ dấu phụ: ă thành a, é thành e. Chỉ áp dụng cho bảng chữ cái Latin và Hy Lạp khi chữ không dấu vẫn là cùng chữ.",
+                "Sửa chữ Romania: ş và ţ (dấu móc dưới, thường do bàn phím cũ tạo ra) thành ș và ț (dấu phẩy dưới), là dạng chữ chuẩn tiếng Romania.",
+                "Chuyển tab thành dấu cách hoặc ngược lại theo độ rộng bạn chọn.",
+                "Xóa thẻ HTML: dùng cho mã nguồn trang web dán vào văn bản. Thẻ, script và kiểu dáng bị xóa; nội dung người đọc thấy được giữ lại. Để tải trang theo địa chỉ, dùng công cụ “Văn bản từ trang web”.",
+                "Văn bản từ trang web: nhập địa chỉ trang (ví dụ example.com/page), rồi chọn “Lấy văn bản”. Nội dung hiển thị cho người đọc được chèn tại con trỏ, không có thẻ, script hoặc kiểu dáng. Đây là công cụ duy nhất của Scribe kết nối mạng và chỉ khi bạn yêu cầu: trang được tải bằng trình duyệt có trên máy (Microsoft Edge hoặc Google Chrome), chạy ẩn và không dùng cookie hay thông tin đăng nhập; chương trình không tự gửi yêu cầu. Trang yêu cầu đăng nhập chỉ trả về nội dung mà người lạ có thể xem."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diacritics",
+          "title": "Khôi phục dấu tiếng Romania",
+          "body": [
+            "Văn bản tiếng Romania gõ không dấu ă, â, î, ș, ț sẽ được bổ sung dấu.",
+            {
+              "steps": [
+                "Mở công cụ trong nhóm Dọn dẹp và chọn Áp dụng.",
+                "Từ chỉ có một cách viết đúng sẽ được sửa ngay: “stiu” thành “știu”, “informatii” thành “informații”.",
+                "Từ có nhiều cách hiểu (fata, fată, fața, față) được liệt kê bên dưới nút, tại từng vị trí trong văn bản. Nhấp chọn cách viết đúng cho từng từ.",
+                "Hoặc bật “Tự chọn dạng có khả năng đúng nhất” trước khi áp dụng: chương trình không hỏi thêm, nhưng bạn cần đọc lại kết quả."
+              ]
+            },
+            "Khi các từ xung quanh đủ để xác định nghĩa, Scribe sẽ dựa vào ngữ cảnh: “o casa” thành “o casă”, còn “casa mea” được giữ nguyên; “pentru ca” thành “pentru că”.",
+            {
+              "note": "Tính năng này được xây dựng riêng cho Scribe dựa trên danh sách từ thông dụng và các hậu tố tiếng Romania luôn có dấu. Từ không có trong danh sách (từ hiếm, tên riêng) được giữ nguyên như đã nhập; từ đã có dấu không bị thay đổi. Hãy đọc lại kết quả trước khi gửi."
+            }
+          ]
+        },
+        {
+          "id": "make",
+          "title": "Tạo văn bản mẫu và ngẫu nhiên",
+          "body": [
+            "Các công cụ trong nhóm “Tạo văn bản” không sửa đổi nội dung hiện có mà tạo văn bản mới. Kết quả được chèn tại vị trí con trỏ, thay thế phần văn bản đang chọn.",
+            {
+              "points": [
+                "Văn bản mẫu: tạo đoạn văn, câu, từ, danh sách, tiêu đề hoặc cấu trúc một phần trang (tiêu đề, đoạn văn, danh sách). Có thể dùng Lorem ipsum, tiếng Anh, tiếng Romania, từ vựng văn phòng hoặc nhà bếp, hoặc nội dung tự nhập. Tùy chọn thêm: câu ngắn/vừa/dài; văn bản thuần, Markdown, HTML hoặc JSON; cấp tiêu đề; giới hạn số ký tự (văn bản cắt ở ranh giới từ và kết thúc bằng câu hoàn chỉnh); bỏ qua một số từ.",
+                "Dữ liệu giả: tên, email, số điện thoại, địa chỉ đường phố, ngày hoặc số; mỗi dòng một mục, theo Romania hoặc các nước nói tiếng Anh. “Các dòng theo mẫu của tôi” tạo từng dòng theo mẫu bạn viết; các trường {name}, {first}, {last}, {email}, {phone}, {address}, {street}, {city}, {date}, {number:1-100}, {word}, {letter}, {digit}, {uuid} và {row} được thay bằng dữ liệu tạo ra — tiện để lập tức thử với một bảng.",
+                "Văn bản ngẫu nhiên: mật khẩu (có chữ, số và ký hiệu, ít nhất một ký tự mỗi loại), chữ cái, chữ số, số thập lục phân hoặc mã định danh (UUID), trên một dòng hoặc nhiều dòng. Có thể loại bỏ ký tự dễ nhầm (0 và O, 1, l và I).",
+                "Hạt giống (trong “Thêm lựa chọn”) khiến văn bản mẫu và dữ liệu giả tạo ra cùng kết quả với cùng số; giá trị 0 tạo nội dung mới mỗi lần."
+              ]
+            },
+            {
+              "note": "Mật khẩu được tạo trên máy tính bằng bộ sinh ngẫu nhiên của hệ điều hành và không được gửi đi đâu. Email giả dùng miền example.com, không nhận được thư; số điện thoại tạo ngẫu nhiên có thể thuộc về người thật, vì vậy đừng gọi đến số đó."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quy trình mẫu",
+      "topics": [
+        {
+          "id": "recipes",
+          "title": "Lưu thao tác thành quy trình mẫu",
+          "body": [
+            "Quy trình mẫu là danh sách các công cụ cùng tùy chọn, được lưu theo tên để chạy lại chỉ bằng một lần nhấp.",
+            {
+              "steps": [
+                "Áp dụng các công cụ bạn muốn lên văn bản theo thứ tự cần thiết.",
+                "Mở mục “Quy trình mẫu” ở đầu bảng: danh sách hiển thị những công cụ bạn đã áp dụng.",
+                "Chọn “Lưu thành quy trình mẫu” rồi đặt tên.",
+                "Lần sau, mở quy trình mẫu và chọn “Chạy trên văn bản”: mọi bước được thực hiện; một lần Hoàn tác sẽ khôi phục toàn bộ."
+              ]
+            },
+            "Quy trình mẫu được lưu trên máy tính này và có thể dùng trong mọi văn bản."
+          ]
+        },
+        {
+          "id": "recipes-change",
+          "title": "Sửa hoặc tạo quy trình mẫu mới",
+          "body": [
+            "Chọn “Sửa” trên quy trình mẫu đang mở để xem tên và các bước. Có thể di chuyển bước lên/xuống, xóa bước hoặc thay đổi tùy chọn; thêm công cụ từ danh sách bên dưới. Thay đổi chỉ được lưu khi chọn “Lưu”.",
+            "“Quy trình mới” tạo quy trình mẫu trống để bạn thiết lập theo cách tương tự, không cần áp dụng công cụ lên văn bản trước.",
+            {
+              "note": "Các công cụ tạo văn bản (văn bản mẫu, văn bản ngẫu nhiên) không thể thêm vào quy trình mẫu vì quy trình mẫu dùng để thay đổi văn bản hiện có."
+            }
+          ]
+        },
+        {
+          "id": "recipes-files",
+          "title": "Chạy quy trình mẫu trên tệp",
+          "body": [
+            {
+              "steps": [
+                "Mở quy trình mẫu rồi trong mục “Chạy trên tệp”, thêm tệp hoặc thư mục (bao gồm thư mục con).",
+                "Chọn nơi lưu kết quả: trong thư mục khác để giữ nguyên tệp gốc hoặc ghi đè lên chính các tệp đó.",
+                "Nhấn Chạy. Scribe cho biết số tệp đã ghi, số tệp không cần thay đổi và tệp nào không xử lý được cùng lý do."
+              ]
+            },
+            "Mỗi tệp được ghi theo bảng mã và kiểu kết thúc dòng ban đầu. Khi lưu trong thư mục khác, cấu trúc thư mục được giữ nguyên; tệp đã tồn tại không bị ghi đè.",
+            {
+              "note": "Không thể hoàn tác trong Scribe nếu ghi đè lên chính các tệp. Hãy sao lưu nếu các tệp quan trọng."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Thống kê, so sánh và thư mục",
+      "topics": [
+        {
+          "id": "stats",
+          "title": "Thống kê",
+          "body": [
+            "Mục “Thống kê” ở đầu bảng cho biết thành phần của văn bản hoặc phần văn bản đang chọn. Có thể thu gọn từng phần.",
+            {
+              "points": [
+                "Tổng quan: số từ, ký tự có và không có khoảng trắng, câu, đoạn, dòng, trang và kích thước byte.",
+                "Thời gian: ước tính đọc thầm, đọc thành tiếng, gõ bàn phím và viết tay.",
+                "Từ: số từ khác nhau và tỷ lệ trong tổng số, số chữ cái mỗi từ, âm tiết, từ dài nhất/ngắn nhất và số từ theo từng độ dài.",
+                "Câu: số từ mỗi câu; số câu ngắn, vừa, dài; số câu trần thuật, nghi vấn và cảm thán; câu dài nhất/ngắn nhất.",
+                "Mức độ dễ đọc: điểm từ 0 (rất khó) đến 100 (rất dễ), theo công thức dành cho ngôn ngữ của văn bản. Có công thức cho tiếng Anh, Đức, Tây Ban Nha, Pháp, Ý, Hà Lan, Bồ Đào Nha và Nga; ngôn ngữ khác không có điểm vì dùng công thức của ngôn ngữ khác sẽ gây hiểu lầm.",
+                "Nội dung nổi bật: các từ xuất hiện nhiều nhất và tỷ lệ trong văn bản; các cặp và nhóm ba từ lặp lại.",
+                "Giới hạn thường dùng: số ký tự còn thiếu hoặc vượt quá cho tiêu đề, mô tả, bài đăng ngắn, v.v."
+              ]
+            },
+            "Từ và câu được nhận diện theo quy tắc của từng hệ chữ, nên vẫn đếm được tiếng Trung, Nhật và Thái dù không dùng khoảng trắng để phân tách từ. Tốc độ dùng để tính thời gian và số từ trên mỗi trang được đặt trong Cài đặt."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "So sánh hai văn bản",
+          "body": [
+            {
+              "points": [
+                "Công cụ → “So sánh với văn bản khác”: so sánh văn bản trong trình soạn thảo với văn bản bạn nhập hoặc dán.",
+                "Công cụ → “So sánh với tệp”: so sánh văn bản hiện tại với tệp bạn chọn.",
+                "Công cụ → “So sánh hai văn bản”: nhập hoặc dán hai văn bản để so sánh cạnh nhau.",
+                "Công cụ → “So sánh hai tệp”."
+              ]
+            },
+            "Hai văn bản được hiển thị cạnh nhau. Dòng chỉ có trong văn bản thứ nhất được đánh dấu là đã xóa; dòng chỉ có trong văn bản thứ hai được đánh dấu là mới thêm; từ khác nhau trong dòng đã sửa cũng được đánh dấu. Chỉ hiển thị phần khác biệt cùng vài dòng lân cận; dùng mũi tên để chuyển giữa các điểm khác biệt.",
+            "Có thể bỏ qua chữ hoa/thường, khoảng trắng, dòng trống, số và dấu câu. “Trong một cột” hiển thị phần bị xóa ở trên phần được thêm, mỗi phần có ký hiệu riêng, thay vì đặt cạnh nhau. Bên cạnh số lượng, Scribe cho biết mức độ giống nhau theo tỷ lệ dòng trùng khớp.",
+            "Văn bản được hiển thị ngay khi chọn, trước khi chọn văn bản còn lại. Kéo thanh giữa hai văn bản để nới rộng một bên; khi nhập văn bản, kéo thanh dưới các ô lên/xuống để tăng diện tích ô nhập hoặc vùng so sánh. Nhấp đúp để khôi phục vị trí thanh.",
+            "Khi nhiều dòng liên tiếp bị thay đổi, mỗi dòng được ghép với dòng giống nhất để một dòng mới thêm hoặc bị xóa không khiến mọi dòng sau đó bị đánh dấu sai thành dòng đã thay đổi.",
+            "“Nhập hoặc dán văn bản” mở một ô trên mỗi cột; nội dung được so sánh khi bạn nhập và vẫn có thể chọn tệp cho mỗi bên."
+          ]
+        },
+        {
+          "id": "folder",
+          "title": "Tìm và thay thế trong thư mục",
+          "body": [
+            {
+              "steps": [
+                "Công cụ → “Tìm trong thư mục” (Ctrl+Shift+F), rồi chọn thư mục. Các thư mục con cũng được tìm kiếm.",
+                "Nhập nội dung cần tìm với các tùy chọn giống “Thay thế tất cả”. Mục “Loại tệp” giới hạn tìm kiếm theo phần mở rộng (txt, md, csv…).",
+                "Mỗi kết quả hiển thị trong dòng tương ứng, được nhóm theo tệp. Nhấp vào dòng để mở tệp đúng vị trí đó.",
+                "Để thay thế: nhập nội dung mới, bỏ chọn tệp cần giữ nguyên rồi chọn “Ghi các tệp”."
+              ]
+            },
+            "Không có gì được ghi cho đến khi bạn yêu cầu và chỉ với các tệp còn được chọn. Mỗi tệp được lưu theo bảng mã và kiểu kết thúc dòng ban đầu.",
+            {
+              "note": "Thư mục ẩn và thư mục do chương trình tạo (.git, node_modules) được bỏ qua trừ khi bạn yêu cầu tìm cả trong đó. Tệp không phải văn bản luôn bị bỏ qua."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cài đặt",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Cài đặt Scribe",
+          "body": [
+            "Tệp → Cài đặt mở phần cài đặt của Scribe trong ứng dụng.",
+            {
+              "points": [
+                "Trình soạn thảo: phông chữ đơn cách hoặc phông của chương trình, cỡ chữ, ngắt dòng, số dòng và có hiển thị trước kết quả công cụ hay không.",
+                "Văn bản mới: kiểu kết thúc dòng và có thêm dấu thứ tự byte ở đầu tệp hay không.",
+                "Thống kê: tốc độ đọc, nói, gõ và viết tay; số từ trên mỗi trang.",
+                "Phím tắt của các lệnh Scribe."
+              ]
+            },
+            "Mỗi thiết lập có nút khôi phục về giá trị mặc định của chương trình."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Giới thiệu Scribe",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Giới thiệu Scribe",
+          "body": [
+            "Scribe là ứng dụng văn bản của Syntelab Creative: trình soạn thảo có các công cụ ở bên cạnh. Ứng dụng cho xem trước tác dụng của công cụ, dọn dẹp và sắp xếp lại danh sách, tìm và thay thế trong văn bản hoặc toàn bộ thư mục, so sánh văn bản, thống kê thành phần văn bản, tạo văn bản mẫu và dữ liệu giả, đồng thời lưu các thao tác thường dùng thành quy trình mẫu để chạy lại.",
+            "Mọi thao tác diễn ra trên máy tính này. Không giới hạn kích thước hay số lượng văn bản; giới hạn phụ thuộc bộ nhớ và khả năng của công nghệ hiện tại.",
+            "Ứng dụng còn mới. Nếu chưa đáp ứng nhu cầu xử lý văn bản của bạn, hãy gửi góp ý qua Trợ giúp → Góp ý để chúng tôi biết cần cải thiện điều gì."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Công nghệ sử dụng trong Scribe",
+          "body": [
+            {
+              "points": [
+                "Trình soạn thảo: CodeMirror.",
+                "Đọc và ghi bảng mã: encoding_rs; chardetng được dùng để nhận diện bảng mã khi tệp không khai báo.",
+                "Tìm và thay thế: thư viện regex của Rust với mẫu không thể làm chương trình bị treo.",
+                "Sắp xếp theo ngôn ngữ và nhận diện từ/câu trong các hệ chữ: ICU4X, thư viện Unicode.",
+                "So sánh văn bản: thư viện similar.",
+                "Dấu tiếng Romania: danh sách từ và quy tắc được viết riêng cho Scribe."
+              ]
+            },
+            "Thông tin về những thành phần được dùng chung với phần còn lại của chương trình có trong mục “Giới thiệu Syntelab Creative”."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Những giới hạn hiện tại của Scribe",
+          "body": [
+            {
+              "points": [
+                "Tệp rất lớn được đọc từng trang và chỉ có thể chỉnh sửa bằng quy trình mẫu; chỉnh sửa thủ công cần mở toàn bộ tệp và tốn bộ nhớ.",
+                "Tính năng khôi phục dấu tiếng Romania nhận diện từ thông dụng; từ hiếm và tên riêng được giữ như đã nhập.",
+                "Chưa có tính năng kiểm tra chính tả.",
+                "Không trích xuất văn bản từ PDF hoặc tài liệu văn phòng; hãy mở các tệp đó bằng PDF Organizer.",
+                "Trình soạn thảo không tô màu mã nguồn hoặc Markdown.",
+                "Tệp thả vào cửa sổ được mở thành văn bản mới. Chương trình không nhận được vị trí tệp trên đĩa nên khi lưu sẽ hỏi nơi lưu."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

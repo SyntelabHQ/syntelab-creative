@@ -1,0 +1,260 @@
+{
+  "title": "Units",
+  "chapters": [
+    {
+      "title": "Muuntaminen",
+      "topics": [
+        {
+          "id": "converters",
+          "title": "Muuntimet",
+          "body": [
+            "Units muuntaa arvoja mittayksiköiden välillä: yhden arvon nopeasti tai kokonaisia arvotaulukoita kerrallaan. Kaikki laskenta tapahtuu tietokoneellasi.",
+            "Muuntimet on jaettu kuuteen valikkoon: Perusasiat, Liike ja mekaniikka, Energia ja teho, Tieteelliset, Digitaaliset ja media sekä Erikoisfysiikka. Valitsemalla jonkin niistä avautuu sen taulukko.",
+            {
+              "points": [
+                "Muunnin avautuu nykyiseen välilehteen. Jos taulukossa on arvoja, ohjelma kysyy ensin: Jatka (arvot katoavat), Avaa uuteen välilehteen tai Peruuta.",
+                "Asetukset → Units → \"Avaa jokainen muunnin omaan välilehteensä\" avaa jokaisen valitsemasi muuntimen uuteen välilehteen.",
+                "Tiedosto → Siirry aloitukseen palaa Units-osion ensimmäiselle sivulle."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smart",
+          "title": "Pikamuunnos",
+          "body": [
+            "Units-osion ensimmäinen sivu, Pikamuunnos, muuntaa yhden arvon yksiköstä toiseen. Valitse muunnin, kirjoita arvo \"Mistä\"-puolelle ja valitse kaksi yksikköä: tulos näkyy \"Mihin\"-puolella.",
+            {
+              "points": [
+                "Kummallakin puolella on luettelo muuntimen suosituimmista yksiköistä sekä omista yksiköistäsi, ja niiden yläpuolella on haku. Muuntimen taulukko sisältää kaikki yksiköt.",
+                "Puolten välissä oleva painike vaihtaa yksiköiden paikkaa.",
+                "Yksikön vieressä oleva kirjanmerkki kiinnittää sen: kiinnitetyt yksiköt tulevat ensin molempiin listoihin ja taulukon yksikköpaneeliin.",
+                "Tuloksen vieressä oleva painike kopioi sen; ×-merkki tyhjentää arvon.",
+                "\"Avaa taulukkoon\" avaa muuntimen taulukon."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Numeroiden lukeminen ja kirjoittaminen",
+          "body": [
+            "Voit kirjoittaa ja liittää numeroita niin kuin niitä kirjoitetaan eri maissa: sekä 1,234.56 että 1.234,56 tunnistetaan, samoin tuhansien väliset välilyönnit ja heittomerkit sekä 1.5e-3 kymmenpotenssille.",
+            "Numero, joka voidaan lukea kahdella tavalla (1,234: tuhat tai yksi ja murto-osa), luetaan ohjelman kieliasetusten mukaisesti, ja taulukon alla oleva rivi ilmoittaa tästä.",
+            "Tulos kirjoitetaan sen yksikön desimaaleilla, johon se muunnetaan, ei niillä määrällä numeroita kuin kirjoitit: 5 cm on 1,97 in. Arvo, joka ei ole nolla, näyttää aina muutaman merkittävän numeron, joten 1 cm on 0,00001 km eikä koskaan 0,000 km.",
+            "Arvot, jotka ovat liian suuria tai pieniä luettavaksi yhdellä silmäyksellä, kirjoitetaan kymmenpotenssina, kuten 1,6 × 10⁻³⁵. Näkymä → Äärimmäiset arvot kokonaisina kirjoittaa ne sen sijaan jokaisella nollalla.",
+            "Jos yksiköllä ei ole tällaista arvoa (nollan äänipaineella ei ole desibelejä), solu näyttää viivan."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Taulukko",
+      "topics": [
+        {
+          "id": "table",
+          "title": "Rivit ja sarakkeet",
+          "body": [
+            "Jokainen sarake on yksikkö ja jokainen rivi on arvo. Solu, johon kirjoitat, ohjaa riviään: muut sarakkeet näyttävät saman arvon omissa yksiköissään. Kirjoitettu solu näytetään lihavoituna.",
+            "Se, mikä ei ole numero, säilytetään ja näytetään punaisena; sen rivi ei muunna mitään, kunnes korjaat sen.",
+            {
+              "points": [
+                "Kaksoisnapsauta solua tai ala vain kirjoittaa siihen muokataksesi sitä. Enter siirtyy alas, Tab oikealle; nuolinäppäimet liikuttavat; Escape jättää solun ennalleen.",
+                "Napsauta kulmaa (#) valitaksesi koko taulukon, rivin numeroa valitaksesi rivin, otsikkoa valitaksesi sarakkeen. Shift+napsautus valitsee alueen, Ctrl+napsautus lisää soluja, myös raahaaminen valitsee.",
+                "Home ja End siirtyvät rivin ensimmäiseen ja viimeiseen sarakkeeseen; Ctrl+Home taulukon ensimmäiseen soluun, Ctrl+End viimeiseen. Ctrl nuolinäppäimen kanssa siirtyy taulukon reunaan: ensimmäiselle tai viimeiselle riville, ensimmäiseen tai viimeiseen sarakkeeseen. Page Up ja Page Down liikuttavat yhden näytön verran. Shiftin kanssa kukin näistä laajentaa valintaa.",
+                "Usean solun valinta on korostettu ulkoreunasta; solu, johon kirjoittaminen kohdistuu, jää korostamatta valinnan sisälle.",
+                "Delete tyhjentää valitut rivit.",
+                "Viimeiselle riville kirjoittaminen lisää rivin. Taulukolla ei ole maksimikokoa: se on niin pitkä kuin tietokoneesi muisti sallii (yksi rivi vie 16 tavua, joten 100 miljoonaa riviä vie noin 1,5 Gt)."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "title": "Sarakkeet ja yksikköpaneeli",
+          "body": [
+            "Taulukon vieressä oleva paneeli listaa muuntimen yksiköt. Sen yläosassa ovat taulukossa olevat yksiköt: napsauta yksikköä poistaaksesi sen sarakkeen. Niiden alapuolella ovat kaikki yksiköt: hae nimellä tai symbolilla, suodata ryhmän tai valinnan \"Suositut\" mukaan ja napsauta yksikköä lisätäksesi sen sarakkeeksi.",
+            "Yksikön vieressä oleva kirjanmerkki kiinnittää sen suosikiksi: se tulee listan ensimmäiseksi ja on ensimmäisenä Pikamuunnoksessa.",
+            {
+              "points": [
+                "Sarakkeet jakavat taulukon leveyden tasan, kunnes niiden otsikot eivät enää mahdu; tällöin taulukkoa voi vierittää sivusuunnassa.",
+                "Vedä otsikon reunasta muuttaaksesi sarakkeen leveyttä; kaksoisnapsauta reunaa sovittaaksesi sarakkeen sen pisimmän arvon mukaan. Myös rivinumeroiden saraketta voi vetää.",
+                "Sarakkeen ⋮-painike: siirrä sitä vasemmalle tai oikealle, kiinnitä se vasempaan tai oikeaan reunaan, muuta sen tarkkuutta tai poista se.",
+                "Sarakkeen tarkkuuden muuttaminen vaikuttaa vain kyseiseen sarakkeeseen. \"Käytä tätä yksikköä kaikkialla\" asettaa sen yksikön tarkkuudeksi kaikissa taulukoissa ja Pikamuunnoksessa.",
+                "Kumoa- ja Toista-painikkeiden vieressä oleva kaksoisnuolipainike sovittaa sarakkeet taulukkoon: kaikki vetämällä tai sovittamalla tehdyt leveysmuutokset poistuvat, ja sarakkeet jakavat taulukon leveyden taas tasan.",
+                "Paneelin kaksi yläosaa, taulukon yksiköt ja \"Lisää yksiköitä\" (haku ja suodattimet), voidaan piilottaa napsauttamalla niiden nimiä, jolloin listalle jää enemmän tilaa."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "title": "Peruuta, kopioi, liitä, tuo ja vie",
+          "body": [
+            "Taulukon yläpuolella olevassa palkissa ovat sen työkalut.",
+            {
+              "points": [
+                "Kumoa ja Toista (Ctrl+Z, Ctrl+Y) käyvät läpi kaikki taulukon muutokset. Liittäminen tai tuonti on yksi vaihe.",
+                "Kopioi (Ctrl+C) kopioi koko taulukon tai valitun alueen siten, että taulukkolaskentaohjelma lukee sen. \"Transponoitu\" kääntää rivit sarakkeiksi.",
+                "Liitä (Ctrl+V) asettaa kopioidut rivit taulukkoon aktiivisesta solusta alaspäin. Jos ensimmäisellä rivillä on yksiköiden otsikot, sarakkeet kohdistetaan niiden mukaan, ja yksiköt, joita ei vielä ole taulukossa, lisätään.",
+                "Tuo-toiminto lukee Excel-työkirjan, CSV- tai TSV-tiedoston taulukon tilalle. \"Tunnista muoto automaattisesti\" määrittää tyypin tiedoston perusteella.",
+                "Vie-toiminto kirjoittaa taulukon Excel-, CSV-, TSV- tai JSON-muotoon. Jos käytössä on pilkku desimaalierottimena, CSV kirjoitetaan puolipisteillä, kuten taulukkolaskentaohjelmat odottavat. Yksi Excel-taulu sisältää 1 048 576 riviä: pidempi taulukko jatkuu saman työkirjan seuraaville tauluille samoilla otsikoilla.",
+                "Pyyhkijä tyhjentää valitut rivit; roskakori tyhjentää koko taulukon."
+              ]
+            },
+            "Yksi rivi sisältää yhden arvon. Jos liitetyssä tai tuodussa rivissä on useita arvoja, ensimmäinen otetaan ja muut lasketaan sen perusteella.",
+            "Hyvin monen rivin liittäminen, tuonti, vienti tai kopiointi kestää hetken. Taulukon päällä näkyvä kortti näyttää työn edistymisen prosentteina ja riveinä sekä Pysäytä-painikkeen. Keskeytetty liittäminen tai tuonti jättää taulukon ennalleen; keskeytetty vienti ei kirjoita tiedostoa.",
+            "Kun tietokoneen muisti loppuu rivien osalta, mitään ei muuteta ja taulukon alla oleva rivi kertoo, kuinka paljon muistia olisi tarvittu. Jos rivit mahtuvat, mutta alkuperäistä taulukkoa ei voida säilyttää niiden rinnalla, sinua kysytään, haluatko jatkaa ilman peruuttamismahdollisuutta: tätä muutosta ja sitä edeltäviä muutoksia ei voi enää peruuttaa. Ennen kysymistä vanhimmat peruutusvaiheet poistetaan tilaa saadakseen.",
+            "Taulukon asetukset (ratas): mitä sarakkeen otsikko näyttää (nimi ja symboli, nimi tai symboli), sisältävätkö kopiot ja viennit otsikot ja rivinumerot, \"Käynnistä tämä muunnin näillä sarakkeilla\" ja \"Nollaa taulukko\"."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Erikoismuuntimet",
+      "topics": [
+        {
+          "id": "currency",
+          "title": "Valuutta",
+          "body": [
+            "Valuutoilla ei ole kiinteää kerrointa: niiden arvo muuttuu. Valuuttamuunnin lukee kurssit kahdesta ilmaisesta palvelusta vain silloin, kun käytät sitä.",
+            {
+              "points": [
+                "Maiden valuutat: Rates By Exchange Rate API, https://www.exchangerate-api.com . Ne päivittyvät lähteessään kerran päivässä, eivätkä niitä lueta useammin kuin silloin.",
+                "Kryptovaluutat: Powered by CoinGecko, https://www.coingecko.com . Niitä luetaan, kun muunnin avataan tai se tulee takaisin etualalle ja tiedot ovat yli 15 minuuttia vanhoja, sekä kun painat Päivitä; ei koskaan automaattisesti ajastimella."
+              ]
+            },
+            "Vain kursseja kysytään. Sinusta ei lähetetä mitään tietoja, eikä koskaan muunnettavia summia.",
+            "Taulukon ja Pikamuunnoksen tuloksen alla oleva rivi kertoo, miltä ajalta kurssit ovat. Ilman yhteyttä käytetään viimeisimpiä kursseja ja ne on merkitty vanhentuneiksi. Valuutta, jolle palvelut eivät anna kurssia, näkyy viivana.",
+            "Asetukset → Units → Valuutta: \"Lue kurssit verkosta\" voidaan kytkeä pois päältä, jolloin muunnin käyttää viimeisimpiä tallennettuja kursseja. \"Näytä lähteet kurssien yhteydessä\" näyttää tai piilottaa kahden palvelun nimet kyseisellä rivillä.",
+            "Kurssit ovat vain tiedoksi. Älä luota niihin varsinaisissa transaktioissa."
+          ]
+        },
+        {
+          "id": "number-base",
+          "title": "Lukujärjestelmä",
+          "body": [
+            "Tämän muuntimen yksiköt ovat tapoja kirjoittaa kokonaisluku: kantaluvut 2–64, roomalaiset numerot, 60-järjestelmä kaksoispisteillä (1:30:15), BCD-koodi ja Gray-koodi. Niiden arvot ovat tekstiä: kirjoita FF heksadesimaalin alle, niin muut sarakkeet näyttävät 255, 11111111 ja niin edelleen.",
+            "Roomalaiset numerot vaihtelevat välillä I–MMMCMXCIX (1–3999)."
+          ]
+        },
+        {
+          "id": "not-linear",
+          "title": "Yksiköt, jotka eivät ole pelkkä kerroin",
+          "body": [
+            "Useimmat yksiköt ovat toistensa kertoimia. Jotkut eivät ole, ja Units muuntaa ne määriteltyjen kaavojen mukaan: lämpötilat siirtoarvoineen; polttoaineen kulutus (litraa per 100 km vs. mailia per gallona); aallonpituus vs. taajuus; konduktanssi vs. resistanssi; Baumé-, API-, Brix- ja Plato-asteet vs. tiheys; desibelit vs. äänenpaine ja intensiteetti; prosentuaalinen kaltevuus vs. kulma.",
+            "Lämpötila ja lämpötilaero eivät ole sama asia: 100 °C on 212 °F, mutta 100 °C ero on 180 °F ero. Ryhmän \"Erotus (Δ)\" yksiköt muunnetaan keskenään; niiden ja lämpötila-asteikkojen välillä solu näyttää viivan."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Omat yksiköt",
+      "topics": [
+        {
+          "id": "own-units",
+          "title": "Yksikön luominen",
+          "body": [
+            "Voit lisätä omia yksiköitä mihin tahansa muuntimeen. Valitse yksikköpaneelista \"Uusi yksikkö\", anna sille nimi ja symboli sekä määrittele se olemassa olevan yksikön avulla.",
+            {
+              "points": [
+                "Kerroin: \"1 askel = 0,75 m\". Asteikolle, joka ei ala nollasta, myös se, mitä lisätään kertomisen jälkeen.",
+                "Kaava: miten arvosta tulee toinen yksikkö, käyttäen x-kirjainta arvolle, sekä kaava takaisinmuunnokseen. Esimerkiksi x * 9 / 5 + 32 ja (x - 32) * 5 / 9."
+              ]
+            },
+            "Kirjoittamasi teksti tarkistetaan lennosta, ja yhden yksikkösi tulos näytetään ennen tallennusta. Kaavassa voidaan käyttää merkkejä + − × ÷ ^, sulkuja, x:ää, piitä, e:tä sekä funktioita sqrt, abs, ln, log, log2, exp, sin, cos, tan, asin, acos ja atan. Se lasketaan, eikä sitä koskaan ajeta ohjelmana.",
+            "Omat yksikkösi on lueteltu paneelin kohdassa \"Omat\", jossa niitä voidaan muokata ja poistaa. Oma yksikkösi voidaan määritellä toisen oman yksikkösi avulla; yksikön poistaminen poistaa myös kaikki siihen perustuvat yksiköt.",
+            "Asetukset → Units luettelee jokaisen muuntimen yksiköt sekä vie ja tuo ne tekstinä, jonka voit tallentaa tai siirtää toiselle tietokoneelle."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Asetukset",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Units-asetukset",
+          "body": [
+            "Tiedosto → Avaa asetukset avaa Units-asetukset; samoin tekevät taulukon asetukset (ratas sen palkissa).",
+            {
+              "points": [
+                "Avaa jokainen muunnin omaan välilehteen tai nykyiseen välilehteen.",
+                "Äärimmäiset arvot kokonaisina, mitä tuhansien väliin kirjoitetaan (10000,000, 10 000,000 tai 10.000,000; ei mitään, ellet valitse muuta) ja rivinumerot.",
+                "Valuutta: luetaanko kurssit verkosta ja näytetäänkö palveluiden nimet niiden vieressä.",
+                "Yksiköiden tarkkuus: valitse muunnin (tai \"Muuttamasi yksiköt\"), etsi yksikkö ja määritä sen desimaalit −- ja +-merkeillä; nuoli palauttaa sen yksikön omaksi arvoksi. Sarakkeen valikossa oleva \"Käytä tätä yksikköä kaikkialla\" asettaa saman arvon.",
+                "Taulukon aloitusyksiköt: muuntimet, joiden ensimmäiset sarakkeet valitsit, kukin tavalla, jolla pääsee takaisin oletusyksiköihin.",
+                "Omat yksikkösi."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tietoa Units-sovelluksesta",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Tietoa Units-sovelluksesta",
+          "body": [
+            "Units on Syntelab Creativen muunnossovellus: 38 muunninta ja yli 1 500 yksikköä, pituuksista ja lämpötiloista valuuttoihin ja lukujärjestelmiin. Kerran syötetty arvo näytetään jokaisessa pyytämässäsi yksikössä taulukossa, joka voi sisältää yhden tai miljoonia arvoja.",
+            "Luvut lasketaan tarkasti murtolukuina ja pyöristetään vasta kirjoitusvaiheessa. Kaikki tapahtuu tällä tietokoneella; vain valuuttakurssit luetaan verkosta, ja tämän voi kytkeä pois päältä.",
+            "Sovellus on uusi. Jos se ei täytä työntekoasi, kerro meille kohdassa Ohje → Palaute: niin tiedämme, mitä kehittää."
+          ]
+        },
+        {
+          "id": "about-app-rows",
+          "title": "Kuinka monta riviä taulukko sisältää: mittaustulokset",
+          "body": [
+            "Taulukolla ei ole kiinteää rivirajaa: se on niin pitkä kuin tietokoneesi muisti sallii. Yksi rivi vie 16 tavua, joten 100 miljoonaa riviä vie noin 1,5 Gt. Kun muisti loppuu, taulukko säilyy ennallaan ja ohjelma ilmoittaa, kuinka paljon muistia olisi tarvittu.",
+            "Mittasimme tämän 50 000 000 rivillä, joista jokainen oli luku yhdessä sarakkeessa, ohjelman optimoidulla versiolla:",
+            {
+              "points": [
+                "50 000 000 rivin liittäminen: noin 7 sekuntia.",
+                "Tuonti CSV-tiedostosta: 12 sekuntia.",
+                "Vienti CSV-tiedostoon, toisen sarakkeen muunnattuna: noin 3,5 minuuttia.",
+                "Vienti Exceliin, 48 arkille: 4,3 minuuttia."
+              ]
+            },
+            "Vienti kestää kauemmin kuin tuonti, koska jokainen kirjoitettava solu muunnetaan ensin tarkasti.",
+            {
+              "note": "Tietokone, jolla testi suoritettiin: AMD Ryzen 9 9950X3D (16 ydintä, 32 säiettä), 64 GB muistia, Windows 11 Pro. Lokakuu 2026. Toisella tietokoneella ajat ovat erilaiset; rivin koko ei kuitenkaan muutu."
+            }
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Mistä Units on rakennettu",
+          "body": [
+            {
+              "points": [
+                "Tarkat luvut: Rustin num-kirjastot (minkä kokoisetkin kokonaislukujen murtoluvut).",
+                "Yksiköt, niiden kertoimet ja ryhmät: ohjelman tietotiedostot, yksi jokaiselle muuntimelle.",
+                "Excel- ja OpenDocument-työkirjojen lukeminen: calamine. Excel-työkirjojen kirjoittaminen: rust_xlsxwriter.",
+                "Järjestelmän leikepöytä erittäin monien rivien kopiointia ja liittämistä varten: arboard.",
+                "Valuuttakurssit: ExchangeRate-API ja CoinGecko (katso \"Valuutta\")."
+              ]
+            },
+            "Yhteiset osat muun ohjelman kanssa löytyvät kohdasta \"Tietoa Syntelab Creativesta\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Mitä Units ei vielä osaa",
+          "body": [
+            {
+              "points": [
+                "Rivi sisältää yhden arvon: jos liitetyssä rivissä on useita arvoja, vain ensimmäinen otetaan huomioon.",
+                "Erittäin monen rivin vienti on hidasta (katso mittaustulokset).",
+                "Leikepöydälle kopioitu sisältö pidetään muistissa yhtenä tekstinä ennen liittämistä.",
+                "Valuuttakurssit ovat niin ajan tasalla kuin niiden kaksi lähdettä sallivat: maiden valuuttojen osalta kerran päivässä."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

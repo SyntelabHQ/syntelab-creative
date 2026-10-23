@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Oscailt agus léamh",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Doiciméad a oscailt",
+          "body": [
+            "Osclaíonn Comhad → Oscail (Ctrl+O) PDF ina chluaisín féin. Osclaíonn \"Oscail roinnt comhad le chéile\" gach comhad roghnaithe ina chluaisín féin.",
+            "Osclaítear comhaid nach PDFanna iad freisin, mar leathanaigh: pictiúir (PNG, JPEG, TIFF, WebP agus go leor eile), comhaid téacs agus ghréasáin, r-leabhair, XPS, agus doiciméid oifige. Níl doiciméad den sórt sin sábháilte áit ar bith fós: fiafraíonn \"Sábháil\" cén áit.",
+            {
+              "note": "Tiontaíonn Word, Excel nó PowerPoint, nó LibreOffice, cibé acu atá ar an ríomhaire, doiciméid oifige (Word, Excel, PowerPoint, OpenDocument). Gan ceann acu ní féidir iad a oscailt."
+            },
+            "Bailítear i gceanglóir comhaid a scaoiltear ar chluaisín folamh; má scaoiltear ar dhoiciméad iad, cuirtear a leathanaigh leis.",
+            "Ar Windows, is féidir le PDF Organizer a bheith ina aip a osclaíonn comhaid PDF nuair a dhéanann tú déchliceáil orthu: ar a leathanach tosaigh, osclaíonn \"Socraigh mar réamhshocrú\" socruithe Windows, áit a roghnaíonn tú Syntelab Creative do chomhaid PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Ag féachaint ar na leathanaigh",
+          "body": [
+            "Socraíonn an roghchlár Amharc conas a thaispeántar an doiciméad; ní athraíonn aon rud ann an comhad.",
+            {
+              "points": [
+                "Zúmáil: isteach, amach, fíormhéid, oiriúnaigh don leathanach, don leithead, don airde. Zúmálann Ctrl agus roth na luiche freisin.",
+                "Taispeántas leathanaigh: leathanach amháin nó dhá cheann taobh le taobh, le leathanach clúdaigh nó gan é, agus scrollú trí na leathanaigh go léir mar stiall fhada amháin.",
+                "Treoirlínte: rialóirí agus greille, san aonad a roghnaíodh i Socruithe.",
+                "\"Taispeáin mionsamhlacha\": na leathanaigh bheaga ar an taobh. Cliceáil ar cheann acu chun dul chuige; tá leabharmharcanna an doiciméid sa phainéal céanna.",
+                "Folaíonn \"Mód léitheoireachta\" na huirlisí; folaíonn \"Mód lánscáileáin\" gach rud ach an leathanach. Fágann Esc an dá cheann."
+              ]
+            },
+            "Sa stiall os cionn na leathanach (an barra uirlisí tapa) tá uimhir an leathanaigh, an zúmáil agus na cnaipí a roghnaigh tú i Socruithe."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Téacs a aimsiú",
+          "body": [
+            "Eagar → Aimsigh sa doiciméad (Ctrl+F): clóscríobh focal nó frása; marcáiltear ar na leathanaigh na háiteanna ina n-aimsítear é, agus téann na saigheada ó cheann go chéile.",
+            {
+              "note": "Níl i ndoiciméad scanáilte ach pictiúir de leathanaigh agus níl aon téacs le haimsiú ann go dtí go n-aithnítear a théacs: féach \"Téacs a aithint (OCR)\"."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Airíonna an doiciméid",
+          "body": [
+            "Taispeánann Comhad → Airíonna an doiciméid a ndeir an doiciméad faoi féin: teideal, údar, na dátaí ar cruthaíodh agus ar athraíodh é, líon na leathanach, méid an chomhaid."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sábháil, priontáil agus seoladh",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Sábháil agus Sábháil mar",
+          "body": [
+            "Ní athraíonn aon rud a dhéanann tú an comhad ar an diosca go dtí go sábhálann tú. Go dtí sin, is féidir gach céim a chealú (Ctrl+Z) agus a athdhéanamh (Ctrl+Y).",
+            {
+              "points": [
+                "Scríobhann Sábháil (Ctrl+S) an doiciméad thar a chomhad féin.",
+                "Scríobhann Sábháil mar (Ctrl+Shift+S) chuig comhad nua é, a thógann áit an chluaisín ansin; fanann an seanchomhad mar a bhí."
+              ]
+            },
+            "Má tá an comhad oscailte ag clár eile, ní féidir scríobh thairis: deir an clár é sin agus coinníonn sé d’athruithe, le sábháil faoi ainm eile.",
+            {
+              "note": "Má shábháiltear doiciméad athraithe thar chomhad atá sínithe le teastas, baintear a shínithe. Fiafraíonn an clár ar dtús agus tairgeann sé \"Sábháil mar chomhad nua\"; is féidir an cheist a mhúchadh i Socruithe → Sínithe."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "PDF a chruthú",
+          "body": [
+            "Déanann Comhad → Cruthaigh PDF doiciméad nua:",
+            {
+              "points": [
+                "as comhad amháin, nó as roinnt comhad: cumaiscthe i PDF amháin, nó PDF an ceann;",
+                "as leathanach gréasáin, ag an seoladh a chlóscríobhann tú (sábháiltear an leathanach leis an mbrabhsálaí atá suiteáilte ar an ríomhaire);",
+                "as a bhfuil ar an ngearrthaisce;",
+                "as leathanaigh fholmha den mhéid a roghnaíonn tú."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Easpórtáil go formáid eile",
+          "body": [
+            "Scríobhann Comhad → Easpórtáil an doiciméad i bhformáid eile: téacs Word nó OpenDocument, gnáth-théacs, leathanach gréasáin, XML, pictiúir de na leathanaigh (PNG, JPEG, TIFF, SVG) nó PostScript. Le haghaidh pictiúr roghnaíonn tú an taifeach.",
+            "Fanann an doiciméad féin ina PDF; is comhad nua an easpórtáil.",
+            {
+              "note": "Ní féidir téacs a easpórtáil ach san áit a bhfuil téacs sa doiciméad. Aithin téacs scanadh ar dtús."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Priontáil",
+          "body": [
+            "Priontálann Comhad → Priontáil (Ctrl+P) an doiciméad mar atá sé eagraithe anois, lena bhfuil tarraingthe agat air. Roghnaigh na leathanaigh, an páipéar, cé acu ina seasamh nó ar a dtaobh a bheidh na bileoga, agus cé acu a oiriúnófar na leathanaigh don bhileog nó a phriontálfar ina bhfíormhéid iad; ansin iarrann fuinneog phriontála an chórais an printéir.",
+            "Socraítear i Socruithe → Priontáil an páipéar, an treoshuíomh agus an scálú lena dtosaíonn an fhuinneog phriontála."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Roinnt",
+          "body": [
+            "Tugann Comhad → Roinn an doiciméad d’fhuinneog \"Roinn\" an chórais: ríomhphost, gléas in aice láimhe agus aipeanna eile. Roinntear an doiciméad mar atá sé anois, le d’athruithe nach bhfuil sábháilte."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Leathanaigh a eagrú",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "An t-amharc Eagraigh",
+          "body": [
+            "Taispeánann Eagraigh → Eagraigh leathanaigh gach leathanach i ngreille. Ní athraítear aon rud ar an diosca go dtí go sábhálann tú.",
+            {
+              "points": [
+                "Roghnú: cliceáil ar leathanach; cuireann Ctrl+cliceáil ceann leis, roghnaíonn Shift+cliceáil raon. Tá \"Roghnaigh gach leathanach\", \"Ná roghnaigh aon cheann\", \"Roghnaigh leathanaigh chorra\" agus \"Roghnaigh leathanaigh chothroma\" sa roghchlár.",
+                "Bogadh: tarraing na leathanaigh roghnaithe go dtí a n-áit nua, nó úsáid \"Bog ar chlé\" agus \"Bog ar dheis\".",
+                "Casadh: casann \"Roghnaithe: rothlaigh ar chlé\" agus \"Roghnaithe: rothlaigh ar dheis\" na leathanaigh roghnaithe; casann \"Gach leathanach: rothlaigh ar chlé\" agus \"Gach leathanach: rothlaigh ar dheis\" gach leathanach.",
+                "Scriosadh: an eochair Delete, nó \"Scrios leathanaigh\". Coinníonn doiciméad leathanach amháin ar a laghad.",
+                "Cóipeáil, gearradh agus greamú (Ctrl+C, Ctrl+X, Ctrl+V): is féidir leathanaigh a ghreamú sa doiciméad céanna nó i gceann eile atá oscailte sa chlár.",
+                "Méid: déanann an sleamhnán ag an mbarr na leathanaigh níos mó nó níos lú; déanann Ctrl + roth na luiche os cionn na leathanach, agus Zúmáil isteach agus Zúmáil amach (Ctrl+= agus Ctrl+-), an rud céanna. Meabhraítear an méid."
+              ]
+            },
+            "Oibríonn na horduithe céanna gan an ghreille, ar an leathanach atá ar taispeáint."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Leathanaigh a bhaint amach agus doiciméad a scoilteadh",
+          "body": [
+            "Baineann Eagraigh → Bain leathanaigh amach na leathanaigh roghnaithe amach mar dhoiciméad nua ina chluaisín féin, nach bhfuil sábháilte fós. Is féidir leat freisin gach leathanach a scríobh mar chomhad ar leith, agus a roghnú an mbainfear na leathanaigh den doiciméad seo.",
+            "Scríobhann Eagraigh → Scoilt an doiciméad an doiciméad mar roinnt comhad níos lú; fanann an doiciméad seo mar atá.",
+            "Leanann ainmneacha na ndoiciméad nua na patrúin i Socruithe → Ainmneacha doiciméad nua.",
+            {
+              "note": "Ní thugtar sínithe a rinneadh le teastas isteach i ndoiciméid a baineadh amach nó a scoilteadh: níl síniú bailí ach don chomhad inar rinneadh é."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Leathanaigh a chur isteach agus a ionadú",
+          "body": [
+            {
+              "points": [
+                "Cuireann Eagraigh → Cuir leathanaigh isteach leathanaigh comhaid eile (PDF, pictiúr, téacs, doiciméad oifige) i ndiaidh an leathanaigh roghnaithe, nó ag an deireadh.",
+                "Cuireann Eagraigh → Ionadaigh leathanaigh leathanaigh comhaid eile in ionad na leathanach roghnaithe.",
+                "Cuireann Cuir isteach → Leathanach bán leathanach folamh leis ar mhéid an leathanaigh in aice leis."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Leathanaigh a bhearradh agus a méid a athrú",
+          "body": [
+            "Baineann Eagar → Bearr leathanaigh na himill de leathanaigh, de réir corrlach a chlóscríobhann nó a tharraingíonn tú. Ní bhaintear aon rud as an gcomhad: ní thaispeánann na leathanaigh ach níos lú.",
+            "Cuireann Eagar → Athraigh méid leathanach leathanaigh ar mhéid bileoige eile (A4, Letter agus eile). Is féidir an t-ábhar a scálú ionas go n-oireann sé nó é a fhágáil ina mhéid féin, agus é a chur in áit amháin de naoi n-áit ar an mbileog nua.",
+            "Fiafraíonn an dá cheann cé na leathanaigh: iad go léir, na cinn roghnaithe, raon, corra nó cothroma."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Comhaid a chumasc",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "An ceanglóir",
+          "body": [
+            "Osclaíonn Cumaisc → Ceanglóir nua áit chun comhaid a bhailiú agus iad a scríobh mar PDF amháin.",
+            {
+              "steps": [
+                "Cuir comhaid leis le \"Cuir comhaid leis\", nó scaoil ar an gceanglóir iad. Is féidir PDFanna, pictiúir, téacs agus doiciméid oifige a mheascadh.",
+                "Tarraing na cártaí san ord is mian leat, nó úsáid na saigheada ar gach cárta.",
+                "Oscail cárta chun a roghnú cé na leathanaigh dá chuid a théann isteach.",
+                "Scríobhann \"Cumaisc comhaid\" iad, in ord, mar dhoiciméad nua amháin ina chluaisín féin."
+              ]
+            },
+            "Ní athraítear na comhaid féin.",
+            "Déanann an sleamhnán ag an mbarr na leathanaigh ar na cártaí níos mó nó níos lú; déanann Ctrl + roth na luiche, agus Zúmáil isteach agus Zúmáil amach (Ctrl+= agus Ctrl+-), an rud céanna. Meabhraítear an méid."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scríobh agus tarraingt ar leathanaigh",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Na huirlisí",
+          "body": [
+            "Osclaítear na huirlisí líníochta mar phainéal in aice leis an leathanach, mar ghreille cnaipí nó mar liosta le hainmneacha (socraíonn Socruithe é). Le huirlis i do lámh, tarraing nó cliceáil ar an leathanach; leagann Esc an uirlis síos.",
+            {
+              "points": [
+                "Téacs: cliceáil agus clóscríobh. Tá an cló, an méid, an dath, trom, iodálach agus an t-ailíniú sa phainéal.",
+                "Íomhá: roghnaigh pictiúr, ansin tarraing san áit a dtéann sé agus chomh mór agus is mian leat.",
+                "Cruthanna: dronuilleog, éilips, líne, saighead, tic, cros, ponc.",
+                "Aibhsiú: tarraing thar a bhfuil le cur chun suntais; fanann a bhfuil faoi inléite."
+              ]
+            },
+            "Le \"Roghnaigh, bog agus athraigh méid\" piocann tú marc suas arís: tarraing é, tarraing a chúinní, cas é lena hanla, athraigh a dhathanna sa phainéal, nó scrios é leis an eochair Delete. Is féidir marcanna a chóipeáil agus a ghreamú, chuig leathanaigh eile freisin.",
+            "Scríobhtar gach rud a tarraingíodh isteach sa chomhad nuair a shábhálann tú."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Téacs agus pictiúir an doiciméid féin a athrú",
+          "body": [
+            "Imlíníonn an uirlis \"Cuir téacs agus pictiúir an doiciméid in eagar\" a bhfuil ar an leathanach féin. Cliceáil ar líne téacs chun í a athscríobh, nó ar phictiúr chun é a bhogadh, a mhéid a athrú, é a chasadh nó é a scriosadh.",
+            {
+              "note": "Athraíonn sé seo líne amháin nó pictiúr amháin ag an am. Ní athleagtar alt nuair a éiríonn líne níos faide, agus pioctar pictiúr atá os cionn pictiúir eile suas in éineacht leis. Le haghaidh athruithe móra, cuir an doiciméad in eagar sa chlár inar scríobhadh é."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Dubhú",
+          "body": [
+            "Baineann Tuilleadh uirlisí → Dubhaigh go buan a bhfuil nach bhfuil le léamh: tarraing bosca dubh thairis, ar aon leathanach. Nuair a shábhálann tú, baintear an téacs agus na pictiúir faoin mbosca as an gcomhad, ní hamháin go gclúdaítear iad.",
+            {
+              "note": "Sábháil an doiciméad dubhaithe faoi ainm nua agus coinnigh an bunchóip in áit shábháilte: ní féidir a ndubhaítear a fháil ar ais."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Comhartha uisce",
+          "body": [
+            "Scríobhann Eagar → Comhartha uisce focail nó cuireann sé pictiúr ar na leathanaigh a roghnaíonn tú: díreach nó fiar, in áit amháin de naoi n-áit, chomh mór agus chomh fann agus a shocraíonn tú. Ar gach leathanach is marc é ansin cosúil le haon mharc eile agus is féidir é a bhogadh nó a bhaint fós."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Uimhreacha leathanach, ceanntásc agus buntásc, uimhreacha Bates",
+          "body": [
+            {
+              "points": [
+                "Eagar → Uimhreacha leathanach: an fhormáid (1, 1 / 12, Leathanach 1 agus eile), an áit, agus cé na leathanaigh a fhaigheann uimhir.",
+                "Cuir isteach → Ceanntásc agus buntásc: téacs in aon cheann de shé áit. Ann, seasann {page} d’uimhir an leathanaigh, {pages} do líon na leathanach, {date} do dháta an lae inniu agus {file} d’ainm an doiciméid.",
+                "Cuir isteach → Uimhriú Bates: uimhreacha ceann i ndiaidh a chéile le focal roimhe nó ina dhiaidh (ABC000123), mar a úsáidtear do dhoiciméid cháis."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Naisc, leabharmharcanna agus comhaid cheangailte",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Naisc",
+          "body": [
+            "Cuir isteach → Nasc: tarraing thar an áit ar chóir cliceáil air, ansin luaigh cá dtéann sé: seoladh gréasáin, nó leathanach den doiciméad seo.",
+            "Oibríonn naisc doiciméid agus tú á léamh: téann cliceáil ar nasc chuig leathanach go dtí an leathanach sin; tugtar seoladh gréasáin nó ríomhphoist do do bhrabhsálaí nó do do chlár ríomhphoist."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Leabharmharcanna",
+          "body": [
+            "Cuir isteach → Leabharmharc nua: cliceáil ar an áit ar chóir dó dul chuige agus tabhair teideal dó. Osclaíonn Cuir isteach → Leabharmharcanna an liosta, áit ar féidir leabharmharc a athainmniú nó a bhaint. Scríobhtar na hathruithe nuair a shábhálann tú."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Comhaid cheangailte",
+          "body": [
+            "Cuir isteach → Ceangail comhad: roghnaigh comhad agus cliceáil san áit a dtéann a fháiscín páipéir. Is féidir leat ainm agus údar a thabhairt dó, dath a chur ar an bhfáiscín, a mhéid a athrú agus é a chasadh. Coinnítear an comhad taobh istigh den PDF nuair a shábhálann tú.",
+            "Liostaíonn Cuir isteach → Comhaid cheangailte a bhfuil á iompar ag an doiciméad; is féidir gach comhad a shábháil ar an diosca nó a bhaint amach. Osclaíonn cliceáil ar fháiscín páipéir an liosta céanna."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Foirmeacha",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Foirm a líonadh",
+          "body": [
+            "Taispeánann Cuir isteach → Líon isteach foirm réimsí an doiciméid: clóscríobh i réimsí téacs, ticeáil boscaí, roghnaigh ó liostaí. Scríobhtar na freagraí isteach sa chomhad nuair a shábhálann tú."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Foirm a dhéanamh",
+          "body": [
+            "Cuireann an roghchlár Cuir isteach réimsí le haon doiciméad: réimse téacs, ticbhosca, cnaipí raidió (nach féidir ach ceann amháin acu a roghnú), liosta roghnaithe, agus réimse sínithe a fhágtar folamh don sínitheoir.",
+            "Tarraing ar an leathanach san áit a dtéann an réimse. Cosúil le marcanna eile, is féidir réimse a bhogadh agus a mhéid a athrú go dtí go sábhálann tú; ina dhiaidh sin is cuid den fhoirm é."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Síniú",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Síniú a tharraingíonn tú a chur leis",
+          "body": [
+            "Cuireann Sínigh → Cuir síniú leis pictiúr de shíniú ar an leathanach: tarraingthe anseo le peann a roghnaíonn tú, clóscríofa i gcló, nó tógtha ó phictiúr (le \"Coinnigh stríocanna an phinn amháin\" do ghrianghraf de bhileog shínithe). Is féidir an dáta a scríobh faoi.",
+            "Tarraing ar an leathanach san áit a dtéann sé. Coinnítear na sínithe a d’úsáid tú ar an ríomhaire seo, le húsáid arís.",
+            {
+              "note": "Is pictiúr é seo: ní insíonn sé aon rud cinnte faoi cé a chuir ann é. Déantar síniú a chruthaíonn cé a shínigh, agus nár athraíodh aon rud ó shin, le teastas."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Síniú le teastas",
+          "body": [
+            "Déanann Sínigh → Sínigh le teastas síniú digiteach: léiríonn sé cé a shínigh agus séalaíonn sé an doiciméad, ionas go bhfeictear aon athrú ina dhiaidh sin.",
+            {
+              "steps": [
+                "Tarraing ar an leathanach an limistéar ina dtaispeántar an síniú (deir fuinneog é sin ar dtús; is féidir í a mhúchadh). Chun síniú gan aon rud ar na leathanaigh, roghnaigh \"Sínigh gan é a thaispeáint ar leathanach\" ina ionad sin.",
+                "Roghnaigh an teastas: ceann de chuid an ríomhaire (taispeántar cárta nó comhartha slándála ina measc nuair atá sé ina léitheoir), nó comhad .pfx / .p12 lena phasfhocal. \"Ar aghaidh\".",
+                "Roghnaigh cuma an tsínithe. Faoi \"Cúis agus áit\" is féidir leat a scríobh cén fáth agus cén áit a bhfuil tú ag síniú: téann siad isteach sa síniú, agus ar an leathanach má thaispeánann an chuma iad. Cuir tic le \"Glasáil an doiciméad tar éis síniú\" mura bhfuil aon duine le síniú ná athrú a dhéanamh i do dhiaidh. Fág tic le \"Cuir am iontaofa leis (stampa ama)\" ionas go ndeimhneoidh údarás cathain a shínigh tú.",
+                "\"Sínigh\", ansin roghnaigh cá sábháiltear an comhad sínithe. Iarrann comhartha slándála a UAP ag an bpointe seo."
+              ]
+            },
+            "Osclaítear an comhad sínithe in ionad an doiciméid. Ní choinníonn an clár pasfhocal ná UAP riamh.",
+            {
+              "note": "Is síniú cáilithe é síniú a dhéantar ar an mbealach seo le teastas cáilithe, ar a chárta nó ar a chomhartha slándála. Déantar an síniú ar do ríomhaire; ní théann ar líne ach an stampa ama agus seiceáil do theastais, agus seolann siad méarloirg agus sraithuimhir an teastais, ní an doiciméad riamh."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Cumaí sínithe",
+          "body": [
+            "Léiríonn cuma conas a fheictear síniú le teastas ar an leathanach. Coinnigh roinnt acu faoi ainmneacha de do chuid féin: ceann le síniú thar ceann comhlachta, ceann le síniú i d’ainm féin.",
+            {
+              "points": [
+                "Pictiúr: gan pictiúr, ó chomhad (stampa, síniú scanáilte) nó tarraingthe anseo.",
+                "Téacs taispeánta: ainm, dáta, cúis, áit, gach ceann acu lena lipéad nó gan é.",
+                "Línte de do chuid féin faoin ainm, mar shampla ról agus comhlacht.",
+                "Bíonn \"Téacs caighdeánach\" ann i gcónaí: cé a shínigh agus cathain."
+              ]
+            },
+            "San fhuinneog sínithe: \"Nua…\", \"Cuir in eagar…\", \"Scrios\". Tairgtear an ceann deireanach a úsáideadh ar dtús. Coinnítear na cumaí ar an ríomhaire seo."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Roinnt sínithe, agus glasáil",
+          "body": [
+            "Is féidir le roinnt daoine doiciméad a shíniú, duine i ndiaidh a chéile. Oscail an comhad sínithe agus sínigh é gan aon rud a athrú: cuirtear do shíniú le deireadh an chomhaid agus fanann na cinn roimhe bailí.",
+            "Dúnann \"Glasáil an doiciméad tar éis síniú\" (as mura gcuireann tú tic leis) an doiciméad: ní féidir le haon duine síniú i do dhiaidh agus ní féidir aon rud eile a athrú. Ní féidir é a chealú.",
+            {
+              "note": "Má athraíonn tú doiciméad sínithe sula síníonn tú arís é, caithfear é a scríobh as an nua agus fágtar na sínithe roimhe ar lár. Tugann an fhuinneog sínithe rabhadh duit: chun iad a choinneáil, oscail an comhad arís agus sínigh gan aon rud a athrú."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Stampaí ama",
+          "body": [
+            "Is éard is stampa ama ann ná dearbhú sínithe ó údarás stampála ama ar cathain a bhí rud ann. Seachas sin, tagann an t-am i síniú ó chlog ríomhaire an tsínitheora, ar féidir le duine ar bith é a athrú; cruthaíonn stampa ama an nóiméad, agus coinníonn sé an síniú inchruthaithe tar éis don teastas dul in éag (PAdES B-T).",
+            {
+              "points": [
+                "Faigheann sínithe ceann nuair a bhíonn tic le \"Cuir am iontaofa leis (stampa ama)\" san fhuinneog sínithe. Léiríonn Socruithe → Sínithe an mbíonn tic ann ar dtús, anseo agus sa phróiseáil bhaisc.",
+                "Tugann Sínigh → Cuir stampa ama leis stampa ama dá chuid féin don doiciméad ar fad, gan teastas: cruthaíonn sé go raibh an doiciméad ann, díreach mar atá sé, ag an nóiméad sin. Sábháiltear é mar chomhad nua; fanann na sínithe atá sa chomhad bailí."
+              ]
+            },
+            "Is é údarás DigiCert (http://timestamp.digicert.com) atá ann, saor in aisce agus muinín ag Adobe Reader agus Windows as; is féidir ceann eile a shocrú i Socruithe → Sínithe. Ní fhaigheann sé ach méarlorg (SHA-256), ní an doiciméad riamh, agus tá nasc idirlín ag teastáil. Nuair a fhaigheann síniú stampa ama, fiafraítear d'eisitheoir do theastais freisin an bhfuil an teastas bailí fós, agus coimeádtar a fhreagra sa síniú (bailíochtú fadtéarmach): is féidir le Adobe Reader ansin an síniú a thaispeáint mar shíniú bailí, anois agus tar éis don teastas dul in éag.",
+            {
+              "note": "Mura féidir teagmháil a dhéanamh leis an údarás, ní shínítear ná ní scríobhtar aon rud: bain triail eile as, nó bain an tic den stampa ama chun síniú gan é."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Sínithe a sheiceáil",
+          "body": [
+            "Liostaíonn Sínigh → Fíoraigh sínithe gach síniú le teastas sa chomhad: cé a shínigh, cé a d’eisigh an teastas, cathain, an chúis agus an áit, agus",
+            {
+              "points": [
+                "an bhfuil an doiciméad gan athrú ón síniú sin (ní áirítear síniú eile a cuireadh leis ina dhiaidh mar athrú);",
+                "an nglasálann an síniú an doiciméad;",
+                "an bhfuil muinín ag an ríomhaire seo as an údarás taobh thiar den teastas, agus an bhfuil an teastas bailí inniu;",
+                "an t-am arna dheimhniú ag a stampa ama, agus cén t-údarás, má tá ceann aige. Liostaítear stampa ama an doiciméid ar fad freisin, lena sheiceáil féin."
+              ]
+            },
+            "Seiceáiltear an comhad mar a sábháladh go deireanach é agus déantar an seiceáil ar an ríomhaire seo, gan dul ar líne. Nuair a chliceáiltear ar shíniú ar leathanach, osclaítear an liosta seo ag an síniú sin. Faoi gach síniú, osclaíonn “Taispeáin an teastas” fuinneog Windows an teastais (a shlabhra agus gach mionsonra; as sin, cuireann “Suiteáil Teastas” ar an ríomhaire seo muinín a bheith aige as teastas a bhfuil aithne agat air), agus fiafraíonn “Bailíochtaigh” d’eisitheoir an teastais ar líne, ach amháin nuair a bhrúnn tú é, ar aistarraingíodh an teastas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tuilleadh uirlisí",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Téacs a aithint (OCR)",
+          "body": [
+            "Léann Tuilleadh uirlisí → Aithin téacs (OCR) focail na leathanach scanáilte agus scríobhann sé isteach sna leathanaigh iad go dofheicthe, ionas gur féidir an doiciméad a chuardach agus a théacs a chóipeáil agus a easpórtáil. Ní athraíonn cuma na leathanach.",
+            "Ná ticeáil ach na teangacha ina bhfuil na leathanaigh scríofa; fágtar leathanaigh a bhfuil téacs iontu cheana mar atá.",
+            {
+              "note": "Is é an t-inneall Tesseract, clár saor in aisce a shuiteáiltear ar leith, a dhéanann an léamh. Gan é, taispeánann an fhuinneog an t-ordú a shuiteálann ar Windows é."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Doiciméad a dhéanamh níos lú",
+          "body": [
+            "Sábhálann Tuilleadh uirlisí → Comhbhrúigh an doiciméad mar chomhad níos lú trí níos lú picteilíní a thabhairt dá ghrianghraif agus dá scananna. Trí neart; fanann téacs agus líníochtaí chomh géar agus atá siad. Is beag a ghnóthaíonn doiciméad nach bhfuil mórán pictiúr ann."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Dhá dhoiciméad a chur i gcomparáid",
+          "body": [
+            "Tuilleadh uirlisí → Cuir doiciméid i gcomparáid: roghnaigh PDF eile. Taispeántar an dá cheann taobh le taobh, leathanach ar leathanach, agus marcáiltear na leathanaigh a bhfuil a dtéacs difriúil agus liostaítear na línte atá i gceann amháin acu."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Próiseáil bhaisc: go leor comhad le chéile",
+          "body": [
+            "Déanann Tuilleadh uirlisí → Próiseáil bhaisc na rudaí céanna le go leor comhad, ina chluaisín féin. Is comhad nua gach toradh. Dá mbeadh torthaí le dul in áit comhad atá san fhillteán cheana (do chomhaid féin, nuair a théann siad chuig a bhfillteán féin gan aon rud a chur lena n-ainmneacha), fiafraítear díot ar dtús ar mhaith leat iad a ionadú, iad a scipeáil, nó cealú. Ní ionadaítear comhad go dtí go mbíonn a thoradh críochnaithe; fágtar comhad atá oscailte (i gcluaisín anseo nó i ríomhchlár eile) mar atá sé agus marcáiltear é mar chomhad nach bhfuil déanta.",
+            {
+              "steps": [
+                "Ar chlé, cuir na comhaid leis: \"Cuir comhaid leis\", \"Cuir fillteán leis\" (leis na fillteáin faoi), nó scaoil isteach iad.",
+                "Ar dheis, ticeáil cad atá le déanamh. Déantar PDF de gach comhad ar aon nós; seachas sin is féidir leat leathanaigh a chasadh, téacs a aithint, ceanntásc agus buntásc, comhartha uisce nó uimhreacha leathanach a chur leis, comhaid a dhéanamh níos lú, iad a shíniú le teastas, nó iad a scríobh i bhformáid eile. Taispeánann na huimhreacha an t-ord.",
+                "Roghnaigh cad a scríobhtar: comhad do gach ceann, nó gach rud i PDF amháin (in ord an liosta), agus an fillteán a dtéann na torthaí chuige. Nuair a thagann na comhaid go léir ó fhillteán amháin, roghnaítear an fillteán sin duit go dtí go roghnaíonn tú ceann eile; murach sin, is é an fillteán deireanach a roghnaigh tú.",
+                "\"Tosaigh\". Taispeánann gach comhad conas a d’éirigh leis; is féidir an rith a stopadh idir comhaid."
+              ]
+            },
+            {
+              "points": [
+                "Oidis: coinníonn \"Sábháil mar oideas\" gach rud a roghnaigh tú (seachas na comhaid agus aon phasfhocal) faoi ainm, le socrú arís le rogha amháin.",
+                "Atógann \"Coinnigh fillteáin na gcomhad sna torthaí\" struchtúr fillteán an fhillteáin a cuireadh leis.",
+                "Fágann \"Scríobh tuarascáil ar an rith\" comhad téacs in aice leis na torthaí a insíonn cad a scríobhadh agus cad a theip.",
+                "Coinníonn PDF nach ndéantar ach é a shíniú na sínithe atá aige; má dhéantar aon rud eile leis sa rith céanna, scríobhtar as an nua é agus fágtar na sínithe ar lár."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Socruithe",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Socruithe PDF Organizer",
+          "body": [
+            "Comhad → Socruithe (nó Socruithe sa bharra taoibh, ansin PDF Organizer). Is féidir gach socrú a chur ar ais leis féin, nó iad go léir le chéile.",
+            {
+              "points": [
+                "Nuair a osclaítear doiciméad: cén méid a thaispeántar doiciméad nuair a osclaítear é, scrollú nó leathanach amháin ag an am, mionsamhlacha ar taispeáint nó nach ea.",
+                "Aonaid, rialóirí agus greille: an t-aonad (milliméadair, orlaí, pointí), rialóirí, an ghreille agus an spás inti.",
+                "Priontáil: an páipéar, an treoshuíomh agus an scálú lena dtosaíonn an fhuinneog phriontála.",
+                "Barra uirlisí tapa: cé na cnaipí atá sa stiall os cionn na leathanach.",
+                "Ainmneacha doiciméad nua: na patrúin do leathanaigh a baineadh amach, do dhoiciméid nua agus don PDF ina mbailíonn an phróiseáil bhaisc go leor comhad.",
+                "Sínithe: an bhfiafraíonn \"Sábháil\" sula scríobhann sé thar chomhad sínithe.",
+                "Aicearraí méarchláir: cliceáil ar eochracha ordaithe, ansin brúigh na cinn nua."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Faoi PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Faoi PDF Organizer",
+          "body": [
+            "Is é PDF Organizer aip PDF Syntelab Creative: léann sé doiciméid PDF, eagraíonn agus cumascann sé a leathanaigh, scríobhann agus tarraingíonn sé orthu, líonann agus déanann sé foirmeacha, síníonn sé le teastas agus seiceálann sé sínithe, agus déanann sé na rudaí céanna le go leor comhad le chéile.",
+            "Tá sé nua, agus níl i gcuid dá ndéanann sé ach an chéad chéim. Nuair nach leor é do do dhoiciméid, inis dúinn trí Cabhair → Aiseolas: sin mar a bhíonn a fhios againn cad air a n-oibreoimid."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Cad leis a bhfuil PDF Organizer tógtha",
+          "body": [
+            {
+              "points": [
+                "PDF a léamh, tarraingt air agus a scríobh: MuPDF.",
+                "Téacs a aithint (OCR): Tesseract, nuair atá sé suiteáilte ar an ríomhaire.",
+                "Doiciméid oifige a oscailt: Word, Excel agus PowerPoint, nó LibreOffice, cibé acu atá suiteáilte.",
+                "Leathanach gréasáin a shábháil mar PDF: an brabhsálaí atá suiteáilte ar an ríomhaire.",
+                "Síniú le teastas: seirbhísí teastas Windows; scríobhtar sínithe mar a iarrann an caighdeán PAdES."
+              ]
+            },
+            "Tá a roinneann sé leis an gcuid eile den chlár faoi \"Faoi Syntelab Creative\"."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Cad nach féidir le PDF Organizer a dhéanamh fós",
+          "body": [
+            {
+              "points": [
+                "Osclaíonn an sraith oifige atá ar an ríomhaire doiciméid oifige; gan Word, Excel, PowerPoint ná LibreOffice ní féidir iad a oscailt. Táimid ag obair ar thiontaire dár gcuid féin: féach \"Na rudaí a bhfuilimid ag obair orthu\".",
+                "Teastaíonn an t-inneall Tesseract, suiteáilte ar leith, chun téacs a aithint.",
+                "Athraítear téacs an doiciméid féin líne ar líne; ní athleagtar ailt.",
+                "Ní féidir pictiúir atá priontáilte i gceithre dhúch (CMYK) a phiocadh suas chun iad a bhogadh.",
+                "Insíonn “Bailíochtaigh” an bhfuil teastas aistarraingthe inniu, ach ní insíonn sé cathain a aistarraingíodh é.",
+                "Oibríonn síniú le teastas ar Windows faoi láthair; tiocfaidh sé ar Linux agus macOS i leagan níos déanaí."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

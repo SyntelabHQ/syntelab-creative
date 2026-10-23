@@ -1,0 +1,50 @@
+/* A tab of Scribe, with what is said over it while files are held over the window. */
+.tab {
+  position: relative;
+  height: 100%;
+  min-height: 0;
+}
+
+/* Where dropped files will land: the whole tab. */
+.dropHint {
+  position: absolute;
+  inset: 12px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 2px dashed var(--sc-accent);
+  border-radius: var(--sc-radius-m);
+  background: color-mix(in srgb, var(--sc-accent-soft) 85%, transparent);
+  color: var(--sc-text);
+  font-size: 16px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.dropProblem {
+  position: absolute;
+  inset-block-start: 12px;
+  inset-inline: 12px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px 6px 14px;
+  border: 1px solid var(--sc-danger);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface);
+  font-size: 14px;
+}
+
+.dropProblem > svg {
+  flex: none;
+  color: var(--sc-danger);
+}
+
+.dropProblem > span {
+  flex: 1;
+  min-width: 0;
+}

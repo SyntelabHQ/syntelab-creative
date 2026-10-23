@@ -1,0 +1,61 @@
+/* What the currency converter says of its rates: when they are of, and the way to read them again. */
+.line {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 14px;
+  min-height: 30px;
+  padding: 4px 12px;
+  border-block-start: 1px solid var(--sc-border);
+  background: var(--sc-bg);
+  color: var(--sc-muted);
+  font-family: var(--sc-font, system-ui);
+  font-size: 12px;
+  text-align: start;
+}
+
+/* Rates that could not be read again: the last ones are used, and said to be old. */
+.part[data-old='true'] {
+  color: var(--sc-danger);
+}
+
+.refresh {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 22px;
+  padding: 1px 8px;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-s);
+  background: var(--sc-surface);
+  color: var(--sc-text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.refresh:hover:not(:disabled) {
+  border-color: var(--sc-accent);
+}
+
+.refresh:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.refresh[data-reading='true'] > svg {
+  animation: turning 0.9s linear infinite;
+}
+
+@keyframes turning {
+  to {
+    rotate: 360deg;
+  }
+}
+
+/* The names of the two services the rates come from: small, at the end of the line. */
+.credits {
+  margin-inline-start: auto;
+  color: var(--sc-muted);
+  font-size: 11px;
+}

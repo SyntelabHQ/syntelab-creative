@@ -1,0 +1,117 @@
+/* The tools: what they are applied to, then the groups, which scroll. */
+.panel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+}
+
+.scope {
+  margin: 0 4px;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.groups {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* A group of tools: its name on a band, so it reads as the level above them. */
+.groupName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+  font: inherit;
+  font-weight: 700;
+  text-align: start;
+  cursor: pointer;
+}
+
+.groupName:hover,
+.groupName[aria-expanded='true'] {
+  background: var(--sc-accent-soft);
+}
+
+.tool {
+  margin-inline-start: 8px;
+  border: 1px solid transparent;
+  border-radius: var(--sc-radius-m);
+}
+
+.tool[data-open='true'] {
+  border-color: var(--sc-accent);
+  background: var(--sc-surface);
+}
+
+.toolName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 34px;
+  padding: 4px 10px;
+  border: 0;
+  border-radius: var(--sc-radius-m);
+  background: none;
+  color: var(--sc-text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.toolName:hover {
+  background: var(--sc-surface-2);
+}
+
+.tool[data-open='true'] > .toolName {
+  font-weight: 600;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4px 12px 12px;
+}
+
+.hint {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.count,
+.done {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.done {
+  color: var(--sc-text);
+  font-weight: 600;
+}
+
+.problem {
+  margin: 0;
+  color: var(--sc-danger);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}

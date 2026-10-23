@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Otvieranie a čítanie",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Otvieranie dokumentu",
+          "body": [
+            "Súbor → Otvoriť (Ctrl+O) otvorí PDF vo vlastnej karte. „Otvoriť viac súborov naraz“ otvorí každý vybraný súbor vo svojej karte.",
+            "Otvierajú sa aj súbory, ktoré nie sú PDF, ako stránky: obrázky (PNG, JPEG, TIFF, WebP a mnoho ďalších), textové a webové súbory, e-knihy, XPS a kancelárske dokumenty. Takýto dokument sa zatiaľ nikam neukladá: „Uložiť“ vás opýta, kam.",
+            {
+              "note": "Kancelárske dokumenty (Word, Excel, PowerPoint, OpenDocument) sú konvertované programom Word, Excel alebo PowerPoint, prípadne LibreOffice, podľa toho, ktorý je v počítači. Bez jedného z nich sa nedajú otvoriť."
+            },
+            "Súbory pretiahnuté na prázdnu kartu sa zoskupia do zväzku; pri pretiahnutí na dokument sa ich stránky k nemu pridajú.",
+            "Vo Windows môže byť PDF Organizer aplikáciou, ktorá otvára súbory PDF po dvojitom kliknutí: na jeho úvodnej stránke „Nastaviť ako predvolenú“ otvorí nastavenia Windows, kde pre súbory PDF vyberiete Syntelab Creative."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Zobrazovanie stránok",
+          "body": [
+            "Menu Zobraziť určuje, ako sa dokument zobrazuje; nič v ňom nemení samotný súbor.",
+            {
+              "points": [
+                "Priblíženie: priblížiť, vzdialiť, skutočná veľkosť, prispôsobiť stránke, prispôsobiť šírke, prispôsobiť výške. Priblíženie funguje aj pomocou Ctrl a kolieska myši.",
+                "Zobrazenie stránok: jedna stránka alebo dve vedľa seba, s titulnou stranou alebo bez nej a posúvanie všetkých stránok ako jedného dlhého pásu.",
+                "Vodítka: pravítka a mriezka v jednotke zvolenej v Nastaveniach.",
+                "„Zobraziť náhľady“: malé stránky na boku. Kliknutím na jednu z nich na ňu prejdete; v tom istom paneli sa nachádzajú aj záložky dokumentu.",
+                "„Režim čítania“ skryje nástroje; „Režim na celú obrazovku“ skryje všetko okrem stránky. Kláves Esc ukončí oba režimy."
+              ]
+            },
+            "Pás nad stránkami (rýchly nástrojový panel) obsahuje číslo stránky, priblíženie a tlačidlá, ktoré ste si vybrali v Nastaveniach."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Hľadanie textu",
+          "body": [
+            "Upraviť → Hľadať v dokumente (Ctrl+F): zadajte slovo alebo frázu; miesta, kde sa našli, sú na stránkach označené a šípky slúžia na prechod z jedného na druhé.",
+            {
+              "note": "Skenovaný dokument je súbor obrázkov stránok a neobsahuje text na hľadanie, kým nie je text rozpoznaný: pozrite si „Rozpoznávanie textu (OCR)“. "
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Vlastnosti dokumentu",
+          "body": [
+            "Súbor → Vlastnosti dokumentu zobrazí informácie, ktoré dokument obsahuje o sebe: názov, autora, dátumy vytvorenia a úpravy, počet strán a veľkosť súboru."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ukladanie, tlač a odosielanie",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Uložiť a Uložiť ako",
+          "body": [
+            "Žiadna z vašich zmien sa nezapíše do súboru na disku, kým ho neuložíte. Dovtedy môžete každý krok vrátiť späť (Ctrl+Z) alebo zopakovať (Ctrl+Y).",
+            {
+              "points": [
+                "Uložiť (Ctrl+S) prepíše dokument do jeho súboru.",
+                "Uložiť ako (Ctrl+Shift+S) zapíše dokument do nového súboru, ktorý následne nahradí pôvodný v karte; starý súbor zostane nezmenený."
+              ]
+            },
+            "Ak je súbor otvorený v inom programe, nemožno ho prepísať: program vás na to upozorní a vaše zmeny si ponechá, aby ste ich mohli uložiť pod iným názvom.",
+            {
+              "note": "Uloženie upraveného dokumentu do súboru podpísaného certifikátom odstráni jeho podpisy. Program sa vás najprv opýta a ponúkne možnosť „Uložiť ako nový súbor“; túto otázku môžete vypnúť v Nastavenia → Podpisy."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Vytváranie PDF",
+          "body": [
+            "Súbor → Vytvoriť PDF vytvorí nový dokument:",
+            {
+              "points": [
+                "z jedného súboru alebo z viacerých: spojených do jedného PDF, alebo jedného PDF pre každý súbor;",
+                "z webovej stránky na adrese, ktorú zadáte (stránka sa uloží pomocou prehliadača nainštalovaného v počítači);",
+                "z obsahu schránky;",
+                "z prázdnych strán vo veľkosti, ktorú si vyberiete."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Export do iného formátu",
+          "body": [
+            "Súbor → Exportovať ako zapíše dokument v inom formáte: Word alebo OpenDocument text, čistý text, webová stránka, XML, obrázky strán (PNG, JPEG, TIFF, SVG) alebo PostScript. Pre obrázky si zvolíte rozlíšenie.",
+            "Samotný dokument zostáva ako PDF; exportom vznikne nový súbor.",
+            {
+              "note": "Text možno exportovať len tam, kde dokument text obsahuje. Najprv rozpoznajte text zo skenu."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Tlač",
+          "body": [
+            "Súbor → Tlačiť (Ctrl+P) vytlačí dokument tak, ako je momentálne usporiadaný, vrátane všetkého, čo ste doň nakreslili. Vyberte stránky, papier, či majú listy byť vo vertikálnej alebo horizontálnej orientácii a či majú byť stránky prispôsobené veľkosti listu alebo vytlačené v skutočnej veľkosti; následne sa otvorí systémové okno tlače, v ktorom vyberiete tlačiareň.",
+            "Papier, orientácia a škalovanie, s ktorými okno tlače štartuje, sú nastavené v Nastavenia → Tlač."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Zdieľanie",
+          "body": [
+            "Súbor → Zdieľať predá dokument do systémového okna „Zdieľať“: e-mail, zariadenie v blízkosti a ďalšie aplikácie. Dokument sa zdieľa v aktuálnom stave, vrátane vašich neuložených zmien."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organizovanie stránok",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Zobrazenie Organizovať",
+          "body": [
+            "Organizovať → Organizovať stránky zobrazí každú stránku v mriezke. Na disku sa nič nezmení, kým dokument neuložíte.",
+            {
+              "points": [
+                "Výber: kliknutím vyberte stránku; Ctrl+klik pridá ďalšiu, Shift+klik vyberie rad. V ponuke nájdete možnosti „Vybrať všetky strany“, „Zrušiť výber“, „Vybrať nepárne strany“ a „Vybrať párne strany“.",
+                "Presun: pretiahnutím presuňte vybrané stránky na nové miesto alebo použite „Presunúť doľava“ a „Presunúť doprava“.",
+                "Otočenie: „Vybrané: otočiť doľava“ a „Vybrané: otočiť doprava“ otočia vybrané stránky; „Všetky strany: otočiť doľava“ a „Všetky strany: otočiť doprava“ otočia všetky stránky.",
+                "Odstránenie: klávesou Delete alebo možnosťou „Odstrániť stránky“. Dokument musí obsahovať aspoň jednu stránku.",
+                "Kopírovanie, vystrihovanie a vkladanie (Ctrl+C, Ctrl+X, Ctrl+V): stránky možno vložiť do rovnakého dokumentu alebo do iného dokumentu otvoreného v programe.",
+                "Veľkosť: posúvač hore zväčšuje alebo zmenšuje stránky; rovnako aj Ctrl + koliesko myši nad stránkami a „Priblížiť“ a „Vzdialiť“ (Ctrl+= a Ctrl+-). Veľkosť sa zapamätá."
+              ]
+            },
+            "Tie isté príkazy fungujú aj bez mriežky, priamo na zobrazenej stránke."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Extrakcia stránok a rozdelenie dokumentu",
+          "body": [
+            "Organizovať → Extrahovať strany presunie vybrané strany do nového dokumentu vo vlastnej karte, ktorý ešte nie je uložený. Môžete si tiež nechať každú stránku zapísať ako samostatný súbor a vybrať si, či majú byť stránky z pôvodného dokumentu odstránené.",
+            "Organizovať → Rozdeliť dokument zapíše dokument ako niekoľko menších súborov; tento dokument zostane nezmenený.",
+            "Názvy nových dokumentov zodpovedajú vzorom v Nastavenia → Názvy nových dokumentov.",
+            {
+              "note": "Podpisy vytvorené certifikátom sa do extrahovaných alebo rozdelených dokumentov neprenášajú: podpis je platný len pre súbor, v ktorom bol vytvorený."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Vkladanie a nahrádzanie strán",
+          "body": [
+            {
+              "points": [
+                "Organizovať → Vložiť stránky pridá stránky z iného súboru (PDF, obrázok, text, kancelársky dokument) za vybranú stranu alebo na koniec.",
+                "Organizovať → Nahradiť stránky vloží stránky z iného súboru namiesto tých vybraných.",
+                "Vložiť → Prázdna strana pridá prázdnu stranu rovnakej veľkosti ako susedná strana."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Orezávanie a zmena veľkosti strán",
+          "body": [
+            "Upraviť → Orezať strany odreže okraje strán podľa zadaných alebo pretiahnutých okrajov. Zo súboru sa nič neodstráni: stránky sa len zobrazia v menšom rozsahu.",
+            "Upraviť → Zmeniť veľkosť strán presunie stránky na inú veľkosť papiera (A4, Letter a ďalšie). Obsah môže byť prispôsobený veľkosti alebo ponechaný v pôvodnej veľkosti a umiestnený na jedno z deviatich miest na novom liste.",
+            "V oboch prípadoch sa pýta, ktoré stránky: všetky, vybrané, rozsah, nepárne alebo párne."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kombinovanie súborov",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "Zväzok",
+          "body": [
+            "Kombinovať → Nový zväzok otvorí miesto na zber súborov a ich zápis do jedného PDF.",
+            {
+              "steps": [
+                "Pridajte súbory pomocou „Pridať súbory“ alebo ich pretiahnite do zväzku. PDF, obrázky, text a kancelárske dokumenty môžu byť zmiešané.",
+                "Pretiahnutím kariet ich zoraďte podľa želania alebo použite šípky na každej karte.",
+                "Otvorte kartu, aby ste vybrali, ktoré z jej strán majú byť zahrnuté.",
+                "„Kombinovať súbory“ ich zapíše v poradí do jedného nového dokumentu vo vlastnej karte."
+              ]
+            },
+            "Samotné súbory sa nezmenia.",
+            "Posúvač hore zväčšuje alebo zmenšuje stránky na kartách; rovnako aj Ctrl + koliesko myši a „Priblížiť“ a „Vzdialiť“ (Ctrl+= a Ctrl+-). Veľkosť sa zapamätá."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Písanie a kreslenie na stránkach",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Nástroje",
+          "body": [
+            "Kresliace nástroje sa otvoria ako panel vedľa stránky, ako mriezka tlačidiel alebo ako zoznam s názvami (podľa Nastavení). S vybraným nástrojom pretiahnutím alebo kliknutím na stránke vkladajte prvky; klávesou Escape nástroj odložíte.",
+            {
+              "points": [
+                "Text: kliknite a píšte. Typ písma, veľkosť, farba, tučné, kurzíva a zarovnanie sú v paneli.",
+                "Obrázok: vyberte obrázok, potom pretiahnutím určte jeho polohu a veľkosť.",
+                "Tvary: obdĺžnik, elipsa, čiara, šípka, zaškrtnutie, krížik, bod.",
+                "Zvýraznenie: pretiahnite nad to, čo má vyniknúť; obsah pod ním zostane čitateľný."
+              ]
+            },
+            "Pomocou funkcie „Vybrať, presunúť a zmeniť veľkosť“ môžete značku znova vybrať: pretiahnite ju, ťahajte za jej rohy, otočte ju pomocou úchytky, zmeňte jej farby v paneli alebo ju odstráňte klávesou Delete. Značky je možné kopírovať a vkladať aj na iné stránky.",
+            "Všetko nakreslené sa pri uložení zapíše do súboru."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Zmena vlastného textu a obrázkov dokumentu",
+          "body": [
+            "Nástroj „Upraviť text a obrázky dokumentu“ zvýrazní to, čo sa na stránke nachádza. Kliknite na riadok textu, aby ste ho prepísali, alebo na obrázok, aby ste ho presunuli, zmenili jeho veľkosť, otočili alebo odstránili.",
+            {
+              "note": "Týmto sa zmení jeden riadok alebo jeden obrázok naraz. Odseky sa pri predĺžení riadka nezarovnajú automaticky a obrázok, ktorý leží nad iným, sa vyberie spolu s ním. Pri veľkých zmenách upravte dokument v programe, v ktorom bol vytvorený."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Černenie",
+          "body": [
+            "Ďalšie nástroje → Černiť trvalo odstráni to, čo nesmie byť čítané: na ktorejkoľvek strane nad to pretiahnite čierny rámček. Po uložení sa text a obrázky pod rámčekom zo súboru odstránia, nielen zakryjú.",
+            {
+              "note": "Upravený dokument uložte pod novým názvom a originál si uchovajte v bezpečí: to, čo bolo začiernené, už nemožno vrátiť."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Vodoznak",
+          "body": [
+            "Upraviť → Vodoznak dopíše slová alebo vloží obrázok na vybrané stránky: rovno alebo šikmo, na jednom z deviatich miest, vo veľkosti a s priesvitnosťou, ktorú nastavíte. Na každej stránke je potom značka ako každá iná a stále ju je možné presunúť alebo odstrániť."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Čísla strán, hlavička a pätička, Batesove čísla",
+          "body": [
+            {
+              "points": [
+                "Upraviť → Čísla strán: formát (1, 1 / 12, Strana 1 a ďalšie), umiestnenie a výber strán, ktoré budú číslované.",
+                "Vložiť → Hlavička a pätička: text na ktoromkoľvek zo šiestich miest. V nej {page} zastupuje číslo strany, {pages} počet strán, {date} dnešný dátum a {file} názov dokumentu.",
+                "Vložiť → Batesovo číslovanie: čísla za sebou s predponou alebo príponou (ABC000123), používané pri dokumentoch k spisom."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Odkazy, záložky a priložené súbory",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Odkazy",
+          "body": [
+            "Vložiť → Odkaz: pretiahnite cez miesto, na ktoré sa má kliknúť, a následne zadajte cieľ: webovú adresu alebo stranu v tomto dokumente.",
+            "Odkazy v dokumente fungujú počas čítania: kliknutím na odkaz na stranu sa na ňu presuniete; webová alebo e-mailová adresa sa odovzdá vášmu prehliadaču alebo e-mailovému programu."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Záložky",
+          "body": [
+            "Vložiť → Nová záložka: kliknite na miesto, na ktoré má odkazovať, a dajte jej názov. Vložiť → Záložky otvorí zoznam, v ktorom môžete záložku premenovať alebo odstrániť. Zmeny sa zapíšu pri uložení."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Priložené súbory",
+          "body": [
+            "Vložiť → Priložiť súbor: vyberte súbor a kliknite na miesto, kde sa má umiestniť spinka. Súboru môžete dať názov a autora, zmeniť farbu spinky, jej veľkosť alebo ju otočiť. Súbor zostane v PDF po uložení.",
+            "Vložiť → Priložené súbory vypíše všetky súbory v dokumente; každý súbor môžete uložiť na disk alebo odstrániť. Kliknutím na spinku sa otvorí rovnaký zoznam."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formuláre",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Vyplňovanie formulára",
+          "body": [
+            "Vložiť → Vyplniť formulár zobrazí polia v dokumente: vypĺňajte textové polia, zaškrtávajte polia alebo vyberajte zo zoznamov. Odpovede sa zapíšu do súboru pri uložení."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Vytváranie formulára",
+          "body": [
+            "Ponuka Vložiť pridáva do ľubovoľného dokumentu polia: textové pole, zaškrtávacie políčko, prepínacie tlačidlá (z ktorých možno vybrať jedno), zoznam na výber a pole podpisu ponechané prázdne pre podpisujúceho.",
+            "Pretiahnite pole na stránku na miesto, kde má byť. Podobne ako ostatné značky, aj pole môžete presúvať a zmeniť jeho veľkosť až do momentu uloženia; potom sa stane súčasťou formulára."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Podpisovanie",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Pridanie nakresleného podpisu",
+          "body": [
+            "Podpísať → Pridať podpis umiestni obrázok podpisu na stránku: nakreslený pomocou vybraného pera, napísaný konkrétnym písmom alebo importovaný z obrázka (s možnosťou „Ponechať len ťahy pera bez pozadia papiera“ pri fotografii podpisaného listu). Pod podpis možno dopísať dátum.",
+            "Pretiahnite podpis na miesto na stránke, kam patrí. Použité podpisy sa uchovávajú v tomto počítači, aby ich bolo možné znova použiť.",
+            {
+              "note": "Toto je obrázok: nijak nedokazuje, kto ho tam umiestil. Podpis, ktorý dokazuje, kto podpísal a že sa odvtedy nič nezmenilo, sa vytvára pomocou certifikátu."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Podpisovanie certifikátom",
+          "body": [
+            "Podpísať → Podpísať certifikátom vytvorí digitálny podpis: uvádza, kto podpísal, a zapečatí dokument, takže každá neskoršia zmena bude viditeľná.",
+            {
+              "steps": [
+                "Pretiahnite na stránku oblasť, kde sa má podpis zobraziť (najprv sa o tom zobrazí okno; toto oznámenie možno vypnúť). Ak chcete podpísať bez zobrazenia podpisu na stránkach, zvoľte namiesto toho možnosť „Podpísať bez zobrazenia na strane“.",
+                "Vyberte certifikát: jeden z certifikátov počítača (ak je v čítačke karta alebo token, zobrazia sa medzi nimi) alebo súbor .pfx / .p12 spolu s jeho heslom. Potom kliknite na „Pokračovať“.",
+                "Zvoľte vzhľad podpisu. V časti „Dôvod a miesto“ môžete napísať, prečo a kde podpisujete: tieto údaje sa zapíšu do podpisu a, ak je to v nastaveniach vzhľadu, aj na stránku. Zaškrtnite „Po podpise uzamknúť dokument“, ak nechcete, aby ho po vás niekto ďalší podpísal alebo zmenil. Nechajte zaškrtnuté „Pridať dôveryhodný čas (časová pečiatka)“, aby autorita potvrdila, kedy ste podpísali.",
+                "Kliknite na „Podpísať“ a následne zvoľte miesto uloženia podpísaného súboru. V tomto bode bude token vyžadovať PIN."
+              ]
+            },
+            "Podpísaný súbor sa otvorí namiesto pôvodného dokumentu. Program nikdy neukladá heslá ani PIN-kódy.",
+            {
+              "note": "Kvalifikovaný podpis je podpis vytvorený týmto spôsobom pomocou kvalifikovaného certifikátu na karte alebo tokene. Podpísanie prebieha vo vašom počítači; online idú len časová pečiatka a overenie vášho certifikátu, ktoré odosielajú odtlačky a sériové číslo certifikátu, nikdy dokument."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Vzhľady podpisov",
+          "body": [
+            "Vzhľad definuje, ako vyzerá podpis certifikátom na stránke. Uložte si viacero vzhľadov pod vlastnými názvami: napríklad jeden pre podpis za spoločnosť a jeden pre podpis vo vlastnom mene.",
+            {
+              "points": [
+                "Obrázok: žiadny, zo súboru (pečiatka, naskenovaný podpis) alebo nakreslený priamo tu.",
+                "Zobrazovaný text: meno, dátum, dôvod, miesto, pričom každý môže byť s popisom alebo bez neho.",
+                "Vlastné riadky pod menom, napríklad funkcia a spoločnosť.",
+                "\"Štandardný text\" je tam vždy: kto podpísal a kedy."
+              ]
+            },
+            "V okne podpisu: \"Nový…\", \"Upraviť…\", \"Odstrániť\". Naposledy použitý sa ponúka ako prvý. Nastavenia vzhľadu sa ukladajú na tomto počítači."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Viaceré podpisy a uzamknutie",
+          "body": [
+            "Dokument môžu podpísať viacerí ľudia postupne. Otvorte podpísaný súbor a podpíšte ho bez toho, aby ste niečo zmenili: váš podpis sa pridá na koniec súboru a predchádzajúce podpisy zostanú platné.",
+            "„Po podpise uzamknúť dokument“ (vypnuté, pokiaľ ho nezaškrtnete) uzavrie dokument: po vás ho už nikto nemôže podpísať a už v ňom nemožno nič zmeniť. Túto operáciu nemožno zvrátiť.",
+            {
+              "note": "Ak zmeníte podpísaný dokument pred tým, než ho podpíšete znova, musí byť napísaný nanovo a predchádzajúce podpisy sa vynechajú. Okno podpisu vás upozorní: ak si ich chcete zachovať, znova otvorte súbor a podpíšte ho bez toho, aby ste niečo zmenili."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Časové pečiatky",
+          "body": [
+            "Časová pečiatka je podpísané potvrdenie autority časových pečiatok o tom, kedy niečo existovalo. Čas v podpise inak pochádza z hodín počítača podpisovateľa, ktoré môže ktokoľvek nastaviť; časová pečiatka okamih preukazuje a udrží podpis preukázateľný aj po skončení platnosti certifikátu (PAdES B-T).",
+            {
+              "points": [
+                "Podpisy ju dostanú, keď je v okne podpisovania zaškrtnuté „Pridať dôveryhodný čas (časová pečiatka)“. V Nastavenia → Podpisy sa určuje, či je na začiatku zaškrtnuté, tu aj pri hromadnom spracovaní.",
+                "Podpísať → Pridať časovú pečiatku dá celému dokumentu vlastnú časovú pečiatku, bez certifikátu: preukazuje, že dokument v tej chvíli existoval presne v tejto podobe. Uloží sa ako nový súbor; podpisy, ktoré súbor má, zostanú platné."
+              ]
+            },
+            "Autoritou je DigiCert (http://timestamp.digicert.com), bezplatná a dôveryhodná pre Adobe Reader aj Windows; inú možno nastaviť v Nastavenia → Podpisy. Dostáva len odtlačok (SHA-256), nikdy dokument, a je potrebné pripojenie na internet. Keď podpis dostane časovú pečiatku, u vydavateľa vášho certifikátu sa tiež overí, či je certifikát stále platný, a jeho odpoveď sa uloží do podpisu (dlhodobé overenie): Adobe Reader potom môže zobraziť podpis ako platný, teraz aj po skončení platnosti certifikátu.",
+            {
+              "note": "Ak autoritu nemožno kontaktovať, nič sa nepodpíše ani nezapíše: skúste to znova alebo zrušte zaškrtnutie časovej pečiatky a podpíšte bez nej."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Kontrola podpisov",
+          "body": [
+            "Podpísať → Overiť podpisy vypíše každý certifikátový podpis súboru: kto podpísal, kto certifikát vystavil, kedy, dôvod a miesto, a",
+            {
+              "points": [
+                "či je dokument odvtedy nezmenený (pridanie ďalšieho podpisu sa nepovažuje za zmenu);",
+                "či podpis uzamyká dokument;",
+                "či tento počítač dôveruje autorite za certifikátom a či je certifikát dnes platný;",
+                "čas potvrdený jeho časovou pečiatkou a ktorou autoritou, ak ju má. Uvedená je aj časová pečiatka celého dokumentu, s vlastnou kontrolou."
+              ]
+            },
+            "Kontrola sa vykonáva na súbore v stave, v ktorom bol naposledy uložený, a prebieha na tomto počítači bez pripojenia k internetu. Kliknutím na podpis na stránke sa tento zoznam otvorí na danom podpise. Pod každým podpisom tlačidlo „Zobraziť certifikát“ otvorí okno certifikátu systému Windows (jeho reťazec a všetky podrobnosti; odtiaľ tlačidlo „Nainštalovať certifikát“ zabezpečí, aby tento počítač dôveroval certifikátu, ktorý poznáte) a tlačidlo „Overiť“ sa – len keď ho stlačíte – online opýta vydavateľa certifikátu, či bol certifikát zrušený."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ďalšie nástroje",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Rozpoznávanie textu (OCR)",
+          "body": [
+            "Ďalšie nástroje → Rozpoznať text (OCR) prečíta slová na skenovaných stranách a zapíše ich do neviditeľných vrstiev strán, takže v dokumente je možné vyhľadávať a jeho text kopírovať a exportovať. Vzhľad strán sa nezmení.",
+            "Zaškrtnite len jazyky, v ktorých sú strany napísané; strany, ktoré už text obsahujú, zostanú nezmenené.",
+            {
+              "note": "Čítanie zabezpečuje engine Tesseract, ktorý je bezplatný program inštalovaný samostatne. Bez neho okno zobrazí príkaz na jeho inštaláciu vo Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Zmenšenie veľkosti dokumentu",
+          "body": [
+            "Ďalšie nástroje → Komprimovať uloží dokument ako menší súbor tým, že zmenší počet pixelov jeho fotografií a skenov. K dispozícii sú tri úrovne kompresie; text a kresby zostávajú tak ostré ako predtým. Dokument s malým množstvom obrázkov zmenší len minimálne."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Porovnávanie dvoch dokumentov",
+          "body": [
+            "Ďalšie nástroje → Porovnať dokumenty: vyberte iný PDF. Oba sú zobrazené vedľa seba, strana po strane, pričom strany s odlišným textom sú označené a uvedené sú riadky, ktoré sa nachádzajú len v jednom z dokumentov."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Hromadné spracovanie: viac súborov naraz",
+          "body": [
+            "Ďalšie nástroje → Hromadné spracovanie vykoná rovnaké operácie na viacerých súboroch vo vlastnej karte. Každý výsledok je nový súbor. Ak by výsledky mali nahradiť súbory, ktoré už sú v priečinku (vaše vlastné súbory, keď idú do svojho priečinka bez pridania čohokoľvek k názvu), najprv sa zobrazí otázka, či ich chcete nahradiť, preskočiť alebo akciu zrušiť. Súbor sa nahradí až po dokončení jeho výsledku; súbor, ktorý je otvorený (na karte tu alebo v inom programe), zostane nezmenený a označí sa ako nespracovaný.",
+            {
+              "steps": [
+                "Vľavo pridajte súbory: „Pridať súbory“, „Pridať priečinok“ (vrátane podpriečinkov) alebo ich jednoducho pretiahnite.",
+                "Vpravo zaškrtnite požadované operácie. Každý súbor sa v každom prípade stane PDF; okrem toho môžete otočiť strany, rozpoznať text, pridať hlavičku a pätičku, vodoznak alebo čísla strán, zmenšiť veľkosť súborov, podpísať ich certifikátom alebo ich exportovať do iného formátu. Čísla určujú poradie vykonania.",
+                "Vyberte spôsob uloženia: samostatný súbor pre každý vstup alebo všetko do jedného PDF (v poradí zoznamu) a priečinok, do ktorého sa výsledky uložia. Keď sú všetky súbory z jedného priečinka, tento priečinok sa vyberie automaticky, kým nevyberiete iný; inak je to priečinok, ktorý ste vybrali naposledy.",
+                "„Spustiť“. Pri každom súbore sa zobrazí stav spracovania; beh možno medzi súbormi zastaviť."
+              ]
+            },
+            {
+              "points": [
+                "Recepty: „Uložiť ako recept“ si zapamätá všetky vaše voľby (okrem súborov a hesiel) pod určitým názvom, aby ste ich mohli neskôr znova nastaviť jedným kliknutím.",
+                "„Zachovať štruktúru priečinkov súborov vo výsledkoch“ obnoví štruktúru priečinkov pri pridanom priečinku.",
+                "„Vytvoriť report o behu“ vytvorí vedľa výsledkov textový súbor s informáciami o tom, čo bolo úspešne zapísané a čo zlyhalo.",
+                "PDF, ktorý je len podpísaný, si zachová svoje podpisy; ak sa s ním v rámci jedného procesu vykoná čokoľvek iné, bude prepísaný a podpisy sa vynechajú."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nastavenia",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Nastavenia PDF Organizer",
+          "body": [
+            "Súbor → Nastavenia (alebo Nastavenia v bočnom paneli a následne PDF Organizer). Každé nastavenie možno vrátiť samostatne alebo všetky naraz.",
+            {
+              "points": [
+                "Pri otváraní dokumentu: veľkosť zobrazenia dokumentu pri otvorení, posúvanie alebo zobrazenie jednej strany naraz, zobrazenie náhľadov.",
+                "Jednotky, pravítka a mriežka: jednotka (milimetre, palce, body), pravítka, mriežka a jej rozstup.",
+                "Tlač: papier, orientácia a škalovanie, s ktorými sa otvorí okno tlače.",
+                "Rýchla nástrojová lišta: ktoré tlačidlá sa nachádzajú na lište nad stranami.",
+                "Názvy nových dokumentov: vzory pre extrahované strany, nové dokumenty a PDF, do ktorého hromadné spracovanie spája viac súborov.",
+                "Podpisy: či má funkcia „Uložiť“ pred prepísaním podpísaného súboru vyžiadať potvrdenie.",
+                "Klávesové skratky: kliknite na klávesy príkazu a následne stlačte nové klávesy."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "O PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "O PDF Organizer",
+          "body": [
+            "PDF Organizer je PDF aplikácia od Syntelab Creative: číta PDF dokumenty, usporadúva a kombinuje ich strany, dopisuje a kreslí do nich, vyplňuje a vytvára formuláre, podpisuje certifikátom a kontroluje podpisy, a tieto operácie vykonáva aj hromadne pre viac súborov naraz.",
+            "Aplikácia je nová a niektoré z jej funkcií sú prvým krokom k rozvoju. Ak vám v práci s vašimi dokumentmi chýba nejaká funkcia, napíšte nám cez Pomoc → Spätná väzba: takto vieme, na čom máme ďalej pracovať."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Na čom je PDF Organizer postavený",
+          "body": [
+            {
+              "points": [
+                "Čítanie, kreslenie a písanie PDF: MuPDF.",
+                "Rozpoznávanie textu (OCR): Tesseract, ak je nainštalovaný v počítači.",
+                "Otvieranie kancelárskych dokumentov: Word, Excel a PowerPoint, alebo LibreOffice, podľa toho, čo je nainštalované.",
+                "Ukladanie webovej stránky ako PDF: prehliadač nainštalovaný v počítači.",
+                "Podpisovanie certifikátom: certifikačné služby systému Windows; podpisy sú vytvárané podľa požiadaviek štandardu PAdES."
+              ]
+            },
+            "To, čo má spoločné s ostatnou časťou programu, nájdete v sekcii „O Syntelab Creative“."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Čo PDF Organizer zatiaľ neumie",
+          "body": [
+            {
+              "points": [
+                "Kancelárske dokumenty sa otvárajú pomocou kancelárskeho balíka v počítači; bez Wordu, Excelu, PowerPointu alebo LibreOffice sa nedajú otvoriť. Pracujeme na vlastnom konvertore: pozrite si „Na čom pracujeme“.",
+                "Rozpoznávanie textu vyžaduje engine Tesseract, ktorý je potrebné nainštalovať samostatne.",
+                "Text dokumentu sa mení po jednom riadku; odseky sa nepretekajú automaticky.",
+                "Obrázky vytlačené v štyroch farbách (CMYK) nie je možné vybrať a presunúť.",
+                "Tlačidlo „Overiť“ zistí, či je certifikát dnes zrušený, nie kedy bol zrušený.",
+                "Podpisovanie certifikátom momentálne funguje vo Windows; pre Linux a macOS bude dostupné v neskoršej verzii."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

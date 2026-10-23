@@ -1,0 +1,90 @@
+.strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 2px;
+  padding-block: 8px 0;
+  padding-inline: 12px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-surface-2);
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  margin-block-end: -1px;
+  border: 1px solid transparent;
+  border-start-start-radius: var(--sc-radius-s);
+  border-start-end-radius: var(--sc-radius-s);
+  color: var(--sc-muted);
+}
+
+.tab[data-selected='true'] {
+  border-color: var(--sc-border);
+  border-block-end-color: var(--sc-bg);
+  background: var(--sc-bg);
+  color: var(--sc-text);
+  font-weight: 500;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-block: 9px;
+  padding-inline: 16px;
+  border: 0;
+  border-radius: inherit;
+  background: none;
+  color: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.title:not(:last-child) {
+  padding-inline-end: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--sc-radius-xs);
+  background: var(--app-color, var(--sc-muted));
+}
+
+/* The app's own icon: in its color, or white on a square of it (ui-kit `base.css`). */
+.appIcon {
+  display: flex;
+  margin: -2px;
+  padding: 2px;
+  border-radius: var(--sc-radius-s);
+  background: var(--app-tile, transparent);
+  color: var(--app-tile-ink, var(--sc-muted));
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-inline-end: 6px;
+  border: 0;
+  border-radius: var(--sc-radius-s);
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.close:hover {
+  background: var(--sc-surface-2);
+  color: var(--sc-text);
+}
+
+/* A tab with changes that are not saved yet. */
+.unsaved {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--sc-accent);
+}

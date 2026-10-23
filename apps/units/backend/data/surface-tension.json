@@ -1,0 +1,40 @@
+{
+  "id": "surface-tension",
+  "category": "physics",
+  "icon": "water",
+  "base": "newton-meter",
+  "startsWith": ["newton-meter","dyne-centimeter"],
+  "decimals": 3,
+  "groups": [
+    { "id": "si_metric", "color": "#2563eb" },
+    { "id": "cgs", "color": "#dc2626" },
+    { "id": "imperial", "color": "#ea580c" },
+    { "id": "energy_area", "color": "#9333ea" }
+  ],
+  "units": [
+    {"id":"newton-meter","symbol":"N/m","group":"si_metric","factor":"1","popular":true},
+    {"id":"millinewton-meter","symbol":"mN/m","group":"si_metric","factor":"0.001","popular":true},
+    {"id":"micronewton-meter","symbol":"µN/m","group":"si_metric","factor":"0.000001","decimals":1},
+    {"id":"nanonewton-meter","symbol":"nN/m","group":"si_metric","factor":"0.000000001"},
+    {"id":"kilonewton-meter","symbol":"kN/m","group":"si_metric","factor":"1000"},
+    {"id":"newton-centimeter","symbol":"N/cm","group":"si_metric","factor":"100","popular":true},
+    {"id":"newton-millimeter","symbol":"N/mm","group":"si_metric","factor":"1000"},
+    {"id":"dyne-centimeter","symbol":"dyn/cm","group":"cgs","factor":"0.001","popular":true,"decimals":1},
+    {"id":"dyne-meter","symbol":"dyn/m","group":"cgs","factor":"0.00001"},
+    {"id":"dyne-millimeter","symbol":"dyn/mm","group":"cgs","factor":"0.01"},
+    {"id":"gram-force-cm","symbol":"gf/cm","group":"cgs","factor":"0.9807","popular":true},
+    {"id":"kilogram-force-meter","symbol":"kgf/m","group":"cgs","factor":"9.807"},
+    {"id":"pound-force-inch","symbol":"lbf/in","group":"imperial","factor":"175.127","popular":true,"decimals":2},
+    {"id":"pound-force-foot","symbol":"lbf/ft","group":"imperial","factor":"14.5939","popular":true,"decimals":1},
+    {"id":"ounce-force-inch","symbol":"ozf/in","group":"imperial","factor":"10.9454"},
+    {"id":"poundal-inch","symbol":"pdl/in","group":"imperial","factor":"5.44309"},
+    {"id":"poundal-foot","symbol":"pdl/ft","group":"imperial","factor":"0.453592"},
+    {"id":"joule-m2","symbol":"J/m²","group":"energy_area","factor":"1","popular":true},
+    {"id":"millijoule-m2","symbol":"mJ/m²","group":"energy_area","factor":"0.001","popular":true},
+    {"id":"erg-cm2","symbol":"erg/cm²","group":"energy_area","factor":"0.001","popular":true,"decimals":1},
+    {"id":"erg-mm2","symbol":"erg/mm²","group":"energy_area","factor":"0.01"},
+    {"id":"calorie-cm2","symbol":"cal/cm²","group":"energy_area","factor":"41840"},
+    {"id":"kilocalorie-m2","symbol":"kcal/m²","group":"energy_area","factor":"4184"},
+    {"id":"btu-ft2","symbol":"BTU/ft²","group":"energy_area","factor":"11357"}
+  ]
+}

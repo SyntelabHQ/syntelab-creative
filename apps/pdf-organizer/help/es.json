@@ -1,0 +1,526 @@
+{
+  "title": "PDF Organizer",
+  "chapters": [
+    {
+      "title": "Apertura y lectura",
+      "topics": [
+        {
+          "id": "open",
+          "title": "Abrir un documento",
+          "body": [
+            "Archivo → Abrir (Ctrl+O) abre un PDF en una pestaña propia. «Abrir varios archivos a la vez» abre cada archivo en su propia pestaña.",
+            "También se pueden abrir archivos que no sean PDF como páginas: imágenes (PNG, JPEG, TIFF, WebP y muchos otros formatos), texto y archivos web, libros electrónicos, XPS y documentos de Office. Todavía no se han guardado; al pulsar «Guardar» se te preguntará dónde hacerlo.",
+            {
+              "note": "Los documentos de Office (Word, Excel y PowerPoint, y OpenDocument) se convierten con Word, Excel, PowerPoint o LibreOffice, según cuáles estén instalados en el equipo. Sin uno de ellos no se pueden abrir."
+            },
+            "Si sueltas archivos en una pestaña vacía, se agrupan en una colección; si los sueltas sobre un documento, sus páginas se añaden a él.",
+            "En Windows, PDF Organizer puede ser la aplicación que abre los archivos PDF al hacer doble clic en ellos: en su página de inicio, «Establecer como predeterminada» abre la configuración de Windows, donde eliges Syntelab Creative para los archivos PDF."
+          ]
+        },
+        {
+          "id": "view",
+          "title": "Ver las páginas",
+          "body": [
+            "El menú Ver controla cómo se muestra el documento; no modifica el archivo.",
+            {
+              "points": [
+                "Zoom: acercar, alejar, tamaño real, ajustar a la página, al ancho o al alto. También puedes usar Ctrl y la rueda del ratón.",
+                "Vista de página: una página o dos en paralelo, con o sin portada, y desplazamiento por todas las páginas como una tira larga.",
+                "Guías: reglas y cuadrícula en la unidad elegida en Ajustes.",
+                "«Mostrar miniaturas»: muestra las páginas en pequeño a un lado. Haz clic en una para ir a ella; los marcadores del documento aparecen en el mismo panel.",
+                "«Modo de lectura» oculta las herramientas; «Pantalla completa» oculta todo salvo la página. Pulsa Esc para salir de ambos modos."
+              ]
+            },
+            "La barra situada encima de las páginas (la barra de acceso rápido) muestra el número de página, el zoom y los botones que elegiste en Ajustes."
+          ]
+        },
+        {
+          "id": "find",
+          "title": "Buscar texto",
+          "body": [
+            "Editar → Buscar en el documento (Ctrl+F): escribe una palabra o frase; las coincidencias se marcan en las páginas y las flechas permiten ir de una a otra.",
+            {
+              "note": "Un documento escaneado contiene imágenes de las páginas y no tiene texto que se pueda buscar hasta que se reconozca mediante OCR. Consulta «Reconocer texto (OCR)»."
+            }
+          ]
+        },
+        {
+          "id": "properties",
+          "title": "Propiedades del documento",
+          "body": [
+            "Archivo → Propiedades del documento muestra los metadatos del documento: título, autor, fechas de creación y modificación, número de páginas y tamaño del archivo."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Guardar, imprimir y compartir",
+      "topics": [
+        {
+          "id": "save",
+          "title": "Guardar y Guardar como",
+          "body": [
+            "Los cambios no se escriben en el archivo del disco hasta que lo guardas. Hasta entonces, puedes deshacer (Ctrl+Z) y rehacer (Ctrl+Y) cada paso.",
+            {
+              "points": [
+                "Guardar (Ctrl+S) sobrescribe el archivo del documento.",
+                "Guardar como (Ctrl+Mayús+S) crea un archivo nuevo y lo abre en la pestaña; el archivo anterior no cambia."
+              ]
+            },
+            "Si otro programa tiene abierto el archivo, no se puede sobrescribir. Se te avisará y se conservarán los cambios para que puedas guardarlos con otro nombre.",
+            {
+              "note": "Guardar un documento firmado sobre el archivo original elimina sus firmas. El programa pregunta antes y ofrece «Guardar como archivo nuevo»; puedes desactivar la pregunta en Ajustes → Firmas."
+            }
+          ]
+        },
+        {
+          "id": "create",
+          "title": "Crear un PDF",
+          "body": [
+            "Archivo → Crear un PDF genera un documento nuevo:",
+            {
+              "points": [
+                "a partir de uno o varios archivos: combinados en un PDF o como un PDF por archivo;",
+                "a partir de una página web en la dirección que escribas (la página se guarda con el navegador instalado en el equipo);",
+                "a partir del contenido del portapapeles;",
+                "a partir de páginas en blanco del tamaño que elijas."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "export",
+          "title": "Exportar a otro formato",
+          "body": [
+            "Archivo → Exportar guarda el documento en otro formato: Word u OpenDocument, texto sin formato, una página web, XML, imágenes de las páginas (PNG, JPEG, TIFF, SVG) o PostScript. Para las imágenes, puedes elegir la resolución.",
+            "El documento original sigue siendo un PDF; la exportación crea otro archivo.",
+            {
+              "note": "Solo se puede exportar texto si el documento contiene texto. Primero reconoce el texto de los documentos escaneados."
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Imprimir",
+          "body": [
+            "Archivo → Imprimir (Ctrl+P) imprime el documento tal como está dispuesto, incluidos los elementos dibujados. Elige las páginas, el papel, la orientación y si se ajustarán a la hoja o se imprimirán a tamaño real; después, el cuadro de impresión del sistema te permite elegir la impresora.",
+            "El papel, la orientación y la escala iniciales del cuadro de impresión se configuran en Ajustes → Impresión."
+          ]
+        },
+        {
+          "id": "share",
+          "title": "Compartir",
+          "body": [
+            "Archivo → Compartir entrega el documento a la ventana del sistema para compartirlo: por correo, con un dispositivo cercano u otras aplicaciones. Se comparte tal como está, incluidos los cambios aún no guardados."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Organización de páginas",
+      "topics": [
+        {
+          "id": "organize",
+          "title": "Vista Organizar",
+          "body": [
+            "Organizar → Organizar páginas muestra todas las páginas en una cuadrícula. Los cambios no se guardan en el disco hasta que guardes el documento.",
+            {
+              "points": [
+                "Seleccionar: haz clic en una página; Ctrl+clic añade una página y Mayús+clic selecciona un intervalo. El menú incluye «Seleccionar todas las páginas», «No seleccionar ninguna página», «Seleccionar páginas impares» y «Seleccionar páginas pares».",
+                "Mover: arrastra las páginas seleccionadas a su nueva posición o usa «Mover a la izquierda» y «Mover a la derecha».",
+                "Girar: «Selección: girar a la izquierda» y «Selección: girar a la derecha» giran las páginas seleccionadas; «Todas las páginas: girar a la izquierda» y «Todas las páginas: girar a la derecha» las giran todas.",
+                "Eliminar: pulsa la tecla Supr o elige «Eliminar páginas». El documento debe conservar al menos una página.",
+                "Copiar, cortar y pegar (Ctrl+C, Ctrl+X, Ctrl+V): puedes pegar páginas en el mismo documento o en otro abierto en la aplicación.",
+                "Tamaño: el control deslizante de arriba hace las páginas más grandes o más pequeñas; también Ctrl + rueda del ratón sobre las páginas, y Ampliar y Reducir (Ctrl+= y Ctrl+-). El tamaño se recuerda."
+              ]
+            },
+            "Los mismos comandos funcionan también sin la cuadrícula, directamente sobre la página visible."
+          ]
+        },
+        {
+          "id": "extract-split",
+          "title": "Extraer páginas y dividir un documento",
+          "body": [
+            "Organizar → Extraer páginas crea con las páginas seleccionadas un documento nuevo en su propia pestaña, todavía sin guardar. También puedes guardar cada página como un archivo independiente y elegir si se quitan del documento actual.",
+            "Organizar → Dividir documento guarda el documento en varios archivos más pequeños; el documento actual no cambia.",
+            "Los nombres de los documentos nuevos siguen los patrones de Ajustes → Nombres de los documentos nuevos.",
+            {
+              "note": "Las firmas de certificado no se conservan en los documentos extraídos o divididos: una firma solo es válida para el archivo en el que se creó."
+            }
+          ]
+        },
+        {
+          "id": "insert-replace",
+          "title": "Insertar y reemplazar páginas",
+          "body": [
+            {
+              "points": [
+                "Organizar → Insertar páginas añade las páginas de otro archivo (PDF, imagen, texto o documento de Office) después de la página seleccionada o al final.",
+                "Organizar → Reemplazar páginas sustituye las páginas seleccionadas por las de otro archivo.",
+                "Insertar → Página en blanco añade una página vacía del mismo tamaño que la contigua."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "page-size",
+          "title": "Recortar y cambiar el tamaño de las páginas",
+          "body": [
+            "Editar → Recortar páginas recorta los bordes con márgenes que puedes escribir o arrastrar. No se elimina contenido del archivo; simplemente se muestra menos de cada página.",
+            "Editar → Cambiar el tamaño de las páginas coloca las páginas en otro tamaño de papel (A4, Letter y otros). Puedes ajustar el contenido al papel o conservar su tamaño, y colocarlo en cualquiera de nueve posiciones.",
+            "En ambos casos puedes elegir las páginas: todas, las seleccionadas, un intervalo, las impares o las pares."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Combinar archivos",
+      "topics": [
+        {
+          "id": "binder",
+          "title": "La colección",
+          "body": [
+            "Combinar → Nueva colección abre un espacio para reunir archivos y guardarlos como un único PDF.",
+            {
+              "steps": [
+                "Añade archivos con «Añadir archivos» o arrástralos a la colección. Puedes combinar PDF, imágenes, texto y documentos de Office.",
+                "Arrastra las tarjetas para ordenarlas o usa las flechas de cada una.",
+                "Abre una tarjeta para elegir qué páginas incluir.",
+                "«Combinar archivos» los guarda en orden como un documento nuevo en su propia pestaña."
+              ]
+            },
+            "Los archivos originales no se modifican.",
+            "El control deslizante de arriba hace más grandes o más pequeñas las páginas de las tarjetas; también Ctrl + rueda del ratón, y Ampliar y Reducir (Ctrl+= y Ctrl+-). El tamaño se recuerda."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Escribir y dibujar en las páginas",
+      "topics": [
+        {
+          "id": "tools",
+          "title": "Las herramientas",
+          "body": [
+            "Las herramientas de dibujo se abren en un panel junto a la página, como una cuadrícula de botones o como una lista con nombres (se elige en Ajustes). Selecciona una herramienta y arrastra o haz clic en la página; pulsa Esc para soltarla.",
+            {
+              "points": [
+                "Texto: haz clic y escribe. El panel permite elegir fuente, tamaño, color, negrita, cursiva y alineación.",
+                "Imagen: elige una imagen y arrastra para indicar su posición y tamaño.",
+                "Formas: rectángulo, elipse, línea, flecha, marca de verificación, cruz y punto.",
+                "Resaltar: arrastra sobre el contenido que quieras destacar; seguirá siendo legible."
+              ]
+            },
+            "Con «Seleccionar, mover y cambiar el tamaño» puedes volver a seleccionar una marca: arrastrarla, mover sus esquinas, girarla desde el controlador, cambiar sus colores en el panel o eliminarla con la tecla Supr. También puedes copiar y pegar marcas en otras páginas.",
+            "Todo lo que dibujes se escribe en el archivo al guardarlo."
+          ]
+        },
+        {
+          "id": "edit-content",
+          "title": "Editar el texto y las imágenes del documento",
+          "body": [
+            "La herramienta «Editar el texto y las imágenes del documento» resalta los elementos de la propia página. Haz clic en una línea de texto para cambiarla o en una imagen para moverla, cambiar su tamaño, girarla o eliminarla.",
+            {
+              "note": "Esta herramienta modifica una línea o imagen cada vez. Si una línea se alarga, los párrafos no se redistribuyen; además, al seleccionar una imagen superpuesta a otra, se seleccionan ambas. Para cambios grandes, edita el documento en la aplicación en la que se creó."
+            }
+          ]
+        },
+        {
+          "id": "redact",
+          "title": "Censurar contenido",
+          "body": [
+            "Más herramientas → Censurar elimina de forma permanente el contenido que no debe leerse: arrastra un rectángulo negro sobre él, en cualquier página. Al guardar, el texto y las imágenes que hay debajo se quitan del archivo; no se limitan a quedar cubiertos.",
+            {
+              "note": "Guarda el documento censurado con otro nombre y conserva el original en un lugar seguro: el contenido censurado no se puede recuperar."
+            }
+          ]
+        },
+        {
+          "id": "watermark",
+          "title": "Marca de agua",
+          "body": [
+            "Editar → Marca de agua escribe texto o coloca una imagen en las páginas que elijas: recta o inclinada, en una de nueve posiciones y con el tamaño y la transparencia que indiques. En cada página queda como una marca más, que puedes mover o quitar."
+          ]
+        },
+        {
+          "id": "numbers",
+          "title": "Números de página, encabezado y pie, numeración Bates",
+          "body": [
+            {
+              "points": [
+                "Editar → Numeración de páginas: elige el formato (1, 1 / 12, Página 1 y otros), la posición y las páginas que los llevan.",
+                "Insertar → Encabezado y pie de página: añade texto en cualquiera de seis posiciones. Puedes usar {page} para el número de página, {pages} para el total de páginas, {date} para la fecha de hoy y {file} para el nombre del documento.",
+                "Insertar → Numeración Bates: asigna números consecutivos con una palabra antes o después (ABC000123), como se hace con los documentos de un expediente."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Enlaces, marcadores y archivos adjuntos",
+      "topics": [
+        {
+          "id": "links",
+          "title": "Enlaces",
+          "body": [
+            "Insertar → Enlace: arrastra sobre el área que se podrá pulsar y luego indica el destino: una dirección web o una página de este documento.",
+            "Los enlaces del documento funcionan durante la lectura: al pulsar uno que lleva a una página, se abre esa página; las direcciones web o de correo se abren en el navegador o la aplicación de correo."
+          ]
+        },
+        {
+          "id": "bookmarks",
+          "title": "Marcadores",
+          "body": [
+            "Insertar → Nuevo marcador: haz clic en el destino y ponle un título. Insertar → Marcadores abre la lista, donde puedes cambiar el nombre o quitar marcadores. Los cambios se guardan al guardar el documento."
+          ]
+        },
+        {
+          "id": "attachments",
+          "title": "Archivos adjuntos",
+          "body": [
+            "Insertar → Adjuntar un archivo: elige un archivo y haz clic donde quieras colocar el clip. Puedes indicar un nombre y un autor, cambiar el color del clip, su tamaño y su orientación. El archivo se guarda dentro del PDF.",
+            "Insertar → Archivos adjuntos muestra los archivos que contiene el documento; puedes guardar o quitar cada uno. Al hacer clic en un clip se abre la misma lista."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formularios",
+      "topics": [
+        {
+          "id": "fill-form",
+          "title": "Rellenar un formulario",
+          "body": [
+            "Insertar → Rellenar formulario muestra sus campos: escribe en los campos de texto, marca casillas y elige opciones de las listas. Las respuestas se escriben en el archivo al guardarlo."
+          ]
+        },
+        {
+          "id": "make-form",
+          "title": "Crear un formulario",
+          "body": [
+            "El menú Insertar permite añadir campos a cualquier documento: un campo de texto, una casilla, botones de opción (se puede elegir uno), una lista desplegable y un campo de firma vacío para que lo firme otra persona.",
+            "Arrastra por la página para colocar el campo. Como las demás marcas, puedes moverlo y cambiar su tamaño hasta que guardes; después formará parte del formulario."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Firmar",
+      "topics": [
+        {
+          "id": "sign-visual",
+          "title": "Añadir una firma dibujada",
+          "body": [
+            "Firmar → Añadir firma coloca una imagen de la firma en la página: puedes dibujarla con el lápiz que elijas, escribirla con una fuente o elegir una imagen (activa «Conservar solo los trazos del lápiz» para una foto de una hoja firmada). También puedes incluir la fecha debajo.",
+            "Arrastra por la página para colocarla. Las firmas que usas se guardan en este equipo para que puedas volver a utilizarlas.",
+            {
+              "note": "Es una imagen: no demuestra quién la puso. Para demostrar quién firmó y que el documento no se ha modificado después, se necesita una firma con certificado."
+            }
+          ]
+        },
+        {
+          "id": "sign-certificate",
+          "title": "Firmar con un certificado",
+          "body": [
+            "Firmar → Firmar con certificado crea una firma digital: identifica a quien firma y sella el documento para que se detecte cualquier cambio posterior.",
+            {
+              "steps": [
+                "Arrastra por la página el área donde se mostrará la firma (primero aparece un cuadro de diálogo; puedes desactivarlo). Para firmar sin mostrarla en las páginas, elige «Firmar sin mostrarlo en una página».",
+                "Elige el certificado: uno instalado en el equipo (las tarjetas o tokens aparecen cuando están en el lector) o un archivo .pfx / .p12 con su contraseña. Pulsa «Continuar».",
+                "Elige la apariencia de la firma. En «Motivo y lugar» puedes indicar por qué y dónde firmas: esos datos se guardan en la firma y aparecen en la página si la apariencia los incluye. Marca «Bloquear el documento después de firmar» si no quieres que nadie lo firme o modifique después. Deja marcada la opción «Añadir una hora de confianza (marca de tiempo)» para que una autoridad confirme cuándo firmaste.",
+                "Pulsa «Firmar» y elige dónde guardar el archivo firmado. En ese momento, el token solicitará su PIN."
+              ]
+            },
+            "El archivo firmado se abre en lugar del documento original. La aplicación nunca guarda contraseñas ni PIN.",
+            {
+              "note": "Una firma cualificada es una firma creada de esta manera con un certificado cualificado, en una tarjeta o token. La firma se realiza en tu equipo; solo la marca de tiempo y la comprobación de tu certificado se conectan a internet, y envían huellas digitales y el número de serie del certificado, nunca el documento."
+            }
+          ]
+        },
+        {
+          "id": "sign-appearance",
+          "title": "Apariencias de la firma",
+          "body": [
+            "La apariencia determina cómo se ve en la página una firma con certificado. Guarda varias con nombres propios: por ejemplo, una para firmar en nombre de una empresa y otra para firmar a título personal.",
+            {
+              "points": [
+                "Imagen: ninguna, una imagen de archivo (un sello o una firma escaneada) o una que dibujes aquí.",
+                "Texto visible: nombre, fecha, motivo y lugar, cada uno con o sin su etiqueta.",
+                "Líneas propias debajo del nombre, como el cargo y la empresa.",
+                "El «Texto estándar» siempre aparece: quién firmó y cuándo."
+              ]
+            },
+            "En la ventana de firma encontrarás «Nueva…», «Editar…» y «Eliminar». Se ofrece primero la última apariencia usada. Las apariencias se guardan en este equipo."
+          ]
+        },
+        {
+          "id": "sign-several",
+          "title": "Varias firmas y bloqueo del documento",
+          "body": [
+            "Un documento puede llevar las firmas de varias personas, una tras otra. Abre el archivo firmado y vuelve a firmarlo sin modificarlo: tu firma se añade al final del archivo y las anteriores siguen siendo válidas.",
+            "«Bloquear el documento después de firmar» (desactivado salvo que lo marques) cierra el documento: nadie podrá firmarlo después y no se podrán hacer más cambios. Esta acción no se puede deshacer.",
+            {
+              "note": "Si modificas un documento firmado antes de volver a firmarlo, se debe generar de nuevo y se pierden las firmas anteriores. La ventana de firma te avisa: para conservarlas, vuelve a abrir el archivo y fírmalo sin modificarlo."
+            }
+          ]
+        },
+        {
+          "id": "timestamp",
+          "title": "Marcas de tiempo",
+          "body": [
+            "Una marca de tiempo es la confirmación firmada por una autoridad de sellado de tiempo de cuándo existía algo. Sin ella, la hora de una firma procede del reloj del equipo de quien firma, que cualquiera puede cambiar; una marca de tiempo demuestra el momento y mantiene la firma demostrable cuando caduca el certificado (PAdES B-T).",
+            {
+              "points": [
+                "Las firmas la llevan cuando «Añadir una hora de confianza (marca de tiempo)» está marcada en la ventana de firma. Ajustes → Firmas indica si aparece marcada de entrada, aquí y en el procesamiento por lotes.",
+                "Firmar → Añadir marca de tiempo añade a todo el documento una marca de tiempo propia, sin certificado: demuestra que el documento existía, tal como está, en ese momento. Se guarda como un archivo nuevo; las firmas que ya tenga el archivo siguen siendo válidas."
+              ]
+            },
+            "La autoridad es la de DigiCert (http://timestamp.digicert.com), gratuita y de confianza para Adobe Reader y Windows; se puede indicar otra en Ajustes → Firmas. Solo recibe una huella digital (SHA-256), nunca el documento, y se necesita conexión a internet. Cuando una firma recibe una marca de tiempo, también se pregunta al emisor de tu certificado si el certificado sigue siendo válido, y su respuesta se guarda en la firma (validación a largo plazo): así Adobe Reader puede mostrar la firma como válida, ahora y después de que caduque el certificado.",
+            {
+              "note": "Si no se puede contactar con la autoridad, no se firma ni se guarda nada: vuelve a intentarlo o desmarca la marca de tiempo para firmar sin ella."
+            }
+          ]
+        },
+        {
+          "id": "verify",
+          "title": "Verificar firmas",
+          "body": [
+            "Firmar → Verificar firmas muestra cada firma con certificado del archivo: quién firmó, quién emitió el certificado, cuándo, el motivo y el lugar. También comprueba:",
+            {
+              "points": [
+                "si el documento no ha cambiado desde esa firma (añadir una firma posterior no cuenta como cambio);",
+                "si la firma bloquea el documento;",
+                "si este equipo confía en la autoridad del certificado y si el certificado es válido hoy;",
+                "la hora confirmada por su marca de tiempo, y por qué autoridad, si la tiene. También aparece la marca de tiempo de todo el documento, con su propia comprobación."
+              ]
+            },
+            "La comprobación se realiza en este equipo sobre el archivo tal como se guardó por última vez, sin conectarse a internet. Al hacer clic en una firma de una página, esta lista se abre en esa firma. Debajo de cada firma, «Mostrar certificado» abre la ventana de Windows del certificado (su cadena y todos los detalles; desde allí, «Instalar certificado» hace que este equipo confíe en un certificado que conoces), y «Validar» pregunta por internet al emisor del certificado, solo cuando lo pulsas, si el certificado se ha revocado."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Más herramientas",
+      "topics": [
+        {
+          "id": "ocr",
+          "title": "Reconocer texto (OCR)",
+          "body": [
+            "Más herramientas → Reconocer texto (OCR) lee las palabras de páginas escaneadas y las incorpora de forma invisible, para que puedas buscar, copiar y exportar el texto. La apariencia de las páginas no cambia.",
+            "Marca solo los idiomas en que está escrito el documento; las páginas que ya contienen texto se dejan tal cual.",
+            {
+              "note": "El reconocimiento lo realiza Tesseract, un programa gratuito que se instala por separado. Si no está instalado, la ventana muestra el comando para instalarlo en Windows."
+            }
+          ]
+        },
+        {
+          "id": "compress",
+          "title": "Reducir el tamaño de un documento",
+          "body": [
+            "Más herramientas → Comprimir guarda una versión más pequeña del documento reduciendo los píxeles de las fotografías y páginas escaneadas. Hay tres niveles; el texto y los dibujos conservan su nitidez. Los documentos con pocas imágenes apenas se reducen."
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Comparar dos documentos",
+          "body": [
+            "Más herramientas → Comparar documentos: elige otro PDF. Se muestran ambos lado a lado, página por página, con las páginas cuyo texto difiere marcadas y las líneas exclusivas de cada documento enumeradas."
+          ]
+        },
+        {
+          "id": "batch",
+          "title": "Procesamiento por lotes: muchos archivos de una vez",
+          "body": [
+            "Más herramientas → Procesamiento por lotes realiza las mismas operaciones en varios archivos, en una pestaña propia. Cada resultado es un archivo nuevo. Si los resultados fueran a ocupar el lugar de archivos que ya están en la carpeta (tus propios archivos, cuando van a su carpeta sin añadir nada a su nombre), primero se te pregunta si quieres reemplazarlos, omitirlos o cancelar. Un archivo se reemplaza solo cuando su resultado está completo; uno que está abierto (en una pestaña aquí o en otro programa) se deja como está y se marca como no realizado.",
+            {
+              "steps": [
+                "A la izquierda, añade los archivos: «Añadir archivos», «Añadir una carpeta» (con sus subcarpetas) o arrástralos aquí.",
+                "A la derecha, marca las operaciones. En todos los casos, cada archivo se convierte en PDF; además, puedes girar páginas, reconocer texto, añadir encabezado y pie, marca de agua o números de página, comprimir, firmar con certificado o exportar a otro formato. Los números indican el orden de las operaciones.",
+                "Elige cómo guardar los resultados: un archivo por cada original o todos juntos en un PDF (en el orden de la lista), y selecciona la carpeta de destino. Cuando todos los archivos vienen de una misma carpeta, se elige esa carpeta hasta que elijas otra; si no, es la última carpeta que elegiste.",
+                "Pulsa «Iniciar». Se muestra el resultado de cada archivo; puedes detener el proceso entre archivos."
+              ]
+            },
+            {
+              "points": [
+                "Recetas: «Guardar como receta» guarda con un nombre todas las opciones elegidas (excepto los archivos y las contraseñas), para volver a aplicarlas de una vez.",
+                "«Conservar en los resultados las carpetas de los archivos originales» reconstruye la estructura de carpetas de la carpeta añadida.",
+                "«Crear un informe de la ejecución» guarda junto a los resultados un archivo de texto que indica qué se creó y qué operaciones fallaron.",
+                "Si en una ejecución solo se firma un PDF, se conservan sus firmas. Si se realiza cualquier otra operación, se genera un archivo nuevo y se eliminan las firmas anteriores."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ajustes",
+      "topics": [
+        {
+          "id": "settings",
+          "title": "Ajustes de PDF Organizer",
+          "body": [
+            "Archivo → Ajustes (o Ajustes en la barra lateral y luego PDF Organizer). Puedes restablecer cada ajuste por separado o todos a la vez.",
+            {
+              "points": [
+                "Al abrir un documento: el tamaño inicial, el desplazamiento o la vista de una página a la vez, y si se muestran las miniaturas.",
+                "Unidades, reglas y cuadrícula: la unidad (milímetros, pulgadas o puntos), las reglas, la cuadrícula y su espaciado.",
+                "Impresión: el papel, la orientación y la escala iniciales del cuadro de impresión.",
+                "Barra de acceso rápido: los botones que aparecen en la barra encima de las páginas.",
+                "Nombres de los documentos nuevos: patrones para las páginas extraídas, los documentos nuevos y el PDF que reúne varios archivos en el procesamiento por lotes.",
+                "Firmas: configura si «Guardar» pregunta antes de sobrescribir un archivo firmado.",
+                "Atajos de teclado: haz clic en las teclas de un comando y luego pulsa las nuevas."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Acerca de PDF Organizer",
+      "topics": [
+        {
+          "id": "about-app",
+          "title": "Acerca de PDF Organizer",
+          "body": [
+            "PDF Organizer es la aplicación de PDF de Syntelab Creative: lee documentos PDF, organiza y combina sus páginas, permite escribir y dibujar en ellas, rellenar y crear formularios, firmar con certificado y verificar firmas, y realizar estas mismas operaciones con varios archivos a la vez.",
+            "Es una aplicación nueva y algunas funciones son todavía un primer paso. Cuéntanos en Ayuda → Comentarios qué les falta a tus documentos; así sabremos en qué trabajar."
+          ]
+        },
+        {
+          "id": "about-app-technologies",
+          "title": "Tecnologías con las que está creado PDF Organizer",
+          "body": [
+            {
+              "points": [
+                "Lectura, dibujo y escritura de PDF: MuPDF.",
+                "Reconocimiento de texto (OCR): Tesseract, si está instalado en el equipo.",
+                "Apertura de documentos de Office: Word, Excel, PowerPoint o LibreOffice, según cuáles estén instalados.",
+                "Guardar una página web como PDF: el navegador instalado en el equipo.",
+                "Firma con certificado: los servicios de certificados de Windows; las firmas se generan según el estándar PAdES."
+              ]
+            },
+            "Las tecnologías que comparte con el resto del programa se indican en «Acerca de Syntelab Creative»."
+          ]
+        },
+        {
+          "id": "about-app-limits",
+          "title": "Lo que PDF Organizer aún no puede hacer",
+          "body": [
+            {
+              "points": [
+                "Los documentos de Office se abren con la suite instalada en el equipo; sin Word, Excel, PowerPoint o LibreOffice no se pueden abrir. Se está desarrollando un conversor propio: consulta «En qué estamos trabajando».",
+                "El reconocimiento de texto requiere Tesseract, que se instala por separado.",
+                "El texto del documento solo se puede editar línea por línea; los párrafos no se redistribuyen.",
+                "No se pueden seleccionar para mover las imágenes impresas con cuatro tintas (CMYK).",
+                "«Validar» indica si un certificado está revocado hoy, no cuándo se revocó.",
+                "Por ahora, la firma con certificado solo funciona en Windows; llegará a Linux y macOS en una versión posterior."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

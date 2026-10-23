@@ -1,0 +1,24 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.option input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--sc-accent);
+}
+
+.note {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}

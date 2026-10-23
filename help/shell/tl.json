@@ -1,0 +1,308 @@
+{
+  "title": "Syntelab Creative",
+  "chapters": [
+    {
+      "title": "Pagsisimula",
+      "topics": [
+        {
+          "id": "what-it-is",
+          "title": "Ano ang Syntelab Creative",
+          "body": [
+            "Ang Syntelab Creative ay isang programang binubuo ng mga app. Ang bawat app ay gumagawa ng isang uri ng trabaho:",
+            {
+              "points": [
+                "Ang PDF Organizer ay nagbabasa, nag-aayos, nag-e-edit at lumalagda ng mga PDF na dokumento.",
+                "Ang Scribe ay isang text editor na may mga tool na naglilinis, nag-uuri, naghahambing at nagbabago ng text.",
+                "Ang Units ay nag-co-convert sa pagitan ng mga unit: haba, temperatura, pera at marami pang iba.",
+                "Ang Dev ay nagtitipon ng mga tool para sa mga developer: mag-encode at mag-decode, mag-format at mag-check, at gawing ibang anyo ang data."
+              ]
+            },
+            "Iisang window, iisang hanay ng mga setting at iisang paraan ng paggawa ang gamit ng mga app, kaya ang natutunan mo sa isa ay pareho rin sa susunod.",
+            {
+              "note": "Lahat ay nangyayari sa iyong computer. Ang iyong mga dokumento ay hindi kailanman ipinapadala kahit saan, at walang anumang impormasyon tungkol sa iyo o sa iyong trabaho ang kinokolekta."
+            }
+          ]
+        },
+        {
+          "id": "window",
+          "title": "Ang window",
+          "body": [
+            {
+              "points": [
+                "Ang bar sa gilid: ang bahay ay papunta sa Simula, kasunod ang iyong mga app, at sa ibaba ang mga balita ng programa, Puna, Suporta at Mga Setting.",
+                "Sa isang app, ang File → Pumunta sa Simula ay pupunta sa unang pahina ng app na iyon kung mayroon ito (Units, Scribe), at ang File → Buksan ang Mga Setting (Ctrl+,) ay magbubukas ng Mga Setting sa sariling bahagi ng app na iyon; isang click lang mula roon ang ibang bahagi.",
+                "Ang mga tab sa itaas: bawat dokumento, binder o tool na bubuksan mo ay may sariling tab. Ang tuldok sa isang tab ay nagsasabing may mga pagbabagong hindi pa na-save.",
+                "Ang mga menu ng app, sa ilalim ng mga tab: bilang isang menu bar, bilang isang ribbon o bilang isang panel sa gilid, depende sa iyong pinili.",
+                "Ang natitirang bahagi ng window ay ang tab na nasa harap."
+              ]
+            },
+            "Ang pagsasara ng tab na may mga hindi na-save na pagbabago ay magtatanong muna; gayundin ang pagsasara ng programa."
+          ]
+        },
+        {
+          "id": "start",
+          "title": "Simula",
+          "body": [
+            "Ipinapakita ng Simula ang iyong mga app at ang mga file na binuksan mo kamakailan. I-click ang isang app para buksan ito; i-click ang isang kamakailang file para buksan itong muli.",
+            "Maaaring ipakita ang mga app bilang mga card, bilang mga icon na may pangalan o bilang mga icon lamang, at i-drag sa pagkakasunod-sunod na gusto mo. Gamit ang keyboard: Alt at ang mga arrow key. Ibinabalik sila ng \"I-reset sa default\".",
+            "Ang bawat app ay mayroon ding sariling shortcut sa Start menu ng Windows, gaya ng \"Syntelab PDF Organizer\" o \"Syntelab Units\": binubuksan nito ang programa nang direkta sa app na iyon. Kung nakabukas na ang programa, bubukas ang app bilang isang tab dito."
+          ]
+        },
+        {
+          "id": "open-files",
+          "title": "Pagbubukas ng mga file",
+          "body": [
+            {
+              "points": [
+                "Mula sa isang app: File → Buksan, o Ctrl+O.",
+                "Sa pamamagitan ng pag-drop ng mga file mula sa isang folder patungo sa window.",
+                "Mula sa file manager ng iyong system: i-double-click ang file na nakatakdang buksan ng programa. Sa Windows Explorer, mayroon ding right-click menu (tingnan ang \"Ang right-click menu ng Windows Explorer\").",
+                "Mula sa Simula: ang listahan ng mga kamakailang file."
+              ]
+            },
+            "Tumatakbo ang programa bilang isang kopya. Ang file na binuksan mula sa file manager habang tumatakbo ang programa ay bubukas bilang isang bagong tab sa parehong window."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gawin itong sa iyo",
+      "topics": [
+        {
+          "id": "layout",
+          "title": "Pagkakaayos: menu bar, ribbon o panel sa gilid",
+          "body": [
+            "Ang mga command ng isang app ay maaaring ipakita sa tatlong paraan. Pareho lang ang mga command; ang pagkakaiba lamang ay kung saan sila matatagpuan.",
+            {
+              "points": [
+                "Klasiko: isang menu bar at isang toolbar.",
+                "Ribbon: malalaking button sa mga grupong may pangalan, isang tab para sa bawat menu. Maaari itong itiklop para magkaroon ng mas maraming espasyo para sa dokumento.",
+                "Panel sa gilid: ang mga tool sa isang panel sa kaliwa o sa kanan, na maaaring itiklop hanggang mga icon na lang."
+              ]
+            },
+            "Piliin ang pagkakaayos ng bawat app sa Mga Setting → Pangkalahatan → Pagkakaayos. Maaaring may sariling pagkakaayos ang isang app, na pinipili sa bahagi nito sa Mga Setting o mula sa menu nitong Tingnan; hindi na nito susundin ang pangkalahatan hangga't hindi mo pinipili ang \"Gamitin ang pangkalahatang pagkakaayos\"."
+          ]
+        },
+        {
+          "id": "theme",
+          "title": "Tema",
+          "body": [
+            "Mga Setting → Pangkalahatan → Tema: Maliwanag, Madilim, Mapusyaw na abo, Madilim na abo, o Awtomatiko, na sumusunod sa maliwanag o madilim na setting ng system.",
+            "Hindi kailanman binabago ng tema ang kulay ng mga pahina ng dokumento: nananatili ang papel kung ano ito."
+          ]
+        },
+        {
+          "id": "language",
+          "title": "Wika",
+          "body": [
+            "Mga Setting → Pangkalahatan → Wika. 62 wika ang sinasalita ng programa. Sinusunod ng \"Wika ng system\" ang wika ng iyong system. Mahahanap sa listahan ang isang wika gamit ang sarili nitong pangalan, ang pangalan nito sa iyong wika o ang pangalan nito sa Ingles.",
+            "Ang text na hindi pa naisasalin ay ipinapakita sa Ingles, hindi kailanman bilang code."
+          ]
+        },
+        {
+          "id": "tabs",
+          "title": "Mga Tab",
+          "body": [
+            {
+              "points": [
+                "\"Panatilihin ang tab ng Simula sa mga tab\": kapag naka-off, ipinapakita lamang ang tab ng Simula habang nasa harap ang Simula mismo; laging bumabalik doon ang bahay sa bar sa gilid.",
+                "Ang marka sa isang tab ay maaaring icon ng app nito o isang simpleng parisukat sa kulay ng app."
+              ]
+            },
+            "Kapag mas marami ang tab kaysa sa kasya, iniii-scroll ito ng mga arrow sa mga dulo ng hanay, at inililista silang lahat ng \"Higit pang mga tab\"."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paghahanap ng daan",
+      "topics": [
+        {
+          "id": "search",
+          "title": "Paghahanap ng command",
+          "body": [
+            "Hinahanap ng search box (\"Maghanap ng mga app, tool at command\") ang anumang command ng tab na nasa harap ayon sa pangalan nito, sa iyong wika o sa Ingles. Pumili ng resulta para patakbuhin ito.",
+            "Ang mga command na nakaplano na pero hindi pa naisusulat ay ipinapakitang kulay-abo sa mga menu at hindi kasama sa paghahanap."
+          ]
+        },
+        {
+          "id": "shortcuts",
+          "title": "Mga shortcut sa keyboard",
+          "body": [
+            "Ang mga key ng isang command ay nakasulat sa tabi ng pangalan nito sa mga menu at sa tooltip nito. Ang mga pinakagamit:",
+            {
+              "points": [
+                "Ctrl+O: buksan ang file",
+                "Ctrl+S: i-save; Ctrl+Shift+S: i-save bilang",
+                "Ctrl+P: i-print",
+                "Ctrl+Z at Ctrl+Y: i-undo at i-redo",
+                "Ctrl+F: maghanap sa dokumento",
+                "Ctrl+W: isara ang tab",
+                "Ctrl+Tab at Ctrl+Shift+Tab: ang susunod na tab at ang nauna",
+                "Ctrl+, (kuwit): Mga Setting",
+                "F1: ang Tulong na ito",
+                "Escape: lumabas sa full screen o sa reading mode, o bitawan ang tool na hawak"
+              ]
+            },
+            "Ang mga key ng sariling mga command ng programa (mga tab, Mga Setting, Tulong) ay binabago sa Mga Setting → Pangkalahatan → Mga shortcut sa keyboard; ang sa mga command ng isang app ay sa bahagi nito sa Mga Setting. I-click ang mga key ng isang command, pagkatapos ay pindutin ang mga bago."
+          ]
+        },
+        {
+          "id": "help",
+          "title": "Paggamit ng Tulong na ito",
+          "body": [
+            "Nakadepende ang Tulong sa kung saan mo ito binuksan. Mula sa isang app, makikita mo lamang ang manwal ng app na iyon at ang mga command ng tab na pinanggalingan mo. Mula sa pahina ng Simula o mula sa Mga Setting, makikita mo ang \"Tungkol sa\" (ang programa at bawat app, sa maikli) at ang manwal ng programa. Laging humahantong ang Tulong → Tungkol sa sa \"Tungkol sa\".",
+            "Nasa kaliwa ang nilalaman; hinahanap ng paghahanap sa itaas nito ang bawat paksa, sa mga pamagat at sa teksto.",
+            "Bumubukas ang Tulong sa sarili nitong tab, kaya maaari kang magpabalik-balik dito at sa iyong ginagawa; muli itong inilalabas sa harap ng F1. Sa ilalim ng \"Mga command ng tab na pinanggalingan mo\", nakalista ang bawat menu ng tab na iyon kasama ang bawat command nito, ang mga key nito at kung ano ang ginagawa nito: buksan ang Tulong mula sa tab na may tanong ka."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Windows",
+      "topics": [
+        {
+          "id": "explorer-menu",
+          "title": "Ang right-click menu ng Windows Explorer",
+          "body": [
+            "Ang Mga Setting → Pangkalahatan → Windows Explorer → \"Ipakita ang Syntelab Creative sa right-click menu ng mga file at folder\" ay nagdaragdag ng mga entry para sa mga file na binabasa ng programa: \"Gawing PDF gamit ang PDF Organizer\" at \"Pagsamahin ang mga file sa PDF Organizer\", bawat isa ay may icon ng PDF Organizer, at \"Syntelab Dev\", na bumubukas sa gilid na may Mga Checksum, Ihambing at Tingnan bilang hex.",
+            "Idinaragdag ang mga ito para sa iyong user lamang, nang walang karapatan ng administrator, at inaalis ang mga ito kapag in-off ang switch. Sa Windows 11, nasa ilalim ang mga ito ng \"Show more options\". Palagi nilang binubuksan ang naka-install na programa: kung inilipat ito o in-install muli sa ibang lugar, itinatama nito ang mga ito pagbukas nito.",
+            {
+              "note": "Kapag pinili ang \"Pagsamahin ang mga file sa PDF Organizer\" sa ilang file, magbubukas ang isang Binder na may mga ito; ang \"Gawing PDF gamit ang PDF Organizer\" ay magbubukas ng maramihang pagproseso para sa mga ito."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Privacy, mga update at pakikipag-ugnayan",
+      "topics": [
+        {
+          "id": "privacy",
+          "title": "Ano ang napupunta online, at ano ang hindi kailanman",
+          "body": [
+            "Walang kinokolekta ang programa: walang data ng paggamit, walang pangalan ng file, walang crash report na kusang ipinapadala.",
+            "Pumupunta lamang ito online sa mga kasong ito, na bawat isa ay hinihiling mo:",
+            {
+              "points": [
+                "Pag-check ng mga update at balita (dalawang maliit na file na binabasa mula sa syntelab.com), kapag hiniling mo o, kung pinayagan mo, kapag nagsimula ang programa; at pag-download ng bagong bersyon, kapag pinindot mo lamang ang \"I-update\".",
+                "Pag-save ng isang web page bilang PDF (PDF Organizer) at pagkuha ng text ng isang web page (Scribe), mula sa address na iyong itinaype.",
+                "Isang link sa isang dokumento na iyong kinlik: ito ay ipinapasa sa iyong browser o mail program.",
+                "Puna at Suporta: nagbubukas ang mga ito ng pahina ng syntelab.com sa iyong browser."
+              ]
+            },
+            "Ang paglagda gamit ang sertipiko at ang pag-check ng mga lagda ay ginagawa sa iyong computer, nang hindi nag-o-online."
+          ]
+        },
+        {
+          "id": "updates",
+          "title": "Mga Update",
+          "body": [
+            "Mga Setting → Pangkalahatan → Mga Update → \"Mag-check para sa mga update\". Kapag may mas bagong bersyon, may window na magsasabi kung ano ang bago at mag-aalok ng \"I-update\".",
+            "Dina-download ng \"I-update\" ang bagong bersyon, tinitiyak kung talagang galing ito sa amin (dapat itong nilagdaan ng aming key; tinatanggihan ang anumang iba) at ini-install ito sa ibabaw ng bersyong ito. Mananatili ang iyong mga setting at muling magsisimula ang programa. Walang ida-download hangga't hindi mo ito pinipindot.",
+            "Kung hindi ma-install ang update sa ganitong paraan (portable na kopya, Linux package, walang network), bubuksan ng \"I-download\" ang pahina ng download sa iyong browser; i-install ang bagong bersyon sa ibabaw ng bersyong ito at mananatili ang iyong mga setting.",
+            "Maaaring i-off ang \"Suriin ang mga update at balita kapag nagsisimula ang programa\"; alinman ang piliin, walang ipinapadalang anuman tungkol sa iyo o sa iyong computer."
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "Puna at suporta",
+          "body": [
+            "Tulong → Puna: humiling ng bagong app, bagong feature o pagbabago, o i-report ang isang problema. Binabasa ang bawat mensahe.",
+            "Tulong → Suporta: libre ang programa; dito ka makakatulong para magpatuloy ito."
+          ]
+        }
+      ]
+    },
+    {
+      "about": true,
+      "title": "Tungkol sa Syntelab Creative",
+      "topics": [
+        {
+          "id": "about",
+          "title": "Tungkol sa Syntelab Creative",
+          "body": [
+            "Ang Syntelab Creative ay isang libreng suite ng mga app para sa pang-araw-araw na trabaho sa mga dokumento, teksto at data, na gawa ng Syntelab (syntelab.com). Nagsisimula ito sa apat na app: PDF Organizer, Scribe, Units at Dev. May iba pang sasama sa kanila sa parehong window.",
+            {
+              "points": [
+                "Laging libre.",
+                "Walang data na kinokolekta: wala tungkol sa iyo, sa iyong computer o sa iyong trabaho.",
+                "Walang ipinagkakait: walang bayad na bersyon, walang naka-lock na feature, walang limitasyong sadyang inilagay. Ang tanging limitasyon ay kung ano ang kayang gawin ng teknolohiya ngayon at kung ano ang kayang dalhin ng iyong computer."
+              ]
+            },
+            "Wala kaming pondo. Ang programa ay ginagawa sa aming libreng oras, hangga't pinahihintulutan ng oras na iyon. Ganap naming layunin na gumawa ng software na may mataas na kalidad, at nangangailangan ito ng oras at pasensya: amin sa pagbuo nito, at sa iyo habang ito ay lumalago.",
+            "Gaganda ito sa bawat bersyon. Itinatama ang mga iniulat na problema, at tinitimbang ang mga hinihiling na feature para sa susunod.",
+            {
+              "note": "Nananatili ang iyong mga dokumento sa iyong computer. Walang kinokolekta ang programa tungkol sa iyo o sa iyong trabaho; tingnan ang \"Ano ang napupunta online, at ano ang hindi kailanman\"."
+            }
+          ]
+        },
+        {
+          "id": "help-us",
+          "title": "Paano ka makakatulong",
+          "body": [
+            "May tatlong paraan, at bawat isa ay mahalaga:",
+            {
+              "points": [
+                "Sabihin sa amin ang iniisip mo: Tulong → Puna. Isang problemang naranasan mo, isang bagay na kulang, isang bagay na mas mahirap kaysa nararapat. Binabasa namin ang bawat mensahe.",
+                "Ikuwento sa iba ang tungkol sa programa at sa aming ginagawa. Mas maraming gumagamit ay nangangahulugan ng mas maraming puna, at sa ganoon namin nakikita kung ano ang talagang mahalaga. Ipinaparamdam din nito sa amin na pinahahalagahan ang aming trabaho: ang sa amin, at ang sa lahat ng nakikibahagi sa proyekto at makikibahagi pa rito.",
+                "Suportahan ito ng pera, kung kaya mo: Tulong → Suportahan kami. Binibigyan kami nito ng oras para pagtrabahuhan ito."
+              ]
+            },
+            "Wala sa mga ito ang hinihingi sa iyo. Ang programa ay libre at mananatiling libre, buo, para sa lahat."
+          ]
+        },
+        {
+          "id": "technologies",
+          "title": "Ano ang ginamit sa pagbuo nito",
+          "body": [
+            "Ang programa ay nakabase sa gawa ng maraming tao. Ang ibinabahagi ng bawat app:",
+            {
+              "points": [
+                "Ang window at lahat ng iyong nakikita: Tauri, gamit ang web view ng system (WebView2 sa Windows, WebKitGTK sa Linux, WKWebView sa macOS); nakasulat sa TypeScript gamit ang React.",
+                "Ang bahaging gumagawa ng trabaho: nakasulat sa Rust.",
+                "Mga titik at icon: Sansation, IBM Plex Sans at Font Awesome Free."
+              ]
+            },
+            "Ang idinadagdag ng bawat app ay nakasaad sa sarili nitong pahina sa ilalim ng \"Tungkol sa\". Nagpapasalamat kami sa mga taong nasa likod ng mga proyektong ito."
+          ]
+        },
+        {
+          "id": "limits",
+          "title": "Ang mga hindi pa nito kayang gawin",
+          "body": [
+            "Upang malaman mo bago mo ito asahan:",
+            {
+              "points": [
+                "May ilang teksto na naghihintay pa ng kanilang salin. Hanggang doon, ipinapakita ang mga ito sa Ingles, hindi kailanman bilang code.",
+                "Ang right-click menu ng file manager ay kasalukuyang available lamang sa Windows Explorer.",
+                "Ang paglagda gamit ang sertipiko ay gumagana sa Windows sa ngayon; sa Linux at macOS, darating ito sa susunod na bersyon."
+              ]
+            },
+            "Ang mga limitasyon ng bawat app ay nasa sarili nitong pahina sa ilalim ng \"Tungkol sa\". Kung may isa sa mga ito na humahadlang sa iyo, sabihin sa amin sa pamamagitan ng Tulong → Puna: tinutulungan kami nitong magpasya kung ano ang uunahin."
+          ]
+        },
+        {
+          "id": "coming",
+          "title": "Ang aming mga ginagawa",
+          "body": [
+            "Patuloy na lalaki ang apat na app: ang mga iniuulat at hinihiling mo sa pamamagitan ng Tulong → Puna ang magpapasya ng malaking bahagi ng uunahin. Bukod sa mga ito, may mga bagong app na inihahanda. Hindi ipinapakita ng Simula ang mga ito maliban kung gusto mo: lagyan ng tsek ang mga ito sa menu na \"Tingnan\" ng Simula para makita mo roon bilang \"Darating na\":",
+            {
+              "points": [
+                "Convert: pag-convert ng mga file mula sa isang format patungo sa iba, kabilang ang mga office document patungong PDF at pabalik, nang hindi kailangang mag-install ng ibang programa. Hindi pa kami nakakahanap ng bukas na teknolohiyang umaabot sa kalidad na gusto namin, kaya darating lamang ito kapag hindi ka na nito bibiguin; kung saan walang tool, kami ang gagawa nito.",
+                "Pixel: mga tool para sa mga imahe, gaya ng pag-resize at pag-compress, pag-alis ng background, mga kulay at QR code.",
+                "Metadata: pagtingin at pag-alis ng mga nakatagong data ng mga larawan, video at dokumento, bago mo ito ibahagi.",
+                "Wizard: mga random na tagapili at generator: gulong na paiikutin, dice, barya, mga pangalang binunot mula sa isang listahan."
+              ]
+            },
+            "Sa mga app na narito na, ginagawa namin ang mga nakalista sa kanilang mga pahinang \"Ang mga hindi pa nito kayang gawin\": halimbawa, isang mapagkakatiwalaang timestamp para sa mga lagda, paglagda gamit ang sertipiko sa Linux at macOS, at spell check sa Scribe.",
+            "Susunod din ang iba pang mga opsyon sa pag-install: Microsoft Store at winget sa Windows, Flathub at Snap sa Linux.",
+            {
+              "note": "Ang mga balita ng bawat bersyon ay nasa ilalim ng button ng balita sa bar sa gilid; tinitingnan ng Mga Setting → Pangkalahatan → Mga Update kung may mas bagong bersyon."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
