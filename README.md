@@ -1,129 +1,186 @@
-# Syntelab Creative
+<p align="center">
+  <img src="shell/src-tauri/icons/icon.png" width="112" alt="Syntelab Creative">
+</p>
 
-**One program, many apps.** A free, open source suite for everyday work with
-files and text, on your own computer. No account, no ads, no telemetry.
+<h1 align="center">Syntelab Creative</h1>
 
-**[Download for Windows](https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative-setup.exe)**
-· Linux: [.deb](https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.deb),
-[.rpm](https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.rpm),
-[AppImage](https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.AppImage)
-· [macOS (.dmg)](https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.dmg)
-· [Website](https://syntelab.com/creative) · [All releases](https://github.com/SyntelabHQ/syntelab-creative/releases)
+<p align="center">
+  <b>One program, many apps.</b><br>
+  PDF Organizer, SCRIBE, DEV and UNITS in one window.<br>
+  Free and open source. No account, no ads, no telemetry.
+</p>
 
-| App | What it does |
-|---|---|
-| **PDF Organizer** | View, organize, combine, edit and sign PDFs; batch processing, OCR, forms, compare |
-| **Scribe** | A text editor with tools: clean, sort, compare and transform text |
-| **Dev** | Tools for developers: formats, encodings, hashes, network checks and more |
-| **Units** | Unit converters: length, temperature, currency and many more |
+<p align="center">
+  <a href="https://github.com/SyntelabHQ/syntelab-creative/releases/latest"><img src="https://img.shields.io/github/v/release/SyntelabHQ/syntelab-creative?style=flat&label=version&color=007bff" alt="Latest version"></a>
+  &nbsp;
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-007bff?style=flat" alt="License AGPL-3.0"></a>
+  &nbsp;
+  <a href="https://github.com/SyntelabHQ/syntelab-creative/releases"><img src="https://img.shields.io/github/downloads/SyntelabHQ/syntelab-creative/total?style=flat&color=007bff" alt="Downloads"></a>
+  &nbsp;
+  <a href="https://syntelab.com/creative"><img src="https://img.shields.io/badge/syntelab.com-creative-007bff?style=flat" alt="Website"></a>
+</p>
 
-- **Private by design.** Your files stay on your computer. The program only
-  reads two small files from syntelab.com (is there a new version, what is
-  new), and only if you allow it; nothing about you is sent.
-- **Not limited.** No page counts, no file sizes, no paid tiers: each app can
-  do as much as your computer can.
-- **62 languages**, light and dark themes, right-click entries in Windows
-  Explorer.
-- **Windows** 10 and 11. **Linux and macOS** builds are made from the same
-  open source code, but they have not been tested yet. If something does not
-  work, please open an issue: we will fix and update them based on your
-  feedback. The macOS build is not signed by Apple; the first time, open it
-  with right-click → Open.
+<p align="center">
+  <a href="#-download">Download</a> ·
+  <a href="#-the-apps">The apps</a> ·
+  <a href="#-why-syntelab-creative">Why</a> ·
+  <a href="#-help-the-project">Help the project</a> ·
+  <a href="#-feedback">Feedback</a>
+</p>
 
-## Feedback and contributing
+<!-- Main screenshot: add docs/readme/screenshot.png and remove this comment.
+<p align="center"><img src="docs/readme/screenshot.png" width="880" alt="Syntelab Creative"></p>
+-->
 
-Everyone can help shape Syntelab Creative: with ideas, opinions and advice,
-by reporting bugs, and with changes to the code. Your feedback decides what
-comes next: bugs to fix, things to improve, new features and new apps.
+## ⬇️ Download
 
-- **Ideas, opinions, bugs:** open an
-  [issue](https://github.com/SyntelabHQ/syntelab-creative/issues), or write to
-  us from the program (the Feedback button opens the feedback page).
-- **Code and translations:** fork the repository and open a pull request.
-  For a larger change, open an issue first so we can agree on it. How the
-  project is built is described below and in [docs/architecture](docs/architecture/README.md); keep to
-  its rules (English source, one folder per app), run the tests, and your
-  contribution is published under the same license (AGPL-3.0).
+<table>
+  <tr>
+    <th width="33%"><br>Windows<br><sub>Windows 10 and 11</sub></th>
+    <th width="33%"><br>Linux<br><sub>Any distribution</sub></th>
+    <th width="33%"><br>macOS<br><sub>Apple Silicon and Intel</sub></th>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <br>
+      <a href="https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative-setup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-0078D4?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEgMWgxMC41djEwLjVIMXpNMTIuNSAxSDIzdjEwLjVIMTIuNXpNMSAxMi41aDEwLjVWMjNIMXpNMTIuNSAxMi41SDIzVjIzSDEyLjV6Ii8+PC9zdmc+" alt="Download for Windows"></a>
+      <br><sub>Installer · <code>.exe</code></sub>
+      <br><br>
+    </td>
+    <td align="center" valign="top">
+      <br>
+      <a href="https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.AppImage"><img src="https://img.shields.io/badge/Download_AppImage-2E7D32?style=for-the-badge&logo=linux&logoColor=white" alt="Download AppImage"></a>
+      <br><sub>Runs on any distribution</sub>
+      <br><br>
+      <a href="https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.deb"><img src="https://img.shields.io/badge/.deb-Debian,_Ubuntu-E95420?style=flat&logo=debian&logoColor=white" alt="Download .deb"></a>
+      <a href="https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.rpm"><img src="https://img.shields.io/badge/.rpm-Fedora,_openSUSE-294172?style=flat&logo=fedora&logoColor=white" alt="Download .rpm"></a>
+      <br><br>
+    </td>
+    <td align="center" valign="top">
+      <br>
+      <a href="https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-111111?style=for-the-badge&logo=apple&logoColor=white" alt="Download for macOS"></a>
+      <br><sub>Disk image · <code>.dmg</code></sub>
+      <br><br>
+    </td>
+  </tr>
+</table>
 
-## Made with AI
+<p align="center"><sub>All versions and release notes: <a href="https://github.com/SyntelabHQ/syntelab-creative/releases">Releases</a> · <a href="https://syntelab.com/creative/download">syntelab.com/creative/download</a></sub></p>
 
-Syntelab Creative is built by Syntelab with the help of AI: much of the code,
-the tests and the translations were written with an AI assistant, and every
-change is reviewed and tested by us.
+> [!NOTE]
+> The Linux and macOS builds are made from the same code but **have not been tested yet**. If something does not work, please [open an issue](https://github.com/SyntelabHQ/syntelab-creative/issues) and we will fix it.
+> The macOS build is not signed by Apple: the first time, right-click the app and choose **Open**.
 
-## Building it yourself
+## 🧩 The apps
 
-Needs Node.js 22+, Rust (stable, through [rustup](https://rustup.rs)), the
-[Tauri prerequisites](https://tauri.app/start/prerequisites/) (on Windows: the
-MSVC C++ build tools and WebView2) and LLVM/Clang (https://releases.llvm.org),
-with the environment variable `LIBCLANG_PATH` pointing at its `bin` folder.
-The first build compiles MuPDF and takes several minutes.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><img src="docs/readme/pdf-organizer.svg" width="32" height="32" align="absmiddle" alt="">&nbsp; PDF Organizer</h3>
+      <b>Everything you do with a PDF, in one place.</b><br>
+      View, combine, split, reorder, crop and turn pages. Add text, shapes, pictures, watermarks and page numbers, redact, fill in forms and sign. Turn PDFs, pictures and office documents into one file. OCR and batch processing included.
+    </td>
+    <td width="50%" valign="top">
+      <h3><img src="docs/readme/scribe.svg" width="32" height="32" align="absmiddle" alt="">&nbsp; SCRIBE</h3>
+      <b>A text editor with its tools beside the text.</b><br>
+      Clean, sort, compare and transform text. Chain steps into recipes and run them on a whole folder. Opens files of any size, a page at a time.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><img src="docs/readme/dev.svg" width="32" height="32" align="absmiddle" alt="">&nbsp; DEV</h3>
+      <b>30 developer tools, and your data never leaves the computer.</b><br>
+      JSON, YAML, CSV, XML and SQL formatters, Base64, JWT, hashes, UUIDs, passwords, keys and certificates, regex and cron, plus HTTP, DNS and port checks. No size limits: the only limit is your hardware.
+    </td>
+    <td width="50%" valign="top">
+      <h3><img src="docs/readme/units.svg" width="32" height="32" align="absmiddle" alt="">&nbsp; UNITS</h3>
+      <b>One of the most complete unit converters you can install.</b><br>
+      38 converters and about 1,590 units, from length and currency to viscosity and radiation. Convert one value, or fill a whole table and see every unit at once. Everything is computed on your computer; only currency rates are fetched.
+    </td>
+  </tr>
+</table>
 
-| Command | What it does |
-|---|---|
-| `npm install` | Installs the TypeScript dependencies (once) |
-| `npm run dev` | Starts the program in a Tauri window, with live reload |
-| `npm run dev:web` | Starts only the interface, in a browser at `http://localhost:1420` (no Rust needed) |
-| `npm run typecheck` | Type-checks all TypeScript |
-| `npm test` | Runs the TypeScript tests |
-| `cargo test` | Runs the Rust tests |
-| `npm run build` | Builds the program |
-| `node tools/generate-test-pdfs.mjs` | Writes the test PDFs to `tests/fixtures/generated/` |
+<!-- Screenshots of the apps: add the four pictures to docs/readme/ and remove this comment.
+<table>
+  <tr>
+    <td width="50%"><img src="docs/readme/shot-pdf-organizer.png" alt="PDF Organizer"></td>
+    <td width="50%"><img src="docs/readme/shot-scribe.png" alt="SCRIBE"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="docs/readme/shot-dev.png" alt="DEV"></td>
+    <td width="50%"><img src="docs/readme/shot-units.png" alt="UNITS"></td>
+  </tr>
+</table>
+-->
 
-- What we build and why: [CONCEPT.md](CONCEPT.md)
-- Order of work and open questions: [PLAN.md](PLAN.md)
-- How the code is split: [docs/architecture/README.md](docs/architecture/README.md)
-- Localization (62 languages): [docs/localization/README.md](docs/localization/README.md)
-- Decisions: [docs/decisions/README.md](docs/decisions/README.md)
+## ✨ Why Syntelab Creative
 
-## Language rule
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>🔒 Private by design</h3>
+      Your files never leave your computer. No account, no sign-in, no telemetry. The program goes online only when you ask it to: currency rates, a web page you open, a network check.
+    </td>
+    <td width="33%" valign="top">
+      <h3>♾️ No limits</h3>
+      No page counts, no file-size caps, no daily quotas, no paid tiers. A thousand-page PDF or a gigabyte of text: the only limit is your hardware.
+    </td>
+    <td width="33%" valign="top">
+      <h3>🗂️ One window</h3>
+      Every app opens in a tab of the same program. One install, one set of settings, light and dark themes for all of them.
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>🔄 Signed updates</h3>
+      New versions download and install themselves. Each update is checked against our signature before it runs.
+    </td>
+    <td width="33%" valign="top">
+      <h3>🌍 62 languages</h3>
+      Menus, messages and help, all translated, including right-to-left languages such as Arabic and Hebrew.
+    </td>
+    <td width="33%" valign="top">
+      <h3>📖 Open source</h3>
+      The code is public under the AGPL v3.0: anyone can read it, check what it does and build it themselves.
+    </td>
+  </tr>
+</table>
 
-All code, comments, documentation and source strings are written in
-**English**. Translations live only in `locales/` folders
-(see [docs/decisions/0009-english-only-source.md](docs/decisions/0009-english-only-source.md)).
+## 🤝 Help the project
 
-## Folder rule
+Syntelab Creative is open source, and it gets better with every pair of eyes on it. If you like it, here is how you can help:
 
-- **One folder per app**, inside `apps/`: `apps/pdf-organizer/`,
-  `apps/convert/`, ... The folder name is the app id. Everything that belongs only to an app lives in its folder
-  (code, tests, translations, icon, app plan).
-- **Every folder outside `apps/` is the central structure**, shared by the whole program.
-- An app **never uses another app directly**. Anything two apps
-  need moves into the central structure (`crates/` or `packages/`).
+- 💻 **Read the code and propose changes.** Look at how something is built, find what can be done better, and send a pull request. For a larger change, open an issue first so we can talk about it.
+- 🐞 **Report bugs.** [Open an issue](https://github.com/SyntelabHQ/syntelab-creative/issues) with the steps to see it, your system and the version of the program.
+- 🌍 **Improve a translation.** The texts are in the `locales/` folders; `en.json` is the source, every other language follows it.
+- ❤️ **Support us.** The program is free, and keeping it that way takes time. A donation, one-time or monthly, helps: [syntelab.com/support](https://syntelab.com/support).
+- 📣 **Tell others.** A star on this repository or a recommendation to a friend helps more people find it.
 
-## Folder map
+By sending a contribution you agree that it is published under the same license, the [GNU AGPL v3.0](LICENSE).
 
-| Folder | Contents |
-|---|---|
-| `apps/<app-id>/` | One folder per app (`pdf-organizer`, `scribe`, `dev`, `units`, and the ones still to come): code, tests, translations, icon, plan |
-| `shell/` | The shell (Tauri): window, start screen, tabs, settings |
-| `crates/` | Shared Rust code (app contract, jobs, network, platform) |
-| `packages/` | Shared TypeScript/React code (UI kit, commands, i18n) |
-| `locales/` | Global translations: shell + common terms (62 languages, source: English) |
-| `integrations/` | OS integration (Windows Explorer right-click, Linux desktop) |
-| `installers/` | Windows, Linux, macOS installers |
-| `remote/` | The files of syntelab.com the program reads (update, changelog) |
-| `assets/` | Syntelab Creative logo, colors, shared icons, fonts |
-| `docs/` | Architecture, localization, decisions, legal, UI |
-| `tests/` | Whole-app tests and shared test files |
-| `third-party/` | Patched copies of dependencies, only while a needed fix is unreleased |
-| `tools/` | Helper scripts (build, translation checks) |
+<details>
+<summary><b>Build from source</b></summary>
 
-## License and attribution
+You need [Node.js](https://nodejs.org/) and [Rust](https://www.rust-lang.org/tools/install), plus the system packages listed in the [Tauri prerequisites](https://v2.tauri.app/start/prerequisites/).
 
-Copyright © 2026 Syntelab.
+```bash
+git clone https://github.com/SyntelabHQ/syntelab-creative.git
+cd syntelab-creative
+npm install
+npm run dev      # run the program while you work on it
+npm test         # tests
+npm run build    # build the installer for your system
+```
 
-Syntelab Creative is free software under the
-[GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0). You may use,
-study, change and share it under that license.
+</details>
 
-Under section 7(b) of the license, anyone who shares this program or a work
-based on it must keep this attribution, in the program (for example in its
-About window) and in its documentation:
+## 💬 Feedback
 
-> Based on Syntelab Creative by Syntelab - https://syntelab.com
+Ideas, bugs, opinions: we read all of them.
+Open an [issue](https://github.com/SyntelabHQ/syntelab-creative/issues), send a pull request, or write to us through the [feedback form](https://syntelab.com/feedback).
 
-The exact terms are in [NOTICE](NOTICE). "Syntelab" and "Syntelab Creative"
-are names of Syntelab; a changed version must use a name of its own (see
-`docs/legal/`). The parts it is built from, and their licenses, are listed in
-[THIRD-PARTY.md](THIRD-PARTY.md).
+## 📜 License
+
+Syntelab Creative is free software under the [GNU AGPL v3.0](LICENSE). The projects it is built with are listed in [THIRD-PARTY.md](THIRD-PARTY.md).
+
+<p align="center"><sub>Made by <a href="https://syntelab.com">Syntelab</a>, a creative tech studio.</sub></p>
