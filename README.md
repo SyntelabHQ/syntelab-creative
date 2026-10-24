@@ -1,6 +1,7 @@
-<p align="center">
-  <img src="shell/src-tauri/icons/icon.png" width="112" alt="Syntelab Creative">
-</p>
+<h1 align="center">
+  <img src="shell/src-tauri/icons/icon.png" width="48"align="absmiddle" alt="">
+  &nbsp;<aling="absmiddle">Syntelab Creative</align>
+</h1>
 
 <h1 align="center">Syntelab Creative</h1>
 
@@ -12,11 +13,11 @@
 
 <p align="center">
   <a href="https://github.com/SyntelabHQ/syntelab-creative/releases/latest"><img src="https://img.shields.io/github/v/release/SyntelabHQ/syntelab-creative?style=flat&label=version&color=007bff" alt="Latest version"></a>
-  &nbsp;
+  &nbsp;&nbsp;
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-007bff?style=flat" alt="License AGPL-3.0"></a>
-  &nbsp;
+  &nbsp;&nbsp;
   <a href="https://github.com/SyntelabHQ/syntelab-creative/releases"><img src="https://img.shields.io/github/downloads/SyntelabHQ/syntelab-creative/total?style=flat&color=007bff" alt="Downloads"></a>
-  &nbsp;
+  &nbsp;&nbsp;
   <a href="https://syntelab.com/creative"><img src="https://img.shields.io/badge/syntelab.com-creative-007bff?style=flat" alt="Website"></a>
 </p>
 
@@ -36,9 +37,9 @@
 
 <table>
   <tr>
-    <th width="33%">Windows</th>
-    <th width="33%">Linux</th>
-    <th width="33%">macOS</th>
+    <th width="33%"><img src="https://github.com/SyntelabHQ/syntelab-creative/raw/main/docs/readme/spacer.png" width="400" height="1" alt=""><br>Windows</th>
+    <th width="33%"><img src="https://github.com/SyntelabHQ/syntelab-creative/raw/main/docs/readme/spacer.png" width="400" height="1" alt=""><br>Linux</th>
+    <th width="33%"><img src="https://github.com/SyntelabHQ/syntelab-creative/raw/main/docs/readme/spacer.png" width="400" height="1" alt=""><br>macOS</th>
   </tr>
   <tr>
     <td align="center" valign="middle">
@@ -52,7 +53,7 @@
       <a href="https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.AppImage"><img src="https://img.shields.io/badge/Download_AppImage-2E7D32?style=for-the-badge&logo=linux&logoColor=white" alt="Download AppImage"></a>
       <br><sub>Runs on any distribution</sub>
       <br><br>
-      <a href="https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.deb"><img src="https://img.shields.io/badge/.deb-Debian,_Ubuntu-E95420?style=flat&logo=debian&logoColor=white" alt="Download .deb"></a>
+      <a href="https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.deb"><img src="https://img.shields.io/badge/.deb-Debian,_Ubuntu-E95420?style=flat&logo=debian&logoColor=white" alt="Download .deb"></a>&nbsp;&nbsp;
       <a href="https://github.com/SyntelabHQ/syntelab-creative/releases/latest/download/syntelab-creative.rpm"><img src="https://img.shields.io/badge/.rpm-Fedora,_openSUSE-294172?style=flat&logo=fedora&logoColor=white" alt="Download .rpm"></a>
       <br><br>
     </td>
@@ -76,28 +77,24 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <p><img src="docs/readme/pdf-organizer.png" width="40" height="40" alt="PDF Organizer"></p>
-      <h3>PDF Organizer</h3>
+      <h3><img src="https://github.com/SyntelabHQ/syntelab-creative/raw/main/docs/readme/pdf-organizer.png" width="32" height="32" align="absmiddle" alt="">&nbsp; PDF Organizer</h3>
       <p><b>Everything you do with a PDF, in one place.</b></p>
       <p>View, combine, split, reorder, crop and turn pages. Add text, shapes, pictures, watermarks and page numbers, redact, fill in forms and sign. Turn PDFs, pictures and office documents into one file. OCR and batch processing included.</p>
     </td>
     <td width="50%" valign="top">
-      <p><img src="docs/readme/scribe.png" width="40" height="40" alt="SCRIBE"></p>
-      <h3>SCRIBE</h3>
+      <h3><img src="https://github.com/SyntelabHQ/syntelab-creative/raw/main/docs/readme/scribe.png" width="32" height="32" align="absmiddle" alt="">&nbsp; SCRIBE</h3>
       <p><b>A text editor with its tools beside the text.</b></p>
       <p>Clean, sort, compare and transform text. Chain steps into recipes and run them on a whole folder. Opens files of any size, a page at a time.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <p><img src="docs/readme/dev.png" width="40" height="40" alt="DEV"></p>
-      <h3>DEV</h3>
+      <h3><img src="https://github.com/SyntelabHQ/syntelab-creative/raw/main/docs/readme/dev.png" width="32" height="32" align="absmiddle" alt="">&nbsp; DEV</h3>
       <p><b>30 developer tools, and your data never leaves the computer.</b></p>
       <p>JSON, YAML, CSV, XML and SQL formatters, Base64, JWT, hashes, UUIDs, passwords, keys and certificates, regex and cron, plus HTTP, DNS and port checks. No size limits: the only limit is your hardware.</p>
     </td>
     <td width="50%" valign="top">
-      <p><img src="docs/readme/units.png" width="40" height="40" alt="UNITS"></p>
-      <h3>UNITS</h3>
+      <h3><img src="https://github.com/SyntelabHQ/syntelab-creative/raw/main/docs/readme/units.png" width="32" height="32" align="absmiddle" alt="">&nbsp; UNITS</h3>
       <p><b>One of the most complete unit converters you can install.</b></p>
       <p>38 converters and about 1,590 units, from length and currency to viscosity and radiation. Convert one value, or fill a whole table and see every unit at once. Everything is computed on your computer; only currency rates are fetched.</p>
     </td>
@@ -214,4 +211,4 @@ Syntelab Creative is free software under the [GNU AGPL v3.0](LICENSE), with the 
 - 📂 **Keep it open.** Publish your version under the same license, with its source code. This also applies when people use your changed version over a network.
 - ✏️ **Use a name of your own.** The names "Syntelab" and "Syntelab Creative" and the names and logos of its apps stay ours; a changed version needs its own name.
 
-<p align="center"><sub>Made by <a href="https://syntelab.com">Syntelab</a>, a creative tech studio.</sub></p>
+<p align="center">Made by <a href="https://syntelab.com">Syntelab</a>, a creative tech studio.</p>
