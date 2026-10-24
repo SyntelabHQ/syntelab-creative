@@ -76,24 +76,28 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="docs/readme/pdf-organizer.png" width="32" height="32" align="absmiddle" alt="">&nbsp; PDF Organizer</h3>
+      <p><img src="docs/readme/pdf-organizer.png" width="40" height="40" alt="PDF Organizer"></p>
+      <h3>PDF Organizer</h3>
       <p><b>Everything you do with a PDF, in one place.</b></p>
       <p>View, combine, split, reorder, crop and turn pages. Add text, shapes, pictures, watermarks and page numbers, redact, fill in forms and sign. Turn PDFs, pictures and office documents into one file. OCR and batch processing included.</p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="docs/readme/scribe.png" width="32" height="32" align="absmiddle" alt="">&nbsp; SCRIBE</h3>
+      <p><img src="docs/readme/scribe.png" width="40" height="40" alt="SCRIBE"></p>
+      <h3>SCRIBE</h3>
       <p><b>A text editor with its tools beside the text.</b></p>
       <p>Clean, sort, compare and transform text. Chain steps into recipes and run them on a whole folder. Opens files of any size, a page at a time.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><img src="docs/readme/dev.png" width="32" height="32" align="absmiddle" alt="">&nbsp; DEV</h3>
+      <p><img src="docs/readme/dev.png" width="40" height="40" alt="DEV"></p>
+      <h3>DEV</h3>
       <p><b>30 developer tools, and your data never leaves the computer.</b></p>
       <p>JSON, YAML, CSV, XML and SQL formatters, Base64, JWT, hashes, UUIDs, passwords, keys and certificates, regex and cron, plus HTTP, DNS and port checks. No size limits: the only limit is your hardware.</p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="docs/readme/units.png" width="32" height="32" align="absmiddle" alt="">&nbsp; UNITS</h3>
+      <p><img src="docs/readme/units.png" width="40" height="40" alt="UNITS"></p>
+      <h3>UNITS</h3>
       <p><b>One of the most complete unit converters you can install.</b></p>
       <p>38 converters and about 1,590 units, from length and currency to viscosity and radiation. Convert one value, or fill a whole table and see every unit at once. Everything is computed on your computer; only currency rates are fetched.</p>
     </td>
