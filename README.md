@@ -3,8 +3,6 @@
   &nbsp;<aling="absmiddle">Syntelab Creative</align>
 </h1>
 
-<h1 align="center">Syntelab Creative</h1>
-
 <p align="center">
   <b>One program, many apps.</b><br>
   PDF Organizer, SCRIBE, DEV and UNITS in one window.<br>
