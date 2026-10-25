@@ -17,7 +17,7 @@
                 "Dev hukusanya zana kwa ajili ya watengenezaji programu: kusimba na kusimbua, kubadilisha muundo na kukagua, na kubadilisha aina moja ya data kuwa nyingine."
               ]
             },
-            "Programu hizi zinashiriki dirisha moja, seti moja ya mipangilio na njia moja ya kufanya kazi, hivyo unachojifunza katika moja ni sawa na nyingine.",
+            "Kila programu hufunguka katika dirisha lake lenyewe, ikiwa na kitufe chake kwenye upau wa kazi, na programu hizi zinashiriki seti moja ya mipangilio na njia moja ya kufanya kazi, hivyo unachojifunza katika moja ni sawa na nyingine.",
             {
               "note": "Kila kitu kinafanyika kwenye kompyuta yako. Nyaraka zako hazitumwi popote, na hakuna taarifa kuhusu wewe au kazi yako inayokusanywa."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Upau wa pembeni: picha ya nyumba hupeleka kwenye Anza, kisha zinafuata programu zako, na chini kuna habari za programu, Maoni, Saidia na Mipangilio.",
-                "Ndani ya programu, Faili → Nenda hadi Anza huenda kwenye ukurasa wa kwanza wa programu hiyo ikiwa ipo (Units, Scribe), na Faili → Fungua Mipangilio (Ctrl+,) hufungua Mipangilio katika sehemu ya programu hiyo; sehemu nyingine zinapatikana kwa mbofyo mmoja hapo.",
+                "Upau wa pembeni: nembo ya Syntelab huorodhesha programu, chini yake ikoni ya programu ya dirisha hili hurudisha ukurasa wake wa kwanza, na chini kabisa kuna habari za programu, Maoni, Saidia na Mipangilio.",
+                "Faili → Nenda hadi Anza huenda kwenye ukurasa wa kwanza wa programu, na Faili → Fungua Mipangilio (Ctrl+,) hufungua Mipangilio katika sehemu ya programu hiyo; sehemu nyingine zinapatikana kwa mbofyo mmoja hapo.",
                 "Tabo za juu: kila nyaraka, kifunga au zana unayofungua ina tabo yake. Nukta kwenye tabo inaashiria kuwa kuna mabadiliko ambayo hayajahifadhiwa.",
                 "Menyu za programu, chini ya tabo: kama upau wa menyu, kama utepe au kama paneli ya pembeni, kulingana na chaguo lako.",
                 "Sehemu iliyobaki ya dirisha ni tabo iliyo mbele."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Anza",
+          "title": "Programu na madirisha yake",
           "body": [
-            "Anza huonyesha programu zako na faili ulizofungua hivi karibuni. Bofya programu ili kuifungua; bofya faili ya hivi karibuni ili kuifungua tena.",
+            "Bofya nembo ya Syntelab juu ya upau wa pembeni ili kuona programu. Bofya moja ili kuifungua katika dirisha lake lenyewe; ikiwa tayari imefunguliwa, dirisha lake huja mbele, hivyo programu haina madirisha mawili kamwe. Utafutaji ulio juu ya orodha hupata programu, zana na amri.",
             "Programu zinaweza kuonyeshwa kama kadi, kama aikoni zenye majina au kama aikoni pekee, na kuvutwa katika mpangilio unaopenda. Kwa kutumia kibodi: Alt na mishale. \"Rudisha kwenye asili\" huzirudisha katika hali ya awali.",
-            "Kila programu pia ina njia mkato yake katika menyu ya Start ya Windows, kama vile \"Syntelab PDF Organizer\" au \"Syntelab Units\": inafungua programu moja kwa moja katika programu hiyo. Ikiwa programu tayari imefunguliwa, programu hiyo inafunguka ndani yake kama tabo."
+            "Kila programu pia ina njia mkato yake katika menyu ya Start ya Windows, ndani ya folda ya \"Syntelab Creative\", na dirisha lake linaweza kubandikwa kwenye upau wa kazi kama programu yoyote. Ikianzishwa bila programu mahususi, programu hufungua programu uliyotumia mwisho."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Kutoka kwenye programu: Faili → Fungua, au Ctrl+O.",
                 "Kwa kuburuta faili kutoka kwenye folda na kuzidondosha kwenye dirisha.",
-                "Kutoka kwenye meneja wa faili wa mfumo wako: bonyeza mara mbili faili ambayo programu imewekwa kuifungua. Katika Windows Explorer kuna pia menyu ya kubofya kulia (angalia \"Menyu ya kubofya kulia ya Windows Explorer\").",
-                "Kutoka Anza: orodha ya faili za hivi karibuni."
+                "Kutoka kwenye meneja wa faili wa mfumo wako: bonyeza mara mbili faili ambayo programu imewekwa kuifungua. Katika Windows Explorer kuna pia menyu ya kubofya kulia (angalia \"Menyu ya kubofya kulia ya Windows Explorer\")."
               ]
             },
-            "Programu inafanya kazi kama nakala moja. Faili iliyofunguliwa kutoka kwenye meneja wa faili wakati programu inafanya kazi inafunguka kama tabo mpya katika dirisha lile lile."
+            "Programu inafanya kazi kama nakala moja. Faili iliyofunguliwa kutoka kwenye meneja wa faili inafunguka kama tabo mpya katika dirisha la programu inayoipokea (PDF katika PDF Organizer), ambalo huja mbele."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "\"Weka tabo ya Anza miongoni mwa tabo\": inapozimwa, tabo ya Anza huonyeshwa tu wakati Anza yenyewe iko mbele; nyumba kwenye upau wa pembeni huongoza kurudi humo kila wakati.",
                 "Alama kwenye tabo inaweza kuwa ikoni ya programu yake au mraba wa kawaida katika rangi ya programu hiyo."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Kutumia Msaada huu",
           "body": [
-            "Msaada unahusiana na mahali unapoifungulia. Kutoka kwenye programu unaona tu mwongozo wa programu hiyo na amri za tabo uliyotoka. Kutoka ukurasa wa kuanzia au kutoka Mipangilio unaona \"Kuhusu\" (programu na kila programu, kwa ufupi) na mwongozo wa programu. Msaada → Kuhusu huongoza kila wakati kwenye \"Kuhusu\".",
+            "Msaada unahusiana na mahali unapoifungulia. Kutoka kwenye programu unaona tu mwongozo wa programu hiyo na amri za tabo uliyotoka. Kutoka Mipangilio unaona \"Kuhusu\" (programu na kila programu, kwa ufupi) na mwongozo wa programu. Msaada → Kuhusu huongoza kila wakati kwenye \"Kuhusu\".",
             "Maudhui yapo upande wa kushoto; utafutaji juu yake hupita kila mada, katika vichwa vya habari na katika maandishi.",
             "Msaada hufunguka katika tabo yake yenyewe, hivyo unaweza kurudi mbele na nyuma kati yake na kazi yako; F1 huileta mbele tena. Chini ya \"Amri za tabo uliyotoka\" kila menyu ya tabo hiyo imeorodheshwa ikiwa na kila amri yake, funguo zake na kile inachofanya: fungua Msaada kutoka kwenye tabo ambayo una swali kuihusu."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Kile tunachofanyia kazi",
           "body": [
-            "Programu hizi nne zitaendelea kukua: kile unachoripoti na kuomba kupitia Msaada → Maoni huamua mengi ya yale yatakayokuja kwanza. Pamoja nazo, programu mpya zinaandaliwa. Anza haizionyeshi isipokuwa ukitaka: ziwekee alama kwenye menyu ya \"Onyesha\" ya Anza ili uzione hapo kama \"Inakuja hivi karibuni\":",
+            "Programu hizi nne zitaendelea kukua: kile unachoripoti na kuomba kupitia Msaada → Maoni huamua mengi ya yale yatakayokuja kwanza. Pamoja nazo, programu mpya zinaandaliwa. Orodha ya programu haizionyeshi isipokuwa ukitaka: ziwekee alama kwenye menyu yake ya \"Onyesha\" ili uzione hapo kama \"Inakuja hivi karibuni\":",
             {
               "points": [
                 "Convert: kubadilisha faili kutoka muundo mmoja kwenda mwingine, miongoni mwa hivyo nyaraka za ofisi kwenda PDF na kurudi, bila kuhitaji programu nyingine kusakinishwa. Bado hatujapata teknolojia ya wazi inayofikia ubora tunaoutaka, hivyo itakuja tu wakati itakapokuwa haitakukatisha tamaa; pale ambapo zana hazipo, tutazitengeneza.",

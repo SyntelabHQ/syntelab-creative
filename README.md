@@ -3,8 +3,6 @@
   &nbsp;<aling="absmiddle">Syntelab Creative</align>
 </h1>
 
-<h1 align="center">Syntelab Creative</h1>
-
 <p align="center">
   <b>One program, many apps.</b><br>
   PDF Organizer, SCRIBE, DEV and UNITS in one window.<br>
@@ -188,6 +186,7 @@ Syntelab Creative stands on the work of many open source projects. Thank you to 
 |---|---|
 | [Tauri](https://tauri.app) | The program window and the bridge between the interface and Rust |
 | [MuPDF](https://mupdf.com) | Reading, drawing and writing PDFs in PDF Organizer |
+| [PDFium](https://pdfium.googlesource.com/pdfium/) | Drawing PDF pages on screen in PDF Organizer, sharp at any zoom |
 | [React](https://react.dev) | The interface |
 | [CodeMirror](https://codemirror.net) | The text editor of SCRIBE and DEV |
 | [RustCrypto](https://github.com/RustCrypto) and [rustls](https://github.com/rustls/rustls) | Hashes, keys, certificates and secure connections in DEV |

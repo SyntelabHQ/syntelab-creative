@@ -17,7 +17,7 @@
                 "Dev vereint Entwicklerwerkzeuge: codieren und decodieren, formatieren und prüfen sowie Daten in andere Formen umwandeln."
               ]
             },
-            "Alle Apps verwenden dasselbe Fenster, dieselben Einstellungen und dieselbe Bedienung. Was Sie in einer App lernen, gilt auch in den anderen.",
+            "Jede App öffnet sich in einem eigenen Fenster mit einer eigenen Schaltfläche in der Taskleiste. Alle Apps verwenden dieselben Einstellungen und dieselbe Bedienung. Was Sie in einer App lernen, gilt auch in den anderen.",
             {
               "note": "Alles geschieht auf Ihrem Computer. Ihre Dokumente werden nirgendwohin gesendet, und es werden keine Daten über Sie oder Ihre Arbeit gesammelt."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Die Seitenleiste: Das Haus führt zu Start, darunter stehen Ihre Apps. Ganz unten finden Sie Neuigkeiten, Feedback, Unterstützen und Einstellungen.",
-                "In einer App führt Datei → Zur Startseite zur Startseite dieser App, sofern vorhanden (Units, Scribe). Datei → Einstellungen öffnen (Strg+,) öffnet die Einstellungen direkt im Bereich der App; die übrigen Bereiche erreichen Sie dort mit einem Klick.",
+                "Die Seitenleiste: Das Syntelab-Logo listet die Apps auf, darunter bringt das Symbol der App dieses Fensters deren erste Seite zurück. Ganz unten finden Sie Neuigkeiten, Feedback, Unterstützen und Einstellungen.",
+                "Datei → Zur Startseite führt zur ersten Seite der App. Datei → Einstellungen öffnen (Strg+,) öffnet die Einstellungen direkt im Bereich der App; die übrigen Bereiche erreichen Sie dort mit einem Klick.",
                 "Die Tabs oben: Jedes Dokument, jede Zusammenstellung und jedes Werkzeug, das Sie öffnen, erhält einen eigenen Tab. Ein Punkt auf einem Tab bedeutet, dass Änderungen noch nicht gespeichert wurden.",
                 "Die Menüs der App unter den Tabs werden je nach Auswahl als Menüleiste, Menüband oder Seitenleiste angezeigt.",
                 "Der übrige Fensterbereich zeigt den aktiven Tab."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Start",
+          "title": "Die Apps und ihre Fenster",
           "body": [
-            "Start zeigt Ihre Apps und die zuletzt geöffneten Dateien. Klicken Sie auf eine App, um sie zu öffnen, oder auf eine zuletzt verwendete Datei, um sie erneut zu öffnen.",
+            "Klicken Sie oben in der Seitenleiste auf das Syntelab-Logo, um die Apps zu sehen. Klicken Sie auf eine App, um sie in einem eigenen Fenster zu öffnen; ist sie bereits geöffnet, wird ihr Fenster in den Vordergrund geholt, sodass eine App nie zwei Fenster hat. Die Suche oben in der Liste findet Apps, Werkzeuge und Befehle.",
             "Sie können Apps als Karten, als Symbole mit Namen oder nur als Symbole anzeigen und sie durch Ziehen beliebig anordnen. Mit der Tastatur verwenden Sie Alt und die Pfeiltasten. „Auf Standard zurücksetzen“ stellt die ursprüngliche Reihenfolge wieder her.",
-            "Jede App hat auch eine eigene Verknüpfung im Windows-Startmenü, etwa „Syntelab PDF Organizer“ oder „Syntelab Units“. Damit öffnet sich das Programm direkt in dieser App. Ist das Programm bereits geöffnet, wird die App dort in einem neuen Tab geöffnet."
+            "Jede App hat auch eine eigene Verknüpfung im Windows-Startmenü, im Ordner „Syntelab Creative“, und ihr Fenster lässt sich wie jedes Programm an die Taskleiste anheften. Wird das Programm ohne App gestartet, öffnet es die zuletzt verwendete App."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "In einer App: Datei → Öffnen oder Strg+O.",
                 "Ziehen Sie Dateien aus einem Ordner auf das Fenster.",
-                "Doppelklicken Sie im Dateimanager Ihres Systems auf eine Datei, die dem Programm zugeordnet ist. Im Windows-Explorer gibt es außerdem das Kontextmenü per Rechtsklick (siehe „Das Rechtsklickmenü im Windows-Explorer“).",
-                "Unter Start: in der Liste der zuletzt geöffneten Dateien."
+                "Doppelklicken Sie im Dateimanager Ihres Systems auf eine Datei, die dem Programm zugeordnet ist. Im Windows-Explorer gibt es außerdem das Kontextmenü per Rechtsklick (siehe „Das Rechtsklickmenü im Windows-Explorer“)."
               ]
             },
-            "Das Programm läuft nur einmal. Wird eine Datei im Dateimanager geöffnet, während das Programm bereits läuft, erscheint sie als neuer Tab im selben Fenster."
+            "Das Programm läuft nur einmal. Eine im Dateimanager geöffnete Datei erscheint als neuer Tab im Fenster der App, die sie verarbeitet (eine PDF in PDF Organizer), und dieses Fenster kommt in den Vordergrund."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "„Start-Tab unter den Tabs beibehalten“: Wenn die Option ausgeschaltet ist, wird der Start-Tab nur angezeigt, solange Start aktiv ist. Das Haus in der Seitenleiste führt immer dorthin zurück.",
                 "Als Markierung auf einem Tab können Sie das App-Symbol oder ein einfaches Quadrat in der App-Farbe verwenden."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Diese Hilfe verwenden",
           "body": [
-            "Die Hilfe richtet sich danach, von wo aus Sie sie öffnen. In einer App sehen Sie nur deren Handbuch und die Befehle des vorherigen Tabs. Auf der Startseite oder in den Einstellungen sehen Sie „Über“ (kurze Informationen zum Programm und jeder App) sowie das Handbuch des Programms. Hilfe → Über führt immer zu „Über“.",
+            "Die Hilfe richtet sich danach, von wo aus Sie sie öffnen. In einer App sehen Sie nur deren Handbuch und die Befehle des vorherigen Tabs. In den Einstellungen sehen Sie „Über“ (kurze Informationen zum Programm und jeder App) sowie das Handbuch des Programms. Hilfe → Über führt immer zu „Über“.",
             "Das Inhaltsverzeichnis steht links. Über das Suchfeld darüber können Sie alle Themen anhand ihrer Titel und Texte durchsuchen.",
             "Die Hilfe öffnet sich in einem eigenen Tab. So wechseln Sie zwischen ihr und Ihrer Arbeit hin und her; mit F1 holen Sie sie wieder nach vorn. Unter „Befehle des vorherigen Tabs“ sind alle Menüs des Tabs mit Befehlen, Tastenkürzeln und Erläuterungen aufgeführt. Öffnen Sie die Hilfe in dem Tab, zu dem Sie eine Frage haben."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Woran wir arbeiten",
           "body": [
-            "Die vier vorhandenen Apps werden weiterentwickelt. Rückmeldungen und Wünsche über Hilfe → Feedback bestimmen mit, was zuerst kommt. Außerdem entstehen neue Apps. Start zeigt sie nur an, wenn Sie das möchten: Haken Sie sie im Menü „Ansicht“ an, damit sie dort als „Demnächst verfügbar“ erscheinen:",
+            "Die vier vorhandenen Apps werden weiterentwickelt. Rückmeldungen und Wünsche über Hilfe → Feedback bestimmen mit, was zuerst kommt. Außerdem entstehen neue Apps. Die App-Liste zeigt sie nur an, wenn Sie das möchten: Haken Sie sie in ihrem Menü „Ansicht“ an, damit sie dort als „Demnächst verfügbar“ erscheinen:",
             {
               "points": [
                 "Convert: Dateien zwischen Formaten umwandeln, darunter Office-Dokumente in PDF und zurück, ohne ein weiteres Programm installieren zu müssen. Bisher haben wir keine offene Technologie gefunden, die die gewünschte Qualität erreicht. Convert erscheint erst, wenn das Ergebnis überzeugt. Wo passende Werkzeuge fehlen, entwickeln wir sie selbst.",

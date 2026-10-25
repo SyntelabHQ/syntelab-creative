@@ -44,6 +44,19 @@ export function openBatchTab(host: Pick<AppHost, 'openTab'>, title: string, path
   });
 }
 
+/**
+ * Opens "Sign many files": the batch tab made for signing only, with nothing
+ * else to choose. With `paths`, it starts with those files.
+ */
+export function openSignBatchTab(host: Pick<AppHost, 'openTab'>, title: string, paths: readonly string[] = []): void {
+  host.openTab({
+    // One such tab is enough: asking again brings it to the front, unless it is asked for with files of its own.
+    key: paths.length > 0 ? `sign-batch:${Date.now()}` : 'sign-batch',
+    title,
+    params: { batch: '1', signing: '1', kind: 'sign', ...(paths.length > 0 ? { files: JSON.stringify(paths) } : {}) },
+  });
+}
+
 /** Opens a tab that compares two files page by page. */
 export function openCompareTab(host: AppHost, title: string, first: string, second: string): void {
   host.openTab({ key: `compare:${first}|${second}`, title, params: { compare: '1', first, second } });

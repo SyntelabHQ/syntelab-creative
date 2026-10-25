@@ -7,7 +7,7 @@ use tauri::{AppHandle, Manager};
 
 /// Where the app folders are: the repository's `apps/` while developing, the
 /// program's resources once installed.
-fn apps_dir(app: &AppHandle) -> Result<PathBuf, String> {
+pub(crate) fn apps_dir(app: &AppHandle) -> Result<PathBuf, String> {
     if cfg!(debug_assertions) {
         return Ok(PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("../../apps"));
     }

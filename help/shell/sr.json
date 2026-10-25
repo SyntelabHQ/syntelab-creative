@@ -17,7 +17,7 @@
                 "Dev okuplja alate za programere: kodiranje i dekodiranje, formatiranje i proveru, kao i pretvaranje jednog oblika podataka u drugi."
               ]
             },
-            "Aplikacije dele jedan prozor, jedan set podešavanja i jedan način rada, tako da je ono što naučite u jednoj aplikaciji isto i u sledećoj.",
+            "Svaka aplikacija se otvara u svom prozoru, sa svojim dugmetom na traci zadataka, a aplikacije dele jedan set podešavanja i jedan način rada, tako da je ono što naučite u jednoj aplikaciji isto i u sledećoj.",
             {
               "note": "Sve se dešava na vašem računaru. Vaši dokumenti se nikada ne šalju nigde, a o vama ili vašem radu se ne prikupljaju nikakvi podaci."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Bočna traka: ikonica kuće vodi na Početak, zatim slede vaše aplikacije, a na dnu se nalaze novosti o programu, Povratne informacije, Podrška i Podešavanja.",
-                "U aplikaciji, Datoteka → Idi na Početak vodi na prvu stranicu te aplikacije ako je ona ima (Units, Scribe), a Datoteka → Otvori Podešavanja (Ctrl+,) otvara Podešavanja na delu koji pripada toj aplikaciji; ostali delovi su tamo na jedan klik.",
+                "Bočna traka: logo Syntelab prikazuje listu aplikacija, ispod njega ikonica aplikacije ovog prozora vraća njenu prvu stranicu, a na dnu se nalaze novosti o programu, Povratne informacije, Podrška i Podešavanja.",
+                "Datoteka → Idi na Početak vodi na prvu stranicu aplikacije, a Datoteka → Otvori Podešavanja (Ctrl+,) otvara Podešavanja na delu koji pripada toj aplikaciji; ostali delovi su tamo na jedan klik.",
                 "Kartice na vrhu: svaki dokument, zbirka ili alat koji otvorite ima svoju karticu. Tačka na kartici označava da postoje nesačuvane izmene.",
                 "Meniji aplikacije, ispod kartica: kao traka menija, kao traka ili kao bočni panel, zavisno od vašeg izbora.",
                 "Ostatak prozora zauzima aktivna kartica."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Početak",
+          "title": "Aplikacije i njihovi prozori",
           "body": [
-            "Početak prikazuje vaše aplikacije i datoteke koje ste nedavno otvorili. Kliknite na aplikaciju da biste je otvorili; kliknite na nedavnu datoteku da biste je ponovo otvorili.",
+            "Kliknite na logo Syntelab na vrhu bočne trake da biste videli aplikacije. Kliknite na jednu da biste je otvorili u njenom prozoru; ako je već otvorena, njen prozor dolazi u prvi plan, tako da aplikacija nikada nema dva prozora. Pretraga na vrhu liste pronalazi aplikacije, alatke i komande.",
             "Aplikacije se mogu prikazati kao kartice, kao ikonice sa nazivima ili samo kao ikonice, i mogu se prevući u redosled koji vam odgovara. Pomoću tastature: Alt i strelice. „Vrati na podrazumevano“ ih vraća na početni raspored.",
-            "Svaka aplikacija takođe ima svoju prečicu u meniju Start u Windows-u, kao što su „Syntelab PDF Organizer“ ili „Syntelab Units“: ona otvara program direktno u toj aplikaciji. Ako je program već otvoren, aplikacija se otvara kao kartica u njemu."
+            "Svaka aplikacija takođe ima svoju prečicu u meniju Start u Windows-u, u folderu „Syntelab Creative“, a njen prozor se može zakačiti na traku zadataka kao bilo koji program. Kada se pokrene bez aplikacije, program otvara aplikaciju koju ste poslednju koristili."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Iz aplikacije: Datoteka → Otvori ili Ctrl+O.",
                 "Prevlačenjem datoteka iz foldera na prozor.",
-                "Iz menadžera datoteka vašeg sistema: dvostrukim klikom na datoteku koju je program podešen da otvara. U Windows Explorer-u postoji i meni desnog klika (pogledajte „Meni desnog klika u Windows Explorer-u“).",
-                "Sa Početka: lista nedavnih datoteka."
+                "Iz menadžera datoteka vašeg sistema: dvostrukim klikom na datoteku koju je program podešen da otvara. U Windows Explorer-u postoji i meni desnog klika (pogledajte „Meni desnog klika u Windows Explorer-u“)."
               ]
             },
-            "Program se pokreće kao jedna kopija. Datoteka otvorena iz menadžera datoteka dok je program pokrenut otvara se kao nova kartica u istom prozoru."
+            "Program se pokreće kao jedna kopija. Datoteka otvorena iz menadžera datoteka otvara se kao nova kartica u prozoru aplikacije koja je preuzima (PDF u PDF Organizer-u), koji dolazi u prvi plan."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "„Zadrži karticu Početak među karticama“: kada je isključeno, kartica Početak se prikazuje samo dok je sam Početak u prvom planu; kućica na bočnoj traci uvek vodi nazad na nju.",
                 "Oznaka na kartici može biti ikona njene aplikacije ili običan kvadrat u boji aplikacije."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Korišćenje ove Pomoći",
           "body": [
-            "Pomoć pripada onome odakle ste je otvorili. Iz aplikacije vidite samo priručnik te aplikacije i komande kartice sa koje ste došli. Sa početne stranice ili iz Podešavanja vidite \"O programu\" (kratak opis programa i svake aplikacije) i priručnik programa. Pomoć → O programu uvek vodi do sekcije \"O programu\".",
+            "Pomoć pripada onome odakle ste je otvorili. Iz aplikacije vidite samo priručnik te aplikacije i komande kartice sa koje ste došli. Iz Podešavanja vidite \"O programu\" (kratak opis programa i svake aplikacije) i priručnik programa. Pomoć → O programu uvek vodi do sekcije \"O programu\".",
             "Sadržaj se nalazi levo; pretraga iznad njega pretražuje svaku temu, u naslovima i u tekstu.",
             "Pomoć se otvara u zasebnoj kartici, tako da možete prelaziti između nje i svog rada; taster F1 je ponovo iznosi u prvi plan. Pod „Komande kartice iz koje ste došli“ izlistan je svaki meni te kartice sa svim komandama, njihovim tasterima i opisom: otvorite Pomoć iz kartice o kojoj imate pitanje."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Na čemu radimo",
           "body": [
-            "Četiri aplikacije će nastaviti da rastu: ono što prijavite i zatražite putem Pomoć → Povratne informacije u velikoj meri određuje šta dolazi prvo. Pored njih, pripremaju se nove aplikacije. Početak ih ne prikazuje osim ako to ne želite: označite ih u njegovom meniju „Prikaz“ da biste ih tamo videli kao „Uskoro“:",
+            "Četiri aplikacije će nastaviti da rastu: ono što prijavite i zatražite putem Pomoć → Povratne informacije u velikoj meri određuje šta dolazi prvo. Pored njih, pripremaju se nove aplikacije. Lista aplikacija ih ne prikazuje osim ako to ne želite: označite ih u njenom meniju „Prikaz“ da biste ih tamo videli kao „Uskoro“:",
             {
               "points": [
                 "Convert: konvertovanje datoteka iz jednog formata u drugi, uključujući kancelarijske dokumente u PDF i obrnuto, bez potrebe za instalacijom drugog programa. Još uvek nismo pronašli otvorenu tehnologiju koja dostiže kvalitet koji želimo, pa će se pojaviti tek kada vas ne razočara; tamo gde alati ne postoje, mi ćemo ih napraviti.",

@@ -21,7 +21,6 @@ export function useTabTitle(): (tab: Tab) => string {
   const { apps } = useApps();
   const appTexts = useAppTexts();
   return (tab) => {
-    if (tab.kind === 'start') return t('shell.start.title');
     if (tab.kind === 'settings') return t('shell.settings.title');
     if (tab.kind === 'help') return t('shell.help.title');
     if (tab.title !== undefined) return tab.title;
@@ -33,16 +32,14 @@ export function useTabTitle(): (tab: Tab) => string {
 export function TabStrip() {
   const { t, direction } = useI18n();
   const { tabs: openTabs, activeId } = useStore(tabsController.store);
-  const { startTabAlways, tabMark } = useStore(preferences);
-  // Start has a tab while it is in front; with an app in front it is one click away in the app bar, unless the user wants its tab kept.
-  const tabs = openTabs.filter((tab) => tab.kind !== 'start' || startTabAlways || tab.id === activeId);
+  const { tabMark } = useStore(preferences);
+  const tabs = openTabs;
   const { apps } = useApps();
   const appTexts = useAppTexts();
 
   const appOf = (tab: Tab) => apps.find((app) => app.manifest.id === tab.appId);
 
   const titleOf = (tab: Tab): string => {
-    if (tab.kind === 'start') return t('shell.start.title');
     if (tab.kind === 'settings') return t('shell.settings.title');
     if (tab.kind === 'help') return t('shell.help.title');
     if (tab.title !== undefined) return tab.title;
@@ -84,7 +81,6 @@ export function TabStrip() {
               className={styles.title}
               onClick={() => tabsController.activate(tab.id)}
             >
-              {tab.kind === 'start' && <Icon name="house" size={13} />}
               {tab.kind === 'settings' && <Icon name="gear" size={13} />}
               {tab.kind === 'help' && <Icon name="book-open" size={13} />}
               {app &&

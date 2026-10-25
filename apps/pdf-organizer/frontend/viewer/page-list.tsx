@@ -7,6 +7,7 @@ import type { PlanPage, QuarterTurns } from '../document/page-plan';
 import { turnBox } from '../find/find-hits';
 import type { Hit } from '../find/find-hits';
 import { PageImage } from './page-image';
+import { PageTiles } from './page-tiles';
 import styles from './page-list.module.css';
 import { buildRows, measureRows, rowOfPage } from './page-rows';
 import { Rulers } from './rulers';
@@ -14,7 +15,8 @@ import { itemAt, layoutStrip } from './strip-layout';
 import { useElementSize, useStripWindow } from './use-strip-window';
 import { MAX_ZOOM, MIN_ZOOM, resolveZoom } from './view-settings';
 import type { ViewSettings } from './view-settings';
-import { PIXELS_PER_POINT, renderScale } from './zoom';
+import { baseScale, isTiled, onWholePixels, picturePixels, PIXELS_PER_POINT, screenScale } from './zoom';
+import type { TileRect } from './zoom';
 
 /** The shortest time between two page turns made with the wheel. */
 const WHEEL_TURN_MILLISECONDS = 180;
@@ -22,6 +24,44 @@ const WHEEL_TURN_MILLISECONDS = 180;
 const ZOOM_PER_WHEEL_UNIT = 0.0015;
 /** Pages are drawn sharp again this long after the zoom stopped changing; until then their pictures are stretched. */
 const SHARPEN_AFTER_MILLISECONDS = 160;
+
+/** The pages next to the one shown are drawn this long after it, so they never hold it back. */
+const DRAW_AHEAD_AFTER_MILLISECONDS = 150;
+/** A zoom made with the wheel this recently is still being made with it. */
+const WHEEL_ZOOM_STRETCH_MILLISECONDS = 300;
+/** How long the pages take to glide to a new zoom. */
+const GLIDE_MILLISECONDS = 160;
+
+/**
+ * The zoom to show: `target`, reached over a short glide when it changes, or
+ * at once when `instant`. Each step grows by the same ratio, so the glide
+ * looks even whether zooming in or out.
+ */
+function useGlidingZoom(target: number, instant: boolean): number {
+  const [shown, setShown] = useState(target);
+  const shownNow = useRef(target);
+  shownNow.current = shown;
+  const jump = instant || typeof requestAnimationFrame !== 'function';
+  useLayoutEffect(() => {
+    const begin = shownNow.current;
+    if (jump || begin === target || begin <= 0) {
+      setShown(target);
+      return;
+    }
+    const start = performance.now();
+    let frame = 0;
+    const step = (now: number) => {
+      const done = Math.min((now - start) / GLIDE_MILLISECONDS, 1);
+      const eased = 1 - (1 - done) ** 3;
+      setShown(done === 1 ? target : begin * (target / begin) ** eased);
+      if (done < 1) frame = requestAnimationFrame(step);
+    };
+    frame = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(frame);
+    // Glides again only when the zoom asked for changes.
+  }, [target]);
+  return jump ? target : shown;
+}
 
 /** Lines to measure and line things up by, over and around the pages. */
 export interface Guides {
@@ -134,7 +174,15 @@ export function PageList(props: PageListProps) {
     tallestRowPoints: rowSizes.tallest,
     fixedRowGap: pageLayout === 'two-page' ? PAGE_GAP : 0,
   });
-  const pixelsPerPoint = PIXELS_PER_POINT * zoom;
+  // A zoom asked for with a button or a menu glides to its new size; the wheel and a resized window follow at once.
+  const lastWheelZoom = useRef(-Infinity);
+  const viewportSeen = useRef(viewport);
+  const resized = viewportSeen.current.width !== viewport.width || viewportSeen.current.height !== viewport.height;
+  useEffect(() => {
+    viewportSeen.current = viewport;
+  }, [viewport]);
+  const shownZoom = useGlidingZoom(zoom, resized || performance.now() - lastWheelZoom.current < WHEEL_ZOOM_STRETCH_MILLISECONDS);
+  const pixelsPerPoint = PIXELS_PER_POINT * shownZoom;
   useEffect(() => onZoomChange(zoom), [zoom, onZoomChange]);
   /** The zoom asked for by the wheel, ahead of the one drawn while the wheel keeps turning. */
   const wantedZoom = useRef(zoom);
@@ -271,6 +319,7 @@ export function PageList(props: PageListProps) {
         };
       }
       wantedZoom.current = next;
+      lastWheelZoom.current = performance.now();
       onZoomTo(next);
       return;
     }
@@ -292,14 +341,78 @@ export function PageList(props: PageListProps) {
     return () => element.removeEventListener('wheel', onWheel);
   }, [scrollRef]);
 
-  const scale = renderScale(sharpZoom, window.devicePixelRatio);
+  const devicePixelRatio = window.devicePixelRatio;
+  // Pages are drawn pixel for pixel on this screen. One that would make a very big picture is drawn whole
+  // less sharp, with the part in view over it in sharp pieces.
+  const scale = screenScale(sharpZoom, devicePixelRatio);
+  /** The pictures asked for are drawn for the zoom on screen: not stretched. */
+  const sharpShown = sharpZoom === shownZoom;
   const gridPixels = (guides?.gridPoints ?? 0) * pixelsPerPoint;
-  const pageUrl = (page: PlanPage | undefined) =>
-    page
-      ? host.resourceUrl(`page/${page.documentId}/${page.page}`, { scale, rotate: addTurns(page.rotation, rotation) })
-      : '';
+  const pageUrl = (page: PlanPage, query: Readonly<Record<string, string | number>>) =>
+    host.resourceUrl(`page/${page.documentId}/${page.page}`, { ...query, rotate: addTurns(page.rotation, rotation) });
+  const pictureOf = (index: number) => {
+    const page = pages[index];
+    if (!page) return null;
+    const [width, height] = [pageSizes[index * 2] ?? 0, pageSizes[index * 2 + 1] ?? 0];
+    const picture = picturePixels(width, height, scale);
+    const tiled = isTiled(picture);
+    const tileUrl = (tile: TileRect) => pageUrl(page, { scale, tile: `${tile.x},${tile.y},${tile.width},${tile.height}` });
+    return (
+      <>
+        <PageImage
+          src={pageUrl(page, { scale: tiled ? baseScale(width, height, scale) : scale })}
+          exact={sharpShown && !tiled}
+          // The thumbnail is usually ready at once: the page is never blank while its picture is drawn.
+          placeholder={addTurns(page.rotation, rotation) === 0 ? host.resourceUrl(`thumbnail/${page.documentId}/${page.page}`) : undefined}
+          onShown={onShown}
+        />
+        {tiled && <PageTiles picture={picture} id={pageUrl(page, { scale })} urlOf={tileUrl} scrollRef={scrollRef} exact={sharpShown} />}
+      </>
+    );
+  };
+  /** The address of a page's whole picture, as `pictureOf` asks for it. */
+  const wholeUrl = (index: number) => {
+    const page = pages[index];
+    if (!page) return '';
+    const [width, height] = [pageSizes[index * 2] ?? 0, pageSizes[index * 2 + 1] ?? 0];
+    const tiled = isTiled(picturePixels(width, height, scale));
+    return pageUrl(page, { scale: tiled ? baseScale(width, height, scale) : scale });
+  };
+  // With scrolling off, the rows before and after are drawn ahead, so turning the page shows it at once.
+  // (A scrolling strip already draws a window's height of pages above and below the one in view.)
+  const ahead =
+    scrolling || !active
+      ? ''
+      : [...(allRows[currentRow + 1] ?? []), ...(allRows[currentRow - 1] ?? [])].map(wholeUrl).filter(Boolean).join('\n');
+  // Only once the pages in view are there: the newest request is drawn first, and these must not go before them.
+  const inView = scrolling ? '' : (rows[0] ?? []).map(wholeUrl).join('\n');
+  const shownPictures = useRef(new Set<string>());
+  const [allShown, setAllShown] = useState('');
+  const onShown = (src: string) => {
+    shownPictures.current.add(src);
+    if (inView && inView.split('\n').every((url) => shownPictures.current.has(url))) setAllShown(inView);
+  };
+  const drawnAhead = useRef<HTMLImageElement[]>([]);
+  const readyToDrawAhead = inView !== '' && allShown === inView;
+  useEffect(() => {
+    if (!ahead || !readyToDrawAhead) return;
+    const timer = setTimeout(() => {
+      // Kept, so the web view keeps the pictures until they are shown.
+      drawnAhead.current = ahead.split('\n').map((src) => {
+        const image = new Image();
+        image.decoding = 'async';
+        image.src = src;
+        return image;
+      });
+    }, DRAW_AHEAD_AFTER_MILLISECONDS);
+    return () => clearTimeout(timer);
+  }, [ahead, readyToDrawAhead]);
+  // The rows nearest the middle of the window come last: the newest request is drawn first, so those come first.
   const renderedRows = [];
-  for (let row = mounted.first; row <= mounted.last; row++) {
+  const rowOrder: number[] = [];
+  for (let row = mounted.first; row <= mounted.last; row++) rowOrder.push(row);
+  rowOrder.sort((a, b) => Math.abs(b - middleRow) - Math.abs(a - middleRow));
+  for (const row of rowOrder) {
     const showPictures = row >= settled.first && row <= settled.last;
     renderedRows.push(
       <div key={rows[row]?.[0] ?? row} className={styles.row} style={{ top: layout.tops[row], gap: PAGE_GAP }}>
@@ -311,11 +424,11 @@ export function PageList(props: PageListProps) {
             className={styles.page}
             data-page-index={page}
             style={{
-              width: (pageSizes[page * 2] ?? 0) * pixelsPerPoint,
-              height: (pageSizes[page * 2 + 1] ?? 0) * pixelsPerPoint,
+              width: onWholePixels((pageSizes[page * 2] ?? 0) * pixelsPerPoint, devicePixelRatio),
+              height: onWholePixels((pageSizes[page * 2 + 1] ?? 0) * pixelsPerPoint, devicePixelRatio),
             }}
           >
-            {showPictures && <PageImage src={pageUrl(pages[page])} />}
+            {showPictures && pictureOf(page)}
             {guides?.grid && gridPixels >= 3 && <span className={styles.grid} style={{ backgroundSize: `${gridPixels}px ${gridPixels}px` }} />}
             {hitsByPage.get(page)?.map(mark)}
             {renderOver && pages[page] && renderOver(pages[page], addTurns(pages[page].rotation, rotation), pixelsPerPoint)}

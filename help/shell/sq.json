@@ -17,7 +17,7 @@
                 "Dev mbledh vegla për zhvilluesit: kodim dhe dekodim, formatim dhe kontroll, kthim i një forme të dhënash në një tjetër."
               ]
             },
-            "Aplikacionet ndajnë një dritare, një grup cilësimesh dhe një mënyrë pune, kështu që ajo që mësoni në njërin vlen njësoj edhe në tjetrin.",
+            "Çdo aplikacion hapet në një dritare të vetën, me butonin e vet në shiritin e detyrave, dhe aplikacionet ndajnë një grup cilësimesh dhe një mënyrë pune, kështu që ajo që mësoni në njërin vlen njësoj edhe në tjetrin.",
             {
               "note": "Çdo gjë ndodh në kompjuterin tuaj. Dokumentet tuaja nuk dërgohen kurrë askund dhe asgjë rreth jush ose punës suaj nuk mblidhet."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Shiriti anësor: shtëpia të çon te Fillimi, pastaj vijnë aplikacionet tuaja dhe poshtë lajmet e programit, Komentet, Mbështetje dhe Cilësimet.",
-                "Në një aplikacion, Skedari → Shko te Fillimi të çon në faqen e parë të atij aplikacioni, kur ka një të tillë (Units, Scribe), dhe Skedari → Hap Cilësimet (Ctrl+,) hap Cilësimet te pjesa e atij aplikacioni; pjesët e tjera janë aty vetëm një klikim larg.",
+                "Shiriti anësor: logoja Syntelab shfaq listën e aplikacioneve, poshtë saj ikona e aplikacionit të kësaj dritareje sjell përsëri faqen e tij të parë, dhe poshtë fare vijnë lajmet e programit, Komentet, Mbështetje dhe Cilësimet.",
+                "Skedari → Shko te Fillimi të çon në faqen e parë të aplikacionit, dhe Skedari → Hap Cilësimet (Ctrl+,) hap Cilësimet te pjesa e atij aplikacioni; pjesët e tjera janë aty vetëm një klikim larg.",
                 "Skedat lart: çdo dokument, koleksion ose vegël që hapni ka skedën e vet. Një pikë në skedë tregon se ka ndryshime të paruajtura.",
                 "Menutë e aplikacionit, nën skedat: si shirit menuje, si shirit ose si panel anësor, sipas zgjedhjes suaj.",
                 "Pjesa tjetër e dritares është skeda në plan të parë."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Fillimi",
+          "title": "Aplikacionet dhe dritaret e tyre",
           "body": [
-            "Fillimi tregon aplikacionet tuaja dhe skedarët që keni hapur së fundmi. Klikoni një aplikacion për ta hapur; klikoni një skedar të fundit për ta hapur përsëri.",
+            "Klikoni logon Syntelab në krye të shiritit anësor për të parë aplikacionet. Klikoni njërin për ta hapur në dritaren e vet; nëse është tashmë i hapur, dritarja e tij del përpara, kështu që një aplikacion nuk ka kurrë dy dritare. Kërkimi në krye të listës gjen aplikacione, mjete dhe komanda.",
             "Aplikacionet mund të shfaqen si karta, si ikona me emra ose vetëm si ikona dhe mund të tërhiqen në renditjen që dëshironi. Me tastierë: Alt dhe tastet e shigjetave. \"Rikthe parazgjedhjen\" i kthen në vend.",
-            "Çdo aplikacion ka gjithashtu shkurtoren e vet në menunë Start të Windows, si \"Syntelab PDF Organizer\" ose \"Syntelab Units\": ajo e hap programin drejtpërdrejt në atë aplikacion. Nëse programi është tashmë i hapur, aplikacioni hapet në të si skedë."
+            "Çdo aplikacion ka gjithashtu shkurtoren e vet në menunë Start të Windows, në dosjen \"Syntelab Creative\", dhe dritarja e tij mund të fiksohet në shiritin e detyrave si çdo program. Kur niset pa një aplikacion, programi hap aplikacionin që keni përdorur së fundi."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Nga një aplikacion: Skedari → Hap, ose Ctrl+O.",
                 "Duke lëshuar skedarë nga një dosje mbi dritare.",
-                "Nga menaxheri i skedarëve i sistemit tuaj: klikoni dy herë një skedar që programi është caktuar ta hapë. Në Eksploruesin e Windows ka edhe menunë e klikimit të djathtë (shih \"Menuja e klikimit të djathtë në Eksploruesin e Windows\").",
-                "Nga Fillimi: lista e skedarëve të fundit."
+                "Nga menaxheri i skedarëve i sistemit tuaj: klikoni dy herë një skedar që programi është caktuar ta hapë. Në Eksploruesin e Windows ka edhe menunë e klikimit të djathtë (shih \"Menuja e klikimit të djathtë në Eksploruesin e Windows\")."
               ]
             },
-            "Programi punon si një kopje e vetme. Një skedar i hapur nga menaxheri i skedarëve ndërsa programi punon hapet si skedë e re në të njëjtën dritare."
+            "Programi punon si një kopje e vetme. Një skedar i hapur nga menaxheri i skedarëve hapet si skedë e re në dritaren e aplikacionit që e merr (një PDF në PDF Organizer), e cila del përpara."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "\"Mbaj skedën Fillimi mes skedave\": kur është fikur, skeda Fillimi shfaqet vetëm kur vetë Fillimi është në plan të parë; shtëpia në shiritin anësor të çon gjithmonë përsëri tek ai.",
                 "Shenja në një skedë mund të jetë ikona e aplikacionit të saj ose një katror i thjeshtë në ngjyrën e aplikacionit."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Përdorimi i kësaj Ndihme",
           "body": [
-            "Ndihma varet nga vendi ku e hapni. Nga një aplikacion shihni vetëm manualin e atij aplikacioni dhe komandat e skedës nga e cila erdhët. Nga faqja e fillimit ose nga Cilësimet shihni \"Rreth\" (programi dhe çdo aplikacion, shkurt) dhe manualin e programit. Ndihma → Rreth të çon gjithmonë te \"Rreth\".",
+            "Ndihma varet nga vendi ku e hapni. Nga një aplikacion shihni vetëm manualin e atij aplikacioni dhe komandat e skedës nga e cila erdhët. Nga Cilësimet shihni \"Rreth\" (programi dhe çdo aplikacion, shkurt) dhe manualin e programit. Ndihma → Rreth të çon gjithmonë te \"Rreth\".",
             "Përmbajtja është në të majtë; kërkimi mbi të kërkon në çdo temë, në tituj dhe në tekst.",
             "Ndihma hapet në një skedë më vete, kështu që mund të kaloni para e pas mes saj dhe punës suaj; F1 e sjell sërish në plan të parë. Nën \"Komandat e skedës nga e cila erdhët\" listohet çdo menu e asaj skede me secilën nga komandat e saj, tastet dhe atë që bën: hapeni Ndihmën nga skeda për të cilën keni një pyetje."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Në çfarë po punojmë",
           "body": [
-            "Katër aplikacionet do të vazhdojnë të rriten: ajo që raportoni dhe kërkoni përmes Ndihma → Komentet përcakton shumë nga ajo që vjen e para. Pranë tyre po përgatiten aplikacione të reja. Fillimi nuk i shfaq, përveç nëse dëshironi: shënojini te menyja \"Pamja\" e Fillimit për t’i parë atje si \"Së shpejti\":",
+            "Katër aplikacionet do të vazhdojnë të rriten: ajo që raportoni dhe kërkoni përmes Ndihma → Komentet përcakton shumë nga ajo që vjen e para. Pranë tyre po përgatiten aplikacione të reja. Lista e aplikacioneve nuk i shfaq, përveç nëse dëshironi: shënojini te menyja e saj \"Pamja\" për t’i parë atje si \"Së shpejti\":",
             {
               "points": [
                 "Convert: konvertimi i skedarëve nga një format në tjetrin, ndër to dokumentet e zyrës në PDF dhe anasjelltas, pa pasur nevojë të instalohet një program tjetër. Ende nuk kemi gjetur një teknologji të hapur që arrin cilësinë që duam, prandaj do të vijë vetëm kur të mos ju zhgënjejë; aty ku veglat nuk ekzistojnë, do t'i ndërtojmë ne.",

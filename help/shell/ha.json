@@ -17,7 +17,7 @@
                 "Dev yana tattara kayan aiki ga masu haɓaka manhaja: ɓoye da buɗe lamba (encode da decode), tsarawa da dubawa, sauya wani nau'in bayanai zuwa wani."
               ]
             },
-            "Manhajojin suna raba taga ɗaya, saituna iri ɗaya da hanyar aiki ɗaya, don haka abin da ka koya a ɗaya haka yake a ta gaba.",
+            "Kowace manhaja tana buɗewa a cikin tagarta, da maɓallinta a kan taskbar, kuma manhajojin suna raba saituna iri ɗaya da hanyar aiki ɗaya, don haka abin da ka koya a ɗaya haka yake a ta gaba.",
             {
               "note": "Komai yana faruwa ne a kwamfutarka. Ba a taɓa aika takardunka ko'ina ba, kuma ba a tattara komai game da kai ko aikinka."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Sandar gefe: gida yana kai ka zuwa Farko, sannan manhajojinka, kuma a ƙasa labaran shirin, Ra'ayi, Tallafi da Saituna.",
-                "A cikin manhaja, Fayil → Je zuwa Farko yana zuwa shafin farko na wannan manhaja idan tana da shi (Units, Scribe), kuma Fayil → Buɗe Saituna (Ctrl+,) yana buɗe Saituna a sashin wannan manhaja; sauran sassan danna ɗaya ne kawai daga can.",
+                "Sandar gefe: tambarin Syntelab yana nuna jerin manhajoji, a ƙarƙashinsa gunkin manhajar wannan taga yana dawo da shafinta na farko, kuma a ƙasa labaran shirin, Ra’ayi, Tallafi da Saituna.",
+                "Fayil → Je zuwa Farko yana zuwa shafin farko na manhajar, kuma Fayil → Buɗe Saituna (Ctrl+,) yana buɗe Saituna a sashin wannan manhaja; sauran sassan danna ɗaya ne kawai daga can.",
                 "Tab a sama: kowace takarda, tarin fayiloli ko kayan aiki da ka buɗe yana da tab nasa. Ɗigo a kan tab yana nuna cewa yana da canje-canjen da ba a ajiye ba.",
                 "Menu na manhajar, ƙarƙashin tab: a matsayin sandar menu, ribbon ko faifai a gefe, duk wanda ka zaɓa.",
                 "Sauran tagar ita ce tab ɗin da ke gaba."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Farko",
+          "title": "Manhajoji da tagoginsu",
           "body": [
-            "Farko yana nuna manhajojinka da fayilolin da ka buɗe kwanan nan. Danna manhaja don buɗe ta; danna fayil na kwanan nan don sake buɗe shi.",
+            "Danna tambarin Syntelab a saman sandar gefe don ganin manhajojin. Danna ɗaya don buɗe ta a cikin tagarta; idan tana buɗe tuni, tagarta tana zuwa gaba, don haka manhaja ba ta taɓa samun taga biyu. Binciken da ke saman jerin yana nemo manhajoji, kayan aiki da umarni.",
             "Ana iya nuna manhajojin a matsayin katuna, alamomi tare da suna ko alamomi kawai, kuma a ja su zuwa jerin da kake so. Da madannai: Alt da maɓallan kibiya. \"Mayar da na asali\" yana mayar da su.",
-            "Kowace manhaja kuma tana da gajeriyar hanyarta a menu na Start na Windows, kamar \"Syntelab PDF Organizer\" ko \"Syntelab Units\": tana buɗe shirin kai tsaye a cikin wannan manhaja. Idan shirin yana buɗe tuni, manhajar tana buɗewa a ciki a matsayin tab."
+            "Kowace manhaja kuma tana da gajeriyar hanyarta a menu na Start na Windows, a cikin babban fayil na \"Syntelab Creative\", kuma ana iya maƙala tagarta a taskbar kamar kowane shiri. Idan aka fara shirin ba tare da manhaja ba, yana buɗe manhajar da ka yi amfani da ita a ƙarshe."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Daga manhaja: Fayil → Buɗe, ko Ctrl+O.",
                 "Ta hanyar jefa fayiloli daga folda a kan tagar.",
-                "Daga manajan fayiloli na tsarinka: danna sau biyu a kan fayil da aka saita shirin ya buɗe. A Windows Explorer akwai kuma menu na danna-dama (duba \"Menu na danna-dama na Windows Explorer\").",
-                "Daga Farko: jerin fayilolin kwanan nan."
+                "Daga manajan fayiloli na tsarinka: danna sau biyu a kan fayil da aka saita shirin ya buɗe. A Windows Explorer akwai kuma menu na danna-dama (duba \"Menu na danna-dama na Windows Explorer\")."
               ]
             },
-            "Shirin yana gudana a matsayin kwafi ɗaya. Fayil da aka buɗe daga manajan fayiloli yayin da shirin yake gudana yana buɗewa a matsayin sabon tab a cikin taga ɗaya."
+            "Shirin yana gudana a matsayin kwafi ɗaya. Fayil da aka buɗe daga manajan fayiloli yana buɗewa a matsayin sabon tab a cikin tagar manhajar da ke karɓar sa (PDF a cikin PDF Organizer), wadda take zuwa gaba."
           ]
         }
       ]
@@ -105,8 +104,7 @@
           "body": [
             {
               "points": [
-                "\"Riƙe tab ɗin Farko a cikin sauran tab\": idan an kashe, tab ɗin Farko yana bayyana ne kawai lokacin da Farko kansa yake gaba; gidan da ke kan sandar gefe kullum yana mayar da kai can.",
-                "Alamar da ke kan tab na iya zama alamar manhajarsa ko murabba'i mai sauƙi a launin manhajar."
+                "Alamar da ke kan tab na iya zama alamar manhajarsa ko murabba’i mai sauƙi a launin manhajar."
               ]
             },
             "Idan tab sun fi wurin da ake da shi yawa, kibiyoyin da ke ƙarshen layin suna gungura shi, kuma \"Ƙarin tab\" yana lissafa su duka."
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Amfani da wannan Taimako",
           "body": [
-            "Taimako ya dogara da inda ka buɗe shi. Daga manhaja kana ganin littafin jagorar wannan manhaja kawai da umarnin tab ɗin da ka fito daga ciki. Daga shafin farko ko daga Saituna kana ganin \"Game da\" (shirin da kowace manhaja, a taƙaice) da littafin jagorar shirin. Taimako → Game da kullum yana kai ka zuwa \"Game da\".",
+            "Taimako ya dogara da inda ka buɗe shi. Daga manhaja kana ganin littafin jagorar wannan manhaja kawai da umarnin tab ɗin da ka fito daga ciki. Daga Saituna kana ganin \"Game da\" (shirin da kowace manhaja, a taƙaice) da littafin jagorar shirin. Taimako → Game da kullum yana kai ka zuwa \"Game da\".",
             "Abubuwan ciki suna gefen hagu; binciken da ke samansu yana dubawa a kowane batu, a cikin kanun labarai da rubutu.",
             "Taimako yana buɗewa a cikin tab nasa, don haka za ka iya kai da komowa tsakaninsa da aikinka; F1 yana sake kawo shi gaba. Ƙarƙashin \"Umarnin tab ɗin da ka fito daga ciki\" an lissafa kowane menu na wannan tab tare da kowane umarninsa, maɓallansa da abin da yake yi: buɗe Taimako daga tab ɗin da kake da tambaya a kai."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Abin da muke aiki a kai",
           "body": [
-            "Manhajoji huɗun za su ci gaba da girma: abin da ka kai rahoto da abin da ka nema ta Taimako → Ra’ayi yana ƙayyade yawancin abin da zai fara zuwa. Ban da su, ana shirya sababbin manhajoji. Farko ba ya nuna su sai idan kana so: yi musu alama a menu ɗinsa na \"Kallo\" don ganin su a can a matsayin \"Yana zuwa nan ba da jimawa ba\":",
+            "Manhajoji huɗun za su ci gaba da girma: abin da ka kai rahoto da abin da ka nema ta Taimako → Ra’ayi yana ƙayyade yawancin abin da zai fara zuwa. Ban da su, ana shirya sababbin manhajoji. Jerin manhajoji ba ya nuna su sai idan kana so: yi musu alama a menu ɗinsa na \"Kallo\" don ganin su a can a matsayin \"Yana zuwa nan ba da jimawa ba\":",
             {
               "points": [
                 "Convert: canza fayiloli daga wani tsari zuwa wani, ciki har da takardun ofis zuwa PDF da akasin haka, ba tare da buƙatar saka wani shiri ba. Ba mu sami fasahar buɗaɗɗiya da ta kai ingancin da muke so ba tukuna, don haka za ta zo ne kawai lokacin da ba za ta ba ka kunya ba; inda kayan aiki ba su wanzu ba, za mu gina su.",

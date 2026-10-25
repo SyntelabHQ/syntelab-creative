@@ -1,0 +1,22 @@
+/* Over the whole page, and only over it. */
+.tiles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.piece {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  user-select: none;
+}
+
+.piece[data-loaded='true'] {
+  opacity: 1;
+}
+
+.piece[data-exact='true'] {
+  image-rendering: pixelated;
+}

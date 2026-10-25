@@ -17,7 +17,7 @@
                 "Dev jiġbor għodod għall-iżviluppaturi: jikkodifika u jiddekodifika, jifformattja u jiċċekkja, jibdel forma waħda ta' data f'oħra."
               ]
             },
-            "L-apps jaqsmu tieqa waħda, sett wieħed ta' issettjar u mod wieħed ta' kif taħdem, għalhekk dak li titgħallem f'waħda huwa l-istess fl-oħra.",
+            "Kull app tinfetaħ fit-tieqa tagħha, bil-buttuna tagħha fuq it-taskbar, u l-apps jaqsmu sett wieħed ta’ issettjar u mod wieħed ta’ kif taħdem, għalhekk dak li titgħallem f’waħda huwa l-istess fl-oħra.",
             {
               "note": "Kollox isir fuq il-kompjuter tiegħek. Id-dokumenti tiegħek qatt ma jintbagħtu x'imkien, u ma jinġabar xejn dwarek jew dwar ix-xogħol tiegħek."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "L-istrixxa tal-ġenb: id-dar twassal għall-Bidu, imbagħad jiġu l-apps tiegħek, u fil-qiegħ l-aħbarijiet tal-programm, Rispons, Appoġġ u Issettjar.",
-                "F'app, Fajl → Mur fil-Bidu jmur fl-ewwel paġna ta' dik l-app fejn ikollha waħda (Units, Scribe), u Fajl → Iftaħ l-Issettjar (Ctrl+,) jiftaħ l-Issettjar fil-parti ta' dik l-app; il-partijiet l-oħra huma klikk 'il bogħod minn hemm.",
+                "L-istrixxa tal-ġenb: il-logo ta’ Syntelab jelenka l-apps, taħtu l-ikona tal-app ta’ din it-tieqa terġa’ ġġib l-ewwel paġna tagħha, u fil-qiegħ l-aħbarijiet tal-programm, Rispons, Appoġġ u Issettjar.",
+                "Fajl → Mur fil-Bidu jmur fl-ewwel paġna tal-app, u Fajl → Iftaħ l-Issettjar (Ctrl+,) jiftaħ l-Issettjar fil-parti ta’ dik l-app; il-partijiet l-oħra huma klikk ’il bogħod minn hemm.",
                 "It-tabs fuq nett: kull dokument, ġabra jew għodda li tiftaħ għandha tab tagħha. Tikka fuq tab tfisser li għandha bidliet li mhumiex issejvjati.",
                 "Il-menus tal-app, taħt it-tabs: bħala bar tal-menu, bħala żigarella jew bħala pannell fil-ġenb, skont x'għażilt.",
                 "Il-bqija tat-tieqa hija t-tab li tkun quddiem."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Bidu",
+          "title": "L-apps u t-twieqi tagħhom",
           "body": [
-            "Il-Bidu juri l-apps tiegħek u l-fajls li ftaħt dan l-aħħar. Ikklikkja app biex tiftaħha; ikklikkja fajl riċenti biex terġa' tiftħu.",
+            "Ikklikkja l-logo ta’ Syntelab fil-quċċata tal-istrixxa tal-ġenb biex tara l-apps. Ikklikkja waħda biex tiftaħha fit-tieqa tagħha; jekk tkun diġà miftuħa, it-tieqa tagħha tiġi quddiem, għalhekk app qatt ma jkollha żewġ twieqi. It-tfittxija fil-quċċata tal-lista ssib apps, għodod u kmandi.",
             "L-apps jistgħu jintwerew bħala karti, bħala ikoni bl-ismijiet jew bħala ikoni biss, u jistgħu jitkaxkru fl-ordni li tixtieq. Bit-tastiera: Alt u t-tasti tal-vleġeġ. \"Irrisettja għall-predefinit\" jerġa' jpoġġihom lura.",
-            "Kull app għandha wkoll ix-shortcut tagħha fil-menu Start ta' Windows, bħal \"Syntelab PDF Organizer\" jew \"Syntelab Units\": jiftaħ il-programm dritt f'dik l-app. Jekk il-programm ikun diġà miftuħ, l-app tinfetaħ fih bħala tab."
+            "Kull app għandha wkoll ix-shortcut tagħha fil-menu Start ta’ Windows, fil-folder \"Syntelab Creative\", u t-tieqa tagħha tista’ titwaħħal mat-taskbar bħal kull programm. Jekk jinfetaħ mingħajr app, il-programm jiftaħ l-app li użajt l-aħħar."
           ]
         },
         {
@@ -55,12 +55,11 @@
             {
               "points": [
                 "Minn app: Fajl → Iftaħ, jew Ctrl+O.",
-                "Billi twaqqa' fajls minn folder fuq it-tieqa.",
-                "Mill-maniġer tal-fajls tas-sistema tiegħek: ikklikkja darbtejn fuq fajl li l-programm huwa ssettjat li jiftaħ. F'Windows Explorer hemm ukoll il-menu tal-klikk il-lemin (ara \"Il-menu tal-klikk il-lemin ta' Windows Explorer\").",
-                "Mill-Bidu: il-lista tal-fajls riċenti."
+                "Billi twaqqa’ fajls minn folder fuq it-tieqa.",
+                "Mill-maniġer tal-fajls tas-sistema tiegħek: ikklikkja darbtejn fuq fajl li l-programm huwa ssettjat li jiftaħ. F’Windows Explorer hemm ukoll il-menu tal-klikk il-lemin (ara \"Il-menu tal-klikk il-lemin ta’ Windows Explorer\")."
               ]
             },
-            "Il-programm jaħdem bħala kopja waħda. Fajl miftuħ mill-maniġer tal-fajls waqt li l-programm ikun qed jaħdem jinfetaħ bħala tab ġdida fl-istess tieqa."
+            "Il-programm jaħdem bħala kopja waħda. Fajl miftuħ mill-maniġer tal-fajls jinfetaħ bħala tab ġdida fit-tieqa tal-app li tieħdu (PDF f’PDF Organizer), li tiġi quddiem."
           ]
         }
       ]
@@ -105,8 +104,7 @@
           "body": [
             {
               "points": [
-                "\"Żomm it-tab tal-Bidu fost it-tabs\": meta jkun mitfi, it-tab tal-Bidu tidher biss meta l-Bidu nnifsu jkun quddiem; id-dar fuq l-istrixxa tal-ġenb dejjem twassal lura għalih.",
-                "Il-marka fuq tab tista' tkun l-ikona tal-app tagħha jew kwadru sempliċi bil-kulur tal-app."
+                "Il-marka fuq tab tista’ tkun l-ikona tal-app tagħha jew kwadru sempliċi bil-kulur tal-app."
               ]
             },
             "Meta jkun hemm aktar tabs milli jidħlu, il-vleġeġ fit-truf tal-istrixxa jiskrollawha, u \"Aktar tabs\" telenkahom kollha."
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Kif tuża din l-Għajnuna",
           "body": [
-            "L-Għajnuna tiddependi minn fejn tiftaħha. Minn app tara biss il-manwal ta' dik l-app u l-kmandi tat-tab li ġejt minnha. Mill-paġna tal-Bidu jew mill-Issettjar tara \"Dwar\" (il-programm u kull app, fil-qosor) u l-manwal tal-programm. Għajnuna → Dwar dejjem twassal għal \"Dwar\".",
+            "L-Għajnuna tiddependi minn fejn tiftaħha. Minn app tara biss il-manwal ta’ dik l-app u l-kmandi tat-tab li ġejt minnha. Mill-Issettjar tara \"Dwar\" (il-programm u kull app, fil-qosor) u l-manwal tal-programm. Għajnuna → Dwar dejjem twassal għal \"Dwar\".",
             "Il-werrej jinsab fuq ix-xellug; it-tfittxija ta' fuqu tfittex f'kull suġġett, fit-titli u fit-test.",
             "L-Għajnuna tinfetaħ f'tab għaliha, biex tkun tista' tmur u tiġi bejnha u x-xogħol tiegħek; F1 terġa' ġġibha quddiem. Taħt \"Kmandi tat-tab li ġejt minnha\" kull menu ta' dik it-tab huwa elenkat b'kull kmand tiegħu, it-tasti tiegħu u x'jagħmel: iftaħ l-Għajnuna mit-tab li dwarha għandek mistoqsija."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Fuq xiex qed naħdmu",
           "body": [
-            "L-erba’ apps se jibqgħu jikbru: dak li tirrapporta u titlob permezz ta’ Għajnuna → Rispons jiddeċiedi ħafna minn dak li jiġi l-ewwel. Ħdejhom, qed jiġu ppreparati apps ġodda. Il-Bidu ma jurihomx sakemm ma tridx: immarkahom fil-menu \"Ara\" tiegħu biex tarahom hemm bħala \"Dalwaqt\":",
+            "L-erba’ apps se jibqgħu jikbru: dak li tirrapporta u titlob permezz ta’ Għajnuna → Rispons jiddeċiedi ħafna minn dak li jiġi l-ewwel. Ħdejhom, qed jiġu ppreparati apps ġodda. Il-lista tal-apps ma turihomx sakemm ma tridx: immarkahom fil-menu \"Ara\" tagħha biex tarahom hemm bħala \"Dalwaqt\":",
             {
               "points": [
                 "Convert: konverżjoni ta' fajls minn format għal ieħor, fosthom dokumenti tal-uffiċċju għal PDF u lura, mingħajr il-bżonn li jiġi installat programm ieħor. Għadna ma sibniex teknoloġija miftuħa li tilħaq il-kwalità li rridu, għalhekk se tasal biss meta ma tiddiżappuntakx; fejn l-għodod ma jeżistux, aħna nibnuhom.",

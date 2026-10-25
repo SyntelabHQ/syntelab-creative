@@ -35,6 +35,10 @@ export interface BatchPreviewProps {
   /** The page is shown as large as fits in this, in pixels. */
   readonly width?: number;
   readonly height?: number;
+  /** When given, the page is drawn this many pixels to a point, whatever `width` and `height` say. */
+  readonly pixelsPerPoint?: number;
+  /** False where the wheel must scroll what holds the preview. */
+  readonly wheelTurnsPages?: boolean;
 }
 
 /**
@@ -42,7 +46,7 @@ export interface BatchPreviewProps {
  * on them and the signature where it shows. The arrows go from one file to
  * the next; the wheel and the arrows under the page go through its pages.
  */
-export function BatchPreview({ host, files, index, onIndexChange, job, tools, signature, onSpotChange, disabled = false, width = 240, height = 300 }: BatchPreviewProps) {
+export function BatchPreview({ host, files, index, onIndexChange, job, tools, signature, onSpotChange, disabled = false, width = 240, height = 300, pixelsPerPoint, wheelTurnsPages = true }: BatchPreviewProps) {
   const t = useTranslation();
   const { invoke } = host;
   const path = files[index];
@@ -79,7 +83,7 @@ export function BatchPreview({ host, files, index, onIndexChange, job, tools, si
   if (path === undefined) {
     if (!signature || !onSpotChange) return null;
     // No files yet: the place is chosen on a blank sheet (A4, standing).
-    const scale = Math.min(width / BLANK.width, height / BLANK.height);
+    const scale = pixelsPerPoint ?? Math.min(width / BLANK.width, height / BLANK.height);
     return (
       <section className={styles.preview} aria-label={t('pdf-organizer.batch.preview')}>
         <div className={styles.blank} dir="ltr" style={{ width: BLANK.width * scale, height: BLANK.height * scale }}>
@@ -137,6 +141,8 @@ export function BatchPreview({ host, files, index, onIndexChange, job, tools, si
           onIndexChange={setPage}
           width={width}
           height={height}
+          pixelsPerPoint={pixelsPerPoint}
+          wheelTurnsPages={wheelTurnsPages}
           overlay={
             editable && signature && onSpotChange ? (
               <SpotEditor

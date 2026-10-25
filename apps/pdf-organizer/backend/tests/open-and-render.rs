@@ -1714,3 +1714,95 @@ fn writes_text_that_is_found_but_not_seen() {
         assert_eq!(drawn.at(x, y), [255, 255, 255], "at {x}, {y}");
     }
 }
+
+/// The pixels of a PNG, red-green-blue, with its width and height.
+fn rgb_of(png: &[u8]) -> (Vec<u8>, usize, usize) {
+    let mut reader = png::Decoder::new(png).read_info().expect("png header");
+    let mut pixels = vec![0; reader.output_buffer_size()];
+    let info = reader.next_frame(&mut pixels).expect("png data");
+    assert_eq!(info.color_type.samples(), 3);
+    pixels.truncate(info.buffer_size());
+    (pixels, info.width as usize, info.height as usize)
+}
+
+#[test]
+fn draws_a_piece_of_a_page_exactly_as_it_is_in_the_whole_page() {
+    let fixture = Fixture::new("tiles", &[(100, 100)]);
+    // Text on it, so a piece out of place would not match.
+    let sample = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../../tests/fixtures/generated/small.pdf");
+    let id = fixture.app.invoke("open_document", json!({ "path": sample })).expect("open sample")["documentId"].as_u64().unwrap();
+
+    for rotate in ["0", "90"] {
+        let whole = fixture.resource(&format!("page/{id}/0"), &[("scale", "1.7"), ("rotate", rotate)]).expect("the page draws");
+        let (pixels, width, height) = rgb_of(&whole.bytes);
+        // A piece in the middle, and one reaching past the corner (cut at the edge).
+        for (x, y, w, h) in [(100, 150, 300, 200), (width - 50, height - 40, 512, 512)] {
+            let tile = format!("{x},{y},{w},{h}");
+            let piece = fixture.resource(&format!("page/{id}/0"), &[("scale", "1.7"), ("rotate", rotate), ("tile", &tile)]).expect("the piece draws");
+            let (piece_pixels, piece_width, piece_height) = rgb_of(&piece.bytes);
+            assert_eq!((piece_width, piece_height), (w.min(width - x), h.min(height - y)), "{rotate}° {tile}");
+            let differing = (0..piece_height)
+                .flat_map(|row| (0..piece_width * 3).map(move |at| (row, at)))
+                .filter(|&(row, at)| piece_pixels[row * piece_width * 3 + at].abs_diff(pixels[(y + row) * width * 3 + x * 3 + at]) > 8)
+                .count();
+            assert!(differing * 200 < piece_pixels.len(), "{rotate}° {tile}: {differing} values differ");
+        }
+    }
+    // A piece outside the page is no picture.
+    assert!(fixture.resource(&format!("page/{id}/0"), &[("scale", "1"), ("tile", "99999,0,10,10")]).is_err());
+}
+
+/// With PDFium installed (named by `SYNTELAB_PDFIUM`), pages on screen are drawn by it: the same size as MuPDF
+/// draws them, the same way up, and with the same things in the same places.
+#[test]
+fn draws_pages_with_pdfium_where_mupdf_would_put_them() {
+    use pdf_organizer_backend::engine::{PdfFile, Rotation, ScreenPages};
+    if std::env::var_os("SYNTELAB_PDFIUM").is_none() {
+        eprintln!("SYNTELAB_PDFIUM is not set: nothing to compare");
+        return;
+    }
+    let sample = Path::new(env!("CARGO_MANIFEST_DIR")).join("../../../tests/fixtures/generated/small.pdf");
+    let file = PdfFile::open(&sample).expect("open sample");
+    let mut screen = ScreenPages::new(sample.clone());
+    assert!(screen.drawn_by_pdfium(&file), "PDFium did not open the sample");
+
+    for rotation in [Rotation::None, Rotation::Quarter, Rotation::Half, Rotation::ThreeQuarters] {
+        let sharp = screen.page_png(&file, 0, 1.3, rotation).expect("PDFium draws the page");
+        let plain = file.render_png(0, 1.3, rotation).expect("MuPDF draws the page");
+        let (sharp, width, height) = rgb_of(&sharp);
+        let (plain, plain_width, plain_height) = rgb_of(&plain);
+        assert_eq!((width, height), (plain_width, plain_height), "{rotation:?}");
+        // Seen as gray blocks of 8 × 8 pixels, the two pictures are alike: what is drawn is in the same place.
+        let block = |pixels: &[u8], bx: usize, by: usize| {
+            let mut sum = 0u32;
+            for y in by * 8..(by * 8 + 8).min(height) {
+                for x in bx * 8..(bx * 8 + 8).min(width) {
+                    let at = (y * width + x) * 3;
+                    sum += u32::from(pixels[at]) + u32::from(pixels[at + 1]) + u32::from(pixels[at + 2]);
+                }
+            }
+            sum / 192
+        };
+        let (mut differing, mut blocks, mut inked) = (0, 0, 0);
+        for by in 0..height / 8 {
+            for bx in 0..width / 8 {
+                let (a, b) = (block(&sharp, bx, by), block(&plain, bx, by));
+                blocks += 1;
+                inked += usize::from(b < 250);
+                differing += usize::from(a.abs_diff(b) > 40);
+            }
+        }
+        assert!(inked > 10, "{rotation:?}: the sample page should have something on it");
+        assert!(differing * 50 < blocks, "{rotation:?}: {differing} of {blocks} blocks differ");
+        // Pieces are cut from exactly that picture.
+        let tile = pdf_organizer_backend::engine::Tile::parse("40,30,200,100").unwrap();
+        let piece = screen.tile_png(&file, 0, 1.3, rotation, tile).expect("PDFium draws the piece");
+        let (piece, piece_width, piece_height) = rgb_of(&piece);
+        assert_eq!((piece_width, piece_height), (200, 100));
+        let differing = (0..100)
+            .flat_map(|row| (0..600).map(move |at| (row, at)))
+            .filter(|&(row, at)| piece[row * 600 + at].abs_diff(sharp[(30 + row) * width * 3 + 40 * 3 + at]) > 8)
+            .count();
+        assert!(differing * 200 < piece.len(), "{rotation:?}: {differing} values of the piece differ");
+    }
+}

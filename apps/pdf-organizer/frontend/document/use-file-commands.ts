@@ -2,7 +2,7 @@ import { useTranslation } from '@syntelab/i18n';
 import type { AppHost } from '@syntelab/shell-api';
 import { useMemo, useState } from 'react';
 import type { FileCommandsInput } from '../commands';
-import { openBatchTab } from './open-file';
+import { openBatchTab, openSignBatchTab } from './open-file';
 import { pickAndOpenFiles } from './open-files';
 import type { OpenedFiles } from './open-files';
 
@@ -28,7 +28,7 @@ export function useFileCommands(host: AppHost, onDone: (opened: OpenedFiles) => 
       onOpenSeveral: () => void pickAndOpenFiles(host, t, true).then(onDone),
       onCreatePdf: () => setCreating(true),
       onBatch: () => openBatchTab(host, t('pdf-organizer.command.batch')),
-      onSignBatch: () => openBatchTab(host, t('pdf-organizer.command.signBatch'), [], 'sign'),
+      onSignBatch: () => openSignBatchTab(host, t('pdf-organizer.command.signBatch')),
       onSettings: host.openSettings,
     }),
     // `host` changes when the tab moves to the back; what it opens does not.

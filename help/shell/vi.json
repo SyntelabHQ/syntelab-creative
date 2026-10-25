@@ -17,7 +17,7 @@
                 "Dev tập hợp công cụ dành cho nhà phát triển: mã hóa và giải mã, định dạng và kiểm tra, chuyển đổi dữ liệu giữa các dạng."
               ]
             },
-            "Các ứng dụng dùng chung một cửa sổ, một bộ cài đặt và một cách thao tác; những gì bạn học được ở ứng dụng này cũng áp dụng cho ứng dụng khác.",
+            "Mỗi ứng dụng mở trong cửa sổ riêng, có nút riêng trên thanh tác vụ, và các ứng dụng dùng chung một bộ cài đặt và một cách thao tác; những gì bạn học được ở ứng dụng này cũng áp dụng cho ứng dụng khác.",
             {
               "note": "Mọi thao tác diễn ra trên máy tính của bạn. Tài liệu không được gửi đi đâu và không thu thập thông tin về bạn hoặc công việc của bạn."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Thanh bên: biểu tượng ngôi nhà mở trang Bắt đầu, bên dưới là các ứng dụng; cuối thanh có tin tức chương trình, Góp ý, Ủng hộ và Cài đặt.",
-                "Trong ứng dụng, Tệp → Đi tới trang Bắt đầu mở trang đầu riêng nếu ứng dụng có (Units, Scribe); Tệp → Mở Cài đặt (Ctrl+,) mở phần cài đặt của ứng dụng đó. Có thể nhấp để chuyển đến các phần khác.",
+                "Thanh bên: logo Syntelab hiện danh sách ứng dụng, bên dưới là biểu tượng của ứng dụng trong cửa sổ này để quay về trang đầu của ứng dụng; cuối thanh có tin tức chương trình, Góp ý, Ủng hộ và Cài đặt.",
+                "Tệp → Đi tới trang Bắt đầu mở trang đầu của ứng dụng; Tệp → Mở Cài đặt (Ctrl+,) mở phần cài đặt của ứng dụng đó. Có thể nhấp để chuyển đến các phần khác.",
                 "Các tab ở đầu cửa sổ: mỗi tài liệu, bộ tài liệu hoặc công cụ đã mở có tab riêng. Dấu chấm trên tab cho biết có thay đổi chưa lưu.",
                 "Menu ứng dụng nằm bên dưới các tab, có thể hiển thị dưới dạng thanh menu, dải băng hoặc bảng bên tùy lựa chọn của bạn.",
                 "Phần còn lại của cửa sổ là tab đang mở phía trước."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Bắt đầu",
+          "title": "Các ứng dụng và cửa sổ của chúng",
           "body": [
-            "Trang Bắt đầu hiển thị các ứng dụng và tệp bạn mở gần đây. Nhấp vào ứng dụng để mở hoặc tệp gần đây để mở lại.",
+            "Nhấp vào logo Syntelab ở đầu thanh bên để xem các ứng dụng. Nhấp vào một ứng dụng để mở trong cửa sổ riêng; nếu ứng dụng đã mở, cửa sổ của nó sẽ được đưa lên trước, nên mỗi ứng dụng không bao giờ có hai cửa sổ. Ô tìm kiếm ở đầu danh sách tìm ứng dụng, công cụ và lệnh.",
             "Có thể hiển thị ứng dụng dưới dạng thẻ, biểu tượng kèm tên hoặc chỉ biểu tượng; kéo để sắp xếp theo ý muốn. Dùng Alt cùng các phím mũi tên để sắp xếp bằng bàn phím. “Khôi phục mặc định” khôi phục thứ tự ban đầu.",
-            "Mỗi ứng dụng cũng có lối tắt riêng trong menu Start của Windows, chẳng hạn “Syntelab PDF Organizer” hoặc “Syntelab Units”; lối tắt sẽ mở chương trình trực tiếp ở ứng dụng đó. Nếu chương trình đang chạy, ứng dụng sẽ mở thành tab mới."
+            "Mỗi ứng dụng cũng có lối tắt riêng trong menu Start của Windows, trong thư mục “Syntelab Creative”, và có thể ghim cửa sổ của ứng dụng vào thanh tác vụ như mọi chương trình. Khi khởi động mà không chọn ứng dụng, chương trình sẽ mở ứng dụng bạn dùng gần nhất."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Trong ứng dụng: Tệp → Mở hoặc Ctrl+O.",
                 "Kéo tệp từ thư mục vào cửa sổ.",
-                "Trong trình quản lý tệp của hệ thống: nhấp đúp vào tệp được cấu hình để mở bằng chương trình. Windows Explorer cũng có menu chuột phải (xem “Menu chuột phải của Windows Explorer”).",
-                "Từ trang Bắt đầu: chọn tệp trong danh sách gần đây."
+                "Trong trình quản lý tệp của hệ thống: nhấp đúp vào tệp được cấu hình để mở bằng chương trình. Windows Explorer cũng có menu chuột phải (xem “Menu chuột phải của Windows Explorer”)."
               ]
             },
-            "Chương trình chỉ chạy một phiên bản. Nếu mở tệp từ trình quản lý tệp khi chương trình đang chạy, tệp sẽ mở trong tab mới ở cùng cửa sổ."
+            "Chương trình chỉ chạy một phiên bản. Tệp mở từ trình quản lý tệp sẽ mở trong tab mới ở cửa sổ của ứng dụng nhận tệp đó (PDF mở trong PDF Organizer), và cửa sổ đó được đưa lên trước."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "“Giữ tab Bắt đầu trong danh sách tab”: khi tắt, tab Bắt đầu chỉ hiện khi trang Bắt đầu đang mở; biểu tượng ngôi nhà ở thanh bên luôn quay về trang đó.",
                 "Biểu tượng trên tab có thể là biểu tượng ứng dụng hoặc ô vuông trơn theo màu ứng dụng."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Sử dụng Trợ giúp",
           "body": [
-            "Trợ giúp phụ thuộc nơi bạn mở: từ ứng dụng, bạn chỉ thấy hướng dẫn của ứng dụng đó và các lệnh trong tab hiện tại. Từ trang Bắt đầu hoặc Cài đặt, bạn thấy mục “Giới thiệu” (tóm tắt về chương trình và từng ứng dụng) cùng hướng dẫn chương trình. Trợ giúp → Giới thiệu luôn mở mục “Giới thiệu”.",
+            "Trợ giúp phụ thuộc nơi bạn mở: từ ứng dụng, bạn chỉ thấy hướng dẫn của ứng dụng đó và các lệnh trong tab hiện tại. Từ Cài đặt, bạn thấy mục “Giới thiệu” (tóm tắt về chương trình và từng ứng dụng) cùng hướng dẫn chương trình. Trợ giúp → Giới thiệu luôn mở mục “Giới thiệu”.",
             "Mục lục ở bên trái; ô tìm kiếm phía trên tìm trong tiêu đề và nội dung của mọi chủ đề.",
             "Trợ giúp mở trong tab riêng để bạn chuyển qua lại với công việc; nhấn F1 để đưa tab Trợ giúp lên trước. Trong mục “Lệnh của tab trước đó”, mọi menu của tab được liệt kê cùng các lệnh, phím tắt và chức năng. Hãy mở Trợ giúp từ tab bạn cần hỏi."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Những gì chúng tôi đang phát triển",
           "body": [
-            "Bốn ứng dụng hiện có sẽ tiếp tục được phát triển; góp ý và yêu cầu qua Trợ giúp → Góp ý sẽ giúp quyết định việc nào được ưu tiên. Các ứng dụng mới đang được chuẩn bị. Trang Bắt đầu chỉ hiện chúng nếu bạn muốn: hãy đánh dấu chúng trong menu “Chế độ xem” của trang Bắt đầu để thấy chúng ở đó với nhãn “Sắp ra mắt”:",
+            "Bốn ứng dụng hiện có sẽ tiếp tục được phát triển; góp ý và yêu cầu qua Trợ giúp → Góp ý sẽ giúp quyết định việc nào được ưu tiên. Các ứng dụng mới đang được chuẩn bị. Danh sách ứng dụng chỉ hiện chúng nếu bạn muốn: hãy đánh dấu chúng trong menu “Chế độ xem” của danh sách để thấy chúng ở đó với nhãn “Sắp ra mắt”:",
             {
               "points": [
                 "Convert: chuyển tệp giữa nhiều định dạng, gồm tài liệu văn phòng sang PDF và ngược lại mà không cần cài chương trình khác. Chúng tôi chưa tìm được công nghệ mở đạt chất lượng mong muốn; ứng dụng chỉ ra mắt khi không làm bạn thất vọng. Nếu công cụ phù hợp chưa có, chúng tôi sẽ tự phát triển.",

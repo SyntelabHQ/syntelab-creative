@@ -1,6 +1,6 @@
 {
   "name": "syntelab-creative",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "description": "Syntelab Creative: one program, many apps.",
@@ -11,8 +11,10 @@
     "shell"
   ],
   "scripts": {
+    "predev": "node tools/fetch-pdfium.mjs",
     "dev": "npm run tauri --workspace @syntelab/shell -- dev",
     "dev:web": "npm run dev --workspace @syntelab/shell",
+    "prebuild": "node tools/fetch-pdfium.mjs",
     "build": "npm run tauri --workspace @syntelab/shell -- build",
     "build:web": "npm run build --workspace @syntelab/shell",
     "typecheck": "tsc --noEmit -p .",

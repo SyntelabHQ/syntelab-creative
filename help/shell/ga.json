@@ -17,7 +17,7 @@
                 "Bailíonn Dev uirlisí d’fhorbróirí: ionchódú agus díchódú, formáidiú agus seiceáil, foirm amháin sonraí a iompú ina foirm eile."
               ]
             },
-            "Roinneann na haipeanna fuinneog amháin, sraith amháin socruithe agus bealach amháin oibre, mar sin is ionann a bhfoghlaimíonn tú in aip amháin agus sa chéad cheann eile.",
+            "Osclaíonn gach aip ina fuinneog féin, lena cnaipe féin ar an tascbharra, agus roinneann na haipeanna sraith amháin socruithe agus bealach amháin oibre, mar sin is ionann a bhfoghlaimíonn tú in aip amháin agus sa chéad cheann eile.",
             {
               "note": "Tarlaíonn gach rud ar do ríomhaire. Ní sheoltar do dhoiciméid áit ar bith, agus ní bhailítear aon rud fút féin ná faoi d’obair."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "An barra ar an taobh: tugann an teach go Tús thú, ansin tagann d’aipeanna, agus ag an mbun nuacht an chláir, Aiseolas, Tacaíocht agus Socruithe.",
-                "In aip, téann Comhad → Téigh go Tús go dtí an chéad leathanach den aip sin má tá ceann aici (Units, Scribe), agus osclaíonn Comhad → Oscail Socruithe (Ctrl+,) Socruithe ag cuid na haipe sin féin; níl na codanna eile ach cliceáil amháin uait ansin.",
+                "An barra ar an taobh: taispeánann lógó Syntelab liosta na n-aipeanna, faoina bhun tugann deilbhín aip na fuinneoige seo a céad leathanach ar ais, agus ag an mbun nuacht an chláir, Aiseolas, Tacaíocht agus Socruithe.",
+                "Téann Comhad → Téigh go Tús go dtí an chéad leathanach den aip, agus osclaíonn Comhad → Oscail Socruithe (Ctrl+,) Socruithe ag cuid na haipe sin féin; níl na codanna eile ach cliceáil amháin uait ansin.",
                 "Na cluaisíní ag an mbarr: tá a chluaisín féin ag gach doiciméad, ceanglóir nó uirlis a osclaíonn tú. Ciallaíonn ponc ar chluaisín go bhfuil athruithe air nach bhfuil sábháilte.",
                 "Roghchláir na haipe, faoi na cluaisíní: mar bharra roghchláir, mar ribín nó mar phainéal ar an taobh, cibé ceann a roghnaigh tú.",
                 "Is é an cluaisín chun tosaigh an chuid eile den fhuinneog."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Tús",
+          "title": "Na haipeanna agus a gcuid fuinneog",
           "body": [
-            "Taispeánann Tús d’aipeanna agus na comhaid a d’oscail tú le déanaí. Cliceáil ar aip chun í a oscailt; cliceáil ar chomhad le déanaí chun é a oscailt arís.",
+            "Cliceáil ar lógó Syntelab ag barr an bharra taoibh chun na haipeanna a fheiceáil. Cliceáil ar cheann acu chun í a oscailt ina fuinneog féin; má tá sí oscailte cheana, tagann a fuinneog chun tosaigh, mar sin ní bhíonn dhá fhuinneog ag aip choíche. Aimsíonn an cuardach ag barr an liosta aipeanna, uirlisí agus orduithe.",
             "Is féidir na haipeanna a thaispeáint mar chártaí, mar dheilbhíní le hainmneacha nó mar dheilbhíní amháin, agus iad a tharraingt san ord is maith leat. Leis an méarchlár: Alt agus na heochracha saighde. Cuireann \"Athshocraigh go dtí an réamhshocrú\" ar ais iad.",
-            "Tá a haicearra féin ag gach aip i roghchlár Tosaigh Windows freisin, mar shampla \"Syntelab PDF Organizer\" nó \"Syntelab Units\": osclaíonn sé an clár díreach san aip sin. Má tá an clár oscailte cheana, osclaítear an aip ann mar chluaisín."
+            "Tá a haicearra féin ag gach aip i roghchlár Tosaigh Windows freisin, san fhillteán \"Syntelab Creative\", agus is féidir a fuinneog a phionnáil ar an tascbharra cosúil le haon chlár. Nuair a thosaítear an clár gan aip, osclaíonn sé an aip a d’úsáid tú go deireanach."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Ó aip: Comhad → Oscail, nó Ctrl+O.",
                 "Trí chomhaid a scaoileadh ó fhillteán ar an bhfuinneog.",
-                "Ó bhainisteoir comhad do chórais: cliceáil faoi dhó ar chomhad atá socraithe le hoscailt sa chlár. In Windows Explorer tá an roghchlár deaschliceála ann freisin (féach \"Roghchlár deaschliceála Windows Explorer\").",
-                "Ó Thús: liosta na gcomhad le déanaí."
+                "Ó bhainisteoir comhad do chórais: cliceáil faoi dhó ar chomhad atá socraithe le hoscailt sa chlár. In Windows Explorer tá an roghchlár deaschliceála ann freisin (féach \"Roghchlár deaschliceála Windows Explorer\")."
               ]
             },
-            "Ritheann an clár mar chóip amháin. Má osclaítear comhad ón mbainisteoir comhad agus an clár ag rith, osclaítear é mar chluaisín nua san fhuinneog chéanna."
+            "Ritheann an clár mar chóip amháin. Osclaítear comhad ón mbainisteoir comhad mar chluaisín nua i bhfuinneog na haipe a ghlacann leis (PDF in PDF Organizer), agus tagann an fhuinneog sin chun tosaigh."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "\"Coinnigh an cluaisín Tús i measc na gcluaisíní\": nuair atá sé múchta, ní thaispeántar an cluaisín Tús ach fad atá Tús féin chun tosaigh; tugann an teach ar an mbarra taoibh ar ais chuige thú i gcónaí.",
                 "Is féidir gurb é deilbhín a aipe an marc ar chluaisín, nó cearnóg shimplí i ndath na haipe."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "An Chabhair seo a úsáid",
           "body": [
-            "Baineann Cabhair leis an áit as a n-osclaíonn tú í. Ó aip ní fheiceann tú ach lámhleabhar na haipe sin agus orduithe an chluaisín as a dtáinig tú. Ón leathanach tosaigh nó ó Shocruithe feiceann tú \"Faoi\" (an clár agus gach aip, go hachomair) agus lámhleabhar an chláir. Tugann Cabhair → Faoi go \"Faoi\" i gcónaí.",
+            "Baineann Cabhair leis an áit as a n-osclaíonn tú í. Ó aip ní fheiceann tú ach lámhleabhar na haipe sin agus orduithe an chluaisín as a dtáinig tú. Ó Shocruithe feiceann tú \"Faoi\" (an clár agus gach aip, go hachomair) agus lámhleabhar an chláir. Tugann Cabhair → Faoi go \"Faoi\" i gcónaí.",
             "Tá an clár ábhair ar chlé; cuardaíonn an cuardach os a chionn trí gach ábhar, sna teidil agus sa téacs.",
             "Osclaítear Cabhair ina cluaisín féin, ionas gur féidir leat dul anonn is anall idir í agus d’obair; tugann F1 chun tosaigh arís í. Faoi \"Orduithe an chluaisín as a dtáinig tú\" liostaítear gach roghchlár den chluaisín sin le gach ordú atá ann, a eochracha agus a fheidhm: oscail Cabhair ón gcluaisín a bhfuil ceist agat faoi."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Cad air a bhfuilimid ag obair",
           "body": [
-            "Leanfaidh na ceithre aip ag fás: socraíonn a dtuairiscíonn tú agus a n-iarrann tú trí Cabhair → Aiseolas cuid mhór de cad a thiocfaidh ar dtús. Taobh leo, tá aipeanna nua á n-ullmhú. Ní thaispeánann Tús iad mura dteastaíonn sin uait: cuir tic leo ina roghchlár \"Amharc\" chun iad a fheiceáil ansin mar \"Ag teacht go luath\":",
+            "Leanfaidh na ceithre aip ag fás: socraíonn a dtuairiscíonn tú agus a n-iarrann tú trí Cabhair → Aiseolas cuid mhór de cad a thiocfaidh ar dtús. Taobh leo, tá aipeanna nua á n-ullmhú. Ní thaispeánann liosta na n-aipeanna iad mura dteastaíonn sin uait: cuir tic leo ina roghchlár \"Amharc\" chun iad a fheiceáil ansin mar \"Ag teacht go luath\":",
             {
               "points": [
                 "Convert: comhaid a thiontú ó fhormáid amháin go formáid eile, ina measc doiciméid oifige go PDF agus ar ais, gan gá le clár eile a shuiteáil. Níor aimsíomar fós teicneolaíocht oscailte a shroicheann an caighdeán atá uainn, mar sin ní thiocfaidh sé go dtí nach gcuirfidh sé díomá ort; san áit nach bhfuil na huirlisí ann, tógfaimid iad.",

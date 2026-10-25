@@ -5,8 +5,8 @@
 //! `syntelab-creative --app <app id> [<file>…]`: the shortcut of an app, which opens the program in that app.
 //!
 //! Only one copy of the program runs: a second one hands what it was started
-//! with to the first (see `main.rs`) and leaves. The interface asks for what
-//! is waiting when it starts, and hears of what comes later.
+//! with to the first (see `main.rs`) and leaves. What a start asks for goes
+//! to the window of the app it belongs to (`app_windows.rs`).
 //!
 //! The file manager starts one copy per file chosen, all at the same moment.
 //! They take turns (`wait_for_turn`) until one of them is ready to take the
@@ -19,7 +19,7 @@ use std::time::{Duration, Instant};
 
 use serde::Serialize;
 
-/// The name the interface hears of a new request by.
+/// The name a window's interface hears by that something waits for it.
 pub const EVENT: &str = "launch-request";
 
 /// One start of the program with something to do.
@@ -32,7 +32,7 @@ pub struct LaunchRequest {
     pub files: Vec<PathBuf>,
 }
 
-/// Requests the interface has not taken yet.
+/// Starts not yet handed to the window of their app.
 #[derive(Default)]
 pub struct Waiting(Mutex<Vec<LaunchRequest>>);
 
@@ -107,9 +107,8 @@ pub fn wait_for_turn(name: &str, limit: Duration) -> Option<File> {
     }
 }
 
-/// Hands the interface everything that is waiting, once.
-#[tauri::command]
-pub fn take_launch_requests(waiting: tauri::State<'_, Waiting>) -> Vec<LaunchRequest> {
+/// Everything that is waiting, once.
+pub fn take_all(waiting: &Waiting) -> Vec<LaunchRequest> {
     waiting.0.lock().map(|mut waiting| std::mem::take(&mut *waiting)).unwrap_or_default()
 }
 

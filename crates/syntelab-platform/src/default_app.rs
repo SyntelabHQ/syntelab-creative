@@ -7,7 +7,8 @@
 //! user's choice (`UserChoice`) is only read, never written.
 //!
 //! What is written, under `Software`:
-//! - `Classes\SyntelabCreative.pdf`: the kind of file, its icon and how it opens (the program with the file);
+//! - `Classes\SyntelabCreative.pdf`: the kind of file, its icon (PDF Organizer's) and how it opens (the program with
+//!   the file);
 //! - `Classes\.pdf\OpenWithProgids`, value `SyntelabCreative.pdf`: offered in "Open with";
 //! - `SyntelabCreative\Capabilities`: the program's name, what it does, and that it opens `.pdf`;
 //! - `RegisteredApplications`, value `SyntelabCreative`: where those capabilities are.
@@ -127,6 +128,22 @@ fn icon_of(program: &Path) -> String {
     format!("\"{}\",0", program.to_string_lossy().replace('"', ""))
 }
 
+/// The icon of PDF files: PDF Organizer's, installed beside the program (`icons\apps\pdf-organizer.ico`); the
+/// program's own when it is not there.
+#[cfg_attr(not(windows), allow(dead_code))]
+fn file_icon_of(program: &Path) -> String {
+    match program.parent().map(pdf_organizer_icon) {
+        Some(icon) if icon.is_file() => format!("\"{}\",0", icon.to_string_lossy().replace('"', "")),
+        _ => icon_of(program),
+    }
+}
+
+/// Where PDF Organizer's icon is installed, in the program's folder.
+#[cfg_attr(not(windows), allow(dead_code))]
+fn pdf_organizer_icon(folder: &Path) -> PathBuf {
+    folder.join("icons").join("apps").join("pdf-organizer.ico")
+}
+
 /// The program a command starts: what is between its first quotes.
 #[cfg_attr(not(windows), allow(dead_code))]
 fn program_of(line: &str) -> Option<PathBuf> {
@@ -163,6 +180,11 @@ pub fn registered_program(place: &AppPlace) -> Option<PathBuf> {
     imp::registered_program(place)
 }
 
+/// True when the program is registered from `program`, with what this version writes (the icon of PDF files too).
+pub fn is_registered_as(place: &AppPlace, program: &Path) -> bool {
+    imp::is_registered_as(place, program)
+}
+
 /// True when the user chose this program for PDF files.
 pub fn is_default() -> bool {
     imp::is_default()
@@ -183,6 +205,10 @@ mod imp {
 
     pub fn registered_program(_place: &AppPlace) -> Option<PathBuf> {
         None
+    }
+
+    pub fn is_registered_as(_place: &AppPlace, _program: &Path) -> bool {
+        false
     }
 
     pub fn is_default() -> bool {
@@ -206,7 +232,7 @@ mod imp {
     };
     use windows::Win32::UI::Shell::{SHChangeNotify, SHCNE_ASSOCCHANGED, SHCNF_IDLIST};
 
-    use super::{choice_places, icon_of, is_ours, open_command, program_of, AppPlace, DefaultAppError, APP_DESCRIPTION, APP_NAME, PROG_ID, REGISTERED_NAME, TYPE_NAME};
+    use super::{choice_places, file_icon_of, icon_of, is_ours, open_command, program_of, AppPlace, DefaultAppError, APP_DESCRIPTION, APP_NAME, PROG_ID, REGISTERED_NAME, TYPE_NAME};
 
     fn failed(error: windows::core::Error) -> DefaultAppError {
         DefaultAppError::Failed(error.message())
@@ -281,7 +307,7 @@ mod imp {
         let prog_id = place.prog_id();
         let kind = Key::made(&prog_id)?;
         kind.set("", TYPE_NAME)?;
-        Key::made(&format!(r"{prog_id}\DefaultIcon"))?.set("", &icon_of(program))?;
+        Key::made(&format!(r"{prog_id}\DefaultIcon"))?.set("", &file_icon_of(program))?;
         Key::made(&format!(r"{prog_id}\shell\open\command"))?.set("", &open_command(program))?;
         Key::made(&place.open_with())?.set(PROG_ID, "")?;
 
@@ -310,6 +336,11 @@ mod imp {
         text(HKEY_CURRENT_USER, &place.registered_applications(), REGISTERED_NAME)?;
         text(HKEY_CURRENT_USER, &format!(r"{}\FileAssociations", place.capabilities()), ".pdf")?;
         program_of(&text(HKEY_CURRENT_USER, &format!(r"{}\shell\open\command", place.prog_id()), "")?)
+    }
+
+    pub fn is_registered_as(place: &AppPlace, program: &Path) -> bool {
+        registered_program(place).as_deref() == Some(program)
+            && text(HKEY_CURRENT_USER, &format!(r"{}\DefaultIcon", place.prog_id()), "").as_deref() == Some(file_icon_of(program).as_str())
     }
 
     pub fn is_default() -> bool {
@@ -357,6 +388,19 @@ mod tests {
         assert_eq!(line, r#""C:\Users\Ana\AppData\Local\Syntelab Creative\syntelab-creative.exe" "%1""#);
         assert_eq!(program_of(&line).as_deref(), Some(program));
         assert_eq!(icon_of(program), r#""C:\Users\Ana\AppData\Local\Syntelab Creative\syntelab-creative.exe",0"#);
+    }
+
+    #[test]
+    fn gives_pdf_files_the_icon_of_pdf_organizer_when_it_is_installed() {
+        let folder = std::env::temp_dir().join(format!("syntelab-file-icon-{}", std::process::id()));
+        let program = folder.join("syntelab-creative.exe");
+        // Not installed beside the program: the program's own icon.
+        assert_eq!(file_icon_of(&program), icon_of(&program));
+        let icon = pdf_organizer_icon(&folder);
+        std::fs::create_dir_all(icon.parent().unwrap()).unwrap();
+        std::fs::write(&icon, b"icon").unwrap();
+        assert_eq!(file_icon_of(&program), format!("\"{}\",0", icon.to_string_lossy()));
+        std::fs::remove_dir_all(&folder).unwrap();
     }
 
     #[test]

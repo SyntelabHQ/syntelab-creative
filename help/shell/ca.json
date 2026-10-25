@@ -17,7 +17,7 @@
                 "Dev aplega eines per a desenvolupadors: codificar i descodificar, formatar i comprovar, convertir una forma de dades en una altra."
               ]
             },
-            "Les aplicacions comparteixen una finestra, una configuració i una manera de treballar, de manera que el que aprens en una és igual a la següent.",
+            "Cada aplicació s’obre en una finestra pròpia, amb el seu propi botó a la barra de tasques, i les aplicacions comparteixen una configuració i una manera de treballar, de manera que el que aprens en una és igual a la següent.",
             {
               "note": "Tot passa al teu ordinador. Els teus documents no s'envien mai enlloc i no es recull res sobre tu ni sobre la teva feina."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "La barra lateral: la casa porta a l'Inici, després vénen les teves aplicacions i, a baix, les novetats del programa, Comentaris, Suport i Configuració.",
-                "En una aplicació, Fitxer → Ves a l'Inici va a la primera pàgina d'aquella aplicació si en té (Units, Scribe), i Fitxer → Obre la configuració (Ctrl+,) obre la Configuració a la secció d'aquella aplicació; les altres seccions hi són a un clic.",
+                "La barra lateral: el logotip de Syntelab mostra la llista d’aplicacions, a sota la icona de l’aplicació d’aquesta finestra torna a la seva primera pàgina i, a baix, hi ha les novetats del programa, Comentaris, Suport i Configuració.",
+                "Fitxer → Ves a l’Inici va a la primera pàgina de l’aplicació, i Fitxer → Obre la configuració (Ctrl+,) obre la Configuració a la secció d’aquella aplicació; les altres seccions hi són a un clic.",
                 "Les pestanyes de dalt: cada document, arxivador o eina que obres té la seva pròpia pestanya. Un punt en una pestanya indica que té canvis no desats.",
                 "Els menús de l'aplicació, sota les pestanyes: com a barra de menús, com a cinta d'opcions o com a panell lateral, el que hagis triat.",
                 "La resta de la finestra és la pestanya que tens al davant."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Inici",
+          "title": "Les aplicacions i les seves finestres",
           "body": [
-            "L'Inici mostra les teves aplicacions i els fitxers que has obert darrerament. Fes clic en una aplicació per obrir-la; fes clic en un fitxer recent per tornar-lo a obrir.",
+            "Fes clic al logotip de Syntelab a dalt de la barra lateral per veure les aplicacions. Fes clic en una per obrir-la en una finestra pròpia; si ja està oberta, la seva finestra passa al davant, de manera que una aplicació mai no té dues finestres. La cerca a dalt de la llista troba aplicacions, eines i ordres.",
             "Les aplicacions es poden mostrar com a targetes, com a icones amb noms o només com a icones, i es poden arrossegar a l'ordre que vulguis. Amb el teclat: Alt i les tecles de fletxa. \"Restableix els valors per defecte\" les torna a deixar com eren.",
-            "Cada aplicació també té la seva pròpia drecera al menú Inici de Windows, com ara \"Syntelab PDF Organizer\" o \"Syntelab Units\": obre el programa directament en aquella aplicació. Si el programa ja està obert, l'aplicació s'hi obre com a pestanya."
+            "Cada aplicació també té la seva pròpia drecera al menú Inici de Windows, a la carpeta \"Syntelab Creative\", i la seva finestra es pot fixar a la barra de tasques com qualsevol programa. Si s’inicia sense cap aplicació, el programa obre l’última aplicació que has fet servir."
           ]
         },
         {
@@ -54,13 +54,12 @@
           "body": [
             {
               "points": [
-                "Des d'una aplicació: Fitxer → Obre, o Ctrl+O.",
-                "Deixant anar fitxers d'una carpeta damunt la finestra.",
-                "Des del gestor de fitxers del sistema: fes doble clic en un fitxer que el programa estigui configurat per obrir. A l'Explorador de Windows també hi ha el menú contextual (consulta \"El menú contextual de l'Explorador de Windows\").",
-                "Des de l'Inici: la llista de fitxers recents."
+                "Des d’una aplicació: Fitxer → Obre, o Ctrl+O.",
+                "Deixant anar fitxers d’una carpeta damunt la finestra.",
+                "Des del gestor de fitxers del sistema: fes doble clic en un fitxer que el programa estigui configurat per obrir. A l’Explorador de Windows també hi ha el menú contextual (consulta \"El menú contextual de l’Explorador de Windows\")."
               ]
             },
-            "El programa s'executa com una sola còpia. Un fitxer obert des del gestor de fitxers mentre el programa s'executa s'obre com una pestanya nova a la mateixa finestra."
+            "El programa s’executa com una sola còpia. Un fitxer obert des del gestor de fitxers s’obre com una pestanya nova a la finestra de l’aplicació que se n’encarrega (un PDF a PDF Organizer), que passa al davant."
           ]
         }
       ]
@@ -105,8 +104,7 @@
           "body": [
             {
               "points": [
-                "\"Mantén la pestanya Inici entre les pestanyes\": quan està desactivat, la pestanya Inici només es mostra mentre l'Inici mateix és al davant; la casa de la barra lateral sempre hi torna.",
-                "La marca d'una pestanya pot ser la icona de la seva aplicació o un quadrat senzill del color de l'aplicació."
+                "La marca d’una pestanya pot ser la icona de la seva aplicació o un quadrat senzill del color de l’aplicació."
               ]
             },
             "Quan hi ha més pestanyes de les que hi caben, les fletxes als extrems de la tira la desplacen, i \"Més pestanyes\" les llista totes."
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Com fer servir aquesta Ajuda",
           "body": [
-            "L'Ajuda depèn del lloc des d'on l'obres. Des d'una aplicació només veus el manual d'aquella aplicació i les ordres de la pestanya d'on vens. Des de la pàgina d'inici o des de Configuració veus \"Quant a\" (el programa i cada aplicació, en resum) i el manual del programa. Ajuda → Quant a sempre porta a \"Quant a\".",
+            "L’Ajuda depèn del lloc des d’on l’obres. Des d’una aplicació només veus el manual d’aquella aplicació i les ordres de la pestanya d’on vens. Des de Configuració veus \"Quant a\" (el programa i cada aplicació, en resum) i el manual del programa. Ajuda → Quant a sempre porta a \"Quant a\".",
             "El contingut és a l'esquerra; la cerca de sobre busca a tots els temes, als títols i al text.",
             "L'Ajuda s'obre en una pestanya pròpia, perquè puguis anar i venir entre ella i la teva feina; F1 la torna a portar al davant. A \"Ordres de la pestanya d'on vens\" es llista cada menú d'aquella pestanya amb totes les seves ordres, les seves tecles i el que fan: obre l'Ajuda des de la pestanya sobre la qual tens un dubte."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "En què estem treballant",
           "body": [
-            "Les quatre aplicacions continuaran creixent: el que ens informes i demanes a través d’Ajuda → Comentaris decideix bona part del que arriba primer. A més, s’estan preparant aplicacions noves. L’Inici no les mostra si no vols: marca-les al seu menú \"Vista\" per veure-les-hi com a \"Pròximament\":",
+            "Les quatre aplicacions continuaran creixent: el que ens informes i demanes a través d’Ajuda → Comentaris decideix bona part del que arriba primer. A més, s’estan preparant aplicacions noves. La llista d’aplicacions no les mostra si no vols: marca-les al seu menú \"Vista\" per veure-les-hi com a \"Pròximament\":",
             {
               "points": [
                 "Convert: convertir fitxers d'un format a un altre, entre ells documents d'oficina a PDF i a l'inrevés, sense haver d'instal·lar cap altre programa. Encara no hem trobat cap tecnologia oberta que arribi a la qualitat que volem, així que només arribarà quan no et decebi; on les eines no existeixin, les construirem.",

@@ -17,7 +17,7 @@
                 "Dev kokoaa kehittäjille työkaluja: koodaamiseen ja dekoodaukseen, muotoiluun ja tarkistamiseen sekä datan muuntamiseen muodosta toiseen."
               ]
             },
-            "Sovellukset jakavat saman ikkunan, asetukset ja toimintatavan, joten yhdessä sovelluksessa oppimasi pätee myös muihin.",
+            "Jokainen sovellus avautuu omaan ikkunaansa, jolla on oma painike tehtäväpalkissa, ja sovellukset jakavat samat asetukset ja toimintatavan, joten yhdessä sovelluksessa oppimasi pätee myös muihin.",
             {
               "note": "Kaikki tapahtuu tietokoneellasi. Asiakirjojasi ei koskaan lähetetä minnekään, eikä sinusta tai työstäsi kerätä tietoja."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Sivupalkki: talon kuvake vie Aloitukseen, sen jälkeen tulevat sovelluksesi ja alareunassa ovat ohjelman uutiset, Palaute, Tuki ja Asetukset.",
-                "Sovelluksessa Tiedosto → Siirry aloitukseen vie sovelluksen ensimmäiselle sivulle, jos sellainen on (Units, Scribe), ja Tiedosto → Avaa asetukset (Ctrl+,) avaa Asetukset kyseisen sovelluksen osioon; muut osiot ovat sieltä vain yhden klikkauksen päässä.",
+                "Sivupalkki: Syntelab-logo näyttää sovellusten luettelon, sen alla tämän ikkunan sovelluksen kuvake palauttaa sovelluksen ensimmäisen sivun, ja alareunassa ovat ohjelman uutiset, Palaute, Tuki ja Asetukset.",
+                "Tiedosto → Siirry aloitukseen vie sovelluksen ensimmäiselle sivulle, ja Tiedosto → Avaa asetukset (Ctrl+,) avaa Asetukset kyseisen sovelluksen osioon; muut osiot ovat sieltä vain yhden klikkauksen päässä.",
                 "Yläreunan välilehdet: jokaisella avaamallasi asiakirjalla, kansiolla tai työkalulla on oma välilehtensä. Välilehden piste kertoo, että siinä on tallentamattomia muutoksia.",
                 "Sovelluksen valikot välilehtien alapuolella: joko valikkopalkkina, nauhana tai sivupaneelina, riippuen valinnastasi.",
                 "Ikkunan loppuosa on aktiivinen välilehti."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Aloitus",
+          "title": "Sovellukset ja niiden ikkunat",
           "body": [
-            "Aloitus näyttää sovelluksesi ja viimeksi avatut tiedostot. Klikkaa sovellusta avataksesi sen; klikkaa viimeaikaista tiedostoa avataksesi sen uudelleen.",
+            "Klikkaa sivupalkin yläreunassa olevaa Syntelab-logoa nähdäksesi sovellukset. Klikkaa sovellusta avataksesi sen omaan ikkunaansa; jos se on jo auki, sen ikkuna tulee eteen, joten sovelluksella ei ole koskaan kahta ikkunaa. Luettelon yläreunan haku löytää sovelluksia, työkaluja ja komentoja.",
             "Sovellukset voidaan näyttää kortteina, kuvakkeina nimillä tai pelkkinä kuvakkeina, ja niitä voi vetää haluttuun järjestykseen. Näppäimistöllä: Alt ja nuolinäppäimet. \"Palauta oletukset\" palauttaa ne alkuperäiseen järjestykseen.",
-            "Jokaisella sovelluksella on myös oma pikakuvake Windowsin Käynnistä-valikossa, kuten \"Syntelab PDF Organizer\" tai \"Syntelab Units\": se avaa ohjelman suoraan kyseiseen sovellukseen. Jos ohjelma on jo auki, sovellus avautuu siinä välilehtenä."
+            "Jokaisella sovelluksella on myös oma pikakuvake Windowsin Käynnistä-valikossa, kansiossa \"Syntelab Creative\", ja sen ikkunan voi kiinnittää tehtäväpalkkiin kuten minkä tahansa ohjelman. Jos ohjelma käynnistetään ilman sovellusta, se avaa viimeksi käyttämäsi sovelluksen."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Sovelluksesta: Tiedosto → Avaa tai Ctrl+O.",
                 "Raahaamalla tiedostoja kansiosta ikkunaan.",
-                "Järjestelmän tiedostonhallinnasta: kaksoisnapsauta tiedostoa, jonka ohjelma on määritetty avaamaan. Resurssienhallinnassa on myös hiiren kakkospainikkeen valikko (katso \"Resurssienhallinnan hiiren kakkospainikkeen valikko\").",
-                "Aloituksesta: viimeisimpien tiedostojen luettelo."
+                "Järjestelmän tiedostonhallinnasta: kaksoisnapsauta tiedostoa, jonka ohjelma on määritetty avaamaan. Resurssienhallinnassa on myös hiiren kakkospainikkeen valikko (katso \"Resurssienhallinnan hiiren kakkospainikkeen valikko\")."
               ]
             },
-            "Ohjelma käynnistyy yhtenä istuntona. Tiedoston avaaminen tiedostonhallinnasta ohjelman ollessa käynnissä avaa sen uutena välilehtenä samaan ikkunaan."
+            "Ohjelma käynnistyy yhtenä istuntona. Tiedostonhallinnasta avattu tiedosto avautuu uutena välilehtenä sen sovelluksen ikkunaan, joka sen käsittelee (PDF-tiedosto sovellukseen PDF Organizer), ja ikkuna tulee eteen."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "\"Pidä Aloitus-välilehti välilehtien joukossa\": kun tämä on pois päältä, Aloitus-välilehti näkyy vain silloin, kun Aloitus itse on edessä; sivupalkin talo-kuvake johtaa aina takaisin siihen.",
                 "Välilehden merkintänä voi olla sovelluksen kuvake tai yksinkertainen neliö sovelluksen värissä."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Tämän ohjeen käyttö",
           "body": [
-            "Ohje riippuu siitä, mistä avaat sen. Sovelluksesta näet vain kyseisen sovelluksen ohjeen ja välilehden komennot, jolta tulit. Aloitussivulta tai Asetuksista näet kohdan \"Tietoa\" (lyhyt kuvaus ohjelmasta ja jokaisesta sovelluksesta) sekä ohjelman ohjeen. Ohje → Tietoa johtaa aina kohtaan \"Tietoa\".",
+            "Ohje riippuu siitä, mistä avaat sen. Sovelluksesta näet vain kyseisen sovelluksen ohjeen ja välilehden komennot, jolta tulit. Asetuksista näet kohdan \"Tietoa\" (lyhyt kuvaus ohjelmasta ja jokaisesta sovelluksesta) sekä ohjelman ohjeen. Ohje → Tietoa johtaa aina kohtaan \"Tietoa\".",
             "Sisällysluettelo on vasemmalla; sen yläpuolella oleva haku etsii jokaisesta aiheesta, sekä otsikoista että tekstistä.",
             "Ohje avautuu omaan välilehteen, jolloin voit liikkua sen ja työsi välillä; F1 tuo sen uudelleen etualalle. Kohdassa \"Alkuperäisen välilehden komennot\" on lueteltu kyseisen välilehden kaikki valikot komentoineen, pikanäppäimineen ja kuvauksineen: avaa Ohje siitä välilehdestä, johon liittyen sinulla on kysymys."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Mitä kehitämme",
           "body": [
-            "Neljä sovellusta tulevat kasvamaan: raportit ja toiveet, jotka lähetät kohdassa Ohje → Palaute, vaikuttavat suuresti siihen, mitä toteutetaan ensin. Niiden lisäksi valmistellaan uusia sovelluksia. Aloitus ei näytä niitä, ellet halua: valitse ne sen \"Näytä\"-valikosta, niin näet ne siellä nimellä \"Tulossa pian\":",
+            "Neljä sovellusta tulevat kasvamaan: raportit ja toiveet, jotka lähetät kohdassa Ohje → Palaute, vaikuttavat suuresti siihen, mitä toteutetaan ensin. Niiden lisäksi valmistellaan uusia sovelluksia. Sovellusten luettelo ei näytä niitä, ellet halua: valitse ne sen \"Näytä\"-valikosta, niin näet ne siellä nimellä \"Tulossa pian\":",
             {
               "points": [
                 "Convert: tiedostojen muuntaminen muodosta toiseen, mukaan lukien toimistodokumentit PDF-muotoon ja takaisin, ilman tarvetta asentaa toista ohjelmaa. Emme ole vielä löytäneet avointa teknologiaa, joka vastaisi laatutavoitteitamme, joten se julkaistaan vasta, kun se ei tuota sinulle pettymystä; jos työkaluja ei ole olemassa, rakennamme ne.",

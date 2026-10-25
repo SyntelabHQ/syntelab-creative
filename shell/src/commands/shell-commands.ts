@@ -18,10 +18,7 @@ const [HELP] = LAST_MENUS;
 
 const NAVIGATION = 'shell.command.group.navigation';
 
-/** Start is passed over when going from tab to tab, unless the user keeps its tab among the others. */
-const startHasNoTab = (tab: { readonly kind: string }) => tab.kind === 'start' && !preferences.get().startTabAlways;
-
-/** The app whose tab is in front; null on Start, Settings and Help. */
+/** The app whose tab is in front; null on Settings and Help. */
 function appInFront(): string | null {
   const { tabs: open, activeId } = tabs.store.get();
   const tab = open.find((known) => known.id === activeId);
@@ -29,16 +26,16 @@ function appInFront(): string | null {
 }
 
 /**
- * "Go to Start", from inside an app, goes to the first page of that app: an
- * app that has one registers a command named `<app-id>.start` for the tab in
- * front, and this runs it. From anywhere else, and in an app without a first
- * page of its own, it goes to the Start of the program.
+ * "Go to Start" goes to the first page of the window's app: an app whose tabs
+ * have a start of their own registers a command named `<app-id>.start` for the
+ * tab in front, and this runs it. From anywhere else it brings the app's first
+ * tab to the front.
  */
 function goToStart(): void | Promise<void> {
   const app = appInFront();
   const own = app ? commandRegistry.get(`${app}.start`) : undefined;
   if (own && !own.disabled) return own.run();
-  tabs.showStart();
+  tabs.showHome();
 }
 
 /** "Open Settings", from inside an app, opens Settings at that app's own part; the other parts are a click away there. */
@@ -67,7 +64,7 @@ const SHELL_COMMANDS: readonly Command[] = [
     shortcut: 'Mod+,',
     run: openSettings,
   },
-  // The theme belongs to the whole program (Start, Settings), not to an app's
+  // The theme belongs to the whole program (every window, Settings), not to an app's
   // View menu; these are found by the search.
   {
     id: 'shell.themeLight',
@@ -100,14 +97,14 @@ const SHELL_COMMANDS: readonly Command[] = [
     labelKey: 'shell.command.nextTab',
     icon: 'arrow-right',
     shortcut: 'Mod+Tab',
-    run: () => tabs.step(1, startHasNoTab),
+    run: () => tabs.step(1),
   },
   {
     id: 'shell.previousTab',
     labelKey: 'shell.command.previousTab',
     icon: 'arrow-left',
     shortcut: 'Mod+Shift+Tab',
-    run: () => tabs.step(-1, startHasNoTab),
+    run: () => tabs.step(-1),
   },
   {
     id: 'shell.help',

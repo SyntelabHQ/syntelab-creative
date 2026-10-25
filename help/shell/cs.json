@@ -17,7 +17,7 @@
                 "Dev shromažďuje nástroje pro vývojáře: kódování a dekódování, formátování a kontrolu, převod jedné formy dat na jinou."
               ]
             },
-            "Aplikace sdílejí jedno okno, jednu sadu nastavení a jeden způsob práce, takže to, co se naučíte v jedné, platí i v další.",
+            "Každá aplikace se otevírá ve vlastním okně s vlastním tlačítkem na hlavním panelu a aplikace sdílejí jednu sadu nastavení a jeden způsob práce, takže to, co se naučíte v jedné, platí i v další.",
             {
               "note": "Vše probíhá na vašem počítači. Vaše dokumenty nejsou nikam odesílány a o vás ani o vaší práci nejsou sbírány žádné údaje."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Boční lišta: ikona domku vede na Start, následují vaše aplikace a dole novinky programu, Zpětná vazba, Podpora a Nastavení.",
-                "V aplikaci vede Soubor → Přejít na Start na úvodní stránku dané aplikace, pokud ji má (Units, Scribe), a Soubor → Otevřít Nastavení (Ctrl+,) otevře Nastavení v části dané aplikace; ostatní části jsou odtud vzdáleny jedno kliknutí.",
+                "Boční lišta: logo Syntelab zobrazí seznam aplikací, pod ním ikona aplikace tohoto okna vrátí její úvodní stránku a dole jsou novinky programu, Zpětná vazba, Podpora a Nastavení.",
+                "Soubor → Přejít na Start vede na úvodní stránku aplikace a Soubor → Otevřít Nastavení (Ctrl+,) otevře Nastavení v části dané aplikace; ostatní části jsou odtud vzdáleny jedno kliknutí.",
                 "Karty nahoře: každý dokument, svazek nebo nástroj, který otevřete, má svou vlastní kartu. Tečka na kartě značí, že obsahuje neuložené změny.",
                 "Menu aplikace pod kartami: jako panel menu, jako pás karet nebo jako boční panel, podle toho, co jste si zvolili.",
                 "Zbytek okna tvoří karta v popředí."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Start",
+          "title": "Aplikace a jejich okna",
           "body": [
-            "Start zobrazuje vaše aplikace a nedávno otevřené soubory. Kliknutím na aplikaci ji otevřete; kliknutím na nedávný soubor jej znovu otevřete.",
+            "Kliknutím na logo Syntelab nahoře na boční liště zobrazíte aplikace. Kliknutím na některou ji otevřete ve vlastním okně; pokud už je otevřená, její okno se přesune do popředí, takže aplikace nikdy nemá dvě okna. Hledání nahoře v seznamu najde aplikace, nástroje a příkazy.",
             "Aplikace lze zobrazit jako karty, jako ikony s názvy nebo pouze jako ikony a přetahovat je do libovolného pořadí. Pomocí klávesnice: Alt a šipky. „Obnovit výchozí“ je vrátí do původního stavu.",
-            "Každá aplikace má také svou vlastní zkratku v nabídce Start systému Windows, například „Syntelab PDF Organizer“ nebo „Syntelab Units“: otevře program rovnou v dané aplikaci. Pokud je program již otevřen, otevře se v něm aplikace jako karta."
+            "Každá aplikace má také svou vlastní zkratku v nabídce Start systému Windows, ve složce „Syntelab Creative“, a její okno lze připnout na hlavní panel jako kterýkoli program. Když se program spustí bez aplikace, otevře aplikaci, kterou jste použili naposledy."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Z aplikace: Soubor → Otevřít, nebo Ctrl+O.",
                 "Přetažením souborů ze složky do okna.",
-                "Ze správce souborů vašeho systému: dvojklikem na soubor, který má program otevírat. V Průzkumníku Windows je k dispozici také kontextové menu (viz „Kontextové menu Průzkumníka Windows“).",
-                "Ze Startu: seznam nedávno použitých souborů."
+                "Ze správce souborů vašeho systému: dvojklikem na soubor, který má program otevírat. V Průzkumníku Windows je k dispozici také kontextové menu (viz „Kontextové menu Průzkumníka Windows“)."
               ]
             },
-            "Program běží jako jediná instance. Soubor otevřený ze správce souborů za běhu programu se otevře jako nová karta ve stejném okně."
+            "Program běží jako jediná instance. Soubor otevřený ze správce souborů se otevře jako nová karta v okně aplikace, která ho zpracovává (PDF v PDF Organizer), a toto okno se přesune do popředí."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "„Vždy ponechat kartu Start mezi kartami“: je-li vypnuto, karta Start se zobrazuje pouze tehdy, když je samotný Start v popředí; ikona domku na boční liště k ní vždy vede zpět.",
                 "Označením karty může být ikona její aplikace nebo prostý čtverec v barvě aplikace."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Používání této Nápovědy",
           "body": [
-            "Nápověda odpovídá místu, ze kterého ji otevřete. Z aplikace uvidíte pouze manuál dané aplikace a příkazy karty, ze které jste přišli. Ze Startu nebo z Nastavení uvidíte „O programu“ (stručně o programu a každé aplikaci) a manuál programu. Nápověda → O programu vždy vede do „O programu“.",
+            "Nápověda odpovídá místu, ze kterého ji otevřete. Z aplikace uvidíte pouze manuál dané aplikace a příkazy karty, ze které jste přišli. Z Nastavení uvidíte „O programu“ (stručně o programu a každé aplikaci) a manuál programu. Nápověda → O programu vždy vede do „O programu“.",
             "Obsah je vlevo; vyhledávání nad ním prohledává všechna témata, v názvech i v textu.",
             "Nápověda se otevírá ve vlastní kartě, takže mezi ní a svou prací můžete přecházet; F1 ji opět přenese do popředí. V části „Příkazy karty, ze které jste přišli“ je vypsáno každé menu dané karty s jeho příkazy, klávesovými zkratkami a popisem funkce: Nápovědu otevírejte z karty, ke které máte dotaz."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Na čem pracujeme",
           "body": [
-            "Čtyři aplikace budou dál růst: o tom, co přijde jako první, z velké části rozhoduje to, co nahlásíte a o co požádáte přes Nápověda → Zpětná vazba. Vedle nich se připravují nové aplikace. Start je nezobrazuje, pokud nechcete: zaškrtněte je v jeho nabídce „Zobrazení“ a uvidíte je tam označené jako „Brzy“:",
+            "Čtyři aplikace budou dál růst: o tom, co přijde jako první, z velké části rozhoduje to, co nahlásíte a o co požádáte přes Nápověda → Zpětná vazba. Vedle nich se připravují nové aplikace. Seznam aplikací je nezobrazuje, pokud nechcete: zaškrtněte je v jeho nabídce „Zobrazení“ a uvidíte je tam označené jako „Brzy“:",
             {
               "points": [
                 "Convert: převádění souborů z jednoho formátu do druhého, včetně kancelářských dokumentů do PDF a zpět, bez nutnosti instalovat další program. Ještě jsme nenalezli otevřenou technologii, která by dosáhla požadované kvality, takže Convert přijde až ve chvíli, kdy vás nezklame; tam, kde nástroje neexistují, si je vybudujeme.",

@@ -1,0 +1,30 @@
+/* The grip under the list of files: a short bar to take hold of, the full width to aim at. */
+.grip {
+  position: relative;
+  flex: none;
+  height: 10px;
+  margin-block: -8px -4px;
+  cursor: row-resize;
+  touch-action: none;
+}
+
+.grip::after {
+  position: absolute;
+  inset-block-start: 3px;
+  inset-inline-start: calc(50% - 20px);
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--sc-border);
+  content: '';
+}
+
+.grip:hover::after,
+.grip:focus-visible::after,
+.grip[data-dragging='true']::after {
+  background: var(--sc-accent);
+}
+
+.grip:focus-visible {
+  outline: none;
+}

@@ -7,3 +7,4 @@ pub mod default_app;
 pub mod explorer_menu;
 pub mod fonts;
 pub mod share;
+pub mod window_identity;

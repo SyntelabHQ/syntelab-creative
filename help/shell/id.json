@@ -17,7 +17,7 @@
                 "Dev menyediakan kumpulan alat untuk pengembang: mengodekan dan mendekode, memformat dan memeriksa, serta mengubah data ke bentuk lain."
               ]
             },
-            "Semua aplikasi menggunakan jendela, pengaturan, dan cara kerja yang sama, sehingga hal yang Anda pelajari di satu aplikasi juga berlaku di aplikasi lain.",
+            "Setiap aplikasi terbuka di jendelanya sendiri, dengan tombolnya sendiri di bilah tugas, dan semua aplikasi menggunakan pengaturan dan cara kerja yang sama, sehingga hal yang Anda pelajari di satu aplikasi juga berlaku di aplikasi lain.",
             {
               "note": "Semua proses berlangsung di komputer Anda. Dokumen tidak pernah dikirim ke mana pun dan informasi tentang Anda atau pekerjaan Anda tidak dikumpulkan."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Bilah sisi: ikon rumah membuka Beranda, diikuti aplikasi Anda; di bagian bawah terdapat berita program, Masukan, Dukungan, dan Pengaturan.",
-                "Di dalam aplikasi, Berkas → Kembali ke Beranda membuka halaman pertama aplikasi jika tersedia (Units, Scribe), sedangkan Berkas → Buka Pengaturan (Ctrl+,) membuka bagian pengaturan aplikasi tersebut. Bagian lain dapat dibuka dengan sekali klik.",
+                "Bilah sisi: logo Syntelab menampilkan daftar aplikasi, di bawahnya ikon aplikasi jendela ini membuka kembali halaman pertamanya; di bagian bawah terdapat berita program, Masukan, Dukungan, dan Pengaturan.",
+                "Berkas → Kembali ke Beranda membuka halaman pertama aplikasi, sedangkan Berkas → Buka Pengaturan (Ctrl+,) membuka bagian pengaturan aplikasi tersebut. Bagian lain dapat dibuka dengan sekali klik.",
                 "Tab di bagian atas: setiap dokumen, penggabung dokumen, atau alat yang dibuka memiliki tab tersendiri. Titik pada tab menandakan ada perubahan yang belum disimpan.",
                 "Menu aplikasi di bawah tab dapat ditampilkan sebagai bilah menu, pita, atau panel sisi, sesuai pilihan Anda.",
                 "Bagian jendela lainnya menampilkan tab yang sedang aktif."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Beranda",
+          "title": "Aplikasi dan jendelanya",
           "body": [
-            "Beranda menampilkan aplikasi dan berkas yang terakhir Anda buka. Klik aplikasi untuk membukanya atau berkas terbaru untuk membukanya kembali.",
+            "Klik logo Syntelab di bagian atas bilah sisi untuk melihat aplikasi. Klik salah satunya untuk membukanya di jendelanya sendiri; jika sudah terbuka, jendelanya akan muncul di depan, sehingga satu aplikasi tidak pernah memiliki dua jendela. Kotak pencarian di bagian atas daftar dapat menemukan aplikasi, alat, dan perintah.",
             "Aplikasi dapat ditampilkan sebagai kartu, ikon beserta nama, atau ikon saja. Seret aplikasi untuk mengurutkannya. Dengan papan ketik, gunakan Alt dan tombol panah. “Kembalikan ke bawaan” mengembalikan urutan bawaan.",
-            "Setiap aplikasi juga memiliki pintasan tersendiri di menu Mulai Windows, seperti “Syntelab PDF Organizer” atau “Syntelab Units”, yang langsung membuka program pada aplikasi tersebut. Jika program sudah terbuka, aplikasi akan dibuka di tab baru."
+            "Setiap aplikasi juga memiliki pintasan tersendiri di menu Mulai Windows, di dalam folder “Syntelab Creative”, dan jendelanya dapat disematkan ke bilah tugas seperti program lainnya. Jika dijalankan tanpa memilih aplikasi, program akan membuka aplikasi yang terakhir Anda gunakan."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Dari aplikasi: Berkas → Buka atau Ctrl+O.",
                 "Seret berkas dari folder ke jendela program.",
-                "Dari pengelola berkas sistem: klik dua kali berkas yang dapat dibuka oleh program. Di Windows Explorer, Anda juga dapat menggunakan menu klik kanan (lihat “Menu klik kanan Windows Explorer”).",
-                "Dari Beranda: pilih berkas di daftar terbaru."
+                "Dari pengelola berkas sistem: klik dua kali berkas yang dapat dibuka oleh program. Di Windows Explorer, Anda juga dapat menggunakan menu klik kanan (lihat “Menu klik kanan Windows Explorer”)."
               ]
             },
-            "Program hanya berjalan sebagai satu salinan. Jika berkas dibuka dari pengelola berkas saat program sedang berjalan, berkas akan terbuka sebagai tab baru di jendela yang sama."
+            "Program hanya berjalan sebagai satu salinan. Berkas yang dibuka dari pengelola berkas akan terbuka sebagai tab baru di jendela aplikasi yang menanganinya (PDF di PDF Organizer), dan jendela tersebut akan muncul di depan."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "“Pertahankan tab Beranda di antara tab lainnya”: jika nonaktif, tab Beranda hanya tampil saat Beranda terbuka; ikon rumah di bilah sisi selalu dapat digunakan untuk kembali ke sana.",
                 "Tanda pada tab dapat menggunakan ikon aplikasinya atau kotak polos dengan warna aplikasi tersebut."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Menggunakan Bantuan ini",
           "body": [
-            "Isi Bantuan bergantung pada tempat Anda membukanya. Dari aplikasi, Anda hanya melihat panduan aplikasi tersebut dan perintah pada tab asal. Dari Beranda atau Pengaturan, Anda melihat bagian “Tentang” (ringkasan program dan setiap aplikasi) serta panduan program. Bantuan → Tentang selalu membuka bagian “Tentang”.",
+            "Isi Bantuan bergantung pada tempat Anda membukanya. Dari aplikasi, Anda hanya melihat panduan aplikasi tersebut dan perintah pada tab asal. Dari Pengaturan, Anda melihat bagian “Tentang” (ringkasan program dan setiap aplikasi) serta panduan program. Bantuan → Tentang selalu membuka bagian “Tentang”.",
             "Daftar isi berada di sebelah kiri; kotak pencarian di atasnya mencari semua topik, baik judul maupun isi.",
             "Bantuan terbuka di tab tersendiri sehingga Anda dapat berpindah antara Bantuan dan pekerjaan. F1 akan menampilkan Bantuan kembali. Bagian “Perintah pada tab asal” mencantumkan setiap menu pada tab tersebut, nama perintah, pintasan, dan fungsinya. Buka Bantuan dari tab yang ingin Anda ketahui lebih lanjut."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Yang sedang kami kerjakan",
           "body": [
-            "Keempat aplikasi yang tersedia akan terus dikembangkan. Masukan dan permintaan melalui Bantuan → Masukan turut menentukan prioritas kami. Aplikasi baru juga sedang disiapkan. Beranda tidak menampilkannya kecuali Anda menginginkannya: centang aplikasi tersebut di menu “Tampilan” Beranda agar muncul di sana sebagai “Segera hadir”:",
+            "Keempat aplikasi yang tersedia akan terus dikembangkan. Masukan dan permintaan melalui Bantuan → Masukan turut menentukan prioritas kami. Aplikasi baru juga sedang disiapkan. Daftar aplikasi tidak menampilkannya kecuali Anda menginginkannya: centang aplikasi tersebut di menu “Tampilan” daftar tersebut agar muncul di sana sebagai “Segera hadir”:",
             {
               "points": [
                 "Convert: konversi berkas dari satu format ke format lain, termasuk dokumen Office ke PDF dan sebaliknya, tanpa perlu memasang program lain. Kami belum menemukan teknologi terbuka yang memenuhi kualitas yang kami inginkan, jadi aplikasi ini baru akan dirilis saat hasilnya memuaskan. Jika alat yang dibutuhkan belum tersedia, kami akan membuatnya.",

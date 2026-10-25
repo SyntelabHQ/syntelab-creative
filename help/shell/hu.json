@@ -17,7 +17,7 @@
                 "A Dev fejlesztői eszközöket gyűjt össze: kódolás és dekódolás, formázás és ellenőrzés, adatok átalakítása egyik formáról a másikra."
               ]
             },
-            "Az alkalmazások egy ablakon, egy beállításkészleten és egy munkamódon osztoznak, így amit az egyikben megtanul, az a következőben is ugyanúgy működik.",
+            "Minden alkalmazás saját ablakban nyílik meg, saját gombbal a tálcán, és az alkalmazások egy beállításkészleten és egy munkamódon osztoznak, így amit az egyikben megtanul, az a következőben is ugyanúgy működik.",
             {
               "note": "Minden az Ön számítógépén történik. A dokumentumait soha nem küldjük sehova, és semmit sem gyűjtünk Önről vagy a munkájáról."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Az oldalsáv: a ház a Kezdőlapra vezet, utána jönnek az alkalmazásai, alul pedig a program hírei, a Visszajelzés, a Támogatás és a Beállítások.",
-                "Egy alkalmazásban a Fájl → Ugrás a Kezdőlapra az adott alkalmazás első oldalára visz, ha van ilyen (Units, Scribe), a Fájl → Beállítások megnyitása (Ctrl+,) pedig a Beállításokat az adott alkalmazás részénél nyitja meg; a többi rész onnan egy kattintásra van.",
+                "Az oldalsáv: a Syntelab logó felsorolja az alkalmazásokat, alatta az ablak alkalmazásának ikonja visszahozza annak első oldalát, alul pedig a program hírei, a Visszajelzés, a Támogatás és a Beállítások.",
+                "A Fájl → Ugrás a Kezdőlapra az alkalmazás első oldalára visz, a Fájl → Beállítások megnyitása (Ctrl+,) pedig a Beállításokat az adott alkalmazás részénél nyitja meg; a többi rész onnan egy kattintásra van.",
                 "A fülek felül: minden megnyitott dokumentumnak, gyűjtőnek vagy eszköznek saját füle van. A fülön lévő pont azt jelzi, hogy nem mentett változtatások vannak rajta.",
                 "Az alkalmazás menüi a fülek alatt: menüsávként, szalagmenüként vagy oldalsávként, aszerint, amit választott.",
                 "Az ablak többi része az elöl lévő fül."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Kezdőlap",
+          "title": "Az alkalmazások és ablakaik",
           "body": [
-            "A Kezdőlap megmutatja az alkalmazásait és a legutóbb megnyitott fájlokat. Kattintson egy alkalmazásra a megnyitásához; kattintson egy legutóbbi fájlra az újbóli megnyitásához.",
+            "Kattintson az oldalsáv tetején lévő Syntelab logóra az alkalmazások megtekintéséhez. Kattintson egyre, hogy saját ablakban nyissa meg; ha már nyitva van, az ablaka előtérbe kerül, így egy alkalmazásnak sosem lesz két ablaka. A lista tetején lévő keresés alkalmazásokat, eszközöket és parancsokat talál.",
             "Az alkalmazások megjelenhetnek kártyaként, ikonként névvel vagy csak ikonként, és tetszőleges sorrendbe húzhatók. Billentyűzettel: Alt és a nyílbillentyűk. Az „Alapértelmezés visszaállítása” visszarendezi őket.",
-            "Minden alkalmazásnak saját parancsikonja is van a Windows Start menüjében, például „Syntelab PDF Organizer” vagy „Syntelab Units”: ez rögtön abban az alkalmazásban nyitja meg a programot. Ha a program már meg van nyitva, az alkalmazás fülként nyílik meg benne."
+            "Minden alkalmazásnak saját parancsikonja is van a Windows Start menüjében, a „Syntelab Creative” mappában, és az ablaka bármely programhoz hasonlóan rögzíthető a tálcán. Ha alkalmazás megadása nélkül indítja, a program a legutóbb használt alkalmazást nyitja meg."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Egy alkalmazásból: Fájl → Megnyitás vagy Ctrl+O.",
                 "Fájlok áthúzásával egy mappából az ablakra.",
-                "A rendszer fájlkezelőjéből: kattintson duplán egy olyan fájlra, amelynek megnyitására a program be van állítva. A Windows Fájlkezelőben a helyi menü is használható (lásd „A Windows Fájlkezelő helyi menüje”).",
-                "A Kezdőlapról: a legutóbbi fájlok listája."
+                "A rendszer fájlkezelőjéből: kattintson duplán egy olyan fájlra, amelynek megnyitására a program be van állítva. A Windows Fájlkezelőben a helyi menü is használható (lásd „A Windows Fájlkezelő helyi menüje”)."
               ]
             },
-            "A program egy példányban fut. Ha a program futása közben a fájlkezelőből nyit meg egy fájlt, az új fülként nyílik meg ugyanabban az ablakban."
+            "A program egy példányban fut. A fájlkezelőből megnyitott fájl új fülként nyílik meg annak az alkalmazásnak az ablakában, amely kezeli (egy PDF a PDF Organizerben), és ez az ablak előtérbe kerül."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "„A Kezdőlap fül maradjon a fülek között”: ha ki van kapcsolva, a Kezdőlap fül csak akkor látszik, ha maga a Kezdőlap van elöl; az oldalsáv háza mindig visszavezet hozzá.",
                 "A fülön lévő jel lehet az alkalmazás ikonja vagy egy egyszerű négyzet az alkalmazás színében."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "A Súgó használata",
           "body": [
-            "A Súgó attól függ, honnan nyitja meg. Egy alkalmazásból csak annak az alkalmazásnak a kézikönyvét és annak a fülnek a parancsait látja, ahonnan jött. A kezdőoldalról vagy a Beállításokból a „Névjegy” részt (röviden a programról és az egyes alkalmazásokról) és a program kézikönyvét látja. A Súgó → Névjegy mindig a „Névjegy” részhez vezet.",
+            "A Súgó attól függ, honnan nyitja meg. Egy alkalmazásból csak annak az alkalmazásnak a kézikönyvét és annak a fülnek a parancsait látja, ahonnan jött. A Beállításokból a „Névjegy” részt (röviden a programról és az egyes alkalmazásokról) és a program kézikönyvét látja. A Súgó → Névjegy mindig a „Névjegy” részhez vezet.",
             "A tartalomjegyzék a bal oldalon van; a fölötte lévő keresés minden témát átnéz, a címekben és a szövegben is.",
             "A Súgó saját fülön nyílik meg, így oda-vissza válthat közte és a munkája között; az F1 újra előre hozza. „Az előző fül parancsai” alatt annak a fülnek minden menüje szerepel az összes parancsával, azok billentyűivel és leírásával: nyissa meg a Súgót arról a fülről, amellyel kapcsolatban kérdése van."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Min dolgozunk",
           "body": [
-            "A négy alkalmazás tovább fejlődik: amit a Súgó → Visszajelzés útján jelez és kér, nagyrészt az dönti el, mi kerül sorra először. Mellettük új alkalmazások készülnek. A Kezdőlap csak akkor jeleníti meg őket, ha szeretné: jelölje be őket a „Nézet” menüjében, és ott „Hamarosan” felirattal jelennek meg:",
+            "A négy alkalmazás tovább fejlődik: amit a Súgó → Visszajelzés útján jelez és kér, nagyrészt az dönti el, mi kerül sorra először. Mellettük új alkalmazások készülnek. Az alkalmazások listája csak akkor jeleníti meg őket, ha szeretné: jelölje be őket a „Nézet” menüjében, és ott „Hamarosan” felirattal jelennek meg:",
             {
               "points": [
                 "Convert: fájlok konvertálása egyik formátumból a másikba, többek között irodai dokumentumoké PDF-re és vissza, anélkül hogy más programot kellene telepíteni. Még nem találtunk olyan nyílt technológiát, amely elérné a kívánt minőséget, ezért csak akkor érkezik, amikor nem fog csalódást okozni; ahol az eszközök nem léteznek, megépítjük őket.",

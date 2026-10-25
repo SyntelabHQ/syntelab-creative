@@ -17,7 +17,7 @@
                 "Dev zawiera narzędzia dla programistów: do kodowania i dekodowania, formatowania i sprawdzania oraz konwersji danych między różnymi formatami."
               ]
             },
-            "Aplikacje korzystają ze wspólnego okna, tych samych ustawień i spójnego sposobu obsługi, dlatego to, czego nauczysz się w jednej, przyda Ci się również w pozostałych.",
+            "Każda aplikacja otwiera się we własnym oknie, z własnym przyciskiem na pasku zadań, a aplikacje korzystają z tych samych ustawień i spójnego sposobu obsługi, dlatego to, czego nauczysz się w jednej, przyda Ci się również w pozostałych.",
             {
               "note": "Wszystko odbywa się na Twoim komputerze. Dokumenty nie są nigdzie wysyłane, a informacje o Tobie ani Twojej pracy nie są gromadzone."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Pasek boczny: ikona domu prowadzi do Start, poniżej znajdują się aplikacje, a na dole — aktualności programu, Przekaż opinię, Wsparcie i Ustawienia.",
-                "W aplikacji polecenie Plik → Przejdź do strony Start otwiera jej pierwszą stronę, jeśli ją ma (Units, Scribe), a Plik → Otwórz ustawienia (Ctrl+,) otwiera ustawienia w sekcji tej aplikacji. Do pozostałych sekcji można przejść jednym kliknięciem.",
+                "Pasek boczny: logo Syntelab wyświetla listę aplikacji, pod nim ikona aplikacji tego okna przywraca jej pierwszą stronę, a na dole — aktualności programu, Przekaż opinię, Wsparcie i Ustawienia.",
+                "Polecenie Plik → Przejdź do strony Start otwiera pierwszą stronę aplikacji, a Plik → Otwórz ustawienia (Ctrl+,) otwiera ustawienia w sekcji tej aplikacji. Do pozostałych sekcji można przejść jednym kliknięciem.",
                 "Karty u góry: każdy otwarty dokument, segregator lub zestaw narzędzi ma własną kartę. Kropka na karcie oznacza niezapisane zmiany.",
                 "Menu aplikacji pod kartami może być wyświetlane jako pasek menu, wstążka lub panel boczny — zależnie od wybranego układu.",
                 "Pozostałą część okna zajmuje aktywna karta."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Start",
+          "title": "Aplikacje i ich okna",
           "body": [
-            "Na stronie Start są widoczne aplikacje i ostatnio otwierane pliki. Kliknij aplikację, aby ją uruchomić, albo ostatnio używany plik, aby ponownie go otworzyć.",
+            "Kliknij logo Syntelab u góry paska bocznego, aby zobaczyć aplikacje. Kliknij jedną z nich, aby otworzyć ją we własnym oknie; jeśli jest już otwarta, jej okno zostanie przeniesione na wierzch, więc aplikacja nigdy nie ma dwóch okien. Wyszukiwarka u góry listy znajduje aplikacje, narzędzia i polecenia.",
             "Aplikacje mogą być wyświetlane jako kafelki, ikony z nazwami albo same ikony. Możesz przeciągać je, aby ustawić własną kolejność. Użyj klawisza Alt i strzałek. Polecenie Przywróć domyślne przywraca pierwotny układ.",
-            "Każda aplikacja ma także własny skrót w menu Start systemu Windows, na przykład Syntelab PDF Organizer lub Syntelab Units. Skrót uruchamia program od razu w wybranej aplikacji. Jeśli program jest już otwarty, aplikacja pojawi się w nim jako nowa karta."
+            "Każda aplikacja ma także własny skrót w menu Start systemu Windows, w folderze Syntelab Creative, a jej okno można przypiąć do paska zadań jak każdy program. Uruchomiony bez wskazania aplikacji program otwiera ostatnio używaną aplikację."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "W aplikacji: Plik → Otwórz albo Ctrl+O.",
                 "Przeciągając pliki z folderu do okna programu.",
-                "W menedżerze plików: kliknij dwukrotnie plik obsługiwany przez program. W Eksploratorze plików systemu Windows dostępne jest też menu kontekstowe (zob. Menu kontekstowe Eksploratora plików systemu Windows).",
-                "Na stronie Start: wybierz plik z listy ostatnio używanych."
+                "W menedżerze plików: kliknij dwukrotnie plik obsługiwany przez program. W Eksploratorze plików systemu Windows dostępne jest też menu kontekstowe (zob. Menu kontekstowe Eksploratora plików systemu Windows)."
               ]
             },
-            "Program działa jako jedna instancja. Plik otwarty z menedżera plików, gdy program jest już uruchomiony, pojawia się jako nowa karta w tym samym oknie."
+            "Program działa jako jedna instancja. Plik otwarty z menedżera plików pojawia się jako nowa karta w oknie aplikacji, która go obsługuje (plik PDF w PDF Organizer), a to okno zostaje przeniesione na wierzch."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "Zawsze pokazuj kartę Start: po wyłączeniu karta Start jest widoczna tylko wtedy, gdy aktywna jest sama strona Start. Ikona domu na pasku bocznym zawsze do niej prowadzi.",
                 "Oznaczenie karty może być ikoną aplikacji albo jednolitym kwadratem w jej kolorze."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Korzystanie z Pomocy",
           "body": [
-            "Zakres Pomocy zależy od miejsca, z którego ją otworzysz. W aplikacji zobaczysz tylko jej podręcznik i polecenia karty, z której przejdziesz do Pomocy. Na stronie Start lub w Ustawieniach dostępne są sekcja O programie (krótkie informacje o programie i aplikacjach) oraz podręcznik programu. Polecenie Pomoc → O programie zawsze otwiera tę sekcję.",
+            "Zakres Pomocy zależy od miejsca, z którego ją otworzysz. W aplikacji zobaczysz tylko jej podręcznik i polecenia karty, z której przejdziesz do Pomocy. W Ustawieniach dostępne są sekcja O programie (krótkie informacje o programie i aplikacjach) oraz podręcznik programu. Polecenie Pomoc → O programie zawsze otwiera tę sekcję.",
             "Spis treści znajduje się po lewej. Pole wyszukiwania nad nim przeszukuje tytuły i tekst wszystkich tematów.",
             "Pomoc otwiera się we własnej karcie, więc możesz przełączać się między nią a swoją pracą. Klawisz F1 ponownie wyświetla ją na pierwszym planie. Sekcja Polecenia z poprzedniej karty zawiera wszystkie menu aktywnej karty wraz z poleceniami, skrótami klawiszowymi i opisami. Otwórz Pomoc z karty, której dotyczy Twoje pytanie."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Nad czym pracujemy",
           "body": [
-            "Cztery obecne aplikacje będą nadal rozwijane. Zgłoszenia i prośby przesyłane przez Pomoc → Przekaż opinię pomagają nam ustalać priorytety. Przygotowujemy też nowe aplikacje. Strona Start pokazuje je tylko wtedy, gdy tego chcesz: zaznacz je w menu Widok strony Start, aby widzieć je tam jako Wkrótce:",
+            "Cztery obecne aplikacje będą nadal rozwijane. Zgłoszenia i prośby przesyłane przez Pomoc → Przekaż opinię pomagają nam ustalać priorytety. Przygotowujemy też nowe aplikacje. Lista aplikacji pokazuje je tylko wtedy, gdy tego chcesz: zaznacz je w menu Widok listy, aby widzieć je tam jako Wkrótce:",
             {
               "points": [
                 "Convert: konwertowanie plików między formatami, w tym dokumentów biurowych do PDF i z powrotem, bez instalowania dodatkowych programów. Nie znaleźliśmy jeszcze otwartej technologii zapewniającej oczekiwaną jakość, dlatego aplikacja pojawi się dopiero wtedy, gdy będzie spełniać nasze standardy. Tam, gdzie brakuje odpowiednich narzędzi, stworzymy je sami.",

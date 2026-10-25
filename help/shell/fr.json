@@ -17,7 +17,7 @@
                 "Dev réunit des outils pour les développeurs : encoder et décoder, formater et vérifier, convertir des données d’une forme à une autre."
               ]
             },
-            "Les applications partagent une même fenêtre, les mêmes paramètres et la même façon de travailler : ce que vous apprenez dans l’une vaut aussi dans les autres.",
+            "Chaque application s’ouvre dans une fenêtre à elle, avec son propre bouton dans la barre des tâches, et les applications partagent les mêmes paramètres et la même façon de travailler : ce que vous apprenez dans l’une vaut aussi dans les autres.",
             {
               "note": "Tout se passe sur votre ordinateur. Vos documents ne sont jamais envoyés nulle part, et rien n’est collecté sur vous ou sur votre travail."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "La barre latérale : la maison mène à l’Accueil, viennent ensuite vos applications et, en bas, les nouveautés du programme, Commentaires, Soutenir et Paramètres.",
-                "Dans une application, Fichier → Aller à l’accueil mène à la première page de cette application lorsqu’elle en a une (Units, Scribe), et Fichier → Ouvrir les paramètres (Ctrl+,) ouvre les paramètres à la section de cette application ; les autres sections sont à un clic.",
+                "La barre latérale : le logo Syntelab affiche la liste des applications, en dessous l’icône de l’application de cette fenêtre ramène à sa première page et, en bas, viennent les nouveautés du programme, Commentaires, Soutenir et Paramètres.",
+                "Fichier → Aller à l’accueil mène à la première page de l’application, et Fichier → Ouvrir les paramètres (Ctrl+,) ouvre les paramètres à la section de cette application ; les autres sections sont à un clic.",
                 "Les onglets en haut : chaque document, assembleur de documents ou outil que vous ouvrez a son propre onglet. Un point sur un onglet signale des modifications non enregistrées.",
                 "Les menus de l’application, sous les onglets : sous forme de barre de menus, de ruban ou de panneau latéral, selon votre choix.",
                 "Le reste de la fenêtre est occupé par l’onglet au premier plan."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Accueil",
+          "title": "Les applications et leurs fenêtres",
           "body": [
-            "L’Accueil affiche vos applications et les fichiers ouverts récemment. Cliquez sur une application pour l’ouvrir ; cliquez sur un fichier récent pour le rouvrir.",
+            "Cliquez sur le logo Syntelab en haut de la barre latérale pour voir les applications. Cliquez sur l’une d’elles pour l’ouvrir dans sa propre fenêtre ; si elle est déjà ouverte, sa fenêtre passe au premier plan : une application n’a donc jamais deux fenêtres. La recherche en haut de la liste trouve les applications, les outils et les commandes.",
             "Les applications peuvent s’afficher sous forme de cartes, d’icônes avec noms ou d’icônes seules, et être déplacées dans l’ordre de votre choix. Au clavier : Alt et les touches fléchées. « Rétablir les paramètres par défaut » rétablit l’ordre d’origine.",
-            "Chaque application a aussi son propre raccourci dans le menu Démarrer de Windows, par exemple « Syntelab PDF Organizer » ou « Syntelab Units » : il ouvre le programme directement dans cette application. Si le programme est déjà ouvert, l’application s’y ouvre dans un onglet."
+            "Chaque application a aussi son propre raccourci dans le menu Démarrer de Windows, dans le dossier « Syntelab Creative », et sa fenêtre peut être épinglée à la barre des tâches comme n’importe quel programme. Lancé sans application, le programme ouvre la dernière application utilisée."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Depuis une application : Fichier → Ouvrir, ou Ctrl+O.",
                 "En déposant des fichiers d’un dossier sur la fenêtre.",
-                "Depuis le gestionnaire de fichiers de votre système : double-cliquez sur un fichier que le programme est configuré pour ouvrir. Dans l’Explorateur de fichiers Windows, il y a aussi le menu contextuel (voir « Le menu contextuel de l’Explorateur de fichiers Windows »).",
-                "Depuis l’Accueil : la liste des fichiers récents."
+                "Depuis le gestionnaire de fichiers de votre système : double-cliquez sur un fichier que le programme est configuré pour ouvrir. Dans l’Explorateur de fichiers Windows, il y a aussi le menu contextuel (voir « Le menu contextuel de l’Explorateur de fichiers Windows »)."
               ]
             },
-            "Le programme ne s’exécute qu’en un seul exemplaire. Un fichier ouvert depuis le gestionnaire de fichiers pendant que le programme tourne s’ouvre dans un nouvel onglet de la même fenêtre."
+            "Le programme ne s’exécute qu’en un seul exemplaire. Un fichier ouvert depuis le gestionnaire de fichiers s’ouvre dans un nouvel onglet de la fenêtre de l’application qui le prend en charge (un PDF dans PDF Organizer), qui passe au premier plan."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "« Garder l’onglet Accueil parmi les onglets » : lorsque cette option est désactivée, l’onglet Accueil ne s’affiche que lorsque l’Accueil est au premier plan ; la maison de la barre latérale y ramène toujours.",
                 "La marque d’un onglet peut être l’icône de son application ou un simple carré de la couleur de l’application."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Utiliser cette aide",
           "body": [
-            "L’aide dépend de l’endroit d’où vous l’ouvrez. Depuis une application, vous ne voyez que le manuel de cette application et les commandes de l’onglet d’où vous venez. Depuis la page d’accueil ou depuis les paramètres, vous voyez « À propos » (le programme et chaque application, en bref) et le manuel du programme. Aide → À propos mène toujours à « À propos ».",
+            "L’aide dépend de l’endroit d’où vous l’ouvrez. Depuis une application, vous ne voyez que le manuel de cette application et les commandes de l’onglet d’où vous venez. Depuis les paramètres, vous voyez « À propos » (le programme et chaque application, en bref) et le manuel du programme. Aide → À propos mène toujours à « À propos ».",
             "Le sommaire est à gauche ; la recherche au-dessus parcourt tous les sujets, dans les titres et dans le texte.",
             "L’aide s’ouvre dans un onglet dédié, pour que vous puissiez passer de l’aide à votre travail et inversement ; F1 la ramène au premier plan. Sous « Commandes de l’onglet d’où vous venez », chaque menu de cet onglet est listé avec chacune de ses commandes, ses touches et ce qu’elle fait : ouvrez l’aide depuis l’onglet sur lequel vous avez une question."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Ce sur quoi nous travaillons",
           "body": [
-            "Les quatre applications vont continuer à grandir : ce que vous signalez et demandez via Aide → Commentaires décide en grande partie de ce qui vient en premier. À côté d’elles, de nouvelles applications sont en préparation. L’Accueil ne les affiche que si vous le souhaitez : cochez-les dans son menu « Affichage » pour les y voir avec la mention « Bientôt disponible » :",
+            "Les quatre applications vont continuer à grandir : ce que vous signalez et demandez via Aide → Commentaires décide en grande partie de ce qui vient en premier. À côté d’elles, de nouvelles applications sont en préparation. La liste des applications ne les affiche que si vous le souhaitez : cochez-les dans son menu « Affichage » pour les y voir avec la mention « Bientôt disponible » :",
             {
               "points": [
                 "Convert : convertir des fichiers d’un format à un autre, notamment des documents bureautiques en PDF et inversement, sans avoir besoin d’installer un autre programme. Nous n’avons pas encore trouvé de technologie ouverte qui atteigne la qualité que nous visons ; l’application n’arrivera donc que lorsqu’elle ne vous décevra pas. Là où les outils n’existent pas, nous les construirons.",

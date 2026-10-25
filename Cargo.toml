@@ -16,7 +16,7 @@ members = [
 ]
 
 [workspace.package]
-version = "1.0.0"
+version = "1.1.0"
 edition = "2021"
 license = "AGPL-3.0"
 
@@ -35,6 +35,22 @@ syntelab-platform = { path = "crates/syntelab-platform" }
 # several times slower, and its debug build links a different C runtime than
 # the rest of the program on Windows.
 [profile.dev.package.mupdf-sys]
+opt-level = 3
+
+# The pages of the viewer are written as PNG: unoptimized, a page at a large zoom takes seconds instead of a blink.
+[profile.dev.package.png]
+opt-level = 3
+
+[profile.dev.package.fdeflate]
+opt-level = 3
+
+[profile.dev.package.miniz_oxide]
+opt-level = 3
+
+[profile.dev.package.crc32fast]
+opt-level = 3
+
+[profile.dev.package.adler2]
 opt-level = 3
 
 # Making an RSA key is a search among large numbers: unoptimized, a key of 4096 bits takes minutes.

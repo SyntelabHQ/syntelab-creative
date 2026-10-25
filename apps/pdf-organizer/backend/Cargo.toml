@@ -24,6 +24,8 @@ mupdf = { version = "0.8", default-features = false, features = [
 ] }
 # Writes the smaller JPEGs of "Compress"; MuPDF reads JPEG but does not write it.
 jpeg-encoder = "0.6"
+# Loads PDFium (pdfium.dll), which draws the pages on screen; see src/engine/pdfium.rs.
+libloading = "0.8"
 serde = { workspace = true }
 # The fingerprints a time stamp is asked for (SHA-256).
 sha2 = "0.10"
@@ -35,7 +37,6 @@ syntelab-platform = { workspace = true }
 syntelab-net = { workspace = true }
 serde_json = { workspace = true }
 syntelab-app-api = { workspace = true }
-
-[dev-dependencies]
-# The tests look at the colors of drawn pages.
+# Writes the pictures of pages: MuPDF's own PNG writer packs them tighter, but takes about ten times as long, which
+# the viewer shows as a page left blurred after zooming.
 png = "0.17"

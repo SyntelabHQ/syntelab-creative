@@ -2,7 +2,7 @@
 
 use std::path::PathBuf;
 
-use crate::engine::{EngineError, PageSize, PdfFile, Rotation};
+use crate::engine::{EngineError, PageSize, PdfFile, Rotation, ScreenPages};
 
 use super::queue::Job;
 use super::worker::{Work, Worker};
@@ -25,13 +25,15 @@ impl Job for PageJob {
     }
 }
 
-struct DrawPages;
+struct DrawPages {
+    screen: ScreenPages,
+}
 
 impl Work for DrawPages {
     type Job = PageJob;
 
     fn run(&mut self, file: &PdfFile, job: PageJob) {
-        (job.reply)(file.render_png(job.page, job.scale, job.rotation).map_err(RenderError::Engine));
+        (job.reply)(self.screen.page_png(file, job.page, job.scale, job.rotation).map_err(RenderError::Engine));
     }
 }
 
@@ -43,7 +45,8 @@ pub struct PageRenderer {
 impl PageRenderer {
     /// Opens the document and measures every page.
     pub fn open(path: PathBuf) -> Result<(Self, Vec<PageSize>), EngineError> {
-        let (worker, sizes) = Worker::spawn("pdf-pages", path, MAX_WAITING_PAGES, DrawPages, |file| {
+        let work = DrawPages { screen: ScreenPages::new(path.clone()) };
+        let (worker, sizes) = Worker::spawn("pdf-pages", path, MAX_WAITING_PAGES, work, |file| {
             (0..file.page_count()).map(|index| file.page_size(index)).collect()
         })?;
         Ok((Self { worker }, sizes))

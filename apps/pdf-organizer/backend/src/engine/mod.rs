@@ -1,5 +1,5 @@
-//! The PDF engine. The only module that touches MuPDF: everything else in the
-//! backend goes through the types below, so the engine can be replaced without
+//! The PDF engine. The only module that touches MuPDF (and PDFium, which draws
+//! pages on screen): everything else in the backend goes through the types below, so the engine can be replaced without
 //! changing its users.
 //!
 //! A [`PdfFile`] is tied to the thread that opened it (MuPDF documents cannot
@@ -16,7 +16,9 @@ mod mupdf_file;
 mod ocr;
 mod other_files;
 mod page_change;
+mod pdfium;
 mod picture_pdf;
+mod screen;
 pub mod revocation;
 mod shrink;
 mod sign;
@@ -34,6 +36,7 @@ pub use mupdf_file::PdfFile;
 pub use ocr::{find_engine as find_ocr_engine, languages as ocr_languages, recognize, unturned, FoundWord};
 pub use other_files::{document_to_pdf, file_kind, text_to_pdf, FileKind};
 pub use picture_pdf::picture_to_pdf;
+pub use screen::ScreenPages;
 pub use shrink::PictureShrink;
 pub use sign::{add_validation_data, sign_file, signatures, FoundSignature, ShownSignature, SignatureRequest};
 pub use page_change::{
@@ -113,6 +116,24 @@ pub struct TextLine {
     pub font_name: String,
 }
 
+/// A rectangle of a page's picture, in pixels from its top-left corner: a piece drawn by itself.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub struct Tile {
+    pub x: u32,
+    pub y: u32,
+    pub width: u32,
+    pub height: u32,
+}
+
+impl Tile {
+    /// Reads `x,y,width,height`.
+    pub fn parse(text: &str) -> Option<Self> {
+        let mut numbers = text.split(',').map(|number| number.trim().parse::<u32>().ok());
+        let tile = Self { x: numbers.next()??, y: numbers.next()??, width: numbers.next()??, height: numbers.next()?? };
+        (numbers.next().is_none() && tile.width > 0 && tile.height > 0).then_some(tile)
+    }
+}
+
 /// How far a page is turned for viewing, clockwise. The file is not changed.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Rotation {
@@ -175,3 +196,16 @@ impl fmt::Display for EngineError {
 }
 
 impl std::error::Error for EngineError {}
+
+#[cfg(test)]
+mod tile_tests {
+    use super::Tile;
+
+    #[test]
+    fn reads_a_piece_of_a_page_from_its_numbers() {
+        assert_eq!(Tile::parse("0,512,512,256"), Some(Tile { x: 0, y: 512, width: 512, height: 256 }));
+        for wrong in ["", "1,2,3", "1,2,3,4,5", "1,2,0,4", "-1,2,3,4", "a,b,c,d"] {
+            assert_eq!(Tile::parse(wrong), None, "{wrong}");
+        }
+    }
+}

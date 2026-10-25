@@ -1,6 +1,6 @@
 //! Where on disk the files dropped on the window are. The page gets only their content; on
 //! Windows it hands them to WebView2 with `chrome.webview.postMessageWithAdditionalObjects`,
-//! which gives this side each file's path. The paths go back to the page as an event.
+//! which gives this side each file's path. The paths go back to that window's page as an event.
 //!
 //! The window's own drop handling (`dragDropEnabled`) stays off: on Windows it would stop
 //! the page's own drag and drop (pages, binder, apps) from working.
@@ -45,7 +45,8 @@ pub fn listen(window: &WebviewWindow) {
                         }
                     }
                 }
-                let _ = emitter.emit(EVENT, paths);
+                // Only the window they were dropped on.
+                let _ = emitter.emit_to(emitter.label(), EVENT, paths);
                 Ok(())
             }));
             let mut token = Default::default();

@@ -3,6 +3,7 @@
 | Script | Job |
 |---|---|
 | `generate-icons.mjs` | Rebuilds the program icons in `shell/src-tauri/icons/` from `assets/brand/icon.svg` |
+| `fetch-pdfium.mjs` | Puts PDFium (`pdfium.dll`, which draws PDF pages on screen) in `third-party/pdfium/`; runs by itself before `npm run dev` and `npm run build` |
 | `generate-test-pdfs.mjs` | Writes the test PDFs (small, 2500 pages, picture-heavy) to `tests/fixtures/generated/` |
 | `app-shortcut-icons.py` | The Start menu shortcut of each app: its icon and the installer lines (`installers/windows/README.md`) |
 | `build-release.ps1` | Builds the Windows installer signed for updates (`remote/README.md`) |

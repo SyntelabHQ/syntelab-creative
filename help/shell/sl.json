@@ -17,7 +17,7 @@
                 "Dev združuje orodja za razvijalce: kodiranje in dekodiranje, oblikovanje in preverjanje, pretvarjanje ene oblike podatkov v drugo."
               ]
             },
-            "Aplikacije si delijo isto okno, isti nabor nastavitev in isti način delovanja, zato je to, kar se naučite v eni, enako tudi v naslednji.",
+            "Vsaka aplikacija se odpre v svojem oknu, s svojim gumbom v opravilni vrstici, aplikacije pa si delijo isti nabor nastavitev in isti način delovanja, zato je to, kar se naučite v eni, enako tudi v naslednji.",
             {
               "note": "Vse se dogaja na vašem računalniku. Vaši dokumenti se nikoli nikamor ne pošiljajo in o vas ali vašem delu se ne zbira nič."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Vrstica ob strani: hišica vodi na Začetek, nato sledijo vaše aplikacije, na dnu pa novice programa, Povratne informacije, Podpora in Nastavitve.",
-                "V aplikaciji Datoteka → Pojdi na Začetek vodi na prvo stran te aplikacije, če jo ima (Units, Scribe), Datoteka → Odpri nastavitve (Ctrl+,) pa odpre Nastavitve pri delu te aplikacije; drugi deli so tam oddaljeni le en klik.",
+                "Vrstica ob strani: logotip Syntelab prikaže seznam aplikacij, pod njim ikona aplikacije tega okna vrne njeno prvo stran, na dnu pa so novice programa, Povratne informacije, Podpora in Nastavitve.",
+                "Datoteka → Pojdi na Začetek vodi na prvo stran aplikacije, Datoteka → Odpri nastavitve (Ctrl+,) pa odpre Nastavitve pri delu te aplikacije; drugi deli so tam oddaljeni le en klik.",
                 "Zavihki na vrhu: vsak dokument, zbirka ali orodje, ki ga odprete, ima svoj zavihek. Pika na zavihku pomeni, da ima neshranjene spremembe.",
                 "Meniji aplikacije pod zavihki: kot menijska vrstica, kot trak ali kot stranska plošča, kar ste pač izbrali.",
                 "Preostanek okna je zavihek v ospredju."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Začetek",
+          "title": "Aplikacije in njihova okna",
           "body": [
-            "Začetek prikazuje vaše aplikacije in nedavno odprte datoteke. Kliknite aplikacijo, da jo odprete; kliknite nedavno datoteko, da jo znova odprete.",
+            "Kliknite logotip Syntelab na vrhu stranske vrstice, da vidite aplikacije. Kliknite eno, da jo odprete v njenem oknu; če je že odprta, njeno okno pride v ospredje, zato aplikacija nikoli nima dveh oken. Iskanje na vrhu seznama najde aplikacije, orodja in ukaze.",
             "Aplikacije so lahko prikazane kot kartice, kot ikone z imeni ali samo kot ikone, in jih lahko povlečete v poljuben vrstni red. S tipkovnico: Alt in puščične tipke. \"Ponastavi na privzeto\" jih vrne na prvotno mesto.",
-            "Vsaka aplikacija ima tudi svojo bližnjico v meniju Start sistema Windows, na primer \"Syntelab PDF Organizer\" ali \"Syntelab Units\": ta odpre program neposredno v tej aplikaciji. Če je program že odprt, se aplikacija v njem odpre kot zavihek."
+            "Vsaka aplikacija ima tudi svojo bližnjico v meniju Start sistema Windows, v mapi \"Syntelab Creative\", njeno okno pa lahko pripnete v opravilno vrstico kot vsak program. Če program zaženete brez aplikacije, odpre aplikacijo, ki ste jo uporabljali nazadnje."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Iz aplikacije: Datoteka → Odpri ali Ctrl+O.",
                 "S spuščanjem datotek iz mape na okno.",
-                "Iz upravljalnika datotek vašega sistema: dvokliknite datoteko, ki jo program odpira. V Raziskovalcu Windows je na voljo tudi meni desnega klika (glejte \"Meni desnega klika v Raziskovalcu Windows\").",
-                "Z Začetka: seznam nedavnih datotek."
+                "Iz upravljalnika datotek vašega sistema: dvokliknite datoteko, ki jo program odpira. V Raziskovalcu Windows je na voljo tudi meni desnega klika (glejte \"Meni desnega klika v Raziskovalcu Windows\")."
               ]
             },
-            "Program teče kot ena sama kopija. Datoteka, odprta iz upravljalnika datotek, medtem ko program teče, se odpre kot nov zavihek v istem oknu."
+            "Program teče kot ena sama kopija. Datoteka, odprta iz upravljalnika datotek, se odpre kot nov zavihek v oknu aplikacije, ki jo sprejme (PDF v PDF Organizer), to okno pa pride v ospredje."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "\"Ohrani zavihek Začetek med zavihki\": ko je izklopljeno, je zavihek Začetek viden le, ko je sam Začetek v ospredju; hišica v stranski vrstici vedno vodi nazaj nanj.",
                 "Oznaka na zavihku je lahko ikona njegove aplikacije ali preprost kvadrat v barvi aplikacije."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Uporaba te Pomoči",
           "body": [
-            "Pomoč je odvisna od mesta, od koder jo odprete. Iz aplikacije vidite le priročnik te aplikacije in ukaze zavihka, iz katerega prihajate. Z začetne strani ali iz Nastavitev vidite \"O programu\" (na kratko o programu in vsaki aplikaciji) in priročnik programa. Pomoč → O programu vedno vodi do \"O programu\".",
+            "Pomoč je odvisna od mesta, od koder jo odprete. Iz aplikacije vidite le priročnik te aplikacije in ukaze zavihka, iz katerega prihajate. Iz Nastavitev vidite \"O programu\" (na kratko o programu in vsaki aplikaciji) in priročnik programa. Pomoč → O programu vedno vodi do \"O programu\".",
             "Vsebina je na levi; iskanje nad njo išče po vseh temah, v naslovih in v besedilu.",
             "Pomoč se odpre v lastnem zavihku, zato lahko preklapljate med njo in svojim delom; F1 jo znova prikaže v ospredju. Pod \"Ukazi zavihka, iz katerega prihajate\" je naveden vsak meni tega zavihka z vsemi ukazi, njihovimi tipkami in opisom, kaj naredijo: Pomoč odprite iz zavihka, o katerem imate vprašanje."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Na čem delamo",
           "body": [
-            "Štiri aplikacije bodo še rasle: kar sporočite in zahtevate prek Pomoč → Povratne informacije, v veliki meri odloča, kaj pride najprej. Poleg njih pripravljamo nove aplikacije. Začetek jih ne prikaže, razen če to želite: označite jih v njegovem meniju \"Pogled\", da jih boste tam videli kot \"Kmalu na voljo\":",
+            "Štiri aplikacije bodo še rasle: kar sporočite in zahtevate prek Pomoč → Povratne informacije, v veliki meri odloča, kaj pride najprej. Poleg njih pripravljamo nove aplikacije. Seznam aplikacij jih ne prikaže, razen če to želite: označite jih v njegovem meniju \"Pogled\", da jih boste tam videli kot \"Kmalu na voljo\":",
             {
               "points": [
                 "Convert: pretvarjanje datotek iz ene oblike v drugo, med drugim pisarniških dokumentov v PDF in nazaj, ne da bi bilo treba namestiti drug program. Odprte tehnologije, ki bi dosegla želeno kakovost, še nismo našli, zato bo prišla šele, ko vas ne bo razočarala; kjer orodja ne obstajajo, jih bomo izdelali sami.",

@@ -23,3 +23,10 @@ handling, so a write error at that moment (e.g. a full disk) ends the process. T
 mupdf-rs main branch fixes both (`mupdf_convert_to_pdf_internal` resets the pointers,
 and a new `mupdf_close_document_writer` catches close errors); when a release has
 them, go back to `convert_to_pdf` + `save`, or use the fallible close.
+
+## `pdfium/` (not in git)
+
+`pdfium.dll` (PDFium 156.0.8076, from the `pypdfium2` 5.14.0 package on PyPI) and the licenses of what is
+inside it. `tools/fetch-pdfium.mjs` puts them here before `npm run dev` and `npm run build`, checking the
+package against its SHA-256; the installer takes them from here. To move to another PDFium, change the
+version, the address and the SHA-256 at the top of that script.

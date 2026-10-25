@@ -17,7 +17,7 @@
                 "Dev samlar verktyg för utvecklare: koda och avkoda, formatera och kontrollera, omvandla en dataform till en annan."
               ]
             },
-            "Apparna delar ett fönster, en uppsättning inställningar och ett arbetssätt, så det du lär dig i en app är detsamma i nästa.",
+            "Varje app öppnas i ett eget fönster, med en egen knapp i aktivitetsfältet, och apparna delar en uppsättning inställningar och ett arbetssätt, så det du lär dig i en app är detsamma i nästa.",
             {
               "note": "Allt sker på din dator. Dina dokument skickas aldrig någonstans, och ingen information om dig eller ditt arbete samlas in."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Sidofältet: huset leder till Start, sedan kommer dina appar, och längst ner finns programnyheter, Feedback, Stöd och Inställningar.",
-                "I en app går Arkiv → Gå till Start till den första sidan i den appen om den har en (Units, Scribe), och Arkiv → Öppna inställningar (Ctrl+,) öppnar Inställningar för just den appen; övriga delar är bara ett klick bort därifrån.",
+                "Sidofältet: Syntelab-logotypen visar apparna, under den tar ikonen för det här fönstrets app tillbaka dess första sida, och längst ner finns programnyheter, Feedback, Stöd och Inställningar.",
+                "Arkiv → Gå till Start går till appens första sida, och Arkiv → Öppna inställningar (Ctrl+,) öppnar Inställningar för just den appen; övriga delar är bara ett klick bort därifrån.",
                 "Flikarna högst upp: varje dokument, pärm eller verktyg du öppnar har en egen flik. En punkt på en flik visar att det finns osparade ändringar.",
                 "Appens menyer, under flikarna: som en menyrad, som ett menyfliksområde eller som en panel på sidan, beroende på vad du har valt.",
                 "Resten av fönstret är den aktiva fliken."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Start",
+          "title": "Apparna och deras fönster",
           "body": [
-            "Start visar dina appar och de filer du öppnat nyligen. Klicka på en app för att öppna den; klicka på en nyligen använd fil för att öppna den igen.",
+            "Klicka på Syntelab-logotypen högst upp i sidofältet för att se apparna. Klicka på en för att öppna den i ett eget fönster; om den redan är öppen kommer dess fönster fram, så en app har aldrig två fönster. Sökningen högst upp i listan hittar appar, verktyg och kommandon.",
             "Apparna kan visas som kort, som ikoner med namn eller som enbart ikoner, och kan dras till den ordning du önskar. Med tangentbordet: Alt och piltangenterna. \"Återställ till standard\" återställer dem.",
-            "Varje app har också sin egen genväg i Windows startmeny, till exempel \"Syntelab PDF Organizer\" eller \"Syntelab Units\": den öppnar programmet direkt i den appen. Om programmet redan är öppet öppnas appen som en flik i det."
+            "Varje app har också sin egen genväg i Windows startmeny, i mappen \"Syntelab Creative\", och dess fönster kan fästas i aktivitetsfältet som vilket program som helst. Startas programmet utan en app öppnas den app du använde senast."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Från en app: Arkiv → Öppna, eller Ctrl+O.",
                 "Genom att dra filer från en mapp till fönstret.",
-                "Från systemets filhanterare: dubbelklicka på en fil som programmet är inställt på att öppna. I Utforskaren i Windows finns även högerklicksmenyn (se \"Högerklicksmenyn i Utforskaren i Windows\").",
-                "Från Start: listan över senaste filer."
+                "Från systemets filhanterare: dubbelklicka på en fil som programmet är inställt på att öppna. I Utforskaren i Windows finns även högerklicksmenyn (se \"Högerklicksmenyn i Utforskaren i Windows\")."
               ]
             },
-            "Programmet körs som en enda instans. En fil som öppnas från filhanteraren medan programmet körs öppnas som en ny flik i samma fönster."
+            "Programmet körs som en enda instans. En fil som öppnas från filhanteraren öppnas som en ny flik i fönstret för den app som tar emot den (en PDF i PDF Organizer), och det fönstret kommer fram."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "\"Behåll Start-fliken bland flikarna\": när detta är avstängt visas Start-fliken endast när Start självt är i förgrunden; huset i sidofältet leder alltid tillbaka till den.",
                 "Markeringen på en flik kan vara appens ikon eller en enkel kvadrat i appens färg."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Använda denna hjälp",
           "body": [
-            "Hjälpen är kopplad till var du öppnar den ifrån. Från en app ser du endast manualen för den appen och kommandona för den flik du kom ifrån. Från startsidan eller från Inställningar ser du \"Om\" (programmet och varje app i korthet) och programmets manual. Hjälp → Om leder alltid till \"Om\".",
+            "Hjälpen är kopplad till var du öppnar den ifrån. Från en app ser du endast manualen för den appen och kommandona för den flik du kom ifrån. Från Inställningar ser du \"Om\" (programmet och varje app i korthet) och programmets manual. Hjälp → Om leder alltid till \"Om\".",
             "Innehållet finns till vänster; sökningen ovanför letar igenom varje ämne, i både titlar och text.",
             "Hjälpen öppnas i en egen flik, så att du kan växla mellan den och ditt arbete; F1 för den till förgrunden igen. Under \"Kommandon för fliken du kom ifrån\" listas varje meny i den fliken med alla dess kommandon, kortkommandon och vad de gör: öppna Hjälpen från den flik som du har en fråga om."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Vad vi arbetar med",
           "body": [
-            "De fyra apparna kommer att fortsätta växa: vad du rapporterar och efterfrågar via Hjälp → Feedback avgör mycket av vad som prioriteras. Utöver dessa förbereds nya appar. Start visar dem inte om du inte vill: markera dem i menyn \"Visa\" på Start för att se dem där som \"Kommer snart\":",
+            "De fyra apparna kommer att fortsätta växa: vad du rapporterar och efterfrågar via Hjälp → Feedback avgör mycket av vad som prioriteras. Utöver dessa förbereds nya appar. Listan över appar visar dem inte om du inte vill: markera dem i dess meny \"Visa\" för att se dem där som \"Kommer snart\":",
             {
               "points": [
                 "Convert: konvertering av filer från ett format till ett annat, bland annat kontorsdokument till PDF och vice versa, utan att ett annat program behöver installeras. Vi har ännu inte hittat en öppen teknik som når den kvalitet vi önskar, så den kommer först när den inte besviker dig; där verktygen saknas kommer vi att bygga dem.",

@@ -17,7 +17,7 @@
                 "O Dev reúne ferramentas para programadores: codificar e descodificar, formatar e validar, e converter dados entre formatos."
               ]
             },
-            "As aplicações partilham a mesma janela, as mesmas definições e a mesma forma de trabalhar. Assim, o que aprendes numa aplica-se às restantes.",
+            "Cada aplicação abre numa janela própria, com o seu próprio botão na barra de tarefas, e as aplicações partilham as mesmas definições e a mesma forma de trabalhar. Assim, o que aprendes numa aplica-se às restantes.",
             {
               "note": "Tudo acontece no teu computador. Os teus documentos nunca são enviados para lado nenhum e não são recolhidos dados sobre ti nem sobre o teu trabalho."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "A barra lateral: o ícone da casa abre o Início, seguem-se as tuas aplicações e, no fundo, as notícias do programa, Comentários, Apoiar e Definições.",
-                "Numa aplicação, Ficheiro → Ir para o início abre a página inicial dessa aplicação, quando existe (Units, Scribe). Ficheiro → Abrir definições (Ctrl+,) abre as Definições na secção dessa aplicação; as restantes secções ficam a um clique.",
+                "A barra lateral: o logótipo Syntelab mostra a lista de aplicações, por baixo o ícone da aplicação desta janela volta à sua primeira página e, no fundo, as notícias do programa, Comentários, Apoiar e Definições.",
+                "Ficheiro → Ir para o início abre a página inicial da aplicação. Ficheiro → Abrir definições (Ctrl+,) abre as Definições na secção dessa aplicação; as restantes secções ficam a um clique.",
                 "Os separadores no topo: cada documento, conjunto de documentos ou ferramenta que abrires tem o seu próprio separador. Um ponto no separador indica que há alterações por guardar.",
                 "Os menus da aplicação, por baixo dos separadores: podem aparecer numa barra de menus, num friso ou num painel lateral, conforme escolheres.",
                 "O resto da janela corresponde ao separador que está em primeiro plano."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Início",
+          "title": "As aplicações e as suas janelas",
           "body": [
-            "O Início apresenta as tuas aplicações e os ficheiros abertos recentemente. Clica numa aplicação para a abrir ou num ficheiro recente para o voltar a abrir.",
+            "Clica no logótipo Syntelab no topo da barra lateral para ver as aplicações. Clica numa para a abrir numa janela própria; se já estiver aberta, a sua janela passa para a frente, por isso uma aplicação nunca tem duas janelas. A pesquisa no topo da lista encontra aplicações, ferramentas e comandos.",
             "Podes apresentar as aplicações em cartões, como ícones com nomes ou apenas como ícones, e arrastá-las para as ordenar como preferires. Com o teclado, usa Alt e as teclas de seta. «Repor predefinições» restaura a ordem original.",
-            "Cada aplicação também tem o seu próprio atalho no menu Iniciar do Windows, como «Syntelab PDF Organizer» ou «Syntelab Units»: abre o programa diretamente nessa aplicação. Se o programa já estiver aberto, a aplicação abre num novo separador."
+            "Cada aplicação também tem o seu próprio atalho no menu Iniciar do Windows, na pasta «Syntelab Creative», e a sua janela pode ser afixada na barra de tarefas como qualquer programa. Quando é iniciado sem uma aplicação, o programa abre a última aplicação que usaste."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Numa aplicação: Ficheiro → Abrir ou Ctrl+O.",
                 "Arrastando ficheiros de uma pasta para a janela.",
-                "No gestor de ficheiros do sistema: faz duplo clique num ficheiro associado ao programa. No Explorador de Ficheiros do Windows, também podes usar o menu de contexto (ver «O menu de contexto do Explorador de Ficheiros do Windows»).",
-                "A partir do Início: a lista de ficheiros recentes."
+                "No gestor de ficheiros do sistema: faz duplo clique num ficheiro associado ao programa. No Explorador de Ficheiros do Windows, também podes usar o menu de contexto (ver «O menu de contexto do Explorador de Ficheiros do Windows»)."
               ]
             },
-            "O programa funciona numa única instância. Se abrires um ficheiro no gestor de ficheiros enquanto o programa está em execução, este é aberto num novo separador da mesma janela."
+            "O programa funciona numa única instância. Um ficheiro aberto no gestor de ficheiros abre num novo separador na janela da aplicação que o trata (um PDF no PDF Organizer), que passa para a frente."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "«Manter o separador Início entre os separadores»: quando está desativado, o separador Início só aparece enquanto o próprio Início está em primeiro plano; o ícone da casa na barra lateral permite sempre voltar ao Início.",
                 "O indicador de um separador pode ser o ícone da aplicação ou um quadrado simples com a cor da aplicação."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Utilizar esta Ajuda",
           "body": [
-            "A Ajuda depende do local a partir do qual a abres. Numa aplicação, vês apenas o manual dessa aplicação e os comandos do separador de onde vieste. Na página inicial ou nas Definições, vês «Acerca de» (uma breve apresentação do programa e de cada aplicação) e o manual do programa. Ajuda → Acerca de abre sempre a secção «Acerca de».",
+            "A Ajuda depende do local a partir do qual a abres. Numa aplicação, vês apenas o manual dessa aplicação e os comandos do separador de onde vieste. Nas Definições, vês «Acerca de» (uma breve apresentação do programa e de cada aplicação) e o manual do programa. Ajuda → Acerca de abre sempre a secção «Acerca de».",
             "O índice encontra-se à esquerda; a pesquisa acima procura em todos os tópicos, nos títulos e no texto.",
             "A Ajuda abre num separador próprio, para poderes alternar entre ela e o teu trabalho; F1 volta a trazê-la para a frente. Em «Comandos do separador de origem», cada menu desse separador é apresentado com os respetivos comandos, atalhos e descrições: abre a Ajuda no separador sobre o qual tens dúvidas."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Em que estamos a trabalhar",
           "body": [
-            "As quatro aplicações continuarão a evoluir: os problemas e pedidos enviados através de Ajuda → Comentários ajudam a decidir o que fazer primeiro. Também estamos a preparar novas aplicações. O Início só as mostra se quiser: assinale-as no menu «Ver» do Início para as ver aí como «Em breve»:",
+            "As quatro aplicações continuarão a evoluir: os problemas e pedidos enviados através de Ajuda → Comentários ajudam a decidir o que fazer primeiro. Também estamos a preparar novas aplicações. A lista de aplicações só as mostra se quiser: assinale-as no menu «Ver» da lista para as ver aí como «Em breve»:",
             {
               "points": [
                 "Convert: conversão de ficheiros entre formatos, incluindo documentos de escritório para PDF e vice-versa, sem precisar de instalar outro programa. Ainda não encontrámos uma tecnologia aberta com a qualidade que pretendemos, por isso só será lançada quando estiver à altura das tuas expectativas; onde não existirem ferramentas adequadas, iremos criá-las.",

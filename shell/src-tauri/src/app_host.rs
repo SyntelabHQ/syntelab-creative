@@ -77,7 +77,14 @@ pub fn app_invoke(
     command: String,
     payload: Option<Value>,
 ) -> Result<Value, InvokeError> {
-    Ok(host.app(&app_id)?.invoke(&command, payload.unwrap_or(Value::Null))?)
+    let answer = host.app(&app_id)?.invoke(&command, payload.unwrap_or(Value::Null));
+    // While developing, what went wrong shows on the console: the interface only says that something did.
+    if cfg!(debug_assertions) {
+        if let Err(error) = &answer {
+            eprintln!("[{app_id}] {command} failed: {error:?}");
+        }
+    }
+    Ok(answer?)
 }
 
 /// Answers a `syntelab-app://` request. Returns at once; the app replies from

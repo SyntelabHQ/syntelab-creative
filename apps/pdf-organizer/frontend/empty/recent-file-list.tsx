@@ -2,7 +2,7 @@ import { useI18n } from '@syntelab/i18n';
 import { fileName, folderOf } from '@syntelab/shell-api';
 import type { AppHost } from '@syntelab/shell-api';
 import { Button, Icon } from '@syntelab/ui-kit';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { clearRecentFiles, loadRecentFiles } from '../document/recent-files';
 import styles from './recent-file-list.module.css';
 
@@ -15,6 +15,11 @@ export interface RecentFileListProps {
 export function RecentFileList({ host, onOpen }: RecentFileListProps) {
   const { t, language } = useI18n();
   const [files, setFiles] = useState(() => loadRecentFiles(host));
+  // Files opened in other tabs meanwhile: the list is read again each time this tab comes to the front.
+  const { active } = host;
+  useEffect(() => {
+    if (active) setFiles(loadRecentFiles(host));
+  }, [active, host]);
   const dateFormat = useMemo(
     () => new Intl.DateTimeFormat(language, { dateStyle: 'medium', timeStyle: 'short' }),
     [language],

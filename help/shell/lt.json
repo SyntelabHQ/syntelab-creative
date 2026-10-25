@@ -17,7 +17,7 @@
                 "Dev sujungia įrankius programuotojams: kodavimas ir dekodavimas, formatavimas ir tikrinimas, vienos duomenų formos pavertimas kita."
               ]
             },
-            "Programėlės turi bendrą langą, bendrus nustatymus ir vienodą darbo būdą, todėl tai, ką išmokstate vienoje, galioja ir kitoje.",
+            "Kiekviena programėlė atsidaro savo lange, su savo mygtuku užduočių juostoje, o programėlės turi bendrus nustatymus ir vienodą darbo būdą, todėl tai, ką išmokstate vienoje, galioja ir kitoje.",
             {
               "note": "Viskas vyksta jūsų kompiuteryje. Jūsų dokumentai niekada niekur nesiunčiami, ir apie jus ar jūsų darbą nerenkama jokia informacija."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Šoninė juosta: namelis veda į Pradžią, toliau eina jūsų programėlės, o apačioje – programos naujienos, Atsiliepimai, Parama ir Nustatymai.",
-                "Programėlėje Failas → Eiti į Pradžią veda į pirmąjį tos programėlės puslapį, jei toks yra (Units, Scribe), o Failas → Atidaryti nustatymus (Ctrl+,) atidaro Nustatymus tos programėlės skiltyje; kitos skiltys ten pasiekiamos vienu spustelėjimu.",
+                "Šoninė juosta: Syntelab logotipas parodo programėlių sąrašą, po juo šio lango programėlės piktograma grąžina į jos pirmąjį puslapį, o apačioje – programos naujienos, Atsiliepimai, Parama ir Nustatymai.",
+                "Failas → Eiti į Pradžią veda į pirmąjį programėlės puslapį, o Failas → Atidaryti nustatymus (Ctrl+,) atidaro Nustatymus tos programėlės skiltyje; kitos skiltys ten pasiekiamos vienu spustelėjimu.",
                 "Kortelės viršuje: kiekvienas atidarytas dokumentas, rinkinys ar įrankis turi savo kortelę. Taškas kortelėje rodo, kad joje yra neišsaugotų pakeitimų.",
                 "Programėlės meniu po kortelėmis: kaip meniu juosta, kaip juostelė arba kaip šoninis skydelis – kaip pasirinkote.",
                 "Likusi lango dalis yra priekyje esanti kortelė."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Pradžia",
+          "title": "Programėlės ir jų langai",
           "body": [
-            "Pradžioje rodomos jūsų programėlės ir neseniai atidaryti failai. Spustelėkite programėlę, kad ją atidarytumėte; spustelėkite neseniai naudotą failą, kad vėl jį atidarytumėte.",
+            "Spustelėkite Syntelab logotipą šoninės juostos viršuje, kad pamatytumėte programėles. Spustelėkite vieną, kad ją atidarytumėte atskirame lange; jei ji jau atidaryta, jos langas iškeliamas į priekį, todėl programėlė niekada neturi dviejų langų. Paieška sąrašo viršuje randa programėles, įrankius ir komandas.",
             "Programėles galima rodyti kaip korteles, kaip piktogramas su pavadinimais arba tik kaip piktogramas, ir vilkti norima tvarka. Klaviatūra: Alt ir rodyklių klavišai. „Atkurti numatytuosius“ grąžina jas į vietas.",
-            "Kiekviena programėlė taip pat turi savo nuorodą „Windows“ meniu Pradžia, pavyzdžiui, „Syntelab PDF Organizer“ arba „Syntelab Units“: ji atidaro programą iškart toje programėlėje. Jei programa jau atidaryta, programėlė joje atsidaro kaip kortelė."
+            "Kiekviena programėlė taip pat turi savo nuorodą „Windows“ meniu Pradžia, aplanke „Syntelab Creative“, o jos langą galima prisegti prie užduočių juostos kaip bet kurią programą. Paleista be programėlės, programa atidaro paskutinę naudotą programėlę."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Iš programėlės: Failas → Atidaryti arba Ctrl+O.",
                 "Nutempiant failus iš aplanko ant lango.",
-                "Iš sistemos failų tvarkyklės: dukart spustelėkite failą, kurį atidaryti nustatyta programa. Windows failų naršyklėje taip pat yra dešiniojo spustelėjimo meniu (žr. „Windows failų naršyklės dešiniojo spustelėjimo meniu“).",
-                "Iš Pradžios: neseniai naudotų failų sąrašas."
+                "Iš sistemos failų tvarkyklės: dukart spustelėkite failą, kurį atidaryti nustatyta programa. Windows failų naršyklėje taip pat yra dešiniojo spustelėjimo meniu (žr. „Windows failų naršyklės dešiniojo spustelėjimo meniu“)."
               ]
             },
-            "Programa veikia kaip viena kopija. Failas, atidarytas iš failų tvarkyklės, kai programa veikia, atsidaro kaip nauja kortelė tame pačiame lange."
+            "Programa veikia kaip viena kopija. Failas, atidarytas iš failų tvarkyklės, atsidaro kaip nauja kortelė jį apdorojančios programėlės lange (PDF – programėlėje PDF Organizer), ir tas langas iškeliamas į priekį."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "„Laikyti kortelę „Pradžia“ tarp kortelių“: kai išjungta, kortelė „Pradžia“ rodoma tik tada, kai pati Pradžia yra priekyje; namelis šoninėje juostoje visada veda atgal į ją.",
                 "Kortelės ženklas gali būti jos programėlės piktograma arba paprastas programėlės spalvos kvadratas."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Kaip naudotis šia Pagalba",
           "body": [
-            "Pagalba priklauso nuo to, iš kur ją atidarote. Iš programėlės matote tik tos programėlės vadovą ir kortelės, iš kurios atėjote, komandas. Iš pradžios puslapio arba Nustatymų matote „Apie“ (trumpai apie programą ir kiekvieną programėlę) ir programos vadovą. Pagalba → Apie visada veda į „Apie“.",
+            "Pagalba priklauso nuo to, iš kur ją atidarote. Iš programėlės matote tik tos programėlės vadovą ir kortelės, iš kurios atėjote, komandas. Iš Nustatymų matote „Apie“ (trumpai apie programą ir kiekvieną programėlę) ir programos vadovą. Pagalba → Apie visada veda į „Apie“.",
             "Turinys yra kairėje; paieška virš jo ieško visose temose – pavadinimuose ir tekste.",
             "Pagalba atsidaro atskiroje kortelėje, todėl galite pereiti tarp jos ir savo darbo; F1 vėl iškelia ją į priekį. Skiltyje „Kortelės, iš kurios atėjote, komandos“ išvardytas kiekvienas tos kortelės meniu su visomis jo komandomis, jų klavišais ir paaiškinimu, ką jos daro: atidarykite Pagalbą iš tos kortelės, dėl kurios turite klausimą."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Prie ko dirbame",
           "body": [
-            "Keturios programėlės toliau augs: tai, ką pranešate ir ko prašote per Pagalba → Atsiliepimai, daug lemia, kas bus pirmiausia. Šalia jų ruošiamos naujos programėlės. Pradžia jų nerodo, nebent norite: pažymėkite jas jos meniu „Rodinys“, kad matytumėte jas ten kaip „Netrukus“:",
+            "Keturios programėlės toliau augs: tai, ką pranešate ir ko prašote per Pagalba → Atsiliepimai, daug lemia, kas bus pirmiausia. Šalia jų ruošiamos naujos programėlės. Programėlių sąrašas jų nerodo, nebent norite: pažymėkite jas jo meniu „Rodinys“, kad matytumėte jas ten kaip „Netrukus“:",
             {
               "points": [
                 "Convert: failų konvertavimas iš vieno formato į kitą, tarp jų biuro dokumentų į PDF ir atgal, nereikalaujant įdiegti kitos programos. Dar neradome atviros technologijos, kuri pasiektų norimą kokybę, todėl ji atsiras tik tada, kai jūsų nenuvils; kur įrankių nėra, juos sukursime.",

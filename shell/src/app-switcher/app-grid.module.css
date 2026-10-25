@@ -250,3 +250,8 @@ button.item:hover .open {
   color: var(--sc-muted);
   font-size: 12px;
 }
+
+/* The app of this window. */
+.item[aria-current='true'] {
+  box-shadow: 0 0 0 2px var(--sc-brand);
+}

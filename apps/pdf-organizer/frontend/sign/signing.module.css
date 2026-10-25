@@ -1,12 +1,15 @@
-/* The certificates to choose from, one to a row. */
+/* The certificates to choose from, one to a row, in a framed box that scrolls when there are many. */
 .certificates {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  max-height: 220px;
+  max-height: 236px;
   margin: 0;
-  padding: 0;
+  padding: 6px;
   overflow-y: auto;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-bg);
   list-style: none;
 }
 

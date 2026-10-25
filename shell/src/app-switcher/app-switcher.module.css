@@ -1,0 +1,60 @@
+.switcher {
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--sc-radius-m);
+  background: none;
+  cursor: pointer;
+}
+
+.logo:hover,
+.logo[aria-expanded='true'] {
+  background: var(--sc-surface-2);
+}
+
+/* Beside the bar, over the window's content. */
+.panel {
+  position: fixed;
+  z-index: 100;
+  inset-block-start: 8px;
+  inset-inline-start: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: min(820px, calc(100vw - 88px));
+  max-height: calc(100vh - 16px);
+  padding: 20px 24px;
+  overflow: auto;
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius-l);
+  background: var(--sc-bg);
+  box-shadow: 0 12px 40px rgb(0 0 0 / 25%);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+}
+
+.title {
+  flex: 1 1 160px;
+  min-width: 0;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}

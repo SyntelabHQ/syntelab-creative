@@ -66,7 +66,10 @@ def hooks(apps: list) -> str:
         f'; A shortcut in the Start menu for each app, in the folder "{FOLDER}": it opens Syntelab Creative right in that app\n'
         '; (--app <app id>). The names of versions up to 1.0.0 ("Syntelab <app>", outside the folder) are taken away.\n\n'
         '!macro NSIS_HOOK_POSTINSTALL\n'
-        f'  CreateDirectory "{folder}"\n' + '\n'.join(make) + '\n!macroend\n\n'
+        f'  CreateDirectory "{folder}"\n' + '\n'.join(make) + '\n'
+        # The shortcuts get the ids of the app windows before anyone can pin one (the program does it, and exits).
+        '  ExecWait \'"$INSTDIR\\${MAINBINARYNAME}.exe" --tag-shortcuts\'\n'
+        '!macroend\n\n'
         '!macro NSIS_HOOK_PREUNINSTALL\n' + '\n'.join(remove) + f'\n  RMDir "{folder}"\n' + DEFAULT_APP + '!macroend\n'
     )
 

@@ -9,15 +9,16 @@ use std::sync::{Arc, Mutex, MutexGuard};
 use std::thread;
 use std::time::{Duration, Instant};
 
-use crate::engine::{EngineError, PageSize, Rotation};
+use crate::engine::{EngineError, PageSize, Rotation, Tile};
 use crate::render::pages::PageRenderer;
 use crate::render::thumbnails::{ThumbnailCache, Thumbnails};
+use crate::render::tiles::TileRenderer;
 use crate::render::search::{PageHits, TextSearch};
 use crate::render::{RenderError, RenderReply};
 
 /// One open PDF. The file is held open by two threads: one draws the pages
 /// the interface asks for, the other fills in thumbnails in the background.
-/// A third one, for finding text, starts with the first search.
+/// Others start when first needed: one for finding text, one for pieces of pages zoomed far in.
 pub struct OpenDocument {
     pub path: PathBuf,
     /// The name to show: of the file itself or, for a picture turned into a
@@ -27,6 +28,7 @@ pub struct OpenDocument {
     pages: PageRenderer,
     thumbnails: Thumbnails,
     search: Mutex<Option<TextSearch>>,
+    tiles: Mutex<Option<TileRenderer>>,
     /// Declared last, so it is let go of last: by then no thread reads the file.
     _temporary: Option<TemporaryFile>,
 }
@@ -68,6 +70,7 @@ impl OpenDocument {
             pages,
             thumbnails,
             search: Mutex::new(None),
+            tiles: Mutex::new(None),
             _temporary: temporary,
         })
     }
@@ -75,6 +78,20 @@ impl OpenDocument {
     /// `scale` 1.0 means 72 pixels per inch.
     pub fn render_page(&self, page: usize, scale: f32, rotation: Rotation, reply: RenderReply) {
         self.pages.render(page, scale, rotation, reply);
+    }
+
+    /// A piece of a page: see [`crate::engine::PdfFile::render_tile_png`].
+    pub fn render_tile(&self, page: usize, scale: f32, rotation: Rotation, tile: Tile, reply: RenderReply) {
+        let mut tiles = self.tiles.lock().unwrap_or_else(|poisoned| poisoned.into_inner());
+        if tiles.is_none() {
+            match TileRenderer::open(self.path.clone()) {
+                Ok(renderer) => *tiles = Some(renderer),
+                Err(error) => return reply(Err(RenderError::Engine(error))),
+            }
+        }
+        if let Some(tiles) = tiles.as_ref() {
+            tiles.render(page, scale, rotation, tile, reply);
+        }
     }
 
     pub fn thumbnail(&self, page: usize, reply: RenderReply) {

@@ -17,7 +17,7 @@
                 "Dev koondab tööriistad arendajatele: kodeerimine ja dekodeerimine, vormindamine ja kontrollimine, andmete teisendamine ühest vormist teise."
               ]
             },
-            "Rakendustel on ühine aken, ühised seaded ja ühine töötamise viis, nii et mida ühes õpite, kehtib ka järgmises.",
+            "Iga rakendus avaneb oma aknas, oma nupuga tegumiribal, ja rakendustel on ühised seaded ja ühine töötamise viis, nii et mida ühes õpite, kehtib ka järgmises.",
             {
               "note": "Kõik toimub teie arvutis. Teie dokumente ei saadeta kunagi kuhugi ning teie ega teie töö kohta ei koguta midagi."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Külgriba: maja viib Algusesse, siis tulevad teie rakendused ja all programmi uudised, Tagasiside, Toetus ja Seaded.",
-                "Rakenduses viib Fail → Mine algusesse selle rakenduse esimesele lehele, kui see on olemas (Units, Scribe), ja Fail → Ava seaded (Ctrl+,) avab Seaded selle rakenduse jaotises; teised jaotised on sealt ühe klõpsu kaugusel.",
+                "Külgriba: Syntelabi logo näitab rakenduste loendit, selle all toob selle akna rakenduse ikoon tagasi rakenduse esimese lehe ja all on programmi uudised, Tagasiside, Toetus ja Seaded.",
+                "Fail → Mine algusesse viib rakenduse esimesele lehele ja Fail → Ava seaded (Ctrl+,) avab Seaded selle rakenduse jaotises; teised jaotised on sealt ühe klõpsu kaugusel.",
                 "Sakid üleval: igal avatud dokumendil, kogumikul või tööriistal on oma sakk. Täpp sakil näitab, et selles on salvestamata muudatusi.",
                 "Rakenduse menüüd sakkide all: menüüribana, lindina või külgpaneelina, olenevalt teie valikust.",
                 "Ülejäänud aken on esiplaanil olev sakk."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Algus",
+          "title": "Rakendused ja nende aknad",
           "body": [
-            "Algus näitab teie rakendusi ja hiljuti avatud faile. Klõpsake rakendusel, et see avada; klõpsake hiljutisel failil, et see uuesti avada.",
+            "Rakenduste nägemiseks klõpsake külgriba ülaosas Syntelabi logol. Klõpsake rakendusel, et see oma aknas avada; kui see on juba avatud, tuleb selle aken esiplaanile, nii et rakendusel pole kunagi kahte akent. Loendi ülaosas olev otsing leiab rakendusi, tööriistu ja käske.",
             "Rakendusi saab kuvada kaartidena, nimedega ikoonidena või ainult ikoonidena ning lohistada soovitud järjekorda. Klaviatuuriga: Alt ja nooleklahvid. „Taasta vaikesätted“ paneb need tagasi.",
-            "Igal rakendusel on ka oma otsetee Windowsi menüüs Start, näiteks „Syntelab PDF Organizer“ või „Syntelab Units“: see avab programmi kohe selles rakenduses. Kui programm on juba avatud, avaneb rakendus selles sakina."
+            "Igal rakendusel on ka oma otsetee Windowsi menüüs Start, kaustas „Syntelab Creative“, ja selle akna saab kinnitada tegumiribale nagu iga programmi. Kui programm käivitatakse ilma rakenduseta, avab see viimati kasutatud rakenduse."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Rakendusest: Fail → Ava või Ctrl+O.",
                 "Lohistades failid kaustast aknale.",
-                "Süsteemi failihaldurist: topeltklõpsake faili, mille avamiseks programm on määratud. Windowsi failihalduris on ka paremklõpsumenüü (vt „Windowsi failihalduri paremklõpsumenüü“).",
-                "Algusest: hiljutiste failide loend."
+                "Süsteemi failihaldurist: topeltklõpsake faili, mille avamiseks programm on määratud. Windowsi failihalduris on ka paremklõpsumenüü (vt „Windowsi failihalduri paremklõpsumenüü“)."
               ]
             },
-            "Programm töötab ühe eksemplarina. Fail, mis avatakse failihaldurist ajal, kui programm töötab, avaneb samas aknas uue sakina."
+            "Programm töötab ühe eksemplarina. Failihaldurist avatud fail avaneb uue sakina selle rakenduse aknas, mis seda käsitleb (PDF rakenduses PDF Organizer), ja see aken tuleb esiplaanile."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "„Hoia Algus-sakk sakkide hulgas“: kui see on väljas, on Algus-sakk nähtav ainult siis, kui Algus ise on esiplaanil; külgriba maja viib alati selle juurde tagasi.",
                 "Saki märk võib olla selle rakenduse ikoon või lihtne ruut rakenduse värvis."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Selle Abi kasutamine",
           "body": [
-            "Abi sõltub sellest, kust selle avate. Rakendusest näete ainult selle rakenduse kasutusjuhendit ja selle saki käske, millelt tulite. Avalehelt või seadetest näete jaotist „Programmi kohta“ (lühidalt programmist ja igast rakendusest) ning programmi kasutusjuhendit. Abi → Programmi kohta viib alati jaotisse „Programmi kohta“.",
+            "Abi sõltub sellest, kust selle avate. Rakendusest näete ainult selle rakenduse kasutusjuhendit ja selle saki käske, millelt tulite. Seadetest näete jaotist „Programmi kohta“ (lühidalt programmist ja igast rakendusest) ning programmi kasutusjuhendit. Abi → Programmi kohta viib alati jaotisse „Programmi kohta“.",
             "Sisukord on vasakul; selle kohal olev otsing otsib läbi kõik teemad, nii pealkirjadest kui ka tekstist.",
             "Abi avaneb eraldi sakis, nii et saate selle ja oma töö vahel edasi-tagasi liikuda; F1 toob selle uuesti esiplaanile. Jaotises „Saki käsud, millelt tulite“ on loetletud selle saki iga menüü koos kõigi käskude, nende klahvide ja selgitusega, mida need teevad: avage Abi sellelt sakilt, mille kohta teil on küsimus."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Mille kallal töötame",
           "body": [
-            "Neli rakendust kasvavad edasi: see, millest teatate ja mida palute menüü Abi → Tagasiside kaudu, otsustab suuresti, mis tuleb esimesena. Nende kõrval valmistatakse ette uusi rakendusi. Algus ei näita neid, kui te seda ei soovi: märkige need selle menüüs „Vaade“, et näha neid seal kui „Varsti saadaval“:",
+            "Neli rakendust kasvavad edasi: see, millest teatate ja mida palute menüü Abi → Tagasiside kaudu, otsustab suuresti, mis tuleb esimesena. Nende kõrval valmistatakse ette uusi rakendusi. Rakenduste loend ei näita neid, kui te seda ei soovi: märkige need selle menüüs „Vaade“, et näha neid seal kui „Varsti saadaval“:",
             {
               "points": [
                 "Convert: failide konverteerimine ühest vormingust teise, sealhulgas kontoridokumendid PDF-iks ja tagasi, ilma et oleks vaja installida mõnda teist programmi. Me pole veel leidnud avatud tehnoloogiat, mis saavutaks soovitud kvaliteedi, seega tuleb see alles siis, kui see ei valmista teile pettumust; kus tööriistu pole olemas, ehitame need ise.",

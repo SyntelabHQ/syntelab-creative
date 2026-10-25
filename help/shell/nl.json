@@ -17,7 +17,7 @@
                 "Dev verzamelt hulpmiddelen voor ontwikkelaars: coderen en decoderen, opmaken en controleren, gegevens van de ene vorm naar de andere omzetten."
               ]
             },
-            "De apps delen één venster, één verzameling instellingen en één werkwijze. Wat je in de ene leert, werkt dus hetzelfde in de volgende.",
+            "Elke app opent in een eigen venster, met een eigen knop op de taakbalk, en de apps delen één verzameling instellingen en één werkwijze. Wat je in de ene leert, werkt dus hetzelfde in de volgende.",
             {
               "note": "Alles gebeurt op je computer. Je documenten worden nooit ergens naartoe gestuurd en er worden geen gegevens over jou of je werk verzameld."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "De zijbalk: het huisje leidt naar Start, daarna komen je apps en onderaan staan het programmanieuws, Feedback, Steunen en Instellingen.",
-                "In een app gaat Bestand → Ga naar Start naar de eerste pagina van die app, als deze er een heeft (Units, Scribe). Bestand → Instellingen openen (Ctrl+,) opent het eigen onderdeel van de app in Instellingen; de andere onderdelen zijn daar met één klik bereikbaar.",
+                "De zijbalk: het Syntelab-logo toont de apps, daaronder brengt het pictogram van de app van dit venster je terug naar de eerste pagina, en onderaan staan het programmanieuws, Feedback, Steunen en Instellingen.",
+                "Bestand → Ga naar Start gaat naar de eerste pagina van de app. Bestand → Instellingen openen (Ctrl+,) opent het eigen onderdeel van de app in Instellingen; de andere onderdelen zijn daar met één klik bereikbaar.",
                 "De tabbladen bovenaan: elk document, elke PDF-bundel en elk hulpmiddel dat je opent, heeft een eigen tabblad. Een stip op een tabblad betekent dat er niet-opgeslagen wijzigingen zijn.",
                 "De appmenu’s onder de tabbladen: als menubalk, lint of zijpaneel, afhankelijk van je keuze.",
                 "De rest van het venster toont het actieve tabblad."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Start",
+          "title": "De apps en hun vensters",
           "body": [
-            "Start toont je apps en de bestanden die je onlangs hebt geopend. Klik op een app om deze te openen of op een recent bestand om het opnieuw te openen.",
+            "Klik op het Syntelab-logo boven in de zijbalk om de apps te zien. Klik op een app om deze in een eigen venster te openen; is de app al open, dan komt het venster naar voren, zodat een app nooit twee vensters heeft. Met de zoekfunctie boven aan de lijst vind je apps, hulpmiddelen en opdrachten.",
             "De apps kunnen als kaarten, als pictogrammen met namen of alleen als pictogrammen worden getoond. Sleep ze in de gewenste volgorde. Met het toetsenbord: Alt en de pijltoetsen. ‘Standaardinstellingen herstellen’ zet ze terug.",
-            "Elke app heeft ook een eigen snelkoppeling in het Windows-startmenu, zoals ‘Syntelab PDF Organizer’ of ‘Syntelab Units’: deze opent het programma direct in die app. Als het programma al open is, opent de app daarin als tabblad."
+            "Elke app heeft ook een eigen snelkoppeling in het Windows-startmenu, in de map ‘Syntelab Creative’, en het venster kan net als elk programma aan de taakbalk worden vastgemaakt. Start je het programma zonder app, dan opent het de app die je het laatst hebt gebruikt."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Vanuit een app: Bestand → Openen of Ctrl+O.",
                 "Door bestanden vanuit een map op het venster te slepen.",
-                "Vanuit de bestandsbeheerder van je systeem: dubbelklik op een bestand dat aan het programma is gekoppeld. In Windows Verkenner is er ook het rechtsklikmenu (zie ‘Het rechtsklikmenu van Windows Verkenner’).",
-                "Vanuit Start: de lijst met recente bestanden."
+                "Vanuit de bestandsbeheerder van je systeem: dubbelklik op een bestand dat aan het programma is gekoppeld. In Windows Verkenner is er ook het rechtsklikmenu (zie ‘Het rechtsklikmenu van Windows Verkenner’)."
               ]
             },
-            "Het programma draait als één instantie. Als je tijdens het gebruik een bestand vanuit de bestandsbeheerder opent, verschijnt het als nieuw tabblad in hetzelfde venster."
+            "Het programma draait als één instantie. Een bestand dat je vanuit de bestandsbeheerder opent, verschijnt als nieuw tabblad in het venster van de app die het verwerkt (een PDF in PDF Organizer), en dat venster komt naar voren."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "‘Het tabblad Start tussen de tabbladen houden’: als dit uitstaat, is het tabblad Start alleen zichtbaar wanneer Start zelf actief is. Het huisje in de zijbalk brengt je er altijd naar terug.",
                 "De markering op een tabblad kan het pictogram van de app zijn of een eenvoudig vierkant in de appkleur."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Deze Help gebruiken",
           "body": [
-            "Help hoort bij de plek vanwaar je deze opent. Vanuit een app zie je alleen de handleiding van die app en de opdrachten van het oorspronkelijke tabblad. Vanaf Start of Instellingen zie je ‘Over’ (een korte beschrijving van het programma en elke app) en de programmahandleiding. Help → Over leidt altijd naar ‘Over’.",
+            "Help hoort bij de plek vanwaar je deze opent. Vanuit een app zie je alleen de handleiding van die app en de opdrachten van het oorspronkelijke tabblad. Vanuit Instellingen zie je ‘Over’ (een korte beschrijving van het programma en elke app) en de programmahandleiding. Help → Over leidt altijd naar ‘Over’.",
             "De inhoudsopgave staat links; de zoekfunctie erboven doorzoekt alle onderwerpen, zowel de titels als de tekst.",
             "Help opent in een eigen tabblad, zodat je tussen Help en je werk kunt wisselen; F1 brengt Help weer naar voren. Onder ‘Opdrachten van het tabblad waar je vandaan kwam’ staan alle menu’s van dat tabblad, met elke opdracht, de toetsen en de werking. Open Help dus vanuit het tabblad waarover je een vraag hebt."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Waar we aan werken",
           "body": [
-            "De vier apps blijven groeien: je meldingen en verzoeken via Help → Feedback bepalen voor een groot deel wat eerst komt. Daarnaast worden nieuwe apps voorbereid. Start toont ze alleen als je dat wilt: vink ze aan in het menu ‘Weergave’ van Start om ze daar als ‘Binnenkort beschikbaar’ te zien:",
+            "De vier apps blijven groeien: je meldingen en verzoeken via Help → Feedback bepalen voor een groot deel wat eerst komt. Daarnaast worden nieuwe apps voorbereid. De lijst met apps toont ze alleen als je dat wilt: vink ze aan in het menu ‘Weergave’ van de lijst om ze daar als ‘Binnenkort beschikbaar’ te zien:",
             {
               "points": [
                 "Convert: bestanden van het ene formaat naar het andere converteren, waaronder kantoordocumenten naar PDF en terug, zonder een ander programma te hoeven installeren. We hebben nog geen open technologie gevonden die de gewenste kwaliteit haalt. Daarom komt dit pas als het je niet teleurstelt; waar hulpmiddelen ontbreken, bouwen we ze zelf.",

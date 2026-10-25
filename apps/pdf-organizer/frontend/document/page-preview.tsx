@@ -21,6 +21,10 @@ export interface PagePreviewProps {
   /** The page is shown as large as fits in this, in pixels. */
   readonly width?: number;
   readonly height?: number;
+  /** When given, the page is drawn this many pixels to a point, whatever `width` and `height` say. */
+  readonly pixelsPerPoint?: number;
+  /** False where the wheel must scroll what holds the preview: the arrows alone then go through the pages. */
+  readonly wheelTurnsPages?: boolean;
   /** Laid over the page, as large as it: something the user moves on it (the box of a signature). */
   readonly overlay?: ReactNode;
 }
@@ -30,7 +34,7 @@ export interface PagePreviewProps {
  * put on it. The mouse wheel and the arrows go through the pages, to see how
  * it comes out on each.
  */
-export function PagePreview({ host, pages, index, onIndexChange, marks = [], width = 300, height = 400, overlay }: PagePreviewProps) {
+export function PagePreview({ host, pages, index, onIndexChange, marks = [], width = 300, height = 400, pixelsPerPoint, wheelTurnsPages = true, overlay }: PagePreviewProps) {
   const t = useTranslation();
   const stageRef = useRef<HTMLDivElement>(null);
   const page = pages[Math.min(Math.max(index, 0), pages.length - 1)];
@@ -41,7 +45,7 @@ export function PagePreview({ host, pages, index, onIndexChange, marks = [], wid
   // Listened to directly: only a non-passive listener may keep the window behind from scrolling.
   useEffect(() => {
     const stage = stageRef.current;
-    if (!stage) return;
+    if (!stage || !wheelTurnsPages) return;
     let last = 0;
     const onWheel = (event: WheelEvent) => {
       if (event.deltaY === 0 || event.ctrlKey) return;
@@ -52,12 +56,12 @@ export function PagePreview({ host, pages, index, onIndexChange, marks = [], wid
     };
     stage.addEventListener('wheel', onWheel, { passive: false });
     return () => stage.removeEventListener('wheel', onWheel);
-  }, []);
+  }, [wheelTurnsPages]);
 
   if (!page) return null;
   const sideways = page.rotation % 180 !== 0;
   const [shownWidth, shownHeight] = sideways ? [page.height, page.width] : [page.width, page.height];
-  const pixels = Math.min(width / shownWidth, height / shownHeight);
+  const pixels = pixelsPerPoint ?? Math.min(width / shownWidth, height / shownHeight);
   const scale = Math.min(3, Math.max(1, pixels * window.devicePixelRatio));
 
   return (

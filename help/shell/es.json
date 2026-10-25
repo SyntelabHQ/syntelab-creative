@@ -17,7 +17,7 @@
                 "Dev reúne herramientas para desarrolladores: codificar y decodificar, dar formato, validar y convertir datos entre distintos formatos."
               ]
             },
-            "Las aplicaciones comparten una ventana, ajustes comunes y una forma de uso coherente, así que lo que aprendes en una también te sirve en las demás.",
+            "Cada aplicación se abre en su propia ventana, con su propio botón en la barra de tareas, y las aplicaciones comparten ajustes comunes y una forma de uso coherente, así que lo que aprendes en una también te sirve en las demás.",
             {
               "note": "Todo se procesa en tu equipo. Tus documentos nunca se envían a ningún sitio y no se recopila información sobre ti ni sobre tu trabajo."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "La barra lateral: el icono de la casa lleva a Inicio; debajo aparecen tus aplicaciones y, al final, las noticias del programa, Comentarios, Apoyar y Ajustes.",
-                "En una aplicación, Archivo → Ir al inicio abre su página principal si la tiene (Units o Scribe). Archivo → Abrir ajustes (Ctrl+,) abre la sección de Ajustes correspondiente a esa aplicación; desde allí puedes acceder a las demás secciones con un clic.",
+                "La barra lateral: el logotipo de Syntelab muestra la lista de aplicaciones; debajo, el icono de la aplicación de esta ventana vuelve a su página principal y, al final, aparecen las noticias del programa, Comentarios, Apoyar y Ajustes.",
+                "Archivo → Ir al inicio abre la página principal de la aplicación. Archivo → Abrir ajustes (Ctrl+,) abre la sección de Ajustes correspondiente a esa aplicación; desde allí puedes acceder a las demás secciones con un clic.",
                 "Las pestañas de la parte superior: cada documento, colección o herramienta que abras tiene su propia pestaña. Un punto en ella indica que hay cambios sin guardar.",
                 "Los menús de la aplicación, debajo de las pestañas, se muestran como barra de menús, cinta o panel lateral, según lo que hayas elegido.",
                 "El resto de la ventana corresponde a la pestaña activa."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Inicio",
+          "title": "Las aplicaciones y sus ventanas",
           "body": [
-            "Inicio muestra tus aplicaciones y los archivos abiertos recientemente. Haz clic en una aplicación para abrirla o en un archivo reciente para volver a abrirlo.",
+            "Haz clic en el logotipo de Syntelab, en la parte superior de la barra lateral, para ver las aplicaciones. Haz clic en una para abrirla en su propia ventana; si ya está abierta, su ventana pasa al frente, así que una aplicación nunca tiene dos ventanas. La búsqueda de la parte superior de la lista encuentra aplicaciones, herramientas y comandos.",
             "Puedes mostrar las aplicaciones como tarjetas, como iconos con nombre o solo como iconos, y arrastrarlas para ordenarlas a tu gusto. También puedes moverlas con Alt y las teclas de flecha. «Restablecer valores predeterminados» recupera el orden original.",
-            "Cada aplicación también tiene su propio acceso directo en el menú Inicio de Windows, como «Syntelab PDF Organizer» o «Syntelab Units». Al abrirlo, el programa se inicia directamente en esa aplicación. Si ya está abierto, la aplicación aparece en una pestaña nueva."
+            "Cada aplicación también tiene su propio acceso directo en el menú Inicio de Windows, en la carpeta «Syntelab Creative», y su ventana se puede anclar a la barra de tareas como cualquier programa. Si se inicia sin ninguna aplicación, el programa abre la última que usaste."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Desde una aplicación: Archivo → Abrir o Ctrl+O.",
                 "Arrastrando archivos desde una carpeta hasta la ventana.",
-                "Desde el administrador de archivos del sistema: haz doble clic en un archivo compatible con el programa. En el Explorador de archivos de Windows también puedes usar el menú contextual (consulta «El menú contextual del Explorador de archivos de Windows»).",
-                "Desde Inicio: en la lista de archivos recientes."
+                "Desde el administrador de archivos del sistema: haz doble clic en un archivo compatible con el programa. En el Explorador de archivos de Windows también puedes usar el menú contextual (consulta «El menú contextual del Explorador de archivos de Windows»)."
               ]
             },
-            "El programa se ejecuta en una sola instancia. Si abres un archivo desde el administrador de archivos mientras el programa ya está en ejecución, se abrirá en una pestaña nueva de la misma ventana."
+            "El programa se ejecuta en una sola instancia. Si abres un archivo desde el administrador de archivos, se abrirá en una pestaña nueva en la ventana de la aplicación que lo gestiona (un PDF en PDF Organizer), que pasa al frente."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "«Mantener la pestaña Inicio entre las demás»: si desactivas esta opción, la pestaña Inicio solo aparece cuando Inicio está en primer plano. El icono de la casa en la barra lateral siempre te lleva a ella.",
                 "El indicador de una pestaña puede ser el icono de la aplicación o un cuadrado liso con el color de la aplicación."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Usar esta ayuda",
           "body": [
-            "La ayuda depende del lugar desde el que la abras. Desde una aplicación, solo verás su manual y los comandos de la pestaña desde la que abriste la ayuda. Desde Inicio o Ajustes, verás «Acerca de» (una breve presentación del programa y de cada aplicación) y el manual del programa. Ayuda → Acerca de siempre abre esa sección.",
+            "La ayuda depende del lugar desde el que la abras. Desde una aplicación, solo verás su manual y los comandos de la pestaña desde la que abriste la ayuda. Desde Ajustes, verás «Acerca de» (una breve presentación del programa y de cada aplicación) y el manual del programa. Ayuda → Acerca de siempre abre esa sección.",
             "El índice está a la izquierda. El campo de búsqueda que aparece encima busca en todos los temas, tanto en los títulos como en el texto.",
             "La ayuda se abre en una pestaña propia para que puedas alternar entre ella y tu trabajo. Pulsa F1 para volver a mostrarla. En «Comandos de la pestaña de origen» se enumeran todos los menús de esa pestaña, con sus comandos, atajos y funciones. Abre la ayuda desde la pestaña sobre la que tengas dudas."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "En qué estamos trabajando",
           "body": [
-            "Seguiremos mejorando las cuatro aplicaciones; muchos de nuestros próximos pasos dependen de tus comentarios y solicitudes en Ayuda → Comentarios. También estamos preparando aplicaciones nuevas. Inicio no las muestra a menos que quieras: márcalas en su menú «Vista» para verlas allí como «Próximamente»:",
+            "Seguiremos mejorando las cuatro aplicaciones; muchos de nuestros próximos pasos dependen de tus comentarios y solicitudes en Ayuda → Comentarios. También estamos preparando aplicaciones nuevas. La lista de aplicaciones no las muestra a menos que quieras: márcalas en su menú «Vista» para verlas allí como «Próximamente»:",
             {
               "points": [
                 "Convert: convierte archivos entre formatos, incluidos documentos de ofimática y PDF, sin necesidad de instalar otro programa. Aún no hemos encontrado una tecnología abierta que alcance la calidad que buscamos, así que la aplicación estará disponible cuando podamos ofrecer un resultado satisfactorio. Si no existen las herramientas necesarias, las desarrollaremos.",

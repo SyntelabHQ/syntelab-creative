@@ -17,7 +17,7 @@
                 "O Dev reúne ferramentas para desenvolvedores: codificar e decodificar, formatar e verificar, transformar um formato de dado em outro."
               ]
             },
-            "Os apps compartilham a mesma janela, o mesmo conjunto de configurações e a mesma forma de trabalhar, portanto, o que você aprende em um é o mesmo no próximo.",
+            "Cada app abre em uma janela própria, com seu próprio botão na barra de tarefas, e os apps compartilham o mesmo conjunto de configurações e a mesma forma de trabalhar, portanto, o que você aprende em um é o mesmo no próximo.",
             {
               "note": "Tudo acontece no seu computador. Seus documentos nunca são enviados para lugar nenhum, e nada sobre você ou seu trabalho é coletado."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "A barra lateral: a casa leva ao Início, depois vêm os seus apps e, na parte inferior, as novidades do programa, Feedback, Apoiar e Configurações.",
-                "Em um app, Arquivo → Ir para o Início vai para a primeira página daquele app, caso ele possua uma (Units, Scribe), e Arquivo → Abrir Configurações (Ctrl+,) abre as Configurações na parte específica daquele app; as outras partes estão a um clique de distância ali.",
+                "A barra lateral: o logotipo da Syntelab lista os apps, abaixo dele o ícone do app desta janela traz de volta a primeira página dele e, na parte inferior, vêm as novidades do programa, Feedback, Apoiar e Configurações.",
+                "Arquivo → Ir para o Início vai para a primeira página do app, e Arquivo → Abrir Configurações (Ctrl+,) abre as Configurações na parte específica daquele app; as outras partes estão a um clique de distância ali.",
                 "As guias no topo: cada documento, fichário ou ferramenta que você abre tem sua própria guia. Um ponto em uma guia indica que há alterações não salvas.",
                 "Os menus do app, abaixo das guias: como uma barra de menus, como uma faixa de opções ou como um painel lateral, dependendo da sua escolha.",
                 "O restante da janela é a guia ativa."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Início",
+          "title": "Os apps e suas janelas",
           "body": [
-            "O Início mostra seus apps e os arquivos abertos recentemente. Clique em um app para abri-lo; clique em um arquivo recente para abri-lo novamente.",
+            "Clique no logotipo da Syntelab no topo da barra lateral para ver os apps. Clique em um para abri-lo em sua própria janela; se ele já estiver aberto, a janela dele vem para a frente, então um app nunca tem duas janelas. A pesquisa no topo da lista encontra apps, ferramentas e comandos.",
             "Os apps podem ser exibidos como cartões, como ícones com nomes ou apenas como ícones, e podem ser arrastados para a ordem que você preferir. Com o teclado: Alt e as teclas de seta. “Redefinir para o padrão” os coloca de volta.",
-            "Cada app também possui seu próprio atalho no menu Iniciar do Windows, como “Syntelab PDF Organizer” ou “Syntelab Units”: ele abre o programa diretamente naquele app. Se o programa já estiver aberto, o app será aberto nele como uma guia."
+            "Cada app também possui seu próprio atalho no menu Iniciar do Windows, na pasta “Syntelab Creative”, e a janela dele pode ser fixada na barra de tarefas como qualquer programa. Iniciado sem um app, o programa abre o último app que você usou."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "A partir de um app: Arquivo → Abrir, ou Ctrl+O.",
                 "Arrastando arquivos de uma pasta para a janela.",
-                "A partir do gerenciador de arquivos do seu sistema: clique duas vezes em um arquivo que o programa esteja configurado para abrir. No Explorador de Arquivos do Windows, também existe o menu de clique direito (veja “O menu de clique direito do Explorador de Arquivos do Windows”).",
-                "A partir do Iniciar: a lista de arquivos recentes."
+                "A partir do gerenciador de arquivos do seu sistema: clique duas vezes em um arquivo que o programa esteja configurado para abrir. No Explorador de Arquivos do Windows, também existe o menu de clique direito (veja “O menu de clique direito do Explorador de Arquivos do Windows”)."
               ]
             },
-            "O programa é executado como uma única instância. Um arquivo aberto a partir do gerenciador de arquivos enquanto o programa está em execução abre como uma nova guia na mesma janela."
+            "O programa é executado como uma única instância. Um arquivo aberto a partir do gerenciador de arquivos abre como uma nova guia na janela do app que o recebe (um PDF no PDF Organizer), que vem para a frente."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "“Manter a guia Início entre as guias”: quando desativado, a guia Início aparece apenas enquanto o próprio Início está em primeiro plano; a casa na barra lateral sempre leva de volta a ela.",
                 "A marca em uma guia pode ser o ícone do seu app ou um quadrado simples na cor do app."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Usando esta Ajuda",
           "body": [
-            "A Ajuda pertence ao local de onde você a abre. A partir de um app, você verá apenas o manual desse app e os comandos da guia de onde você veio. A partir da página inicial ou das Configurações, você verá “Sobre” (o programa e cada app, resumidamente) e o manual do programa. Ajuda → Sobre sempre leva ao “Sobre”.",
+            "A Ajuda pertence ao local de onde você a abre. A partir de um app, você verá apenas o manual desse app e os comandos da guia de onde você veio. A partir das Configurações, você verá “Sobre” (o programa e cada app, resumidamente) e o manual do programa. Ajuda → Sobre sempre leva ao “Sobre”.",
             "O conteúdo fica à esquerda; a pesquisa acima dele busca em todos os tópicos, nos títulos e no texto.",
             "A Ajuda abre em uma guia própria, para que você possa alternar entre ela e o seu trabalho; F1 a traz para a frente novamente. Em “Comandos da guia de onde você veio”, cada menu daquela guia é listado com seus comandos, teclas e funções: abra a Ajuda a partir da guia sobre a qual você tem uma dúvida."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "No que estamos trabalhando",
           "body": [
-            "Os quatro apps continuarão crescendo: o que você relata e solicita por meio de Ajuda → Feedback decide muito do que vem primeiro. Além deles, novos apps estão sendo preparados. O Início só os mostra se você quiser: marque-os no menu “Exibir” do Início para vê-los lá como “Em breve”:",
+            "Os quatro apps continuarão crescendo: o que você relata e solicita por meio de Ajuda → Feedback decide muito do que vem primeiro. Além deles, novos apps estão sendo preparados. A lista de apps só os mostra se você quiser: marque-os no menu “Exibir” dela para vê-los lá como “Em breve”:",
             {
               "points": [
                 "Convert: conversão de arquivos de um formato para outro, entre eles documentos de escritório para PDF e vice-versa, sem a necessidade de instalar outro programa. Ainda não encontramos uma tecnologia aberta que atinja a qualidade que desejamos, por isso ele chegará apenas quando não for decepcionante; onde as ferramentas não existirem, nós as construiremos.",

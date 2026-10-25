@@ -15,6 +15,11 @@
   opacity: 1;
 }
 
+/* Drawn for exactly this place: copied pixel for pixel, never smoothed. */
+.image[data-exact='true'] {
+  image-rendering: pixelated;
+}
+
 /* The picture being replaced lies over the place of the new one until that has arrived. */
 .previous {
   position: absolute;

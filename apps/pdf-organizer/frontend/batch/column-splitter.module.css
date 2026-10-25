@@ -1,0 +1,25 @@
+/* The bar between the two columns: thin to the eye, wider to the hand. */
+.splitter {
+  position: relative;
+  z-index: 3;
+  width: 1px;
+  background: var(--sc-border);
+  cursor: col-resize;
+  touch-action: none;
+}
+
+/* What is taken hold of: a few pixels on each side of the line. */
+.splitter::before {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: -4px;
+  content: "";
+}
+
+.splitter:hover,
+.splitter:focus-visible,
+.splitter[data-dragging="true"] {
+  background: var(--sc-accent);
+  box-shadow: 0 0 0 1px var(--sc-accent);
+  outline: none;
+}

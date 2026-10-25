@@ -7,6 +7,12 @@
   font-family: var(--sc-font, system-ui);
   font-size: 14px;
   text-align: start;
+  /* Dev's own colour (app.json), lighter on dark themes so it stays readable. */
+  --dev-color: #e91e63;
+}
+
+:root[data-theme='dark'] .page {
+  --dev-color: #f48fb1;
 }
 
 .inner {
@@ -133,8 +139,10 @@
   background: var(--sc-surface);
 }
 
-.card:hover:not([data-later='true']) {
-  border-color: var(--sc-accent);
+.card:hover:not([data-later='true']),
+.card:focus-within:not([data-later='true']) {
+  border-color: var(--dev-color);
+  box-shadow: var(--sc-shadow-s);
 }
 
 .card[data-later='true'] {

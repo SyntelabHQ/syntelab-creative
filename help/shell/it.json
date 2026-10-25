@@ -17,7 +17,7 @@
                 "Dev raccoglie strumenti per sviluppatori: codifica e decodifica, formattazione e verifica, conversione dei dati tra formati diversi."
               ]
             },
-            "Le app condividono una finestra, impostazioni e modalità di lavoro, così ciò che impari in una vale anche per le altre.",
+            "Ogni app si apre in una finestra tutta sua, con un proprio pulsante sulla barra delle applicazioni, e le app condividono impostazioni e modalità di lavoro, così ciò che impari in una vale anche per le altre.",
             {
               "note": "Tutto avviene sul tuo computer. I documenti non vengono mai inviati altrove e non vengono raccolti dati personali né informazioni sul tuo lavoro."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "La barra laterale: l’icona Home apre la schermata iniziale, seguono le tue app e, in fondo, trovi le novità del programma, Feedback, Sostegno e Impostazioni.",
-                "In un’app, File → Vai a Home apre la schermata iniziale dell’app, se disponibile (Units, Scribe); File → Apri Impostazioni (Ctrl+,) apre la sezione dedicata all’app. Da lì puoi passare alle altre sezioni con un clic.",
+                "La barra laterale: il logo Syntelab elenca le app, sotto c’è l’icona dell’app di questa finestra che riporta alla sua schermata iniziale e, in fondo, trovi le novità del programma, Feedback, Sostegno e Impostazioni.",
+                "File → Vai a Home apre la schermata iniziale dell’app; File → Apri Impostazioni (Ctrl+,) apre la sezione dedicata all’app. Da lì puoi passare alle altre sezioni con un clic.",
                 "Le schede in alto: ogni documento, raccolta o strumento aperto ha una propria scheda. Un punto sulla scheda indica modifiche non salvate.",
                 "I menu dell’app, sotto le schede, possono apparire come barra dei menu, barra multifunzione o pannello laterale, secondo la scelta effettuata.",
                 "Il resto della finestra mostra la scheda in primo piano."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Home",
+          "title": "Le app e le loro finestre",
           "body": [
-            "Home mostra le tue app e i file aperti di recente. Fai clic su un’app per aprirla oppure su un file recente per riaprirlo.",
+            "Fai clic sul logo Syntelab in cima alla barra laterale per vedere le app. Fai clic su un’app per aprirla in una finestra tutta sua; se è già aperta, la sua finestra passa in primo piano, così un’app non ha mai due finestre. La ricerca in cima all’elenco trova app, strumenti e comandi.",
             "Puoi visualizzare le app come riquadri, icone con nomi o sole icone e trascinarle nell’ordine desiderato. Puoi riordinarle anche con Alt e i tasti freccia. «Ripristina predefiniti» ripristina l’ordine iniziale.",
-            "Nel menu Start di Windows ogni app ha anche un collegamento dedicato, per esempio «Syntelab PDF Organizer» o «Syntelab Units», che apre il programma direttamente in quell’app. Se il programma è già aperto, l’app si apre in una nuova scheda."
+            "Nel menu Start di Windows ogni app ha anche un collegamento dedicato, nella cartella «Syntelab Creative», e la sua finestra si può aggiungere alla barra delle applicazioni come qualsiasi programma. Se avviato senza un’app, il programma apre l’ultima app che hai usato."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Da un’app: File → Apri oppure Ctrl+O.",
                 "Trascinando i file da una cartella alla finestra.",
-                "Dal file manager del sistema: fai doppio clic su un file associato al programma. In Esplora file di Windows è disponibile anche il menu contestuale (consulta «Menu contestuale di Esplora file di Windows»).",
-                "Da Home: apri un file dall’elenco dei file recenti."
+                "Dal file manager del sistema: fai doppio clic su un file associato al programma. In Esplora file di Windows è disponibile anche il menu contestuale (consulta «Menu contestuale di Esplora file di Windows»)."
               ]
             },
-            "Il programma viene eseguito in un’unica istanza. Se apri un file dal file manager mentre il programma è già in esecuzione, il file si apre in una nuova scheda nella stessa finestra."
+            "Il programma viene eseguito in un’unica istanza. Se apri un file dal file manager, il file si apre in una nuova scheda nella finestra dell’app che lo gestisce (un PDF in PDF Organizer), che passa in primo piano."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "«Mantieni la scheda Home tra le schede aperte»: se disattivata, la scheda Home è visibile solo quando Home è in primo piano; l’icona Home nella barra laterale ti riporta sempre alla schermata iniziale.",
                 "L’indicatore su una scheda può essere l’icona dell’app oppure un semplice quadrato del colore dell’app."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Uso della guida",
           "body": [
-            "La guida dipende da dove la apri. Da un’app, mostra solo il manuale di quell’app e i comandi della scheda da cui provieni. Da Home o dalle Impostazioni, mostra «Informazioni» (sul programma e su ciascuna app, in breve) e il manuale del programma. Aiuto → Informazioni apre sempre la sezione «Informazioni».",
+            "La guida dipende da dove la apri. Da un’app, mostra solo il manuale di quell’app e i comandi della scheda da cui provieni. Dalle Impostazioni, mostra «Informazioni» (sul programma e su ciascuna app, in breve) e il manuale del programma. Aiuto → Informazioni apre sempre la sezione «Informazioni».",
             "L’indice si trova a sinistra; la casella di ricerca sopra l’indice cerca in tutti gli argomenti, nei titoli e nel testo.",
             "La guida si apre in una scheda propria, così puoi passare dal lavoro alla guida e viceversa. F1 la riporta in primo piano. Nella sezione «Comandi della scheda da cui sei arrivato» sono elencati i menu della scheda e tutti i relativi comandi, scorciatoie e descrizioni. Apri la guida dalla scheda su cui hai una domanda."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "A cosa stiamo lavorando",
           "body": [
-            "Le quattro app continueranno a crescere: le segnalazioni e le richieste inviate tramite Aiuto → Feedback contribuiscono a decidere le priorità. Stiamo preparando anche nuove app. Home non le mostra, a meno che tu non lo voglia: selezionale nel suo menu «Visualizzazione» per vederle lì come «Disponibile a breve»:",
+            "Le quattro app continueranno a crescere: le segnalazioni e le richieste inviate tramite Aiuto → Feedback contribuiscono a decidere le priorità. Stiamo preparando anche nuove app. L’elenco delle app non le mostra, a meno che tu non lo voglia: selezionale nel suo menu «Visualizzazione» per vederle lì come «Disponibile a breve»:",
             {
               "points": [
                 "Convert: conversione di file tra formati diversi, compresi documenti Office e PDF, senza dover installare altri programmi. Non abbiamo ancora trovato una tecnologia aperta che raggiunga la qualità desiderata: l’app arriverà quando potrà soddisfare le tue aspettative. Dove gli strumenti non esistono, li svilupperemo noi.",

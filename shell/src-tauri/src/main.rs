@@ -2,6 +2,7 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 mod app_host;
+mod app_windows;
 mod apps;
 mod default_app;
 mod dropped_files;
@@ -10,9 +11,15 @@ mod launch;
 mod net;
 mod share;
 
-use tauri::{Emitter, Manager};
+use tauri::Manager;
 
 fn main() {
+    // Run by the installer once it has made the Start menu shortcuts: gives them the ids of the app windows, and
+    // starts nothing else.
+    if std::env::args().nth(1).as_deref() == Some(app_windows::TAG_SHORTCUTS) {
+        app_windows::tag_shortcuts();
+        return;
+    }
     let context = tauri::generate_context!();
     // What this copy itself was started with waits for the interface to ask. The list is there before anything
     // else starts: a copy started at the same moment may hand its start over while this one is still opening
@@ -22,9 +29,10 @@ fn main() {
     if let Some(request) = launch::request_of(&arguments, &std::env::current_dir().unwrap_or_default()) {
         waiting.add(request);
     }
-    let mut builder = tauri::Builder::default().manage(waiting);
+    let mut builder = tauri::Builder::default().manage(waiting).manage(app_windows::AppWindows::default());
     // Only one copy runs: another one (a file opened from the file manager, an entry of its
-    // right-click menu) hands over what it was started with, and the window comes to the front.
+    // right-click menu, the shortcut of an app) hands over what it was started with, which goes to the window of
+    // its app; started with nothing to do, it brings back the window used last.
     // A copy started with SYNTELAB_SEPARATE_INSTANCE set stands apart: for trying a build beside the one in use.
     let separate = std::env::var_os("SYNTELAB_SEPARATE_INSTANCE").is_some();
     // Copies started at the same moment take turns until the first is ready to take the others' starts.
@@ -33,12 +41,8 @@ fn main() {
         builder = builder.plugin(tauri_plugin_single_instance::init(|app, arguments, folder| {
             if let Some(request) = launch::request_of(arguments.get(1..).unwrap_or_default(), std::path::Path::new(&folder)) {
                 app.state::<launch::Waiting>().add(request);
-                let _ = app.emit(launch::EVENT, ());
             }
-            if let Some(window) = app.get_webview_window("main") {
-                let _ = window.unminimize();
-                let _ = window.set_focus();
-            }
+            app_windows::deliver(app, false);
         }));
     }
     let app = builder
@@ -51,12 +55,17 @@ fn main() {
         .setup(|app| {
             let cache_root = app.path().app_cache_dir()?;
             app.manage(app_host::AppHost::start(&cache_root));
-            if let Some(window) = app.get_webview_window("main") {
-                dropped_files::listen(&window);
-            }
+            // The window of the app the program was started for; of the app used last when it was started with nothing to do.
+            app_windows::deliver(app.handle(), true);
+            app_windows::keep_shortcuts_tagged();
             // Offered in "Open with" and the settings of default apps for PDF files; written only when missing or moved.
             default_app::keep_registered();
             Ok(())
+        })
+        .on_window_event(|window, event| {
+            if let tauri::WindowEvent::Focused(true) = event {
+                app_windows::note_focus(window.app_handle(), window.label());
+            }
         })
         .register_asynchronous_uri_scheme_protocol(app_host::RESOURCE_SCHEME, app_host::serve_resource)
         .invoke_handler(tauri::generate_handler![
@@ -66,7 +75,8 @@ fn main() {
             net::save_web_page,
             net::read_web_page,
             share::share_file,
-            launch::take_launch_requests,
+            app_windows::take_window_requests,
+            app_windows::open_app_window,
             explorer_menu::explorer_menu_state,
             explorer_menu::set_explorer_menu,
             default_app::default_pdf_app_state,

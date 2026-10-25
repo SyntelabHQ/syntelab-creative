@@ -15,8 +15,8 @@ use tauri_plugin_opener::OpenerExt;
 /// True for a development build, which does not register.
 const DEVELOPMENT: bool = cfg!(debug_assertions);
 
-/// Registers the program when it is not registered yet, or is registered from another place (a copy since moved).
-/// Called once at start.
+/// Registers the program when it is not registered yet, is registered from another place (a copy since moved), or by an
+/// earlier version that wrote something else (the icon of PDF files). Called once at start.
 pub fn keep_registered() {
     if DEVELOPMENT || std::env::var_os("SYNTELAB_SEPARATE_INSTANCE").is_some() || !default_app::is_supported() {
         return;
@@ -25,7 +25,7 @@ pub fn keep_registered() {
         return;
     };
     let place = AppPlace::default();
-    if default_app::registered_program(&place).as_deref() != Some(program.as_path()) {
+    if !default_app::is_registered_as(&place, &program) {
         let _ = default_app::register(&place, &program);
     }
 }

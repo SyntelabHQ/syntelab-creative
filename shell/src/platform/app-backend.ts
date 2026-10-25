@@ -99,7 +99,9 @@ const DROPPED_WAIT_MS = 2000;
 export async function pathsOfDropped(files: readonly File[]): Promise<readonly string[] | null> {
   const view = isTauri() ? webView() : null;
   if (view === null || files.length === 0) return null;
-  const { listen } = await import('@tauri-apps/api/event');
+  // This window's own: each app has a window, and the paths come back to the one they were dropped on.
+  const { getCurrentWebviewWindow } = await import('@tauri-apps/api/webviewWindow');
+  const listen = getCurrentWebviewWindow().listen.bind(getCurrentWebviewWindow());
   let stop = () => {};
   try {
     return await new Promise<readonly string[] | null>((resolve) => {

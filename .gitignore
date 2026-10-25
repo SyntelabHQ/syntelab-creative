@@ -6,6 +6,8 @@ shell/src-tauri/gen/
 .DS_Store
 Thumbs.db
 tests/fixtures/generated/
+# PDFium, put there by tools/fetch-pdfium.mjs
+third-party/pdfium/
 # The archive of remote/creative made for deploying the site
 remote/*.zip
 

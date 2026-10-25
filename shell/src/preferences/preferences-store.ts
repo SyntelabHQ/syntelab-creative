@@ -28,7 +28,7 @@ export interface AppLayoutChoice {
   readonly ribbonMode?: RibbonMode;
 }
 
-/** How the start screen draws the apps. */
+/** How the list of apps draws them. */
 export const APPS_VIEWS = ['cards', 'named-icons', 'icons'] as const;
 export type AppsView = (typeof APPS_VIEWS)[number];
 
@@ -52,14 +52,12 @@ export interface Preferences {
   readonly appsView: AppsView;
   /** App ids in the order the user arranged them; apps not listed come after. */
   readonly appOrder: readonly string[];
-  /** Ids of the apps the user took off the Start screen and the app bar. */
+  /** Ids of the apps the user took off the list of apps. */
   readonly hiddenApps: readonly string[];
-  /** Ids of the apps still to come that the user chose to see on the Start screen: they are left off unless chosen. */
+  /** Ids of the apps still to come that the user chose to see in the list of apps: they are left off unless chosen. */
   readonly shownComingApps: readonly string[];
   /** Sections of the side panel the user folded, by the key of their menu. */
   readonly panelFoldedSections: readonly string[];
-  /** The Start tab stays among the tabs while an app is in front; off, it shows only while Start itself is. */
-  readonly startTabAlways: boolean;
   readonly tabMark: TabMark;
   /** When the small texts that say what a button does show, once the pointer rests on it. */
   readonly tooltips: TooltipMode;
@@ -86,7 +84,6 @@ const DEFAULTS: Preferences = {
   hiddenApps: [],
   shownComingApps: [],
   panelFoldedSections: [],
-  startTabAlways: false,
   tabMark: 'icon',
   tooltips: 'delayed',
   shortcuts: {},
@@ -141,7 +138,6 @@ function read(): Preferences {
       hiddenApps: strings(values.hiddenApps),
       shownComingApps: strings(values.shownComingApps),
       panelFoldedSections: strings(values.panelFoldedSections),
-      startTabAlways: values.startTabAlways === true,
       tabMark: oneOf(TAB_MARKS, values.tabMark, DEFAULTS.tabMark),
       // Kept from when the choice was only on or off.
       tooltips: values.tooltips === false ? 'off' : oneOf(TOOLTIP_MODES, values.tooltips, DEFAULTS.tooltips),
@@ -164,7 +160,22 @@ function write(preferences: Preferences): void {
 
 function createPreferencesStore(): Store<Preferences> {
   const store = createStore(read());
-  store.subscribe(() => write(store.get()));
+  let fromOtherWindow = false;
+  store.subscribe(() => {
+    if (!fromOtherWindow) write(store.get());
+  });
+  // Each app has a window of its own: a choice made in one (the theme, the language) counts in the others at once.
+  if (typeof window !== 'undefined') {
+    window.addEventListener('storage', (event) => {
+      if (event.key !== STORAGE_KEY) return;
+      fromOtherWindow = true;
+      try {
+        store.set(read());
+      } finally {
+        fromOtherWindow = false;
+      }
+    });
+  }
   return store;
 }
 

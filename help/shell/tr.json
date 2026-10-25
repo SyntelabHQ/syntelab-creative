@@ -17,7 +17,7 @@
                 "Dev; geliştiriciler için kodlama ve kod çözme, biçimlendirme ve denetleme, verileri bir biçimden diğerine dönüştürme araçlarını bir araya getirir."
               ]
             },
-            "Uygulamalar aynı pencereyi, ayarları ve çalışma biçimini paylaşır; birinde öğrendikleriniz diğerinde de geçerlidir.",
+            "Her uygulama, görev çubuğunda kendi düğmesi olan ayrı bir pencerede açılır; uygulamalar aynı ayarları ve çalışma biçimini paylaşır, birinde öğrendikleriniz diğerinde de geçerlidir.",
             {
               "note": "Her şey bilgisayarınızda gerçekleşir. Belgeleriniz hiçbir yere gönderilmez; sizin veya çalışmalarınız hakkında bilgi toplanmaz."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Yan çubuk: ev simgesi Başlangıç'a götürür; altında uygulamalarınız, en altta program haberleri, Geri bildirim, Destek ve Ayarlar bulunur.",
-                "Bir uygulamada Dosya → Başlangıç sayfasına git, uygulamanın başlangıç sayfası varsa oraya götürür (Units, Scribe). Dosya → Ayarları aç (Ctrl+,), Ayarlar'ın o uygulamaya ait bölümünü açar; diğer bölümlere buradan tek tıkla geçebilirsiniz.",
+                "Yan çubuk: Syntelab logosu uygulamaları listeler; altındaki, bu pencerenin uygulamasına ait simge uygulamanın ilk sayfasına geri götürür; en altta program haberleri, Geri bildirim, Destek ve Ayarlar bulunur.",
+                "Dosya → Başlangıç sayfasına git, uygulamanın ilk sayfasına götürür. Dosya → Ayarları aç (Ctrl+,), Ayarlar’ın o uygulamaya ait bölümünü açar; diğer bölümlere buradan tek tıkla geçebilirsiniz.",
                 "Üstteki sekmeler: açtığınız her belge, dosya panosu veya araç kendi sekmesinde görünür. Sekmedeki nokta, kaydedilmemiş değişiklikler olduğunu gösterir.",
                 "Sekmelerin altındaki uygulama menüleri; menü çubuğu, şerit veya yan panel biçiminde gösterilebilir. Tercihinizi siz seçersiniz.",
                 "Pencerenin geri kalanında öndeki sekmenin içeriği görünür."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Başlangıç",
+          "title": "Uygulamalar ve pencereleri",
           "body": [
-            "Başlangıç'ta uygulamalarınız ve en son açtığınız dosyalar gösterilir. Bir uygulamayı açmak için uygulamaya, son dosyalardan birini yeniden açmak için dosyaya tıklayın.",
+            "Uygulamaları görmek için yan çubuğun üstündeki Syntelab logosuna tıklayın. Bir uygulamayı kendi penceresinde açmak için ona tıklayın; uygulama zaten açıksa penceresi öne gelir, böylece bir uygulamanın hiçbir zaman iki penceresi olmaz. Listenin üstündeki arama; uygulamaları, araçları ve komutları bulur.",
             "Uygulamaları kart, adlı simge veya yalnızca simge olarak gösterebilir, istediğiniz sıraya sürükleyebilirsiniz. Klavyeyle sıralamak için Alt ve ok tuşlarını kullanın. ‘Varsayılana sıfırla’ ilk sıraya döndürür.",
-            "Windows Başlat menüsünde her uygulamanın kendi kısayolu da bulunur; örneğin ‘Syntelab PDF Organizer’ veya ‘Syntelab Units’. Kısayol programı doğrudan ilgili uygulamayla açar. Program zaten açıksa uygulama aynı pencerede yeni sekme olarak açılır."
+            "Windows Başlat menüsünde, ‘Syntelab Creative’ klasöründe her uygulamanın kendi kısayolu da bulunur; uygulamanın penceresi de her program gibi görev çubuğuna sabitlenebilir. Program bir uygulama belirtilmeden başlatılırsa en son kullandığınız uygulamayı açar."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Bir uygulamadan: Dosya → Aç veya Ctrl+O.",
                 "Dosyaları klasörden pencereye sürükleyip bırakarak.",
-                "Sisteminizin dosya yöneticisinden: programın açabildiği bir dosyaya çift tıklayın. Windows Gezgini'nde sağ tıklama menüsü de kullanılabilir (‘Windows Gezgini sağ tıklama menüsü’ bölümüne bakın).",
-                "Başlangıç'tan: son açılan dosyalar listesinden."
+                "Sisteminizin dosya yöneticisinden: programın açabildiği bir dosyaya çift tıklayın. Windows Gezgini’nde sağ tıklama menüsü de kullanılabilir (‘Windows Gezgini sağ tıklama menüsü’ bölümüne bakın)."
               ]
             },
-            "Program tek bir kopya olarak çalışır. Program açıkken dosya yöneticisinden açılan dosya aynı pencerede yeni bir sekme olarak açılır."
+            "Program tek bir kopya olarak çalışır. Dosya yöneticisinden açılan dosya, onu açan uygulamanın penceresinde (PDF ise PDF Organizer’da) yeni bir sekme olarak açılır ve bu pencere öne gelir."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "‘Başlangıç sekmesini sekmeler arasında tut’ kapalıysa Başlangıç sekmesi yalnızca Başlangıç öndeyken görünür; yan çubuktaki ev simgesi her zaman Başlangıç'a götürür.",
                 "Sekme işareti, uygulamanın simgesi veya uygulama renginde düz bir kare olabilir."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Bu Yardımı kullanma",
           "body": [
-            "Yardım, açtığınız yere göre içerik gösterir. Bir uygulamadan açıldığında yalnızca o uygulamanın kılavuzunu ve geldiğiniz sekmenin komutlarını görürsünüz. Başlangıç sayfasından veya Ayarlar'dan açıldığında ‘Hakkında’ (program ve her uygulama hakkında kısa bilgi) ile program kılavuzu görünür. Yardım → Hakkında her zaman ‘Hakkında’ bölümünü açar.",
+            "Yardım, açtığınız yere göre içerik gösterir. Bir uygulamadan açıldığında yalnızca o uygulamanın kılavuzunu ve geldiğiniz sekmenin komutlarını görürsünüz. Ayarlar’dan açıldığında ‘Hakkında’ (program ve her uygulama hakkında kısa bilgi) ile program kılavuzu görünür. Yardım → Hakkında her zaman ‘Hakkında’ bölümünü açar.",
             "İçindekiler soldadır; üstündeki arama tüm konu başlıklarında ve metinlerinde arama yapar.",
             "Yardım kendi sekmesinde açılır; çalışmanızla Yardım arasında geçiş yapabilirsiniz. F1 Yardım'ı yeniden öne getirir. ‘Önceki sekmenin komutları’ bölümünde o sekmenin tüm menüleri, komutları, kısayolları ve açıklamaları listelenir. Sorunuz olan sekmeden Yardım'ı açın."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Üzerinde çalıştıklarımız",
           "body": [
-            "Dört uygulama da gelişmeye devam edecek: Yardım → Geri bildirim üzerinden ilettiğiniz sorunlar ve istekler, öncelikleri büyük ölçüde belirler. Ayrıca yeni uygulamalar hazırlanıyor. Başlangıç, siz istemedikçe bunları göstermez: orada ‘Yakında’ olarak görmek için bunları Başlangıç’ın ‘Görünüm’ menüsünde işaretleyin:",
+            "Dört uygulama da gelişmeye devam edecek: Yardım → Geri bildirim üzerinden ilettiğiniz sorunlar ve istekler, öncelikleri büyük ölçüde belirler. Ayrıca yeni uygulamalar hazırlanıyor. Uygulama listesi, siz istemedikçe bunları göstermez: orada ‘Yakında’ olarak görmek için bunları listenin ‘Görünüm’ menüsünde işaretleyin:",
             {
               "points": [
                 "Convert: dosyaları bir biçimden diğerine, örneğin Office belgelerini PDF'ye ve tersine dönüştürme; bunun için başka bir programın kurulu olması gerekmeyecek. Henüz istediğimiz kaliteye ulaşan açık bir teknoloji bulamadık. Bu nedenle uygulama ancak beklentinizi karşılayacağından emin olduğumuzda çıkacak; gerekli araçlar yoksa kendimiz geliştireceğiz.",

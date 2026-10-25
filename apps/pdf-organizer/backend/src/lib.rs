@@ -199,7 +199,8 @@
 //!
 //! Resources (PNG):
 //! - `page/<documentId>/<pageIndex>?scale=<number>&rotate=<0|90|180|270>`
-//!   (scale 1.0 = 72 pixels per inch; rotate turns the picture clockwise for
+//!   `[&tile=<x>,<y>,<width>,<height>]` (scale 1.0 = 72 pixels per inch; `tile` asks for that rectangle of the
+//!   picture only, in pixels; rotate turns the picture clockwise for
 //!   viewing only)
 //! - `thumbnail/<documentId>/<pageIndex>`
 
@@ -226,7 +227,7 @@ use syntelab_platform::{certificates, fonts};
 use engine::time_stamp;
 use engine::{
     assemble, assemble_changed, picture_from_base64, BookmarkEdit, DocumentChanges, HiddenWord, ShownSignature, SignatureRequest, Area, Bookmark, EngineError, LinkTarget, NewField, ExportFormat, FontFamily, PictureOptions, Mark, MarkKind, PageChange, PdfFile,
-    PictureShrink, Place, PlannedPage, Rotation, ShapeKind,
+    PictureShrink, Place, PlannedPage, Rotation, ShapeKind, Tile,
 };
 use render::{RenderError, RenderReply};
 
@@ -1602,7 +1603,11 @@ impl SyntelabApp for PdfOrganizer {
             "page" => {
                 let scale = request.query.get("scale").and_then(|value| value.parse().ok()).unwrap_or(1.0);
                 let degrees = request.query.get("rotate").and_then(|value| value.parse().ok()).unwrap_or(0);
-                document.render_page(page, scale, Rotation::from_degrees(degrees), png_reply(reply));
+                // Zoomed far in, the interface asks for the pieces on screen only.
+                match request.query.get("tile").and_then(|tile| Tile::parse(tile)) {
+                    Some(tile) => document.render_tile(page, scale, Rotation::from_degrees(degrees), tile, png_reply(reply)),
+                    None => document.render_page(page, scale, Rotation::from_degrees(degrees), png_reply(reply)),
+                }
             }
             "thumbnail" => document.thumbnail(page, png_reply(reply)),
             _ => reply(Err(AppError::NotFound(request.path))),

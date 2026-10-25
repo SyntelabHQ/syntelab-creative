@@ -18,13 +18,15 @@ export interface FileListProps {
   /** The file shown in the preview, and choosing another. */
   readonly selected: number;
   readonly onSelect: (index: number) => void;
+  /** How tall the user made the list, in pixels; null while it takes the room there is. */
+  readonly height?: number | null;
 }
 
 /** The files of a run, one to a row, each with how it went. */
-export function FileList({ files, outcomes, ordered, disabled, onMove, onRemove, selected, onSelect }: FileListProps) {
+export function FileList({ files, outcomes, ordered, disabled, onMove, onRemove, selected, onSelect, height = null }: FileListProps) {
   const t = useTranslation();
   return (
-    <ul className={styles.files}>
+    <ul className={styles.files} style={height === null ? undefined : { flex: 'none', height }}>
       {files.length === 0 && <li className={styles.none}>{t('pdf-organizer.batch.none')}</li>}
       {files.map((path, index) => {
         const outcome = outcomes.get(path) ?? WAITING;

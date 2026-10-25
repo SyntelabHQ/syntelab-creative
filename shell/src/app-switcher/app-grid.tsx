@@ -19,10 +19,12 @@ const VIEW_OPTIONS: Record<AppsView, { labelKey: string; icon: string }> = {
 interface AppItemProps {
   readonly app: AppEntry;
   readonly view: AppsView;
+  /** Called once the app was opened. */
+  readonly onOpened?: () => void;
 }
 
 /** One app, drawn as a card, an icon with its name, or just an icon. */
-function AppItem({ app, view }: AppItemProps) {
+function AppItem({ app, view, onOpened }: AppItemProps) {
   const { t } = useI18n();
   const appTexts = useAppTexts();
   const ready = app.manifest.status === 'active';
@@ -56,7 +58,19 @@ function AppItem({ app, view }: AppItemProps) {
   const hint = view === 'cards' ? {} : { 'aria-label': label, ...tooltip(label) };
 
   return ready ? (
-    <button type="button" className={styles.item} {...appInk(app)} {...hint} onClick={() => tabs.openApp(app.manifest.id)}>
+    <button
+      type="button"
+      className={styles.item}
+      {...appInk(app)}
+      {...hint}
+      // The app of this window: choosing it brings its first page back.
+      aria-current={app.manifest.id === tabs.homeApp ? 'true' : undefined}
+      onClick={() => {
+        if (app.manifest.id === tabs.homeApp) tabs.showHome();
+        else tabs.openApp(app.manifest.id);
+        onOpened?.();
+      }}
+    >
       {body}
     </button>
   ) : (
@@ -73,11 +87,10 @@ interface DropPlace {
 }
 
 /**
- * The apps on the start screen, read from `apps/<app-id>/app.json`. The user
- * chooses which ones show, how they are drawn and, by dragging, in what
- * order; the app bar follows the same choice and order.
+ * The apps, read from `apps/<app-id>/app.json`. Each opens in its own window, or brings that window to the front
+ * when it is open. The user chooses which ones show, how they are drawn and, by dragging, in what order.
  */
-export function AppGrid() {
+export function AppGrid({ onOpened }: { readonly onOpened?: () => void }) {
   const { t, direction } = useI18n();
   const { status, apps } = useApps();
   const appTexts = useAppTexts();
@@ -210,7 +223,7 @@ export function AppGrid() {
               onDragEnd={endDrag}
               onKeyDown={(event) => onKeyDown(index, id, event)}
             >
-              <AppItem app={app} view={appsView} />
+              <AppItem app={app} view={appsView} onOpened={onOpened} />
             </li>
           );
         })}

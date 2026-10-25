@@ -12,6 +12,7 @@
   CreateShortCut "$SMPROGRAMS\Syntelab Creative\Scribe.lnk" "$INSTDIR\${MAINBINARYNAME}.exe" "--app scribe" "$INSTDIR\icons\apps\scribe.ico" 0 SW_SHOWNORMAL "" "A text editor with tools: clean, sort, compare and transform text. Part of Syntelab Creative."
   Delete "$SMPROGRAMS\Syntelab Units.lnk"
   CreateShortCut "$SMPROGRAMS\Syntelab Creative\Units.lnk" "$INSTDIR\${MAINBINARYNAME}.exe" "--app units" "$INSTDIR\icons\apps\units.ico" 0 SW_SHOWNORMAL "" "Unit converters: length, temperature, currency and many more. Part of Syntelab Creative."
+  ExecWait '"$INSTDIR\${MAINBINARYNAME}.exe" --tag-shortcuts'
 !macroend
 
 !macro NSIS_HOOK_PREUNINSTALL

@@ -17,7 +17,7 @@
                 "Dev samler verktøy for utviklere: koding og dekoding, formatering og kontroll, samt konvertering av data fra én form til en annen."
               ]
             },
-            "Appene deler ett vindu, ett sett med innstillinger og én arbeidsmetode, slik at det du lærer i én app, er det samme i den neste.",
+            "Hver app åpnes i sitt eget vindu, med sin egen knapp på oppgavelinjen, og appene deler ett sett med innstillinger og én arbeidsmetode, slik at det du lærer i én app, er det samme i den neste.",
             {
               "note": "Alt skjer på din datamaskin. Dokumentene dine blir aldri sendt noen steder, og ingen informasjon om deg eller arbeidet ditt blir samlet inn."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Linjen på siden: huset fører til Start, deretter kommer appene dine, og nederst finner du nyheter om programmet, Tilbakemelding, Støtte og Innstillinger.",
-                "I en app vil Fil → Gå til Start gå til appens førsteside dersom den har en (Units, Scribe), og Fil → Åpne innstillinger (Ctrl+,) åpner Innstillinger for den aktuelle appen; de andre delene er bare et klikk unna der.",
+                "Linjen på siden: Syntelab-logoen viser appene, under den tar ikonet for appen i dette vinduet deg tilbake til appens førsteside, og nederst finner du nyheter om programmet, Tilbakemelding, Støtte og Innstillinger.",
+                "Fil → Gå til Start går til appens førsteside, og Fil → Åpne innstillinger (Ctrl+,) åpner Innstillinger for den aktuelle appen; de andre delene er bare et klikk unna der.",
                 "Fanene øverst: hvert dokument, hver perm eller hvert verktøy du åpner har sin egen fane. En prikk på en fane betyr at den har endringer som ikke er lagret.",
                 "Appens menyer, under fanene: som en menylinje, som et bånd eller som et panel på siden, avhengig av hva du har valgt.",
                 "Resten av vinduet er den aktive fanen."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Start",
+          "title": "Appene og vinduene deres",
           "body": [
-            "Start viser appene dine og filene du nylig har åpnet. Klikk på en app for å åpne den; klikk på en nylig fil for å åpne den på nytt.",
+            "Klikk på Syntelab-logoen øverst på sidelinjen for å se appene. Klikk på en app for å åpne den i sitt eget vindu; hvis den allerede er åpen, kommer vinduet dens fram, så en app har aldri to vinduer. Søket øverst i listen finner apper, verktøy og kommandoer.",
             "Appene kan vises som kort, som ikoner med navn eller som kun ikoner, og kan dras inn i den rekkefølgen du ønsker. Med tastaturet: Alt og piltastene. «Nullstill til standard» setter dem tilbake.",
-            "Hver app har også sin egen snarvei i Start-menyen i Windows, som for eksempel «Syntelab PDF Organizer» eller «Syntelab Units»: den åpner programmet direkte i den appen. Hvis programmet allerede er åpent, åpnes appen som en fane i det."
+            "Hver app har også sin egen snarvei i Start-menyen i Windows, i mappen «Syntelab Creative», og vinduet kan festes til oppgavelinjen som et hvilket som helst program. Startes programmet uten en app, åpner det appen du brukte sist."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Fra en app: Fil → Åpne, eller Ctrl+O.",
                 "Ved å dra filer fra en mappe og slippe dem i vinduet.",
-                "Fra systemets filbehandler: dobbeltklikk på en fil som programmet er satt til å åpne. I Windows Utforsker finnes også høyreklikkmenyen (se «Høyreklikkmenyen i Windows Utforsker»).",
-                "Fra Start: listen over nylige filer."
+                "Fra systemets filbehandler: dobbeltklikk på en fil som programmet er satt til å åpne. I Windows Utforsker finnes også høyreklikkmenyen (se «Høyreklikkmenyen i Windows Utforsker»)."
               ]
             },
-            "Programmet kjører som én kopi. En fil som åpnes fra filbehandleren mens programmet kjører, åpnes som en ny fane i samme vindu."
+            "Programmet kjører som én kopi. En fil som åpnes fra filbehandleren, åpnes som en ny fane i vinduet til appen som håndterer den (en PDF i PDF Organizer), og det vinduet kommer fram."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "«Behold Start-fanen blant fanene»: når dette er av, vises Start-fanen kun mens Start selv er i forgrunnen; huset i sidefeltet fører alltid tilbake til den.",
                 "Merket på en fane kan være appens ikon eller et enkelt kvadrat i appens farge."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Bruke denne hjelpen",
           "body": [
-            "Hjelpen tilhører stedet du åpner den fra. Fra en app ser du kun manualen for den appen og kommandoene for fanen du kom fra. Fra startsiden eller fra Innstillinger ser du «Om» (programmet og hver app, kort oppsummert) og manualen for programmet. Hjelp → Om fører alltid til «Om».",
+            "Hjelpen tilhører stedet du åpner den fra. Fra en app ser du kun manualen for den appen og kommandoene for fanen du kom fra. Fra Innstillinger ser du «Om» (programmet og hver app, kort oppsummert) og manualen for programmet. Hjelp → Om fører alltid til «Om».",
             "Innholdet er til venstre; søket over dette søker gjennom alle emner, i titler og i tekst.",
             "Hjelpen åpnes i en egen fane, slik at du kan gå frem og tilbake mellom den og arbeidet ditt; F1 bringer den frem igjen. Under «Kommandoer for fanen du kom fra» er hver meny i den fanen oppført med hver av sine kommandoer, tastene deres og hva de gjør: åpne Hjelp fra fanen du har et spørsmål om."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Hva vi jobber med",
           "body": [
-            "De fire appene vil fortsette å vokse: det du rapporterer og ber om via Hjelp → Tilbakemelding avgjør mye av hva som kommer først. I tillegg forberedes nye apper. Start viser dem ikke med mindre du vil: merk av for dem i «Vis»-menyen på Start for å se dem der som «Kommer snart»:",
+            "De fire appene vil fortsette å vokse: det du rapporterer og ber om via Hjelp → Tilbakemelding avgjør mye av hva som kommer først. I tillegg forberedes nye apper. Listen over apper viser dem ikke med mindre du vil: merk av for dem i «Vis»-menyen i listen for å se dem der som «Kommer snart»:",
             {
               "points": [
                 "Convert: konvertering av filer fra ett format til et annet, blant annet kontordokumenter til PDF og tilbake, uten behov for å installere et annet program. Vi har ennå ikke funnet en åpen teknologi som når den kvaliteten vi ønsker, så den vil bare komme når den ikke skuffer deg; der verktøyene ikke eksisterer, vil vi bygge dem.",

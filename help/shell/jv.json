@@ -17,7 +17,7 @@
                 "Dev ngumpulake piranti kanggo pangembang: encode lan decode, format lan priksa, ngowahi siji wujud data dadi wujud liyane."
               ]
             },
-            "Aplikasi-aplikasi iki nganggo siji jendhela, siji setelan lan siji cara kerja, dadi apa sing sampeyan sinau ing siji aplikasi padha karo ing aplikasi liyane.",
+            "Saben aplikasi mbukak ing jendhela dhewe, kanthi tombol dhewe ing taskbar, lan aplikasi-aplikasi iki nganggo siji setelan lan siji cara kerja, dadi apa sing sampeyan sinau ing siji aplikasi padha karo ing aplikasi liyane.",
             {
               "note": "Kabeh kelakon ing komputer sampeyan. Dokumen sampeyan ora tau dikirim menyang ngendi wae, lan ora ana apa-apa bab sampeyan utawa gaweyan sampeyan sing diklumpukake."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Bilah pinggir: omah nggawa menyang Wiwitan, banjur aplikasi sampeyan, lan ing ngisor kabar program, Panemu, Panyengkuyung lan Setelan.",
-                "Ing aplikasi, Berkas → Menyang Wiwitan menyang kaca kapisan aplikasi kasebut yen ana (Units, Scribe), lan Berkas → Bukak Setelan (Ctrl+,) mbukak Setelan ing bagean aplikasi kasebut; bagean liyane mung kari saklik saka kono.",
+                "Bilah pinggir: logo Syntelab nampilake dhaptar aplikasi, ing ngisore lambang aplikasi jendhela iki mbalekake kaca kapisane, lan ing ngisor kabar program, Panemu, Panyengkuyung lan Setelan.",
+                "Berkas → Menyang Wiwitan menyang kaca kapisan aplikasi, lan Berkas → Bukak Setelan (Ctrl+,) mbukak Setelan ing bagean aplikasi kasebut; bagean liyane mung kari saklik saka kono.",
                 "Tab ing ndhuwur: saben dokumen, bendhel utawa piranti sing sampeyan bukak duwe tab dhewe. Titik ing tab tegese ana owahan sing durung disimpen.",
                 "Menu aplikasi, ing sangisore tab: minangka bilah menu, pita utawa panel ing pinggir, endi wae sing sampeyan pilih.",
                 "Sisane jendhela yaiku tab sing ana ing ngarep."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Wiwitan",
+          "title": "Aplikasi lan jendhelane",
           "body": [
-            "Wiwitan nuduhake aplikasi sampeyan lan berkas sing pungkasan sampeyan bukak. Klik aplikasi kanggo mbukak; klik berkas pungkasan kanggo mbukak maneh.",
+            "Klik logo Syntelab ing sisih ndhuwur bilah pinggir kanggo ndeleng aplikasi. Klik salah siji kanggo mbukak ing jendhelane dhewe; yen wis mbukak, jendhelane maju ing ngarep, dadi siji aplikasi ora tau duwe rong jendhela. Panelusuran ing sisih ndhuwur dhaptar nemokake aplikasi, piranti lan prentah.",
             "Aplikasi bisa dituduhake minangka kertu, ikon karo jeneng utawa ikon wae, lan bisa diseret menyang urutan sing sampeyan senengi. Nganggo keyboard: Alt lan tombol panah. \"Balekake kaya wiwitan\" mbalekake kaya asline.",
-            "Saben aplikasi uga duwe pintasan dhewe ing menu Start Windows, kayata \"Syntelab PDF Organizer\" utawa \"Syntelab Units\": iki mbukak program langsung ing aplikasi kasebut. Yen program wis mbukak, aplikasi mbukak ing kono minangka tab."
+            "Saben aplikasi uga duwe pintasan dhewe ing menu Start Windows, ing folder \"Syntelab Creative\", lan jendhelane bisa disematake ing taskbar kaya program liyane. Yen diwiwiti tanpa aplikasi, program mbukak aplikasi sing pungkasan sampeyan gunakake."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Saka aplikasi: Berkas → Bukak, utawa Ctrl+O.",
                 "Kanthi nyeret berkas saka folder lan nyelehake ing jendhela.",
-                "Saka manajer berkas sistem sampeyan: klik kaping pindho berkas sing diatur supaya dibukak dening program. Ing Windows Explorer uga ana menu klik-tengen (deleng \"Menu klik-tengen Windows Explorer\").",
-                "Saka Wiwitan: dhaptar berkas pungkasan."
+                "Saka manajer berkas sistem sampeyan: klik kaping pindho berkas sing diatur supaya dibukak dening program. Ing Windows Explorer uga ana menu klik-tengen (deleng \"Menu klik-tengen Windows Explorer\")."
               ]
             },
-            "Program mlaku minangka siji salinan. Berkas sing dibukak saka manajer berkas nalika program lagi mlaku bakal mbukak minangka tab anyar ing jendhela sing padha."
+            "Program mlaku minangka siji salinan. Berkas sing dibukak saka manajer berkas bakal mbukak minangka tab anyar ing jendhela aplikasi sing nangani (PDF ing PDF Organizer), lan jendhela kasebut maju ing ngarep."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "\"Tetep tampilake tab Wiwitan ing antarane tab\": yen dipateni, tab Wiwitan mung katon nalika Wiwitan dhewe ana ing ngarep; omah ing bilah pinggir tansah nggawa bali mrono.",
                 "Tandha ing tab bisa ikon aplikasine utawa kothak polos nganggo werna aplikasi."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Nganggo Pitulung iki",
           "body": [
-            "Pitulung gumantung saka ngendi sampeyan mbukak. Saka aplikasi sampeyan mung weruh buku pandhuan aplikasi kasebut lan prentah ing tab asal sampeyan. Saka kaca Wiwitan utawa saka Setelan sampeyan weruh \"Babagan\" (program lan saben aplikasi, kanthi ringkes) lan buku pandhuan program. Pitulung → Babagan tansah nggawa menyang \"Babagan\".",
+            "Pitulung gumantung saka ngendi sampeyan mbukak. Saka aplikasi sampeyan mung weruh buku pandhuan aplikasi kasebut lan prentah ing tab asal sampeyan. Saka Setelan sampeyan weruh \"Babagan\" (program lan saben aplikasi, kanthi ringkes) lan buku pandhuan program. Pitulung → Babagan tansah nggawa menyang \"Babagan\".",
             "Isi ana ing sisih kiwa; panggolekan ing ndhuwure nggoleki ing saben topik, ing judhul lan ing teks.",
             "Pitulung mbukak ing tab dhewe, dadi sampeyan bisa bolak-balik antarane Pitulung lan gaweyan sampeyan; F1 nggawa menyang ngarep maneh. Ing \"Prentah ing tab asal sampeyan\" saben menu ing tab kasebut didhaptar karo saben prentahe, tombole lan gunane: bukak Pitulung saka tab sing pengin sampeyan takokake."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Apa sing lagi kita garap",
           "body": [
-            "Papat aplikasi iki bakal terus tuwuh: apa sing sampeyan laporake lan jaluk liwat Pitulung → Panemu akeh nemtokake apa sing teka dhisik. Saliyane iku, aplikasi anyar lagi disiapake. Wiwitan ora nampilake kajaba sampeyan pengin: centhang ing menu \"Tampilan\" kanggo ndeleng ing kono minangka \"Enggal teka\":",
+            "Papat aplikasi iki bakal terus tuwuh: apa sing sampeyan laporake lan jaluk liwat Pitulung → Panemu akeh nemtokake apa sing teka dhisik. Saliyane iku, aplikasi anyar lagi disiapake. Dhaptar aplikasi ora nampilake kajaba sampeyan pengin: centhang ing menu \"Tampilan\" kanggo ndeleng ing kono minangka \"Enggal teka\":",
             {
               "points": [
                 "Convert: ngowahi berkas saka siji format menyang format liyane, kalebu dokumen kantor dadi PDF lan sabaliknya, tanpa kudu masang program liya. Kita durung nemokake teknologi terbuka sing tekan kualitas sing dikarepake, mula iki mung bakal teka yen ora nguciwani sampeyan; yen pirantine durung ana, kita bakal nggawe dhewe.",

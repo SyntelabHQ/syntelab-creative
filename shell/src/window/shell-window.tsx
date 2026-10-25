@@ -1,6 +1,7 @@
 import { useLaunchRequests } from '../launch/use-launch-requests';
 import { useEffect } from 'react';
 import { AppBar } from '../app-bar';
+import { useWindowTitle } from './use-window-title';
 import { AppTabView } from '../app-host';
 import { ChangelogDialog } from '../changelog';
 import { useCommandShortcuts } from '../commands';
@@ -8,14 +9,15 @@ import { HelpView } from '../help';
 import { useEscapeLeavesImmersive, useImmersive } from '../immersive';
 import { LayoutFrame } from '../layout';
 import { SettingsView, useExplorerMenuUpkeep } from '../settings';
-import { StartScreen } from '../start';
 import { useStore } from '../state/create-store';
 import { CloseGuard, TAB_PANEL_ID, tabElementId, tabs, TabStrip, useTabTitle } from '../tabs';
 import { checkForUpdatesAtStart, UpdateDialog } from '../updates';
 import styles from './shell-window.module.css';
 
-/** The main window: app bar on the side, tabs on top, the active tab below. */
+/** The window of one app: app bar on the side, tabs on top, the active tab below. */
 export function ShellWindow() {
+  // Named after its app, in the user's language: the taskbar shows the name.
+  useWindowTitle();
   // Files the program was started with, and entries chosen in the file manager's menu.
   useLaunchRequests();
   // Entries of the file manager's menu that start another program are pointed at this one.
@@ -39,7 +41,7 @@ export function ShellWindow() {
       <CloseGuard titleOf={(tabId) => titleOf(state.tabs.find((tab) => tab.id === tabId) ?? state.tabs[0]!)} />
       <div className={styles.main}>
         {!barsHidden && <TabStrip />}
-        {/* The menus, ribbon or side panel belong to apps; Start and Settings have none. */}
+        {/* The menus, ribbon or side panel belong to apps; Settings and Help have none. */}
         <LayoutFrame appId={active.kind === 'app' ? active.appId : undefined} hidden={barsHidden}>
           <main
             id={TAB_PANEL_ID}
@@ -47,7 +49,6 @@ export function ShellWindow() {
             aria-labelledby={tabElementId(active.id)}
             className={styles.panel}
           >
-            {active.kind === 'start' && <StartScreen />}
             {active.kind === 'settings' && <SettingsView />}
             {active.kind === 'help' && <HelpView />}
             {/* App tabs stay alive while hidden, so a document keeps its place. */}

@@ -40,13 +40,16 @@
   position: relative;
 }
 
-/* One or two pages side by side, centered in the strip. */
+/*
+ * One or two pages side by side, centered in the strip. Centered by layout, never by a transform: a page moved by
+ * a transform half a pixel off is drawn resampled, and every letter on it looks soft.
+ */
 .row {
   position: absolute;
-  inset-inline-start: 50%;
+  inset-inline: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
-  transform: translateX(-50%);
 }
 
 /* A page is white paper in both themes; its picture fades in when it arrives. */

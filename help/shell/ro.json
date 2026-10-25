@@ -17,7 +17,7 @@
                 "Dev adună unelte pentru dezvoltatori: codificare și decodificare, formatare și verificare, trecerea datelor dintr-o formă în alta."
               ]
             },
-            "Aplicațiile împart aceeași fereastră, aceleași setări și același fel de lucru, așa că ce înveți într-una este la fel în următoarea.",
+            "Fiecare aplicație se deschide într-o fereastră proprie, cu propriul buton pe bara de activități, iar aplicațiile împart aceleași setări și același fel de lucru, așa că ce înveți într-una este la fel în următoarea.",
             {
               "note": "Totul se petrece pe calculatorul tău. Documentele tale nu sunt trimise nicăieri și nu se adună nimic despre tine sau despre ce lucrezi."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Bara din lateral: căsuța duce la Start, apoi vin aplicațiile tale, iar jos noutățile programului, Feedback, Susținere și Setări.",
-                "Într-o aplicație, Fișier → Mergi la Start duce la prima pagină a acelei aplicații, acolo unde are una (Units, Scribe), iar Fișier → Deschide Setările (Ctrl+,) deschide Setările la partea acelei aplicații; celelalte părți sunt la un clic acolo.",
+                "Bara din lateral: sigla Syntelab arată lista aplicațiilor, sub ea pictograma aplicației din această fereastră aduce înapoi prima ei pagină, iar jos vin noutățile programului, Feedback, Susținere și Setări.",
+                "Fișier → Mergi la Start duce la prima pagină a aplicației, iar Fișier → Deschide Setările (Ctrl+,) deschide Setările la partea acelei aplicații; celelalte părți sunt la un clic acolo.",
                 "Taburile de sus: fiecare document, biblioraft sau unealtă pe care o deschizi are tabul lui. Un punct pe un tab arată că are modificări nesalvate.",
                 "Meniurile aplicației, sub taburi: ca bară de meniu, ca panglică sau ca panou lateral, după cum ai ales.",
                 "Restul ferestrei este tabul din față."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Start",
+          "title": "Aplicațiile și ferestrele lor",
           "body": [
-            "Start arată aplicațiile tale și fișierele deschise de curând. Dă clic pe o aplicație ca să o deschizi; dă clic pe un fișier recent ca să îl deschizi din nou.",
+            "Dă clic pe sigla Syntelab din partea de sus a barei laterale ca să vezi aplicațiile. Dă clic pe una ca să o deschizi în fereastra ei; dacă este deja deschisă, fereastra ei vine în față, așa că o aplicație nu are niciodată două ferestre. Căutarea din partea de sus a listei găsește aplicații, instrumente și comenzi.",
             "Aplicațiile pot fi arătate ca carduri, ca pictograme cu nume sau doar ca pictograme și pot fi trase în ordinea dorită. Din tastatură: Alt și săgețile. „Revino la ordinea implicită” le pune la loc.",
-            "Fiecare aplicație are și propria scurtătură în meniul Start din Windows, de exemplu „Syntelab PDF Organizer” sau „Syntelab Units”: deschide programul direct în acea aplicație. Dacă programul este deja deschis, aplicația se deschide în el, ca tab."
+            "Fiecare aplicație are și propria scurtătură în meniul Start din Windows, în folderul „Syntelab Creative”, iar fereastra ei poate fi fixată pe bara de activități ca orice program. Pornit fără o aplicație, programul deschide aplicația folosită ultima dată."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Dintr-o aplicație: Fișier → Deschide sau Ctrl+O.",
                 "Trăgând fișiere dintr-un folder peste fereastră.",
-                "Din managerul de fișiere al sistemului: dublu clic pe un fișier pe care programul este setat să îl deschidă. În Windows Explorer există și meniul de clic dreapta (vezi „Meniul de clic dreapta din Windows Explorer”).",
-                "Din Start: lista de fișiere recente."
+                "Din managerul de fișiere al sistemului: dublu clic pe un fișier pe care programul este setat să îl deschidă. În Windows Explorer există și meniul de clic dreapta (vezi „Meniul de clic dreapta din Windows Explorer”)."
               ]
             },
-            "Programul rulează într-un singur exemplar. Un fișier deschis din managerul de fișiere cât timp programul rulează se deschide ca tab nou în aceeași fereastră."
+            "Programul rulează într-un singur exemplar. Un fișier deschis din managerul de fișiere se deschide ca tab nou în fereastra aplicației care îl preia (un PDF în PDF Organizer), care vine în față."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "„Păstrează tabul Start printre taburi”: când este oprită, tabul Start apare doar cât timp Start este în față; căsuța de pe bara laterală duce oricând înapoi la el.",
                 "Semnul de pe un tab poate fi pictograma aplicației sau un pătrat simplu în culoarea aplicației."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Cum se folosește acest Ajutor",
           "body": [
-            "Ajutorul este al locului din care îl deschizi. Dintr-o aplicație vezi doar manualul acelei aplicații și comenzile tabului din care ai venit. De pe pagina de start sau din Setări vezi „Despre” (programul și fiecare aplicație, pe scurt) și manualul programului. Ajutor → Despre duce mereu la „Despre”.",
+            "Ajutorul este al locului din care îl deschizi. Dintr-o aplicație vezi doar manualul acelei aplicații și comenzile tabului din care ai venit. Din Setări vezi „Despre” (programul și fiecare aplicație, pe scurt) și manualul programului. Ajutor → Despre duce mereu la „Despre”.",
             "Cuprinsul este în stânga; căutarea de deasupra lui caută în toate subiectele, în titluri și în text.",
             "Ajutorul se deschide într-un tab separat, ca să poți trece între el și ce lucrezi; F1 îl aduce din nou în față. La „Comenzile tabului din care ai venit” este listat fiecare meniu al acelui tab, cu fiecare comandă, tastele ei și ce face. Deschide Ajutorul din tabul despre care ai o întrebare."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "La ce lucrăm",
           "body": [
-            "Cele patru aplicații vor continua să crească: ce semnalezi și ce ceri prin Ajutor → Feedback hotărăște în mare parte ce vine întâi. Pe lângă ele pregătim aplicații noi. Start nu le arată decât dacă vrei: bifează-le în meniul său „Vizualizare” ca să apară acolo ca „În curând”:",
+            "Cele patru aplicații vor continua să crească: ce semnalezi și ce ceri prin Ajutor → Feedback hotărăște în mare parte ce vine întâi. Pe lângă ele pregătim aplicații noi. Lista de aplicații nu le arată decât dacă vrei: bifează-le în meniul ei „Vizualizare” ca să apară acolo ca „În curând”:",
             {
               "points": [
                 "Convert: convertirea fișierelor dintr-un format în altul, între care documente Office în PDF și înapoi, fără să fie nevoie de alt program instalat. Nu am găsit încă o tehnologie deschisă care să atingă calitatea pe care o vrem, așa că va veni doar când nu te va dezamăgi; acolo unde uneltele nu există, le vom construi.",

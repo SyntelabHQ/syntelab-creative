@@ -17,7 +17,7 @@
                 "Dev gathers tools for developers: encode and decode, format and check, turn one form of data into another."
               ]
             },
-            "The apps share one window, one set of settings and one way of working, so what you learn in one is the same in the next.",
+            "Each app opens in a window of its own, with its own button on the taskbar, and the apps share one set of settings and one way of working, so what you learn in one is the same in the next.",
             {
               "note": "Everything happens on your computer. Your documents are never sent anywhere, and nothing about you or your work is collected."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "The bar on the side: the house leads to Start, then come your apps, and at the bottom the news of the program, Feedback, Support and Settings.",
-                "In an app, File → Go to Start goes to the first page of that app where it has one (Units, Scribe), and File → Open Settings (Ctrl+,) opens Settings at that app's own part; the other parts are a click away there.",
+                "The bar on the side: the Syntelab logo lists the apps, under it the icon of this window's app brings its first page back, and at the bottom come the news of the program, Feedback, Support and Settings.",
+                "File → Go to Start goes to the first page of the app, and File → Open Settings (Ctrl+,) opens Settings at that app's own part; the other parts are a click away there.",
                 "The tabs at the top: every document, binder or tool you open has a tab of its own. A dot on a tab says it has changes that are not saved.",
                 "The menus of the app, under the tabs: as a menu bar, as a ribbon or as a panel on the side, whichever you chose.",
                 "The rest of the window is the tab in front."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Start",
+          "title": "The apps and their windows",
           "body": [
-            "Start shows your apps and the files you opened lately. Click an app to open it; click a recent file to open it again.",
+            "Click the Syntelab logo at the top of the side bar to see the apps. Click one to open it in its own window; if it is already open, its window comes to the front, so an app never has two windows. The search at the top of the list finds apps, tools and commands.",
             "The apps can be shown as cards, as icons with names or as icons only, and dragged into the order you like. With the keyboard: Alt and the arrow keys. \"Reset to default\" puts them back.",
-            "Each app also has its own shortcut in the Start menu of Windows, such as \"Syntelab PDF Organizer\" or \"Syntelab Units\": it opens the program right in that app. If the program is already open, the app opens in it as a tab."
+            "Each app also has its own shortcut in the Start menu of Windows, in the \"Syntelab Creative\" folder, and its window can be pinned to the taskbar like any program. Started without an app, the program opens the app you used last."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "From an app: File → Open, or Ctrl+O.",
                 "By dropping files from a folder onto the window.",
-                "From the file manager of your system: double-click a file the program is set to open. In Windows Explorer there is also the right-click menu (see \"The right-click menu of Windows Explorer\").",
-                "From Start: the list of recent files."
+                "From the file manager of your system: double-click a file the program is set to open. In Windows Explorer there is also the right-click menu (see \"The right-click menu of Windows Explorer\")."
               ]
             },
-            "The program runs as one copy. A file opened from the file manager while the program is running opens as a new tab in the same window."
+            "The program runs as one copy. A file opened from the file manager opens as a new tab in the window of the app that takes it (a PDF in PDF Organizer), which comes to the front."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "\"Keep the Start tab among the tabs\": when off, the Start tab shows only while Start itself is in front; the house on the side bar always leads back to it.",
                 "The mark on a tab can be the icon of its app or a plain square in the app's colour."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Using this Help",
           "body": [
-            "Help belongs to where you open it from. From an app you see only the manual of that app and the commands of the tab you came from. From the start page or from Settings you see \"About\" (the program and each app, in short) and the manual of the program. Help → About always leads to \"About\".",
+            "Help belongs to where you open it from. From an app you see only the manual of that app and the commands of the tab you came from. From Settings you see \"About\" (the program and each app, in short) and the manual of the program. Help → About always leads to \"About\".",
             "The contents are on the left; the search above them looks through every topic, in titles and in text.",
             "Help opens in a tab of its own, so you can go back and forth between it and your work; F1 brings it to the front again. Under \"Commands of the tab you came from\" every menu of that tab is listed with each of its commands, its keys and what it does: open Help from the tab you have a question about."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "What we are working on",
           "body": [
-            "The four apps will keep growing: what you report and ask for through Help → Feedback decides much of what comes first. Beside them, new apps are being prepared. Start does not show them unless you want to: tick them in its \"View\" menu to see them there as \"Coming soon\":",
+            "The four apps will keep growing: what you report and ask for through Help → Feedback decides much of what comes first. Beside them, new apps are being prepared. The list of apps does not show them unless you want to: tick them in its \"View\" menu to see them there as \"Coming soon\":",
             {
               "points": [
                 "Convert: converting files from one format to another, among them office documents to PDF and back, without needing another program to be installed. We have not yet found an open technology that reaches the quality we want, so it will come only when it does not disappoint you; where the tools do not exist, we will build them.",

@@ -17,7 +17,7 @@
                 "Dev apvieno rīkus izstrādātājiem: kodēšana un atkodēšana, formatēšana un pārbaude, datu pārveidošana no vienas formas citā."
               ]
             },
-            "Lietotnēm ir kopīgs logs, kopīgi iestatījumi un vienots darba veids, tāpēc tas, ko iemācāties vienā, ir tāpat arī nākamajā.",
+            "Katra lietotne atveras savā logā, ar savu pogu uzdevumjoslā, un lietotnēm ir kopīgi iestatījumi un vienots darba veids, tāpēc tas, ko iemācāties vienā, ir tāpat arī nākamajā.",
             {
               "note": "Viss notiek jūsu datorā. Jūsu dokumenti nekad netiek nekur sūtīti, un nekas par jums vai jūsu darbu netiek vākts."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Sānu josla: māja ved uz Sākumu, tad seko jūsu lietotnes, un apakšā programmas jaunumi, Atsauksmes, Atbalsts un Iestatījumi.",
-                "Lietotnē Fails → Doties uz Sākumu ved uz šīs lietotnes pirmo lapu, ja tai tāda ir (Units, Scribe), un Fails → Atvērt iestatījumus (Ctrl+,) atver Iestatījumus šīs lietotnes sadaļā; pārējās sadaļas tur ir viena klikšķa attālumā.",
+                "Sānu josla: Syntelab logotips parāda lietotņu sarakstu, zem tā šī loga lietotnes ikona atgriež tās pirmo lapu, un apakšā programmas jaunumi, Atsauksmes, Atbalsts un Iestatījumi.",
+                "Fails → Doties uz Sākumu ved uz lietotnes pirmo lapu, un Fails → Atvērt iestatījumus (Ctrl+,) atver Iestatījumus šīs lietotnes sadaļā; pārējās sadaļas tur ir viena klikšķa attālumā.",
                 "Cilnes augšā: katram atvērtajam dokumentam, sējumam vai rīkam ir sava cilne. Punkts uz cilnes nozīmē, ka tajā ir nesaglabātas izmaiņas.",
                 "Lietotnes izvēlnes zem cilnēm: kā izvēlnes josla, kā lente vai kā sānu panelis, atkarībā no jūsu izvēles.",
                 "Pārējais logs ir priekšplānā esošā cilne."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Sākums",
+          "title": "Lietotnes un to logi",
           "body": [
-            "Sākumā redzamas jūsu lietotnes un nesen atvērtie faili. Noklikšķiniet uz lietotnes, lai to atvērtu; noklikšķiniet uz nesena faila, lai to atvērtu vēlreiz.",
+            "Noklikšķiniet uz Syntelab logotipa sānu joslas augšdaļā, lai redzētu lietotnes. Noklikšķiniet uz kādas, lai to atvērtu savā logā; ja tā jau ir atvērta, tās logs tiek pārvietots priekšplānā, tāpēc lietotnei nekad nav divu logu. Meklēšana saraksta augšdaļā atrod lietotnes, rīkus un komandas.",
             "Lietotnes var rādīt kā kartītes, kā ikonas ar nosaukumiem vai tikai kā ikonas, un tās var vilkt vēlamajā secībā. Ar tastatūru: Alt un bulttaustiņi. \"Atiestatīt noklusējumu\" tās noliek atpakaļ.",
-            "Katrai lietotnei ir arī sava saīsne Windows izvēlnē Sākt, piemēram, \"Syntelab PDF Organizer\" vai \"Syntelab Units\": tā atver programmu uzreiz šajā lietotnē. Ja programma jau ir atvērta, lietotne tajā atveras kā cilne."
+            "Katrai lietotnei ir arī sava saīsne Windows izvēlnē Sākt, mapē \"Syntelab Creative\", un tās logu var piespraust uzdevumjoslai kā jebkuru programmu. Ja programma tiek palaista bez lietotnes, tā atver pēdējo izmantoto lietotni."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "No lietotnes: Fails → Atvērt vai Ctrl+O.",
                 "Nometot failus no mapes uz loga.",
-                "No sistēmas failu pārvaldnieka: veiciet dubultklikšķi uz faila, kura atvēršanai ir iestatīta programma. Windows failu pārlūkā ir arī labā klikšķa izvēlne (skatiet \"Windows failu pārlūka labā klikšķa izvēlne\").",
-                "No Sākuma: neseno failu saraksts."
+                "No sistēmas failu pārvaldnieka: veiciet dubultklikšķi uz faila, kura atvēršanai ir iestatīta programma. Windows failu pārlūkā ir arī labā klikšķa izvēlne (skatiet \"Windows failu pārlūka labā klikšķa izvēlne\")."
               ]
             },
-            "Programma darbojas kā viena kopija. Fails, kas atvērts no failu pārvaldnieka, kamēr programma darbojas, atveras kā jauna cilne tajā pašā logā."
+            "Programma darbojas kā viena kopija. Fails, kas atvērts no failu pārvaldnieka, atveras kā jauna cilne tās lietotnes logā, kas to apstrādā (PDF – PDF Organizer), un šis logs tiek pārvietots priekšplānā."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "\"Paturēt cilni Sākums starp cilnēm\": ja izslēgts, cilne Sākums tiek rādīta tikai tad, kad pats Sākums ir priekšplānā; māja sānu joslā vienmēr ved atpakaļ uz to.",
                 "Cilnes zīme var būt tās lietotnes ikona vai vienkāršs kvadrāts lietotnes krāsā."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Šīs Palīdzības lietošana",
           "body": [
-            "Palīdzība ir atkarīga no vietas, no kuras to atverat. No lietotnes redzat tikai šīs lietotnes rokasgrāmatu un tās cilnes komandas, no kuras atnācāt. No sākuma lapas vai Iestatījumiem redzat \"Par programmu\" (īsi par programmu un katru lietotni) un programmas rokasgrāmatu. Palīdzība → Par programmu vienmēr ved uz \"Par programmu\".",
+            "Palīdzība ir atkarīga no vietas, no kuras to atverat. No lietotnes redzat tikai šīs lietotnes rokasgrāmatu un tās cilnes komandas, no kuras atnācāt. No Iestatījumiem redzat \"Par programmu\" (īsi par programmu un katru lietotni) un programmas rokasgrāmatu. Palīdzība → Par programmu vienmēr ved uz \"Par programmu\".",
             "Saturs ir kreisajā pusē; meklēšana virs tā pārlūko visas tēmas, virsrakstos un tekstā.",
             "Palīdzība atveras atsevišķā cilnē, tāpēc varat pārslēgties starp to un savu darbu; F1 to atkal parāda priekšplānā. Sadaļā \"Cilnes, no kuras atnācāt, komandas\" ir uzskaitīta katra šīs cilnes izvēlne ar visām tās komandām, to taustiņiem un aprakstu, ko tās dara: atveriet Palīdzību no tās cilnes, par kuru jums ir jautājums."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Pie kā mēs strādājam",
           "body": [
-            "Četras lietotnes turpinās augt: tas, ko ziņojat un lūdzat, izmantojot Palīdzība → Atsauksmes, lielā mērā nosaka, kas nāks vispirms. Līdzās tām tiek gatavotas jaunas lietotnes. Sākums tās nerāda, ja vien jūs to nevēlaties: atzīmējiet tās Sākuma izvēlnē \"Skats\", lai tās tur redzētu kā \"Drīzumā\":",
+            "Četras lietotnes turpinās augt: tas, ko ziņojat un lūdzat, izmantojot Palīdzība → Atsauksmes, lielā mērā nosaka, kas nāks vispirms. Līdzās tām tiek gatavotas jaunas lietotnes. Lietotņu saraksts tās nerāda, ja vien jūs to nevēlaties: atzīmējiet tās saraksta izvēlnē \"Skats\", lai tās tur redzētu kā \"Drīzumā\":",
             {
               "points": [
                 "Convert: failu konvertēšana no viena formāta citā, tostarp biroja dokumentu konvertēšana par PDF un atpakaļ, bez vajadzības instalēt citu programmu. Mēs vēl neesam atraduši atvērtu tehnoloģiju, kas sasniegtu vēlamo kvalitāti, tāpēc tā nāks tikai tad, kad jūs nepievils; kur rīku nav, mēs tos izveidosim.",

@@ -17,7 +17,7 @@
                 "Ang Dev ay nagtitipon ng mga tool para sa mga developer: mag-encode at mag-decode, mag-format at mag-check, at gawing ibang anyo ang data."
               ]
             },
-            "Iisang window, iisang hanay ng mga setting at iisang paraan ng paggawa ang gamit ng mga app, kaya ang natutunan mo sa isa ay pareho rin sa susunod.",
+            "Bumubukas ang bawat app sa sarili nitong window, na may sariling button sa taskbar, at iisang hanay ng mga setting at iisang paraan ng paggawa ang gamit ng mga app, kaya ang natutunan mo sa isa ay pareho rin sa susunod.",
             {
               "note": "Lahat ay nangyayari sa iyong computer. Ang iyong mga dokumento ay hindi kailanman ipinapadala kahit saan, at walang anumang impormasyon tungkol sa iyo o sa iyong trabaho ang kinokolekta."
             }
@@ -29,8 +29,8 @@
           "body": [
             {
               "points": [
-                "Ang bar sa gilid: ang bahay ay papunta sa Simula, kasunod ang iyong mga app, at sa ibaba ang mga balita ng programa, Puna, Suporta at Mga Setting.",
-                "Sa isang app, ang File → Pumunta sa Simula ay pupunta sa unang pahina ng app na iyon kung mayroon ito (Units, Scribe), at ang File → Buksan ang Mga Setting (Ctrl+,) ay magbubukas ng Mga Setting sa sariling bahagi ng app na iyon; isang click lang mula roon ang ibang bahagi.",
+                "Ang bar sa gilid: inililista ng logo ng Syntelab ang mga app, sa ilalim nito ibinabalik ng icon ng app ng window na ito ang unang pahina nito, at sa ibaba ang mga balita ng programa, Puna, Suporta at Mga Setting.",
+                "Ang File → Pumunta sa Simula ay pupunta sa unang pahina ng app, at ang File → Buksan ang Mga Setting (Ctrl+,) ay magbubukas ng Mga Setting sa sariling bahagi ng app na iyon; isang click lang mula roon ang ibang bahagi.",
                 "Ang mga tab sa itaas: bawat dokumento, binder o tool na bubuksan mo ay may sariling tab. Ang tuldok sa isang tab ay nagsasabing may mga pagbabagong hindi pa na-save.",
                 "Ang mga menu ng app, sa ilalim ng mga tab: bilang isang menu bar, bilang isang ribbon o bilang isang panel sa gilid, depende sa iyong pinili.",
                 "Ang natitirang bahagi ng window ay ang tab na nasa harap."
@@ -41,11 +41,11 @@
         },
         {
           "id": "start",
-          "title": "Simula",
+          "title": "Ang mga app at ang kanilang mga window",
           "body": [
-            "Ipinapakita ng Simula ang iyong mga app at ang mga file na binuksan mo kamakailan. I-click ang isang app para buksan ito; i-click ang isang kamakailang file para buksan itong muli.",
+            "I-click ang logo ng Syntelab sa itaas ng bar sa gilid para makita ang mga app. I-click ang isa para buksan ito sa sarili nitong window; kung nakabukas na ito, lilitaw sa harap ang window nito, kaya hindi kailanman nagkakaroon ng dalawang window ang isang app. Hinahanap ng search sa itaas ng listahan ang mga app, tool at command.",
             "Maaaring ipakita ang mga app bilang mga card, bilang mga icon na may pangalan o bilang mga icon lamang, at i-drag sa pagkakasunod-sunod na gusto mo. Gamit ang keyboard: Alt at ang mga arrow key. Ibinabalik sila ng \"I-reset sa default\".",
-            "Ang bawat app ay mayroon ding sariling shortcut sa Start menu ng Windows, gaya ng \"Syntelab PDF Organizer\" o \"Syntelab Units\": binubuksan nito ang programa nang direkta sa app na iyon. Kung nakabukas na ang programa, bubukas ang app bilang isang tab dito."
+            "Ang bawat app ay mayroon ding sariling shortcut sa Start menu ng Windows, sa folder na \"Syntelab Creative\", at maaaring i-pin sa taskbar ang window nito gaya ng anumang programa. Kapag sinimulan nang walang app, binubuksan ng programa ang app na huli mong ginamit."
           ]
         },
         {
@@ -56,11 +56,10 @@
               "points": [
                 "Mula sa isang app: File → Buksan, o Ctrl+O.",
                 "Sa pamamagitan ng pag-drop ng mga file mula sa isang folder patungo sa window.",
-                "Mula sa file manager ng iyong system: i-double-click ang file na nakatakdang buksan ng programa. Sa Windows Explorer, mayroon ding right-click menu (tingnan ang \"Ang right-click menu ng Windows Explorer\").",
-                "Mula sa Simula: ang listahan ng mga kamakailang file."
+                "Mula sa file manager ng iyong system: i-double-click ang file na nakatakdang buksan ng programa. Sa Windows Explorer, mayroon ding right-click menu (tingnan ang \"Ang right-click menu ng Windows Explorer\")."
               ]
             },
-            "Tumatakbo ang programa bilang isang kopya. Ang file na binuksan mula sa file manager habang tumatakbo ang programa ay bubukas bilang isang bagong tab sa parehong window."
+            "Tumatakbo ang programa bilang isang kopya. Ang file na binuksan mula sa file manager ay bubukas bilang isang bagong tab sa window ng app na tumatanggap dito (isang PDF sa PDF Organizer), na lilitaw sa harap."
           ]
         }
       ]
@@ -105,7 +104,6 @@
           "body": [
             {
               "points": [
-                "\"Panatilihin ang tab ng Simula sa mga tab\": kapag naka-off, ipinapakita lamang ang tab ng Simula habang nasa harap ang Simula mismo; laging bumabalik doon ang bahay sa bar sa gilid.",
                 "Ang marka sa isang tab ay maaaring icon ng app nito o isang simpleng parisukat sa kulay ng app."
               ]
             },
@@ -151,7 +149,7 @@
           "id": "help",
           "title": "Paggamit ng Tulong na ito",
           "body": [
-            "Nakadepende ang Tulong sa kung saan mo ito binuksan. Mula sa isang app, makikita mo lamang ang manwal ng app na iyon at ang mga command ng tab na pinanggalingan mo. Mula sa pahina ng Simula o mula sa Mga Setting, makikita mo ang \"Tungkol sa\" (ang programa at bawat app, sa maikli) at ang manwal ng programa. Laging humahantong ang Tulong → Tungkol sa sa \"Tungkol sa\".",
+            "Nakadepende ang Tulong sa kung saan mo ito binuksan. Mula sa isang app, makikita mo lamang ang manwal ng app na iyon at ang mga command ng tab na pinanggalingan mo. Mula sa Mga Setting, makikita mo ang \"Tungkol sa\" (ang programa at bawat app, sa maikli) at ang manwal ng programa. Laging humahantong ang Tulong → Tungkol sa sa \"Tungkol sa\".",
             "Nasa kaliwa ang nilalaman; hinahanap ng paghahanap sa itaas nito ang bawat paksa, sa mga pamagat at sa teksto.",
             "Bumubukas ang Tulong sa sarili nitong tab, kaya maaari kang magpabalik-balik dito at sa iyong ginagawa; muli itong inilalabas sa harap ng F1. Sa ilalim ng \"Mga command ng tab na pinanggalingan mo\", nakalista ang bawat menu ng tab na iyon kasama ang bawat command nito, ang mga key nito at kung ano ang ginagawa nito: buksan ang Tulong mula sa tab na may tanong ka."
           ]
@@ -286,7 +284,7 @@
           "id": "coming",
           "title": "Ang aming mga ginagawa",
           "body": [
-            "Patuloy na lalaki ang apat na app: ang mga iniuulat at hinihiling mo sa pamamagitan ng Tulong → Puna ang magpapasya ng malaking bahagi ng uunahin. Bukod sa mga ito, may mga bagong app na inihahanda. Hindi ipinapakita ng Simula ang mga ito maliban kung gusto mo: lagyan ng tsek ang mga ito sa menu na \"Tingnan\" ng Simula para makita mo roon bilang \"Darating na\":",
+            "Patuloy na lalaki ang apat na app: ang mga iniuulat at hinihiling mo sa pamamagitan ng Tulong → Puna ang magpapasya ng malaking bahagi ng uunahin. Bukod sa mga ito, may mga bagong app na inihahanda. Hindi ipinapakita ng listahan ng mga app ang mga ito maliban kung gusto mo: lagyan ng tsek ang mga ito sa menu nitong \"Tingnan\" para makita mo roon bilang \"Darating na\":",
             {
               "points": [
                 "Convert: pag-convert ng mga file mula sa isang format patungo sa iba, kabilang ang mga office document patungong PDF at pabalik, nang hindi kailangang mag-install ng ibang programa. Hindi pa kami nakakahanap ng bukas na teknolohiyang umaabot sa kalidad na gusto namin, kaya darating lamang ito kapag hindi ka na nito bibiguin; kung saan walang tool, kami ang gagawa nito.",

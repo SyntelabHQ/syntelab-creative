@@ -2,6 +2,7 @@
 //!
 //! - [`pages`]: full pages, drawn only when asked (the interface asks only for
 //!   what is on screen).
+//! - [`tiles`]: pieces of pages, for a page zoomed far in.
 //! - [`thumbnails`]: small pages, drawn in the background and kept on disk.
 //! - [`search`]: finding text, without holding up the drawing.
 //! - [`worker`] and [`queue`]: the thread and waiting line both are built on.
@@ -10,6 +11,7 @@ pub mod pages;
 pub mod queue;
 pub mod search;
 pub mod thumbnails;
+pub mod tiles;
 pub mod worker;
 
 use std::fmt;
