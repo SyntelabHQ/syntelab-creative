@@ -6,6 +6,7 @@ import { openSitePage } from '../links';
 import { preferences, updatePreferences } from '../preferences/preferences-store';
 import { showSettingsSection } from '../settings/settings-section';
 import { tabs } from '../tabs';
+import { openPalette } from './search-palette';
 
 /**
  * The top-level menus every layout shows first and last; an app's own menus
@@ -45,8 +46,21 @@ function openSettings(): void {
   tabs.openSettings();
 }
 
+/** Puts the cursor in the search on top of the tab. */
+function focusSearch(): void {
+  openPalette();
+}
+
 /** Commands the shell itself offers. Apps add theirs to the same registry. */
 const SHELL_COMMANDS: readonly Command[] = [
+  // In no menu: the search is on top of every tab, and these are its keys.
+  {
+    id: 'shell.search',
+    labelKey: 'shell.search.focus',
+    icon: 'magnifying-glass',
+    shortcut: 'Mod+K',
+    run: focusSearch,
+  },
   {
     id: 'shell.goToStart',
     labelKey: 'shell.command.goToStart',
@@ -85,7 +99,7 @@ const SHELL_COMMANDS: readonly Command[] = [
     icon: 'circle-half-stroke',
     run: () => updatePreferences({ theme: 'auto' }),
   },
-  // The changelog has its place in the app bar; here it is only found by the search.
+  // The changelog has its place under the list of tools; here it is only found by the search.
   {
     id: 'shell.openChangelog',
     labelKey: 'shell.changelog.title',
@@ -178,5 +192,5 @@ function createShellRegistry(): CommandRegistry {
   return registry;
 }
 
-/** The one registry behind the menus, the ribbon, the side panel and the search. */
+/** The one registry behind the menus, the tools, their bars and the search. */
 export const commandRegistry = createShellRegistry();

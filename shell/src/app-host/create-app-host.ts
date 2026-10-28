@@ -1,6 +1,7 @@
 import type { AppHost, AppSettingsHost, AppTabParams } from '@syntelab/shell-api';
 import { commandRegistry } from '../commands';
 import { setImmersive } from '../immersive';
+import { setIdleBar, showTool } from '../layout/tools/use-tools';
 import { appResourceUrl, invokeApp, isDefaultPdfApp, openDefaultAppSettings, pathsOfDropped, pickFiles, pickFolder, openExternal, pickSavePath, readWebPage, saveWebPage, shareFile, showInFolder } from '../platform';
 import { printImages } from '../print';
 import { showSettingsSection } from '../settings/settings-section';
@@ -10,7 +11,7 @@ import { loadAppData, saveAppData } from './app-data';
 const NO_PARAMS = Object.freeze({});
 
 /** Everything in an `AppHost` that stays the same while its tab lives. */
-export type AppServices = Omit<AppHost, 'active' | 'immersive'>;
+export type AppServices = Omit<AppHost, 'active' | 'immersive' | 'tool' | 'tools'>;
 
 /**
  * The shell's services for one tab of one app. Created once per tab (a tab
@@ -36,6 +37,8 @@ export function createAppServices(appId: string, tabId: string, params: AppTabPa
     isDefaultPdfApp,
     openDefaultAppSettings,
     setImmersive,
+    showTool: (menuKey) => showTool(tabId, menuKey),
+    setIdleBar: (shown) => setIdleBar(tabId, shown),
     registerCommands: (commands) => commandRegistry.registerAll(commands),
     loadData: (key) => loadAppData(appId, key),
     saveData: (key, value) => saveAppData(appId, key, value),

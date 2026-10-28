@@ -46,10 +46,10 @@
   flex-direction: column;
   justify-content: center;
   gap: 4px;
-  min-width: 68px;
-  max-width: 104px;
-  min-height: 60px;
-  padding: 6px 8px;
+  min-width: 56px;
+  max-width: 88px;
+  min-height: 58px;
+  padding: 6px;
   font-size: 12px;
   line-height: 1.2;
   text-align: center;
@@ -59,7 +59,7 @@
   height: 22px;
 }
 
-/* At most two lines of name, so every tab of the ribbon keeps its height. */
+/* At most two lines of name, so every tool's bar keeps its height. */
 .button[data-shape='tile'] .label {
   display: -webkit-box;
   overflow: hidden;

@@ -18,3 +18,5 @@ export type { ResolvedTheme, ThemePreference, ThemeTone } from './theme/theme';
 export { tooltip } from './tooltip/tooltip';
 export { installTooltips } from './tooltip/tooltip-layer';
 export type { TooltipSide } from './tooltip/tooltip';
+export { ToolCards } from './cards/tool-cards';
+export type { ToolCard, ToolCardsProps } from './cards/tool-cards';

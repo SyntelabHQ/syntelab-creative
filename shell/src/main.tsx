@@ -15,7 +15,7 @@ import { Shell } from './shell';
 registerBrandFonts();
 // Tooltips are there unless the user turned them off in Settings; the choice counts at once.
 /** How long the pointer rests on a control before its tooltip shows, when it is not at once. */
-const TOOLTIP_WAIT = 2000;
+const TOOLTIP_WAIT = 1000;
 const tooltipsAs = (mode: ReturnType<typeof preferences.get>['tooltips']) => (mode === 'off' ? null : installTooltips(mode === 'instant' ? 0 : TOOLTIP_WAIT));
 let tooltipMode = preferences.get().tooltips;
 let removeTooltips = tooltipsAs(tooltipMode);

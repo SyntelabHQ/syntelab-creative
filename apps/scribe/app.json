@@ -74,7 +74,18 @@
     "color": "#7B1FA2",
     "icon": "assets/icon.svg"
   },
-  "defaultLayout": "ribbon",
+  "tools": [
+    { "menuKey": "scribe.menu.replace", "icon": "magnifying-glass", "hintKey": "scribe.menuHint.replace", "color": "blue", "quick": true },
+    { "menuKey": "scribe.menu.lines", "icon": "arrows-up-down", "hintKey": "scribe.menuHint.lines", "color": "green", "quick": true },
+    { "menuKey": "scribe.menu.case", "icon": "font", "hintKey": "scribe.menuHint.case", "color": "purple", "quick": true },
+    { "menuKey": "scribe.menu.direction", "icon": "right-left", "hintKey": "scribe.menuHint.direction", "color": "teal" },
+    { "menuKey": "scribe.menu.clean", "icon": "eraser", "hintKey": "scribe.menuHint.clean", "color": "orange", "quick": true },
+    { "menuKey": "scribe.menu.make", "icon": "pen-to-square", "hintKey": "scribe.menuHint.make", "color": "amber" },
+    { "menuKey": "scribe.menu.compare", "icon": "code-compare", "hintKey": "scribe.menuHint.compare", "color": "violet", "quick": true },
+    { "menuKey": "scribe.menu.stats", "icon": "ruler", "hintKey": "scribe.menuHint.stats", "color": "slate", "run": "scribe.stats" },
+    { "menuKey": "scribe.menu.recipes", "icon": "list-check", "hintKey": "scribe.menuHint.recipes", "color": "cyan", "run": "scribe.recipes" }
+  ],
+  "idleTool": { "labelKey": "scribe.idle.writing", "icon": "pen" },
   "fileTypes": [
     ".txt",
     ".md",

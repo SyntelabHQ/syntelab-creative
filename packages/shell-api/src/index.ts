@@ -15,7 +15,7 @@ export type {
   PrintPage,
 } from './app-frontend';
 export { API_VERSION, localizeText } from './app-manifest';
-export type { AppBrand, AppEntry, AppManifest, AppStatus, LocalizedText } from './app-manifest';
+export type { AppBrand, AppEntry, AppManifest, AppStatus, IdleTool, LocalizedText, ToolColor, ToolEntry } from './app-manifest';
 export { createDataStore, useDataStore } from './data-store';
 export type { DataStore } from './data-store';
 export { fileEnding, fileName, folderOf } from './file-path';

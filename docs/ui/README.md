@@ -1,7 +1,8 @@
 # Interface (shared by all apps)
 
-- **Layouts:** classic, ribbon (quick collapse), side panel (left/right).
-  Chosen on first run with a preview; changeable any time.
+- **Frame:** the same in every app: a top bar (menus, search with Ctrl+K,
+  main commands), the app's tools on the side, named by task, and the bar
+  of the open tool over the content, closed with Done.
 - **Search** across all commands and settings, in the user's language and English.
 - **Customization:** buttons, positions, shortcuts.
 - **Themes:** light, dark, automatic.

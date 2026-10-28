@@ -8,7 +8,7 @@ pub mod app;
 pub mod manifest;
 
 pub use app::{AppContext, AppError, Resource, ResourceReply, ResourceRequest, SyntelabApp};
-pub use manifest::{AppBrand, AppManifest, AppStatus, LocalizedText};
+pub use manifest::{AppBrand, AppManifest, AppStatus, IdleTool, LocalizedText, ToolEntry};
 
 /// Contract version this shell understands. Apps declare theirs as
 /// `apiVersion` in `app.json`; the shell refuses any other value.

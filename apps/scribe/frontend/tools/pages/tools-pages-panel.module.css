@@ -47,35 +47,7 @@
   padding-inline-end: 2px;
 }
 
-.group {
-  display: flex;
-  flex: none;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.groupName {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 2px 2px;
-  border: 0;
-  background: none;
-  color: var(--sc-muted);
-  font: inherit;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-align: start;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.groupName:hover {
-  color: var(--sc-text);
-}
-
-/* The tools of a group, as many to a line as the panel has room for: two when it is narrow, more when it is dragged wider. */
+/* The tools found, as many to a line as the panel has room for: two when it is narrow, more when it is dragged wider. */
 .tiles {
   display: grid;
   flex: none;

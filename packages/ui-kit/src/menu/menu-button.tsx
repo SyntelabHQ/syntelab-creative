@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useId, useRef, useState } from 'react';
-import type { KeyboardEvent, ReactNode } from 'react';
+import { forwardRef, useCallback, useEffect, useId, useRef, useState } from 'react';
+import type { ForwardRefExoticComponent, KeyboardEvent, ReactNode, RefAttributes } from 'react';
 import { Button, IconButton } from '../button/button';
 import { useDismiss } from '../dismiss/use-dismiss';
 import { Icon } from '../icon/icon';
@@ -24,6 +24,8 @@ export interface MenuItem {
   readonly hint?: string;
   /** The keys that do the same, already written for the reader: `Ctrl+S`. */
   readonly shortcut?: string;
+  /** Items shown beside this one, in a menu of their own: the item opens them instead of doing something. */
+  readonly submenu?: readonly MenuSection[];
   readonly onSelect: () => void;
 }
 
@@ -51,6 +53,8 @@ export interface MenuButtonProps {
   readonly sections: readonly MenuSection[];
   /** Which edge of the button the menu lines up with. */
   readonly align?: 'start' | 'end';
+  /** Where the menu opens: under its button (default), or over it, for a button near the bottom of the window. */
+  readonly opens?: 'below' | 'above';
   readonly tooltipSide?: TooltipSide;
 }
 
@@ -69,9 +73,9 @@ const WINDOW_MARGIN = 12;
  */
 let openBarMenu: { readonly close: () => void } | null = null;
 
-/** A button that opens a menu under it. */
+/** A button that opens a menu under it (or over it). */
 export function MenuButton(props: MenuButtonProps) {
-  const { label, variant = 'icon', children, icon, closeOnLeave = false, sections, align = 'end', tooltipSide = 'bottom-end' } = props;
+  const { label, variant = 'icon', children, icon, closeOnLeave = false, sections, align = 'end', opens = 'below', tooltipSide = 'bottom-end' } = props;
   const [open, setOpen] = useState(false);
   /** How tall the menu may be before it scrolls: the room under its button. */
   const [maxHeight, setMaxHeight] = useState<number | undefined>(undefined);
@@ -93,14 +97,15 @@ export function MenuButton(props: MenuButtonProps) {
   useEffect(() => stay, []);
 
   const enabledItems = () =>
-    [...(menuRef.current?.querySelectorAll<HTMLElement>('[role^="menuitem"]:not(:disabled)') ?? [])];
+    [...(menuRef.current?.querySelectorAll<HTMLElement>(':scope > div > [role^="menuitem"]:not(:disabled)') ?? [])];
 
   useEffect(() => {
     if (!open) return;
     const button = containerRef.current?.getBoundingClientRect();
-    if (button) setMaxHeight(Math.max(120, window.innerHeight - button.bottom - 6 - WINDOW_MARGIN));
+    const room = button && (opens === 'above' ? button.top : window.innerHeight - button.bottom);
+    if (room !== undefined) setMaxHeight(Math.max(120, room - 6 - WINDOW_MARGIN));
     enabledItems()[0]?.focus({ preventScroll: true });
-  }, [open]);
+  }, [open, opens]);
 
   // A menu of the bar tells the others it is the open one.
   useEffect(() => {
@@ -159,16 +164,103 @@ export function MenuButton(props: MenuButtonProps) {
         </IconButton>
       )}
       {/* The outer box scrolls a menu taller than the window; see the styles for why it is wider than the menu. */}
-      <div className={styles.menu} data-align={align} hidden={!open} style={{ maxHeight }}>
-      <div ref={menuRef} id={menuId} role="menu" aria-label={label} className={styles.panel} onKeyDown={onKeyDown}>
-        {sections.map((section) => (
-          <div key={section.id} role="group" aria-label={section.title} className={styles.section}>
-            {section.title && (
-              <div role="presentation" className={styles.sectionTitle}>
-                {section.title}
-              </div>
-            )}
-            {section.items.map((item) => (
+      <div className={styles.menu} data-align={align} data-opens={opens} hidden={!open} style={{ maxHeight }}>
+        <MenuPanel ref={menuRef} id={menuId} label={label} sections={sections} onClose={close} onKeyDown={onKeyDown} />
+      </div>
+    </div>
+  );
+}
+
+interface MenuPanelProps {
+  readonly id?: string;
+  readonly label: string;
+  readonly sections: readonly MenuSection[];
+  /** Closes the whole menu, after an item did its work. */
+  readonly onClose: () => void;
+  readonly onKeyDown: (event: KeyboardEvent<HTMLDivElement>) => void;
+}
+
+/** How wide a submenu may be, for the room it needs beside its menu. */
+const SUBMENU_ROOM = 280;
+
+/** The items of a menu, by sections; an item with a submenu opens it beside itself. */
+const MenuPanel: ForwardRefExoticComponent<MenuPanelProps & RefAttributes<HTMLDivElement>> = forwardRef<HTMLDivElement, MenuPanelProps>(function MenuPanelBody({ id, label, sections, onClose, onKeyDown }, ref) {
+  /** The item whose submenu is open, and where that submenu stands in the window. */
+  const [sub, setSub] = useState<{ readonly id: string; readonly top: number; readonly start: number; readonly end: number; readonly flipped: boolean } | null>(null);
+  const subRef = useRef<HTMLDivElement>(null);
+  const subItem = sections.flatMap((section) => section.items).find((item) => item.id === sub?.id);
+
+  const openSub = (item: MenuItem, button: HTMLElement, focus: boolean) => {
+    const box = button.closest('[role="menu"]')?.getBoundingClientRect();
+    const row = button.getBoundingClientRect();
+    if (!box) return;
+    // Where there is no room beside the menu (a menu at the edge of the window), the submenu opens on its other side.
+    const rtlNow = document.documentElement.dir === 'rtl';
+    const flipped = rtlNow ? box.left < SUBMENU_ROOM : window.innerWidth - box.right < SUBMENU_ROOM;
+    setSub({ id: item.id, top: row.top - 7, start: box.right - 4, end: box.left + 4, flipped });
+    if (focus) requestAnimationFrame(() => subRef.current?.querySelector<HTMLElement>('[role^="menuitem"]:not(:disabled)')?.focus());
+  };
+
+  const onSubKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    const items = [...(subRef.current?.querySelectorAll<HTMLElement>(':scope > div > [role^="menuitem"]:not(:disabled)') ?? [])];
+    const index = items.indexOf(document.activeElement as HTMLElement);
+    let next: HTMLElement | undefined;
+    if (event.key === 'ArrowDown') next = items[(index + 1) % items.length];
+    else if (event.key === 'ArrowUp') next = items[(index - 1 + items.length) % items.length];
+    else if (event.key === 'ArrowLeft' || event.key === 'Escape') {
+      event.preventDefault();
+      event.stopPropagation();
+      const owner = sub?.id;
+      setSub(null);
+      if (owner) document.querySelector<HTMLElement>(`[data-submenu-of="${CSS.escape(owner)}"]`)?.focus();
+      return;
+    }
+    if (!next) return;
+    event.preventDefault();
+    event.stopPropagation();
+    next.focus();
+  };
+
+  // Right-to-left, the submenu opens on the left.
+  const rtl = typeof document !== 'undefined' && document.documentElement.dir === 'rtl';
+
+  return (
+    <div ref={ref} id={id} role="menu" aria-label={label} className={styles.panel} onKeyDown={onKeyDown}>
+      {sections.map((section) => (
+        <div key={section.id} role="group" aria-label={section.title} className={styles.section}>
+          {section.title && (
+            <div role="presentation" className={styles.sectionTitle}>
+              {section.title}
+            </div>
+          )}
+          {section.items.map((item) =>
+            item.submenu ? (
+              <button
+                key={item.id}
+                type="button"
+                role="menuitem"
+                aria-haspopup="menu"
+                aria-expanded={sub?.id === item.id}
+                data-submenu-of={item.id}
+                tabIndex={-1}
+                disabled={item.disabled}
+                className={styles.item}
+                onPointerEnter={(event) => openSub(item, event.currentTarget, false)}
+                onClick={(event) => openSub(item, event.currentTarget, true)}
+                onKeyDown={(event) => {
+                  if (event.key !== 'ArrowRight' && event.key !== 'Enter' && event.key !== ' ') return;
+                  event.preventDefault();
+                  event.stopPropagation();
+                  openSub(item, event.currentTarget, true);
+                }}
+              >
+                <span className={styles.mark}>{item.icon && <Icon name={item.icon} size={16} />}</span>
+                <span className={styles.label}>{item.label}</span>
+                <span className={styles.more}>
+                  <Icon name={rtl ? 'chevron-left' : 'chevron-right'} size={12} />
+                </span>
+              </button>
+            ) : (
               <button
                 key={item.id}
                 type="button"
@@ -178,25 +270,36 @@ export function MenuButton(props: MenuButtonProps) {
                 disabled={item.disabled}
                 className={styles.item}
                 {...(item.hint ? tooltip(item.hint, 'end') : {})}
+                onPointerEnter={() => setSub(null)}
                 onClick={() => {
                   item.onSelect();
                   // A toggle can be flipped again without reopening the menu.
-                  if (item.kind !== 'toggle') close();
+                  if (item.kind !== 'toggle') onClose();
                 }}
               >
                 <span className={styles.mark}>
-                  {item.kind === 'action'
-                    ? item.icon && <Icon name={item.icon} size={16} />
-                    : item.checked && <Icon name="check" size={14} />}
+                  {item.kind === 'action' ? item.icon && <Icon name={item.icon} size={16} /> : item.checked && <Icon name="check" size={14} />}
                 </span>
                 <span className={styles.label}>{item.label}</span>
                 {item.shortcut && <kbd className={styles.shortcut}>{item.shortcut}</kbd>}
               </button>
-            ))}
-          </div>
-        ))}
-      </div>
-      </div>
+            ),
+          )}
+        </div>
+      ))}
+      {sub && subItem?.submenu && (
+        // Fixed, so the box that scrolls the menu does not cut it off.
+        <div
+          className={styles.submenu}
+          style={{
+            top: sub.top,
+            maxHeight: `calc(100vh - ${Math.max(sub.top, 0)}px - 12px)`,
+            ...(rtl !== sub.flipped ? { right: window.innerWidth - sub.end } : { left: sub.start }),
+          }}
+        >
+          <MenuPanel ref={subRef} label={subItem.label} sections={subItem.submenu} onClose={onClose} onKeyDown={onSubKeyDown} />
+        </div>
+      )}
     </div>
   );
-}
+});

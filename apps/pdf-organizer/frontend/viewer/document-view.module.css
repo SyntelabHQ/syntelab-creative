@@ -56,3 +56,13 @@
   display: flex;
   color: var(--sc-action-support-hover);
 }
+
+/* Read mode and full screen: the way back, over the pages. */
+.immersive {
+  display: flex;
+  justify-content: flex-end;
+  padding-block: 6px;
+  padding-inline: 12px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+}

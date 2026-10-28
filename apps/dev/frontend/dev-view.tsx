@@ -1,7 +1,7 @@
 import { useTranslation } from '@syntelab/i18n';
 import { useTabCommands } from '@syntelab/shell-api';
 import type { AppViewProps } from '@syntelab/shell-api';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { devCommands } from './commands';
 import styles from './dev-view.module.css';
 import { LaunchedFiles } from './frame/launched-files';
@@ -72,8 +72,16 @@ export function DevView({ host }: AppViewProps) {
     host.saveData(LAST_TOOL_KEY, id);
     if (sameTab) setLaunch(null);
     if (sameTab) setOpen(id);
+    // The bar of its group comes above it, with the tool pressed: the tools next to it are a click away.
+    if (sameTab) host.showTool(`dev.menu.${toolById(id)?.group ?? ''}`);
     else host.openTab({ key: `tool:${id}`, title: t(`dev.tool.${id}`), params: { tool: id } });
   };
+
+  // A tab that opens on a tool (its own tab, the one used last, a file from outside) shows the bar of its group too.
+  useEffect(() => {
+    if (open !== null) host.showTool(`dev.menu.${toolById(open)?.group ?? ''}`);
+    // Once, as the tab opens: later the tool chosen brings its bar.
+  }, []);
 
   /** Turns one choice of the View menu over, and keeps it. */
   const turned = (key: string, now: boolean, set: (value: boolean) => void) => () => {
@@ -124,7 +132,7 @@ export function DevView({ host }: AppViewProps) {
   const tool = open === null ? undefined : toolById(open);
   return (
     <LaunchedFiles.Provider value={launch !== null && launch.tool === open ? launch : null}>
-      <div className={styles.tab}>{tool ? <ToolFrame host={host} tool={tool} layout={layout} onActions={setActions} /> : <DevStart pins={pins} onPin={togglePin} onOpen={showTool} />}</div>
+      <div className={styles.tab}>{tool ? <ToolFrame host={host} tool={tool} layout={layout} onActions={setActions} /> : <DevStart pins={pins} onPin={togglePin} onOpen={showTool} menus={host.tools} />}</div>
     </LaunchedFiles.Provider>
   );
 }

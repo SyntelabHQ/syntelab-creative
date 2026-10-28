@@ -1,7 +1,8 @@
 """Makes the shortcut of each app in the Windows Start menu: its icon (the app's own icon in white on a rounded
 square of its colour, as on the cards of the Start screen), written to shell/src-tauri/icons/apps/<app id>.ico, and
 the lines of the installer that make and remove the shortcuts, written to installers/windows/app-shortcuts.nsh.
-Only apps that are out (status "active") get one.
+Only apps that are out (status "active") get one. An app that has `assets/file-icon.svg` (the icon of the files it
+opens, as Windows shows them) gets that one too, written to shell/src-tauri/icons/apps/<app id>-file.ico.
 
 Run again when an app is added or its icon or colour changes:  python tools/app-shortcut-icons.py
 Needs ImageMagick (`convert`) with SVG support.
@@ -18,17 +19,34 @@ HOOKS = ROOT / 'installers' / 'windows' / 'app-shortcuts.nsh'
 SIZES = (16, 20, 24, 32, 40, 48, 64, 256)
 
 
-def square(svg: str, color: str) -> str:
+def glyph(svg: str, size: float, x: float, y: float) -> str:
+    """The shapes of an icon, in white, fitted in a square of `size` whose corner is at x, y."""
     box = [float(part) for part in re.search(r'viewBox="([^"]+)"', svg).group(1).split()]
     inner = re.sub(r'<!--.*?-->', '', re.sub(r'</svg>\s*$', '', re.sub(r'^.*?<svg[^>]*>', '', svg, flags=re.S)), flags=re.S)
-    scale = 0.62 * 256 / max(box[2], box[3])
-    left = (256 - box[2] * scale) / 2 - box[0] * scale
-    top = (256 - box[3] * scale) / 2 - box[1] * scale
+    scale = size / max(box[2], box[3])
+    left = x + (size - box[2] * scale) / 2 - box[0] * scale
+    top = y + (size - box[3] * scale) / 2 - box[1] * scale
+    return f'<g fill="#ffffff" color="#ffffff" transform="translate({left:.2f} {top:.2f}) scale({scale:.4f})">{inner}</g>'
+
+
+def square(svg: str, color: str) -> str:
+    # Icons from Font Awesome's website have a margin in their 640 box; one drawn edge to edge is given a little less
+    # room, so it stands as large and clear in its square as the big ones of other programs do.
+    share = 0.62 if 'viewBox="0 0 640 640"' in svg else 0.7
+    margin = (1 - share) / 2 * 256
     return (
         '<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">'
-        f'<rect x="8" y="8" width="240" height="240" rx="52" fill="{color}"/>'
-        f'<g fill="#ffffff" transform="translate({left:.2f} {top:.2f}) scale({scale:.4f})">{inner}</g></svg>'
+        f'<rect x="8" y="8" width="240" height="240" rx="52" fill="{color}"/>{glyph(svg, share * 256, margin, margin)}</svg>'
     )
+
+
+def write_ico(svg: str, target: pathlib.Path) -> None:
+    with tempfile.TemporaryDirectory() as work:
+        source = pathlib.Path(work) / 'icon.svg'
+        source.write_text(svg, encoding='utf-8')
+        big = pathlib.Path(work) / 'icon.png'
+        subprocess.run(['convert', '-background', 'none', '-density', '192', str(source), '-resize', '256x256', str(big)], check=True)
+        subprocess.run(['convert', str(big), '-define', f'icon:auto-resize={",".join(map(str, SIZES))}', str(target)], check=True)
 
 
 # The folder of the Start menu the shortcuts of the apps are in. The shortcut of the program itself is made by Tauri's
@@ -82,13 +100,12 @@ def main() -> None:
         if manifest.get('status') != 'active':
             continue
         app = manifest_path.parent.name
-        svg = square((manifest_path.parent / 'assets' / 'icon.svg').read_text(encoding='utf-8'), manifest['brand']['color'])
-        with tempfile.TemporaryDirectory() as work:
-            source = pathlib.Path(work) / f'{app}.svg'
-            source.write_text(svg, encoding='utf-8')
-            big = pathlib.Path(work) / f'{app}.png'
-            subprocess.run(['convert', '-background', 'none', '-density', '192', str(source), '-resize', '256x256', str(big)], check=True)
-            subprocess.run(['convert', str(big), '-define', f'icon:auto-resize={",".join(map(str, SIZES))}', str(OUT / f'{app}.ico')], check=True)
+        icon = (manifest_path.parent / 'assets' / 'icon.svg').read_text(encoding='utf-8')
+        write_ico(square(icon, manifest['brand']['color']), OUT / f'{app}.ico')
+        file_icon = manifest_path.parent / 'assets' / 'file-icon.svg'
+        if file_icon.is_file():
+            write_ico(file_icon.read_text(encoding='utf-8'), OUT / f'{app}-file.ico')
+            print(f'{app}-file.ico')
         made.append((app, manifest['name']['en'], manifest['description']['en']))
         print(f'{app}.ico')
     HOOKS.write_text(hooks(made), encoding='utf-8', newline='\r\n')

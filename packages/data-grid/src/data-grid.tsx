@@ -27,6 +27,11 @@ export interface GridColumn {
 export interface DataGridProps {
   readonly columns: readonly GridColumn[];
   readonly rowCount: number;
+  /**
+   * Empty rows go on below the last, as far as the table is scrolled: a cell of one of them can be typed in, and
+   * the table becomes as long as that. Only what the rows of `rowCount` hold is asked for.
+   */
+  readonly endless?: boolean;
   readonly rowNumbers: boolean;
   /** Changes when what the cells say may have: the grid is drawn again. */
   readonly stamp: string;
@@ -93,7 +98,7 @@ const HEAD_ROOM = 10 + 6 + 24 + 6 + 4;
 /** The room around what a cell says: its padding and its border. */
 const CELL_ROOM = 10 + 10 + 2;
 
-export function DataGrid({ columns: asked, rowCount, rowNumbers, stamp, need, cell, selection, onSelection, readOnly, onCommit, onClear, onGrow, onColumnWidth, numbersWidth, onNumbersWidth, longest, onShortcut, onPaste, columnMenu, labels }: DataGridProps) {
+export function DataGrid({ columns: asked, rowCount: tableRows, endless = false, rowNumbers, stamp, need, cell, selection, onSelection, readOnly, onCommit, onClear, onGrow, onColumnWidth, numbersWidth, onNumbersWidth, longest, onShortcut, onPaste, columnMenu, labels }: DataGridProps) {
   const scroller = useRef<HTMLDivElement>(null);
   const [view, setView] = useState({ top: 0, left: 0, height: 400, width: 0 });
   /** The letters of the table, as the page draws them: what widths are measured with. */
@@ -105,6 +110,9 @@ export function DataGrid({ columns: asked, rowCount, rowNumbers, stamp, need, ce
   const dragging = useRef(false);
   /** A step down asked for at the last row: taken once the table has one more. */
   const pending = useRef(false);
+  /** With `endless`: how far down the empty rows go now. They go further as the table is scrolled towards their end. */
+  const [reach, setReach] = useState(0);
+  const rowCount = endless && !readOnly ? Math.max(tableRows, reach) : tableRows;
   // The column of row numbers: as wide as it was dragged, else as its longest number needs.
   const NUMBERS = !rowNumbers ? 0 : (numbersWidth ?? Math.max(USUAL_NUMBERS, Math.ceil(textWidth(String(rowCount), `12px ${letters}`)) + 20));
   // The columns as they are drawn: those given no width share the room in sight equally, none narrower than its head.
@@ -129,7 +137,13 @@ export function DataGrid({ columns: asked, rowCount, rowNumbers, stamp, need, ce
   const firstInSight = scaled ? Math.round((Math.min(view.top, furthest) / furthest) * Math.max(rowCount - inSight, 0)) : Math.floor(view.top / ROW);
   const first = Math.max(firstInSight - (scaled ? 0 : SPARE), 0);
   const last = Math.min(firstInSight + inSight + SPARE, rowCount - 1);
-  need(first, last);
+  // Rows past the table hold nothing: there is nothing to read of them.
+  if (first < tableRows) need(first, Math.min(last, tableRows - 1));
+  // Close to the end of the empty rows (or a window taller than all of them): more of them below.
+  const wanted = firstInSight + inSight * 3;
+  useEffect(() => {
+    if (endless && wanted > rowCount) setReach(wanted + inSight * 2);
+  }, [endless, wanted, rowCount, inSight]);
 
   useLayoutEffect(() => {
     const element = scroller.current;
@@ -204,9 +218,11 @@ export function DataGrid({ columns: asked, rowCount, rowNumbers, stamp, need, ce
   }, [rowCount]);
 
   const step = (by: { rows: number; cols: number }, stretch = false) => {
-    if (by.rows > 0 && !stretch && selection.active.row >= rowCount - 1 && onGrow && !readOnly) {
+    if (by.rows > 0 && !stretch && selection.active.row >= rowCount - 1 && !readOnly && (onGrow || endless)) {
       pending.current = true;
-      return onGrow();
+      // Endless, the empty rows only go further; else the table is asked for one more.
+      if (endless) return setReach(rowCount + Math.max(inSight, 20));
+      return onGrow?.();
     }
     const next = move(selection, by, bounds, stretch);
     // While a range is stretched, what is brought into sight is its far corner.

@@ -15,12 +15,12 @@ export interface OpenedFiles {
  * tab: a PDF as it is; a picture, a text file or any other document as an
  * unsaved PDF made from it.
  */
-export async function pickAndOpenFiles(host: AppHost, t: Translate, several: boolean): Promise<OpenedFiles> {
+export async function pickAndOpenFiles(host: AppHost, t: Translate, several: boolean, tool?: string): Promise<OpenedFiles> {
   const paths = await host.pickFiles({
     typeName: t('pdf-organizer.open.pagesType'),
     extensions: [...PAGE_SOURCES],
     multiple: several,
   });
-  const failed = await openFilesInTabs(host, paths);
+  const failed = await openFilesInTabs(host, paths, tool);
   return { chosen: paths.length, problem: failed[0] ? pageSourceProblem(failed[0].error) : null };
 }

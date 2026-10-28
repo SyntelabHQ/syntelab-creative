@@ -6,7 +6,7 @@ export interface CommandGroup {
   readonly commands: readonly Command[];
 }
 
-/** One top-level menu (classic), tab (ribbon) or section (side panel). */
+/** One top-level menu: a menu of the program (File, Edit, View, Help) or one of the app's tools. */
 export interface CommandMenu {
   readonly menuKey: string;
   readonly groups: readonly CommandGroup[];

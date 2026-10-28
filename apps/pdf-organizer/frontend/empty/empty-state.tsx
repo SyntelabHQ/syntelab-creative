@@ -1,8 +1,9 @@
 import { useTranslation } from '@syntelab/i18n';
 import type { AppViewProps } from '@syntelab/shell-api';
-import { Button, Icon, MenuButton } from '@syntelab/ui-kit';
-import { useCallback, useMemo, useState } from 'react';
+import { Button, Icon, MenuButton, ToolCards } from '@syntelab/ui-kit';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { emptyTabCommands } from '../commands';
+import { pickAndOpenFiles } from '../document/open-files';
 import { CreatePdfDialog } from '../create/create-pdf-dialog';
 import { DropHint } from '../document/drop-hint';
 import { openBinderTab, openFileInTab } from '../document/open-file';
@@ -14,7 +15,12 @@ import { DefaultAppNote } from './default-app-note';
 import styles from './empty-state.module.css';
 import { RecentFileList } from './recent-file-list';
 
-/** Shown in a PDF Organizer tab that has no document: open a file, make a new PDF, or pick a recent one. */
+/**
+ * The start page of PDF Organizer, in a tab that has no document: what to do
+ * today, as cards of the tools; open a file, make a new PDF, or pick a recent
+ * one. A tool that works on a document asks for the file first, then opens
+ * with it.
+ */
 export function EmptyState({ host }: AppViewProps) {
   const t = useTranslation();
   const [problem, setProblem] = useState<string | null>(null);
@@ -39,8 +45,32 @@ export function EmptyState({ host }: AppViewProps) {
     [host],
   );
 
-  const commands = useMemo(() => emptyTabCommands(files, () => openBinderTab(host, t('pdf-organizer.binder.title'))), [files, host, t]);
+  const newBinder = useCallback(() => openBinderTab(host, t('pdf-organizer.binder.title')), [host, t]);
+  const commands = useMemo(() => emptyTabCommands(files, newBinder), [files, newBinder]);
   useTabCommands(host, commands);
+
+  /** A tool chosen with no document: the steps of their own start; the others ask for the file, and the document opens with the tool. */
+  const { showTool } = host;
+  const chooseTool = useCallback(
+    (menuKey: string) => {
+      const own: Record<string, () => void> = {
+        'pdf-organizer.menu.create': files.onCreatePdf,
+        'pdf-organizer.menu.combine': newBinder,
+        'pdf-organizer.menu.batch': files.onBatch,
+      };
+      if (own[menuKey]) return own[menuKey]();
+      void pickAndOpenFiles(host, t, false, menuKey).then(onDone);
+    },
+    // `host` changes when the tab moves to the back; what it opens does not.
+    [files, newBinder, host.pickFiles, host.openTab, t, onDone],
+  );
+  // A tool chosen in the list on the side, while there is no document to open it on.
+  const asked = host.tool;
+  useEffect(() => {
+    if (!asked) return;
+    showTool(null);
+    chooseTool(asked);
+  }, [asked, showTool, chooseTool]);
 
   // Files dropped here or pasted are gathered in a binder.
   const filesOver = useReceivedFiles(host, (received) => {
@@ -52,51 +82,64 @@ export function EmptyState({ host }: AppViewProps) {
     <div className={styles.empty}>
       <DropHint shown={filesOver} textKey="pdf-organizer.drop.toBinder" />
       <CreatePdfDialog host={host} open={fileCommands.creating} onClose={fileCommands.closeCreating} onDone={onDone} />
-      <h1 className={styles.title}>{t('pdf-organizer.empty.title')}</h1>
-      <p className={styles.hint}>{t('pdf-organizer.empty.hint')}</p>
-      <div className={styles.actions}>
-        <span className={styles.split}>
-          <Button variant="primary" className={styles.splitMain} onClick={files.onOpen}>
-            <Icon name="folder-open" size={18} />
-            {t('pdf-organizer.open.button')}
-          </Button>
-          <MenuButton
-            label={t('pdf-organizer.open.more')}
-            align="end"
-            tooltipSide="bottom"
-            sections={[
-              {
-                id: 'open',
-                items: [
-                  { id: 'one', kind: 'action', icon: 'folder-open', label: t('pdf-organizer.open.button'), onSelect: files.onOpen },
+      <div className={styles.page}>
+        <div className={styles.hero}>
+          <div className={styles.heroText}>
+            <h1 className={styles.title}>{t('pdf-organizer.start.title')}</h1>
+            <p className={styles.hint}>{t('pdf-organizer.start.lead')}</p>
+          </div>
+          <div className={styles.actions}>
+            <span className={styles.split}>
+              <Button variant="primary" className={styles.splitMain} onClick={files.onOpen}>
+                <Icon name="folder-open" size={18} />
+                {t('pdf-organizer.open.button')}
+              </Button>
+              <MenuButton
+                label={t('pdf-organizer.open.more')}
+                align="end"
+                tooltipSide="bottom"
+                sections={[
                   {
-                    id: 'several',
-                    kind: 'action',
-                    icon: 'folder-tree',
-                    label: t('pdf-organizer.command.openSeveral'),
-                    hint: t('pdf-organizer.hint.openSeveral'),
-                    onSelect: files.onOpenSeveral,
+                    id: 'open',
+                    items: [
+                      { id: 'one', kind: 'action', icon: 'folder-open', label: t('pdf-organizer.open.button'), onSelect: files.onOpen },
+                      {
+                        id: 'several',
+                        kind: 'action',
+                        icon: 'folder-tree',
+                        label: t('pdf-organizer.command.openSeveral'),
+                        hint: t('pdf-organizer.hint.openSeveral'),
+                        onSelect: files.onOpenSeveral,
+                      },
+                    ],
                   },
-                ],
-              },
-            ]}
-          >
-            <Icon name="caret-down" size={14} />
-          </MenuButton>
-        </span>
-        <Button onClick={files.onCreatePdf}>
-          <Icon name="wand-magic-sparkles" size={18} />
-          {t('pdf-organizer.command.createPdf')}
-        </Button>
+                ]}
+              >
+                <Icon name="caret-down" size={14} />
+              </MenuButton>
+            </span>
+          </div>
+        </div>
+        {problem && (
+          <p className={styles.problem} role="alert">
+            {t(problem)}
+          </p>
+        )}
+        <ToolCards
+          title={t('pdf-organizer.start.tools')}
+          cards={host.tools.map((tool) => ({
+            id: tool.menuKey,
+            name: t(tool.menuKey),
+            description: tool.hintKey ? t(tool.hintKey) : undefined,
+            icon: tool.icon,
+            color: tool.color,
+            onChoose: () => chooseTool(tool.menuKey),
+          }))}
+        />
+        <RecentFileList host={host} onOpen={openRecent} />
+        <p className={styles.dropTip}>{t('pdf-organizer.empty.dropTip')}</p>
+        <DefaultAppNote host={host} />
       </div>
-      <p className={styles.dropTip}>{t('pdf-organizer.empty.dropTip')}</p>
-      {problem && (
-        <p className={styles.problem} role="alert">
-          {t(problem)}
-        </p>
-      )}
-      <RecentFileList host={host} onOpen={openRecent} />
-      <DefaultAppNote host={host} />
     </div>
   );
 }

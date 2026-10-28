@@ -1,0 +1,77 @@
+.bar {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  padding-block: 4px;
+  padding-inline: 10px 12px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+}
+
+/* The tool's name, set off from its commands by a line. */
+.name {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  max-width: 200px;
+  padding-inline-end: 12px;
+  border-inline-end: 1px solid var(--sc-border);
+  color: var(--sc-text);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.nameIcon {
+  display: flex;
+  flex: none;
+  color: var(--sc-accent);
+}
+
+/* One row of groups; whatever does not fit folds. Cut off sideways only, so
+   tooltips and menus can reach below the bar. */
+.groups {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+/* The same groups at full width, unseen, only to be measured. */
+.measure {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  display: flex;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.done {
+  flex: none;
+  min-height: var(--sc-control-height-compact);
+  padding-inline: 16px;
+  border: 1px solid var(--sc-accent);
+  border-radius: var(--sc-radius-m);
+  background: var(--sc-accent);
+  color: var(--sc-accent-text);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.done:hover {
+  filter: brightness(1.08);
+}
+
+.done:focus-visible {
+  outline: 2px solid var(--sc-accent);
+  outline-offset: 2px;
+}

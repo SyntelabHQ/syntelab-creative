@@ -4,14 +4,14 @@ import { Icon } from '@syntelab/ui-kit';
 import { Suspense, useMemo } from 'react';
 import { appSettingsView, createAppSettingsHost } from '../app-host';
 import { appInk, AppIcon, useApps, useAppTexts } from '../apps';
-import { LanguagePicker, LayoutPicker, ShortcutsPicker, TabsPicker, ThemePicker, TooltipsPicker } from '../preferences';
+import { LanguagePicker, ShortcutsPicker, TabsPicker, ThemePicker, TooltipsPicker } from '../preferences';
 import { useStore } from '../state/create-store';
 import { UpdateSettings } from '../updates';
 import { ExplorerMenuSetting } from './explorer-menu-setting';
 import { GENERAL_SECTION, settingsSection, showSettingsSection } from './settings-section';
 import styles from './settings-view.module.css';
 
-/** The settings of the whole suite: theme, language, the layout every app follows, updates. */
+/** The settings of the whole suite: theme, language, tabs, tooltips, keys, updates. */
 function GeneralSettings() {
   const t = useTranslation();
   return (
@@ -21,12 +21,6 @@ function GeneralSettings() {
         <ThemePicker />
         <LanguagePicker />
       </div>
-
-      <section className={styles.section}>
-        <h2 className={styles.heading}>{t('shell.settings.layout')}</h2>
-        <p className={styles.note}>{t('shell.layout.globalNote')}</p>
-        <LayoutPicker />
-      </section>
 
       <section className={styles.section}>
         <h2 className={styles.heading}>{t('shell.settings.tabs')}</h2>
@@ -53,7 +47,7 @@ function GeneralSettings() {
   );
 }
 
-/** The settings of one app: its layout, then whatever the app itself offers. */
+/** The settings of one app: whatever the app itself offers. */
 function AppSettings({ app, name }: { readonly app: AppEntry; readonly name: string }) {
   const t = useTranslation();
   const appId = app.manifest.id;
@@ -65,11 +59,6 @@ function AppSettings({ app, name }: { readonly app: AppEntry; readonly name: str
         <bdi>{name}</bdi>
       </h1>
       <p className={styles.note}>{t('shell.settings.appNote', { app: name })}</p>
-
-      <section className={styles.section}>
-        <h2 className={styles.heading}>{t('shell.settings.layout')}</h2>
-        <LayoutPicker app={app} />
-      </section>
 
       {Own && (
         <Suspense fallback={null}>

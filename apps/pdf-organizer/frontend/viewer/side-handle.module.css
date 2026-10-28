@@ -1,0 +1,23 @@
+/* Takes no room: the handle lies over the line between the pages and the panel. */
+.edge {
+  position: relative;
+  z-index: 3;
+  flex: none;
+  width: 0;
+}
+
+.handle {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: -3px;
+  width: 6px;
+  cursor: col-resize;
+  touch-action: none;
+}
+
+.handle:hover,
+.handle:focus-visible {
+  background: var(--sc-accent);
+  opacity: 0.5;
+  outline: none;
+}

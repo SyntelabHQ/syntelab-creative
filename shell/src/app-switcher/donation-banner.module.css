@@ -35,7 +35,24 @@
 }
 
 .text {
+  display: flex;
   flex: 1 1 260px;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Two lines: support us; and if not, tell others about us. */
+.line {
+  font-weight: 400;
+}
+
+.line:first-child {
+  font-weight: 600;
+}
+
+.line + .line {
+  color: var(--sc-muted);
+  font-size: 13px;
 }
 
 .banner .button:hover:not(:disabled) {

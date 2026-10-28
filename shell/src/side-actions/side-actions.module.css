@@ -1,0 +1,98 @@
+.actions {
+  display: flex;
+  gap: 4px;
+}
+
+.actions[data-stacked='true'] {
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: var(--sc-radius-m);
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.item:hover {
+  background: var(--sc-surface-2);
+}
+
+.item:focus-visible {
+  outline: 2px solid var(--sc-accent);
+  outline-offset: -2px;
+}
+
+/* Changelog, feedback and support are plain like the rest, and show their own
+   color under the pointer. */
+.item[data-action='changelog']:hover {
+  color: var(--sc-action-changelog);
+}
+
+.item[data-action='feedback']:hover {
+  color: var(--sc-action-feedback);
+}
+
+.item[data-action='support']:hover {
+  color: var(--sc-action-support);
+}
+
+/* An unread changelog entry: the icon takes its color, glows softly, moves
+   gently up and down, and carries a red dot. */
+.item[data-unread='true'] {
+  color: var(--sc-action-changelog);
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--sc-action-changelog) 70%, transparent));
+  animation: bob 1.8s ease-in-out infinite;
+}
+
+.item[data-unread='true']::before {
+  content: '';
+  position: absolute;
+  inset-block-start: 5px;
+  inset-inline-end: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--sc-danger);
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+/* The support heart, a minute into the session: green, beating for a few
+   seconds, then just green. */
+.item[data-nudge='beating'],
+.item[data-nudge='resting'] {
+  color: var(--sc-action-support);
+}
+
+.item[data-nudge='beating'] > span {
+  animation: heartbeat 0.9s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+}

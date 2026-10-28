@@ -18,10 +18,24 @@
   list-style: none;
 }
 
+/* Each bookmark of the top level is set apart from the next by a line. */
+.entries[data-level='0'] > li + li {
+  margin-block-start: 2px;
+  padding-block-start: 2px;
+  border-block-start: 1px solid var(--sc-border);
+}
+
+/* Those under a bookmark stand in, along a line that shows whose they are. */
+.entries:not([data-level='0']) {
+  margin-inline-start: 15px;
+  padding-inline-start: 4px;
+  border-inline-start: 1px solid var(--sc-border);
+}
+
 .row {
   display: flex;
-  align-items: flex-start;
-  padding-inline-end: 6px;
+  align-items: center;
+  padding-inline: 4px 6px;
 }
 
 .fold {
@@ -61,11 +75,11 @@ button.fold:hover {
 .title {
   display: flex;
   flex: 1;
-  align-items: baseline;
-  gap: 8px;
+  align-items: center;
+  gap: 7px;
   min-width: 0;
   min-height: 28px;
-  padding-block: 5px;
+  padding-block: 4px;
   padding-inline: 6px;
   border: 0;
   border-radius: var(--sc-radius-s);
@@ -80,9 +94,29 @@ button.fold:hover {
   background: var(--sc-surface-2);
 }
 
-.title[aria-current='page'] {
-  background: var(--sc-accent-soft);
+.title[data-level='top'] {
   font-weight: 600;
+}
+
+.title[data-level='inner'] {
+  font-size: 12.5px;
+}
+
+/* The bookmark of the page in view (the one clicked, or the first of the page). */
+.title[aria-current='location'] {
+  background: var(--sc-accent-soft);
+  color: var(--sc-accent);
+}
+
+.icon {
+  display: flex;
+  flex: none;
+  color: var(--sc-muted);
+}
+
+.title[data-level='top'] .icon,
+.title[aria-current='location'] .icon {
+  color: var(--sc-accent);
 }
 
 /* A bookmark whose page was removed from the document. */
@@ -95,7 +129,9 @@ button.fold:hover {
 .text {
   flex: 1;
   min-width: 0;
-  overflow-wrap: anywhere;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .page {

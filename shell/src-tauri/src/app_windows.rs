@@ -179,6 +179,8 @@ pub fn show(app: &AppHandle, id: &str) -> Result<WebviewWindow, String> {
         .title(&name)
         .inner_size(1280.0, 800.0)
         .min_inner_size(240.0, 200.0)
+        // The program draws its own title bar: the tabs, the search and the window's buttons in one row (window-bar.tsx).
+        .decorations(false)
         // Dropped files are handled by the page (dropped_files.rs).
         .disable_drag_drop_handler()
         // Shown once it has its place on the taskbar, so its button is never the program's for a moment.

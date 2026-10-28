@@ -74,7 +74,13 @@
     "color": "#E91E63",
     "icon": "assets/icon.svg"
   },
-  "defaultLayout": "ribbon",
+  "tools": [
+    { "menuKey": "dev.menu.encode", "icon": "file-code", "hintKey": "dev.menuHint.encode", "color": "blue" },
+    { "menuKey": "dev.menu.data", "icon": "code", "hintKey": "dev.menuHint.data", "color": "green" },
+    { "menuKey": "dev.menu.generate", "icon": "wand-magic-sparkles", "hintKey": "dev.menuHint.generate", "color": "amber" },
+    { "menuKey": "dev.menu.inspect", "icon": "magnifying-glass", "hintKey": "dev.menuHint.inspect", "color": "purple" },
+    { "menuKey": "dev.menu.network", "icon": "globe", "hintKey": "dev.menuHint.network", "color": "teal" }
+  ],
   "fileTypes": [
     ".json",
     ".yaml",

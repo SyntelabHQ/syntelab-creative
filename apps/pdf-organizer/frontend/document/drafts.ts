@@ -15,8 +15,8 @@ import { openAsPages } from './page-sources';
  */
 
 /** Opens a draft in its own tab. */
-export function openDraftTab(host: Pick<AppHost, 'openTab'>, path: string): void {
-  host.openTab({ key: path, title: fileName(path), params: { path, unsaved: '1' } });
+export function openDraftTab(host: Pick<AppHost, 'openTab'>, path: string, tool?: string): void {
+  host.openTab({ key: path, title: fileName(path), params: { path, unsaved: '1', ...(tool ? { tool } : {}) } });
 }
 
 /** Writes pages of open documents as a draft called `name`, and returns where it is. */
@@ -59,15 +59,15 @@ async function fileAsDraft(host: Pick<AppHost, 'invoke'>, path: string): Promise
  * unsaved PDF made from it. Returns the files that could not be opened, each
  * with what went wrong.
  */
-export async function openFilesInTabs(host: AppHost, paths: readonly string[]): Promise<{ path: string; error: unknown }[]> {
+export async function openFilesInTabs(host: AppHost, paths: readonly string[], tool?: string): Promise<{ path: string; error: unknown }[]> {
   const failed: { path: string; error: unknown }[] = [];
   for (const path of paths) {
     if (/\.pdf$/i.test(path)) {
-      openFileInTab(host, path);
+      openFileInTab(host, path, tool);
       continue;
     }
     try {
-      openDraftTab(host, await fileAsDraft(host, path));
+      openDraftTab(host, await fileAsDraft(host, path), tool);
     } catch (error) {
       failed.push({ path, error });
     }

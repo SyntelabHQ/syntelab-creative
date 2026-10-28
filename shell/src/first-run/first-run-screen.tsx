@@ -6,8 +6,8 @@ import styles from './first-run-screen.module.css';
 
 /**
  * Shown once, before the main window: theme and language, with sensible
- * defaults. The layout is not asked here: each app starts in its own default
- * layout and remembers what the user picks for it (Settings, or the View menu).
+ * defaults. There is no layout to choose: every app has the same frame, with
+ * its tools on the side.
  */
 export function FirstRunScreen() {
   const t = useTranslation();

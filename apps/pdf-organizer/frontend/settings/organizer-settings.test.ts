@@ -16,15 +16,15 @@ describe('organizer settings', () => {
     expect(stored).toEqual({ openScrolling: true, newName: 'scan_{number}' });
     expect(readSettings(stored)).toEqual(changed);
     expect(isDefault(changed, 'newName')).toBe(false);
-    expect(isDefault(changed, 'quickTools')).toBe(true);
+    expect(isDefault(changed, 'unit')).toBe(true);
   });
 
   it('drop what is no longer valid', () => {
-    const read = readSettings({ openZoom: 'huge', openThumbnails: 'yes', quickTools: ['share', 'teleport', 'pages'] });
+    // A setting the program no longer has is dropped.
+    const read = readSettings({ openZoom: 'huge', openThumbnails: 'yes', quickTools: ['share', 'pages'] });
     expect(read.openZoom).toBe('fit-page');
     expect(read.openThumbnails).toBe(true);
-    // Known tools only, in the toolbar's own order.
-    expect(read.quickTools).toEqual(['pages', 'share']);
+    expect(read).not.toHaveProperty('quickTools');
     expect(readSettings({ unit: 'furlong', printSheet: 'napkin', gridSpacing: -4 })).toEqual(DEFAULT_SETTINGS);
     expect(readSettings({ unit: 'in', printSheet: 'letter', gridSpacing: 36 })).toMatchObject({ unit: 'in', printSheet: 'letter', gridSpacing: 36 });
   });

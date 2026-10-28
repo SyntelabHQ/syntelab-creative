@@ -1,8 +1,9 @@
 import { useI18n } from '@syntelab/i18n';
 import { AppInvokeError, fileName } from '@syntelab/shell-api';
 import type { AppHost } from '@syntelab/shell-api';
-import { Button, Icon } from '@syntelab/ui-kit';
+import { Button, Icon, tooltip } from '@syntelab/ui-kit';
 import { useEffect, useMemo, useState } from 'react';
+import { loadSettings, saveSettings } from '../settings/organizer-settings';
 import shapeStyles from '../organize/shape-dialog.module.css';
 import styles from './signing.module.css';
 
@@ -27,6 +28,8 @@ export interface SigningCertificate {
 }
 
 const FILE = 'file';
+/** How a certificate file is named among the favorites: by its path. */
+const FILE_FAVORITE = 'file:';
 
 /** Which certificate signs: what the user has chosen so far, and what the choosing needs. */
 export interface CertificateChoice {
@@ -48,10 +51,14 @@ export interface CertificateChoice {
   readonly problem: string | null;
   /** Settles the choice; a file is opened with its password first. Null when that fails (`problem` says why). */
   readonly settle: () => Promise<SigningCertificate | null>;
+  /** The certificates marked as favorites: ids of the computer's, or `file:` and a path. */
+  readonly favorites: readonly string[];
+  /** Marks one of the computer's certificates (by its id), or the certificate file chosen (`file`), as a favorite or not. */
+  readonly toggleFavorite: (chosen: string) => void;
 }
 
 /** The choosing of a certificate, started anew each time `active` becomes true. */
-export function useCertificateChoice(host: Pick<AppHost, 'invoke' | 'pickFiles'>, active: boolean): CertificateChoice {
+export function useCertificateChoice(host: Pick<AppHost, 'invoke' | 'pickFiles' | 'loadData' | 'saveData'>, active: boolean): CertificateChoice {
   const { t } = useI18n();
   const { invoke, pickFiles } = host;
   const [certificates, setCertificates] = useState<readonly Certificate[] | null>(null);
@@ -60,6 +67,7 @@ export function useCertificateChoice(host: Pick<AppHost, 'invoke' | 'pickFiles'>
   const [password, setPassword] = useState('');
   const [problem, setProblem] = useState<string | null>(null);
   const [checking, setChecking] = useState(false);
+  const [favorites, setFavorites] = useState<readonly string[]>(() => loadSettings(host).favoriteCertificates);
 
   useEffect(() => {
     if (!active) return;
@@ -68,18 +76,38 @@ export function useCertificateChoice(host: Pick<AppHost, 'invoke' | 'pickFiles'>
     // A password is asked for each time: it is kept nowhere.
     setPassword('');
     setCertificates(null);
+    const marked = loadSettings(host).favoriteCertificates;
+    setFavorites(marked);
     invoke<{ certificates: Certificate[] }>('list_certificates', {})
       .then((answer) => {
         if (cancelled) return;
         setCertificates(answer.certificates);
-        const usable = answer.certificates.find((certificate) => certificate.validUntil > Date.now() / 1000);
-        setChosen((current) => (current === FILE || answer.certificates.some((certificate) => certificate.id === current) ? current : (usable?.id ?? FILE)));
+        const now = Date.now() / 1000;
+        const usable = (id: string) => answer.certificates.some((certificate) => certificate.id === id && certificate.validUntil > now);
+        // The first favorite that can sign is chosen, before any other: one of the computer's, or a file.
+        const favorite = marked.find((entry) => entry.startsWith(FILE_FAVORITE) || usable(entry));
+        if (favorite?.startsWith(FILE_FAVORITE)) setFile((current) => current || favorite.slice(FILE_FAVORITE.length));
+        const first = answer.certificates.find((certificate) => certificate.validUntil > now);
+        setChosen((current) => {
+          if (current === FILE || answer.certificates.some((certificate) => certificate.id === current)) return current;
+          if (favorite) return favorite.startsWith(FILE_FAVORITE) ? FILE : favorite;
+          return first?.id ?? FILE;
+        });
       })
       .catch(() => !cancelled && setCertificates([]));
     return () => {
       cancelled = true;
     };
+    // The favorites are read when the choosing starts, not at every change of the host.
   }, [active, invoke]);
+
+  const toggleFavorite = (which: string) => {
+    const entry = which === FILE ? `${FILE_FAVORITE}${file}` : which;
+    if (entry === FILE_FAVORITE) return;
+    const next = favorites.includes(entry) ? favorites.filter((known) => known !== entry) : [...favorites, entry];
+    setFavorites(next);
+    saveSettings(host, { ...loadSettings(host), favoriteCertificates: next });
+  };
 
   const storeCertificate = certificates?.find((known) => known.id === chosen);
 
@@ -121,6 +149,8 @@ export function useCertificateChoice(host: Pick<AppHost, 'invoke' | 'pickFiles'>
     checking,
     problem,
     settle,
+    favorites,
+    toggleFavorite,
   };
 }
 
@@ -132,21 +162,41 @@ export interface CertificatePickerProps {
 /** The certificates to sign with: those of the computer, one to a row, and one in a file with its password. */
 export function CertificatePicker({ choice, disabled = false }: CertificatePickerProps) {
   const { t, language } = useI18n();
-  const { certificates, chosen, choose, file, password } = choice;
+  const { certificates, chosen, choose, file, password, favorites, toggleFavorite } = choice;
   const now = Date.now() / 1000;
   const day = useMemo(() => new Intl.DateTimeFormat(language, { dateStyle: 'medium' }), [language]);
+  // Favorites first, in the order they were marked; the rest as the computer lists them.
+  const rank = (certificate: Certificate) => {
+    const place = favorites.indexOf(certificate.id);
+    return place < 0 ? favorites.length : place;
+  };
+  const listed = certificates ? [...certificates].sort((first, second) => rank(first) - rank(second)) : null;
+  const star = (which: string, marked: boolean) => (
+    <button
+      type="button"
+      className={styles.favorite}
+      data-marked={marked}
+      aria-pressed={marked}
+      aria-label={t(marked ? 'pdf-organizer.sign.unfavorite' : 'pdf-organizer.sign.favorite')}
+      disabled={disabled}
+      {...tooltip(t(marked ? 'pdf-organizer.sign.unfavorite' : 'pdf-organizer.sign.favorite'), 'start')}
+      onClick={() => toggleFavorite(which)}
+    >
+      <Icon name={marked ? 'star' : 'star-regular'} size={15} />
+    </button>
+  );
 
   return (
     <section className={shapeStyles.field}>
       <h3 className={shapeStyles.legend}>{t('pdf-organizer.sign.certificates')}</h3>
       {certificates === null && <p className={shapeStyles.lead}>{t('pdf-organizer.sign.looking')}</p>}
       {certificates?.length === 0 && <p className={shapeStyles.lead}>{t('pdf-organizer.sign.none')}</p>}
-      {certificates && certificates.length > 0 && (
+      {listed && listed.length > 0 && (
         <ul className={styles.certificates}>
-          {certificates.map((certificate) => {
+          {listed.map((certificate) => {
             const expired = certificate.validUntil <= now;
             return (
-              <li key={certificate.id}>
+              <li key={certificate.id} className={styles.row}>
                 <label className={styles.certificate} data-chosen={chosen === certificate.id} data-expired={expired}>
                   <input type="radio" checked={chosen === certificate.id} disabled={expired || disabled} onChange={() => choose(certificate.id)} />
                   <span className={styles.facts}>
@@ -155,11 +205,13 @@ export function CertificatePicker({ choice, disabled = false }: CertificatePicke
                     <span className={styles.detail}>{t(expired ? 'pdf-organizer.sign.expiredOn' : 'pdf-organizer.sign.validUntil', { date: day.format(new Date(certificate.validUntil * 1000)) })}</span>
                   </span>
                 </label>
+                {star(certificate.id, favorites.includes(certificate.id))}
               </li>
             );
           })}
         </ul>
       )}
+      <div className={styles.row}>
       <label className={styles.certificate} data-chosen={chosen === FILE}>
         <input type="radio" checked={chosen === FILE} disabled={disabled} onChange={() => choose(FILE)} />
         <span className={styles.facts}>
@@ -189,6 +241,8 @@ export function CertificatePicker({ choice, disabled = false }: CertificatePicke
           )}
         </span>
       </label>
+      {file !== '' && star(FILE, favorites.includes(`${FILE_FAVORITE}${file}`))}
+      </div>
       {choice.problem && (
         <p className={styles.problem} role="alert">
           {t(choice.problem)}

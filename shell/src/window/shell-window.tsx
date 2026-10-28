@@ -1,20 +1,20 @@
 import { useLaunchRequests } from '../launch/use-launch-requests';
 import { useEffect } from 'react';
-import { AppBar } from '../app-bar';
 import { useWindowTitle } from './use-window-title';
 import { AppTabView } from '../app-host';
 import { ChangelogDialog } from '../changelog';
+import { SiteNotice } from '../links';
 import { useCommandShortcuts } from '../commands';
 import { HelpView } from '../help';
 import { useEscapeLeavesImmersive, useImmersive } from '../immersive';
 import { LayoutFrame } from '../layout';
 import { SettingsView, useExplorerMenuUpkeep } from '../settings';
 import { useStore } from '../state/create-store';
-import { CloseGuard, TAB_PANEL_ID, tabElementId, tabs, TabStrip, useTabTitle } from '../tabs';
+import { CloseGuard, TAB_PANEL_ID, tabElementId, tabs, useTabTitle } from '../tabs';
 import { checkForUpdatesAtStart, UpdateDialog } from '../updates';
 import styles from './shell-window.module.css';
 
-/** The window of one app: app bar on the side, tabs on top, the active tab below. */
+/** The window of one app: the bar on top with the logo and the tabs (the window's title bar), the active tab below. */
 export function ShellWindow() {
   // Named after its app, in the user's language: the taskbar shows the name.
   useWindowTitle();
@@ -35,14 +35,13 @@ export function ShellWindow() {
 
   return (
     <div className={styles.window}>
-      {!barsHidden && <AppBar />}
       <ChangelogDialog />
+      <SiteNotice />
       <UpdateDialog />
       <CloseGuard titleOf={(tabId) => titleOf(state.tabs.find((tab) => tab.id === tabId) ?? state.tabs[0]!)} />
       <div className={styles.main}>
-        {!barsHidden && <TabStrip />}
-        {/* The menus, ribbon or side panel belong to apps; Settings and Help have none. */}
-        <LayoutFrame appId={active.kind === 'app' ? active.appId : undefined} hidden={barsHidden}>
+        {/* The tools belong to apps; Settings and Help have none. */}
+        <LayoutFrame appId={active.kind === 'app' ? active.appId : undefined} tabId={active.kind === 'app' ? active.id : undefined} hidden={barsHidden}>
           <main
             id={TAB_PANEL_ID}
             role="tabpanel"

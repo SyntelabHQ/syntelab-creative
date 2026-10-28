@@ -5,8 +5,20 @@
   min-height: 0;
 }
 
-.frame[data-direction='row'] {
-  flex-direction: row;
+/* The list of tools beside the content. */
+.row {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* The bar of the open tool over the content. */
+.column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
 }
 
 .content {

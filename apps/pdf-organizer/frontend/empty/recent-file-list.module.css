@@ -3,8 +3,6 @@
   flex-direction: column;
   gap: 8px;
   width: 100%;
-  max-width: 640px;
-  margin-block-start: 28px;
   text-align: start;
 }
 
@@ -18,8 +16,10 @@
   flex: 1;
   margin: 0;
   color: var(--sc-muted);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .clear {
@@ -67,7 +67,7 @@
 
 .icon {
   display: flex;
-  color: var(--pdf-organizer-color, #7A1F3D);
+  color: var(--pdf-organizer-color, #EF4444);
 }
 
 /* On dark themes the color is too dark to draw with: white on a square of it, as the shell does. */
@@ -75,7 +75,7 @@
   padding: 3px;
   margin: -3px;
   border-radius: var(--sc-radius-s);
-  background: var(--pdf-organizer-color, #7A1F3D);
+  background: var(--pdf-organizer-color, #EF4444);
   color: var(--sc-on-color);
 }
 

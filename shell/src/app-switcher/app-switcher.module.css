@@ -6,8 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   border: 0;
   border-radius: var(--sc-radius-m);
@@ -20,17 +20,33 @@
   background: var(--sc-surface-2);
 }
 
-/* Beside the bar, over the window's content. */
+/* Behind the list: the window, dimmed and blurred. */
+.backdrop {
+  position: fixed;
+  z-index: 99;
+  inset: 0;
+  background: rgb(0 0 0 / 18%);
+  backdrop-filter: blur(6px);
+  animation: backdrop-in 120ms ease;
+}
+
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* Under the bar on top, over the window's content. */
 .panel {
   position: fixed;
   z-index: 100;
-  inset-block-start: 8px;
-  inset-inline-start: 72px;
+  inset-block-start: 52px;
+  inset-inline-start: 8px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: min(820px, calc(100vw - 88px));
-  max-height: calc(100vh - 16px);
+  width: min(820px, calc(100vw - 16px));
+  max-height: calc(100vh - 60px);
   padding: 20px 24px;
   overflow: auto;
   border: 1px solid var(--sc-border);

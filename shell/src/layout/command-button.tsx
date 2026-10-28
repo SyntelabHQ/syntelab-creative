@@ -8,9 +8,9 @@ import { commandTooltip, runCommand } from './use-menus';
 export interface CommandButtonProps {
   readonly command: Command;
   /**
-   * `icon`: only the icon, the name as tooltip (toolbar, collapsed panel).
-   * `tile`: icon above the name (ribbon). `row`: icon beside the name (panel).
-   * `small`: icon beside the name, as low and narrow as they allow (a ribbon short of room).
+   * `icon`: only the icon, the name as tooltip (top bar).
+   * `tile`: icon above the name (a tool's bar). `row`: icon beside the name (a folded group).
+   * `small`: icon beside the name, as low and narrow as they allow (a tool's bar short of room).
    */
   readonly shape: 'icon' | 'tile' | 'row' | 'small';
   /** What the command is for is written beside the button: no tooltip needed. */

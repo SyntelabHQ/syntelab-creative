@@ -17,12 +17,11 @@ import {
   PRINT_ORIENTATIONS,
   PRINT_SCALINGS,
   PRINTER_SHEET,
-  QUICK_TOOLS,
   saveSettings,
   SETTING_KEYS,
   useOrganizerSettings,
 } from './organizer-settings';
-import type { OpenZoom, OrganizerSettings, QuickTool, SettingKey } from './organizer-settings';
+import type { OpenZoom, OrganizerSettings, SettingKey } from './organizer-settings';
 import { SettingRow } from './setting-row';
 import { ShortcutEditor } from './shortcut-editor';
 import styles from './settings.module.css';
@@ -32,19 +31,6 @@ const ZOOM_KEYS: Record<OpenZoom, string> = {
   'fit-width': 'pdf-organizer.view.fitWidth',
   'fit-height': 'pdf-organizer.view.fitHeight',
   actual: 'pdf-organizer.view.actualSize',
-};
-
-const TOOL_ICONS: Record<QuickTool, string> = {
-  save: 'floppy-disk',
-  print: 'print',
-  history: 'arrow-rotate-left',
-  pages: 'file',
-  zoom: 'magnifying-glass-plus',
-  fit: 'maximize',
-  rotate: 'rotate-right',
-  find: 'magnifying-glass',
-  organize: 'table-cells',
-  share: 'share-nodes',
 };
 
 /** The file a name pattern is tried on, to show what it gives. */
@@ -62,11 +48,6 @@ export function OrganizerSettingsView({ host }: AppSettingsProps) {
     onRevert: () => change(Object.fromEntries(keys.map((key) => [key, DEFAULT_SETTINGS[key]]))),
   });
   const allDefault = SETTING_KEYS.every((key) => isDefault(settings, key));
-
-  const toggleTool = (tool: QuickTool) => {
-    const shown = loadSettings(host).quickTools;
-    change({ quickTools: QUICK_TOOLS.filter((known) => (known === tool ? !shown.includes(tool) : shown.includes(known))) });
-  };
 
   /** A setting that is one of a few choices, as a row with a list. */
   // Under its name, a choice says what the option now chosen means: not everybody knows the words.
@@ -187,23 +168,6 @@ export function OrganizerSettingsView({ host }: AppSettingsProps) {
           </SettingRow>
           {choiceRow('printOrientation', PRINT_ORIENTATIONS, (orientation) => t(`pdf-organizer.settings.printOrientation.${orientation}`))}
           {choiceRow('printScaling', PRINT_SCALINGS, (scaling) => t(`pdf-organizer.settings.printScaling.${scaling}`))}
-        </div>
-      </section>
-
-      <section className={styles.section}>
-        <h2 className={styles.heading}>{t('pdf-organizer.settings.quickToolbar')}</h2>
-        <p className={styles.note}>{t('pdf-organizer.settings.quickToolbarNote')}</p>
-        <div className={styles.rows}>
-          <SettingRow label={t('pdf-organizer.settings.quickTools')} wide {...revert('quickTools')}>
-            <span className={styles.tools}>
-              {QUICK_TOOLS.map((tool) => (
-                <button key={tool} type="button" className={styles.tool} aria-pressed={settings.quickTools.includes(tool)} onClick={() => toggleTool(tool)}>
-                  <Icon name={TOOL_ICONS[tool]} size={14} />
-                  {t(`pdf-organizer.settings.tool.${tool}`)}
-                </button>
-              ))}
-            </span>
-          </SettingRow>
         </div>
       </section>
 

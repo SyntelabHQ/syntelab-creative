@@ -4,17 +4,38 @@ import { MAX_THUMBNAIL_SIZE, MIN_THUMBNAIL_SIZE } from './organize/thumbnail-siz
 import { DEFAULT_VIEW, MAX_ZOOM, MIN_ZOOM } from './viewer/view-settings';
 import type { ViewSettings, ZoomMode } from './viewer/view-settings';
 import { zoomIn, zoomOut } from './viewer/zoom';
+import type { MarkTool } from './marks/mark-layer';
+import { penHintKey } from './marks/pen-hint';
 
 // Menus shared with the shell and other apps…
 const FILE = 'common.menu.file';
 const EDIT = 'common.menu.edit';
 const VIEW = 'common.menu.view';
-// …and the ones only PDF Organizer has.
-const ORGANIZE = 'pdf-organizer.menu.organize';
+// …and the tools of PDF Organizer, named by what the user wants to do (`tools` in app.json gives their order).
+export const CREATE = 'pdf-organizer.menu.create';
+export const ORGANIZE = 'pdf-organizer.menu.organize';
+export const EDIT_TOOL = 'pdf-organizer.menu.editTool';
+export const COMMENT = 'pdf-organizer.menu.comment';
+export const SIGN = 'pdf-organizer.menu.sign';
+export const FORM = 'pdf-organizer.menu.form';
+export const PROTECT = 'pdf-organizer.menu.protect';
 const COMBINE = 'pdf-organizer.menu.combine';
-const INSERT = 'pdf-organizer.menu.insert';
-const SIGN = 'pdf-organizer.menu.sign';
-const TOOLS = 'pdf-organizer.menu.tools';
+export const CONVERT = 'pdf-organizer.menu.convert';
+const OPTIMIZE = 'pdf-organizer.menu.optimize';
+export const COMPARE = 'pdf-organizer.menu.compare';
+const BATCH = 'pdf-organizer.menu.batch';
+
+/**
+ * The tools that draw or write on the page, with the pen each starts with:
+ * opening one of them shows the document with that pen in hand.
+ */
+export const DRAWING_TOOLS: Readonly<Record<string, MarkTool>> = {
+  [EDIT_TOOL]: 'edit',
+  [COMMENT]: 'highlight',
+  [SIGN]: 'select',
+  [FORM]: 'textField',
+  [PROTECT]: 'redact',
+};
 
 const group = (name: string) => `pdf-organizer.group.${name}`;
 const commandId = (name: string) => `pdf-organizer.${name}`;
@@ -29,7 +50,6 @@ const SHORTCUTS: Readonly<Record<string, string>> = {
   undo: 'Mod+Z',
   redo: 'Mod+Y',
   find: 'Mod+F',
-  organizePages: 'Mod+Shift+O',
   selectAll: 'Mod+A',
 };
 
@@ -88,14 +108,30 @@ function planned(name: string, menuKey: string, groupName: string, icon: string,
   };
 }
 
+/**
+ * A pen of one of the tools that draw on the page (`pdf-organizer.<tool>.<pen>`):
+ * a choice among the pens of its bar, the one in hand checked.
+ */
+function pen(tool: string, menuKey: string, groupName: string, kind: MarkTool, icon: string, labelKey = `pdf-organizer.marks.tool.${kind}`): Command {
+  return {
+    id: `pdf-organizer.${tool}.${kind}`,
+    labelKey,
+    hintKey: penHintKey(kind),
+    menuKey,
+    groupKey: group(groupName),
+    icon,
+    kind: 'choice',
+    disabled: true,
+    run: () => {},
+  };
+}
+
 /** The menus before View, in order. */
 const BEFORE_VIEW: readonly Command[] = [
-  planned('open', FILE, 'document', 'folder-open', true),
+  planned('open', FILE, 'document', 'folder-open'),
   planned('openSeveral', FILE, 'document', 'folder-tree'),
-  planned('createPdf', FILE, 'document', 'wand-magic-sparkles'),
   planned('save', FILE, 'document', 'floppy-disk', true),
-  planned('saveAs', FILE, 'document', 'file-arrow-down', true),
-  planned('exportAs', FILE, 'document', 'file-export'),
+  planned('saveAs', FILE, 'document', 'file-arrow-down'),
   planned('print', FILE, 'document', 'print', true),
   planned('share', FILE, 'document', 'share-nodes'),
   planned('properties', FILE, 'document', 'circle-info'),
@@ -105,68 +141,94 @@ const BEFORE_VIEW: readonly Command[] = [
   planned('undo', EDIT, 'history', 'arrow-rotate-left', true),
   planned('redo', EDIT, 'history', 'arrow-rotate-right', true),
   planned('find', EDIT, 'find', 'magnifying-glass', true),
-  planned('addText', EDIT, 'content', 'font'),
-  planned('addImage', EDIT, 'content', 'image'),
-  planned('addShape', EDIT, 'content', 'shapes'),
-  planned('highlight', EDIT, 'content', 'highlighter'),
-  planned('watermark', EDIT, 'content', 'stamp'),
-  planned('pageNumbers', EDIT, 'content', 'list-ol'),
-  planned('cropPages', EDIT, 'pageSize', 'crop-simple'),
-  planned('resizePages', EDIT, 'pageSize', 'up-right-and-down-left-from-center'),
 ];
 
-/** The menus after View, in order. */
+/** The tools, after View, in the order of `tools` in app.json. */
 const AFTER_VIEW: readonly Command[] = [
-  planned('organizePages', ORGANIZE, 'pages', 'table-cells', true),
+  planned('createPdf', CREATE, 'create', 'file-circle-plus'),
+
   planned('rotateLeft', ORGANIZE, 'turnSelected', 'rotate-left'),
   planned('rotateRight', ORGANIZE, 'turnSelected', 'rotate-right'),
-  planned('rotateAllLeft', ORGANIZE, 'turnAll', 'rotate-all-left'),
-  planned('rotateAllRight', ORGANIZE, 'turnAll', 'rotate-all-right'),
-  planned('deletePages', ORGANIZE, 'pages', 'trash-can'),
-  planned('extractPages', ORGANIZE, 'pages', 'file-export'),
-  planned('insertPages', ORGANIZE, 'pages', 'file-circle-plus'),
+  planned('moveEarlier', ORGANIZE, 'order', 'arrow-left'),
+  planned('moveLater', ORGANIZE, 'order', 'arrow-right'),
+  planned('insertBlankPage', ORGANIZE, 'pages', 'file-circle-plus'),
+  planned('insertPages', ORGANIZE, 'pages', 'folder-plus'),
   planned('replacePages', ORGANIZE, 'pages', 'right-left'),
+  planned('extractPages', ORGANIZE, 'pages', 'file-export'),
   planned('splitDocument', ORGANIZE, 'pages', 'scissors'),
+  planned('resizePages', ORGANIZE, 'pages', 'up-right-and-down-left-from-center'),
+  planned('deletePages', ORGANIZE, 'pages', 'trash-can'),
   planned('copyPages', ORGANIZE, 'clipboard', 'copy'),
   planned('cutPages', ORGANIZE, 'clipboard', 'scissors'),
   planned('pastePages', ORGANIZE, 'clipboard', 'paste'),
+  planned('rotateAllLeft', ORGANIZE, 'turnAll', 'rotate-all-left'),
+  planned('rotateAllRight', ORGANIZE, 'turnAll', 'rotate-all-right'),
   planned('selectAll', ORGANIZE, 'selection', 'check-double'),
   planned('selectNone', ORGANIZE, 'selection', 'square'),
   planned('selectOdd', ORGANIZE, 'selection', 'file'),
   planned('selectEven', ORGANIZE, 'selection', 'book-open'),
-  planned('moveEarlier', ORGANIZE, 'order', 'arrow-left'),
-  planned('moveLater', ORGANIZE, 'order', 'arrow-right'),
 
-  planned('newBinder', COMBINE, 'binder', 'layer-group', true),
-  planned('combineFiles', COMBINE, 'binder', 'object-group'),
-  planned('addFiles', COMBINE, 'binder', 'folder-plus'),
+  pen('edit', EDIT_TOOL, 'pens', 'select', 'arrow-pointer', 'pdf-organizer.command.select'),
+  pen('edit', EDIT_TOOL, 'pens', 'edit', 'i-cursor', 'pdf-organizer.command.editText'),
+  pen('edit', EDIT_TOOL, 'pens', 'text', 'font', 'pdf-organizer.command.addText'),
+  planned('addImage', EDIT_TOOL, 'add', 'image'),
+  pen('edit', EDIT_TOOL, 'add', 'link', 'link'),
+  pen('edit', EDIT_TOOL, 'shapes', 'rectangle', 'vector-square'),
+  pen('edit', EDIT_TOOL, 'shapes', 'ellipse', 'circle'),
+  pen('edit', EDIT_TOOL, 'shapes', 'line', 'minus'),
+  pen('edit', EDIT_TOOL, 'shapes', 'arrow', 'arrow-right-long'),
+  planned('watermark', EDIT_TOOL, 'onPages', 'stamp'),
+  planned('pageNumbers', EDIT_TOOL, 'onPages', 'list-ol'),
+  planned('headerFooter', EDIT_TOOL, 'onPages', 'table-columns'),
+  planned('batesNumbers', EDIT_TOOL, 'onPages', 'hashtag'),
+  planned('cropPages', EDIT_TOOL, 'pageSize', 'crop-simple'),
 
-  planned('insertBlankPage', INSERT, 'pages', 'file-circle-plus', true),
-  planned('headerFooter', INSERT, 'onPages', 'table-columns'),
-  planned('batesNumbers', INSERT, 'onPages', 'list-ol'),
-  planned('addLink', INSERT, 'links', 'link', true),
-  planned('addBookmark', INSERT, 'links', 'bookmark'),
-  planned('bookmarks', INSERT, 'links', 'book-open'),
-  planned('attachFile', INSERT, 'links', 'file-circle-check'),
-  planned('attachedFiles', INSERT, 'links', 'folder-open'),
-  planned('addTextField', INSERT, 'forms', 'i-cursor'),
-  planned('addCheckBox', INSERT, 'forms', 'square-check'),
-  planned('addRadioButton', INSERT, 'forms', 'circle'),
-  planned('addChoiceField', INSERT, 'forms', 'rectangle-list'),
-  planned('addSignatureField', INSERT, 'forms', 'file-signature'),
-  planned('fillForm', INSERT, 'forms', 'pen-to-square'),
+  pen('comment', COMMENT, 'pens', 'select', 'arrow-pointer', 'pdf-organizer.command.select'),
+  pen('comment', COMMENT, 'pens', 'highlight', 'highlighter'),
+  pen('comment', COMMENT, 'pens', 'text', 'font', 'pdf-organizer.command.note'),
+  pen('comment', COMMENT, 'pens', 'arrow', 'arrow-right-long'),
+  pen('comment', COMMENT, 'pens', 'ellipse', 'circle'),
+  pen('comment', COMMENT, 'more', 'bookmark', 'bookmark', 'pdf-organizer.command.addBookmark'),
+  planned('attachFile', COMMENT, 'more', 'file-circle-check'),
 
-  planned('signVisual', SIGN, 'sign', 'signature', true),
-  planned('signCertificate', SIGN, 'sign', 'file-signature'),
-  planned('signBatch', SIGN, 'sign', 'layer-group'),
+  pen('sign', SIGN, 'fill', 'select', 'arrow-pointer', 'pdf-organizer.command.select'),
+  pen('sign', SIGN, 'fill', 'text', 'font'),
+  pen('sign', SIGN, 'fill', 'check', 'check'),
+  pen('sign', SIGN, 'fill', 'cross', 'xmark'),
+  pen('sign', SIGN, 'fill', 'dot', 'circle'),
+  planned('fillForm', SIGN, 'fill', 'pen-to-square'),
+  planned('signVisual', SIGN, 'sign', 'signature'),
+  planned('signCertificate', SIGN, 'sign', 'certificate'),
   planned('timestamp', SIGN, 'sign', 'clock'),
   planned('verifySignatures', SIGN, 'verify', 'circle-check'),
+  planned('signBatch', SIGN, 'verify', 'layer-group'),
 
-  planned('ocr', TOOLS, 'more', 'eye'),
-  planned('redact', TOOLS, 'more', 'eraser'),
-  planned('compress', TOOLS, 'more', 'compress'),
-  planned('compare', TOOLS, 'more', 'code-compare'),
-  planned('batch', TOOLS, 'more', 'list-check'),
+  pen('form', FORM, 'pens', 'select', 'arrow-pointer', 'pdf-organizer.command.select'),
+  pen('form', FORM, 'fields', 'textField', 'i-cursor'),
+  pen('form', FORM, 'fields', 'checkBox', 'square-check'),
+  pen('form', FORM, 'fields', 'radioButton', 'circle'),
+  pen('form', FORM, 'fields', 'choiceField', 'rectangle-list'),
+  pen('form', FORM, 'fields', 'signatureField', 'file-signature'),
+
+  pen('protect', PROTECT, 'pens', 'select', 'arrow-pointer', 'pdf-organizer.command.select'),
+  pen('protect', PROTECT, 'pens', 'redact', 'eraser', 'pdf-organizer.command.redact'),
+
+  planned('newBinder', COMBINE, 'binder', 'layer-group'),
+  planned('addFiles', COMBINE, 'binder', 'folder-plus'),
+  planned('combineFiles', COMBINE, 'binder', 'object-group'),
+
+  planned('exportAs', CONVERT, 'convert', 'right-left'),
+
+  planned('ocr', OPTIMIZE, 'optimize', 'eye'),
+  planned('compress', OPTIMIZE, 'optimize', 'compress'),
+
+  planned('compare', COMPARE, 'compare', 'code-compare'),
+
+  planned('batch', BATCH, 'batch', 'list-check'),
+
+  // Panels beside the pages, at the end of View.
+  planned('bookmarks', VIEW, 'window', 'bookmark'),
+  planned('attachedFiles', VIEW, 'window', 'file-circle-check'),
 ];
 
 /** What makes a planned command work: everything about it that is not fixed by the menu. */
@@ -176,9 +238,23 @@ type Working = Pick<Command, 'run'> & Partial<Pick<Command, 'disabled' | 'kind' 
 function withWorking(commands: readonly Command[], working: Readonly<Record<string, Working>>): Command[] {
   return commands.map((command) => {
     const name = command.id.slice(commandId('').length);
+    // A pen of a tool is named by its tool and its kind (`edit.text`).
     const real = working[name];
     return real ? { ...command, disabled: false, ...real } : command;
   });
+}
+
+/** The pens of the tools that draw on the page, each working: a pen is named `<tool>.<kind>`. */
+function penWorking(markTool: MarkTool | null, onMark: (tool: MarkTool) => void, organizing: boolean): Record<string, Working> {
+  const working: Record<string, Working> = {};
+  for (const command of AFTER_VIEW) {
+    const name = command.id.slice(commandId('').length);
+    const match = /^(edit|comment|sign|form|protect)\.(\w+)$/.exec(name);
+    if (!match) continue;
+    const kind = match[2] as MarkTool;
+    working[name] = { run: () => onMark(kind), checked: markTool === kind, disabled: organizing };
+  }
+  return working;
 }
 
 /** What every kind of tab can do about files: open one, open several, make a new PDF. */
@@ -288,7 +364,9 @@ export interface ViewerCommandsInput {
   /** Opens one of the tools that put something on the page in view. */
   readonly onInsert: (tool: 'image' | 'signature') => void;
   /** Starts drawing on the page with a tool: a shape, text, a highlight. */
-  readonly onMark: (tool: 'rectangle' | 'text' | 'highlight' | 'redact' | 'link' | 'bookmark' | 'textField' | 'checkBox' | 'signatureField' | 'radioButton' | 'choiceField') => void;
+  readonly onMark: (tool: MarkTool) => void;
+  /** The pen in hand, while the page is drawn on. */
+  readonly markTool: MarkTool | null;
   /** Asks for a file and attaches it to the document. */
   readonly onAttach: () => void;
   /** Reads the text of scanned pages (OCR). */
@@ -347,7 +425,6 @@ function viewCommands(input: ViewerCommandsInput): Command[] {
       menuKey: VIEW,
       groupKey: group('zoom'),
       icon: 'magnifying-glass-minus',
-      primary: true,
       disabled: smaller >= zoom,
       run: () => setZoom(smaller),
     },
@@ -359,7 +436,6 @@ function viewCommands(input: ViewerCommandsInput): Command[] {
       menuKey: VIEW,
       groupKey: group('zoom'),
       icon: 'magnifying-glass-plus',
-      primary: true,
       disabled: larger <= zoom,
       run: () => setZoom(larger),
     },
@@ -487,19 +563,9 @@ export function viewerCommands(input: ViewerCommandsInput): Command[] {
     fillForm: input.hasForm
       ? { run: () => input.onFormShownChange(!input.formShown), kind: 'toggle', checked: input.formShown, hintKey: 'pdf-organizer.hint.fillForm' }
       : { run: () => input.onMark('textField'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.noForm' },
-    addText: { run: () => input.onMark('text'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.addText' },
     addImage: { run: () => input.onInsert('image'), disabled: organize.busy, hintKey: 'pdf-organizer.hint.addImage' },
-    addShape: { run: () => input.onMark('rectangle'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.addShape' },
-    highlight: { run: () => input.onMark('highlight'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.highlight' },
     signVisual: { run: () => input.onInsert('signature'), disabled: organize.busy, hintKey: 'pdf-organizer.hint.signVisual' },
-    redact: { run: () => input.onMark('redact'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.redact' },
-    addLink: { run: () => input.onMark('link'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.addLink' },
-    addBookmark: { run: () => input.onMark('bookmark'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.addBookmark' },
-    addTextField: { run: () => input.onMark('textField'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.addTextField' },
-    addCheckBox: { run: () => input.onMark('checkBox'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.addCheckBox' },
-    addRadioButton: { run: () => input.onMark('radioButton'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.addRadioButton' },
-    addChoiceField: { run: () => input.onMark('choiceField'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.addChoiceField' },
-    addSignatureField: { run: () => input.onMark('signatureField'), disabled: organize.organizing, hintKey: 'pdf-organizer.hint.addSignatureField' },
+    ...penWorking(input.markTool, input.onMark, organize.organizing),
     attachFile: { run: input.onAttach, disabled: organize.busy, hintKey: 'pdf-organizer.hint.attachFile' },
     ocr: { run: input.onOcr, disabled: organize.busy, hintKey: 'pdf-organizer.hint.ocr' },
     signCertificate: { run: input.onSignCertificate, disabled: organize.busy, hintKey: 'pdf-organizer.hint.signCertificate' },
@@ -530,12 +596,6 @@ export function viewerCommands(input: ViewerCommandsInput): Command[] {
     },
     undo: { run: organize.onUndo, disabled: !organize.canUndo },
     redo: { run: organize.onRedo, disabled: !organize.canRedo },
-    organizePages: {
-      run: () => organize.onOrganizingChange(!organize.organizing),
-      kind: 'toggle',
-      checked: organize.organizing,
-      hintKey: 'pdf-organizer.hint.organizePages',
-    },
     rotateLeft: { run: () => organize.onRotate(-90), disabled: noTarget },
     rotateRight: { run: () => organize.onRotate(90), disabled: noTarget },
     copyPages: { run: organize.onCopy, disabled: noTarget, hintKey: 'pdf-organizer.hint.copyPages' },

@@ -6,8 +6,9 @@ it only through its `index.ts`.
 
 | Module | Job |
 |---|---|
-| `window/` | The main window: app bar, tab strip, active tab |
-| `app-bar/` | Icon bar on the side: Start, apps, Settings |
+| `window/` | The main window: the bar on top, the active tab |
+| `app-switcher/` | The Syntelab logo, first on the bar on top: the apps, the search, the donation banner |
+| `side-actions/` | What is new, feedback and support: small icons at the bottom of the list of tools |
 | `tabs/` | Open tabs (shell and apps side by side), the tab strip, and the question before unsaved changes are lost (`close-guard.tsx`) |
 | `start/` | Start screen: apps (as cards, icons with names or icons, in the user's order), donation banner |
 | `changelog/` | Changelog window: reads `remote/creative/check/changelog/<language>.json` (the copies bundled with the program) |
@@ -18,7 +19,7 @@ it only through its `index.ts`.
 | `commands/` | The command registry instance, shell commands, menu and search |
 | `apps/` | App list from `apps/<app-id>/app.json`, app icons and names |
 | `app-host/` | Shows an app's interface in its tabs and gives it the shell's services (`AppHost`), including a place for its own small data (`app-data.ts`) |
-| `layout/` | The three layouts around an app (`classic/`, `ribbon/`, `side-panel/`), all fed by the command registry. Each app has its own default and remembers the user's choice. The ribbon gives way as the window narrows (`ribbon/fit-groups.ts`) |
+| `layout/` | The frame around an app, fed by the command registry: the top bar (menus, search, main commands), the list of the app's tools (`tools/`, in the order of `tools` in `app.json`) and the bar of the open tool, which gives way as the window narrows (`tools/fit-groups.ts`) |
 | `immersive/` | Lets an app hide the shell's bars (read mode) or take the whole screen; Escape brings them back |
 | `i18n/` | Finds and loads `locales/` and `apps/<app-id>/locales/`, sets `lang`/`dir` |
 | `theme/` | Applies light/dark/automatic |

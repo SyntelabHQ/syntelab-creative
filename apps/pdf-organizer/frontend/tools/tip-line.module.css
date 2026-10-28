@@ -1,0 +1,24 @@
+.tip {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 16px;
+  min-height: 32px;
+  padding-block: 4px;
+  padding-inline: 14px;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-surface-2);
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.text {
+  flex: 1;
+  margin: 0;
+  min-width: 0;
+}
+
+.text b {
+  color: var(--sc-text);
+  font-weight: 600;
+}

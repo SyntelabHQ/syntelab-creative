@@ -22,6 +22,8 @@ Rules:
   colors inside the file are ignored.
 - Only Free icons. Pro icons need a paid license and cannot be in an open
   source repository.
+- Icons are the Solid style. Where the outline (Regular) style is used, the
+  file name ends in `-regular`: `copy-regular.svg`.
 
 ## In use now
 
@@ -48,3 +50,5 @@ the table lists only the ones used elsewhere.
 | `sliders.svg` | View options (PDF Organizer) |
 | `check.svg` | Chosen item in a menu |
 | `rotate-right.svg` | Rotate view (PDF Organizer) |
+| `copy-regular.svg`, `bookmark-regular.svg`, `paperclip.svg`, `circle-check-regular.svg` | Rail beside the pages: pages, bookmarks, attached files, signatures (PDF Organizer) |
+| `star.svg`, `star-regular.svg` | Favorite certificate (PDF Organizer) |

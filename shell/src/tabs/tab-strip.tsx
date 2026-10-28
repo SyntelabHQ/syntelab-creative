@@ -33,11 +33,17 @@ export function TabStrip() {
   const { t, direction } = useI18n();
   const { tabs: openTabs, activeId } = useStore(tabsController.store);
   const { tabMark } = useStore(preferences);
-  const tabs = openTabs;
+  // The app's first page has a tab only while it is in front or nothing else is open: the house before the tabs
+  // brings it back, and it comes back by itself when the last other tab closes.
+  const homeId = `app:${tabsController.homeApp}`;
+  const tabs = openTabs.filter((tab) => tab.id !== homeId || tab.id === activeId || openTabs.length === 1);
+  const homeHidden = !tabs.some((tab) => tab.id === homeId);
   const { apps } = useApps();
   const appTexts = useAppTexts();
 
   const appOf = (tab: Tab) => apps.find((app) => app.manifest.id === tab.appId);
+  const homeApp = apps.find((app) => app.manifest.id === tabsController.homeApp);
+  const homeName = t('shell.tabs.home', { app: homeApp ? appTexts.name(homeApp) : tabsController.homeApp });
 
   const titleOf = (tab: Tab): string => {
     if (tab.kind === 'settings') return t('shell.settings.title');
@@ -64,7 +70,21 @@ export function TabStrip() {
   };
 
   return (
-    <div role="tablist" aria-label={t('shell.tabs.label')} className={styles.strip} onKeyDown={onKeyDown}>
+    <div role="tablist" aria-label={t('shell.tabs.label')} className={styles.strip} data-tauri-drag-region onKeyDown={onKeyDown}>
+      {homeHidden && (
+        <button
+          type="button"
+          role="tab"
+          aria-selected={false}
+          tabIndex={-1}
+          className={styles.home}
+          aria-label={homeName}
+          {...tooltip(homeName)}
+          onClick={() => tabsController.showHome()}
+        >
+          <Icon name="house" size={14} />
+        </button>
+      )}
       {tabs.map((tab) => {
         const selected = tab.id === activeId;
         const title = titleOf(tab);
@@ -73,6 +93,7 @@ export function TabStrip() {
           <div key={tab.id} role="presentation" className={styles.tab} data-selected={selected}>
             <button
               type="button"
+              {...tooltip(title)}
               role="tab"
               id={tabElementId(tab.id)}
               aria-selected={selected}
@@ -91,7 +112,7 @@ export function TabStrip() {
                 ) : (
                   <span className={styles.dot} {...appInk(app)} />
                 ))}
-              <bdi>{title}</bdi>
+              <bdi className={styles.name}>{title}</bdi>
               {tab.unsaved && <span className={styles.unsaved} aria-label={t('shell.tabs.unsaved')} role="img" />}
             </button>
             {tab.closable && (

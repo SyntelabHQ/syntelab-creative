@@ -41,3 +41,46 @@ export async function closeWindow(): Promise<void> {
   const { getCurrentWindow } = await import('@tauri-apps/api/window');
   await getCurrentWindow().destroy();
 }
+
+/** The buttons of the title bar the program draws itself: minimize, maximize or put back, close (which asks first, as above). */
+export async function minimizeWindow(): Promise<void> {
+  if (!isTauri()) return;
+  const { getCurrentWindow } = await import('@tauri-apps/api/window');
+  await getCurrentWindow().minimize();
+}
+
+export async function toggleMaximizeWindow(): Promise<void> {
+  if (!isTauri()) return;
+  const { getCurrentWindow } = await import('@tauri-apps/api/window');
+  await getCurrentWindow().toggleMaximize();
+}
+
+export async function requestCloseWindow(): Promise<void> {
+  if (!isTauri()) return;
+  const { getCurrentWindow } = await import('@tauri-apps/api/window');
+  await getCurrentWindow().close();
+}
+
+/** Calls `onChange` with whether the window fills the screen now (maximized), and each time that changes. */
+export function watchMaximized(onChange: (maximized: boolean) => void): () => void {
+  if (!isTauri()) return () => {};
+  let stop: (() => void) | undefined;
+  let stopped = false;
+  void import('@tauri-apps/api/window').then(async ({ getCurrentWindow }) => {
+    const current = getCurrentWindow();
+    const check = () => void current.isMaximized().then((maximized) => !stopped && onChange(maximized), () => {});
+    check();
+    const unlisten = await current.onResized(check);
+    if (stopped) unlisten();
+    else stop = unlisten;
+  });
+  return () => {
+    stopped = true;
+    stop?.();
+  };
+}
+
+/** Whether the window is the program's own (Tauri), with no title bar of the system: the program draws its buttons. */
+export function drawsOwnTitleBar(): boolean {
+  return isTauri();
+}

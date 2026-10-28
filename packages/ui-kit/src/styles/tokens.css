@@ -73,8 +73,22 @@
   /* Controls in windows and side panels, and the room left around a button's text there. */
   --sc-control-height-compact: 32px;
   --sc-button-padding-compact: 12px;
-  /* The commands of every ribbon tab take this height, so the ribbon does not move when the tab changes. */
-  --sc-ribbon-height: 72px;
+  /* The commands of every tool take this height in its bar, so the bar does not move when another tool is opened. */
+  --sc-tool-bar-height: 72px;
+
+  /* The colors of the tools of an app (`tools[].color` in app.json), each told apart at a glance. */
+  --sc-tool-red: #b91c1c;
+  --sc-tool-green: #2e8b57;
+  --sc-tool-orange: #c2410c;
+  --sc-tool-amber: #b7791f;
+  --sc-tool-purple: #6b46c1;
+  --sc-tool-cyan: #0e7490;
+  --sc-tool-crimson: #be123c;
+  --sc-tool-blue: #2450c8;
+  --sc-tool-teal: #0f766e;
+  --sc-tool-gold: #a16207;
+  --sc-tool-violet: #7c3aed;
+  --sc-tool-slate: #475569;
 }
 
 :root[data-theme='dark'] {
@@ -90,6 +104,19 @@
   --sc-accent-soft: #30353e;
   --sc-tooltip-bg: #e8eaee;
   --sc-tooltip-text: #15181e;
+
+  --sc-tool-red: #f07070;
+  --sc-tool-green: #5fc48a;
+  --sc-tool-orange: #f08a4b;
+  --sc-tool-amber: #e2b33c;
+  --sc-tool-purple: #a98bf0;
+  --sc-tool-cyan: #3cbdd6;
+  --sc-tool-crimson: #f06a8a;
+  --sc-tool-blue: #86a6ff;
+  --sc-tool-teal: #3ec7b4;
+  --sc-tool-gold: #e0b13b;
+  --sc-tool-violet: #b593ff;
+  --sc-tool-slate: #a5b1c2;
 }
 
 /* Light gray: the light theme a step darker, easier on the eyes on a bright screen. */

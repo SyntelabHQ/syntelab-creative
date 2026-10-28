@@ -128,14 +128,21 @@ fn icon_of(program: &Path) -> String {
     format!("\"{}\",0", program.to_string_lossy().replace('"', ""))
 }
 
-/// The icon of PDF files: PDF Organizer's, installed beside the program (`icons\apps\pdf-organizer.ico`); the
-/// program's own when it is not there.
+/// The icon of PDF files, installed beside the program: a white page with PDF Organizer's icon on it
+/// (`icons\apps\pdf-organizer-file.ico`), else PDF Organizer's own icon, else the program's.
 #[cfg_attr(not(windows), allow(dead_code))]
 fn file_icon_of(program: &Path) -> String {
-    match program.parent().map(pdf_organizer_icon) {
-        Some(icon) if icon.is_file() => format!("\"{}\",0", icon.to_string_lossy().replace('"', "")),
-        _ => icon_of(program),
+    let installed = program.parent().and_then(|folder| [pdf_file_icon(folder), pdf_organizer_icon(folder)].into_iter().find(|icon| icon.is_file()));
+    match installed {
+        Some(icon) => format!("\"{}\",0", icon.to_string_lossy().replace('"', "")),
+        None => icon_of(program),
     }
+}
+
+/// Where the icon of PDF files is installed, in the program's folder.
+#[cfg_attr(not(windows), allow(dead_code))]
+fn pdf_file_icon(folder: &Path) -> PathBuf {
+    folder.join("icons").join("apps").join("pdf-organizer-file.ico")
 }
 
 /// Where PDF Organizer's icon is installed, in the program's folder.
@@ -400,6 +407,10 @@ mod tests {
         std::fs::create_dir_all(icon.parent().unwrap()).unwrap();
         std::fs::write(&icon, b"icon").unwrap();
         assert_eq!(file_icon_of(&program), format!("\"{}\",0", icon.to_string_lossy()));
+        // The icon made for PDF files comes first: a white page, not the app's coloured square.
+        let page = pdf_file_icon(&folder);
+        std::fs::write(&page, b"icon").unwrap();
+        assert_eq!(file_icon_of(&program), format!("\"{}\",0", page.to_string_lossy()));
         std::fs::remove_dir_all(&folder).unwrap();
     }
 

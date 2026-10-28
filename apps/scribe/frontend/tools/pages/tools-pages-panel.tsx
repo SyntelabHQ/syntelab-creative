@@ -2,14 +2,12 @@ import { useI18n } from '@syntelab/i18n';
 import { Button, Icon, IconButton } from '@syntelab/ui-kit';
 import { useEffect, useRef, useState } from 'react';
 import { DoubtfulWords } from '../doubtful-words';
-import { countsOf, isReady, TOOL_GROUPS, TOOLS } from '../tool-definitions';
+import { countsOf, isReady, TOOLS } from '../tool-definitions';
 import type { Tool } from '../tool-definitions';
-import type { ToolsPanelProps } from '../tools-panel';
+import type { ToolsPanelProps } from '../tool-panel-types';
 import { CompactFields } from './compact-fields';
 import styles from './tools-pages-panel.module.css';
 import { useToolRunner } from './use-tool-runner';
-
-const FOLDED_KEY = 'toolGroupsFolded';
 
 /** A text as it is looked for: in small letters, without the marks over and under them. */
 function plain(text: string): string {
@@ -17,25 +15,17 @@ function plain(text: string): string {
 }
 
 /**
- * The tools, as two pages of one panel: the list of them, to choose from, and
- * the tool that was chosen, with its choices from the top of the panel and
- * its button always in sight at the bottom. Looking for a tool by its name
- * brings the list back from wherever the panel is.
- *
- * It does what `tools-panel.tsx` does, laid out another way: the owner tries
- * the two side by side (View → "Tools: one at a time") before one of them
- * goes.
+ * The tool that was chosen (on the bar of its group, in the search, on the
+ * start page), with its choices from the top of the panel and its button
+ * always in sight at the bottom. The tools themselves are chosen on the bars:
+ * with none open, the panel says so and can look for one by its name.
  */
 export function ToolsPagesPanel(props: ToolsPanelProps) {
-  const { host, openTool, onOpenTool, hiddenGroups, selected, onReplaceAt, onCompare, disabled } = props;
+  const { openTool, onOpenTool, selected, onReplaceAt, onCompare, disabled } = props;
   const { t } = useI18n();
   const runner = useToolRunner(props);
   const [query, setQuery] = useState('');
   const [explained, setExplained] = useState(false);
-  const [folded, setFolded] = useState<readonly string[]>(() => {
-    const stored = host.loadData<unknown>(FOLDED_KEY);
-    return Array.isArray(stored) ? stored.filter((group): group is string => typeof group === 'string') : [];
-  });
   const search = useRef<HTMLInputElement>(null);
 
   const tool = TOOLS.find((known) => known.id === openTool);
@@ -45,14 +35,8 @@ export function ToolsPagesPanel(props: ToolsPanelProps) {
     setExplained(false);
   }, [openTool]);
 
-  const toggleGroup = (group: string) => {
-    const next = folded.includes(group) ? folded.filter((known) => known !== group) : [...folded, group];
-    setFolded(next);
-    host.saveData(FOLDED_KEY, next);
-  };
-
   const wanted = plain(query.trim());
-  const listed = TOOLS.filter((known) => !hiddenGroups.includes(known.group) && (wanted === '' || plain(t(`scribe.tool.${known.id}`)).includes(wanted) || plain(t(`scribe.toolHint.${known.id}`)).includes(wanted)));
+  const listed = TOOLS.filter((known) => (wanted === '' || plain(t(`scribe.tool.${known.id}`)).includes(wanted) || plain(t(`scribe.toolHint.${known.id}`)).includes(wanted)));
   const searching = wanted !== '';
 
   const tile = (known: Tool) => (
@@ -61,30 +45,6 @@ export function ToolsPagesPanel(props: ToolsPanelProps) {
       <span>{t(`scribe.tool.${known.id}`)}</span>
     </button>
   );
-
-  /** A group that is one tool with one choice laid out: its options stand in the list themselves, each a click away. */
-  const optionsOf = (group: string) => {
-    const [only, ...others] = TOOLS.filter((known) => known.group === group);
-    const field = others.length === 0 ? only?.fields.find((known) => known.kind === 'choice' && known.spread) : undefined;
-    return only && field?.kind === 'choice' ? { tool: only, field } : null;
-  };
-  const optionTiles = ({ tool: known, field }: NonNullable<ReturnType<typeof optionsOf>>) =>
-    field.options.map((option) => (
-      <button
-        key={option}
-        type="button"
-        className={styles.tile}
-        data-tooltip={t(`scribe.toolHint.${known.id}`)}
-        onClick={() => {
-          // The tool opens with this option chosen; its other choices stay as they were left.
-          runner.setToolValues(known, { ...runner.valuesOf(known), [field.name]: option });
-          onOpenTool(known.id);
-        }}
-      >
-        <Icon name={known.icon} size={15} />
-        <span>{t(`scribe.variant.${known.id}.${option}`)}</span>
-      </button>
-    ));
 
   const finder = (
     <div className={styles.finder}>
@@ -120,15 +80,15 @@ export function ToolsPagesPanel(props: ToolsPanelProps) {
       >
         {finder}
         <div className={styles.head}>
-          <IconButton variant="ghost" aria-label={t('scribe.tools.allTools')} onClick={() => onOpenTool(null)}>
-            <Icon name="arrow-left" size={14} />
-          </IconButton>
           <span className={styles.title} data-open="true">
             <Icon name={tool.icon} size={15} />
             <span>{t(`scribe.tool.${tool.id}`)}</span>
           </span>
           <IconButton variant="ghost" aria-label={t('scribe.tools.whatItDoes')} aria-expanded={explained} onClick={() => setExplained(!explained)}>
             <Icon name="circle-info" size={14} />
+          </IconButton>
+          <IconButton variant="ghost" aria-label={t('scribe.tools.allTools')} onClick={() => onOpenTool(null)}>
+            <Icon name="xmark" size={14} />
           </IconButton>
         </div>
         <div className={styles.body}>
@@ -179,27 +139,14 @@ export function ToolsPagesPanel(props: ToolsPanelProps) {
     );
   }
 
-  // The list of tools: all of them, or those that answer to what is looked for.
+  // No tool open: where to choose one, or the tools that answer to what is looked for.
   return (
     <div className={styles.panel}>
       {finder}
       <div className={styles.body}>
-        {TOOL_GROUPS.every((group) => hiddenGroups.includes(group)) && <p className={styles.scope}>{t('scribe.tools.allHidden')}</p>}
+        {!searching && <p className={styles.scope}>{t('scribe.tools.chooseTool')}</p>}
         {searching && listed.length === 0 && <p className={styles.scope}>{t('scribe.tools.noToolFound')}</p>}
         {searching && listed.length > 0 && <div className={styles.tiles}>{listed.map(tile)}</div>}
-        {!searching &&
-          TOOL_GROUPS.filter((group) => !hiddenGroups.includes(group)).map((group) => {
-            const open = !folded.includes(group);
-            return (
-              <section key={group} className={styles.group}>
-                <button type="button" className={styles.groupName} aria-expanded={open} onClick={() => toggleGroup(group)}>
-                  <Icon name={open ? 'chevron-down' : 'chevron-right'} size={11} />
-                  {t(`scribe.toolGroup.${group}`)}
-                </button>
-                {open && <div className={styles.tiles}>{optionsOf(group) ? optionTiles(optionsOf(group) as NonNullable<ReturnType<typeof optionsOf>>) : TOOLS.filter((known) => known.group === group).map(tile)}</div>}
-              </section>
-            );
-          })}
       </div>
     </div>
   );

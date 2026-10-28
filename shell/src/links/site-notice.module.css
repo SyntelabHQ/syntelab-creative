@@ -1,0 +1,79 @@
+.notice {
+  --tone: var(--sc-action-feedback);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.notice[data-page='support'] {
+  --tone: var(--sc-action-support);
+}
+
+/* What the page is for, on a card in the color of its button. */
+.card {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, var(--tone) 45%, transparent);
+  border-radius: var(--sc-radius-m);
+  background: color-mix(in srgb, var(--tone) 10%, var(--sc-surface));
+}
+
+.icon {
+  display: flex;
+  flex: none;
+  padding-block-start: 1px;
+  color: var(--tone);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.text p {
+  margin: 0;
+}
+
+.heading {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.where {
+  margin: 0;
+  color: var(--sc-muted);
+  font-size: 13px;
+}
+
+.skip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.skip input {
+  accent-color: var(--tone);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* The way on, in the color of the page. */
+.go {
+  border-color: var(--tone);
+  background: var(--tone);
+  color: #fff;
+}
+
+.go:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--tone) 85%, #000);
+  background: color-mix(in srgb, var(--tone) 85%, #000);
+}

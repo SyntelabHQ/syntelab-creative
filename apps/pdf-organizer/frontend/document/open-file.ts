@@ -2,8 +2,9 @@ import { fileName } from '@syntelab/shell-api';
 import type { AppHost } from '@syntelab/shell-api';
 
 /** Opens a PDF in its own tab (or brings its tab to the front). */
-export function openFileInTab(host: Pick<AppHost, 'openTab'>, path: string): void {
-  host.openTab({ key: path, title: fileName(path), params: { path } });
+export function openFileInTab(host: Pick<AppHost, 'openTab'>, path: string, tool?: string): void {
+  // `tool`: the tool the document opens with (the key of its menu), asked for before there was a document.
+  host.openTab({ key: path, title: fileName(path), params: tool ? { path, tool } : { path } });
 }
 
 let binderCount = 0;

@@ -73,10 +73,45 @@ pub struct AppManifest {
     /// What of the app the search of the Start page finds besides the app itself.
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub search: Vec<SearchEntry>,
-    /// `classic`, `ribbon` or `side-panel`: the layout the app starts with,
-    /// until the user picks another one for it.
+    /// The app's tools, in the order the list of tools shows them: each is one of the app's menus, with an icon
+    /// and a sentence saying what it is for.
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub tools: Vec<ToolEntry>,
+    /// What the bar over the content shows while no tool is open: a name and the tools marked `quick`.
     #[serde(default, skip_serializing_if = "Option::is_none")]
-    pub default_layout: Option<String>,
+    pub idle_tool: Option<IdleTool>,
+}
+
+/// The bar shown while no tool is open.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct IdleTool {
+    /// The key of its name in the app's translations.
+    pub label_key: String,
+    /// Name of a file in `assets/icons/`, without the extension.
+    pub icon: String,
+}
+
+/// One tool of an app: one of its menus, with an icon and a sentence saying what it is for.
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ToolEntry {
+    /// The key of the menu whose commands are the tool's (`pdf-organizer.menu.organize`).
+    pub menu_key: String,
+    /// Name of a file in `assets/icons/`, without the extension.
+    pub icon: String,
+    /// The key of a sentence saying what the tool is for, in the app's translations.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub hint_key: Option<String>,
+    /// The color of its icon (`red`, `green`, `blue`…), so tools are told apart at a glance.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub color: Option<String>,
+    /// The id of a command the tool runs instead of opening a bar.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub run: Option<String>,
+    /// Shown on the bar while no tool is open.
+    #[serde(default, skip_serializing_if = "std::ops::Not::not")]
+    pub quick: bool,
 }
 
 #[cfg(test)]
@@ -119,14 +154,16 @@ mod tests {
             context_menu: Vec::new(),
             context_menu_grouped: true,
             search: Vec::new(),
-            default_layout: Some("ribbon".into()),
+            tools: vec![ToolEntry { menu_key: "pdf-organizer.menu.organize".into(), icon: "grip".into(), hint_key: None, color: None, run: None, quick: false }],
+            idle_tool: None,
         };
         let json = serde_json::to_value(&manifest).expect("serializable");
 
         assert_eq!(json["apiVersion"], 1);
         assert_eq!(json["status"], "active");
         assert_eq!(json["fileTypes"][0], ".pdf");
-        assert_eq!(json["defaultLayout"], "ribbon");
+        assert_eq!(json["tools"][0]["menuKey"], "pdf-organizer.menu.organize");
+        assert!(json["tools"][0].get("hintKey").is_none());
         assert_eq!(json["contextMenuGrouped"], true);
     }
 }

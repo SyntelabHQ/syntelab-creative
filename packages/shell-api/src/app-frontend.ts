@@ -1,5 +1,6 @@
 import type { Command } from '@syntelab/command-registry';
 import type { ComponentType } from 'react';
+import type { ToolEntry } from './app-manifest';
 
 /** Values a tab carries for its app (for example the file it shows). */
 export type AppTabParams = Readonly<Record<string, string>>;
@@ -77,6 +78,22 @@ export interface AppHost {
   readonly immersive: ImmersiveMode;
   /** Hides or shows the shell's bars. The user can always leave with Escape. */
   setImmersive(mode: ImmersiveMode): void;
+  /**
+   * The tool of this tab whose bar is open (the key of its menu, as in
+   * `app.json` `tools`), or null while the user only reads. The app shows what
+   * the tool works on: the grid of pages for Organize, the pen for Sign.
+   */
+  readonly tool: string | null;
+  /** The app's tools, as its `app.json` lists them: for a start page that shows them as cards. */
+  readonly tools: readonly ToolEntry[];
+  /** Opens the bar of one of the app's tools in this tab, or closes it with null (a card of a start page). */
+  showTool(menuKey: string | null): void;
+  /**
+   * Whether the bar of `idleTool` (app.json) stands over the content while no
+   * tool is open: true while the tab shows something to work on (a document),
+   * not on a start page. Hidden until the app says so.
+   */
+  setIdleBar(shown: boolean): void;
   /** Runs a command of the app's Rust side. Rejects with an `AppInvokeError`. */
   invoke<T>(command: string, payload?: unknown): Promise<T>;
   /** URL of binary data produced by the app's Rust side (pictures…). */
@@ -84,7 +101,7 @@ export interface AppHost {
   /** Asks the user for files. Returns their paths; empty when cancelled. */
   pickFiles(options: PickFilesOptions): Promise<string[]>;
   /**
-   * Adds commands to the program (menus, ribbon, side panel, search) and
+   * Adds commands to the program (menus, tools, search) and
    * returns a function that removes them. An app registers the commands of
    * the tab in front, and replaces them when their state changes.
    */

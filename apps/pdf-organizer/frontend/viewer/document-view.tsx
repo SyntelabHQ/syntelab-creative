@@ -3,7 +3,8 @@ import { fileName } from '@syntelab/shell-api';
 import type { AppHost } from '@syntelab/shell-api';
 import { Button, Icon, IconButton } from '@syntelab/ui-kit';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { emptyTabCommands, viewerCommands } from '../commands';
+import type { CSSProperties } from 'react';
+import { COMPARE, CONVERT, DRAWING_TOOLS, emptyTabCommands, ORGANIZE, viewerCommands } from '../commands';
 import { CreatePdfDialog } from '../create/create-pdf-dialog';
 import { planIndexOf } from '../document/document-facts';
 import type { PlanPage } from '../document/page-plan';
@@ -18,6 +19,8 @@ import { PICTURE_TYPES } from '../document/page-sources';
 import { PropertiesDialog } from '../document/properties-dialog';
 import { useDocument } from '../document/use-document';
 import { useDocumentFacts } from '../document/use-document-facts';
+import { useFileCounts } from '../document/use-file-counts';
+import type { Bookmark } from '../document/document-facts';
 import { FindBar } from '../find/find-bar';
 import { useFind } from '../find/use-find';
 import { FormLayer } from '../forms/form-layer';
@@ -29,6 +32,7 @@ import { SignedSaveDialog } from '../sign/signed-save-dialog';
 import type { SigningChoice } from '../sign/sign-dialog';
 import { signatureLook } from '../sign/signature-look';
 import { presetLines } from '../sign/signature-presets';
+import { SignaturesBanner } from '../sign/signatures-banner';
 import { SignaturesDialog } from '../sign/signatures-dialog';
 import { TimeStampDialog } from '../sign/time-stamp-dialog';
 import { usePageLinks } from '../links/page-links';
@@ -38,9 +42,11 @@ import { InsertTools } from '../insert/insert-tools';
 import { isField, markRequest, restyle, styleOf } from '../marks/mark';
 import type { Mark, MarkStyle } from '../marks/mark';
 import { MarkPanel } from '../marks/mark-panel';
+import { penHintKey } from '../marks/pen-hint';
 import { placedOnPage } from '../marks/place-on-page';
 import type { Placing } from '../marks/placing';
 import { MarkLayer } from '../marks/mark-layer';
+import type { MarkTool } from '../marks/mark-layer';
 import { fitted, fitText } from '../marks/measure-text';
 import { useMarking } from '../marks/use-marking';
 import type { InsertTool } from '../insert/insert-tools';
@@ -72,17 +78,19 @@ import { ResizeDialog } from '../organize/resize-dialog';
 import { SplitDialog } from '../organize/split-dialog';
 import { useThumbnailSize } from '../organize/thumbnail-zoom';
 import { canNudge, useOrganizer } from '../organize/use-organizer';
-import { loadSettings, saveSettings, useOrganizerSettings } from '../settings/organizer-settings';
+import { DEFAULT_SETTINGS, loadSettings, saveSettings, SIDE_WIDTHS, useOrganizerSettings } from '../settings/organizer-settings';
+import { TipLine } from '../tools/tip-line';
 import { useTabCommands } from '../use-tab-commands';
 import styles from './document-view.module.css';
 import { PageList } from './page-list';
 import type { PageListHandle } from './page-list';
 import { rowOfPage } from './page-rows';
+import { DocRail } from './doc-rail';
+import { SideHandle } from './side-handle';
 import { SideStrip } from './side-strip';
 import type { SideView } from './side-strip';
 import { ThumbnailList } from './thumbnail-list';
-import { ViewBar } from './view-bar';
-import { DEFAULT_VIEW } from './view-settings';
+import { DEFAULT_VIEW, rotateClockwise } from './view-settings';
 import type { ViewSettings } from './view-settings';
 
 const NO_SELECTION: ReadonlySet<number> = new Set();
@@ -101,6 +109,9 @@ export interface DocumentViewProps {
   readonly unsaved?: boolean;
 }
 
+/** Pens that draw nothing with a look of its own to choose: the panel beside the pages waits for something selected. */
+const PLAIN_PENS: readonly MarkTool[] = ['select', 'edit', 'link', 'bookmark', 'redact', 'textField', 'checkBox', 'radioButton', 'choiceField', 'signatureField'];
+
 /**
  * One open PDF. Normally: view bar, thumbnails on the side, pages in the
  * middle. While organizing: every page in a grid, to select, move and turn.
@@ -109,6 +120,22 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
   const { t, language } = useI18n();
   const { state, replace } = useDocument(host, path, !unsaved);
   const settings = useOrganizerSettings(host);
+  /** The width of a panel beside the pages while its edge is dragged; the settings keep it once let go. */
+  const [dragged, setDragged] = useState<{ readonly key: 'stripWidth' | 'panelWidth'; readonly width: number } | null>(null);
+  const sideWidth = (key: 'stripWidth' | 'panelWidth') => (dragged?.key === key ? dragged.width : settings[key]);
+  const sideHandle = (key: 'stripWidth' | 'panelWidth') => (
+    <SideHandle
+      width={sideWidth(key)}
+      min={SIDE_WIDTHS[key].min}
+      max={SIDE_WIDTHS[key].max}
+      defaultWidth={DEFAULT_SETTINGS[key]}
+      onResize={(width) => setDragged({ key, width })}
+      onResized={(width) => {
+        setDragged(null);
+        saveSettings(host, { ...loadSettings(host), [key]: width });
+      }}
+    />
+  );
   // How a document opens is a setting; what the user changes afterwards belongs to this tab.
   const [view, setView] = useState<ViewSettings>(() => ({
     ...DEFAULT_VIEW,
@@ -153,10 +180,34 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
   const [formShown, setFormShown] = useState(true);
   const organizer = useOrganizer(host, document, currentPage, replace, form.answersFor, unsaved, path);
   const pageCount = organizer.plan.length;
+  const { showTool } = host;
+  /** Back from the grid of pages to the document: the bar of Organize closes too. */
+  const stopOrganizing = () => {
+    organizer.setOrganizing(false);
+    if (host.tool === ORGANIZE) showTool(null);
+  };
   // Drawing on the page: the tool in use, the look of the next mark, the mark that is selected.
   const marking = useMarking();
   const markedPage = marking.selection ? organizer.plan.find((page) => page.key === marking.selection?.pageKey) : undefined;
   const selectedMark = markedPage?.marks?.find((mark) => mark.id === marking.selection?.markId) ?? null;
+  // One panel beside the pages at a time: the look of what the pen draws (or of what is selected), the texts or
+  // numbers put on pages, the cropping; or the small pages and the bookmarks. A tool's panel that opens closes
+  // the small pages; the small pages asked for while a tool's panel is open come in its place.
+  const markPanelWanted = marking.tool !== null && (placing !== null || selectedMark !== null || !PLAIN_PENS.includes(marking.tool));
+  const toolPanelWanted = markPanelWanted || pageTexts !== null || numbering !== null || cropping !== null;
+  const [stripOnTop, setStripOnTop] = useState(false);
+  const toolPanelKey = toolPanelWanted ? [markPanelWanted ? marking.tool : '', selectedMark?.id ?? '', pageTexts !== null, numbering !== null, cropping !== null].join('|') : '';
+  useEffect(() => {
+    setStripOnTop(false);
+    if (toolPanelKey !== '') setThumbnailsShown(false);
+  }, [toolPanelKey]);
+  const stripShown = thumbnailsShown && (!toolPanelWanted || stripOnTop);
+  /** Shows or hides the small pages (or the bookmarks); shown, they come in place of a tool's panel. */
+  const showStrip = useCallback((shown: boolean) => {
+    setThumbnailsShown(shown);
+    setStripOnTop(shown);
+  }, []);
+  const pendingAttachments = organizer.plan.reduce((sum, page) => sum + (page.marks ?? []).filter((mark) => mark.kind === 'attachment').length, 0);
   const { setMarksOnPages } = organizer;
   /** What is drawn on one page changes; marks that are on several pages as one (a signature) follow on the others. */
   const setMarks = (pageKey: string, marks: readonly Mark[], step?: string) => setMarksOnPages(withGroupsFollowing(organizer.plan, pageKey, marks), step);
@@ -247,12 +298,19 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
     changeSelectedMark((mark) => (mark.kind === 'text' ? fitText(restyle(mark, change)) : restyle(mark, change)), `style:${Object.keys(change).join()}`);
   };
   const facts = useDocumentFacts(host, document?.id);
-  const bookmarksShown = thumbnailsShown && sideView === 'bookmarks';
+  // Counted again when their dialogs close: what was attached or signed there shows at once.
+  const fileCounts = useFileCounts(host, document?.id, `${attachmentsOpen}:${signOpen}`);
+  /** The document whose line about its signatures was closed. */
+  const [signaturesSeen, setSignaturesSeen] = useState<number | null>(null);
+  const bookmarksShown = stripShown && sideView === 'bookmarks';
   /** Shows the table of contents in the side strip, or goes back to the small pages. */
-  const showBookmarks = useCallback((shown: boolean) => {
-    setSideView(shown ? 'bookmarks' : 'thumbnails');
-    if (shown) setThumbnailsShown(true);
-  }, []);
+  const showBookmarks = useCallback(
+    (shown: boolean) => {
+      setSideView(shown ? 'bookmarks' : 'thumbnails');
+      if (shown) showStrip(true);
+    },
+    [showStrip],
+  );
   const find = useFind(host, organizer.plan);
   const [findFocus, setFindFocus] = useState(0);
   const showFind = find.show;
@@ -317,7 +375,7 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
     setCropping(null);
     setNumbering(null);
     setPageTexts(null);
-    organizer.setOrganizing(false);
+    stopOrganizing();
     marking.setTool('select');
     marking.select(null);
   };
@@ -385,7 +443,12 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
           setSigningArea(false);
         }
         else if (marking.selection) marking.select(null);
-        else marking.setTool(marking.tool === 'select' ? null : 'select');
+        else if (marking.tool !== 'select') marking.setTool('select');
+        else {
+          // Putting the pen away closes the bar of its tool too.
+          marking.setTool(null);
+          if (host.tool && DRAWING_TOOLS[host.tool]) showTool(null);
+        }
       } else return;
       event.preventDefault();
       event.stopPropagation();
@@ -395,12 +458,53 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
     return () => window.removeEventListener('keydown', onKeyDown, true);
   });
 
+  // The tool opened on the bar decides what the tab shows: the grid of pages, or the document with a pen in hand.
+  const openTool = host.tool;
+  const lastTool = useRef<string | null>(null);
+  useEffect(() => {
+    const before = lastTool.current;
+    lastTool.current = openTool;
+    if (before === openTool) return;
+    organizer.setOrganizing(openTool === ORGANIZE);
+    const pen = openTool ? DRAWING_TOOLS[openTool] : undefined;
+    if (pen) {
+      setCropping(null);
+      setNumbering(null);
+      setPageTexts(null);
+      marking.setTool(pen);
+    } else if (before && DRAWING_TOOLS[before]) {
+      setPlacing(null);
+      setSigningArea(false);
+      marking.setTool(null);
+    }
+    // Only a change of the tool matters here.
+  }, [openTool]);
+  // A tool asked for before the file was open (a card of the start page): shown as soon as the document is.
+  const askedTool = host.params.tool;
+  const ready = document !== null;
+  // With a document to read, the tools used most stand over it while no tool is open.
+  const { setIdleBar } = host;
+  useEffect(() => {
+    setIdleBar(ready);
+    return () => setIdleBar(false);
+  }, [ready, setIdleBar]);
+  const askedOnce = useRef(false);
+  useEffect(() => {
+    if (!ready || !askedTool || askedOnce.current) return;
+    askedOnce.current = true;
+    // The tools of one step do it now; the others open their bar.
+    if (askedTool === CONVERT) setExportOpen(true);
+    else if (askedTool === COMPARE) void compare();
+    else showTool(askedTool);
+    // Once, when the document is there.
+  }, [ready]);
+
   // Removing pages can leave the current page past the end.
   useEffect(() => {
     if (pageCount > 0 && currentPage > pageCount - 1) setCurrentPage(pageCount - 1);
   }, [pageCount, currentPage]);
 
-  // The commands of this tab, for the menus, ribbon, side panel and search.
+  // The commands of this tab, for the menus, tools and search.
   const nudge = canNudge(organizer);
   const thumbnails = useThumbnailSize(host, 'organizeThumbnailSize');
   const commands = useMemo(
@@ -410,8 +514,8 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
             view,
             onViewChange: setView,
             zoom,
-            thumbnailsShown,
-            onThumbnailsShownChange: setThumbnailsShown,
+            thumbnailsShown: stripShown,
+            onThumbnailsShownChange: showStrip,
             bookmarksShown,
             onBookmarksShownChange: showBookmarks,
             onProperties: () => setPropertiesOpen(true),
@@ -443,9 +547,10 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
               setNumbering(null);
               setPlacing(null);
               marking.setTool(null);
-              organizer.setOrganizing(false);
+              stopOrganizing();
             },
             marking: marking.tool !== null,
+            markTool: marking.tool,
             immersive,
             onImmersiveChange: setImmersive,
             files,
@@ -454,7 +559,7 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
             onNewBinder: newBinder,
             organize: {
               organizing: organizer.organizing,
-              onOrganizingChange: organizer.setOrganizing,
+              onOrganizingChange: (organizing) => showTool(organizing ? ORGANIZE : null),
               pageCount,
               targetCount: organizer.targets.size,
               selectedCount: organizer.selected.size,
@@ -484,7 +589,7 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
                 setPageTexts(null);
                 setPlacing(null);
                 marking.setTool(null);
-                organizer.setOrganizing(false);
+                stopOrganizing();
               },
               onCopy: organizer.copy,
               onCut: organizer.cut,
@@ -498,7 +603,7 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
                 setPageTexts(null);
                 setPlacing(null);
                 marking.setTool(null);
-                organizer.setOrganizing(false);
+                stopOrganizing();
               },
               onWatermark: () => setShapeOpen('watermark'),
               onCompress: () => setShapeOpen('compress'),
@@ -516,7 +621,8 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
       path,
       view,
       zoom,
-      thumbnailsShown,
+      stripShown,
+      showStrip,
       bookmarksShown,
       showBookmarks,
       immersive,
@@ -630,7 +736,7 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
         pages={organizer.plan}
         onShow={(pageKey, markId) => {
           setAttachmentsOpen(false);
-          organizer.setOrganizing(false);
+          stopOrganizing();
           goToPage(organizer.plan.findIndex((page) => page.key === pageKey));
           marking.setTool('select');
           marking.select({ pageKey, markId });
@@ -801,7 +907,7 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
       <div className={styles.view}>
         <OrganizeBar
           selectedCount={organizer.selected.size}
-          onDone={() => organizer.setOrganizing(false)}
+          
           thumbnailSize={thumbnails.size}
           onThumbnailSizeChange={thumbnails.onSizeChange}
         />
@@ -826,7 +932,7 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
           onPaste={organizer.paste}
           onOpenPage={(page) => {
             setCurrentPage(page);
-            organizer.setOrganizing(false);
+            stopOrganizing();
           }}
           pictureBox={thumbnails.size}
           drawnSize={thumbnails.drawnSize}
@@ -838,66 +944,36 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
 
   return (
     <div className={styles.view}>
-      <ViewBar
-        currentPage={currentPage}
-        pageCount={pageCount}
-        zoom={zoom}
-        modified={modified}
-        unsaved={unsaved}
-        onZoomChange={setCustomZoom}
-        onGoToPage={goToPage}
-        onStep={step}
-        tools={settings.quickTools}
-        actions={{
-          onSave: () => void latestSave.current(),
-          canSave: modified && !organizer.busy,
-          onPrint: () => void organizer.print(),
-          onUndo: organizer.undo,
-          canUndo: organizer.canUndo,
-          onRedo: organizer.redo,
-          canRedo: organizer.canRedo,
-          zoomMode: view.zoomMode,
-          onFit: (zoomMode) => setView((current) => ({ ...current, zoomMode })),
-          // The page in view is turned, in the document: turning for looking only is no more.
-          onRotateView: (direction) => organizer.rotateAt([currentPage], direction === 1 ? 90 : -90),
-          onFind: openFind,
-          onOrganize: () => organizer.setOrganizing(true),
-          onShare: () => void organizer.share(path),
-        }}
-        immersive={immersive}
-        onLeaveImmersive={() => setImmersive('none')}
-      />
+      {/* With a pen in hand, what it does, in a sentence (the bar of the tool is the shell's, over this). */}
+      {marking.tool !== null && host.tool && DRAWING_TOOLS[host.tool] && !placing && <TipLine>{t(penHintKey(marking.tool))}</TipLine>}
+      {/* With the bars hidden (read mode, full screen), this is the visible way back; Escape works too. */}
+      {immersive !== 'none' && (
+        <div className={styles.immersive}>
+          <Button variant="outline" onClick={() => setImmersive('none')}>
+            <Icon name="xmark" size={14} />
+            {t(immersive === 'read' ? 'pdf-organizer.view.leaveReadMode' : 'pdf-organizer.view.leaveFullScreen')}
+          </Button>
+        </div>
+      )}
       {find.open && <FindBar find={find} onStep={stepFind} focusRequest={findFocus} />}
       {problem}
+      {/* What the signatures say, checked on this computer when the document opened. */}
+      {immersive === 'none' && fileCounts.verdict && document && signaturesSeen !== document.id && (
+        <SignaturesBanner
+          verdict={fileCounts.verdict}
+          onShow={() => {
+            setShownSignature(null);
+            setSignOpen('verify');
+          }}
+          onDismiss={() => setSignaturesSeen(document.id)}
+        />
+      )}
       {splitDialog}
       {extractDialog}
       {shapeDialogs}
       {propertiesDialog}
       {insertTools}
-      <div className={styles.body}>
-        {/* Read mode and full screen leave the whole window to the pages. */}
-        {immersive === 'none' && (
-          <SideStrip view={sideView} onViewChange={setSideView} collapsed={!thumbnailsShown} onCollapsedChange={(collapsed) => setThumbnailsShown(!collapsed)}>
-            {sideView === 'thumbnails' ? (
-              <ThumbnailList
-                host={host}
-                pages={organizer.plan}
-                rotation={view.rotation}
-                currentPage={currentPage}
-                onSelect={goToPage}
-              />
-            ) : (
-              <BookmarkList
-                bookmarks={facts?.bookmarks ?? []}
-                placeOf={(page) => (document ? planIndexOf(organizer.plan, document.id, page) : undefined)}
-                currentPage={currentPage}
-                onGoToPage={goToPage}
-                changes={organizer.changes}
-                onEdit={organizer.editBookmark}
-              />
-            )}
-          </SideStrip>
-        )}
+      <div className={styles.body} style={{ '--strip-width': `${sideWidth('stripWidth')}px`, '--panel-width': `${sideWidth('panelWidth')}px` } as CSSProperties}>
         <PageList
           ref={pages}
           host={host}
@@ -997,10 +1073,12 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
           )}
           activeHit={find.hits[find.active] ?? null}
         />
-        {marking.tool !== null && (
-          <MarkPanel
+        {/* The look of what the pen draws, or of what is selected: only while there is something to show. */}
+        {markPanelWanted && !stripOnTop && (
+          <>
+            {sideHandle('panelWidth')}
+            <MarkPanel
             tool={marking.tool}
-            onToolChange={marking.setTool}
             style={selectedMark ? styleOf(selectedMark, marking.style) : marking.style}
             onStyleChange={changeMarkStyle}
             selectedKind={selectedMark?.kind ?? null}
@@ -1011,18 +1089,13 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
               if (change.author !== undefined) saveSettings(host, { ...loadSettings(host), attachAuthor: change.author });
             }}
             onDuplicate={() => pasteMark(selectedMark)}
-            toolsAsList={settings.toolsAsList}
-            onToolsAsListChange={(toolsAsList) => saveSettings(host, { ...loadSettings(host), toolsAsList })}
             pageKeys={organizer.plan.map((page) => page.key)}
             onDelete={() => changeSelectedMark(() => null)}
             onPlaceOnPage={(across, down) => markedPage && changeSelectedMark((mark) => placedOnPage(mark, markedPage, across, down))}
-            canUndo={organizer.canUndo}
-            canRedo={organizer.canRedo}
-            onUndo={organizer.undo}
-            onRedo={organizer.redo}
             onDone={() => {
               setPlacing(null);
               marking.setTool(null);
+              if (host.tool && DRAWING_TOOLS[host.tool]) showTool(null);
             }}
             fonts={fonts}
             repeated={selectedMark && selectedMark.kind !== 'erase' ? { pages: Math.max(pagesOfGroup(organizer.plan, selectedMark.group).length, 1), of: pageCount } : null}
@@ -1035,9 +1108,12 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
               setSigningArea(false);
             }}
           />
+          </>
         )}
-        {pageTexts && (
-          <PageTextsPanel
+        {pageTexts && !stripOnTop && (
+          <>
+            {sideHandle('panelWidth')}
+            <PageTextsPanel
             settings={pageTexts}
             onChange={setPageTexts}
             pages={organizer.plan}
@@ -1050,9 +1126,12 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
             }}
             onCancel={() => setPageTexts(null)}
           />
+          </>
         )}
-        {numbering && (
-          <NumbersPanel
+        {numbering && !stripOnTop && (
+          <>
+            {sideHandle('panelWidth')}
+            <NumbersPanel
             host={host}
             numbering={numbering}
             onChange={setNumbering}
@@ -1065,9 +1144,12 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
             }}
             onCancel={() => setNumbering(null)}
           />
+          </>
         )}
-        {cropping && (
-          <CropPanel
+        {cropping && !stripOnTop && (
+          <>
+            {sideHandle('panelWidth')}
+            <CropPanel
             host={host}
             cropping={cropping}
             onChange={setCropping}
@@ -1082,8 +1164,61 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
               setShapeOpen('resize');
             }}
           />
+          </>
+        )}
+        {/* Read mode and full screen leave the whole window to the pages. */}
+        {immersive === 'none' && stripShown && sideHandle('stripWidth')}
+        {immersive === 'none' && stripShown && (
+          <SideStrip view={sideView} onClose={() => showStrip(false)}>
+            {sideView === 'thumbnails' ? (
+              <ThumbnailList
+                host={host}
+                pages={organizer.plan}
+                rotation={view.rotation}
+                currentPage={currentPage}
+                onSelect={goToPage}
+              />
+            ) : (
+              <BookmarkList
+                bookmarks={facts?.bookmarks ?? []}
+                placeOf={(page) => (document ? planIndexOf(organizer.plan, document.id, page) : undefined)}
+                currentPage={currentPage}
+                onGoToPage={goToPage}
+                changes={organizer.changes}
+                onEdit={organizer.editBookmark}
+              />
+            )}
+          </SideStrip>
+        )}
+        {immersive === 'none' && (
+          <DocRail
+            panel={stripShown ? sideView : null}
+            onPanelChange={(panel) => {
+              if (panel) setSideView(panel);
+              showStrip(panel !== null);
+            }}
+            counts={{ bookmarks: countBookmarks(facts?.bookmarks ?? []), attached: fileCounts.attached + pendingAttachments, signatures: fileCounts.signatures }}
+            onAttachedFiles={() => setAttachmentsOpen(true)}
+            onSignatures={() => {
+              setShownSignature(null);
+              setSignOpen('verify');
+            }}
+            currentPage={currentPage}
+            pageCount={pageCount}
+            onPageChange={goToPage}
+            onStep={step}
+            onRotate={() => setView((current) => ({ ...current, rotation: rotateClockwise(current.rotation) }))}
+            commands={commands}
+            zoom={zoom}
+            onZoomChange={setCustomZoom}
+          />
         )}
       </div>
     </div>
   );
+}
+
+/** How many entries a table of contents has, those inside others too. */
+function countBookmarks(bookmarks: readonly Bookmark[]): number {
+  return bookmarks.reduce((sum, bookmark) => sum + 1 + countBookmarks(bookmark.children), 0);
 }

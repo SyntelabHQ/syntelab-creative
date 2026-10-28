@@ -74,7 +74,14 @@
     "color": "#E53935",
     "icon": "assets/icon.svg"
   },
-  "defaultLayout": "ribbon",
+  "tools": [
+    { "menuKey": "units.menu.essentials", "icon": "ruler", "hintKey": "units.menuHint.essentials", "color": "blue" },
+    { "menuKey": "units.menu.motion", "icon": "gauge-high", "hintKey": "units.menuHint.motion", "color": "orange" },
+    { "menuKey": "units.menu.energy", "icon": "bolt", "hintKey": "units.menuHint.energy", "color": "amber" },
+    { "menuKey": "units.menu.scientific", "icon": "flask", "hintKey": "units.menuHint.scientific", "color": "purple" },
+    { "menuKey": "units.menu.digital", "icon": "hard-drive", "hintKey": "units.menuHint.digital", "color": "teal" },
+    { "menuKey": "units.menu.physics", "icon": "cube", "hintKey": "units.menuHint.physics", "color": "crimson" }
+  ],
   "locales": "locales/",
   "search": [
     {

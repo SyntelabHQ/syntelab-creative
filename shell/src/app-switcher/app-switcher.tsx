@@ -9,7 +9,7 @@ import styles from './app-switcher.module.css';
 import { DonationBanner } from './donation-banner';
 
 /**
- * The Syntelab logo at the top of the bar on the side, which opens the list of apps: each app has a window of its
+ * The Syntelab logo, first on the bar on top, which opens the list of apps: each app has a window of its
  * own, and choosing one opens it, or brings its window to the front when it is open. The search, the program's
  * version and About are there too.
  */
@@ -38,7 +38,7 @@ export function AppSwitcher({ iconSize }: { readonly iconSize: number }) {
         type="button"
         className={styles.logo}
         aria-label={name}
-        {...(open ? {} : tooltip(name, 'end'))}
+        {...(open ? {} : tooltip(name, 'bottom'))}
         aria-expanded={open}
         aria-controls={panelId}
         aria-haspopup="dialog"
@@ -46,6 +46,8 @@ export function AppSwitcher({ iconSize }: { readonly iconSize: number }) {
       >
         <BrandLogo size={iconSize + 10} />
       </button>
+      {/* The rest of the window steps back behind the list, blurred, so what is open is plain to see. */}
+      {open && <div className={styles.backdrop} aria-hidden="true" onClick={close} />}
       {open && (
         <div id={panelId} role="dialog" aria-label={t('shell.switcher.title')} className={styles.panel}>
           <header className={styles.header}>

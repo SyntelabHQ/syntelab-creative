@@ -6,7 +6,7 @@
   background: var(--sc-surface);
   font-family: var(--sc-font, system-ui);
   font-size: 14px;
-  /* Its bars and menus are layered among themselves: the ribbon of the program, shown over the page, stays over them all. */
+  /* Its bars and menus are layered among themselves: the bar of the open tool, shown over the page, stays over them all. */
   isolation: isolate;
 }
 

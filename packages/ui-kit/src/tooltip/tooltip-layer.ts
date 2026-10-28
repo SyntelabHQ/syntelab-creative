@@ -26,6 +26,8 @@ export function installTooltips(wait: number = WAIT): () => void {
   let pending: Element | null = null;
   let waiting: ReturnType<typeof setTimeout> | undefined;
   let lastShown = 0;
+  /** The control under the pointer, if it has a tooltip. */
+  let hovered: Element | null = null;
 
   const hide = () => {
     clearTimeout(waiting);
@@ -75,7 +77,16 @@ export function installTooltips(wait: number = WAIT): () => void {
   const controlOf = (target: EventTarget | null) => (target instanceof Element ? target.closest('[data-tooltip]') : null);
   const onPointerOver = (event: PointerEvent) => {
     // Touch has no hover: a tooltip would show on every tap.
-    if (event.pointerType !== 'touch') ask(controlOf(event.target));
+    if (event.pointerType !== 'touch') {
+      hovered = controlOf(event.target);
+      ask(hovered);
+    }
+  };
+  // Focus leaving a control puts away the tooltip it showed by the keyboard, not one the pointer rests on: focus
+  // moving elsewhere (a page that takes it as it loads, a field) kept the tooltips of the pointer from showing.
+  const onFocusOut = (event: FocusEvent) => {
+    const control = controlOf(event.target);
+    if (control !== null && control !== hovered && (control === shownFor || control === pending)) hide();
   };
   const onFocusIn = (event: FocusEvent) => {
     const control = controlOf(event.target);
@@ -98,7 +109,7 @@ export function installTooltips(wait: number = WAIT): () => void {
   const events: readonly [string, EventListener, boolean][] = [
     ['pointerover', onPointerOver as EventListener, false],
     ['focusin', onFocusIn as EventListener, false],
-    ['focusout', hide, false],
+    ['focusout', onFocusOut as EventListener, false],
     ['pointerdown', forget, true],
     ['keydown', forget, true],
     ['scroll', onScroll, true],

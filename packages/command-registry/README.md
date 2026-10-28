@@ -1,6 +1,6 @@
 # command-registry
 
-Each command is registered once and appears automatically in the ribbon, menu, side panel, search and shortcuts. Command labels are translation keys, so search works in every language.
+Each command is registered once and appears automatically in the menus, the tools, the search and the shortcuts. Command labels are translation keys, so search works in every language.
 
 ## Modules
 

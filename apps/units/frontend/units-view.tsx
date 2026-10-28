@@ -1,7 +1,7 @@
 import { useTranslation } from '@syntelab/i18n';
 import { useTabCommands } from '@syntelab/shell-api';
 import type { AppViewProps } from '@syntelab/shell-api';
-import { Button, Dialog } from '@syntelab/ui-kit';
+import { Button, Dialog, ToolCards } from '@syntelab/ui-kit';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { unitsCommands } from './commands';
 import { COMING, listConverters } from './engine/units-api';
@@ -52,9 +52,16 @@ export function UnitsView({ host }: AppViewProps) {
   };
 
   const inNewTab = (id: string) => host.openTab({ key: `converter:${id}`, title: t(`units.converter.${id}`), params: { converter: id } });
+  const { showTool } = host;
+  /** The bar of a converter's category, with the converter pressed: the others of the category are a click away. */
+  const showCategoryOf = (id: string) => {
+    const category = converters.find((known) => known.id === id)?.category;
+    if (category) showTool(`units.menu.${category}`);
+  };
   const go = (target: string | 'smart') => {
     filled.current = 0;
     setOpen(target === 'smart' ? null : target);
+    if (target !== 'smart') showCategoryOf(target);
   };
   /** A converter chosen from the menus, or the way back to the smart converter. */
   const choose = (target: string | 'smart') => {
@@ -85,12 +92,32 @@ export function UnitsView({ host }: AppViewProps) {
   );
   useTabCommands(host, commands);
 
+  // A tab that opens on a converter (a tab of its own) shows the bar of its category, once the converters are known.
+  const shownBar = useRef(false);
+  useEffect(() => {
+    if (shownBar.current || open === null || converters.length === 0) return;
+    shownBar.current = true;
+    showCategoryOf(open);
+  }, [converters]);
+
   return (
     <div className={styles.tab}>
       {open !== null ? (
         <TableView host={host} converterId={open} table={`${tab.current}:${open}`} onFilled={(count) => (filled.current = count)} />
       ) : (
-        shownSmart !== '' && <SmartConverter host={host} converters={converters.filter((known) => known.category === 'essentials')} coming={COMING.filter((coming) => coming.category === 'essentials' && !converters.some((known) => known.id === coming.id))} converterId={shownSmart} onConverter={chooseSmart} onOpenTable={(id) => choose(id)} />
+        shownSmart !== '' && <SmartConverter host={host} converters={converters.filter((known) => known.category === 'essentials')} coming={COMING.filter((coming) => coming.category === 'essentials' && !converters.some((known) => known.id === coming.id))} converterId={shownSmart} onConverter={chooseSmart} onOpenTable={(id) => choose(id)}>
+            <ToolCards
+              title={t('units.start.all')}
+              cards={host.tools.map((tool) => ({
+                id: tool.menuKey,
+                name: t(tool.menuKey),
+                description: tool.hintKey ? t(tool.hintKey) : undefined,
+                icon: tool.icon,
+                color: tool.color,
+                onChoose: () => showTool(tool.menuKey),
+              }))}
+            />
+          </SmartConverter>
       )}
 
       <Dialog open={asked !== null} onClose={() => setAsked(null)} title={t('units.leave.title')} closeLabel={t('common.action.close')}>

@@ -22,25 +22,67 @@ export interface BookmarkListProps {
 export function BookmarkList({ bookmarks, placeOf, currentPage, onGoToPage, changes, onEdit }: BookmarkListProps) {
   const t = useTranslation();
   const shown = bookmarks.some((_, index) => !bookmarkEdit(changes, [index])?.remove);
+  /** The bookmark last clicked, by its path: marked as the current one while its page is in view. */
+  const [clicked, setClicked] = useState<string | null>(null);
+  // One bookmark is marked, never all those of the page: the one clicked, or else the first of the page in view.
+  const current =
+    clicked !== null && placeAt(bookmarks, clicked.split('.').map(Number), placeOf) === currentPage
+      ? clicked
+      : firstOnPage(bookmarks, [], currentPage, placeOf, changes);
+  const goTo = (path: readonly number[], page: number) => {
+    setClicked(path.join('.'));
+    onGoToPage(page);
+  };
 
   if (!shown) {
     return <p className={styles.none}>{t('pdf-organizer.bookmarks.none')}</p>;
   }
   return (
     <nav aria-label={t('pdf-organizer.command.bookmarks')} className={styles.list}>
-      <Entries bookmarks={bookmarks} path={[]} placeOf={placeOf} currentPage={currentPage} onGoToPage={onGoToPage} changes={changes} onEdit={onEdit} />
+      <Entries bookmarks={bookmarks} path={[]} placeOf={placeOf} current={current} onGoTo={goTo} changes={changes} onEdit={onEdit} />
     </nav>
   );
 }
 
-interface EntriesProps extends BookmarkListProps {
+/** Where the bookmark at `path` leads in the document now; undefined when it leads nowhere. */
+function placeAt(bookmarks: readonly Bookmark[], path: readonly number[], placeOf: (page: number) => number | undefined): number | undefined {
+  let bookmark: Bookmark | undefined;
+  let level = bookmarks;
+  for (const index of path) {
+    bookmark = level[index];
+    if (!bookmark) return undefined;
+    level = bookmark.children;
+  }
+  return bookmark?.page == null ? undefined : placeOf(bookmark.page);
+}
+
+/** The path of the first bookmark (in reading order, not taken out) that leads to `page`, joined by dots; null for none. */
+function firstOnPage(bookmarks: readonly Bookmark[], path: readonly number[], page: number, placeOf: (page: number) => number | undefined, changes: DocumentChanges): string | null {
+  for (const [index, bookmark] of bookmarks.entries()) {
+    const here = [...path, index];
+    if (bookmarkEdit(changes, here)?.remove) continue;
+    if (bookmark.page !== null && placeOf(bookmark.page) === page) return here.join('.');
+    const inside = firstOnPage(bookmark.children, here, page, placeOf, changes);
+    if (inside !== null) return inside;
+  }
+  return null;
+}
+
+interface EntriesProps {
+  readonly bookmarks: readonly Bookmark[];
   /** Where these bookmarks are in the tree: the path of the one they are under. */
   readonly path: readonly number[];
+  readonly placeOf: (page: number) => number | undefined;
+  /** The path of the bookmark marked as the current one, joined by dots. */
+  readonly current: string | null;
+  readonly onGoTo: (path: readonly number[], page: number) => void;
+  readonly changes: DocumentChanges;
+  readonly onEdit: (path: readonly number[], edit: { title?: string; remove?: boolean }) => void;
 }
 
 function Entries({ bookmarks, path, ...rest }: EntriesProps) {
   return (
-    <ul className={styles.entries}>
+    <ul className={styles.entries} data-level={path.length}>
       {bookmarks.map((bookmark, index) =>
         // One that is taken out is gone from the list at once, with those under it.
         bookmarkEdit(rest.changes, [...path, index])?.remove ? null : <Entry key={index} bookmark={bookmark} path={[...path, index]} {...rest} />,
@@ -53,7 +95,7 @@ interface EntryProps extends Omit<EntriesProps, 'bookmarks'> {
   readonly bookmark: Bookmark;
 }
 
-function Entry({ bookmark, path, placeOf, currentPage, onGoToPage, changes, onEdit }: EntryProps) {
+function Entry({ bookmark, path, placeOf, current, onGoTo, changes, onEdit }: EntryProps) {
   const t = useTranslation();
   const depth = path.length - 1;
   // The top level starts open, like the first glance at a table of contents.
@@ -71,7 +113,7 @@ function Entry({ bookmark, path, placeOf, currentPage, onGoToPage, changes, onEd
 
   return (
     <li>
-      <div className={styles.row} style={{ paddingInlineStart: 6 + depth * 14 }}>
+      <div className={styles.row}>
         {hasChildren ? (
           <button
             type="button"
@@ -107,7 +149,18 @@ function Entry({ bookmark, path, placeOf, currentPage, onGoToPage, changes, onEd
           />
         ) : (
           <>
-            <button type="button" className={styles.title} aria-current={place === currentPage ? 'page' : undefined} disabled={place === undefined} onClick={() => place !== undefined && onGoToPage(place)}>
+            <button
+              type="button"
+              className={styles.title}
+              data-level={depth === 0 ? 'top' : 'inner'}
+              aria-current={current === path.join('.') ? 'location' : undefined}
+              disabled={place === undefined}
+              {...tooltip(title, 'start')}
+              onClick={() => place !== undefined && onGoTo(path, place)}
+            >
+              <span className={styles.icon}>
+                <Icon name={current === path.join('.') ? 'bookmark' : 'bookmark-regular'} size={11} />
+              </span>
               <bdi className={styles.text}>{title}</bdi>
               {place !== undefined && <span className={styles.page}>{place + 1}</span>}
             </button>
@@ -123,7 +176,7 @@ function Entry({ bookmark, path, placeOf, currentPage, onGoToPage, changes, onEd
         )}
       </div>
       {hasChildren && open && (
-        <Entries bookmarks={bookmark.children} path={path} placeOf={placeOf} currentPage={currentPage} onGoToPage={onGoToPage} changes={changes} onEdit={onEdit} />
+        <Entries bookmarks={bookmark.children} path={path} placeOf={placeOf} current={current} onGoTo={onGoTo} changes={changes} onEdit={onEdit} />
       )}
     </li>
   );

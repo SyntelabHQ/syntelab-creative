@@ -148,12 +148,6 @@
   min-width: 0;
 }
 
-/* Undo and redo at the start of the row of buttons, away from "Done". */
-.history {
-  display: flex;
-  gap: 2px;
-  margin-inline-end: auto;
-}
 
 /* Two or three choices side by side: where a link leads. */
 .choices {

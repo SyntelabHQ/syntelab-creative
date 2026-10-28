@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { Doubt, Doubts } from '../doubtful-words';
 import { initialValues, isReady, operationOf, TOOLS } from '../tool-definitions';
 import type { Tool, ToolValues } from '../tool-definitions';
-import type { ToolsPanelProps } from '../tools-panel';
+import type { ToolsPanelProps } from '../tool-panel-types';
 
 /** What the last tool did, said under its button. */
 export type ToolResult = { readonly kind: 'done'; readonly changed: number } | { readonly kind: 'made' } | { readonly kind: 'problem'; readonly key: string; readonly detail?: string };

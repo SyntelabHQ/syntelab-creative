@@ -1,4 +1,4 @@
-/* What Scribe opens with: what can be done, to be chosen. In the letters of the program. */
+/* What Scribe opens with: the tools, to be chosen. In the letters of the program. */
 .start {
   flex: 1;
   min-height: 0;
@@ -7,27 +7,36 @@
   font-family: var(--sc-font, system-ui);
   font-size: 14px;
   text-align: start;
-  /* Scribe's own colour (app.json), lighter on dark themes so it stays readable. */
-  --scribe-color: #7b1fa2;
 }
 
-:root[data-theme='dark'] .start {
-  --scribe-color: #ce93d8;
-}
-
+/* As wide as reads well. */
 .inner {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  max-width: 980px;
+  gap: 28px;
+  max-width: 1060px;
   margin-inline: auto;
-  padding: 36px 28px 40px;
+  padding: 36px 40px 48px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 24px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .title {
   margin: 0;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .lead {
@@ -35,72 +44,10 @@
   color: var(--sc-muted);
 }
 
-.choices {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: 10px;
-  margin: 6px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.choice {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  width: 100%;
-  height: 100%;
-  padding: 14px;
-  border: 1px solid var(--sc-border);
-  border-radius: var(--sc-radius-m);
-  background: var(--sc-surface);
-  color: var(--sc-text);
-  font: inherit;
-  text-align: start;
-  cursor: pointer;
-}
-
-.choice:hover,
-.choice:focus-visible {
-  border-color: var(--scribe-color);
-  box-shadow: var(--sc-shadow-s);
-  outline: none;
-}
-
-.icon {
-  display: inline-flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: var(--sc-radius-m);
-  background: color-mix(in srgb, var(--scribe-color) 14%, var(--sc-surface));
-  color: var(--scribe-color);
-}
-
-.texts {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  min-width: 0;
-}
-
-.name {
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.about {
-  color: var(--sc-muted);
-  font-size: 13px;
-}
-
 .also {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-block-start: 6px;
 }
 
 .drop {

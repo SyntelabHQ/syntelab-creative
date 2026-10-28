@@ -56,10 +56,48 @@ export interface AppManifest {
   /** What of the app the search of the Start page finds besides the app itself. */
   readonly search?: readonly SearchEntry[];
   /**
-   * The layout the app starts with (`classic`, `ribbon` or `side-panel`),
-   * until the user picks another one for this app.
+   * The app's tools, in the order the list of tools shows them: each is one
+   * of the app's menus (its commands make the bar the tool opens), with an
+   * icon and a sentence saying what it is for. A menu of the app left out
+   * here is still a tool, after these, with a plain icon.
    */
-  readonly defaultLayout?: string;
+  readonly tools?: readonly ToolEntry[];
+  /**
+   * What the bar over the content shows while no tool is open: a name (such
+   * as Reading) and the tools marked `quick`, one click away. Without it,
+   * there is no bar until a tool is opened.
+   */
+  readonly idleTool?: IdleTool;
+}
+
+/** The bar shown while no tool is open (`idleTool`). */
+export interface IdleTool {
+  /** The key of its name in the app's translations. */
+  readonly labelKey: string;
+  /** Name of a file in `assets/icons/`, without the extension. */
+  readonly icon: string;
+}
+
+/** The colors a tool can have; each has a shade for the light theme and one for the dark. */
+export type ToolColor = 'red' | 'green' | 'orange' | 'amber' | 'purple' | 'cyan' | 'crimson' | 'blue' | 'teal' | 'gold' | 'violet' | 'slate';
+
+/** One tool of an app, as `app.json` names it (`tools`). */
+export interface ToolEntry {
+  /** The key of the menu whose commands are the tool's (`pdf-organizer.menu.organize`). */
+  readonly menuKey: string;
+  /** Name of a file in `assets/icons/`, without the extension. */
+  readonly icon: string;
+  /** The key of a sentence saying what the tool is for, in the app's translations. */
+  readonly hintKey?: string;
+  /** The color of its icon, so tools are told apart at a glance. */
+  readonly color?: ToolColor;
+  /**
+   * The id of a command the tool runs instead of opening a bar: a tool that
+   * is a single step (a window that asks for what is needed, a tab of its own).
+   */
+  readonly run?: string;
+  /** Shown on the bar while no tool is open (`idleTool`). */
+  readonly quick?: boolean;
 }
 
 /** An app as the shell lists it: its manifest plus the icon's SVG source. */

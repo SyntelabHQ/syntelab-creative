@@ -74,6 +74,9 @@
 .app {
   display: flex;
   flex: none;
+  justify-content: center;
+  width: 18px;
+  color: var(--sc-muted);
 }
 
 .label {

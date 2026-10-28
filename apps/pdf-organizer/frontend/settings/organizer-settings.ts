@@ -23,10 +23,6 @@ export type PrintOrientation = (typeof PRINT_ORIENTATIONS)[number];
 export const PRINT_SCALINGS = ['fit', 'actual'] as const;
 export type PrintScaling = (typeof PRINT_SCALINGS)[number];
 
-/** What the quick toolbar (the strip above the pages) can show, in the order it shows them. */
-export const QUICK_TOOLS = ['save', 'print', 'history', 'pages', 'zoom', 'fit', 'rotate', 'find', 'organize', 'share'] as const;
-export type QuickTool = (typeof QUICK_TOOLS)[number];
-
 /** DigiCert's time-stamping authority: free, without an account, and trusted by Adobe and Windows. */
 const DEFAULT_TIME_STAMP_SERVER = 'http://timestamp.digicert.com';
 
@@ -50,7 +46,6 @@ export interface OrganizerSettings {
   readonly openScrolling: boolean;
   /** The small pages on the side are shown when a document opens. */
   readonly openThumbnails: boolean;
-  readonly quickTools: readonly QuickTool[];
   readonly unit: MeasureUnit;
   /** Rulers and the grid are shown when a document opens. */
   readonly showRulers: boolean;
@@ -70,10 +65,13 @@ export interface OrganizerSettings {
   readonly newName: string;
   /** Name of the one PDF that batch processing gathers many files in, unless another is typed there. */
   readonly combinedName: string;
-  /** The tools for drawing are shown as a list with their names instead of a grid of buttons. */
-  readonly toolsAsList: boolean;
   /** Who attaches files, as last typed: filled in for the next file. */
   readonly attachAuthor: string;
+  /**
+   * The certificates marked as favorites, listed first and chosen first when signing: the id of one of the
+   * computer's, or `file:` and the path of a certificate file (its password is never kept).
+   */
+  readonly favoriteCertificates: readonly string[];
   /** Before "Save" writes a changed document over a file that is signed with a certificate, the user is asked: its signatures go. */
   readonly warnSignedSave: boolean;
   /** Before the area of a signature with a certificate is dragged on the page, a window says what comes next. */
@@ -86,13 +84,16 @@ export interface OrganizerSettings {
   readonly organizeThumbnailSize: number;
   /** How large the first page of each file on a binder's cards is shown: the longest side, in pixels. */
   readonly binderThumbnailSize: number;
+  /** How wide the panel of small pages and bookmarks beside the pages is, in pixels, as last dragged. */
+  readonly stripWidth: number;
+  /** How wide the panels of the tools beside the pages are (drawing, cropping, page numbers…), in pixels, as last dragged. */
+  readonly panelWidth: number;
 }
 
 export const DEFAULT_SETTINGS: OrganizerSettings = {
   openZoom: 'fit-page',
   openScrolling: false,
   openThumbnails: true,
-  quickTools: ['pages', 'zoom', 'share'],
   unit: 'mm',
   showRulers: false,
   showGrid: false,
@@ -106,15 +107,20 @@ export const DEFAULT_SETTINGS: OrganizerSettings = {
   extractEachName: 'page{number}_of_{name}',
   newName: 'syntelab_pdf_{number}',
   combinedName: 'syntelab-combined',
-  toolsAsList: false,
   attachAuthor: '',
+  favoriteCertificates: [],
   warnSignedSave: true,
   signAreaHint: true,
   timeStampSignatures: true,
   timeStampServer: DEFAULT_TIME_STAMP_SERVER,
   organizeThumbnailSize: DEFAULT_ORGANIZE_THUMBNAIL_SIZE,
   binderThumbnailSize: DEFAULT_BINDER_THUMBNAIL_SIZE,
+  stripWidth: 180,
+  panelWidth: 330,
 };
+
+/** How narrow and how wide the panels beside the pages may be dragged, in pixels. */
+export const SIDE_WIDTHS = { stripWidth: { min: 140, max: 520 }, panelWidth: { min: 280, max: 640 } } as const;
 
 export type SettingKey = keyof OrganizerSettings;
 export const SETTING_KEYS = Object.keys(DEFAULT_SETTINGS) as SettingKey[];
@@ -142,13 +148,14 @@ function readSetting<K extends SettingKey>(key: K, stored: unknown): OrganizerSe
   if (choices) value = choices.includes(stored) ? stored : fallback;
   else if (key === 'timeStampServer') value = typeof stored === 'string' && isTimeStampServer(stored) ? stored.trim() : fallback;
   else if (key === 'gridSpacing') value = typeof stored === 'number' && stored >= 2 && stored <= 720 ? stored : fallback;
-  else if (key === 'organizeThumbnailSize' || key === 'binderThumbnailSize') value = snapThumbnailSize(stored, fallback as number);
+  else if (key === 'stripWidth' || key === 'panelWidth') {
+    const { min, max } = SIDE_WIDTHS[key as 'stripWidth' | 'panelWidth'];
+    value = typeof stored === 'number' && Number.isFinite(stored) ? Math.min(Math.max(Math.round(stored), min), max) : fallback;
+  } else if (key === 'organizeThumbnailSize' || key === 'binderThumbnailSize') value = snapThumbnailSize(stored, fallback as number);
+  else if (key === 'favoriteCertificates') value = Array.isArray(stored) ? stored.filter((entry): entry is string => typeof entry === 'string' && entry !== '') : fallback;
   else if (key === 'shortcuts') {
     const chosen = typeof stored === 'object' && stored !== null ? Object.entries(stored).filter((entry): entry is [string, string] => typeof entry[1] === 'string') : [];
     value = Object.fromEntries(chosen);
-  } else if (key === 'quickTools') {
-    // Kept in the toolbar's own order, whatever order they were stored in.
-    value = Array.isArray(stored) ? QUICK_TOOLS.filter((tool) => stored.includes(tool)) : fallback;
   } else if (typeof stored === typeof fallback) value = stored;
   return value as OrganizerSettings[K];
 }

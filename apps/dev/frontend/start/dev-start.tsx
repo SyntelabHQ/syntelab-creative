@@ -1,6 +1,8 @@
 import { useTranslation } from '@syntelab/i18n';
+import type { ToolEntry } from '@syntelab/shell-api';
 import { Icon } from '@syntelab/ui-kit';
 import { useMemo, useState } from 'react';
+import type { CSSProperties } from 'react';
 import { hand } from '../frame/handed';
 import { GROUPS, TOOLS } from '../tools/catalog';
 import type { Tool } from '../tools/catalog';
@@ -12,6 +14,8 @@ export interface DevStartProps {
   readonly pins: readonly string[];
   readonly onPin: (id: string) => void;
   readonly onOpen: (id: string) => void;
+  /** The menus of the tools as the list on the side shows them: each group of tools takes its icon and its color. */
+  readonly menus: readonly ToolEntry[];
 }
 
 const plain = (text: string) => text.toLocaleLowerCase();
@@ -22,7 +26,7 @@ const plain = (text: string) => text.toLocaleLowerCase();
  * (a token, JSON, a timestamp…), and the tools that work on such a thing are
  * offered: one opens with the text already in it. The text is kept nowhere.
  */
-export function DevStart({ pins, onPin, onOpen }: DevStartProps) {
+export function DevStart({ pins, onPin, onOpen, menus }: DevStartProps) {
   const t = useTranslation();
   const [query, setQuery] = useState('');
   // Not kept between uses: what is pasted here is in memory until it is cleared or the tab is closed.
@@ -38,8 +42,15 @@ export function DevStart({ pins, onPin, onOpen }: DevStartProps) {
   const found = (tool: Tool) => sought === '' || [t(`dev.tool.${tool.id}`), t(`dev.about.${tool.id}`), tool.id].some((text) => plain(text).includes(sought));
   const pinned = pins.flatMap((id) => TOOLS.find((tool) => tool.id === id && found(tool)) ?? []);
 
+  const menuOf = (group: string) => menus.find((menu) => menu.menuKey === `dev.menu.${group}`);
+  /** A group's color, as the list on the side shows it: its cards are in it. */
+  const colorOf = (group: string): CSSProperties | undefined => {
+    const color = menuOf(group)?.color;
+    return color ? ({ '--dev-color': `var(--sc-tool-${color})` } as CSSProperties) : undefined;
+  };
+
   const card = (tool: Tool) => (
-    <li key={tool.id} className={styles.card} data-later={tool.later === true}>
+    <li key={tool.id} className={styles.card} data-later={tool.later === true} style={colorOf(tool.group)}>
       <button type="button" className={styles.open} disabled={tool.later} onClick={() => onOpen(tool.id)}>
         <span className={styles.icon} aria-hidden="true">
           <Icon name={tool.icon} size={16} />
@@ -118,6 +129,9 @@ export function DevStart({ pins, onPin, onOpen }: DevStartProps) {
         {groups.map(({ group, tools }) => (
           <section key={group} className={styles.group}>
             <h2 className={styles.heading}>
+              <span className={styles.groupIcon} style={colorOf(group)} aria-hidden="true">
+                <Icon name={menuOf(group)?.icon ?? 'wrench'} size={12} />
+              </span>
               {t(`dev.menu.${group}`)}
               <span className={styles.count}>{tools.length}</span>
             </h2>

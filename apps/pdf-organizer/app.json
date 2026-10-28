@@ -71,10 +71,24 @@
     "yo": "Wo, tò, ṣàtúnṣe, kí ó sì wọlé orúkọ nínú PDF."
   },
   "brand": {
-    "color": "#7A1F3D",
+    "color": "#EF4444",
     "icon": "assets/icon.svg"
   },
-  "defaultLayout": "ribbon",
+  "tools": [
+    { "menuKey": "pdf-organizer.menu.create", "icon": "file-circle-plus", "color": "red", "hintKey": "pdf-organizer.menuHint.create", "run": "pdf-organizer.createPdf" },
+    { "menuKey": "pdf-organizer.menu.organize", "icon": "table-cells-large", "color": "green", "hintKey": "pdf-organizer.menuHint.organize", "quick": true },
+    { "menuKey": "pdf-organizer.menu.editTool", "icon": "pen", "color": "orange", "hintKey": "pdf-organizer.menuHint.editTool", "quick": true },
+    { "menuKey": "pdf-organizer.menu.comment", "icon": "highlighter", "color": "amber", "hintKey": "pdf-organizer.menuHint.comment", "quick": true },
+    { "menuKey": "pdf-organizer.menu.sign", "icon": "file-signature", "color": "purple", "hintKey": "pdf-organizer.menuHint.sign", "quick": true },
+    { "menuKey": "pdf-organizer.menu.form", "icon": "rectangle-list", "color": "cyan", "hintKey": "pdf-organizer.menuHint.form" },
+    { "menuKey": "pdf-organizer.menu.protect", "icon": "shield-halved", "color": "crimson", "hintKey": "pdf-organizer.menuHint.protect" },
+    { "menuKey": "pdf-organizer.menu.combine", "icon": "layer-group", "color": "blue", "hintKey": "pdf-organizer.menuHint.combine", "run": "pdf-organizer.newBinder", "quick": true },
+    { "menuKey": "pdf-organizer.menu.convert", "icon": "right-left", "color": "teal", "hintKey": "pdf-organizer.menuHint.convert", "run": "pdf-organizer.exportAs" },
+    { "menuKey": "pdf-organizer.menu.optimize", "icon": "bolt", "color": "gold", "hintKey": "pdf-organizer.menuHint.optimize" },
+    { "menuKey": "pdf-organizer.menu.compare", "icon": "code-compare", "color": "violet", "hintKey": "pdf-organizer.menuHint.compare", "run": "pdf-organizer.compare" },
+    { "menuKey": "pdf-organizer.menu.batch", "icon": "list-check", "color": "slate", "hintKey": "pdf-organizer.menuHint.batch", "run": "pdf-organizer.batch" }
+  ],
+  "idleTool": { "labelKey": "pdf-organizer.idle.reading", "icon": "book-open" },
   "fileTypes": [
     ".pdf"
   ],
@@ -92,7 +106,22 @@
         ".gif",
         ".tif",
         ".tiff",
-        ".webp"
+        ".webp",
+        ".txt",
+        ".html",
+        ".htm",
+        ".docx",
+        ".doc",
+        ".rtf",
+        ".odt",
+        ".xlsx",
+        ".xls",
+        ".ods",
+        ".pptx",
+        ".ppt",
+        ".odp",
+        ".epub",
+        ".xps"
       ]
     },
     {

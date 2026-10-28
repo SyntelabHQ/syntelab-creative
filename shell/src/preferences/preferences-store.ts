@@ -4,29 +4,13 @@ import { SYSTEM_LANGUAGE } from '../i18n';
 import { createStore } from '../state/create-store';
 import type { Store } from '../state/create-store';
 
-/** How an app's commands are laid out around it (CONCEPT.md, section 4.3). */
-export const LAYOUTS = ['classic', 'ribbon', 'side-panel'] as const;
-export type Layout = (typeof LAYOUTS)[number];
-
-export const PANEL_SIDES = ['left', 'right'] as const;
-export type PanelSide = (typeof PANEL_SIDES)[number];
-
-/** How the ribbon shows its commands; see the ribbon. */
-export const RIBBON_MODES = ['full', 'compact', 'hover'] as const;
-export type RibbonMode = (typeof RIBBON_MODES)[number];
-
-/** What the user chose for one app. Anything left out follows the app's default. */
 /** When a tooltip shows: as soon as the pointer is on the control, after it has rested there a moment (as most programs do), or never. */
+/** The narrowest and the widest the list of tools can be dragged with its names; narrower, it folds to its icons. */
+export const TOOLS_NARROWEST = 150;
+export const TOOLS_WIDEST = 360;
+
 export const TOOLTIP_MODES = ['instant', 'delayed', 'off'] as const;
 export type TooltipMode = (typeof TOOLTIP_MODES)[number];
-
-export interface AppLayoutChoice {
-  readonly layout?: Layout;
-  /** Where the side panel layout puts its panel. */
-  readonly panelSide?: PanelSide;
-  /** The form the ribbon layout takes: large buttons, icons only, or shown on hover. */
-  readonly ribbonMode?: RibbonMode;
-}
 
 /** How the list of apps draws them. */
 export const APPS_VIEWS = ['cards', 'named-icons', 'icons'] as const;
@@ -43,12 +27,10 @@ export interface Preferences {
   readonly firstRunDone: boolean;
   /** Id of the newest changelog entry the user has seen, or null. */
   readonly changelogSeenId: string | null;
-  /** The layout of the whole suite: what every app follows unless it has a choice of its own. */
-  readonly globalLayout: AppLayoutChoice;
-  /** The layout chosen for one app only, by app id: it overrides the suite's. */
-  readonly appLayouts: Readonly<Record<string, AppLayoutChoice>>;
-  /** The side panel is folded down to its smallest form. */
+  /** The list of an app's tools on the side shows only their icons (☰, on the left of the bar on top). */
   readonly toolsCollapsed: boolean;
+  /** How wide that list is with its names, in pixels (dragged by its edge). */
+  readonly toolsWidth: number;
   readonly appsView: AppsView;
   /** App ids in the order the user arranged them; apps not listed come after. */
   readonly appOrder: readonly string[];
@@ -56,8 +38,6 @@ export interface Preferences {
   readonly hiddenApps: readonly string[];
   /** Ids of the apps still to come that the user chose to see in the list of apps: they are left off unless chosen. */
   readonly shownComingApps: readonly string[];
-  /** Sections of the side panel the user folded, by the key of their menu. */
-  readonly panelFoldedSections: readonly string[];
   readonly tabMark: TabMark;
   /** When the small texts that say what a button does show, once the pointer rests on it. */
   readonly tooltips: TooltipMode;
@@ -67,6 +47,8 @@ export interface Preferences {
   readonly onlineChecks: boolean;
   /** The newer version the user has already been told about, or null. */
   readonly updateNotifiedVersion: string | null;
+  /** Pages of syntelab.com (`feedback`, `support`) opened straight away: the user chose not to be told about them first. */
+  readonly siteNoticesOff: readonly string[];
 }
 
 const STORAGE_KEY = 'syntelab-creative.preferences';
@@ -76,19 +58,18 @@ const DEFAULTS: Preferences = {
   language: SYSTEM_LANGUAGE,
   firstRunDone: false,
   changelogSeenId: null,
-  globalLayout: {},
-  appLayouts: {},
   toolsCollapsed: false,
+  toolsWidth: 200,
   appsView: 'cards',
   appOrder: [],
   hiddenApps: [],
   shownComingApps: [],
-  panelFoldedSections: [],
   tabMark: 'icon',
   tooltips: 'delayed',
   shortcuts: {},
   onlineChecks: true,
   updateNotifiedVersion: null,
+  siteNoticesOff: [],
 };
 
 /** `value` when it is one of `allowed`, else `fallback`. */
@@ -101,25 +82,6 @@ function strings(stored: unknown): string[] {
   return Array.isArray(stored) ? stored.filter((item): item is string => typeof item === 'string') : [];
 }
 
-function readLayoutChoice(stored: unknown): AppLayoutChoice {
-  if (typeof stored !== 'object' || stored === null) return {};
-  const { layout, panelSide, ribbonMode } = stored as Record<string, unknown>;
-  return {
-    layout: oneOf(LAYOUTS, layout, undefined),
-    panelSide: oneOf(PANEL_SIDES, panelSide, undefined),
-    ribbonMode: oneOf(RIBBON_MODES, ribbonMode, undefined),
-  };
-}
-
-function readAppLayouts(stored: unknown): Record<string, AppLayoutChoice> {
-  if (typeof stored !== 'object' || stored === null) return {};
-  const layouts: Record<string, AppLayoutChoice> = {};
-  for (const [appId, choice] of Object.entries(stored as Record<string, unknown>)) {
-    if (typeof choice === 'object' && choice !== null) layouts[appId] = readLayoutChoice(choice);
-  }
-  return layouts;
-}
-
 function read(): Preferences {
   try {
     const stored: unknown = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? 'null');
@@ -130,20 +92,19 @@ function read(): Preferences {
       language: typeof values.language === 'string' ? values.language : DEFAULTS.language,
       firstRunDone: values.firstRunDone === true,
       changelogSeenId: typeof values.changelogSeenId === 'string' ? values.changelogSeenId : null,
-      globalLayout: readLayoutChoice(values.globalLayout),
-      appLayouts: readAppLayouts(values.appLayouts),
       toolsCollapsed: values.toolsCollapsed === true,
+      toolsWidth: typeof values.toolsWidth === 'number' && Number.isFinite(values.toolsWidth) ? Math.min(Math.max(Math.round(values.toolsWidth), TOOLS_NARROWEST), TOOLS_WIDEST) : DEFAULTS.toolsWidth,
       appsView: oneOf(APPS_VIEWS, values.appsView, DEFAULTS.appsView),
       appOrder: strings(values.appOrder),
       hiddenApps: strings(values.hiddenApps),
       shownComingApps: strings(values.shownComingApps),
-      panelFoldedSections: strings(values.panelFoldedSections),
       tabMark: oneOf(TAB_MARKS, values.tabMark, DEFAULTS.tabMark),
       // Kept from when the choice was only on or off.
       tooltips: values.tooltips === false ? 'off' : oneOf(TOOLTIP_MODES, values.tooltips, DEFAULTS.tooltips),
       shortcuts: Object.fromEntries(Object.entries(typeof values.shortcuts === 'object' && values.shortcuts !== null ? values.shortcuts : {}).filter((entry): entry is [string, string] => typeof entry[1] === 'string')),
       onlineChecks: values.onlineChecks !== false,
       updateNotifiedVersion: typeof values.updateNotifiedVersion === 'string' ? values.updateNotifiedVersion : null,
+      siteNoticesOff: strings(values.siteNoticesOff),
     };
   } catch {
     return DEFAULTS;
@@ -183,50 +144,4 @@ export const preferences = createPreferencesStore();
 
 export function updatePreferences(change: Partial<Preferences>): void {
   preferences.set((current) => ({ ...current, ...change }));
-}
-
-export interface ResolvedAppLayout {
-  readonly layout: Layout;
-  readonly panelSide: PanelSide;
-  readonly ribbonMode: RibbonMode;
-}
-
-/**
- * The layout an app is shown in: what the user chose for that app, else what
- * they chose for the whole suite, else the default the app declares in
- * `app.json` (`defaultLayout`), else the ribbon.
- */
-export function resolveAppLayout(
-  appLayouts: Preferences['appLayouts'],
-  appId: string,
-  appDefault: string | undefined,
-  globalLayout: AppLayoutChoice = {},
-): ResolvedAppLayout {
-  const choice = appLayouts[appId];
-  return {
-    layout: choice?.layout ?? globalLayout.layout ?? oneOf(LAYOUTS, appDefault, 'ribbon'),
-    panelSide: choice?.panelSide ?? globalLayout.panelSide ?? 'left',
-    ribbonMode: choice?.ribbonMode ?? globalLayout.ribbonMode ?? 'full',
-  };
-}
-
-/** Remembers a layout choice for the whole suite. */
-export function setGlobalLayout(change: AppLayoutChoice): void {
-  preferences.set((current) => ({ ...current, globalLayout: { ...current.globalLayout, ...change } }));
-}
-
-/** Forgets the layout chosen for one app: it follows the suite again. */
-export function clearAppLayout(appId: string): void {
-  preferences.set((current) => {
-    const { [appId]: _forgotten, ...rest } = current.appLayouts;
-    return { ...current, appLayouts: rest };
-  });
-}
-
-/** Remembers a layout choice for one app only. */
-export function setAppLayout(appId: string, change: AppLayoutChoice): void {
-  preferences.set((current) => ({
-    ...current,
-    appLayouts: { ...current.appLayouts, [appId]: { ...current.appLayouts[appId], ...change } },
-  }));
 }

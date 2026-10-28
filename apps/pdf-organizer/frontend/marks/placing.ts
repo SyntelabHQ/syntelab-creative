@@ -28,6 +28,8 @@ const BOX_HEIGHT = 60;
 /** The paper clip that stands for an attached file, in points. */
 const CLIP_WIDTH = 16;
 const CLIP_HEIGHT = 22;
+const SMALLEST_CLIP_HEIGHT = 11;
+const LARGEST_CLIP_HEIGHT = 120;
 /** A drag shorter than this, in points, counts as a click. */
 const CLICK_DISTANCE = 4;
 const SMALLEST_TEXT_SIZE = 5;
@@ -57,9 +59,10 @@ export function placedMarks(placing: Placing, from: Point, to: Point, turn: Quar
     return [{ ...base, rotation: 0, id: newId(), kind: 'signatureField', x, y, width, height, stroke: null }];
   }
   if (placing.kind === 'attachment') {
-    // A paper clip of one size, where the pointer was let go.
-    const [width, height] = [CLIP_WIDTH, CLIP_HEIGHT];
-    return [{ ...base, id: newId(), kind: 'attachment', x: to.x - width / 2, y: to.y - height / 2, width, height, stroke: null, name: placing.name, path: placing.path, author: placing.author }];
+    // A paper clip as large as the drag (its shape kept); a click puts one of the usual size there.
+    const height = clicked ? CLIP_HEIGHT : Math.min(Math.max(down, (across * CLIP_HEIGHT) / CLIP_WIDTH, SMALLEST_CLIP_HEIGHT), LARGEST_CLIP_HEIGHT);
+    const width = (height * CLIP_WIDTH) / CLIP_HEIGHT;
+    return [{ ...base, id: newId(), kind: 'attachment', x: middle.x - width / 2, y: middle.y - height / 2, width, height, stroke: null, name: placing.name, path: placing.path, author: placing.author }];
   }
   if (placing.kind === 'picture') {
     const shape = placing.height / Math.max(placing.width, 1);

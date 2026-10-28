@@ -6,7 +6,7 @@ import panelStyles from '../crop/crop-panel.module.css';
 import type { PageRange } from '../document/page-range';
 import shapeStyles from '../organize/shape-dialog.module.css';
 import { FontSelect } from './font-select';
-import { HIGHLIGHT_COLOR, isAddition, isField, MARK_KINDS, TEXT_ALIGNS } from './mark';
+import { HIGHLIGHT_COLOR, isAddition, isField, TEXT_ALIGNS } from './mark';
 import type { Mark, MarkKind, MarkStyle } from './mark';
 import type { MarkTool } from './mark-layer';
 import { CLIP_COLOR } from './mark-shape';
@@ -15,7 +15,6 @@ import type { Along } from './place-on-page';
 
 export interface MarkPanelProps {
   readonly tool: MarkTool;
-  readonly onToolChange: (tool: MarkTool) => void;
   /** The style shown: of the selected mark, or of the next one to draw. */
   readonly style: MarkStyle;
   /** Changes the selected mark (when there is one) and what is drawn next. */
@@ -30,10 +29,6 @@ export interface MarkPanelProps {
   readonly onDelete: () => void;
   /** Moves the selected mark against an edge of its page or to its middle, across or down. */
   readonly onPlaceOnPage: (across: Along | null, down: Along | null) => void;
-  readonly canUndo: boolean;
-  readonly canRedo: boolean;
-  readonly onUndo: () => void;
-  readonly onRedo: () => void;
   /** Puts the tools away; what was drawn stays on the page. */
   readonly onDone: () => void;
   /** The fonts installed on the computer. */
@@ -43,9 +38,6 @@ export interface MarkPanelProps {
   readonly onRepeat: (range: PageRange) => void;
   /** Makes a copy of the selected mark beside it. */
   readonly onDuplicate: () => void;
-  /** The tools are shown as a list with their names, by kind, instead of a grid of buttons. */
-  readonly toolsAsList: boolean;
-  readonly onToolsAsListChange: (asList: boolean) => void;
   /** Something chosen (a signature, an image) waits to be put on a page. */
   readonly placing: boolean;
   readonly onCancelPlacing: () => void;
@@ -55,76 +47,6 @@ export interface MarkPanelProps {
   readonly onPlaceNowhere?: () => void;
 }
 
-/** The tools drawn as what they make, so no words are needed to tell them apart. */
-const TOOL_DRAWINGS: Record<MarkTool, ReactNode> = {
-  select: <path d="M5 3l11 6.5-4.6 1.2 2.9 5-1.9 1.1-2.9-5L6 15.2z" fill="currentColor" stroke="none" />,
-  edit: <path d="M3 15.5h7M3 11h5M12.5 16.5l.6-3 5-5 2.4 2.4-5 5zM3 6.5h10" />,
-  rectangle: <rect x="3" y="5" width="14" height="10" rx="1" />,
-  ellipse: <ellipse cx="10" cy="10" rx="7.5" ry="5.5" />,
-  line: <path d="M3.5 16.5l13-13" />,
-  arrow: <path d="M3.5 16.5l12-12M9 4h7v7" />,
-  check: <path d="M3.5 10.5l4.5 5 8.5-11" />,
-  cross: <path d="M4.5 4.5l11 11M15.5 4.5l-11 11" />,
-  dot: <circle cx="10" cy="10" r="3.5" fill="currentColor" stroke="none" />,
-  highlight: (
-    <>
-      <rect x="2.5" y="12" width="15" height="5" fill="#ffeb00" stroke="none" />
-      <path d="M5 10.5l6-7 3.5 3-6 7-4 .5z" />
-    </>
-  ),
-  text: <path d="M4 5V3.5h12V5M10 3.5v13M7.5 16.5h5" />,
-  redact: (
-    <>
-      <path d="M3 5.5h14M3 14.5h9" />
-      <rect x="3" y="8" width="14" height="4" fill="currentColor" stroke="none" />
-    </>
-  ),
-  link: <path d="M8.5 11.5a3.2 3.2 0 0 0 4.6 0l3-3a3.2 3.2 0 0 0-4.6-4.6l-1.2 1.2M11.5 8.5a3.2 3.2 0 0 0-4.6 0l-3 3a3.2 3.2 0 0 0 4.6 4.6l1.2-1.2" />,
-  textField: (
-    <>
-      <rect x="2.5" y="6" width="15" height="8" rx="1.5" />
-      <path d="M5.5 8.5v3" />
-    </>
-  ),
-  checkBox: (
-    <>
-      <rect x="4" y="4" width="12" height="12" rx="1.5" />
-      <path d="M7 10.2l2.2 2.3L13.2 7.5" />
-    </>
-  ),
-  radioButton: (
-    <>
-      <circle cx="10" cy="10" r="6.5" />
-      <circle cx="10" cy="10" r="2.6" fill="currentColor" stroke="none" />
-    </>
-  ),
-  choiceField: (
-    <>
-      <rect x="2.5" y="6" width="15" height="8" rx="1.5" />
-      <path d="M11.5 9l1.800 1.800L15 9" />
-    </>
-  ),
-  signatureField: (
-    <>
-      <path d="M3 16.5h14" />
-      <path d="M4 13c2-6 4-8 5-7s-3 6-1.500 6.500S10 9 11 9.500s0 3 1.500 3 2-1.500 3.500-1.500" />
-    </>
-  ),
-  bookmark: <path d="M6 3h8v14l-4-3.500L6 17z" />,
-};
-
-/** The tools by what they are for; the grid shows them in the same order. */
-const TOOL_GROUPS: readonly { readonly name: string; readonly tools: readonly MarkTool[] }[] = [
-  { name: 'select', tools: ['select', 'edit'] },
-  { name: 'shapes', tools: ['rectangle', 'ellipse', 'line', 'arrow'] },
-  { name: 'signs', tools: ['check', 'cross', 'dot'] },
-  { name: 'text', tools: ['text', 'highlight', 'redact'] },
-  { name: 'links', tools: ['link', 'bookmark'] },
-  { name: 'forms', tools: ['textField', 'checkBox', 'radioButton', 'choiceField', 'signatureField'] },
-];
-const GROUPED: readonly MarkTool[] = TOOL_GROUPS.flatMap((group) => group.tools);
-// A kind of mark without a group still gets its button, at the end.
-const TOOLS: readonly MarkTool[] = [...GROUPED, ...MARK_KINDS.filter((kind) => !GROUPED.includes(kind))];
 const LINE_WIDTHS = [0.5, 1, 1.5, 2, 3, 4, 6, 8, 12];
 const TEXT_SIZES = [8, 9, 10, 11, 12, 14, 16, 18, 20, 24, 28, 36, 48, 72];
 
@@ -149,27 +71,14 @@ function placeDrawing(across: Along | null, down: Along | null): ReactNode {
   );
 }
 
-/** Which words explain the tool in use. */
-function hintKey(tool: MarkTool): string {
-  if (tool === 'select') return 'pdf-organizer.marks.hint.select';
-  if (tool === 'link') return 'pdf-organizer.marks.hint.link';
-  if (tool === 'bookmark') return 'pdf-organizer.marks.hint.bookmark';
-  if (tool === 'radioButton') return 'pdf-organizer.marks.hint.radio';
-  if (tool === 'textField' || tool === 'checkBox' || tool === 'signatureField' || tool === 'choiceField') return 'pdf-organizer.marks.hint.field';
-  if (tool === 'edit') return 'pdf-organizer.marks.editNote';
-  if (tool === 'text') return 'pdf-organizer.marks.hint.text';
-  if (tool === 'redact') return 'pdf-organizer.marks.redactNote';
-  return 'pdf-organizer.marks.hint.draw';
-}
-
 /**
  * The tools for drawing and writing on the page, beside the document: what to
  * draw, how it looks, and what to do with the object that is selected. It
  * stays open while the user works, page after page.
  */
 export function MarkPanel(props: MarkPanelProps) {
-  const { selected, onSelectedChange, pageKeys, onDuplicate, toolsAsList, onToolsAsListChange } = props;
-  const { tool, onToolChange, style, onStyleChange, selectedKind, onDelete, onPlaceOnPage, canUndo, canRedo, onUndo, onRedo, onDone, fonts, repeated, onRepeat, placing, onCancelPlacing, placingText, onPlaceNowhere } = props;
+  const { selected, onSelectedChange, pageKeys, onDuplicate } = props;
+  const { tool, style, onStyleChange, selectedKind, onDelete, onPlaceOnPage, onDone, fonts, repeated, onRepeat, placing, onCancelPlacing, placingText, onPlaceNowhere } = props;
   const [repeatList, setRepeatList] = useState<string | null>(null);
   const t = useTranslation();
   // The look that matters: of the selected mark, or of what the tool draws.
@@ -184,11 +93,6 @@ export function MarkPanel(props: MarkPanelProps) {
   const hasWidth = kind !== null && !plain && !['dot', 'highlight', 'text', 'picture'].includes(kind);
   const isText = kind === 'text';
   const lineName = t(isText ? 'pdf-organizer.marks.textColor' : 'pdf-organizer.marks.lineColor');
-  const toolDrawing = (option: MarkTool) => (
-    <svg viewBox="0 0 20 20" width="19" height="19" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      {TOOL_DRAWINGS[option]}
-    </svg>
-  );
 
   return (
     <aside className={panelStyles.panel} aria-label={t('pdf-organizer.marks.panel')}>
@@ -208,51 +112,6 @@ export function MarkPanel(props: MarkPanelProps) {
           </div>
         )}
 
-        <fieldset className={panelStyles.group} disabled={placing}>
-          <legend className={shapeStyles.legend}>{t('pdf-organizer.marks.tool')}</legend>
-          <div role="radiogroup" aria-label={t('pdf-organizer.marks.toolsView')} className={styles.views}>
-            <button type="button" role="radio" aria-checked={!toolsAsList} aria-label={t('pdf-organizer.marks.toolsView.buttons')} className={styles.view} {...tooltip(t('pdf-organizer.marks.toolsView.buttons'), 'bottom-end')} onClick={() => onToolsAsListChange(false)}>
-              <Icon name="grip" size={13} />
-            </button>
-            <button type="button" role="radio" aria-checked={toolsAsList} aria-label={t('pdf-organizer.marks.toolsView.list')} className={styles.view} {...tooltip(t('pdf-organizer.marks.toolsView.list'), 'bottom-end')} onClick={() => onToolsAsListChange(true)}>
-              <Icon name="bars" size={13} />
-            </button>
-          </div>
-          {toolsAsList ? (
-            <div role="radiogroup" aria-label={t('pdf-organizer.marks.tool')} className={styles.toolList}>
-              {TOOL_GROUPS.map((group) => (
-                <div key={group.name} role="group" aria-label={t(`pdf-organizer.marks.group.${group.name}`)} className={styles.toolGroup}>
-                  <span className={styles.toolGroupName}>{t(`pdf-organizer.marks.group.${group.name}`)}</span>
-                  {group.tools.map((option) => (
-                    <button key={option} type="button" role="radio" aria-checked={tool === option} className={styles.toolRow} onClick={() => onToolChange(option)}>
-                      {toolDrawing(option)}
-                      {t(`pdf-organizer.marks.tool.${option}`)}
-                    </button>
-                  ))}
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div role="radiogroup" aria-label={t('pdf-organizer.marks.tool')} className={styles.tools}>
-              {TOOLS.map((option) => (
-                <button
-                  key={option}
-                  type="button"
-                  role="radio"
-                  aria-checked={tool === option}
-                  aria-label={t(`pdf-organizer.marks.tool.${option}`)}
-                  className={styles.tool}
-                  {...tooltip(t(`pdf-organizer.marks.tool.${option}`), 'bottom')}
-                  onClick={() => onToolChange(option)}
-                >
-                  {toolDrawing(option)}
-                </button>
-              ))}
-            </div>
-          )}
-          {!toolsAsList && <p className={styles.toolName}>{t(`pdf-organizer.marks.tool.${tool}`)}</p>}
-          <p className={styles.note}>{t(hintKey(tool))}</p>
-        </fieldset>
 
         {selected?.kind === 'link' && (
           <fieldset className={panelStyles.group}>
@@ -542,20 +401,6 @@ export function MarkPanel(props: MarkPanelProps) {
             </div>
           </fieldset>
         )}
-      </div>
-      <div className={panelStyles.actions}>
-        <span className={styles.history}>
-          <IconButton variant="ghost" aria-label={t('pdf-organizer.command.undo')} disabled={!canUndo} onClick={onUndo}>
-            <Icon name="arrow-rotate-left" size={15} />
-          </IconButton>
-          <IconButton variant="ghost" aria-label={t('pdf-organizer.command.redo')} disabled={!canRedo} onClick={onRedo}>
-            <Icon name="arrow-rotate-right" size={15} />
-          </IconButton>
-        </span>
-        <Button variant="primary" onClick={onDone}>
-          <Icon name="check" size={14} />
-          {t('pdf-organizer.marks.done')}
-        </Button>
       </div>
     </aside>
   );

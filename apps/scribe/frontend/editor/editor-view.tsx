@@ -3,7 +3,7 @@ import { fileEnding, fileName, useTabCommands } from '@syntelab/shell-api';
 import type { AppViewProps } from '@syntelab/shell-api';
 import { Icon, IconButton } from '@syntelab/ui-kit';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { editorCommands } from '../commands';
+import { editorCommands, toolMenu } from '../commands';
 import { openCompareTab } from '../compare/open-compare';
 import { countWords } from '../document/count-words';
 import { openFolderSearchTab, openLargeFileTab, openNewTextTab, openSavedTextInTab, openTextInTab, takeAskedLine, takeHandedEditor, takeHandover } from '../document/open-text';
@@ -19,7 +19,6 @@ import { fileProblem, isTooLarge, newFileForm, openText, saveText } from '../doc
 import type { FileForm } from '../document/text-file';
 import { changeSettings, DEFAULT_SETTINGS, NARROWEST_PANEL, SMALLEST_SHARE, useScribeSettings, WIDEST_PANEL } from '../settings/scribe-settings';
 import { ScribeStart } from '../start/scribe-start';
-import type { StartChoice } from '../start/scribe-start';
 import { StatusBar } from '../status/status-bar';
 import { PaneHead } from '../panel/pane-head';
 import { PANEL_PARTS, PanelRail, SidePanel } from '../panel/side-panel';
@@ -32,8 +31,7 @@ import { sameWord } from '../tools/doubtful-words';
 import { toolById } from '../tools/tool-definitions';
 import type { ToolValues } from '../tools/tool-definitions';
 import { ToolsPagesPanel } from '../tools/pages/tools-pages-panel';
-import { ToolsPanel } from '../tools/tools-panel';
-import type { OpenTool } from '../tools/tools-panel';
+import type { OpenTool } from '../tools/tool-panel-types';
 import styles from './editor-view.module.css';
 import { editorPhrases, TextEditor } from '@syntelab/text-editor';
 import type { EditorFacts, TextEditorHandle } from '@syntelab/text-editor';
@@ -107,9 +105,15 @@ export function EditorView({ host, path, untitled, whole = false, tool }: Editor
   const showPart = (shown: PanelPart) => changeSettings(host, { panelParts: PANEL_PARTS.filter((known) => known === shown || parts.includes(known)), sidePanel: shown, toolsShown: true });
   /** A part is there or it is not: asked for while it is in sight, it goes; while the panel is folded away, it is brought back. */
   const togglePart = (toggled: PanelPart) => (parts.includes(toggled) && settings.toolsShown ? changeSettings(host, { panelParts: parts.filter((known) => known !== toggled) }) : showPart(toggled));
-  /** Opens a tool in the panel (or closes the one that is open). A tool that changes the text brings its result into view. */
+  const { showTool, setIdleBar } = host;
+  /**
+   * Opens a tool in the panel (or closes the one that is open), with the bar of its group above the text. A tool that
+   * changes the text brings its result into view.
+   */
   const openToolById = (id: string | null) => {
     setOpenTool(id);
+    const toolGroup = id === null ? undefined : toolById(id)?.group;
+    if (toolGroup) showTool(toolMenu(toolGroup));
     if (id !== null && toolById(id)?.makes !== true && !settings.previewShown) changeSettings(host, { previewShown: true });
   };
   const changed = facts.changed || formChanged;
@@ -278,23 +282,24 @@ export function EditorView({ host, path, untitled, whole = false, tool }: Editor
         onSelectAll: () => editor.current?.selectAll(),
         onWrap: () => changeSettings(host, { wrap: !settings.wrap }),
         onLineNumbers: () => changeSettings(host, { lineNumbers: !settings.lineNumbers }),
-        onPart: togglePart,
-        onToolGroup: (toolGroup) => changeSettings(host, { hiddenToolGroups: settings.hiddenToolGroups.includes(toolGroup) ? settings.hiddenToolGroups.filter((known) => known !== toolGroup) : [...settings.hiddenToolGroups, toolGroup] }),
+        // Asked for on the opening page (Statistics, Recipes in the list on the side): the text comes, with that part beside it.
+        onPart: (asked) => {
+          if (!choosing) return togglePart(asked);
+          setChoosing(false);
+          showPart(asked);
+        },
         onPreview: () => changeSettings(host, { previewShown: !settings.previewShown }),
-        onToolPages: () => changeSettings(host, { toolPages: !settings.toolPages }),
         onCompareWithFile: () => void latest.current.compareWithFile(),
         onCompareFiles: () => openCompareTab(host, t('scribe.compare.title')),
         onFindInFolder: () => openFolderSearchTab(host, t('scribe.folder.title')),
         onCompareWithText: () => openCompareTab(host, t('scribe.compare.title'), { name: path ? fileName(path) : t('scribe.compare.thisText'), text: editor.current?.text() ?? '' }, null, true),
         onCompareTexts: () => openCompareTab(host, t('scribe.compare.title'), null, null, true),
-        // A tool asked for from a menu is shown wherever it was hidden: the panel, its part, its group.
+        // A tool asked for (on a bar, in the search) opens in the panel, wherever that was hidden, with the bar of its group above the text.
         onTool: (id, chosen) => {
           setChoosing(false);
-          const toolGroup = toolById(id)?.group ?? '';
-          changeSettings(host, { panelParts: PANEL_PARTS.filter((known) => known === 'tools' || parts.includes(known)), sidePanel: 'tools', toolsShown: true, hiddenToolGroups: settings.hiddenToolGroups.filter((known) => known !== toolGroup) });
+          changeSettings(host, { panelParts: PANEL_PARTS.filter((known) => known === 'tools' || parts.includes(known)), sidePanel: 'tools', toolsShown: true });
           if (chosen) setPreset((before) => ({ tool: id, values: chosen, nonce: (before?.nonce ?? 0) + 1 }));
-          setOpenTool(id);
-          if (toolById(id)?.makes !== true) changeSettings(host, { previewShown: true });
+          openToolById(id);
         },
         changed,
         hasFile: path !== undefined,
@@ -302,12 +307,11 @@ export function EditorView({ host, path, untitled, whole = false, tool }: Editor
         wrap: settings.wrap,
         lineNumbers: settings.lineNumbers,
         panelParts: parts,
-        hiddenToolGroups: settings.hiddenToolGroups,
         previewShown: settings.previewShown,
-        toolPages: settings.toolPages,
+        openTool,
       }),
     // `host` changes when the tab moves to the back; what it opens does not.
-    [host.openTab, host.closeTab, host.openSettings, t, changed, path, busy, loaded === null, settings.wrap, settings.lineNumbers, settings.toolsShown, settings.previewShown, settings.toolPages, settings.panelParts, settings.sidePanel, settings.hiddenToolGroups],
+    [host.openTab, host.closeTab, host.openSettings, t, changed, path, busy, loaded === null, settings.wrap, settings.lineNumbers, settings.toolsShown, settings.previewShown, settings.panelParts, settings.sidePanel, openTool, choosing],
   );
   // The first page of Scribe ("What would you like to do?"). In no menu of its own: "Go to Start" of the File menu,
   // which the shell puts there, runs it (the shell looks for a command named `<app-id>.start`). The text of the tab stays as it is.
@@ -403,20 +407,36 @@ export function EditorView({ host, path, untitled, whole = false, tool }: Editor
     return true;
   };
 
-  /** What each choice of the opening page leads to: a tool beside the text, or a tab of its own. */
-  const choose = (choice: StartChoice) => {
-    if (choice === 'compare') return openCompareTab(host, t('scribe.compare.title'), null, null, true);
-    const tools: Readonly<Record<Exclude<StartChoice, 'compare' | 'count'>, string>> = { replace: 'replace', duplicates: 'removeDuplicates', sort: 'sortLines', reverse: 'reverseText', filler: 'fillerText', random: 'randomText' };
-    if (choice === 'count') showPart('stats');
-    else {
-      showPart('tools');
-      setOpenTool(tools[choice]);
-      if (toolById(tools[choice])?.makes !== true) changeSettings(host, { previewShown: true });
-    }
+  /** A tool chosen on the opening page: its bar over an empty text, or a tab of its own (two texts compared). */
+  const chooseTool = (menuKey: string) => {
+    if (menuKey === toolMenu('compare')) return openCompareTab(host, t('scribe.compare.title'), null, null, true);
+    if (menuKey === toolMenu('stats')) showPart('stats');
+    else if (menuKey === toolMenu('recipes')) showPart('recipes');
+    else showTool(menuKey);
     setChoosing(false);
     // The text is where the typing goes from here.
     setTimeout(() => editor.current?.focus(), 0);
   };
+
+  // A tool chosen in the list on the side while the opening page is shown: the text comes, with the tool's bar.
+  const askedBar = host.tool;
+  useEffect(() => {
+    if (askedBar !== null && choosing) setChoosing(false);
+  }, [askedBar]);
+  // The bar of another group (or none, after Done): the tool open in the panel was of the one before, and is put away.
+  const shownBar = useRef(askedBar);
+  useEffect(() => {
+    if (shownBar.current === askedBar) return;
+    shownBar.current = askedBar;
+    setOpenTool((current) => (current !== null && toolMenu(toolById(current)?.group ?? '') !== askedBar ? null : current));
+  }, [askedBar]);
+
+  // While the text is shown with no tool's bar, the tools used most stand over it.
+  const working = loaded !== null && !choosing;
+  useEffect(() => {
+    setIdleBar(working);
+    return () => setIdleBar(false);
+  }, [working, setIdleBar]);
 
   // Opened for a tool (the search of the Start page): it is opened as soon as the text is there, once.
   const askedTool = useRef(tool);
@@ -457,17 +477,13 @@ export function EditorView({ host, path, untitled, whole = false, tool }: Editor
       {loaded !== null && choosing && (
         <ScribeStart
           host={host}
-          onChoose={choose}
+          onChoose={chooseTool}
           onNewText={() => {
             setChoosing(false);
             setTimeout(() => editor.current?.focus(), 0);
           }}
           onOpen={() => void latest.current.open()}
           onFindInFolder={() => openFolderSearchTab(host, t('scribe.folder.title'))}
-          onRecipes={() => {
-            showPart('recipes');
-            setChoosing(false);
-          }}
           onOpenRecent={(recent) => {
             openTextInTab(host, recent);
             // This tab was only waiting for something to be chosen.
@@ -548,16 +564,10 @@ export function EditorView({ host, path, untitled, whole = false, tool }: Editor
               />
               <SidePanel part={part} parts={parts} width={settings.panelWidth} onCollapse={() => changeSettings(host, { toolsShown: false })} onPartChange={(sidePanel) => changeSettings(host, { sidePanel })}>
                 {part === 'tools' ? (
-                  (() => {
-                    // The two panels take the same things: which one is drawn is chosen in View.
-                    const Panel = settings.toolPages ? ToolsPagesPanel : ToolsPanel;
-                    return (
-                  <Panel host={host} openTool={openTool} onOpenTool={openToolById} hiddenGroups={settings.hiddenToolGroups} preset={preset} selected={facts.selected} disabled={busy} target={target} onApply={putBack} onInsert={insert} onReplaceAt={replaceAt} onMark={(places) => editor.current?.mark(places)} onPreview={setOpenState} onCompare={compareTexts} onApplied={(tool, values, before, after) => {
+                  <ToolsPagesPanel host={host} openTool={openTool} onOpenTool={openToolById} preset={preset} selected={facts.selected} disabled={busy} target={target} onApply={putBack} onInsert={insert} onReplaceAt={replaceAt} onMark={(places) => editor.current?.mark(places)} onPreview={setOpenState} onCompare={compareTexts} onApplied={(tool, values, before, after) => {
                       setApplied((current) => [...current, { tool, values }].slice(-50));
                       setLastApplied(before === after || !openState || !('operations' in openState) ? null : { tool, choices: JSON.stringify(openState.operations), before, after });
                     }} />
-                    );
-                  })()
                 ) : part === 'recipes' ? (
                   <RecipesPanel host={host} applied={applied} onForgetApplied={() => setApplied([])} target={target} onApply={putBack} disabled={busy} />
                 ) : (

@@ -1,7 +1,7 @@
 /* Beside the pages, on the far side from the thumbnails. */
 .panel {
   display: flex;
-  flex: 0 0 330px;
+  flex: 0 0 var(--panel-width, 330px);
   flex-direction: column;
   min-height: 0;
   border-inline-start: 1px solid var(--sc-border);

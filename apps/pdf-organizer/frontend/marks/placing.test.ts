@@ -31,6 +31,14 @@ describe('placedMarks', () => {
     expect(mark).toMatchObject({ width: 120, rotation: 270 });
   });
 
+  it('makes the paper clip of an attached file as large as the drag, or of the usual size from a click', () => {
+    const file: Placing = { kind: 'attachment', path: 'C:/offer.docx', name: 'offer.docx', author: '' };
+    const [dragged] = placedMarks(file, { x: 100, y: 100 }, { x: 132, y: 144 }, 0, fitted, newId);
+    expect(dragged).toMatchObject({ kind: 'attachment', width: 32, height: 44, x: 100, y: 100 });
+    const [clicked] = placedMarks(file, { x: 100, y: 100 }, { x: 101, y: 100 }, 0, fitted, newId);
+    expect(clicked).toMatchObject({ width: 16, height: 22, x: 92, y: 89 });
+  });
+
   it('sizes typed words to the drag', () => {
     const typed: Placing = { kind: 'text', text: 'Ana Pop', font: 'serif', bold: false, italic: true, color: '#102a83' };
     const [mark] = placedMarks(typed, { x: 0, y: 0 }, { x: 140, y: 30 }, 0, fitted, newId);

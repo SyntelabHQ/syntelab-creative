@@ -40,8 +40,8 @@ Each app has its own plan in its folder (`apps/pdf-organizer/PLAN.md`,
 `apps/convert/PLAN.md`). The boundary between PDF Organizer and Convert is in
 `docs/decisions/0008-pdf-organizer-convert-boundary.md`.
 
-Each app has its own icon and color: PDF Organizer `#7A1F3D` (Font Awesome
-`file-pdf`), Convert `#546E7A` (Font Awesome `box-archive`), Dev `#E91E63`,
+Each app has its own icon and color: PDF Organizer `#EF4444` (Font Awesome
+`file-lines`, regular), Convert `#546E7A` (Font Awesome `box-archive`), Dev `#E91E63`,
 Scribe `#7B1FA2`, Wizard `#E65100`, Units `#E53935`, Pixel `#0288D1`, Metadata `#3949AB`. Syntelab brand color: `#007BFF`. Each icon is `apps/<app-id>/assets/icon.svg`. Brand font for the
 "SYNTELAB CREATIVE" wordmark: **Sansation**.
 
@@ -52,7 +52,7 @@ Scribe `#7B1FA2`, Wizard `#E65100`, Units `#E53935`, Pixel `#0288D1`, Metadata `
 | Window, start screen, app bar, tabs | Its screens and tools |
 | General settings, themes, languages (incl. RTL), shortcuts | Its own settings |
 | App manager (install, enable, update) | `app.json` (app manifest) |
-| Command registry (ribbon / menu / panel / search) | Its commands |
+| Command registry (menus / tools / search) | Its commands |
 | Jobs: progress, cancel, notifications | Its long operations |
 | Network (the only place with internet), updates, changelog | Nothing: an app never goes online by itself |
 | Global translations: shell + common terms | Its own translations |
@@ -78,18 +78,18 @@ Scribe `#7B1FA2`, Wizard `#E65100`, Units `#E53935`, Pixel `#0288D1`, Metadata `
   time (e.g. a PDF and a conversion job).
 - In PDF Organizer each open document has its own tab.
 
-### 4.3 Three interface layouts (user's choice)
-1. **Classic**: menu bar and toolbar.
-2. **Ribbon**: like Word, with a quick collapse button.
-3. **Side panel**: tools in a panel on the side, with quick icons; left or right.
+### 4.3 One interface, built around tasks
+Every app has the same frame: a top bar with the menus of the program,
+the search (Ctrl+K) and the main commands; the app's tools on the side,
+named by what the user wants to do; the bar of the open tool over the
+content, closed with **Done**. The list of tools can be hidden.
 
-Can be changed any time in settings. On **first run** the user picks the
-layout (with a preview of each), the theme and the language (with
+On **first run** the user picks the theme and the language (with
 sensible defaults).
 
 ### 4.4 Command search
 A search box finds any command or setting ("rotate", "signature",
-"dark theme"), whatever the layout.
+"dark theme") with Ctrl+K, from any app.
 
 ### 4.5 Easy for beginners, complete for experts
 - Simple things are visible right away. Advanced things are available but

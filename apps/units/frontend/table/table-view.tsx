@@ -182,6 +182,10 @@ export function TableView({ host, converterId, table, onFilled }: TableViewProps
     setLast(action);
   };
 
+  /** Runs of rows cut to those the table has: the empty rows below it hold nothing to copy or empty. */
+  const inTable = (runs: [number, number][]): [number, number][] =>
+    runs.filter(([from]) => from < facts.rows).map(([from, to]): [number, number] => [from, Math.min(to, facts.rows - 1)]);
+
   const commit = async (row: number, unit: string, text: string): Promise<boolean> => {
     try {
       const answer = await setCell(host, table, row, unit, text, marksOf(language).decimal);
@@ -287,7 +291,7 @@ export function TableView({ host, converterId, table, onFilled }: TableViewProps
       titles: settings.withTitles ? units.map(titleOf) : undefined,
       rowNumbers: settings.withRowNumbers,
       transposed,
-      runs: what === 'all' ? undefined : selectedRowRuns(shownSelection),
+      runs: what === 'all' ? undefined : inTable(selectedRowRuns(shownSelection)),
       decimalMark: marksOf(language).decimal,
     };
   };
@@ -365,7 +369,7 @@ export function TableView({ host, converterId, table, onFilled }: TableViewProps
           onPaste={pasteFromClipboard}
           onImport={(kind, transposed) => void importFrom(kind, transposed).catch(failed)}
           onExport={(kind, transposed) => void exportTo(kind, transposed).catch(failed)}
-          onClearSelected={() => clear({ runs: selectedRowRuns(shownSelection) }, { key: 'units.table.clearedSelection' })}
+          onClearSelected={() => clear({ runs: inTable(selectedRowRuns(shownSelection)) }, { key: 'units.table.clearedSelection' })}
           onClearAll={() => clear({ all: true }, { key: 'units.table.clearedAll' })}
           onHeadFormat={(headFormat) => changeSettings(host, { headFormat })}
           onWithTitles={() => changeSettings(host, { withTitles: !settings.withTitles })}
@@ -387,10 +391,13 @@ export function TableView({ host, converterId, table, onFilled }: TableViewProps
           <DataGrid
             columns={gridColumns}
             rowCount={facts.rows}
+            endless
             rowNumbers={settings.rowNumbers}
             stamp={rows.stamp}
             need={rows.need}
             cell={(row, column) => {
+              // Below the table: an empty row, until something is typed in it.
+              if (row >= facts.rows) return { shown: '', edited: '', typed: false };
               const read = rows.cellAt(row, column);
               if (!read) return undefined;
               // What is not a number is shown, and edited, as it was typed.
@@ -400,7 +407,7 @@ export function TableView({ host, converterId, table, onFilled }: TableViewProps
             selection={shownSelection}
             onSelection={setSelection}
             onCommit={commit}
-            onClear={(runs) => clear({ runs }, { key: 'units.table.clearedSelection' })}
+            onClear={(runs) => clear({ runs: inTable(runs) }, { key: 'units.table.clearedSelection' })}
             onGrow={grow}
             onColumnWidth={(id, width) => change(withWidth(columns, id, width))}
             numbersWidth={columns.numbersWidth ?? null}
@@ -414,7 +421,7 @@ export function TableView({ host, converterId, table, onFilled }: TableViewProps
               if (what === 'redo') return history(false);
               copy('selected', false);
               // Cut: what was copied is emptied.
-              if (what === 'cut') clear({ runs: selectedRowRuns(shownSelection) }, { key: 'units.table.clearedSelection' });
+              if (what === 'cut') clear({ runs: inTable(selectedRowRuns(shownSelection)) }, { key: 'units.table.clearedSelection' });
             }}
             onPaste={() => pasteFromClipboard(false)}
             columnMenu={(id, close) => {

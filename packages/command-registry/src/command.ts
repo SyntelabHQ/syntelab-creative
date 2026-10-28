@@ -1,6 +1,6 @@
 /**
  * One thing the user can do. Registered once, shown everywhere
- * (menu, ribbon, side panel, search, shortcuts).
+ * (menus, tools, search, shortcuts).
  */
 export interface Command {
   /** Unique id, prefixed by its owner: `shell.goToStart`, `pdf-organizer.rotate`. */
@@ -12,7 +12,7 @@ export interface Command {
   /**
    * Translation key of the top-level menu the command belongs to
    * (`common.menu.file`, `common.menu.view`…). The classic layout shows it as
-   * a menu, the ribbon as a tab, the side panel as a section. A command
+   * a menu on top, or one of the app's tools. A command
    * without one appears only in the search.
    */
   readonly menuKey?: string;
@@ -39,12 +39,12 @@ export interface Command {
    */
   readonly shortcut?: string;
   /**
-   * Where there is room for it (a ribbon group of its own), what the command
+   * Where there is room for it (a group of its own in a tool's bar), what the command
    * is for (`hintKey`) is written out beside its button instead of waiting in
    * a tooltip.
    */
   readonly explained?: boolean;
-  /** Important enough for the toolbar and the collapsed side panel. Needs an icon. */
+  /** Important enough for the icons on the top bar. Needs an icon. */
   readonly primary?: boolean;
   readonly run: () => void | Promise<void>;
 }

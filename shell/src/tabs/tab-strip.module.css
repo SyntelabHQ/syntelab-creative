@@ -1,51 +1,97 @@
+/* The tabs, in the one bar on top: they give way to one another, then scroll, when there are many. */
 .strip {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  flex: 0 1 auto;
+  align-items: center;
   gap: 2px;
-  padding-block: 8px 0;
-  padding-inline: 12px;
-  border-block-end: 1px solid var(--sc-border);
-  background: var(--sc-surface-2);
+  min-width: 0;
+  height: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+/* Back to the app's first page, while its tab is not shown. */
+.home {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: var(--sc-radius-m);
+  background: none;
+  color: var(--sc-muted);
+  cursor: pointer;
+}
+
+.home:hover {
+  background: color-mix(in srgb, var(--sc-surface-2) 60%, transparent);
+  color: var(--sc-text);
+}
+
+.home:focus-visible {
+  outline: 2px solid var(--sc-accent);
+  outline-offset: -2px;
 }
 
 .tab {
   display: flex;
+  flex: 0 1 auto;
   align-items: center;
-  margin-block-end: -1px;
-  border: 1px solid transparent;
-  border-start-start-radius: var(--sc-radius-s);
-  border-start-end-radius: var(--sc-radius-s);
+  min-width: 84px;
+  max-width: 220px;
+  height: 34px;
+  border-radius: var(--sc-radius-m);
   color: var(--sc-muted);
 }
 
+.tab:hover {
+  background: color-mix(in srgb, var(--sc-surface-2) 60%, transparent);
+  color: var(--sc-text);
+}
+
 .tab[data-selected='true'] {
-  border-color: var(--sc-border);
-  border-block-end-color: var(--sc-bg);
-  background: var(--sc-bg);
+  background: var(--sc-surface-2);
   color: var(--sc-text);
   font-weight: 500;
 }
 
 .title {
   display: flex;
+  flex: 1;
   align-items: center;
   gap: 8px;
-  padding-block: 9px;
-  padding-inline: 16px;
+  min-width: 0;
+  height: 100%;
+  padding-inline: 12px;
   border: 0;
   border-radius: inherit;
   background: none;
   color: inherit;
   font-weight: inherit;
+  white-space: nowrap;
   cursor: pointer;
 }
 
 .title:not(:last-child) {
-  padding-inline-end: 6px;
+  padding-inline-end: 4px;
+}
+
+.title:focus-visible {
+  outline: 2px solid var(--sc-accent);
+  outline-offset: -2px;
+}
+
+/* A long name ends in "…": the whole of it is in the tooltip. */
+.name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dot {
+  flex: none;
   width: 8px;
   height: 8px;
   border-radius: var(--sc-radius-xs);
@@ -55,6 +101,7 @@
 /* The app's own icon: in its color, or white on a square of it (ui-kit `base.css`). */
 .appIcon {
   display: flex;
+  flex: none;
   margin: -2px;
   padding: 2px;
   border-radius: var(--sc-radius-s);
@@ -64,11 +111,12 @@
 
 .close {
   display: flex;
+  flex: none;
   align-items: center;
   justify-content: center;
   width: 24px;
   height: 24px;
-  margin-inline-end: 6px;
+  margin-inline-end: 4px;
   border: 0;
   border-radius: var(--sc-radius-s);
   background: none;
@@ -77,12 +125,13 @@
 }
 
 .close:hover {
-  background: var(--sc-surface-2);
+  background: color-mix(in srgb, var(--sc-text) 10%, transparent);
   color: var(--sc-text);
 }
 
 /* A tab with changes that are not saved yet. */
 .unsaved {
+  flex: none;
   width: 7px;
   height: 7px;
   border-radius: 50%;

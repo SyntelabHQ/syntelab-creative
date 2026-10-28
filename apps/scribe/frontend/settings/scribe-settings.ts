@@ -37,8 +37,6 @@ export interface ScribeSettings {
   readonly sidePanel: 'tools' | 'recipes' | 'stats';
   /** What the open tool would give is shown beside the text before it is applied. */
   readonly previewShown: boolean;
-  /** The tools are shown one at a time (the list, then the tool that was chosen) instead of all in one list that opens. */
-  readonly toolPages: boolean;
   /** The result stands under the text instead of beside it; how much of the room the text takes (0.2 to 0.8); whether the two scroll as one. */
   readonly previewStacked: boolean;
   readonly previewShare: number;
@@ -47,8 +45,6 @@ export interface ScribeSettings {
   readonly panelWidth: number;
   /** The parts of the panel that are shown (tools, recipes, statistics); with none, there is no panel. */
   readonly panelParts: readonly ('tools' | 'recipes' | 'stats')[];
-  /** The groups of tools the user chose not to see in the panel. */
-  readonly hiddenToolGroups: readonly string[];
   /** What a new text is saved as: how its lines end, and whether its file starts with a byte order mark. */
   readonly newLineEnding: NewLineEnding;
   readonly newMark: boolean;
@@ -65,13 +61,13 @@ export interface ScribeSettings {
 export const SETTING_KEYS = ['font', 'fontSize', 'wrap', 'lineNumbers', 'previewShown', 'newLineEnding', 'newMark', ...PACES] as const;
 export type SettingKey = (typeof SETTING_KEYS)[number];
 
-export const DEFAULT_SETTINGS: ScribeSettings = { wrap: true, lineNumbers: true, font: 'mono', fontSize: 14, toolsShown: true, sidePanel: 'tools', previewShown: true, toolPages: true, previewStacked: false, previewShare: 0.5, scrollTogether: true, panelWidth: 320, panelParts: ['tools', 'recipes', 'stats'], hiddenToolGroups: [], newLineEnding: 'system', newMark: false, readingSpeed: READING_WORDS_A_MINUTE, speakingSpeed: SPEAKING_WORDS_A_MINUTE, typingSpeed: TYPING_WORDS_A_MINUTE, handwritingSpeed: HANDWRITING_WORDS_A_MINUTE, wordsPerPage: 300 };
+export const DEFAULT_SETTINGS: ScribeSettings = { wrap: true, lineNumbers: true, font: 'mono', fontSize: 14, toolsShown: true, sidePanel: 'tools', previewShown: true, previewStacked: false, previewShare: 0.5, scrollTogether: true, panelWidth: 320, panelParts: ['tools', 'recipes', 'stats'], newLineEnding: 'system', newMark: false, readingSpeed: READING_WORDS_A_MINUTE, speakingSpeed: SPEAKING_WORDS_A_MINUTE, typingSpeed: TYPING_WORDS_A_MINUTE, handwritingSpeed: HANDWRITING_WORDS_A_MINUTE, wordsPerPage: 300 };
 
 /** Settings as stored, made whole: what is missing or not valid (any more) is as the program ships it. */
 export function readSettings(stored: unknown): ScribeSettings {
   if (typeof stored !== 'object' || stored === null) return DEFAULT_SETTINGS;
   const values = stored as Record<string, unknown>;
-  const flag = (key: 'wrap' | 'lineNumbers' | 'toolsShown' | 'newMark' | 'previewShown' | 'previewStacked' | 'scrollTogether' | 'toolPages') => (typeof values[key] === 'boolean' ? (values[key] as boolean) : DEFAULT_SETTINGS[key]);
+  const flag = (key: 'wrap' | 'lineNumbers' | 'toolsShown' | 'newMark' | 'previewShown' | 'previewStacked' | 'scrollTogether') => (typeof values[key] === 'boolean' ? (values[key] as boolean) : DEFAULT_SETTINGS[key]);
   const size = typeof values.fontSize === 'number' && Number.isFinite(values.fontSize) ? Math.round(values.fontSize) : DEFAULT_SETTINGS.fontSize;
   const pace = (key: Pace) => (typeof values[key] === 'number' && Number.isFinite(values[key]) ? Math.min(Math.max(Math.round(values[key] as number), SLOWEST_PACE), FASTEST_PACE) : DEFAULT_SETTINGS[key]);
   return {
@@ -79,9 +75,7 @@ export function readSettings(stored: unknown): ScribeSettings {
     lineNumbers: flag('lineNumbers'),
     toolsShown: flag('toolsShown'),
     previewShown: flag('previewShown'),
-    toolPages: flag('toolPages'),
     panelParts: Array.isArray(values.panelParts) ? (['tools', 'recipes', 'stats'] as const).filter((part) => (values.panelParts as unknown[]).includes(part)) : DEFAULT_SETTINGS.panelParts,
-    hiddenToolGroups: Array.isArray(values.hiddenToolGroups) ? values.hiddenToolGroups.filter((group): group is string => typeof group === 'string') : [],
     previewStacked: flag('previewStacked'),
     scrollTogether: flag('scrollTogether'),
     previewShare: typeof values.previewShare === 'number' && Number.isFinite(values.previewShare) ? Math.min(Math.max(values.previewShare, SMALLEST_SHARE), 1 - SMALLEST_SHARE) : DEFAULT_SETTINGS.previewShare,

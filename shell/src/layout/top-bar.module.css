@@ -1,0 +1,105 @@
+/* The one bar on top, which is the window's title bar too. */
+.bar {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  height: 48px;
+  padding-inline: 6px 0;
+  border-block-end: 1px solid var(--sc-border);
+  background: var(--sc-surface);
+  user-select: none;
+}
+
+.fold {
+  display: flex;
+  flex: none;
+}
+
+/*
+ * The search stands in the middle of the room the tabs leave, smaller than
+ * that room: what is left around it moves the window. With little room it
+ * folds to its icon.
+ */
+.search {
+  position: relative;
+  display: flex;
+  flex: 1 1 0;
+  justify-content: center;
+  min-width: 44px;
+  height: 100%;
+  align-items: center;
+  padding-inline: 6px;
+}
+
+.search > * {
+  flex: 0 1 320px;
+}
+
+.search > [data-folded='true'] {
+  flex: none;
+}
+
+.quick {
+  display: flex;
+  flex: none;
+  align-items: center;
+}
+
+.quickGroup {
+  display: flex;
+  gap: 2px;
+}
+
+.quickGroup + .quickGroup {
+  margin-inline-start: 6px;
+  padding-inline-start: 6px;
+  border-inline-start: 1px solid var(--sc-border);
+}
+
+/* Settings, and a newer version while one waits; with no list of tools, what is new, feedback and support. */
+.program {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 2px;
+  padding-inline-start: 6px;
+  border-inline-start: 1px solid var(--sc-border);
+}
+
+/* A newer version: in the brand color, with a soft pulse so it is noticed. */
+.update {
+  color: var(--sc-brand);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    filter: none;
+  }
+
+  50% {
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--sc-brand) 75%, transparent));
+  }
+}
+
+.menu {
+  display: flex;
+  flex: none;
+  margin-inline-end: 4px;
+}
+
+.dots {
+  fill: currentColor;
+}
+
+/* A narrow window keeps the tabs, the search and the menu; the icons are in the menu too. */
+@media (max-width: 760px) {
+  .quick {
+    display: none;
+  }
+}

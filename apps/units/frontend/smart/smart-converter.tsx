@@ -3,6 +3,7 @@ import { AppInvokeError } from '@syntelab/shell-api';
 import type { AppHost } from '@syntelab/shell-api';
 import { Button, Icon } from '@syntelab/ui-kit';
 import { useEffect, useRef, useState } from 'react';
+import type { ReactNode } from 'react';
 import { converterIcon } from '../engine/converter-icons';
 import { OWN_GROUP, unitName } from '../engine/names';
 import { convert, loadConverter } from '../engine/units-api';
@@ -29,6 +30,8 @@ export interface SmartConverterProps {
   readonly onConverter: (id: string) => void;
   /** Opens the table of a converter. */
   readonly onOpenTable: (id: string) => void;
+  /** What the page shows under the converter: the other converters, to be chosen. */
+  readonly children?: ReactNode;
 }
 
 /** The two lists of currencies: those of countries, and cryptocurrencies. */
@@ -56,7 +59,7 @@ type Answer = { readonly kind: 'converted'; readonly text: string; readonly ambi
  * units come first; the two sides change places with one button. The same
  * engine and the same precision as the table.
  */
-export function SmartConverter({ host, converters, coming, converterId, onConverter, onOpenTable }: SmartConverterProps) {
+export function SmartConverter({ host, converters, coming, converterId, onConverter, onOpenTable, children }: SmartConverterProps) {
   const { t, language } = useI18n();
   const { extremes, precision, between } = useUnitsSettings(host);
   /** The decimals the user chose for units of this converter. */
@@ -297,6 +300,7 @@ export function SmartConverter({ host, converters, coming, converterId, onConver
             </div>
           </>
         )}
+        {children}
       </div>
     </div>
   );

@@ -12,7 +12,10 @@ export function DonationBanner() {
       <span className={styles.heart}>
         <Icon name="support" />
       </span>
-      <span className={styles.text}>{t('shell.donate.banner')}</span>
+      <span className={styles.text}>
+        <strong className={styles.line}>{t('shell.donate.bannerSupport')}</strong>
+        <span className={styles.line}>{t('shell.donate.bannerShare')}</span>
+      </span>
       <Button className={styles.button} onClick={() => openSitePage('support')}>
         {t('shell.donate.button')}
       </Button>

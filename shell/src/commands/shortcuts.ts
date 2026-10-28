@@ -13,6 +13,11 @@ function isTextField(target: EventTarget | null): boolean {
   return target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName);
 }
 
+/** Keys as the user reads them on this computer: `Mod+K` is `Ctrl+K`, or `⌘K` on a Mac. */
+export function shortcutText(shortcut: string): string {
+  return formatShortcut(shortcut, IS_MAC);
+}
+
 /** A command's shortcut as the user reads it (`Ctrl+S`), or undefined. */
 export function shortcutLabel(command: Command): string | undefined {
   return command.shortcut ? formatShortcut(command.shortcut, IS_MAC) : undefined;

@@ -113,6 +113,12 @@
   text-transform: uppercase;
 }
 
+/* The group's icon, in the color the list on the side gives it. */
+.groupIcon {
+  display: inline-flex;
+  color: var(--dev-color, #e91e63);
+}
+
 .count {
   padding: 1px 7px;
   border-radius: var(--sc-radius-s);

@@ -1,20 +1,17 @@
 import type { Command } from '@syntelab/command-registry';
-import { TOOL_GROUPS, TOOLS } from './tools/tool-definitions';
+import { TOOLS } from './tools/tool-definitions';
 import type { ToolValues } from './tools/tool-definitions';
 
 // Menus shared with the shell and other apps.
 const FILE = 'common.menu.file';
 const EDIT = 'common.menu.edit';
 const VIEW = 'common.menu.view';
-// …and the ones only Scribe has: what changes the shape of a text, and the rest of its tools.
-const FORMAT = 'scribe.menu.format';
-const TOOLS_MENU = 'scribe.menu.tools';
-/** The picture of each group of tools, where the group itself is something to choose. */
-const GROUP_ICONS: Readonly<Record<string, string>> = { replace: 'magnifying-glass', lines: 'arrows-up-down', case: 'font', direction: 'right-left', clean: 'eraser', make: 'pen-to-square' };
-/** The tools whose main choice is laid out in the menus, each of its options a command of its own: by tool, the choice. */
+// …and the ones only Scribe has: each group of tools is a tool of the list on the side, with a bar of its own.
+/** The menu (and the bar) of a group of tools. */
+export const toolMenu = (toolGroup: string) => `scribe.menu.${toolGroup}`;
+const COMPARE_MENU = toolMenu('compare');
+/** The tools whose main choice is laid out in the bars, each of its options a command of its own: by tool, the choice. */
 const LAID_OUT: Readonly<Record<string, string>> = { changeCase: 'to', quotes: 'to', reverseText: 'what', trimLines: 'side' };
-/** The groups of tools that change the shape of a text: they make the Format menu. */
-const FORMAT_GROUPS: readonly string[] = ['lines', 'case', 'direction', 'clean'];
 
 const group = (name: string) => `scribe.group.${name}`;
 const commandId = (name: string) => `scribe.${name}`;
@@ -52,12 +49,8 @@ export interface EditorCommandsInput {
   readonly onLineNumbers: () => void;
   /** Shows or hides a part of the panel beside the text: the tools, the recipes, the statistics. */
   readonly onPart: (part: 'tools' | 'recipes' | 'stats') => void;
-  /** Shows or hides a group of tools in the panel. */
-  readonly onToolGroup: (group: string) => void;
   /** Shows or hides the result of the open tool beside the text. */
   readonly onPreview: () => void;
-  /** Shows the tools one at a time, or all in one list that opens. */
-  readonly onToolPages: () => void;
   /** Opens the tools panel at a tool, with some of its choices already made when the command was of one of its variants. */
   readonly onTool: (id: string, preset?: ToolValues) => void;
   /** Compares this text with a file the user chooses. */
@@ -78,12 +71,11 @@ export interface EditorCommandsInput {
   readonly busy: boolean;
   readonly wrap: boolean;
   readonly lineNumbers: boolean;
-  /** The parts of the panel that are shown, and the groups of tools that are not. */
+  /** The parts of the panel that are shown. */
   readonly panelParts: readonly string[];
-  readonly hiddenToolGroups: readonly string[];
   readonly previewShown: boolean;
-  /** The tools are shown one at a time. */
-  readonly toolPages: boolean;
+  /** The tool whose choices are open in the panel: its button on the bar is pressed. */
+  readonly openTool: string | null;
 }
 
 /** One command: its name, where it is in the menus, and what it does. */
@@ -123,9 +115,7 @@ export function otherTabCommands(input: OtherTabCommandsInput): Command[] {
     onWrap: nothing,
     onLineNumbers: nothing,
     onPart: nothing,
-    onToolGroup: nothing,
     onPreview: nothing,
-    onToolPages: nothing,
     onTool: nothing,
     onCompareWithFile: nothing,
     onCompareWithText: nothing,
@@ -135,9 +125,8 @@ export function otherTabCommands(input: OtherTabCommandsInput): Command[] {
     wrap: false,
     lineNumbers: false,
     panelParts: [],
-    hiddenToolGroups: [],
     previewShown: false,
-    toolPages: false,
+    openTool: null,
   });
   const usable = new Set(IN_OTHER_TABS.map(commandId));
   return all.map((known) => (usable.has(known.id) ? known : { ...known, disabled: true, checked: undefined }));
@@ -165,41 +154,23 @@ export function editorCommands(input: EditorCommandsInput): Command[] {
     command('preview', VIEW, 'text', 'table-columns', input.onPreview, { kind: 'toggle', checked: input.previewShown }),
     // What stands beside the text: each part is there or it is not; with none, there is no panel.
     command('toolsPanel', VIEW, 'panel', 'sliders', () => input.onPart('tools'), { kind: 'toggle', checked: input.panelParts.includes('tools') }),
-    command('recipes', VIEW, 'panel', 'list-check', () => input.onPart('recipes'), { kind: 'toggle', checked: input.panelParts.includes('recipes') }),
-    command('stats', VIEW, 'panel', 'ruler', () => input.onPart('stats'), { kind: 'toggle', checked: input.panelParts.includes('stats') }),
-    // How the tools are laid out in their part of the panel.
-    command('toolPages', VIEW, 'panel', 'rectangle-list', input.onToolPages, { kind: 'toggle', checked: input.toolPages }),
-    // Which groups of tools the panel lists: not everybody wants them all.
-    ...TOOL_GROUPS.map(
-      (toolGroup): Command => ({
-        id: commandId(`toolGroup.${toolGroup}`),
-        labelKey: `scribe.toolGroup.${toolGroup}`,
-        hintKey: 'scribe.hint.toolGroup',
-        menuKey: VIEW,
-        groupKey: group('toolsShown'),
-        icon: GROUP_ICONS[toolGroup],
-        kind: 'toggle',
-        checked: !input.hiddenToolGroups.includes(toolGroup),
-        run: () => input.onToolGroup(toolGroup),
-      }),
-    ),
-    // Every tool is a command too: found by the search, in the menus and the ribbon; it opens the panel at its choices.
-    // Those that change the shape of a text make the Format menu, each group of them laid out in full.
-    ...toolCommands(input.onTool, true),
+    // The recipes and the statistics are tools of the list on the side too: one click shows them (or puts them away).
+    command('recipes', toolMenu('recipes'), 'panel', 'list-check', () => input.onPart('recipes'), { kind: 'toggle', checked: input.panelParts.includes('recipes') }),
+    command('stats', toolMenu('stats'), 'panel', 'ruler', () => input.onPart('stats'), { kind: 'toggle', checked: input.panelParts.includes('stats') }),
+    // Every tool is a command too: found by the search, on the bar of its group; it opens the panel at its choices.
+    ...toolCommands(input.onTool, input.openTool),
+    command('findInFolder', toolMenu('replace'), 'folder', 'folder-tree', input.onFindInFolder, { primary: true }),
 
-    command('compareWithFile', TOOLS_MENU, 'compare', 'code-compare', input.onCompareWithFile, { primary: true }),
-    command('compareWithText', TOOLS_MENU, 'compare', 'paste', input.onCompareWithText, { primary: true }),
-    command('compareFiles', TOOLS_MENU, 'compare', 'right-left', input.onCompareFiles),
-    command('compareTexts', TOOLS_MENU, 'compare', 'pen-to-square', input.onCompareTexts),
-    command('findInFolder', TOOLS_MENU, 'compare', 'folder-tree', input.onFindInFolder, { primary: true }),
-
-    ...toolCommands(input.onTool, false),
+    command('compareWithFile', COMPARE_MENU, 'compare', 'code-compare', input.onCompareWithFile, { primary: true }),
+    command('compareWithText', COMPARE_MENU, 'compare', 'paste', input.onCompareWithText, { primary: true }),
+    command('compareFiles', COMPARE_MENU, 'compare', 'right-left', input.onCompareFiles, { primary: true }),
+    command('compareTexts', COMPARE_MENU, 'compare', 'pen-to-square', input.onCompareTexts, { primary: true }),
   ];
 }
 
-/** The tools as commands: those of the Format menu, or the others (finding and replacing, writing text). */
-function toolCommands(onTool: (id: string, preset?: ToolValues) => void, format: boolean): Command[] {
-  return TOOLS.filter((tool) => FORMAT_GROUPS.includes(tool.group) === format).flatMap((tool): Command[] => {
+/** The tools as commands, each on the bar of its group; the one open in the panel is pressed. */
+function toolCommands(onTool: (id: string, preset?: ToolValues) => void, openTool: string | null): Command[] {
+  return TOOLS.flatMap((tool): Command[] => {
     const laidOut = tool.fields.find((field) => field.name === LAID_OUT[tool.id]);
     // A tool that is mostly one choice is shown as its options: "ALL CAPITALS" is a click, not a tool and then a list.
     if (laidOut?.kind === 'choice') {
@@ -208,7 +179,7 @@ function toolCommands(onTool: (id: string, preset?: ToolValues) => void, format:
           id: commandId(`tool.${tool.id}.${option}`),
           labelKey: `scribe.variant.${tool.id}.${option}`,
           hintKey: `scribe.toolHint.${tool.id}`,
-          menuKey: format ? FORMAT : TOOLS_MENU,
+          menuKey: toolMenu(tool.group),
           groupKey: `scribe.toolGroup.${tool.group}`,
           icon: tool.icon,
           primary: true,
@@ -216,20 +187,22 @@ function toolCommands(onTool: (id: string, preset?: ToolValues) => void, format:
         }),
       );
     }
-    return [toolCommand(tool, format, onTool)];
+    return [toolCommand(tool, openTool === tool.id, onTool)];
   });
 }
 
-function toolCommand(tool: (typeof TOOLS)[number], format: boolean, onTool: (id: string) => void): Command {
+function toolCommand(tool: (typeof TOOLS)[number], open: boolean, onTool: (id: string) => void): Command {
   return (
     {
       id: commandId(`tool.${tool.id}`),
       labelKey: `scribe.tool.${tool.id}`,
       hintKey: `scribe.toolHint.${tool.id}`,
-      menuKey: format ? FORMAT : TOOLS_MENU,
+      menuKey: toolMenu(tool.group),
       groupKey: `scribe.toolGroup.${tool.group}`,
       icon: tool.icon,
       primary: true,
+      kind: 'choice',
+      checked: open,
       run: () => onTool(tool.id),
     }
   );
