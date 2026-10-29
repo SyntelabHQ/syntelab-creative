@@ -166,7 +166,7 @@
             "A Beállítások → Általános → Windows Fájlkezelő → „A Syntelab Creative megjelenítése a fájlok és mappák helyi menüjében” bejegyzéseket ad azokhoz a fájlokhoz, amelyeket a program olvas: „Konvertálás PDF-re a PDF Organizerrel” és „Fájlok összevonása a PDF Organizerben”, mindkettő a PDF Organizer ikonjával, valamint „Syntelab Dev”, amely oldalra nyílik az Ellenőrző összegek, Összehasonlítás és Hex nézet elemekkel.",
             "Csak az Ön felhasználójához adódnak hozzá, rendszergazdai jogok nélkül, és a kapcsoló kikapcsolása eltávolítja őket. Windows 11 alatt a „További lehetőségek megjelenítése” alatt találhatók. Mindig a telepített programot indítják el: ha a programot áthelyezték vagy máshová telepítették újra, induláskor helyreállítja őket.",
             {
-              "note": "Ha több fájlon a „Fájlok összevonása a PDF Organizerben” lehetőséget választja, egy gyűjtő nyílik meg velük; a „Konvertálás PDF-re a PDF Organizerrel” kötegelt feldolgozást nyit meg velük."
+              "note": "Ha több fájlon a „Fájlok összevonása a PDF Organizerben” lehetőséget választja, egy gyűjtő nyílik meg velük; a „Konvertálás PDF-re a PDF Organizerrel” minden fájlt külön fülön nyit meg nem mentett PDF-ként, amely csak mentéskor kerül a lemezre."
             }
           ]
         }

@@ -29,7 +29,7 @@ function nameOf(file: File, index: number): string {
 }
 
 /** True for a file whose pages the program can take. */
-function canBecomePages(name: string): boolean {
+export function canBecomePages(name: string): boolean {
   const ending = name.slice(name.lastIndexOf('.') + 1).toLowerCase();
   return PAGE_SOURCES.includes(ending);
 }

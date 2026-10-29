@@ -1,15 +1,18 @@
 import { useTranslation } from '@syntelab/i18n';
 import type { AppViewProps } from '@syntelab/shell-api';
 import { Button, Icon, MenuButton, ToolCards } from '@syntelab/ui-kit';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { emptyTabCommands } from '../commands';
+import { openFilesInTabs } from '../document/drafts';
 import { pickAndOpenFiles } from '../document/open-files';
+import { pageSourceProblem } from '../document/page-sources';
 import { CreatePdfDialog } from '../create/create-pdf-dialog';
 import { DropHint } from '../document/drop-hint';
 import { openBinderTab, openFileInTab } from '../document/open-file';
 import type { OpenedFiles } from '../document/open-files';
 import { useFileCommands } from '../document/use-file-commands';
-import { useReceivedFiles } from '../document/use-received-files';
+import { openDroppedFiles } from '../document/dropped-files';
+import { useDroppedFiles } from '../document/use-received-files';
 import { useTabCommands } from '../use-tab-commands';
 import { DefaultAppNote } from './default-app-note';
 import styles from './empty-state.module.css';
@@ -21,7 +24,12 @@ import { RecentFileList } from './recent-file-list';
  * one. A tool that works on a document asks for the file first, then opens
  * with it.
  */
-export function EmptyState({ host }: AppViewProps) {
+export interface EmptyStateProps extends AppViewProps {
+  /** Files to open at once, each in its own tab: a non-PDF as an unsaved PDF made from it ("Convert to PDF" in the file manager's menu). */
+  readonly openFiles?: readonly string[];
+}
+
+export function EmptyState({ host, openFiles }: EmptyStateProps) {
   const t = useTranslation();
   const [problem, setProblem] = useState<string | null>(null);
   const { closeTab } = host;
@@ -35,6 +43,16 @@ export function EmptyState({ host }: AppViewProps) {
     [closeTab],
   );
   const fileCommands = useFileCommands(host, onDone);
+
+  // Once only, even when React runs the effect twice.
+  const started = useRef(false);
+  useEffect(() => {
+    if (started.current || !openFiles || openFiles.length === 0) return;
+    started.current = true;
+    void openFilesInTabs(host, openFiles).then((failed) =>
+      onDone({ chosen: openFiles.length, problem: failed[0] ? pageSourceProblem(failed[0].error) : null }),
+    );
+  }, [host, openFiles, onDone]);
   const files = fileCommands.commands;
 
   const openRecent = useCallback(
@@ -72,15 +90,12 @@ export function EmptyState({ host }: AppViewProps) {
     chooseTool(asked);
   }, [asked, showTool, chooseTool]);
 
-  // Files dropped here or pasted are gathered in a binder.
-  const filesOver = useReceivedFiles(host, (received) => {
-    if (received.paths.length > 0) openBinderTab(host, t('pdf-organizer.binder.title'), received.paths);
-    setProblem(received.skipped > 0 ? 'pdf-organizer.error.someFilesSkipped' : null);
-  });
+  // Files dropped here or pasted open each in a tab of its own.
+  const filesOver = useDroppedFiles(host, (dropped) => void openDroppedFiles(host, dropped).then(onDone));
 
   return (
     <div className={styles.empty}>
-      <DropHint shown={filesOver} textKey="pdf-organizer.drop.toBinder" />
+      <DropHint shown={filesOver} textKey="pdf-organizer.drop.toTabs" icon="folder-open" />
       <CreatePdfDialog host={host} open={fileCommands.creating} onClose={fileCommands.closeCreating} onDone={onDone} />
       <div className={styles.page}>
         <div className={styles.hero}>

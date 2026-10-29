@@ -166,7 +166,7 @@
             "Configurações → Geral → Explorador de Arquivos do Windows → “Mostrar Syntelab Creative no menu de clique direito de arquivos e pastas” adiciona entradas para os arquivos que o programa lê: “Converter para PDF com o PDF Organizer” e “Combinar arquivos no PDF Organizer”, cada uma com o ícone do PDF Organizer, e “Syntelab Dev”, que abre ao lado com Somas de verificação, Comparar e Visualização hexadecimal.",
             "Elas são adicionadas apenas para o seu usuário, sem a necessidade de direitos de administrador, e desativar a opção as remove. No Windows 11, elas ficam em “Mostrar mais opções”. Elas sempre iniciam o programa instalado: se ele foi movido ou reinstalado em outro lugar, ele as corrige ao iniciar.",
             {
-              "note": "Escolher “Combinar arquivos no PDF Organizer” em vários arquivos abre um fichário com eles; “Converter para PDF com o PDF Organizer” abre o processamento em lote com eles."
+              "note": "Escolher “Combinar arquivos no PDF Organizer” em vários arquivos abre um fichário com eles; “Converter para PDF com o PDF Organizer” abre cada arquivo em uma guia própria como um PDF não salvo, que só é gravado no disco quando você o salva."
             }
           ]
         }

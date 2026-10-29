@@ -1619,12 +1619,12 @@
       "pdf-organizer.hint.open": "Open a file in a tab. A PDF opens as it is; a picture, a text file or another document becomes a new PDF, not saved yet.",
       "pdf-organizer.hint.openSeveral": "Choose several files; each opens in a tab of its own. A PDF opens as it is; any other file becomes a new PDF, not saved yet.",
       "pdf-organizer.hint.createPdf": "Make a PDF from a file, from several files (combined, or one PDF each), from a saved web page, from the clipboard, or start with empty pages.",
-      "pdf-organizer.empty.dropTip": "You can also drop files here or paste them (Ctrl+V): they are gathered in a binder.",
+      "pdf-organizer.empty.dropTip": "You can also drop files here or paste them (Ctrl+V): each opens in its own tab.",
       "pdf-organizer.defaultApp.thanks": "You’re awesome! Thank you for using this open source software as your default PDF app.",
       "pdf-organizer.defaultApp.offer": "Make PDF Organizer your default PDF app",
       "pdf-organizer.defaultApp.makeDefault": "Make default",
       "pdf-organizer.defaultApp.failed": "The settings of default apps could not be opened. Open Settings › Apps › Default apps and choose Syntelab Creative.",
-      "pdf-organizer.drop.toBinder": "Drop the files to gather them in a binder",
+      "pdf-organizer.drop.toTabs": "Drop the files to open each in its own tab",
       "pdf-organizer.drop.intoBinder": "Drop the files to add them to this binder",
       "pdf-organizer.error.someFilesSkipped": "Some files were left out: they are not documents, pictures or text the program can read, or they are too large.",
       "pdf-organizer.error.extractFailed": "The pages could not be taken out.",
@@ -5346,7 +5346,7 @@
                 "Settings → General → Windows Explorer → \"Show Syntelab Creative in the right-click menu of files and folders\" adds entries for the files the program reads: \"Convert to PDF with PDF Organizer\" and \"Combine files in PDF Organizer\", each with the icon of PDF Organizer, and \"Syntelab Dev\", which opens to the side with Checksums, Compare and Hex view.",
                 "They are added for your user alone, without administrator rights, and turning the switch off removes them. On Windows 11 they are under \"Show more options\". They always start the installed program: if it was moved or reinstalled elsewhere, it puts them right when it starts.",
                 {
-                  "note": "Choosing \"Combine files in PDF Organizer\" on several files opens a binder with them; \"Convert to PDF with PDF Organizer\" opens batch processing with them."
+                  "note": "Choosing \"Combine files in PDF Organizer\" on several files opens a binder with them; \"Convert to PDF with PDF Organizer\" opens each file in a tab of its own as an unsaved PDF, written to disk only when you save it."
                 }
               ]
             }
@@ -6082,7 +6082,7 @@
                 {
                   "note": "Office documents (Word, Excel, PowerPoint, OpenDocument) are converted by Word, Excel or PowerPoint, or by LibreOffice, whichever is on the computer. Without one of them they cannot be opened."
                 },
-                "Files dropped on an empty tab are gathered in a binder; dropped on a document, their pages are added to it.",
+                "Files dropped on the window open each in its own tab, as with Open; a file that is not a PDF opens as an unsaved PDF made from it. Dropped among the small pages beside a document, or among the pages in Organize, their pages are added there.",
                 "On Windows, PDF Organizer can be the app that opens PDF files when you double-click them: on its start page, \"Make default\" opens the Windows settings, where you choose Syntelab Creative for PDF files."
               ]
             },

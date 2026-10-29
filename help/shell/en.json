@@ -166,7 +166,7 @@
             "Settings → General → Windows Explorer → \"Show Syntelab Creative in the right-click menu of files and folders\" adds entries for the files the program reads: \"Convert to PDF with PDF Organizer\" and \"Combine files in PDF Organizer\", each with the icon of PDF Organizer, and \"Syntelab Dev\", which opens to the side with Checksums, Compare and Hex view.",
             "They are added for your user alone, without administrator rights, and turning the switch off removes them. On Windows 11 they are under \"Show more options\". They always start the installed program: if it was moved or reinstalled elsewhere, it puts them right when it starts.",
             {
-              "note": "Choosing \"Combine files in PDF Organizer\" on several files opens a binder with them; \"Convert to PDF with PDF Organizer\" opens batch processing with them."
+              "note": "Choosing \"Combine files in PDF Organizer\" on several files opens a binder with them; \"Convert to PDF with PDF Organizer\" opens each file in a tab of its own as an unsaved PDF, written to disk only when you save it."
             }
           ]
         }

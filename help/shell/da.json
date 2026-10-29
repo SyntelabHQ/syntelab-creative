@@ -166,7 +166,7 @@
             "Indstillinger → Generelt → Windows Stifinder → \"Vis Syntelab Creative i højreklikmenuen for filer og mapper\" tilføjer indgange for de filer, programmet læser: \"Konverter til PDF med PDF Organizer\" og \"Kombiner filer i PDF Organizer\", hver med PDF Organizers ikon, og \"Syntelab Dev\", som åbner til siden med Kontrolsummer, Sammenlign og Hex-visning.",
             "De tilføjes kun for din bruger, uden administratorrettigheder, og ved at slå kontakten fra fjernes de. I Windows 11 findes de under \"Vis flere indstillinger\". De starter altid det installerede program: hvis det er flyttet eller geninstalleret et andet sted, retter det dem, når det starter.",
             {
-              "note": "Hvis du vælger \"Kombiner filer i PDF Organizer\" for flere filer, åbnes en binder med dem; \"Konverter til PDF med PDF Organizer\" åbner batch-behandling med dem."
+              "note": "Hvis du vælger \"Kombiner filer i PDF Organizer\" for flere filer, åbnes en binder med dem; \"Konverter til PDF med PDF Organizer\" åbner hver fil i sin egen fane som en ikke-gemt PDF, der først skrives til disken, når du gemmer den."
             }
           ]
         }

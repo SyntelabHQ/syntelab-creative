@@ -20,6 +20,24 @@
   justify-content: center;
 }
 
+/* Where dropped files would land: a line in the middle of the gap above or below the page (gap 12px). */
+.item[data-drop]::before {
+  content: '';
+  position: absolute;
+  inset-inline: 16px;
+  height: 4px;
+  border-radius: var(--sc-radius-xs);
+  background: var(--sc-accent);
+}
+
+.item[data-drop='before']::before {
+  top: -8px;
+}
+
+.item[data-drop='after']::before {
+  bottom: -8px;
+}
+
 .button {
   display: flex;
   flex-direction: column;

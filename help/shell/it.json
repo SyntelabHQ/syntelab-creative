@@ -166,7 +166,7 @@
             "Impostazioni → Generale → Esplora file di Windows → «Mostra Syntelab Creative nel menu contestuale di file e cartelle» aggiunge voci per i file supportati dal programma: «Converti in PDF con PDF Organizer» e «Unisci file in PDF Organizer», ciascuna con l’icona di PDF Organizer, e «Syntelab Dev», che si apre di lato con Checksum, Confronta e Visualizzazione esadecimale.",
             "Le voci vengono aggiunte solo per il tuo utente, senza richiedere i diritti di amministratore; disattivando l’opzione vengono rimosse. In Windows 11 si trovano in «Mostra altre opzioni». Le voci avviano sempre il programma installato: se è stato spostato o reinstallato altrove, il programma le corregge all’avvio.",
             {
-              "note": "Selezionando «Unisci file in PDF Organizer» per più file si apre una raccolta che li contiene; «Converti in PDF con PDF Organizer» li apre nell’elaborazione in batch."
+              "note": "Selezionando «Unisci file in PDF Organizer» per più file si apre una raccolta che li contiene; «Converti in PDF con PDF Organizer» apre ogni file in una scheda propria come PDF non salvato, che viene scritto su disco solo quando lo salvi."
             }
           ]
         }

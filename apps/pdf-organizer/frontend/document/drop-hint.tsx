@@ -7,16 +7,18 @@ export interface DropHintProps {
   readonly shown: boolean;
   /** Translation key of what will happen to the files. */
   readonly textKey: string;
+  /** Font Awesome icon of what happens to them. */
+  readonly icon?: string;
 }
 
 /** Covers the tab while files are held over the window, saying what dropping them does. */
-export function DropHint({ shown, textKey }: DropHintProps) {
+export function DropHint({ shown, textKey, icon = 'layer-group' }: DropHintProps) {
   const t = useTranslation();
   if (!shown) return null;
   return (
     <div className={styles.hint} role="status">
       <span className={styles.box}>
-        <Icon name="layer-group" size={28} />
+        <Icon name={icon} size={28} />
         {t(textKey)}
       </span>
     </div>

@@ -46,6 +46,8 @@ export interface PageGridProps {
   readonly onSelectedChange: (selected: Set<number>) => void;
   /** The selected pages were dropped just before the page now at `before`. */
   readonly onMove: (before: number) => void;
+  /** Files dropped among the pages, from outside the program: their pages go at place `at`. */
+  readonly onDropFiles?: (files: File[], at: number) => void;
   readonly onDelete: () => void;
   /** The quick buttons on one page: turn it, or take it out, whatever is selected. */
   readonly onRotatePage: (index: number, degrees: 90 | -90) => void;
@@ -74,7 +76,7 @@ interface DropPlace {
  * drag them to another place. Only the rows on screen exist in the page.
  */
 export function PageGrid(props: PageGridProps) {
-  const { host, pages, viewRotation, selected, onSelectedChange, onMove, onDelete, onOpenPage, onRotatePage, onDeletePage, onCopy, onCut, onPaste, pictureBox, drawnSize, onSizeStep } = props;
+  const { host, pages, viewRotation, selected, onSelectedChange, onMove, onDelete, onOpenPage, onRotatePage, onDeletePage, onCopy, onCut, onPaste, pictureBox, drawnSize, onSizeStep, onDropFiles } = props;
   const { t, direction } = useI18n();
   const scrollRef = useRef<HTMLDivElement>(null);
   const size = useElementSize(scrollRef);
@@ -148,9 +150,14 @@ export function PageGrid(props: PageGridProps) {
     event.dataTransfer.setData('text/plain', String(index));
   };
 
+  // Files from outside the program carry 'Files'; pages moved here carry none.
+  const carriesFiles = (event: DragEvent) => event.dataTransfer.types.includes('Files');
+
   const onDragOver = (index: number, event: DragEvent) => {
+    const files = carriesFiles(event);
+    if (files && !onDropFiles) return;
     event.preventDefault();
-    event.dataTransfer.dropEffect = 'move';
+    event.dataTransfer.dropEffect = files ? 'copy' : 'move';
     const box = event.currentTarget.getBoundingClientRect();
     const firstHalf = event.clientX < box.left + box.width / 2;
     // "Before" is the left half when reading left to right, the right half otherwise.
@@ -161,12 +168,22 @@ export function PageGrid(props: PageGridProps) {
   // Past the pages (beside the last one, below them) the line stays where it
   // was shown, and letting go there moves the pages to it.
   const onEmptyDragOver = (event: DragEvent) => {
-    if (!drop) return;
+    const files = carriesFiles(event);
+    if (files && !onDropFiles) return;
+    // Files held below the pages, before any line is shown, go after the last page.
+    if (!drop && !files) return;
     event.preventDefault();
-    event.dataTransfer.dropEffect = 'move';
+    event.dataTransfer.dropEffect = files ? 'copy' : 'move';
   };
 
   const onDrop = (event: DragEvent) => {
+    if (carriesFiles(event)) {
+      if (!onDropFiles) return;
+      event.preventDefault();
+      onDropFiles([...event.dataTransfer.files], drop ? (drop.before ? drop.index : drop.index + 1) : pages.length);
+      setDrop(null);
+      return;
+    }
     if (!drop) return;
     event.preventDefault();
     onMove(drop.before ? drop.index : drop.index + 1);
@@ -250,6 +267,10 @@ export function PageGrid(props: PageGridProps) {
       onKeyDown={onKeyDown}
       onDragOver={onEmptyDragOver}
       onDrop={onDrop}
+      onDragLeave={(event) => {
+        // Files taken away from the pages (out of the window, elsewhere in it) leave no line behind.
+        if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setDrop(null);
+      }}
       onClick={(event) => {
         // A click on the empty background clears the selection.
         const target = event.target as HTMLElement;

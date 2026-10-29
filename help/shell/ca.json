@@ -166,7 +166,7 @@
             "Configuració → General → Explorador de Windows → \"Mostra Syntelab Creative al menú contextual de fitxers i carpetes\" afegeix entrades per als fitxers que el programa llegeix: \"Convertir a PDF amb PDF Organizer\" i \"Combinar fitxers a PDF Organizer\", cadascuna amb la icona de PDF Organizer, i \"Syntelab Dev\", que s’obre al costat amb Sumes de verificació, Comparar i Vista hex.",
             "S’afegeixen només per al teu usuari, sense drets d’administrador, i desactivar l’opció les elimina. A Windows 11 són a \"Mostra més opcions\". Sempre inicien el programa instal·lat: si s’ha mogut o reinstal·lat en un altre lloc, les corregeix quan s’inicia.",
             {
-              "note": "Si tries \"Combinar fitxers a PDF Organizer\" amb diversos fitxers, s’obre un arxivador amb ells; \"Convertir a PDF amb PDF Organizer\" obre el processament per lots amb ells."
+              "note": "Si tries \"Combinar fitxers a PDF Organizer\" amb diversos fitxers, s’obre un arxivador amb ells; \"Convertir a PDF amb PDF Organizer\" obre cada fitxer en una pestanya pròpia com a PDF no desat, que només s’escriu al disc quan el deses."
             }
           ]
         }

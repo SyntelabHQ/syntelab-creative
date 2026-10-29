@@ -124,6 +124,8 @@ export interface Organizer {
   select(which: 'all' | 'none' | 'odd' | 'even'): void;
   /** Asks for a PDF and adds its pages after the targets (or at the end). */
   insertFromFile(): Promise<void>;
+  /** Adds the pages of these files (PDFs, pictures, office documents…), in their order, so the first comes at place `at`. */
+  insertFiles(paths: readonly string[], at: number): Promise<void>;
   /** Adds an empty page after the targets (or at the end), the size of the page it comes after. */
   insertBlank(): Promise<void>;
   /** Asks for a PDF and puts its pages in place of the targets. */
@@ -456,6 +458,25 @@ export function useOrganizer(
       if (!added) return;
       const at = targets.size > 0 ? Math.max(...targets) + 1 : plan.length;
       apply(insertPages(plan, at, added), new Set(added.map((_, offset) => at + offset)));
+    },
+    insertFiles: async (paths, at) => {
+      setBusy(true);
+      setProblem(null);
+      const added: PlanPage[] = [];
+      try {
+        for (const path of paths) {
+          const opened = await openAsPages({ invoke }, path);
+          borrowed.current.push(opened.documentId);
+          added.push(...planFromDocument(opened.documentId, opened.pageSizes));
+        }
+      } catch (error) {
+        setProblem(pageSourceProblem(error));
+      } finally {
+        setBusy(false);
+      }
+      if (added.length === 0) return;
+      const place = Math.min(Math.max(at, 0), plan.length);
+      apply(insertPages(plan, place, added), new Set(added.map((_, offset) => place + offset)));
     },
     insertBlank: async () => {
       const after = targets.size > 0 ? Math.max(...targets) : plan.length - 1;

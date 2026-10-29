@@ -12,7 +12,8 @@ import { DropHint } from '../document/drop-hint';
 import { openBinderTab, openCompareTab } from '../document/open-file';
 import type { OpenedFiles } from '../document/open-files';
 import { useFileCommands } from '../document/use-file-commands';
-import { useReceivedFiles } from '../document/use-received-files';
+import { locateFiles, openDroppedFiles } from '../document/dropped-files';
+import { useDroppedFiles } from '../document/use-received-files';
 import { loadPicture } from '../document/load-picture';
 import type { LoadedPicture } from '../document/load-picture';
 import { PICTURE_TYPES } from '../document/page-sources';
@@ -326,11 +327,17 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
   const files = fileCommands.commands;
   const open = files.onOpen;
   const newBinder = useCallback(() => openBinderTab(host, t('pdf-organizer.binder.title'), [path]), [host, t, path]);
-  // Files dropped on the document or pasted are gathered in a binder of their own.
-  const filesOver = useReceivedFiles(host, (received) => {
-    if (received.paths.length > 0) openBinderTab(host, t('pdf-organizer.binder.title'), received.paths);
-    if (received.skipped > 0) reportProblem('pdf-organizer.error.someFilesSkipped');
-  });
+  // Files dropped on the window or pasted open each in a tab of its own; dropped among the pages, their pages go there.
+  const filesOver = useDroppedFiles(host, (dropped) => void openDroppedFiles(host, dropped).then((opened) => opened.problem && reportProblem(opened.problem)));
+  const { insertFiles } = organizer;
+  const insertDropped = useCallback(
+    async (dropped: readonly File[], at: number) => {
+      const located = await locateFiles(host, dropped);
+      if (located.paths.length > 0) await insertFiles(located.paths, at);
+      if (located.skipped > 0) reportProblem('pdf-organizer.error.someFilesSkipped');
+    },
+    [host, insertFiles, reportProblem],
+  );
   const compare = useCallback(async () => {
     const [other] = await host.pickFiles({ typeName: t('pdf-organizer.open.fileType'), extensions: ['pdf'] });
     if (other) openCompareTab(host, t('pdf-organizer.compare.title'), path, other);
@@ -726,7 +733,7 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
 
   const extractDialog = (
     <>
-      <DropHint shown={filesOver} textKey="pdf-organizer.drop.toBinder" />
+      <DropHint shown={filesOver} textKey="pdf-organizer.drop.toTabs" icon="folder-open" />
       <CreatePdfDialog host={host} open={fileCommands.creating} onClose={fileCommands.closeCreating} onDone={onFilesOpened} />
       <AttachmentsDialog
         host={host}
@@ -924,6 +931,7 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
           selected={organizer.selected}
           onSelectedChange={organizer.setSelected}
           onMove={organizer.moveBefore}
+          onDropFiles={(dropped, at) => void insertDropped(dropped, at)}
           onDelete={organizer.remove}
           onRotatePage={(index, degrees) => organizer.rotateAt([index], degrees)}
           onDeletePage={(index) => organizer.removeAt([index])}
@@ -1177,6 +1185,7 @@ export function DocumentView({ host, path, unsaved = false }: DocumentViewProps)
                 rotation={view.rotation}
                 currentPage={currentPage}
                 onSelect={goToPage}
+                onDropFiles={(dropped, at) => void insertDropped(dropped, at)}
               />
             ) : (
               <BookmarkList
